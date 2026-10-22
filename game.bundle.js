@@ -687,15 +687,92 @@ Wi-Fi`
     render();
   }
 
+  // benchmark.js
+  var BENCHMARK_MODEL = Object.freeze({
+    version: "first-dive-v1",
+    questions: 7,
+    points: Object.freeze([0, 10, 30, 60, 85, 100]),
+    profiles: Object.freeze([
+      Object.freeze({ name: "casual", weight: 0.4, probabilities: Object.freeze([0.17, 0.38, 0.3, 0.12, 0.025, 5e-3]) }),
+      Object.freeze({ name: "regular", weight: 0.5, probabilities: Object.freeze([0.08, 0.25, 0.32, 0.23, 0.1, 0.02]) }),
+      Object.freeze({ name: "experienced", weight: 0.1, probabilities: Object.freeze([0.025, 0.1, 0.24, 0.33, 0.22, 0.085]) })
+    ])
+  });
+  function scoreDistribution(model = BENCHMARK_MODEL) {
+    const max = model.questions * Math.max(...model.points), mixture = Array(max + 1).fill(0);
+    for (const profile2 of model.profiles) {
+      let mass = [1];
+      for (let round = 0; round < model.questions; round++) {
+        const next = Array((round + 1) * Math.max(...model.points) + 1).fill(0);
+        mass.forEach((prob, score) => {
+          if (prob === 0) return;
+          model.points.forEach((points, i) => {
+            next[score + points] += prob * profile2.probabilities[i];
+          });
+        });
+        mass = next;
+      }
+      mass.forEach((p, score) => {
+        mixture[score] += p * profile2.weight;
+      });
+    }
+    const sum = mixture.reduce((a, b) => a + b, 0);
+    return mixture.map((p) => p / sum);
+  }
+  var SCORE_DISTRIBUTION = Object.freeze(scoreDistribution());
+  function estimatedPercentile(score) {
+    const value = Number(score);
+    if (!Number.isFinite(value)) return 0;
+    let below = 0;
+    for (let s = 0; s < SCORE_DISTRIBUTION.length && s < value; s++) below += SCORE_DISTRIBUTION[s];
+    return Math.max(0, Math.min(100, below * 100));
+  }
+  function percentileText(percent) {
+    if (percent >= 99.95) return "99.9%+";
+    if (percent > 0 && percent < 0.05) return "<0.1%";
+    if (percent < 1 || percent >= 99) return percent.toFixed(1) + "%";
+    return Math.round(percent) + "%";
+  }
+  var MODEL_MEAN = SCORE_DISTRIBUTION.reduce((n, p, s) => n + p * s, 0);
+  function densityAt(x) {
+    let density = 0;
+    for (let s = Math.max(0, Math.floor(x - 36)); s <= Math.min(700, Math.ceil(x + 36)); s++) density += SCORE_DISTRIBUTION[s] * Math.exp(-0.5 * ((s - x) / 12) ** 2);
+    return density;
+  }
+  var densities = Array.from({ length: 141 }, (_, i) => densityAt(i * 5));
+  var peak = Math.max(...densities);
+  function renderBellCurve(score) {
+    const value = Math.max(0, Math.min(700, Number(score) || 0)), percent = estimatedPercentile(value), base = 145, height = 131;
+    const y = (x) => base - densityAt(x) / peak * height;
+    const path = densities.map((d, i) => (i ? "L" : "M") + i * 5 + "," + (base - d / peak * height).toFixed(2)).join(" "), fill = path + " L700,145 L0,145 Z";
+    const marker = Math.max(2, Math.min(698, value));
+    return `<section class="result-benchmark" aria-label="Estimated score comparison"><div class="benchmark-heading"><span>ESTIMATED SCORE DISTRIBUTION</span><span>0\u2013700 POINTS</span></div><div class="bell-chart"><svg viewBox="0 0 700 157" preserveAspectRatio="none" role="img" aria-label="Modeled seven-question score distribution. Your score is ${value}. Estimated percentage of scores below yours: ${percentileText(percent)}."><defs><clipPath id="below-your-score"><rect x="0" y="0" width="${value}" height="157"/></clipPath></defs><path class="bell-area" d="${fill}"/><path class="bell-below" d="${fill}" clip-path="url(#below-your-score)"/><path class="bell-line" d="${path}"/><path class="bell-axis" d="M0 145H700"/><path class="bell-player-line" d="M${marker} ${Math.max(7, y(value) - 10).toFixed(2)}V145"/><circle class="bell-player-dot" cx="${marker}" cy="${y(value).toFixed(2)}" r="3.6"/></svg><span class="bell-you" style="left:${Math.max(2, Math.min(98, value / 7))}%">YOU</span><div class="bell-tooltip" hidden></div></div><div class="bell-scale">${Array.from({ length: 8 }, (_, i) => `<span>${i * 100}</span>`).join("")}</div><p class="benchmark-verdict">BETTER THAN AN ESTIMATED <strong>${percentileText(percent)}</strong></p><details class="benchmark-method"><summary>Estimated from a scoring model \xB7 how it works</summary><p>No live player results have been collected. This model mixes casual, regular, and experienced first-time players (40%, 50%, 10%) across seven questions. It assumes different chances of missing or finding each rarity tier. The modeled average is about ${Math.round(MODEL_MEAN)} points. \u201CBetter than\u201D counts lower scores and excludes ties. These estimates are not calibrated to actual players or individual prompt difficulty.</p></details></section>`;
+  }
+  function mountBellCurve(root) {
+    const chart = root.querySelector(".bell-chart");
+    if (!chart) return;
+    const tooltip = chart.querySelector(".bell-tooltip");
+    chart.addEventListener("pointermove", (e) => {
+      const box = chart.getBoundingClientRect(), fraction = Math.max(0, Math.min(1, (e.clientX - box.left) / box.width)), score = Math.round(fraction * 140) * 5;
+      tooltip.hidden = false;
+      tooltip.textContent = score + " points \xB7 beats ~" + percentileText(estimatedPercentile(score));
+      tooltip.style.left = Math.max(20, Math.min(80, fraction * 100)) + "%";
+    });
+    chart.addEventListener("pointerleave", () => {
+      tooltip.hidden = true;
+    });
+  }
+
   // results.js
   var esc2 = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
   function renderResults(app2, quiz2, packs) {
     const score = quiz2.results.reduce((n, r) => n + r.points, 0), rank = score >= 450 ? 100 : score >= 351 ? 85 : score >= 251 ? 60 : score >= 151 ? 30 : 10, t = tier(rank);
     const bands = [{ p: 10, lo: 0, hi: 150 }, { p: 30, lo: 151, hi: 250 }, { p: 60, lo: 251, hi: 350 }, { p: 85, lo: 351, hi: 449 }, { p: 100, lo: 450, hi: 700 }];
-    app2.innerHTML = `<section class="results-page"><div class="results-masthead"><a href="#home" class="results-brand">COUNCILLION</a><span>${quiz2.mode === "daily" ? "DAILY DIVE \xB7 " + esc2(quiz2.day) : "UNLIMITED DIVE"}<br>COMPLETE</span></div><div class="results-headline"><div class="results-total"><strong>${score}</strong><span>/700</span><span class="results-metres">\u2212${(score * 10).toLocaleString()}m</span></div><div class="results-rank ${t.color}">${tierSprite(rank)}<span>${t.name}<small>YOUR VERDICT</small></span></div></div><div class="score-spectrum" aria-label="Score ${score} of 700"><div class="spectrum-bands">${bands.map((b) => `<span class="${tier(b.p).color}" style="flex:${b.hi - b.lo + 1}"></span>`).join("")}</div><span class="spectrum-marker" style="left:${Math.max(2, Math.min(98, score / 7))}%"><i></i>YOU</span><div class="spectrum-scale"><span>0</span><span>100</span><span>200</span><span>300</span><span>400</span><span>500</span><span>600</span><span>700</span></div></div><section class="dive-log"><div class="log-heading"><h2>DIVE LOG</h2><span>DEEPER = RARER</span></div><div class="log-chart"><div class="log-axis"><span>0m</span><span>250m</span><span>500m</span><span>750m</span><span>1,000m</span></div><div class="log-columns">${quiz2.results.map((r, i) => `<button class="log-column ${tier(r.points).color}" data-action="bank" data-pack="${r.packId}" aria-label="Question ${i + 1}: ${esc2(r.label)}, ${r.points} points. Explore answers."><span class="log-thread" style="height:${r.points}%"></span><span class="log-dot" style="top:${r.points}%">${r.points ? tierSprite(r.points) : "<i></i>"}</span><span class="log-round">${i + 1}</span></button>`).join("")}</div></div></section><div class="results-share"><button class="pixel-button primary" data-action="share">COPY RESULT \u2197</button><p>Seven answers. One descent.<br>Make your case to your friends.</p></div><section class="score-guide"><h2>THE DEPTH OF YOUR CASE</h2>${bands.map((b) => `<div class="score-guide-row ${tier(b.p).color} ${rank === b.p ? "your-band" : ""}">${tierSprite(b.p)}<span>${tier(b.p).name}</span><small>${b.lo}\u2013${b.hi}</small>${rank === b.p ? "<em>YOU</em>" : "<em></em>"}</div>`).join("")}</section><section class="the-catch"><div class="catch-heading"><h2>THE CATCH</h2><p>Every prompt. Every accepted answer.</p></div>${quiz2.results.map((r, i) => {
+    app2.innerHTML = `<section class="results-page"><div class="results-masthead"><a href="#home" class="results-brand">COUNCILLION</a><span>${quiz2.mode === "daily" ? "DAILY DIVE \xB7 " + esc2(quiz2.day) : "UNLIMITED DIVE"}<br>COMPLETE</span></div><div class="results-headline"><div class="results-total"><strong>${score}</strong><span>/700</span><span class="results-metres">\u2212${(score * 10).toLocaleString()}m</span></div><div class="results-rank ${t.color}">${tierSprite(rank)}<span>${t.name}<small>YOUR VERDICT</small></span></div></div>${renderBellCurve(score)}<section class="dive-log"><div class="log-heading"><h2>DIVE LOG</h2><span>DEEPER = RARER</span></div><div class="log-chart"><div class="log-axis"><span>0m</span><span>250m</span><span>500m</span><span>750m</span><span>1,000m</span></div><div class="log-columns">${quiz2.results.map((r, i) => `<button class="log-column ${tier(r.points).color}" data-action="bank" data-pack="${r.packId}" aria-label="Question ${i + 1}: ${esc2(r.label)}, ${r.points} points. Explore answers."><span class="log-thread" style="height:${r.points}%"></span><span class="log-dot" style="top:${r.points}%">${r.points ? tierSprite(r.points) : "<i></i>"}</span><span class="log-round">${i + 1}</span></button>`).join("")}</div></div></section><div class="results-share"><button class="pixel-button primary" data-action="share">COPY RESULT \u2197</button><p>Seven answers. One descent.<br>Make your case to your friends.</p></div><section class="score-guide"><h2>THE DEPTH OF YOUR CASE</h2>${bands.map((b) => `<div class="score-guide-row ${tier(b.p).color} ${rank === b.p ? "your-band" : ""}">${tierSprite(b.p)}<span>${tier(b.p).name}</span><small>${b.lo}\u2013${b.hi}</small>${rank === b.p ? "<em>YOU</em>" : "<em></em>"}</div>`).join("")}</section><section class="the-catch"><div class="catch-heading"><h2>THE CATCH</h2><p>Every prompt. Every accepted answer.</p></div>${quiz2.results.map((r, i) => {
       const pack2 = packs.find((p) => p.id === r.packId);
       return `<details class="catch-round"><summary><span class="catch-number">${i + 1}</span><span class="catch-copy"><small>${esc2(pack2.prompt)}</small><strong class="${tier(r.points).color}">${tierSprite(r.points)}${esc2(r.label)}</strong></span><span class="catch-points ${tier(r.points).color}">${r.points}</span><span class="catch-toggle">+</span></summary><div class="catch-bank" data-pack="${r.packId}" data-chosen="${esc2(r.label)}"></div></details>`;
     }).join("")}</section><div class="results-next"><button class="pixel-button" data-action="practice">\u221E ANOTHER DIVE</button><button class="pixel-button" data-action="party">PUFFER PARTY \u25B8</button></div><a class="surface-link" href="#home">\u2191 BACK TO THE SURFACE</a><p class="results-reset">${quiz2.mode === "daily" ? "Next Daily Dive at midnight New York time." : "Practice scores do not change your daily result."}</p></section>`;
+    mountBellCurve(app2);
     for (const details of app2.querySelectorAll(".catch-round")) details.addEventListener("toggle", () => {
       if (!details.open) return;
       const bank = details.querySelector(".catch-bank");
@@ -1180,10 +1257,11 @@ Wi-Fi`
     };
   }
   function share() {
-    const marks = quiz.results.map((r) => r.points >= 100 ? "\u{1F7E8}" : r.points >= 85 ? "\u{1F7EA}" : r.points >= 60 ? "\u{1F7E9}" : r.points >= 30 ? "\u{1F7E6}" : r.points ? "\u2B1C" : "\u2B1B").join("");
+    const marks = quiz.results.map((r) => r.points >= 100 ? "\u{1F7E8}" : r.points >= 85 ? "\u{1F7EA}" : r.points >= 60 ? "\u{1F7E5}" : r.points >= 30 ? "\u{1F7E6}" : r.points ? "\u2B1C" : "\u2B1B").join("");
     copyText(`COUNCILLION \u2696 ${quiz.mode === "daily" ? quiz.day : "PRACTICE"}
 ${marks}
 ${total()}/700 \xB7 ${(total() * 10).toLocaleString()}m deep
+Estimated better-than: ${percentileText(estimatedPercentile(total()))} (scoring model)
 Future Counsel \xB7 ${location.href.split("#")[0]}`, "Verdict copied. Send it to your friends!");
   }
   function partySetup() {

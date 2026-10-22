@@ -16,6 +16,12 @@ Future Counsel’s pixel ocean trivia game, inspired by Krillion. Original clien
 
 Visible rarity families follow the supplied image: Krillion, Deep Cut, Rare, Schooler, and Plankton. Both supplied reference packs preserve every canonical entry and score. Other packs use independent editorial tiers, not measured player-frequency statistics. Answer banks are finite; otherwise valid answers may be absent. See [RESEARCH.md](RESEARCH.md) for verified reference behavior and known differences.
 
+## Estimated score curve
+
+Final results include a model-based score distribution, the player's marker, and the estimated percentage of scores strictly below theirs. These are not live player statistics. The model combines seven question outcomes (0, 10, 30, 60, 85, 100 points) across assumed casual/regular/experienced profiles with 40%/50%/10% weights. Conditional question outcomes are independent within a profile; the shared profile creates variation between players. Exact discrete convolution produces the percentiles. Only the plotted line is smoothed.
+
+The modeled mean is 229.39 points and standard deviation is about 96.12. A score of 230 beats about 53.54% under these assumptions. These parameters are editorial estimates; no player dataset was used to fit them, and they do not adjust for a particular day's question difficulty. The score-curve disclosure and copied result both identify the estimate. The full probabilities and implementation are in `benchmark.js`; four tests verify mass, support, expectation, strict tie handling, and boundary behavior.
+
 ## Run
 
 The built browser bundle is included. Python 3 and a modern browser are sufficient:
@@ -51,6 +57,7 @@ Some managed networks and restrictive NATs block the broker or direct WebRTC con
 
 - `app.js`: screens, local progress, settings, timing, sharing, answer browser.
 - `engine.js`: date selection, answer matching, tiers, and party rules.
+- `benchmark.js`: explicit assumed skill profiles, exact seven-question distribution, estimated percentiles, and the results curve.
 - `ocean.js`: moving sky, waves, open water, particles, fish, courtroom landmarks, and camera.
 - `dive.js`: full-viewport HUD, prompt, answer dock, and round feedback.
 - `results.js`, `answer-bank.js`: final dive log and shared large-bank browser.

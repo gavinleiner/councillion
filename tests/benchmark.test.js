@@ -1,0 +1,8 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {BENCHMARK_MODEL,SCORE_DISTRIBUTION,MODEL_MEAN,estimatedPercentile,scoreDistribution,percentileText} from '../benchmark.js';
+const near=(a,b)=>assert.ok(Math.abs(a-b)<1e-10,`${a} != ${b}`);
+test('benchmark assumptions are valid probability distributions',()=>{near(BENCHMARK_MODEL.profiles.reduce((s,p)=>s+p.weight,0),1);for(const p of BENCHMARK_MODEL.profiles){near(p.probabilities.reduce((a,b)=>a+b),1);assert.ok(p.probabilities.every(n=>n>=0&&n<=1));}assert.equal(SCORE_DISTRIBUTION.length,701);near(SCORE_DISTRIBUTION.reduce((a,b)=>a+b),1);assert.ok(SCORE_DISTRIBUTION.every(n=>n>=0&&Number.isFinite(n)));});
+test('exact convolution respects attainable scores and the analytic expectation',()=>{near(SCORE_DISTRIBUTION[5],0);assert.ok(SCORE_DISTRIBUTION[0]>0);assert.ok(SCORE_DISTRIBUTION[700]>0);const mean=7*BENCHMARK_MODEL.profiles.reduce((n,p)=>n+p.weight*p.probabilities.reduce((v,prob,i)=>v+prob*BENCHMARK_MODEL.points[i],0),0);near(MODEL_MEAN,mean);near(MODEL_MEAN,229.39);});
+test('better-than percentile excludes ties and increases monotonically',()=>{assert.equal(estimatedPercentile(0),0);let previous=0;for(let s=1;s<=700;s++){const next=estimatedPercentile(s);assert.ok(next>=previous&&next<=100);near(next-previous,SCORE_DISTRIBUTION[s-1]*100);previous=next;}assert.ok(estimatedPercentile(700)<100);near(estimatedPercentile(230),53.53954807562309);});
+test('distribution is deterministic and high-tail display avoids a false exact 100%',()=>{assert.deepEqual(scoreDistribution(),SCORE_DISTRIBUTION);assert.equal(percentileText(estimatedPercentile(700)),'99.9%+');assert.equal(percentileText(estimatedPercentile(50)),'0.3%');});
