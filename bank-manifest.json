@@ -1,0 +1,242 @@
+[
+  {
+    "id": "word-isograms",
+    "family": "words",
+    "topic": "NO LETTER TWICE",
+    "prompt": "Name a ten-letter English word with no repeated letter. Inflections count; proper names do not.",
+    "source": "ENABLE word list (Mendel Cooper), public domain; exact letter filter.",
+    "ranking": "familiarity-v1",
+    "count": 1095,
+    "tiers": {
+      "10": 7,
+      "30": 42,
+      "60": 95,
+      "85": 950,
+      "100": 1
+    }
+  },
+  {
+    "id": "word-vowels",
+    "family": "words",
+    "topic": "THREE VOWELS TOGETHER",
+    "prompt": "Name an English word containing at least three consecutive vowels (A, E, I, O, U). Inflections count.",
+    "source": "ENABLE word list (Mendel Cooper), public domain; exact letter filter.",
+    "ranking": "familiarity-v1",
+    "count": 2450,
+    "tiers": {
+      "10": 16,
+      "30": 56,
+      "60": 192,
+      "85": 2184,
+      "100": 2
+    }
+  },
+  {
+    "id": "word-silent-initial",
+    "family": "words",
+    "topic": "THE FIRST LETTER IS SILENT",
+    "prompt": "Name an English word with a silent first letter in a standard pronunciation. Inflections count.",
+    "source": "ENABLE × CMU Pronouncing Dictionary; initial consonant and first-phoneme checks. CMU BSD license in DATA-SOURCES.md.",
+    "ranking": "familiarity-v1",
+    "count": 923,
+    "tiers": {
+      "10": 22,
+      "30": 40,
+      "60": 119,
+      "85": 740,
+      "100": 2
+    }
+  },
+  {
+    "id": "dinosaur-genera",
+    "family": "nature",
+    "topic": "BEFORE THE BIRDS",
+    "prompt": "Name a non-avian dinosaur genus. Flying reptiles, marine reptiles, and modern birds do not count.",
+    "source": "Paleobiology Database API, accepted extinct regular genera under Dinosauria, excluding Aves. Snapshot 2026-10-21; CC BY 4.0.",
+    "ranking": "familiarity-v1",
+    "count": 1542,
+    "tiers": {
+      "10": 5,
+      "30": 7,
+      "60": 8,
+      "85": 1521,
+      "100": 1
+    }
+  },
+  {
+    "id": "north-american-birds",
+    "family": "nature",
+    "topic": "FEATHERED VISITORS",
+    "prompt": "Name a bird species recorded in North America. Vagrants, introduced birds, and extinct species count; use a species name, not just “eagle.”",
+    "source": "Corpora birds_north_america, derived from ABA checklist; CC0. Historical checklist names retained.",
+    "ranking": "familiarity-v1",
+    "count": 992,
+    "tiers": {
+      "10": 6,
+      "30": 20,
+      "60": 104,
+      "85": 860,
+      "100": 2
+    }
+  },
+  {
+    "id": "cultured-dairy",
+    "family": "food",
+    "topic": "THE CULTURED COUNTER",
+    "prompt": "Name a cheese, cultured milk, or other fermented dairy product. Traditional varieties and named cheeses count.",
+    "source": "Corpora foods/curds, CC0; normalized duplicates merged, common dairy forms added. Scope includes fermented milks as well as cheeses.",
+    "ranking": "familiarity-v1",
+    "count": 1940,
+    "tiers": {
+      "10": 10,
+      "30": 21,
+      "60": 74,
+      "85": 1833,
+      "100": 2
+    }
+  },
+  {
+    "id": "seasonings",
+    "family": "food",
+    "topic": "THE SPICE DRAWER",
+    "prompt": "Name a culinary herb, spice, or named spice blend. Both individual seasonings and traditional mixtures count.",
+    "source": "Corpora herbs_n_spices, CC0; herbs/spices/blends combined and synonyms merged.",
+    "ranking": "familiarity-v1",
+    "count": 184,
+    "tiers": {
+      "10": 11,
+      "30": 12,
+      "60": 43,
+      "85": 116,
+      "100": 2
+    }
+  },
+  {
+    "id": "condiment-counter",
+    "family": "food",
+    "topic": "ON THE SIDE",
+    "prompt": "Name a sauce, condiment, or relish served with food. Named traditional condiments count.",
+    "source": "Corpora foods/condiments, CC0; ingredient names retained.",
+    "ranking": "familiarity-v1",
+    "count": 99,
+    "tiers": {
+      "10": 7,
+      "30": 5,
+      "60": 35,
+      "85": 51,
+      "100": 1
+    }
+  },
+  {
+    "id": "two-letter-elements",
+    "family": "science",
+    "topic": "TWO-LETTER SYMBOLS",
+    "prompt": "Name a chemical element with a two-letter symbol. An element name or its official symbol is accepted.",
+    "source": "Corpora periodic table, CC0; IUPAC permanent names for elements 113,115,117,118 applied.",
+    "ranking": "familiarity-v1",
+    "count": 104,
+    "tiers": {
+      "10": 8,
+      "30": 7,
+      "60": 13,
+      "85": 74,
+      "100": 2
+    }
+  },
+  {
+    "id": "first-thousand-minor-planets",
+    "family": "science",
+    "topic": "THE FIRST THOUSAND",
+    "prompt": "Name one of the first 1,000 numbered minor planets by name. Numbers alone do not count.",
+    "source": "Corpora science/minor_planets, first 1,000 numbered objects, CC0. Numeric-only aliases intentionally excluded.",
+    "ranking": "familiarity-v1",
+    "count": 1000,
+    "tiers": {
+      "10": 7,
+      "30": 33,
+      "60": 115,
+      "85": 844,
+      "100": 1
+    }
+  },
+  {
+    "id": "best-picture-nominees",
+    "family": "culture",
+    "topic": "ON THE BALLOT",
+    "prompt": "Name a film nominated for the Academy Award for Best Picture, through the 2026 ceremony. Winners count too.",
+    "source": "Wikidata, film instances with P166/P1411 Academy Award for Best Picture (Q102427), English labels/aliases; CC0. Snapshot 2026-10-21, releases through 2025.",
+    "ranking": "familiarity-v1",
+    "count": 589,
+    "tiers": {
+      "10": 55,
+      "30": 183,
+      "60": 208,
+      "85": 141,
+      "100": 2
+    }
+  },
+  {
+    "id": "best-picture-winners",
+    "family": "culture",
+    "topic": "THE GOLD ENVELOPE",
+    "prompt": "Name a film that won the Academy Award for Best Picture, through the 2026 ceremony.",
+    "source": "Wikidata, film instances with P166/P1411 Academy Award for Best Picture (Q102427), English labels/aliases; CC0. Snapshot 2026-10-21, releases through 2025.",
+    "ranking": "familiarity-v1",
+    "count": 97,
+    "tiers": {
+      "10": 9,
+      "30": 37,
+      "60": 30,
+      "85": 19,
+      "100": 2
+    }
+  },
+  {
+    "id": "atlantic-rivers",
+    "family": "world",
+    "topic": "TO THE ATLANTIC",
+    "prompt": "Name a river whose water eventually reaches the Atlantic, including the Mediterranean, Black Sea, Baltic, or Gulf of Mexico. Tributaries count.",
+    "source": "Corpora rivers, CC0; outflows recursively traced to ocean basins. River Plate and Hudson Bay classified with Atlantic drainage. Finite long-river source; additional valid rivers may be absent.",
+    "ranking": "familiarity-v1",
+    "count": 106,
+    "tiers": {
+      "10": 7,
+      "30": 12,
+      "60": 21,
+      "85": 65,
+      "100": 1
+    }
+  },
+  {
+    "id": "pacific-indian-rivers",
+    "family": "world",
+    "topic": "EASTWARD WATERS",
+    "prompt": "Name a river whose water eventually reaches the Pacific or Indian Ocean. Tributaries count.",
+    "source": "Corpora rivers, CC0; outflows recursively traced to ocean basins. River Plate and Hudson Bay classified with Atlantic drainage. Finite long-river source; additional valid rivers may be absent.",
+    "ranking": "familiarity-v1",
+    "count": 55,
+    "tiers": {
+      "10": 4,
+      "30": 8,
+      "60": 8,
+      "85": 34,
+      "100": 1
+    }
+  },
+  {
+    "id": "arctic-rivers",
+    "family": "world",
+    "topic": "NORTHBOUND",
+    "prompt": "Name a river whose water eventually reaches the Arctic Ocean. Tributaries count.",
+    "source": "Corpora rivers, CC0; outflows recursively traced to ocean basins. River Plate and Hudson Bay classified with Atlantic drainage. Finite long-river source; additional valid rivers may be absent.",
+    "ranking": "familiarity-v1",
+    "count": 32,
+    "tiers": {
+      "10": 5,
+      "30": 1,
+      "60": 1,
+      "85": 24,
+      "100": 1
+    }
+  }
+]

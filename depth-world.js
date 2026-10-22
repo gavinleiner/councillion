@@ -7,7 +7,7 @@ export const BIOMES = [
  {at:1500,name:'THE ABYSS',color:'#bc9ee3'},
  {at:3000,name:'HADAL DEPTHS',color:'#e0b87b'}
 ];
-const STOPS=[[0,0],[200,.45],[650,1.35],[1500,2.7],[3000,4.3],[7000,7.8],[8000,8.6]];
+const STOPS=[[0,0],[200,1.1],[650,2.7],[1500,5.2],[3000,8.4],[7000,14.5],[8000,16]];
 export function depthDistance(depth,height){
  const d=Math.max(0,Math.min(8000,depth));
  for(let i=1;i<STOPS.length;i++)if(d<=STOPS[i][0]){
@@ -37,3 +37,8 @@ export const LANDMARKS=[
  {at:4300,text:'THE DEEP APPEAL',side:1},
  {at:6000,text:'ONE IN A COUNCILLION',side:0}
 ];
+
+// A timed drop accelerates before the camera gently catches the diver.
+export const fallEase=t=>{const x=Math.max(0,Math.min(1,t));return x*x*(3-2*x);};
+export const fallDuration=distance=>Math.min(3800,1800+Math.sqrt(Math.abs(distance))*34);
+export const fallPose=progress=>Math.sin(Math.PI*Math.max(0,Math.min(1,progress)));

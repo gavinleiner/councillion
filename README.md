@@ -15,7 +15,7 @@ Future Counsel’s pixel ocean trivia game, inspired by Krillion. Original clien
 - **Ocean preview:** `#biomes` uses the gameplay renderer with a depth slider and slow descent. Five named zones change scenery, lighting, ambient life, and colors.
 - **Results:** the full dive unlocks a seven-column log, score guide, searchable answer accordions, rarity filters, and pagination. Answer banks are hidden during all seven prompts.
 
-Visible rarity families follow the supplied image: Krillion, Deep Cut, Rare, Schooler, and Plankton. Both supplied reference packs preserve every canonical entry and score. Other packs use independent editorial tiers, not measured player-frequency statistics. Answer banks are finite; otherwise valid answers may be absent. See [RESEARCH.md](RESEARCH.md) for verified reference behavior and known differences.
+Visible rarity families follow the supplied image: Krillion, Deep Cut, Rare, Schooler, and Plankton. Both supplied reference packs preserve every canonical entry and score. New packs use corpus familiarity with category-specific editorial overrides and selected 100-point discoveries, not measured player-frequency statistics. The 17-prompt daily/practice pool has 12,513 accepted entries; 15 new banks range from 32 to 2,450 entries. See [DATA-SOURCES.md](DATA-SOURCES.md) for scope, sources, licenses and the reproducible generator. Answer banks are finite; otherwise valid answers may be absent. See [RESEARCH.md](RESEARCH.md) for verified reference behavior and known differences.
 
 ## Estimated score curve
 
@@ -56,7 +56,7 @@ Serve the root of `main` using **Settings → Pages → Deploy from a branch**. 
 
 ## Online rooms
 
-The vendored PeerJS 1.5.5 client uses its public broker to establish WebRTC data connections. The host browser validates turns, matching, duplicates, lives, and deadlines. It must remain open; closing or reloading it ends the room. Room codes are invitations, not strong access controls. Names and game state are visible to other room members. No microphone, camera, account, or email is requested.
+The vendored PeerJS 1.5.5 client uses its public broker to establish WebRTC data connections. The host browser validates turns, matching, duplicates, lives, and deadlines. It must remain open; closing or reloading it ends the room. Room codes are invitations, not strong access controls. Names and game state are visible to other room members. No microphone or camera access is requested. Guest play is available; optional Google sign-in uses only basic profile identity, separate from party connections.
 
 Some managed networks and restrictive NATs block the broker or direct WebRTC connections. This static deployment has no managed TURN relay, persistent game server, public matchmaking, host migration, or reconnect system. Daily Dive, practice, and one-device party still work independently. A dedicated game backend would be the next upgrade for more reliable cross-network multiplayer.
 
@@ -84,4 +84,18 @@ Future Counsel: https://futurecounsel.org/ · Reference: https://krillion.io/
 
 ## Latest validation
 
-37 automated checks cover game rules, both imported answer banks, the percentile model, vertical projection, scene accessibility, four-choice data integrity, deck recycling, streak resets, persistence, and the Easter egg. A 10,000-question simulation verifies that the legitimate answer key never forms the reserved sequence. Browser checks include a real five-correct challenge, shortcut animation, continuing to another challenge, and visible scenery changes during the actual seven-prompt game.
+47 automated checks cover game rules, both imported answer banks, the percentile model, vertical projection, scene accessibility, four-choice data integrity, deck recycling, streak resets, persistence, and the Easter egg. A 10,000-question simulation verifies that the legitimate answer key never forms the reserved sequence. Browser checks include a real five-correct challenge, shortcut animation, continuing to another challenge, and visible scenery changes during the actual seven-prompt game.
+
+## Google sign-in
+
+`auth-config.js` contains the public web client ID created for Councillion in Google Cloud project `dark-automata-360415`. Authorized JavaScript origins are `https://gavinleiner.github.io` and `http://localhost:4173` (origins have no path). No client secret is stored in this repository. The official Google Identity Services button loads on demand. A browser-local profile verifies the RS256 signature against Google’s rotating JWKs, audience, issuer, nonce and expiry before showing the connected identity. Session storage keeps the short-lived token; sign-out removes it. Negative token tests cover tampering, wrong audience/issuer/nonce, expiry and unknown keys.
+
+This is optional identity for a local game: progress remains on the current browser; there is no cloud-save service, account-based access control, or server session. A future remote save/leaderboard must independently validate credentials on its backend. [privacy.html](privacy.html) explains storage and third-party requests. Google Auth Platform branding uses the public game and privacy URLs; the external app must be published so friends can sign in without joining a test-user list.
+
+## Descent update
+
+The camera now accelerates into a timed fall and settles over roughly 2–3.8 seconds, while the diver pitches and drops slightly. The world traverses 1.1 viewport heights by 200m, 2.7 by 650m, 5.2 by 1,500m, and 8.4 by 3,000m. A screen-composited local lantern follows the little shrimp; deep wall scenes frame clear open water. Motion preferences disable the fall and lantern pulse. Animations never lock the next-question button.
+
+## Forgiving answers
+
+Accent, punctuation and case normalization happen first. Exact names and curated shorthand win. Otherwise, unique multiword initials (with or without small connecting words) are recognized; ambiguous initials are rejected. Common Lord of the Rings installment shorthand is explicit. Single-letter guesses and arbitrary partial prefixes do not unlock an answer. Longer names permit multiple typing mistakes, with lower costs for adjacent QWERTY keys, repeated/missing doubled letters, and transposed neighbors. A clear margin over competing candidates is required. The existing confirmation step shows the full intended answer before scoring; the setting can disable it. No points are reduced for a corrected spelling or abbreviation.

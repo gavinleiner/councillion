@@ -28,3 +28,12 @@ dialog.site-menu{width:min(444px,calc(100vw - 36px));padding:25px!important;max-
 @media(max-width:600px){.hero .brand-title{top:80px;font-size:clamp(41px,10.5vw,67px);letter-spacing:3px}.hero .eyebrow{top:26px;font-size:8px;letter-spacing:3px}.hero .subtitle{top:160px;font-size:22px;letter-spacing:5px}.hero .hero-copy{white-space:normal;top:209px;font-size:14px;line-height:1.5;max-width:320px}.home-panel .banner{font-size:9px;letter-spacing:.5px}.home-party{height:56px;width:295px;margin-bottom:22px}.home-panel>.primary{height:61px;font-size:25px}.surface-secondary{font-size:11px}.surface-signoff{margin-top:21px}.site-menu .menu-grid>a,.site-menu .menu-grid>button{min-height:74px}.site-menu .menu-grid strong{font-size:11px;letter-spacing:1.5px}.site-menu .menu-title{font-size:28px!important}}
 @media(max-height:700px){.hero .brand-title{top:53px}.hero .subtitle{top:159px;font-size:23px}.hero .hero-copy{top:211px;font-size:15px}.home-party{height:51px;margin-bottom:19px}.home-panel>.primary{height:56px}.home-panel .banner{margin-bottom:17px}.surface-secondary{margin-top:21px}.surface-signoff{margin-top:18px}.endless-tagline{margin-top:14px}}
 @media(max-width:600px) and (max-height:700px){.hero .brand-title{top:61px}.hero .subtitle{top:133px;font-size:21px}.hero .hero-copy{top:177px;font-size:13px}.home-panel .banner{font-size:8px}.surface-secondary{font-size:10px}.endless-tagline{font-size:10px}.surface-signoff{margin-top:17px}.site-menu .menu-grid>a,.site-menu .menu-grid>button{min-height:66px}.site-menu .menu-title{margin-bottom:18px!important}}
+
+/* The world rises while the little counsel pitches into the descent. */
+.dive-buddy {transform:translateY(var(--fall-drop,0px)) rotate(var(--fall-angle,0deg));will-change:transform}
+.dive-buddy img {filter:drop-shadow(0 0 5px #b9e8d52b)}
+body.reduced .dive-buddy {transform:none;will-change:auto}
+
+.account-button{font:13px VT,monospace;letter-spacing:1px;color:#abcada;background:#10283ad9;border:1px solid #668b9d66;padding:7px 10px;max-width:145px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;cursor:pointer}.account-button:hover{color:#f2d793;border-color:#f2d793}.google-button{min-height:44px;margin:22px auto;width:min(320px,100%)}.account-email{overflow-wrap:anywhere}.account-button:focus-visible{outline:2px solid #efd68f;outline-offset:3px}
+
+.bank-ranking-note,.bank-source{font:14px/1.5 VT,monospace;color:#8daec3}.bank-source{margin-top:18px}.bank-source summary{cursor:pointer;color:#c2d7df}.bank-source a{color:#b5cad2}

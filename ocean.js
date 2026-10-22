@@ -1,5 +1,5 @@
 import {RenderMetrics} from './render-metrics.js';
-import {BIOMES,biomeAt,cameraAtDepth,worldAtDepth,depthScreenY,sceneryBands,LANDMARKS} from './depth-world.js';
+import {BIOMES,biomeAt,cameraAtDepth,worldAtDepth,depthScreenY,sceneryBands,LANDMARKS,fallEase,fallDuration,fallPose} from './depth-world.js';
 export {BIOMES,biomeAt} from './depth-world.js';
 const clamp=(v,a=0,b=1)=>Math.max(a,Math.min(b,v));
 const smooth=(a,b,v)=>{const x=clamp((v-a)/(b-a));return x*x*(3-2*x);};
@@ -7,9 +7,9 @@ export class Ocean {
  constructor(canvas){
   this.metrics=new RenderMetrics();this.canvas=canvas;this.ctx=canvas.getContext('2d',{alpha:false});
   this.images={};this.files={sky:'sky-law.png',shallow:'water-open.png',mid:'mid-law.png',trench:'trench-law.png',hadal:'hadal-pixel.png'};
-  this.mode='home';this.depth=0;this.visualDepth=0;this.camera=0;this.time=0;this.previous=0;this.lastPaint=0;this._reduced=false;this.burst=0;this.raf=null;this.cacheKey='';this.cacheRebuilds=0;this.tiles=new Map();
+  this.fall=null;this.fallProgress=1;this.buddy=null;this.mode='home';this.depth=0;this.visualDepth=0;this.camera=0;this.time=0;this.previous=0;this.lastPaint=0;this._reduced=false;this.burst=0;this.raf=null;this.cacheKey='';this.cacheRebuilds=0;this.tiles=new Map();
   this.backdrop=document.createElement('canvas');this.background=this.backdrop.getContext('2d',{alpha:false});this.loop=this.loop.bind(this);
-  this.resize=()=>{this.w=innerWidth;this.h=innerHeight;this.ratio=1;canvas.width=this.w;canvas.height=this.h;this.backdrop.width=this.w;this.backdrop.height=this.h;this.ctx.imageSmoothingEnabled=false;this.background.imageSmoothingEnabled=false;this.cacheKey='';this.tiles.clear();this.schedule();};
+  this.resize=()=>{this.w=innerWidth;this.h=innerHeight;this.ratio=1;canvas.width=this.w;canvas.height=this.h;this.backdrop.width=this.w;this.backdrop.height=this.h;this.ctx.imageSmoothingEnabled=false;this.background.imageSmoothingEnabled=false;this.cacheKey='';this.tiles.clear();this.locateBuddy();this.schedule();};
   this.resize();addEventListener('resize',this.resize);
   document.addEventListener('visibilitychange',()=>{if(document.hidden){cancelAnimationFrame(this.raf);this.raf=null;}else{this.previous=0;this.schedule();}});
   this.load('sky');
@@ -17,7 +17,11 @@ export class Ocean {
  load(key){if(this.images[key])return;const img=new Image();img.decoding='async';img.onload=()=>{this.cacheKey='';this.tiles.delete(key);this.schedule();};img.src='assets/'+this.files[key];this.images[key]=img;}
  schedule(){if(this.raf===null&&!document.hidden)this.raf=requestAnimationFrame(this.loop);}
  set(mode,depth=0){
-  if(mode===this.mode&&depth===this.depth)return;this.mode=mode;this.depth=depth;
+  if(mode===this.mode&&depth===this.depth)return;
+  const changedMode=mode!==this.mode;this.mode=mode;this.depth=depth;
+  const target=mode==='dive'?cameraAtDepth(depth,this.h):mode==='party'?cameraAtDepth(0,this.h):0;
+  this.fall={from:this.visualDepth,to:depth,fromCamera:this.camera,toCamera:target,elapsed:0,duration:fallDuration(target-this.camera)};
+  if(mode==='home'||changedMode&&mode!=='dive')this.fall.duration=1600;this.fallProgress=0;
   if(mode==='dive'||mode==='party'){this.load('shallow');this.load('mid');if(depth>=900)this.load('trench');if(depth>=2400)this.load('hadal');}
   this.schedule();
  }
@@ -25,21 +29,23 @@ export class Ocean {
  get reduced(){return this._reduced;}
  get displayedDepth(){return Math.round(this.visualDepth);}
  get targetCamera(){return this.mode==='dive'?cameraAtDepth(this.depth,this.h):this.mode==='party'?cameraAtDepth(0,this.h):0;}
- snap(depth=0){this.visualDepth=depth;this.camera=this.mode==='dive'?cameraAtDepth(depth,this.h):0;this.cacheKey='';this.schedule();}
+ snap(depth=0){this.fall=null;this.fallProgress=1;this.visualDepth=depth;this.camera=this.mode==='dive'?cameraAtDepth(depth,this.h):0;this.cacheKey='';this.schedule();}
+ glide(depth){this.set('dive',depth);if(this.fall)this.fall.duration=200;}
  celebrate(){this.burst=1;this.schedule();}
  ready(key){return this.images[key]?.complete&&this.images[key]?.naturalWidth>0;}
  loop(now){
   this.raf=null;if(document.hidden)return;
-  const moving=Math.abs(this.depth-this.visualDepth)>1||Math.abs(this.targetCamera-this.camera)>1,interval=moving?1000/60:1000/30;
+  const moving=!!this.fall||Math.abs(this.depth-this.visualDepth)>1||Math.abs(this.targetCamera-this.camera)>1,interval=moving?1000/60:1000/30;
   if(now-this.lastPaint<interval-.8){this.schedule();return;}
   const dt=Math.min(.1,(now-this.previous)/1000||.033);this.previous=now;this.lastPaint+=interval;if(now-this.lastPaint>interval)this.lastPaint=now;
   if(!this.reduced)this.time+=dt*.42;
-  const ease=this.reduced?1:1-Math.exp(-dt*2.3);
-  this.visualDepth+=(this.depth-this.visualDepth)*ease;if(Math.abs(this.depth-this.visualDepth)<.2)this.visualDepth=this.depth;
-  // One eased world position drives every background, landmark, and ruler tick.
-  const target=this.mode==='dive'?cameraAtDepth(this.visualDepth,this.h):this.mode==='party'?cameraAtDepth(0,this.h):0;
-  this.camera=this.reduced?target:this.camera+(target-this.camera)*(1-Math.exp(-dt*7));
-  if(Math.abs(target-this.camera)<.2)this.camera=target;
+  if(this.fall){
+   const f=this.fall;f.elapsed+=dt*1000;this.fallProgress=this.reduced?1:Math.min(1,f.elapsed/f.duration);
+   const ease=fallEase(this.fallProgress);this.visualDepth=f.from+(f.to-f.from)*ease;
+   this.camera=this.mode==='dive'?cameraAtDepth(this.visualDepth,this.h)+(f.fromCamera-cameraAtDepth(f.from,this.h))*(1-ease):f.fromCamera+(f.toCamera-f.fromCamera)*ease;
+   if(this.fallProgress>=1){this.visualDepth=f.to;this.camera=f.toCamera;this.fall=null;}
+  }
+  this.moveBuddy();
   this.burst=Math.max(0,this.burst-dt*.65);
   const started=this.metrics.enabled?performance.now():0;this.draw(this.time);this.metrics.sample(started,now,this.ratio,this.cacheRebuilds);
   if(!this.reduced)this.schedule();
@@ -53,7 +59,12 @@ export class Ocean {
   c.drawImage(this.images[band.key],0,0,this.w,height);c.globalAlpha=1;
   // Only the joins feather: the rest of the picture stays fully visible.
   const mask=c.createLinearGradient(0,0,0,height);mask.addColorStop(0,'#fff0');mask.addColorStop(edge/height,'#fff');mask.addColorStop(1-edge/height,'#fff');mask.addColorStop(1,'#fff0');
-  c.globalCompositeOperation='destination-in';c.fillStyle=mask;c.fillRect(0,0,this.w,height);c.globalCompositeOperation='source-over';
+  c.globalCompositeOperation='destination-in';c.fillStyle=mask;c.fillRect(0,0,this.w,height);
+  if(band.key!=='shallow'){
+   // Keep the detailed walls and ruins; the open swimming lane is clear water.
+   const sides=c.createLinearGradient(0,0,this.w,0);for(const [x,a] of [[0,1],[.18,1],[.34,0],[.66,0],[.82,1],[1,1]])sides.addColorStop(x,`rgba(255,255,255,${a})`);c.fillStyle=sides;c.fillRect(0,0,this.w,height);
+  }
+  c.globalCompositeOperation='source-over';
   const entry={canvas:tile,top:band.top-edge,height};this.tiles.set(band.key,entry);return entry;
  }
  environment(){
@@ -93,8 +104,18 @@ export class Ocean {
   }
   if(d>600)this.glowLife(t,d,hadal);
   c.restore();
-  if(this.mode==='dive')this.depthDetails();
+  if(this.mode==='dive'){this.lantern(t);this.depthDetails();}
   if(surface>-10&&surface<H+8){for(let row=0;row<7;row++){c.fillStyle=row<2?'#c4ede9':'#69bbcd';c.globalAlpha=(1-row/8)*.58;for(let x=-20;x<W+20;x+=23+row*7){const length=7+(Math.sin(x*.019+t*.8+row)+1)*13,y=Math.round(surface+row*2+Math.sin(x*.024+t*1.2+row)*1.3);c.fillRect(Math.round(x+Math.sin(t*.6+row)*8),y,Math.round(length),1);}}c.globalAlpha=1;}
+ }
+ attachBuddy(node){this.buddy=node;this.locateBuddy();}
+ locateBuddy(){if(!this.buddy?.isConnected)return;const box=this.buddy.getBoundingClientRect();this.buddyOrigin={x:box.x+box.width*.94,y:box.y+box.height*.23};}
+ moveBuddy(){if(!this.buddy?.isConnected)return;const pose=this.reduced?0:fallPose(this.fallProgress);this.buddyDrop=pose*Math.min(80,this.h*.11);this.buddy.style.setProperty('--fall-drop',this.buddyDrop.toFixed(1)+'px');this.buddy.style.setProperty('--fall-angle',(pose*16).toFixed(1)+'deg');}
+ lantern(t){
+  if(!this.buddy?.isConnected||!this.buddyOrigin)return;
+  const c=this.ctx,d=this.visualDepth,strength=smooth(150,900,d),x=this.buddyOrigin.x,y=this.buddyOrigin.y+(this.buddyDrop||0);
+  if(strength<.01)return;const radius=Math.min(220,this.w*.25),pulse=this.reduced?1:1+Math.sin(t*1.2)*.035;
+  c.save();c.globalCompositeOperation='screen';
+  const halo=c.createRadialGradient(x,y,3,x,y,radius*pulse);halo.addColorStop(0,`rgba(224,239,177,${.26*strength})`);halo.addColorStop(.18,`rgba(124,210,222,${.14*strength})`);halo.addColorStop(.6,`rgba(75,157,190,${.065*strength})`);halo.addColorStop(1,'rgba(47,113,159,0)');c.fillStyle=halo;c.fillRect(x-radius-10,y-radius-10,radius*2+20,radius*2+20);c.restore();
  }
  depthDetails(){
   const c=this.ctx,W=this.w,H=this.h,right=W-(W<600?14:24);c.save();

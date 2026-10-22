@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import {Ocean} from '../ocean.js';
 function browserHarness(){
  const frames=new Map(),listeners={};let id=0,time=0,paints=0;
- const context=()=>({imageSmoothingEnabled:false,createLinearGradient:()=>({addColorStop(){}}),fillRect(){},fillText(){},save(){},restore(){},beginPath(){},rect(){},clip(){},translate(){},scale(){},moveTo(){},lineTo(){},fill(){},drawImage(){paints++;}});
+ const context=()=>({imageSmoothingEnabled:false,createLinearGradient:()=>({addColorStop(){}}),createRadialGradient:()=>({addColorStop(){}}),fillRect(){},fillText(){},save(){},restore(){},beginPath(){},rect(){},clip(){},translate(){},scale(){},moveTo(){},lineTo(){},fill(){},drawImage(){paints++;}});
  const canvas=()=>({width:0,height:0,getContext:()=>context()});
  Object.assign(globalThis,{innerWidth:1366,innerHeight:768,location:{hostname:'example.test',search:''},document:{hidden:false,createElement:()=>canvas(),addEventListener:(name,fn)=>{listeners[name]=fn;}},Image:class{complete=false;naturalWidth=0;},addEventListener:(name,fn)=>{listeners[name]=fn;},requestAnimationFrame:fn=>{frames.set(++id,fn);return id;},cancelAnimationFrame:key=>frames.delete(key)});
  return {canvas:canvas(),frames,listeners,tick(n=1){for(let i=0;i<n;i++){time+=1000/60;const pending=[...frames.values()];frames.clear();for(const fn of pending)fn(time);}},get paints(){return paints;}};

@@ -1,0 +1,21 @@
+{
+  "cmudict.txt": "https://raw.githubusercontent.com/cmusphinx/cmudict/master/cmudict.dict",
+  "cmudict-license.txt": "https://raw.githubusercontent.com/cmusphinx/cmudict/master/LICENSE",
+  "heritage.xml": "https://whc.unesco.org/en/list/xml/",
+  "pbdb-doc.html": "https://paleobiodb.org/data1.2/taxa/list_doc.html",
+  "dinosaurs.json": "https://paleobiodb.org/data1.2/taxa/list.json?base_name=Dinosauria&rel=all_children&rank=genus&taxon_status=accepted&show=attr",
+  "birds-taxonomy.json": "https://paleobiodb.org/data1.2/taxa/list.json?base_name=Aves&rel=all_children&rank=genus&taxon_status=accepted",
+  "instruments-0.json": "https://musicbrainz.org/ws/2/instrument/?query=*&fmt=json&limit=100&offset=0",
+  "cheeses.json": "https://raw.githubusercontent.com/dariusk/corpora/master/data/foods/curds.json",
+  "bread.json": "https://raw.githubusercontent.com/dariusk/corpora/master/data/foods/breads_and_pastries.json",
+  "spices.json": "https://raw.githubusercontent.com/dariusk/corpora/master/data/foods/herbs_n_spices.json",
+  "birds-na.json": "https://raw.githubusercontent.com/dariusk/corpora/master/data/animals/birds_north_america.json",
+  "elements.json": "https://raw.githubusercontent.com/dariusk/corpora/master/data/science/elements.json",
+  "asteroids.json": "https://raw.githubusercontent.com/dariusk/corpora/master/data/science/minor_planets.json",
+  "film.json": "https://raw.githubusercontent.com/dariusk/corpora/master/data/film-tv/popular-movies.json",
+  "music-genres.json": "https://raw.githubusercontent.com/dariusk/corpora/master/data/music/genres.json",
+  "capitals.json": "https://raw.githubusercontent.com/dariusk/corpora/master/data/geography/countries_with_capitals.json",
+  "rivers.json": "https://raw.githubusercontent.com/dariusk/corpora/master/data/geography/rivers.json",
+  "corp-instruments.json": "https://raw.githubusercontent.com/dariusk/corpora/master/data/music/instruments.json",
+  "condiments.json": "https://raw.githubusercontent.com/dariusk/corpora/master/data/foods/condiments.json"
+}

@@ -7,3 +7,12 @@ test('descent moves landmarks past the fixed camera anchor in the correct direct
  const before=depthScreenY(650,cameraAtDepth(100,height),height),after=depthScreenY(650,cameraAtDepth(350,height),height);assert.ok(before-after>height*.4);}
 });
 test('scenery occupies contiguous world positions rather than following the camera',()=>{const bands=sceneryBands(768);assert.deepEqual(bands.map(b=>b.key),['shallow','mid','trench','hadal']);for(let i=1;i<bands.length;i++)assert.ok(bands[i].top<bands[i-1].bottom);assert.ok(bands[3].bottom>cameraAtDepth(7000,768)+768);});
+
+test('fall accelerates, settles without overshoot, and travels at least a screen for 20 points',async()=>{
+ const {fallEase,fallPose,fallDuration}=await import('../depth-world.js');
+ assert.equal(fallEase(0),0);assert.equal(fallEase(1),1);
+ assert.ok(fallEase(.2)-fallEase(.1)>fallEase(.1)-fallEase(0));
+ assert.ok(fallEase(1)-fallEase(.9)<fallEase(.6)-fallEase(.5));
+ assert.equal(fallPose(0),0);assert.ok(Math.abs(fallPose(1))<1e-10);assert.equal(fallPose(.5),1);
+ assert.ok(depthDistance(200,768)>=768);assert.ok(fallDuration(400)>1800&&fallDuration(100000)<=3800);
+});

@@ -25,3 +25,25 @@ test('a new party turn is protected by the minimum eight seconds',()=>{const s=n
 test('restoring a heart never exceeds the maximum five',()=>{const s=newParty(players(),()=>.5);startParty(s,1000,()=>0);s.players[0].hearts=5;s.players[0].meter=590;answerParty(s,'host',partyPack(s).answers[0].label,1100);assert.equal(s.players[0].hearts,5);assert.ok(s.players[0].meter<600);});
 
 test('large user-supplied vehicle bank retains every entry and score',()=>{assert.equal(VEHICLE_PACK.answers.length,1194);assert.deepEqual(VEHICLE_PACK.answers.reduce((o,a)=>(o[a.points]=(o[a.points]??0)+1,o),{}),{10:4,30:27,60:132,85:1029,100:2});assert.equal(matchAnswer(VEHICLE_PACK,'Ground-effect vehicle')?.points,100);assert.equal(matchAnswer(VEHICLE_PACK,'Iceboat')?.points,100);assert.equal(matchAnswer(VEHICLE_PACK,'Airplane')?.points,10);});
+
+test('long-name typos tolerate swaps, neighboring keys and missed doubled letters without changing score',()=>{
+ const p=PACKS.find(p=>p.id==='dinosaur-genera');
+ for(const q of ['tryannosuarus','tyranasourus','tyranosaurus']){const a=matchAnswer(p,q);assert.equal(a?.label,'Tyrannosaurus',q);assert.equal(a.points,10);assert.equal(a.corrected,true);}
+ assert.equal(matchAnswer(PACKS.find(p=>p.id==='cultured-dairy'),'mozarella')?.label,'Mozzarella');
+});
+test('abbreviations accept unique initialisms and explicit familiar shorthand',()=>{
+ assert.equal(matchAnswer(VEHICLE_PACK,'G.E.V.')?.label,'Ground-effect vehicle');
+ assert.equal(matchAnswer(PACKS.find(p=>p.id==='best-picture-nominees'),'LOTR ROTK')?.label,'The Lord of the Rings: The Return of the King');
+ assert.equal(matchAnswer(PACKS.find(p=>p.id==='best-picture-nominees'),'LOTR'),null);
+ assert.equal(matchAnswer(PACKS.find(p=>p.id==='dinosaur-genera'),'tyran'),null);
+});
+test('ambiguous abbreviations never select the rarer answer or override an exact label',()=>{
+ const a={label:'Black Bear',points:10,aliases:[]},b={label:'Brown Bear',points:85,aliases:[]};
+ assert.equal(matchAnswer({answers:[a,b]},'BB'),null);
+ assert.equal(matchAnswer({answers:[a,{label:'BB',points:30,aliases:[]}]},'BB').label,'BB');
+ assert.equal(matchAnswer({answers:[a]},'B'),null);
+});
+test('close competing typo candidates remain unresolved',()=>{
+ const p={answers:[{label:'abcdefghi',points:10,aliases:[]},{label:'abcdefghj',points:85,aliases:[]}]};
+ assert.equal(matchAnswer(p,'abcdefghk'),null);
+});

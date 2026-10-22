@@ -1,3 +1,4 @@
+import {EXPANDED_PACKS} from './expanded-banks.js';
 import {VEHICLE_PACK} from './vehicle-bank.js';
 import {AIRLINE_PACK} from './airline-bank.js';
 // Original curated packs. Scores are editorial difficulty tiers, not player-frequency statistics.
@@ -53,3 +54,8 @@ for(const p of PACKS){const a=p.answers.find(a=>a.label===clever[p.id]);if(a&&a.
 PACKS.push(AIRLINE_PACK);
 
 PACKS[PACKS.findIndex(p=>p.id==='no-wheels')]=VEHICLE_PACK;
+
+// Saved older dives remain readable; new dives draw only from the deeper pool.
+for(const p of PACKS){p.dailyEligible=p===AIRLINE_PACK||p===VEHICLE_PACK;if(p.dailyEligible)p.family='everyday';}
+PACKS.push(...EXPANDED_PACKS);
+export const PLAY_PACKS=PACKS.filter(p=>p.dailyEligible);

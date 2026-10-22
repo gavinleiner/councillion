@@ -1,18 +1,88 @@
-import { PACKS } from './data.js';
+import { PACKS, PLAY_PACKS } from './data.js';
 export const normalize = value => String(value??'').normalize('NFKD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9+#]/g,'');
 export function hash(text){let n=2166136261;for(const c of text){n^=c.charCodeAt(0);n=Math.imul(n,16777619);}return n>>>0;}
 export function random(seed){return()=>{seed+=0x6D2B79F5;let t=seed;t=Math.imul(t^t>>>15,t|1);t^=t+Math.imul(t^t>>>7,t|61);return((t^t>>>14)>>>0)/4294967296;};}
 export function shuffle(items,rng=Math.random){const a=[...items];for(let i=a.length-1;i>0;i--){const j=Math.floor(rng()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
 export function dateKey(date=new Date()){const parts=new Intl.DateTimeFormat('en-US',{timeZone:'America/New_York',year:'numeric',month:'2-digit',day:'2-digit'}).formatToParts(date);return ['year','month','day'].map(k=>parts.find(p=>p.type===k).value).join('-');}
-export function dailyPacks(day=dateKey()){return shuffle(PACKS,random(hash('councillion-v1:'+day))).slice(0,7);}
+export const DAILY_FAMILIES=['words','nature','food','science','culture','world','everyday'];
+function familyCycle(family,cycle,pool){
+ // A stable first item anchors each cycle. Interior order changes by cycle;
+ // the last item can never equal the next cycle's first item.
+ const base=shuffle(pool,random(hash('councillion-pool-v2:'+family)));
+ return base.length<3?base:[base[0],...shuffle(base.slice(1),random(hash(family+':'+cycle)))];
+}
+export function dailyPacks(day=dateKey()){
+ const ordinal=Math.floor(Date.parse(day+'T12:00:00Z')/86400000);
+ if(!Number.isFinite(ordinal))throw Error('Invalid daily date.');
+ const chosen=DAILY_FAMILIES.map(family=>{
+  const pool=PLAY_PACKS.filter(p=>p.family===family);if(!pool.length)throw Error('Missing daily family: '+family);
+  const offset=hash(family)%pool.length,index=ordinal+offset,cycle=Math.floor(index/pool.length);
+  return familyCycle(family,cycle,pool)[index%pool.length];
+ });
+ return shuffle(chosen,random(hash('councillion-daily-v2:'+day)));
+}
 export function tier(points){return points>=100?{name:'KRILLION',icon:'✦',color:'rarity-krillion'}:points>=85?{name:'DEEP CUT',icon:'◆',color:'rarity-deepcut'}:points>=60?{name:'RARE',icon:'✧',color:'rarity-rare'}:points>=30?{name:'SCHOOLER',icon:'◈',color:'rarity-schooler'}:points>0?{name:'PLANKTON',icon:'·',color:'rarity-plankton'}:{name:'NO ECHO',icon:'×',color:'muted'};}
 
-function oneEdit(a,b){if(a.length===b.length){const bad=[];for(let k=0;k<a.length;k++)if(a[k]!==b[k])bad.push(k);if(bad.length===2&&bad[1]===bad[0]+1&&a[bad[0]]===b[bad[1]]&&a[bad[1]]===b[bad[0]])return true;}if(Math.abs(a.length-b.length)>1)return false;let i=0,j=0,e=0;while(i<a.length&&j<b.length){if(a[i]===b[j]){i++;j++;}else {if(++e>1)return false;if(a.length>=b.length)i++;if(b.length>=a.length)j++;}}return e+(i<a.length||j<b.length?1:0)<=1;}
+// Typo tolerance scales with name length. Nearby keys, doubled letters and
+// adjacent swaps are cheap; competing plausible answers are never auto-picked.
+const keyboard=new Map();
+for(const [row,letters] of ['qwertyuiop','asdfghjkl','zxcvbnm'].entries())for(const [col,letter] of [...letters].entries())keyboard.set(letter,[col+[0,.25,.75][row],row]);
+function neighbor(a,b){const x=keyboard.get(a),y=keyboard.get(b);return x&&y&&Math.abs(x[0]-y[0])<=1.1&&Math.abs(x[1]-y[1])<=1;}
+export function typoDistance(a,b,limit=300){
+ if(a===b)return 0;
+ let older,previous=Array.from({length:b.length+1},(_,i)=>i*100);
+ for(let i=1;i<=a.length;i++){
+  const row=[i*100];let minimum=row[0];
+  for(let j=1;j<=b.length;j++){
+   const substitution=a[i-1]===b[j-1]?0:neighbor(a[i-1],b[j-1])?65:100;
+   const deletion=i>1&&a[i-1]===a[i-2]?55:100,insertion=j>1&&b[j-1]===b[j-2]?55:100;
+   row[j]=Math.min(previous[j]+deletion,row[j-1]+insertion,previous[j-1]+substitution);
+   if(i>1&&j>1&&a[i-1]===b[j-2]&&a[i-2]===b[j-1])row[j]=Math.min(row[j],older[j-2]+65);
+   minimum=Math.min(minimum,row[j]);
+  }
+  if(minimum>limit)return Infinity;older=previous;previous=row;
+ }
+ return previous[b.length];
+}
+const stopwords=new Set(['a','an','the','of','and','to','in','for','on','at','from']);
+function abbreviations(label){
+ const words=String(label).normalize('NFKD').replace(/[\u0300-\u036f]/g,'').toLowerCase().match(/[a-z0-9]+/g)||[];
+ if(words.length<2)return [];
+ const initials=items=>items.map(w=>/^[ivx]+$/.test(w)&&w.length<=4?w:w[0]).join('');
+ return [...new Set([initials(words),initials(words.filter(w=>!stopwords.has(w)))])].filter(k=>k.length>=2&&k.length<=10&&/[a-z]/.test(k));
+}
 const compiledBanks=new WeakMap();
-function compileBank(pack){let cached=compiledBanks.get(pack);if(cached)return cached;const exact=new Map(),byLength=new Map();for(const answer of pack.answers){for(const key of new Set([answer.label,...answer.aliases].map(normalize))){if(!exact.has(key))exact.set(key,answer);if(!byLength.has(key.length))byLength.set(key.length,[]);byLength.get(key.length).push({key,answer});}}cached={exact,byLength};compiledBanks.set(pack,cached);return cached;}
-export function matchAnswer(pack,input){const query=normalize(input);if(!query)return null;const bank=compileBank(pack),exact=bank.exact.get(query);if(exact)return {...exact,corrected:false};if(query.length<5)return null;const near=new Map();for(const length of [query.length-1,query.length,query.length+1]){for(const entry of bank.byLength.get(length)??[]){if(entry.key.length>=5&&oneEdit(entry.key,query))near.set(entry.answer.label,entry.answer);}}return near.size===1?{...[...near.values()][0],corrected:true}:null;}
+function compileBank(pack){
+ let cached=compiledBanks.get(pack);if(cached)return cached;
+ const exact=new Map(),byLength=new Map(),short=new Map();
+ for(const answer of pack.answers){
+  for(const key of new Set([answer.label,...answer.aliases].map(normalize))){
+   if(!exact.has(key))exact.set(key,answer);
+   if(!byLength.has(key.length))byLength.set(key.length,[]);byLength.get(key.length).push({key,answer});
+  }
+  for(const key of abbreviations(answer.label)){
+   if(!short.has(key))short.set(key,new Map());short.get(key).set(answer.label,answer);
+  }
+ }
+ cached={exact,byLength,short};compiledBanks.set(pack,cached);return cached;
+}
+export function matchAnswer(pack,input){
+ const query=normalize(input);if(!query)return null;
+ const bank=compileBank(pack),exact=bank.exact.get(query);if(exact)return {...exact,corrected:false};
+ const abbreviated=bank.short.get(query);
+ if(abbreviated?.size===1)return {...[...abbreviated.values()][0],corrected:true,abbreviated:true};
+ if(abbreviated?.size>1||query.length<5)return null;
+ const limit=query.length>=18?350:query.length>=10?280:query.length>=8?180:100;
+ const span=query.length>=10?3:query.length>=8?2:1,candidates=new Map();
+ for(let length=Math.max(5,query.length-span);length<=query.length+span;length++)for(const {key,answer} of bank.byLength.get(length)||[]){
+  const cost=typoDistance(query,key,limit);if(cost<=limit&&cost<(candidates.get(answer.label)?.cost??Infinity))candidates.set(answer.label,{answer,cost});
+ }
+ const ordered=[...candidates.values()].sort((a,b)=>a.cost-b.cost);
+ if(!ordered.length||ordered[1]&&ordered[1].cost-ordered[0].cost<55)return null;
+ return {...ordered[0].answer,corrected:true};
+}
 
-export function newParty(players,rng=Math.random){return {phase:'lobby',players:players.map(p=>({...p,hearts:2,meter:0,score:0,connected:true})),turn:0,round:0,packIds:shuffle(PACKS.filter(p=>p.answers.length>=18),rng).map(p=>p.id),used:[],log:[],settings:{lives:2,maxLives:5,meterTarget:600,minTurnMs:8000,fuseMinMs:10000,fuseMaxMs:30000,maxPlayers:6},notice:'The court is assembling.',deadline:0,startedAt:0,revision:0};}
+export function newParty(players,rng=Math.random){return {phase:'lobby',players:players.map(p=>({...p,hearts:2,meter:0,score:0,connected:true})),turn:0,round:0,packIds:shuffle(PLAY_PACKS.filter(p=>p.answers.length>=18),rng).map(p=>p.id),used:[],log:[],settings:{lives:2,maxLives:5,meterTarget:600,minTurnMs:8000,fuseMinMs:10000,fuseMaxMs:30000,maxPlayers:6},notice:'The court is assembling.',deadline:0,startedAt:0,revision:0};}
 export const partyPack=s=>PACKS.find(p=>p.id===s.packIds[(Math.max(s.round,1)-1)%s.packIds.length]);
 function alive(s){return s.players.filter(p=>p.connected&&p.hearts>0);}
 function nextTurn(s){for(let n=1;n<=s.players.length;n++){const i=(s.turn+n)%s.players.length;if(s.players[i].connected&&s.players[i].hearts>0){s.turn=i;return;}}}
