@@ -9,7 +9,7 @@ async function googleKeys(){if(keyCache&&keyCache.until>Date.now())return keyCac
 function loadGoogle(){if(globalThis.google?.accounts?.id)return Promise.resolve();return gisPromise??=new Promise((resolve,reject)=>{const script=document.createElement('script');script.src='https://accounts.google.com/gsi/client';script.async=true;script.onload=resolve;script.onerror=()=>{gisPromise=null;script.remove();reject(Error('Could not load Google sign-in. Check your connection and try again.'));};document.head.append(script);});}
 export function connectAccount({button,modal,escape,onIdentity=()=>{},beforeSignOut=async()=>{}}){
  const update=()=>{button.textContent=current?'● '+current.name.split(' ')[0]:'SIGN IN';button.setAttribute('aria-label',current?'Open account for '+current.name:'Sign in with Google');};
- async function clearIdentity(){current=null;googleCredential='';session(null);update();await beforeSignOut();if(cloudModule)await cloud().then(m=>m.logout()).catch(()=>{});onIdentity(null);}
+ async function clearIdentity(){current=null;googleCredential='';session(null);update();let cleanup;try{cleanup=beforeSignOut();}catch{}onIdentity(null);let timer;await Promise.race([Promise.resolve(cleanup).catch(()=>{}),new Promise(resolve=>{timer=setTimeout(resolve,2000);})]);clearTimeout(timer);if(cloudModule)await cloud().then(m=>m.logout()).catch(()=>{});}
  async function accept(credential,expectedNonce){const identity=await verifyGoogleToken(credential,{clientId:GOOGLE_CLIENT_ID,nonce:expectedNonce,keys:await googleKeys()});current=identity;googleCredential=credential;session({credential,nonce:expectedNonce});update();onIdentity(identity);return identity;}
  async function open(){
   if(current&&current.expires<=Date.now()/1000)await clearIdentity();

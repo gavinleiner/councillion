@@ -1,6 +1,6 @@
 # Councillion
 
-**Party rebuild staged:** the new arena and Firebase multiplayer are not deployed yet. Firebase is on Spark, but Google-provider activation, the database URL/rules, and real-browser verification are pending after browser control disconnected. See [PARTY-BACKEND.md](PARTY-BACKEND.md).
+**Puffer Party:** an original pixel courtroom arena backed by Google Authentication and protected Firebase rooms on Spark. Live Google login, hosting, visibility, host settings and chat were verified on October 22. See [PARTY-BACKEND.md](PARTY-BACKEND.md).
 
 [Play Councillion](https://gavinleiner.github.io/councillion/) · [Explore the ocean](https://gavinleiner.github.io/councillion/#biomes)
 
@@ -12,7 +12,7 @@ Future Counsel’s pixel ocean trivia game, inspired by Krillion. Original clien
 - **Endless Cases:** 80 close-reading questions based on all 16 Future Counsel reviews, including Gavin’s published opinions. Four shuffled choices; five consecutive correct answers clear a challenge. A miss resets the streak. New challenges continue without a play limit. The reviewed bank reshuffles after all 80, with no repeat within a cycle. Progress survives reloads.
 - **Trivia Practice:** the original seven-prompt rarity game remains available in the navigation menu.
 - **Airline reference round:** open `#practice?pack=airline-extras` to begin a practice dive with the user’s exact 111-answer example. `#practice?pack=no-wheels` starts with the imported 1,194-answer vehicle example.
-- **Puffer Party rebuild:** Google-only public and private courtrooms, quick play, four-letter invites, five buddies, chat, spectators, ready/rematch controls and reconnect/host transfer. Defaults are six seats, two hearts, a five-heart cap and 600 points per restored heart. The host can adjust these between games, including up to 16 seats. A shared fuse and minimum turn time govern passing; answers cannot repeat within a category. Activation is still pending.
+- **Puffer Party rebuild:** Google-only public and private courtrooms, quick play, four-letter invites, five buddies, chat, spectators, ready/rematch controls and reconnect/host transfer. Defaults are six seats, two hearts, a five-heart cap and 600 points per restored heart. The host can adjust these between games, including up to 16 seats. A shared fuse and minimum turn time govern passing; answers cannot repeat within a category.
 - **Ocean preview:** `#biomes` uses the gameplay renderer with a depth slider and slow descent. Five named zones change scenery, lighting, ambient life, and colors.
 - **Results:** the full dive unlocks a seven-column log, score guide, searchable answer accordions, rarity filters, and pagination. Answer banks are hidden during all seven prompts.
 
@@ -59,7 +59,7 @@ Serve the root of `main` using **Settings → Pages → Deploy from a branch**. 
 
 The new room service uses Firebase Authentication and Realtime Database. Database rules require the Google sign-in provider, bind player writes to their authenticated UID, protect request/response mailboxes and reserve game-state writes for the current host. Public directory entries omit private rooms and become stale when the host stops updating them. Google email and sign-in tokens are never sent to players. Daily, Practice and Endless remain playable as guests.
 
-The host validates answers and timers. A disconnected player has a 30-second grace period; a connected member can claim an offline host role after that grace. This remains host-authoritative play, so it cannot prevent a malicious host from editing their own room. The service is staged and not yet enabled in production. Full setup status, retention details and release checks are in [PARTY-BACKEND.md](PARTY-BACKEND.md).
+The host validates answers and timers. A disconnected player has a 30-second grace period; a connected member can claim an offline host role after that grace. This remains host-authoritative play, so it cannot prevent a malicious host from editing their own room. Backend setup, retention details and release checks are in [PARTY-BACKEND.md](PARTY-BACKEND.md).
 
 ## Main files
 
@@ -88,13 +88,13 @@ Future Counsel: https://futurecounsel.org/ · Reference: https://krillion.io/
 
 ## Latest validation
 
-59 automated checks cover game rules, both imported answer banks, the percentile model, vertical projection, scene accessibility, four-choice data integrity, deck recycling, streak resets, persistence, and the Easter egg. A 10,000-question simulation verifies that the legitimate answer key never forms the reserved sequence. Browser checks include a real five-correct challenge, shortcut animation, continuing to another challenge, and visible scenery changes during the actual seven-prompt game.
+62 automated checks cover game rules, both imported answer banks, the percentile model, vertical projection, scene accessibility, four-choice data integrity, deck recycling, streak resets, persistence, and the Easter egg. A 10,000-question simulation verifies that the legitimate answer key never forms the reserved sequence. Browser checks include a real five-correct challenge, shortcut animation, continuing to another challenge, and visible scenery changes during the actual seven-prompt game.
 
 ## Google sign-in
 
-`auth-config.js` contains the public web client ID created for Councillion in Google Cloud project `dark-automata-360415`. Authorized JavaScript origins are `https://gavinleiner.github.io` and `http://localhost:4173` (origins have no path). No client secret is stored in this repository. The official Google Identity Services button loads on demand. A browser-local profile verifies the RS256 signature against Google’s rotating JWKs, audience, issuer, nonce and expiry before showing the connected identity. Session storage keeps the short-lived token; sign-out removes it. Negative token tests cover tampering, wrong audience/issuer/nonce, expiry and unknown keys.
+`auth-config.js` contains the public web client ID created for Councillion in Google Cloud project `dark-automata-360415`. Authorized JavaScript origins are `https://gavinleiner.github.io`, `http://localhost:4173` and `http://localhost` (origins have no path). No client secret is stored in this repository. The official Google Identity Services button loads on demand. A browser-local profile verifies the RS256 signature against Google’s rotating JWKs, audience, issuer, nonce and expiry before showing the connected identity. Session storage keeps the short-lived token; sign-out removes it. Negative token tests cover tampering, wrong audience/issuer/nonce, expiry and unknown keys.
 
-Daily, Practice and Endless have optional identity. Puffer Party requires a current Google identity at the screen and session-method boundaries; signing out or expiry closes the active room connection. The one-device guest entry is removed. Progress remains on the current browser; daily progress is not synchronized. The new party backend uses a separate Firebase-authenticated session once activated. A future remote save/leaderboard must independently validate credentials on its backend. [privacy.html](privacy.html) explains storage and third-party requests. Google Auth Platform branding uses the public game and privacy URLs; the external app is published for external players. A real Google sign-in was verified on the production site on October 21.
+Daily, Practice and Endless have optional identity. Puffer Party requires a current Google identity at the screen and session-method boundaries; signing out or expiry closes the active room connection. The one-device guest entry is removed. Progress remains on the current browser; daily progress is not synchronized. The new party backend uses a separate Firebase-authenticated session for multiplayer. A future remote save/leaderboard must independently validate credentials on its backend. [privacy.html](privacy.html) explains storage and third-party requests. Google Auth Platform branding uses the public game and privacy URLs; the external app is published for external players. A real Google sign-in was verified on the production site on October 21.
 
 ## Descent update
 
@@ -104,4 +104,4 @@ The camera now accelerates into a timed fall and settles over roughly 2–3.8 se
 
 Accent, punctuation and case normalization happen first. Exact names and curated shorthand win. Otherwise, unique multiword initials (with or without small connecting words) are recognized; ambiguous initials are rejected. Common Lord of the Rings installment shorthand is explicit. Single-letter guesses and arbitrary partial prefixes do not unlock an answer. Longer names permit multiple typing mistakes, with lower costs for adjacent QWERTY keys, repeated/missing doubled letters, and transposed neighbors. A clear margin over competing candidates is required. The existing confirmation step shows the full intended answer before scoring; the setting can disable it. No points are reduced for a corrected spelling or abbreviation.
 
-The previous production party used a client-only Google gate and PeerJS. This staged rebuild replaces it with Firebase-enforced Google membership. Database emulator tests pass, but production setup and browser verification remain unfinished; see [PARTY-BACKEND.md](PARTY-BACKEND.md).
+The previous party used a client-only Google gate and PeerJS. Puffer Party now uses Firebase-enforced Google membership. The 33 authorization checks and three-identity network test pass against the real Realtime Database emulator; real Google login, live room hosting, rule changes, visibility and chat were also verified. The public Firebase key is restricted to the game’s web origins and five Firebase/Auth APIs. See [PARTY-BACKEND.md](PARTY-BACKEND.md).

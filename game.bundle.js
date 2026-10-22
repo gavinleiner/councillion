@@ -112,10 +112,20 @@
       googleCredential = "";
       session(null);
       update();
-      await beforeSignOut();
+      let cleanup;
+      try {
+        cleanup = beforeSignOut();
+      } catch {
+      }
+      onIdentity(null);
+      let timer;
+      await Promise.race([Promise.resolve(cleanup).catch(() => {
+      }), new Promise((resolve) => {
+        timer = setTimeout(resolve, 2e3);
+      })]);
+      clearTimeout(timer);
       if (cloudModule) await cloud().then((m) => m.logout()).catch(() => {
       });
-      onIdentity(null);
     }
     async function accept(credential, expectedNonce) {
       const identity = await verifyGoogleToken(credential, { clientId: GOOGLE_CLIENT_ID, nonce: expectedNonce, keys: await googleKeys() });
@@ -2358,7 +2368,7 @@ Wi-Fi`
         }
       }
     }
-    for (const p of [...state.players]) if (!members?.[p.id]) {
+    for (const p of [...state.players]) if (!members?.[p.id] && p.connected) {
       disconnectPlayer(state, p.id);
       changed = true;
     }
@@ -2771,7 +2781,7 @@ Wi-Fi`
   var hearts = (p) => '<span aria-label="' + p.hearts + ' hearts">' + Array.from({ length: Math.max(1, p.hearts) }, (_, i) => `<i class="${p.hearts ? "" : "empty"}">\u2665</i>`).join("") + "</span>";
   function arenaPositions(count) {
     return Array.from({ length: count }, (_, i) => {
-      const a = -Math.PI / 2 + i / count * Math.PI * 2;
+      const a = -Math.PI / 2 - (count === 4 ? Math.PI / 4 : 0) + i / count * Math.PI * 2;
       return { x: 50 + Math.sin(a) * 34, y: 51 + Math.cos(a) * 29 };
     });
   }
@@ -2780,7 +2790,7 @@ Wi-Fi`
       Object.assign(this, { root, help, leave, invite, error, chatOpen: false, rulesOpen: false, lastTurn: null, lastAccepted: null });
     }
     mount() {
-      this.root.innerHTML = `<section class="party-arena"><div class="arena-water" aria-hidden="true"></div><div class="party-hud"><button class="room-badge" id="p-room" aria-label="Change room visibility"></button><span id="p-phase"></span><span id="p-count"></span></div><button class="arena-leave icon" aria-label="Leave room">\u21B6</button><button class="arena-chat icon" aria-label="Open chat" aria-expanded="false">\u25A4<i hidden></i></button><div class="arena-prompt" id="p-prompt"></div><div class="arena-ring" id="p-ring"></div><div class="puffer-flight-layer"><div class="passing-puffer" id="p-puffer"><img src="assets/puffer.svg" alt="The puffer"><span class="puffer-zzz">z z z</span></div></div><div class="puffer-pop" id="p-pop" aria-hidden="true">${Array.from({ length: 16 }, (_, i) => `<i style="--i:${i}"></i>`).join("")}</div><div class="arena-center" id="p-center"></div><div class="arena-status" id="p-status" role="status"></div><p id="party-error" class="arena-error" hidden role="alert"></p><div class="party-bottom" id="p-bottom"></div><aside class="party-drawer" id="p-drawer" hidden></aside></section>`;
+      this.root.innerHTML = `<section class="party-arena"><div class="arena-water" aria-hidden="true"></div><img class="court-column left" src="assets/party-column.svg" alt=""><img class="court-column right" src="assets/party-column.svg" alt=""><div class="party-hud"><button class="room-badge" id="p-room" aria-label="Change room visibility"></button><span id="p-phase"></span><span id="p-count"></span></div><button class="arena-leave icon" aria-label="Leave room">\u21B6</button><button class="arena-chat icon" aria-label="Open chat" aria-expanded="false">\u25A4<i hidden></i></button><div class="arena-prompt" id="p-prompt"></div><div class="arena-ring" id="p-ring"></div><div class="puffer-flight-layer"><div class="passing-puffer" id="p-puffer"><img src="assets/puffer.svg" alt="The puffer"><span class="puffer-zzz">z z z</span></div><div class="puffer-pop" id="p-pop" aria-hidden="true">${Array.from({ length: 16 }, (_, i) => `<i style="--i:${i}"></i>`).join("")}</div></div><div class="arena-center" id="p-center"></div><div class="arena-status" id="p-status" role="status"></div><p id="party-error" class="arena-error" hidden role="alert"></p><div class="party-bottom" id="p-bottom"></div><aside class="party-drawer" id="p-drawer" hidden></aside></section>`;
       this.root.querySelector(".arena-leave").onclick = this.leave;
       this.root.querySelector(".arena-chat").onclick = () => {
         this.chatOpen = !this.chatOpen;
@@ -2797,6 +2807,7 @@ Wi-Fi`
       if (!this.root.querySelector(".party-arena")) this.mount();
       const q2 = (sel) => this.root.querySelector(sel), lobby = ["lobby", "ended"].includes(s.phase), playing = s.phase === "playing", me = s.players.find((p) => p.id === session2.myId), mine = s.players[s.turn]?.id === session2.myId, alive2 = s.players.filter((p) => p.connected && p.hearts > 0 && !p.spectator), ready = s.players.filter((p) => p.connected && p.ready), positions = arenaPositions(s.players.length);
       this.root.querySelector(".party-arena").classList.toggle("dense-room", s.players.length > 8);
+      this.root.querySelector(".party-arena").dataset.phase = s.phase;
       q2("#p-room").innerHTML = `<small>${session2.preview ? "ART PREVIEW" : session2.meta?.isPrivate ? "PRIVATE" : "PUBLIC"}</small><strong>${esc5(session2.code)}</strong>`;
       q2("#p-room").disabled = !session2.host;
       q2("#p-phase").textContent = lobby ? "LOBBY" : s.phase === "countdown" ? "COURT CONVENES" : "CATEGORY " + s.round;
@@ -2899,6 +2910,7 @@ Wi-Fi`
       if (el.hidden) {
         this.drawerKind = null;
         this.chatKey = null;
+        this.chatRosterKey = null;
         return;
       }
       const session2 = this.session, s = this.s;
@@ -2931,6 +2943,12 @@ Wi-Fi`
           session2.sendChat(el.querySelector("input").value);
           el.querySelector("input").value = "";
         };
+      }
+      const roster = el.querySelector(".chat-roster"), rosterKey = JSON.stringify([s.players.map((p) => [p.id, p.name, p.connected]), session2.host, session2.meta.host]);
+      if (this.chatRosterKey !== rosterKey) {
+        this.chatRosterKey = rosterKey;
+        roster.innerHTML = `<summary>PLAYERS \xB7 ${s.players.filter((p) => p.connected).length}</summary><div>${s.players.filter((p) => p.connected).map((p) => `<p>${esc5(p.name)}${p.id === session2.meta.host ? " <small>HOST</small>" : ""}${session2.host && p.id !== session2.myId ? `<button data-kick="${esc5(p.id)}" aria-label="Remove ${esc5(p.name)} from room">REMOVE</button>` : ""}</p>`).join("")}</div>`;
+        roster.querySelectorAll("[data-kick]").forEach((b) => b.onclick = () => session2.kick(b.dataset.kick));
       }
       const messages = el.querySelector("#p-messages"), key = JSON.stringify(session2.chat);
       if (this.chatKey !== key) {

@@ -1,35 +1,26 @@
-# Puffer Party backend and release status
+# Puffer Party backend and validation
 
-The rebuild is staged, not yet released to GitHub Pages. The existing public game is still on commit `487c893`.
+## Activated setup — October 22, 2026
 
-## Verified setup
+- Firebase is configured in the existing Google Cloud project `dark-automata-360415` (`My First Project`).
+- The console confirmed **Spark / No-cost ($0/month)**. No billing upgrade was made. Optional Analytics is disabled.
+- The `Councillion` web app is registered; its public browser identifiers are in `firebase-config.js`.
+- Google Authentication is enabled. Anonymous authentication is disabled. `localhost` and `gavinleiner.github.io` are authorized domains.
+- Realtime Database was created in locked mode in `us-central1` at `https://dark-automata-360415-default-rtdb.firebaseio.com`. The tested `database.rules.json` was published through the console.
+- A real Google sign-in, Firebase token exchange, public room creation/listing, private visibility, host rule updates and private-room chat were verified in the browser. Unsigned directory access returned **401 Permission denied**.
+- The Google Identity Services client has three authorized JavaScript origins: `https://gavinleiner.github.io`, `http://localhost:4173`, and `http://localhost`.
 
-- Firebase was added to Google Cloud project `dark-automata-360415` (display name `My First Project`).
-- The console showed **Spark / No-cost ($0/month)**. No billing upgrade was made.
-- Optional Google Analytics was disabled.
-- The `Councillion` web app was registered. Its public identifiers are in `firebase-config.js`.
-- Authentication was initialized. Browser control disconnected while opening the Google provider; its enabled state is **not verified**.
-- No Realtime Database URL has been entered. `cloud.js` deliberately refuses to open rooms while `databaseURL` is empty.
+## Public Firebase key and GitHub alert
 
-## Open key alert
+GitHub secret-scanning alert #1 identified the intentionally public Firebase browser key. The Cloud Credentials page was inspected and restrictions were saved: website referrers are limited to `https://gavinleiner.github.io/*` and `http://localhost:4173/*`; allowed APIs are Identity Toolkit, Token Service, Firebase Management, Firebase Rules and Cloud Logging. Generative Language and unrelated APIs are excluded. The restricted key was verified with the actual Google/Firebase room connection.
 
-GitHub secret-scanning alert #1 flagged the Firebase web API key in the configuration on this draft branch. The official Firebase documentation says browser keys are public by design when restricted to Firebase services, with data access controlled by rules. The actual key restrictions have not been inspected because browser control is disconnected. Do not dismiss the alert until the Cloud Credentials page confirms a Firebase-only allowlist and excludes Generative Language and other non-Firebase APIs. Do not treat removal from a file as revocation. No password, service-account private key, OAuth client secret, or user identity token was added with this configuration.
+Alert #1 was resolved as an intentionally public key (`wont_fix`) with this rationale; secret scanning remains enabled. No password, service-account private key, OAuth client secret or user identity token was committed. Firebase documents browser API keys as public configuration, with data authorization enforced by Authentication and database rules: https://firebase.google.com/docs/projects/api-keys .
 
-Guidance: https://firebase.google.com/docs/projects/api-keys
+## Browser verification
 
-## Remaining activation work
+The arena was inspected at 1366 × 768 and 502 × 600. The laptop layout keeps the ring clear of lobby controls; the ocean canvas is suspended behind the party arena. Live host settings, visibility and chat were exercised against the actual backend. Three distinct Google-provider identities were used in the emulator network test for full multiplayer play; this is separate from the one-account live Google test.
 
-Use the existing Firebase console tab for this project. The user has already approved Firebase terms, Google Authentication and protected party data on Spark. Do not request the same approval again, and do not upgrade billing.
-
-1. Inspect the key restrictions and address the open key alert described above before releasing.
-2. Enable the Google provider, with Councillion as the public app name and the existing support contact. Keep all other providers, including Anonymous, disabled.
-2. Add `gavinleiner.github.io` and `localhost` to Authentication's authorized domains as needed. The existing Google Identity Services web client is `312825866122-hmkjuk1841ph7goh85bgav06p73pjua6.apps.googleusercontent.com`, in the same Google project.
-3. Create a Realtime Database on Spark in locked mode. Publish `database.rules.json`, which has passed the emulator authorization tests. Never use public/test-mode rules.
-4. Copy the database's actual URL into `firebase-config.js`. The Firebase web configuration is public; never put an administrative credential or OAuth client secret in this repository.
-5. Test a real Google sign-in with the actual Firebase backend. Confirm unsigned requests fail, a signed-in player can host, and the directory updates. The existing Google profile login was tested before this rebuild; the new Firebase credential exchange has only been checked against its documented integration so far.
-6. Check the lobby, active arena, heart rules, chat, eliminated/spectator state and rematch at laptop and narrow sizes through the browser. Browser control failed before this visual check could happen.
-7. Finish observing/playing the reference game's round-end flow. Reference rooms were actually joined, but no successful accepted answer was observed before the browser disconnected. Do not claim that step is complete.
-8. Build, commit and publish only after the production backend and browser checks pass. Update the cache suffix when releasing and verify the hosted bundles.
+Reference research included joining Krillion quick play, submitting an accepted `Thor` answer to its Avengers category, watching the puffer pass, category changes and heart loss/elimination. Its existing public/private room, readiness, spectator, host settings, chat, fuse and rematch flows informed this original implementation. No reference artwork or source code is shipped. Councillion does not implement Krillion’s new rated matchmaking or claim identical artwork, content or behavior.
 
 ## Architecture
 
@@ -43,9 +34,9 @@ Private rooms are omitted from the public directory. A room's code is an invite 
 
 ## Validation
 
-- `npm test`: 59 checks, including core games, Google token validation, new party rules, typing ahead, escaped names, and chat drafts.
-- `tests/database-security.mjs`: 33 checks against the actual Firebase Realtime Database emulator, covering unauthenticated/non-Google denial, UID ownership, host-only state, request privacy, chat impersonation/cooldown, private listings and host migration.
-- `tests/party-network.mjs`: three distinct emulator Google-provider identities exercising hosting, host rules, countdown, accepted answers, canonical duplicate rejection, spectator entry, chat delivery, private-directory removal, pop/victory, rematch and host migration.
+- `npm test`: 62 checks, including core games, Google token validation, new party rules, typing ahead, escaped names, and chat drafts.
+- `tests/database-security.mjs`: 33 checks against the actual Firebase Realtime Database emulator, covering unauthenticated/non-Google denial, UID ownership, host-only state, request privacy, chat impersonation/cooldown, private listings host migration, player removal and absence of repeated writes after removal.
+- `tests/party-network.mjs`: three distinct emulator Google-provider identities exercising hosting, host rules, countdown, accepted answers, canonical duplicate rejection, spectator entry, chat delivery, private-directory removal, pop/victory, rematch host migration, player removal and absence of repeated writes after removal.
 - `npm audit --omit=dev`: zero runtime dependency findings after the gRPC override. The cloud bundle includes only App, Auth and Realtime Database.
 
 Run database checks with Java 21 on PATH:
@@ -64,4 +55,4 @@ A portable official Temurin JRE was downloaded under the parent task's `work/par
 
 ## Local preview
 
-`http://localhost:4173/party-preview.html` is an ignored, local-only simulated art preview, clearly marked **ART PREVIEW / DEMO**. It does not create a public room and is not an authentication bypass. Use it to inspect the arena while console access is unavailable. It must not be deployed.
+`http://localhost:4173/party-preview.html` is an ignored, local-only simulated art preview, clearly marked **ART PREVIEW / DEMO**. It does not create a public room and is not an authentication bypass. Use it to inspect arena layouts without creating an online room. It must not be deployed.

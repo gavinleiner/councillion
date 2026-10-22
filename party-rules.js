@@ -9,7 +9,7 @@ export function syncRoster(state,members,now=Date.now()){
   if(!p&&present){p={id,name:m.name,buddy:m.buddy,connected:true,ready:m.ready,autoJoin:m.autoJoin,hearts:state.phase==='lobby'?state.settings.lives:0,meter:0,score:0,spectator:state.phase!=='lobby'};state.players.push(p);changed=true;}
   if(p){if(present&&!p.connected){p.connected=true;p.spectator=state.phase!=='lobby';p.hearts=p.spectator?0:state.settings.lives;changed=true;}for(const k of ['name','buddy','ready','autoJoin'])if(p[k]!==m[k]){p[k]=m[k];changed=true;}if(!present&&p.connected){disconnectPlayer(state,id);changed=true;}}
  }
- for(const p of [...state.players])if(!members?.[p.id]){disconnectPlayer(state,p.id);changed=true;}
+ for(const p of [...state.players])if(!members?.[p.id]&&p.connected){disconnectPlayer(state,p.id);changed=true;}
  if(state.phase==='lobby'){const players=state.players.filter(p=>p.connected);if(players.length!==state.players.length){state.players=players;changed=true;}}
  if(changed)state.revision++;return changed;
 }

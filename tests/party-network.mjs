@@ -13,7 +13,7 @@ try{
  await env.clearDatabase();const host=client('host'),friend=client('friend'),watcher=client('watcher');
  await host.create('Host',{buddy:'krill',isPrivate:false});await wait(()=>host.connected,'host connection');
  await friend.join('Friend',host.code,{buddy:'squid'});await wait(()=>host.state.players.length===2&&friend.state?.players.length===2,'two-player roster');
- assert.equal(host.state.players.find(p=>p.id==='friend').name,'Friend');assert.ok((await sdk.get(sdk.ref(host.c.db,'directory/'+host.code))).exists());
+ assert.equal(host.state.players.find(p=>p.id==='friend').name,'Friend');await wait(async()=>(await sdk.get(sdk.ref(host.c.db,'directory/'+host.code))).exists(),'public room appears in directory');
  host.rules({lives:1,minTurnMs:4000});await wait(()=>friend.state.settings.lives===1,'host rules synchronize');
  host.start();await wait(()=>friend.state.phase==='playing','three-second countdown and first turn');
  host.state.deadline=Date.now()+600000;await host.broadcast();
@@ -26,8 +26,10 @@ try{
  await host.visibility(true);await wait(()=>friend.meta.isPrivate,'visibility synchronization');await wait(async()=>!(await sdk.get(sdk.ref(host.c.db,'directory/'+host.code))).exists(),'private room removed from directory');
  // Force an imminent fuse in this isolated emulator room to exercise a loss and rematch.
  host.state.deadline=Date.now()-1;await host.broadcast();await wait(()=>friend.state.phase==='ended','pop and last-player victory');assert.equal(friend.state.winner,'friend');
- await friend.ready(true);await watcher.ready(true);await wait(()=>host.state.players.filter(p=>p.ready).length>=2,'ready for rematch');host.start();await wait(()=>friend.state.phase==='playing','rematch starts');assert.ok(friend.state.players.some(p=>p.id==='watcher'&&p.hearts===1));
+ await friend.ready(true);await watcher.ready(true);await wait(()=>host.state.players.find(p=>p.id==='friend')?.ready&&host.state.players.find(p=>p.id==='watcher')?.ready,'both players ready for rematch');host.start();await wait(()=>friend.state.phase==='playing','rematch starts');assert.ok(friend.state.players.some(p=>p.id==='watcher'&&p.hearts===1));
  await host.close(false);await env.withSecurityRulesDisabled(c=>sdk.update(sdk.ref(c.database(),'rooms/'+host.code+'/members/host'),{online:false,lastSeen:Date.now()-31000}));await wait(()=>friend.host||watcher.host,'host migration');
  const successor=friend.host?friend:watcher;assert.notEqual(successor.meta.host,'host');assert.equal(successor.meta.host,successor.myId);
- console.log('Party network flow passed: host, rules, countdown, answers, duplicate rejection, spectator, chat, private directory, pop, rematch, host migration.');
+ const removed=successor.myId==='friend'?watcher:friend;successor.kick(removed.myId);await wait(()=>successor.state.players.find(p=>p.id===removed.myId)?.connected===false,'host removes a player');
+ await new Promise(r=>setTimeout(r,500));const revision=successor.state.revision;await new Promise(r=>setTimeout(r,750));assert.equal(successor.state.revision,revision,'a removed member must not cause repeated state writes');
+ console.log('Party network flow passed: host, rules, countdown, answers, duplicate rejection, spectator, chat, private directory, pop, rematch, host migration, removal without repeated writes.');
 }finally{await Promise.all(sessions.map(s=>s.close()));await env.cleanup();}
