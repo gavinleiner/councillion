@@ -15,3 +15,5 @@ work/
 firebase-debug.log
 database-debug.log
 ui-debug.log
+
+__pycache__/

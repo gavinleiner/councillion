@@ -1,0 +1,1 @@
+SELECT DISTINCT ?item ?label ?pop WHERE { VALUES ?type {wd:Q11424 wd:Q24869} ?item wdt:P31 ?type; wdt:P577 ?date; rdfs:label ?label. FILTER(?date >= "2024-01-01T00:00:00Z"^^xsd:dateTime && ?date <= "2026-10-22T23:59:59Z"^^xsd:dateTime) FILTER(LANG(?label)="en") OPTIONAL { ?item wikibase:sitelinks ?pop. }}

@@ -1,3 +1,4 @@
+import {FUN_PACKS} from './fun-question-catalog.js';
 import {EXPANDED_PACKS} from './expanded-banks.js';
 import {VEHICLE_PACK} from './vehicle-bank.js';
 import {AIRLINE_PACK} from './airline-bank.js';
@@ -60,6 +61,14 @@ PACKS[PACKS.findIndex(p=>p.id==='no-wheels')]=VEHICLE_PACK;
 for(const p of PACKS){p.dailyEligible=p===AIRLINE_PACK||p===VEHICLE_PACK;if(p.dailyEligible)p.family='everyday';}
 PACKS.push(...EXPANDED_PACKS);
 PACKS.push(...CATALOG_PACKS);
+PACKS.push(...FUN_PACKS);
 export const PLAY_PACKS=PACKS.filter(p=>p.dailyEligible);
-export const ORIGINAL_PLAY_PACKS=PLAY_PACKS.filter(p=>!p.catalogVersion);
+export const ORIGINAL_PLAY_PACKS=PLAY_PACKS.filter(p=>!p.catalogVersion&&!p.funVersion);
 export const answerCount=pack=>pack.answerCount??pack.answers.length;
+
+// Specialist inventories stay available without dominating ordinary games.
+const approachable=new Set(['no-wheels','airline-extras','cultured-dairy','seasonings','condiment-counter','sandwiches','tea-varieties','dog-breeds','cat-breeds','flower-names','weather-conditions','board-game-titles','literary-authors','occupation-titles','clothing-items','household-appliances','room-types','programming-languages','named-colours','food-preparation-verbs','catalog-soups','catalog-cakes','catalog-breads','catalog-desserts','catalog-salads','catalog-noodles','catalog-street-foods','catalog-snacks','catalog-coffee-drinks','catalog-confectionery','catalog-instrument-types','catalog-genre-clean','catalog-card-games','catalog-dances','catalog-mythical-creature-types','catalog-furniture-types','catalog-hand-tool-types','world-capitals','pokemon-species']);
+export const MIXED_PACKS=PLAY_PACKS.filter(p=>p.funVersion?p.mixed:approachable.has(p.id));
+for(const p of MIXED_PACKS)if(p.id==='pokemon-species')p.family='gaming';
+
+PACKS.find(p=>p.id==='dinosaur-genera').excludedAnswers=['Mosasaurus','Pteranodon','Pterodactylus','Plesiosaurus','Ichthyosaurus','Quetzalcoatlus','Dimetrodon','Crocodile','Chicken','Dodo'];

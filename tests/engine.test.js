@@ -8,7 +8,7 @@ test('daily date uses New York across UTC midnight and DST',()=>{assert.equal(da
 test('seven shared daily prompts are deterministic and unique',()=>{const a=dailyPacks('2026-10-21').map(p=>p.id);assert.deepEqual(a,dailyPacks('2026-10-21').map(p=>p.id));assert.equal(new Set(a).size,7);assert.notDeepEqual(a,dailyPacks('2026-10-22').map(p=>p.id));});
 test('every curated alias maps unambiguously to its intended answer',()=>{for(const p of PACKS){const keys=new Set();for(const a of p.answers){assert.ok([10,15,30,60,85,100].includes(a.points));for(const alias of [a.label,...a.aliases]){const k=normalize(alias);assert.ok(k.length,`${p.id}: empty alias`);const match=matchAnswer(p,alias);assert.equal(match?.label,a.label,`${p.id}: ${alias}`);}assert.ok(!keys.has(normalize(a.label)),`${p.id}: duplicate`);keys.add(normalize(a.label));}}});
 test('normalization accepts accents and punctuation without changing short answers',()=>{assert.equal(normalize('Pétanque!'),'petanque');assert.equal(matchAnswer(PACKS.find(p=>p.id==='languages'),'C++').label,'C++');assert.equal(matchAnswer(PACKS.find(p=>p.id==='languages'),'C#').label,'C#');assert.equal(matchAnswer(PACKS.find(p=>p.id==='elements'),'oxygem')?.label,'Oxygen');assert.equal(matchAnswer(PACKS[0],'totally made up'),null);});
-test('ambiguous typo and short typo are rejected',()=>{const p={answers:[{label:'abcde',aliases:[],points:10},{label:'abcdf',aliases:[],points:30}]};assert.equal(matchAnswer(p,'abcdg'),null);assert.equal(matchAnswer(PACKS.find(p=>p.id==='chess'),'kingg'),null);});
+test('closest plausible spelling wins, including short-word typos',()=>{const p={answers:[{label:'abcde',aliases:[],points:10},{label:'abcdf',aliases:[],points:30}]};assert.equal(matchAnswer(p,'abcdg')?.label,'abcdf');assert.equal(matchAnswer(PACKS.find(p=>p.id==='chess'),'kingg')?.label,'King');});
 const players=()=>[{id:'host',name:'Host'},{id:'guest',name:'Guest'}];
 test('party requires two players to start',()=>{const s=newParty(players().slice(0,1));assert.equal(startParty(s,1000),false);assert.equal(s.phase,'lobby');});
 test('valid party answers pass the puffer without resetting the fuse',()=>{const s=newParty(players(),()=>.5);startParty(s,1000,()=>.5);const deadline=s.deadline;const a=partyPack(s).answers[0];assert.ok(answerParty(s,'guest',a.label,1100).error);assert.ok(answerParty(s,'host','not a valid answer',1100).error);assert.ok(answerParty(s,'host',a.label,1100).answer);assert.equal(s.turn,1);assert.equal(s.deadline,deadline);assert.ok(answerParty(s,'guest',a.aliases[0]??a.label,1200).error);assert.equal(s.turn,1);});
@@ -20,7 +20,7 @@ test('three-player disconnect advances the turn to a connected player',()=>{cons
 test('user-supplied airline bank preserves all 111 answers and score allocations',()=>{assert.equal(AIRLINE_PACK.answers.length,111);assert.deepEqual(AIRLINE_PACK.answers.reduce((o,a)=>(o[a.points]=(o[a.points]??0)+1,o),{}),{10:8,30:22,60:30,85:50,100:1});for(const [input,expected] of [['Falcon in cabin',100],['Award booking fee',85],['Airport check-in fee',60],['Alcohol',30],['Wi-Fi',10]])assert.equal(matchAnswer(AIRLINE_PACK,input)?.points,expected);});
 test('visible rarity names match the supplied reference',()=>{assert.deepEqual([100,85,60,30,10].map(n=>tier(n).name),['KRILLION','DEEP CUT','RARE','SCHOOLER','PLANKTON']);});
 test('each pack has a top tier; imported packs can have multiple top answers',()=>{for(const p of PACKS)assert.ok(p.answers.some(a=>a.points===100),p.id);assert.equal(VEHICLE_PACK.answers.filter(a=>a.points===100).length,2);});
-test('adjacent transposition is accepted without treating short typos as answers',()=>{assert.equal(matchAnswer(PACKS.find(p=>p.id==='countries'),'frnace')?.label,'France');assert.equal(matchAnswer(PACKS.find(p=>p.id==='chess'),'kign'),null);});
+test('adjacent transposition is accepted for short and long names',()=>{assert.equal(matchAnswer(PACKS.find(p=>p.id==='countries'),'frnace')?.label,'France');assert.equal(matchAnswer(PACKS.find(p=>p.id==='chess'),'kign')?.label,'King');});
 test('a new party turn is protected by the minimum eight seconds',()=>{const s=newParty(players(),()=>.5);startParty(s,1000,()=>0);const old=s.deadline;const a=partyPack(s).answers[0];answerParty(s,'host',a.label,old-1000);assert.equal(s.deadline,old+7000);assert.equal(s.turn,1);});
 test('restoring a heart never exceeds the maximum five',()=>{const s=newParty(players(),()=>.5);startParty(s,1000,()=>0);s.players[0].hearts=5;s.players[0].meter=590;answerParty(s,'host',partyPack(s).answers[0].label,1100);assert.equal(s.players[0].hearts,5);assert.ok(s.players[0].meter<600);});
 
@@ -37,13 +37,13 @@ test('abbreviations accept unique initialisms and explicit familiar shorthand',(
  assert.equal(matchAnswer(PACKS.find(p=>p.id==='best-picture-nominees'),'LOTR'),null);
  assert.equal(matchAnswer(PACKS.find(p=>p.id==='dinosaur-genera'),'tyran'),null);
 });
-test('ambiguous abbreviations never select the rarer answer or override an exact label',()=>{
+test('tied abbreviations select a familiar match and exact labels retain priority',()=>{
  const a={label:'Black Bear',points:10,aliases:[]},b={label:'Brown Bear',points:85,aliases:[]};
- assert.equal(matchAnswer({answers:[a,b]},'BB'),null);
+ assert.equal(matchAnswer({answers:[a,b]},'BB')?.label,'Black Bear');
  assert.equal(matchAnswer({answers:[a,{label:'BB',points:30,aliases:[]}]},'BB').label,'BB');
  assert.equal(matchAnswer({answers:[a]},'B'),null);
 });
-test('close competing typo candidates remain unresolved',()=>{
+test('close competing typo candidates automatically resolve to the best match',()=>{
  const p={answers:[{label:'abcdefghi',points:10,aliases:[]},{label:'abcdefghj',points:85,aliases:[]}]};
- assert.equal(matchAnswer(p,'abcdefghk'),null);
+ assert.equal(matchAnswer(p,'abcdefghk')?.label,'abcdefghi');
 });

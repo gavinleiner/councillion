@@ -1,2 +1,4 @@
 # Preserve upstream snapshot hashes, CRLF and tab-delimited empty fields.
 data-snapshots/expansion/** -text -whitespace
+data-snapshots/rework/** -text -whitespace
+question-banks/*.gz -text
