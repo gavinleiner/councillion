@@ -2,7 +2,7 @@
 
 **Puffer Party:** an original pixel courtroom arena backed by Google Authentication and protected Firebase rooms on Spark. Live Google login, hosting, visibility, host settings and chat were verified on October 22. See [PARTY-BACKEND.md](PARTY-BACKEND.md).
 
-[Play Councillion](https://gavinleiner.github.io/councillion/) · [Explore the ocean](https://gavinleiner.github.io/councillion/#biomes)
+[Play Councillion](https://gavinleiner.github.io/councillion/) · [221 question categories](https://gavinleiner.github.io/councillion/#questions) · [Explore the ocean](https://gavinleiner.github.io/councillion/#biomes)
 
 Future Counsel’s pixel ocean trivia game, inspired by Krillion. Original client code, code-native pixel sprites, AI-edited environmental background art, and bundled typography. The environmental art follows the reference composition with small legal details; logos, labels, controls, and fish sprites remain code-native.
 
@@ -10,13 +10,13 @@ Future Counsel’s pixel ocean trivia game, inspired by Krillion. Original clien
 
 - **Daily Dive:** seven shared prompts, a three-second optional preview, then 25 seconds to answer. You can type immediately and submit early to start the clock. Rejected attempts can be retried. Text left at zero is submitted automatically. Progress and completed results are saved in this browser.
 - **Endless Cases:** 80 close-reading questions based on all 16 Future Counsel reviews, including Gavin’s published opinions. Four shuffled choices; five consecutive correct answers clear a challenge. A miss resets the streak. New challenges continue without a play limit. The reviewed bank reshuffles after all 80, with no repeat within a cycle. Progress survives reloads.
-- **Trivia Practice:** the original seven-prompt rarity game remains available in the navigation menu.
+- **Trivia Practice:** browse and search 221 categories in `#questions`, then choose the opening prompt of a seven-question dive. The same pool powers Puffer Party immediately and Daily Dive from the October 23 New York reset. Historical daily draws and saved dives retain their original prompts.
 - **Airline reference round:** open `#practice?pack=airline-extras` to begin a practice dive with the user’s exact 111-answer example. `#practice?pack=no-wheels` starts with the imported 1,194-answer vehicle example.
 - **Puffer Party rebuild:** Google-only public and private courtrooms, quick play, four-letter invites, five buddies, chat, spectators, ready/rematch controls and reconnect/host transfer. Defaults are six seats, two hearts, a five-heart cap and 600 points per restored heart. The host can adjust these between games, including up to 16 seats. A shared fuse and minimum turn time govern passing; answers cannot repeat within a category.
 - **Ocean preview:** `#biomes` uses the gameplay renderer with a depth slider and slow descent. Five named zones change scenery, lighting, ambient life, and colors.
 - **Results:** the full dive unlocks a seven-column log, score guide, searchable answer accordions, rarity filters, and pagination. Answer banks are hidden during all seven prompts.
 
-Visible rarity families follow the supplied image: Krillion, Deep Cut, Rare, Schooler, and Plankton. Both supplied reference packs preserve every canonical entry and score. New packs use corpus familiarity with category-specific editorial overrides and selected 100-point discoveries, not measured player-frequency statistics. The 17-prompt daily/practice pool has 12,513 accepted entries; 15 new banks range from 32 to 2,450 entries. See [DATA-SOURCES.md](DATA-SOURCES.md) for scope, sources, licenses and the reproducible generator. Answer banks are finite; otherwise valid answers may be absent. See [RESEARCH.md](RESEARCH.md) for verified reference behavior and known differences.
+Visible rarity families follow the supplied image: Krillion, Deep Cut, Rare, Schooler, and Plankton. Both supplied reference packs preserve every canonical entry and score. New packs use corpus familiarity, source prominence and category-specific editorial overrides with selected 100-point discoveries, not measured player-frequency statistics. The shared pool has **221 categories and 154,129 accepted answer/category entries**, representing **113,279 distinct normalized answer labels** before aliases. Of these, 181 categories have at least 100 entries; the median bank has 234. The 204 added banks range from 47 to 6,328 entries. Counts are labels in finite banks, not a claim of exhaustive coverage or distinct real-world concepts. See [DATA-SOURCES.md](DATA-SOURCES.md) for scope, sources, licenses and reproducible generators, and [RESEARCH.md](RESEARCH.md) for reference behavior and known differences.
 
 ## Estimated score curve
 
@@ -43,7 +43,7 @@ npm test
 
 The development live preview retains practice progress across automatic reloads in session storage, so visual edits do not restart a dive.
 
-Opening `index.html` directly also loads the bundled client, although multiplayer and invite links should use the hosted HTTP(S) site. All paths are relative, including artwork, scripts, and invite links.
+Use HTTP(S), including the local server, for play: modern browsers block the lazy answer module on `file://` pages. All paths are relative, including artwork, scripts, and invite links. Home and the library use category metadata only; the shared answer module is fetched once when play needs it. The first question timer starts after loading. The main bundle is about 500 KB gzipped; the deferred answer bundle is about 976 KB gzipped.
 
 ## Rendering and controls
 
@@ -75,6 +75,9 @@ The host validates answers and timers. A disconnected player has a 30-second gra
 - `polish.css`: responsive presentation for home, gameplay, results, menus, and the ocean preview.
 - `sprites.js`, `assets/*.svg`: original code-native pixel creatures and marks. `assets/*-law.png` and `assets/hadal-pixel.png`: separate pixel-art environment layers, blended by depth. `assets/kelp-pixel-loop.png`: an earlier eight-frame plant sheet retained as an asset; it is no longer loaded or drawn because the user requested less vegetation. Final generation prompts are recorded in `assets/generation-manifest.json`.
 - `data.js`: original curated prompts, aliases, and scores.
+- `question-catalog.js`, `question-answers.js`: generated category metadata and compact shared answer rows; the large table is bundled separately.
+- `question-bank-loader.js`, `question-library.js`, `question-library.css`: lazy data loading, catalogue version checks, and searchable practice categories.
+- `scripts/build-question-catalog.py`, `catalog-manifest.json`, `data-snapshots/expansion/`: reproducible expansion, per-category counts/rankings and attributed source snapshots.
 - `airline-bank.js`, `vehicle-bank.js`: the exact user-provided examples and additional local aliases.
 - `party.js`, `party-rules.js`: authenticated room lifecycle, presence, host transfer and ready/rematch rules.
 - `party-view.js`, `party.css`, `assets/party-court.svg`: original courtroom arena, lobby, answer dock and chat.
@@ -88,7 +91,7 @@ Future Counsel: https://futurecounsel.org/ · Reference: https://krillion.io/
 
 ## Latest validation
 
-62 automated checks cover game rules, both imported answer banks, the percentile model, vertical projection, scene accessibility, four-choice data integrity, deck recycling, streak resets, persistence, and the Easter egg. A 10,000-question simulation verifies that the legitimate answer key never forms the reserved sequence. Browser checks include a real five-correct challenge, shortcut animation, continuing to another challenge, and visible scenery changes during the actual seven-prompt game.
+70 automated checks cover game rules, both imported answer banks, the percentile model, vertical projection, four-choice data integrity, persistence, catalogue integrity, common-answer coverage, category boundaries, lazy metadata, and search/filter controls. Two years of future daily draws reach all 221 categories with one per subject and no adjacent-day repeats; 50 party decks cover every category and avoid consecutive narrow subjects. A 10,000-question simulation verifies that the legitimate Endless answer key never forms the reserved sequence. The 33 database authorization checks and three-identity emulator multiplayer flow pass. Browser checks cover a new mineral question, one-time deferred loading, no timer before data, navigation during loading, library pagination/search, and a 390px layout without horizontal overflow. Earlier visual checks covered the Endless challenge and changing descent scenes.
 
 ## Google sign-in
 

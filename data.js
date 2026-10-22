@@ -1,6 +1,7 @@
 import {EXPANDED_PACKS} from './expanded-banks.js';
 import {VEHICLE_PACK} from './vehicle-bank.js';
 import {AIRLINE_PACK} from './airline-bank.js';
+import {CATALOG_PACKS} from './question-catalog.js';
 // Original curated packs. Scores are editorial difficulty tiers, not player-frequency statistics.
 const pack=(id,topic,prompt,groups)=>({id,topic,prompt,answers:groups.flatMap((group,i)=>group.split(';').filter(Boolean).map((s,j)=>{const [label,...aliases]=s.split('|');return {label,aliases,points:i===4?(j===0?100:85):[10,30,60,85,100][i]};}))});
 export const PACKS=[
@@ -58,4 +59,7 @@ PACKS[PACKS.findIndex(p=>p.id==='no-wheels')]=VEHICLE_PACK;
 // Saved older dives remain readable; new dives draw only from the deeper pool.
 for(const p of PACKS){p.dailyEligible=p===AIRLINE_PACK||p===VEHICLE_PACK;if(p.dailyEligible)p.family='everyday';}
 PACKS.push(...EXPANDED_PACKS);
+PACKS.push(...CATALOG_PACKS);
 export const PLAY_PACKS=PACKS.filter(p=>p.dailyEligible);
+export const ORIGINAL_PLAY_PACKS=PLAY_PACKS.filter(p=>!p.catalogVersion);
+export const answerCount=pack=>pack.answerCount??pack.answers.length;
