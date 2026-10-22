@@ -1,0 +1,11 @@
+.DS_Store
+node_modules/
+work/
+.env*
+!.env.example
+/reference-round.png
+/live-home.png
+/biome-*.png
+/game-*.png
+/results-*.png
+/visual-*.png
