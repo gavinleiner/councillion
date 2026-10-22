@@ -6,15 +6,16 @@
   "scripts": {
     "start": "python3 -m http.server 4173",
     "test": "node --import ./tests/question-data.mjs --test tests/*.test.js",
-    "build": "node build.mjs",
+    "build": "node scripts/update-moderation-rules.mjs --check && node build.mjs",
     "watch": "node build.mjs --watch",
-    "test:security": "firebase emulators:exec --only database --project demo-councillion \"node tests/database-security.mjs && node --import ./tests/question-data.mjs tests/party-network.mjs\""
+    "test:security": "firebase emulators:exec --only auth,database --project demo-councillion \"node tests/database-security.mjs && node --import ./tests/question-data.mjs tests/party-network.mjs && node tests/auth-browser.mjs\""
   },
   "devDependencies": {
     "@firebase/rules-unit-testing": "^5.0.2",
     "esbuild": "^0.25.12",
     "firebase-tools": "^15.34.1",
-    "happy-dom": "^21.0.4"
+    "happy-dom": "^21.0.4",
+    "playwright-core": "1.64.1"
   },
   "dependencies": {
     "@firebase/app": "0.16.2",

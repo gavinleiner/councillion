@@ -1,4 +1,4 @@
-// Callers pass the identity returned by Google signature verification, never
+// Callers pass a verified Google identity or refreshed Firebase Google session, never
 // the editable display name or a profile read from localStorage.
 export function canPlayParty(identity,now=Date.now()/1000){
  return !!identity&&typeof identity.id==='string'&&identity.id.length>0&&Number.isFinite(identity.expires)&&identity.expires>now;

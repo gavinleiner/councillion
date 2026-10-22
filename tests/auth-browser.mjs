@@ -1,0 +1,28 @@
+// Uses real Firebase Auth persistence with a disposable local Auth emulator.
+// No Google credentials or existing browser profiles are read by this test.
+import {createServer} from 'node:http';
+import {mkdtemp,rm,readFile} from 'node:fs/promises';
+import {tmpdir} from 'node:os';
+import {join,resolve} from 'node:path';
+import {build} from 'esbuild';
+import assert from 'node:assert/strict';
+const playwrightPath=process.env.PLAYWRIGHT_MODULE||'playwright-core';
+const {chromium}=await import(playwrightPath),root=resolve('.'),profile=await mkdtemp(join(tmpdir(),'councillion-auth-'));
+const result=await build({stdin:{contents:`import * as cloud from './cloud.js';import {connectAccount} from './auth.js';import {GoogleAuthProvider,signInWithCredential,getAuth} from 'firebase/auth';
+const account=connectAccount({button:document.querySelector('button'),modal:html=>document.querySelector('main').innerHTML=html,escape:s=>s,getCloud:async()=>cloud});
+window.testAccount={ready:account.ready,identity:()=>account.identity,signOut:()=>account.signOut(),refresh:()=>getAuth().currentUser.getIdToken(true),async signIn(){const now=Math.floor(Date.now()/1000),jwt=JSON.stringify({sub:'persistent-google-user',name:'Saved Counsel',email:'saved@example.invalid',email_verified:true,iss:'https://accounts.google.com',aud:'local-test',iat:now,exp:now+3600});await signInWithCredential(getAuth(),GoogleAuthProvider.credential(jwt));}};`,resolveDir:root,sourcefile:'auth-fixture.js'},bundle:true,write:false,format:'iife',external:['./cloud.bundle.js'],plugins:[{name:'local-auth-only',setup(b){b.onLoad({filter:/firebase-config\.js$/},()=>({contents:`export const FIREBASE_CONFIG={apiKey:'fake-api-key',authDomain:'demo-councillion.firebaseapp.com',projectId:'demo-councillion'};`,loader:'js'}));b.onLoad({filter:/\/cloud\.js$/},async args=>({contents:(await readFile(args.path,'utf8')).replace('const requireDatabase=',`import {connectAuthEmulator} from 'firebase/auth';connectAuthEmulator(auth,'http://127.0.0.1:9099',{disableWarnings:true});\nconst requireDatabase=`),loader:'js'}));}}]});
+const bundle=result.outputFiles[0].contents,server=createServer((req,res)=>{res.setHeader('Cache-Control','no-store');res.setHeader('Content-Type',req.url==='/test.js'?'text/javascript':'text/html');res.end(req.url==='/test.js'?bundle:'<!doctype html><button>SIGN IN</button><main></main><script src="/test.js"></script>');});
+await new Promise(r=>server.listen(0,'127.0.0.1',r));const url='http://127.0.0.1:'+server.address().port;
+let browser;const options={executablePath:process.env.CHROME_BIN||(process.platform==='darwin'?'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome':chromium.executablePath()),headless:true};
+try{
+ browser=await chromium.launchPersistentContext(profile,options);await browser.route('**/*',r=>/^https?:\/\/(127\.0\.0\.1|localhost)(:|\/)/.test(r.request().url())?r.continue():r.abort());
+ let page=await browser.newPage();await page.goto(url);await page.evaluate(()=>testAccount.ready);console.log('Auth initialized');assert.equal(await page.evaluate(()=>testAccount.identity()),null);await page.evaluate(()=>Promise.race([testAccount.signIn(),new Promise((_,reject)=>setTimeout(()=>reject(Error('Local emulator sign-in timed out')),15000))]));console.log('Emulator Google sign-in complete');await page.getByRole('button',{name:'Open account for Saved Counsel'}).waitFor();const first=await page.evaluate(()=>({id:testAccount.identity().id,uid:testAccount.identity().uid}));
+ console.log('Identity restored in UI');await page.evaluate(()=>Promise.race([testAccount.refresh(),new Promise((_,reject)=>setTimeout(()=>reject(Error('Local token refresh timed out')),15000))]));console.log('Token refreshed');await browser.close();browser=null;
+ console.log('First browser closed');
+ // A new browser process restores the same SDK-managed Google session.
+ browser=await chromium.launchPersistentContext(profile,options);await browser.route('**/*',r=>/^https?:\/\/(127\.0\.0\.1|localhost)(:|\/)/.test(r.request().url())?r.continue():r.abort());
+ page=await browser.newPage();await page.goto(url);await page.evaluate(()=>testAccount.ready);await page.getByRole('button',{name:'Open account for Saved Counsel'}).waitFor();assert.deepEqual(await page.evaluate(()=>({id:testAccount.identity().id,uid:testAccount.identity().uid})),first);
+ console.log('Session restored after browser restart');const other=await browser.newPage();await other.goto(url);await other.evaluate(()=>testAccount.ready);await other.getByRole('button',{name:'Open account for Saved Counsel'}).waitFor();await page.evaluate(()=>testAccount.signOut());await other.getByRole('button',{name:'Sign in with Google',exact:true}).waitFor();await browser.close();browser=null;
+ browser=await chromium.launchPersistentContext(profile,options);page=await browser.newPage();await page.goto(url);await page.evaluate(()=>testAccount.ready);assert.equal(await page.evaluate(()=>testAccount.identity()),null);
+ console.log('Firebase Auth browser checks passed: Google session, refresh, process restart, cross-tab sign-out, and signed-out restart.');
+}finally{await browser?.close();await new Promise(r=>server.close(r));await rm(profile,{recursive:true,force:true});}
