@@ -9,3 +9,9 @@ work/
 /game-*.png
 /results-*.png
 /visual-*.png
+
+/party-preview.html
+
+firebase-debug.log
+database-debug.log
+ui-debug.log

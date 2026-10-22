@@ -15,7 +15,8 @@ export class Ocean {
   this.load('sky');
  }
  load(key){if(this.images[key])return;const img=new Image();img.decoding='async';img.onload=()=>{this.cacheKey='';this.tiles.delete(key);this.schedule();};img.src='assets/'+this.files[key];this.images[key]=img;}
- schedule(){if(this.raf===null&&!document.hidden)this.raf=requestAnimationFrame(this.loop);}
+ suspend(value){this.suspended=value;if(value){cancelAnimationFrame(this.raf);this.raf=null;}else this.schedule();}
+ schedule(){if(this.raf===null&&!document.hidden&&!this.suspended)this.raf=requestAnimationFrame(this.loop);}
  set(mode,depth=0){
   if(mode===this.mode&&depth===this.depth)return;
   const changedMode=mode!==this.mode;this.mode=mode;this.depth=depth;

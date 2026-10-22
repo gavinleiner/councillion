@@ -1,4 +1,33 @@
 (() => {
+  var __create = Object.create;
+  var __defProp = Object.defineProperty;
+  var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
+  var __getOwnPropNames = Object.getOwnPropertyNames;
+  var __getProtoOf = Object.getPrototypeOf;
+  var __hasOwnProp = Object.prototype.hasOwnProperty;
+  var __require = /* @__PURE__ */ ((x) => typeof require !== "undefined" ? require : typeof Proxy !== "undefined" ? new Proxy(x, {
+    get: (a, b) => (typeof require !== "undefined" ? require : a)[b]
+  }) : x)(function(x) {
+    if (typeof require !== "undefined") return require.apply(this, arguments);
+    throw Error('Dynamic require of "' + x + '" is not supported');
+  });
+  var __copyProps = (to, from, except, desc) => {
+    if (from && typeof from === "object" || typeof from === "function") {
+      for (let key of __getOwnPropNames(from))
+        if (!__hasOwnProp.call(to, key) && key !== except)
+          __defProp(to, key, { get: () => from[key], enumerable: !(desc = __getOwnPropDesc(from, key)) || desc.enumerable });
+    }
+    return to;
+  };
+  var __toESM = (mod, isNodeMode, target) => (target = mod != null ? __create(__getProtoOf(mod)) : {}, __copyProps(
+    // If the importer is in node compatibility mode or this is not an ESM
+    // file that has been converted to a CommonJS file using a Babel-
+    // compatible transform (i.e. "__esModule" has not been set), then set
+    // "default" to the CommonJS "module.exports" for node compatibility.
+    isNodeMode || !mod || !mod.__esModule ? __defProp(target, "default", { value: mod, enumerable: true }) : target,
+    mod
+  ));
+
   // auth-config.js
   var GOOGLE_CLIENT_ID = "312825866122-hmkjuk1841ph7goh85bgav06p73pjua6.apps.googleusercontent.com";
 
@@ -30,6 +59,9 @@
   var initialized = false;
   var current = null;
   var nonce = "";
+  var googleCredential = "";
+  var cloudModule;
+  var cloud = () => cloudModule ??= import("./cloud.bundle.js");
   var tokenKey = "fc:google-session";
   function session(value) {
     try {
@@ -69,34 +101,38 @@
     });
   }
   function connectAccount({ button: button2, modal: modal2, escape, onIdentity = () => {
+  }, beforeSignOut = async () => {
   } }) {
     const update = () => {
       button2.textContent = current ? "\u25CF " + current.name.split(" ")[0] : "SIGN IN";
       button2.setAttribute("aria-label", current ? "Open account for " + current.name : "Sign in with Google");
     };
+    async function clearIdentity() {
+      current = null;
+      googleCredential = "";
+      session(null);
+      update();
+      await beforeSignOut();
+      if (cloudModule) await cloud().then((m) => m.logout()).catch(() => {
+      });
+      onIdentity(null);
+    }
     async function accept(credential, expectedNonce) {
       const identity = await verifyGoogleToken(credential, { clientId: GOOGLE_CLIENT_ID, nonce: expectedNonce, keys: await googleKeys() });
       current = identity;
+      googleCredential = credential;
       session({ credential, nonce: expectedNonce });
       update();
       onIdentity(identity);
       return identity;
     }
     async function open() {
-      if (current && current.expires <= Date.now() / 1e3) {
-        current = null;
-        session(null);
-        update();
-        onIdentity(null);
-      }
+      if (current && current.expires <= Date.now() / 1e3) await clearIdentity();
       if (current) {
         modal2(`<p class="eyebrow">YOUR COUNSEL PROFILE</p><h2>${escape(current.name)}</h2><p class="account-email">${escape(current.email)}</p><p class="muted">Connected with Google. Your dives and settings are saved in this browser. This sign-in does not sync progress between devices.</p><button class="pixel-button" id="google-signout">SIGN OUT</button><p class="fine-print"><a href="privacy.html" target="_blank" rel="noopener">Privacy & data</a></p>`);
-        document.querySelector("#google-signout").onclick = () => {
-          current = null;
-          session(null);
+        document.querySelector("#google-signout").onclick = async () => {
+          await clearIdentity();
           globalThis.google?.accounts?.id.disableAutoSelect();
-          update();
-          onIdentity(null);
           open();
         };
         return;
@@ -134,14 +170,18 @@
       session(null);
     });
     setInterval(() => {
-      if (current && current.expires <= Date.now() / 1e3) {
-        current = null;
-        session(null);
-        update();
-        onIdentity(null);
-      }
+      if (current && current.expires <= Date.now() / 1e3) clearIdentity().catch(() => {
+      });
     }, 1e3);
-    return { open, get identity() {
+    return { open, async partySession() {
+      if (!current || current.expires <= Date.now() / 1e3) throw Error("Sign in with Google to play Puffer Party.");
+      const m = await cloud();
+      try {
+        return await m.currentSession(current.id);
+      } catch {
+        return m.googleSession(googleCredential);
+      }
+    }, get identity() {
       return current && current.expires > Date.now() / 1e3 ? current : null;
     } };
   }
@@ -1380,8 +1420,15 @@
       img.src = "assets/" + this.files[key];
       this.images[key] = img;
     }
+    suspend(value) {
+      this.suspended = value;
+      if (value) {
+        cancelAnimationFrame(this.raf);
+        this.raf = null;
+      } else this.schedule();
+    }
     schedule() {
-      if (this.raf === null && !document.hidden) this.raf = requestAnimationFrame(this.loop);
+      if (this.raf === null && !document.hidden && !this.suspended) this.raf = requestAnimationFrame(this.loop);
     }
     set(mode, depth = 0) {
       if (mode === this.mode && depth === this.depth) return;
@@ -2068,6 +2115,8 @@ Wi-Fi`
     if (!answer) return { error: "Not in this answer bank. Try another answer." };
     if (s.used.includes(normalize(answer.label))) return { error: "Already on the record. Try a different answer." };
     const player = s.players[s.turn];
+    player.lastAnswer = { label: answer.label, points: answer.points, at: now };
+    s.passed = { from: player.id, at: now };
     s.used.push(normalize(answer.label));
     player.score += answer.points;
     player.meter += answer.points;
@@ -2270,6 +2319,97 @@ Wi-Fi`
     return sceneDepth;
   }
 
+  // party-rules.js
+  var PARTY_DEFAULTS = { lives: 2, maxLives: 5, meterTarget: 600, minTurnMs: 8e3, fuseMinMs: 1e4, fuseMaxMs: 3e4, maxPlayers: 6 };
+  var bounded = (value, fallback, min, max, step = 1) => Math.max(min, Math.min(max, Math.round((Number.isFinite(+value) ? +value : fallback) / step) * step));
+  function partySettings(patch = {}, base = PARTY_DEFAULTS) {
+    const s = { ...base };
+    s.maxLives = bounded(patch.maxLives ?? s.maxLives, 5, 1, 10);
+    s.lives = bounded(patch.lives ?? s.lives, 2, 1, s.maxLives);
+    s.meterTarget = bounded(patch.meterTarget ?? s.meterTarget, 600, 50, 5e3, 50);
+    s.minTurnMs = bounded(patch.minTurnMs ?? s.minTurnMs, 8e3, 3e3, 2e4, 1e3);
+    s.maxPlayers = bounded(patch.maxPlayers ?? s.maxPlayers, 6, 2, 16);
+    return s;
+  }
+  function syncRoster(state, members, now = Date.now()) {
+    let changed = false;
+    for (const [id, m] of Object.entries(members ?? {})) {
+      let p = state.players.find((p2) => p2.id === id);
+      const present = m.online || now - (m.lastSeen ?? m.joinedAt) < 3e4;
+      if (!p && present) {
+        p = { id, name: m.name, buddy: m.buddy, connected: true, ready: m.ready, autoJoin: m.autoJoin, hearts: state.phase === "lobby" ? state.settings.lives : 0, meter: 0, score: 0, spectator: state.phase !== "lobby" };
+        state.players.push(p);
+        changed = true;
+      }
+      if (p) {
+        if (present && !p.connected) {
+          p.connected = true;
+          p.spectator = state.phase !== "lobby";
+          p.hearts = p.spectator ? 0 : state.settings.lives;
+          changed = true;
+        }
+        for (const k of ["name", "buddy", "ready", "autoJoin"]) if (p[k] !== m[k]) {
+          p[k] = m[k];
+          changed = true;
+        }
+        if (!present && p.connected) {
+          disconnectPlayer(state, id);
+          changed = true;
+        }
+      }
+    }
+    for (const p of [...state.players]) if (!members?.[p.id]) {
+      disconnectPlayer(state, p.id);
+      changed = true;
+    }
+    if (state.phase === "lobby") {
+      const players = state.players.filter((p) => p.connected);
+      if (players.length !== state.players.length) {
+        state.players = players;
+        changed = true;
+      }
+    }
+    if (changed) state.revision++;
+    return changed;
+  }
+  function beginParty(state, now = Date.now()) {
+    if (!["lobby", "ended"].includes(state.phase)) return false;
+    const players = state.players.filter((p) => p.connected && p.ready).slice(0, state.settings.maxPlayers);
+    if (players.length < 2) return false;
+    const old = state.settings, next = newParty(players);
+    Object.assign(state, next, { settings: old, revision: state.revision + 1, phase: "countdown", nextAt: now + 3e3 });
+    state.players.forEach((p) => {
+      p.hearts = old.lives;
+      p.spectator = false;
+      delete p.lastAnswer;
+    });
+    state.notice = "Court is about to begin\u2026";
+    return true;
+  }
+  function stepParty(state, now = Date.now()) {
+    if (state.phase === "countdown" && now >= state.nextAt) return startParty(state, now);
+    const who = state.players[state.turn];
+    const didPop = state.phase === "playing" && now >= state.deadline;
+    const changed = tickParty(state, now);
+    if (didPop) {
+      state.popped = { id: who.id, at: now };
+      state.players.forEach((p) => {
+        delete p.lastAnswer;
+      });
+    }
+    return changed;
+  }
+  function setLobbyRules(state, patch) {
+    if (!["lobby", "ended"].includes(state.phase)) throw Error("Rules can change between games.");
+    state.settings = partySettings(patch, state.settings);
+    const seated = state.players.filter((p) => p.ready && p.connected).length;
+    if (state.settings.maxPlayers < seated) state.settings.maxPlayers = seated;
+    state.players.forEach((p) => {
+      if (state.phase === "lobby") p.hearts = state.settings.lives;
+    });
+    state.revision++;
+  }
+
   // party-access.js
   function canPlayParty(identity, now = Date.now() / 1e3) {
     return !!identity && typeof identity.id === "string" && identity.id.length > 0 && Number.isFinite(identity.expires) && identity.expires > now;
@@ -2280,143 +2420,316 @@ Wi-Fi`
   }
 
   // party.js
-  var PREFIX = "councillion-v2-";
   var cleanName = (name) => String(name ?? "").replace(/[\u0000-\u001f]/g, "").trim().slice(0, 16) || "Counsel";
+  var loadCloud = () => import("./cloud.bundle.js");
+  var json = (value) => JSON.parse(JSON.stringify(value));
+  var friendly = (e) => e?.code === "PERMISSION_DENIED" || e?.code === "database/permission-denied" ? "This room is unavailable, full, or your Google session needs refreshing." : e?.message || "Connection interrupted. Try again.";
+  async function publicRooms(authorize, callback, onError) {
+    await authorize();
+    const c = await loadCloud();
+    return c.onValue(c.query(c.ref(c.db, "directory"), c.orderByChild("updatedAt"), c.limitToLast(100)), (snapshot) => {
+      const now = Date.now();
+      callback(Object.entries(snapshot.val() ?? {}).filter(([, r]) => now - r.updatedAt < 45e3).map(([code, r]) => ({ code, ...r })).sort((a, b) => (a.phase === "lobby" ? -1 : 1) - (b.phase === "lobby" ? -1 : 1) || b.count - a.count));
+    }, (e) => onError(friendly(e)));
+  }
   var PartySession = class {
-    constructor(onState, onError, getIdentity = () => null) {
-      this.onState = onState;
-      this.onError = onError;
-      this.getIdentity = getIdentity;
-      this.connections = /* @__PURE__ */ new Map();
-      this.host = false;
-      this.local = false;
-      this.state = null;
-      this.closed = false;
-      this.offset = 0;
+    constructor(onState, onError, getIdentity = () => null, authorize = null, getCloud = loadCloud) {
+      Object.assign(this, { onState, onError, getIdentity, authorize, getCloud, host: false, local: false, state: null, closed: false, offset: 0, members: {}, chat: [], unsub: [], processed: /* @__PURE__ */ new Set(), processing: Promise.resolve() });
       this.timer = setInterval(() => this.tick(), 200);
     }
+    fail(message) {
+      if (!this.closed) this.onError(message);
+    }
     snapshot() {
-      if (!this.state) return;
-      this.onState(this.state, this);
+      if (!this.closed && this.state) this.onState(this.state, this);
     }
-    fail(text) {
-      if (!this.closed) this.onError(text);
-    }
-    async openPeer(id) {
-      if (!window.Peer) throw Error("The connection library could not load. Refresh and try again.");
-      return new Promise((resolve, reject) => {
-        const peer = new window.Peer(id, { debug: 0 });
-        this.peer = peer;
-        const timeout = setTimeout(() => {
-          peer.destroy();
-          reject(Error("Connection timed out. Try again."));
-        }, 15e3);
-        peer.on("open", () => {
-          clearTimeout(timeout);
-          resolve(peer);
-        });
-        peer.on("error", (err) => {
-          clearTimeout(timeout);
-          const message = err.type === "peer-unavailable" ? "Room not found. Check the code and make sure the host\u2019s tab is open." : err.type === "unavailable-id" ? "That room code is in use. Please host again." : "Could not connect. This network may block multiplayer connections. Return to the surface and try again.";
-          reject(Error(message));
-          if (this.state) this.fail(message);
-        });
-        peer.on("disconnected", () => {
-          if (!this.closed) this.fail("Room signaling disconnected. Existing players can keep playing; new players may need a new room.");
-        });
-      });
-    }
-    async create(name) {
+    async auth() {
       requirePartyIdentity(this.getIdentity());
+      if (!this.authorize) throw Error("Google party sign-in is unavailable.");
+      this.myId = (await this.authorize()).uid;
+      this.c = await this.getCloud();
+      requirePartyIdentity(this.getIdentity());
+    }
+    path(part = "") {
+      return this.c.ref(this.c.db, `rooms/${this.code}${part ? "/" + part : ""}`);
+    }
+    async create(name, options = {}) {
+      await this.auth();
       this.host = true;
-      this.code = Array.from(crypto.getRandomValues(new Uint8Array(4)), (x) => "ABCDEFGHJKLMNPQRSTUVWXYZ"[x % 24]).join("");
-      this.myId = PREFIX + this.code;
-      this.state = newParty([{ id: this.myId, name: cleanName(name) }]);
-      const peer = await this.openPeer(this.myId);
-      requirePartyIdentity(this.getIdentity());
-      peer.on("connection", (conn) => this.accept(conn));
+      this.name = cleanName(name);
+      this.buddy = options.buddy ?? "krill";
+      for (let i = 0; i < 5; i++) {
+        this.code = Array.from(crypto.getRandomValues(new Uint8Array(4)), (x) => "ABCDEFGHJKLMNPQRSTUVWXYZ"[x % 24]).join("");
+        const m = { name: this.name, buddy: this.buddy, joinedAt: Date.now(), lastSeen: Date.now(), online: true, ready: true, autoJoin: false };
+        const state = newParty([{ id: this.myId, ...m }]);
+        this.meta = { host: this.myId, hostName: this.name, version: 3, createdAt: Date.now(), isPrivate: !!options.isPrivate, seats: 6, phase: "lobby" };
+        try {
+          await this.c.set(this.path(), { meta: this.meta, members: { [this.myId]: m }, state });
+          this.state = state;
+          this.members = { [this.myId]: m };
+          await this.listen();
+          return;
+        } catch (e) {
+          if (i === 4) throw Error(friendly(e));
+        }
+      }
+    }
+    async join(name, code, options = {}) {
+      await this.auth();
+      this.name = cleanName(name);
+      this.buddy = options.buddy ?? "krill";
+      this.code = String(code ?? "").toUpperCase().replace(/[^A-Z]/g, "");
+      if (this.code.length !== 4) throw Error("Enter a four-letter room code.");
+      const meta = (await this.c.get(this.path("meta"))).val();
+      if (!meta || Date.now() - meta.createdAt > 24 * 36e5) throw Error("Room not found. Check the code or host a new room.");
+      this.meta = meta;
+      this.host = meta.host === this.myId;
+      await this.c.set(this.path("members/" + this.myId), { name: this.name, buddy: this.buddy, joinedAt: Date.now(), lastSeen: Date.now(), online: true, ready: meta.phase === "lobby", autoJoin: false });
+      await this.listen();
+    }
+    async listen() {
+      const c = this.c;
+      this.unsub.push(c.onValue(c.ref(c.db, ".info/serverTimeOffset"), (snap) => this.offset = snap.val() ?? 0));
+      this.unsub.push(c.onValue(this.path("meta"), (snap) => {
+        if (!snap.exists()) return this.fail("The host closed this room.");
+        const wasHost = this.host;
+        this.meta = snap.val();
+        this.host = this.meta.host === this.myId;
+        if (this.host && !wasHost) this.becomeHost();
+        this.snapshot();
+      }, (e) => this.fail(friendly(e))));
+      this.unsub.push(c.onValue(this.path("state"), (snap) => {
+        if (snap.exists()) {
+          const s = snap.val();
+          s.players = Object.values(s.players ?? {});
+          s.used = Object.values(s.used ?? {});
+          s.log = Object.values(s.log ?? {});
+          s.packIds = Object.values(s.packIds ?? {});
+          this.state = s;
+          this.snapshot();
+        }
+      }, (e) => this.fail(friendly(e))));
+      this.unsub.push(c.onValue(this.path("members"), (snap) => {
+        const previous = this.members;
+        this.members = snap.val() ?? {};
+        if (this.host) {
+          for (const [id, m] of Object.entries(this.members)) if (!previous[id]) this.system(m.name + " entered the courtroom.");
+        }
+        if (this.host) this.enforceSeats();
+        if (!this.members[this.myId]) return this.fail("You left the room.");
+        if (this.host && this.state && syncRoster(this.state, this.members, this.now())) this.broadcast();
+        this.snapshot();
+      }, (e) => this.fail(friendly(e))));
+      this.unsub.push(c.onValue(c.query(this.path("chat"), c.limitToLast(60)), (snap) => {
+        this.chat = Object.values(snap.val() ?? {}).sort((a, b) => a.at - b.at);
+        this.snapshot();
+      }));
+      this.unsub.push(c.onValue(this.path("responses/" + this.myId), (snap) => {
+        const r = snap.val();
+        if (!r || this.lastResponse === r.requestId) return;
+        this.lastResponse = r.requestId;
+        if (r.error) this.fail(r.error);
+        else if (r.answer) {
+          this.lastAccepted = r.answer;
+          this.snapshot();
+        }
+      }));
+      this.unsub.push(c.onValue(c.ref(c.db, ".info/connected"), async (snap) => {
+        this.connected = !!snap.val();
+        if (this.connected && !this.closed) {
+          await c.onDisconnect(this.path("members/" + this.myId)).update({ online: false, lastSeen: c.serverTimestamp() });
+          await c.update(this.path("members/" + this.myId), { online: true, lastSeen: c.serverTimestamp() });
+        }
+        this.snapshot();
+      }));
+      this.presence = setInterval(() => {
+        if (!this.closed) c.update(this.path("members/" + this.myId), { lastSeen: c.serverTimestamp() }).catch(() => {
+        });
+      }, 15e3);
+      if (this.host) this.becomeHost();
       this.snapshot();
     }
-    async join(name, code) {
-      requirePartyIdentity(this.getIdentity());
-      this.code = code.toUpperCase().replace(/[^A-Z0-9]/g, "");
-      if (this.code.length !== 4) throw Error("Enter the four-letter room code.");
-      const peer = await this.openPeer();
-      requirePartyIdentity(this.getIdentity());
-      this.myId = peer.id;
-      return new Promise((resolve, reject) => {
-        const conn = peer.connect(PREFIX + this.code, { reliable: true, serialization: "json" });
-        this.hostConn = conn;
-        const timeout = setTimeout(() => {
-          conn.close();
-          reject(Error("The room did not answer. Keep the host\u2019s tab open and try again."));
-        }, 15e3);
-        conn.on("open", () => conn.send({ type: "hello", name: cleanName(name), version: 2 }));
-        conn.on("data", (msg) => {
-          if (msg?.type === "reject") {
-            clearTimeout(timeout);
-            reject(Error(msg.message));
-            this.fail(msg.message);
-            conn.close();
-            return;
-          }
-          if (msg?.type === "state" && msg.state) {
-            clearTimeout(timeout);
-            this.state = msg.state;
-            this.offset = msg.now - Date.now();
-            this.snapshot();
-            resolve();
-          }
-          if (msg?.type === "error") this.fail(msg.message);
+    becomeHost() {
+      if (this.hostListener || this.closed) return;
+      this.hostListener = true;
+      const name = this.members[this.myId]?.name ?? this.name;
+      if (name && this.meta.hostName !== name) {
+        this.meta.hostName = name;
+        this.c.update(this.path("meta"), { hostName: name }).catch(() => {
         });
-        conn.on("close", () => {
-          clearTimeout(timeout);
-          if (!this.closed) {
-            reject(Error("The host closed the room."));
-            this.fail("The host closed the room. Return to Puffer Party to create a new one.");
-            this.close(false);
-          }
-        });
-        conn.on("error", () => {
-          clearTimeout(timeout);
-          reject(Error("Could not reach the host."));
-        });
-      });
+      }
+      const listen = (snap) => {
+        this.processing = this.processing.then(() => this.process(snap.key, snap.val())).catch((e) => this.fail(friendly(e)));
+      };
+      this.unsub.push(this.c.onChildAdded(this.path("requests"), listen), this.c.onChildChanged(this.path("requests"), listen));
+      this.broadcast();
     }
-    accept(conn) {
-      let admitted = false;
-      const helloTimeout = setTimeout(() => {
-        if (!admitted) conn.close();
-      }, 8e3);
-      conn.on("data", (msg) => {
-        if (!msg || typeof msg !== "object") return;
-        if (msg.type === "hello" && !admitted) {
-          clearTimeout(helloTimeout);
-          if (msg.version !== 2 || this.state.phase !== "lobby" || this.state.players.length >= this.state.settings.maxPlayers) {
-            conn.send({ type: "reject", message: this.state.phase !== "lobby" ? "This game already started. Ask the host for a rematch." : "Room full or game version mismatch." });
-            setTimeout(() => conn.close(), 500);
-            return;
+    now() {
+      return Date.now() + this.offset;
+    }
+    async enforceSeats() {
+      if (!this.state) return;
+      const ready = Object.entries(this.members).filter(([, m]) => m.online && m.ready).sort((a, b) => a[1].joinedAt - b[1].joinedAt);
+      const changes = {};
+      for (const [id, m] of ready.slice(this.state.settings.maxPlayers)) {
+        m.ready = false;
+        changes["members/" + id + "/ready"] = false;
+      }
+      if (Object.keys(changes).length) await this.c.update(this.path(), changes);
+    }
+    async process(uid, r) {
+      if (!this.host || !r || this.processed.has(r.id) || !this.members[uid]?.online) return;
+      this.processed.add(r.id);
+      let result = {};
+      try {
+        if (this.now() - r.at > 15e3) throw Error("That request expired. Please try again.");
+        if (r.type === "answer") result = answerParty(this.state, uid, r.text, this.now());
+        else if (uid !== this.myId) throw Error("Only the host can change the room.");
+        else if (r.type === "start" || r.type === "rematch") {
+          if (!beginParty(this.state, this.now())) throw Error("At least two ready players are needed.");
+        } else if (r.type === "kick") {
+          if (r.target === this.myId || !this.members[r.target]) throw Error("Choose another player.");
+          await this.c.update(this.path(), { ["bans/" + r.target]: true, ["members/" + r.target]: null });
+          disconnectPlayer(this.state, r.target);
+        } else if (r.type === "rules") setLobbyRules(this.state, r.patch ?? {});
+        else if (r.type === "visibility") {
+          await this.c.update(this.path("meta"), { isPrivate: !!r.private });
+          this.meta.isPrivate = !!r.private;
+        }
+        if (result.error) throw Error(result.error);
+        await this.broadcast();
+      } catch (e) {
+        result = { error: e.message };
+      }
+      await this.c.set(this.path("responses/" + uid), json({ requestId: r.id, ...result, at: this.now() }));
+      await this.c.runTransaction(this.path("requests/" + uid), (current2) => current2?.id === r.id ? null : void 0, { applyLocally: false });
+    }
+    async request(type, extra = {}) {
+      try {
+        requirePartyIdentity(this.getIdentity());
+        if (!this.state || !this.connected) throw Error("Reconnecting to the courtroom\u2026");
+        await this.c.set(this.path("requests/" + this.myId), { id: crypto.randomUUID(), type, ...extra, at: this.now() });
+      } catch (e) {
+        this.fail(friendly(e));
+      }
+    }
+    async broadcast() {
+      if (!this.host || !this.state || this.closed) return;
+      this.state.revision++;
+      const updates = { state: json(this.state), "meta/phase": this.state.phase, "meta/seats": this.state.settings.maxPlayers };
+      try {
+        await this.c.update(this.path(), updates);
+        await this.publish();
+        this.snapshot();
+      } catch (e) {
+        this.fail(friendly(e));
+      }
+    }
+    async publish() {
+      if (!this.host || this.closed) return;
+      const path = this.c.ref(this.c.db, "directory/" + this.code);
+      if (this.meta.isPrivate) return this.c.remove(path);
+      await this.c.onDisconnect(path).remove();
+      return this.c.set(path, { hostName: this.meta.hostName, count: Object.values(this.members).filter((m) => m.online && m.ready).length, seats: this.state.settings.maxPlayers, phase: this.state.phase, updatedAt: this.c.serverTimestamp() });
+    }
+    start() {
+      if (!canPlayParty(this.getIdentity())) return this.fail("Sign in with Google to play Puffer Party.");
+      if (this.local) {
+        if (startParty(this.state)) this.snapshot();
+        return;
+      }
+      this.request(this.state?.phase === "ended" ? "rematch" : "start");
+    }
+    submit(text) {
+      if (!canPlayParty(this.getIdentity())) return this.fail("Sign in with Google to play Puffer Party.");
+      if (this.local) {
+        const result = answerParty(this.state, this.state.players[this.state.turn].id, text);
+        if (result.error) this.fail(result.error);
+        else this.snapshot();
+        return;
+      }
+      this.request("answer", { text: String(text).slice(0, 256) });
+    }
+    rules(patch) {
+      this.request("rules", { patch });
+    }
+    visibility(isPrivate) {
+      this.request("visibility", { private: isPrivate });
+    }
+    async ready(value) {
+      try {
+        await this.c.update(this.path("members/" + this.myId), { ready: !!value });
+      } catch (e) {
+        this.fail(friendly(e));
+      }
+    }
+    async autoJoin(value) {
+      try {
+        await this.c.update(this.path("members/" + this.myId), { autoJoin: !!value });
+      } catch (e) {
+        this.fail(friendly(e));
+      }
+    }
+    kick(id) {
+      this.request("kick", { target: id });
+    }
+    async system(text) {
+      if (!this.host || this.closed) return;
+      try {
+        await this.c.set(this.c.push(this.path("chat")), { uid: this.myId, name: "THE COURT", system: true, text: String(text).slice(0, 160), at: this.c.serverTimestamp() });
+      } catch {
+      }
+    }
+    async sendChat(text) {
+      text = String(text).trim().slice(0, 160);
+      if (!text) return;
+      try {
+        const m = this.members[this.myId];
+        await this.c.update(this.path(), { ["chat/" + this.c.push(this.path("chat")).key]: { uid: this.myId, name: m.name, text, at: this.c.serverTimestamp() }, ["members/" + this.myId + "/lastChat"]: this.c.serverTimestamp() });
+      } catch (e) {
+        this.fail("Chat is unavailable. Wait a moment and try again.");
+      }
+    }
+    tick() {
+      if (this.closed || !this.state) return;
+      if (!canPlayParty(this.getIdentity())) {
+        this.fail("Your Google sign-in expired. Sign in again to play.");
+        this.close();
+        return;
+      }
+      if (this.local) {
+        if (tickParty(this.state)) this.snapshot();
+        return;
+      }
+      if (this.host) {
+        const prior = this.state.phase;
+        const roster = syncRoster(this.state, this.members, this.now()), step = stepParty(this.state, this.now());
+        if (prior !== "ended" && this.state.phase === "ended") {
+          this.system(this.state.notice);
+          const changes = {};
+          for (const [id, m] of Object.entries(this.members)) {
+            m.ready = id === this.myId || !!m.autoJoin;
+            changes["members/" + id + "/ready"] = m.ready;
           }
-          admitted = true;
-          this.connections.set(conn.peer, conn);
-          this.state.players.push({ id: conn.peer, name: cleanName(msg.name), hearts: this.state.settings.lives, meter: 0, score: 0, connected: true });
-          this.state.revision++;
-          this.broadcast();
-        } else if (admitted && msg.type === "answer") {
-          const result = answerParty(this.state, conn.peer, msg.text);
-          if (result.error) conn.send({ type: "error", message: result.error });
-          else this.broadcast();
+          this.c.update(this.path(), changes).catch(() => {
+          });
         }
-      });
-      conn.on("close", () => {
-        clearTimeout(helloTimeout);
-        if (admitted && !this.closed) {
-          this.connections.delete(conn.peer);
-          disconnectPlayer(this.state, conn.peer);
-          this.broadcast();
+        if (roster || step) this.broadcast();
+        if (!this.publishedAt || this.now() - this.publishedAt > 15e3) {
+          this.publishedAt = this.now();
+          this.publish().catch(() => {
+          });
         }
-      });
-      conn.on("error", () => conn.close());
+      } else {
+        const host = this.members[this.meta?.host];
+        if (host?.online === false && this.now() - host.lastSeen > 3e4 && !this.claiming) {
+          this.claiming = true;
+          this.c.runTransaction(this.path("meta/host"), (id) => id === this.meta.host ? this.myId : void 0, { applyLocally: false }).catch(() => {
+          }).finally(() => {
+            this.claiming = false;
+          });
+        }
+      }
     }
     createLocal(names2) {
       requirePartyIdentity(this.getIdentity());
@@ -2427,50 +2740,204 @@ Wi-Fi`
       this.state = newParty(names2.map((name, i) => ({ id: "local-" + i, name: cleanName(name) })));
       this.snapshot();
     }
-    broadcast() {
-      const msg = { type: "state", state: this.state, now: Date.now() };
-      for (const conn of this.connections.values()) if (conn.open) conn.send(msg);
-      this.snapshot();
-    }
-    start() {
-      if (!canPlayParty(this.getIdentity())) return this.fail("Sign in with Google to play Puffer Party.");
-      if (!this.host) return;
-      if (this.state.phase === "ended") {
-        const config = this.state.settings;
-        this.state = newParty(this.state.players.filter((p) => p.connected));
-        this.state.settings = config;
-        this.state.players.forEach((p) => p.hearts = config.lives);
-      }
-      if (!startParty(this.state)) return this.fail("You need at least two players.");
-      this.broadcast();
-    }
-    submit(text) {
-      if (this.closed) return;
-      if (!canPlayParty(this.getIdentity())) return this.fail("Sign in with Google to play Puffer Party.");
-      if (this.host) {
-        const id = this.local ? this.state.players[this.state.turn].id : this.myId;
-        const result = answerParty(this.state, id, text);
-        if (result.error) this.fail(result.error);
-        else this.broadcast();
-      } else if (this.hostConn?.open) this.hostConn.send({ type: "answer", text: String(text).slice(0, 256) });
-    }
-    tick() {
-      if (this.closed || !this.state) return;
-      if (!canPlayParty(this.getIdentity())) {
-        this.fail("Your Google sign-in expired. Sign in again to play.");
-        this.close();
-        return;
-      }
-      if (!this.host) return;
-      if (tickParty(this.state)) this.broadcast();
-    }
     close(clear = true) {
+      if (this.closed) return this.cleanup ?? Promise.resolve();
       this.closed = true;
       clearInterval(this.timer);
-      for (const conn of this.connections.values()) conn.close();
-      this.hostConn?.close();
-      this.peer?.destroy();
+      clearInterval(this.presence);
+      for (const off of this.unsub) off();
+      const pending = [];
+      if (this.c && this.code) pending.push(this.c.update(this.path("members/" + this.myId), { online: false, lastSeen: this.c.serverTimestamp() }).catch(() => {
+      }));
+      if (this.host && this.c) pending.push(this.c.remove(this.c.ref(this.c.db, "directory/" + this.code)).catch(() => {
+      }));
       if (clear) this.state = null;
+      return this.cleanup = Promise.all(pending);
+    }
+  };
+
+  // party-view.js
+  var esc5 = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
+  var BUDDIES = [["krill", "THE COUNSEL", 10], ["schooler", "THE CLERK", 30], ["squid", "THE ADVOCATE", 60], ["angler", "DEEP COUNSEL", 85], ["evil", "DEVIL\u2019S ADVOCATE", 100]];
+  function buddySprite(kind = "krill") {
+    return kind === "krill" ? `<img class="counsel-buddy" src="assets/${globalThis.document?.body?.classList.contains("reduced") || globalThis.matchMedia?.("(prefers-reduced-motion: reduce)").matches ? "counsel-krill-still.svg" : "counsel-krill.svg"}" alt="Krill wearing a barrister wig">` : tierSprite(BUDDIES.find((b) => b[0] === kind)?.[2] ?? 10, "party-buddy");
+  }
+  function entryMarkup(name, connected) {
+    return `<section class="party-entry"><a class="back" href="#home">\u25C2 SURFACE</a><div class="party-title"><small>FUTURE COUNSEL PRESENTS</small><h1>PUFFER PARTY</h1><p>Pass the puffer. Make your case. Stay afloat.</p></div><section class="party-entry-card"><div class="party-entry-heading"><h2>WHO\u2019S PLAYING?</h2><button class="text-button" data-p-help>HOW TO PLAY \u2197</button></div><label class="field-label" for="player-name">YOUR DISPLAY NAME</label><input id="player-name" class="field" maxlength="16" value="${esc5(name)}" autocomplete="nickname" placeholder="Future counsel\u2026"><div class="buddy-picker" role="group" aria-label="Choose your buddy">${BUDDIES.map(([key, label]) => `<button class="buddy-choice ${key === "krill" ? "selected" : ""}" data-buddy="${key}" aria-label="${label}" aria-pressed="${key === "krill"}">${buddySprite(key)}<span>${label}</span></button>`).join("")}</div><button class="party-quick" data-p-connect="quick">QUICK PLAY <span>\u2197</span><small>Join an open courtroom</small></button><div class="party-host-row"><button class="pixel-button" data-p-connect="host">HOST A ROOM <span>\uFF0B</span></button><label><input type="checkbox" id="party-public" checked> PUBLIC \xB7 LISTED</label></div><div class="party-divider">OR JOIN BY CODE</div><form id="join-form" class="join-row"><label class="sr-only" for="room-code">Room code</label><input id="room-code" class="field" placeholder="ABCD" maxlength="4" pattern="[A-Za-z]{4}" required autocomplete="off"><button class="pixel-button" type="submit">JOIN \u25B8</button></form><p class="party-auth-note">${connected ? "\u25CF GOOGLE CONNECTED" : "GOOGLE SIGN-IN REQUIRED TO PLAY"} \xB7 YOUR EMAIL STAYS PRIVATE</p><p id="party-error" class="notice error" hidden role="alert"></p></section><section class="party-directory"><div class="party-entry-heading"><h2>PUBLIC COURTROOMS</h2><button class="text-button" data-p-refresh>\u21BB REFRESH</button></div><div id="party-rooms"><p class="party-empty">${connected ? "Looking for open courtrooms\u2026" : "Sign in with Google to see open rooms."}</p></div></section><div class="party-how"><span><b>1</b> ANSWER BEFORE IT POPS</span><span><b>2</b> RARITY RESTORES HEARTS</span><span><b>3</b> NO REPEATED ANSWERS</span></div></section>`;
+  }
+  function roomsMarkup(rooms, limit = 50) {
+    return rooms.length ? rooms.slice(0, limit).map((r) => `<button class="directory-room" data-room="${esc5(r.code)}" ${r.count >= r.seats ? "disabled" : ""}><span>${esc5(r.hostName)}\u2019s court<small>${esc5(r.code)} \xB7 ${r.phase === "lobby" ? "LOBBY" : "PLAYING"}</small></span><b>${r.count}/${r.seats}</b><em>${r.count >= r.seats ? "FULL" : "JOIN \u2197"}</em></button>`).join("") + (rooms.length > limit ? '<button class="party-more text-button" data-room-more>LOAD MORE COURTROOMS \u2193</button>' : "") : '<p class="party-empty">The court is quiet. Host a room and invite your friends.</p>';
+  }
+  var hearts = (p) => '<span aria-label="' + p.hearts + ' hearts">' + Array.from({ length: Math.max(1, p.hearts) }, (_, i) => `<i class="${p.hearts ? "" : "empty"}">\u2665</i>`).join("") + "</span>";
+  function arenaPositions(count) {
+    return Array.from({ length: count }, (_, i) => {
+      const a = -Math.PI / 2 + i / count * Math.PI * 2;
+      return { x: 50 + Math.sin(a) * 34, y: 51 + Math.cos(a) * 29 };
+    });
+  }
+  var PartyView = class {
+    constructor(root, { help, leave, invite, error }) {
+      Object.assign(this, { root, help, leave, invite, error, chatOpen: false, rulesOpen: false, lastTurn: null, lastAccepted: null });
+    }
+    mount() {
+      this.root.innerHTML = `<section class="party-arena"><div class="arena-water" aria-hidden="true"></div><div class="party-hud"><button class="room-badge" id="p-room" aria-label="Change room visibility"></button><span id="p-phase"></span><span id="p-count"></span></div><button class="arena-leave icon" aria-label="Leave room">\u21B6</button><button class="arena-chat icon" aria-label="Open chat" aria-expanded="false">\u25A4<i hidden></i></button><div class="arena-prompt" id="p-prompt"></div><div class="arena-ring" id="p-ring"></div><div class="puffer-flight-layer"><div class="passing-puffer" id="p-puffer"><img src="assets/puffer.svg" alt="The puffer"><span class="puffer-zzz">z z z</span></div></div><div class="puffer-pop" id="p-pop" aria-hidden="true">${Array.from({ length: 16 }, (_, i) => `<i style="--i:${i}"></i>`).join("")}</div><div class="arena-center" id="p-center"></div><div class="arena-status" id="p-status" role="status"></div><p id="party-error" class="arena-error" hidden role="alert"></p><div class="party-bottom" id="p-bottom"></div><aside class="party-drawer" id="p-drawer" hidden></aside></section>`;
+      this.root.querySelector(".arena-leave").onclick = this.leave;
+      this.root.querySelector(".arena-chat").onclick = () => {
+        this.chatOpen = !this.chatOpen;
+        this.rulesOpen = false;
+        this.drawer();
+      };
+      this.root.querySelector("#p-room").onclick = () => {
+        if (this.session.host) this.session.visibility(!this.session.meta.isPrivate);
+      };
+    }
+    render(s, session2) {
+      this.s = s;
+      this.session = session2;
+      if (!this.root.querySelector(".party-arena")) this.mount();
+      const q2 = (sel) => this.root.querySelector(sel), lobby = ["lobby", "ended"].includes(s.phase), playing = s.phase === "playing", me = s.players.find((p) => p.id === session2.myId), mine = s.players[s.turn]?.id === session2.myId, alive2 = s.players.filter((p) => p.connected && p.hearts > 0 && !p.spectator), ready = s.players.filter((p) => p.connected && p.ready), positions = arenaPositions(s.players.length);
+      this.root.querySelector(".party-arena").classList.toggle("dense-room", s.players.length > 8);
+      q2("#p-room").innerHTML = `<small>${session2.preview ? "ART PREVIEW" : session2.meta?.isPrivate ? "PRIVATE" : "PUBLIC"}</small><strong>${esc5(session2.code)}</strong>`;
+      q2("#p-room").disabled = !session2.host;
+      q2("#p-phase").textContent = lobby ? "LOBBY" : s.phase === "countdown" ? "COURT CONVENES" : "CATEGORY " + s.round;
+      q2("#p-count").innerHTML = lobby ? `READY <b>${ready.length}/${s.settings.maxPlayers}</b>` : `FLOATING <b>${alive2.length}/${s.players.filter((p) => !p.spectator).length}</b>`;
+      q2("#p-prompt").hidden = lobby;
+      q2("#p-prompt").innerHTML = !lobby && s.round ? `<small>CATEGORY ${s.round} \xB7 ${esc5(partyPack(s).topic)}</small><h1>${esc5(partyPack(s).prompt)}</h1>` : "";
+      const rosterKey = JSON.stringify([s.players, s.turn, s.phase, s.settings.meterTarget]);
+      if (this.rosterKey !== rosterKey) {
+        this.rosterKey = rosterKey;
+        q2("#p-ring").innerHTML = s.players.map((p, i) => `<div class="arena-player ${playing && s.turn === i ? "holding" : ""} ${p.hearts === 0 && !lobby ? "eliminated" : ""} ${p.id === session2.myId ? "you" : ""}" style="--x:${positions[i].x}%;--y:${positions[i].y}%;--delay:${-i * 0.72}s" data-player="${esc5(p.id)}">${p.lastAnswer ? `<div class="player-answer ${tier(p.lastAnswer.points).color}">${esc5(p.lastAnswer.label)} <b>+${p.lastAnswer.points}</b></div>` : ""}<div class="player-buddy">${buddySprite(p.buddy)}</div><div class="player-pedestal"></div><strong>${esc5(p.name)}${p.id === session2.myId ? "<small> YOU</small>" : ""}</strong><div class="player-hearts">${p.spectator && !lobby ? "<small>NEXT GAME</small>" : hearts(p)}</div><div class="player-meter"><i style="width:${100 * Math.min(1, p.meter / s.settings.meterTarget)}%"></i></div>${lobby ? `<span class="player-ready">${p.connected ? p.ready ? "READY" : "WATCHING" : "OFFLINE"}</span>` : ""}</div>`).join("");
+      }
+      const centerKey = s.phase + ":" + s.winner;
+      if (this.centerKey !== centerKey) {
+        this.centerKey = centerKey;
+        q2("#p-center").innerHTML = s.phase === "lobby" ? "<small>THE COURT IS ASSEMBLING</small><h2>PUFFER<br>PARTY</h2>" : s.phase === "ended" ? `<small>THE VERDICT IS IN</small><h2>${esc5(s.players.find((p) => p.id === s.winner)?.name ?? "No one")}<br><em>WINS!</em></h2>` : s.phase === "countdown" ? '<strong id="p-countdown">3</strong>' : "";
+      }
+      const bottomKey = [lobby, !!me?.spectator, !!me?.hearts, me?.ready, me?.autoJoin, session2.host, ready.length, s.phase, JSON.stringify(s.settings)].join(":");
+      if (this.bottomKey !== bottomKey) {
+        const draft = q2("#party-answer")?.value ?? "", focused = document.activeElement === q2("#party-answer");
+        this.bottomKey = bottomKey;
+        if (lobby) {
+          q2("#p-bottom").innerHTML = `${session2.host ? `<div class="lobby-settings">${[["lives", "LIVES", s.settings.lives], ["minTurnMs", "MIN. TURN", s.settings.minTurnMs / 1e3 + "s"], ["maxPlayers", "SEATS", s.settings.maxPlayers]].map(([key, label, value]) => `<div><small>${label}</small><div><button data-step="${key}" data-dir="-1" aria-label="Decrease ${label}">\u2039</button><strong>${value}</strong><button data-step="${key}" data-dir="1" aria-label="Increase ${label}">\u203A</button></div></div>`).join("")}<button data-rules><small>HEART RULES</small>EDIT \u2197</button></div>` : ""}<button class="wake-puffer" data-start ${session2.host ? ready.length < 2 ? "disabled" : "" : ""}>${session2.host ? s.phase === "ended" ? "\u21BB WAKE IT AGAIN" : "WAKE THE PUFFER" : me?.ready ? "\u2713 READY \xB7 WAITING FOR HOST" : "JOIN NEXT GAME"}</button><div class="lobby-foot"><label><input type="checkbox" data-auto ${me?.autoJoin ? "checked" : ""}> AUTO-JOIN</label><span>${ready.length} READY \xB7 ${Math.max(0, s.settings.maxPlayers - ready.length)} OPEN</span><button data-invite>INVITE \u2197</button></div><button class="party-help-link" data-help>HOW TO PLAY</button>`;
+          q2("[data-start]").onclick = () => session2.host ? session2.start() : session2.ready(!me?.ready);
+          q2("[data-auto]").onchange = (e) => session2.autoJoin(e.target.checked);
+          q2("[data-invite]").onclick = this.invite;
+          q2("[data-help]").onclick = this.help;
+          q2("[data-rules]")?.addEventListener("click", () => {
+            this.rulesOpen = !this.rulesOpen;
+            this.chatOpen = false;
+            this.drawer();
+          });
+          q2("#p-bottom").querySelectorAll("[data-step]").forEach((b) => b.onclick = () => {
+            const k = b.dataset.step;
+            session2.rules({ [k]: s.settings[k] + Number(b.dataset.dir) * (k === "minTurnMs" ? 1e3 : 1) });
+          });
+        } else {
+          q2("#p-bottom").innerHTML = `<form class="party-answer-dock" id="party-answer-form"><div class="dock-heart"><b>\u2665</b><span id="p-myhearts">${me?.hearts ?? 0}</span><i style="--meter:${100 * (me?.meter ?? 0) / s.settings.meterTarget}%"></i></div><label class="sr-only" for="party-answer">Your answer</label><input id="party-answer" class="field" placeholder="Your answer\u2026" maxlength="120" required autocomplete="off" spellcheck="false" ${!me || me.spectator || me.hearts <= 0 ? "disabled" : ""}><button type="submit" id="p-send" ${!mine || !playing ? "disabled" : ""}>SEND \u2197</button></form><div class="dock-caption"><span id="p-turn"></span><span id="p-fuse" aria-label="Puffer fuse"><i id="party-timer-fill"></i></span><span class="sr-only" id="party-timer"></span></div>${me?.spectator ? `<button class="join-next" data-next ${me?.ready ? "disabled" : ""}>${me?.ready ? "\u2713 READY FOR NEXT GAME" : "JOIN NEXT GAME"}</button>` : ""}`;
+          q2("#party-answer").value = draft;
+          q2("#party-answer-form").onsubmit = (e) => {
+            e.preventDefault();
+            session2.submit(q2("#party-answer").value);
+          };
+          q2("[data-next]")?.addEventListener("click", () => session2.ready(true));
+          if ((focused || s.phase === "countdown") && !q2("#party-answer").disabled) q2("#party-answer").focus({ preventScroll: true });
+        }
+      }
+      if (!lobby) {
+        q2("#p-send").disabled = !mine || !playing || !session2.connected;
+        q2("#p-turn").textContent = me?.spectator ? "WATCHING \xB7 YOU CAN JOIN THE NEXT GAME" : s.phase === "burst" ? "PUFFER POPPED!" : mine ? "\u25B8 YOUR TURN" : "\u25B8 " + (s.players[s.turn]?.name ?? "Counsel") + " IS UP";
+        q2("#p-myhearts").textContent = me?.hearts ?? 0;
+        const meter = q2(".dock-heart>i");
+        if (meter) meter.style.setProperty("--meter", Math.min(100, 100 * (me?.meter ?? 0) / s.settings.meterTarget) + "%");
+      }
+      if (session2.lastAccepted && this.lastAccepted !== session2.lastAccepted) {
+        this.lastAccepted = session2.lastAccepted;
+        if (q2("#party-answer")) q2("#party-answer").value = "";
+      }
+      const target = lobby || s.phase === "countdown" ? { x: 50, y: 40 } : positions[s.turn] ?? { x: 50, y: 50 };
+      q2("#p-puffer").classList.toggle("sleeping", lobby);
+      q2("#p-puffer").classList.toggle("hidden", s.phase === "burst" || s.phase === "ended");
+      q2("#p-puffer").style.left = target.x + "%";
+      q2("#p-puffer").style.top = target.y - 8 + "%";
+      const turnKey = s.round + ":" + s.turn;
+      if (this.lastTurn && this.lastTurn !== turnKey && playing && !document.body.classList.contains("reduced") && !globalThis.matchMedia?.("(prefers-reduced-motion: reduce)").matches) {
+        q2("#p-puffer").animate([{ translate: "0 0", rotate: "-12deg" }, { translate: "0 -55px", rotate: "8deg", offset: 0.5 }, { translate: "0 0", rotate: "0deg" }], { duration: 850, easing: "cubic-bezier(.2,.7,.3,1)" });
+      }
+      this.lastTurn = turnKey;
+      if (s.popped?.at !== this.popAt) {
+        this.popAt = s.popped?.at;
+        if (s.popped) {
+          q2("#p-pop").classList.remove("burst");
+          void q2("#p-pop").offsetWidth;
+          const i = s.players.findIndex((p) => p.id === s.popped.id), pos = positions[i] ?? { x: 50, y: 50 };
+          q2("#p-pop").style.left = pos.x + "%";
+          q2("#p-pop").style.top = pos.y - 8 + "%";
+          q2("#p-pop").classList.add("burst");
+        }
+      }
+      q2("#p-status").textContent = session2.connected === false ? "Reconnecting\u2026" : session2.preview ? "SIMULATED ART PREVIEW \xB7 NO ONLINE ROOM" : s.phase === "burst" ? s.notice : "";
+      this.drawer();
+      this.updateClock();
+    }
+    updateClock() {
+      const s = this.s;
+      if (!s) return;
+      const q2 = (sel) => this.root.querySelector(sel), remaining = Math.max(0, s.deadline - (Date.now() + this.session.offset));
+      if (q2("#party-timer")) q2("#party-timer").textContent = s.phase === "playing" ? Math.ceil(remaining / 1e3) + " seconds remaining" : s.phase;
+      if (q2("#party-timer-fill")) {
+        q2("#party-timer-fill").style.transform = `scaleX(${s.phase === "playing" ? Math.min(1, remaining / 3e4) : 0})`;
+        q2("#p-fuse").classList.toggle("urgent", remaining < 5e3);
+      }
+      q2("#p-puffer")?.classList.toggle("urgent", s.phase === "playing" && remaining < 5e3);
+      if (q2("#p-countdown")) q2("#p-countdown").textContent = Math.max(1, Math.ceil((s.nextAt - Date.now() - this.session.offset) / 1e3));
+    }
+    drawer() {
+      const el = this.root.querySelector("#p-drawer");
+      if (!el) return;
+      el.hidden = !this.chatOpen && !this.rulesOpen;
+      this.root.querySelector(".arena-chat").setAttribute("aria-expanded", String(this.chatOpen));
+      if (el.hidden) {
+        this.drawerKind = null;
+        this.chatKey = null;
+        return;
+      }
+      const session2 = this.session, s = this.s;
+      if (this.rulesOpen) {
+        if (this.drawerKind === "rules" && this.rulesKey === JSON.stringify([s.settings, session2.meta.isPrivate])) return;
+        this.rulesKey = JSON.stringify([s.settings, session2.meta.isPrivate]);
+        this.drawerKind = "rules";
+        el.innerHTML = `<div class="drawer-heading"><h2>HEART RULES</h2><button data-close aria-label="Close rules">\xD7</button></div>${[["maxLives", "HEART CAP", s.settings.maxLives, 1], ["meterTarget", "POINTS / HEART", s.settings.meterTarget, 50]].map(([key2, label, value]) => `<div class="heart-rule"><span>${label}</span><button data-rule="${key2}" data-dir="-1" aria-label="Decrease ${label}">\u2039</button><strong>${value}</strong><button data-rule="${key2}" data-dir="1" aria-label="Increase ${label}">\u203A</button></div>`).join("")}<button class="drawer-visibility" data-visibility>ROOM \xB7 ${session2.meta.isPrivate ? "PRIVATE" : "PUBLIC"} \u2194</button>`;
+        el.querySelector("[data-close]").onclick = () => {
+          this.rulesOpen = false;
+          this.drawer();
+        };
+        el.querySelector("[data-visibility]").onclick = () => session2.visibility(!session2.meta.isPrivate);
+        el.querySelectorAll("[data-rule]").forEach((b) => b.onclick = () => {
+          const k = b.dataset.rule;
+          session2.rules({ [k]: s.settings[k] + Number(b.dataset.dir) * (k === "meterTarget" ? 50 : 1) });
+        });
+        return;
+      }
+      if (this.drawerKind !== "chat") {
+        this.drawerKind = "chat";
+        el.innerHTML = `<div class="drawer-heading"><h2>COURT CHAT</h2><button data-close aria-label="Close chat">\xD7</button></div><details class="chat-roster"><summary>PLAYERS \xB7 ${s.players.length}</summary><div>${s.players.map((p) => `<p>${esc5(p.name)}${p.id === session2.meta.host ? " <small>HOST</small>" : ""}${session2.host && p.id !== session2.myId ? `<button data-kick="${esc5(p.id)}" aria-label="Remove ${esc5(p.name)} from room">REMOVE</button>` : ""}</p>`).join("")}</div></details><div class="chat-messages" id="p-messages" role="log" aria-label="Room chat"></div><form id="chat-form"><label class="sr-only" for="chat-message">Chat message</label><input id="chat-message" placeholder="Message the courtroom\u2026" maxlength="160" autocomplete="off"><button type="submit">SEND</button></form>`;
+        el.querySelector("[data-close]").onclick = () => {
+          this.chatOpen = false;
+          this.drawer();
+        };
+        el.querySelectorAll("[data-kick]").forEach((b) => b.onclick = () => session2.kick(b.dataset.kick));
+        el.querySelector("#chat-form").onsubmit = (e) => {
+          e.preventDefault();
+          session2.sendChat(el.querySelector("input").value);
+          el.querySelector("input").value = "";
+        };
+      }
+      const messages = el.querySelector("#p-messages"), key = JSON.stringify(session2.chat);
+      if (this.chatKey !== key) {
+        this.chatKey = key;
+        messages.innerHTML = session2.chat.length ? session2.chat.map((m) => `<p class="${m.system ? "system" : ""}">${m.system ? "" : `<b>${esc5(m.name)}</b>`}<span>${esc5(m.text)}</span></p>`).join("") : '<p class="system">The courtroom is open. Say hello to your friends.</p>';
+        messages.scrollTop = messages.scrollHeight;
+      }
     }
   };
 
@@ -2479,10 +2946,14 @@ Wi-Fi`
   var app = $("#app");
   var ocean = new Ocean($("#world"));
   function screen(value) {
+    if (value !== "party") {
+      document.body.dataset.partyArena = "false";
+      ocean.suspend(false);
+    }
     document.body.dataset.screen = value;
     ocean.set(value === "dive" ? "dive" : value === "party" ? "party" : "home", value === "dive" && quiz ? total() * 10 : 0);
   }
-  var esc5 = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
+  var esc6 = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
   var read = (key, fallback) => {
     try {
       return JSON.parse(localStorage.getItem("fc:" + key)) ?? fallback;
@@ -2513,7 +2984,6 @@ Wi-Fi`
   var quizSaveTimer;
   var puffer = (extra = "") => `<img class="puffer ${extra}" src="assets/puffer.svg" alt="Pufferfish counsel mascot">`;
   var button = (action2, text, cls = "") => `<button class="pixel-button ${cls}" data-action="${action2}">${text}</button>`;
-  var back = () => '<a class="back" href="#home">\u25C2 SURFACE</a>';
   function toast(message) {
     $("#toast").textContent = message;
     $("#toast").classList.add("show");
@@ -2556,19 +3026,19 @@ Wi-Fi`
     modal(`<div class="eyebrow">FUTURE COUNSEL FIELD GUIDE</div><h2>HOW TO DIVE</h2><ol><li>Seven prompts. You have <span class="gold">25 seconds</span> to name one answer for each.</li><li>Find a less obvious answer. Curated rarity tiers award <span class="gold">10\u2013100 points</span>. Every point takes you 10 metres deeper. Rejected answers can be retried while the timer runs; any text left at zero is submitted automatically.</li><li>Everyone gets the same Daily Dive: one prompt each from wordplay, nature, food, science, culture, geography, and everyday curiosities. Each topic rotates through its pool without repeating yesterday\u2019s prompt. A fresh set arrives at midnight in New York. Practice as often as you like.</li></ol><h3>ENDLESS CASES</h3><p>Read the details. Four choices per question. Get five right in a row to clear a challenge; one wrong answer resets the streak. Questions and answer positions shuffle. Keep diving through unlimited rounds drawn from Gavin\u2019s 16 published case reviews and his own analysis.</p><h3>PUFFER PARTY</h3><p>Sign in with Google to host or join. Host a room, share its code, and take turns naming answers. A valid answer passes the puffer. You cannot reuse an answer in the current round.</p><p>The shared fuse keeps burning between turns. If it pops on you, you lose a heart. Start with two hearts. Earn 600 rarity points to restore a heart, up to five. Each new turn gets at least eight seconds. Last counsel floating wins.</p><p class="muted">Source-backed answer banks and original familiarity rankings. Scores combine corpus familiarity with editorial tiers and special 100-point discoveries; they do not measure how often players choose an answer. Some valid answers may be missing. This is a Future Counsel fan game inspired by Krillion; it is not affiliated with Krillion.</p><a class="fc-link" href="https://futurecounsel.org/" target="_blank" rel="noopener">EXPLORE FUTURE COUNSEL \u2197</a>`);
   }
   function showSettings() {
-    modal(`<div class="eyebrow">CONTROL ROOM</div><h2>SETTINGS</h2><label class="setting-row"><span>Sound effects<small>Little arcade bleeps.</small></span><input type="checkbox" data-setting="sound" ${settings.sound ? "checked" : ""}></label><label class="setting-row"><span>CRT scanlines<small>The old-school screen effect.</small></span><input type="checkbox" data-setting="scanlines" ${settings.scanlines ? "checked" : ""}></label><label class="setting-row"><span>Animations<small>Bobbing fish and gentle movement.</small></span><input type="checkbox" data-setting="motion" ${settings.motion ? "checked" : ""}></label><label class="setting-row"><span>Answer corrections<small>Confirm typos and abbreviations before scoring.</small></span><input type="checkbox" data-setting="answerCorrections" ${settings.answerCorrections !== false ? "checked" : ""}></label><label class="setting-row"><span>Clear rejected entries<small>Empty the input after an unrecognized answer.</small></span><input type="checkbox" data-setting="clearRejected" ${settings.clearRejected ? "checked" : ""}></label><p class="muted">Daily results and preferences are saved on this browser. Multiplayer uses direct connections between players; the host must keep their tab open.</p>`);
+    modal(`<div class="eyebrow">CONTROL ROOM</div><h2>SETTINGS</h2><label class="setting-row"><span>Sound effects<small>Little arcade bleeps.</small></span><input type="checkbox" data-setting="sound" ${settings.sound ? "checked" : ""}></label><label class="setting-row"><span>CRT scanlines<small>The old-school screen effect.</small></span><input type="checkbox" data-setting="scanlines" ${settings.scanlines ? "checked" : ""}></label><label class="setting-row"><span>Animations<small>Bobbing fish and gentle movement.</small></span><input type="checkbox" data-setting="motion" ${settings.motion ? "checked" : ""}></label><label class="setting-row"><span>Answer corrections<small>Confirm typos and abbreviations before scoring.</small></span><input type="checkbox" data-setting="answerCorrections" ${settings.answerCorrections !== false ? "checked" : ""}></label><label class="setting-row"><span>Clear rejected entries<small>Empty the input after an unrecognized answer.</small></span><input type="checkbox" data-setting="clearRejected" ${settings.clearRejected ? "checked" : ""}></label><p class="muted">Daily results and preferences are saved on this browser. Multiplayer uses Google-authenticated rooms. Keep the host\u2019s tab open during play.</p>`);
   }
   function home() {
     screen("home");
     const day = dateKey(), stored = read("daily:" + day, null), done = stored?.stage === "done";
-    app.innerHTML = `<section class="hero"><p class="eyebrow">FUTURE COUNSEL PRESENTS</p><h1 class="brand-title" aria-label="Councillion">${[..."COUNCILLION"].map((c, i) => `<span aria-hidden="true" style="--letter:${i}">${c}</span>`).join("")}</h1><p class="subtitle">THE DAILY DIVE</p><p class="hero-copy">7 prompts \xB7 25 seconds each \xB7 rarer answers sink deeper</p></section><section class="home-panel"><div class="banner"><span>DAILY DIVE \xB7 ${esc5(day)}</span><span id="reset-clock"></span></div><button class="pixel-button home-party" data-action="party">${puffer()}<span>PUFFER PARTY<small>Play with your friends</small></span><b>\u2197</b></button>${button("daily", done ? "VIEW TODAY\u2019S DIVE \u2197" : stored ? "CONTINUE DESCENT \u25BC" : "BEGIN DESCENT \u25BC", "primary")}<div class="surface-secondary"><button class="text-button" data-action="endless">\u221E ENDLESS CASES</button><button class="text-button" data-action="help">? HOW TO PLAY</button></div><p class="endless-tagline">16 case reviews. Four choices. Five right in a row.</p><p class="surface-signoff"><a href="https://futurecounsel.org/" target="_blank" rel="noopener">FUTURE COUNSEL</a><span>one in a councillion.</span></p></section>`;
+    app.innerHTML = `<section class="hero"><p class="eyebrow">FUTURE COUNSEL PRESENTS</p><h1 class="brand-title" aria-label="Councillion">${[..."COUNCILLION"].map((c, i) => `<span aria-hidden="true" style="--letter:${i}">${c}</span>`).join("")}</h1><p class="subtitle">THE DAILY DIVE</p><p class="hero-copy">7 prompts \xB7 25 seconds each \xB7 rarer answers sink deeper</p></section><section class="home-panel"><div class="banner"><span>DAILY DIVE \xB7 ${esc6(day)}</span><span id="reset-clock"></span></div><button class="pixel-button home-party" data-action="party">${puffer()}<span>PUFFER PARTY<small>Play with your friends</small></span><b>\u2197</b></button>${button("daily", done ? "VIEW TODAY\u2019S DIVE \u2197" : stored ? "CONTINUE DESCENT \u25BC" : "BEGIN DESCENT \u25BC", "primary")}<div class="surface-secondary"><button class="text-button" data-action="endless">\u221E ENDLESS CASES</button><button class="text-button" data-action="help">? HOW TO PLAY</button></div><p class="endless-tagline">16 case reviews. Four choices. Five right in a row.</p><p class="surface-signoff"><a href="https://futurecounsel.org/" target="_blank" rel="noopener">FUTURE COUNSEL</a><span>one in a councillion.</span></p></section>`;
     updateClock();
   }
   function showBank(id = quizPack()?.id) {
     if (quiz && quiz.stage !== "done" && ["daily", "practice"].includes(route)) return;
     const pack2 = PACKS.find((p) => p.id === id);
     if (!pack2) return;
-    modal(`<div class="eyebrow">${esc5(pack2.topic)}</div><h2>THE ANSWER BANK</h2><p>${esc5(pack2.prompt)}</p><div id="bank-mount"></div>`);
+    modal(`<div class="eyebrow">${esc6(pack2.topic)}</div><h2>THE ANSWER BANK</h2><p>${esc6(pack2.prompt)}</p><div id="bank-mount"></div>`);
     mountBank($("#bank-mount"), pack2, quiz?.results.find((r) => r.packId === id)?.label);
   }
   function updateClock() {
@@ -2789,7 +3259,7 @@ Wi-Fi`
       await navigator.clipboard.writeText(text);
       toast(message);
     } catch {
-      modal(`<h2>COPY & SHARE</h2><label class="sr-only" for="copy-text">Text to share</label><textarea class="field" id="copy-text" rows="7" readonly>${esc5(text)}</textarea>`);
+      modal(`<h2>COPY & SHARE</h2><label class="sr-only" for="copy-text">Text to share</label><textarea class="field" id="copy-text" rows="7" readonly>${esc6(text)}</textarea>`);
       $("#copy-text").select();
     }
   }
@@ -2801,21 +3271,65 @@ ${total()}/700 \xB7 ${(total() * 10).toLocaleString()}m deep
 Estimated better-than: ${percentileText(estimatedPercentile(total()))} (scoring model)
 Future Counsel \xB7 ${location.href.split("#")[0]}`, "Verdict copied. Send it to your friends!");
   }
-  function partySetup() {
-    screen("party");
-    const identity = account?.identity;
-    if (!canPlayParty(identity)) {
-      app.innerHTML = back() + `<section class="page-heading"><p class="eyebrow">FUTURE COUNSEL \xB7 MULTIPLAYER</p>${puffer()}<h1>PUFFER PARTY</h1><p>Name an answer. Pass the puffer.<br>Last counsel floating wins.</p></section><section class="panel party-signin"><p class="eyebrow">ENTER THE COURTROOM</p><h2>SIGN IN TO PLAY</h2><p>Every player needs a Google account to host or join Puffer Party.</p><button class="pixel-button primary" data-party-signin>SIGN IN WITH GOOGLE</button><p class="fine-print">Your Google email is private. Other players see your chosen display name.</p></section>`;
-      $("[data-party-signin]").onclick = () => account?.open();
-      return;
-    }
-    app.innerHTML = back() + `<section class="page-heading"><p class="eyebrow">FUTURE COUNSEL \xB7 MULTIPLAYER</p>${puffer()}<h1>PUFFER PARTY</h1><p>Name an answer. Pass the puffer.<br>Last counsel floating wins.</p></section><section class="panel"><div style="display:flex;justify-content:space-between;align-items:center"><h3 style="margin:0">WHO\u2019S PLAYING?</h3><button class="text-button cyan" data-action="help" style="font-size:16px">HOW TO PLAY \u2197</button></div><p class="party-account-label">GOOGLE CONNECTED \xB7 ${esc5(identity.name)}</p><label class="field-label" for="player-name">YOUR DISPLAY NAME</label><input id="player-name" class="field" placeholder="Future counsel\u2026" value="${esc5(profile.name || identity.name)}" maxlength="18" autocomplete="nickname"><div class="party-options">${button("host", "\u25BC HOST A ROOM<small>Get a code. Invite your friends.</small>")}</div><div class="section-separator">OR JOIN YOUR FRIENDS</div><form id="join-form"><label class="sr-only" for="room-code">Four-letter room code</label><div class="join-row"><input id="room-code" class="field" placeholder="ROOM CODE" maxlength="4" autocomplete="off" autocapitalize="characters" pattern="[A-Za-z]{4}" required><button class="pixel-button" type="submit">JOIN \u25B8</button></div></form><p id="party-error" class="notice" hidden role="alert"></p><p class="fine-print" style="margin-top:21px">Private rooms \xB7 2\u20136 players \xB7 Google sign-in required<br>The host keeps this tab open while you play.</p></section>`;
-    $("#join-form").addEventListener("submit", (e) => {
-      e.preventDefault();
+  var partyView = null;
+  var roomUnsubscribe = null;
+  var roomList = [];
+  var chosenBuddy = "krill";
+  var roomLimit = 50;
+  function showRooms() {
+    const mount = $("#party-rooms");
+    if (!mount) return;
+    mount.innerHTML = roomsMarkup(roomList, roomLimit);
+    mount.querySelectorAll("[data-room]").forEach((b) => b.onclick = () => {
+      $("#room-code").value = b.dataset.room;
       connectParty("join");
     });
+    mount.querySelector("[data-room-more]")?.addEventListener("click", () => {
+      roomLimit += 50;
+      showRooms();
+    });
+  }
+  function partySetup() {
+    screen("party");
+    ocean.suspend(false);
+    document.body.dataset.partyArena = "false";
+    partyView = null;
+    roomUnsubscribe?.();
+    roomUnsubscribe = null;
+    const identity = account?.identity;
+    app.innerHTML = entryMarkup(profile.name || identity?.name || "", canPlayParty(identity));
+    $("#join-form").onsubmit = (e) => {
+      e.preventDefault();
+      connectParty("join");
+    };
+    app.querySelectorAll("[data-p-connect]").forEach((b) => b.onclick = () => connectParty(b.dataset.pConnect));
+    app.querySelectorAll("[data-buddy]").forEach((b) => b.onclick = () => {
+      chosenBuddy = b.dataset.buddy;
+      app.querySelectorAll("[data-buddy]").forEach((x) => {
+        x.classList.toggle("selected", x === b);
+        x.setAttribute("aria-pressed", String(x === b));
+      });
+    });
+    $("[data-p-help]").onclick = howTo;
+    $("[data-p-refresh]").onclick = refreshRooms;
     const code = new URLSearchParams(location.hash.split("?")[1] ?? "").get("room");
     if (code) $("#room-code").value = code.slice(0, 4);
+    if (canPlayParty(identity)) refreshRooms();
+  }
+  async function refreshRooms() {
+    if (!canPlayParty(account?.identity)) {
+      account?.open();
+      return;
+    }
+    roomUnsubscribe?.();
+    try {
+      roomUnsubscribe = await publicRooms(() => account.partySession(), (rooms) => {
+        roomList = rooms;
+        showRooms();
+      }, partyError);
+    } catch (e) {
+      partyError(e.message);
+    }
   }
   function playerName() {
     const value = $("#player-name")?.value.trim();
@@ -2832,11 +3346,12 @@ Future Counsel \xB7 ${location.href.split("#")[0]}`, "Verdict copied. Send it to
     if (el) {
       el.textContent = message;
       el.hidden = false;
+      clearTimeout(el._hide);
+      if (party?.state) el._hide = setTimeout(() => el.hidden = true, 6500);
     } else toast(message);
   }
   async function connectParty(kind) {
     if (!canPlayParty(account?.identity)) {
-      partySetup();
       account?.open();
       return;
     }
@@ -2847,15 +3362,29 @@ Future Counsel \xB7 ${location.href.split("#")[0]}`, "Verdict copied. Send it to
       partyError(e.message);
       return;
     }
-    const code = $("#room-code")?.value;
+    let code = $("#room-code")?.value;
+    const options = { buddy: chosenBuddy, isPrivate: !$("#party-public")?.checked };
+    if (kind === "quick") {
+      const open = roomList.find((r) => r.phase === "lobby" && r.count < r.seats) ?? roomList.find((r) => r.count < r.seats);
+      if (open) {
+        code = open.code;
+        kind = "join";
+      } else {
+        kind = "host";
+        options.isPrivate = false;
+      }
+    }
     const buttons = [...app.querySelectorAll("button")];
     buttons.forEach((b) => b.disabled = true);
-    partyError(kind === "host" ? "Opening a room\u2026" : "Connecting to the room\u2026");
+    partyError(kind === "host" ? "Opening a courtroom\u2026" : "Connecting to the courtroom\u2026");
     party?.close();
-    party = new PartySession(renderParty, partyError, () => account?.identity);
+    party = new PartySession(renderParty, partyError, () => account?.identity, () => account.partySession());
     try {
-      if (kind === "host") await party.create(name);
-      else await party.join(name, code);
+      if (kind === "host") await party.create(name, options);
+      else await party.join(name, code, options);
+      roomUnsubscribe?.();
+      roomUnsubscribe = null;
+      history.replaceState(null, "", "#party?room=" + party.code);
     } catch (e) {
       party?.close();
       party = null;
@@ -2863,36 +3392,20 @@ Future Counsel \xB7 ${location.href.split("#")[0]}`, "Verdict copied. Send it to
       buttons.forEach((b) => b.disabled = false);
     }
   }
-  function playersMarkup(s, session2) {
-    return `<div class="players">${s.players.map((p, i) => `<div class="player ${s.phase === "playing" && i === s.turn ? "active" : ""} ${p.hearts <= 0 ? "out" : ""}"><span class="avatar">${["\u2696", "\u2726", "\u25C6", "\u265C", "\u25C8", "\u2727", "\u265F", "\u25C9"][i % 8]}</span><div class="player-meta"><div class="name">${esc5(p.name)}${p.id === session2.myId && !session2.local ? ' <span class="cyan">YOU</span>' : ""}</div><div class="hearts" aria-label="${p.hearts} hearts">${"\u2665".repeat(p.hearts)}${"\u2661".repeat(Math.max(0, (s.settings?.lives ?? 2) - p.hearts))}</div><small>${p.connected ? p.score + " PTS" : "DISCONNECTED"}${p.id === s.players[0]?.id ? " \xB7 HOST" : ""}</small><div class="meter" title="${p.meter}/${s.settings?.meterTarget ?? 600} points toward a heart"><span style="width:${p.meter / (s.settings?.meterTarget ?? 600) * 100}%"></span></div></div></div>`).join("")}</div>`;
+  function leaveParty() {
+    party?.close();
+    party = null;
+    lastPartyTurn = null;
+    history.replaceState(null, "", "#party");
+    partySetup();
   }
   function renderParty(s, session2) {
     if (route !== "party") return;
     screen("party");
-    const input = $("#party-answer"), draft = input?.value ?? "", wasFocused = document.activeElement === input, turnKey = `${s.round}:${s.turn}:${s.phase}`;
-    const sameTurn = lastPartyTurn === turnKey;
-    lastPartyTurn = turnKey;
-    const ownTurn = session2.local || s.players[s.turn]?.id === session2.myId;
-    if (s.phase === "lobby") {
-      app.innerHTML = back() + `<section class="panel"><p class="eyebrow" style="text-align:center">${session2.local ? "ONE-DEVICE PARTY" : "YOUR COURTROOM IS OPEN"}</p><h1 class="room-code">${session2.local ? "LOCAL" : esc5(session2.code)}</h1><span class="room-label">${session2.local ? "PASS THE KEYBOARD" : "ROOM CODE \xB7 SHARE WITH YOUR FRIENDS"}</span>${session2.local ? "" : `<div class="two-actions">${button("copy-code", "COPY CODE")}${button("invite", "COPY INVITE \u2197")}</div>`}${playersMarkup(s, session2)}${session2.host ? button("start-party", s.players.length >= 2 ? "\u25B6 START THE PARTY" : "WAITING FOR FRIENDS\u2026", "primary") : '<p class="notice">Waiting for the host to start the party\u2026</p>'}<p id="party-error" class="notice error" hidden role="alert"></p><p class="fine-print" style="margin-top:22px">2 hearts each \xB7 600 rarity points restores a heart<br>${session2.local ? "Take turns on this device." : "Keep this tab open. New players join before the game starts."}</p></section>`;
-      const start = $('[data-action="start-party"]');
-      if (start) start.disabled = s.players.length < 2;
-      return;
-    }
-    if (s.phase === "ended") {
-      const winner = s.players.find((p) => p.id === s.winner);
-      app.innerHTML = back() + `<section class="panel result-card"><p class="eyebrow">THE COURT HAS REACHED ITS VERDICT</p>${puffer()}<h1 class="winner">${esc5(winner?.name ?? "No one")} WINS!</h1><p class="muted">Last counsel floating.</p>${playersMarkup(s, session2)}${session2.host ? button("start-party", "\u21BB PLAY A REMATCH", "primary") : '<p class="notice">Waiting for the host to start a rematch.</p>'}${button("leave-party", "\u25C2 LEAVE ROOM")}<p id="party-error" class="notice error" hidden></p></section>`;
-      return;
-    }
-    app.innerHTML = back() + `<div class="round-top"><span>PUFFER PARTY \xB7 CASE ${s.round}</span><span class="gold">${session2.local ? "ONE DEVICE" : "ROOM " + esc5(session2.code)}</span></div><section class="panel"><div class="party-stage">${puffer(s.phase === "burst" ? "hot" : "")}<p class="turn-label">${s.phase === "burst" ? "PUFFER POPPED!" : ownTurn ? "YOUR TURN" + (session2.local ? " \xB7 " + esc5(s.players[s.turn].name) : "") : esc5(s.players[s.turn].name) + " HAS THE PUFFER"}</p><div class="timer-row"><div class="timer-track"><div class="timer-fill" id="party-timer-fill"></div></div><span class="timer-number" id="party-timer" role="timer">\u2014</span></div></div><p class="eyebrow">${esc5(partyPack(s).topic)}</p><h1 class="party-prompt">${esc5(partyPack(s).prompt)}</h1><form id="party-answer-form" class="answer-form"><label class="sr-only" for="party-answer">Your answer</label><input id="party-answer" class="field" placeholder="${ownTurn ? "Answer to pass the puffer\u2026" : "Waiting for your turn\u2026"}" maxlength="120" autocomplete="off" autocapitalize="off" spellcheck="false" ${!ownTurn || s.phase !== "playing" ? "disabled" : ""} required><button class="pixel-button" type="submit" ${!ownTurn || s.phase !== "playing" ? "disabled" : ""}>PASS \u25B8</button></form><p class="form-caption">${s.used.length} answers used \xB7 ${partyPack(s).answers.length} in this bank \xB7 at least 8 seconds for each new turn</p><p class="notice" role="status">${esc5(s.notice)}</p><p id="party-error" class="notice error" hidden role="alert"></p>${playersMarkup(s, session2)}<h3 class="small-title">ON THE RECORD</h3><ul class="party-log">${s.log.map((l) => `<li><span><span class="muted">${esc5(l.name)} \u2192 </span>${esc5(l.answer)}</span><span class="${tier(l.points).color}">+${l.points}</span></li>`).join("") || '<li class="muted">Your first answer goes here.</li>'}</ul></section><div class="inline-links"><button class="text-button" data-action="leave-party">\u25C2 LEAVE ROOM</button><button class="text-button" data-action="help">? RULES</button></div>`;
-    if (sameTurn && $("#party-answer")) $("#party-answer").value = draft;
-    $("#party-answer-form").addEventListener("submit", (e) => {
-      e.preventDefault();
-      const text = $("#party-answer").value;
-      party.submit(text);
-    });
-    if (ownTurn && s.phase === "playing" && (!sameTurn || wasFocused)) $("#party-answer")?.focus();
-    updateTimer();
+    document.body.dataset.partyArena = "true";
+    ocean.suspend(true);
+    partyView ??= new PartyView(app, { help: howTo, leave: leaveParty, invite: () => copyText(location.href.split("#")[0] + "#party?room=" + party.code, "Invite link copied!"), error: partyError });
+    partyView.render(s, session2);
   }
   function updateTimer() {
     if (route === "biomes") {
@@ -2957,17 +3470,7 @@ Future Counsel \xB7 ${location.href.split("#")[0]}`, "Verdict copied. Send it to
         if (remaining <= 0) submitQuiz($("#answer")?.value ?? quiz.draft ?? "", "timeout");
       }
     }
-    if (party?.state && route === "party") {
-      const s = party.state, remaining = Math.max(0, s.deadline - (Date.now() + party.offset)), n = $("#party-timer"), fill = $("#party-timer-fill");
-      if (n) {
-        n.textContent = s.phase === "playing" ? Math.ceil(remaining / 1e3) + "s" : "POP";
-        n.classList.toggle("urgent", remaining < 6e3 || s.phase === "burst");
-      }
-      if (fill) {
-        fill.style.transform = "scaleX(" + (s.phase === "playing" ? Math.min(1, remaining / (s.deadline - s.startedAt)) : 0) + ")";
-        fill.style.background = remaining < 6e3 ? "var(--pink)" : "var(--mint)";
-      }
-    }
+    if (party?.state && route === "party") partyView?.updateClock();
   }
   function navigate() {
     const next = location.hash.slice(1).split("?")[0] || "home";
@@ -2975,6 +3478,11 @@ Future Counsel \xB7 ${location.href.split("#")[0]}`, "Verdict copied. Send it to
       party.close();
       party = null;
       lastPartyTurn = null;
+      partyView = null;
+    }
+    if (next !== "party") {
+      roomUnsubscribe?.();
+      roomUnsubscribe = null;
     }
     route = next;
     if (next === "daily" || next === "practice") startQuiz(next);
@@ -3102,7 +3610,9 @@ Future Counsel \xB7 ${location.href.split("#")[0]}`, "Verdict copied. Send it to
   window.addEventListener("pagehide", () => {
     if (quiz) persistQuiz();
   });
-  account = connectAccount({ button: $("#account-button"), modal, escape: esc5, onIdentity: (identity) => {
+  account = connectAccount({ button: $("#account-button"), modal, escape: esc6, beforeSignOut: async () => {
+    await party?.close();
+  }, onIdentity: (identity) => {
     if (identity) {
       profile.name = identity.name;
       save("profile", profile);
