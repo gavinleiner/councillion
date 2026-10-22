@@ -93,7 +93,7 @@ export function answerParty(s,id,text,now=Date.now()){
  if(now>=s.deadline)return {error:'The puffer already popped!'};
  const answer=matchAnswer(partyPack(s),String(text).slice(0,256));if(!answer)return {error:'Not in this answer bank. Try another answer.'};
  if(s.used.includes(normalize(answer.label)))return {error:'Already on the record. Try a different answer.'};
- const player=s.players[s.turn];s.used.push(normalize(answer.label));player.score+=answer.points;player.meter+=answer.points;
+ const player=s.players[s.turn];player.lastAnswer={label:answer.label,points:answer.points,at:now};s.passed={from:player.id,at:now};s.used.push(normalize(answer.label));player.score+=answer.points;player.meter+=answer.points;
  let bonus='';if(player.meter>=s.settings.meterTarget){player.meter-=s.settings.meterTarget;if(player.hearts<s.settings.maxLives){player.hearts++;bonus=' +1 heart';}}
  s.log.unshift({name:player.name,answer:answer.label,points:answer.points});s.log=s.log.slice(0,6);s.notice=`${player.name}: ${answer.label} (+${answer.points})${bonus}`;nextTurn(s);s.deadline=Math.max(s.deadline,now+s.settings.minTurnMs);
  if(s.used.length>=partyPack(s).answers.length){s.phase='burst';s.nextAt=now+2500;s.notice='Every answer found! A new case is coming.';}

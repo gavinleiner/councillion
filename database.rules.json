@@ -1,0 +1,80 @@
+{
+  "rules": {
+    ".read": false,
+    ".write": false,
+    "rooms": {
+      "$code": {
+        ".read": "auth !== null && auth.token.firebase.sign_in_provider === 'google.com' && root.child('rooms').child($code).child('meta/host').val() === auth.uid",
+        ".write": "auth !== null && auth.token.firebase.sign_in_provider === 'google.com' && ((!data.exists() && newData.child('meta/host').val() === auth.uid && newData.child('meta/version').val() === 3) || data.child('meta/host').val() === auth.uid)",
+        "meta": {
+          ".read": "auth !== null && auth.token.firebase.sign_in_provider === 'google.com'",
+          ".validate": "newData.hasChildren(['host','hostName','version','createdAt','isPrivate','seats','phase']) && newData.child('version').val() === 3 && newData.child('seats').isNumber() && newData.child('seats').val() >= 2 && newData.child('seats').val() <= 16 && newData.child('isPrivate').isBoolean() && newData.child('hostName').isString() && newData.child('hostName').val().length <= 16 && newData.child('host').isString() && newData.child('host').val().length <= 128 && newData.child('createdAt').isNumber() && newData.child('createdAt').val() <= now + 5000 && newData.child('phase').val().matches(/^(lobby|countdown|playing|burst|ended)$/)",
+          "host": {
+            ".write": "auth !== null && auth.token.firebase.sign_in_provider === 'google.com' && root.child('rooms').child($code).child('members').child(auth.uid).exists() && !root.child('rooms').child($code).child('bans').child(auth.uid).exists() && newData.val() === auth.uid && root.child('rooms').child($code).child('members').child(data.val()).child('online').val() === false && root.child('rooms').child($code).child('members').child(data.val()).child('lastSeen').val() < now - 30000"
+          }
+        },
+        "members": {
+          ".read": "auth !== null && auth.token.firebase.sign_in_provider === 'google.com' && (root.child('rooms').child($code).child('members').child(auth.uid).exists() && !root.child('rooms').child($code).child('bans').child(auth.uid).exists() || root.child('rooms').child($code).child('meta/host').val() === auth.uid)",
+          "$uid": {
+            ".write": "auth !== null && auth.token.firebase.sign_in_provider === 'google.com' && $uid === auth.uid && root.child('rooms').child($code).child('meta/version').val() === 3 && !root.child('rooms').child($code).child('bans').child(auth.uid).exists()",
+            ".validate": "newData.hasChildren(['name','buddy','joinedAt','online','ready','autoJoin']) && newData.child('name').isString() && newData.child('name').val().length > 0 && newData.child('name').val().length <= 16 && newData.child('buddy').isString() && newData.child('buddy').val().matches(/^(krill|schooler|squid|angler|evil)$/) && newData.child('online').isBoolean() && newData.child('ready').isBoolean() && newData.child('autoJoin').isBoolean() && newData.child('joinedAt').isNumber() && newData.child('joinedAt').val() <= now + 5000 && (!newData.child('lastSeen').exists() || (newData.child('lastSeen').isNumber() && newData.child('lastSeen').val() <= now + 5000)) && (!newData.child('lastChat').exists() || (newData.child('lastChat').isNumber() && newData.child('lastChat').val() <= now + 5000))",
+            "$field": {
+              ".validate": "$field.matches(/^(name|buddy|joinedAt|online|lastSeen|ready|autoJoin|lastChat)$/)"
+            },
+            ".read": "auth !== null && auth.token.firebase.sign_in_provider === 'google.com' && $uid === auth.uid",
+            "lastChat": {
+              ".validate": "newData.isNumber() && newData.val() === now && (!data.exists() || newData.val() >= data.val() + 750)"
+            }
+          }
+        },
+        "state": {
+          ".read": "auth !== null && auth.token.firebase.sign_in_provider === 'google.com' && (root.child('rooms').child($code).child('members').child(auth.uid).exists() && !root.child('rooms').child($code).child('bans').child(auth.uid).exists() || root.child('rooms').child($code).child('meta/host').val() === auth.uid)",
+          ".validate": "newData.hasChildren(['phase','players','settings','round','revision']) && newData.child('phase').val().matches(/^(lobby|countdown|playing|burst|ended)$/) && newData.child('revision').isNumber()"
+        },
+        "requests": {
+          ".read": "auth !== null && auth.token.firebase.sign_in_provider === 'google.com' && root.child('rooms').child($code).child('meta/host').val() === auth.uid",
+          "$uid": {
+            ".read": "auth !== null && auth.token.firebase.sign_in_provider === 'google.com' && $uid === auth.uid",
+            ".write": "auth !== null && auth.token.firebase.sign_in_provider === 'google.com' && $uid === auth.uid && root.child('rooms').child($code).child('members').child(auth.uid).exists() && !root.child('rooms').child($code).child('bans').child(auth.uid).exists()",
+            ".validate": "newData.hasChildren(['id','type','at']) && newData.child('id').isString() && newData.child('id').val().length <= 64 && newData.child('type').isString() && newData.child('type').val().matches(/^(answer|start|rules|ready|autoJoin|visibility|kick|rematch)$/) && (!newData.child('text').exists() || (newData.child('text').isString() && newData.child('text').val().length <= 256)) && newData.child('at').isNumber() && newData.child('at').val() <= now + 5000 && newData.child('at').val() >= now - 15000",
+            "$field": {
+              ".validate": "$field.matches(/^(id|type|at|text|patch|private|target)$/)"
+            }
+          }
+        },
+        "responses": {
+          "$uid": {
+            ".read": "auth !== null && auth.token.firebase.sign_in_provider === 'google.com' && $uid === auth.uid"
+          }
+        },
+        "chat": {
+          ".read": "auth !== null && auth.token.firebase.sign_in_provider === 'google.com' && (root.child('rooms').child($code).child('members').child(auth.uid).exists() && !root.child('rooms').child($code).child('bans').child(auth.uid).exists() || root.child('rooms').child($code).child('meta/host').val() === auth.uid)",
+          ".indexOn": [
+            "at"
+          ],
+          "$message": {
+            ".write": "auth !== null && auth.token.firebase.sign_in_provider === 'google.com' && root.child('rooms').child($code).child('members').child(auth.uid).exists() && !root.child('rooms').child($code).child('bans').child(auth.uid).exists() && newData.child('uid').val() === auth.uid && !data.exists() && ((!root.child('rooms').child($code).child('members').child(auth.uid).child('lastChat').exists()) || now - root.child('rooms').child($code).child('members').child(auth.uid).child('lastChat').val() >= 750) && newData.parent().parent().child('members').child(auth.uid).child('lastChat').val() === now",
+            ".validate": "newData.hasChildren(['uid','name','text','at']) && newData.child('name').isString() && newData.child('name').val().length <= 16 && newData.child('text').isString() && newData.child('text').val().length > 0 && newData.child('text').val().length <= 160 && newData.child('at').isNumber() && newData.child('at').val() <= now + 5000 && newData.child('at').val() >= now - 60000 && ((!newData.child('system').exists() || newData.child('system').val() === false) || root.child('rooms').child($code).child('meta/host').val() === auth.uid) && (newData.child('name').val() === root.child('rooms').child($code).child('members').child(newData.child('uid').val()).child('name').val() || (root.child('rooms').child($code).child('meta/host').val() === auth.uid && newData.child('system').val() === true))",
+            "$field": {
+              ".validate": "$field.matches(/^(uid|name|text|at|system)$/)"
+            }
+          }
+        },
+        "bans": {
+          ".read": "auth !== null && auth.token.firebase.sign_in_provider === 'google.com' && root.child('rooms').child($code).child('meta/host').val() === auth.uid"
+        },
+        ".validate": "$code.matches(/^[A-Z]{4}$/) && newData.hasChildren(['meta','members','state'])"
+      }
+    },
+    "directory": {
+      ".read": "auth !== null && auth.token.firebase.sign_in_provider === 'google.com'",
+      ".indexOn": [
+        "updatedAt"
+      ],
+      "$code": {
+        ".write": "auth !== null && auth.token.firebase.sign_in_provider === 'google.com' && root.child('rooms').child($code).child('meta/host').val() === auth.uid",
+        ".validate": "!newData.exists() || (root.child('rooms').child($code).child('meta/isPrivate').val() === false && newData.hasChildren(['hostName','count','seats','phase','updatedAt']) && newData.child('hostName').isString() && newData.child('hostName').val().length <= 16 && newData.child('count').isNumber() && newData.child('count').val() >= 0 && newData.child('count').val() <= 16 && newData.child('seats').isNumber() && newData.child('seats').val() >= 2 && newData.child('seats').val() <= 16 && newData.child('phase').isString() && newData.child('phase').val().matches(/^(lobby|countdown|playing|burst|ended)$/) && newData.child('updatedAt').isNumber() && newData.child('updatedAt').val() <= now + 5000)"
+      }
+    }
+  }
+}

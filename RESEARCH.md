@@ -87,3 +87,12 @@ Five consecutive correct choices clear an Endless challenge; a mistake resets th
 Google sign-in is now required at the party entry and session method boundaries. The old one-device guest entry is removed. Sign-out/expiry disconnects the local party connection. A new protocol namespace separates the authenticated standard client from old anonymous releases. This remains client-side gating, not server attestation of remote peers.
 
 The requested new live Krillion multiplayer walkthrough is **not completed**: the computer-use service disconnected while navigating to the party route and subsequently reported a closed transport. No claim is made that a room was joined or that public matchmaking, configurable rooms, reconnection, cosmetics, or exact screen parity have been implemented. Those remain work to complete after browser access returns.
+
+
+## Puffer Party inspection, October 22
+
+The live Krillion party site was visited and public rooms were actually joined as Counsel. We observed player-ring pedestals, heart meters, canonical-answer bubbles, a flying central puffer, the category card, floating/total count, a bottom answer dock, chat, and players waiting for the next game. Type-ahead is possible before your turn; Send activates on the player's turn. Eliminated/spectating players have disabled answer controls. An idle player can be removed. No chat was sent to other people. A successfully accepted answer and the complete victory/rematch flow were not observed before browser control disconnected; do not describe this research as a completed played round.
+
+A reference room was also hosted, changed to private, and left. Its lobby exposed starting lives, minimum turn time, seats, heart cap, points per heart, visibility, auto-join, invitation and start controls. Starting requires at least two ready players. The observed default values were 2 lives, an 8-second minimum turn, 6 seats, 5 maximum hearts and 600 points per restored heart. Public client constants corroborated a 10–30 second fuse, 3-second start countdown, 16-seat maximum, 16-character names and 160-character chat. Only behavior and settings inform our implementation; the reference's source and artwork are not included in the delivered game.
+
+The new Councillion courtroom arena and Firebase service are staged locally. See PARTY-BACKEND.md for the exact verified setup and remaining activation/visual checks.
