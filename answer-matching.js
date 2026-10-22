@@ -51,10 +51,11 @@ function wordIndex(bank,pack){
  bank.words=new Map();
  for(const rows of bank.byLength.values())for(const record of rows){record.tokens=tokens(record.label,pack);for(const token of new Set(record.tokens)){if(!bank.words.has(token))bank.words.set(token,[]);bank.words.get(token).push(record);}}
 }
-const generic=new Set(['sword','ring','star','super','world','great','black','white','gold','golden','dark','light','fire','flame','night','legend','final','fantasy','game','movie','series','story']);
 function wordScore(query,target){
  if(Math.abs(query.length-target.length)>2)return 0;
- if(query.length===1){const q=query[0];return q.length>=5&&!generic.has(q)&&target.length<=2&&target.includes(q)?.87:0;}
+ // A single shared noun cannot identify a multiword answer. Short forms that
+ // really mean the same thing belong in the bank's aliases or abbreviations.
+ if(query.length===1)return 0;
  if(target.length<2)return 0;
  const digits=a=>a.filter(t=>/^\d+$/.test(t)).sort().join(',');if(digits(query)!==digits(target))return 0;
  const pairs=[];
@@ -66,7 +67,7 @@ function wordScore(query,target){
  pairs.sort((a,b)=>b.quality-a.quality);const usedQ=new Set(),usedT=new Set();let quality=0;
  for(const p of pairs)if(!usedQ.has(p.i)&&!usedT.has(p.j)){usedQ.add(p.i);usedT.add(p.j);quality+=p.quality;}
  const matches=usedQ.size,missingQ=query.length-matches,missingT=target.length-matches;
- if((matches<2&&!(matches===1&&query.length===2&&target.length===2&&query.some((q,i)=>usedQ.has(i)&&q.length>=5)))||missingQ>1||missingT>2)return 0;
+ if(matches<2||missingQ>0||missingT>2)return 0;
  return .98*quality/matches-.12*missingQ-.11*missingT;
 }
 function grams(value){const g=new Set();for(let i=0;i<value.length-1;i++)g.add(value.slice(i,i+2));return g;}
@@ -84,7 +85,7 @@ export function resolveAnswer(pack,input){
  for(let n=Math.max(4,query.length-span);n<=query.length+span;n++)for(const record of bank.byLength.get(n)??[]){
   const rt=record.tokens??=tokens(record.label,pack),digitTokens=record.digits??=(rt.filter(t=>/^\d+$/.test(t)).sort().join(','));if(qdigits!==digitTokens)continue;
   let shared=0;for(const gram of qgrams)if(record.key.includes(gram))shared++;
-  if(shared<Math.max(1,qgrams.size*.30))continue;
+  if(shared<Math.max(1,Math.floor(qgrams.size*.30)))continue;
   const cost=typoDistance(query,record.key,limit),ws=qt.length>=2&&rt.length>=2&&pack.family!=='words'?wordScore(qt,rt):null;
   const score=(1-cost/(Math.max(n,query.length)*100))*(ws!==null&&ws<.66?.70:1);
   if(cost<=limit&&score>=(query.length<5?.80:query.length<8?.72:.68))add(record.answer,score,cost);

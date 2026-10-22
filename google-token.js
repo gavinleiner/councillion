@@ -1,5 +1,5 @@
-// Identity verification for a browser-local profile. There is no remote save API.
-// Any future backend must independently verify tokens on that backend.
+// Verify the Google sign-in response before exchanging it with Firebase Auth.
+// Firebase independently verifies the credential before granting party access.
 const decode=value=>Uint8Array.from(atob(value.replace(/-/g,'+').replace(/_/g,'/').padEnd(Math.ceil(value.length/4)*4,'=')),c=>c.charCodeAt(0));
 export async function verifyGoogleToken(token,{clientId,nonce,keys,now=Date.now()/1000,cryptoApi=globalThis.crypto}){
  const parts=String(token).split('.');if(parts.length!==3)throw Error('Invalid Google response.');

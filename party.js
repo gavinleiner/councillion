@@ -6,7 +6,8 @@ import {PACKS,canonicalQuestionId} from './data.js';
 import {catalogBuild} from './question-bank-loader.js';
 import {loadQuestionData,questionDataReady} from './question-data.js';
 import {warmAnswerBank} from './answer-matching.js';
-const cleanName=name=>String(name??'').replace(/[\u0000-\u001f]/g,'').trim().slice(0,16)||'Counsel';
+import {validateDisplayName,safeDisplayName,validateChat} from './moderation.js';
+const cleanName=validateDisplayName;
 const loadCloud=()=>import('./cloud.bundle.js');
 const json=value=>JSON.parse(JSON.stringify(value));
 const friendly=e=>e?.code==='PERMISSION_DENIED'||e?.code==='database/permission-denied'?'This room is unavailable, full, or your Google session needs refreshing.':e?.message||'Connection interrupted. Try again.';
@@ -27,9 +28,9 @@ export class PartySession{
   await this.c.set(this.path('members/'+this.myId),{name:this.name,buddy:this.buddy,joinedAt:Date.now(),lastSeen:Date.now(),online:true,ready:meta.phase==='lobby',autoJoin:false});await this.listen();await this.reportHistory();
  }
  async listen(){const c=this.c;this.unsub.push(c.onValue(c.ref(c.db,'.info/serverTimeOffset'),snap=>this.offset=snap.val()??0));
-  this.unsub.push(c.onValue(this.path('meta'),snap=>{if(!snap.exists())return this.fail('The host closed this room.');const wasHost=this.host;this.meta=snap.val();this.host=this.meta.host===this.myId;if(this.host&&!wasHost)this.becomeHost();this.snapshot();},e=>this.fail(friendly(e))));
-  this.unsub.push(c.onValue(this.path('state'),snap=>{if(snap.exists()){const s=snap.val();s.players=Object.values(s.players??{});s.used=Object.values(s.used??{});s.log=Object.values(s.log??{});s.packIds=Object.values(s.packIds??{});s.seenIds=Object.values(s.seenIds??{});s.skipVotes=Object.values(s.skipVotes??{});if(s.packIds.some(id=>!PACKS.some(p=>p.id===id)))return this.fail('This room uses newer questions. Refresh Councillion to play.');this.state=s;this.prefetchQuestions();this.snapshot();}},e=>this.fail(friendly(e))));
-  this.unsub.push(c.onValue(this.path('members'),snap=>{const previous=this.members;this.members=snap.val()??{};if(this.host){for(const [id,m] of Object.entries(this.members))if(!previous[id])this.system(m.name+' entered the courtroom.');}if(this.host)this.enforceSeats();if(!this.members[this.myId])return this.fail('You left the room.');if(this.host&&this.state&&syncRoster(this.state,this.members,this.now()))this.broadcast();this.snapshot();},e=>this.fail(friendly(e))));
+  this.unsub.push(c.onValue(this.path('meta'),snap=>{if(!snap.exists())return this.fail('The host closed this room.');const wasHost=this.host;this.meta=snap.val();this.meta.hostName=safeDisplayName(this.meta.hostName);this.host=this.meta.host===this.myId;if(this.host&&!wasHost)this.becomeHost();this.snapshot();},e=>this.fail(friendly(e))));
+  this.unsub.push(c.onValue(this.path('state'),snap=>{if(snap.exists()){const s=snap.val();s.players=Object.values(s.players??{}).map(p=>({...p,name:safeDisplayName(p.name)}));s.used=Object.values(s.used??{});s.log=Object.values(s.log??{});s.packIds=Object.values(s.packIds??{});s.seenIds=Object.values(s.seenIds??{});s.skipVotes=Object.values(s.skipVotes??{});if(s.packIds.some(id=>!PACKS.some(p=>p.id===id)))return this.fail('This room uses newer questions. Refresh Councillion to play.');this.state=s;this.prefetchQuestions();this.snapshot();}},e=>this.fail(friendly(e))));
+  this.unsub.push(c.onValue(this.path('members'),snap=>{const previous=this.members;this.members=Object.fromEntries(Object.entries(snap.val()??{}).map(([id,m])=>[id,{...m,name:safeDisplayName(m.name)}]));if(this.host){for(const [id,m] of Object.entries(this.members))if(!previous[id])this.system(m.name+' entered the courtroom.');}if(this.host)this.enforceSeats();if(!this.members[this.myId])return this.fail('You left the room.');if(this.host&&this.state&&syncRoster(this.state,this.members,this.now()))this.broadcast();this.snapshot();},e=>this.fail(friendly(e))));
   this.unsub.push(c.onValue(c.query(this.path('chat'),c.limitToLast(60)),snap=>{this.chat=Object.values(snap.val()??{}).sort((a,b)=>a.at-b.at);this.snapshot();}));
   this.unsub.push(c.onValue(this.path('responses/'+this.myId),snap=>{const r=snap.val();if(!r||this.lastResponse===r.requestId)return;this.lastResponse=r.requestId;if(r.error)this.fail(r.error);else if(r.answer){this.lastAccepted=r.answer;this.snapshot();}}));
   this.unsub.push(c.onValue(c.ref(c.db,'.info/connected'),async snap=>{this.connected=!!snap.val();if(this.connected&&!this.closed){await c.onDisconnect(this.path('members/'+this.myId)).update({online:false,lastSeen:c.serverTimestamp()});await c.update(this.path('members/'+this.myId),{online:true,lastSeen:c.serverTimestamp()});}this.snapshot();}));
@@ -58,7 +59,7 @@ export class PartySession{
  async autoJoin(value){try{await this.c.update(this.path('members/'+this.myId),{autoJoin:!!value});}catch(e){this.fail(friendly(e));}}
  kick(id){this.request('kick',{target:id});}
  async system(text){if(!this.host||this.closed)return;try{await this.c.set(this.c.push(this.path('chat')),{uid:this.myId,name:'THE COURT',system:true,text:String(text).slice(0,160),at:this.c.serverTimestamp()});}catch{}}
- async sendChat(text){text=String(text).trim().slice(0,160);if(!text)return;try{const m=this.members[this.myId];await this.c.update(this.path(),{['chat/'+this.c.push(this.path('chat')).key]:{uid:this.myId,name:m.name,text,at:this.c.serverTimestamp()},['members/'+this.myId+'/lastChat']:this.c.serverTimestamp()});}catch(e){this.fail('Chat is unavailable. Wait a moment and try again.');}}
+ async sendChat(text){try{text=validateChat(text);if(!text)return;const m=this.members[this.myId];await this.c.update(this.path(),{['chat/'+this.c.push(this.path('chat')).key]:{uid:this.myId,name:m.name,text,at:this.c.serverTimestamp()},['members/'+this.myId+'/lastChat']:this.c.serverTimestamp()});}catch(e){this.fail(e.message?.includes('slurs')?e.message:'Chat is unavailable. Wait a moment and try again.');}}
  prefetchQuestions(){
   if(!this.state||['lobby','ended'].includes(this.state.phase))return;
   const current=partyPack(this.state),next=PACKS.find(p=>p.id===this.state.packIds[Math.max(this.state.round,1)]);

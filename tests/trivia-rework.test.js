@@ -23,9 +23,10 @@ test('latest Minecraft labels and potion variants survive the bank merge',async(
  for(const row of names)assert.ok(matchAnswer(pack('fun-minecraft'),row.displayName),row.displayName);
  for(const q of ['Blue Axolotl','Charged Creeper','Sulfur Cube','Potion of Healing','Notch Apple'])assert.ok(matchAnswer(pack('fun-minecraft'),q),q);
 });
-test('multiple typos, a wrong word, missing words and reordered words are accepted automatically',()=>{
- for(const q of ['dimon sord','dimom swrd','dimond swrod','diamond knife'])assert.equal(matchAnswer(pack('fun-minecraft'),q)?.label,'Diamond Sword',q);
- for(const q of ['night flame','flame night sword','sword night fire'])assert.match(matchAnswer(pack('fun-elden-ring'),q)?.label??'',/Sword Of Night And Flame/i,q);
+test('multiple typos, known aliases, omissions and reordered words resolve without substituting unrelated words',()=>{
+ for(const q of ['dimon sord','dimom swrd','dimond swrod'])assert.equal(matchAnswer(pack('fun-minecraft'),q)?.label,'Diamond Sword',q);
+ for(const q of ['night flame','flame night sword'])assert.match(matchAnswer(pack('fun-elden-ring'),q)?.label??'',/Sword Of Night And Flame/i,q);
+ assert.equal(matchAnswer(pack('fun-elden-ring'),'sword night pizza'),null,'a different word is not a spelling correction');
  assert.match(matchAnswer(pack('fun-game-bosses'),'melenia blade miquela')?.label??'',/Malenia/i);
  assert.equal(matchAnswer(pack('fun-movies'),'sorcerer stone')?.label,"Harry Potter and the Sorcerer's Stone");
  assert.equal(matchAnswer(pack('fun-minecraft'),'qzxvjkppqq9'),null);
