@@ -4,8 +4,8 @@ export function deadlineAnswer(pack,text){const result=resolveAnswer(pack,text);
 // Only a submit proposes a replacement. Another submit confirms it. Editing,
 // changing turns/categories and leaving the form invalidate the proposal.
 export class AnswerConfirmation{
- constructor({form,input,button,container,pack,onSubmit,beforeSubmit=()=>{},active=()=>true,context=()=>''}){
-  Object.assign(this,{form,input,button,container,pack,onSubmit,beforeSubmit,active,context,originalLabel:button.textContent});
+ constructor({form,input,button,container,pack,onSubmit,onProposal=()=>{},beforeSubmit=()=>{},active=()=>true,context=()=>''}){
+  Object.assign(this,{form,input,button,container,pack,onSubmit,onProposal,beforeSubmit,active,context,originalLabel:button.textContent});
   this.inputListener=()=>this.clear();
   this.submitListener=e=>{e.preventDefault();this.beforeSubmit();this.submit();};
   input.addEventListener('input',this.inputListener);form.addEventListener('submit',this.submitListener);
@@ -15,7 +15,7 @@ export class AnswerConfirmation{
   this.pending={answer,input:this.input.value,context:this.context()};this.container.hidden=false;
   this.container.innerHTML='<p></p><small>Submit again to confirm · or edit</small>';
   this.container.querySelector('p').textContent='Did you mean “'+answer.label+'”?';
-  this.input.value=answer.label;this.input.setAttribute('aria-describedby',this.container.id);this.input.focus();
+  this.input.value=answer.label;this.onProposal(answer.label);this.input.setAttribute('aria-describedby',this.container.id);this.input.focus();
  }
  confirm(){const p=this.pending;if(!p||!this.active()||p.context!==this.context()||p.answer.label!==this.input.value){this.clear();return;}this.clear();this.onSubmit(p.answer.label,{from:p.input,corrected:true});}
  submit(){
