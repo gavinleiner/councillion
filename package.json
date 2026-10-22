@@ -8,7 +8,7 @@
     "test": "node --import ./tests/question-data.mjs --test tests/*.test.js",
     "build": "node build.mjs",
     "watch": "node build.mjs --watch",
-    "test:security": "firebase emulators:exec --only database --project demo-councillion \"node tests/database-security.mjs && node tests/party-network.mjs\""
+    "test:security": "firebase emulators:exec --only database --project demo-councillion \"node tests/database-security.mjs && node --import ./tests/question-data.mjs tests/party-network.mjs\""
   },
   "devDependencies": {
     "@firebase/rules-unit-testing": "^5.0.2",

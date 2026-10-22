@@ -1,0 +1,357 @@
+{
+  "retrieved": "2026-10-22",
+  "note": "Factual names/aliases and classification only. No artwork, biographies or descriptions. A full recorded inventory is retained; rendering and scoring are separate.",
+  "sources": {
+    "minecraft-items": {
+      "source": "https://github.com/PrismarineJS/minecraft-data/tree/master/data/pc/26.1",
+      "rows": 1506,
+      "sha256": "e6db7bc2936d55c73f4d44ee0fe656712b81e2b0926c4527004773086e791b04",
+      "file": "minecraft-items.json"
+    },
+    "minecraft-blocks": {
+      "source": "https://github.com/PrismarineJS/minecraft-data/tree/master/data/pc/26.1",
+      "rows": 1168,
+      "sha256": "a0563d5f364df4b8567a82eae3ce456608bb58a583326dbdd196d3189f8d9817",
+      "file": "minecraft-blocks.json"
+    },
+    "minecraft-entities": {
+      "source": "https://github.com/PrismarineJS/minecraft-data/tree/master/data/pc/26.1",
+      "rows": 157,
+      "sha256": "4824c73a59691bcd9dc6953c13652a0dfa2dfe007a2c9318b924e28074bec51e",
+      "file": "minecraft-entities.json"
+    },
+    "minecraft-biomes": {
+      "source": "https://github.com/PrismarineJS/minecraft-data/tree/master/data/pc/26.1",
+      "rows": 65,
+      "sha256": "366722bf56f0f209f1497a71fd7d110b2ecd2ff3f184f31736d2737d61a14bd2",
+      "file": "minecraft-biomes.json"
+    },
+    "minecraft-enchantments": {
+      "source": "https://github.com/PrismarineJS/minecraft-data/tree/master/data/pc/26.1",
+      "rows": 43,
+      "sha256": "7a8f3d44b04997a064024e8e985fc5868856078ea7c307da9dbf7d0209dbe16d",
+      "file": "minecraft-enchantments.json"
+    },
+    "minecraft-foods": {
+      "source": "https://github.com/PrismarineJS/minecraft-data/tree/master/data/pc/26.1",
+      "rows": 44,
+      "sha256": "71caa883b5f049eb6bfd2771ec9fd592b6173b7291a53844b647b6fe7fe41d30",
+      "file": "minecraft-foods.json"
+    },
+    "fortnite": {
+      "source": "https://fortnite-api.com/v2/cosmetics/br",
+      "rows": 16607,
+      "sha256": "da74acdd887d683c8cbb0a8e222793971eadaec4244c78c032cde6544303e613",
+      "file": "fortnite.json"
+    },
+    "elden-bosses": {
+      "source": "https://github.com/deliton/eldenring-api + https://github.com/hakkache/Elden-Ring-Dataset-API (base game and Shadow of the Erdtree names)",
+      "rows": 191,
+      "sha256": "26d609a12ef73c7e589ab2476a17d636f948816f99bbecf8591ba272171530b6",
+      "file": "elden-bosses.json"
+    },
+    "elden-weapons": {
+      "source": "https://github.com/deliton/eldenring-api + https://github.com/hakkache/Elden-Ring-Dataset-API (base game and Shadow of the Erdtree names)",
+      "rows": 431,
+      "sha256": "325ed4654499e4ce4b18b6b2764e4b4a26a70e9f6c01e869f463a16373681015",
+      "file": "elden-weapons.json"
+    },
+    "elden-armors": {
+      "source": "https://github.com/deliton/eldenring-api + https://github.com/hakkache/Elden-Ring-Dataset-API (base game and Shadow of the Erdtree names)",
+      "rows": 834,
+      "sha256": "b7323510043826fe4a6a8a99b096dc40165bbe4e2a5a7d8c4b40db36e1b04095",
+      "file": "elden-armors.json"
+    },
+    "elden-incantations": {
+      "source": "https://github.com/deliton/eldenring-api + https://github.com/hakkache/Elden-Ring-Dataset-API (base game and Shadow of the Erdtree names)",
+      "rows": 152,
+      "sha256": "6e3f3a4325e62f6093d515adbe1157fb602f9b11b1ef5e0ac749e2e76d438c6d",
+      "file": "elden-incantations.json"
+    },
+    "elden-sorceries": {
+      "source": "https://github.com/deliton/eldenring-api + https://github.com/hakkache/Elden-Ring-Dataset-API (base game and Shadow of the Erdtree names)",
+      "rows": 93,
+      "sha256": "82046ff00b1b2e099991381c0d3204f08e63922e02bc6aadd2efe9f3ba6236e8",
+      "file": "elden-sorceries.json"
+    },
+    "elden-talismans": {
+      "source": "https://github.com/deliton/eldenring-api + https://github.com/hakkache/Elden-Ring-Dataset-API (base game and Shadow of the Erdtree names)",
+      "rows": 169,
+      "sha256": "4bdfdd1c9afe76eacfd3bcd998e52c7232caba9d3d669b6038921109b37bf598",
+      "file": "elden-talismans.json"
+    },
+    "elden-spirits": {
+      "source": "https://github.com/deliton/eldenring-api + https://github.com/hakkache/Elden-Ring-Dataset-API (base game and Shadow of the Erdtree names)",
+      "rows": 94,
+      "sha256": "0a48bfcfbdd1680835aec6470aae5fc151eab44c6f52cc0f84cc15d92c6232ab",
+      "file": "elden-spirits.json"
+    },
+    "elden-ashes": {
+      "source": "https://github.com/deliton/eldenring-api + https://github.com/hakkache/Elden-Ring-Dataset-API (base game and Shadow of the Erdtree names)",
+      "rows": 207,
+      "sha256": "150ab5bb24d0eac45c3046ec8f30582e4a46991d9ae8d74bbdbc531d88baf09f",
+      "file": "elden-ashes.json"
+    },
+    "elden-npcs": {
+      "source": "https://github.com/deliton/eldenring-api + https://github.com/hakkache/Elden-Ring-Dataset-API (base game and Shadow of the Erdtree names)",
+      "rows": 125,
+      "sha256": "1f1ec545b3e38e4e56cfa83c69c4dfabd0e3c2b16350ec7eee7c6eb7290e8018",
+      "file": "elden-npcs.json"
+    },
+    "elden-items": {
+      "source": "https://github.com/deliton/eldenring-api + https://github.com/hakkache/Elden-Ring-Dataset-API (base game and Shadow of the Erdtree names)",
+      "rows": 679,
+      "sha256": "e350161b18340b9fff17a88abebe56b265054a8885a4a00d7e037146f64b9367",
+      "file": "elden-items.json"
+    },
+    "elden-locations": {
+      "source": "https://github.com/deliton/eldenring-api + https://github.com/hakkache/Elden-Ring-Dataset-API (base game and Shadow of the Erdtree names)",
+      "rows": 329,
+      "sha256": "c5d1012f4481bcd1d11e345528858f744ee52460658977c67efcd0c818acae95",
+      "file": "elden-locations.json"
+    },
+    "elden-shields": {
+      "source": "https://github.com/deliton/eldenring-api + https://github.com/hakkache/Elden-Ring-Dataset-API (base game and Shadow of the Erdtree names)",
+      "rows": 86,
+      "sha256": "9bca107193c2091a48c7eb4e480b3bbae95bbc702c60bb62fa71bef7f34a98cd",
+      "file": "elden-shields.json"
+    },
+    "elden-creatures": {
+      "source": "https://github.com/deliton/eldenring-api + https://github.com/hakkache/Elden-Ring-Dataset-API (base game and Shadow of the Erdtree names)",
+      "rows": 247,
+      "sha256": "89ce641311688e66c0e058a26fe38929ac8cabef16cf3b441c364c47d3d39b59",
+      "file": "elden-creatures.json"
+    },
+    "stardew-objects": {
+      "source": "https://github.com/MateusAquino/stardewids/tree/main/dist",
+      "rows": 807,
+      "sha256": "96e6bb719aa8a0984079e55344926028f8735142848a1d111498665837a41b24",
+      "file": "stardew-objects.json"
+    },
+    "stardew-big-craftables": {
+      "source": "https://github.com/MateusAquino/stardewids/tree/main/dist",
+      "rows": 182,
+      "sha256": "8b7a18c1e42a5a2ad747230dd1a3a9f3a76d4e7594edb9711d52ce229f99419a",
+      "file": "stardew-big-craftables.json"
+    },
+    "stardew-boots": {
+      "source": "https://github.com/MateusAquino/stardewids/tree/main/dist",
+      "rows": 18,
+      "sha256": "5b37f7c46fea9083e205c7e2049fef1347127b13eb7f17941b956932bf383e22",
+      "file": "stardew-boots.json"
+    },
+    "stardew-furniture": {
+      "source": "https://github.com/MateusAquino/stardewids/tree/main/dist",
+      "rows": 645,
+      "sha256": "01f6007a75738c5cc1eab25b3c8096b5845c5baf1993d38d47d347ad05951e67",
+      "file": "stardew-furniture.json"
+    },
+    "stardew-hats": {
+      "source": "https://github.com/MateusAquino/stardewids/tree/main/dist",
+      "rows": 122,
+      "sha256": "54acca7dfecaf3ab5d84838a6b769d238681a3b7180c55a622fa1d8f2f9824fb",
+      "file": "stardew-hats.json"
+    },
+    "stardew-pants": {
+      "source": "https://github.com/MateusAquino/stardewids/tree/main/dist",
+      "rows": 18,
+      "sha256": "da65e65c8b52455bdfd9936b764bef8c57dbdfe5d890e841ef3472850b40fc1c",
+      "file": "stardew-pants.json"
+    },
+    "stardew-shirts": {
+      "source": "https://github.com/MateusAquino/stardewids/tree/main/dist",
+      "rows": 303,
+      "sha256": "4d3e5f9fbe97a8f5e7464510f8169fa0cc10fa4b7faf1bd8c08798ef40d2ba36",
+      "file": "stardew-shirts.json"
+    },
+    "stardew-tools": {
+      "source": "https://github.com/MateusAquino/stardewids/tree/main/dist",
+      "rows": 37,
+      "sha256": "3fb2c0ae089ed8e79c258f9e4bb5187d232ff9914f85f7585a9ee77f81afd8a4",
+      "file": "stardew-tools.json"
+    },
+    "stardew-trinkets": {
+      "source": "https://github.com/MateusAquino/stardewids/tree/main/dist",
+      "rows": 8,
+      "sha256": "990dfcdb6e54b381f3f3be2bba85b50ccd049ae6c4ac4bfdf7615c9f95baf95d",
+      "file": "stardew-trinkets.json"
+    },
+    "stardew-weapons": {
+      "source": "https://github.com/MateusAquino/stardewids/tree/main/dist",
+      "rows": 67,
+      "sha256": "a72fd2722958eca5c66f9f9e7a1c33686a23cb246bc16839ee24189f56ed49db",
+      "file": "stardew-weapons.json"
+    },
+    "terraria-items": {
+      "source": "https://github.com/cr0wst/terraria-info/blob/master/json/items.json (historical item inventory)",
+      "rows": 3912,
+      "sha256": "ba7cda80714b25351ecd94c673a0adc6fd4833b6c249dd26b5108544e7e13e10",
+      "file": "terraria-items.json"
+    },
+    "game-titles": {
+      "source": "https://github.com/LizardByte/GameDB/tree/gh-pages/buckets (all 1000 name-index buckets; root observed 66e97f0e2b7d0a47ecdcafd4b18d894781f2145a)",
+      "rows": 383468,
+      "sha256": "d9f074a7e6906e3e9a07a1ef783ce2720e27073bf0588ae21f802fc219af06ab",
+      "uncompressedSha256": "70730f33d7557bcaec15d4fb162df77e6111869a38b96eb0b91d48a2742fe694",
+      "file": "game-titles.json.gz"
+    },
+    "game-characters": {
+      "source": "https://github.com/LizardByte/GameDB/blob/gh-pages/characters/all.json",
+      "rows": 16503,
+      "sha256": "7bc66e976ba171ecd48917ff64074a2450926e411c154d608843a40e3733832f",
+      "file": "game-characters.json"
+    },
+    "game-franchises": {
+      "source": "https://github.com/LizardByte/GameDB/blob/gh-pages/franchises/all.json",
+      "rows": 2788,
+      "sha256": "9148fb7df2f5d98604cbb3ba97245f6e4891cbeab482ec016c7d41668f53c98f",
+      "file": "game-franchises.json"
+    },
+    "movies": {
+      "source": "https://github.com/servant-42/wikipedia-movie-data (American films through 2023; names/years/genre/cast facts only)",
+      "rows": 36273,
+      "sha256": "ba58c990ddfb474ae946cc10ac838ee52e4ad4611ee233536b3f44db920c074e",
+      "uncompressedSha256": "a5170a2406da0fd385cb14d37029689043ef38541ab3f093f3d32564abd08a87",
+      "file": "movies.json.gz"
+    },
+    "recent-films": {
+      "source": "Wikidata CC0; 2024\u20132026 film-name query recorded in recent-film-query.txt",
+      "rows": 8116,
+      "sha256": "41dd1255461cd9b2ef842268274d8e208e945f19a6332a1b686579cf523a3890",
+      "file": "recent-films.json"
+    },
+    "tv-series": {
+      "source": "https://files.tmdb.org/p/exports/tv_series_ids_10_22_2026.json.gz (original-language names; localised names are not supplied)",
+      "rows": 234803,
+      "sha256": "2b94832bb729b301f9f8950434f5ac289b3ce2de76b50c452ca69f6b35921586",
+      "uncompressedSha256": "6f4e74dee05f31e80221b3198c23692edc17ecb4ee45bb39bd5999053f9904e3",
+      "file": "tv-series.json.gz"
+    },
+    "tvmaze-supplement": {
+      "source": "https://api.tvmaze.com/shows (first index page supplement; not a complete TVmaze inventory)",
+      "rows": 240,
+      "sha256": "245c51bd14434eb2069872762fc28795c7f15a7964cb5c56dd00f8dba265deb7",
+      "file": "tvmaze-supplement.json"
+    },
+    "heroes": {
+      "source": "https://github.com/akabab/superhero-api (factual character identities only)",
+      "rows": 563,
+      "sha256": "fd3afd7b890fea2626420b05dbe3a1654178d3d8bdb50f40a6745a7ad9301c6b",
+      "file": "heroes.json"
+    },
+    "dota-heroes": {
+      "source": "https://github.com/odota/dotaconstants",
+      "rows": 127,
+      "sha256": "af960a3a6db56a875525f33e1aea5332285e82c99798e3685a62d7a43c4de3ab",
+      "file": "dota-heroes.json"
+    },
+    "dota-items": {
+      "source": "https://github.com/odota/dotaconstants",
+      "rows": 491,
+      "sha256": "2fd7e1a7033dffaa355bf91fd841efcf9685436330afd5b2d39d6f6c0b6339f9",
+      "file": "dota-items.json"
+    },
+    "valorant-agents": {
+      "source": "https://valorant-api.com/v1/agents?isPlayableCharacter=true",
+      "rows": 29,
+      "sha256": "75c25aea13000eb2947fef6b5c09146d47e342652feddd5da6ad30db15798830",
+      "file": "valorant-agents.json"
+    },
+    "valorant-weapons": {
+      "source": "https://valorant-api.com/v1/weapons",
+      "rows": 21,
+      "sha256": "0a6d2bee4a33784d268466d0ef8d5ba897663cf20bc66e7eda9de9ef3b16c054",
+      "file": "valorant-weapons.json"
+    },
+    "lol-champions": {
+      "source": "https://ddragon.leagueoflegends.com/api/versions.json + current English champion data",
+      "rows": 173,
+      "sha256": "34953834ed27bee2f0bd6c2899c52f30566bca472b39cb174a8515b0bd552a80",
+      "file": "lol-champions.json"
+    },
+    "corpora-animals-common": {
+      "source": "https://github.com/dariusk/corpora/blob/master/data/animals/common.json (CC0)",
+      "sha256": "648138ec7ff8c6e193ed539f554ad740e781435ff81e01a1b0363d7797561bbd",
+      "containerKeys": 2,
+      "file": "corpora-animals-common.json"
+    },
+    "corpora-humans-bodyParts": {
+      "source": "https://github.com/dariusk/corpora/blob/master/data/humans/bodyParts.json (CC0)",
+      "sha256": "1ff34c85b2f11f8004cbdf945bc532e148df518be80bd1c0a202d54d4166bc50",
+      "containerKeys": 2,
+      "file": "corpora-humans-bodyParts.json"
+    },
+    "corpora-sports-sports": {
+      "source": "https://github.com/dariusk/corpora/blob/master/data/sports/sports.json (CC0)",
+      "sha256": "02879668fbc017d85cdda80855ecb23572fbe5a4b4cde6db3d45a94a3a148edb",
+      "containerKeys": 3,
+      "file": "corpora-sports-sports.json"
+    },
+    "corpora-sports-nfl_teams": {
+      "source": "https://github.com/dariusk/corpora/blob/master/data/sports/nfl_teams.json (CC0)",
+      "sha256": "4f60e49431b62916387f62b1411e889cf5d775bf02760d01eb75cb13f781c0e0",
+      "containerKeys": 2,
+      "file": "corpora-sports-nfl_teams.json"
+    },
+    "corpora-sports-nba_teams": {
+      "source": "https://github.com/dariusk/corpora/blob/master/data/sports/nba_teams.json (CC0)",
+      "sha256": "f1817fe80479e8df59a07e7ec4166fb0ab7cb383535f1357774f054d6df4be3f",
+      "containerKeys": 2,
+      "file": "corpora-sports-nba_teams.json"
+    },
+    "corpora-sports-mlb_teams": {
+      "source": "https://github.com/dariusk/corpora/blob/master/data/sports/mlb_teams.json (CC0)",
+      "sha256": "927ee80eea83366600f8749bea2ac74e68b45ec0f6434f8a888bfdde7369b5df",
+      "containerKeys": 2,
+      "file": "corpora-sports-mlb_teams.json"
+    },
+    "corpora-sports-nhl_teams": {
+      "source": "https://github.com/dariusk/corpora/blob/master/data/sports/nhl_teams.json (CC0)",
+      "sha256": "6dc049aafb1d6d1044fdc9f769f8c0f6b0b5bb86cf8e6a40c77687ca9ffd333e",
+      "containerKeys": 2,
+      "file": "corpora-sports-nhl_teams.json"
+    },
+    "corpora-science-planets": {
+      "source": "https://github.com/dariusk/corpora/blob/master/data/science/planets.json (CC0)",
+      "sha256": "0bfc5f12ebcad6fe825051f0d156068760c96760f7e30f7aaec883c3267172ed",
+      "containerKeys": 2,
+      "file": "corpora-science-planets.json"
+    },
+    "languages": {
+      "source": "https://github.com/pycountry/pycountry/blob/main/src/pycountry/databases/iso639-3.json (ISO language names, not identifiers)",
+      "rows": 7923,
+      "sha256": "230cd7a2ac6cd4dc8b844c51051c8b432297ab7251b14b0f9a8d2b06d9251735",
+      "file": "languages.json"
+    },
+    "countries": {
+      "source": "https://github.com/pycountry/pycountry/blob/main/src/pycountry/databases/iso3166-1.json",
+      "rows": 249,
+      "sha256": "921f609689a80842f5c32458084b3e8d84e9baddc8b5a9d16159c5299eaa3539",
+      "file": "countries.json"
+    },
+    "cities": {
+      "source": "https://download.geonames.org/export/dump/cities1000.zip (CC BY 4.0 GeoNames; populated places excluding PPLX subdivisions)",
+      "rows": 161991,
+      "sha256": "7af0f624b109a3f6e406cbcdfa182577e4c21f1bf37e91bb06df368b3531331b",
+      "uncompressedSha256": "e580f6f8723485261b5e19adbd938d98ec06dbbd4e6bbec3c6ace238f5f1a487",
+      "file": "cities.json.gz"
+    },
+    "minecraft-official": {
+      "source": "https://piston-meta.mojang.com/v1/packages/61fff1316bd50312624a858bbb5eb18fa45208ed/26.3.json",
+      "gameVersion": "26.3",
+      "clientSource": "https://piston-data.mojang.com/v1/objects/e877b6a07acd633fb3bb475002175cec036e7b87/client.jar",
+      "verifiedClientSha1": "e877b6a07acd633fb3bb475002175cec036e7b87",
+      "note": "Only factual English block/item/entity/biome/enchantment and potion/arrow display names retained from assets/minecraft/lang/en_us.json. No game code, textures or descriptions.",
+      "file": "minecraft-official.json",
+      "rows": 2230,
+      "sha256": "003d80fc81358ba94b3c8982f63cddb40f37dcaa342111fe39b7501c4c126b03"
+    },
+    "world-birds": {
+      "source": "https://api.ebird.org/v2/ref/taxonomy/ebird?fmt=json",
+      "citation": "eBird/Clements taxonomy, Cornell Lab of Ornithology; current public taxonomy response, species only. English common and scientific names only.",
+      "file": "world-birds.json",
+      "rows": 11167,
+      "sha256": "006d75657b48175ff408cd379008b23f1dd34b91311f75e520ccbac76abff390"
+    }
+  }
+}

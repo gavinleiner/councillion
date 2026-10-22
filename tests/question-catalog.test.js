@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
 import {spawnSync} from 'node:child_process';
-import {PLAY_PACKS,ORIGINAL_PLAY_PACKS,answerCount} from '../data.js';
+import {PLAY_PACKS,ORIGINAL_PLAY_PACKS,MIXED_PACKS,answerCount} from '../data.js';
 import {CATALOG_PACKS} from '../question-catalog.js';
 import {dailyPacks,matchAnswer,normalize,partyDeck,random,EXPANDED_DAILY_START} from '../engine.js';
 const pack=id=>PLAY_PACKS.find(p=>p.id===id);
@@ -18,7 +18,7 @@ test('the expanded pool has hundreds of substantial, distinct categories without
 test('a cold party deck and question library use metadata without hydrating the answer table',()=>{
  const source="import {partyDeck} from './engine.js';import{catalogAnswersReady}from'./question-bank-loader.js';import{PLAY_PACKS,answerCount}from'./data.js';console.log(JSON.stringify([catalogAnswersReady(),partyDeck().length,PLAY_PACKS.map(answerCount).length,catalogAnswersReady()]));";
  const r=spawnSync(process.execPath,['--input-type=module','-e',source],{cwd:new URL('..',import.meta.url),encoding:'utf8',env:{...process.env,NODE_OPTIONS:''}});
- assert.equal(r.status,0,r.stderr);assert.deepEqual(JSON.parse(r.stdout),[false,PLAY_PACKS.length,PLAY_PACKS.length,false]);
+ assert.equal(r.status,0,r.stderr);assert.deepEqual(JSON.parse(r.stdout),[false,MIXED_PACKS.length,PLAY_PACKS.length,false]);
 });
 test('daily expansion keeps historical draws stable and reaches every new category',()=>{
  assert.equal(EXPANDED_DAILY_START,'2026-10-23');
@@ -29,11 +29,11 @@ test('daily expansion keeps historical draws stable and reaches every new catego
   assert.equal(chosen.length,7);assert.equal(new Set(chosen.map(p=>p.family)).size,7);
   assert.ok(chosen.every(p=>!previous.includes(p.id)),day);chosen.forEach(p=>seen.add(p.id));previous=chosen.map(p=>p.id);
  }
- assert.equal(seen.size,PLAY_PACKS.length);
+ assert.equal(seen.size,MIXED_PACKS.length);
 });
 test('party decks cover the pool once and avoid consecutive copies of a narrow subject',()=>{
  for(let seed=0;seed<50;seed++){
-  const deck=partyDeck(random(seed));assert.equal(deck.length,PLAY_PACKS.length);assert.equal(new Set(deck).size,deck.length);
+  const deck=partyDeck(random(seed));assert.equal(deck.length,MIXED_PACKS.length);assert.equal(new Set(deck).size,deck.length);
   for(let i=1;i<deck.length;i++)assert.notEqual(pack(deck[i]).group??deck[i],pack(deck[i-1]).group??deck[i-1],seed+': '+i);
  }
 });
