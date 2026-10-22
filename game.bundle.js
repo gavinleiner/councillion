@@ -1,4 +1,1067 @@
 (() => {
+  // case-questions.js
+  var slugs = ["miranda-v-arizona", "tarasoff-v-regents-of-the-university-of-california", "case-v-montana", "hamm-v-smith", "pennsylvania-v-mimms", "bush-v-gore", "rodriguez-vazquez-v-bostock", "brady-v-maryland", "mahanoy-area-school-district-v-b.l.", "walker-v-uber-technologies", "robinson-v-commonwealth", "colorado-v-connelly", "kyllo-v-united-states", "nolen-v-peopleconnect-inc", "talbot-v-ainuu", "jdb-v-north-carolina"];
+  var names = ["Miranda v. Arizona", "Tarasoff v. Regents", "Case v. Montana", "Hamm v. Smith", "Pennsylvania v. Mimms", "Bush v. Gore", "Rodriguez Vazquez v. Bostock", "Brady v. Maryland", "Mahanoy v. B. L.", "Walker v. Uber", "Robinson v. Commonwealth", "Colorado v. Connelly", "Kyllo v. United States", "Nolen v. PeopleConnect", "Talbot v. Ainuu", "J.D.B. v. North Carolina"];
+  var CASE_SOURCES = slugs.map((slug, i) => ({ name: names[i], url: "https://futurecounsel.org/case/" + slug }));
+  var questions = [];
+  function q(caseIndex, prompt, answer, distractors, explanation, category = "CASE FILE") {
+    questions.push({ id: "fc-" + (caseIndex + 1) + "-" + questions.filter((q2) => q2.caseIndex === caseIndex).length, caseIndex, prompt, answer, distractors, explanation, category, source: CASE_SOURCES[caseIndex].url, caseName: names[caseIndex] });
+  }
+  q(
+    0,
+    "Why had the Arizona Supreme Court allowed Miranda\u2019s confession before the U.S. Supreme Court reversed?",
+    "He had not specifically requested an attorney.",
+    ["He had already received a complete warning.", "His confession was recorded before he entered custody.", "The confession was never introduced at trial."],
+    "The review says Arizona relied on Miranda\u2019s failure to request counsel. The later ruling required safeguards before custodial questioning."
+  );
+  q(
+    0,
+    "Which sequence matches the Miranda review\u2019s background?",
+    "Identification in a lineup, roughly two hours of questioning, then a signed confession.",
+    ["A signed confession, then a lineup, then his first police interview.", "A warning and a lawyer, then two days of questioning.", "An anonymous tip, acquittal, then a signed confession on appeal."],
+    "The background places the lineup before the interrogation and written confession, with no clear warning of the relevant rights."
+  );
+  q(
+    0,
+    "Which contrast best captures the Miranda review\u2019s majority\u2013dissent disagreement?",
+    "Practical safeguards against interrogation pressure versus concern about restricting investigations.",
+    ["Whether Miranda was in Arizona versus whether he was in federal custody.", "Whether a confession existed versus whether it was signed.", "A ban on all questioning versus a requirement to question every suspect."],
+    "The majority wanted an advance, workable safeguard. The dissent worried the new rule was too rigid and would exclude reliable confessions."
+  );
+  q(
+    0,
+    "What did the Miranda decision actually do to the conviction described in the review?",
+    "Reversed it because the custodial confession lacked the required safeguards.",
+    ["Declared him factually innocent of every allegation.", "Upheld it because he never requested counsel.", "Replaced the prison sentence with an award of civil damages."],
+    "The review reports reversal of the conviction, not a finding that Miranda was factually innocent."
+  );
+  q(
+    1,
+    "Why does the Tarasoff review distinguish a 5\u20132 judgment from a four-justice majority?",
+    "Five agreed on the result, but only four fully joined the main opinion\u2019s reasoning.",
+    ["Four voted to reverse and one voted to affirm.", "The fifth justice joined only the dissent.", "Only four justices participated in the case."],
+    "One justice agreed with the outcome in part while disagreeing with some broader reasoning. Result and full agreement with an opinion are different."
+  );
+  q(
+    1,
+    "Which immunity distinction did the Tarasoff review draw?",
+    "Immunity for failure to confine did not also provide immunity for failure to warn.",
+    ["Immunity for failure to warn automatically covered failure to confine.", "The therapists had no governmental immunity for any act.", "Only the victim\u2019s parents received governmental immunity."],
+    "The review separates psychiatric confinement from the failure to warn Tatiana or someone likely to warn her."
+  );
+  q(
+    1,
+    "What did Tarasoff\u2019s parents win at this stage, according to the review?",
+    "The ability to pursue their claim against the therapists and Regents.",
+    ["An automatic final finding that every defendant caused the death.", "A Supreme Court ruling that Poddar was not responsible.", "A rule requiring disclosure of every angry therapy comment."],
+    "The court recognized a legally viable claim. It did not automatically decide the therapists were liable for Tatiana\u2019s death."
+  );
+  q(
+    1,
+    "Which relationship supported the possible duty to protect Tatiana even though she was not the patient?",
+    "The therapists\u2019 professional relationship with Poddar.",
+    ["Tatiana\u2019s previous contract with the Regents.", "A treatment relationship between Tatiana and Dr. Moore.", "The parents\u2019 employment relationship with campus police."],
+    "The special relationship was with the person making the threat; a duty could extend to the identifiable person in danger."
+  );
+  q(
+    2,
+    "Which explanation of the result in Case v. Montana is most precise?",
+    "The entry was upheld under emergency aid without adopting a broad community-caretaking power.",
+    ["The Court adopted unrestricted community caretaking inside any home.", "The entry was upheld only after finding probable cause of a crime.", "The Court required a warrant despite the apparent emergency."],
+    "The review emphasizes agreement with the result while narrowing the rationale to the emergency-aid exception."
+  );
+  q(
+    2,
+    "Which standard did the Case v. Montana review say controlled the emergency entry?",
+    "An objectively reasonable basis to believe someone was seriously injured or facing serious injury.",
+    ["Proof beyond a reasonable doubt that a crime had happened.", "Probable cause that the resident had violated a criminal statute.", "An officer\u2019s unreviewable personal feeling that entry might be useful."],
+    "The question was the apparent need for urgent aid, not probable cause to investigate a crime or an officer\u2019s unsupported hunch."
+  );
+  q(
+    2,
+    "Which combination did Gavin\u2019s Case v. Montana review identify as supporting the apparent emergency?",
+    "The 911 report, silence inside, empty holster, and possible note.",
+    ["A visible injured neighbor, signed consent, and an open warrant.", "A traffic violation, expired license, and refusal to identify a driver.", "A noise complaint and evidence already seized during an earlier search."],
+    "The review describes a cluster of observations supporting urgent aid. It does not describe a consent search or a traffic stop."
+  );
+  q(
+    2,
+    "What limit remained after the entry was upheld in Case v. Montana?",
+    "Officers could address the emergency, not use it to justify an unrelated general search.",
+    ["All rooms and devices became searchable for any crime.", "The emergency created permanent authority to reenter later.", "The resident lost all Fourth Amendment protection once the call was made."],
+    "The review repeatedly ties the scope of the entry to the immediate emergency."
+  );
+  q(
+    3,
+    "What was the practical effect of the dismissal in Hamm v. Smith?",
+    "The lower-court protection for Smith remained, without a new Supreme Court rule on multiple IQ scores.",
+    ["Alabama won a new nationwide numerical cutoff.", "The Court resolved the IQ issue and ordered a new execution date.", "Smith lost the benefit of every lower-court ruling."],
+    "Dismissing certiorari as improvidently granted left the lower result undisturbed while declining to decide the main question."
+  );
+  q(
+    3,
+    "Which evidence did the Hamm review distinguish from treating IQ scores as exact cutoffs?",
+    "Testing uncertainty and evidence of adaptive functioning.",
+    ["The jury\u2019s preferred execution method and the prison\u2019s budget.", "Only the single highest score, regardless of other evidence.", "A rule that a low score automatically erases the conviction."],
+    "Smith\u2019s position involved more than one test number: measurement limits and functioning also mattered to the dispute."
+  );
+  q(
+    3,
+    "Which pairing matches the separate opinions described in Hamm?",
+    "Sotomayor favored waiting for a better vehicle; Alito wanted the Court to clarify the law.",
+    ["Sotomayor demanded a new IQ cutoff; Alito favored dismissal to avoid guidance.", "Both insisted the Court had already resolved the constitutional issue.", "Alito wrote that every death sentence involving IQ evidence was invalid."],
+    "The review contrasts case suitability with the perceived need to resolve recurring confusion."
+  );
+  q(
+    3,
+    "Which earlier case supplied the constitutional premise behind Smith\u2019s claim?",
+    "Atkins v. Virginia, which barred executing people with intellectual disabilities.",
+    ["Miranda v. Arizona, which resolved the numerical IQ cutoff.", "Bush v. Gore, which required a new sentencing hearing.", "Pennsylvania v. Mimms, which excluded IQ evidence."],
+    "The review identifies Atkins as the foundation, while Hamm concerned how a disability claim was evaluated."
+  );
+  q(
+    4,
+    "Which two-step distinction is essential to the Mimms review?",
+    "A lawful stop supported ordering the driver out; the visible bulge separately supported the frisk.",
+    ["An expired plate alone automatically authorized every search.", "The frisk had to happen before an officer could order the driver out.", "Ordering him out was unconstitutional even though the frisk was upheld."],
+    "The exit order and the weapons pat-down had separate justifications. The review does not merge them into one automatic search power."
+  );
+  q(
+    4,
+    "Why did the Mimms majority characterize the exit order as a small added intrusion?",
+    "Mimms was already lawfully stopped; the order changed where he waited.",
+    ["He had signed a written waiver of all search rights.", "He had already been convicted of the traffic offense.", "No government instruction was involved."],
+    "The majority balanced the incremental burden against officer safety, starting from an already lawful detention."
+  );
+  q(
+    4,
+    "What specific observation mattered to the pat-down in Mimms?",
+    "A large bulge under his jacket that suggested he might be armed.",
+    ["An expired plate by itself, with no other observation.", "His refusal to consent to a search of his home.", "An anonymous report about an unrelated person."],
+    "The visible bulge provided a particular reason to suspect a weapon, separate from the traffic violation."
+  );
+  q(
+    4,
+    "What was Stevens\u2019s objection to the exit-order rule in Mimms, as the review describes it?",
+    "It gave police an automatic additional power without a reason specific to that driver.",
+    ["It prevented officers from conducting any lawful traffic stop.", "It required probable cause before police could see a license plate.", "It made a visible weapon irrelevant to every frisk."],
+    "The dissent focused on individualized justification for the extra command, not on eliminating traffic enforcement."
+  );
+  q(
+    5,
+    "How does the Bush v. Gore review separate the justices\u2019 two voting alignments?",
+    "Seven saw constitutional problems; five chose the remedy that ended the recount.",
+    ["Five saw no constitutional problem; seven voted to continue indefinitely.", "All nine agreed that every manual recount was unconstitutional.", "Only two justices objected to inconsistent counting standards."],
+    "Agreement that there was a problem did not produce the same agreement about what should happen next."
+  );
+  q(
+    5,
+    "What was defective about the recount process described in Bush v. Gore?",
+    "Similar disputed ballots could receive different treatment across counties or recount teams.",
+    ["The mere existence of any hand-counted ballot.", "A statewide rule requiring every disputed ballot to be rejected.", "A constitutional prohibition on asking what voters intended."],
+    "The review focuses on inconsistent standards, including different judgments about chads, rather than a blanket rejection of manual counting."
+  );
+  q(
+    5,
+    "What reason did the majority give for ending rather than repairing the recount?",
+    "It believed new statewide standards could not be implemented in time for Florida\u2019s December 12 deadline.",
+    ["It had finished recounting every disputed ballot itself.", "It found that every county had used exactly the same standard.", "It held that the Constitution forbids states from correcting counting errors."],
+    "The remedy turned on timing as well as the equal-protection problem."
+  );
+  q(
+    5,
+    "Which constitutional provision drove the counting-standard analysis in the Bush review?",
+    "The Fourteenth Amendment\u2019s Equal Protection Clause.",
+    ["The Fifth Amendment\u2019s custodial-warning rule.", "The Eighth Amendment\u2019s punishment clause.", "The Fourth Amendment\u2019s emergency-aid exception."],
+    "The issue was equal treatment of similar ballots in the state\u2019s recount."
+  );
+  q(
+    6,
+    "What did the detained class obtain in Rodriguez Vazquez v. Bostock?",
+    "Access to request bond under the applicable framework, not guaranteed release.",
+    ["Automatic release without an immigration judge\u2019s review.", "Citizenship for everyone arrested inside the country.", "A ban on denying bond for danger or failure-to-appear risk."],
+    "The review stresses the difference between an opportunity for individualized review and winning release."
+  );
+  q(
+    6,
+    "Which statutory distinction did the Rodriguez Vazquez review identify?",
+    "Section 1225\u2019s no-bond position versus the generally applicable Section 1226 bond framework.",
+    ["Section 1226\u2019s citizenship guarantee versus Section 1225\u2019s jury-trial guarantee.", "A choice between the First and Eighth Amendments only.", "Two sections that both necessarily required immediate release."],
+    "The dispute concerned the detention framework for people arrested after living inside the country."
+  );
+  q(
+    6,
+    "How did the Rodriguez Vazquez majority read \u201Cseeking admission\u201D differently from the government?",
+    "It focused on a person currently trying to enter, not everyone legally classified as an applicant forever.",
+    ["It treated every long-term resident as physically waiting at the border.", "It said \u201Capplicant for admission\u201D could never describe anyone.", "It made the phrase turn only on whether someone owned a home."],
+    "The review distinguishes a legal classification from what a person is actively doing when arrested."
+  );
+  q(
+    6,
+    "Which qualification prevents overstating the Rodriguez Vazquez result?",
+    "Separate mandatory-detention rules and individual danger or flight-risk findings could still matter.",
+    ["The result eliminated all detention powers nationwide.", "The ruling guaranteed bond without any hearing.", "The majority required judges to ignore criminal records."],
+    "The review does not portray the decision as universal or unconditional release."
+  );
+  q(
+    7,
+    "Why did Brady receive a new punishment proceeding rather than a full new trial on guilt?",
+    "Boblit\u2019s withheld confession could affect punishment without undoing Brady\u2019s murder guilt under Maryland law.",
+    ["The withheld statement had nothing to do with either guilt or punishment.", "The Court found Brady had never taken part in the crime.", "Brady had already been acquitted before his appeal."],
+    "The remedy tracked what the withheld evidence could change."
+  );
+  q(
+    7,
+    "Which distinction did the Brady review say did NOT determine whether withholding helpful material evidence was unfair?",
+    "Whether the prosecutor hid it intentionally or by mistake.",
+    ["Whether it could matter to guilt or punishment.", "Whether the evidence was favorable to the defendant.", "Whether the defense was deprived of evidence that could help."],
+    "The focus was the deprivation of a fair opportunity, rather than requiring proof of a prosecutor\u2019s bad motive."
+  );
+  q(
+    7,
+    "What exactly was the evidence withheld in Brady\u2019s case?",
+    "Boblit\u2019s statement that he had committed the actual killing.",
+    ["A thermal image of Brady\u2019s house.", "A yearbook entry showing Brady\u2019s name.", "A warning that Brady had refused to sign."],
+    "The review identifies a co-participant\u2019s statement as the missing evidence relevant to punishment."
+  );
+  q(
+    7,
+    "Which description best preserves the scope of the Brady rule stated in the review?",
+    "Favorable evidence material to guilt or punishment must not be suppressed.",
+    ["Only evidence that conclusively proves innocence must be shared.", "Evidence affecting punishment never has to be disclosed.", "The rule applies only when a prosecutor admits deliberate misconduct."],
+    "The review includes material evidence affecting punishment, not only evidence that proves innocence outright."
+  );
+  q(
+    8,
+    "Which detail most undermined the school\u2019s disruption argument in Mahanoy?",
+    "The evidence amounted to brief classroom discussion and upset cheerleaders, not substantial disruption.",
+    ["B.L. had threatened a named student during a scheduled class.", "The school had documented weeks of canceled lessons.", "The post had been sent through an official assignment system."],
+    "The review describes about five to ten minutes of discussion over a couple of days."
+  );
+  q(
+    8,
+    "Which conclusion would overstate the Mahanoy ruling described in the review?",
+    "Schools can never address off-campus threats or serious targeted bullying.",
+    ["B.L. prevailed on her particular suspension.", "The weekend, off-campus setting limited the school\u2019s authority.", "Her vulgar complaint did not justify this punishment on these facts."],
+    "The review explicitly preserves room to address more serious off-campus conduct."
+  );
+  q(
+    8,
+    "Which combination matches the setting of B.L.\u2019s post?",
+    "A weekend, away from school, using her own phone.",
+    ["An exam, in a classroom, using a school-issued testing device.", "An official team meeting, using the coach\u2019s account.", "A school trip, under a teacher\u2019s immediate supervision."],
+    "These surrounding facts mattered to how much regulatory authority the school could claim."
+  );
+  q(
+    8,
+    "Which opinion alignment appears in the Mahanoy review?",
+    "Breyer wrote the majority; Thomas was the lone dissenter.",
+    ["Thomas wrote the majority; Breyer was the lone dissenter.", "Scalia wrote for a unanimous Court.", "Sotomayor wrote a 5\u20134 opinion joined by no other justice."],
+    "The review reports an 8\u20131 result for B.L. with those authorship details."
+  );
+  q(
+    9,
+    "What factual gap defeated Uber\u2019s arbitration argument against Carroll Walker?",
+    "Sending the terms did not prove he had ever seen the offer or agreed to it.",
+    ["Uber could not prove that Cheryl had ever ordered a ride.", "Carroll had accepted the terms but changed his mind after the crash.", "Every arbitration agreement was declared unlawful."],
+    "The review distinguishes not reading known terms from not knowing terms were offered at all."
+  );
+  q(
+    9,
+    "Why did Cheryl\u2019s agreement not automatically force Carroll into arbitration in Walker?",
+    "His crash-related negligence claims did not seek a benefit under her contract.",
+    ["Spouses are legally incapable of entering any contract.", "Carroll had personally signed an agreement forbidding all lawsuits.", "The court decided no crash had occurred."],
+    "The review keeps his independent claims separate from an attempt to enforce or benefit from Cheryl\u2019s contract."
+  );
+  q(
+    9,
+    "What did the Walker appeal leave unresolved?",
+    "Whether Uber was actually responsible for Carroll\u2019s injuries.",
+    ["Whether Uber had proved the particular agreement bound Carroll.", "Whether simply sending this message was enough in this dispute.", "Whether these claims could proceed in court rather than compelled arbitration."],
+    "Winning the forum dispute did not establish liability for the accident."
+  );
+  q(
+    9,
+    "Which missing step in Uber\u2019s guest system mattered to the Walker reasoning?",
+    "No required opening, acceptance, or confirmation of the terms by the guest rider.",
+    ["No instruction to the driver to complete a criminal-background interview.", "No signature from every passenger\u2019s employer.", "No requirement that Cheryl repeat her order in writing at the courthouse."],
+    "The review notes that Uber designed the system and could have required an actual acknowledgment."
+  );
+  q(
+    10,
+    "Which query best matches the limited search discussed in Robinson?",
+    "A white BMW with black rims near one gas station during a short period.",
+    ["Every place Robinson slept, worked, and worshipped for several years.", "Continuous live GPS tracking of every vehicle in Virginia.", "A thermal scan revealing details inside Robinson\u2019s home."],
+    "The decision described a narrow database query of exterior car features visible on public roads."
+  );
+  q(
+    10,
+    "What distinction prevents treating Robinson as blanket approval of all future camera networks?",
+    "The court considered a limited present system and left a much more extensive network open to different analysis.",
+    ["The court ruled that public-road observations can never raise any privacy issue.", "It approved indefinite records of everyone\u2019s travel without qualification.", "It held that all camera systems are identical to one officer seeing a car once."],
+    "Scope and aggregation were important limits in both the review\u2019s legal analysis and Gavin\u2019s opinion."
+  );
+  q(
+    10,
+    "How long did the Robinson review say Norfolk\u2019s camera data was retained?",
+    "30 days.",
+    ["24 hours.", "Five years.", "Permanently with no deletion."],
+    "The review pairs a 30-day retention period with still images from particular locations, not uninterrupted travel monitoring."
+  );
+  q(
+    10,
+    "Which details did the Robinson court treat as exposed on public roads?",
+    "The plate, the car\u2019s exterior, and its black rims.",
+    ["Private conversations recorded inside the house.", "Every message on the driver\u2019s phone.", "The contents of a sealed backpack in the trunk."],
+    "The narrow query used visible exterior features rather than the private contents in the distractors."
+  );
+  q(
+    11,
+    "Why did Connelly\u2019s mental illness alone not satisfy the majority\u2019s due-process test?",
+    "The pressure had not been caused by coercive police conduct.",
+    ["The Court found he had no mental illness.", "A confession is admissible only if it is shouted in a public place.", "Police had obtained a signed judicial order requiring him to confess."],
+    "The review contrasts internal pressure with government coercion; it does not deny that his illness affected him."
+  );
+  q(
+    11,
+    "Which proof standard did the Connelly majority accept for a valid Miranda waiver?",
+    "Preponderance of the evidence.",
+    ["Beyond every possible doubt.", "A unanimous psychiatric panel with no legal review.", "Automatic validity whenever any words were spoken."],
+    "The review explains the standard as more likely than not, rejecting Colorado\u2019s higher requirement."
+  );
+  q(
+    11,
+    "What additional concern did Brennan raise in the Connelly review beyond whether police behaved badly?",
+    "The reliability of a hallucinating person\u2019s confession and the lack of independent physical corroboration in the described record.",
+    ["Whether all confession evidence should automatically produce an acquittal.", "Whether Connelly had requested a contract with the police.", "Whether Miranda warnings were legally abolished."],
+    "The dissent\u2019s concern included both meaningful choice and the risk of an unreliable confession."
+  );
+  q(
+    11,
+    "Which factual detail matters to the majority\u2019s account of how Connelly\u2019s confession began?",
+    "He approached officers himself and was repeatedly told he could remain silent.",
+    ["Police abducted him from a therapy session without speaking.", "He confessed only after a court ordered him to do so.", "Officers admitted creating the hallucinations."],
+    "The review describes warnings and a self-initiated approach while still recognizing severe mental impairment."
+  );
+  q(
+    12,
+    "What did the thermal camera in Kyllo actually measure, as the review explains?",
+    "Heat escaping from the home, rather than pictures of people or objects through the walls.",
+    ["A clear video of everyone moving through the rooms.", "The contents of private phone calls.", "A physical sample taken from inside the attic."],
+    "That limitation supported the government and dissent\u2019s argument, but did not resolve the majority\u2019s concern about interior privacy."
+  );
+  q(
+    12,
+    "Which combination matches the Kyllo majority\u2019s rule in the review?",
+    "Technology not in general public use obtaining interior information otherwise requiring entry.",
+    ["Any device outside a house is exempt because it never crosses a wall.", "Only technology that shows a person\u2019s face can count as a search.", "Information inside a home is protected only if a judge finds it interesting."],
+    "The review emphasizes the device\u2019s availability and the otherwise inaccessible interior information."
+  );
+  q(
+    12,
+    "What happened after Kyllo won the search issue?",
+    "The case was sent back to evaluate the warrant without the thermal-scan evidence.",
+    ["The Court itself conducted a new thermal scan.", "Kyllo automatically won damages against every officer.", "The Court held that the remaining warrant evidence never needed review."],
+    "The remand left a further question about the warrant\u2019s support once the scan was removed."
+  );
+  q(
+    12,
+    "What was Stevens\u2019s key contrast in Kyllo?",
+    "Measuring heat already escaping outside versus observing activities inside.",
+    ["A yearbook class action versus an arbitration clause.", "A school\u2019s weekend authority versus a traffic-stop frisk.", "A signed confession versus an unsigned handwritten note."],
+    "The dissent considered the camera less invasive than technology that could reveal the interior directly."
+  );
+  q(
+    13,
+    "What did Nolen win in the appeal covered by Future Counsel?",
+    "The ability to continue the class action, not a final ruling that PeopleConnect violated California law.",
+    ["A final judgment that every yearbook scan is illegal.", "A ruling that every class member had already won damages.", "A declaration that Classmates.com could never be sued."],
+    "The procedural question about proceeding as a group was distinct from ultimate liability."
+  );
+  q(
+    13,
+    "Which theory allowed the Nolen class dispute to be addressed on a common basis?",
+    "Making people searchable was alleged to be the relevant use, even if each name had not actually been searched.",
+    ["Every member had individually negotiated the same private contract.", "Only people with proof of an actual search could possibly remain in any class.", "Each person\u2019s claim concerned an unrelated website with a different business model."],
+    "The court allowed the shared searchability theory to proceed without deciding whether it would ultimately succeed."
+  );
+  q(
+    13,
+    "How did the Nolen review describe handling possible individual class-membership problems?",
+    "They could be addressed as the case developed instead of necessarily defeating the group at this stage.",
+    ["The court had to award damages to everyone before examining membership.", "Any possible individual issue automatically required dismissing every claim.", "Individual issues were declared legally impossible in all class actions."],
+    "The appeal did not settle every later issue of membership, proof, or liability."
+  );
+  q(
+    13,
+    "Which distinction makes the Nolen result particularly easy to overstate?",
+    "Allowing a legal theory to be litigated is different from holding that the theory is correct.",
+    ["Class certification and a final damages judgment are always the same event.", "The court ruled that no common evidence existed.", "The opinion concerned only whether printed yearbooks could be sold in stores."],
+    "The review separates a class-certification decision from a merits decision."
+  );
+  q(
+    14,
+    "Which split accurately reflects the Talbot review?",
+    "All three judges protected the racism statements; two also protected the assault statements.",
+    ["All three found the assault accusation false as a matter of proven fact.", "All three agreed every allegation had to go to trial.", "Only one judge thought any challenged statement was protected."],
+    "The disagreement over assault did not erase agreement on the racism statements."
+  );
+  q(
+    14,
+    "What separate request did Ainuu and The North Face fail to win in Talbot?",
+    "Relief under Washington\u2019s anti-SLAPP law, despite keeping the underlying claims dismissed.",
+    ["Permission to keep the defamation lawsuit dismissed.", "A ruling that every factual allegation had been proved true.", "A new criminal conviction against Talbot."],
+    "A different two-judge majority viewed the posts as primarily a personal dispute for the anti-SLAPP question."
+  );
+  q(
+    14,
+    "Which context especially concerned Judge Nelson in Talbot?",
+    "A later direct assault accusation on an Outdoor Research post could read as a factual criminal allegation.",
+    ["A private contract that required arbitration of all yearbook claims.", "A police officer ordering a driver out of a vehicle.", "A thermal image that revealed no outdoor activity."],
+    "Nelson would have let that part proceed; he was not deciding Talbot had already proved falsity."
+  );
+  q(
+    14,
+    "Why did disclosed descriptions of the encounter matter to the Talbot majority?",
+    "Readers could assess Ainuu\u2019s interpretation from the underlying conduct he described.",
+    ["They made every statement in every post automatically true.", "They proved Talbot had admitted a crime in court.", "They established that no reader could ever interpret an assault accusation factually."],
+    "The majority read the challenged language in context rather than assuming undisclosed supporting facts."
+  );
+  q(
+    15,
+    "When must a child\u2019s age enter the custody analysis under the J.D.B. review?",
+    "When officers know it or it would be apparent to a reasonable officer.",
+    ["Only after the child has been convicted.", "Only if a parent submits a birth certificate during questioning.", "Never, because custody must always be judged as if everyone were an adult."],
+    "The review describes an objective consideration of age, not speculation about every private thought."
+  );
+  q(
+    15,
+    "What did J.D.B. NOT obtain directly from the Supreme Court?",
+    "A final decision that he was in custody and his confession must be thrown out.",
+    ["A ruling that known or apparent age belongs in the analysis.", "A remand for the state courts to reconsider custody.", "A 5\u20134 decision rejecting the omission of his age."],
+    "Winning the legal issue meant another custody analysis, not automatic suppression or a finding of innocence."
+  );
+  q(
+    15,
+    "Why did the assistant principal\u2019s presence matter differently for J.D.B. than for an adult visitor?",
+    "As a student, he was accustomed to the official\u2019s disciplinary authority.",
+    ["The assistant principal had already served as his criminal defense lawyer.", "The assistant principal could personally issue search warrants.", "Every adult visitor was legally required to obey the school\u2019s student discipline rules."],
+    "The majority connected the setting to the perspective of a child subject to school authority."
+  );
+  q(
+    15,
+    "Why did the J.D.B. majority reject relying only on later voluntariness review?",
+    "That later safeguard does not replace warnings required before a custodial interrogation.",
+    ["Age is never relevant to voluntariness.", "A later review automatically guarantees that no confession can be used.", "The majority abolished all separate custody analysis."],
+    "The review distinguishes assessing custody and giving advance warnings from later evaluating whether a confession was voluntary."
+  );
+  q(
+    0,
+    "In Gavin\u2019s Miranda opinion, why does explaining the right matter beyond the right merely existing?",
+    "A person needs to know the protection exists to have a real opportunity to use it.",
+    ["The warning guarantees every confession is factually accurate.", "Knowing rights prevents police from investigating any crime.", "Constitutional language itself proves every suspect understands it."],
+    "Gavin supports making the protection usable in the interrogation room, while acknowledging the need to investigate serious crimes.",
+    "GAVIN\u2019S TAKE"
+  );
+  q(
+    1,
+    "Which tension does Gavin expressly acknowledge even while siding with the Tarasoff majority?",
+    "A disclosure duty may discourage honest therapy or deter treatment.",
+    ["There is no meaningful value in therapy confidentiality.", "Every unusual remark must automatically be reported.", "The parents had already proved every defendant liable at trial."],
+    "His opinion accepts the dissent\u2019s trust concern but favors reasonable protective steps for serious threats to identifiable people.",
+    "GAVIN\u2019S TAKE"
+  );
+  q(
+    2,
+    "What makes Gavin\u2019s support for the Case v. Montana result cautious rather than unlimited?",
+    "The facts suggested a genuine emergency, but mental-health interventions can escalate danger and the exception must stay narrow.",
+    ["He thinks any vague welfare concern creates a permanent search license.", "He believes the Court found probable cause of a crime was always required.", "He rejects every emergency entry unless a warrant has already issued."],
+    "His opinion points to the concrete warning signs while taking Sotomayor\u2019s escalation concern seriously.",
+    "GAVIN\u2019S TAKE"
+  );
+  q(
+    3,
+    "Why does Gavin disagree with the dismissal in Hamm even though Smith retained his lower-court win?",
+    "The Court left a recurring, life-or-death uncertainty unresolved after full argument.",
+    ["He thought dismissal created a binding nationwide IQ cutoff.", "He wanted all adaptive-functioning evidence removed automatically.", "He believed the dismissal itself reversed Smith\u2019s lower-court relief."],
+    "His criticism concerns the missed opportunity for guidance, not a mistaken claim that Smith lost the existing protection.",
+    "GAVIN\u2019S TAKE"
+  );
+  q(
+    4,
+    "Which description fits Gavin\u2019s Mimms opinion?",
+    "Cautious agreement with the majority while warning against unnecessarily aggressive traffic stops.",
+    ["Unqualified approval of searching every driver and vehicle.", "Complete agreement that ordering any lawfully stopped driver out is forbidden.", "A claim that an expired plate alone made every frisk reasonable."],
+    "He sees the safety rationale, but also recognizes that even an extra command can feel serious to a driver.",
+    "GAVIN\u2019S TAKE"
+  );
+  q(
+    5,
+    "Where does Gavin draw the line between agreeing and disagreeing with Bush v. Gore?",
+    "He supports a consistent statewide standard but would prefer repairing and continuing the recount.",
+    ["He rejects consistent standards but fully supports ending the count.", "He thinks all manual counting is inherently unconstitutional.", "He says the Court proved what a completed recount would have shown."],
+    "His opinion separates the valid concern about unequal standards from the decision to halt the process.",
+    "GAVIN\u2019S TAKE"
+  );
+  q(
+    6,
+    "What distinction is central to Gavin\u2019s support for the Rodriguez Vazquez majority?",
+    "Giving a judge the chance to consider bond does not automatically release the person.",
+    ["A bond hearing must always result in release.", "Danger and failure-to-appear risk must never be considered.", "The ruling grants citizenship to the detained class."],
+    "His opinion favors individual review while preserving the ability to continue detention when justified.",
+    "GAVIN\u2019S TAKE"
+  );
+  q(
+    7,
+    "Why does Gavin say accidental suppression can still be unfair in Brady?",
+    "The defendant still loses access to helpful evidence regardless of the prosecutor\u2019s intention.",
+    ["A prosecutor\u2019s innocent mistake proves the defendant is guilty.", "Only a written admission of bad motive can make a trial unfair.", "Evidence affecting punishment never affects fairness."],
+    "He focuses on the effect on the defense rather than making fairness depend only on the prosecutor\u2019s motive.",
+    "GAVIN\u2019S TAKE"
+  );
+  q(
+    8,
+    "Which line does Gavin draw in his Mahanoy opinion?",
+    "An immature off-campus complaint differs from threats or serious targeted online bullying.",
+    ["A school can never address any online behavior.", "Disrespect alone automatically grants a school control over all speech.", "Every upset teammate proves substantial disruption."],
+    "He supports B.L.\u2019s result without giving all off-campus conduct blanket protection.",
+    "GAVIN\u2019S TAKE"
+  );
+  q(
+    9,
+    "Which comparison does Gavin use to explain his agreement in Walker?",
+    "Clicking accept without reading differs from never knowing an agreement was being offered.",
+    ["A spouse\u2019s contract automatically binds every other family member.", "Taking a ride necessarily proves the rider read every text message.", "Losing arbitration proves Uber caused the passenger\u2019s injuries."],
+    "His review keeps notice and assent separate from the underlying negligence case.",
+    "GAVIN\u2019S TAKE"
+  );
+  q(
+    10,
+    "What future development worries Gavin even though he understands Robinson\u2019s loss?",
+    "A larger database could reconstruct a person\u2019s movements far beyond a narrow sighting.",
+    ["Any single observation of a publicly visible car is automatically a home search.", "The existing case proved every future tracking network constitutional.", "Privacy depends only on whether a car has unusual rims."],
+    "He distinguishes one limited query from the power to rebuild a person\u2019s travel history.",
+    "GAVIN\u2019S TAKE"
+  );
+  q(
+    11,
+    "Which distinction drives Gavin\u2019s disagreement with the Connelly majority?",
+    "Understanding the words of a warning can differ from being mentally capable of acting on them.",
+    ["The officers deliberately created Connelly\u2019s illness.", "The Court found Connelly had never received a warning.", "Every confession following any illness is automatically false."],
+    "He does not accuse these officers of coercion; he questions meaningful choice and reliability despite their lack of misconduct.",
+    "GAVIN\u2019S TAKE"
+  );
+  q(
+    12,
+    "Which part of Kyllo\u2019s formulation does Gavin specifically question while supporting the result?",
+    "Why technology becoming common should automatically make the home less private.",
+    ["Why police did not receive unrestricted permission to scan every home.", "Why only interesting interior details should count as private.", "Why the Court treated every machine as capable of seeing through walls."],
+    "He questions the general-public-use boundary and favors a principle that survives technological progress.",
+    "GAVIN\u2019S TAKE"
+  );
+  q(
+    13,
+    "What is Gavin\u2019s position on Nolen\u2019s underlying claim after supporting class certification?",
+    "The searchable subscription system deserves review, but he is not sure it ultimately makes the conduct illegal.",
+    ["Class certification already proves PeopleConnect owes everyone damages.", "A public yearbook can never raise any issue when aggregated online.", "The court had decided that every actual search was unlawful."],
+    "He recognizes that large-scale searchable aggregation differs from a book on a shelf without claiming the merits are settled.",
+    "GAVIN\u2019S TAKE"
+  );
+  q(
+    14,
+    "What aspect of Nelson\u2019s concern resonates with Gavin in Talbot?",
+    "A standalone assault accusation on a company\u2019s post may read as a factual allegation without the earlier context.",
+    ["Losing a job automatically proves every defamation element.", "All descriptions of an argument should automatically be treated as crimes.", "Every challenged post had already been proved false by a jury."],
+    "Gavin focuses on wording, placement, and what a reader is likely to understand, while avoiding a claim that Talbot already proved his case.",
+    "GAVIN\u2019S TAKE"
+  );
+  q(
+    15,
+    "Which combination best captures Gavin\u2019s J.D.B. position?",
+    "Consider a child\u2019s age and the school authority setting without treating youth as immunity from consequences.",
+    ["Age should erase every possible consequence for a suspected burglary.", "School questioning should always be judged exactly like an adult\u2019s voluntary interview.", "The Court had already proved J.D.B. innocent and excluded every statement."],
+    "His opinion defends a fair custody inquiry while recognizing the interests of people whose homes were broken into.",
+    "GAVIN\u2019S TAKE"
+  );
+  var closeReadingDistractors = {
+    "fc-1-0": [
+      "He had signed a confession that specifically waived counsel before questioning.",
+      "The court treated warnings as necessary only after charges were formally filed.",
+      "The court found that questioning ended before he was placed in custody."
+    ],
+    "fc-1-1": [
+      "Roughly two hours of questioning, a signed confession, then the identification lineup.",
+      "A lineup, a warning about silence and counsel, then a signed confession.",
+      "An identification lineup, an immediate written confession, then two hours of questioning."
+    ],
+    "fc-1-2": [
+      "A safeguard applied only at trial versus a warning required only after a confession.",
+      "A voluntary-confession rule limited to juveniles versus a rule limited to adults.",
+      "A rule demanding counsel in every interview versus a rule making all warnings optional."
+    ],
+    "fc-1-3": [
+      "Affirmed the conviction while requiring warnings only in future investigations.",
+      "Ordered a new punishment proceeding while leaving the guilt determination untouched.",
+      "Dismissed the appeal without resolving the custodial-warning issue."
+    ],
+    "fc-2-2": [
+      "A final finding of liability against the therapists, with damages left for later.",
+      "Permission to sue the Regents only, with the therapists dismissed from the case.",
+      "A new confinement hearing, while the failure-to-warn theory was rejected."
+    ],
+    "fc-2-3": [
+      "Tatiana\u2019s own treatment relationship with the university\u2019s psychiatric clinic.",
+      "The Regents\u2019 contractual promise to warn every student about dangerous patients.",
+      "The parents\u2019 special relationship with the university as prior medical patients."
+    ],
+    "fc-3-2": [
+      "The 911 report, a visible injured resident, a loaded holster, and written consent.",
+      "A possible gunshot, an answer at the door, and a note authorizing police entry.",
+      "Silence inside, an outstanding search warrant, and a request to inspect for evidence."
+    ],
+    "fc-4-1": [
+      "The average of every score, with adaptive functioning excluded once the average exceeded a cutoff.",
+      "The single lowest score, treated as conclusive regardless of measurement uncertainty.",
+      "The single highest score, treated as controlling despite other evidence of disability."
+    ],
+    "fc-4-2": [
+      "Sotomayor favored a merits ruling now; Alito wanted dismissal for a clearer future case.",
+      "Sotomayor and Alito both supported dismissal, but differed about its effect on the lower judgment.",
+      "Sotomayor wanted to revisit Atkins itself; Alito wanted to affirm on adaptive functioning alone."
+    ],
+    "fc-4-3": [
+      "Hall v. Florida was described as the decision that first created the entire execution ban.",
+      "Terry v. Ohio supplied the Eighth Amendment rule about intellectual disability.",
+      "Miranda v. Arizona was the source of the constitutional ban on these executions."
+    ],
+    "fc-5-0": [
+      "A lawful stop automatically justified both the exit order and the later frisk.",
+      "The jacket bulge was required to justify the exit order, but not the frisk.",
+      "The exit order was valid only after consent, while the frisk followed automatically."
+    ],
+    "fc-5-2": [
+      "His expired license plate alone, without a separate indication that he was armed.",
+      "His refusal to exit before the officer issued any command to leave the vehicle.",
+      "An object discovered only after the pat-down had already been completed."
+    ],
+    "fc-6-3": [
+      "The Fourteenth Amendment\u2019s Due Process Clause, based on a right to unlimited recount time.",
+      "The Elections Clause, based on a rule that only Congress can count state ballots.",
+      "The First Amendment, based on whether a disputed chad counted as political speech."
+    ],
+    "fc-7-1": [
+      "Section 1226\u2019s no-bond position versus Section 1225\u2019s generally available bond hearings.",
+      "Two parts of Section 1225 that differed only about who could set the bond amount.",
+      "Section 1226 for people physically arriving, with Section 1225 restricted to long-term residents."
+    ],
+    "fc-8-2": [
+      "Boblit\u2019s statement that Brady personally committed the actual killing.",
+      "A statement that neither defendant had been present when the killing occurred.",
+      "A witness\u2019s statement retracting an identification of Brady as a participant."
+    ],
+    "fc-9-1": [
+      "Schools retain the same authority over every off-campus complaint as over classroom speech.",
+      "The result depended on a categorical rule that extracurricular discipline never implicates speech.",
+      "Any off-campus post using vulgar language is protected even when it contains a targeted threat."
+    ],
+    "fc-9-2": [
+      "An after-school activity on campus, using her own phone after a team meeting.",
+      "A weekend away from school, using a school-managed team account.",
+      "A school-supervised trip, using her own phone outside scheduled lesson time."
+    ],
+    "fc-9-3": [
+      "Breyer wrote the majority; Alito alone dissented from the result.",
+      "Sotomayor wrote the majority; Thomas alone dissented from the result.",
+      "Thomas wrote the majority; Breyer alone dissented from the result."
+    ],
+    "fc-10-1": [
+      "Cheryl\u2019s contract lacked any arbitration language that could apply to passenger injuries.",
+      "Carroll could claim rights under Cheryl\u2019s agreement while rejecting only its arbitration provision.",
+      "The agreement automatically covered Carroll, but arbitration was invalid for negligence claims."
+    ],
+    "fc-10-3": [
+      "Guests had to open the message but were not required to read each paragraph aloud.",
+      "Guests had accepted the terms, but Uber failed to obtain a second signature after the trip.",
+      "The guest confirmed the offer, but the driver had not separately signed the guest\u2019s copy."
+    ],
+    "fc-11-0": [
+      "A white BMW with silver rims across every Norfolk camera over the full retention period.",
+      "A white BMW with black rims reconstructed continuously over several weeks.",
+      "A black BMW with white rims near one gas station during a short period."
+    ],
+    "fc-11-2": [
+      "14 days.",
+      "60 days.",
+      "90 days."
+    ],
+    "fc-11-3": [
+      "The plate and exterior, together with a continuously recorded history of every trip.",
+      "The plate and black rims, together with private messages recovered from the vehicle.",
+      "The vehicle\u2019s exterior, together with a thermal measurement of the driver\u2019s home."
+    ],
+    "fc-12-1": [
+      "Clear and convincing evidence, because a waiver must meet a higher civil burden.",
+      "Beyond a reasonable doubt, because all waiver questions use the conviction standard.",
+      "No burden on the state once a defendant can repeat the warning back."
+    ],
+    "fc-12-3": [
+      "Officers approached him first, withheld warnings, and obtained an unsolicited confession.",
+      "He approached officers, but they refused to explain his right to stop talking.",
+      "He began talking only after officers promised that no statement would be used in court."
+    ],
+    "fc-13-0": [
+      "Images of activity inside the rooms, although the camera itself stayed across the street.",
+      "Heat escaping only from public electrical equipment, rather than from the house.",
+      "Temperature readings obtained by an officer physically placing a sensor inside the house."
+    ],
+    "fc-13-3": [
+      "The majority\u2019s home-protection rule versus a rule requiring a physical trespass in every case.",
+      "The difference between heat from a home and heat from a vehicle, with both fully protected.",
+      "The type of drugs suspected rather than whether the device gathered interior information."
+    ],
+    "fc-14-1": [
+      "The theory required proof that every name had actually produced a subscription purchase.",
+      "The court had already held that mere searchability conclusively established liability.",
+      "The theory depended on separate proof that every person had refused an individual contract."
+    ],
+    "fc-14-3": [
+      "The class ruling conclusively established liability but left the exact damages calculation open.",
+      "The appeal resolved whether every plaintiff\u2019s name had actually been searched.",
+      "Allowing the class required the court to reject any possible later membership challenges."
+    ],
+    "fc-15-2": [
+      "A later assault accusation in the same explanatory thread, which Nelson viewed as opinion.",
+      "A later accusation on an Outdoor Research post, which Nelson thought already proved falsity.",
+      "An early racism statement, which Nelson would have excluded from the context entirely."
+    ],
+    "fc-16-0": [
+      "Only if the officer has actual knowledge; apparent youth is categorically irrelevant.",
+      "Whenever a child later reports feeling unusually nervous, even if age was not apparent.",
+      "Only if a court has already decided the child\u2019s eventual confession was involuntary."
+    ],
+    "fc-16-2": [
+      "The principal\u2019s authority mattered equally because adults and pupils face the same school discipline.",
+      "The principal\u2019s presence alone conclusively proved police custody regardless of age or context.",
+      "The principal was acting as counsel and therefore replaced the need for any Miranda warning."
+    ],
+    "fc-1-4": [
+      "He supports warnings because they conclusively establish that every later statement is voluntary.",
+      "He supports warnings mainly because they eliminate the need for police questioning altogether.",
+      "He supports the dissent because unwarned suspects can invoke rights they have never been told about."
+    ],
+    "fc-2-4": [
+      "He agrees with the majority because confidentiality should never protect any disturbing statement.",
+      "He agrees with the dissent that preserving trust must always outweigh a specific credible threat.",
+      "He accepts a duty only after a court has already found the patient liable for an attack."
+    ],
+    "fc-4-4": [
+      "He objects because the dismissal created the strict IQ cutoff he believes the Court should avoid.",
+      "He agrees that uncertainty is better left unresolved once one defendant retains lower-court protection.",
+      "He objects because dismissing certiorari automatically removed Smith\u2019s existing protection."
+    ],
+    "fc-6-4": [
+      "He would keep inconsistent local standards if that were the only way to finish the recount quickly.",
+      "He supports stopping the recount because a consistent standard could never be legally created.",
+      "He thinks the deadline resolved every fairness concern raised by ending the recount early."
+    ],
+    "fc-8-4": [
+      "He would excuse accidental withholding whenever the prosecutor personally believed the trial was fair.",
+      "He would require proof of deliberate concealment before considering any lost defense opportunity.",
+      "He thinks evidence affecting only punishment cannot create the same fairness concern as evidence of guilt."
+    ],
+    "fc-10-4": [
+      "He treats entering the car as equivalent to clicking accept after seeing a notice of the terms.",
+      "He thinks a spouse\u2019s acceptance is enough even if the guest never learns that terms were offered.",
+      "He agrees with the result mainly because arbitration clauses are always invalid after an accident."
+    ],
+    "fc-11-4": [
+      "He thinks any one public sighting already reveals the same thing as an aggregated travel history.",
+      "He supports a broad rule because all future camera networks can use the same narrow-query justification.",
+      "He favors banning every license-plate camera because even the limited query was a home search."
+    ],
+    "fc-12-4": [
+      "He thinks the absence of officer misconduct proves that a mentally ill person made a meaningful choice.",
+      "He believes recognizing the warning\u2019s words necessarily establishes the capacity to act on them.",
+      "He disagrees because the review says these particular officers deliberately created the pressure."
+    ],
+    "fc-13-4": [
+      "He thinks only unusual technology deserves scrutiny and common equipment should always be exempt.",
+      "He believes an interior detail loses protection if a court decides it is too uninteresting.",
+      "He would decide the case only by how much the existing camera revealed, ignoring future capability."
+    ],
+    "fc-14-4": [
+      "He believes the class ruling already establishes that searchable yearbooks necessarily violate the law.",
+      "He supports certification only because every class member has already proved an actual name search.",
+      "He rejects the distinction between one public yearbook and a searchable subscription database."
+    ],
+    "fc-15-4": [
+      "He thinks earlier context always governs every later accusation, regardless of wording or placement.",
+      "He believes losing a job proves falsity and therefore would award Talbot a final judgment now.",
+      "He agrees that a reader must treat any assault accusation as opinion if racism was discussed earlier."
+    ],
+    "fc-16-4": [
+      "He believes age should determine the outcome automatically, without considering restrictions on freedom.",
+      "He thinks the remand already established innocence, so considering consequences is unnecessary.",
+      "He believes later voluntariness review is enough and a child\u2019s age need not affect custody."
+    ]
+  };
+  for (const item of questions) if (closeReadingDistractors[item.id]) item.distractors = closeReadingDistractors[item.id];
+  var finalDistractors = {
+    "fc-3-3": [
+      "Officers could continue searching for evidence once the original welfare concern had been resolved.",
+      "The scope depended only on the officer\u2019s stated intentions, regardless of what the emergency required.",
+      "A reasonable initial entry removed the need to justify later investigative searches inside the home."
+    ],
+    "fc-4-0": [
+      "The Court affirmed a new IQ-scoring rule and made the lower judgment binding nationwide.",
+      "The dismissal vacated Smith\u2019s relief and required the lower courts to start over without Atkins.",
+      "The Court rejected the disability claim on the merits while leaving only the conviction intact."
+    ],
+    "fc-5-1": [
+      "The Court found that police had individualized suspicion of a weapon before giving any exit order.",
+      "The Court treated the exit order as consensual because Mimms had not verbally objected to leaving.",
+      "The Court held that an exit order imposed no government restraint at all after the original stop."
+    ],
+    "fc-5-3": [
+      "It allowed a frisk based solely on a plate violation without any concern about a weapon.",
+      "It prevented judges from considering officer safety when evaluating a lawful traffic stop.",
+      "It treated the exit order as valid only because Mimms had consented to all further police commands."
+    ],
+    "fc-6-0": [
+      "Seven favored ending the recount; five disagreed that inconsistent standards posed any problem.",
+      "Five saw an equal-protection defect, but seven favored the deadline-based remedy that stopped counting.",
+      "Seven agreed on the remedy, while only five believed the recount raised a constitutional issue."
+    ],
+    "fc-6-1": [
+      "Every county used one uniform rule, but the Court found that rule categorically prohibited manual counting.",
+      "The Court objected to manual recounts even if each disputed ballot would be treated under the same rule.",
+      "The statewide intent standard was held unconstitutional solely because it involved examining voter intent."
+    ],
+    "fc-6-2": [
+      "It believed the recount had already conclusively resolved every disputed ballot under consistent standards.",
+      "It held that the state court lacked authority to create any uniform counting standard at any time.",
+      "It believed repairing the rules would violate equal protection even if a valid recount could finish on time."
+    ],
+    "fc-7-0": [
+      "A presumption of automatic release unless the government first proved a new criminal conviction.",
+      "A bond hearing that judges were required to grant regardless of danger or risk of nonappearance.",
+      "A ruling that everyone in the group was exempt from any separate mandatory-detention provision."
+    ],
+    "fc-7-2": [
+      "It read the applicant classification as conclusive proof that a person remains actively seeking entry indefinitely.",
+      "It focused on how long someone had lived inside the country without examining the statute\u2019s distinct phrases.",
+      "It treated seeking admission as meaning any request for release from detention after an interior arrest."
+    ],
+    "fc-7-3": [
+      "The bond framework prevented judges from considering any past conduct once a person had lived inside the country.",
+      "The ruling required release whenever a detained person asked for bond, without an individualized assessment.",
+      "Separate mandatory-detention provisions could not apply to anyone included in the court\u2019s interpretation."
+    ],
+    "fc-8-0": [
+      "The withheld confession undermined guilt, but the Court left the punishment proceeding entirely untouched.",
+      "The Court required the prosecution to dismiss the case because any suppression automatically establishes innocence.",
+      "The Court found no constitutional violation but granted a new punishment hearing solely as a discretionary remedy."
+    ],
+    "fc-10-0": [
+      "He received and knowingly accepted the offered terms, but Uber could not prove he had read each paragraph.",
+      "The court treated every passenger injury claim as legally incapable of being subject to arbitration.",
+      "The terms were rejected because Cheryl\u2019s account could never be used to arrange a guest ride at all."
+    ],
+    "fc-11-1": [
+      "Any information once exposed publicly can be aggregated indefinitely without changing the constitutional analysis.",
+      "The court resolved the constitutionality of all larger networks by treating them as identical to this narrow query.",
+      "Only how the car looked mattered; the geographic scope, duration, and aggregation were expressly irrelevant."
+    ],
+    "fc-12-0": [
+      "The Court found the illness irrelevant even if officers knowingly exploited it to produce the confession.",
+      "The Court treated receiving a warning as conclusive proof of voluntariness regardless of any later police coercion.",
+      "The Court required proof that the illness affected the confession but found no evidence that it did."
+    ],
+    "fc-12-2": [
+      "Whether the officers had concealed their identities before Connelly began speaking.",
+      "Whether the officers themselves had created the psychiatric pressure that led him to approach them.",
+      "Whether his earlier incompetency finding automatically barred trial even after he regained competence."
+    ],
+    "fc-13-2": [
+      "The Court held the thermal scan invalid but affirmed the warrant without reviewing the remaining evidence.",
+      "The Court reversed the conviction outright after deciding that no other warrant evidence could possibly matter.",
+      "The Court remanded only to decide whether the thermal device had become generally available after the search."
+    ],
+    "fc-14-0": [
+      "A final liability judgment, with only the amount of damages left for the class to establish.",
+      "A ruling that searchability alone conclusively violated California law for every person named in a yearbook.",
+      "An order requiring each person to bring a separate case before any shared legal theory could be considered."
+    ],
+    "fc-14-2": [
+      "Every individualized membership question had to be definitively resolved before any common theory could proceed.",
+      "Any possible membership disagreement required denying certification even if later procedures could resolve it.",
+      "Certification prevented the court from revisiting whether particular people properly belonged in the class."
+    ],
+    "fc-15-0": [
+      "All three protected the assault statements, while two separately protected the racism statements.",
+      "Two protected the racism statements, while the third would allow only the related employment claim to proceed.",
+      "All three agreed that every challenged statement was protected on the same reasoning with no disagreement."
+    ],
+    "fc-15-1": [
+      "A final declaration that the challenged factual allegations were true, rather than merely protected speech.",
+      "Dismissal of the underlying claims, despite obtaining a separate award under the anti-SLAPP statute.",
+      "A finding that all speech in the dispute necessarily addressed a public concern for every legal purpose."
+    ],
+    "fc-15-3": [
+      "The descriptions conclusively proved the accusations true, so context no longer mattered to the ruling.",
+      "They showed that readers had to assume additional undisclosed facts rather than form their own view.",
+      "They made all later statements protected regardless of whether later readers could see the descriptions."
+    ],
+    "fc-16-3": [
+      "The majority held that considering age at a later hearing made the timing of custodial warnings irrelevant.",
+      "The majority decided that age could be used only at the voluntariness stage and therefore excluded it from custody.",
+      "The majority treated custody and voluntariness as interchangeable questions requiring only one final ruling."
+    ],
+    "fc-3-4": [
+      "He supports entry because a welfare concern is sufficient even without concrete evidence that aid is urgently needed.",
+      "He supports the result but thinks the community-caretaking label should replace the narrower emergency-aid limit.",
+      "He would require evidence of a crime rather than imminent injury before officers could provide emergency aid."
+    ],
+    "fc-5-4": [
+      "He supports the majority because the exit order and any ensuing frisk are the same safety measure legally.",
+      "He sides entirely with the dissent because he considers every exit order equivalent to a full vehicle search.",
+      "He supports any added command during a stop once police invoke safety, without concern about aggression."
+    ],
+    "fc-7-4": [
+      "He supports the majority because the hearing must result in release once a person requests individual review.",
+      "He supports the result only if judges stop considering danger and the chance of returning to court.",
+      "He thinks access to a hearing is too weak and argues that the ruling already eliminated detention for the class."
+    ],
+    "fc-9-4": [
+      "He thinks every off-campus post should be immune even if it directly threatens a particular student.",
+      "He agrees that immature language by itself establishes enough disruption to justify removing a student from a team.",
+      "He would make the result depend only on the coach\u2019s annoyance rather than the setting or actual disruption."
+    ]
+  };
+  for (const item of questions) if (finalDistractors[item.id]) item.distractors = finalDistractors[item.id];
+  var CASE_QUESTIONS = Object.freeze(questions.map((q2) => Object.freeze({ ...q2, distractors: Object.freeze(q2.distractors) })));
+
+  // endless-engine.js
+  var ENDLESS_VERSION = 1;
+  var SECRET = [0, 1, 2, 3, 0];
+  function shuffleCopy(items, rng = Math.random) {
+    const a = [...items];
+    for (let i = a.length - 1; i > 0; i--) {
+      const j = Math.floor(rng() * (i + 1));
+      [a[i], a[j]] = [a[j], a[i]];
+    }
+    return a;
+  }
+  function newEndless(bank, rng = Math.random) {
+    return issueQuestion({ version: ENDLESS_VERSION, deck: [], keyTail: [], choiceTail: [], streak: 0, best: 0, wins: 0, answered: 0, correct: 0, cycle: 0, phase: "question", lastId: null }, bank, rng);
+  }
+  function issueQuestion(state, bank, rng = Math.random) {
+    if (!state.deck.length) {
+      state.deck = shuffleCopy(bank.map((q3) => q3.id), rng);
+      state.cycle++;
+      if (state.deck[0] === state.lastId && state.deck.length > 1) [state.deck[0], state.deck[1]] = [state.deck[1], state.deck[0]];
+    }
+    const id = state.deck.shift(), q2 = bank.find((q3) => q3.id === id);
+    if (!q2) throw Error("Unknown case question");
+    const options = shuffleCopy([q2.answer, ...q2.distractors], rng);
+    let answer = options.indexOf(q2.answer);
+    if (state.keyTail.length === 4 && state.keyTail.every((v, i) => v === SECRET[i]) && answer === SECRET[4]) {
+      [options[0], options[1]] = [options[1], options[0]];
+      answer = 1;
+    }
+    state.keyTail = [...state.keyTail, answer].slice(-4);
+    state.current = { id, options, answer };
+    state.lastId = id;
+    state.selected = null;
+    state.feedback = null;
+    state.phase = "question";
+    return state;
+  }
+  function answerEndless(state, index) {
+    if (state.phase !== "question" || !Number.isInteger(index) || index < 0 || index > 3) return state;
+    const correct = index === state.current.answer;
+    state.answered++;
+    if (correct) state.correct++;
+    state.streak = correct ? state.streak + 1 : 0;
+    state.best = Math.max(state.best, state.streak);
+    state.choiceTail = [...state.choiceTail, index].slice(-5);
+    const shortcut = state.choiceTail.length === 5 && state.choiceTail.every((v, i) => v === SECRET[i]);
+    state.selected = index;
+    state.feedback = { correct, shortcut };
+    if (shortcut || state.streak === 5) {
+      state.phase = "won";
+      state.wins++;
+    } else state.phase = "feedback";
+    return state;
+  }
+  function continueEndless(state, bank, rng = Math.random) {
+    if (state.phase === "question") return state;
+    if (state.phase === "won") {
+      state.streak = 0;
+      state.choiceTail = [];
+    }
+    return issueQuestion(state, bank, rng);
+  }
+  function restoreEndless(raw, bank, rng = Math.random) {
+    if (!raw || raw.version !== ENDLESS_VERSION || !Array.isArray(raw.deck) || !Array.isArray(raw.current?.options) || !bank.some((q3) => q3.id === raw.current.id) || raw.deck.some((id) => !bank.some((q3) => q3.id === id))) return newEndless(bank, rng);
+    const q2 = bank.find((q3) => q3.id === raw.current.id);
+    if (raw.current.options.length !== 4 || new Set(raw.current.options).size !== 4 || raw.current.options[raw.current.answer] !== q2.answer || raw.current.options.some((option) => ![q2.answer, ...q2.distractors].includes(option))) return newEndless(bank, rng);
+    return raw;
+  }
+
+  // endless.js
+  var esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
+  var letters = ["A", "B", "C", "D"];
+  var CaseChallenge = class {
+    constructor(app2, ocean2, { read: read2, save: save2 }) {
+      this.app = app2;
+      this.ocean = ocean2;
+      this.save = save2;
+      this.state = restoreEndless(read2("endless-run", null), CASE_QUESTIONS);
+      this.state.depth ??= 0;
+    }
+    persist() {
+      this.save("endless-run", this.state);
+    }
+    render() {
+      const s = this.state, q2 = CASE_QUESTIONS.find((q3) => q3.id === s.current.id), answered = s.phase !== "question", won = s.phase === "won", secret = s.feedback?.shortcut;
+      this.ocean.set("dive", s.depth);
+      this.app.innerHTML = `<section class="case-screen" aria-label="Endless Future Counsel cases"><div class="dive-hud"><div class="hud-badge"><small>STREAK</small><strong>${s.streak}<span class="case-of"> / 5</span></strong></div><div class="dive-progress"><div class="case-streak" aria-label="${s.streak} of five consecutive correct answers">${Array.from({ length: 5 }, (_, i) => `<span class="${i < s.streak ? "filled" : ""}"></span>`).join("")}</div><small>ENDLESS CASES \xB7 ${s.wins} CLEARED</small></div><div class="hud-badge score-badge"><small>CASE</small><strong>${s.answered + (answered ? 0 : 1)}</strong></div></div>${won ? `<section class="case-victory"><p class="case-kicker">${secret ? "A SEALED MOTION" : "FIVE CONSECUTIVE RULINGS"}</p><h1>${secret ? "PASSAGE GRANTED" : "CASE CLOSED."}</h1><p>${secret ? "The court grants your motion." : "Five right in a row. You earned this descent."}</p><div class="case-victory-rule"></div><p class="case-victory-stats">${s.wins} ${s.wins === 1 ? "CHALLENGE" : "CHALLENGES"} CLEARED \xB7 ${s.correct} / ${s.answered} ANSWERS CORRECT</p><button class="pixel-button primary" data-case-next>KEEP DIVING \u221E</button><a href="#home">\u2191 BACK TO THE SURFACE</a></section>${secret ? `<div class="sealed-motion" role="status" aria-label="Secret passage granted"><div class="motion-ripple"></div><div class="motion-ripple second"></div><div class="motion-stamp"><small>UNDER SEAL</small><strong>MOTION<br>GRANTED</strong><span>\u2696</span></div><div class="motion-flash"></div></div>` : ""}` : `<section class="case-panel"><div class="case-meta"><span>${esc(q2.category)}</span><span>GET FIVE RIGHT IN A ROW</span></div><h1 id="case-question">${esc(q2.prompt)}</h1><div class="case-options" role="group" aria-labelledby="case-question">${s.current.options.map((option, i) => `<button class="case-option ${answered ? i === s.current.answer ? "correct" : i === s.selected ? "incorrect" : "unchosen" : ""}" data-case-choice="${i}" ${answered ? "disabled" : ""}><span class="choice-letter">${letters[i]}</span><span>${esc(option)}</span>${answered && i === s.current.answer ? '<b aria-label="Correct answer">\u2713</b>' : answered && i === s.selected ? '<b aria-label="Your incorrect answer">\xD7</b>' : ""}</button>`).join("")}</div>${answered ? `<div class="case-feedback ${s.feedback.correct ? "right" : "wrong"}" aria-live="polite"><p>${s.feedback.correct ? `${s.streak} / 5 \xB7 CORRECT` : "STREAK BROKEN \xB7 BACK TO ZERO"}</p><div>${esc(q2.explanation)}</div><a href="${q2.source}" target="_blank" rel="noopener">READ GAVIN\u2019S REVIEW \xB7 ${esc(q2.caseName)} \u2197</a><button class="pixel-button case-next" data-case-next>NEXT CASE \u2193 <small>ENTER</small></button></div>` : `<p class="case-controls-hint">A\u2013D or 1\u20134 to answer \xB7 no timer \xB7 one mistake resets the streak</p><p class="case-source-note">Close reading of ${CASE_SOURCES.length} Future Counsel reviews \xB7 ${CASE_QUESTIONS.length} shuffled questions \xB7 unlimited rounds</p>`}</section>`}</section>`;
+      this.app.querySelectorAll("[data-case-choice]").forEach((b) => b.onclick = () => this.answer(Number(b.dataset.caseChoice)));
+      this.app.querySelector("[data-case-next]")?.addEventListener("click", () => this.next());
+      this.persist();
+    }
+    answer(index) {
+      if (this.state.phase !== "question") return;
+      answerEndless(this.state, index);
+      if (this.state.feedback.correct) this.state.depth = Math.min(7e3, this.state.depth + 350);
+      if (this.state.feedback.shortcut) this.state.depth = Math.min(7e3, this.state.depth + 1e3);
+      if (this.state.feedback.correct || this.state.feedback.shortcut) this.ocean.celebrate();
+      this.render();
+    }
+    next() {
+      continueEndless(this.state, CASE_QUESTIONS);
+      this.render();
+      document.querySelector("#case-question")?.scrollIntoView({ block: "nearest", behavior: "instant" });
+    }
+    keydown(e) {
+      if (e.ctrlKey || e.metaKey || e.altKey || e.target.closest("input,textarea,select") || document.querySelector("#modal").open) return;
+      const key = e.key.toUpperCase(), index = /^[A-D]$/.test(key) ? letters.indexOf(key) : /^[1-4]$/.test(key) ? Number(key) - 1 : -1;
+      if (this.state.phase === "question" && index >= 0) {
+        e.preventDefault();
+        this.answer(index);
+      } else if (this.state.phase !== "question" && key === "ENTER") {
+        e.preventDefault();
+        this.next();
+      }
+    }
+    reset() {
+      this.state = newEndless(CASE_QUESTIONS);
+      this.state.depth = 0;
+      this.render();
+    }
+  };
+
   // sprites.js
   var palette = { ".": "none", n: "#10243a", w: "#f6f4da", c: "#7ce3ed", b: "#3785ae", g: "#b1edce", y: "#e8c56d", p: "#f27d9f", r: "#bf5277", o: "#ecaa77" };
   var sprites = {
@@ -49,16 +1112,55 @@
     }
   };
 
+  // depth-world.js
+  var BIOMES = [
+    { at: 0, name: "SUNLIT WATERS", color: "#81dfe3" },
+    { at: 200, name: "THE TWILIGHT", color: "#80cbdc" },
+    { at: 650, name: "MIDNIGHT RUINS", color: "#9eade0" },
+    { at: 1500, name: "THE ABYSS", color: "#bc9ee3" },
+    { at: 3e3, name: "HADAL DEPTHS", color: "#e0b87b" }
+  ];
+  var STOPS = [[0, 0], [200, 0.45], [650, 1.35], [1500, 2.7], [3e3, 4.3], [7e3, 7.8], [8e3, 8.6]];
+  function depthDistance(depth, height) {
+    const d = Math.max(0, Math.min(8e3, depth));
+    for (let i = 1; i < STOPS.length; i++) if (d <= STOPS[i][0]) {
+      const [a, x] = STOPS[i - 1], [b, y] = STOPS[i];
+      return (x + (y - x) * (d - a) / (b - a)) * height;
+    }
+    return STOPS.at(-1)[1] * height;
+  }
+  var worldAtDepth = (depth, height) => height * 0.86 + depthDistance(depth, height);
+  var cameraAtDepth = (depth, height) => worldAtDepth(depth, height) - height * 0.4;
+  var depthScreenY = (depth, camera, height) => worldAtDepth(depth, height) - camera;
+  function biomeAt(depth) {
+    return [...BIOMES].reverse().find((b) => depth >= b.at) || BIOMES[0];
+  }
+  function sceneryBands(height) {
+    return [
+      { key: "shallow", top: height * 0.48, bottom: worldAtDepth(220, height), color: "#1a4e70", opacity: 1 },
+      { key: "mid", top: worldAtDepth(180, height), bottom: worldAtDepth(1550, height), color: "#102d49", opacity: 0.91 },
+      { key: "trench", top: worldAtDepth(1450, height), bottom: worldAtDepth(3100, height), color: "#10273b", opacity: 0.9 },
+      { key: "hadal", top: worldAtDepth(2950, height), bottom: worldAtDepth(8e3, height) + height, color: "#171d37", opacity: 0.9 }
+    ];
+  }
+  var LANDMARKS = [
+    { at: 200, text: "LIGHT BEGINS TO FADE", side: 0 },
+    { at: 450, text: "THE LAST SUNBEAMS", side: 1 },
+    { at: 650, text: "MIDNIGHT RUINS", side: 0 },
+    { at: 1050, text: "THE SUNKEN COURT", side: 1 },
+    { at: 1500, text: "THE ABYSS", side: 0 },
+    { at: 2100, text: "LIFE IN THE DARK", side: 1 },
+    { at: 3e3, text: "THE HADAL ZONE", side: 0 },
+    { at: 4300, text: "THE DEEP APPEAL", side: 1 },
+    { at: 6e3, text: "ONE IN A COUNCILLION", side: 0 }
+  ];
+
   // ocean.js
   var clamp = (v, a = 0, b = 1) => Math.max(a, Math.min(b, v));
   var smooth = (a, b, v) => {
     const x = clamp((v - a) / (b - a));
     return x * x * (3 - 2 * x);
   };
-  var BIOMES = [{ at: 0, name: "SUNLIT WATERS", color: "#6de4e6" }, { at: 350, name: "THE TWILIGHT", color: "#6bbfd9" }, { at: 1100, name: "MIDNIGHT ZONE", color: "#8499d4" }, { at: 3e3, name: "THE ABYSS", color: "#bd92da" }, { at: 5500, name: "HADAL DEPTHS", color: "#e4b678" }];
-  function biomeAt(depth) {
-    return [...BIOMES].reverse().find((b) => depth >= b.at) || BIOMES[0];
-  }
   var Ocean = class {
     constructor(canvas) {
       this.metrics = new RenderMetrics();
@@ -78,6 +1180,7 @@
       this.raf = null;
       this.cacheKey = "";
       this.cacheRebuilds = 0;
+      this.tiles = /* @__PURE__ */ new Map();
       this.backdrop = document.createElement("canvas");
       this.background = this.backdrop.getContext("2d", { alpha: false });
       this.loop = this.loop.bind(this);
@@ -92,6 +1195,7 @@
         this.ctx.imageSmoothingEnabled = false;
         this.background.imageSmoothingEnabled = false;
         this.cacheKey = "";
+        this.tiles.clear();
         this.schedule();
       };
       this.resize();
@@ -113,6 +1217,7 @@
       img.decoding = "async";
       img.onload = () => {
         this.cacheKey = "";
+        this.tiles.delete(key);
         this.schedule();
       };
       img.src = "assets/" + this.files[key];
@@ -128,8 +1233,8 @@
       if (mode === "dive" || mode === "party") {
         this.load("shallow");
         this.load("mid");
-        if (depth >= 1300) this.load("trench");
-        if (depth >= 4e3) this.load("hadal");
+        if (depth >= 900) this.load("trench");
+        if (depth >= 2400) this.load("hadal");
       }
       this.schedule();
     }
@@ -145,6 +1250,15 @@
     get displayedDepth() {
       return Math.round(this.visualDepth);
     }
+    get targetCamera() {
+      return this.mode === "dive" ? cameraAtDepth(this.depth, this.h) : this.mode === "party" ? cameraAtDepth(0, this.h) : 0;
+    }
+    snap(depth = 0) {
+      this.visualDepth = depth;
+      this.camera = this.mode === "dive" ? cameraAtDepth(depth, this.h) : 0;
+      this.cacheKey = "";
+      this.schedule();
+    }
     celebrate() {
       this.burst = 1;
       this.schedule();
@@ -152,19 +1266,10 @@
     ready(key) {
       return this.images[key]?.complete && this.images[key]?.naturalWidth > 0;
     }
-    layer(key, alpha, y, height, drift = 0) {
-      if (!this.ready(key) || alpha < 2e-3) return;
-      const c = this.paintContext || this.ctx;
-      c.globalAlpha = alpha;
-      c.drawImage(this.images[key], -8 + drift, y, this.w + 16, height);
-      c.globalAlpha = 1;
-    }
     loop(now) {
       this.raf = null;
       if (document.hidden) return;
-      const goal = this.mode === "dive" ? this.h * 0.68 + this.visualDepth * 0.09 : this.mode === "party" ? this.h * 0.62 : 0;
-      const moving = Math.abs(this.depth - this.visualDepth) > 1 || Math.abs(goal - this.camera) > 1;
-      const interval = moving ? 1e3 / 60 : 1e3 / 30;
+      const moving = Math.abs(this.depth - this.visualDepth) > 1 || Math.abs(this.targetCamera - this.camera) > 1, interval = moving ? 1e3 / 60 : 1e3 / 30;
       if (now - this.lastPaint < interval - 0.8) {
         this.schedule();
         return;
@@ -174,11 +1279,11 @@
       this.lastPaint += interval;
       if (now - this.lastPaint > interval) this.lastPaint = now;
       if (!this.reduced) this.time += dt * 0.42;
-      const ease = this.reduced ? 1 : 1 - Math.exp(-dt * 1.3);
+      const ease = this.reduced ? 1 : 1 - Math.exp(-dt * 2.3);
       this.visualDepth += (this.depth - this.visualDepth) * ease;
       if (Math.abs(this.depth - this.visualDepth) < 0.2) this.visualDepth = this.depth;
-      const target = this.mode === "dive" ? this.h * 0.68 + this.visualDepth * 0.09 : this.mode === "party" ? this.h * 0.62 : 0;
-      this.camera += (target - this.camera) * (this.reduced ? 1 : 1 - Math.exp(-dt * 1.6));
+      const target = this.mode === "dive" ? cameraAtDepth(this.visualDepth, this.h) : this.mode === "party" ? cameraAtDepth(0, this.h) : 0;
+      this.camera = this.reduced ? target : this.camera + (target - this.camera) * (1 - Math.exp(-dt * 7));
       if (Math.abs(target - this.camera) < 0.2) this.camera = target;
       this.burst = Math.max(0, this.burst - dt * 0.65);
       const started = this.metrics.enabled ? performance.now() : 0;
@@ -186,121 +1291,157 @@
       this.metrics.sample(started, now, this.ratio, this.cacheRebuilds);
       if (!this.reduced) this.schedule();
     }
+    tile(band) {
+      if (!this.ready(band.key)) return null;
+      if (this.tiles.has(band.key)) return this.tiles.get(band.key);
+      const edge = Math.round(this.h * 0.12), height = Math.ceil(band.bottom - band.top + edge * 2), tile = document.createElement("canvas");
+      tile.width = this.w;
+      tile.height = height;
+      const c = tile.getContext("2d");
+      c.imageSmoothingEnabled = false;
+      c.fillStyle = band.color;
+      c.fillRect(0, 0, this.w, height);
+      c.globalAlpha = band.opacity;
+      c.drawImage(this.images[band.key], 0, 0, this.w, height);
+      c.globalAlpha = 1;
+      const mask = c.createLinearGradient(0, 0, 0, height);
+      mask.addColorStop(0, "#fff0");
+      mask.addColorStop(edge / height, "#fff");
+      mask.addColorStop(1 - edge / height, "#fff");
+      mask.addColorStop(1, "#fff0");
+      c.globalCompositeOperation = "destination-in";
+      c.fillStyle = mask;
+      c.fillRect(0, 0, this.w, height);
+      c.globalCompositeOperation = "source-over";
+      const entry = { canvas: tile, top: band.top - edge, height };
+      this.tiles.set(band.key, entry);
+      return entry;
+    }
     environment() {
-      const key = [this.mode, Math.round(this.camera), Math.round(this.visualDepth / 8), ...Object.keys(this.images).map((k) => Number(this.ready(k)))].join(":");
+      const key = [this.mode, Math.round(this.camera), ...Object.keys(this.images).map((k) => Number(this.ready(k)))].join(":");
       if (key === this.cacheKey) return;
       this.cacheKey = key;
       this.cacheRebuilds++;
-      const c = this.background, W = this.w, H = this.h, d = this.visualDepth, surface = H * 0.48 - this.camera;
-      this.paintContext = c;
+      const c = this.background, W = this.w, H = this.h, surface = H * 0.48 - this.camera;
       c.globalAlpha = 1;
-      c.fillStyle = "#091829";
+      const water = c.createLinearGradient(0, surface, 0, worldAtDepth(8e3, H) - this.camera);
+      for (const [d, color] of [[0, "#225b7c"], [200, "#173b59"], [650, "#132e4b"], [1500, "#112d42"], [3e3, "#1b243b"], [8e3, "#152038"]]) water.addColorStop((worldAtDepth(d, H) - H * 0.48) / (worldAtDepth(8e3, H) - H * 0.48), color);
+      water.addColorStop(0, "#286886");
+      c.fillStyle = water;
       c.fillRect(0, 0, W, H);
       if (surface > 0) {
-        const sky = c.createLinearGradient(0, 0, 0, H * 0.48);
-        sky.addColorStop(0, "#88cedd");
-        sky.addColorStop(1, "#dfefec");
+        const sky = c.createLinearGradient(0, -this.camera, 0, surface);
+        sky.addColorStop(0, "#86ccdd");
+        sky.addColorStop(1, "#dcefeb");
         c.fillStyle = sky;
-        c.fillRect(0, 0, W, surface);
-        this.layer("sky", 1, -this.camera, H * 0.48);
+        c.fillRect(0, 0, W, Math.min(H, surface));
+        if (this.ready("sky")) {
+          const image = this.images.sky, scale = Math.max(W / image.naturalWidth, H * 0.48 / image.naturalHeight), w = image.naturalWidth * scale, h = image.naturalHeight * scale;
+          c.save();
+          c.beginPath();
+          c.rect(0, 0, W, Math.min(H, surface));
+          c.clip();
+          c.drawImage(image, (W - w) / 2, surface - h, w, h);
+          c.restore();
+        }
       }
-      const start = Math.max(0, surface);
-      c.save();
-      c.beginPath();
-      c.rect(0, start, W, H - start);
-      c.clip();
-      const mid = smooth(250, 1150, d), trench = smooth(2300, 3700, d), hadal = smooth(5100, 6300, d), g = c.createLinearGradient(0, 0, 0, H);
-      g.addColorStop(0, d < 400 ? "#143e5b" : d < 2500 ? "#0b2038" : "#081420");
-      g.addColorStop(1, "#071323");
-      c.fillStyle = g;
-      c.fillRect(0, start, W, H);
       if (this.mode === "home" || this.mode === "summary") {
-        const sea = c.createLinearGradient(0, start, 0, H);
-        sea.addColorStop(0, "#17445f");
-        sea.addColorStop(0.24, "#102f49");
-        sea.addColorStop(1, "#081b30");
+        const sea = c.createLinearGradient(0, surface, 0, H);
+        sea.addColorStop(0, "#194760");
+        sea.addColorStop(1, "#102c47");
         c.fillStyle = sea;
-        c.fillRect(0, start, W, H - start);
+        c.fillRect(0, Math.max(0, surface), W, H - Math.max(0, surface));
       } else {
-        this.layer("shallow", 1 - mid, surface, Math.max(H * 1.65, W * 0.98));
-        this.layer("mid", mid * (1 - trench), -H * 0.16 - d * 0.018, H * 1.75);
-        this.layer("trench", trench * (1 - hadal), -H * 0.18 - (d - 2300) * 0.014, H * 1.7);
-        this.layer("hadal", hadal, -H * 0.18 - (d - 5100) * 0.012, H * 1.7);
+        c.save();
+        c.beginPath();
+        c.rect(0, Math.max(0, surface), W, H - Math.max(0, surface));
+        c.clip();
+        for (const band of sceneryBands(H)) {
+          if (band.bottom + H * 0.12 < this.camera || band.top - H * 0.12 > this.camera + H) continue;
+          this.load(band.key);
+          const tile = this.tile(band);
+          if (tile) c.drawImage(tile.canvas, 0, Math.round(tile.top - this.camera));
+        }
+        c.restore();
       }
-      if (hadal) {
-        c.fillStyle = `rgba(6,2,17,${hadal * 0.34})`;
-        c.fillRect(0, 0, W, H);
-      }
-      const shade = c.createLinearGradient(0, 0, 0, H);
-      shade.addColorStop(0, "#020b1700");
-      shade.addColorStop(1, this.mode === "home" ? "#020b1744" : "#020b1733");
-      c.fillStyle = shade;
-      c.fillRect(0, 0, W, H);
-      c.restore();
       if (this.mode === "summary") {
-        c.fillStyle = "#071320b8";
+        c.fillStyle = "#0c1d3099";
         c.fillRect(0, 0, W, H);
       }
-      this.paintContext = null;
     }
     draw(t) {
-      const c = this.ctx, W = this.w, H = this.h, d = this.visualDepth, surface = H * 0.48 - this.camera;
+      const c = this.ctx, W = this.w, H = this.h, d = this.visualDepth, surface = H * 0.48 - this.camera, mid = smooth(200, 650, d), hadal = smooth(2800, 3300, d);
       this.environment();
       c.globalAlpha = 1;
       c.drawImage(this.backdrop, 0, 0);
-      const start = Math.max(0, surface), mid = smooth(250, 1150, d), hadal = smooth(5100, 6300, d);
       c.save();
       c.beginPath();
-      c.rect(0, start, W, H - start);
+      c.rect(0, Math.max(0, surface), W, H - Math.max(0, surface));
       c.clip();
       this.fishSchool(t, d, mid);
-      const wake = this.burst * 16;
+      const wake = this.burst * 12;
       for (let i = 0; i < (this.mode === "home" ? 14 : 26); i++) {
-        const x = (i * 127.73 + Math.sin(t * 0.28 + i) * 9 + W * 2) % W;
-        const y = ((i * 83.41 - t * (3 + i % 5 + wake) + this.camera * 0.25) % (H + 50) + (H + 50)) % (H + 50) - 20;
-        const a = 0.06 + i % 5 * 0.035;
-        c.fillStyle = `rgba(${hadal > 0.4 ? "194,162,226" : "157,214,229"},${a})`;
+        const x = (i * 127.73 + Math.sin(t * 0.28 + i) * 9 + W * 2) % W, y = ((i * 83.41 - t * (3 + i % 5 + wake) - this.camera * 0.55) % (H + 50) + (H + 50)) % (H + 50) - 20;
+        c.fillStyle = `rgba(${hadal > 0.4 ? "194,162,226" : "157,214,229"},${0.09 + i % 5 * 0.035})`;
         const size = i % 13 === 0 ? 3 : 1;
         c.fillRect(Math.round(x), Math.round(y), size, size);
-        if (i % 13 === 0) {
-          c.fillStyle = "#b9e6e855";
-          c.fillRect(Math.round(x) + 1, Math.round(y) - 1, 2, 1);
-        }
         if (wake > 4 && i % 2 === 0) {
           c.fillStyle = "#9dc9e41a";
           c.fillRect(Math.round(x), Math.round(y) + 4, 1, Math.min(22, wake * 0.3));
         }
       }
-      if (d > 900) this.glowLife(t, d, hadal);
-      if (this.burst > 0) {
-        for (let i = 0; i < 24; i++) {
-          const a = i * 2.4, r = (1 - this.burst) * 180;
-          c.fillStyle = i % 3 === 0 ? "#f1c36b88" : "#6ee0ea66";
-          c.fillRect(Math.round(W / 2 + Math.cos(a) * r), Math.round(H * 0.54 + Math.sin(a) * r * 0.5), 2, 3);
-        }
-      }
+      if (d > 600) this.glowLife(t, d, hadal);
       c.restore();
+      if (this.mode === "dive") this.depthDetails();
       if (surface > -10 && surface < H + 8) {
         for (let row = 0; row < 7; row++) {
           c.fillStyle = row < 2 ? "#c4ede9" : "#69bbcd";
           c.globalAlpha = (1 - row / 8) * 0.58;
           for (let x = -20; x < W + 20; x += 23 + row * 7) {
-            const length = 7 + (Math.sin(x * 0.019 + t * 0.8 + row) + 1) * 13;
-            const y = Math.round(surface + row * 2 + Math.sin(x * 0.024 + t * 1.2 + row) * 1.3);
+            const length = 7 + (Math.sin(x * 0.019 + t * 0.8 + row) + 1) * 13, y = Math.round(surface + row * 2 + Math.sin(x * 0.024 + t * 1.2 + row) * 1.3);
             c.fillRect(Math.round(x + Math.sin(t * 0.6 + row) * 8), y, Math.round(length), 1);
           }
         }
         c.globalAlpha = 1;
       }
     }
+    depthDetails() {
+      const c = this.ctx, W = this.w, H = this.h, right = W - (W < 600 ? 14 : 24);
+      c.save();
+      c.fillStyle = "#a5c5d944";
+      c.fillRect(right, 96, 1, H - 236);
+      c.font = "11px VT,monospace";
+      c.textAlign = "right";
+      for (let d = 0; d <= 7500; d += 50) {
+        const y = depthScreenY(d, this.camera, H);
+        if (y < 100 || y > H - 145) continue;
+        const major = d % 100 === 0;
+        c.fillStyle = major ? "#a5c5d970" : "#a5c5d936";
+        c.fillRect(right - (major ? 12 : 5), Math.round(y), major ? 12 : 5, 1);
+        if (major) c.fillText(d.toLocaleString() + "m", right - 17, Math.round(y) + 4);
+      }
+      c.fillStyle = "#ec8faf";
+      c.fillRect(right - 15, Math.round(H * 0.4), 15, 1);
+      c.fillText("YOU", right - 20, Math.round(H * 0.4) + 4);
+      c.font = (W < 600 ? "10" : "12") + "px VT,monospace";
+      for (const mark of LANDMARKS) {
+        const y = depthScreenY(mark.at, this.camera, H);
+        if (y < 120 || y > H - 160) continue;
+        const x = mark.side ? W * 0.81 : W * 0.16;
+        c.textAlign = mark.side ? "right" : "left";
+        c.fillStyle = "#8bb4c980";
+        c.fillText((mark.side ? "" : "\u2500\u2500  ") + mark.text + (mark.side ? "  \u2500\u2500" : ""), x, Math.round(y));
+      }
+      c.restore();
+    }
     fishSchool(t, d, mid) {
       const c = this.ctx;
       for (let i = 0; i < (this.mode === "home" ? 4 : 7); i++) {
-        const dir = i % 2 ? 1 : -1, scale = 0.65 + i % 4 * 0.2, x = (i * 179 + t * dir * (7 + i % 3) + this.w * 8) % (this.w + 100) - 50, y = this.h * 0.2 + (i * 73 + this.camera * 0.16) % (this.h * 0.7);
+        const dir = i % 2 ? 1 : -1, scale = 0.65 + i % 4 * 0.2, x = (i * 179 + t * dir * (7 + i % 3) + this.w * 8) % (this.w + 100) - 50, y = this.h * 0.2 + ((i * 73 - this.camera * 0.8) % (this.h * 0.7) + this.h * 0.7) % (this.h * 0.7);
         c.save();
         c.translate(Math.round(x), Math.round(y + Math.sin(t + i) * 2));
         c.scale(dir * scale, scale);
-        c.globalAlpha = mid > 0.6 ? 0.15 : 0.24;
+        c.globalAlpha = mid > 0.6 ? 0.3 : 0.24;
         c.fillStyle = mid > 0.6 ? "#3e7894" : "#051d32";
         const tail = Math.sin(t * 5 + i) > 0 ? 1 : 0;
         const rows = [[8, 0, 7, 1], [4, 1, 16, 1], [2, 2, 21, 1], [1, 3, 24, 2], [2, 5, 21, 1], [4, 6, 16, 1], [8, 7, 7, 1]];
@@ -727,17 +1868,17 @@ Wi-Fi`
   }
 
   // answer-bank.js
-  var esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
+  var esc2 = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
   function mountBank(root, pack2, chosen = "") {
     const sorted = [...pack2.answers].sort((a, b) => b.points - a.points || a.label.localeCompare(b.label));
     root.innerHTML = `<div class="bank-filters" aria-label="Filter by rarity"><button class="bank-filter selected" data-tier="all">All <small>${pack2.answers.length.toLocaleString()}</small></button>${[100, 85, 60, 30, 10].map((p) => `<button class="bank-filter ${tier(p).color}" data-tier="${p}">${tier(p).name} <small>${pack2.answers.filter((a) => a.points === p).length.toLocaleString()}</small></button>`).join("")}</div><label class="bank-search-label"><span aria-hidden="true">\u2315</span><input class="bank-search" type="search" aria-label="Search accepted answers" placeholder="Search ${pack2.answers.length.toLocaleString()} answers\u2026" autocomplete="off"></label><div class="bank-list" tabindex="0" aria-label="Accepted answers"></div><button class="text-button bank-more">SHOW 100 MORE \u2193</button><p class="bank-count fine-print"></p>`;
     let selected = "all", limit = 100;
     const list = root.querySelector(".bank-list"), search = root.querySelector("input");
     const render = () => {
-      const q = search.value.trim().toLowerCase();
-      const matches = sorted.filter((a) => (selected === "all" || a.points === Number(selected)) && a.label.toLowerCase().includes(q));
+      const q2 = search.value.trim().toLowerCase();
+      const matches = sorted.filter((a) => (selected === "all" || a.points === Number(selected)) && a.label.toLowerCase().includes(q2));
       const shown = matches.slice(0, limit);
-      list.innerHTML = shown.map((a) => `<div class="bank-row ${tier(a.points).color}"><span class="bank-creature">${tierSprite(a.points)}</span><span class="bank-answer">${esc(a.label)}${chosen === a.label ? "<em>YOU</em>" : ""}${a.quip ? `<small>${esc(a.quip)}</small>` : ""}</span><strong>+${a.points}</strong></div>`).join("") || '<p class="bank-empty">No answers found.</p>';
+      list.innerHTML = shown.map((a) => `<div class="bank-row ${tier(a.points).color}"><span class="bank-creature">${tierSprite(a.points)}</span><span class="bank-answer">${esc2(a.label)}${chosen === a.label ? "<em>YOU</em>" : ""}${a.quip ? `<small>${esc2(a.quip)}</small>` : ""}</span><strong>+${a.points}</strong></div>`).join("") || '<p class="bank-empty">No answers found.</p>';
       root.querySelector(".bank-count").textContent = shown.length.toLocaleString() + " of " + matches.length.toLocaleString() + " answers";
       root.querySelector(".bank-more").hidden = shown.length >= matches.length;
     };
@@ -766,13 +1907,13 @@ Wi-Fi`
 
   // benchmark.js
   var BENCHMARK_MODEL = Object.freeze({
-    version: "challenge-v2",
+    version: "target-265-v3",
     questions: 7,
     points: Object.freeze([0, 10, 30, 60, 85, 100]),
     profiles: Object.freeze([
-      Object.freeze({ name: "casual", weight: 0.2, probabilities: Object.freeze([0.08, 0.25, 0.32, 0.23, 0.1, 0.02]) }),
-      Object.freeze({ name: "regular", weight: 0.55, probabilities: Object.freeze([0.05, 0.14, 0.24, 0.3, 0.2, 0.07]) }),
-      Object.freeze({ name: "experienced", weight: 0.25, probabilities: Object.freeze([0.02, 0.07, 0.18, 0.32, 0.28, 0.13]) })
+      Object.freeze({ name: "casual", weight: 0.24, probabilities: Object.freeze([0.12, 0.32, 0.3, 0.18, 0.065, 0.015]) }),
+      Object.freeze({ name: "regular", weight: 0.61, probabilities: Object.freeze([0.08, 0.24, 0.3, 0.24, 0.11, 0.03]) }),
+      Object.freeze({ name: "experienced", weight: 0.15, probabilities: Object.freeze([0.04, 0.16, 0.26, 0.29, 0.18, 0.07]) })
     ])
   });
   function scoreDistribution(model = BENCHMARK_MODEL) {
@@ -823,7 +1964,7 @@ Wi-Fi`
     const y = (x) => base - densityAt(x) / peak * height;
     const path = densities.map((d, i) => (i ? "L" : "M") + i * 5 + "," + (base - d / peak * height).toFixed(2)).join(" "), fill = path + " L700,145 L0,145 Z";
     const marker = Math.max(2, Math.min(698, value));
-    return `<section class="result-benchmark" aria-label="Estimated score comparison"><div class="benchmark-heading"><span>ESTIMATED CHALLENGE CURVE</span><span>0\u2013700 POINTS</span></div><div class="bell-chart"><svg viewBox="0 0 700 157" preserveAspectRatio="none" role="img" aria-label="Modeled seven-question score distribution. Your score is ${value}. Estimated percentage of scores below yours: ${percentileText(percent)}."><defs><clipPath id="below-your-score"><rect x="0" y="0" width="${value}" height="157"/></clipPath></defs><path class="bell-area" d="${fill}"/><path class="bell-below" d="${fill}" clip-path="url(#below-your-score)"/><path class="bell-line" d="${path}"/><path class="bell-axis" d="M0 145H700"/><path class="bell-player-line" d="M${marker} ${Math.max(7, y(value) - 10).toFixed(2)}V145"/><circle class="bell-player-dot" cx="${marker}" cy="${y(value).toFixed(2)}" r="3.6"/></svg><span class="bell-you" style="left:${Math.max(2, Math.min(98, value / 7))}%">YOU</span><div class="bell-tooltip" hidden></div></div><div class="bell-scale">${Array.from({ length: 8 }, (_, i) => `<span>${i * 100}</span>`).join("")}</div><p class="benchmark-verdict">BETTER THAN AN ESTIMATED <strong>${percentileText(percent)}</strong></p><details class="benchmark-method"><summary>Estimated from a scoring model \xB7 how it works</summary><p>No live player results have been collected. This model mixes casual, regular, and experienced players (20%, 55%, 25%) across seven questions. This harder benchmark assumes more consistent correct answers and more Rare and Deep Cut finds. The modeled average is about ${Math.round(MODEL_MEAN)} points. \u201CBetter than\u201D counts lower scores and excludes ties. These estimates are not calibrated to actual players or individual prompt difficulty.</p></details></section>`;
+    return `<section class="result-benchmark" aria-label="Estimated score comparison"><div class="benchmark-heading"><span>ESTIMATED CHALLENGE CURVE</span><span>0\u2013700 POINTS</span></div><div class="bell-chart"><svg viewBox="0 0 700 157" preserveAspectRatio="none" role="img" aria-label="Modeled seven-question score distribution. Your score is ${value}. Estimated percentage of scores below yours: ${percentileText(percent)}."><defs><clipPath id="below-your-score"><rect x="0" y="0" width="${value}" height="157"/></clipPath></defs><path class="bell-area" d="${fill}"/><path class="bell-below" d="${fill}" clip-path="url(#below-your-score)"/><path class="bell-line" d="${path}"/><path class="bell-axis" d="M0 145H700"/><path class="bell-player-line" d="M${marker} ${Math.max(7, y(value) - 10).toFixed(2)}V145"/><circle class="bell-player-dot" cx="${marker}" cy="${y(value).toFixed(2)}" r="3.6"/></svg><span class="bell-you" style="left:${Math.max(2, Math.min(98, value / 7))}%">YOU</span><div class="bell-tooltip" hidden></div></div><div class="bell-scale">${Array.from({ length: 8 }, (_, i) => `<span>${i * 100}</span>`).join("")}</div><p class="benchmark-verdict">BETTER THAN AN ESTIMATED <strong>${percentileText(percent)}</strong></p><details class="benchmark-method"><summary>Estimated from a scoring model \xB7 how it works</summary><p>No live player results have been collected. This model mixes casual, regular, and experienced players (24%, 61%, 15%) across seven questions. The question probabilities are set to place the seven-prompt average near 265/700. The modeled average is about ${Math.round(MODEL_MEAN)} points. \u201CBetter than\u201D counts lower scores and excludes ties. These estimates are not calibrated to actual players or individual prompt difficulty.</p></details></section>`;
   }
   function mountBellCurve(root) {
     const chart = root.querySelector(".bell-chart");
@@ -841,13 +1982,13 @@ Wi-Fi`
   }
 
   // results.js
-  var esc2 = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
+  var esc3 = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
   function renderResults(app2, quiz2, packs) {
     const score = quiz2.results.reduce((n, r) => n + r.points, 0), rank = score >= 450 ? 100 : score >= 351 ? 85 : score >= 251 ? 60 : score >= 151 ? 30 : 10, t = tier(rank);
     const bands = [{ p: 10, lo: 0, hi: 150 }, { p: 30, lo: 151, hi: 250 }, { p: 60, lo: 251, hi: 350 }, { p: 85, lo: 351, hi: 449 }, { p: 100, lo: 450, hi: 700 }];
-    app2.innerHTML = `<section class="results-page"><div class="results-masthead"><a href="#home" class="results-brand">COUNCILLION</a><span>${quiz2.mode === "daily" ? "DAILY DIVE \xB7 " + esc2(quiz2.day) : "UNLIMITED DIVE"}<br>COMPLETE</span></div><div class="results-headline"><div class="results-total"><strong>${score}</strong><span>/700</span><span class="results-metres">\u2212${(score * 10).toLocaleString()}m</span></div><div class="results-rank ${t.color}">${tierSprite(rank)}<span>${t.name}<small>YOUR VERDICT</small></span></div></div>${renderBellCurve(score)}<section class="dive-log"><div class="log-heading"><h2>DIVE LOG</h2><span>DEEPER = RARER</span></div><div class="log-chart"><div class="log-axis"><span>0m</span><span>250m</span><span>500m</span><span>750m</span><span>1,000m</span></div><div class="log-columns">${quiz2.results.map((r, i) => `<button class="log-column ${tier(r.points).color}" data-action="bank" data-pack="${r.packId}" aria-label="Question ${i + 1}: ${esc2(r.label)}, ${r.points} points. Explore answers."><span class="log-thread" style="height:${r.points}%"></span><span class="log-dot" style="top:${r.points}%">${r.points ? tierSprite(r.points) : "<i></i>"}</span><span class="log-round">${i + 1}</span></button>`).join("")}</div></div></section><div class="results-share"><button class="pixel-button primary" data-action="share">COPY RESULT \u2197</button><p>Seven answers. One descent.<br>Make your case to your friends.</p></div><section class="score-guide"><h2>THE DEPTH OF YOUR CASE</h2>${bands.map((b) => `<div class="score-guide-row ${tier(b.p).color} ${rank === b.p ? "your-band" : ""}">${tierSprite(b.p)}<span>${tier(b.p).name}</span><small>${b.lo}\u2013${b.hi}</small>${rank === b.p ? "<em>YOU</em>" : "<em></em>"}</div>`).join("")}</section><section class="the-catch"><div class="catch-heading"><h2>THE CATCH</h2><p>Every prompt. Every accepted answer.</p></div>${quiz2.results.map((r, i) => {
+    app2.innerHTML = `<section class="results-page"><div class="results-masthead"><a href="#home" class="results-brand">COUNCILLION</a><span>${quiz2.mode === "daily" ? "DAILY DIVE \xB7 " + esc3(quiz2.day) : "UNLIMITED DIVE"}<br>COMPLETE</span></div><div class="results-headline"><div class="results-total"><strong>${score}</strong><span>/700</span><span class="results-metres">\u2212${(score * 10).toLocaleString()}m</span></div><div class="results-rank ${t.color}">${tierSprite(rank)}<span>${t.name}<small>YOUR VERDICT</small></span></div></div>${renderBellCurve(score)}<section class="dive-log"><div class="log-heading"><h2>DIVE LOG</h2><span>DEEPER = RARER</span></div><div class="log-chart"><div class="log-axis"><span>0m</span><span>250m</span><span>500m</span><span>750m</span><span>1,000m</span></div><div class="log-columns">${quiz2.results.map((r, i) => `<button class="log-column ${tier(r.points).color}" data-action="bank" data-pack="${r.packId}" aria-label="Question ${i + 1}: ${esc3(r.label)}, ${r.points} points. Explore answers."><span class="log-thread" style="height:${r.points}%"></span><span class="log-dot" style="top:${r.points}%">${r.points ? tierSprite(r.points) : "<i></i>"}</span><span class="log-round">${i + 1}</span></button>`).join("")}</div></div></section><div class="results-share"><button class="pixel-button primary" data-action="share">COPY RESULT \u2197</button><p>Seven answers. One descent.<br>Make your case to your friends.</p></div><section class="score-guide"><h2>THE DEPTH OF YOUR CASE</h2>${bands.map((b) => `<div class="score-guide-row ${tier(b.p).color} ${rank === b.p ? "your-band" : ""}">${tierSprite(b.p)}<span>${tier(b.p).name}</span><small>${b.lo}\u2013${b.hi}</small>${rank === b.p ? "<em>YOU</em>" : "<em></em>"}</div>`).join("")}</section><section class="the-catch"><div class="catch-heading"><h2>THE CATCH</h2><p>Every prompt. Every accepted answer.</p></div>${quiz2.results.map((r, i) => {
       const pack2 = packs.find((p) => p.id === r.packId);
-      return `<details class="catch-round"><summary><span class="catch-number">${i + 1}</span><span class="catch-copy"><small>${esc2(pack2.prompt)}</small><strong class="${tier(r.points).color}">${tierSprite(r.points)}${esc2(r.label)}</strong></span><span class="catch-points ${tier(r.points).color}">${r.points}</span><span class="catch-toggle">+</span></summary><div class="catch-bank" data-pack="${r.packId}" data-chosen="${esc2(r.label)}"></div></details>`;
+      return `<details class="catch-round"><summary><span class="catch-number">${i + 1}</span><span class="catch-copy"><small>${esc3(pack2.prompt)}</small><strong class="${tier(r.points).color}">${tierSprite(r.points)}${esc3(r.label)}</strong></span><span class="catch-points ${tier(r.points).color}">${r.points}</span><span class="catch-toggle">+</span></summary><div class="catch-bank" data-pack="${r.packId}" data-chosen="${esc3(r.label)}"></div></details>`;
     }).join("")}</section><div class="results-next"><button class="pixel-button" data-action="practice">\u221E ANOTHER DIVE</button><button class="pixel-button" data-action="party">PUFFER PARTY \u25B8</button></div><a class="surface-link" href="#home">\u2191 BACK TO THE SURFACE</a><p class="results-reset">${quiz2.mode === "daily" ? "Next Daily Dive at midnight New York time." : "Practice scores do not change your daily result."}</p></section>`;
     mountBellCurve(app2);
     for (const details of app2.querySelectorAll(".catch-round")) details.addEventListener("toggle", () => {
@@ -860,12 +2001,12 @@ Wi-Fi`
   }
 
   // dive.js
-  var esc3 = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
+  var esc4 = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
   function renderDive(app2, quiz2, pack2, score) {
     const result = quiz2.results.at(-1), isResult = ["result", "sinking"].includes(quiz2.stage), t = tier(result?.points ?? 0);
     const depth = score * 10;
     const sceneDepth = isResult ? depth : depth;
-    app2.innerHTML = `<section class="dive-screen" aria-label="Underwater trivia"><div class="dive-hud"><div class="hud-badge depth-badge"><small>DEPTH</small><strong id="dive-depth">${depth.toLocaleString()}m</strong></div><div class="dive-progress"><div class="dive-squares">${quiz2.ids.map((_, i) => `<span class="dive-square ${i < quiz2.results.length ? "completed " + tier(quiz2.results[i].points).color : i === quiz2.round ? "current" : ""}"></span>`).join("")}</div><small>PROMPT ${quiz2.round + 1} OF 7</small></div><div class="hud-badge score-badge"><small>SCORE</small><strong>${score}</strong></div></div><div class="biome-caption"><span class="biome-line"></span><span id="current-biome">SUNLIT WATERS</span></div><div class="depth-ruler" aria-hidden="true">${Array.from({ length: 11 }, (_, i) => `<span style="top:${i * 10}%">${Math.floor(depth / 100) * 100 + i * 50}m</span>`).join("")}</div><div class="dive-buddy" aria-hidden="true"><img src="assets/counsel-krill.svg" alt=""></div>${isResult ? `<section class="dive-verdict ${quiz2.stage === "sinking" ? "sinking" : ""}" aria-live="polite"><div class="verdict-creature ${t.color}">${result?.points ? tierSprite(result.points) : tierSprite(0)}</div><h1 class="${t.color}">${t.name}</h1><p class="verdict-answer">\u201C${esc3(result.label)}\u201D</p><p class="verdict-score">+${result.points} PTS \xB7 sink ${result.points * 10}m</p><p class="verdict-comment">${result.quip ? esc3(result.quip) : result.points >= 100 ? "An extraordinary find. Case closed." : result.points >= 85 ? "A precedent few would think of." : result.points >= 60 ? "A rare answer, well argued." : result.points >= 30 ? "A solid answer for the record." : result.points ? "A familiar answer. Still a valid case." : result.reason === "timeout" ? "The clock reached its verdict." : result.reason === "skip" ? "A new case awaits below." : "That answer isn\u2019t in this curated bank."}</p>${result.corrected ? `<p class="fine-print">Accepted for \u201C${esc3(result.input)}\u201D</p>` : ""}</section><div class="dive-controls result-controls"><button class="pixel-button primary" data-action="next">${quiz2.round === 6 ? "SURFACE" : "DESCEND"} ${quiz2.round === 6 ? "\u25B2" : "\u25BC"}</button><span class="continue-hint">ENTER TO CONTINUE</span></div>` : `<section class="floating-prompt"><p class="prompt-number">PROMPT ${quiz2.round + 1} OF 7 <span>${esc3(pack2.topic)}</span></p><h1>${esc3(pack2.prompt)}</h1><p class="prompt-hint">\u25BC rarer answers sink deeper \u25BC</p></section><div class="dive-controls ${quiz2.stage === "intro" ? "entering" : ""}"><div class="intro-message" id="intro-message">descending \xB7 the clock starts in 2</div><form id="answer-form" class="dive-answer-form"><div class="timer-orb" id="timer-orb"><span id="quiz-timer" role="timer" aria-label="Seconds remaining">25</span></div><div class="dive-input-wrap"><label class="sr-only" for="answer">Your answer</label><input id="answer" name="answer" placeholder="type one answer\u2026" maxlength="256" autocomplete="off" autocapitalize="off" spellcheck="false" required><div class="dive-time-bar"><span id="quiz-timer-fill"></span></div></div><button class="pixel-button dive-submit" id="dive-submit" type="submit" disabled>DIVE</button></form><div class="dive-under-controls"><button class="text-button" data-action="skip">SKIP \u25B8</button><span>FUTURE COUNSEL \xB7 THINK DEEPER</span><button class="text-button" data-action="help">? RULES</button></div></div>`}</section>`;
+    app2.innerHTML = `<section class="dive-screen" aria-label="Underwater trivia"><div class="dive-hud"><div class="hud-badge depth-badge"><small>DEPTH</small><strong id="dive-depth">${depth.toLocaleString()}m</strong></div><div class="dive-progress"><div class="dive-squares">${quiz2.ids.map((_, i) => `<span class="dive-square ${i < quiz2.results.length ? "completed " + tier(quiz2.results[i].points).color : i === quiz2.round ? "current" : ""}"></span>`).join("")}</div><small>PROMPT ${quiz2.round + 1} OF 7</small></div><div class="hud-badge score-badge"><small>SCORE</small><strong>${score}</strong></div></div><div class="biome-caption"><span class="biome-line"></span><span id="current-biome">SUNLIT WATERS</span></div><div class="dive-buddy" aria-hidden="true"><img src="assets/counsel-krill.svg" alt=""></div>${isResult ? `<section class="dive-verdict ${quiz2.stage === "sinking" ? "sinking" : ""}" aria-live="polite"><div class="verdict-creature ${t.color}">${result?.points ? tierSprite(result.points) : tierSprite(0)}</div><h1 class="${t.color}">${t.name}</h1><p class="verdict-answer">\u201C${esc4(result.label)}\u201D</p><p class="verdict-score">+${result.points} PTS \xB7 sink ${result.points * 10}m</p><p class="verdict-comment">${result.quip ? esc4(result.quip) : result.points >= 100 ? "An extraordinary find. Case closed." : result.points >= 85 ? "A precedent few would think of." : result.points >= 60 ? "A rare answer, well argued." : result.points >= 30 ? "A solid answer for the record." : result.points ? "A familiar answer. Still a valid case." : result.reason === "timeout" ? "The clock reached its verdict." : result.reason === "skip" ? "A new case awaits below." : "That answer isn\u2019t in this curated bank."}</p>${result.corrected ? `<p class="fine-print">Accepted for \u201C${esc4(result.input)}\u201D</p>` : ""}</section><div class="dive-controls result-controls"><button class="pixel-button primary" data-action="next">${quiz2.round === 6 ? "SURFACE" : "DESCEND"} ${quiz2.round === 6 ? "\u25B2" : "\u25BC"}</button><span class="continue-hint">ENTER TO CONTINUE</span></div>` : `<section class="floating-prompt"><p class="prompt-number">PROMPT ${quiz2.round + 1} OF 7 <span>${esc4(pack2.topic)}</span></p><h1>${esc4(pack2.prompt)}</h1><p class="prompt-hint">\u25BC rarer answers sink deeper \u25BC</p></section><div class="dive-controls ${quiz2.stage === "intro" ? "entering" : ""}"><div class="intro-message" id="intro-message">descending \xB7 the clock starts in 2</div><form id="answer-form" class="dive-answer-form"><div class="timer-orb" id="timer-orb"><span id="quiz-timer" role="timer" aria-label="Seconds remaining">25</span></div><div class="dive-input-wrap"><label class="sr-only" for="answer">Your answer</label><input id="answer" name="answer" placeholder="type one answer\u2026" maxlength="256" autocomplete="off" autocapitalize="off" spellcheck="false" required><div class="dive-time-bar"><span id="quiz-timer-fill"></span></div></div><button class="pixel-button dive-submit" id="dive-submit" type="submit" disabled>DIVE</button></form><div class="dive-under-controls"><button class="text-button" data-action="skip">SKIP \u25B8</button><span>FUTURE COUNSEL \xB7 THINK DEEPER</span><button class="text-button" data-action="help">? RULES</button></div></div>`}</section>`;
     return sceneDepth;
   }
 
@@ -1003,12 +2144,12 @@ Wi-Fi`
       });
       conn.on("error", () => conn.close());
     }
-    createLocal(names) {
+    createLocal(names2) {
       this.local = true;
       this.host = true;
       this.code = "LOCAL";
       this.myId = "local-0";
-      this.state = newParty(names.map((name, i) => ({ id: "local-" + i, name: cleanName(name) })));
+      this.state = newParty(names2.map((name, i) => ({ id: "local-" + i, name: cleanName(name) })));
       this.snapshot();
     }
     broadcast() {
@@ -1058,7 +2199,7 @@ Wi-Fi`
     document.body.dataset.screen = value;
     ocean.set(value === "dive" ? "dive" : value === "party" ? "party" : "home", value === "dive" && quiz ? total() * 10 : 0);
   }
-  var esc4 = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
+  var esc5 = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
   var read = (key, fallback) => {
     try {
       return JSON.parse(localStorage.getItem("fc:" + key)) ?? fallback;
@@ -1075,6 +2216,7 @@ Wi-Fi`
   };
   var settings = read("settings", { sound: false, scanlines: true, motion: true, answerCorrections: true, clearRejected: false });
   var profile = read("profile", { name: "", streak: 0, lastDay: null, best: 0 });
+  var caseChallenge = null;
   var quiz = null;
   var party = null;
   var lastPartyTurn = null;
@@ -1121,11 +2263,12 @@ Wi-Fi`
     $("#sound-button").setAttribute("aria-label", settings.sound ? "Turn sound off" : "Turn sound on");
   }
   function modal(content) {
+    $("#modal").classList.remove("site-menu");
     $("#modal-content").innerHTML = content;
-    $("#modal").showModal();
+    if (!$("#modal").open) $("#modal").showModal();
   }
   function howTo() {
-    modal(`<div class="eyebrow">FUTURE COUNSEL FIELD GUIDE</div><h2>HOW TO DIVE</h2><ol><li>Seven prompts. You have <span class="gold">25 seconds</span> to name one answer for each.</li><li>Find a less obvious answer. Curated rarity tiers award <span class="gold">10\u2013100 points</span>. Every point takes you 10 metres deeper. Rejected answers can be retried while the timer runs; any text left at zero is submitted automatically.</li><li>Everyone gets the same Daily Dive. A fresh set arrives at midnight in New York. Practice as often as you like.</li></ol><h3>PUFFER PARTY</h3><p>Host a room, share its code, and take turns naming answers. A valid answer passes the puffer. You cannot reuse an answer in the current round.</p><p>The shared fuse keeps burning between turns. If it pops on you, you lose a heart. Start with two hearts. Earn 600 rarity points to restore a heart, up to five. Each new turn gets at least eight seconds. Last counsel floating wins.</p><p class="muted">Original answer banks and editorial scores. Some valid answers may be missing. This is a Future Counsel fan game inspired by Krillion; it is not affiliated with Krillion.</p><a class="fc-link" href="https://futurecounsel.org/" target="_blank" rel="noopener">EXPLORE FUTURE COUNSEL \u2197</a>`);
+    modal(`<div class="eyebrow">FUTURE COUNSEL FIELD GUIDE</div><h2>HOW TO DIVE</h2><ol><li>Seven prompts. You have <span class="gold">25 seconds</span> to name one answer for each.</li><li>Find a less obvious answer. Curated rarity tiers award <span class="gold">10\u2013100 points</span>. Every point takes you 10 metres deeper. Rejected answers can be retried while the timer runs; any text left at zero is submitted automatically.</li><li>Everyone gets the same Daily Dive. A fresh set arrives at midnight in New York. Practice as often as you like.</li></ol><h3>ENDLESS CASES</h3><p>Read the details. Four choices per question. Get five right in a row to clear a challenge; one wrong answer resets the streak. Questions and answer positions shuffle. Keep diving through unlimited rounds drawn from Gavin\u2019s 16 published case reviews and his own analysis.</p><h3>PUFFER PARTY</h3><p>Host a room, share its code, and take turns naming answers. A valid answer passes the puffer. You cannot reuse an answer in the current round.</p><p>The shared fuse keeps burning between turns. If it pops on you, you lose a heart. Start with two hearts. Earn 600 rarity points to restore a heart, up to five. Each new turn gets at least eight seconds. Last counsel floating wins.</p><p class="muted">Original answer banks and editorial scores. Some valid answers may be missing. This is a Future Counsel fan game inspired by Krillion; it is not affiliated with Krillion.</p><a class="fc-link" href="https://futurecounsel.org/" target="_blank" rel="noopener">EXPLORE FUTURE COUNSEL \u2197</a>`);
   }
   function showSettings() {
     modal(`<div class="eyebrow">CONTROL ROOM</div><h2>SETTINGS</h2><label class="setting-row"><span>Sound effects<small>Little arcade bleeps.</small></span><input type="checkbox" data-setting="sound" ${settings.sound ? "checked" : ""}></label><label class="setting-row"><span>CRT scanlines<small>The old-school screen effect.</small></span><input type="checkbox" data-setting="scanlines" ${settings.scanlines ? "checked" : ""}></label><label class="setting-row"><span>Animations<small>Bobbing fish and gentle movement.</small></span><input type="checkbox" data-setting="motion" ${settings.motion ? "checked" : ""}></label><label class="setting-row"><span>Answer corrections<small>Confirm corrected spellings before scoring.</small></span><input type="checkbox" data-setting="answerCorrections" ${settings.answerCorrections !== false ? "checked" : ""}></label><label class="setting-row"><span>Clear rejected entries<small>Empty the input after an unrecognized answer.</small></span><input type="checkbox" data-setting="clearRejected" ${settings.clearRejected ? "checked" : ""}></label><p class="muted">Daily results and preferences are saved on this browser. Multiplayer uses direct connections between players; the host must keep their tab open.</p>`);
@@ -1133,14 +2276,14 @@ Wi-Fi`
   function home() {
     screen("home");
     const day = dateKey(), stored = read("daily:" + day, null), done = stored?.stage === "done";
-    app.innerHTML = `<section class="hero"><p class="eyebrow">FUTURE COUNSEL PRESENTS</p><h1 class="brand-title">COUNCILLION</h1><p class="subtitle">THE DAILY DIVE</p><p class="hero-copy">Think of an answer no one else will.<br>Seven prompts. See how deep you go.</p></section><section class="home-panel"><div class="banner"><span>${esc4(day)} \xB7 DAILY DIVE</span><span id="reset-clock"></span></div>${button("daily", done ? "TODAY\u2019S VERDICT \u2197" : stored ? "CONTINUE DESCENT \u2193" : "BEGIN DESCENT \u2193", "primary")}<div class="home-play-options"><button class="pixel-button party-card" data-action="party">${puffer()}<span><strong>PUFFER PARTY</strong><small>Play with friends</small></span><span class="arrow">\u25B8</span></button><button class="pixel-button practice-card" data-action="practice"><span class="practice-icon">\u221E</span><span><strong>ENDLESS DIVE</strong><small>Play another seven</small></span></button></div><div class="sub-actions"><button class="text-button" data-action="help">? HOW TO PLAY</button><a class="text-button" href="#biomes">EXPLORE THE OCEAN \u2193</a></div><p class="fine-print"><a class="fc-link" href="https://futurecounsel.org/" target="_blank" rel="noopener">FUTURE COUNSEL</a> \xB7 ONE IN A COUNCILLION.</p></section>`;
+    app.innerHTML = `<section class="hero"><p class="eyebrow">FUTURE COUNSEL PRESENTS</p><h1 class="brand-title">${[..."COUNCILLION"].map((c, i) => `<span style="--letter:${i}">${c}</span>`).join("")}</h1><p class="subtitle">THE DAILY DIVE</p><p class="hero-copy">7 prompts \xB7 25 seconds each \xB7 rarer answers sink deeper</p></section><section class="home-panel"><div class="banner"><span>DAILY DIVE \xB7 ${esc5(day)}</span><span id="reset-clock"></span></div><button class="pixel-button home-party" data-action="party">${puffer()}<span>PUFFER PARTY<small>Play with your friends</small></span><b>\u2197</b></button>${button("daily", done ? "VIEW TODAY\u2019S DIVE \u2197" : stored ? "CONTINUE DESCENT \u25BC" : "BEGIN DESCENT \u25BC", "primary")}<div class="surface-secondary"><button class="text-button" data-action="endless">\u221E ENDLESS CASES</button><button class="text-button" data-action="help">? HOW TO PLAY</button></div><p class="endless-tagline">16 case reviews. Four choices. Five right in a row.</p><p class="surface-signoff"><a href="https://futurecounsel.org/" target="_blank" rel="noopener">FUTURE COUNSEL</a><span>one in a councillion.</span></p></section>`;
     updateClock();
   }
   function showBank(id = quizPack()?.id) {
     if (quiz && quiz.stage !== "done" && ["daily", "practice"].includes(route)) return;
     const pack2 = PACKS.find((p) => p.id === id);
     if (!pack2) return;
-    modal(`<div class="eyebrow">${esc4(pack2.topic)}</div><h2>THE ANSWER BANK</h2><p>${esc4(pack2.prompt)}</p><div id="bank-mount"></div>`);
+    modal(`<div class="eyebrow">${esc5(pack2.topic)}</div><h2>THE ANSWER BANK</h2><p>${esc5(pack2.prompt)}</p><div id="bank-mount"></div>`);
     mountBank($("#bank-mount"), pack2, quiz?.results.find((r) => r.packId === id)?.label);
   }
   function updateClock() {
@@ -1185,8 +2328,8 @@ Wi-Fi`
       persistQuiz();
     }
     if (resumedLive) {
-      ocean.visualDepth = quiz.stage === "done" ? 0 : total() * 10;
-      ocean.camera = quiz.stage === "done" ? 0 : ocean.h * 0.68 + ocean.visualDepth * 0.09;
+      if (quiz.stage !== "done") ocean.set("dive", total() * 10);
+      ocean.snap(quiz.stage === "done" ? 0 : total() * 10);
     }
     if (quiz.pausedAt) delete quiz.pausedAt;
     route = mode;
@@ -1328,12 +2471,18 @@ Wi-Fi`
     ocean.set("summary", 0);
     renderResults(app, quiz, PACKS);
   }
+  function startEndless() {
+    screen("endless");
+    caseChallenge ??= new CaseChallenge(app, ocean, { read, save });
+    caseChallenge.render();
+    applySettings();
+  }
   function oceanTour() {
     screen("biomes");
     tourPlaying = false;
     const initial = Number(new URLSearchParams(location.hash.split("?")[1] ?? "").get("depth") || 0);
     ocean.set("dive", Math.max(0, Math.min(7e3, initial)));
-    app.innerHTML = `<section class="ocean-tour"><div class="tour-heading"><p>COUNCILLION \xB7 OCEAN PREVIEW</p><h1 id="tour-biome">SUNLIT WATERS</h1><strong id="tour-depth">0m</strong><span>Drag the depth marker to explore.</span></div><div class="tour-controls"><div class="tour-stops">${[0, 500, 1500, 3500, 6500].map((d, i) => `<button data-depth="${d}">${["SUNLIT", "TWILIGHT", "MIDNIGHT", "ABYSS", "HADAL"][i]}</button>`).join("")}</div><input id="tour-slider" type="range" min="0" max="7000" step="10" value="${ocean.depth}" aria-label="Preview ocean depth"><div class="tour-actions"><button class="text-button" id="tour-play">\u25B6 SLOW DESCENT</button><a href="#practice">PLAY A DIVE \u2197</a><a href="#home">\u2191 SURFACE</a></div></div></section>`;
+    app.innerHTML = `<section class="ocean-tour"><div class="tour-heading"><p>COUNCILLION \xB7 OCEAN PREVIEW</p><h1 id="tour-biome">SUNLIT WATERS</h1><strong id="tour-depth">0m</strong><span>Drag the depth marker to explore.</span></div><div class="tour-controls"><div class="tour-stops">${[0, 250, 750, 1700, 3200].map((d, i) => `<button data-depth="${d}">${["SUNLIT", "TWILIGHT", "MIDNIGHT", "ABYSS", "HADAL"][i]}</button>`).join("")}</div><input id="tour-slider" type="range" min="0" max="7000" step="10" value="${ocean.depth}" aria-label="Preview ocean depth"><div class="tour-actions"><button class="text-button" id="tour-play">\u25B6 SLOW DESCENT</button><a href="#practice">PLAY A DIVE \u2197</a><a href="#home">\u2191 SURFACE</a></div></div></section>`;
     $("#tour-slider").oninput = (e) => {
       tourPlaying = false;
       ocean.set("dive", Number(e.target.value));
@@ -1355,7 +2504,7 @@ Wi-Fi`
       await navigator.clipboard.writeText(text);
       toast(message);
     } catch {
-      modal(`<h2>COPY & SHARE</h2><label class="sr-only" for="copy-text">Text to share</label><textarea class="field" id="copy-text" rows="7" readonly>${esc4(text)}</textarea>`);
+      modal(`<h2>COPY & SHARE</h2><label class="sr-only" for="copy-text">Text to share</label><textarea class="field" id="copy-text" rows="7" readonly>${esc5(text)}</textarea>`);
       $("#copy-text").select();
     }
   }
@@ -1369,7 +2518,7 @@ Future Counsel \xB7 ${location.href.split("#")[0]}`, "Verdict copied. Send it to
   }
   function partySetup() {
     screen("party");
-    app.innerHTML = back() + `<section class="page-heading"><p class="eyebrow">FUTURE COUNSEL \xB7 MULTIPLAYER</p>${puffer()}<h1>PUFFER PARTY</h1><p>Name an answer. Pass the puffer.<br>Last counsel floating wins.</p></section><section class="panel"><div style="display:flex;justify-content:space-between;align-items:center"><h3 style="margin:0">WHO\u2019S PLAYING?</h3><button class="text-button cyan" data-action="help" style="font-size:16px">HOW TO PLAY \u2197</button></div><label class="field-label" for="player-name">YOUR NAME</label><input id="player-name" class="field" placeholder="Future counsel\u2026" value="${esc4(profile.name)}" maxlength="18" autocomplete="nickname"><div class="party-options">${button("host", "\u25BC HOST A ROOM<small>Get a code. Invite your friends.</small>")}${button("local", "\u2696 ONE DEVICE<small>Pass the keyboard. 2\u20136 players.</small>")}</div><div class="section-separator">OR JOIN YOUR FRIENDS</div><form id="join-form"><label class="sr-only" for="room-code">Four-letter room code</label><div class="join-row"><input id="room-code" class="field" placeholder="ROOM CODE" maxlength="4" autocomplete="off" autocapitalize="characters" pattern="[A-Za-z]{4}" required><button class="pixel-button" type="submit">JOIN \u25B8</button></div></form><p id="party-error" class="notice" hidden role="alert"></p><p class="fine-print" style="margin-top:21px">Private rooms \xB7 2\u20136 players \xB7 no account needed<br>The host keeps this tab open while you play.</p></section><p class="fine-print" style="margin-top:22px">On a network that blocks live connections?<br>Daily Dive and one-device mode work independently.</p>`;
+    app.innerHTML = back() + `<section class="page-heading"><p class="eyebrow">FUTURE COUNSEL \xB7 MULTIPLAYER</p>${puffer()}<h1>PUFFER PARTY</h1><p>Name an answer. Pass the puffer.<br>Last counsel floating wins.</p></section><section class="panel"><div style="display:flex;justify-content:space-between;align-items:center"><h3 style="margin:0">WHO\u2019S PLAYING?</h3><button class="text-button cyan" data-action="help" style="font-size:16px">HOW TO PLAY \u2197</button></div><label class="field-label" for="player-name">YOUR NAME</label><input id="player-name" class="field" placeholder="Future counsel\u2026" value="${esc5(profile.name)}" maxlength="18" autocomplete="nickname"><div class="party-options">${button("host", "\u25BC HOST A ROOM<small>Get a code. Invite your friends.</small>")}${button("local", "\u2696 ONE DEVICE<small>Pass the keyboard. 2\u20136 players.</small>")}</div><div class="section-separator">OR JOIN YOUR FRIENDS</div><form id="join-form"><label class="sr-only" for="room-code">Four-letter room code</label><div class="join-row"><input id="room-code" class="field" placeholder="ROOM CODE" maxlength="4" autocomplete="off" autocapitalize="characters" pattern="[A-Za-z]{4}" required><button class="pixel-button" type="submit">JOIN \u25B8</button></div></form><p id="party-error" class="notice" hidden role="alert"></p><p class="fine-print" style="margin-top:21px">Private rooms \xB7 2\u20136 players \xB7 no account needed<br>The host keeps this tab open while you play.</p></section><p class="fine-print" style="margin-top:22px">On a network that blocks live connections?<br>Daily Dive and one-device mode work independently.</p>`;
     $("#join-form").addEventListener("submit", (e) => {
       e.preventDefault();
       connectParty("join");
@@ -1426,10 +2575,10 @@ Future Counsel \xB7 ${location.href.split("#")[0]}`, "Verdict copied. Send it to
       partyError(e.message);
       return;
     }
-    modal(`<div class="eyebrow">PASS THE KEYBOARD</div><h2>ONE-DEVICE PARTY</h2><p>Enter 2\u20136 player names, separated by commas. Everyone plays on this screen.</p><label class="field-label" for="local-names">PLAYERS</label><input class="field" id="local-names" maxlength="160" value="${esc4(name)}, " placeholder="Gavin, Alex, Sam"><p id="local-error" class="notice error" hidden role="alert"></p><button class="pixel-button primary" id="local-create" style="margin-top:25px">ASSEMBLE THE COURT \u25B8</button>`);
+    modal(`<div class="eyebrow">PASS THE KEYBOARD</div><h2>ONE-DEVICE PARTY</h2><p>Enter 2\u20136 player names, separated by commas. Everyone plays on this screen.</p><label class="field-label" for="local-names">PLAYERS</label><input class="field" id="local-names" maxlength="160" value="${esc5(name)}, " placeholder="Gavin, Alex, Sam"><p id="local-error" class="notice error" hidden role="alert"></p><button class="pixel-button primary" id="local-create" style="margin-top:25px">ASSEMBLE THE COURT \u25B8</button>`);
     $("#local-create").onclick = () => {
-      const names = $("#local-names").value.split(",").map((n) => n.trim()).filter(Boolean);
-      if (names.length < 2 || names.length > 6) {
+      const names2 = $("#local-names").value.split(",").map((n) => n.trim()).filter(Boolean);
+      if (names2.length < 2 || names2.length > 6) {
         $("#local-error").textContent = "Add between two and six players.";
         $("#local-error").hidden = false;
         return;
@@ -1437,12 +2586,12 @@ Future Counsel \xB7 ${location.href.split("#")[0]}`, "Verdict copied. Send it to
       $("#modal").close();
       party?.close();
       party = new PartySession(renderParty, partyError);
-      party.createLocal(names);
+      party.createLocal(names2);
     };
     $("#local-names").focus();
   }
   function playersMarkup(s, session) {
-    return `<div class="players">${s.players.map((p, i) => `<div class="player ${s.phase === "playing" && i === s.turn ? "active" : ""} ${p.hearts <= 0 ? "out" : ""}"><span class="avatar">${["\u2696", "\u2726", "\u25C6", "\u265C", "\u25C8", "\u2727", "\u265F", "\u25C9"][i % 8]}</span><div class="player-meta"><div class="name">${esc4(p.name)}${p.id === session.myId && !session.local ? ' <span class="cyan">YOU</span>' : ""}</div><div class="hearts" aria-label="${p.hearts} hearts">${"\u2665".repeat(p.hearts)}${"\u2661".repeat(Math.max(0, (s.settings?.lives ?? 2) - p.hearts))}</div><small>${p.connected ? p.score + " PTS" : "DISCONNECTED"}${p.id === s.players[0]?.id ? " \xB7 HOST" : ""}</small><div class="meter" title="${p.meter}/${s.settings?.meterTarget ?? 600} points toward a heart"><span style="width:${p.meter / (s.settings?.meterTarget ?? 600) * 100}%"></span></div></div></div>`).join("")}</div>`;
+    return `<div class="players">${s.players.map((p, i) => `<div class="player ${s.phase === "playing" && i === s.turn ? "active" : ""} ${p.hearts <= 0 ? "out" : ""}"><span class="avatar">${["\u2696", "\u2726", "\u25C6", "\u265C", "\u25C8", "\u2727", "\u265F", "\u25C9"][i % 8]}</span><div class="player-meta"><div class="name">${esc5(p.name)}${p.id === session.myId && !session.local ? ' <span class="cyan">YOU</span>' : ""}</div><div class="hearts" aria-label="${p.hearts} hearts">${"\u2665".repeat(p.hearts)}${"\u2661".repeat(Math.max(0, (s.settings?.lives ?? 2) - p.hearts))}</div><small>${p.connected ? p.score + " PTS" : "DISCONNECTED"}${p.id === s.players[0]?.id ? " \xB7 HOST" : ""}</small><div class="meter" title="${p.meter}/${s.settings?.meterTarget ?? 600} points toward a heart"><span style="width:${p.meter / (s.settings?.meterTarget ?? 600) * 100}%"></span></div></div></div>`).join("")}</div>`;
   }
   function renderParty(s, session) {
     if (route !== "party") return;
@@ -1452,17 +2601,17 @@ Future Counsel \xB7 ${location.href.split("#")[0]}`, "Verdict copied. Send it to
     lastPartyTurn = turnKey;
     const ownTurn = session.local || s.players[s.turn]?.id === session.myId;
     if (s.phase === "lobby") {
-      app.innerHTML = back() + `<section class="panel"><p class="eyebrow" style="text-align:center">${session.local ? "ONE-DEVICE PARTY" : "YOUR COURTROOM IS OPEN"}</p><h1 class="room-code">${session.local ? "LOCAL" : esc4(session.code)}</h1><span class="room-label">${session.local ? "PASS THE KEYBOARD" : "ROOM CODE \xB7 SHARE WITH YOUR FRIENDS"}</span>${session.local ? "" : `<div class="two-actions">${button("copy-code", "COPY CODE")}${button("invite", "COPY INVITE \u2197")}</div>`}${playersMarkup(s, session)}${session.host ? button("start-party", s.players.length >= 2 ? "\u25B6 START THE PARTY" : "WAITING FOR FRIENDS\u2026", "primary") : '<p class="notice">Waiting for the host to start the party\u2026</p>'}<p id="party-error" class="notice error" hidden role="alert"></p><p class="fine-print" style="margin-top:22px">2 hearts each \xB7 600 rarity points restores a heart<br>${session.local ? "Take turns on this device." : "Keep this tab open. New players join before the game starts."}</p></section>`;
+      app.innerHTML = back() + `<section class="panel"><p class="eyebrow" style="text-align:center">${session.local ? "ONE-DEVICE PARTY" : "YOUR COURTROOM IS OPEN"}</p><h1 class="room-code">${session.local ? "LOCAL" : esc5(session.code)}</h1><span class="room-label">${session.local ? "PASS THE KEYBOARD" : "ROOM CODE \xB7 SHARE WITH YOUR FRIENDS"}</span>${session.local ? "" : `<div class="two-actions">${button("copy-code", "COPY CODE")}${button("invite", "COPY INVITE \u2197")}</div>`}${playersMarkup(s, session)}${session.host ? button("start-party", s.players.length >= 2 ? "\u25B6 START THE PARTY" : "WAITING FOR FRIENDS\u2026", "primary") : '<p class="notice">Waiting for the host to start the party\u2026</p>'}<p id="party-error" class="notice error" hidden role="alert"></p><p class="fine-print" style="margin-top:22px">2 hearts each \xB7 600 rarity points restores a heart<br>${session.local ? "Take turns on this device." : "Keep this tab open. New players join before the game starts."}</p></section>`;
       const start = $('[data-action="start-party"]');
       if (start) start.disabled = s.players.length < 2;
       return;
     }
     if (s.phase === "ended") {
       const winner = s.players.find((p) => p.id === s.winner);
-      app.innerHTML = back() + `<section class="panel result-card"><p class="eyebrow">THE COURT HAS REACHED ITS VERDICT</p>${puffer()}<h1 class="winner">${esc4(winner?.name ?? "No one")} WINS!</h1><p class="muted">Last counsel floating.</p>${playersMarkup(s, session)}${session.host ? button("start-party", "\u21BB PLAY A REMATCH", "primary") : '<p class="notice">Waiting for the host to start a rematch.</p>'}${button("leave-party", "\u25C2 LEAVE ROOM")}<p id="party-error" class="notice error" hidden></p></section>`;
+      app.innerHTML = back() + `<section class="panel result-card"><p class="eyebrow">THE COURT HAS REACHED ITS VERDICT</p>${puffer()}<h1 class="winner">${esc5(winner?.name ?? "No one")} WINS!</h1><p class="muted">Last counsel floating.</p>${playersMarkup(s, session)}${session.host ? button("start-party", "\u21BB PLAY A REMATCH", "primary") : '<p class="notice">Waiting for the host to start a rematch.</p>'}${button("leave-party", "\u25C2 LEAVE ROOM")}<p id="party-error" class="notice error" hidden></p></section>`;
       return;
     }
-    app.innerHTML = back() + `<div class="round-top"><span>PUFFER PARTY \xB7 CASE ${s.round}</span><span class="gold">${session.local ? "ONE DEVICE" : "ROOM " + esc4(session.code)}</span></div><section class="panel"><div class="party-stage">${puffer(s.phase === "burst" ? "hot" : "")}<p class="turn-label">${s.phase === "burst" ? "PUFFER POPPED!" : ownTurn ? "YOUR TURN" + (session.local ? " \xB7 " + esc4(s.players[s.turn].name) : "") : esc4(s.players[s.turn].name) + " HAS THE PUFFER"}</p><div class="timer-row"><div class="timer-track"><div class="timer-fill" id="party-timer-fill"></div></div><span class="timer-number" id="party-timer" role="timer">\u2014</span></div></div><p class="eyebrow">${esc4(partyPack(s).topic)}</p><h1 class="party-prompt">${esc4(partyPack(s).prompt)}</h1><form id="party-answer-form" class="answer-form"><label class="sr-only" for="party-answer">Your answer</label><input id="party-answer" class="field" placeholder="${ownTurn ? "Answer to pass the puffer\u2026" : "Waiting for your turn\u2026"}" maxlength="120" autocomplete="off" autocapitalize="off" spellcheck="false" ${!ownTurn || s.phase !== "playing" ? "disabled" : ""} required><button class="pixel-button" type="submit" ${!ownTurn || s.phase !== "playing" ? "disabled" : ""}>PASS \u25B8</button></form><p class="form-caption">${s.used.length} answers used \xB7 ${partyPack(s).answers.length} in this bank \xB7 at least 8 seconds for each new turn</p><p class="notice" role="status">${esc4(s.notice)}</p><p id="party-error" class="notice error" hidden role="alert"></p>${playersMarkup(s, session)}<h3 class="small-title">ON THE RECORD</h3><ul class="party-log">${s.log.map((l) => `<li><span><span class="muted">${esc4(l.name)} \u2192 </span>${esc4(l.answer)}</span><span class="${tier(l.points).color}">+${l.points}</span></li>`).join("") || '<li class="muted">Your first answer goes here.</li>'}</ul></section><div class="inline-links"><button class="text-button" data-action="leave-party">\u25C2 LEAVE ROOM</button><button class="text-button" data-action="help">? RULES</button></div>`;
+    app.innerHTML = back() + `<div class="round-top"><span>PUFFER PARTY \xB7 CASE ${s.round}</span><span class="gold">${session.local ? "ONE DEVICE" : "ROOM " + esc5(session.code)}</span></div><section class="panel"><div class="party-stage">${puffer(s.phase === "burst" ? "hot" : "")}<p class="turn-label">${s.phase === "burst" ? "PUFFER POPPED!" : ownTurn ? "YOUR TURN" + (session.local ? " \xB7 " + esc5(s.players[s.turn].name) : "") : esc5(s.players[s.turn].name) + " HAS THE PUFFER"}</p><div class="timer-row"><div class="timer-track"><div class="timer-fill" id="party-timer-fill"></div></div><span class="timer-number" id="party-timer" role="timer">\u2014</span></div></div><p class="eyebrow">${esc5(partyPack(s).topic)}</p><h1 class="party-prompt">${esc5(partyPack(s).prompt)}</h1><form id="party-answer-form" class="answer-form"><label class="sr-only" for="party-answer">Your answer</label><input id="party-answer" class="field" placeholder="${ownTurn ? "Answer to pass the puffer\u2026" : "Waiting for your turn\u2026"}" maxlength="120" autocomplete="off" autocapitalize="off" spellcheck="false" ${!ownTurn || s.phase !== "playing" ? "disabled" : ""} required><button class="pixel-button" type="submit" ${!ownTurn || s.phase !== "playing" ? "disabled" : ""}>PASS \u25B8</button></form><p class="form-caption">${s.used.length} answers used \xB7 ${partyPack(s).answers.length} in this bank \xB7 at least 8 seconds for each new turn</p><p class="notice" role="status">${esc5(s.notice)}</p><p id="party-error" class="notice error" hidden role="alert"></p>${playersMarkup(s, session)}<h3 class="small-title">ON THE RECORD</h3><ul class="party-log">${s.log.map((l) => `<li><span><span class="muted">${esc5(l.name)} \u2192 </span>${esc5(l.answer)}</span><span class="${tier(l.points).color}">+${l.points}</span></li>`).join("") || '<li class="muted">Your first answer goes here.</li>'}</ul></section><div class="inline-links"><button class="text-button" data-action="leave-party">\u25C2 LEAVE ROOM</button><button class="text-button" data-action="help">? RULES</button></div>`;
     if (sameTurn && $("#party-answer")) $("#party-answer").value = draft;
     $("#party-answer-form").addEventListener("submit", (e) => {
       e.preventDefault();
@@ -1556,6 +2705,7 @@ Future Counsel \xB7 ${location.href.split("#")[0]}`, "Verdict copied. Send it to
     }
     route = next;
     if (next === "daily" || next === "practice") startQuiz(next);
+    else if (next === "endless") startEndless();
     else if (next === "biomes") oceanTour();
     else if (next === "party") {
       if (party?.state) renderParty(party.state, party);
@@ -1576,6 +2726,9 @@ Future Counsel \xB7 ${location.href.split("#")[0]}`, "Verdict copied. Send it to
       case "practice":
         quiz = null;
         startQuiz("practice");
+        break;
+      case "endless":
+        location.hash = "endless";
         break;
       case "next":
         nextQuiz();
@@ -1642,9 +2795,17 @@ Future Counsel \xB7 ${location.href.split("#")[0]}`, "Verdict copied. Send it to
     applySettings();
     beep();
   };
-  $("#menu-button").onclick = () => {
-    modal(`<div class="eyebrow">FUTURE COUNSEL PRESENTS</div><h2 class="menu-title">COUNCILLION</h2><nav class="menu-grid"><a href="#daily"><span>\u25BC</span><strong>DAILY DIVE</strong><small>Seven prompts. One shared dive.</small></a><a href="#practice"><span>\u221E</span><strong>ENDLESS DIVE</strong><small>A fresh set whenever you want.</small></a><a href="#party"><span>\u2726</span><strong>PUFFER PARTY</strong><small>Make your case with friends.</small></a><a href="#home"><span>\u2191</span><strong>THE SURFACE</strong><small>Back to open water.</small></a></nav><div class="menu-bottom"><a href="#biomes">EXPLORE THE OCEAN \u2197</a><a href="https://futurecounsel.org/" target="_blank" rel="noopener">FUTURE COUNSEL \u2197</a></div><p class="menu-timer-note">${quiz?.stage === "answer" ? "Your timer keeps running while this menu is open." : "Rarer answers sink deeper."}</p>`);
-  };
+  function openMenu() {
+    modal(`<div class="menu-kicker">COUNCILLION</div><h2 class="menu-title">MENU</h2><div class="menu-section-label">DIVE IN <span></span></div><nav class="menu-grid" aria-label="Main navigation"><a href="#daily" class="${route === "daily" ? "selected" : ""}"><span>\u2193</span><strong>DAILY DIVE</strong></a><a href="#endless" class="${route === "endless" ? "selected" : ""}"><span>\u221E</span><strong>ENDLESS CASES</strong></a><a href="#party" class="${route === "party" ? "selected" : ""}">${puffer()}<strong>PUFFER PARTY</strong></a><a href="#home"><span>\u2191</span><strong>THE SURFACE</strong></a><a href="#biomes"><span>\u224B</span><strong>OCEAN EXPLORER</strong></a><button data-menu-settings><span>\u2699</span><strong>SETTINGS</strong></button><button data-menu-help><span>?</span><strong>HOW TO PLAY</strong></button><a href="#practice"><span>\u25C7</span><strong>TRIVIA PRACTICE</strong></a></nav><a class="menu-counsel" href="https://futurecounsel.org/archive" target="_blank" rel="noopener"><span>\u2696</span><div>FUTURE COUNSEL<small>Read the 16 case reviews</small></div><b>\u2197</b></a><p class="menu-timer-note">${quiz?.stage === "answer" && ["daily", "practice"].includes(route) ? "Your timer keeps running while the menu is open." : "one in a councillion."}</p>`);
+    $("#modal").classList.add("site-menu");
+    $("#modal-content [data-menu-settings]").onclick = () => {
+      showSettings();
+    };
+    $("#modal-content [data-menu-help]").onclick = () => {
+      howTo();
+    };
+  }
+  $("#menu-button").onclick = openMenu;
   $("#modal-content").addEventListener("click", (e) => {
     if (e.target.closest("a")) $("#modal").close();
   });
@@ -1659,6 +2820,10 @@ Future Counsel \xB7 ${location.href.split("#")[0]}`, "Verdict copied. Send it to
     if (!document.hidden) updateTimer();
   });
   document.addEventListener("keydown", (e) => {
+    if (route === "endless") {
+      caseChallenge?.keydown(e);
+      return;
+    }
     if (e.key === "Enter" && ["daily", "practice"].includes(route) && ["sinking", "result"].includes(quiz?.stage) && !$("#modal").open && !e.target.closest("button,a,input,textarea,summary")) {
       e.preventDefault();
       nextQuiz();

@@ -7,7 +7,8 @@ Future Counsel’s pixel ocean trivia game, inspired by Krillion. Original clien
 ## Play
 
 - **Daily Dive:** seven shared prompts, a three-second optional preview, then 25 seconds to answer. You can type immediately and submit early to start the clock. Rejected attempts can be retried. Text left at zero is submitted automatically. Progress and completed results are saved in this browser.
-- **Unlimited Practice:** seven random prompts, no daily limit.
+- **Endless Cases:** 80 close-reading questions based on all 16 Future Counsel reviews, including Gavin’s published opinions. Four shuffled choices; five consecutive correct answers clear a challenge. A miss resets the streak. New challenges continue without a play limit. The reviewed bank reshuffles after all 80, with no repeat within a cycle. Progress survives reloads.
+- **Trivia Practice:** the original seven-prompt rarity game remains available in the navigation menu.
 - **Airline reference round:** open `#practice?pack=airline-extras` to begin a practice dive with the user’s exact 111-answer example. `#practice?pack=no-wheels` starts with the imported 1,194-answer vehicle example.
 - **Puffer Party:** a private four-letter code joins 2–6 players across devices. Two starting hearts, up to five. Earn 600 rarity points to restore a heart. The puffer has a random shared fuse; each new turn gets at least eight seconds. Answers cannot repeat in the current category.
 - **One Device:** the same party rules on one screen; pass the keyboard.
@@ -18,9 +19,9 @@ Visible rarity families follow the supplied image: Krillion, Deep Cut, Rare, Sch
 
 ## Estimated score curve
 
-Final results include a model-based score distribution, the player's marker, and the estimated percentage of scores strictly below theirs. These are not live player statistics. The harder challenge model combines seven question outcomes (0, 10, 30, 60, 85, 100 points) across assumed casual/regular/experienced profiles with 20%/55%/25% weights. Conditional question outcomes are independent within a profile; the shared profile creates variation between players. Exact discrete convolution produces the percentiles. Only the plotted line is smoothed.
+Final results include a model-based score distribution, the player's marker, and the estimated percentage of scores strictly below theirs. These are not live player statistics. The requested model combines seven question outcomes (0, 10, 30, 60, 85, 100 points) across assumed casual/regular/experienced profiles with 24%/61%/15% weights. Conditional question outcomes are independent within a profile; the shared profile creates variation between players. Exact discrete convolution produces the percentiles. Only the plotted line is smoothed.
 
-The modeled mean is 354.445 points and standard deviation is about 97.22. A score of 230 beats about 10.41%; 350 beats about 46.40% under these assumptions. These parameters are editorial estimates; no player dataset was used to fit them, and they do not adjust for a particular day's question difficulty. The score-curve disclosure and copied result both identify the estimate. The full probabilities and implementation are in `benchmark.js`; five tests verify mass, support, expectation, strict tie handling, boundary behavior, and a harder comparison at every score than the previous model.
+The modeled mean is 264.8975 points and standard deviation is about 84.31. A score of 230 beats about 34.54%; 350 beats about 83.13% under these assumptions. These parameters are editorial estimates; no player dataset was used to fit them, and they do not adjust for a particular day's question difficulty. The score-curve disclosure and copied result both identify the estimate. The full probabilities and implementation are in `benchmark.js`; five tests verify mass, support, expectation, strict tie handling, boundary behavior, and the requested mean near 265.
 
 ## Run
 
@@ -45,7 +46,7 @@ Opening `index.html` directly also loads the bundled client, although multiplaye
 
 ## Rendering and controls
 
-The home screen loads just the sky asset and uses quiet open water. Gameplay loads vegetation-free shallow art and preloads deeper textures as needed. Static scenery is composited into a cached canvas; ambient animation uses a paced 30 fps, while descents can render at 60 fps. The backing canvas uses one pixel per CSS pixel instead of a high-DPI multiplier. Hidden tabs stop scheduling frames, and reduced-motion mode renders only when the scene changes. `?perf=1` on localhost exposes optional render-cost diagnostics.
+The home screen loads just the sky asset and uses quiet open water. Gameplay moves through a vertically positioned world, including vegetation-free shallow art, sunken court ruins, bioluminescent trench walls, and amber/violet hadal walls. Scenery stays at fixed world coordinates as the camera descends. Local edge masks blend neighboring scene joins; no global dark overlay covers gameplay. The visual zone thresholds are 0, 200, 650, 1,500, and 3,000 metres, intentionally earlier than the reference to make multiple scenes accessible to ordinary scores. The original ten metres per point is preserved. Cached scenery tiles and a cached viewport avoid repeatedly scaling stationary art; ambient animation uses a paced 30 fps, while descents can render at 60 fps. The backing canvas uses one pixel per CSS pixel instead of a high-DPI multiplier. Hidden tabs stop scheduling frames, and reduced-motion mode renders only when the scene changes. `?perf=1` on localhost exposes optional render-cost diagnostics.
 
 Draft saves are debounced; boundary changes and page exit flush progress immediately. The countdown keeps the input usable. Enter submits an answer and continues a completed round; animation never locks the next button. Timer progress uses a transform instead of repeatedly changing layout width.
 
@@ -64,7 +65,10 @@ Some managed networks and restrictive NATs block the broker or direct WebRTC con
 - `app.js`: screens, local progress, settings, timing, sharing, answer browser.
 - `engine.js`: date selection, answer matching, tiers, and party rules.
 - `benchmark.js`: explicit assumed skill profiles, exact seven-question distribution, estimated percentiles, and the results curve.
-- `ocean.js`: moving sky, waves, open water, particles, fish, courtroom landmarks, and camera.
+- `ocean.js`, `depth-world.js`: continuous world projection, cached environment tiles, moving ruler ticks and landmarks, sky, waves, and ambient life.
+- `case-questions.js`: 80 original questions and explanations with a source link to each of the 16 published reviews.
+- `endless.js`, `endless-engine.js`, `endless.css`: four-choice challenge, shuffled decks, consecutive-answer rules, persistence, and the requested animated Easter egg.
+- `descent.css`: revised surface composition and compact navigation menu.
 - `dive.js`: full-viewport HUD, prompt, answer dock, and round feedback.
 - `results.js`, `answer-bank.js`: final dive log and shared large-bank browser.
 - `polish.css`: responsive presentation for home, gameplay, results, menus, and the ocean preview.
@@ -77,3 +81,7 @@ Some managed networks and restrictive NATs block the broker or direct WebRTC con
 VT323 is bundled under the SIL Open Font License. PeerJS’s MIT license is included in `vendor/`.
 
 Future Counsel: https://futurecounsel.org/ · Reference: https://krillion.io/
+
+## Latest validation
+
+37 automated checks cover game rules, both imported answer banks, the percentile model, vertical projection, scene accessibility, four-choice data integrity, deck recycling, streak resets, persistence, and the Easter egg. A 10,000-question simulation verifies that the legitimate answer key never forms the reserved sequence. Browser checks include a real five-correct challenge, shortcut animation, continuing to another challenge, and visible scenery changes during the actual seven-prompt game.
