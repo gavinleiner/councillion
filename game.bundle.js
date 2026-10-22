@@ -17,6 +17,38 @@
     return `<svg class="tier-sprite ${classes}" viewBox="0 0 16 14" aria-hidden="true" shape-rendering="crispEdges">${rows.flatMap((row, y) => [...row].flatMap((cell, x) => cell === "." ? [] : [`<rect x="${x}" y="${y}" width="1" height="1" fill="${colors[cell]}"/>`])).join("")}</svg>`;
   }
 
+  // render-metrics.js
+  var RenderMetrics = class {
+    constructor() {
+      this.enabled = ["localhost", "127.0.0.1"].includes(location.hostname) && new URLSearchParams(location.search).get("perf") === "1";
+      if (!this.enabled) return;
+      this.costs = [];
+      this.intervals = [];
+      this.last = 0;
+      this.lastReport = 0;
+      this.output = document.createElement("output");
+      this.output.id = "render-stats";
+      this.output.style.cssText = "position:fixed;left:10px;bottom:7px;z-index:100;font:12px monospace;color:#9dbfcc;background:#071424e8;padding:6px 8px;pointer-events:none";
+      this.output.textContent = "Measuring render cost\u2026";
+      document.body.append(this.output);
+    }
+    sample(start, now, ratio, rebuilds = 0) {
+      if (!this.enabled) return;
+      this.costs.push(performance.now() - start);
+      if (this.costs.length > 180) this.costs.shift();
+      if (this.last && now - this.last < 200) {
+        this.intervals.push(now - this.last);
+        if (this.intervals.length > 180) this.intervals.shift();
+      }
+      this.last = now;
+      if (now - this.lastReport < 1e3) return;
+      this.lastReport = now;
+      const mean = this.costs.reduce((a, b) => a + b, 0) / this.costs.length, sorted = [...this.costs].sort((a, b) => a - b), p95 = sorted[Math.floor((sorted.length - 1) * 0.95)], fps = this.intervals.length ? 1e3 / (this.intervals.reduce((a, b) => a + b, 0) / this.intervals.length) : 0;
+      Object.assign(this.output.dataset, { meanMs: mean.toFixed(3), p95Ms: p95.toFixed(3), fps: fps.toFixed(1), ratio: String(ratio), samples: String(this.costs.length), rebuilds: String(rebuilds) });
+      this.output.textContent = `Draw ${mean.toFixed(2)}ms \xB7 p95 ${p95.toFixed(2)}ms \xB7 ${fps.toFixed(0)}fps \xB7 ${ratio}\xD7`;
+    }
+  };
+
   // ocean.js
   var clamp = (v, a = 0, b = 1) => Math.max(a, Math.min(b, v));
   var smooth = (a, b, v) => {
@@ -29,81 +61,138 @@
   }
   var Ocean = class {
     constructor(canvas) {
+      this.metrics = new RenderMetrics();
       this.canvas = canvas;
       this.ctx = canvas.getContext("2d", { alpha: false });
       this.images = {};
-      for (const [key, file] of Object.entries({ sky: "sky-law.png", shallow: "water-law.png", mid: "mid-law.png", trench: "trench-law.png", hadal: "hadal-pixel.png", kelp: "kelp-pixel-loop.png" })) {
-        const img = new Image();
-        img.src = "assets/" + file;
-        this.images[key] = img;
-      }
+      this.files = { sky: "sky-law.png", shallow: "water-open.png", mid: "mid-law.png", trench: "trench-law.png", hadal: "hadal-pixel.png" };
       this.mode = "home";
       this.depth = 0;
       this.visualDepth = 0;
       this.camera = 0;
       this.time = 0;
       this.previous = 0;
-      this.reduced = false;
+      this.lastPaint = 0;
+      this._reduced = false;
       this.burst = 0;
-      this.pointer = { x: 0, y: 0 };
-      this.offset = { x: 0, y: 0 };
+      this.raf = null;
+      this.cacheKey = "";
+      this.cacheRebuilds = 0;
+      this.backdrop = document.createElement("canvas");
+      this.background = this.backdrop.getContext("2d", { alpha: false });
+      this.loop = this.loop.bind(this);
       this.resize = () => {
         this.w = innerWidth;
         this.h = innerHeight;
-        this.ratio = Math.min(devicePixelRatio || 1, 1.5);
-        canvas.width = Math.round(this.w * this.ratio);
-        canvas.height = Math.round(this.h * this.ratio);
-        this.ctx.setTransform(this.ratio, 0, 0, this.ratio, 0, 0);
+        this.ratio = 1;
+        canvas.width = this.w;
+        canvas.height = this.h;
+        this.backdrop.width = this.w;
+        this.backdrop.height = this.h;
         this.ctx.imageSmoothingEnabled = false;
+        this.background.imageSmoothingEnabled = false;
+        this.cacheKey = "";
+        this.schedule();
       };
       this.resize();
       addEventListener("resize", this.resize);
-      addEventListener("pointermove", (e) => {
-        this.pointer.x = (e.clientX / innerWidth - 0.5) * 2;
-        this.pointer.y = (e.clientY / innerHeight - 0.5) * 2;
-      }, { passive: true });
-      this.loop = this.loop.bind(this);
-      requestAnimationFrame(this.loop);
+      document.addEventListener("visibilitychange", () => {
+        if (document.hidden) {
+          cancelAnimationFrame(this.raf);
+          this.raf = null;
+        } else {
+          this.previous = 0;
+          this.schedule();
+        }
+      });
+      this.load("sky");
+    }
+    load(key) {
+      if (this.images[key]) return;
+      const img = new Image();
+      img.decoding = "async";
+      img.onload = () => {
+        this.cacheKey = "";
+        this.schedule();
+      };
+      img.src = "assets/" + this.files[key];
+      this.images[key] = img;
+    }
+    schedule() {
+      if (this.raf === null && !document.hidden) this.raf = requestAnimationFrame(this.loop);
     }
     set(mode, depth = 0) {
+      if (mode === this.mode && depth === this.depth) return;
       this.mode = mode;
       this.depth = depth;
+      if (mode === "dive" || mode === "party") {
+        this.load("shallow");
+        this.load("mid");
+        if (depth >= 1300) this.load("trench");
+        if (depth >= 4e3) this.load("hadal");
+      }
+      this.schedule();
+    }
+    set reduced(value) {
+      if (this._reduced === value) return;
+      this._reduced = value;
+      this.cacheKey = "";
+      this.schedule();
+    }
+    get reduced() {
+      return this._reduced;
     }
     get displayedDepth() {
       return Math.round(this.visualDepth);
     }
     celebrate() {
       this.burst = 1;
+      this.schedule();
     }
     ready(key) {
       return this.images[key]?.complete && this.images[key]?.naturalWidth > 0;
     }
     layer(key, alpha, y, height, drift = 0) {
       if (!this.ready(key) || alpha < 2e-3) return;
-      const c = this.ctx;
+      const c = this.paintContext || this.ctx;
       c.globalAlpha = alpha;
       c.drawImage(this.images[key], -8 + drift, y, this.w + 16, height);
       c.globalAlpha = 1;
     }
     loop(now) {
-      const dt = Math.min(0.04, (now - this.previous) / 1e3 || 0.016);
-      this.previous = now;
-      {
-        if (!this.reduced && !document.hidden) this.time += dt * 0.42;
-        const ease = this.reduced ? 1 : 1 - Math.exp(-dt * 1.3);
-        this.visualDepth += (this.depth - this.visualDepth) * ease;
-        if (Math.abs(this.depth - this.visualDepth) < 0.2) this.visualDepth = this.depth;
-        const goal = this.mode === "dive" ? this.h * 0.68 + this.visualDepth * 0.09 : this.mode === "party" ? this.h * 0.62 : 0;
-        this.camera += (goal - this.camera) * (this.reduced ? 1 : 1 - Math.exp(-dt * 1.6));
-        this.offset.x += (this.pointer.x * 5 - this.offset.x) * 0.025;
-        this.offset.y += (this.pointer.y * 3 - this.offset.y) * 0.025;
-        this.burst = Math.max(0, this.burst - dt * 0.65);
-        if (!document.hidden) this.draw(this.time);
+      this.raf = null;
+      if (document.hidden) return;
+      const goal = this.mode === "dive" ? this.h * 0.68 + this.visualDepth * 0.09 : this.mode === "party" ? this.h * 0.62 : 0;
+      const moving = Math.abs(this.depth - this.visualDepth) > 1 || Math.abs(goal - this.camera) > 1;
+      const interval = moving ? 1e3 / 60 : 1e3 / 30;
+      if (now - this.lastPaint < interval - 0.8) {
+        this.schedule();
+        return;
       }
-      requestAnimationFrame(this.loop);
+      const dt = Math.min(0.1, (now - this.previous) / 1e3 || 0.033);
+      this.previous = now;
+      this.lastPaint += interval;
+      if (now - this.lastPaint > interval) this.lastPaint = now;
+      if (!this.reduced) this.time += dt * 0.42;
+      const ease = this.reduced ? 1 : 1 - Math.exp(-dt * 1.3);
+      this.visualDepth += (this.depth - this.visualDepth) * ease;
+      if (Math.abs(this.depth - this.visualDepth) < 0.2) this.visualDepth = this.depth;
+      const target = this.mode === "dive" ? this.h * 0.68 + this.visualDepth * 0.09 : this.mode === "party" ? this.h * 0.62 : 0;
+      this.camera += (target - this.camera) * (this.reduced ? 1 : 1 - Math.exp(-dt * 1.6));
+      if (Math.abs(target - this.camera) < 0.2) this.camera = target;
+      this.burst = Math.max(0, this.burst - dt * 0.65);
+      const started = this.metrics.enabled ? performance.now() : 0;
+      this.draw(this.time);
+      this.metrics.sample(started, now, this.ratio, this.cacheRebuilds);
+      if (!this.reduced) this.schedule();
     }
-    draw(t) {
-      const c = this.ctx, W = this.w, H = this.h, d = this.visualDepth, surface = H * 0.48 - this.camera;
+    environment() {
+      const key = [this.mode, Math.round(this.camera), Math.round(this.visualDepth / 8), ...Object.keys(this.images).map((k) => Number(this.ready(k)))].join(":");
+      if (key === this.cacheKey) return;
+      this.cacheKey = key;
+      this.cacheRebuilds++;
+      const c = this.background, W = this.w, H = this.h, d = this.visualDepth, surface = H * 0.48 - this.camera;
+      this.paintContext = c;
       c.globalAlpha = 1;
       c.fillStyle = "#091829";
       c.fillRect(0, 0, W, H);
@@ -113,56 +202,60 @@
         sky.addColorStop(1, "#dfefec");
         c.fillStyle = sky;
         c.fillRect(0, 0, W, surface);
-        this.layer("sky", 1, -this.camera, H * 0.48, Math.sin(t * 0.04) * 3);
+        this.layer("sky", 1, -this.camera, H * 0.48);
       }
       const start = Math.max(0, surface);
       c.save();
       c.beginPath();
       c.rect(0, start, W, H - start);
       c.clip();
-      const mid = smooth(250, 1150, d), trench = smooth(2300, 3700, d), hadal = smooth(5100, 6300, d);
-      const g = c.createLinearGradient(0, 0, 0, H);
-      g.addColorStop(0, d < 400 ? "#194a6b" : d < 2500 ? "#0b2038" : "#081420");
+      const mid = smooth(250, 1150, d), trench = smooth(2300, 3700, d), hadal = smooth(5100, 6300, d), g = c.createLinearGradient(0, 0, 0, H);
+      g.addColorStop(0, d < 400 ? "#143e5b" : d < 2500 ? "#0b2038" : "#081420");
       g.addColorStop(1, "#071323");
       c.fillStyle = g;
       c.fillRect(0, start, W, H);
-      const shallowH = Math.max(H * 1.65, W * 0.98);
-      this.layer("shallow", 1 - mid, surface, shallowH, Math.sin(t * 0.13) * 2 + this.offset.x);
-      this.layer("mid", mid * (1 - trench), -H * 0.16 - d * 0.018, H * 1.75, this.offset.x * 0.6);
-      this.layer("trench", trench * (1 - hadal), -H * 0.18 - (d - 2300) * 0.014, H * 1.7, this.offset.x * 0.45);
-      this.layer("hadal", hadal, -H * 0.18 - (d - 5100) * 0.012, H * 1.7, this.offset.x * 0.3);
+      if (this.mode === "home" || this.mode === "summary") {
+        const sea = c.createLinearGradient(0, start, 0, H);
+        sea.addColorStop(0, "#17445f");
+        sea.addColorStop(0.24, "#102f49");
+        sea.addColorStop(1, "#081b30");
+        c.fillStyle = sea;
+        c.fillRect(0, start, W, H - start);
+      } else {
+        this.layer("shallow", 1 - mid, surface, Math.max(H * 1.65, W * 0.98));
+        this.layer("mid", mid * (1 - trench), -H * 0.16 - d * 0.018, H * 1.75);
+        this.layer("trench", trench * (1 - hadal), -H * 0.18 - (d - 2300) * 0.014, H * 1.7);
+        this.layer("hadal", hadal, -H * 0.18 - (d - 5100) * 0.012, H * 1.7);
+      }
       if (hadal) {
         c.fillStyle = `rgba(6,2,17,${hadal * 0.34})`;
         c.fillRect(0, 0, W, H);
       }
       const shade = c.createLinearGradient(0, 0, 0, H);
-      if (this.mode === "home" || this.mode === "summary") {
-        shade.addColorStop(0, "#07132000");
-        shade.addColorStop(0.48, "#07132000");
-        shade.addColorStop(0.72, "#071320a6");
-        shade.addColorStop(1, "#071320cc");
-      } else {
-        shade.addColorStop(0, "#020b171c");
-        shade.addColorStop(1, "#020b1740");
-      }
+      shade.addColorStop(0, "#020b1700");
+      shade.addColorStop(1, this.mode === "home" ? "#020b1744" : "#020b1733");
       c.fillStyle = shade;
       c.fillRect(0, 0, W, H);
-      c.globalAlpha = (1 - mid) * 0.055;
-      for (let i = 0; i < 5; i++) {
-        const x = W * (i * 0.29 - 0.2) + Math.sin(t * 0.21 + i) * 18;
-        c.fillStyle = "#9de7ef";
-        c.beginPath();
-        c.moveTo(Math.round(x), start);
-        c.lineTo(Math.round(x + 12), start);
-        c.lineTo(Math.round(x + H * 0.31 + 70), H);
-        c.lineTo(Math.round(x + H * 0.28), H);
-        c.fill();
+      c.restore();
+      if (this.mode === "summary") {
+        c.fillStyle = "#071320b8";
+        c.fillRect(0, 0, W, H);
       }
+      this.paintContext = null;
+    }
+    draw(t) {
+      const c = this.ctx, W = this.w, H = this.h, d = this.visualDepth, surface = H * 0.48 - this.camera;
+      this.environment();
       c.globalAlpha = 1;
-      if (d < 1300) this.kelp(t, (1 - mid) * 0.65);
+      c.drawImage(this.backdrop, 0, 0);
+      const start = Math.max(0, surface), mid = smooth(250, 1150, d), hadal = smooth(5100, 6300, d);
+      c.save();
+      c.beginPath();
+      c.rect(0, start, W, H - start);
+      c.clip();
       this.fishSchool(t, d, mid);
       const wake = this.burst * 16;
-      for (let i = 0; i < 58; i++) {
+      for (let i = 0; i < (this.mode === "home" ? 14 : 26); i++) {
         const x = (i * 127.73 + Math.sin(t * 0.28 + i) * 9 + W * 2) % W;
         const y = ((i * 83.41 - t * (3 + i % 5 + wake) + this.camera * 0.25) % (H + 50) + (H + 50)) % (H + 50) - 20;
         const a = 0.06 + i % 5 * 0.035;
@@ -199,31 +292,15 @@
         }
         c.globalAlpha = 1;
       }
-      if (this.mode === "summary") {
-        c.fillStyle = "#071320b8";
-        c.fillRect(0, 0, W, H);
-      }
-    }
-    kelp(t, alpha) {
-      if (!this.ready("kelp")) return;
-      const c = this.ctx, img = this.images.kelp, fw = img.naturalWidth / 4, fh = img.naturalHeight / 2;
-      for (let i = 0; i < 4; i++) {
-        const frame = (Math.floor(t * 4) + i * 2) % 8, size = Math.min(this.h * 0.64, 340) + i % 2 * 30;
-        c.save();
-        c.globalAlpha = alpha * (i % 2 ? 0.75 : 1);
-        const x = i < 2 ? -size * 0.27 + i * 45 : this.w - size * 0.55 + (i - 2) * 45;
-        c.drawImage(img, frame % 4 * fw, Math.floor(frame / 4) * fh, fw, fh, x, this.h - size * 0.75, size, size);
-        c.restore();
-      }
     }
     fishSchool(t, d, mid) {
       const c = this.ctx;
-      for (let i = 0; i < 15; i++) {
+      for (let i = 0; i < (this.mode === "home" ? 4 : 7); i++) {
         const dir = i % 2 ? 1 : -1, scale = 0.65 + i % 4 * 0.2, x = (i * 179 + t * dir * (7 + i % 3) + this.w * 8) % (this.w + 100) - 50, y = this.h * 0.2 + (i * 73 + this.camera * 0.16) % (this.h * 0.7);
         c.save();
         c.translate(Math.round(x), Math.round(y + Math.sin(t + i) * 2));
         c.scale(dir * scale, scale);
-        c.globalAlpha = mid > 0.6 ? 0.22 : 0.45;
+        c.globalAlpha = mid > 0.6 ? 0.15 : 0.24;
         c.fillStyle = mid > 0.6 ? "#3e7894" : "#051d32";
         const tail = Math.sin(t * 5 + i) > 0 ? 1 : 0;
         const rows = [[8, 0, 7, 1], [4, 1, 16, 1], [2, 2, 21, 1], [1, 3, 24, 2], [2, 5, 21, 1], [4, 6, 16, 1], [8, 7, 7, 1]];
@@ -689,13 +766,13 @@ Wi-Fi`
 
   // benchmark.js
   var BENCHMARK_MODEL = Object.freeze({
-    version: "first-dive-v1",
+    version: "challenge-v2",
     questions: 7,
     points: Object.freeze([0, 10, 30, 60, 85, 100]),
     profiles: Object.freeze([
-      Object.freeze({ name: "casual", weight: 0.4, probabilities: Object.freeze([0.17, 0.38, 0.3, 0.12, 0.025, 5e-3]) }),
-      Object.freeze({ name: "regular", weight: 0.5, probabilities: Object.freeze([0.08, 0.25, 0.32, 0.23, 0.1, 0.02]) }),
-      Object.freeze({ name: "experienced", weight: 0.1, probabilities: Object.freeze([0.025, 0.1, 0.24, 0.33, 0.22, 0.085]) })
+      Object.freeze({ name: "casual", weight: 0.2, probabilities: Object.freeze([0.08, 0.25, 0.32, 0.23, 0.1, 0.02]) }),
+      Object.freeze({ name: "regular", weight: 0.55, probabilities: Object.freeze([0.05, 0.14, 0.24, 0.3, 0.2, 0.07]) }),
+      Object.freeze({ name: "experienced", weight: 0.25, probabilities: Object.freeze([0.02, 0.07, 0.18, 0.32, 0.28, 0.13]) })
     ])
   });
   function scoreDistribution(model = BENCHMARK_MODEL) {
@@ -746,7 +823,7 @@ Wi-Fi`
     const y = (x) => base - densityAt(x) / peak * height;
     const path = densities.map((d, i) => (i ? "L" : "M") + i * 5 + "," + (base - d / peak * height).toFixed(2)).join(" "), fill = path + " L700,145 L0,145 Z";
     const marker = Math.max(2, Math.min(698, value));
-    return `<section class="result-benchmark" aria-label="Estimated score comparison"><div class="benchmark-heading"><span>ESTIMATED SCORE DISTRIBUTION</span><span>0\u2013700 POINTS</span></div><div class="bell-chart"><svg viewBox="0 0 700 157" preserveAspectRatio="none" role="img" aria-label="Modeled seven-question score distribution. Your score is ${value}. Estimated percentage of scores below yours: ${percentileText(percent)}."><defs><clipPath id="below-your-score"><rect x="0" y="0" width="${value}" height="157"/></clipPath></defs><path class="bell-area" d="${fill}"/><path class="bell-below" d="${fill}" clip-path="url(#below-your-score)"/><path class="bell-line" d="${path}"/><path class="bell-axis" d="M0 145H700"/><path class="bell-player-line" d="M${marker} ${Math.max(7, y(value) - 10).toFixed(2)}V145"/><circle class="bell-player-dot" cx="${marker}" cy="${y(value).toFixed(2)}" r="3.6"/></svg><span class="bell-you" style="left:${Math.max(2, Math.min(98, value / 7))}%">YOU</span><div class="bell-tooltip" hidden></div></div><div class="bell-scale">${Array.from({ length: 8 }, (_, i) => `<span>${i * 100}</span>`).join("")}</div><p class="benchmark-verdict">BETTER THAN AN ESTIMATED <strong>${percentileText(percent)}</strong></p><details class="benchmark-method"><summary>Estimated from a scoring model \xB7 how it works</summary><p>No live player results have been collected. This model mixes casual, regular, and experienced first-time players (40%, 50%, 10%) across seven questions. It assumes different chances of missing or finding each rarity tier. The modeled average is about ${Math.round(MODEL_MEAN)} points. \u201CBetter than\u201D counts lower scores and excludes ties. These estimates are not calibrated to actual players or individual prompt difficulty.</p></details></section>`;
+    return `<section class="result-benchmark" aria-label="Estimated score comparison"><div class="benchmark-heading"><span>ESTIMATED CHALLENGE CURVE</span><span>0\u2013700 POINTS</span></div><div class="bell-chart"><svg viewBox="0 0 700 157" preserveAspectRatio="none" role="img" aria-label="Modeled seven-question score distribution. Your score is ${value}. Estimated percentage of scores below yours: ${percentileText(percent)}."><defs><clipPath id="below-your-score"><rect x="0" y="0" width="${value}" height="157"/></clipPath></defs><path class="bell-area" d="${fill}"/><path class="bell-below" d="${fill}" clip-path="url(#below-your-score)"/><path class="bell-line" d="${path}"/><path class="bell-axis" d="M0 145H700"/><path class="bell-player-line" d="M${marker} ${Math.max(7, y(value) - 10).toFixed(2)}V145"/><circle class="bell-player-dot" cx="${marker}" cy="${y(value).toFixed(2)}" r="3.6"/></svg><span class="bell-you" style="left:${Math.max(2, Math.min(98, value / 7))}%">YOU</span><div class="bell-tooltip" hidden></div></div><div class="bell-scale">${Array.from({ length: 8 }, (_, i) => `<span>${i * 100}</span>`).join("")}</div><p class="benchmark-verdict">BETTER THAN AN ESTIMATED <strong>${percentileText(percent)}</strong></p><details class="benchmark-method"><summary>Estimated from a scoring model \xB7 how it works</summary><p>No live player results have been collected. This model mixes casual, regular, and experienced players (20%, 55%, 25%) across seven questions. This harder benchmark assumes more consistent correct answers and more Rare and Deep Cut finds. The modeled average is about ${Math.round(MODEL_MEAN)} points. \u201CBetter than\u201D counts lower scores and excludes ties. These estimates are not calibrated to actual players or individual prompt difficulty.</p></details></section>`;
   }
   function mountBellCurve(root) {
     const chart = root.querySelector(".bell-chart");
@@ -788,7 +865,7 @@ Wi-Fi`
     const result = quiz2.results.at(-1), isResult = ["result", "sinking"].includes(quiz2.stage), t = tier(result?.points ?? 0);
     const depth = score * 10;
     const sceneDepth = isResult ? depth : depth;
-    app2.innerHTML = `<section class="dive-screen" aria-label="Underwater trivia"><div class="dive-hud"><div class="hud-badge depth-badge"><small>DEPTH</small><strong id="dive-depth">${depth.toLocaleString()}m</strong></div><div class="dive-progress"><div class="dive-squares">${quiz2.ids.map((_, i) => `<span class="dive-square ${i < quiz2.results.length ? "completed " + tier(quiz2.results[i].points).color : i === quiz2.round ? "current" : ""}"></span>`).join("")}</div><small>PROMPT ${quiz2.round + 1} OF 7</small></div><div class="hud-badge score-badge"><small>SCORE</small><strong>${score}</strong></div></div><div class="biome-caption"><span class="biome-line"></span><span id="current-biome">SUNLIT WATERS</span></div><div class="depth-ruler" aria-hidden="true">${Array.from({ length: 11 }, (_, i) => `<span style="top:${i * 10}%">${Math.floor(depth / 100) * 100 + i * 50}m</span>`).join("")}</div><div class="dive-buddy" aria-hidden="true"><img src="assets/counsel-krill.svg" alt=""></div>${isResult ? `<section class="dive-verdict ${quiz2.stage === "sinking" ? "sinking" : ""}" aria-live="polite"><div class="verdict-creature ${t.color}">${result?.points ? tierSprite(result.points) : tierSprite(0)}</div><h1 class="${t.color}">${t.name}</h1><p class="verdict-answer">\u201C${esc3(result.label)}\u201D</p><p class="verdict-score">+${result.points} PTS \xB7 sink ${result.points * 10}m</p><p class="verdict-comment">${result.quip ? esc3(result.quip) : result.points >= 100 ? "An extraordinary find. Case closed." : result.points >= 85 ? "A precedent few would think of." : result.points >= 60 ? "A rare answer, well argued." : result.points >= 30 ? "A solid answer for the record." : result.points ? "A familiar answer. Still a valid case." : result.reason === "timeout" ? "The clock reached its verdict." : result.reason === "skip" ? "A new case awaits below." : "That answer isn\u2019t in this curated bank."}</p>${result.corrected ? `<p class="fine-print">Accepted for \u201C${esc3(result.input)}\u201D</p>` : ""}</section><div class="dive-controls result-controls"><button class="pixel-button primary" data-action="next" ${quiz2.stage === "sinking" ? "disabled" : ""}>${quiz2.round === 6 ? "SURFACE" : "DESCEND"} ${quiz2.round === 6 ? "\u25B2" : "\u25BC"}</button></div>` : `<section class="floating-prompt"><p class="prompt-number">PROMPT ${quiz2.round + 1} OF 7 <span>${esc3(pack2.topic)}</span></p><h1>${esc3(pack2.prompt)}</h1><p class="prompt-hint">\u25BC rarer answers sink deeper \u25BC</p></section><div class="dive-controls ${quiz2.stage === "intro" ? "entering" : ""}"><div class="intro-message" id="intro-message">descending \xB7 the clock starts in 2</div><form id="answer-form" class="dive-answer-form"><div class="timer-orb" id="timer-orb"><span id="quiz-timer" role="timer" aria-label="Seconds remaining">25</span></div><div class="dive-input-wrap"><label class="sr-only" for="answer">Your answer</label><input id="answer" name="answer" placeholder="type one answer\u2026" maxlength="256" autocomplete="off" autocapitalize="off" spellcheck="false" required ${quiz2.stage === "intro" ? "disabled" : ""}><div class="dive-time-bar"><span id="quiz-timer-fill"></span></div></div><button class="pixel-button dive-submit" id="dive-submit" type="submit" disabled>DIVE</button></form><div class="dive-under-controls"><button class="text-button" data-action="skip">SKIP \u25B8</button><span>FUTURE COUNSEL \xB7 THINK DEEPER</span><button class="text-button" data-action="help">? RULES</button></div></div>`}</section>`;
+    app2.innerHTML = `<section class="dive-screen" aria-label="Underwater trivia"><div class="dive-hud"><div class="hud-badge depth-badge"><small>DEPTH</small><strong id="dive-depth">${depth.toLocaleString()}m</strong></div><div class="dive-progress"><div class="dive-squares">${quiz2.ids.map((_, i) => `<span class="dive-square ${i < quiz2.results.length ? "completed " + tier(quiz2.results[i].points).color : i === quiz2.round ? "current" : ""}"></span>`).join("")}</div><small>PROMPT ${quiz2.round + 1} OF 7</small></div><div class="hud-badge score-badge"><small>SCORE</small><strong>${score}</strong></div></div><div class="biome-caption"><span class="biome-line"></span><span id="current-biome">SUNLIT WATERS</span></div><div class="depth-ruler" aria-hidden="true">${Array.from({ length: 11 }, (_, i) => `<span style="top:${i * 10}%">${Math.floor(depth / 100) * 100 + i * 50}m</span>`).join("")}</div><div class="dive-buddy" aria-hidden="true"><img src="assets/counsel-krill.svg" alt=""></div>${isResult ? `<section class="dive-verdict ${quiz2.stage === "sinking" ? "sinking" : ""}" aria-live="polite"><div class="verdict-creature ${t.color}">${result?.points ? tierSprite(result.points) : tierSprite(0)}</div><h1 class="${t.color}">${t.name}</h1><p class="verdict-answer">\u201C${esc3(result.label)}\u201D</p><p class="verdict-score">+${result.points} PTS \xB7 sink ${result.points * 10}m</p><p class="verdict-comment">${result.quip ? esc3(result.quip) : result.points >= 100 ? "An extraordinary find. Case closed." : result.points >= 85 ? "A precedent few would think of." : result.points >= 60 ? "A rare answer, well argued." : result.points >= 30 ? "A solid answer for the record." : result.points ? "A familiar answer. Still a valid case." : result.reason === "timeout" ? "The clock reached its verdict." : result.reason === "skip" ? "A new case awaits below." : "That answer isn\u2019t in this curated bank."}</p>${result.corrected ? `<p class="fine-print">Accepted for \u201C${esc3(result.input)}\u201D</p>` : ""}</section><div class="dive-controls result-controls"><button class="pixel-button primary" data-action="next">${quiz2.round === 6 ? "SURFACE" : "DESCEND"} ${quiz2.round === 6 ? "\u25B2" : "\u25BC"}</button><span class="continue-hint">ENTER TO CONTINUE</span></div>` : `<section class="floating-prompt"><p class="prompt-number">PROMPT ${quiz2.round + 1} OF 7 <span>${esc3(pack2.topic)}</span></p><h1>${esc3(pack2.prompt)}</h1><p class="prompt-hint">\u25BC rarer answers sink deeper \u25BC</p></section><div class="dive-controls ${quiz2.stage === "intro" ? "entering" : ""}"><div class="intro-message" id="intro-message">descending \xB7 the clock starts in 2</div><form id="answer-form" class="dive-answer-form"><div class="timer-orb" id="timer-orb"><span id="quiz-timer" role="timer" aria-label="Seconds remaining">25</span></div><div class="dive-input-wrap"><label class="sr-only" for="answer">Your answer</label><input id="answer" name="answer" placeholder="type one answer\u2026" maxlength="256" autocomplete="off" autocapitalize="off" spellcheck="false" required><div class="dive-time-bar"><span id="quiz-timer-fill"></span></div></div><button class="pixel-button dive-submit" id="dive-submit" type="submit" disabled>DIVE</button></form><div class="dive-under-controls"><button class="text-button" data-action="skip">SKIP \u25B8</button><span>FUTURE COUNSEL \xB7 THINK DEEPER</span><button class="text-button" data-action="help">? RULES</button></div></div>`}</section>`;
     return sceneDepth;
   }
 
@@ -1007,6 +1084,7 @@ Wi-Fi`
   var tourPlaying = false;
   var tourPrevious = 0;
   var restorePracticeOnLoad = true;
+  var quizSaveTimer;
   var puffer = (extra = "") => `<img class="puffer ${extra}" src="assets/puffer.svg" alt="Pufferfish counsel mascot">`;
   var button = (action2, text, cls = "") => `<button class="pixel-button ${cls}" data-action="${action2}">${text}</button>`;
   var back = () => '<a class="back" href="#home">\u25C2 SURFACE</a>';
@@ -1055,7 +1133,7 @@ Wi-Fi`
   function home() {
     screen("home");
     const day = dateKey(), stored = read("daily:" + day, null), done = stored?.stage === "done";
-    app.innerHTML = `<section class="hero"><p class="eyebrow">FUTURE COUNSEL PRESENTS</p><h1 class="brand-title">COUNCILLION</h1><p class="subtitle">THE DAILY DIVE</p><p class="hero-copy">7 prompts \xB7 25 seconds each<br>rarer answers sink deeper</p></section><section class="home-panel"><div class="banner"><span><i class="status-dot"></i>MAKE YOUR CASE. THINK DEEPER.</span><span id="reset-clock"></span></div><button class="pixel-button party-card" data-action="party"><span class="tag">WITH FRIENDS</span>${puffer()}<span><strong>PUFFER PARTY</strong><small>Pass the puffer. Make your case.</small></span><span class="arrow">\u25B8</span></button>${button("daily", done ? "\u2726 TODAY\u2019S VERDICT" : stored ? "\u25BC CONTINUE DESCENT \u25BC" : "\u25BC BEGIN DESCENT \u25BC", "primary")}<div class="sub-actions"><span>${esc4(day)} \xB7 DAILY DIVE</span><button class="text-button" data-action="practice">UNLIMITED \u221E</button><button class="text-button" data-action="help">? HOW TO PLAY</button></div><div class="home-tier-strip">${[100, 85, 60, 30, 10].map((p) => `<span class="${tier(p).color}" title="${tier(p).name}">${tierSprite(p)} <small>${tier(p).name}</small></span>`).join("")}</div><p class="fine-print"><a class="ocean-link" href="#biomes">EXPLORE THE OCEAN \u2193</a><br><a class="fc-link" href="https://futurecounsel.org/" target="_blank" rel="noopener">FUTURE COUNSEL</a> \xB7 ONE IN A COUNCILLION.</p></section>`;
+    app.innerHTML = `<section class="hero"><p class="eyebrow">FUTURE COUNSEL PRESENTS</p><h1 class="brand-title">COUNCILLION</h1><p class="subtitle">THE DAILY DIVE</p><p class="hero-copy">Think of an answer no one else will.<br>Seven prompts. See how deep you go.</p></section><section class="home-panel"><div class="banner"><span>${esc4(day)} \xB7 DAILY DIVE</span><span id="reset-clock"></span></div>${button("daily", done ? "TODAY\u2019S VERDICT \u2197" : stored ? "CONTINUE DESCENT \u2193" : "BEGIN DESCENT \u2193", "primary")}<div class="home-play-options"><button class="pixel-button party-card" data-action="party">${puffer()}<span><strong>PUFFER PARTY</strong><small>Play with friends</small></span><span class="arrow">\u25B8</span></button><button class="pixel-button practice-card" data-action="practice"><span class="practice-icon">\u221E</span><span><strong>ENDLESS DIVE</strong><small>Play another seven</small></span></button></div><div class="sub-actions"><button class="text-button" data-action="help">? HOW TO PLAY</button><a class="text-button" href="#biomes">EXPLORE THE OCEAN \u2193</a></div><p class="fine-print"><a class="fc-link" href="https://futurecounsel.org/" target="_blank" rel="noopener">FUTURE COUNSEL</a> \xB7 ONE IN A COUNCILLION.</p></section>`;
     updateClock();
   }
   function showBank(id = quizPack()?.id) {
@@ -1073,7 +1151,12 @@ Wi-Fi`
     const secs = 86400 - val("hour") * 3600 - val("minute") * 60 - val("second");
     node.textContent = "NEXT SET " + [Math.floor(secs / 3600), Math.floor(secs / 60) % 60, secs % 60].map((n) => String(n).padStart(2, "0")).join(":");
   }
+  function queueQuizSave() {
+    clearTimeout(quizSaveTimer);
+    quizSaveTimer = setTimeout(persistQuiz, 180);
+  }
   function persistQuiz() {
+    clearTimeout(quizSaveTimer);
     if (quiz?.mode === "daily") save("daily:" + quiz.day, quiz);
     else if (quiz?.mode === "practice" && ["localhost", "127.0.0.1"].includes(location.hostname)) {
       try {
@@ -1102,8 +1185,8 @@ Wi-Fi`
       persistQuiz();
     }
     if (resumedLive) {
-      ocean.visualDepth = total() * 10;
-      ocean.camera = ocean.h * 0.68 + ocean.visualDepth * 0.09;
+      ocean.visualDepth = quiz.stage === "done" ? 0 : total() * 10;
+      ocean.camera = quiz.stage === "done" ? 0 : ocean.h * 0.68 + ocean.visualDepth * 0.09;
     }
     if (quiz.pausedAt) delete quiz.pausedAt;
     route = mode;
@@ -1141,16 +1224,27 @@ Wi-Fi`
         const msg = $("#quiz-rejection");
         if (msg) msg.remove();
         $("#dive-submit").disabled = !input.value.trim();
-        persistQuiz();
+        queueQuizSave();
       });
-      if (quiz.stage === "answer") {
-        input.focus();
-        $("#dive-submit").disabled = !input.value.trim();
-      }
+      input.focus({ preventScroll: true });
+      $("#dive-submit").disabled = !input.value.trim();
       updateTimer();
     }
   }
+  function activateAnswerClock(early = false) {
+    if (quiz?.stage !== "intro") return;
+    quiz.stage = "answer";
+    if (early) {
+      quiz.readyAt = Date.now();
+      quiz.deadline = quiz.readyAt + 25e3;
+    }
+    $(".dive-controls")?.classList.remove("entering");
+    $("#intro-message")?.remove();
+    $("#answer")?.focus({ preventScroll: true });
+    persistQuiz();
+  }
   function submitQuiz(text, reason) {
+    if (quiz?.stage === "intro") activateAnswerClock(true);
     if (!quiz || quiz.stage !== "answer") return;
     const late = Date.now() >= quiz.deadline, skip = reason === "skip";
     const answer = !skip ? matchAnswer(quizPack(), text) : null;
@@ -1399,20 +1493,23 @@ Future Counsel \xB7 ${location.href.split("#")[0]}`, "Verdict copied. Send it to
     const biomeNode = $("#current-biome");
     if (biomeNode) {
       const b = biomeAt(ocean.displayedDepth);
-      biomeNode.textContent = b.name;
-      biomeNode.style.color = b.color;
+      if (biomeNode.textContent !== b.name) {
+        biomeNode.textContent = b.name;
+        biomeNode.style.color = b.color;
+      }
     }
     const depthLabel = $("#dive-depth");
-    if (depthLabel && ocean.mode === "dive") depthLabel.textContent = ocean.displayedDepth.toLocaleString() + "m";
+    if (depthLabel && ocean.mode === "dive") {
+      const value = ocean.displayedDepth.toLocaleString() + "m";
+      if (depthLabel.textContent !== value) depthLabel.textContent = value;
+    }
     if (quiz && ["daily", "practice"].includes(route)) {
       if (quiz.stage === "intro") {
         const remaining = quiz.readyAt - Date.now();
         const node = $("#intro-message");
-        if (node) node.textContent = "descending \xB7 the clock starts in " + Math.max(1, Math.ceil(remaining / 1e3));
+        if (node) node.textContent = "clock starts in " + Math.max(1, Math.ceil(remaining / 1e3)) + " \xB7 or DIVE now";
         if (remaining <= 0) {
-          quiz.stage = "answer";
-          persistQuiz();
-          renderQuiz();
+          activateAnswerClock();
         }
         return;
       }
@@ -1420,19 +1517,19 @@ Future Counsel \xB7 ${location.href.split("#")[0]}`, "Verdict copied. Send it to
         if (Date.now() >= quiz.landedAt) {
           quiz.stage = "result";
           persistQuiz();
-          renderQuiz();
+          $(".dive-verdict")?.classList.remove("sinking");
         }
         return;
       }
       if (quiz.stage === "answer") {
         const remaining = Math.max(0, quiz.deadline - Date.now()), n = $("#quiz-timer"), fill = $("#quiz-timer-fill");
         if (n) {
-          n.textContent = Math.ceil(remaining / 1e3);
+          const text = String(Math.ceil(remaining / 1e3));
+          if (n.textContent !== text) n.textContent = text;
           n.classList.toggle("urgent", remaining <= 3050);
         }
-        $("#timer-orb")?.style.setProperty("--remaining", remaining / 25e3 * 360 + "deg");
         if (fill) {
-          fill.style.width = remaining / 250 + "%";
+          fill.style.transform = "scaleX(" + remaining / 25e3 + ")";
           fill.style.background = remaining <= 3050 ? "var(--pink)" : "var(--cyan)";
         }
         if (remaining <= 0) submitQuiz($("#answer")?.value ?? quiz.draft ?? "", "timeout");
@@ -1445,7 +1542,7 @@ Future Counsel \xB7 ${location.href.split("#")[0]}`, "Verdict copied. Send it to
         n.classList.toggle("urgent", remaining < 6e3 || s.phase === "burst");
       }
       if (fill) {
-        fill.style.width = s.phase === "playing" ? Math.min(100, remaining / (s.deadline - s.startedAt) * 100) + "%" : "0%";
+        fill.style.transform = "scaleX(" + (s.phase === "playing" ? Math.min(1, remaining / (s.deadline - s.startedAt)) : 0) + ")";
         fill.style.background = remaining < 6e3 ? "var(--pink)" : "var(--mint)";
       }
     }
@@ -1560,6 +1657,15 @@ Future Counsel \xB7 ${location.href.split("#")[0]}`, "Verdict copied. Send it to
   });
   document.addEventListener("visibilitychange", () => {
     if (!document.hidden) updateTimer();
+  });
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Enter" && ["daily", "practice"].includes(route) && ["sinking", "result"].includes(quiz?.stage) && !$("#modal").open && !e.target.closest("button,a,input,textarea,summary")) {
+      e.preventDefault();
+      nextQuiz();
+    }
+  });
+  window.addEventListener("pagehide", () => {
+    if (quiz) persistQuiz();
   });
   applySettings();
   navigate();
