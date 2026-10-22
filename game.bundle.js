@@ -87,6 +87,7 @@
         current = null;
         session(null);
         update();
+        onIdentity(null);
       }
       if (current) {
         modal2(`<p class="eyebrow">YOUR COUNSEL PROFILE</p><h2>${escape(current.name)}</h2><p class="account-email">${escape(current.email)}</p><p class="muted">Connected with Google. Your dives and settings are saved in this browser. This sign-in does not sync progress between devices.</p><button class="pixel-button" id="google-signout">SIGN OUT</button><p class="fine-print"><a href="privacy.html" target="_blank" rel="noopener">Privacy & data</a></p>`);
@@ -95,6 +96,7 @@
           session(null);
           globalThis.google?.accounts?.id.disableAutoSelect();
           update();
+          onIdentity(null);
           open();
         };
         return;
@@ -136,9 +138,12 @@
         current = null;
         session(null);
         update();
+        onIdentity(null);
       }
-    }, 6e4);
-    return { open };
+    }, 1e3);
+    return { open, get identity() {
+      return current && current.expires > Date.now() / 1e3 ? current : null;
+    } };
   }
 
   // case-questions.js
@@ -2265,13 +2270,23 @@ Wi-Fi`
     return sceneDepth;
   }
 
+  // party-access.js
+  function canPlayParty(identity, now = Date.now() / 1e3) {
+    return !!identity && typeof identity.id === "string" && identity.id.length > 0 && Number.isFinite(identity.expires) && identity.expires > now;
+  }
+  function requirePartyIdentity(identity, now = Date.now() / 1e3) {
+    if (!canPlayParty(identity, now)) throw Error("Sign in with Google to play Puffer Party.");
+    return identity;
+  }
+
   // party.js
-  var PREFIX = "councillion-v1-";
+  var PREFIX = "councillion-v2-";
   var cleanName = (name) => String(name ?? "").replace(/[\u0000-\u001f]/g, "").trim().slice(0, 16) || "Counsel";
   var PartySession = class {
-    constructor(onState, onError) {
+    constructor(onState, onError, getIdentity = () => null) {
       this.onState = onState;
       this.onError = onError;
+      this.getIdentity = getIdentity;
       this.connections = /* @__PURE__ */ new Map();
       this.host = false;
       this.local = false;
@@ -2294,7 +2309,7 @@ Wi-Fi`
         this.peer = peer;
         const timeout = setTimeout(() => {
           peer.destroy();
-          reject(Error("Connection timed out. Try again, or play on one device."));
+          reject(Error("Connection timed out. Try again."));
         }, 15e3);
         peer.on("open", () => {
           clearTimeout(timeout);
@@ -2302,7 +2317,7 @@ Wi-Fi`
         });
         peer.on("error", (err) => {
           clearTimeout(timeout);
-          const message = err.type === "peer-unavailable" ? "Room not found. Check the code and make sure the host\u2019s tab is open." : err.type === "unavailable-id" ? "That room code is in use. Please host again." : "Could not connect. This network may block multiplayer connections. Try one-device mode.";
+          const message = err.type === "peer-unavailable" ? "Room not found. Check the code and make sure the host\u2019s tab is open." : err.type === "unavailable-id" ? "That room code is in use. Please host again." : "Could not connect. This network may block multiplayer connections. Return to the surface and try again.";
           reject(Error(message));
           if (this.state) this.fail(message);
         });
@@ -2312,27 +2327,31 @@ Wi-Fi`
       });
     }
     async create(name) {
+      requirePartyIdentity(this.getIdentity());
       this.host = true;
       this.code = Array.from(crypto.getRandomValues(new Uint8Array(4)), (x) => "ABCDEFGHJKLMNPQRSTUVWXYZ"[x % 24]).join("");
       this.myId = PREFIX + this.code;
       this.state = newParty([{ id: this.myId, name: cleanName(name) }]);
       const peer = await this.openPeer(this.myId);
+      requirePartyIdentity(this.getIdentity());
       peer.on("connection", (conn) => this.accept(conn));
       this.snapshot();
     }
     async join(name, code) {
+      requirePartyIdentity(this.getIdentity());
       this.code = code.toUpperCase().replace(/[^A-Z0-9]/g, "");
       if (this.code.length !== 4) throw Error("Enter the four-letter room code.");
       const peer = await this.openPeer();
+      requirePartyIdentity(this.getIdentity());
       this.myId = peer.id;
       return new Promise((resolve, reject) => {
         const conn = peer.connect(PREFIX + this.code, { reliable: true, serialization: "json" });
         this.hostConn = conn;
         const timeout = setTimeout(() => {
           conn.close();
-          reject(Error("The room did not answer. Keep the host\u2019s tab open, or try one-device mode."));
+          reject(Error("The room did not answer. Keep the host\u2019s tab open and try again."));
         }, 15e3);
-        conn.on("open", () => conn.send({ type: "hello", name: cleanName(name), version: 1 }));
+        conn.on("open", () => conn.send({ type: "hello", name: cleanName(name), version: 2 }));
         conn.on("data", (msg) => {
           if (msg?.type === "reject") {
             clearTimeout(timeout);
@@ -2373,7 +2392,7 @@ Wi-Fi`
         if (!msg || typeof msg !== "object") return;
         if (msg.type === "hello" && !admitted) {
           clearTimeout(helloTimeout);
-          if (msg.version !== 1 || this.state.phase !== "lobby" || this.state.players.length >= this.state.settings.maxPlayers) {
+          if (msg.version !== 2 || this.state.phase !== "lobby" || this.state.players.length >= this.state.settings.maxPlayers) {
             conn.send({ type: "reject", message: this.state.phase !== "lobby" ? "This game already started. Ask the host for a rematch." : "Room full or game version mismatch." });
             setTimeout(() => conn.close(), 500);
             return;
@@ -2400,6 +2419,7 @@ Wi-Fi`
       conn.on("error", () => conn.close());
     }
     createLocal(names2) {
+      requirePartyIdentity(this.getIdentity());
       this.local = true;
       this.host = true;
       this.code = "LOCAL";
@@ -2413,6 +2433,7 @@ Wi-Fi`
       this.snapshot();
     }
     start() {
+      if (!canPlayParty(this.getIdentity())) return this.fail("Sign in with Google to play Puffer Party.");
       if (!this.host) return;
       if (this.state.phase === "ended") {
         const config = this.state.settings;
@@ -2425,6 +2446,7 @@ Wi-Fi`
     }
     submit(text) {
       if (this.closed) return;
+      if (!canPlayParty(this.getIdentity())) return this.fail("Sign in with Google to play Puffer Party.");
       if (this.host) {
         const id = this.local ? this.state.players[this.state.turn].id : this.myId;
         const result = answerParty(this.state, id, text);
@@ -2433,7 +2455,13 @@ Wi-Fi`
       } else if (this.hostConn?.open) this.hostConn.send({ type: "answer", text: String(text).slice(0, 256) });
     }
     tick() {
-      if (this.closed || !this.host || !this.state) return;
+      if (this.closed || !this.state) return;
+      if (!canPlayParty(this.getIdentity())) {
+        this.fail("Your Google sign-in expired. Sign in again to play.");
+        this.close();
+        return;
+      }
+      if (!this.host) return;
       if (tickParty(this.state)) this.broadcast();
     }
     close(clear = true) {
@@ -2472,6 +2500,7 @@ Wi-Fi`
   var settings = read("settings", { sound: false, scanlines: true, motion: true, answerCorrections: true, clearRejected: false });
   var profile = read("profile", { name: "", streak: 0, lastDay: null, best: 0 });
   var caseChallenge = null;
+  var account = null;
   var quiz = null;
   var party = null;
   var lastPartyTurn = null;
@@ -2524,7 +2553,7 @@ Wi-Fi`
     if (!$("#modal").open) $("#modal").showModal();
   }
   function howTo() {
-    modal(`<div class="eyebrow">FUTURE COUNSEL FIELD GUIDE</div><h2>HOW TO DIVE</h2><ol><li>Seven prompts. You have <span class="gold">25 seconds</span> to name one answer for each.</li><li>Find a less obvious answer. Curated rarity tiers award <span class="gold">10\u2013100 points</span>. Every point takes you 10 metres deeper. Rejected answers can be retried while the timer runs; any text left at zero is submitted automatically.</li><li>Everyone gets the same Daily Dive: one prompt each from wordplay, nature, food, science, culture, geography, and everyday curiosities. Each topic rotates through its pool without repeating yesterday\u2019s prompt. A fresh set arrives at midnight in New York. Practice as often as you like.</li></ol><h3>ENDLESS CASES</h3><p>Read the details. Four choices per question. Get five right in a row to clear a challenge; one wrong answer resets the streak. Questions and answer positions shuffle. Keep diving through unlimited rounds drawn from Gavin\u2019s 16 published case reviews and his own analysis.</p><h3>PUFFER PARTY</h3><p>Host a room, share its code, and take turns naming answers. A valid answer passes the puffer. You cannot reuse an answer in the current round.</p><p>The shared fuse keeps burning between turns. If it pops on you, you lose a heart. Start with two hearts. Earn 600 rarity points to restore a heart, up to five. Each new turn gets at least eight seconds. Last counsel floating wins.</p><p class="muted">Source-backed answer banks and original familiarity rankings. Scores combine corpus familiarity with editorial tiers and special 100-point discoveries; they do not measure how often players choose an answer. Some valid answers may be missing. This is a Future Counsel fan game inspired by Krillion; it is not affiliated with Krillion.</p><a class="fc-link" href="https://futurecounsel.org/" target="_blank" rel="noopener">EXPLORE FUTURE COUNSEL \u2197</a>`);
+    modal(`<div class="eyebrow">FUTURE COUNSEL FIELD GUIDE</div><h2>HOW TO DIVE</h2><ol><li>Seven prompts. You have <span class="gold">25 seconds</span> to name one answer for each.</li><li>Find a less obvious answer. Curated rarity tiers award <span class="gold">10\u2013100 points</span>. Every point takes you 10 metres deeper. Rejected answers can be retried while the timer runs; any text left at zero is submitted automatically.</li><li>Everyone gets the same Daily Dive: one prompt each from wordplay, nature, food, science, culture, geography, and everyday curiosities. Each topic rotates through its pool without repeating yesterday\u2019s prompt. A fresh set arrives at midnight in New York. Practice as often as you like.</li></ol><h3>ENDLESS CASES</h3><p>Read the details. Four choices per question. Get five right in a row to clear a challenge; one wrong answer resets the streak. Questions and answer positions shuffle. Keep diving through unlimited rounds drawn from Gavin\u2019s 16 published case reviews and his own analysis.</p><h3>PUFFER PARTY</h3><p>Sign in with Google to host or join. Host a room, share its code, and take turns naming answers. A valid answer passes the puffer. You cannot reuse an answer in the current round.</p><p>The shared fuse keeps burning between turns. If it pops on you, you lose a heart. Start with two hearts. Earn 600 rarity points to restore a heart, up to five. Each new turn gets at least eight seconds. Last counsel floating wins.</p><p class="muted">Source-backed answer banks and original familiarity rankings. Scores combine corpus familiarity with editorial tiers and special 100-point discoveries; they do not measure how often players choose an answer. Some valid answers may be missing. This is a Future Counsel fan game inspired by Krillion; it is not affiliated with Krillion.</p><a class="fc-link" href="https://futurecounsel.org/" target="_blank" rel="noopener">EXPLORE FUTURE COUNSEL \u2197</a>`);
   }
   function showSettings() {
     modal(`<div class="eyebrow">CONTROL ROOM</div><h2>SETTINGS</h2><label class="setting-row"><span>Sound effects<small>Little arcade bleeps.</small></span><input type="checkbox" data-setting="sound" ${settings.sound ? "checked" : ""}></label><label class="setting-row"><span>CRT scanlines<small>The old-school screen effect.</small></span><input type="checkbox" data-setting="scanlines" ${settings.scanlines ? "checked" : ""}></label><label class="setting-row"><span>Animations<small>Bobbing fish and gentle movement.</small></span><input type="checkbox" data-setting="motion" ${settings.motion ? "checked" : ""}></label><label class="setting-row"><span>Answer corrections<small>Confirm typos and abbreviations before scoring.</small></span><input type="checkbox" data-setting="answerCorrections" ${settings.answerCorrections !== false ? "checked" : ""}></label><label class="setting-row"><span>Clear rejected entries<small>Empty the input after an unrecognized answer.</small></span><input type="checkbox" data-setting="clearRejected" ${settings.clearRejected ? "checked" : ""}></label><p class="muted">Daily results and preferences are saved on this browser. Multiplayer uses direct connections between players; the host must keep their tab open.</p>`);
@@ -2774,7 +2803,13 @@ Future Counsel \xB7 ${location.href.split("#")[0]}`, "Verdict copied. Send it to
   }
   function partySetup() {
     screen("party");
-    app.innerHTML = back() + `<section class="page-heading"><p class="eyebrow">FUTURE COUNSEL \xB7 MULTIPLAYER</p>${puffer()}<h1>PUFFER PARTY</h1><p>Name an answer. Pass the puffer.<br>Last counsel floating wins.</p></section><section class="panel"><div style="display:flex;justify-content:space-between;align-items:center"><h3 style="margin:0">WHO\u2019S PLAYING?</h3><button class="text-button cyan" data-action="help" style="font-size:16px">HOW TO PLAY \u2197</button></div><label class="field-label" for="player-name">YOUR NAME</label><input id="player-name" class="field" placeholder="Future counsel\u2026" value="${esc5(profile.name)}" maxlength="18" autocomplete="nickname"><div class="party-options">${button("host", "\u25BC HOST A ROOM<small>Get a code. Invite your friends.</small>")}${button("local", "\u2696 ONE DEVICE<small>Pass the keyboard. 2\u20136 players.</small>")}</div><div class="section-separator">OR JOIN YOUR FRIENDS</div><form id="join-form"><label class="sr-only" for="room-code">Four-letter room code</label><div class="join-row"><input id="room-code" class="field" placeholder="ROOM CODE" maxlength="4" autocomplete="off" autocapitalize="characters" pattern="[A-Za-z]{4}" required><button class="pixel-button" type="submit">JOIN \u25B8</button></div></form><p id="party-error" class="notice" hidden role="alert"></p><p class="fine-print" style="margin-top:21px">Private rooms \xB7 2\u20136 players \xB7 no account needed<br>The host keeps this tab open while you play.</p></section><p class="fine-print" style="margin-top:22px">On a network that blocks live connections?<br>Daily Dive and one-device mode work independently.</p>`;
+    const identity = account?.identity;
+    if (!canPlayParty(identity)) {
+      app.innerHTML = back() + `<section class="page-heading"><p class="eyebrow">FUTURE COUNSEL \xB7 MULTIPLAYER</p>${puffer()}<h1>PUFFER PARTY</h1><p>Name an answer. Pass the puffer.<br>Last counsel floating wins.</p></section><section class="panel party-signin"><p class="eyebrow">ENTER THE COURTROOM</p><h2>SIGN IN TO PLAY</h2><p>Every player needs a Google account to host or join Puffer Party.</p><button class="pixel-button primary" data-party-signin>SIGN IN WITH GOOGLE</button><p class="fine-print">Your Google email is private. Other players see your chosen display name.</p></section>`;
+      $("[data-party-signin]").onclick = () => account?.open();
+      return;
+    }
+    app.innerHTML = back() + `<section class="page-heading"><p class="eyebrow">FUTURE COUNSEL \xB7 MULTIPLAYER</p>${puffer()}<h1>PUFFER PARTY</h1><p>Name an answer. Pass the puffer.<br>Last counsel floating wins.</p></section><section class="panel"><div style="display:flex;justify-content:space-between;align-items:center"><h3 style="margin:0">WHO\u2019S PLAYING?</h3><button class="text-button cyan" data-action="help" style="font-size:16px">HOW TO PLAY \u2197</button></div><p class="party-account-label">GOOGLE CONNECTED \xB7 ${esc5(identity.name)}</p><label class="field-label" for="player-name">YOUR DISPLAY NAME</label><input id="player-name" class="field" placeholder="Future counsel\u2026" value="${esc5(profile.name || identity.name)}" maxlength="18" autocomplete="nickname"><div class="party-options">${button("host", "\u25BC HOST A ROOM<small>Get a code. Invite your friends.</small>")}</div><div class="section-separator">OR JOIN YOUR FRIENDS</div><form id="join-form"><label class="sr-only" for="room-code">Four-letter room code</label><div class="join-row"><input id="room-code" class="field" placeholder="ROOM CODE" maxlength="4" autocomplete="off" autocapitalize="characters" pattern="[A-Za-z]{4}" required><button class="pixel-button" type="submit">JOIN \u25B8</button></div></form><p id="party-error" class="notice" hidden role="alert"></p><p class="fine-print" style="margin-top:21px">Private rooms \xB7 2\u20136 players \xB7 Google sign-in required<br>The host keeps this tab open while you play.</p></section>`;
     $("#join-form").addEventListener("submit", (e) => {
       e.preventDefault();
       connectParty("join");
@@ -2800,6 +2835,11 @@ Future Counsel \xB7 ${location.href.split("#")[0]}`, "Verdict copied. Send it to
     } else toast(message);
   }
   async function connectParty(kind) {
+    if (!canPlayParty(account?.identity)) {
+      partySetup();
+      account?.open();
+      return;
+    }
     let name;
     try {
       name = playerName();
@@ -2812,7 +2852,7 @@ Future Counsel \xB7 ${location.href.split("#")[0]}`, "Verdict copied. Send it to
     buttons.forEach((b) => b.disabled = true);
     partyError(kind === "host" ? "Opening a room\u2026" : "Connecting to the room\u2026");
     party?.close();
-    party = new PartySession(renderParty, partyError);
+    party = new PartySession(renderParty, partyError, () => account?.identity);
     try {
       if (kind === "host") await party.create(name);
       else await party.join(name, code);
@@ -2822,29 +2862,6 @@ Future Counsel \xB7 ${location.href.split("#")[0]}`, "Verdict copied. Send it to
       partyError(e.message);
       buttons.forEach((b) => b.disabled = false);
     }
-  }
-  function localSetup() {
-    let name;
-    try {
-      name = playerName();
-    } catch (e) {
-      partyError(e.message);
-      return;
-    }
-    modal(`<div class="eyebrow">PASS THE KEYBOARD</div><h2>ONE-DEVICE PARTY</h2><p>Enter 2\u20136 player names, separated by commas. Everyone plays on this screen.</p><label class="field-label" for="local-names">PLAYERS</label><input class="field" id="local-names" maxlength="160" value="${esc5(name)}, " placeholder="Gavin, Alex, Sam"><p id="local-error" class="notice error" hidden role="alert"></p><button class="pixel-button primary" id="local-create" style="margin-top:25px">ASSEMBLE THE COURT \u25B8</button>`);
-    $("#local-create").onclick = () => {
-      const names2 = $("#local-names").value.split(",").map((n) => n.trim()).filter(Boolean);
-      if (names2.length < 2 || names2.length > 6) {
-        $("#local-error").textContent = "Add between two and six players.";
-        $("#local-error").hidden = false;
-        return;
-      }
-      $("#modal").close();
-      party?.close();
-      party = new PartySession(renderParty, partyError);
-      party.createLocal(names2);
-    };
-    $("#local-names").focus();
   }
   function playersMarkup(s, session2) {
     return `<div class="players">${s.players.map((p, i) => `<div class="player ${s.phase === "playing" && i === s.turn ? "active" : ""} ${p.hearts <= 0 ? "out" : ""}"><span class="avatar">${["\u2696", "\u2726", "\u25C6", "\u265C", "\u25C8", "\u2727", "\u265F", "\u25C9"][i % 8]}</span><div class="player-meta"><div class="name">${esc5(p.name)}${p.id === session2.myId && !session2.local ? ' <span class="cyan">YOU</span>' : ""}</div><div class="hearts" aria-label="${p.hearts} hearts">${"\u2665".repeat(p.hearts)}${"\u2661".repeat(Math.max(0, (s.settings?.lives ?? 2) - p.hearts))}</div><small>${p.connected ? p.score + " PTS" : "DISCONNECTED"}${p.id === s.players[0]?.id ? " \xB7 HOST" : ""}</small><div class="meter" title="${p.meter}/${s.settings?.meterTarget ?? 600} points toward a heart"><span style="width:${p.meter / (s.settings?.meterTarget ?? 600) * 100}%"></span></div></div></div>`).join("")}</div>`;
@@ -3007,9 +3024,6 @@ Future Counsel \xB7 ${location.href.split("#")[0]}`, "Verdict copied. Send it to
       case "host":
         connectParty("host");
         break;
-      case "local":
-        localSetup();
-        break;
       case "start-party":
         party?.start();
         break;
@@ -3088,9 +3102,19 @@ Future Counsel \xB7 ${location.href.split("#")[0]}`, "Verdict copied. Send it to
   window.addEventListener("pagehide", () => {
     if (quiz) persistQuiz();
   });
-  connectAccount({ button: $("#account-button"), modal, escape: esc5, onIdentity: (identity) => {
-    profile.name = identity.name;
-    save("profile", profile);
+  account = connectAccount({ button: $("#account-button"), modal, escape: esc5, onIdentity: (identity) => {
+    if (identity) {
+      profile.name = identity.name;
+      save("profile", profile);
+    }
+    if (route === "party") {
+      if (!identity) {
+        party?.close();
+        party = null;
+        lastPartyTurn = null;
+      }
+      if (!party) partySetup();
+    }
   } });
   applySettings();
   navigate();

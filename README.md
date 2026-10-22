@@ -11,7 +11,6 @@ Future Counsel’s pixel ocean trivia game, inspired by Krillion. Original clien
 - **Trivia Practice:** the original seven-prompt rarity game remains available in the navigation menu.
 - **Airline reference round:** open `#practice?pack=airline-extras` to begin a practice dive with the user’s exact 111-answer example. `#practice?pack=no-wheels` starts with the imported 1,194-answer vehicle example.
 - **Puffer Party:** a private four-letter code joins 2–6 players across devices. Two starting hearts, up to five. Earn 600 rarity points to restore a heart. The puffer has a random shared fuse; each new turn gets at least eight seconds. Answers cannot repeat in the current category.
-- **One Device:** the same party rules on one screen; pass the keyboard.
 - **Ocean preview:** `#biomes` uses the gameplay renderer with a depth slider and slow descent. Five named zones change scenery, lighting, ambient life, and colors.
 - **Results:** the full dive unlocks a seven-column log, score guide, searchable answer accordions, rarity filters, and pagination. Answer banks are hidden during all seven prompts.
 
@@ -56,9 +55,9 @@ Serve the root of `main` using **Settings → Pages → Deploy from a branch**. 
 
 ## Online rooms
 
-The vendored PeerJS 1.5.5 client uses its public broker to establish WebRTC data connections. The host browser validates turns, matching, duplicates, lives, and deadlines. It must remain open; closing or reloading it ends the room. Room codes are invitations, not strong access controls. Names and game state are visible to other room members. No microphone or camera access is requested. Guest play is available; optional Google sign-in uses only basic profile identity, separate from party connections.
+The vendored PeerJS 1.5.5 client uses its public broker to establish WebRTC data connections. The host browser validates turns, matching, duplicates, lives, and deadlines. It must remain open; closing or reloading it ends the room. Room codes are invitations, not strong access controls. Names and game state are visible to other room members. No microphone or camera access is requested. Google sign-in is required for hosting or joining the party in the normal client. Only a display name is shared; Google email and identity tokens are never sent to peers. Daily, Practice and Endless remain playable as guests.
 
-Some managed networks and restrictive NATs block the broker or direct WebRTC connections. This static deployment has no managed TURN relay, persistent game server, public matchmaking, host migration, or reconnect system. Daily Dive, practice, and one-device party still work independently. A dedicated game backend would be the next upgrade for more reliable cross-network multiplayer.
+Some managed networks and restrictive NATs block the broker or direct WebRTC connections. This static deployment has no managed TURN relay, persistent game server, public matchmaking, host migration, or reconnect system. Daily Dive, practice and Endless work independently. A dedicated game backend would be the next upgrade for more reliable cross-network multiplayer.
 
 ## Main files
 
@@ -84,13 +83,13 @@ Future Counsel: https://futurecounsel.org/ · Reference: https://krillion.io/
 
 ## Latest validation
 
-47 automated checks cover game rules, both imported answer banks, the percentile model, vertical projection, scene accessibility, four-choice data integrity, deck recycling, streak resets, persistence, and the Easter egg. A 10,000-question simulation verifies that the legitimate answer key never forms the reserved sequence. Browser checks include a real five-correct challenge, shortcut animation, continuing to another challenge, and visible scenery changes during the actual seven-prompt game.
+50 automated checks cover game rules, both imported answer banks, the percentile model, vertical projection, scene accessibility, four-choice data integrity, deck recycling, streak resets, persistence, and the Easter egg. A 10,000-question simulation verifies that the legitimate answer key never forms the reserved sequence. Browser checks include a real five-correct challenge, shortcut animation, continuing to another challenge, and visible scenery changes during the actual seven-prompt game.
 
 ## Google sign-in
 
 `auth-config.js` contains the public web client ID created for Councillion in Google Cloud project `dark-automata-360415`. Authorized JavaScript origins are `https://gavinleiner.github.io` and `http://localhost:4173` (origins have no path). No client secret is stored in this repository. The official Google Identity Services button loads on demand. A browser-local profile verifies the RS256 signature against Google’s rotating JWKs, audience, issuer, nonce and expiry before showing the connected identity. Session storage keeps the short-lived token; sign-out removes it. Negative token tests cover tampering, wrong audience/issuer/nonce, expiry and unknown keys.
 
-This is optional identity for a local game: progress remains on the current browser; there is no cloud-save service, account-based access control, or server session. A future remote save/leaderboard must independently validate credentials on its backend. [privacy.html](privacy.html) explains storage and third-party requests. Google Auth Platform branding uses the public game and privacy URLs; the external app must be published so friends can sign in without joining a test-user list.
+Daily, Practice and Endless have optional identity. Puffer Party requires a current Google identity at the screen and session-method boundaries; signing out or expiry closes the active room connection. The one-device guest entry is removed. Progress remains on the current browser; there is no cloud-save service or server session. A future remote save/leaderboard must independently validate credentials on its backend. [privacy.html](privacy.html) explains storage and third-party requests. Google Auth Platform branding uses the public game and privacy URLs; the external app is published for external players. A real Google sign-in was verified on the production site on October 21.
 
 ## Descent update
 
@@ -99,3 +98,5 @@ The camera now accelerates into a timed fall and settles over roughly 2–3.8 se
 ## Forgiving answers
 
 Accent, punctuation and case normalization happen first. Exact names and curated shorthand win. Otherwise, unique multiword initials (with or without small connecting words) are recognized; ambiguous initials are rejected. Common Lord of the Rings installment shorthand is explicit. Single-letter guesses and arbitrary partial prefixes do not unlock an answer. Longer names permit multiple typing mistakes, with lower costs for adjacent QWERTY keys, repeated/missing doubled letters, and transposed neighbors. A clear margin over competing candidates is required. The existing confirmation step shows the full intended answer before scoring; the setting can disable it. No points are reduced for a corrected spelling or abbreviation.
+
+Party authorization is a client gate around a signature-verified Google profile, with a new room namespace to exclude old anonymous releases. The peer host still trusts the game protocol; there is no authenticated server independently attesting each remote peer. This is not protection against a deliberately modified client. Stronger room membership enforcement and public matchmaking require an authenticated game backend.

@@ -42,7 +42,7 @@ The second supplied bank contains 1,194 canonical vehicle answers: two at 100, 1
 
 ## Multiplayer defaults inspected
 
-The public Puffer Party client specifies two initial lives, a maximum of five, a 600-point heart meter, at least eight seconds for a new turn, a random fuse between ten and thirty seconds, six players by default, and four-letter room codes. Councillion now uses those core defaults. The reference also supports public matchmaking, configurable rooms, accounts, unlocks, presence/reconnection, and a dedicated backend. Councillion currently provides private peer-hosted rooms and a one-device game; it does not claim to implement those additional services.
+The public Puffer Party client specifies two initial lives, a maximum of five, a 600-point heart meter, at least eight seconds for a new turn, a random fuse between ten and thirty seconds, six players by default, and four-letter room codes. Councillion now uses those core defaults. The reference also supports public matchmaking, configurable rooms, accounts, unlocks, presence/reconnection, and a dedicated backend. Councillion currently provides private peer-hosted rooms; it does not claim to implement those additional services.
 
 ## Limits of an exact reproduction
 
@@ -81,3 +81,9 @@ The navigation reference uses a roughly 440 px pixel-framed dialog, a two-column
 Read all 16 published reviews from https://futurecounsel.org/archive, including their background, decision, reasoning, and My Opinion sections. Authored 64 case-specific close-reading questions plus 16 questions about Gavin’s own published analysis. These are questions about the review text, not a generic law bank. Each has one answer, three distractors, an explanation, and a link back to that exact article. No private biographical or family details are included. Later reviews are attributed to Future Counsel’s account; the quiz does not claim to independently establish every underlying legal conclusion.
 
 Five consecutive correct choices clear an Endless challenge; a mistake resets the current streak. Decks and choice positions shuffle, and the 80-question bank recycles indefinitely. This is unlimited play, not a claim of infinitely many unique reviewed questions. The requested hidden passage is animated. The legitimate answer sequence is constrained so it cannot accidentally reproduce the reserved pattern. Automated verification covers 10,000 generated answer positions, streak handling, cycle uniqueness, and restoration. Browser play verified both the hidden passage and a genuine five-answer streak.
+
+## Multiplayer follow-up, October 22
+
+Google sign-in is now required at the party entry and session method boundaries. The old one-device guest entry is removed. Sign-out/expiry disconnects the local party connection. A new protocol namespace separates the authenticated standard client from old anonymous releases. This remains client-side gating, not server attestation of remote peers.
+
+The requested new live Krillion multiplayer walkthrough is **not completed**: the computer-use service disconnected while navigating to the party route and subsequently reported a closed transport. No claim is made that a room was joined or that public matchmaking, configurable rooms, reconnection, cosmetics, or exact screen parity have been implemented. Those remain work to complete after browser access returns.
