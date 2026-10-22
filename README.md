@@ -1,5 +1,7 @@
 # Councillion
 
+[Play Councillion](https://gavinleiner.github.io/councillion/) · [Explore the ocean](https://gavinleiner.github.io/councillion/#biomes)
+
 Future Counsel’s pixel ocean trivia game, inspired by Krillion. Original client code, code-native pixel sprites, AI-edited environmental background art, and bundled typography. The environmental art follows the reference composition with small legal details; logos, labels, controls, and fish sprites remain code-native.
 
 ## Play
