@@ -1256,6 +1256,15 @@ Wi-Fi`
       $("#tour-play").textContent = tourPlaying ? "\u2161 PAUSE" : "\u25B6 SLOW DESCENT";
     };
   }
+  async function copyText(text, message) {
+    try {
+      await navigator.clipboard.writeText(text);
+      toast(message);
+    } catch {
+      modal(`<h2>COPY & SHARE</h2><label class="sr-only" for="copy-text">Text to share</label><textarea class="field" id="copy-text" rows="7" readonly>${esc4(text)}</textarea>`);
+      $("#copy-text").select();
+    }
+  }
   function share() {
     const marks = quiz.results.map((r) => r.points >= 100 ? "\u{1F7E8}" : r.points >= 85 ? "\u{1F7EA}" : r.points >= 60 ? "\u{1F7E5}" : r.points >= 30 ? "\u{1F7E6}" : r.points ? "\u2B1C" : "\u2B1B").join("");
     copyText(`COUNCILLION \u2696 ${quiz.mode === "daily" ? quiz.day : "PRACTICE"}
