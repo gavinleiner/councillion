@@ -1,0 +1,3769 @@
+[
+  {
+    "id": "apple-varieties",
+    "family": "food",
+    "topic": "THE ORCHARD",
+    "prompt": "Name an apple cultivar, including heritage varieties.",
+    "source": "Corpora, Darius Kazemi and contributors, CC0; foods/apple_cultivars.json. Snapshot 2026-10-22.",
+    "ranking": "familiarity-v2",
+    "group": "apple-varieties",
+    "dailyEligible": true,
+    "answerHash": "456a776fefaefcbba3bf86b331623cd4382f83334e40da33614e14f41e1a8d65",
+    "answerCount": 999,
+    "tiers": {
+      "10": 15,
+      "30": 166,
+      "60": 266,
+      "85": 551,
+      "100": 1
+    }
+  },
+  {
+    "id": "sandwiches",
+    "family": "food",
+    "topic": "BETWEEN THE SLICES",
+    "prompt": "Name a named sandwich or established sandwich filling combination.",
+    "source": "Corpora, Darius Kazemi and contributors, CC0; foods/sandwiches.json. Snapshot 2026-10-22.",
+    "ranking": "familiarity-v2",
+    "group": "sandwiches",
+    "dailyEligible": true,
+    "answerHash": "ec921c846c3c34e53b857e7ad5fea8997b9bd2ac37e304d0ab56e2de192ad11a",
+    "answerCount": 170,
+    "tiers": {
+      "10": 7,
+      "30": 17,
+      "60": 50,
+      "85": 95,
+      "100": 1
+    }
+  },
+  {
+    "id": "sausage-varieties",
+    "family": "food",
+    "topic": "LINKS IN THE CHAIN",
+    "prompt": "Name a type of sausage, including regional and cured varieties.",
+    "source": "Corpora, Darius Kazemi and contributors, CC0; foods/sausages.json. Snapshot 2026-10-22.",
+    "ranking": "familiarity-v2",
+    "group": "sausage-varieties",
+    "dailyEligible": true,
+    "answerHash": "3ecc27d143cd699bc0ae51e4c554618b405d5f59ba94c914866079f6829c1386",
+    "answerCount": 203,
+    "tiers": {
+      "30": 2,
+      "60": 18,
+      "85": 182,
+      "100": 1
+    }
+  },
+  {
+    "id": "tea-varieties",
+    "family": "food",
+    "topic": "STEEPED IN TRADITION",
+    "prompt": "Name a tea, tea style, or established herbal infusion. Named blends count.",
+    "source": "Corpora, Darius Kazemi and contributors, CC0; foods/tea.json. Snapshot 2026-10-22.",
+    "ranking": "familiarity-v2",
+    "group": "tea-varieties",
+    "dailyEligible": true,
+    "answerHash": "57d9d70fd51ba35cad157d513f8f5cd3ec430e6fb1e5f8dc850cd300654ec898",
+    "answerCount": 525,
+    "tiers": {
+      "10": 4,
+      "30": 36,
+      "60": 106,
+      "85": 378,
+      "100": 1
+    }
+  },
+  {
+    "id": "culinary-fruits",
+    "family": "food",
+    "topic": "BOTANICAL FRUITS ON THE TABLE",
+    "prompt": "Name an edible botanical fruit, including fruits commonly cooked as vegetables.",
+    "source": "Corpora, Darius Kazemi and contributors, CC0; foods/fruits.json. Snapshot 2026-10-22.",
+    "ranking": "familiarity-v2",
+    "group": "culinary-fruits",
+    "dailyEligible": true,
+    "answerHash": "d1bfd8735819bb80b25aa8cb5e198a380bd08d92a3b1d2785147c3087cc24b89",
+    "answerCount": 79,
+    "tiers": {
+      "10": 9,
+      "30": 5,
+      "60": 20,
+      "85": 44,
+      "100": 1
+    }
+  },
+  {
+    "id": "culinary-vegetables",
+    "family": "food",
+    "topic": "THE GREENGROCER",
+    "prompt": "Name a vegetable or edible plant part commonly cooked as a vegetable.",
+    "source": "Corpora, Darius Kazemi and contributors, CC0; foods/vegetables.json. Snapshot 2026-10-22.",
+    "ranking": "familiarity-v2",
+    "group": "culinary-vegetables",
+    "dailyEligible": true,
+    "answerHash": "afb023479cc8c3853caa3f2b23070015efe618c3d7af0f4cab1f413f95c5def9",
+    "answerCount": 120,
+    "tiers": {
+      "10": 7,
+      "30": 2,
+      "60": 39,
+      "85": 71,
+      "100": 1
+    }
+  },
+  {
+    "id": "edible-fish",
+    "family": "food",
+    "topic": "ON THE FISHMONGER’S SLAB",
+    "prompt": "Name a fish eaten as food. Species and established market names count.",
+    "source": "Corpora, Darius Kazemi and contributors, CC0; foods/fish.json. Snapshot 2026-10-22.",
+    "ranking": "familiarity-v2",
+    "group": "edible-fish",
+    "dailyEligible": true,
+    "answerHash": "19684218e6dae852d97e8c929c887fb21f5b651665b328a8338c8cdd89004a88",
+    "answerCount": 115,
+    "tiers": {
+      "30": 5,
+      "60": 44,
+      "85": 65,
+      "100": 1
+    }
+  },
+  {
+    "id": "edible-shellfish",
+    "family": "food",
+    "topic": "SHELLS AT THE TABLE",
+    "prompt": "Name an edible shellfish or other edible aquatic invertebrate. Cephalopods count.",
+    "source": "Corpora, Darius Kazemi and contributors, CC0; foods/shellfish.json. Snapshot 2026-10-22.",
+    "ranking": "familiarity-v2",
+    "group": "edible-shellfish",
+    "dailyEligible": true,
+    "answerHash": "773ad43c1d72926edcd20be3d9a70cad4a70906ef78c4da576f8d1a0d1025da6",
+    "answerCount": 208,
+    "tiers": {
+      "60": 45,
+      "85": 162,
+      "100": 1
+    }
+  },
+  {
+    "id": "cocktail-names",
+    "family": "food",
+    "topic": "THE MIXOLOGIST’S INDEX",
+    "prompt": "Name a classic or named cocktail.",
+    "source": "Corpora, Darius Kazemi and contributors, CC0; foods/iba_cocktails.json. Snapshot 2026-10-22.",
+    "ranking": "familiarity-v2",
+    "group": "cocktail-names",
+    "dailyEligible": true,
+    "answerHash": "03f6c097513ebd0daaa9415d01e253a54adac9110cd1a71da06f10683d70c1fa",
+    "answerCount": 77,
+    "tiers": {
+      "10": 2,
+      "30": 21,
+      "60": 23,
+      "85": 30,
+      "100": 1
+    }
+  },
+  {
+    "id": "dog-breeds",
+    "family": "nature",
+    "topic": "CANINE COUNSEL",
+    "prompt": "Name a dog breed, including historical breeds.",
+    "source": "Corpora, Darius Kazemi and contributors, CC0; animals/dogs.json. Snapshot 2026-10-22.",
+    "ranking": "familiarity-v2",
+    "group": "dog-breeds",
+    "dailyEligible": true,
+    "answerHash": "2f68bdcb35ec56c0de7a4f16488de50dcfeff653f8eb1705c428c172d3fafabc",
+    "answerCount": 453,
+    "tiers": {
+      "10": 10,
+      "30": 7,
+      "60": 74,
+      "85": 361,
+      "100": 1
+    }
+  },
+  {
+    "id": "horse-breeds",
+    "family": "nature",
+    "topic": "THE STABLE REGISTER",
+    "prompt": "Name a horse breed, including historical and regional breeds.",
+    "source": "Corpora, Darius Kazemi and contributors, CC0; animals/horses.json. Snapshot 2026-10-22.",
+    "ranking": "familiarity-v2",
+    "group": "horse-breeds",
+    "dailyEligible": true,
+    "answerHash": "7e4ac85893d3aff1c9143fee1894f6c57421ac87d5f9fa4b3d167730dab7f27e",
+    "answerCount": 345,
+    "tiers": {
+      "10": 4,
+      "30": 20,
+      "60": 49,
+      "85": 271,
+      "100": 1
+    }
+  },
+  {
+    "id": "pony-breeds",
+    "family": "nature",
+    "topic": "SMALL HORSES, BIG REPUTATIONS",
+    "prompt": "Name a pony breed, including historical and regional breeds.",
+    "source": "Corpora, Darius Kazemi and contributors, CC0; animals/ponies.json. Snapshot 2026-10-22.",
+    "ranking": "familiarity-v2",
+    "group": "pony-breeds",
+    "dailyEligible": true,
+    "answerHash": "b39dd811f7e749b87c8c577ec74f1a5e7ba0ae47a525d55da851a7aa0b047208",
+    "answerCount": 171,
+    "tiers": {
+      "10": 2,
+      "30": 3,
+      "60": 46,
+      "85": 119,
+      "100": 1
+    }
+  },
+  {
+    "id": "donkey-breeds",
+    "family": "nature",
+    "topic": "THE LONG-EARED REGISTER",
+    "prompt": "Name a donkey breed, including historical and regional breeds.",
+    "source": "Corpora, Darius Kazemi and contributors, CC0; animals/donkeys.json. Snapshot 2026-10-22.",
+    "ranking": "familiarity-v2",
+    "group": "donkey-breeds",
+    "dailyEligible": true,
+    "answerHash": "8f217afae4e0595800feb64c75cfe51cdb88b71896fc7b9bf0cf4e73a596f156",
+    "answerCount": 170,
+    "tiers": {
+      "10": 4,
+      "30": 10,
+      "60": 25,
+      "85": 130,
+      "100": 1
+    }
+  },
+  {
+    "id": "cat-breeds",
+    "family": "nature",
+    "topic": "FELINE LINEAGES",
+    "prompt": "Name a cat breed, including experimental and historical breeds.",
+    "source": "Corpora, Darius Kazemi and contributors, CC0; animals/cats.json. Snapshot 2026-10-22.",
+    "ranking": "familiarity-v2",
+    "group": "cat-breeds",
+    "dailyEligible": true,
+    "answerHash": "5d24d8f5199ff2fcd4ac0d3d5120c99dd8c355d1ab911c0c8be9b1964452e2be",
+    "answerCount": 96,
+    "tiers": {
+      "10": 6,
+      "30": 4,
+      "60": 22,
+      "85": 63,
+      "100": 1
+    }
+  },
+  {
+    "id": "rabbit-breeds",
+    "family": "nature",
+    "topic": "BEYOND THE RABBIT HUTCH",
+    "prompt": "Name a rabbit breed.",
+    "source": "Corpora, Darius Kazemi and contributors, CC0; animals/rabbits.json. Snapshot 2026-10-22.",
+    "ranking": "familiarity-v2",
+    "group": "rabbit-breeds",
+    "dailyEligible": true,
+    "answerHash": "917d2d0a91e08bfbd54184e784d317beb425a226f4f5ee8bc7e755caa7b0b146",
+    "answerCount": 49,
+    "tiers": {
+      "10": 1,
+      "30": 7,
+      "60": 11,
+      "85": 29,
+      "100": 1
+    }
+  },
+  {
+    "id": "cephalopod-body",
+    "family": "nature",
+    "topic": "ANATOMY OF AN OCTOPUS",
+    "prompt": "Name an anatomical structure found in an octopus, squid, cuttlefish, or nautilus.",
+    "source": "Corpora, Darius Kazemi and contributors, CC0; animals/cephalopod_anatomy.json. Snapshot 2026-10-22.",
+    "ranking": "familiarity-v2",
+    "group": "cephalopod-body",
+    "dailyEligible": true,
+    "answerHash": "6515e9fb4bf85142aff30022b7ee24cb9bebea6bef369311a581cdbc018297a9",
+    "answerCount": 274,
+    "tiers": {
+      "10": 1,
+      "30": 22,
+      "60": 55,
+      "85": 195,
+      "100": 1
+    }
+  },
+  {
+    "id": "ant-body",
+    "family": "nature",
+    "topic": "SMALL-SCALE ANATOMY",
+    "prompt": "Name an anatomical structure found in an ant.",
+    "source": "Corpora, Darius Kazemi and contributors, CC0; animals/ant_anatomy.json. Snapshot 2026-10-22.",
+    "ranking": "familiarity-v2",
+    "group": "ant-body",
+    "dailyEligible": true,
+    "answerHash": "a022e5e6bba739e544f24530435b4b88e1ff401ad81522cb4455d6267b5e85e7",
+    "answerCount": 100,
+    "tiers": {
+      "60": 4,
+      "85": 95,
+      "100": 1
+    }
+  },
+  {
+    "id": "flower-names",
+    "family": "nature",
+    "topic": "IN BLOOM",
+    "prompt": "Name a flowering plant commonly grown for its flowers.",
+    "source": "Corpora, Darius Kazemi and contributors, CC0; plants/flowers.json. Snapshot 2026-10-22.",
+    "ranking": "familiarity-v2",
+    "group": "flower-names",
+    "dailyEligible": true,
+    "answerHash": "da534c20789c0728a8a0917cd3d4d3037e5a61f646753623bbf9c9aca79c0131",
+    "answerCount": 63,
+    "tiers": {
+      "10": 1,
+      "60": 22,
+      "85": 39,
+      "100": 1
+    }
+  },
+  {
+    "id": "plant-common-names",
+    "family": "nature",
+    "topic": "THE FIELD BOTANIST",
+    "prompt": "Name a plant by a common name. Trees, shrubs, herbs, and garden plants count.",
+    "source": "Corpora, Darius Kazemi and contributors, CC0; plants/plants.json. Snapshot 2026-10-22.",
+    "ranking": "familiarity-v2",
+    "group": "plant-common-names",
+    "dailyEligible": true,
+    "answerHash": "bf8e1861c70fba3c8fac27a7d64b4ba14a92d213ca2c834ffd379702342cf60e",
+    "answerCount": 622,
+    "tiers": {
+      "10": 1,
+      "30": 54,
+      "60": 210,
+      "85": 356,
+      "100": 1
+    }
+  },
+  {
+    "id": "gem-materials",
+    "family": "science",
+    "topic": "THE LAPIDARY’S CABINET",
+    "prompt": "Name a mineral or other natural material used as a gemstone.",
+    "source": "Corpora, Darius Kazemi and contributors, CC0; materials/gemstones.json. Snapshot 2026-10-22.",
+    "ranking": "familiarity-v2",
+    "group": "gem-materials",
+    "dailyEligible": true,
+    "answerHash": "e3d283131fce4056112fe48ee432ef3c1df6693055ea83e935a0d325a08d3db3",
+    "answerCount": 350,
+    "tiers": {
+      "30": 4,
+      "60": 24,
+      "85": 321,
+      "100": 1
+    }
+  },
+  {
+    "id": "weather-conditions",
+    "family": "science",
+    "topic": "READING THE SKY",
+    "prompt": "Name a weather condition or atmospheric phenomenon.",
+    "source": "Corpora, Darius Kazemi and contributors, CC0; science/weather_conditions.json. Snapshot 2026-10-22.",
+    "ranking": "familiarity-v2",
+    "group": "weather-conditions",
+    "dailyEligible": true,
+    "answerHash": "853bad8614f88b856459831e299c3cd053495521b1c912cf4434192d39323bdc",
+    "answerCount": 263,
+    "tiers": {
+      "10": 1,
+      "30": 21,
+      "60": 170,
+      "85": 70,
+      "100": 1
+    }
+  },
+  {
+    "id": "meteorology-terms",
+    "family": "science",
+    "topic": "THE WEATHER DESK",
+    "prompt": "Name a term used in meteorology, including weather phenomena, processes, and instruments.",
+    "source": "Corpora, Darius Kazemi and contributors, CC0; science/meteorology.json. Snapshot 2026-10-22.",
+    "ranking": "familiarity-v2",
+    "group": "meteorology-terms",
+    "dailyEligible": true,
+    "answerHash": "7ae7ea401107f264601ab1f5ec578629b286bd97dd8e6f1e3d6190057a066ea0",
+    "answerCount": 653,
+    "tiers": {
+      "10": 7,
+      "30": 106,
+      "60": 208,
+      "85": 331,
+      "100": 1
+    }
+  },
+  {
+    "id": "computing-disciplines",
+    "family": "science",
+    "topic": "BRANCHES OF COMPUTING",
+    "prompt": "Name a computing field, method, or computer-science topic.",
+    "source": "Corpora, Darius Kazemi and contributors, CC0; technology/computer_sciences.json. Snapshot 2026-10-22.",
+    "ranking": "familiarity-v2",
+    "group": "computing-disciplines",
+    "dailyEligible": true,
+    "answerHash": "010fffc2641afb4def68fcd23e30418b9eeac70a5986874bee59b6e6d7201138",
+    "answerCount": 196,
+    "tiers": {
+      "10": 3,
+      "30": 20,
+      "60": 52,
+      "85": 120,
+      "100": 1
+    }
+  },
+  {
+    "id": "geographical-features",
+    "family": "world",
+    "topic": "SHAPING THE EARTH",
+    "prompt": "Name a natural geographical feature or landform. Human-made features do not count.",
+    "source": "Corpora, Darius Kazemi and contributors, CC0; geography/geographic_features.json. Snapshot 2026-10-22.",
+    "ranking": "familiarity-v2",
+    "group": "geographical-features",
+    "dailyEligible": true,
+    "answerHash": "8ad8035bd8f79e4f57e1f03f1a96360a46108a2b74f44fd6e8c894d601420730",
+    "answerCount": 507,
+    "tiers": {
+      "10": 17,
+      "30": 89,
+      "60": 180,
+      "85": 220,
+      "100": 1
+    }
+  },
+  {
+    "id": "human-geographical-features",
+    "family": "world",
+    "topic": "PEOPLE CHANGE THE LAND",
+    "prompt": "Name a human-made geographical feature or type of built site.",
+    "source": "Corpora, Darius Kazemi and contributors, CC0; geography/anthropogenic_features.json. Snapshot 2026-10-22.",
+    "ranking": "familiarity-v2",
+    "group": "human-geographical-features",
+    "dailyEligible": true,
+    "answerHash": "1b2350101d9f44681d202a734ed0f0a77b537c4cdc0377818ec00603c1078606",
+    "answerCount": 136,
+    "tiers": {
+      "10": 12,
+      "30": 34,
+      "60": 60,
+      "85": 29,
+      "100": 1
+    }
+  },
+  {
+    "id": "named-winds",
+    "family": "world",
+    "topic": "WHICH WAY THE WIND BLOWS",
+    "prompt": "Name a regional or named wind, including historical names.",
+    "source": "Corpora, Darius Kazemi and contributors, CC0; geography/winds.json. Snapshot 2026-10-22.",
+    "ranking": "familiarity-v2",
+    "group": "named-winds",
+    "dailyEligible": true,
+    "answerHash": "afa5261ffd4ac0f115064c5b00edf4e74afd7e5b25ff3a276ce0b7e758b23cda",
+    "answerCount": 111,
+    "tiers": {
+      "30": 1,
+      "60": 16,
+      "85": 93,
+      "100": 1
+    }
+  },
+  {
+    "id": "seas-and-gulfs",
+    "family": "world",
+    "topic": "BEYOND THE FIVE OCEANS",
+    "prompt": "Name a sea, gulf, bay, or strait.",
+    "source": "Corpora, Darius Kazemi and contributors, CC0; geography/oceans.json. Snapshot 2026-10-22.",
+    "ranking": "familiarity-v2",
+    "group": "seas-and-gulfs",
+    "dailyEligible": true,
+    "answerHash": "fa63c128e56310b2950f61334b4a6d1446f9ae30fbef126a807a75ef64652f20",
+    "answerCount": 141,
+    "tiers": {
+      "30": 18,
+      "60": 47,
+      "85": 75,
+      "100": 1
+    }
+  },
+  {
+    "id": "london-tube-stations",
+    "family": "world",
+    "topic": "MIND THE GAP",
+    "prompt": "Name a London Underground station, including former station names.",
+    "source": "Corpora, Darius Kazemi and contributors, CC0; geography/london_underground_stations.json. Snapshot 2026-10-22.",
+    "ranking": "familiarity-v2",
+    "group": "london-tube-stations",
+    "dailyEligible": true,
+    "answerHash": "0a1856b4b884411eec944a362630ce97f439d108fdebf733da53af80a0dd2c71",
+    "answerCount": 267,
+    "tiers": {
+      "10": 3,
+      "30": 23,
+      "60": 64,
+      "85": 176,
+      "100": 1
+    }
+  },
+  {
+    "id": "english-towns",
+    "family": "world",
+    "topic": "A MAP OF ENGLAND",
+    "prompt": "Name a town or city in England.",
+    "source": "Corpora, Darius Kazemi and contributors, CC0; geography/english_towns_cities.json. Snapshot 2026-10-22.",
+    "ranking": "familiarity-v2",
+    "group": "english-towns",
+    "dailyEligible": true,
+    "answerHash": "65481e59bae700fac75ca8adc630a34ac9f1379d08fa3ce3d98d2ebd065b9b55",
+    "answerCount": 936,
+    "tiers": {
+      "10": 5,
+      "30": 19,
+      "60": 106,
+      "85": 805,
+      "100": 1
+    }
+  },
+  {
+    "id": "guitar-makers",
+    "family": "culture",
+    "topic": "ON THE HEADSTOCK",
+    "prompt": "Name a guitar manufacturer or established guitar brand, including historical makers.",
+    "source": "Corpora, Darius Kazemi and contributors, CC0; music/a_list_of_guitar_manufacturers.json. Snapshot 2026-10-22.",
+    "ranking": "familiarity-v2",
+    "group": "guitar-makers",
+    "dailyEligible": true,
+    "answerHash": "067336366750ff6b041e153eacc7173d6816746ce87ae1ce4b1da56cec315557",
+    "answerCount": 154,
+    "tiers": {
+      "10": 9,
+      "30": 9,
+      "60": 44,
+      "85": 91,
+      "100": 1
+    }
+  },
+  {
+    "id": "board-game-titles",
+    "family": "culture",
+    "topic": "AROUND THE TABLE",
+    "prompt": "Name a board game or tabletop strategy game. Named games and commercial titles count.",
+    "source": "Corpora, Darius Kazemi and contributors, CC0; games/board_games.json. Snapshot 2026-10-22.",
+    "ranking": "familiarity-v2",
+    "group": "board-game-titles",
+    "dailyEligible": true,
+    "answerHash": "b701a1468d42e7c2288364485e35d04425ea3c046063a52d315e2d46982beaf3",
+    "answerCount": 212,
+    "tiers": {
+      "10": 16,
+      "30": 34,
+      "60": 62,
+      "85": 99,
+      "100": 1
+    }
+  },
+  {
+    "id": "tolkien-characters",
+    "family": "culture",
+    "topic": "THERE AND BACK AGAIN",
+    "prompt": "Name a character from Tolkien’s Middle-earth writings.",
+    "source": "Corpora, Darius Kazemi and contributors, CC0; humans/tolkienCharacterNames.json. Snapshot 2026-10-22.",
+    "ranking": "familiarity-v2",
+    "group": "tolkien-characters",
+    "dailyEligible": true,
+    "answerHash": "365ba4c1ccbf3d3750d8c6eed4ee25e627c9be4003324c2cb5fca956f4ae879a",
+    "answerCount": 595,
+    "tiers": {
+      "30": 5,
+      "60": 10,
+      "85": 579,
+      "100": 1
+    }
+  },
+  {
+    "id": "egyptian-deities",
+    "family": "culture",
+    "topic": "BY THE NILE",
+    "prompt": "Name an Egyptian deity, including regional forms and alternate names.",
+    "source": "Corpora, Darius Kazemi and contributors, CC0; mythology/egyptian_gods.json. Snapshot 2026-10-22.",
+    "ranking": "familiarity-v2",
+    "group": "egyptian-deities",
+    "dailyEligible": true,
+    "answerHash": "f17e6922cfeb9d82fcfa975b4afabf3a39aaac2606a2a95fab956a98e9e452de",
+    "answerCount": 274,
+    "tiers": {
+      "10": 3,
+      "30": 9,
+      "60": 15,
+      "85": 246,
+      "100": 1
+    }
+  },
+  {
+    "id": "literary-authors",
+    "family": "culture",
+    "topic": "THE BOOKSHELF’S BYLINES",
+    "prompt": "Name an author of a published book. Fiction and nonfiction writers count.",
+    "source": "Corpora, Darius Kazemi and contributors, CC0; humans/authors.json. Snapshot 2026-10-22.",
+    "ranking": "familiarity-v2",
+    "group": "literary-authors",
+    "dailyEligible": true,
+    "answerHash": "36e80c733c7e56b44b819f3f87f6ab77d1b42074cee4a58f2fd2867f4e4a593b",
+    "answerCount": 500,
+    "tiers": {
+      "10": 9,
+      "30": 41,
+      "60": 127,
+      "85": 322,
+      "100": 1
+    }
+  },
+  {
+    "id": "tabletop-rpgs",
+    "family": "culture",
+    "topic": "ROLL FOR INITIATIVE",
+    "prompt": "Name a tabletop role-playing game.",
+    "source": "Corpora, Darius Kazemi and contributors, CC0; games/rpg/rpg_games.json. Snapshot 2026-10-22.",
+    "ranking": "familiarity-v2",
+    "group": "tabletop-rpgs",
+    "dailyEligible": true,
+    "answerHash": "96274033d28f5b0b856524768f9fb6f1de0506b7ce460c7446348b25a002d11f",
+    "answerCount": 851,
+    "tiers": {
+      "10": 7,
+      "30": 139,
+      "60": 251,
+      "85": 453,
+      "100": 1
+    }
+  },
+  {
+    "id": "obsolete-jobs",
+    "family": "everyday",
+    "topic": "JOBS TIME FORGOT",
+    "prompt": "Name a historical occupation or obsolete job title.",
+    "source": "Corpora, Darius Kazemi and contributors, CC0; humans/obsolete-occupations.json. Snapshot 2026-10-22.",
+    "ranking": "familiarity-v2",
+    "group": "obsolete-jobs",
+    "dailyEligible": true,
+    "answerHash": "406972507a9690120061a48d03ed74306cab29c8e558341521f50261323eae77",
+    "answerCount": 168,
+    "tiers": {
+      "30": 13,
+      "60": 37,
+      "85": 117,
+      "100": 1
+    }
+  },
+  {
+    "id": "occupation-titles",
+    "family": "everyday",
+    "topic": "A DIFFERENT LINE OF WORK",
+    "prompt": "Name an occupation or recognized job title.",
+    "source": "Corpora, Darius Kazemi and contributors, CC0; humans/occupations.json. Snapshot 2026-10-22.",
+    "ranking": "familiarity-v2",
+    "group": "occupation-titles",
+    "dailyEligible": true,
+    "answerHash": "0c7536658f8b98ef5e50df4e55d6568d31db4b43442f92e287f83a00880d43b3",
+    "answerCount": 976,
+    "tiers": {
+      "10": 11,
+      "30": 222,
+      "60": 456,
+      "85": 286,
+      "100": 1
+    }
+  },
+  {
+    "id": "fabric-types",
+    "family": "everyday",
+    "topic": "THE FABRIC SHOP",
+    "prompt": "Name a fabric or textile type, including named weaves and historical cloths.",
+    "source": "Corpora, Darius Kazemi and contributors, CC0; materials/fabrics.json. Snapshot 2026-10-22.",
+    "ranking": "familiarity-v2",
+    "group": "fabric-types",
+    "dailyEligible": true,
+    "answerHash": "7e427be92fd2fad4de129f3b0e98d0a03a91a6578b28b365a4be35fd5369a412",
+    "answerCount": 206,
+    "tiers": {
+      "10": 3,
+      "30": 6,
+      "60": 46,
+      "85": 150,
+      "100": 1
+    }
+  },
+  {
+    "id": "clothing-items",
+    "family": "everyday",
+    "topic": "WHAT’S IN THE WARDROBE?",
+    "prompt": "Name an item or established style of clothing.",
+    "source": "Corpora, Darius Kazemi and contributors, CC0; objects/clothing.json. Snapshot 2026-10-22.",
+    "ranking": "familiarity-v2",
+    "group": "clothing-items",
+    "dailyEligible": true,
+    "answerHash": "f560d65344f532635b97b20be6271457bceac84f33980d9d9bca50e8efa618f3",
+    "answerCount": 90,
+    "tiers": {
+      "10": 1,
+      "30": 15,
+      "60": 41,
+      "85": 32,
+      "100": 1
+    }
+  },
+  {
+    "id": "household-appliances",
+    "family": "everyday",
+    "topic": "PLUGGED INTO DAILY LIFE",
+    "prompt": "Name an appliance or powered device used in a home.",
+    "source": "Corpora, Darius Kazemi and contributors, CC0; technology/appliances.json. Snapshot 2026-10-22.",
+    "ranking": "familiarity-v2",
+    "group": "household-appliances",
+    "dailyEligible": true,
+    "answerHash": "ecbe1e7845ea5dfa497c40b89eef3db5fe2560d67717fa10446c155de6341672",
+    "answerCount": 107,
+    "tiers": {
+      "30": 10,
+      "60": 57,
+      "85": 39,
+      "100": 1
+    }
+  },
+  {
+    "id": "room-types",
+    "family": "everyday",
+    "topic": "BEHIND THE DOOR",
+    "prompt": "Name a type of room or specialized indoor space.",
+    "source": "Corpora, Darius Kazemi and contributors, CC0; architecture/rooms.json. Snapshot 2026-10-22.",
+    "ranking": "familiarity-v2",
+    "group": "room-types",
+    "dailyEligible": true,
+    "answerHash": "798781b4a1a384fecf1163de562488d404e9d4407e0196a2738036c0a0a18034",
+    "answerCount": 108,
+    "tiers": {
+      "10": 6,
+      "30": 44,
+      "60": 36,
+      "85": 21,
+      "100": 1
+    }
+  },
+  {
+    "id": "rope-knots",
+    "family": "everyday",
+    "topic": "TIED UP",
+    "prompt": "Name a knot, bend, hitch, splice, or named rope arrangement.",
+    "source": "Corpora, Darius Kazemi and contributors, CC0; technology/knots.json. Snapshot 2026-10-22.",
+    "ranking": "familiarity-v2",
+    "group": "rope-knots",
+    "dailyEligible": true,
+    "answerHash": "4dd16bf975080fd518a4affec319f0beca778948235e48f40c56d7471c52b71e",
+    "answerCount": 212,
+    "tiers": {
+      "30": 5,
+      "60": 82,
+      "85": 124,
+      "100": 1
+    }
+  },
+  {
+    "id": "programming-languages",
+    "family": "everyday",
+    "topic": "SPEAKING TO MACHINES",
+    "prompt": "Name a programming language, including historical languages and recognized dialects.",
+    "source": "Corpora, Darius Kazemi and contributors, CC0; technology/programming_languages.json. Snapshot 2026-10-22.",
+    "ranking": "familiarity-v2",
+    "group": "programming-languages",
+    "dailyEligible": true,
+    "answerHash": "a296f0f7a60aecc7c2e44c9e8e4ce4c60c7a40577c19c61a94f9aee7a0ab5237",
+    "answerCount": 686,
+    "tiers": {
+      "10": 41,
+      "30": 87,
+      "60": 145,
+      "85": 412,
+      "100": 1
+    }
+  },
+  {
+    "id": "web-colour-names",
+    "family": "everyday",
+    "topic": "COLOURS THE BROWSER KNOWS",
+    "prompt": "Name a standard CSS named colour. Hex codes and RGB numbers do not count.",
+    "source": "Corpora, Darius Kazemi and contributors, CC0; colors/web_colors.json. Snapshot 2026-10-22.",
+    "ranking": "familiarity-v2",
+    "group": "web-colour-names",
+    "dailyEligible": true,
+    "answerHash": "632694e25d0bb3ca04d01467b80be7728724bdae976a71877c96212bcb3c8ae9",
+    "answerCount": 140,
+    "tiers": {
+      "10": 7,
+      "30": 9,
+      "60": 23,
+      "85": 100,
+      "100": 1
+    }
+  },
+  {
+    "id": "named-colours",
+    "family": "everyday",
+    "topic": "A MORE PRECISE SHADE",
+    "prompt": "Name a named colour, including traditional and artists’ colour names. Numbers alone do not count.",
+    "source": "Corpora, Darius Kazemi and contributors, CC0; colors/wikipedia.json. Snapshot 2026-10-22.",
+    "ranking": "familiarity-v2",
+    "group": "named-colours",
+    "dailyEligible": true,
+    "answerHash": "7fea98a9cc76a9f35c6f6f0248cb427855aade81d9edfd017639f4d7320d5f4e",
+    "answerCount": 1013,
+    "tiers": {
+      "10": 11,
+      "30": 236,
+      "60": 406,
+      "85": 359,
+      "100": 1
+    }
+  },
+  {
+    "id": "academic-fields",
+    "family": "science",
+    "topic": "BEYOND THE SCHOOL TIMETABLE",
+    "prompt": "Name an academic discipline or specialized field of study.",
+    "source": "Corpora, Darius Kazemi and contributors, CC0; books/academic_subjects.json. Snapshot 2026-10-22.",
+    "ranking": "familiarity-v2",
+    "group": "academic-fields",
+    "dailyEligible": true,
+    "answerHash": "12d6f367e27fb2ee994cb50c58b2bf593f896aaaee2e2cd66c8d0d28c09343a7",
+    "answerCount": 255,
+    "tiers": {
+      "10": 2,
+      "30": 118,
+      "60": 101,
+      "85": 33,
+      "100": 1
+    }
+  },
+  {
+    "id": "food-preparation-verbs",
+    "family": "food",
+    "topic": "FROM RECIPE TO VERB",
+    "prompt": "Name a specific food-preparation action or cooking technique, such as braising or julienning.",
+    "source": "Corpora foods/verbs.json, CC0; generic instructional verbs removed.",
+    "ranking": "familiarity-v2",
+    "group": "food-techniques",
+    "dailyEligible": true,
+    "answerHash": "3edbdad9d7841f9977d24b518a1c5a628be43d828bfbc30d67cff1f24f34fbc7",
+    "answerCount": 246,
+    "tiers": {
+      "10": 30,
+      "30": 74,
+      "60": 84,
+      "85": 57,
+      "100": 1
+    }
+  },
+  {
+    "id": "pepper-varieties",
+    "family": "food",
+    "topic": "TURN UP THE HEAT",
+    "prompt": "Name a pepper variety or cultivar. Sweet peppers count too.",
+    "source": "Corpora foods/hot_peppers.json, CC0.",
+    "ranking": "familiarity-v2",
+    "group": "food-plants",
+    "dailyEligible": true,
+    "answerHash": "d1933cd0bca37cf1fc71bbc6173b30cb767f3dbc7e8869aa5f5e0fce51e4aaee",
+    "answerCount": 54,
+    "tiers": {
+      "10": 4,
+      "30": 3,
+      "60": 13,
+      "85": 33,
+      "100": 1
+    }
+  },
+  {
+    "id": "bird-waterfowl",
+    "family": "nature",
+    "topic": "ON THE POND",
+    "prompt": "Name a duck, goose, or swan species recorded in North America.",
+    "source": "Corpora historical ABA North-America checklist, CC0; selected field-guide families.",
+    "ranking": "familiarity-v2",
+    "group": "bird-species",
+    "dailyEligible": true,
+    "answerHash": "1263db6dc0920630c02c0d3a4a94d14ca0000e0aff95194d8c44f9856d029bc2",
+    "answerCount": 65,
+    "tiers": {
+      "30": 2,
+      "60": 12,
+      "85": 50,
+      "100": 1
+    }
+  },
+  {
+    "id": "bird-wading-shorebirds",
+    "family": "nature",
+    "topic": "AT THE WATER’S EDGE",
+    "prompt": "Name a heron, egret, ibis, spoonbill, stork, rail, plover, sandpiper, or phalarope species recorded in North America.",
+    "source": "Corpora historical ABA North-America checklist, CC0; selected field-guide families.",
+    "ranking": "familiarity-v2",
+    "group": "bird-species",
+    "dailyEligible": true,
+    "answerHash": "e472411f4f3bdfa787dc372a06bd7b897dd29ee06ef690fc91c09fccc9721e65",
+    "answerCount": 127,
+    "tiers": {
+      "30": 4,
+      "60": 4,
+      "85": 118,
+      "100": 1
+    }
+  },
+  {
+    "id": "bird-birds-of-prey",
+    "family": "nature",
+    "topic": "EYES ON THE HUNT",
+    "prompt": "Name a hawk, kite, eagle, falcon, vulture, or owl species recorded in North America.",
+    "source": "Corpora historical ABA North-America checklist, CC0; selected field-guide families.",
+    "ranking": "familiarity-v2",
+    "group": "bird-species",
+    "dailyEligible": true,
+    "answerHash": "3916df7f33a7b5ba18489e0120d252d4c4a741fbc413c16085bffe33f21e7fc2",
+    "answerCount": 64,
+    "tiers": {
+      "60": 28,
+      "85": 35,
+      "100": 1
+    }
+  },
+  {
+    "id": "bird-seabirds",
+    "family": "nature",
+    "topic": "OVER OPEN WATER",
+    "prompt": "Name a shearwater, petrel, storm-petrel, albatross, gull, tern, skimmer, auk, murre, or puffin species recorded in North America.",
+    "source": "Corpora historical ABA North-America checklist, CC0; selected field-guide families.",
+    "ranking": "familiarity-v2",
+    "group": "bird-species",
+    "dailyEligible": true,
+    "answerHash": "0672c66e0eda191e91b0efbe998ab34c028645719cb95ab8dc84ef7ae4e8af11",
+    "answerCount": 128,
+    "tiers": {
+      "85": 127,
+      "100": 1
+    }
+  },
+  {
+    "id": "bird-warblers-sparrows",
+    "family": "nature",
+    "topic": "THE SMALL SONGBIRDS",
+    "prompt": "Name a New World warbler or sparrow species recorded in North America. Towhees and juncos count.",
+    "source": "Corpora historical ABA North-America checklist, CC0; selected field-guide families.",
+    "ranking": "familiarity-v2",
+    "group": "bird-species",
+    "dailyEligible": true,
+    "answerHash": "244d6d13fdd1de639f127304fddd838354eec5262e7bb651b66e7f9c115e917b",
+    "answerCount": 110,
+    "tiers": {
+      "60": 12,
+      "85": 97,
+      "100": 1
+    }
+  },
+  {
+    "id": "bird-forest-songbirds",
+    "family": "nature",
+    "topic": "SONGS IN THE TREES",
+    "prompt": "Name a thrush, vireo, jay, crow, blackbird, or finch species recorded in North America.",
+    "source": "Corpora historical ABA North-America checklist, CC0; selected field-guide families.",
+    "ranking": "familiarity-v2",
+    "group": "bird-species",
+    "dailyEligible": true,
+    "answerHash": "798bf6e82cfb94a7ac59273c25a54900896833ffedea711443eab23fc70c962a",
+    "answerCount": 113,
+    "tiers": {
+      "30": 5,
+      "60": 10,
+      "85": 97,
+      "100": 1
+    }
+  },
+  {
+    "id": "catalog-soups",
+    "family": "food",
+    "topic": "SOUP’S ON",
+    "prompt": "Name a named soup or established soup variety.",
+    "source": "Wikidata contributors, CC0; recorded query Q41415 in sources/wd-soups.json; snapshot 2026-10-22.",
+    "ranking": "familiarity-v2",
+    "group": "food-soups",
+    "dailyEligible": true,
+    "answerHash": "297f56ebcf7e6d3387e6a2912647c87eb85ee16842941c86e41d9d2a5598b825",
+    "answerCount": 1206,
+    "tiers": {
+      "10": 6,
+      "30": 13,
+      "60": 157,
+      "85": 1029,
+      "100": 1
+    }
+  },
+  {
+    "id": "catalog-cakes",
+    "family": "food",
+    "topic": "LET THEM NAME CAKE",
+    "prompt": "Name a cake, torte, or established cake variety.",
+    "source": "Wikidata contributors, CC0; recorded query Q13276 in sources/wd-cakes.json; snapshot 2026-10-22.",
+    "ranking": "familiarity-v2",
+    "group": "food-baking",
+    "dailyEligible": true,
+    "answerHash": "9bc74b5faa6bea037f40449b1b0cf5febb368f0a1e76d851d7ec51e076ec51a2",
+    "answerCount": 610,
+    "tiers": {
+      "10": 6,
+      "30": 39,
+      "60": 112,
+      "85": 452,
+      "100": 1
+    }
+  },
+  {
+    "id": "catalog-breads",
+    "family": "food",
+    "topic": "FLOUR, WATER, TRADITION",
+    "prompt": "Name a bread or established regional bread variety. Flatbreads count.",
+    "source": "Wikidata contributors, CC0; recorded query Q7802 in sources/wd-breads.json; snapshot 2026-10-22.",
+    "ranking": "familiarity-v2",
+    "group": "food-breads",
+    "dailyEligible": true,
+    "answerHash": "39d188289669fb9e0493e07e4ed61498c7470efc6fca9a257d989c7a7f9d20e5",
+    "answerCount": 1091,
+    "tiers": {
+      "10": 10,
+      "30": 54,
+      "60": 178,
+      "85": 848,
+      "100": 1
+    }
+  },
+  {
+    "id": "catalog-desserts",
+    "family": "food",
+    "topic": "ROOM FOR DESSERT",
+    "prompt": "Name a dessert, sweet dish, or confection.",
+    "source": "Wikidata contributors, CC0; recorded query Q182940 in sources/wd-desserts.json; snapshot 2026-10-22.",
+    "ranking": "familiarity-v2",
+    "group": "food-sweets",
+    "dailyEligible": true,
+    "answerHash": "082e6b3d69095d9593adc1b0e8b454d1795d9f6d361a89b3f4fd1860e3151b07",
+    "answerCount": 1623,
+    "tiers": {
+      "10": 2,
+      "30": 60,
+      "60": 314,
+      "85": 1246,
+      "100": 1
+    }
+  },
+  {
+    "id": "catalog-salads",
+    "family": "food",
+    "topic": "MORE THAN LETTUCE",
+    "prompt": "Name a named salad or established salad variety.",
+    "source": "Wikidata contributors, CC0; recorded query Q9266 in sources/wd-salads.json; snapshot 2026-10-22.",
+    "ranking": "familiarity-v2",
+    "group": "food-salads",
+    "dailyEligible": true,
+    "answerHash": "0b7ff00976ea87ba2a92501d0f6e9c9bb7388c99753abd50795b68f6e071288d",
+    "answerCount": 259,
+    "tiers": {
+      "60": 84,
+      "85": 174,
+      "100": 1
+    }
+  },
+  {
+    "id": "catalog-rice-dishes",
+    "family": "food",
+    "topic": "AROUND THE WORLD IN RICE",
+    "prompt": "Name a named dish made with rice.",
+    "source": "Wikidata contributors, CC0; recorded query Q21976260 in sources/wd-rice-dishes.json; snapshot 2026-10-22.",
+    "ranking": "familiarity-v2",
+    "group": "food-rice",
+    "dailyEligible": true,
+    "answerHash": "6c597589102bf4fec781b2938f71c32466bc369778264f08ce6c6c33638f84f7",
+    "answerCount": 722,
+    "tiers": {
+      "10": 1,
+      "30": 15,
+      "60": 84,
+      "85": 621,
+      "100": 1
+    }
+  },
+  {
+    "id": "catalog-dumplings",
+    "family": "food",
+    "topic": "WRAPPED, FILLED, OR DROPPED",
+    "prompt": "Name a dumpling or established regional dumpling variety.",
+    "source": "Wikidata contributors, CC0; recorded query Q1854639 in sources/wd-dumplings.json; snapshot 2026-10-22.",
+    "ranking": "familiarity-v2",
+    "group": "food-dumplings",
+    "dailyEligible": true,
+    "answerHash": "d0e70ff5643820fbcb25d91603347f6fe164daa694678049ceab4379e883f25d",
+    "answerCount": 126,
+    "tiers": {
+      "30": 1,
+      "60": 10,
+      "85": 114,
+      "100": 1
+    }
+  },
+  {
+    "id": "catalog-noodles",
+    "family": "food",
+    "topic": "NOODLES, SHAPES, AND PLATES",
+    "prompt": "Name a type of pasta or noodle, or a named dish built around pasta or noodles.",
+    "source": "Wikidata contributors, CC0; recorded query Q192874 in sources/wd-noodles.json; snapshot 2026-10-22.",
+    "ranking": "familiarity-v2",
+    "group": "food-noodles",
+    "dailyEligible": true,
+    "answerHash": "7a266124b63612f208b2e6020df5657b9c9cf985b1c24770c0bc8cf538dfc25b",
+    "answerCount": 551,
+    "tiers": {
+      "10": 6,
+      "30": 2,
+      "60": 58,
+      "85": 483,
+      "100": 2
+    }
+  },
+  {
+    "id": "catalog-fermented-foods",
+    "family": "food",
+    "topic": "TIME DOES THE COOKING",
+    "prompt": "Name a fermented food or drink, including named traditional varieties.",
+    "source": "Wikidata contributors, CC0; recorded query Q6950796 in sources/wd-fermented-foods.json; snapshot 2026-10-22.",
+    "ranking": "familiarity-v2",
+    "group": "food-fermentation",
+    "dailyEligible": true,
+    "answerHash": "a144a0f831d3512f8104c55440ed272463a054cf708b4538419f4c855c0d2081",
+    "answerCount": 4019,
+    "tiers": {
+      "10": 3,
+      "30": 88,
+      "60": 152,
+      "85": 3775,
+      "100": 1
+    }
+  },
+  {
+    "id": "catalog-street-foods",
+    "family": "food",
+    "topic": "FROM A STREET-FOOD STALL",
+    "prompt": "Name a food or named dish traditionally sold as street food.",
+    "source": "Wikidata contributors, CC0; recorded query Q1316209 in sources/wd-street-foods.json; snapshot 2026-10-22.",
+    "ranking": "familiarity-v2",
+    "group": "food-street",
+    "dailyEligible": true,
+    "answerHash": "c5bc7dfd293668e66a21c7f0cac61665e8893a541f6759844cd1231a91db6990",
+    "answerCount": 433,
+    "tiers": {
+      "10": 2,
+      "30": 27,
+      "60": 72,
+      "85": 331,
+      "100": 1
+    }
+  },
+  {
+    "id": "catalog-flatbreads",
+    "family": "food",
+    "topic": "ON THE GRIDDLE",
+    "prompt": "Name a flatbread or established regional flatbread variety.",
+    "source": "Wikidata contributors, CC0; recorded query Q666242 in sources/wd-flatbreads.json; snapshot 2026-10-22.",
+    "ranking": "familiarity-v2",
+    "group": "food-breads",
+    "dailyEligible": true,
+    "answerHash": "2d3e36cf6ab2e168b184c7e987e90e5d04388c67034d10d334e26f4d5d7b2bed",
+    "answerCount": 134,
+    "tiers": {
+      "30": 1,
+      "60": 11,
+      "85": 121,
+      "100": 1
+    }
+  },
+  {
+    "id": "catalog-stews",
+    "family": "food",
+    "topic": "LOW AND SLOW",
+    "prompt": "Name a stew or named stew variety.",
+    "source": "Wikidata contributors, CC0; recorded query Q2920963 in sources/wd-stews.json; snapshot 2026-10-22.",
+    "ranking": "familiarity-v2",
+    "group": "food-stews",
+    "dailyEligible": true,
+    "answerHash": "17800691af43f59b8128760a1fd070503f001d928ec4ec98feb5312e2c6ec139",
+    "answerCount": 261,
+    "tiers": {
+      "60": 26,
+      "85": 234,
+      "100": 1
+    }
+  },
+  {
+    "id": "catalog-snacks",
+    "family": "food",
+    "topic": "BETWEEN MEALS",
+    "prompt": "Name a snack food or established named snack. Brands of specific snacks count.",
+    "source": "Wikidata contributors, CC0; recorded query Q749316 in sources/wd-snacks.json; snapshot 2026-10-22.",
+    "ranking": "familiarity-v2",
+    "group": "food-snacks",
+    "dailyEligible": true,
+    "answerHash": "b9fc632c4b12877a80abcf22fed5182acf20d8ff56827d45aaaafdd43f2525d7",
+    "answerCount": 1499,
+    "tiers": {
+      "10": 8,
+      "30": 87,
+      "60": 305,
+      "85": 1098,
+      "100": 1
+    }
+  },
+  {
+    "id": "catalog-coffee-drinks",
+    "family": "food",
+    "topic": "MORE THAN A BLACK COFFEE",
+    "prompt": "Name a coffee drink or established coffee preparation.",
+    "source": "Wikidata contributors, CC0; recorded query Q37756327 in sources/wd-coffee-drinks.json; snapshot 2026-10-22.",
+    "ranking": "familiarity-v2",
+    "group": "food-drinks",
+    "dailyEligible": true,
+    "answerHash": "cb0a98d9c53a5480212d9a5f347b128c9f9854b6c7493c89b13ac3fbf90f2c31",
+    "answerCount": 213,
+    "tiers": {
+      "10": 3,
+      "30": 30,
+      "60": 36,
+      "85": 143,
+      "100": 1
+    }
+  },
+  {
+    "id": "catalog-confectionery",
+    "family": "food",
+    "topic": "THE SWEET COUNTER",
+    "prompt": "Name a confection, candy, or established sweet variety.",
+    "source": "Wikidata contributors, CC0; recorded query Q5159627 in sources/wd-confectionery.json; snapshot 2026-10-22.",
+    "ranking": "familiarity-v2",
+    "group": "food-sweets",
+    "dailyEligible": true,
+    "answerHash": "b3188f9d3e58dc7db3c2709db077b87ab968f50b0816c6fedcca2f644ed31cb2",
+    "answerCount": 2930,
+    "tiers": {
+      "10": 14,
+      "30": 163,
+      "60": 554,
+      "85": 2198,
+      "100": 1
+    }
+  },
+  {
+    "id": "catalog-edible-nuts",
+    "family": "food",
+    "topic": "CRACKING THE CASE",
+    "prompt": "Name an edible nut or seed commonly treated as a culinary nut.",
+    "source": "Wikidata contributors, CC0; recorded query Q3320037 in sources/wd-edible-nuts.json; snapshot 2026-10-22.",
+    "ranking": "familiarity-v2",
+    "group": "food-plants",
+    "dailyEligible": true,
+    "answerHash": "598c36035120ddf3acb61dc4d9431704cde125b59019352056d2084934dd564d",
+    "answerCount": 82,
+    "tiers": {
+      "60": 22,
+      "85": 59,
+      "100": 1
+    }
+  },
+  {
+    "id": "catalog-citrus",
+    "family": "food",
+    "topic": "ZEST FOR KNOWLEDGE",
+    "prompt": "Name a citrus fruit, cultivar, or hybrid.",
+    "source": "Wikidata contributors, CC0; recorded query Q2574750 in sources/wd-citrus.json; snapshot 2026-10-22.",
+    "ranking": "familiarity-v2",
+    "group": "food-plants",
+    "dailyEligible": true,
+    "answerHash": "2459d8bb4400a63bac0c418e7c7aaaf8d8a2d8597058911fcc5e9f24c713ba92",
+    "answerCount": 73,
+    "tiers": {
+      "30": 3,
+      "60": 15,
+      "85": 54,
+      "100": 1
+    }
+  },
+  {
+    "id": "catalog-mineral-species",
+    "family": "science",
+    "topic": "THE MINERAL CABINET",
+    "prompt": "Name a mineral species or recognized mineral variety.",
+    "source": "Wikidata contributors, CC0; recorded query Q12089225 in sources/wd-mineral-species.json; snapshot 2026-10-22.",
+    "ranking": "familiarity-v2",
+    "group": "minerals",
+    "dailyEligible": true,
+    "answerHash": "ba3f75770b91f4f5a07a840264aed02538eb9f4e3592ecaf83e3e8145edfda0e",
+    "answerCount": 6307,
+    "tiers": {
+      "10": 10,
+      "30": 4,
+      "60": 80,
+      "85": 6212,
+      "100": 1
+    }
+  },
+  {
+    "id": "catalog-space-missions",
+    "family": "science",
+    "topic": "MISSION CONTROL",
+    "prompt": "Name a named space mission, including uncrewed and planned missions.",
+    "source": "Wikidata contributors, CC0; recorded query Q2133344 in sources/wd-space-missions.json; snapshot 2026-10-22.",
+    "ranking": "familiarity-v2",
+    "group": "space-exploration",
+    "dailyEligible": true,
+    "answerHash": "eab25094ff5743fa6ef07773e16243bc23b4504e457c00a5d47c3d2d5118d5a5",
+    "answerCount": 963,
+    "tiers": {
+      "10": 1,
+      "30": 34,
+      "60": 421,
+      "85": 506,
+      "100": 1
+    }
+  },
+  {
+    "id": "catalog-space-probes",
+    "family": "science",
+    "topic": "ROBOTIC EXPLORERS",
+    "prompt": "Name an uncrewed space probe or planetary lander.",
+    "source": "Wikidata contributors, CC0; recorded query Q26529 in sources/wd-space-probes.json; snapshot 2026-10-22.",
+    "ranking": "familiarity-v2",
+    "group": "space-exploration",
+    "dailyEligible": true,
+    "answerHash": "02ea90a47f7100f0645b42c3a5fb7203707a77948c67591ad4c8313698d7f9e3",
+    "answerCount": 330,
+    "tiers": {
+      "30": 16,
+      "60": 158,
+      "85": 155,
+      "100": 1
+    }
+  },
+  {
+    "id": "catalog-physical-laws",
+    "family": "science",
+    "topic": "LAWS AND EFFECTS",
+    "prompt": "Name a named physical law, theory, principle, effect, or phenomenon.",
+    "source": "Wikidata contributors, CC0; recorded query Q214070 in sources/wd-physical-laws.json; snapshot 2026-10-22.",
+    "ranking": "familiarity-v2",
+    "group": "physics",
+    "dailyEligible": true,
+    "answerHash": "5067991df738d143a041161d6ca69dfbbb4e71e23b76892e85b8066d01568777",
+    "answerCount": 221,
+    "tiers": {
+      "30": 20,
+      "60": 80,
+      "85": 120,
+      "100": 1
+    }
+  },
+  {
+    "id": "catalog-mathematical-theorems",
+    "family": "science",
+    "topic": "Q.E.D.",
+    "prompt": "Name a mathematical theorem. Named lemmas and corollaries count.",
+    "source": "Wikidata contributors, CC0; recorded query Q65943 in sources/wd-mathematical-theorems.json; snapshot 2026-10-22.",
+    "ranking": "familiarity-v2",
+    "group": "mathematics",
+    "dailyEligible": true,
+    "answerHash": "45dfc857f572cec5ff6f02e383f460b2352729d7b36a2f54c986ffd55061df99",
+    "answerCount": 2761,
+    "tiers": {
+      "10": 2,
+      "30": 37,
+      "60": 405,
+      "85": 2316,
+      "100": 1
+    }
+  },
+  {
+    "id": "catalog-branches-mathematics",
+    "family": "science",
+    "topic": "A BRANCH OF MATHEMATICS",
+    "prompt": "Name a branch or specialized field of mathematics.",
+    "source": "Wikidata contributors, CC0; recorded query Q1936384 in sources/wd-branches-mathematics.json; snapshot 2026-10-22.",
+    "ranking": "familiarity-v2",
+    "group": "mathematics",
+    "dailyEligible": true,
+    "answerHash": "3a1dc2be07f6bdd595388b1cfc1bbb7c9352454dd4cab3dd495b84077a53c57a",
+    "answerCount": 312,
+    "tiers": {
+      "30": 35,
+      "60": 157,
+      "85": 119,
+      "100": 1
+    }
+  },
+  {
+    "id": "catalog-cloud-types",
+    "family": "science",
+    "topic": "CLOUD ATLAS",
+    "prompt": "Name a cloud type, species, or recognized cloud formation.",
+    "source": "Wikidata contributors, CC0; recorded query Q1840368 in sources/wd-cloud-types.json; snapshot 2026-10-22.",
+    "ranking": "familiarity-v2",
+    "group": "atmosphere",
+    "dailyEligible": true,
+    "answerHash": "10a877bb119fbc815c3639577c050f131924c5763d6d5905a019bbe505c47c04",
+    "answerCount": 47,
+    "tiers": {
+      "30": 1,
+      "60": 10,
+      "85": 35,
+      "100": 1
+    }
+  },
+  {
+    "id": "catalog-ocean-currents",
+    "family": "world",
+    "topic": "MOVING SEAS",
+    "prompt": "Name a named ocean current.",
+    "source": "Wikidata contributors, CC0; recorded query Q129558 in sources/wd-ocean-currents.json; snapshot 2026-10-22.",
+    "ranking": "familiarity-v2",
+    "group": "oceanography",
+    "dailyEligible": true,
+    "answerHash": "9fda99712f90024c9b02e3cc467d500f1569a733dc4d90e22d62c78acd621fe4",
+    "answerCount": 329,
+    "tiers": {
+      "30": 24,
+      "60": 57,
+      "85": 247,
+      "100": 1
+    }
+  },
+  {
+    "id": "catalog-writing-systems",
+    "family": "world",
+    "topic": "HOW WE WRITE",
+    "prompt": "Name a writing system, script, or named alphabet. Historical scripts count.",
+    "source": "Wikidata contributors, CC0; recorded query Q8192 in sources/wd-writing-systems.json; snapshot 2026-10-22.",
+    "ranking": "familiarity-v2",
+    "group": "languages",
+    "dailyEligible": true,
+    "answerHash": "ff238536f096a5c1abe00bdb5eb16c346bb69effe7eaee5234addf28f4144723",
+    "answerCount": 2367,
+    "tiers": {
+      "10": 8,
+      "30": 94,
+      "60": 415,
+      "85": 1849,
+      "100": 1
+    }
+  },
+  {
+    "id": "catalog-instrument-types",
+    "family": "culture",
+    "topic": "THE ORCHESTRA AND BEYOND",
+    "prompt": "Name a type of musical instrument. Named instrument families count.",
+    "source": "Wikidata contributors, CC0; recorded query Q34379 in sources/wd-instrument-types.json; snapshot 2026-10-22.",
+    "ranking": "familiarity-v2",
+    "group": "music-instruments",
+    "dailyEligible": true,
+    "answerHash": "e52c7728c0306bf25e5f430ceb2ee2f17a7df3cd24bc44cbe04e4810b7f6fef1",
+    "answerCount": 5135,
+    "tiers": {
+      "10": 20,
+      "30": 185,
+      "60": 1062,
+      "85": 3867,
+      "100": 1
+    }
+  },
+  {
+    "id": "catalog-percussion-types",
+    "family": "culture",
+    "topic": "HIT, SHAKE, SCRAPE",
+    "prompt": "Name a percussion instrument.",
+    "source": "Wikidata contributors, CC0; recorded query Q133163 in sources/wd-percussion-types.json; snapshot 2026-10-22.",
+    "ranking": "familiarity-v2",
+    "group": "music-instruments",
+    "dailyEligible": true,
+    "answerHash": "d451fb666e252af9afdf9327c9e93f7ebbc9d56f758c59e025e4404bd14e7027",
+    "answerCount": 780,
+    "tiers": {
+      "30": 38,
+      "60": 185,
+      "85": 556,
+      "100": 1
+    }
+  },
+  {
+    "id": "catalog-string-instrument-types",
+    "family": "culture",
+    "topic": "ON STRINGS",
+    "prompt": "Name a stringed musical instrument.",
+    "source": "Wikidata contributors, CC0; recorded query Q1798603 in sources/wd-string-instrument-types.json; snapshot 2026-10-22.",
+    "ranking": "familiarity-v2",
+    "group": "music-instruments",
+    "dailyEligible": true,
+    "answerHash": "ea4a8eef692d766f4b6bb2753a90859b22a84c6277923be9a28e505b120e6ce1",
+    "answerCount": 909,
+    "tiers": {
+      "10": 1,
+      "30": 28,
+      "60": 189,
+      "85": 690,
+      "100": 1
+    }
+  },
+  {
+    "id": "catalog-wind-instrument-types",
+    "family": "culture",
+    "topic": "SOUND ON THE AIR",
+    "prompt": "Name a wind instrument, including brass and woodwind instruments.",
+    "source": "Wikidata contributors, CC0; recorded query Q173453 in sources/wd-wind-instrument-types.json; snapshot 2026-10-22.",
+    "ranking": "familiarity-v2",
+    "group": "music-instruments",
+    "dailyEligible": true,
+    "answerHash": "6374fedc024fbc20de8de2fe7a26790c368121998138597ce60ae1ee61a79659",
+    "answerCount": 1015,
+    "tiers": {
+      "10": 1,
+      "30": 9,
+      "60": 182,
+      "85": 822,
+      "100": 1
+    }
+  },
+  {
+    "id": "catalog-electronic-instrument-types",
+    "family": "culture",
+    "topic": "ELECTRONIC SOUNDMAKERS",
+    "prompt": "Name an electronic musical instrument or named synthesizer model.",
+    "source": "Wikidata contributors, CC0; recorded query Q1327500 in sources/wd-electronic-instrument-types.json; snapshot 2026-10-22.",
+    "ranking": "familiarity-v2",
+    "group": "music-instruments",
+    "dailyEligible": true,
+    "answerHash": "c17d526b33b76dbe1f9785224919430bcc2768667673119fc6eb2623ad0819ca",
+    "answerCount": 291,
+    "tiers": {
+      "10": 1,
+      "30": 13,
+      "60": 63,
+      "85": 213,
+      "100": 1
+    }
+  },
+  {
+    "id": "catalog-genre-clean",
+    "family": "culture",
+    "topic": "A MUSICAL FAMILY TREE",
+    "prompt": "Name a musical genre or subgenre.",
+    "source": "Wikidata contributors, CC0; recorded query Q188451 in sources/wd-genre-clean.json; snapshot 2026-10-22.",
+    "ranking": "familiarity-v2",
+    "group": "music-genres",
+    "dailyEligible": true,
+    "answerHash": "348fab54b1842eee0a24bb0641094bc8be09a533a687cb1c34104559c802a8a4",
+    "answerCount": 6328,
+    "tiers": {
+      "10": 62,
+      "30": 919,
+      "60": 1733,
+      "85": 3613,
+      "100": 1
+    }
+  },
+  {
+    "id": "catalog-rock-subgenres",
+    "family": "culture",
+    "topic": "ROCK’S BRANCHES",
+    "prompt": "Name a rock-music genre or subgenre.",
+    "source": "Wikidata contributors, CC0; recorded query Q11399 in sources/wd-rock-subgenres.json; snapshot 2026-10-22.",
+    "ranking": "familiarity-v2",
+    "group": "music-genres",
+    "dailyEligible": true,
+    "answerHash": "a735909de618704965989c0060bf963717084041fcded58f558d9b78b53980a4",
+    "answerCount": 847,
+    "tiers": {
+      "10": 3,
+      "30": 226,
+      "60": 323,
+      "85": 294,
+      "100": 1
+    }
+  },
+  {
+    "id": "catalog-jazz-subgenres",
+    "family": "culture",
+    "topic": "ALL THAT JAZZ",
+    "prompt": "Name a jazz genre or established jazz style.",
+    "source": "Wikidata contributors, CC0; recorded query Q8341 in sources/wd-jazz-subgenres.json; snapshot 2026-10-22.",
+    "ranking": "familiarity-v2",
+    "group": "music-genres",
+    "dailyEligible": true,
+    "answerHash": "88522e5ae289eaf06df4e247b0ff5ed437e53c2bd2c72bbe1139a5836e64f8ec",
+    "answerCount": 160,
+    "tiers": {
+      "30": 48,
+      "60": 77,
+      "85": 34,
+      "100": 1
+    }
+  },
+  {
+    "id": "catalog-electronic-subgenres",
+    "family": "culture",
+    "topic": "FROM THE CIRCUIT BOARD",
+    "prompt": "Name an electronic-music genre or subgenre.",
+    "source": "Wikidata contributors, CC0; recorded query Q9778 in sources/wd-electronic-subgenres.json; snapshot 2026-10-22.",
+    "ranking": "familiarity-v2",
+    "group": "music-genres",
+    "dailyEligible": true,
+    "answerHash": "596cf00109c8d1888acc5cc61c74d1890fde43ec5b0a8d8d5349290571de3a3d",
+    "answerCount": 610,
+    "tiers": {
+      "10": 13,
+      "30": 95,
+      "60": 192,
+      "85": 309,
+      "100": 1
+    }
+  },
+  {
+    "id": "catalog-folk-subgenres",
+    "family": "culture",
+    "topic": "LOCAL ROOTS",
+    "prompt": "Name a folk-music genre or regional folk style.",
+    "source": "Wikidata contributors, CC0; recorded query Q43343 in sources/wd-folk-subgenres.json; snapshot 2026-10-22.",
+    "ranking": "familiarity-v2",
+    "group": "music-genres",
+    "dailyEligible": true,
+    "answerHash": "23c8e37c3a35b6d13990c45d5b2087a4a6ddf4f6a9feb46fb9f9eaf8613c7811",
+    "answerCount": 1139,
+    "tiers": {
+      "10": 5,
+      "30": 58,
+      "60": 224,
+      "85": 851,
+      "100": 1
+    }
+  },
+  {
+    "id": "catalog-dances",
+    "family": "culture",
+    "topic": "LEARN THE STEPS",
+    "prompt": "Name a dance style, traditional dance, or named social dance.",
+    "source": "Wikidata contributors, CC0; recorded query Q11639 in sources/wd-dances.json; snapshot 2026-10-22.",
+    "ranking": "familiarity-v2",
+    "group": "dance",
+    "dailyEligible": true,
+    "answerHash": "f964beedd92cdc9fa281463dc29cf2bac0b944b0035441f75df72174e21a2147",
+    "answerCount": 3074,
+    "tiers": {
+      "10": 7,
+      "30": 175,
+      "60": 338,
+      "85": 2553,
+      "100": 1
+    }
+  },
+  {
+    "id": "catalog-card-games",
+    "family": "culture",
+    "topic": "DEAL ME IN",
+    "prompt": "Name a card game, including games with a dedicated card deck.",
+    "source": "Wikidata contributors, CC0; recorded query Q142714 in sources/wd-card-games.json; snapshot 2026-10-22.",
+    "ranking": "familiarity-v2",
+    "group": "tabletop-games",
+    "dailyEligible": true,
+    "answerHash": "f6f8a43ad5cab37378864216814da51c89f864e4ed71c95c10a03f210aced7be",
+    "answerCount": 1261,
+    "tiers": {
+      "10": 28,
+      "30": 180,
+      "60": 339,
+      "85": 713,
+      "100": 1
+    }
+  },
+  {
+    "id": "catalog-mythical-creature-types",
+    "family": "culture",
+    "topic": "FROM MYTH AND FANTASY",
+    "prompt": "Name a type of creature from mythology, folklore, or fantasy.",
+    "source": "Wikidata contributors, CC0; recorded query Q2239243 in sources/wd-mythical-creature-types.json; snapshot 2026-10-22.",
+    "ranking": "familiarity-v2",
+    "group": "mythology",
+    "dailyEligible": true,
+    "answerHash": "08797f16a40a878eef51517c8a8ef0126ac867b66911732a04093f19a39f2dfd",
+    "answerCount": 788,
+    "tiers": {
+      "10": 3,
+      "30": 56,
+      "60": 153,
+      "85": 575,
+      "100": 1
+    }
+  },
+  {
+    "id": "catalog-musical-terms",
+    "family": "culture",
+    "topic": "THE MUSIC LEXICON",
+    "prompt": "Name an established term used in music theory, performance, or the recording industry.",
+    "source": "Wikidata contributors, CC0; recorded query Q20202269 in sources/wd-musical-terms.json; snapshot 2026-10-22.",
+    "ranking": "familiarity-v2",
+    "group": "music-theory",
+    "dailyEligible": true,
+    "answerHash": "6999b54a8b9122792673c4480e340c5f06a6c1ea6bfd2c3d8a686930b79a2c40",
+    "answerCount": 131,
+    "tiers": {
+      "10": 5,
+      "30": 50,
+      "60": 28,
+      "85": 47,
+      "100": 1
+    }
+  },
+  {
+    "id": "catalog-musical-scales",
+    "family": "culture",
+    "topic": "SCALES AND MODES",
+    "prompt": "Name a musical scale, mode, or named scale family.",
+    "source": "Wikidata contributors, CC0; recorded query Q179651 in sources/wd-musical-scales.json; snapshot 2026-10-22.",
+    "ranking": "familiarity-v2",
+    "group": "music-theory",
+    "dailyEligible": true,
+    "answerHash": "46c92804eef476e9c47feb067b24e89e00e0c997c74ae51e90beae2b0c61f115",
+    "answerCount": 120,
+    "tiers": {
+      "10": 1,
+      "30": 37,
+      "60": 35,
+      "85": 46,
+      "100": 1
+    }
+  },
+  {
+    "id": "catalog-poetic-forms",
+    "family": "culture",
+    "topic": "THE SHAPE OF A POEM",
+    "prompt": "Name a poetic form or named verse structure.",
+    "source": "Wikidata contributors, CC0; recorded query Q89522629 in sources/wd-poetic-forms.json; snapshot 2026-10-22.",
+    "ranking": "familiarity-v2",
+    "group": "literature",
+    "dailyEligible": true,
+    "answerHash": "446ddeef67a80531dc2e72ac34054770ebbc9980b50a1ff52349e1f12ef017dc",
+    "answerCount": 206,
+    "tiers": {
+      "30": 9,
+      "60": 23,
+      "85": 173,
+      "100": 1
+    }
+  },
+  {
+    "id": "catalog-rhetorical-types",
+    "family": "culture",
+    "topic": "WORDS WITH AN EFFECT",
+    "prompt": "Name a rhetorical or stylistic device.",
+    "source": "Wikidata contributors, CC0; recorded query Q1762471 in sources/wd-rhetorical-types.json; snapshot 2026-10-22.",
+    "ranking": "familiarity-v2",
+    "group": "literature",
+    "dailyEligible": true,
+    "answerHash": "f98461f9812bc9bc1d1638e252edca92684ad990b1363af3d7e4f12be9369c31",
+    "answerCount": 187,
+    "tiers": {
+      "10": 2,
+      "30": 12,
+      "60": 79,
+      "85": 93,
+      "100": 1
+    }
+  },
+  {
+    "id": "catalog-literary-clean",
+    "family": "culture",
+    "topic": "A DIFFERENT KIND OF STORY",
+    "prompt": "Name a literary genre or subgenre.",
+    "source": "Wikidata contributors, CC0; recorded query Q223393 in sources/wd-literary-clean.json; snapshot 2026-10-22.",
+    "ranking": "familiarity-v2",
+    "group": "literature",
+    "dailyEligible": true,
+    "answerHash": "855b5da9bc3eee190dd2605f68be6c3abc511683612019874801eb2361c2b530",
+    "answerCount": 1418,
+    "tiers": {
+      "10": 11,
+      "30": 244,
+      "60": 425,
+      "85": 737,
+      "100": 1
+    }
+  },
+  {
+    "id": "catalog-fictional-robots",
+    "family": "culture",
+    "topic": "SOME ASSEMBLY REQUIRED",
+    "prompt": "Name a named fictional robot or android.",
+    "source": "Wikidata contributors, CC0; recorded query Q18327510 in sources/wd-fictional-robots.json; snapshot 2026-10-22.",
+    "ranking": "familiarity-v2",
+    "group": "fiction-characters",
+    "dailyEligible": true,
+    "answerHash": "c169f17f522845fddd5ab1a894877bfe3cc1cbde5445297fdc8d8b46adb15217",
+    "answerCount": 1143,
+    "tiers": {
+      "10": 16,
+      "30": 117,
+      "60": 276,
+      "85": 733,
+      "100": 1
+    }
+  },
+  {
+    "id": "catalog-fictional-dragons",
+    "family": "culture",
+    "topic": "HERE BE DRAGONS",
+    "prompt": "Name a named dragon or named dragon species from fiction.",
+    "source": "Wikidata contributors, CC0; recorded query Q30170627 in sources/wd-fictional-dragons.json; snapshot 2026-10-22.",
+    "ranking": "familiarity-v2",
+    "group": "fiction-characters",
+    "dailyEligible": true,
+    "answerHash": "dce084f5907cc65cbac0de071cd24398a5f4fe2f1cc9c46dcb6e91f3391d2ffd",
+    "answerCount": 316,
+    "tiers": {
+      "10": 1,
+      "30": 26,
+      "60": 50,
+      "85": 238,
+      "100": 1
+    }
+  },
+  {
+    "id": "catalog-furniture-types",
+    "family": "everyday",
+    "topic": "A ROOM TO FURNISH",
+    "prompt": "Name a type of furniture or household furnishing.",
+    "source": "Wikidata contributors, CC0; recorded query Q14745 in sources/wd-furniture-types.json; snapshot 2026-10-22.",
+    "ranking": "familiarity-v2",
+    "group": "home",
+    "dailyEligible": true,
+    "answerHash": "9e0f509853d3ae4f87a2482abed78243f240e2a586246818abc49d4b200b4e38",
+    "answerCount": 1724,
+    "tiers": {
+      "10": 12,
+      "30": 321,
+      "60": 626,
+      "85": 764,
+      "100": 1
+    }
+  },
+  {
+    "id": "catalog-jewelry-types",
+    "family": "everyday",
+    "topic": "SMALL ADORNMENTS",
+    "prompt": "Name a type or established style of jewellery.",
+    "source": "Wikidata contributors, CC0; recorded query Q2142903 in sources/wd-jewelry-types.json; snapshot 2026-10-22.",
+    "ranking": "familiarity-v2",
+    "group": "clothing",
+    "dailyEligible": true,
+    "answerHash": "04d9961274d990e348798ba29b92695d77e8b5aea1ef56e6ed4f4cc2d28bf903",
+    "answerCount": 381,
+    "tiers": {
+      "30": 46,
+      "60": 102,
+      "85": 232,
+      "100": 1
+    }
+  },
+  {
+    "id": "catalog-hand-tool-types",
+    "family": "everyday",
+    "topic": "TOOLS WITHOUT A MOTOR",
+    "prompt": "Name a manual tool or hand-held implement. Kitchen and craft utensils count.",
+    "source": "Wikidata contributors, CC0; recorded query Q2578402 in sources/wd-hand-tool-types.json; snapshot 2026-10-22.",
+    "ranking": "familiarity-v2",
+    "group": "tools",
+    "dailyEligible": true,
+    "answerHash": "cace2495b7690c02811a63f0f0edb814b0c98f66dfafe089d4789736d76f84c0",
+    "answerCount": 1052,
+    "tiers": {
+      "10": 12,
+      "30": 92,
+      "60": 358,
+      "85": 589,
+      "100": 1
+    }
+  },
+  {
+    "id": "catalog-textile-types",
+    "family": "everyday",
+    "topic": "TEXTILES AND WHAT WE MAKE",
+    "prompt": "Name a textile material, named weave, or type of textile product.",
+    "source": "Wikidata contributors, CC0; recorded query Q28823 in sources/wd-textile-types.json; snapshot 2026-10-22.",
+    "ranking": "familiarity-v2",
+    "group": "textiles",
+    "dailyEligible": true,
+    "answerHash": "b4206b9484affb863a13bf0af86bc103acb2b91379a7d67e83b75f78b3582711",
+    "answerCount": 1349,
+    "tiers": {
+      "10": 6,
+      "30": 47,
+      "60": 425,
+      "85": 870,
+      "100": 1
+    }
+  },
+  {
+    "id": "catalog-printing-techniques",
+    "family": "everyday",
+    "topic": "MAKING AN IMPRESSION",
+    "prompt": "Name a printing or printmaking technique.",
+    "source": "Wikidata contributors, CC0; recorded query Q3514338 in sources/wd-printing-techniques.json; snapshot 2026-10-22.",
+    "ranking": "familiarity-v2",
+    "group": "printing",
+    "dailyEligible": true,
+    "answerHash": "21a5b830f7fcdc9faa76a814abc7188ef1e268ca6b39245f5fb41be9d93cc08d",
+    "answerCount": 1234,
+    "tiers": {
+      "30": 23,
+      "60": 88,
+      "85": 1122,
+      "100": 1
+    }
+  },
+  {
+    "id": "modern-art-movements",
+    "family": "culture",
+    "topic": "A BREAK WITH TRADITION",
+    "prompt": "Name a modern art movement, artistic school, or recognized visual-art style.",
+    "source": "Corpora, Darius Kazemi and contributors, CC0; art/isms.json. Snapshot 2026-10-22.",
+    "ranking": "familiarity-v2",
+    "group": "art-styles",
+    "dailyEligible": true,
+    "answerHash": "e0fac17f3f285b33e1a59cd84c117976be7204df91e3dacd8b0c7181a5b073ce",
+    "answerCount": 139,
+    "tiers": {
+      "10": 1,
+      "30": 18,
+      "60": 22,
+      "85": 97,
+      "100": 1
+    }
+  },
+  {
+    "id": "lex-palindromes",
+    "family": "words",
+    "topic": "BACK TO FRONT",
+    "prompt": "Name an English palindrome of at least three letters, such as “level”.",
+    "source": "ENABLE public-domain lexicon; CMU Pronouncing Dictionary BSD license where pronunciation is used. Exact lexical predicate; proper names excluded.",
+    "ranking": "familiarity-v2",
+    "group": "lex-palindromes",
+    "dailyEligible": true,
+    "answerHash": "802a57f5fed97872e816f808b59a3f26b108ec7670e82a9803cbc1260f8368ba",
+    "answerCount": 101,
+    "tiers": {
+      "10": 7,
+      "30": 14,
+      "60": 38,
+      "85": 41,
+      "100": 1
+    }
+  },
+  {
+    "id": "lex-top-row-words",
+    "family": "words",
+    "topic": "THE TYPEWRITER CHALLENGE",
+    "prompt": "Name an English word of at least five letters typed only on the top letter row: QWERTYUIOP.",
+    "source": "ENABLE public-domain lexicon; CMU Pronouncing Dictionary BSD license where pronunciation is used. Exact lexical predicate; proper names excluded.",
+    "ranking": "familiarity-v2",
+    "group": "lex-top-row-words",
+    "dailyEligible": true,
+    "answerHash": "113c89715e2de879ec306f9df88d26fec1f37ec67b53d4807855d6b1c0e36c9b",
+    "answerCount": 370,
+    "tiers": {
+      "10": 7,
+      "30": 27,
+      "60": 45,
+      "85": 290,
+      "100": 1
+    }
+  },
+  {
+    "id": "lex-left-hand-words",
+    "family": "words",
+    "topic": "LEFT HAND ONLY",
+    "prompt": "Name an English word of at least six letters typed only with standard left-hand touch-typing letters: QWERTASDFGZXCVB.",
+    "source": "ENABLE public-domain lexicon; CMU Pronouncing Dictionary BSD license where pronunciation is used. Exact lexical predicate; proper names excluded.",
+    "ranking": "familiarity-v2",
+    "group": "lex-left-hand-words",
+    "dailyEligible": true,
+    "answerHash": "7a922bd63af969480a701a94dc9afe34dc0c199fb60cfcee08d85160119b97fc",
+    "answerCount": 2218,
+    "tiers": {
+      "10": 50,
+      "30": 189,
+      "60": 406,
+      "85": 1572,
+      "100": 1
+    }
+  },
+  {
+    "id": "lex-right-hand-words",
+    "family": "words",
+    "topic": "RIGHT HAND ONLY",
+    "prompt": "Name an English word of at least four letters typed only with standard right-hand touch-typing letters: YUIOPHJKLNM.",
+    "source": "ENABLE public-domain lexicon; CMU Pronouncing Dictionary BSD license where pronunciation is used. Exact lexical predicate; proper names excluded.",
+    "ranking": "familiarity-v2",
+    "group": "lex-right-hand-words",
+    "dailyEligible": true,
+    "answerHash": "2475c9fb1ab65542dbc33eebe8c813dcabda78ea9ff85003a347f9b6b7a5eebe",
+    "answerCount": 348,
+    "tiers": {
+      "10": 8,
+      "30": 22,
+      "60": 64,
+      "85": 253,
+      "100": 1
+    }
+  },
+  {
+    "id": "lex-all-five-vowels",
+    "family": "words",
+    "topic": "THE WHOLE VOWEL SET",
+    "prompt": "Name an English word containing A, E, I, O, and U. They may appear in any order.",
+    "source": "ENABLE public-domain lexicon; CMU Pronouncing Dictionary BSD license where pronunciation is used. Exact lexical predicate; proper names excluded.",
+    "ranking": "familiarity-v2",
+    "group": "lex-all-five-vowels",
+    "dailyEligible": true,
+    "answerHash": "08b95a7a149a118485bba8ad44e23cac982902cb7f04d8ebfbf51832efbe56fc",
+    "answerCount": 2462,
+    "tiers": {
+      "10": 2,
+      "30": 26,
+      "60": 105,
+      "85": 2328,
+      "100": 1
+    }
+  },
+  {
+    "id": "lex-y-as-only-vowel",
+    "family": "words",
+    "topic": "WHY IS THE VOWEL?",
+    "prompt": "Name an English word of at least four letters containing Y but no A, E, I, O, or U.",
+    "source": "ENABLE public-domain lexicon; CMU Pronouncing Dictionary BSD license where pronunciation is used. Exact lexical predicate; proper names excluded.",
+    "ranking": "familiarity-v2",
+    "group": "lex-y-as-only-vowel",
+    "dailyEligible": true,
+    "answerHash": "75150a6233a20cd42de14a489b3e527f17a2124a378c2c88d831ff163467e6b0",
+    "answerCount": 77,
+    "tiers": {
+      "10": 1,
+      "30": 2,
+      "60": 23,
+      "85": 50,
+      "100": 1
+    }
+  },
+  {
+    "id": "lex-three-double-pairs",
+    "family": "words",
+    "topic": "SEEING DOUBLE, THREE TIMES",
+    "prompt": "Name an English word containing at least three pairs of identical adjacent letters.",
+    "source": "ENABLE public-domain lexicon; CMU Pronouncing Dictionary BSD license where pronunciation is used. Exact lexical predicate; proper names excluded.",
+    "ranking": "familiarity-v2",
+    "group": "lex-three-double-pairs",
+    "dailyEligible": true,
+    "answerHash": "b8d155adfc8d3e50d790051a1e795bd9a77f418fe1846226c5c6ed0a8e00fa03",
+    "answerCount": 134,
+    "tiers": {
+      "10": 2,
+      "30": 1,
+      "60": 3,
+      "85": 127,
+      "100": 1
+    }
+  },
+  {
+    "id": "lex-four-consonants",
+    "family": "words",
+    "topic": "A CONSONANT CLUSTER",
+    "prompt": "Name an English word containing at least five consonant letters in a row. Y counts as a consonant here.",
+    "source": "ENABLE public-domain lexicon; CMU Pronouncing Dictionary BSD license where pronunciation is used. Exact lexical predicate; proper names excluded.",
+    "ranking": "familiarity-v2",
+    "group": "lex-four-consonants",
+    "dailyEligible": true,
+    "answerHash": "b8a2fa98253c4865790392c0570f8c6dd18c4acebbd843d243cbeec959d05cec",
+    "answerCount": 1755,
+    "tiers": {
+      "30": 13,
+      "60": 119,
+      "85": 1622,
+      "100": 1
+    }
+  },
+  {
+    "id": "lex-bookend-syllables",
+    "family": "words",
+    "topic": "MATCHING ENDS",
+    "prompt": "Name an English word of at least seven letters with the same first three and last three letters.",
+    "source": "ENABLE public-domain lexicon; CMU Pronouncing Dictionary BSD license where pronunciation is used. Exact lexical predicate; proper names excluded.",
+    "ranking": "familiarity-v2",
+    "group": "lex-bookend-syllables",
+    "dailyEligible": true,
+    "answerHash": "629333af2b5c46bcc98e3ab0f10b87d71c812970377784c1d891346dce6132ce",
+    "answerCount": 74,
+    "tiers": {
+      "30": 3,
+      "60": 3,
+      "85": 67,
+      "100": 1
+    }
+  },
+  {
+    "id": "lex-alphabet-run",
+    "family": "words",
+    "topic": "LETTERS IN A ROW",
+    "prompt": "Name an English word containing three consecutive alphabet letters in order, such as DEF or STU.",
+    "source": "ENABLE public-domain lexicon; CMU Pronouncing Dictionary BSD license where pronunciation is used. Exact lexical predicate; proper names excluded.",
+    "ranking": "familiarity-v2",
+    "group": "lex-alphabet-run",
+    "dailyEligible": true,
+    "answerHash": "e7ad9d997053150fbeb4614f9bbcd2e4586d08dc56df90a9a5c5a065ddb8cde6",
+    "answerCount": 1502,
+    "tiers": {
+      "10": 14,
+      "30": 55,
+      "60": 165,
+      "85": 1267,
+      "100": 1
+    }
+  },
+  {
+    "id": "lex-word-ology",
+    "family": "words",
+    "topic": "THE STUDY OF ENDINGS",
+    "prompt": "Name an English word ending in -ology.",
+    "source": "ENABLE public-domain lexicon; CMU Pronouncing Dictionary BSD license where pronunciation is used. Exact lexical predicate; proper names excluded.",
+    "ranking": "familiarity-v2",
+    "group": "lex-word-ology",
+    "dailyEligible": true,
+    "answerHash": "60c21c25cc27621d250bcfa00e8a86ae116b717f6aa6a9cda915c6fbe1da707f",
+    "answerCount": 282,
+    "tiers": {
+      "10": 1,
+      "30": 2,
+      "60": 29,
+      "85": 249,
+      "100": 1
+    }
+  },
+  {
+    "id": "lex-word-auto",
+    "family": "words",
+    "topic": "SELF-STARTERS",
+    "prompt": "Name an English word beginning with AUTO-.",
+    "source": "ENABLE public-domain lexicon; CMU Pronouncing Dictionary BSD license where pronunciation is used. Exact lexical predicate; proper names excluded.",
+    "ranking": "familiarity-v2",
+    "group": "lex-word-auto",
+    "dailyEligible": true,
+    "answerHash": "046ce4bb223181150602d65c9204279cd031d0ae1937b3ef061a146bf5861548",
+    "answerCount": 234,
+    "tiers": {
+      "30": 7,
+      "60": 24,
+      "85": 202,
+      "100": 1
+    }
+  },
+  {
+    "id": "lex-word-micro",
+    "family": "words",
+    "topic": "SMALL BEGINNINGS",
+    "prompt": "Name an English word beginning with MICRO-.",
+    "source": "ENABLE public-domain lexicon; CMU Pronouncing Dictionary BSD license where pronunciation is used. Exact lexical predicate; proper names excluded.",
+    "ranking": "familiarity-v2",
+    "group": "lex-word-micro",
+    "dailyEligible": true,
+    "answerHash": "23bafc0e46d71da4b6e1eb3e95c9fb5d6fa695e808aae5edb76021fad341118e",
+    "answerCount": 433,
+    "tiers": {
+      "60": 18,
+      "85": 414,
+      "100": 1
+    }
+  },
+  {
+    "id": "lex-word-geo",
+    "family": "words",
+    "topic": "EARTH AT THE START",
+    "prompt": "Name an English word beginning with GEO-.",
+    "source": "ENABLE public-domain lexicon; CMU Pronouncing Dictionary BSD license where pronunciation is used. Exact lexical predicate; proper names excluded.",
+    "ranking": "familiarity-v2",
+    "group": "lex-word-geo",
+    "dailyEligible": true,
+    "answerHash": "7c898b032a27728799757763f68ba4737a697d60b7b69fb0fca98725c52a95bd",
+    "answerCount": 153,
+    "tiers": {
+      "60": 17,
+      "85": 135,
+      "100": 1
+    }
+  },
+  {
+    "id": "lex-word-tele",
+    "family": "words",
+    "topic": "FROM A DISTANCE",
+    "prompt": "Name an English word beginning with TELE-.",
+    "source": "ENABLE public-domain lexicon; CMU Pronouncing Dictionary BSD license where pronunciation is used. Exact lexical predicate; proper names excluded.",
+    "ranking": "familiarity-v2",
+    "group": "lex-word-tele",
+    "dailyEligible": true,
+    "answerHash": "6b46994926aea78cdde314bad86608de60e1d52a309c69f4cf7394c188ab0fc2",
+    "answerCount": 164,
+    "tiers": {
+      "30": 6,
+      "60": 17,
+      "85": 140,
+      "100": 1
+    }
+  },
+  {
+    "id": "lex-long-monosyllables",
+    "family": "words",
+    "topic": "ONE BEAT, MANY LETTERS",
+    "prompt": "Name an English word of at least seven letters pronounced as one syllable in a standard pronunciation.",
+    "source": "ENABLE public-domain lexicon; CMU Pronouncing Dictionary BSD license where pronunciation is used. Exact lexical predicate; proper names excluded.",
+    "ranking": "familiarity-v2",
+    "group": "pronunciation",
+    "dailyEligible": true,
+    "answerHash": "feb06b1c0bcf2cb304e1ef483d5ac920e23c5a9c1138bb19f828029f84148110",
+    "answerCount": 598,
+    "tiers": {
+      "10": 46,
+      "30": 157,
+      "60": 248,
+      "85": 146,
+      "100": 1
+    }
+  },
+  {
+    "id": "lex-homophones",
+    "family": "words",
+    "topic": "SAME SOUND, DIFFERENT SPELLING",
+    "prompt": "Name an English word with another English word pronounced exactly the same way in at least one standard pronunciation.",
+    "source": "ENABLE public-domain lexicon; CMU Pronouncing Dictionary BSD license where pronunciation is used. Exact lexical predicate; proper names excluded.",
+    "ranking": "familiarity-v2",
+    "group": "pronunciation",
+    "dailyEligible": true,
+    "answerHash": "74717e7a3cb15c87b403d7cfa73be6b3dbf152088a70e58a543462473cc7fcf2",
+    "answerCount": 3300,
+    "tiers": {
+      "10": 328,
+      "30": 645,
+      "60": 1148,
+      "85": 1178,
+      "100": 1
+    }
+  },
+  {
+    "id": "rhyme-night",
+    "family": "words",
+    "topic": "RHYMES WITH NIGHT",
+    "prompt": "Name an English word that rhymes with “night” in at least one standard pronunciation. Proper names do not count.",
+    "source": "ENABLE public-domain lexicon; CMU Pronouncing Dictionary BSD license where pronunciation is used. Exact lexical predicate; proper names excluded.",
+    "ranking": "familiarity-v2",
+    "group": "rhymes",
+    "dailyEligible": true,
+    "answerHash": "73df58b305fc48e98725cc45b8db810b4ec6024b4f8e1f56cadb4214989069e9",
+    "answerCount": 170,
+    "tiers": {
+      "10": 10,
+      "30": 17,
+      "60": 44,
+      "85": 98,
+      "100": 1
+    }
+  },
+  {
+    "id": "rhyme-day",
+    "family": "words",
+    "topic": "RHYMES WITH DAY",
+    "prompt": "Name an English word that rhymes with “day” in at least one standard pronunciation. Proper names do not count.",
+    "source": "ENABLE public-domain lexicon; CMU Pronouncing Dictionary BSD license where pronunciation is used. Exact lexical predicate; proper names excluded.",
+    "ranking": "familiarity-v2",
+    "group": "rhymes",
+    "dailyEligible": true,
+    "answerHash": "b2ae80847982c4e6735e99d5265b99dab2571242662b1d5d51356fb92665a9a2",
+    "answerCount": 243,
+    "tiers": {
+      "10": 11,
+      "30": 25,
+      "60": 87,
+      "85": 119,
+      "100": 1
+    }
+  },
+  {
+    "id": "rhyme-blue",
+    "family": "words",
+    "topic": "RHYMES WITH BLUE",
+    "prompt": "Name an English word that rhymes with “blue” in at least one standard pronunciation. Proper names do not count.",
+    "source": "ENABLE public-domain lexicon; CMU Pronouncing Dictionary BSD license where pronunciation is used. Exact lexical predicate; proper names excluded.",
+    "ranking": "familiarity-v2",
+    "group": "rhymes",
+    "dailyEligible": true,
+    "answerHash": "f5d68e4d31176590bd446c9c9d401d7f08dbc6bbf18a7d1631431a5f6c83f12f",
+    "answerCount": 165,
+    "tiers": {
+      "10": 13,
+      "30": 19,
+      "60": 57,
+      "85": 75,
+      "100": 1
+    }
+  },
+  {
+    "id": "rhyme-green",
+    "family": "words",
+    "topic": "RHYMES WITH GREEN",
+    "prompt": "Name an English word that rhymes with “green” in at least one standard pronunciation. Proper names do not count.",
+    "source": "ENABLE public-domain lexicon; CMU Pronouncing Dictionary BSD license where pronunciation is used. Exact lexical predicate; proper names excluded.",
+    "ranking": "familiarity-v2",
+    "group": "rhymes",
+    "dailyEligible": true,
+    "answerHash": "274f1a24faea96fad788cae1cefd150911f04c55b61443d6f6fdc9ede5285e77",
+    "answerCount": 160,
+    "tiers": {
+      "10": 3,
+      "30": 16,
+      "60": 37,
+      "85": 103,
+      "100": 1
+    }
+  },
+  {
+    "id": "rhyme-sound",
+    "family": "words",
+    "topic": "RHYMES WITH SOUND",
+    "prompt": "Name an English word that rhymes with “sound” in at least one standard pronunciation. Proper names do not count.",
+    "source": "ENABLE public-domain lexicon; CMU Pronouncing Dictionary BSD license where pronunciation is used. Exact lexical predicate; proper names excluded.",
+    "ranking": "familiarity-v2",
+    "group": "rhymes",
+    "dailyEligible": true,
+    "answerHash": "c47aac515195ed3b17cb1ac18726fa37d287cd93c76d158228cc00ab491800c2",
+    "answerCount": 55,
+    "tiers": {
+      "10": 6,
+      "30": 7,
+      "60": 17,
+      "85": 24,
+      "100": 1
+    }
+  },
+  {
+    "id": "rhyme-face",
+    "family": "words",
+    "topic": "RHYMES WITH FACE",
+    "prompt": "Name an English word that rhymes with “face” in at least one standard pronunciation. Proper names do not count.",
+    "source": "ENABLE public-domain lexicon; CMU Pronouncing Dictionary BSD license where pronunciation is used. Exact lexical predicate; proper names excluded.",
+    "ranking": "familiarity-v2",
+    "group": "rhymes",
+    "dailyEligible": true,
+    "answerHash": "2b7b55c5afbc302883733c07408fe7fee6deb86bb3051152101b55c3e4fa4b47",
+    "answerCount": 69,
+    "tiers": {
+      "10": 6,
+      "30": 9,
+      "60": 18,
+      "85": 35,
+      "100": 1
+    }
+  },
+  {
+    "id": "rhyme-air",
+    "family": "words",
+    "topic": "RHYMES WITH AIR",
+    "prompt": "Name an English word that rhymes with “air” in at least one standard pronunciation. Proper names do not count.",
+    "source": "ENABLE public-domain lexicon; CMU Pronouncing Dictionary BSD license where pronunciation is used. Exact lexical predicate; proper names excluded.",
+    "ranking": "familiarity-v2",
+    "group": "rhymes",
+    "dailyEligible": true,
+    "answerHash": "a484881cc2d8932227b6de33995a6aa0818f64b5cb63ce0c742e1102cdbcd471",
+    "answerCount": 114,
+    "tiers": {
+      "10": 6,
+      "30": 28,
+      "60": 32,
+      "85": 47,
+      "100": 1
+    }
+  },
+  {
+    "id": "rhyme-go",
+    "family": "words",
+    "topic": "RHYMES WITH GO",
+    "prompt": "Name an English word that rhymes with “go” in at least one standard pronunciation. Proper names do not count.",
+    "source": "ENABLE public-domain lexicon; CMU Pronouncing Dictionary BSD license where pronunciation is used. Exact lexical predicate; proper names excluded.",
+    "ranking": "familiarity-v2",
+    "group": "rhymes",
+    "dailyEligible": true,
+    "answerHash": "415ad00df3f907d577482ec867f83e4a0118b04dc574aaf96d037f35414f54b3",
+    "answerCount": 233,
+    "tiers": {
+      "10": 9,
+      "30": 26,
+      "60": 76,
+      "85": 121,
+      "100": 1
+    }
+  },
+  {
+    "id": "rhyme-red",
+    "family": "words",
+    "topic": "RHYMES WITH RED",
+    "prompt": "Name an English word that rhymes with “red” in at least one standard pronunciation. Proper names do not count.",
+    "source": "ENABLE public-domain lexicon; CMU Pronouncing Dictionary BSD license where pronunciation is used. Exact lexical predicate; proper names excluded.",
+    "ranking": "familiarity-v2",
+    "group": "rhymes",
+    "dailyEligible": true,
+    "answerHash": "279e43c395c97fc8123b630b4e0e40af58b77876a612efd0e81503c63be4bc33",
+    "answerCount": 96,
+    "tiers": {
+      "10": 10,
+      "30": 6,
+      "60": 19,
+      "85": 60,
+      "100": 1
+    }
+  },
+  {
+    "id": "rhyme-ball",
+    "family": "words",
+    "topic": "RHYMES WITH BALL",
+    "prompt": "Name an English word that rhymes with “ball” in at least one standard pronunciation. Proper names do not count.",
+    "source": "ENABLE public-domain lexicon; CMU Pronouncing Dictionary BSD license where pronunciation is used. Exact lexical predicate; proper names excluded.",
+    "ranking": "familiarity-v2",
+    "group": "rhymes",
+    "dailyEligible": true,
+    "answerHash": "79611b724f8436ca507e26c238dd6c321345bbe74e29013c1757af0de257932e",
+    "answerCount": 88,
+    "tiers": {
+      "10": 6,
+      "30": 9,
+      "60": 23,
+      "85": 49,
+      "100": 1
+    }
+  },
+  {
+    "id": "rhyme-door",
+    "family": "words",
+    "topic": "RHYMES WITH DOOR",
+    "prompt": "Name an English word that rhymes with “door” in at least one standard pronunciation. Proper names do not count.",
+    "source": "ENABLE public-domain lexicon; CMU Pronouncing Dictionary BSD license where pronunciation is used. Exact lexical predicate; proper names excluded.",
+    "ranking": "familiarity-v2",
+    "group": "rhymes",
+    "dailyEligible": true,
+    "answerHash": "54d1e765c4469c58ed97a8768fa7e478f35ad28f7e4f43f0de3f08cd3355ea35",
+    "answerCount": 100,
+    "tiers": {
+      "10": 7,
+      "30": 16,
+      "60": 35,
+      "85": 41,
+      "100": 1
+    }
+  },
+  {
+    "id": "nobel-physics",
+    "family": "science",
+    "topic": "NOBEL IDEAS: PHYSICS",
+    "prompt": "Name a recipient of the Nobel Prize in Physics, awarded by the end of 2025. People and awarded organizations count.",
+    "source": "Nobel Prize API, Nobel Prize Outreach; names/categories through 2025. Source terms and attribution in DATA-SOURCES.md.",
+    "ranking": "familiarity-v2",
+    "group": "nobel-prizes",
+    "dailyEligible": true,
+    "answerHash": "88a5047186f6c5e1a5b2d10cd8a90eea49630f124d0ee7a00613ae9ad67de2c7",
+    "answerCount": 229,
+    "tiers": {
+      "10": 2,
+      "30": 6,
+      "60": 220,
+      "100": 1
+    }
+  },
+  {
+    "id": "nobel-chemistry",
+    "family": "science",
+    "topic": "NOBEL IDEAS: CHEMISTRY",
+    "prompt": "Name a recipient of the Nobel Prize in Chemistry, awarded by the end of 2025. People and awarded organizations count.",
+    "source": "Nobel Prize API, Nobel Prize Outreach; names/categories through 2025. Source terms and attribution in DATA-SOURCES.md.",
+    "ranking": "familiarity-v2",
+    "group": "nobel-prizes",
+    "dailyEligible": true,
+    "answerHash": "2f07eb804d6312ffbb0173519bfa9d0e87f783bdc969864bf48e0a087a982602",
+    "answerCount": 198,
+    "tiers": {
+      "10": 1,
+      "30": 6,
+      "60": 190,
+      "100": 1
+    }
+  },
+  {
+    "id": "nobel-physiologyormedicine",
+    "family": "science",
+    "topic": "NOBEL IDEAS: MEDICINE",
+    "prompt": "Name a recipient of the Nobel Prize in Physiology or Medicine, awarded by the end of 2025. People and awarded organizations count.",
+    "source": "Nobel Prize API, Nobel Prize Outreach; names/categories through 2025. Source terms and attribution in DATA-SOURCES.md.",
+    "ranking": "familiarity-v2",
+    "group": "nobel-prizes",
+    "dailyEligible": true,
+    "answerHash": "b1fec47bbfe493dfc5498d54fd1192ddd770a3324078707291839f2299f175e1",
+    "answerCount": 232,
+    "tiers": {
+      "30": 14,
+      "60": 217,
+      "100": 1
+    }
+  },
+  {
+    "id": "nobel-literature",
+    "family": "culture",
+    "topic": "LITERATURE’S NOBEL NAMES",
+    "prompt": "Name a recipient of the Nobel Prize in Literature, awarded by the end of 2025. People and awarded organizations count.",
+    "source": "Nobel Prize API, Nobel Prize Outreach; names/categories through 2025. Source terms and attribution in DATA-SOURCES.md.",
+    "ranking": "familiarity-v2",
+    "group": "nobel-prizes",
+    "dailyEligible": true,
+    "answerHash": "9008374a06e707d2258bc619e109d34c1a97274780fc4344048f4b966f75ddc5",
+    "answerCount": 122,
+    "tiers": {
+      "10": 2,
+      "30": 1,
+      "60": 118,
+      "100": 1
+    }
+  },
+  {
+    "id": "nobel-peace",
+    "family": "culture",
+    "topic": "THE PEACE PRIZE",
+    "prompt": "Name a recipient of the Nobel Peace Prize, awarded by the end of 2025. People and awarded organizations count.",
+    "source": "Nobel Prize API, Nobel Prize Outreach; names/categories through 2025. Source terms and attribution in DATA-SOURCES.md.",
+    "ranking": "familiarity-v2",
+    "group": "nobel-prizes",
+    "dailyEligible": true,
+    "answerHash": "d4b105e72d6abc8e28dbcde3227f37c9761feb3f74894e33c48e6cdcf90f014a",
+    "answerCount": 140,
+    "tiers": {
+      "10": 2,
+      "30": 12,
+      "60": 125,
+      "100": 1
+    }
+  },
+  {
+    "id": "nobel-economicsciences",
+    "family": "everyday",
+    "topic": "THE ECONOMICS PRIZE",
+    "prompt": "Name a recipient of the Nobel Memorial Prize in Economic Sciences, awarded by the end of 2025. People and awarded organizations count.",
+    "source": "Nobel Prize API, Nobel Prize Outreach; names/categories through 2025. Source terms and attribution in DATA-SOURCES.md.",
+    "ranking": "familiarity-v2",
+    "group": "nobel-prizes",
+    "dailyEligible": true,
+    "answerHash": "5c73225b91ecc39243fca0367a3cd460eceae74d49f4eb09bff6c77ae4ffc862",
+    "answerCount": 99,
+    "tiers": {
+      "10": 1,
+      "30": 6,
+      "60": 91,
+      "100": 1
+    }
+  },
+  {
+    "id": "nobel-all",
+    "family": "culture",
+    "topic": "THE LAUREATE ROLL",
+    "prompt": "Name a person or organization awarded a Nobel Prize or the Nobel Memorial Prize in Economic Sciences by the end of 2025.",
+    "source": "Nobel Prize API, Nobel Prize Outreach; names/categories through 2025.",
+    "ranking": "familiarity-v2",
+    "group": "nobel-prizes",
+    "dailyEligible": true,
+    "answerHash": "b31a6facf5d4932dfdc5425a4ade418be8a7f70f8d9ab5a26397c9c10aab6bcd",
+    "answerCount": 1018,
+    "tiers": {
+      "10": 5,
+      "30": 45,
+      "60": 967,
+      "100": 1
+    }
+  },
+  {
+    "id": "element-solid-elements",
+    "family": "science",
+    "topic": "SOLID AT ROOM TEMPERATURE",
+    "prompt": "Name an element known or predicted to be solid at standard room temperature.",
+    "source": "Bowserinator/Periodic-Table-JSON, CC BY-SA 3.0; only named element properties used.",
+    "ranking": "familiarity-v2",
+    "group": "periodic-table",
+    "dailyEligible": true,
+    "answerHash": "5178e91f2694427179df3f3e092c23dc067e4c634615f6670f9034b882b452e2",
+    "answerCount": 104,
+    "tiers": {
+      "10": 6,
+      "60": 23,
+      "85": 72,
+      "100": 3
+    }
+  },
+  {
+    "id": "element-metal-elements",
+    "family": "science",
+    "topic": "THE METAL REGISTER",
+    "prompt": "Name a metallic chemical element. Metalloids do not count.",
+    "source": "Bowserinator/Periodic-Table-JSON, CC BY-SA 3.0; only named element properties used.",
+    "ranking": "familiarity-v2",
+    "group": "periodic-table",
+    "dailyEligible": true,
+    "answerHash": "0a711f7c75003c02c0582f34a0bdd40ae268e0d77f328d7acdb6a5d0c5950e35",
+    "answerCount": 62,
+    "tiers": {
+      "10": 5,
+      "60": 17,
+      "85": 39,
+      "100": 1
+    }
+  },
+  {
+    "id": "element-naturally-occurring-elements",
+    "family": "science",
+    "topic": "BEFORE THE LABORATORY",
+    "prompt": "Name a chemical element with atomic number 1–94, including elements found naturally only in traces.",
+    "source": "Bowserinator/Periodic-Table-JSON, CC BY-SA 3.0; only named element properties used.",
+    "ranking": "familiarity-v2",
+    "group": "periodic-table",
+    "dailyEligible": true,
+    "answerHash": "6cda4c3a118292a80f52668605ae9a6bc58ae5cd5b2ab48e526144b28719436e",
+    "answerCount": 94,
+    "tiers": {
+      "10": 8,
+      "60": 28,
+      "85": 57,
+      "100": 1
+    }
+  },
+  {
+    "id": "element-heavy-elements",
+    "family": "science",
+    "topic": "BEYOND IRON",
+    "prompt": "Name an element with atomic number greater than 26.",
+    "source": "Bowserinator/Periodic-Table-JSON, CC BY-SA 3.0; only named element properties used.",
+    "ranking": "familiarity-v2",
+    "group": "periodic-table",
+    "dailyEligible": true,
+    "answerHash": "5be18e06599d98bcb99294f725e551fb7a9d024d94c07baac2447911d2da5eb6",
+    "answerCount": 92,
+    "tiers": {
+      "10": 4,
+      "60": 12,
+      "85": 73,
+      "100": 3
+    }
+  },
+  {
+    "id": "pokemon-type-normal",
+    "family": "culture",
+    "topic": "NORMAL-TYPE ROLL CALL",
+    "prompt": "Name a Pokémon that has Normal typing in at least one official form. Give the species name; alternate forms count once.",
+    "source": "PokéAPI factual species/typing tables, BSD-3-Clause; Pokémon names are Nintendo trademarks. Snapshot 2026-10-22. Any official form’s type counts; forms share one canonical species.",
+    "ranking": "familiarity-v2",
+    "group": "pokemon",
+    "dailyEligible": true,
+    "answerHash": "dc8717fe25bb4f8a5ffd037967989bb2bb6a043b7dfe12942ef8440ce3cef87b",
+    "answerCount": 133,
+    "tiers": {
+      "10": 3,
+      "60": 20,
+      "85": 109,
+      "100": 1
+    }
+  },
+  {
+    "id": "pokemon-type-fighting",
+    "family": "culture",
+    "topic": "FIGHTING-TYPE ROLL CALL",
+    "prompt": "Name a Pokémon that has Fighting typing in at least one official form. Give the species name; alternate forms count once.",
+    "source": "PokéAPI factual species/typing tables, BSD-3-Clause; Pokémon names are Nintendo trademarks. Snapshot 2026-10-22. Any official form’s type counts; forms share one canonical species.",
+    "ranking": "familiarity-v2",
+    "group": "pokemon",
+    "dailyEligible": true,
+    "answerHash": "d074e58bc0ec18ccd6b48795dc2c2f7d06210edeec533219dc87e302b3afb552",
+    "answerCount": 84,
+    "tiers": {
+      "10": 1,
+      "30": 1,
+      "60": 12,
+      "85": 69,
+      "100": 1
+    }
+  },
+  {
+    "id": "pokemon-type-flying",
+    "family": "culture",
+    "topic": "FLYING-TYPE ROLL CALL",
+    "prompt": "Name a Pokémon that has Flying typing in at least one official form. Give the species name; alternate forms count once.",
+    "source": "PokéAPI factual species/typing tables, BSD-3-Clause; Pokémon names are Nintendo trademarks. Snapshot 2026-10-22. Any official form’s type counts; forms share one canonical species.",
+    "ranking": "familiarity-v2",
+    "group": "pokemon",
+    "dailyEligible": true,
+    "answerHash": "e8d57a8d2e426efac23fd919760bdb9e1f4d1ce95124f7ab2f69b5db09816f5e",
+    "answerCount": 113,
+    "tiers": {
+      "10": 1,
+      "30": 1,
+      "60": 20,
+      "85": 90,
+      "100": 1
+    }
+  },
+  {
+    "id": "pokemon-type-poison",
+    "family": "culture",
+    "topic": "POISON-TYPE ROLL CALL",
+    "prompt": "Name a Pokémon that has Poison typing in at least one official form. Give the species name; alternate forms count once.",
+    "source": "PokéAPI factual species/typing tables, BSD-3-Clause; Pokémon names are Nintendo trademarks. Snapshot 2026-10-22. Any official form’s type counts; forms share one canonical species.",
+    "ranking": "familiarity-v2",
+    "group": "pokemon",
+    "dailyEligible": true,
+    "answerHash": "8a45929f21ac22b8d340a8dae9889a23e62f181352ff8b7a0b67d0dd399d77cc",
+    "answerCount": 87,
+    "tiers": {
+      "10": 2,
+      "60": 33,
+      "85": 51,
+      "100": 1
+    }
+  },
+  {
+    "id": "pokemon-type-ground",
+    "family": "culture",
+    "topic": "GROUND-TYPE ROLL CALL",
+    "prompt": "Name a Pokémon that has Ground typing in at least one official form. Give the species name; alternate forms count once.",
+    "source": "PokéAPI factual species/typing tables, BSD-3-Clause; Pokémon names are Nintendo trademarks. Snapshot 2026-10-22. Any official form’s type counts; forms share one canonical species.",
+    "ranking": "familiarity-v2",
+    "group": "pokemon",
+    "dailyEligible": true,
+    "answerHash": "b41819bc062b8f5bab88a9f98617b15e51b8d80b828d19d07b37572317fbbc7b",
+    "answerCount": 77,
+    "tiers": {
+      "60": 16,
+      "85": 60,
+      "100": 1
+    }
+  },
+  {
+    "id": "pokemon-type-rock",
+    "family": "culture",
+    "topic": "ROCK-TYPE ROLL CALL",
+    "prompt": "Name a Pokémon that has Rock typing in at least one official form. Give the species name; alternate forms count once.",
+    "source": "PokéAPI factual species/typing tables, BSD-3-Clause; Pokémon names are Nintendo trademarks. Snapshot 2026-10-22. Any official form’s type counts; forms share one canonical species.",
+    "ranking": "familiarity-v2",
+    "group": "pokemon",
+    "dailyEligible": true,
+    "answerHash": "3d09bb6f4f6df12cacf82744cd1165d106f6e403f63fd6bb3f1e2182eeda815b",
+    "answerCount": 78,
+    "tiers": {
+      "60": 15,
+      "85": 62,
+      "100": 1
+    }
+  },
+  {
+    "id": "pokemon-type-bug",
+    "family": "culture",
+    "topic": "BUG-TYPE ROLL CALL",
+    "prompt": "Name a Pokémon that has Bug typing in at least one official form. Give the species name; alternate forms count once.",
+    "source": "PokéAPI factual species/typing tables, BSD-3-Clause; Pokémon names are Nintendo trademarks. Snapshot 2026-10-22. Any official form’s type counts; forms share one canonical species.",
+    "ranking": "familiarity-v2",
+    "group": "pokemon",
+    "dailyEligible": true,
+    "answerHash": "b0265c362b4e74c3a91276b863d428c87be8525a410fa80fa2972eb2ac77ce0e",
+    "answerCount": 92,
+    "tiers": {
+      "60": 13,
+      "85": 78,
+      "100": 1
+    }
+  },
+  {
+    "id": "pokemon-type-ghost",
+    "family": "culture",
+    "topic": "GHOST-TYPE ROLL CALL",
+    "prompt": "Name a Pokémon that has Ghost typing in at least one official form. Give the species name; alternate forms count once.",
+    "source": "PokéAPI factual species/typing tables, BSD-3-Clause; Pokémon names are Nintendo trademarks. Snapshot 2026-10-22. Any official form’s type counts; forms share one canonical species.",
+    "ranking": "familiarity-v2",
+    "group": "pokemon",
+    "dailyEligible": true,
+    "answerHash": "43dd729b2b623da310a8e94f3def1ee224d0dcf86748e55aca86d50cf3a10a52",
+    "answerCount": 74,
+    "tiers": {
+      "10": 1,
+      "60": 3,
+      "85": 69,
+      "100": 1
+    }
+  },
+  {
+    "id": "pokemon-type-steel",
+    "family": "culture",
+    "topic": "STEEL-TYPE ROLL CALL",
+    "prompt": "Name a Pokémon that has Steel typing in at least one official form. Give the species name; alternate forms count once.",
+    "source": "PokéAPI factual species/typing tables, BSD-3-Clause; Pokémon names are Nintendo trademarks. Snapshot 2026-10-22. Any official form’s type counts; forms share one canonical species.",
+    "ranking": "familiarity-v2",
+    "group": "pokemon",
+    "dailyEligible": true,
+    "answerHash": "aca5d2e91bddedfcc26ca61af0769545c98391f8a8d25f1da020726f3043da7d",
+    "answerCount": 79,
+    "tiers": {
+      "30": 1,
+      "60": 8,
+      "85": 69,
+      "100": 1
+    }
+  },
+  {
+    "id": "pokemon-type-fire",
+    "family": "culture",
+    "topic": "FIRE-TYPE ROLL CALL",
+    "prompt": "Name a Pokémon that has Fire typing in at least one official form. Give the species name; alternate forms count once.",
+    "source": "PokéAPI factual species/typing tables, BSD-3-Clause; Pokémon names are Nintendo trademarks. Snapshot 2026-10-22. Any official form’s type counts; forms share one canonical species.",
+    "ranking": "familiarity-v2",
+    "group": "pokemon",
+    "dailyEligible": true,
+    "answerHash": "f4c95a02cae815f89c3b02d9df221613dc15a5eae9d81d6df903c33c4e86d91d",
+    "answerCount": 87,
+    "tiers": {
+      "10": 1,
+      "30": 1,
+      "60": 15,
+      "85": 69,
+      "100": 1
+    }
+  },
+  {
+    "id": "pokemon-type-water",
+    "family": "culture",
+    "topic": "WATER-TYPE ROLL CALL",
+    "prompt": "Name a Pokémon that has Water typing in at least one official form. Give the species name; alternate forms count once.",
+    "source": "PokéAPI factual species/typing tables, BSD-3-Clause; Pokémon names are Nintendo trademarks. Snapshot 2026-10-22. Any official form’s type counts; forms share one canonical species.",
+    "ranking": "familiarity-v2",
+    "group": "pokemon",
+    "dailyEligible": true,
+    "answerHash": "0330c2f13d64bdb72ffd3904c40938071b1154b7e0f0f6898c6075758814bb35",
+    "answerCount": 159,
+    "tiers": {
+      "10": 1,
+      "30": 1,
+      "60": 33,
+      "85": 123,
+      "100": 1
+    }
+  },
+  {
+    "id": "pokemon-type-grass",
+    "family": "culture",
+    "topic": "GRASS-TYPE ROLL CALL",
+    "prompt": "Name a Pokémon that has Grass typing in at least one official form. Give the species name; alternate forms count once.",
+    "source": "PokéAPI factual species/typing tables, BSD-3-Clause; Pokémon names are Nintendo trademarks. Snapshot 2026-10-22. Any official form’s type counts; forms share one canonical species.",
+    "ranking": "familiarity-v2",
+    "group": "pokemon",
+    "dailyEligible": true,
+    "answerHash": "962173d4ec5bd7b8e3ed131c1febb9e90c6352ef1b891dacfca8276b2cebfaab",
+    "answerCount": 130,
+    "tiers": {
+      "10": 1,
+      "30": 1,
+      "60": 15,
+      "85": 112,
+      "100": 1
+    }
+  },
+  {
+    "id": "pokemon-type-electric",
+    "family": "culture",
+    "topic": "ELECTRIC-TYPE ROLL CALL",
+    "prompt": "Name a Pokémon that has Electric typing in at least one official form. Give the species name; alternate forms count once.",
+    "source": "PokéAPI factual species/typing tables, BSD-3-Clause; Pokémon names are Nintendo trademarks. Snapshot 2026-10-22. Any official form’s type counts; forms share one canonical species.",
+    "ranking": "familiarity-v2",
+    "group": "pokemon",
+    "dailyEligible": true,
+    "answerHash": "f8de470d1882d87236d462488306da2dfce81723336ef537f444522b858fa00e",
+    "answerCount": 73,
+    "tiers": {
+      "10": 1,
+      "30": 1,
+      "60": 14,
+      "85": 56,
+      "100": 1
+    }
+  },
+  {
+    "id": "pokemon-type-psychic",
+    "family": "culture",
+    "topic": "PSYCHIC-TYPE ROLL CALL",
+    "prompt": "Name a Pokémon that has Psychic typing in at least one official form. Give the species name; alternate forms count once.",
+    "source": "PokéAPI factual species/typing tables, BSD-3-Clause; Pokémon names are Nintendo trademarks. Snapshot 2026-10-22. Any official form’s type counts; forms share one canonical species.",
+    "ranking": "familiarity-v2",
+    "group": "pokemon",
+    "dailyEligible": true,
+    "answerHash": "a209ccfaf5032e95575504bb8f2783c6c4502f32f280fbc44b15e455bd82dbb6",
+    "answerCount": 109,
+    "tiers": {
+      "10": 1,
+      "30": 2,
+      "60": 19,
+      "85": 86,
+      "100": 1
+    }
+  },
+  {
+    "id": "pokemon-type-ice",
+    "family": "culture",
+    "topic": "ICE-TYPE ROLL CALL",
+    "prompt": "Name a Pokémon that has Ice typing in at least one official form. Give the species name; alternate forms count once.",
+    "source": "PokéAPI factual species/typing tables, BSD-3-Clause; Pokémon names are Nintendo trademarks. Snapshot 2026-10-22. Any official form’s type counts; forms share one canonical species.",
+    "ranking": "familiarity-v2",
+    "group": "pokemon",
+    "dailyEligible": true,
+    "answerHash": "90720c34a3cc93db79625d5c62d560b1d4b264faa6c012b5ebba6b3f0a2d8ac5",
+    "answerCount": 58,
+    "tiers": {
+      "60": 11,
+      "85": 46,
+      "100": 1
+    }
+  },
+  {
+    "id": "pokemon-type-dragon",
+    "family": "culture",
+    "topic": "DRAGON-TYPE ROLL CALL",
+    "prompt": "Name a Pokémon that has Dragon typing in at least one official form. Give the species name; alternate forms count once.",
+    "source": "PokéAPI factual species/typing tables, BSD-3-Clause; Pokémon names are Nintendo trademarks. Snapshot 2026-10-22. Any official form’s type counts; forms share one canonical species.",
+    "ranking": "familiarity-v2",
+    "group": "pokemon",
+    "dailyEligible": true,
+    "answerHash": "fbdcfe45e41ef3c2468be34db27f6456a9c100cb9e10c8c6193cf681828dd282",
+    "answerCount": 76,
+    "tiers": {
+      "10": 1,
+      "30": 1,
+      "60": 6,
+      "85": 67,
+      "100": 1
+    }
+  },
+  {
+    "id": "pokemon-type-dark",
+    "family": "culture",
+    "topic": "DARK-TYPE ROLL CALL",
+    "prompt": "Name a Pokémon that has Dark typing in at least one official form. Give the species name; alternate forms count once.",
+    "source": "PokéAPI factual species/typing tables, BSD-3-Clause; Pokémon names are Nintendo trademarks. Snapshot 2026-10-22. Any official form’s type counts; forms share one canonical species.",
+    "ranking": "familiarity-v2",
+    "group": "pokemon",
+    "dailyEligible": true,
+    "answerHash": "937bed5d1b4d034260e4c6e409386675bea6d7a4070c9a33a385ca81d4a9cd72",
+    "answerCount": 82,
+    "tiers": {
+      "60": 11,
+      "85": 70,
+      "100": 1
+    }
+  },
+  {
+    "id": "pokemon-type-fairy",
+    "family": "culture",
+    "topic": "FAIRY-TYPE ROLL CALL",
+    "prompt": "Name a Pokémon that has Fairy typing in at least one official form. Give the species name; alternate forms count once.",
+    "source": "PokéAPI factual species/typing tables, BSD-3-Clause; Pokémon names are Nintendo trademarks. Snapshot 2026-10-22. Any official form’s type counts; forms share one canonical species.",
+    "ranking": "familiarity-v2",
+    "group": "pokemon",
+    "dailyEligible": true,
+    "answerHash": "652085e882ba9ba448b546c35a4f373dbd8a472ef01f493cf35dea697ca05624",
+    "answerCount": 70,
+    "tiers": {
+      "10": 1,
+      "60": 9,
+      "85": 59,
+      "100": 1
+    }
+  },
+  {
+    "id": "pokemon-species",
+    "family": "culture",
+    "topic": "GOTTA NAME THEM",
+    "prompt": "Name a Pokémon species. Official species through the snapshot count; alternate forms count once.",
+    "source": "PokéAPI factual species/typing tables, BSD-3-Clause; Pokémon names are Nintendo trademarks. Snapshot 2026-10-22. Any official form’s type counts; forms share one canonical species.",
+    "ranking": "familiarity-v2",
+    "group": "pokemon",
+    "dailyEligible": true,
+    "answerHash": "d1725293f860f6cfcb82d364ba064da85157ec4319c150131ed6456340dd9a02",
+    "answerCount": 1025,
+    "tiers": {
+      "10": 9,
+      "30": 5,
+      "60": 155,
+      "85": 855,
+      "100": 1
+    }
+  },
+  {
+    "id": "pokemon-original-151",
+    "family": "culture",
+    "topic": "BACK TO KANTO",
+    "prompt": "Name one of the original 151 Pokémon species.",
+    "source": "PokéAPI factual species/typing tables, BSD-3-Clause; Pokémon names are Nintendo trademarks. Snapshot 2026-10-22. Any official form’s type counts; forms share one canonical species.",
+    "ranking": "familiarity-v2",
+    "group": "pokemon",
+    "dailyEligible": true,
+    "answerHash": "73004168b5c869f7c785aa7864ef7c38b498cf6b7210f95f84ff0a8b3274733a",
+    "answerCount": 151,
+    "tiers": {
+      "10": 7,
+      "60": 143,
+      "100": 1
+    }
+  },
+  {
+    "id": "pokemon-abilities",
+    "family": "culture",
+    "topic": "THE HIDDEN ADVANTAGE",
+    "prompt": "Name an official Pokémon Ability. Move names do not count.",
+    "source": "PokéAPI factual species/typing tables, BSD-3-Clause; Pokémon names are Nintendo trademarks. Snapshot 2026-10-22. Any official form’s type counts; forms share one canonical species.",
+    "ranking": "familiarity-v2",
+    "group": "pokemon",
+    "dailyEligible": true,
+    "answerHash": "cf8ae2f1fdba579a366d503395ae0dafdb01e0bc17d1180947ced98b8f0d167f",
+    "answerCount": 313,
+    "tiers": {
+      "10": 12,
+      "30": 70,
+      "60": 140,
+      "85": 90,
+      "100": 1
+    }
+  },
+  {
+    "id": "city-south-equator",
+    "family": "world",
+    "topic": "SOUTH OF THE LINE",
+    "prompt": "Name a city with at least 50,000 residents south of the Equator. City proper, not metro population.",
+    "source": "GeoNames cities15000/countryInfo, CC BY 4.0; frozen 2026-10-22. City proper population at least 50,000 in the snapshot, not metro population.",
+    "ranking": "familiarity-v2",
+    "group": "cities",
+    "dailyEligible": true,
+    "answerHash": "177c66200a42e096b80fe6beebeb58998522df331a966012d9d76af0d0e510bd",
+    "answerCount": 1733,
+    "tiers": {
+      "10": 22,
+      "30": 217,
+      "60": 1493,
+      "100": 1
+    }
+  },
+  {
+    "id": "city-tropics",
+    "family": "world",
+    "topic": "IN THE TROPICS",
+    "prompt": "Name a city with at least 50,000 residents between the Tropics of Cancer and Capricorn. City proper, not metro population.",
+    "source": "GeoNames cities15000/countryInfo, CC BY 4.0; frozen 2026-10-22. City proper population at least 50,000 in the snapshot, not metro population.",
+    "ranking": "familiarity-v2",
+    "group": "cities",
+    "dailyEligible": true,
+    "answerHash": "21f4b4d50c8e8d54f9d3f059306f5fe18c1e577ee5da3f965f402f1580a88a50",
+    "answerCount": 4235,
+    "tiers": {
+      "10": 53,
+      "30": 584,
+      "60": 3597,
+      "100": 1
+    }
+  },
+  {
+    "id": "city-north-50",
+    "family": "world",
+    "topic": "NORTHERN CITIES",
+    "prompt": "Name a city with at least 50,000 residents north of 50° north latitude. City proper, not metro population.",
+    "source": "GeoNames cities15000/countryInfo, CC BY 4.0; frozen 2026-10-22. City proper population at least 50,000 in the snapshot, not metro population.",
+    "ranking": "familiarity-v2",
+    "group": "cities",
+    "dailyEligible": true,
+    "answerHash": "90512999ea9d9529e9d66afefc51ab04c8d26c2bc01c61e8703915fc9d94dabc",
+    "answerCount": 1041,
+    "tiers": {
+      "10": 9,
+      "30": 103,
+      "60": 928,
+      "100": 1
+    }
+  },
+  {
+    "id": "city-south-30",
+    "family": "world",
+    "topic": "SOUTHERN SKIES",
+    "prompt": "Name a city with at least 50,000 residents south of 30° south latitude. City proper, not metro population.",
+    "source": "GeoNames cities15000/countryInfo, CC BY 4.0; frozen 2026-10-22. City proper population at least 50,000 in the snapshot, not metro population.",
+    "ranking": "familiarity-v2",
+    "group": "cities",
+    "dailyEligible": true,
+    "answerHash": "108561cc87ea1988c26bf83e9226ca8f8a21f8a4cbb450ba669af4be97afff79",
+    "answerCount": 221,
+    "tiers": {
+      "10": 6,
+      "30": 23,
+      "60": 191,
+      "100": 1
+    }
+  },
+  {
+    "id": "city-west-100",
+    "family": "world",
+    "topic": "WESTERN LONGITUDES",
+    "prompt": "Name a city with at least 50,000 residents west of 100° west longitude. City proper, not metro population.",
+    "source": "GeoNames cities15000/countryInfo, CC BY 4.0; frozen 2026-10-22. City proper population at least 50,000 in the snapshot, not metro population.",
+    "ranking": "familiarity-v2",
+    "group": "cities",
+    "dailyEligible": true,
+    "answerHash": "da0f9dee62a3bc11505106740338efe98df082f3706f2ba597097788adb82998",
+    "answerCount": 439,
+    "tiers": {
+      "10": 3,
+      "30": 84,
+      "60": 351,
+      "100": 1
+    }
+  },
+  {
+    "id": "city-east-120",
+    "family": "world",
+    "topic": "FAR EASTERN LONGITUDES",
+    "prompt": "Name a city with at least 50,000 residents east of 120° east longitude. City proper, not metro population.",
+    "source": "GeoNames cities15000/countryInfo, CC BY 4.0; frozen 2026-10-22. City proper population at least 50,000 in the snapshot, not metro population.",
+    "ranking": "familiarity-v2",
+    "group": "cities",
+    "dailyEligible": true,
+    "answerHash": "1cd697d015b07b0cd32a568fd7b56efb09e02134268a35cba5230042331770b7",
+    "answerCount": 1381,
+    "tiers": {
+      "10": 30,
+      "30": 200,
+      "60": 1150,
+      "100": 1
+    }
+  },
+  {
+    "id": "city-euro-cities",
+    "family": "world",
+    "topic": "WHERE THE EURO GOES",
+    "prompt": "Name a city with at least 50,000 residents in a country or territory using the euro. City proper, not metro population.",
+    "source": "GeoNames cities15000/countryInfo, CC BY 4.0; frozen 2026-10-22. City proper population at least 50,000 in the snapshot, not metro population.",
+    "ranking": "familiarity-v2",
+    "group": "cities",
+    "dailyEligible": true,
+    "answerHash": "57400c1169814530f889f29923dc5a57575fa6c5a825a8548812531ef22ab47f",
+    "answerCount": 868,
+    "tiers": {
+      "10": 3,
+      "30": 60,
+      "60": 804,
+      "100": 1
+    }
+  },
+  {
+    "id": "city-spanish-cities",
+    "family": "world",
+    "topic": "SPANISH ON THE MAP",
+    "prompt": "Name a city with at least 50,000 residents in a country listing Spanish among its official or principal languages. City proper, not metro population.",
+    "source": "GeoNames cities15000/countryInfo, CC BY 4.0; frozen 2026-10-22. City proper population at least 50,000 in the snapshot, not metro population.",
+    "ranking": "familiarity-v2",
+    "group": "cities",
+    "dailyEligible": true,
+    "answerHash": "780c94ab9616c9651dd5c89737718fc53c71580020917495af78daf1ecb2098a",
+    "answerCount": 2466,
+    "tiers": {
+      "10": 26,
+      "30": 358,
+      "60": 2081,
+      "100": 1
+    }
+  },
+  {
+    "id": "city-french-cities",
+    "family": "world",
+    "topic": "FRENCH ON THE MAP",
+    "prompt": "Name a city with at least 50,000 residents in a country listing French among its official or principal languages. City proper, not metro population.",
+    "source": "GeoNames cities15000/countryInfo, CC BY 4.0; frozen 2026-10-22. City proper population at least 50,000 in the snapshot, not metro population.",
+    "ranking": "familiarity-v2",
+    "group": "cities",
+    "dailyEligible": true,
+    "answerHash": "d4a774a8a022ca624f543ebbbec0046332eb74d995a83a01717cc1349ed845d7",
+    "answerCount": 4094,
+    "tiers": {
+      "10": 42,
+      "30": 520,
+      "60": 3531,
+      "100": 1
+    }
+  },
+  {
+    "id": "city-portuguese-cities",
+    "family": "world",
+    "topic": "PORTUGUESE ON THE MAP",
+    "prompt": "Name a city with at least 50,000 residents in a country listing Portuguese among its official or principal languages. City proper, not metro population.",
+    "source": "GeoNames cities15000/countryInfo, CC BY 4.0; frozen 2026-10-22. City proper population at least 50,000 in the snapshot, not metro population.",
+    "ranking": "familiarity-v2",
+    "group": "cities",
+    "dailyEligible": true,
+    "answerHash": "ca48b65b4a454937962dea31e0ff4474d4292045d9d81ac96cc58e169854d2bf",
+    "answerCount": 800,
+    "tiers": {
+      "10": 5,
+      "30": 94,
+      "60": 700,
+      "100": 1
+    }
+  },
+  {
+    "id": "city-continent-eu",
+    "family": "world",
+    "topic": "EUROPE ON THE MAP",
+    "prompt": "Name a city with at least 50,000 residents in Europe. City proper, not metro population.",
+    "source": "GeoNames cities15000/countryInfo, CC BY 4.0; frozen 2026-10-22. City proper population at least 50,000 in the snapshot, not metro population.",
+    "ranking": "familiarity-v2",
+    "group": "cities",
+    "dailyEligible": true,
+    "answerHash": "09c892468b81a8518abea24c675e42808835d7b3c90b874804052669c1b669e6",
+    "answerCount": 1876,
+    "tiers": {
+      "10": 11,
+      "30": 158,
+      "60": 1706,
+      "100": 1
+    }
+  },
+  {
+    "id": "city-continent-af",
+    "family": "world",
+    "topic": "AFRICA ON THE MAP",
+    "prompt": "Name a city with at least 50,000 residents in Africa. City proper, not metro population.",
+    "source": "GeoNames cities15000/countryInfo, CC BY 4.0; frozen 2026-10-22. City proper population at least 50,000 in the snapshot, not metro population.",
+    "ranking": "familiarity-v2",
+    "group": "cities",
+    "dailyEligible": true,
+    "answerHash": "71ed250cf597e92c0942ef468621923e6b0f84c294c551f8fb0478307054b520",
+    "answerCount": 1579,
+    "tiers": {
+      "10": 20,
+      "30": 218,
+      "60": 1340,
+      "100": 1
+    }
+  },
+  {
+    "id": "city-continent-as",
+    "family": "world",
+    "topic": "ASIA ON THE MAP",
+    "prompt": "Name a city with at least 50,000 residents in Asia. City proper, not metro population.",
+    "source": "GeoNames cities15000/countryInfo, CC BY 4.0; frozen 2026-10-22. City proper population at least 50,000 in the snapshot, not metro population.",
+    "ranking": "familiarity-v2",
+    "group": "cities",
+    "dailyEligible": true,
+    "answerHash": "f9b1a65ea91cb11e4092ff1667a2f0b5b3acc2081cf33138c468c4b908ad3fb8",
+    "answerCount": 5313,
+    "tiers": {
+      "10": 112,
+      "30": 811,
+      "60": 4389,
+      "100": 1
+    }
+  },
+  {
+    "id": "city-continent-sa",
+    "family": "world",
+    "topic": "SOUTH AMERICA ON THE MAP",
+    "prompt": "Name a city with at least 50,000 residents in South America. City proper, not metro population.",
+    "source": "GeoNames cities15000/countryInfo, CC BY 4.0; frozen 2026-10-22. City proper population at least 50,000 in the snapshot, not metro population.",
+    "ranking": "familiarity-v2",
+    "group": "cities",
+    "dailyEligible": true,
+    "answerHash": "9928a61c6a0dba9977e30a61115af38736e66373f6f672190db3faf4c82944b5",
+    "answerCount": 1148,
+    "tiers": {
+      "10": 11,
+      "30": 124,
+      "60": 1012,
+      "100": 1
+    }
+  },
+  {
+    "id": "city-continent-na",
+    "family": "world",
+    "topic": "NORTH AMERICA, INCLUDING CENTRAL AMERICA AND THE CARIBBEAN ON THE MAP",
+    "prompt": "Name a city with at least 50,000 residents in North America, including Central America and the Caribbean. City proper, not metro population.",
+    "source": "GeoNames cities15000/countryInfo, CC BY 4.0; frozen 2026-10-22. City proper population at least 50,000 in the snapshot, not metro population.",
+    "ranking": "familiarity-v2",
+    "group": "cities",
+    "dailyEligible": true,
+    "answerHash": "fc3307a47a7d0583efbb9ccbd227deac69c9e7abd1c769e5372533346fb34a03",
+    "answerCount": 1350,
+    "tiers": {
+      "10": 16,
+      "30": 260,
+      "60": 1073,
+      "100": 1
+    }
+  },
+  {
+    "id": "city-continent-oc",
+    "family": "world",
+    "topic": "OCEANIA ON THE MAP",
+    "prompt": "Name a city with at least 50,000 residents in Oceania. City proper, not metro population.",
+    "source": "GeoNames cities15000/countryInfo, CC BY 4.0; frozen 2026-10-22. City proper population at least 50,000 in the snapshot, not metro population.",
+    "ranking": "familiarity-v2",
+    "group": "cities",
+    "dailyEligible": true,
+    "answerHash": "e0ce96b16e7c1f2e52a15213c18722dfddfa2aa29af5e3fb07d52530e9a32081",
+    "answerCount": 60,
+    "tiers": {
+      "10": 3,
+      "30": 11,
+      "60": 45,
+      "100": 1
+    }
+  },
+  {
+    "id": "country-neighbours",
+    "family": "world",
+    "topic": "NEIGHBOURS ON LAND",
+    "prompt": "Name a sovereign country with at least one land-border neighbour.",
+    "source": "GeoNames countryInfo and Corpora sovereign-country list; frozen snapshot. Country names/aliases merged.",
+    "ranking": "familiarity-v2",
+    "group": "countries",
+    "dailyEligible": true,
+    "answerHash": "b4af3ca9f2b800d694dae91ff2863addb2edacc89ae37305723ff712be2aca24",
+    "answerCount": 183,
+    "tiers": {
+      "10": 3,
+      "30": 44,
+      "60": 108,
+      "85": 27,
+      "100": 1
+    }
+  },
+  {
+    "id": "country-western-languages",
+    "family": "world",
+    "topic": "A LINGUISTIC MAP",
+    "prompt": "Name a country listing English, French, Spanish, or Portuguese among its principal languages.",
+    "source": "GeoNames countryInfo and Corpora sovereign-country list; frozen snapshot. Country names/aliases merged.",
+    "ranking": "familiarity-v2",
+    "group": "countries",
+    "dailyEligible": true,
+    "answerHash": "dabd1b4ea80259302379e1181f50cabc963d4a66a85cc059047358aa2bb9d690",
+    "answerCount": 129,
+    "tiers": {
+      "10": 2,
+      "30": 30,
+      "60": 75,
+      "85": 21,
+      "100": 1
+    }
+  },
+  {
+    "id": "country-multi-neighbours",
+    "family": "world",
+    "topic": "THREE OR MORE NEIGHBOURS",
+    "prompt": "Name a country with at least three land-border neighbours.",
+    "source": "GeoNames countryInfo and Corpora sovereign-country list; frozen snapshot. Country names/aliases merged.",
+    "ranking": "familiarity-v2",
+    "group": "countries",
+    "dailyEligible": true,
+    "answerHash": "2f6e7e7cc36f9b080003e568034e8a0ce81a3ae69b47e565a278e8bfe5665720",
+    "answerCount": 110,
+    "tiers": {
+      "10": 2,
+      "30": 33,
+      "60": 64,
+      "85": 10,
+      "100": 1
+    }
+  },
+  {
+    "id": "country-own-currency",
+    "family": "world",
+    "topic": "COINS OF THE REALM",
+    "prompt": "Name a country using a currency other than the euro or US dollar.",
+    "source": "GeoNames countryInfo and Corpora sovereign-country list; frozen snapshot. Country names/aliases merged.",
+    "ranking": "familiarity-v2",
+    "group": "countries",
+    "dailyEligible": true,
+    "answerHash": "efaba5613bc868a243bd9191316ec3b67eba6ffcde270eb80026feb586fbdd89",
+    "answerCount": 153,
+    "tiers": {
+      "10": 3,
+      "30": 35,
+      "60": 90,
+      "85": 24,
+      "100": 1
+    }
+  },
+  {
+    "id": "world-capitals",
+    "family": "world",
+    "topic": "SEAT OF GOVERNMENT",
+    "prompt": "Name a national capital city.",
+    "source": "GeoNames countryInfo; national capitals in the frozen country inventory.",
+    "ranking": "familiarity-v2",
+    "group": "capitals",
+    "dailyEligible": true,
+    "answerHash": "99ea499fa3b488cf9b71fe243a7d57da270f82e9c09356c4984ac6fe227403e9",
+    "answerCount": 183,
+    "tiers": {
+      "10": 5,
+      "30": 11,
+      "60": 63,
+      "85": 103,
+      "100": 1
+    }
+  },
+  {
+    "id": "animal-mammals",
+    "family": "nature",
+    "topic": "FUR, MILK, AND RARE ANSWERS",
+    "prompt": "Name a kind of mammal. Named groups and species, living or extinct, count; a common or scientific name is accepted.",
+    "source": "Wikidata taxon hierarchy, CC0; English common-name records under Q7377. Scientific synonyms are aliases. Snapshot 2026-10-22.",
+    "ranking": "familiarity-v2",
+    "group": "animal-mammals",
+    "dailyEligible": true,
+    "answerHash": "49c1c8d6af1d40c6a093906b27326464a4f991af3beac9f1029e7b27ada8744e",
+    "answerCount": 5481,
+    "tiers": {
+      "30": 81,
+      "60": 1201,
+      "85": 4198,
+      "100": 1
+    }
+  },
+  {
+    "id": "animal-marsupials",
+    "family": "nature",
+    "topic": "POUCH-BEARING LINEAGES",
+    "prompt": "Name a kind of marsupial. Named groups and species, living or extinct, count; a common or scientific name is accepted.",
+    "source": "Wikidata taxon hierarchy, CC0; English common-name records under Q25336. Scientific synonyms are aliases. Snapshot 2026-10-22.",
+    "ranking": "familiarity-v2",
+    "group": "animal-marsupials",
+    "dailyEligible": true,
+    "answerHash": "dc2eb47a559e4d69250b9959d6686fa2682e7d3db5ccf368eb6f90278c62dc17",
+    "answerCount": 194,
+    "tiers": {
+      "60": 8,
+      "85": 185,
+      "100": 1
+    }
+  },
+  {
+    "id": "animal-primates",
+    "family": "nature",
+    "topic": "OUR BRANCH OF THE TREE",
+    "prompt": "Name a kind of primate. Named groups and species, living or extinct, count; a common or scientific name is accepted.",
+    "source": "Wikidata taxon hierarchy, CC0; English common-name records under Q7380. Scientific synonyms are aliases. Snapshot 2026-10-22.",
+    "ranking": "familiarity-v2",
+    "group": "animal-primates",
+    "dailyEligible": true,
+    "answerHash": "b10e03a1e4579c7a55f4a9562bee2e26cb81f561f7c1aac5500f04143bcbd956",
+    "answerCount": 485,
+    "tiers": {
+      "30": 1,
+      "60": 78,
+      "85": 405,
+      "100": 1
+    }
+  },
+  {
+    "id": "animal-bats",
+    "family": "nature",
+    "topic": "WINGS AFTER DARK",
+    "prompt": "Name a kind of bat. Named groups and species, living or extinct, count; a common or scientific name is accepted.",
+    "source": "Wikidata taxon hierarchy, CC0; English common-name records under Q28425. Scientific synonyms are aliases. Snapshot 2026-10-22.",
+    "ranking": "familiarity-v2",
+    "group": "animal-bats",
+    "dailyEligible": true,
+    "answerHash": "761ba75879f7b9e736b3b2114248e5f1b7729a4b42896ea1827d406ae484c490",
+    "answerCount": 851,
+    "tiers": {
+      "30": 18,
+      "60": 168,
+      "85": 664,
+      "100": 1
+    }
+  },
+  {
+    "id": "animal-rodents",
+    "family": "nature",
+    "topic": "THE GNAWING ORDER",
+    "prompt": "Name a kind of rodent. Named groups and species, living or extinct, count; a common or scientific name is accepted.",
+    "source": "Wikidata taxon hierarchy, CC0; English common-name records under Q10850. Scientific synonyms are aliases. Snapshot 2026-10-22.",
+    "ranking": "familiarity-v2",
+    "group": "animal-rodents",
+    "dailyEligible": true,
+    "answerHash": "1c86905e0532c85b59e19749fe9b8edc39a8747527ea9b6874c5d52330b43e5a",
+    "answerCount": 2082,
+    "tiers": {
+      "30": 25,
+      "60": 392,
+      "85": 1664,
+      "100": 1
+    }
+  },
+  {
+    "id": "animal-snakes",
+    "family": "nature",
+    "topic": "SCALES WITHOUT LEGS",
+    "prompt": "Name a kind of snake. Named groups and species, living or extinct, count; a common or scientific name is accepted.",
+    "source": "Wikidata taxon hierarchy, CC0; English common-name records under Q25537662. Scientific synonyms are aliases. Snapshot 2026-10-22.",
+    "ranking": "familiarity-v2",
+    "group": "animal-snakes",
+    "dailyEligible": true,
+    "answerHash": "e9f57a34ff2d2bb705fe5683724555289967bc358b5d86750610793d4d1e3a32",
+    "answerCount": 635,
+    "tiers": {
+      "30": 14,
+      "60": 159,
+      "85": 461,
+      "100": 1
+    }
+  },
+  {
+    "id": "animal-salamanders",
+    "family": "nature",
+    "topic": "NEWTS AND THEIR RELATIVES",
+    "prompt": "Name a kind of salamander or newt. Named groups and species, living or extinct, count; a common or scientific name is accepted.",
+    "source": "Wikidata taxon hierarchy, CC0; English common-name records under Q53663. Scientific synonyms are aliases. Snapshot 2026-10-22.",
+    "ranking": "familiarity-v2",
+    "group": "animal-salamanders",
+    "dailyEligible": true,
+    "answerHash": "46645f052af114005dfa7aaf67240acb0f37cf4d9f3018988a7cf0df7ca1d8d8",
+    "answerCount": 383,
+    "tiers": {
+      "60": 15,
+      "85": 367,
+      "100": 1
+    }
+  },
+  {
+    "id": "animal-frogs",
+    "family": "nature",
+    "topic": "FROGS AND TOADS",
+    "prompt": "Name a kind of frog or toad. Named groups and species, living or extinct, count; a common or scientific name is accepted.",
+    "source": "Wikidata taxon hierarchy, CC0; English common-name records under Q53636. Scientific synonyms are aliases. Snapshot 2026-10-22.",
+    "ranking": "familiarity-v2",
+    "group": "animal-frogs",
+    "dailyEligible": true,
+    "answerHash": "7a83e43595c2c3c0aa31ae3121772d61c90d70c2969cdf1be3ae2fdb454a6453",
+    "answerCount": 1204,
+    "tiers": {
+      "60": 274,
+      "85": 929,
+      "100": 1
+    }
+  },
+  {
+    "id": "animal-sharks",
+    "family": "nature",
+    "topic": "CARTILAGE AND TEETH",
+    "prompt": "Name a kind of shark. Named groups and species, living or extinct, count; a common or scientific name is accepted.",
+    "source": "Wikidata taxon hierarchy, CC0; English common-name records under Q7372. Scientific synonyms are aliases. Snapshot 2026-10-22.",
+    "ranking": "familiarity-v2",
+    "group": "animal-sharks",
+    "dailyEligible": true,
+    "answerHash": "aa5c3f42979e1174c58279590361e7b1e1390a8557e7e7f1a8ef9284c0fb9846",
+    "answerCount": 418,
+    "tiers": {
+      "60": 56,
+      "85": 361,
+      "100": 1
+    }
+  },
+  {
+    "id": "award-oscar-animation",
+    "family": "culture",
+    "topic": "ANIMATED ON THE BALLOT",
+    "prompt": "Name a film nominated for the Academy Award for Best Animated Feature. Winners count too. Through the source snapshot of October 2026.",
+    "source": "Wikidata award/nomination statements, CC0; works/people restricted to the appropriate entity type. Query Q106800 recorded in sources/award-oscar-animation.json.",
+    "ranking": "familiarity-v2",
+    "group": "award-oscars",
+    "dailyEligible": true,
+    "answerHash": "df9cebc1bfeeb5c56f763c1166471131211f706a6ef7d12575c977d314ae3c97",
+    "answerCount": 109,
+    "tiers": {
+      "10": 5,
+      "30": 24,
+      "60": 61,
+      "85": 18,
+      "100": 1
+    }
+  },
+  {
+    "id": "award-oscar-international",
+    "family": "culture",
+    "topic": "WORLD CINEMA’S BALLOT",
+    "prompt": "Name a film nominated for the Academy Award for Best International Feature Film (formerly Best Foreign Language Film). Winners count too. Through the source snapshot of October 2026.",
+    "source": "Wikidata award/nomination statements, CC0; works/people restricted to the appropriate entity type. Query Q105304 recorded in sources/award-oscar-international.json.",
+    "ranking": "familiarity-v2",
+    "group": "award-oscars",
+    "dailyEligible": true,
+    "answerHash": "ba892e35e48c5f03e71a4437267123a8f7e60343ae5f8edc1c1817f9e9b03c7c",
+    "answerCount": 338,
+    "tiers": {
+      "10": 29,
+      "30": 92,
+      "60": 101,
+      "85": 115,
+      "100": 1
+    }
+  },
+  {
+    "id": "award-oscar-documentary",
+    "family": "culture",
+    "topic": "DOCUMENTING THE BALLOT",
+    "prompt": "Name a film nominated for the Academy Award for Best Documentary Feature. Winners count too. Through the source snapshot of October 2026.",
+    "source": "Wikidata award/nomination statements, CC0; works/people restricted to the appropriate entity type. Query Q111332 recorded in sources/award-oscar-documentary.json.",
+    "ranking": "familiarity-v2",
+    "group": "award-oscars",
+    "dailyEligible": true,
+    "answerHash": "ca811f57ff7609a9b020ba4ac38a95aa47ad66966bdcb251cf1878c6c588eef9",
+    "answerCount": 383,
+    "tiers": {
+      "10": 21,
+      "30": 134,
+      "60": 136,
+      "85": 91,
+      "100": 1
+    }
+  },
+  {
+    "id": "award-oscar-effects",
+    "family": "culture",
+    "topic": "IMPOSSIBLE IMAGES",
+    "prompt": "Name a film nominated for the Academy Award for Best Visual Effects. Winners count too. Through the source snapshot of October 2026.",
+    "source": "Wikidata award/nomination statements, CC0; works/people restricted to the appropriate entity type. Query Q393686 recorded in sources/award-oscar-effects.json.",
+    "ranking": "familiarity-v2",
+    "group": "award-oscars",
+    "dailyEligible": true,
+    "answerHash": "35cd245f0ec35e14fd5da3e5f21913771e0a8798c3d4cf961993be4d0e9d740d",
+    "answerCount": 174,
+    "tiers": {
+      "10": 4,
+      "30": 46,
+      "60": 115,
+      "85": 8,
+      "100": 1
+    }
+  },
+  {
+    "id": "award-oscar-cinematography",
+    "family": "culture",
+    "topic": "THROUGH THE LENS",
+    "prompt": "Name a film nominated for the Academy Award for Best Cinematography. Winners count too. Through the source snapshot of October 2026.",
+    "source": "Wikidata award/nomination statements, CC0; works/people restricted to the appropriate entity type. Query Q131520 recorded in sources/award-oscar-cinematography.json.",
+    "ranking": "familiarity-v2",
+    "group": "award-oscars",
+    "dailyEligible": true,
+    "answerHash": "ad4fc44962488833058bc362e69798ba06ba6586fea35d22a906dd2ac196cd7b",
+    "answerCount": 344,
+    "tiers": {
+      "10": 22,
+      "30": 97,
+      "60": 171,
+      "85": 53,
+      "100": 1
+    }
+  },
+  {
+    "id": "award-oscar-editing",
+    "family": "culture",
+    "topic": "MAKING THE CUT",
+    "prompt": "Name a film nominated for the Academy Award for Best Film Editing. Winners count too. Through the source snapshot of October 2026.",
+    "source": "Wikidata award/nomination statements, CC0; works/people restricted to the appropriate entity type. Query Q281939 recorded in sources/award-oscar-editing.json.",
+    "ranking": "familiarity-v2",
+    "group": "award-oscars",
+    "dailyEligible": true,
+    "answerHash": "865854f392fe5d42cc0485aa9f470a1896d8964e24c5821c1aa2e3f0c98f9196",
+    "answerCount": 453,
+    "tiers": {
+      "10": 36,
+      "30": 143,
+      "60": 224,
+      "85": 49,
+      "100": 1
+    }
+  },
+  {
+    "id": "award-oscar-costumes",
+    "family": "culture",
+    "topic": "DRESSED FOR THE OSCARS",
+    "prompt": "Name a film nominated for the Academy Award for Best Costume Design. Winners count too. Through the source snapshot of October 2026.",
+    "source": "Wikidata award/nomination statements, CC0; works/people restricted to the appropriate entity type. Query Q277536 recorded in sources/award-oscar-costumes.json.",
+    "ranking": "familiarity-v2",
+    "group": "award-oscars",
+    "dailyEligible": true,
+    "answerHash": "e6e2f883775fc82864611acf4c3c73caf725785c24fd473fb36ceb2cc9836d14",
+    "answerCount": 303,
+    "tiers": {
+      "10": 12,
+      "30": 76,
+      "60": 164,
+      "85": 50,
+      "100": 1
+    }
+  },
+  {
+    "id": "award-grammy-album",
+    "family": "culture",
+    "topic": "ALBUM OF THE YEAR BALLOT",
+    "prompt": "Name an album nominated for the Grammy Award for Album of the Year. Winners count too. Through the source snapshot of October 2026.",
+    "source": "Wikidata award/nomination statements, CC0; works/people restricted to the appropriate entity type. Query Q904528 recorded in sources/award-grammy-album.json.",
+    "ranking": "familiarity-v2",
+    "group": "award-grammy-album",
+    "dailyEligible": true,
+    "answerHash": "cb431c925db6fce7691ab928e3ffa454de0d9135bb864a1eb0aa82e89e8aac24",
+    "answerCount": 120,
+    "tiers": {
+      "10": 18,
+      "30": 22,
+      "60": 44,
+      "85": 35,
+      "100": 1
+    }
+  }
+]

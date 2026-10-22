@@ -1,10 +1,11 @@
-import { PACKS, PLAY_PACKS } from './data.js';
+import { PACKS, PLAY_PACKS, ORIGINAL_PLAY_PACKS, answerCount } from './data.js';
 export const normalize = value => String(value??'').normalize('NFKD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9+#]/g,'');
 export function hash(text){let n=2166136261;for(const c of text){n^=c.charCodeAt(0);n=Math.imul(n,16777619);}return n>>>0;}
 export function random(seed){return()=>{seed+=0x6D2B79F5;let t=seed;t=Math.imul(t^t>>>15,t|1);t^=t+Math.imul(t^t>>>7,t|61);return((t^t>>>14)>>>0)/4294967296;};}
 export function shuffle(items,rng=Math.random){const a=[...items];for(let i=a.length-1;i>0;i--){const j=Math.floor(rng()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
 export function dateKey(date=new Date()){const parts=new Intl.DateTimeFormat('en-US',{timeZone:'America/New_York',year:'numeric',month:'2-digit',day:'2-digit'}).formatToParts(date);return ['year','month','day'].map(k=>parts.find(p=>p.type===k).value).join('-');}
 export const DAILY_FAMILIES=['words','nature','food','science','culture','world','everyday'];
+export const EXPANDED_DAILY_START='2026-10-23';
 function familyCycle(family,cycle,pool){
  // A stable first item anchors each cycle. Interior order changes by cycle;
  // the last item can never equal the next cycle's first item.
@@ -15,7 +16,7 @@ export function dailyPacks(day=dateKey()){
  const ordinal=Math.floor(Date.parse(day+'T12:00:00Z')/86400000);
  if(!Number.isFinite(ordinal))throw Error('Invalid daily date.');
  const chosen=DAILY_FAMILIES.map(family=>{
-  const pool=PLAY_PACKS.filter(p=>p.family===family);if(!pool.length)throw Error('Missing daily family: '+family);
+  const pool=(day<EXPANDED_DAILY_START?ORIGINAL_PLAY_PACKS:PLAY_PACKS).filter(p=>p.family===family);if(!pool.length)throw Error('Missing daily family: '+family);
   const offset=hash(family)%pool.length,index=ordinal+offset,cycle=Math.floor(index/pool.length);
   return familyCycle(family,cycle,pool)[index%pool.length];
  });
@@ -82,7 +83,21 @@ export function matchAnswer(pack,input){
  return {...ordered[0].answer,corrected:true};
 }
 
-export function newParty(players,rng=Math.random){return {phase:'lobby',players:players.map(p=>({...p,hearts:2,meter:0,score:0,connected:true})),turn:0,round:0,packIds:shuffle(PLAY_PACKS.filter(p=>p.answers.length>=18),rng).map(p=>p.id),used:[],log:[],settings:{lives:2,maxLives:5,meterTarget:600,minTurnMs:8000,fuseMinMs:10000,fuseMaxMs:30000,maxPlayers:6},notice:'The court is assembling.',deadline:0,startedAt:0,revision:0};}
+export function partyDeck(rng=Math.random){
+ const groups=new Map();
+ for(const p of shuffle(PLAY_PACKS.filter(p=>answerCount(p)>=18),rng)){const key=p.group??p.id;if(!groups.has(key))groups.set(key,[]);groups.get(key).push(p);}
+ const ordered=[];let previous,total=[...groups.values()].reduce((n,g)=>n+g.length,0);
+ while(total){
+  let candidates=[...groups].filter(([key,g])=>g.length&&key!==previous);
+  const feasible=candidates.filter(([key])=>[...groups].every(([other,g])=>g.length-(other===key?1:0)<=(other===key?Math.floor((total-1)/2):Math.ceil((total-1)/2))));
+  if(feasible.length)candidates=feasible;if(!candidates.length)candidates=[...groups].filter(([,g])=>g.length);
+  let roll=rng()*candidates.reduce((n,[,g])=>n+g.length,0),chosen=candidates.at(-1);
+  for(const candidate of candidates){roll-=candidate[1].length;if(roll<0){chosen=candidate;break;}}
+  previous=chosen[0];ordered.push(chosen[1].pop().id);total--;
+ }
+ return ordered;
+}
+export function newParty(players,rng=Math.random){return {phase:'lobby',players:players.map(p=>({...p,hearts:2,meter:0,score:0,connected:true})),turn:0,round:0,packIds:partyDeck(rng),used:[],log:[],settings:{lives:2,maxLives:5,meterTarget:600,minTurnMs:8000,fuseMinMs:10000,fuseMaxMs:30000,maxPlayers:6},notice:'The court is assembling.',deadline:0,startedAt:0,revision:0};}
 export const partyPack=s=>PACKS.find(p=>p.id===s.packIds[(Math.max(s.round,1)-1)%s.packIds.length]);
 function alive(s){return s.players.filter(p=>p.connected&&p.hearts>0);}
 function nextTurn(s){for(let n=1;n<=s.players.length;n++){const i=(s.turn+n)%s.players.length;if(s.players[i].connected&&s.players[i].hearts>0){s.turn=i;return;}}}

@@ -30,11 +30,11 @@ Realtime Database contains a Google-only public directory and per-room metadata,
 
 Private rooms are omitted from the public directory. A room's code is an invite code, not a password. Google-authenticated people who know it may join. A stale directory entry stops appearing after 45 seconds. Stored room records do not automatically expire; the privacy notice states this explicitly.
 
-`cloud.bundle.js` is loaded only when a signed-in user requests multiplayer. Daily and Endless do not load Firebase. The canvas ocean is suspended behind the dedicated party arena. Input drafts survive roster, chat and turn updates. Animations respect reduced-motion settings.
+`cloud.bundle.js` is loaded only when a signed-in user requests multiplayer. Daily and Endless do not load Firebase. The shared 221-category deck is assembled from metadata; answer data is loaded before room entry. Room metadata includes the catalogue build so updated clients can explain a version mismatch. Host state writes send changed top-level fields instead of resending the entire category deck on every answer. The canvas ocean is suspended behind the dedicated party arena. Input drafts survive roster, chat and turn updates. Animations respect reduced-motion settings.
 
 ## Validation
 
-- `npm test`: 62 checks, including core games, Google token validation, new party rules, typing ahead, escaped names, and chat drafts.
+- `npm test`: 70 checks, including core games, Google token validation, party rules, typing ahead, escaped names, chat drafts, the 221-category deck, lazy answer data and category integrity.
 - `tests/database-security.mjs`: 33 checks against the actual Firebase Realtime Database emulator, covering unauthenticated/non-Google denial, UID ownership, host-only state, request privacy, chat impersonation/cooldown, private listings host migration, player removal and absence of repeated writes after removal.
 - `tests/party-network.mjs`: three distinct emulator Google-provider identities exercising hosting, host rules, countdown, accepted answers, canonical duplicate rejection, spectator entry, chat delivery, private-directory removal, pop/victory, rematch host migration, player removal and absence of repeated writes after removal.
 - `npm audit --omit=dev`: zero runtime dependency findings after the gRPC override. The cloud bundle includes only App, Auth and Realtime Database.
