@@ -100,7 +100,7 @@ export class Ocean {
   const c=this.ctx,W=this.w,H=this.h,right=W-(W<600?14:24);c.save();
   // World-bound ticks visibly pass the fixed YOU marker during each descent.
   c.fillStyle='#a5c5d944';c.fillRect(right,96,1,H-236);c.font='11px VT,monospace';c.textAlign='right';
-  for(let d=0;d<=7500;d+=50){const y=depthScreenY(d,this.camera,H);if(y<100||y>H-145)continue;const major=d%100===0;c.fillStyle=major?'#a5c5d970':'#a5c5d936';c.fillRect(right-(major?12:5),Math.round(y),major?12:5,1);if(major)c.fillText(d.toLocaleString()+'m',right-17,Math.round(y)+4);}
+  for(let d=0;d<=7500;d+=50){const y=depthScreenY(d,this.camera,H);if(y<100||y>H-145)continue;const major=d%100===0;c.fillStyle=major?'#a5c5d970':'#a5c5d936';c.fillRect(right-(major?12:5),Math.round(y),major?12:5,1);if(major&&Math.abs(y-H*.4)>18)c.fillText(d.toLocaleString()+'m',right-17,Math.round(y)+4);}
   c.fillStyle='#ec8faf';c.fillRect(right-15,Math.round(H*.4),15,1);c.fillText('YOU',right-20,Math.round(H*.4)+4);
   c.font=(W<600?'10':'12')+'px VT,monospace';
   for(const mark of LANDMARKS){const y=depthScreenY(mark.at,this.camera,H);if(y<120||y>H-160)continue;const x=mark.side?W*.81:W*.16;c.textAlign=mark.side?'right':'left';c.fillStyle='#8bb4c980';c.fillText((mark.side?'':'──  ')+mark.text+(mark.side?'  ──':''),x,Math.round(y));}

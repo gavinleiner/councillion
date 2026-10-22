@@ -1418,7 +1418,7 @@
         const major = d % 100 === 0;
         c.fillStyle = major ? "#a5c5d970" : "#a5c5d936";
         c.fillRect(right - (major ? 12 : 5), Math.round(y), major ? 12 : 5, 1);
-        if (major) c.fillText(d.toLocaleString() + "m", right - 17, Math.round(y) + 4);
+        if (major && Math.abs(y - H * 0.4) > 18) c.fillText(d.toLocaleString() + "m", right - 17, Math.round(y) + 4);
       }
       c.fillStyle = "#ec8faf";
       c.fillRect(right - 15, Math.round(H * 0.4), 15, 1);
@@ -2276,7 +2276,7 @@ Wi-Fi`
   function home() {
     screen("home");
     const day = dateKey(), stored = read("daily:" + day, null), done = stored?.stage === "done";
-    app.innerHTML = `<section class="hero"><p class="eyebrow">FUTURE COUNSEL PRESENTS</p><h1 class="brand-title">${[..."COUNCILLION"].map((c, i) => `<span style="--letter:${i}">${c}</span>`).join("")}</h1><p class="subtitle">THE DAILY DIVE</p><p class="hero-copy">7 prompts \xB7 25 seconds each \xB7 rarer answers sink deeper</p></section><section class="home-panel"><div class="banner"><span>DAILY DIVE \xB7 ${esc5(day)}</span><span id="reset-clock"></span></div><button class="pixel-button home-party" data-action="party">${puffer()}<span>PUFFER PARTY<small>Play with your friends</small></span><b>\u2197</b></button>${button("daily", done ? "VIEW TODAY\u2019S DIVE \u2197" : stored ? "CONTINUE DESCENT \u25BC" : "BEGIN DESCENT \u25BC", "primary")}<div class="surface-secondary"><button class="text-button" data-action="endless">\u221E ENDLESS CASES</button><button class="text-button" data-action="help">? HOW TO PLAY</button></div><p class="endless-tagline">16 case reviews. Four choices. Five right in a row.</p><p class="surface-signoff"><a href="https://futurecounsel.org/" target="_blank" rel="noopener">FUTURE COUNSEL</a><span>one in a councillion.</span></p></section>`;
+    app.innerHTML = `<section class="hero"><p class="eyebrow">FUTURE COUNSEL PRESENTS</p><h1 class="brand-title" aria-label="Councillion">${[..."COUNCILLION"].map((c, i) => `<span aria-hidden="true" style="--letter:${i}">${c}</span>`).join("")}</h1><p class="subtitle">THE DAILY DIVE</p><p class="hero-copy">7 prompts \xB7 25 seconds each \xB7 rarer answers sink deeper</p></section><section class="home-panel"><div class="banner"><span>DAILY DIVE \xB7 ${esc5(day)}</span><span id="reset-clock"></span></div><button class="pixel-button home-party" data-action="party">${puffer()}<span>PUFFER PARTY<small>Play with your friends</small></span><b>\u2197</b></button>${button("daily", done ? "VIEW TODAY\u2019S DIVE \u2197" : stored ? "CONTINUE DESCENT \u25BC" : "BEGIN DESCENT \u25BC", "primary")}<div class="surface-secondary"><button class="text-button" data-action="endless">\u221E ENDLESS CASES</button><button class="text-button" data-action="help">? HOW TO PLAY</button></div><p class="endless-tagline">16 case reviews. Four choices. Five right in a row.</p><p class="surface-signoff"><a href="https://futurecounsel.org/" target="_blank" rel="noopener">FUTURE COUNSEL</a><span>one in a councillion.</span></p></section>`;
     updateClock();
   }
   function showBank(id = quizPack()?.id) {
