@@ -8,7 +8,7 @@ export async function loadCatalogAnswers(){
  const asset='./question-answers.bundle.js?v='+version;
  return pending??=import(asset).then(module=>{if(module.CATALOG_ANSWER_BUILD!==version)throw Error('Question update is still arriving. Reload in a moment.');pool=module.ANSWER_ROWS;},error=>{pending=null;throw Error('Could not load the answer banks. Check your connection and try again.',{cause:error});});
 }
-export function catalogBuild(){return version+'-'+funBuild()+'-match4';}
+export function catalogBuild(){return version+'-'+funBuild()+'-fresh5';}
 export function createCatalog(rows,build){
  version=build;
  return rows.map(([meta,ids])=>{let answers;return Object.defineProperty({...meta,catalogVersion:3},'answers',{enumerable:true,get(){

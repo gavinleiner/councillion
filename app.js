@@ -58,6 +58,7 @@ async function startQuiz(mode){
  if(mode==='practice'&&restorePractice&&['localhost','127.0.0.1'].includes(location.hostname)){try{pendingQuiz=JSON.parse(sessionStorage.getItem('fc:live-practice'));if(featured&&pendingQuiz?.ids[0]!==featured.id)pendingQuiz=null;resumedLive=!!pendingQuiz;}catch{}}
  if(!pendingQuiz||!Array.isArray(pendingQuiz.ids)||pendingQuiz.ids.some(id=>!PACKS.some(p=>p.id===id))){
   let ids;if(mode==='daily')ids=dailyPacks(day).map(p=>p.id);else{const draw=practiceDraw(read('practice:queue',[]),featured?.id);ids=draw.ids;practiceRemainder=draw.remaining;}
+  if(ids.length<7){screen('questions');app.innerHTML='<section class="question-loading"><h1>FRESH QUESTIONS ARE BEING PREPARED</h1><p>You have reached the end of the published daily schedule. Earlier questions will not repeat.</p><a href="#questions">EXPLORE THE LIBRARY ↗</a></section>';return;}
   pendingQuiz={mode,day,ids,round:0,results:[],stage:'intro'};fresh=true;
  }
  if(!await prepareQuestionData(mode,pendingQuiz.ids.map(id=>PACKS.find(p=>p.id===id)))||epoch!==navigationEpoch)return;

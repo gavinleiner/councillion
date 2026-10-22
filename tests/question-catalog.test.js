@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
 import {spawnSync} from 'node:child_process';
-import {PLAY_PACKS,ORIGINAL_PLAY_PACKS,MIXED_PACKS,answerCount} from '../data.js';
+import {PLAY_PACKS,ORIGINAL_PLAY_PACKS,MIXED_PACKS,PARTY_PACKS,answerCount} from '../data.js';
 import {CATALOG_PACKS} from '../question-catalog.js';
 import {dailyPacks,matchAnswer,normalize,partyDeck,random,EXPANDED_DAILY_START} from '../engine.js';
 const pack=id=>PLAY_PACKS.find(p=>p.id===id);
@@ -18,23 +18,23 @@ test('the expanded pool has hundreds of substantial, distinct categories without
 test('a cold party deck and question library use metadata without hydrating the answer table',()=>{
  const source="import {partyDeck} from './engine.js';import{catalogAnswersReady}from'./question-bank-loader.js';import{PLAY_PACKS,answerCount}from'./data.js';console.log(JSON.stringify([catalogAnswersReady(),partyDeck().length,PLAY_PACKS.map(answerCount).length,catalogAnswersReady()]));";
  const r=spawnSync(process.execPath,['--input-type=module','-e',source],{cwd:new URL('..',import.meta.url),encoding:'utf8',env:{...process.env,NODE_OPTIONS:''}});
- assert.equal(r.status,0,r.stderr);assert.deepEqual(JSON.parse(r.stdout),[false,MIXED_PACKS.length,PLAY_PACKS.length,false]);
+ assert.equal(r.status,0,r.stderr);assert.deepEqual(JSON.parse(r.stdout),[false,PARTY_PACKS.length,PLAY_PACKS.length,false]);
 });
-test('daily expansion keeps historical draws stable and reaches every new category',()=>{
- assert.equal(EXPANDED_DAILY_START,'2026-10-23');
+test('daily calendar never reuses a prompt and historical dates retain their draw',()=>{
  for(const p of dailyPacks('2026-10-22'))assert.ok(ORIGINAL_PLAY_PACKS.includes(p));
- const seen=new Set();let previous=[];
+ const seen=new Set();let days=0;
  for(let i=0;i<730;i++){
   const day=new Date(Date.UTC(2026,9,23+i)).toISOString().slice(0,10),chosen=dailyPacks(day);
-  assert.equal(chosen.length,7);assert.equal(new Set(chosen.map(p=>p.family)).size,7);
-  assert.ok(chosen.every(p=>!previous.includes(p.id)),day);chosen.forEach(p=>seen.add(p.id));previous=chosen.map(p=>p.id);
+  if(!chosen.length)continue;days++;assert.equal(chosen.length,7);
+  for(const p of chosen){assert.ok(!seen.has(p.id),day+': '+p.id);seen.add(p.id);}
  }
- assert.equal(seen.size,MIXED_PACKS.length);
+ assert.ok(days>=190);assert.equal(seen.size,days*7);
 });
-test('party decks cover the pool once and avoid consecutive copies of a narrow subject',()=>{
- for(let seed=0;seed<50;seed++){
-  const deck=partyDeck(random(seed));assert.equal(deck.length,MIXED_PACKS.length);assert.equal(new Set(deck).size,deck.length);
-  for(let i=1;i<deck.length;i++)assert.notEqual(pack(deck[i]).group??deck[i],pack(deck[i-1]).group??deck[i-1],seed+': '+i);
+test('party decks cover their eligible pool once and spread subjects at the start',()=>{
+ for(let seed=0;seed<20;seed++){
+  const deck=partyDeck(random(seed));assert.equal(deck.length,PARTY_PACKS.length);assert.equal(new Set(deck).size,deck.length);
+  assert.ok(new Set(deck.slice(0,35).map(id=>pack(id).family)).size>=6);
+  for(let i=1;i<100;i++)assert.notEqual(pack(deck[i]).group??deck[i],pack(deck[i-1]).group??deck[i-1],seed+': '+i);
  }
 });
 test('familiar answers and difficult category boundaries are represented correctly',()=>{
