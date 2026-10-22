@@ -5,10 +5,10 @@
   "type": "module",
   "scripts": {
     "start": "python3 -m http.server 4173",
-    "test": "node --import ./tests/question-data.mjs --test tests/*.test.js",
+    "test": "node --import ./tests/question-data.mjs --test --test-concurrency=2 tests/*.test.js",
     "build": "node scripts/update-moderation-rules.mjs --check && node scripts/update-puffer-rules.mjs --check && node build.mjs",
     "watch": "node build.mjs --watch",
-    "test:security": "firebase emulators:exec --only auth,database --project demo-councillion \"node tests/database-security.mjs && node --import ./tests/question-data.mjs tests/party-network.mjs && node --import ./tests/question-data.mjs tests/party-ranked-network.mjs && node tests/auth-browser.mjs\""
+    "test:security": "firebase emulators:exec --only auth,database --project demo-councillion \"node tests/database-security.mjs && node --import ./tests/question-data.mjs tests/party-network.mjs && node --import ./tests/question-data.mjs tests/party-ranked-network.mjs && node tests/solo-career-network.mjs && node tests/auth-browser.mjs\""
   },
   "devDependencies": {
     "@firebase/rules-unit-testing": "^5.0.2",

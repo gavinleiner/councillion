@@ -3,7 +3,7 @@ import {newEndless,restoreEndless,answerEndless,continueEndless} from './endless
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const letters=['A','B','C','D'];
 export class CaseChallenge {
- constructor(app,ocean,{read,save}){this.app=app;this.ocean=ocean;this.save=save;this.state=restoreEndless(read('endless-run',null),CASE_QUESTIONS);this.state.depth??=0;}
+ constructor(app,ocean,{read,save,onAnswer=()=>{}}){this.app=app;this.ocean=ocean;this.save=save;this.onAnswer=onAnswer;this.state=restoreEndless(read('endless-run',null),CASE_QUESTIONS);this.state.depth??=0;}
  persist(){this.save('endless-run',this.state);}
  render(){
   const s=this.state,q=CASE_QUESTIONS.find(q=>q.id===s.current.id),answered=s.phase!=='question',won=s.phase==='won',secret=s.feedback?.shortcut;
@@ -13,7 +13,7 @@ export class CaseChallenge {
   this.app.querySelector('[data-case-next]')?.addEventListener('click',()=>this.next());
   this.persist();
  }
- answer(index){if(this.state.phase!=='question')return;answerEndless(this.state,index);if(this.state.feedback.correct)this.state.depth=Math.min(7000,this.state.depth+350);if(this.state.feedback.shortcut)this.state.depth=Math.min(7000,this.state.depth+1000);if(this.state.feedback.correct||this.state.feedback.shortcut)this.ocean.celebrate();this.render();}
+ answer(index){if(this.state.phase!=='question')return;answerEndless(this.state,index);this.onAnswer(this.state);if(this.state.feedback.correct)this.state.depth=Math.min(7000,this.state.depth+350);if(this.state.feedback.shortcut)this.state.depth=Math.min(7000,this.state.depth+1000);if(this.state.feedback.correct||this.state.feedback.shortcut)this.ocean.celebrate();this.render();}
  next(){continueEndless(this.state,CASE_QUESTIONS);this.render();document.querySelector('#case-question')?.scrollIntoView({block:'nearest',behavior:'instant'});}
  keydown(e){if(e.ctrlKey||e.metaKey||e.altKey||e.target.closest('input,textarea,select')||document.querySelector('#modal').open)return;const key=e.key.toUpperCase(),index=/^[A-D]$/.test(key)?letters.indexOf(key):/^[1-4]$/.test(key)?Number(key)-1:-1;if(this.state.phase==='question'&&index>=0){e.preventDefault();this.answer(index);}else if(this.state.phase!=='question'&&key==='ENTER'){e.preventDefault();this.next();}}
  reset(){this.state=newEndless(CASE_QUESTIONS);this.state.depth=0;this.render();}

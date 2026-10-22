@@ -1,4 +1,4 @@
-import {validateDisplayName} from './moderation.js';
+import {SOLO_DEFAULTS} from './solo-career.js';
 // Founding Court: placement-first multiplayer Elo. No rarity or cosmetic bonus
 // changes rating. All counters are derived from immutable completed-match receipts.
 export const CAREER_VERSION=1;
@@ -21,20 +21,41 @@ export const TRACKERS={
  fastest:{label:'FASTEST ANSWER',value:s=>s.fastestMs?(s.fastestMs/1000).toFixed(1)+'s':'—'},cleanWins:{label:'FLAWLESS WINS',value:s=>s.cleanWins.toLocaleString()},podiums:{label:'PODIUMS',value:s=>s.podiums.toLocaleString()}
 };
 export const BADGES=[
- {id:'founder',name:'FIRST APPEARANCE',description:'Finish your first Puffer match.',icon:'spark',test:s=>s.finished>=1},
- {id:'verdict',name:'FIRST VERDICT',description:'Win a Puffer match.',icon:'gavel',test:s=>s.wins>=1},
- {id:'crown',name:'TRIPLE CROWN',description:'Win three completed matches in a row.',icon:'crown',test:s=>s.bestWinStreak>=3},
- {id:'century',name:'ON THE RECORD',description:'Land 100 accepted answers.',icon:'book',test:s=>s.answers>=100},
- {id:'deep',name:'DEEP-CUT COUNSEL',description:'Land 25 answers worth at least 85 points.',icon:'gem',test:s=>s.rare>=25},
- {id:'krillion',name:'ONE IN A COUNSEL',description:'Find three 100-point answers.',icon:'star',test:s=>s.krillions>=3},
- {id:'ironclad',name:'IRONCLAD',description:'Win without losing a heart.',icon:'shield',test:s=>s.cleanWins>=1},
- {id:'streak',name:'CLOSING ARGUMENT',description:'Land 15 valid answers between lost hearts.',icon:'bolt',test:s=>s.bestAnswerStreak>=15},
- {id:'regular',name:'COURT REGULAR',description:'Finish 25 matches.',icon:'laurel',test:s=>s.finished>=25},
- {id:'placed',name:'COURT CERTIFIED',description:'Complete your five rated placement matches.',icon:'scales',test:s=>s.ranked>=5},
- {id:'justice',name:'BELOW THE LAW',description:'Reach Abyssal Justice or higher.',icon:'trident',test:s=>s.peakRating>=1600},
- {id:'speed',name:'QUICK COUNSEL',description:'Land a valid answer in under 2 seconds.',icon:'clock',test:s=>s.fastestMs>0&&s.fastestMs<2000}
+ {id:'founder',name:'DEBUT',description:'Finish your first Puffer match.',icon:'spark',test:s=>s.finished>=1},
+ {id:'verdict',name:'FIRST WIN',description:'Win a Puffer match.',icon:'gavel',test:s=>s.wins>=1},
+ {id:'crown',name:'UNBEATEN',description:'Win three completed matches in a row.',icon:'crown',test:s=>s.bestWinStreak>=3},
+ {id:'century',name:'PUFFER 100',description:'Land 100 accepted answers.',icon:'book',test:s=>s.answers>=100},
+ {id:'deep',name:'DEEP COUNSEL',description:'Land 25 answers worth at least 85 points.',icon:'gem',test:s=>s.rare>=25},
+ {id:'krillion',name:'KRILLION CLUB',description:'Find three 100-point answers.',icon:'star',test:s=>s.krillions>=3},
+ {id:'ironclad',name:'FLAWLESS',description:'Win without losing a heart.',icon:'shield',test:s=>s.cleanWins>=1},
+ {id:'streak',name:'15 STREAK',description:'Land 15 valid answers between lost hearts.',icon:'bolt',test:s=>s.bestAnswerStreak>=15},
+ {id:'regular',name:'REGULAR',description:'Finish 25 matches.',icon:'laurel',test:s=>s.finished>=25},
+ {id:'placed',name:'PLACED',description:'Complete your five rated placement matches.',icon:'scales',test:s=>s.ranked>=5},
+ {id:'justice',name:'1600 CLUB',description:'Reach Abyssal Justice or higher.',icon:'trident',test:s=>s.peakRating>=1600},
+ {id:'speed',name:'QUICKDRAW',description:'Land a valid answer in under 2 seconds.',icon:'clock',test:s=>s.fastestMs>0&&s.fastestMs<2000}
 ];
-export function emptyCareer(){return {rating:1000,peakRating:1000,ranked:0,finished:0,matches:0,wins:0,losses:0,voids:0,podiums:0,points:0,answers:0,rare:0,krillions:0,bestWinStreak:0,currentWinStreak:0,bestAnswerStreak:0,fastestMs:0,cleanWins:0,records:[]};}
+// Cross-game titles use the same original achievement system, with concrete goals.
+const titles=(scope,field,goals)=>goals.map(([target,name])=>({id:scope+'-'+field+'-'+target,name,scope,field,target,description:(scope==='all'?'Across all modes':scope.toUpperCase())+' · '+target.toLocaleString()+' '+({allAnswers:'valid answers',allRare:'answers worth 85+ points',allKrillions:'100-point answers',allPoints:'rarity points',dailyDives:'completed Daily Dives',dailyStreak:'consecutive Daily days',practiceDives:'completed Practice Dives',bestDive:'points in one dive',deepestDive:'metres in one dive',perfectDives:'dives with seven valid answers',caseCorrect:'correct case answers',caseClears:'five-answer case challenges cleared',wins:'Puffer wins',finished:'completed Puffer matches',peakRating:'peak Court Rating'}[field]??field),test:s=>(s[field]??0)>=target}));
+BADGES.forEach(b=>{b.scope='puffer';});
+BADGES.push(
+ ...titles('all','allAnswers',[[100,'100 CLUB'],[250,'WELL READ'],[500,'ON RECORD'],[1000,'ENCYCLOPEDIC'],[2500,'THE ARCHIVE']]),
+ ...titles('all','allRare',[[10,'OFF THE BEATEN PATH'],[25,'DEEP CUT'],[50,'HIDDEN KNOWLEDGE'],[100,'DEEP RESEARCH'],[250,'SPECIALIST']]),
+ ...titles('all','allKrillions',[[1,'ONE IN A KRILLION'],[3,'RARE FIND'],[10,'COLLECTOR'],[25,'EXCEPTIONAL'],[50,'ANOMALY']]),
+ ...titles('all','allPoints',[[1000,'FOUR FIGURES'],[5000,'MOMENTUM'],[10000,'FIVE FIGURES'],[25000,'HIGH OUTPUT'],[50000,'BODY OF WORK']]),
+ ...titles('daily','dailyDives',[[1,'FIRST DESCENT'],[7,'WEEK ONE'],[30,'DAILY REGULAR'],[60,'ESTABLISHED'],[100,'CENTENNIAL'],[180,'LONG GAME']]),
+ ...titles('daily','dailyStreak',[[3,'ON SCHEDULE'],[7,'UNBROKEN WEEK'],[14,'CONSISTENT'],[30,'MONTH STRAIGHT'],[60,'UNINTERRUPTED']]),
+ ...titles('practice','practiceDives',[[1,'WARMUP'],[10,'REHEARSED'],[25,'IN PRACTICE'],[50,'DEDICATED'],[100,'PUTTING IN WORK']]),
+ ...titles('all','perfectDives',[[1,'SEVEN FOR SEVEN'],[5,'CLEAN RECORD'],[10,'RELIABLE'],[25,'PRECISION']]),
+ ...titles('depth','bestDive',[[250,'SOLID GROUND'],[350,'BELOW THE SURFACE'],[450,'DEEPWATER'],[550,'THE TRENCH'],[650,'ALMOST PERFECT'],[700,'THE FULL 700']]),
+ ...titles('depth','deepestDive',[[2000,'OPEN WATER'],[3000,'BATHYAL'],[4000,'ABYSSAL'],[5000,'HADAL'],[6000,'SIX THOUSAND'],[7000,'SEVEN KILOMETRES']]),
+ ...titles('endless','caseCorrect',[[5,'ON THE CASE'],[25,'CASE READER'],[50,'CLOSE READING'],[100,'CASE SCHOLAR'],[250,'THE CASEBOOK'],[500,'DEEP PRECEDENT']]),
+ ...titles('endless','caseClears',[[1,'CASE CLOSED'],[5,'FIVE VERDICTS'],[10,'TEN FOR THE RECORD'],[25,'PREPARED'],[50,'FULL DOCKET'],[100,'COMPLETE RECORD']]),
+ ...titles('puffer','wins',[[5,'FIVE WINS'],[10,'CONTENDER'],[25,'PROVEN'],[50,'FRONTRUNNER'],[100,'TRIPLE DIGITS']]),
+ ...titles('puffer','finished',[[50,'FIXTURE'],[100,'VETERAN'],[250,'INSTITUTION']]),
+ ...titles('puffer','peakRating',[[1200,'BARRISTER'],[1400,'MAGISTRATE'],[1800,'HIGH COURT'],[2100,'CROWNED']])
+);
+Object.assign(TRACKERS,{bestDive:{label:'BEST DIVE',value:s=>s.bestDive.toLocaleString()},deepestDive:{label:'DEEPEST DIVE',value:s=>s.deepestDive.toLocaleString()+'m'},dailyDives:{label:'DAILY DIVES',value:s=>s.dailyDives.toLocaleString()},dailyStreak:{label:'BEST DAILY STREAK',value:s=>s.dailyStreak.toLocaleString()},practiceDives:{label:'PRACTICE DIVES',value:s=>s.practiceDives.toLocaleString()},caseCorrect:{label:'CORRECT CASE ANSWERS',value:s=>s.caseCorrect.toLocaleString()},caseClears:{label:'CASE CHALLENGES',value:s=>s.caseClears.toLocaleString()},allAnswers:{label:'ALL MODE ANSWERS',value:s=>s.allAnswers.toLocaleString()},allKrillions:{label:'ALL KRILLIONS',value:s=>s.allKrillions.toLocaleString()}});
+export function emptyCareer(){return {...SOLO_DEFAULTS,rating:1000,peakRating:1000,ranked:0,finished:0,matches:0,wins:0,losses:0,voids:0,podiums:0,points:0,answers:0,rare:0,krillions:0,bestWinStreak:0,currentWinStreak:0,bestAnswerStreak:0,fastestMs:0,cleanWins:0,records:[]};}
 export function careerFromReceipts(receipts={}){
  const s=emptyCareer(),seen=new Set();
  const records=Object.entries(receipts??{}).filter(([,r])=>r?.version===1&&Number.isFinite(r.at)).sort((a,b)=>a[1].at-b[1].at||a[0].localeCompare(b[0]));
@@ -49,7 +70,7 @@ export function rankFor(career){const rank=RANKS.find(r=>career.rating<r.max)??R
 export const unlockedBadges=s=>BADGES.filter(b=>b.test(s));
 export function appearance(value={},career=emptyCareer()){
  const unlocked=new Set(unlockedBadges(career).map(b=>b.id)),stats=[...new Set(Array.isArray(value.stats)?value.stats:[])].filter(id=>Object.hasOwn(TRACKERS,id)).slice(0,3),badges=[...new Set(Array.isArray(value.badges)?value.badges:[])].filter(id=>unlocked.has(id)).slice(0,1);
- let tag='';try{if(String(value.tag??'').trim())tag=validateDisplayName(value.tag);}catch{}
+ const tag='';
  return {tag,accent:Object.hasOwn(ACCENTS,value.accent)?value.accent:'tide',pattern:PATTERNS.includes(value.pattern)?value.pattern:'currents',stats:[...stats,...['wins','answers','krillions'].filter(id=>!stats.includes(id))].slice(0,3),badges};
 }
 export function rosterKey(ids){let hash=2166136261;for(const c of [...ids].sort().join('|'))hash=Math.imul(hash^c.charCodeAt(0),16777619);return (hash>>>0).toString(16).padStart(8,'0');}
