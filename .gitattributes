@@ -2,3 +2,5 @@
 data-snapshots/expansion/** -text -whitespace
 data-snapshots/rework/** -text -whitespace
 question-banks/*.gz -text
+data-snapshots/variety/** -text -whitespace
+variety-banks/*.gz -text

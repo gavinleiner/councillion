@@ -1,0 +1,36 @@
+{
+  "retrieved": "2026-10-22",
+  "note": "Factual names, aliases and category relationships. No artwork, source code, descriptions or biographies.",
+  "sources": {
+    "wordnet-categories": "Princeton WordNet 3.0 via https://raw.githubusercontent.com/nltk/nltk_data/gh-pages/packages/corpora/wordnet.zip ; curated explicit roots, synonyms and hyponym/instance closure.",
+    "game-franchises": "https://github.com/LizardByte/GameDB/tree/gh-pages/franchises + all 1000 recorded name buckets. Includes named editions and spin-offs.",
+    "franchise-characters": "https://github.com/LizardByte/GameDB/blob/gh-pages/characters/all.json ; game/franchise membership intersections.",
+    "places": "https://download.geonames.org/export/dump/cities1000.zip ; populated places, PPLX subdivisions excluded, country/admin1 fields."
+  },
+  "files": {
+    "base-prompts.json": {
+      "bytes": 30791,
+      "sha256": "dc2274ae6b7cd2bf6bd267586e59cf324d7d40b53955eba1404625dc334c91f1"
+    },
+    "franchise-characters.json.gz": {
+      "bytes": 53361,
+      "sha256": "aaa2f474c5d441a3d7f6b8d42a928d3043ef06fdd9841c7c491db927f013163a"
+    },
+    "game-franchises.json.gz": {
+      "bytes": 229171,
+      "sha256": "8ae7afc45a6f213eda2e525371b0b9cc0f7ae4838fc3c06980317a09dea83f21"
+    },
+    "places.json.gz": {
+      "bytes": 7679856,
+      "sha256": "3099702f645d218ebe3dba1f25e6d884a50dd25e35cebeb3496564300f78c0eb"
+    },
+    "wordnet-categories.json.gz": {
+      "bytes": 472172,
+      "sha256": "5863a2ff162c51d019f3618f548fe717fa363502150cf4fff62918fa633d2140"
+    },
+    "wordnet-license.txt": {
+      "bytes": 1625,
+      "sha256": "7731175a77952e259390b496fab905e57118b8d19ad3a8383c67eee724ff443f"
+    }
+  }
+}

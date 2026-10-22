@@ -19,3 +19,7 @@ body[data-party-arena="true"] header{right:auto;margin:0}
 .party-arena:is([data-phase="lobby"],[data-phase="ended"]) :is(.arena-ring,.puffer-flight-layer){top:14%;height:58%}
 .party-arena:is([data-phase="lobby"],[data-phase="ended"]) .arena-center{top:52%}
 @media(max-width:640px){.party-arena:is([data-phase="lobby"],[data-phase="ended"]) :is(.arena-ring,.puffer-flight-layer){top:23%;height:43%}.party-arena:is([data-phase="lobby"],[data-phase="ended"]) .arena-center{top:56%}}
+
+.question-vote{display:block;margin:9px auto 0;padding:5px 10px;background:#10283be8;border:1px solid #567587;color:#a7cbd0;font:14px VT,monospace;letter-spacing:1px}.question-vote:disabled{opacity:.45}.party-fresh-note{font-size:14px;line-height:1.4;color:#9cbec7;text-align:center;margin:11px 0}.party-fresh-note+.lobby-foot{margin-top:8px}
+/* Keep category notices above the taller answer dock and vote control. */
+.party-arena .arena-status{bottom:155px}

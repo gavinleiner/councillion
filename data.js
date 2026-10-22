@@ -1,3 +1,4 @@
+import {VARIETY_PACKS} from './variety-question-catalog.js';
 import {FUN_PACKS} from './fun-question-catalog.js';
 import {EXPANDED_PACKS} from './expanded-banks.js';
 import {VEHICLE_PACK} from './vehicle-bank.js';
@@ -61,14 +62,35 @@ PACKS[PACKS.findIndex(p=>p.id==='no-wheels')]=VEHICLE_PACK;
 for(const p of PACKS){p.dailyEligible=p===AIRLINE_PACK||p===VEHICLE_PACK;if(p.dailyEligible)p.family='everyday';}
 PACKS.push(...EXPANDED_PACKS);
 PACKS.push(...CATALOG_PACKS);
-PACKS.push(...FUN_PACKS);
+PACKS.push(...FUN_PACKS,...VARIETY_PACKS);
 export const PLAY_PACKS=PACKS.filter(p=>p.dailyEligible);
 export const ORIGINAL_PLAY_PACKS=PLAY_PACKS.filter(p=>!p.catalogVersion&&!p.funVersion);
 export const answerCount=pack=>pack.answerCount??pack.answers.length;
 
 // Specialist inventories stay available without dominating ordinary games.
 const approachable=new Set(['no-wheels','airline-extras','cultured-dairy','seasonings','condiment-counter','sandwiches','tea-varieties','dog-breeds','cat-breeds','flower-names','weather-conditions','board-game-titles','literary-authors','occupation-titles','clothing-items','household-appliances','room-types','programming-languages','named-colours','food-preparation-verbs','catalog-soups','catalog-cakes','catalog-breads','catalog-desserts','catalog-salads','catalog-noodles','catalog-street-foods','catalog-snacks','catalog-coffee-drinks','catalog-confectionery','catalog-instrument-types','catalog-genre-clean','catalog-card-games','catalog-dances','catalog-mythical-creature-types','catalog-furniture-types','catalog-hand-tool-types','world-capitals','pokemon-species']);
-export const MIXED_PACKS=PLAY_PACKS.filter(p=>p.funVersion?p.mixed:approachable.has(p.id));
+// Equivalent requests share a concept key even when their inventories differ.
+// Prefer the earlier, fuller curated bank over a lexical rewording.
+const equivalents={
+ 'var-semantic-bird-n-01':'fun-birds',
+ 'var-semantic-cake-n-03':'catalog-cakes','var-semantic-bread-n-01':'catalog-breads',
+ 'var-semantic-dessert-n-01':'catalog-desserts','var-semantic-cheese-n-01':'cultured-dairy',
+ 'var-semantic-clothing-n-01':'clothing-items','var-semantic-attire-n-01':'clothing-items','var-semantic-garment-n-01':'clothing-items',
+ 'var-semantic-furniture-n-01':'catalog-furniture-types','var-semantic-hand_tool-n-01':'catalog-hand-tool-types',
+ 'var-semantic-fabric-n-01':'fabric-types','var-semantic-jewelry-n-01':'catalog-jewelry-types',
+ 'var-semantic-home_appliance-n-01':'household-appliances','var-semantic-room-n-01':'room-types',
+ 'var-semantic-musical_instrument-n-01':'catalog-instrument-types','var-semantic-percussion_instrument-n-01':'catalog-percussion-types','var-semantic-wind_instrument-n-01':'catalog-wind-instrument-types',
+ 'var-semantic-music_genre-n-01':'catalog-genre-clean','var-semantic-card_game-n-01':'catalog-card-games','var-semantic-sport-n-01':'fun-sports',
+ 'var-semantic-language-n-01':'fun-languages','var-semantic-natural_language-n-01':'fun-languages',
+ 'var-semantic-flower-n-01':'flower-names','var-semantic-chemical_element-n-01':'fun-elements','var-semantic-material-n-01':'fun-materials',
+ 'var-semantic-fish-n-01':'fun-sea-life'
+};
+for(const p of PACKS)p.questionKey=equivalents[p.id]??p.id;
+const concepts=new Map(),candidates=PLAY_PACKS.filter(p=>p.funVersion?p.mixed:(approachable.has(p.id)||Object.values(equivalents).includes(p.id)));
+export const MIXED_PACKS=candidates.filter(p=>{if(concepts.has(p.questionKey))return false;concepts.set(p.questionKey,p.id);return true;});
+export const canonicalQuestionId=id=>{const p=PACKS.find(p=>p.id===id);return concepts.get(p?.questionKey)??id;};
 for(const p of MIXED_PACKS)if(p.id==='pokemon-species')p.family='gaming';
 
 PACKS.find(p=>p.id==='dinosaur-genera').excludedAnswers=['Mosasaurus','Pteranodon','Pterodactylus','Plesiosaurus','Ichthyosaurus','Quetzalcoatlus','Dimetrodon','Crocodile','Chicken','Dodo'];
+
+export const PARTY_PACKS=MIXED_PACKS.filter(p=>p.partyEligible!==false&&answerCount(p)>=30);

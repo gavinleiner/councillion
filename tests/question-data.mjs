@@ -4,4 +4,4 @@ import {loadCatalogAnswers} from '../question-bank-loader.js';
 import {registerFunDataReader} from '../fun-bank-loader.js';
 import '../data.js';
 await loadCatalogAnswers();
-registerFunDataReader(pack=>{const bytes=readFileSync(new URL('../question-banks/'+pack.answerFile,import.meta.url));return JSON.parse((pack.answerFile.endsWith('.gz')?gunzipSync(bytes):bytes).toString());});
+registerFunDataReader(pack=>{const bytes=readFileSync(new URL('../'+(pack.answerDirectory??'question-banks')+'/'+pack.answerFile,import.meta.url));return JSON.parse((pack.answerFile.endsWith('.gz')?gunzipSync(bytes):bytes).toString());});

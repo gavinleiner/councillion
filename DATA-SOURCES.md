@@ -1,19 +1,19 @@
 # Councillion answer banks
 
-Snapshots: 21–22 October 2026. The full library has **268 categories and 1,049,478 accepted answer/category entries**, before aliases. The normal Daily/Practice/Puffer mix uses **75 broad categories**; the other 193 are optional specialists. The new 47 broad banks contribute 895,349 entries on top of the previous 221-category / 154,129-entry catalogue. Answers occur in multiple categories and some concepts have several accepted labels. These totals are neither unique-concept counts nor a claim of exhaustive coverage. Unlimited practice means repeated shuffled dives, not infinitely many unique prompts.
+Snapshots: 21–22 October 2026. The full library has **2,242 categories and 1,445,603 accepted answer/category entries**, before aliases. Automatic practice/Daily selection uses **1,377 categories**; the reviewed Puffer pool has **1,110** after familiarity and bank-size checks. Other categories remain optional in the library. This update adds 1,974 source-backed banks and 396,125 entries to the previous 268-category / 1,049,478-entry catalogue. Answers overlap across categories; these are not unique-concept totals. Inventories are finite and may omit a valid answer.
 
-| Subject | Full library | Normal mix |
-| --- | ---: | ---: |
-| Gaming | 13 | 10 |
-| Nature | 32 | 8 |
-| Food | 34 | 19 |
-| Science | 26 | 6 |
-| Culture | 76 | 15 |
-| World | 37 | 6 |
-| Everyday | 19 | 11 |
-| Optional wordplay | 31 | 0 |
+| Subject | Full library | Automatic mix | Puffer |
+| --- | ---: | ---: | ---: |
+| Gaming | 407 | 404 | 281 |
+| Nature | 72 | 45 | 43 |
+| Food | 63 | 44 | 39 |
+| Science | 77 | 55 | 52 |
+| Culture | 1,168 | 456 | 413 |
+| World | 246 | 215 | 147 |
+| Everyday | 178 | 158 | 135 |
+| Optional wordplay | 31 | 0 | 0 |
 
-The default mix favors questions such as naming a game, character, food, animal, movie, invention or Minecraft object. Constrained spelling, taxonomic and Pokémon-type questions remain available in **All categories + specialists**. The library displays prompts and bank sizes; complete answer browsing still unlocks after the seven-question dive. The original 111-answer airline and 1,194-answer vehicle banks preserve their supplied labels and scores.
+There is no overall subject restriction: semantic categories, history, language, ordinary objects, food, science, games, films and places all contribute. Obscure filmography anchors stay optional; named kinds and co-star/film/franchise relationships create different answer sets rather than cosmetic rewordings. New duplicate prompt strings and identical complete answer sets are omitted. The library displays prompts and bank sizes; answers unlock after a complete dive. The original 111-answer airline and 1,194-answer vehicle banks retain their supplied labels and scores.
 
 ## Original 17-category pool
 
@@ -41,9 +41,11 @@ The two separate films called *All Quiet on the Western Front* share one accepte
 
 ## Daily selection
 
-From **23 October 2026 at midnight in New York**, Daily Dive selects one mixed-pool question from each of gaming, nature, food, science, culture, world and everyday. Each family cycles through its prompts before wrapping, with deterministic ordering shared by everyone and no adjacent-day repeats. Earlier dates retain the original 17-category algorithm, and saved dives retain their question IDs. Two years of draws are checked for coverage, uniqueness and family balance.
+From **23 October 2026 at midnight in New York**, `daily-schedule.json` assigns seven unused prompt IDs to each day. The initial calendar has **196 complete dives through May 6, 2027**. Earlier dates retain the original algorithm and saved dives retain their IDs. The calendar is deterministic and append-only: additions never reshuffle existing dates. Selection spreads subject families and avoids recently used narrow groups while possible; unlike the old rotating family pools, no prompt ID is reused anywhere in the published schedule. After the last complete set, the game reports exhaustion rather than wrapping.
 
-Puffer Party uses the mixed pool immediately, visits its categories before wrapping and avoids consecutive narrow groups. Practice maintains a browser-local shuffled queue, exhausts it before recycling and allows an optional library-selected opening question. Daily and practice contain seven distinct questions per dive. New rooms include a catalogue/matcher version, so incompatible clients receive a refresh message. Google membership remains server-enforced for multiplayer.
+Puffer draws from 1,110 reviewed categories with at least 30 entries and at least eight answers in the editorial familiar/known tiers. The host-owned room state records revealed question IDs; clients remember them by Firebase identity on this browser and report them when joining a new room. The host excludes known IDs from future draws and rematches. A currently active category is preserved when someone joins mid-round. Clearing local site data or moving devices does not carry local history over; history is not synced between devices. No global deduplication across all game modes is claimed. If a room exhausts its remaining questions, it stops rather than dealing the first prompt again.
+
+At least two active survivors, and at least half the active survivors, can vote for a fresh category without losing a heart. A rejected/spectator/stale or duplicate vote cannot advance it. The next bank loads before the fuse. Google membership remains server-enforced. Practice remains intentionally replayable: it keeps a saved shuffled queue and cycles only after exhausting that queue; deliberate library selections may repeat.
 
 ## Original rarity model
 
@@ -93,6 +95,19 @@ The separate seven-question percentile curve remains a disclosed estimate center
 
 The applicable upstream notices are preserved under `data-snapshots/rework/notices/`. Factual source credits and data-specific notices do not assign a new license to Councillion's entire codebase. Game, character and brand names belong to their respective owners; Councillion is unaffiliated with them.
 
+## Large variety expansion
+
+`variety-bank-manifest.json` records all 1,974 new category IDs, wording, source, group, count, familiar-answer count, eligibility, tier distribution, complete answer-set hash and gzip payload hash. The generator rejects identical new answer sets and checks against the existing generated banks; it rejects duplicate prompt strings against the previous library. The retained source manifest records compact source hashes. Automatic selection also merges known equivalent requests (for example, a reworded furniture inventory) under a shared question key, preferring the fuller curated bank. Room history exclusions resolve those equivalent IDs too. These checks prevent count inflation by aliases or repeated complete sets; they do not prove every question is equally enjoyable or every valid answer is present.
+
+- **Princeton WordNet 3.0**, [project](https://wordnet.princeton.edu/) and [license](https://wordnet.princeton.edu/license-and-commercial-use): an explicitly curated list of noun senses supplies descendant kinds, named instances and synonym aliases for tools, clothing, food, activities, scientific concepts, plants, animals, language and everyday things. Ambiguous senses receive edited prompts. Only names/relationships are retained, not definition prose or examples. The full Princeton copyright/license/disclaimer is preserved in `data-snapshots/variety/wordnet-license.txt`. WordNet is a historical lexical inventory, not a complete current encyclopaedia. The three continent-country sets are supplemented with current retained ISO/GeoNames names and explicitly allow historical names.
+- **GameDB / IGDB**, [LizardByte/GameDB](https://github.com/LizardByte/GameDB): all 1,000 recorded name-index buckets join factual franchise game IDs to title labels. Character game memberships intersect with franchise membership. These relationships produce franchise-game and franchise-character banks; no title-keyword guessing is used. Named editions and spin-offs are included as stated. Generic NPC placeholders are filtered. Only factual names/membership data are copied; the previously retained AGPL-3.0 source notice applies to the upstream project, and no source software or artwork is shipped.
+- **American film cast facts**, [servant-42/wikipedia-movie-data](https://github.com/servant-42/wikipedia-movie-data), MIT notice retained under rework notices: distinct credited films and shared casts generate filmography and co-star banks. Prompts explicitly constrain the source to American films released before 2024 and allow voice casts. An editorial recognizable-actor list controls automatic play; the longer actor tail stays optional. There is no claim of exhaustive worldwide filmography or of current releases beyond this snapshot. Generic “himself/herself/various” placeholders are filtered.
+- **GeoNames**, [cities1000 and schema](https://download.geonames.org/export/dump/), CC BY 4.0: factual populated-place records, aliases, country and admin1 membership form country/state city-and-town banks. PPLX neighbourhood subdivisions are excluded. Snapshot coverage also contains administrative seats below 1,000 residents; the prompt does not invent a population threshold. Current country/territory display names use the retained ISO/pycountry facts, credited above. The small source can omit a town and historical/admin boundaries can change.
+
+Ranks reuse existing familiarity overrides when an answer already appears in an older broad bank. Otherwise wordfreq tiers and recorded population prominence supply an editorial baseline; a deterministic recognizable uncommon label gets 100 points where needed. These are not collected answer frequencies. Puffer additionally checks the number of familiar/known rows. A large bank alone is not sufficient for eligibility.
+
+Question-history reports contain prompt IDs, not prior answers or room codes. Room state stores the union to preserve no-repeat behavior through host transfer. Reports are client-supplied gameplay preferences, not a fraud-proof account history. Authentication/database rules are unchanged.
+
 ## Rebuild
 
 The actual input snapshot is checked into `data-snapshots/`; it is development data and is never fetched by gameplay. No partial instrument search page or failed download was used to fabricate a complete bank. `bank-manifest.json` records counts and score distributions.
@@ -103,6 +118,8 @@ work/bank-env/bin/pip install -r scripts/requirements.txt
 work/bank-env/bin/python scripts/build-expanded-banks.py
 work/bank-env/bin/python scripts/build-question-catalog.py
 work/bank-env/bin/python scripts/build-fun-banks.py
+work/bank-env/bin/python scripts/build-variety-banks.py
+node scripts/build-daily-schedule.mjs
 npm run build
 npm test
 ```
@@ -112,3 +129,5 @@ Raw source URLs are in `data-snapshots/downloads.json`. Refined PBDB requests ad
 The expansion generator defaults to the checked-in `data-snapshots/expansion/` inputs. Rebuilding from that compact snapshot was verified to reproduce both generated question modules byte for byte. `--source-dir` and `--output-dir` allow a separate audit output directory. The answer-row module is fetched only when play needs it, not on home or library entry, and quiz clocks begin after loading. Answer banks are deduplicated in a shared row pool and hydrated by category on demand. Gameplay never fetches raw snapshots or calls Wikidata, GeoNames, Nobel or PokéAPI.
 
 The broad-bank generator uses the checked-in rework snapshot and the generated legacy banks. `--output-dir` writes to a separate audit folder. A separate rebuild reproduces `fun-question-catalog.js`, `fun-bank-manifest.json` and all 47 gzip payloads byte for byte (gzip timestamps are zero). The gzip files total about 9.2 MB; only selected banks are fetched, and home/library entry loads metadata alone. The host prepares current/next party banks before their clocks. Quiz clocks wait for both data and matcher preparation. Gameplay never downloads the raw snapshots or queries these third-party data services.
+
+The variety generator accepts `--output-dir` for an independent audit rebuild. All 1,976 output files (two metadata/manifest files and 1,974 gzip banks) reproduce byte for byte from the retained snapshots and older generated banks. The new gzip files total about 5.7 MB. Gameplay fetches only selected banks and keeps a bounded cache of 16 hydrated new banks. Metadata alone powers the home/library/deck picker. `build-daily-schedule.mjs` appends only IDs not already scheduled and excludes the original historical pool; rerunning it without new categories leaves the calendar unchanged. Do not delete or reshuffle a calendar after publishing dates.

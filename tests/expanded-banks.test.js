@@ -4,10 +4,10 @@ import {PACKS,PLAY_PACKS} from '../data.js';
 import {EXPANDED_PACKS} from '../expanded-banks.js';
 import {dailyPacks,DAILY_FAMILIES,matchAnswer} from '../engine.js';
 const find=id=>PACKS.find(p=>p.id===id);
-test('daily rotation covers seven subjects, never repeats an adjacent day, and preserves legacy saves',()=>{
- let previous=[];for(let n=0;n<730;n++){
+test('historical daily draws retain families and new dates never repeat a prompt',()=>{
+ let previous=[],seen=new Set();for(let n=0;n<730;n++){
   const date=new Date(Date.UTC(2026,0,1+n)).toISOString().slice(0,10),packs=dailyPacks(date);
-  assert.deepEqual(packs.map(p=>p.family).sort(),[...(date<'2026-10-23'?['words','nature','food','science','culture','world','everyday']:DAILY_FAMILIES)].sort());
+  if(date<'2026-10-23')assert.deepEqual(packs.map(p=>p.family).sort(),['words','nature','food','science','culture','world','everyday'].sort());else for(const p of packs){assert.ok(!seen.has(p.id));seen.add(p.id);}
   assert.ok(packs.every(p=>p.dailyEligible&&!previous.includes(p.id)),date);
   previous=packs.map(p=>p.id);
  }

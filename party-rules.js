@@ -16,7 +16,7 @@ export function syncRoster(state,members,now=Date.now()){
 export function beginParty(state,now=Date.now()){
  if(!['lobby','ended'].includes(state.phase))return false;
  const players=state.players.filter(p=>p.connected&&p.ready).slice(0,state.settings.maxPlayers);if(players.length<2)return false;
- const old=state.settings,next=newParty(players);Object.assign(state,next,{settings:old,revision:state.revision+1,phase:'countdown',nextAt:now+3000});state.players.forEach(p=>{p.hearts=old.lives;p.spectator=false;delete p.lastAnswer;});state.notice='Court is about to begin…';return true;
+ const old=state.settings,next=newParty(players,Math.random,state.seenIds??[]);if(!next.packIds.length){state.exhausted=true;state.phase='ended';state.deadline=0;state.notice='All available questions have been seen. New questions are needed; no repeats will be dealt.';return false;}Object.assign(state,next,{settings:old,revision:state.revision+1,phase:'countdown',nextAt:now+3000});state.players.forEach(p=>{p.hearts=old.lives;p.spectator=false;delete p.lastAnswer;});state.notice='Court is about to begin…';return true;
 }
 export function stepParty(state,now=Date.now()){
  if(state.phase==='countdown'&&now>=state.nextAt)return startParty(state,now);
