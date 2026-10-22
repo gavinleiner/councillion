@@ -11,11 +11,18 @@ The rebuild is staged, not yet released to GitHub Pages. The existing public gam
 - Authentication was initialized. Browser control disconnected while opening the Google provider; its enabled state is **not verified**.
 - No Realtime Database URL has been entered. `cloud.js` deliberately refuses to open rooms while `databaseURL` is empty.
 
+## Open key alert
+
+GitHub secret-scanning alert #1 flagged the Firebase web API key in the configuration on this draft branch. The official Firebase documentation says browser keys are public by design when restricted to Firebase services, with data access controlled by rules. The actual key restrictions have not been inspected because browser control is disconnected. Do not dismiss the alert until the Cloud Credentials page confirms a Firebase-only allowlist and excludes Generative Language and other non-Firebase APIs. Do not treat removal from a file as revocation. No password, service-account private key, OAuth client secret, or user identity token was added with this configuration.
+
+Guidance: https://firebase.google.com/docs/projects/api-keys
+
 ## Remaining activation work
 
 Use the existing Firebase console tab for this project. The user has already approved Firebase terms, Google Authentication and protected party data on Spark. Do not request the same approval again, and do not upgrade billing.
 
-1. Enable the Google provider, with Councillion as the public app name and the existing support contact. Keep all other providers, including Anonymous, disabled.
+1. Inspect the key restrictions and address the open key alert described above before releasing.
+2. Enable the Google provider, with Councillion as the public app name and the existing support contact. Keep all other providers, including Anonymous, disabled.
 2. Add `gavinleiner.github.io` and `localhost` to Authentication's authorized domains as needed. The existing Google Identity Services web client is `312825866122-hmkjuk1841ph7goh85bgav06p73pjua6.apps.googleusercontent.com`, in the same Google project.
 3. Create a Realtime Database on Spark in locked mode. Publish `database.rules.json`, which has passed the emulator authorization tests. Never use public/test-mode rules.
 4. Copy the database's actual URL into `firebase-config.js`. The Firebase web configuration is public; never put an administrative credential or OAuth client secret in this repository.
