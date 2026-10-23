@@ -1,8 +1,8 @@
 // Each broad bank is fetched separately; home/library use metadata only.
-const loaded=new Map(),pending=new Map();let build='',extraBuild='',localReader;
+const loaded=new Map(),pending=new Map();let build='',extraBuild='',discoveryBuild='',localReader;
 export function registerFunDataReader(reader){localReader=reader;}
 function readLocal(pack){if(localReader&&!loaded.has(pack.id))seedFunAnswers(pack,localReader(pack));}
-export const funBuild=()=>build+'-'+extraBuild;
+export const funBuild=()=>build+'-'+extraBuild+'-'+discoveryBuild;
 export const funAnswersReady=packs=>packs.every(p=>{if(p.funVersion)readLocal(p);return !p.funVersion||loaded.has(p.id);});
 export function seedFunAnswers(pack,rows){
  if(!Array.isArray(rows)||rows.length!==pack.answerCount)throw Error('The question bank update is incomplete. Refresh and try again.');
@@ -18,3 +18,5 @@ export async function loadFunAnswers(packs){
 export function createFunCatalog(metadata,version){build=version;return metadata.map(meta=>Object.defineProperty({...meta},'answers',{enumerable:true,get(){readLocal(meta);if(!loaded.has(meta.id))throw Error('This answer bank is still loading.');return loaded.get(meta.id);}}));}
 
 export function createExtraCatalog(metadata,version){extraBuild=version;return metadata.map(meta=>Object.defineProperty({...meta},'answers',{enumerable:true,get(){readLocal(meta);if(!loaded.has(meta.id))throw Error('This answer bank is still loading.');return loaded.get(meta.id);}}));}
+
+export function createDiscoveryCatalog(metadata,version){discoveryBuild=version;return metadata.map(meta=>Object.defineProperty({...meta},'answers',{enumerable:true,get(){readLocal(meta);if(!loaded.has(meta.id))throw Error('This answer bank is still loading.');return loaded.get(meta.id);}}));}

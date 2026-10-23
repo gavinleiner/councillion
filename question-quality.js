@@ -1,7 +1,7 @@
 // Deliberate admission to ordinary play. Source volume alone is not a quality
 // signal: geographical micro-filters, cast-credit artifacts and ambiguous
 // dictionary senses stay archived instead of resurfacing in random queues.
-export const QUESTION_QUALITY_BUILD='20261023-reviewed-v1';
+export const QUESTION_QUALITY_BUILD='20261023-discovery-v2';
 const ids=text=>new Set(text.trim().split(/\s+/));
 const general=ids(`
 no-wheels airline-extras cultured-dairy seasonings condiment-counter
@@ -45,6 +45,7 @@ catalog-physical-laws catalog-mathematical-theorems catalog-branches-mathematics
 nobel-physics nobel-chemistry nobel-physiologyormedicine nobel-literature nobel-peace nobel-economicsciences nobel-all
 `);
 export function questionReview(pack){
+ if(pack.id.startsWith('discovery-'))return pack.qualityVersion===1&&pack.ranking==='source-familiarity-v1'&&pack.mixed&&pack.answerCount>=30&&pack.familiarCount>=8?{status:'automatic',reason:'Source-backed finite inventory; broad facets, minimum familiar-answer core and duplicate checks.'}:{status:'archived',reason:'Expansion category has not passed its admission gates.'};
  if(pack.id.startsWith('fun-'))return {status:pack.mixed?'automatic':'specialist',reason:'Broad source inventory with explicit scope.'};
  if(general.has(pack.id)||pack.id.startsWith('pokemon-type-')||pack.id==='pokemon-abilities'||pack.id.startsWith('var-semantic-')&&semantic.has(pack.id.slice(13)))return {status:'automatic',reason:'Reviewed familiar category with a concrete answer boundary.'};
  if(specialist.has(pack.id)||pack.family==='words'||pack.id.startsWith('pokemon-'))return {status:'specialist',reason:'Explicit optional challenge; excluded from ordinary random play.'};
