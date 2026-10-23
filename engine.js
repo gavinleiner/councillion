@@ -1,4 +1,4 @@
-import { PACKS, PLAY_PACKS, REVIEWED_PACKS, ORIGINAL_PLAY_PACKS, MIXED_PACKS, PARTY_PACKS, canonicalQuestionId, answerCount } from './data.js';
+import { PACKS, PLAY_PACKS, REVIEWED_PACKS, ORIGINAL_PLAY_PACKS, MIXED_PACKS, PARTY_PACKS, PACK_BY_ID, PARTY_IDS, canonicalQuestionId, answerCount } from './data.js';
 import {normalize,matchAnswer,resolveAnswer} from './answer-matching.js';
 export {normalize,matchAnswer,resolveAnswer,typoDistance} from './answer-matching.js';
 import {hash,random,shuffle,varietyDeck} from './question-selection.js';
@@ -17,7 +17,7 @@ function familyCycle(family,cycle,pool){
 export function dailyPacks(day=dateKey()){
  const ordinal=Math.floor(Date.parse(day+'T12:00:00Z')/86400000);
  if(!Number.isFinite(ordinal))throw Error('Invalid daily date.');
- if(day>=FRESH_DAILY_START){const index=Math.round((Date.parse(day+'T12:00:00Z')-Date.parse(FRESH_DAILY_START+'T12:00:00Z'))/86400000)*7;const ids=FRESH_DAILY_IDS.slice(index,index+7);return ids.length===7?ids.map(id=>PACKS.find(p=>p.id===id)):[];}
+ if(day>=FRESH_DAILY_START){const index=Math.round((Date.parse(day+'T12:00:00Z')-Date.parse(FRESH_DAILY_START+'T12:00:00Z'))/86400000)*7;const ids=FRESH_DAILY_IDS.slice(index,index+7);return ids.length===7?ids.map(id=>PACK_BY_ID.get(id)):[];}
  const historical=day<EXPANDED_DAILY_START;
  const chosen=(historical?LEGACY_DAILY_FAMILIES:DAILY_FAMILIES).map(family=>{
   const pool=(historical?ORIGINAL_PLAY_PACKS:MIXED_PACKS).filter(p=>p.family===family);if(!pool.length)throw Error('Missing daily family: '+family);
@@ -43,7 +43,7 @@ export function practiceDraw(pending=[],featured=null,rng=Math.random){
  return {ids,remaining:queue};
 }
 export function refreshPartyQuestions(state,now=Date.now(),rng=Math.random){
- const allowed=new Set(PARTY_PACKS.map(p=>p.id)),keep=['lobby','countdown'].includes(state.phase)?0:state.round,
+ const allowed=PARTY_IDS,keep=['lobby','countdown'].includes(state.phase)?0:state.round,
  prefix=state.packIds.slice(0,keep),seen=new Set([...(state.seenIds??[]).map(canonicalQuestionId),...prefix.map(canonicalQuestionId)]),tail=[];
  for(const id of state.packIds.slice(keep)){const key=canonicalQuestionId(id);if(allowed.has(id)&&!seen.has(key)){tail.push(id);seen.add(key);}}
  const next=[...prefix,...tail,...partyDeck(rng,[...seen])],retired=state.phase==='playing'&&!allowed.has(state.packIds[state.round-1]);
@@ -52,7 +52,7 @@ export function refreshPartyQuestions(state,now=Date.now(),rng=Math.random){
  if(changed||retired)state.revision++;return changed||retired;
 }
 export function newParty(players,rng=Math.random,seenIds=[]){return {exhausted:false,seenIds:[...new Set(seenIds)],phase:'lobby',mode:'casual',players:players.map(p=>({...p,hearts:2,meter:0,score:0,connected:true,answers:0,rare:0,krillions:0,answerStreak:0,bestStreak:0,fastestMs:0,heartsLost:0,forfeit:false})),eliminations:[],turn:0,round:0,packIds:partyDeck(rng,seenIds),used:[],log:[],settings:{lives:2,maxLives:5,meterTarget:600,minTurnMs:8000,fuseMinMs:10000,fuseMaxMs:30000,maxPlayers:6},notice:'The court is assembling.',deadline:0,startedAt:0,revision:0};}
-export const partyPack=s=>PACKS.find(p=>p.id===s.packIds[Math.max(s.round,1)-1]);
+export const partyPack=s=>PACK_BY_ID.get(s.packIds[Math.max(s.round,1)-1]);
 function alive(s){return s.players.filter(p=>p.connected&&p.hearts>0);}
 function trackFinalDuel(s,now){const active=alive(s);if(active.length===2&&active.every(p=>p.hearts===1)){const ids=active.map(p=>p.id).sort();if(!s.finalDuel||s.finalDuel.ids.join('|')!==ids.join('|'))s.finalDuel={ids,startedAt:now,answers:Object.fromEntries(ids.map(id=>[id,0]))};}else if(active.length>1)delete s.finalDuel;}
 function nextTurn(s){for(let n=1;n<=s.players.length;n++){const i=(s.turn+n)%s.players.length;if(s.players[i].connected&&s.players[i].hearts>0){s.turn=i;return;}}}

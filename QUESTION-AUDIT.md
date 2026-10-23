@@ -1,6 +1,6 @@
 # Question and Puffer review · 23 October 2026
 
-The random pools now use a deliberate admission list in `question-quality.js`. The library exposes **337 reviewed categories**, including optional challenges. **262** enter ordinary Daily/Practice selection and **253** enter Puffer. Their banks contain 979,165 and 978,925 canonical answer/category entries respectively; overlapping categories are not unique concepts. Narrow country/state city filters, restricted actor filmographies, unreliable franchise membership and ambiguous dictionary senses are archived. Historical data remains readable, but archived questions cannot be selected through the library, direct practice links, saved practice queues or newly repaired room decks.
+The library exposes **3,188 reviewed categories**; **3,113** enter Daily/Practice and **3,104** enter Puffer, including **213 sports categories**. Their banks contain 5,228,184 and 5,227,944 canonical answer/category entries, excluding aliases. These overlap across categories; they are not counts of unique concepts. Narrow country/state city filters and old unreliable cast/semantic banks remain archived.
 
 This is a reduction from the previous inflated random pool, not a claim of infinite new questions. Puffer excludes the room's revealed questions and the players' reported browser history across rematches. Exhaustion stops the deck instead of recycling it. Practice remains intentionally replayable after its queue is exhausted. History is scoped to an account in this browser, not synced across devices.
 
@@ -21,7 +21,7 @@ The two user-supplied banks keep their canonical labels and points. Scores remai
 
 The intentionally reviewed calendar replaces retired prompts beginning **2026-10-23**, consistently for every account. Earlier dates retain their original draw. Saved Daily runs must match the published seven IDs in the same order; mismatched runs are discarded rather than giving returning players a different set.
 
-This release has **36 complete nonrepeating Daily dives through 2026-11-27**, plus five unassigned tail prompts. Subject families are reserved across the calendar so smaller groups are not all consumed in the opening weeks. At least five subjects appear in each of the first 30 dives. Future additions append dates without reshuffling this reviewed schedule. The explicit review operation and previous build are recorded in `daily-schedule.json`; ordinary rebuilds are append-only. The published calendar stops after its last complete seven rather than repeating.
+The calendar now contains **444 complete nonrepeating Daily dives through 2028-01-09**. The previously published 257-ID prefix is unchanged. Every account receives the same seven prompts in the same order, and the calendar stops rather than wrapping.
 
 ## Puffer changes
 
@@ -38,3 +38,9 @@ Run `npm test`, `npm run build`, `node scripts/audit-questions.mjs` and `npm run
 `scripts/repair-question-banks.py` reapplies deterministic editorial repairs after the retained source generators. `data-snapshots/quality/` stores the wiki names/IDs, tModLoader identifiers, editorial additions, original manifest hashes, the initial repair ledger and the final before/after manifest ledger. No game artwork, source prose or private user data is imported by this data repair. The official wiki identifies its text under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/); attribution is retained here and in `DATA-SOURCES.md`. Only factual names and identifiers are used.
 
 These are finite source-backed banks. Exact snapshot coverage and a clean integrity scan are inspectable evidence; they do not establish that every conceivable real-world answer is present or every open-ended classification is perfect. Players can report/vote past a problematic category without losing a heart.
+
+## Discovery expansion validation
+
+2,851 new source-gated prompts supplement the reviewed pool without re-enabling the archived geographical, cast-credit or ambiguous lexical banks. See `discovery-manifest.json`, `question-counts.csv`, `data-snapshots/discovery/sources.json` and the player-facing `question-sources.html` for counts and source boundaries. Editorial/source gates and structural validation are not represented as a manual factual review of every relationship.
+
+New checks cover every discovery bank's compressed integrity, unique canonical identities, metadata count and admission threshold; exact familiar sports/film/TV/console answers; finite Daily-calendar uniqueness and the unchanged published prefix; and exclusions across a 500-question Puffer history. Sports are a separate selection family, and all four seeded test decks include sports in their first 14 prompts. A cold library remains metadata only. Real local-browser gameplay accepts a quarterback answer, and the established responsive arena tests cover four laptop/mobile viewports, long answers, holder-only draft edits, clockwise passing, the 20 fps cap, reduced motion and cleanup. The existing Google-only multiplayer/authentication emulator checks also pass with the expanded catalog.

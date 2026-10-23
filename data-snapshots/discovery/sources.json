@@ -1,0 +1,76 @@
+{
+  "retrieved": "2026-10-23",
+  "note": "Modified factual fields only. Attribution and license links: question-sources.html. Snapshots are offline build inputs, never fetched during play.",
+  "files": [
+    {
+      "file": "baseball.json.gz",
+      "url": "https://www.seanlahman.com/baseball-archive/statistics/",
+      "coverage": "Lahman 2025, mirrored by Rdatasets",
+      "bytes": 1373562,
+      "sha256": "13139162f6d2ec0f83fcbed77a91303e78c7458c87d57110c3fd96186b3b2b44"
+    },
+    {
+      "file": "basketball.json.gz",
+      "url": "https://github.com/swar/nba_api",
+      "coverage": "NBA/WNBA all-player and team index; Justinas NBA players 1996\u20132023; Basketball Reference season facts through 2017",
+      "bytes": 342104,
+      "sha256": "e8a5f9a3a85241b8c742b3cade6922c7934b1ceee4a447a5d7232ba133087d6f"
+    },
+    {
+      "file": "films.json.gz",
+      "url": "https://www.kaggle.com/datasets/asaniczka/tmdb-movies-dataset-2023-930k-movies",
+      "coverage": "ODC-By curator version 1097, plus https://zenodo.org/records/21920642 CC BY 4.0 recent genre/studio supplement",
+      "bytes": 14559003,
+      "sha256": "e79f25f361dd9ce9ed92391ed9c182e6e2a3a9b0facd448ab12bd6f7028c0da7"
+    },
+    {
+      "file": "global-games.json.gz",
+      "url": "https://zenodo.org/records/10262075",
+      "coverage": "CC BY 4.0; November 2023 snapshot",
+      "bytes": 1840222,
+      "sha256": "f45c5bbeb413ac28231787a42265537850b0c205d20828c420c59f9387d66cc8"
+    },
+    {
+      "file": "music.json.gz",
+      "url": "https://huggingface.co/datasets/maharshipandya/spotify-tracks-dataset",
+      "coverage": "BSD, revision 635b034",
+      "bytes": 2406386,
+      "sha256": "f20b4acf5559eac2f67bcf83e2f58915f3a94aa97f7e3a4a8a55ec0f33621506"
+    },
+    {
+      "file": "nfl.json.gz",
+      "url": "https://github.com/nflverse/nflverse-data",
+      "coverage": "Annual roster files 1920\u20132026",
+      "bytes": 1180708,
+      "sha256": "c1c2bd09fa24c4b70b0241749303214e8dd3b29165063e016be45ecc8f69bf50"
+    },
+    {
+      "file": "olympics.json.gz",
+      "url": "https://github.com/moderndive/olympicAthletes",
+      "coverage": "CC BY 4.0, 0.5.10, through 2026",
+      "bytes": 4130514,
+      "sha256": "c1e37a7e834c02d683f4529e8b41816d12290c8db78e02f82600e62fda956338"
+    },
+    {
+      "file": "steam.json.gz",
+      "url": "https://steamspy.com/api.php",
+      "coverage": "197 tag memberships, 2026-10-23; names reconciled with FronkonGames HF revision 6a31fcb",
+      "bytes": 4020855,
+      "sha256": "73e8740395b9a81e2e23037a821a4aefec3bf12f44b60bac86dcfe404e30ae35"
+    },
+    {
+      "file": "television.json.gz",
+      "url": "https://www.tvmaze.com/api",
+      "coverage": "CC BY-SA; full show index through page 383",
+      "bytes": 1809257,
+      "sha256": "21f48fa31c70f78ff0f9cf3e943a22b7f3ee2945be8ec062e7fc631f67393b22"
+    },
+    {
+      "file": "worldcup.json.gz",
+      "url": "https://github.com/jfjelstul/worldcup",
+      "coverage": "Men 1930\u20132022, women 1991\u20132019",
+      "bytes": 204236,
+      "sha256": "a826120fc7350d0ed3ad807bf3d08ef72a3a4a4d4e20a61af9e7256b050ad250"
+    }
+  ]
+}

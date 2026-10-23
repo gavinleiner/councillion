@@ -1,4 +1,5 @@
 import {questionReview} from './question-quality.js';
+import {DISCOVERY_PACKS} from './discovery-question-catalog.js';
 import {VARIETY_PACKS} from './variety-question-catalog.js';
 import {FUN_PACKS} from './fun-question-catalog.js';
 import {EXPANDED_PACKS} from './expanded-banks.js';
@@ -63,7 +64,9 @@ PACKS[PACKS.findIndex(p=>p.id==='no-wheels')]=VEHICLE_PACK;
 for(const p of PACKS){p.dailyEligible=p===AIRLINE_PACK||p===VEHICLE_PACK;if(p.dailyEligible)p.family='everyday';}
 PACKS.push(...EXPANDED_PACKS);
 PACKS.push(...CATALOG_PACKS);
-PACKS.push(...FUN_PACKS,...VARIETY_PACKS);
+PACKS.push(...FUN_PACKS,...VARIETY_PACKS,...DISCOVERY_PACKS);
+for(const p of PACKS)if(p.id==='fun-sports'||p.id==='var-semantic-sports_equipment-n-01')p.family='sports';
+export const PACK_BY_ID=new Map(PACKS.map(p=>[p.id,p]));
 export const PLAY_PACKS=PACKS.filter(p=>p.dailyEligible);
 export const REVIEWED_PACKS=PLAY_PACKS.filter(p=>questionReview(p).status!=='archived');
 export const ORIGINAL_PLAY_PACKS=PLAY_PACKS.filter(p=>!p.catalogVersion&&!p.funVersion);
@@ -90,9 +93,10 @@ const equivalents={
 for(const p of PACKS)p.questionKey=equivalents[p.id]??p.id;
 const concepts=new Map(),candidates=REVIEWED_PACKS.filter(p=>questionReview(p).status==='automatic');
 export const MIXED_PACKS=candidates.filter(p=>{if(concepts.has(p.questionKey))return false;concepts.set(p.questionKey,p.id);return true;});
-export const canonicalQuestionId=id=>{const p=PACKS.find(p=>p.id===id);return concepts.get(p?.questionKey)??id;};
+export const canonicalQuestionId=id=>{const p=PACK_BY_ID.get(id);return concepts.get(p?.questionKey)??id;};
 for(const p of MIXED_PACKS)if(p.id==='pokemon-species')p.family='gaming';
 
 PACKS.find(p=>p.id==='dinosaur-genera').excludedAnswers=['Mosasaurus','Pteranodon','Pterodactylus','Plesiosaurus','Ichthyosaurus','Quetzalcoatlus','Dimetrodon','Crocodile','Chicken','Dodo'];
 
 export const PARTY_PACKS=MIXED_PACKS.filter(p=>p.partyEligible!==false&&answerCount(p)>=30);
+export const PARTY_IDS=new Set(PARTY_PACKS.map(p=>p.id));
