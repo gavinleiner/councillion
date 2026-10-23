@@ -26,6 +26,11 @@ export function dailyPacks(day=dateKey()){
  });
  return shuffle(chosen,random(hash((historical?'councillion-daily-v2:':'councillion-daily-v4:')+day)));
 }
+// A resumed Daily must be the published seven prompts in their published order.
+export function isSharedDailyRun(run,day=dateKey()){
+ if(run?.mode!=='daily'||run.day!==day||!Array.isArray(run.ids)||run.ids.length!==7)return false;
+ const ids=dailyPacks(day).map(p=>p.id);return ids.length===7&&run.ids.every((id,i)=>id===ids[i]);
+}
 export function tier(points){return points>=100?{name:'KRILLION',icon:'✦',color:'rarity-krillion'}:points>=85?{name:'DEEP CUT',icon:'◆',color:'rarity-deepcut'}:points>=60?{name:'RARE',icon:'✧',color:'rarity-rare'}:points>=30?{name:'SCHOOLER',icon:'◈',color:'rarity-schooler'}:points>0?{name:'PLANKTON',icon:'·',color:'rarity-plankton'}:{name:'NO ECHO',icon:'×',color:'muted'};}
 
 export function partyDeck(rng=Math.random,seen=[],recent=[]){return varietyDeck(PARTY_PACKS,{seen:seen.map(canonicalQuestionId),recent,rng});}
