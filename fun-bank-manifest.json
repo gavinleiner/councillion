@@ -5,24 +5,24 @@
     "topic": "PRESS START",
     "prompt": "Name a video game. Expansions, named editions and classic games count too.",
     "group": "game-titles",
-    "answerCount": 357187,
-    "answerFile": "fun-video-games.0ec2f554e3191123.json.gz",
+    "answerCount": 357188,
+    "answerFile": "fun-video-games.1a75c4918f356e92.json.gz",
     "dailyEligible": true,
     "funVersion": 4,
     "mixed": true,
     "inputNoise": [],
-    "ranking": "familiarity-v3",
+    "ranking": "familiarity-v5-reviewed",
     "source": "Recorded factual snapshots; see data-snapshots/rework/source-manifest.json and DATA-SOURCES.md.",
     "tiers": {
-      "85": 192287,
+      "85": 192286,
       "60": 115737,
       "30": 43783,
-      "10": 5377,
+      "10": 5379,
       "100": 3
     },
-    "bytes": 11523728,
-    "downloadBytes": 2828226,
-    "sha256": "0ec2f554e3191123e86373b97f1a86005bfe9fa657212bbbc9121e3d2bfc96ab"
+    "bytes": 11523773,
+    "downloadBytes": 2828232,
+    "sha256": "1a75c4918f356e9287c467bc0035f156630e05333ce5d9e4746e7bcbd01f70c9"
   },
   {
     "id": "fun-game-characters",
@@ -30,24 +30,24 @@
     "topic": "PLAYER SELECT",
     "prompt": "Name a video-game character. Heroes, villains and named NPCs count.",
     "group": "game-characters",
-    "answerCount": 16649,
-    "answerFile": "fun-game-characters.4cd52ca188170366.json.gz",
+    "answerCount": 16395,
+    "answerFile": "fun-game-characters.269ac8375e6e325a.json.gz",
     "dailyEligible": true,
     "funVersion": 4,
     "mixed": true,
     "inputNoise": [],
-    "ranking": "familiarity-v3",
+    "ranking": "familiarity-v5-reviewed",
     "source": "Recorded factual snapshots; see data-snapshots/rework/source-manifest.json and DATA-SOURCES.md.",
     "tiers": {
-      "85": 9803,
-      "60": 4805,
-      "10": 269,
-      "30": 1770,
+      "85": 9723,
+      "60": 4743,
+      "10": 262,
+      "30": 1665,
       "100": 2
     },
-    "bytes": 378392,
-    "downloadBytes": 102715,
-    "sha256": "4cd52ca1881703663828e502c29245c6cad3ec5a718e2a45a4e8ee3f83640a07"
+    "bytes": 369503,
+    "downloadBytes": 100287,
+    "sha256": "269ac8375e6e325ab3cdfc90dc8b00d0d1c166ec22f20c4a24f9391e1c04c73d"
   },
   {
     "id": "fun-minecraft",
@@ -163,8 +163,8 @@
     "topic": "DROP IN",
     "prompt": "Name a Fortnite outfit, emote, glider or pickaxe.",
     "group": "fortnite",
-    "answerCount": 7686,
-    "answerFile": "fun-fortnite.e9e9428109499545.json.gz",
+    "answerCount": 7687,
+    "answerFile": "fun-fortnite.16ef425875dac7e1.json.gz",
     "dailyEligible": true,
     "funVersion": 4,
     "mixed": true,
@@ -173,18 +173,21 @@
       "skin",
       "outfit"
     ],
-    "ranking": "familiarity-v3",
+    "ranking": "familiarity-v5-reviewed",
     "source": "Recorded factual snapshots; see data-snapshots/rework/source-manifest.json and DATA-SOURCES.md.",
+    "literalAliases": {
+      "!": "Exclamation Mark"
+    },
     "tiers": {
       "85": 4371,
-      "30": 762,
+      "30": 763,
       "60": 2357,
       "10": 193,
       "100": 3
     },
-    "bytes": 179007,
-    "downloadBytes": 49943,
-    "sha256": "e9e94281094995456b0a3445bd48f25e24bf5279badeb4dc16ac6645947440a3"
+    "bytes": 179079,
+    "downloadBytes": 49967,
+    "sha256": "16ef425875dac7e118272677d936a79306539ec10a331a315e3e2f0930128f4d"
   },
   {
     "id": "fun-elden-ring",
@@ -192,26 +195,26 @@
     "topic": "THE LANDS BETWEEN",
     "prompt": "Name an Elden Ring weapon, spell, talisman, Spirit Ash or item. DLC counts.",
     "group": "elden-ring",
-    "answerCount": 2402,
-    "answerFile": "fun-elden-ring.d027cf2619a36be3.json.gz",
+    "answerCount": 2406,
+    "answerFile": "fun-elden-ring.41d48afd560b6747.json.gz",
     "dailyEligible": true,
     "funVersion": 4,
     "mixed": true,
     "inputNoise": [
       "elden ring"
     ],
-    "ranking": "familiarity-v3",
+    "ranking": "familiarity-v5-reviewed",
     "source": "Recorded factual snapshots; see data-snapshots/rework/source-manifest.json and DATA-SOURCES.md.",
     "tiers": {
-      "85": 1712,
-      "60": 588,
-      "30": 69,
-      "10": 30,
+      "85": 1701,
+      "60": 597,
+      "30": 74,
+      "10": 31,
       "100": 3
     },
-    "bytes": 71482,
-    "downloadBytes": 15759,
-    "sha256": "d027cf2619a36be3925ed244f4b9b20a3a3b42bc58412b42cdb3ad393d74fdf9"
+    "bytes": 71867,
+    "downloadBytes": 15864,
+    "sha256": "41d48afd560b6747449929b4459c0459911076ac5e2c67a115ce6957694d456d"
   },
   {
     "id": "fun-game-bosses",
@@ -245,14 +248,14 @@
     "prompt": "Name a Stardew Valley item. Crops, fish, food, tools and furniture count.",
     "group": "stardew",
     "answerCount": 1906,
-    "answerFile": "fun-stardew.a11935407cf2b95c.json.gz",
+    "answerFile": "fun-stardew.1a0fdaf9bd037479.json.gz",
     "dailyEligible": true,
     "funVersion": 4,
     "mixed": true,
     "inputNoise": [
       "stardew valley"
     ],
-    "ranking": "familiarity-v3",
+    "ranking": "familiarity-v5-reviewed",
     "source": "Recorded factual snapshots; see data-snapshots/rework/source-manifest.json and DATA-SOURCES.md.",
     "tiers": {
       "60": 880,
@@ -261,36 +264,36 @@
       "10": 27,
       "100": 3
     },
-    "bytes": 44608,
-    "downloadBytes": 11361,
-    "sha256": "a11935407cf2b95c45ef3b3100f8ca5371572a343d618c07b9c35d79fd5a789c"
+    "bytes": 44664,
+    "downloadBytes": 11376,
+    "sha256": "1a0fdaf9bd037479f01d91de05549a9713d2d43e18692fdae25eadbd5b3b2b3f"
   },
   {
     "id": "fun-terraria",
     "family": "gaming",
     "topic": "DIG FIGHT BUILD",
-    "prompt": "Name a Terraria item.",
+    "prompt": "Name a Terraria item. Vanilla items from any version count.",
     "group": "terraria",
-    "answerCount": 3907,
-    "answerFile": "fun-terraria.d2ea099adf31fdbc.json.gz",
+    "answerCount": 6233,
+    "answerFile": "fun-terraria.ec0072b75de77bb5.json.gz",
     "dailyEligible": true,
     "funVersion": 4,
     "mixed": true,
     "inputNoise": [
       "terraria"
     ],
-    "ranking": "familiarity-v3",
-    "source": "Recorded factual snapshots; see data-snapshots/rework/source-manifest.json and DATA-SOURCES.md.",
+    "ranking": "familiarity-v5-reviewed",
+    "source": "Official Terraria Wiki Cargo Items name/internal-name inventory, retrieved 2026-10-23; tModLoader ItemID identifiers and earlier retained inventory. Factual names only.",
     "tiers": {
-      "60": 1849,
-      "85": 1580,
-      "30": 440,
-      "10": 35,
+      "60": 1824,
+      "85": 3879,
+      "10": 95,
+      "30": 432,
       "100": 3
     },
-    "bytes": 99546,
-    "downloadBytes": 21193,
-    "sha256": "d2ea099adf31fdbc8336def91b43b6d9b229dea92dd10bb7ededf52889b7830a"
+    "bytes": 189017,
+    "downloadBytes": 42814,
+    "sha256": "ec0072b75de77bb5319fa9bcef5b9e71021011049a711183be7a3643ee39b894"
   },
   {
     "id": "fun-game-items",
@@ -298,24 +301,24 @@
     "topic": "LOOT DROP",
     "prompt": "Name an item from a video game. Weapons, armour, tools, consumables and collectibles count.",
     "group": "game-items",
-    "answerCount": 10193,
-    "answerFile": "fun-game-items.f08efb07ad019f56.json.gz",
+    "answerCount": 12474,
+    "answerFile": "fun-game-items.4531125d9df98e63.json.gz",
     "dailyEligible": true,
     "funVersion": 4,
     "mixed": true,
     "inputNoise": [],
-    "ranking": "familiarity-v3",
+    "ranking": "familiarity-v5-reviewed",
     "source": "Recorded factual snapshots; see data-snapshots/rework/source-manifest.json and DATA-SOURCES.md.",
     "tiers": {
-      "60": 4145,
-      "85": 4964,
-      "30": 1032,
-      "10": 49,
-      "100": 3
+      "60": 4125,
+      "85": 7195,
+      "30": 1028,
+      "10": 122,
+      "100": 4
     },
-    "bytes": 270767,
-    "downloadBytes": 59783,
-    "sha256": "f08efb07ad019f5602136acfbfcd750de81e17fa8529134aaea28b14dc73f229"
+    "bytes": 359554,
+    "downloadBytes": 81928,
+    "sha256": "4531125d9df98e63c8ea6c312d02332aaa5fdd6ec7d6b79682436530a382b385"
   },
   {
     "id": "fun-movies",
@@ -324,23 +327,23 @@
     "prompt": "Name a movie. Any genre or era.",
     "group": "films",
     "answerCount": 40886,
-    "answerFile": "fun-movies.32623a31b2a6409a.json.gz",
+    "answerFile": "fun-movies.e86e42d8a1e0e5ff.json.gz",
     "dailyEligible": true,
     "funVersion": 4,
     "mixed": true,
     "inputNoise": [],
-    "ranking": "familiarity-v3",
+    "ranking": "familiarity-v5-reviewed",
     "source": "Recorded factual snapshots; see data-snapshots/rework/source-manifest.json and DATA-SOURCES.md.",
     "tiers": {
-      "85": 11535,
+      "85": 11534,
       "30": 11798,
-      "60": 14467,
-      "10": 3085,
-      "100": 1
+      "60": 14465,
+      "10": 3087,
+      "100": 2
     },
-    "bytes": 1137131,
-    "downloadBytes": 307504,
-    "sha256": "32623a31b2a6409aa02d58df8b8b486e4f144e6ffd3944bd71d273e15e7152d3"
+    "bytes": 1137255,
+    "downloadBytes": 307533,
+    "sha256": "e86e42d8a1e0e5ff2dd52fef79cdfcf41d744ea48baaf5467fc80cf5b351afff"
   },
   {
     "id": "fun-film-horror",
@@ -648,24 +651,24 @@
     "topic": "ONE MORE EPISODE",
     "prompt": "Name a TV or streaming series. Cartoons and anime count.",
     "group": "tv",
-    "answerCount": 148097,
-    "answerFile": "fun-tv.9279487ccb771a2b.json.gz",
+    "answerCount": 148098,
+    "answerFile": "fun-tv.f3ddfab893896f67.json.gz",
     "dailyEligible": true,
     "funVersion": 4,
     "mixed": true,
     "inputNoise": [],
-    "ranking": "familiarity-v3",
+    "ranking": "familiarity-v5-reviewed",
     "source": "Recorded factual snapshots; see data-snapshots/rework/source-manifest.json and DATA-SOURCES.md.",
     "tiers": {
       "85": 89659,
       "60": 33049,
-      "30": 20826,
+      "30": 20827,
       "10": 4561,
       "100": 2
     },
-    "bytes": 4462356,
-    "downloadBytes": 1441684,
-    "sha256": "9279487ccb771a2bc240706fb27a7a7d363978402cc84bec584822843bc566a0"
+    "bytes": 4462460,
+    "downloadBytes": 1441720,
+    "sha256": "f3ddfab893896f67f2ea0077357361d0e670ec6c4cded3067fcf4c4b85945d93"
   },
   {
     "id": "fun-fictional-characters",
@@ -673,24 +676,24 @@
     "topic": "FICTIONAL FACES",
     "prompt": "Name a fictional character from a book, film, show, comic or game.",
     "group": "characters",
-    "answerCount": 18909,
-    "answerFile": "fun-fictional-characters.9b1a933337a03cd3.json.gz",
+    "answerCount": 18658,
+    "answerFile": "fun-fictional-characters.f95ba00cae7c865d.json.gz",
     "dailyEligible": true,
     "funVersion": 4,
     "mixed": true,
     "inputNoise": [],
-    "ranking": "familiarity-v3",
+    "ranking": "familiarity-v5-reviewed",
     "source": "Recorded factual snapshots; see data-snapshots/rework/source-manifest.json and DATA-SOURCES.md.",
     "tiers": {
-      "85": 11464,
-      "60": 5219,
-      "10": 298,
-      "30": 1926,
-      "100": 2
+      "85": 11372,
+      "60": 5152,
+      "10": 303,
+      "30": 1828,
+      "100": 3
     },
-    "bytes": 460901,
-    "downloadBytes": 134404,
-    "sha256": "9b1a933337a03cd370c6da930a98aeb764043e161ab518c62d0d397ca7463d2c"
+    "bytes": 452464,
+    "downloadBytes": 132148,
+    "sha256": "f95ba00cae7c865d82694c7ef28c7ed33bb66a8746ece7eb050cc608abcb1bee"
   },
   {
     "id": "fun-superheroes",
@@ -698,24 +701,24 @@
     "topic": "CAPES OPTIONAL",
     "prompt": "Name a superhero or supervillain.",
     "group": "characters",
-    "answerCount": 443,
-    "answerFile": "fun-superheroes.20fb7bb3f1a7695a.json.gz",
+    "answerCount": 447,
+    "answerFile": "fun-superheroes.714ff0decaacdf4d.json.gz",
     "dailyEligible": true,
     "funVersion": 4,
     "mixed": true,
     "inputNoise": [],
-    "ranking": "familiarity-v3",
+    "ranking": "familiarity-v5-reviewed",
     "source": "Recorded factual snapshots; see data-snapshots/rework/source-manifest.json and DATA-SOURCES.md.",
     "tiers": {
-      "30": 71,
+      "30": 70,
       "100": 1,
-      "85": 184,
-      "60": 153,
-      "10": 34
+      "85": 185,
+      "60": 154,
+      "10": 37
     },
-    "bytes": 30736,
-    "downloadBytes": 13249,
-    "sha256": "20fb7bb3f1a7695ac1226ea32c2585e2e6eaa72b38af968e3964f5ae1e88175a"
+    "bytes": 30888,
+    "downloadBytes": 13302,
+    "sha256": "714ff0decaacdf4dd6f89826b9857b80a346618dc41d3009663f01f18bff60e6"
   },
   {
     "id": "fun-animals",
@@ -723,24 +726,24 @@
     "topic": "ANIMAL KINGDOM",
     "prompt": "Name an animal. General kinds, species and extinct animals count.",
     "group": "animals",
-    "answerCount": 21355,
-    "answerFile": "fun-animals.7caa8529693ce72f.json.gz",
+    "answerCount": 21360,
+    "answerFile": "fun-animals.5ec0d25656c17598.json.gz",
     "dailyEligible": true,
     "funVersion": 4,
     "mixed": true,
     "inputNoise": [],
-    "ranking": "familiarity-v3",
+    "ranking": "familiarity-v5-reviewed",
     "source": "Recorded factual snapshots; see data-snapshots/rework/source-manifest.json and DATA-SOURCES.md.",
     "tiers": {
-      "85": 18721,
-      "10": 155,
-      "60": 2293,
-      "30": 184,
-      "100": 2
+      "85": 18713,
+      "10": 150,
+      "60": 2296,
+      "30": 200,
+      "100": 1
     },
-    "bytes": 1082926,
-    "downloadBytes": 323625,
-    "sha256": "7caa8529693ce72fe76e4c2cb9ca00a05c7ca628412d5a5abba1e324d1718d8f"
+    "bytes": 1083132,
+    "downloadBytes": 323716,
+    "sha256": "5ec0d25656c1759853e87654eeea3592182557e8be8d8271f822f27157325cf4"
   },
   {
     "id": "fun-birds",
@@ -771,26 +774,26 @@
     "id": "fun-sea-life",
     "family": "nature",
     "topic": "IN THE WATER",
-    "prompt": "Name an aquatic animal. Freshwater and marine animals count.",
+    "prompt": "Name an aquatic or semi-aquatic animal. Sea and freshwater creatures count.",
     "group": "animals",
-    "answerCount": 794,
-    "answerFile": "fun-sea-life.cba66bbc889081e0.json.gz",
+    "answerCount": 818,
+    "answerFile": "fun-sea-life.8ddc69f5d6761c78.json.gz",
     "dailyEligible": true,
     "funVersion": 4,
     "mixed": true,
     "inputNoise": [],
-    "ranking": "familiarity-v3",
+    "ranking": "familiarity-v5-reviewed",
     "source": "Recorded factual snapshots; see data-snapshots/rework/source-manifest.json and DATA-SOURCES.md.",
     "tiers": {
       "85": 628,
-      "60": 144,
-      "30": 9,
+      "60": 150,
+      "30": 25,
       "100": 3,
-      "10": 10
+      "10": 12
     },
-    "bytes": 31989,
-    "downloadBytes": 8948,
-    "sha256": "cba66bbc889081e0751caa7b7dcefacd8b2907eea3f8ce5bd397ca4c5edf7d46"
+    "bytes": 32542,
+    "downloadBytes": 9161,
+    "sha256": "8ddc69f5d6761c788889ade42dd33a0d695b272bc89576f132bae164d6a10c42"
   },
   {
     "id": "fun-prehistoric",
@@ -823,24 +826,35 @@
     "topic": "THINGS THAT GROW",
     "prompt": "Name a plant. Trees, flowers, herbs and crops count.",
     "group": "plants",
-    "answerCount": 832,
-    "answerFile": "fun-plants.64fa54dc80f9107f.json.gz",
+    "answerCount": 3660,
+    "answerFile": "fun-plants.0522b2b991f5ba12.json.gz",
     "dailyEligible": true,
     "funVersion": 4,
     "mixed": true,
     "inputNoise": [],
-    "ranking": "familiarity-v3",
+    "ranking": "familiarity-v5-reviewed",
     "source": "Recorded factual snapshots; see data-snapshots/rework/source-manifest.json and DATA-SOURCES.md.",
+    "excludedAnswers": [
+      "earthnut",
+      "fairy cup",
+      "lichen",
+      "mold",
+      "mould",
+      "mushroom",
+      "mushrooms",
+      "truffle",
+      "yeast"
+    ],
     "tiers": {
-      "100": 1,
-      "85": 497,
-      "30": 54,
-      "60": 246,
-      "10": 34
+      "100": 7,
+      "85": 2302,
+      "60": 1086,
+      "30": 219,
+      "10": 46
     },
-    "bytes": 18663,
-    "downloadBytes": 5148,
-    "sha256": "64fa54dc80f9107fde175fd6b953d88025506d2d31bd3b400ff3b526fe98f173"
+    "bytes": 178727,
+    "downloadBytes": 58861,
+    "sha256": "0522b2b991f5ba127b32a4607cf88fae612b561b7f46ac48daeb9a7a8c10c2da"
   },
   {
     "id": "fun-food",
@@ -848,24 +862,24 @@
     "topic": "WHAT’S COOKING?",
     "prompt": "Name a food or dish.",
     "group": "food",
-    "answerCount": 15480,
-    "answerFile": "fun-food.b46810bed087ae03.json.gz",
+    "answerCount": 15482,
+    "answerFile": "fun-food.8e84015a307bf369.json.gz",
     "dailyEligible": true,
     "funVersion": 4,
     "mixed": true,
     "inputNoise": [],
-    "ranking": "familiarity-v3",
+    "ranking": "familiarity-v5-reviewed",
     "source": "Recorded factual snapshots; see data-snapshots/rework/source-manifest.json and DATA-SOURCES.md.",
     "tiers": {
-      "85": 13055,
-      "30": 467,
-      "60": 1817,
-      "10": 140,
+      "85": 13056,
+      "30": 468,
+      "60": 1818,
+      "10": 139,
       "100": 1
     },
-    "bytes": 475355,
-    "downloadBytes": 133427,
-    "sha256": "b46810bed087ae0387a86024d562b237b92dca10aae372fb749f0ba0b0cea345"
+    "bytes": 475431,
+    "downloadBytes": 133452,
+    "sha256": "8e84015a307bf369276026c0821fc532384a6ee76fb47de8e832032217d0d6b9"
   },
   {
     "id": "fun-ingredients",
@@ -898,24 +912,24 @@
     "topic": "FRESH PRODUCE",
     "prompt": "Name a fruit or vegetable. Regional names and varieties count.",
     "group": "food",
-    "answerCount": 1307,
-    "answerFile": "fun-fruit-veg.a806dec5bc91bc32.json.gz",
+    "answerCount": 1308,
+    "answerFile": "fun-fruit-veg.0fb25c124964be92.json.gz",
     "dailyEligible": true,
     "funVersion": 4,
     "mixed": true,
     "inputNoise": [],
-    "ranking": "familiarity-v3",
+    "ranking": "familiarity-v5-reviewed",
     "source": "Recorded factual snapshots; see data-snapshots/rework/source-manifest.json and DATA-SOURCES.md.",
     "tiers": {
-      "85": 738,
-      "60": 325,
+      "85": 737,
+      "60": 326,
       "30": 173,
-      "10": 69,
+      "10": 70,
       "100": 2
     },
-    "bytes": 28810,
-    "downloadBytes": 8562,
-    "sha256": "a806dec5bc91bc32c54c74ff0fcebc10c6329a8d9bf19619710081018a61fd76"
+    "bytes": 28891,
+    "downloadBytes": 8593,
+    "sha256": "0fb25c124964be92cf735b98331e9d75fe92f41cbfa08e7ab83dd68af032b89f"
   },
   {
     "id": "fun-water-world",
@@ -997,24 +1011,24 @@
     "topic": "MADE OF WHAT?",
     "prompt": "Name a material or substance used to make things.",
     "group": "materials",
-    "answerCount": 6738,
-    "answerFile": "fun-materials.602d65d7a6eb78ac.json.gz",
+    "answerCount": 6740,
+    "answerFile": "fun-materials.ebd213e78ff8b142.json.gz",
     "dailyEligible": true,
     "funVersion": 4,
     "mixed": true,
     "inputNoise": [],
-    "ranking": "familiarity-v3",
+    "ranking": "familiarity-v5-reviewed",
     "source": "Recorded factual snapshots; see data-snapshots/rework/source-manifest.json and DATA-SOURCES.md.",
     "tiers": {
-      "85": 6567,
-      "60": 127,
+      "85": 6568,
+      "60": 128,
       "100": 1,
       "30": 16,
       "10": 27
     },
-    "bytes": 219479,
-    "downloadBytes": 57567,
-    "sha256": "602d65d7a6eb78ac1048f53fc7e56444e6eecef16352253dd0645a6176930b6c"
+    "bytes": 219519,
+    "downloadBytes": 57579,
+    "sha256": "ebd213e78ff8b1427e328aaeb9a8feeb6d2a258a4cd9c9bb0a59fbcf96197498"
   },
   {
     "id": "fun-body",
@@ -1123,23 +1137,23 @@
     "prompt": "Name a spoken, signed or constructed language.",
     "group": "languages",
     "answerCount": 7917,
-    "answerFile": "fun-languages.f42de8c5872fa18d.json.gz",
+    "answerFile": "fun-languages.2ea976f05a40560b.json.gz",
     "dailyEligible": true,
     "funVersion": 4,
     "mixed": true,
     "inputNoise": [],
-    "ranking": "familiarity-v3",
+    "ranking": "familiarity-v5-reviewed",
     "source": "Recorded factual snapshots; see data-snapshots/rework/source-manifest.json and DATA-SOURCES.md.",
     "tiers": {
-      "85": 7396,
+      "85": 7393,
       "60": 381,
       "10": 48,
-      "30": 89,
+      "30": 92,
       "100": 3
     },
-    "bytes": 186197,
-    "downloadBytes": 46264,
-    "sha256": "f42de8c5872fa18d72369be118731abbd7ef17f9e87dedc22d0d51a9ae6e0b5d"
+    "bytes": 186241,
+    "downloadBytes": 46283,
+    "sha256": "2ea976f05a40560b0d4e81835249703ad584b6a04c4cf8b34f9e620b4ccb0777"
   },
   {
     "id": "fun-scientists",

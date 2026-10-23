@@ -1,0 +1,894 @@
+{
+  "reviewed": "2026-10-23",
+  "scope": "Factual name and alias corrections; no invented answers or live AI grading.",
+  "banks": {
+    "fun-elden-ring": {
+      "source": "Shadow of the Erdtree inventory names; game UI terminology and retained DLC inventory sources in DATA-SOURCES.md.",
+      "add": [
+        ["Smithing Stone",10,["Smithing Stones"]],
+        ["Somber Smithing Stone",30,["Somber Smithing Stones"]],
+        [
+          "Scadutree Fragment",
+          30,
+          [
+            "Scadutree Fragments",
+            "Scadu Fragment"
+          ]
+        ],
+        [
+          "Revered Spirit Ash",
+          60,
+          [
+            "Revered Spirit Ashes"
+          ]
+        ],
+        [
+          "Spear of the Impaler",
+          30,
+          [
+            "Messmer's Spear",
+            "Messmer Spear",
+            "Impaler's Spear"
+          ]
+        ],
+        [
+          "Great Katana",
+          30,
+          []
+        ],
+        [
+          "Rellana's Twin Blades",
+          30,
+          [
+            "Rellana Twin Blades"
+          ]
+        ],
+        [
+          "Dragon-Hunter's Great Katana",
+          60,
+          [
+            "Dragon Hunter Great Katana"
+          ]
+        ],
+        [
+          "Rakshasa's Great Katana",
+          60,
+          [
+            "Rakshasa Great Katana"
+          ]
+        ],
+        [
+          "Ancient Meteoric Ore Greatsword",
+          60,
+          [
+            "Ancient Meteoric Greatsword"
+          ]
+        ],
+        [
+          "Black Steel Greathammer",
+          60,
+          []
+        ],
+        [
+          "Anvil Hammer",
+          60,
+          []
+        ],
+        [
+          "Backhand Blade",
+          30,
+          [
+            "Backhand Blades"
+          ]
+        ],
+        [
+          "Falx",
+          60,
+          []
+        ],
+        [
+          "Star-Lined Sword",
+          60,
+          [
+            "Star Lined Sword"
+          ]
+        ],
+        [
+          "Euporia",
+          60,
+          []
+        ],
+        [
+          "Sword of Darkness",
+          60,
+          []
+        ],
+        [
+          "Sword of Light",
+          60,
+          []
+        ]
+      ]
+    },
+    "fun-sea-life": {
+      "source": "Retained animal/taxon inventories and familiar common names; aquatic and semi-aquatic scope. Axolotl reference: https://animals.sandiegozoo.org/animals/axolotl",
+      "add": [
+        [
+          "Axolotl",
+          30,
+          [
+            "Mexican Walking Fish"
+          ]
+        ],
+        [
+          "Hellbender",
+          60,
+          []
+        ],
+        [
+          "Olm",
+          60,
+          []
+        ],
+        [
+          "Mudpuppy",
+          60,
+          []
+        ],
+        [
+          "Freshwater Stingray",
+          60,
+          []
+        ],
+        [
+          "Amazon River Dolphin",
+          30,
+          [
+            "Pink River Dolphin",
+            "Boto"
+          ]
+        ],
+        [
+          "Sea Otter",
+          30,
+          []
+        ],
+        [
+          "River Otter",
+          30,
+          []
+        ],
+        [
+          "Platypus",
+          30,
+          [
+            "Duck-billed Platypus"
+          ]
+        ],
+        [
+          "Beaver",
+          30,
+          []
+        ],
+        [
+          "Hippopotamus",
+          30,
+          [
+            "Hippo"
+          ]
+        ],
+        [
+          "Crocodile",
+          30,
+          []
+        ],
+        [
+          "Alligator",
+          30,
+          []
+        ],
+        [
+          "Frog",
+          30,
+          []
+        ],
+        [
+          "Newt",
+          60,
+          []
+        ],
+        [
+          "Penguin",
+          30,
+          []
+        ],
+        [
+          "Duck",
+          30,
+          []
+        ],
+        [
+          "Swan",
+          30,
+          []
+        ],
+        [
+          "Goose",
+          30,
+          [
+            "Geese"
+          ]
+        ],
+        [
+          "Cormorant",
+          60,
+          []
+        ],
+        [
+          "Pelican",
+          30,
+          []
+        ],
+        [
+          "Flamingo",
+          30,
+          []
+        ],
+        [
+          "Puffin",
+          60,
+          []
+        ],
+        [
+          "Shark",
+          10,
+          []
+        ],
+        [
+          "Manatee",
+          30,
+          []
+        ],
+        [
+          "Dugong",
+          60,
+          []
+        ],
+        [
+          "Oyster",
+          10,
+          [
+            "Oysters"
+          ]
+        ]
+      ],
+      "remove": [
+        "cooking fish"
+      ]
+    },
+    "fun-game-characters": {
+      "source": "Established character names from the games named in the retained source inventories; generic cast-credit headings are excluded.",
+      "add": [
+        [
+          "Princess Peach",
+          10,
+          [
+            "Peach"
+          ]
+        ],
+        [
+          "Luigi",
+          10,
+          []
+        ],
+        [
+          "Wario",
+          30,
+          []
+        ],
+        [
+          "Waluigi",
+          60,
+          []
+        ],
+        [
+          "Toad",
+          10,
+          []
+        ],
+        [
+          "Toadette",
+          30,
+          []
+        ],
+        [
+          "Birdo",
+          30,
+          []
+        ],
+        [
+          "Yoshi",
+          10,
+          []
+        ],
+        [
+          "Miles Tails Prower",
+          10,
+          [
+            "Miles \"Tails\" Prower",
+            "Tails"
+          ]
+        ],
+        [
+          "Knuckles the Echidna",
+          10,
+          [
+            "Knuckles"
+          ]
+        ],
+        [
+          "Shadow the Hedgehog",
+          30,
+          [
+            "Shadow"
+          ]
+        ],
+        [
+          "Sonic the Hedgehog",
+          10,
+          [
+            "Sonic"
+          ]
+        ],
+        [
+          "Dr. Catherine Halsey",
+          30,
+          [
+            "Catherine Halsey",
+            "Doctor Halsey",
+            "Dr Halsey"
+          ]
+        ],
+        [
+          "Princess Daisy",
+          30,
+          [
+            "Daisy"
+          ]
+        ],
+        [
+          "Morshu",
+          100,
+          []
+        ]
+      ]
+    },
+    "fun-fictional-characters": {
+      "source": "Established fictional character names and conventional short names.",
+      "add": [
+        [
+          "Harry Potter",
+          10,
+          []
+        ],
+        [
+          "Hermione Granger",
+          10,
+          [
+            "Hermione"
+          ]
+        ],
+        [
+          "Ron Weasley",
+          10,
+          [
+            "Ronald Weasley"
+          ]
+        ],
+        [
+          "Albus Dumbledore",
+          10,
+          [
+            "Dumbledore"
+          ]
+        ],
+        [
+          "Severus Snape",
+          30,
+          [
+            "Snape"
+          ]
+        ],
+        [
+          "Lord Voldemort",
+          10,
+          [
+            "Voldemort",
+            "Tom Marvolo Riddle",
+            "Tom Riddle"
+          ]
+        ],
+        [
+          "Darth Vader",
+          10,
+          [
+            "Anakin Skywalker"
+          ]
+        ],
+        [
+          "Obi-Wan Kenobi",
+          10,
+          [
+            "Obi Wan Kenobi"
+          ]
+        ],
+        [
+          "Chewbacca",
+          10,
+          [
+            "Chewie"
+          ]
+        ],
+        [
+          "Leia Organa",
+          10,
+          [
+            "Princess Leia",
+            "Leia"
+          ]
+        ],
+        [
+          "Han Solo",
+          10,
+          []
+        ],
+        [
+          "R2-D2",
+          10,
+          [
+            "R2D2",
+            "Artoo"
+          ]
+        ],
+        [
+          "C-3PO",
+          30,
+          [
+            "C3PO",
+            "Threepio"
+          ]
+        ],
+        [
+          "Bilbo Baggins",
+          30,
+          [
+            "Bilbo"
+          ]
+        ],
+        [
+          "Aragorn",
+          10,
+          [
+            "Strider",
+            "Aragorn II Elessar"
+          ]
+        ],
+        [
+          "Legolas",
+          10,
+          []
+        ],
+        [
+          "Frodo Baggins",
+          10,
+          [
+            "Frodo"
+          ]
+        ],
+        [
+          "Samwise Gamgee",
+          30,
+          [
+            "Sam Gamgee"
+          ]
+        ],
+        [
+          "Luna Lovegood",
+          30,
+          []
+        ],
+        [
+          "Sirius Black",
+          30,
+          []
+        ],
+        [
+          "Rubeus Hagrid",
+          30,
+          [
+            "Hagrid"
+          ]
+        ],
+        [
+          "Dr. Watson",
+          10,
+          [
+            "Doctor Watson",
+            "John Watson",
+            "John H. Watson"
+          ]
+        ],
+        [
+          "Mr. Darcy",
+          30,
+          [
+            "Fitzwilliam Darcy",
+            "Mister Darcy"
+          ]
+        ],
+        [
+          "Ebenezer Scrooge",
+          30,
+          []
+        ],
+        [
+          "Squirrel Girl",
+          60,
+          [
+            "Doreen Green"
+          ]
+        ],
+        [
+          "Superman",
+          10,
+          [
+            "Clark Kent",
+            "Kal-El"
+          ]
+        ],
+        [
+          "Flash",
+          10,
+          [
+            "The Flash"
+          ]
+        ],
+        [
+          "Deadpool",
+          10,
+          [
+            "Wade Wilson"
+          ]
+        ],
+        [
+          "Squirrel Girl",
+          60,
+          [
+            "Doreen Green"
+          ]
+        ],
+        [
+          "Matter-Eater Lad",
+          85,
+          [
+            "Tenzil Kem"
+          ]
+        ]
+      ]
+    },
+    "fun-tv": {
+      "source": "Established original/English programme names and conventional acronyms; existing source catalogue remains the inventory.",
+      "add": [
+        [
+          "Sex Education",
+          30,
+          []
+        ],
+        [
+          "The End of the F***ing World",
+          60,
+          [
+            "The End of the Fucking World"
+          ]
+        ],
+        [
+          "Attack on Titan",
+          10,
+          [
+            "Shingeki no Kyojin",
+            "AOT"
+          ]
+        ],
+        [
+          "Fullmetal Alchemist: Brotherhood",
+          30,
+          [
+            "FMAB",
+            "FMA Brotherhood"
+          ]
+        ],
+        [
+          "Better Call Saul",
+          10,
+          [
+            "BCS"
+          ]
+        ],
+        [
+          "Avatar: The Last Airbender",
+          10,
+          [
+            "ATLA",
+            "The Last Airbender"
+          ]
+        ]
+      ]
+    },
+    "fun-video-games": {
+      "source": "Editorial factual names and conventional aliases, reviewed 2026-10-23.",
+      "add": [
+        [
+          "Overwatch 2",
+          10,
+          []
+        ],
+        [
+          "Baldur's Gate 3",
+          10,
+          [
+            "Baldur's Gate III",
+            "BG3"
+          ]
+        ]
+      ]
+    },
+    "fun-fortnite": {
+      "source": "Editorial factual names and conventional aliases, reviewed 2026-10-23.",
+      "add": [
+        [
+          "Son Goku",
+          30,
+          [
+            "Goku"
+          ]
+        ]
+      ]
+    },
+    "fun-stardew": {
+      "source": "Editorial factual names and conventional aliases, reviewed 2026-10-23.",
+      "add": [
+        [
+          "Lucky Purple Shorts",
+          100,
+          [
+            "Mayor's Shorts",
+            "Mayor Lewis's Shorts",
+            "Lewis's Shorts"
+          ]
+        ]
+      ]
+    },
+    "fun-game-items": {
+      "source": "Editorial factual names and conventional aliases, reviewed 2026-10-23.",
+      "add": [
+        [
+          "Wabbajack",
+          60,
+          []
+        ]
+      ]
+    },
+    "fun-movies": {
+      "source": "Editorial factual names and conventional aliases, reviewed 2026-10-23.",
+      "add": [
+        [
+          "Star Wars: Episode I – The Phantom Menace",
+          10,
+          [
+            "The Phantom Menace"
+          ]
+        ],
+        [
+          "Star Wars: The Force Awakens",
+          10,
+          [
+            "The Force Awakens",
+            "Star Wars Episode VII"
+          ]
+        ],
+        [
+          "The Adventures of Buckaroo Banzai",
+          100,
+          [
+            "The Adventures of Buckaroo Banzai Across the 8th Dimension"
+          ]
+        ]
+      ]
+    },
+    "fun-superheroes": {
+      "source": "Editorial factual names and conventional aliases, reviewed 2026-10-23.",
+      "add": [
+        [
+          "Superman",
+          10,
+          [
+            "Clark Kent",
+            "Kal-El"
+          ]
+        ],
+        [
+          "Flash",
+          10,
+          [
+            "The Flash"
+          ]
+        ],
+        [
+          "Deadpool",
+          10,
+          [
+            "Wade Wilson"
+          ]
+        ],
+        [
+          "Squirrel Girl",
+          60,
+          [
+            "Doreen Green"
+          ]
+        ],
+        [
+          "Matter-Eater Lad",
+          85,
+          [
+            "Tenzil Kem"
+          ]
+        ]
+      ]
+    },
+    "fun-animals": {
+      "source": "Editorial factual names and conventional aliases, reviewed 2026-10-23.",
+      "add": [
+        [
+          "Tardigrade",
+          60,
+          [
+            "Water Bear",
+            "Moss Piglet"
+          ]
+        ]
+      ]
+    },
+    "fun-plants": {
+      "source": "Editorial factual names and conventional aliases, reviewed 2026-10-23.",
+      "add": [
+        [
+          "Redwood",
+          10,
+          []
+        ],
+        [
+          "Sequoia",
+          30,
+          []
+        ],
+        [
+          "Cactus",
+          10,
+          [
+            "Cacti"
+          ]
+        ],
+        [
+          "Aloe Vera",
+          10,
+          [
+            "Aloe"
+          ]
+        ],
+        [
+          "Venus Flytrap",
+          30,
+          [
+            "Venus's Flytrap"
+          ]
+        ],
+        [
+          "Monkey Puzzle Tree",
+          60,
+          [
+            "Monkey Puzzle"
+          ]
+        ]
+      ]
+    },
+    "fun-food": {
+      "source": "Editorial factual names and conventional aliases, reviewed 2026-10-23.",
+      "add": [
+        [
+          "Turducken",
+          60,
+          []
+        ],
+        [
+          "Stargazy Pie",
+          85,
+          [
+            "Star Gazey Pie"
+          ]
+        ],
+        [
+          "Döner Kebab",
+          30,
+          [
+            "Döner",
+            "Doner",
+            "Doner Kebab"
+          ]
+        ]
+      ]
+    },
+    "fun-fruit-veg": {
+      "source": "Editorial factual names and conventional aliases, reviewed 2026-10-23.",
+      "add": [
+        [
+          "Beetroot",
+          10,
+          [
+            "Beet"
+          ]
+        ],
+        [
+          "Romanesco",
+          60,
+          [
+            "Romanesco Broccoli",
+            "Romanesco Cauliflower"
+          ]
+        ]
+      ]
+    },
+    "fun-materials": {
+      "source": "Editorial factual names and conventional aliases, reviewed 2026-10-23.",
+      "add": [
+        [
+          "Graphene",
+          60,
+          []
+        ],
+        [
+          "Vantablack",
+          85,
+          []
+        ]
+      ]
+    },
+    "fun-languages": {
+      "source": "Editorial factual names and conventional aliases, reviewed 2026-10-23.",
+      "add": [
+        [
+          "Malay",
+          30,
+          [
+            "Malay (macrolanguage)"
+          ]
+        ],
+        [
+          "Swahili",
+          30,
+          [
+            "Swahili (macrolanguage)",
+            "Kiswahili"
+          ]
+        ],
+        [
+          "Ancient Greek",
+          30,
+          [
+            "Ancient Greek (to 1453)"
+          ]
+        ]
+      ]
+    }
+  }
+}

@@ -59,10 +59,16 @@ export function mountCourtAmbience(canvas){
    const side=i%2,x=w*(side?.77:.025)+((i*19.7+t*.33)%(w*.2)),y=(i*31.7-t*(.3+i%3*.12)+h*10)%h;
    pixel(x,y,1,i%4===0?2:1,i%5===0?'#d5c494':'#97c8cf',.11+(Math.sin(t*.17+i)+1)*.055);
   }
+  // Tiny warm grains move less than two screen pixels over a long water cycle.
+  // This layer sits behind creatures and rocks; the seabed itself stays anchored.
+  for(let i=0;i<64;i++){
+   const x=w*(.2+((i*73)%601)/1000)+Math.sin(t*.17+i*1.7)*.65,y=h*(.2+((i*47)%630)/1000)+Math.sin(t*.12+i)*.25;
+   pixel(x,y,i%7===0?3:i%3===0?2:1,1,i%4===0?'#e0c58e':'#c8d3b7',.025+(Math.sin(t*.14+i*.8)+1)*.018);
+  }
   // Fine broken caustics run over the sand, with occasional gold glints on law props.
   for(let i=0;i<18;i++){
    const x=w*(.18+(i*37%65)/100)+Math.sin(t*.12+i)*3,y=h*(.24+(i%6)*.105);
-   pixel(x,y,9+i%5*4,1,'#b3ddd8',.018+Math.max(0,Math.sin(t*.18+i))*.035);
+   pixel(x,y,9+i%5*4,1,'#cadac1',.018+Math.max(0,Math.sin(t*.18+i))*.035);
   }
   [[.889,.775],[.053,.65],[.905,.644]].forEach(([x,y],i)=>{const shine=Math.pow(Math.max(0,Math.sin(t*.32-i*2)),12);pixel(w*x,h*y,3,1,'#f0db9c',shine*.4);pixel(w*x+1,h*y-1,1,3,'#d7ccac',shine*.2);});
   bursts=bursts.filter(b=>t-b.at<2.8);for(const b of bursts)for(let i=0;i<7;i++){const life=(t-b.at)/2.8;pixel(w*b.x+Math.cos(i*1.3)*life*12,h*b.y-life*(8+i*2),1,1,'#aad8da',(1-life)*.45);}

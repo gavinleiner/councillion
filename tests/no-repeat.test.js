@@ -4,14 +4,17 @@ import {readFileSync} from 'node:fs';
 import {gunzipSync} from 'node:zlib';
 import {createHash} from 'node:crypto';
 import {PACKS,PLAY_PACKS,MIXED_PACKS,PARTY_PACKS} from '../data.js';
+import {questionReview} from '../question-quality.js';
 import {FRESH_DAILY_IDS,FRESH_DAILY_START} from '../daily-schedule.js';
 import {dailyPacks,partyDeck,newParty,startParty,tickParty,partyPack,random} from '../engine.js';
 import {beginParty} from '../party-rules.js';
 import {readQuestionHistory,rememberQuestions} from '../question-history.js';
 import {PartySession} from '../party.js';
 const manifest=JSON.parse(readFileSync(new URL('../variety-bank-manifest.json',import.meta.url)));
-test('thousands of real categories have distinct prompts and answer sets, with factual source records',()=>{
- assert.ok(PLAY_PACKS.length>=2000);assert.ok(PARTY_PACKS.length>=1000);assert.ok(MIXED_PACKS.length>=1350);
+test('source archives retain integrity while only reviewed categories enter automatic play',()=>{
+ assert.ok(PLAY_PACKS.length>=2000);assert.ok(PARTY_PACKS.length>=200);assert.ok(MIXED_PACKS.length>=200);
+ assert.ok(MIXED_PACKS.every(p=>questionReview(p).status==='automatic'));
+ assert.ok(PARTY_PACKS.every(p=>MIXED_PACKS.includes(p)));
  const prompts=new Set(),sets=new Set();
  for(const p of manifest.categories){
   const bytes=gunzipSync(readFileSync(new URL('../variety-banks/'+p.answerFile,import.meta.url))),rows=JSON.parse(bytes);
@@ -28,7 +31,8 @@ test('published daily dates use every scheduled prompt at most once, then stop r
   assert.equal(draw.length,7);assert.deepEqual(draw,dailyPacks(day));for(const p of draw){assert.ok(!seen.has(p.id));seen.add(p.id);}
  }
  const end=new Date(Date.parse(FRESH_DAILY_START+'T12:00:00Z')+Math.floor(FRESH_DAILY_IDS.length/7)*86400000).toISOString().slice(0,10);assert.deepEqual(dailyPacks(end),[]);
- assert.ok(seen.size>=1350);
+ assert.equal(seen.size,Math.floor(FRESH_DAILY_IDS.length/7)*7);
+ assert.ok(seen.size>=30*7);
 });
 test('puffer excludes recorded questions through rematches, host-state serialization and a new room',()=>{
  const players=[{id:'a',name:'A',ready:true},{id:'b',name:'B',ready:true}],s=newParty(players,random(4));startParty(s,1000,()=>0);const first=partyPack(s).id;assert.ok(s.seenIds.includes(first));

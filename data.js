@@ -1,3 +1,4 @@
+import {questionReview} from './question-quality.js';
 import {VARIETY_PACKS} from './variety-question-catalog.js';
 import {FUN_PACKS} from './fun-question-catalog.js';
 import {EXPANDED_PACKS} from './expanded-banks.js';
@@ -64,14 +65,15 @@ PACKS.push(...EXPANDED_PACKS);
 PACKS.push(...CATALOG_PACKS);
 PACKS.push(...FUN_PACKS,...VARIETY_PACKS);
 export const PLAY_PACKS=PACKS.filter(p=>p.dailyEligible);
+export const REVIEWED_PACKS=PLAY_PACKS.filter(p=>questionReview(p).status!=='archived');
 export const ORIGINAL_PLAY_PACKS=PLAY_PACKS.filter(p=>!p.catalogVersion&&!p.funVersion);
 export const answerCount=pack=>pack.answerCount??pack.answers.length;
 
 // Specialist inventories stay available without dominating ordinary games.
-const approachable=new Set(['no-wheels','airline-extras','cultured-dairy','seasonings','condiment-counter','sandwiches','tea-varieties','dog-breeds','cat-breeds','flower-names','weather-conditions','board-game-titles','literary-authors','occupation-titles','clothing-items','household-appliances','room-types','programming-languages','named-colours','food-preparation-verbs','catalog-soups','catalog-cakes','catalog-breads','catalog-desserts','catalog-salads','catalog-noodles','catalog-street-foods','catalog-snacks','catalog-coffee-drinks','catalog-confectionery','catalog-instrument-types','catalog-genre-clean','catalog-card-games','catalog-dances','catalog-mythical-creature-types','catalog-furniture-types','catalog-hand-tool-types','world-capitals','pokemon-species']);
 // Equivalent requests share a concept key even when their inventories differ.
 // Prefer the earlier, fuller curated bank over a lexical rewording.
 const equivalents={
+ 'var-semantic-shark-n-01':'animal-sharks','var-semantic-frog-n-01':'animal-frogs','var-semantic-rodent-n-01':'animal-rodents','var-semantic-snake-n-01':'animal-snakes',
  'var-semantic-bird-n-01':'fun-birds',
  'var-semantic-cake-n-03':'catalog-cakes','var-semantic-bread-n-01':'catalog-breads',
  'var-semantic-dessert-n-01':'catalog-desserts','var-semantic-cheese-n-01':'cultured-dairy',
@@ -86,7 +88,7 @@ const equivalents={
  'var-semantic-fish-n-01':'fun-sea-life'
 };
 for(const p of PACKS)p.questionKey=equivalents[p.id]??p.id;
-const concepts=new Map(),candidates=PLAY_PACKS.filter(p=>p.funVersion?p.mixed:(approachable.has(p.id)||Object.values(equivalents).includes(p.id)));
+const concepts=new Map(),candidates=REVIEWED_PACKS.filter(p=>questionReview(p).status==='automatic');
 export const MIXED_PACKS=candidates.filter(p=>{if(concepts.has(p.questionKey))return false;concepts.set(p.questionKey,p.id);return true;});
 export const canonicalQuestionId=id=>{const p=PACKS.find(p=>p.id===id);return concepts.get(p?.questionKey)??id;};
 for(const p of MIXED_PACKS)if(p.id==='pokemon-species')p.family='gaming';
