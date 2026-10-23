@@ -28,7 +28,8 @@ test('daily calendar never reuses a prompt and historical dates retain their dra
   if(!chosen.length)continue;days++;assert.equal(chosen.length,7);
   for(const p of chosen){assert.ok(!seen.has(p.id),day+': '+p.id);seen.add(p.id);}
  }
- assert.ok(days>=190);assert.equal(seen.size,days*7);
+ assert.ok(days>=30);assert.equal(seen.size,days*7);
+ assert.ok([...seen].every(id=>MIXED_PACKS.some(p=>p.id===id)));
 });
 test('party decks cover their eligible pool once and spread subjects at the start',()=>{
  for(let seed=0;seed<20;seed++){

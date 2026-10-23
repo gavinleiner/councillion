@@ -404,9 +404,9 @@ const closeReadingDistractors={
   "A witness’s statement retracting an identification of Brady as a participant."
  ],
  "fc-9-1": [
-  "Schools retain the same authority over every off-campus complaint as over classroom speech.",
-  "The result depended on a categorical rule that extracurricular discipline never implicates speech.",
-  "Any off-campus post using vulgar language is protected even when it contains a targeted threat."
+  "B.L.’s particular vulgar complaint was protected on the facts described in the review.",
+  "Schools may still have grounds to address serious threats or targeted off-campus bullying.",
+  "Brief classroom discussion and upset cheerleaders did not establish substantial disruption here."
  ],
  "fc-9-2": [
   "An after-school activity on campus, using her own phone after a team meeting.",

@@ -72,6 +72,7 @@ function wordScore(query,target){
 }
 function grams(value){const g=new Set();for(let i=0;i<value.length-1;i++)g.add(value.slice(i,i+2));return g;}
 export function resolveAnswer(pack,input){
+ const literal=pack.literalAliases?.[String(input??'').trim()];if(literal){const answer=compile(pack).exact.get(normalize(literal));if(answer)return {status:'exact',answer:{...answer,corrected:false},choices:[]};}
  const query=normalize(String(input??'').slice(0,256));if(!query)return {status:'missing',choices:[]};
  const bank=compile(pack),exact=bank.exact.get(query);if(exact)return {status:'exact',answer:{...exact,corrected:false},choices:[]};
  if(pack.excludedAnswers?.some(name=>normalize(name)===query))return {status:'missing',choices:[]};

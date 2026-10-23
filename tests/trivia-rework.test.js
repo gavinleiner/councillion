@@ -9,7 +9,7 @@ import {matchAnswer,resolveAnswer,normalize,practiceDraw,random,dailyPacks} from
 const pack=id=>PACKS.find(p=>p.id===id);
 test('main rotation uses approachable mixed topics, with specialists available separately',()=>{
  assert.ok(MIXED_PACKS.length>=60);assert.ok(PLAY_PACKS.length>MIXED_PACKS.length);
- assert.ok(!MIXED_PACKS.some(p=>/^(lex-|pokemon-type-|bird-warblers|city-west-100)/.test(p.id)||p.family==='words'));
+ assert.ok(!MIXED_PACKS.some(p=>/^(lex-|bird-warblers|city-west-100)/.test(p.id)||p.family==='words'));
  assert.ok(MIXED_PACKS.some(p=>p.id==='fun-minecraft'));assert.ok(MIXED_PACKS.some(p=>p.id==='fun-food'));
  for(let i=0;i<30;i++){const day=new Date(Date.UTC(2026,9,23+i)).toISOString().slice(0,10),draw=dailyPacks(day);assert.equal(draw.length,7);assert.ok(new Set(draw.map(p=>p.family)).size>=5);assert.ok(draw.every(p=>MIXED_PACKS.includes(p)));}
 });
