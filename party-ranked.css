@@ -73,3 +73,7 @@ body[data-screen='party']:not([data-party-arena='true']) main{max-width:1280px;p
 @keyframes ai-buddy-blink{0%,95%,98%,100%{opacity:0}96%,97%{opacity:1}}@keyframes ai-squid-sway{0%,100%{transform:rotate(-1.5deg)}50%{transform:rotate(1.5deg)}}@keyframes ai-lure-sway{0%,100%{transform:rotate(-1deg)}50%{transform:rotate(1.2deg)}}@keyframes ai-lure-light{0%,100%{opacity:.04}50%{opacity:.12}}@keyframes ai-clerk-idle{0%,100%{transform:translateY(0) rotate(-.5deg)}50%{transform:translateY(-.7px) rotate(.5deg)}}
 @media(max-width:640px){.party-arena[data-phase] .player-buddy[data-kind='schooler']{--stand-shift:22px}.party-arena[data-phase] .player-buddy[data-kind='squid']{--stand-shift:18px}.party-arena[data-phase] .player-buddy[data-kind='angler']{--stand-shift:23px}}
 @media(prefers-reduced-motion:reduce){.party-ai-buddy,.party-ai-buddy *{animation:none!important}.ai-buddy-lid{display:none}}body.reduced :is(.party-ai-buddy,.party-ai-buddy *){animation:none!important}body.reduced .ai-buddy-lid{display:none}
+/* Paint the entire scrollable setup page, including Host and Join below the fold. */
+body[data-screen='party']:not([data-party-arena='true']){position:relative}
+body[data-screen='party']:not([data-party-arena='true']):before{position:absolute;inset:0;min-height:100%;background-size:cover;background-position:center top}
+.party-entry>.court-atmosphere{position:absolute;inset:0}
