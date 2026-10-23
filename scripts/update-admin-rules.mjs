@@ -1,9 +1,9 @@
 import {readFile,writeFile} from 'node:fs/promises';
-import {OWNER_EMAIL,VICE_PRESIDENT_EMAIL,PRESIDENT_EMAIL} from '../account-honors.js';
+import {OWNER_EMAIL,VICE_PRESIDENT_EMAILS,PRESIDENT_EMAIL} from '../account-honors.js';
 const file=new URL('../database.rules.json',import.meta.url),data=JSON.parse(await readFile(file,'utf8')),r=data.rules;
 const google="auth !== null && auth.token.firebase.sign_in_provider === 'google.com'";
 const owner=`${google} && auth.token.email_verified === true && auth.token.email === '${OWNER_EMAIL}'`;
-const vice=`${google} && auth.token.email_verified === true && auth.token.email === '${VICE_PRESIDENT_EMAIL}'`;
+const vice=`${google} && auth.token.email_verified === true && (${VICE_PRESIDENT_EMAILS.map(email=>"auth.token.email === '"+email+"'").join(' || ')})`;
 const president=`${google} && auth.token.email_verified === true && auth.token.email === '${PRESIDENT_EMAIL}'`;
 r.rooms['.read']=owner;
 r.rooms.$code['.write']=`${google} && ((!data.exists() && newData.child('meta/host').val() === auth.uid && newData.child('meta/version').val() === 3) || data.child('meta/host').val() === auth.uid || (${owner}))`;
