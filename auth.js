@@ -1,7 +1,7 @@
 import {GOOGLE_CLIENT_ID} from './auth-config.js';
 import {verifyGoogleToken} from './google-token.js';
 let gisPromise,keyCache;
-const loadCloud=()=>import('./cloud.bundle.js?v=20261022-puffer-v10');
+const loadCloud=()=>import('./cloud.bundle.js?v=20261022-owner-v1');
 async function googleKeys(){if(keyCache&&keyCache.until>Date.now())return keyCache.keys;const response=await fetch('https://www.googleapis.com/oauth2/v3/certs',{credentials:'omit'});if(!response.ok)throw Error('Google is temporarily unavailable. Try again.');const {keys}=await response.json();keyCache={keys,until:Date.now()+Math.min(3600,Number(response.headers.get('cache-control')?.match(/max-age=(\d+)/)?.[1])||300)*1000};return keys;}
 function loadGoogle(){if(globalThis.google?.accounts?.id)return Promise.resolve();return gisPromise??=new Promise((resolve,reject)=>{const script=document.createElement('script');script.src='https://accounts.google.com/gsi/client';script.async=true;script.onload=resolve;script.onerror=()=>{gisPromise=null;script.remove();reject(Error('Could not load Google sign-in. Check your connection and try again.'));};document.head.append(script);});}
 const forgetLegacy=()=>{try{sessionStorage.removeItem('fc:google-session');}catch{}};
