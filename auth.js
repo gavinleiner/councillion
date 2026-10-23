@@ -1,7 +1,7 @@
 import {GOOGLE_CLIENT_ID} from './auth-config.js';
 import {verifyGoogleToken} from './google-token.js';
 let gisPromise,keyCache;
-const loadCloud=()=>import('./cloud.bundle.js?v=20261022-owner-v1');
+const loadCloud=()=>import('./cloud.bundle.js?v=20261022-entrance-v1');
 async function googleKeys(){if(keyCache&&keyCache.until>Date.now())return keyCache.keys;const response=await fetch('https://www.googleapis.com/oauth2/v3/certs',{credentials:'omit'});if(!response.ok)throw Error('Google is temporarily unavailable. Try again.');const {keys}=await response.json();keyCache={keys,until:Date.now()+Math.min(3600,Number(response.headers.get('cache-control')?.match(/max-age=(\d+)/)?.[1])||300)*1000};return keys;}
 function loadGoogle(){if(globalThis.google?.accounts?.id)return Promise.resolve();return gisPromise??=new Promise((resolve,reject)=>{const script=document.createElement('script');script.src='https://accounts.google.com/gsi/client';script.async=true;script.onload=resolve;script.onerror=()=>{gisPromise=null;script.remove();reject(Error('Could not load Google sign-in. Check your connection and try again.'));};document.head.append(script);});}
 const forgetLegacy=()=>{try{sessionStorage.removeItem('fc:google-session');}catch{}};
@@ -42,6 +42,7 @@ export function connectAccount({button,modal,escape,onIdentity=()=>{},beforeSign
  }
  async function refresh(){if(signingOut||disposed)return;await ready;const turn=revision;try{const m=await cloud(),identity=await m.restoreAccount();if(turn===revision)publish(identity);}catch(error){restoreError=error.message;/* Going offline must not sign the user out. */}}
  async function open(){
+  if(document.documentElement.hasAttribute('data-entrance'))return;
   modal('<p class="eyebrow">YOUR COUNSEL PROFILE</p><h2>OPENING YOUR PROFILE…</h2>');await ready;
   if(current){modal('<p class="eyebrow">YOUR COUNSEL PROFILE</p><h2>'+escape(current.name)+'</h2><p class="account-email">'+escape(current.email)+'</p>'+profileMarkup(current)+'<p class="muted">Google sign-in stays connected when you return to this browser, until you sign out. Your nickname, buddy, dives and settings stay on this device.</p><button class="pixel-button" id="google-signout">SIGN OUT</button><p class="fine-print">On a shared laptop, sign out when you finish. <a href="privacy.html" target="_blank" rel="noopener">Privacy & data</a></p>');bindProfile(current);document.querySelector('#google-signout').onclick=async()=>{try{await clearIdentity();globalThis.google?.accounts?.id.disableAutoSelect();open();}catch{modal('<h2>SIGN-OUT NEEDS ANOTHER TRY</h2><p>Please reconnect and choose Sign out again.</p><button class="pixel-button" id="google-signout">RETRY SIGN-OUT</button>');document.querySelector('#google-signout').onclick=async()=>{await clearIdentity();open();};}};return;}
   modal('<p class="eyebrow">WELCOME TO THE COURT</p><h2>SIGN IN</h2><p>Connect your Google profile to Councillion.</p><div id="google-button" class="google-button"></div><p id="auth-status" class="notice" role="status">'+(GOOGLE_CLIENT_ID?'Loading Google…':'Google sign-in is being configured.')+'</p><p class="muted">You’ll stay signed in on this browser. Daily, Practice and Endless also work as a guest.</p><p class="fine-print"><a href="privacy.html" target="_blank" rel="noopener">Privacy & data</a></p>');
