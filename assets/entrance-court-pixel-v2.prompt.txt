@@ -1,0 +1,11 @@
+Tool: built-in image_gen, edit/style-transfer. No API fallback.
+Output source: /Users/gavin/.codex/generated_images/01a160d5-54c6-7e42-b905-7ed9a7f03a28/exec-8a9cf354-5e94-4f61-a12f-54fb95bfc979.png
+Input 1 (composition/edit target): /Users/gavin/.codex/generated_images/01a160d5-54c6-7e42-b905-7ed9a7f03a28/exec-b48c1711-9977-426a-ba02-050d2c8dbddb.png
+Input 2 (pixel style reference): /Users/gavin/Documents/Codex/2026-10-21/can-2/work/puffer-ranked/counsel-reference.png
+
+Use case: style-transfer.
+Asset type: full-screen background for Councillion's password entrance, a Krillion-inspired pixel-art browser trivia game.
+Image 1 is the EDIT TARGET and COMPOSITION reference. Image 2 is ONLY a PIXEL LANGUAGE reference from our approved counsel shrimp; do not insert that shrimp in the background.
+Redraw image 1 as authentic deliberately authored low-resolution 2D game pixel art. Preserve its exact scene and framing: central sunken courthouse doorway, two flanking columns, triangular pediment with small gold scales of justice, steps, distant ruined arcades, books on both bottom corners and gavel at bottom right. Keep the portal large, completely empty and dark navy for our HTML form. Keep the same wide 16:9 composition and underwater blue mood.
+The requested Krillion theme means simple readable silhouettes, crisp chunky pixel clusters, restrained 24–32 color navy/teal/cyan palette, sparse cream/gold accents, 2–3 flat shading tones per material, tiny pixel fish and sparse coral. Think a polished 320x180 or 480x270 game background enlarged using nearest neighbor, consistent with the pixel size and clean forms of image 2. Detailed through careful shapes and depth layers, not through thousands of tiny texture flecks. Far scenery is much quieter and darker than the front columns. The upper water surface has just a few clean pixel ripples. Muted calm game scenery, no cinematic glow.
+Change the rendering style, not the composition or legal theme. Remove the original painterly microtexture, fuzzy dithering, realistic lighting and high-frequency ornament. Do not merely apply a pixelation filter to the original. No photorealism, no 3D, no airbrushing, no text, no logo, no UI controls, no watermark, no characters in the central portal.
