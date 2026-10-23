@@ -1,0 +1,5 @@
+import test from 'node:test';import assert from 'node:assert/strict';
+import {knownCounsel,rememberCounsel,leaderboardRows} from '../party-leaderboard.js';
+import {emptyCareer} from '../party-career.js';
+test('friend names persist separately for each Google identity and broken cache is safe',()=>{const m=new Map(),s={getItem:k=>m.get(k),setItem:(k,v)=>m.set(k,v)};rememberCounsel(s,'a',{b:{name:'Friend'},a:{name:'Me'}});assert.equal(knownCounsel(s,'a').b.name,'Friend');assert.deepEqual(knownCounsel(s,'b'),{});m.set('councillion-rivals:a','broken');assert.deepEqual(knownCounsel(s,'a'),{});});
+test('leaderboard orders real placed careers ahead of placements and escapes display names',()=>{const c=emptyCareer(),rows=[{id:'a',name:'<img onerror=x>',career:{...c,ranked:5,rating:1300,wins:3,losses:2}},{id:'b',name:'Friend',career:{...c,ranked:8,rating:1500}},{id:'c',name:'New',career:{...c,rating:1700}}],html=leaderboardRows(rows,'a');assert.ok(html.indexOf('Friend')<html.indexOf('&lt;img'));assert.ok(html.indexOf('&lt;img')<html.indexOf('New'));assert.ok(!html.includes('<img onerror='));assert.match(html,/UNRANKED/);assert.match(html,/3–2/);});
