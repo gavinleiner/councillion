@@ -12,7 +12,7 @@ import {canAdmin} from './account-honors.js';
 import {matchResult,rankedWinStreak} from './party-career.js';
 import {validateDisplayName,safeDisplayName,validateChat,containsBlockedLanguage} from './moderation.js';
 const cleanName=validateDisplayName;
-const loadCloud=()=>import('./cloud.bundle.js?v=20261022-entrance-v1');
+const loadCloud=()=>import('./cloud.bundle.js?v=20261022-pres-v1');
 const json=value=>JSON.parse(JSON.stringify(value));
 const friendly=e=>e?.code==='PERMISSION_DENIED'||e?.code==='database/permission-denied'?'This room is unavailable, full, or your Google session needs refreshing.':e?.message||'Connection interrupted. Try again.';
 export async function publicRooms(authorize,callback,onError){await authorize();const c=await loadCloud();return c.onValue(c.query(c.ref(c.db,'directory'),c.orderByChild('updatedAt'),c.limitToLast(100)),snapshot=>{const now=Date.now();callback(Object.entries(snapshot.val()??{}).filter(([,r])=>now-r.updatedAt<45000).filter(([,r])=>r.protocol===4).map(([code,r])=>({code,...r})).sort((a,b)=>(a.phase==='lobby'?-1:1)-(b.phase==='lobby'?-1:1)||b.count-a.count));},e=>onError(friendly(e)));}

@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {Window} from 'happy-dom';
-import {honorForClaims,canAdmin,OWNER_EMAIL,VICE_PRESIDENT_EMAIL} from '../account-honors.js';
+import {honorForClaims,canAdmin,OWNER_EMAIL,VICE_PRESIDENT_EMAIL,PRESIDENT_EMAIL} from '../account-honors.js';
 import {googleIdentity} from '../account-identity.js';
 import {bannerMarkup} from '../party-badges.js';
 import {PartyView} from '../party-view.js';
@@ -10,7 +10,10 @@ import {activeOwnerEffect,mountOwnerConsole} from '../party-admin.js';
 test('only exact verified Google accounts receive their assigned entitlement',()=>{
  assert.deepEqual(honorForClaims({email:OWNER_EMAIL,email_verified:true},'google.com'),{kind:'owner',title:'super-admin'});
  assert.deepEqual(honorForClaims({email:VICE_PRESIDENT_EMAIL,email_verified:true},'google.com'),{kind:'vice-president',title:'vice-president'});
- for(const email of ['fake.'+OWNER_EMAIL,OWNER_EMAIL+'.invalid',VICE_PRESIDENT_EMAIL+'.invalid'])assert.equal(honorForClaims({email,email_verified:true},'google.com'),null);
+ assert.deepEqual(honorForClaims({email:PRESIDENT_EMAIL,email_verified:true},'google.com'),{kind:'president',title:'pres'});
+ for(const provider of ['password',null])assert.equal(honorForClaims({email:PRESIDENT_EMAIL,email_verified:true},provider),null);
+ assert.equal(honorForClaims({email:PRESIDENT_EMAIL,email_verified:false},'google.com'),null);
+ for(const email of ['fake.'+OWNER_EMAIL,OWNER_EMAIL+'.invalid',VICE_PRESIDENT_EMAIL+'.invalid',PRESIDENT_EMAIL+'.invalid'])assert.equal(honorForClaims({email,email_verified:true},'google.com'),null);
  assert.equal(honorForClaims({email:OWNER_EMAIL,email_verified:false},'google.com'),null);
  assert.equal(honorForClaims({email:OWNER_EMAIL,email_verified:true},'password'),null);
 });
@@ -18,6 +21,7 @@ test('Firebase signed claims determine admin access, never editable provider pro
  const mock=(claims,email=OWNER_EMAIL)=>({uid:'firebase-id',email,displayName:'Owner',providerData:[{providerId:'google.com',uid:'google-id',email}],async getIdTokenResult(){return {claims,signInProvider:'google.com',expirationTime:new Date(Date.now()+3600000).toISOString()};}});
  const owner=await googleIdentity(mock({email:OWNER_EMAIL,email_verified:true}));assert.equal(canAdmin(owner),true);
  const vp=await googleIdentity(mock({email:VICE_PRESIDENT_EMAIL,email_verified:true},VICE_PRESIDENT_EMAIL));assert.equal(vp.role,'player');assert.equal(canAdmin(vp),false);
+ const president=await googleIdentity(mock({email:PRESIDENT_EMAIL,email_verified:true},PRESIDENT_EMAIL));assert.equal(president.role,'player');assert.equal(canAdmin(president),false);
  const spoof=await googleIdentity(mock({email:'other@example.invalid',email_verified:true}));assert.equal(canAdmin(spoof),false);
  assert.equal(canAdmin({...owner,expires:1}),false);
 });
@@ -25,6 +29,7 @@ test('assigned honors use one text banner while keeping the normal earned rank i
  const window=new Window();globalThis.document=window.document;
  document.body.innerHTML=bannerMarkup({name:'Logan',honor:{kind:'vice-president',title:'vice-president'}});
  assert.equal(document.querySelectorAll('.player-text-banner').length,1);assert.equal(document.querySelector('.player-text-banner').textContent,'VICE PRESIDENT');assert.match(document.querySelector('.player-image-badge').getAttribute('src'),/rank-unranked/);
+ document.body.innerHTML=bannerMarkup({name:'Gavin',honor:{kind:'president',title:'pres'}});assert.equal(document.querySelectorAll('.player-text-banner').length,1);assert.equal(document.querySelector('.player-text-banner').textContent,'pres');assert.match(document.querySelector('.player-image-badge').getAttribute('src'),/rank-unranked/);
  document.body.innerHTML=bannerMarkup({cosmetics:{honor:{kind:'owner',title:'super-admin'},role:'super_admin'}});assert.equal(document.querySelector('.account-honor'),null);
  assert.throws(()=>mountOwnerConsole(document.body,{identity:{role:'player',expires:Date.now()/1000+3600}}),/Only the owner/);
 });
