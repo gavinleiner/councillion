@@ -905,7 +905,7 @@ id,prompt,daily,puffer,canonical_answers
 "discovery-mlb-p","Name an MLB pitcher (through 2025).","true","true","11787"
 "discovery-mlb-players","Name someone who has played Major League Baseball (through 2025).","true","true","22892"
 "discovery-mlb-ss","Name an MLB shortstop (through 2025).","true","true","3827"
-"discovery-mlb-team-ana","Name a player who appeared for the Los Angeles Angels of Anaheim franchise by 2025. Earlier team names count.","true","true","1261"
+"discovery-mlb-team-ana","Name a player who appeared for the Los Angeles Angels franchise by 2025. Earlier team names count.","true","true","1261"
 "discovery-mlb-team-ari","Name a player who appeared for the Arizona Diamondbacks franchise by 2025. Earlier team names count.","true","true","644"
 "discovery-mlb-team-atl","Name a player who appeared for the Atlanta Braves franchise by 2025. Earlier team names count.","true","true","2132"
 "discovery-mlb-team-bal","Name a player who appeared for the Baltimore Orioles franchise by 2025. Earlier team names count.","true","true","1996"
