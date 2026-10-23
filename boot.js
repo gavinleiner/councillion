@@ -1,5 +1,5 @@
 import {mountEntrance} from './access-gate.js';
-const VERSION='20261022-puffer-life-v2';
+const VERSION='20261023-shared-daily-v1';
 const root=document.querySelector('#entrance');
 let gameLoading;
 const loadGame=()=>gameLoading??=new Promise((resolve,reject)=>{const script=document.createElement('script');script.src='game.bundle.js?v='+VERSION;script.onload=resolve;script.onerror=()=>{gameLoading=null;script.remove();reject(Error('Game download failed'));};document.head.append(script);});
