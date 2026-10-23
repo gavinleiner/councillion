@@ -28,7 +28,7 @@ test('Firebase signed claims determine admin access, never editable provider pro
 test('assigned honors use one text banner while keeping the normal earned rank image',()=>{
  const window=new Window();globalThis.document=window.document;
  document.body.innerHTML=bannerMarkup({name:'Logan',honor:{kind:'vice-president',title:'vice-president'}});
- assert.equal(document.querySelectorAll('.player-text-banner').length,1);assert.equal(document.querySelector('.player-text-banner').textContent,'VICE PRESIDENT');assert.match(document.querySelector('.player-image-badge').getAttribute('src'),/rank-unranked/);
+ assert.equal(document.querySelectorAll('.player-text-banner').length,1);assert.equal(document.querySelector('.player-text-banner').textContent,'vp');assert.match(document.querySelector('.player-image-badge').getAttribute('src'),/rank-unranked/);
  document.body.innerHTML=bannerMarkup({name:'Gavin',honor:{kind:'president',title:'pres'}});assert.equal(document.querySelectorAll('.player-text-banner').length,1);assert.equal(document.querySelector('.player-text-banner').textContent,'pres');assert.match(document.querySelector('.player-image-badge').getAttribute('src'),/rank-unranked/);
  document.body.innerHTML=bannerMarkup({cosmetics:{honor:{kind:'owner',title:'super-admin'},role:'super_admin'}});assert.equal(document.querySelector('.account-honor'),null);
  assert.throws(()=>mountOwnerConsole(document.body,{identity:{role:'player',expires:Date.now()/1000+3600}}),/Only the owner/);

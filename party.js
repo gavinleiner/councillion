@@ -9,10 +9,11 @@ import {warmAnswerBank} from './answer-matching.js';
 import {PartyProfileStore,saveMatchResult} from './party-profile.js';
 import {rememberCounsel} from './party-leaderboard.js';
 import {canAdmin} from './account-honors.js';
-import {matchResult,rankedWinStreak} from './party-career.js';
+import {matchResult,rankedWinStreak,RANK_SEASON} from './party-career.js';
 import {validateDisplayName,safeDisplayName,validateChat,containsBlockedLanguage} from './moderation.js';
 const cleanName=validateDisplayName;
-const loadCloud=()=>import('./cloud.bundle.js?v=20261022-pres-v1');
+const partyCatalogBuild=()=>catalogBuild()+'-'+RANK_SEASON;
+const loadCloud=()=>import('./cloud.bundle.js?v=20261023-court2-v1');
 const json=value=>JSON.parse(JSON.stringify(value));
 const friendly=e=>e?.code==='PERMISSION_DENIED'||e?.code==='database/permission-denied'?'This room is unavailable, full, or your Google session needs refreshing.':e?.message||'Connection interrupted. Try again.';
 export async function publicRooms(authorize,callback,onError){await authorize();const c=await loadCloud();return c.onValue(c.query(c.ref(c.db,'directory'),c.orderByChild('updatedAt'),c.limitToLast(100)),snapshot=>{const now=Date.now();callback(Object.entries(snapshot.val()??{}).filter(([,r])=>now-r.updatedAt<45000).filter(([,r])=>r.protocol===4).map(([code,r])=>({code,...r})).sort((a,b)=>(a.phase==='lobby'?-1:1)-(b.phase==='lobby'?-1:1)||b.count-a.count));},e=>onError(friendly(e)));}
@@ -25,11 +26,11 @@ export class PartySession{
  get isAdmin(){return canAdmin(this.getIdentity());}
  async create(name,options={}){
   await this.auth();this.host=true;this.name=cleanName(name);this.mode=options.mode==='casual'?'casual':'ranked';this.buddy=options.buddy??'krill';
-  for(let i=0;i<5;i++){this.code=Array.from(crypto.getRandomValues(new Uint8Array(4)),x=>'ABCDEFGHJKLMNPQRSTUVWXYZ'[x%24]).join('');const m={name:this.name,buddy:this.buddy,protocol:4,joinedAt:Date.now(),lastSeen:Date.now(),online:true,ready:true,autoJoin:false};const state=newParty([{id:this.myId,...m}],Math.random,readQuestionHistory(this.myId));state.mode=this.mode;state.settings.maxPlayers=[2,3,6].includes(options.maxPlayers)?options.maxPlayers:6;this.meta={protocol:4,mode:this.mode,host:this.myId,hostName:this.name,version:3,catalogBuild:catalogBuild(),createdAt:Date.now(),isPrivate:!!options.isPrivate,seats:state.settings.maxPlayers,phase:'lobby'};try{await this.c.set(this.path(),{meta:this.meta,members:{[this.myId]:m},state});this.state=state;this.members={[this.myId]:m};await this.listen();return;}catch(e){if(i===4)throw Error(friendly(e));}}
+  for(let i=0;i<5;i++){this.code=Array.from(crypto.getRandomValues(new Uint8Array(4)),x=>'ABCDEFGHJKLMNPQRSTUVWXYZ'[x%24]).join('');const m={name:this.name,buddy:this.buddy,protocol:4,joinedAt:Date.now(),lastSeen:Date.now(),online:true,ready:true,autoJoin:false};const state=newParty([{id:this.myId,...m}],Math.random,readQuestionHistory(this.myId));state.mode=this.mode;state.settings.maxPlayers=[2,3,6].includes(options.maxPlayers)?options.maxPlayers:6;this.meta={protocol:4,mode:this.mode,host:this.myId,hostName:this.name,version:3,catalogBuild:partyCatalogBuild(),createdAt:Date.now(),isPrivate:!!options.isPrivate,seats:state.settings.maxPlayers,phase:'lobby'};try{await this.c.set(this.path(),{meta:this.meta,members:{[this.myId]:m},state});this.state=state;this.members={[this.myId]:m};await this.listen();return;}catch(e){if(i===4)throw Error(friendly(e));}}
  }
  async join(name,code,options={}){
   await this.auth();this.name=cleanName(name);this.buddy=options.buddy??'krill';this.code=String(code??'').toUpperCase().replace(/[^A-Z]/g,'');if(this.code.length!==4)throw Error('Enter a four-letter room code.');
-  const meta=(await this.c.get(this.path('meta'))).val();if(!meta||Date.now()-meta.createdAt>24*3600000)throw Error('Room not found. Check the code or host a new room.');if(meta.mode!=='ranked'&&options.mode==='ranked')throw Error('This is an older Casual room. Ask the host to create a new ranked court.');if(meta.catalogBuild&&meta.catalogBuild!==catalogBuild())throw Error('This room uses a different question update. Refresh Councillion before joining.');if(meta.protocol!==4)throw Error('This room uses the previous Puffer version. Ask the host to refresh and create a new room.');this.meta=meta;this.mode=meta.mode??'casual';this.host=meta.host===this.myId;
+  const meta=(await this.c.get(this.path('meta'))).val();if(!meta||Date.now()-meta.createdAt>24*3600000)throw Error('Room not found. Check the code or host a new room.');if(meta.mode!=='ranked'&&options.mode==='ranked')throw Error('This is an older Casual room. Ask the host to create a new ranked court.');if(meta.catalogBuild&&meta.catalogBuild!==partyCatalogBuild())throw Error('This room uses another game season or question update. Refresh and ask the host to create a new court.');if(meta.protocol!==4)throw Error('This room uses the previous Puffer version. Ask the host to refresh and create a new room.');this.meta=meta;this.mode=meta.mode??'casual';this.host=meta.host===this.myId;
   await this.c.set(this.path('members/'+this.myId),{name:this.name,buddy:this.buddy,protocol:4,joinedAt:Date.now(),lastSeen:Date.now(),online:true,ready:meta.phase==='lobby',autoJoin:false});await this.listen();await this.reportHistory();
  }
  async listen(){const c=this.c;this.unsub.push(c.onValue(c.ref(c.db,'.info/serverTimeOffset'),snap=>this.offset=snap.val()??0));
