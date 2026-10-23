@@ -17,3 +17,5 @@ database-debug.log
 ui-debug.log
 
 __pycache__/
+
+/entrance-preview.html
