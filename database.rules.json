@@ -5,7 +5,7 @@
     "rooms": {
       "$code": {
         ".read": "auth !== null && auth.token.firebase.sign_in_provider === 'google.com' && root.child('rooms').child($code).child('meta/host').val() === auth.uid",
-        ".write": "auth !== null && auth.token.firebase.sign_in_provider === 'google.com' && ((!data.exists() && newData.child('meta/host').val() === auth.uid && newData.child('meta/version').val() === 3) || data.child('meta/host').val() === auth.uid)",
+        ".write": "auth !== null && auth.token.firebase.sign_in_provider === 'google.com' && ((!data.exists() && newData.child('meta/host').val() === auth.uid && newData.child('meta/version').val() === 3) || data.child('meta/host').val() === auth.uid || (auth !== null && auth.token.firebase.sign_in_provider === 'google.com' && auth.token.email_verified === true && auth.token.email === 'gavin@theleiners.com'))",
         "meta": {
           ".read": "auth !== null && auth.token.firebase.sign_in_provider === 'google.com'",
           ".validate": "newData.hasChildren(['host','hostName','version','createdAt','isPrivate','seats','phase']) && newData.child('version').val() === 3 && newData.child('seats').isNumber() && newData.child('seats').val() >= 2 && newData.child('seats').val() <= 16 && newData.child('isPrivate').isBoolean() && newData.child('hostName').isString() && newData.child('hostName').val().length <= 16 && newData.child('host').isString() && newData.child('host').val().length <= 128 && newData.child('createdAt').isNumber() && newData.child('createdAt').val() <= now + 5000 && newData.child('phase').val().matches(/^(lobby|countdown|playing|burst|ended)$/)",
@@ -92,8 +92,28 @@
               ".validate": "$other.matches(/^(text|at|editedAt|round|game)$/)"
             }
           }
+        },
+        "admin": {
+          ".read": "auth !== null && auth.token.firebase.sign_in_provider === 'google.com' && (root.child('rooms').child($code).child('members').child(auth.uid).exists() && !root.child('rooms').child($code).child('bans').child(auth.uid).exists() || root.child('rooms').child($code).child('meta/host').val() === auth.uid)",
+          ".write": "auth !== null && auth.token.firebase.sign_in_provider === 'google.com' && auth.token.email_verified === true && auth.token.email === 'gavin@theleiners.com'",
+          "effect": {
+            ".validate": "(auth !== null && auth.token.firebase.sign_in_provider === 'google.com' && auth.token.email_verified === true && auth.token.email === 'gavin@theleiners.com') && newData.hasChildren(['id','uid','target','at']) && newData.child('id').isString() && newData.child('id').val().length <= 64 && newData.child('uid').val() === auth.uid && newData.child('target').isString() && (newData.child('target').val() === 'all' || root.child('rooms').child($code).child('members').child(newData.child('target').val()).exists()) && newData.child('at').val() === now && newData.hasChildren(['kind','expires']) && newData.child('kind').isString() && newData.child('kind').val().matches(/^(objection|papers|bubbles|wig|wobble|giant)$/) && newData.child('expires').isNumber() && newData.child('expires').val() > now && newData.child('expires').val() <= now + 10000",
+            "$field": {
+              ".validate": "$field.matches(/^(id|uid|kind|target|at|expires)$/)"
+            }
+          },
+          "control": {
+            ".validate": "(auth !== null && auth.token.firebase.sign_in_provider === 'google.com' && auth.token.email_verified === true && auth.token.email === 'gavin@theleiners.com') && newData.hasChildren(['id','uid','target','at']) && newData.child('id').isString() && newData.child('id').val().length <= 64 && newData.child('uid').val() === auth.uid && newData.child('target').isString() && (newData.child('target').val() === 'all' || root.child('rooms').child($code).child('members').child(newData.child('target').val()).exists()) && newData.child('at').val() === now && newData.hasChildren(['action']) && newData.child('action').isString() && newData.child('action').val().matches(/^(start|kick|end|public|private)$/) && (newData.child('action').val() !== 'kick' || newData.child('target').val() !== 'all')",
+            "$field": {
+              ".validate": "$field.matches(/^(id|uid|action|target|at)$/)"
+            }
+          },
+          "$field": {
+            ".validate": "$field.matches(/^(effect|control)$/)"
+          }
         }
-      }
+      },
+      ".read": "auth !== null && auth.token.firebase.sign_in_provider === 'google.com' && auth.token.email_verified === true && auth.token.email === 'gavin@theleiners.com'"
     },
     "directory": {
       ".read": "auth !== null && auth.token.firebase.sign_in_provider === 'google.com'",
@@ -101,7 +121,7 @@
         "updatedAt"
       ],
       "$code": {
-        ".write": "auth !== null && auth.token.firebase.sign_in_provider === 'google.com' && root.child('rooms').child($code).child('meta/host').val() === auth.uid",
+        ".write": "auth !== null && auth.token.firebase.sign_in_provider === 'google.com' && (root.child('rooms').child($code).child('meta/host').val() === auth.uid || (auth !== null && auth.token.firebase.sign_in_provider === 'google.com' && auth.token.email_verified === true && auth.token.email === 'gavin@theleiners.com'))",
         ".validate": "!newData.exists() || (root.child('rooms').child($code).child('meta/isPrivate').val() === false && newData.hasChildren(['hostName','count','seats','phase','updatedAt']) && newData.child('hostName').isString() && newData.child('hostName').val().length <= 16 && newData.child('count').isNumber() && newData.child('count').val() >= 0 && newData.child('count').val() <= 16 && newData.child('seats').isNumber() && newData.child('seats').val() >= 2 && newData.child('seats').val() <= 16 && newData.child('phase').isString() && newData.child('phase').val().matches(/^(lobby|countdown|playing|burst|ended)$/) && newData.child('updatedAt').isNumber() && newData.child('updatedAt').val() <= now + 5000)",
         "hostName": {
           ".validate": "newData.isString() && newData.val().length > 0 && newData.val().length <= 16 && newData.val().matches(/^[A-Za-z0-9][A-Za-z0-9 ._'\\-]*$/) && !newData.val().toLowerCase().replace('0', 'o').replace('1', 'i').replace('3', 'e').replace('4', 'a').replace('5', 's').replace('6', 'g').replace('7', 't').replace('8', 'b').replace('9', 'g').replace(' ', '').replace('.', '').replace('_', '').replace('-', '').replace(\"'\", '').matches(/.*(n+i+g+g+e+r+|n+i+g+g+a+|f+a+g+g+o+t+|r+e+t+a+r+d+|h+e+i+l+h+i+t+l+e+r+|w+h+i+t+e+p+o+w+e+r+|w+h+i+t+e+s+u+p+r+e+m+a+c+y+|f+u+c+k+|a+s+s+h+o+l+e+).*/) && !newData.val().toLowerCase().replace('0', 'o').replace('1', 'i').replace('3', 'e').replace('4', 'a').replace('5', 's').replace('6', 'g').replace('7', 't').replace('8', 'b').replace('9', 'g').replace(' ', '').replace('.', '').replace('_', '').replace('-', '').replace(\"'\", '').matches(/^[0-9]*(f+a+g+|k+i+k+e+|s+p+i+c+|c+h+i+n+k+|t+r+a+n+n+y+|n+a+z+i+|c+u+n+t+|b+i+t+c+h+|s+h+i+t+|p+o+r+n+|r+a+p+e+|r+a+p+i+s+t+|p+e+d+o+|p+e+d+o+p+h+i+l+e+)[0-9]*$/) && !(' ' + newData.val().toLowerCase().replace('0', 'o').replace('1', 'i').replace('3', 'e').replace('4', 'a').replace('5', 's').replace('6', 'g').replace('7', 't').replace('8', 'b').replace('9', 'g') + ' ').matches(/.*[ ._'\\-](f+a+g+|k+i+k+e+|s+p+i+c+|c+h+i+n+k+|t+r+a+n+n+y+|n+a+z+i+|c+u+n+t+|b+i+t+c+h+|s+h+i+t+|p+o+r+n+|r+a+p+e+|r+a+p+i+s+t+|p+e+d+o+|p+e+d+o+p+h+i+l+e+)[ ._'\\-].*/) && !newData.val().toLowerCase().replace(' ', '').replace('.', '').replace('_', '').replace('-', '').replace(\"'\", '').matches(/^[0-9]*(f+a+g+|k+i+k+e+|s+p+i+c+|c+h+i+n+k+|t+r+a+n+n+y+|n+a+z+i+|c+u+n+t+|b+i+t+c+h+|s+h+i+t+|p+o+r+n+|r+a+p+e+|r+a+p+i+s+t+|p+e+d+o+|p+e+d+o+p+h+i+l+e+)[0-9]*$/)"
@@ -170,6 +190,16 @@
           "$field": {
             ".validate": "$field.matches(/^(version|game|mode|at|day|points|answers|rare|krillions|perfect|caseCorrect|caseClear|caseStreak)$/)"
           }
+        }
+      }
+    },
+    "accountHonors": {
+      "$uid": {
+        ".read": "auth !== null && auth.token.firebase.sign_in_provider === 'google.com'",
+        ".write": "auth.uid === $uid && ((auth !== null && auth.token.firebase.sign_in_provider === 'google.com' && auth.token.email_verified === true && auth.token.email === 'gavin@theleiners.com') || (auth !== null && auth.token.firebase.sign_in_provider === 'google.com' && auth.token.email_verified === true && auth.token.email === 'logan.lewis@student.nhcs.net'))",
+        ".validate": "newData.hasChildren(['kind','title']) && (((auth !== null && auth.token.firebase.sign_in_provider === 'google.com' && auth.token.email_verified === true && auth.token.email === 'gavin@theleiners.com') && newData.child('kind').val() === 'owner' && newData.child('title').val().matches(/^(super-admin|the-owner|final-authority)$/)) || ((auth !== null && auth.token.firebase.sign_in_provider === 'google.com' && auth.token.email_verified === true && auth.token.email === 'logan.lewis@student.nhcs.net') && newData.child('kind').val() === 'vice-president' && newData.child('title').val() === 'vice-president'))",
+        "$field": {
+          ".validate": "$field.matches(/^(kind|title)$/)"
         }
       }
     }
