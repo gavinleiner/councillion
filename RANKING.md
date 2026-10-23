@@ -46,14 +46,28 @@ at an even win rate. CR is a progression ladder, not a calibrated estimate of
 competitive skill. Losses still demote immediately, and small capped bonuses
 avoid the previous large differences between otherwise similar players.
 
-## Earned stones and account titles
+## Earned platforms and account titles
 
-The original stone is free. Other stones need hard, distinct saved receipts:
-25 substantial four-player wins; five flawless four-player wins; ten Daily
-scores of 550+; five substantial six-player wins; or a seven-Krillion Daily.
-Database rules verify every proof against that account's immutable records and
-protect permanent unlock receipts. This inherits the game's existing trust
-model: hosts referee multiplayer, and solo summaries are client reported.
+The original stone is free. Five AI-generated platform sprites match the original
+rock and Counsel character's simple pixel style: driftwood, a shell perch,
+a plate-coral shelf, a broken courthouse base and a shipwreck deck. Their shared
+foot/ground anchor keeps characters in front and firmly on the seabed.
+Unlocks reward repeat play, including 1v1:
+
+| Platform | Cumulative requirement |
+| --- | --- |
+| Driftwood Perch | 15 rated finishes with 3+ accepted answers each; any placement |
+| Shell Perch | 12 rated wins with 3+ accepted answers each |
+| Coral Shelf | 8 distinct Daily scores of 250+ with at least 5 valid answers |
+| Courthouse Remnant | 25 rated finishes with 6+ accepted answers each; any placement |
+| Wreck Deck | 20 rated wins with 5+ accepted answers each |
+
+Forfeits and no-contests do not count. Existing saved games count toward these
+milestones, and already-claimed platforms stay permanently unlocked. Neither a
+flawless win nor a perfect Daily is required. Database rules verify distinct
+proofs against that account's immutable receipts. This inherits the game's
+existing trust model: hosts referee multiplayer, and solo summaries are client
+reported.
 
 `pres` and `vp` are optional display titles assigned to exact verified Google
 emails. Turning them off changes appearance only, never permissions. The new

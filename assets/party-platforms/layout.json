@@ -1,0 +1,102 @@
+{
+  "slate": {
+    "source": "exec-ff4d69a3-4806-4c39-a099-6bd89b357712.png",
+    "size": [
+      1774,
+      887
+    ],
+    "alphaBounds": [
+      152,
+      290,
+      1679,
+      777
+    ],
+    "displayBounds": [
+      3.0,
+      12.4,
+      74.0,
+      23.6
+    ],
+    "bytes": 655434
+  },
+  "marble": {
+    "source": "exec-acca809e-e37c-4343-9b04-ad91ff11e45d.png",
+    "size": [
+      1774,
+      887
+    ],
+    "alphaBounds": [
+      155,
+      221,
+      1620,
+      800
+    ],
+    "displayBounds": [
+      3.0,
+      6.75,
+      74.0,
+      29.25
+    ],
+    "bytes": 737049
+  },
+  "reef": {
+    "source": "exec-bdae0936-cdf6-4336-b996-d86b69c86f12.png",
+    "size": [
+      1774,
+      887
+    ],
+    "alphaBounds": [
+      122,
+      274,
+      1652,
+      800
+    ],
+    "displayBounds": [
+      3.0,
+      10.56,
+      74.0,
+      25.44
+    ],
+    "bytes": 637754
+  },
+  "obsidian": {
+    "source": "exec-1ee5fbf0-6524-4161-bdbf-009957be7481.png",
+    "size": [
+      1774,
+      887
+    ],
+    "alphaBounds": [
+      153,
+      257,
+      1638,
+      771
+    ],
+    "displayBounds": [
+      3.0,
+      10.39,
+      74.0,
+      25.61
+    ],
+    "bytes": 610220
+  },
+  "gilded": {
+    "source": "exec-e65fe831-1f91-454b-a414-0121e47392b9.png",
+    "size": [
+      1774,
+      887
+    ],
+    "alphaBounds": [
+      148,
+      181,
+      1659,
+      775
+    ],
+    "displayBounds": [
+      3.0,
+      6.91,
+      74.0,
+      29.09
+    ],
+    "bytes": 772582
+  }
+}
