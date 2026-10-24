@@ -195,3 +195,7 @@ Open [the question review](https://gavinleiner.github.io/councillion/?v=20261023
 ## Group-selected 5,000 · October 23
 
 Release `20261023-group5000-v1` implements all 98 approved tryout prompts and expands the ordinary Puffer/Daily/Practice pool to exactly 5,000 categories. Steam questions use a single actual tag. Full unseen shuffles replace Practice family rotation; Daily is frozen and shared from October 24, preserving October 23. See [GROUP-POOL.md](GROUP-POOL.md) for selection, sources, thresholds and finite-coverage limits, [group-question-list.csv](group-question-list.csv) for every count, and [group-bank-manifest.json](group-bank-manifest.json) for predicates and hashes. Earlier sections describe previous releases.
+
+## Owner-granted highest rank
+
+`rankGrants/{firebaseUid}` is a separate, owner-written rank entitlement. A version-1 `highest` grant follows the current top ladder tier, supplies its rating floor and bypasses placement display. Profiles and the friend leaderboard subscribe to it live and reapply it whenever career/solo data changes. Match receipts, actual W/L, placements, earned peak, answers, other achievements and admin permissions are unaffected. Removing the grant restores the earned rank. Verified Google players can read individual grants; only the verified owner can write or revoke them. No recipient email is embedded in the public client.
