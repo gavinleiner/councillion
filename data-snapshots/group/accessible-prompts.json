@@ -1,0 +1,2054 @@
+[
+  {
+    "id": "group-open-movie-action-or-comedy",
+    "prompt": "Name a movie classified as action or comedy.",
+    "family": "culture",
+    "predicate": {
+      "kind": "film-any-genres",
+      "genres": [
+        "Action",
+        "Comedy"
+      ]
+    }
+  },
+  {
+    "id": "group-open-movie-action-or-science-fiction",
+    "prompt": "Name a movie classified as action or science fiction.",
+    "family": "culture",
+    "predicate": {
+      "kind": "film-any-genres",
+      "genres": [
+        "Action",
+        "Science Fiction"
+      ]
+    }
+  },
+  {
+    "id": "group-open-movie-adventure-or-comedy",
+    "prompt": "Name a movie classified as adventure or comedy.",
+    "family": "culture",
+    "predicate": {
+      "kind": "film-any-genres",
+      "genres": [
+        "Adventure",
+        "Comedy"
+      ]
+    }
+  },
+  {
+    "id": "group-open-movie-adventure-or-fantasy",
+    "prompt": "Name a movie classified as adventure or fantasy.",
+    "family": "culture",
+    "predicate": {
+      "kind": "film-any-genres",
+      "genres": [
+        "Adventure",
+        "Fantasy"
+      ]
+    }
+  },
+  {
+    "id": "group-open-movie-animation-or-family",
+    "prompt": "Name a movie classified as animation or family.",
+    "family": "culture",
+    "predicate": {
+      "kind": "film-any-genres",
+      "genres": [
+        "Animation",
+        "Family"
+      ]
+    }
+  },
+  {
+    "id": "group-open-movie-animation-or-comedy",
+    "prompt": "Name a movie classified as animation or comedy.",
+    "family": "culture",
+    "predicate": {
+      "kind": "film-any-genres",
+      "genres": [
+        "Animation",
+        "Comedy"
+      ]
+    }
+  },
+  {
+    "id": "group-open-movie-comedy-or-romance",
+    "prompt": "Name a movie classified as comedy or romance.",
+    "family": "culture",
+    "predicate": {
+      "kind": "film-any-genres",
+      "genres": [
+        "Comedy",
+        "Romance"
+      ]
+    }
+  },
+  {
+    "id": "group-open-movie-comedy-or-horror",
+    "prompt": "Name a movie classified as comedy or horror.",
+    "family": "culture",
+    "predicate": {
+      "kind": "film-any-genres",
+      "genres": [
+        "Comedy",
+        "Horror"
+      ]
+    }
+  },
+  {
+    "id": "group-open-movie-comedy-or-music",
+    "prompt": "Name a movie classified as comedy or music.",
+    "family": "culture",
+    "predicate": {
+      "kind": "film-any-genres",
+      "genres": [
+        "Comedy",
+        "Music"
+      ]
+    }
+  },
+  {
+    "id": "group-open-movie-horror-or-science-fiction",
+    "prompt": "Name a movie classified as horror or science fiction.",
+    "family": "culture",
+    "predicate": {
+      "kind": "film-any-genres",
+      "genres": [
+        "Horror",
+        "Science Fiction"
+      ]
+    }
+  },
+  {
+    "id": "group-open-movie-horror-or-thriller",
+    "prompt": "Name a movie classified as horror or thriller.",
+    "family": "culture",
+    "predicate": {
+      "kind": "film-any-genres",
+      "genres": [
+        "Horror",
+        "Thriller"
+      ]
+    }
+  },
+  {
+    "id": "group-open-movie-mystery-or-thriller",
+    "prompt": "Name a movie classified as mystery or thriller.",
+    "family": "culture",
+    "predicate": {
+      "kind": "film-any-genres",
+      "genres": [
+        "Mystery",
+        "Thriller"
+      ]
+    }
+  },
+  {
+    "id": "group-open-movie-crime-or-mystery",
+    "prompt": "Name a movie classified as crime or mystery.",
+    "family": "culture",
+    "predicate": {
+      "kind": "film-any-genres",
+      "genres": [
+        "Crime",
+        "Mystery"
+      ]
+    }
+  },
+  {
+    "id": "group-open-movie-crime-or-thriller",
+    "prompt": "Name a movie classified as crime or thriller.",
+    "family": "culture",
+    "predicate": {
+      "kind": "film-any-genres",
+      "genres": [
+        "Crime",
+        "Thriller"
+      ]
+    }
+  },
+  {
+    "id": "group-open-movie-fantasy-or-science-fiction",
+    "prompt": "Name a movie classified as fantasy or science fiction.",
+    "family": "culture",
+    "predicate": {
+      "kind": "film-any-genres",
+      "genres": [
+        "Fantasy",
+        "Science Fiction"
+      ]
+    }
+  },
+  {
+    "id": "group-open-movie-action-or-war",
+    "prompt": "Name a movie classified as action or war.",
+    "family": "culture",
+    "predicate": {
+      "kind": "film-any-genres",
+      "genres": [
+        "Action",
+        "War"
+      ]
+    }
+  },
+  {
+    "id": "group-open-movie-war-or-history",
+    "prompt": "Name a movie classified as war or history.",
+    "family": "culture",
+    "predicate": {
+      "kind": "film-any-genres",
+      "genres": [
+        "War",
+        "History"
+      ]
+    }
+  },
+  {
+    "id": "group-open-movie-history-or-documentary",
+    "prompt": "Name a movie classified as history or documentary.",
+    "family": "culture",
+    "predicate": {
+      "kind": "film-any-genres",
+      "genres": [
+        "History",
+        "Documentary"
+      ]
+    }
+  },
+  {
+    "id": "group-open-movie-music-or-documentary",
+    "prompt": "Name a movie classified as music or documentary.",
+    "family": "culture",
+    "predicate": {
+      "kind": "film-any-genres",
+      "genres": [
+        "Music",
+        "Documentary"
+      ]
+    }
+  },
+  {
+    "id": "group-open-movie-family-or-fantasy",
+    "prompt": "Name a movie classified as family or fantasy.",
+    "family": "culture",
+    "predicate": {
+      "kind": "film-any-genres",
+      "genres": [
+        "Family",
+        "Fantasy"
+      ]
+    }
+  },
+  {
+    "id": "group-open-movie-adventure-or-animation",
+    "prompt": "Name a movie classified as adventure or animation.",
+    "family": "culture",
+    "predicate": {
+      "kind": "film-any-genres",
+      "genres": [
+        "Adventure",
+        "Animation"
+      ]
+    }
+  },
+  {
+    "id": "group-open-movie-drama-or-romance",
+    "prompt": "Name a movie classified as drama or romance.",
+    "family": "culture",
+    "predicate": {
+      "kind": "film-any-genres",
+      "genres": [
+        "Drama",
+        "Romance"
+      ]
+    }
+  },
+  {
+    "id": "group-open-movie-drama-or-comedy",
+    "prompt": "Name a movie classified as drama or comedy.",
+    "family": "culture",
+    "predicate": {
+      "kind": "film-any-genres",
+      "genres": [
+        "Drama",
+        "Comedy"
+      ]
+    }
+  },
+  {
+    "id": "group-open-movie-drama-or-crime",
+    "prompt": "Name a movie classified as drama or crime.",
+    "family": "culture",
+    "predicate": {
+      "kind": "film-any-genres",
+      "genres": [
+        "Drama",
+        "Crime"
+      ]
+    }
+  },
+  {
+    "id": "group-open-movie-western-or-action",
+    "prompt": "Name a movie classified as western or action.",
+    "family": "culture",
+    "predicate": {
+      "kind": "film-any-genres",
+      "genres": [
+        "Western",
+        "Action"
+      ]
+    }
+  },
+  {
+    "id": "group-open-movie-western-or-adventure",
+    "prompt": "Name a movie classified as western or adventure.",
+    "family": "culture",
+    "predicate": {
+      "kind": "film-any-genres",
+      "genres": [
+        "Western",
+        "Adventure"
+      ]
+    }
+  },
+  {
+    "id": "group-open-movie-family-or-comedy",
+    "prompt": "Name a movie classified as family or comedy.",
+    "family": "culture",
+    "predicate": {
+      "kind": "film-any-genres",
+      "genres": [
+        "Family",
+        "Comedy"
+      ]
+    }
+  },
+  {
+    "id": "group-open-movie-science-fiction-or-adventure",
+    "prompt": "Name a movie classified as science fiction or adventure.",
+    "family": "culture",
+    "predicate": {
+      "kind": "film-any-genres",
+      "genres": [
+        "Science Fiction",
+        "Adventure"
+      ]
+    }
+  },
+  {
+    "id": "group-open-movie-fantasy-or-animation",
+    "prompt": "Name a movie classified as fantasy or animation.",
+    "family": "culture",
+    "predicate": {
+      "kind": "film-any-genres",
+      "genres": [
+        "Fantasy",
+        "Animation"
+      ]
+    }
+  },
+  {
+    "id": "group-open-movie-crime-or-comedy",
+    "prompt": "Name a movie classified as crime or comedy.",
+    "family": "culture",
+    "predicate": {
+      "kind": "film-any-genres",
+      "genres": [
+        "Crime",
+        "Comedy"
+      ]
+    }
+  },
+  {
+    "id": "group-open-movie-action-or-fantasy",
+    "prompt": "Name a movie classified as action or fantasy.",
+    "family": "culture",
+    "predicate": {
+      "kind": "film-any-genres",
+      "genres": [
+        "Action",
+        "Fantasy"
+      ]
+    }
+  },
+  {
+    "id": "group-open-movie-horror-or-mystery",
+    "prompt": "Name a movie classified as horror or mystery.",
+    "family": "culture",
+    "predicate": {
+      "kind": "film-any-genres",
+      "genres": [
+        "Horror",
+        "Mystery"
+      ]
+    }
+  },
+  {
+    "id": "group-open-movie-animation-or-science-fiction",
+    "prompt": "Name a movie classified as animation or science fiction.",
+    "family": "culture",
+    "predicate": {
+      "kind": "film-any-genres",
+      "genres": [
+        "Animation",
+        "Science Fiction"
+      ]
+    }
+  },
+  {
+    "id": "group-open-movie-adventure-or-family",
+    "prompt": "Name a movie classified as adventure or family.",
+    "family": "culture",
+    "predicate": {
+      "kind": "film-any-genres",
+      "genres": [
+        "Adventure",
+        "Family"
+      ]
+    }
+  },
+  {
+    "id": "group-open-movie-thriller-or-action",
+    "prompt": "Name a movie classified as thriller or action.",
+    "family": "culture",
+    "predicate": {
+      "kind": "film-any-genres",
+      "genres": [
+        "Thriller",
+        "Action"
+      ]
+    }
+  },
+  {
+    "id": "group-open-movie-drama-or-mystery",
+    "prompt": "Name a movie classified as drama or mystery.",
+    "family": "culture",
+    "predicate": {
+      "kind": "film-any-genres",
+      "genres": [
+        "Drama",
+        "Mystery"
+      ]
+    }
+  },
+  {
+    "id": "group-open-movie-music-or-romance",
+    "prompt": "Name a movie classified as music or romance.",
+    "family": "culture",
+    "predicate": {
+      "kind": "film-any-genres",
+      "genres": [
+        "Music",
+        "Romance"
+      ]
+    }
+  },
+  {
+    "id": "group-open-movie-history-or-drama",
+    "prompt": "Name a movie classified as history or drama.",
+    "family": "culture",
+    "predicate": {
+      "kind": "film-any-genres",
+      "genres": [
+        "History",
+        "Drama"
+      ]
+    }
+  },
+  {
+    "id": "group-open-movie-documentary-or-science-fiction",
+    "prompt": "Name a movie classified as documentary or science fiction.",
+    "family": "culture",
+    "predicate": {
+      "kind": "film-any-genres",
+      "genres": [
+        "Documentary",
+        "Science Fiction"
+      ]
+    }
+  },
+  {
+    "id": "group-open-movie-animation-or-music",
+    "prompt": "Name a movie classified as animation or music.",
+    "family": "culture",
+    "predicate": {
+      "kind": "film-any-genres",
+      "genres": [
+        "Animation",
+        "Music"
+      ]
+    }
+  },
+  {
+    "id": "group-open-show-comedy-or-family",
+    "prompt": "Name a TV or streaming show classified as comedy or family.",
+    "family": "culture",
+    "predicate": {
+      "kind": "tv-any-genres",
+      "genres": [
+        "Comedy",
+        "Family"
+      ]
+    }
+  },
+  {
+    "id": "group-open-show-action-or-adventure",
+    "prompt": "Name a TV or streaming show classified as action or adventure.",
+    "family": "culture",
+    "predicate": {
+      "kind": "tv-any-genres",
+      "genres": [
+        "Action",
+        "Adventure"
+      ]
+    }
+  },
+  {
+    "id": "group-open-show-fantasy-or-science-fiction",
+    "prompt": "Name a TV or streaming show classified as fantasy or science-fiction.",
+    "family": "culture",
+    "predicate": {
+      "kind": "tv-any-genres",
+      "genres": [
+        "Fantasy",
+        "Science-Fiction"
+      ]
+    }
+  },
+  {
+    "id": "group-open-show-crime-or-mystery",
+    "prompt": "Name a TV or streaming show classified as crime or mystery.",
+    "family": "culture",
+    "predicate": {
+      "kind": "tv-any-genres",
+      "genres": [
+        "Crime",
+        "Mystery"
+      ]
+    }
+  },
+  {
+    "id": "group-open-show-comedy-or-romance",
+    "prompt": "Name a TV or streaming show classified as comedy or romance.",
+    "family": "culture",
+    "predicate": {
+      "kind": "tv-any-genres",
+      "genres": [
+        "Comedy",
+        "Romance"
+      ]
+    }
+  },
+  {
+    "id": "group-open-show-horror-or-supernatural",
+    "prompt": "Name a TV or streaming show classified as horror or supernatural.",
+    "family": "culture",
+    "predicate": {
+      "kind": "tv-any-genres",
+      "genres": [
+        "Horror",
+        "Supernatural"
+      ]
+    }
+  },
+  {
+    "id": "group-open-show-children-or-animation",
+    "prompt": "Name a TV or streaming show classified as children or animation.",
+    "family": "culture",
+    "predicate": {
+      "kind": "tv-any-genres",
+      "genres": [
+        "Children",
+        "Animation"
+      ]
+    }
+  },
+  {
+    "id": "group-open-show-food-or-travel",
+    "prompt": "Name a TV or streaming show classified as food or travel.",
+    "family": "culture",
+    "predicate": {
+      "kind": "tv-any-genres",
+      "genres": [
+        "Food",
+        "Travel"
+      ]
+    }
+  },
+  {
+    "id": "group-open-show-nature-or-travel",
+    "prompt": "Name a TV or streaming show classified as nature or travel.",
+    "family": "culture",
+    "predicate": {
+      "kind": "tv-any-genres",
+      "genres": [
+        "Nature",
+        "Travel"
+      ]
+    }
+  },
+  {
+    "id": "group-open-show-music-or-comedy",
+    "prompt": "Name a TV or streaming show classified as music or comedy.",
+    "family": "culture",
+    "predicate": {
+      "kind": "tv-any-genres",
+      "genres": [
+        "Music",
+        "Comedy"
+      ]
+    }
+  },
+  {
+    "id": "group-open-show-sports-or-comedy",
+    "prompt": "Name a TV or streaming show classified as sports or comedy.",
+    "family": "culture",
+    "predicate": {
+      "kind": "tv-any-genres",
+      "genres": [
+        "Sports",
+        "Comedy"
+      ]
+    }
+  },
+  {
+    "id": "group-open-show-action-or-science-fiction",
+    "prompt": "Name a TV or streaming show classified as action or science-fiction.",
+    "family": "culture",
+    "predicate": {
+      "kind": "tv-any-genres",
+      "genres": [
+        "Action",
+        "Science-Fiction"
+      ]
+    }
+  },
+  {
+    "id": "group-open-show-adventure-or-fantasy",
+    "prompt": "Name a TV or streaming show classified as adventure or fantasy.",
+    "family": "culture",
+    "predicate": {
+      "kind": "tv-any-genres",
+      "genres": [
+        "Adventure",
+        "Fantasy"
+      ]
+    }
+  },
+  {
+    "id": "group-open-show-crime-or-thriller",
+    "prompt": "Name a TV or streaming show classified as crime or thriller.",
+    "family": "culture",
+    "predicate": {
+      "kind": "tv-any-genres",
+      "genres": [
+        "Crime",
+        "Thriller"
+      ]
+    }
+  },
+  {
+    "id": "group-open-show-family-or-children",
+    "prompt": "Name a TV or streaming show classified as family or children.",
+    "family": "culture",
+    "predicate": {
+      "kind": "tv-any-genres",
+      "genres": [
+        "Family",
+        "Children"
+      ]
+    }
+  },
+  {
+    "id": "group-open-show-anime-or-fantasy",
+    "prompt": "Name a TV or streaming show classified as anime or fantasy.",
+    "family": "culture",
+    "predicate": {
+      "kind": "tv-any-genres",
+      "genres": [
+        "Anime",
+        "Fantasy"
+      ]
+    }
+  },
+  {
+    "id": "group-open-show-drama-or-romance",
+    "prompt": "Name a TV or streaming show classified as drama or romance.",
+    "family": "culture",
+    "predicate": {
+      "kind": "tv-any-genres",
+      "genres": [
+        "Drama",
+        "Romance"
+      ]
+    }
+  },
+  {
+    "id": "group-open-show-medical-or-legal",
+    "prompt": "Name a TV or streaming show classified as medical or legal.",
+    "family": "culture",
+    "predicate": {
+      "kind": "tv-any-genres",
+      "genres": [
+        "Medical",
+        "Legal"
+      ]
+    }
+  },
+  {
+    "id": "group-open-show-war-or-espionage",
+    "prompt": "Name a TV or streaming show classified as war or espionage.",
+    "family": "culture",
+    "predicate": {
+      "kind": "tv-any-genres",
+      "genres": [
+        "War",
+        "Espionage"
+      ]
+    }
+  },
+  {
+    "id": "group-open-show-history-or-documentary",
+    "prompt": "Name a TV or streaming show classified as history or documentary.",
+    "family": "culture",
+    "predicate": {
+      "kind": "tv-any-genres",
+      "genres": [
+        "History",
+        "Documentary"
+      ]
+    }
+  },
+  {
+    "id": "group-open-show-drama-or-comedy",
+    "prompt": "Name a TV or streaming show classified as drama or comedy.",
+    "family": "culture",
+    "predicate": {
+      "kind": "tv-any-genres",
+      "genres": [
+        "Drama",
+        "Comedy"
+      ]
+    }
+  },
+  {
+    "id": "group-open-show-comedy-or-adventure",
+    "prompt": "Name a TV or streaming show classified as comedy or adventure.",
+    "family": "culture",
+    "predicate": {
+      "kind": "tv-any-genres",
+      "genres": [
+        "Comedy",
+        "Adventure"
+      ]
+    }
+  },
+  {
+    "id": "group-open-show-thriller-or-mystery",
+    "prompt": "Name a TV or streaming show classified as thriller or mystery.",
+    "family": "culture",
+    "predicate": {
+      "kind": "tv-any-genres",
+      "genres": [
+        "Thriller",
+        "Mystery"
+      ]
+    }
+  },
+  {
+    "id": "group-open-show-science-fiction-or-supernatural",
+    "prompt": "Name a TV or streaming show classified as science-fiction or supernatural.",
+    "family": "culture",
+    "predicate": {
+      "kind": "tv-any-genres",
+      "genres": [
+        "Science-Fiction",
+        "Supernatural"
+      ]
+    }
+  },
+  {
+    "id": "group-open-steam-survival-or-crafting",
+    "prompt": "Name a game on Steam tagged \u201cSurvival\u201d or \u201cCrafting\u201d.",
+    "family": "gaming",
+    "predicate": {
+      "kind": "steam-any-tags",
+      "tags": [
+        "Survival",
+        "Crafting"
+      ]
+    }
+  },
+  {
+    "id": "group-open-steam-building-or-city-builder",
+    "prompt": "Name a game on Steam tagged \u201cBuilding\u201d or \u201cCity Builder\u201d.",
+    "family": "gaming",
+    "predicate": {
+      "kind": "steam-any-tags",
+      "tags": [
+        "Building",
+        "City Builder"
+      ]
+    }
+  },
+  {
+    "id": "group-open-steam-fishing-or-farming",
+    "prompt": "Name a game on Steam tagged \u201cFishing\u201d or \u201cFarming\u201d.",
+    "family": "gaming",
+    "predicate": {
+      "kind": "steam-any-tags",
+      "tags": [
+        "Fishing",
+        "Farming"
+      ]
+    }
+  },
+  {
+    "id": "group-open-steam-driving-or-racing",
+    "prompt": "Name a game on Steam tagged \u201cDriving\u201d or \u201cRacing\u201d.",
+    "family": "gaming",
+    "predicate": {
+      "kind": "steam-any-tags",
+      "tags": [
+        "Driving",
+        "Racing"
+      ]
+    }
+  },
+  {
+    "id": "group-open-steam-horror-or-zombies",
+    "prompt": "Name a game on Steam tagged \u201cHorror\u201d or \u201cZombies\u201d.",
+    "family": "gaming",
+    "predicate": {
+      "kind": "steam-any-tags",
+      "tags": [
+        "Horror",
+        "Zombies"
+      ]
+    }
+  },
+  {
+    "id": "group-open-steam-fantasy-or-magic",
+    "prompt": "Name a game on Steam tagged \u201cFantasy\u201d or \u201cMagic\u201d.",
+    "family": "gaming",
+    "predicate": {
+      "kind": "steam-any-tags",
+      "tags": [
+        "Fantasy",
+        "Magic"
+      ]
+    }
+  },
+  {
+    "id": "group-open-steam-space-or-sci-fi",
+    "prompt": "Name a game on Steam tagged \u201cSpace\u201d or \u201cSci-fi\u201d.",
+    "family": "gaming",
+    "predicate": {
+      "kind": "steam-any-tags",
+      "tags": [
+        "Space",
+        "Sci-fi"
+      ]
+    }
+  },
+  {
+    "id": "group-open-steam-dinosaurs-or-dragons",
+    "prompt": "Name a game on Steam tagged \u201cDinosaurs\u201d or \u201cDragons\u201d.",
+    "family": "gaming",
+    "predicate": {
+      "kind": "steam-any-tags",
+      "tags": [
+        "Dinosaurs",
+        "Dragons"
+      ]
+    }
+  },
+  {
+    "id": "group-open-steam-cats-or-dogs",
+    "prompt": "Name a game on Steam tagged \u201cCats\u201d or \u201cDogs\u201d.",
+    "family": "gaming",
+    "predicate": {
+      "kind": "steam-any-tags",
+      "tags": [
+        "Cats",
+        "Dogs"
+      ]
+    }
+  },
+  {
+    "id": "group-open-steam-multiplayer-or-local-co-op",
+    "prompt": "Name a game on Steam tagged \u201cMultiplayer\u201d or \u201cLocal Co-Op\u201d.",
+    "family": "gaming",
+    "predicate": {
+      "kind": "steam-any-tags",
+      "tags": [
+        "Multiplayer",
+        "Local Co-Op"
+      ]
+    }
+  },
+  {
+    "id": "group-open-steam-puzzle-or-hidden-object",
+    "prompt": "Name a game on Steam tagged \u201cPuzzle\u201d or \u201cHidden Object\u201d.",
+    "family": "gaming",
+    "predicate": {
+      "kind": "steam-any-tags",
+      "tags": [
+        "Puzzle",
+        "Hidden Object"
+      ]
+    }
+  },
+  {
+    "id": "group-open-steam-cooking-or-farming-sim",
+    "prompt": "Name a game on Steam tagged \u201cCooking\u201d or \u201cFarming Sim\u201d.",
+    "family": "gaming",
+    "predicate": {
+      "kind": "steam-any-tags",
+      "tags": [
+        "Cooking",
+        "Farming Sim"
+      ]
+    }
+  },
+  {
+    "id": "group-open-steam-parkour-or-platformer",
+    "prompt": "Name a game on Steam tagged \u201cParkour\u201d or \u201cPlatformer\u201d.",
+    "family": "gaming",
+    "predicate": {
+      "kind": "steam-any-tags",
+      "tags": [
+        "Parkour",
+        "Platformer"
+      ]
+    }
+  },
+  {
+    "id": "group-open-steam-stealth-or-heist",
+    "prompt": "Name a game on Steam tagged \u201cStealth\u201d or \u201cHeist\u201d.",
+    "family": "gaming",
+    "predicate": {
+      "kind": "steam-any-tags",
+      "tags": [
+        "Stealth",
+        "Heist"
+      ]
+    }
+  },
+  {
+    "id": "group-open-steam-superhero-or-comic-book",
+    "prompt": "Name a game on Steam tagged \u201cSuperhero\u201d or \u201cComic Book\u201d.",
+    "family": "gaming",
+    "predicate": {
+      "kind": "steam-any-tags",
+      "tags": [
+        "Superhero",
+        "Comic Book"
+      ]
+    }
+  },
+  {
+    "id": "group-open-steam-basketball-or-football--soccer",
+    "prompt": "Name a game on Steam tagged \u201cBasketball\u201d or \u201cFootball (Soccer)\u201d.",
+    "family": "gaming",
+    "predicate": {
+      "kind": "steam-any-tags",
+      "tags": [
+        "Basketball",
+        "Football (Soccer)"
+      ]
+    }
+  },
+  {
+    "id": "group-open-steam-football--american-or-sports",
+    "prompt": "Name a game on Steam tagged \u201cFootball (American)\u201d or \u201cSports\u201d.",
+    "family": "gaming",
+    "predicate": {
+      "kind": "steam-any-tags",
+      "tags": [
+        "Football (American)",
+        "Sports"
+      ]
+    }
+  },
+  {
+    "id": "group-open-steam-pirates-or-naval",
+    "prompt": "Name a game on Steam tagged \u201cPirates\u201d or \u201cNaval\u201d.",
+    "family": "gaming",
+    "predicate": {
+      "kind": "steam-any-tags",
+      "tags": [
+        "Pirates",
+        "Naval"
+      ]
+    }
+  },
+  {
+    "id": "group-open-steam-robots-or-cyberpunk",
+    "prompt": "Name a game on Steam tagged \u201cRobots\u201d or \u201cCyberpunk\u201d.",
+    "family": "gaming",
+    "predicate": {
+      "kind": "steam-any-tags",
+      "tags": [
+        "Robots",
+        "Cyberpunk"
+      ]
+    }
+  },
+  {
+    "id": "group-open-steam-music-or-rhythm",
+    "prompt": "Name a game on Steam tagged \u201cMusic\u201d or \u201cRhythm\u201d.",
+    "family": "gaming",
+    "predicate": {
+      "kind": "steam-any-tags",
+      "tags": [
+        "Music",
+        "Rhythm"
+      ]
+    }
+  },
+  {
+    "id": "group-open-steam-sandbox-or-open-world",
+    "prompt": "Name a game on Steam tagged \u201cSandbox\u201d or \u201cOpen World\u201d.",
+    "family": "gaming",
+    "predicate": {
+      "kind": "steam-any-tags",
+      "tags": [
+        "Sandbox",
+        "Open World"
+      ]
+    }
+  },
+  {
+    "id": "group-open-steam-board-game-or-card-game",
+    "prompt": "Name a game on Steam tagged \u201cBoard Game\u201d or \u201cCard Game\u201d.",
+    "family": "gaming",
+    "predicate": {
+      "kind": "steam-any-tags",
+      "tags": [
+        "Board Game",
+        "Card Game"
+      ]
+    }
+  },
+  {
+    "id": "group-open-steam-mystery-or-detective",
+    "prompt": "Name a game on Steam tagged \u201cMystery\u201d or \u201cDetective\u201d.",
+    "family": "gaming",
+    "predicate": {
+      "kind": "steam-any-tags",
+      "tags": [
+        "Mystery",
+        "Detective"
+      ]
+    }
+  },
+  {
+    "id": "group-open-steam-shooter-or-action",
+    "prompt": "Name a game on Steam tagged \u201cShooter\u201d or \u201cAction\u201d.",
+    "family": "gaming",
+    "predicate": {
+      "kind": "steam-any-tags",
+      "tags": [
+        "Shooter",
+        "Action"
+      ]
+    }
+  },
+  {
+    "id": "group-open-steam-rpg-or-adventure",
+    "prompt": "Name a game on Steam tagged \u201cRPG\u201d or \u201cAdventure\u201d.",
+    "family": "gaming",
+    "predicate": {
+      "kind": "steam-any-tags",
+      "tags": [
+        "RPG",
+        "Adventure"
+      ]
+    }
+  },
+  {
+    "id": "group-open-steam-medieval-or-swordplay",
+    "prompt": "Name a game on Steam tagged \u201cMedieval\u201d or \u201cSwordplay\u201d.",
+    "family": "gaming",
+    "predicate": {
+      "kind": "steam-any-tags",
+      "tags": [
+        "Medieval",
+        "Swordplay"
+      ]
+    }
+  },
+  {
+    "id": "group-open-steam-ninja-or-martial-arts",
+    "prompt": "Name a game on Steam tagged \u201cNinja\u201d or \u201cMartial Arts\u201d.",
+    "family": "gaming",
+    "predicate": {
+      "kind": "steam-any-tags",
+      "tags": [
+        "Ninja",
+        "Martial Arts"
+      ]
+    }
+  },
+  {
+    "id": "group-open-steam-survival-horror-or-psychological-horror",
+    "prompt": "Name a game on Steam tagged \u201cSurvival Horror\u201d or \u201cPsychological Horror\u201d.",
+    "family": "gaming",
+    "predicate": {
+      "kind": "steam-any-tags",
+      "tags": [
+        "Survival Horror",
+        "Psychological Horror"
+      ]
+    }
+  },
+  {
+    "id": "group-open-steam-co-op-or-split-screen",
+    "prompt": "Name a game on Steam tagged \u201cCo-op\u201d or \u201cSplit Screen\u201d.",
+    "family": "gaming",
+    "predicate": {
+      "kind": "steam-any-tags",
+      "tags": [
+        "Co-op",
+        "Split Screen"
+      ]
+    }
+  },
+  {
+    "id": "group-open-steam-exploration-or-walking-simulator",
+    "prompt": "Name a game on Steam tagged \u201cExploration\u201d or \u201cWalking Simulator\u201d.",
+    "family": "gaming",
+    "predicate": {
+      "kind": "steam-any-tags",
+      "tags": [
+        "Exploration",
+        "Walking Simulator"
+      ]
+    }
+  },
+  {
+    "id": "group-open-steam-tanks-or-flight",
+    "prompt": "Name a game on Steam tagged \u201cTanks\u201d or \u201cFlight\u201d.",
+    "family": "gaming",
+    "predicate": {
+      "kind": "steam-any-tags",
+      "tags": [
+        "Tanks",
+        "Flight"
+      ]
+    }
+  },
+  {
+    "id": "group-open-steam-bowling-or-golf",
+    "prompt": "Name a game on Steam tagged \u201cBowling\u201d or \u201cGolf\u201d.",
+    "family": "gaming",
+    "predicate": {
+      "kind": "steam-any-tags",
+      "tags": [
+        "Bowling",
+        "Golf"
+      ]
+    }
+  },
+  {
+    "id": "group-open-steam-fishing-or-hunting",
+    "prompt": "Name a game on Steam tagged \u201cFishing\u201d or \u201cHunting\u201d.",
+    "family": "gaming",
+    "predicate": {
+      "kind": "steam-any-tags",
+      "tags": [
+        "Fishing",
+        "Hunting"
+      ]
+    }
+  },
+  {
+    "id": "group-open-steam-management-or-simulation",
+    "prompt": "Name a game on Steam tagged \u201cManagement\u201d or \u201cSimulation\u201d.",
+    "family": "gaming",
+    "predicate": {
+      "kind": "steam-any-tags",
+      "tags": [
+        "Management",
+        "Simulation"
+      ]
+    }
+  },
+  {
+    "id": "group-open-steam-aliens-or-post-apocalyptic",
+    "prompt": "Name a game on Steam tagged \u201cAliens\u201d or \u201cPost-apocalyptic\u201d.",
+    "family": "gaming",
+    "predicate": {
+      "kind": "steam-any-tags",
+      "tags": [
+        "Aliens",
+        "Post-apocalyptic"
+      ]
+    }
+  },
+  {
+    "id": "group-open-steam-turn-based-or-strategy",
+    "prompt": "Name a game on Steam tagged \u201cTurn-Based\u201d or \u201cStrategy\u201d.",
+    "family": "gaming",
+    "predicate": {
+      "kind": "steam-any-tags",
+      "tags": [
+        "Turn-Based",
+        "Strategy"
+      ]
+    }
+  },
+  {
+    "id": "group-open-steam-tower-defense-or-rts",
+    "prompt": "Name a game on Steam tagged \u201cTower Defense\u201d or \u201cRTS\u201d.",
+    "family": "gaming",
+    "predicate": {
+      "kind": "steam-any-tags",
+      "tags": [
+        "Tower Defense",
+        "RTS"
+      ]
+    }
+  },
+  {
+    "id": "group-open-steam-animals-or-nature",
+    "prompt": "Name a game on Steam tagged \u201cAnimals\u201d or \u201cNature\u201d.",
+    "family": "gaming",
+    "predicate": {
+      "kind": "steam-any-tags",
+      "tags": [
+        "Animals",
+        "Nature"
+      ]
+    }
+  },
+  {
+    "id": "group-open-steam-physics-or-destruction",
+    "prompt": "Name a game on Steam tagged \u201cPhysics\u201d or \u201cDestruction\u201d.",
+    "family": "gaming",
+    "predicate": {
+      "kind": "steam-any-tags",
+      "tags": [
+        "Physics",
+        "Destruction"
+      ]
+    }
+  },
+  {
+    "id": "group-open-steam-choices-matter-or-visual-novel",
+    "prompt": "Name a game on Steam tagged \u201cChoices Matter\u201d or \u201cVisual Novel\u201d.",
+    "family": "gaming",
+    "predicate": {
+      "kind": "steam-any-tags",
+      "tags": [
+        "Choices Matter",
+        "Visual Novel"
+      ]
+    }
+  },
+  {
+    "id": "group-open-song-family",
+    "prompt": "Name a song whose title mentions a family member.",
+    "family": "music",
+    "predicate": {
+      "kind": "song-title-any-words",
+      "words": [
+        "mother",
+        "father",
+        "mom",
+        "dad",
+        "mum",
+        "mama",
+        "papa",
+        "son",
+        "daughter",
+        "brother",
+        "sister",
+        "grandmother",
+        "grandfather",
+        "grandma",
+        "grandpa",
+        "aunt",
+        "uncle",
+        "cousin",
+        "parents",
+        "family"
+      ]
+    }
+  },
+  {
+    "id": "group-open-song-weather",
+    "prompt": "Name a song whose title mentions the weather.",
+    "family": "music",
+    "predicate": {
+      "kind": "song-title-any-words",
+      "words": [
+        "rain",
+        "rains",
+        "raining",
+        "rainy",
+        "snow",
+        "snows",
+        "snowy",
+        "wind",
+        "winds",
+        "windy",
+        "storm",
+        "storms",
+        "stormy",
+        "thunder",
+        "lightning",
+        "sunshine",
+        "sunny",
+        "hurricane",
+        "tornado"
+      ]
+    }
+  },
+  {
+    "id": "group-open-song-space",
+    "prompt": "Name a song whose title mentions space or the sky.",
+    "family": "music",
+    "predicate": {
+      "kind": "song-title-any-words",
+      "words": [
+        "sun",
+        "moon",
+        "star",
+        "stars",
+        "sky",
+        "skies",
+        "planet",
+        "planets",
+        "galaxy",
+        "universe",
+        "rocket",
+        "rockets",
+        "earth",
+        "mars",
+        "venus",
+        "saturn",
+        "neptune"
+      ]
+    }
+  },
+  {
+    "id": "group-open-song-vehicles",
+    "prompt": "Name a song whose title mentions a vehicle or transport.",
+    "family": "music",
+    "predicate": {
+      "kind": "song-title-any-words",
+      "words": [
+        "car",
+        "cars",
+        "train",
+        "trains",
+        "plane",
+        "planes",
+        "airplane",
+        "boat",
+        "boats",
+        "ship",
+        "ships",
+        "bus",
+        "buses",
+        "taxi",
+        "truck",
+        "trucks",
+        "bicycle",
+        "bike",
+        "motorcycle",
+        "rocket"
+      ]
+    }
+  },
+  {
+    "id": "group-open-song-money",
+    "prompt": "Name a song whose title mentions money or wealth.",
+    "family": "music",
+    "predicate": {
+      "kind": "song-title-any-words",
+      "words": [
+        "money",
+        "cash",
+        "rich",
+        "riches",
+        "dollar",
+        "dollars",
+        "coin",
+        "coins",
+        "gold",
+        "diamond",
+        "diamonds",
+        "million",
+        "billionaire",
+        "millionaire",
+        "fortune",
+        "wealth"
+      ]
+    }
+  },
+  {
+    "id": "group-open-song-dreams",
+    "prompt": "Name a song whose title mentions dreaming, sleeping or waking up.",
+    "family": "music",
+    "predicate": {
+      "kind": "song-title-any-words",
+      "words": [
+        "dream",
+        "dreams",
+        "dreaming",
+        "dreamer",
+        "sleep",
+        "sleeps",
+        "sleeping",
+        "sleepy",
+        "asleep",
+        "awake",
+        "wake",
+        "wakes",
+        "waking",
+        "woke"
+      ]
+    }
+  },
+  {
+    "id": "group-open-song-celebrating",
+    "prompt": "Name a song whose title mentions partying or celebrating.",
+    "family": "music",
+    "predicate": {
+      "kind": "song-title-any-words",
+      "words": [
+        "party",
+        "parties",
+        "partying",
+        "dance",
+        "dances",
+        "dancing",
+        "dancer",
+        "birthday",
+        "celebrate",
+        "celebration",
+        "disco",
+        "club",
+        "clubs",
+        "groove"
+      ]
+    }
+  },
+  {
+    "id": "group-open-song-emotions",
+    "prompt": "Name a song whose title mentions a feeling or emotion.",
+    "family": "music",
+    "predicate": {
+      "kind": "song-title-any-words",
+      "words": [
+        "happy",
+        "happiness",
+        "sad",
+        "sadness",
+        "angry",
+        "anger",
+        "fear",
+        "afraid",
+        "joy",
+        "joyful",
+        "sorrow",
+        "tears",
+        "cry",
+        "cries",
+        "crying",
+        "lonely",
+        "loneliness",
+        "jealous",
+        "jealousy"
+      ]
+    }
+  },
+  {
+    "id": "group-open-song-time-of-day",
+    "prompt": "Name a song whose title mentions a time of day.",
+    "family": "music",
+    "predicate": {
+      "kind": "song-title-any-words",
+      "words": [
+        "morning",
+        "mornings",
+        "afternoon",
+        "afternoons",
+        "evening",
+        "evenings",
+        "night",
+        "nights",
+        "midnight",
+        "dawn",
+        "dusk",
+        "sunset",
+        "sunrise",
+        "daytime",
+        "nighttime"
+      ]
+    }
+  },
+  {
+    "id": "group-open-song-days",
+    "prompt": "Name a song whose title mentions a day of the week.",
+    "family": "music",
+    "predicate": {
+      "kind": "song-title-any-words",
+      "words": [
+        "monday",
+        "tuesday",
+        "wednesday",
+        "thursday",
+        "friday",
+        "saturday",
+        "sunday"
+      ]
+    }
+  },
+  {
+    "id": "group-open-song-months",
+    "prompt": "Name a song whose title mentions a month of the year.",
+    "family": "music",
+    "predicate": {
+      "kind": "song-title-any-words",
+      "words": [
+        "january",
+        "february",
+        "march",
+        "april",
+        "may",
+        "june",
+        "july",
+        "august",
+        "september",
+        "october",
+        "november",
+        "december"
+      ]
+    }
+  },
+  {
+    "id": "group-open-song-seasons",
+    "prompt": "Name a song whose title mentions a season.",
+    "family": "music",
+    "predicate": {
+      "kind": "song-title-any-words",
+      "words": [
+        "spring",
+        "summer",
+        "autumn",
+        "fall",
+        "winter",
+        "summertime",
+        "wintertime"
+      ]
+    }
+  },
+  {
+    "id": "group-open-song-directions",
+    "prompt": "Name a song whose title mentions a direction.",
+    "family": "music",
+    "predicate": {
+      "kind": "song-title-any-words",
+      "words": [
+        "left",
+        "right",
+        "up",
+        "down",
+        "north",
+        "south",
+        "east",
+        "west",
+        "forward",
+        "backward",
+        "backwards",
+        "sideways"
+      ]
+    }
+  },
+  {
+    "id": "group-open-song-light",
+    "prompt": "Name a song whose title mentions light or darkness.",
+    "family": "music",
+    "predicate": {
+      "kind": "song-title-any-words",
+      "words": [
+        "light",
+        "lights",
+        "lighting",
+        "bright",
+        "brightness",
+        "dark",
+        "darkness",
+        "shadow",
+        "shadows",
+        "sunshine",
+        "sunlight",
+        "moonlight",
+        "starlight"
+      ]
+    }
+  },
+  {
+    "id": "group-open-song-plants",
+    "prompt": "Name a song whose title mentions a tree or flower.",
+    "family": "music",
+    "predicate": {
+      "kind": "song-title-any-words",
+      "words": [
+        "tree",
+        "trees",
+        "rose",
+        "roses",
+        "flower",
+        "flowers",
+        "daisy",
+        "daisies",
+        "lily",
+        "lilies",
+        "tulip",
+        "tulips",
+        "sunflower",
+        "sunflowers",
+        "orchid",
+        "violet",
+        "violets",
+        "jasmine",
+        "cherry",
+        "willow",
+        "oak",
+        "pine",
+        "palm"
+      ]
+    }
+  },
+  {
+    "id": "group-open-song-animals",
+    "prompt": "Name a song whose title mentions an animal.",
+    "family": "music",
+    "predicate": {
+      "kind": "song-title-any-words",
+      "words": [
+        "dog",
+        "dogs",
+        "cat",
+        "cats",
+        "bird",
+        "birds",
+        "horse",
+        "horses",
+        "lion",
+        "lions",
+        "tiger",
+        "tigers",
+        "wolf",
+        "wolves",
+        "bear",
+        "bears",
+        "monkey",
+        "monkeys",
+        "snake",
+        "snakes",
+        "eagle",
+        "eagles",
+        "shark",
+        "sharks",
+        "fish",
+        "butterfly",
+        "butterflies",
+        "bee",
+        "bees",
+        "bull",
+        "bulls",
+        "fox",
+        "deer",
+        "rabbit",
+        "bunny"
+      ]
+    }
+  },
+  {
+    "id": "group-open-song-romance",
+    "prompt": "Name a song whose title mentions love or affection.",
+    "family": "music",
+    "predicate": {
+      "kind": "song-title-any-words",
+      "words": [
+        "love",
+        "loves",
+        "loving",
+        "loved",
+        "lover",
+        "lovers",
+        "heart",
+        "hearts",
+        "heartbeat",
+        "kiss",
+        "kisses",
+        "kissing",
+        "hug",
+        "hugs",
+        "honey",
+        "sweetheart",
+        "romance",
+        "romantic"
+      ]
+    }
+  },
+  {
+    "id": "group-open-song-friendship",
+    "prompt": "Name a song whose title mentions friends or friendship.",
+    "family": "music",
+    "predicate": {
+      "kind": "song-title-any-words",
+      "words": [
+        "friend",
+        "friends",
+        "friendship",
+        "buddy",
+        "buddies",
+        "bestie",
+        "together"
+      ]
+    }
+  },
+  {
+    "id": "group-open-song-heat",
+    "prompt": "Name a song whose title mentions heat, fire, ice or cold.",
+    "family": "music",
+    "predicate": {
+      "kind": "song-title-any-words",
+      "words": [
+        "fire",
+        "fires",
+        "flame",
+        "flames",
+        "burn",
+        "burns",
+        "burning",
+        "hot",
+        "heat",
+        "cold",
+        "colder",
+        "ice",
+        "icy",
+        "frozen",
+        "freeze",
+        "freezing",
+        "snow",
+        "snowflake"
+      ]
+    }
+  },
+  {
+    "id": "group-open-song-food-drinks",
+    "prompt": "Name a song whose title mentions food or a drink.",
+    "family": "music",
+    "predicate": {
+      "kind": "song-title-any-words",
+      "words": [
+        "sugar",
+        "honey",
+        "chocolate",
+        "candy",
+        "cake",
+        "coffee",
+        "tea",
+        "water",
+        "wine",
+        "beer",
+        "whiskey",
+        "whisky",
+        "juice",
+        "milk",
+        "bread",
+        "butter",
+        "cookie",
+        "cookies",
+        "apple",
+        "banana",
+        "peach",
+        "lemon",
+        "strawberry",
+        "cherry"
+      ]
+    }
+  },
+  {
+    "id": "group-open-song-home",
+    "prompt": "Name a song whose title mentions a home or hometown.",
+    "family": "music",
+    "predicate": {
+      "kind": "song-title-any-words",
+      "words": [
+        "home",
+        "homes",
+        "house",
+        "houses",
+        "hometown",
+        "hometowns",
+        "town",
+        "towns",
+        "city",
+        "cities",
+        "village",
+        "villages",
+        "neighborhood",
+        "neighbourhood"
+      ]
+    }
+  },
+  {
+    "id": "group-open-song-people",
+    "prompt": "Name a song whose title mentions a person or relationship.",
+    "family": "music",
+    "predicate": {
+      "kind": "song-title-any-words",
+      "words": [
+        "boy",
+        "boys",
+        "girl",
+        "girls",
+        "woman",
+        "women",
+        "man",
+        "men",
+        "baby",
+        "babies",
+        "lady",
+        "ladies",
+        "lover",
+        "lovers",
+        "wife",
+        "husband",
+        "boyfriend",
+        "girlfriend",
+        "king",
+        "queen"
+      ]
+    }
+  },
+  {
+    "id": "group-open-song-water",
+    "prompt": "Name a song whose title mentions water or a body of water.",
+    "family": "music",
+    "predicate": {
+      "kind": "song-title-any-words",
+      "words": [
+        "water",
+        "waters",
+        "ocean",
+        "oceans",
+        "sea",
+        "seas",
+        "river",
+        "rivers",
+        "lake",
+        "lakes",
+        "stream",
+        "streams",
+        "waterfall",
+        "waterfalls",
+        "wave",
+        "waves",
+        "beach",
+        "beaches",
+        "tide",
+        "tides"
+      ]
+    }
+  },
+  {
+    "id": "group-open-song-movement",
+    "prompt": "Name a song whose title mentions a way of moving.",
+    "family": "music",
+    "predicate": {
+      "kind": "song-title-any-words",
+      "words": [
+        "run",
+        "runs",
+        "running",
+        "walk",
+        "walks",
+        "walking",
+        "jump",
+        "jumps",
+        "jumping",
+        "fly",
+        "flies",
+        "flying",
+        "swim",
+        "swims",
+        "swimming",
+        "drive",
+        "drives",
+        "driving",
+        "ride",
+        "rides",
+        "riding",
+        "dance",
+        "dances",
+        "dancing"
+      ]
+    }
+  },
+  {
+    "id": "group-open-teams-nba-or-nfl",
+    "prompt": "Name a team from the NBA or NFL.",
+    "family": "sports",
+    "predicate": {
+      "kind": "bank-union",
+      "banks": [
+        "discovery-nba-teams",
+        "discovery-nfl-teams"
+      ]
+    }
+  },
+  {
+    "id": "group-open-teams-nba-or-mlb",
+    "prompt": "Name a team from the NBA or MLB.",
+    "family": "sports",
+    "predicate": {
+      "kind": "bank-union",
+      "banks": [
+        "discovery-nba-teams",
+        "discovery-mlb-teams"
+      ]
+    }
+  },
+  {
+    "id": "group-open-teams-nba-or-nhl",
+    "prompt": "Name a team from the NBA or NHL.",
+    "family": "sports",
+    "predicate": {
+      "kind": "bank-union",
+      "banks": [
+        "discovery-nba-teams",
+        "discovery-nhl-teams"
+      ]
+    }
+  },
+  {
+    "id": "group-open-teams-nfl-or-mlb",
+    "prompt": "Name a team from the NFL or MLB.",
+    "family": "sports",
+    "predicate": {
+      "kind": "bank-union",
+      "banks": [
+        "discovery-nfl-teams",
+        "discovery-mlb-teams"
+      ]
+    }
+  },
+  {
+    "id": "group-open-teams-nfl-or-nhl",
+    "prompt": "Name a team from the NFL or NHL.",
+    "family": "sports",
+    "predicate": {
+      "kind": "bank-union",
+      "banks": [
+        "discovery-nfl-teams",
+        "discovery-nhl-teams"
+      ]
+    }
+  },
+  {
+    "id": "group-open-teams-mlb-or-nhl",
+    "prompt": "Name a team from the MLB or NHL.",
+    "family": "sports",
+    "predicate": {
+      "kind": "bank-union",
+      "banks": [
+        "discovery-mlb-teams",
+        "discovery-nhl-teams"
+      ]
+    }
+  },
+  {
+    "id": "group-open-teams-nba-or-wnba",
+    "prompt": "Name a team from the NBA or WNBA.",
+    "family": "sports",
+    "predicate": {
+      "kind": "bank-union",
+      "banks": [
+        "discovery-nba-teams",
+        "discovery-wnba-teams"
+      ]
+    }
+  },
+  {
+    "id": "group-open-players-nba-or-nfl",
+    "prompt": "Name an athlete who has played in the NBA or NFL.",
+    "family": "sports",
+    "predicate": {
+      "kind": "bank-union",
+      "banks": [
+        "discovery-nba-players",
+        "discovery-nfl-players"
+      ]
+    }
+  },
+  {
+    "id": "group-open-players-nba-or-mlb",
+    "prompt": "Name an athlete who has played in the NBA or MLB.",
+    "family": "sports",
+    "predicate": {
+      "kind": "bank-union",
+      "banks": [
+        "discovery-nba-players",
+        "discovery-mlb-players"
+      ]
+    }
+  },
+  {
+    "id": "group-open-players-nfl-or-mlb",
+    "prompt": "Name an athlete who has played in the NFL or MLB.",
+    "family": "sports",
+    "predicate": {
+      "kind": "bank-union",
+      "banks": [
+        "discovery-nfl-players",
+        "discovery-mlb-players"
+      ]
+    }
+  },
+  {
+    "id": "group-open-players-nba-or-wnba",
+    "prompt": "Name an athlete who has played in the NBA or WNBA.",
+    "family": "sports",
+    "predicate": {
+      "kind": "bank-union",
+      "banks": [
+        "discovery-nba-players",
+        "discovery-wnba-players"
+      ]
+    }
+  },
+  {
+    "id": "group-open-players-nfl-or-wnba",
+    "prompt": "Name an athlete who has played in the NFL or WNBA.",
+    "family": "sports",
+    "predicate": {
+      "kind": "bank-union",
+      "banks": [
+        "discovery-nfl-players",
+        "discovery-wnba-players"
+      ]
+    }
+  },
+  {
+    "id": "group-open-players-mlb-or-wnba",
+    "prompt": "Name an athlete who has played in the MLB or WNBA.",
+    "family": "sports",
+    "predicate": {
+      "kind": "bank-union",
+      "banks": [
+        "discovery-mlb-players",
+        "discovery-wnba-players"
+      ]
+    }
+  }
+]

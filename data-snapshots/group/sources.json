@@ -48,8 +48,8 @@
     },
     {
       "file": "selected-ids.json",
-      "bytes": 177028,
-      "sha256": "f231c889ff71af12aa14a3855bba67f70e85a324b9c8184c007e8dcf0503b9a4"
+      "bytes": 178148,
+      "sha256": "ca7fa2f7b4d90c793060c00ef2bab73d2a3356bca4f48d007abff67195e32293"
     },
     {
       "file": "steam-creator-facts.json.gz",
@@ -65,6 +65,21 @@
       "file": "title-english-words.json",
       "bytes": 895141,
       "sha256": "b2aa45e86d9006a24eb14eb76d7558919035564ca9766876f9eb8dfc815ea1fc"
+    },
+    {
+      "file": "accessible-prompts.json",
+      "bytes": 45747,
+      "sha256": "2b79becd9c79e003bf2dd34b8a109631616abb543037bb7c9447ede9ae2cf55c"
+    },
+    {
+      "file": "playability-policy.json",
+      "bytes": 9236,
+      "sha256": "7332f5ade06dd289059e41e2d5b2b0ed668ffb80d37c0f5f81a4b6fbc00bed25"
+    },
+    {
+      "file": "published-20261023-24.json",
+      "bytes": 264,
+      "sha256": "612ae9267b05bf45fc04f757b055726d526b665754a074fb0a6c23ef1eadaffd"
     }
   ],
   "parents": [
@@ -126,5 +141,6 @@
       "use": "Professional cricket athlete supplement."
     }
   ],
-  "limitations": "Names and reduced facts only. Curated supplements are finite, not exhaustive; metadata can contain or omit classifications. Wikidata was rate-limited and is not used as a verified source. Review feedback is represented only by approved/rejected IDs and aggregate editorial preferences, without personal identifiers."
+  "limitations": "Names and reduced facts only. Curated supplements are finite, not exhaustive; metadata can contain or omit classifications. Wikidata was rate-limited and is not used as a verified source. Review feedback is represented only by approved/rejected IDs and aggregate editorial preferences, without personal identifiers.",
+  "editorialRevision": "2026-10-24"
 }

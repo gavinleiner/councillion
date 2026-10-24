@@ -14,7 +14,7 @@ import {mountBank} from './answer-bank.js';
 import {estimatedPercentile,percentileText} from './benchmark.js';
 import {renderDive} from './dive.js';
 import {PACKS,PLAY_PACKS,REVIEWED_PACKS,MIXED_PACKS} from './data.js';
-import {dateKey,dailyPacks,isSharedDailyRun,shuffle,matchAnswer,tier,partyPack,practiceDraw,rebalancePracticeQueue} from './engine.js';
+import {dateKey,dailyPacks,isSharedDailyRun,shuffle,matchAnswer,tier,partyPack,practiceDraw,reshufflePracticeQueue} from './engine.js';
 import {PartyProfileStore} from './party-profile.js';
 import {emptyCareer,rankFor} from './party-career.js';
 import {bannerMarkup} from './party-badges.js';
@@ -28,7 +28,7 @@ import {warmAnswerBank} from './answer-matching.js';
 import {mountCourtAmbience} from './party-ambience.js';
 import {mountQuestionReview} from './question-review.js';
 import {mountLiveQuestionReview} from './live-question-review.js';
-import {QUESTION_SELECTION_BUILD} from './balanced-questions.js';
+import {QUESTION_SELECTION_BUILD} from './question-selection.js';
 import {mountQuestionLibrary} from './question-library.js';
 const $=s=>document.querySelector(s);
 const app=$('#app');
@@ -75,18 +75,18 @@ async function startQuiz(mode){
  if(!location.hash.startsWith('#'+mode))history.replaceState(null,'','#'+mode);
  const day=dateKey(),chosen=new URLSearchParams(location.hash.split('?')[1]??'').get('pack'),featured=mode==='practice'?REVIEWED_PACKS.find(p=>p.id===chosen):null;
  if(mode==='practice'&&chosen&&!featured){screen('questions');app.innerHTML='<section class="question-loading"><h1>THIS QUESTION HAS BEEN RETIRED</h1><p>Choose a reviewed category from the updated library.</p><a href="#questions">OPEN THE QUESTION LIBRARY ↗</a></section>';return;}
- let pendingQuiz=mode==='daily'?read('daily:'+day,null):null,resumedLive=false,practiceRemainder,fresh=false;
+ let pendingQuiz=mode==='daily'?read('daily:'+day,null):null,resumedLive=false,practiceRemainder,practiceSelectionChanged=false,fresh=false;
  if(mode==='daily'&&pendingQuiz&&!isSharedDailyRun(pendingQuiz,day))pendingQuiz=null;
  if(mode==='practice'&&restorePractice&&['localhost','127.0.0.1'].includes(location.hostname)){try{pendingQuiz=JSON.parse(sessionStorage.getItem('fc:live-practice'));if(featured&&pendingQuiz?.ids[0]!==featured.id||pendingQuiz?.ids?.some(id=>!REVIEWED_PACKS.some(p=>p.id===id)))pendingQuiz=null;resumedLive=!!pendingQuiz;}catch{}}
  if(!pendingQuiz||!Array.isArray(pendingQuiz.ids)||pendingQuiz.ids.some(id=>!PACKS.some(p=>p.id===id))){
-  let ids;if(mode==='daily')ids=dailyPacks(day).map(p=>p.id);else{let queue=read('practice:queue',[]);if(read('practice:selection',null)!==QUESTION_SELECTION_BUILD){queue=rebalancePracticeQueue(queue);save('practice:selection',QUESTION_SELECTION_BUILD);}const draw=practiceDraw(queue,featured?.id);ids=draw.ids;practiceRemainder=draw.remaining;}
+  let ids;if(mode==='daily')ids=dailyPacks(day).map(p=>p.id);else{let queue=read('practice:queue',[]);const priorSelection=read('practice:selection',null);if(priorSelection!==QUESTION_SELECTION_BUILD){queue=reshufflePracticeQueue(queue,Math.random,priorSelection);practiceSelectionChanged=true;}const draw=practiceDraw(queue,featured?.id);ids=draw.ids;practiceRemainder=draw.remaining;}
   if(ids.length<7){screen('questions');app.innerHTML='<section class="question-loading"><h1>FRESH QUESTIONS ARE BEING PREPARED</h1><p>You have reached the end of the published daily schedule. Earlier questions will not repeat.</p><a href="#questions">EXPLORE THE LIBRARY ↗</a></section>';return;}
   pendingQuiz={mode,day,ids,round:0,results:[],stage:'intro'};fresh=true;
  }
  if(!await prepareQuestionData(mode,pendingQuiz.ids.map(id=>PACKS.find(p=>p.id===id)))||epoch!==navigationEpoch)return;
  if(pendingQuiz.stage!=='done')warmAnswerBank(PACKS.find(p=>p.id===pendingQuiz.ids[pendingQuiz.round]));
  if(fresh){pendingQuiz.readyAt=Date.now()+3000;pendingQuiz.deadline=pendingQuiz.readyAt+25000;}
- quiz=pendingQuiz;if(practiceRemainder)save('practice:queue',practiceRemainder);
+ quiz=pendingQuiz;if(practiceRemainder){save('practice:queue',practiceRemainder);if(practiceSelectionChanged)save('practice:selection',QUESTION_SELECTION_BUILD);}
  if(resumedLive){if(quiz.stage!=='done')ocean.set('dive',total()*10);ocean.snap(quiz.stage==='done'?0:total()*10);}
  if(quiz.pausedAt)delete quiz.pausedAt;persistQuiz();history.replaceState(null,'','#'+mode+(featured?'?pack='+featured.id:''));renderQuiz();
 }

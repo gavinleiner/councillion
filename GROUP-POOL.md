@@ -18,9 +18,19 @@ Identical complete normalized answer sets and duplicate prompt wording are rejec
 
 ## Selection and history
 
-Puffer balances available unseen subjects, then balances formats within each subject. Random ties and shuffled format buckets choose the specific prompt; the size of a Steam or movie inventory does not give it more turns. Recent-subject spacing keeps seven distinct subjects together while at least seven subjects remain available. Each new lobby and rematch supplies a fresh random order, while participants' recorded seen IDs are excluded. Identical retained banks share a canonical question identity. Histories are per Firebase account in this browser; changing devices or clearing site data can reset them.
+Release `20261024-random-v1` removes subject and format weighting. Puffer shuffles all 5,000 eligible IDs uniformly with Fisher–Yates, then deals without replacement. This is equivalent to drawing a random number from the remaining questions each time. Every unseen ID has the same chance; a small subject or old broad prompt gets no extra weight. Subject streaks can occur. New rooms and rematches use fresh randomness and exclude participants' recorded seen IDs. Identical retained banks share a canonical identity. Histories are per Firebase account in this browser; moving devices or clearing site data can reset them.
 
-Practice uses the same balanced selection and persists its remaining queue. A one-time migration reorders only the remaining saved IDs. Daily publishes one frozen balanced calendar: the same seven IDs in the same order for everyone. October 23's published questions stay fixed; the new balanced schedule begins October 24. The calendar and Puffer stop on exhaustion instead of wrapping. Seven Daily questions per day consume a 5,000-category pool in about 714 days; this is not an infinite supply.
+Older restored room queues are reshuffled once under the new selection version. A valid active question and players' hearts are preserved. Retired questions are removed from future rounds. Clients on different selection/catalog versions cannot silently join each other's rooms.
+
+Practice uses the same uniform selection and persists its remaining queue. A one-time migration reshuffles the remaining saved IDs. Daily uses one frozen uniform calendar from October 25, shared by everyone. Both October 23 and October 24 keep their already-published seven IDs and order. Daily and Puffer stop on exhaustion instead of wrapping. Seven Daily questions per day consume a 5,000-category pool in about 714 days; this is finite.
+
+## Playability revision — October 24
+
+118 weak song prompts are held out of ordinary play: 79 literal-word questions with fewer than 16 source-familiar answers, and 39 low-familiarity or awkward technical title categories. `data-snapshots/group/playability-policy.json` records every retirement and reason. Familiarity is an editorial source-popularity proxy, not proof that a particular friend knows a song.
+
+118 authored broader alternatives replace them, leaving exactly 5,000 ordinary/Puffer categories. They use complete recorded unions: either of two Steam tags, either of two movie or TV genres, either sports league, or a broad set of literal song-title words such as family, weather or space. Either condition counts; the player never needs both. Each has at least 30 canonical answers and 16 source-familiar answers. These are editorial additions, not newly user-approved tryout votes. All 98 approved prompts are retained unchanged.
+
+The candidate recipes and predicates live in `data-snapshots/group/accessible-prompts.json` and `scripts/group-accessible-recipes.py`. The weakest old banks remain in `group-question-archive.js` solely for saved dives, optional practice and already-published Daily history; they cannot enter the new random pool. Full recorded inventories still have factual/source limits.
 
 ## Sources, rankings and limits
 
@@ -35,6 +45,6 @@ To regenerate the frozen selection, install `requirements-questions.txt` and run
 
 ## Live 100-question review
 
-Release `20261023-sample100-v1` adds `#sample`: 100 actual live prompts drawn using the same subject/format balancing as gameplay, with a frozen random seed. It shows all 100 together, each format and canonical answer count, subject/format/vote filters, Yes/No, notes, undo and JSON export. Its votes are stored per account on this device, under a separate sample version; the original `#review` and its private cloud feedback remain separate. The page never downloads answer banks. `question-sample-100.json` is the exact unvoted draw. Reproduce it with `node scripts/build-question-sample.mjs --seed=1c7de22efbd657b9bb8a2321`.
+`#sample` shows a reproducible draw of 100 actual live prompts using the same uniform shuffle as gameplay, with a frozen seed. It shows each format and canonical answer count, subject/format/vote filters, Yes/No, notes, undo and JSON export. Votes save per account on this device under a separate sample version; the original `#review` and its cloud feedback remain separate. The page does not download answer banks. `question-sample-100.json` is the exact unvoted draw. Reproduce the current seed with `node scripts/build-question-sample.mjs --seed=20261024-uniform-5000`.
 
-The first draw has 11 questions from eight subjects and 12 from science, including one single-tag and one two-tag Steam question. Balancing changes draw probabilities, not the underlying catalog counts. Unseen subjects or formats eventually run out; they drop out instead of reusing played questions to fill a quota. New content is still required to sustain all subjects indefinitely. October 23's published Daily remains unchanged.
+This sample has no subject quotas and does not cherry-pick good prompts. Counts reflect the actual pool: subject balancing and uniform per-question probability are different selection rules. The previous balanced sample is no longer presented as the live draw.

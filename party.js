@@ -5,7 +5,7 @@ import {beginParty,syncRoster,stepParty,setLobbyRules} from './party-rules.js';
 import {canPlayParty,requirePartyIdentity} from './party-access.js';
 import {PACKS,PARTY_PACKS,PACK_BY_ID,PARTY_IDS,canonicalQuestionId} from './data.js';
 import {QUESTION_QUALITY_BUILD} from './question-quality.js';
-import {QUESTION_SELECTION_BUILD} from './balanced-questions.js';
+import {QUESTION_SELECTION_BUILD} from './question-selection.js';
 import {catalogBuild} from './question-bank-loader.js';
 import {loadQuestionData,questionDataReady} from './question-data.js';
 import {warmAnswerBank,ANSWER_MATCHING_VERSION} from './answer-matching.js';

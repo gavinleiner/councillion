@@ -5,7 +5,7 @@ import {Window} from 'happy-dom';
 import {QUESTION_SAMPLE} from '../question-sample.js';
 import {sampleQuestionPool} from '../question-sample-selection.js';
 import {random,hash} from '../question-selection.js';
-import {balancedQuestionDeck} from '../balanced-questions.js';
+import {uniformQuestionDeck} from '../question-selection.js';
 import {mountLiveQuestionReview,sampleFeedback} from '../live-question-review.js';
 import {QuestionReviewStore} from '../question-review-state.js';
 import {MIXED_PACKS} from '../data.js';
@@ -13,17 +13,16 @@ import {MIXED_PACKS} from '../data.js';
 const manifest=JSON.parse(readFileSync(new URL('../group-bank-manifest.json',import.meta.url)));
 const memory=()=>{const values=new Map();return{getItem:k=>values.get(k)??null,setItem:(k,v)=>values.set(k,v)};};
 
-test('the frozen 100 are the exact balanced seeded draw from all 5,000 live categories',()=>{
+test('the frozen 100 are the exact uniform seeded draw from all 5,000 live categories',()=>{
  assert.equal(QUESTION_SAMPLE.questions.length,100);
  assert.equal(new Set(QUESTION_SAMPLE.questions.map(p=>p.id)).size,100);
  assert.equal(QUESTION_SAMPLE.poolCount,5000);
  assert.equal(QUESTION_SAMPLE.poolBuild,manifest.build);
  assert.deepEqual(new Set(manifest.categories.map(p=>p.id)),new Set(MIXED_PACKS.map(p=>p.id)));
  assert.deepEqual(QUESTION_SAMPLE,sampleQuestionPool(manifest.categories,{seed:QUESTION_SAMPLE.seed,build:manifest.build}));
- const expected=balancedQuestionDeck(manifest.categories,{rng:random(hash(QUESTION_SAMPLE.seed))}).slice(0,100);
+ const expected=uniformQuestionDeck(manifest.categories,{rng:random(hash(QUESTION_SAMPLE.seed))}).slice(0,100);
  assert.deepEqual(QUESTION_SAMPLE.questions.map(p=>p.id),expected);
- assert.ok(Object.values(QUESTION_SAMPLE.families).every(n=>n>=11&&n<=12));
- assert.equal(QUESTION_SAMPLE.formats['Steam · two tags'],1);
+ assert.match(QUESTION_SAMPLE.method,/equal chance/);
  const live=new Map(MIXED_PACKS.map(p=>[p.id,p]));
  for(const p of QUESTION_SAMPLE.questions){assert.equal(p.prompt,live.get(p.id).prompt);assert.equal(p.answerCount,live.get(p.id).answerCount);assert.equal(p.family,live.get(p.id).family);assert.ok(p.format);}
  assert.equal(Object.values(QUESTION_SAMPLE.formats).reduce((a,n)=>a+n,0),100);
@@ -66,7 +65,7 @@ test('all 100 prompts render together; rating, notes, undo, filtering and reload
   filter.value='unrated';filter.dispatchEvent(new window.Event('change'));assert.equal(cards.filter(c=>!c.hidden).length,99);
   filter.value='all';filter.dispatchEvent(new window.Event('change'));
   const format=root.querySelector('#sample-format');format.value='Steam · two tags';format.dispatchEvent(new window.Event('change'));assert.equal(cards.filter(c=>!c.hidden).length,QUESTION_SAMPLE.formats['Steam · two tags']);
-  const subject=root.querySelector('#sample-subject');subject.value='food';subject.dispatchEvent(new window.Event('change'));assert.equal(cards.filter(c=>!c.hidden).length,0);assert.equal(root.querySelector('#sample-empty').hidden,false);
+  const subject=root.querySelector('#sample-subject');subject.value=QUESTION_SAMPLE.questions.find(p=>p.family!=='gaming').family;subject.dispatchEvent(new window.Event('change'));assert.equal(cards.filter(c=>!c.hidden).length,0);assert.equal(root.querySelector('#sample-empty').hidden,false);
   view.destroy();view=mountLiveQuestionReview(root,{storage});assert.equal(view.store.items[id].vote,'yes');assert.equal(root.querySelector('textarea').value,'Same <tag> template');
   root.querySelector('[data-sample-clear]').click();assert.equal(view.store.items[id].vote,'unset');assert.equal(view.store.items[id].note,'Same <tag> template');
  }finally{view?.destroy();globalThis.window=previous.window;globalThis.document=previous.document;await window.happyDOM.close();}
