@@ -1,5 +1,6 @@
 import {questionReview} from './question-quality.js';
 import {GROUP_PACKS,GROUP_EQUIVALENTS} from './group-question-catalog.js';
+import {GROUP_ARCHIVED_PACKS} from './group-question-archive.js';
 import {DISCOVERY_PACKS} from './discovery-question-catalog.js';
 import {VARIETY_PACKS} from './variety-question-catalog.js';
 import {FUN_PACKS} from './fun-question-catalog.js';
@@ -70,7 +71,7 @@ const historicalOriginalPacks=PACKS.filter(p=>p.dailyEligible&&!p.catalogVersion
 // Replace retained IDs in place so saved games still resolve the same ID.
 const groupIds=new Set(GROUP_PACKS.map(p=>p.id));
 for(let i=PACKS.length-1;i>=0;i--)if(groupIds.has(PACKS[i].id))PACKS.splice(i,1);
-PACKS.push(...GROUP_PACKS);
+PACKS.push(...GROUP_ARCHIVED_PACKS.filter(p=>!groupIds.has(p.id)),...GROUP_PACKS);
 for(const p of PACKS)if(p.id==='fun-sports'||p.id==='var-semantic-sports_equipment-n-01')p.family='sports';
 export const PACK_BY_ID=new Map(PACKS.map(p=>[p.id,p]));
 export const PLAY_PACKS=PACKS.filter(p=>p.dailyEligible);

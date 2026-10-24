@@ -6,7 +6,7 @@ import {createHash} from 'node:crypto';
 import {GROUP_PACKS} from '../group-question-catalog.js';
 import {PACK_BY_ID,MIXED_PACKS,PARTY_PACKS,canonicalQuestionId} from '../data.js';
 import {partyDeck,practiceDraw,random,dailyPacks} from '../engine.js';
-import {balancedQuestionDeck} from '../balanced-questions.js';
+import {uniformQuestionDeck} from '../question-selection.js';
 import {resolveAnswer,normalize} from '../answer-matching.js';
 import {createGroupCatalog,seedFunAnswers} from '../fun-bank-loader.js';
 const read=path=>readFileSync(new URL('../'+path,import.meta.url));
@@ -47,10 +47,10 @@ test('the approved athlete bank covers both complete returned NHL career indexes
  for(const position of ['skater','goalie']){const source=JSON.parse(gunzipSync(read('data-snapshots/group/nhl-'+position+'.json.gz')));assert.equal(source.players.length,source.total);for(const r of source.players)assert.ok(names.has(normalize(r.name)),r.name);}
  for(const s of ['Wayne Gretzky','Connor McDavid','Patrick Roy','Sachin Tendulkar','Virat Kohli','Richie McCaw','Paola Egonu'])assert.equal(resolveAnswer(p,s).status,'exact',s);
 });
-test('Puffer and Practice use a balanced unseen deck and Daily remains a shared, unrepeated calendar',()=>{
- const expected=balancedQuestionDeck(PARTY_PACKS,{rng:random(794)});assert.deepEqual(partyDeck(random(794)),expected);
+test('Puffer and Practice use a uniform unseen deck and Daily remains a shared, unrepeated calendar',()=>{
+ const expected=uniformQuestionDeck(PARTY_PACKS,{rng:random(794)});assert.deepEqual(partyDeck(random(794)),expected);
  const seen=expected.slice(0,60),next=partyDeck(random(981),seen);assert.equal(next.length,4940);assert.ok(next.every(id=>!seen.includes(id)));
- const practice=practiceDraw([],null,random(794));assert.deepEqual([...practice.ids,...practice.remaining],balancedQuestionDeck(MIXED_PACKS,{rng:random(794)}));
+ const practice=practiceDraw([],null,random(794));assert.deepEqual([...practice.ids,...practice.remaining],uniformQuestionDeck(MIXED_PACKS,{rng:random(794)}));
  const prefixes=new Set();for(let seed=1;seed<=100;seed++)prefixes.add(partyDeck(random(seed)).slice(0,7).join('|'));assert.equal(prefixes.size,100);
  for(const id of ['discovery-steam-horror','discovery-steam-rpg-open-world']){const target=canonicalQuestionId(id);assert.notEqual(target,id);assert.ok(PARTY_PACKS.some(p=>p.id===target));assert.ok(!partyDeck(random(42),[id]).includes(target),'legacy Steam history: '+id);}
  const all=[];for(let d=0;d<100;d++){const date=new Date(Date.UTC(2026,9,24+d)).toISOString().slice(0,10),one=dailyPacks(date);assert.equal(one.length,7);assert.deepEqual(one.map(p=>p.id),dailyPacks(date).map(p=>p.id));all.push(...one.map(p=>p.id));}assert.equal(new Set(all).size,700);

@@ -18,7 +18,7 @@ test('a new lobby and a rematch respect seen history while independently shuffli
  const one=newParty(players,random(3));startParty(one,1000,()=>0);const first=partyPack(one).id;rememberQuestions('a',[first],storage);
  const two=newParty(players,random(9),readQuestionHistory('a',storage));assert.ok(!two.packIds.includes(first));assert.notDeepEqual(two.packIds,one.packIds.filter(id=>id!==first));two.phase='ended';const a=structuredClone(two),b=structuredClone(two);beginParty(a,2000,random(88));beginParty(b,2000,random(88));assert.deepEqual(a.packIds,b.packIds);assert.equal(a.firstTurn,b.firstTurn);
 });
-test('today is preserved while tomorrow uses the shared broad pool',()=>{
+test('published days stay preserved while future days use the shared pool',()=>{
  assert.deepEqual(dailyPacks('2026-10-23').map(p=>p.id),['fun-terraria','fun-sea-life','fun-tv','occupation-titles','fun-elements','catalog-snacks','fun-water-world']);
  assert.deepEqual(dailyPacks('2026-10-24'),dailyPacks('2026-10-24'));assert.equal(dailyPacks('2026-10-24').length,7);assert.ok(dailyPacks('2026-10-24').every(p=>MIXED_PACKS.includes(p)));
 });

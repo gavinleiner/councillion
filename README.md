@@ -87,7 +87,7 @@ The host validates answers and timers. A disconnected player has a 30-second gra
 - `fun-question-catalog.js`, `fun-bank-manifest.json`, `question-banks/`: broad-category metadata, count/hash/ranking records and compressed answer banks.
 - `scripts/build-fun-banks.py`, `data-snapshots/rework/`: deterministic broad-bank generator and attributed factual snapshots.
 - `scripts/build-variety-banks.py`, `variety-question-catalog.js`, `variety-bank-manifest.json`, `variety-banks/`, `data-snapshots/variety/`: curated factual category relationships, compressed banks and integrity records.
-- `question-selection.js`, `question-history.js`: balanced group selection and browser/account prompt history.
+- `question-selection.js`, `question-history.js`: uniform unseen selection and browser/account prompt history.
 - `scripts/build-daily-schedule.mjs`, `daily-schedule.json`, `daily-schedule.js`: append-only daily appointments; exhausted schedules stop instead of wrapping.
 - `scripts/build-question-catalog.py`, `catalog-manifest.json`, `data-snapshots/expansion/`: reproducible expansion, per-category counts/rankings and attributed source snapshots.
 - `airline-bank.js`, `vehicle-bank.js`: the exact user-provided examples and additional local aliases.
@@ -199,3 +199,7 @@ Release `20261023-group5000-v1` implements all 98 approved tryout prompts and ex
 ## Owner-granted highest rank
 
 `rankGrants/{firebaseUid}` is a separate, owner-written rank entitlement. A version-1 `highest` grant follows the current top ladder tier, supplies its rating floor and bypasses placement display. Profiles and the friend leaderboard subscribe to it live and reapply it whenever career/solo data changes. Match receipts, actual W/L, placements, earned peak, answers, other achievements and admin permissions are unaffected. Removing the grant restores the earned rank. Verified Google players can read individual grants; only the verified owner can write or revoke them. No recipient email is embedded in the public client.
+
+## Uniform 5,000-question draw — October 24
+
+Release `20261024-random-v1` removes subject/format weighting. Every unseen ID has equal probability in Puffer and Practice; rematches and new rooms reshuffle independently while respecting reported history. Old restored queues migrate once without disturbing a valid active question. Daily is frozen/shared with a uniform future calendar from October 25; both published days are preserved. 118 weak song constraints are replaced by 118 broader source-predicate inventories, retaining all 98 approved tryout prompts and exactly 5,000 ordinary/Puffer categories. `#sample` reflects the new actual draw. See [GROUP-POOL.md](GROUP-POOL.md) for current selection/content limits; earlier counts above describe older releases.

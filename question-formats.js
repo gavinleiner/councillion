@@ -24,6 +24,11 @@ export function questionFormat(pack){
   'group-show-title-word':'TV title · one word',
   'group-song-title-category':'Song title · word category',
   'group-song-title-word':'Song title · one word',
+  'group-accessible-film-any-genres':'Movies · either genre',
+  'group-accessible-tv-any-genres':'TV · either genre',
+  'group-accessible-steam-any-tags':'Steam · either tag',
+  'group-accessible-song-title-any-words':'Song title · broad theme',
+  'group-accessible-bank-union':'Sports · either league',
  })[group]??group;
 }
 

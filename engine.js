@@ -1,8 +1,7 @@
 import { PACKS, PLAY_PACKS, REVIEWED_PACKS, ORIGINAL_PLAY_PACKS, MIXED_PACKS, PARTY_PACKS, PACK_BY_ID, PARTY_IDS, canonicalQuestionId, answerCount } from './data.js';
 import {normalize,matchAnswer,resolveAnswer} from './answer-matching.js';
 export {normalize,matchAnswer,resolveAnswer,typoDistance} from './answer-matching.js';
-import {hash,random,shuffle} from './question-selection.js';
-import {balancedQuestionDeck} from './balanced-questions.js';
+import {hash,random,shuffle,uniformQuestionDeck,QUESTION_SELECTION_BUILD} from './question-selection.js';
 export {hash,random,shuffle} from './question-selection.js';
 import {FRESH_DAILY_START,FRESH_DAILY_IDS} from './daily-schedule.js';
 export const GROUP_DAILY_START='2026-10-24';
@@ -36,26 +35,33 @@ export function isSharedDailyRun(run,day=dateKey()){
 }
 export function tier(points){return points>=100?{name:'KRILLION',icon:'✦',color:'rarity-krillion'}:points>=85?{name:'DEEP CUT',icon:'◆',color:'rarity-deepcut'}:points>=60?{name:'RARE',icon:'✧',color:'rarity-rare'}:points>=30?{name:'SCHOOLER',icon:'◈',color:'rarity-schooler'}:points>0?{name:'PLANKTON',icon:'·',color:'rarity-plankton'}:{name:'NO ECHO',icon:'×',color:'muted'};}
 
-export function partyDeck(rng=Math.random,seen=[]){const excluded=new Set(seen.map(canonicalQuestionId));return balancedQuestionDeck(PARTY_PACKS.filter(p=>!excluded.has(canonicalQuestionId(p.id))),{rng});}
-export function rebalancePracticeQueue(pending=[],rng=Math.random){const ids=new Set(pending);return balancedQuestionDeck(MIXED_PACKS.filter(p=>ids.has(p.id)),{rng});}
+export function partyDeck(rng=Math.random,seen=[]){const excluded=new Set(seen.map(canonicalQuestionId));return uniformQuestionDeck(PARTY_PACKS.filter(p=>!excluded.has(canonicalQuestionId(p.id))),{rng});}
+export function reshufflePracticeQueue(pending=[],rng=Math.random,previousSelection=null){
+ const ids=new Set(pending);
+ // These IDs did not exist in the weighted release, so adding them during its
+ // one-time migration cannot replay a question that user had already drawn.
+ if(pending.length&&previousSelection==='20261023-balanced-v1')for(const p of MIXED_PACKS)if(p.id.startsWith('group-open-'))ids.add(p.id);
+ return uniformQuestionDeck(MIXED_PACKS.filter(p=>ids.has(p.id)),{rng});
+}
 export function practiceDraw(pending=[],featured=null,rng=Math.random){
  if(featured&&!REVIEWED_PACKS.some(p=>p.id===featured))throw Error('This category has been retired. Choose a reviewed question.');
  const pool=new Set(MIXED_PACKS.map(p=>p.id));let queue=[...new Set(pending)].filter(id=>pool.has(id)),ids=featured?[featured]:[];
  if(featured)queue=queue.filter(id=>id!==featured);
  const seen=new Set(ids);
- while(ids.length<7){if(!queue.length)queue=balancedQuestionDeck(MIXED_PACKS,{rng});const id=queue.shift();if(!seen.has(id)){ids.push(id);seen.add(id);}else queue.push(id);}
+ while(ids.length<7){if(!queue.length)queue=uniformQuestionDeck(MIXED_PACKS,{rng});const id=queue.shift();if(!seen.has(id)){ids.push(id);seen.add(id);}else queue.push(id);}
  return {ids,remaining:queue};
 }
 export function refreshPartyQuestions(state,now=Date.now(),rng=Math.random){
  const allowed=PARTY_IDS,keep=['lobby','countdown'].includes(state.phase)?0:state.round,
  prefix=state.packIds.slice(0,keep),seen=new Set([...(state.seenIds??[]).map(canonicalQuestionId),...prefix.map(canonicalQuestionId)]),tail=[];
  for(const id of state.packIds.slice(keep)){const key=canonicalQuestionId(id);if(allowed.has(id)&&!seen.has(key)){tail.push(id);seen.add(key);}}
- const next=[...prefix,...tail,...partyDeck(rng,[...seen])],retired=state.phase==='playing'&&!allowed.has(state.packIds[state.round-1]);
- const changed=next.length!==state.packIds.length||next.some((id,i)=>id!==state.packIds[i]);if(changed)state.packIds=next;
+ const migration=state.selectionBuild!==QUESTION_SELECTION_BUILD,remaining=[...tail,...partyDeck(rng,[...seen])];
+ const next=[...prefix,...(migration?shuffle(remaining,rng):remaining)],retired=state.phase==='playing'&&!allowed.has(state.packIds[state.round-1]);
+ const changed=migration||next.length!==state.packIds.length||next.some((id,i)=>id!==state.packIds[i]);if(changed){state.packIds=next;state.selectionBuild=QUESTION_SELECTION_BUILD;}
  if(retired){state.phase='burst';state.nextAt=now+900;state.used=[];state.players.forEach(p=>delete p.lastAnswer);state.notice='Reviewed question refreshed · no heart lost.';}
  if(changed||retired)state.revision++;return changed||retired;
 }
-export function newParty(players,rng=Math.random,seenIds=[]){return {exhausted:false,seenIds:[...new Set(seenIds)],phase:'lobby',mode:'casual',players:players.map(p=>({...p,hearts:2,meter:0,score:0,connected:true,answers:0,rare:0,krillions:0,answerStreak:0,bestStreak:0,fastestMs:0,heartsLost:0,forfeit:false})),eliminations:[],turn:0,round:0,packIds:partyDeck(rng,seenIds),used:[],log:[],settings:{lives:2,maxLives:5,meterTarget:600,minTurnMs:8000,fuseMinMs:10000,fuseMaxMs:30000,maxPlayers:6},notice:'The court is assembling.',deadline:0,startedAt:0,revision:0};}
+export function newParty(players,rng=Math.random,seenIds=[]){return {exhausted:false,selectionBuild:QUESTION_SELECTION_BUILD,seenIds:[...new Set(seenIds)],phase:'lobby',mode:'casual',players:players.map(p=>({...p,hearts:2,meter:0,score:0,connected:true,answers:0,rare:0,krillions:0,answerStreak:0,bestStreak:0,fastestMs:0,heartsLost:0,forfeit:false})),eliminations:[],turn:0,round:0,packIds:partyDeck(rng,seenIds),used:[],log:[],settings:{lives:2,maxLives:5,meterTarget:600,minTurnMs:8000,fuseMinMs:10000,fuseMaxMs:30000,maxPlayers:6},notice:'The court is assembling.',deadline:0,startedAt:0,revision:0};}
 export const partyPack=s=>PACK_BY_ID.get(s.packIds[Math.max(s.round,1)-1]);
 function alive(s){return s.players.filter(p=>p.connected&&p.hearts>0);}
 function trackFinalDuel(s,now){const active=alive(s);if(active.length===2&&active.every(p=>p.hearts===1)){const ids=active.map(p=>p.id).sort();if(!s.finalDuel||s.finalDuel.ids.join('|')!==ids.join('|'))s.finalDuel={ids,startedAt:now,answers:Object.fromEntries(ids.map(id=>[id,0]))};}else if(active.length>1)delete s.finalDuel;}
