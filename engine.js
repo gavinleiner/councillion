@@ -4,6 +4,8 @@ export {normalize,matchAnswer,resolveAnswer,typoDistance} from './answer-matchin
 import {hash,random,shuffle,varietyDeck} from './question-selection.js';
 export {hash,random,shuffle} from './question-selection.js';
 import {FRESH_DAILY_START,FRESH_DAILY_IDS} from './daily-schedule.js';
+export const GROUP_DAILY_START='2026-10-24';
+export const GROUP_DAILY_IDS=FRESH_DAILY_IDS.slice(7);
 export function dateKey(date=new Date()){const parts=new Intl.DateTimeFormat('en-US',{timeZone:'America/New_York',year:'numeric',month:'2-digit',day:'2-digit'}).formatToParts(date);return ['year','month','day'].map(k=>parts.find(p=>p.type===k).value).join('-');}
 export const DAILY_FAMILIES=['gaming','nature','food','science','culture','world','everyday'];
 const LEGACY_DAILY_FAMILIES=['words','nature','food','science','culture','world','everyday'];
@@ -33,7 +35,7 @@ export function isSharedDailyRun(run,day=dateKey()){
 }
 export function tier(points){return points>=100?{name:'KRILLION',icon:'✦',color:'rarity-krillion'}:points>=85?{name:'DEEP CUT',icon:'◆',color:'rarity-deepcut'}:points>=60?{name:'RARE',icon:'✧',color:'rarity-rare'}:points>=30?{name:'SCHOOLER',icon:'◈',color:'rarity-schooler'}:points>0?{name:'PLANKTON',icon:'·',color:'rarity-plankton'}:{name:'NO ECHO',icon:'×',color:'muted'};}
 
-export function partyDeck(rng=Math.random,seen=[],recent=[]){return varietyDeck(PARTY_PACKS,{seen:seen.map(canonicalQuestionId),recent,rng});}
+export function partyDeck(rng=Math.random,seen=[]){const excluded=new Set(seen.map(canonicalQuestionId));return shuffle(PARTY_PACKS.filter(p=>!excluded.has(canonicalQuestionId(p.id))).map(p=>p.id),rng);}
 export function practiceDraw(pending=[],featured=null,rng=Math.random){
  if(featured&&!REVIEWED_PACKS.some(p=>p.id===featured))throw Error('This category has been retired. Choose a reviewed question.');
  const pool=new Set(MIXED_PACKS.map(p=>p.id));let queue=[...new Set(pending)].filter(id=>pool.has(id)),ids=featured?[featured]:[];

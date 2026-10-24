@@ -1,16 +1,17 @@
 # Councillion answer banks
 
-Snapshots: 21–23 October 2026. The library exposes **3,188 reviewed categories**; **3,113** enter Daily/Practice and **3,104** enter Puffer, including **213 sports categories**. Their banks contain 5,228,184 and 5,227,944 canonical answer/category entries, excluding aliases. These overlap across categories; they are not counts of unique concepts. Narrow country/state city filters and old unreliable cast/semantic banks remain archived. See question-audit-report.json for the complete structural scan and question-sources.html for expansion attribution and coverage.
+Snapshots: 21–23 October 2026. The catalog contains **3,188 visible categories**, most now optional specialists. The group-tryout policy admits **153** to ordinary Daily/Practice and **151** to Puffer, including **12 broad sports categories**. Those pools contain 1,014,632 and 1,014,579 canonical answer/category entries. Entries overlap and are not unique-concept counts. Source inventory size does not establish that a category is fun, complete or appropriate for random play. See `question-audit-report.json` for the structural scan and `QUESTION-TRYOUT.md` for the new feedback workflow.
 
-| Subject | Reviewed library | Automatic mix | Puffer |
+| Subject | Visible catalog | Automatic mix | Puffer |
 | --- | ---: | ---: | ---: |
-| Gaming | 13 | 10 | 10 |
-| Nature | 46 | 38 | 38 |
-| Food | 45 | 43 | 43 |
-| Science | 31 | 21 | 21 |
-| Culture | 86 | 72 | 71 |
-| World | 11 | 7 | 7 |
-| Everyday | 74 | 71 | 63 |
+| Gaming | 2,003 | 7 | 7 |
+| Nature | 46 | 16 | 16 |
+| Food | 45 | 35 | 35 |
+| Science | 31 | 7 | 7 |
+| Culture | 736 | 39 | 39 |
+| World | 11 | 6 | 6 |
+| Everyday | 72 | 31 | 29 |
+| Sports | 213 | 12 | 12 |
 | Optional wordplay | 31 | 0 | 0 |
 
 There is no overall theme restriction. Duplicate/equivalent request keys are excluded from ordinary selection. The library displays prompts and bank sizes; answers unlock after a complete dive. The original 111-answer airline and 1,194-answer vehicle banks retain supplied labels and scores. Counts overlap across categories and are not unique-concept totals. Inventories remain finite and may omit a valid answer.
@@ -41,9 +42,9 @@ The two separate films called *All Quiet on the Western Front* share one accepte
 
 ## Daily selection
 
-From **23 October 2026 at midnight in New York**, the explicitly reviewed `daily-schedule.json` assigns seven unused prompt IDs per day. This revision has **444 complete dives through January 9, 2028**. Earlier dates retain the historical draw; saved runs must match the published IDs and order. This release intentionally replaces retired prompts for everyone from October 23, with the prior build recorded in the revision ledger. Subsequent ordinary additions append without reshuffling. The scheduler reserves smaller subject families across later days; at least five subjects appear in each of the first 30 dives. No prompt ID repeats within the calendar, and exhaustion stops instead of wrapping.
+`daily-schedule.json` is the frozen, append-only calendar. October 23, 2026 retains its published draw. The group-tryout quality revision begins **October 24 at midnight in New York** and contains **20 complete fresh dives through November 12, 2026**, plus two remainder IDs. It excludes earlier assigned and original-pool question keys. The revision ledger records the previous build. Everyone receives the same seven ordered IDs for a date, independent of account, locale and Puffer history. Saved runs must match those IDs. New approved banks append dates; published dates do not move. Exhaustion stops instead of wrapping.
 
-Puffer draws from 3,104 reviewed categories with at least 30 entries and at least eight answers in the editorial familiar/known tiers. The host-owned room state records revealed question IDs; clients remember them by Firebase identity on this browser and report them when joining a new room. The host excludes known IDs from future draws and rematches. A valid active category is preserved when someone joins mid-round. A retired active question is replaced without a heart loss, and retired/duplicate/seen future questions are removed from restored room decks. Clearing local site data or moving devices does not carry local history over; history is not synced between devices. No global deduplication across all game modes is claimed. If a room exhausts its remaining questions, it stops rather than dealing the first prompt again.
+Puffer draws from **151 broad categories** with at least 30 entries and at least eight editorial familiar/known answers. A Fisher–Yates shuffle covers the entire eligible pool, without equal-turn quotas for small subjects. New rooms and rematches exclude participants’ reported seen IDs. The host-owned room state records revealed question IDs; clients remember them by Firebase identity on this browser and report them when joining a new room. A valid active category is preserved when someone joins mid-round. A retired active question is replaced without a heart loss, and retired/duplicate/seen future questions are removed from restored decks. Clearing local site data or moving devices does not carry history over; history is not synced between devices. No global deduplication across all modes is claimed. A room stops when it exhausts its unseen questions.
 
 At least two active survivors, and at least half the active survivors, can vote for a fresh category without losing a heart. A rejected/spectator/stale or duplicate vote cannot advance it. The next bank loads before the fuse. Google membership remains server-enforced. Practice remains intentionally replayable: it keeps a saved shuffled queue and cycles only after exhausting that queue; deliberate library selections may repeat.
 
@@ -160,3 +161,8 @@ node scripts/audit-questions.mjs
 `prepare-discovery-sources.py /path/to/downloads` documents the one-time reduction from raw downloaded inputs. Gzip timestamps are zero and bank paths are content addressed. The build inputs stay offline; home, library and deck construction use metadata, and only selected answer banks load during play. Puffer already broadcasts only changed state fields, so an accepted answer does not retransmit thousands of question IDs. Indexed question and eligibility lookups avoid scanning the expanded library on each room-state update. The bounded answer caches and existing current/next prefetch remain in place.
 
 `question-counts.csv` lists every ordinary category and its canonical answer count, with Daily/Puffer eligibility. `discovery-manifest.json` records every new answer hash. The shared calendar appends to the previously published 257 IDs and contains 444 complete dives, through January 9, 2028; it is finite and does not loop.
+
+
+## Group proposal research
+
+`question-proposals.js` contains 100 proposed prompts with scope notes and six examples each; they do not enter `PACKS`. `question-research.js` links official game hubs, league directories, museums, food producers, science institutions and other editorial starting points. These references support category design and sample checking, not a claim of exhaustive answer coverage. Broad qualitative prompts require multiple inventories and editorial judgment before a playable bank can be approved. Private feedback stores votes and optional notes under `questionReviews/{uid}/group-100-v1`; it does not upload gameplay answers or additional Google profile fields.

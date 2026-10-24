@@ -225,6 +225,27 @@
           }
         }
       }
+    },
+    "questionReviews": {
+      ".read": "auth !== null && auth.token.firebase.sign_in_provider === 'google.com' && auth.token.email_verified === true && auth.token.email === 'gavin@theleiners.com'",
+      "$uid": {
+        ".read": "auth !== null && auth.token.firebase.sign_in_provider === 'google.com' && auth.uid === $uid",
+        "$version": {
+          ".write": "auth !== null && auth.token.firebase.sign_in_provider === 'google.com' && auth.uid === $uid && $version === 'group-100-v1'",
+          ".validate": "newData.hasChildren(['version','updatedAt','items']) && newData.child('version').val() === 1 && newData.child('updatedAt').isNumber() && newData.child('updatedAt').val() > 0 && newData.child('updatedAt').val() <= now + 5000",
+          "items": {
+            "$id": {
+              ".validate": "$id.matches(/^q(00[1-9]|0[1-9][0-9]|100)$/) && newData.hasChildren(['vote','note','at']) && newData.child('vote').isString() && newData.child('vote').val().matches(/^(yes|no|unset)$/) && newData.child('note').isString() && newData.child('note').val().length <= 500 && newData.child('at').isNumber() && newData.child('at').val() > 0 && newData.child('at').val() <= now + 5000",
+              "$field": {
+                ".validate": "$field.matches(/^(vote|note|at)$/)"
+              }
+            }
+          },
+          "$field": {
+            ".validate": "$field.matches(/^(version|updatedAt|items)$/)"
+          }
+        }
+      }
     }
   }
 }
