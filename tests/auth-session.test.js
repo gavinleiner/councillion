@@ -23,6 +23,10 @@ test('sign-out removes the durable session even when party cleanup hangs',async 
  try{await account.ready;t.mock.timers.enable({apis:['setTimeout']});const signingOut=account.signOut();assert.equal(account.identity,null);assert.equal(disconnected,true);await Promise.resolve();await Promise.resolve();assert.equal(f.logouts,1);t.mock.timers.tick(2001);await signingOut;assert.equal(await f.cloud.restoreAccount(),null);
  }finally{t.mock.timers.reset();account.dispose();await f.window.happyDOM.close();}
 });
+test('Puffer can explicitly refresh a Google session without requiring browser reload',async()=>{
+ const f=fixture();let options;f.cloud.currentSession=async(expected,value)=>{assert.equal(expected,identity.id);options=value;return{uid:identity.uid,identity};};
+ const account=connectAccount(f.options);try{await account.ready;await account.partySession({forceRefresh:true});assert.deepEqual(options,{forceRefresh:true});}finally{account.dispose();await f.window.happyDOM.close();}
+});
 test('late startup cannot restore a signed-out account and forged local profile flags are ignored',async()=>{
  const f=fixture(null);let resolve;f.cloud.restoreAccount=()=>new Promise(r=>{resolve=r;});sessionStorage.setItem('fc:profile',JSON.stringify(identity));const account=connectAccount(f.options);
  try{await Promise.resolve();await Promise.resolve();const out=account.signOut();resolve(identity);await account.ready;await out;assert.equal(account.identity,null);await assert.rejects(account.partySession(),/Sign in/);
