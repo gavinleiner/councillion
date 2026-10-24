@@ -1,6 +1,7 @@
 export function hash(text){let n=2166136261;for(const c of text){n^=c.charCodeAt(0);n=Math.imul(n,16777619);}return n>>>0;}
 export function random(seed){return()=>{seed+=0x6D2B79F5;let t=seed;t=Math.imul(t^t>>>15,t|1);t^=t+Math.imul(t^t>>>7,t|61);return((t^t>>>14)>>>0)/4294967296;};}
 export function shuffle(items,rng=Math.random){const a=[...items];for(let i=a.length-1;i>0;i--){const j=Math.floor(rng()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
+export function unseenDeck(packs,{seen=[],rng=Math.random}={}){const excluded=new Set(seen);return shuffle(packs.filter(p=>!excluded.has(p.id)).map(p=>p.id),rng);}
 // Choose subject groups with equal opportunity, then a prompt in that group.
 // Large film/franchise inventories cannot drown out food, language or tools.
 export function varietyDeck(packs,{seen=[],recent=[],rng=Math.random}={}){

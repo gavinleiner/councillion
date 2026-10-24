@@ -12,10 +12,10 @@ import{FRESH_DAILY_IDS}from'../daily-schedule.js';
 import{PartySession}from'../party.js';
 const read=f=>readFileSync(new URL('../'+f,import.meta.url));
 test('source archives remain intact while broad sports survive the ordinary-play quality gate',()=>{
- assert.ok(DISCOVERY_PACKS.length>=2000);assert.ok(MIXED_PACKS.length>=100&&MIXED_PACKS.length<500);assert.ok(PARTY_PACKS.length>=100);assert.ok(PARTY_PACKS.filter(p=>p.family==='sports').length>=10);
+ assert.ok(DISCOVERY_PACKS.length>=2000);assert.ok(MIXED_PACKS.length===5000);assert.ok(PARTY_PACKS.length>=100);assert.ok(PARTY_PACKS.filter(p=>p.family==='sports').length>=10);
  const sets=new Set(),prompts=new Set();const manifest=JSON.parse(read('discovery-manifest.json'));
  assert.equal(DISCOVERY_PACKS.length,manifest.length);
- for(const m of manifest){const p=PACK_BY_ID.get(m.id);assert.equal(PARTY_IDS.has(m.id),questionReview(p).status==='automatic');assert.ok(p.answerCount>=30&&p.familiarCount>=8);assert.equal(p.answerCount,m.answerCount);assert.ok(!sets.has(m.identityHash));sets.add(m.identityHash);assert.ok(!prompts.has(p.prompt));prompts.add(p.prompt);
+ for(const m of manifest){const p=DISCOVERY_PACKS.find(p=>p.id===m.id);assert.equal(PARTY_IDS.has(m.id),questionReview(PACK_BY_ID.get(m.id)).status==='automatic');assert.ok(p.answerCount>=30&&p.familiarCount>=8);assert.equal(p.answerCount,m.answerCount);assert.ok(!sets.has(m.identityHash));sets.add(m.identityHash);assert.ok(!prompts.has(p.prompt));prompts.add(p.prompt);
   const bytes=gunzipSync(read(p.answerDirectory+'/'+p.answerFile));assert.equal(createHash('sha256').update(bytes).digest('hex'),m.sha256);const rows=JSON.parse(bytes);assert.equal(rows.length,p.answerCount);assert.equal(new Set(rows.map(r=>normalize(r[0]))).size,rows.length);
  }
  assert.ok(DISCOVERY_PACKS.some(p=>p.answerCount>=10000));assert.ok(DISCOVERY_PACKS.every(p=>!/^Name a (?:action|adventure|animated|MLB|NBA|NFL)/.test(p.prompt)));
@@ -46,7 +46,7 @@ test('sports, console games and entertainment accept recognizable exact answers,
 test('the quality revision preserves today, records future replacement and keeps account-independent selections',()=>{
  const baseline=JSON.parse(read('data-snapshots/discovery/published-daily-prefix.json'));
  assert.deepEqual(FRESH_DAILY_IDS.slice(0,7),baseline.slice(0,7));assert.equal(new Set(FRESH_DAILY_IDS).size,FRESH_DAILY_IDS.length);assert.ok(FRESH_DAILY_IDS.length>=14*7);
- const calendar=JSON.parse(read('daily-schedule.json'));assert.deepEqual(calendar.ids,FRESH_DAILY_IDS);assert.ok(calendar.revisions.some(r=>r.from==='2026-10-24'&&r.quality==='20261023-group-tryout-v1'));for(const id of FRESH_DAILY_IDS.slice(7))assert.ok(MIXED_PACKS.some(p=>p.id===id));
+ const calendar=JSON.parse(read('daily-schedule.json'));assert.deepEqual(calendar.ids,FRESH_DAILY_IDS);assert.ok(calendar.revisions.some(r=>r.from==='2026-10-24'&&r.quality==='20261023-group5000-v1'));for(const id of FRESH_DAILY_IDS.slice(7))assert.ok(MIXED_PACKS.some(p=>p.id===id));
  assert.deepEqual(dailyPacks('2026-10-23').map(p=>p.id),['fun-terraria','fun-sea-life','fun-tv','occupation-titles','fun-elements','catalog-snacks','fun-water-world']);
  const sports=new Set(PARTY_PACKS.filter(p=>p.family==='sports').map(p=>p.id));
  for(let seed=1;seed<=4;seed++){const deck=partyDeck(random(seed));assert.equal(deck.length,PARTY_PACKS.length);assert.equal(new Set(deck).size,deck.length);assert.ok(deck.some(id=>sports.has(id)));const seen=deck.slice(0,40);const next=partyDeck(random(seed),seen);assert.equal(next.length,deck.length-40);assert.ok(next.every(id=>!seen.includes(id)));}
