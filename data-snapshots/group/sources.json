@@ -32,6 +32,11 @@
       "sha256": "cb7edfc0a874a106f690a378a88a4112e7d16a17fcfede51bd6e28ff1206e7b4"
     },
     {
+      "file": "olympic-events.json",
+      "bytes": 52421,
+      "sha256": "563700cd07786c059548c365cf3d61d74612fc375631ab7048ff8ffe67098af9"
+    },
+    {
       "file": "preferences.json",
       "bytes": 1557,
       "sha256": "9fd12a6b076c7ed5916030b722bb6d40aa352f03011bb9d72cbba03793277bf7"
@@ -43,8 +48,8 @@
     },
     {
       "file": "selected-ids.json",
-      "bytes": 149352,
-      "sha256": "9bd348f94faf1a088b11510d3d198097aa61ef36708f98af212c0750f514aa0b"
+      "bytes": 177028,
+      "sha256": "f231c889ff71af12aa14a3855bba67f70e85a324b9c8184c007e8dcf0503b9a4"
     },
     {
       "file": "steam-creator-facts.json.gz",
@@ -55,6 +60,11 @@
       "file": "steam-free-titles.json",
       "bytes": 277180,
       "sha256": "1652b65755dfb60d95698ed99137f0675c9409aa3ee032b9742242dbbff4795a"
+    },
+    {
+      "file": "title-english-words.json",
+      "bytes": 895141,
+      "sha256": "b2aa45e86d9006a24eb14eb76d7558919035564ca9766876f9eb8dfc815ea1fc"
     }
   ],
   "parents": [

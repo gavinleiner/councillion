@@ -41,7 +41,7 @@ discard('q078',"Cloudberry|Coconut palm|Christmas cactus|Easter cactus|Thanksgiv
 manual['q010']=manual['q010'][:manual['q010'].index('Yharnam')]+['Yharnam','Central Yharnam','Cathedral Ward','Old Yharnam','Forbidden Woods','Byrgenwerth','Cainhurst Castle','Hunter\'s Dream','Fishing Hamlet','Anor Londo','Firelink Shrine','Blighttown','Sen\'s Fortress','Undead Burg','Ash Lake','Rapture','Columbia','Aperture Science','Black Mesa','Hallownest','Dirtmouth','Greenpath','Deepnest','City of Tears','Crystal Peak','Queen\'s Gardens']
 manual['q032']=[s for s in manual['q032'] if s!='Shaquille O Ne al']
 discard('q029',"Buffalo Bills")
-discard('q023',"Disc golf|Ultimate|Ultimate frisbee|Disc dog|KanJam|Badminton|Shuttlecock|Jianzi|Ringette|Cornhole|Washers|Quoits|Beer die|Buzkashi|Jugger")
+discard('q023',"Disc golf|Ultimate|Ultimate frisbee|Disc dog|KanJam|Badminton|Shuttlecock|Jianzi|Ringette|Cornhole|Washers|Quoits|Beer die|Die|Buzkashi|Jugger|Pitangue|Trinquete")
 discard('q024',"Horseball|Underwater rugby|Raspall|Valencian pilota|Broomstacking|Jai alai|Basque pelota")
 animalNames=set('cardinals falcons ravens panthers bears bengals broncos lions colts jaguars rams dolphins eagles seahawks pelicans bucks bulls hornets hawks grizzlies raptors timberwolves orioles jays rays tigers diamondbacks cubs marlins ducks bruins predators penguins sharks kraken mammoth coyotes thrashers seals rhinos wolves leopards bulldogs roosters eels rabbitohs magpies cats swans crows kangaroos cheetahs jaguares ospreys brumbies bunnies buffalo bisons bison stags wasps dragons wolves hens geese wombats sharks scorpions'.split())
 manual['q029']=[s for s in manual['q029'] if words(s)&animalNames]
@@ -107,10 +107,7 @@ for position in ['skater','goalie']:
 sr['q022'].extend(row(s,30) for s in 'Sachin Tendulkar|Virat Kohli|MS Dhoni|Mahendra Singh Dhoni|Rohit Sharma|Shane Warne|Ricky Ponting|Glenn McGrath|Adam Gilchrist|Steve Smith|David Warner|Pat Cummins|Mitchell Starc|Jasprit Bumrah|Hardik Pandya|Ravindra Jadeja|Ravichandran Ashwin|Yuvraj Singh|Sourav Ganguly|Rahul Dravid|Virender Sehwag|Anil Kumble|Kapil Dev|Sunil Gavaskar|Brian Lara|Viv Richards|Chris Gayle|Kieron Pollard|Dwayne Bravo|Andre Russell|Nicholas Pooran|Kumar Sangakkara|Mahela Jayawardene|Muttiah Muralitharan|Lasith Malinga|Sanath Jayasuriya|Shakib Al Hasan|Tamim Iqbal|Rashid Khan|Mohammad Nabi|Babar Azam|Shaheen Afridi|Shahid Afridi|Wasim Akram|Waqar Younis|Shoaib Akhtar|Imran Khan|Inzamam-ul-Haq|Javed Miandad|Mohammad Rizwan|Ben Stokes|Joe Root|Jos Buttler|James Anderson|Stuart Broad|Alastair Cook|Eoin Morgan|Kevin Pietersen|Andrew Flintoff|Ian Botham|Kane Williamson|Trent Boult|Tim Southee|Brendon McCullum|Daniel Vettori|Ross Taylor|AB de Villiers|Jacques Kallis|Dale Steyn|Shaun Pollock|Graeme Smith|Faf du Plessis|Quinton de Kock|Kagiso Rabada|Morne Morkel|Herschelle Gibbs|Meg Lanning|Ellyse Perry|Alyssa Healy|Beth Mooney|Ashleigh Gardner|Megan Schutt|Smriti Mandhana|Harmanpreet Kaur|Mithali Raj|Jhulan Goswami|Shafali Verma|Deepti Sharma|Charlotte Edwards|Sarah Taylor|Katherine Sciver-Brunt|Natalie Sciver-Brunt|Heather Knight|Sophie Ecclestone|Danni Wyatt|Suzie Bates|Sophie Devine|Amelia Kerr|Marizanne Kapp|Laura Wolvaardt|Chloe Tryon|Hayley Matthews|Stafanie Taylor|Deandra Dottin|Chamari Athapaththu|Nida Dar|Sana Mir|Richie McCaw|Dan Carter|Jonah Lomu|Jonny Wilkinson|Brian O\'Driscoll|Shane Williams|Gareth Thomas|Sergio Parisse|Bryan Habana|Siya Kolisi|Cheslin Kolbe|Eben Etzebeth|Antoine Dupont|Romain Ntamack|Johnny Sexton|Owen Farrell|Maro Itoje|Beauden Barrett|Brodie Retallick|Kieran Read|Ma\'a Nonu|Sonny Bill Williams|Israel Folau|Cameron Smith|Johnathan Thurston|Darren Lockyer|Billy Slater|Cooper Cronk|Greg Inglis|Nathan Cleary|James Tedesco|Dylan Edwards|Dustin Martin|Lance Franklin|Gary Ablett Jr.|Patrick Dangerfield|Marcus Bontempelli|Nat Fyfe|Christian Petracca|Nick Daicos|Scott Pendlebury|Toby Greene|Nathan MacKinnon|Connor McDavid|Leon Draisaitl|Sidney Crosby|Alex Ovechkin|Wayne Gretzky|Mario Lemieux|Bobby Orr|Gordie Howe|Michael Morkov|Wilfredo Leon|Earvin Ngapeth|Yuji Nishida|Yuki Ishikawa|Bruno Rezende|Giba|Sergio Santos|Karch Kiraly|Kerri Walsh Jennings|Misty May-Treanor|Paola Egonu|Tijana Boskovic|Zhu Ting|Kim Yeon-koung|Gabi Guimaraes|Isabelle Haak|Melissa Vargas'.split('|'))
 olympic=load(Path('discovery/olympics.json.gz'))
 put('q025',named(sorted({r[2] for r in olympic})))
-import csv
-with (ROOT/'../../work/large-question-expansion/olympics-through-2026.csv').open() as handle:
- events={r['Event'] for r in csv.DictReader(handle) if r['Event']}
-addnames('q025',sorted(events))
+addnames('q025',load(Path('group/olympic-events.json')))
 put('q026',[row(r[0],30 if r[1]<=10 else 85,r[2]) for r in source('discovery-olympic-gold')])
 
 f=load(Path('discovery/films.json.gz'))
@@ -135,10 +132,11 @@ names='jolene|roxanne|eleanor|rigby|billie jean|jessie|stacy|jenny|jennie|jane|j
 names=[n for n in names if n not in ['candle in the wind','penny lane','daisy']]
 colors=set('red orange yellow green blue indigo violet purple pink black white brown grey gray silver gold golden crimson scarlet emerald ruby turquoise sapphire lilac lavender magenta cyan teal maroon beige ivory auburn amber silver gold'.split())
 numberwords=set('one two three four five six seven eight nine ten eleven twelve thirteen fourteen fifteen sixteen seventeen eighteen nineteen twenty thirty forty fifty sixty seventy eighty ninety hundred thousand million billion'.split())
-for title,artists,album,genre,pop in musicRows:
+for originalTitle,artists,album,genre,pop in musicRows:
+ title=songtitle(originalTitle)
  titleTokens=words(title);normalized=' '+re.sub('[^a-z0-9]+',' ',title.lower())+' '
- if any(' '+n+' ' in normalized for n in names):sr['q047'].append(row(title,points(pop,(75,45,20))))
- if titleTokens&colors:sr['q048'].append(row(title,points(pop,(75,45,20))))
+ if any(' '+n+' ' in normalized for n in names):sr['q047'].append(row(title,points(pop,(75,45,20)),[originalTitle]))
+ if titleTokens&colors:sr['q048'].append(row(title,points(pop,(75,45,20)),[originalTitle]))
  for artist in artists:
   if re.search(r'\d',artist) or words(artist)&numberwords:sr['q049'].append(row(artist,points(pop,(75,45,20))))
 put('q056',source('catalog-wind-instrument-types'))
@@ -164,7 +162,7 @@ put('q083',source('weather-conditions'))
 synonyms={
  'q022':'MS Dhoni|Mahendra Singh Dhoni',
  'q021':'Washington Commanders|Washington Football Team|Washington Redskins;Las Vegas Raiders|Oakland Raiders|Los Angeles Raiders;Los Angeles Rams|St. Louis Rams;Los Angeles Chargers|San Diego Chargers;Tennessee Titans|Tennessee Oilers|Houston Oilers;Indianapolis Colts|Baltimore Colts;Arizona Cardinals|St. Louis Cardinals|Phoenix Cardinals;New England Patriots|Boston Patriots',
- 'q023':'Football|Soccer|Association football;Billiards|Billiards sports',
+ 'q023':'Football|Soccer|Association football;Billiards|Billiards sports;Table tennis|Ping pong;Footbag|Hacky sack;Miniature golf|Minigolf;Ga-ga|Gaga ball;Racquets|Rackets;Real tennis|Royal tennis|Court tennis;Quadball|Quidditch;Beer pong|Beirut;Skee-ball|Skeeball;Roundnet|Spikeball;Fistball|Faustball',
  'q041':'Chopper|C1-10P;M-O|MO;BURN-E|Burn-E;B1 Battle Droid|Battle Droid;Mr. Handy|Mister Handy;Jenny Wakeman|XJ-9;Robby the Robot|Robby;GIR|Gir;Dr. Nefarious|Nefarious;Ladybug|Ladybird',
  'q047':'Me and Bobby McGee|Me & Bobby McGee;Billie Jean|Billy Jean',
  'q051':'The Notorious B.I.G.|Biggie Smalls|Biggie;2Pac|Tupac Shakur|Tupac;Sean Combs|Puff Daddy|P. Diddy|Diddy;MF DOOM|Viktor Vaughn|King Geedorah',

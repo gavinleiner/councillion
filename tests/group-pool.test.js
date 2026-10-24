@@ -25,7 +25,7 @@ test('single Steam labels retain actual full memberships without a two-tag condi
  for(const p of tags){const {tag}=p.predicate;assert.ok(source.tags[tag]);assert.equal(p.prompt,`Name a game on Steam tagged “${tag}”.`);const allowed=new Set(source.tags[tag].map(id=>normalize(source.games[id][0])));for(const a of p.answers)assert.ok(allowed.has(normalize(a.label)),p.id+': '+a.label);}
  for(const tag of ['Horror','Open World','RPG','Survival','Co-op'])assert.ok(tags.some(p=>p.predicate.tag===tag),tag);
  const pairs=GROUP_PACKS.filter(p=>p.predicate?.kind==='steam-tags');assert.ok(pairs.length>=40);
- for(const p of pairs){assert.equal(p.predicate.tags.length,2);assert.ok(p.answerCount>=50&&p.familiarCount>=12);const sets=p.predicate.tags.map(tag=>new Set(source.tags[tag].map(id=>normalize(source.games[id][0]))));for(const a of p.answers)assert.ok(sets.every(set=>set.has(normalize(a.label))),p.id+': '+a.label);}
+ for(const p of pairs){assert.equal(p.predicate.tags.length,2);assert.ok(p.answerCount>=50&&p.familiarCount>=20);const sets=p.predicate.tags.map(tag=>new Set(source.tags[tag].map(id=>normalize(source.games[id][0]))));for(const a of p.answers)assert.ok(sets.every(set=>set.has(normalize(a.label))),p.id+': '+a.label);}
 });
 test('every new compressed bank has unique canonical labels, unambiguous aliases and its declared content hash',()=>{
  assert.equal(manifest.count,5000);let entries=0;
@@ -60,4 +60,14 @@ test('a retained ID and a new bank revision cannot share stale hydrated answers'
 });
 test('a wholly familiar source inventory does not manufacture an uncommon 100-point answer',()=>{
  const p=PACK_BY_ID.get('group-songs-by-bts');assert.ok(p.answerCount>=24);assert.ok(p.answers.every(a=>a.points<=30));
+});
+test('production variants, album-object artifacts and awkward title words cannot pad the pool',()=>{
+ assert.ok(!GROUP_PACKS.some(p=>p.predicate?.media==='album'||p.predicate?.entity==='album'));
+ for(const p of GROUP_PACKS){if(p.predicate?.kind==='title-word')assert.ok(!['com','des','slowed','reverb','scotland','remix'].includes(p.predicate.word),p.id);}
+ const music=GROUP_PACKS.filter(p=>p.predicate?.kind==='artist-credit');assert.ok(music.length>20);
+ for(const p of music)assert.ok(!p.answers.some(a=>/ - (?:\d{4} )?(?:remaster|slowed|radio edit)/i.test(a.label)),p.id);
+});
+test('new story and genre questions include familiar, playable examples',()=>{
+ for(const [id,title] of [['group-movie-comedy-theme-ghosts','Ghostbusters'],['group-movie-horror-theme-sharks','Jaws'],['group-movie-genres-animation-and-comedy','Shrek'],['group-show-genre-comedy','The Office']]){const p=PACK_BY_ID.get(id);assert.ok(p,id);assert.equal(resolveAnswer(p,title).status,'exact',id+': '+title);}
+ const q=PACK_BY_ID.get('group-q023');assert.equal(resolveAnswer(q,'Die').status,'missing');assert.equal(resolveAnswer(q,'Ping pong').answer.label,resolveAnswer(q,'Table tennis').answer.label);
 });
