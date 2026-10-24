@@ -1,5 +1,5 @@
 import {resolveAnswer} from './answer-matching.js';
-export const needsConfirmation=result=>result?.status==='matched'&&!result.answer?.abbreviated;
+export const needsConfirmation=result=>result?.status==='matched';
 export function deadlineAnswer(pack,text){const result=resolveAnswer(pack,text);return needsConfirmation(result)?null:result.answer??null;}
 // Only a submit proposes a replacement. Another submit confirms it. Editing,
 // changing turns/categories and leaving the form invalidate the proposal.
