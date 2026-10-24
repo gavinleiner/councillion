@@ -186,3 +186,8 @@ Unlocks reward cumulative, reachable match/win/Daily milestones, including duels
 ## 100-question group tryout
 
 Open [the question review](https://gavinleiner.github.io/councillion/?v=20261023-tryout-v1#review) or use the home/menu/library links. There are exactly 100 proposed prompts across nine subjects. Each includes a defined scope, six example answers and research links. Yes/No advances to the next unrated proposal; Undo, notes, filters, a numbered navigator, device persistence, private Google-account sync and JSON export support reviewing in several sittings. These are proposals, not 100 new playable banks or complete answer inventories. Votes guide the next editorial pass. See [QUESTION-TRYOUT.md](QUESTION-TRYOUT.md).
+
+
+## Group-selected 5,000 · October 23
+
+Release `20261023-group5000-v1` implements all 98 approved tryout prompts and expands the ordinary Puffer/Daily/Practice pool to exactly 5,000 categories. Steam questions use a single actual tag. Full unseen shuffles replace Practice family rotation; Daily is frozen and shared from October 24, preserving October 23. See [GROUP-POOL.md](GROUP-POOL.md) for selection, sources, thresholds and finite-coverage limits, [group-question-list.csv](group-question-list.csv) for every count, and [group-bank-manifest.json](group-bank-manifest.json) for predicates and hashes. Earlier sections describe previous releases.

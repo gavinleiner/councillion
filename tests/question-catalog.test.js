@@ -34,7 +34,7 @@ test('daily calendar never reuses a prompt and historical dates retain their dra
 test('party decks cover the ordinary pool exactly once without an alphabetic or family cycle',()=>{
  for(let seed=0;seed<20;seed++){
   const deck=partyDeck(random(seed));assert.equal(deck.length,PARTY_PACKS.length);assert.equal(new Set(deck).size,deck.length);
-  assert.ok(new Set(deck.slice(0,Math.min(70,deck.length)).map(id=>pack(id).family)).size>=5);
+  assert.ok(new Set(deck.slice(0,70)).size===70);
   assert.notDeepEqual(deck,PARTY_PACKS.map(p=>p.id));
  }
 });

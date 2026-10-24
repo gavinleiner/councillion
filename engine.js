@@ -1,7 +1,7 @@
 import { PACKS, PLAY_PACKS, REVIEWED_PACKS, ORIGINAL_PLAY_PACKS, MIXED_PACKS, PARTY_PACKS, PACK_BY_ID, PARTY_IDS, canonicalQuestionId, answerCount } from './data.js';
 import {normalize,matchAnswer,resolveAnswer} from './answer-matching.js';
 export {normalize,matchAnswer,resolveAnswer,typoDistance} from './answer-matching.js';
-import {hash,random,shuffle,varietyDeck} from './question-selection.js';
+import {hash,random,shuffle,unseenDeck} from './question-selection.js';
 export {hash,random,shuffle} from './question-selection.js';
 import {FRESH_DAILY_START,FRESH_DAILY_IDS} from './daily-schedule.js';
 export const GROUP_DAILY_START='2026-10-24';
@@ -41,7 +41,7 @@ export function practiceDraw(pending=[],featured=null,rng=Math.random){
  const pool=new Set(MIXED_PACKS.map(p=>p.id));let queue=[...new Set(pending)].filter(id=>pool.has(id)),ids=featured?[featured]:[];
  if(featured)queue=queue.filter(id=>id!==featured);
  const seen=new Set(ids);
- while(ids.length<7){if(!queue.length)queue=varietyDeck(MIXED_PACKS,{rng});const id=queue.shift();if(!seen.has(id)){ids.push(id);seen.add(id);}else queue.push(id);}
+ while(ids.length<7){if(!queue.length)queue=unseenDeck(MIXED_PACKS,{rng});const id=queue.shift();if(!seen.has(id)){ids.push(id);seen.add(id);}else queue.push(id);}
  return {ids,remaining:queue};
 }
 export function refreshPartyQuestions(state,now=Date.now(),rng=Math.random){

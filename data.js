@@ -1,4 +1,5 @@
 import {questionReview} from './question-quality.js';
+import {GROUP_PACKS,GROUP_EQUIVALENTS} from './group-question-catalog.js';
 import {DISCOVERY_PACKS} from './discovery-question-catalog.js';
 import {VARIETY_PACKS} from './variety-question-catalog.js';
 import {FUN_PACKS} from './fun-question-catalog.js';
@@ -65,11 +66,16 @@ for(const p of PACKS){p.dailyEligible=p===AIRLINE_PACK||p===VEHICLE_PACK;if(p.da
 PACKS.push(...EXPANDED_PACKS);
 PACKS.push(...CATALOG_PACKS);
 PACKS.push(...FUN_PACKS,...VARIETY_PACKS,...DISCOVERY_PACKS);
+const historicalOriginalPacks=PACKS.filter(p=>p.dailyEligible&&!p.catalogVersion&&!p.funVersion);
+// Replace retained IDs in place so saved games still resolve the same ID.
+const groupIds=new Set(GROUP_PACKS.map(p=>p.id));
+for(let i=PACKS.length-1;i>=0;i--)if(groupIds.has(PACKS[i].id))PACKS.splice(i,1);
+PACKS.push(...GROUP_PACKS);
 for(const p of PACKS)if(p.id==='fun-sports'||p.id==='var-semantic-sports_equipment-n-01')p.family='sports';
 export const PACK_BY_ID=new Map(PACKS.map(p=>[p.id,p]));
 export const PLAY_PACKS=PACKS.filter(p=>p.dailyEligible);
 export const REVIEWED_PACKS=PLAY_PACKS.filter(p=>questionReview(p).status!=='archived');
-export const ORIGINAL_PLAY_PACKS=PLAY_PACKS.filter(p=>!p.catalogVersion&&!p.funVersion);
+export const ORIGINAL_PLAY_PACKS=historicalOriginalPacks;
 export const answerCount=pack=>pack.answerCount??pack.answers.length;
 
 // Specialist inventories stay available without dominating ordinary games.
@@ -90,7 +96,16 @@ const equivalents={
  'var-semantic-flower-n-01':'flower-names','var-semantic-chemical_element-n-01':'fun-elements','var-semantic-material-n-01':'fun-materials',
  'var-semantic-fish-n-01':'fun-sea-life'
 };
-for(const p of PACKS)p.questionKey=equivalents[p.id]??p.id;
+const groupEquivalents={...GROUP_EQUIVALENTS},promptIdentities=new Map(GROUP_PACKS.map(p=>[p.prompt.trim().toLocaleLowerCase(),p.id]));
+const steamIdentity=p=>p.predicate?.kind==='steam-tag'?[p.predicate.tag]:p.predicate?.kind==='steam-tags'?p.predicate.tags:null;
+const steamIdentities=new Map(GROUP_PACKS.filter(p=>steamIdentity(p)).map(p=>[steamIdentity(p).map(t=>t.toLocaleLowerCase()).sort().join('|'),p.id]));
+const legacySteamLabels={'role-playing':'rpg','first-person shooter':'fps','real-time strategy':'rts','japanese role-playing':'jrpg','computer role-playing':'crpg','massively multiplayer role-playing':'mmorpg','multiplayer online battle arena':'moba','pixel-art':'pixel graphics','soccer':'football (soccer)','american football':'football (american)','permadeath':'perma death','third-person':'third person','side-scrolling':'side scroller','point-and-click':'point & click','science-fiction':'sci-fi','cartoon-style':'cartoony'};
+for(const p of PACKS)if(!p.groupProfileVersion){
+ const tags=p.id.startsWith('discovery-steam-')?[...p.prompt.matchAll(/“([^”]+)”/g)].map(m=>{const tag=m[1].toLocaleLowerCase();return legacySteamLabels[tag]??tag;}).sort():[];
+ const target=tags.length?steamIdentities.get(tags.join('|')):promptIdentities.get(p.prompt.trim().toLocaleLowerCase());
+ if(target)groupEquivalents[p.id]=target;
+}
+for(const p of PACKS)p.questionKey=groupEquivalents[p.id]??equivalents[p.id]??p.id;
 const concepts=new Map(),candidates=REVIEWED_PACKS.filter(p=>questionReview(p).status==='automatic');
 export const MIXED_PACKS=candidates.filter(p=>{if(concepts.has(p.questionKey))return false;concepts.set(p.questionKey,p.id);return true;});
 export const canonicalQuestionId=id=>{const p=PACK_BY_ID.get(id);return concepts.get(p?.questionKey)??id;};
@@ -98,5 +113,5 @@ for(const p of MIXED_PACKS)if(p.id==='pokemon-species')p.family='gaming';
 
 PACKS.find(p=>p.id==='dinosaur-genera').excludedAnswers=['Mosasaurus','Pteranodon','Pterodactylus','Plesiosaurus','Ichthyosaurus','Quetzalcoatlus','Dimetrodon','Crocodile','Chicken','Dodo'];
 
-export const PARTY_PACKS=MIXED_PACKS.filter(p=>p.partyEligible!==false&&answerCount(p)>=30);
+export const PARTY_PACKS=MIXED_PACKS.filter(p=>p.partyEligible!==false&&answerCount(p)>=(p.groupProfileVersion===1?(p.reviewId?12:24):30));
 export const PARTY_IDS=new Set(PARTY_PACKS.map(p=>p.id));

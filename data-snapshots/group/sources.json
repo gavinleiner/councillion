@@ -1,0 +1,120 @@
+{
+  "retrieved": "2026-10-23",
+  "files": [
+    {
+      "file": "approved-prompts.json",
+      "bytes": 41400,
+      "sha256": "b5d26d3ddd1f7ac8b34911334a104e517c54a768fae0eb53db92873aea6e8442"
+    },
+    {
+      "file": "completion-answers.tsv",
+      "bytes": 29126,
+      "sha256": "03de791b6060ef7eec48acc29f25e8d512411ba4fcda4f6a250a99076a3c5556"
+    },
+    {
+      "file": "legacy-core-ids.json",
+      "bytes": 3208,
+      "sha256": "674542e44e5e75620f2d11e7a267d96d567854f5df60532f204c7037753a388f"
+    },
+    {
+      "file": "manual-answers.tsv",
+      "bytes": 153839,
+      "sha256": "c2a702d376a941f43d56de4b9914fd1324a0fc77d95e5334d7cbe8a75792d9e2"
+    },
+    {
+      "file": "nhl-goalie.json.gz",
+      "bytes": 12831,
+      "sha256": "aae4fdd35050a9541107868a3e74f2fd317b3fe41b9cb49999a454d033a13393"
+    },
+    {
+      "file": "nhl-skater.json.gz",
+      "bytes": 96647,
+      "sha256": "cb7edfc0a874a106f690a378a88a4112e7d16a17fcfede51bd6e28ff1206e7b4"
+    },
+    {
+      "file": "preferences.json",
+      "bytes": 1557,
+      "sha256": "9fd12a6b076c7ed5916030b722bb6d40aa352f03011bb9d72cbba03793277bf7"
+    },
+    {
+      "file": "rappers-wikidata.json",
+      "bytes": 2801915,
+      "sha256": "2dc8d0b1fef67278499e34523c2757201b412b6b7172652b357c096da877045e"
+    },
+    {
+      "file": "selected-ids.json",
+      "bytes": 149352,
+      "sha256": "9bd348f94faf1a088b11510d3d198097aa61ef36708f98af212c0750f514aa0b"
+    },
+    {
+      "file": "steam-creator-facts.json.gz",
+      "bytes": 3464209,
+      "sha256": "2a836d618ba141f05f26793588deff8247d55fd79a1660f943e688b7730de9df"
+    },
+    {
+      "file": "steam-free-titles.json",
+      "bytes": 277180,
+      "sha256": "1652b65755dfb60d95698ed99137f0675c9409aa3ee032b9742242dbbff4795a"
+    }
+  ],
+  "parents": [
+    "../discovery/sources.json",
+    "../rework",
+    "../variety"
+  ],
+  "references": [
+    {
+      "url": "https://partner.steamgames.com/doc/store/tags",
+      "use": "Literal tag boundaries; single tag membership, not tag intersections."
+    },
+    {
+      "url": "https://www.tvmaze.com/api",
+      "use": "Full retained TV index, CC BY-SA, names/types/popularity."
+    },
+    {
+      "url": "https://github.com/PrismarineJS/minecraft-data",
+      "use": "Vanilla Minecraft names, mobs and edible items, MIT."
+    },
+    {
+      "url": "https://www.marvel.com/movies/the-fantastic-four-first-steps",
+      "use": "Released MCU cast supplement, 2025."
+    },
+    {
+      "url": "https://www.olympics.com/ioc/celebrate-olympic-games",
+      "use": "Completed host cities through Milano Cortina 2026; future hosts excluded."
+    },
+    {
+      "url": "https://www.bklynlibrary.org/library-of-things",
+      "use": "Borrowable public-library instruments, tools, crafts and devices."
+    },
+    {
+      "url": "https://www.saclibrary.org/browse-borrow/special-collections/library-things",
+      "use": "Public-library lending objects and equipment."
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Star_(heraldry)",
+      "use": "National flag star facts, supplemented with coat-of-arms checks; no source prose copied."
+    },
+    {
+      "url": "https://apnews.com/article/9a48ee476b51e5b353b58033cfbc8ac1",
+      "use": "NBA 2K27 cover athletes."
+    },
+    {
+      "url": "https://ir.take2games.com/node/31381/pdf",
+      "use": "Official NBA 2K26 cover athletes."
+    },
+    {
+      "url": "https://api.nhle.com/stats/rest/en/skater/summary",
+      "use": "NHL official all-career regular-season skater index, 7,922 rows; query retained in snapshot."
+    },
+    {
+      "url": "https://api.nhle.com/stats/rest/en/goalie/summary",
+      "use": "NHL official all-career regular-season goalie index, 903 rows; query retained in snapshot."
+    },
+    {
+      "url": "https://www.icc-cricket.com/hall-of-fame",
+      "use": "Professional cricket athlete supplement."
+    }
+  ],
+  "limitations": "Names and reduced facts only. Curated supplements are finite, not exhaustive; metadata can contain or omit classifications. Wikidata was rate-limited and is not used as a verified source. Review feedback is represented only by approved/rejected IDs and aggregate editorial preferences, without personal identifiers."
+}

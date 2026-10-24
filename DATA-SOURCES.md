@@ -166,3 +166,8 @@ node scripts/audit-questions.mjs
 ## Group proposal research
 
 `question-proposals.js` contains 100 proposed prompts with scope notes and six examples each; they do not enter `PACKS`. `question-research.js` links official game hubs, league directories, museums, food producers, science institutions and other editorial starting points. These references support category design and sample checking, not a claim of exhaustive answer coverage. Broad qualitative prompts require multiple inventories and editorial judgment before a playable bank can be approved. Private feedback stores votes and optional notes under `questionReviews/{uid}/group-100-v1`; it does not upload gameplay answers or additional Google profile fields.
+
+
+## Group-selected 5,000 · October 23
+
+Release `20261023-group5000-v1` implements all 98 approved tryout prompts and expands the ordinary Puffer/Daily/Practice pool to exactly 5,000 categories. Steam questions use a single actual tag. Full unseen shuffles replace Practice family rotation; Daily is frozen and shared from October 24, preserving October 23. See [GROUP-POOL.md](GROUP-POOL.md) for selection, sources, thresholds and finite-coverage limits, [group-question-list.csv](group-question-list.csv) for every count, and [group-bank-manifest.json](group-bank-manifest.json) for predicates and hashes. Earlier sections describe previous releases.
