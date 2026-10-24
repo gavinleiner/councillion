@@ -1,10 +1,12 @@
-import {mountEntrance} from './access-gate.js';
-const VERSION='20261023-sample100-v1';
-const root=document.querySelector('#entrance');
-let gameLoading;
-const loadGame=()=>gameLoading??=new Promise((resolve,reject)=>{const script=document.createElement('script');script.src='game.bundle.js?v='+VERSION;script.onload=resolve;script.onerror=()=>{gameLoading=null;script.remove();reject(Error('Game download failed'));};document.head.append(script);});
-let motion=!matchMedia('(prefers-reduced-motion: reduce)').matches;
-try{if(JSON.parse(localStorage.getItem('fc:settings'))?.motion===false)motion=false;}catch{}
-const gate=mountEntrance(root,{motion,onEnter:loadGame,onStateChange:(locked,phase)=>{for(const el of document.body.children)if(el!==root&&!['SCRIPT','STYLE','LINK'].includes(el.tagName))el.inert=locked;if(locked&&document.querySelector('#modal')?.open)document.querySelector('#modal').close();document.dispatchEvent(new CustomEvent('councillion:entrance',{detail:{locked,phase}}));}});
-const fallback=setTimeout(()=>gate.showLocked(),1500);
-import('./cloud.bundle.js?v=20261023-court2-v1').then(cloud=>{cloud.watchAccount(identity=>{clearTimeout(fallback);gate.account(identity);},()=>{clearTimeout(fallback);gate.showLocked();});}).catch(()=>{clearTimeout(fallback);gate.showLocked();});
+// Councillion is public. Google sign-in is still enforced by Puffer and its server.
+const VERSION='20261024-open-v1';
+document.documentElement.removeAttribute('data-entrance');
+document.querySelector('#entrance')?.remove();
+const script=document.createElement('script');
+script.src='game.bundle.js?v='+VERSION;
+script.onerror=()=>{
+ const app=document.querySelector('#app');if(!app)return;
+ app.innerHTML='<section class="question-loading"><h1>THE GAME COULD NOT LOAD.</h1><p>Check your connection, then try again.</p><button class="pixel-button" id="retry-game-load">TRY AGAIN</button></section>';
+ document.querySelector('#retry-game-load').onclick=()=>location.reload();
+};
+document.head.append(script);

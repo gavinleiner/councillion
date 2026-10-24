@@ -1,5 +1,9 @@
 # Councillion
 
+Current release: `20261024-open-v1`. The website opens publicly without a password. Puffer still requires verified Google sign-in for every account; there is no player email allowlist. Earlier entrance-screen descriptions below describe the previous private-entry presentation.
+
+Hosting and joining renew the Firebase Google session, wait for the database connection, and synchronize the server clock before writing timestamp-validated room data. Public directory entries include the catalog build so quick play does not select incompatible rooms. Expired-room errors identify the host’s old room instead of asking the joining player to refresh repeatedly. An offline connection times out with a retry instruction. Backend authentication, moderation, rank records and special account permissions are unchanged.
+
 **Puffer Party:** an original pixel courtroom arena backed by Google Authentication and protected Firebase rooms on Spark. Live Google login, hosting, visibility, host settings and chat were verified on October 22. See [PARTY-BACKEND.md](PARTY-BACKEND.md).
 
 [Play Councillion](https://gavinleiner.github.io/councillion/) · [Question library](https://gavinleiner.github.io/councillion/#questions) · [Explore the ocean](https://gavinleiner.github.io/councillion/#biomes)
