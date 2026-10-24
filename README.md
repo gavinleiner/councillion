@@ -66,7 +66,7 @@ The host validates answers and timers. A disconnected player has a 30-second gra
 
 - `app.js`: screens, local progress, settings, timing, sharing, answer browser.
 - `engine.js`: daily selection, persistent practice draws, tiers and party rules.
-- `answer-matching.js`: exact aliases, post-submit correction proposals, word alignment, abbreviations and bounded compiled-bank caching.
+- `answer-matching.js`: exact aliases, post-submit correction proposals, word alignment, explicit aliases and bounded compiled-bank caching.
 - `benchmark.js`: explicit assumed skill profiles, exact seven-question distribution, estimated percentiles, and the results curve.
 - `ocean.js`, `depth-world.js`: continuous world projection, cached environment tiles, moving ruler ticks and landmarks, sky, waves, and ambient life.
 - `case-questions.js`: 80 original questions and explanations with a source link to each of the 16 published reviews.
@@ -113,7 +113,7 @@ The camera now accelerates into a timed fall and settles over roughly 2–3.8 se
 
 ## Forgiving answers
 
-Accent, punctuation and case normalization happen first. Exact names, curated nicknames and recognized abbreviations submit immediately. Plausible misspellings and reordered words are proposed only after Enter/DIVE/SEND, never while typing: the input is filled with the canonical answer and a “Did you mean …?” message asks for another submit or an edit. Editing and turn/category changes clear the proposal. Timer expiry may submit text already in the input, including a previously shown correction; it never creates a new fuzzy correction. The same controller handles Daily/Practice and Puffer.
+Accent, punctuation and case normalization happen first. Exact names and explicit aliases (including real recorded abbreviations) submit immediately. Initials are never generated from answer words; short acronym aliases are exact-only. Plausible misspellings and reordered words are proposed only after Enter/DIVE/SEND, never while typing: the input is filled with the canonical answer and a “Did you mean …?” message asks for another submit or an edit. Editing and turn/category changes clear the proposal. Timer expiry may submit text already in the input, including a previously shown correction; it never creates a new fuzzy correction. The same controller handles Daily/Practice and Puffer. Corrections check each content word, protect digits/sequels and reject unrelated extra words. A missing content word needs two strong identifying words and a clear single completion; common shorter names belong in explicit aliases. See [ANSWER-MATCHING.md](ANSWER-MATCHING.md) for the policy, research and regression coverage.
 
 A shared word cannot rescue an unrelated phrase: `locals coffee`, `global shoe`, `locals tikka` and `diamond knife` are rejected. Every query word must match plausibly; multiple genuine typos such as `dimond swrod`, `global warmign`, `climat chnge` and `chiken tikka masla` still receive suggestions. If several plausible candidates remain, the best score wins, with familiarity and alphabetical tie breaks. Sequel numbers remain distinct. Confirmed corrections receive full canonical points. The interaction was checked against Krillion’s free daily round on October 22; its server-side matcher is not public, so this is an independently tested implementation of observed behavior, not a claim of identical hidden logic.
 

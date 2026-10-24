@@ -5,14 +5,14 @@ import {canPlayParty,requirePartyIdentity} from './party-access.js';
 import {PACKS,PARTY_PACKS,PACK_BY_ID,PARTY_IDS,canonicalQuestionId} from './data.js';
 import {catalogBuild} from './question-bank-loader.js';
 import {loadQuestionData,questionDataReady} from './question-data.js';
-import {warmAnswerBank} from './answer-matching.js';
+import {warmAnswerBank,ANSWER_MATCHING_VERSION} from './answer-matching.js';
 import {PartyProfileStore,saveMatchResult} from './party-profile.js';
 import {rememberCounsel} from './party-leaderboard.js';
 import {canAdmin} from './account-honors.js';
 import {matchResult,rankedWinStreak,RANK_SEASON} from './party-career.js';
 import {validateDisplayName,safeDisplayName,validateChat,containsBlockedLanguage} from './moderation.js';
 const cleanName=validateDisplayName;
-const partyCatalogBuild=()=>catalogBuild()+'-'+RANK_SEASON;
+const partyCatalogBuild=()=>catalogBuild()+'-'+RANK_SEASON+'-'+ANSWER_MATCHING_VERSION;
 const loadCloud=()=>import('./cloud.bundle.js?v=20261023-court2-v1');
 const json=value=>JSON.parse(JSON.stringify(value));
 const friendly=e=>e?.code==='PERMISSION_DENIED'||e?.code==='database/permission-denied'?'This room is unavailable, full, or your Google session needs refreshing.':e?.message||'Connection interrupted. Try again.';
@@ -30,7 +30,7 @@ export class PartySession{
  }
  async join(name,code,options={}){
   await this.auth();this.name=cleanName(name);this.buddy=options.buddy??'krill';this.code=String(code??'').toUpperCase().replace(/[^A-Z]/g,'');if(this.code.length!==4)throw Error('Enter a four-letter room code.');
-  const meta=(await this.c.get(this.path('meta'))).val();if(!meta||Date.now()-meta.createdAt>24*3600000)throw Error('Room not found. Check the code or host a new room.');if(meta.mode!=='ranked'&&options.mode==='ranked')throw Error('This is an older Casual room. Ask the host to create a new ranked court.');if(meta.catalogBuild&&meta.catalogBuild!==partyCatalogBuild())throw Error('This room uses another game season or question update. Refresh and ask the host to create a new court.');if(meta.protocol!==4)throw Error('This room uses the previous Puffer version. Ask the host to refresh and create a new room.');this.meta=meta;this.mode=meta.mode??'casual';this.host=meta.host===this.myId;
+  const meta=(await this.c.get(this.path('meta'))).val();if(!meta||Date.now()-meta.createdAt>24*3600000)throw Error('Room not found. Check the code or host a new room.');if(meta.mode!=='ranked'&&options.mode==='ranked')throw Error('This is an older Casual room. Ask the host to create a new ranked court.');if(meta.catalogBuild&&meta.catalogBuild!==partyCatalogBuild())throw Error('This room uses another season, question or answer update. Refresh and ask the host to create a new court.');if(meta.protocol!==4)throw Error('This room uses the previous Puffer version. Ask the host to refresh and create a new room.');this.meta=meta;this.mode=meta.mode??'casual';this.host=meta.host===this.myId;
   await this.c.set(this.path('members/'+this.myId),{name:this.name,buddy:this.buddy,protocol:4,joinedAt:Date.now(),lastSeen:Date.now(),online:true,ready:meta.phase==='lobby',autoJoin:false});await this.listen();await this.reportHistory();
  }
  async listen(){const c=this.c;this.unsub.push(c.onValue(c.ref(c.db,'.info/serverTimeOffset'),snap=>this.offset=snap.val()??0));
@@ -99,7 +99,7 @@ export class PartySession{
   if(!this.state||['lobby','ended'].includes(this.state.phase))return;
   const candidate=partyPack(this.state),current=PARTY_IDS.has(candidate?.id)?candidate:null,next=PACK_BY_ID.get(this.state.packIds[Math.max(this.state.round,1)]);
   if(this.questionRetryAt&&this.now()<this.questionRetryAt)return;
-  loadQuestionData([current,next].filter(Boolean)).then(()=>{if(this.host&&current)warmAnswerBank(current);}).catch(()=>{this.questionRetryAt=this.now()+5000;this.fail('Waiting for the answer archive. Check your connection; the next fuse will wait.');});
+  loadQuestionData([current,next].filter(Boolean)).then(()=>{if(current)warmAnswerBank(current);}).catch(()=>{this.questionRetryAt=this.now()+5000;this.fail('Waiting for the answer archive. Check your connection; the next fuse will wait.');});
  }
  tick(){if(this.closed||!this.state)return;if(!canPlayParty(this.getIdentity())){this.fail('Your Google sign-in expired. Sign in again to play.');this.close();return;}if(this.local){if(tickParty(this.state))this.snapshot();return;}if(this.host){if(this.questionPolicyGame!==this.state.matchId){this.questionPolicyGame=this.state.matchId;if(refreshPartyQuestions(this.state,this.now()))this.broadcast();}if(this.state.phase==='ended'&&this.state.matchId&&!this.state.resultSaved&&(!this.resultRetryAt||this.now()>=this.resultRetryAt))this.finishResult().catch(e=>{this.resultRetryAt=this.now()+5000;this.fail('Match results will retry when the court reconnects.');});const waiting=this.state.phase==='countdown'?partyPack(this.state):this.state.phase==='burst'?PACK_BY_ID.get(this.state.packIds[this.state.round]):null;if(waiting&&!questionDataReady([waiting])){this.prefetchQuestions();return;}if(waiting)warmAnswerBank(waiting);const prior=this.state.phase;const roster=syncRoster(this.state,this.members,this.now()),step=stepParty(this.state,this.now());if(prior!=='ended'&&this.state.phase==='ended'){this.clearDrafts();this.system(this.state.notice);const changes={};for(const [id,m] of Object.entries(this.members)){m.ready=id===this.myId||!!m.autoJoin;changes['members/'+id+'/ready']=m.ready;}this.c.update(this.path(),changes).catch(()=>{});}if(roster||step)this.broadcast();if(!this.publishedAt||this.now()-this.publishedAt>15000){this.publishedAt=this.now();this.publish().catch(()=>{});}}else{const host=this.members[this.meta?.host];if(host?.online===false&&this.now()-host.lastSeen>30000&&!this.claiming){this.claiming=true;this.c.runTransaction(this.path('meta/host'),id=>id===this.meta.host?this.myId:undefined,{applyLocally:false}).catch(()=>{}).finally(()=>{this.claiming=false;});}}}
  createLocal(names){requirePartyIdentity(this.getIdentity());this.local=true;this.host=true;this.code='LOCAL';this.myId='local-0';this.state=newParty(names.map((name,i)=>({id:'local-'+i,name:cleanName(name)})));this.snapshot();}

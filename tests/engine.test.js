@@ -31,15 +31,15 @@ test('long-name typos tolerate swaps, neighboring keys and missed doubled letter
  for(const q of ['tryannosuarus','tyranasourus','tyranosaurus']){const a=matchAnswer(p,q);assert.equal(a?.label,'Tyrannosaurus',q);assert.equal(a.points,10);assert.equal(a.corrected,true);}
  assert.equal(matchAnswer(PACKS.find(p=>p.id==='cultured-dairy'),'mozarella')?.label,'Mozzarella');
 });
-test('abbreviations accept unique initialisms and explicit familiar shorthand',()=>{
- assert.equal(matchAnswer(VEHICLE_PACK,'G.E.V.')?.label,'Ground-effect vehicle');
+test('only explicit familiar shorthand is accepted; initials are never invented',()=>{
+ assert.equal(matchAnswer(VEHICLE_PACK,'G.E.V.'),null);
  assert.equal(matchAnswer(PACKS.find(p=>p.id==='best-picture-nominees'),'LOTR ROTK')?.label,'The Lord of the Rings: The Return of the King');
  assert.equal(matchAnswer(PACKS.find(p=>p.id==='best-picture-nominees'),'LOTR'),null);
  assert.equal(matchAnswer(PACKS.find(p=>p.id==='dinosaur-genera'),'tyran'),null);
 });
-test('tied abbreviations select a familiar match and exact labels retain priority',()=>{
+test('random initials are rejected and actual short answer names retain priority',()=>{
  const a={label:'Black Bear',points:10,aliases:[]},b={label:'Brown Bear',points:85,aliases:[]};
- assert.equal(matchAnswer({answers:[a,b]},'BB')?.label,'Black Bear');
+ assert.equal(matchAnswer({answers:[a,b]},'BB'),null);
  assert.equal(matchAnswer({answers:[a,{label:'BB',points:30,aliases:[]}]},'BB').label,'BB');
  assert.equal(matchAnswer({answers:[a]},'B'),null);
 });

@@ -33,7 +33,7 @@ test('multiple typos, known aliases, omissions and reordered words resolve witho
 });
 test('known abbreviations and nicknames take priority over accidental initials',()=>{
  for(const[id,q,label]of [['fun-tv','JJK','Jujutsu Kaisen'],['fun-tv','demon slayer','Demon Slayer: Kimetsu no Yaiba'],['fun-video-games','GTA 5','Grand Theft Auto V'],['fun-video-games','BOTW','The Legend of Zelda: Breath of the Wild'],['fun-movie-actors','The Rock','Dwayne Johnson']])assert.equal(matchAnswer(pack(id),q)?.label,label);
- const result=resolveAnswer({answers:[{label:'Black Bear',points:10,aliases:[]},{label:'Brown Bear',points:85,aliases:[]}]},'BB');assert.equal(result.answer.label,'Black Bear');assert.equal(result.status,'matched');assert.equal(result.choices.length,0);
+ const result=resolveAnswer({answers:[{label:'Black Bear',points:10,aliases:[]},{label:'Brown Bear',points:85,aliases:[]}]},'BB');assert.equal(result.answer,undefined);assert.equal(result.status,'missing');assert.equal(result.choices.length,0);
 });
 test('forgiving matching preserves exact names, scores and numeric sequel identity',()=>{
  const p={answers:[{label:'Dark Souls II',points:30,aliases:['Dark Souls 2']},{label:'Dark Souls III',points:85,aliases:['Dark Souls 3']}]};assert.equal(matchAnswer(p,'Dark Souls 2').label,'Dark Souls II');assert.equal(matchAnswer(p,'Dark Sould 3')?.label,'Dark Souls III');assert.equal(matchAnswer(p,'Dark Souls 4'),null);
