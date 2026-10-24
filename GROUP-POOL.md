@@ -18,9 +18,9 @@ Identical complete normalized answer sets and duplicate prompt wording are rejec
 
 ## Selection and history
 
-Puffer uses a Fisher–Yates shuffle over every eligible unseen category, without a fixed prefix or family cycle. Each new lobby and rematch supplies a fresh random order, while participants' recorded seen IDs are excluded. Identical retained banks share a canonical question identity. Histories are per Firebase account in this browser; changing devices or clearing site data can reset them.
+Puffer balances available unseen subjects, then balances formats within each subject. Random ties and shuffled format buckets choose the specific prompt; the size of a Steam or movie inventory does not give it more turns. Recent-subject spacing keeps seven distinct subjects together while at least seven subjects remain available. Each new lobby and rematch supplies a fresh random order, while participants' recorded seen IDs are excluded. Identical retained banks share a canonical question identity. Histories are per Firebase account in this browser; changing devices or clearing site data can reset them.
 
-Practice shuffles the whole pool and persists its remaining queue. Daily publishes one deterministic shuffled calendar: the same seven IDs in the same order for everyone. October 23's published questions stay fixed; the new pool begins October 24. The calendar and Puffer stop on exhaustion instead of wrapping. Seven Daily questions per day consume a 5,000-category pool in about 714 days; this is not an infinite supply.
+Practice uses the same balanced selection and persists its remaining queue. A one-time migration reorders only the remaining saved IDs. Daily publishes one frozen balanced calendar: the same seven IDs in the same order for everyone. October 23's published questions stay fixed; the new balanced schedule begins October 24. The calendar and Puffer stop on exhaustion instead of wrapping. Seven Daily questions per day consume a 5,000-category pool in about 714 days; this is not an infinite supply.
 
 ## Sources, rankings and limits
 
@@ -31,4 +31,10 @@ Membership retains the full eligible recorded source set rather than only the po
 Checks cover structural integrity, hashes, exact examples, explicit boundaries, source membership for Steam tags, shared Daily dates, shuffled decks, room history and multiplayer behavior. They do not prove every metadata classification correct or every possible real-world answer present. Curated supplements and source snapshots are finite; missing answers and new releases still require maintenance. No online AI calls, API charges or generated answer decisions occur during play. Answer matching and its submit-then-confirm behavior are unchanged.
 
 
-To regenerate the frozen selection, install `requirements-questions.txt` and run `python3 scripts/build-group-banks.py`. Replacing the editorial selection requires `--reselect`; ordinary play still shuffles the same frozen IDs. WordNet content-word and Olympic event snapshots are included under `data-snapshots/group/`.
+To regenerate the frozen selection, install `requirements-questions.txt` and run `python3 scripts/build-group-banks.py`. Replacing the editorial selection requires `--reselect`; ordinary play balances the same frozen IDs. WordNet content-word and Olympic event snapshots are included under `data-snapshots/group/`.
+
+## Live 100-question review
+
+Release `20261023-sample100-v1` adds `#sample`: 100 actual live prompts drawn using the same subject/format balancing as gameplay, with a frozen random seed. It shows all 100 together, each format and canonical answer count, subject/format/vote filters, Yes/No, notes, undo and JSON export. Its votes are stored per account on this device, under a separate sample version; the original `#review` and its private cloud feedback remain separate. The page never downloads answer banks. `question-sample-100.json` is the exact unvoted draw. Reproduce it with `node scripts/build-question-sample.mjs --seed=1c7de22efbd657b9bb8a2321`.
+
+The first draw has 11 questions from eight subjects and 12 from science, including one single-tag and one two-tag Steam question. Balancing changes draw probabilities, not the underlying catalog counts. Unseen subjects or formats eventually run out; they drop out instead of reusing played questions to fill a quota. New content is still required to sustain all subjects indefinitely. October 23's published Daily remains unchanged.
