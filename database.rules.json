@@ -246,6 +246,16 @@
           }
         }
       }
+    },
+    "rankGrants": {
+      "$uid": {
+        ".read": "auth !== null && auth.token.firebase.sign_in_provider === 'google.com'",
+        ".write": "auth !== null && auth.token.firebase.sign_in_provider === 'google.com' && auth.token.email_verified === true && auth.token.email === 'gavin@theleiners.com'",
+        ".validate": "newData.hasChildren(['version','rank','at']) && newData.child('version').val() === 1 && newData.child('rank').val() === 'highest' && newData.child('at').isNumber() && newData.child('at').val() > 0 && newData.child('at').val() <= now + 5000",
+        "$field": {
+          ".validate": "$field.matches(/^(version|rank|at)$/)"
+        }
+      }
     }
   }
 }

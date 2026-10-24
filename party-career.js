@@ -66,7 +66,13 @@ export function careerFromReceipts(receipts={}){
  }
  return s;
 }
-export function rankFor(career){const rank=RANKS.find(r=>career.rating<r.max)??RANKS.at(-1),span=rank.max-rank.min,division=Number.isFinite(span)?Math.min(2,Math.floor(3*(career.rating-rank.min)/span)):2;return {...rank,placed:career.ranked>=5,division:Number.isFinite(span)?['III','II','I'][division]:'',progress:Number.isFinite(span)?Math.max(0,Math.min(1,(career.rating-rank.min)/span)):1,next:RANKS[RANKS.indexOf(rank)+1]??null};}
+// Owner grants are read separately from immutable match receipts. A highest-rank
+// grant follows the current ladder and never invents placements, wins or answers.
+export function applyRankGrant(career,grant){
+ if(grant?.version!==1||grant.rank!=='highest'||!Number.isFinite(grant.at)||grant.at<=0)return career;
+ return {...career,grantedRank:'highest',earnedRating:career.rating,rating:Math.max(career.rating,RANKS.at(-1).min)};
+}
+export function rankFor(career){const granted=career.grantedRank==='highest',rank=granted?RANKS.at(-1):RANKS.find(r=>career.rating<r.max)??RANKS.at(-1),span=rank.max-rank.min,division=Number.isFinite(span)?Math.min(2,Math.floor(3*(career.rating-rank.min)/span)):2;return {...rank,placed:granted||career.ranked>=5,division:Number.isFinite(span)?['III','II','I'][division]:'',progress:Number.isFinite(span)?Math.max(0,Math.min(1,(career.rating-rank.min)/span)):1,next:RANKS[RANKS.indexOf(rank)+1]??null};}
 export const unlockedBadges=s=>BADGES.filter(b=>b.test(s));
 export function appearance(value={},career=emptyCareer(),unlocks={}){
  const unlocked=new Set(unlockedBadges(career).map(b=>b.id)),stats=[...new Set(Array.isArray(value.stats)?value.stats:[])].filter(id=>Object.hasOwn(TRACKERS,id)).slice(0,3),badges=[...new Set(Array.isArray(value.badges)?value.badges:[])].filter(id=>unlocked.has(id)).slice(0,1);
