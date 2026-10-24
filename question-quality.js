@@ -1,7 +1,7 @@
 // Deliberate admission to ordinary play. Source volume alone is not a quality
 // signal: geographical micro-filters, cast-credit artifacts and ambiguous
 // dictionary senses stay archived instead of resurfacing in random queues.
-export const QUESTION_QUALITY_BUILD='20261023-discovery-v2';
+export const QUESTION_QUALITY_BUILD='20261023-group-tryout-v1';
 const ids=text=>new Set(text.trim().split(/\s+/));
 const general=ids(`
 no-wheels airline-extras cultured-dairy seasonings condiment-counter
@@ -44,8 +44,15 @@ apple-varieties pepper-varieties pony-breeds donkey-breeds obsolete-jobs meteoro
 catalog-physical-laws catalog-mathematical-theorems catalog-branches-mathematics catalog-writing-systems catalog-printing-techniques
 nobel-physics nobel-chemistry nobel-physiologyormedicine nobel-literature nobel-peace nobel-economicsciences nobel-all
 `);
+// Conservative ordinary-play gate while the group reviews the new proposals.
+// A large metadata intersection is not an approachable or complete category.
+const broadDiscovery=ids(`discovery-nfl-players discovery-nba-players discovery-mlb-players discovery-wnba-players discovery-nfl-teams discovery-nba-teams discovery-mlb-teams discovery-nhl-teams discovery-worldcup-men discovery-worldcup-women discovery-olympic-gold`);
+const holdSpecialist=ids(`catalog-cloud-types modern-art-movements guitar-makers tea-varieties catalog-percussion-types catalog-string-instrument-types catalog-wind-instrument-types catalog-electronic-instrument-types academic-fields food-preparation-verbs rope-knots programming-languages catalog-mineral-species catalog-space-missions catalog-space-probes catalog-jazz-subgenres catalog-rock-subgenres catalog-electronic-subgenres catalog-folk-subgenres catalog-musical-terms catalog-musical-scales catalog-poetic-forms catalog-rhetorical-types catalog-literary-clean catalog-textile-types catalog-fermented-foods catalog-stews rabbit-breeds horse-breeds animal-bats animal-rodents animal-salamanders animal-frogs fun-stardew fun-terraria fun-elden-ring`);
+const broadSemantic=ids(`exercise-n-01 domestic_animal-n-01 aircraft-n-01 bag-n-01 ball-n-01 boat-n-01 building-n-01 car-n-01 chair-n-01 coat-n-01 computer-n-01 footwear-n-02 kitchen_appliance-n-01 knife-n-01 lamp-n-01 machine-n-01 place_of_business-n-01 shoe-n-01 shop-n-01 sports_equipment-n-01 vehicle-n-01 weapon-n-01 meal-n-01 baked_goods-n-01 pastry-n-02 meat-n-01 seafood-n-01 dairy_product-n-01 beverage-n-01 tree-n-01 fruit_tree-n-01`);
 export function questionReview(pack){
- if(pack.id.startsWith('discovery-'))return pack.qualityVersion===1&&pack.ranking==='source-familiarity-v1'&&pack.mixed&&pack.answerCount>=30&&pack.familiarCount>=8?{status:'automatic',reason:'Source-backed finite inventory; broad facets, minimum familiar-answer core and duplicate checks.'}:{status:'archived',reason:'Expansion category has not passed its admission gates.'};
+ if(holdSpecialist.has(pack.id)||pack.id.startsWith('var-semantic-')&&semantic.has(pack.id.slice(13))&&!broadSemantic.has(pack.id.slice(13)))return {status:'specialist',reason:'Held out of ordinary play while the group reviews category breadth and answer coverage.'};
+ if(pack.id.startsWith('discovery-')&&!(pack.qualityVersion===1&&pack.ranking==='source-familiarity-v1'&&pack.mixed&&pack.answerCount>=30&&pack.familiarCount>=8))return {status:'archived',reason:'Source inventory has not passed its integrity gates.'};
+ if(pack.id.startsWith('discovery-'))return broadDiscovery.has(pack.id)&&pack.qualityVersion===1&&pack.ranking==='source-familiarity-v1'&&pack.answerCount>=30&&pack.familiarCount>=8?{status:'automatic',reason:'Broad league or international sports inventory; no team, position, award, Steam tag or multi-facet restrictions.'}:{status:'specialist',reason:'Metadata filters and narrow historical/roster subsets are excluded from Daily, Practice shuffle and Puffer.'};
  if(pack.id.startsWith('fun-'))return {status:pack.mixed?'automatic':'specialist',reason:'Broad source inventory with explicit scope.'};
  if(general.has(pack.id)||pack.id.startsWith('pokemon-type-')||pack.id==='pokemon-abilities'||pack.id.startsWith('var-semantic-')&&semantic.has(pack.id.slice(13)))return {status:'automatic',reason:'Reviewed familiar category with a concrete answer boundary.'};
  if(specialist.has(pack.id)||pack.family==='words'||pack.id.startsWith('pokemon-'))return {status:'specialist',reason:'Explicit optional challenge; excluded from ordinary random play.'};

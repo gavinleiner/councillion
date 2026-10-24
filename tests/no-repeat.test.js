@@ -6,13 +6,13 @@ import {createHash} from 'node:crypto';
 import {PACKS,PLAY_PACKS,MIXED_PACKS,PARTY_PACKS} from '../data.js';
 import {questionReview} from '../question-quality.js';
 import {FRESH_DAILY_IDS,FRESH_DAILY_START} from '../daily-schedule.js';
-import {dailyPacks,partyDeck,newParty,startParty,tickParty,partyPack,random} from '../engine.js';
+import {dailyPacks,GROUP_DAILY_IDS,GROUP_DAILY_START,partyDeck,newParty,startParty,tickParty,partyPack,random} from '../engine.js';
 import {beginParty} from '../party-rules.js';
 import {readQuestionHistory,rememberQuestions} from '../question-history.js';
 import {PartySession} from '../party.js';
 const manifest=JSON.parse(readFileSync(new URL('../variety-bank-manifest.json',import.meta.url)));
 test('source archives retain integrity while only reviewed categories enter automatic play',()=>{
- assert.ok(PLAY_PACKS.length>=2000);assert.ok(PARTY_PACKS.length>=200);assert.ok(MIXED_PACKS.length>=200);
+ assert.ok(PLAY_PACKS.length>=2000);assert.ok(PARTY_PACKS.length>=100);assert.ok(MIXED_PACKS.length>=100);
  assert.ok(MIXED_PACKS.every(p=>questionReview(p).status==='automatic'));
  assert.ok(PARTY_PACKS.every(p=>MIXED_PACKS.includes(p)));
  const prompts=new Set(),sets=new Set();
@@ -25,14 +25,14 @@ test('source archives retain integrity while only reviewed categories enter auto
  }
 });
 test('published daily dates use every scheduled prompt at most once, then stop rather than wrap',()=>{
- assert.equal(new Set(FRESH_DAILY_IDS).size,FRESH_DAILY_IDS.length);const seen=new Set();
- for(let i=0;i<Math.floor(FRESH_DAILY_IDS.length/7);i++){
-  const day=new Date(Date.parse(FRESH_DAILY_START+'T12:00:00Z')+i*86400000).toISOString().slice(0,10),draw=dailyPacks(day);
+ assert.equal(new Set(FRESH_DAILY_IDS).size,FRESH_DAILY_IDS.length);assert.equal(new Set(GROUP_DAILY_IDS).size,GROUP_DAILY_IDS.length);const seen=new Set();
+ for(let i=0;i<Math.floor(GROUP_DAILY_IDS.length/7);i++){
+  const day=new Date(Date.parse(GROUP_DAILY_START+'T12:00:00Z')+i*86400000).toISOString().slice(0,10),draw=dailyPacks(day);
   assert.equal(draw.length,7);assert.deepEqual(draw,dailyPacks(day));for(const p of draw){assert.ok(!seen.has(p.id));seen.add(p.id);}
  }
- const end=new Date(Date.parse(FRESH_DAILY_START+'T12:00:00Z')+Math.floor(FRESH_DAILY_IDS.length/7)*86400000).toISOString().slice(0,10);assert.deepEqual(dailyPacks(end),[]);
- assert.equal(seen.size,Math.floor(FRESH_DAILY_IDS.length/7)*7);
- assert.ok(seen.size>=30*7);
+ const end=new Date(Date.parse(GROUP_DAILY_START+'T12:00:00Z')+Math.floor(GROUP_DAILY_IDS.length/7)*86400000).toISOString().slice(0,10);assert.deepEqual(dailyPacks(end),[]);
+ assert.equal(seen.size,Math.floor(GROUP_DAILY_IDS.length/7)*7);
+ assert.ok(seen.size>=14*7);
 });
 test('puffer excludes recorded questions through rematches, host-state serialization and a new room',()=>{
  const players=[{id:'a',name:'A',ready:true},{id:'b',name:'B',ready:true}],s=newParty(players,random(4));startParty(s,1000,()=>0);const first=partyPack(s).id;assert.ok(s.seenIds.includes(first));
