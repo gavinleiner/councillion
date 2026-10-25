@@ -1,6 +1,6 @@
 # Councillion answer banks
 
-Snapshots: 21–23 October 2026. The catalog contains **3,188 visible categories**, most now optional specialists. The group-tryout policy admits **153** to ordinary Daily/Practice and **151** to Puffer, including **12 broad sports categories**. Those pools contain 1,014,632 and 1,014,579 canonical answer/category entries. Entries overlap and are not unique-concept counts. Source inventory size does not establish that a category is fun, complete or appropriate for random play. See `question-audit-report.json` for the structural scan and `QUESTION-TRYOUT.md` for the new feedback workflow.
+Snapshots: 21–23 October 2026. The catalog contains **3,188 visible categories**, most now optional specialists. The group-tryout policy admits **153** to ordinary Daily/Practice and **151** to Puffer, including **12 broad sports categories**. Those pools contain 1,014,632 and 1,014,590 canonical answer/category entries. Entries overlap and are not unique-concept counts. Source inventory size does not establish that a category is fun, complete or appropriate for random play. See `question-audit-report.json` for the structural scan and `QUESTION-TRYOUT.md` for the new feedback workflow.
 
 | Subject | Visible catalog | Automatic mix | Puffer |
 | --- | ---: | ---: | ---: |
@@ -184,3 +184,8 @@ Release `20261024-random-v1` supersedes the subject/format weighting above. All 
 ## Subject and format variety repair · October 25
 
 Release `20261025-variety-v1` supersedes the uniform normal-play draw above. The source archive still has 5,000 categories, but only 419 pass the explicit normal-play policy in `ordinary-question-policy.js`. All 98 approved review prompts remain. Multiple-label Steam questions (AND and OR), technical predicate variants and low-familiarity title filler stay optional. Existing answer inventories are not shortened. Puffer and Practice choose random subjects/formats and unseen questions, with a six-subject cooldown while alternatives remain. The repaired shared Daily from October 25 has seven distinct subjects per date and currently ends November 17, 2026, without recycling. October 23–24 remain fixed. Actual normal-play predicates/counts and the reproducible live sample are documented in [GROUP-POOL.md](GROUP-POOL.md).
+
+
+## Additional broad topics · first expansion batch
+
+Release `20261025-expansion-v1` adds 590 admitted topic inventories to the existing 419, for 1,009 normal questions. This does not complete the requested 5,000-question normal pool. No tag-pair permutations, country/city micro-filters or arbitrary year/letter grids are generated. New inputs, exact recipe code, source origin identities, integrity hashes and limits are documented in [DISTINCT-EXPANSION.md](DISTINCT-EXPANSION.md) and `data-snapshots/distinct/sources.json`. Published October 23–25 Daily sets remain fixed; the expanded shared calendar starts October 26 and currently runs through December 18.

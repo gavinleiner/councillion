@@ -19,7 +19,7 @@ if(reviewFrom){
  schedule.ids=[...prefix,...first,...deck];
  const prior=(schedule.revisions??[]).find(r=>r.from===reviewFrom&&r.quality===QUESTION_QUALITY_BUILD&&r.selection===QUESTION_SELECTION_BUILD);
  const revisions=(schedule.revisions??[]).filter(r=>r!==prior);
- schedule.revisions=[...revisions,{from:reviewFrom,previousBuild:prior?.previousBuild??previousBuild,quality:QUESTION_QUALITY_BUILD,selection:QUESTION_SELECTION_BUILD,reason:'Remove multiple-label Steam and specialist filler; seven random distinct subjects per Daily. Explicit repair of the October 25 draw; earlier dates stay fixed.'}];
+ schedule.revisions=[...revisions,{from:reviewFrom,previousBuild:prior?.previousBuild??previousBuild,quality:QUESTION_QUALITY_BUILD,selection:QUESTION_SELECTION_BUILD,reason:reviewFrom==='2026-10-25'?'Remove multiple-label Steam and specialist filler; seven random distinct subjects per Daily. Explicit repair of the October 25 draw; earlier dates stay fixed.':'Expand future dates from newly admitted topics with seven distinct subjects per Daily; earlier dates stay fixed.'}];
 }
 const assigned=schedule.ids.map(canonicalQuestionId);if(new Set(assigned).size!==assigned.length)throw Error('Equivalent requests exist in the calendar; review without moving published dates.');
 const excluded=[...assigned,...ORIGINAL_PLAY_PACKS.map(p=>canonicalQuestionId(p.id))];

@@ -1,6 +1,10 @@
 # Question pool and variety
 
-Current release: `20261025-variety-v1`. The normal Daily/Puffer/Practice pool contains **419 categories across nine subjects**, including every one of the 98 prompts approved in the group tryout. The 5,000-entry source archive is separate from admission to random games. It remains searchable by explicit specialist choice and readable for historical results. Normal games do not draw from that entire archive.
+Current release: `20261025-expansion-v1`. The first additional batch grows normal play from 419 to **1,009 questions**, with new topics in all nine subjects. The 5,000-question target is unfinished. All 98 user-approved prompts remain, and the old generated 5,000-entry archive is separate from admission to random games.
+
+The balanced random draw, no-repeat histories and rejection of two-label Steam prompts remain in force. The first expansion and current counts are documented in [DISTINCT-EXPANSION.md](DISTINCT-EXPANSION.md). [ordinary-question-pool.json](ordinary-question-pool.json) and [ordinary-question-list.csv](ordinary-question-list.csv) are the actual normal pool. `#sample` uses the live selector and current admitted IDs.
+
+The source and selection history below describes the October 25 repair before this expansion. Current Daily preserves October 23–25 and uses expanded future dates from October 26 through December 18, 2026, with seven distinct subjects per day. It stops without recycling. To append more approved content without moving scheduled dates, run `node scripts/build-daily-schedule.mjs`. Explicit date review is only for deliberately revising unpublished future dates or an authorized repair.
 
 ## Content admission
 
@@ -34,7 +38,7 @@ Reproduce the repair with `node scripts/build-daily-schedule.mjs --review-from=2
 
 `#sample` uses the same subject/format-balanced selector as live play. It shows actual normal-play prompts, canonical answer counts, formats, filters and local Yes/No feedback. Its votes remain separate from the original tryout. The frozen sample is not a curated selection of better examples from a different pool.
 
-Run `node scripts/build-question-sample.mjs --seed=20261025-variety` to reproduce the current sample and normal-play metadata/CSV. `question-sample-100.json` is the exact unvoted export. Its first 100 contain all nine subjects; tests cover 500 independent fresh room seeds, format balance, varied openers, unseen history, queue migration and shared dates.
+Run `node scripts/build-question-sample.mjs --seed=20261025-expansion` to reproduce the current sample and normal-play metadata/CSV. `question-sample-100.json` is the exact unvoted export. Its first 100 contain all nine subjects; tests cover 500 independent fresh room seeds, format balance, varied openers, unseen history, queue migration and shared dates.
 
 ## Source archive and limits
 

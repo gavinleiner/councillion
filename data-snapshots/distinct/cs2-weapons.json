@@ -1,0 +1,607 @@
+{
+  "source": "https://raw.githubusercontent.com/ByMykel/CSGO-API/main/public/api/en/base_weapons.json",
+  "retrieved": "2026-10-25",
+  "license": "MIT; https://github.com/ByMykel/CSGO-API/blob/main/LICENSE",
+  "rows": [
+    {
+      "id": "base_weapon-weapon_deagle",
+      "name": "Desert Eagle",
+      "category": {
+        "id": "csgo_inventory_weapon_category_pistols",
+        "name": "Pistols"
+      }
+    },
+    {
+      "id": "base_weapon-weapon_elite",
+      "name": "Dual Berettas",
+      "category": {
+        "id": "csgo_inventory_weapon_category_pistols",
+        "name": "Pistols"
+      }
+    },
+    {
+      "id": "base_weapon-weapon_fiveseven",
+      "name": "Five-SeveN",
+      "category": {
+        "id": "csgo_inventory_weapon_category_pistols",
+        "name": "Pistols"
+      }
+    },
+    {
+      "id": "base_weapon-weapon_glock",
+      "name": "Glock-18",
+      "category": {
+        "id": "csgo_inventory_weapon_category_pistols",
+        "name": "Pistols"
+      }
+    },
+    {
+      "id": "base_weapon-weapon_ak47",
+      "name": "AK-47",
+      "category": {
+        "id": "csgo_inventory_weapon_category_rifles",
+        "name": "Rifles"
+      }
+    },
+    {
+      "id": "base_weapon-weapon_aug",
+      "name": "AUG",
+      "category": {
+        "id": "csgo_inventory_weapon_category_rifles",
+        "name": "Rifles"
+      }
+    },
+    {
+      "id": "base_weapon-weapon_awp",
+      "name": "AWP",
+      "category": {
+        "id": "csgo_inventory_weapon_category_rifles",
+        "name": "Rifles"
+      }
+    },
+    {
+      "id": "base_weapon-weapon_famas",
+      "name": "FAMAS",
+      "category": {
+        "id": "csgo_inventory_weapon_category_rifles",
+        "name": "Rifles"
+      }
+    },
+    {
+      "id": "base_weapon-weapon_g3sg1",
+      "name": "G3SG1",
+      "category": {
+        "id": "csgo_inventory_weapon_category_rifles",
+        "name": "Rifles"
+      }
+    },
+    {
+      "id": "base_weapon-weapon_galilar",
+      "name": "Galil AR",
+      "category": {
+        "id": "csgo_inventory_weapon_category_rifles",
+        "name": "Rifles"
+      }
+    },
+    {
+      "id": "base_weapon-weapon_m249",
+      "name": "M249",
+      "category": {
+        "id": "csgo_inventory_weapon_category_heavy",
+        "name": "Heavy"
+      }
+    },
+    {
+      "id": "base_weapon-weapon_m4a1",
+      "name": "M4A4",
+      "category": {
+        "id": "csgo_inventory_weapon_category_rifles",
+        "name": "Rifles"
+      }
+    },
+    {
+      "id": "base_weapon-weapon_mac10",
+      "name": "MAC-10",
+      "category": {
+        "id": "csgo_inventory_weapon_category_smgs",
+        "name": "SMGs"
+      }
+    },
+    {
+      "id": "base_weapon-weapon_p90",
+      "name": "P90",
+      "category": {
+        "id": "csgo_inventory_weapon_category_smgs",
+        "name": "SMGs"
+      }
+    },
+    {
+      "id": "base_weapon-weapon_mp5sd",
+      "name": "MP5-SD",
+      "category": {
+        "id": "csgo_inventory_weapon_category_smgs",
+        "name": "SMGs"
+      }
+    },
+    {
+      "id": "base_weapon-weapon_ump45",
+      "name": "UMP-45",
+      "category": {
+        "id": "csgo_inventory_weapon_category_smgs",
+        "name": "SMGs"
+      }
+    },
+    {
+      "id": "base_weapon-weapon_xm1014",
+      "name": "XM1014",
+      "category": {
+        "id": "csgo_inventory_weapon_category_heavy",
+        "name": "Heavy"
+      }
+    },
+    {
+      "id": "base_weapon-weapon_bizon",
+      "name": "PP-Bizon",
+      "category": {
+        "id": "csgo_inventory_weapon_category_smgs",
+        "name": "SMGs"
+      }
+    },
+    {
+      "id": "base_weapon-weapon_mag7",
+      "name": "MAG-7",
+      "category": {
+        "id": "csgo_inventory_weapon_category_heavy",
+        "name": "Heavy"
+      }
+    },
+    {
+      "id": "base_weapon-weapon_negev",
+      "name": "Negev",
+      "category": {
+        "id": "csgo_inventory_weapon_category_heavy",
+        "name": "Heavy"
+      }
+    },
+    {
+      "id": "base_weapon-weapon_sawedoff",
+      "name": "Sawed-Off",
+      "category": {
+        "id": "csgo_inventory_weapon_category_heavy",
+        "name": "Heavy"
+      }
+    },
+    {
+      "id": "base_weapon-weapon_tec9",
+      "name": "Tec-9",
+      "category": {
+        "id": "csgo_inventory_weapon_category_pistols",
+        "name": "Pistols"
+      }
+    },
+    {
+      "id": "base_weapon-weapon_taser",
+      "name": "Zeus x27",
+      "category": {
+        "id": "loadoutslot_equipment",
+        "name": "Equipment"
+      }
+    },
+    {
+      "id": "base_weapon-weapon_hkp2000",
+      "name": "P2000",
+      "category": {
+        "id": "csgo_inventory_weapon_category_pistols",
+        "name": "Pistols"
+      }
+    },
+    {
+      "id": "base_weapon-weapon_mp7",
+      "name": "MP7",
+      "category": {
+        "id": "csgo_inventory_weapon_category_smgs",
+        "name": "SMGs"
+      }
+    },
+    {
+      "id": "base_weapon-weapon_mp9",
+      "name": "MP9",
+      "category": {
+        "id": "csgo_inventory_weapon_category_smgs",
+        "name": "SMGs"
+      }
+    },
+    {
+      "id": "base_weapon-weapon_nova",
+      "name": "Nova",
+      "category": {
+        "id": "csgo_inventory_weapon_category_heavy",
+        "name": "Heavy"
+      }
+    },
+    {
+      "id": "base_weapon-weapon_p250",
+      "name": "P250",
+      "category": {
+        "id": "csgo_inventory_weapon_category_pistols",
+        "name": "Pistols"
+      }
+    },
+    {
+      "id": "base_weapon-weapon_scar20",
+      "name": "SCAR-20",
+      "category": {
+        "id": "csgo_inventory_weapon_category_rifles",
+        "name": "Rifles"
+      }
+    },
+    {
+      "id": "base_weapon-weapon_sg556",
+      "name": "SG 553",
+      "category": {
+        "id": "csgo_inventory_weapon_category_rifles",
+        "name": "Rifles"
+      }
+    },
+    {
+      "id": "base_weapon-weapon_ssg08",
+      "name": "SSG 08",
+      "category": {
+        "id": "csgo_inventory_weapon_category_rifles",
+        "name": "Rifles"
+      }
+    },
+    {
+      "id": "base_weapon-weapon_knife",
+      "name": "Knife",
+      "category": {
+        "id": "sfui_invpanel_filter_melee",
+        "name": "Knives"
+      }
+    },
+    {
+      "id": "base_weapon-weapon_flashbang",
+      "name": "Flashbang",
+      "category": {
+        "id": "loadoutslot_grenade",
+        "name": "Grenades"
+      }
+    },
+    {
+      "id": "base_weapon-weapon_hegrenade",
+      "name": "High Explosive Grenade",
+      "category": {
+        "id": "loadoutslot_grenade",
+        "name": "Grenades"
+      }
+    },
+    {
+      "id": "base_weapon-weapon_smokegrenade",
+      "name": "Smoke Grenade",
+      "category": {
+        "id": "loadoutslot_grenade",
+        "name": "Grenades"
+      }
+    },
+    {
+      "id": "base_weapon-weapon_molotov",
+      "name": "Molotov",
+      "category": {
+        "id": "loadoutslot_grenade",
+        "name": "Grenades"
+      }
+    },
+    {
+      "id": "base_weapon-weapon_decoy",
+      "name": "Decoy Grenade",
+      "category": {
+        "id": "loadoutslot_grenade",
+        "name": "Grenades"
+      }
+    },
+    {
+      "id": "base_weapon-weapon_incgrenade",
+      "name": "Incendiary Grenade",
+      "category": {
+        "id": "loadoutslot_grenade",
+        "name": "Grenades"
+      }
+    },
+    {
+      "id": "base_weapon-weapon_c4",
+      "name": "C4 Explosive",
+      "category": {
+        "id": "loadoutslot_c4",
+        "name": "C4"
+      }
+    },
+    {
+      "id": "base_weapon-weapon_healthshot",
+      "name": "Medi-Shot",
+      "category": {
+        "id": "loadoutslot_equipment",
+        "name": "Equipment"
+      }
+    },
+    {
+      "id": "base_weapon-weapon_knife_t",
+      "name": "Knife",
+      "category": {
+        "id": "sfui_invpanel_filter_melee",
+        "name": "Knives"
+      }
+    },
+    {
+      "id": "base_weapon-weapon_m4a1_silencer",
+      "name": "M4A1-S",
+      "category": {
+        "id": "csgo_inventory_weapon_category_rifles",
+        "name": "Rifles"
+      }
+    },
+    {
+      "id": "base_weapon-weapon_usp_silencer",
+      "name": "USP-S",
+      "category": {
+        "id": "csgo_inventory_weapon_category_pistols",
+        "name": "Pistols"
+      }
+    },
+    {
+      "id": "base_weapon-weapon_cz75a",
+      "name": "CZ75-Auto",
+      "category": {
+        "id": "csgo_inventory_weapon_category_pistols",
+        "name": "Pistols"
+      }
+    },
+    {
+      "id": "base_weapon-weapon_revolver",
+      "name": "R8 Revolver",
+      "category": {
+        "id": "csgo_inventory_weapon_category_pistols",
+        "name": "Pistols"
+      }
+    },
+    {
+      "id": "base_weapon-weapon_bayonet",
+      "name": "Bayonet",
+      "category": {
+        "id": "sfui_invpanel_filter_melee",
+        "name": "Knives"
+      }
+    },
+    {
+      "id": "base_weapon-weapon_knife_css",
+      "name": "Classic Knife",
+      "category": {
+        "id": "sfui_invpanel_filter_melee",
+        "name": "Knives"
+      }
+    },
+    {
+      "id": "base_weapon-weapon_knife_flip",
+      "name": "Flip Knife",
+      "category": {
+        "id": "sfui_invpanel_filter_melee",
+        "name": "Knives"
+      }
+    },
+    {
+      "id": "base_weapon-weapon_knife_gut",
+      "name": "Gut Knife",
+      "category": {
+        "id": "sfui_invpanel_filter_melee",
+        "name": "Knives"
+      }
+    },
+    {
+      "id": "base_weapon-weapon_knife_karambit",
+      "name": "Karambit",
+      "category": {
+        "id": "sfui_invpanel_filter_melee",
+        "name": "Knives"
+      }
+    },
+    {
+      "id": "base_weapon-weapon_knife_m9_bayonet",
+      "name": "M9 Bayonet",
+      "category": {
+        "id": "sfui_invpanel_filter_melee",
+        "name": "Knives"
+      }
+    },
+    {
+      "id": "base_weapon-weapon_knife_tactical",
+      "name": "Huntsman Knife",
+      "category": {
+        "id": "sfui_invpanel_filter_melee",
+        "name": "Knives"
+      }
+    },
+    {
+      "id": "base_weapon-weapon_knife_falchion",
+      "name": "Falchion Knife",
+      "category": {
+        "id": "sfui_invpanel_filter_melee",
+        "name": "Knives"
+      }
+    },
+    {
+      "id": "base_weapon-weapon_knife_survival_bowie",
+      "name": "Bowie Knife",
+      "category": {
+        "id": "sfui_invpanel_filter_melee",
+        "name": "Knives"
+      }
+    },
+    {
+      "id": "base_weapon-weapon_knife_butterfly",
+      "name": "Butterfly Knife",
+      "category": {
+        "id": "sfui_invpanel_filter_melee",
+        "name": "Knives"
+      }
+    },
+    {
+      "id": "base_weapon-weapon_knife_push",
+      "name": "Shadow Daggers",
+      "category": {
+        "id": "sfui_invpanel_filter_melee",
+        "name": "Knives"
+      }
+    },
+    {
+      "id": "base_weapon-weapon_knife_cord",
+      "name": "Paracord Knife",
+      "category": {
+        "id": "sfui_invpanel_filter_melee",
+        "name": "Knives"
+      }
+    },
+    {
+      "id": "base_weapon-weapon_knife_canis",
+      "name": "Survival Knife",
+      "category": {
+        "id": "sfui_invpanel_filter_melee",
+        "name": "Knives"
+      }
+    },
+    {
+      "id": "base_weapon-weapon_knife_ursus",
+      "name": "Ursus Knife",
+      "category": {
+        "id": "sfui_invpanel_filter_melee",
+        "name": "Knives"
+      }
+    },
+    {
+      "id": "base_weapon-weapon_knife_gypsy_jackknife",
+      "name": "Navaja Knife",
+      "category": {
+        "id": "sfui_invpanel_filter_melee",
+        "name": "Knives"
+      }
+    },
+    {
+      "id": "base_weapon-weapon_knife_outdoor",
+      "name": "Nomad Knife",
+      "category": {
+        "id": "sfui_invpanel_filter_melee",
+        "name": "Knives"
+      }
+    },
+    {
+      "id": "base_weapon-weapon_knife_stiletto",
+      "name": "Stiletto Knife",
+      "category": {
+        "id": "sfui_invpanel_filter_melee",
+        "name": "Knives"
+      }
+    },
+    {
+      "id": "base_weapon-weapon_knife_widowmaker",
+      "name": "Talon Knife",
+      "category": {
+        "id": "sfui_invpanel_filter_melee",
+        "name": "Knives"
+      }
+    },
+    {
+      "id": "base_weapon-weapon_knife_skeleton",
+      "name": "Skeleton Knife",
+      "category": {
+        "id": "sfui_invpanel_filter_melee",
+        "name": "Knives"
+      }
+    },
+    {
+      "id": "base_weapon-weapon_knife_kukri",
+      "name": "Kukri Knife",
+      "category": {
+        "id": "sfui_invpanel_filter_melee",
+        "name": "Knives"
+      }
+    },
+    {
+      "id": "base_weapon-studded_brokenfang_gloves",
+      "name": "Broken Fang Gloves",
+      "category": {
+        "id": "sfui_invpanel_filter_gloves",
+        "name": "Gloves"
+      }
+    },
+    {
+      "id": "base_weapon-studded_bloodhound_gloves",
+      "name": "Bloodhound Gloves",
+      "category": {
+        "id": "sfui_invpanel_filter_gloves",
+        "name": "Gloves"
+      }
+    },
+    {
+      "id": "base_weapon-t_gloves",
+      "name": "Default T Gloves",
+      "category": {
+        "id": "sfui_invpanel_filter_gloves",
+        "name": "Gloves"
+      }
+    },
+    {
+      "id": "base_weapon-ct_gloves",
+      "name": "Default CT Gloves",
+      "category": {
+        "id": "sfui_invpanel_filter_gloves",
+        "name": "Gloves"
+      }
+    },
+    {
+      "id": "base_weapon-sporty_gloves",
+      "name": "Sport Gloves",
+      "category": {
+        "id": "sfui_invpanel_filter_gloves",
+        "name": "Gloves"
+      }
+    },
+    {
+      "id": "base_weapon-slick_gloves",
+      "name": "Driver Gloves",
+      "category": {
+        "id": "sfui_invpanel_filter_gloves",
+        "name": "Gloves"
+      }
+    },
+    {
+      "id": "base_weapon-leather_handwraps",
+      "name": "Hand Wraps",
+      "category": {
+        "id": "sfui_invpanel_filter_gloves",
+        "name": "Gloves"
+      }
+    },
+    {
+      "id": "base_weapon-motorcycle_gloves",
+      "name": "Moto Gloves",
+      "category": {
+        "id": "sfui_invpanel_filter_gloves",
+        "name": "Gloves"
+      }
+    },
+    {
+      "id": "base_weapon-specialist_gloves",
+      "name": "Specialist Gloves",
+      "category": {
+        "id": "sfui_invpanel_filter_gloves",
+        "name": "Gloves"
+      }
+    },
+    {
+      "id": "base_weapon-studded_hydra_gloves",
+      "name": "Hydra Gloves",
+      "category": {
+        "id": "sfui_invpanel_filter_gloves",
+        "name": "Gloves"
+      }
+    }
+  ]
+}

@@ -3,15 +3,16 @@ import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
 import {gunzipSync} from 'node:zlib';
 import {createHash} from 'node:crypto';
-import {PACKS,MIXED_PACKS,PLAY_PACKS} from '../data.js';
+import {PACKS,MIXED_PACKS,PLAY_PACKS,canonicalQuestionId} from '../data.js';
 import {FUN_PACKS} from '../fun-question-catalog.js';
 import {matchAnswer,resolveAnswer,normalize,practiceDraw,random,dailyPacks} from '../engine.js';
 const pack=id=>PACKS.find(p=>p.id===id);
-test('main rotation uses approachable mixed topics, with specialists available separately',()=>{
+test('main rotation uses approachable mixed topics, with specialists available separately',async()=>{
  assert.ok(MIXED_PACKS.length>=60);assert.ok(PLAY_PACKS.length>MIXED_PACKS.length);
  assert.ok(!MIXED_PACKS.some(p=>/^(lex-|bird-warblers|city-west-100)/.test(p.id)||p.family==='words'));
  assert.ok(MIXED_PACKS.some(p=>p.id==='fun-minecraft'));assert.ok(MIXED_PACKS.some(p=>p.id==='fun-food'));
- for(let i=0;i<10;i++){const day=new Date(Date.UTC(2026,9,24+i)).toISOString().slice(0,10),draw=dailyPacks(day);assert.equal(draw.length,7);assert.equal(new Set(draw.map(p=>p.id)).size,7);assert.ok(draw.every(p=>MIXED_PACKS.includes(p)));}
+ const published=JSON.parse(await readFile(new URL('../data-snapshots/group/published-20261023-24.json',import.meta.url),'utf8'));
+ for(let i=0;i<10;i++){const day=new Date(Date.UTC(2026,9,24+i)).toISOString().slice(0,10),draw=dailyPacks(day);assert.equal(draw.length,7);assert.equal(new Set(draw.map(p=>p.id)).size,7);if(day==='2026-10-24')assert.deepEqual(draw.map(p=>p.id),published.slice(7));else assert.ok(draw.every(p=>MIXED_PACKS.some(q=>q.id===canonicalQuestionId(p.id))));if(day>='2026-10-26')assert.ok(draw.every(p=>MIXED_PACKS.includes(p)));}
 });
 test('major inventories include their unfamiliar tail and do not count aliases as answers',async()=>{
  assert.ok(pack('fun-video-games').answerCount>300000);assert.ok(pack('fun-movies').answerCount>40000);assert.ok(pack('fun-tv').answerCount>100000);assert.ok(pack('fun-cities').answerCount>100000);assert.ok(pack('fun-birds').answerCount>11000);

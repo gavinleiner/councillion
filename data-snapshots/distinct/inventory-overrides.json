@@ -1,0 +1,40 @@
+{
+  "gas.n.02": {
+    "answers": "Air|Nitrogen|Oxygen|Hydrogen|Helium|Carbon dioxide~CO2|Carbon monoxide~CO|Neon|Argon|Krypton|Xenon|Radon|Methane|Ethane|Propane|Butane|Isobutane|Ethylene~Ethene|Propylene~Propene|Acetylene~Ethyne|Ammonia|Sulfur dioxide~Sulphur dioxide|Hydrogen sulfide~Hydrogen sulphide|Nitrous oxide~Laughing gas|Nitric oxide|Nitrogen dioxide|Chlorine|Fluorine|Ozone|Phosphine|Arsine|Diborane|Silane|Hydrogen chloride|Hydrogen fluoride|Hydrogen bromide|Hydrogen iodide|Formaldehyde|Dimethyl ether|Chloromethane~Methyl chloride|Chloroethane~Ethyl chloride|Fluoromethane|Difluoromethane|Trifluoromethane|Tetrafluoromethane~Carbon tetrafluoride|Sulfur hexafluoride~Sulphur hexafluoride|Natural gas|Coal gas|Biogas|Exhaust gas|Water vapour~Water vapor~Steam",
+    "examples": [
+      "Oxygen",
+      "Carbon dioxide",
+      "Nitrogen",
+      "Helium",
+      "Air",
+      "Hydrogen"
+    ],
+    "negative": [
+      "Liquid nitrogen",
+      "Liquid oxygen",
+      "Mackerel sky",
+      "Mercuric chloride",
+      "Gasoline"
+    ],
+    "source": "Authored gases, gas-mixture and vapour names; physical data reference https://webbook.nist.gov/chemistry/ . A named gaseous state such as steam counts; a liquid-state name does not."
+  },
+  "liquid.n.03": {
+    "answers": "Water|Milk|Juice|Orange juice|Apple juice|Grape juice|Lemon juice|Lime juice|Pineapple juice|Tomato juice|Cranberry juice|Beer|Wine|Vodka|Gin|Rum|Tequila|Whiskey~Whisky|Brandy|Cider|Vinegar|Oil|Olive oil|Vegetable oil|Sunflower oil|Canola oil~Rapeseed oil|Peanut oil~Groundnut oil|Avocado oil|Sesame oil|Corn oil|Castor oil|Mineral oil|Liquid paraffin|Motor oil~Engine oil|Transmission fluid|Brake fluid|Hydraulic fluid|Gasoline~Petrol|Diesel|Kerosene~Paraffin fuel|Acetone|Ethyl acetate|Ethanol~Ethyl alcohol|Methanol~Methyl alcohol|Isopropyl alcohol~Isopropanol|Butanol|Pentanol|Hexanol|Heptanol|Octanol|Glycerol~Glycerin~Glycerine|Ethylene glycol|Propylene glycol|Mercury|Bromine|Hydrogen peroxide|Liquid detergent|Shampoo|Hair conditioner|Body wash|Liquid soap|Hand sanitizer~Hand sanitiser|Paint|Ink|Blood|Blood plasma~Plasma|Urine|Saliva|Tears|Seawater~Sea water|Honey|Syrup|Maple syrup|Molasses|Chocolate syrup|Coffee|Tea|Chocolate milk|Carbonated water~Sparkling water|Soda~Soft drink|Cola|Energy drink|Sports drink|Smoothie|Milkshake|Cream|Coconut milk|Almond milk|Oat milk|Soy milk~Soya milk|Buttermilk|Kefir|Yogurt drink~Yoghurt drink|Soy sauce~Soya sauce|Fish sauce|Antifreeze|Nail polish|Nail polish remover|Liquid fertilizer~Liquid fertiliser|Deionized water~Deionised water|Distilled water|Rainwater|Fresh water|Hard water|Soft water|Tap water|Perfume|Essential oil|Turpentine|White spirit~Mineral spirits|Carbon disulfide~Carbon disulphide|Toluene|Xylene|Benzene|Chloroform|Dichloromethane~Methylene chloride|Acetic acid|Formic acid|Silicone oil",
+    "examples": [
+      "Water",
+      "Milk",
+      "Coffee",
+      "Oil",
+      "Juice",
+      "Mercury"
+    ],
+    "negative": [
+      "Ice",
+      "Steam",
+      "Liquid nitrogen",
+      "Oxygen",
+      "Stone"
+    ],
+    "source": "Authored everyday liquids and liquid mixtures, with constituent phase data background https://webbook.nist.gov/chemistry/ . Ordinary room-temperature liquid forms count; solid and cryogenic forms do not."
+  }
+}
