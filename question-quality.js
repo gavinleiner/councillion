@@ -1,7 +1,8 @@
+import {ordinaryQuestionAllowed,ORDINARY_POLICY_BUILD} from './ordinary-question-policy.js';
 // Deliberate admission to ordinary play. Source volume alone is not a quality
 // signal: geographical micro-filters, cast-credit artifacts and ambiguous
 // dictionary senses stay archived instead of resurfacing in random queues.
-export const QUESTION_QUALITY_BUILD='20261024-accessible-v1';
+export const QUESTION_QUALITY_BUILD=ORDINARY_POLICY_BUILD;
 const ids=text=>new Set(text.trim().split(/\s+/));
 const general=ids(`
 no-wheels airline-extras cultured-dairy seasonings condiment-counter
@@ -51,9 +52,9 @@ const holdSpecialist=ids(`catalog-cloud-types modern-art-movements guitar-makers
 const broadSemantic=ids(`exercise-n-01 domestic_animal-n-01 aircraft-n-01 bag-n-01 ball-n-01 boat-n-01 building-n-01 car-n-01 chair-n-01 coat-n-01 computer-n-01 footwear-n-02 kitchen_appliance-n-01 knife-n-01 lamp-n-01 machine-n-01 place_of_business-n-01 shoe-n-01 shop-n-01 sports_equipment-n-01 vehicle-n-01 weapon-n-01 meal-n-01 baked_goods-n-01 pastry-n-02 meat-n-01 seafood-n-01 dairy_product-n-01 beverage-n-01 tree-n-01 fruit_tree-n-01`);
 export function questionReview(pack){
  if(pack.ordinaryRetired)return {status:'specialist',reason:'Held out of ordinary play after the playability review; kept only for saved dives and published Daily history.'};
- if(pack.groupProfileVersion===1)return {status:'automatic',reason:'Selected group pool: approved prompts or a recorded source predicate, familiar-answer admission gate and unique complete answer set.'};
+ if(pack.groupProfileVersion===1)return ordinaryQuestionAllowed(pack)?{status:'automatic',reason:'Broad normal-play question under the variety review; includes all approved tryout prompts.'}:{status:'specialist',reason:'Excluded from random games: multiple Steam labels, narrow metadata combinations or specialist title/artist constraints. Available only by explicit choice.'};
  // Legacy inventories remain addressable for saved dives and optional practice.
- // They do not silently expand the new 5,000-question ordinary-play pool.
+ // They do not silently expand the admitted ordinary-play pool.
  if(general.has(pack.id)||broadDiscovery.has(pack.id)||pack.id.startsWith('fun-')||pack.id.startsWith('pokemon-type-')||pack.id==='pokemon-abilities'||pack.id.startsWith('var-semantic-')&&semantic.has(pack.id.slice(13)))return {status:'specialist',reason:'Retained optional inventory; ordinary play uses the group-selected pool.'};
  if(holdSpecialist.has(pack.id)||pack.id.startsWith('var-semantic-')&&semantic.has(pack.id.slice(13))&&!broadSemantic.has(pack.id.slice(13)))return {status:'specialist',reason:'Held out of ordinary play while the group reviews category breadth and answer coverage.'};
  if(pack.id.startsWith('discovery-')&&!(pack.qualityVersion===1&&pack.ranking==='source-familiarity-v1'&&pack.mixed&&pack.answerCount>=30&&pack.familiarCount>=8))return {status:'archived',reason:'Source inventory has not passed its integrity gates.'};
