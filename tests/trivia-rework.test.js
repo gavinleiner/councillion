@@ -10,7 +10,7 @@ const pack=id=>PACKS.find(p=>p.id===id);
 test('main rotation uses approachable mixed topics, with specialists available separately',async()=>{
  assert.ok(MIXED_PACKS.length>=60);assert.ok(PLAY_PACKS.length>MIXED_PACKS.length);
  assert.ok(!MIXED_PACKS.some(p=>/^(lex-|bird-warblers|city-west-100)/.test(p.id)||p.family==='words'));
- assert.ok(MIXED_PACKS.some(p=>p.id==='fun-minecraft'));assert.ok(MIXED_PACKS.some(p=>p.id==='fun-food'));
+ assert.ok(MIXED_PACKS.some(p=>p.id==='group-q011'));assert.ok(MIXED_PACKS.some(p=>p.id==='group-q061'));
  const published=JSON.parse(await readFile(new URL('../data-snapshots/group/published-20261023-24.json',import.meta.url),'utf8'));
  for(let i=0;i<10;i++){const day=new Date(Date.UTC(2026,9,24+i)).toISOString().slice(0,10),draw=dailyPacks(day);assert.equal(draw.length,7);assert.equal(new Set(draw.map(p=>p.id)).size,7);if(day==='2026-10-24')assert.deepEqual(draw.map(p=>p.id),published.slice(7));else assert.ok(draw.every(p=>MIXED_PACKS.some(q=>q.id===canonicalQuestionId(p.id))));if(day>='2026-10-26')assert.ok(draw.every(p=>MIXED_PACKS.includes(p)));}
 });

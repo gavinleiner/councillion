@@ -1,5 +1,6 @@
 import {DISTINCT_PACKS} from './distinct-question-catalog.js';
 import {questionReview} from './question-quality.js';
+import {REVIEWED_BOUNDARIES} from './reviewed-question-standard.js';
 import {GROUP_PACKS,GROUP_EQUIVALENTS} from './group-question-catalog.js';
 import {GROUP_ARCHIVED_PACKS} from './group-question-archive.js';
 import {DISCOVERY_PACKS} from './discovery-question-catalog.js';
@@ -75,6 +76,11 @@ for(let i=PACKS.length-1;i>=0;i--)if(groupIds.has(PACKS[i].id))PACKS.splice(i,1)
 PACKS.push(...GROUP_ARCHIVED_PACKS.filter(p=>!groupIds.has(p.id)),...GROUP_PACKS,...DISTINCT_PACKS);
 for(const p of PACKS){if(p.id==='fun-sports'||p.id==='var-semantic-sports_equipment-n-01')p.family='sports';if(['catalog-instrument-types','catalog-genre-clean','catalog-dances'].includes(p.id))p.family='music';if(p.id==='pokemon-abilities')p.family='gaming';}
 export const PACK_BY_ID=new Map(PACKS.map(p=>[p.id,p]));
+// A known wrong answer is not a spelling mistake. For example, the passive
+// Strider must not be turned into Spider in the attacking-mobs question.
+for(const [id,names] of Object.entries(REVIEWED_BOUNDARIES)){
+ const p=PACK_BY_ID.get(id);if(p)p.excludedAnswers=[...new Set([...(p.excludedAnswers??[]),...names])];
+}
 export const PLAY_PACKS=PACKS.filter(p=>p.dailyEligible);
 export const REVIEWED_PACKS=PLAY_PACKS.filter(p=>questionReview(p).status!=='archived');
 export const ORIGINAL_PLAY_PACKS=historicalOriginalPacks;

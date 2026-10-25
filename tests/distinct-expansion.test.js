@@ -9,9 +9,10 @@ import {resolveAnswer,normalize} from '../answer-matching.js';
 import {practiceDraw,reshufflePracticeQueue,partyDeck,random,dailyPacks} from '../engine.js';
 const manifest=JSON.parse(readFileSync(new URL('../distinct-bank-manifest.json',import.meta.url)));
 const baseline=JSON.parse(readFileSync(new URL('../data-snapshots/distinct/baseline-pool.json',import.meta.url)));
-test('the admitted expansion grows every subject without counting the old 5,000-entry archive as live',()=>{
+const admission=JSON.parse(readFileSync(new URL('../data-snapshots/reviewed-standard/admission.json',import.meta.url)));
+test('source expansion remains available without overriding the explicit ordinary review',()=>{
  assert.ok(DISTINCT_PACKS.length>=500);assert.equal(manifest.count,DISTINCT_PACKS.length);
- assert.equal(MIXED_PACKS.length,baseline.count+DISTINCT_PACKS.length);
+ assert.deepEqual(new Set(MIXED_PACKS.map(p=>p.id)),new Set(admission.questions.map(p=>p.id)));
  assert.deepEqual(PARTY_PACKS,MIXED_PACKS);
  for(const family of ['gaming','sports','culture','music','food','nature','science','world','everyday'])assert.ok(DISTINCT_PACKS.some(p=>p.family===family),family);
  assert.ok(Math.max(...Object.values(Object.groupBy(MIXED_PACKS,p=>p.family)).map(a=>a.length))<MIXED_PACKS.length/2);
@@ -31,10 +32,10 @@ test('new banks retain their exact declared inventory and hash, with unique labe
 });
 test('a stale Practice queue gets newly admitted IDs once; old source histories exclude their replacements',()=>{
  const pending=baseline.categories.slice(80,130).map(p=>p.id),queue=reshufflePracticeQueue(pending,random(12),'20261025-variety-v1');
- assert.deepEqual(new Set(queue),new Set([...pending,...DISTINCT_PACKS.map(p=>p.id)]));assert.equal(new Set(queue).size,queue.length);
- const stable=reshufflePracticeQueue(pending,random(13),'20261025-expansion-v1');assert.deepEqual(new Set(stable),new Set(pending));
- for(const p of DISTINCT_PACKS.filter(p=>p.originId)){assert.equal(canonicalQuestionId(p.originId),p.id);assert.ok(!partyDeck(random(5),[p.originId]).includes(p.id));}
- const music=DISTINCT_PACKS.find(p=>p.originId&&p.family==='music');for(let seed=0;seed<30;seed++)assert.notEqual(PACK_BY_ID.get(partyDeck(random(seed),[music.originId])[0]).family,'music');
+ assert.deepEqual(new Set(queue),new Set(pending.filter(id=>MIXED_PACKS.some(p=>p.id===id))));assert.equal(new Set(queue).size,queue.length);
+ const stable=reshufflePracticeQueue(pending,random(13),'20261025-expansion-v1');assert.deepEqual(new Set(stable),new Set(pending.filter(id=>MIXED_PACKS.some(p=>p.id===id))));
+ for(const p of DISTINCT_PACKS.filter(p=>p.originId&&MIXED_PACKS.includes(p))){assert.equal(canonicalQuestionId(p.originId),p.id);assert.ok(!partyDeck(random(5),[p.originId]).includes(p.id));}
+ const retained=DISTINCT_PACKS.find(p=>p.originId&&MIXED_PACKS.includes(p));for(let seed=0;seed<30;seed++)assert.notEqual(PACK_BY_ID.get(partyDeck(random(seed),[retained.originId])[0]).family,retained.family);
  const draw=practiceDraw(queue,null,random(9));assert.equal(draw.ids.length,7);assert.equal(new Set([...draw.ids,...draw.remaining]).size,queue.length);
 });
 test('specific new answers and deliberate negative boundaries work through the real matcher',()=>{
@@ -60,8 +61,9 @@ test('specific new answers and deliberate negative boundaries work through the r
  for(const[id,c]of Object.entries(checks)){const p=PACK_BY_ID.get(id);assert.ok(p,id);for(const name of c.yes)assert.equal(resolveAnswer(p,name).status,'exact',id+': '+name);for(const name of c.no)assert.notEqual(resolveAnswer(p,name).status,'exact',id+': '+name);}
  for(const[id,inputs]of [['distinct-facts-named-bridges',['Bosporus Bridge','Bosphorus Bridge']],['distinct-facts-water-sports',['Windsurfing','Sailboarding']]]){const p=PACK_BY_ID.get(id);assert.equal(resolveAnswer(p,inputs[0]).answer.label,resolveAnswer(p,inputs[1]).answer.label,'one answer identity for '+inputs.join('/'));}
 });
-test('the repaired published Daily stays fixed while future dates incorporate new topics',()=>{
- assert.deepEqual(dailyPacks('2026-10-25').map(p=>p.id),['catalog-jewelry-types','group-music-dance-artist','group-q089','group-show-word-dead','cat-breeds','fun-materials','group-q021']);
+test('the current and future Daily use the reviewed pool while earlier dates remain fixed',()=>{
+ assert.ok(dailyPacks('2026-10-25').every(p=>MIXED_PACKS.includes(p)));
+ assert.ok(!dailyPacks('2026-10-25').some(p=>p.id==='group-show-word-dead'));
  const schedule=JSON.parse(readFileSync(new URL('../daily-schedule.json',import.meta.url)));assert.ok(schedule.revisions.some(r=>r.from==='2026-10-26'));
  const future=schedule.ids.slice(21);assert.ok(future.some(id=>id.startsWith('distinct-')));assert.equal(new Set(schedule.ids).size,schedule.ids.length);
 });

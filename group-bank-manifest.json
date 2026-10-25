@@ -1,5 +1,5 @@
 {
-  "build": "19007181e36929d8",
+  "build": "42864f48ab2c5cde",
   "count": 5000,
   "approved": 98,
   "families": {
@@ -120,7 +120,7 @@
     "group-accessible-bank-union": 9,
     "group-accessible-film-any-genres": 31
   },
-  "canonicalEntries": 8593107,
+  "canonicalEntries": 8593699,
   "coverage": "Finite recorded inventories, not every possible real-world answer. Title membership is literal, not inferred plot meaning. Popularity proxies are editorial ranking inputs, not player answer frequencies.",
   "categories": [
     {
@@ -130,32 +130,33 @@
       "topic": "VIDEO GAME WHERE YOU CAN PLAY AS AN ANIMAL",
       "group": "group-approved-gaming",
       "source": "Curated group-approved inventory; source links in question-research.js and retained game/sports/food/science snapshots. See GROUP-POOL.md.",
-      "answerCount": 166,
-      "familiarCount": 30,
-      "identityHash": "f7154103a5ccf4b8b65500cdf10c0cdde493540dcc8440905d20e241646ac65b",
+      "answerCount": 183,
+      "familiarCount": 47,
+      "identityHash": "68c85851418d4cb3e35a907389a7cf30c640fd2e70bd79f1aacf7eaad206ce61",
       "predicate": {
         "kind": "approved-recipe",
         "review": "q001"
       },
       "reviewId": "q001",
       "scope": "Animal protagonists and selectable animal characters count; fictional animal species count.",
-      "answerFile": "group-q001.8f97c0938e1ae5ea.json.gz",
-      "answerDirectory": "group-banks",
+      "answerFile": "group-q001.01d78a8a539c53dd.json.gz",
+      "answerDirectory": "reviewed-banks",
       "funVersion": 7,
       "groupProfileVersion": 1,
       "dailyEligible": true,
       "partyEligible": true,
       "mixed": true,
       "ranking": "group-familiarity-v1",
-      "sha256": "8f97c0938e1ae5ead060d6dd5ab058ad3fad85833edd382a575363f91302af2b",
-      "downloadBytes": 1713,
+      "sha256": "01d78a8a539c53dd455286d4ab5c2a169d7414c39bb6ee277ebb77f8d278db69",
+      "downloadBytes": 1831,
       "tiers": {
         "85": 78,
         "60": 57,
-        "30": 24,
+        "30": 41,
         "10": 6,
         "100": 1
-      }
+      },
+      "answerRepairVersion": 1
     },
     {
       "id": "group-q002",
@@ -164,32 +165,33 @@
       "topic": "VIDEO GAME WHERE YOU CAN DRIVE A CAR OR KART",
       "group": "group-approved-gaming",
       "source": "Curated group-approved inventory; source links in question-research.js and retained game/sports/food/science snapshots. See GROUP-POOL.md.",
-      "answerCount": 1881,
-      "familiarCount": 123,
-      "identityHash": "f3e0cc653f397ac35c5da934fcf5194139b0fc86f38657dccdd30bda10c44d79",
+      "answerCount": 1891,
+      "familiarCount": 133,
+      "identityHash": "93d0e584908da2c15bedafcb854037a5d695d9ed114b64dd98dc8b38c7a3fd95",
       "predicate": {
         "kind": "approved-recipe",
         "review": "q002"
       },
       "reviewId": "q002",
       "scope": "The driving must be part of the unmodded game, not a fan modification.",
-      "answerFile": "group-q002.d51dad7e6a2f08f4.json.gz",
-      "answerDirectory": "group-banks",
+      "answerFile": "group-q002.11010e99642d2901.json.gz",
+      "answerDirectory": "reviewed-banks",
       "funVersion": 7,
       "groupProfileVersion": 1,
       "dailyEligible": true,
       "partyEligible": true,
       "mixed": true,
       "ranking": "group-familiarity-v1",
-      "sha256": "d51dad7e6a2f08f4fd7d1d82c334a61cc11c6126895aafce96e5d4de8f215f59",
-      "downloadBytes": 17399,
+      "sha256": "11010e99642d2901acfa8d8598d4e4e80bf988dab8439023458c8987fd68cc6f",
+      "downloadBytes": 17467,
       "tiers": {
         "85": 1500,
         "60": 257,
-        "30": 78,
+        "30": 88,
         "10": 45,
         "100": 1
-      }
+      },
+      "answerRepairVersion": 1
     },
     {
       "id": "group-q003",
@@ -232,32 +234,33 @@
       "topic": "VIDEO GAME YOU CAN PLAY WITH SOMEONE ON THE SAME SCREEN OR CONSOLE",
       "group": "group-approved-gaming",
       "source": "Curated group-approved inventory; source links in question-research.js and retained game/sports/food/science snapshots. See GROUP-POOL.md.",
-      "answerCount": 3376,
-      "familiarCount": 239,
-      "identityHash": "a55ce932abe320be33cba39a35f5351f783090f52545f21401c497749ef3ecf3",
+      "answerCount": 3398,
+      "familiarCount": 261,
+      "identityHash": "e9ab80512bd26977c7f3746e29629df65bc6be77924a757264ec2b2d5b922782",
       "predicate": {
         "kind": "approved-recipe",
         "review": "q004"
       },
       "reviewId": "q004",
       "scope": "Local co-op, split-screen and shared-screen multiplayer count.",
-      "answerFile": "group-q004.db7dfc7144651299.json.gz",
-      "answerDirectory": "group-banks",
+      "answerFile": "group-q004.61600742a2b9f344.json.gz",
+      "answerDirectory": "reviewed-banks",
       "funVersion": 7,
       "groupProfileVersion": 1,
       "dailyEligible": true,
       "partyEligible": true,
       "mixed": true,
       "ranking": "group-familiarity-v1",
-      "sha256": "db7dfc714465129969132e3bb26b73f4460e0d83387356e6f5486880f9114c3d",
-      "downloadBytes": 32118,
+      "sha256": "61600742a2b9f3449f25ea0de331c57552a24d07002bd5d0f2efcfb2d77ca097",
+      "downloadBytes": 32251,
       "tiers": {
         "85": 2649,
         "60": 487,
-        "30": 155,
+        "30": 177,
         "10": 84,
         "100": 1
-      }
+      },
+      "answerRepairVersion": 1
     },
     {
       "id": "group-q005",
@@ -377,23 +380,24 @@
       },
       "reviewId": "q008",
       "scope": "Named consumables, pickups and healing items count; name the actual item.",
-      "answerFile": "group-q008.8e67eb6101ae0fc3.json.gz",
-      "answerDirectory": "group-banks",
+      "answerFile": "group-q008.40b0169f6e7f66c9.json.gz",
+      "answerDirectory": "reviewed-banks",
       "funVersion": 7,
       "groupProfileVersion": 1,
       "dailyEligible": true,
       "partyEligible": true,
       "mixed": true,
       "ranking": "group-familiarity-v1",
-      "sha256": "8e67eb6101ae0fc34624119820750b7dc4c020de89f6b580d17bfda3a93b4ec3",
-      "downloadBytes": 1212,
+      "sha256": "40b0169f6e7f66c98fd5440d43eecb4e9426bbc480a51509916bc37d32e59eb7",
+      "downloadBytes": 1218,
       "tiers": {
         "60": 83,
         "85": 46,
         "30": 30,
         "10": 6,
         "100": 1
-      }
+      },
+      "answerRepairVersion": 1
     },
     {
       "id": "group-q009",
@@ -470,32 +474,30 @@
       "topic": "MINECRAFT MOB THAT CAN ATTACK A PLAYER",
       "group": "group-approved-gaming",
       "source": "Curated group-approved inventory; source links in question-research.js and retained game/sports/food/science snapshots. See GROUP-POOL.md.",
-      "answerCount": 43,
-      "familiarCount": 10,
-      "identityHash": "5ecc7267b6e216334b38a234dc4fc1d9e19375e393d5d2ac4bb20183f068e1df",
+      "answerCount": 52,
+      "familiarCount": 48,
+      "identityHash": "81a5fecc5546d54d21fae0947f4feeaf6aa25fa5b387a0e36864a2f37ba0be22",
       "predicate": {
         "kind": "approved-recipe",
         "review": "q011"
       },
       "reviewId": "q011",
-      "scope": "Vanilla hostile mobs and neutral mobs that attack when provoked count.",
-      "answerFile": "group-q011.4a12e96df48526fb.json.gz",
-      "answerDirectory": "group-banks",
+      "scope": "Hostile, neutral and defensive mobs that can attack a player count. Released vanilla Java or Bedrock gameplay; non-mob entities, command-only mobs and passive mounts do not count.",
+      "answerFile": "group-q011.c36029a6271b0509.json.gz",
+      "answerDirectory": "reviewed-banks",
       "funVersion": 7,
       "groupProfileVersion": 1,
       "dailyEligible": true,
       "partyEligible": true,
       "mixed": true,
       "ranking": "group-familiarity-v1",
-      "sha256": "4a12e96df48526fbe1a18643c58b20b3e5ee557b0c407cb0e9b80075612e5ecc",
-      "downloadBytes": 327,
+      "sha256": "c36029a6271b050981bd330a67aebaa7f996445553c429af1f5207bc30a48a6a",
+      "downloadBytes": 352,
       "tiers": {
-        "60": 9,
-        "85": 23,
-        "100": 1,
-        "10": 6,
-        "30": 4
-      }
+        "30": 48,
+        "60": 4
+      },
+      "answerRepairVersion": 1
     },
     {
       "id": "group-q012",
@@ -504,32 +506,33 @@
       "topic": "METHING A PLAYER CAN EAT IN MINECRAFT",
       "group": "group-approved-gaming",
       "source": "Curated group-approved inventory; source links in question-research.js and retained game/sports/food/science snapshots. See GROUP-POOL.md.",
-      "answerCount": 42,
+      "answerCount": 41,
       "familiarCount": 12,
-      "identityHash": "243cb18e6874c9c0b9e0a1889d6cb94d988dee44b70a038c00b663264f32f066",
+      "identityHash": "ae439c785a21a2811fd99ce7022b398ee7bb273831e2acf7cb41c210ca36d67e",
       "predicate": {
         "kind": "approved-recipe",
         "review": "q012"
       },
       "reviewId": "q012",
       "scope": "Vanilla food items count, including foods with negative effects.",
-      "answerFile": "group-q012.f51f229504ca05ab.json.gz",
-      "answerDirectory": "group-banks",
+      "answerFile": "group-q012.01efeef6fa9114a1.json.gz",
+      "answerDirectory": "reviewed-banks",
       "funVersion": 7,
       "groupProfileVersion": 1,
       "dailyEligible": true,
       "partyEligible": true,
       "mixed": true,
       "ranking": "group-familiarity-v1",
-      "sha256": "f51f229504ca05ab08a57e279dfe5f4e914fe69edf71a1c19f9f160526e3a42c",
-      "downloadBytes": 353,
+      "sha256": "01efeef6fa9114a178af151c7d4c9a41188cf2c9c112848f66cc66a47b5b7e96",
+      "downloadBytes": 355,
       "tiers": {
         "30": 6,
-        "60": 21,
+        "60": 20,
         "85": 8,
         "10": 6,
         "100": 1
-      }
+      },
+      "answerRepairVersion": 1
     },
     {
       "id": "group-q013",
@@ -640,32 +643,33 @@
       "topic": "WEAPON THAT HAS APPEARED IN FORTNITE BATTLE ROYALE",
       "group": "group-approved-gaming",
       "source": "Curated group-approved inventory; source links in question-research.js and retained game/sports/food/science snapshots. See GROUP-POOL.md.",
-      "answerCount": 175,
-      "familiarCount": 9,
-      "identityHash": "5e67d5c1ec50487511b2a174f272e57078bc2e2e487d68c6456ea3de27f4bdaf",
+      "answerCount": 176,
+      "familiarCount": 10,
+      "identityHash": "ea6864f0d63ad472cfe21d0f661d9fb940950ad6cc5281131226782a9dc14386",
       "predicate": {
         "kind": "approved-recipe",
         "review": "q016"
       },
       "reviewId": "q016",
       "scope": "Any season counts; ordinary loot, Mythic and vaulted weapons all count.",
-      "answerFile": "group-q016.e94de2b973789404.json.gz",
-      "answerDirectory": "group-banks",
+      "answerFile": "group-q016.2fabbff644a6d43d.json.gz",
+      "answerDirectory": "reviewed-banks",
       "funVersion": 7,
       "groupProfileVersion": 1,
       "dailyEligible": true,
       "partyEligible": true,
       "mixed": true,
       "ranking": "group-familiarity-v1",
-      "sha256": "e94de2b9737894046701984ffa07c9897ea47c46cab626f90a076454239e357a",
-      "downloadBytes": 1427,
+      "sha256": "2fabbff644a6d43df1dfa828c61ca9244cdbcd1ad46f82f43e0f18d6f464dcf3",
+      "downloadBytes": 1432,
       "tiers": {
         "85": 77,
         "10": 6,
         "60": 88,
-        "30": 3,
+        "30": 4,
         "100": 1
-      }
+      },
+      "answerRepairVersion": 1
     },
     {
       "id": "group-q017",
@@ -683,23 +687,24 @@
       },
       "reviewId": "q017",
       "scope": "Characters from Mario games and their spin-offs count; actor names do not.",
-      "answerFile": "group-q017.3b50a812d6339b4b.json.gz",
-      "answerDirectory": "group-banks",
+      "answerFile": "group-q017.1390a22aa6a2f26a.json.gz",
+      "answerDirectory": "reviewed-banks",
       "funVersion": 7,
       "groupProfileVersion": 1,
       "dailyEligible": true,
       "partyEligible": true,
       "mixed": true,
       "ranking": "group-familiarity-v1",
-      "sha256": "3b50a812d6339b4bca6fe24d47c6e33b5e01766a77c0e06191032598ae3b4557",
-      "downloadBytes": 1108,
+      "sha256": "1390a22aa6a2f26a5f13afd36c74d958c974c58f0fa828d9d0820dc5e0784727",
+      "downloadBytes": 1112,
       "tiers": {
         "85": 124,
         "60": 30,
         "30": 17,
         "10": 6,
         "100": 1
-      }
+      },
+      "answerRepairVersion": 1
     },
     {
       "id": "group-q018",
@@ -749,23 +754,24 @@
       },
       "reviewId": "q019",
       "scope": "The base game and Shadow of the Erdtree count; common short boss names would be aliases.",
-      "answerFile": "group-q019.e8ce53a4cc6fe7ce.json.gz",
-      "answerDirectory": "group-banks",
+      "answerFile": "group-q019.fa287191a585a323.json.gz",
+      "answerDirectory": "reviewed-banks",
       "funVersion": 7,
       "groupProfileVersion": 1,
       "dailyEligible": true,
       "partyEligible": true,
       "mixed": true,
       "ranking": "group-familiarity-v1",
-      "sha256": "e8ce53a4cc6fe7ce5833189325425078a5cc34a219135cc011273b2824b82d0c",
-      "downloadBytes": 1771,
+      "sha256": "fa287191a585a323cf6e7665d69a88dbf6f5f71622f157f76e33914ec3b584ae",
+      "downloadBytes": 1789,
       "tiers": {
         "85": 127,
         "60": 27,
         "30": 5,
         "100": 1,
         "10": 6
-      }
+      },
+      "answerRepairVersion": 1
     },
     {
       "id": "group-q020",
@@ -842,32 +848,33 @@
       "topic": " ATHLETE WHO HAS PLAYED PROFESSIONALLY IN A TEAM SPORT",
       "group": "group-approved-sports",
       "source": "Curated group-approved inventory; source links in question-research.js and retained game/sports/food/science snapshots. See GROUP-POOL.md.",
-      "answerCount": 78222,
-      "familiarCount": 23686,
-      "identityHash": "a3b2d4c22a69f0b6b4c2fd7bb2a5dcb85969acd65a8c79556deb29a45c09c1c3",
+      "answerCount": 78585,
+      "familiarCount": 24049,
+      "identityHash": "b64353d7ee7d0a42d99c594af8c7ec30e618003c65bc9924a1a1189f17f9c72b",
       "predicate": {
         "kind": "approved-recipe",
         "review": "q022"
       },
       "reviewId": "q022",
       "scope": "Men's and women's sports, any country and any era count; no roster-year restriction.",
-      "answerFile": "group-q022.87e12d36bd9354a0.json.gz",
-      "answerDirectory": "group-banks",
+      "answerFile": "group-q022.67cd15fb722933fa.json.gz",
+      "answerDirectory": "reviewed-banks",
       "funVersion": 7,
       "groupProfileVersion": 1,
       "dailyEligible": true,
       "partyEligible": true,
       "mixed": true,
       "ranking": "group-familiarity-v1",
-      "sha256": "87e12d36bd9354a0a09aa1881a8cd94662aa447ab9f081cfaab1dba0c238008a",
-      "downloadBytes": 666321,
+      "sha256": "67cd15fb722933fa7fd6e5715027df37eee8b3ca64f2d27fcb28e6cbfee0dd7f",
+      "downloadBytes": 670407,
       "tiers": {
-        "30": 21139,
+        "30": 21498,
         "60": 33811,
         "85": 20722,
-        "10": 2547,
+        "10": 2551,
         "100": 3
-      }
+      },
+      "answerRepairVersion": 1
     },
     {
       "id": "group-q023",
@@ -1079,32 +1086,33 @@
       "topic": "PROFESSIONAL SPORTS TEAM WHOSE NAME INCLUDES AN ANIMAL",
       "group": "group-approved-sports",
       "source": "Curated group-approved inventory; source links in question-research.js and retained game/sports/food/science snapshots. See GROUP-POOL.md.",
-      "answerCount": 97,
+      "answerCount": 96,
       "familiarCount": 9,
-      "identityHash": "b650df763858ad34e9f87e6f8ce8a91f5be695ecebd9a6287920aeda31dbbef0",
+      "identityHash": "34a10a13c405e190923e2be2289df21f7a2aca547e041bcc3072307b811212aa",
       "predicate": {
         "kind": "approved-recipe",
         "review": "q029"
       },
       "reviewId": "q029",
-      "scope": "Any professional league or country counts; the animal must appear in the team name.",
-      "answerFile": "group-q029.f282743f49a30fa4.json.gz",
-      "answerDirectory": "group-banks",
+      "scope": "The team nickname must name an animal or animal group. A city name alone, such as Buffalo, does not count.",
+      "answerFile": "group-q029.f46b7ee1d14afa93.json.gz",
+      "answerDirectory": "reviewed-banks",
       "funVersion": 7,
       "groupProfileVersion": 1,
       "dailyEligible": true,
       "partyEligible": true,
       "mixed": true,
       "ranking": "group-familiarity-v1",
-      "sha256": "f282743f49a30fa4d8b81317e2854f6fb71df0ad5e15da74fa403e72d43dd107",
-      "downloadBytes": 965,
+      "sha256": "f46b7ee1d14afa93ed37fc980ad0f55cf5396b9168bee7d5a7fdfd77558785e7",
+      "downloadBytes": 953,
       "tiers": {
         "85": 33,
-        "60": 54,
+        "60": 53,
         "10": 6,
         "30": 3,
         "100": 1
-      }
+      },
+      "answerRepairVersion": 1
     },
     {
       "id": "group-q030",
@@ -1215,32 +1223,33 @@
       "topic": "MOVIE THAT IS A SEQUEL TO ANOTHER MOVIE",
       "group": "group-approved-culture",
       "source": "Curated group-approved inventory; source links in question-research.js and retained game/sports/food/science snapshots. See GROUP-POOL.md.",
-      "answerCount": 1333,
-      "familiarCount": 341,
-      "identityHash": "57af208c96f25ea71d0bcd71ee5619d8e028ae5133be5507b39527a8e00b2ac8",
+      "answerCount": 1345,
+      "familiarCount": 353,
+      "identityHash": "095974d84db24f5dfe147c4c397293ad40088012a244c36b5a69f6df7acb2268",
       "predicate": {
         "kind": "approved-recipe",
         "review": "q033"
       },
       "reviewId": "q033",
       "scope": "Direct sequels count, even if there is no number in the title.",
-      "answerFile": "group-q033.fd4df7a0cf0b3d99.json.gz",
-      "answerDirectory": "group-banks",
+      "answerFile": "group-q033.182d2a613adeffff.json.gz",
+      "answerDirectory": "reviewed-banks",
       "funVersion": 7,
       "groupProfileVersion": 1,
       "dailyEligible": true,
       "partyEligible": true,
       "mixed": true,
       "ranking": "group-familiarity-v1",
-      "sha256": "fd4df7a0cf0b3d993e9883afa94dff9c5f7a190d50a6b5a6aa12a04be0ba5b67",
-      "downloadBytes": 19082,
+      "sha256": "182d2a613adeffffaa06f882b996ae5167633799e1096658f9ab829c0f86af3d",
+      "downloadBytes": 19179,
       "tiers": {
-        "30": 295,
+        "30": 307,
         "60": 341,
         "85": 650,
         "10": 46,
         "100": 1
-      }
+      },
+      "answerRepairVersion": 1
     },
     {
       "id": "group-q034",
@@ -1317,32 +1326,33 @@
       "topic": " ANIMATED MOVIE WITH TALKING ANIMAL CHARACTERS",
       "group": "group-approved-culture",
       "source": "Curated group-approved inventory; source links in question-research.js and retained game/sports/food/science snapshots. See GROUP-POOL.md.",
-      "answerCount": 49,
-      "familiarCount": 15,
-      "identityHash": "69cded224a31f52e276f5516c2f68fe47faa5d412931461f33337b8cee434ab1",
+      "answerCount": 153,
+      "familiarCount": 123,
+      "identityHash": "99b6ef27344bf5cc548f726d0cf5de8fdb29e5694aa6cb5e294b7a5167e2e9e6",
       "predicate": {
         "kind": "approved-recipe",
         "review": "q036"
       },
       "reviewId": "q036",
-      "scope": "Animal characters that speak qualify; they do not have to be the main character.",
-      "answerFile": "group-q036.b1cf7bb22acf076a.json.gz",
-      "answerDirectory": "group-banks",
+      "scope": "Animated features and shorts with at least one speaking animal character count, including hybrids with animation. Dialogue through a translation device counts; silent animal sidekicks alone do not.",
+      "answerFile": "group-q036.457c23834a15e733.json.gz",
+      "answerDirectory": "reviewed-banks",
       "funVersion": 7,
       "groupProfileVersion": 1,
       "dailyEligible": true,
       "partyEligible": true,
       "mixed": true,
       "ranking": "group-familiarity-v1",
-      "sha256": "b1cf7bb22acf076a7c49f1d93a7ce7a865112bd9350de034854ffe3f30b458d9",
-      "downloadBytes": 991,
+      "sha256": "457c23834a15e733f7b5f4b662f723472dccfa72ca31b2d69944c9c29ec9a95d",
+      "downloadBytes": 1656,
       "tiers": {
-        "85": 22,
-        "60": 11,
-        "30": 9,
-        "10": 6,
+        "30": 113,
+        "85": 21,
+        "60": 8,
+        "10": 10,
         "100": 1
-      }
+      },
+      "answerRepairVersion": 1
     },
     {
       "id": "group-q037",
@@ -1351,32 +1361,33 @@
       "topic": "SUPERHERO MOVIE",
       "group": "group-approved-culture",
       "source": "Curated group-approved inventory; source links in question-research.js and retained game/sports/food/science snapshots. See GROUP-POOL.md.",
-      "answerCount": 819,
-      "familiarCount": 161,
-      "identityHash": "787b7d9324bdaec158eb31dd1f658ccf6b77662b2c850e217332fd9ba454e585",
+      "answerCount": 821,
+      "familiarCount": 163,
+      "identityHash": "c74a2be7b5ac509e522c094a0cba64cdfc2689061cd3fbfded323b55490fb585",
       "predicate": {
         "kind": "approved-recipe",
         "review": "q037"
       },
       "reviewId": "q037",
       "scope": "Live action and animation count; heroes from any publisher or original story count.",
-      "answerFile": "group-q037.468af3dda453594e.json.gz",
-      "answerDirectory": "group-banks",
+      "answerFile": "group-q037.5eae56f6bbc7db0d.json.gz",
+      "answerDirectory": "reviewed-banks",
       "funVersion": 7,
       "groupProfileVersion": 1,
       "dailyEligible": true,
       "partyEligible": true,
       "mixed": true,
       "ranking": "group-familiarity-v1",
-      "sha256": "468af3dda453594e891275908e02684d1ac2076637a7589a6ee3dbacb142a902",
-      "downloadBytes": 13131,
+      "sha256": "5eae56f6bbc7db0deec40828d3b63f4b6b0b6550e22f447adc1dea12f4e797b1",
+      "downloadBytes": 13142,
       "tiers": {
         "85": 496,
         "10": 61,
         "60": 161,
-        "30": 100,
+        "30": 102,
         "100": 1
-      }
+      },
+      "answerRepairVersion": 1
     },
     {
       "id": "group-q038",
@@ -1453,32 +1464,33 @@
       "topic": "MOVIE OR TV CHARACTER WITH SUPERPOWERS",
       "group": "group-approved-culture",
       "source": "Curated group-approved inventory; source links in question-research.js and retained game/sports/food/science snapshots. See GROUP-POOL.md.",
-      "answerCount": 304,
-      "familiarCount": 37,
-      "identityHash": "d54a4524aa488e3364bd20ff44931453d347869ab1905a50e6e98e6ebc86b72c",
+      "answerCount": 312,
+      "familiarCount": 45,
+      "identityHash": "1e041221c92153bb65587e724ecd0df094639be4b605102d8f000bd73ea39ba7",
       "predicate": {
         "kind": "approved-recipe",
         "review": "q040"
       },
       "reviewId": "q040",
       "scope": "A named character must have a supernatural or superhuman ability in the story.",
-      "answerFile": "group-q040.f65eb286292754a2.json.gz",
-      "answerDirectory": "group-banks",
+      "answerFile": "group-q040.fcb822e760047f03.json.gz",
+      "answerDirectory": "reviewed-banks",
       "funVersion": 7,
       "groupProfileVersion": 1,
       "dailyEligible": true,
       "partyEligible": true,
       "mixed": true,
       "ranking": "group-familiarity-v1",
-      "sha256": "f65eb286292754a27939cdd27b11de73dce4bcb61aa7f4ddc91ddfbb4121f4a3",
-      "downloadBytes": 2182,
+      "sha256": "fcb822e760047f033998a8f30ac3022effbe9b9555faafeede5d6f8bbd14096e",
+      "downloadBytes": 2249,
       "tiers": {
         "85": 162,
+        "30": 39,
         "60": 104,
-        "30": 31,
         "10": 6,
         "100": 1
-      }
+      },
+      "answerRepairVersion": 1
     },
     {
       "id": "group-q041",
@@ -1521,32 +1533,33 @@
       "topic": "FICTIONAL ANIMAL CHARACTER",
       "group": "group-approved-culture",
       "source": "Curated group-approved inventory; source links in question-research.js and retained game/sports/food/science snapshots. See GROUP-POOL.md.",
-      "answerCount": 346,
-      "familiarCount": 45,
-      "identityHash": "1b74dc591191e0a43f7925d0311bb5ed638bcfc50bb09da453f2449b81dc688a",
+      "answerCount": 354,
+      "familiarCount": 53,
+      "identityHash": "107a412c335e7a65185b53f32ee942657c77a5fc68a01232eacd2c7da8a10dfb",
       "predicate": {
         "kind": "approved-recipe",
         "review": "q042"
       },
       "reviewId": "q042",
       "scope": "Named animal characters from any published story count; real celebrity pets do not.",
-      "answerFile": "group-q042.2980e5c62f5af2db.json.gz",
-      "answerDirectory": "group-banks",
+      "answerFile": "group-q042.34b8e25adf0148d2.json.gz",
+      "answerDirectory": "reviewed-banks",
       "funVersion": 7,
       "groupProfileVersion": 1,
       "dailyEligible": true,
       "partyEligible": true,
       "mixed": true,
       "ranking": "group-familiarity-v1",
-      "sha256": "2980e5c62f5af2dbe1eddc448a3532b458d99c80432c32a4798f0af27de725dc",
-      "downloadBytes": 2156,
+      "sha256": "34b8e25adf0148d21cb7c7ddadbacace6765e2f17790fb3588651ede1375246c",
+      "downloadBytes": 2224,
       "tiers": {
         "60": 140,
         "85": 160,
-        "30": 39,
+        "30": 47,
         "10": 6,
         "100": 1
-      }
+      },
+      "answerRepairVersion": 1
     },
     {
       "id": "group-q043",
@@ -1589,32 +1602,33 @@
       "topic": "VILLAIN FROM A CHILDREN'S ANIMATED TV SERIES",
       "group": "group-approved-culture",
       "source": "Curated group-approved inventory; source links in question-research.js and retained game/sports/food/science snapshots. See GROUP-POOL.md.",
-      "answerCount": 289,
-      "familiarCount": 36,
-      "identityHash": "336d732e36f6a146ae1787fa16517b4e92c2e35d41847aa34bbc500524155279",
+      "answerCount": 290,
+      "familiarCount": 37,
+      "identityHash": "c774e89b2bfab339dd07199d2956f2463ef0d8a75ad698b0fa80654b4d62e16c",
       "predicate": {
         "kind": "approved-recipe",
         "review": "q044"
       },
       "reviewId": "q044",
       "scope": "Named antagonists count even if they sometimes help the heroes.",
-      "answerFile": "group-q044.b43f268ebc7b32a3.json.gz",
-      "answerDirectory": "group-banks",
+      "answerFile": "group-q044.9b79aa15e3bc4944.json.gz",
+      "answerDirectory": "reviewed-banks",
       "funVersion": 7,
       "groupProfileVersion": 1,
       "dailyEligible": true,
       "partyEligible": true,
       "mixed": true,
       "ranking": "group-familiarity-v1",
-      "sha256": "b43f268ebc7b32a378a82025df2e384117301957eca1b12700eaa8abd3bf41e7",
-      "downloadBytes": 2090,
+      "sha256": "9b79aa15e3bc4944a863a606451d95bbd3d69870e55e51001ffb78d59d172ded",
+      "downloadBytes": 2120,
       "tiers": {
         "85": 179,
         "60": 73,
         "10": 6,
-        "30": 30,
+        "30": 31,
         "100": 1
-      }
+      },
+      "answerRepairVersion": 1
     },
     {
       "id": "group-q045",
@@ -1691,32 +1705,33 @@
       "topic": "SONG WITH A PERSON'S NAME IN ITS TITLE",
       "group": "group-approved-music",
       "source": "Curated group-approved inventory; source links in question-research.js and retained game/sports/food/science snapshots. See GROUP-POOL.md.",
-      "answerCount": 524,
-      "familiarCount": 164,
-      "identityHash": "61facce0510859df7d68baf5b8f9886437b46733df7eecac5efba20ec29dc455",
+      "answerCount": 527,
+      "familiarCount": 167,
+      "identityHash": "2825bbfb4bf850a38c007920189ffd2179444e1bfcbaa8aa06e0711464b1dcf4",
       "predicate": {
         "kind": "approved-recipe",
         "review": "q047"
       },
       "reviewId": "q047",
       "scope": "Released songs count; the name can be a real person or a fictional person.",
-      "answerFile": "group-q047.b59da248793d3f3f.json.gz",
-      "answerDirectory": "group-banks",
+      "answerFile": "group-q047.2e8a98f69299db46.json.gz",
+      "answerDirectory": "reviewed-banks",
       "funVersion": 7,
       "groupProfileVersion": 1,
       "dailyEligible": true,
       "partyEligible": true,
       "mixed": true,
       "ranking": "group-familiarity-v1",
-      "sha256": "b59da248793d3f3f448510404380b89d849616b9474dfff830d5d9dc54af0b91",
-      "downloadBytes": 6004,
+      "sha256": "2e8a98f69299db4686369fa56bf91d202b27807260ad2ac875a567904f7cc8fd",
+      "downloadBytes": 6022,
       "tiers": {
-        "30": 145,
+        "30": 148,
         "60": 257,
         "85": 102,
         "10": 19,
         "100": 1
-      }
+      },
+      "answerRepairVersion": 1
     },
     {
       "id": "group-q048",
@@ -1725,32 +1740,33 @@
       "topic": "SONG WITH A COLOR IN ITS TITLE",
       "group": "group-approved-music",
       "source": "Curated group-approved inventory; source links in question-research.js and retained game/sports/food/science snapshots. See GROUP-POOL.md.",
-      "answerCount": 963,
-      "familiarCount": 355,
-      "identityHash": "64114519748df0141a47945ede386fed9b3e3e838ac4cccc075b534a356dbb16",
+      "answerCount": 966,
+      "familiarCount": 358,
+      "identityHash": "58b8b62be82551dea7650e7e2ce43eb288f1606762e949313d9390a50ba09f9b",
       "predicate": {
         "kind": "approved-recipe",
         "review": "q048"
       },
       "reviewId": "q048",
       "scope": "Ordinary color words in released song titles count; color names used as surnames need context.",
-      "answerFile": "group-q048.9ef062d39ad86219.json.gz",
-      "answerDirectory": "group-banks",
+      "answerFile": "group-q048.6cd228e771c8fdd4.json.gz",
+      "answerDirectory": "reviewed-banks",
       "funVersion": 7,
       "groupProfileVersion": 1,
       "dailyEligible": true,
       "partyEligible": true,
       "mixed": true,
       "ranking": "group-familiarity-v1",
-      "sha256": "9ef062d39ad862192114d1e07714430e92dcfa5bdb9af6bb00d76c1c0f83f78c",
-      "downloadBytes": 10754,
+      "sha256": "6cd228e771c8fdd49b6c76df852d9c578d03ac3c6960cef0339ca1c1928ae14d",
+      "downloadBytes": 10782,
       "tiers": {
         "60": 425,
-        "30": 325,
+        "30": 326,
         "85": 182,
-        "10": 30,
+        "10": 32,
         "100": 1
-      }
+      },
+      "answerRepairVersion": 1
     },
     {
       "id": "group-q049",
@@ -1972,23 +1988,24 @@
       },
       "reviewId": "q057",
       "scope": "Established restaurant toppings count worldwide; you do not need to name a pizza brand.",
-      "answerFile": "group-q057.501763a2cbdaf73d.json.gz",
-      "answerDirectory": "group-banks",
+      "answerFile": "group-q057.c830888dc25bd2eb.json.gz",
+      "answerDirectory": "reviewed-banks",
       "funVersion": 7,
       "groupProfileVersion": 1,
       "dailyEligible": true,
       "partyEligible": true,
       "mixed": true,
       "ranking": "group-familiarity-v1",
-      "sha256": "501763a2cbdaf73d0a28d3d9cdcda268fd8dff5afc2d1de01befdc14a3b3a5fd",
-      "downloadBytes": 1262,
+      "sha256": "c830888dc25bd2eb5e9c895fff361b208ce1db871616f0d6704b4ea2ee4ebe3b",
+      "downloadBytes": 1278,
       "tiers": {
         "60": 90,
         "85": 80,
         "30": 20,
         "100": 1,
         "10": 6
-      }
+      },
+      "answerRepairVersion": 1
     },
     {
       "id": "group-q058",
@@ -2482,23 +2499,24 @@
       },
       "reviewId": "q072",
       "scope": "The animal must normally use both habitats, not merely survive a brief swim.",
-      "answerFile": "group-q072.9cd730d1e292edbd.json.gz",
-      "answerDirectory": "group-banks",
+      "answerFile": "group-q072.1e804e9ae1c40b55.json.gz",
+      "answerDirectory": "reviewed-banks",
       "funVersion": 7,
       "groupProfileVersion": 1,
       "dailyEligible": true,
       "partyEligible": true,
       "mixed": true,
       "ranking": "group-familiarity-v1",
-      "sha256": "9cd730d1e292edbda671ef7fef2ff9702f2fd725e1f4d632b007d1e6300bebcf",
-      "downloadBytes": 1687,
+      "sha256": "1e804e9ae1c40b55a816fc1ec0699144ee54deabb1df6a95ce4b9d37ecb1b41f",
+      "downloadBytes": 1691,
       "tiers": {
         "85": 141,
         "60": 88,
         "30": 17,
         "10": 6,
         "100": 1
-      }
+      },
+      "answerRepairVersion": 1
     },
     {
       "id": "group-q073",
@@ -2507,32 +2525,33 @@
       "topic": "KIND OF SHARK OR RAY",
       "group": "group-approved-nature",
       "source": "Curated group-approved inventory; source links in question-research.js and retained game/sports/food/science snapshots. See GROUP-POOL.md.",
-      "answerCount": 523,
-      "familiarCount": 13,
-      "identityHash": "92bc9b40c639f963a7b9dca5c164bc0fd77f50c01ccdd20583137d7b17712f11",
+      "answerCount": 524,
+      "familiarCount": 14,
+      "identityHash": "4539e9fc3b6ff245be5ddb8db894d42b56e576f3558d4cd4ed980321a9ed683a",
       "predicate": {
         "kind": "approved-recipe",
         "review": "q073"
       },
       "reviewId": "q073",
       "scope": "Established groups and species count; familiar common names would be accepted.",
-      "answerFile": "group-q073.72c4a90dd59568ad.json.gz",
-      "answerDirectory": "group-banks",
+      "answerFile": "group-q073.62c12c62c44d8454.json.gz",
+      "answerDirectory": "reviewed-banks",
       "funVersion": 7,
       "groupProfileVersion": 1,
       "dailyEligible": true,
       "partyEligible": true,
       "mixed": true,
       "ranking": "group-familiarity-v1",
-      "sha256": "72c4a90dd59568ad6e1891f542f716c260608f8a536ed563a24c047f5b051586",
-      "downloadBytes": 6888,
+      "sha256": "62c12c62c44d84540a5d6ebc905a5ead2a960096bc503da76dd41830ba8e0cb2",
+      "downloadBytes": 6905,
       "tiers": {
         "85": 429,
         "60": 80,
-        "30": 7,
+        "30": 8,
         "10": 6,
         "100": 1
-      }
+      },
+      "answerRepairVersion": 1
     },
     {
       "id": "group-q074",
@@ -2643,32 +2662,33 @@
       "topic": "PLANT PEOPLE EAT",
       "group": "group-approved-nature",
       "source": "Curated group-approved inventory; source links in question-research.js and retained game/sports/food/science snapshots. See GROUP-POOL.md.",
-      "answerCount": 230,
+      "answerCount": 222,
       "familiarCount": 30,
-      "identityHash": "a9e2f37e8aff68e42b159b2520f94e6becc24f6c83b6fe433cc781e8adb0dab7",
+      "identityHash": "df5270f766bf16e653b8b9330a574cdaa69db31ffd76b3ab28ec65b0e4368111",
       "predicate": {
         "kind": "approved-recipe",
         "review": "q077"
       },
       "reviewId": "q077",
       "scope": "Named edible plants count, including those eaten for fruit, leaves, roots or seeds; fungi are separate.",
-      "answerFile": "group-q077.490d9b37b312f98b.json.gz",
-      "answerDirectory": "group-banks",
+      "answerFile": "group-q077.2f16854f9bf5798a.json.gz",
+      "answerDirectory": "reviewed-banks",
       "funVersion": 7,
       "groupProfileVersion": 1,
       "dailyEligible": true,
       "partyEligible": true,
       "mixed": true,
       "ranking": "group-familiarity-v1",
-      "sha256": "490d9b37b312f98b9144b6487722bc5d482e2f9237951d58d8a82dff014a2c2e",
-      "downloadBytes": 1385,
+      "sha256": "2f16854f9bf5798a3ac0359e594049c9d4bc181963e8321cec486de78c9a898c",
+      "downloadBytes": 1393,
       "tiers": {
-        "85": 130,
+        "85": 124,
         "10": 20,
-        "60": 68,
+        "60": 66,
         "30": 10,
         "100": 2
-      }
+      },
+      "answerRepairVersion": 1
     },
     {
       "id": "group-q078",
@@ -2788,23 +2808,24 @@
       },
       "reviewId": "q081",
       "scope": "The motor can be internal and does not need to move the entire device.",
-      "answerFile": "group-q081.a1f7128bb5fe33b0.json.gz",
-      "answerDirectory": "group-banks",
+      "answerFile": "group-q081.909dac09208735dd.json.gz",
+      "answerDirectory": "reviewed-banks",
       "funVersion": 7,
       "groupProfileVersion": 1,
       "dailyEligible": true,
       "partyEligible": true,
       "mixed": true,
       "ranking": "group-familiarity-v1",
-      "sha256": "a1f7128bb5fe33b0dc8554f272c45be5adefea538ab30f15677d913d9dba182b",
-      "downloadBytes": 1396,
+      "sha256": "909dac09208735dd59d31694c24c51f3dc5191ae722d00c6cb550ef10ddc03af",
+      "downloadBytes": 1402,
       "tiers": {
         "60": 91,
         "30": 31,
         "85": 49,
         "10": 6,
         "100": 1
-      }
+      },
+      "answerRepairVersion": 1
     },
     {
       "id": "group-q082",
@@ -2847,32 +2868,33 @@
       "topic": "WEATHER EVENT OR WEATHER CONDITION",
       "group": "group-approved-science",
       "source": "Curated group-approved inventory; source links in question-research.js and retained game/sports/food/science snapshots. See GROUP-POOL.md.",
-      "answerCount": 266,
-      "familiarCount": 28,
-      "identityHash": "52b8c9eb687a60417814bef5e9bccf2bf068b8180480a993aeaebbd280e74634",
+      "answerCount": 268,
+      "familiarCount": 30,
+      "identityHash": "d5348a47a2de0b9569d436411e614555c8eacb44c44039cc4bfa16a86a1f4538",
       "predicate": {
         "kind": "approved-recipe",
         "review": "q083"
       },
       "reviewId": "q083",
       "scope": "Common and established technical names count; fictional weather does not.",
-      "answerFile": "group-q083.dd020883c7637c5a.json.gz",
-      "answerDirectory": "group-banks",
+      "answerFile": "group-q083.0f28be0a48c34bc0.json.gz",
+      "answerDirectory": "reviewed-banks",
       "funVersion": 7,
       "groupProfileVersion": 1,
       "dailyEligible": true,
       "partyEligible": true,
       "mixed": true,
       "ranking": "group-familiarity-v1",
-      "sha256": "dd020883c7637c5aa4f598836afa3a6a9638d202ad3cdb42b039d70e728cc9d4",
-      "downloadBytes": 1145,
+      "sha256": "0f28be0a48c34bc03df05a5234bb1bb1bc05615a81cd4c418d59728bcd1a6883",
+      "downloadBytes": 1184,
       "tiers": {
-        "30": 21,
+        "30": 22,
         "85": 70,
         "60": 167,
-        "10": 7,
+        "10": 8,
         "100": 1
-      }
+      },
+      "answerRepairVersion": 1
     },
     {
       "id": "group-q084",
@@ -3051,32 +3073,33 @@
       "topic": " AMUSEMENT PARK OR THEME-PARK RESORT",
       "group": "group-approved-world",
       "source": "Curated group-approved inventory; source links in question-research.js and retained game/sports/food/science snapshots. See GROUP-POOL.md.",
-      "answerCount": 230,
-      "familiarCount": 23,
-      "identityHash": "73fa479c1d3fcb280d90b398bb3e5d2a3d2d1e49a8ae3c9177598c52ed53939c",
+      "answerCount": 231,
+      "familiarCount": 24,
+      "identityHash": "7c312a0937540085add033a3fb7b4d97542aaaced73dfbdba82ad5fa2cf49240",
       "predicate": {
         "kind": "approved-recipe",
         "review": "q089"
       },
       "reviewId": "q089",
       "scope": "Real parks and resort complexes count worldwide; familiar resort names would be accepted.",
-      "answerFile": "group-q089.8be8b83536d92cc6.json.gz",
-      "answerDirectory": "group-banks",
+      "answerFile": "group-q089.a0f82a8c9b46fc6d.json.gz",
+      "answerDirectory": "reviewed-banks",
       "funVersion": 7,
       "groupProfileVersion": 1,
       "dailyEligible": true,
       "partyEligible": true,
       "mixed": true,
       "ranking": "group-familiarity-v1",
-      "sha256": "8be8b83536d92cc6ba4c0088d2d5a1e9b7b45a9df88e4db889dc4a37489f8a7c",
-      "downloadBytes": 2029,
+      "sha256": "a0f82a8c9b46fc6de2bae0caa4b0490e5cdc9852bfa2e75432b19aac95559bbc",
+      "downloadBytes": 2034,
       "tiers": {
         "85": 147,
-        "30": 17,
+        "30": 18,
         "60": 59,
         "10": 6,
         "100": 1
-      }
+      },
+      "answerRepairVersion": 1
     },
     {
       "id": "group-q090",
@@ -3486,7 +3509,7 @@
     },
     {
       "id": "seasonings",
-      "prompt": "Name a culinary herb, spice, or named spice blend. Both individual seasonings and traditional mixtures count.",
+      "prompt": "Name a seasoning, including herbs, spices and named spice blends.",
       "family": "food",
       "topic": "BROAD FOOD",
       "group": "group-broad-food",
@@ -3498,23 +3521,24 @@
         "kind": "retained-bank",
         "id": "seasonings"
       },
-      "answerFile": "seasonings.b9fc938215779743.json.gz",
-      "answerDirectory": "group-banks",
+      "answerFile": "seasonings.c9af8dad27b31d9c.json.gz",
+      "answerDirectory": "reviewed-banks",
       "funVersion": 7,
       "groupProfileVersion": 1,
       "dailyEligible": true,
       "partyEligible": true,
       "mixed": true,
       "ranking": "group-familiarity-v1",
-      "sha256": "b9fc93821577974303589be653158ece217126130ac9ecb0e389f3e4e1f9255b",
-      "downloadBytes": 1331,
+      "sha256": "c9af8dad27b31d9c27f857dc634998a276bcca7c4c01cdf72214a1e1b040c98a",
+      "downloadBytes": 1337,
       "tiers": {
         "85": 116,
         "60": 43,
         "10": 11,
         "30": 12,
         "100": 2
-      }
+      },
+      "answerRepairVersion": 1
     },
     {
       "id": "condiment-counter",
@@ -3555,30 +3579,31 @@
       "topic": "BROAD SANDWICHES",
       "group": "group-broad-sandwiches",
       "source": "Corpora, Darius Kazemi and contributors, CC0; foods/sandwiches.json. Snapshot 2026-10-22.",
-      "answerCount": 170,
-      "familiarCount": 24,
-      "identityHash": "ec921c846c3c34e53b857e7ad5fea8997b9bd2ac37e304d0ab56e2de192ad11a",
+      "answerCount": 171,
+      "familiarCount": 25,
+      "identityHash": "ee2ebd3efbd3c6a7390b89f7a43ed3cb7762253558e59c6b7110bcf2cb003857",
       "predicate": {
         "kind": "retained-bank",
         "id": "sandwiches"
       },
-      "answerFile": "sandwiches.96d5e542f33aa270.json.gz",
-      "answerDirectory": "group-banks",
+      "answerFile": "sandwiches.a54a3395b7499851.json.gz",
+      "answerDirectory": "reviewed-banks",
       "funVersion": 7,
       "groupProfileVersion": 1,
       "dailyEligible": true,
       "partyEligible": true,
       "mixed": true,
       "ranking": "group-familiarity-v1",
-      "sha256": "96d5e542f33aa270f80a2de0d4cf2b279c9c81203b3457cc2bb5e7d604df3213",
-      "downloadBytes": 1790,
+      "sha256": "a54a3395b749985130c9d99c8d938abb7971a6c78cbbe0c141d8d32277e42a0f",
+      "downloadBytes": 1804,
       "tiers": {
         "10": 7,
         "60": 50,
         "85": 95,
-        "30": 17,
+        "30": 18,
         "100": 1
-      }
+      },
+      "answerRepairVersion": 1
     },
     {
       "id": "culinary-fruits",
@@ -3715,30 +3740,31 @@
       "topic": "BROAD CAT BREEDS",
       "group": "group-broad-cat-breeds",
       "source": "Corpora, Darius Kazemi and contributors, CC0; animals/cats.json. Snapshot 2026-10-22.",
-      "answerCount": 96,
-      "familiarCount": 10,
-      "identityHash": "5d24d8f5199ff2fcd4ac0d3d5120c99dd8c355d1ab911c0c8be9b1964452e2be",
+      "answerCount": 97,
+      "familiarCount": 11,
+      "identityHash": "ad10c730a9c091a7e04b1fd7ede1def586d3967fa73423ce720e74c530b509f2",
       "predicate": {
         "kind": "retained-bank",
         "id": "cat-breeds"
       },
-      "answerFile": "cat-breeds.5c876762e4726382.json.gz",
-      "answerDirectory": "group-banks",
+      "answerFile": "cat-breeds.d3dc3b6f75e5869a.json.gz",
+      "answerDirectory": "reviewed-banks",
       "funVersion": 7,
       "groupProfileVersion": 1,
       "dailyEligible": true,
       "partyEligible": true,
       "mixed": true,
       "ranking": "group-familiarity-v1",
-      "sha256": "5c876762e47263829803cb6e40e8cca26df39482d607f82b30ee06855e67139a",
-      "downloadBytes": 744,
+      "sha256": "d3dc3b6f75e5869a689e8a59df3f9afced2350cc895a3f794d481d77e1f3e0d0",
+      "downloadBytes": 746,
       "tiers": {
         "85": 63,
         "60": 22,
-        "30": 4,
+        "30": 5,
         "10": 6,
         "100": 1
-      }
+      },
+      "answerRepairVersion": 1
     },
     {
       "id": "weather-conditions",
@@ -4010,22 +4036,23 @@
         "kind": "retained-bank",
         "id": "household-appliances"
       },
-      "answerFile": "household-appliances.c7633750d5eda5f4.json.gz",
-      "answerDirectory": "group-banks",
+      "answerFile": "household-appliances.d151edb84cbe022b.json.gz",
+      "answerDirectory": "reviewed-banks",
       "funVersion": 7,
       "groupProfileVersion": 1,
       "dailyEligible": true,
       "partyEligible": true,
       "mixed": true,
       "ranking": "group-familiarity-v1",
-      "sha256": "c7633750d5eda5f4190bfd10c447541d377e921b92a829de7daf1c3eb1b8d3d3",
-      "downloadBytes": 830,
+      "sha256": "d151edb84cbe022b0dbaeaacbdb762b1e9f76ae1357230c1cc93b9a4b79cdba4",
+      "downloadBytes": 835,
       "tiers": {
         "60": 57,
         "85": 39,
         "30": 10,
         "100": 1
-      }
+      },
+      "answerRepairVersion": 1
     },
     {
       "id": "room-types",
@@ -4322,30 +4349,31 @@
       "topic": "BROAD FOOD SNACKS",
       "group": "group-broad-food-snacks",
       "source": "Wikidata contributors, CC0; recorded query Q749316 in sources/wd-snacks.json; snapshot 2026-10-22.",
-      "answerCount": 1499,
-      "familiarCount": 95,
-      "identityHash": "b9fc632c4b12877a80abcf22fed5182acf20d8ff56827d45aaaafdd43f2525d7",
+      "answerCount": 1500,
+      "familiarCount": 96,
+      "identityHash": "de08a358ea59ca73cd057c78c47146dbb78c09cf673779fb4a8160b2d54b515e",
       "predicate": {
         "kind": "retained-bank",
         "id": "catalog-snacks"
       },
-      "answerFile": "catalog-snacks.6eb2496a25a93876.json.gz",
-      "answerDirectory": "group-banks",
+      "answerFile": "catalog-snacks.d90ee8969b8f3dcd.json.gz",
+      "answerDirectory": "reviewed-banks",
       "funVersion": 7,
       "groupProfileVersion": 1,
       "dailyEligible": true,
       "partyEligible": true,
       "mixed": true,
       "ranking": "group-familiarity-v1",
-      "sha256": "6eb2496a25a9387617a5de540523ac3ebf0fdff108ab4186c190f3d7af5405dd",
-      "downloadBytes": 15484,
+      "sha256": "d90ee8969b8f3dcd28621c3784fb3732f6428bdeffebd8431b9df0413c886eca",
+      "downloadBytes": 15491,
       "tiers": {
         "60": 305,
         "85": 1098,
         "10": 8,
-        "30": 87,
+        "30": 88,
         "100": 1
-      }
+      },
+      "answerRepairVersion": 1
     },
     {
       "id": "catalog-coffee-drinks",
@@ -5135,31 +5163,32 @@
       "topic": "BROAD FILMS",
       "group": "group-broad-films",
       "source": "Recorded factual snapshots; see data-snapshots/rework/source-manifest.json and DATA-SOURCES.md.",
-      "answerCount": 1666,
-      "familiarCount": 556,
-      "identityHash": "75d356113c172501a3c0fcde8d7f54b19443f96e1029b6b844e076430c0a8ba8",
+      "answerCount": 1667,
+      "familiarCount": 557,
+      "identityHash": "fdb0dc617d672fc47f518e9bb00d0c65dd3a16b8b505e809939ae694f08bb96e",
       "predicate": {
         "kind": "retained-bank",
         "id": "fun-film-horror"
       },
       "inputNoise": [],
-      "answerFile": "fun-film-horror.201e615ba9253670.json.gz",
-      "answerDirectory": "group-banks",
+      "answerFile": "fun-film-horror.e190acb252a94269.json.gz",
+      "answerDirectory": "reviewed-banks",
       "funVersion": 7,
       "groupProfileVersion": 1,
       "dailyEligible": true,
       "partyEligible": true,
       "mixed": true,
       "ranking": "group-familiarity-v1",
-      "sha256": "201e615ba92536708d7993f63ec10268ebd80a1d09af70f886a6c95d5394e6c6",
-      "downloadBytes": 12762,
+      "sha256": "e190acb252a942694c69c5ba0f3a44b60c058e135b4a6faa93604cea33a496fc",
+      "downloadBytes": 12764,
       "tiers": {
         "60": 669,
         "100": 1,
-        "30": 462,
+        "30": 463,
         "85": 440,
         "10": 94
-      }
+      },
+      "answerRepairVersion": 1
     },
     {
       "id": "fun-film-comedy",
@@ -5168,31 +5197,32 @@
       "topic": "BROAD FILMS",
       "group": "group-broad-films",
       "source": "Recorded factual snapshots; see data-snapshots/rework/source-manifest.json and DATA-SOURCES.md.",
-      "answerCount": 9856,
-      "familiarCount": 4007,
-      "identityHash": "999bcfe6fc00765f688f46c3267aa70deb169cf2e3b70eb3cbb2de7447f248fc",
+      "answerCount": 9859,
+      "familiarCount": 4010,
+      "identityHash": "9b3bec3eaf0c2dac8cbadc7f875a44c7880734a644a693d1e7c04ee6e09220b7",
       "predicate": {
         "kind": "retained-bank",
         "id": "fun-film-comedy"
       },
       "inputNoise": [],
-      "answerFile": "fun-film-comedy.8136c38fce90251e.json.gz",
-      "answerDirectory": "group-banks",
+      "answerFile": "fun-film-comedy.21fd9b8a929d350c.json.gz",
+      "answerDirectory": "reviewed-banks",
       "funVersion": 7,
       "groupProfileVersion": 1,
       "dailyEligible": true,
       "partyEligible": true,
       "mixed": true,
       "ranking": "group-familiarity-v1",
-      "sha256": "8136c38fce90251e0fe6f2bf4b151443cc771982feb2f4444c96de3407607be7",
-      "downloadBytes": 77753,
+      "sha256": "21fd9b8a929d350c0f4c074be69a5898bce5ab8ad58c681cfa2b3be8a428d80e",
+      "downloadBytes": 77767,
       "tiers": {
         "10": 986,
         "100": 1,
         "85": 2528,
         "60": 3320,
-        "30": 3021
-      }
+        "30": 3024
+      },
+      "answerRepairVersion": 1
     },
     {
       "id": "fun-film-animation",
@@ -6035,30 +6065,31 @@
       "topic": "BROAD SEMANTIC ANIMAL",
       "group": "group-broad-semantic-animal",
       "source": "Princeton WordNet 3.0; descendants and synonyms of domestic_animal.n.01; curated sense/prompt.",
-      "answerCount": 211,
-      "familiarCount": 19,
-      "identityHash": "5f925298eb406d610ea4a823436d85d064854a46d1f00a6d64ee22f6f5aaf6e0",
+      "answerCount": 216,
+      "familiarCount": 24,
+      "identityHash": "107ff22d04eecf102989f50106f512d224837fa1f4b911e64d3fc1331033bd5e",
       "predicate": {
         "kind": "retained-bank",
         "id": "var-semantic-domestic_animal-n-01"
       },
-      "answerFile": "var-semantic-domestic_animal-n-01.c4e3b700afc9885f.json.gz",
-      "answerDirectory": "group-banks",
+      "answerFile": "var-semantic-domestic_animal-n-01.9cecb1ae72d7959b.json.gz",
+      "answerDirectory": "reviewed-banks",
       "funVersion": 7,
       "groupProfileVersion": 1,
       "dailyEligible": true,
       "partyEligible": true,
       "mixed": true,
       "ranking": "group-familiarity-v1",
-      "sha256": "c4e3b700afc9885f0193085488581c686fa29b3412aea017d9cbbe9c1f25b548",
-      "downloadBytes": 1985,
+      "sha256": "9cecb1ae72d7959bfc50e20d171f3d42b092c8c1e5727fa090d1cb1f945f1898",
+      "downloadBytes": 2013,
       "tiers": {
         "85": 144,
         "60": 47,
-        "30": 17,
+        "30": 22,
         "100": 1,
         "10": 2
-      }
+      },
+      "answerRepairVersion": 1
     },
     {
       "id": "var-semantic-bag-n-01",
@@ -6067,30 +6098,31 @@
       "topic": "BROAD SEMANTIC ARTIFACT",
       "group": "group-broad-semantic-artifact",
       "source": "Princeton WordNet 3.0; descendants and synonyms of bag.n.01; curated sense/prompt.",
-      "answerCount": 58,
-      "familiarCount": 17,
-      "identityHash": "658ad42a08ab033354cea0c02f01631f12ace698f6e43bfc0c5cd1ce0b2e8751",
+      "answerCount": 60,
+      "familiarCount": 22,
+      "identityHash": "6a07ecd74f7301c805df9fc19df249588537a9ceb609e410d5b93edb3960ec43",
       "predicate": {
         "kind": "retained-bank",
         "id": "var-semantic-bag-n-01"
       },
-      "answerFile": "var-semantic-bag-n-01.11cdc94b18c22353.json.gz",
-      "answerDirectory": "group-banks",
+      "answerFile": "var-semantic-bag-n-01.fc4e7d20a5c0dd3e.json.gz",
+      "answerDirectory": "reviewed-banks",
       "funVersion": 7,
       "groupProfileVersion": 1,
       "dailyEligible": true,
       "partyEligible": true,
       "mixed": true,
       "ranking": "group-familiarity-v1",
-      "sha256": "11cdc94b18c223535d35a60c4ddf03341be1086258c836aaeb213f492df0a35f",
-      "downloadBytes": 514,
+      "sha256": "fc4e7d20a5c0dd3e5a02b3fa1385755ad8f16dedd21c299af4c562ce977a5d1a",
+      "downloadBytes": 532,
       "tiers": {
-        "85": 21,
-        "60": 19,
-        "30": 16,
-        "100": 1,
-        "10": 1
-      }
+        "85": 19,
+        "10": 3,
+        "60": 18,
+        "30": 19,
+        "100": 1
+      },
+      "answerRepairVersion": 1
     },
     {
       "id": "var-semantic-ball-n-01",
@@ -6416,29 +6448,30 @@
       "topic": "BROAD SEMANTIC ARTIFACT",
       "group": "group-broad-semantic-artifact",
       "source": "Princeton WordNet 3.0; descendants and synonyms of shop.n.01; curated sense/prompt.",
-      "answerCount": 50,
-      "familiarCount": 17,
-      "identityHash": "1a9815f81c0ac8c62fbf71767b8c68e7ba73cba92632bf822d2a5abdb769e12b",
+      "answerCount": 53,
+      "familiarCount": 22,
+      "identityHash": "b910b39055f1154a6adf0a5d7be216544c989fffb06e311c3888221998b495c8",
       "predicate": {
         "kind": "retained-bank",
         "id": "var-semantic-shop-n-01"
       },
-      "answerFile": "var-semantic-shop-n-01.7302d55d0279f852.json.gz",
-      "answerDirectory": "group-banks",
+      "answerFile": "var-semantic-shop-n-01.b90559748383ed4e.json.gz",
+      "answerDirectory": "reviewed-banks",
       "funVersion": 7,
       "groupProfileVersion": 1,
       "dailyEligible": true,
       "partyEligible": true,
       "mixed": true,
       "ranking": "group-familiarity-v1",
-      "sha256": "7302d55d0279f8520838242d0a722b5fc3d1247c881c633a71872afa65ffac36",
-      "downloadBytes": 649,
+      "sha256": "b90559748383ed4e4c1fd5a0a52ccea9d832b3e7387e5bf2bb5c32f30456a287",
+      "downloadBytes": 676,
       "tiers": {
-        "60": 16,
+        "60": 14,
         "85": 16,
-        "30": 17,
+        "30": 22,
         "100": 1
-      }
+      },
+      "answerRepairVersion": 1
     },
     {
       "id": "var-semantic-sports_equipment-n-01",
@@ -6447,30 +6480,31 @@
       "topic": "BROAD SEMANTIC ARTIFACT",
       "group": "group-broad-semantic-artifact",
       "source": "Princeton WordNet 3.0; descendants and synonyms of sports_equipment.n.01; curated sense/prompt.",
-      "answerCount": 98,
-      "familiarCount": 32,
-      "identityHash": "6feb1a5ab5858975a528d80f02ea329064e376f460471a5fe29852b80daef08a",
+      "answerCount": 99,
+      "familiarCount": 33,
+      "identityHash": "3ad2254471cab77de5d37914db5ea59c784b338cf6ed13ce2fdee32ae4691843",
       "predicate": {
         "kind": "retained-bank",
         "id": "var-semantic-sports_equipment-n-01"
       },
-      "answerFile": "var-semantic-sports_equipment-n-01.c9a586dbf7b0ac1e.json.gz",
-      "answerDirectory": "group-banks",
+      "answerFile": "var-semantic-sports_equipment-n-01.2e4eb7fd573904d2.json.gz",
+      "answerDirectory": "reviewed-banks",
       "funVersion": 7,
       "groupProfileVersion": 1,
       "dailyEligible": true,
       "partyEligible": true,
       "mixed": true,
       "ranking": "group-familiarity-v1",
-      "sha256": "c9a586dbf7b0ac1eefd925c20263169927e06d003264ee3f8f5fea79828928de",
-      "downloadBytes": 849,
+      "sha256": "2e4eb7fd573904d2a0c7c932a1f4774941cc2642102cb0c4b3422e61e7b476bd",
+      "downloadBytes": 866,
       "tiers": {
         "60": 39,
         "85": 26,
-        "30": 26,
+        "30": 27,
         "100": 1,
         "10": 6
-      }
+      },
+      "answerRepairVersion": 1
     },
     {
       "id": "var-semantic-vehicle-n-01",
@@ -7079,23 +7113,24 @@
         "kind": "steam-tag",
         "tag": "2D"
       },
-      "answerFile": "group-steam-2d.9cf922c5136f55bf.json.gz",
-      "answerDirectory": "group-banks",
+      "answerFile": "group-steam-2d.15c41d8e296e5480.json.gz",
+      "answerDirectory": "reviewed-banks",
       "funVersion": 7,
       "groupProfileVersion": 1,
       "dailyEligible": true,
       "partyEligible": true,
       "mixed": true,
       "ranking": "group-familiarity-v1",
-      "sha256": "9cf922c5136f55bff5f8489d4f02a3e9dd16e51235bd50244328f00e959cafc7",
-      "downloadBytes": 246132,
+      "sha256": "15c41d8e296e5480467e481209240b6c65bedeadfe33b68eb83cf73b091fef8c",
+      "downloadBytes": 246144,
       "tiers": {
         "85": 24117,
         "60": 2272,
         "10": 174,
         "30": 444,
         "100": 1
-      }
+      },
+      "answerRepairVersion": 1
     },
     {
       "id": "group-steam-3d",
@@ -7136,30 +7171,31 @@
       "topic": "ACTION",
       "group": "group-steam-single-tag",
       "source": "Steam community tags via SteamSpy; full retained tag membership, 2026-10-23. Names reconciled with the recorded Steam catalog.",
-      "answerCount": 38546,
-      "familiarCount": 1765,
-      "identityHash": "05405cf59634fd84c060c332037edce2970240570edfe935a42a0e348ad6b0fe",
+      "answerCount": 38547,
+      "familiarCount": 1766,
+      "identityHash": "cbc5b913e84f42c852072ae7569d0c7f612de65e213f740c8975f26dfde3229c",
       "predicate": {
         "kind": "steam-tag",
         "tag": "Action"
       },
-      "answerFile": "group-steam-action.bba0bb07d9a17807.json.gz",
-      "answerDirectory": "group-banks",
+      "answerFile": "group-steam-action.1da55c26203df159.json.gz",
+      "answerDirectory": "reviewed-banks",
       "funVersion": 7,
       "groupProfileVersion": 1,
       "dailyEligible": true,
       "partyEligible": true,
       "mixed": true,
       "ranking": "group-familiarity-v1",
-      "sha256": "bba0bb07d9a17807601f947fcb55bdeb4d661ceae3e71fffb4c9c866fe18fbd4",
-      "downloadBytes": 326443,
+      "sha256": "1da55c26203df159374424cc1433fab862cd6846e1bb4d037c3717f38222cef9",
+      "downloadBytes": 326462,
       "tiers": {
         "85": 33153,
         "60": 3627,
         "30": 1065,
-        "10": 700,
+        "10": 701,
         "100": 1
-      }
+      },
+      "answerRepairVersion": 1
     },
     {
       "id": "group-steam-action-rpg",
@@ -7168,30 +7204,31 @@
       "topic": "ACTION RPG",
       "group": "group-steam-single-tag",
       "source": "Steam community tags via SteamSpy; full retained tag membership, 2026-10-23. Names reconciled with the recorded Steam catalog.",
-      "answerCount": 4383,
-      "familiarCount": 313,
-      "identityHash": "bbd3519428c069b58cd2a1a5730a7c4528fa466656566f0ab34e29c6a7b94431",
+      "answerCount": 4384,
+      "familiarCount": 314,
+      "identityHash": "c0bc3e62fb2d958cec190fa46ec69b32f5b2a91cc7a1fa7c14c6b8bf332d239a",
       "predicate": {
         "kind": "steam-tag",
         "tag": "Action RPG"
       },
-      "answerFile": "group-steam-action-rpg.c9c8172a605c94ad.json.gz",
-      "answerDirectory": "group-banks",
+      "answerFile": "group-steam-action-rpg.d618f5ec10e791a1.json.gz",
+      "answerDirectory": "reviewed-banks",
       "funVersion": 7,
       "groupProfileVersion": 1,
       "dailyEligible": true,
       "partyEligible": true,
       "mixed": true,
       "ranking": "group-familiarity-v1",
-      "sha256": "c9c8172a605c94adce9b3e6cc4087e74bdb0e285f0a5b6bd0dadffcd20e6fdc6",
-      "downloadBytes": 43427,
+      "sha256": "d618f5ec10e791a10ea81694ab10ccfa83a1428ee42f2db5914541392b20c6f4",
+      "downloadBytes": 43432,
       "tiers": {
         "85": 3516,
         "60": 553,
-        "10": 117,
+        "10": 118,
         "30": 196,
         "100": 1
-      }
+      },
+      "answerRepairVersion": 1
     },
     {
       "id": "group-steam-action-adventure",
@@ -7239,23 +7276,24 @@
         "kind": "steam-tag",
         "tag": "Adventure"
       },
-      "answerFile": "group-steam-adventure.5be135c88b0a413b.json.gz",
-      "answerDirectory": "group-banks",
+      "answerFile": "group-steam-adventure.18743c1306f54dfc.json.gz",
+      "answerDirectory": "reviewed-banks",
       "funVersion": 7,
       "groupProfileVersion": 1,
       "dailyEligible": true,
       "partyEligible": true,
       "mixed": true,
       "ranking": "group-familiarity-v1",
-      "sha256": "5be135c88b0a413bc78ea95279b81dcfd3b520381ba9067fa77a81df66d83891",
-      "downloadBytes": 344644,
+      "sha256": "18743c1306f54dfc7f303af51a855b315c645fcbdcc7b422d38b3186eb765d5f",
+      "downloadBytes": 344658,
       "tiers": {
         "85": 31406,
         "60": 3705,
         "30": 1014,
         "10": 607,
         "100": 1
-      }
+      },
+      "answerRepairVersion": 1
     },
     {
       "id": "group-steam-aliens",
@@ -7367,23 +7405,24 @@
         "kind": "steam-tag",
         "tag": "Atmospheric"
       },
-      "answerFile": "group-steam-atmospheric.975ec97aebe29e78.json.gz",
-      "answerDirectory": "group-banks",
+      "answerFile": "group-steam-atmospheric.c6e387d7e7af7e9f.json.gz",
+      "answerDirectory": "reviewed-banks",
       "funVersion": 7,
       "groupProfileVersion": 1,
       "dailyEligible": true,
       "partyEligible": true,
       "mixed": true,
       "ranking": "group-familiarity-v1",
-      "sha256": "975ec97aebe29e78209f9f5a85fd3d50572390e71c774637f317c3098a95ecef",
-      "downloadBytes": 156873,
+      "sha256": "c6e387d7e7af7e9fa1515b50cfc1cc855a9ea09bdcea5d8214a66fe85ab74e7d",
+      "downloadBytes": 156905,
       "tiers": {
         "85": 13954,
         "60": 2220,
         "30": 707,
         "10": 457,
         "100": 1
-      }
+      },
+      "answerRepairVersion": 1
     },
     {
       "id": "group-steam-auto-battler",
@@ -7559,23 +7598,24 @@
         "kind": "steam-tag",
         "tag": "Building"
       },
-      "answerFile": "group-steam-building.c33a3b9d9c4a56fd.json.gz",
-      "answerDirectory": "group-banks",
+      "answerFile": "group-steam-building.21bbfd9ae79ca15a.json.gz",
+      "answerDirectory": "reviewed-banks",
       "funVersion": 7,
       "groupProfileVersion": 1,
       "dailyEligible": true,
       "partyEligible": true,
       "mixed": true,
       "ranking": "group-familiarity-v1",
-      "sha256": "c33a3b9d9c4a56fd524f600a597b927e2a915ce71a68c3db94726c3f8dcecc41",
-      "downloadBytes": 37604,
+      "sha256": "21bbfd9ae79ca15a1e2fa5aaa0f70f1022322185059784fa01e4af86dc5688ba",
+      "downloadBytes": 37618,
       "tiers": {
         "85": 3410,
         "60": 677,
         "10": 108,
         "30": 177,
         "100": 1
-      }
+      },
+      "answerRepairVersion": 1
     },
     {
       "id": "group-steam-bullet-hell",
@@ -7744,30 +7784,31 @@
       "topic": "CHARACTER CUSTOMIZATION",
       "group": "group-steam-single-tag",
       "source": "Steam community tags via SteamSpy; full retained tag membership, 2026-10-23. Names reconciled with the recorded Steam catalog.",
-      "answerCount": 4641,
-      "familiarCount": 383,
-      "identityHash": "dd3458411ffb51128c3bc1a9b7e99658605ed7801f21b17b12b8783d4964b7e9",
+      "answerCount": 4642,
+      "familiarCount": 384,
+      "identityHash": "07ea77f015bcd212b713551e51c4014280e29ecd9a1852af2949923bc03423f6",
       "predicate": {
         "kind": "steam-tag",
         "tag": "Character Customization"
       },
-      "answerFile": "group-steam-character-customization.a8d755712e2226ed.json.gz",
-      "answerDirectory": "group-banks",
+      "answerFile": "group-steam-character-customization.ab49a78bd35a559c.json.gz",
+      "answerDirectory": "reviewed-banks",
       "funVersion": 7,
       "groupProfileVersion": 1,
       "dailyEligible": true,
       "partyEligible": true,
       "mixed": true,
       "ranking": "group-familiarity-v1",
-      "sha256": "a8d755712e2226ed607e08d731f5821fe5275b813c6a2103494a7c203bfd77d1",
-      "downloadBytes": 45052,
+      "sha256": "ab49a78bd35a559c2d257e7187aeeecd89b80c7622da80802073a550d3699877",
+      "downloadBytes": 45058,
       "tiers": {
         "85": 3608,
         "30": 238,
         "60": 649,
-        "10": 145,
+        "10": 146,
         "100": 1
-      }
+      },
+      "answerRepairVersion": 1
     },
     {
       "id": "group-steam-choices-matter",
@@ -7879,23 +7920,24 @@
         "kind": "steam-tag",
         "tag": "City Builder"
       },
-      "answerFile": "group-steam-city-builder.50f793f3eaa2c314.json.gz",
-      "answerDirectory": "group-banks",
+      "answerFile": "group-steam-city-builder.f478f6a3429f105f.json.gz",
+      "answerDirectory": "reviewed-banks",
       "funVersion": 7,
       "groupProfileVersion": 1,
       "dailyEligible": true,
       "partyEligible": true,
       "mixed": true,
       "ranking": "group-familiarity-v1",
-      "sha256": "50f793f3eaa2c3147dd0435061f226c1dec2adb1dcbf3cf36fe612ae33cb01db",
-      "downloadBytes": 15864,
+      "sha256": "f478f6a3429f105f9b78b0889a3246557e0d475cfb3e68dd9f3aa748c2f7e949",
+      "downloadBytes": 15891,
       "tiers": {
         "85": 1328,
         "60": 276,
         "30": 85,
         "10": 39,
         "100": 1
-      }
+      },
+      "answerRepairVersion": 1
     },
     {
       "id": "group-steam-class-based",
@@ -7936,30 +7978,31 @@
       "topic": "CO-OP",
       "group": "group-steam-single-tag",
       "source": "Steam community tags via SteamSpy; full retained tag membership, 2026-10-23. Names reconciled with the recorded Steam catalog.",
-      "answerCount": 6196,
-      "familiarCount": 1076,
-      "identityHash": "a5cf94022b5704850599f09bc80ba1d89d32a30e9d9b375d7ad212834a0c8d7c",
+      "answerCount": 6197,
+      "familiarCount": 1077,
+      "identityHash": "109cff9d8bfc504a89b16d24f3965515fca36b08c8025bf35b7e63de195e0ce1",
       "predicate": {
         "kind": "steam-tag",
         "tag": "Co-op"
       },
-      "answerFile": "group-steam-co-op.05af8fe98e09ef37.json.gz",
-      "answerDirectory": "group-banks",
+      "answerFile": "group-steam-co-op.a10b3a44a0de812c.json.gz",
+      "answerDirectory": "reviewed-banks",
       "funVersion": 7,
       "groupProfileVersion": 1,
       "dailyEligible": true,
       "partyEligible": true,
       "mixed": true,
       "ranking": "group-familiarity-v1",
-      "sha256": "05af8fe98e09ef37fd94c0649685dfba13a488f2568d1e92094d1c769e006894",
-      "downloadBytes": 58203,
+      "sha256": "a10b3a44a0de812c13920a52840ec9246bb7ceb76684b556188829d6da15776d",
+      "downloadBytes": 58232,
       "tiers": {
         "85": 3854,
         "60": 1265,
-        "10": 439,
+        "10": 440,
         "30": 637,
         "100": 1
-      }
+      },
+      "answerRepairVersion": 1
     },
     {
       "id": "group-steam-co-op-campaign",
@@ -8167,23 +8210,24 @@
         "kind": "steam-tag",
         "tag": "Crime"
       },
-      "answerFile": "group-steam-crime.90b63ca37fb89f16.json.gz",
-      "answerDirectory": "group-banks",
+      "answerFile": "group-steam-crime.f3597c39a28871bf.json.gz",
+      "answerDirectory": "reviewed-banks",
       "funVersion": 7,
       "groupProfileVersion": 1,
       "dailyEligible": true,
       "partyEligible": true,
       "mixed": true,
       "ranking": "group-familiarity-v1",
-      "sha256": "90b63ca37fb89f1675f2a18ea49c387e6636f8a5d82393601c727a809806fcc1",
-      "downloadBytes": 14052,
+      "sha256": "f3597c39a28871bfd13974f9da1b86f84c1557d0fafd710194e7a42d311a3bdd",
+      "downloadBytes": 14071,
       "tiers": {
         "85": 911,
         "30": 57,
         "60": 168,
         "10": 34,
         "100": 1
-      }
+      },
+      "answerRepairVersion": 1
     },
     {
       "id": "group-steam-cute",
@@ -8704,30 +8748,31 @@
       "topic": "FANTASY",
       "group": "group-steam-single-tag",
       "source": "Steam community tags via SteamSpy; full retained tag membership, 2026-10-23. Names reconciled with the recorded Steam catalog.",
-      "answerCount": 12018,
-      "familiarCount": 502,
-      "identityHash": "db5635001e905d778e3112c92aeed24be362b649131f2d54d59638271104587b",
+      "answerCount": 12019,
+      "familiarCount": 503,
+      "identityHash": "685fc9d234d92bd87b5a5dae2933794977a7839d9b0b878a0c446476bf5bffa5",
       "predicate": {
         "kind": "steam-tag",
         "tag": "Fantasy"
       },
-      "answerFile": "group-steam-fantasy.0cec44199fa9e81a.json.gz",
-      "answerDirectory": "group-banks",
+      "answerFile": "group-steam-fantasy.79d0222ffe9a0ff9.json.gz",
+      "answerDirectory": "reviewed-banks",
       "funVersion": 7,
       "groupProfileVersion": 1,
       "dailyEligible": true,
       "partyEligible": true,
       "mixed": true,
       "ranking": "group-familiarity-v1",
-      "sha256": "0cec44199fa9e81ad675e0518fd3c7bf5fd114a65af276f72ec9b7674aa64bfa",
-      "downloadBytes": 114878,
+      "sha256": "79d0222ffe9a0ff973c02301f5b6501ca50e7469b371a2dd2bca4e6255826cf8",
+      "downloadBytes": 114879,
       "tiers": {
         "85": 10195,
         "60": 1320,
-        "10": 152,
+        "10": 153,
         "30": 350,
         "100": 1
-      }
+      },
+      "answerRepairVersion": 1
     },
     {
       "id": "group-steam-farming",
@@ -8839,23 +8884,24 @@
         "kind": "steam-tag",
         "tag": "First-Person"
       },
-      "answerFile": "group-steam-first-person.661c64abf4e5597c.json.gz",
-      "answerDirectory": "group-banks",
+      "answerFile": "group-steam-first-person.aa8aade7f0194a06.json.gz",
+      "answerDirectory": "reviewed-banks",
       "funVersion": 7,
       "groupProfileVersion": 1,
       "dailyEligible": true,
       "partyEligible": true,
       "mixed": true,
       "ranking": "group-familiarity-v1",
-      "sha256": "661c64abf4e5597c13ab968f9d2ca8b9bef9f0144871fa68c4093d9ef267c78c",
-      "downloadBytes": 115390,
+      "sha256": "aa8aade7f0194a06a37e05f4a4ed6af3f20d18ce5f6832140357da64898b7966",
+      "downloadBytes": 115405,
       "tiers": {
         "85": 10634,
         "60": 1404,
         "10": 341,
         "30": 436,
         "100": 1
-      }
+      },
+      "answerRepairVersion": 1
     },
     {
       "id": "group-steam-fishing",
@@ -9031,23 +9077,24 @@
         "kind": "steam-tag",
         "tag": "Grand Strategy"
       },
-      "answerFile": "group-steam-grand-strategy.947aeae6b62dd358.json.gz",
-      "answerDirectory": "group-banks",
+      "answerFile": "group-steam-grand-strategy.979cb357bf2d72c4.json.gz",
+      "answerDirectory": "reviewed-banks",
       "funVersion": 7,
       "groupProfileVersion": 1,
       "dailyEligible": true,
       "partyEligible": true,
       "mixed": true,
       "ranking": "group-familiarity-v1",
-      "sha256": "947aeae6b62dd3581265afb918b652ced65cd1e26601f25ba270c16a14c11d5c",
-      "downloadBytes": 10542,
+      "sha256": "979cb357bf2d72c473136503bfb63e6400261b64c26d800bfaa0c8bf1124ff91",
+      "downloadBytes": 10556,
       "tiers": {
         "85": 724,
         "10": 26,
         "60": 168,
         "30": 44,
         "100": 1
-      }
+      },
+      "answerRepairVersion": 1
     },
     {
       "id": "group-steam-hack-and-slash",
@@ -9191,23 +9238,24 @@
         "kind": "steam-tag",
         "tag": "Historical"
       },
-      "answerFile": "group-steam-historical.00b1c030d635f094.json.gz",
-      "answerDirectory": "group-banks",
+      "answerFile": "group-steam-historical.28767cfcc8634b03.json.gz",
+      "answerDirectory": "reviewed-banks",
       "funVersion": 7,
       "groupProfileVersion": 1,
       "dailyEligible": true,
       "partyEligible": true,
       "mixed": true,
       "ranking": "group-familiarity-v1",
-      "sha256": "00b1c030d635f09407737daf04c6aef335c46b637878d12fc8211efc4c5733b5",
-      "downloadBytes": 30002,
+      "sha256": "28767cfcc8634b03237a2cb3793bbf796026f76a354c68c6a2d0bd31c4f9b7dd",
+      "downloadBytes": 30031,
       "tiers": {
         "85": 2034,
         "60": 434,
         "30": 104,
         "10": 85,
         "100": 1
-      }
+      },
+      "answerRepairVersion": 1
     },
     {
       "id": "group-steam-horror",
@@ -9383,23 +9431,24 @@
         "kind": "steam-tag",
         "tag": "Isometric"
       },
-      "answerFile": "group-steam-isometric.955744a33879a5fb.json.gz",
-      "answerDirectory": "group-banks",
+      "answerFile": "group-steam-isometric.ed42247307a31f36.json.gz",
+      "answerDirectory": "reviewed-banks",
       "funVersion": 7,
       "groupProfileVersion": 1,
       "dailyEligible": true,
       "partyEligible": true,
       "mixed": true,
       "ranking": "group-familiarity-v1",
-      "sha256": "955744a33879a5fbbaa0832869d68bc6996cdf15cfde40a9aa2d248719a8d38f",
-      "downloadBytes": 24286,
+      "sha256": "ed42247307a31f366670995daff7a625ab85bbc69bffa15bbd4d2b6c5f2b4932",
+      "downloadBytes": 24298,
       "tiers": {
         "85": 2008,
         "60": 390,
         "10": 39,
         "30": 109,
         "100": 1
-      }
+      },
+      "answerRepairVersion": 1
     },
     {
       "id": "group-steam-jrpg",
@@ -9664,30 +9713,31 @@
       "topic": "MOBA",
       "group": "group-steam-single-tag",
       "source": "Steam community tags via SteamSpy; full retained tag membership, 2026-10-23. Names reconciled with the recorded Steam catalog.",
-      "answerCount": 360,
-      "familiarCount": 29,
-      "identityHash": "5719719933837e8372b808455a561a578f3b26daba88865e1d483b558a806ba8",
+      "answerCount": 361,
+      "familiarCount": 30,
+      "identityHash": "83138b3ed978aebef342a952fd34174bf29320db38ff8595396a3254fa49cda7",
       "predicate": {
         "kind": "steam-tag",
         "tag": "MOBA"
       },
-      "answerFile": "group-steam-moba.c7562491bc71cb98.json.gz",
-      "answerDirectory": "group-banks",
+      "answerFile": "group-steam-moba.5ac22f76f3d207e4.json.gz",
+      "answerDirectory": "reviewed-banks",
       "funVersion": 7,
       "groupProfileVersion": 1,
       "dailyEligible": true,
       "partyEligible": true,
       "mixed": true,
       "ranking": "group-familiarity-v1",
-      "sha256": "c7562491bc71cb9806c11052562f2c31406505b49706f7664a9fdc94d0a08e8c",
-      "downloadBytes": 4252,
+      "sha256": "5ac22f76f3d207e49ca2b122f1bf326d1deb3dba60f67c5b2d83951c2b5b5e8c",
+      "downloadBytes": 4257,
       "tiers": {
         "85": 267,
         "60": 63,
         "30": 18,
-        "10": 11,
+        "10": 12,
         "100": 1
-      }
+      },
+      "answerRepairVersion": 1
     },
     {
       "id": "group-steam-magic",
@@ -9735,23 +9785,24 @@
         "kind": "steam-tag",
         "tag": "Management"
       },
-      "answerFile": "group-steam-management.516c1d88de4c48fc.json.gz",
-      "answerDirectory": "group-banks",
+      "answerFile": "group-steam-management.e2ce4fa68b0a59cf.json.gz",
+      "answerDirectory": "reviewed-banks",
       "funVersion": 7,
       "groupProfileVersion": 1,
       "dailyEligible": true,
       "partyEligible": true,
       "mixed": true,
       "ranking": "group-familiarity-v1",
-      "sha256": "516c1d88de4c48fcae2dbd36a73d728fd9f62821a76feeeb20cd424752f84a0d",
-      "downloadBytes": 40360,
+      "sha256": "e2ce4fa68b0a59cf4a860e91c879d612697670544bb0848ce191c04bc91d04a8",
+      "downloadBytes": 40373,
       "tiers": {
         "85": 3528,
         "30": 154,
         "60": 703,
         "10": 81,
         "100": 1
-      }
+      },
+      "answerRepairVersion": 1
     },
     {
       "id": "group-steam-martial-arts",
@@ -9831,23 +9882,24 @@
         "kind": "steam-tag",
         "tag": "Medieval"
       },
-      "answerFile": "group-steam-medieval.8381f7c49ce216a4.json.gz",
-      "answerDirectory": "group-banks",
+      "answerFile": "group-steam-medieval.995ef2d85157b1ed.json.gz",
+      "answerDirectory": "reviewed-banks",
       "funVersion": 7,
       "groupProfileVersion": 1,
       "dailyEligible": true,
       "partyEligible": true,
       "mixed": true,
       "ranking": "group-familiarity-v1",
-      "sha256": "8381f7c49ce216a4f2ccfb747dfe9d90327d135115ed3c17789bd0203985b67d",
-      "downloadBytes": 34925,
+      "sha256": "995ef2d85157b1ed8f77130bde416102e3342fb80da0cda90174db047e5eb8a5",
+      "downloadBytes": 34945,
       "tiers": {
         "85": 3245,
         "60": 323,
         "10": 69,
         "30": 97,
         "100": 1
-      }
+      },
+      "answerRepairVersion": 1
     },
     {
       "id": "group-steam-metroidvania",
@@ -9991,23 +10043,24 @@
         "kind": "steam-tag",
         "tag": "Moddable"
       },
-      "answerFile": "group-steam-moddable.fa86123be337fe46.json.gz",
-      "answerDirectory": "group-banks",
+      "answerFile": "group-steam-moddable.f4d48cdd7c5a8762.json.gz",
+      "answerDirectory": "reviewed-banks",
       "funVersion": 7,
       "groupProfileVersion": 1,
       "dailyEligible": true,
       "partyEligible": true,
       "mixed": true,
       "ranking": "group-familiarity-v1",
-      "sha256": "fa86123be337fe46f1be6a8f659c905260f82c0d54cc18c1a17383d7b8085e78",
-      "downloadBytes": 11486,
+      "sha256": "f4d48cdd7c5a87621ab54c15251a23198331650c41ee112d6d9ed455264ec4be",
+      "downloadBytes": 11516,
       "tiers": {
         "30": 125,
         "85": 572,
         "60": 247,
         "10": 126,
         "100": 1
-      }
+      },
+      "answerRepairVersion": 1
     },
     {
       "id": "group-steam-multiplayer",
@@ -10016,30 +10069,31 @@
       "topic": "MULTIPLAYER",
       "group": "group-steam-single-tag",
       "source": "Steam community tags via SteamSpy; full retained tag membership, 2026-10-23. Names reconciled with the recorded Steam catalog.",
-      "answerCount": 11714,
-      "familiarCount": 1600,
-      "identityHash": "b12881f5cee5c577fbe5f538cf12439a029730d65be721f55d4618f80215b99c",
+      "answerCount": 11715,
+      "familiarCount": 1601,
+      "identityHash": "5a5cab3a26950a57ed6ded4b17b1c709f00cede6e55f3815b4fb1245daa602ba",
       "predicate": {
         "kind": "steam-tag",
         "tag": "Multiplayer"
       },
-      "answerFile": "group-steam-multiplayer.9734d8f69ea29fa1.json.gz",
-      "answerDirectory": "group-banks",
+      "answerFile": "group-steam-multiplayer.fed82ec1f7e6397d.json.gz",
+      "answerDirectory": "reviewed-banks",
       "funVersion": 7,
       "groupProfileVersion": 1,
       "dailyEligible": true,
       "partyEligible": true,
       "mixed": true,
       "ranking": "group-familiarity-v1",
-      "sha256": "9734d8f69ea29fa10ab7b46ceab02c8a96328a90f62c251ada7048a77ff7923d",
-      "downloadBytes": 105506,
+      "sha256": "fed82ec1f7e6397dd377b5b57eefc5db66478374bc45654be839e430929cd821",
+      "downloadBytes": 105545,
       "tiers": {
         "85": 7638,
         "60": 2475,
-        "10": 645,
+        "10": 646,
         "30": 955,
         "100": 1
-      }
+      },
+      "answerRepairVersion": 1
     },
     {
       "id": "group-steam-multiple-endings",
@@ -10368,30 +10422,31 @@
       "topic": "ONLINE CO-OP",
       "group": "group-steam-single-tag",
       "source": "Steam community tags via SteamSpy; full retained tag membership, 2026-10-23. Names reconciled with the recorded Steam catalog.",
-      "answerCount": 3673,
-      "familiarCount": 633,
-      "identityHash": "152c493e8cdef2409a7c269bef4be34a5f85571681a89b45f737c6638c184493",
+      "answerCount": 3674,
+      "familiarCount": 634,
+      "identityHash": "62e30ed41880e95d97ee451128a7657803795e29790e055deae844b7f9c7b5eb",
       "predicate": {
         "kind": "steam-tag",
         "tag": "Online Co-Op"
       },
-      "answerFile": "group-steam-online-co-op.1a77ce1cd7070010.json.gz",
-      "answerDirectory": "group-banks",
+      "answerFile": "group-steam-online-co-op.d69fc668531bad74.json.gz",
+      "answerDirectory": "reviewed-banks",
       "funVersion": 7,
       "groupProfileVersion": 1,
       "dailyEligible": true,
       "partyEligible": true,
       "mixed": true,
       "ranking": "group-familiarity-v1",
-      "sha256": "1a77ce1cd707001006e242fc3200a5c3ba448b0cc0ea7c3b9af937dadca8cf66",
-      "downloadBytes": 34738,
+      "sha256": "d69fc668531bad740d09e099b023864dda620b58d1a8e435f85bd25622e6e981",
+      "downloadBytes": 34753,
       "tiers": {
         "60": 689,
         "85": 2350,
-        "10": 279,
+        "10": 280,
         "30": 354,
         "100": 1
-      }
+      },
+      "answerRepairVersion": 1
     },
     {
       "id": "group-steam-open-world",
@@ -10407,23 +10462,24 @@
         "kind": "steam-tag",
         "tag": "Open World"
       },
-      "answerFile": "group-steam-open-world.c8d81d4ba1a5bcb5.json.gz",
-      "answerDirectory": "group-banks",
+      "answerFile": "group-steam-open-world.8f4370a1e0ef3d5a.json.gz",
+      "answerDirectory": "reviewed-banks",
       "funVersion": 7,
       "groupProfileVersion": 1,
       "dailyEligible": true,
       "partyEligible": true,
       "mixed": true,
       "ranking": "group-familiarity-v1",
-      "sha256": "c8d81d4ba1a5bcb572683943f31cd4247972b35a8fa37bc7ccdddb695ffba2dd",
-      "downloadBytes": 63572,
+      "sha256": "8f4370a1e0ef3d5a0802d153a03480a541391be6a02cc0a05e73eefe8354e433",
+      "downloadBytes": 63584,
       "tiers": {
         "85": 4474,
         "30": 589,
         "60": 1309,
         "10": 415,
         "100": 1
-      }
+      },
+      "answerRepairVersion": 1
     },
     {
       "id": "group-steam-parkour",
@@ -10848,30 +10904,31 @@
       "topic": "RPG",
       "group": "group-steam-single-tag",
       "source": "Steam community tags via SteamSpy; full retained tag membership, 2026-10-23. Names reconciled with the recorded Steam catalog.",
-      "answerCount": 16327,
-      "familiarCount": 925,
-      "identityHash": "7699712d961de21221690183ddc34b9ca16c8e6137b969a096b748f069d7d1a5",
+      "answerCount": 16328,
+      "familiarCount": 926,
+      "identityHash": "09bb3037c611888dc704c14b915a232b451882a98f486da988e50dc0759a8b71",
       "predicate": {
         "kind": "steam-tag",
         "tag": "RPG"
       },
-      "answerFile": "group-steam-rpg.66204d9c48ebecff.json.gz",
-      "answerDirectory": "group-banks",
+      "answerFile": "group-steam-rpg.46c8967c24acd4be.json.gz",
+      "answerDirectory": "reviewed-banks",
       "funVersion": 7,
       "groupProfileVersion": 1,
       "dailyEligible": true,
       "partyEligible": true,
       "mixed": true,
       "ranking": "group-familiarity-v1",
-      "sha256": "66204d9c48ebecffbf6d1444be186fb1b291993fba46cf5314499a59ec3534b3",
-      "downloadBytes": 164154,
+      "sha256": "46c8967c24acd4bec9d392c8d69446b1e519e874dc37f9eacc13e92bc1778791",
+      "downloadBytes": 164169,
       "tiers": {
         "85": 13331,
         "60": 2070,
         "30": 607,
-        "10": 318,
+        "10": 319,
         "100": 1
-      }
+      },
+      "answerRepairVersion": 1
     },
     {
       "id": "group-steam-rts",
@@ -10880,30 +10937,31 @@
       "topic": "RTS",
       "group": "group-steam-single-tag",
       "source": "Steam community tags via SteamSpy; full retained tag membership, 2026-10-23. Names reconciled with the recorded Steam catalog.",
-      "answerCount": 2115,
-      "familiarCount": 159,
-      "identityHash": "11c312cba7cf46fa2a3f557ad1438ffce76c01dc6d6a3f39d012492accfae301",
+      "answerCount": 2116,
+      "familiarCount": 160,
+      "identityHash": "2a45179ef4e5e81f0a06ac62378f61e7b687773ba11bdda2cf37f096b3115e6c",
       "predicate": {
         "kind": "steam-tag",
         "tag": "RTS"
       },
-      "answerFile": "group-steam-rts.9ff460055b897192.json.gz",
-      "answerDirectory": "group-banks",
+      "answerFile": "group-steam-rts.d9c81b33bdaa35fa.json.gz",
+      "answerDirectory": "reviewed-banks",
       "funVersion": 7,
       "groupProfileVersion": 1,
       "dailyEligible": true,
       "partyEligible": true,
       "mixed": true,
       "ranking": "group-familiarity-v1",
-      "sha256": "9ff460055b897192fc7722b5df43ada0109269ae60ed4f32fa6663b15c8c634f",
-      "downloadBytes": 20602,
+      "sha256": "d9c81b33bdaa35fa38172a26b762273de5c39fdacd14f961b88b05ac826402fd",
+      "downloadBytes": 20620,
       "tiers": {
         "30": 111,
         "85": 1599,
         "60": 356,
-        "10": 48,
+        "10": 49,
         "100": 1
-      }
+      },
+      "answerRepairVersion": 1
     },
     {
       "id": "group-steam-racing",
@@ -10919,23 +10977,24 @@
         "kind": "steam-tag",
         "tag": "Racing"
       },
-      "answerFile": "group-steam-racing.45cd1512e7803005.json.gz",
-      "answerDirectory": "group-banks",
+      "answerFile": "group-steam-racing.a2f6c51fc79d9e23.json.gz",
+      "answerDirectory": "reviewed-banks",
       "funVersion": 7,
       "groupProfileVersion": 1,
       "dailyEligible": true,
       "partyEligible": true,
       "mixed": true,
       "ranking": "group-familiarity-v1",
-      "sha256": "45cd1512e7803005dd0d160022436fd2b02cbfd496be1e06300e6b1ed6c84a05",
-      "downloadBytes": 31589,
+      "sha256": "a2f6c51fc79d9e23c5cd7f55d22d8586105c042b0ce84ee5ebc4ffee284dd6c7",
+      "downloadBytes": 31596,
       "tiers": {
         "85": 3129,
         "60": 359,
         "10": 46,
         "30": 92,
         "100": 1
-      }
+      },
+      "answerRepairVersion": 1
     },
     {
       "id": "group-steam-real-time-tactics",
@@ -11047,23 +11106,24 @@
         "kind": "steam-tag",
         "tag": "Resource Management"
       },
-      "answerFile": "group-steam-resource-management.bf8abf7e08f8657c.json.gz",
-      "answerDirectory": "group-banks",
+      "answerFile": "group-steam-resource-management.f83567c7d70a92c1.json.gz",
+      "answerDirectory": "reviewed-banks",
       "funVersion": 7,
       "groupProfileVersion": 1,
       "dailyEligible": true,
       "partyEligible": true,
       "mixed": true,
       "ranking": "group-familiarity-v1",
-      "sha256": "bf8abf7e08f8657c358a7439aa4ee6c67fd3df1bbf76659b5a5ec38d9829105d",
-      "downloadBytes": 31293,
+      "sha256": "f83567c7d70a92c1f9727fbbe8e66af16fcd9d556c26f008b01b4d987f928d1c",
+      "downloadBytes": 31303,
       "tiers": {
         "85": 2798,
         "30": 104,
         "60": 438,
         "10": 56,
         "100": 1
-      }
+      },
+      "answerRepairVersion": 1
     },
     {
       "id": "group-steam-retro",
@@ -11207,23 +11267,24 @@
         "kind": "steam-tag",
         "tag": "Sandbox"
       },
-      "answerFile": "group-steam-sandbox.6d09c6b745b82e9a.json.gz",
-      "answerDirectory": "group-banks",
+      "answerFile": "group-steam-sandbox.1331c930bd20f0f5.json.gz",
+      "answerDirectory": "reviewed-banks",
       "funVersion": 7,
       "groupProfileVersion": 1,
       "dailyEligible": true,
       "partyEligible": true,
       "mixed": true,
       "ranking": "group-familiarity-v1",
-      "sha256": "6d09c6b745b82e9a2dbfb27b2343291782b4ca69cc23731d896f4a3fca094fa4",
-      "downloadBytes": 46715,
+      "sha256": "1331c930bd20f0f50249ca48fc04bd0c856e0e8aede892f0bc989b640e6c3abd",
+      "downloadBytes": 46721,
       "tiers": {
         "85": 3607,
         "30": 326,
         "60": 956,
         "10": 248,
         "100": 1
-      }
+      },
+      "answerRepairVersion": 1
     },
     {
       "id": "group-steam-sci-fi",
@@ -11271,23 +11332,24 @@
         "kind": "steam-tag",
         "tag": "Shooter"
       },
-      "answerFile": "group-steam-shooter.a1e80b83c9b0d437.json.gz",
-      "answerDirectory": "group-banks",
+      "answerFile": "group-steam-shooter.117d525c645e284b.json.gz",
+      "answerDirectory": "reviewed-banks",
       "funVersion": 7,
       "groupProfileVersion": 1,
       "dailyEligible": true,
       "partyEligible": true,
       "mixed": true,
       "ranking": "group-familiarity-v1",
-      "sha256": "a1e80b83c9b0d437779b177025577923d84189ac78ecac5fdb8ba3b37df3a416",
-      "downloadBytes": 86486,
+      "sha256": "117d525c645e284bdb6508037a013f9fb9096d3b81928a8e4537b43e0c375c0c",
+      "downloadBytes": 86505,
       "tiers": {
         "85": 7995,
         "60": 1087,
         "30": 367,
         "10": 280,
         "100": 1
-      }
+      },
+      "answerRepairVersion": 1
     },
     {
       "id": "group-steam-side-scroller",
@@ -11328,30 +11390,31 @@
       "topic": "SIMULATION",
       "group": "group-steam-single-tag",
       "source": "Steam community tags via SteamSpy; full retained tag membership, 2026-10-23. Names reconciled with the recorded Steam catalog.",
-      "answerCount": 18987,
-      "familiarCount": 800,
-      "identityHash": "a285454fee708dda62fb903f877caea6a349b6f6e3c328166993d9e61033e45c",
+      "answerCount": 18988,
+      "familiarCount": 801,
+      "identityHash": "eda0627fe809df2fef8b56ad780777cbab4495c0dec713425cbea2d3210c8cc1",
       "predicate": {
         "kind": "steam-tag",
         "tag": "Simulation"
       },
-      "answerFile": "group-steam-simulation.0a5400b1f8530b1e.json.gz",
-      "answerDirectory": "group-banks",
+      "answerFile": "group-steam-simulation.8a85c6ae0f670860.json.gz",
+      "answerDirectory": "reviewed-banks",
       "funVersion": 7,
       "groupProfileVersion": 1,
       "dailyEligible": true,
       "partyEligible": true,
       "mixed": true,
       "ranking": "group-familiarity-v1",
-      "sha256": "0a5400b1f8530b1e167271c26e789597823816444b5c7045f174f8c6eb139ee9",
-      "downloadBytes": 177734,
+      "sha256": "8a85c6ae0f6708603bdbf3103cb8bb806674e729f7d051519e66a47603610419",
+      "downloadBytes": 177756,
       "tiers": {
         "85": 16061,
         "30": 503,
         "60": 2125,
-        "10": 297,
+        "10": 298,
         "100": 1
-      }
+      },
+      "answerRepairVersion": 1
     },
     {
       "id": "group-steam-singleplayer",
@@ -11367,23 +11430,24 @@
         "kind": "steam-tag",
         "tag": "Singleplayer"
       },
-      "answerFile": "group-steam-singleplayer.175ef958e8dbc72a.json.gz",
-      "answerDirectory": "group-banks",
+      "answerFile": "group-steam-singleplayer.e78ded82f4d86966.json.gz",
+      "answerDirectory": "reviewed-banks",
       "funVersion": 7,
       "groupProfileVersion": 1,
       "dailyEligible": true,
       "partyEligible": true,
       "mixed": true,
       "ranking": "group-familiarity-v1",
-      "sha256": "175ef958e8dbc72abd554f5d0e134ebf1d5cb6c1f785bdf2605bea6ab7adb51c",
-      "downloadBytes": 459218,
+      "sha256": "e78ded82f4d869668dcaab24efcf1e0da57f01cb1869361a920a3fbb664e67fe",
+      "downloadBytes": 459267,
       "tiers": {
         "85": 43647,
         "60": 5577,
         "10": 778,
         "30": 1407,
         "100": 1
-      }
+      },
+      "answerRepairVersion": 1
     },
     {
       "id": "group-steam-souls-like",
@@ -11680,30 +11744,31 @@
       "topic": "STRATEGY",
       "group": "group-steam-single-tag",
       "source": "Steam community tags via SteamSpy; full retained tag membership, 2026-10-23. Names reconciled with the recorded Steam catalog.",
-      "answerCount": 18732,
-      "familiarCount": 814,
-      "identityHash": "929dca653dc812d0d234d6ef43d64fb11ab20dbeb60c7f3fb8b5adfa8ce01aae",
+      "answerCount": 18733,
+      "familiarCount": 815,
+      "identityHash": "ecf2ee26243023e5af48b2e52623ddae841d035e809d27b5b45c190108a4624f",
       "predicate": {
         "kind": "steam-tag",
         "tag": "Strategy"
       },
-      "answerFile": "group-steam-strategy.fa52a348a1b835c7.json.gz",
-      "answerDirectory": "group-banks",
+      "answerFile": "group-steam-strategy.35814a3f89acb08b.json.gz",
+      "answerDirectory": "reviewed-banks",
       "funVersion": 7,
       "groupProfileVersion": 1,
       "dailyEligible": true,
       "partyEligible": true,
       "mixed": true,
       "ranking": "group-familiarity-v1",
-      "sha256": "fa52a348a1b835c7c0db8250611ba9d935213dfcca7ace922236a278112e093b",
-      "downloadBytes": 168389,
+      "sha256": "35814a3f89acb08b4998368f045d5c99486a0a040a659024888fe61705f2a5b8",
+      "downloadBytes": 168424,
       "tiers": {
         "85": 15904,
         "60": 2013,
-        "10": 284,
+        "10": 285,
         "30": 530,
         "100": 1
-      }
+      },
+      "answerRepairVersion": 1
     },
     {
       "id": "group-steam-stylized",
@@ -11879,23 +11944,24 @@
         "kind": "steam-tag",
         "tag": "Tactical"
       },
-      "answerFile": "group-steam-tactical.2ebb19e2690bb679.json.gz",
-      "answerDirectory": "group-banks",
+      "answerFile": "group-steam-tactical.b54aa7e25cbd7db0.json.gz",
+      "answerDirectory": "reviewed-banks",
       "funVersion": 7,
       "groupProfileVersion": 1,
       "dailyEligible": true,
       "partyEligible": true,
       "mixed": true,
       "ranking": "group-familiarity-v1",
-      "sha256": "2ebb19e2690bb67999950592f5601e46cc6e55eade0932238c91a9116976ca78",
-      "downloadBytes": 42368,
+      "sha256": "b54aa7e25cbd7db0cda74bbc5077fc76aa68ba152b1a0b8a890459fbd0b81db4",
+      "downloadBytes": 42393,
       "tiers": {
         "85": 3567,
         "30": 180,
         "60": 569,
         "10": 126,
         "100": 1
-      }
+      },
+      "answerRepairVersion": 1
     },
     {
       "id": "group-steam-tanks",
@@ -11936,30 +12002,31 @@
       "topic": "TEAM-BASED",
       "group": "group-steam-single-tag",
       "source": "Steam community tags via SteamSpy; full retained tag membership, 2026-10-23. Names reconciled with the recorded Steam catalog.",
-      "answerCount": 1379,
-      "familiarCount": 172,
-      "identityHash": "df72e2dfeec9627195bded906ae7fc7c56abcc2f0a9bd81a8f3c2a2f2172dc97",
+      "answerCount": 1380,
+      "familiarCount": 173,
+      "identityHash": "977d072bba04c71657a65251f1506e72c28457e33eefa52558f98d9205b24249",
       "predicate": {
         "kind": "steam-tag",
         "tag": "Team-Based"
       },
-      "answerFile": "group-steam-team-based.a934113acb1a48a7.json.gz",
-      "answerDirectory": "group-banks",
+      "answerFile": "group-steam-team-based.5d3099c629f71e9f.json.gz",
+      "answerDirectory": "reviewed-banks",
       "funVersion": 7,
       "groupProfileVersion": 1,
       "dailyEligible": true,
       "partyEligible": true,
       "mixed": true,
       "ranking": "group-familiarity-v1",
-      "sha256": "a934113acb1a48a75e486bf7fcb0913f1291ae7caa648326319ea507607545c5",
-      "downloadBytes": 13537,
+      "sha256": "5d3099c629f71e9fc0599aac084a09c61068a50f7feff385347c9ed6d8bf5ae6",
+      "downloadBytes": 13541,
       "tiers": {
         "85": 1045,
         "60": 161,
-        "10": 88,
+        "10": 89,
         "30": 84,
         "100": 1
-      }
+      },
+      "answerRepairVersion": 1
     },
     {
       "id": "group-steam-text-based",
@@ -12007,23 +12074,24 @@
         "kind": "steam-tag",
         "tag": "Third Person"
       },
-      "answerFile": "group-steam-third-person.b44bf3f823fa41cc.json.gz",
-      "answerDirectory": "group-banks",
+      "answerFile": "group-steam-third-person.b90421ab511db554.json.gz",
+      "answerDirectory": "reviewed-banks",
       "funVersion": 7,
       "groupProfileVersion": 1,
       "dailyEligible": true,
       "partyEligible": true,
       "mixed": true,
       "ranking": "group-familiarity-v1",
-      "sha256": "b44bf3f823fa41ccc2c738b3dace8a748999615932aaf26e6777a07332e9c690",
-      "downloadBytes": 73214,
+      "sha256": "b90421ab511db554afae6f0999cd3acd814adc7980d2d82759a68a423aeed131",
+      "downloadBytes": 73226,
       "tiers": {
         "85": 5982,
         "60": 933,
         "10": 276,
         "30": 376,
         "100": 1
-      }
+      },
+      "answerRepairVersion": 1
     },
     {
       "id": "group-steam-third-person-shooter",
@@ -12039,23 +12107,24 @@
         "kind": "steam-tag",
         "tag": "Third-Person Shooter"
       },
-      "answerFile": "group-steam-third-person-shooter.1198f45acb4ef388.json.gz",
-      "answerDirectory": "group-banks",
+      "answerFile": "group-steam-third-person-shooter.f84e3deaf35ad1d9.json.gz",
+      "answerDirectory": "reviewed-banks",
       "funVersion": 7,
       "groupProfileVersion": 1,
       "dailyEligible": true,
       "partyEligible": true,
       "mixed": true,
       "ranking": "group-familiarity-v1",
-      "sha256": "1198f45acb4ef38847a41f525d38195e34bed4f377f6b6ea603b246ee598d72e",
-      "downloadBytes": 22026,
+      "sha256": "f84e3deaf35ad1d977d5a2a1921c5fd2aa6b4346e6b30d14dbaabb30d245f9ca",
+      "downloadBytes": 22044,
       "tiers": {
         "85": 1679,
         "60": 263,
         "10": 104,
         "30": 109,
         "100": 1
-      }
+      },
+      "answerRepairVersion": 1
     },
     {
       "id": "group-steam-time-travel",
@@ -12160,30 +12229,31 @@
       "topic": "TOWER DEFENSE",
       "group": "group-steam-single-tag",
       "source": "Steam community tags via SteamSpy; full retained tag membership, 2026-10-23. Names reconciled with the recorded Steam catalog.",
-      "answerCount": 2112,
-      "familiarCount": 58,
-      "identityHash": "24856ae431088ed552f7c414ac968d8642dc4eec6dc87ea3a95f7774ac2dbe20",
+      "answerCount": 2113,
+      "familiarCount": 59,
+      "identityHash": "bb9ec88f00e6c6fb643e3cf02ed845122c69bfab6a464bb7c88a576d28ed927d",
       "predicate": {
         "kind": "steam-tag",
         "tag": "Tower Defense"
       },
-      "answerFile": "group-steam-tower-defense.f0ebbd758891069c.json.gz",
-      "answerDirectory": "group-banks",
+      "answerFile": "group-steam-tower-defense.cb14a9b6cfb80427.json.gz",
+      "answerDirectory": "reviewed-banks",
       "funVersion": 7,
       "groupProfileVersion": 1,
       "dailyEligible": true,
       "partyEligible": true,
       "mixed": true,
       "ranking": "group-familiarity-v1",
-      "sha256": "f0ebbd758891069c4b26e6acbab87527b0927de49bab3ce5f2b5544e319d68e0",
-      "downloadBytes": 19060,
+      "sha256": "cb14a9b6cfb804276936c9eb771d52829883b47a9af3b44dbba18bbc9e96d027",
+      "downloadBytes": 19070,
       "tiers": {
         "85": 1862,
-        "10": 13,
+        "10": 14,
         "60": 191,
         "30": 45,
         "100": 1
-      }
+      },
+      "answerRepairVersion": 1
     },
     {
       "id": "group-steam-trading",
@@ -12327,23 +12397,24 @@
         "kind": "steam-tag",
         "tag": "Turn-Based"
       },
-      "answerFile": "group-steam-turn-based.80f69fcfb668d848.json.gz",
-      "answerDirectory": "group-banks",
+      "answerFile": "group-steam-turn-based.411f4197da6af61c.json.gz",
+      "answerDirectory": "reviewed-banks",
       "funVersion": 7,
       "groupProfileVersion": 1,
       "dailyEligible": true,
       "partyEligible": true,
       "mixed": true,
       "ranking": "group-familiarity-v1",
-      "sha256": "80f69fcfb668d848f2a611f84a92979b60cd52d79307b9e3b6b7b135edcd53ca",
-      "downloadBytes": 24388,
+      "sha256": "411f4197da6af61cde48ad8e4af705fcde53623e138a149625afa70799371f99",
+      "downloadBytes": 24400,
       "tiers": {
         "85": 1594,
         "10": 51,
         "60": 528,
         "30": 142,
         "100": 1
-      }
+      },
+      "answerRepairVersion": 1
     },
     {
       "id": "group-steam-turn-based-tactics",
@@ -12551,23 +12622,24 @@
         "kind": "steam-tag",
         "tag": "War"
       },
-      "answerFile": "group-steam-war.37bd387c971313df.json.gz",
-      "answerDirectory": "group-banks",
+      "answerFile": "group-steam-war.42df7d56abc31888.json.gz",
+      "answerDirectory": "reviewed-banks",
       "funVersion": 7,
       "groupProfileVersion": 1,
       "dailyEligible": true,
       "partyEligible": true,
       "mixed": true,
       "ranking": "group-familiarity-v1",
-      "sha256": "37bd387c971313df5f3f01557ffa22a998892c7f4a509a7dc4cd787aab963962",
-      "downloadBytes": 28576,
+      "sha256": "42df7d56abc3188862652a5f97e65ddcbfb72da2a8e2d69a81520754ef645521",
+      "downloadBytes": 28590,
       "tiers": {
         "85": 2171,
         "60": 383,
         "30": 148,
         "10": 100,
         "100": 1
-      }
+      },
+      "answerRepairVersion": 1
     },
     {
       "id": "group-steam-wargame",
@@ -85810,30 +85882,31 @@
       "topic": "ANIMATION",
       "group": "group-movie-genre",
       "source": "TMDB factual genre memberships in the retained released-movie snapshot; DATA-SOURCES.md.",
-      "answerCount": 20860,
-      "familiarCount": 413,
-      "identityHash": "22294f62a00dd239ed81085c28739f290775234c1f0aed871a67ec41ce789ad4",
+      "answerCount": 20861,
+      "familiarCount": 415,
+      "identityHash": "b44272f5c5b7e37d2db228f976aadd3295cfcf425e919a10904afe732717ec85",
       "predicate": {
         "kind": "film-genre",
         "genre": "Animation"
       },
-      "answerFile": "group-movie-genre-animation.972a6227f106d339.json.gz",
-      "answerDirectory": "group-banks",
+      "answerFile": "group-movie-genre-animation.a1c2de85a2b6e1d7.json.gz",
+      "answerDirectory": "reviewed-banks",
       "funVersion": 7,
       "groupProfileVersion": 1,
       "dailyEligible": true,
       "partyEligible": true,
       "mixed": true,
       "ranking": "group-familiarity-v1",
-      "sha256": "972a6227f106d3396e51d763b580bf0d63a3def7efaf72fb9f0468d4d4504eea",
-      "downloadBytes": 260317,
+      "sha256": "a1c2de85a2b6e1d7c7e3f5b558a6da50ee3e3624091fd99f874d7ca0bee06d4b",
+      "downloadBytes": 260323,
       "tiers": {
         "85": 19051,
-        "60": 1395,
-        "30": 371,
+        "60": 1394,
+        "30": 373,
         "10": 42,
         "100": 1
-      }
+      },
+      "answerRepairVersion": 1
     },
     {
       "id": "group-movie-genre-crime",
@@ -92446,30 +92519,31 @@
       "topic": "MYSTERY",
       "group": "group-show-genre",
       "source": "TVmaze full retained show index and genre memberships; CC BY-SA 4.0.",
-      "answerCount": 3063,
-      "familiarCount": 603,
-      "identityHash": "8ac3f7d94517a0ccb20bc2adf0e40843996d8afb5ecc0bfa748a0073b4ebe42a",
+      "answerCount": 3065,
+      "familiarCount": 605,
+      "identityHash": "d362ab426873a1ef8054827dd397bc44e5840b5bd15cb19e1023146798ec613d",
       "predicate": {
         "kind": "tv-genre",
         "genre": "Mystery"
       },
-      "answerFile": "group-show-genre-mystery.76209429002bec19.json.gz",
-      "answerDirectory": "group-banks",
+      "answerFile": "group-show-genre-mystery.16171d88becb407c.json.gz",
+      "answerDirectory": "reviewed-banks",
       "funVersion": 7,
       "groupProfileVersion": 1,
       "dailyEligible": true,
       "partyEligible": true,
       "mixed": true,
       "ranking": "group-familiarity-v1",
-      "sha256": "76209429002bec1979e136a54d28113280859ac0499636e186961036c18c75e8",
-      "downloadBytes": 29313,
+      "sha256": "16171d88becb407cfbcc9f1183f6af274faede5ed1e138328025f9dcb940e390",
+      "downloadBytes": 29318,
       "tiers": {
         "60": 1347,
         "85": 1112,
-        "30": 585,
+        "30": 587,
         "100": 1,
         "10": 18
-      }
+      },
+      "answerRepairVersion": 1
     },
     {
       "id": "group-show-title-kind-metallic-element",

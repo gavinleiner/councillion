@@ -1,4 +1,3 @@
-import {DISTINCT_PACKS} from './distinct-question-catalog.js';
 import { PACKS, PLAY_PACKS, REVIEWED_PACKS, ORIGINAL_PLAY_PACKS, MIXED_PACKS, PARTY_PACKS, PACK_BY_ID, PARTY_IDS, canonicalQuestionId, answerCount } from './data.js';
 import {normalize,matchAnswer,resolveAnswer} from './answer-matching.js';
 export {normalize,matchAnswer,resolveAnswer,typoDistance} from './answer-matching.js';
@@ -39,10 +38,8 @@ export function tier(points){return points>=100?{name:'KRILLION',icon:'✦',colo
 export function partyDeck(rng=Math.random,seen=[]){const excluded=new Set(seen.map(canonicalQuestionId));return balancedQuestionDeck(PARTY_PACKS.filter(p=>!excluded.has(canonicalQuestionId(p.id))),{rng,recent:seen.slice(-6).map(id=>PACK_BY_ID.get(canonicalQuestionId(id))?.family).filter(Boolean)});}
 export function reshufflePracticeQueue(pending=[],rng=Math.random,previousSelection=null){
  const ids=new Set(pending);
- // These IDs did not exist in the weighted release, so adding them during its
- // one-time migration cannot replay a question that user had already drawn.
- if(pending.length&&previousSelection&&previousSelection!=='20261025-expansion-v1')for(const p of DISTINCT_PACKS)ids.add(p.id);
- if(pending.length&&previousSelection==='20261023-balanced-v1')for(const p of MIXED_PACKS)if(p.id.startsWith('group-open-'))ids.add(p.id);
+ // Filter saved queues against the current admitted pool. An update must not
+ // append every generated recipe, or reintroduce already-played questions.
  return balancedQuestionDeck(MIXED_PACKS.filter(p=>ids.has(p.id)),{rng});
 }
 export function practiceDraw(pending=[],featured=null,rng=Math.random){

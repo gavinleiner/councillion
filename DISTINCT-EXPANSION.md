@@ -1,3 +1,5 @@
+> Superseded by `20261025-reviewed-standard-v1`: **227 questions** are individually admitted for normal play. The source inventories described below remain archived/optional. See [QUESTION-STANDARD.md](QUESTION-STANDARD.md) for the correction and independent answer checks.
+
 # First distinct-topic expansion
 
 Release `20261025-expansion-v1` has **1,009 normal questions**, including all 98 approved tryout prompts. This batch adds 590 inventories across nine subjects. **The requested 5,000-question normal pool is not complete.** The old generated source archive remains optional and is not counted as live normal content.
