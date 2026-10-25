@@ -7,13 +7,14 @@ import {PartySession} from '../party.js';
 import {partyPack} from '../engine.js';
 import {loadQuestionData} from '../question-data.js';
 import {ANSWER_MATCHING_VERSION} from '../answer-matching.js';
+import {TOURNAMENT_BUILD} from '../tournament.js';
 import {QUESTION_QUALITY_BUILD} from '../question-quality.js';
 const env=await initializeTestEnvironment({projectId:'demo-councillion',database:{host:'127.0.0.1',port:9000,rules:await readFile(new URL('../database.rules.json',import.meta.url),'utf8')}}),sessions=[],errors={};
 async function wait(fn,label){const end=Date.now()+30000;while(Date.now()<end){if(await fn())return;await new Promise(r=>setTimeout(r,25));}throw Error(label+' '+JSON.stringify(errors));}
 function client(uid){errors[uid]=[];const c={...sdk,db:env.authenticatedContext(uid,{firebase:{sign_in_provider:'google.com'}}).database()},s=new PartySession(()=>{},e=>errors[uid].push(e),()=>({id:uid,expires:Date.now()/1000+3600}),async()=>({uid}),async()=>c);sessions.push(s);return s;}
 try{
  await env.clearDatabase();const host=client('answerhost'),friend=client('answerfriend'),old=client('oldmatcher');
- await host.create('Host',{isPrivate:true,mode:'ranked',maxPlayers:2});assert.ok(host.meta.catalogBuild.includes('-'+ANSWER_MATCHING_VERSION+'-'));assert.ok(host.meta.catalogBuild.endsWith(QUESTION_QUALITY_BUILD));
+ await host.create('Host',{isPrivate:true,mode:'ranked',maxPlayers:2});assert.ok(host.meta.catalogBuild.includes('-'+ANSWER_MATCHING_VERSION+'-'));assert.ok(host.meta.catalogBuild.endsWith(QUESTION_QUALITY_BUILD+'-'+TOURNAMENT_BUILD));
  await friend.join('Friend',host.code);await wait(()=>host.connected&&friend.connected&&host.state.players.length===2,'roster');host.start();await wait(()=>friend.state.phase==='playing','playing');
  for(const s of [host,friend])clearInterval(s.timer);
  host.state.packIds=['fun-minecraft'];host.state.round=1;host.state.turn=0;host.state.deadline=Date.now()+600000;await loadQuestionData([partyPack(host.state)]);await host.broadcast();await wait(()=>friend.state.packIds[0]==='fun-minecraft'&&friend.state.turn===0,'same bank');

@@ -38,6 +38,7 @@ export const BADGES=[
 const titles=(scope,field,goals)=>goals.map(([target,name])=>({id:scope+'-'+field+'-'+target,name,scope,field,target,description:(scope==='all'?'Across all modes':scope.toUpperCase())+' · '+target.toLocaleString()+' '+({allAnswers:'valid answers',allRare:'answers worth 85+ points',allKrillions:'100-point answers',allPoints:'rarity points',dailyDives:'completed Daily Dives',dailyStreak:'consecutive Daily days',practiceDives:'completed Practice Dives',bestDive:'points in one dive',deepestDive:'metres in one dive',perfectDives:'dives with seven valid answers',caseCorrect:'correct case answers',caseClears:'five-answer case challenges cleared',wins:'Puffer wins',finished:'completed Puffer matches',peakRating:'peak Court Rating'}[field]??field),test:s=>(field==='peakRating'?Math.max(s.peakRating??0,s.lifetimePeakRating??0):(s[field]??0))>=target}));
 BADGES.forEach(b=>{b.scope='puffer';});
 BADGES.push(
+ {id:'tournament-champion',name:'TOURNAMENT CHAMPION',scope:'tournament',description:'Win a completed five-game Puffer tournament.',icon:'trophy',test:s=>(s.tournamentWins??0)>0},
  ...titles('all','allAnswers',[[100,'100 CLUB'],[250,'WELL READ'],[500,'ON RECORD'],[1000,'ENCYCLOPEDIC'],[2500,'THE ARCHIVE']]),
  ...titles('all','allRare',[[10,'OFF THE BEATEN PATH'],[25,'DEEP CUT'],[50,'HIDDEN KNOWLEDGE'],[100,'DEEP RESEARCH'],[250,'SPECIALIST']]),
  ...titles('all','allKrillions',[[1,'ONE IN A KRILLION'],[3,'RARE FIND'],[10,'COLLECTOR'],[25,'EXCEPTIONAL'],[50,'ANOMALY']]),
@@ -55,7 +56,8 @@ BADGES.push(
  ...titles('puffer','peakRating',[[1200,'BARRISTER'],[1400,'MAGISTRATE'],[1800,'HIGH COURT'],[2100,'CROWNED']])
 );
 Object.assign(TRACKERS,{bestDive:{label:'BEST DIVE',value:s=>s.bestDive.toLocaleString()},deepestDive:{label:'DEEPEST DIVE',value:s=>s.deepestDive.toLocaleString()+'m'},dailyDives:{label:'DAILY DIVES',value:s=>s.dailyDives.toLocaleString()},dailyStreak:{label:'BEST DAILY STREAK',value:s=>s.dailyStreak.toLocaleString()},practiceDives:{label:'PRACTICE DIVES',value:s=>s.practiceDives.toLocaleString()},caseCorrect:{label:'CORRECT CASE ANSWERS',value:s=>s.caseCorrect.toLocaleString()},caseClears:{label:'CASE CHALLENGES',value:s=>s.caseClears.toLocaleString()},allAnswers:{label:'ALL MODE ANSWERS',value:s=>s.allAnswers.toLocaleString()},allKrillions:{label:'ALL KRILLIONS',value:s=>s.allKrillions.toLocaleString()}});
-export function emptyCareer(){return {...SOLO_DEFAULTS,rating:RANK_START,peakRating:RANK_START,lifetimePeakRating:0,lifetimeRanked:0,ranked:0,finished:0,matches:0,wins:0,losses:0,voids:0,podiums:0,points:0,answers:0,rare:0,krillions:0,bestWinStreak:0,currentWinStreak:0,bestAnswerStreak:0,fastestMs:0,cleanWins:0,records:[]};}
+Object.assign(TRACKERS,{tournamentWins:{label:'TOURNAMENT WINS',value:s=>(s.tournamentWins??0).toLocaleString()},tournamentsFinished:{label:'TOURNAMENTS',value:s=>(s.tournamentsFinished??0).toLocaleString()}});
+export function emptyCareer(){return {...SOLO_DEFAULTS,rating:RANK_START,peakRating:RANK_START,lifetimePeakRating:0,lifetimeRanked:0,ranked:0,finished:0,matches:0,wins:0,losses:0,voids:0,podiums:0,points:0,answers:0,rare:0,krillions:0,bestWinStreak:0,currentWinStreak:0,bestAnswerStreak:0,fastestMs:0,cleanWins:0,tournamentWins:0,tournamentsFinished:0,tournamentRecords:[],records:[]};}
 export function careerFromReceipts(receipts={}){
  const s=emptyCareer(),seen=new Set(),seasonRatings=new Map();
  const records=Object.entries(receipts??{}).filter(([,r])=>r?.version===1&&Number.isFinite(r.at)).sort((a,b)=>a[1].at-b[1].at||a[0].localeCompare(b[0]));
@@ -106,5 +108,6 @@ export function matchResult(state,room,careers={},now=Date.now()){
  const places=players.map(p=>({id:p.id,place:p.id===winner?1:Math.max(2,n-(p.eliminationOrder??0)),rating:state.matchRatings?.[p.id]?.rating??careers[p.id]?.rating??RANK_START,ranked:state.matchRatings?.[p.id]?.ranked??careers[p.id]?.ranked??0,streak:state.matchRatings?.[p.id]?.streak??rankedWinStreak((careers[p.id]?.records??[]).filter(r=>r.game!==state.matchId)),forfeit:!!p.forfeit,clutch:clutch&&state.clutchFinish.ids.includes(p.id)}));
  const deltas=rated?ratingDeltas(places):{};
  const rows=Object.fromEntries(players.map(p=>[p.id,{version:1,ratingSeason:RANK_SEASON,room,game:state.matchId,at:now,mode:state.mode??'casual',roster:key,playersCount:n,counted,rated,win:counted&&p.id===winner,forfeit:!!p.forfeit,place:places.find(q=>q.id===p.id).place,score:p.score||0,answers:p.answers||0,rare:p.rare||0,krillions:p.krillions||0,bestStreak:p.bestStreak||0,fastestMs:p.fastestMs||0,heartsLost:p.heartsLost||0,delta:deltas[p.id]??0}]));
- return {game:state.matchId,room,at:now,reason:ratingReason,rated,counted,winner:winner||'',players:rows};
+ const tournament=state.tournament,active=tournament?.active;
+ return {game:state.matchId,room,at:now,reason:ratingReason,rated,counted,winner:winner||'',players:rows,...(active?.game===state.matchId?{tournament:tournament.id,tournamentRound:active.round,tournamentKind:active.kind}:{})};
 }

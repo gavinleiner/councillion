@@ -1,6 +1,6 @@
 # Councillion
 
-Current release: `20261024-open-v1`. The website opens publicly without a password. Puffer still requires verified Google sign-in for every account; there is no player email allowlist. Earlier entrance-screen descriptions below describe the previous private-entry presentation.
+Current release: `20261024-tournament-v1`. The website opens publicly without a password. Puffer still requires verified Google sign-in for every account; there is no player email allowlist. Earlier entrance-screen descriptions below describe the previous private-entry presentation.
 
 Hosting and joining renew the Firebase Google session, wait for the database connection, and synchronize the server clock before writing timestamp-validated room data. Public directory entries include the catalog build so quick play does not select incompatible rooms. Expired-room errors identify the host’s old room instead of asking the joining player to refresh repeatedly. An offline connection times out with a retry instruction. Backend authentication, moderation, rank records and special account permissions are unchanged.
 
@@ -22,6 +22,16 @@ Future Counsel’s pixel ocean trivia game, inspired by Krillion. Original clien
 - **Results:** the full dive unlocks a seven-column log, score guide, searchable answer accordions, rarity filters, and pagination. Answer banks are hidden during all seven prompts.
 
 Visible rarity families follow the supplied image: Krillion, Deep Cut, Rare, Schooler, and Plankton. Both supplied reference packs preserve every canonical entry and score. The library exposes **3,188 catalogued categories**, including optional specialist challenges. The stricter tryout policy admits **153** to ordinary selection and **151** to Puffer. Steam tag intersections, console facets, roster/position filters and other narrow specialist categories stay outside random games. Historical banks are retained for compatibility, but overly narrow and unreliable categories cannot enter new random games. A full integrity scan covers **5,703,098 shipped canonical rows and 2,092,737 aliases**, including historical data. Exact inventory coverage and editorial repairs are documented in [QUESTION-AUDIT.md](QUESTION-AUDIT.md). Counts overlap between categories. Inventories are finite and can miss a valid answer; Daily and Puffer stop on exhaustion instead of repeating. Scores remain editorial familiarity estimates rather than measured player choices or Krillion's private grading.
+
+## Puffer tournaments
+
+The Tournament button hosts a five-game ranked series for two to six Google-signed-in players. The ready roster locks at the first game. Reconnects and host transfer retain the series, scores and revealed-question history. Spectators may watch; they cannot enter a series midway. Everyone in the roster must reconnect and ready up between games. The host starts each game. The next series can admit a fresh roster.
+
+Tournament points are separate from Court Rating: a six-player game awards 6, 4, 3, 2, 1, 0 points; a duel awards 2, 0. In general, first earns the player count and the remaining places earn player count minus place. Every eligible game still records its normal rank result. A game that fails the ordinary eligibility checks (including minimum duration and two answering players) is replayed without series points. Most points after five games wins; game wins break a points tie. A remaining tie gets one deciding Puffer game for the tied leaders only, with its ordinary rating result and no extra series points.
+
+Intermission standings animate point totals and position changes, identify overtakes and the points gap to the leader, and show exact mathematical title contention rather than estimated win percentages. Reduced motion skips these animations. A final podium uses the existing buddies, quiet underwater lighting and bubbles. Completed series save immutable references to all five ranked match receipts and any decider. Per-account histories restore after signing in, winners receive a permanent trophy for each win, and the optional Tournament Champion text title uses the existing single-title slot. Profiles show saved tournaments, game placements and rating changes. Early cancellation awards no tournament trophy; already saved match results remain.
+
+The database validates tournament totals against the referenced sealed matches, participant counts, distinct round IDs, winner/tie resolution and title proof. Like normal Puffer, the room host referees gameplay; this does not prevent a malicious host from falsifying the underlying game state. No Google email is included in tournament receipts. Tournament data shares the existing signed-in-player visibility of careers.
 
 ## Estimated score curve
 
