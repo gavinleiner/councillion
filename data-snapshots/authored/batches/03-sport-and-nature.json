@@ -1,0 +1,342 @@
+{
+  "version": 1,
+  "questions": [
+    {
+      "id": "authored-combat-sports",
+      "concept": "combat-sports",
+      "family": "sports",
+      "topic": "One on one",
+      "prompt": "Name a combat sport or established martial art.",
+      "scope": "Named competitive fighting disciplines and established martial arts count, including forms practiced without full-contact competition. Fictional styles do not count.",
+      "format": "situations",
+      "rationale": "A concrete familiar entry point and a wider factual tail, following the saved review; this asks for a different activity or object relationship rather than a tag combination.",
+      "familiar": [
+        "Boxing",
+        "Wrestling",
+        "Karate",
+        "Judo",
+        "Taekwondo",
+        "Brazilian jiu-jitsu"
+      ],
+      "exclude": [
+        "Quidditch",
+        "Basketball"
+      ],
+      "references": [
+        "https://www.britannica.com/sports/martial-art",
+        "https://olympics.com/en/sports/"
+      ],
+      "answers": {
+        "10": "Boxing|Wrestling|Karate|Judo|Taekwondo~Tae kwon do|Kung fu~Kungfu|Mixed martial arts~MMA|Kickboxing",
+        "30": "Brazilian jiu-jitsu~BJJ|Jujutsu~Jujitsu~Japanese jiu-jitsu|Muay Thai|Sumo|Fencing|Kendo|Aikido|Krav Maga|Sambo|Tai chi~Taijiquan|Capoeira|Greco-Roman wrestling|Freestyle wrestling|Submission wrestling",
+        "60": "Muay boran|Lethwei|Sanda~Sanshou|Wushu|Savate|Pankration|Shooto|Shoot wrestling|Catch wrestling|Vale tudo|Combat sambo|Sport sambo|Shuai jiao|Bokh~Bökh|Pehlwani~Kushti|Gouren|Glima~Glíma|Schwingen|Kurash|Alysh|Ssireum|Belt wrestling|Luta livre|Luta livre esportiva|Luta marajoara|Beach wrestling|Collegiate wrestling~Folkstyle wrestling|Cornish wrestling|Cumberland and Westmorland wrestling|Bartitsu|Hapkido|Tang soo do|Jeet kune do|Wing chun|Shaolin kung fu|Hung gar|Baguazhang|Xingyiquan|Bajiquan|Choy li fut|Praying mantis kung fu|Silat|Pencak silat|Arnis~Eskrima~Kali|Dambe|Laamb~Senegalese wrestling",
+        "85": "Naginatajutsu|Naginata|Sojutsu|Kenjutsu|Iaido|Iaijutsu|Jodo~Jōdō|Jojutsu|Bojutsu|Kobudo|Ninjutsu|Shorinji kempo|Nippon kempo|Kudo~Daido juku|Kyokushin karate|Shotokan karate|Goju-ryu|Shito-ryu|Wado-ryu|Uechi-ryu|Shorin-ryu|Enshin karate|Ashihara karate|Seidokaikan|Taekkyeon|Hwa rang do|Kuk sool won|Gatka|Kalaripayattu|Thang-ta|Malla-yuddha|Musti-yuddha|Mardani khel|Vovinam|Bokator|Pradal serey~Kun khmer|Bando|Naban|Banshay|Lerdrit|Dumog|Yaw-Yan|Panantukan|Pangamot|Donga~Suri stick fighting|Engolo|Nguni stick fighting|Bataireacht|Canne de combat|Singlestick|Historical European martial arts~HEMA|Longsword fencing|Rapier fencing|Sabre fencing|Foil fencing|Épée fencing~Epee fencing",
+        "100": "Qwan ki do"
+      }
+    },
+    {
+      "id": "authored-winter-sports",
+      "concept": "winter-sports",
+      "family": "sports",
+      "topic": "Cold competition",
+      "prompt": "Name a sport or recognized sporting discipline played on snow or ice.",
+      "scope": "Established ice and snow sports and competitive disciplines count. A sport merely played during the winter on an ordinary indoor court does not qualify.",
+      "format": "situations",
+      "rationale": "A concrete familiar entry point and a wider factual tail, following the saved review; this asks for a different activity or object relationship rather than a tag combination.",
+      "familiar": [
+        "Ice hockey",
+        "Curling",
+        "Figure skating",
+        "Snowboarding",
+        "Bobsleigh",
+        "Biathlon"
+      ],
+      "exclude": [
+        "Beach volleyball",
+        "Basketball"
+      ],
+      "references": [
+        "https://olympics.com/en/sports/winter-olympics",
+        "https://www.fis-ski.com/"
+      ],
+      "answers": {
+        "10": "Ice hockey|Figure skating|Snowboarding|Skiing|Curling|Speed skating|Bobsleigh~Bobsled|Luge|Skeleton",
+        "30": "Alpine skiing~Downhill skiing|Cross-country skiing~Nordic skiing|Ski jumping|Biathlon|Nordic combined|Freestyle skiing|Short-track speed skating~Short track|Slalom|Giant slalom|Super-G|Ski cross|Snowboard cross~Boardercross|Halfpipe|Snowboard slopestyle|Ski slopestyle|Ski halfpipe|Mogul skiing~Moguls|Aerial skiing~Aerials|Freeride skiing",
+        "60": "Bandy|Ringette|Broomball|Ice stock sport~Eisstock|Ice climbing|Ski mountaineering~Skimo|Telemark skiing|Ski orienteering|Ski archery|Winter triathlon|Winter pentathlon|Snowshoe racing|Snowshoeing|Dog sled racing~Sled dog racing|Skijoring|Ski ballet~Acroski|Snowkiting|Speed skiing|Ice speedway|Ice racing|Snowmobile racing|Snowmobile freestyle|Snow bike racing|Ice cross downhill~Ice cross|Ice canoeing|Ice sailing~Ice yachting|Ice cricket|Snow volleyball|Snow rugby|Snow golf|Snow polo|Snow kayaking|Snow boating",
+        "85": "Para ice hockey~Sledge hockey~Sled hockey|Wheelchair curling|Para alpine skiing|Para Nordic skiing|Para snowboarding|Para biathlon|Monobob|Two-man bobsleigh|Four-man bobsleigh|Singles luge|Doubles luge|Natural track luge|Synchronized skating|Ice dancing~Ice dance|Pair skating|Singles figure skating|Long-track speed skating|Marathon skating|Tour skating|Team pursuit speed skating|Mass-start speed skating|Ski flying|Snowboarding big air|Freeski big air|Parallel giant slalom snowboarding|Parallel slalom snowboarding|Dual moguls|Sledding~Tobogganing|Airboarding|Shovel racing|Snowskating|Speed riding|Snow sailing|Ski biking",
+        "100": "Yukigassen"
+      }
+    },
+    {
+      "id": "authored-motorsport-disciplines",
+      "concept": "motorsport-disciplines",
+      "family": "sports",
+      "topic": "Start your engines",
+      "prompt": "Name a motorsport or recognized motor-racing discipline.",
+      "scope": "Named kinds of competition involving motor vehicles count, on tracks, roads, dirt, snow, water or in the air. Individual driver names and car manufacturers do not.",
+      "format": "situations",
+      "rationale": "A concrete familiar entry point and a wider factual tail, following the saved review; this asks for a different activity or object relationship rather than a tag combination.",
+      "familiar": [
+        "Formula One",
+        "NASCAR",
+        "Rallying",
+        "Drag racing",
+        "Motocross",
+        "Karting"
+      ],
+      "exclude": [
+        "Marathon running",
+        "Tour de France"
+      ],
+      "references": [
+        "https://www.fia.com/sport",
+        "https://www.fim-moto.com/en/sports",
+        "https://www.uim.sport/"
+      ],
+      "answers": {
+        "10": "Formula One~F1~Formula 1|NASCAR|Rallying~Rally racing|Drag racing|Motocross|Karting~Go-kart racing|Motorcycle racing|IndyCar|Stock car racing",
+        "30": "Formula E|MotoGP|Superbike racing|Touring car racing|Sports car racing|Endurance racing|Drifting|Rallycross|Hillclimbing~Hill climb|Desert racing|Off-road racing|Sprint car racing|Dirt track racing|Truck racing|Monster truck racing|Supercross|Speedway|Motorcycle speedway|Powerboat racing|Air racing",
+        "60": "Formula 2~F2|Formula 3~F3|Formula 4~F4|Formula Ford|Formula Vee|Super Formula|Super GT|GT racing~Grand touring racing|GT3 racing|GT4 racing|Prototype racing|Le Mans Hypercar~Hypercar racing|LMP2 racing|One-make racing|Time attack|Autocross|Autotesting|Gymkhana|Auto slalom|Ice racing|Sand drag racing|Mud bogging|Rock crawling|Rock racing|Baja racing|Rally raid~Cross-country rally|Trophy truck racing|Stadium truck racing|Super truck racing|Legends car racing|Midget car racing|Quarter midget racing|Mini sprint racing|Supermodified racing|Late model racing|Banger racing|Demolition derby|Figure-eight racing~Figure 8 racing|Motorcycle trials|Enduro|Hard enduro|SuperEnduro|Supermoto|Flat track racing|Road racing|Sidecar racing|Ice speedway|Grass track racing|Long track speedway|Cross-country motorcycle racing|Hare scramble|Dirt drag racing",
+        "85": "Motorcycle land speed racing|Land speed racing|Watercross~Snowmobile watercross|Snowmobile racing|Snow bike racing|Personal watercraft racing~Jet ski racing|Offshore powerboat racing|Hydroplane racing|Circuit powerboat racing|Formula 1 powerboat racing~F1H2O|Hovercraft racing|Motorized lawn mower racing~Lawn mower racing|Tractor pulling|Truck pulling|Drift trike racing~Motorized drift trike racing|Solar car racing|Electric touring car racing|Electric motorcycle racing|Kartcross~Crosskart|Rally sprint|Regularity rally|Historic rallying|Vintage car racing|Historic motorsport|Aerobatic racing|Reno air racing|Paramotor racing|Drone racing",
+        "100": "Sprint boat racing~Jet sprint racing"
+      }
+    },
+    {
+      "id": "authored-bodyweight-exercises",
+      "concept": "bodyweight-exercises",
+      "family": "sports",
+      "topic": "No weights needed",
+      "prompt": "Name an exercise that can be done using your bodyweight instead of added weights.",
+      "scope": "Named exercises and recognized variations count, including floor exercises, holds and movements on a pull-up bar. A bar or bench can provide support; dumbbells and loaded barbells are not required.",
+      "format": "properties",
+      "rationale": "A concrete familiar entry point and a wider factual tail, following the saved review; this asks for a different activity or object relationship rather than a tag combination.",
+      "familiar": [
+        "Push-up",
+        "Squat",
+        "Lunge",
+        "Plank",
+        "Burpee",
+        "Pull-up"
+      ],
+      "exclude": [
+        "Barbell bench press",
+        "Dumbbell curl"
+      ],
+      "references": [
+        "https://www.acefitness.org/resources/everyone/exercise-library/",
+        "https://www.nhs.uk/live-well/exercise/strength-exercises/"
+      ],
+      "answers": {
+        "10": "Push-up~Pushup~Press-up|Squat|Lunge|Plank|Sit-up~Situp|Crunch|Burpee|Pull-up~Pullup|Chin-up~Chinup|Jumping jack~Star jump",
+        "30": "Mountain climber|Dip~Triceps dip|Wall sit|High knees|Butt kick~Butt kicks|Calf raise|Glute bridge|Leg raise|Bicycle crunch|Side plank|Russian twist|Superman|Bird dog|Dead bug|Bear crawl|Inchworm|Jump squat~Squat jump|Jump lunge|Step-up~Step up|Handstand|Handstand push-up|Pike push-up|Diamond push-up",
+        "60": "Reverse crunch|Flutter kick~Flutter kicks|Scissor kick~Scissor kicks|V-up|Hollow body hold~Hollow hold|Hollow rock|Arch hold|Arch rock|L-sit|V-sit|Pistol squat~Single-leg squat|Shrimp squat|Cossack squat|Sissy squat|Bulgarian split squat~Rear-foot-elevated split squat|Split squat|Reverse lunge|Side lunge~Lateral lunge|Walking lunge|Curtsy lunge|Skater jump|Broad jump|Box jump|Tuck jump|Frog jump|Bunny hop|Bounds~Bounding|Single-leg calf raise|Donkey calf raise|Wall push-up|Knee push-up|Incline push-up|Decline push-up|Wide push-up|Archer push-up|One-arm push-up~One arm push-up|Hindu push-up|Dive bomber push-up|Pseudo planche push-up|Clapping push-up|Explosive push-up|Scapular push-up|Scapular pull-up|Australian pull-up~Inverted row~Bodyweight row|Commando pull-up|Archer pull-up|Typewriter pull-up|Muscle-up~Muscle up|Bench dip|Straight bar dip|Parallel bar dip|Ring dip|Back extension|Hip thrust|Single-leg glute bridge|Donkey kick|Fire hydrant|Clamshell|Side-lying leg lift|Standing leg raise|Wall handstand|Shoulder tap|Plank jack|Plank up-down|Walking plank|Spiderman plank|Reverse plank|Copenhagen plank",
+        "85": "Nordic curl~Nordic hamstring curl|Reverse Nordic curl|Natural leg extension|Good morning~Bodyweight good morning|Jefferson curl~Bodyweight Jefferson curl|Single-leg deadlift~Bodyweight single-leg deadlift|Toe touch|Standing knee drive|Knee tuck|Hanging knee raise|Hanging leg raise|Toes-to-bar~Toes to bar|Windshield wiper|Dragon flag|Front lever|Back lever|Human flag|Planche|Frog stand|Crow pose|Crab walk|Duck walk|Lizard crawl|Crocodile crawl|Bunny plank|Bear hold|Bear plank|Prone swimmer|Reverse snow angel|Y-T-W raise~YTW raise|Wall angel|Prone cobra|Snow angel|Tabletop bridge|Full bridge|Shoulder bridge|Wall walk|Handstand walk|Rope climb|Side-to-side hop|Single-leg hop|Power skip|A-skip|B-skip|Duck under|Sit-through|Kick-through|Deck squat|Rolling squat|Candlestick|Candlestick roll|Rollover|Pancake stretch|Seated pike stretch|Forward fold|Downward dog|Upward dog|Cat-cow|Child's pose~Childs pose|Cobra stretch|Side bend|Torso rotation|Hip circle|Arm circle|Neck rotation|Wrist circle",
+        "100": "Russian dip"
+      }
+    },
+    {
+      "id": "authored-nba-regular-season-mvps",
+      "concept": "nba-regular-season-mvps",
+      "family": "sports",
+      "topic": "Most valuable",
+      "prompt": "Name a player who has won the NBA regular-season MVP award.",
+      "scope": "Winners of the main NBA regular-season Most Valuable Player award through the 2025–26 season count. Finals, All-Star and other leagues' MVP awards are different.",
+      "format": "situations",
+      "rationale": "A concrete familiar entry point and a wider factual tail, following the saved review; this asks for a different activity or object relationship rather than a tag combination.",
+      "familiar": [
+        "Michael Jordan",
+        "LeBron James",
+        "Stephen Curry",
+        "Kobe Bryant",
+        "Nikola Jokić",
+        "Shaquille O'Neal"
+      ],
+      "exclude": [
+        "Luka Doncic",
+        "Dwyane Wade"
+      ],
+      "references": [
+        "https://www.nba.com/news/history-mvp-award-winners",
+        "https://s3.grizzliesapp.com/assets/media_guides/25-26/MG_25-26_MediaGuide.pdf"
+      ],
+      "answers": {
+        "10": "Michael Jordan~Jordan|LeBron James~LeBron|Stephen Curry~Steph Curry~Curry|Kobe Bryant~Kobe|Nikola Jokić~Nikola Jokic~Jokic|Shaquille O'Neal~Shaquille ONeal~Shaq",
+        "30": "Giannis Antetokounmpo~Giannis|Kevin Durant~Durant|James Harden~Harden|Russell Westbrook~Westbrook|Derrick Rose~Rose|Allen Iverson~Iverson|Tim Duncan~Duncan|Magic Johnson~Magic|Larry Bird~Bird|Kareem Abdul-Jabbar~Kareem Abdul Jabbar~Kareem~Lew Alcindor|Shai Gilgeous-Alexander~Shai Gilgeous Alexander~Shai|Joel Embiid~Embiid",
+        "60": "Dirk Nowitzki~Dirk|Steve Nash~Nash|Kevin Garnett~Garnett|Charles Barkley~Barkley|Hakeem Olajuwon~Hakeem|David Robinson~Robinson|Karl Malone~Karl|Moses Malone~Moses|Bill Russell~Russell|Wilt Chamberlain~Wilt",
+        "85": "Bob Pettit~Pettit|Bob Cousy~Cousy|Oscar Robertson~Oscar|Willis Reed~Reed|Bill Walton~Walton|Julius Erving~Dr J~Doctor J|Dave Cowens~Cowens|Bob McAdoo~McAdoo",
+        "100": "Wes Unseld~Unseld"
+      }
+    },
+    {
+      "id": "authored-super-bowl-winning-starters",
+      "concept": "super-bowl-winning-starters",
+      "family": "sports",
+      "topic": "Under center",
+      "prompt": "Name a quarterback who started and won a Super Bowl.",
+      "scope": "The quarterback must have started a winning Super Bowl, through Super Bowl LX in February 2026. Winning a ring as a backup alone does not count.",
+      "format": "situations",
+      "rationale": "A concrete familiar entry point and a wider factual tail, following the saved review; this asks for a different activity or object relationship rather than a tag combination.",
+      "familiar": [
+        "Tom Brady",
+        "Patrick Mahomes",
+        "Joe Montana",
+        "Peyton Manning",
+        "Aaron Rodgers",
+        "Russell Wilson",
+        "Bart Starr"
+      ],
+      "exclude": [
+        "Dan Marino",
+        "Jim Kelly"
+      ],
+      "references": [
+        "https://www.pro-football-reference.com/pfr-blog/2023/10/complete-list-of-super-bowl-winning-quarterbacks/",
+        "https://www.nfl.com/super-bowl/history/",
+        "https://www.seahawks.com/news/2025-the-seahawks-are-super-bowl-lx-champions"
+      ],
+      "answers": {
+        "10": "Tom Brady~Brady|Patrick Mahomes~Mahomes|Joe Montana~Montana|Peyton Manning~Peyton|Aaron Rodgers~Rodgers|Russell Wilson~Wilson",
+        "30": "Drew Brees~Brees|Eli Manning~Eli|Ben Roethlisberger~Roethlisberger~Big Ben|Brett Favre~Favre|Terry Bradshaw~Bradshaw|Troy Aikman~Aikman|John Elway~Elway|Kurt Warner~Warner|Matthew Stafford~Stafford|Jalen Hurts~Hurts|Nick Foles~Foles|Joe Flacco~Flacco|Sam Darnold~Darnold|Bart Starr~Starr",
+        "60": "Phil Simms~Simms|Steve Young~Young|Roger Staubach~Staubach|Joe Namath~Namath|Jim McMahon~McMahon|Doug Williams|Jim Plunkett~Plunkett|Bob Griese~Griese|Len Dawson~Dawson|Johnny Unitas~Unitas|Ken Stabler~Stabler",
+        "85": "Jeff Hostetler~Hostetler|Trent Dilfer~Dilfer|Brad Johnson|Joe Theismann~Theismann",
+        "100": "Mark Rypien~Rypien"
+      }
+    },
+    {
+      "id": "authored-animals-with-horns",
+      "concept": "animals-with-horns",
+      "family": "nature",
+      "topic": "Headgear",
+      "prompt": "Name a real animal that has horns or antlers.",
+      "scope": "Living and extinct animals count, including beetle horns and other actual horn-like structures. Feathers that merely look like horns do not count. A named animal group counts when it contains horned or antlered members.",
+      "format": "properties",
+      "rationale": "A concrete familiar entry point and a wider factual tail, following the saved review; this asks for a different activity or object relationship rather than a tag combination.",
+      "familiar": [
+        "Goat",
+        "Deer",
+        "Rhinoceros",
+        "Cow",
+        "Moose",
+        "Triceratops"
+      ],
+      "exclude": [
+        "Unicorn",
+        "Horned owl"
+      ],
+      "references": [
+        "https://animals.sandiegozoo.org/animals/antelope",
+        "https://animals.sandiegozoo.org/animals/rhino",
+        "https://www.nps.gov/articles/000/horns-and-antlers.htm"
+      ],
+      "answers": {
+        "10": "Goat|Deer|Rhinoceros~Rhino|Cow~Cattle|Bull|Moose|Elk~Wapiti|Reindeer~Caribou|Triceratops",
+        "30": "Buffalo|Bison|Antelope|Ram|Sheep|Gazelle|Impala|Wildebeest~Gnu|Yak|Water buffalo|Ibex|Oryx|Musk ox~Muskox|Pronghorn|Chamois|Kudu|Fallow deer|Red deer|White-tailed deer~Whitetail deer|Mule deer|Blackbuck|Springbok|Bongo|Eland",
+        "60": "Nyala|Sable antelope|Roan antelope|Gemsbok|Addax|Scimitar-horned oryx|Arabian oryx|Markhor|Tahr|Mouflon|Argali|Bighorn sheep|Dall sheep|Mountain goat|Saiga|Goral|Serow|Takin|Gaur|Banteng|Anoa|Saola|Kouprey|Nilgai|Chinkara|Dik-dik|Duiker|Klipspringer|Steenbok|Reedbuck|Waterbuck|Lechwe|Sitatunga|Bushbuck|Gerenuk|Hartebeest|Topi|Bontebok|Blesbok|Tsessebe|Puku|Kob|Suni|Oribi|Royal antelope|Four-horned antelope|Muntjac|Pudu|Roe deer|Sika deer|Sambar deer|Barasingha|Rusa deer|Eld's deer~Elds deer|Père David's deer~Pere Davids deer|Marsh deer|Brocket deer|Hog deer|Chital~Axis deer|Rhinoceros beetle|Hercules beetle|Goliath beetle|Dung beetle|Horned lizard|Jackson's chameleon~Jacksons chameleon|Horned viper",
+        "85": "Styracosaurus|Centrosaurus|Pachyrhinosaurus|Chasmosaurus|Pentaceratops|Torosaurus|Diabloceratops|Nasutoceratops|Kosmoceratops|Utahceratops|Albertaceratops|Einiosaurus|Achelousaurus|Sinoceratops|Avaceratops|Anchiceratops|Arrhinoceratops|Regaliceratops|Wendiceratops|Medusaceratops|Agujaceratops|Coahuilaceratops|Mercuriceratops|Lokiceratops|Carnotaurus|Ceratosaurus|Eotriceratops|Diceratops~Nedoceratops|Woolly rhinoceros|Elasmotherium|Sivatherium|Arsinoitherium|Uintatherium|Synthetoceras|Protoceras|Giraffe~Ossicone-bearing giraffe|Okapi|Ankole-Watusi|Texas Longhorn|Syndyoceras",
+        "100": "Bramatherium"
+      }
+    },
+    {
+      "id": "authored-bioluminescent-animals",
+      "concept": "bioluminescent-animals",
+      "family": "nature",
+      "topic": "Lights in the deep",
+      "prompt": "Name an animal that can produce its own light.",
+      "scope": "Bioluminescence, including light produced by symbiotic bacteria in an animal's light organ, counts. Reflection, fluorescence and bright coloring alone do not. Broad animal groups count when they contain documented luminous members.",
+      "format": "properties",
+      "rationale": "A concrete familiar entry point and a wider factual tail, following the saved review; this asks for a different activity or object relationship rather than a tag combination.",
+      "familiar": [
+        "Firefly",
+        "Glowworm",
+        "Anglerfish",
+        "Jellyfish",
+        "Lanternfish",
+        "Vampire squid"
+      ],
+      "exclude": [
+        "Cat",
+        "Parrot"
+      ],
+      "references": [
+        "https://oceanservice.noaa.gov/facts/biolum.html",
+        "https://ocean.si.edu/ocean-life/fish/bioluminescence",
+        "https://latzlab.ucsd.edu/bioluminescence/bioluminescence-questions-and-answers/"
+      ],
+      "answers": {
+        "10": "Firefly~Lightning bug|Glowworm~Glow worm|Anglerfish|Jellyfish",
+        "30": "Lanternfish|Vampire squid|Squid|Comb jelly~Ctenophore|Krill|Firefly squid~Sparkling enope squid~Watasenia scintillans|Flashlight fish|Cookiecutter shark|Dragonfish|Viperfish",
+        "60": "Hatchetfish|Lantern shark~Lanternshark|Kitefin shark|Shark|Deep-sea shrimp|Shrimp|Copepod|Ostracod|Sea firefly~Vargula hilgendorfii|Siphonophore|Sea pen|Sea pansy|Brittle star|Basket star|Starfish~Sea star|Sea cucumber|Sea squirt~Tunicate|Pyrosome|Polychaete worm|Tomopteris~Gossamer worm|Railroad worm|Click beetle|Glowworm beetle|Fungus gnat|Arachnocampa|Bioluminescent millipede~Motyxia|Crystal jelly~Aequorea victoria|Atolla jellyfish~Atolla wyvillei|Helmet jellyfish~Periphylla periphylla|Comb jelly Beroe~Beroe|Mnemiopsis leidyi|Lobed comb jelly~Bolinopsis|Bathyctena|Parchment tubeworm~Chaetopterus",
+        "85": "Bristlemouth|Stoplight loosejaw~Malacosteus niger|Black dragonfish~Idiacanthus atlanticus|Pinecone fish~Pineconefish|Pineapplefish~Cleidopus gloriamaris|Pelican eel~Gulper eel|Bobtail squid|Hawaiian bobtail squid~Euprymna scolopes|Octopus|Stauroteuthis syrtensis|Japetella|Bolitaena|Heteroteuthis dispar|Deep-sea octocoral|Bamboo coral|Sea fan|Sea whip|Renilla reniformis|Quantula striata~Bioluminescent snail|Hinea brasiliana~Clusterwink snail|Planaxis sulcatus|Luminous limpet~Latia neritoides|Limpet|Luminous earthworm~Diplocardia longa|Earthworm",
+        "100": "Swima bombiviridis~Green bomber worm"
+      }
+    },
+    {
+      "id": "authored-migrating-animals",
+      "concept": "migrating-animals",
+      "family": "nature",
+      "topic": "Long-distance travelers",
+      "prompt": "Name an animal that makes a regular seasonal migration.",
+      "scope": "A named species or animal group with documented seasonal migration counts. One-off escapes, dispersal or an individual simply wandering do not.",
+      "format": "properties",
+      "rationale": "A concrete familiar entry point and a wider factual tail, following the saved review; this asks for a different activity or object relationship rather than a tag combination.",
+      "familiar": [
+        "Monarch butterfly",
+        "Arctic tern",
+        "Wildebeest",
+        "Humpback whale",
+        "Salmon",
+        "Caribou"
+      ],
+      "exclude": [
+        "Rock",
+        "Sloth"
+      ],
+      "references": [
+        "https://www.nationalgeographic.com/animals/article/animal-migration",
+        "https://www.fws.gov/program/migratory-birds",
+        "https://www.fisheries.noaa.gov/insight/whale-migration"
+      ],
+      "answers": {
+        "10": "Monarch butterfly|Salmon|Goose~Geese|Whale|Humpback whale|Caribou~Reindeer|Wildebeest~Gnu|Duck",
+        "30": "Arctic tern|Swallow|Barn swallow|Canada goose|Snow goose|Swan|Crane|Stork|Flamingo|Hummingbird|Ruby-throated hummingbird|Sea turtle|Green sea turtle|Loggerhead sea turtle|Leatherback sea turtle|Gray whale~Grey whale|Blue whale|Southern right whale|Northern right whale|Beluga|Elephant seal|Zebra|Pronghorn|Elk|Mule deer|Bison|African buffalo|Elephant|Fruit bat|Dragonfly",
+        "60": "Bar-tailed godwit|Black-tailed godwit|Hudsonian godwit|Red knot|Sandpiper|Sanderling|Semipalmated sandpiper|Pectoral sandpiper|Western sandpiper|Curlew|Eurasian curlew|Whimbrel|Dunlin|Golden plover|Pacific golden plover|American golden plover|Ruff|Turnstone|Ruddy turnstone|Osprey|Peregrine falcon|Swainson's hawk~Swainsons hawk|Broad-winged hawk|Rough-legged hawk|Northern harrier|Golden eagle|Bald eagle|Red-tailed hawk|Turkey vulture|Black kite|European honey buzzard|Cuckoo|Common cuckoo|Swift|Common swift|Chimney swift|Purple martin|Sand martin|House martin|Tree swallow|Bobolink|Baltimore oriole|Bullock's oriole~Bullocks oriole|Red-winged blackbird|American robin|Fieldfare|Redwing|Song thrush|Wheatear|Northern wheatear|Bluethroat|Nightingale|Warbler|Yellow warbler|Blackpoll warbler|Willow warbler|Wood thrush|Swainson's thrush~Swainsons thrush|Veery|Hermit thrush|Sooty shearwater|Manx shearwater|Short-tailed shearwater|Wandering albatross|Whooper swan|Bewick's swan~Bewicks swan|Tundra swan|Sandhill crane|Whooping crane|Common crane|Demoiselle crane",
+        "85": "Atlantic salmon|Chinook salmon|Coho salmon|Sockeye salmon|Chum salmon|Pink salmon|Steelhead|American eel|European eel|Japanese eel|Lamprey|Sea lamprey|Sturgeon|Atlantic sturgeon|Green sturgeon|Striped bass|American shad|Herring|Sardine|Anchovy|Tuna|Bluefin tuna|Atlantic bluefin tuna|Southern bluefin tuna|Pacific bluefin tuna|Albacore|Bonito|Mackerel|Atlantic mackerel|Pacific hake|Capelin|Arctic char|Bull shark|Great white shark|Whale shark|Basking shark|Hammerhead shark|Manta ray|Mobula ray|Mormon cricket|Painted lady butterfly|Red admiral butterfly|Cloudless sulphur|Bogong moth|Globe skimmer dragonfly|Green darner|Mexican free-tailed bat|Hoary bat|Silver-haired bat|Straw-colored fruit bat|Springbok|Saiga|Mongolian gazelle|Tibetan antelope~Chiru|Mountain goat|Dall sheep|Impala|Harbor seal~Harbour seal|Harp seal|Hooded seal|Walrus|Bowhead whale|Fin whale|Sei whale|Minke whale|Sperm whale|Narwhal|Dugong|Manatee",
+        "100": "Christmas Island red crab"
+      }
+    },
+    {
+      "id": "authored-underground-food-crops",
+      "concept": "underground-food-crops",
+      "family": "nature",
+      "topic": "Below the surface",
+      "prompt": "Name a food crop with an edible part that normally grows underground.",
+      "scope": "Roots, tubers, rhizomes, bulbs, corms and underground fruits count. Named crop kinds and established edible varieties count. A normal above-ground fruit does not count merely because the plant has roots.",
+      "format": "properties",
+      "rationale": "A concrete familiar entry point and a wider factual tail, following the saved review; this asks for a different activity or object relationship rather than a tag combination.",
+      "familiar": [
+        "Potato",
+        "Carrot",
+        "Onion",
+        "Garlic",
+        "Ginger",
+        "Peanut"
+      ],
+      "exclude": [
+        "Apple",
+        "Broccoli"
+      ],
+      "references": [
+        "https://www.britannica.com/plant/root-vegetable",
+        "https://www.rhs.org.uk/vegetables",
+        "https://www.myplate.gov/food-groups/vegetables"
+      ],
+      "answers": {
+        "10": "Potato|Carrot|Onion|Garlic|Ginger|Sweet potato|Radish|Beetroot~Beet|Peanut~Groundnut",
+        "30": "Turnip|Parsnip|Yam|Cassava~Manioc~Yuca|Rutabaga~Swede|Shallot|Turmeric|Taro|Celeriac~Celery root|Horseradish|Wasabi|Jerusalem artichoke~Sunchoke|Daikon|Lotus root|Sugar beet|Spring onion~Green onion~Scallion",
+        "60": "Water chestnut~Chinese water chestnut|Jicama~Yam bean|Arrowroot~West Indian arrowroot~Maranta starch|Galangal|Lesser galangal|Kencur~Aromatic ginger|Fingerroot~Chinese keys|Chicory root|Salsify|Black salsify~Scorzonera|Burdock root~Gobo|Dandelion root|Parsley root~Hamburg parsley|Skirret|Maca|Yacon|Oca|Ulluco|Mashua|Arracacha|Malanga|Yautia|Eddoe~Eddoes|Cocoyam|Konjac|Elephant foot yam|Chinese yam|Purple yam~Ube|Water yam|Tigernut~Tiger nut~Chufa|Crosne~Chinese artichoke|Pignut|Earthnut pea|Prairie turnip|Prairie potato|Indian breadroot|Leek",
+        "85": "Camas|Bitterroot|Sego lily|Spring beauty corm|Wapato~Duck potato|Koorka~Chinese potato|Hausa potato|Livingstone potato|Mauka|Ahipa|Apios~American groundnut|Hog peanut|Canna rhizome~Achira|Chervil root~Tuberous-rooted chervil|Enset corm~Ensete corm|Giant swamp taro|Licorice root~Liquorice root|Sassafras root|Valerian root|Ginseng root|Chayote root|Sweet flag rhizome",
+        "100": "Yellow nutsedge tuber"
+      }
+    }
+  ]
+}

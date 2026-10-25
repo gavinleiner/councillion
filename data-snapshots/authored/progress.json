@@ -1,0 +1,20 @@
+{
+  "target": 5000,
+  "authoredCandidates": 61,
+  "admittedAuthored": 13,
+  "normalPoolAdmitted": 240,
+  "remaining": 4760,
+  "candidateFamilies": {
+    "culture": 1,
+    "everyday": 6,
+    "food": 16,
+    "gaming": 10,
+    "music": 5,
+    "nature": 4,
+    "science": 4,
+    "sports": 6,
+    "world": 9
+  },
+  "canonicalAnswerRows": 708473,
+  "familiarAnswerChecks": 368
+}

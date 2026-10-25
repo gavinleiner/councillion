@@ -1,0 +1,403 @@
+{
+  "version": 1,
+  "questions": [
+    {
+      "id": "authored-ice-cream-toppings",
+      "concept": "ice-cream-toppings",
+      "family": "food",
+      "topic": "Sundae service",
+      "prompt": "Name something commonly used as an ice-cream topping.",
+      "scope": "Named toppings, sauces, fruits, nuts and sweets served on ice cream count. An ice-cream flavor by itself is not a topping.",
+      "format": "situations",
+      "rationale": "A concrete familiar entry point and a wider factual tail, following the saved review; this asks for a different activity or object relationship rather than a tag combination.",
+      "familiar": [
+        "Sprinkles",
+        "Hot fudge",
+        "Whipped cream",
+        "Caramel sauce",
+        "Oreo",
+        "Maraschino cherry"
+      ],
+      "exclude": [
+        "Broccoli",
+        "Raw chicken"
+      ],
+      "references": [
+        "https://www.benjerry.com/flavors/ice-cream-sundaes",
+        "https://www.bbcgoodfood.com/recipes/collection/ice-cream-sundae-recipes"
+      ],
+      "answers": {
+        "10": "Sprinkles~Hundreds and thousands|Chocolate sauce|Hot fudge~Fudge sauce|Whipped cream|Caramel sauce|Oreo~Oreos|Chocolate chips|Cherry~Cherries|Strawberry~Strawberries|Banana~Bananas",
+        "30": "Maraschino cherry~Maraschino cherries|Peanut~Peanuts|Almond~Almonds|Walnut~Walnuts|Pecan~Pecans|Crushed cookies~Cookie crumbs|Brownie~Brownies|M&M's~M and Ms|Peanut butter|Marshmallow~Marshmallows|Butterscotch sauce|Strawberry sauce|Raspberry~Raspberries|Blueberry~Blueberries|Honey|Coconut~Coconut flakes",
+        "60": "Cookie dough|Toffee~Toffee pieces|Gummy bear~Gummy bears|Gummy worm~Gummy worms|Reese's Pieces|Peanut butter cup~Peanut butter cups|Malted milk ball~Malted milk balls|Chocolate shavings|Chocolate curls|Hazelnut~Hazelnuts|Pistachio~Pistachios|Cashew~Cashews|Pineapple|Mango|Raspberry sauce|Chocolate shell~Magic Shell|Waffle cone pieces~Crushed waffle cone|Pretzel~Pretzels|Cereal|Granola|Maple syrup|Caramelized banana|Fudge brownie|Biscoff~Lotus Biscoff",
+        "85": "Amarena cherry~Amarena cherries|Candied ginger~Crystallized ginger|Praline|Brittle~Nut brittle|Candied pecans|Caramel popcorn|Lemon curd|Passion fruit pulp|Freeze-dried raspberry|Freeze-dried strawberry|Cacao nibs|Sesame seeds|Halva|Tahini|Mochi pieces|Red bean paste~Anko|Boba~Tapioca pearls|Dulce de leche|Cotton candy~Candy floss|Popping candy~Pop Rocks|Turkish delight|Meringue pieces|Coulis~Fruit coulis",
+        "100": "Feuilletine"
+      }
+    },
+    {
+      "id": "authored-pickled-foods",
+      "concept": "pickled-foods",
+      "family": "food",
+      "topic": "In a pickle",
+      "prompt": "Name a food that is commonly pickled.",
+      "scope": "Vegetables, fruits, eggs, meats and seafood with established pickled preparations count. Vinegar and brine are ingredients, not foods being pickled.",
+      "format": "properties",
+      "rationale": "A concrete familiar entry point and a wider factual tail, following the saved review; this asks for a different activity or object relationship rather than a tag combination.",
+      "familiar": [
+        "Cucumber",
+        "Onion",
+        "Egg",
+        "Beetroot",
+        "Herring",
+        "Jalapeno"
+      ],
+      "exclude": [
+        "Chocolate cake",
+        "Vinegar"
+      ],
+      "references": [
+        "https://www.bbcgoodfood.com/recipes/collection/pickling-recipes",
+        "https://nchfp.uga.edu/how/pickle/"
+      ],
+      "answers": {
+        "10": "Cucumber~Pickle~Gherkin|Onion~Onions|Beetroot~Beet|Egg~Eggs|Jalapeno~Jalapeño|Cabbage",
+        "30": "Carrot~Carrots|Radish~Radishes|Garlic|Cauliflower|Green bean~Green beans|Pepper~Peppers|Chili~Chilli|Ginger|Herring|Olive~Olives|Lemon~Preserved lemon|Okra|Turnip~Turnips|Mango",
+        "60": "Red onion|Pearl onion|Shallot~Shallots|Daikon|Mushroom~Mushrooms|Asparagus|Zucchini~Courgette|Eggplant~Aubergine|Watermelon rind|Tomato~Tomatoes|Green tomato~Green tomatoes|Corn|Baby corn|Peach~Peaches|Pear~Pears|Plum~Plums|Cherry~Cherries|Walnut~Walnuts|Apple~Apples|Pork|Pig's foot~Pig's feet|Sausage~Sausages|Shrimp~Prawn|Mackerel|Salmon|Sardine~Sardines",
+        "85": "Bamboo shoot~Bamboo shoots|Lotus root|Mustard greens|Napa cabbage|Papaya|Pineapple|Gooseberry~Gooseberries|Crab apple~Crab apples|Green almond~Green almonds|Capers|Caper berry~Caper berries|Samphire|Sea fennel|Banana blossom|Tea leaf~Tea leaves|Ramps~Wild leek|Fiddlehead fern~Fiddleheads|Fish roe|Squid|Octopus|Cockle~Cockles|Mussel~Mussels|Tongue~Beef tongue|Hog plum|Amla~Indian gooseberry",
+        "100": "Myoga"
+      }
+    },
+    {
+      "id": "authored-leaf-wrapped-food",
+      "concept": "leaf-wrapped-food",
+      "family": "food",
+      "topic": "Unwrap it",
+      "prompt": "Name a food traditionally cooked or served in a plant leaf.",
+      "scope": "Named dishes count when a plant leaf wraps, encloses or lines the food during cooking or serving. Plastic, foil and bread wrappers do not qualify.",
+      "format": "situations",
+      "rationale": "A concrete familiar entry point and a wider factual tail, following the saved review; this asks for a different activity or object relationship rather than a tag combination.",
+      "familiar": [
+        "Tamale",
+        "Dolma",
+        "Zongzi",
+        "Grape leaves",
+        "Sarma",
+        "Pasteles"
+      ],
+      "exclude": [
+        "Burrito",
+        "Foil"
+      ],
+      "references": [
+        "https://www.britannica.com/topic/tamale",
+        "https://www.britannica.com/topic/dolma",
+        "https://www.smithsonianmag.com/arts-culture/a-brief-history-of-zongzi-the-sticky-rice-dumplings-of-the-dragon-boat-festival-180980174/"
+      ],
+      "answers": {
+        "10": "Tamale~Tamales|Dolma~Dolmades|Stuffed cabbage~Cabbage roll~Cabbage rolls|Grape leaves~Stuffed grape leaves|Zongzi|Sarma",
+        "30": "Pasteles|Suman|Lau lau~Laulau|Kalua pig~Kalua pork|Paturi|Bánh chưng~Banh chung|Bánh tét~Banh tet|Lo mai gai|Otak-otak|Pepes|Nagasari|Pandan chicken~Gai hor bai toey",
+        "60": "Bibingka|Puto bumbong|Binalot|Botok|Lemper|Lontong|Ketupat|Kue bugis|Arem-arem|Khao tom mat|Khao tom mud|Khao niew sangkhaya|Patra~Alu vadi|Patoleo~Patoli|Ada~Ela ada|Panki|Patholi|Turkish yaprak sarma~Yaprak sarma|Sarmale|Holubtsi|Gołąbki~Golabki|Niangao~Nian gao|Corundas|Humita~Humitas|Hallaca~Hallacas|Nacatamal~Nacatamales",
+        "85": "Juane~Juanes|Mekong mok pa~Mok pa|Amok trey~Fish amok|Laplap|Palusami|Kulu kulu|Bougna|Mumu|Zacahuil|Mucbilpollo|Chikwangue~Kwanga|Bobolo|Liboke|Pitha|Lepet|Bánh lá~Banh la|Bánh ít~Banh it|Bánh giò~Banh gio",
+        "100": "Paime"
+      }
+    },
+    {
+      "id": "authored-corn-dishes",
+      "concept": "corn-dishes",
+      "family": "food",
+      "topic": "Off the cob",
+      "prompt": "Name a dish or food made mainly from corn or cornmeal.",
+      "scope": "A traditional corn, maize, hominy, masa or cornmeal preparation counts. Corn as a minor optional topping does not make an unrelated dish qualify.",
+      "format": "situations",
+      "rationale": "A concrete familiar entry point and a wider factual tail, following the saved review; this asks for a different activity or object relationship rather than a tag combination.",
+      "familiar": [
+        "Popcorn",
+        "Cornbread",
+        "Polenta",
+        "Tortilla",
+        "Grits",
+        "Arepa"
+      ],
+      "exclude": [
+        "Wheat bread",
+        "Rice pudding"
+      ],
+      "references": [
+        "https://www.britannica.com/plant/corn-plant",
+        "https://www.bbcgoodfood.com/recipes/collection/sweetcorn-recipes",
+        "https://www.si.edu/stories/corn-americas"
+      ],
+      "answers": {
+        "10": "Popcorn|Cornbread|Corn on the cob|Tortilla~Corn tortilla|Corn flakes~Cornflakes|Polenta|Grits|Corn chips|Nachos",
+        "30": "Arepa~Arepas|Tamale~Tamales|Elote~Mexican street corn|Esquites|Corn chowder|Corn pudding|Creamed corn|Corn fritter~Corn fritters|Hushpuppy~Hush puppies|Corn dog~Corn dogs|Hominy|Masa|Masa harina|Tostada~Tostadas|Gordita~Gorditas|Sope~Sopes",
+        "60": "Pupusa~Pupusas|Pozole~Posole|Chilaquiles|Quesadilla~Corn quesadilla|Enchilada~Enchiladas|Tlacoyo~Tlacoyos|Tlayuda~Tlayudas|Fufu~Corn fufu|Ugali|Sadza|Nshima|Nsima|Pap~Mieliepap|Banku|Kenkey|Kachamak|Mămăligă~Mamaliga|Johnnycake~Johnnycakes|Hoecake~Hoecakes|Spoonbread~Spoon bread|Corn pone|Scrapple|Mush~Cornmeal mush|Fried polenta|Cachapa~Cachapas|Humita~Humitas|Choclo|Corn nut~Corn nuts|Fritos|Doritos|Tortilla chips|Corn salsa|Corn relish|Atol~Atole",
+        "85": "Champurrado|Tejate|Tascalate|Pinole|Chicha|Chicha morada|Mote|Mazamorra|Maja blanca|Binatog|Pastel de choclo|Sopa paraguaya|Chipa guasu|Mchadi|Abista|Gomi|Kačamak~Kacamak|Pulenda|Coo-coo~Cou-cou|Ducana|Conkies|Funche|Cachupa|Pamonha|Curau|Canjica|Bolo de fubá~Bolo de fuba|Tamal de elote|Tô~Toh",
+        "100": "Mbaipy"
+      }
+    },
+    {
+      "id": "authored-noodle-dishes",
+      "concept": "noodle-dishes",
+      "family": "food",
+      "topic": "Send noodles",
+      "prompt": "Name a named pasta or noodle dish.",
+      "scope": "Named dishes and established preparations count, including rice, wheat, buckwheat and starch noodles, filled pastas and gnocchi. A bare unfilled pasta shape belongs to the pasta-shape question.",
+      "format": "situations",
+      "rationale": "A concrete familiar entry point and a wider factual tail, following the saved review; this asks for a different activity or object relationship rather than a tag combination.",
+      "familiar": [
+        "Ramen",
+        "Pad thai",
+        "Macaroni and cheese",
+        "Lasagna",
+        "Pho",
+        "Spaghetti carbonara"
+      ],
+      "exclude": [
+        "Fusilli",
+        "Pizza"
+      ],
+      "references": [
+        "https://www.bbcgoodfood.com/recipes/collection/noodle-recipes",
+        "https://www.bbcgoodfood.com/recipes/collection/pasta-recipes"
+      ],
+      "answers": {
+        "10": "Ramen|Spaghetti bolognese~Spag bol|Spaghetti and meatballs|Macaroni and cheese~Mac and cheese|Lasagna~Lasagne|Pad thai|Pho|Chow mein|Lo mein",
+        "30": "Spaghetti carbonara~Carbonara|Fettuccine Alfredo~Alfredo|Pasta primavera|Pesto pasta|Spaghetti aglio e olio~Aglio e olio|Penne alla vodka~Pasta alla vodka|Pasta puttanesca~Puttanesca|Pasta salad|Baked ziti|Beef stroganoff|Chicken noodle soup|Laksa|Yakisoba|Udon soup|Cacio e pepe|Tuna noodle casserole|Kugel~Noodle kugel|Ravioli|Tortellini|Cannelloni|Manicotti|Gnocchi|Stuffed shells",
+        "60": "Drunken noodles~Pad kee mao|Pad see ew|Japchae|Jajangmyeon|Jjampong~Jjamppong|Naengmyeon|Bibim guksu|Soba salad|Zaru soba|Kitsune udon|Tempura udon|Curry udon|Kake udon|Dan dan noodles~Dandan noodles|Zhajiangmian|Beef chow fun|Singapore noodles|Hokkien mee|Char kway teow|Mee goreng~Mie goreng|Pancit|Pancit canton|Pancit bihon|Khao soi|Kuy teav|Bún bò Huế~Bun bo Hue|Bún chả~Bun cha|Bún thịt nướng~Bun thit nuong|Bánh canh~Banh canh|Mie ayam|Soto mie|Saimin|Somen|Hiyashi chuka|Tonkotsu ramen|Miso ramen|Shoyu ramen|Shio ramen|Tsukemen|Tantanmen",
+        "85": "Amatriciana|Pasta alla Norma|Pasta e fagioli|Pasta con le sarde|Pasta al forno|Pasta e ceci|Tortellini in brodo|Orecchiette con cime di rapa|Spaghetti alle vongole|Linguine alle vongole|Pasta arrabbiata|Pasta alla gricia|Pizzoccheri|Fideuà~Fideua|Fideo seco|Sopa de fideo|Naporitan~Napolitan|Tallarines verdes|Sorrentinos|Käsespätzle~Kasespatzle|Schupfnudeln|Haluski|Halušky~Halusky|Chicken tetrazzini|Turkey tetrazzini|Johnny Marzetti|American goulash|Chili mac|Cincinnati chili|Yaka mein|Tteok-bokki noodles~Rabokki|Bamigoreng~Bami goreng|Bakmi|Mie aceh|Mee rebus|Mee siam|Mee soto|Lor mee|Chee cheong fun|Yum woon sen|Sukiyaki|Nabeyaki udon|Bún riêu~Bun rieu|Mì Quảng~Mi Quang",
+        "100": "Ash reshteh~Ash-e reshteh"
+      }
+    },
+    {
+      "id": "authored-foods-with-custard",
+      "concept": "foods-with-custard",
+      "family": "food",
+      "topic": "Custard case",
+      "prompt": "Name a dessert or sweet pastry that traditionally contains custard.",
+      "scope": "Named desserts with egg custard or established custard fillings count. Cream-only fillings are not automatically custard.",
+      "format": "properties",
+      "rationale": "A concrete familiar entry point and a wider factual tail, following the saved review; this asks for a different activity or object relationship rather than a tag combination.",
+      "familiar": [
+        "Crème brûlée",
+        "Flan",
+        "Custard tart",
+        "Éclair",
+        "Trifle",
+        "Boston cream pie"
+      ],
+      "exclude": [
+        "Sorbet",
+        "Baklava"
+      ],
+      "references": [
+        "https://www.bbcgoodfood.com/recipes/collection/custard-recipes",
+        "https://www.britannica.com/topic/custard"
+      ],
+      "answers": {
+        "10": "Crème brûlée~Creme brulee|Flan~Crème caramel~Creme caramel|Custard tart|Egg tart|Éclair~Eclair|Trifle|Boston cream pie",
+        "30": "Cream puff~Profiterole|Vanilla slice~Custard slice|Mille-feuille~Mille feuille~Napoleon|Boston cream doughnut~Boston cream donut|Pastel de nata~Pastéis de nata|Bread and butter pudding|Bread pudding|Crème anglaise~Creme anglaise|Pastry cream~Crème pâtissière~Creme patissiere|Pots de crème~Pots de creme|Lemon custard tart|Custard pie|Fruit tart|Banana cream pie|Coconut cream pie",
+        "60": "Galaktoboureko|Bougatsa|Kremna rezina~Bled cream cake|Kremówka~Kremowka|Krempita|Karpatka|Cremeschnitte|Tarte tropézienne~Tarte tropezienne|Portuguese egg tart|Hong Kong egg tart|Macau egg tart|Quindim|Crème catalane~Crema catalana|Leche flan|Purin|Custard bun~Lai wong bao~Nai wong bao|Custard bao|Semolina custard pie|Floating island~Île flottante~Ile flottante|Diplomat pudding|Cabinet pudding|Manchester tart|Manchester pudding|Queen of puddings|Canalé~Canelé~Canele|Pasticciotto|Zeppole di San Giuseppe|Saint Honoré cake~Saint Honore cake|Paris-Brest|Tarte au flan~Flan pâtissier~Flan patissier|Clafoutis|Far breton|Flaune|Gâteau basque~Gateau basque|Zabaglione~Sabayon~Zabaione|Bavarois~Bavarian cream|Diplomat cream~Crème diplomate~Creme diplomate",
+        "85": "Fraisier|Miguelito~Miguelitos|Torta della nonna|Zuppa inglese|Diplomat cake|Malva pudding with custard|Crème renversée~Creme renversee",
+        "100": "Pantxineta"
+      }
+    },
+    {
+      "id": "authored-inflatable-objects",
+      "concept": "inflatable-objects",
+      "family": "everyday",
+      "topic": "Just add air",
+      "prompt": "Name an object designed to be inflated with air.",
+      "scope": "Common inflatable objects and named inflatable equipment types count. Objects merely containing an empty cavity do not qualify.",
+      "format": "situations",
+      "rationale": "A concrete familiar entry point and a wider factual tail, following the saved review; this asks for a different activity or object relationship rather than a tag combination.",
+      "familiar": [
+        "Balloon",
+        "Air mattress",
+        "Football",
+        "Tire",
+        "Pool float",
+        "Bouncy castle"
+      ],
+      "exclude": [
+        "Brick",
+        "Glass bottle"
+      ],
+      "references": [
+        "https://www.britannica.com/technology/pneumatic-device",
+        "https://www.cpsc.gov/Safety-Education/Safety-Guides/Sports-Fitness-and-Recreation/Moonwalks-and-Bounce-Houses"
+      ],
+      "answers": {
+        "10": "Balloon|Tire~Tyre|Air mattress~Air bed|Beach ball|Football~Soccer ball|Basketball|Pool float~Pool toy|Bouncy castle~Bounce house~Moonwalk",
+        "30": "Volleyball|American football|Rugby ball|Kickball|Dodgeball|Exercise ball~Yoga ball~Stability ball|Swim ring~Swimming ring~Inner tube|Armband~Water wing~Water wings|Inflatable boat~Rubber boat|Inflatable raft~Life raft|Paddling pool~Kiddie pool|Inflatable hot tub|Inflatable sofa|Inflatable chair|Inflatable pillow|Bicycle tire~Bicycle tyre|Car tire~Car tyre|Motorcycle tire~Motorcycle tyre",
+        "60": "Inflatable kayak|Inflatable canoe|Inflatable paddleboard~Inflatable SUP|Inflatable life jacket~Inflatable life vest|Inflatable tent|Air beam tent|Inflatable camping mat~Self-inflating sleeping pad|Inflatable slide|Inflatable obstacle course|Inflatable trampoline|Inflatable costume|Advertising blimp|Parade balloon|Weather balloon|Hot-air balloon~Hot air balloon|Helium balloon|Blimp|Airship|Zorb~Zorbing ball|Bubble suit~Bubble football suit|Ski airbag|Avalanche airbag|Blood pressure cuff~Sphygmomanometer cuff|Pneumatic splint~Air splint|Air cushion|Air jack|Inflatable dock|Floating trampoline|Inflatable water park|Inflatable cooler|Pneumatic dunnage bag~Dunnage bag|Inflatable movie screen|Inflatable arch|Inflatable finish line",
+        "85": "Lifting bag~Air lifting bag|Buoyancy compensator~BCD|Lift bag~Diving lift bag|Pneumatic fender~Yokohama fender|Inflatable packraft~Packraft|Inflatable pontoon|Inflatable landing bag|Air landing mat|Inflatable decoy|Inflatable dam~Rubber dam|Inflatable plug|Inflatable pipe stopper|Pneumatic sealing bladder|Inflatable rib boat~Rigid inflatable boat|Air-supported dome~Air dome|Inflatable evacuation slide~Aircraft evacuation slide",
+        "100": "Inflatable reentry decelerator"
+      }
+    },
+    {
+      "id": "authored-sewing-kit",
+      "concept": "sewing-kit",
+      "family": "everyday",
+      "topic": "Stitch in time",
+      "prompt": "Name an item used for sewing or mending clothes.",
+      "scope": "Hand-sewing, machine-sewing and dressmaking tools and supplies count. A finished garment alone is not sewing equipment.",
+      "format": "situations",
+      "rationale": "A concrete familiar entry point and a wider factual tail, following the saved review; this asks for a different activity or object relationship rather than a tag combination.",
+      "familiar": [
+        "Needle",
+        "Thread",
+        "Thimble",
+        "Scissors",
+        "Seam ripper",
+        "Pin"
+      ],
+      "exclude": [
+        "Microwave",
+        "Basketball"
+      ],
+      "references": [
+        "https://www.singer.com/collections/sewing-accessories",
+        "https://www.brother-usa.com/home/sewing-embroidery/accessories"
+      ],
+      "answers": {
+        "10": "Needle~Sewing needle|Thread~Sewing thread|Scissors|Pin~Pins~Straight pin|Sewing machine|Button~Buttons|Tape measure~Measuring tape",
+        "30": "Thimble|Seam ripper|Pincushion~Pin cushion|Safety pin~Safety pins|Fabric~Cloth|Bobbin|Zipper~Zip|Elastic|Tailor's chalk~Tailors chalk|Needle threader|Iron|Ironing board|Ribbon|Patch~Fabric patch|Sewing pattern~Pattern|Hem tape~Hemming tape|Dressmaking shears~Fabric shears",
+        "60": "Embroidery hoop|Embroidery floss|Embroidery needle|Darning needle|Darning mushroom|Darning egg|Tracing wheel|Tracing paper|Rotary cutter|Cutting mat|Pinking shears|Seam gauge|Seam roller|Presser foot|Walking foot|Zipper foot|Buttonhole foot|Bodkin|Awl|Stiletto|Beeswax|Thread wax|Interfacing|Batting|Bias tape~Bias binding|Twill tape|Hook and eye|Snap fastener~Press stud|Fusible web|Serger~Overlocker|Cone thread|Sewing clip~Wonder clip|Basting thread|Fabric marker|Disappearing ink pen|Water-soluble pen|Dress form~Tailor's dummy~Dressmaker's dummy|French curve|Hip curve|Seam roll|Tailor's ham~Tailors ham",
+        "85": "Tailor's clapper~Tailors clapper|Sleeve board|Point turner|Button shank tool|Loop turner|Rouleau turner|Hemmer foot|Ruffler foot|Bias tape maker|Needle case|Thread snips~Embroidery scissors|Thread stand|Spool cap|Basting spray|Bobbin winder|Basting glue|Appliqué scissors~Applique scissors|Sewing machine oil|Needle plate|Feed dog|Sewing machine belt|Pattern weights|Pattern notcher",
+        "100": "Simflex gauge~Buttonhole spacing gauge"
+      }
+    },
+    {
+      "id": "authored-garden-tools",
+      "concept": "garden-tools",
+      "family": "everyday",
+      "topic": "Shed inventory",
+      "prompt": "Name a tool or piece of equipment used for gardening.",
+      "scope": "Tools, devices and durable equipment used to plant, water, prune, move soil or maintain gardens count. Plant names are not tools.",
+      "format": "situations",
+      "rationale": "A concrete familiar entry point and a wider factual tail, following the saved review; this asks for a different activity or object relationship rather than a tag combination.",
+      "familiar": [
+        "Shovel",
+        "Rake",
+        "Hose",
+        "Watering can",
+        "Trowel",
+        "Pruning shears"
+      ],
+      "exclude": [
+        "Rose",
+        "Television"
+      ],
+      "references": [
+        "https://www.rhs.org.uk/advice/beginners-guide/tools",
+        "https://www.fiskars.com/en-us/gardening-and-yard-care/products"
+      ],
+      "answers": {
+        "10": "Shovel|Spade|Rake|Hose~Garden hose|Watering can|Trowel|Lawn mower~Lawnmower|Wheelbarrow|Pruning shears~Secateurs~Pruner",
+        "30": "Hoe~Garden hoe|Garden fork~Digging fork|Hand fork|Lopper~Loppers|Hedge trimmer|Hedge shears|Sprinkler|Leaf blower|String trimmer~Weed eater~Strimmer|Gardening gloves~Garden gloves|Bucket|Plant pot~Flowerpot|Seed tray|Plant label~Plant marker|Spray bottle|Garden kneeler|Pruning saw|Compost bin",
+        "60": "Dibber~Dibble|Bulb planter|Edging iron~Lawn edger|Lawn aerator|Scarifier~Dethatcher|Soil sieve~Garden sieve|Garden cart|Hori hori~Soil knife|Weeding knife|Weeder|Dutch hoe|Draw hoe|Stirrup hoe~Oscillating hoe|Cultivator|Rotavator~Rototiller|Broadfork|Mattock|Pickaxe~Pickax|Post-hole digger|Garden auger|Hand spreader|Seed spreader|Fertilizer spreader|Propagator|Cold frame|Greenhouse|Cloche|Garden fleece~Horticultural fleece|Bird netting|Plant support|Trellis|Garden stake|Garden twine|Soil thermometer|Soil pH meter|Moisture meter|Rain barrel~Water butt|Watering wand|Drip irrigation line|Soaker hose|Hose reel|Hose connector|Garden scissors|Pole pruner|Pole saw",
+        "85": "Grafting knife|Budding knife|Bonsai wire|Root hook|Concave cutter|Bonsai shears|Sod cutter~Turf cutter|Lawn roller|Topiary shears|Fruit picker|Berry picker|Peat pot|Root trainer|Potting bench|Potting scoop|Potting mat|Seed dispenser|Seed sower|Flame weeder|Pressure sprayer|Compost aerator|Compost thermometer|Compost tumbler|Garden trug|Daisy grubber|Long-handled bulb planter",
+        "100": "Swoe"
+      }
+    },
+    {
+      "id": "authored-laundry-supplies",
+      "concept": "laundry-supplies",
+      "family": "everyday",
+      "topic": "Spin cycle",
+      "prompt": "Name an item or product used to wash, dry or care for laundry.",
+      "scope": "Laundry appliances, supplies, stain treatments and clothes-care tools count. A garment itself is not a laundry supply.",
+      "format": "situations",
+      "rationale": "A concrete familiar entry point and a wider factual tail, following the saved review; this asks for a different activity or object relationship rather than a tag combination.",
+      "familiar": [
+        "Detergent",
+        "Washing machine",
+        "Clothes dryer",
+        "Clothesline",
+        "Clothespin",
+        "Iron"
+      ],
+      "exclude": [
+        "Shirt",
+        "Laptop"
+      ],
+      "references": [
+        "https://www.cleaninginstitute.org/cleaning-tips/clothes",
+        "https://www.tide.com/en-us/how-to-wash-clothes"
+      ],
+      "answers": {
+        "10": "Detergent~Laundry detergent|Washing machine~Washer|Clothes dryer~Tumble dryer|Iron|Ironing board|Laundry basket|Fabric softener|Bleach",
+        "30": "Clothesline~Washing line|Clothespin~Clothes peg~Peg|Drying rack~Clothes horse~Clothes airer|Dryer sheet~Dryer sheets|Stain remover|Laundry pod~Detergent pod|Laundry powder~Washing powder|Laundry liquid~Liquid detergent|Laundry bag|Mesh wash bag|Hamper|Hanger~Clothes hanger|Lint roller|Lint brush|Steamer~Garment steamer|Starch~Laundry starch|Washcloth|Washboard|Laundry soap|Dryer ball~Dryer balls|Wool dryer ball",
+        "60": "Oxygen bleach~Color-safe bleach|Chlorine bleach|Bluing~Laundry bluing|Washing soda~Sodium carbonate|Borax|White vinegar|Baking soda~Bicarbonate of soda|Laundry sanitizer~Laundry disinfectant|Fabric refresher|Wrinkle-release spray~Wrinkle releaser|Delicates detergent|Wool wash|Prewash spray|Stain stick|Enzyme pretreatment|Color catcher~Colour catcher|Dye remover~Color run remover|Whitening booster|Water softener|Dry-cleaning kit|Dry-cleaning solvent|Lint remover~Fabric shaver|Sweater stone~Pumice fabric stone|Pressing cloth|Sleeve board|Wash tub~Laundry tub|Wash bag for shoes|Sock clip~Sock clips|Bra wash bag|Sweater drying rack|Clothes brush",
+        "85": "Mangle~Wringer|Clothes press~Laundry press|Steam press|Iron cleaner|Soleplate cleaner|Laundry blue bag|Laundry sour|Pressing mitt|Tailor's ham~Tailors ham|Dryer vent brush|Laundry trolley|Hanging peg dryer~Sock airer|Laundry sorting bin|Sew-in laundry label|Laundry marking pen|Wash ball~Laundry ball|Cedar block~Cedar blocks|Moth repellent~Mothballs|Dehumidifying clothes dryer",
+        "100": "Trouser press~Pants press"
+      }
+    },
+    {
+      "id": "authored-objects-with-hinges",
+      "concept": "objects-with-hinges",
+      "family": "everyday",
+      "topic": "Open and shut",
+      "prompt": "Name an object that commonly has a hinge.",
+      "scope": "A common hinged version of the object must exist. Sliding or roll-up versions do not prevent a genuinely hinged object from counting.",
+      "format": "properties",
+      "rationale": "A concrete familiar entry point and a wider factual tail, following the saved review; this asks for a different activity or object relationship rather than a tag combination.",
+      "familiar": [
+        "Door",
+        "Laptop",
+        "Gate",
+        "Briefcase",
+        "Toilet seat",
+        "Piano"
+      ],
+      "exclude": [
+        "Soccer ball",
+        "Paper clip"
+      ],
+      "references": [
+        "https://www.britannica.com/technology/hinge",
+        "https://www.hafele.com/us/en/info/products/hardware/hinges/57687/"
+      ],
+      "answers": {
+        "10": "Door|Gate|Laptop|Cabinet~Cupboard|Box|Chest|Window|Toilet seat|Briefcase",
+        "30": "Jewelry box~Jewellery box|Toolbox~Tool box|Suitcase|Trunk|Cooler~Ice chest|Refrigerator~Fridge|Freezer|Oven|Microwave|Dishwasher|Washing machine|Clothes dryer~Tumble dryer|Piano|Grand piano|Upright piano|Spectacles~Eyeglasses~Glasses|Locket|Folding chair|Folding table|Garage door|Car door|School locker~Locker|Laptop screen|Clamshell phone~Flip phone",
+        "60": "Sunglasses|Watch clasp|Bracelet clasp|Folding knife~Pocketknife|Swiss Army knife|Multi-tool~Multitool|Ladder~Stepladder|Folding bed|Murphy bed~Wall bed|Ironing board|Folding screen|Room divider|Shutter|Hatch|Trapdoor~Trap door|Attic hatch|Pet door~Cat flap|Dog crate|Birdcage~Bird cage|Garden shed|Mailbox|Bin lid~Trash can lid|Dustbin~Trash can|Bread box~Breadbin|Butter dish|Tea chest|Cigar box|Humidor|Lunchbox|Hinged picture frame|Triptych|Diptych|Pillbox|Compact mirror~Makeup compact|Casket~Coffin|Folding ruler~Carpenter's rule|Clamshell grill~Contact grill|Waffle iron|Sandwich maker",
+        "85": "Butterfly table|Drop-leaf table|Secretary desk|Hinged music stand|Razor case|Spectacle case~Glasses case|Travel sewing case|Reliquary|Book press|Camera battery door|Film camera back|Printer lid|Scanner lid|Copier lid|Welding helmet visor|Motorcycle helmet visor|Fireplace screen|Bellows camera|Folding bicycle|Hinged splint|Lid support chest|Cockpit canopy|Pyx",
+        "100": "Pyxis~Hinged pyxis"
+      }
+    },
+    {
+      "id": "authored-kitchen-hand-tools",
+      "concept": "kitchen-hand-tools",
+      "family": "everyday",
+      "topic": "Kitchen drawer",
+      "prompt": "Name a hand tool or utensil used to prepare or serve food.",
+      "scope": "Handheld kitchen implements and utensils count. Large powered appliances and foods do not qualify.",
+      "format": "situations",
+      "rationale": "A concrete familiar entry point and a wider factual tail, following the saved review; this asks for a different activity or object relationship rather than a tag combination.",
+      "familiar": [
+        "Whisk",
+        "Spatula",
+        "Peeler",
+        "Ladle",
+        "Can opener",
+        "Rolling pin"
+      ],
+      "exclude": [
+        "Refrigerator",
+        "Onion"
+      ],
+      "references": [
+        "https://www.oxo.com/shop/kitchenware.html",
+        "https://www.bbcgoodfood.com/review/best-kitchen-gadgets"
+      ],
+      "answers": {
+        "10": "Knife~Kitchen knife|Fork|Spoon|Spatula|Whisk|Peeler~Vegetable peeler|Can opener~Tin opener|Tongs|Ladle|Rolling pin",
+        "30": "Grater|Colander|Sieve~Strainer|Measuring cup|Measuring spoon|Pizza cutter|Potato masher|Garlic press|Corkscrew|Bottle opener|Ice cream scoop|Wooden spoon|Slotted spoon|Serving spoon|Soup spoon|Teaspoon|Tablespoon|Chopsticks|Kitchen scissors~Kitchen shears|Pastry brush|Basting brush|Baster~Turkey baster|Meat tenderizer~Meat mallet|Mortar and pestle|Pestle|Mortar|Salad servers|Cake server|Fish slice|Turner|Bench scraper~Dough scraper",
+        "60": "Mandoline|Zester|Microplane|Lemon squeezer~Citrus press|Citrus reamer|Melon baller|Apple corer|Apple slicer|Cherry pitter|Avocado slicer|Pineapple corer|Egg slicer|Egg separator|Egg whisk|Egg timer|Kitchen thermometer~Meat thermometer|Probe thermometer|Sugar thermometer~Candy thermometer|Pastry wheel|Pastry cutter|Pastry blender|Dough whisk~Danish dough whisk|Dough docker|Biscuit cutter~Cookie cutter|Biscuit stamp|Ravioli cutter|Pasta fork~Spaghetti server|Pasta tongs|Cheese slicer|Cheese plane|Cheese knife|Oyster knife|Clam knife|Fish scaler|Fish tweezers|Boning knife|Fillet knife|Paring knife|Bread knife|Chef's knife~Chefs knife|Carving knife|Cleaver|Santoku|Carving fork|Poultry shears|Kitchen funnel|Skimmer|Spider strainer~Spider|Slotted turner|Potato ricer|Food mill|Manual egg beater|Manual coffee grinder|Pepper mill|Nutcracker|Seafood cracker|Lobster pick|Toast tongs|Tea infuser|Tea strainer|Honey dipper|Butter knife|Butter curler|Corn cob holder~Corn holder",
+        "85": "Chinois|Tamis|Spurtle~Spurtle spoon|Spatule maryse~Rubber scraper|Offset spatula~Palette knife|Icing comb|Cake smoother|Piping bag~Pastry bag|Piping tip~Pastry nozzle|Syringe baster|Trussing needle|Larding needle|Chopstick rest|Bamboo sushi mat~Makisu|Tortilla press|Tostonera|Molcajete|Metate|Comal scraper|Crinkle cutter~Crinkle knife|Herb scissors|Herb stripper|Crab pick|Gnocchi board|Pizzelle roller|Chestnut knife|Truffle slicer|Omelette turner|Krumkake roller",
+        "100": "Chasen~Matcha whisk"
+      }
+    }
+  ]
+}

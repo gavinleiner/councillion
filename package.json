@@ -6,10 +6,12 @@
   "scripts": {
     "start": "python3 -m http.server 4173",
     "test": "node --import ./tests/question-data.mjs --test --test-concurrency=2 tests/*.test.js",
-    "build": "node scripts/build-reviewed-standard.mjs --check && python3 scripts/apply-reviewed-answer-repairs.py --check && node scripts/check-reviewed-standard.mjs && node scripts/update-question-review-rules.mjs --check && node scripts/update-moderation-rules.mjs --check && node scripts/update-puffer-rules.mjs --check && node scripts/update-admin-rules.mjs --check && node scripts/layout-platform-art.mjs --check && node build.mjs",
+    "build": "npm run check:authored && node scripts/build-reviewed-standard.mjs --check && python3 scripts/apply-reviewed-answer-repairs.py --check && node scripts/check-reviewed-standard.mjs && node scripts/update-question-review-rules.mjs --check && node scripts/update-moderation-rules.mjs --check && node scripts/update-puffer-rules.mjs --check && node scripts/update-admin-rules.mjs --check && node scripts/layout-platform-art.mjs --check && node build.mjs",
     "watch": "node build.mjs --watch",
     "test:security": "firebase emulators:exec --only auth,database --project demo-councillion \"node tests/database-security.mjs && node tests/question-review-network.mjs && node --import ./tests/question-data.mjs tests/admin-network.mjs && node tests/rank-grants-network.mjs && node --import ./tests/question-data.mjs tests/answer-network.mjs && node --import ./tests/question-data.mjs tests/party-network.mjs && node --import ./tests/question-data.mjs tests/party-public-access-network.mjs && node --import ./tests/question-data.mjs tests/party-ranked-network.mjs && node --import ./tests/question-data.mjs tests/tournament-network.mjs && node tests/tournament-receipts-network.mjs && node tests/solo-career-network.mjs && node tests/party-stones-network.mjs && node tests/auth-browser.mjs\"",
-    "test:answers": "node tests/answer-audit.mjs"
+    "test:answers": "node tests/answer-audit.mjs",
+    "check:5000": "node scripts/check-five-thousand-release.mjs --enforce",
+    "check:authored": "python3 scripts/prepare-authored-minecraft.py --check && python3 scripts/prepare-authored-character-rosters.py --check && python3 scripts/prepare-authored-broad-facts.py --check && python3 scripts/prepare-authored-food.py --check && python3 scripts/prepare-authored-open-knowledge.py --check && python3 scripts/build-authored-expansion.py --check"
   },
   "devDependencies": {
     "@firebase/rules-unit-testing": "^5.0.2",

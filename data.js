@@ -1,4 +1,5 @@
 import {DISTINCT_PACKS} from './distinct-question-catalog.js';
+import {AUTHORED_PACKS} from './authored-question-catalog.js';
 import {questionReview} from './question-quality.js';
 import {REVIEWED_BOUNDARIES} from './reviewed-question-standard.js';
 import {GROUP_PACKS,GROUP_EQUIVALENTS} from './group-question-catalog.js';
@@ -73,7 +74,7 @@ const historicalOriginalPacks=PACKS.filter(p=>p.dailyEligible&&!p.catalogVersion
 // Replace retained IDs in place so saved games still resolve the same ID.
 const groupIds=new Set(GROUP_PACKS.map(p=>p.id));
 for(let i=PACKS.length-1;i>=0;i--)if(groupIds.has(PACKS[i].id))PACKS.splice(i,1);
-PACKS.push(...GROUP_ARCHIVED_PACKS.filter(p=>!groupIds.has(p.id)),...GROUP_PACKS,...DISTINCT_PACKS);
+PACKS.push(...GROUP_ARCHIVED_PACKS.filter(p=>!groupIds.has(p.id)),...GROUP_PACKS,...DISTINCT_PACKS,...AUTHORED_PACKS);
 for(const p of PACKS){if(p.id==='fun-sports'||p.id==='var-semantic-sports_equipment-n-01')p.family='sports';if(['catalog-instrument-types','catalog-genre-clean','catalog-dances'].includes(p.id))p.family='music';if(p.id==='pokemon-abilities')p.family='gaming';}
 export const PACK_BY_ID=new Map(PACKS.map(p=>[p.id,p]));
 // A known wrong answer is not a spelling mistake. For example, the passive

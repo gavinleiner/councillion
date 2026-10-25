@@ -3552,6 +3552,332 @@
       "no": [],
       "prompt": "Name a piece of camping equipment.",
       "family": "everyday"
+    },
+    {
+      "id": "authored-dota-heroes",
+      "basis": "individually-reviewed-whole-inventory-based-on-original-yes-model",
+      "yes": [
+        "Pudge",
+        "Invoker",
+        "Anti-Mage",
+        "Crystal Maiden",
+        "Juggernaut",
+        "Axe"
+      ],
+      "no": [
+        "Garen",
+        "Tracer"
+      ],
+      "prompt": "Name a playable hero in Dota 2.",
+      "family": "gaming",
+      "inventoryEvidence": [
+        "https://www.dota2.com/datafeed/herolist?language=english",
+        "https://www.dota2.com/heroes"
+      ],
+      "review": "Reviewed complete released-game membership or a whole finite official/history roster; no tag pairs or partial popularity filter. Source row counts and exact answer names are independently exercised by authored-content tests."
+    },
+    {
+      "id": "authored-enderman-carry-blocks",
+      "basis": "individually-reviewed-whole-inventory-based-on-original-yes-model",
+      "yes": [
+        "Dirt",
+        "Grass Block",
+        "Sand",
+        "Gravel",
+        "TNT",
+        "Cactus"
+      ],
+      "no": [
+        "Obsidian",
+        "Bedrock"
+      ],
+      "prompt": "Name a block an Enderman can pick up in Minecraft.",
+      "family": "gaming",
+      "inventoryEvidence": [
+        "https://github.com/misode/mcmeta/tree/5f312935898c8f75f64d185b9874b129d0c67287/data/minecraft"
+      ],
+      "review": "Reviewed complete released-game membership or a whole finite official/history roster; no tag pairs or partial popularity filter. Source row counts and exact answer names are independently exercised by authored-content tests."
+    },
+    {
+      "id": "authored-legendary-mythical-pokemon",
+      "basis": "individually-reviewed-whole-inventory-based-on-original-yes-model",
+      "yes": [
+        "Mewtwo",
+        "Mew",
+        "Rayquaza",
+        "Arceus",
+        "Lugia",
+        "Ho-Oh"
+      ],
+      "no": [
+        "Pikachu",
+        "Charizard"
+      ],
+      "prompt": "Name a Legendary or Mythical Pokémon.",
+      "family": "gaming",
+      "inventoryEvidence": [
+        "https://pokeapi.co/docs/v2#pokemon-species",
+        "https://github.com/PokeAPI/pokeapi/tree/2bf639e5572812a67d2b94903fdcb9d095f5aeb2/data/v2/csv"
+      ],
+      "review": "Reviewed complete released-game membership or a whole finite official/history roster; no tag pairs or partial popularity filter. Source row counts and exact answer names are independently exercised by authored-content tests."
+    },
+    {
+      "id": "authored-minecraft-axe-transformations",
+      "basis": "individually-reviewed-whole-inventory-based-on-original-yes-model",
+      "yes": [
+        "Oak Log",
+        "Birch Log",
+        "Spruce Log",
+        "Jungle Log",
+        "Acacia Log",
+        "Waxed Copper Block"
+      ],
+      "no": [
+        "Stone",
+        "Glass"
+      ],
+      "prompt": "Name a Minecraft block you can strip, scrape or unwax by using an axe on it.",
+      "family": "gaming",
+      "inventoryEvidence": [
+        "https://github.com/misode/mcmeta/tree/5f312935898c8f75f64d185b9874b129d0c67287/data/minecraft"
+      ],
+      "review": "Reviewed complete released-game membership or a whole finite official/history roster; no tag pairs or partial popularity filter. Source row counts and exact answer names are independently exercised by authored-content tests."
+    },
+    {
+      "id": "authored-minecraft-fishing-catches",
+      "basis": "individually-reviewed-whole-inventory-based-on-original-yes-model",
+      "yes": [
+        "Cod",
+        "Salmon",
+        "Pufferfish",
+        "Tropical Fish",
+        "Bow",
+        "Saddle"
+      ],
+      "no": [
+        "Diamond",
+        "Netherite Ingot"
+      ],
+      "prompt": "Name an item you can catch by fishing in Minecraft.",
+      "family": "gaming",
+      "inventoryEvidence": [
+        "https://github.com/misode/mcmeta/tree/5f312935898c8f75f64d185b9874b129d0c67287/data/minecraft"
+      ],
+      "review": "Reviewed complete released-game membership or a whole finite official/history roster; no tag pairs or partial popularity filter. Source row counts and exact answer names are independently exercised by authored-content tests."
+    },
+    {
+      "id": "authored-minecraft-flowers",
+      "basis": "individually-reviewed-whole-inventory-based-on-original-yes-model",
+      "yes": [
+        "Dandelion",
+        "Poppy",
+        "Blue Orchid",
+        "Sunflower",
+        "Rose Bush",
+        "Allium"
+      ],
+      "no": [
+        "Oak Sapling",
+        "Wheat"
+      ],
+      "prompt": "Name a flower or flowering block found in Minecraft.",
+      "family": "gaming",
+      "inventoryEvidence": [
+        "https://github.com/misode/mcmeta/tree/5f312935898c8f75f64d185b9874b129d0c67287/data/minecraft"
+      ],
+      "review": "Reviewed complete released-game membership or a whole finite official/history roster; no tag pairs or partial popularity filter. Source row counts and exact answer names are independently exercised by authored-content tests."
+    },
+    {
+      "id": "authored-minecraft-furnace-fuel",
+      "basis": "individually-reviewed-whole-inventory-based-on-original-yes-model",
+      "yes": [
+        "Coal",
+        "Charcoal",
+        "Lava Bucket",
+        "Stick",
+        "Blaze Rod",
+        "Dried Kelp Block"
+      ],
+      "no": [
+        "Gunpowder",
+        "Netherrack"
+      ],
+      "prompt": "Name an item that can be used as furnace fuel in Minecraft.",
+      "family": "gaming",
+      "inventoryEvidence": [
+        "https://github.com/misode/mcmeta/tree/5f312935898c8f75f64d185b9874b129d0c67287/data/minecraft",
+        "https://github.com/misode/mcmeta/tree/d96c75fec200c4580dd75e033a76341521165461/item_components"
+      ],
+      "review": "Reviewed complete released-game membership or a whole finite official/history roster; no tag pairs or partial popularity filter. Source row counts and exact answer names are independently exercised by authored-content tests."
+    },
+    {
+      "id": "authored-minecraft-furnace-results",
+      "basis": "individually-reviewed-whole-inventory-based-on-original-yes-model",
+      "yes": [
+        "Glass",
+        "Iron Ingot",
+        "Gold Ingot",
+        "Charcoal",
+        "Cooked Beef",
+        "Smooth Stone"
+      ],
+      "no": [
+        "Obsidian",
+        "Crafting Table"
+      ],
+      "prompt": "Name an item or block a furnace recipe can produce in Minecraft.",
+      "family": "gaming",
+      "inventoryEvidence": [
+        "https://github.com/misode/mcmeta/tree/5f312935898c8f75f64d185b9874b129d0c67287/data/minecraft"
+      ],
+      "review": "Reviewed complete released-game membership or a whole finite official/history roster; no tag pairs or partial popularity filter. Source row counts and exact answer names are independently exercised by authored-content tests."
+    },
+    {
+      "id": "authored-nba-regular-season-mvps",
+      "basis": "individually-reviewed-whole-inventory-based-on-original-yes-model",
+      "yes": [
+        "Michael Jordan",
+        "LeBron James",
+        "Stephen Curry",
+        "Kobe Bryant",
+        "Nikola Jokić",
+        "Shaquille O'Neal"
+      ],
+      "no": [
+        "Luka Doncic",
+        "Dwyane Wade"
+      ],
+      "prompt": "Name a player who has won the NBA regular-season MVP award.",
+      "family": "sports",
+      "inventoryEvidence": [
+        "https://www.nba.com/news/history-mvp-award-winners",
+        "https://s3.grizzliesapp.com/assets/media_guides/25-26/MG_25-26_MediaGuide.pdf"
+      ],
+      "review": "Reviewed complete released-game membership or a whole finite official/history roster; no tag pairs or partial popularity filter. Source row counts and exact answer names are independently exercised by authored-content tests."
+    },
+    {
+      "id": "authored-official-constellations",
+      "basis": "individually-reviewed-whole-inventory-based-on-original-yes-model",
+      "yes": [
+        "Orion",
+        "Ursa Major",
+        "Leo",
+        "Gemini",
+        "Cassiopeia",
+        "Taurus"
+      ],
+      "no": [
+        "Big Dipper",
+        "Sirius"
+      ],
+      "prompt": "Name one of the 88 official constellations.",
+      "family": "science",
+      "inventoryEvidence": [
+        "https://starchild.gsfc.nasa.gov/docs/StarChild/questions/88constellations.html",
+        "https://www.iau.org/IAU/Astronomy-FAQs/Constellations.aspx"
+      ],
+      "review": "Reviewed complete released-game membership or a whole finite official/history roster; no tag pairs or partial popularity filter. Source row counts and exact answer names are independently exercised by authored-content tests."
+    },
+    {
+      "id": "authored-overwatch-heroes",
+      "basis": "individually-reviewed-whole-inventory-based-on-original-yes-model",
+      "yes": [
+        "Tracer",
+        "Mercy",
+        "Genji",
+        "D.Va",
+        "Reinhardt",
+        "Soldier: 76"
+      ],
+      "no": [
+        "Master Chief",
+        "Pudge"
+      ],
+      "prompt": "Name a playable hero in Overwatch.",
+      "family": "gaming",
+      "inventoryEvidence": [
+        "https://overwatch.blizzard.com/en-us/heroes/",
+        "https://news.blizzard.com/en-us/article/24246206/overwatch-spotlight-the-reign-of-talon-begins"
+      ],
+      "review": "Reviewed complete released-game membership or a whole finite official/history roster; no tag pairs or partial popularity filter. Source row counts and exact answer names are independently exercised by authored-content tests."
+    },
+    {
+      "id": "authored-smash-ultimate-fighters",
+      "basis": "individually-reviewed-whole-inventory-based-on-original-yes-model",
+      "yes": [
+        "Mario",
+        "Pikachu",
+        "Kirby",
+        "Link",
+        "Sonic",
+        "Samus"
+      ],
+      "no": [
+        "Waluigi",
+        "Crash Bandicoot"
+      ],
+      "prompt": "Name a playable fighter in Super Smash Bros. Ultimate.",
+      "family": "gaming",
+      "inventoryEvidence": [
+        "https://www.smashbros.com/en_US/fighter/",
+        "https://www.smashbros.com/assets_v2/data/fighter.json"
+      ],
+      "review": "Reviewed complete released-game membership or a whole finite official/history roster; no tag pairs or partial popularity filter. Source row counts and exact answer names are independently exercised by authored-content tests."
+    },
+    {
+      "id": "authored-super-bowl-winning-starters",
+      "basis": "individually-reviewed-whole-inventory-based-on-original-yes-model",
+      "yes": [
+        "Tom Brady",
+        "Patrick Mahomes",
+        "Joe Montana",
+        "Peyton Manning",
+        "Aaron Rodgers",
+        "Russell Wilson",
+        "Bart Starr"
+      ],
+      "no": [
+        "Dan Marino",
+        "Jim Kelly"
+      ],
+      "prompt": "Name a quarterback who started and won a Super Bowl.",
+      "family": "sports",
+      "inventoryEvidence": [
+        "https://www.pro-football-reference.com/pfr-blog/2023/10/complete-list-of-super-bowl-winning-quarterbacks/",
+        "https://www.nfl.com/super-bowl/history/",
+        "https://www.seahawks.com/news/2025-the-seahawks-are-super-bowl-lx-champions"
+      ],
+      "review": "Reviewed complete released-game membership or a whole finite official/history roster; no tag pairs or partial popularity filter. Source row counts and exact answer names are independently exercised by authored-content tests."
+    }
+  ],
+  "expansionBatches": [
+    {
+      "id": "authored-complete-inventories-01",
+      "date": "2026-10-25",
+      "questions": [
+        "authored-dota-heroes",
+        "authored-enderman-carry-blocks",
+        "authored-legendary-mythical-pokemon",
+        "authored-minecraft-axe-transformations",
+        "authored-minecraft-fishing-catches",
+        "authored-minecraft-flowers",
+        "authored-minecraft-furnace-fuel",
+        "authored-minecraft-furnace-results",
+        "authored-nba-regular-season-mvps",
+        "authored-official-constellations",
+        "authored-overwatch-heroes",
+        "authored-smash-ultimate-fighters",
+        "authored-super-bowl-winning-starters"
+      ],
+      "status": "admitted in development; not a 5,000-question release",
+      "sourceChecks": [
+        "Recursive released Minecraft membership data and loot modifiers",
+        "Full official publisher character rosters; costumes share fighter identity",
+        "Full Legendary/Mythical species flags and named forms",
+        "88 official constellation names",
+        "All 60 Super Bowl game winners reconcile to 36 distinct starting quarterbacks",
+        "NBA regular-season MVP roster including Bob McAdoo and the current official winner"
+      ]
     }
   ]
 }

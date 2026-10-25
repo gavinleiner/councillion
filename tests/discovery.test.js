@@ -12,7 +12,7 @@ import{FRESH_DAILY_IDS}from'../daily-schedule.js';
 import{PartySession}from'../party.js';
 const read=f=>readFileSync(new URL('../'+f,import.meta.url));
 test('source archives remain intact while broad sports survive the ordinary-play quality gate',()=>{
- assert.ok(DISCOVERY_PACKS.length>=2000);assert.equal(MIXED_PACKS.length,227);assert.ok(PARTY_PACKS.length>=100);assert.ok(PARTY_PACKS.filter(p=>p.family==='sports').length>=10);
+ assert.ok(DISCOVERY_PACKS.length>=2000);assert.deepEqual(new Set(MIXED_PACKS.map(p=>p.id)),new Set(JSON.parse(readFileSync(new URL('../data-snapshots/reviewed-standard/admission.json',import.meta.url))).questions.map(p=>p.id)));assert.ok(PARTY_PACKS.length>=100);assert.ok(PARTY_PACKS.filter(p=>p.family==='sports').length>=10);
  const sets=new Set(),prompts=new Set();const manifest=JSON.parse(read('discovery-manifest.json'));
  assert.equal(DISCOVERY_PACKS.length,manifest.length);
  for(const m of manifest){const p=DISCOVERY_PACKS.find(p=>p.id===m.id);assert.equal(PARTY_IDS.has(m.id),questionReview(PACK_BY_ID.get(m.id)).status==='automatic');assert.ok(p.answerCount>=30&&p.familiarCount>=8);assert.equal(p.answerCount,m.answerCount);assert.ok(!sets.has(m.identityHash));sets.add(m.identityHash);assert.ok(!prompts.has(p.prompt));prompts.add(p.prompt);

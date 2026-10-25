@@ -1,0 +1,21 @@
+{
+  "musical-duos": {
+    "add": [
+      {"id":"Q472595","name":"OutKast","aliases":["Outkast"],"sitelinks":90,"reference":"https://rockhall.com/inductees/outkast/"},
+      {"id":"Q7857806","name":"Twenty One Pilots","aliases":[],"sitelinks":57,"reference":"https://en.wikipedia.org/wiki/Twenty_One_Pilots"},
+      {"id":"Q173790","name":"Roxette","aliases":[],"sitelinks":60,"reference":"https://en.wikipedia.org/wiki/Roxette"}
+    ],
+    "aliases": {},
+    "note":"These familiar acts have a broad musical-group classification in the source instead of a musical-duo type. Their documented duo lineups qualify; source type absence does not make a correct answer false. Remaining duo classification gaps still need an editorial sweep."
+  },
+  "museums": {
+    "add": [],
+    "aliases": {"Q19675":["Louvre","The Louvre"],"Q160236":["The Met","Met Museum"],"Q188740":["MoMA","Museum of Modern Art New York"],"Q213322":["V&A"]},
+    "note":"Documented public names, not generated initials. Louvre is the museum's own English brand. V&A is the institution's official brand."
+  },
+  "mountain-ranges": {
+    "add": [],
+    "aliases": {"Q1422867":["Gamburtsev Mountains","Gamburtsev Subglacial Mountains"]},
+    "note":"Common scientific name variants of the same physical range; no separate answer identity for an alternate name."
+  }
+}

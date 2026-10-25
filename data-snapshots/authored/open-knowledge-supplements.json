@@ -1,0 +1,385 @@
+{
+  "record-labels": {
+    "add": [
+      {
+        "name": "Fat Possum Records",
+        "aliases": [
+          "Fat Possum"
+        ],
+        "evidence": "https://fatpossum.com/"
+      }
+    ],
+    "aliases": {},
+    "pending": []
+  },
+  "named-djs": {
+    "add": [
+      {
+        "name": "David Guetta",
+        "aliases": [],
+        "evidence": "https://djmag.com/top100djs/2026"
+      },
+      {
+        "name": "Calvin Harris",
+        "aliases": [],
+        "evidence": "https://djmag.com/top100djs/2026"
+      },
+      {
+        "name": "Tiësto",
+        "aliases": [
+          "Tiesto"
+        ],
+        "evidence": "https://djmag.com/top100djs/2026"
+      },
+      {
+        "name": "Marshmello",
+        "aliases": [],
+        "evidence": "https://djmag.com/top100djs/2026"
+      },
+      {
+        "name": "Skrillex",
+        "aliases": [],
+        "evidence": "https://djmag.com/top100djs/2026"
+      },
+      {
+        "name": "Fisher",
+        "aliases": [
+          "FISHER"
+        ],
+        "evidence": "https://djmag.com/top100djs/2026"
+      },
+      {
+        "name": "Fred again..",
+        "aliases": [
+          "Fred Again"
+        ],
+        "evidence": "https://djmag.com/top100djs/2026"
+      },
+      {
+        "name": "Dom Dolla",
+        "aliases": [],
+        "evidence": "https://djmag.com/top100djs/2026"
+      },
+      {
+        "name": "Mau P",
+        "aliases": [],
+        "evidence": "https://djmag.com/top100djs/2026"
+      },
+      {
+        "name": "DJ Snake",
+        "aliases": [],
+        "evidence": "https://djmag.com/top100djs/2026"
+      },
+      {
+        "name": "Annie Mac",
+        "aliases": [],
+        "evidence": "https://www.bbc.co.uk/radio; published radio-personality career histories require a final source-by-person check before admission"
+      },
+      {
+        "name": "Bob Harris",
+        "aliases": [
+          "Whispering Bob Harris"
+        ],
+        "evidence": "https://www.bbc.co.uk/radio; published radio-personality career histories require a final source-by-person check before admission"
+      },
+      {
+        "name": "Howard Stern",
+        "aliases": [],
+        "evidence": "https://www.bbc.co.uk/radio; published radio-personality career histories require a final source-by-person check before admission"
+      },
+      {
+        "name": "Dick Clark",
+        "aliases": [],
+        "evidence": "https://www.bbc.co.uk/radio; published radio-personality career histories require a final source-by-person check before admission"
+      },
+      {
+        "name": "Delilah",
+        "aliases": [
+          "Delilah Rene"
+        ],
+        "evidence": "https://www.bbc.co.uk/radio; published radio-personality career histories require a final source-by-person check before admission"
+      }
+    ],
+    "aliases": {},
+    "pending": []
+  },
+  "named-drummers": {
+    "add": [
+      {
+        "name": "Debbi Peterson",
+        "aliases": [],
+        "evidence": "Manually identified real drummer omissions; final first-party performance references pending before admission"
+      },
+      {
+        "name": "Anderson .Paak",
+        "aliases": [
+          "Anderson Paak"
+        ],
+        "evidence": "Manually identified real drummer omissions; final first-party performance references pending before admission"
+      },
+      {
+        "name": "ZackGrooves",
+        "aliases": [
+          "Zack Grooves"
+        ],
+        "evidence": "Manually identified real drummer omissions; final first-party performance references pending before admission"
+      }
+    ],
+    "aliases": {
+      "Q72759190": [
+        "Yoyoka"
+      ]
+    },
+    "pending": [
+      {
+        "lookup": "Tré Cool",
+        "aliases": [
+          "Frank Edwin Wright III"
+        ],
+        "reason": "Repair full-name alias against existing entity ID"
+      }
+    ]
+  },
+  "keyboard-instruments": {
+    "add": [
+      {
+        "name": "Synthesizer",
+        "aliases": [
+          "Synth"
+        ],
+        "evidence": "https://en.wikipedia.org/wiki/List_of_keyboard_instruments"
+      },
+      {
+        "name": "Digital piano",
+        "aliases": [],
+        "evidence": "https://en.wikipedia.org/wiki/List_of_keyboard_instruments"
+      },
+      {
+        "name": "Electric piano",
+        "aliases": [],
+        "evidence": "https://en.wikipedia.org/wiki/List_of_keyboard_instruments"
+      },
+      {
+        "name": "Mellotron",
+        "aliases": [],
+        "evidence": "https://en.wikipedia.org/wiki/List_of_keyboard_instruments"
+      },
+      {
+        "name": "Hurdy-gurdy",
+        "aliases": [],
+        "evidence": "https://en.wikipedia.org/wiki/List_of_keyboard_instruments"
+      },
+      {
+        "name": "Calliope",
+        "aliases": [],
+        "evidence": "https://en.wikipedia.org/wiki/List_of_keyboard_instruments"
+      },
+      {
+        "name": "Rhodes piano",
+        "aliases": [],
+        "evidence": "https://en.wikipedia.org/wiki/List_of_keyboard_instruments"
+      },
+      {
+        "name": "Wurlitzer electric piano",
+        "aliases": [],
+        "evidence": "https://en.wikipedia.org/wiki/List_of_keyboard_instruments"
+      },
+      {
+        "name": "Optigan",
+        "aliases": [],
+        "evidence": "https://en.wikipedia.org/wiki/List_of_keyboard_instruments"
+      },
+      {
+        "name": "Fairlight CMI",
+        "aliases": [],
+        "evidence": "https://en.wikipedia.org/wiki/List_of_keyboard_instruments"
+      },
+      {
+        "name": "Emulator keyboard",
+        "aliases": [
+          "E-mu Emulator"
+        ],
+        "evidence": "https://en.wikipedia.org/wiki/List_of_keyboard_instruments"
+      }
+    ],
+    "aliases": {},
+    "pending": []
+  },
+  "named-airports": {
+    "add": [],
+    "aliases": {
+      "Q9694": [
+        "Amsterdam Airport Schiphol",
+        "Schiphol",
+        "Schiphol Airport"
+      ]
+    },
+    "pending": []
+  },
+  "castles-palaces": {
+    "add": [
+      {
+        "name": "Balmoral Castle",
+        "aliases": [],
+        "evidence": "Recognized castles/palaces omitted from the exact castle/palace type queries; first-party monument listings require a final cross-check before admission"
+      },
+      {
+        "name": "Château de Chambord",
+        "aliases": [
+          "Chateau de Chambord"
+        ],
+        "evidence": "Recognized castles/palaces omitted from the exact castle/palace type queries; first-party monument listings require a final cross-check before admission"
+      },
+      {
+        "name": "Château de Chenonceau",
+        "aliases": [
+          "Chateau de Chenonceau"
+        ],
+        "evidence": "Recognized castles/palaces omitted from the exact castle/palace type queries; first-party monument listings require a final cross-check before admission"
+      },
+      {
+        "name": "Schönbrunn Palace",
+        "aliases": [
+          "Schonbrunn Palace",
+          "Schoenbrunn Palace"
+        ],
+        "evidence": "Recognized castles/palaces omitted from the exact castle/palace type queries; first-party monument listings require a final cross-check before admission"
+      },
+      {
+        "name": "Cinderella Castle",
+        "aliases": [
+          "Cinderella Castle at Walt Disney World"
+        ],
+        "evidence": "Real decorative castle attraction; final publisher attraction listing check pending before admission"
+      },
+      {
+        "name": "Sleeping Beauty Castle",
+        "aliases": [],
+        "evidence": "Real decorative castle attraction; final publisher attraction listing check pending before admission"
+      },
+      {
+        "name": "Enchanted Storybook Castle",
+        "aliases": [],
+        "evidence": "Real decorative castle attraction; final publisher attraction listing check pending before admission"
+      }
+    ],
+    "aliases": {
+      "Q170495": [
+        "Topkapi Palace"
+      ]
+    },
+    "pending": []
+  },
+  "named-deserts": {
+    "add": [
+      {
+        "name": "Kyzylkum Desert",
+        "aliases": [
+          "Kyzyl Kum"
+        ],
+        "evidence": "Known named desert omissions; primary geographical reference cross-check pending before admission"
+      },
+      {
+        "name": "Patagonian Desert",
+        "aliases": [],
+        "evidence": "Known named desert omissions; primary geographical reference cross-check pending before admission"
+      },
+      {
+        "name": "Antarctic Desert",
+        "aliases": [],
+        "evidence": "Known named desert omissions; primary geographical reference cross-check pending before admission"
+      }
+    ],
+    "aliases": {},
+    "pending": []
+  },
+  "archaeological-sites": {
+    "add": [
+      {
+        "name": "Giza pyramid complex",
+        "aliases": [
+          "Pyramids of Giza"
+        ],
+        "evidence": "https://whc.unesco.org/en/list/"
+      },
+      {
+        "name": "Sanchi",
+        "aliases": [],
+        "evidence": "https://whc.unesco.org/en/list/"
+      },
+      {
+        "name": "Bodh Gaya",
+        "aliases": [],
+        "evidence": "https://whc.unesco.org/en/list/"
+      },
+      {
+        "name": "Ayutthaya",
+        "aliases": [
+          "Historic City of Ayutthaya"
+        ],
+        "evidence": "https://whc.unesco.org/en/list/"
+      },
+      {
+        "name": "Sukhothai",
+        "aliases": [
+          "Historic Town of Sukhothai"
+        ],
+        "evidence": "https://whc.unesco.org/en/list/"
+      },
+      {
+        "name": "Prambanan",
+        "aliases": [],
+        "evidence": "https://whc.unesco.org/en/list/"
+      },
+      {
+        "name": "Chaco Canyon",
+        "aliases": [
+          "Chaco Culture National Historical Park"
+        ],
+        "evidence": "https://www.nps.gov/chcu/index.htm"
+      },
+      {
+        "name": "Mesa Verde",
+        "aliases": [
+          "Mesa Verde National Park"
+        ],
+        "evidence": "https://www.nps.gov/meve/index.htm"
+      }
+    ],
+    "aliases": {
+      "Q42798": [
+        "Borobudur"
+      ]
+    },
+    "pending": []
+  },
+  "named-waterfalls": {
+    "add": [
+      {
+        "name": "Plitvice Waterfalls",
+        "aliases": [],
+        "evidence": "Tourism-name aliases/complexes omitted by the exact waterfall-class query; official park and attraction checks pending before admission"
+      },
+      {
+        "name": "Krka Waterfalls",
+        "aliases": [],
+        "evidence": "Tourism-name aliases/complexes omitted by the exact waterfall-class query; official park and attraction checks pending before admission"
+      },
+      {
+        "name": "Catarata del Toro",
+        "aliases": [],
+        "evidence": "Tourism-name aliases/complexes omitted by the exact waterfall-class query; official park and attraction checks pending before admission"
+      }
+    ],
+    "aliases": {
+      "Q1137629": [
+        "Godafoss"
+      ],
+      "Q38588": [
+        "Voringfossen",
+        "Voringsfossen"
+      ]
+    },
+    "pending": []
+  }
+}

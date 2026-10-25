@@ -1,0 +1,320 @@
+{
+  "status": "Candidates require full classification, supplemental-evidence and familiar-name review before admission. No issue is waived by a large answer count.",
+  "issues": [
+    {
+      "question": "record-labels",
+      "id": "Q104190216",
+      "name": "Фонограф",
+      "reason": "No usable English/Latin answer label under the current display limit"
+    },
+    {
+      "question": "record-labels",
+      "id": "Q107053853",
+      "name": "Ακτή",
+      "reason": "No usable English/Latin answer label under the current display limit"
+    },
+    {
+      "question": "record-labels",
+      "id": "Q124152262",
+      "name": "ООО \"Медиалайн\"",
+      "reason": "No usable English/Latin answer label under the current display limit"
+    },
+    {
+      "question": "named-djs",
+      "name": "Annie Mac",
+      "reason": "https://www.bbc.co.uk/radio; published radio-personality career histories require a final source-by-person check before admission"
+    },
+    {
+      "question": "named-djs",
+      "name": "Bob Harris",
+      "reason": "https://www.bbc.co.uk/radio; published radio-personality career histories require a final source-by-person check before admission"
+    },
+    {
+      "question": "named-djs",
+      "name": "Howard Stern",
+      "reason": "https://www.bbc.co.uk/radio; published radio-personality career histories require a final source-by-person check before admission"
+    },
+    {
+      "question": "named-djs",
+      "name": "Dick Clark",
+      "reason": "https://www.bbc.co.uk/radio; published radio-personality career histories require a final source-by-person check before admission"
+    },
+    {
+      "question": "named-djs",
+      "name": "Delilah",
+      "reason": "https://www.bbc.co.uk/radio; published radio-personality career histories require a final source-by-person check before admission"
+    },
+    {
+      "question": "named-drummers",
+      "name": "Debbi Peterson",
+      "reason": "Manually identified real drummer omissions; final first-party performance references pending before admission"
+    },
+    {
+      "question": "named-drummers",
+      "name": "Anderson .Paak",
+      "reason": "Manually identified real drummer omissions; final first-party performance references pending before admission"
+    },
+    {
+      "question": "named-drummers",
+      "name": "ZackGrooves",
+      "reason": "Manually identified real drummer omissions; final first-party performance references pending before admission"
+    },
+    {
+      "question": "castles-palaces",
+      "name": "Balmoral Castle",
+      "reason": "Recognized castles/palaces omitted from the exact castle/palace type queries; first-party monument listings require a final cross-check before admission"
+    },
+    {
+      "question": "castles-palaces",
+      "name": "Château de Chambord",
+      "reason": "Recognized castles/palaces omitted from the exact castle/palace type queries; first-party monument listings require a final cross-check before admission"
+    },
+    {
+      "question": "castles-palaces",
+      "name": "Château de Chenonceau",
+      "reason": "Recognized castles/palaces omitted from the exact castle/palace type queries; first-party monument listings require a final cross-check before admission"
+    },
+    {
+      "question": "castles-palaces",
+      "name": "Schönbrunn Palace",
+      "reason": "Recognized castles/palaces omitted from the exact castle/palace type queries; first-party monument listings require a final cross-check before admission"
+    },
+    {
+      "question": "castles-palaces",
+      "name": "Cinderella Castle",
+      "reason": "Real decorative castle attraction; final publisher attraction listing check pending before admission"
+    },
+    {
+      "question": "castles-palaces",
+      "name": "Sleeping Beauty Castle",
+      "reason": "Real decorative castle attraction; final publisher attraction listing check pending before admission"
+    },
+    {
+      "question": "castles-palaces",
+      "name": "Enchanted Storybook Castle",
+      "reason": "Real decorative castle attraction; final publisher attraction listing check pending before admission"
+    },
+    {
+      "question": "castles-palaces",
+      "id": "Q49503439",
+      "name": "Stolpen Castle as a whole, with the following individual monuments: partly only ruined castle complex with all its components, including casemate, stables, main guardhouse, granary, Renaissance portal with coat of arms, Johannisturm (Coselturm), ...",
+      "reason": "No usable English/Latin answer label under the current display limit"
+    },
+    {
+      "question": "named-deserts",
+      "name": "Kyzylkum Desert",
+      "reason": "Known named desert omissions; primary geographical reference cross-check pending before admission"
+    },
+    {
+      "question": "named-deserts",
+      "name": "Patagonian Desert",
+      "reason": "Known named desert omissions; primary geographical reference cross-check pending before admission"
+    },
+    {
+      "question": "named-deserts",
+      "name": "Antarctic Desert",
+      "reason": "Known named desert omissions; primary geographical reference cross-check pending before admission"
+    },
+    {
+      "question": "archaeological-sites",
+      "id": "Q137553094",
+      "name": "后崎山遗址",
+      "reason": "No usable English/Latin answer label under the current display limit"
+    },
+    {
+      "question": "archaeological-sites",
+      "id": "Q17650848",
+      "name": "Multi-period archaeological landscape centred on and including a slight univallate hillfort called Chalbury, two bowl barrows, part of a Bronze Age urnfield and a series of medieval strip fields",
+      "reason": "No usable English/Latin answer label under the current display limit"
+    },
+    {
+      "question": "archaeological-sites",
+      "id": "Q97692169",
+      "name": "Ancient buddhist site of Sarnath, including the Dhamek stupa, Jagat Singh Stupa, the monastery of Major Kitlee and all the monuments excavated by Mr. Certal in 1984-85 with an area of 53.04 acres, including government land measuring 21.94 acres",
+      "reason": "No usable English/Latin answer label under the current display limit"
+    },
+    {
+      "question": "named-mausoleums",
+      "id": "Q127512395",
+      "name": "Tomb of Lucius Barbidius Communis and Pithia Rufilla, Acris, Aulus Dentatius Fortunatus, Aulus Dentatius Felix, Aulo Dentatio A. L. Celso, Pompeia Aucta, L. Barbidio Vitali, Vitalis, Ianuarius",
+      "reason": "No usable English/Latin answer label under the current display limit"
+    },
+    {
+      "question": "named-mausoleums",
+      "id": "Q136545886",
+      "name": "امامزاده اسماعیل",
+      "reason": "No usable English/Latin answer label under the current display limit"
+    },
+    {
+      "question": "named-mausoleums",
+      "id": "Q16704778",
+      "name": "Памятники жертвам военных конфликтов на земле Курортного района Санкт-Петербурга",
+      "reason": "No usable English/Latin answer label under the current display limit"
+    },
+    {
+      "question": "named-mausoleums",
+      "id": "Q21406313",
+      "name": "Архангельское кладбище Казани",
+      "reason": "No usable English/Latin answer label under the current display limit"
+    },
+    {
+      "question": "named-mausoleums",
+      "id": "Q26388167",
+      "name": "6 Tombchests In St Swithins Churchyard Re-Used Medieval Coffin Lid And Tombchests To 1 H Nevill 1795; 2 T Nevill 1836; 3 A Wharton And Family 1760; 4 B Wharton And Family 1786; 5 C Hill 1796",
+      "reason": "No usable English/Latin answer label under the current display limit"
+    },
+    {
+      "question": "named-mausoleums",
+      "id": "Q26415548",
+      "name": "Two Tombstones At Church Of St Andrew 1 3 Metres North Of North Vestry To Mary Ewer 1830 And Jonn Ewer 1844 2 6 Metres North Of North Vestry To Thomas Shepherd Ewer 1856 And Emma Elizabeth Ewer 1852",
+      "reason": "No usable English/Latin answer label under the current display limit"
+    },
+    {
+      "question": "named-mausoleums",
+      "id": "Q26468343",
+      "name": "Sarcophagus About 25 Metres North Of Nave, Three Sarcophagi On North-East And North-West Sides Of West Tower And Chest Tomb On North Side Of Pathway To West Door Of Parish Church Of St Augustine",
+      "reason": "No usable English/Latin answer label under the current display limit"
+    },
+    {
+      "question": "named-mausoleums",
+      "id": "Q26525100",
+      "name": "Chest Tomb Commemorating Thomas Jeffries (Died 1809) And 3 Chest Tombs Commemorating The Jeffries (2 Late Eighteenth Century, One Early-Mid Nineteenth Century) Grouped Approximately 25 Yards To South Of The South Chapel",
+      "reason": "No usable English/Latin answer label under the current display limit"
+    },
+    {
+      "question": "named-mausoleums",
+      "id": "Q26589683",
+      "name": "Six Tomb Chests In St Mary's Churchyard; Group Of 4 To North Of Chancel 2 To Bulpett Family; 2 To Veck Family. One To East Of Chancel To Robet Rodney And Family; One To South Of Tower To J T Villebois",
+      "reason": "No usable English/Latin answer label under the current display limit"
+    },
+    {
+      "question": "named-mausoleums",
+      "id": "Q26591697",
+      "name": "Group Of 5 Tombs Immediately To East Of Chancel South Aisle Of All Saints Church To Benjamin 1776 And Elizabeth 1784 Gooch; Shute 1776 And Dorothea 1785 D'Urban; John D'Urban M.D. 1782; George Parker 1792; Elizabeth D'Urban 1810",
+      "reason": "No usable English/Latin answer label under the current display limit"
+    },
+    {
+      "question": "named-mausoleums",
+      "id": "Q49461534",
+      "name": "Property group Parish church and churchyard Krippen with the following individual monuments: neo-Romanesque hall church with south-west tower, war memorial for the fallen of the First World War, F.G. Keller tomb and crypt house",
+      "reason": "No usable English/Latin answer label under the current display limit"
+    },
+    {
+      "question": "named-mausoleums",
+      "id": "Q98586704",
+      "name": "Friedhof Balthasar-Neumann-Straße 2; Balthasar-Neumann-Straße 4; Balthasar-Neumann-Straße 4a; Nähe Am Kreuzberg; Nähe Balthasar-Neumann-Straße; Viktor-von-Scheffel-Straße 1 in Gößweinstein",
+      "reason": "No usable English/Latin answer label under the current display limit"
+    },
+    {
+      "question": "named-waterfalls",
+      "name": "Plitvice Waterfalls",
+      "reason": "Tourism-name aliases/complexes omitted by the exact waterfall-class query; official park and attraction checks pending before admission"
+    },
+    {
+      "question": "named-waterfalls",
+      "name": "Krka Waterfalls",
+      "reason": "Tourism-name aliases/complexes omitted by the exact waterfall-class query; official park and attraction checks pending before admission"
+    },
+    {
+      "question": "named-waterfalls",
+      "name": "Catarata del Toro",
+      "reason": "Tourism-name aliases/complexes omitted by the exact waterfall-class query; official park and attraction checks pending before admission"
+    },
+    {
+      "question": "named-waterfalls",
+      "id": "Q4071445",
+      "name": "Абҙан шарлауығы",
+      "reason": "No usable English/Latin answer label under the current display limit"
+    },
+    {
+      "question": "named-waterfalls",
+      "id": "Q86684806",
+      "name": "Водопад на ручье Святом",
+      "reason": "No usable English/Latin answer label under the current display limit"
+    }
+  ],
+  "challenges": [
+    {
+      "question": "record-labels",
+      "checked": 67,
+      "notAssumedValid": [],
+      "missing": []
+    },
+    {
+      "question": "named-djs",
+      "checked": 62,
+      "notAssumedValid": [],
+      "missing": []
+    },
+    {
+      "question": "named-drummers",
+      "checked": 67,
+      "notAssumedValid": [
+        "Rick Savage"
+      ],
+      "missing": []
+    },
+    {
+      "question": "keyboard-instruments",
+      "checked": 44,
+      "notAssumedValid": [
+        "Sampler",
+        "Vocoder"
+      ],
+      "missing": []
+    },
+    {
+      "question": "named-airports",
+      "checked": 25,
+      "notAssumedValid": [],
+      "missing": []
+    },
+    {
+      "question": "castles-palaces",
+      "checked": 32,
+      "notAssumedValid": [],
+      "missing": []
+    },
+    {
+      "question": "named-deserts",
+      "checked": 30,
+      "notAssumedValid": [],
+      "missing": []
+    },
+    {
+      "question": "named-canals",
+      "checked": 30,
+      "notAssumedValid": [],
+      "missing": []
+    },
+    {
+      "question": "archaeological-sites",
+      "checked": 51,
+      "notAssumedValid": [],
+      "missing": []
+    },
+    {
+      "question": "named-mausoleums",
+      "checked": 31,
+      "notAssumedValid": [
+        "Graceland",
+        "Les Invalides",
+        "Monticello",
+        "Mount Vernon",
+        "Westminster Abbey"
+      ],
+      "missing": [
+        "Grant's Tomb",
+        "Itmad-ud-Daulah's Tomb",
+        "Anitkabir",
+        "Khwaja Ahmed Yasawi Mausoleum"
+      ]
+    },
+    {
+      "question": "named-waterfalls",
+      "checked": 56,
+      "notAssumedValid": [],
+      "missing": []
+    }
+  ]
+}

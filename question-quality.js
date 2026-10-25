@@ -53,6 +53,7 @@ const broadSemantic=ids(`exercise-n-01 domestic_animal-n-01 aircraft-n-01 bag-n-
 export function questionReview(pack){
  if(pack.ordinaryRetired)return {status:'specialist',reason:'Held out of ordinary play after the playability review; kept only for saved dives and published Daily history.'};
  if(ordinaryQuestionAllowed(pack))return {status:'automatic',reason:'Individually admitted against the original group review, with explicit familiar-answer regression checks.'};
+ if(pack.contentStage==='candidate')return {status:'archived',reason:'Draft inventory under content audit. It is not part of the published question count or available for play.'};
  if(pack.editorialVersion===1||pack.groupProfileVersion===1)return {status:'specialist',reason:'Source inventory only. Not admitted by the saved group-review standard; excluded from Daily, Puffer, Practice shuffle and the live sample.'};
  // Legacy inventories remain addressable for saved dives and optional practice.
  // They do not silently expand the admitted ordinary-play pool.

@@ -1,0 +1,262 @@
+[
+  {
+    "question": "cookie-biscuit-types",
+    "name": "Biscuit",
+    "reason": "Source category is broader or eligibility is uncertain"
+  },
+  {
+    "question": "cookie-biscuit-types",
+    "name": "Charcoal biscuit",
+    "reason": "Source category is broader or eligibility is uncertain"
+  },
+  {
+    "question": "named-pies",
+    "name": "Bundevara",
+    "reason": "Source category is broader or eligibility is uncertain"
+  },
+  {
+    "question": "named-pies",
+    "name": "Bündner Nusstorte",
+    "reason": "Source category is broader or eligibility is uncertain"
+  },
+  {
+    "question": "named-pies",
+    "name": "Cheesecake",
+    "reason": "Source category is broader or eligibility is uncertain"
+  },
+  {
+    "question": "named-pies",
+    "name": "Cobbler",
+    "reason": "Source category is broader or eligibility is uncertain"
+  },
+  {
+    "question": "named-pies",
+    "name": "Hjónabandssæla",
+    "reason": "Source category is broader or eligibility is uncertain"
+  },
+  {
+    "question": "named-pies",
+    "name": "Kuchen",
+    "reason": "Source category is broader or eligibility is uncertain"
+  },
+  {
+    "question": "named-pies",
+    "name": "Tarta capuchina",
+    "reason": "Source category is broader or eligibility is uncertain"
+  },
+  {
+    "question": "named-pies",
+    "name": "Tarta de Santiago",
+    "reason": "Source category is broader or eligibility is uncertain"
+  },
+  {
+    "question": "named-pies",
+    "name": "Tocinillo de cielo [ es ]",
+    "reason": "Source category is broader or eligibility is uncertain"
+  },
+  {
+    "question": "named-pies",
+    "name": "Watalappam",
+    "reason": "Source category is broader or eligibility is uncertain"
+  },
+  {
+    "question": "named-pies",
+    "name": "Whoopie pie",
+    "reason": "Source category is broader or eligibility is uncertain"
+  },
+  {
+    "question": "pastry-types",
+    "name": "Bizcocho",
+    "reason": "Source category is broader or eligibility is uncertain"
+  },
+  {
+    "question": "pastry-types",
+    "name": "Gustavus Adolphus pastry",
+    "reason": "Source category is broader or eligibility is uncertain"
+  },
+  {
+    "question": "pastry-types",
+    "name": "Komaj sehen",
+    "reason": "Source category is broader or eligibility is uncertain"
+  },
+  {
+    "question": "pastry-types",
+    "name": "Pa de pessic, bescuit, pa d'En Pou",
+    "reason": "Source category is broader or eligibility is uncertain"
+  },
+  {
+    "question": "pastry-types",
+    "name": "Pannenkoek",
+    "reason": "Source category is broader or eligibility is uncertain"
+  },
+  {
+    "question": "pastry-types",
+    "name": "Pan dulce",
+    "reason": "Source category is broader or eligibility is uncertain"
+  },
+  {
+    "question": "pastry-types",
+    "name": "Papanași",
+    "reason": "Source category is broader or eligibility is uncertain"
+  },
+  {
+    "question": "pastry-types",
+    "name": "Paper wrapped cake",
+    "reason": "Source category is broader or eligibility is uncertain"
+  },
+  {
+    "question": "pastry-types",
+    "name": "Pizzelle",
+    "reason": "Source category is broader or eligibility is uncertain"
+  },
+  {
+    "question": "pastry-types",
+    "name": "Poffertjes ( Dutch ) Æbleskiver ( Danish )",
+    "reason": "Source category is broader or eligibility is uncertain"
+  },
+  {
+    "question": "pastry-types",
+    "name": "Roti john",
+    "reason": "Source category is broader or eligibility is uncertain"
+  },
+  {
+    "question": "pastry-types",
+    "name": "Roti tissue",
+    "reason": "Source category is broader or eligibility is uncertain"
+  },
+  {
+    "question": "pastry-types",
+    "name": "Roze koek",
+    "reason": "Source category is broader or eligibility is uncertain"
+  },
+  {
+    "question": "pastry-types",
+    "name": "Runeberg's torte",
+    "reason": "Source category is broader or eligibility is uncertain"
+  },
+  {
+    "question": "pastry-types",
+    "name": "Sacher Torte",
+    "reason": "Source category is broader or eligibility is uncertain"
+  },
+  {
+    "question": "pastry-types",
+    "name": "Sfenj",
+    "reason": "Source category is broader or eligibility is uncertain"
+  },
+  {
+    "question": "pastry-types",
+    "name": "Sfințișori",
+    "reason": "Source category is broader or eligibility is uncertain"
+  },
+  {
+    "question": "pastry-types",
+    "name": "Stutenkerl",
+    "reason": "Source category is broader or eligibility is uncertain"
+  },
+  {
+    "question": "pastry-types",
+    "name": "Sufganiyah",
+    "reason": "Source category is broader or eligibility is uncertain"
+  },
+  {
+    "question": "pastry-types",
+    "name": "Taiyaki",
+    "reason": "Source category is broader or eligibility is uncertain"
+  },
+  {
+    "question": "pastry-types",
+    "name": "Tortita negra",
+    "reason": "Source category is broader or eligibility is uncertain"
+  },
+  {
+    "question": "pastry-types",
+    "name": "Trdelník",
+    "reason": "Source category is broader or eligibility is uncertain"
+  },
+  {
+    "question": "pastry-types",
+    "name": "Vetkoek",
+    "reason": "Source category is broader or eligibility is uncertain"
+  },
+  {
+    "question": "pastry-types",
+    "name": "Zeeuwse bolus",
+    "reason": "Source category is broader or eligibility is uncertain"
+  },
+  {
+    "question": "pastry-types",
+    "name": "Zlabia",
+    "reason": "Source category is broader or eligibility is uncertain"
+  },
+  {
+    "question": "breakfast-cereal-products",
+    "name": "W.K Kellogg No Added Sugar Simply Granola",
+    "reason": "Flattened source list needs a manual label split"
+  },
+  {
+    "question": "breakfast-cereal-products",
+    "name": "Muesli Gaia Muesli [ 6 ] Harvest Morn Fruit Muesli – Aldi Harvest Morn Fruit & Nut Muesli – Aldi Kelkin Fruit & Nut Muesli Specially Selected Berries & Cherries Muesli – Aldi Speci",
+    "reason": "Flattened source list needs a manual label split"
+  },
+  {
+    "question": "fermentation-foods",
+    "name": "lulu jardin",
+    "reason": "Source category is broader or eligibility is uncertain"
+  },
+  {
+    "question": "fermentation-foods",
+    "name": "Felij",
+    "reason": "Source category is broader or eligibility is uncertain"
+  },
+  {
+    "question": "fermentation-foods",
+    "name": "Fermented milk products",
+    "reason": "Source category is broader or eligibility is uncertain"
+  },
+  {
+    "question": "fermentation-foods",
+    "name": "Kaymak",
+    "reason": "Source category is broader or eligibility is uncertain"
+  },
+  {
+    "question": "fermentation-foods",
+    "name": "Atchara",
+    "reason": "Source category is broader or eligibility is uncertain"
+  },
+  {
+    "question": "fermentation-foods",
+    "name": "Chinese pickles",
+    "reason": "Source category is broader or eligibility is uncertain"
+  },
+  {
+    "question": "fermentation-foods",
+    "name": "Sour cabbage",
+    "reason": "Source category is broader or eligibility is uncertain"
+  },
+  {
+    "question": "fermentation-foods",
+    "name": "Tsukemono",
+    "reason": "Source category is broader or eligibility is uncertain"
+  },
+  {
+    "question": "fermentation-foods",
+    "name": "Cod liver oil (Traditional preparation method)",
+    "reason": "Source category is broader or eligibility is uncertain"
+  },
+  {
+    "question": "fermentation-foods",
+    "name": "Gejang",
+    "reason": "Source category is broader or eligibility is uncertain"
+  },
+  {
+    "question": "fermentation-foods",
+    "name": "Shark meat",
+    "reason": "Source category is broader or eligibility is uncertain"
+  },
+  {
+    "question": "fermentation-foods",
+    "name": "Taba ng Talangka , aligi",
+    "reason": "Source category is broader or eligibility is uncertain"
+  }
+]

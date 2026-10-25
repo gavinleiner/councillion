@@ -1,0 +1,230 @@
+{
+  "version": 1,
+  "questions": [
+    {
+      "id": "authored-human-bone-names",
+      "concept": "human-bone-names",
+      "family": "science",
+      "topic": "Skeleton crew",
+      "prompt": "Name a bone or named group of bones in the human skeleton.",
+      "scope": "Standard named bones, fused bones and familiar bone groups count. Left and right instances are the same answer. Cartilage, joints, muscles and organs are not bones.",
+      "format": "situations",
+      "rationale": "A concrete familiar entry point and a wider factual tail, following the saved review; this asks for a different activity or object relationship rather than a tag combination.",
+      "familiar": [
+        "Femur",
+        "Tibia",
+        "Fibula",
+        "Humerus",
+        "Rib",
+        "Skull"
+      ],
+      "exclude": [
+        "Biceps",
+        "Heart"
+      ],
+      "references": [
+        "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf"
+      ],
+      "answers": {
+        "10": "Femur~Thighbone~Thigh bone|Tibia~Shinbone~Shin bone|Fibula|Humerus~Upper arm bone|Rib~Ribs|Skull~Cranium|Spine~Backbone~Vertebral column|Pelvis~Pelvic bones",
+        "30": "Clavicle~Collarbone~Collar bone|Scapula~Shoulder blade|Sternum~Breastbone|Patella~Kneecap~Knee cap|Radius|Ulna|Mandible~Lower jaw~Jawbone|Maxilla~Upper jaw|Coccyx~Tailbone~Tail bone|Sacrum|Vertebra~Vertebrae|Carpal~Carpals~Carpal bones|Tarsal~Tarsals~Tarsal bones|Metacarpal~Metacarpals|Metatarsal~Metatarsals|Phalanx~Phalanges~Finger bone~Toe bone",
+        "60": "Frontal bone|Parietal bone|Temporal bone|Occipital bone|Sphenoid~Sphenoid bone|Ethmoid~Ethmoid bone|Nasal bone|Lacrimal bone|Zygomatic bone~Cheekbone|Palatine bone|Vomer|Hyoid~Hyoid bone|Malleus~Hammer bone|Incus~Anvil bone|Stapes~Stirrup bone|Ilium|Ischium|Pubis~Pubic bone|Talus~Ankle bone|Calcaneus~Heel bone|Navicular~Navicular bone|Cuboid~Cuboid bone|Medial cuneiform|Intermediate cuneiform|Lateral cuneiform|Scaphoid|Lunate|Triquetrum~Triquetral bone|Pisiform|Trapezium~Trapezium bone|Trapezoid~Trapezoid bone|Capitate|Hamate|Hip bone~Coxal bone~Os coxae|Atlas~C1 vertebra|Axis~C2 vertebra|Cervical vertebra|Thoracic vertebra|Lumbar vertebra|Sesamoid bone|Ear ossicles~Auditory ossicles|Inferior nasal concha~Inferior turbinate",
+        "85": "First metacarpal|Second metacarpal|Third metacarpal|Fourth metacarpal|Fifth metacarpal|First metatarsal|Second metatarsal|Third metatarsal|Fourth metatarsal|Fifth metatarsal|Proximal phalanx|Middle phalanx~Intermediate phalanx|Distal phalanx|C7 vertebra~Vertebra prominens|L5 vertebra|First rib|Second rib|Floating ribs|True ribs|False ribs|Wormian bone~Sutural bone|Accessory navicular|Os trigonum|Os peroneum|Bipartite patella|Os acromiale|Fabella",
+        "100": "Cyamella"
+      }
+    },
+    {
+      "id": "authored-measurement-unit-names",
+      "concept": "measurement-unit-names",
+      "family": "science",
+      "topic": "Pick a unit",
+      "prompt": "Name a unit used to measure a physical quantity or digital information.",
+      "scope": "Established metric, customary, historical and scientific measurement units count, including named prefixed units. Currency units and arbitrary made-up units do not. Official unit symbols are accepted only when they name that actual unit.",
+      "format": "situations",
+      "rationale": "A concrete familiar entry point and a wider factual tail, following the saved review; this asks for a different activity or object relationship rather than a tag combination.",
+      "familiar": [
+        "Meter",
+        "Kilogram",
+        "Second",
+        "Liter",
+        "Mile",
+        "Byte"
+      ],
+      "exclude": [
+        "Dollar",
+        "Banana scale"
+      ],
+      "references": [
+        "https://www.nist.gov/pml/owm/metric-si/si-units",
+        "https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-5-units-outside-si"
+      ],
+      "answers": {
+        "10": "Meter~Metre|Centimeter~Centimetre|Millimeter~Millimetre|Kilometer~Kilometre|Inch|Foot~Feet|Yard|Mile|Gram|Kilogram|Pound|Ounce|Second|Minute|Hour|Liter~Litre|Milliliter~Millilitre|Gallon|Pint|Byte|Gigabyte|Megabyte|Degree Celsius~Celsius|Degree Fahrenheit~Fahrenheit",
+        "30": "Ton|Tonne~Metric ton|Stone|Milligram|Microgram|Nanogram|Metric carat~Carat|Fluid ounce|Quart|Cup|Tablespoon|Teaspoon|Kilobyte|Terabyte|Bit|Kilobit|Megabit|Gigabit|Watt|Kilowatt|Volt|Ampere~Amp|Ohm|Newton|Joule|Calorie|Kilocalorie|Kelvin|Hertz|Kilohertz|Megahertz|Gigahertz|Decibel|Degree|Radian|Square meter~Square metre|Square foot|Square mile|Acre|Hectare|Cubic meter~Cubic metre|Cubic centimeter~Cubic centimetre|Meter per second~Metre per second|Kilometer per hour~Kilometre per hour|Mile per hour|Knot|Fathom|Light-year~Light year|Astronomical unit|Parsec|Bar|Pascal",
+        "60": "Micrometer~Micrometre~Micron|Nanometer~Nanometre|Angstrom~Ångström|Picometer~Picometre|Femtometer~Femtometre|Nautical mile|Furlong|Chain|Rod~Perch~Pole|League|Hand|Link|Ell|Cubit|Smoot|Mil~Thou|Point|Pica|Twip|Tex|Denier|Grain|Troy ounce|Troy pound|Dram|Slug|Long ton|Short ton|Hundredweight|Quintal|Dalton~Unified atomic mass unit|Solar mass|Earth mass|Jupiter mass|Jansky|Petabyte|Exabyte|Zettabyte|Yottabyte|Kibibyte|Mebibyte|Gibibyte|Tebibyte|Pebibyte|Exbibyte|Zebibyte|Yobibyte|Baud|Candela|Lumen|Lux|Coulomb|Farad|Henry|Weber|Tesla|Siemens|Becquerel|Gray|Sievert|Katal|Mole|Steradian|Electronvolt|Erg|Dyne|Poise|Stokes|Gauss|Oersted|Maxwell|Statvolt|Statampere|Abampere|Abvolt|Gilbert|Lambert|Nit|Stilb|Foot-candle|Foot-lambert|Phot|Talbot|Apostilb|Torr|Millimeter of mercury~Millimetre of mercury|Atmosphere|Psi~Pound per square inch|Barye|Micropascal|Kilopascal|Megapascal|Gigapascal|Kilonewton|Nanonewton|Kilojoule|Megajoule|Gigajoule|Watt-hour~Watt hour|Kilowatt-hour~Kilowatt hour|British thermal unit~BTU|Horsepower|Metric horsepower|Ton of refrigeration",
+        "85": "Sone|Phon|Mel|Rayl|Sabin|Brewster|Diopter~Dioptre|Prism diopter|Darcy|Millidarcy|Barrer|Sverdrup|Langley|Dobson unit|Brix~Degree Brix|Plato~Degree Plato|Twaddell~Degree Twaddell|Baumé~Degree Baume|Oechsle~Degree Oechsle|Balling~Degree Balling|Proof|Bale|Bushel|Peck|Dry quart|Dry pint|Gill|Minim|Hogshead|Barrel|Firkin|Tun|Stere|Cord|Board foot|Register ton|Displacement ton|Cable|Fermi|Attosecond|Femtosecond|Picosecond|Nanosecond|Microsecond|Millisecond|Day|Week|Fortnight|Month|Year|Decade|Century|Millennium|Sidereal day|Julian year|Tropical year|Arcminute|Arcsecond|Milliarcsecond|Gradian~Gon|Turn~Revolution|Revolution per minute~RPM|Rutherford|Curie|Rad|Rem|Roentgen|Gal~Galileo|Eotvos~Eötvös|Planck length|Planck time|Planck mass|Planck temperature|Hartree|Rydberg|Shannon|Nat|Hartley",
+        "100": "Foe~Bethe"
+      }
+    },
+    {
+      "id": "authored-cell-structure-names",
+      "concept": "cell-structure-names",
+      "family": "science",
+      "topic": "Cell service",
+      "prompt": "Name a structure or component found in a living cell.",
+      "scope": "Plant, animal, fungal and prokaryotic cell structures count. Whole organs or tissues are not structures inside one cell. Established molecular structures such as DNA and chromosomes count.",
+      "format": "situations",
+      "rationale": "A concrete familiar entry point and a wider factual tail, following the saved review; this asks for a different activity or object relationship rather than a tag combination.",
+      "familiar": [
+        "Nucleus",
+        "Mitochondrion",
+        "Cell membrane",
+        "Cell wall",
+        "Ribosome",
+        "Chloroplast"
+      ],
+      "exclude": [
+        "Kidney",
+        "Brain"
+      ],
+      "references": [
+        "https://www.genome.gov/genetics-glossary/Cell",
+        "https://www.genome.gov/genetics-glossary/Organelle",
+        "https://www.britannica.com/science/cell-biology"
+      ],
+      "answers": {
+        "10": "Nucleus|Mitochondrion~Mitochondria|Cell membrane~Plasma membrane|Cell wall|Cytoplasm|Ribosome~Ribosomes|Chloroplast|DNA~Deoxyribonucleic acid|Chromosome~Chromosomes",
+        "30": "Vacuole|Endoplasmic reticulum~ER|Rough endoplasmic reticulum~Rough ER|Smooth endoplasmic reticulum~Smooth ER|Golgi apparatus~Golgi body~Golgi complex|Nucleolus|Lysosome|Cytoskeleton|Flagellum~Flagella|Cilium~Cilia|RNA~Ribonucleic acid|Centriole|Centrosome",
+        "60": "Nuclear envelope~Nuclear membrane|Nuclear pore|Nucleoplasm|Chromatin|Peroxisome|Vesicle|Microtubule|Microfilament~Actin filament|Intermediate filament|Cytosol|Plasmid|Nucleoid|Capsule~Bacterial capsule|Pilus~Pili|Fimbria~Fimbriae|Plastid|Leucoplast|Amyloplast|Chromoplast|Elaioplast|Proteinoplast|Etioplast|Thylakoid|Granum~Grana|Stroma|Crista~Cristae|Mitochondrial matrix|Intermembrane space|Inner mitochondrial membrane|Outer mitochondrial membrane|Chloroplast envelope|Contractile vacuole|Central vacuole|Tonoplast|Microvillus~Microvilli|Basal body|Secretory granule|Synaptic vesicle|Axoneme|Glycocalyx|S-layer|Peptidoglycan layer|Outer membrane|Inner membrane|Nuclear lamina|Mitotic spindle|Spindle fiber~Spindle fibre|Kinetochore|Centromere|Telomere|Histone|Nucleosome|Proteasome|Lipid droplet|Oil body|Periplasm|Bacterial endospore~Endospore",
+        "85": "Autophagosome|Phagosome|Endosome|Early endosome|Late endosome|Multivesicular body|Secretory vesicle|Transport vesicle|Coated vesicle|Clathrin-coated vesicle|Caveola~Caveolae|Cell junction|Tight junction|Adherens junction|Desmosome|Hemidesmosome|Gap junction|Plasmodesma~Plasmodesmata|Phragmoplast|Cell plate|Phragmosome|Pyrenoid|Eyespot~Stigma|Kinetoplast|Hydrogenosome|Mitosome|Acidocalcisome|Gas vesicle|Magnetosome|Carboxysome|Chlorosome|Anammoxosome|Bacterial microcompartment|Cortical granule|Acrosome|Sarcoplasmic reticulum|Terminal cisterna~Terminal cisternae|Sperm connecting piece|Z disc~Z line|Sarcomere|Myofibril|Actin filament bundle|Myosin thick filament|Podosome|Invadopodium|Lamellipodium|Filopodium|Uropod|Pseudopodium~Pseudopod|Axopodium|Reticulopodium|Food vacuole|Glycosome|Mitochondrial nucleoid|Nuclear speckle|Cajal body|PML body|Nucleolar organizer region|Stress granule|Processing body~P-body|Balbiani body|Germ granule|Lytic granule|Melanosome|Weibel-Palade body|Birbeck granule",
+        "100": "Rhoptry"
+      }
+    },
+    {
+      "id": "authored-official-constellations",
+      "concept": "official-constellations",
+      "family": "science",
+      "topic": "Written in the stars",
+      "prompt": "Name one of the 88 official constellations.",
+      "scope": "Official IAU constellation names count. Recognized common names such as Capricorn and the Great Bear are accepted. Asterisms such as the Big Dipper are only parts of constellations.",
+      "format": "closed-inventory",
+      "rationale": "A whole familiar celestial category with a closed authoritative inventory; no letter, year or combined-topic filter.",
+      "familiar": [
+        "Orion",
+        "Ursa Major",
+        "Leo",
+        "Gemini",
+        "Cassiopeia",
+        "Taurus"
+      ],
+      "exclude": [
+        "Big Dipper",
+        "Sirius"
+      ],
+      "references": [
+        "https://starchild.gsfc.nasa.gov/docs/StarChild/questions/88constellations.html",
+        "https://www.iau.org/IAU/Astronomy-FAQs/Constellations.aspx"
+      ],
+      "answers": {
+        "10": [
+          "Andromeda",
+          "Aquarius",
+          "Aries",
+          "Cancer",
+          "Capricornus~Capricorn",
+          "Cassiopeia",
+          "Cygnus",
+          "Draco",
+          "Gemini",
+          "Leo",
+          "Libra",
+          "Orion~The Hunter",
+          "Pegasus",
+          "Pisces",
+          "Sagittarius~The Archer",
+          "Scorpius~Scorpio",
+          "Taurus",
+          "Ursa Major~Great Bear~Big Bear",
+          "Ursa Minor~Little Bear",
+          "Virgo"
+        ],
+        "30": [
+          "Aquila",
+          "Auriga",
+          "Bootes",
+          "Canis Major~Greater Dog~Big Dog",
+          "Canis Minor~Lesser Dog~Little Dog",
+          "Centaurus",
+          "Cepheus",
+          "Cetus",
+          "Corvus",
+          "Crux~Southern Cross",
+          "Delphinus",
+          "Eridanus",
+          "Hercules",
+          "Hydra",
+          "Lupus",
+          "Lynx",
+          "Lyra",
+          "Ophiuchus",
+          "Perseus",
+          "Phoenix",
+          "Serpens"
+        ],
+        "60": [
+          "Apus",
+          "Ara",
+          "Camelopardalis",
+          "Canes Venatici",
+          "Carina",
+          "Chamaeleon",
+          "Columba",
+          "Coma Berenices",
+          "Corona Australis",
+          "Corona Borealis",
+          "Crater",
+          "Dorado",
+          "Equuleus",
+          "Fornax",
+          "Grus",
+          "Hydrus",
+          "Indus",
+          "Lacerta",
+          "Leo Minor",
+          "Lepus",
+          "Microscopium",
+          "Monoceros",
+          "Musca",
+          "Pavo",
+          "Pictor",
+          "Piscis Austrinus",
+          "Puppis",
+          "Pyxis",
+          "Sagitta",
+          "Sculptor",
+          "Scutum",
+          "Telescopium",
+          "Triangulum",
+          "Triangulum Australe",
+          "Tucana",
+          "Vela",
+          "Volans",
+          "Vulpecula"
+        ],
+        "85": [
+          "Caelum",
+          "Circinus",
+          "Horologium",
+          "Mensa",
+          "Norma",
+          "Octans",
+          "Reticulum",
+          "Sextans"
+        ],
+        "100": [
+          "Antlia"
+        ]
+      }
+    }
+  ]
+}

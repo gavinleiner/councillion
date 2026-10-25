@@ -1,6 +1,6 @@
 {
-  "build": "a45caad1429ce021",
-  "count": 227,
+  "build": "eebb579d95ec0508",
+  "count": 240,
   "categories": [
     {
       "id": "group-q001",
@@ -1817,6 +1817,110 @@
       "group": "distinct-authored-facts",
       "answerCount": 112,
       "scope": "Named examples and standard alternative names count. This is a finite curated inventory, not an exhaustive list of every real-world possibility."
+    },
+    {
+      "id": "authored-enderman-carry-blocks",
+      "prompt": "Name a block an Enderman can pick up in Minecraft.",
+      "family": "gaming",
+      "group": "authored-game-mechanics",
+      "answerCount": 45,
+      "scope": "The actual block-pickup rule counts, including flowers. Endermen may pick up only certain blocks even if the player can carry other blocks. Official Java 26.3 recipe, tag or component data defines the inventory; modded behavior does not count."
+    },
+    {
+      "id": "authored-minecraft-flowers",
+      "prompt": "Name a flower or flowering block found in Minecraft.",
+      "family": "gaming",
+      "group": "authored-game-mechanics",
+      "answerCount": 31,
+      "scope": "Flower items and blocks count, including tall flowers and Nether-compatible flowers. Named crops and saplings do not become flowers merely because they are plants. Official Java 26.3 recipe, tag or component data defines the inventory; modded behavior does not count."
+    },
+    {
+      "id": "authored-minecraft-fishing-catches",
+      "prompt": "Name an item you can catch by fishing in Minecraft.",
+      "family": "gaming",
+      "group": "authored-game-mechanics",
+      "answerCount": 22,
+      "scope": "Fish, junk and treasure in the ordinary fishing loot tables count. Items merely carried by nearby mobs do not. Official Java 26.3 recipe, tag or component data defines the inventory; modded behavior does not count."
+    },
+    {
+      "id": "authored-minecraft-furnace-results",
+      "prompt": "Name an item or block a furnace recipe can produce in Minecraft.",
+      "family": "gaming",
+      "group": "authored-game-mechanics",
+      "answerCount": 61,
+      "scope": "Give the output, rather than the input, of an ordinary furnace smelting or cooking recipe. Official Java 26.3 recipe, tag or component data defines the inventory; modded behavior does not count."
+    },
+    {
+      "id": "authored-minecraft-furnace-fuel",
+      "prompt": "Name an item that can be used as furnace fuel in Minecraft.",
+      "family": "gaming",
+      "group": "authored-game-mechanics",
+      "answerCount": 347,
+      "scope": "Items actually accepted in the fuel slot count, rather than anything that merely looks flammable. Their fuel value need not be the same. Official Java 26.3 recipe, tag or component data defines the inventory; modded behavior does not count."
+    },
+    {
+      "id": "authored-minecraft-axe-transformations",
+      "prompt": "Name a Minecraft block you can strip, scrape or unwax by using an axe on it.",
+      "family": "gaming",
+      "group": "authored-game-mechanics",
+      "answerCount": 130,
+      "scope": "This asks for the right-click/use action. Merely chopping or breaking a block does not qualify. Both stripping wood and removing copper oxidation or wax count. Official Java 26.3 recipe, tag or component data defines the inventory; modded behavior does not count."
+    },
+    {
+      "id": "authored-nba-regular-season-mvps",
+      "prompt": "Name a player who has won the NBA regular-season MVP award.",
+      "family": "sports",
+      "group": "authored-situations",
+      "answerCount": 37,
+      "scope": "Winners of the main NBA regular-season Most Valuable Player award through the 2025–26 season count. Finals, All-Star and other leagues' MVP awards are different."
+    },
+    {
+      "id": "authored-super-bowl-winning-starters",
+      "prompt": "Name a quarterback who started and won a Super Bowl.",
+      "family": "sports",
+      "group": "authored-situations",
+      "answerCount": 36,
+      "scope": "The quarterback must have started a winning Super Bowl, through Super Bowl LX in February 2026. Winning a ring as a backup alone does not count."
+    },
+    {
+      "id": "authored-official-constellations",
+      "prompt": "Name one of the 88 official constellations.",
+      "family": "science",
+      "group": "authored-closed-inventory",
+      "answerCount": 88,
+      "scope": "Official IAU constellation names count. Recognized common names such as Capricorn and the Great Bear are accepted. Asterisms such as the Big Dipper are only parts of constellations."
+    },
+    {
+      "id": "authored-dota-heroes",
+      "prompt": "Name a playable hero in Dota 2.",
+      "family": "gaming",
+      "group": "authored-whole-roster",
+      "answerCount": 127,
+      "scope": "The complete official playable hero roster in the October 25, 2026 snapshot counts. Items, cosmetics and non-playable creeps are not heroes."
+    },
+    {
+      "id": "authored-overwatch-heroes",
+      "prompt": "Name a playable hero in Overwatch.",
+      "family": "gaming",
+      "group": "authored-whole-roster",
+      "answerCount": 54,
+      "scope": "The full official Overwatch roster in the October 25, 2026 snapshot counts, including heroes introduced while it was called Overwatch 2. Skins and unplayable story characters do not."
+    },
+    {
+      "id": "authored-smash-ultimate-fighters",
+      "prompt": "Name a playable fighter in Super Smash Bros. Ultimate.",
+      "family": "gaming",
+      "group": "authored-whole-roster",
+      "answerCount": 89,
+      "scope": "All base-game, Echo and DLC fighters count. Pokémon Trainer's three Pokémon, the three Mii fighting styles, and Pyra/Mythra count separately. Alternate costumes share the original fighter's answer; Assist Trophies do not count."
+    },
+    {
+      "id": "authored-legendary-mythical-pokemon",
+      "prompt": "Name a Legendary or Mythical Pokémon.",
+      "family": "gaming",
+      "group": "authored-whole-roster",
+      "answerCount": 94,
+      "scope": "Species classified as Legendary or Mythical in the pinned PokéAPI data count. Forms share their species' answer identity. Pseudo-Legendary is a fan label and does not make a species Legendary."
     }
   ]
 }

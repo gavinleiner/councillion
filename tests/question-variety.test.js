@@ -9,7 +9,7 @@ const family=id=>PACK_BY_ID.get(id).family;
 const steam=id=>PACK_BY_ID.get(id).predicate?.kind==='steam-tag';
 
 test('normal games keep every approved prompt and exclude all multiple-label Steam prompts',()=>{
- assert.equal(GROUP_PACKS.length,5000);assert.equal(MIXED_PACKS.length,227);
+ assert.equal(GROUP_PACKS.length,5000);assert.deepEqual(new Set(MIXED_PACKS.map(p=>p.id)),new Set(JSON.parse(readFileSync(new URL('../data-snapshots/reviewed-standard/admission.json',import.meta.url))).questions.map(p=>p.id)));
  assert.deepEqual(PARTY_PACKS,MIXED_PACKS);
  const approved=GROUP_PACKS.filter(p=>p.reviewId);assert.equal(approved.length,98);
  for(const p of approved)assert.ok(MIXED_PACKS.includes(p),p.id);
