@@ -1,0 +1,3557 @@
+{
+  "build": "20261025-reviewed-standard-v1",
+  "reference": "councillion-question-review.json (group-100-v1; 98 yes, 2 no)",
+  "rules": [
+    "A recognizable subject with several obvious entry answers.",
+    "One clear playable condition, without arbitrary tag pairs, league unions, title words or cast-credit joins.",
+    "Every admitted ID has explicit answer checks; source flags cannot admit new IDs.",
+    "Keep rare valid answers; repair common omissions and wrong memberships instead of requiring memorized metadata."
+  ],
+  "questions": [
+    {
+      "id": "group-q001",
+      "basis": "yes-in-original-review",
+      "yes": [
+        "Sonic the Hedgehog",
+        "Donkey Kong Country",
+        "Stray",
+        "Untitled Goose Game",
+        "Goat Simulator",
+        "Crash Bandicoot",
+        "Okami",
+        "Donkey Kong 64",
+        "Sonic Adventure",
+        "Spyro the Dragon",
+        "Mario Kart 8 Deluxe",
+        "Mario Kart Wii",
+        "Mario Kart 64",
+        "Super Smash Bros. Ultimate"
+      ],
+      "no": [
+        "Minecraft"
+      ],
+      "prompt": "Name a video game where you can play as an animal.",
+      "family": "gaming"
+    },
+    {
+      "id": "group-q002",
+      "basis": "yes-in-original-review",
+      "yes": [
+        "Mario Kart 8 Deluxe",
+        "Grand Theft Auto V",
+        "Forza Horizon 5",
+        "Rocket League",
+        "Fortnite",
+        "Gran Turismo 7",
+        "Halo 3",
+        "Cyberpunk 2077",
+        "The Simpsons Hit & Run"
+      ],
+      "no": [
+        "Skyrim"
+      ],
+      "prompt": "Name a video game where you can drive a car or kart.",
+      "family": "gaming"
+    },
+    {
+      "id": "group-q003",
+      "basis": "yes-in-original-review",
+      "yes": [
+        "Fortnite",
+        "Rocket League",
+        "Valorant",
+        "Apex Legends",
+        "Warframe",
+        "Fall Guys",
+        "Counter-Strike 2",
+        "Overwatch 2"
+      ],
+      "no": [
+        "Elden Ring"
+      ],
+      "prompt": "Name a free-to-play PC or console game.",
+      "family": "gaming"
+    },
+    {
+      "id": "group-q004",
+      "basis": "yes-in-original-review",
+      "yes": [
+        "Minecraft",
+        "Mario Kart 8 Deluxe",
+        "Overcooked 2",
+        "It Takes Two",
+        "Portal 2",
+        "Stardew Valley",
+        "Wii Sports",
+        "Cuphead",
+        "Super Smash Bros. Ultimate"
+      ],
+      "no": [
+        "Valorant"
+      ],
+      "prompt": "Name a video game you can play with someone on the same screen or console.",
+      "family": "gaming"
+    },
+    {
+      "id": "group-q005",
+      "basis": "yes-in-original-review",
+      "yes": [
+        "Minecraft",
+        "Terraria",
+        "Subnautica",
+        "Rust",
+        "Stardew Valley",
+        "Animal Crossing: New Horizons"
+      ],
+      "no": [
+        "Pac-Man"
+      ],
+      "prompt": "Name a video game with a crafting system.",
+      "family": "gaming"
+    },
+    {
+      "id": "group-q006",
+      "basis": "yes-in-original-review",
+      "yes": [
+        "Minecraft",
+        "Stardew Valley",
+        "Animal Crossing: New Horizons",
+        "Terraria",
+        "Red Dead Redemption 2",
+        "Fortnite"
+      ],
+      "no": [
+        "Tetris"
+      ],
+      "prompt": "Name a video game where the player can go fishing.",
+      "family": "gaming"
+    },
+    {
+      "id": "group-q007",
+      "basis": "yes-in-original-review",
+      "yes": [
+        "Bowser",
+        "Ganondorf",
+        "Dr. Eggman",
+        "Sephiroth",
+        "Handsome Jack",
+        "Vaas Montenegro",
+        "Pagan Min",
+        "GLaDOS"
+      ],
+      "no": [],
+      "prompt": "Name a villain from a video game.",
+      "family": "gaming"
+    },
+    {
+      "id": "group-q008",
+      "basis": "yes-in-original-review",
+      "yes": [
+        "Golden Apple",
+        "Estus Flask",
+        "Med Kit",
+        "Heart Container",
+        "Red Potion",
+        "First Aid Spray",
+        "Crimson Flask",
+        "Health Potion",
+        "Super Mushroom",
+        "Bandage",
+        "Fairy"
+      ],
+      "no": [
+        "Ether",
+        "Antidote"
+      ],
+      "prompt": "Name an item that restores health in a video game.",
+      "family": "gaming"
+    },
+    {
+      "id": "group-q009",
+      "basis": "yes-in-original-review",
+      "yes": [
+        "Master Sword",
+        "Energy Sword",
+        "BFG 9000",
+        "Diamond Sword",
+        "Blades of Chaos",
+        "Lancer",
+        "Buster Sword"
+      ],
+      "no": [
+        "Estus Flask"
+      ],
+      "prompt": "Name a named weapon from a video game.",
+      "family": "gaming"
+    },
+    {
+      "id": "group-q010",
+      "basis": "yes-in-original-review",
+      "yes": [
+        "Tilted Towers",
+        "Nuketown",
+        "Dust II",
+        "Los Santos",
+        "Hyrule",
+        "Raccoon City",
+        "Rapture",
+        "Anor Londo",
+        "Whiterun"
+      ],
+      "no": [
+        "Cloud Strife"
+      ],
+      "prompt": "Name a named place or map from a video game.",
+      "family": "gaming"
+    },
+    {
+      "id": "group-q011",
+      "basis": "yes-in-original-review",
+      "yes": [
+        "Creeper",
+        "Zombie",
+        "Skeleton",
+        "Witch",
+        "Enderman",
+        "Piglin",
+        "Wolf",
+        "Bee",
+        "Polar Bear",
+        "Iron Golem",
+        "Llama",
+        "Goat",
+        "Panda",
+        "Pufferfish",
+        "Dolphin",
+        "Parched",
+        "Nautilus",
+        "Zombie Nautilus",
+        "Fox"
+      ],
+      "no": [
+        "Strider",
+        "End Crystal",
+        "Giant",
+        "Cow",
+        "Bat",
+        "Camel Husk",
+        "Happy Ghast"
+      ],
+      "prompt": "Name a Minecraft mob that can attack a player.",
+      "family": "gaming"
+    },
+    {
+      "id": "group-q012",
+      "basis": "yes-in-original-review",
+      "yes": [
+        "Bread",
+        "Cooked Beef",
+        "Golden Apple",
+        "Cake",
+        "Pumpkin Pie",
+        "Suspicious Stew",
+        "Steak",
+        "Raw Cod",
+        "Rotten Flesh"
+      ],
+      "no": [
+        "Milk Bucket",
+        "Diamond Sword"
+      ],
+      "prompt": "Name something a player can eat in Minecraft.",
+      "family": "gaming"
+    },
+    {
+      "id": "group-q013",
+      "basis": "yes-in-original-review",
+      "yes": [
+        "Crafting Table",
+        "Chest",
+        "Boat",
+        "Ladder",
+        "Wooden Sword",
+        "Fence",
+        "Bookshelf",
+        "Bow",
+        "Fishing Rod",
+        "Torch"
+      ],
+      "no": [
+        "Diamond"
+      ],
+      "prompt": "Name something you can craft using wood, planks or sticks in Minecraft.",
+      "family": "gaming"
+    },
+    {
+      "id": "group-q014",
+      "basis": "yes-in-original-review",
+      "yes": [
+        "Tilted Towers",
+        "Pleasant Park",
+        "Retail Row",
+        "Lazy Lake",
+        "Frenzy Farm",
+        "Sweaty Sands",
+        "Salty Springs",
+        "Dusty Depot",
+        "Loot Lake",
+        "Lazy Links",
+        "The Agency"
+      ],
+      "no": [
+        "Nuketown"
+      ],
+      "prompt": "Name a location that has appeared on a Fortnite Battle Royale map.",
+      "family": "gaming"
+    },
+    {
+      "id": "group-q015",
+      "basis": "yes-in-original-review",
+      "yes": [
+        "Bandage",
+        "Med Kit",
+        "Small Shield Potion",
+        "Shield Potion",
+        "Chug Jug",
+        "Slurp Juice",
+        "Chug Splash",
+        "Flopper"
+      ],
+      "no": [
+        "Shockwave Grenade"
+      ],
+      "prompt": "Name a Fortnite item that restores health or shields.",
+      "family": "gaming"
+    },
+    {
+      "id": "group-q016",
+      "basis": "yes-in-original-review",
+      "yes": [
+        "Assault Rifle",
+        "Pump Shotgun",
+        "Tactical Shotgun",
+        "Minigun",
+        "Rocket Launcher",
+        "Hunting Rifle",
+        "Drum Gun",
+        "Boom Bow"
+      ],
+      "no": [
+        "Med Kit"
+      ],
+      "prompt": "Name a weapon that has appeared in Fortnite Battle Royale.",
+      "family": "gaming"
+    },
+    {
+      "id": "group-q017",
+      "basis": "yes-in-original-review",
+      "yes": [
+        "Luigi",
+        "Yoshi",
+        "Bowser",
+        "Princess Peach",
+        "Toad",
+        "Wario",
+        "Daisy",
+        "Rosalina",
+        "Waluigi",
+        "Kamek",
+        "Toadette",
+        "Diddy Kong"
+      ],
+      "no": [],
+      "prompt": "Name a character from the Mario games.",
+      "family": "gaming"
+    },
+    {
+      "id": "group-q018",
+      "basis": "yes-in-original-review",
+      "yes": [
+        "Pikachu",
+        "Bulbasaur",
+        "Squirtle",
+        "Eevee",
+        "Snorlax",
+        "Mewtwo",
+        "Farfetch'd",
+        "Mr. Mime",
+        "Nidoran Female",
+        "Mew",
+        "Dragonite"
+      ],
+      "no": [
+        "Lucario"
+      ],
+      "prompt": "Name one of the original 151 Pokémon.",
+      "family": "gaming"
+    },
+    {
+      "id": "group-q019",
+      "basis": "yes-in-original-review",
+      "yes": [
+        "Margit",
+        "Godrick",
+        "Radahn",
+        "Rennala",
+        "Malenia",
+        "Rykard",
+        "Mohg",
+        "Morgott",
+        "Hoarah Loux",
+        "Starscourge Radahn"
+      ],
+      "no": [
+        "Ornstein"
+      ],
+      "prompt": "Name a boss from Elden Ring.",
+      "family": "gaming"
+    },
+    {
+      "id": "group-q020",
+      "basis": "yes-in-original-review",
+      "yes": [
+        "Monopoly",
+        "Uno",
+        "Catan",
+        "Jenga",
+        "Chess",
+        "Exploding Kittens",
+        "Clue",
+        "Cards Against Humanity",
+        "Codenames"
+      ],
+      "no": [
+        "Fortnite"
+      ],
+      "prompt": "Name a board or card game people can play together offline.",
+      "family": "gaming"
+    },
+    {
+      "id": "group-q021",
+      "basis": "yes-in-original-review",
+      "yes": [
+        "Carolina Panthers",
+        "Boston Celtics",
+        "New York Yankees",
+        "Carolina Hurricanes",
+        "Las Vegas Aces",
+        "Inter Miami",
+        "Chiefs",
+        "Lakers",
+        "Yankees",
+        "Maple Leafs"
+      ],
+      "no": [
+        "Manchester United"
+      ],
+      "prompt": "Name a team from the NFL, NBA, MLB, NHL, WNBA or MLS.",
+      "family": "sports"
+    },
+    {
+      "id": "group-q022",
+      "basis": "yes-in-original-review",
+      "yes": [
+        "LeBron James",
+        "Tom Brady",
+        "Lionel Messi",
+        "Sidney Crosby",
+        "Caitlin Clark",
+        "Shohei Ohtani",
+        "Cristiano Ronaldo",
+        "Stephen Curry",
+        "Patrick Mahomes",
+        "Cole Palmer",
+        "Lamine Yamal",
+        "Florian Wirtz",
+        "Erling Haaland",
+        "Michael Olise",
+        "Alexander Isak",
+        "Haaland",
+        "Palmer",
+        "Yamal",
+        "Wirtz",
+        "Olise",
+        "Isak"
+      ],
+      "no": [
+        "Voldemort"
+      ],
+      "prompt": "Name an athlete who has played professionally in a team sport.",
+      "family": "sports"
+    },
+    {
+      "id": "group-q023",
+      "basis": "yes-in-original-review",
+      "yes": [
+        "Basketball",
+        "Soccer",
+        "Cricket",
+        "Volleyball",
+        "Rugby",
+        "Water Polo",
+        "American Football",
+        "Golf",
+        "Bowling",
+        "Table Tennis"
+      ],
+      "no": [
+        "Badminton",
+        "Ultimate Frisbee"
+      ],
+      "prompt": "Name a sport or competitive game played with a ball.",
+      "family": "sports"
+    },
+    {
+      "id": "group-q024",
+      "basis": "yes-in-original-review",
+      "yes": [
+        "Tennis",
+        "Baseball",
+        "Golf",
+        "Ice Hockey",
+        "Badminton",
+        "Table Tennis",
+        "Pickleball",
+        "Lacrosse"
+      ],
+      "no": [
+        "Soccer"
+      ],
+      "prompt": "Name a sport played with a racket, bat, stick or club.",
+      "family": "sports"
+    },
+    {
+      "id": "group-q025",
+      "basis": "yes-in-original-review",
+      "yes": [
+        "Swimming",
+        "Skateboarding",
+        "Curling",
+        "Ski Jumping",
+        "Fencing",
+        "BMX Racing",
+        "Basketball",
+        "Archery",
+        "Breaking",
+        "Sport Climbing"
+      ],
+      "no": [
+        "Quidditch"
+      ],
+      "prompt": "Name a sport or event that has appeared at the modern Olympics.",
+      "family": "sports"
+    },
+    {
+      "id": "group-q026",
+      "basis": "yes-in-original-review",
+      "yes": [
+        "Michael Phelps",
+        "Simone Biles",
+        "Usain Bolt",
+        "Katie Ledecky",
+        "Shaun White",
+        "Serena Williams",
+        "LeBron James"
+      ],
+      "no": [
+        "Cristiano Ronaldo"
+      ],
+      "prompt": "Name an athlete who has won an Olympic gold medal.",
+      "family": "sports"
+    },
+    {
+      "id": "group-q027",
+      "basis": "yes-in-original-review",
+      "yes": [
+        "Nike",
+        "Adidas",
+        "Puma",
+        "Reebok",
+        "New Balance",
+        "ASICS",
+        "Under Armour",
+        "On",
+        "Hoka"
+      ],
+      "no": [
+        "Microsoft"
+      ],
+      "prompt": "Name a brand that makes athletic shoes.",
+      "family": "sports"
+    },
+    {
+      "id": "group-q028",
+      "basis": "yes-in-original-review",
+      "yes": [
+        "Quarterback",
+        "Goalkeeper",
+        "Pitcher",
+        "Point Guard",
+        "Striker",
+        "Libero"
+      ],
+      "no": [
+        "Referee"
+      ],
+      "prompt": "Name a player position in a team sport.",
+      "family": "sports"
+    },
+    {
+      "id": "group-q029",
+      "basis": "yes-in-original-review",
+      "yes": [
+        "Chicago Bulls",
+        "Miami Dolphins",
+        "Detroit Tigers",
+        "Pittsburgh Penguins",
+        "Carolina Panthers",
+        "Anaheim Ducks",
+        "Detroit Lions",
+        "Toronto Raptors",
+        "Baltimore Ravens",
+        "Seattle Kraken"
+      ],
+      "no": [
+        "Houston Rockets",
+        "Buffalo Bills",
+        "Buffalo Sabres"
+      ],
+      "prompt": "Name a professional sports team whose name includes an animal.",
+      "family": "sports"
+    },
+    {
+      "id": "group-q030",
+      "basis": "yes-in-original-review",
+      "yes": [
+        "Wembley Stadium",
+        "Madison Square Garden",
+        "Fenway Park",
+        "Old Trafford",
+        "Wrigley Field",
+        "Indianapolis Motor Speedway",
+        "Lambeau Field",
+        "Daytona International Speedway"
+      ],
+      "no": [
+        "Eiffel Tower"
+      ],
+      "prompt": "Name a stadium, arena or racetrack used for professional sports.",
+      "family": "sports"
+    },
+    {
+      "id": "group-q031",
+      "basis": "yes-in-original-review",
+      "yes": [
+        "Helmet",
+        "Shin Guards",
+        "Mouthguard",
+        "Cleats",
+        "Goggles",
+        "Boxing Gloves",
+        "Shoulder Pads"
+      ],
+      "no": [
+        "Baseball Bat"
+      ],
+      "prompt": "Name a piece of equipment an athlete wears.",
+      "family": "sports"
+    },
+    {
+      "id": "group-q032",
+      "basis": "yes-in-original-review",
+      "yes": [
+        "Michael Jordan",
+        "Tom Brady",
+        "Lionel Messi",
+        "Tony Hawk",
+        "Tiger Woods",
+        "Serena Williams",
+        "Kobe Bryant"
+      ],
+      "no": [
+        "Voldemort"
+      ],
+      "prompt": "Name an athlete featured on a video game's cover or in its title.",
+      "family": "sports"
+    },
+    {
+      "id": "group-q033",
+      "basis": "yes-in-original-review",
+      "yes": [
+        "Shrek 2",
+        "Toy Story 2",
+        "Spider-Man 2",
+        "Finding Dory",
+        "John Wick: Chapter 2",
+        "Home Alone 2",
+        "The Dark Knight",
+        "Avengers Endgame",
+        "Inside Out 2"
+      ],
+      "no": [
+        "The Lion King"
+      ],
+      "prompt": "Name a movie that is a sequel to another movie.",
+      "family": "culture"
+    },
+    {
+      "id": "group-q034",
+      "basis": "yes-in-original-review",
+      "yes": [
+        "Sonic the Hedgehog",
+        "The Super Mario Bros. Movie",
+        "A Minecraft Movie",
+        "Mortal Kombat",
+        "Detective Pikachu",
+        "Resident Evil",
+        "Five Nights at Freddy's"
+      ],
+      "no": [
+        "The Matrix"
+      ],
+      "prompt": "Name a movie based on a video game.",
+      "family": "culture"
+    },
+    {
+      "id": "group-q035",
+      "basis": "yes-in-original-review",
+      "yes": [
+        "Star Wars",
+        "Alien",
+        "Interstellar",
+        "The Martian",
+        "Guardians of the Galaxy",
+        "Gravity",
+        "WALL-E"
+      ],
+      "no": [
+        "Finding Nemo"
+      ],
+      "prompt": "Name a movie with scenes set in outer space.",
+      "family": "culture"
+    },
+    {
+      "id": "group-q036",
+      "basis": "yes-in-original-review",
+      "yes": [
+        "The Lion King",
+        "Finding Nemo",
+        "Zootopia",
+        "Madagascar",
+        "Kung Fu Panda",
+        "Ice Age",
+        "Shrek",
+        "Shrek 2",
+        "Finding Dory",
+        "Ratatouille",
+        "Bambi",
+        "Dumbo",
+        "Robin Hood",
+        "Bolt",
+        "The Bad Guys",
+        "The Secret Life of Pets",
+        "Puss in Boots",
+        "Sing",
+        "Zootopia 2",
+        "Hoppers",
+        "The Bad Guys 2"
+      ],
+      "no": [
+        "Inside Out",
+        "Toy Story",
+        "Brave",
+        "Pocahontas",
+        "The Grinch"
+      ],
+      "prompt": "Name an animated movie with talking animal characters.",
+      "family": "culture"
+    },
+    {
+      "id": "group-q037",
+      "basis": "yes-in-original-review",
+      "yes": [
+        "Iron Man",
+        "Batman",
+        "Black Panther",
+        "Spider-Man",
+        "Wonder Woman",
+        "The Incredibles",
+        "The Dark Knight",
+        "Deadpool",
+        "The Fantastic Four First Steps",
+        "Thunderbolts"
+      ],
+      "no": [
+        "The Godfather"
+      ],
+      "prompt": "Name a superhero movie.",
+      "family": "culture"
+    },
+    {
+      "id": "group-q038",
+      "basis": "yes-in-original-review",
+      "yes": [
+        "SpongeBob SquarePants",
+        "The Simpsons",
+        "Adventure Time",
+        "Gravity Falls",
+        "Regular Show",
+        "Avatar: The Last Airbender",
+        "Avatar The Last Airbender",
+        "Bluey"
+      ],
+      "no": [
+        "Stranger Things"
+      ],
+      "prompt": "Name an animated TV series.",
+      "family": "culture"
+    },
+    {
+      "id": "group-q039",
+      "basis": "yes-in-original-review",
+      "yes": [
+        "Friends",
+        "The Office",
+        "Modern Family",
+        "Seinfeld",
+        "Brooklyn Nine-Nine",
+        "The Big Bang Theory",
+        "Abbott Elementary"
+      ],
+      "no": [
+        "Breaking Bad"
+      ],
+      "prompt": "Name a sitcom.",
+      "family": "culture"
+    },
+    {
+      "id": "group-q040",
+      "basis": "yes-in-original-review",
+      "yes": [
+        "Superman",
+        "Elsa",
+        "Eleven",
+        "Spider-Man",
+        "The Flash",
+        "Doctor Strange",
+        "Darth Vader"
+      ],
+      "no": [
+        "Batman"
+      ],
+      "prompt": "Name a movie or TV character with superpowers.",
+      "family": "culture"
+    },
+    {
+      "id": "group-q041",
+      "basis": "yes-in-original-review",
+      "yes": [
+        "WALL-E",
+        "R2-D2",
+        "C-3PO",
+        "Optimus Prime",
+        "Baymax",
+        "Bender"
+      ],
+      "no": [
+        "HAL 9000",
+        "Cortana",
+        "RoboCop"
+      ],
+      "prompt": "Name a fictional robot.",
+      "family": "culture"
+    },
+    {
+      "id": "group-q042",
+      "basis": "yes-in-original-review",
+      "yes": [
+        "Scooby-Doo",
+        "Snoopy",
+        "Garfield",
+        "Simba",
+        "Paddington",
+        "Winnie the Pooh",
+        "Bugs Bunny",
+        "SpongeBob",
+        "Dory",
+        "Donkey",
+        "Pikachu"
+      ],
+      "no": [
+        "Harry Potter"
+      ],
+      "prompt": "Name a fictional animal character.",
+      "family": "culture"
+    },
+    {
+      "id": "group-q043",
+      "basis": "yes-in-original-review",
+      "yes": [
+        "Robert Downey Jr.",
+        "Chris Evans",
+        "Scarlett Johansson",
+        "Tom Holland",
+        "Zendaya",
+        "Elizabeth Olsen",
+        "Samuel L. Jackson"
+      ],
+      "no": [
+        "Batman"
+      ],
+      "prompt": "Name an actor who appears in a Marvel Cinematic Universe movie.",
+      "family": "culture"
+    },
+    {
+      "id": "group-q044",
+      "basis": "yes-in-original-review",
+      "yes": [
+        "Plankton",
+        "Mojo Jojo",
+        "Bill Cipher",
+        "Azula",
+        "Dr. Doofenshmirtz",
+        "HIM",
+        "Hawk Moth",
+        "Shredder"
+      ],
+      "no": [
+        "Walter White"
+      ],
+      "prompt": "Name a villain from a children's animated TV series.",
+      "family": "culture"
+    },
+    {
+      "id": "group-q045",
+      "basis": "yes-in-original-review",
+      "yes": [
+        "Gotham City",
+        "Metropolis",
+        "Springfield",
+        "Bikini Bottom",
+        "Hawkins",
+        "South Park",
+        "Gravity Falls",
+        "Pawnee"
+      ],
+      "no": [
+        "Krusty Krab",
+        "Wakanda"
+      ],
+      "prompt": "Name a fictional city or town from a movie or TV show.",
+      "family": "culture"
+    },
+    {
+      "id": "group-q046",
+      "basis": "yes-in-original-review",
+      "yes": [
+        "Freddy Krueger",
+        "Jason Voorhees",
+        "Chucky",
+        "Xenomorph",
+        "Pennywise",
+        "Michael Myers",
+        "Ghostface"
+      ],
+      "no": [
+        "Gizmo"
+      ],
+      "prompt": "Name a horror movie villain or monster.",
+      "family": "culture"
+    },
+    {
+      "id": "group-q047",
+      "basis": "yes-in-original-review",
+      "yes": [
+        "Billie Jean",
+        "Jolene",
+        "Hey Jude",
+        "Roxanne",
+        "Sweet Caroline",
+        "Stan",
+        "Betty",
+        "The Fate of Ophelia",
+        "Houdini"
+      ],
+      "no": [
+        "Purple Rain"
+      ],
+      "prompt": "Name a song with a person's name in its title.",
+      "family": "music"
+    },
+    {
+      "id": "group-q048",
+      "basis": "yes-in-original-review",
+      "yes": [
+        "Purple Rain",
+        "Yellow",
+        "Back in Black",
+        "Red",
+        "Blue Suede Shoes",
+        "Paint It Black",
+        "Pink Pony Club",
+        "Red Wine Supernova",
+        "Paint the Town Red"
+      ],
+      "no": [
+        "Jolene"
+      ],
+      "prompt": "Name a song with a color in its title.",
+      "family": "music"
+    },
+    {
+      "id": "group-q049",
+      "basis": "yes-in-original-review",
+      "yes": [
+        "Maroon 5",
+        "Blink-182",
+        "Twenty One Pilots",
+        "One Direction",
+        "U2",
+        "Three Days Grace",
+        "Sum 41",
+        "5 Seconds of Summer"
+      ],
+      "no": [
+        "The Beatles"
+      ],
+      "prompt": "Name a musical artist or band with a number in their name.",
+      "family": "music"
+    },
+    {
+      "id": "group-q050",
+      "basis": "yes-in-original-review",
+      "yes": [
+        "Queen",
+        "The Beatles",
+        "BTS",
+        "Metallica",
+        "ABBA",
+        "One Direction",
+        "Nirvana"
+      ],
+      "no": [
+        "Daft Punk"
+      ],
+      "prompt": "Name a music group with at least three members.",
+      "family": "music"
+    },
+    {
+      "id": "group-q051",
+      "basis": "yes-in-original-review",
+      "yes": [
+        "Kendrick Lamar",
+        "Drake",
+        "Nicki Minaj",
+        "Eminem",
+        "Missy Elliott",
+        "J. Cole",
+        "Snoop Dogg"
+      ],
+      "no": [
+        "Wolfgang Amadeus Mozart"
+      ],
+      "prompt": "Name a rapper, past or present.",
+      "family": "music"
+    },
+    {
+      "id": "group-q052",
+      "basis": "yes-in-original-review",
+      "yes": [
+        "Coachella",
+        "Glastonbury",
+        "Lollapalooza",
+        "Bonnaroo",
+        "Rolling Loud",
+        "Tomorrowland"
+      ],
+      "no": [
+        "Madison Square Garden"
+      ],
+      "prompt": "Name a music festival.",
+      "family": "music"
+    },
+    {
+      "id": "group-q054",
+      "basis": "yes-in-original-review",
+      "yes": [
+        "Prince",
+        "Madonna",
+        "Drake",
+        "Adele",
+        "Rihanna",
+        "Beyoncé",
+        "Beyonce",
+        "Eminem"
+      ],
+      "no": [
+        "Taylor Swift"
+      ],
+      "prompt": "Name a musician known professionally by one name.",
+      "family": "music"
+    },
+    {
+      "id": "group-q056",
+      "basis": "yes-in-original-review",
+      "yes": [
+        "Flute",
+        "Trumpet",
+        "Clarinet",
+        "Harmonica",
+        "Bagpipes",
+        "Saxophone",
+        "Trombone",
+        "Recorder",
+        "Tuba"
+      ],
+      "no": [
+        "Guitar",
+        "Piano",
+        "Violin"
+      ],
+      "prompt": "Name a musical instrument played by blowing air into it.",
+      "family": "music"
+    },
+    {
+      "id": "group-q057",
+      "basis": "yes-in-original-review",
+      "yes": [
+        "Pepperoni",
+        "Mushrooms",
+        "Olives",
+        "Pineapple",
+        "Sausage",
+        "Jalapeños",
+        "Mushroom",
+        "Bacon",
+        "Olive",
+        "Jalapeno",
+        "Anchovy"
+      ],
+      "no": [
+        "Brick"
+      ],
+      "prompt": "Name something sold as a pizza topping.",
+      "family": "food"
+    },
+    {
+      "id": "group-q058",
+      "basis": "yes-in-original-review",
+      "yes": [
+        "Ham",
+        "Tuna",
+        "Peanut Butter",
+        "Egg",
+        "Cheese",
+        "Falafel",
+        "Turkey",
+        "Jelly",
+        "Bacon"
+      ],
+      "no": [
+        "Brick"
+      ],
+      "prompt": "Name something people put inside a sandwich.",
+      "family": "food"
+    },
+    {
+      "id": "group-q059",
+      "basis": "yes-in-original-review",
+      "yes": [
+        "French Fries",
+        "Fried Chicken",
+        "Doughnuts",
+        "Tempura",
+        "Falafel",
+        "Onion Rings",
+        "Doughnut"
+      ],
+      "no": [
+        "Sushi"
+      ],
+      "prompt": "Name a food commonly cooked by frying.",
+      "family": "food"
+    },
+    {
+      "id": "group-q060",
+      "basis": "yes-in-original-review",
+      "yes": [
+        "Corn Dog",
+        "Popsicle",
+        "Lollipop",
+        "Satay",
+        "Yakitori",
+        "Tanghulu",
+        "Cake Pop",
+        "Kebab",
+        "Candy Apple"
+      ],
+      "no": [
+        "Mashed Potatoes"
+      ],
+      "prompt": "Name a food commonly served on a stick.",
+      "family": "food"
+    },
+    {
+      "id": "group-q061",
+      "basis": "yes-in-original-review",
+      "yes": [
+        "Pancakes",
+        "Waffles",
+        "French Toast",
+        "Omelette",
+        "Congee",
+        "Shakshuka",
+        "Oatmeal",
+        "Breakfast Burrito",
+        "Eggs Benedict",
+        "Cereal"
+      ],
+      "no": [
+        "Brick"
+      ],
+      "prompt": "Name a named breakfast food or breakfast dish.",
+      "family": "food"
+    },
+    {
+      "id": "group-q062",
+      "basis": "yes-in-original-review",
+      "yes": [
+        "Spaghetti",
+        "Penne",
+        "Fusilli",
+        "Farfalle",
+        "Rigatoni",
+        "Orecchiette",
+        "Macaroni"
+      ],
+      "no": [
+        "Baked Ziti"
+      ],
+      "prompt": "Name a pasta shape.",
+      "family": "food"
+    },
+    {
+      "id": "group-q063",
+      "basis": "yes-in-original-review",
+      "yes": [
+        "Baguette",
+        "Naan",
+        "Pita",
+        "Focaccia",
+        "Challah",
+        "Sourdough",
+        "Rye Bread",
+        "Ciabatta"
+      ],
+      "no": [
+        "Spaghetti"
+      ],
+      "prompt": "Name a named type of bread.",
+      "family": "food"
+    },
+    {
+      "id": "group-q064",
+      "basis": "yes-in-original-review",
+      "yes": [
+        "Kit Kat",
+        "Skittles",
+        "Snickers",
+        "Haribo",
+        "Reese's",
+        "Sour Patch Kids",
+        "KitKat",
+        "M&M's",
+        "Twix",
+        "Hershey's"
+      ],
+      "no": [
+        "Microsoft"
+      ],
+      "prompt": "Name a candy or chocolate brand.",
+      "family": "food"
+    },
+    {
+      "id": "group-q065",
+      "basis": "yes-in-original-review",
+      "yes": [
+        "McDonald's",
+        "Taco Bell",
+        "Wendy's",
+        "Chipotle",
+        "Popeyes",
+        "Jollibee",
+        "Chick-fil-A",
+        "Subway",
+        "Culver's",
+        "Jersey Mike's"
+      ],
+      "no": [
+        "Waffle House"
+      ],
+      "prompt": "Name a fast-food or fast-casual restaurant chain.",
+      "family": "food"
+    },
+    {
+      "id": "group-q066",
+      "basis": "yes-in-original-review",
+      "yes": [
+        "Latte",
+        "Cappuccino",
+        "Americano",
+        "Mocha",
+        "Chai Latte",
+        "Hot Chocolate",
+        "Black Coffee",
+        "Tea",
+        "Matcha",
+        "Cold Brew"
+      ],
+      "no": [
+        "Locals Coffee"
+      ],
+      "prompt": "Name a drink you can order at a coffee shop.",
+      "family": "food"
+    },
+    {
+      "id": "group-q067",
+      "basis": "yes-in-original-review",
+      "yes": [
+        "Hash Browns",
+        "Gnocchi",
+        "Potato Salad",
+        "Latkes",
+        "Patatas Bravas",
+        "Poutine",
+        "French Fries",
+        "Mashed Potatoes",
+        "Tater Tots"
+      ],
+      "no": [
+        "Sushi"
+      ],
+      "prompt": "Name a dish made mainly from potatoes.",
+      "family": "food"
+    },
+    {
+      "id": "group-q068",
+      "basis": "yes-in-original-review",
+      "yes": [
+        "Apple",
+        "Strawberry",
+        "Banana",
+        "Mango",
+        "Peach",
+        "Passion Fruit",
+        "Cherry",
+        "Blueberry",
+        "Lemon"
+      ],
+      "no": [
+        "Potato"
+      ],
+      "prompt": "Name a fruit used in a sweet dessert.",
+      "family": "food"
+    },
+    {
+      "id": "group-q069",
+      "basis": "yes-in-original-review",
+      "yes": [
+        "Cobra",
+        "Scorpion",
+        "Box Jellyfish",
+        "Black Widow",
+        "Lionfish",
+        "Platypus",
+        "Rattlesnake",
+        "Jellyfish",
+        "Gila Monster",
+        "Stonefish"
+      ],
+      "no": [
+        "Poison Dart Frog"
+      ],
+      "prompt": "Name an animal that can deliver venom.",
+      "family": "nature"
+    },
+    {
+      "id": "group-q070",
+      "basis": "yes-in-original-review",
+      "yes": [
+        "Chameleon",
+        "Octopus",
+        "Cuttlefish",
+        "Squid",
+        "Arctic Fox",
+        "Snowshoe Hare"
+      ],
+      "no": [
+        "Cheetah"
+      ],
+      "prompt": "Name an animal that changes color.",
+      "family": "nature"
+    },
+    {
+      "id": "group-q071",
+      "basis": "yes-in-original-review",
+      "yes": [
+        "Bat",
+        "Butterfly",
+        "Dragonfly",
+        "Bee",
+        "Moth",
+        "Flying Ant",
+        "Mosquito",
+        "Housefly"
+      ],
+      "no": [
+        "Flying Squirrel",
+        "Penguin"
+      ],
+      "prompt": "Name an animal that flies but is not a bird.",
+      "family": "nature"
+    },
+    {
+      "id": "group-q072",
+      "basis": "yes-in-original-review",
+      "yes": [
+        "Hippopotamus",
+        "Crocodile",
+        "Otter",
+        "Frog",
+        "Seal",
+        "Beaver",
+        "Alligator",
+        "Hippo"
+      ],
+      "no": [
+        "Giraffe"
+      ],
+      "prompt": "Name a wild animal that spends time both in water and on land.",
+      "family": "nature"
+    },
+    {
+      "id": "group-q073",
+      "basis": "yes-in-original-review",
+      "yes": [
+        "Great White Shark",
+        "Hammerhead Shark",
+        "Whale Shark",
+        "Manta Ray",
+        "Stingray",
+        "Sawfish",
+        "Tiger Shark"
+      ],
+      "no": [
+        "Dolphin"
+      ],
+      "prompt": "Name a kind of shark or ray.",
+      "family": "nature"
+    },
+    {
+      "id": "group-q074",
+      "basis": "yes-in-original-review",
+      "yes": [
+        "Chicken",
+        "Crocodile",
+        "Sea Turtle",
+        "Platypus",
+        "Salmon",
+        "Butterfly",
+        "Duck",
+        "Penguin",
+        "Turtle",
+        "Frog"
+      ],
+      "no": [
+        "Cow",
+        "Scorpion"
+      ],
+      "prompt": "Name an animal that lays eggs.",
+      "family": "nature"
+    },
+    {
+      "id": "group-q075",
+      "basis": "yes-in-original-review",
+      "yes": [
+        "Owl",
+        "Bat",
+        "Raccoon",
+        "Hedgehog",
+        "Aardvark",
+        "Opossum",
+        "Fennec Fox"
+      ],
+      "no": [
+        "Numbat"
+      ],
+      "prompt": "Name an animal that is active at night.",
+      "family": "nature"
+    },
+    {
+      "id": "group-q076",
+      "basis": "yes-in-original-review",
+      "yes": [
+        "Horse",
+        "Donkey",
+        "Camel",
+        "Elephant",
+        "Ox",
+        "Dog",
+        "Pigeon"
+      ],
+      "no": [
+        "Tyrannosaurus Rex"
+      ],
+      "prompt": "Name an animal people have used for work or transport.",
+      "family": "nature"
+    },
+    {
+      "id": "group-q077",
+      "basis": "yes-in-original-review",
+      "yes": [
+        "Spinach",
+        "Carrot",
+        "Rice",
+        "Wheat",
+        "Basil",
+        "Lentil",
+        "Lettuce",
+        "Potato"
+      ],
+      "no": [
+        "Mushroom",
+        "Salt"
+      ],
+      "prompt": "Name a plant people eat.",
+      "family": "nature"
+    },
+    {
+      "id": "group-q078",
+      "basis": "yes-in-original-review",
+      "yes": [
+        "Rose",
+        "Blackberry",
+        "Hawthorn",
+        "Prickly Pear",
+        "Agave",
+        "Bougainvillea",
+        "Cactus",
+        "Raspberry"
+      ],
+      "no": [
+        "Coconut Palm"
+      ],
+      "prompt": "Name a plant that has thorns, spines or prickles.",
+      "family": "nature"
+    },
+    {
+      "id": "group-q079",
+      "basis": "yes-in-original-review",
+      "yes": [
+        "Mars",
+        "Europa",
+        "Titan",
+        "Pluto",
+        "Ceres",
+        "Halley's Comet",
+        "Earth",
+        "Sun",
+        "Moon"
+      ],
+      "no": [
+        "Voyager 1"
+      ],
+      "prompt": "Name a named object in our Solar System.",
+      "family": "science"
+    },
+    {
+      "id": "group-q080",
+      "basis": "yes-in-original-review",
+      "yes": [
+        "Ruler",
+        "Thermometer",
+        "Stopwatch",
+        "Weighing Scale",
+        "Barometer",
+        "Speedometer",
+        "Scale",
+        "Tape Measure",
+        "Measuring Cup",
+        "Protractor"
+      ],
+      "no": [
+        "Sandwich"
+      ],
+      "prompt": "Name something people use to measure things.",
+      "family": "science"
+    },
+    {
+      "id": "group-q081",
+      "basis": "yes-in-original-review",
+      "yes": [
+        "Electric Fan",
+        "Blender",
+        "Washing Machine",
+        "Cordless Drill",
+        "Elevator",
+        "Electric Toothbrush",
+        "Fan",
+        "Electric Car",
+        "Vacuum Cleaner"
+      ],
+      "no": [
+        "Candle"
+      ],
+      "prompt": "Name a machine or device that uses an electric motor.",
+      "family": "science"
+    },
+    {
+      "id": "group-q082",
+      "basis": "yes-in-original-review",
+      "yes": [
+        "Sun",
+        "Light Bulb",
+        "Candle",
+        "Glow Stick",
+        "Firefly",
+        "Lightning",
+        "Fire"
+      ],
+      "no": [
+        "Mirror",
+        "Moon"
+      ],
+      "prompt": "Name something that produces visible light.",
+      "family": "science"
+    },
+    {
+      "id": "group-q083",
+      "basis": "yes-in-original-review",
+      "yes": [
+        "Thunderstorm",
+        "Hail",
+        "Fog",
+        "Blizzard",
+        "Heat Wave",
+        "Tornado",
+        "Rain",
+        "Snow",
+        "Hurricane"
+      ],
+      "no": [
+        "Acid Storm of Venus"
+      ],
+      "prompt": "Name a weather event or weather condition.",
+      "family": "science"
+    },
+    {
+      "id": "group-q084",
+      "basis": "yes-in-original-review",
+      "yes": [
+        "Eye",
+        "Ear",
+        "Lung",
+        "Kidney",
+        "Rib",
+        "Finger",
+        "Hand",
+        "Foot",
+        "Knee",
+        "Elbow"
+      ],
+      "no": [
+        "Brain",
+        "Heart"
+      ],
+      "prompt": "Name a body part a typical human has more than one of.",
+      "family": "science"
+    },
+    {
+      "id": "group-q085",
+      "basis": "yes-in-original-review",
+      "yes": [
+        "Carbon",
+        "Iron",
+        "Aluminum",
+        "Copper",
+        "Silicon",
+        "Calcium",
+        "Lithium",
+        "Oxygen"
+      ],
+      "no": [
+        "Water"
+      ],
+      "prompt": "Name a chemical element used in everyday products.",
+      "family": "science"
+    },
+    {
+      "id": "group-q086",
+      "basis": "yes-in-original-review",
+      "yes": [
+        "Helicopter",
+        "Glider",
+        "Hot-Air Balloon",
+        "Blimp",
+        "Boeing 747",
+        "Space Shuttle",
+        "Airplane",
+        "Hot Air Balloon",
+        "Rocket",
+        "Drone"
+      ],
+      "no": [
+        "Submarine"
+      ],
+      "prompt": "Name a real vehicle that can fly.",
+      "family": "science"
+    },
+    {
+      "id": "group-q087",
+      "basis": "yes-in-original-review",
+      "yes": [
+        "Eiffel Tower",
+        "Taj Mahal",
+        "Great Wall of China",
+        "Colosseum",
+        "Machu Picchu",
+        "Statue of Liberty",
+        "Big Ben",
+        "Golden Gate Bridge"
+      ],
+      "no": [
+        "Hogwarts"
+      ],
+      "prompt": "Name a landmark people can visit.",
+      "family": "world"
+    },
+    {
+      "id": "group-q088",
+      "basis": "yes-in-original-review",
+      "yes": [
+        "Japan",
+        "Indonesia",
+        "Iceland",
+        "Cuba",
+        "Madagascar",
+        "Australia",
+        "New Zealand",
+        "Philippines"
+      ],
+      "no": [
+        "Borneo",
+        "France"
+      ],
+      "prompt": "Name a country made up entirely of islands.",
+      "family": "world"
+    },
+    {
+      "id": "group-q089",
+      "basis": "yes-in-original-review",
+      "yes": [
+        "Disneyland",
+        "Walt Disney World",
+        "Universal Orlando",
+        "Carowinds",
+        "Alton Towers",
+        "Europa-Park",
+        "Universal Studios Hollywood",
+        "Cedar Point",
+        "Dollywood",
+        "Busch Gardens"
+      ],
+      "no": [
+        "Mount Everest"
+      ],
+      "prompt": "Name an amusement park or theme-park resort.",
+      "family": "world"
+    },
+    {
+      "id": "group-q090",
+      "basis": "yes-in-original-review",
+      "yes": [
+        "London",
+        "Paris",
+        "Tokyo",
+        "Los Angeles",
+        "Vancouver",
+        "Beijing",
+        "Sydney",
+        "Athens",
+        "Salt Lake City"
+      ],
+      "no": [
+        "Brisbane"
+      ],
+      "prompt": "Name a city that has hosted the modern Olympics.",
+      "family": "world"
+    },
+    {
+      "id": "group-q091",
+      "basis": "yes-in-original-review",
+      "yes": [
+        "Buffalo Wings",
+        "Yorkshire Pudding",
+        "Baked Alaska",
+        "Peking Duck",
+        "Boston Cream Pie",
+        "New York Cheesecake",
+        "French Fries",
+        "Belgian Waffle",
+        "Neapolitan Pizza"
+      ],
+      "no": [
+        "Cobb Salad"
+      ],
+      "prompt": "Name a food named after a place.",
+      "family": "world"
+    },
+    {
+      "id": "group-q092",
+      "basis": "yes-in-original-review",
+      "yes": [
+        "United States",
+        "China",
+        "Brazil",
+        "Australia",
+        "Turkey",
+        "Vietnam",
+        "New Zealand",
+        "Morocco"
+      ],
+      "no": [
+        "Japan",
+        "Canada"
+      ],
+      "prompt": "Name a country whose national flag contains a star.",
+      "family": "world"
+    },
+    {
+      "id": "group-q093",
+      "basis": "yes-in-original-review",
+      "yes": [
+        "Pencil",
+        "Notebook",
+        "Calculator",
+        "Lunch Box",
+        "Water Bottle",
+        "Headphones",
+        "Backpack",
+        "Lunchbox",
+        "Chromebook"
+      ],
+      "no": [
+        "Hurricane"
+      ],
+      "prompt": "Name something students bring to school.",
+      "family": "everyday"
+    },
+    {
+      "id": "group-q094",
+      "basis": "yes-in-original-review",
+      "yes": [
+        "Toothbrush",
+        "Towel",
+        "Soap",
+        "Shampoo",
+        "Toilet Paper",
+        "Hair Dryer",
+        "Toothpaste",
+        "Razor"
+      ],
+      "no": [
+        "Hurricane"
+      ],
+      "prompt": "Name an item used in a bathroom.",
+      "family": "everyday"
+    },
+    {
+      "id": "group-q095",
+      "basis": "yes-in-original-review",
+      "yes": [
+        "Door",
+        "Padlock",
+        "Phone",
+        "Safe",
+        "School Locker",
+        "Suitcase",
+        "Locker",
+        "Car"
+      ],
+      "no": [
+        "Hurricane"
+      ],
+      "prompt": "Name something people open using a key or a code.",
+      "family": "everyday"
+    },
+    {
+      "id": "group-q096",
+      "basis": "yes-in-original-review",
+      "yes": [
+        "Bicycle",
+        "Skateboard",
+        "Wheelchair",
+        "Stroller",
+        "Shopping Cart",
+        "Office Chair",
+        "Car",
+        "Suitcase"
+      ],
+      "no": [
+        "Skis"
+      ],
+      "prompt": "Name an everyday object with wheels.",
+      "family": "everyday"
+    },
+    {
+      "id": "group-q097",
+      "basis": "yes-in-original-review",
+      "yes": [
+        "Credit Card",
+        "Debit Card",
+        "PayPal",
+        "Apple Pay",
+        "Venmo",
+        "Gift Card",
+        "Bank Transfer"
+      ],
+      "no": [
+        "Cash"
+      ],
+      "prompt": "Name a way to pay for something without physical cash.",
+      "family": "everyday"
+    },
+    {
+      "id": "group-q098",
+      "basis": "yes-in-original-review",
+      "yes": [
+        "Television",
+        "Drone",
+        "RC Car",
+        "Ceiling Fan",
+        "Garage Door",
+        "Air Conditioner"
+      ],
+      "no": [
+        "Pencil"
+      ],
+      "prompt": "Name something that can be controlled with a remote.",
+      "family": "everyday"
+    },
+    {
+      "id": "group-q099",
+      "basis": "yes-in-original-review",
+      "yes": [
+        "Jacket",
+        "Shirt",
+        "Jeans",
+        "Belt",
+        "Boots",
+        "Helmet",
+        "Backpack",
+        "Overalls"
+      ],
+      "no": [
+        "Sunglasses"
+      ],
+      "prompt": "Name something you can wear that has a button, zipper or buckle.",
+      "family": "everyday"
+    },
+    {
+      "id": "group-q100",
+      "basis": "yes-in-original-review",
+      "yes": [
+        "Book",
+        "DVD",
+        "Board Game",
+        "Telescope",
+        "Sewing Machine",
+        "Fishing Pole",
+        "Audiobook",
+        "Magazine",
+        "Video Game",
+        "Wi-Fi Hotspot",
+        "Museum Pass"
+      ],
+      "no": [
+        "Hurricane"
+      ],
+      "prompt": "Name something people can borrow from a public library.",
+      "family": "everyday"
+    },
+    {
+      "id": "group-steam-action",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "Portal 2",
+        "Hades",
+        "Terraria"
+      ],
+      "no": [],
+      "prompt": "Name a game on Steam tagged “Action”.",
+      "family": "gaming"
+    },
+    {
+      "id": "group-steam-adventure",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "Hollow Knight",
+        "Subnautica",
+        "Terraria"
+      ],
+      "no": [],
+      "prompt": "Name a game on Steam tagged “Adventure”.",
+      "family": "gaming"
+    },
+    {
+      "id": "group-steam-open-world",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "Elden Ring",
+        "Grand Theft Auto V",
+        "Skyrim"
+      ],
+      "no": [
+        "Fortnite"
+      ],
+      "prompt": "Name a game on Steam tagged “Open World”.",
+      "family": "gaming"
+    },
+    {
+      "id": "group-steam-survival",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "Rust",
+        "The Forest",
+        "Subnautica"
+      ],
+      "no": [],
+      "prompt": "Name a game on Steam tagged “Survival”.",
+      "family": "gaming"
+    },
+    {
+      "id": "group-steam-horror",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "Phasmophobia",
+        "Lethal Company",
+        "Dead by Daylight"
+      ],
+      "no": [],
+      "prompt": "Name a game on Steam tagged “Horror”.",
+      "family": "gaming"
+    },
+    {
+      "id": "group-steam-co-op",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "Left 4 Dead 2",
+        "It Takes Two",
+        "Portal 2"
+      ],
+      "no": [
+        "Minecraft"
+      ],
+      "prompt": "Name a game on Steam tagged “Co-op”.",
+      "family": "gaming"
+    },
+    {
+      "id": "group-steam-multiplayer",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "Rust",
+        "Dota 2",
+        "Among Us"
+      ],
+      "no": [],
+      "prompt": "Name a game on Steam tagged “Multiplayer”.",
+      "family": "gaming"
+    },
+    {
+      "id": "group-steam-fps",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "Counter-Strike 2",
+        "DOOM",
+        "Team Fortress 2"
+      ],
+      "no": [],
+      "prompt": "Name a game on Steam tagged “FPS”.",
+      "family": "gaming"
+    },
+    {
+      "id": "group-steam-platformer",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "Celeste",
+        "Hollow Knight",
+        "Cuphead"
+      ],
+      "no": [],
+      "prompt": "Name a game on Steam tagged “Platformer”.",
+      "family": "gaming"
+    },
+    {
+      "id": "group-steam-puzzle",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "Portal",
+        "Portal 2",
+        "The Witness"
+      ],
+      "no": [],
+      "prompt": "Name a game on Steam tagged “Puzzle”.",
+      "family": "gaming"
+    },
+    {
+      "id": "group-steam-strategy",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "Civilization VI",
+        "Age of Empires II",
+        "Stellaris"
+      ],
+      "no": [],
+      "prompt": "Name a game on Steam tagged “Strategy”.",
+      "family": "gaming"
+    },
+    {
+      "id": "group-steam-racing",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "Forza Horizon 5",
+        "Assetto Corsa",
+        "DiRT Rally"
+      ],
+      "no": [],
+      "prompt": "Name a game on Steam tagged “Racing”.",
+      "family": "gaming"
+    },
+    {
+      "id": "group-steam-sandbox",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "Garry's Mod",
+        "Terraria",
+        "BeamNG.drive"
+      ],
+      "no": [],
+      "prompt": "Name a game on Steam tagged “Sandbox”.",
+      "family": "gaming"
+    },
+    {
+      "id": "group-steam-building",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "Terraria",
+        "Valheim",
+        "The Forest"
+      ],
+      "no": [],
+      "prompt": "Name a game on Steam tagged “Building”.",
+      "family": "gaming"
+    },
+    {
+      "id": "group-steam-rpg",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "Elden Ring",
+        "The Witcher 3 Wild Hunt",
+        "Baldur's Gate 3"
+      ],
+      "no": [],
+      "prompt": "Name a game on Steam tagged “RPG”.",
+      "family": "gaming"
+    },
+    {
+      "id": "group-steam-fighting",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "Tekken 7",
+        "Street Fighter V",
+        "Mortal Kombat 11"
+      ],
+      "no": [],
+      "prompt": "Name a game on Steam tagged “Fighting”.",
+      "family": "gaming"
+    },
+    {
+      "id": "group-steam-stealth",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "Dishonored",
+        "Hitman",
+        "Metal Gear Solid V The Phantom Pain"
+      ],
+      "no": [],
+      "prompt": "Name a game on Steam tagged “Stealth”.",
+      "family": "gaming"
+    },
+    {
+      "id": "group-steam-zombies",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "Left 4 Dead 2",
+        "Project Zomboid",
+        "Dying Light"
+      ],
+      "no": [],
+      "prompt": "Name a game on Steam tagged “Zombies”.",
+      "family": "gaming"
+    },
+    {
+      "id": "group-steam-space",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "No Man's Sky",
+        "Kerbal Space Program",
+        "Outer Wilds"
+      ],
+      "no": [],
+      "prompt": "Name a game on Steam tagged “Space”.",
+      "family": "gaming"
+    },
+    {
+      "id": "group-steam-sports",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "Rocket League",
+        "NBA 2K23",
+        "Golf With Your Friends"
+      ],
+      "no": [],
+      "prompt": "Name a game on Steam tagged “Sports”.",
+      "family": "gaming"
+    },
+    {
+      "id": "group-steam-tower-defense",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "Bloons TD 6",
+        "Plants vs. Zombies",
+        "Dungeon Defenders"
+      ],
+      "no": [],
+      "prompt": "Name a game on Steam tagged “Tower Defense”.",
+      "family": "gaming"
+    },
+    {
+      "id": "group-steam-battle-royale",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "PUBG Battlegrounds",
+        "Apex Legends",
+        "Naraka Bladepoint"
+      ],
+      "no": [],
+      "prompt": "Name a game on Steam tagged “Battle Royale”.",
+      "family": "gaming"
+    },
+    {
+      "id": "distinct-valorant-agents",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "Jett",
+        "Sage",
+        "Sova"
+      ],
+      "no": [
+        "Mario"
+      ],
+      "prompt": "Name an agent in Valorant.",
+      "family": "gaming"
+    },
+    {
+      "id": "distinct-lol-champions",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "Ahri",
+        "Yasuo",
+        "Lux"
+      ],
+      "no": [],
+      "prompt": "Name a champion in League of Legends.",
+      "family": "gaming"
+    },
+    {
+      "id": "distinct-cs2-weapons",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "AK-47",
+        "AWP",
+        "Desert Eagle"
+      ],
+      "no": [
+        "Vandal"
+      ],
+      "prompt": "Name a weapon or grenade in Counter-Strike 2. Knife types count.",
+      "family": "gaming"
+    },
+    {
+      "id": "distinct-mc-biomes",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "Desert",
+        "Plains",
+        "Badlands"
+      ],
+      "no": [],
+      "prompt": "Name a biome in Minecraft.",
+      "family": "gaming"
+    },
+    {
+      "id": "distinct-mc-enchantments",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "Sharpness",
+        "Mending",
+        "Unbreaking"
+      ],
+      "no": [],
+      "prompt": "Name an enchantment in Minecraft.",
+      "family": "gaming"
+    },
+    {
+      "id": "distinct-fortnite-outfit",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "Peely",
+        "Fishstick",
+        "Jonesy The First"
+      ],
+      "no": [],
+      "prompt": "Name an outfit from Fortnite.",
+      "family": "gaming"
+    },
+    {
+      "id": "distinct-fortnite-emote",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "Floss",
+        "Take the L",
+        "Orange Justice"
+      ],
+      "no": [],
+      "prompt": "Name an emote from Fortnite.",
+      "family": "gaming"
+    },
+    {
+      "id": "discovery-nfl-players",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "Tom Brady",
+        "Patrick Mahomes",
+        "Lamar Jackson"
+      ],
+      "no": [],
+      "prompt": "Name a player who has been on an NFL or AFL roster (1920–2026).",
+      "family": "sports"
+    },
+    {
+      "id": "discovery-nba-players",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "LeBron James",
+        "Michael Jordan",
+        "Stephen Curry"
+      ],
+      "no": [],
+      "prompt": "Name someone who has played in the NBA.",
+      "family": "sports"
+    },
+    {
+      "id": "discovery-mlb-players",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "Babe Ruth",
+        "Shohei Ohtani",
+        "Aaron Judge"
+      ],
+      "no": [],
+      "prompt": "Name someone who has played Major League Baseball (through 2025).",
+      "family": "sports"
+    },
+    {
+      "id": "discovery-wnba-players",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "Caitlin Clark",
+        "Sue Bird",
+        "Diana Taurasi"
+      ],
+      "no": [],
+      "prompt": "Name someone who has played in the WNBA.",
+      "family": "sports"
+    },
+    {
+      "id": "discovery-mlb-teams",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "New York Yankees",
+        "Chicago Cubs",
+        "Boston Red Sox"
+      ],
+      "no": [],
+      "prompt": "Name a current MLB team (2026).",
+      "family": "sports"
+    },
+    {
+      "id": "discovery-nba-teams",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "Los Angeles Lakers",
+        "Boston Celtics",
+        "Chicago Bulls"
+      ],
+      "no": [],
+      "prompt": "Name an NBA team.",
+      "family": "sports"
+    },
+    {
+      "id": "discovery-nhl-teams",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "Toronto Maple Leafs",
+        "Boston Bruins",
+        "New York Rangers"
+      ],
+      "no": [],
+      "prompt": "Name a current NHL team (2026–27).",
+      "family": "sports"
+    },
+    {
+      "id": "fun-sports",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "Soccer",
+        "Basketball",
+        "Tennis"
+      ],
+      "no": [],
+      "prompt": "Name a sport or competitive game.",
+      "family": "sports"
+    },
+    {
+      "id": "var-semantic-sports_equipment-n-01",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "Basketball",
+        "Baseball Bat",
+        "Tennis Racket"
+      ],
+      "no": [],
+      "prompt": "Name a type of sports equipment.",
+      "family": "sports"
+    },
+    {
+      "id": "distinct-facts-water-sports",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "Surfing",
+        "Swimming",
+        "Scuba Diving"
+      ],
+      "no": [
+        "Basketball"
+      ],
+      "prompt": "Name a water sport or recreational activity on or in water.",
+      "family": "sports"
+    },
+    {
+      "id": "fun-film-horror",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "Scream",
+        "Halloween",
+        "The Exorcist"
+      ],
+      "no": [],
+      "prompt": "Name a horror movie.",
+      "family": "culture"
+    },
+    {
+      "id": "fun-film-comedy",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "Superbad",
+        "Mean Girls",
+        "Step Brothers"
+      ],
+      "no": [],
+      "prompt": "Name a comedy movie.",
+      "family": "culture"
+    },
+    {
+      "id": "group-movie-genre-animation",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "Toy Story",
+        "Shrek",
+        "Spirited Away"
+      ],
+      "no": [],
+      "prompt": "Name an animation movie.",
+      "family": "culture"
+    },
+    {
+      "id": "group-movie-genre-action",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "Die Hard",
+        "John Wick",
+        "Top Gun"
+      ],
+      "no": [],
+      "prompt": "Name an action movie.",
+      "family": "culture"
+    },
+    {
+      "id": "group-movie-genre-fantasy",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "Harry Potter and the Philosopher's Stone",
+        "The Wizard of Oz",
+        "The Lord of the Rings The Fellowship of the Ring"
+      ],
+      "no": [],
+      "prompt": "Name a fantasy movie.",
+      "family": "culture"
+    },
+    {
+      "id": "group-movie-genre-science-fiction",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "Interstellar",
+        "The Matrix",
+        "Back to the Future"
+      ],
+      "no": [],
+      "prompt": "Name a science fiction movie.",
+      "family": "culture"
+    },
+    {
+      "id": "group-movie-genre-romance",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "Titanic",
+        "The Notebook",
+        "La La Land"
+      ],
+      "no": [],
+      "prompt": "Name a romance movie.",
+      "family": "culture"
+    },
+    {
+      "id": "group-show-genre-anime",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "Naruto",
+        "One Piece",
+        "Death Note"
+      ],
+      "no": [],
+      "prompt": "Name an anime TV or streaming show.",
+      "family": "culture"
+    },
+    {
+      "id": "group-show-genre-mystery",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "Stranger Things",
+        "Lost",
+        "Scooby-Doo Where Are You"
+      ],
+      "no": [],
+      "prompt": "Name a mystery TV or streaming show.",
+      "family": "culture"
+    },
+    {
+      "id": "group-show-genre-crime",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "Breaking Bad",
+        "Better Call Saul",
+        "The Sopranos"
+      ],
+      "no": [],
+      "prompt": "Name a crime TV or streaming show.",
+      "family": "culture"
+    },
+    {
+      "id": "fun-movie-actors",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "Leonardo DiCaprio",
+        "Denzel Washington",
+        "Emma Stone"
+      ],
+      "no": [],
+      "prompt": "Name a film actor or actress.",
+      "family": "culture"
+    },
+    {
+      "id": "catalog-mythical-creature-types",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "Dragon",
+        "Unicorn",
+        "Mermaid"
+      ],
+      "no": [],
+      "prompt": "Name a type of creature from mythology, folklore, or fantasy.",
+      "family": "culture"
+    },
+    {
+      "id": "distinct-kind-art-n-02",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "Painting",
+        "Drawing",
+        "Sculpture"
+      ],
+      "no": [],
+      "prompt": "Name an art or craft activity.",
+      "family": "culture"
+    },
+    {
+      "id": "group-music-pop-artist",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "Taylor Swift",
+        "Ariana Grande",
+        "Dua Lipa"
+      ],
+      "no": [],
+      "prompt": "Name an artist associated with pop music.",
+      "family": "music"
+    },
+    {
+      "id": "group-music-rock-artist",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "Queen",
+        "The Beatles",
+        "Nirvana"
+      ],
+      "no": [],
+      "prompt": "Name an artist associated with rock music.",
+      "family": "music"
+    },
+    {
+      "id": "group-music-country-artist",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "Dolly Parton",
+        "Luke Combs",
+        "Johnny Cash"
+      ],
+      "no": [],
+      "prompt": "Name an artist associated with country music.",
+      "family": "music"
+    },
+    {
+      "id": "group-music-metal-artist",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "Metallica",
+        "Iron Maiden",
+        "Black Sabbath"
+      ],
+      "no": [],
+      "prompt": "Name an artist associated with metal music.",
+      "family": "music"
+    },
+    {
+      "id": "group-music-k-pop-artist",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "BTS",
+        "Blackpink",
+        "Twice"
+      ],
+      "no": [],
+      "prompt": "Name an artist associated with k-pop music.",
+      "family": "music"
+    },
+    {
+      "id": "catalog-instrument-types",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "Guitar",
+        "Piano",
+        "Violin"
+      ],
+      "no": [],
+      "prompt": "Name a type of musical instrument. Named instrument families count.",
+      "family": "music"
+    },
+    {
+      "id": "catalog-genre-clean",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "Rock",
+        "Pop",
+        "Hip Hop"
+      ],
+      "no": [],
+      "prompt": "Name a musical genre or subgenre.",
+      "family": "music"
+    },
+    {
+      "id": "catalog-dances",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "Ballet",
+        "Tango",
+        "Salsa"
+      ],
+      "no": [],
+      "prompt": "Name a dance style, traditional dance, or named social dance.",
+      "family": "music"
+    },
+    {
+      "id": "distinct-inventory-catalog-percussion-types",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "Drum",
+        "Xylophone",
+        "Tambourine"
+      ],
+      "no": [],
+      "prompt": "Name a percussion instrument.",
+      "family": "music"
+    },
+    {
+      "id": "distinct-inventory-catalog-string-instrument-types",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "Violin",
+        "Guitar",
+        "Cello"
+      ],
+      "no": [],
+      "prompt": "Name a stringed musical instrument.",
+      "family": "music"
+    },
+    {
+      "id": "distinct-inventory-guitar-makers",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "Fender",
+        "Gibson",
+        "Ibanez"
+      ],
+      "no": [],
+      "prompt": "Name a guitar manufacturer or established guitar brand, including historical makers.",
+      "family": "music"
+    },
+    {
+      "id": "seasonings",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "Salt",
+        "Black Pepper",
+        "Cinnamon"
+      ],
+      "no": [],
+      "prompt": "Name a seasoning, including herbs, spices and named spice blends.",
+      "family": "food"
+    },
+    {
+      "id": "condiment-counter",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "Ketchup",
+        "Mustard",
+        "Mayonnaise"
+      ],
+      "no": [],
+      "prompt": "Name a sauce, condiment, or relish served with food. Named traditional condiments count.",
+      "family": "food"
+    },
+    {
+      "id": "sandwiches",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "BLT",
+        "Grilled Cheese",
+        "Reuben"
+      ],
+      "no": [],
+      "prompt": "Name a named sandwich or established sandwich filling combination.",
+      "family": "food"
+    },
+    {
+      "id": "catalog-soups",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "Chicken Noodle Soup",
+        "Tomato Soup",
+        "Clam Chowder"
+      ],
+      "no": [],
+      "prompt": "Name a named soup or established soup variety.",
+      "family": "food"
+    },
+    {
+      "id": "catalog-cakes",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "Chocolate Cake",
+        "Carrot Cake",
+        "Cheesecake"
+      ],
+      "no": [],
+      "prompt": "Name a cake, torte, or established cake variety.",
+      "family": "food"
+    },
+    {
+      "id": "catalog-desserts",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "Ice Cream",
+        "Brownie",
+        "Tiramisu"
+      ],
+      "no": [],
+      "prompt": "Name a dessert, sweet dish, or confection.",
+      "family": "food"
+    },
+    {
+      "id": "catalog-rice-dishes",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "Sushi",
+        "Risotto",
+        "Paella"
+      ],
+      "no": [],
+      "prompt": "Name a named dish made with rice.",
+      "family": "food"
+    },
+    {
+      "id": "catalog-snacks",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "Popcorn",
+        "Potato Chips",
+        "Pretzel"
+      ],
+      "no": [],
+      "prompt": "Name a snack food or established named snack. Brands of specific snacks count.",
+      "family": "food"
+    },
+    {
+      "id": "catalog-coffee-drinks",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "Espresso",
+        "Latte",
+        "Cappuccino"
+      ],
+      "no": [],
+      "prompt": "Name a coffee drink or established coffee preparation.",
+      "family": "food"
+    },
+    {
+      "id": "culinary-vegetables",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "Carrot",
+        "Broccoli",
+        "Potato"
+      ],
+      "no": [],
+      "prompt": "Name a vegetable or edible plant part commonly cooked as a vegetable.",
+      "family": "food"
+    },
+    {
+      "id": "distinct-inventory-catalog-salads",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "Caesar Salad",
+        "Potato Salad",
+        "Coleslaw"
+      ],
+      "no": [],
+      "prompt": "Name a named salad or established salad variety.",
+      "family": "food"
+    },
+    {
+      "id": "distinct-inventory-catalog-dumplings",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "Gyoza",
+        "Pierogi",
+        "Wonton"
+      ],
+      "no": [],
+      "prompt": "Name a dumpling or established regional dumpling variety.",
+      "family": "food"
+    },
+    {
+      "id": "distinct-inventory-sausage-varieties",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "Pepperoni",
+        "Chorizo",
+        "Bratwurst"
+      ],
+      "no": [],
+      "prompt": "Name a type of sausage, including regional and cured varieties.",
+      "family": "food"
+    },
+    {
+      "id": "distinct-inventory-edible-fish",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "Salmon",
+        "Tuna",
+        "Cod"
+      ],
+      "no": [],
+      "prompt": "Name a fish eaten as food. Species and established market names count.",
+      "family": "food"
+    },
+    {
+      "id": "distinct-inventory-edible-shellfish",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "Shrimp",
+        "Crab",
+        "Lobster"
+      ],
+      "no": [],
+      "prompt": "Name an edible shellfish or other edible aquatic invertebrate. Cephalopods count.",
+      "family": "food"
+    },
+    {
+      "id": "distinct-facts-chicken-dishes",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "Chicken Nuggets",
+        "Chicken Parmesan",
+        "Chicken Tikka Masala"
+      ],
+      "no": [
+        "Beef Wellington"
+      ],
+      "prompt": "Name a named dish commonly made with chicken.",
+      "family": "food"
+    },
+    {
+      "id": "distinct-facts-egg-dishes",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "Omelette",
+        "Scrambled Eggs",
+        "Deviled Eggs"
+      ],
+      "no": [],
+      "prompt": "Name a named dish or preparation in which eggs are a main ingredient.",
+      "family": "food"
+    },
+    {
+      "id": "distinct-kind-cut-n-06",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "Sirloin",
+        "Ribeye",
+        "Brisket"
+      ],
+      "no": [],
+      "prompt": "Name a cut of meat.",
+      "family": "food"
+    },
+    {
+      "id": "distinct-kind-edible-fat-n-01",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "Butter",
+        "Olive Oil",
+        "Lard"
+      ],
+      "no": [],
+      "prompt": "Name a fat or oil used in cooking.",
+      "family": "food"
+    },
+    {
+      "id": "dog-breeds",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "Labrador Retriever",
+        "Poodle",
+        "Golden Retriever"
+      ],
+      "no": [],
+      "prompt": "Name a dog breed, including historical breeds.",
+      "family": "nature"
+    },
+    {
+      "id": "cat-breeds",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "Persian",
+        "Siamese",
+        "Maine Coon"
+      ],
+      "no": [],
+      "prompt": "Name a cat breed, including experimental and historical breeds.",
+      "family": "nature"
+    },
+    {
+      "id": "fun-prehistoric",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "Tyrannosaurus Rex",
+        "Triceratops",
+        "Stegosaurus"
+      ],
+      "no": [],
+      "prompt": "Name a dinosaur or other prehistoric animal.",
+      "family": "nature"
+    },
+    {
+      "id": "var-semantic-domestic_animal-n-01",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "Dog",
+        "Cat",
+        "Horse"
+      ],
+      "no": [],
+      "prompt": "Name a type of domestic animal.",
+      "family": "nature"
+    },
+    {
+      "id": "var-semantic-tree-n-01",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "Oak",
+        "Maple",
+        "Pine"
+      ],
+      "no": [],
+      "prompt": "Name a type of tree.",
+      "family": "nature"
+    },
+    {
+      "id": "distinct-inventory-animal-marsupials",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "Kangaroo",
+        "Koala",
+        "Wombat"
+      ],
+      "no": [],
+      "prompt": "Name a kind of marsupial. Named groups and species, living or extinct, count; a common or scientific name is accepted.",
+      "family": "nature"
+    },
+    {
+      "id": "distinct-inventory-animal-primates",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "Gorilla",
+        "Chimpanzee",
+        "Lemur"
+      ],
+      "no": [],
+      "prompt": "Name a kind of primate. Named groups and species, living or extinct, count; a common or scientific name is accepted.",
+      "family": "nature"
+    },
+    {
+      "id": "distinct-inventory-animal-rodents",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "Mouse",
+        "Rat",
+        "Capybara"
+      ],
+      "no": [],
+      "prompt": "Name a kind of rodent. Named groups and species, living or extinct, count; a common or scientific name is accepted.",
+      "family": "nature"
+    },
+    {
+      "id": "distinct-kind-bird-of-prey-n-01",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "Eagle",
+        "Hawk",
+        "Owl"
+      ],
+      "no": [],
+      "prompt": "Name a bird of prey.",
+      "family": "nature"
+    },
+    {
+      "id": "distinct-kind-insect-n-01",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "Ant",
+        "Bee",
+        "Butterfly"
+      ],
+      "no": [],
+      "prompt": "Name an insect.",
+      "family": "nature"
+    },
+    {
+      "id": "distinct-facts-regeneration",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "Starfish",
+        "Axolotl",
+        "Lizard"
+      ],
+      "no": [],
+      "prompt": "Name a kind of animal that can regrow a lost body part.",
+      "family": "nature"
+    },
+    {
+      "id": "distinct-facts-natural-armour",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "Turtle",
+        "Armadillo",
+        "Crab"
+      ],
+      "no": [],
+      "prompt": "Name a kind of animal that has a protective shell, carapace, bony plates or body armour.",
+      "family": "nature"
+    },
+    {
+      "id": "distinct-facts-flightless-birds",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "Penguin",
+        "Ostrich",
+        "Kiwi"
+      ],
+      "no": [],
+      "prompt": "Name a bird that cannot normally fly, including extinct flightless birds.",
+      "family": "nature"
+    },
+    {
+      "id": "distinct-facts-pollinators",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "Bee",
+        "Butterfly",
+        "Hummingbird"
+      ],
+      "no": [
+        "Earthworm"
+      ],
+      "prompt": "Name a kind of animal that can pollinate flowers.",
+      "family": "nature"
+    },
+    {
+      "id": "fun-elements",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "Hydrogen",
+        "Oxygen",
+        "Gold"
+      ],
+      "no": [],
+      "prompt": "Name a chemical element. Symbols count.",
+      "family": "science"
+    },
+    {
+      "id": "fun-materials",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "Wood",
+        "Plastic",
+        "Glass"
+      ],
+      "no": [],
+      "prompt": "Name a material or substance used to make things.",
+      "family": "science"
+    },
+    {
+      "id": "fun-scientists",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "Albert Einstein",
+        "Isaac Newton",
+        "Marie Curie"
+      ],
+      "no": [],
+      "prompt": "Name a scientist, mathematician, inventor or science communicator.",
+      "family": "science"
+    },
+    {
+      "id": "fun-inventions",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "Telephone",
+        "Light Bulb",
+        "Printing Press"
+      ],
+      "no": [],
+      "prompt": "Name an invention, tool or piece of technology.",
+      "family": "science"
+    },
+    {
+      "id": "distinct-inventory-gem-materials",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "Diamond",
+        "Ruby",
+        "Emerald"
+      ],
+      "no": [
+        "Concrete"
+      ],
+      "prompt": "Name a mineral or other natural material used as a gemstone.",
+      "family": "science"
+    },
+    {
+      "id": "distinct-kind-solid-figure-n-01",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "Cube",
+        "Sphere",
+        "Cone"
+      ],
+      "no": [
+        "Statue",
+        "Sculpture"
+      ],
+      "prompt": "Name a three-dimensional geometric shape.",
+      "family": "science"
+    },
+    {
+      "id": "distinct-kind-building-material-n-01",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "Brick",
+        "Concrete",
+        "Wood"
+      ],
+      "no": [],
+      "prompt": "Name a building material.",
+      "family": "science"
+    },
+    {
+      "id": "distinct-kind-fuel-n-01",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "Coal",
+        "Gasoline",
+        "Diesel"
+      ],
+      "no": [],
+      "prompt": "Name a fuel.",
+      "family": "science"
+    },
+    {
+      "id": "distinct-kind-gas-n-02",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "Oxygen",
+        "Hydrogen",
+        "Carbon Dioxide"
+      ],
+      "no": [
+        "Gasoline"
+      ],
+      "prompt": "Name a gas or common gas mixture.",
+      "family": "science"
+    },
+    {
+      "id": "distinct-kind-liquid-n-03",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "Water",
+        "Milk",
+        "Coffee"
+      ],
+      "no": [
+        "Steam",
+        "Ice"
+      ],
+      "prompt": "Name a substance or mixture that is normally liquid at room temperature.",
+      "family": "science"
+    },
+    {
+      "id": "distinct-facts-muscles",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "Biceps",
+        "Triceps",
+        "Quadriceps"
+      ],
+      "no": [],
+      "prompt": "Name a human muscle or muscle group.",
+      "family": "science"
+    },
+    {
+      "id": "distinct-facts-lab-tools",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "Microscope",
+        "Test Tube",
+        "Beaker"
+      ],
+      "no": [
+        "Bicycle"
+      ],
+      "prompt": "Name a tool, instrument or piece of glassware used in a science laboratory.",
+      "family": "science"
+    },
+    {
+      "id": "fun-water-world",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "Pacific Ocean",
+        "Nile",
+        "Lake Superior"
+      ],
+      "no": [],
+      "prompt": "Name a river, lake, sea, ocean, gulf, bay or strait.",
+      "family": "world"
+    },
+    {
+      "id": "fun-landforms",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "Mountain",
+        "Valley",
+        "Island"
+      ],
+      "no": [],
+      "prompt": "Name a landform, natural feature or kind of landscape.",
+      "family": "world"
+    },
+    {
+      "id": "fun-languages",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "English",
+        "Spanish",
+        "French"
+      ],
+      "no": [],
+      "prompt": "Name a spoken, signed or constructed language.",
+      "family": "world"
+    },
+    {
+      "id": "distinct-facts-world-currencies",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "US Dollar",
+        "Euro",
+        "Japanese Yen"
+      ],
+      "no": [],
+      "prompt": "Name a government-issued currency, monetary unit or named historical coin.",
+      "family": "world"
+    },
+    {
+      "id": "distinct-facts-landlocked-countries",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "Switzerland",
+        "Austria",
+        "Mongolia"
+      ],
+      "no": [],
+      "prompt": "Name a landlocked country.",
+      "family": "world"
+    },
+    {
+      "id": "distinct-facts-volcanoes",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "Mount Vesuvius",
+        "Mount Etna",
+        "Krakatoa"
+      ],
+      "no": [],
+      "prompt": "Name a volcano or named volcanic complex. Dormant and extinct ones count.",
+      "family": "world"
+    },
+    {
+      "id": "distinct-facts-named-bridges",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "Golden Gate Bridge",
+        "Brooklyn Bridge",
+        "Tower Bridge"
+      ],
+      "no": [],
+      "prompt": "Name a real, named bridge.",
+      "family": "world"
+    },
+    {
+      "id": "occupation-titles",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "Teacher",
+        "Doctor",
+        "Plumber"
+      ],
+      "no": [],
+      "prompt": "Name an occupation or recognized job title.",
+      "family": "everyday"
+    },
+    {
+      "id": "clothing-items",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "Shirt",
+        "Jacket",
+        "Jeans"
+      ],
+      "no": [],
+      "prompt": "Name an item or established style of clothing.",
+      "family": "everyday"
+    },
+    {
+      "id": "household-appliances",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "Refrigerator",
+        "Microwave",
+        "Washing Machine"
+      ],
+      "no": [],
+      "prompt": "Name an appliance or powered device used in a home.",
+      "family": "everyday"
+    },
+    {
+      "id": "room-types",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "Kitchen",
+        "Bedroom",
+        "Bathroom"
+      ],
+      "no": [],
+      "prompt": "Name a type of room or specialized indoor space.",
+      "family": "everyday"
+    },
+    {
+      "id": "catalog-furniture-types",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "Chair",
+        "Table",
+        "Sofa"
+      ],
+      "no": [],
+      "prompt": "Name a type of furniture or household furnishing.",
+      "family": "everyday"
+    },
+    {
+      "id": "catalog-jewelry-types",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "Ring",
+        "Necklace",
+        "Bracelet"
+      ],
+      "no": [],
+      "prompt": "Name a type or established style of jewellery.",
+      "family": "everyday"
+    },
+    {
+      "id": "var-semantic-exercise-n-01",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "Push-up",
+        "Sit-up",
+        "Squat"
+      ],
+      "no": [],
+      "prompt": "Name a type of exercise.",
+      "family": "everyday"
+    },
+    {
+      "id": "var-semantic-bag-n-01",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "Backpack",
+        "Handbag",
+        "Suitcase"
+      ],
+      "no": [],
+      "prompt": "Name a type of bag.",
+      "family": "everyday"
+    },
+    {
+      "id": "var-semantic-building-n-01",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "School",
+        "Hospital",
+        "Library"
+      ],
+      "no": [],
+      "prompt": "Name a type of building.",
+      "family": "everyday"
+    },
+    {
+      "id": "var-semantic-footwear-n-02",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "Sneaker",
+        "Boot",
+        "Sandal"
+      ],
+      "no": [],
+      "prompt": "Name a type of footwear.",
+      "family": "everyday"
+    },
+    {
+      "id": "var-semantic-shop-n-01",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "Supermarket",
+        "Bakery",
+        "Bookshop"
+      ],
+      "no": [],
+      "prompt": "Name a type of shop.",
+      "family": "everyday"
+    },
+    {
+      "id": "distinct-kind-gesture-n-02",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "Wave",
+        "Thumbs Up",
+        "Handshake"
+      ],
+      "no": [],
+      "prompt": "Name a gesture or bodily signal.",
+      "family": "everyday"
+    },
+    {
+      "id": "distinct-kind-social-event-n-01",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "Birthday Party",
+        "Wedding",
+        "Picnic"
+      ],
+      "no": [],
+      "prompt": "Name a social event or gathering.",
+      "family": "everyday"
+    },
+    {
+      "id": "distinct-facts-camping-gear",
+      "basis": "reviewed-against-original-style",
+      "yes": [
+        "Tent",
+        "Sleeping Bag",
+        "Flashlight"
+      ],
+      "no": [],
+      "prompt": "Name a piece of camping equipment.",
+      "family": "everyday"
+    }
+  ]
+}

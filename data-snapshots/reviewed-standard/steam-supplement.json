@@ -1,0 +1,126 @@
+[
+  {
+    "appId": 570,
+    "name": "Dota 2",
+    "aliases": [],
+    "tags": [
+      "Free to Play",
+      "MOBA",
+      "Multiplayer",
+      "Strategy",
+      "eSports",
+      "Team-Based",
+      "Competitive",
+      "Action",
+      "Online Co-Op",
+      "PvP",
+      "Difficult",
+      "Co-op",
+      "RTS",
+      "RPG",
+      "Tower Defense",
+      "Fantasy",
+      "Character Customization",
+      "Replay Value",
+      "Action RPG",
+      "Simulation"
+    ],
+    "source": "https://store.steampowered.com/app/570/",
+    "checkedAt": "2026-10-25"
+  },
+  {
+    "appId": 271590,
+    "name": "Grand Theft Auto V Legacy",
+    "aliases": [
+      "Grand Theft Auto V"
+    ],
+    "tags": [
+      "Open World",
+      "Action",
+      "Multiplayer",
+      "Crime",
+      "Automobile Sim",
+      "Third Person",
+      "First-Person",
+      "Shooter",
+      "Adventure",
+      "Singleplayer",
+      "Third-Person Shooter",
+      "Racing",
+      "Co-op",
+      "Sandbox",
+      "Atmospheric",
+      "Funny",
+      "Great Soundtrack",
+      "Comedy",
+      "Moddable",
+      "RPG"
+    ],
+    "source": "https://store.steampowered.com/app/271590/",
+    "checkedAt": "2026-10-25"
+  },
+  {
+    "appId": 289070,
+    "name": "Sid Meier’s Civilization VI",
+    "aliases": [
+      "Civilization VI",
+      "Civilization 6"
+    ],
+    "tags": [
+      "Strategy",
+      "Turn-Based Strategy",
+      "Multiplayer",
+      "Historical",
+      "Grand Strategy",
+      "Singleplayer",
+      "Turn-Based",
+      "4X",
+      "City Builder",
+      "War",
+      "Simulation",
+      "Tactical",
+      "Management",
+      "Building",
+      "Online Co-Op",
+      "Moddable",
+      "Great Soundtrack",
+      "Co-op",
+      "Hex Grid",
+      "Atmospheric"
+    ],
+    "source": "https://store.steampowered.com/app/289070/",
+    "checkedAt": "2026-10-25"
+  },
+  {
+    "appId": 813780,
+    "name": "Age of Empires II: Definitive Edition",
+    "aliases": [
+      "Age of Empires II",
+      "Age of Empires 2"
+    ],
+    "tags": [
+      "Strategy",
+      "RTS",
+      "City Builder",
+      "Multiplayer",
+      "Base Building",
+      "Historical",
+      "Singleplayer",
+      "Medieval",
+      "Resource Management",
+      "Classic",
+      "Tactical",
+      "Real-Time",
+      "Co-op",
+      "Remake",
+      "Isometric",
+      "2D",
+      "Replay Value",
+      "Action",
+      "Great Soundtrack",
+      "Adventure"
+    ],
+    "source": "https://store.steampowered.com/app/813780/",
+    "checkedAt": "2026-10-25"
+  }
+]

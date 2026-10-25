@@ -13,7 +13,7 @@ const read=path=>readFileSync(new URL('../'+path,import.meta.url));
 const manifest=JSON.parse(read('group-bank-manifest.json'));
 const approved=JSON.parse(read('data-snapshots/group/approved-prompts.json'));
 test('all 98 approved prompts are playable; the 5,000 source archive is distinct from normal games',()=>{
- assert.equal(GROUP_PACKS.length,5000);assert.ok(MIXED_PACKS.length>300&&MIXED_PACKS.length<5000);assert.equal(PARTY_PACKS.length,MIXED_PACKS.length);
+ assert.equal(GROUP_PACKS.length,5000);assert.equal(MIXED_PACKS.length,227);assert.equal(PARTY_PACKS.length,MIXED_PACKS.length);
  assert.equal(new Set(GROUP_PACKS.map(p=>p.id)).size,5000);assert.equal(new Set(GROUP_PACKS.map(p=>p.identityHash)).size,5000);
  assert.equal(new Set(GROUP_PACKS.map(p=>canonicalQuestionId(p.id))).size,5000);
  assert.equal(GROUP_PACKS.filter(p=>p.reviewId).length,98);
@@ -21,9 +21,9 @@ test('all 98 approved prompts are playable; the 5,000 source archive is distinct
  for(const id of ['q053','q055'])assert.ok(!GROUP_PACKS.some(p=>p.reviewId===id));
 });
 test('single Steam labels retain actual full memberships without a two-tag condition',()=>{
- const source=JSON.parse(gunzipSync(read('data-snapshots/discovery/steam.json.gz')));
+ const source=JSON.parse(gunzipSync(read('data-snapshots/discovery/steam.json.gz'))),verified=JSON.parse(read('data-snapshots/reviewed-standard/steam-supplement.json'));
  const tags=GROUP_PACKS.filter(p=>p.predicate?.kind==='steam-tag');assert.ok(tags.length>=150);
- for(const p of tags){const {tag}=p.predicate;assert.ok(source.tags[tag]);assert.equal(p.prompt,`Name a game on Steam tagged “${tag}”.`);const allowed=new Set(source.tags[tag].map(id=>normalize(source.games[id][0])));for(const a of p.answers)assert.ok(allowed.has(normalize(a.label)),p.id+': '+a.label);}
+ for(const p of tags){const {tag}=p.predicate;assert.ok(source.tags[tag]);assert.equal(p.prompt,`Name a game on Steam tagged “${tag}”.`);const allowed=new Set([...source.tags[tag].map(id=>normalize(source.games[id][0])),...verified.filter(s=>s.tags.includes(tag)).map(s=>normalize(s.name))]);for(const a of p.answers)assert.ok(allowed.has(normalize(a.label)),p.id+': '+a.label);}
  for(const tag of ['Horror','Open World','RPG','Survival','Co-op'])assert.ok(tags.some(p=>p.predicate.tag===tag),tag);
  const pairs=GROUP_PACKS.filter(p=>p.predicate?.kind==='steam-tags');assert.ok(pairs.length>=40);
  for(const p of pairs){assert.ok(!MIXED_PACKS.includes(p));assert.equal(p.predicate.tags.length,2);assert.ok(p.answerCount>=50&&p.familiarCount>=20);const sets=p.predicate.tags.map(tag=>new Set(source.tags[tag].map(id=>normalize(source.games[id][0]))));for(const a of p.answers)assert.ok(sets.every(set=>set.has(normalize(a.label))),p.id+': '+a.label);}

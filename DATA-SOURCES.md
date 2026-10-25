@@ -1,6 +1,6 @@
 # Councillion answer banks
 
-Snapshots: 21–23 October 2026. The catalog contains **3,188 visible categories**, most now optional specialists. The group-tryout policy admits **153** to ordinary Daily/Practice and **151** to Puffer, including **12 broad sports categories**. Those pools contain 1,014,632 and 1,014,590 canonical answer/category entries. Entries overlap and are not unique-concept counts. Source inventory size does not establish that a category is fun, complete or appropriate for random play. See `question-audit-report.json` for the structural scan and `QUESTION-TRYOUT.md` for the new feedback workflow.
+Current ordinary play: **227 individually admitted questions**, including all 98 Yes-voted tryout prompts. The production build checks 1,257 familiar exact answers and 137 wrong-answer boundaries. Sources and structural validity alone no longer admit content. See [QUESTION-STANDARD.md](QUESTION-STANDARD.md). The dated release notes below document historical counts and policies.
 
 | Subject | Visible catalog | Automatic mix | Puffer |
 | --- | ---: | ---: | ---: |

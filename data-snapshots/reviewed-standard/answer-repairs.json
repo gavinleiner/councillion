@@ -1,0 +1,2318 @@
+{
+  "version": 1,
+  "sources": [
+    "https://www.minecraft.net/en-us/article/meet-wolf",
+    "https://feedback.minecraft.net/hc/en-us/articles/360044911972-Minecraft-Java-Edition-Nether-Release",
+    "https://feedback.minecraft.net/hc/en-us/articles/360037384972-Minecraft-Java-Edition-Buzzy-Bees",
+    "https://www.pixar.com/feature-films/",
+    "https://www.pixar.com/finding-dory",
+    "https://www.dreamworks.com/movies",
+    "https://www.dreamworks.com/movies/the-bad-guys",
+    "https://www.disneystudioshelp.com/resources/Animated%20Features%20List.pdf",
+    "https://www.minecraft.net/en-us/article/play-mounts-of-mayhem-today",
+    "https://feedback.minecraft.net/hc/en-us/articles/41225349327117-Minecraft-Java-Edition-Snapshot-25w46a",
+    "https://www.pixar.com/hoppers",
+    "https://movies.disney.com/zootopia-2",
+    "https://www.dreamworks.com/movies/the-bad-guys-2",
+    "https://fantasy.premierleague.com/api/bootstrap-static/",
+    "https://www.fcbarcelona.com/en/football/first-team/players/129404/lamine-yamal",
+    "https://fcbayern.com/en/teams/first-team/michael-olise",
+    "https://video.disney.com/marvel",
+    "https://www.islandrecords.com/collections/vinyl-1/products/pink-pony-club-7-single",
+    "https://chappellroan.bandcamp.com/track/pink-pony-club",
+    "https://www.bmg.com/news/Doja-Cat-Walk-On-By-sample-Number-One.html",
+    "https://www.taylorswift.com/read-my-letter/"
+  ],
+  "questions": {
+    "group-q002": {
+      "add": [
+        [
+          "Halo 3",
+          30,
+          []
+        ],
+        [
+          "Cyberpunk 2077",
+          30,
+          []
+        ],
+        [
+          "The Simpsons Hit & Run",
+          30,
+          []
+        ],
+        [
+          "Halo Combat Evolved",
+          30,
+          []
+        ],
+        [
+          "Halo 2",
+          30,
+          []
+        ],
+        [
+          "Halo Reach",
+          30,
+          []
+        ],
+        [
+          "Halo 4",
+          30,
+          []
+        ],
+        [
+          "Halo 5 Guardians",
+          30,
+          []
+        ],
+        [
+          "Halo Infinite",
+          30,
+          []
+        ],
+        [
+          "Grand Theft Auto San Andreas",
+          30,
+          []
+        ],
+        [
+          "Grand Theft Auto Vice City",
+          30,
+          []
+        ],
+        [
+          "Watch Dogs",
+          30,
+          []
+        ],
+        [
+          "Watch Dogs 2",
+          30,
+          []
+        ],
+        [
+          "Watch Dogs Legion",
+          30,
+          []
+        ]
+      ]
+    },
+    "group-q004": {
+      "add": [
+        [
+          "Wii Sports",
+          30,
+          []
+        ],
+        [
+          "Wii Sports Resort",
+          30,
+          []
+        ],
+        [
+          "Super Smash Bros. Ultimate",
+          30,
+          []
+        ],
+        [
+          "Super Smash Bros. Melee",
+          30,
+          []
+        ],
+        [
+          "Super Smash Bros. Brawl",
+          30,
+          []
+        ],
+        [
+          "Super Mario 3D World",
+          30,
+          []
+        ],
+        [
+          "Super Mario Bros. Wonder",
+          30,
+          []
+        ],
+        [
+          "New Super Mario Bros. Wii",
+          30,
+          []
+        ],
+        [
+          "Nintendo Switch Sports",
+          30,
+          []
+        ],
+        [
+          "Mario Party Superstars",
+          30,
+          []
+        ],
+        [
+          "Super Mario Party",
+          30,
+          []
+        ],
+        [
+          "Mario Party 10",
+          30,
+          []
+        ],
+        [
+          "Mario Party 8",
+          30,
+          []
+        ],
+        [
+          "Mario Kart Wii",
+          30,
+          []
+        ],
+        [
+          "Mario Kart Double Dash",
+          30,
+          []
+        ],
+        [
+          "Mario Kart 64",
+          30,
+          []
+        ],
+        [
+          "Super Mario Kart",
+          30,
+          []
+        ],
+        [
+          "Nintendo Land",
+          30,
+          []
+        ],
+        [
+          "Wii Play",
+          30,
+          []
+        ],
+        [
+          "Wii Party",
+          30,
+          []
+        ],
+        [
+          "Splatoon",
+          30,
+          []
+        ],
+        [
+          "Arms",
+          30,
+          []
+        ]
+      ]
+    },
+    "group-q008": {
+      "aliases": {
+        "Flask of Crimson Tears": [
+          "Crimson Flask"
+        ]
+      }
+    },
+    "group-q011": {
+      "aliases": {
+        "Zombified Piglin": [
+          "Zombie Pigman",
+          "Pigman"
+        ]
+      },
+      "replace": [
+        [
+          "Blaze",
+          30,
+          []
+        ],
+        [
+          "Bogged",
+          30,
+          []
+        ],
+        [
+          "Breeze",
+          30,
+          []
+        ],
+        [
+          "Cave Spider",
+          30,
+          []
+        ],
+        [
+          "Creaking",
+          30,
+          []
+        ],
+        [
+          "Creeper",
+          30,
+          []
+        ],
+        [
+          "Drowned",
+          30,
+          []
+        ],
+        [
+          "Elder Guardian",
+          30,
+          []
+        ],
+        [
+          "Ender Dragon",
+          30,
+          []
+        ],
+        [
+          "Enderman",
+          30,
+          []
+        ],
+        [
+          "Endermite",
+          30,
+          []
+        ],
+        [
+          "Evoker",
+          30,
+          []
+        ],
+        [
+          "Ghast",
+          30,
+          []
+        ],
+        [
+          "Guardian",
+          30,
+          []
+        ],
+        [
+          "Hoglin",
+          30,
+          []
+        ],
+        [
+          "Husk",
+          30,
+          []
+        ],
+        [
+          "Magma Cube",
+          30,
+          []
+        ],
+        [
+          "Phantom",
+          30,
+          []
+        ],
+        [
+          "Piglin",
+          30,
+          []
+        ],
+        [
+          "Piglin Brute",
+          30,
+          []
+        ],
+        [
+          "Pillager",
+          30,
+          []
+        ],
+        [
+          "Ravager",
+          30,
+          []
+        ],
+        [
+          "Shulker",
+          30,
+          []
+        ],
+        [
+          "Silverfish",
+          30,
+          []
+        ],
+        [
+          "Skeleton",
+          30,
+          []
+        ],
+        [
+          "Slime",
+          30,
+          []
+        ],
+        [
+          "Spider",
+          30,
+          []
+        ],
+        [
+          "Stray",
+          30,
+          []
+        ],
+        [
+          "Vex",
+          30,
+          []
+        ],
+        [
+          "Vindicator",
+          30,
+          []
+        ],
+        [
+          "Warden",
+          30,
+          []
+        ],
+        [
+          "Witch",
+          30,
+          []
+        ],
+        [
+          "Wither",
+          30,
+          []
+        ],
+        [
+          "Wither Skeleton",
+          30,
+          []
+        ],
+        [
+          "Zoglin",
+          30,
+          []
+        ],
+        [
+          "Zombie",
+          30,
+          []
+        ],
+        [
+          "Zombie Villager",
+          30,
+          []
+        ],
+        [
+          "Zombified Piglin",
+          30,
+          []
+        ],
+        [
+          "Bee",
+          30,
+          []
+        ],
+        [
+          "Dolphin",
+          30,
+          []
+        ],
+        [
+          "Goat",
+          30,
+          []
+        ],
+        [
+          "Iron Golem",
+          30,
+          []
+        ],
+        [
+          "Llama",
+          30,
+          []
+        ],
+        [
+          "Trader Llama",
+          30,
+          []
+        ],
+        [
+          "Panda",
+          30,
+          []
+        ],
+        [
+          "Polar Bear",
+          30,
+          []
+        ],
+        [
+          "Pufferfish",
+          30,
+          []
+        ],
+        [
+          "Wolf",
+          30,
+          []
+        ],
+        [
+          "Parched",
+          60,
+          []
+        ],
+        [
+          "Nautilus",
+          60,
+          []
+        ],
+        [
+          "Zombie Nautilus",
+          60,
+          []
+        ],
+        [
+          "Fox",
+          60,
+          []
+        ]
+      ],
+      "metadata": {
+        "scope": "Hostile, neutral and defensive mobs that can attack a player count. Released vanilla Java or Bedrock gameplay; non-mob entities, command-only mobs and passive mounts do not count."
+      }
+    },
+    "group-q012": {
+      "merge": {
+        "Steak": [
+          "Cooked Beef"
+        ]
+      }
+    },
+    "group-q016": {
+      "add": [
+        [
+          "Drum Gun",
+          30,
+          []
+        ]
+      ]
+    },
+    "group-q017": {
+      "aliases": {
+        "Princess Daisy": [
+          "Daisy"
+        ]
+      }
+    },
+    "group-q019": {
+      "aliases": {
+        "Morgott The Grace-Given Veiled Monarch Omen King": [
+          "Morgott",
+          "Morgott the Omen King"
+        ],
+        "Hoarah Loux, Warrior": [
+          "Hoarah Loux"
+        ]
+      }
+    },
+    "group-q033": {
+      "add": [
+        [
+          "The Dark Knight",
+          30,
+          []
+        ],
+        [
+          "Batman Begins",
+          30,
+          []
+        ],
+        [
+          "The Dark Knight Rises",
+          30,
+          []
+        ],
+        [
+          "Captain America The Winter Soldier",
+          30,
+          []
+        ],
+        [
+          "Captain America Civil War",
+          30,
+          []
+        ],
+        [
+          "Spider-Man Far From Home",
+          30,
+          []
+        ],
+        [
+          "Spider-Man No Way Home",
+          30,
+          []
+        ],
+        [
+          "Top Gun Maverick",
+          30,
+          []
+        ],
+        [
+          "The Empire Strikes Back",
+          30,
+          []
+        ],
+        [
+          "Return of the Jedi",
+          30,
+          []
+        ],
+        [
+          "Indiana Jones and the Last Crusade",
+          30,
+          []
+        ],
+        [
+          "Indiana Jones and the Temple of Doom",
+          30,
+          []
+        ],
+        [
+          "Paddington 2",
+          30,
+          []
+        ],
+        [
+          "The Godfather Part II",
+          30,
+          []
+        ],
+        [
+          "The Godfather Part III",
+          30,
+          []
+        ],
+        [
+          "The Hunger Games Catching Fire",
+          30,
+          []
+        ],
+        [
+          "Frozen II",
+          30,
+          []
+        ],
+        [
+          "Moana 2",
+          30,
+          []
+        ],
+        [
+          "Kung Fu Panda 4",
+          30,
+          []
+        ],
+        [
+          "A Quiet Place Part II",
+          30,
+          []
+        ],
+        [
+          "Sonic the Hedgehog 3",
+          30,
+          []
+        ],
+        [
+          "Sonic the Hedgehog 2",
+          30,
+          []
+        ],
+        [
+          "Zootopia 2",
+          30,
+          []
+        ],
+        [
+          "The Bad Guys 2",
+          30,
+          []
+        ]
+      ]
+    },
+    "group-q036": {
+      "aliases": {
+        "Puss in Boots The Last Wish": [
+          "Puss in Boots: The Last Wish"
+        ],
+        "One Hundred and One Dalmatians": [
+          "101 Dalmatians"
+        ],
+        "The Lion King 1 1/2": [
+          "The Lion King 1½"
+        ],
+        "Shrek Forever After": [
+          "Shrek 4"
+        ],
+        "Madagascar Escape 2 Africa": [
+          "Madagascar 2"
+        ],
+        "Madagascar 3 Europe's Most Wanted": [
+          "Madagascar 3"
+        ],
+        "The Lion King II Simba's Pride": [
+          "The Lion King 2"
+        ]
+      },
+      "replace": [
+        [
+          "Finding Nemo",
+          10,
+          []
+        ],
+        [
+          "Finding Dory",
+          10,
+          []
+        ],
+        [
+          "Ratatouille",
+          10,
+          []
+        ],
+        [
+          "A Bug's Life",
+          30,
+          []
+        ],
+        [
+          "The Good Dinosaur",
+          30,
+          []
+        ],
+        [
+          "Turning Red",
+          30,
+          []
+        ],
+        [
+          "Up",
+          30,
+          []
+        ],
+        [
+          "Shrek",
+          10,
+          []
+        ],
+        [
+          "Shrek 2",
+          10,
+          []
+        ],
+        [
+          "Shrek the Third",
+          30,
+          []
+        ],
+        [
+          "Shrek Forever After",
+          30,
+          []
+        ],
+        [
+          "Puss in Boots",
+          30,
+          []
+        ],
+        [
+          "Puss in Boots The Last Wish",
+          30,
+          []
+        ],
+        [
+          "The Bad Guys",
+          30,
+          []
+        ],
+        [
+          "Madagascar",
+          10,
+          []
+        ],
+        [
+          "Madagascar Escape 2 Africa",
+          30,
+          []
+        ],
+        [
+          "Madagascar 3 Europe's Most Wanted",
+          30,
+          []
+        ],
+        [
+          "Penguins of Madagascar",
+          30,
+          []
+        ],
+        [
+          "Kung Fu Panda",
+          10,
+          []
+        ],
+        [
+          "Kung Fu Panda 2",
+          30,
+          []
+        ],
+        [
+          "Kung Fu Panda 3",
+          30,
+          []
+        ],
+        [
+          "Kung Fu Panda 4",
+          30,
+          []
+        ],
+        [
+          "Over the Hedge",
+          30,
+          []
+        ],
+        [
+          "Bee Movie",
+          30,
+          []
+        ],
+        [
+          "Antz",
+          30,
+          []
+        ],
+        [
+          "Shark Tale",
+          30,
+          []
+        ],
+        [
+          "Flushed Away",
+          30,
+          []
+        ],
+        [
+          "The Wild Robot",
+          30,
+          []
+        ],
+        [
+          "The Secret Life of Pets",
+          30,
+          []
+        ],
+        [
+          "The Secret Life of Pets 2",
+          30,
+          []
+        ],
+        [
+          "Sing",
+          30,
+          []
+        ],
+        [
+          "Sing 2",
+          30,
+          []
+        ],
+        [
+          "The Lorax",
+          30,
+          []
+        ],
+        [
+          "Hop",
+          30,
+          []
+        ],
+        [
+          "Migration",
+          30,
+          []
+        ],
+        [
+          "Bambi",
+          30,
+          []
+        ],
+        [
+          "Bambi II",
+          30,
+          []
+        ],
+        [
+          "Dumbo",
+          30,
+          []
+        ],
+        [
+          "Robin Hood",
+          30,
+          []
+        ],
+        [
+          "The Lion King",
+          10,
+          []
+        ],
+        [
+          "The Lion King II Simba's Pride",
+          30,
+          []
+        ],
+        [
+          "The Lion King 1 1/2",
+          30,
+          []
+        ],
+        [
+          "The Jungle Book",
+          30,
+          []
+        ],
+        [
+          "The Jungle Book 2",
+          30,
+          []
+        ],
+        [
+          "Lady and the Tramp",
+          30,
+          []
+        ],
+        [
+          "Lady and the Tramp II Scamp's Adventure",
+          30,
+          []
+        ],
+        [
+          "One Hundred and One Dalmatians",
+          30,
+          []
+        ],
+        [
+          "101 Dalmatians II Patch's London Adventure",
+          30,
+          []
+        ],
+        [
+          "The Aristocats",
+          30,
+          []
+        ],
+        [
+          "The Fox and the Hound",
+          30,
+          []
+        ],
+        [
+          "The Fox and the Hound 2",
+          30,
+          []
+        ],
+        [
+          "The Rescuers",
+          30,
+          []
+        ],
+        [
+          "The Rescuers Down Under",
+          30,
+          []
+        ],
+        [
+          "The Great Mouse Detective",
+          30,
+          []
+        ],
+        [
+          "Oliver & Company",
+          30,
+          []
+        ],
+        [
+          "The Little Mermaid",
+          30,
+          []
+        ],
+        [
+          "The Little Mermaid II Return to the Sea",
+          30,
+          []
+        ],
+        [
+          "The Little Mermaid Ariel's Beginning",
+          30,
+          []
+        ],
+        [
+          "Aladdin",
+          30,
+          []
+        ],
+        [
+          "Aladdin and the King of Thieves",
+          30,
+          []
+        ],
+        [
+          "The Return of Jafar",
+          30,
+          []
+        ],
+        [
+          "Mulan",
+          30,
+          []
+        ],
+        [
+          "The Emperor's New Groove",
+          30,
+          []
+        ],
+        [
+          "Kronk's New Groove",
+          30,
+          []
+        ],
+        [
+          "Brother Bear",
+          30,
+          []
+        ],
+        [
+          "Brother Bear 2",
+          30,
+          []
+        ],
+        [
+          "Home on the Range",
+          30,
+          []
+        ],
+        [
+          "Chicken Little",
+          30,
+          []
+        ],
+        [
+          "Bolt",
+          30,
+          []
+        ],
+        [
+          "Zootopia",
+          10,
+          []
+        ],
+        [
+          "The Many Adventures of Winnie the Pooh",
+          30,
+          []
+        ],
+        [
+          "Winnie the Pooh",
+          30,
+          []
+        ],
+        [
+          "The Tigger Movie",
+          30,
+          []
+        ],
+        [
+          "Piglet's Big Movie",
+          30,
+          []
+        ],
+        [
+          "Pooh's Heffalump Movie",
+          30,
+          []
+        ],
+        [
+          "Winnie the Pooh A Very Merry Pooh Year",
+          30,
+          []
+        ],
+        [
+          "Winnie the Pooh Springtime with Roo",
+          30,
+          []
+        ],
+        [
+          "Winnie the Pooh A Valentine for You",
+          30,
+          []
+        ],
+        [
+          "Winnie the Pooh Seasons of Giving",
+          30,
+          []
+        ],
+        [
+          "The SpongeBob SquarePants Movie",
+          30,
+          []
+        ],
+        [
+          "The SpongeBob Movie Sponge Out of Water",
+          30,
+          []
+        ],
+        [
+          "The SpongeBob Movie Sponge on the Run",
+          30,
+          []
+        ],
+        [
+          "Ice Age",
+          10,
+          []
+        ],
+        [
+          "Ice Age The Meltdown",
+          30,
+          []
+        ],
+        [
+          "Ice Age Dawn of the Dinosaurs",
+          30,
+          []
+        ],
+        [
+          "Ice Age Continental Drift",
+          30,
+          []
+        ],
+        [
+          "Ice Age Collision Course",
+          30,
+          []
+        ],
+        [
+          "The Ice Age Adventures of Buck Wild",
+          30,
+          []
+        ],
+        [
+          "Rio",
+          30,
+          []
+        ],
+        [
+          "Rio 2",
+          30,
+          []
+        ],
+        [
+          "Ferdinand",
+          30,
+          []
+        ],
+        [
+          "Horton Hears a Who",
+          30,
+          []
+        ],
+        [
+          "Open Season",
+          30,
+          []
+        ],
+        [
+          "Open Season 2",
+          30,
+          []
+        ],
+        [
+          "Open Season 3",
+          30,
+          []
+        ],
+        [
+          "Open Season Scared Silly",
+          30,
+          []
+        ],
+        [
+          "Surf's Up",
+          30,
+          []
+        ],
+        [
+          "Surf's Up 2 WaveMania",
+          30,
+          []
+        ],
+        [
+          "Stuart Little 3 Call of the Wild",
+          30,
+          []
+        ],
+        [
+          "Cloudy with a Chance of Meatballs 2",
+          30,
+          []
+        ],
+        [
+          "Hotel Transylvania",
+          30,
+          []
+        ],
+        [
+          "Hotel Transylvania 2",
+          30,
+          []
+        ],
+        [
+          "Hotel Transylvania 3 Summer Vacation",
+          30,
+          []
+        ],
+        [
+          "Hotel Transylvania Transformania",
+          30,
+          []
+        ],
+        [
+          "DC League of Super-Pets",
+          30,
+          []
+        ],
+        [
+          "Happy Feet",
+          30,
+          []
+        ],
+        [
+          "Happy Feet Two",
+          30,
+          []
+        ],
+        [
+          "Legend of the Guardians The Owls of Ga'Hoole",
+          30,
+          []
+        ],
+        [
+          "Rango",
+          30,
+          []
+        ],
+        [
+          "The Ant Bully",
+          30,
+          []
+        ],
+        [
+          "Space Jam",
+          30,
+          []
+        ],
+        [
+          "Space Jam A New Legacy",
+          30,
+          []
+        ],
+        [
+          "The Day the Earth Blew Up A Looney Tunes Movie",
+          30,
+          []
+        ],
+        [
+          "The Angry Birds Movie",
+          30,
+          []
+        ]
+      ],
+      "add": [
+        [
+          "The Angry Birds Movie 2",
+          30,
+          []
+        ],
+        [
+          "Fantastic Mr. Fox",
+          30,
+          []
+        ],
+        [
+          "Isle of Dogs",
+          60,
+          []
+        ],
+        [
+          "Cats Don't Dance",
+          60,
+          []
+        ],
+        [
+          "An American Tail",
+          30,
+          []
+        ],
+        [
+          "An American Tail Fievel Goes West",
+          60,
+          []
+        ],
+        [
+          "The Secret of NIMH",
+          60,
+          []
+        ],
+        [
+          "All Dogs Go to Heaven",
+          60,
+          []
+        ],
+        [
+          "The Land Before Time",
+          30,
+          []
+        ],
+        [
+          "Charlotte's Web",
+          30,
+          []
+        ],
+        [
+          "The Princess and the Frog",
+          30,
+          []
+        ],
+        [
+          "Even Mice Belong in Heaven",
+          85,
+          []
+        ],
+        [
+          "The Fearless Four",
+          100,
+          []
+        ],
+        [
+          "Balto",
+          60,
+          []
+        ],
+        [
+          "The Cat Returns",
+          60,
+          []
+        ],
+        [
+          "The Land Before Time II The Great Valley Adventure",
+          60,
+          []
+        ],
+        [
+          "Zootopia 2",
+          30,
+          []
+        ],
+        [
+          "Hoppers",
+          30,
+          []
+        ],
+        [
+          "The Bad Guys 2",
+          30,
+          []
+        ],
+        [
+          "3 al Rescate",
+          85,
+          []
+        ],
+        [
+          "Barbie & Chelsea The Lost Birthday",
+          85,
+          []
+        ],
+        [
+          "Dogtanian and the Three Muskehounds",
+          85,
+          []
+        ],
+        [
+          "Dogtanian One for All and All for One",
+          85,
+          []
+        ],
+        [
+          "Dogtanian Special",
+          85,
+          []
+        ],
+        [
+          "Get a Horse",
+          85,
+          []
+        ],
+        [
+          "Gracie & Pedro Pets to the Rescue",
+          85,
+          []
+        ],
+        [
+          "Joshua and the Promised Land",
+          85,
+          []
+        ],
+        [
+          "Lackadaisy",
+          85,
+          []
+        ],
+        [
+          "Madly Madagascar",
+          85,
+          []
+        ],
+        [
+          "Merry Madagascar",
+          85,
+          []
+        ],
+        [
+          "Riverdance The Animated Adventure",
+          85,
+          []
+        ],
+        [
+          "Teenage Mutant Ninja Turtles Mutant Mayhem",
+          85,
+          []
+        ],
+        [
+          "The Jungle Bunch The Movie",
+          85,
+          []
+        ],
+        [
+          "The Madagascar Penguins in a Christmas Caper",
+          85,
+          []
+        ],
+        [
+          "Thumbelina",
+          85,
+          []
+        ],
+        [
+          "TMNT",
+          85,
+          []
+        ],
+        [
+          "We Bare Bears The Movie",
+          85,
+          []
+        ],
+        [
+          "What's Buzzin' Buzzard",
+          85,
+          []
+        ],
+        [
+          "Looney Tunes Back in Action",
+          85,
+          []
+        ]
+      ],
+      "metadata": {
+        "scope": "Animated features and shorts with at least one speaking animal character count, including hybrids with animation. Dialogue through a translation device counts; silent animal sidekicks alone do not."
+      }
+    },
+    "group-q040": {
+      "add": [
+        [
+          "Darth Vader",
+          30,
+          []
+        ],
+        [
+          "Luke Skywalker",
+          30,
+          []
+        ],
+        [
+          "Yoda",
+          30,
+          []
+        ],
+        [
+          "Obi-Wan Kenobi",
+          30,
+          []
+        ],
+        [
+          "Rey",
+          30,
+          []
+        ],
+        [
+          "Palpatine",
+          30,
+          []
+        ],
+        [
+          "Darth Maul",
+          30,
+          []
+        ],
+        [
+          "Ahsoka Tano",
+          30,
+          []
+        ]
+      ]
+    },
+    "group-q042": {
+      "aliases": {
+        "SpongeBob SquarePants": [
+          "SpongeBob"
+        ]
+      },
+      "add": [
+        [
+          "Judy Hopps",
+          30,
+          []
+        ],
+        [
+          "Nick Wilde",
+          30,
+          []
+        ],
+        [
+          "Gary De’Snake",
+          30,
+          []
+        ],
+        [
+          "Mr. Wolf",
+          30,
+          []
+        ],
+        [
+          "Mr. Snake",
+          30,
+          []
+        ],
+        [
+          "Mr. Shark",
+          30,
+          []
+        ],
+        [
+          "Mr. Piranha",
+          30,
+          []
+        ],
+        [
+          "King George",
+          30,
+          []
+        ]
+      ]
+    },
+    "group-q044": {
+      "add": [
+        [
+          "Hawk Moth",
+          30,
+          []
+        ],
+        [
+          "Scarlet Moth",
+          30,
+          []
+        ],
+        [
+          "Shadow Moth",
+          30,
+          []
+        ],
+        [
+          "Monarch",
+          30,
+          []
+        ]
+      ],
+      "merge": {
+        "Hawk Moth": [
+          "Scarlet Moth",
+          "Shadow Moth",
+          "Monarch"
+        ]
+      }
+    },
+    "group-q047": {
+      "add": [
+        [
+          "Betty",
+          30,
+          []
+        ],
+        [
+          "The Fate of Ophelia",
+          30,
+          []
+        ],
+        [
+          "Houdini",
+          30,
+          []
+        ]
+      ]
+    },
+    "group-q057": {
+      "aliases": {
+        "Mushrooms": [
+          "Mushroom"
+        ],
+        "Olives": [
+          "Olive"
+        ],
+        "Jalapenos": [
+          "Jalapeno"
+        ],
+        "Anchovies": [
+          "Anchovy"
+        ]
+      }
+    },
+    "group-q072": {
+      "aliases": {
+        "Hippopotamus": [
+          "Hippo"
+        ]
+      }
+    },
+    "group-q073": {
+      "add": [
+        [
+          "Tiger Shark",
+          30,
+          []
+        ]
+      ],
+      "aliases": {
+        "Tiger Shark": [
+          "Galeocerdo cuvier"
+        ]
+      }
+    },
+    "group-q081": {
+      "aliases": {
+        "Electric fan": [
+          "Fan"
+        ]
+      }
+    },
+    "group-q083": {
+      "aliases": {
+        "Tropical cyclone": [
+          "Hurricane",
+          "Typhoon"
+        ]
+      },
+      "add": [
+        [
+          "Tropical Cyclone",
+          10,
+          []
+        ],
+        [
+          "Cyclone",
+          30,
+          []
+        ]
+      ]
+    },
+    "group-q089": {
+      "add": [
+        [
+          "Busch Gardens",
+          30,
+          []
+        ]
+      ]
+    },
+    "group-steam-open-world": {
+      "aliases": {
+        "The Elder Scrolls V: Skyrim": [
+          "Skyrim"
+        ]
+      },
+      "removeAliases": [
+        "GTA V",
+        "GTA 5",
+        "Civ VI"
+      ]
+    },
+    "group-steam-tower-defense": {
+      "aliases": {
+        "Plants vs. Zombies GOTY Edition": [
+          "Plants vs. Zombies"
+        ]
+      }
+    },
+    "var-semantic-sports_equipment-n-01": {
+      "add": [
+        [
+          "Tennis Racket",
+          30,
+          []
+        ]
+      ],
+      "aliases": {
+        "Tennis Racket": [
+          "Tennis Racquet"
+        ]
+      }
+    },
+    "fun-film-horror": {
+      "add": [
+        [
+          "Halloween",
+          30,
+          []
+        ]
+      ]
+    },
+    "group-show-genre-mystery": {
+      "add": [
+        [
+          "Stranger Things",
+          30,
+          []
+        ],
+        [
+          "Lost",
+          30,
+          []
+        ]
+      ]
+    },
+    "seasonings": {
+      "aliases": {
+        "Black Peppercorn": [
+          "Black Pepper"
+        ]
+      },
+      "metadata": {
+        "prompt": "Name a seasoning, including herbs, spices and named spice blends."
+      }
+    },
+    "sandwiches": {
+      "add": [
+        [
+          "Grilled Cheese",
+          30,
+          []
+        ]
+      ],
+      "aliases": {
+        "Grilled Cheese": [
+          "Grilled Cheese Sandwich"
+        ]
+      }
+    },
+    "catalog-snacks": {
+      "add": [
+        [
+          "Pretzel",
+          30,
+          []
+        ]
+      ],
+      "aliases": {
+        "Pretzel": [
+          "Pretzels"
+        ]
+      }
+    },
+    "distinct-kind-cut-n-06": {
+      "add": [
+        [
+          "Ribeye",
+          30,
+          []
+        ]
+      ],
+      "aliases": {
+        "Ribeye": [
+          "Rib-eye",
+          "Ribeye Steak"
+        ]
+      }
+    },
+    "distinct-kind-edible-fat-n-01": {
+      "add": [
+        [
+          "Butter",
+          30,
+          []
+        ],
+        [
+          "Margarine",
+          30,
+          []
+        ],
+        [
+          "Coconut Oil",
+          30,
+          []
+        ],
+        [
+          "Shortening",
+          30,
+          []
+        ],
+        [
+          "Ghee",
+          30,
+          []
+        ]
+      ]
+    },
+    "cat-breeds": {
+      "add": [
+        [
+          "Persian",
+          30,
+          []
+        ]
+      ]
+    },
+    "var-semantic-domestic_animal-n-01": {
+      "add": [
+        [
+          "Horse",
+          30,
+          []
+        ],
+        [
+          "Cow",
+          30,
+          []
+        ],
+        [
+          "Sheep",
+          30,
+          []
+        ],
+        [
+          "Goat",
+          30,
+          []
+        ],
+        [
+          "Pig",
+          30,
+          []
+        ]
+      ],
+      "aliases": {
+        "domestic cat": [
+          "Cat"
+        ]
+      }
+    },
+    "distinct-facts-pollinators": {
+      "add": [
+        [
+          "Bee",
+          30,
+          []
+        ]
+      ]
+    },
+    "distinct-kind-building-material-n-01": {
+      "add": [
+        [
+          "Wood",
+          30,
+          []
+        ],
+        [
+          "Timber",
+          30,
+          []
+        ],
+        [
+          "Brick",
+          30,
+          []
+        ],
+        [
+          "Concrete",
+          30,
+          []
+        ],
+        [
+          "Steel",
+          30,
+          []
+        ],
+        [
+          "Glass",
+          30,
+          []
+        ]
+      ]
+    },
+    "distinct-kind-fuel-n-01": {
+      "aliases": {
+        "diesel oil": [
+          "Diesel"
+        ]
+      }
+    },
+    "household-appliances": {
+      "aliases": {
+        "microwave oven": [
+          "Microwave"
+        ]
+      }
+    },
+    "var-semantic-bag-n-01": {
+      "add": [
+        [
+          "Handbag",
+          30,
+          []
+        ],
+        [
+          "Suitcase",
+          30,
+          []
+        ],
+        [
+          "Tote Bag",
+          30,
+          []
+        ],
+        [
+          "Duffle Bag",
+          30,
+          []
+        ]
+      ],
+      "aliases": {
+        "Duffle Bag": [
+          "Duffel Bag"
+        ]
+      },
+      "points": {
+        "sporran": 100,
+        "backpack": 10,
+        "Handbag": 10,
+        "Suitcase": 30
+      }
+    },
+    "var-semantic-shop-n-01": {
+      "add": [
+        [
+          "Supermarket",
+          30,
+          []
+        ],
+        [
+          "Grocery Store",
+          30,
+          []
+        ],
+        [
+          "Bookshop",
+          30,
+          []
+        ],
+        [
+          "Department Store",
+          30,
+          []
+        ],
+        [
+          "Convenience Store",
+          30,
+          []
+        ]
+      ]
+    },
+    "distinct-kind-gesture-n-02": {
+      "add": [
+        [
+          "Thumbs Up",
+          30,
+          []
+        ],
+        [
+          "Handshake",
+          30,
+          []
+        ],
+        [
+          "High Five",
+          30,
+          []
+        ],
+        [
+          "Fist Bump",
+          30,
+          []
+        ]
+      ]
+    },
+    "distinct-kind-social-event-n-01": {
+      "add": [
+        [
+          "Picnic",
+          30,
+          []
+        ],
+        [
+          "Birthday Party",
+          30,
+          []
+        ],
+        [
+          "Family Reunion",
+          30,
+          []
+        ],
+        [
+          "Sleepover",
+          30,
+          []
+        ],
+        [
+          "Barbecue",
+          30,
+          []
+        ]
+      ]
+    },
+    "group-q029": {
+      "remove": [
+        "Buffalo Sabres"
+      ],
+      "metadata": {
+        "scope": "The team nickname must name an animal or animal group. A city name alone, such as Buffalo, does not count."
+      }
+    },
+    "group-q077": {
+      "remove": [
+        "mushroom",
+        "herbs and spice",
+        "tubers"
+      ],
+      "merge": {
+        "eggplant": [
+          "aubergine"
+        ],
+        "zucchini": [
+          "courgette"
+        ],
+        "Lentil": [
+          "lentils"
+        ],
+        "jerusalem artichoke": [
+          "topinambur"
+        ],
+        "Coriander": [
+          "cilantro"
+        ]
+      },
+      "aliases": {
+        "corn": [
+          "Maize"
+        ],
+        "broad beans": [
+          "Fava Bean",
+          "Fava Beans"
+        ]
+      }
+    },
+    "group-steam-action": {
+      "removeAliases": [
+        "GTA V",
+        "GTA 5",
+        "Civ VI"
+      ]
+    },
+    "group-steam-adventure": {
+      "removeAliases": [
+        "GTA V",
+        "GTA 5",
+        "Civ VI"
+      ]
+    },
+    "group-steam-multiplayer": {
+      "removeAliases": [
+        "GTA V",
+        "GTA 5",
+        "Civ VI"
+      ]
+    },
+    "group-steam-racing": {
+      "removeAliases": [
+        "GTA V",
+        "GTA 5",
+        "Civ VI"
+      ]
+    },
+    "group-steam-sandbox": {
+      "removeAliases": [
+        "GTA V",
+        "GTA 5",
+        "Civ VI"
+      ]
+    },
+    "group-steam-rpg": {
+      "removeAliases": [
+        "GTA V",
+        "GTA 5",
+        "Civ VI"
+      ]
+    },
+    "group-steam-co-op": {
+      "removeAliases": [
+        "GTA V",
+        "GTA 5",
+        "Civ VI"
+      ]
+    },
+    "group-steam-strategy": {
+      "removeAliases": [
+        "GTA V",
+        "GTA 5",
+        "Civ VI"
+      ]
+    },
+    "group-steam-building": {
+      "removeAliases": [
+        "GTA V",
+        "GTA 5",
+        "Civ VI"
+      ]
+    },
+    "group-movie-genre-animation": {
+      "add": [
+        [
+          "Zootopia 2",
+          30,
+          []
+        ],
+        [
+          "Hoppers",
+          30,
+          []
+        ],
+        [
+          "The Bad Guys 2",
+          30,
+          []
+        ]
+      ]
+    },
+    "fun-film-comedy": {
+      "add": [
+        [
+          "Zootopia 2",
+          30,
+          []
+        ],
+        [
+          "Hoppers",
+          30,
+          []
+        ],
+        [
+          "The Bad Guys 2",
+          30,
+          []
+        ]
+      ]
+    },
+    "group-q022": {
+      "add": [
+        [
+          "Lamine Yamal",
+          10,
+          []
+        ],
+        [
+          "Michael Olise",
+          10,
+          []
+        ]
+      ],
+      "merge": {
+        "Bruno Fernandes": [
+          "Bruno Borges Fernandes"
+        ]
+      },
+      "points": {
+        "Erling Haaland": 10,
+        "Cole Palmer": 10,
+        "Lamine Yamal": 10
+      },
+      "aliases": {
+        "Lamine Yamal": [
+          "Yamal"
+        ],
+        "Michael Olise": [
+          "Olise"
+        ]
+      }
+    },
+    "group-q037": {
+      "add": [
+        [
+          "The Fantastic Four: First Steps",
+          30,
+          []
+        ],
+        [
+          "Thunderbolts*",
+          30,
+          []
+        ]
+      ]
+    },
+    "group-q048": {
+      "add": [
+        [
+          "Pink Pony Club",
+          10,
+          []
+        ],
+        [
+          "Red Wine Supernova",
+          30,
+          []
+        ],
+        [
+          "Paint the Town Red",
+          10,
+          []
+        ]
+      ]
+    },
+    "group-q001": {
+      "add": [
+        [
+          "Super Mario Kart",
+          30,
+          []
+        ],
+        [
+          "Mario Kart 64",
+          30,
+          []
+        ],
+        [
+          "Mario Kart Super Circuit",
+          30,
+          []
+        ],
+        [
+          "Mario Kart Double Dash",
+          30,
+          []
+        ],
+        [
+          "Mario Kart DS",
+          30,
+          []
+        ],
+        [
+          "Mario Kart Wii",
+          30,
+          []
+        ],
+        [
+          "Mario Kart 7",
+          30,
+          []
+        ],
+        [
+          "Mario Kart 8",
+          30,
+          []
+        ],
+        [
+          "Mario Kart 8 Deluxe",
+          30,
+          []
+        ],
+        [
+          "Mario Kart Tour",
+          30,
+          []
+        ],
+        [
+          "Mario Kart World",
+          30,
+          []
+        ],
+        [
+          "Super Smash Bros.",
+          30,
+          []
+        ],
+        [
+          "Super Smash Bros. Melee",
+          30,
+          []
+        ],
+        [
+          "Super Smash Bros. Brawl",
+          30,
+          []
+        ],
+        [
+          "Super Smash Bros. for Nintendo 3DS",
+          30,
+          []
+        ],
+        [
+          "Super Smash Bros. for Wii U",
+          30,
+          []
+        ],
+        [
+          "Super Smash Bros. Ultimate",
+          30,
+          []
+        ]
+      ]
+    }
+  }
+}

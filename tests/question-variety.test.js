@@ -9,7 +9,7 @@ const family=id=>PACK_BY_ID.get(id).family;
 const steam=id=>PACK_BY_ID.get(id).predicate?.kind==='steam-tag';
 
 test('normal games keep every approved prompt and exclude all multiple-label Steam prompts',()=>{
- assert.equal(GROUP_PACKS.length,5000);assert.ok(MIXED_PACKS.length>300&&MIXED_PACKS.length<5000);
+ assert.equal(GROUP_PACKS.length,5000);assert.equal(MIXED_PACKS.length,227);
  assert.deepEqual(PARTY_PACKS,MIXED_PACKS);
  const approved=GROUP_PACKS.filter(p=>p.reviewId);assert.equal(approved.length,98);
  for(const p of approved)assert.ok(MIXED_PACKS.includes(p),p.id);
@@ -43,8 +43,8 @@ test('Practice uses the same balanced random draw and filters two-tag saved queu
  const party=partyDeck(random(42)),practice=practiceDraw([],null,random(42));assert.deepEqual([...practice.ids,...practice.remaining],party);
  const pending=MIXED_PACKS.slice(30,400).map(p=>p.id),retired=GROUP_PACKS.filter(p=>p.predicate?.kind==='steam-tags').slice(0,10).map(p=>p.id),migrated=reshufflePracticeQueue([...retired,...pending],random(7));assert.deepEqual(new Set(migrated),new Set(pending));assert.equal(new Set(migrated).size,pending.length);
  const next=practiceDraw(practice.remaining,null,random(9));assert.deepEqual(next.ids,party.slice(7,14));assert.ok(!next.ids.some(id=>practice.ids.includes(id)));
- const additions=MIXED_PACKS.filter(p=>p.id.startsWith('group-open-')).map(p=>p.id),legacyPending=MIXED_PACKS.filter(p=>!additions.includes(p.id)).slice(20,30).map(p=>p.id);
- const updated=reshufflePracticeQueue(legacyPending,random(8),'20261023-balanced-v1');assert.deepEqual(new Set(updated),new Set([...legacyPending,...additions,...MIXED_PACKS.filter(p=>p.editorialVersion===1).map(p=>p.id)]));assert.ok(additions.length>0);
+ const kept=MIXED_PACKS.slice(20,30).map(p=>p.id);
+ const updated=reshufflePracticeQueue([...retired,...kept],random(8),'20261023-balanced-v1');assert.deepEqual(new Set(updated),new Set(kept));
 });
 
 test('old rooms refresh their future deck once, preserving valid active questions and hearts',()=>{
@@ -60,7 +60,7 @@ test('old rooms refresh their future deck once, preserving valid active question
 
 test('the repaired shared Daily has seven different subjects each day, with no repeated IDs or hidden cycling',()=>{
  const schedule=JSON.parse(readFileSync(new URL('../daily-schedule.json',import.meta.url)));
- const revision=schedule.revisions.findLast(r=>r.from==='2026-10-25');assert.ok(revision);assert.equal(revision.selection,'20261025-variety-v1');
+ const revision=schedule.revisions.findLast(r=>r.from==='2026-10-25');assert.ok(revision);assert.equal(revision.selection,QUESTION_SELECTION_BUILD);
  const published=JSON.parse(readFileSync(new URL('../data-snapshots/group/published-20261023-24.json',import.meta.url)));assert.deepEqual(schedule.ids.slice(0,14),published);
  assert.equal(new Set(schedule.ids).size,schedule.ids.length);assert.equal(schedule.ids.length%7,0);assert.ok(schedule.ids.length>=21*7);
  for(let i=14;i<schedule.ids.length;i+=7){const day=new Date(Date.UTC(2026,9,23+i/7)).toISOString().slice(0,10),draw=dailyPacks(day);assert.equal(draw.length,7);assert.equal(new Set(draw.map(p=>p.family)).size,7,day);assert.ok(draw.every(p=>MIXED_PACKS.includes(p)));assert.ok(draw.filter(p=>steam(p.id)).length<=1);assert.deepEqual(draw,dailyPacks(day));}

@@ -1,3 +1,5 @@
+> Superseded by `20261025-reviewed-standard-v1`: **227 questions** are individually admitted for normal play. The source inventories described below remain archived/optional. See [QUESTION-STANDARD.md](QUESTION-STANDARD.md) for the correction and independent answer checks.
+
 # Question pool and variety
 
 Current release: `20261025-expansion-v1`. The first additional batch grows normal play from 419 to **1,009 questions**, with new topics in all nine subjects. The 5,000-question target is unfinished. All 98 user-approved prompts remain, and the old generated 5,000-entry archive is separate from admission to random games.

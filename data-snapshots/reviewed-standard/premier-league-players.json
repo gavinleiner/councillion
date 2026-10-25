@@ -1,0 +1,3164 @@
+{
+  "source": "https://fantasy.premierleague.com/api/bootstrap-static/",
+  "retrievedAt": "2026-10-25",
+  "boundary": "Only registered players with recorded first-team league playing minutes in the returned season. Historical career facts, not a claim of current transfers.",
+  "players": [
+    {
+      "id": 1,
+      "first": "David",
+      "last": "Raya Martín",
+      "display": "Raya",
+      "minutes": 720
+    },
+    {
+      "id": 4,
+      "first": "Gabriel",
+      "last": "dos Santos Magalhães",
+      "display": "Gabriel",
+      "minutes": 720
+    },
+    {
+      "id": 5,
+      "first": "Jurriën",
+      "last": "Timber",
+      "display": "J.Timber",
+      "minutes": 155
+    },
+    {
+      "id": 7,
+      "first": "Myles",
+      "last": "Lewis-Skelly",
+      "display": "Lewis-Skelly",
+      "minutes": 400
+    },
+    {
+      "id": 8,
+      "first": "Riccardo",
+      "last": "Calafiori",
+      "display": "Calafiori",
+      "minutes": 609
+    },
+    {
+      "id": 9,
+      "first": "Piero",
+      "last": "Hincapié",
+      "display": "Hincapie",
+      "minutes": 40
+    },
+    {
+      "id": 10,
+      "first": "Benjamin",
+      "last": "White",
+      "display": "White",
+      "minutes": 532
+    },
+    {
+      "id": 11,
+      "first": "Cristhian",
+      "last": "Mosquera",
+      "display": "Mosquera",
+      "minutes": 168
+    },
+    {
+      "id": 12,
+      "first": "Bukayo",
+      "last": "Saka",
+      "display": "Saka",
+      "minutes": 596
+    },
+    {
+      "id": 13,
+      "first": "Declan",
+      "last": "Rice",
+      "display": "Rice",
+      "minutes": 670
+    },
+    {
+      "id": 14,
+      "first": "Eberechi",
+      "last": "Eze",
+      "display": "Eze",
+      "minutes": 209
+    },
+    {
+      "id": 15,
+      "first": "Martin",
+      "last": "Ødegaard",
+      "display": "Ødegaard",
+      "minutes": 646
+    },
+    {
+      "id": 16,
+      "first": "Noni",
+      "last": "Madueke",
+      "display": "Madueke",
+      "minutes": 248
+    },
+    {
+      "id": 17,
+      "first": "Mikel",
+      "last": "Merino Zazón",
+      "display": "Merino",
+      "minutes": 173
+    },
+    {
+      "id": 19,
+      "first": "Martín",
+      "last": "Zubimendi Ibáñez",
+      "display": "Zubimendi",
+      "minutes": 99
+    },
+    {
+      "id": 20,
+      "first": "Max",
+      "last": "Dowman",
+      "display": "Dowman",
+      "minutes": 19
+    },
+    {
+      "id": 25,
+      "first": "Viktor",
+      "last": "Gyökeres",
+      "display": "Gyökeres",
+      "minutes": 147
+    },
+    {
+      "id": 26,
+      "first": "Kai",
+      "last": "Havertz",
+      "display": "Havertz",
+      "minutes": 586
+    },
+    {
+      "id": 31,
+      "first": "Ezri",
+      "last": "Konsa Ngoyo",
+      "display": "Konsa",
+      "minutes": 551
+    },
+    {
+      "id": 452,
+      "first": "Bruno",
+      "last": "Guimarães Rodriguez Moura",
+      "display": "Bruno G.",
+      "minutes": 237
+    },
+    {
+      "id": 557,
+      "first": "Christos",
+      "last": "Tzolis",
+      "display": "Tzolis",
+      "minutes": 362
+    },
+    {
+      "id": 29,
+      "first": "Marco",
+      "last": "Bizot",
+      "display": "M.Bizot",
+      "minutes": 90
+    },
+    {
+      "id": 32,
+      "first": "Matty",
+      "last": "Cash",
+      "display": "Cash",
+      "minutes": 566
+    },
+    {
+      "id": 33,
+      "first": "Tyrone",
+      "last": "Mings",
+      "display": "Mings",
+      "minutes": 441
+    },
+    {
+      "id": 34,
+      "first": "Pau",
+      "last": "Torres",
+      "display": "Pau",
+      "minutes": 290
+    },
+    {
+      "id": 35,
+      "first": "Lamare",
+      "last": "Bogarde",
+      "display": "Bogarde",
+      "minutes": 16
+    },
+    {
+      "id": 36,
+      "first": "Ian",
+      "last": "Maatsen",
+      "display": "Maatsen",
+      "minutes": 425
+    },
+    {
+      "id": 37,
+      "first": "Victor",
+      "last": "Lindelöf",
+      "display": "Lindelöf",
+      "minutes": 720
+    },
+    {
+      "id": 41,
+      "first": "Emiliano",
+      "last": "Buendía Stati",
+      "display": "Buendía",
+      "minutes": 559
+    },
+    {
+      "id": 45,
+      "first": "John",
+      "last": "McGinn",
+      "display": "McGinn",
+      "minutes": 634
+    },
+    {
+      "id": 46,
+      "first": "Ross",
+      "last": "Barkley",
+      "display": "Barkley",
+      "minutes": 354
+    },
+    {
+      "id": 47,
+      "first": "Boubacar",
+      "last": "Kamara",
+      "display": "Kamara",
+      "minutes": 713
+    },
+    {
+      "id": 51,
+      "first": "George",
+      "last": "Hemmings",
+      "display": "George Hemmings",
+      "minutes": 297
+    },
+    {
+      "id": 52,
+      "first": "Alysson Edward Franco",
+      "last": "da Rocha dos Santos",
+      "display": "Alysson",
+      "minutes": 194
+    },
+    {
+      "id": 53,
+      "first": "Johan",
+      "last": "Manzambi",
+      "display": "Manzambi",
+      "minutes": 319
+    },
+    {
+      "id": 54,
+      "first": "Joao",
+      "last": "Gomes",
+      "display": "Gomes",
+      "minutes": 366
+    },
+    {
+      "id": 56,
+      "first": "Tammy",
+      "last": "Abraham",
+      "display": "Abraham",
+      "minutes": 71
+    },
+    {
+      "id": 160,
+      "first": "Alejandro",
+      "last": "Garnacho Ferreyra",
+      "display": "Garnacho",
+      "minutes": 31
+    },
+    {
+      "id": 166,
+      "first": "Nicolas",
+      "last": "Jackson",
+      "display": "N.Jackson",
+      "minutes": 547
+    },
+    {
+      "id": 582,
+      "first": "Brian",
+      "last": "Madjo",
+      "display": "Madjo",
+      "minutes": 8
+    },
+    {
+      "id": 596,
+      "first": "Matteo",
+      "last": "Ruggeri",
+      "display": "Ruggeri",
+      "minutes": 158
+    },
+    {
+      "id": 597,
+      "first": "Zion",
+      "last": "Suzuki",
+      "display": "Suzuki",
+      "minutes": 630
+    },
+    {
+      "id": 611,
+      "first": "Aaron",
+      "last": "Wan-Bissaka",
+      "display": "Wan-Bissaka",
+      "minutes": 273
+    },
+    {
+      "id": 618,
+      "first": "Leon",
+      "last": "Goretzka",
+      "display": "Goretzka",
+      "minutes": 26
+    },
+    {
+      "id": 631,
+      "first": "Ibrahim",
+      "last": "Mbaye",
+      "display": "Mbaye",
+      "minutes": 108
+    },
+    {
+      "id": 57,
+      "first": "Đorđe",
+      "last": "Petrović",
+      "display": "Petrović",
+      "minutes": 720
+    },
+    {
+      "id": 60,
+      "first": "James",
+      "last": "Hill",
+      "display": "Hill",
+      "minutes": 720
+    },
+    {
+      "id": 61,
+      "first": "Adrien",
+      "last": "Truffert",
+      "display": "Truffert",
+      "minutes": 713
+    },
+    {
+      "id": 62,
+      "first": "Bafodé",
+      "last": "Diakité",
+      "display": "Diakité",
+      "minutes": 4
+    },
+    {
+      "id": 64,
+      "first": "Adam",
+      "last": "Smith",
+      "display": "Smith",
+      "minutes": 682
+    },
+    {
+      "id": 66,
+      "first": "Julio",
+      "last": "Soler Barreto",
+      "display": "Soler",
+      "minutes": 6
+    },
+    {
+      "id": 67,
+      "first": "Rayan Vitor",
+      "last": "Simplício Rocha",
+      "display": "Rayan",
+      "minutes": 702
+    },
+    {
+      "id": 68,
+      "first": "Marcus",
+      "last": "Tavernier",
+      "display": "Tavernier",
+      "minutes": 660
+    },
+    {
+      "id": 69,
+      "first": "Alex",
+      "last": "Scott",
+      "display": "Scott",
+      "minutes": 446
+    },
+    {
+      "id": 70,
+      "first": "Justin",
+      "last": "Kluivert",
+      "display": "Kluivert",
+      "minutes": 384
+    },
+    {
+      "id": 71,
+      "first": "Lewis",
+      "last": "Cook",
+      "display": "Cook",
+      "minutes": 332
+    },
+    {
+      "id": 72,
+      "first": "Ben",
+      "last": "Gannon-Doak",
+      "display": "Gannon-Doak",
+      "minutes": 85
+    },
+    {
+      "id": 73,
+      "first": "Tyler",
+      "last": "Adams",
+      "display": "Adams",
+      "minutes": 547
+    },
+    {
+      "id": 74,
+      "first": "David",
+      "last": "Brooks",
+      "display": "Brooks",
+      "minutes": 90
+    },
+    {
+      "id": 75,
+      "first": "Ryan",
+      "last": "Christie",
+      "display": "Christie",
+      "minutes": 279
+    },
+    {
+      "id": 76,
+      "first": "Alex",
+      "last": "Tóth",
+      "display": "Tóth.A",
+      "minutes": 17
+    },
+    {
+      "id": 77,
+      "first": "Amine",
+      "last": "Adli",
+      "display": "Adli",
+      "minutes": 14
+    },
+    {
+      "id": 78,
+      "first": "Junior",
+      "last": "Kroupi",
+      "display": "Kroupi.Jr",
+      "minutes": 3
+    },
+    {
+      "id": 79,
+      "first": "Francisco Evanilson",
+      "last": "de Lima Barbosa",
+      "display": "Evanilson",
+      "minutes": 678
+    },
+    {
+      "id": 81,
+      "first": "Álvaro",
+      "last": "Rodríguez",
+      "display": "Rodríguez",
+      "minutes": 39
+    },
+    {
+      "id": 566,
+      "first": "António João",
+      "last": "Pereira de Albuquerque Tavares da Silva",
+      "display": "Silva",
+      "minutes": 720
+    },
+    {
+      "id": 573,
+      "first": "Juanlu",
+      "last": "Sánchez",
+      "display": "Sanchez",
+      "minutes": 18
+    },
+    {
+      "id": 608,
+      "first": "Daniel",
+      "last": "Jebbison",
+      "display": "Jebbison",
+      "minutes": 31
+    },
+    {
+      "id": 82,
+      "first": "Caoimhín",
+      "last": "Kelleher",
+      "display": "Kelleher",
+      "minutes": 720
+    },
+    {
+      "id": 84,
+      "first": "Nathan",
+      "last": "Collins",
+      "display": "Collins",
+      "minutes": 196
+    },
+    {
+      "id": 85,
+      "first": "Sepp",
+      "last": "van den Berg",
+      "display": "Van den Berg",
+      "minutes": 160
+    },
+    {
+      "id": 86,
+      "first": "Keane",
+      "last": "Lewis-Potter",
+      "display": "Lewis-Potter",
+      "minutes": 625
+    },
+    {
+      "id": 87,
+      "first": "Kristoffer",
+      "last": "Ajer",
+      "display": "Ajer",
+      "minutes": 720
+    },
+    {
+      "id": 88,
+      "first": "Michael",
+      "last": "Kayode",
+      "display": "Kayode",
+      "minutes": 564
+    },
+    {
+      "id": 89,
+      "first": "Rico",
+      "last": "Henry",
+      "display": "Henry",
+      "minutes": 2
+    },
+    {
+      "id": 90,
+      "first": "Aaron",
+      "last": "Hickey",
+      "display": "Hickey",
+      "minutes": 277
+    },
+    {
+      "id": 93,
+      "first": "Jannik",
+      "last": "Schuster",
+      "display": "Schuster",
+      "minutes": 298
+    },
+    {
+      "id": 94,
+      "first": "Kevin",
+      "last": "Schade",
+      "display": "Schade",
+      "minutes": 604
+    },
+    {
+      "id": 95,
+      "first": "Dango",
+      "last": "Ouattara",
+      "display": "O.Dango",
+      "minutes": 324
+    },
+    {
+      "id": 96,
+      "first": "Mikkel",
+      "last": "Damsgaard",
+      "display": "Damsgaard",
+      "minutes": 324
+    },
+    {
+      "id": 97,
+      "first": "Mathias",
+      "last": "Jensen",
+      "display": "Jensen",
+      "minutes": 224
+    },
+    {
+      "id": 98,
+      "first": "Vitaly",
+      "last": "Janelt",
+      "display": "Janelt",
+      "minutes": 630
+    },
+    {
+      "id": 100,
+      "first": "Fábio",
+      "last": "Freitas Gouveia Carvalho",
+      "display": "Carvalho",
+      "minutes": 3
+    },
+    {
+      "id": 102,
+      "first": "Yehor",
+      "last": "Yarmoliuk",
+      "display": "Yarmoliuk",
+      "minutes": 334
+    },
+    {
+      "id": 105,
+      "first": "Jaidon",
+      "last": "Anthony",
+      "display": "Anthony",
+      "minutes": 455
+    },
+    {
+      "id": 106,
+      "first": "Igor Thiago",
+      "last": "Nascimento Rodrigues",
+      "display": "Thiago",
+      "minutes": 712
+    },
+    {
+      "id": 108,
+      "first": "Callum",
+      "last": "Wilson",
+      "display": "Wilson",
+      "minutes": 30
+    },
+    {
+      "id": 565,
+      "first": "Mamadou",
+      "last": "Sangaré",
+      "display": "M.Sangaré",
+      "minutes": 494
+    },
+    {
+      "id": 620,
+      "first": "El Hadji Malick",
+      "last": "Diouf",
+      "display": "Diouf",
+      "minutes": 154
+    },
+    {
+      "id": 109,
+      "first": "Bart",
+      "last": "Verbruggen",
+      "display": "Verbruggen",
+      "minutes": 720
+    },
+    {
+      "id": 113,
+      "first": "Ferdi",
+      "last": "Kadıoğlu",
+      "display": "F.Kadıoğlu",
+      "minutes": 517
+    },
+    {
+      "id": 114,
+      "first": "Olivier",
+      "last": "Boscagli",
+      "display": "Boscagli",
+      "minutes": 629
+    },
+    {
+      "id": 115,
+      "first": "Maxim",
+      "last": "De Cuyper",
+      "display": "De Cuyper",
+      "minutes": 670
+    },
+    {
+      "id": 116,
+      "first": "Lewis",
+      "last": "Dunk",
+      "display": "Dunk",
+      "minutes": 569
+    },
+    {
+      "id": 119,
+      "first": "João Pedro",
+      "last": "Loureiro da Costa",
+      "display": "Costinha",
+      "minutes": 174
+    },
+    {
+      "id": 120,
+      "first": "Michael",
+      "last": "Svoboda",
+      "display": "Svoboda",
+      "minutes": 5
+    },
+    {
+      "id": 123,
+      "first": "Jack",
+      "last": "Hinshelwood",
+      "display": "Hinshelwood",
+      "minutes": 127
+    },
+    {
+      "id": 124,
+      "first": "Pascal",
+      "last": "Groß",
+      "display": "Groß",
+      "minutes": 700
+    },
+    {
+      "id": 125,
+      "first": "Georginio",
+      "last": "Rutter",
+      "display": "Georginio",
+      "minutes": 140
+    },
+    {
+      "id": 126,
+      "first": "Matt",
+      "last": "O'Riley",
+      "display": "O'Riley",
+      "minutes": 10
+    },
+    {
+      "id": 127,
+      "first": "Diego",
+      "last": "Gómez Amarilla",
+      "display": "Gomez",
+      "minutes": 700
+    },
+    {
+      "id": 129,
+      "first": "Yasin",
+      "last": "Ayari",
+      "display": "Ayari",
+      "minutes": 574
+    },
+    {
+      "id": 130,
+      "first": "Mats",
+      "last": "Wieffer",
+      "display": "Wieffer",
+      "minutes": 156
+    },
+    {
+      "id": 135,
+      "first": "Zadok",
+      "last": "Yohanna",
+      "display": "Yohanna",
+      "minutes": 12
+    },
+    {
+      "id": 138,
+      "first": "Charalampos",
+      "last": "Kostoulas",
+      "display": "Kostoulas",
+      "minutes": 572
+    },
+    {
+      "id": 328,
+      "first": "Pascal",
+      "last": "Struijk",
+      "display": "Struijk",
+      "minutes": 154
+    },
+    {
+      "id": 504,
+      "first": "Luka",
+      "last": "Vušković",
+      "display": "Vuskovic",
+      "minutes": 707
+    },
+    {
+      "id": 594,
+      "first": "Promise",
+      "last": "David",
+      "display": "David",
+      "minutes": 23
+    },
+    {
+      "id": 600,
+      "first": "Ibrahim",
+      "last": "Osman",
+      "display": "Osman",
+      "minutes": 40
+    },
+    {
+      "id": 605,
+      "first": "Malick",
+      "last": "Yalcouyé",
+      "display": "Yalcouyé",
+      "minutes": 303
+    },
+    {
+      "id": 614,
+      "first": "Jaouen",
+      "last": "Hadjam",
+      "display": "Hadjam",
+      "minutes": 11
+    },
+    {
+      "id": 639,
+      "first": "José María",
+      "last": "Andrés Baixauli",
+      "display": "Andrés",
+      "minutes": 342
+    },
+    {
+      "id": 28,
+      "first": "Emiliano",
+      "last": "Martínez Romero",
+      "display": "Martinez",
+      "minutes": 524
+    },
+    {
+      "id": 40,
+      "first": "Morgan",
+      "last": "Rogers",
+      "display": "Rogers",
+      "minutes": 700
+    },
+    {
+      "id": 101,
+      "first": "Jordan",
+      "last": "Henderson",
+      "display": "Henderson",
+      "minutes": 360
+    },
+    {
+      "id": 136,
+      "first": "Danny",
+      "last": "Welbeck",
+      "display": "Welbeck",
+      "minutes": 95
+    },
+    {
+      "id": 140,
+      "first": "Robert",
+      "last": "Lynch Sánchez",
+      "display": "Sánchez",
+      "minutes": 90
+    },
+    {
+      "id": 142,
+      "first": "Reece",
+      "last": "James",
+      "display": "James",
+      "minutes": 292
+    },
+    {
+      "id": 144,
+      "first": "Malo",
+      "last": "Gusto",
+      "display": "Gusto",
+      "minutes": 274
+    },
+    {
+      "id": 145,
+      "first": "Wesley",
+      "last": "Fofana",
+      "display": "Fofana",
+      "minutes": 312
+    },
+    {
+      "id": 148,
+      "first": "Jorrel",
+      "last": "Hato",
+      "display": "Hato",
+      "minutes": 412
+    },
+    {
+      "id": 149,
+      "first": "Levi",
+      "last": "Samuels Colwill",
+      "display": "Colwill",
+      "minutes": 611
+    },
+    {
+      "id": 151,
+      "first": "Josh",
+      "last": "Acheampong",
+      "display": "Acheampong",
+      "minutes": 491
+    },
+    {
+      "id": 152,
+      "first": "Marco",
+      "last": "Palestra",
+      "display": "Palestra",
+      "minutes": 44
+    },
+    {
+      "id": 154,
+      "first": "Cole",
+      "last": "Palmer",
+      "display": "Palmer",
+      "minutes": 698
+    },
+    {
+      "id": 156,
+      "first": "Pedro",
+      "last": "Lomba Neto",
+      "display": "Neto",
+      "minutes": 591
+    },
+    {
+      "id": 157,
+      "first": "Estêvão",
+      "last": "Almeida de Oliveira Gonçalves",
+      "display": "Estêvão",
+      "minutes": 47
+    },
+    {
+      "id": 159,
+      "first": "Moisés",
+      "last": "Caicedo Corozo",
+      "display": "Caicedo",
+      "minutes": 264
+    },
+    {
+      "id": 161,
+      "first": "Roméo",
+      "last": "Lavia",
+      "display": "Lavia",
+      "minutes": 277
+    },
+    {
+      "id": 164,
+      "first": "Geovany",
+      "last": "Quenda",
+      "display": "Quenda",
+      "minutes": 99
+    },
+    {
+      "id": 165,
+      "first": "João Pedro",
+      "last": "Junqueira de Jesus",
+      "display": "João Pedro",
+      "minutes": 521
+    },
+    {
+      "id": 200,
+      "first": "Maxence",
+      "last": "Lacroix",
+      "display": "Lacroix",
+      "minutes": 634
+    },
+    {
+      "id": 560,
+      "first": "Mike",
+      "last": "Penders",
+      "display": "Penders",
+      "minutes": 105
+    },
+    {
+      "id": 568,
+      "first": "Valentín",
+      "last": "Barco",
+      "display": "Barco",
+      "minutes": 115
+    },
+    {
+      "id": 583,
+      "first": "Pep",
+      "last": "Chavarría",
+      "display": "Chavarria",
+      "minutes": 298
+    },
+    {
+      "id": 662,
+      "first": "Mahdi",
+      "last": "Nicoll-Jazuli",
+      "display": "Nicoll-Jazuli",
+      "minutes": 3
+    },
+    {
+      "id": 91,
+      "first": "Ethan",
+      "last": "Pinnock",
+      "display": "Pinnock",
+      "minutes": 552
+    },
+    {
+      "id": 104,
+      "first": "Frank",
+      "last": "Onyeka",
+      "display": "Onyeka",
+      "minutes": 379
+    },
+    {
+      "id": 110,
+      "first": "Carl",
+      "last": "Rushworth",
+      "display": "Rushworth",
+      "minutes": 720
+    },
+    {
+      "id": 173,
+      "first": "Bobby",
+      "last": "Thomas",
+      "display": "Thomas",
+      "minutes": 676
+    },
+    {
+      "id": 175,
+      "first": "Milan",
+      "last": "van Ewijk",
+      "display": "van Ewijk",
+      "minutes": 630
+    },
+    {
+      "id": 176,
+      "first": "Jay",
+      "last": "Dasilva",
+      "display": "Dasilva",
+      "minutes": 714
+    },
+    {
+      "id": 177,
+      "first": "Kaine",
+      "last": "Kesler-Hayden",
+      "display": "Kesler-Hayden",
+      "minutes": 3
+    },
+    {
+      "id": 179,
+      "first": "Joel",
+      "last": "Latibeaudiere",
+      "display": "Latibeaudiere",
+      "minutes": 1
+    },
+    {
+      "id": 182,
+      "first": "Aurèle",
+      "last": "Amenda",
+      "display": "Amenda",
+      "minutes": 360
+    },
+    {
+      "id": 183,
+      "first": "Jack",
+      "last": "Rudoni",
+      "display": "Rudoni",
+      "minutes": 555
+    },
+    {
+      "id": 184,
+      "first": "Matt",
+      "last": "Grimes",
+      "display": "Grimes",
+      "minutes": 705
+    },
+    {
+      "id": 185,
+      "first": "Tatsuhiro",
+      "last": "Sakamoto",
+      "display": "Sakamoto",
+      "minutes": 222
+    },
+    {
+      "id": 186,
+      "first": "Ephron",
+      "last": "Mason-Clark",
+      "display": "Mason-Clark",
+      "minutes": 326
+    },
+    {
+      "id": 188,
+      "first": "Victor",
+      "last": "Torp",
+      "display": "Torp",
+      "minutes": 60
+    },
+    {
+      "id": 190,
+      "first": "Loum",
+      "last": "Tchaouna",
+      "display": "Tchaouna",
+      "minutes": 211
+    },
+    {
+      "id": 194,
+      "first": "Brandon",
+      "last": "Thomas-Asante",
+      "display": "Thomas-Asante",
+      "minutes": 460
+    },
+    {
+      "id": 195,
+      "first": "Ellis",
+      "last": "Simms",
+      "display": "Simms",
+      "minutes": 116
+    },
+    {
+      "id": 492,
+      "first": "Taiwo",
+      "last": "Awoniyi",
+      "display": "Awoniyi",
+      "minutes": 285
+    },
+    {
+      "id": 575,
+      "first": "Caleb",
+      "last": "Yirenkyi",
+      "display": "Yirenkyi",
+      "minutes": 467
+    },
+    {
+      "id": 584,
+      "first": "Gustavo",
+      "last": "Hamer",
+      "display": "Hamer",
+      "minutes": 48
+    },
+    {
+      "id": 599,
+      "first": "Sidiki",
+      "last": "Cherif",
+      "display": "Cherif",
+      "minutes": 232
+    },
+    {
+      "id": 656,
+      "first": "Stephen",
+      "last": "Mfuni",
+      "display": "Mfuni",
+      "minutes": 127
+    },
+    {
+      "id": 42,
+      "first": "Evann",
+      "last": "Guessand",
+      "display": "Guessand",
+      "minutes": 54
+    },
+    {
+      "id": 153,
+      "first": "Axel",
+      "last": "Disasi",
+      "display": "Disasi",
+      "minutes": 229
+    },
+    {
+      "id": 198,
+      "first": "Dean",
+      "last": "Henderson",
+      "display": "Henderson",
+      "minutes": 270
+    },
+    {
+      "id": 199,
+      "first": "Walter",
+      "last": "Benítez",
+      "display": "Benitez",
+      "minutes": 450
+    },
+    {
+      "id": 202,
+      "first": "Chris",
+      "last": "Richards",
+      "display": "Richards",
+      "minutes": 720
+    },
+    {
+      "id": 203,
+      "first": "Jaydee",
+      "last": "Canvot",
+      "display": "Canvot",
+      "minutes": 630
+    },
+    {
+      "id": 204,
+      "first": "Tyrick",
+      "last": "Mitchell",
+      "display": "Mitchell",
+      "minutes": 689
+    },
+    {
+      "id": 206,
+      "first": "Chadi",
+      "last": "Riad Dnanou",
+      "display": "Chadi Riad",
+      "minutes": 72
+    },
+    {
+      "id": 207,
+      "first": "Oscar",
+      "last": "Mingueza",
+      "display": "Mingueza",
+      "minutes": 16
+    },
+    {
+      "id": 208,
+      "first": "Ismaïla",
+      "last": "Sarr",
+      "display": "Sarr",
+      "minutes": 15
+    },
+    {
+      "id": 210,
+      "first": "Adam",
+      "last": "Wharton",
+      "display": "Wharton",
+      "minutes": 706
+    },
+    {
+      "id": 211,
+      "first": "Yéremy",
+      "last": "Pino Santos",
+      "display": "Yeremy",
+      "minutes": 539
+    },
+    {
+      "id": 212,
+      "first": "Will",
+      "last": "Hughes",
+      "display": "Hughes",
+      "minutes": 38
+    },
+    {
+      "id": 213,
+      "first": "Jefferson",
+      "last": "Lerma Solís",
+      "display": "Lerma",
+      "minutes": 159
+    },
+    {
+      "id": 214,
+      "first": "Daichi",
+      "last": "Kamada",
+      "display": "Kamada",
+      "minutes": 700
+    },
+    {
+      "id": 222,
+      "first": "Jørgen",
+      "last": "Strand Larsen",
+      "display": "Strand Larsen",
+      "minutes": 440
+    },
+    {
+      "id": 223,
+      "first": "Jean-Philippe",
+      "last": "Mateta",
+      "display": "Mateta",
+      "minutes": 152
+    },
+    {
+      "id": 224,
+      "first": "Eddie",
+      "last": "Nketiah",
+      "display": "Nketiah",
+      "minutes": 239
+    },
+    {
+      "id": 241,
+      "first": "Dwight",
+      "last": "McNeil",
+      "display": "McNeil",
+      "minutes": 192
+    },
+    {
+      "id": 577,
+      "first": "Takehiro",
+      "last": "Tomiyasu",
+      "display": "Tomiyasu",
+      "minutes": 189
+    },
+    {
+      "id": 588,
+      "first": "Anan",
+      "last": "Khalaili",
+      "display": "Khalaili",
+      "minutes": 649
+    },
+    {
+      "id": 595,
+      "first": "Zavier",
+      "last": "Gozo",
+      "display": "Gozo",
+      "minutes": 28
+    },
+    {
+      "id": 633,
+      "first": "Honest",
+      "last": "Ahanor",
+      "display": "Ahanor",
+      "minutes": 160
+    },
+    {
+      "id": 643,
+      "first": "Ben",
+      "last": "Chilwell",
+      "display": "Chilwell",
+      "minutes": 29
+    },
+    {
+      "id": 644,
+      "first": "Quinten",
+      "last": "Timber",
+      "display": "Timber",
+      "minutes": 388
+    },
+    {
+      "id": 647,
+      "first": "Darío",
+      "last": "Osorio",
+      "display": "Osorio",
+      "minutes": 28
+    },
+    {
+      "id": 21,
+      "first": "Christian",
+      "last": "Nørgaard",
+      "display": "Nørgaard",
+      "minutes": 5
+    },
+    {
+      "id": 209,
+      "first": "Brennan",
+      "last": "Johnson",
+      "display": "Johnson",
+      "minutes": 379
+    },
+    {
+      "id": 226,
+      "first": "Jordan",
+      "last": "Pickford",
+      "display": "Pickford",
+      "minutes": 720
+    },
+    {
+      "id": 229,
+      "first": "James",
+      "last": "Tarkowski",
+      "display": "Tarkowski",
+      "minutes": 720
+    },
+    {
+      "id": 230,
+      "first": "Jarrad",
+      "last": "Branthwaite",
+      "display": "Branthwaite",
+      "minutes": 630
+    },
+    {
+      "id": 231,
+      "first": "Michael",
+      "last": "Keane",
+      "display": "Keane",
+      "minutes": 90
+    },
+    {
+      "id": 232,
+      "first": "Jake",
+      "last": "O'Brien",
+      "display": "O'Brien",
+      "minutes": 118
+    },
+    {
+      "id": 233,
+      "first": "Vitalii",
+      "last": "Mykolenko",
+      "display": "Mykolenko",
+      "minutes": 613
+    },
+    {
+      "id": 236,
+      "first": "Kiernan",
+      "last": "Dewsbury-Hall",
+      "display": "Dewsbury-Hall",
+      "minutes": 715
+    },
+    {
+      "id": 238,
+      "first": "Jack",
+      "last": "Grealish",
+      "display": "Grealish",
+      "minutes": 304
+    },
+    {
+      "id": 239,
+      "first": "James",
+      "last": "Garner",
+      "display": "Garner",
+      "minutes": 598
+    },
+    {
+      "id": 242,
+      "first": "Tyrique",
+      "last": "George",
+      "display": "George",
+      "minutes": 458
+    },
+    {
+      "id": 243,
+      "first": "Carlos",
+      "last": "Alcaraz Durán",
+      "display": "Alcaraz",
+      "minutes": 13
+    },
+    {
+      "id": 244,
+      "first": "Harrison",
+      "last": "Armstrong",
+      "display": "Armstrong",
+      "minutes": 697
+    },
+    {
+      "id": 245,
+      "first": "Tyler",
+      "last": "Dibling",
+      "display": "Dibling",
+      "minutes": 46
+    },
+    {
+      "id": 246,
+      "first": "Merlin",
+      "last": "Röhl",
+      "display": "Röhl",
+      "minutes": 429
+    },
+    {
+      "id": 247,
+      "first": "Hayden",
+      "last": "Hackney",
+      "display": "Hackney",
+      "minutes": 165
+    },
+    {
+      "id": 248,
+      "first": "Norberto Bercique",
+      "last": "Gomes Betuncal",
+      "display": "Beto",
+      "minutes": 31
+    },
+    {
+      "id": 249,
+      "first": "Thierno",
+      "last": "Barry",
+      "display": "Barry",
+      "minutes": 682
+    },
+    {
+      "id": 649,
+      "first": "Ainsley",
+      "last": "Maitland-Niles",
+      "display": "Maitland-Niles",
+      "minutes": 308
+    },
+    {
+      "id": 250,
+      "first": "Bernd",
+      "last": "Leno",
+      "display": "Leno",
+      "minutes": 720
+    },
+    {
+      "id": 253,
+      "first": "Joachim",
+      "last": "Andersen",
+      "display": "Andersen",
+      "minutes": 190
+    },
+    {
+      "id": 254,
+      "first": "Antonee",
+      "last": "Robinson",
+      "display": "Robinson",
+      "minutes": 609
+    },
+    {
+      "id": 255,
+      "first": "Jorge",
+      "last": "Cuenca Barreno",
+      "display": "J.Cuenca",
+      "minutes": 90
+    },
+    {
+      "id": 256,
+      "first": "Kenny",
+      "last": "Tete",
+      "display": "Tete",
+      "minutes": 126
+    },
+    {
+      "id": 257,
+      "first": "Calvin",
+      "last": "Bassey",
+      "display": "Bassey",
+      "minutes": 720
+    },
+    {
+      "id": 258,
+      "first": "Timothy",
+      "last": "Castagne",
+      "display": "Castagne",
+      "minutes": 588
+    },
+    {
+      "id": 261,
+      "first": "Alex",
+      "last": "Iwobi",
+      "display": "Iwobi",
+      "minutes": 657
+    },
+    {
+      "id": 262,
+      "first": "Emile",
+      "last": "Smith Rowe",
+      "display": "Smith Rowe",
+      "minutes": 41
+    },
+    {
+      "id": 263,
+      "first": "Kevin",
+      "last": "Santos Lopes de Macedo",
+      "display": "Kevin",
+      "minutes": 75
+    },
+    {
+      "id": 264,
+      "first": "Oscar",
+      "last": "Bobb",
+      "display": "Bobb",
+      "minutes": 575
+    },
+    {
+      "id": 265,
+      "first": "Sander",
+      "last": "Berge",
+      "display": "Berge",
+      "minutes": 556
+    },
+    {
+      "id": 266,
+      "first": "Tom",
+      "last": "Cairney",
+      "display": "Cairney",
+      "minutes": 21
+    },
+    {
+      "id": 268,
+      "first": "Josh",
+      "last": "King",
+      "display": "King",
+      "minutes": 657
+    },
+    {
+      "id": 269,
+      "first": "Ryan",
+      "last": "Sessegnon",
+      "display": "Sessegnon",
+      "minutes": 152
+    },
+    {
+      "id": 271,
+      "first": "Rodrigo",
+      "last": "Muniz Carvalho",
+      "display": "Muniz",
+      "minutes": 68
+    },
+    {
+      "id": 569,
+      "first": "Gonzalo",
+      "last": "García",
+      "display": "Gonzalo",
+      "minutes": 668
+    },
+    {
+      "id": 570,
+      "first": "César",
+      "last": "Palacios",
+      "display": "Palacios",
+      "minutes": 247
+    },
+    {
+      "id": 580,
+      "first": "Shea",
+      "last": "Charles",
+      "display": "Charles",
+      "minutes": 553
+    },
+    {
+      "id": 635,
+      "first": "Hugo",
+      "last": "Larsson",
+      "display": "Larsson",
+      "minutes": 102
+    },
+    {
+      "id": 636,
+      "first": "Manuel Ángel",
+      "last": "Morán Ibáñez",
+      "display": "Ángel",
+      "minutes": 19
+    },
+    {
+      "id": 650,
+      "first": "David",
+      "last": "Affengruber",
+      "display": "Affengruber",
+      "minutes": 450
+    },
+    {
+      "id": 240,
+      "first": "Tim",
+      "last": "Iroegbunam",
+      "display": "Iroegbunam",
+      "minutes": 211
+    },
+    {
+      "id": 277,
+      "first": "John",
+      "last": "Egan",
+      "display": "Egan",
+      "minutes": 707
+    },
+    {
+      "id": 279,
+      "first": "Semi",
+      "last": "Ajayi",
+      "display": "Ajayi",
+      "minutes": 693
+    },
+    {
+      "id": 280,
+      "first": "Lewie",
+      "last": "Coyle",
+      "display": "Coyle",
+      "minutes": 592
+    },
+    {
+      "id": 281,
+      "first": "Cody",
+      "last": "Drameh",
+      "display": "Drameh",
+      "minutes": 65
+    },
+    {
+      "id": 282,
+      "first": "Ryan",
+      "last": "Giles",
+      "display": "Giles",
+      "minutes": 593
+    },
+    {
+      "id": 285,
+      "first": "Paddy",
+      "last": "McNair",
+      "display": "McNair",
+      "minutes": 26
+    },
+    {
+      "id": 286,
+      "first": "Mohamed",
+      "last": "Belloumi",
+      "display": "Belloumi",
+      "minutes": 595
+    },
+    {
+      "id": 287,
+      "first": "Liam",
+      "last": "Millar",
+      "display": "Millar",
+      "minutes": 50
+    },
+    {
+      "id": 289,
+      "first": "Matt",
+      "last": "Crooks",
+      "display": "Crooks",
+      "minutes": 334
+    },
+    {
+      "id": 290,
+      "first": "Regan",
+      "last": "Slater",
+      "display": "Slater",
+      "minutes": 675
+    },
+    {
+      "id": 295,
+      "first": "Oli",
+      "last": "McBurnie",
+      "display": "McBurnie",
+      "minutes": 706
+    },
+    {
+      "id": 340,
+      "first": "Joe",
+      "last": "Gelhardt",
+      "display": "Gelhardt",
+      "minutes": 97
+    },
+    {
+      "id": 556,
+      "first": "Matt",
+      "last": "Targett",
+      "display": "Targett",
+      "minutes": 5
+    },
+    {
+      "id": 563,
+      "first": "Hidemasa",
+      "last": "Morita",
+      "display": "Morita",
+      "minutes": 93
+    },
+    {
+      "id": 572,
+      "first": "Konstantinos",
+      "last": "Tzolakis",
+      "display": "Tzolakis",
+      "minutes": 720
+    },
+    {
+      "id": 574,
+      "first": "Jens",
+      "last": "Hjertø-Dahl",
+      "display": "Hjertø-Dahl",
+      "minutes": 8
+    },
+    {
+      "id": 576,
+      "first": "Elliot",
+      "last": "Stroud",
+      "display": "Stroud",
+      "minutes": 365
+    },
+    {
+      "id": 585,
+      "first": "Lucas",
+      "last": "Herrington",
+      "display": "Herrington",
+      "minutes": 332
+    },
+    {
+      "id": 586,
+      "first": "Nobel",
+      "last": "Mendy",
+      "display": "Mendy",
+      "minutes": 339
+    },
+    {
+      "id": 589,
+      "first": "Lucas",
+      "last": "Gourna-Douath",
+      "display": "Gourna-Douath",
+      "minutes": 138
+    },
+    {
+      "id": 617,
+      "first": "Mohamed-Ali",
+      "last": "Cho",
+      "display": "Cho",
+      "minutes": 97
+    },
+    {
+      "id": 637,
+      "first": "Robinio",
+      "last": "Vaz",
+      "display": "Vaz",
+      "minutes": 50
+    },
+    {
+      "id": 638,
+      "first": "Brooke",
+      "last": "Norton-Cuffy",
+      "display": "Norton-Cuffy",
+      "minutes": 126
+    },
+    {
+      "id": 642,
+      "first": "Sorba",
+      "last": "Thomas",
+      "display": "Thomas",
+      "minutes": 271
+    },
+    {
+      "id": 259,
+      "first": "Issa",
+      "last": "Diop",
+      "display": "Diop",
+      "minutes": 720
+    },
+    {
+      "id": 267,
+      "first": "Saša",
+      "last": "Lukić",
+      "display": "Lukić",
+      "minutes": 490
+    },
+    {
+      "id": 300,
+      "first": "Christian",
+      "last": "Walton",
+      "display": "Walton",
+      "minutes": 360
+    },
+    {
+      "id": 304,
+      "first": "Dara",
+      "last": "O'Shea",
+      "display": "O'Shea",
+      "minutes": 720
+    },
+    {
+      "id": 305,
+      "first": "Leif",
+      "last": "Davis",
+      "display": "Davis",
+      "minutes": 720
+    },
+    {
+      "id": 306,
+      "first": "Jacob",
+      "last": "Greaves",
+      "display": "Greaves",
+      "minutes": 447
+    },
+    {
+      "id": 308,
+      "first": "Darnell",
+      "last": "Furlong",
+      "display": "Furlong",
+      "minutes": 17
+    },
+    {
+      "id": 309,
+      "first": "Marcelino",
+      "last": "Núñez",
+      "display": "Núñez",
+      "minutes": 140
+    },
+    {
+      "id": 310,
+      "first": "Azor",
+      "last": "Matusiwa",
+      "display": "Matusiwa",
+      "minutes": 24
+    },
+    {
+      "id": 313,
+      "first": "Jack",
+      "last": "Clarke",
+      "display": "Clarke",
+      "minutes": 227
+    },
+    {
+      "id": 315,
+      "first": "Abdul",
+      "last": "Fatawu",
+      "display": "Fatawu",
+      "minutes": 443
+    },
+    {
+      "id": 316,
+      "first": "Emersonn",
+      "last": "Correia da Silva",
+      "display": "Emersonn",
+      "minutes": 523
+    },
+    {
+      "id": 318,
+      "first": "Jaden",
+      "last": "Philogene",
+      "display": "Philogene",
+      "minutes": 174
+    },
+    {
+      "id": 320,
+      "first": "Chuba",
+      "last": "Akpom",
+      "display": "Akpom",
+      "minutes": 113
+    },
+    {
+      "id": 321,
+      "first": "Sindre",
+      "last": "Walle Egeli",
+      "display": "Walle Egeli",
+      "minutes": 19
+    },
+    {
+      "id": 323,
+      "first": "Kasey",
+      "last": "McAteer",
+      "display": "McAteer",
+      "minutes": 42
+    },
+    {
+      "id": 562,
+      "first": "Daizen",
+      "last": "Maeda",
+      "display": "Maeda",
+      "minutes": 426
+    },
+    {
+      "id": 564,
+      "first": "Kjell",
+      "last": "Scherpen",
+      "display": "Scherpen",
+      "minutes": 360
+    },
+    {
+      "id": 571,
+      "first": "Florentino Ibrain",
+      "last": "Morris Luís",
+      "display": "Florentino",
+      "minutes": 246
+    },
+    {
+      "id": 591,
+      "first": "Julio",
+      "last": "Enciso",
+      "display": "Enciso",
+      "minutes": 645
+    },
+    {
+      "id": 592,
+      "first": "Abdoul",
+      "last": "Ouattara",
+      "display": "Ouattara",
+      "minutes": 401
+    },
+    {
+      "id": 619,
+      "first": "Exequiel",
+      "last": "Palacios",
+      "display": "Palacios",
+      "minutes": 482
+    },
+    {
+      "id": 640,
+      "first": "Zian",
+      "last": "Flemming",
+      "display": "Flemming",
+      "minutes": 121
+    },
+    {
+      "id": 260,
+      "first": "Harry",
+      "last": "Wilson",
+      "display": "Wilson",
+      "minutes": 229
+    },
+    {
+      "id": 327,
+      "first": "Jaka",
+      "last": "Bijol",
+      "display": "Bijol",
+      "minutes": 258
+    },
+    {
+      "id": 329,
+      "first": "Joe",
+      "last": "Rodon",
+      "display": "Rodon",
+      "minutes": 123
+    },
+    {
+      "id": 330,
+      "first": "Jayden",
+      "last": "Bogle",
+      "display": "Bogle",
+      "minutes": 630
+    },
+    {
+      "id": 331,
+      "first": "Gabriel",
+      "last": "Gudmundsson",
+      "display": "Gudmundsson",
+      "minutes": 522
+    },
+    {
+      "id": 332,
+      "first": "James",
+      "last": "Justin",
+      "display": "Justin",
+      "minutes": 708
+    },
+    {
+      "id": 334,
+      "first": "Tarik",
+      "last": "Muharemović",
+      "display": "Muharemović",
+      "minutes": 720
+    },
+    {
+      "id": 335,
+      "first": "Anton",
+      "last": "Stach",
+      "display": "Stach",
+      "minutes": 651
+    },
+    {
+      "id": 336,
+      "first": "Noah",
+      "last": "Okafor",
+      "display": "Okafor",
+      "minutes": 467
+    },
+    {
+      "id": 337,
+      "first": "Brenden",
+      "last": "Aaronson",
+      "display": "Aaronson",
+      "minutes": 277
+    },
+    {
+      "id": 338,
+      "first": "Ethan",
+      "last": "Ampadu",
+      "display": "Ampadu",
+      "minutes": 720
+    },
+    {
+      "id": 339,
+      "first": "Sean",
+      "last": "Longstaff",
+      "display": "Longstaff",
+      "minutes": 20
+    },
+    {
+      "id": 343,
+      "first": "Daniel",
+      "last": "James",
+      "display": "James",
+      "minutes": 52
+    },
+    {
+      "id": 345,
+      "first": "Tanaka",
+      "last": "Ao",
+      "display": "Tanaka",
+      "minutes": 493
+    },
+    {
+      "id": 346,
+      "first": "Dominic",
+      "last": "Calvert-Lewin",
+      "display": "Calvert-Lewin",
+      "minutes": 683
+    },
+    {
+      "id": 347,
+      "first": "Lukas",
+      "last": "Nmecha",
+      "display": "Nmecha",
+      "minutes": 96
+    },
+    {
+      "id": 385,
+      "first": "James",
+      "last": "Trafford",
+      "display": "Trafford",
+      "minutes": 720
+    },
+    {
+      "id": 598,
+      "first": "Nico",
+      "last": "Elvedi",
+      "display": "Elvedi",
+      "minutes": 501
+    },
+    {
+      "id": 641,
+      "first": "Melvin",
+      "last": "Bard",
+      "display": "Bard",
+      "minutes": 18
+    },
+    {
+      "id": 648,
+      "first": "Jean-Mattéo",
+      "last": "Bahoya",
+      "display": "Bahoya",
+      "minutes": 5
+    },
+    {
+      "id": 350,
+      "first": "Alisson",
+      "last": "Becker",
+      "display": "A.Becker",
+      "minutes": 720
+    },
+    {
+      "id": 356,
+      "first": "Virgil",
+      "last": "van Dijk",
+      "display": "Virgil",
+      "minutes": 720
+    },
+    {
+      "id": 357,
+      "first": "Jeremie",
+      "last": "Frimpong",
+      "display": "Frimpong",
+      "minutes": 199
+    },
+    {
+      "id": 358,
+      "first": "Milos",
+      "last": "Kerkez",
+      "display": "Kerkez",
+      "minutes": 652
+    },
+    {
+      "id": 359,
+      "first": "Joe",
+      "last": "Gomez",
+      "display": "Gomez",
+      "minutes": 13
+    },
+    {
+      "id": 362,
+      "first": "Jeremy",
+      "last": "Jacquet",
+      "display": "Jacquet",
+      "minutes": 682
+    },
+    {
+      "id": 364,
+      "first": "Kostas",
+      "last": "Tsimikas",
+      "display": "Tsimikas",
+      "minutes": 66
+    },
+    {
+      "id": 366,
+      "first": "Florian",
+      "last": "Wirtz",
+      "display": "Wirtz",
+      "minutes": 621
+    },
+    {
+      "id": 367,
+      "first": "Cody",
+      "last": "Gakpo",
+      "display": "Gakpo",
+      "minutes": 460
+    },
+    {
+      "id": 368,
+      "first": "Dominik",
+      "last": "Szoboszlai",
+      "display": "Szoboszlai",
+      "minutes": 471
+    },
+    {
+      "id": 369,
+      "first": "Rio",
+      "last": "Ngumoha",
+      "display": "Ngumoha",
+      "minutes": 165
+    },
+    {
+      "id": 370,
+      "first": "Federico",
+      "last": "Chiesa",
+      "display": "Chiesa",
+      "minutes": 2
+    },
+    {
+      "id": 371,
+      "first": "Ryan",
+      "last": "Gravenberch",
+      "display": "Gravenberch",
+      "minutes": 341
+    },
+    {
+      "id": 372,
+      "first": "Alexis",
+      "last": "Mac Allister",
+      "display": "Mac Allister",
+      "minutes": 576
+    },
+    {
+      "id": 375,
+      "first": "Trey",
+      "last": "Nyoni",
+      "display": "Nyoni",
+      "minutes": 145
+    },
+    {
+      "id": 377,
+      "first": "Victor",
+      "last": "Munoz",
+      "display": "Munoz",
+      "minutes": 425
+    },
+    {
+      "id": 379,
+      "first": "Alexander",
+      "last": "Isak",
+      "display": "Isak",
+      "minutes": 567
+    },
+    {
+      "id": 381,
+      "first": "Lewis",
+      "last": "Koumas",
+      "display": "Koumas",
+      "minutes": 120
+    },
+    {
+      "id": 579,
+      "first": "Ronald",
+      "last": "Araujo",
+      "display": "Araujo",
+      "minutes": 493
+    },
+    {
+      "id": 627,
+      "first": "Bradley",
+      "last": "Barcola",
+      "display": "Barcola",
+      "minutes": 421
+    },
+    {
+      "id": 155,
+      "first": "Enzo",
+      "last": "Fernández",
+      "display": "Enzo",
+      "minutes": 480
+    },
+    {
+      "id": 237,
+      "first": "Iliman",
+      "last": "Ndiaye",
+      "display": "Ndiaye",
+      "minutes": 598
+    },
+    {
+      "id": 384,
+      "first": "Gianluigi",
+      "last": "Donnarumma",
+      "display": "Donnarumma",
+      "minutes": 720
+    },
+    {
+      "id": 387,
+      "first": "Nico",
+      "last": "O'Reilly",
+      "display": "O'Reilly",
+      "minutes": 288
+    },
+    {
+      "id": 388,
+      "first": "Marc",
+      "last": "Guéhi",
+      "display": "Guéhi",
+      "minutes": 675
+    },
+    {
+      "id": 389,
+      "first": "Matheus",
+      "last": "Nunes",
+      "display": "Matheus N.",
+      "minutes": 378
+    },
+    {
+      "id": 390,
+      "first": "Rúben",
+      "last": "dos Santos Gato Alves Dias",
+      "display": "Rúben",
+      "minutes": 720
+    },
+    {
+      "id": 391,
+      "first": "Joško",
+      "last": "Gvardiol",
+      "display": "Gvardiol",
+      "minutes": 577
+    },
+    {
+      "id": 393,
+      "first": "Abdukodir",
+      "last": "Khusanov",
+      "display": "Khusanov",
+      "minutes": 372
+    },
+    {
+      "id": 395,
+      "first": "Rico",
+      "last": "Lewis",
+      "display": "Lewis",
+      "minutes": 101
+    },
+    {
+      "id": 396,
+      "first": "Vitor",
+      "last": "de Oliveira Nunes dos Reis",
+      "display": "Vitor Reis",
+      "minutes": 1
+    },
+    {
+      "id": 397,
+      "first": "Antoine",
+      "last": "Semenyo",
+      "display": "Semenyo",
+      "minutes": 553
+    },
+    {
+      "id": 398,
+      "first": "Phil",
+      "last": "Foden",
+      "display": "Foden",
+      "minutes": 338
+    },
+    {
+      "id": 399,
+      "first": "Rayan",
+      "last": "Cherki",
+      "display": "Cherki",
+      "minutes": 437
+    },
+    {
+      "id": 400,
+      "first": "Jérémy",
+      "last": "Doku",
+      "display": "Doku",
+      "minutes": 215
+    },
+    {
+      "id": 406,
+      "first": "Mateo",
+      "last": "Kovačić",
+      "display": "Kovačić",
+      "minutes": 91
+    },
+    {
+      "id": 411,
+      "first": "Erling",
+      "last": "Haaland",
+      "display": "Haaland",
+      "minutes": 709
+    },
+    {
+      "id": 481,
+      "first": "Elliot",
+      "last": "Anderson",
+      "display": "Anderson",
+      "minutes": 606
+    },
+    {
+      "id": 616,
+      "first": "Ayyoub",
+      "last": "Bouaddi",
+      "display": "Bouaddi",
+      "minutes": 122
+    },
+    {
+      "id": 621,
+      "first": "Ryan",
+      "last": "McAidoo",
+      "display": "McAidoo",
+      "minutes": 32
+    },
+    {
+      "id": 622,
+      "first": "Kaden",
+      "last": "Braithwaite",
+      "display": "Braithwaite",
+      "minutes": 1
+    },
+    {
+      "id": 628,
+      "first": "Allan",
+      "last": "Andrade Elias",
+      "display": "Allan",
+      "minutes": 10
+    },
+    {
+      "id": 43,
+      "first": "Youri",
+      "last": "Tielemans",
+      "display": "Tielemans",
+      "minutes": 588
+    },
+    {
+      "id": 131,
+      "first": "Carlos",
+      "last": "Baleba",
+      "display": "Baleba",
+      "minutes": 175
+    },
+    {
+      "id": 162,
+      "first": "Andrey",
+      "last": "Nascimento dos Santos",
+      "display": "Andrey Santos",
+      "minutes": 262
+    },
+    {
+      "id": 412,
+      "first": "Senne",
+      "last": "Lammens",
+      "display": "Lammens",
+      "minutes": 720
+    },
+    {
+      "id": 415,
+      "first": "Patrick",
+      "last": "Dorgu",
+      "display": "Dorgu",
+      "minutes": 171
+    },
+    {
+      "id": 417,
+      "first": "Diogo",
+      "last": "Dalot Teixeira",
+      "display": "Dalot",
+      "minutes": 557
+    },
+    {
+      "id": 418,
+      "first": "Harry",
+      "last": "Maguire",
+      "display": "Maguire",
+      "minutes": 720
+    },
+    {
+      "id": 419,
+      "first": "Lisandro",
+      "last": "Martínez",
+      "display": "Martinez",
+      "minutes": 520
+    },
+    {
+      "id": 420,
+      "first": "Leny",
+      "last": "Yoro",
+      "display": "Yoro",
+      "minutes": 260
+    },
+    {
+      "id": 421,
+      "first": "Ayden",
+      "last": "Heaven",
+      "display": "Heaven",
+      "minutes": 155
+    },
+    {
+      "id": 422,
+      "first": "Noussair",
+      "last": "Mazraoui",
+      "display": "Mazraoui",
+      "minutes": 142
+    },
+    {
+      "id": 423,
+      "first": "Luke",
+      "last": "Shaw",
+      "display": "Shaw",
+      "minutes": 425
+    },
+    {
+      "id": 426,
+      "first": "Bruno",
+      "last": "Borges Fernandes",
+      "display": "B.Fernandes",
+      "minutes": 630
+    },
+    {
+      "id": 427,
+      "first": "Bryan",
+      "last": "Mbeumo",
+      "display": "Mbeumo",
+      "minutes": 720
+    },
+    {
+      "id": 428,
+      "first": "Matheus",
+      "last": "Santos Carneiro da Cunha",
+      "display": "Cunha",
+      "minutes": 548
+    },
+    {
+      "id": 429,
+      "first": "Marcus",
+      "last": "Rashford",
+      "display": "Rashford",
+      "minutes": 352
+    },
+    {
+      "id": 430,
+      "first": "Mason",
+      "last": "Mount",
+      "display": "Mount",
+      "minutes": 116
+    },
+    {
+      "id": 431,
+      "first": "Amad",
+      "last": "Diallo",
+      "display": "Amad",
+      "minutes": 225
+    },
+    {
+      "id": 432,
+      "first": "Kobbie",
+      "last": "Mainoo",
+      "display": "Mainoo",
+      "minutes": 444
+    },
+    {
+      "id": 435,
+      "first": "Shea",
+      "last": "Lacey",
+      "display": "Lacey",
+      "minutes": 22
+    },
+    {
+      "id": 439,
+      "first": "Benjamin",
+      "last": "Sesko",
+      "display": "Šeško",
+      "minutes": 76
+    },
+    {
+      "id": 440,
+      "first": "Joshua",
+      "last": "Zirkzee",
+      "display": "Zirkzee",
+      "minutes": 69
+    },
+    {
+      "id": 405,
+      "first": "Nico",
+      "last": "González Iglesias",
+      "display": "N.Gonzalez",
+      "minutes": 434
+    },
+    {
+      "id": 445,
+      "first": "Malick",
+      "last": "Thiaw",
+      "display": "Thiaw",
+      "minutes": 631
+    },
+    {
+      "id": 446,
+      "first": "Fabian",
+      "last": "Schär",
+      "display": "Schär",
+      "minutes": 115
+    },
+    {
+      "id": 447,
+      "first": "Sven",
+      "last": "Botman",
+      "display": "Botman",
+      "minutes": 630
+    },
+    {
+      "id": 448,
+      "first": "Dan",
+      "last": "Burn",
+      "display": "Burn",
+      "minutes": 92
+    },
+    {
+      "id": 449,
+      "first": "Lewis",
+      "last": "Hall",
+      "display": "Hall",
+      "minutes": 719
+    },
+    {
+      "id": 450,
+      "first": "Tino",
+      "last": "Livramento",
+      "display": "Livramento",
+      "minutes": 33
+    },
+    {
+      "id": 453,
+      "first": "Harvey",
+      "last": "Barnes",
+      "display": "Barnes",
+      "minutes": 706
+    },
+    {
+      "id": 454,
+      "first": "Anthony",
+      "last": "Elanga",
+      "display": "Elanga",
+      "minutes": 245
+    },
+    {
+      "id": 456,
+      "first": "Jacob",
+      "last": "Ramsey",
+      "display": "J.Ramsey",
+      "minutes": 82
+    },
+    {
+      "id": 457,
+      "first": "Jacob",
+      "last": "Murphy",
+      "display": "J.Murphy",
+      "minutes": 329
+    },
+    {
+      "id": 458,
+      "first": "Joelinton Cássio",
+      "last": "Apolinário de Lira",
+      "display": "Joelinton",
+      "minutes": 204
+    },
+    {
+      "id": 459,
+      "first": "Lewis",
+      "last": "Miley",
+      "display": "L.Miley",
+      "minutes": 544
+    },
+    {
+      "id": 460,
+      "first": "Joe",
+      "last": "Willock",
+      "display": "Willock",
+      "minutes": 473
+    },
+    {
+      "id": 461,
+      "first": "Bazoumana",
+      "last": "Touré",
+      "display": "Touré",
+      "minutes": 115
+    },
+    {
+      "id": 462,
+      "first": "Sean",
+      "last": "Steur",
+      "display": "Steur",
+      "minutes": 228
+    },
+    {
+      "id": 463,
+      "first": "Nick",
+      "last": "Woltemade",
+      "display": "Woltemade",
+      "minutes": 19
+    },
+    {
+      "id": 464,
+      "first": "Yoane",
+      "last": "Wissa",
+      "display": "Wissa",
+      "minutes": 621
+    },
+    {
+      "id": 465,
+      "first": "William",
+      "last": "Osula",
+      "display": "Osula",
+      "minutes": 177
+    },
+    {
+      "id": 559,
+      "first": "Aladji",
+      "last": "Bamba",
+      "display": "Bamba",
+      "minutes": 27
+    },
+    {
+      "id": 567,
+      "first": "Lukás",
+      "last": "Hornícek",
+      "display": "Horníček",
+      "minutes": 720
+    },
+    {
+      "id": 593,
+      "first": "Amar",
+      "last": "Dedic",
+      "display": "Dedić",
+      "minutes": 448
+    },
+    {
+      "id": 634,
+      "first": "Matias",
+      "last": "Fernandez-Pardo",
+      "display": "Fernandez-Pardo",
+      "minutes": 302
+    },
+    {
+      "id": 167,
+      "first": "Liam",
+      "last": "Delap",
+      "display": "Delap",
+      "minutes": 528
+    },
+    {
+      "id": 201,
+      "first": "Daniel",
+      "last": "Muñoz Mejía",
+      "display": "Muñoz",
+      "minutes": 527
+    },
+    {
+      "id": 467,
+      "first": "Matz",
+      "last": "Sels",
+      "display": "Sels",
+      "minutes": 720
+    },
+    {
+      "id": 469,
+      "first": "Neco",
+      "last": "Williams",
+      "display": "N.Williams",
+      "minutes": 713
+    },
+    {
+      "id": 471,
+      "first": "Nikola",
+      "last": "Milenković",
+      "display": "Milenković",
+      "minutes": 360
+    },
+    {
+      "id": 472,
+      "first": "Murillo",
+      "last": "Costa dos Santos",
+      "display": "Murillo",
+      "minutes": 719
+    },
+    {
+      "id": 473,
+      "first": "Ola",
+      "last": "Aina",
+      "display": "Aina",
+      "minutes": 388
+    },
+    {
+      "id": 474,
+      "first": "Jair",
+      "last": "Paula da Cunha Filho",
+      "display": "Jair Cunha",
+      "minutes": 534
+    },
+    {
+      "id": 478,
+      "first": "Luca",
+      "last": "Netz",
+      "display": "Netz",
+      "minutes": 33
+    },
+    {
+      "id": 480,
+      "first": "Morgan",
+      "last": "Gibbs-White",
+      "display": "Gibbs-White",
+      "minutes": 630
+    },
+    {
+      "id": 482,
+      "first": "Callum",
+      "last": "Hudson-Odoi",
+      "display": "Hudson-Odoi",
+      "minutes": 45
+    },
+    {
+      "id": 483,
+      "first": "Dan",
+      "last": "Ndoye",
+      "display": "Ndoye",
+      "minutes": 527
+    },
+    {
+      "id": 486,
+      "first": "James",
+      "last": "McAtee",
+      "display": "McAtee",
+      "minutes": 680
+    },
+    {
+      "id": 487,
+      "first": "Nicolás",
+      "last": "Domínguez",
+      "display": "Dominguez",
+      "minutes": 74
+    },
+    {
+      "id": 488,
+      "first": "Ibrahim",
+      "last": "Sangaré",
+      "display": "I.Sangaré",
+      "minutes": 145
+    },
+    {
+      "id": 490,
+      "first": "Chris",
+      "last": "Wood",
+      "display": "Wood",
+      "minutes": 86
+    },
+    {
+      "id": 491,
+      "first": "Igor Jesus",
+      "last": "Maciel da Cruz",
+      "display": "Igor Jesus",
+      "minutes": 257
+    },
+    {
+      "id": 493,
+      "first": "Arnaud",
+      "last": "Kalimuendo",
+      "display": "Kalimuendo",
+      "minutes": 25
+    },
+    {
+      "id": 558,
+      "first": "Xaver",
+      "last": "Schlager",
+      "display": "Schlager",
+      "minutes": 621
+    },
+    {
+      "id": 581,
+      "first": "Ousmane",
+      "last": "Diomande",
+      "display": "Diomande",
+      "minutes": 343
+    },
+    {
+      "id": 112,
+      "first": "Jan Paul",
+      "last": "van Hecke",
+      "display": "Van Hecke",
+      "minutes": 720
+    },
+    {
+      "id": 147,
+      "first": "Tosin",
+      "last": "Adarabioyo",
+      "display": "Tosin",
+      "minutes": 75
+    },
+    {
+      "id": 401,
+      "first": "Omar",
+      "last": "Marmoush",
+      "display": "Marmoush",
+      "minutes": 513
+    },
+    {
+      "id": 403,
+      "first": "Sávio",
+      "last": "Moreira de Oliveira",
+      "display": "Sávio",
+      "minutes": 330
+    },
+    {
+      "id": 455,
+      "first": "Sandro",
+      "last": "Tonali",
+      "display": "Tonali",
+      "minutes": 697
+    },
+    {
+      "id": 496,
+      "first": "Antonín",
+      "last": "Kinský",
+      "display": "Kinsky",
+      "minutes": 720
+    },
+    {
+      "id": 498,
+      "first": "Marcos",
+      "last": "Senesi Barón",
+      "display": "Senesi",
+      "minutes": 178
+    },
+    {
+      "id": 499,
+      "first": "Pedro",
+      "last": "Porro Sauceda",
+      "display": "Pedro Porro",
+      "minutes": 223
+    },
+    {
+      "id": 502,
+      "first": "Andrew",
+      "last": "Robertson",
+      "display": "Robertson",
+      "minutes": 498
+    },
+    {
+      "id": 503,
+      "first": "Micky",
+      "last": "van de Ven",
+      "display": "Van de Ven",
+      "minutes": 556
+    },
+    {
+      "id": 506,
+      "first": "Destiny",
+      "last": "Udogie",
+      "display": "Udogie",
+      "minutes": 159
+    },
+    {
+      "id": 508,
+      "first": "Ben",
+      "last": "Davies",
+      "display": "Davies",
+      "minutes": 22
+    },
+    {
+      "id": 512,
+      "first": "Mohammed",
+      "last": "Kudus",
+      "display": "Kudus",
+      "minutes": 362
+    },
+    {
+      "id": 514,
+      "first": "Mathys",
+      "last": "Tel",
+      "display": "Tel",
+      "minutes": 348
+    },
+    {
+      "id": 515,
+      "first": "James",
+      "last": "Maddison",
+      "display": "Maddison",
+      "minutes": 193
+    },
+    {
+      "id": 516,
+      "first": "Rodrigo",
+      "last": "Bentancur",
+      "display": "Bentancur",
+      "minutes": 381
+    },
+    {
+      "id": 519,
+      "first": "Conor",
+      "last": "Gallagher",
+      "display": "Gallagher",
+      "minutes": 267
+    },
+    {
+      "id": 520,
+      "first": "Lucas",
+      "last": "Bergvall",
+      "display": "Bergvall",
+      "minutes": 143
+    },
+    {
+      "id": 521,
+      "first": "Dejan",
+      "last": "Kulusevski",
+      "display": "Kulusevski",
+      "minutes": 4
+    },
+    {
+      "id": 522,
+      "first": "Archie",
+      "last": "Gray",
+      "display": "Gray",
+      "minutes": 577
+    },
+    {
+      "id": 523,
+      "first": "Mikey",
+      "last": "Moore",
+      "display": "Moore",
+      "minutes": 89
+    },
+    {
+      "id": 525,
+      "first": "Mateus",
+      "last": "Fernandes",
+      "display": "Fernandes",
+      "minutes": 359
+    },
+    {
+      "id": 526,
+      "first": "Dominic",
+      "last": "Solanke-Mitchell",
+      "display": "Solanke",
+      "minutes": 375
+    },
+    {
+      "id": 527,
+      "first": "Richarlison",
+      "last": "de Andrade",
+      "display": "Richarlison",
+      "minutes": 67
+    },
+    {
+      "id": 578,
+      "first": "Mykhailo",
+      "last": "Mudryk",
+      "display": "Mudryk",
+      "minutes": 16
+    },
+    {
+      "id": 501,
+      "first": "Kevin",
+      "last": "Danso",
+      "display": "Danso",
+      "minutes": 376
+    },
+    {
+      "id": 529,
+      "first": "Robin",
+      "last": "Roefs",
+      "display": "Roefs",
+      "minutes": 720
+    },
+    {
+      "id": 532,
+      "first": "Daniel",
+      "last": "Ballard",
+      "display": "Ballard",
+      "minutes": 450
+    },
+    {
+      "id": 533,
+      "first": "Nordi",
+      "last": "Mukiele",
+      "display": "Mukiele",
+      "minutes": 591
+    },
+    {
+      "id": 534,
+      "first": "Trai",
+      "last": "Hume",
+      "display": "Hume",
+      "minutes": 476
+    },
+    {
+      "id": 535,
+      "first": "Omar",
+      "last": "Alderete",
+      "display": "Alderete",
+      "minutes": 119
+    },
+    {
+      "id": 536,
+      "first": "Reinildo",
+      "last": "Mandava",
+      "display": "Reinildo",
+      "minutes": 612
+    },
+    {
+      "id": 539,
+      "first": "Luke",
+      "last": "O'Nien",
+      "display": "O'Nien",
+      "minutes": 187
+    },
+    {
+      "id": 541,
+      "first": "Thomas",
+      "last": "Meunier",
+      "display": "Meunier",
+      "minutes": 429
+    },
+    {
+      "id": 542,
+      "first": "Enzo",
+      "last": "Le Fée",
+      "display": "E.Le Fée",
+      "minutes": 686
+    },
+    {
+      "id": 543,
+      "first": "Habib",
+      "last": "Diarra",
+      "display": "Diarra",
+      "minutes": 70
+    },
+    {
+      "id": 544,
+      "first": "Granit",
+      "last": "Xhaka",
+      "display": "Xhaka",
+      "minutes": 720
+    },
+    {
+      "id": 545,
+      "first": "Noah",
+      "last": "Sadiki",
+      "display": "Sadiki",
+      "minutes": 680
+    },
+    {
+      "id": 547,
+      "first": "Romaine",
+      "last": "Mundle",
+      "display": "Mundle",
+      "minutes": 1
+    },
+    {
+      "id": 548,
+      "first": "Chris",
+      "last": "Rigg",
+      "display": "Rigg",
+      "minutes": 171
+    },
+    {
+      "id": 549,
+      "first": "Chemsdine",
+      "last": "Talbi",
+      "display": "Talbi",
+      "minutes": 42
+    },
+    {
+      "id": 550,
+      "first": "Djiamgone Jocelin Ta",
+      "last": "Bi",
+      "display": "Jocelin.T",
+      "minutes": 17
+    },
+    {
+      "id": 551,
+      "first": "Nilson",
+      "last": "Angulo",
+      "display": "N.Angulo",
+      "minutes": 463
+    },
+    {
+      "id": 552,
+      "first": "Brian",
+      "last": "Brobbey",
+      "display": "Brobbey",
+      "minutes": 463
+    },
+    {
+      "id": 553,
+      "first": "Wilson",
+      "last": "Isidor",
+      "display": "Isidor",
+      "minutes": 207
+    },
+    {
+      "id": 612,
+      "first": "Dayann",
+      "last": "Méthalie",
+      "display": "Methalie",
+      "minutes": 107
+    },
+    {
+      "id": 613,
+      "first": "Jules",
+      "last": "Ahoka",
+      "display": "Ahoka",
+      "minutes": 25
+    },
+    {
+      "id": 646,
+      "first": "Malick",
+      "last": "Fofana",
+      "display": "Fofana",
+      "minutes": 116
+    },
+    {
+      "id": 651,
+      "first": "Juan",
+      "last": "Angulo",
+      "display": "J.Angulo",
+      "minutes": 9
+    },
+    {
+      "id": 668,
+      "first": "Tymur",
+      "last": "Tutierov",
+      "display": "Tutierov",
+      "minutes": 83
+    }
+  ]
+}

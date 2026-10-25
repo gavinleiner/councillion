@@ -1,0 +1,711 @@
+{
+  "version": "group-100-v1",
+  "counts": {
+    "yes": 98,
+    "no": 2,
+    "rated": 100,
+    "total": 100
+  },
+  "questions": [
+    {
+      "id": "q001",
+      "subject": "Games",
+      "prompt": "Name a video game where you can play as an animal.",
+      "vote": "yes",
+      "note": ""
+    },
+    {
+      "id": "q002",
+      "subject": "Games",
+      "prompt": "Name a video game where you can drive a car or kart.",
+      "vote": "yes",
+      "note": ""
+    },
+    {
+      "id": "q003",
+      "subject": "Games",
+      "prompt": "Name a free-to-play PC or console game.",
+      "vote": "yes",
+      "note": ""
+    },
+    {
+      "id": "q004",
+      "subject": "Games",
+      "prompt": "Name a video game you can play with someone on the same screen or console.",
+      "vote": "yes",
+      "note": ""
+    },
+    {
+      "id": "q005",
+      "subject": "Games",
+      "prompt": "Name a video game with a crafting system.",
+      "vote": "yes",
+      "note": ""
+    },
+    {
+      "id": "q006",
+      "subject": "Games",
+      "prompt": "Name a video game where the player can go fishing.",
+      "vote": "yes",
+      "note": ""
+    },
+    {
+      "id": "q007",
+      "subject": "Games",
+      "prompt": "Name a villain from a video game.",
+      "vote": "yes",
+      "note": ""
+    },
+    {
+      "id": "q008",
+      "subject": "Games",
+      "prompt": "Name an item that restores health in a video game.",
+      "vote": "yes",
+      "note": ""
+    },
+    {
+      "id": "q009",
+      "subject": "Games",
+      "prompt": "Name a named weapon from a video game.",
+      "vote": "yes",
+      "note": ""
+    },
+    {
+      "id": "q010",
+      "subject": "Games",
+      "prompt": "Name a named place or map from a video game.",
+      "vote": "yes",
+      "note": ""
+    },
+    {
+      "id": "q011",
+      "subject": "Games",
+      "prompt": "Name a Minecraft mob that can attack a player.",
+      "vote": "yes",
+      "note": ""
+    },
+    {
+      "id": "q012",
+      "subject": "Games",
+      "prompt": "Name something a player can eat in Minecraft.",
+      "vote": "yes",
+      "note": ""
+    },
+    {
+      "id": "q013",
+      "subject": "Games",
+      "prompt": "Name something you can craft using wood, planks or sticks in Minecraft.",
+      "vote": "yes",
+      "note": ""
+    },
+    {
+      "id": "q014",
+      "subject": "Games",
+      "prompt": "Name a location that has appeared on a Fortnite Battle Royale map.",
+      "vote": "yes",
+      "note": ""
+    },
+    {
+      "id": "q015",
+      "subject": "Games",
+      "prompt": "Name a Fortnite item that restores health or shields.",
+      "vote": "yes",
+      "note": ""
+    },
+    {
+      "id": "q016",
+      "subject": "Games",
+      "prompt": "Name a weapon that has appeared in Fortnite Battle Royale.",
+      "vote": "yes",
+      "note": ""
+    },
+    {
+      "id": "q017",
+      "subject": "Games",
+      "prompt": "Name a character from the Mario games.",
+      "vote": "yes",
+      "note": ""
+    },
+    {
+      "id": "q018",
+      "subject": "Games",
+      "prompt": "Name one of the original 151 Pokémon.",
+      "vote": "yes",
+      "note": ""
+    },
+    {
+      "id": "q019",
+      "subject": "Games",
+      "prompt": "Name a boss from Elden Ring.",
+      "vote": "yes",
+      "note": "so good"
+    },
+    {
+      "id": "q020",
+      "subject": "Games",
+      "prompt": "Name a board or card game people can play together offline.",
+      "vote": "yes",
+      "note": ""
+    },
+    {
+      "id": "q021",
+      "subject": "Sports",
+      "prompt": "Name a team from the NFL, NBA, MLB, NHL, WNBA or MLS.",
+      "vote": "yes",
+      "note": ""
+    },
+    {
+      "id": "q022",
+      "subject": "Sports",
+      "prompt": "Name an athlete who has played professionally in a team sport.",
+      "vote": "yes",
+      "note": ""
+    },
+    {
+      "id": "q023",
+      "subject": "Sports",
+      "prompt": "Name a sport or competitive game played with a ball.",
+      "vote": "yes",
+      "note": ""
+    },
+    {
+      "id": "q024",
+      "subject": "Sports",
+      "prompt": "Name a sport played with a racket, bat, stick or club.",
+      "vote": "yes",
+      "note": ""
+    },
+    {
+      "id": "q025",
+      "subject": "Sports",
+      "prompt": "Name a sport or event that has appeared at the modern Olympics.",
+      "vote": "yes",
+      "note": ""
+    },
+    {
+      "id": "q026",
+      "subject": "Sports",
+      "prompt": "Name an athlete who has won an Olympic gold medal.",
+      "vote": "yes",
+      "note": ""
+    },
+    {
+      "id": "q027",
+      "subject": "Sports",
+      "prompt": "Name a brand that makes athletic shoes.",
+      "vote": "yes",
+      "note": ""
+    },
+    {
+      "id": "q028",
+      "subject": "Sports",
+      "prompt": "Name a player position in a team sport.",
+      "vote": "yes",
+      "note": ""
+    },
+    {
+      "id": "q029",
+      "subject": "Sports",
+      "prompt": "Name a professional sports team whose name includes an animal.",
+      "vote": "yes",
+      "note": ""
+    },
+    {
+      "id": "q030",
+      "subject": "Sports",
+      "prompt": "Name a stadium, arena or racetrack used for professional sports.",
+      "vote": "yes",
+      "note": ""
+    },
+    {
+      "id": "q031",
+      "subject": "Sports",
+      "prompt": "Name a piece of equipment an athlete wears.",
+      "vote": "yes",
+      "note": ""
+    },
+    {
+      "id": "q032",
+      "subject": "Sports",
+      "prompt": "Name an athlete featured on a video game's cover or in its title.",
+      "vote": "yes",
+      "note": ""
+    },
+    {
+      "id": "q033",
+      "subject": "Movies & TV",
+      "prompt": "Name a movie that is a sequel to another movie.",
+      "vote": "yes",
+      "note": ""
+    },
+    {
+      "id": "q034",
+      "subject": "Movies & TV",
+      "prompt": "Name a movie based on a video game.",
+      "vote": "yes",
+      "note": ""
+    },
+    {
+      "id": "q035",
+      "subject": "Movies & TV",
+      "prompt": "Name a movie with scenes set in outer space.",
+      "vote": "yes",
+      "note": ""
+    },
+    {
+      "id": "q036",
+      "subject": "Movies & TV",
+      "prompt": "Name an animated movie with talking animal characters.",
+      "vote": "yes",
+      "note": ""
+    },
+    {
+      "id": "q037",
+      "subject": "Movies & TV",
+      "prompt": "Name a superhero movie.",
+      "vote": "yes",
+      "note": ""
+    },
+    {
+      "id": "q038",
+      "subject": "Movies & TV",
+      "prompt": "Name an animated TV series.",
+      "vote": "yes",
+      "note": ""
+    },
+    {
+      "id": "q039",
+      "subject": "Movies & TV",
+      "prompt": "Name a sitcom.",
+      "vote": "yes",
+      "note": ""
+    },
+    {
+      "id": "q040",
+      "subject": "Movies & TV",
+      "prompt": "Name a movie or TV character with superpowers.",
+      "vote": "yes",
+      "note": ""
+    },
+    {
+      "id": "q041",
+      "subject": "Movies & TV",
+      "prompt": "Name a fictional robot.",
+      "vote": "yes",
+      "note": ""
+    },
+    {
+      "id": "q042",
+      "subject": "Movies & TV",
+      "prompt": "Name a fictional animal character.",
+      "vote": "yes",
+      "note": ""
+    },
+    {
+      "id": "q043",
+      "subject": "Movies & TV",
+      "prompt": "Name an actor who appears in a Marvel Cinematic Universe movie.",
+      "vote": "yes",
+      "note": ""
+    },
+    {
+      "id": "q044",
+      "subject": "Movies & TV",
+      "prompt": "Name a villain from a children's animated TV series.",
+      "vote": "yes",
+      "note": ""
+    },
+    {
+      "id": "q045",
+      "subject": "Movies & TV",
+      "prompt": "Name a fictional city or town from a movie or TV show.",
+      "vote": "yes",
+      "note": ""
+    },
+    {
+      "id": "q046",
+      "subject": "Movies & TV",
+      "prompt": "Name a horror movie villain or monster.",
+      "vote": "yes",
+      "note": ""
+    },
+    {
+      "id": "q047",
+      "subject": "Music",
+      "prompt": "Name a song with a person's name in its title.",
+      "vote": "yes",
+      "note": ""
+    },
+    {
+      "id": "q048",
+      "subject": "Music",
+      "prompt": "Name a song with a color in its title.",
+      "vote": "yes",
+      "note": ""
+    },
+    {
+      "id": "q049",
+      "subject": "Music",
+      "prompt": "Name a musical artist or band with a number in their name.",
+      "vote": "yes",
+      "note": ""
+    },
+    {
+      "id": "q050",
+      "subject": "Music",
+      "prompt": "Name a music group with at least three members.",
+      "vote": "yes",
+      "note": ""
+    },
+    {
+      "id": "q051",
+      "subject": "Music",
+      "prompt": "Name a rapper, past or present.",
+      "vote": "yes",
+      "note": ""
+    },
+    {
+      "id": "q052",
+      "subject": "Music",
+      "prompt": "Name a music festival.",
+      "vote": "yes",
+      "note": ""
+    },
+    {
+      "id": "q053",
+      "subject": "Music",
+      "prompt": "Name an act that has performed during a Super Bowl halftime show.",
+      "vote": "no",
+      "note": ""
+    },
+    {
+      "id": "q054",
+      "subject": "Music",
+      "prompt": "Name a musician known professionally by one name.",
+      "vote": "yes",
+      "note": ""
+    },
+    {
+      "id": "q055",
+      "subject": "Music",
+      "prompt": "Name a song written for or performed in a movie musical.",
+      "vote": "no",
+      "note": ""
+    },
+    {
+      "id": "q056",
+      "subject": "Music",
+      "prompt": "Name a musical instrument played by blowing air into it.",
+      "vote": "yes",
+      "note": ""
+    },
+    {
+      "id": "q057",
+      "subject": "Food",
+      "prompt": "Name something sold as a pizza topping.",
+      "vote": "yes",
+      "note": ""
+    },
+    {
+      "id": "q058",
+      "subject": "Food",
+      "prompt": "Name something people put inside a sandwich.",
+      "vote": "yes",
+      "note": ""
+    },
+    {
+      "id": "q059",
+      "subject": "Food",
+      "prompt": "Name a food commonly cooked by frying.",
+      "vote": "yes",
+      "note": ""
+    },
+    {
+      "id": "q060",
+      "subject": "Food",
+      "prompt": "Name a food commonly served on a stick.",
+      "vote": "yes",
+      "note": ""
+    },
+    {
+      "id": "q061",
+      "subject": "Food",
+      "prompt": "Name a named breakfast food or breakfast dish.",
+      "vote": "yes",
+      "note": ""
+    },
+    {
+      "id": "q062",
+      "subject": "Food",
+      "prompt": "Name a pasta shape.",
+      "vote": "yes",
+      "note": ""
+    },
+    {
+      "id": "q063",
+      "subject": "Food",
+      "prompt": "Name a named type of bread.",
+      "vote": "yes",
+      "note": ""
+    },
+    {
+      "id": "q064",
+      "subject": "Food",
+      "prompt": "Name a candy or chocolate brand.",
+      "vote": "yes",
+      "note": ""
+    },
+    {
+      "id": "q065",
+      "subject": "Food",
+      "prompt": "Name a fast-food or fast-casual restaurant chain.",
+      "vote": "yes",
+      "note": ""
+    },
+    {
+      "id": "q066",
+      "subject": "Food",
+      "prompt": "Name a drink you can order at a coffee shop.",
+      "vote": "yes",
+      "note": ""
+    },
+    {
+      "id": "q067",
+      "subject": "Food",
+      "prompt": "Name a dish made mainly from potatoes.",
+      "vote": "yes",
+      "note": ""
+    },
+    {
+      "id": "q068",
+      "subject": "Food",
+      "prompt": "Name a fruit used in a sweet dessert.",
+      "vote": "yes",
+      "note": ""
+    },
+    {
+      "id": "q069",
+      "subject": "Animals & nature",
+      "prompt": "Name an animal that can deliver venom.",
+      "vote": "yes",
+      "note": ""
+    },
+    {
+      "id": "q070",
+      "subject": "Animals & nature",
+      "prompt": "Name an animal that changes color.",
+      "vote": "yes",
+      "note": ""
+    },
+    {
+      "id": "q071",
+      "subject": "Animals & nature",
+      "prompt": "Name an animal that flies but is not a bird.",
+      "vote": "yes",
+      "note": ""
+    },
+    {
+      "id": "q072",
+      "subject": "Animals & nature",
+      "prompt": "Name a wild animal that spends time both in water and on land.",
+      "vote": "yes",
+      "note": ""
+    },
+    {
+      "id": "q073",
+      "subject": "Animals & nature",
+      "prompt": "Name a kind of shark or ray.",
+      "vote": "yes",
+      "note": ""
+    },
+    {
+      "id": "q074",
+      "subject": "Animals & nature",
+      "prompt": "Name an animal that lays eggs.",
+      "vote": "yes",
+      "note": ""
+    },
+    {
+      "id": "q075",
+      "subject": "Animals & nature",
+      "prompt": "Name an animal that is active at night.",
+      "vote": "yes",
+      "note": ""
+    },
+    {
+      "id": "q076",
+      "subject": "Animals & nature",
+      "prompt": "Name an animal people have used for work or transport.",
+      "vote": "yes",
+      "note": ""
+    },
+    {
+      "id": "q077",
+      "subject": "Animals & nature",
+      "prompt": "Name a plant people eat.",
+      "vote": "yes",
+      "note": ""
+    },
+    {
+      "id": "q078",
+      "subject": "Animals & nature",
+      "prompt": "Name a plant that has thorns, spines or prickles.",
+      "vote": "yes",
+      "note": ""
+    },
+    {
+      "id": "q079",
+      "subject": "Science & inventions",
+      "prompt": "Name a named object in our Solar System.",
+      "vote": "yes",
+      "note": ""
+    },
+    {
+      "id": "q080",
+      "subject": "Science & inventions",
+      "prompt": "Name something people use to measure things.",
+      "vote": "yes",
+      "note": ""
+    },
+    {
+      "id": "q081",
+      "subject": "Science & inventions",
+      "prompt": "Name a machine or device that uses an electric motor.",
+      "vote": "yes",
+      "note": ""
+    },
+    {
+      "id": "q082",
+      "subject": "Science & inventions",
+      "prompt": "Name something that produces visible light.",
+      "vote": "yes",
+      "note": ""
+    },
+    {
+      "id": "q083",
+      "subject": "Science & inventions",
+      "prompt": "Name a weather event or weather condition.",
+      "vote": "yes",
+      "note": ""
+    },
+    {
+      "id": "q084",
+      "subject": "Science & inventions",
+      "prompt": "Name a body part a typical human has more than one of.",
+      "vote": "yes",
+      "note": ""
+    },
+    {
+      "id": "q085",
+      "subject": "Science & inventions",
+      "prompt": "Name a chemical element used in everyday products.",
+      "vote": "yes",
+      "note": ""
+    },
+    {
+      "id": "q086",
+      "subject": "Science & inventions",
+      "prompt": "Name a real vehicle that can fly.",
+      "vote": "yes",
+      "note": ""
+    },
+    {
+      "id": "q087",
+      "subject": "Places & travel",
+      "prompt": "Name a landmark people can visit.",
+      "vote": "yes",
+      "note": ""
+    },
+    {
+      "id": "q088",
+      "subject": "Places & travel",
+      "prompt": "Name a country made up entirely of islands.",
+      "vote": "yes",
+      "note": ""
+    },
+    {
+      "id": "q089",
+      "subject": "Places & travel",
+      "prompt": "Name an amusement park or theme-park resort.",
+      "vote": "yes",
+      "note": ""
+    },
+    {
+      "id": "q090",
+      "subject": "Places & travel",
+      "prompt": "Name a city that has hosted the modern Olympics.",
+      "vote": "yes",
+      "note": ""
+    },
+    {
+      "id": "q091",
+      "subject": "Places & travel",
+      "prompt": "Name a food named after a place.",
+      "vote": "yes",
+      "note": ""
+    },
+    {
+      "id": "q092",
+      "subject": "Places & travel",
+      "prompt": "Name a country whose national flag contains a star.",
+      "vote": "yes",
+      "note": ""
+    },
+    {
+      "id": "q093",
+      "subject": "Everyday life",
+      "prompt": "Name something students bring to school.",
+      "vote": "yes",
+      "note": ""
+    },
+    {
+      "id": "q094",
+      "subject": "Everyday life",
+      "prompt": "Name an item used in a bathroom.",
+      "vote": "yes",
+      "note": ""
+    },
+    {
+      "id": "q095",
+      "subject": "Everyday life",
+      "prompt": "Name something people open using a key or a code.",
+      "vote": "yes",
+      "note": ""
+    },
+    {
+      "id": "q096",
+      "subject": "Everyday life",
+      "prompt": "Name an everyday object with wheels.",
+      "vote": "yes",
+      "note": ""
+    },
+    {
+      "id": "q097",
+      "subject": "Everyday life",
+      "prompt": "Name a way to pay for something without physical cash.",
+      "vote": "yes",
+      "note": ""
+    },
+    {
+      "id": "q098",
+      "subject": "Everyday life",
+      "prompt": "Name something that can be controlled with a remote.",
+      "vote": "yes",
+      "note": ""
+    },
+    {
+      "id": "q099",
+      "subject": "Everyday life",
+      "prompt": "Name something you can wear that has a button, zipper or buckle.",
+      "vote": "yes",
+      "note": ""
+    },
+    {
+      "id": "q100",
+      "subject": "Everyday life",
+      "prompt": "Name something people can borrow from a public library.",
+      "vote": "yes",
+      "note": ""
+    }
+  ]
+}
