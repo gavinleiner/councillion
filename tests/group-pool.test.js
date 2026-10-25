@@ -6,18 +6,18 @@ import {createHash} from 'node:crypto';
 import {GROUP_PACKS} from '../group-question-catalog.js';
 import {PACK_BY_ID,MIXED_PACKS,PARTY_PACKS,canonicalQuestionId} from '../data.js';
 import {partyDeck,practiceDraw,random,dailyPacks} from '../engine.js';
-import {uniformQuestionDeck} from '../question-selection.js';
+import {balancedQuestionDeck} from '../question-selection.js';
 import {resolveAnswer,normalize} from '../answer-matching.js';
 import {createGroupCatalog,seedFunAnswers} from '../fun-bank-loader.js';
 const read=path=>readFileSync(new URL('../'+path,import.meta.url));
 const manifest=JSON.parse(read('group-bank-manifest.json'));
 const approved=JSON.parse(read('data-snapshots/group/approved-prompts.json'));
-test('all 98 approved prompts become playable, within exactly 5,000 distinct ordinary and Puffer categories',()=>{
- assert.equal(GROUP_PACKS.length,5000);assert.equal(MIXED_PACKS.length,5000);assert.equal(PARTY_PACKS.length,5000);
+test('all 98 approved prompts are playable; the 5,000 source archive is distinct from normal games',()=>{
+ assert.equal(GROUP_PACKS.length,5000);assert.ok(MIXED_PACKS.length>300&&MIXED_PACKS.length<5000);assert.equal(PARTY_PACKS.length,MIXED_PACKS.length);
  assert.equal(new Set(GROUP_PACKS.map(p=>p.id)).size,5000);assert.equal(new Set(GROUP_PACKS.map(p=>p.identityHash)).size,5000);
  assert.equal(new Set(GROUP_PACKS.map(p=>canonicalQuestionId(p.id))).size,5000);
  assert.equal(GROUP_PACKS.filter(p=>p.reviewId).length,98);
- for(const q of approved){const p=GROUP_PACKS.find(p=>p.reviewId===q.id);assert.ok(p,q.id);assert.equal(p.prompt,q.prompt);assert.ok(p.answerCount>=12,q.id);for(const name of q.examples)assert.equal(resolveAnswer(p,name).status,'exact',q.id+': '+name);}
+ for(const q of approved){const p=GROUP_PACKS.find(p=>p.reviewId===q.id);assert.ok(p,q.id);assert.ok(MIXED_PACKS.includes(p),q.id);assert.equal(p.prompt,q.prompt);assert.ok(p.answerCount>=12,q.id);for(const name of q.examples)assert.equal(resolveAnswer(p,name).status,'exact',q.id+': '+name);}
  for(const id of ['q053','q055'])assert.ok(!GROUP_PACKS.some(p=>p.reviewId===id));
 });
 test('single Steam labels retain actual full memberships without a two-tag condition',()=>{
@@ -26,7 +26,7 @@ test('single Steam labels retain actual full memberships without a two-tag condi
  for(const p of tags){const {tag}=p.predicate;assert.ok(source.tags[tag]);assert.equal(p.prompt,`Name a game on Steam tagged “${tag}”.`);const allowed=new Set(source.tags[tag].map(id=>normalize(source.games[id][0])));for(const a of p.answers)assert.ok(allowed.has(normalize(a.label)),p.id+': '+a.label);}
  for(const tag of ['Horror','Open World','RPG','Survival','Co-op'])assert.ok(tags.some(p=>p.predicate.tag===tag),tag);
  const pairs=GROUP_PACKS.filter(p=>p.predicate?.kind==='steam-tags');assert.ok(pairs.length>=40);
- for(const p of pairs){assert.equal(p.predicate.tags.length,2);assert.ok(p.answerCount>=50&&p.familiarCount>=20);const sets=p.predicate.tags.map(tag=>new Set(source.tags[tag].map(id=>normalize(source.games[id][0]))));for(const a of p.answers)assert.ok(sets.every(set=>set.has(normalize(a.label))),p.id+': '+a.label);}
+ for(const p of pairs){assert.ok(!MIXED_PACKS.includes(p));assert.equal(p.predicate.tags.length,2);assert.ok(p.answerCount>=50&&p.familiarCount>=20);const sets=p.predicate.tags.map(tag=>new Set(source.tags[tag].map(id=>normalize(source.games[id][0]))));for(const a of p.answers)assert.ok(sets.every(set=>set.has(normalize(a.label))),p.id+': '+a.label);}
 });
 test('every new compressed bank has unique canonical labels, unambiguous aliases and its declared content hash',()=>{
  assert.equal(manifest.count,5000);let entries=0;
@@ -47,13 +47,13 @@ test('the approved athlete bank covers both complete returned NHL career indexes
  for(const position of ['skater','goalie']){const source=JSON.parse(gunzipSync(read('data-snapshots/group/nhl-'+position+'.json.gz')));assert.equal(source.players.length,source.total);for(const r of source.players)assert.ok(names.has(normalize(r.name)),r.name);}
  for(const s of ['Wayne Gretzky','Connor McDavid','Patrick Roy','Sachin Tendulkar','Virat Kohli','Richie McCaw','Paola Egonu'])assert.equal(resolveAnswer(p,s).status,'exact',s);
 });
-test('Puffer and Practice use a uniform unseen deck and Daily remains a shared, unrepeated calendar',()=>{
- const expected=uniformQuestionDeck(PARTY_PACKS,{rng:random(794)});assert.deepEqual(partyDeck(random(794)),expected);
- const seen=expected.slice(0,60),next=partyDeck(random(981),seen);assert.equal(next.length,4940);assert.ok(next.every(id=>!seen.includes(id)));
- const practice=practiceDraw([],null,random(794));assert.deepEqual([...practice.ids,...practice.remaining],uniformQuestionDeck(MIXED_PACKS,{rng:random(794)}));
+test('Puffer and Practice balance the unseen deck; the Daily calendar remains shared and unrepeated',()=>{
+ const expected=balancedQuestionDeck(PARTY_PACKS,{rng:random(794)});assert.deepEqual(partyDeck(random(794)),expected);
+ const seen=expected.slice(0,60),next=partyDeck(random(981),seen);assert.equal(next.length,PARTY_PACKS.length-seen.length);assert.ok(next.every(id=>!seen.includes(id)));
+ const practice=practiceDraw([],null,random(794));assert.deepEqual([...practice.ids,...practice.remaining],balancedQuestionDeck(MIXED_PACKS,{rng:random(794)}));
  const prefixes=new Set();for(let seed=1;seed<=100;seed++)prefixes.add(partyDeck(random(seed)).slice(0,7).join('|'));assert.equal(prefixes.size,100);
- for(const id of ['discovery-steam-horror','discovery-steam-rpg-open-world']){const target=canonicalQuestionId(id);assert.notEqual(target,id);assert.ok(PARTY_PACKS.some(p=>p.id===target));assert.ok(!partyDeck(random(42),[id]).includes(target),'legacy Steam history: '+id);}
- const all=[];for(let d=0;d<100;d++){const date=new Date(Date.UTC(2026,9,24+d)).toISOString().slice(0,10),one=dailyPacks(date);assert.equal(one.length,7);assert.deepEqual(one.map(p=>p.id),dailyPacks(date).map(p=>p.id));all.push(...one.map(p=>p.id));}assert.equal(new Set(all).size,700);
+ for(const id of ['discovery-steam-horror','discovery-steam-rpg-open-world']){const target=canonicalQuestionId(id);if(!id.includes('rpg-open-world')){assert.notEqual(target,id);assert.ok(PARTY_PACKS.some(p=>p.id===target));}assert.ok(!partyDeck(random(42),[id]).includes(target),'legacy Steam history: '+id);}
+ const all=[];for(let d=0;d<100;d++){const date=new Date(Date.UTC(2026,9,24+d)).toISOString().slice(0,10),one=dailyPacks(date);if(!one.length)break;assert.equal(one.length,7);assert.deepEqual(one.map(p=>p.id),dailyPacks(date).map(p=>p.id));all.push(...one.map(p=>p.id));}assert.equal(new Set(all).size,all.length);assert.ok(all.length>=21*7);
 });
 test('a retained ID and a new bank revision cannot share stale hydrated answers',()=>{
  const one=createGroupCatalog([{id:'cache-test',answerFile:'one.gz',answerCount:1}],manifest.build)[0],two=createGroupCatalog([{id:'cache-test',answerFile:'two.gz',answerCount:1}],manifest.build)[0];

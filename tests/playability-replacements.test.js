@@ -4,6 +4,7 @@ import {readFileSync} from 'node:fs';
 import {GROUP_PACKS} from '../group-question-catalog.js';
 import {GROUP_ARCHIVED_PACKS} from '../group-question-archive.js';
 import {PARTY_PACKS,MIXED_PACKS,PACK_BY_ID} from '../data.js';
+import {ordinaryQuestionAllowed} from '../ordinary-question-policy.js';
 import {resolveAnswer} from '../answer-matching.js';
 import {loadQuestionData} from '../question-data.js';
 const policy=JSON.parse(readFileSync(new URL('../data-snapshots/group/playability-policy.json',import.meta.url)));
@@ -16,7 +17,7 @@ test('held song prompts never re-enter ordinary selection and remain readable fo
 
 test('118 broader replacements retain large complete banks and no invented user approvals',()=>{
  const additions=GROUP_PACKS.filter(p=>p.id.startsWith('group-open-'));assert.equal(additions.length,118);
- for(const p of additions){assert.ok(p.answerCount>=30,p.id);assert.ok(p.familiarCount>=16,p.id);assert.equal(p.reviewId,undefined);assert.ok(PARTY_PACKS.includes(p));}
+ for(const p of additions){assert.ok(p.answerCount>=30,p.id);assert.ok(p.familiarCount>=16,p.id);assert.equal(p.reviewId,undefined);assert.equal(PARTY_PACKS.includes(p),ordinaryQuestionAllowed(p));}
  for(const kind of ['steam-any-tags','film-any-genres','tv-any-genres','song-title-any-words','bank-union'])assert.ok(additions.some(p=>p.predicate.kind===kind),kind);
  assert.equal(GROUP_PACKS.filter(p=>p.reviewId).length,98);
 });

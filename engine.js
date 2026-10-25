@@ -1,7 +1,7 @@
 import { PACKS, PLAY_PACKS, REVIEWED_PACKS, ORIGINAL_PLAY_PACKS, MIXED_PACKS, PARTY_PACKS, PACK_BY_ID, PARTY_IDS, canonicalQuestionId, answerCount } from './data.js';
 import {normalize,matchAnswer,resolveAnswer} from './answer-matching.js';
 export {normalize,matchAnswer,resolveAnswer,typoDistance} from './answer-matching.js';
-import {hash,random,shuffle,uniformQuestionDeck,QUESTION_SELECTION_BUILD} from './question-selection.js';
+import {hash,random,shuffle,balancedQuestionDeck,QUESTION_SELECTION_BUILD} from './question-selection.js';
 export {hash,random,shuffle} from './question-selection.js';
 import {FRESH_DAILY_START,FRESH_DAILY_IDS} from './daily-schedule.js';
 export const GROUP_DAILY_START='2026-10-24';
@@ -35,20 +35,20 @@ export function isSharedDailyRun(run,day=dateKey()){
 }
 export function tier(points){return points>=100?{name:'KRILLION',icon:'✦',color:'rarity-krillion'}:points>=85?{name:'DEEP CUT',icon:'◆',color:'rarity-deepcut'}:points>=60?{name:'RARE',icon:'✧',color:'rarity-rare'}:points>=30?{name:'SCHOOLER',icon:'◈',color:'rarity-schooler'}:points>0?{name:'PLANKTON',icon:'·',color:'rarity-plankton'}:{name:'NO ECHO',icon:'×',color:'muted'};}
 
-export function partyDeck(rng=Math.random,seen=[]){const excluded=new Set(seen.map(canonicalQuestionId));return uniformQuestionDeck(PARTY_PACKS.filter(p=>!excluded.has(canonicalQuestionId(p.id))),{rng});}
+export function partyDeck(rng=Math.random,seen=[]){const excluded=new Set(seen.map(canonicalQuestionId));return balancedQuestionDeck(PARTY_PACKS.filter(p=>!excluded.has(canonicalQuestionId(p.id))),{rng,recent:seen.slice(-6).map(id=>PACK_BY_ID.get(id)?.family).filter(Boolean)});}
 export function reshufflePracticeQueue(pending=[],rng=Math.random,previousSelection=null){
  const ids=new Set(pending);
  // These IDs did not exist in the weighted release, so adding them during its
  // one-time migration cannot replay a question that user had already drawn.
  if(pending.length&&previousSelection==='20261023-balanced-v1')for(const p of MIXED_PACKS)if(p.id.startsWith('group-open-'))ids.add(p.id);
- return uniformQuestionDeck(MIXED_PACKS.filter(p=>ids.has(p.id)),{rng});
+ return balancedQuestionDeck(MIXED_PACKS.filter(p=>ids.has(p.id)),{rng});
 }
 export function practiceDraw(pending=[],featured=null,rng=Math.random){
  if(featured&&!REVIEWED_PACKS.some(p=>p.id===featured))throw Error('This category has been retired. Choose a reviewed question.');
  const pool=new Set(MIXED_PACKS.map(p=>p.id));let queue=[...new Set(pending)].filter(id=>pool.has(id)),ids=featured?[featured]:[];
  if(featured)queue=queue.filter(id=>id!==featured);
  const seen=new Set(ids);
- while(ids.length<7){if(!queue.length)queue=uniformQuestionDeck(MIXED_PACKS,{rng});const id=queue.shift();if(!seen.has(id)){ids.push(id);seen.add(id);}else queue.push(id);}
+ while(ids.length<7){if(!queue.length)queue=balancedQuestionDeck(MIXED_PACKS,{rng});const id=queue.shift();if(!seen.has(id)){ids.push(id);seen.add(id);}else queue.push(id);}
  return {ids,remaining:queue};
 }
 export function refreshPartyQuestions(state,now=Date.now(),rng=Math.random){
@@ -56,7 +56,7 @@ export function refreshPartyQuestions(state,now=Date.now(),rng=Math.random){
  prefix=state.packIds.slice(0,keep),seen=new Set([...(state.seenIds??[]).map(canonicalQuestionId),...prefix.map(canonicalQuestionId)]),tail=[];
  for(const id of state.packIds.slice(keep)){const key=canonicalQuestionId(id);if(allowed.has(id)&&!seen.has(key)){tail.push(id);seen.add(key);}}
  const migration=state.selectionBuild!==QUESTION_SELECTION_BUILD,remaining=[...tail,...partyDeck(rng,[...seen])];
- const next=[...prefix,...(migration?shuffle(remaining,rng):remaining)],retired=state.phase==='playing'&&!allowed.has(state.packIds[state.round-1]);
+ const next=[...prefix,...(migration?balancedQuestionDeck(remaining.map(id=>PACK_BY_ID.get(id)),{rng,recent:prefix.slice(-6).map(id=>PACK_BY_ID.get(id)?.family).filter(Boolean)}):remaining)],retired=state.phase==='playing'&&!allowed.has(state.packIds[state.round-1]);
  const changed=migration||next.length!==state.packIds.length||next.some((id,i)=>id!==state.packIds[i]);if(changed){state.packIds=next;state.selectionBuild=QUESTION_SELECTION_BUILD;}
  if(retired){state.phase='burst';state.nextAt=now+900;state.used=[];state.players.forEach(p=>delete p.lastAnswer);state.notice='Reviewed question refreshed · no heart lost.';}
  if(changed||retired)state.revision++;return changed||retired;
