@@ -1,6 +1,6 @@
 // Explicit normal-play admission. Archived source predicates do not become
 // good party questions merely because their answer inventory is large.
-export const ORDINARY_POLICY_BUILD='20261025-variety-v1';
+export const ORDINARY_POLICY_BUILD='20261025-expansion-v1';
 const words=text=>new Set(text.split('|'));
 const steam=words('Action|Adventure|RPG|Action RPG|Open World|Survival|Survival Horror|Horror|Psychological Horror|Co-op|Multiplayer|Singleplayer|Local Co-Op|Local Multiplayer|Split Screen|FPS|Shooter|Third-Person Shooter|Platformer|Puzzle|Strategy|RTS|Turn-Based Strategy|Turn-Based|Racing|Sports|Simulation|Sandbox|Building|Crafting|Farming Sim|Fishing|Cooking|Souls-like|Roguelike|Roguelite|Dungeon Crawler|Fighting|Stealth|Zombies|Superhero|Pirates|Space|Fantasy|Sci-fi|Detective|Choices Matter|Story Rich|Tower Defense|City Builder|Card Game|Board Game|Battle Royale|Metroidvania');
 const genres=words('pop|rock|hip-hop|rap|country|metal|jazz|blues|classical|r-n-b|soul|funk|disco|dance|electronic|edm|punk|reggae|latin|folk|indie-pop|indie-rock|alternative|soundtracks|k-pop');

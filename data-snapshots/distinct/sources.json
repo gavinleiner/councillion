@@ -1,0 +1,80 @@
+{
+  "retrieved": "2026-10-25",
+  "status": "First admitted expansion batch; the requested 5,000-question normal pool is not complete.",
+  "sources": [
+    {
+      "name": "DBpedia and Wikipedia contributors",
+      "url": "https://www.dbpedia.org/resources/sparql/",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "file": "screen-credits.json.gz",
+      "use": "Factual screen-work titles and cast relationships; no descriptions or artwork. Future/untitled works and aggregate film-series labels are excluded by recipes. The global source supplements the retained American film casts; no claim of exhaustive global filmography coverage."
+    },
+    {
+      "name": "servant-42 Wikipedia movie data",
+      "url": "https://github.com/servant-42/wikipedia-movie-data",
+      "license": "MIT; notice retained in data-snapshots/rework/notices/",
+      "use": "Released-film titles and cast facts in the previously pinned source snapshot."
+    },
+    {
+      "name": "Princeton WordNet 3.0",
+      "url": "https://wordnet.princeton.edu/license-and-commercial-use",
+      "license": "WordNet license in data-snapshots/variety/wordnet-license.txt",
+      "use": "Individually admitted concrete noun senses, descendants and explicit synonyms. The full WordNet ontology is not automatically eligible."
+    },
+    {
+      "name": "Retained game data",
+      "url": "https://github.com/PrismarineJS/minecraft-data",
+      "use": "Minecraft, Fortnite, Stardew Valley, Valorant, League of Legends, Dota and Elden Ring source inventories and notices are pinned in data-snapshots/rework/source-manifest.json."
+    },
+    {
+      "name": "Retained music and sports facts",
+      "url": "https://github.com/gavinleiner/councillion/blob/main/DATA-SOURCES.md",
+      "use": "Complete retained artist/song and whole major-team player banks. No season/position/nationality intersections are generated for the new team prompts."
+    },
+    {
+      "name": "Authored knowledge inventories",
+      "file": "authored-facts.tsv",
+      "use": "New finite editorial lists with explicit aliases and negative examples. Background references are below; these are not source-popularity measurements or a claim that every possible answer has been independently verified."
+    },
+    {
+      "name": "OpenFlights",
+      "url": "https://openflights.org/data.php",
+      "license": "https://opendatacommons.org/licenses/odbl/1-0/",
+      "file": "airlines.json",
+      "use": "Airline names and recorded name aliases; current and historical operators. The derived airline bank is available under ODbL 1.0. IATA/ICAO/callsign-code aliases are not added. This is a sporadically updated source snapshot, not a live authoritative airline registry."
+    },
+    {
+      "name": "ByMykel CSGO-API",
+      "url": "https://github.com/ByMykel/CSGO-API",
+      "license": "MIT; full notice in cs2-LICENSE.txt",
+      "file": "cs2-weapons.json",
+      "use": "Parsed base-game weapon names and categories only; no descriptions or images. Gloves and healing items do not enter the weapon question."
+    },
+    {
+      "name": "Retained inventory repairs",
+      "file": "retained-repairs.json",
+      "use": "Explicit familiar additions and aliases; fruit and fermented-food boundaries repaired with authored inventories. WordNet phase-state and generic-name errors are repaired in inventory-overrides.json. Semantic equivalents in semantic-exclusions.json are excluded from the new-question count."
+    }
+  ],
+  "background": [
+    "https://openstax.org/details/books/anatomy-and-physiology-2e",
+    "https://www.nist.gov/pml/owm/metric-si/si-units",
+    "https://chem.libretexts.org/Bookshelves/Analytical_Chemistry",
+    "https://www.nps.gov/common/uploads/teachers/lessonplans/Adaptations%20LessonPlan_5081.pdf",
+    "https://www.allaboutbirds.org/",
+    "https://www.fao.org/fao-who-codexalimentarius/",
+    "https://whc.unesco.org/en/list/",
+    "https://www.un.org/en/about-us/un-system",
+    "https://www.iso.org/iso-4217-currency-codes.html",
+    "https://webbook.nist.gov/chemistry/",
+    "https://citrusvariety.ucr.edu/",
+    "https://www.fao.org/4/x0560e/x0560e00.htm",
+    "https://www.un.org/en/landlocked/about-landlocked-developing-countries",
+    "https://volcano.si.edu/volcanolist_holocene.cfm",
+    "https://volcano.si.edu/volcanolist_pleistocene.cfm",
+    "https://worldathletics.org/our-sport",
+    "https://www.nps.gov/articles/10essentials.htm",
+    "https://historicsites.nc.gov/all-sites/horne-creek-farm/southern-heritage-apple-orchard/learn-more/apple-variety-information/apple-index-w"
+  ],
+  "limits": "Every inventory is finite. Source metadata can omit or misclassify an answer. Familiarity and rarity remain editorial estimates. This batch is not 5,000 new questions; its actual admitted and runtime counts are published separately."
+}

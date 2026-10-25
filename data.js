@@ -1,3 +1,4 @@
+import {DISTINCT_PACKS} from './distinct-question-catalog.js';
 import {questionReview} from './question-quality.js';
 import {GROUP_PACKS,GROUP_EQUIVALENTS} from './group-question-catalog.js';
 import {GROUP_ARCHIVED_PACKS} from './group-question-archive.js';
@@ -71,7 +72,7 @@ const historicalOriginalPacks=PACKS.filter(p=>p.dailyEligible&&!p.catalogVersion
 // Replace retained IDs in place so saved games still resolve the same ID.
 const groupIds=new Set(GROUP_PACKS.map(p=>p.id));
 for(let i=PACKS.length-1;i>=0;i--)if(groupIds.has(PACKS[i].id))PACKS.splice(i,1);
-PACKS.push(...GROUP_ARCHIVED_PACKS.filter(p=>!groupIds.has(p.id)),...GROUP_PACKS);
+PACKS.push(...GROUP_ARCHIVED_PACKS.filter(p=>!groupIds.has(p.id)),...GROUP_PACKS,...DISTINCT_PACKS);
 for(const p of PACKS){if(p.id==='fun-sports'||p.id==='var-semantic-sports_equipment-n-01')p.family='sports';if(['catalog-instrument-types','catalog-genre-clean','catalog-dances'].includes(p.id))p.family='music';if(p.id==='pokemon-abilities')p.family='gaming';}
 export const PACK_BY_ID=new Map(PACKS.map(p=>[p.id,p]));
 export const PLAY_PACKS=PACKS.filter(p=>p.dailyEligible);
@@ -107,6 +108,7 @@ for(const p of PACKS)if(!p.groupProfileVersion){
  if(target)groupEquivalents[p.id]=target;
 }
 for(const p of PACKS)p.questionKey=groupEquivalents[p.id]??equivalents[p.id]??p.id;
+for(const p of DISTINCT_PACKS)if(p.originId)p.questionKey=PACK_BY_ID.get(p.originId)?.questionKey??p.originId;
 const concepts=new Map(),candidates=REVIEWED_PACKS.filter(p=>questionReview(p).status==='automatic');
 export const MIXED_PACKS=candidates.filter(p=>{if(concepts.has(p.questionKey))return false;concepts.set(p.questionKey,p.id);return true;});
 export const canonicalQuestionId=id=>{const p=PACK_BY_ID.get(id);return concepts.get(p?.questionKey)??id;};
@@ -114,5 +116,5 @@ for(const p of MIXED_PACKS)if(p.id==='pokemon-species')p.family='gaming';
 
 PACKS.find(p=>p.id==='dinosaur-genera').excludedAnswers=['Mosasaurus','Pteranodon','Pterodactylus','Plesiosaurus','Ichthyosaurus','Quetzalcoatlus','Dimetrodon','Crocodile','Chicken','Dodo'];
 
-export const PARTY_PACKS=MIXED_PACKS.filter(p=>p.partyEligible!==false&&answerCount(p)>=(p.groupProfileVersion===1?(p.reviewId?12:24):30));
+export const PARTY_PACKS=MIXED_PACKS.filter(p=>p.partyEligible!==false&&answerCount(p)>=(p.editorialVersion===1?(p.naturalFinite?12:24):p.groupProfileVersion===1?(p.reviewId?12:24):30));
 export const PARTY_IDS=new Set(PARTY_PACKS.map(p=>p.id));

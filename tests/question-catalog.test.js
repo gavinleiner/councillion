@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
 import {spawnSync} from 'node:child_process';
-import {PLAY_PACKS,ORIGINAL_PLAY_PACKS,MIXED_PACKS,PARTY_PACKS,answerCount} from '../data.js';
+import {PLAY_PACKS,ORIGINAL_PLAY_PACKS,MIXED_PACKS,PARTY_PACKS,answerCount,canonicalQuestionId} from '../data.js';
 import {CATALOG_PACKS} from '../question-catalog.js';
 import {dailyPacks,matchAnswer,normalize,partyDeck,random,EXPANDED_DAILY_START} from '../engine.js';
 const pack=id=>PLAY_PACKS.find(p=>p.id===id);
@@ -20,8 +20,10 @@ test('a cold party deck and question library use metadata without hydrating the 
  const r=spawnSync(process.execPath,['--input-type=module','-e',source],{cwd:new URL('..',import.meta.url),encoding:'utf8',env:{...process.env,NODE_OPTIONS:''}});
  assert.equal(r.status,0,r.stderr);assert.deepEqual(JSON.parse(r.stdout),[false,PARTY_PACKS.length,PLAY_PACKS.length,false]);
 });
-test('daily calendar never reuses a prompt and historical dates retain their draw',()=>{
+test('daily calendar never reuses a prompt and historical dates retain their draw',async()=>{
  for(const p of dailyPacks('2026-10-22'))assert.ok(ORIGINAL_PLAY_PACKS.includes(p));
+ const published=JSON.parse(await readFile(new URL('../data-snapshots/group/published-20261023-24.json',import.meta.url),'utf8'));
+ assert.deepEqual(dailyPacks('2026-10-24').map(p=>p.id),published.slice(7),'published history remains fixed even when a prompt is retired');
  const seen=new Set();let days=0;
  for(let i=0;i<730;i++){
   const day=new Date(Date.UTC(2026,9,24+i)).toISOString().slice(0,10),chosen=dailyPacks(day);
@@ -29,7 +31,7 @@ test('daily calendar never reuses a prompt and historical dates retain their dra
   for(const p of chosen){assert.ok(!seen.has(p.id),day+': '+p.id);seen.add(p.id);}
  }
  assert.ok(days>=14);assert.equal(seen.size,days*7);
- assert.ok([...seen].every(id=>MIXED_PACKS.some(p=>p.id===id)));
+ assert.ok([...seen].every(id=>published.includes(id)||MIXED_PACKS.some(p=>p.id===canonicalQuestionId(id))),'only frozen history may contain retired prompts');
 });
 test('party decks cover the ordinary pool exactly once without an alphabetic or family cycle',()=>{
  for(let seed=0;seed<20;seed++){

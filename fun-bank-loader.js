@@ -1,9 +1,9 @@
 // Each broad bank is fetched separately; home/library use metadata only.
-const loaded=new Map(),pending=new Map();let build='',extraBuild='',discoveryBuild='',groupBuild='',localReader;
+const loaded=new Map(),pending=new Map();let build='',extraBuild='',discoveryBuild='',groupBuild='',distinctBuild='',localReader;
 export function registerFunDataReader(reader){localReader=reader;}
 const bankKey=pack=>pack.id+'@'+(pack.answerFile??'inline');
 function readLocal(pack){if(localReader&&!loaded.has(bankKey(pack)))seedFunAnswers(pack,localReader(pack));}
-export const funBuild=()=>build+'-'+extraBuild+'-'+discoveryBuild+'-'+groupBuild;
+export const funBuild=()=>build+'-'+extraBuild+'-'+discoveryBuild+'-'+groupBuild+'-'+distinctBuild;
 export const funAnswersReady=packs=>packs.every(p=>{if(p.funVersion)readLocal(p);return !p.funVersion||loaded.has(bankKey(p));});
 export function seedFunAnswers(pack,rows){
  if(!Array.isArray(rows)||rows.length!==pack.answerCount)throw Error('The question bank update is incomplete. Refresh and try again.');
@@ -23,3 +23,5 @@ export function createExtraCatalog(metadata,version){extraBuild=version;return m
 export function createDiscoveryCatalog(metadata,version){discoveryBuild=version;return metadata.map(meta=>Object.defineProperty({...meta},'answers',{enumerable:true,get(){readLocal(meta);if(!loaded.has(bankKey(meta)))throw Error('This answer bank is still loading.');return loaded.get(bankKey(meta));}}));}
 export function createHistoricalCatalog(metadata){return metadata.map(meta=>Object.defineProperty({...meta},'answers',{enumerable:true,get(){readLocal(meta);if(!loaded.has(bankKey(meta)))throw Error('This answer bank is still loading.');return loaded.get(bankKey(meta));}}));}
 export function createGroupCatalog(metadata,version){groupBuild=version;return createHistoricalCatalog(metadata);}
+
+export function createDistinctCatalog(metadata,version){distinctBuild=version;return createHistoricalCatalog(metadata);}

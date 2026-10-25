@@ -1,0 +1,15 @@
+{
+  "inventory-plant-common-names": "Same plant concept as fun-plants; a common-name-only rewrite is not a new question.",
+  "inventory-catalog-textile-types": "Same fabric/textile concept as fabric-types.",
+  "kind-ingredient-n-03": "Same cooking-ingredient concept as fun-ingredients.",
+  "kind-appliance-n-02": "Household/workplace rewrite is too close to household-appliances.",
+  "kind-implement-n-01": "Same general tool/implement concept as catalog-hand-tool-types.",
+  "kind-equipment-n-01": "Too vague to add a useful new answer boundary.",
+  "kind-source-of-illumination-n-01": "Near-identical light-source question to approved group-q082.",
+  "kind-mythical-being-n-01": "Same mythical-creature/being concept as catalog-mythical-creature-types.",
+  "kind-jacket-n-01": "Near-identical outerwear concept to var-semantic-coat-n-01.",
+  "kind-game-equipment-n-01": "Too close to the existing sports-equipment inventory.",
+  "facts-egg-laying": "Same egg-laying concept as approved group-q074.",
+  "facts-potato-dishes": "Same potato-dish concept as approved group-q067.",
+  "facts-world-landmarks": "Same visitable-landmark concept as approved group-q087."
+}

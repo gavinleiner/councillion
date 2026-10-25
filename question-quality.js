@@ -52,6 +52,7 @@ const holdSpecialist=ids(`catalog-cloud-types modern-art-movements guitar-makers
 const broadSemantic=ids(`exercise-n-01 domestic_animal-n-01 aircraft-n-01 bag-n-01 ball-n-01 boat-n-01 building-n-01 car-n-01 chair-n-01 coat-n-01 computer-n-01 footwear-n-02 kitchen_appliance-n-01 knife-n-01 lamp-n-01 machine-n-01 place_of_business-n-01 shoe-n-01 shop-n-01 sports_equipment-n-01 vehicle-n-01 weapon-n-01 meal-n-01 baked_goods-n-01 pastry-n-02 meat-n-01 seafood-n-01 dairy_product-n-01 beverage-n-01 tree-n-01 fruit_tree-n-01`);
 export function questionReview(pack){
  if(pack.ordinaryRetired)return {status:'specialist',reason:'Held out of ordinary play after the playability review; kept only for saved dives and published Daily history.'};
+ if(pack.editorialVersion===1)return {status:'automatic',reason:'Explicitly admitted topic recipe with a defined answer boundary and a separate factual inventory.'};
  if(pack.groupProfileVersion===1)return ordinaryQuestionAllowed(pack)?{status:'automatic',reason:'Broad normal-play question under the variety review; includes all approved tryout prompts.'}:{status:'specialist',reason:'Excluded from random games: multiple Steam labels, narrow metadata combinations or specialist title/artist constraints. Available only by explicit choice.'};
  // Legacy inventories remain addressable for saved dives and optional practice.
  // They do not silently expand the admitted ordinary-play pool.

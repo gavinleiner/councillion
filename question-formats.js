@@ -3,6 +3,13 @@ export function questionFormat(pack){
  if(group.startsWith('group-approved-'))return 'Group-approved prompt';
  if(group.startsWith('group-broad-'))return 'Broad category';
  return ({
+  'distinct-kinds':'Kinds, examples & objects',
+  'distinct-screen-credits':'Screen works by cast member',
+  'distinct-castmates':'Shared screen casts',
+  'distinct-artist-songs':'Songs by one artist',
+  'distinct-game-objects':'Game objects & characters',
+  'distinct-authored-facts':'Everyday & world knowledge',
+  'distinct-food-ingredients':'Foods & ingredients',
   'group-steam-single-tag':'Steam · one tag',
   'group-steam-two-tags':'Steam · two tags',
   'group-artist-songs':'Songs by one artist',
