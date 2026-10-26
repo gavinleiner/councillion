@@ -1,6 +1,6 @@
 {
-  "build": "f673199b03b9d1b9",
-  "count": 410,
+  "build": "065e1a2004c360f6",
+  "count": 413,
   "categories": [
     {
       "id": "group-q001",
@@ -3281,6 +3281,30 @@
       "group": "authored-whole-concept",
       "answerCount": 687,
       "scope": "Professional astronauts, cosmonauts and taikonauts worldwide, past or present, count, including people selected for professional astronaut training even if they never flew. Private-company professional astronauts and payload specialists count; celebrity passengers and fictional characters are not automatically astronauts."
+    },
+    {
+      "id": "authored-spongebob-characters",
+      "prompt": "Name a character from SpongeBob SquarePants.",
+      "family": "culture",
+      "group": "authored-whole-franchise-characters",
+      "answerCount": 178,
+      "scope": "Named or distinctly identified characters from SpongeBob SquarePants, its films and spin-offs count. Identified character groups also count. Voice actors, episode titles and general species alone are not character names."
+    },
+    {
+      "id": "authored-toy-story-characters",
+      "prompt": "Name a character from the Toy Story franchise.",
+      "family": "culture",
+      "group": "authored-whole-franchise-characters",
+      "answerCount": 232,
+      "scope": "Named or distinctly identified characters from Toy Story films, shorts, series and the Lightyear spin-off count. Established collective character identities such as the Aliens count. Voice actors, film titles and descriptive organizational headings do not count."
+    },
+    {
+      "id": "authored-shrek-characters",
+      "prompt": "Name a character from Shrek or Puss in Boots.",
+      "family": "culture",
+      "group": "authored-whole-franchise-characters",
+      "answerCount": 82,
+      "scope": "Named or distinctly identified characters in the Shrek films and spin-offs, including Puss in Boots films, count. Identified groups such as the Three Little Pigs count. Voice actors and generic fairy-tale species alone do not count."
     }
   ]
 }

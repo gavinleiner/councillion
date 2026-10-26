@@ -409,3 +409,6 @@ id,subject,question,canonical_answers
 "authored-heron-egret-bittern-kinds","nature","Name a kind of heron, egret or bittern.","77"
 "authored-computer-languages","science","Name a programming, scripting, query, markup or stylesheet language.","1370"
 "authored-astronauts-cosmonauts","science","Name a real astronaut or cosmonaut.","687"
+"authored-spongebob-characters","culture","Name a character from SpongeBob SquarePants.","178"
+"authored-toy-story-characters","culture","Name a character from the Toy Story franchise.","232"
+"authored-shrek-characters","culture","Name a character from Shrek or Puss in Boots.","82"

@@ -1,0 +1,30 @@
+[
+  {
+    "id": "authored-spongebob-characters",
+    "canonicalNames": 178,
+    "rawSourceFields": 184,
+    "familiarInputs": 39,
+    "explicitHeldNames": 0
+  },
+  {
+    "id": "authored-toy-story-characters",
+    "canonicalNames": 232,
+    "rawSourceFields": 235,
+    "familiarInputs": 50,
+    "explicitHeldNames": 3
+  },
+  {
+    "id": "authored-shrek-characters",
+    "canonicalNames": 82,
+    "rawSourceFields": 88,
+    "familiarInputs": 52,
+    "explicitHeldNames": 3
+  },
+  {
+    "id": "authored-avatar-characters",
+    "canonicalNames": 150,
+    "rawSourceFields": 163,
+    "familiarInputs": 55,
+    "explicitHeldNames": 11
+  }
+]
