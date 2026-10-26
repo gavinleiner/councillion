@@ -260,3 +260,4 @@ id,subject,question,canonical_answers
 "authored-parrot-kinds","nature","Name a kind of parrot.","421"
 "authored-penguin-kinds","nature","Name a kind of penguin.","20"
 "authored-bat-kinds","nature","Name a kind of bat.","1523"
+"authored-rock-types","science","Name a type of rock.","193"

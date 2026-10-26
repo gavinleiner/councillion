@@ -1,6 +1,6 @@
 {
-  "build": "4fbc135e021ba7bc",
-  "count": 261,
+  "build": "c89539e6ed8921c9",
+  "count": 262,
   "categories": [
     {
       "id": "group-q001",
@@ -2089,6 +2089,14 @@
       "group": "authored-whole-taxonomic-group",
       "answerCount": 1523,
       "scope": "Living and recently extinct species in the Mammal Diversity Database, plus established named bat groups, count. Common names and documented scientific names count. A flying fox is a bat; a flying squirrel is not. Prehistoric fossil-only species are outside this current-species inventory."
+    },
+    {
+      "id": "authored-rock-types",
+      "prompt": "Name a type of rock.",
+      "family": "science",
+      "group": "authored-whole-concept",
+      "answerCount": 193,
+      "scope": "Recognized geological rock names, rock families and established natural stone varieties count. Common and scientific rock names are accepted. Individual minerals, chemical elements, whole mountains and manufactured building products are not rock types."
     }
   ]
 }

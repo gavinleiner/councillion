@@ -4941,6 +4941,70 @@
         "https://www.worldarchery.sport/sport/disciplines"
       ],
       "review": "Independent common-guess sweep repaired Kenpo, Jiu-jitsu, standard school names, ice skating and ordinary sport names. Reconciled generic Nordic skiing vs cross-country and downhill vs the broader Alpine category. Governing-body checks confirm the rare art/discipline and organized snowball fighting; familiar wording cannot farm a 100-point foreign-name bonus. Fictional styles and roller sports excluded. This is author review, not a claimed user vote."
+    },
+    {
+      "id": "authored-rock-types",
+      "basis": "individually-reviewed-whole-rock-concept-based-on-original-yes-model",
+      "yes": [
+        "Granite",
+        "Basalt",
+        "Marble",
+        "Sandstone",
+        "Limestone",
+        "Slate",
+        "Obsidian",
+        "Pumice",
+        "Shale",
+        "Chalk",
+        "Flint",
+        "Gneiss",
+        "Quartzite",
+        "Schist",
+        "Coal",
+        "Breccia",
+        "Conglomerate",
+        "Tuff",
+        "Gabbro",
+        "Diorite",
+        "Andesite",
+        "Rhyolite",
+        "Siltstone",
+        "Mudstone",
+        "Soapstone",
+        "Travertine",
+        "Coquina",
+        "Lignite",
+        "Anthracite",
+        "Hornfels",
+        "Igneous",
+        "Sedimentary",
+        "Metamorphic",
+        "Intrusive",
+        "Plutonic",
+        "Extrusive",
+        "Volcanic",
+        "Lava rock",
+        "Dolerite",
+        "Dolostone",
+        "Dolomite rock"
+      ],
+      "no": [
+        "Diamond",
+        "Quartz",
+        "Gold",
+        "Concrete",
+        "Mount Everest"
+      ],
+      "prompt": "Name a type of rock.",
+      "family": "science",
+      "inventoryEvidence": [
+        "https://en.wikipedia.org/wiki/List_of_rock_types",
+        "https://www.usgs.gov/faqs/what-difference-between-a-rock-and-a-mineral",
+        "https://www.nps.gov/subjects/geology/how-rocks-are-classified.htm",
+        "https://www.nps.gov/subjects/geology/igneous.htm",
+        "https://www.bgs.ac.uk/discovering-geology/rocks-and-minerals/"
+      ],
+      "review": "41 independent familiar-input cases include the basic classroom rock families, not only specialized lithology names. Established synonyms share identity; note text is removed from labels. Held an uncertain mineraloid mixture and an idealized composition. Primary geological sources distinguish rocks from individual minerals and manufactured products. This is author review, not a claimed user vote."
     }
   ],
   "expansionBatches": [
@@ -5057,6 +5121,20 @@
         "WKF, IJF, ISU, FIS and Olympic sport context",
         "Qwan Ki Do official federation; World Archery ski-archery discipline; Japan Yukigassen Federation rules",
         "Genuine familiar synonyms assigned to their real identity and familiarity tier"
+      ]
+    },
+    {
+      "id": "authored-whole-rock-concept-07",
+      "date": "2026-10-25",
+      "questions": [
+        "authored-rock-types"
+      ],
+      "status": "admitted in development; the requested 5,000-question release is unfinished",
+      "sourceChecks": [
+        "41 common-name/classification cases and five wrong-category cases through the gameplay matcher",
+        "USGS/NPS/BGS rock classification and mineral distinction",
+        "Primary elementary families supplied alongside named types; explicit synonyms merged",
+        "No location/colour/age-tag multiplication; uncertain source rows held"
       ]
     }
   ]

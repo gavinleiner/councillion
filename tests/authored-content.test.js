@@ -179,3 +179,14 @@ test('common sports inputs work without granting a rare-label bonus for familiar
  assert.equal(resolveAnswer(winter,'Downhill skiing').answer.label,'Downhill');
  assert.notEqual(resolveAnswer(winter,'Nordic skiing').answer.label,resolveAnswer(winter,'Cross-country skiing').answer.label);
 });
+
+test('the rock question includes basic classroom families and actual synonyms, not only specialist names',()=>{
+ const p=pack('rock-types');
+ for(const n of ['Igneous','Sedimentary','Metamorphic','Granite','Basalt','Marble','Sandstone','Limestone','Slate']){
+  const result=resolveAnswer(p,n);assert.equal(result.status,'exact',n);assert.equal(result.answer.points,10,n);
+ }
+ for(const [a,b]of [['Diabase','Dolerite'],['Dolostone','Dolomite rock'],['Soapstone','Steatite'],['Intrusive','Plutonic'],['Extrusive','Volcanic']])assert.equal(resolveAnswer(p,a).answer.label,resolveAnswer(p,b).answer.label,a);
+ assert.equal(resolveAnswer(p,'Aa').status,'exact','A genuine short Hawaiian rock name is not a generated abbreviation');
+ const meta=manifest.categories.find(x=>x.id==='authored-rock-types');
+ for(const n of ['Diamond','Quartz','Gold','Concrete','Mount Everest'])assert.equal(resolveAnswer({...p,answers:p.answers,excludedAnswers:meta.exclude},n).status,'missing',n);
+});
