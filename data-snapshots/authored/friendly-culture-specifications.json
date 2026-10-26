@@ -44,7 +44,11 @@
         "Margaret SquarePants",
         "Kevin the Sea Cucumber",
         "Flats the Flounder",
-        "Fuzzy Acorns"
+        "Fuzzy Acorns",
+        "Larry",
+        "Patchy",
+        "Potty",
+        "Neptune"
       ],
       "exclude": [
         "Tom Kenny",
@@ -101,6 +105,18 @@
         ],
         "Lord Royal Highness": [
           "LRH"
+        ],
+        "Larry the Lobster": [
+          "Larry"
+        ],
+        "Patchy the Pirate": [
+          "Patchy"
+        ],
+        "Potty the Parrot": [
+          "Potty"
+        ],
+        "King Neptune": [
+          "Neptune"
         ]
       },
       "additions": [
@@ -186,7 +202,12 @@
         "XR",
         "Commander Nebula",
         "Warp Darkmatter",
-        "NOS-4-A2"
+        "NOS-4-A2",
+        "Bo",
+        "Al",
+        "Duke",
+        "Pricklepants",
+        "Potato Head"
       ],
       "exclude": [
         "Tom Hanks",
@@ -235,6 +256,21 @@
         ],
         "Ty Parsec": [
           "Wirewolf"
+        ],
+        "Bo Peep": [
+          "Bo"
+        ],
+        "Al McWhiggin": [
+          "Al"
+        ],
+        "Duke Caboom": [
+          "Duke"
+        ],
+        "Mr. Pricklepants": [
+          "Pricklepants"
+        ],
+        "Mr. Potato Head": [
+          "Potato Head"
         ]
       },
       "additions": [
@@ -327,7 +363,9 @@
         "Esme",
         "El Moco",
         "Mama Luna",
-        "Doctor"
+        "Doctor",
+        "Puss",
+        "Kitty"
       ],
       "exclude": [
         "Mike Myers",
@@ -384,6 +422,12 @@
         ],
         "Governor of Del Mar": [
           "Governor"
+        ],
+        "Puss in Boots": [
+          "Puss"
+        ],
+        "Kitty Softpaws": [
+          "Kitty"
         ]
       },
       "additions": [

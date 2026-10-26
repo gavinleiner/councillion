@@ -1,5 +1,5 @@
 {
-  "build": "fec7f2b3827c2e68",
+  "build": "2366e59d7901fee5",
   "count": 188,
   "categories": [
     {
@@ -10829,7 +10829,7 @@
       "answerCount": 178,
       "familiarCount": 38,
       "answerDirectory": "authored-banks",
-      "answerFile": "authored-spongebob-characters.d730101a74c96b4e.json.gz",
+      "answerFile": "authored-spongebob-characters.510ba9da5dc21691.json.gz",
       "funVersion": 9,
       "editorialVersion": 1,
       "contentStage": "admitted",
@@ -10839,7 +10839,7 @@
       "ranking": "editorial-familiarity-v1",
       "naturalFinite": false,
       "identityHash": "9399008aa278aaab67ba678592e1df26b6726d4c65a80c81cfca8e3b6777982d",
-      "sha256": "d730101a74c96b4ef09dabe5c8089865a5a475cc49c3f9b27882906817718af8",
+      "sha256": "510ba9da5dc21691a31acfe8b7e65ef3abcf68a0b4fec2a748a23901e20b4dcd",
       "familiar": [
         "SpongeBob",
         "Patrick",
@@ -10879,7 +10879,11 @@
         "Margaret SquarePants",
         "Kevin the Sea Cucumber",
         "Flats the Flounder",
-        "Fuzzy Acorns"
+        "Fuzzy Acorns",
+        "Larry",
+        "Patchy",
+        "Potty",
+        "Neptune"
       ],
       "exclude": [
         "Tom Kenny",
@@ -10902,7 +10906,7 @@
       "answerCount": 232,
       "familiarCount": 49,
       "answerDirectory": "authored-banks",
-      "answerFile": "authored-toy-story-characters.380545dfcb42f889.json.gz",
+      "answerFile": "authored-toy-story-characters.553da7a82441c8c5.json.gz",
       "funVersion": 9,
       "editorialVersion": 1,
       "contentStage": "admitted",
@@ -10912,7 +10916,7 @@
       "ranking": "editorial-familiarity-v1",
       "naturalFinite": false,
       "identityHash": "f39fbeee27c69304c6ac06918e374d5665ad26dcb7545bb2f062ba3682dfa71c",
-      "sha256": "380545dfcb42f889efd82daa333c2aa20f3851e11c66519cb63358657576a208",
+      "sha256": "553da7a82441c8c5cc2bcd37e45178f87a2cb79eb355fbb6b3dbb385e93c032c",
       "familiar": [
         "Woody",
         "Buzz Lightyear",
@@ -10963,7 +10967,12 @@
         "XR",
         "Commander Nebula",
         "Warp Darkmatter",
-        "NOS-4-A2"
+        "NOS-4-A2",
+        "Bo",
+        "Al",
+        "Duke",
+        "Pricklepants",
+        "Potato Head"
       ],
       "exclude": [
         "Tom Hanks",
@@ -10985,7 +10994,7 @@
       "answerCount": 82,
       "familiarCount": 50,
       "answerDirectory": "authored-banks",
-      "answerFile": "authored-shrek-characters.22ce1d377b3c0013.json.gz",
+      "answerFile": "authored-shrek-characters.fe989e6025e1478c.json.gz",
       "funVersion": 9,
       "editorialVersion": 1,
       "contentStage": "admitted",
@@ -10995,7 +11004,7 @@
       "ranking": "editorial-familiarity-v1",
       "naturalFinite": false,
       "identityHash": "b4da3426877df703b1442fdc1a8fdab21fee0f8f843d1859fbd639ae158c7972",
-      "sha256": "22ce1d377b3c0013c4758dd94d9c57f098c0f2b1f435a081bcd0489480201635",
+      "sha256": "fe989e6025e1478cdd361c92723b318cdf40627d5ecf90bb181f4c4eb454fa1d",
       "familiar": [
         "Shrek",
         "Donkey",
@@ -11048,7 +11057,9 @@
         "Esme",
         "El Moco",
         "Mama Luna",
-        "Doctor"
+        "Doctor",
+        "Puss",
+        "Kitty"
       ],
       "exclude": [
         "Mike Myers",
