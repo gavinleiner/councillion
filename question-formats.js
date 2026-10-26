@@ -9,6 +9,7 @@ export function questionFormat(pack){
   'authored-situations':'Everyday situations',
   'authored-whole-concept':'Names & categories',
   'authored-whole-artist-catalog':'Songs by one artist',
+  'authored-whole-franchise-roster':'Players by franchise',
   'authored-whole-roster':'Characters & rosters',
   'authored-whole-taxonomic-group':'Animal kinds',
   'distinct-kinds':'Kinds, examples & objects',

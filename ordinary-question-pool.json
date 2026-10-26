@@ -1,6 +1,6 @@
 {
-  "build": "b05365e1a440254c",
-  "count": 302,
+  "build": "acfa285d2fcac254",
+  "count": 332,
   "categories": [
     {
       "id": "group-q001",
@@ -2417,6 +2417,246 @@
       "group": "authored-whole-artist-catalog",
       "answerCount": 112,
       "scope": "Released recordings credited to Twenty One Pilots count, including collaborations, features and released covers. Writing or production credit alone does not count. Different versions share one answer."
+    },
+    {
+      "id": "authored-atlanta-hawks-players",
+      "prompt": "Name a player who has played for the Atlanta Hawks.",
+      "family": "sports",
+      "group": "authored-whole-franchise-roster",
+      "answerCount": 626,
+      "scope": "At least one first-team NBA, BAA or ABA game for this franchise counts, past or present. Coaches, draft rights and preseason-only appearances do not. Earlier NBA seasons as the Tri-Cities Blackhawks, Milwaukee Hawks and St. Louis Hawks count."
+    },
+    {
+      "id": "authored-boston-celtics-players",
+      "prompt": "Name a player who has played for the Boston Celtics.",
+      "family": "sports",
+      "group": "authored-whole-franchise-roster",
+      "answerCount": 529,
+      "scope": "At least one first-team NBA, BAA or ABA game for this franchise counts, past or present. Coaches, draft rights and preseason-only appearances do not."
+    },
+    {
+      "id": "authored-brooklyn-nets-players",
+      "prompt": "Name a player who has played for the Brooklyn Nets.",
+      "family": "sports",
+      "group": "authored-whole-franchise-roster",
+      "answerCount": 578,
+      "scope": "At least one first-team NBA, BAA or ABA game for this franchise counts, past or present. Coaches, draft rights and preseason-only appearances do not. The same franchise as the New Jersey Nets, New York Nets and New York Americans counts, including ABA games."
+    },
+    {
+      "id": "authored-charlotte-hornets-players",
+      "prompt": "Name a player who has played for the Charlotte Hornets.",
+      "family": "sports",
+      "group": "authored-whole-franchise-roster",
+      "answerCount": 325,
+      "scope": "At least one first-team NBA, BAA or ABA game for this franchise counts, past or present. Coaches, draft rights and preseason-only appearances do not. Charlotte Hornets history from 1988–2002 and 2014 onward, and Charlotte Bobcats history from 2004–2014 count. The New Orleans franchise is separate."
+    },
+    {
+      "id": "authored-chicago-bulls-players",
+      "prompt": "Name a player who has played for the Chicago Bulls.",
+      "family": "sports",
+      "group": "authored-whole-franchise-roster",
+      "answerCount": 438,
+      "scope": "At least one first-team NBA, BAA or ABA game for this franchise counts, past or present. Coaches, draft rights and preseason-only appearances do not."
+    },
+    {
+      "id": "authored-cleveland-cavaliers-players",
+      "prompt": "Name a player who has played for the Cleveland Cavaliers.",
+      "family": "sports",
+      "group": "authored-whole-franchise-roster",
+      "answerCount": 468,
+      "scope": "At least one first-team NBA, BAA or ABA game for this franchise counts, past or present. Coaches, draft rights and preseason-only appearances do not."
+    },
+    {
+      "id": "authored-dallas-mavericks-players",
+      "prompt": "Name a player who has played for the Dallas Mavericks.",
+      "family": "sports",
+      "group": "authored-whole-franchise-roster",
+      "answerCount": 338,
+      "scope": "At least one first-team NBA, BAA or ABA game for this franchise counts, past or present. Coaches, draft rights and preseason-only appearances do not."
+    },
+    {
+      "id": "authored-denver-nuggets-players",
+      "prompt": "Name a player who has played for the Denver Nuggets.",
+      "family": "sports",
+      "group": "authored-whole-franchise-roster",
+      "answerCount": 438,
+      "scope": "At least one first-team NBA, BAA or ABA game for this franchise counts, past or present. Coaches, draft rights and preseason-only appearances do not. The same ABA franchise as the Denver Rockets also counts."
+    },
+    {
+      "id": "authored-detroit-pistons-players",
+      "prompt": "Name a player who has played for the Detroit Pistons.",
+      "family": "sports",
+      "group": "authored-whole-franchise-roster",
+      "answerCount": 579,
+      "scope": "At least one first-team NBA, BAA or ABA game for this franchise counts, past or present. Coaches, draft rights and preseason-only appearances do not. NBA/BAA seasons as the Fort Wayne Pistons also count."
+    },
+    {
+      "id": "authored-golden-state-warriors-players",
+      "prompt": "Name a player who has played for the Golden State Warriors.",
+      "family": "sports",
+      "group": "authored-whole-franchise-roster",
+      "answerCount": 576,
+      "scope": "At least one first-team NBA, BAA or ABA game for this franchise counts, past or present. Coaches, draft rights and preseason-only appearances do not. Philadelphia Warriors and San Francisco Warriors seasons also count."
+    },
+    {
+      "id": "authored-houston-rockets-players",
+      "prompt": "Name a player who has played for the Houston Rockets.",
+      "family": "sports",
+      "group": "authored-whole-franchise-roster",
+      "answerCount": 445,
+      "scope": "At least one first-team NBA, BAA or ABA game for this franchise counts, past or present. Coaches, draft rights and preseason-only appearances do not."
+    },
+    {
+      "id": "authored-indiana-pacers-players",
+      "prompt": "Name a player who has played for the Indiana Pacers.",
+      "family": "sports",
+      "group": "authored-whole-franchise-roster",
+      "answerCount": 402,
+      "scope": "At least one first-team NBA, BAA or ABA game for this franchise counts, past or present. Coaches, draft rights and preseason-only appearances do not."
+    },
+    {
+      "id": "authored-los-angeles-clippers-players",
+      "prompt": "Name a player who has played for the Los Angeles Clippers.",
+      "family": "sports",
+      "group": "authored-whole-franchise-roster",
+      "answerCount": 513,
+      "scope": "At least one first-team NBA, BAA or ABA game for this franchise counts, past or present. Coaches, draft rights and preseason-only appearances do not. Buffalo Braves and San Diego Clippers seasons also count."
+    },
+    {
+      "id": "authored-los-angeles-lakers-players",
+      "prompt": "Name a player who has played for the Los Angeles Lakers.",
+      "family": "sports",
+      "group": "authored-whole-franchise-roster",
+      "answerCount": 516,
+      "scope": "At least one first-team NBA, BAA or ABA game for this franchise counts, past or present. Coaches, draft rights and preseason-only appearances do not. Minneapolis Lakers NBA/BAA seasons also count; NBL-only appearances do not."
+    },
+    {
+      "id": "authored-memphis-grizzlies-players",
+      "prompt": "Name a player who has played for the Memphis Grizzlies.",
+      "family": "sports",
+      "group": "authored-whole-franchise-roster",
+      "answerCount": 322,
+      "scope": "At least one first-team NBA, BAA or ABA game for this franchise counts, past or present. Coaches, draft rights and preseason-only appearances do not. Vancouver Grizzlies seasons also count."
+    },
+    {
+      "id": "authored-miami-heat-players",
+      "prompt": "Name a player who has played for the Miami Heat.",
+      "family": "sports",
+      "group": "authored-whole-franchise-roster",
+      "answerCount": 305,
+      "scope": "At least one first-team NBA, BAA or ABA game for this franchise counts, past or present. Coaches, draft rights and preseason-only appearances do not."
+    },
+    {
+      "id": "authored-milwaukee-bucks-players",
+      "prompt": "Name a player who has played for the Milwaukee Bucks.",
+      "family": "sports",
+      "group": "authored-whole-franchise-roster",
+      "answerCount": 479,
+      "scope": "At least one first-team NBA, BAA or ABA game for this franchise counts, past or present. Coaches, draft rights and preseason-only appearances do not."
+    },
+    {
+      "id": "authored-minnesota-timberwolves-players",
+      "prompt": "Name a player who has played for the Minnesota Timberwolves.",
+      "family": "sports",
+      "group": "authored-whole-franchise-roster",
+      "answerCount": 310,
+      "scope": "At least one first-team NBA, BAA or ABA game for this franchise counts, past or present. Coaches, draft rights and preseason-only appearances do not."
+    },
+    {
+      "id": "authored-new-orleans-pelicans-players",
+      "prompt": "Name a player who has played for the New Orleans Pelicans.",
+      "family": "sports",
+      "group": "authored-whole-franchise-roster",
+      "answerCount": 258,
+      "scope": "At least one first-team NBA, BAA or ABA game for this franchise counts, past or present. Coaches, draft rights and preseason-only appearances do not. New Orleans Hornets and New Orleans/Oklahoma City Hornets history counts. The earlier Charlotte Hornets history belongs to Charlotte."
+    },
+    {
+      "id": "authored-new-york-knicks-players",
+      "prompt": "Name a player who has played for the New York Knicks.",
+      "family": "sports",
+      "group": "authored-whole-franchise-roster",
+      "answerCount": 558,
+      "scope": "At least one first-team NBA, BAA or ABA game for this franchise counts, past or present. Coaches, draft rights and preseason-only appearances do not."
+    },
+    {
+      "id": "authored-oklahoma-city-thunder-players",
+      "prompt": "Name a player who has played for the Thunder or Seattle SuperSonics.",
+      "family": "sports",
+      "group": "authored-whole-franchise-roster",
+      "answerCount": 406,
+      "scope": "At least one first-team NBA, BAA or ABA game for this franchise counts, past or present. Coaches, draft rights and preseason-only appearances do not. Seattle SuperSonics history is included in this franchise question; it is not a separate extra question."
+    },
+    {
+      "id": "authored-orlando-magic-players",
+      "prompt": "Name a player who has played for the Orlando Magic.",
+      "family": "sports",
+      "group": "authored-whole-franchise-roster",
+      "answerCount": 297,
+      "scope": "At least one first-team NBA, BAA or ABA game for this franchise counts, past or present. Coaches, draft rights and preseason-only appearances do not."
+    },
+    {
+      "id": "authored-philadelphia-76ers-players",
+      "prompt": "Name a player who has played for the Philadelphia 76ers.",
+      "family": "sports",
+      "group": "authored-whole-franchise-roster",
+      "answerCount": 597,
+      "scope": "At least one first-team NBA, BAA or ABA game for this franchise counts, past or present. Coaches, draft rights and preseason-only appearances do not. Syracuse Nationals NBA seasons also count."
+    },
+    {
+      "id": "authored-phoenix-suns-players",
+      "prompt": "Name a player who has played for the Phoenix Suns.",
+      "family": "sports",
+      "group": "authored-whole-franchise-roster",
+      "answerCount": 455,
+      "scope": "At least one first-team NBA, BAA or ABA game for this franchise counts, past or present. Coaches, draft rights and preseason-only appearances do not."
+    },
+    {
+      "id": "authored-portland-trail-blazers-players",
+      "prompt": "Name a player who has played for the Portland Trail Blazers.",
+      "family": "sports",
+      "group": "authored-whole-franchise-roster",
+      "answerCount": 407,
+      "scope": "At least one first-team NBA, BAA or ABA game for this franchise counts, past or present. Coaches, draft rights and preseason-only appearances do not."
+    },
+    {
+      "id": "authored-sacramento-kings-players",
+      "prompt": "Name a player who has played for the Sacramento Kings.",
+      "family": "sports",
+      "group": "authored-whole-franchise-roster",
+      "answerCount": 567,
+      "scope": "At least one first-team NBA, BAA or ABA game for this franchise counts, past or present. Coaches, draft rights and preseason-only appearances do not. Rochester Royals, Cincinnati Royals, Kansas City-Omaha Kings and Kansas City Kings seasons also count."
+    },
+    {
+      "id": "authored-san-antonio-spurs-players",
+      "prompt": "Name a player who has played for the San Antonio Spurs.",
+      "family": "sports",
+      "group": "authored-whole-franchise-roster",
+      "answerCount": 469,
+      "scope": "At least one first-team NBA, BAA or ABA game for this franchise counts, past or present. Coaches, draft rights and preseason-only appearances do not. Dallas Chaparrals and Texas Chaparrals ABA seasons also count."
+    },
+    {
+      "id": "authored-toronto-raptors-players",
+      "prompt": "Name a player who has played for the Toronto Raptors.",
+      "family": "sports",
+      "group": "authored-whole-franchise-roster",
+      "answerCount": 308,
+      "scope": "At least one first-team NBA, BAA or ABA game for this franchise counts, past or present. Coaches, draft rights and preseason-only appearances do not."
+    },
+    {
+      "id": "authored-utah-jazz-players",
+      "prompt": "Name a player who has played for the Utah Jazz.",
+      "family": "sports",
+      "group": "authored-whole-franchise-roster",
+      "answerCount": 370,
+      "scope": "At least one first-team NBA, BAA or ABA game for this franchise counts, past or present. Coaches, draft rights and preseason-only appearances do not. New Orleans Jazz seasons also count."
+    },
+    {
+      "id": "authored-washington-wizards-players",
+      "prompt": "Name a player who has played for the Washington Wizards.",
+      "family": "sports",
+      "group": "authored-whole-franchise-roster",
+      "answerCount": 529,
+      "scope": "At least one first-team NBA, BAA or ABA game for this franchise counts, past or present. Coaches, draft rights and preseason-only appearances do not. Chicago Packers, Chicago Zephyrs, Baltimore Bullets, Capital Bullets and Washington Bullets seasons count. The unrelated earlier Baltimore Bullets club does not."
     }
   ]
 }

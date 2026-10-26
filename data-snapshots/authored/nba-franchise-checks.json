@@ -1,0 +1,363 @@
+[
+  {
+    "id": "authored-atlanta-hawks-players",
+    "franchise": "Atlanta Hawks",
+    "canonicalPlayers": 626,
+    "sourceRosters": 1,
+    "familiarInputs": 14,
+    "heldPlayers": 0,
+    "rareAnchor": "Andy Panko",
+    "sourceHtmlSha256": [
+      "9e68f417047229d5b664c74a48c34ac7c863988d2071f02f6a50550099dfde55"
+    ]
+  },
+  {
+    "id": "authored-boston-celtics-players",
+    "franchise": "Boston Celtics",
+    "canonicalPlayers": 529,
+    "sourceRosters": 1,
+    "familiarInputs": 17,
+    "heldPlayers": 0,
+    "rareAnchor": "C. J. Miles",
+    "sourceHtmlSha256": [
+      "a2a466975f0ac768ff5a50b280984ceacf605adde595815e69ee367703b1f923"
+    ]
+  },
+  {
+    "id": "authored-brooklyn-nets-players",
+    "franchise": "Brooklyn Nets",
+    "canonicalPlayers": 578,
+    "sourceRosters": 1,
+    "familiarInputs": 15,
+    "heldPlayers": 0,
+    "rareAnchor": "Alondes Williams",
+    "sourceHtmlSha256": [
+      "e0b7d233d9371d14547097852493fb4041d850c0fe097551e22108c8d420b412"
+    ]
+  },
+  {
+    "id": "authored-charlotte-hornets-players",
+    "franchise": "Charlotte Hornets",
+    "canonicalPlayers": 325,
+    "sourceRosters": 1,
+    "familiarInputs": 15,
+    "heldPlayers": 0,
+    "rareAnchor": "Arnoldas Kulboka",
+    "sourceHtmlSha256": [
+      "2d3714c9238e69f136637e331a40f5e2b991e2e58465b15941ea869c060065c5"
+    ]
+  },
+  {
+    "id": "authored-chicago-bulls-players",
+    "franchise": "Chicago Bulls",
+    "canonicalPlayers": 438,
+    "sourceRosters": 1,
+    "familiarInputs": 16,
+    "heldPlayers": 0,
+    "rareAnchor": "Darren Daye",
+    "sourceHtmlSha256": [
+      "f46f3057f151877daf0f72606f2e445370abe7ec351ac2cf8f2fba2dfc47920e"
+    ]
+  },
+  {
+    "id": "authored-cleveland-cavaliers-players",
+    "franchise": "Cleveland Cavaliers",
+    "canonicalPlayers": 468,
+    "sourceRosters": 1,
+    "familiarInputs": 16,
+    "heldPlayers": 0,
+    "rareAnchor": "Andrew Bogut",
+    "sourceHtmlSha256": [
+      "11cfb84c62c4f192836f110f7db1d82d32e677c3566dd84ef25e905c57bb112e"
+    ]
+  },
+  {
+    "id": "authored-dallas-mavericks-players",
+    "franchise": "Dallas Mavericks",
+    "canonicalPlayers": 338,
+    "sourceRosters": 1,
+    "familiarInputs": 17,
+    "heldPlayers": 0,
+    "rareAnchor": "A. J. Lawson",
+    "sourceHtmlSha256": [
+      "7f0670eec337b7c94426b7b218dbc4f79f9dba61ce175c7c8662f2cacf2e534b"
+    ]
+  },
+  {
+    "id": "authored-denver-nuggets-players",
+    "franchise": "Denver Nuggets",
+    "canonicalPlayers": 438,
+    "sourceRosters": 1,
+    "familiarInputs": 16,
+    "heldPlayers": 0,
+    "rareAnchor": "Charles Smith",
+    "sourceHtmlSha256": [
+      "b7a1306f4f46389f40d5fccf33fbb0abc7a869dfee93284b94a3237be364a504"
+    ]
+  },
+  {
+    "id": "authored-detroit-pistons-players",
+    "franchise": "Detroit Pistons",
+    "canonicalPlayers": 579,
+    "sourceRosters": 1,
+    "familiarInputs": 16,
+    "heldPlayers": 0,
+    "rareAnchor": "Jaysean Paige",
+    "sourceHtmlSha256": [
+      "a5e97bbd64d7f31c294f45596001e7caa937212daba69a778641b866018270d7"
+    ]
+  },
+  {
+    "id": "authored-golden-state-warriors-players",
+    "franchise": "Golden State Warriors",
+    "canonicalPlayers": 576,
+    "sourceRosters": 1,
+    "familiarInputs": 16,
+    "heldPlayers": 0,
+    "rareAnchor": "Billy Thompson",
+    "sourceHtmlSha256": [
+      "88d46f86ebdd44760c87adc7b95633e8b1eb09957895c934387ebb5977841ed2"
+    ]
+  },
+  {
+    "id": "authored-houston-rockets-players",
+    "franchise": "Houston Rockets",
+    "canonicalPlayers": 445,
+    "sourceRosters": 1,
+    "familiarInputs": 17,
+    "heldPlayers": 0,
+    "rareAnchor": "Brandin Knight",
+    "sourceHtmlSha256": [
+      "40d466c092277cbbc2f5db206cf30f97cd811bb8fca20d531ce220300a500157"
+    ]
+  },
+  {
+    "id": "authored-indiana-pacers-players",
+    "franchise": "Indiana Pacers",
+    "canonicalPlayers": 402,
+    "sourceRosters": 1,
+    "familiarInputs": 17,
+    "heldPlayers": 0,
+    "rareAnchor": "DeJon Jarreau",
+    "sourceHtmlSha256": [
+      "6b4a1906b1ae8f7dc6c803a459d4a8933c4a95232ffdff8e10c4f462cccafdb9"
+    ]
+  },
+  {
+    "id": "authored-los-angeles-clippers-players",
+    "franchise": "Los Angeles Clippers",
+    "canonicalPlayers": 513,
+    "sourceRosters": 1,
+    "familiarInputs": 18,
+    "heldPlayers": 0,
+    "rareAnchor": "Alex Stivrins",
+    "sourceHtmlSha256": [
+      "612501482e9ddd8beaf9b040c4b654eeab1372468546210603a48c2cc2634550"
+    ]
+  },
+  {
+    "id": "authored-los-angeles-lakers-players",
+    "franchise": "Los Angeles Lakers",
+    "canonicalPlayers": 516,
+    "sourceRosters": 1,
+    "familiarInputs": 18,
+    "heldPlayers": 26,
+    "rareAnchor": "George Brown",
+    "sourceHtmlSha256": [
+      "91fa0153f7d0f714364f086dc3de0d1703a4a00fcbe88a65de2f30b49a27dfab"
+    ]
+  },
+  {
+    "id": "authored-memphis-grizzlies-players",
+    "franchise": "Memphis Grizzlies",
+    "canonicalPlayers": 322,
+    "sourceRosters": 1,
+    "familiarInputs": 15,
+    "heldPlayers": 0,
+    "rareAnchor": "Adonal Foyle",
+    "sourceHtmlSha256": [
+      "fb442814abf9171f7b6e8488bc8ef5cfc704ecab27c5df57718215bd4f3956c8"
+    ]
+  },
+  {
+    "id": "authored-miami-heat-players",
+    "franchise": "Miami Heat",
+    "canonicalPlayers": 305,
+    "sourceRosters": 1,
+    "familiarInputs": 17,
+    "heldPlayers": 0,
+    "rareAnchor": "A.C. Green",
+    "sourceHtmlSha256": [
+      "2a5150ba6909c3eb06ee14804adf0c661c8ebaef6950ba8f7ce5fa8f1a4482ae"
+    ]
+  },
+  {
+    "id": "authored-milwaukee-bucks-players",
+    "franchise": "Milwaukee Bucks",
+    "canonicalPlayers": 479,
+    "sourceRosters": 1,
+    "familiarInputs": 16,
+    "heldPlayers": 0,
+    "rareAnchor": "Bob Rule",
+    "sourceHtmlSha256": [
+      "fea32a8888f6bbb3b2370557b3f45077c9b4df47109976a73dfd0705ae3a9531"
+    ]
+  },
+  {
+    "id": "authored-minnesota-timberwolves-players",
+    "franchise": "Minnesota Timberwolves",
+    "canonicalPlayers": 310,
+    "sourceRosters": 1,
+    "familiarInputs": 17,
+    "heldPlayers": 0,
+    "rareAnchor": "Calvin Booth",
+    "sourceHtmlSha256": [
+      "2f0a6b5fcc727cdbc26babd70732b00cf428d507a64ce3dfff1121122345196b"
+    ]
+  },
+  {
+    "id": "authored-new-orleans-pelicans-players",
+    "franchise": "New Orleans Pelicans",
+    "canonicalPlayers": 258,
+    "sourceRosters": 1,
+    "familiarInputs": 17,
+    "heldPlayers": 0,
+    "rareAnchor": "Jalen Crutcher",
+    "sourceHtmlSha256": [
+      "4b3bec0f31d6e651ae74e16dcb39e2647066349e8a6b70e0ed33fc8ef3f067ff"
+    ]
+  },
+  {
+    "id": "authored-new-york-knicks-players",
+    "franchise": "New York Knicks",
+    "canonicalPlayers": 558,
+    "sourceRosters": 1,
+    "familiarInputs": 19,
+    "heldPlayers": 0,
+    "rareAnchor": "Danuel House Jr.",
+    "sourceHtmlSha256": [
+      "5cbb119d349855cd1e0ab100d286057cc4b5fafbd7d20a774376895804551453"
+    ]
+  },
+  {
+    "id": "authored-oklahoma-city-thunder-players",
+    "franchise": "Oklahoma City Thunder",
+    "canonicalPlayers": 406,
+    "sourceRosters": 2,
+    "familiarInputs": 18,
+    "heldPlayers": 0,
+    "rareAnchor": "Jawun Evans",
+    "sourceHtmlSha256": [
+      "f8c0f5fcbda6c9bdc2b747269104f6645b7533583b1e0febf1addb75c5b295b7",
+      "0f0d70db837795a4866b3abe5914b696c59579a020a6fb26565615f2f8db4bcc"
+    ]
+  },
+  {
+    "id": "authored-orlando-magic-players",
+    "franchise": "Orlando Magic",
+    "canonicalPlayers": 297,
+    "sourceRosters": 1,
+    "familiarInputs": 17,
+    "heldPlayers": 0,
+    "rareAnchor": "Jonathan Kerner",
+    "sourceHtmlSha256": [
+      "93a05c8ab05e30976515d59a280b104c1de0926895bc7f0448e97ccad0493c40"
+    ]
+  },
+  {
+    "id": "authored-philadelphia-76ers-players",
+    "franchise": "Philadelphia 76ers",
+    "canonicalPlayers": 597,
+    "sourceRosters": 1,
+    "familiarInputs": 18,
+    "heldPlayers": 0,
+    "rareAnchor": "Anthony Miller",
+    "sourceHtmlSha256": [
+      "ac00590116e4203befc2930c6875f8fac1cfd736820bda7419af42d0e8a4ff33"
+    ]
+  },
+  {
+    "id": "authored-phoenix-suns-players",
+    "franchise": "Phoenix Suns",
+    "canonicalPlayers": 455,
+    "sourceRosters": 1,
+    "familiarInputs": 17,
+    "heldPlayers": 0,
+    "rareAnchor": "Courtney Sims",
+    "sourceHtmlSha256": [
+      "4723aa81ea636b0f853adea52423aa136dee1a95c36d2cc7ab85bfefc1c1716b"
+    ]
+  },
+  {
+    "id": "authored-portland-trail-blazers-players",
+    "franchise": "Portland Trail Blazers",
+    "canonicalPlayers": 407,
+    "sourceRosters": 1,
+    "familiarInputs": 18,
+    "heldPlayers": 0,
+    "rareAnchor": "Brian Shaw",
+    "sourceHtmlSha256": [
+      "294eb51bb664f894390c60a33430e12a35e9152b581b4dd120cdb1026702409c"
+    ]
+  },
+  {
+    "id": "authored-sacramento-kings-players",
+    "franchise": "Sacramento Kings",
+    "canonicalPlayers": 567,
+    "sourceRosters": 1,
+    "familiarInputs": 19,
+    "heldPlayers": 0,
+    "rareAnchor": "Ade Murkey",
+    "sourceHtmlSha256": [
+      "fb7204efe034e7bdf879c00b67872c6f5472ca009dcb664467489fb2b2457621"
+    ]
+  },
+  {
+    "id": "authored-san-antonio-spurs-players",
+    "franchise": "San Antonio Spurs",
+    "canonicalPlayers": 469,
+    "sourceRosters": 1,
+    "familiarInputs": 16,
+    "heldPlayers": 0,
+    "rareAnchor": "Alex Scales",
+    "sourceHtmlSha256": [
+      "e1257ba12cc6c9e4cc150252c4a84358e0bf1416a81088ddd2b33f08bd374f35"
+    ]
+  },
+  {
+    "id": "authored-toronto-raptors-players",
+    "franchise": "Toronto Raptors",
+    "canonicalPlayers": 308,
+    "sourceRosters": 1,
+    "familiarInputs": 19,
+    "heldPlayers": 0,
+    "rareAnchor": "Bob McCann",
+    "sourceHtmlSha256": [
+      "a4b151676fa767ad9fc6ebc7ebf68391aaf1363a08f8d0d1136dc4fa3fe0c4d5"
+    ]
+  },
+  {
+    "id": "authored-utah-jazz-players",
+    "franchise": "Utah Jazz",
+    "canonicalPlayers": 370,
+    "sourceRosters": 1,
+    "familiarInputs": 17,
+    "heldPlayers": 0,
+    "rareAnchor": "Eric White",
+    "sourceHtmlSha256": [
+      "b68828c314dafc2b5a55dc413d317ccc8676e381c4588160be5f4527252d1196"
+    ]
+  },
+  {
+    "id": "authored-washington-wizards-players",
+    "franchise": "Washington Wizards",
+    "canonicalPlayers": 529,
+    "sourceRosters": 1,
+    "familiarInputs": 20,
+    "heldPlayers": 0,
+    "rareAnchor": "Danuel House",
+    "sourceHtmlSha256": [
+      "730e91e086e2eecad9bd4aede2be28ad63105435b584bafa0225205b8934f7f0"
+    ]
+  }
+]

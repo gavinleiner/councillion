@@ -6912,6 +6912,971 @@
         "https://en.wikipedia.org/wiki/List_of_songs_recorded_by_Twenty_One_Pilots"
       ],
       "review": "Complete recorded-song source tables reconciled against independently supplied recognizable inputs. Credited-performer eligibility excludes writing-only, solo-member and background-only rows. Public short titles and source spelling aliases are explicit. Versions share a scoreable identity. Sources that redirect to singles or biographies remain excluded."
+    },
+    {
+      "id": "authored-atlanta-hawks-players",
+      "basis": "individually-reviewed-whole-franchise-roster-based-on-original-yes-model",
+      "yes": [
+        "Dominique Wilkins",
+        "Trae Young",
+        "Al Horford",
+        "Bob Pettit",
+        "Dikembe Mutombo",
+        "Joe Johnson",
+        "Clint Capela",
+        "Dejounte Murray",
+        "Jalen Johnson",
+        "Josh Smith",
+        "Jason Terry",
+        "Spud Webb",
+        "Pete Maravich",
+        "Lenny Wilkens"
+      ],
+      "no": [
+        "Michael Jordan"
+      ],
+      "prompt": "Name a player who has played for the Atlanta Hawks.",
+      "family": "sports",
+      "inventoryEvidence": [
+        "https://en.wikipedia.org/wiki/Atlanta_Hawks_all-time_roster",
+        "https://www.nba.com/player/77634/jackie-moore",
+        "https://wkusports.com/documents/download/2025/10/29/2025-26_MBB_Media_Guide.pdf"
+      ],
+      "review": "One whole all-time NBA/BAA/ABA franchise roster, including its stated former team names. 508 independently supplied familiar player inputs reconcile across the batch. Retired jersey numbers and legend symbols are metadata, not player names. Seattle expands the Thunder inventory rather than becoming another question. NBL-only Lakers table rows are excluded. Real former names and public nicknames are explicit; no initials are generated."
+    },
+    {
+      "id": "authored-boston-celtics-players",
+      "basis": "individually-reviewed-whole-franchise-roster-based-on-original-yes-model",
+      "yes": [
+        "Larry Bird",
+        "Bill Russell",
+        "Paul Pierce",
+        "Kevin Garnett",
+        "Jayson Tatum",
+        "Jaylen Brown",
+        "Bob Cousy",
+        "John Havlicek",
+        "Kevin McHale",
+        "Robert Parish",
+        "Ray Allen",
+        "Rajon Rondo",
+        "Marcus Smart",
+        "Isaiah Thomas",
+        "Derrick White",
+        "Jrue Holiday",
+        "Shaquille O Neal"
+      ],
+      "no": [
+        "Michael Jordan"
+      ],
+      "prompt": "Name a player who has played for the Boston Celtics.",
+      "family": "sports",
+      "inventoryEvidence": [
+        "https://en.wikipedia.org/wiki/Boston_Celtics_all-time_roster"
+      ],
+      "review": "One whole all-time NBA/BAA/ABA franchise roster, including its stated former team names. 508 independently supplied familiar player inputs reconcile across the batch. Retired jersey numbers and legend symbols are metadata, not player names. Seattle expands the Thunder inventory rather than becoming another question. NBL-only Lakers table rows are excluded. Real former names and public nicknames are explicit; no initials are generated."
+    },
+    {
+      "id": "authored-brooklyn-nets-players",
+      "basis": "individually-reviewed-whole-franchise-roster-based-on-original-yes-model",
+      "yes": [
+        "Jason Kidd",
+        "Julius Erving",
+        "Vince Carter",
+        "Kevin Durant",
+        "Kyrie Irving",
+        "Brook Lopez",
+        "Drazen Petrovic",
+        "Kerry Kittles",
+        "Kenyon Martin",
+        "Richard Jefferson",
+        "James Harden",
+        "Joe Johnson",
+        "Dangelo Russell",
+        "Ben Simmons",
+        "Deron Williams"
+      ],
+      "no": [
+        "Michael Jordan"
+      ],
+      "prompt": "Name a player who has played for the Brooklyn Nets.",
+      "family": "sports",
+      "inventoryEvidence": [
+        "https://en.wikipedia.org/wiki/Brooklyn_Nets_all-time_roster"
+      ],
+      "review": "One whole all-time NBA/BAA/ABA franchise roster, including its stated former team names. 508 independently supplied familiar player inputs reconcile across the batch. Retired jersey numbers and legend symbols are metadata, not player names. Seattle expands the Thunder inventory rather than becoming another question. NBL-only Lakers table rows are excluded. Real former names and public nicknames are explicit; no initials are generated."
+    },
+    {
+      "id": "authored-charlotte-hornets-players",
+      "basis": "individually-reviewed-whole-franchise-roster-based-on-original-yes-model",
+      "yes": [
+        "Kemba Walker",
+        "LaMelo Ball",
+        "Larry Johnson",
+        "Alonzo Mourning",
+        "Muggsy Bogues",
+        "Dell Curry",
+        "Gerald Wallace",
+        "Emeka Okafor",
+        "Glen Rice",
+        "Baron Davis",
+        "Boris Diaw",
+        "Terry Rozier",
+        "Brandon Miller",
+        "Miles Bridges",
+        "Mark Williams"
+      ],
+      "no": [
+        "Michael Jordan"
+      ],
+      "prompt": "Name a player who has played for the Charlotte Hornets.",
+      "family": "sports",
+      "inventoryEvidence": [
+        "https://en.wikipedia.org/wiki/Charlotte_Hornets_all-time_roster",
+        "https://www.nba.com/hornets/news/buzz-back-nba-approves-bobcats-name-change-hornets",
+        "https://faq.sports-reference.com/portal/en/kb/articles/charlotte-hornets-bobcats-franchise-history"
+      ],
+      "review": "One whole all-time NBA/BAA/ABA franchise roster, including its stated former team names. 508 independently supplied familiar player inputs reconcile across the batch. Retired jersey numbers and legend symbols are metadata, not player names. Seattle expands the Thunder inventory rather than becoming another question. NBL-only Lakers table rows are excluded. Real former names and public nicknames are explicit; no initials are generated."
+    },
+    {
+      "id": "authored-chicago-bulls-players",
+      "basis": "individually-reviewed-whole-franchise-roster-based-on-original-yes-model",
+      "yes": [
+        "Michael Jordan",
+        "Scottie Pippen",
+        "Dennis Rodman",
+        "Derrick Rose",
+        "Jimmy Butler",
+        "Joakim Noah",
+        "DeMar DeRozan",
+        "Zach LaVine",
+        "Luol Deng",
+        "Horace Grant",
+        "Toni Kukoc",
+        "Artis Gilmore",
+        "Kirk Hinrich",
+        "Lonzo Ball",
+        "Coby White",
+        "Josh Giddey"
+      ],
+      "no": [
+        "Stephen Curry"
+      ],
+      "prompt": "Name a player who has played for the Chicago Bulls.",
+      "family": "sports",
+      "inventoryEvidence": [
+        "https://en.wikipedia.org/wiki/Chicago_Bulls_all-time_roster"
+      ],
+      "review": "One whole all-time NBA/BAA/ABA franchise roster, including its stated former team names. 508 independently supplied familiar player inputs reconcile across the batch. Retired jersey numbers and legend symbols are metadata, not player names. Seattle expands the Thunder inventory rather than becoming another question. NBL-only Lakers table rows are excluded. Real former names and public nicknames are explicit; no initials are generated."
+    },
+    {
+      "id": "authored-cleveland-cavaliers-players",
+      "basis": "individually-reviewed-whole-franchise-roster-based-on-original-yes-model",
+      "yes": [
+        "LeBron James",
+        "Kyrie Irving",
+        "Kevin Love",
+        "Mark Price",
+        "Brad Daugherty",
+        "Donovan Mitchell",
+        "Zydrunas Ilgauskas",
+        "Anderson Varejao",
+        "Austin Carr",
+        "Larry Nance",
+        "Andre Miller",
+        "Tristan Thompson",
+        "JR Smith",
+        "Darius Garland",
+        "Evan Mobley",
+        "Jarrett Allen"
+      ],
+      "no": [
+        "Michael Jordan"
+      ],
+      "prompt": "Name a player who has played for the Cleveland Cavaliers.",
+      "family": "sports",
+      "inventoryEvidence": [
+        "https://en.wikipedia.org/wiki/Cleveland_Cavaliers_all-time_roster"
+      ],
+      "review": "One whole all-time NBA/BAA/ABA franchise roster, including its stated former team names. 508 independently supplied familiar player inputs reconcile across the batch. Retired jersey numbers and legend symbols are metadata, not player names. Seattle expands the Thunder inventory rather than becoming another question. NBL-only Lakers table rows are excluded. Real former names and public nicknames are explicit; no initials are generated."
+    },
+    {
+      "id": "authored-dallas-mavericks-players",
+      "basis": "individually-reviewed-whole-franchise-roster-based-on-original-yes-model",
+      "yes": [
+        "Dirk Nowitzki",
+        "Luka Doncic",
+        "Jason Kidd",
+        "Jason Terry",
+        "Michael Finley",
+        "Kyrie Irving",
+        "Rolando Blackman",
+        "Derek Harper",
+        "Tyson Chandler",
+        "JJ Barea",
+        "Steve Nash",
+        "Kristaps Porzingis",
+        "Mark Aguirre",
+        "Jamal Mashburn",
+        "Anthony Davis",
+        "Klay Thompson",
+        "Cooper Flagg"
+      ],
+      "no": [
+        "Michael Jordan"
+      ],
+      "prompt": "Name a player who has played for the Dallas Mavericks.",
+      "family": "sports",
+      "inventoryEvidence": [
+        "https://en.wikipedia.org/wiki/Dallas_Mavericks_all-time_roster"
+      ],
+      "review": "One whole all-time NBA/BAA/ABA franchise roster, including its stated former team names. 508 independently supplied familiar player inputs reconcile across the batch. Retired jersey numbers and legend symbols are metadata, not player names. Seattle expands the Thunder inventory rather than becoming another question. NBL-only Lakers table rows are excluded. Real former names and public nicknames are explicit; no initials are generated."
+    },
+    {
+      "id": "authored-denver-nuggets-players",
+      "basis": "individually-reviewed-whole-franchise-roster-based-on-original-yes-model",
+      "yes": [
+        "Nikola Jokic",
+        "Jamal Murray",
+        "Alex English",
+        "Carmelo Anthony",
+        "Dikembe Mutombo",
+        "Fat Lever",
+        "David Thompson",
+        "Dan Issel",
+        "Chauncey Billups",
+        "Kiki Vandeweghe",
+        "Antonio McDyess",
+        "Nene",
+        "Aaron Gordon",
+        "Michael Porter Jr",
+        "Bruce Brown",
+        "Russell Westbrook"
+      ],
+      "no": [
+        "Michael Jordan"
+      ],
+      "prompt": "Name a player who has played for the Denver Nuggets.",
+      "family": "sports",
+      "inventoryEvidence": [
+        "https://en.wikipedia.org/wiki/Denver_Nuggets_all-time_roster"
+      ],
+      "review": "One whole all-time NBA/BAA/ABA franchise roster, including its stated former team names. 508 independently supplied familiar player inputs reconcile across the batch. Retired jersey numbers and legend symbols are metadata, not player names. Seattle expands the Thunder inventory rather than becoming another question. NBL-only Lakers table rows are excluded. Real former names and public nicknames are explicit; no initials are generated."
+    },
+    {
+      "id": "authored-detroit-pistons-players",
+      "basis": "individually-reviewed-whole-franchise-roster-based-on-original-yes-model",
+      "yes": [
+        "Isiah Thomas",
+        "Ben Wallace",
+        "Chauncey Billups",
+        "Grant Hill",
+        "Joe Dumars",
+        "Richard Hamilton",
+        "Rasheed Wallace",
+        "John Salley",
+        "Dennis Rodman",
+        "Dave Bing",
+        "Vinnie Johnson",
+        "Tayshaun Prince",
+        "Andre Drummond",
+        "Blake Griffin",
+        "Cade Cunningham",
+        "Jalen Duren"
+      ],
+      "no": [
+        "Michael Jordan"
+      ],
+      "prompt": "Name a player who has played for the Detroit Pistons.",
+      "family": "sports",
+      "inventoryEvidence": [
+        "https://en.wikipedia.org/wiki/Detroit_Pistons_all-time_roster"
+      ],
+      "review": "One whole all-time NBA/BAA/ABA franchise roster, including its stated former team names. 508 independently supplied familiar player inputs reconcile across the batch. Retired jersey numbers and legend symbols are metadata, not player names. Seattle expands the Thunder inventory rather than becoming another question. NBL-only Lakers table rows are excluded. Real former names and public nicknames are explicit; no initials are generated."
+    },
+    {
+      "id": "authored-golden-state-warriors-players",
+      "basis": "individually-reviewed-whole-franchise-roster-based-on-original-yes-model",
+      "yes": [
+        "Stephen Curry",
+        "Klay Thompson",
+        "Draymond Green",
+        "Wilt Chamberlain",
+        "Rick Barry",
+        "Chris Mullin",
+        "Kevin Durant",
+        "Tim Hardaway",
+        "Latrell Sprewell",
+        "Mitch Richmond",
+        "Nate Thurmond",
+        "Andre Iguodala",
+        "Andrew Wiggins",
+        "David Lee",
+        "Jordan Poole",
+        "Jimmy Butler"
+      ],
+      "no": [
+        "Michael Jordan"
+      ],
+      "prompt": "Name a player who has played for the Golden State Warriors.",
+      "family": "sports",
+      "inventoryEvidence": [
+        "https://en.wikipedia.org/wiki/Golden_State_Warriors_all-time_roster"
+      ],
+      "review": "One whole all-time NBA/BAA/ABA franchise roster, including its stated former team names. 508 independently supplied familiar player inputs reconcile across the batch. Retired jersey numbers and legend symbols are metadata, not player names. Seattle expands the Thunder inventory rather than becoming another question. NBL-only Lakers table rows are excluded. Real former names and public nicknames are explicit; no initials are generated."
+    },
+    {
+      "id": "authored-houston-rockets-players",
+      "basis": "individually-reviewed-whole-franchise-roster-based-on-original-yes-model",
+      "yes": [
+        "Hakeem Olajuwon",
+        "Yao Ming",
+        "James Harden",
+        "Moses Malone",
+        "Tracy McGrady",
+        "Steve Francis",
+        "Ralph Sampson",
+        "Kenny Smith",
+        "Vernon Maxwell",
+        "Robert Horry",
+        "Sam Cassell",
+        "Charles Barkley",
+        "Chris Paul",
+        "Russell Westbrook",
+        "Alperen Sengun",
+        "Jalen Green",
+        "Fred VanVleet"
+      ],
+      "no": [
+        "Michael Jordan"
+      ],
+      "prompt": "Name a player who has played for the Houston Rockets.",
+      "family": "sports",
+      "inventoryEvidence": [
+        "https://en.wikipedia.org/wiki/Houston_Rockets_all-time_roster"
+      ],
+      "review": "One whole all-time NBA/BAA/ABA franchise roster, including its stated former team names. 508 independently supplied familiar player inputs reconcile across the batch. Retired jersey numbers and legend symbols are metadata, not player names. Seattle expands the Thunder inventory rather than becoming another question. NBL-only Lakers table rows are excluded. Real former names and public nicknames are explicit; no initials are generated."
+    },
+    {
+      "id": "authored-indiana-pacers-players",
+      "basis": "individually-reviewed-whole-franchise-roster-based-on-original-yes-model",
+      "yes": [
+        "Reggie Miller",
+        "Paul George",
+        "Jermaine O Neal",
+        "Rik Smits",
+        "Tyrese Haliburton",
+        "Detlef Schrempf",
+        "Mel Daniels",
+        "Roger Brown",
+        "George McGinnis",
+        "Mark Jackson",
+        "Jalen Rose",
+        "Danny Granger",
+        "Victor Oladipo",
+        "Domantas Sabonis",
+        "Myles Turner",
+        "Pascal Siakam",
+        "Lance Stephenson"
+      ],
+      "no": [
+        "Michael Jordan"
+      ],
+      "prompt": "Name a player who has played for the Indiana Pacers.",
+      "family": "sports",
+      "inventoryEvidence": [
+        "https://en.wikipedia.org/wiki/Indiana_Pacers_all-time_roster"
+      ],
+      "review": "One whole all-time NBA/BAA/ABA franchise roster, including its stated former team names. 508 independently supplied familiar player inputs reconcile across the batch. Retired jersey numbers and legend symbols are metadata, not player names. Seattle expands the Thunder inventory rather than becoming another question. NBL-only Lakers table rows are excluded. Real former names and public nicknames are explicit; no initials are generated."
+    },
+    {
+      "id": "authored-los-angeles-clippers-players",
+      "basis": "individually-reviewed-whole-franchise-roster-based-on-original-yes-model",
+      "yes": [
+        "Blake Griffin",
+        "Chris Paul",
+        "DeAndre Jordan",
+        "Kawhi Leonard",
+        "Paul George",
+        "Bob McAdoo",
+        "Elton Brand",
+        "Corey Maggette",
+        "Lamar Odom",
+        "Eric Gordon",
+        "Lou Williams",
+        "Jamal Crawford",
+        "Danny Manning",
+        "Norm Nixon",
+        "Ron Harper",
+        "James Harden",
+        "Norman Powell",
+        "Ivica Zubac"
+      ],
+      "no": [
+        "Michael Jordan"
+      ],
+      "prompt": "Name a player who has played for the Los Angeles Clippers.",
+      "family": "sports",
+      "inventoryEvidence": [
+        "https://en.wikipedia.org/wiki/Los_Angeles_Clippers_all-time_roster"
+      ],
+      "review": "One whole all-time NBA/BAA/ABA franchise roster, including its stated former team names. 508 independently supplied familiar player inputs reconcile across the batch. Retired jersey numbers and legend symbols are metadata, not player names. Seattle expands the Thunder inventory rather than becoming another question. NBL-only Lakers table rows are excluded. Real former names and public nicknames are explicit; no initials are generated."
+    },
+    {
+      "id": "authored-los-angeles-lakers-players",
+      "basis": "individually-reviewed-whole-franchise-roster-based-on-original-yes-model",
+      "yes": [
+        "Kobe Bryant",
+        "Shaquille O Neal",
+        "Magic Johnson",
+        "Kareem Abdul Jabbar",
+        "Jerry West",
+        "LeBron James",
+        "George Mikan",
+        "Wilt Chamberlain",
+        "Elgin Baylor",
+        "James Worthy",
+        "Pau Gasol",
+        "Derek Fisher",
+        "Andrew Bynum",
+        "Ron Artest",
+        "Dwight Howard",
+        "Luka Doncic",
+        "Anthony Davis",
+        "Austin Reaves"
+      ],
+      "no": [
+        "Michael Jordan"
+      ],
+      "prompt": "Name a player who has played for the Los Angeles Lakers.",
+      "family": "sports",
+      "inventoryEvidence": [
+        "https://en.wikipedia.org/wiki/Los_Angeles_Lakers_all-time_roster"
+      ],
+      "review": "One whole all-time NBA/BAA/ABA franchise roster, including its stated former team names. 508 independently supplied familiar player inputs reconcile across the batch. Retired jersey numbers and legend symbols are metadata, not player names. Seattle expands the Thunder inventory rather than becoming another question. NBL-only Lakers table rows are excluded. Real former names and public nicknames are explicit; no initials are generated."
+    },
+    {
+      "id": "authored-memphis-grizzlies-players",
+      "basis": "individually-reviewed-whole-franchise-roster-based-on-original-yes-model",
+      "yes": [
+        "Marc Gasol",
+        "Zach Randolph",
+        "Mike Conley",
+        "Ja Morant",
+        "Jaren Jackson Jr",
+        "Shane Battier",
+        "Pau Gasol",
+        "Rudy Gay",
+        "OJ Mayo",
+        "Shareef Abdur Rahim",
+        "Desmond Bane",
+        "Dillon Brooks",
+        "Tony Allen",
+        "Jonas Valanciunas",
+        "Bryant Reeves"
+      ],
+      "no": [
+        "Michael Jordan"
+      ],
+      "prompt": "Name a player who has played for the Memphis Grizzlies.",
+      "family": "sports",
+      "inventoryEvidence": [
+        "https://en.wikipedia.org/wiki/Memphis_Grizzlies_all-time_roster"
+      ],
+      "review": "One whole all-time NBA/BAA/ABA franchise roster, including its stated former team names. 508 independently supplied familiar player inputs reconcile across the batch. Retired jersey numbers and legend symbols are metadata, not player names. Seattle expands the Thunder inventory rather than becoming another question. NBL-only Lakers table rows are excluded. Real former names and public nicknames are explicit; no initials are generated."
+    },
+    {
+      "id": "authored-miami-heat-players",
+      "basis": "individually-reviewed-whole-franchise-roster-based-on-original-yes-model",
+      "yes": [
+        "Dwyane Wade",
+        "LeBron James",
+        "Chris Bosh",
+        "Alonzo Mourning",
+        "Jimmy Butler",
+        "Udonis Haslem",
+        "Shaquille O Neal",
+        "Tim Hardaway",
+        "Glen Rice",
+        "Rony Seikaly",
+        "Eddie Jones",
+        "Antoine Walker",
+        "Shane Battier",
+        "Ray Allen",
+        "Goran Dragic",
+        "Bam Adebayo",
+        "Tyler Herro"
+      ],
+      "no": [
+        "Michael Jordan"
+      ],
+      "prompt": "Name a player who has played for the Miami Heat.",
+      "family": "sports",
+      "inventoryEvidence": [
+        "https://en.wikipedia.org/wiki/Miami_Heat_all-time_roster"
+      ],
+      "review": "One whole all-time NBA/BAA/ABA franchise roster, including its stated former team names. 508 independently supplied familiar player inputs reconcile across the batch. Retired jersey numbers and legend symbols are metadata, not player names. Seattle expands the Thunder inventory rather than becoming another question. NBL-only Lakers table rows are excluded. Real former names and public nicknames are explicit; no initials are generated."
+    },
+    {
+      "id": "authored-milwaukee-bucks-players",
+      "basis": "individually-reviewed-whole-franchise-roster-based-on-original-yes-model",
+      "yes": [
+        "Kareem Abdul Jabbar",
+        "Giannis Antetokounmpo",
+        "Khris Middleton",
+        "Oscar Robertson",
+        "Sidney Moncrief",
+        "Ray Allen",
+        "Glenn Robinson",
+        "Michael Redd",
+        "Andrew Bogut",
+        "Brandon Jennings",
+        "Sam Cassell",
+        "Bob Dandridge",
+        "Marques Johnson",
+        "Brook Lopez",
+        "Jrue Holiday",
+        "Damian Lillard"
+      ],
+      "no": [
+        "Michael Jordan"
+      ],
+      "prompt": "Name a player who has played for the Milwaukee Bucks.",
+      "family": "sports",
+      "inventoryEvidence": [
+        "https://en.wikipedia.org/wiki/Milwaukee_Bucks_all-time_roster",
+        "https://www.nba.com/lakers/history/alumni/kareem-abdul-jabbar",
+        "https://www.hoophall.com/hall-of-famers/kareem-abdul-jabbar"
+      ],
+      "review": "One whole all-time NBA/BAA/ABA franchise roster, including its stated former team names. 508 independently supplied familiar player inputs reconcile across the batch. Retired jersey numbers and legend symbols are metadata, not player names. Seattle expands the Thunder inventory rather than becoming another question. NBL-only Lakers table rows are excluded. Real former names and public nicknames are explicit; no initials are generated."
+    },
+    {
+      "id": "authored-minnesota-timberwolves-players",
+      "basis": "individually-reviewed-whole-franchise-roster-based-on-original-yes-model",
+      "yes": [
+        "Kevin Garnett",
+        "Kevin Love",
+        "Anthony Edwards",
+        "Karl Anthony Towns",
+        "Ricky Rubio",
+        "Sam Cassell",
+        "Stephon Marbury",
+        "Wally Szczerbiak",
+        "Tom Gugliotta",
+        "Latrell Sprewell",
+        "Jimmy Butler",
+        "Zach LaVine",
+        "Rudy Gobert",
+        "Mike Conley",
+        "Naz Reid",
+        "Jaden McDaniels",
+        "Julius Randle"
+      ],
+      "no": [
+        "Michael Jordan"
+      ],
+      "prompt": "Name a player who has played for the Minnesota Timberwolves.",
+      "family": "sports",
+      "inventoryEvidence": [
+        "https://en.wikipedia.org/wiki/Minnesota_Timberwolves_all-time_roster"
+      ],
+      "review": "One whole all-time NBA/BAA/ABA franchise roster, including its stated former team names. 508 independently supplied familiar player inputs reconcile across the batch. Retired jersey numbers and legend symbols are metadata, not player names. Seattle expands the Thunder inventory rather than becoming another question. NBL-only Lakers table rows are excluded. Real former names and public nicknames are explicit; no initials are generated."
+    },
+    {
+      "id": "authored-new-orleans-pelicans-players",
+      "basis": "individually-reviewed-whole-franchise-roster-based-on-original-yes-model",
+      "yes": [
+        "Anthony Davis",
+        "Zion Williamson",
+        "Chris Paul",
+        "Jrue Holiday",
+        "Brandon Ingram",
+        "David West",
+        "Tyson Chandler",
+        "Baron Davis",
+        "Jamal Mashburn",
+        "Eric Gordon",
+        "Ryan Anderson",
+        "Trevor Ariza",
+        "Peja Stojakovic",
+        "DeMarcus Cousins",
+        "CJ McCollum",
+        "Herb Jones",
+        "Dejounte Murray"
+      ],
+      "no": [
+        "Michael Jordan"
+      ],
+      "prompt": "Name a player who has played for the New Orleans Pelicans.",
+      "family": "sports",
+      "inventoryEvidence": [
+        "https://en.wikipedia.org/wiki/New_Orleans_Pelicans_all-time_roster"
+      ],
+      "review": "One whole all-time NBA/BAA/ABA franchise roster, including its stated former team names. 508 independently supplied familiar player inputs reconcile across the batch. Retired jersey numbers and legend symbols are metadata, not player names. Seattle expands the Thunder inventory rather than becoming another question. NBL-only Lakers table rows are excluded. Real former names and public nicknames are explicit; no initials are generated."
+    },
+    {
+      "id": "authored-new-york-knicks-players",
+      "basis": "individually-reviewed-whole-franchise-roster-based-on-original-yes-model",
+      "yes": [
+        "Patrick Ewing",
+        "Walt Frazier",
+        "Willis Reed",
+        "Carmelo Anthony",
+        "Jalen Brunson",
+        "Bernard King",
+        "Dave DeBusschere",
+        "Earl Monroe",
+        "Allan Houston",
+        "John Starks",
+        "Latrell Sprewell",
+        "Larry Johnson",
+        "Amare Stoudemire",
+        "Jeremy Lin",
+        "Kristaps Porzingis",
+        "Julius Randle",
+        "Josh Hart",
+        "Karl Anthony Towns",
+        "Mikal Bridges"
+      ],
+      "no": [
+        "Michael Jordan"
+      ],
+      "prompt": "Name a player who has played for the New York Knicks.",
+      "family": "sports",
+      "inventoryEvidence": [
+        "https://en.wikipedia.org/wiki/New_York_Knicks_all-time_roster"
+      ],
+      "review": "One whole all-time NBA/BAA/ABA franchise roster, including its stated former team names. 508 independently supplied familiar player inputs reconcile across the batch. Retired jersey numbers and legend symbols are metadata, not player names. Seattle expands the Thunder inventory rather than becoming another question. NBL-only Lakers table rows are excluded. Real former names and public nicknames are explicit; no initials are generated."
+    },
+    {
+      "id": "authored-oklahoma-city-thunder-players",
+      "basis": "individually-reviewed-whole-franchise-roster-based-on-original-yes-model",
+      "yes": [
+        "Gary Payton",
+        "Shawn Kemp",
+        "Ray Allen",
+        "Kevin Durant",
+        "Russell Westbrook",
+        "Shai Gilgeous Alexander",
+        "Detlef Schrempf",
+        "Jack Sikma",
+        "Spencer Haywood",
+        "Dennis Johnson",
+        "Dale Ellis",
+        "Fred Brown",
+        "Serge Ibaka",
+        "James Harden",
+        "Steven Adams",
+        "Luguentz Dort",
+        "Jalen Williams",
+        "Chet Holmgren"
+      ],
+      "no": [
+        "Michael Jordan"
+      ],
+      "prompt": "Name a player who has played for the Thunder or Seattle SuperSonics.",
+      "family": "sports",
+      "inventoryEvidence": [
+        "https://en.wikipedia.org/wiki/Oklahoma_City_Thunder_all-time_roster",
+        "https://en.wikipedia.org/wiki/Seattle_SuperSonics_all-time_roster"
+      ],
+      "review": "One whole all-time NBA/BAA/ABA franchise roster, including its stated former team names. 508 independently supplied familiar player inputs reconcile across the batch. Retired jersey numbers and legend symbols are metadata, not player names. Seattle expands the Thunder inventory rather than becoming another question. NBL-only Lakers table rows are excluded. Real former names and public nicknames are explicit; no initials are generated."
+    },
+    {
+      "id": "authored-orlando-magic-players",
+      "basis": "individually-reviewed-whole-franchise-roster-based-on-original-yes-model",
+      "yes": [
+        "Shaquille O Neal",
+        "Penny Hardaway",
+        "Dwight Howard",
+        "Tracy McGrady",
+        "Nick Anderson",
+        "Paolo Banchero",
+        "Dennis Scott",
+        "Scott Skiles",
+        "Darrell Armstrong",
+        "Horace Grant",
+        "Hedo Turkoglu",
+        "Rashard Lewis",
+        "Jameer Nelson",
+        "Aaron Gordon",
+        "Nikola Vucevic",
+        "Franz Wagner",
+        "Jalen Suggs"
+      ],
+      "no": [
+        "Michael Jordan"
+      ],
+      "prompt": "Name a player who has played for the Orlando Magic.",
+      "family": "sports",
+      "inventoryEvidence": [
+        "https://en.wikipedia.org/wiki/Orlando_Magic_all-time_roster"
+      ],
+      "review": "One whole all-time NBA/BAA/ABA franchise roster, including its stated former team names. 508 independently supplied familiar player inputs reconcile across the batch. Retired jersey numbers and legend symbols are metadata, not player names. Seattle expands the Thunder inventory rather than becoming another question. NBL-only Lakers table rows are excluded. Real former names and public nicknames are explicit; no initials are generated."
+    },
+    {
+      "id": "authored-philadelphia-76ers-players",
+      "basis": "individually-reviewed-whole-franchise-roster-based-on-original-yes-model",
+      "yes": [
+        "Allen Iverson",
+        "Julius Erving",
+        "Wilt Chamberlain",
+        "Charles Barkley",
+        "Joel Embiid",
+        "Moses Malone",
+        "Hal Greer",
+        "Dolph Schayes",
+        "Billy Cunningham",
+        "Maurice Cheeks",
+        "Bobby Jones",
+        "Andrew Toney",
+        "Andre Iguodala",
+        "Andre Miller",
+        "Ben Simmons",
+        "Tobias Harris",
+        "Tyrese Maxey",
+        "Paul George"
+      ],
+      "no": [
+        "Michael Jordan"
+      ],
+      "prompt": "Name a player who has played for the Philadelphia 76ers.",
+      "family": "sports",
+      "inventoryEvidence": [
+        "https://en.wikipedia.org/wiki/Philadelphia_76ers_all-time_roster"
+      ],
+      "review": "One whole all-time NBA/BAA/ABA franchise roster, including its stated former team names. 508 independently supplied familiar player inputs reconcile across the batch. Retired jersey numbers and legend symbols are metadata, not player names. Seattle expands the Thunder inventory rather than becoming another question. NBL-only Lakers table rows are excluded. Real former names and public nicknames are explicit; no initials are generated."
+    },
+    {
+      "id": "authored-phoenix-suns-players",
+      "basis": "individually-reviewed-whole-franchise-roster-based-on-original-yes-model",
+      "yes": [
+        "Steve Nash",
+        "Charles Barkley",
+        "Devin Booker",
+        "Kevin Johnson",
+        "Amare Stoudemire",
+        "Shawn Marion",
+        "Paul Westphal",
+        "Walter Davis",
+        "Connie Hawkins",
+        "Alvan Adams",
+        "Dan Majerle",
+        "Tom Chambers",
+        "Goran Dragic",
+        "Chris Paul",
+        "Deandre Ayton",
+        "Kevin Durant",
+        "Bradley Beal"
+      ],
+      "no": [
+        "Michael Jordan"
+      ],
+      "prompt": "Name a player who has played for the Phoenix Suns.",
+      "family": "sports",
+      "inventoryEvidence": [
+        "https://en.wikipedia.org/wiki/Phoenix_Suns_all-time_roster"
+      ],
+      "review": "One whole all-time NBA/BAA/ABA franchise roster, including its stated former team names. 508 independently supplied familiar player inputs reconcile across the batch. Retired jersey numbers and legend symbols are metadata, not player names. Seattle expands the Thunder inventory rather than becoming another question. NBL-only Lakers table rows are excluded. Real former names and public nicknames are explicit; no initials are generated."
+    },
+    {
+      "id": "authored-portland-trail-blazers-players",
+      "basis": "individually-reviewed-whole-franchise-roster-based-on-original-yes-model",
+      "yes": [
+        "Damian Lillard",
+        "Clyde Drexler",
+        "Bill Walton",
+        "Brandon Roy",
+        "LaMarcus Aldridge",
+        "Terry Porter",
+        "Geoff Petrie",
+        "Maurice Lucas",
+        "Mychal Thompson",
+        "Jerome Kersey",
+        "Kevin Duckworth",
+        "Clifford Robinson",
+        "Rasheed Wallace",
+        "Zach Randolph",
+        "Nicolas Batum",
+        "CJ McCollum",
+        "Anfernee Simons",
+        "Scoot Henderson"
+      ],
+      "no": [
+        "Michael Jordan"
+      ],
+      "prompt": "Name a player who has played for the Portland Trail Blazers.",
+      "family": "sports",
+      "inventoryEvidence": [
+        "https://en.wikipedia.org/wiki/Portland_Trail_Blazers_all-time_roster"
+      ],
+      "review": "One whole all-time NBA/BAA/ABA franchise roster, including its stated former team names. 508 independently supplied familiar player inputs reconcile across the batch. Retired jersey numbers and legend symbols are metadata, not player names. Seattle expands the Thunder inventory rather than becoming another question. NBL-only Lakers table rows are excluded. Real former names and public nicknames are explicit; no initials are generated."
+    },
+    {
+      "id": "authored-sacramento-kings-players",
+      "basis": "individually-reviewed-whole-franchise-roster-based-on-original-yes-model",
+      "yes": [
+        "Oscar Robertson",
+        "Chris Webber",
+        "Peja Stojakovic",
+        "Vlade Divac",
+        "Mitch Richmond",
+        "De Aaron Fox",
+        "Jerry Lucas",
+        "Nate Archibald",
+        "Reggie Theus",
+        "Jason Williams",
+        "Mike Bibby",
+        "Brad Miller",
+        "Kevin Martin",
+        "DeMarcus Cousins",
+        "Isaiah Thomas",
+        "Tyreke Evans",
+        "Domantas Sabonis",
+        "Keegan Murray",
+        "Zach LaVine"
+      ],
+      "no": [
+        "Michael Jordan"
+      ],
+      "prompt": "Name a player who has played for the Sacramento Kings.",
+      "family": "sports",
+      "inventoryEvidence": [
+        "https://en.wikipedia.org/wiki/Sacramento_Kings_all-time_roster"
+      ],
+      "review": "One whole all-time NBA/BAA/ABA franchise roster, including its stated former team names. 508 independently supplied familiar player inputs reconcile across the batch. Retired jersey numbers and legend symbols are metadata, not player names. Seattle expands the Thunder inventory rather than becoming another question. NBL-only Lakers table rows are excluded. Real former names and public nicknames are explicit; no initials are generated."
+    },
+    {
+      "id": "authored-san-antonio-spurs-players",
+      "basis": "individually-reviewed-whole-franchise-roster-based-on-original-yes-model",
+      "yes": [
+        "Tim Duncan",
+        "David Robinson",
+        "Tony Parker",
+        "Manu Ginobili",
+        "Kawhi Leonard",
+        "George Gervin",
+        "Victor Wembanyama",
+        "Vinny Del Negro",
+        "Dejounte Murray",
+        "Sean Elliott",
+        "Avery Johnson",
+        "Bruce Bowen",
+        "Alvin Robertson",
+        "De Aaron Fox",
+        "Chris Paul",
+        "Dennis Rodman"
+      ],
+      "no": [
+        "Michael Jordan"
+      ],
+      "prompt": "Name a player who has played for the San Antonio Spurs.",
+      "family": "sports",
+      "inventoryEvidence": [
+        "https://en.wikipedia.org/wiki/San_Antonio_Spurs_all-time_roster"
+      ],
+      "review": "One whole all-time NBA/BAA/ABA franchise roster, including its stated former team names. 508 independently supplied familiar player inputs reconcile across the batch. Retired jersey numbers and legend symbols are metadata, not player names. Seattle expands the Thunder inventory rather than becoming another question. NBL-only Lakers table rows are excluded. Real former names and public nicknames are explicit; no initials are generated."
+    },
+    {
+      "id": "authored-toronto-raptors-players",
+      "basis": "individually-reviewed-whole-franchise-roster-based-on-original-yes-model",
+      "yes": [
+        "Vince Carter",
+        "Chris Bosh",
+        "Kyle Lowry",
+        "DeMar DeRozan",
+        "Kawhi Leonard",
+        "Pascal Siakam",
+        "Damon Stoudamire",
+        "Marcus Camby",
+        "Tracy McGrady",
+        "Morris Peterson",
+        "Antonio Davis",
+        "Jonas Valanciunas",
+        "Serge Ibaka",
+        "Fred VanVleet",
+        "OG Anunoby",
+        "Scottie Barnes",
+        "Immanuel Quickley",
+        "RJ Barrett",
+        "Brandon Ingram"
+      ],
+      "no": [
+        "Michael Jordan"
+      ],
+      "prompt": "Name a player who has played for the Toronto Raptors.",
+      "family": "sports",
+      "inventoryEvidence": [
+        "https://en.wikipedia.org/wiki/Toronto_Raptors_all-time_roster"
+      ],
+      "review": "One whole all-time NBA/BAA/ABA franchise roster, including its stated former team names. 508 independently supplied familiar player inputs reconcile across the batch. Retired jersey numbers and legend symbols are metadata, not player names. Seattle expands the Thunder inventory rather than becoming another question. NBL-only Lakers table rows are excluded. Real former names and public nicknames are explicit; no initials are generated."
+    },
+    {
+      "id": "authored-utah-jazz-players",
+      "basis": "individually-reviewed-whole-franchise-roster-based-on-original-yes-model",
+      "yes": [
+        "Karl Malone",
+        "John Stockton",
+        "Rudy Gobert",
+        "Donovan Mitchell",
+        "Adrian Dantley",
+        "Pete Maravich",
+        "Jeff Malone",
+        "Mark Eaton",
+        "Bryon Russell",
+        "Deron Williams",
+        "Carlos Boozer",
+        "Andrei Kirilenko",
+        "Al Jefferson",
+        "Paul Millsap",
+        "Jordan Clarkson",
+        "Lauri Markkanen",
+        "Walker Kessler"
+      ],
+      "no": [
+        "Michael Jordan"
+      ],
+      "prompt": "Name a player who has played for the Utah Jazz.",
+      "family": "sports",
+      "inventoryEvidence": [
+        "https://en.wikipedia.org/wiki/Utah_Jazz_all-time_roster"
+      ],
+      "review": "One whole all-time NBA/BAA/ABA franchise roster, including its stated former team names. 508 independently supplied familiar player inputs reconcile across the batch. Retired jersey numbers and legend symbols are metadata, not player names. Seattle expands the Thunder inventory rather than becoming another question. NBL-only Lakers table rows are excluded. Real former names and public nicknames are explicit; no initials are generated."
+    },
+    {
+      "id": "authored-washington-wizards-players",
+      "basis": "individually-reviewed-whole-franchise-roster-based-on-original-yes-model",
+      "yes": [
+        "Wes Unseld",
+        "Elvin Hayes",
+        "John Wall",
+        "Bradley Beal",
+        "Gilbert Arenas",
+        "Antawn Jamison",
+        "Earl Monroe",
+        "Bob Dandridge",
+        "Jeff Malone",
+        "Manute Bol",
+        "Gheorghe Muresan",
+        "Rod Strickland",
+        "Chris Webber",
+        "Juwan Howard",
+        "Richard Hamilton",
+        "Michael Jordan",
+        "Caron Butler",
+        "Kyle Kuzma",
+        "Kristaps Porzingis",
+        "Jordan Poole"
+      ],
+      "no": [
+        "Stephen Curry"
+      ],
+      "prompt": "Name a player who has played for the Washington Wizards.",
+      "family": "sports",
+      "inventoryEvidence": [
+        "https://en.wikipedia.org/wiki/Washington_Wizards_all-time_roster"
+      ],
+      "review": "One whole all-time NBA/BAA/ABA franchise roster, including its stated former team names. 508 independently supplied familiar player inputs reconcile across the batch. Retired jersey numbers and legend symbols are metadata, not player names. Seattle expands the Thunder inventory rather than becoming another question. NBL-only Lakers table rows are excluded. Real former names and public nicknames are explicit; no initials are generated."
     }
   ],
   "expansionBatches": [
@@ -7138,6 +8103,52 @@
         "Source legend and quoted-title cleanup; aliases unify version identities",
         "Album-name negative boundaries and named-credit exclusions",
         "Drake, Eminem, Chappell Roan, Bieber, Post Malone and Travis Scott research remains unadmitted because complete sources were not established"
+      ]
+    },
+    {
+      "id": "authored-nba-franchise-rosters-12",
+      "date": "2026-10-26",
+      "questions": [
+        "authored-atlanta-hawks-players",
+        "authored-boston-celtics-players",
+        "authored-brooklyn-nets-players",
+        "authored-charlotte-hornets-players",
+        "authored-chicago-bulls-players",
+        "authored-cleveland-cavaliers-players",
+        "authored-dallas-mavericks-players",
+        "authored-denver-nuggets-players",
+        "authored-detroit-pistons-players",
+        "authored-golden-state-warriors-players",
+        "authored-houston-rockets-players",
+        "authored-indiana-pacers-players",
+        "authored-los-angeles-clippers-players",
+        "authored-los-angeles-lakers-players",
+        "authored-memphis-grizzlies-players",
+        "authored-miami-heat-players",
+        "authored-milwaukee-bucks-players",
+        "authored-minnesota-timberwolves-players",
+        "authored-new-orleans-pelicans-players",
+        "authored-new-york-knicks-players",
+        "authored-oklahoma-city-thunder-players",
+        "authored-orlando-magic-players",
+        "authored-philadelphia-76ers-players",
+        "authored-phoenix-suns-players",
+        "authored-portland-trail-blazers-players",
+        "authored-sacramento-kings-players",
+        "authored-san-antonio-spurs-players",
+        "authored-toronto-raptors-players",
+        "authored-utah-jazz-players",
+        "authored-washington-wizards-players"
+      ],
+      "status": "admitted in development; requested 5,000-question expansion unfinished",
+      "sourceChecks": [
+        "30 all-time franchise questions from 31 complete roster pages; no season/position/tag/opponent variants",
+        "508 independent common-player probes across historical and current stars",
+        "13,408 canonical answer identities; no popularity cutoff",
+        "Seattle source supplements Thunder; Charlotte/Pelicans histories explicitly distinguished",
+        "26 NBL-only Lakers rows held outside the NBA/BAA/ABA scope",
+        "Column-span aware stats extraction; retired-jersey and formerly-name annotations cleaned",
+        "Participation/tenure editorial rarity with common-star overrides; actual public nicknames and verified former names, no generated initials"
       ]
     }
   ]

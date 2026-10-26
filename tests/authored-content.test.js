@@ -270,3 +270,28 @@ test('whole artist catalogs accept recognizable short titles, retain released fe
  }
  for(const input of ['CRS','YWBM','BB'])assert.equal(resolveAnswer(pack('taylor-swift-songs'),input).status,'missing','No generated song initials: '+input);
 });
+
+test('all-time NBA inventories preserve franchise history, proper names and complete source tails',()=>{
+ const proof=JSON.parse(gunzipSync(readFileSync(new URL('../data-snapshots/authored/sources/nba-franchise-rosters.json.gz',import.meta.url))));
+ const checks=JSON.parse(readFileSync(new URL('../data-snapshots/authored/nba-franchise-checks.json',import.meta.url)));
+ assert.equal(proof.teams.length,31);assert.equal(checks.length,30);
+ assert.equal(checks.reduce((n,c)=>n+c.familiarInputs,0),508);
+ for(const [id,inputs]of [
+  ['boston-celtics-players',['Larry Bird','Jayson Tatum','Ray Allen','Shaquille O Neal']],
+  ['los-angeles-lakers-players',['Kobe','Shaq','George Mikan','Ron Artest','Luka Doncic']],
+  ['milwaukee-bucks-players',['Kareem','Lew Alcindor','Giannis','Damian Lillard']],
+  ['dallas-mavericks-players',['JJ Barea','Luka','Cooper Flagg']],
+  ['oklahoma-city-thunder-players',['Gary Payton','Shawn Kemp','Jack Sikma','Russell Westbrook','Chet Holmgren']],
+  ['charlotte-hornets-players',['Alonzo Mourning','Kemba Walker','LaMelo Ball']],
+  ['new-orleans-pelicans-players',['Chris Paul','Anthony Davis','Zion Williamson']],
+  ['san-antonio-spurs-players',['Wemby','Victor Wembanyama','Tim Duncan']],
+  ['atlanta-hawks-players',['Jackie Moore','Odie Spears']],
+ ])for(const input of inputs)assert.equal(resolveAnswer(pack(id),input).status,'exact',id+': '+input);
+ for(const c of checks)for(const a of pack(c.id.replace('authored-','')).answers)assert.ok(!/\(#|\(formerly|^[+^†‡]/.test(a.label),c.id+': source annotations are not names');
+ const bulls=pack('chicago-bulls-players');
+ for(const input of ['MJ','DR','SP'])assert.equal(resolveAnswer(bulls,input).status,'missing','No generated player initials: '+input);
+ assert.equal(resolveAnswer(pack('los-angeles-lakers-players'),'Ron Artest').answer.label,resolveAnswer(pack('los-angeles-lakers-players'),'Metta World Peace').answer.label);
+ assert.equal(resolveAnswer(pack('san-antonio-spurs-players'),'Wemby').answer.points,30);
+ assert.equal(resolveAnswer(pack('los-angeles-lakers-players'),'Dave Latter').status,'missing','NBL-only table cannot leak into the NBA/BAA/ABA inventory');
+ assert.ok(!AUTHORED_PACKS.some(p=>p.id==='authored-seattle-supersonics-players'),'former franchise names expand answers, not question counts');
+});
