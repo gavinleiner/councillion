@@ -8829,6 +8829,290 @@
         "https://wordnet.princeton.edu/"
       ],
       "review": "One whole recognizable category with a complete licensed dictionary descendant inventory, explicit sense and alias holds, independently specified common inputs and declared modern supplements. Source granularity errors and content-versus-device errors were removed. Actual public abbreviations remain; initials are never generated. No property/tag joins, source sections, individual object models or named-instance traversals create questions."
+    },
+    {
+      "id": "authored-wild-cat-kinds",
+      "basis": "individually-reviewed-whole-animal-groups-based-on-original-yes-model",
+      "yes": [
+        "Lion",
+        "Tiger",
+        "Leopard",
+        "Jaguar",
+        "Cheetah",
+        "Cougar",
+        "Puma",
+        "Mountain lion",
+        "Lynx",
+        "Bobcat",
+        "Caracal",
+        "Serval",
+        "Ocelot",
+        "Margay",
+        "Snow leopard",
+        "Clouded leopard",
+        "Fishing cat",
+        "Pallas cat",
+        "Sand cat",
+        "Black-footed cat",
+        "Jaguarundi",
+        "Wildcat",
+        "Bengal tiger",
+        "Amur tiger",
+        "Sumatran tiger",
+        "Asiatic lion",
+        "Black panther",
+        "Canada lynx"
+      ],
+      "no": [
+        "Domestic cat",
+        "Persian cat",
+        "Wolf",
+        "Liger",
+        "Tigon",
+        "Saber-toothed cat"
+      ],
+      "prompt": "Name a kind of wild cat.",
+      "family": "nature",
+      "inventoryEvidence": [
+        "https://www.mammaldiversity.org/",
+        "https://doi.org/10.5281/zenodo/21654811",
+        "https://www.catsg.org/living-species-tiger",
+        "https://www.catsg.org/living-species-lions",
+        "https://animals.sandiegozoo.org/animals/leopard",
+        "https://nationalzoo.si.edu/animals/tiger"
+      ],
+      "review": "Complete ASM v2.5 family/infraorder species inventory reconciled with independent ordinary-name guesses, actual named groups and primary public-name evidence. Current scientific names keep ownership; ambiguous public names have explicit owners. Pet breeds and captive hybrids are excluded from the two wild-only prompts. No country, color, title-word or descriptor combinations create additional questions."
+    },
+    {
+      "id": "authored-wild-canid-kinds",
+      "basis": "individually-reviewed-whole-animal-groups-based-on-original-yes-model",
+      "yes": [
+        "Gray wolf",
+        "Coyote",
+        "Red fox",
+        "Arctic fox",
+        "Fennec fox",
+        "African wild dog",
+        "Dhole",
+        "Dingo",
+        "Maned wolf",
+        "Bush dog",
+        "Golden jackal",
+        "Ethiopian wolf",
+        "Red wolf",
+        "Gray fox",
+        "Bat-eared fox",
+        "Swift fox",
+        "Kit fox",
+        "Raccoon dog",
+        "Crab-eating fox",
+        "Darwin fox",
+        "Tanuki",
+        "Timber wolf",
+        "Painted dog",
+        "Fennec",
+        "Arctic wolf",
+        "Fox",
+        "Wolf",
+        "Jackal"
+      ],
+      "no": [
+        "Poodle",
+        "Hyena",
+        "Raccoon"
+      ],
+      "prompt": "Name a wild animal in the dog family.",
+      "family": "nature",
+      "inventoryEvidence": [
+        "https://www.mammaldiversity.org/",
+        "https://doi.org/10.5281/zenodo/21654811",
+        "https://australian.museum/learn/animals/mammals/dingo/"
+      ],
+      "review": "Complete ASM v2.5 family/infraorder species inventory reconciled with independent ordinary-name guesses, actual named groups and primary public-name evidence. Current scientific names keep ownership; ambiguous public names have explicit owners. Pet breeds and captive hybrids are excluded from the two wild-only prompts. No country, color, title-word or descriptor combinations create additional questions."
+    },
+    {
+      "id": "authored-weasel-family-animals",
+      "basis": "individually-reviewed-whole-animal-groups-based-on-original-yes-model",
+      "yes": [
+        "Otter",
+        "Weasel",
+        "Badger",
+        "Ferret",
+        "Mink",
+        "Wolverine",
+        "Stoat",
+        "Polecat",
+        "Marten",
+        "Honey badger",
+        "Sea otter",
+        "Giant otter",
+        "Eurasian otter",
+        "European badger",
+        "American badger",
+        "American mink",
+        "Least weasel",
+        "Tayra",
+        "Fisher",
+        "Japanese marten",
+        "European polecat",
+        "Black-footed ferret",
+        "European mink",
+        "Sable",
+        "Ratel",
+        "River otter"
+      ],
+      "no": [
+        "Skunk",
+        "Raccoon",
+        "Mongoose"
+      ],
+      "prompt": "Name a kind of animal in the weasel family.",
+      "family": "nature",
+      "inventoryEvidence": [
+        "https://www.mammaldiversity.org/",
+        "https://doi.org/10.5281/zenodo/21654811"
+      ],
+      "review": "Complete ASM v2.5 family/infraorder species inventory reconciled with independent ordinary-name guesses, actual named groups and primary public-name evidence. Current scientific names keep ownership; ambiguous public names have explicit owners. Pet breeds and captive hybrids are excluded from the two wild-only prompts. No country, color, title-word or descriptor combinations create additional questions."
+    },
+    {
+      "id": "authored-deer-kinds",
+      "basis": "individually-reviewed-whole-animal-groups-based-on-original-yes-model",
+      "yes": [
+        "Moose",
+        "Elk",
+        "Reindeer",
+        "Red deer",
+        "Mule deer",
+        "Fallow deer",
+        "Caribou",
+        "Wapiti",
+        "White-tailed deer",
+        "Roe deer",
+        "Muntjac",
+        "Chital",
+        "Sambar",
+        "Pudu",
+        "Water deer",
+        "Sika deer",
+        "Tufted deer",
+        "Brocket deer",
+        "Pere David deer",
+        "Axis deer",
+        "Sangai",
+        "Milu",
+        "Barasingha",
+        "Chinese water deer",
+        "Sambar deer"
+      ],
+      "no": [
+        "Antelope",
+        "Giraffe",
+        "Horse"
+      ],
+      "prompt": "Name a kind of deer.",
+      "family": "nature",
+      "inventoryEvidence": [
+        "https://www.mammaldiversity.org/",
+        "https://doi.org/10.5281/zenodo/21654811",
+        "https://www.amnh.org/exhibitions/permanent/north-american-mammals/wapiti"
+      ],
+      "review": "Complete ASM v2.5 family/infraorder species inventory reconciled with independent ordinary-name guesses, actual named groups and primary public-name evidence. Current scientific names keep ownership; ambiguous public names have explicit owners. Pet breeds and captive hybrids are excluded from the two wild-only prompts. No country, color, title-word or descriptor combinations create additional questions."
+    },
+    {
+      "id": "authored-seal-sea-lion-walrus-kinds",
+      "basis": "individually-reviewed-whole-animal-groups-based-on-original-yes-model",
+      "yes": [
+        "Walrus",
+        "Sea lion",
+        "Fur seal",
+        "Elephant seal",
+        "Harbor seal",
+        "Leopard seal",
+        "Harp seal",
+        "Gray seal",
+        "Bearded seal",
+        "Ringed seal",
+        "Weddell seal",
+        "Crabeater seal",
+        "Monk seal",
+        "Hawaiian monk seal",
+        "Mediterranean monk seal",
+        "California sea lion",
+        "Steller sea lion",
+        "Northern fur seal",
+        "Northern elephant seal",
+        "Southern elephant seal",
+        "Ross seal",
+        "Ribbon seal",
+        "Harbour seal",
+        "Common seal",
+        "Elephant seal",
+        "Galapagos sea lion",
+        "Australian sea lion"
+      ],
+      "no": [
+        "Dugong",
+        "Manatee",
+        "Sea otter"
+      ],
+      "prompt": "Name a kind of seal, sea lion or walrus.",
+      "family": "nature",
+      "inventoryEvidence": [
+        "https://www.mammaldiversity.org/",
+        "https://doi.org/10.5281/zenodo/21654811",
+        "https://www.fisheries.noaa.gov/seals-sea-lions"
+      ],
+      "review": "Complete ASM v2.5 family/infraorder species inventory reconciled with independent ordinary-name guesses, actual named groups and primary public-name evidence. Current scientific names keep ownership; ambiguous public names have explicit owners. Pet breeds and captive hybrids are excluded from the two wild-only prompts. No country, color, title-word or descriptor combinations create additional questions."
+    },
+    {
+      "id": "authored-whale-dolphin-porpoise-kinds",
+      "basis": "individually-reviewed-whole-animal-groups-based-on-original-yes-model",
+      "yes": [
+        "Blue whale",
+        "Humpback whale",
+        "Orca",
+        "Sperm whale",
+        "Beluga",
+        "Narwhal",
+        "Killer whale",
+        "Bottlenose dolphin",
+        "Spinner dolphin",
+        "Common dolphin",
+        "Harbor porpoise",
+        "Gray whale",
+        "Minke whale",
+        "Fin whale",
+        "Sei whale",
+        "Bowhead whale",
+        "Right whale",
+        "Pilot whale",
+        "False killer whale",
+        "Amazon river dolphin",
+        "Vaquita",
+        "Baleen whale",
+        "Toothed whale",
+        "Risso dolphin",
+        "Biggs killer whale",
+        "Transient killer whale",
+        "Resident killer whale",
+        "Offshore killer whale",
+        "Pink river dolphin",
+        "Narwhale",
+        "Beluga whale"
+      ],
+      "no": [
+        "Whale shark",
+        "Manatee",
+        "Seal"
+      ],
+      "prompt": "Name a kind of whale, dolphin or porpoise.",
+      "family": "nature",
+      "inventoryEvidence": [
+        "https://www.mammaldiversity.org/",
+        "https://doi.org/10.5281/zenodo/21654811",
+        "https://www.fisheries.noaa.gov/species/killer-whale"
+      ],
+      "review": "Complete ASM v2.5 family/infraorder species inventory reconciled with independent ordinary-name guesses, actual named groups and primary public-name evidence. Current scientific names keep ownership; ambiguous public names have explicit owners. Pet breeds and captive hybrids are excluded from the two wild-only prompts. No country, color, title-word or descriptor combinations create additional questions."
     }
   ],
   "expansionBatches": [
@@ -9154,6 +9438,26 @@
         "Misleading parka/windbreaker, boater/Panama, fedora/homburg/trilby, carabiner/circlip and CD/DVD aliases split",
         "Primary manufacturer catalog/guide evidence supports modern audio, ball, imaging, optics, storage and paint inputs",
         "One prompt per whole real category; source children and descriptor combinations never add question count"
+      ]
+    },
+    {
+      "id": "authored-mammal-concepts-15",
+      "date": "2026-10-26",
+      "questions": [
+        "authored-wild-cat-kinds",
+        "authored-wild-canid-kinds",
+        "authored-weasel-family-animals",
+        "authored-deer-kinds",
+        "authored-seal-sea-lion-walrus-kinds",
+        "authored-whale-dolphin-porpoise-kinds"
+      ],
+      "status": "admitted in development; requested 5,000-question expansion unfinished",
+      "sourceChecks": [
+        "All 356 eligible publisher species reconciled, not a selected or truncated tail",
+        "165 independent familiar inputs and explicit wrong-animal boundaries pass the gameplay matcher",
+        "Aliases retain real public names such as Bengal tiger, mountain lion, caribou, orca and beluga whale",
+        "Current scientific ownership and explicit ambiguous-name decisions protect separate species",
+        "Six whole clades, no country/color/habitat variants counted as questions"
       ]
     }
   ]

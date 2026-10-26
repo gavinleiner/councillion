@@ -1,6 +1,6 @@
 {
-  "build": "7d849114b9f3190a",
-  "count": 356,
+  "build": "ccc6363c815ee9ec",
+  "count": 362,
   "categories": [
     {
       "id": "group-q001",
@@ -2849,6 +2849,54 @@
       "group": "authored-whole-object-concept",
       "answerCount": 208,
       "scope": "Kinds of boat, ship, raft or other vessel designed to travel on water or underwater count, past or present. Individual named vessels, wrecks, ice-only vehicles and descriptors of condition alone do not."
+    },
+    {
+      "id": "authored-wild-cat-kinds",
+      "prompt": "Name a kind of wild cat.",
+      "family": "nature",
+      "group": "authored-whole-taxonomic-group",
+      "answerCount": 46,
+      "scope": "Living and recently extinct species in the Mammal Diversity Database, plus established named animal groups, count. English names, documented scientific names and genuine public synonyms count. Prehistoric fossil-only species are outside this current-species inventory. Domestic cat breeds and captive cross-species hybrids do not count. Named tiger and lion populations share their parent species identity."
+    },
+    {
+      "id": "authored-wild-canid-kinds",
+      "prompt": "Name a wild animal in the dog family.",
+      "family": "nature",
+      "group": "authored-whole-taxonomic-group",
+      "answerCount": 43,
+      "scope": "Living and recently extinct species in the Mammal Diversity Database, plus established named animal groups, count. English names, documented scientific names and genuine public synonyms count. Prehistoric fossil-only species are outside this current-species inventory. Domestic dog breeds do not count. Dingoes and New Guinea singing dogs count as established wild-dog groups; their disputed species rank does not make their names invalid."
+    },
+    {
+      "id": "authored-weasel-family-animals",
+      "prompt": "Name a kind of animal in the weasel family.",
+      "family": "nature",
+      "group": "authored-whole-taxonomic-group",
+      "answerCount": 77,
+      "scope": "Living and recently extinct species in the Mammal Diversity Database, plus established named animal groups, count. English names, documented scientific names and genuine public synonyms count. Prehistoric fossil-only species are outside this current-species inventory."
+    },
+    {
+      "id": "authored-deer-kinds",
+      "prompt": "Name a kind of deer.",
+      "family": "nature",
+      "group": "authored-whole-taxonomic-group",
+      "answerCount": 65,
+      "scope": "Living and recently extinct species in the Mammal Diversity Database, plus established named animal groups, count. English names, documented scientific names and genuine public synonyms count. Prehistoric fossil-only species are outside this current-species inventory."
+    },
+    {
+      "id": "authored-seal-sea-lion-walrus-kinds",
+      "prompt": "Name a kind of seal, sea lion or walrus.",
+      "family": "nature",
+      "group": "authored-whole-taxonomic-group",
+      "answerCount": 40,
+      "scope": "Living and recently extinct species in the Mammal Diversity Database, plus established named animal groups, count. English names, documented scientific names and genuine public synonyms count. Prehistoric fossil-only species are outside this current-species inventory."
+    },
+    {
+      "id": "authored-whale-dolphin-porpoise-kinds",
+      "prompt": "Name a kind of whale, dolphin or porpoise.",
+      "family": "nature",
+      "group": "authored-whole-taxonomic-group",
+      "answerCount": 107,
+      "scope": "Living and recently extinct species in the Mammal Diversity Database, plus established named animal groups, count. English names, documented scientific names and genuine public synonyms count. Prehistoric fossil-only species are outside this current-species inventory."
     }
   ]
 }

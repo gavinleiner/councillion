@@ -349,3 +349,18 @@ test('object categories keep ordinary names while rejecting misleading source se
  for(const [id,a,b]of [['sports-balls','Pickleball','Pickleball ball'],['fabric-kinds','Lycra','Spandex'],['box-container-kinds','Lockbox','Safe deposit box'],['fastener-kinds','Cotter pin','Split pin'],['headwear-kinds','Kippah','Yarmulke'],['watercraft-kinds','Dugout','Dugout canoe']])assert.equal(resolveAnswer(pack(id),a).answer.label,resolveAnswer(pack(id),b).answer.label,id+': one identity');
  for(const id of ['headwear-kinds','computer-storage-memory','photography-equipment'])for(const n of ['AB','ZX'])assert.equal(resolveAnswer(pack(id),n).status,'missing','no generated initials');
 });
+
+
+test('whole mammal groups reconcile every current species and preserve familiar public names',()=>{
+ const source=JSON.parse(gunzipSync(readFileSync(new URL('../data-snapshots/authored/sources/mdd-2.5-species.json.gz',import.meta.url))));
+ const specs=JSON.parse(readFileSync(new URL('../data-snapshots/authored/mammal-concept-specifications.json',import.meta.url))).questions;
+ for(const q of specs){const p=pack(q.key),wild=['wild-cat-kinds','wild-canid-kinds'].includes(q.key);
+  const expected=source.species.filter(s=>(q.families.includes(s.family)||q.infraorders.includes(s.infraorder))&&(!wild||s.domestic!=='1'));
+  for(const s of expected){const result=resolveAnswer(p,s.sciName.replaceAll('_',' '));assert.equal(result.status,'exact',q.key+': '+s.sciName);assert.equal(result.answer.label,s.mainCommonName,q.key+': current scientific ownership');}
+ }
+ for(const [id,names]of [['wild-cat-kinds',['Cougar','Mountain lion','Bengal tiger','Amur tiger','Asiatic lion','Black panther','Canada lynx']],['wild-canid-kinds',['Dingo','New Guinea singing dog','Tanuki','Timber wolf','Painted dog']],['weasel-family-animals',['Ferret','Stoat','Badger','Ratel','Black-footed ferret']],['deer-kinds',['Moose','Elk','Caribou','Reindeer','Axis deer','Sambar deer']],['seal-sea-lion-walrus-kinds',['Walrus','Sea lion','Harbour seal','Saimaa ringed seal']],['whale-dolphin-porpoise-kinds',['Orca','Killer whale','Beluga whale','Bottlenose dolphin','Common dolphin','Narwhale','Biggs killer whale','Offshore killer whale']]])for(const n of names)assert.equal(resolveAnswer(pack(id),n).status,'exact',id+': '+n);
+ for(const [id,a,b]of [['wild-cat-kinds','Bengal tiger','Tiger'],['wild-cat-kinds','Cougar','Mountain lion'],['wild-cat-kinds','Black panther','Leopard'],['deer-kinds','Caribou','Reindeer'],['deer-kinds','Elk','Wapiti'],['whale-dolphin-porpoise-kinds','Orca','Common killer whale'],['whale-dolphin-porpoise-kinds','Biggs killer whale','Transient killer whale']])assert.equal(resolveAnswer(pack(id),a).answer.label,resolveAnswer(pack(id),b).answer.label,id+': same scoring identity');
+ assert.notEqual(resolveAnswer(pack('deer-kinds'),'Moose').answer.label,resolveAnswer(pack('deer-kinds'),'Elk').answer.label,'North American elk resolves to wapiti; moose retains its own identity');
+ assert.notEqual(resolveAnswer(pack('whale-dolphin-porpoise-kinds'),'Orca').answer.label,resolveAnswer(pack('whale-dolphin-porpoise-kinds'),'Biggs killer whale').answer.label,'distinct current species are retained');
+ for(const id of specs.map(q=>q.key))for(const n of ['AB','ZX'])assert.equal(resolveAnswer(pack(id),n).status,'missing','no invented initials');
+});

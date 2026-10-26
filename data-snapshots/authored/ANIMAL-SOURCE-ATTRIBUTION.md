@@ -47,3 +47,14 @@ auk, nighthawk, owlet-nightjar and flying squirrel do not qualify for these
 respective groups merely because of a similar name or appearance.
 
 These species rows are answers. They do not count as thousands of questions.
+
+
+## Six additional whole mammal groups (2026-10-26)
+
+`batches/17-mammal-concepts.json` uses the same pinned ASM Mammal Diversity Database v2.5 complete species source for wild felids, wild canids, mustelids, deer, pinnipeds and cetaceans. Source family or infraorder membership is evaluated across all 6,904 source records. The two wild-only inventories explicitly exclude the publisher's domestic species flag; domestic breeds are outside their stated scope. The other questions retain all eligible publisher species. No range, color, country or year combination creates another question.
+
+The source is credited to the American Society of Mammalogists / Mammal Diversity Database under CC BY 4.0, https://creativecommons.org/licenses/by/4.0/. The v2.5 archived source is https://doi.org/10.5281/zenodo/21654811. Exact release and source checksums remain in `sources/mdd-2.5-species.json.gz` and the generated check ledger.
+
+Independent common guesses and a small set of actual named groups extend species-only entries. Genuine tiger/lion population names share their parent animal identity rather than manufacturing rare duplicate scores. Primary public references from the IUCN Cat Specialist Group and Smithsonian document those names; San Diego Zoo documents black panther as a melanistic leopard. The Australian Museum documents the dingo name despite disputed species rank. NOAA supplies public killer-whale ecotype terminology, and AMNH documents the elk/wapiti versus European elk/moose ambiguity. Exact URLs accompany each question.
+
+Current accepted scientific names retain current ownership when they also occur as historical synonyms. Ambiguous common names have explicit owners rather than an accidental first row: for example, North American elk maps to wapiti, panther to puma, clouded leopard to the mainland species, and the unqualified orca name to Common Killer Whale. Distinct publisher species remain separate, including Bigg's and Resident Killer Whales. Published aliases and reviewed synonyms are retained; random initials are never generated.
