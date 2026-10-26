@@ -1,6 +1,6 @@
 {
-  "build": "ccc6363c815ee9ec",
-  "count": 362,
+  "build": "3df87ad555158102",
+  "count": 376,
   "categories": [
     {
       "id": "group-q001",
@@ -2897,6 +2897,118 @@
       "group": "authored-whole-taxonomic-group",
       "answerCount": 107,
       "scope": "Living and recently extinct species in the Mammal Diversity Database, plus established named animal groups, count. English names, documented scientific names and genuine public synonyms count. Prehistoric fossil-only species are outside this current-species inventory."
+    },
+    {
+      "id": "authored-beaches",
+      "prompt": "Name a real named beach.",
+      "family": "world",
+      "group": "authored-whole-concept",
+      "answerCount": 14538,
+      "scope": "Real named coastal, lake and river beaches count. A city name qualifies when it is also the established name of a beach. A whole country, waterbody or general tourist region alone does not name a beach."
+    },
+    {
+      "id": "authored-botanic-gardens",
+      "prompt": "Name a real garden, botanical garden or arboretum.",
+      "family": "world",
+      "group": "authored-whole-concept",
+      "answerCount": 2575,
+      "scope": "Real named gardens, botanical gardens, arboretums and established garden complexes or garden estates count. Fictional gardens and an ordinary private address without a named garden do not count."
+    },
+    {
+      "id": "authored-capes-headlands",
+      "prompt": "Name a real named cape or headland.",
+      "family": "world",
+      "group": "authored-whole-concept",
+      "answerCount": 95478,
+      "scope": "Real named capes, headlands and projecting points of land count, including lake headlands. A city containing the word Cape does not qualify merely because of its name."
+    },
+    {
+      "id": "authored-caves",
+      "prompt": "Name a real cave or cave system.",
+      "family": "world",
+      "group": "authored-whole-concept",
+      "answerCount": 5345,
+      "scope": "Real named caves, cave systems, rock shelters and historical rock-cut cave complexes count, including show caves. An ordinary mine or tunnel does not automatically count; fictional caves are excluded."
+    },
+    {
+      "id": "authored-dams",
+      "prompt": "Name a real named dam.",
+      "family": "world",
+      "group": "authored-whole-concept",
+      "answerCount": 57781,
+      "scope": "Named real dams and barrages count, including historical dams and named projects already under construction. A reservoir name does not automatically name its dam, and fictional dams do not count."
+    },
+    {
+      "id": "authored-named-deserts",
+      "prompt": "Name a desert.",
+      "family": "world",
+      "group": "authored-whole-concept",
+      "answerCount": 366,
+      "scope": "Real named deserts and established desert regions worldwide count, including polar deserts and places traditionally known as deserts. A hotel, village, isolated rock, beach or generic dune does not automatically become a desert."
+    },
+    {
+      "id": "authored-glaciers",
+      "prompt": "Name a real glacier or named glacial ice body.",
+      "family": "world",
+      "group": "authored-whole-concept",
+      "answerCount": 7476,
+      "scope": "Real named glaciers, ice caps, icefields and land ice sheets count. Seasonal sea ice, icebergs, mountains without a named ice body and fictional ice are outside this inventory."
+    },
+    {
+      "id": "authored-islands-archipelagos",
+      "prompt": "Name a real island or archipelago.",
+      "family": "world",
+      "group": "authored-whole-concept",
+      "answerCount": 116403,
+      "scope": "Real named islands and archipelagos worldwide count, including islands that share a country name. Continental mainlands are not treated as islands. Fictional islands do not count."
+    },
+    {
+      "id": "authored-mountains-peaks",
+      "prompt": "Name a real mountain, mountain peak or volcano.",
+      "family": "world",
+      "group": "authored-whole-concept",
+      "answerCount": 353704,
+      "scope": "Named mountains, mountain peaks and volcanoes on Earth count. Whole mountain ranges, unnamed coordinates, fictional mountains and names only found on other planets are outside this inventory."
+    },
+    {
+      "id": "authored-named-forests",
+      "prompt": "Name a real named forest or woodland.",
+      "family": "world",
+      "group": "authored-whole-concept",
+      "answerCount": 66467,
+      "scope": "Real named forests, woodlands and established forest regions count, including national forests and named historical or petrified forests. A country or a fictional woodland does not count by itself."
+    },
+    {
+      "id": "authored-reefs-atolls",
+      "prompt": "Name a real named reef or atoll.",
+      "family": "world",
+      "group": "authored-whole-concept",
+      "answerCount": 10067,
+      "scope": "Real named reefs and atolls count, including coral and rocky reefs. A plain island or river is not automatically a reef or atoll."
+    },
+    {
+      "id": "authored-reservoirs",
+      "prompt": "Name a real reservoir or artificial lake.",
+      "family": "world",
+      "group": "authored-whole-concept",
+      "answerCount": 81396,
+      "scope": "Named reservoirs and artificial lakes count, including historical and seasonally dry reservoirs. A naturally formed lake does not automatically become a reservoir just because it has a regulated outlet."
+    },
+    {
+      "id": "authored-valleys-canyons-gorges",
+      "prompt": "Name a real valley, canyon or gorge.",
+      "family": "world",
+      "group": "authored-whole-concept",
+      "answerCount": 92248,
+      "scope": "Real named valleys, canyons and gorges on Earth count. Features conventionally known by these names count, including Bryce Canyon. Fictional places and a whole country alone do not count."
+    },
+    {
+      "id": "authored-zoos",
+      "prompt": "Name a real zoo, wildlife park or public aquarium.",
+      "family": "world",
+      "group": "authored-whole-concept",
+      "answerCount": 2108,
+      "scope": "Real zoos, zoological parks, public aquariums, aviaries and established public animal collections count, past or present. Fictional parks and a generic nature reserve without a zoological collection do not count."
     }
   ]
 }

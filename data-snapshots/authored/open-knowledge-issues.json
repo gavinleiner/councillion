@@ -43,21 +43,6 @@
       "reason": "No usable English/Latin answer label under the current display limit"
     },
     {
-      "question": "named-deserts",
-      "name": "Kyzylkum Desert",
-      "reason": "Known named desert omissions; primary geographical reference cross-check pending before admission"
-    },
-    {
-      "question": "named-deserts",
-      "name": "Patagonian Desert",
-      "reason": "Known named desert omissions; primary geographical reference cross-check pending before admission"
-    },
-    {
-      "question": "named-deserts",
-      "name": "Antarctic Desert",
-      "reason": "Known named desert omissions; primary geographical reference cross-check pending before admission"
-    },
-    {
       "question": "archaeological-sites",
       "id": "Q137553094",
       "name": "后崎山遗址",
@@ -199,12 +184,6 @@
     {
       "question": "castles-palaces",
       "checked": 32,
-      "notAssumedValid": [],
-      "missing": []
-    },
-    {
-      "question": "named-deserts",
-      "checked": 30,
       "notAssumedValid": [],
       "missing": []
     },

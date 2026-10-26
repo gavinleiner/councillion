@@ -21,6 +21,9 @@ specs=[
 ]
 qs=[];issues=[];challenges=[]
 for key,family,topic,prompt,scope,examples,wrong in specs:
+ # The desert candidate is now rebuilt from the complete primary gazetteer
+ # and published desert list, retaining its original concept/ID.
+ if key=='named-deserts':continue
  if key not in s['groups']:continue
  raw={p['id']:{**p,'aliases':list(p['aliases'])}for p in s['groups'][key]}
  fixes=supp.get(key,{})

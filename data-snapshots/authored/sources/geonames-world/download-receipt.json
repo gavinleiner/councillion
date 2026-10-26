@@ -1,0 +1,11 @@
+{
+  "source": "https://download.geonames.org/export/dump/allCountries.zip",
+  "status": 200,
+  "retrieved": "2026-10-26",
+  "lastModified": "Mon, 26 Oct 2026 02:48:44 GMT",
+  "bytes": 422503800,
+  "sha256": "27271b11185e457074459e777f05856f3d32037101c16ee36e935bc1cb3d9961",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "note": "Raw gazetteer capture only. Feature classification, common names and aliases still require question-level review; none of these rows are admitted questions."
+}
