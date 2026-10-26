@@ -244,3 +244,29 @@ test('world inventories reconcile major ranges, public museum names and a rename
  const p=pack('museums'),meta=manifest.categories.find(m=>m.id===p.id),guarded={...p,answers:p.answers,excludedAnswers:meta.exclude};
  for(const input of ['Museum','Art museum'])assert.equal(resolveAnswer(guarded,input).status,'missing',input+': a generic category placeholder is not a proper museum name');
 });
+
+test('whole artist catalogs accept recognizable short titles, retain released features and share version identities',()=>{
+ for(const [id,inputs]of [
+  ['taylor-swift-songs',['Better Man','Cruel Summer','All Too Well','Antihero']],
+  ['the-weeknd-songs',['House of Balloons','Glass Table Girls','Wicked Games']],
+  ['beyonce-songs',['Single Ladies','Run the World']],
+  ['ariana-grande-songs',['We Cant Be Friends','Give It Up','LA Boyz','Seven Rings']],
+  ['bruno-mars-songs',['Uptown Funk','Loves Train','Leave the Door Open']],
+  ['dua-lipa-songs',['Cold Heart']],
+  ['billie-eilish-songs',['Guess']],
+  ['metallica-songs',['Seek and Destroy']],
+  ['red-hot-chili-peppers-songs',['Snow']],
+  ['twenty-one-pilots-songs',['Chlorine','Level of Concern']],
+ ])for(const input of inputs)assert.equal(resolveAnswer(pack(id),input).status,'exact',id+': '+input);
+ for(const [id,a,b]of [
+  ['green-day-songs','Good Riddance','Time of Your Life'],
+  ['twenty-one-pilots-songs','Chlorine','Chlorine (Mexico City)'],
+  ['taylor-swift-songs','All Too Well','All Too Well (10 Minute Version)'],
+  ['beyonce-songs',"All That I'm Lookin' For",'Sex Kitten'],
+ ])assert.equal(resolveAnswer(pack(id),a).answer.label,resolveAnswer(pack(id),b).answer.label,id+': versions cannot score twice');
+ for(const [id,input]of [['taylor-swift-songs','This Is What You Came For'],['kendrick-lamar-songs','The Ways'],['lady-gaga-songs','Quicksand'],['maroon-5-songs','Heard Em Say'],['the-weeknd-songs','Title Unknown']]){
+  const p=pack(id),meta=manifest.categories.find(m=>m.id===p.id);
+  assert.equal(resolveAnswer({...p,answers:p.answers,excludedAnswers:meta.exclude},input).status,'missing',id+': source context must establish actual performer eligibility');
+ }
+ for(const input of ['CRS','YWBM','BB'])assert.equal(resolveAnswer(pack('taylor-swift-songs'),input).status,'missing','No generated song initials: '+input);
+});

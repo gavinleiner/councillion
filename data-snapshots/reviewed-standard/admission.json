@@ -6136,6 +6136,782 @@
         "https://www.visitsarajevo.ba/listings/monument-complex-tunnel-d-b/"
       ],
       "review": "124 independent worldwide entry inputs reconcile against named source inventories. Repaired missing major ranges, museum names and renamed institutions; added the actual basketball museum from its own publisher. Generic museum placeholders and aliases do not count as proper names. Fictional classification checked separately; real Sarajevo Tunnel museum is not discarded because of a conflicting source classification. Author review, not a claimed user vote."
+    },
+    {
+      "id": "authored-taylor-swift-songs",
+      "basis": "individually-reviewed-whole-artist-catalog-based-on-original-yes-model",
+      "yes": [
+        "Love Story",
+        "You Belong with Me",
+        "Shake It Off",
+        "Blank Space",
+        "Bad Blood",
+        "Anti-Hero",
+        "Cruel Summer",
+        "All Too Well",
+        "Style",
+        "Our Song",
+        "Enchanted",
+        "Teardrops on My Guitar",
+        "Fortnight",
+        "Look What You Made Me Do",
+        "Better Man",
+        "Babe",
+        "I Knew You Were Trouble",
+        "Wildest Dreams",
+        "Delicate"
+      ],
+      "no": [
+        "1989",
+        "This Is What You Came For"
+      ],
+      "prompt": "Name a song by Taylor Swift.",
+      "family": "music",
+      "inventoryEvidence": [
+        "https://en.wikipedia.org/wiki/List_of_songs_recorded_by_Taylor_Swift",
+        "https://music.apple.com/us/song/1590368916",
+        "https://www.youtube.com/watch?v=8xg3vE8Ie_E"
+      ],
+      "review": "Complete recorded-song source tables reconciled against independently supplied recognizable inputs. Credited-performer eligibility excludes writing-only, solo-member and background-only rows. Public short titles and source spelling aliases are explicit. Versions share a scoreable identity. Sources that redirect to singles or biographies remain excluded."
+    },
+    {
+      "id": "authored-the-weeknd-songs",
+      "basis": "individually-reviewed-whole-artist-catalog-based-on-original-yes-model",
+      "yes": [
+        "Blinding Lights",
+        "Starboy",
+        "The Hills",
+        "Can't Feel My Face",
+        "Save Your Tears",
+        "Die for You",
+        "Wicked Games",
+        "House of Balloons",
+        "I Feel It Coming",
+        "Earned It",
+        "Call Out My Name",
+        "In the Night",
+        "After Hours",
+        "Heartless",
+        "Often"
+      ],
+      "no": [
+        "Beauty Behind the Madness"
+      ],
+      "prompt": "Name a song by The Weeknd.",
+      "family": "music",
+      "inventoryEvidence": [
+        "https://en.wikipedia.org/wiki/List_of_songs_recorded_by_the_Weeknd",
+        "https://www.youtube.com/watch?v=8ex38L8xtNI"
+      ],
+      "review": "Complete recorded-song source tables reconciled against independently supplied recognizable inputs. Credited-performer eligibility excludes writing-only, solo-member and background-only rows. Public short titles and source spelling aliases are explicit. Versions share a scoreable identity. Sources that redirect to singles or biographies remain excluded."
+    },
+    {
+      "id": "authored-kendrick-lamar-songs",
+      "basis": "individually-reviewed-whole-artist-catalog-based-on-original-yes-model",
+      "yes": [
+        "HUMBLE.",
+        "DNA.",
+        "Not Like Us",
+        "Alright",
+        "Swimming Pools",
+        "Money Trees",
+        "Love",
+        "Loyalty",
+        "King Kunta",
+        "Poetic Justice",
+        "Bitch Dont Kill My Vibe",
+        "Euphoria",
+        "Luther",
+        "TV Off"
+      ],
+      "no": [
+        "To Pimp a Butterfly",
+        "The Ways"
+      ],
+      "prompt": "Name a song by Kendrick Lamar.",
+      "family": "music",
+      "inventoryEvidence": [
+        "https://en.wikipedia.org/wiki/List_of_songs_recorded_by_Kendrick_Lamar"
+      ],
+      "review": "Complete recorded-song source tables reconciled against independently supplied recognizable inputs. Credited-performer eligibility excludes writing-only, solo-member and background-only rows. Public short titles and source spelling aliases are explicit. Versions share a scoreable identity. Sources that redirect to singles or biographies remain excluded."
+    },
+    {
+      "id": "authored-beyonce-songs",
+      "basis": "individually-reviewed-whole-artist-catalog-based-on-original-yes-model",
+      "yes": [
+        "Crazy in Love",
+        "Single Ladies",
+        "Halo",
+        "Irreplaceable",
+        "Formation",
+        "Love on Top",
+        "Drunk in Love",
+        "Texas Hold Em",
+        "Break My Soul",
+        "Cuff It",
+        "If I Were a Boy",
+        "Beautiful Liar",
+        "Diva",
+        "Run the World",
+        "Partition"
+      ],
+      "no": [
+        "I Am... Sasha Fierce"
+      ],
+      "prompt": "Name a song by Beyoncé.",
+      "family": "music",
+      "inventoryEvidence": [
+        "https://en.wikipedia.org/wiki/List_of_songs_recorded_by_Beyonc%C3%A9"
+      ],
+      "review": "Complete recorded-song source tables reconciled against independently supplied recognizable inputs. Credited-performer eligibility excludes writing-only, solo-member and background-only rows. Public short titles and source spelling aliases are explicit. Versions share a scoreable identity. Sources that redirect to singles or biographies remain excluded."
+    },
+    {
+      "id": "authored-rihanna-songs",
+      "basis": "individually-reviewed-whole-artist-catalog-based-on-original-yes-model",
+      "yes": [
+        "Umbrella",
+        "Diamonds",
+        "We Found Love",
+        "Work",
+        "Only Girl",
+        "Stay",
+        "Dont Stop the Music",
+        "S and M",
+        "Rude Boy",
+        "Take a Bow",
+        "Disturbia",
+        "Pon de Replay",
+        "Love on the Brain",
+        "Love the Way You Lie",
+        "This Is What You Came For"
+      ],
+      "no": [
+        "Unapologetic"
+      ],
+      "prompt": "Name a song by Rihanna.",
+      "family": "music",
+      "inventoryEvidence": [
+        "https://en.wikipedia.org/wiki/List_of_songs_recorded_by_Rihanna"
+      ],
+      "review": "Complete recorded-song source tables reconciled against independently supplied recognizable inputs. Credited-performer eligibility excludes writing-only, solo-member and background-only rows. Public short titles and source spelling aliases are explicit. Versions share a scoreable identity. Sources that redirect to singles or biographies remain excluded."
+    },
+    {
+      "id": "authored-ariana-grande-songs",
+      "basis": "individually-reviewed-whole-artist-catalog-based-on-original-yes-model",
+      "yes": [
+        "Thank U, Next",
+        "7 Rings",
+        "Side to Side",
+        "Into You",
+        "Problem",
+        "No Tears Left to Cry",
+        "God Is a Woman",
+        "Break Free",
+        "Love Me Harder",
+        "Bang Bang",
+        "Breathin",
+        "Dangerous Woman",
+        "One Last Time",
+        "We Cant Be Friends",
+        "Popular",
+        "Defying Gravity",
+        "Give It Up",
+        "LA Boyz",
+        "Leave It All to Shine"
+      ],
+      "no": [
+        "Yours Truly"
+      ],
+      "prompt": "Name a song by Ariana Grande.",
+      "family": "music",
+      "inventoryEvidence": [
+        "https://en.wikipedia.org/wiki/List_of_songs_recorded_by_Ariana_Grande"
+      ],
+      "review": "Complete recorded-song source tables reconciled against independently supplied recognizable inputs. Credited-performer eligibility excludes writing-only, solo-member and background-only rows. Public short titles and source spelling aliases are explicit. Versions share a scoreable identity. Sources that redirect to singles or biographies remain excluded."
+    },
+    {
+      "id": "authored-bruno-mars-songs",
+      "basis": "individually-reviewed-whole-artist-catalog-based-on-original-yes-model",
+      "yes": [
+        "Just the Way You Are",
+        "Grenade",
+        "Locked Out of Heaven",
+        "When I Was Your Man",
+        "24K Magic",
+        "That's What I Like",
+        "Uptown Funk",
+        "Leave the Door Open",
+        "Smokin out the Window",
+        "Skate",
+        "Loves Train",
+        "The Lazy Song",
+        "Treasure",
+        "Marry You",
+        "Billionaire",
+        "Finesse",
+        "Die With a Smile",
+        "Apt"
+      ],
+      "no": [
+        "Doo-Wops & Hooligans"
+      ],
+      "prompt": "Name a song by Bruno Mars.",
+      "family": "music",
+      "inventoryEvidence": [
+        "https://en.wikipedia.org/wiki/List_of_songs_recorded_by_Bruno_Mars"
+      ],
+      "review": "Complete recorded-song source tables reconciled against independently supplied recognizable inputs. Credited-performer eligibility excludes writing-only, solo-member and background-only rows. Public short titles and source spelling aliases are explicit. Versions share a scoreable identity. Sources that redirect to singles or biographies remain excluded."
+    },
+    {
+      "id": "authored-dua-lipa-songs",
+      "basis": "individually-reviewed-whole-artist-catalog-based-on-original-yes-model",
+      "yes": [
+        "New Rules",
+        "Don't Start Now",
+        "Levitating",
+        "Physical",
+        "Dance the Night",
+        "Houdini",
+        "One Kiss",
+        "IDGAF",
+        "Break My Heart",
+        "Love Again",
+        "Cold Heart",
+        "Training Season",
+        "Illusion"
+      ],
+      "no": [
+        "Radical Optimism"
+      ],
+      "prompt": "Name a song by Dua Lipa.",
+      "family": "music",
+      "inventoryEvidence": [
+        "https://en.wikipedia.org/wiki/List_of_songs_recorded_by_Dua_Lipa"
+      ],
+      "review": "Complete recorded-song source tables reconciled against independently supplied recognizable inputs. Credited-performer eligibility excludes writing-only, solo-member and background-only rows. Public short titles and source spelling aliases are explicit. Versions share a scoreable identity. Sources that redirect to singles or biographies remain excluded."
+    },
+    {
+      "id": "authored-lady-gaga-songs",
+      "basis": "individually-reviewed-whole-artist-catalog-based-on-original-yes-model",
+      "yes": [
+        "Poker Face",
+        "Bad Romance",
+        "Just Dance",
+        "Born This Way",
+        "Paparazzi",
+        "Alejandro",
+        "Shallow",
+        "Telephone",
+        "Rain on Me",
+        "Million Reasons",
+        "Judas",
+        "Applause",
+        "Die With a Smile",
+        "Abracadabra",
+        "Bloody Mary"
+      ],
+      "no": [
+        "The Fame Monster",
+        "Quicksand"
+      ],
+      "prompt": "Name a song by Lady Gaga.",
+      "family": "music",
+      "inventoryEvidence": [
+        "https://en.wikipedia.org/wiki/List_of_songs_recorded_by_Lady_Gaga"
+      ],
+      "review": "Complete recorded-song source tables reconciled against independently supplied recognizable inputs. Credited-performer eligibility excludes writing-only, solo-member and background-only rows. Public short titles and source spelling aliases are explicit. Versions share a scoreable identity. Sources that redirect to singles or biographies remain excluded."
+    },
+    {
+      "id": "authored-billie-eilish-songs",
+      "basis": "individually-reviewed-whole-artist-catalog-based-on-original-yes-model",
+      "yes": [
+        "Bad Guy",
+        "Ocean Eyes",
+        "Happier Than Ever",
+        "Everything I Wanted",
+        "Birds of a Feather",
+        "What Was I Made For?",
+        "Lovely",
+        "Bellyache",
+        "Lunch",
+        "Wildflower",
+        "Chihiro",
+        "TV",
+        "Therefore I Am",
+        "When the Partys Over",
+        "Bury a Friend",
+        "Guess"
+      ],
+      "no": [
+        "When We All Fall Asleep, Where Do We Go?"
+      ],
+      "prompt": "Name a song by Billie Eilish.",
+      "family": "music",
+      "inventoryEvidence": [
+        "https://en.wikipedia.org/wiki/List_of_songs_recorded_by_Billie_Eilish"
+      ],
+      "review": "Complete recorded-song source tables reconciled against independently supplied recognizable inputs. Credited-performer eligibility excludes writing-only, solo-member and background-only rows. Public short titles and source spelling aliases are explicit. Versions share a scoreable identity. Sources that redirect to singles or biographies remain excluded."
+    },
+    {
+      "id": "authored-olivia-rodrigo-songs",
+      "basis": "individually-reviewed-whole-artist-catalog-based-on-original-yes-model",
+      "yes": [
+        "Drivers License",
+        "Good 4 U",
+        "Deja Vu",
+        "Vampire",
+        "Traitor",
+        "Bad Idea Right?",
+        "Brutal",
+        "Favorite Crime",
+        "Enough for You",
+        "Happier",
+        "Jealousy Jealousy",
+        "Get Him Back",
+        "Obsessed",
+        "Love Is Embarrassing",
+        "All I Want"
+      ],
+      "no": [
+        "Sour"
+      ],
+      "prompt": "Name a song by Olivia Rodrigo.",
+      "family": "music",
+      "inventoryEvidence": [
+        "https://en.wikipedia.org/wiki/List_of_songs_recorded_by_Olivia_Rodrigo"
+      ],
+      "review": "Complete recorded-song source tables reconciled against independently supplied recognizable inputs. Credited-performer eligibility excludes writing-only, solo-member and background-only rows. Public short titles and source spelling aliases are explicit. Versions share a scoreable identity. Sources that redirect to singles or biographies remain excluded."
+    },
+    {
+      "id": "authored-sabrina-carpenter-songs",
+      "basis": "individually-reviewed-whole-artist-catalog-based-on-original-yes-model",
+      "yes": [
+        "Espresso",
+        "Please Please Please",
+        "Taste",
+        "Nonsense",
+        "Feather",
+        "Manchild",
+        "Skin",
+        "Because I Liked a Boy",
+        "Thumbs",
+        "Bed Chem",
+        "Juno",
+        "Slim Pickins",
+        "Tornado Warnings",
+        "On Purpose"
+      ],
+      "no": [
+        "Short n Sweet"
+      ],
+      "prompt": "Name a song by Sabrina Carpenter.",
+      "family": "music",
+      "inventoryEvidence": [
+        "https://en.wikipedia.org/wiki/List_of_songs_recorded_by_Sabrina_Carpenter"
+      ],
+      "review": "Complete recorded-song source tables reconciled against independently supplied recognizable inputs. Credited-performer eligibility excludes writing-only, solo-member and background-only rows. Public short titles and source spelling aliases are explicit. Versions share a scoreable identity. Sources that redirect to singles or biographies remain excluded."
+    },
+    {
+      "id": "authored-ed-sheeran-songs",
+      "basis": "individually-reviewed-whole-artist-catalog-based-on-original-yes-model",
+      "yes": [
+        "Shape of You",
+        "Thinking Out Loud",
+        "Perfect",
+        "Photograph",
+        "The A Team",
+        "Bad Habits",
+        "Shivers",
+        "Galway Girl",
+        "Castle on the Hill",
+        "Sing",
+        "Lego House",
+        "I Dont Care",
+        "Eyes Closed",
+        "Beautiful People"
+      ],
+      "no": [
+        "No.6 Collaborations Project"
+      ],
+      "prompt": "Name a song by Ed Sheeran.",
+      "family": "music",
+      "inventoryEvidence": [
+        "https://en.wikipedia.org/wiki/List_of_songs_recorded_by_Ed_Sheeran"
+      ],
+      "review": "Complete recorded-song source tables reconciled against independently supplied recognizable inputs. Credited-performer eligibility excludes writing-only, solo-member and background-only rows. Public short titles and source spelling aliases are explicit. Versions share a scoreable identity. Sources that redirect to singles or biographies remain excluded."
+    },
+    {
+      "id": "authored-sza-songs",
+      "basis": "individually-reviewed-whole-artist-catalog-based-on-original-yes-model",
+      "yes": [
+        "Kill Bill",
+        "Snooze",
+        "Good Days",
+        "Love Galore",
+        "Broken Clocks",
+        "The Weekend",
+        "All the Stars",
+        "Saturn",
+        "Nobody Gets Me",
+        "Shirt",
+        "I Hate U",
+        "Drew Barrymore",
+        "Kiss Me More"
+      ],
+      "no": [
+        "Ctrl"
+      ],
+      "prompt": "Name a song by SZA.",
+      "family": "music",
+      "inventoryEvidence": [
+        "https://en.wikipedia.org/wiki/List_of_songs_recorded_by_SZA"
+      ],
+      "review": "Complete recorded-song source tables reconciled against independently supplied recognizable inputs. Credited-performer eligibility excludes writing-only, solo-member and background-only rows. Public short titles and source spelling aliases are explicit. Versions share a scoreable identity. Sources that redirect to singles or biographies remain excluded."
+    },
+    {
+      "id": "authored-coldplay-songs",
+      "basis": "individually-reviewed-whole-artist-catalog-based-on-original-yes-model",
+      "yes": [
+        "Yellow",
+        "The Scientist",
+        "Clocks",
+        "Fix You",
+        "Viva la Vida",
+        "A Sky Full of Stars",
+        "Paradise",
+        "Hymn for the Weekend",
+        "Something Just Like This",
+        "My Universe",
+        "Speed of Sound",
+        "In My Place",
+        "Trouble"
+      ],
+      "no": [
+        "Viva la Vida or Death and All His Friends"
+      ],
+      "prompt": "Name a song by Coldplay.",
+      "family": "music",
+      "inventoryEvidence": [
+        "https://en.wikipedia.org/wiki/List_of_songs_recorded_by_Coldplay"
+      ],
+      "review": "Complete recorded-song source tables reconciled against independently supplied recognizable inputs. Credited-performer eligibility excludes writing-only, solo-member and background-only rows. Public short titles and source spelling aliases are explicit. Versions share a scoreable identity. Sources that redirect to singles or biographies remain excluded."
+    },
+    {
+      "id": "authored-imagine-dragons-songs",
+      "basis": "individually-reviewed-whole-artist-catalog-based-on-original-yes-model",
+      "yes": [
+        "Radioactive",
+        "Demons",
+        "Believer",
+        "Thunder",
+        "It's Time",
+        "Whatever It Takes",
+        "Enemy",
+        "Bones",
+        "On Top of the World",
+        "Natural",
+        "Warriors",
+        "Walking the Wire",
+        "Sharks"
+      ],
+      "no": [
+        "Evolve"
+      ],
+      "prompt": "Name a song by Imagine Dragons.",
+      "family": "music",
+      "inventoryEvidence": [
+        "https://en.wikipedia.org/wiki/List_of_songs_recorded_by_Imagine_Dragons"
+      ],
+      "review": "Complete recorded-song source tables reconciled against independently supplied recognizable inputs. Credited-performer eligibility excludes writing-only, solo-member and background-only rows. Public short titles and source spelling aliases are explicit. Versions share a scoreable identity. Sources that redirect to singles or biographies remain excluded."
+    },
+    {
+      "id": "authored-maroon-5-songs",
+      "basis": "individually-reviewed-whole-artist-catalog-based-on-original-yes-model",
+      "yes": [
+        "This Love",
+        "She Will Be Loved",
+        "Moves Like Jagger",
+        "Payphone",
+        "Sugar",
+        "Memories",
+        "Girls Like You",
+        "Animals",
+        "Maps",
+        "One More Night",
+        "Sunday Morning",
+        "Wake Up Call",
+        "Harder to Breathe",
+        "Makes Me Wonder"
+      ],
+      "no": [
+        "Songs About Jane",
+        "Heard Em Say"
+      ],
+      "prompt": "Name a song by Maroon 5.",
+      "family": "music",
+      "inventoryEvidence": [
+        "https://en.wikipedia.org/wiki/List_of_songs_recorded_by_Maroon_5"
+      ],
+      "review": "Complete recorded-song source tables reconciled against independently supplied recognizable inputs. Credited-performer eligibility excludes writing-only, solo-member and background-only rows. Public short titles and source spelling aliases are explicit. Versions share a scoreable identity. Sources that redirect to singles or biographies remain excluded."
+    },
+    {
+      "id": "authored-queen-songs",
+      "basis": "individually-reviewed-whole-artist-catalog-based-on-original-yes-model",
+      "yes": [
+        "Bohemian Rhapsody",
+        "We Will Rock You",
+        "We Are the Champions",
+        "Don't Stop Me Now",
+        "Another One Bites the Dust",
+        "Somebody to Love",
+        "Radio Ga Ga",
+        "Killer Queen",
+        "Crazy Little Thing Called Love",
+        "Under Pressure",
+        "I Want to Break Free",
+        "Fat Bottomed Girls",
+        "The Show Must Go On"
+      ],
+      "no": [
+        "A Night at the Opera"
+      ],
+      "prompt": "Name a song by Queen.",
+      "family": "music",
+      "inventoryEvidence": [
+        "https://en.wikipedia.org/wiki/List_of_songs_recorded_by_Queen"
+      ],
+      "review": "Complete recorded-song source tables reconciled against independently supplied recognizable inputs. Credited-performer eligibility excludes writing-only, solo-member and background-only rows. Public short titles and source spelling aliases are explicit. Versions share a scoreable identity. Sources that redirect to singles or biographies remain excluded."
+    },
+    {
+      "id": "authored-the-beatles-songs",
+      "basis": "individually-reviewed-whole-artist-catalog-based-on-original-yes-model",
+      "yes": [
+        "Hey Jude",
+        "Let It Be",
+        "Yesterday",
+        "Come Together",
+        "Here Comes the Sun",
+        "Help!",
+        "A Hard Days Night",
+        "Yellow Submarine",
+        "Twist and Shout",
+        "Blackbird",
+        "Eleanor Rigby",
+        "Strawberry Fields Forever",
+        "Ob La Di Ob La Da",
+        "I Want to Hold Your Hand",
+        "All You Need Is Love",
+        "Penny Lane"
+      ],
+      "no": [
+        "Abbey Road"
+      ],
+      "prompt": "Name a song by The Beatles.",
+      "family": "music",
+      "inventoryEvidence": [
+        "https://en.wikipedia.org/wiki/List_of_songs_recorded_by_The_Beatles"
+      ],
+      "review": "Complete recorded-song source tables reconciled against independently supplied recognizable inputs. Credited-performer eligibility excludes writing-only, solo-member and background-only rows. Public short titles and source spelling aliases are explicit. Versions share a scoreable identity. Sources that redirect to singles or biographies remain excluded."
+    },
+    {
+      "id": "authored-green-day-songs",
+      "basis": "individually-reviewed-whole-artist-catalog-based-on-original-yes-model",
+      "yes": [
+        "Basket Case",
+        "American Idiot",
+        "Boulevard of Broken Dreams",
+        "Wake Me Up When September Ends",
+        "Holiday",
+        "Good Riddance",
+        "When I Come Around",
+        "Longview",
+        "Welcome to Paradise",
+        "Jesus of Suburbia",
+        "21 Guns",
+        "Brain Stew",
+        "Warning",
+        "Know Your Enemy"
+      ],
+      "no": [
+        "Dookie"
+      ],
+      "prompt": "Name a song by Green Day.",
+      "family": "music",
+      "inventoryEvidence": [
+        "https://en.wikipedia.org/wiki/List_of_songs_recorded_by_Green_Day"
+      ],
+      "review": "Complete recorded-song source tables reconciled against independently supplied recognizable inputs. Credited-performer eligibility excludes writing-only, solo-member and background-only rows. Public short titles and source spelling aliases are explicit. Versions share a scoreable identity. Sources that redirect to singles or biographies remain excluded."
+    },
+    {
+      "id": "authored-linkin-park-songs",
+      "basis": "individually-reviewed-whole-artist-catalog-based-on-original-yes-model",
+      "yes": [
+        "In the End",
+        "Numb",
+        "Crawling",
+        "Faint",
+        "Breaking the Habit",
+        "What I've Done",
+        "Somewhere I Belong",
+        "One Step Closer",
+        "Papercut",
+        "Bleed It Out",
+        "New Divide",
+        "One More Light",
+        "Leave Out All the Rest",
+        "The Emptiness Machine",
+        "Heavy Is the Crown"
+      ],
+      "no": [
+        "Hybrid Theory"
+      ],
+      "prompt": "Name a song by Linkin Park.",
+      "family": "music",
+      "inventoryEvidence": [
+        "https://en.wikipedia.org/wiki/List_of_songs_recorded_by_Linkin_Park"
+      ],
+      "review": "Complete recorded-song source tables reconciled against independently supplied recognizable inputs. Credited-performer eligibility excludes writing-only, solo-member and background-only rows. Public short titles and source spelling aliases are explicit. Versions share a scoreable identity. Sources that redirect to singles or biographies remain excluded."
+    },
+    {
+      "id": "authored-nirvana-songs",
+      "basis": "individually-reviewed-whole-artist-catalog-based-on-original-yes-model",
+      "yes": [
+        "Smells Like Teen Spirit",
+        "Come as You Are",
+        "Lithium",
+        "In Bloom",
+        "Heart-Shaped Box",
+        "All Apologies",
+        "Heart Shaped Box",
+        "Polly",
+        "About a Girl",
+        "Rape Me",
+        "Dumb",
+        "Something in the Way",
+        "The Man Who Sold the World",
+        "Where Did You Sleep Last Night"
+      ],
+      "no": [
+        "Nevermind"
+      ],
+      "prompt": "Name a song by Nirvana.",
+      "family": "music",
+      "inventoryEvidence": [
+        "https://en.wikipedia.org/wiki/List_of_songs_recorded_by_Nirvana"
+      ],
+      "review": "Complete recorded-song source tables reconciled against independently supplied recognizable inputs. Credited-performer eligibility excludes writing-only, solo-member and background-only rows. Public short titles and source spelling aliases are explicit. Versions share a scoreable identity. Sources that redirect to singles or biographies remain excluded."
+    },
+    {
+      "id": "authored-metallica-songs",
+      "basis": "individually-reviewed-whole-artist-catalog-based-on-original-yes-model",
+      "yes": [
+        "Enter Sandman",
+        "Master of Puppets",
+        "Nothing Else Matters",
+        "One",
+        "The Unforgiven",
+        "For Whom the Bell Tolls",
+        "Fade to Black",
+        "Sad but True",
+        "Seek and Destroy",
+        "Battery",
+        "Fuel",
+        "The Memory Remains",
+        "Creeping Death",
+        "The Call of Ktulu"
+      ],
+      "no": [
+        "Kill Em All"
+      ],
+      "prompt": "Name a song by Metallica.",
+      "family": "music",
+      "inventoryEvidence": [
+        "https://en.wikipedia.org/wiki/List_of_songs_recorded_by_Metallica"
+      ],
+      "review": "Complete recorded-song source tables reconciled against independently supplied recognizable inputs. Credited-performer eligibility excludes writing-only, solo-member and background-only rows. Public short titles and source spelling aliases are explicit. Versions share a scoreable identity. Sources that redirect to singles or biographies remain excluded."
+    },
+    {
+      "id": "authored-foo-fighters-songs",
+      "basis": "individually-reviewed-whole-artist-catalog-based-on-original-yes-model",
+      "yes": [
+        "Everlong",
+        "The Pretender",
+        "My Hero",
+        "Learn to Fly",
+        "Best of You",
+        "All My Life",
+        "Times Like These",
+        "Walk",
+        "Monkey Wrench",
+        "These Days",
+        "Big Me",
+        "DOA",
+        "Rope",
+        "This Is a Call"
+      ],
+      "no": [
+        "Echoes, Silence, Patience & Grace"
+      ],
+      "prompt": "Name a song by Foo Fighters.",
+      "family": "music",
+      "inventoryEvidence": [
+        "https://en.wikipedia.org/wiki/List_of_songs_recorded_by_Foo_Fighters"
+      ],
+      "review": "Complete recorded-song source tables reconciled against independently supplied recognizable inputs. Credited-performer eligibility excludes writing-only, solo-member and background-only rows. Public short titles and source spelling aliases are explicit. Versions share a scoreable identity. Sources that redirect to singles or biographies remain excluded."
+    },
+    {
+      "id": "authored-red-hot-chili-peppers-songs",
+      "basis": "individually-reviewed-whole-artist-catalog-based-on-original-yes-model",
+      "yes": [
+        "Californication",
+        "Under the Bridge",
+        "Scar Tissue",
+        "Can't Stop",
+        "Otherside",
+        "Dani California",
+        "Snow",
+        "By the Way",
+        "Give It Away",
+        "Around the World",
+        "Higher Ground"
+      ],
+      "no": [
+        "The Uplift Mofo Party Plan"
+      ],
+      "prompt": "Name a song by Red Hot Chili Peppers.",
+      "family": "music",
+      "inventoryEvidence": [
+        "https://en.wikipedia.org/wiki/List_of_songs_recorded_by_Red_Hot_Chili_Peppers"
+      ],
+      "review": "Complete recorded-song source tables reconciled against independently supplied recognizable inputs. Credited-performer eligibility excludes writing-only, solo-member and background-only rows. Public short titles and source spelling aliases are explicit. Versions share a scoreable identity. Sources that redirect to singles or biographies remain excluded."
+    },
+    {
+      "id": "authored-twenty-one-pilots-songs",
+      "basis": "individually-reviewed-whole-artist-catalog-based-on-original-yes-model",
+      "yes": [
+        "Stressed Out",
+        "Ride",
+        "Heathens",
+        "Car Radio",
+        "Tear in My Heart",
+        "Chlorine",
+        "Holding on to You",
+        "Lane Boy",
+        "Jumpsuit",
+        "My Blood",
+        "Level of Concern",
+        "Overcompensate",
+        "Navigating"
+      ],
+      "no": [
+        "Blurryface"
+      ],
+      "prompt": "Name a song by Twenty One Pilots.",
+      "family": "music",
+      "inventoryEvidence": [
+        "https://en.wikipedia.org/wiki/List_of_songs_recorded_by_Twenty_One_Pilots"
+      ],
+      "review": "Complete recorded-song source tables reconciled against independently supplied recognizable inputs. Credited-performer eligibility excludes writing-only, solo-member and background-only rows. Public short titles and source spelling aliases are explicit. Versions share a scoreable identity. Sources that redirect to singles or biographies remain excluded."
     }
   ],
   "expansionBatches": [
@@ -6321,6 +7097,47 @@
         "UNESCO Altai and NPS Alaska range context; major ranges missing from narrow source typing supplied explicitly",
         "Generic museum placeholders quarantined; named museum aliases preserved",
         "Separate fictional classification receipt; conflicting real-site classification not blindly removed"
+      ]
+    },
+    {
+      "id": "authored-recorded-song-catalogs-11",
+      "date": "2026-10-26",
+      "questions": [
+        "authored-taylor-swift-songs",
+        "authored-the-weeknd-songs",
+        "authored-kendrick-lamar-songs",
+        "authored-beyonce-songs",
+        "authored-rihanna-songs",
+        "authored-ariana-grande-songs",
+        "authored-bruno-mars-songs",
+        "authored-dua-lipa-songs",
+        "authored-lady-gaga-songs",
+        "authored-billie-eilish-songs",
+        "authored-olivia-rodrigo-songs",
+        "authored-sabrina-carpenter-songs",
+        "authored-ed-sheeran-songs",
+        "authored-sza-songs",
+        "authored-coldplay-songs",
+        "authored-imagine-dragons-songs",
+        "authored-maroon-5-songs",
+        "authored-queen-songs",
+        "authored-the-beatles-songs",
+        "authored-green-day-songs",
+        "authored-linkin-park-songs",
+        "authored-nirvana-songs",
+        "authored-metallica-songs",
+        "authored-foo-fighters-songs",
+        "authored-red-hot-chili-peppers-songs",
+        "authored-twenty-one-pilots-songs"
+      ],
+      "status": "admitted in development; requested 5,000-question expansion unfinished",
+      "sourceChecks": [
+        "26 whole catalogs, no album/year/title-word slices",
+        "379 independently supplied recognizable song inputs",
+        "Released lead/featured performer scope; writing-only, unrelated solo-member and background-only rows held",
+        "Source legend and quoted-title cleanup; aliases unify version identities",
+        "Album-name negative boundaries and named-credit exclusions",
+        "Drake, Eminem, Chappell Roan, Bieber, Post Malone and Travis Scott research remains unadmitted because complete sources were not established"
       ]
     }
   ]

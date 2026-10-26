@@ -8,6 +8,7 @@ export function questionFormat(pack){
   'authored-properties':'Everyday observations',
   'authored-situations':'Everyday situations',
   'authored-whole-concept':'Names & categories',
+  'authored-whole-artist-catalog':'Songs by one artist',
   'authored-whole-roster':'Characters & rosters',
   'authored-whole-taxonomic-group':'Animal kinds',
   'distinct-kinds':'Kinds, examples & objects',

@@ -1,6 +1,6 @@
 # Five-thousand-question expansion: development checkpoint
 
-The requested release is unfinished. Production still has 227 admitted questions. Development has 276: the 227 baseline plus 49 new admissions. It needs 4,724 more genuinely distinct questions. Answer rows, raw entities, draft inventories and reworded recipes do not count as questions.
+The requested release is unfinished. Production still has 227 admitted questions. Development has 302: the 227 baseline plus 75 new admissions. It needs 4,698 more genuinely distinct questions. Answer rows, raw entities, draft inventories and reworded recipes do not count as questions.
 
 ## Admission standard
 
@@ -10,7 +10,7 @@ Every normal-play question requires explicit admission, an inspectable factual i
 
 ## Current admitted expansion
 
-There are 80 authored inventories, with 49 admitted and 31 held out of normal play. The admitted additions include six Minecraft mechanics sourced from pinned released-game data; Dota, Overwatch and Smash rosters; Legendary/Mythical Pokémon; 881 Formula One drivers; NBA MVPs; winning starting Super Bowl quarterbacks; 88 constellations; six everyday tool/object inventories; seven whole culture subjects; music duos; owls, parrots, penguins and bats; combat and winter sports; and rock names.
+There are 106 authored inventories, with 75 admitted and 31 held out of normal play. The admitted additions include six Minecraft mechanics sourced from pinned released-game data; Dota, Overwatch and Smash rosters; Legendary/Mythical Pokémon; 881 Formula One drivers; NBA MVPs; winning starting Super Bowl quarterbacks; 88 constellations; six everyday tool/object inventories; seven whole culture subjects; music duos; owls, parrots, penguins and bats; combat and winter sports; and rock names.
 
 The latest fourteen admissions are cheese, flatbreads, pancakes, stews, browsers, clouds, record labels, DJs, drummers, keyboard instruments, canals, waterfalls, mountain ranges and museums. Each whole subject is one question. Linked national cheese lists expand the single cheese inventory rather than adding country questions. Performer classifications exclude fictional drummers and writing-only credits; real DJ acts and documented stage performers remain valid. Common-input sweeps repaired named keyboard models, famous museum aliases, major mountain ranges, cheese names, cloud names and fog forms. Explicit public abbreviations such as MoMA, DX7, ECM and MSI are names, not generated initials.
 
@@ -20,11 +20,11 @@ Source attribution and unresolved-row ledgers remain beside the authored inputs.
 
 The 31 excluded candidates include food inventories, Wizarding World characters, nature/science/sports lists and five worldwide site inventories. They require common-input, source-eligibility and synonym repairs before admission. Large inventories require local loading/typing checks; do not truncate valid rare answers for popularity.
 
-Research for complete recorded-song catalogs from recognizable artists is cached outside the repo under work/five-thousand. It is not admitted content. Redirects to biographies, singles-only discographies, solo-member features and writing-only credits must not be mistaken for whole artist song inventories. This source work adds no questions until actual admission checks pass.
+Twenty-six complete artist catalogs are now admitted, with 379 independent recognizable-song checks. Writing-only, unrelated solo-member and background-only credits are held. Known short titles and version identities are explicit; alternate versions cannot score twice. Drake, Eminem, Chappell Roan, Bieber, Post Malone and Travis Scott remain unadmitted because complete eligible source catalogs were not established. Thirty all-time NBA franchise rosters are being researched outside the repo; their raw player rows do not yet count as questions.
 
 ## Verification and publication
 
-The sample always uses the same 20261025-reviewed-standard seed; no cherry-picking. Local browser checks at 276 IDs passed saved-queue migration from the 227 baseline, persistence across tabs, actual grading, a 100-question sample, identical Daily IDs across independent contexts, and laptop/mobile overflow checks. Ten additional actual-game cases cover whole-list, music, waterway and world answers. Tests use local HTTP only, with external requests blocked. The full unit suite passes all 243 tests; the build passes and checks 2,789 independent familiar inputs and 301 wrong-answer boundaries. Logs are in the parent workspace.
+The sample always uses the same 20261025-reviewed-standard seed; no cherry-picking. Local browser checks at 276 IDs passed saved-queue migration from the 227 baseline, persistence across tabs, actual grading, a 100-question sample, identical Daily IDs across independent contexts, and laptop/mobile overflow checks. Ten additional actual-game cases cover whole-list, music, waterway and world answers. Tests use local HTTP only, with external requests blocked. The full unit suite passes all 244 tests; the build passes and checks 3,168 independent familiar inputs and 331 wrong-answer boundaries. Six additional local actual-game song cases pass after the last source/version repairs. Logs are in the parent workspace.
 
 Practice migration inserts genuinely new IDs without resurrecting consumed or retired questions, even when the selection algorithm version stays the same. Puffer selects randomly from unseen eligible questions across rooms; it does not restart at the beginning of a list. A finite inventory cannot promise literally infinite never-repeat play.
 

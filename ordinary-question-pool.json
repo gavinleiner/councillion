@@ -1,6 +1,6 @@
 {
-  "build": "d9c777c20f2fbda5",
-  "count": 276,
+  "build": "b05365e1a440254c",
+  "count": 302,
   "categories": [
     {
       "id": "group-q001",
@@ -2209,6 +2209,214 @@
       "group": "authored-whole-concept",
       "answerCount": 72,
       "scope": "Cloud genera, species, varieties and recognized cloud features count, along with established common names such as lenticular cloud, contrail and fog at ground level. Weather events, precipitation and a blue sky alone do not count."
+    },
+    {
+      "id": "authored-taylor-swift-songs",
+      "prompt": "Name a song by Taylor Swift.",
+      "family": "music",
+      "group": "authored-whole-artist-catalog",
+      "answerCount": 290,
+      "scope": "Released recordings credited to Taylor Swift count, including collaborations, features and released covers. Writing or production credit alone does not count. Different versions share one answer."
+    },
+    {
+      "id": "authored-the-weeknd-songs",
+      "prompt": "Name a song by The Weeknd.",
+      "family": "music",
+      "group": "authored-whole-artist-catalog",
+      "answerCount": 238,
+      "scope": "Released recordings credited to The Weeknd count, including collaborations, features and released covers. Writing or production credit alone does not count. Different versions share one answer."
+    },
+    {
+      "id": "authored-kendrick-lamar-songs",
+      "prompt": "Name a song by Kendrick Lamar.",
+      "family": "music",
+      "group": "authored-whole-artist-catalog",
+      "answerCount": 183,
+      "scope": "Released recordings credited to Kendrick Lamar count, including collaborations, features and released covers. Writing or production credit alone does not count. Different versions share one answer."
+    },
+    {
+      "id": "authored-beyonce-songs",
+      "prompt": "Name a song by Beyoncé.",
+      "family": "music",
+      "group": "authored-whole-artist-catalog",
+      "answerCount": 261,
+      "scope": "Released recordings credited to Beyoncé count, including collaborations, features and released covers. Writing or production credit alone does not count. Different versions share one answer."
+    },
+    {
+      "id": "authored-rihanna-songs",
+      "prompt": "Name a song by Rihanna.",
+      "family": "music",
+      "group": "authored-whole-artist-catalog",
+      "answerCount": 163,
+      "scope": "Released recordings credited to Rihanna count, including collaborations, features and released covers. Writing or production credit alone does not count. Different versions share one answer."
+    },
+    {
+      "id": "authored-ariana-grande-songs",
+      "prompt": "Name a song by Ariana Grande.",
+      "family": "music",
+      "group": "authored-whole-artist-catalog",
+      "answerCount": 198,
+      "scope": "Released recordings credited to Ariana Grande count, including collaborations, features and released covers. Writing or production credit alone does not count. Different versions share one answer."
+    },
+    {
+      "id": "authored-bruno-mars-songs",
+      "prompt": "Name a song by Bruno Mars.",
+      "family": "music",
+      "group": "authored-whole-artist-catalog",
+      "answerCount": 76,
+      "scope": "Released recordings credited to Bruno Mars count, including collaborations, features and released covers. Writing or production credit alone does not count. Different versions share one answer."
+    },
+    {
+      "id": "authored-dua-lipa-songs",
+      "prompt": "Name a song by Dua Lipa.",
+      "family": "music",
+      "group": "authored-whole-artist-catalog",
+      "answerCount": 83,
+      "scope": "Released recordings credited to Dua Lipa count, including collaborations, features and released covers. Writing or production credit alone does not count. Different versions share one answer."
+    },
+    {
+      "id": "authored-lady-gaga-songs",
+      "prompt": "Name a song by Lady Gaga.",
+      "family": "music",
+      "group": "authored-whole-artist-catalog",
+      "answerCount": 190,
+      "scope": "Released recordings credited to Lady Gaga count, including collaborations, features and released covers. Writing or production credit alone does not count. Different versions share one answer."
+    },
+    {
+      "id": "authored-billie-eilish-songs",
+      "prompt": "Name a song by Billie Eilish.",
+      "family": "music",
+      "group": "authored-whole-artist-catalog",
+      "answerCount": 65,
+      "scope": "Released recordings credited to Billie Eilish count, including collaborations, features and released covers. Writing or production credit alone does not count. Different versions share one answer."
+    },
+    {
+      "id": "authored-olivia-rodrigo-songs",
+      "prompt": "Name a song by Olivia Rodrigo.",
+      "family": "music",
+      "group": "authored-whole-artist-catalog",
+      "answerCount": 67,
+      "scope": "Released recordings credited to Olivia Rodrigo count, including collaborations, features and released covers. Writing or production credit alone does not count. Different versions share one answer."
+    },
+    {
+      "id": "authored-sabrina-carpenter-songs",
+      "prompt": "Name a song by Sabrina Carpenter.",
+      "family": "music",
+      "group": "authored-whole-artist-catalog",
+      "answerCount": 122,
+      "scope": "Released recordings credited to Sabrina Carpenter count, including collaborations, features and released covers. Writing or production credit alone does not count. Different versions share one answer."
+    },
+    {
+      "id": "authored-ed-sheeran-songs",
+      "prompt": "Name a song by Ed Sheeran.",
+      "family": "music",
+      "group": "authored-whole-artist-catalog",
+      "answerCount": 182,
+      "scope": "Released recordings credited to Ed Sheeran count, including collaborations, features and released covers. Writing or production credit alone does not count. Different versions share one answer."
+    },
+    {
+      "id": "authored-sza-songs",
+      "prompt": "Name a song by SZA.",
+      "family": "music",
+      "group": "authored-whole-artist-catalog",
+      "answerCount": 152,
+      "scope": "Released recordings credited to SZA count, including collaborations, features and released covers. Writing or production credit alone does not count. Different versions share one answer."
+    },
+    {
+      "id": "authored-coldplay-songs",
+      "prompt": "Name a song by Coldplay.",
+      "family": "music",
+      "group": "authored-whole-artist-catalog",
+      "answerCount": 200,
+      "scope": "Released recordings credited to Coldplay count, including collaborations, features and released covers. Writing or production credit alone does not count. Different versions share one answer."
+    },
+    {
+      "id": "authored-imagine-dragons-songs",
+      "prompt": "Name a song by Imagine Dragons.",
+      "family": "music",
+      "group": "authored-whole-artist-catalog",
+      "answerCount": 166,
+      "scope": "Released recordings credited to Imagine Dragons count, including collaborations, features and released covers. Writing or production credit alone does not count. Different versions share one answer."
+    },
+    {
+      "id": "authored-maroon-5-songs",
+      "prompt": "Name a song by Maroon 5.",
+      "family": "music",
+      "group": "authored-whole-artist-catalog",
+      "answerCount": 140,
+      "scope": "Released recordings credited to Maroon 5 count, including collaborations, features and released covers. Writing or production credit alone does not count. Different versions share one answer. The same band's earlier releases as Kara's Flowers also count; solo-member features do not."
+    },
+    {
+      "id": "authored-queen-songs",
+      "prompt": "Name a song by Queen.",
+      "family": "music",
+      "group": "authored-whole-artist-catalog",
+      "answerCount": 207,
+      "scope": "Released recordings credited to Queen count, including collaborations, features and released covers. Writing or production credit alone does not count. Different versions share one answer."
+    },
+    {
+      "id": "authored-the-beatles-songs",
+      "prompt": "Name a song by The Beatles.",
+      "family": "music",
+      "group": "authored-whole-artist-catalog",
+      "answerCount": 374,
+      "scope": "Released recordings credited to The Beatles count, including collaborations, features and released covers. Writing or production credit alone does not count. Different versions share one answer."
+    },
+    {
+      "id": "authored-green-day-songs",
+      "prompt": "Name a song by Green Day.",
+      "family": "music",
+      "group": "authored-whole-artist-catalog",
+      "answerCount": 258,
+      "scope": "Released recordings credited to Green Day count, including collaborations, features and released covers. Writing or production credit alone does not count. Different versions share one answer."
+    },
+    {
+      "id": "authored-linkin-park-songs",
+      "prompt": "Name a song by Linkin Park.",
+      "family": "music",
+      "group": "authored-whole-artist-catalog",
+      "answerCount": 289,
+      "scope": "Released recordings credited to Linkin Park count, including collaborations, features and released covers. Writing or production credit alone does not count. Different versions share one answer. Released Xero and Hybrid Theory recordings from the same band also count; fan-contest songs do not."
+    },
+    {
+      "id": "authored-nirvana-songs",
+      "prompt": "Name a song by Nirvana.",
+      "family": "music",
+      "group": "authored-whole-artist-catalog",
+      "answerCount": 100,
+      "scope": "Released recordings credited to Nirvana count, including collaborations, features and released covers. Writing or production credit alone does not count. Different versions share one answer."
+    },
+    {
+      "id": "authored-metallica-songs",
+      "prompt": "Name a song by Metallica.",
+      "family": "music",
+      "group": "authored-whole-artist-catalog",
+      "answerCount": 176,
+      "scope": "Released recordings credited to Metallica count, including collaborations, features and released covers. Writing or production credit alone does not count. Different versions share one answer."
+    },
+    {
+      "id": "authored-foo-fighters-songs",
+      "prompt": "Name a song by Foo Fighters.",
+      "family": "music",
+      "group": "authored-whole-artist-catalog",
+      "answerCount": 243,
+      "scope": "Released recordings credited to Foo Fighters count, including collaborations, features and released covers. Writing or production credit alone does not count. Different versions share one answer."
+    },
+    {
+      "id": "authored-red-hot-chili-peppers-songs",
+      "prompt": "Name a song by Red Hot Chili Peppers.",
+      "family": "music",
+      "group": "authored-whole-artist-catalog",
+      "answerCount": 299,
+      "scope": "Released recordings credited to Red Hot Chili Peppers count, including collaborations, features and released covers. Writing or production credit alone does not count. Different versions share one answer."
+    },
+    {
+      "id": "authored-twenty-one-pilots-songs",
+      "prompt": "Name a song by Twenty One Pilots.",
+      "family": "music",
+      "group": "authored-whole-artist-catalog",
+      "answerCount": 112,
+      "scope": "Released recordings credited to Twenty One Pilots count, including collaborations, features and released covers. Writing or production credit alone does not count. Different versions share one answer."
     }
   ]
 }

@@ -1,0 +1,262 @@
+[
+  {
+    "id": "authored-taylor-swift-songs",
+    "artist": "Taylor Swift",
+    "canonicalAnswers": 290,
+    "familiarInputs": 19,
+    "negativeBoundaries": 2,
+    "heldRawRows": 108,
+    "source": "https://en.wikipedia.org/wiki/List_of_songs_recorded_by_Taylor_Swift",
+    "sourceHtmlSha256": "9c220128164f40f5624c469d06f0e833014617d420c5b111dca92916db0acbfd"
+  },
+  {
+    "id": "authored-the-weeknd-songs",
+    "artist": "The Weeknd",
+    "canonicalAnswers": 238,
+    "familiarInputs": 15,
+    "negativeBoundaries": 1,
+    "heldRawRows": 28,
+    "source": "https://en.wikipedia.org/wiki/List_of_songs_recorded_by_the_Weeknd",
+    "sourceHtmlSha256": "ef135629d55e39a34a9c259eae415a3ef97e9bc2d5977fcf924fe8d3b99aa74d"
+  },
+  {
+    "id": "authored-kendrick-lamar-songs",
+    "artist": "Kendrick Lamar",
+    "canonicalAnswers": 183,
+    "familiarInputs": 14,
+    "negativeBoundaries": 2,
+    "heldRawRows": 7,
+    "source": "https://en.wikipedia.org/wiki/List_of_songs_recorded_by_Kendrick_Lamar",
+    "sourceHtmlSha256": "4176e220ce67dc01076dd044d0feec87e51ddf405ab56e21b1bb01d4b493eee7"
+  },
+  {
+    "id": "authored-beyonce-songs",
+    "artist": "Beyoncé",
+    "canonicalAnswers": 261,
+    "familiarInputs": 15,
+    "negativeBoundaries": 1,
+    "heldRawRows": 34,
+    "source": "https://en.wikipedia.org/wiki/List_of_songs_recorded_by_Beyonc%C3%A9",
+    "sourceHtmlSha256": "be581b768d81b1f018559ec10c104a28ecb9cac2a39277922b845e8ae1c0745f"
+  },
+  {
+    "id": "authored-rihanna-songs",
+    "artist": "Rihanna",
+    "canonicalAnswers": 163,
+    "familiarInputs": 15,
+    "negativeBoundaries": 1,
+    "heldRawRows": 39,
+    "source": "https://en.wikipedia.org/wiki/List_of_songs_recorded_by_Rihanna",
+    "sourceHtmlSha256": "9d279c1b70a80f1db46f32ebcf1aa4396de0d16c410539cce5c116f8daeb05ee"
+  },
+  {
+    "id": "authored-ariana-grande-songs",
+    "artist": "Ariana Grande",
+    "canonicalAnswers": 198,
+    "familiarInputs": 19,
+    "negativeBoundaries": 1,
+    "heldRawRows": 4,
+    "source": "https://en.wikipedia.org/wiki/List_of_songs_recorded_by_Ariana_Grande",
+    "sourceHtmlSha256": "4cebad8b2e33220379163acf67548bf730ef366828a803e35dcdec2ddf9d858c"
+  },
+  {
+    "id": "authored-bruno-mars-songs",
+    "artist": "Bruno Mars",
+    "canonicalAnswers": 76,
+    "familiarInputs": 18,
+    "negativeBoundaries": 1,
+    "heldRawRows": 14,
+    "source": "https://en.wikipedia.org/wiki/List_of_songs_recorded_by_Bruno_Mars",
+    "sourceHtmlSha256": "88b270bb85d881c8cd50721a018a58a40a0886d9c569f99d1f31ee064754957f"
+  },
+  {
+    "id": "authored-dua-lipa-songs",
+    "artist": "Dua Lipa",
+    "canonicalAnswers": 83,
+    "familiarInputs": 13,
+    "negativeBoundaries": 1,
+    "heldRawRows": 2,
+    "source": "https://en.wikipedia.org/wiki/List_of_songs_recorded_by_Dua_Lipa",
+    "sourceHtmlSha256": "f833bf6a98706df506b4677321f376a7b1aecf7af06aae9f38a88f10f63b6d81"
+  },
+  {
+    "id": "authored-lady-gaga-songs",
+    "artist": "Lady Gaga",
+    "canonicalAnswers": 190,
+    "familiarInputs": 15,
+    "negativeBoundaries": 2,
+    "heldRawRows": 6,
+    "source": "https://en.wikipedia.org/wiki/List_of_songs_recorded_by_Lady_Gaga",
+    "sourceHtmlSha256": "75d18de602250c602ce8951e42e09332fe7acf7b0f796ee8d0b92cd9b43cdf9d"
+  },
+  {
+    "id": "authored-billie-eilish-songs",
+    "artist": "Billie Eilish",
+    "canonicalAnswers": 65,
+    "familiarInputs": 16,
+    "negativeBoundaries": 1,
+    "heldRawRows": 0,
+    "source": "https://en.wikipedia.org/wiki/List_of_songs_recorded_by_Billie_Eilish",
+    "sourceHtmlSha256": "4ec38ecc855e82adb5998445c4cf7c8599aeb7344bb989959539f839e688c79b"
+  },
+  {
+    "id": "authored-olivia-rodrigo-songs",
+    "artist": "Olivia Rodrigo",
+    "canonicalAnswers": 67,
+    "familiarInputs": 15,
+    "negativeBoundaries": 1,
+    "heldRawRows": 8,
+    "source": "https://en.wikipedia.org/wiki/List_of_songs_recorded_by_Olivia_Rodrigo",
+    "sourceHtmlSha256": "e28e87354b3694d100337b13a57e4942242acd7b3ac15428f5542701ef0592bf"
+  },
+  {
+    "id": "authored-sabrina-carpenter-songs",
+    "artist": "Sabrina Carpenter",
+    "canonicalAnswers": 122,
+    "familiarInputs": 14,
+    "negativeBoundaries": 1,
+    "heldRawRows": 0,
+    "source": "https://en.wikipedia.org/wiki/List_of_songs_recorded_by_Sabrina_Carpenter",
+    "sourceHtmlSha256": "ee622c0c5779a0769c8bed174a9b9805f8d82c347aaa2c4fd2217890994e8b6d"
+  },
+  {
+    "id": "authored-ed-sheeran-songs",
+    "artist": "Ed Sheeran",
+    "canonicalAnswers": 182,
+    "familiarInputs": 14,
+    "negativeBoundaries": 1,
+    "heldRawRows": 1,
+    "source": "https://en.wikipedia.org/wiki/List_of_songs_recorded_by_Ed_Sheeran",
+    "sourceHtmlSha256": "76973b1957c6e5166ea7e9393c90446eb984c7921b8c26b7c9dd71a946ddcf3a"
+  },
+  {
+    "id": "authored-sza-songs",
+    "artist": "SZA",
+    "canonicalAnswers": 152,
+    "familiarInputs": 13,
+    "negativeBoundaries": 1,
+    "heldRawRows": 5,
+    "source": "https://en.wikipedia.org/wiki/List_of_songs_recorded_by_SZA",
+    "sourceHtmlSha256": "4749ef53cff94973fbf2a629526b65b13ab4b0a064780836edcad87e7f18fe82"
+  },
+  {
+    "id": "authored-coldplay-songs",
+    "artist": "Coldplay",
+    "canonicalAnswers": 200,
+    "familiarInputs": 13,
+    "negativeBoundaries": 1,
+    "heldRawRows": 0,
+    "source": "https://en.wikipedia.org/wiki/List_of_songs_recorded_by_Coldplay",
+    "sourceHtmlSha256": "dc036200adf9c311de9f15f323f027980b198aaa34b0f637b76eb6f0dcea3d59"
+  },
+  {
+    "id": "authored-imagine-dragons-songs",
+    "artist": "Imagine Dragons",
+    "canonicalAnswers": 166,
+    "familiarInputs": 13,
+    "negativeBoundaries": 1,
+    "heldRawRows": 77,
+    "source": "https://en.wikipedia.org/wiki/List_of_songs_recorded_by_Imagine_Dragons",
+    "sourceHtmlSha256": "a9b61293d26e2aecf7b0b8b7504c0bf63ab1e61e8cd5dd114b880917f70d0651"
+  },
+  {
+    "id": "authored-maroon-5-songs",
+    "artist": "Maroon 5",
+    "canonicalAnswers": 140,
+    "familiarInputs": 14,
+    "negativeBoundaries": 2,
+    "heldRawRows": 60,
+    "source": "https://en.wikipedia.org/wiki/List_of_songs_recorded_by_Maroon_5",
+    "sourceHtmlSha256": "613579737ff8c15056a368cc221715670286f90d13503bc6f0cead6349c7554d"
+  },
+  {
+    "id": "authored-queen-songs",
+    "artist": "Queen",
+    "canonicalAnswers": 207,
+    "familiarInputs": 13,
+    "negativeBoundaries": 1,
+    "heldRawRows": 2,
+    "source": "https://en.wikipedia.org/wiki/List_of_songs_recorded_by_Queen",
+    "sourceHtmlSha256": "b918c82316bfacbe84963114ac3c9205323625eefe43f9298d00d518a0a86aac"
+  },
+  {
+    "id": "authored-the-beatles-songs",
+    "artist": "The Beatles",
+    "canonicalAnswers": 374,
+    "familiarInputs": 16,
+    "negativeBoundaries": 1,
+    "heldRawRows": 0,
+    "source": "https://en.wikipedia.org/wiki/List_of_songs_recorded_by_The_Beatles",
+    "sourceHtmlSha256": "533e573256a133a7cf0fb357f48ee439a897d4f813d5379d3cda8812be16cf25"
+  },
+  {
+    "id": "authored-green-day-songs",
+    "artist": "Green Day",
+    "canonicalAnswers": 258,
+    "familiarInputs": 14,
+    "negativeBoundaries": 1,
+    "heldRawRows": 0,
+    "source": "https://en.wikipedia.org/wiki/List_of_songs_recorded_by_Green_Day",
+    "sourceHtmlSha256": "ed737cae5cfac6be87495fb35198dd3837a35a091a027076cd3ea0e8f833d05c"
+  },
+  {
+    "id": "authored-linkin-park-songs",
+    "artist": "Linkin Park",
+    "canonicalAnswers": 289,
+    "familiarInputs": 15,
+    "negativeBoundaries": 1,
+    "heldRawRows": 3,
+    "source": "https://en.wikipedia.org/wiki/List_of_songs_recorded_by_Linkin_Park",
+    "sourceHtmlSha256": "9e12a868a8499095b54baf84fe93263e9ee2f59dc5c778bb43a57ac0949d251e"
+  },
+  {
+    "id": "authored-nirvana-songs",
+    "artist": "Nirvana",
+    "canonicalAnswers": 100,
+    "familiarInputs": 14,
+    "negativeBoundaries": 1,
+    "heldRawRows": 25,
+    "source": "https://en.wikipedia.org/wiki/List_of_songs_recorded_by_Nirvana",
+    "sourceHtmlSha256": "11647290659cf60ba8ae5970bd206917be0843cd4e3249f54ee24535fd970ae1"
+  },
+  {
+    "id": "authored-metallica-songs",
+    "artist": "Metallica",
+    "canonicalAnswers": 176,
+    "familiarInputs": 14,
+    "negativeBoundaries": 1,
+    "heldRawRows": 0,
+    "source": "https://en.wikipedia.org/wiki/List_of_songs_recorded_by_Metallica",
+    "sourceHtmlSha256": "10811ac56f4baf4e327c481e24a35ec21d3389fce1175c5e336df1a99a7e43bf"
+  },
+  {
+    "id": "authored-foo-fighters-songs",
+    "artist": "Foo Fighters",
+    "canonicalAnswers": 243,
+    "familiarInputs": 14,
+    "negativeBoundaries": 1,
+    "heldRawRows": 0,
+    "source": "https://en.wikipedia.org/wiki/List_of_songs_recorded_by_Foo_Fighters",
+    "sourceHtmlSha256": "f16163b1703ddc30109a36ba4c80b165a7c9caef84f7f414d74962d7c0efa384"
+  },
+  {
+    "id": "authored-red-hot-chili-peppers-songs",
+    "artist": "Red Hot Chili Peppers",
+    "canonicalAnswers": 299,
+    "familiarInputs": 11,
+    "negativeBoundaries": 1,
+    "heldRawRows": 0,
+    "source": "https://en.wikipedia.org/wiki/List_of_songs_recorded_by_Red_Hot_Chili_Peppers",
+    "sourceHtmlSha256": "8f21ba12568e6d35d0d0f3ac29e63a014bb7a2c0795fcdc79893e10d6c238538"
+  },
+  {
+    "id": "authored-twenty-one-pilots-songs",
+    "artist": "Twenty One Pilots",
+    "canonicalAnswers": 112,
+    "familiarInputs": 13,
+    "negativeBoundaries": 1,
+    "heldRawRows": 0,
+    "source": "https://en.wikipedia.org/wiki/List_of_songs_recorded_by_Twenty_One_Pilots",
+    "sourceHtmlSha256": "540795f008ac7f7289269d520cccfe0b6b04eb883abf32a55c21110b68e885aa"
+  }
+]
