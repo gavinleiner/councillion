@@ -1,0 +1,44 @@
+[
+  {
+    "id": "authored-duck-goose-swan-kinds",
+    "sourceSpecies": 174,
+    "canonicalNames": 390,
+    "independentFamiliarInputs": 33,
+    "sourceSha256": "d5bfbb7bc0824258869fa828c98ac0560759ac2a022d06ffa3e928ce0841b308"
+  },
+  {
+    "id": "authored-woodpecker-kinds",
+    "sourceSpecies": 236,
+    "canonicalNames": 240,
+    "independentFamiliarInputs": 23,
+    "sourceSha256": "d5bfbb7bc0824258869fa828c98ac0560759ac2a022d06ffa3e928ce0841b308"
+  },
+  {
+    "id": "authored-hummingbird-kinds",
+    "sourceSpecies": 363,
+    "canonicalNames": 374,
+    "independentFamiliarInputs": 24,
+    "sourceSha256": "d5bfbb7bc0824258869fa828c98ac0560759ac2a022d06ffa3e928ce0841b308"
+  },
+  {
+    "id": "authored-gull-tern-kinds",
+    "sourceSpecies": 105,
+    "canonicalNames": 109,
+    "independentFamiliarInputs": 28,
+    "sourceSha256": "d5bfbb7bc0824258869fa828c98ac0560759ac2a022d06ffa3e928ce0841b308"
+  },
+  {
+    "id": "authored-swallow-martin-kinds",
+    "sourceSpecies": 92,
+    "canonicalNames": 95,
+    "independentFamiliarInputs": 20,
+    "sourceSha256": "d5bfbb7bc0824258869fa828c98ac0560759ac2a022d06ffa3e928ce0841b308"
+  },
+  {
+    "id": "authored-heron-egret-bittern-kinds",
+    "sourceSpecies": 74,
+    "canonicalNames": 77,
+    "independentFamiliarInputs": 25,
+    "sourceSha256": "d5bfbb7bc0824258869fa828c98ac0560759ac2a022d06ffa3e928ce0841b308"
+  }
+]

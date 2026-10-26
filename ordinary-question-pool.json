@@ -1,6 +1,6 @@
 {
-  "build": "bf754fa6fa16ca2e",
-  "count": 398,
+  "build": "f673199b03b9d1b9",
+  "count": 410,
   "categories": [
     {
       "id": "group-q001",
@@ -2251,12 +2251,44 @@
       "scope": "Recognized keyboard-instrument types and documented named keyboard instruments or models count. Keys and buttons form the musical playing interface; having ordinary valves or attaching an external controller does not automatically qualify another instrument."
     },
     {
+      "id": "authored-named-airports",
+      "prompt": "Name a real airport or airfield.",
+      "family": "world",
+      "group": "authored-whole-concept",
+      "answerCount": 85415,
+      "scope": "Named airports and airfields worldwide count, including historical facilities. An airport code must be an actual documented code or name; invented initials do not count."
+    },
+    {
+      "id": "authored-castles-palaces",
+      "prompt": "Name a real castle or palace.",
+      "family": "world",
+      "group": "authored-whole-concept",
+      "answerCount": 43400,
+      "scope": "Named castles, palaces and châteaux worldwide count, including historical or ruined ones and real decorative castle attractions. A real theme-park castle based on fiction counts; a castle that exists only in a story and a generic type of building do not count."
+    },
+    {
       "id": "authored-named-canals",
       "prompt": "Name a real named canal.",
       "family": "world",
       "group": "authored-whole-concept",
       "answerCount": 39905,
       "scope": "Named canals, shipping channels and recognized artificial waterways count worldwide, including disused historical ones. Natural rivers are not automatically canals."
+    },
+    {
+      "id": "authored-archaeological-sites",
+      "prompt": "Name an archaeological site or ancient ruin.",
+      "family": "world",
+      "group": "authored-whole-concept",
+      "answerCount": 226252,
+      "scope": "Named archaeological sites, ancient ruins and recognized archaeological complexes count worldwide, including settlements and individual excavated monuments. Entire modern countries or generic objects are not named sites."
+    },
+    {
+      "id": "authored-named-mausoleums",
+      "prompt": "Name a real tomb, mausoleum or cemetery.",
+      "family": "world",
+      "group": "authored-whole-concept",
+      "answerCount": 240569,
+      "scope": "Named tombs, mausoleums, cemeteries and recognized named burial complexes count, including historical sites. A person or a generic grave type alone does not name a burial site."
     },
     {
       "id": "authored-named-waterfalls",
@@ -3185,6 +3217,70 @@
       "group": "authored-whole-concept",
       "answerCount": 2108,
       "scope": "Real zoos, zoological parks, public aquariums, aviaries and established public animal collections count, past or present. Fictional parks and a generic nature reserve without a zoological collection do not count."
+    },
+    {
+      "id": "authored-duck-goose-swan-kinds",
+      "prompt": "Name a kind of duck, goose or swan.",
+      "family": "nature",
+      "group": "authored-whole-taxonomic-group",
+      "answerCount": 390,
+      "scope": "Established named groups and species in the Anatidae bird family count, including recently extinct species. Common and scientific names are accepted. Real synonyms share an identity; unrelated birds and objects named after birds do not count. Recognized domestic duck and goose breeds also count."
+    },
+    {
+      "id": "authored-woodpecker-kinds",
+      "prompt": "Name a kind of woodpecker.",
+      "family": "nature",
+      "group": "authored-whole-taxonomic-group",
+      "answerCount": 240,
+      "scope": "Established named groups and species in the Picidae bird family count, including recently extinct species. Common and scientific names are accepted. Real synonyms share an identity; unrelated birds and objects named after birds do not count."
+    },
+    {
+      "id": "authored-hummingbird-kinds",
+      "prompt": "Name a kind of hummingbird.",
+      "family": "nature",
+      "group": "authored-whole-taxonomic-group",
+      "answerCount": 374,
+      "scope": "Established named groups and species in the Trochilidae bird family count, including recently extinct species. Common and scientific names are accepted. Real synonyms share an identity; unrelated birds and objects named after birds do not count."
+    },
+    {
+      "id": "authored-gull-tern-kinds",
+      "prompt": "Name a kind of gull, tern or skimmer.",
+      "family": "nature",
+      "group": "authored-whole-taxonomic-group",
+      "answerCount": 109,
+      "scope": "Established named groups and species in the Laridae bird family count, including recently extinct species. Common and scientific names are accepted. Real synonyms share an identity; unrelated birds and objects named after birds do not count."
+    },
+    {
+      "id": "authored-swallow-martin-kinds",
+      "prompt": "Name a kind of swallow or martin.",
+      "family": "nature",
+      "group": "authored-whole-taxonomic-group",
+      "answerCount": 95,
+      "scope": "Established named groups and species in the Hirundinidae bird family count, including recently extinct species. Common and scientific names are accepted. Real synonyms share an identity; unrelated birds and objects named after birds do not count."
+    },
+    {
+      "id": "authored-heron-egret-bittern-kinds",
+      "prompt": "Name a kind of heron, egret or bittern.",
+      "family": "nature",
+      "group": "authored-whole-taxonomic-group",
+      "answerCount": 77,
+      "scope": "Established named groups and species in the Ardeidae bird family count, including recently extinct species. Common and scientific names are accepted. Real synonyms share an identity; unrelated birds and objects named after birds do not count."
+    },
+    {
+      "id": "authored-computer-languages",
+      "prompt": "Name a programming, scripting, query, markup or stylesheet language.",
+      "family": "science",
+      "group": "authored-whole-concept",
+      "answerCount": 1370,
+      "scope": "Real current and historical computer languages for programs, scripts, database queries, markup or style sheets count. Named dialects also count. Plain data-file formats, code editors and ordinary spoken languages do not count. Named XML vocabularies and document-markup formats count; an organization, generic data model, element or software platform alone is not a language."
+    },
+    {
+      "id": "authored-astronauts-cosmonauts",
+      "prompt": "Name a real astronaut or cosmonaut.",
+      "family": "science",
+      "group": "authored-whole-concept",
+      "answerCount": 687,
+      "scope": "Professional astronauts, cosmonauts and taikonauts worldwide, past or present, count, including people selected for professional astronaut training even if they never flew. Private-company professional astronauts and payload specialists count; celebrity passengers and fictional characters are not automatically astronauts."
     }
   ]
 }

@@ -1,0 +1,23 @@
+[
+  {
+    "id": "authored-computer-languages",
+    "sourceRows": 1617,
+    "heldRows": 10,
+    "canonicalAnswers": 1370,
+    "familiarInputs": 60
+  },
+  {
+    "id": "authored-astronauts-cosmonauts",
+    "sourceRows": 678,
+    "heldRows": 0,
+    "canonicalAnswers": 687,
+    "familiarInputs": 44
+  },
+  {
+    "id": "authored-government-space-agencies",
+    "sourceRows": 84,
+    "heldRows": 3,
+    "canonicalAnswers": 81,
+    "familiarInputs": 37
+  }
+]

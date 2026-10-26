@@ -41,7 +41,7 @@ test('random bucket selection can open on any question and handles uneven, exhau
 
 test('Practice uses the same balanced random draw and filters two-tag saved queues',()=>{
  const party=partyDeck(random(42)),practice=practiceDraw([],null,random(42));assert.deepEqual([...practice.ids,...practice.remaining],party);
- const pending=MIXED_PACKS.slice(30,400).map(p=>p.id),retired=GROUP_PACKS.filter(p=>p.predicate?.kind==='steam-tags').slice(0,10).map(p=>p.id),migrated=reshufflePracticeQueue([...retired,...pending],random(7));assert.deepEqual(new Set(migrated),new Set(pending));assert.equal(new Set(migrated).size,pending.length);
+ const pending=MIXED_PACKS.slice(30,400).map(p=>p.id),retired=GROUP_PACKS.filter(p=>p.predicate?.kind==='steam-tags').slice(0,10).map(p=>p.id),migrated=reshufflePracticeQueue([...retired,...pending],random(7),QUESTION_SELECTION_BUILD,MIXED_PACKS.map(p=>p.id));assert.deepEqual(new Set(migrated),new Set(pending));assert.equal(new Set(migrated).size,pending.length);
  const next=practiceDraw(practice.remaining,null,random(9));assert.deepEqual(next.ids,party.slice(7,14));assert.ok(!next.ids.some(id=>practice.ids.includes(id)));
  const kept=MIXED_PACKS.slice(20,30).map(p=>p.id);
  const updated=reshufflePracticeQueue([...retired,...kept],random(8),'20261023-balanced-v1',MIXED_PACKS.map(p=>p.id));assert.deepEqual(new Set(updated),new Set(kept));

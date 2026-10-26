@@ -1,0 +1,376 @@
+{
+  "questions": [
+    {
+      "key": "duck-goose-swan-kinds",
+      "family": "Anatidae",
+      "prompt": "Name a kind of duck, goose or swan.",
+      "groups": [
+        "Teal",
+        "Eider",
+        "Merganser",
+        "Scoter",
+        "Wigeon",
+        "Shelduck",
+        "Whistling duck",
+        "Goldeneye",
+        "Scaup",
+        "Dabbling duck",
+        "Diving duck",
+        "Sea duck"
+      ],
+      "aliases": {
+        "American Pekin": [
+          "Pekin duck",
+          "Pekin"
+        ],
+        "Indian Runner duck": [
+          "Indian Runner",
+          "Runner duck"
+        ],
+        "Khaki Campbell": [
+          "Campbell duck",
+          "Khaki Campbell duck"
+        ],
+        "Emden goose": [
+          "Embden goose",
+          "Embden"
+        ],
+        "Graylag Goose": [
+          "Greylag goose"
+        ]
+      },
+      "familiar": [
+        "Mallard",
+        "Wood duck",
+        "Mandarin duck",
+        "Muscovy duck",
+        "Pekin duck",
+        "Indian Runner duck",
+        "Khaki Campbell",
+        "Cayuga duck",
+        "Canada goose",
+        "Snow goose",
+        "Greylag goose",
+        "Mute swan",
+        "Black swan",
+        "Trumpeter swan",
+        "Whooper swan",
+        "Tundra swan",
+        "Northern pintail",
+        "Northern shoveler",
+        "Blue-winged teal",
+        "Green-winged teal",
+        "American wigeon",
+        "Eurasian wigeon",
+        "Redhead",
+        "Canvasback",
+        "Bufflehead",
+        "Ruddy duck",
+        "Common eider",
+        "Common merganser",
+        "Hooded merganser",
+        "Egyptian goose",
+        "Toulouse goose",
+        "Embden goose",
+        "Chinese goose"
+      ],
+      "exclude": [
+        "Flamingo",
+        "Penguin",
+        "Rubber duck"
+      ],
+      "references": [
+        "https://www.birds.cornell.edu/clementschecklist/download/",
+        "https://science.ebird.org/en/use-ebird-data/the-ebird-taxonomy",
+        "https://livestockconservancy.org/heritage-breeds/conservation-priority-list/",
+        "https://en.wikipedia.org/wiki/List_of_duck_breeds",
+        "https://en.wikipedia.org/wiki/List_of_goose_breeds"
+      ],
+      "scope": "Established named groups and species in the Anatidae bird family count, including recently extinct species. Common and scientific names are accepted. Real synonyms share an identity; unrelated birds and objects named after birds do not count. Recognized domestic duck and goose breeds also count.",
+      "rare": "Pink-headed Duck"
+    },
+    {
+      "key": "woodpecker-kinds",
+      "family": "Picidae",
+      "prompt": "Name a kind of woodpecker.",
+      "groups": [
+        "Wryneck",
+        "Piculet",
+        "Sapsucker",
+        "Flicker"
+      ],
+      "aliases": {
+        "Eurasian Green Woodpecker": [
+          "Green woodpecker",
+          "European Green Woodpecker"
+        ]
+      },
+      "familiar": [
+        "Downy woodpecker",
+        "Hairy woodpecker",
+        "Pileated woodpecker",
+        "Red-headed woodpecker",
+        "Red-bellied woodpecker",
+        "Northern flicker",
+        "Acorn woodpecker",
+        "Yellow-bellied sapsucker",
+        "Ivory-billed woodpecker",
+        "Imperial woodpecker",
+        "Great spotted woodpecker",
+        "Lesser spotted woodpecker",
+        "Green woodpecker",
+        "Black woodpecker",
+        "Gila woodpecker",
+        "Lewis's woodpecker",
+        "White-headed woodpecker",
+        "Black-backed woodpecker",
+        "Red-cockaded woodpecker",
+        "Wryneck",
+        "Piculet",
+        "Sapsucker",
+        "Flicker"
+      ],
+      "exclude": [
+        "Woodcock",
+        "Kingfisher",
+        "Pigeon"
+      ],
+      "references": [
+        "https://www.birds.cornell.edu/clementschecklist/download/",
+        "https://science.ebird.org/en/use-ebird-data/the-ebird-taxonomy"
+      ],
+      "scope": "Established named groups and species in the Picidae bird family count, including recently extinct species. Common and scientific names are accepted. Real synonyms share an identity; unrelated birds and objects named after birds do not count.",
+      "rare": "Okinawa Woodpecker"
+    },
+    {
+      "key": "hummingbird-kinds",
+      "family": "Trochilidae",
+      "prompt": "Name a kind of hummingbird.",
+      "groups": [
+        "Giant hummingbird",
+        "Woodnymph",
+        "Woodstar",
+        "Hermit hummingbird",
+        "Emerald hummingbird",
+        "Sunangel",
+        "Sapphire hummingbird",
+        "Violetear",
+        "Mountain-gem",
+        "Sabrewing",
+        "Racket-tail",
+        "Booted racket-tail"
+      ],
+      "aliases": {},
+      "familiar": [
+        "Ruby-throated hummingbird",
+        "Anna's hummingbird",
+        "Rufous hummingbird",
+        "Black-chinned hummingbird",
+        "Bee hummingbird",
+        "Giant hummingbird",
+        "Calliope hummingbird",
+        "Allen's hummingbird",
+        "Costa's hummingbird",
+        "Broad-tailed hummingbird",
+        "Broad-billed hummingbird",
+        "Buff-bellied hummingbird",
+        "Blue-throated mountain-gem",
+        "Violet-crowned hummingbird",
+        "Lucifer hummingbird",
+        "Sword-billed hummingbird",
+        "Marvelous spatuletail",
+        "Violet sabrewing",
+        "Booted racket-tail",
+        "Fiery-throated hummingbird",
+        "Rivoli's hummingbird",
+        "Sparkling violetear",
+        "Woodnymph",
+        "Woodstar"
+      ],
+      "exclude": [
+        "Sunbird",
+        "Hummingbird hawk-moth",
+        "Kingfisher"
+      ],
+      "references": [
+        "https://www.birds.cornell.edu/clementschecklist/download/",
+        "https://science.ebird.org/en/use-ebird-data/the-ebird-taxonomy",
+        "https://en.wikipedia.org/wiki/Booted_racket-tail"
+      ],
+      "scope": "Established named groups and species in the Trochilidae bird family count, including recently extinct species. Common and scientific names are accepted. Real synonyms share an identity; unrelated birds and objects named after birds do not count.",
+      "rare": "Juan Fernandez Firecrown"
+    },
+    {
+      "key": "gull-tern-kinds",
+      "family": "Laridae",
+      "prompt": "Name a kind of gull, tern or skimmer.",
+      "groups": [
+        "Herring gull",
+        "Kittiwake",
+        "Noddy",
+        "Skimmer"
+      ],
+      "aliases": {
+        "Australian Fairy Tern": [
+          "Fairy tern"
+        ]
+      },
+      "familiar": [
+        "Herring gull",
+        "Ring-billed gull",
+        "Laughing gull",
+        "Black-headed gull",
+        "Great black-backed gull",
+        "Lesser black-backed gull",
+        "Glaucous gull",
+        "Ivory gull",
+        "Ross's gull",
+        "Bonaparte's gull",
+        "Little gull",
+        "Heermann's gull",
+        "Western gull",
+        "California gull",
+        "Kittiwake",
+        "Arctic tern",
+        "Common tern",
+        "Caspian tern",
+        "Royal tern",
+        "Sandwich tern",
+        "Least tern",
+        "Little tern",
+        "Black tern",
+        "Inca tern",
+        "Fairy tern",
+        "Sooty tern",
+        "Black noddy",
+        "Skimmer"
+      ],
+      "exclude": [
+        "Albatross",
+        "Puffin",
+        "Pelican"
+      ],
+      "references": [
+        "https://www.birds.cornell.edu/clementschecklist/download/",
+        "https://science.ebird.org/en/use-ebird-data/the-ebird-taxonomy"
+      ],
+      "scope": "Established named groups and species in the Laridae bird family count, including recently extinct species. Common and scientific names are accepted. Real synonyms share an identity; unrelated birds and objects named after birds do not count.",
+      "rare": "Chinese Crested Tern"
+    },
+    {
+      "key": "swallow-martin-kinds",
+      "family": "Hirundinidae",
+      "prompt": "Name a kind of swallow or martin.",
+      "groups": [
+        "House martin",
+        "Crag martin",
+        "Saw-wing",
+        "Rough-winged swallow"
+      ],
+      "aliases": {
+        "Bank Swallow": [
+          "Sand martin"
+        ],
+        "Eurasian Crag-Martin": [
+          "Crag martin"
+        ],
+        "Eastern Red-rumped Swallow": [
+          "Red-rumped swallow"
+        ]
+      },
+      "familiar": [
+        "Barn swallow",
+        "Tree swallow",
+        "Purple martin",
+        "Bank swallow",
+        "Sand martin",
+        "House martin",
+        "Cliff swallow",
+        "Northern rough-winged swallow",
+        "Violet-green swallow",
+        "Red-rumped swallow",
+        "Welcome swallow",
+        "Cave swallow",
+        "Wire-tailed swallow",
+        "Pacific swallow",
+        "Fairy martin",
+        "Crag martin",
+        "Red-chested swallow",
+        "White-winged swallow",
+        "Southern rough-winged swallow",
+        "Blue-and-white swallow"
+      ],
+      "exclude": [
+        "Chimney swift",
+        "Swallowtail butterfly",
+        "Kingfisher"
+      ],
+      "references": [
+        "https://www.birds.cornell.edu/clementschecklist/download/",
+        "https://science.ebird.org/en/use-ebird-data/the-ebird-taxonomy",
+        "https://science.ebird.org/cs/use-ebird-data/the-ebird-taxonomy/2024-ebird-taxonomy-update"
+      ],
+      "scope": "Established named groups and species in the Hirundinidae bird family count, including recently extinct species. Common and scientific names are accepted. Real synonyms share an identity; unrelated birds and objects named after birds do not count.",
+      "rare": "White-eyed River-Martin"
+    },
+    {
+      "key": "heron-egret-bittern-kinds",
+      "family": "Ardeidae",
+      "prompt": "Name a kind of heron, egret or bittern.",
+      "groups": [
+        "Night heron",
+        "Cattle egret",
+        "Pond heron"
+      ],
+      "aliases": {
+        "Gray Heron": [
+          "Grey heron"
+        ],
+        "Eurasian Bittern": [
+          "Great bittern"
+        ],
+        "Western Cattle-Egret": [
+          "Western cattle egret"
+        ]
+      },
+      "familiar": [
+        "Great blue heron",
+        "Grey heron",
+        "Purple heron",
+        "Little blue heron",
+        "Green heron",
+        "Black-crowned night heron",
+        "Yellow-crowned night heron",
+        "Great egret",
+        "Snowy egret",
+        "Little egret",
+        "Cattle egret",
+        "Reddish egret",
+        "Tricolored heron",
+        "Goliath heron",
+        "American bittern",
+        "Eurasian bittern",
+        "Least bittern",
+        "Little bittern",
+        "Cocoi heron",
+        "Boat-billed heron",
+        "Black heron",
+        "Agami heron",
+        "Striated heron",
+        "Squacco heron",
+        "Indian pond heron"
+      ],
+      "exclude": [
+        "Crane",
+        "Stork",
+        "Flamingo"
+      ],
+      "references": [
+        "https://www.birds.cornell.edu/clementschecklist/download/",
+        "https://science.ebird.org/en/use-ebird-data/the-ebird-taxonomy"
+      ],
+      "scope": "Established named groups and species in the Ardeidae bird family count, including recently extinct species. Common and scientific names are accepted. Real synonyms share an identity; unrelated birds and objects named after birds do not count.",
+      "rare": "White-bellied Heron"
+    }
+  ]
+}
