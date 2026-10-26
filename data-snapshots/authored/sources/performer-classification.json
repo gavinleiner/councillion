@@ -1,0 +1,1006 @@
+{
+  "source": "https://qlever.dev/api/wikidata",
+  "queries": [
+    "PREFIX wd:<http://www.wikidata.org/entity/> PREFIX wdt:<http://www.wikidata.org/prop/direct/> PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#>\nSELECT DISTINCT ?item ?name ?type WHERE { VALUES ?role { wd:Q386854 wd:Q130857 } ?item wdt:P106/wdt:P279* ?role. FILTER NOT EXISTS { ?item wdt:P31 wd:Q5. } OPTIONAL{?item rdfs:label ?name. FILTER(LANG(?name)=\"en\")} OPTIONAL{?item wdt:P31 ?type.} }",
+    "PREFIX wd:<http://www.wikidata.org/entity/> PREFIX wdt:<http://www.wikidata.org/prop/direct/> PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#> SELECT ?item ?name ?fictional WHERE { VALUES ?item { wd:Q100135295 wd:Q105095276 wd:Q105946810 wd:Q10648343 wd:Q109288825 wd:Q111011320 wd:Q111242134 wd:Q1114461 wd:Q111652985 wd:Q11280995 wd:Q114897636 wd:Q116036777 wd:Q14756018 wd:Q15632617 wd:Q1569167 wd:Q15711870 wd:Q15720625 wd:Q1573906 wd:Q15773317 wd:Q15773347 wd:Q16334295 wd:Q1792372 wd:Q18327510 wd:Q2088357 wd:Q215380 wd:Q2248485 wd:Q27303706 wd:Q27921916 wd:Q28020127 wd:Q3658341 wd:Q386208 wd:Q4112103 wd:Q54982412 wd:Q61928601 wd:Q639669 wd:Q65115256 wd:Q6942541 wd:Q71129815 wd:Q73502689 wd:Q7558495 wd:Q7623897 wd:Q76450109 wd:Q80447738 wd:Q84310035 wd:Q87576284 wd:Q88552181 wd:Q88773562 wd:Q9212979 wd:Q924827 wd:Q14897293 wd:Q95074 } OPTIONAL{?item rdfs:label ?name. FILTER(LANG(?name)=\"en\")} BIND(EXISTS { ?item wdt:P279* wd:Q14897293 } AS ?fictional) }"
+  ],
+  "nonHumanRows": [
+    {
+      "id": "Q10271260",
+      "name": "Eldridge McElroy",
+      "types": [
+        "Q15632617",
+        "Q15773317"
+      ]
+    },
+    {
+      "id": "Q103917305",
+      "name": "The All Girl Band",
+      "types": [
+        "Q215380",
+        "Q7623897"
+      ]
+    },
+    {
+      "id": "Q105072323",
+      "name": "DJ Arnoštek",
+      "types": [
+        "Q15632617",
+        "Q15773347"
+      ]
+    },
+    {
+      "id": "Q105825481",
+      "name": "Lumpy Space Princess",
+      "types": [
+        "Q105946810",
+        "Q15711870",
+        "Q27921916",
+        "Q61928601"
+      ]
+    },
+    {
+      "id": "Q106211765",
+      "name": "Nino Lahiffe",
+      "types": [
+        "Q15632617",
+        "Q15711870",
+        "Q15773317"
+      ]
+    },
+    {
+      "id": "Q106460808",
+      "name": "Thadiun Okona",
+      "types": [
+        "Q1114461",
+        "Q15632617",
+        "Q15711870",
+        "Q15773317",
+        "Q924827"
+      ]
+    },
+    {
+      "id": "Q106776647",
+      "name": "Death",
+      "types": [
+        "Q15711870",
+        "Q28020127",
+        "Q88773562"
+      ]
+    },
+    {
+      "id": "Q107994168",
+      "name": "Saaya Yamabuki",
+      "types": [
+        "Q15632617",
+        "Q1569167",
+        "Q80447738"
+      ]
+    },
+    {
+      "id": "Q108480404",
+      "name": "Carl Bradshaw",
+      "types": [
+        "Q15632617",
+        "Q1569167"
+      ]
+    },
+    {
+      "id": "Q10893154",
+      "name": "6pair半",
+      "types": [
+        "Q16334295"
+      ]
+    },
+    {
+      "id": "Q11073869",
+      "name": "S.H.E is the One World Tour",
+      "types": [
+        "Q1573906"
+      ]
+    },
+    {
+      "id": "Q111028915",
+      "name": "XiJaro & Pitch",
+      "types": [
+        "Q9212979"
+      ]
+    },
+    {
+      "id": "Q111042292",
+      "name": "Yugo Asuma",
+      "types": [
+        "Q15632617"
+      ]
+    },
+    {
+      "id": "Q111282976",
+      "name": "Blaine Gordon",
+      "types": [
+        "Q111242134"
+      ]
+    },
+    {
+      "id": "Q111547905",
+      "name": "Ruslana",
+      "types": [
+        "Q15632617",
+        "Q1569167"
+      ]
+    },
+    {
+      "id": "Q112966718",
+      "name": "Kevin",
+      "types": [
+        "Q15632617",
+        "Q1569167"
+      ]
+    },
+    {
+      "id": "Q112999498",
+      "name": "Databoy",
+      "types": [
+        "Q10648343",
+        "Q2088357"
+      ]
+    },
+    {
+      "id": "Q1151262",
+      "name": "D-Block & S-te-Fan",
+      "types": [
+        "Q109288825",
+        "Q9212979"
+      ]
+    },
+    {
+      "id": "Q116155256",
+      "name": "DJ Music Man",
+      "types": [
+        "Q116036777",
+        "Q1569167",
+        "Q18327510"
+      ]
+    },
+    {
+      "id": "Q116788707",
+      "name": "Bedouin",
+      "types": [
+        "Q9212979"
+      ]
+    },
+    {
+      "id": "Q122570791",
+      "name": "ARMNHMR",
+      "types": [
+        "Q9212979"
+      ]
+    },
+    {
+      "id": "Q124813072",
+      "name": "Tidy Boys",
+      "types": [
+        "Q215380"
+      ]
+    },
+    {
+      "id": "Q125503484",
+      "name": "Andee",
+      "types": [
+        "Q15632617",
+        "Q1569167"
+      ]
+    },
+    {
+      "id": "Q125503498",
+      "name": "Panjit Gavaskar",
+      "types": [
+        "Q15632617",
+        "Q1569167"
+      ]
+    },
+    {
+      "id": "Q125534709",
+      "name": "Hugo",
+      "types": [
+        "Q15632617",
+        "Q1569167"
+      ]
+    },
+    {
+      "id": "Q1262308",
+      "name": "DuMonde",
+      "types": [
+        "Q9212979"
+      ]
+    },
+    {
+      "id": "Q127514009",
+      "name": "Karry G",
+      "types": [
+        "Q215380"
+      ]
+    },
+    {
+      "id": "Q129654950",
+      "name": "Cadence",
+      "types": [
+        "Q100135295",
+        "Q1569167",
+        "Q4112103"
+      ]
+    },
+    {
+      "id": "Q130534019",
+      "name": "DeeJay",
+      "types": [
+        "Q111652985",
+        "Q15632617",
+        "Q15711870",
+        "Q65115256"
+      ]
+    },
+    {
+      "id": "Q130534145",
+      "name": "Axel Chains",
+      "types": [
+        "Q111652985",
+        "Q15632617",
+        "Q15711870",
+        "Q65115256"
+      ]
+    },
+    {
+      "id": "Q131279319",
+      "name": "DJ Mister Cee",
+      "types": [
+        "Q15632617",
+        "Q1569167"
+      ]
+    },
+    {
+      "id": "Q131279365",
+      "name": "DJ Green Lantern",
+      "types": [
+        "Q15632617",
+        "Q1569167"
+      ]
+    },
+    {
+      "id": "Q131438405",
+      "name": "Aurora Crew",
+      "types": [
+        "Q9212979"
+      ]
+    },
+    {
+      "id": "Q131438863",
+      "name": "",
+      "types": [
+        "Q15711870",
+        "Q15773317",
+        "Q73502689",
+        "Q76450109"
+      ]
+    },
+    {
+      "id": "Q132976053",
+      "name": "Mestiza",
+      "types": [
+        "Q9212979"
+      ]
+    },
+    {
+      "id": "Q133803787",
+      "name": "",
+      "types": [
+        "Q639669"
+      ]
+    },
+    {
+      "id": "Q133830972",
+      "name": "",
+      "types": [
+        "Q7558495"
+      ]
+    },
+    {
+      "id": "Q133862338",
+      "name": "Kim Pine",
+      "types": [
+        "Q111011320",
+        "Q1114461",
+        "Q15632617",
+        "Q1569167",
+        "Q15711870",
+        "Q15773317",
+        "Q15773347",
+        "Q80447738"
+      ]
+    },
+    {
+      "id": "Q133889490",
+      "name": "Pink Panda",
+      "types": [
+        "Q2088357"
+      ]
+    },
+    {
+      "id": "Q134317030",
+      "name": "Otoha Kurogane",
+      "types": [
+        "Q15632617",
+        "Q80447738",
+        "Q87576284"
+      ]
+    },
+    {
+      "id": "Q134348447",
+      "name": "Finefoot",
+      "types": []
+    },
+    {
+      "id": "Q135815481",
+      "name": "DreamKiller",
+      "types": [
+        "Q639669"
+      ]
+    },
+    {
+      "id": "Q136527368",
+      "name": "",
+      "types": [
+        "Q105095276"
+      ]
+    },
+    {
+      "id": "Q136779934",
+      "name": "Emanate",
+      "types": [
+        "Q9212979"
+      ]
+    },
+    {
+      "id": "Q136945732",
+      "name": "Vee Boonyasak",
+      "types": [
+        "Q15632617",
+        "Q1569167"
+      ]
+    },
+    {
+      "id": "Q138767397",
+      "name": "Twin Frequency",
+      "types": []
+    },
+    {
+      "id": "Q139595845",
+      "name": "Chase Twins",
+      "types": [
+        "Q9212979"
+      ]
+    },
+    {
+      "id": "Q139921599",
+      "name": "ROSSNE",
+      "types": [
+        "Q15632617"
+      ]
+    },
+    {
+      "id": "Q140987116",
+      "name": "DASH",
+      "types": []
+    },
+    {
+      "id": "Q141717512",
+      "name": "",
+      "types": [
+        "Q15711870",
+        "Q15773317"
+      ]
+    },
+    {
+      "id": "Q141725387",
+      "name": "Ivan Bruel",
+      "types": [
+        "Q15632617",
+        "Q15711870",
+        "Q15773317"
+      ]
+    },
+    {
+      "id": "Q141764394",
+      "name": "GM08",
+      "types": [
+        "Q15773347",
+        "Q18327510"
+      ]
+    },
+    {
+      "id": "Q141764414",
+      "name": "TB3",
+      "types": [
+        "Q15773347",
+        "Q18327510"
+      ]
+    },
+    {
+      "id": "Q1537039",
+      "name": "Patrick Jumpen",
+      "types": [
+        "Q10648343"
+      ]
+    },
+    {
+      "id": "Q15675756",
+      "name": "Glowinthedark",
+      "types": [
+        "Q10648343",
+        "Q215380"
+      ]
+    },
+    {
+      "id": "Q15731499",
+      "name": "Vinyl Scratch",
+      "types": [
+        "Q114897636",
+        "Q15711870"
+      ]
+    },
+    {
+      "id": "Q16631399",
+      "name": "Sick Individuals",
+      "types": [
+        "Q109288825",
+        "Q9212979"
+      ]
+    },
+    {
+      "id": "Q16839700",
+      "name": "Gorgon City",
+      "types": [
+        "Q9212979"
+      ]
+    },
+    {
+      "id": "Q1846505",
+      "name": "Animal",
+      "types": [
+        "Q15773317"
+      ]
+    },
+    {
+      "id": "Q18636147",
+      "name": "Vigiland",
+      "types": [
+        "Q109288825",
+        "Q84310035",
+        "Q9212979"
+      ]
+    },
+    {
+      "id": "Q19664961",
+      "name": "AndrewAndrew",
+      "types": [
+        "Q10648343"
+      ]
+    },
+    {
+      "id": "Q1992473",
+      "name": "",
+      "types": [
+        "Q10648343"
+      ]
+    },
+    {
+      "id": "Q19971663",
+      "name": "Gestört aber GeiL",
+      "types": [
+        "Q9212979"
+      ]
+    },
+    {
+      "id": "Q2003943",
+      "name": "Deepside Deejays",
+      "types": [
+        "Q215380"
+      ]
+    },
+    {
+      "id": "Q2132281",
+      "name": "Martîn Rongen",
+      "types": [
+        "Q215380"
+      ]
+    },
+    {
+      "id": "Q2148839",
+      "name": "T-junction",
+      "types": [
+        "Q9212979"
+      ]
+    },
+    {
+      "id": "Q22906913",
+      "name": "Cosmo's Midnight",
+      "types": [
+        "Q14756018",
+        "Q9212979"
+      ]
+    },
+    {
+      "id": "Q2294035",
+      "name": "Lane Kim",
+      "types": [
+        "Q15632617",
+        "Q15773317"
+      ]
+    },
+    {
+      "id": "Q23541113",
+      "name": "Volt & State",
+      "types": [
+        "Q109288825",
+        "Q9212979"
+      ]
+    },
+    {
+      "id": "Q24628456",
+      "name": "DJ",
+      "types": [
+        "Q15632617",
+        "Q15773317"
+      ]
+    },
+    {
+      "id": "Q2600817",
+      "name": "Frequencerz",
+      "types": [
+        "Q215380"
+      ]
+    },
+    {
+      "id": "Q26703583",
+      "name": "Rainer + Grimm",
+      "types": [
+        "Q10648343"
+      ]
+    },
+    {
+      "id": "Q27243305",
+      "name": "Shun Gon",
+      "types": [
+        "Q15711870",
+        "Q27303706"
+      ]
+    },
+    {
+      "id": "Q2734389",
+      "name": "Dee Jay",
+      "types": [
+        "Q15632617",
+        "Q1569167"
+      ]
+    },
+    {
+      "id": "Q30597951",
+      "name": "Third Party",
+      "types": [
+        "Q109288825",
+        "Q9212979"
+      ]
+    },
+    {
+      "id": "Q3109703",
+      "name": "Donna Pinciotti",
+      "types": [
+        "Q15632617",
+        "Q15773317"
+      ]
+    },
+    {
+      "id": "Q3307321",
+      "name": "Metek",
+      "types": [
+        "Q16334295"
+      ]
+    },
+    {
+      "id": "Q39072435",
+      "name": "Trinix",
+      "types": [
+        "Q109288825",
+        "Q215380",
+        "Q71129815"
+      ]
+    },
+    {
+      "id": "Q43009188",
+      "name": "Pardon My French",
+      "types": [
+        "Q6942541"
+      ]
+    },
+    {
+      "id": "Q48699129",
+      "name": "GroovyRoom",
+      "types": [
+        "Q54982412",
+        "Q84310035",
+        "Q9212979"
+      ]
+    },
+    {
+      "id": "Q489671",
+      "name": "Alan Partridge",
+      "types": [
+        "Q15632617",
+        "Q15773317",
+        "Q15773347"
+      ]
+    },
+    {
+      "id": "Q4993385",
+      "name": "Classixx",
+      "types": [
+        "Q9212979"
+      ]
+    },
+    {
+      "id": "Q5304209",
+      "name": "Dr. Johnny Fever",
+      "types": [
+        "Q15773317",
+        "Q1792372"
+      ]
+    },
+    {
+      "id": "Q55073852",
+      "name": "Sub Zero Project",
+      "types": [
+        "Q109288825",
+        "Q9212979"
+      ]
+    },
+    {
+      "id": "Q56351943",
+      "name": "Nyango Star",
+      "types": [
+        "Q11280995",
+        "Q386208"
+      ]
+    },
+    {
+      "id": "Q60163911",
+      "name": "DJ Paul",
+      "types": [
+        "Q15632617",
+        "Q1569167"
+      ]
+    },
+    {
+      "id": "Q60199564",
+      "name": "DJ Veteran Child",
+      "types": [
+        "Q15632617",
+        "Q1569167"
+      ]
+    },
+    {
+      "id": "Q60199567",
+      "name": "Tatiana",
+      "types": [
+        "Q15632617",
+        "Q1569167"
+      ]
+    },
+    {
+      "id": "Q60226070",
+      "name": "Boy Sanchez",
+      "types": [
+        "Q15632617",
+        "Q1569167"
+      ]
+    },
+    {
+      "id": "Q60226071",
+      "name": "Andre the Accelerator",
+      "types": [
+        "Q15632617",
+        "Q1569167"
+      ]
+    },
+    {
+      "id": "Q60238856",
+      "name": "DJ Mama Doc",
+      "types": [
+        "Q1569167"
+      ]
+    },
+    {
+      "id": "Q60743679",
+      "name": "Adriatique",
+      "types": [
+        "Q109288825",
+        "Q9212979"
+      ]
+    },
+    {
+      "id": "Q60749935",
+      "name": "Oskar Matzerath",
+      "types": [
+        "Q15632617",
+        "Q15773347",
+        "Q3658341"
+      ]
+    },
+    {
+      "id": "Q60829673",
+      "name": "MD&C Pavlov",
+      "types": [
+        "Q215380"
+      ]
+    },
+    {
+      "id": "Q61819313",
+      "name": "DJ Scully",
+      "types": [
+        "Q15632617",
+        "Q1569167"
+      ]
+    },
+    {
+      "id": "Q61974468",
+      "name": "Paul Driscol",
+      "types": [
+        "Q15632617",
+        "Q1569167"
+      ]
+    },
+    {
+      "id": "Q6317600",
+      "name": "Plump DJs",
+      "types": [
+        "Q215380"
+      ]
+    },
+    {
+      "id": "Q64620874",
+      "name": "Dale Doback",
+      "types": [
+        "Q15632617",
+        "Q15773347"
+      ]
+    },
+    {
+      "id": "Q64819612",
+      "name": "Kross",
+      "types": [
+        "Q15632617",
+        "Q15711870",
+        "Q65115256"
+      ]
+    },
+    {
+      "id": "Q64819647",
+      "name": "Kross' father",
+      "types": [
+        "Q15632617",
+        "Q15711870",
+        "Q65115256"
+      ]
+    },
+    {
+      "id": "Q7564881",
+      "name": "Soundproof",
+      "types": [
+        "Q10648343"
+      ]
+    },
+    {
+      "id": "Q7920586",
+      "name": "Venus Flytrap",
+      "types": [
+        "Q15632617",
+        "Q15773317"
+      ]
+    },
+    {
+      "id": "Q79853946",
+      "name": "K.K. Slider",
+      "types": [
+        "Q1569167",
+        "Q15711870",
+        "Q15720625",
+        "Q88552181"
+      ]
+    },
+    {
+      "id": "Q80111678",
+      "name": "Femi Kuti",
+      "types": [
+        "Q15632617",
+        "Q1569167"
+      ]
+    },
+    {
+      "id": "Q85797188",
+      "name": "Richie Tozier",
+      "types": [
+        "Q15632617",
+        "Q15773317",
+        "Q15773347",
+        "Q3658341"
+      ]
+    },
+    {
+      "id": "Q85875519",
+      "name": "Melody Valentine",
+      "types": [
+        "Q1114461",
+        "Q15632617",
+        "Q15711870",
+        "Q15773317",
+        "Q15773347"
+      ]
+    },
+    {
+      "id": "Q891757",
+      "name": "Bomb the Bass",
+      "types": [
+        "Q215380"
+      ]
+    },
+    {
+      "id": "Q90042778",
+      "name": "Lúcio",
+      "types": [
+        "Q1114461",
+        "Q15632617",
+        "Q1569167"
+      ]
+    },
+    {
+      "id": "Q927538",
+      "name": "Kyoto Jazz Massive",
+      "types": [
+        "Q9212979"
+      ]
+    },
+    {
+      "id": "Q9302519",
+      "name": "Kirk Gleason",
+      "types": [
+        "Q15632617",
+        "Q15773317"
+      ]
+    },
+    {
+      "id": "Q935785",
+      "name": "Russel Hobbs",
+      "types": [
+        "Q15632617",
+        "Q15711870",
+        "Q2248485"
+      ]
+    },
+    {
+      "id": "Q97096291",
+      "name": "Rodrick Heffley",
+      "types": [
+        "Q15632617",
+        "Q15773347",
+        "Q3658341"
+      ]
+    }
+  ],
+  "fictionalTypes": [
+    "Q100135295",
+    "Q105095276",
+    "Q111011320",
+    "Q111242134",
+    "Q1114461",
+    "Q111652985",
+    "Q11280995",
+    "Q114897636",
+    "Q116036777",
+    "Q14897293",
+    "Q15632617",
+    "Q1569167",
+    "Q15711870",
+    "Q15720625",
+    "Q15773317",
+    "Q15773347",
+    "Q1792372",
+    "Q18327510",
+    "Q2248485",
+    "Q27303706",
+    "Q27921916",
+    "Q28020127",
+    "Q3658341",
+    "Q386208",
+    "Q4112103",
+    "Q61928601",
+    "Q65115256",
+    "Q73502689",
+    "Q76450109",
+    "Q80447738",
+    "Q87576284",
+    "Q88552181",
+    "Q88773562",
+    "Q924827",
+    "Q95074"
+  ],
+  "excludeFictional": {
+    "Q10271260": "Eldridge McElroy",
+    "Q105072323": "DJ Arnoštek",
+    "Q105825481": "Lumpy Space Princess",
+    "Q106211765": "Nino Lahiffe",
+    "Q106460808": "Thadiun Okona",
+    "Q106776647": "Death",
+    "Q107994168": "Saaya Yamabuki",
+    "Q108480404": "Carl Bradshaw",
+    "Q111042292": "Yugo Asuma",
+    "Q111282976": "Blaine Gordon",
+    "Q111547905": "Ruslana",
+    "Q112966718": "Kevin",
+    "Q116155256": "DJ Music Man",
+    "Q125503484": "Andee",
+    "Q125503498": "Panjit Gavaskar",
+    "Q125534709": "Hugo",
+    "Q129654950": "Cadence",
+    "Q130534019": "DeeJay",
+    "Q130534145": "Axel Chains",
+    "Q131279319": "DJ Mister Cee",
+    "Q131279365": "DJ Green Lantern",
+    "Q131438863": "",
+    "Q133862338": "Kim Pine",
+    "Q134317030": "Otoha Kurogane",
+    "Q136527368": "",
+    "Q136945732": "Vee Boonyasak",
+    "Q139921599": "ROSSNE",
+    "Q141717512": "",
+    "Q141725387": "Ivan Bruel",
+    "Q141764394": "GM08",
+    "Q141764414": "TB3",
+    "Q15731499": "Vinyl Scratch",
+    "Q1846505": "Animal",
+    "Q2294035": "Lane Kim",
+    "Q24628456": "DJ",
+    "Q27243305": "Shun Gon",
+    "Q2734389": "Dee Jay",
+    "Q3109703": "Donna Pinciotti",
+    "Q489671": "Alan Partridge",
+    "Q5304209": "Dr. Johnny Fever",
+    "Q60163911": "DJ Paul",
+    "Q60199564": "DJ Veteran Child",
+    "Q60199567": "Tatiana",
+    "Q60226070": "Boy Sanchez",
+    "Q60226071": "Andre the Accelerator",
+    "Q60238856": "DJ Mama Doc",
+    "Q60749935": "Oskar Matzerath",
+    "Q61819313": "DJ Scully",
+    "Q61974468": "Paul Driscol",
+    "Q64620874": "Dale Doback",
+    "Q64819612": "Kross",
+    "Q64819647": "Kross' father",
+    "Q7920586": "Venus Flytrap",
+    "Q79853946": "K.K. Slider",
+    "Q80111678": "Femi Kuti",
+    "Q85797188": "Richie Tozier",
+    "Q85875519": "Melody Valentine",
+    "Q90042778": "Lúcio",
+    "Q9302519": "Kirk Gleason",
+    "Q935785": "Russel Hobbs",
+    "Q97096291": "Rodrick Heffley"
+  },
+  "documentedRealPerformerOverrides": {
+    "Q56351943": "https://www.tama.com/usa/artists/detail/1123.html",
+    "Q2132281": "https://www.martinrongen.nl/Rowwen-H%C3%A8ze"
+  },
+  "nonMusicianExclusions": {
+    "Q11073869": "A concert tour is not a drummer.",
+    "Q103917305": "A band is not an individual drummer.",
+    "Q60829673": "A band is not an individual drummer."
+  }
+}

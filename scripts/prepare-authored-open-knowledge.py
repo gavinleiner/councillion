@@ -8,7 +8,7 @@ checks=json.load(open(ROOT/'data-snapshots/authored/open-knowledge-challenges.js
 def norm(x):return re.sub('[^a-z0-9+#]','',unicodedata.normalize('NFKD',x).encode('ascii','ignore').decode().lower())
 specs=[
  ('record-labels','music','On the label','Name a record label or record company.','Real current and historical record labels, imprints and record companies count. A publisher, streaming platform or music store is not automatically a record label.','Columbia Records|Atlantic Records|Republic Records|Interscope Records|Motown|Def Jam Recordings','Canon camera|Hogwarts'),
- ('named-djs','music','On the decks','Name a DJ, past or present.','Real people known for DJing or presenting recorded music on radio count. Being a singer or producer does not automatically make someone a DJ. Fictional DJs and a group named after an individual are not real people.','David Guetta|Calvin Harris|Avicii|Tiesto|Marshmello|Skrillex','Sherlock Holmes|Columbia Records'),
+ ('named-djs','music','On the decks','Name a real DJ or DJ act, past or present.','Real DJs and billed DJ duos or groups count, including people known for presenting recorded music on radio. Being a singer or producer alone does not make someone a DJ. Fictional story DJs and unrelated musical groups do not count.','David Guetta|Calvin Harris|Avicii|Tiesto|Marshmello|Skrillex','Sherlock Holmes|Columbia Records'),
  ('named-drummers','music','Behind the kit','Name a musician known for playing drums.','Real musicians known for playing drums count, including multi-instrumentalists and percussionists with a documented drum-playing career. An unrelated band member does not become a drummer just because the band has one.','Ringo Starr|Dave Grohl|Travis Barker|Phil Collins|Lars Ulrich|Neil Peart','Rick Savage|Lionel Messi'),
  ('keyboard-instruments','music','Keys to the music','Name a musical instrument with a keyboard.','Recognized keyboard-instrument types and documented named keyboard instruments or models count. Keys and buttons form the musical playing interface; having ordinary valves or attaching an external controller does not automatically qualify another instrument.','Piano|Organ|Synthesizer|Harpsichord|Accordion|Keytar','Violin|Trumpet'),
  ('named-airports','world','Departures','Name a real airport or airfield.','Named airports and airfields worldwide count, including historical facilities. An airport code must be an actual documented code or name; invented initials do not count.','John F. Kennedy International Airport|Los Angeles International Airport|Heathrow Airport|Singapore Changi Airport|Dubai International Airport|Haneda Airport','Big Ben|Hogwarts'),
@@ -24,6 +24,10 @@ for key,family,topic,prompt,scope,examples,wrong in specs:
  if key not in s['groups']:continue
  raw={p['id']:{**p,'aliases':list(p['aliases'])}for p in s['groups'][key]}
  fixes=supp.get(key,{})
+ for qid in fixes.get('hold',{}):raw.pop(qid,None)
+ for qid,label in fixes.get('labels',{}).items():
+  assert qid in raw,(key,'Transliterated owner absent',qid)
+  raw[qid]['aliases'].append(raw[qid]['name']);raw[qid]['name']=label
  for p in fixes.get('add',[]):
   qid='supplement-'+norm(p['name']);raw[qid]={'id':qid,'name':p['name'],'aliases':p['aliases'],'sitelinks':0}
   if 'pending'in p['evidence']or'require'in p['evidence']:issues.append({'question':key,'name':p['name'],'reason':p['evidence']})
@@ -34,6 +38,10 @@ for key,family,topic,prompt,scope,examples,wrong in specs:
   matches=[p for p in raw.values()if norm(p['name'])==norm(fix['lookup'])]
   if len(matches)==1:matches[0]['aliases'].extend(fix['aliases'])
   else:issues.append({'question':key,**fix})
+ for canonical,aliases in fixes.get('namedAliases',{}).items():
+  matches=[p for p in raw.values()if norm(p['name'])==norm(canonical)]
+  assert matches,(key,'Explicit alias owner must actually exist',canonical)
+  matches[0]['aliases'].extend(aliases)
  grouped={}
  for p in raw.values():
   name=p['name'];k=norm(name)
@@ -41,7 +49,19 @@ for key,family,topic,prompt,scope,examples,wrong in specs:
    issues.append({'question':key,'id':p['id'],'name':name,'reason':'No usable English/Latin answer label under the current display limit'});continue
   if k not in grouped:grouped[k]={'label':name,'aliases':set(),'sitelinks':0}
   row=grouped[k];row['aliases'].update(a for a in p['aliases']if norm(a));row['sitelinks']=max(row['sitelinks'],p.get('sitelinks',0))
- exact={norm(a):k for k,p in grouped.items()for a in[p['label'],*p['aliases']]}
+ # A documented model/stage-name synonym must not remain separately scoreable
+ # merely because the source also used it as another record's main label.
+ for canonical,aliases in fixes.get('namedAliases',{}).items():
+  owner=grouped[norm(canonical)]
+  for alias in aliases:
+   n=norm(alias);other=grouped.get(n)
+   if other is not None and other is not owner:
+    owner['aliases'].update([other['label'],*other['aliases']]);owner['sitelinks']=max(owner['sitelinks'],other['sitelinks']);del grouped[n]
+ exact={k:k for k in grouped};alias_candidates=collections.defaultdict(set)
+ for k,p in grouped.items():
+  for a in p['aliases']:
+   if norm(a)not in exact:alias_candidates[norm(a)].add(k)
+ for a,keys in alias_candidates.items():exact[a]=min(keys,key=lambda k:(-grouped[k]['sitelinks'],grouped[k]['label']))
  familiar=examples.split('|');missing=[n for n in familiar if norm(n)not in exact]
  if missing:
   issues.append({'question':key,'reason':'Missing independently specified familiar answers; inventory not yet buildable','missing':missing});continue
@@ -53,17 +73,20 @@ for key,family,topic,prompt,scope,examples,wrong in specs:
  challenges.append(result)
  common={exact[norm(n)]for n in positive if n not in rejected and norm(n)in exact}
  low={exact[norm(n)]for n in familiar}
- for k,p in grouped.items():p['points']=10 if k in low or p['sitelinks']>=100 else 30 if k in common or p['sitelinks']>=35 else 60 if p['sitelinks']>=8 else 85
+ for k,p in grouped.items():p['points']=100 if k==norm(fixes.get('rare',''))else 10 if k in low or p['sitelinks']>=100 else 30 if k in common or p['sitelinks']>=35 else 60 if p['sitelinks']>=8 else 85
  owners=collections.defaultdict(list)
+ actual_short={norm(s)for s in fixes.get('actualShortNames',[])}
  for k,p in grouped.items():
   for a in p['aliases']:
    n=norm(a)
-   if n not in grouped and(len(n)>=4 or a in {'EMI','RCA','4AD','II','DJs','DX7'}):owners[n].append(k)
+   if n not in grouped and(len(n)>=4 or n in actual_short):owners[n].append(k)
  chosen={a:min(v,key=lambda k:(grouped[k]['points'],-grouped[k]['sitelinks'],grouped[k]['label']))for a,v in owners.items()}
  tiers=collections.defaultdict(list)
  for k,p in sorted(grouped.items()):
   tiers[str(p['points'])].append({'label':p['label'],'aliases':sorted(a for a in p['aliases']if norm(a)!=k and chosen.get(norm(a))==k)})
- qs.append(dict(id='authored-'+key,concept=key,family=family,topic=topic,prompt=prompt,scope=scope,format='whole-concept',rationale='One recognizable global subject with common entry answers and a long factual tail; never a tag pair, title-word filter, arbitrary country slice or popularity-only shortlist. Candidate source gaps remain separate from normal-play admission.',familiar=familiar,exclude=wrong.split('|'),references=['https://www.wikidata.org/wiki/Wikidata:Data_access','https://qlever.dev/wikidata/'],answers=dict(tiers)))
+ tested=[n for n in positive if n not in rejected]if fixes.get('reviewed')else familiar
+ if fixes.get('reviewed'):assert not result['missing'],(key,'Independent common inputs remain missing',result['missing'])
+ qs.append(dict(id='authored-'+key,concept=key,family=family,topic=topic,prompt=prompt,scope=scope,format='whole-concept',rationale='One recognizable global subject with common entry answers and a long factual tail; never a tag pair, title-word filter, arbitrary country slice or popularity-only shortlist. Candidate source gaps remain separate from normal-play admission.',familiar=list(dict.fromkeys([*familiar,*tested])),exclude=list(dict.fromkeys([*wrong.split('|'),*fixes.get('extraNegative',[])])),references=['https://www.wikidata.org/wiki/Wikidata:Data_access','https://qlever.dev/wikidata/',*fixes.get('references',[])],answers=dict(tiers)))
 files={ROOT/'data-snapshots/authored/batches/08-open-whole-concepts.json':json.dumps({'version':1,'questions':qs},ensure_ascii=False,separators=(',',':'))+'\n',ROOT/'data-snapshots/authored/open-knowledge-issues.json':json.dumps({'status':'Candidates require full classification, supplemental-evidence and familiar-name review before admission. No issue is waived by a large answer count.','issues':issues,'challenges':challenges},ensure_ascii=False,indent=2)+'\n'}
 for p,text in files.items():
  if '--check'in sys.argv:assert p.read_text()==text,p

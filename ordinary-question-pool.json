@@ -1,6 +1,6 @@
 {
-  "build": "c89539e6ed8921c9",
-  "count": 262,
+  "build": "d9c777c20f2fbda5",
+  "count": 276,
   "categories": [
     {
       "id": "group-q001",
@@ -1995,6 +1995,70 @@
       "scope": "Current and historical musical duos count. Ordinary backing musicians do not change a two-person act into a larger group. Two solo artists who collaborated once are not automatically a named duo."
     },
     {
+      "id": "authored-mountain-ranges",
+      "prompt": "Name a real mountain range.",
+      "family": "world",
+      "group": "authored-whole-concept",
+      "answerCount": 19641,
+      "scope": "Named ranges, chains, mountain systems and subranges count, anywhere in the world. A single peak by itself is not a range."
+    },
+    {
+      "id": "authored-museums",
+      "prompt": "Name a real museum.",
+      "family": "world",
+      "group": "authored-whole-concept",
+      "answerCount": 57894,
+      "scope": "Named museums and museum complexes count, including historical institutions. Multiple institutions with the same name share an answer identity. A type of museum or a fictional museum is not a named real institution."
+    },
+    {
+      "id": "authored-record-labels",
+      "prompt": "Name a record label or record company.",
+      "family": "music",
+      "group": "authored-whole-concept",
+      "answerCount": 13766,
+      "scope": "Real current and historical record labels, imprints and record companies count. A publisher, streaming platform or music store is not automatically a record label."
+    },
+    {
+      "id": "authored-named-djs",
+      "prompt": "Name a real DJ or DJ act, past or present.",
+      "family": "music",
+      "group": "authored-whole-concept",
+      "answerCount": 7859,
+      "scope": "Real DJs and billed DJ duos or groups count, including people known for presenting recorded music on radio. Being a singer or producer alone does not make someone a DJ. Fictional story DJs and unrelated musical groups do not count."
+    },
+    {
+      "id": "authored-named-drummers",
+      "prompt": "Name a musician known for playing drums.",
+      "family": "music",
+      "group": "authored-whole-concept",
+      "answerCount": 6262,
+      "scope": "Real musicians known for playing drums count, including multi-instrumentalists and percussionists with a documented drum-playing career. An unrelated band member does not become a drummer just because the band has one."
+    },
+    {
+      "id": "authored-keyboard-instruments",
+      "prompt": "Name a musical instrument with a keyboard.",
+      "family": "music",
+      "group": "authored-whole-concept",
+      "answerCount": 4631,
+      "scope": "Recognized keyboard-instrument types and documented named keyboard instruments or models count. Keys and buttons form the musical playing interface; having ordinary valves or attaching an external controller does not automatically qualify another instrument."
+    },
+    {
+      "id": "authored-named-canals",
+      "prompt": "Name a real named canal.",
+      "family": "world",
+      "group": "authored-whole-concept",
+      "answerCount": 39905,
+      "scope": "Named canals, shipping channels and recognized artificial waterways count worldwide, including disused historical ones. Natural rivers are not automatically canals."
+    },
+    {
+      "id": "authored-named-waterfalls",
+      "prompt": "Name a real waterfall.",
+      "family": "world",
+      "group": "authored-whole-concept",
+      "answerCount": 11701,
+      "scope": "Named waterfalls and recognized waterfall complexes count worldwide. Multiple real falls with the same name share an answer identity. Fictional falls and generic words such as waterfall do not count."
+    },
+    {
       "id": "authored-formula-one-drivers",
       "prompt": "Name a driver who has competed in Formula One.",
       "family": "sports",
@@ -2097,6 +2161,54 @@
       "group": "authored-whole-concept",
       "answerCount": 193,
       "scope": "Recognized geological rock names, rock families and established natural stone varieties count. Common and scientific rock names are accepted. Individual minerals, chemical elements, whole mountains and manufactured building products are not rock types."
+    },
+    {
+      "id": "authored-cheese-types",
+      "prompt": "Name a type or named product of dairy cheese.",
+      "family": "food",
+      "group": "authored-whole-concept",
+      "answerCount": 2211,
+      "scope": "Named dairy cheeses, traditional cheese families and named processed-cheese products count. Different names for the same cheese share one answer. A dairy animal, plain milk, a manufacturer with no named cheese product, and a complete meal merely containing cheese do not count."
+    },
+    {
+      "id": "authored-flatbread-types",
+      "prompt": "Name a kind of flatbread.",
+      "family": "food",
+      "group": "authored-whole-concept",
+      "answerCount": 141,
+      "scope": "Recognized flatbread types, named regional breads and flatbread dishes count, including leavened and unleavened types. Ordinary sandwich loaves, toppings and ingredients alone do not count."
+    },
+    {
+      "id": "authored-pancake-dishes",
+      "prompt": "Name a pancake style or a named pancake dish.",
+      "family": "food",
+      "group": "authored-whole-concept",
+      "answerCount": 141,
+      "scope": "Recognized sweet and savory pancake styles and named pancake dishes count, including potato pancakes and international griddle-batter breads. A topping alone, an unrelated pastry, or simply the category word pancake does not count."
+    },
+    {
+      "id": "authored-stew-dishes",
+      "prompt": "Name a stew or a named stew dish.",
+      "family": "food",
+      "group": "authored-whole-concept",
+      "answerCount": 252,
+      "scope": "Named stews, braised one-pot dishes and recognized ingredient-based stew styles count. Soups that are also conventionally served as stews count; a raw ingredient, drink or dry standalone food does not."
+    },
+    {
+      "id": "authored-web-browsers",
+      "prompt": "Name a web browser.",
+      "family": "science",
+      "group": "authored-whole-concept",
+      "answerCount": 163,
+      "scope": "Actual web-browser products and families count, including historical, mobile and text browsers. A search engine, rendering engine, extension, website or operating system alone is not a browser."
+    },
+    {
+      "id": "authored-cloud-kinds",
+      "prompt": "Name a cloud type, form or recognized cloud feature.",
+      "family": "science",
+      "group": "authored-whole-concept",
+      "answerCount": 72,
+      "scope": "Cloud genera, species, varieties and recognized cloud features count, along with established common names such as lenticular cloud, contrail and fog at ground level. Weather events, precipitation and a blue sky alone do not count."
     }
   ]
 }

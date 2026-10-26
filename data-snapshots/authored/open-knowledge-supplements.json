@@ -10,7 +10,49 @@
       }
     ],
     "aliases": {},
-    "pending": []
+    "pending": [],
+    "actualShortNames": [
+      "EMI",
+      "RCA",
+      "4AD",
+      "XL",
+      "ECM",
+      "A&M",
+      "R&S",
+      "MGM",
+      "ABC"
+    ],
+    "reviewed": true,
+    "references": [
+      "https://www.columbiarecords.com/",
+      "https://www.atlanticrecords.com/",
+      "https://www.xlrecordings.com/",
+      "https://ecmrecords.com/",
+      "https://www.wikidata.org/wiki/Q104190216",
+      "https://www.wikidata.org/wiki/Q107053853",
+      "https://www.wikidata.org/wiki/Q124152262",
+      "https://yandex.ru/support/music/ru/performers-and-copyright-holders/copyright.html"
+    ],
+    "namedAliases": {
+      "XL Recordings": [
+        "XL"
+      ],
+      "A&M Records": [
+        "A&M"
+      ],
+      "ECM Records": [
+        "ECM"
+      ],
+      "R&S Records": [
+        "R&S"
+      ]
+    },
+    "labels": {
+      "Q104190216": "Fonograf",
+      "Q107053853": "Akti",
+      "Q124152262": "Medialayn"
+    },
+    "rare": "Spicycake"
   },
   "named-djs": {
     "add": [
@@ -73,56 +115,143 @@
       {
         "name": "Annie Mac",
         "aliases": [],
-        "evidence": "https://www.bbc.co.uk/radio; published radio-personality career histories require a final source-by-person check before admission"
+        "evidence": "https://www.anniemacmanus.com/"
       },
       {
         "name": "Bob Harris",
         "aliases": [
           "Whispering Bob Harris"
         ],
-        "evidence": "https://www.bbc.co.uk/radio; published radio-personality career histories require a final source-by-person check before admission"
+        "evidence": "https://www.bobharris.org/"
       },
       {
         "name": "Howard Stern",
         "aliases": [],
-        "evidence": "https://www.bbc.co.uk/radio; published radio-personality career histories require a final source-by-person check before admission"
+        "evidence": "https://www.radiohalloffame.com/howard-stern"
       },
       {
         "name": "Dick Clark",
         "aliases": [],
-        "evidence": "https://www.bbc.co.uk/radio; published radio-personality career histories require a final source-by-person check before admission"
+        "evidence": "https://www.radiohalloffame.com/dick-clark"
       },
       {
         "name": "Delilah",
         "aliases": [
           "Delilah Rene"
         ],
-        "evidence": "https://www.bbc.co.uk/radio; published radio-personality career histories require a final source-by-person check before admission"
+        "evidence": "https://news.iheart.com/featured/delilah/about/"
       }
     ],
     "aliases": {},
-    "pending": []
+    "pending": [],
+    "references": [
+      "https://djmag.com/top100djs/2026",
+      "https://news.iheart.com/featured/delilah/about/",
+      "https://www.anniemacmanus.com/",
+      "https://www.bobharris.org/",
+      "https://www.radiohalloffame.com/dick-clark",
+      "https://www.radiohalloffame.com/howard-stern"
+    ],
+    "reviewed": true,
+    "hold": {
+      "Q10271260": "Fictional performer/story character.",
+      "Q105072323": "Fictional performer/story character.",
+      "Q105825481": "Fictional performer/story character.",
+      "Q106211765": "Fictional performer/story character.",
+      "Q106460808": "Fictional performer/story character.",
+      "Q106776647": "Fictional performer/story character.",
+      "Q107994168": "Fictional performer/story character.",
+      "Q108480404": "Fictional performer/story character.",
+      "Q111042292": "Fictional performer/story character.",
+      "Q111282976": "Fictional performer/story character.",
+      "Q111547905": "Fictional performer/story character.",
+      "Q112966718": "Fictional performer/story character.",
+      "Q116155256": "Fictional performer/story character.",
+      "Q125503484": "Fictional performer/story character.",
+      "Q125503498": "Fictional performer/story character.",
+      "Q125534709": "Fictional performer/story character.",
+      "Q129654950": "Fictional performer/story character.",
+      "Q130534019": "Fictional performer/story character.",
+      "Q130534145": "Fictional performer/story character.",
+      "Q131279319": "Fictional performer/story character.",
+      "Q131279365": "Fictional performer/story character.",
+      "Q131438863": "Fictional performer/story character.",
+      "Q133862338": "Fictional performer/story character.",
+      "Q134317030": "Fictional performer/story character.",
+      "Q136527368": "Fictional performer/story character.",
+      "Q136945732": "Fictional performer/story character.",
+      "Q139921599": "Fictional performer/story character.",
+      "Q141717512": "Fictional performer/story character.",
+      "Q141725387": "Fictional performer/story character.",
+      "Q141764394": "Fictional performer/story character.",
+      "Q141764414": "Fictional performer/story character.",
+      "Q15731499": "Fictional performer/story character.",
+      "Q1846505": "Fictional performer/story character.",
+      "Q2294035": "Fictional performer/story character.",
+      "Q24628456": "Fictional performer/story character.",
+      "Q27243305": "Fictional performer/story character.",
+      "Q2734389": "Fictional performer/story character.",
+      "Q3109703": "Fictional performer/story character.",
+      "Q489671": "Fictional performer/story character.",
+      "Q5304209": "Fictional performer/story character.",
+      "Q60163911": "Fictional performer/story character.",
+      "Q60199564": "Fictional performer/story character.",
+      "Q60199567": "Fictional performer/story character.",
+      "Q60226070": "Fictional performer/story character.",
+      "Q60226071": "Fictional performer/story character.",
+      "Q60238856": "Fictional performer/story character.",
+      "Q60749935": "Fictional performer/story character.",
+      "Q61819313": "Fictional performer/story character.",
+      "Q61974468": "Fictional performer/story character.",
+      "Q64620874": "Fictional performer/story character.",
+      "Q64819612": "Fictional performer/story character.",
+      "Q64819647": "Fictional performer/story character.",
+      "Q7920586": "Fictional performer/story character.",
+      "Q79853946": "Fictional performer/story character.",
+      "Q80111678": "Fictional performer/story character.",
+      "Q85797188": "Fictional performer/story character.",
+      "Q85875519": "Fictional performer/story character.",
+      "Q90042778": "Fictional performer/story character.",
+      "Q9302519": "Fictional performer/story character.",
+      "Q935785": "Fictional performer/story character.",
+      "Q97096291": "Fictional performer/story character."
+    },
+    "extraNegative": [
+      "Alan Partridge",
+      "K.K. Slider",
+      "Vinyl Scratch",
+      "Lúcio"
+    ],
+    "actualShortNames": [
+      "ATB",
+      "BT",
+      "EDX",
+      "DJ AM",
+      "RAC",
+      "ZHU"
+    ],
+    "rare": "Marika Rossa"
   },
   "named-drummers": {
     "add": [
       {
         "name": "Debbi Peterson",
         "aliases": [],
-        "evidence": "Manually identified real drummer omissions; final first-party performance references pending before admission"
+        "evidence": "https://www.thebangles.com/about_debbipeterson.html"
       },
       {
         "name": "Anderson .Paak",
         "aliases": [
           "Anderson Paak"
         ],
-        "evidence": "Manually identified real drummer omissions; final first-party performance references pending before admission"
+        "evidence": "https://zildjian.com/blogs/artist/anderson-paak"
       },
       {
         "name": "ZackGrooves",
         "aliases": [
           "Zack Grooves"
         ],
-        "evidence": "Manually identified real drummer omissions; final first-party performance references pending before admission"
+        "evidence": "https://meinlstickandbrush.com/en/artists/zack-grooves-a138769.html"
       }
     ],
     "aliases": {
@@ -138,7 +267,92 @@
         ],
         "reason": "Repair full-name alias against existing entity ID"
       }
-    ]
+    ],
+    "references": [
+      "https://meinlstickandbrush.com/en/artists/zack-grooves-a138769.html",
+      "https://www.thebangles.com/about_debbipeterson.html",
+      "https://zildjian.com/blogs/artist/anderson-paak",
+      "https://www.tama.com/usa/artists/detail/1123.html",
+      "https://www.martinrongen.nl/Rowwen-H%C3%A8ze",
+      "https://www.drumeo.com/beat/sleep-token-drummer-interview/"
+    ],
+    "reviewed": true,
+    "hold": {
+      "Q10271260": "Fictional performer/story character.",
+      "Q105072323": "Fictional performer/story character.",
+      "Q105825481": "Fictional performer/story character.",
+      "Q106211765": "Fictional performer/story character.",
+      "Q106460808": "Fictional performer/story character.",
+      "Q106776647": "Fictional performer/story character.",
+      "Q107994168": "Fictional performer/story character.",
+      "Q108480404": "Fictional performer/story character.",
+      "Q111042292": "Fictional performer/story character.",
+      "Q111282976": "Fictional performer/story character.",
+      "Q111547905": "Fictional performer/story character.",
+      "Q112966718": "Fictional performer/story character.",
+      "Q116155256": "Fictional performer/story character.",
+      "Q125503484": "Fictional performer/story character.",
+      "Q125503498": "Fictional performer/story character.",
+      "Q125534709": "Fictional performer/story character.",
+      "Q129654950": "Fictional performer/story character.",
+      "Q130534019": "Fictional performer/story character.",
+      "Q130534145": "Fictional performer/story character.",
+      "Q131279319": "Fictional performer/story character.",
+      "Q131279365": "Fictional performer/story character.",
+      "Q131438863": "Fictional performer/story character.",
+      "Q133862338": "Fictional performer/story character.",
+      "Q134317030": "Fictional performer/story character.",
+      "Q136527368": "Fictional performer/story character.",
+      "Q136945732": "Fictional performer/story character.",
+      "Q139921599": "Fictional performer/story character.",
+      "Q141717512": "Fictional performer/story character.",
+      "Q141725387": "Fictional performer/story character.",
+      "Q141764394": "Fictional performer/story character.",
+      "Q141764414": "Fictional performer/story character.",
+      "Q15731499": "Fictional performer/story character.",
+      "Q1846505": "Fictional performer/story character.",
+      "Q2294035": "Fictional performer/story character.",
+      "Q24628456": "Fictional performer/story character.",
+      "Q27243305": "Fictional performer/story character.",
+      "Q2734389": "Fictional performer/story character.",
+      "Q3109703": "Fictional performer/story character.",
+      "Q489671": "Fictional performer/story character.",
+      "Q5304209": "Fictional performer/story character.",
+      "Q60163911": "Fictional performer/story character.",
+      "Q60199564": "Fictional performer/story character.",
+      "Q60199567": "Fictional performer/story character.",
+      "Q60226070": "Fictional performer/story character.",
+      "Q60226071": "Fictional performer/story character.",
+      "Q60238856": "Fictional performer/story character.",
+      "Q60749935": "Fictional performer/story character.",
+      "Q61819313": "Fictional performer/story character.",
+      "Q61974468": "Fictional performer/story character.",
+      "Q64620874": "Fictional performer/story character.",
+      "Q64819612": "Fictional performer/story character.",
+      "Q64819647": "Fictional performer/story character.",
+      "Q7920586": "Fictional performer/story character.",
+      "Q79853946": "Fictional performer/story character.",
+      "Q80111678": "Fictional performer/story character.",
+      "Q85797188": "Fictional performer/story character.",
+      "Q85875519": "Fictional performer/story character.",
+      "Q90042778": "Fictional performer/story character.",
+      "Q9302519": "Fictional performer/story character.",
+      "Q935785": "Fictional performer/story character.",
+      "Q97096291": "Fictional performer/story character.",
+      "Q11073869": "A concert tour is not a drummer.",
+      "Q103917305": "A band is not an individual drummer.",
+      "Q60829673": "A band is not an individual drummer."
+    },
+    "extraNegative": [
+      "Animal",
+      "Russel Hobbs",
+      "Rodrick Heffley",
+      "S.H.E is the One World Tour"
+    ],
+    "actualShortNames": [
+      "II"
+    ],
+    "rare": "Buddy Deppenschmidt"
   },
   "keyboard-instruments": {
     "add": [
@@ -200,10 +414,973 @@
           "E-mu Emulator"
         ],
         "evidence": "https://en.wikipedia.org/wiki/List_of_keyboard_instruments"
+      },
+      {
+        "name": "Yamaha DX7",
+        "aliases": [
+          "DX7",
+          "DX-7"
+        ],
+        "evidence": "https://en.wikipedia.org/wiki/List_of_synthesizers"
+      },
+      {
+        "name": "Yamaha CS-80",
+        "aliases": [
+          "CS80",
+          "CS-80"
+        ],
+        "evidence": "https://en.wikipedia.org/wiki/List_of_synthesizers"
+      },
+      {
+        "name": "Yamaha DX21",
+        "aliases": [
+          "DX21"
+        ],
+        "evidence": "https://en.wikipedia.org/wiki/List_of_synthesizers"
+      },
+      {
+        "name": "Yamaha DX100",
+        "aliases": [
+          "DX100"
+        ],
+        "evidence": "https://en.wikipedia.org/wiki/List_of_synthesizers"
+      },
+      {
+        "name": "Yamaha SY77",
+        "aliases": [
+          "SY77"
+        ],
+        "evidence": "https://en.wikipedia.org/wiki/List_of_synthesizers"
+      },
+      {
+        "name": "Yamaha SY99",
+        "aliases": [
+          "SY99"
+        ],
+        "evidence": "https://en.wikipedia.org/wiki/List_of_synthesizers"
+      },
+      {
+        "name": "Yamaha Motif",
+        "aliases": [
+          "Motif"
+        ],
+        "evidence": "https://en.wikipedia.org/wiki/List_of_synthesizers"
+      },
+      {
+        "name": "Yamaha Montage",
+        "aliases": [
+          "Montage"
+        ],
+        "evidence": "https://en.wikipedia.org/wiki/List_of_synthesizers"
+      },
+      {
+        "name": "Yamaha MODX",
+        "aliases": [
+          "MODX"
+        ],
+        "evidence": "https://en.wikipedia.org/wiki/List_of_synthesizers"
+      },
+      {
+        "name": "Yamaha Clavinova",
+        "aliases": [
+          "Clavinova"
+        ],
+        "evidence": "https://en.wikipedia.org/wiki/List_of_synthesizers"
+      },
+      {
+        "name": "Yamaha Arius",
+        "aliases": [
+          "Arius"
+        ],
+        "evidence": "https://en.wikipedia.org/wiki/List_of_synthesizers"
+      },
+      {
+        "name": "Yamaha PSR",
+        "aliases": [
+          "PSR"
+        ],
+        "evidence": "https://en.wikipedia.org/wiki/List_of_synthesizers"
+      },
+      {
+        "name": "Yamaha CP-70",
+        "aliases": [
+          "CP70"
+        ],
+        "evidence": "https://en.wikipedia.org/wiki/List_of_synthesizers"
+      },
+      {
+        "name": "Yamaha CP-80",
+        "aliases": [
+          "CP80"
+        ],
+        "evidence": "https://en.wikipedia.org/wiki/List_of_synthesizers"
+      },
+      {
+        "name": "Roland Juno-60",
+        "aliases": [
+          "Juno 60"
+        ],
+        "evidence": "https://en.wikipedia.org/wiki/List_of_synthesizers"
+      },
+      {
+        "name": "Roland Juno-106",
+        "aliases": [
+          "Juno 106"
+        ],
+        "evidence": "https://en.wikipedia.org/wiki/List_of_synthesizers"
+      },
+      {
+        "name": "Roland Jupiter-8",
+        "aliases": [
+          "Jupiter 8"
+        ],
+        "evidence": "https://en.wikipedia.org/wiki/List_of_synthesizers"
+      },
+      {
+        "name": "Roland Jupiter-6",
+        "aliases": [
+          "Jupiter 6"
+        ],
+        "evidence": "https://en.wikipedia.org/wiki/List_of_synthesizers"
+      },
+      {
+        "name": "Roland D-50",
+        "aliases": [
+          "D50",
+          "D-50"
+        ],
+        "evidence": "https://en.wikipedia.org/wiki/List_of_synthesizers"
+      },
+      {
+        "name": "Roland D-70",
+        "aliases": [
+          "D70"
+        ],
+        "evidence": "https://en.wikipedia.org/wiki/List_of_synthesizers"
+      },
+      {
+        "name": "Roland JD-800",
+        "aliases": [
+          "JD800"
+        ],
+        "evidence": "https://en.wikipedia.org/wiki/List_of_synthesizers"
+      },
+      {
+        "name": "Roland SH-101",
+        "aliases": [
+          "SH101"
+        ],
+        "evidence": "https://en.wikipedia.org/wiki/List_of_synthesizers"
+      },
+      {
+        "name": "Roland SH-1000",
+        "aliases": [
+          "SH1000"
+        ],
+        "evidence": "https://en.wikipedia.org/wiki/List_of_synthesizers"
+      },
+      {
+        "name": "Roland SH-2000",
+        "aliases": [
+          "SH2000"
+        ],
+        "evidence": "https://en.wikipedia.org/wiki/List_of_synthesizers"
+      },
+      {
+        "name": "Roland Fantom",
+        "aliases": [
+          "Fantom"
+        ],
+        "evidence": "https://en.wikipedia.org/wiki/List_of_synthesizers"
+      },
+      {
+        "name": "Roland RD-2000",
+        "aliases": [
+          "RD2000"
+        ],
+        "evidence": "https://en.wikipedia.org/wiki/List_of_synthesizers"
+      },
+      {
+        "name": "Roland Juno-DS",
+        "aliases": [
+          "Juno DS"
+        ],
+        "evidence": "https://en.wikipedia.org/wiki/List_of_synthesizers"
+      },
+      {
+        "name": "Korg M1",
+        "aliases": [
+          "M1"
+        ],
+        "evidence": "https://en.wikipedia.org/wiki/List_of_synthesizers"
+      },
+      {
+        "name": "Korg MS-20",
+        "aliases": [
+          "MS20",
+          "MS-20"
+        ],
+        "evidence": "https://en.wikipedia.org/wiki/List_of_synthesizers"
+      },
+      {
+        "name": "Korg MicroKorg",
+        "aliases": [
+          "MicroKorg"
+        ],
+        "evidence": "https://en.wikipedia.org/wiki/List_of_synthesizers"
+      },
+      {
+        "name": "Korg Triton",
+        "aliases": [
+          "Triton"
+        ],
+        "evidence": "https://en.wikipedia.org/wiki/List_of_synthesizers"
+      },
+      {
+        "name": "Korg Kronos",
+        "aliases": [
+          "Kronos"
+        ],
+        "evidence": "https://en.wikipedia.org/wiki/List_of_synthesizers"
+      },
+      {
+        "name": "Korg Minilogue",
+        "aliases": [
+          "Minilogue"
+        ],
+        "evidence": "https://en.wikipedia.org/wiki/List_of_synthesizers"
+      },
+      {
+        "name": "Korg Minilogue XD",
+        "aliases": [
+          "Minilogue XD"
+        ],
+        "evidence": "https://en.wikipedia.org/wiki/List_of_synthesizers"
+      },
+      {
+        "name": "Korg Wavestation",
+        "aliases": [
+          "Wavestation"
+        ],
+        "evidence": "https://en.wikipedia.org/wiki/List_of_synthesizers"
+      },
+      {
+        "name": "Korg Polysix",
+        "aliases": [
+          "Polysix"
+        ],
+        "evidence": "https://en.wikipedia.org/wiki/List_of_synthesizers"
+      },
+      {
+        "name": "Korg Mono/Poly",
+        "aliases": [
+          "MonoPoly"
+        ],
+        "evidence": "https://en.wikipedia.org/wiki/List_of_synthesizers"
+      },
+      {
+        "name": "Korg Poly-800",
+        "aliases": [
+          "Poly800"
+        ],
+        "evidence": "https://en.wikipedia.org/wiki/List_of_synthesizers"
+      },
+      {
+        "name": "Korg PS-3300",
+        "aliases": [
+          "PS3300"
+        ],
+        "evidence": "https://en.wikipedia.org/wiki/List_of_synthesizers"
+      },
+      {
+        "name": "Korg Prologue",
+        "aliases": [
+          "Prologue"
+        ],
+        "evidence": "https://en.wikipedia.org/wiki/List_of_synthesizers"
+      },
+      {
+        "name": "Minimoog Model D",
+        "aliases": [
+          "Minimoog",
+          "Moog Model D"
+        ],
+        "evidence": "https://en.wikipedia.org/wiki/List_of_synthesizers"
+      },
+      {
+        "name": "Moog Minimoog Voyager",
+        "aliases": [
+          "Minimoog Voyager",
+          "Moog Voyager"
+        ],
+        "evidence": "https://en.wikipedia.org/wiki/List_of_synthesizers"
+      },
+      {
+        "name": "Moog Memorymoog",
+        "aliases": [
+          "Memorymoog"
+        ],
+        "evidence": "https://en.wikipedia.org/wiki/List_of_synthesizers"
+      },
+      {
+        "name": "Moog One",
+        "aliases": [],
+        "evidence": "https://en.wikipedia.org/wiki/List_of_synthesizers"
+      },
+      {
+        "name": "Moog Subsequent 37",
+        "aliases": [
+          "Subsequent 37"
+        ],
+        "evidence": "https://en.wikipedia.org/wiki/List_of_synthesizers"
+      },
+      {
+        "name": "Moog Sub Phatty",
+        "aliases": [
+          "Sub Phatty"
+        ],
+        "evidence": "https://en.wikipedia.org/wiki/List_of_synthesizers"
+      },
+      {
+        "name": "Moog Little Phatty",
+        "aliases": [
+          "Little Phatty"
+        ],
+        "evidence": "https://en.wikipedia.org/wiki/List_of_synthesizers"
+      },
+      {
+        "name": "Moog Prodigy",
+        "aliases": [],
+        "evidence": "https://en.wikipedia.org/wiki/List_of_synthesizers"
+      },
+      {
+        "name": "Moog Source",
+        "aliases": [],
+        "evidence": "https://en.wikipedia.org/wiki/List_of_synthesizers"
+      },
+      {
+        "name": "Moog Micromoog",
+        "aliases": [
+          "Micromoog"
+        ],
+        "evidence": "https://en.wikipedia.org/wiki/List_of_synthesizers"
+      },
+      {
+        "name": "Moog Multimoog",
+        "aliases": [
+          "Multimoog"
+        ],
+        "evidence": "https://en.wikipedia.org/wiki/List_of_synthesizers"
+      },
+      {
+        "name": "Sequential Prophet-5",
+        "aliases": [
+          "Prophet 5",
+          "Prophet-5"
+        ],
+        "evidence": "https://en.wikipedia.org/wiki/List_of_synthesizers"
+      },
+      {
+        "name": "Sequential Prophet-6",
+        "aliases": [
+          "Prophet 6"
+        ],
+        "evidence": "https://en.wikipedia.org/wiki/List_of_synthesizers"
+      },
+      {
+        "name": "Sequential Prophet-10",
+        "aliases": [
+          "Prophet 10"
+        ],
+        "evidence": "https://en.wikipedia.org/wiki/List_of_synthesizers"
+      },
+      {
+        "name": "Sequential Prophet Rev2",
+        "aliases": [
+          "Prophet Rev2"
+        ],
+        "evidence": "https://en.wikipedia.org/wiki/List_of_synthesizers"
+      },
+      {
+        "name": "ARP 2600",
+        "aliases": [],
+        "evidence": "https://en.wikipedia.org/wiki/List_of_synthesizers"
+      },
+      {
+        "name": "ARP Odyssey",
+        "aliases": [],
+        "evidence": "https://en.wikipedia.org/wiki/List_of_synthesizers"
+      },
+      {
+        "name": "ARP Pro Soloist",
+        "aliases": [],
+        "evidence": "https://en.wikipedia.org/wiki/List_of_synthesizers"
+      },
+      {
+        "name": "ARP Solus",
+        "aliases": [],
+        "evidence": "https://en.wikipedia.org/wiki/List_of_synthesizers"
+      },
+      {
+        "name": "ARP Quadra",
+        "aliases": [],
+        "evidence": "https://en.wikipedia.org/wiki/List_of_synthesizers"
+      },
+      {
+        "name": "Nord Stage",
+        "aliases": [],
+        "evidence": "https://en.wikipedia.org/wiki/List_of_synthesizers"
+      },
+      {
+        "name": "Nord Electro",
+        "aliases": [],
+        "evidence": "https://en.wikipedia.org/wiki/List_of_synthesizers"
+      },
+      {
+        "name": "Nord Piano",
+        "aliases": [],
+        "evidence": "https://en.wikipedia.org/wiki/List_of_synthesizers"
+      },
+      {
+        "name": "Nord Lead",
+        "aliases": [],
+        "evidence": "https://en.wikipedia.org/wiki/List_of_synthesizers"
+      },
+      {
+        "name": "Casio Casiotone",
+        "aliases": [
+          "Casiotone"
+        ],
+        "evidence": "https://en.wikipedia.org/wiki/List_of_synthesizers"
+      },
+      {
+        "name": "Casio VL-1",
+        "aliases": [
+          "Casio VL Tone",
+          "VL-1"
+        ],
+        "evidence": "https://en.wikipedia.org/wiki/List_of_synthesizers"
+      },
+      {
+        "name": "Casio SK-1",
+        "aliases": [
+          "SK-1"
+        ],
+        "evidence": "https://en.wikipedia.org/wiki/List_of_synthesizers"
+      },
+      {
+        "name": "Casio CZ-101",
+        "aliases": [
+          "CZ101"
+        ],
+        "evidence": "https://en.wikipedia.org/wiki/List_of_synthesizers"
+      },
+      {
+        "name": "Casio CZ-1000",
+        "aliases": [
+          "CZ1000"
+        ],
+        "evidence": "https://en.wikipedia.org/wiki/List_of_synthesizers"
+      },
+      {
+        "name": "Casio Privia",
+        "aliases": [
+          "Privia"
+        ],
+        "evidence": "https://en.wikipedia.org/wiki/List_of_synthesizers"
+      },
+      {
+        "name": "Casio Celviano",
+        "aliases": [
+          "Celviano"
+        ],
+        "evidence": "https://en.wikipedia.org/wiki/List_of_synthesizers"
+      },
+      {
+        "name": "Kurzweil K250",
+        "aliases": [
+          "K250"
+        ],
+        "evidence": "https://en.wikipedia.org/wiki/List_of_synthesizers"
+      },
+      {
+        "name": "Kurzweil K2000",
+        "aliases": [
+          "K2000"
+        ],
+        "evidence": "https://en.wikipedia.org/wiki/List_of_synthesizers"
+      },
+      {
+        "name": "Kurzweil K2600",
+        "aliases": [
+          "K2600"
+        ],
+        "evidence": "https://en.wikipedia.org/wiki/List_of_synthesizers"
+      },
+      {
+        "name": "Kurzweil PC3",
+        "aliases": [
+          "PC3"
+        ],
+        "evidence": "https://en.wikipedia.org/wiki/List_of_synthesizers"
+      },
+      {
+        "name": "Alesis Andromeda A6",
+        "aliases": [
+          "Andromeda A6"
+        ],
+        "evidence": "https://en.wikipedia.org/wiki/List_of_synthesizers"
+      },
+      {
+        "name": "Alesis QS8",
+        "aliases": [
+          "QS8"
+        ],
+        "evidence": "https://en.wikipedia.org/wiki/List_of_synthesizers"
+      },
+      {
+        "name": "Alesis Fusion",
+        "aliases": [],
+        "evidence": "https://en.wikipedia.org/wiki/List_of_synthesizers"
+      },
+      {
+        "name": "Mellotron M400",
+        "aliases": [
+          "M400"
+        ],
+        "evidence": "https://en.wikipedia.org/wiki/List_of_synthesizers"
+      },
+      {
+        "name": "Mellotron Mark II",
+        "aliases": [],
+        "evidence": "https://en.wikipedia.org/wiki/List_of_synthesizers"
+      },
+      {
+        "name": "Chamberlin M1",
+        "aliases": [],
+        "evidence": "https://en.wikipedia.org/wiki/List_of_synthesizers"
+      },
+      {
+        "name": "E-mu Emulator II",
+        "aliases": [
+          "Emulator II"
+        ],
+        "evidence": "https://en.wikipedia.org/wiki/List_of_synthesizers"
+      },
+      {
+        "name": "E-mu Emulator III",
+        "aliases": [
+          "Emulator III"
+        ],
+        "evidence": "https://en.wikipedia.org/wiki/List_of_synthesizers"
+      },
+      {
+        "name": "E-mu Emax",
+        "aliases": [
+          "Emax"
+        ],
+        "evidence": "https://en.wikipedia.org/wiki/List_of_synthesizers"
+      },
+      {
+        "name": "E-mu Emax II",
+        "aliases": [
+          "Emax II"
+        ],
+        "evidence": "https://en.wikipedia.org/wiki/List_of_synthesizers"
+      },
+      {
+        "name": "Oberheim OB-Xa",
+        "aliases": [
+          "OB-Xa"
+        ],
+        "evidence": "https://en.wikipedia.org/wiki/List_of_synthesizers"
+      },
+      {
+        "name": "Oberheim OB-8",
+        "aliases": [
+          "OB-8"
+        ],
+        "evidence": "https://en.wikipedia.org/wiki/List_of_synthesizers"
+      },
+      {
+        "name": "Oberheim Matrix-6",
+        "aliases": [
+          "Matrix 6"
+        ],
+        "evidence": "https://en.wikipedia.org/wiki/List_of_synthesizers"
+      },
+      {
+        "name": "Oberheim OB-6",
+        "aliases": [
+          "OB6"
+        ],
+        "evidence": "https://en.wikipedia.org/wiki/List_of_synthesizers"
       }
     ],
     "aliases": {},
-    "pending": []
+    "pending": [],
+    "reviewed": true,
+    "references": [
+      "https://en.wikipedia.org/wiki/List_of_synthesizers",
+      "https://music.casio.com/en/products/keyboard/",
+      "https://sequential.com/product/prophet-5/",
+      "https://support.roland.com/hc/en-us/articles/201966419-JUNO-106-Technical-Specifications",
+      "https://www.korg.co.uk/pages/about",
+      "https://www.korg.com/us/products/synthesizers/arp2600_fs/",
+      "https://www.mellotron.com/history.html",
+      "https://www.moogmusic.com/products",
+      "https://www.nordkeyboards.com/legacy/",
+      "https://www.roland.com/au/roland-50th-anniversary/1980s/",
+      "https://www.roland.com/global/categories/keyboards/",
+      "https://www.yamaha.com/en/about/experience/innovation-road/collection/",
+      "https://www.yamaha.com/en/musical_instrument_guide/organ/",
+      "https://www.yamaha.com/en/musical_instrument_guide/piano/"
+    ],
+    "actualShortNames": [
+      "DX7",
+      "DX7",
+      "DX-7",
+      "CS80",
+      "CS-80",
+      "DX21",
+      "DX100",
+      "SY77",
+      "SY99",
+      "Motif",
+      "Montage",
+      "MODX",
+      "Clavinova",
+      "Arius",
+      "PSR",
+      "CP70",
+      "CP80",
+      "Juno 60",
+      "Juno 106",
+      "Jupiter 8",
+      "Jupiter 6",
+      "D50",
+      "D-50",
+      "D70",
+      "JD800",
+      "SH101",
+      "SH1000",
+      "SH2000",
+      "Fantom",
+      "RD2000",
+      "Juno DS",
+      "M1",
+      "MS20",
+      "MS-20",
+      "MicroKorg",
+      "Triton",
+      "Kronos",
+      "Minilogue",
+      "Minilogue XD",
+      "Wavestation",
+      "Polysix",
+      "MonoPoly",
+      "Poly800",
+      "PS3300",
+      "Prologue",
+      "Minimoog",
+      "Moog Model D",
+      "Minimoog Voyager",
+      "Moog Voyager",
+      "Memorymoog",
+      "Subsequent 37",
+      "Sub Phatty",
+      "Little Phatty",
+      "Micromoog",
+      "Multimoog",
+      "Prophet 5",
+      "Prophet-5",
+      "Prophet 6",
+      "Prophet 10",
+      "Prophet Rev2",
+      "Casiotone",
+      "Casio VL Tone",
+      "VL-1",
+      "SK-1",
+      "CZ101",
+      "CZ1000",
+      "Privia",
+      "Celviano",
+      "K250",
+      "K2000",
+      "K2600",
+      "PC3",
+      "Andromeda A6",
+      "QS8",
+      "M400",
+      "Fairlight",
+      "Emulator II",
+      "Emulator III",
+      "Emax",
+      "Emax II",
+      "OB-Xa",
+      "OB-8",
+      "Matrix 6",
+      "OB6"
+    ],
+    "extraNegative": [
+      "Vocoder",
+      "Sampler",
+      "Computer keyboard",
+      "Yamaha TX816",
+      "Apple M1",
+      "MIDI cable"
+    ],
+    "rare": "clavicytherium",
+    "namedAliases": {
+      "Yamaha DX7": [
+        "DX7",
+        "DX-7"
+      ],
+      "Yamaha CS-80": [
+        "CS80",
+        "CS-80"
+      ],
+      "Yamaha DX21": [
+        "DX21"
+      ],
+      "Yamaha DX100": [
+        "DX100"
+      ],
+      "Yamaha SY77": [
+        "SY77"
+      ],
+      "Yamaha SY99": [
+        "SY99"
+      ],
+      "Yamaha Motif": [
+        "Motif"
+      ],
+      "Yamaha Montage": [
+        "Montage"
+      ],
+      "Yamaha MODX": [
+        "MODX"
+      ],
+      "Yamaha Clavinova": [
+        "Clavinova"
+      ],
+      "Yamaha Arius": [
+        "Arius"
+      ],
+      "Yamaha PSR": [
+        "PSR"
+      ],
+      "Yamaha CP-70": [
+        "CP70"
+      ],
+      "Yamaha CP-80": [
+        "CP80"
+      ],
+      "Roland Juno-60": [
+        "Juno 60"
+      ],
+      "Roland Juno-106": [
+        "Juno 106"
+      ],
+      "Roland Jupiter-8": [
+        "Jupiter 8"
+      ],
+      "Roland Jupiter-6": [
+        "Jupiter 6"
+      ],
+      "Roland D-50": [
+        "D50",
+        "D-50"
+      ],
+      "Roland D-70": [
+        "D70"
+      ],
+      "Roland JD-800": [
+        "JD800"
+      ],
+      "Roland SH-101": [
+        "SH101"
+      ],
+      "Roland SH-1000": [
+        "SH1000"
+      ],
+      "Roland SH-2000": [
+        "SH2000"
+      ],
+      "Roland Fantom": [
+        "Fantom"
+      ],
+      "Roland RD-2000": [
+        "RD2000"
+      ],
+      "Roland Juno-DS": [
+        "Juno DS"
+      ],
+      "Korg M1": [
+        "M1"
+      ],
+      "Korg MS-20": [
+        "MS20",
+        "MS-20"
+      ],
+      "Korg MicroKorg": [
+        "MicroKorg"
+      ],
+      "Korg Triton": [
+        "Triton"
+      ],
+      "Korg Kronos": [
+        "Kronos"
+      ],
+      "Korg Minilogue": [
+        "Minilogue"
+      ],
+      "Korg Minilogue XD": [
+        "Minilogue XD"
+      ],
+      "Korg Wavestation": [
+        "Wavestation"
+      ],
+      "Korg Polysix": [
+        "Polysix"
+      ],
+      "Korg Mono/Poly": [
+        "MonoPoly"
+      ],
+      "Korg Poly-800": [
+        "Poly800"
+      ],
+      "Korg PS-3300": [
+        "PS3300"
+      ],
+      "Korg Prologue": [
+        "Prologue"
+      ],
+      "Minimoog Model D": [
+        "Minimoog",
+        "Moog Model D"
+      ],
+      "Moog Minimoog Voyager": [
+        "Minimoog Voyager",
+        "Moog Voyager"
+      ],
+      "Moog Memorymoog": [
+        "Memorymoog"
+      ],
+      "Moog One": [],
+      "Moog Subsequent 37": [
+        "Subsequent 37"
+      ],
+      "Moog Sub Phatty": [
+        "Sub Phatty"
+      ],
+      "Moog Little Phatty": [
+        "Little Phatty"
+      ],
+      "Moog Prodigy": [],
+      "Moog Source": [],
+      "Moog Micromoog": [
+        "Micromoog"
+      ],
+      "Moog Multimoog": [
+        "Multimoog"
+      ],
+      "Sequential Prophet-5": [
+        "Prophet 5",
+        "Prophet-5"
+      ],
+      "Sequential Prophet-6": [
+        "Prophet 6"
+      ],
+      "Sequential Prophet-10": [
+        "Prophet 10"
+      ],
+      "Sequential Prophet Rev2": [
+        "Prophet Rev2"
+      ],
+      "ARP 2600": [],
+      "ARP Odyssey": [],
+      "ARP Pro Soloist": [],
+      "ARP Solus": [],
+      "ARP Quadra": [],
+      "Nord Stage": [],
+      "Nord Electro": [],
+      "Nord Piano": [],
+      "Nord Lead": [],
+      "Casio Casiotone": [
+        "Casiotone"
+      ],
+      "Casio VL-1": [
+        "Casio VL Tone",
+        "VL-1"
+      ],
+      "Casio SK-1": [
+        "SK-1"
+      ],
+      "Casio CZ-101": [
+        "CZ101"
+      ],
+      "Casio CZ-1000": [
+        "CZ1000"
+      ],
+      "Casio Privia": [
+        "Privia"
+      ],
+      "Casio Celviano": [
+        "Celviano"
+      ],
+      "Kurzweil K250": [
+        "K250"
+      ],
+      "Kurzweil K2000": [
+        "K2000"
+      ],
+      "Kurzweil K2600": [
+        "K2600"
+      ],
+      "Kurzweil PC3": [
+        "PC3"
+      ],
+      "Alesis Andromeda A6": [
+        "Andromeda A6"
+      ],
+      "Alesis QS8": [
+        "QS8"
+      ],
+      "Alesis Fusion": [],
+      "Mellotron M400": [
+        "M400"
+      ],
+      "Mellotron Mark II": [],
+      "Chamberlin M1": [],
+      "Fairlight CMI": [
+        "Fairlight"
+      ],
+      "E-mu Emulator II": [
+        "Emulator II"
+      ],
+      "E-mu Emulator III": [
+        "Emulator III"
+      ],
+      "E-mu Emax": [
+        "Emax"
+      ],
+      "E-mu Emax II": [
+        "Emax II"
+      ],
+      "Oberheim OB-Xa": [
+        "OB-Xa"
+      ],
+      "Oberheim OB-8": [
+        "OB-8"
+      ],
+      "Oberheim Matrix-6": [
+        "Matrix 6"
+      ],
+      "Oberheim OB-6": [
+        "OB6"
+      ]
+    }
   },
   "named-airports": {
     "add": [],
@@ -358,17 +1535,17 @@
       {
         "name": "Plitvice Waterfalls",
         "aliases": [],
-        "evidence": "Tourism-name aliases/complexes omitted by the exact waterfall-class query; official park and attraction checks pending before admission"
+        "evidence": "https://whc.unesco.org/en/list/98/"
       },
       {
         "name": "Krka Waterfalls",
         "aliases": [],
-        "evidence": "Tourism-name aliases/complexes omitted by the exact waterfall-class query; official park and attraction checks pending before admission"
+        "evidence": "https://npkrka.hr/hr/prirodna-bastina/slapovi/"
       },
       {
         "name": "Catarata del Toro",
         "aliases": [],
-        "evidence": "Tourism-name aliases/complexes omitted by the exact waterfall-class query; official park and attraction checks pending before admission"
+        "evidence": "https://www.catarata-del-toro.com/about-us/"
       }
     ],
     "aliases": {
@@ -380,6 +1557,39 @@
         "Voringsfossen"
       ]
     },
-    "pending": []
+    "pending": [],
+    "reviewed": true,
+    "references": [
+      "https://whc.unesco.org/en/list/98/",
+      "https://npkrka.hr/hr/prirodna-bastina/slapovi/",
+      "https://www.catarata-del-toro.com/about-us/",
+      "https://www.nps.gov/yose/planyourvisit/waterfalls.htm",
+      "https://www.east.is/en/place/hengifoss"
+    ],
+    "namedAliases": {
+      "Plitvice Waterfalls": [
+        "Plitvice Falls",
+        "Plitvice"
+      ],
+      "Krka Waterfalls": [
+        "Krka Falls"
+      ]
+    },
+    "rare": "Hengifoss"
+  },
+  "named-canals": {
+    "reviewed": true,
+    "references": [
+      "https://whc.unesco.org/en/list/1443/",
+      "https://parks.canada.ca/lhn-nhs/on/rideau",
+      "https://pancanal.com/en/",
+      "https://www.nps.gov/erie/index.htm",
+      "https://www.cromfordcanal.org/"
+    ],
+    "extraNegative": [
+      "English Channel",
+      "Panama City"
+    ],
+    "rare": "Cromford Canal"
   }
 }

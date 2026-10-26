@@ -2,64 +2,6 @@
   "status": "Candidates require full classification, supplemental-evidence and familiar-name review before admission. No issue is waived by a large answer count.",
   "issues": [
     {
-      "question": "record-labels",
-      "id": "Q104190216",
-      "name": "Фонограф",
-      "reason": "No usable English/Latin answer label under the current display limit"
-    },
-    {
-      "question": "record-labels",
-      "id": "Q107053853",
-      "name": "Ακτή",
-      "reason": "No usable English/Latin answer label under the current display limit"
-    },
-    {
-      "question": "record-labels",
-      "id": "Q124152262",
-      "name": "ООО \"Медиалайн\"",
-      "reason": "No usable English/Latin answer label under the current display limit"
-    },
-    {
-      "question": "named-djs",
-      "name": "Annie Mac",
-      "reason": "https://www.bbc.co.uk/radio; published radio-personality career histories require a final source-by-person check before admission"
-    },
-    {
-      "question": "named-djs",
-      "name": "Bob Harris",
-      "reason": "https://www.bbc.co.uk/radio; published radio-personality career histories require a final source-by-person check before admission"
-    },
-    {
-      "question": "named-djs",
-      "name": "Howard Stern",
-      "reason": "https://www.bbc.co.uk/radio; published radio-personality career histories require a final source-by-person check before admission"
-    },
-    {
-      "question": "named-djs",
-      "name": "Dick Clark",
-      "reason": "https://www.bbc.co.uk/radio; published radio-personality career histories require a final source-by-person check before admission"
-    },
-    {
-      "question": "named-djs",
-      "name": "Delilah",
-      "reason": "https://www.bbc.co.uk/radio; published radio-personality career histories require a final source-by-person check before admission"
-    },
-    {
-      "question": "named-drummers",
-      "name": "Debbi Peterson",
-      "reason": "Manually identified real drummer omissions; final first-party performance references pending before admission"
-    },
-    {
-      "question": "named-drummers",
-      "name": "Anderson .Paak",
-      "reason": "Manually identified real drummer omissions; final first-party performance references pending before admission"
-    },
-    {
-      "question": "named-drummers",
-      "name": "ZackGrooves",
-      "reason": "Manually identified real drummer omissions; final first-party performance references pending before admission"
-    },
-    {
       "question": "castles-palaces",
       "name": "Balmoral Castle",
       "reason": "Recognized castles/palaces omitted from the exact castle/palace type queries; first-party monument listings require a final cross-check before admission"
@@ -207,21 +149,6 @@
     },
     {
       "question": "named-waterfalls",
-      "name": "Plitvice Waterfalls",
-      "reason": "Tourism-name aliases/complexes omitted by the exact waterfall-class query; official park and attraction checks pending before admission"
-    },
-    {
-      "question": "named-waterfalls",
-      "name": "Krka Waterfalls",
-      "reason": "Tourism-name aliases/complexes omitted by the exact waterfall-class query; official park and attraction checks pending before admission"
-    },
-    {
-      "question": "named-waterfalls",
-      "name": "Catarata del Toro",
-      "reason": "Tourism-name aliases/complexes omitted by the exact waterfall-class query; official park and attraction checks pending before admission"
-    },
-    {
-      "question": "named-waterfalls",
       "id": "Q4071445",
       "name": "Абҙан шарлауығы",
       "reason": "No usable English/Latin answer label under the current display limit"
@@ -236,19 +163,19 @@
   "challenges": [
     {
       "question": "record-labels",
-      "checked": 67,
+      "checked": 71,
       "notAssumedValid": [],
       "missing": []
     },
     {
       "question": "named-djs",
-      "checked": 62,
+      "checked": 69,
       "notAssumedValid": [],
       "missing": []
     },
     {
       "question": "named-drummers",
-      "checked": 67,
+      "checked": 70,
       "notAssumedValid": [
         "Rick Savage"
       ],
@@ -256,7 +183,7 @@
     },
     {
       "question": "keyboard-instruments",
-      "checked": 44,
+      "checked": 58,
       "notAssumedValid": [
         "Sampler",
         "Vocoder"

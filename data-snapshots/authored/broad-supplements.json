@@ -886,7 +886,17 @@
     }
   },
   "museums": {
-    "add": [],
+    "add": [
+      {
+        "id": "manual-basketball-hall-of-fame",
+        "name": "Naismith Memorial Basketball Hall of Fame",
+        "aliases": [
+          "Basketball Hall of Fame",
+          "Naismith Basketball Hall of Fame"
+        ],
+        "sitelinks": 45
+      }
+    ],
     "aliases": {
       "Q19675": [
         "Louvre",
@@ -902,18 +912,104 @@
       ],
       "Q213322": [
         "V&A"
+      ],
+      "Q1414079": [
+        "Museum of Science and Industry Chicago",
+        "Museum of Science and Industry",
+        "Griffin Museum of Science and Industry",
+        "MSI",
+        "Griffin MSI"
+      ],
+      "Q178065": [
+        "Centre Pompidou",
+        "Pompidou Center"
+      ],
+      "Q1960500": [
+        "Palace Museum Beijing",
+        "Forbidden City Museum"
+      ],
+      "Q201219": [
+        "Egyptian Museum Cairo",
+        "Egyptian Museum in Cairo"
+      ],
+      "Q758657": [
+        "Auckland War Memorial Museum",
+        "Auckland Museum"
+      ],
+      "Q841506": [
+        "Borghese Gallery"
+      ],
+      "Q809892": [
+        "National Baseball Hall of Fame",
+        "Baseball Hall of Fame"
       ]
     },
-    "note": "Documented public names, not generated initials. Louvre is the museum's own English brand. V&A is the institution's official brand."
+    "note": "Documented public names, not generated initials. Louvre is the museum's own English brand. V&A is the institution's official brand.",
+    "actualShortNames": [
+      "MSI"
+    ],
+    "references": [
+      "https://www.griffinmsi.org/",
+      "https://www.hoophall.com/",
+      "https://baseballhall.org/",
+      "https://www.centrepompidou.fr/en/",
+      "https://www.aucklandmuseum.com/",
+      "https://galleriaborghese.beniculturali.it/",
+      "https://www.mcsarajevo.ba/tunel-spasa",
+      "https://www.visitsarajevo.ba/listings/monument-complex-tunnel-d-b/"
+    ],
+    "removeGenericAliases": [
+      "Museum",
+      "Art museum"
+    ],
+    "hold": {
+      "Q108908800": "Generic category placeholder; no usable proper museum name in the label. Actual named institutions are retained; a generic alias is removed separately.",
+      "Q113532517": "Generic category placeholder; no usable proper museum name in the label. Actual named institutions are retained; a generic alias is removed separately.",
+      "Q55360890": "Generic category placeholder; no usable proper museum name in the label. Actual named institutions are retained; a generic alias is removed separately.",
+      "Q98608217": "Generic category placeholder; no usable proper museum name in the label. Actual named institutions are retained; a generic alias is removed separately."
+    }
   },
   "mountain-ranges": {
-    "add": [],
+    "add": [
+      {
+        "id": "manual-scandes",
+        "name": "Scandinavian Mountains",
+        "aliases": [
+          "Scandes"
+        ],
+        "sitelinks": 60
+      },
+      {
+        "id": "manual-altai",
+        "name": "Altai Mountains",
+        "aliases": [
+          "Altai",
+          "Altay Mountains"
+        ],
+        "sitelinks": 60
+      },
+      {
+        "id": "manual-alaska",
+        "name": "Alaska Range",
+        "aliases": [],
+        "sitelinks": 60
+      }
+    ],
     "aliases": {
       "Q1422867": [
         "Gamburtsev Mountains",
         "Gamburtsev Subglacial Mountains"
+      ],
+      "Q333711": [
+        "Lebanon Mountains"
       ]
     },
-    "note": "Common scientific name variants of the same physical range; no separate answer identity for an alternate name."
+    "note": "Common scientific name variants of the same physical range; no separate answer identity for an alternate name.",
+    "references": [
+      "https://whc.unesco.org/en/list/768/",
+      "https://www.nps.gov/articles/denali.htm",
+      "https://www.naturvardsverket.se/4ac4b2/contentassets/ef0795d1c7434cb4833ec4b9170e95f8/vl-6170-alpinakalkgrasmarker.pdf",
+      "https://www.bas.ac.uk/project/agap/"
+    ]
   }
 }

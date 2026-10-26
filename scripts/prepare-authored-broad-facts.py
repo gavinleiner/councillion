@@ -5,6 +5,7 @@ ROOT=pathlib.Path(__file__).resolve().parents[1]
 s=json.load(gzip.open(ROOT/'data-snapshots/authored/sources/broad-facts.json.gz'))
 supp=json.load(open(ROOT/'data-snapshots/authored/broad-supplements.json'))
 duo_checks=json.load(open(ROOT/'data-snapshots/authored/duo-challenges.json'))
+world_checks=json.load(open(ROOT/'data-snapshots/authored/world-common-challenges.json'))['checks']
 def norm(s):return re.sub('[^a-z0-9+#]','',unicodedata.normalize('NFKD',s).encode('ascii','ignore').decode().lower())
 specs=[
  ('musical-duos','music','Better as two','Name a music act known as a duo.','Current and historical musical duos count. Ordinary backing musicians do not change a two-person act into a larger group. Two solo artists who collaborated once are not automatically a named duo.','Daft Punk|Simon & Garfunkel|OutKast|Twenty One Pilots|Pet Shop Boys|Hall & Oates|Roxette','Adele|Michael Jackson','Alton & Jimmy'),
@@ -16,6 +17,7 @@ for key,family,topic,prompt,scope,examples,wrong,rare in specs:
  raw=s['groups'][key];byid={r['id']:{**r,'aliases':list(r['aliases'])}for r in raw}
  for row in supp[key]['add']:byid[row['id']]=row
  for qid in supp[key].get('hold',{}):byid.pop(qid,None)
+ for p in byid.values():p['aliases']=[a for a in p['aliases']if norm(a)not in {norm(s)for s in supp[key].get('removeGenericAliases',[])}]
  for qid,als in supp[key]['aliases'].items():
   assert qid in byid,(key,'Missing supplement owner',qid)
   byid[qid]['aliases']=list(set(byid[qid]['aliases']+als))
@@ -31,10 +33,17 @@ for key,family,topic,prompt,scope,examples,wrong,rare in specs:
   if not k or re.fullmatch(r'Q\d+',label):
    omissions.append({'group':key,'id':p['id'],'name':label,'reason':'No usable documented Latin-script name in the English-label snapshot'});continue
   if k not in merged:merged[k]={'label':label,'aliases':set(),'sitelinks':0}
-  row=merged[k];row['sitelinks']=max(row['sitelinks'],p['sitelinks']);row['aliases'].update(a for a in p['aliases']if norm(a)and (len(norm(a))>=4 or a in ['V&A','Met']))
- exact={norm(n):k for k,p in merged.items()for n in [p['label'],*p['aliases']]}
- familiar_inputs=duo_checks['yes']if key=='musical-duos'else examples.split('|')
- wrong_inputs=duo_checks['no']if key=='musical-duos'else wrong.split('|')
+  row=merged[k];row['sitelinks']=max(row['sitelinks'],p['sitelinks']);row['aliases'].update(a for a in p['aliases']if norm(a)and (len(norm(a))>=4 or a in ['V&A','Met',*supp[key].get('actualShortNames',[])]))
+ # Full canonical names own their spelling before competing source aliases.
+ # This mirrors gameplay and keeps a famous literal name from being graded
+ # using the tier of a different record that also supplied it as an alias.
+ exact={k:k for k in merged};alias_candidates=collections.defaultdict(set)
+ for k,p in merged.items():
+  for a in p['aliases']:
+   if norm(a)not in exact:alias_candidates[norm(a)].add(k)
+ for a,keys in alias_candidates.items():exact[a]=min(keys,key=lambda k:(-merged[k]['sitelinks'],merged[k]['label']))
+ familiar_inputs=duo_checks['yes']if key=='musical-duos'else world_checks[key]['yes']
+ wrong_inputs=duo_checks['no']if key=='musical-duos'else world_checks[key]['no']
  for familiar in familiar_inputs:assert norm(familiar)in exact,(key,'Missing familiar answer',familiar)
  for negative in wrong_inputs:assert norm(negative)not in exact,(key,'Incorrect source membership',negative)
  familiar_keys={exact[norm(n)]for n in examples.split('|')}
@@ -50,6 +59,7 @@ for key,family,topic,prompt,scope,examples,wrong,rare in specs:
  for k,p in sorted(merged.items()):tiers[str(p['points'])].append({'label':p['label'],'aliases':sorted({a for a in p['aliases']if norm(a)!=k and chosen.get(norm(a))==k})})
  refs=['https://www.wikidata.org/wiki/Wikidata:Data_access','https://qlever.dev/wikidata/']
  if key=='musical-duos':refs+=['https://www.thechemicalbrothers.com/','https://bleep.com/artist/71-autechre?lang=en_US','https://www.bluenote.com/artist/domi-jd-beck/']
+ refs+=supp[key].get('references',[])
  qs.append(dict(id='authored-'+key,concept=key,family=family,topic=topic,prompt=prompt,scope=scope,format='whole-concept',rationale='A globally recognizable whole subject with a large factual inventory, rather than a country/year slice or a pair of generated tags. Popularity informs the scoring tier, not whether an answer is retained.',familiar=familiar_inputs,exclude=wrong_inputs,references=refs,answers=dict(tiers)))
 target=ROOT/'data-snapshots/authored/batches/06-broad-concepts.json';text=json.dumps({'version':1,'questions':qs},ensure_ascii=False,separators=(',',':'))+'\n'
 if '--check'in sys.argv:assert target.read_text()==text,'Rebuild the factual concept batch'

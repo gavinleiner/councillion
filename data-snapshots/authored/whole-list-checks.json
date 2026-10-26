@@ -1,0 +1,44 @@
+[
+  {
+    "id": "authored-cheese-types",
+    "canonicalAnswers": 2211,
+    "familiarInputs": 100,
+    "negativeBoundaries": 9,
+    "heldRawRows": 14
+  },
+  {
+    "id": "authored-flatbread-types",
+    "canonicalAnswers": 141,
+    "familiarInputs": 30,
+    "negativeBoundaries": 5,
+    "heldRawRows": 3
+  },
+  {
+    "id": "authored-pancake-dishes",
+    "canonicalAnswers": 141,
+    "familiarInputs": 32,
+    "negativeBoundaries": 4,
+    "heldRawRows": 3
+  },
+  {
+    "id": "authored-stew-dishes",
+    "canonicalAnswers": 252,
+    "familiarInputs": 34,
+    "negativeBoundaries": 4,
+    "heldRawRows": 0
+  },
+  {
+    "id": "authored-web-browsers",
+    "canonicalAnswers": 163,
+    "familiarInputs": 32,
+    "negativeBoundaries": 8,
+    "heldRawRows": 8
+  },
+  {
+    "id": "authored-cloud-kinds",
+    "canonicalAnswers": 72,
+    "familiarInputs": 42,
+    "negativeBoundaries": 8,
+    "heldRawRows": 0
+  }
+]

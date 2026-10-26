@@ -190,3 +190,57 @@ test('the rock question includes basic classroom families and actual synonyms, n
  const meta=manifest.categories.find(x=>x.id==='authored-rock-types');
  for(const n of ['Diamond','Quartz','Gold','Concrete','Mount Everest'])assert.equal(resolveAnswer({...p,answers:p.answers,excludedAnswers:meta.exclude},n).status,'missing',n);
 });
+
+test('whole-list questions cover common variants without importing producers, ingredients or rendering engines',()=>{
+ for(const [id,inputs]of [
+  ['cheese-types',['Jarlsberg','Oaxaca','Smoked cheddar','White cheddar','Fresh mozzarella','Queso blanco','Gjetost','Philadelphia','Kraft Singles']],
+  ['flatbread-types',['Roti','Injera','Tortilla','Khachapuri','Gozleme','Papad']],
+  ['pancake-dishes',['Buttermilk pancake','Dutch baby','Souffle pancake','Blueberry pancake','Flapjack','Aebleskiver']],
+  ['stew-dishes',['Beef stew','Chicken stew','Vegetable stew','Lentil stew','Chili','Tagine','Kimchi jjigae']],
+  ['web-browsers',['Chrome','Firefox','Safari','Edge','DuckDuckGo','Kiwi Browser','Samsung Internet']],
+  ['cloud-kinds',['Cumulus','Altostratus','Mammatus','Thundercloud','Anvil cloud','Roll cloud','Wall cloud','Cumulus cloud','Condensation trail','Advection fog']],
+ ])for(const input of inputs)assert.equal(resolveAnswer(pack(id),input).status,'exact',id+': '+input);
+ for(const [id,inputs]of [
+  ['cheese-types',['Allspice','Mahlep','Ardsallagh Goat Farm','Milk','Cauliflower cheese']],
+  ['web-browsers',['WebKit','Blink','Gecko','Qt WebEngine','Bing','uBlock Origin']],
+  ['cloud-kinds',['Lightning','Rainbow','Rain']],
+ ]){
+  const p=pack(id),meta=manifest.categories.find(m=>m.id===p.id),guarded={...p,answers:p.answers,excludedAnswers:meta.exclude};
+  for(const input of inputs)assert.equal(resolveAnswer(guarded,input).status,'missing',id+': '+input);
+ }
+ for(const [id,a,b]of [['cheese-types','Parmesan','Parmigiano Reggiano'],['flatbread-types','Roti canai','Roti prata'],['pancake-dishes','American pancake','Flapjack'],['cloud-kinds','Mamma','Mammatus']])assert.equal(resolveAnswer(pack(id),a).answer.label,resolveAnswer(pack(id),b).answer.label);
+ for(const input of ['GC','MF','SD'])assert.equal(resolveAnswer(pack('web-browsers'),input).status,'missing',input+': no generated browser initials');
+});
+
+test('music questions distinguish fictional story roles from real short names and documented live acts',()=>{
+ for(const [id,inputs]of [
+  ['record-labels',['XL','ECM','A&M','R&S','Fonograf','Akti','Medialayn']],
+  ['named-djs',['ATB','BT','EDX','DJ AM','Gorgon City','Sub Zero Project','D-Block & S-te-Fan','Annie Mac','Bob Harris','Delilah']],
+  ['named-drummers',['Debbi Peterson','Anderson Paak','ZackGrooves','II','Nyango Star','Martin Rongen']],
+  ['keyboard-instruments',['Digital piano','Electronic keyboard','DX7','Mellotron','Keytar','Accordion']],
+ ])for(const input of inputs)assert.equal(resolveAnswer(pack(id),input).status,'exact',id+': '+input);
+ for(const [id,inputs]of [['named-drummers',['Animal','Russel Hobbs','Rodrick Heffley','S.H.E is the One World Tour']],['named-djs',['Alan Partridge','Vinyl Scratch','K.K. Slider']]]){
+  const p=pack(id),meta=manifest.categories.find(m=>m.id===p.id),guarded={...p,answers:p.answers,excludedAnswers:meta.exclude};
+  for(const input of inputs)assert.equal(resolveAnswer(guarded,input).status,'missing',id+': '+input);
+ }
+ const proof=JSON.parse(readFileSync(new URL('../data-snapshots/authored/sources/performer-classification.json',import.meta.url)));
+ assert.ok(proof.excludeFictional.Q1846505);assert.ok(proof.excludeFictional.Q935785);
+ assert.ok(proof.documentedRealPerformerOverrides.Q56351943);assert.ok(proof.documentedRealPerformerOverrides.Q2132281);
+});
+
+test('global waterway questions retain ordinary names and complex aliases without treating natural rivers or straits as canals',()=>{
+ for(const input of ['Panama Canal','Suez Canal','Grand Canal','Rideau Canal','Manchester Ship Canal','Intracoastal Waterway'])assert.equal(resolveAnswer(pack('named-canals'),input).status,'exact',input);
+ for(const input of ['Niagara Falls','Victoria Falls','Angel Falls','Yosemite Falls','Godafoss','Voringfossen','Plitvice','Krka Falls','Catarata del Toro'])assert.equal(resolveAnswer(pack('named-waterfalls'),input).status,'exact',input);
+ const p=pack('named-canals'),meta=manifest.categories.find(m=>m.id===p.id),guarded={...p,answers:p.answers,excludedAnswers:meta.exclude};
+ for(const input of ['Nile River','Amazon River','English Channel','Panama City'])assert.equal(resolveAnswer(guarded,input).status,'missing',input);
+});
+
+test('world inventories reconcile major ranges, public museum names and a renamed institution',()=>{
+ for(const input of ['Scandinavian Mountains','Altai Mountains','Alaska Range','Lebanon Mountains'])assert.equal(resolveAnswer(pack('mountain-ranges'),input).status,'exact',input);
+ for(const input of ['Museum of Science and Industry Chicago','Centre Pompidou','Auckland War Memorial Museum','Borghese Gallery','National Baseball Hall of Fame','Naismith Memorial Basketball Hall of Fame','Sarajevo Tunnel'])assert.equal(resolveAnswer(pack('museums'),input).status,'exact',input);
+ assert.equal(resolveAnswer(pack('museums'),'MSI').answer.label,'Kenneth C. Griffin Museum of Science and Industry');
+ assert.equal(resolveAnswer(pack('museums'),'MoMA').answer.label,'Museum of Modern Art');
+ assert.equal(resolveAnswer(pack('museums'),'MoMA').answer.points,10);
+ const p=pack('museums'),meta=manifest.categories.find(m=>m.id===p.id),guarded={...p,answers:p.answers,excludedAnswers:meta.exclude};
+ for(const input of ['Museum','Art museum'])assert.equal(resolveAnswer(guarded,input).status,'missing',input+': a generic category placeholder is not a proper museum name');
+});
