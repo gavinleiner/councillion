@@ -1,6 +1,6 @@
 # Five-thousand-question expansion: development checkpoint
 
-The requested release is unfinished. The production website still has 227 admitted questions. The development branch now has 247, including 20 newly reviewed inventories. Drafts, answer rows, source entities, archived recipes and reworded prompts do not count toward 5,000.
+The requested release is unfinished. The production website still has 227 admitted questions. The development branch now has 255, including 28 newly reviewed inventories. Drafts, answer rows, source entities, archived recipes and reworded prompts do not count toward 5,000.
 
 ## Review standard
 
@@ -12,7 +12,7 @@ A source classification is evidence, not automatic admission. Each normal-play I
 
 A complete 881-driver Formula One roster reconciles all nine source pages, including current public names and independently supplied familiar inputs. Six everyday inventories were admitted only after a second common-guess sweep repaired missing tools, product names and real aliases. Six Minecraft mechanics use pinned released-game recipes, recursive tags, components and loot tables. This covers every member of the stated game-data rule, rather than a short remembered list. Official character rosters cover Dota 2, Overwatch, Smash Ultimate and Legendary/Mythical Pokemon species. Nintendo alternate costumes share answer identity while actual separately playable fighters remain distinct. NASA supplies all 88 official constellation names. Official NBA award history supplies regular-season MVPs. A second, game-grain NFL inventory reconciles all 60 Super Bowls to 36 distinct winning starting quarterbacks; Bart Starr was caught and repaired during that reconciliation.
 
-There are 62 authored inventories in development, of which 20 are admitted. Canonical answer rows are answers, not questions. The other 42 inventories remain unavailable in normal play.
+There are 69 authored inventories in development, of which 28 are admitted. Canonical answer rows are answers, not questions. The other 41 inventories remain unavailable in normal play.
 
 ## Drafts that still need work
 
@@ -31,6 +31,16 @@ Reach at least 5,000 individually admitted, semantically distinct questions. Kee
 
 ## Verified checkpoint before continuing expansion
 
-Production remains at 227 questions: nothing in this branch has been pushed, merged, deployed or emailed as finished. Development has 247 normal-play questions, including 20 newly admitted authored inventories, with 42 additional authored inventories still ineligible for normal play. The 5,000-question release gate deliberately fails.
+Production remains at 227 questions: nothing in this branch has been pushed, merged, deployed or emailed as finished. Development has 255 normal-play questions, including 28 newly admitted authored inventories, with 41 additional authored inventories still ineligible for normal play. The 5,000-question release gate deliberately fails.
 
-Verification: production build passed; full unit suite passed 232 tests; latest targeted content and migration checks passed after the final alias/rating repairs. Local isolated Playwright tests passed at 1366×768 and 390×844, using local HTTP only and blocking external connections. They exercised legacy saved queues with an unchanged algorithm version, storage persistence across browser tabs, actual Zhou Guanyu grading (+30), the 100-question sample, library counts, and identical Daily IDs in two independent browser contexts. The browser report is in `work/five-thousand/browser/report.json` in the parent workspace; it is development evidence, not a publication receipt.
+Verification: production build passed; full unit suite passed 235 tests; latest targeted content and migration checks passed after the final alias/rating repairs. Local isolated Playwright tests passed at 1366×768 and 390×844, using local HTTP only and blocking external connections. They exercised legacy saved queues with an unchanged algorithm version, storage persistence across browser tabs, actual Zhou Guanyu grading (+30), the 100-question sample, library counts, and identical Daily IDs in two independent browser contexts. The browser report is in `work/five-thousand/browser/report.json` in the parent workspace; it is development evidence, not a publication receipt.
+
+## Culture and music continuation
+
+Seven new whole-subject culture inventories are admitted in development: fictional detectives, pirates, princesses, named vehicles, schools, heist films and time-travel/loop films. Typed film classification excludes 19 non-film records. Independently supplied common names repair classification gaps; the corrupted Hogwarts source label is removed, and real synonyms share an identity. The batch retains every factual title from the parsed heist and time-travel source tables, without copying prose. One music-duo inventory is admitted after 90 common-name probes, a broader-group lookup, publisher checks, and reconciliation of the earlier Simon/Garfunkel and DOMi/JD Beck identities. These are eight questions, not thousands of new questions.
+
+The frozen sample was regenerated from all 255 admitted IDs using the same `20261025-reviewed-standard` seed. The first full test run exposed a stale 247-ID sample manifest; that manifest was rebuilt and the sample/content checks passed. Local browser checks passed again with the 255-question development pool, including saved-queue migration, tab reopening, actual answer grading, a shared seven-question Daily and laptop/mobile rendering. Nothing has been published or emailed as complete.
+
+A new 37-subject writing/research backlog is in `work/five-thousand/next-whole-concepts.tsv` in the parent workspace. It does not count as finished questions. The QLever endpoint returned HTTP 429 during root lookup; requests to it stopped. Continue with cached factual tables and independently sourced primary-publisher inventories rather than retrying or replaying the denied query through another endpoint. Existing cached flatbread, stew, cloud, space-probe and other whole-concept facts still require scope and common-answer review; raw source rows are not automatically accepted answers.
+
+The corrected full test rerun passed all 235 tests. The previous stale-sample failure is resolved without weakening its exact-pool assertion.

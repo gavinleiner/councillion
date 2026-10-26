@@ -1,0 +1,60 @@
+[
+  {
+    "id": "authored-fictional-detectives",
+    "answers": 739,
+    "independentYesChecks": 31,
+    "independentNoChecks": 2,
+    "heldSourceRecords": {}
+  },
+  {
+    "id": "authored-fictional-pirates",
+    "answers": 581,
+    "independentYesChecks": 20,
+    "independentNoChecks": 4,
+    "heldSourceRecords": {}
+  },
+  {
+    "id": "authored-fictional-princesses",
+    "answers": 193,
+    "independentYesChecks": 32,
+    "independentNoChecks": 2,
+    "heldSourceRecords": {}
+  },
+  {
+    "id": "authored-named-fictional-vehicles",
+    "answers": 1087,
+    "independentYesChecks": 27,
+    "independentNoChecks": 3,
+    "heldSourceRecords": {
+      "Q84236264": "Flux capacitor is a component, not a vehicle",
+      "Q12169191": "Time-Turner is a time-travel device worn by the user, not a vehicle",
+      "Q1195697": "Generic time machine class, not a named fictional vehicle"
+    }
+  },
+  {
+    "id": "authored-fictional-schools",
+    "answers": 180,
+    "independentYesChecks": 28,
+    "independentNoChecks": 2,
+    "heldSourceRecords": {
+      "Q100335360": "Generic school-building entry, not a name",
+      "Q127386821": "Generic School label lacks a usable identifiable institution name",
+      "Q54857444": "Generic magic-school class is not a named institution",
+      "Q123296826": "Same South Park Elementary institution already present under Q3578329"
+    }
+  },
+  {
+    "id": "authored-heist-films",
+    "answers": 577,
+    "independentYesChecks": 24,
+    "independentNoChecks": 2,
+    "heldSourceRecords": {}
+  },
+  {
+    "id": "authored-time-travel-films",
+    "answers": 366,
+    "independentYesChecks": 21,
+    "independentNoChecks": 2,
+    "heldSourceRecords": {}
+  }
+]

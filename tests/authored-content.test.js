@@ -100,3 +100,43 @@ test('ordinary shorthand names keep their real identity without farming a rare s
  assert.equal(resolveAnswer(pack('nba-regular-season-mvps'),'Malone').answer.label,'Karl Malone');
  assert.equal(resolveAnswer(pack('super-bowl-winning-starters'),'Manning').answer.label,'Peyton Manning');
 });
+
+test('culture source gaps are repaired without treating directors, components or ordinary institutions as answers',()=>{
+ for(const [id,inputs]of [
+  ['fictional-detectives',['Inspector Gadget','Jessica Fletcher','Fox Mulder','L','L Lawliet','Benoit Blanc']],
+  ['fictional-pirates',['Jack Sparrow','Captain Hook','Ridley','Hondo Ohnaka',"Captain K'nuckles"]],
+  ['fictional-princesses',['Mulan','Moana','Raya','Princess Kida','Leia','Princess Odette']],
+  ['named-fictional-vehicles',['Ecto-1','TARDIS','Hogwarts Express','Magic School Bus','Chitty Chitty Bang Bang']],
+  ['fictional-schools',['Hogwarts',"Xavier's School for Gifted Youngsters",'U.A. High School','Bikini Bottom Boating School','Abbott Elementary']],
+  ['heist-films',['Baby Driver','The Bad Guys','Fantastic Mr. Fox','American Animals']],
+  ['time-travel-films',['Groundhog Day','Edge of Tomorrow','Avengers Endgame','Meet the Robinsons','Palm Springs']],
+ ])for(const input of inputs)assert.equal(resolveAnswer(pack(id),input).status,'exact',id+': '+input);
+ for(const [id,input]of [['heist-films','Quentin Tarantino'],['named-fictional-vehicles','Flux capacitor'],['fictional-schools','Harvard University'],['fictional-pirates','Captain Amelia']]){
+  const meta=manifest.categories.find(p=>p.id==='authored-'+id),p=pack(id);
+  assert.equal(resolveAnswer({...p,answers:p.answers,excludedAnswers:meta.exclude},input).status,'missing',input);
+ }
+ assert.equal(resolveAnswer(pack('fictional-schools'),'X-Mansion').answer.label,resolveAnswer(pack('fictional-schools'),"Xavier's School for Gifted Youngsters").answer.label);
+ assert.equal(resolveAnswer(pack('time-travel-films'),'12 Monkeys').answer.label,resolveAnswer(pack('time-travel-films'),'Twelve Monkeys').answer.label);
+ for(const n of ['XY','AB','MSB','HSE'])assert.equal(resolveAnswer(pack('fictional-schools'),n).status,'missing',n);
+});
+
+test('film classification and parsed factual lists retain source titles without silently importing other media',()=>{
+ const source=JSON.parse(gunzipSync(readFileSync(new URL('../data-snapshots/authored/sources/culture-whole-concepts.json.gz',import.meta.url))));
+ assert.ok(!source.filmEligibility.ids.includes('Q3772'),'Quentin Tarantino is a director, not a movie');
+ assert.ok(!source.filmEligibility.ids.includes('Q91558'),'the Back to the Future franchise is not an extra movie');
+ const sets=[['heist-films',['List of heist films']],['time-travel-films',['List of time travel works of fiction','List of films featuring time loops']]];
+ for(const [id,lists]of sets)for(const title of lists)for(const name of source.lists[title].names)assert.equal(resolveAnswer(pack(id),name).status,'exact',id+': '+name);
+ assert.ok(!source.lists['List of fictional schools'].names.includes('Jeffrey Richards (1988)'),'a bibliography author cannot become a school');
+ const p=pack('fictional-schools');
+ assert.equal(resolveAnswer(p,'Hogwarts').answer.label,'Hogwarts School of Witchcraft and Wizardry');
+ assert.ok(!p.answers.some(a=>/pixula|agarrenme/i.test(a.label)), 'a vandalized source label must never ship as an answer');
+});
+
+test('the music-duo inventory keeps recognizable acts and merges documented former names',()=>{
+ const p=pack('musical-duos');
+ for(const input of ['Carpenters','The Chemical Brothers','Autechre','DOMi & JD Beck','DOMi and JD Beck','Tenacious D','CocoRosie','First Aid Kit','Magdalena Bay','MGMT'])assert.equal(resolveAnswer(p,input).status,'exact',input);
+ assert.equal(resolveAnswer(p,'DOMi & JD Beck').answer.label,resolveAnswer(p,'DOMi and JD Beck').answer.label);
+ assert.equal(resolveAnswer(p,'Tom and Jerry').answer.label,resolveAnswer(p,'Simon and Garfunkel').answer.label);
+ const meta=manifest.categories.find(p=>p.id==='authored-musical-duos');
+ for(const input of ['Moderat','Noisia','Aphex Twin'])assert.equal(resolveAnswer({...p,answers:p.answers,excludedAnswers:meta.exclude},input).status,'missing',input);
+});

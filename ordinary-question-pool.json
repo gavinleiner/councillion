@@ -1,6 +1,6 @@
 {
-  "build": "00aa57e41d551862",
-  "count": 247,
+  "build": "6bb3f0989564da08",
+  "count": 255,
   "categories": [
     {
       "id": "group-q001",
@@ -1971,12 +1971,76 @@
       "scope": "Species classified as Legendary or Mythical in the pinned PokéAPI data count. Forms share their species' answer identity. Pseudo-Legendary is a fan label and does not make a species Legendary."
     },
     {
+      "id": "authored-musical-duos",
+      "prompt": "Name a music act known as a duo.",
+      "family": "music",
+      "group": "authored-whole-concept",
+      "answerCount": 2989,
+      "scope": "Current and historical musical duos count. Ordinary backing musicians do not change a two-person act into a larger group. Two solo artists who collaborated once are not automatically a named duo."
+    },
+    {
       "id": "authored-formula-one-drivers",
       "prompt": "Name a driver who has competed in Formula One.",
       "family": "sports",
       "group": "authored-whole-roster",
       "answerCount": 881,
       "scope": "Drivers in the complete Jolpica/Ergast Formula One World Championship driver inventory count, including historical entrants and the Indianapolis 500 when it was part of that championship. A real surname can identify a valid driver; invented initials and racing three-letter codes do not count as names."
+    },
+    {
+      "id": "authored-fictional-detectives",
+      "prompt": "Name a fictional detective.",
+      "family": "culture",
+      "group": "authored-whole-concept",
+      "answerCount": 739,
+      "scope": "Named fictional professional detectives and amateur sleuths count across books, comics, film, TV and games. A character must actually investigate cases; merely appearing in a mystery does not qualify."
+    },
+    {
+      "id": "authored-fictional-pirates",
+      "prompt": "Name a fictional pirate.",
+      "family": "culture",
+      "group": "authored-whole-concept",
+      "answerCount": 581,
+      "scope": "Named fictional sea, air and space pirates count, including characters who were pirates earlier in their story. A smuggler, sailor or marine is not automatically a pirate."
+    },
+    {
+      "id": "authored-fictional-princesses",
+      "prompt": "Name a princess from fiction.",
+      "family": "culture",
+      "group": "authored-whole-concept",
+      "answerCount": 193,
+      "scope": "Characters who are, were, or are explicitly known as princesses count, along with the official Disney Princess lineup. A character does not qualify simply by being female, wearing a crown or appearing in a Disney movie."
+    },
+    {
+      "id": "authored-named-fictional-vehicles",
+      "prompt": "Name a named vehicle from fiction.",
+      "family": "culture",
+      "group": "authored-whole-concept",
+      "answerCount": 1087,
+      "scope": "Named fictional vehicles, ships and vehicle models count across film, TV, books, comics and games, including living vehicle characters. Generic words such as car or spaceship, and individual parts that are not vehicles, do not count."
+    },
+    {
+      "id": "authored-fictional-schools",
+      "prompt": "Name a school or college from fiction.",
+      "family": "culture",
+      "group": "authored-whole-concept",
+      "answerCount": 180,
+      "scope": "Named fictional schools, colleges, universities and training academies count across books, TV, film, comics and games. A real school does not qualify just because a fictional story mentions it."
+    },
+    {
+      "id": "authored-heist-films",
+      "prompt": "Name a heist movie.",
+      "family": "culture",
+      "group": "authored-whole-concept",
+      "answerCount": 577,
+      "scope": "Films built around a robbery, theft, con or organized caper count, including comedies, animated movies and shorts. Television series, directors and a film with only an unrelated passing theft do not automatically count."
+    },
+    {
+      "id": "authored-time-travel-films",
+      "prompt": "Name a movie involving time travel or a time loop.",
+      "family": "culture",
+      "group": "authored-whole-concept",
+      "answerCount": 366,
+      "scope": "Films in which characters travel through time or experience a repeating time loop count, including animated movies and shorts. Ordinary flashbacks, dreams about the past and a futuristic setting alone do not count."
     }
   ]
 }

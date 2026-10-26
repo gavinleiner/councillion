@@ -1,11 +1,11 @@
 {
   "target": 5000,
-  "authoredCandidates": 62,
-  "admittedAuthored": 20,
-  "normalPoolAdmitted": 247,
-  "remaining": 4753,
+  "authoredCandidates": 69,
+  "admittedAuthored": 28,
+  "normalPoolAdmitted": 255,
+  "remaining": 4745,
   "candidateFamilies": {
-    "culture": 1,
+    "culture": 8,
     "everyday": 6,
     "food": 16,
     "gaming": 10,
@@ -15,6 +15,6 @@
     "sports": 7,
     "world": 9
   },
-  "canonicalAnswerRows": 709635,
-  "familiarAnswerChecks": 552
+  "canonicalAnswerRows": 713387,
+  "familiarAnswerChecks": 818
 }
