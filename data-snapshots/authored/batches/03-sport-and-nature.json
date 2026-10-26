@@ -149,7 +149,21 @@
         "Stephen Curry",
         "Kobe Bryant",
         "Nikola Jokić",
-        "Shaquille O'Neal"
+        "Shaquille O'Neal",
+        "James",
+        "Bryant",
+        "O'Neal",
+        "ONeal",
+        "Antetokounmpo",
+        "Johnson",
+        "Abdul-Jabbar",
+        "Gilgeous-Alexander",
+        "Nowitzki",
+        "Olajuwon",
+        "Malone",
+        "Chamberlain",
+        "Robertson",
+        "Erving"
       ],
       "exclude": [
         "Luka Doncic",
@@ -160,10 +174,10 @@
         "https://s3.grizzliesapp.com/assets/media_guides/25-26/MG_25-26_MediaGuide.pdf"
       ],
       "answers": {
-        "10": "Michael Jordan~Jordan|LeBron James~LeBron|Stephen Curry~Steph Curry~Curry|Kobe Bryant~Kobe|Nikola Jokić~Nikola Jokic~Jokic|Shaquille O'Neal~Shaquille ONeal~Shaq",
-        "30": "Giannis Antetokounmpo~Giannis|Kevin Durant~Durant|James Harden~Harden|Russell Westbrook~Westbrook|Derrick Rose~Rose|Allen Iverson~Iverson|Tim Duncan~Duncan|Magic Johnson~Magic|Larry Bird~Bird|Kareem Abdul-Jabbar~Kareem Abdul Jabbar~Kareem~Lew Alcindor|Shai Gilgeous-Alexander~Shai Gilgeous Alexander~Shai|Joel Embiid~Embiid",
-        "60": "Dirk Nowitzki~Dirk|Steve Nash~Nash|Kevin Garnett~Garnett|Charles Barkley~Barkley|Hakeem Olajuwon~Hakeem|David Robinson~Robinson|Karl Malone~Karl|Moses Malone~Moses|Bill Russell~Russell|Wilt Chamberlain~Wilt",
-        "85": "Bob Pettit~Pettit|Bob Cousy~Cousy|Oscar Robertson~Oscar|Willis Reed~Reed|Bill Walton~Walton|Julius Erving~Dr J~Doctor J|Dave Cowens~Cowens|Bob McAdoo~McAdoo",
+        "10": "Michael Jordan~Jordan|LeBron James~LeBron~James|Stephen Curry~Steph Curry~Curry|Kobe Bryant~Kobe~Bryant|Nikola Jokić~Nikola Jokic~Jokic|Shaquille O'Neal~Shaquille ONeal~Shaq~O'Neal~ONeal",
+        "30": "Giannis Antetokounmpo~Giannis~Antetokounmpo|Kevin Durant~Durant|James Harden~Harden|Russell Westbrook~Westbrook|Derrick Rose~Rose|Allen Iverson~Iverson|Tim Duncan~Duncan|Magic Johnson~Magic~Johnson|Larry Bird~Bird|Kareem Abdul-Jabbar~Kareem Abdul Jabbar~Kareem~Lew Alcindor~Abdul-Jabbar|Shai Gilgeous-Alexander~Shai Gilgeous Alexander~Shai~Gilgeous-Alexander|Joel Embiid~Embiid",
+        "60": "Dirk Nowitzki~Dirk~Nowitzki|Steve Nash~Nash|Kevin Garnett~Garnett|Charles Barkley~Barkley|Hakeem Olajuwon~Hakeem~Olajuwon|David Robinson~Robinson|Karl Malone~Karl~Malone|Moses Malone~Moses|Bill Russell~Russell|Wilt Chamberlain~Wilt~Chamberlain",
+        "85": "Bob Pettit~Pettit|Bob Cousy~Cousy|Oscar Robertson~Oscar~Robertson|Willis Reed~Reed|Bill Walton~Walton|Julius Erving~Dr J~Doctor J~Erving|Dave Cowens~Cowens|Bob McAdoo~McAdoo",
         "100": "Wes Unseld~Unseld"
       }
     },
@@ -183,7 +197,10 @@
         "Peyton Manning",
         "Aaron Rodgers",
         "Russell Wilson",
-        "Bart Starr"
+        "Bart Starr",
+        "Manning",
+        "Williams",
+        "Johnson"
       ],
       "exclude": [
         "Dan Marino",
@@ -195,10 +212,10 @@
         "https://www.seahawks.com/news/2025-the-seahawks-are-super-bowl-lx-champions"
       ],
       "answers": {
-        "10": "Tom Brady~Brady|Patrick Mahomes~Mahomes|Joe Montana~Montana|Peyton Manning~Peyton|Aaron Rodgers~Rodgers|Russell Wilson~Wilson",
+        "10": "Tom Brady~Brady|Patrick Mahomes~Mahomes|Joe Montana~Montana|Peyton Manning~Peyton~Manning|Aaron Rodgers~Rodgers|Russell Wilson~Wilson",
         "30": "Drew Brees~Brees|Eli Manning~Eli|Ben Roethlisberger~Roethlisberger~Big Ben|Brett Favre~Favre|Terry Bradshaw~Bradshaw|Troy Aikman~Aikman|John Elway~Elway|Kurt Warner~Warner|Matthew Stafford~Stafford|Jalen Hurts~Hurts|Nick Foles~Foles|Joe Flacco~Flacco|Sam Darnold~Darnold|Bart Starr~Starr",
-        "60": "Phil Simms~Simms|Steve Young~Young|Roger Staubach~Staubach|Joe Namath~Namath|Jim McMahon~McMahon|Doug Williams|Jim Plunkett~Plunkett|Bob Griese~Griese|Len Dawson~Dawson|Johnny Unitas~Unitas|Ken Stabler~Stabler",
-        "85": "Jeff Hostetler~Hostetler|Trent Dilfer~Dilfer|Brad Johnson|Joe Theismann~Theismann",
+        "60": "Phil Simms~Simms|Steve Young~Young|Roger Staubach~Staubach|Joe Namath~Namath|Jim McMahon~McMahon|Doug Williams~Williams|Jim Plunkett~Plunkett|Bob Griese~Griese|Len Dawson~Dawson|Johnny Unitas~Unitas|Ken Stabler~Stabler",
+        "85": "Jeff Hostetler~Hostetler|Trent Dilfer~Dilfer|Brad Johnson~Johnson|Joe Theismann~Theismann",
         "100": "Mark Rypien~Rypien"
       }
     },

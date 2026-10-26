@@ -1,5 +1,6 @@
 import { PACKS, PLAY_PACKS, REVIEWED_PACKS, ORIGINAL_PLAY_PACKS, MIXED_PACKS, PARTY_PACKS, PACK_BY_ID, PARTY_IDS, canonicalQuestionId, answerCount } from './data.js';
 import {normalize,matchAnswer,resolveAnswer} from './answer-matching.js';
+import {LEGACY_REVIEWED_POOL_IDS} from './practice-pool-history.js';
 export {normalize,matchAnswer,resolveAnswer,typoDistance} from './answer-matching.js';
 import {hash,random,shuffle,balancedQuestionDeck,QUESTION_SELECTION_BUILD} from './question-selection.js';
 export {hash,random,shuffle} from './question-selection.js';
@@ -36,10 +37,14 @@ export function isSharedDailyRun(run,day=dateKey()){
 export function tier(points){return points>=100?{name:'KRILLION',icon:'✦',color:'rarity-krillion'}:points>=85?{name:'DEEP CUT',icon:'◆',color:'rarity-deepcut'}:points>=60?{name:'RARE',icon:'✧',color:'rarity-rare'}:points>=30?{name:'SCHOOLER',icon:'◈',color:'rarity-schooler'}:points>0?{name:'PLANKTON',icon:'·',color:'rarity-plankton'}:{name:'NO ECHO',icon:'×',color:'muted'};}
 
 export function partyDeck(rng=Math.random,seen=[]){const excluded=new Set(seen.map(canonicalQuestionId));return balancedQuestionDeck(PARTY_PACKS.filter(p=>!excluded.has(canonicalQuestionId(p.id))),{rng,recent:seen.slice(-6).map(id=>PACK_BY_ID.get(canonicalQuestionId(id))?.family).filter(Boolean)});}
-export function reshufflePracticeQueue(pending=[],rng=Math.random,previousSelection=null){
+export function reshufflePracticeQueue(pending=[],rng=Math.random,previousSelection=null,previousPoolIds=null){
  const ids=new Set(pending);
- // Filter saved queues against the current admitted pool. An update must not
- // append every generated recipe, or reintroduce already-played questions.
+ // Keep unplayed admitted IDs and add only IDs that did not exist in the
+ // previous pool. Played questions and retired recipes must stay absent.
+ if(Array.isArray(previousPoolIds)||previousSelection||pending.length){
+  const previous=new Set(Array.isArray(previousPoolIds)?previousPoolIds:LEGACY_REVIEWED_POOL_IDS);
+  for(const p of MIXED_PACKS)if(!previous.has(p.id))ids.add(p.id);
+ }
  return balancedQuestionDeck(MIXED_PACKS.filter(p=>ids.has(p.id)),{rng});
 }
 export function practiceDraw(pending=[],featured=null,rng=Math.random){

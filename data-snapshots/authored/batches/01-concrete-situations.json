@@ -16,7 +16,10 @@
         "Whipped cream",
         "Caramel sauce",
         "Oreo",
-        "Maraschino cherry"
+        "Maraschino cherry",
+        "Chocolate",
+        "Caramel",
+        "Nuts"
       ],
       "exclude": [
         "Broccoli",
@@ -27,8 +30,8 @@
         "https://www.bbcgoodfood.com/recipes/collection/ice-cream-sundae-recipes"
       ],
       "answers": {
-        "10": "Sprinkles~Hundreds and thousands|Chocolate sauce|Hot fudge~Fudge sauce|Whipped cream|Caramel sauce|Oreo~Oreos|Chocolate chips|Cherry~Cherries|Strawberry~Strawberries|Banana~Bananas",
-        "30": "Maraschino cherry~Maraschino cherries|Peanut~Peanuts|Almond~Almonds|Walnut~Walnuts|Pecan~Pecans|Crushed cookies~Cookie crumbs|Brownie~Brownies|M&M's~M and Ms|Peanut butter|Marshmallow~Marshmallows|Butterscotch sauce|Strawberry sauce|Raspberry~Raspberries|Blueberry~Blueberries|Honey|Coconut~Coconut flakes",
+        "10": "Sprinkles~Hundreds and thousands|Chocolate sauce~Chocolate|Hot fudge~Fudge sauce|Whipped cream|Caramel sauce~Caramel|Oreo~Oreos|Chocolate chips|Cherry~Cherries|Strawberry~Strawberries|Banana~Bananas",
+        "30": "Maraschino cherry~Maraschino cherries|Peanut~Peanuts~Nut~Nuts|Almond~Almonds|Walnut~Walnuts|Pecan~Pecans|Crushed cookies~Cookie crumbs|Brownie~Brownies|M&M's~M and Ms|Peanut butter|Marshmallow~Marshmallows|Butterscotch sauce|Strawberry sauce|Raspberry~Raspberries|Blueberry~Blueberries|Honey|Coconut~Coconut flakes",
         "60": "Cookie dough|Toffee~Toffee pieces|Gummy bear~Gummy bears|Gummy worm~Gummy worms|Reese's Pieces|Peanut butter cup~Peanut butter cups|Malted milk ball~Malted milk balls|Chocolate shavings|Chocolate curls|Hazelnut~Hazelnuts|Pistachio~Pistachios|Cashew~Cashews|Pineapple|Mango|Raspberry sauce|Chocolate shell~Magic Shell|Waffle cone pieces~Crushed waffle cone|Pretzel~Pretzels|Cereal|Granola|Maple syrup|Caramelized banana|Fudge brownie|Biscoff~Lotus Biscoff",
         "85": "Amarena cherry~Amarena cherries|Candied ginger~Crystallized ginger|Praline|Brittle~Nut brittle|Candied pecans|Caramel popcorn|Lemon curd|Passion fruit pulp|Freeze-dried raspberry|Freeze-dried strawberry|Cacao nibs|Sesame seeds|Halva|Tahini|Mochi pieces|Red bean paste~Anko|Boba~Tapioca pearls|Dulce de leche|Cotton candy~Candy floss|Popping candy~Pop Rocks|Turkish delight|Meringue pieces|Coulis~Fruit coulis",
         "100": "Feuilletine"
@@ -206,8 +209,8 @@
       "concept": "inflatable-objects",
       "family": "everyday",
       "topic": "Just add air",
-      "prompt": "Name an object designed to be inflated with air.",
-      "scope": "Common inflatable objects and named inflatable equipment types count. Objects merely containing an empty cavity do not qualify.",
+      "prompt": "Name an object designed to be inflated.",
+      "scope": "Common inflatable objects and named inflatable equipment types count, whether filled with air, helium or another gas. Objects merely containing an empty cavity do not qualify.",
       "format": "situations",
       "rationale": "A concrete familiar entry point and a wider factual tail, following the saved review; this asks for a different activity or object relationship rather than a tag combination.",
       "familiar": [
@@ -216,7 +219,22 @@
         "Football",
         "Tire",
         "Pool float",
-        "Bouncy castle"
+        "Bouncy castle",
+        "Beach ball",
+        "Basketball",
+        "Weather balloon",
+        "Blimp",
+        "Airship",
+        "Blood pressure cuff",
+        "Inflatable life jacket",
+        "Buoyancy compensator",
+        "Ball",
+        "Mattress",
+        "Boat",
+        "Raft",
+        "Pillow",
+        "Life jacket",
+        "Airbag"
       ],
       "exclude": [
         "Brick",
@@ -224,15 +242,17 @@
       ],
       "references": [
         "https://www.britannica.com/technology/pneumatic-device",
-        "https://www.cpsc.gov/Safety-Education/Safety-Guides/Sports-Fitness-and-Recreation/Moonwalks-and-Bounce-Houses"
+        "https://www.cpsc.gov/Safety-Education/Safety-Guides/Sports-Fitness-and-Recreation/Moonwalks-and-Bounce-Houses",
+        "https://www.nasa.gov/news-release/nasa-launches-new-technology-an-inflatable-heat-shield/"
       ],
       "answers": {
-        "10": "Balloon|Tire~Tyre|Air mattress~Air bed|Beach ball|Football~Soccer ball|Basketball|Pool float~Pool toy|Bouncy castle~Bounce house~Moonwalk",
-        "30": "Volleyball|American football|Rugby ball|Kickball|Dodgeball|Exercise ball~Yoga ball~Stability ball|Swim ring~Swimming ring~Inner tube|Armband~Water wing~Water wings|Inflatable boat~Rubber boat|Inflatable raft~Life raft|Paddling pool~Kiddie pool|Inflatable hot tub|Inflatable sofa|Inflatable chair|Inflatable pillow|Bicycle tire~Bicycle tyre|Car tire~Car tyre|Motorcycle tire~Motorcycle tyre",
-        "60": "Inflatable kayak|Inflatable canoe|Inflatable paddleboard~Inflatable SUP|Inflatable life jacket~Inflatable life vest|Inflatable tent|Air beam tent|Inflatable camping mat~Self-inflating sleeping pad|Inflatable slide|Inflatable obstacle course|Inflatable trampoline|Inflatable costume|Advertising blimp|Parade balloon|Weather balloon|Hot-air balloon~Hot air balloon|Helium balloon|Blimp|Airship|Zorb~Zorbing ball|Bubble suit~Bubble football suit|Ski airbag|Avalanche airbag|Blood pressure cuff~Sphygmomanometer cuff|Pneumatic splint~Air splint|Air cushion|Air jack|Inflatable dock|Floating trampoline|Inflatable water park|Inflatable cooler|Pneumatic dunnage bag~Dunnage bag|Inflatable movie screen|Inflatable arch|Inflatable finish line",
+        "10": "Balloon|Tire~Tyre|Air mattress~Air bed~Mattress|Beach ball~Ball|Football~Soccer ball|Basketball|Pool float~Pool toy|Bouncy castle~Bounce house~Moonwalk|Airbag~Car airbag",
+        "30": "Volleyball|American football|Rugby ball|Kickball|Dodgeball|Exercise ball~Yoga ball~Stability ball|Swim ring~Swimming ring~Inner tube|Armband~Water wing~Water wings~Armbands|Inflatable boat~Rubber boat~Dinghy~Rubber dinghy~Boat|Inflatable raft~Life raft~Raft|Paddling pool~Kiddie pool|Inflatable hot tub|Inflatable sofa|Inflatable chair|Inflatable pillow~Pillow|Bicycle tire~Bicycle tyre|Car tire~Car tyre|Motorcycle tire~Motorcycle tyre",
+        "60": "Inflatable kayak|Inflatable canoe|Inflatable paddleboard~Inflatable SUP~Paddleboard~Stand-up paddleboard|Inflatable life jacket~Inflatable life vest~Life jacket~Life vest|Inflatable tent|Air beam tent|Inflatable camping mat~Self-inflating sleeping pad|Inflatable slide|Inflatable obstacle course|Inflatable trampoline|Inflatable costume|Advertising blimp|Parade balloon|Weather balloon|Hot-air balloon~Hot air balloon|Helium balloon|Blimp|Airship|Zorb~Zorbing ball|Bubble suit~Bubble football suit|Ski airbag|Avalanche airbag|Blood pressure cuff~Sphygmomanometer cuff|Pneumatic splint~Air splint|Air cushion|Air jack|Inflatable dock|Floating trampoline|Inflatable water park|Inflatable cooler|Pneumatic dunnage bag~Dunnage bag|Inflatable movie screen|Inflatable arch|Inflatable finish line",
         "85": "Lifting bag~Air lifting bag|Buoyancy compensator~BCD|Lift bag~Diving lift bag|Pneumatic fender~Yokohama fender|Inflatable packraft~Packraft|Inflatable pontoon|Inflatable landing bag|Air landing mat|Inflatable decoy|Inflatable dam~Rubber dam|Inflatable plug|Inflatable pipe stopper|Pneumatic sealing bladder|Inflatable rib boat~Rigid inflatable boat|Air-supported dome~Air dome|Inflatable evacuation slide~Aircraft evacuation slide",
         "100": "Inflatable reentry decelerator"
-      }
+      },
+      "reviewNotes": "Reviewed concrete tools/items and their scope after the expanded common-guess sweep; accepted spellings are real names or contextual names, never manufactured initials. Uncertain pyxis eligibility is explicitly held rather than becoming a rare answer."
     },
     {
       "id": "authored-sewing-kit",
@@ -249,7 +269,19 @@
         "Thimble",
         "Scissors",
         "Seam ripper",
-        "Pin"
+        "Pin",
+        "Ruler",
+        "Pencil",
+        "Chalk",
+        "Sewing scissors",
+        "Fabric glue",
+        "Safety pin",
+        "Bobbin",
+        "Iron-on patch",
+        "Velcro",
+        "Fabric",
+        "Zipper",
+        "Tape measure"
       ],
       "exclude": [
         "Microwave",
@@ -257,15 +289,17 @@
       ],
       "references": [
         "https://www.singer.com/collections/sewing-accessories",
-        "https://www.brother-usa.com/home/sewing-embroidery/accessories"
+        "https://www.brother-usa.com/home/sewing-embroidery/accessories",
+        "https://simflex-gauge.com/"
       ],
       "answers": {
-        "10": "Needle~Sewing needle|Thread~Sewing thread|Scissors|Pin~Pins~Straight pin|Sewing machine|Button~Buttons|Tape measure~Measuring tape",
-        "30": "Thimble|Seam ripper|Pincushion~Pin cushion|Safety pin~Safety pins|Fabric~Cloth|Bobbin|Zipper~Zip|Elastic|Tailor's chalk~Tailors chalk|Needle threader|Iron|Ironing board|Ribbon|Patch~Fabric patch|Sewing pattern~Pattern|Hem tape~Hemming tape|Dressmaking shears~Fabric shears",
-        "60": "Embroidery hoop|Embroidery floss|Embroidery needle|Darning needle|Darning mushroom|Darning egg|Tracing wheel|Tracing paper|Rotary cutter|Cutting mat|Pinking shears|Seam gauge|Seam roller|Presser foot|Walking foot|Zipper foot|Buttonhole foot|Bodkin|Awl|Stiletto|Beeswax|Thread wax|Interfacing|Batting|Bias tape~Bias binding|Twill tape|Hook and eye|Snap fastener~Press stud|Fusible web|Serger~Overlocker|Cone thread|Sewing clip~Wonder clip|Basting thread|Fabric marker|Disappearing ink pen|Water-soluble pen|Dress form~Tailor's dummy~Dressmaker's dummy|French curve|Hip curve|Seam roll|Tailor's ham~Tailors ham",
+        "10": "Needle~Sewing needle|Thread~Sewing thread|Scissors~Sewing scissors|Pin~Pins~Straight pin|Sewing machine|Button~Buttons|Tape measure~Measuring tape",
+        "30": "Thimble|Seam ripper|Pincushion~Pin cushion|Safety pin~Safety pins|Fabric~Cloth|Bobbin|Zipper~Zip|Elastic|Tailor's chalk~Tailors chalk~Chalk|Needle threader|Iron|Ironing board|Ribbon|Patch~Fabric patch~Iron-on patch|Sewing pattern~Pattern|Hem tape~Hemming tape|Dressmaking shears~Fabric shears|Ruler~Sewing ruler|Pencil|Fabric glue|Fabric dye|Buttonhole cutter|Hook-and-loop tape~Velcro",
+        "60": "Embroidery hoop|Embroidery floss|Embroidery needle|Darning needle|Darning mushroom|Darning egg|Tracing wheel|Tracing paper|Rotary cutter|Cutting mat|Pinking shears|Seam gauge|Seam roller|Presser foot|Walking foot|Zipper foot|Buttonhole foot|Bodkin|Awl|Stiletto|Beeswax|Thread wax|Interfacing|Batting|Bias tape~Bias binding|Twill tape|Hook and eye|Snap fastener~Press stud|Fusible web|Serger~Overlocker|Cone thread|Sewing clip~Wonder clip~Sewing clips|Basting thread|Fabric marker|Disappearing ink pen|Water-soluble pen|Dress form~Tailor's dummy~Dressmaker's dummy|French curve|Hip curve|Seam roll|Tailor's ham~Tailors ham|Quilting ruler|Seam allowance ruler|Pattern paper|Pattern scissors|Tracing pencil|Chalk pencil|Tailoring canvas|Sew-in label|Grommet~Eyelet|Grommet setter|Rivet setter|Buttonhole elastic|Applique patch|Embroidery stabilizer",
         "85": "Tailor's clapper~Tailors clapper|Sleeve board|Point turner|Button shank tool|Loop turner|Rouleau turner|Hemmer foot|Ruffler foot|Bias tape maker|Needle case|Thread snips~Embroidery scissors|Thread stand|Spool cap|Basting spray|Bobbin winder|Basting glue|Appliqué scissors~Applique scissors|Sewing machine oil|Needle plate|Feed dog|Sewing machine belt|Pattern weights|Pattern notcher",
         "100": "Simflex gauge~Buttonhole spacing gauge"
-      }
+      },
+      "reviewNotes": "Reviewed concrete tools/items and their scope after the expanded common-guess sweep; accepted spellings are real names or contextual names, never manufactured initials. Uncertain pyxis eligibility is explicitly held rather than becoming a rare answer."
     },
     {
       "id": "authored-garden-tools",
@@ -282,7 +316,28 @@
         "Hose",
         "Watering can",
         "Trowel",
-        "Pruning shears"
+        "Pruning shears",
+        "Chainsaw",
+        "Scissors",
+        "Gloves",
+        "Shears",
+        "Saw",
+        "Machete",
+        "Sickle",
+        "Scythe",
+        "Brush cutter",
+        "Wood chipper",
+        "Tiller",
+        "Edger",
+        "Wheelbarrow",
+        "Lawnmower",
+        "Shoes",
+        "Shoe",
+        "Boots",
+        "Goggles",
+        "Hat",
+        "Apron",
+        "Safety glasses"
       ],
       "exclude": [
         "Rose",
@@ -290,15 +345,17 @@
       ],
       "references": [
         "https://www.rhs.org.uk/advice/beginners-guide/tools",
-        "https://www.fiskars.com/en-us/gardening-and-yard-care/products"
+        "https://www.fiskars.com/en-us/gardening-and-yard-care/products",
+        "https://www.faithfulltools.com/pdf-cat/268-Faithfull-catalogue-2018.pdf"
       ],
       "answers": {
-        "10": "Shovel|Spade|Rake|Hose~Garden hose|Watering can|Trowel|Lawn mower~Lawnmower|Wheelbarrow|Pruning shears~Secateurs~Pruner",
-        "30": "Hoe~Garden hoe|Garden fork~Digging fork|Hand fork|Lopper~Loppers|Hedge trimmer|Hedge shears|Sprinkler|Leaf blower|String trimmer~Weed eater~Strimmer|Gardening gloves~Garden gloves|Bucket|Plant pot~Flowerpot|Seed tray|Plant label~Plant marker|Spray bottle|Garden kneeler|Pruning saw|Compost bin",
-        "60": "Dibber~Dibble|Bulb planter|Edging iron~Lawn edger|Lawn aerator|Scarifier~Dethatcher|Soil sieve~Garden sieve|Garden cart|Hori hori~Soil knife|Weeding knife|Weeder|Dutch hoe|Draw hoe|Stirrup hoe~Oscillating hoe|Cultivator|Rotavator~Rototiller|Broadfork|Mattock|Pickaxe~Pickax|Post-hole digger|Garden auger|Hand spreader|Seed spreader|Fertilizer spreader|Propagator|Cold frame|Greenhouse|Cloche|Garden fleece~Horticultural fleece|Bird netting|Plant support|Trellis|Garden stake|Garden twine|Soil thermometer|Soil pH meter|Moisture meter|Rain barrel~Water butt|Watering wand|Drip irrigation line|Soaker hose|Hose reel|Hose connector|Garden scissors|Pole pruner|Pole saw",
-        "85": "Grafting knife|Budding knife|Bonsai wire|Root hook|Concave cutter|Bonsai shears|Sod cutter~Turf cutter|Lawn roller|Topiary shears|Fruit picker|Berry picker|Peat pot|Root trainer|Potting bench|Potting scoop|Potting mat|Seed dispenser|Seed sower|Flame weeder|Pressure sprayer|Compost aerator|Compost thermometer|Compost tumbler|Garden trug|Daisy grubber|Long-handled bulb planter",
+        "10": "Shovel|Spade|Rake|Hose~Garden hose|Watering can|Trowel|Lawn mower~Lawnmower|Wheelbarrow|Pruning shears~Secateurs~Pruner~Shears~Pruners",
+        "30": "Hoe~Garden hoe|Garden fork~Digging fork|Hand fork|Lopper~Loppers|Hedge trimmer~Hedge cutter|Hedge shears|Sprinkler|Leaf blower|String trimmer~Weed eater~Strimmer|Gardening gloves~Garden gloves~Gloves|Bucket|Plant pot~Flowerpot|Seed tray|Plant label~Plant marker|Spray bottle|Garden kneeler~Kneeler|Pruning saw~Saw|Compost bin|Chainsaw|Brush cutter|Wood chipper~Garden shredder|Machete|Sickle|Scythe|Grass shears|Knee pads~Kneepads|Lawn vacuum~Leaf vacuum|Mulcher|Garden knife|Gardening shoes~Garden shoes~Shoes~Shoe|Gardening boots~Garden boots~Boots~Boot|Safety goggles~Goggles|Safety glasses|Gardening apron~Garden apron~Apron|Garden hat~Gardening hat~Hat",
+        "60": "Dibber~Dibble~Seed dibbler|Bulb planter|Edging iron~Lawn edger~Edger|Lawn aerator|Scarifier~Dethatcher|Soil sieve~Garden sieve|Garden cart|Hori hori~Soil knife|Weeding knife|Weeder|Dutch hoe|Draw hoe|Stirrup hoe~Oscillating hoe|Cultivator|Rotavator~Rototiller~Tiller|Broadfork|Mattock|Pickaxe~Pickax|Post-hole digger|Garden auger|Hand spreader|Seed spreader|Fertilizer spreader|Propagator|Cold frame|Greenhouse|Cloche|Garden fleece~Horticultural fleece|Bird netting|Plant support|Trellis|Garden stake|Garden twine|Soil thermometer|Soil pH meter|Moisture meter|Rain barrel~Water butt|Watering wand|Drip irrigation line|Soaker hose|Hose reel|Hose connector|Garden scissors~Scissors|Pole pruner|Pole saw|Stump grinder|Pole hedge trimmer|Grass collector|Garden broom|Soil scoop|Garden basket|Trench spade|Drain spade|Border spade|Felling axe|Hatchet|Log splitter|Splitting maul",
+        "85": "Grafting knife|Budding knife|Bonsai wire|Root hook|Concave cutter|Bonsai shears|Sod cutter~Turf cutter|Lawn roller~Garden roller|Topiary shears|Fruit picker|Berry picker|Peat pot|Root trainer|Potting bench|Potting scoop|Potting mat|Seed dispenser|Seed sower|Flame weeder|Pressure sprayer|Compost aerator|Compost thermometer|Compost tumbler|Garden trug|Daisy grubber|Long-handled bulb planter",
         "100": "Swoe"
-      }
+      },
+      "reviewNotes": "Reviewed concrete tools/items and their scope after the expanded common-guess sweep; accepted spellings are real names or contextual names, never manufactured initials. Uncertain pyxis eligibility is explicitly held rather than becoming a rare answer."
     },
     {
       "id": "authored-laundry-supplies",
@@ -306,7 +363,7 @@
       "family": "everyday",
       "topic": "Spin cycle",
       "prompt": "Name an item or product used to wash, dry or care for laundry.",
-      "scope": "Laundry appliances, supplies, stain treatments and clothes-care tools count. A garment itself is not a laundry supply.",
+      "scope": "Laundry appliances, supplies, stain treatments and clothes-care tools count, as do named product types and established laundry-product brands, including historical ones. A garment itself is not a laundry supply.",
       "format": "situations",
       "rationale": "A concrete familiar entry point and a wider factual tail, following the saved review; this asks for a different activity or object relationship rather than a tag combination.",
       "familiar": [
@@ -315,7 +372,34 @@
         "Clothes dryer",
         "Clothesline",
         "Clothespin",
-        "Iron"
+        "Iron",
+        "Soap",
+        "Dryer",
+        "Bucket",
+        "Sink",
+        "Sponge",
+        "Fabric conditioner",
+        "Basket",
+        "Detergent pods",
+        "Drying rack",
+        "Washboard",
+        "Hanger",
+        "Water",
+        "Tide",
+        "Gain",
+        "Persil",
+        "OxiClean",
+        "Vanish",
+        "Downy",
+        "Bounce",
+        "Clorox",
+        "Woolite",
+        "Dreft",
+        "Ariel",
+        "All",
+        "Arm & Hammer",
+        "Method",
+        "Rit"
       ],
       "exclude": [
         "Shirt",
@@ -323,15 +407,18 @@
       ],
       "references": [
         "https://www.cleaninginstitute.org/cleaning-tips/clothes",
-        "https://www.tide.com/en-us/how-to-wash-clothes"
+        "https://www.tide.com/en-us/how-to-wash-clothes",
+        "https://us.pg.com/brands/",
+        "https://www.unilever.com/brands/home-care/omo/"
       ],
       "answers": {
-        "10": "Detergent~Laundry detergent|Washing machine~Washer|Clothes dryer~Tumble dryer|Iron|Ironing board|Laundry basket|Fabric softener|Bleach",
-        "30": "Clothesline~Washing line|Clothespin~Clothes peg~Peg|Drying rack~Clothes horse~Clothes airer|Dryer sheet~Dryer sheets|Stain remover|Laundry pod~Detergent pod|Laundry powder~Washing powder|Laundry liquid~Liquid detergent|Laundry bag|Mesh wash bag|Hamper|Hanger~Clothes hanger|Lint roller|Lint brush|Steamer~Garment steamer|Starch~Laundry starch|Washcloth|Washboard|Laundry soap|Dryer ball~Dryer balls|Wool dryer ball",
-        "60": "Oxygen bleach~Color-safe bleach|Chlorine bleach|Bluing~Laundry bluing|Washing soda~Sodium carbonate|Borax|White vinegar|Baking soda~Bicarbonate of soda|Laundry sanitizer~Laundry disinfectant|Fabric refresher|Wrinkle-release spray~Wrinkle releaser|Delicates detergent|Wool wash|Prewash spray|Stain stick|Enzyme pretreatment|Color catcher~Colour catcher|Dye remover~Color run remover|Whitening booster|Water softener|Dry-cleaning kit|Dry-cleaning solvent|Lint remover~Fabric shaver|Sweater stone~Pumice fabric stone|Pressing cloth|Sleeve board|Wash tub~Laundry tub|Wash bag for shoes|Sock clip~Sock clips|Bra wash bag|Sweater drying rack|Clothes brush",
+        "10": "Detergent~Laundry detergent|Washing machine~Washer|Clothes dryer~Tumble dryer~Dryer|Iron|Ironing board|Laundry basket~Basket|Fabric softener~Fabric conditioner|Bleach|Water|Tide|Gain|Persil|OxiClean|Vanish|Downy|Bounce|Clorox",
+        "30": "Clothesline~Washing line|Clothespin~Clothes peg~Peg|Drying rack~Clothes horse~Clothes airer|Dryer sheet~Dryer sheets|Stain remover|Laundry pod~Detergent pod~Detergent pods~Laundry pods|Laundry powder~Washing powder|Laundry liquid~Liquid detergent|Laundry bag|Mesh wash bag|Hamper|Hanger~Clothes hanger|Lint roller|Lint brush|Steamer~Garment steamer|Starch~Laundry starch|Washcloth|Washboard~Hand wash board|Laundry soap~Soap|Dryer ball~Dryer balls|Wool dryer ball|Bucket|Laundry sink~Sink|Laundry brush~Clothes scrubbing brush|Scrub brush|Sponge|Drying cabinet|All~All laundry detergent~All detergent|Ariel|Surf|Woolite|Dreft|Fairy laundry detergent~Fairy Non Bio|Lenor|Comfort|Snuggle|Arm & Hammer~Arm & Hammer laundry detergent~Arm and Hammer~Arm and Hammer detergent|Lysol laundry sanitizer|Dettol laundry cleanser|Sunlight laundry detergent|Fels-Naptha~Fels Naptha|Zote|Ecover|Seventh Generation|Method~Method laundry detergent|Mrs. Meyer's Clean Day~Mrs Meyers|Earth Breeze|Tru Earth|ECOS|The Laundress|Carbona|Dr. Beckmann~Dr Beckmann|Dylon|Rit~Rit dye|Nellie's Laundry Soda~Nellies|Molly's Suds~Mollys Suds|Dirty Labs|Dropps|Blueland laundry detergent|Napisan|Sard Wonder Soap|White King|Daz|Bold laundry detergent|Radion|Dixan|Dash laundry detergent|Le Chat laundry detergent|Formil|Almat|OMO|Skip laundry detergent~Skip|Surf Excel|Breeze laundry detergent~Breeze|Rinso|Purex|Cheer|Drive laundry detergent~Drive",
+        "60": "Oxygen bleach~Color-safe bleach|Chlorine bleach|Bluing~Laundry bluing|Washing soda~Sodium carbonate~Laundry soda crystals|Borax|White vinegar|Baking soda~Bicarbonate of soda|Laundry sanitizer~Laundry disinfectant|Fabric refresher|Wrinkle-release spray~Wrinkle releaser|Delicates detergent|Wool wash|Prewash spray|Stain stick|Enzyme pretreatment|Color catcher~Colour catcher|Dye remover~Color run remover|Whitening booster|Water softener|Dry-cleaning kit|Dry-cleaning solvent|Lint remover~Fabric shaver|Sweater stone~Pumice fabric stone|Pressing cloth|Sleeve board|Wash tub~Laundry tub~Washbasin|Wash bag for shoes|Sock clip~Sock clips|Bra wash bag|Sweater drying rack|Clothes brush|Detergent sheet~Laundry detergent sheet|Laundry detergent bar|Castile soap|Soap flakes|Garment bag|Iron descaler|Laundry tap|Clothesline prop|Clothesline pulley|Laundry soak|Laundry stain pen|Suede brush|Hydrogen peroxide|Laundry scent booster~Scent beads|Detergent refill|Laundry soap nut~Soap nuts",
         "85": "Mangle~Wringer|Clothes press~Laundry press|Steam press|Iron cleaner|Soleplate cleaner|Laundry blue bag|Laundry sour|Pressing mitt|Tailor's ham~Tailors ham|Dryer vent brush|Laundry trolley|Hanging peg dryer~Sock airer|Laundry sorting bin|Sew-in laundry label|Laundry marking pen|Wash ball~Laundry ball|Cedar block~Cedar blocks|Moth repellent~Mothballs|Dehumidifying clothes dryer",
         "100": "Trouser press~Pants press"
-      }
+      },
+      "reviewNotes": "Reviewed concrete tools/items and their scope after the expanded common-guess sweep; accepted spellings are real names or contextual names, never manufactured initials. Uncertain pyxis eligibility is explicitly held rather than becoming a rare answer."
     },
     {
       "id": "authored-objects-with-hinges",
@@ -348,7 +435,20 @@
         "Gate",
         "Briefcase",
         "Toilet seat",
-        "Piano"
+        "Piano",
+        "Stapler",
+        "Car hood",
+        "Car boot",
+        "Glove box",
+        "Barbecue",
+        "Hole punch",
+        "Lid",
+        "Printer",
+        "Scanner",
+        "Tailgate",
+        "Fuel door",
+        "Wheelchair",
+        "Folding stroller"
       ],
       "exclude": [
         "Soccer ball",
@@ -356,15 +456,23 @@
       ],
       "references": [
         "https://www.britannica.com/technology/hinge",
-        "https://www.hafele.com/us/en/info/products/hardware/hinges/57687/"
+        "https://www.hafele.com/us/en/info/products/hardware/hinges/57687/",
+        "https://hardwoodartisans.com/products/butterfly-table"
       ],
       "answers": {
-        "10": "Door|Gate|Laptop|Cabinet~Cupboard|Box|Chest|Window|Toilet seat|Briefcase",
-        "30": "Jewelry box~Jewellery box|Toolbox~Tool box|Suitcase|Trunk|Cooler~Ice chest|Refrigerator~Fridge|Freezer|Oven|Microwave|Dishwasher|Washing machine|Clothes dryer~Tumble dryer|Piano|Grand piano|Upright piano|Spectacles~Eyeglasses~Glasses|Locket|Folding chair|Folding table|Garage door|Car door|School locker~Locker|Laptop screen|Clamshell phone~Flip phone",
-        "60": "Sunglasses|Watch clasp|Bracelet clasp|Folding knife~Pocketknife|Swiss Army knife|Multi-tool~Multitool|Ladder~Stepladder|Folding bed|Murphy bed~Wall bed|Ironing board|Folding screen|Room divider|Shutter|Hatch|Trapdoor~Trap door|Attic hatch|Pet door~Cat flap|Dog crate|Birdcage~Bird cage|Garden shed|Mailbox|Bin lid~Trash can lid|Dustbin~Trash can|Bread box~Breadbin|Butter dish|Tea chest|Cigar box|Humidor|Lunchbox|Hinged picture frame|Triptych|Diptych|Pillbox|Compact mirror~Makeup compact|Casket~Coffin|Folding ruler~Carpenter's rule|Clamshell grill~Contact grill|Waffle iron|Sandwich maker",
-        "85": "Butterfly table|Drop-leaf table|Secretary desk|Hinged music stand|Razor case|Spectacle case~Glasses case|Travel sewing case|Reliquary|Book press|Camera battery door|Film camera back|Printer lid|Scanner lid|Copier lid|Welding helmet visor|Motorcycle helmet visor|Fireplace screen|Bellows camera|Folding bicycle|Hinged splint|Lid support chest|Cockpit canopy|Pyx",
-        "100": "Pyxis~Hinged pyxis"
-      }
+        "10": "Door|Gate|Laptop|Cabinet~Cupboard|Box|Chest|Window|Toilet seat|Briefcase|Stapler|Car hood~Bonnet|Car trunk~Car boot|Glove box~Glove compartment|Barbecue grill~Barbecue~BBQ grill",
+        "30": "Jewelry box~Jewellery box|Toolbox~Tool box|Suitcase|Trunk|Cooler~Ice chest|Refrigerator~Fridge|Freezer|Oven|Microwave|Dishwasher|Washing machine|Clothes dryer~Tumble dryer|Piano|Grand piano|Upright piano|Spectacles~Eyeglasses~Glasses|Locket|Folding chair|Folding table|Garage door|Car door|School locker~Locker|Laptop screen|Clamshell phone~Flip phone|Hole punch~Paper punch|Lid~Hinged lid|Printer|Scanner|Copier|Tailgate|Fuel door~Fuel filler flap|Car sun visor|Folding stroller~Pushchair|Wheelchair|Folding umbrella|Folding wagon|Folding shopping trolley|Clamshell packaging|Hinged food container",
+        "60": "Sunglasses|Watch clasp|Bracelet clasp|Folding knife~Pocketknife|Swiss Army knife|Multi-tool~Multitool|Ladder~Stepladder|Folding bed|Murphy bed~Wall bed|Ironing board|Folding screen|Room divider|Shutter|Hatch|Trapdoor~Trap door|Attic hatch|Pet door~Cat flap|Dog crate|Birdcage~Bird cage|Garden shed|Mailbox|Bin lid~Trash can lid|Dustbin~Trash can|Bread box~Breadbin|Butter dish|Tea chest|Cigar box|Humidor|Lunchbox|Hinged picture frame|Triptych|Diptych|Pillbox|Compact mirror~Makeup compact|Casket~Coffin|Folding ruler~Carpenter's rule|Clamshell grill~Contact grill|Waffle iron|Sandwich maker|Folding clothes rack|Portable easel|Folding hand truck|Tablet keyboard case|Keyboard cover|Screen door|Storm door|Security gate|Shed door|Dog flap|Hatchback|Hospital bed|Reclining chair~Recliner|Folding wheelchair|Pocket mirror|Lipstick compact|Car bonnet latch|Hinged baking tin",
+        "85": "Drop-leaf table|Secretary desk|Hinged music stand|Razor case|Spectacle case~Glasses case|Travel sewing case|Reliquary|Book press|Camera battery door|Film camera back|Printer lid|Scanner lid|Copier lid|Welding helmet visor|Motorcycle helmet visor|Fireplace screen|Bellows camera|Folding bicycle|Hinged splint|Lid support chest|Cockpit canopy|Pyx",
+        "100": "Butterfly table~Butterfly-leaf table"
+      },
+      "reviewNotes": "Reviewed concrete tools/items and their scope after the expanded common-guess sweep; accepted spellings are real names or contextual names, never manufactured initials. Uncertain pyxis eligibility is explicitly held rather than becoming a rare answer.",
+      "reviewHolds": [
+        {
+          "name": "Pyxis~Hinged pyxis",
+          "reason": "A generic ancient pyxis normally has a removable lid; held until the hinged/common-version claim has direct evidence."
+        }
+      ]
     },
     {
       "id": "authored-kitchen-hand-tools",
@@ -372,7 +480,7 @@
       "family": "everyday",
       "topic": "Kitchen drawer",
       "prompt": "Name a hand tool or utensil used to prepare or serve food.",
-      "scope": "Handheld kitchen implements and utensils count. Large powered appliances and foods do not qualify.",
+      "scope": "Kitchen hand tools, utensils, serving implements and nonpowered cookware count. Small measuring tools used in food preparation also count. Large powered appliances and foods do not qualify.",
       "format": "situations",
       "rationale": "A concrete familiar entry point and a wider factual tail, following the saved review; this asks for a different activity or object relationship rather than a tag combination.",
       "familiar": [
@@ -381,7 +489,23 @@
         "Peeler",
         "Ladle",
         "Can opener",
-        "Rolling pin"
+        "Rolling pin",
+        "Cutting board",
+        "Chopping board",
+        "Bowl",
+        "Mixing bowl",
+        "Plate",
+        "Pot",
+        "Pan",
+        "Frying pan",
+        "Saucepan",
+        "Wok",
+        "Baking tray",
+        "Kitchen scale",
+        "Spork",
+        "Salad spinner",
+        "Ice cube tray",
+        "Oven mitt"
       ],
       "exclude": [
         "Refrigerator",
@@ -389,15 +513,17 @@
       ],
       "references": [
         "https://www.oxo.com/shop/kitchenware.html",
-        "https://www.bbcgoodfood.com/review/best-kitchen-gadgets"
+        "https://www.bbcgoodfood.com/review/best-kitchen-gadgets",
+        "https://www.oxo.com/shop/kitchenware/cooking-baking/cutting-boards.html"
       ],
       "answers": {
-        "10": "Knife~Kitchen knife|Fork|Spoon|Spatula|Whisk|Peeler~Vegetable peeler|Can opener~Tin opener|Tongs|Ladle|Rolling pin",
-        "30": "Grater|Colander|Sieve~Strainer|Measuring cup|Measuring spoon|Pizza cutter|Potato masher|Garlic press|Corkscrew|Bottle opener|Ice cream scoop|Wooden spoon|Slotted spoon|Serving spoon|Soup spoon|Teaspoon|Tablespoon|Chopsticks|Kitchen scissors~Kitchen shears|Pastry brush|Basting brush|Baster~Turkey baster|Meat tenderizer~Meat mallet|Mortar and pestle|Pestle|Mortar|Salad servers|Cake server|Fish slice|Turner|Bench scraper~Dough scraper",
-        "60": "Mandoline|Zester|Microplane|Lemon squeezer~Citrus press|Citrus reamer|Melon baller|Apple corer|Apple slicer|Cherry pitter|Avocado slicer|Pineapple corer|Egg slicer|Egg separator|Egg whisk|Egg timer|Kitchen thermometer~Meat thermometer|Probe thermometer|Sugar thermometer~Candy thermometer|Pastry wheel|Pastry cutter|Pastry blender|Dough whisk~Danish dough whisk|Dough docker|Biscuit cutter~Cookie cutter|Biscuit stamp|Ravioli cutter|Pasta fork~Spaghetti server|Pasta tongs|Cheese slicer|Cheese plane|Cheese knife|Oyster knife|Clam knife|Fish scaler|Fish tweezers|Boning knife|Fillet knife|Paring knife|Bread knife|Chef's knife~Chefs knife|Carving knife|Cleaver|Santoku|Carving fork|Poultry shears|Kitchen funnel|Skimmer|Spider strainer~Spider|Slotted turner|Potato ricer|Food mill|Manual egg beater|Manual coffee grinder|Pepper mill|Nutcracker|Seafood cracker|Lobster pick|Toast tongs|Tea infuser|Tea strainer|Honey dipper|Butter knife|Butter curler|Corn cob holder~Corn holder",
+        "10": "Knife~Kitchen knife|Fork|Spoon|Spatula|Whisk~Egg whisk|Peeler~Vegetable peeler|Can opener~Tin opener|Tongs|Ladle|Rolling pin|Cutting board~Chopping board|Bowl|Mixing bowl|Plate~Dinner plate|Pot~Cooking pot|Pan|Frying pan~Skillet|Saucepan|Baking tray~Baking sheet|Spork",
+        "30": "Grater|Colander|Sieve~Strainer|Measuring cup|Measuring spoon|Pizza cutter|Potato masher|Garlic press|Corkscrew|Bottle opener|Ice cream scoop|Wooden spoon|Slotted spoon|Serving spoon|Soup spoon|Teaspoon|Tablespoon|Chopsticks|Kitchen scissors~Kitchen shears|Pastry brush|Basting brush|Baster~Turkey baster|Meat tenderizer~Meat mallet|Mortar and pestle|Pestle|Mortar|Salad servers|Cake server|Fish slice|Turner|Bench scraper~Dough scraper~Dough cutter|Wok|Dutch oven|Roasting pan|Baking pan|Cake tin~Cake pan|Loaf tin~Loaf pan|Muffin tin~Muffin pan|Pie tin~Pie dish|Ramekin|Kitchen scale~Kitchen scales|Serving platter~Platter|Serving bowl|Salad bowl|Salad spinner|Squeeze bottle~Squeezy bottle|Cookie press|Oven mitt~Oven glove|Pot holder~Potholder|Spiralizer",
+        "60": "Mandoline|Zester|Microplane|Lemon squeezer~Citrus press|Citrus reamer|Melon baller|Apple corer|Apple slicer|Cherry pitter|Avocado slicer|Pineapple corer|Egg slicer|Egg separator|Egg timer|Kitchen thermometer~Meat thermometer|Probe thermometer|Sugar thermometer~Candy thermometer|Pastry wheel|Pastry cutter|Pastry blender|Dough whisk~Danish dough whisk|Dough docker|Biscuit cutter~Cookie cutter|Biscuit stamp|Ravioli cutter|Pasta fork~Spaghetti server|Pasta tongs|Cheese slicer|Cheese plane|Cheese knife|Oyster knife|Clam knife|Fish scaler|Fish tweezers|Boning knife|Fillet knife|Paring knife|Bread knife|Chef's knife~Chefs knife|Carving knife|Cleaver|Santoku|Carving fork|Poultry shears|Kitchen funnel|Skimmer|Spider strainer~Spider|Slotted turner|Potato ricer|Food mill|Manual egg beater|Manual coffee grinder|Pepper mill|Nutcracker|Seafood cracker|Lobster pick|Toast tongs|Tea infuser|Tea strainer|Honey dipper|Butter knife|Butter curler|Corn cob holder~Corn holder|Baking mat~Silicone baking mat|Pastry mat|Dough bowl scraper|Scraper spatula|Silicone spatula|Spatula spoon~Spoonula|Fish spatula|Offset turner|Burger press|Meat press|Egg ring|Egg cup|Poached egg mould~Poached egg mold|Popsicle mould~Popsicle mold~Ice pop mold|Ice cube tray|Ice tongs|Ice pick|Ice scoop|Measuring jug|Gravy boat|Sauce boat|Sauce spoon|Sugar tongs|Sugar spoon|Coffee scoop|Tea scoop|Tea ball|Vegetable scrubber|Coconut scraper|Coconut grater|Chopping bowl|Ulu|Mezzaluna|Mandoline guard|Pastry crimper|Pastry stencil|Banneton~Proofing basket|Bread lame~Lame|Butter paddle|Butter mould~Butter mold|Oyster glove|Clam fork|Pickle fork|Spaghetti measure|Pasta drying rack|Pot lid|Splatter screen|Cooling rack|Trivet|Steamer basket|Collapsible steamer|Bamboo steamer|Tagine|Casserole dish|Souffle dish|Gratin dish|Bain-marie pot|Double boiler|Stockpot|Saute pan|Braising pan|Griddle|Grill pan|Crepe pan|Paella pan|Comal|Tawa|Karahi|Balti dish|Appam pan|Takoyaki pan|Aebleskiver pan|Poffertjes pan|Pancake dispenser|Batter dispenser|Sifter~Flour sifter|Fat separator|Salad chopper|Lettuce knife|Tomato knife|Grapefruit knife|Grapefruit spoon|Scalloped spoon",
         "85": "Chinois|Tamis|Spurtle~Spurtle spoon|Spatule maryse~Rubber scraper|Offset spatula~Palette knife|Icing comb|Cake smoother|Piping bag~Pastry bag|Piping tip~Pastry nozzle|Syringe baster|Trussing needle|Larding needle|Chopstick rest|Bamboo sushi mat~Makisu|Tortilla press|Tostonera|Molcajete|Metate|Comal scraper|Crinkle cutter~Crinkle knife|Herb scissors|Herb stripper|Crab pick|Gnocchi board|Pizzelle roller|Chestnut knife|Truffle slicer|Omelette turner|Krumkake roller",
         "100": "Chasen~Matcha whisk"
-      }
+      },
+      "reviewNotes": "Reviewed concrete tools/items and their scope after the expanded common-guess sweep; accepted spellings are real names or contextual names, never manufactured initials. Uncertain pyxis eligibility is explicitly held rather than becoming a rare answer."
     }
   ]
 }

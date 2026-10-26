@@ -81,14 +81,25 @@ async function startQuiz(mode){
  if(mode==='daily'&&pendingQuiz&&!isSharedDailyRun(pendingQuiz,day))pendingQuiz=null;
  if(mode==='practice'&&restorePractice&&['localhost','127.0.0.1'].includes(location.hostname)){try{pendingQuiz=JSON.parse(sessionStorage.getItem('fc:live-practice'));if(featured&&pendingQuiz?.ids[0]!==featured.id||pendingQuiz?.ids?.some(id=>!(featured?REVIEWED_PACKS:MIXED_PACKS).some(p=>p.id===id)))pendingQuiz=null;resumedLive=!!pendingQuiz;}catch{}}
  if(!pendingQuiz||!Array.isArray(pendingQuiz.ids)||pendingQuiz.ids.some(id=>!PACKS.some(p=>p.id===id))){
-  let ids;if(mode==='daily')ids=dailyPacks(day).map(p=>p.id);else{let queue=read('practice:queue',[]);const priorSelection=read('practice:selection',null);if(priorSelection!==QUESTION_SELECTION_BUILD){queue=reshufflePracticeQueue(queue,Math.random,priorSelection);practiceSelectionChanged=true;}const draw=practiceDraw(queue,featured?.id);ids=draw.ids;practiceRemainder=draw.remaining;}
+  let ids;
+  if(mode==='daily')ids=dailyPacks(day).map(p=>p.id);
+  else{
+   let queue=read('practice:queue',[]);
+   const priorSelection=read('practice:selection',null),priorPool=read('practice:pool',null);
+   const previousIds=Array.isArray(priorPool)?new Set(priorPool):null;
+   const poolChanged=!previousIds||previousIds.size!==MIXED_PACKS.length||MIXED_PACKS.some(p=>!previousIds.has(p.id));
+   if(priorSelection!==QUESTION_SELECTION_BUILD||poolChanged){
+    queue=reshufflePracticeQueue(queue,Math.random,priorSelection,priorPool);practiceSelectionChanged=true;
+   }
+   const draw=practiceDraw(queue,featured?.id);ids=draw.ids;practiceRemainder=draw.remaining;
+  }
   if(ids.length<7){screen('questions');app.innerHTML='<section class="question-loading"><h1>FRESH QUESTIONS ARE BEING PREPARED</h1><p>You have reached the end of the published daily schedule. Earlier questions will not repeat.</p><a href="#questions">EXPLORE THE LIBRARY ↗</a></section>';return;}
   pendingQuiz={mode,day,ids,round:0,results:[],stage:'intro'};fresh=true;
  }
  if(!await prepareQuestionData(mode,pendingQuiz.ids.map(id=>PACKS.find(p=>p.id===id)))||epoch!==navigationEpoch)return;
  if(pendingQuiz.stage!=='done')warmAnswerBank(PACKS.find(p=>p.id===pendingQuiz.ids[pendingQuiz.round]));
  if(fresh){pendingQuiz.readyAt=Date.now()+3000;pendingQuiz.deadline=pendingQuiz.readyAt+25000;}
- quiz=pendingQuiz;if(practiceRemainder){save('practice:queue',practiceRemainder);if(practiceSelectionChanged)save('practice:selection',QUESTION_SELECTION_BUILD);}
+ quiz=pendingQuiz;if(practiceRemainder){save('practice:queue',practiceRemainder);save('practice:pool',MIXED_PACKS.map(p=>p.id));if(practiceSelectionChanged)save('practice:selection',QUESTION_SELECTION_BUILD);}
  if(resumedLive){if(quiz.stage!=='done')ocean.set('dive',total()*10);ocean.snap(quiz.stage==='done'?0:total()*10);}
  if(quiz.pausedAt)delete quiz.pausedAt;persistQuiz();history.replaceState(null,'','#'+mode+(featured?'?pack='+featured.id:''));renderQuiz();
 }

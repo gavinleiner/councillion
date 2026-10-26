@@ -164,7 +164,9 @@
         "Pufferfish",
         "Tropical Fish",
         "Bow",
-        "Saddle"
+        "Saddle",
+        "Fish",
+        "Book"
       ],
       "exclude": [
         "Diamond",
@@ -181,15 +183,12 @@
         ],
         "60": [
           "Bone",
-          "Enchanted Book",
           "Fishing Rod~Enchanted Fishing Rod",
           "Ink Sac",
           "Leather",
           "Leather Boots",
           "Name Tag",
           "Nautilus Shell",
-          "Raw Cod~Cod",
-          "Raw Salmon~Salmon",
           "Rotten Flesh",
           "String",
           "Tripwire Hook",
@@ -197,7 +196,10 @@
         ],
         "10": [
           "Bow~Enchanted Bow",
+          "Enchanted Book~Book",
           "Pufferfish",
+          "Raw Cod~Cod~Fish~Raw Fish",
+          "Raw Salmon~Salmon",
           "Saddle",
           "Tropical Fish~Clownfish"
         ],
@@ -222,7 +224,10 @@
         "Gold Ingot",
         "Charcoal",
         "Cooked Beef",
-        "Smooth Stone"
+        "Smooth Stone",
+        "Iron",
+        "Gold",
+        "Copper"
       ],
       "exclude": [
         "Obsidian",
@@ -254,7 +259,6 @@
           "Cooked Cod",
           "Cooked Mutton",
           "Cooked Rabbit",
-          "Copper Ingot",
           "Copper Nugget",
           "Cracked Deepslate Bricks",
           "Cracked Deepslate Tiles",
@@ -283,16 +287,17 @@
           "Smooth Basalt",
           "Smooth Quartz Block",
           "Smooth Red Sandstone",
-          "Steak~Cooked Beef",
           "White Glazed Terracotta",
           "Yellow Glazed Terracotta"
         ],
         "10": [
           "Charcoal",
+          "Copper Ingot~Copper",
           "Glass",
-          "Gold Ingot",
-          "Iron Ingot",
-          "Smooth Stone"
+          "Gold Ingot~Gold",
+          "Iron Ingot~Iron",
+          "Smooth Stone",
+          "Steak~Cooked Beef"
         ],
         "100": [
           "Cracked Nether Bricks"
@@ -321,7 +326,10 @@
         "Lava Bucket",
         "Stick",
         "Blaze Rod",
-        "Dried Kelp Block"
+        "Dried Kelp Block",
+        "Wood",
+        "Sticks",
+        "Logs"
       ],
       "exclude": [
         "Gunpowder",
@@ -675,9 +683,9 @@
           "Dried Kelp Block",
           "Ladder",
           "Lava Bucket~Bucket of Lava",
-          "Oak Log~Log~Wooden Log",
+          "Oak Log~Log~Wooden Log~Wood~Logs",
           "Oak Planks~Planks~Wood Planks~Wooden Planks",
-          "Stick",
+          "Stick~Sticks",
           "Wooden Axe",
           "Wooden Pickaxe",
           "Wooden Sword"
@@ -718,7 +726,8 @@
           "Birch Log~Birch",
           "Jungle Log",
           "Oak Log~Oak",
-          "Spruce Log~Spruce"
+          "Spruce Log~Spruce",
+          "Waxed Block of Copper~Waxed Copper Block"
         ],
         "60": [
           "Acacia Wood",
@@ -767,7 +776,6 @@
           "Spruce Wood",
           "Warped Hyphae",
           "Warped Stem",
-          "Waxed Block of Copper~Waxed Copper Block",
           "Waxed Chiseled Copper",
           "Waxed Copper Bars",
           "Waxed Copper Bulb",

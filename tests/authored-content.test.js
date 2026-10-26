@@ -58,6 +58,8 @@ test('Minecraft uses real item outputs and loot transformations, not just unmodi
  for(const name of ['Diamond','Glass','Iron Ingot','Charcoal','Steak','Cooked Beef'])assert.equal(resolveAnswer(pack('minecraft-furnace-results'),name).status,'exact',name);
  for(const name of ['Water Bottle','Enchanted Book','Cod','Raw Cod','Salmon','Raw Salmon','Bamboo'])assert.equal(resolveAnswer(pack('minecraft-fishing-catches'),name).status,'exact',name);
  assert.equal(pack('minecraft-fishing-catches').answerCount,22);
+ for(const n of ['Cod','Raw Cod','Salmon','Raw Salmon','Fish','Book'])assert.equal(resolveAnswer(pack('minecraft-fishing-catches'),n).answer.points,10,n);
+ for(const n of ['Steak','Cooked Beef','Iron','Gold','Copper'])assert.equal(resolveAnswer(pack('minecraft-furnace-results'),n).answer.points,10,n);
  for(const name of ['Coal','Lava Bucket','Dried Kelp Block','Mangrove Propagule'])assert.equal(resolveAnswer(pack('minecraft-furnace-fuel'),name).status,'exact',name);
  assert.notEqual(resolveAnswer(pack('minecraft-furnace-fuel'),'Netherrack').status,'exact');
 });
@@ -76,4 +78,25 @@ test('the Super Bowl inventory reconciles at game grain, so early and recent cha
  const p=pack('super-bowl-winning-starters');assert.equal(p.answerCount,expected.size);
  assert.deepEqual(new Set(p.answers.map(a=>a.label)),expected);
  for(const game of proof.games)assert.equal(resolveAnswer(p,game.winningStarter).status,'exact','Super Bowl '+game.superBowl);
+});
+
+test('the F1 inventory reconciles every driver on every source page and retains normal public names',()=>{
+ const proof=JSON.parse(readFileSync(new URL('../data-snapshots/authored/sources/f1-drivers.json',import.meta.url)));
+ assert.equal(proof.total,881);assert.equal(proof.drivers.length,881);assert.equal(new Set(proof.drivers.map(d=>d.driverId)).size,881);
+ let offset=0;for(const page of proof.requests){assert.equal(page.offset,offset);offset+=page.returned;}assert.equal(offset,proof.total);
+ const p=pack('formula-one-drivers');assert.equal(p.answerCount,881);
+ for(const d of proof.drivers)assert.equal(resolveAnswer(p,d.givenName+' '+d.familyName).status,'exact',d.driverId);
+ for(const n of ['Juan Manuel Fangio','Sir Lewis Hamilton','Alex Albon','Kimi Antonelli','Arvid Lindblad','Schumacher','Checo'])assert.equal(resolveAnswer(p,n).status,'exact',n);
+ for(const n of ['HAM','VER'])assert.equal(resolveAnswer(p,n).status,'missing',n+': official racing codes must not become guessed-name aliases');
+});
+
+test('ordinary shorthand names keep their real identity without farming a rare spelling neighbor',()=>{
+ assert.equal(resolveAnswer(pack('garden-tools'),'Shoe').answer.label,'Gardening shoes');
+ assert.equal(resolveAnswer(pack('garden-tools'),'Chainsaw').status,'exact');
+ assert.equal(resolveAnswer(pack('kitchen-hand-tools'),'Chopping board').answer.label,'Cutting board');
+ assert.equal(resolveAnswer(pack('kitchen-hand-tools'),'Egg whisk').answer.label,'Whisk');
+ assert.equal(resolveAnswer(pack('laundry-supplies'),'All').answer.label,'All');
+ assert.equal(resolveAnswer(pack('laundry-supplies'),'Fabric conditioner').answer.label,'Fabric softener');
+ assert.equal(resolveAnswer(pack('nba-regular-season-mvps'),'Malone').answer.label,'Karl Malone');
+ assert.equal(resolveAnswer(pack('super-bowl-winning-starters'),'Manning').answer.label,'Peyton Manning');
 });

@@ -3652,7 +3652,9 @@
         "Pufferfish",
         "Tropical Fish",
         "Bow",
-        "Saddle"
+        "Saddle",
+        "Fish",
+        "Book"
       ],
       "no": [
         "Diamond",
@@ -3696,7 +3698,10 @@
         "Lava Bucket",
         "Stick",
         "Blaze Rod",
-        "Dried Kelp Block"
+        "Dried Kelp Block",
+        "Wood",
+        "Sticks",
+        "Logs"
       ],
       "no": [
         "Gunpowder",
@@ -3719,7 +3724,10 @@
         "Gold Ingot",
         "Charcoal",
         "Cooked Beef",
-        "Smooth Stone"
+        "Smooth Stone",
+        "Iron",
+        "Gold",
+        "Copper"
       ],
       "no": [
         "Obsidian",
@@ -3741,7 +3749,21 @@
         "Stephen Curry",
         "Kobe Bryant",
         "Nikola Jokić",
-        "Shaquille O'Neal"
+        "Shaquille O'Neal",
+        "James",
+        "Bryant",
+        "O'Neal",
+        "ONeal",
+        "Antetokounmpo",
+        "Johnson",
+        "Abdul-Jabbar",
+        "Gilgeous-Alexander",
+        "Nowitzki",
+        "Olajuwon",
+        "Malone",
+        "Chamberlain",
+        "Robertson",
+        "Erving"
       ],
       "no": [
         "Luka Doncic",
@@ -3834,7 +3856,10 @@
         "Peyton Manning",
         "Aaron Rodgers",
         "Russell Wilson",
-        "Bart Starr"
+        "Bart Starr",
+        "Manning",
+        "Williams",
+        "Johnson"
       ],
       "no": [
         "Dan Marino",
@@ -3848,6 +3873,328 @@
         "https://www.seahawks.com/news/2025-the-seahawks-are-super-bowl-lx-champions"
       ],
       "review": "Reviewed complete released-game membership or a whole finite official/history roster; no tag pairs or partial popularity filter. Source row counts and exact answer names are independently exercised by authored-content tests."
+    },
+    {
+      "id": "authored-formula-one-drivers",
+      "basis": "individually-reviewed-common-guess-expansion-based-on-original-yes-model",
+      "yes": [
+        "Lewis Hamilton",
+        "Max Verstappen",
+        "Michael Schumacher",
+        "Ayrton Senna",
+        "Lando Norris",
+        "Charles Leclerc",
+        "Fernando Alonso",
+        "Sebastian Vettel",
+        "Kimi Raikkonen",
+        "Nico Rosberg",
+        "Jenson Button",
+        "Nigel Mansell",
+        "Alain Prost",
+        "Nelson Piquet",
+        "Niki Lauda",
+        "James Hunt",
+        "Jackie Stewart",
+        "Jack Brabham",
+        "Stirling Moss",
+        "Juan Manuel Fangio",
+        "Alberto Ascari",
+        "Graham Hill",
+        "Damon Hill",
+        "Jim Clark",
+        "John Surtees",
+        "Mario Andretti",
+        "Emerson Fittipaldi",
+        "Alan Jones",
+        "Keke Rosberg",
+        "Oscar Piastri",
+        "George Russell",
+        "Carlos Sainz",
+        "Sergio Perez",
+        "Valtteri Bottas",
+        "Daniel Ricciardo",
+        "Yuki Tsunoda",
+        "Pierre Gasly",
+        "Esteban Ocon",
+        "Lance Stroll",
+        "Alex Albon",
+        "Nico Hulkenberg",
+        "Kevin Magnussen",
+        "Oliver Bearman",
+        "Liam Lawson",
+        "Isack Hadjar",
+        "Gabriel Bortoleto",
+        "Franco Colapinto",
+        "Jack Doohan",
+        "Kimi Antonelli",
+        "Arvid Lindblad",
+        "Zhou Guanyu",
+        "Guanyu Zhou"
+      ],
+      "no": [
+        "Dale Earnhardt",
+        "Valentino Rossi",
+        "HAM",
+        "VER"
+      ],
+      "prompt": "Name a driver who has competed in Formula One.",
+      "family": "sports",
+      "inventoryEvidence": [
+        "https://api.jolpi.ca/ergast/f1/drivers/",
+        "https://github.com/jolpica/jolpica-f1/blob/main/docs/endpoints/drivers.md",
+        "https://github.com/jolpica/jolpica-f1/blob/main/TERMS.md",
+        "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+      ],
+      "review": "Deliberately reviewed scope and uncommon entries; expanded independent common-guess sweep; merged actual synonyms and held an uncertain pyxis claim. The F1 roster additionally reconciles every paginated public driver record. No tag joins, title-word filters or arbitrary geographic slicing."
+    },
+    {
+      "id": "authored-garden-tools",
+      "basis": "individually-reviewed-common-guess-expansion-based-on-original-yes-model",
+      "yes": [
+        "Shovel",
+        "Rake",
+        "Hose",
+        "Watering can",
+        "Trowel",
+        "Pruning shears",
+        "Chainsaw",
+        "Scissors",
+        "Gloves",
+        "Shears",
+        "Saw",
+        "Machete",
+        "Sickle",
+        "Scythe",
+        "Brush cutter",
+        "Wood chipper",
+        "Tiller",
+        "Edger",
+        "Wheelbarrow",
+        "Lawnmower",
+        "Shoes",
+        "Shoe",
+        "Boots",
+        "Goggles",
+        "Hat",
+        "Apron",
+        "Safety glasses"
+      ],
+      "no": [
+        "Rose",
+        "Television"
+      ],
+      "prompt": "Name a tool or piece of equipment used for gardening.",
+      "family": "everyday",
+      "inventoryEvidence": [
+        "https://www.rhs.org.uk/advice/beginners-guide/tools",
+        "https://www.fiskars.com/en-us/gardening-and-yard-care/products",
+        "https://www.faithfulltools.com/pdf-cat/268-Faithfull-catalogue-2018.pdf"
+      ],
+      "review": "Deliberately reviewed scope and uncommon entries; expanded independent common-guess sweep; merged actual synonyms and held an uncertain pyxis claim. The F1 roster additionally reconciles every paginated public driver record. No tag joins, title-word filters or arbitrary geographic slicing."
+    },
+    {
+      "id": "authored-inflatable-objects",
+      "basis": "individually-reviewed-common-guess-expansion-based-on-original-yes-model",
+      "yes": [
+        "Balloon",
+        "Air mattress",
+        "Football",
+        "Tire",
+        "Pool float",
+        "Bouncy castle",
+        "Beach ball",
+        "Basketball",
+        "Weather balloon",
+        "Blimp",
+        "Airship",
+        "Blood pressure cuff",
+        "Inflatable life jacket",
+        "Buoyancy compensator",
+        "Ball",
+        "Mattress",
+        "Boat",
+        "Raft",
+        "Pillow",
+        "Life jacket",
+        "Airbag"
+      ],
+      "no": [
+        "Brick",
+        "Glass bottle"
+      ],
+      "prompt": "Name an object designed to be inflated.",
+      "family": "everyday",
+      "inventoryEvidence": [
+        "https://www.britannica.com/technology/pneumatic-device",
+        "https://www.cpsc.gov/Safety-Education/Safety-Guides/Sports-Fitness-and-Recreation/Moonwalks-and-Bounce-Houses",
+        "https://www.nasa.gov/news-release/nasa-launches-new-technology-an-inflatable-heat-shield/"
+      ],
+      "review": "Deliberately reviewed scope and uncommon entries; expanded independent common-guess sweep; merged actual synonyms and held an uncertain pyxis claim. The F1 roster additionally reconciles every paginated public driver record. No tag joins, title-word filters or arbitrary geographic slicing."
+    },
+    {
+      "id": "authored-kitchen-hand-tools",
+      "basis": "individually-reviewed-common-guess-expansion-based-on-original-yes-model",
+      "yes": [
+        "Whisk",
+        "Spatula",
+        "Peeler",
+        "Ladle",
+        "Can opener",
+        "Rolling pin",
+        "Cutting board",
+        "Chopping board",
+        "Bowl",
+        "Mixing bowl",
+        "Plate",
+        "Pot",
+        "Pan",
+        "Frying pan",
+        "Saucepan",
+        "Wok",
+        "Baking tray",
+        "Kitchen scale",
+        "Spork",
+        "Salad spinner",
+        "Ice cube tray",
+        "Oven mitt"
+      ],
+      "no": [
+        "Refrigerator",
+        "Onion"
+      ],
+      "prompt": "Name a hand tool or utensil used to prepare or serve food.",
+      "family": "everyday",
+      "inventoryEvidence": [
+        "https://www.oxo.com/shop/kitchenware.html",
+        "https://www.bbcgoodfood.com/review/best-kitchen-gadgets",
+        "https://www.oxo.com/shop/kitchenware/cooking-baking/cutting-boards.html"
+      ],
+      "review": "Deliberately reviewed scope and uncommon entries; expanded independent common-guess sweep; merged actual synonyms and held an uncertain pyxis claim. The F1 roster additionally reconciles every paginated public driver record. No tag joins, title-word filters or arbitrary geographic slicing."
+    },
+    {
+      "id": "authored-laundry-supplies",
+      "basis": "individually-reviewed-common-guess-expansion-based-on-original-yes-model",
+      "yes": [
+        "Detergent",
+        "Washing machine",
+        "Clothes dryer",
+        "Clothesline",
+        "Clothespin",
+        "Iron",
+        "Soap",
+        "Dryer",
+        "Bucket",
+        "Sink",
+        "Sponge",
+        "Fabric conditioner",
+        "Basket",
+        "Detergent pods",
+        "Drying rack",
+        "Washboard",
+        "Hanger",
+        "Water",
+        "Tide",
+        "Gain",
+        "Persil",
+        "OxiClean",
+        "Vanish",
+        "Downy",
+        "Bounce",
+        "Clorox",
+        "Woolite",
+        "Dreft",
+        "Ariel",
+        "All",
+        "Arm & Hammer",
+        "Method",
+        "Rit"
+      ],
+      "no": [
+        "Shirt",
+        "Laptop"
+      ],
+      "prompt": "Name an item or product used to wash, dry or care for laundry.",
+      "family": "everyday",
+      "inventoryEvidence": [
+        "https://www.cleaninginstitute.org/cleaning-tips/clothes",
+        "https://www.tide.com/en-us/how-to-wash-clothes",
+        "https://us.pg.com/brands/",
+        "https://www.unilever.com/brands/home-care/omo/"
+      ],
+      "review": "Deliberately reviewed scope and uncommon entries; expanded independent common-guess sweep; merged actual synonyms and held an uncertain pyxis claim. The F1 roster additionally reconciles every paginated public driver record. No tag joins, title-word filters or arbitrary geographic slicing."
+    },
+    {
+      "id": "authored-objects-with-hinges",
+      "basis": "individually-reviewed-common-guess-expansion-based-on-original-yes-model",
+      "yes": [
+        "Door",
+        "Laptop",
+        "Gate",
+        "Briefcase",
+        "Toilet seat",
+        "Piano",
+        "Stapler",
+        "Car hood",
+        "Car boot",
+        "Glove box",
+        "Barbecue",
+        "Hole punch",
+        "Lid",
+        "Printer",
+        "Scanner",
+        "Tailgate",
+        "Fuel door",
+        "Wheelchair",
+        "Folding stroller"
+      ],
+      "no": [
+        "Soccer ball",
+        "Paper clip"
+      ],
+      "prompt": "Name an object that commonly has a hinge.",
+      "family": "everyday",
+      "inventoryEvidence": [
+        "https://www.britannica.com/technology/hinge",
+        "https://www.hafele.com/us/en/info/products/hardware/hinges/57687/",
+        "https://hardwoodartisans.com/products/butterfly-table"
+      ],
+      "review": "Deliberately reviewed scope and uncommon entries; expanded independent common-guess sweep; merged actual synonyms and held an uncertain pyxis claim. The F1 roster additionally reconciles every paginated public driver record. No tag joins, title-word filters or arbitrary geographic slicing."
+    },
+    {
+      "id": "authored-sewing-kit",
+      "basis": "individually-reviewed-common-guess-expansion-based-on-original-yes-model",
+      "yes": [
+        "Needle",
+        "Thread",
+        "Thimble",
+        "Scissors",
+        "Seam ripper",
+        "Pin",
+        "Ruler",
+        "Pencil",
+        "Chalk",
+        "Sewing scissors",
+        "Fabric glue",
+        "Safety pin",
+        "Bobbin",
+        "Iron-on patch",
+        "Velcro",
+        "Fabric",
+        "Zipper",
+        "Tape measure"
+      ],
+      "no": [
+        "Microwave",
+        "Basketball"
+      ],
+      "prompt": "Name an item used for sewing or mending clothes.",
+      "family": "everyday",
+      "inventoryEvidence": [
+        "https://www.singer.com/collections/sewing-accessories",
+        "https://www.brother-usa.com/home/sewing-embroidery/accessories",
+        "https://simflex-gauge.com/"
+      ],
+      "review": "Deliberately reviewed scope and uncommon entries; expanded independent common-guess sweep; merged actual synonyms and held an uncertain pyxis claim. The F1 roster additionally reconciles every paginated public driver record. No tag joins, title-word filters or arbitrary geographic slicing."
     }
   ],
   "expansionBatches": [
@@ -3877,6 +4224,26 @@
         "88 official constellation names",
         "All 60 Super Bowl game winners reconcile to 36 distinct starting quarterbacks",
         "NBA regular-season MVP roster including Bob McAdoo and the current official winner"
+      ]
+    },
+    {
+      "id": "authored-common-guess-expansion-02",
+      "date": "2026-10-25",
+      "questions": [
+        "authored-formula-one-drivers",
+        "authored-garden-tools",
+        "authored-inflatable-objects",
+        "authored-kitchen-hand-tools",
+        "authored-laundry-supplies",
+        "authored-objects-with-hinges",
+        "authored-sewing-kit"
+      ],
+      "status": "admitted in development; the requested 5,000-question release is unfinished",
+      "sourceChecks": [
+        "All 881 F1 driver records reconcile across all nine source pages; independent current and historical names plus no-code boundary checks",
+        "Manufacturer-confirmed SimFlex gauge and butterfly-table hinge examples",
+        "NASA evidence for inflatable reentry equipment; inflation scope includes gases beyond air",
+        "Common gardening, laundry and food-preparation guesses repaired before admission; actual synonyms share an identity"
       ]
     }
   ]

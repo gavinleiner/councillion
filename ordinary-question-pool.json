@@ -1,6 +1,6 @@
 {
-  "build": "eebb579d95ec0508",
-  "count": 240,
+  "build": "00aa57e41d551862",
+  "count": 247,
   "categories": [
     {
       "id": "group-q001",
@@ -1819,6 +1819,54 @@
       "scope": "Named examples and standard alternative names count. This is a finite curated inventory, not an exhaustive list of every real-world possibility."
     },
     {
+      "id": "authored-inflatable-objects",
+      "prompt": "Name an object designed to be inflated.",
+      "family": "everyday",
+      "group": "authored-situations",
+      "answerCount": 78,
+      "scope": "Common inflatable objects and named inflatable equipment types count, whether filled with air, helium or another gas. Objects merely containing an empty cavity do not qualify."
+    },
+    {
+      "id": "authored-sewing-kit",
+      "prompt": "Name an item used for sewing or mending clothes.",
+      "family": "everyday",
+      "group": "authored-situations",
+      "answerCount": 109,
+      "scope": "Hand-sewing, machine-sewing and dressmaking tools and supplies count. A finished garment alone is not sewing equipment."
+    },
+    {
+      "id": "authored-garden-tools",
+      "prompt": "Name a tool or piece of equipment used for gardening.",
+      "family": "everyday",
+      "group": "authored-situations",
+      "answerCount": 129,
+      "scope": "Tools, devices and durable equipment used to plant, water, prune, move soil or maintain gardens count. Plant names are not tools."
+    },
+    {
+      "id": "authored-laundry-supplies",
+      "prompt": "Name an item or product used to wash, dry or care for laundry.",
+      "family": "everyday",
+      "group": "authored-situations",
+      "answerCount": 162,
+      "scope": "Laundry appliances, supplies, stain treatments and clothes-care tools count, as do named product types and established laundry-product brands, including historical ones. A garment itself is not a laundry supply."
+    },
+    {
+      "id": "authored-objects-with-hinges",
+      "prompt": "Name an object that commonly has a hinge.",
+      "family": "everyday",
+      "group": "authored-properties",
+      "answerCount": 133,
+      "scope": "A common hinged version of the object must exist. Sliding or roll-up versions do not prevent a genuinely hinged object from counting."
+    },
+    {
+      "id": "authored-kitchen-hand-tools",
+      "prompt": "Name a hand tool or utensil used to prepare or serve food.",
+      "family": "everyday",
+      "group": "authored-situations",
+      "answerCount": 246,
+      "scope": "Kitchen hand tools, utensils, serving implements and nonpowered cookware count. Small measuring tools used in food preparation also count. Large powered appliances and foods do not qualify."
+    },
+    {
       "id": "authored-enderman-carry-blocks",
       "prompt": "Name a block an Enderman can pick up in Minecraft.",
       "family": "gaming",
@@ -1921,6 +1969,14 @@
       "group": "authored-whole-roster",
       "answerCount": 94,
       "scope": "Species classified as Legendary or Mythical in the pinned PokéAPI data count. Forms share their species' answer identity. Pseudo-Legendary is a fan label and does not make a species Legendary."
+    },
+    {
+      "id": "authored-formula-one-drivers",
+      "prompt": "Name a driver who has competed in Formula One.",
+      "family": "sports",
+      "group": "authored-whole-roster",
+      "answerCount": 881,
+      "scope": "Drivers in the complete Jolpica/Ergast Formula One World Championship driver inventory count, including historical entrants and the Indianapolis 500 when it was part of that championship. A real surname can identify a valid driver; invented initials and racing three-letter codes do not count as names."
     }
   ]
 }

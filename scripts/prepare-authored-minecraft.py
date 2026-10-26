@@ -31,8 +31,12 @@ def add(key,topic,prompt,scope,keys,familiar,wrong,rare,common=(),aliases=None,r
  alias=aliases or {};rows=collections.defaultdict(list);fs=set(familiar.split('|'));cs=set(common)
  names={name(k)for k in keys}
  assert rare in names,(key,rare)
+ # Familiar spellings can be aliases (Cod -> Raw Cod, Cooked Beef -> Steak).
+ # They must retain the common tier of their actual canonical item.
+ folded={re.sub('[^a-z0-9]','',a.lower())for a in fs|cs}
+ easy={label for label in names if any(re.sub('[^a-z0-9]','',a.lower())in folded for a in [label,*alias.get(label,[])])}
  for label in sorted(names):
-  tier=100 if label==rare else 10 if label in fs or label in cs else 30 if label in ['Stick','Bowl','Oak Planks','Glass','Torchflower','Oxeye Daisy','Lily of the Valley','Anvil','TNT','Gravel','Dirt','Sand','Red Sand','Cactus','Clay','Pumpkin','Melon','Bamboo','Wool','Sponge','Iron Ingot','Gold Ingot','Cooked Porkchop','Cooked Chicken','Cooked Salmon','Baked Potato','Stone','Brick','Cracked Stone Bricks','Smooth Stone','Smooth Sandstone','Smooth Quartz','Terracotta','Dried Kelp','Nether Brick'] else 60 if len(label)<25 else 85
+  tier=100 if label==rare else 10 if label in easy else 30 if label in ['Stick','Bowl','Oak Planks','Glass','Torchflower','Oxeye Daisy','Lily of the Valley','Anvil','TNT','Gravel','Dirt','Sand','Red Sand','Cactus','Clay','Pumpkin','Melon','Bamboo','Wool','Sponge','Iron Ingot','Gold Ingot','Cooked Porkchop','Cooked Chicken','Cooked Salmon','Baked Potato','Stone','Brick','Cracked Stone Bricks','Smooth Stone','Smooth Sandstone','Smooth Quartz','Terracotta','Dried Kelp','Nether Brick'] else 60 if len(label)<25 else 85
   rows[str(tier)].append('~'.join([label,*alias.get(label,[])]))
  q=dict(id='authored-'+key,concept=key,family='gaming',topic=topic,prompt=prompt,scope=scope+' Official Java 26.3 recipe, tag or component data defines the inventory; modded behavior does not count.',format='game-mechanics',rationale='A distinct, recognizable Minecraft activity with a complete membership rule from released game data, not a Steam-label combination or colored-title template.',familiar=familiar.split('|'),exclude=wrong.split('|'),references=[data_ref,*refs],answers=dict(rows),naturalFinite=len(names)<24)
  assert all(n in names or any(n in a for a in alias.values())for n in fs),(key,fs-names)
@@ -53,18 +57,18 @@ for path in raw:
   fishing.update(resultkeys(source(path)))
 add('minecraft-fishing-catches','On the line','Name an item you can catch by fishing in Minecraft.',
  'Fish, junk and treasure in the ordinary fishing loot tables count. Items merely carried by nearby mobs do not.',fishing,
- 'Cod|Salmon|Pufferfish|Tropical Fish|Bow|Saddle','Diamond|Netherite Ingot','Lily Pad',aliases={'Raw Cod':['Cod'],'Raw Salmon':['Salmon'],'Tropical Fish':['Clownfish'],'Fishing Rod':['Enchanted Fishing Rod'],'Bow':['Enchanted Bow']})
+ 'Cod|Salmon|Pufferfish|Tropical Fish|Bow|Saddle|Fish|Book','Diamond|Netherite Ingot','Lily Pad',aliases={'Raw Cod':['Cod','Fish','Raw Fish'],'Raw Salmon':['Salmon'],'Tropical Fish':['Clownfish'],'Fishing Rod':['Enchanted Fishing Rod'],'Bow':['Enchanted Bow'],'Enchanted Book':['Book']})
 smelt=set()
 for path,item in raw.items():
  if path.startswith('recipe/')and item.get('type')=='minecraft:smelting':
   source(path);r=item['result'];smelt.add((r['id']if isinstance(r,dict)else r).removeprefix('minecraft:'))
 add('minecraft-furnace-results','Fresh from the furnace','Name an item or block a furnace recipe can produce in Minecraft.',
  'Give the output, rather than the input, of an ordinary furnace smelting or cooking recipe.',smelt,
- 'Glass|Iron Ingot|Gold Ingot|Charcoal|Cooked Beef|Smooth Stone','Obsidian|Crafting Table','Cracked Nether Bricks',aliases={'Steak':['Cooked Beef'],'Brick':['Bricks item'],'Nether Brick':['Nether Brick item']})
+ 'Glass|Iron Ingot|Gold Ingot|Charcoal|Cooked Beef|Smooth Stone|Iron|Gold|Copper','Obsidian|Crafting Table','Cracked Nether Bricks',aliases={'Steak':['Cooked Beef'],'Iron Ingot':['Iron'],'Gold Ingot':['Gold'],'Copper Ingot':['Copper'],'Brick':['Bricks item'],'Nether Brick':['Nether Brick item']})
 fuel={k for k,v in components.items()if 'minecraft:cooking_fuel'in v}
 add('minecraft-furnace-fuel','Keep it burning','Name an item that can be used as furnace fuel in Minecraft.',
  'Items actually accepted in the fuel slot count, rather than anything that merely looks flammable. Their fuel value need not be the same.',fuel,
- 'Coal|Charcoal|Lava Bucket|Stick|Blaze Rod|Dried Kelp Block','Gunpowder|Netherrack','Mangrove Propagule',common=['Oak Planks','Bamboo','Oak Log','Chest','Crafting Table','Bowl','Ladder','Wooden Sword','Wooden Pickaxe','Wooden Axe'],aliases={'Lava Bucket':['Bucket of Lava'],'Oak Planks':['Planks','Wood Planks','Wooden Planks'],'Oak Log':['Log','Wooden Log']},refs=[component_ref])
+ 'Coal|Charcoal|Lava Bucket|Stick|Blaze Rod|Dried Kelp Block|Wood|Sticks|Logs','Gunpowder|Netherrack','Mangrove Propagule',common=['Oak Planks','Bamboo','Oak Log','Chest','Crafting Table','Bowl','Ladder','Wooden Sword','Wooden Pickaxe','Wooden Axe'],aliases={'Lava Bucket':['Bucket of Lava'],'Oak Planks':['Planks','Wood Planks','Wooden Planks'],'Oak Log':['Log','Wooden Log','Wood','Logs'],'Stick':['Sticks']},refs=[component_ref])
 axe=set()
 def blocks_in_if(node):
  result=set()
