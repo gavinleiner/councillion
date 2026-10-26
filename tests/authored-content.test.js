@@ -295,3 +295,57 @@ test('all-time NBA inventories preserve franchise history, proper names and comp
  assert.equal(resolveAnswer(pack('los-angeles-lakers-players'),'Dave Latter').status,'missing','NBL-only table cannot leak into the NBA/BAA/ABA inventory');
  assert.ok(!AUTHORED_PACKS.some(p=>p.id==='authored-seattle-supersonics-players'),'former franchise names expand answers, not question counts');
 });
+
+
+test('whole food inventories repair everyday guesses and merge equivalent preparations',()=>{
+ for(const [id,names] of [
+ ['ice-cream-toppings',['Snickers','Butterfinger','Heath','Twix','Skittles','Whoppers','Peaches','Golden Oreo']],
+ ['pickled-foods',['Kimchi','Kimchee','Sauerkraut','Giardiniera','Pickled jalapenos','Pickled red onions','Pickled beets','Corned beef']],
+ ['corn-dishes',['Cornbread','Popcorn','Arepa','Tamal','Atole','Mamaliga','Makki di roti','Bourbon whiskey']],
+ ['foods-with-custard',['Nanaimo bars','Custard creams','Portuguese egg tart','Custard bun','Creme renversee','Zabaglione']]
+ ])for(const n of names)assert.equal(resolveAnswer(pack(id),n).status,'exact',id+': '+n);
+ for(const [id,a,b]of [['foods-with-custard','Portuguese egg tart','Pastel de nata'],['foods-with-custard','Custard bun','Custard bao'],['foods-with-custard','Creme renversee','Flan'],['corn-dishes','Tamale','Tamal']])assert.equal(resolveAnswer(pack(id),a).answer.label,resolveAnswer(pack(id),b).answer.label);
+ for(const [id,names]of [['pickled-foods',['Pickling salt','Cucumber soup']],['corn-dishes',['Corn steep liquor','Ducana','Coca-Cola']],['foods-with-custard',['Wuzetka','Kogel mogel','Panna cotta']]]){const p=pack(id);for(const n of names)assert.equal(resolveAnswer({...p,answers:p.answers,excludedAnswers:names},n).status,'missing',id+': '+n);}
+ assert.equal(MIXED_PACKS.includes(pack('leaf-wrapped-food')),false,'unfinished leaf source audit remains outside play');
+});
+
+
+test('object categories keep ordinary names while rejecting misleading source senses',()=>{
+ for(const [id,names]of [
+ ['sound-equipment',['Mic','Headphones','Soundbar','Sound card','Audio mixer']],
+ ['sports-balls',['Pickleball','American football','Soccer ball','Sliotar']],
+ ['physical-barriers',['Bollard','Moat','Boom gate','Jersey barrier']],
+ ['bottle-flask-kinds',['Thermos','Baby bottle','Volumetric flask','Hip flask']],
+ ['box-container-kinds',['Jewellery box','Lunch box','Safe deposit box','Lockbox']],
+ ['chair-styles',['Gaming chair','Beanbag chair','High chair','Office chair']],
+ ['coats-jackets',['Windbreaker','Parka','Anorak','Puffer jacket']],
+ ['fabric-kinds',['Cotton','Linen','Denim','Corduroy','Spandex','Lycra','Tencel']],
+ ['fastener-kinds',['Zip tie','Cable tie','Velcro','Cotter pin','Split pin','Paper clip']],
+ ['headwear-kinds',['Top hat','Panama hat','Fedora','Homburg','Trilby','Kippah']],
+ ['knife-kinds',['Chefs knife','Santoku','Kukri','Box cutter']],
+ ['lamp-lighting-kinds',['Desk lamp','Lava lamp','Chandelier','Blacklight']],
+ ['computer-storage-memory',['CD','DVD','SSD','SD card','CPU register','Hard drive','RAM']],
+ ['motor-vehicle-categories',['Bus','Motorhome','Motorcycle','ATV','Snowmobile']],
+ ['optical-equipment-kinds',['Telescope','Microscope','Binoculars','Magnifying glass']],
+ ['photography-equipment',['Tripod','Camera lens','Darkroom developer','Film reel']],
+ ['worship-building-kinds',['Mosque','Synagogue','Gurdwara','Mandir','Monastery']],
+ ['paint-kinds',['Oil paint','Watercolor','Emulsion paint','Acrylic paint']],
+ ['tower-kinds',['Water tower','Lighthouse','Clock tower','Cooling tower']],
+ ['watercraft-kinds',['Raft','Canoe','Rowboat','Nuclear submarine','Jet ski','Dugout']]
+ ])for(const n of names)assert.equal(resolveAnswer(pack(id),n).status,'exact',id+': '+n);
+ for(const [id,names]of [
+ ['sound-equipment',['School bell','Silencer']],
+ ['sports-balls',['Punching bag','Hockey puck']],
+ ['fabric-kinds',['Bath towel','Balloon sail','Chicken wire']],
+ ['fastener-kinds',['Gordian knot','Sealing wax']],
+ ['headwear-kinds',['Wishing cap']],
+ ['computer-storage-memory',['Cover song','Laugh track']],
+ ['motor-vehicle-categories',['Model T','Stanley Steamer']],
+ ['optical-equipment-kinds',['Mass spectrometer','Sound spectrograph']],
+ ['photography-equipment',['Clapperboard','Film clip']],
+ ['watercraft-kinds',['Shipwreck','Ark']]
+ ]){const p=pack(id);for(const n of names)assert.equal(resolveAnswer({...p,answers:p.answers,excludedAnswers:names},n).status,'missing',id+': '+n);}
+ for(const [id,a,b]of [['coats-jackets','Parka','Windbreaker'],['headwear-kinds','Fedora','Homburg'],['headwear-kinds','Panama hat','Boater'],['fastener-kinds','Carabiner','Circlip'],['computer-storage-memory','CD','DVD']])assert.notEqual(resolveAnswer(pack(id),a).answer.label,resolveAnswer(pack(id),b).answer.label,'misleading source synonym: '+a+'/'+b);
+ for(const [id,a,b]of [['sports-balls','Pickleball','Pickleball ball'],['fabric-kinds','Lycra','Spandex'],['box-container-kinds','Lockbox','Safe deposit box'],['fastener-kinds','Cotter pin','Split pin'],['headwear-kinds','Kippah','Yarmulke'],['watercraft-kinds','Dugout','Dugout canoe']])assert.equal(resolveAnswer(pack(id),a).answer.label,resolveAnswer(pack(id),b).answer.label,id+': one identity');
+ for(const id of ['headwear-kinds','computer-storage-memory','photography-equipment'])for(const n of ['AB','ZX'])assert.equal(resolveAnswer(pack(id),n).status,'missing','no generated initials');
+});

@@ -8,6 +8,7 @@ export function questionFormat(pack){
   'authored-properties':'Everyday observations',
   'authored-situations':'Everyday situations',
   'authored-whole-concept':'Names & categories',
+  'authored-whole-object-concept':'Objects, tools & materials',
   'authored-whole-artist-catalog':'Songs by one artist',
   'authored-whole-franchise-roster':'Players by franchise',
   'authored-whole-roster':'Characters & rosters',

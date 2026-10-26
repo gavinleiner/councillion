@@ -1,0 +1,4939 @@
+{
+  "status": "Independent authoring inputs only; not admitted questions. Whole recognizable object categories, not property/tag combinations. Each inventory still needs scope, source, alias and common-answer checks.",
+  "questions": [
+    {
+      "key": "sound-equipment",
+      "root": "acoustic_device.n.01",
+      "family": "science",
+      "prompt": "Name an audio listening, recording or amplification device.",
+      "familiar": [
+        "Microphone",
+        "Loudspeaker",
+        "Headphones",
+        "Earbuds",
+        "Megaphone",
+        "Hearing aid",
+        "Soundbar",
+        "Subwoofer",
+        "Earphone",
+        "Bullhorn",
+        "PA system",
+        "Headset",
+        "Radio",
+        "Telephone",
+        "Bluetooth speaker",
+        "Smart speaker",
+        "Amplifier",
+        "Record player",
+        "Audio interface",
+        "Sound card"
+      ],
+      "exclude": [
+        "Camera lens",
+        "Silent film"
+      ],
+      "scope": "Physical devices for listening to, picking up, recording, reproducing or amplifying audio count. Musical instruments by themselves, warning bells and noise-suppression-only devices do not.",
+      "holds": {
+        "mute": "Warning sound producer, instrument part or attenuator; outside listening/recording/amplification scope.",
+        "sourdine": "Warning sound producer, instrument part or attenuator; outside listening/recording/amplification scope.",
+        "silencer": "Warning sound producer, instrument part or attenuator; outside listening/recording/amplification scope.",
+        "bell": "Warning sound producer, instrument part or attenuator; outside listening/recording/amplification scope.",
+        "birdcall": "Warning sound producer, instrument part or attenuator; outside listening/recording/amplification scope.",
+        "boat whistle": "Warning sound producer, instrument part or attenuator; outside listening/recording/amplification scope.",
+        "church bell": "Warning sound producer, instrument part or attenuator; outside listening/recording/amplification scope.",
+        "cowbell": "Warning sound producer, instrument part or attenuator; outside listening/recording/amplification scope.",
+        "death knell": "Warning sound producer, instrument part or attenuator; outside listening/recording/amplification scope.",
+        "dinner bell": "Warning sound producer, instrument part or attenuator; outside listening/recording/amplification scope.",
+        "electric bell": "Warning sound producer, instrument part or attenuator; outside listening/recording/amplification scope.",
+        "factory whistle": "Warning sound producer, instrument part or attenuator; outside listening/recording/amplification scope.",
+        "fire bell": "Warning sound producer, instrument part or attenuator; outside listening/recording/amplification scope.",
+        "mouthpiece": "Warning sound producer, instrument part or attenuator; outside listening/recording/amplification scope.",
+        "school bell": "Warning sound producer, instrument part or attenuator; outside listening/recording/amplification scope.",
+        "sheep bell": "Warning sound producer, instrument part or attenuator; outside listening/recording/amplification scope.",
+        "shop bell": "Warning sound producer, instrument part or attenuator; outside listening/recording/amplification scope.",
+        "siren": "Warning sound producer, instrument part or attenuator; outside listening/recording/amplification scope.",
+        "slapstick": "Warning sound producer, instrument part or attenuator; outside listening/recording/amplification scope.",
+        "sleigh bell": "Warning sound producer, instrument part or attenuator; outside listening/recording/amplification scope.",
+        "steam whistle": "Warning sound producer, instrument part or attenuator; outside listening/recording/amplification scope.",
+        "telephone bell": "Warning sound producer, instrument part or attenuator; outside listening/recording/amplification scope.",
+        "tocsin": "Warning sound producer, instrument part or attenuator; outside listening/recording/amplification scope.",
+        "whistle": "Warning sound producer, instrument part or attenuator; outside listening/recording/amplification scope."
+      },
+      "aliasHolds": {},
+      "renames": {},
+      "additions": [
+        {
+          "label": "Microphone",
+          "aliases": [
+            "Mic"
+          ]
+        },
+        {
+          "label": "Loudspeaker",
+          "aliases": [
+            "Speaker"
+          ]
+        },
+        {
+          "label": "Headphones",
+          "aliases": [
+            "Headphone"
+          ]
+        },
+        {
+          "label": "Earbuds",
+          "aliases": [
+            "Earbud"
+          ]
+        },
+        {
+          "label": "Soundbar",
+          "aliases": []
+        },
+        {
+          "label": "Subwoofer",
+          "aliases": []
+        },
+        {
+          "label": "Earphone",
+          "aliases": [
+            "Earphones"
+          ]
+        },
+        {
+          "label": "Bullhorn",
+          "aliases": []
+        },
+        {
+          "label": "PA system",
+          "aliases": [
+            "Public address system"
+          ]
+        },
+        {
+          "label": "Headset",
+          "aliases": []
+        },
+        {
+          "label": "Amplifier",
+          "aliases": [
+            "Audio amplifier",
+            "Amp"
+          ]
+        },
+        {
+          "label": "Record player",
+          "aliases": [
+            "Turntable"
+          ]
+        },
+        {
+          "label": "Gramophone",
+          "aliases": [
+            "Phonograph"
+          ]
+        },
+        {
+          "label": "Telephone",
+          "aliases": []
+        },
+        {
+          "label": "Radio",
+          "aliases": []
+        },
+        {
+          "label": "CD player",
+          "aliases": []
+        },
+        {
+          "label": "MP3 player",
+          "aliases": []
+        },
+        {
+          "label": "Tape player",
+          "aliases": [
+            "Cassette player"
+          ]
+        },
+        {
+          "label": "Bluetooth speaker",
+          "aliases": []
+        },
+        {
+          "label": "Smart speaker",
+          "aliases": []
+        },
+        {
+          "label": "Stethoscope",
+          "aliases": []
+        },
+        {
+          "label": "Hydrophone",
+          "aliases": []
+        },
+        {
+          "label": "Intercom",
+          "aliases": []
+        },
+        {
+          "label": "Tweeter",
+          "aliases": []
+        },
+        {
+          "label": "Woofer",
+          "aliases": []
+        },
+        {
+          "label": "Condenser microphone",
+          "aliases": []
+        },
+        {
+          "label": "Dynamic microphone",
+          "aliases": []
+        },
+        {
+          "label": "Ribbon microphone",
+          "aliases": []
+        },
+        {
+          "label": "Lavalier microphone",
+          "aliases": [
+            "Lapel microphone"
+          ]
+        },
+        {
+          "label": "Shotgun microphone",
+          "aliases": []
+        },
+        {
+          "label": "Contact microphone",
+          "aliases": []
+        },
+        {
+          "label": "Bone conduction headphones",
+          "aliases": []
+        },
+        {
+          "label": "Wireless microphone",
+          "aliases": []
+        },
+        {
+          "label": "Audio interface",
+          "aliases": []
+        },
+        {
+          "label": "Sound card",
+          "aliases": []
+        },
+        {
+          "label": "Mixing console",
+          "aliases": [
+            "Audio mixer",
+            "Mixer"
+          ]
+        },
+        {
+          "label": "Digital audio converter",
+          "aliases": [
+            "DAC",
+            "Digital to analog converter"
+          ]
+        },
+        {
+          "label": "AV receiver",
+          "aliases": [
+            "Audio receiver"
+          ]
+        },
+        {
+          "label": "Tape recorder",
+          "aliases": []
+        },
+        {
+          "label": "Reel to reel recorder",
+          "aliases": []
+        },
+        {
+          "label": "Boombox",
+          "aliases": []
+        },
+        {
+          "label": "Walkman",
+          "aliases": []
+        },
+        {
+          "label": "Portable audio player",
+          "aliases": []
+        },
+        {
+          "label": "Digital voice recorder",
+          "aliases": []
+        },
+        {
+          "label": "Field recorder",
+          "aliases": []
+        },
+        {
+          "label": "In ear monitor",
+          "aliases": [
+            "IEM"
+          ]
+        },
+        {
+          "label": "Monitor speaker",
+          "aliases": []
+        },
+        {
+          "label": "DI box",
+          "aliases": [
+            "Direct box"
+          ]
+        },
+        {
+          "label": "Preamplifier",
+          "aliases": [
+            "Preamp"
+          ]
+        },
+        {
+          "label": "Phono preamp",
+          "aliases": []
+        },
+        {
+          "label": "Headphone amplifier",
+          "aliases": []
+        },
+        {
+          "label": "Ear trumpet",
+          "aliases": []
+        },
+        {
+          "label": "Acoustic horn",
+          "aliases": []
+        }
+      ],
+      "references": [
+        "https://wordnet.princeton.edu/",
+        "https://www.shure.com/en-US",
+        "https://www.shure.com/en-ASIA/products"
+      ],
+      "rare": "Hydrophone",
+      "merges": [
+        {
+          "from": "Bullhorn",
+          "into": "Megaphone"
+        },
+        {
+          "from": "Speaking trumpet",
+          "into": "Megaphone"
+        }
+      ]
+    },
+    {
+      "key": "sports-balls",
+      "root": "ball.n.01",
+      "family": "sports",
+      "prompt": "Name a type of ball used in a sport, game or athletic training.",
+      "familiar": [
+        "Soccer ball",
+        "Basketball",
+        "Baseball",
+        "Tennis ball",
+        "Golf ball",
+        "Volleyball",
+        "Rugby ball",
+        "Cricket ball",
+        "Softball",
+        "Bowling ball",
+        "Billiard ball",
+        "Ping pong ball",
+        "Pickleball",
+        "Wiffle ball",
+        "Dodgeball",
+        "Kickball",
+        "Water polo ball",
+        "Beach ball",
+        "Racquetball",
+        "Squash ball",
+        "Paintball",
+        "Netball",
+        "Futsal ball"
+      ],
+      "exclude": [
+        "Hockey puck",
+        "Shuttlecock"
+      ],
+      "scope": "Named balls used in sports, games or athletic training count, including particular game-ball designs. Pucks, shuttlecocks and punching bags are not balls.",
+      "holds": {
+        "punching bag": "A bag or suspended training target is not a ball, despite source aliases."
+      },
+      "aliasHolds": {
+        "bowling ball": [
+          "bowl"
+        ]
+      },
+      "renames": {
+        "football": "American football",
+        "bowl": "Lawn bowls ball",
+        "jack": "Bowls jack",
+        "taw": "Marble shooter",
+        "Wiffle": "Wiffle ball"
+      },
+      "additions": [
+        {
+          "label": "American football",
+          "aliases": [
+            "Football"
+          ]
+        },
+        {
+          "label": "Pickleball",
+          "aliases": []
+        },
+        {
+          "label": "Netball",
+          "aliases": []
+        },
+        {
+          "label": "Futsal ball",
+          "aliases": []
+        },
+        {
+          "label": "Dodgeball",
+          "aliases": []
+        },
+        {
+          "label": "Kickball",
+          "aliases": []
+        },
+        {
+          "label": "Water polo ball",
+          "aliases": []
+        },
+        {
+          "label": "Beach ball",
+          "aliases": []
+        },
+        {
+          "label": "Sepak takraw ball",
+          "aliases": []
+        },
+        {
+          "label": "Hurling ball",
+          "aliases": [
+            "Sliotar"
+          ]
+        },
+        {
+          "label": "Shinty ball",
+          "aliases": []
+        },
+        {
+          "label": "Pelota",
+          "aliases": []
+        },
+        {
+          "label": "Pétanque ball",
+          "aliases": [
+            "Petanque boule"
+          ]
+        },
+        {
+          "label": "Gaelic football",
+          "aliases": []
+        },
+        {
+          "label": "Medicine ball",
+          "aliases": []
+        },
+        {
+          "label": "Bandy ball",
+          "aliases": []
+        },
+        {
+          "label": "Floorball",
+          "aliases": []
+        },
+        {
+          "label": "Hockey ball",
+          "aliases": []
+        },
+        {
+          "label": "Paintball",
+          "aliases": []
+        },
+        {
+          "label": "Airsoft pellet",
+          "aliases": [
+            "Airsoft BB"
+          ]
+        },
+        {
+          "label": "Slam ball",
+          "aliases": []
+        },
+        {
+          "label": "Exercise ball",
+          "aliases": [
+            "Stability ball",
+            "Swiss ball"
+          ]
+        },
+        {
+          "label": "Beach volleyball",
+          "aliases": []
+        },
+        {
+          "label": "Pickleball ball",
+          "aliases": []
+        }
+      ],
+      "references": [
+        "https://wordnet.princeton.edu/",
+        "https://www.wilson.com/en-us/collections/basketball-balls",
+        "https://www.wilson.com/en-us/soccer",
+        "https://www.nike.com/w/all-products-balls-3ci69z580b1z8hfx3zbdka"
+      ],
+      "rare": "Ninepin ball",
+      "merges": [
+        {
+          "from": "Pickleball ball",
+          "into": "Pickleball"
+        }
+      ]
+    },
+    {
+      "key": "physical-barriers",
+      "root": "barrier.n.01",
+      "family": "everyday",
+      "prompt": "Name a kind of physical barrier.",
+      "familiar": [
+        "Fence",
+        "Wall",
+        "Gate",
+        "Barricade",
+        "Bollard",
+        "Turnstile",
+        "Guardrail",
+        "Roadblock",
+        "Boom barrier",
+        "Crash barrier",
+        "Door",
+        "Moat"
+      ],
+      "exclude": [
+        "Software firewall",
+        "Language barrier"
+      ],
+      "scope": "Physical barriers such as walls, doors, fences, gates and protective barriers count. Figurative barriers and software do not.",
+      "holds": {},
+      "aliasHolds": {},
+      "renames": {
+        "fender": "Vehicle fender",
+        "fife rail": "Ship fife rail",
+        "grille": "Radiator grille",
+        "dry wall": "Dry stone wall"
+      },
+      "additions": [
+        {
+          "label": "Bollard",
+          "aliases": []
+        },
+        {
+          "label": "Boom barrier",
+          "aliases": [
+            "Boom gate",
+            "Barrier arm"
+          ]
+        },
+        {
+          "label": "Moat",
+          "aliases": []
+        },
+        {
+          "label": "Security barrier",
+          "aliases": []
+        },
+        {
+          "label": "Traffic cone",
+          "aliases": []
+        },
+        {
+          "label": "Noise barrier",
+          "aliases": [
+            "Sound barrier"
+          ]
+        },
+        {
+          "label": "Flood barrier",
+          "aliases": []
+        },
+        {
+          "label": "Blast wall",
+          "aliases": []
+        },
+        {
+          "label": "Stanchion",
+          "aliases": []
+        },
+        {
+          "label": "Rope barrier",
+          "aliases": []
+        },
+        {
+          "label": "Chain barrier",
+          "aliases": []
+        },
+        {
+          "label": "Barbed wire",
+          "aliases": [
+            "Barbed wire fence"
+          ]
+        },
+        {
+          "label": "Razor wire",
+          "aliases": []
+        },
+        {
+          "label": "Electric fence",
+          "aliases": []
+        },
+        {
+          "label": "Construction hoarding",
+          "aliases": []
+        },
+        {
+          "label": "Jersey barrier",
+          "aliases": []
+        },
+        {
+          "label": "Snow fence",
+          "aliases": []
+        },
+        {
+          "label": "Silt fence",
+          "aliases": []
+        },
+        {
+          "label": "Privacy screen",
+          "aliases": []
+        },
+        {
+          "label": "Bollard barrier",
+          "aliases": []
+        }
+      ],
+      "references": [
+        "https://wordnet.princeton.edu/"
+      ],
+      "rare": "Lychgate",
+      "merges": [
+        {
+          "from": "Bollard barrier",
+          "into": "Bollard"
+        }
+      ]
+    },
+    {
+      "key": "bottle-flask-kinds",
+      "root": "bottle.n.01",
+      "family": "everyday",
+      "prompt": "Name a type of bottle or flask.",
+      "familiar": [
+        "Water bottle",
+        "Baby bottle",
+        "Spray bottle",
+        "Wine bottle",
+        "Beer bottle",
+        "Thermos",
+        "Squeeze bottle",
+        "Perfume bottle",
+        "Medicine bottle",
+        "Hip flask",
+        "Vacuum flask",
+        "Erlenmeyer flask"
+      ],
+      "exclude": [
+        "Bottle episode",
+        "Bottleneck in traffic"
+      ],
+      "scope": "Recognizable kinds of bottle or flask count, including scientific flasks and named bottle sizes. A brand alone does not identify a bottle type.",
+      "holds": {},
+      "aliasHolds": {},
+      "renames": {
+        "hipflask": "Hip flask",
+        "gourd": "Gourd bottle",
+        "phial": "Vial",
+        "thermos": "Vacuum flask",
+        "vacuum flask": "Vacuum flask"
+      },
+      "additions": [
+        {
+          "label": "Baby bottle",
+          "aliases": [
+            "Feeding bottle"
+          ]
+        },
+        {
+          "label": "Spray bottle",
+          "aliases": [
+            "Atomizer bottle"
+          ]
+        },
+        {
+          "label": "Squeeze bottle",
+          "aliases": []
+        },
+        {
+          "label": "Perfume bottle",
+          "aliases": []
+        },
+        {
+          "label": "Medicine bottle",
+          "aliases": []
+        },
+        {
+          "label": "Hip flask",
+          "aliases": []
+        },
+        {
+          "label": "Volumetric flask",
+          "aliases": []
+        },
+        {
+          "label": "Florence flask",
+          "aliases": [
+            "Boiling flask"
+          ]
+        },
+        {
+          "label": "Vacuum flask",
+          "aliases": [
+            "Thermos",
+            "Thermos bottle",
+            "Thermos flask",
+            "Vacuum bottle"
+          ]
+        },
+        {
+          "label": "Wash bottle",
+          "aliases": []
+        },
+        {
+          "label": "Reagent bottle",
+          "aliases": []
+        },
+        {
+          "label": "Laboratory bottle",
+          "aliases": []
+        },
+        {
+          "label": "Dropper bottle",
+          "aliases": []
+        },
+        {
+          "label": "Squeeze wash bottle",
+          "aliases": []
+        },
+        {
+          "label": "Plastic bottle",
+          "aliases": []
+        },
+        {
+          "label": "Glass bottle",
+          "aliases": []
+        },
+        {
+          "label": "Insulated bottle",
+          "aliases": []
+        },
+        {
+          "label": "Sports bottle",
+          "aliases": []
+        },
+        {
+          "label": "Champagne bottle",
+          "aliases": []
+        },
+        {
+          "label": "Milk bottle",
+          "aliases": []
+        },
+        {
+          "label": "Juice bottle",
+          "aliases": []
+        },
+        {
+          "label": "Oil bottle",
+          "aliases": []
+        },
+        {
+          "label": "Hot water bottle",
+          "aliases": []
+        },
+        {
+          "label": "Pump bottle",
+          "aliases": []
+        },
+        {
+          "label": "Shampoo bottle",
+          "aliases": []
+        },
+        {
+          "label": "Detergent bottle",
+          "aliases": []
+        },
+        {
+          "label": "Growler",
+          "aliases": []
+        },
+        {
+          "label": "Swing top bottle",
+          "aliases": []
+        },
+        {
+          "label": "Boston round bottle",
+          "aliases": []
+        },
+        {
+          "label": "Hip flask",
+          "aliases": [
+            "Hipflask"
+          ]
+        }
+      ],
+      "references": [
+        "https://wordnet.princeton.edu/"
+      ],
+      "rare": "Nebuchadnezzar",
+      "merges": []
+    },
+    {
+      "key": "box-container-kinds",
+      "root": "box.n.01",
+      "family": "everyday",
+      "prompt": "Name a kind of box or boxed storage container.",
+      "familiar": [
+        "Cardboard box",
+        "Shoebox",
+        "Toolbox",
+        "Lunchbox",
+        "Jewelry box",
+        "Cardboard carton",
+        "Cereal box",
+        "Mailbox",
+        "Music box",
+        "Matchbox",
+        "Cashbox",
+        "Toy box"
+      ],
+      "exclude": [
+        "Boxing match",
+        "Box office revenue"
+      ],
+      "scope": "Types of physical box, chest, crate and boxed storage container count, including cases with a recognizable box form. Metaphorical boxes and software do not.",
+      "holds": {
+        "bier": "Coffin plus stand is an assembly, not a separate box design.",
+        "six-pack": "Quantity/packaging arrangement, not a kind of box."
+      },
+      "aliasHolds": {
+        "casket": [
+          "casket"
+        ]
+      },
+      "renames": {
+        "casket": "Jewelry box",
+        "flat": "Seedling tray",
+        "safe-deposit": "Safe deposit box"
+      },
+      "additions": [
+        {
+          "label": "Cardboard box",
+          "aliases": []
+        },
+        {
+          "label": "Lunchbox",
+          "aliases": [
+            "Lunch box"
+          ]
+        },
+        {
+          "label": "Jewelry box",
+          "aliases": [
+            "Jewellery box",
+            "Jewel casket"
+          ]
+        },
+        {
+          "label": "Cardboard carton",
+          "aliases": []
+        },
+        {
+          "label": "Cereal box",
+          "aliases": []
+        },
+        {
+          "label": "Shoe box",
+          "aliases": []
+        },
+        {
+          "label": "Gift box",
+          "aliases": []
+        },
+        {
+          "label": "Storage box",
+          "aliases": []
+        },
+        {
+          "label": "Document box",
+          "aliases": []
+        },
+        {
+          "label": "File box",
+          "aliases": []
+        },
+        {
+          "label": "Pizza box",
+          "aliases": []
+        },
+        {
+          "label": "Takeout box",
+          "aliases": [
+            "Takeaway box"
+          ]
+        },
+        {
+          "label": "Bento box",
+          "aliases": []
+        },
+        {
+          "label": "Music box",
+          "aliases": []
+        },
+        {
+          "label": "Lockbox",
+          "aliases": [
+            "Safe deposit box"
+          ]
+        },
+        {
+          "label": "Cooler box",
+          "aliases": [
+            "Ice chest"
+          ]
+        },
+        {
+          "label": "First aid box",
+          "aliases": []
+        },
+        {
+          "label": "Junction box",
+          "aliases": []
+        },
+        {
+          "label": "Fuse box",
+          "aliases": []
+        },
+        {
+          "label": "Pet carrier",
+          "aliases": []
+        },
+        {
+          "label": "Shipping box",
+          "aliases": []
+        },
+        {
+          "label": "Moving box",
+          "aliases": []
+        },
+        {
+          "label": "Plastic storage box",
+          "aliases": []
+        },
+        {
+          "label": "Watch box",
+          "aliases": []
+        },
+        {
+          "label": "Ring box",
+          "aliases": []
+        },
+        {
+          "label": "Bread box",
+          "aliases": [
+            "Bread bin"
+          ]
+        },
+        {
+          "label": "Hatbox",
+          "aliases": [
+            "Hat box"
+          ]
+        },
+        {
+          "label": "Trinket box",
+          "aliases": []
+        },
+        {
+          "label": "Suggestion box",
+          "aliases": []
+        }
+      ],
+      "references": [
+        "https://wordnet.princeton.edu/"
+      ],
+      "rare": "Pyxis",
+      "merges": [
+        {
+          "from": "Lockbox",
+          "into": "Safe deposit box"
+        }
+      ],
+      "omitOriginalAliases": [
+        "casket"
+      ]
+    },
+    {
+      "key": "chair-styles",
+      "root": "chair.n.01",
+      "family": "everyday",
+      "prompt": "Name a type of chair or stool.",
+      "familiar": [
+        "Armchair",
+        "Rocking chair",
+        "Office chair",
+        "Dining chair",
+        "Wheelchair",
+        "Folding chair",
+        "Deck chair",
+        "Recliner",
+        "High chair",
+        "Barber chair",
+        "Beanbag chair",
+        "Gaming chair"
+      ],
+      "exclude": [
+        "Chairperson",
+        "Dining table"
+      ],
+      "scope": "Recognizable chair and seated-stool designs count, past or present. Benches, couches, named individual thrones and the person chairing a meeting do not.",
+      "holds": {
+        "mercy seat": "Specific religious object in the source sense, not a general chair design.",
+        "peacock-throne": "Named individual throne, not a chair type."
+      },
+      "aliasHolds": {},
+      "renames": {
+        "highchair": "High chair"
+      },
+      "additions": [
+        {
+          "label": "Office chair",
+          "aliases": [
+            "Desk chair"
+          ]
+        },
+        {
+          "label": "Dining chair",
+          "aliases": []
+        },
+        {
+          "label": "Beanbag chair",
+          "aliases": [
+            "Bean bag chair"
+          ]
+        },
+        {
+          "label": "Gaming chair",
+          "aliases": []
+        },
+        {
+          "label": "Bar stool",
+          "aliases": []
+        },
+        {
+          "label": "Stool",
+          "aliases": []
+        },
+        {
+          "label": "Director chair",
+          "aliases": [
+            "Director's chair"
+          ]
+        },
+        {
+          "label": "Accent chair",
+          "aliases": []
+        },
+        {
+          "label": "Adirondack chair",
+          "aliases": []
+        },
+        {
+          "label": "Egg chair",
+          "aliases": []
+        },
+        {
+          "label": "Papasan chair",
+          "aliases": []
+        },
+        {
+          "label": "Tub chair",
+          "aliases": []
+        },
+        {
+          "label": "Club chair",
+          "aliases": []
+        },
+        {
+          "label": "Slipper chair",
+          "aliases": []
+        },
+        {
+          "label": "Kneeling chair",
+          "aliases": []
+        },
+        {
+          "label": "Task chair",
+          "aliases": []
+        },
+        {
+          "label": "Cantilever chair",
+          "aliases": []
+        },
+        {
+          "label": "Sling chair",
+          "aliases": []
+        },
+        {
+          "label": "Stacking chair",
+          "aliases": []
+        },
+        {
+          "label": "Ghost chair",
+          "aliases": []
+        },
+        {
+          "label": "Hanging chair",
+          "aliases": []
+        },
+        {
+          "label": "Wicker chair",
+          "aliases": []
+        },
+        {
+          "label": "Lift chair",
+          "aliases": []
+        },
+        {
+          "label": "Massage chair",
+          "aliases": []
+        },
+        {
+          "label": "Dental chair",
+          "aliases": []
+        },
+        {
+          "label": "Shower chair",
+          "aliases": []
+        },
+        {
+          "label": "Commode chair",
+          "aliases": []
+        },
+        {
+          "label": "Electric chair",
+          "aliases": []
+        },
+        {
+          "label": "Zero gravity chair",
+          "aliases": []
+        },
+        {
+          "label": "High chair",
+          "aliases": [
+            "Highchair"
+          ]
+        },
+        {
+          "label": "Counter stool",
+          "aliases": []
+        },
+        {
+          "label": "Piano stool",
+          "aliases": []
+        },
+        {
+          "label": "Drum throne",
+          "aliases": []
+        },
+        {
+          "label": "Saddle stool",
+          "aliases": []
+        },
+        {
+          "label": "Milking stool",
+          "aliases": []
+        },
+        {
+          "label": "Camping stool",
+          "aliases": []
+        },
+        {
+          "label": "Footstool",
+          "aliases": []
+        },
+        {
+          "label": "Step stool",
+          "aliases": []
+        },
+        {
+          "label": "Swivel stool",
+          "aliases": []
+        },
+        {
+          "label": "Drafting chair",
+          "aliases": []
+        },
+        {
+          "label": "Executive chair",
+          "aliases": []
+        },
+        {
+          "label": "Ergonomic chair",
+          "aliases": []
+        },
+        {
+          "label": "Folding stool",
+          "aliases": []
+        }
+      ],
+      "references": [
+        "https://wordnet.princeton.edu/",
+        "https://www.ikea.com/us/en/cat/chairs-fu002/"
+      ],
+      "rare": "Musnud",
+      "merges": []
+    },
+    {
+      "key": "coats-jackets",
+      "root": "coat.n.01",
+      "family": "everyday",
+      "prompt": "Name a style of coat or jacket.",
+      "familiar": [
+        "Raincoat",
+        "Parka",
+        "Trench coat",
+        "Peacoat",
+        "Bomber jacket",
+        "Blazer",
+        "Denim jacket",
+        "Leather jacket",
+        "Puffer jacket",
+        "Windbreaker",
+        "Anorak",
+        "Duffle coat"
+      ],
+      "exclude": [
+        "Coat of paint",
+        "Lab coat color"
+      ],
+      "scope": "Named coat and jacket styles count, including workwear and historical garments. Materials alone and coats of paint do not.",
+      "holds": {},
+      "aliasHolds": {
+        "parka": [
+          "windbreaker",
+          "windcheater",
+          "anorak"
+        ],
+        "swallow-tailed coat": [
+          "morning coat"
+        ]
+      },
+      "renames": {
+        "mink": "Mink coat",
+        "Prince Albert": "Prince Albert coat",
+        "sack": "Sack jacket",
+        "topper": "Topper coat",
+        "newmarket": "Newmarket coat",
+        "jumper": "Work jacket"
+      },
+      "additions": [
+        {
+          "label": "Denim jacket",
+          "aliases": [
+            "Jean jacket"
+          ]
+        },
+        {
+          "label": "Leather jacket",
+          "aliases": []
+        },
+        {
+          "label": "Puffer jacket",
+          "aliases": [
+            "Down jacket"
+          ]
+        },
+        {
+          "label": "Windbreaker",
+          "aliases": [
+            "Windcheater"
+          ]
+        },
+        {
+          "label": "Anorak",
+          "aliases": []
+        },
+        {
+          "label": "Parka",
+          "aliases": []
+        },
+        {
+          "label": "Trenchcoat",
+          "aliases": [
+            "Trench coat"
+          ]
+        },
+        {
+          "label": "Peacoat",
+          "aliases": [
+            "Pea coat",
+            "Pea jacket"
+          ]
+        },
+        {
+          "label": "Fleece jacket",
+          "aliases": []
+        },
+        {
+          "label": "Track jacket",
+          "aliases": []
+        },
+        {
+          "label": "Varsity jacket",
+          "aliases": [
+            "Letterman jacket"
+          ]
+        },
+        {
+          "label": "Harrington jacket",
+          "aliases": []
+        },
+        {
+          "label": "Coach jacket",
+          "aliases": []
+        },
+        {
+          "label": "Tuxedo jacket",
+          "aliases": [
+            "Dinner jacket"
+          ]
+        },
+        {
+          "label": "Suit jacket",
+          "aliases": []
+        },
+        {
+          "label": "Field jacket",
+          "aliases": []
+        },
+        {
+          "label": "Safari jacket",
+          "aliases": []
+        },
+        {
+          "label": "Quilted jacket",
+          "aliases": []
+        },
+        {
+          "label": "Softshell jacket",
+          "aliases": []
+        },
+        {
+          "label": "Hardshell jacket",
+          "aliases": []
+        },
+        {
+          "label": "Biker jacket",
+          "aliases": [
+            "Motorcycle jacket"
+          ]
+        },
+        {
+          "label": "Flight jacket",
+          "aliases": []
+        },
+        {
+          "label": "Duster coat",
+          "aliases": []
+        },
+        {
+          "label": "Car coat",
+          "aliases": []
+        },
+        {
+          "label": "Chore coat",
+          "aliases": []
+        },
+        {
+          "label": "Rain jacket",
+          "aliases": []
+        },
+        {
+          "label": "Waterproof jacket",
+          "aliases": []
+        },
+        {
+          "label": "Smoking jacket",
+          "aliases": []
+        }
+      ],
+      "references": [
+        "https://wordnet.princeton.edu/"
+      ],
+      "rare": "Hug-me-tight",
+      "merges": []
+    },
+    {
+      "key": "fabric-kinds",
+      "root": "fabric.n.01",
+      "family": "everyday",
+      "prompt": "Name a type of fabric or textile material.",
+      "familiar": [
+        "Cotton",
+        "Silk",
+        "Linen",
+        "Denim",
+        "Wool",
+        "Velvet",
+        "Satin",
+        "Corduroy",
+        "Tweed",
+        "Polyester",
+        "Nylon",
+        "Fleece",
+        "Canvas",
+        "Chiffon",
+        "Lace",
+        "Tulle",
+        "Spandex",
+        "Lycra",
+        "Cashmere",
+        "Felt",
+        "Flannel",
+        "Burlap",
+        "Rayon",
+        "Leather",
+        "Suede",
+        "Faux fur",
+        "Terry cloth",
+        "Mesh fabric"
+      ],
+      "exclude": [
+        "Steel plate",
+        "Glass pane"
+      ],
+      "scope": "Named textile fabrics and textile materials count. Finished garments, towels, sails, loose cut pieces and metal meshes do not count merely because a dictionary groups them under cloth.",
+      "holds": {
+        "balloon sail": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type.",
+        "bandanna": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type.",
+        "bath towel": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type.",
+        "beach towel": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type.",
+        "bib": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type.",
+        "canopy": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type.",
+        "chicken wire": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type.",
+        "crossjack": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type.",
+        "dishrag": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type.",
+        "dishtowel": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type.",
+        "drapery": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type.",
+        "drop cloth": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type.",
+        "dust cover": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type.",
+        "dustcloth": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type.",
+        "end": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type.",
+        "fag end": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type.",
+        "flash": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type.",
+        "flying jib": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type.",
+        "fore-and-aft sail": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type.",
+        "fore-topsail": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type.",
+        "foresail": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type.",
+        "gaff topsail": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type.",
+        "gaffsail": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type.",
+        "gore": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type.",
+        "groundsheet": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type.",
+        "guimpe": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type.",
+        "gusset": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type.",
+        "hairnet": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type.",
+        "hand towel": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type.",
+        "handkerchief": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type.",
+        "headsail": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type.",
+        "jib": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type.",
+        "lateen": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type.",
+        "liner": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type.",
+        "lugsail": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type.",
+        "lungi": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type.",
+        "main-topsail": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type.",
+        "main course": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type.",
+        "mainsail": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type.",
+        "mizzen": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type.",
+        "paper towel": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type.",
+        "pasty": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type.",
+        "patch": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type.",
+        "petrolatum gauze": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type.",
+        "piece of cloth": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type.",
+        "pine-tar rag": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type.",
+        "placket": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type.",
+        "pocket-handkerchief": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type.",
+        "press of sail": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type.",
+        "rag": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type.",
+        "roller towel": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type.",
+        "royal": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type.",
+        "safety net": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type.",
+        "sail": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type.",
+        "save-all": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type.",
+        "screening": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type.",
+        "shirttail": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type.",
+        "shoulder patch": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type.",
+        "skysail": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type.",
+        "snood": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type.",
+        "spanker": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type.",
+        "spark arrester": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type.",
+        "spinnaker": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type.",
+        "spritsail": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type.",
+        "square sail": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type.",
+        "staysail": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type.",
+        "swatch": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type.",
+        "tarpaulin": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type.",
+        "topgallant": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type.",
+        "topsail": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type.",
+        "towel": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type.",
+        "train": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type.",
+        "tucker": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type.",
+        "Turkish towel": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type.",
+        "wire cloth": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type.",
+        "wirework": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type.",
+        "yoke": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type.",
+        "fiber": "Compressed paper/cloth industrial board in this source sense, not a textile fabric type."
+      },
+      "aliasHolds": {},
+      "renames": {
+        "cord": "Corduroy",
+        "mousseline de sole": "Mousseline de soie",
+        "suede cloth": "Suede cloth",
+        "fiber": "Vulcanized fiber"
+      },
+      "additions": [
+        {
+          "label": "Lycra",
+          "aliases": [
+            "Spandex",
+            "Elastane"
+          ]
+        },
+        {
+          "label": "Bamboo fabric",
+          "aliases": []
+        },
+        {
+          "label": "Hemp fabric",
+          "aliases": []
+        },
+        {
+          "label": "Modal",
+          "aliases": []
+        },
+        {
+          "label": "Lyocell",
+          "aliases": [
+            "Tencel"
+          ]
+        },
+        {
+          "label": "Neoprene",
+          "aliases": []
+        },
+        {
+          "label": "Scuba fabric",
+          "aliases": []
+        },
+        {
+          "label": "Mesh fabric",
+          "aliases": [
+            "Mesh"
+          ]
+        },
+        {
+          "label": "Jersey knit",
+          "aliases": []
+        },
+        {
+          "label": "Rib knit",
+          "aliases": []
+        },
+        {
+          "label": "Ponte",
+          "aliases": []
+        },
+        {
+          "label": "Minky",
+          "aliases": []
+        },
+        {
+          "label": "Sherpa fleece",
+          "aliases": []
+        },
+        {
+          "label": "Microfiber",
+          "aliases": [
+            "Microfibre"
+          ]
+        },
+        {
+          "label": "French terry",
+          "aliases": []
+        },
+        {
+          "label": "Interlock knit",
+          "aliases": []
+        },
+        {
+          "label": "Crushed velvet",
+          "aliases": []
+        },
+        {
+          "label": "Cotton lawn",
+          "aliases": []
+        },
+        {
+          "label": "Voile",
+          "aliases": []
+        },
+        {
+          "label": "Cupro",
+          "aliases": []
+        },
+        {
+          "label": "Ramie",
+          "aliases": []
+        },
+        {
+          "label": "Sewing felt",
+          "aliases": [
+            "Felt"
+          ]
+        },
+        {
+          "label": "Duck cloth",
+          "aliases": []
+        },
+        {
+          "label": "Terry cloth",
+          "aliases": [
+            "Terrycloth"
+          ]
+        },
+        {
+          "label": "Organza",
+          "aliases": []
+        },
+        {
+          "label": "Polyurethane leather",
+          "aliases": [
+            "PU leather"
+          ]
+        },
+        {
+          "label": "Faux fur",
+          "aliases": []
+        },
+        {
+          "label": "Faux leather",
+          "aliases": [
+            "Imitation leather",
+            "Leatherette"
+          ]
+        },
+        {
+          "label": "Leather",
+          "aliases": []
+        },
+        {
+          "label": "Suede",
+          "aliases": []
+        }
+      ],
+      "references": [
+        "https://wordnet.princeton.edu/"
+      ],
+      "rare": "Sarcenet",
+      "merges": [
+        {
+          "from": "Lycra",
+          "into": "Spandex"
+        },
+        {
+          "from": "Sewing felt",
+          "into": "Felt"
+        },
+        {
+          "from": "Duck cloth",
+          "into": "Duck"
+        },
+        {
+          "from": "Terry cloth",
+          "into": "Terry"
+        },
+        {
+          "from": "Faux leather",
+          "into": "Leatherette"
+        },
+        {
+          "from": "Mesh fabric",
+          "into": "Net"
+        }
+      ]
+    },
+    {
+      "key": "fastener-kinds",
+      "root": "fastener.n.02",
+      "family": "everyday",
+      "prompt": "Name a mechanical fastener or a fastening knot.",
+      "familiar": [
+        "Screw",
+        "Nail",
+        "Bolt",
+        "Nut",
+        "Rivet",
+        "Staple",
+        "Pin",
+        "Zip tie",
+        "Buckle",
+        "Button",
+        "Zipper",
+        "Hook and loop fastener",
+        "Clip",
+        "Cotter pin",
+        "Clamp",
+        "Snap fastener",
+        "Paper clip",
+        "Clothespin",
+        "Safety pin",
+        "Thumbtack",
+        "Hairpin",
+        "Carabiner",
+        "Padlock",
+        "Wing nut"
+      ],
+      "exclude": [
+        "Superglue",
+        "Welding"
+      ],
+      "scope": "Mechanical fasteners and named fastening knots count. Adhesives, welding, seals that only stop leaks, fictional knots and decorative marks do not.",
+      "holds": {
+        "bridge": "Source sense is an optical part, weld, leak seal, fictional object, support or gear thread; not an eligible mechanical fastener.",
+        "fillet": "Source sense is an optical part, weld, leak seal, fictional object, support or gear thread; not an eligible mechanical fastener.",
+        "gasket": "Source sense is an optical part, weld, leak seal, fictional object, support or gear thread; not an eligible mechanical fastener.",
+        "Gordian knot": "Source sense is an optical part, weld, leak seal, fictional object, support or gear thread; not an eligible mechanical fastener.",
+        "head gasket": "Source sense is an optical part, weld, leak seal, fictional object, support or gear thread; not an eligible mechanical fastener.",
+        "O ring": "Source sense is an optical part, weld, leak seal, fictional object, support or gear thread; not an eligible mechanical fastener.",
+        "piston ring": "Source sense is an optical part, weld, leak seal, fictional object, support or gear thread; not an eligible mechanical fastener.",
+        "sealing wax": "Source sense is an optical part, weld, leak seal, fictional object, support or gear thread; not an eligible mechanical fastener.",
+        "tee": "Source sense is an optical part, weld, leak seal, fictional object, support or gear thread; not an eligible mechanical fastener.",
+        "worm": "Source sense is an optical part, weld, leak seal, fictional object, support or gear thread; not an eligible mechanical fastener."
+      },
+      "aliasHolds": {
+        "lockring": [
+          "lock washer"
+        ],
+        "carabiner": [
+          "snap ring"
+        ],
+        "fisherman's knot": [
+          "true lover's knot"
+        ]
+      },
+      "renames": {
+        "slide fastener": "Zipper",
+        "snap": "Snap fastener",
+        "cringle": "Grommet",
+        "clout nail": "Clout nail",
+        "lockring": "Lock ring"
+      },
+      "additions": [
+        {
+          "label": "Nut",
+          "aliases": []
+        },
+        {
+          "label": "Zip tie",
+          "aliases": [
+            "Cable tie",
+            "Tie wrap"
+          ]
+        },
+        {
+          "label": "Hook and loop fastener",
+          "aliases": [
+            "Hook-and-loop fastener",
+            "Velcro"
+          ]
+        },
+        {
+          "label": "Clamp",
+          "aliases": []
+        },
+        {
+          "label": "C clamp",
+          "aliases": [
+            "G clamp"
+          ]
+        },
+        {
+          "label": "Hose clamp",
+          "aliases": [
+            "Jubilee clip"
+          ]
+        },
+        {
+          "label": "Spring clip",
+          "aliases": []
+        },
+        {
+          "label": "Binder clip",
+          "aliases": []
+        },
+        {
+          "label": "Circlip",
+          "aliases": [
+            "Snap ring"
+          ]
+        },
+        {
+          "label": "Retaining ring",
+          "aliases": []
+        },
+        {
+          "label": "Threaded rod",
+          "aliases": []
+        },
+        {
+          "label": "Anchor bolt",
+          "aliases": []
+        },
+        {
+          "label": "Expansion anchor",
+          "aliases": []
+        },
+        {
+          "label": "Wall plug",
+          "aliases": [
+            "Rawlplug"
+          ]
+        },
+        {
+          "label": "Rivet nut",
+          "aliases": []
+        },
+        {
+          "label": "Locknut",
+          "aliases": []
+        },
+        {
+          "label": "Wing nut",
+          "aliases": []
+        },
+        {
+          "label": "Hex nut",
+          "aliases": []
+        },
+        {
+          "label": "U bolt",
+          "aliases": []
+        },
+        {
+          "label": "J bolt",
+          "aliases": []
+        },
+        {
+          "label": "Eye bolt",
+          "aliases": []
+        },
+        {
+          "label": "Set screw",
+          "aliases": [
+            "Grub screw"
+          ]
+        },
+        {
+          "label": "Clamping collar",
+          "aliases": []
+        },
+        {
+          "label": "Quick release pin",
+          "aliases": []
+        },
+        {
+          "label": "R clip",
+          "aliases": [
+            "R pin",
+            "Hairpin cotter"
+          ]
+        },
+        {
+          "label": "Split pin",
+          "aliases": []
+        },
+        {
+          "label": "Lobster clasp",
+          "aliases": []
+        },
+        {
+          "label": "Toggle clasp",
+          "aliases": []
+        },
+        {
+          "label": "Key ring",
+          "aliases": []
+        },
+        {
+          "label": "S hook",
+          "aliases": []
+        },
+        {
+          "label": "Split ring",
+          "aliases": []
+        },
+        {
+          "label": "Button stud",
+          "aliases": []
+        },
+        {
+          "label": "Clevis pin",
+          "aliases": []
+        },
+        {
+          "label": "Flange bolt",
+          "aliases": []
+        },
+        {
+          "label": "Lock washer",
+          "aliases": []
+        },
+        {
+          "label": "Hex bolt",
+          "aliases": []
+        },
+        {
+          "label": "Hex screw",
+          "aliases": []
+        },
+        {
+          "label": "Flat head screw",
+          "aliases": [
+            "Flathead screw"
+          ]
+        },
+        {
+          "label": "Countersunk screw",
+          "aliases": []
+        },
+        {
+          "label": "Socket head screw",
+          "aliases": []
+        },
+        {
+          "label": "Sheet metal screw",
+          "aliases": []
+        },
+        {
+          "label": "Self tapping screw",
+          "aliases": []
+        },
+        {
+          "label": "Self drilling screw",
+          "aliases": []
+        },
+        {
+          "label": "Drywall screw",
+          "aliases": []
+        },
+        {
+          "label": "Roofing nail",
+          "aliases": []
+        },
+        {
+          "label": "Finishing nail",
+          "aliases": []
+        },
+        {
+          "label": "Panel pin",
+          "aliases": []
+        }
+      ],
+      "references": [
+        "https://wordnet.princeton.edu/"
+      ],
+      "rare": "Prolonge knot",
+      "merges": [
+        {
+          "from": "Split pin",
+          "into": "Cotter pin"
+        }
+      ]
+    },
+    {
+      "key": "headwear-kinds",
+      "root": "headdress.n.01",
+      "family": "everyday",
+      "prompt": "Name a type of headwear or head covering.",
+      "familiar": [
+        "Baseball cap",
+        "Beanie",
+        "Helmet",
+        "Beret",
+        "Turban",
+        "Cowboy hat",
+        "Fedora",
+        "Top hat",
+        "Bucket hat",
+        "Sun hat",
+        "Balaclava",
+        "Hijab",
+        "Crown",
+        "Headband",
+        "Wig",
+        "Hood",
+        "Kippah",
+        "Yarmulke",
+        "Shower cap",
+        "Graduation cap",
+        "Party hat",
+        "Visor",
+        "Earmuffs"
+      ],
+      "exclude": [
+        "Necklace",
+        "Shoelace"
+      ],
+      "scope": "Real kinds of hat, cap, helmet or other wearable head covering count, including religious and historical headwear. Fictional magical items and names of individual objects do not.",
+      "holds": {
+        "millinery": "Collective merchandise category, not another headwear type.",
+        "wishing cap": "Fictional magical cap, outside real headwear scope."
+      },
+      "aliasHolds": {
+        "boater": [
+          "Panama",
+          "Panama hat",
+          "straw hat"
+        ],
+        "fedora": [
+          "homburg",
+          "Stetson",
+          "trilby"
+        ],
+        "pillbox": [
+          "toque",
+          "turban"
+        ],
+        "bearskin": [
+          "busby",
+          "shako"
+        ],
+        "cavalier hat": [
+          "slouch hat"
+        ],
+        "dress hat": [
+          "beaver"
+        ]
+      },
+      "renames": {
+        "beaver": "Beaver hat",
+        "cockscomb": "Jester hat",
+        "dress hat": "Top hat",
+        "headpiece": "Helmet",
+        "skid lid": "Helmet",
+        "titfer": "Hat"
+      },
+      "additions": [
+        {
+          "label": "Headband",
+          "aliases": []
+        },
+        {
+          "label": "Hijab",
+          "aliases": []
+        },
+        {
+          "label": "Wig",
+          "aliases": []
+        },
+        {
+          "label": "Earmuffs",
+          "aliases": [
+            "Ear muffs"
+          ]
+        },
+        {
+          "label": "Veil",
+          "aliases": []
+        },
+        {
+          "label": "Bandana",
+          "aliases": [
+            "Bandanna"
+          ]
+        },
+        {
+          "label": "Do rag",
+          "aliases": [
+            "Durag",
+            "Du rag"
+          ]
+        },
+        {
+          "label": "Homburg",
+          "aliases": []
+        },
+        {
+          "label": "Trilby",
+          "aliases": []
+        },
+        {
+          "label": "Stetson",
+          "aliases": []
+        },
+        {
+          "label": "Panama hat",
+          "aliases": []
+        },
+        {
+          "label": "Straw hat",
+          "aliases": []
+        },
+        {
+          "label": "Snood",
+          "aliases": []
+        },
+        {
+          "label": "Chef hat",
+          "aliases": [
+            "Chefs hat",
+            "Toque blanche"
+          ]
+        },
+        {
+          "label": "Bucket hat",
+          "aliases": []
+        },
+        {
+          "label": "Snapback",
+          "aliases": []
+        },
+        {
+          "label": "Trucker hat",
+          "aliases": []
+        },
+        {
+          "label": "Santa hat",
+          "aliases": []
+        },
+        {
+          "label": "Fascinator",
+          "aliases": []
+        },
+        {
+          "label": "Chullo",
+          "aliases": []
+        },
+        {
+          "label": "Ushanka",
+          "aliases": []
+        },
+        {
+          "label": "Kufi",
+          "aliases": []
+        },
+        {
+          "label": "Taqiyah",
+          "aliases": []
+        },
+        {
+          "label": "Keffiyeh",
+          "aliases": [
+            "Kaffiyeh"
+          ]
+        },
+        {
+          "label": "Shemagh",
+          "aliases": []
+        },
+        {
+          "label": "Chador",
+          "aliases": []
+        },
+        {
+          "label": "Niqab",
+          "aliases": []
+        },
+        {
+          "label": "Dastar",
+          "aliases": []
+        },
+        {
+          "label": "Taekwondo headguard",
+          "aliases": []
+        },
+        {
+          "label": "Bike helmet",
+          "aliases": [
+            "Bicycle helmet"
+          ]
+        },
+        {
+          "label": "Motorcycle helmet",
+          "aliases": []
+        },
+        {
+          "label": "Skate helmet",
+          "aliases": []
+        },
+        {
+          "label": "Welding helmet",
+          "aliases": []
+        },
+        {
+          "label": "Astronaut helmet",
+          "aliases": []
+        },
+        {
+          "label": "Visor",
+          "aliases": []
+        },
+        {
+          "label": "Swim cap",
+          "aliases": [
+            "Swimming cap",
+            "Bathing cap"
+          ]
+        },
+        {
+          "label": "Hair net",
+          "aliases": [
+            "Hairnet"
+          ]
+        },
+        {
+          "label": "Scrub cap",
+          "aliases": []
+        },
+        {
+          "label": "Surgical cap",
+          "aliases": []
+        },
+        {
+          "label": "Party hat",
+          "aliases": []
+        },
+        {
+          "label": "Ribbon headband",
+          "aliases": []
+        },
+        {
+          "label": "Busby",
+          "aliases": []
+        },
+        {
+          "label": "Shako",
+          "aliases": []
+        },
+        {
+          "label": "Slouch hat",
+          "aliases": []
+        },
+        {
+          "label": "Yarmulke",
+          "aliases": [
+            "Kippah"
+          ]
+        },
+        {
+          "label": "Mortarboard",
+          "aliases": [
+            "Graduation cap"
+          ]
+        }
+      ],
+      "references": [
+        "https://wordnet.princeton.edu/"
+      ],
+      "rare": "Kalansuwa",
+      "merges": [
+        {
+          "from": "Swim cap",
+          "into": "Bathing cap"
+        },
+        {
+          "from": "Astronaut helmet",
+          "into": "Space helmet"
+        },
+        {
+          "from": "Keffiyeh",
+          "into": "Kaffiyeh"
+        }
+      ]
+    },
+    {
+      "key": "knife-kinds",
+      "root": "knife.n.01",
+      "family": "everyday",
+      "prompt": "Name a type of knife.",
+      "familiar": [
+        "Butter knife",
+        "Bread knife",
+        "Chef knife",
+        "Pocketknife",
+        "Steak knife",
+        "Paring knife",
+        "Cleaver",
+        "Boning knife",
+        "Carving knife",
+        "Utility knife",
+        "Bowie knife",
+        "Machete",
+        "Fillet knife",
+        "Cheese knife",
+        "Oyster knife",
+        "Scalpel",
+        "Craft knife"
+      ],
+      "exclude": [
+        "Gamma Knife",
+        "Swiss bank account"
+      ],
+      "scope": "Real knife styles and knife-like edged hand tools count, including kitchen, craft, hunting and surgical knives. Medical devices that only use knife metaphorically do not.",
+      "holds": {},
+      "aliasHolds": {},
+      "renames": {
+        "parer": "Paring knife"
+      },
+      "additions": [
+        {
+          "label": "Chef knife",
+          "aliases": [
+            "Chefs knife",
+            "Chef's knife"
+          ]
+        },
+        {
+          "label": "Boning knife",
+          "aliases": []
+        },
+        {
+          "label": "Utility knife",
+          "aliases": [
+            "Box cutter",
+            "Stanley knife"
+          ]
+        },
+        {
+          "label": "Machete",
+          "aliases": []
+        },
+        {
+          "label": "Santoku",
+          "aliases": []
+        },
+        {
+          "label": "Nakiri",
+          "aliases": []
+        },
+        {
+          "label": "Deba",
+          "aliases": []
+        },
+        {
+          "label": "Gyuto",
+          "aliases": []
+        },
+        {
+          "label": "Yanagiba",
+          "aliases": []
+        },
+        {
+          "label": "Usuba",
+          "aliases": []
+        },
+        {
+          "label": "Sashimi knife",
+          "aliases": []
+        },
+        {
+          "label": "Fillet knife",
+          "aliases": []
+        },
+        {
+          "label": "Oyster knife",
+          "aliases": []
+        },
+        {
+          "label": "Cheese knife",
+          "aliases": []
+        },
+        {
+          "label": "Tomato knife",
+          "aliases": []
+        },
+        {
+          "label": "Peeling knife",
+          "aliases": []
+        },
+        {
+          "label": "Tourne knife",
+          "aliases": []
+        },
+        {
+          "label": "Trimming knife",
+          "aliases": []
+        },
+        {
+          "label": "Palette knife",
+          "aliases": []
+        },
+        {
+          "label": "Craft knife",
+          "aliases": [
+            "Hobby knife",
+            "X-Acto knife"
+          ]
+        },
+        {
+          "label": "Putty knife",
+          "aliases": []
+        },
+        {
+          "label": "Diving knife",
+          "aliases": []
+        },
+        {
+          "label": "Rescue knife",
+          "aliases": []
+        },
+        {
+          "label": "Karambit",
+          "aliases": []
+        },
+        {
+          "label": "Kukri",
+          "aliases": [
+            "Khukuri"
+          ]
+        },
+        {
+          "label": "Seax",
+          "aliases": []
+        },
+        {
+          "label": "Kris",
+          "aliases": [
+            "Keris"
+          ]
+        },
+        {
+          "label": "Dagger",
+          "aliases": []
+        },
+        {
+          "label": "Tanto",
+          "aliases": []
+        },
+        {
+          "label": "Push dagger",
+          "aliases": []
+        },
+        {
+          "label": "Trench knife",
+          "aliases": []
+        },
+        {
+          "label": "Throwing knife",
+          "aliases": []
+        },
+        {
+          "label": "Survival knife",
+          "aliases": []
+        },
+        {
+          "label": "Bushcraft knife",
+          "aliases": []
+        },
+        {
+          "label": "Ceramic knife",
+          "aliases": []
+        },
+        {
+          "label": "Electric carving knife",
+          "aliases": []
+        },
+        {
+          "label": "Paring knife",
+          "aliases": [
+            "Parer"
+          ]
+        }
+      ],
+      "references": [
+        "https://wordnet.princeton.edu/"
+      ],
+      "rare": "Catling",
+      "merges": []
+    },
+    {
+      "key": "lamp-lighting-kinds",
+      "root": "lamp.n.01",
+      "family": "science",
+      "prompt": "Name a type of lamp or lighting fixture.",
+      "familiar": [
+        "Desk lamp",
+        "Floor lamp",
+        "Table lamp",
+        "Lava lamp",
+        "Oil lamp",
+        "Lantern",
+        "Headlamp",
+        "Streetlight",
+        "Chandelier",
+        "Night light",
+        "Flashlight",
+        "Pendant light",
+        "Wall sconce",
+        "Grow light",
+        "LED lamp",
+        "Blacklight",
+        "Headlight",
+        "Neon sign",
+        "Floodlight"
+      ],
+      "exclude": [
+        "Sun",
+        "Firefly"
+      ],
+      "scope": "Real lamps, lighting fixtures and manufactured light sources count, including candles and historical lighting. Fictional individual lamps, stars and naturally glowing organisms do not.",
+      "holds": {
+        "Aladdin's lamp": "Named fictional individual object.",
+        "chandlery": "A source sense denotes candles collectively, not another lighting type."
+      },
+      "aliasHolds": {},
+      "renames": {},
+      "additions": [
+        {
+          "label": "Desk lamp",
+          "aliases": []
+        },
+        {
+          "label": "Floor lamp",
+          "aliases": []
+        },
+        {
+          "label": "Table lamp",
+          "aliases": []
+        },
+        {
+          "label": "Lava lamp",
+          "aliases": []
+        },
+        {
+          "label": "Headlamp",
+          "aliases": [
+            "Head torch"
+          ]
+        },
+        {
+          "label": "Chandelier",
+          "aliases": []
+        },
+        {
+          "label": "Nightlight",
+          "aliases": [
+            "Night light"
+          ]
+        },
+        {
+          "label": "Pendant light",
+          "aliases": []
+        },
+        {
+          "label": "Wall sconce",
+          "aliases": [
+            "Sconce"
+          ]
+        },
+        {
+          "label": "Grow light",
+          "aliases": []
+        },
+        {
+          "label": "LED lamp",
+          "aliases": [
+            "LED light"
+          ]
+        },
+        {
+          "label": "Halogen lamp",
+          "aliases": []
+        },
+        {
+          "label": "Reading lamp",
+          "aliases": []
+        },
+        {
+          "label": "Work light",
+          "aliases": []
+        },
+        {
+          "label": "Floodlight",
+          "aliases": [
+            "Flood light"
+          ]
+        },
+        {
+          "label": "Track light",
+          "aliases": []
+        },
+        {
+          "label": "Recessed light",
+          "aliases": [
+            "Downlight"
+          ]
+        },
+        {
+          "label": "Fairy lights",
+          "aliases": [
+            "String lights"
+          ]
+        },
+        {
+          "label": "Christmas lights",
+          "aliases": []
+        },
+        {
+          "label": "Rope light",
+          "aliases": []
+        },
+        {
+          "label": "Emergency light",
+          "aliases": []
+        },
+        {
+          "label": "Exit sign",
+          "aliases": []
+        },
+        {
+          "label": "Ring light",
+          "aliases": []
+        },
+        {
+          "label": "Light panel",
+          "aliases": []
+        },
+        {
+          "label": "Studio light",
+          "aliases": []
+        },
+        {
+          "label": "Searchlight",
+          "aliases": []
+        },
+        {
+          "label": "Fog light",
+          "aliases": []
+        },
+        {
+          "label": "Headlight",
+          "aliases": []
+        },
+        {
+          "label": "Brake light",
+          "aliases": []
+        },
+        {
+          "label": "Indicator light",
+          "aliases": []
+        },
+        {
+          "label": "Tea light",
+          "aliases": [
+            "Tealight"
+          ]
+        },
+        {
+          "label": "Votive candle",
+          "aliases": []
+        },
+        {
+          "label": "Candelabra",
+          "aliases": []
+        },
+        {
+          "label": "Hanging lantern",
+          "aliases": []
+        },
+        {
+          "label": "Oil lantern",
+          "aliases": []
+        },
+        {
+          "label": "Blacklight",
+          "aliases": [
+            "Black light"
+          ]
+        },
+        {
+          "label": "Ultraviolet lamp",
+          "aliases": [
+            "UV lamp"
+          ]
+        },
+        {
+          "label": "Mercury vapor lamp",
+          "aliases": []
+        },
+        {
+          "label": "Metal halide lamp",
+          "aliases": []
+        },
+        {
+          "label": "Xenon lamp",
+          "aliases": []
+        },
+        {
+          "label": "Carbide lamp",
+          "aliases": [
+            "Acetylene lamp"
+          ]
+        },
+        {
+          "label": "LED strip",
+          "aliases": []
+        },
+        {
+          "label": "Neon sign",
+          "aliases": []
+        },
+        {
+          "label": "Glow stick",
+          "aliases": [
+            "Glowstick"
+          ]
+        },
+        {
+          "label": "Laser pointer",
+          "aliases": []
+        },
+        {
+          "label": "Candlestick",
+          "aliases": [
+            "Candle holder"
+          ]
+        },
+        {
+          "label": "Oil wick lamp",
+          "aliases": []
+        }
+      ],
+      "references": [
+        "https://wordnet.princeton.edu/"
+      ],
+      "rare": "Rushlight",
+      "merges": []
+    },
+    {
+      "key": "computer-storage-memory",
+      "root": "memory_device.n.01",
+      "family": "science",
+      "prompt": "Name a type of computer memory, storage device or storage medium.",
+      "familiar": [
+        "Hard drive",
+        "SSD",
+        "USB flash drive",
+        "SD card",
+        "CD",
+        "DVD",
+        "Blu-ray",
+        "Floppy disk",
+        "RAM",
+        "ROM",
+        "Cache",
+        "Magnetic tape",
+        "Memory card",
+        "CPU register",
+        "USB drive",
+        "DRAM",
+        "SRAM",
+        "Flash memory"
+      ],
+      "exclude": [
+        "Keyboard key",
+        "Computer mouse"
+      ],
+      "scope": "Memory technologies and physical digital data-storage media or devices count, including obsolete systems. A song, movie or other recorded work is content, not storage. Online service brand names do not identify storage hardware.",
+      "holds": {
+        "cover": "Recorded content or analog record, not a computer memory technology or digital storage device.",
+        "dubbing": "Recorded content or analog record, not a computer memory technology or digital storage device.",
+        "laugh track": "Recorded content or analog record, not a computer memory technology or digital storage device.",
+        "LP": "Recorded content or analog record, not a computer memory technology or digital storage device.",
+        "phonograph record": "Recorded content or analog record, not a computer memory technology or digital storage device.",
+        "recording": "Recorded content or analog record, not a computer memory technology or digital storage device.",
+        "seventy-eight": "Recorded content or analog record, not a computer memory technology or digital storage device.",
+        "sound recording": "Recorded content or analog record, not a computer memory technology or digital storage device.",
+        "soundtrack": "Recorded content or analog record, not a computer memory technology or digital storage device.",
+        "talking book": "Recorded content or analog record, not a computer memory technology or digital storage device.",
+        "tape": "Recorded content or analog record, not a computer memory technology or digital storage device.",
+        "transcription": "Recorded content or analog record, not a computer memory technology or digital storage device.",
+        "video recording": "Recorded content or analog record, not a computer memory technology or digital storage device.",
+        "videodisk": "Generic analog videodisc sense; actual digital DVD and Blu-ray media are added explicitly."
+      },
+      "aliasHolds": {
+        "videodisk": [
+          "DVD"
+        ]
+      },
+      "renames": {
+        "compact disk": "CD",
+        "videodisk": "Videodisc",
+        "diskette": "Floppy disk",
+        "register": "CPU register",
+        "hard disc": "Hard drive",
+        "magnetic bubble memory": "Bubble memory"
+      },
+      "additions": [
+        {
+          "label": "Solid state drive",
+          "aliases": [
+            "SSD",
+            "Solid-state drive"
+          ]
+        },
+        {
+          "label": "USB flash drive",
+          "aliases": [
+            "USB drive",
+            "Flash drive",
+            "Thumb drive",
+            "Pen drive"
+          ]
+        },
+        {
+          "label": "SD card",
+          "aliases": [
+            "Secure Digital card"
+          ]
+        },
+        {
+          "label": "DVD",
+          "aliases": [
+            "Digital versatile disc"
+          ]
+        },
+        {
+          "label": "Blu-ray disc",
+          "aliases": [
+            "Blu-ray"
+          ]
+        },
+        {
+          "label": "Memory card",
+          "aliases": []
+        },
+        {
+          "label": "CPU register",
+          "aliases": []
+        },
+        {
+          "label": "Hard drive",
+          "aliases": [
+            "Hard disk drive",
+            "HDD",
+            "Hard disk",
+            "Hard disc"
+          ]
+        },
+        {
+          "label": "MicroSD card",
+          "aliases": []
+        },
+        {
+          "label": "CompactFlash card",
+          "aliases": []
+        },
+        {
+          "label": "Memory Stick",
+          "aliases": []
+        },
+        {
+          "label": "SDHC card",
+          "aliases": []
+        },
+        {
+          "label": "SDXC card",
+          "aliases": []
+        },
+        {
+          "label": "DRAM",
+          "aliases": [
+            "Dynamic random access memory"
+          ]
+        },
+        {
+          "label": "SRAM",
+          "aliases": [
+            "Static random access memory"
+          ]
+        },
+        {
+          "label": "EEPROM",
+          "aliases": []
+        },
+        {
+          "label": "PROM",
+          "aliases": [
+            "Programmable read only memory"
+          ]
+        },
+        {
+          "label": "NVRAM",
+          "aliases": [
+            "Non volatile RAM"
+          ]
+        },
+        {
+          "label": "FRAM",
+          "aliases": [
+            "Ferroelectric RAM"
+          ]
+        },
+        {
+          "label": "MRAM",
+          "aliases": [
+            "Magnetoresistive RAM"
+          ]
+        },
+        {
+          "label": "ReRAM",
+          "aliases": [
+            "Resistive RAM"
+          ]
+        },
+        {
+          "label": "Phase change memory",
+          "aliases": []
+        },
+        {
+          "label": "Holographic storage",
+          "aliases": []
+        },
+        {
+          "label": "Punched card",
+          "aliases": [
+            "Punch card"
+          ]
+        },
+        {
+          "label": "Paper tape",
+          "aliases": [
+            "Punched tape"
+          ]
+        },
+        {
+          "label": "USB hard drive",
+          "aliases": []
+        },
+        {
+          "label": "External SSD",
+          "aliases": []
+        },
+        {
+          "label": "Network attached storage",
+          "aliases": [
+            "NAS"
+          ]
+        },
+        {
+          "label": "RAID array",
+          "aliases": []
+        },
+        {
+          "label": "Storage area network",
+          "aliases": [
+            "SAN"
+          ]
+        },
+        {
+          "label": "CD-RW",
+          "aliases": []
+        },
+        {
+          "label": "DVD-R",
+          "aliases": []
+        },
+        {
+          "label": "DVD-RW",
+          "aliases": []
+        },
+        {
+          "label": "BD-R",
+          "aliases": []
+        },
+        {
+          "label": "BD-RE",
+          "aliases": []
+        },
+        {
+          "label": "Zip disk",
+          "aliases": [
+            "Zip drive"
+          ]
+        },
+        {
+          "label": "Jaz disk",
+          "aliases": []
+        },
+        {
+          "label": "Magneto optical disk",
+          "aliases": []
+        },
+        {
+          "label": "Solid state hybrid drive",
+          "aliases": [
+            "SSHD"
+          ]
+        },
+        {
+          "label": "Core rope memory",
+          "aliases": []
+        },
+        {
+          "label": "Delay line memory",
+          "aliases": []
+        },
+        {
+          "label": "Bubble memory",
+          "aliases": []
+        },
+        {
+          "label": "Drum memory",
+          "aliases": []
+        },
+        {
+          "label": "Williams tube",
+          "aliases": []
+        }
+      ],
+      "references": [
+        "https://wordnet.princeton.edu/",
+        "https://www.kingston.com/en/memory/kingston-glossary",
+        "https://media.kingston.com/pdfs/MKF_283.2_Flash_Memory_Guide_EN.pdf"
+      ],
+      "rare": "Williams tube",
+      "merges": [
+        {
+          "from": "Register",
+          "into": "CPU register"
+        }
+      ]
+    },
+    {
+      "key": "motor-vehicle-categories",
+      "root": "motor_vehicle.n.01",
+      "family": "world",
+      "prompt": "Name a category of motor vehicle.",
+      "familiar": [
+        "Car",
+        "Truck",
+        "Bus",
+        "Van",
+        "Motorcycle",
+        "Tractor",
+        "SUV",
+        "Taxi",
+        "Ambulance",
+        "Pickup truck",
+        "Minivan",
+        "Motorhome",
+        "Motor scooter",
+        "Electric car"
+      ],
+      "exclude": [
+        "Pedal bicycle",
+        "Sailboat",
+        "Steam locomotive"
+      ],
+      "scope": "Types of self-propelled road or off-road vehicle count, with wheels, tracks or skids, including electric versions. Individual named models, rail vehicles, unpowered trailers and descriptions of condition alone do not.",
+      "holds": {
+        "bus": "Source sense is an old-car nickname, race outcome, condition/loan status, single model or unpowered trailer. Actual motor buses are added separately.",
+        "finisher": "Source sense is an old-car nickname, race outcome, condition/loan status, single model or unpowered trailer. Actual motor buses are added separately.",
+        "gas guzzler": "Source sense is an old-car nickname, race outcome, condition/loan status, single model or unpowered trailer. Actual motor buses are added separately.",
+        "horseless carriage": "Source sense is an old-car nickname, race outcome, condition/loan status, single model or unpowered trailer. Actual motor buses are added separately.",
+        "loaner": "Source sense is an old-car nickname, race outcome, condition/loan status, single model or unpowered trailer. Actual motor buses are added separately.",
+        "Model T": "Source sense is an old-car nickname, race outcome, condition/loan status, single model or unpowered trailer. Actual motor buses are added separately.",
+        "Stanley Steamer": "Source sense is an old-car nickname, race outcome, condition/loan status, single model or unpowered trailer. Actual motor buses are added separately.",
+        "tandem trailer": "Source sense is an old-car nickname, race outcome, condition/loan status, single model or unpowered trailer. Actual motor buses are added separately.",
+        "used-car": "Source sense is an old-car nickname, race outcome, condition/loan status, single model or unpowered trailer. Actual motor buses are added separately."
+      },
+      "aliasHolds": {
+        "jeep": [
+          "landrover"
+        ],
+        "motorcycle": [
+          "bike"
+        ],
+        "police van": [
+          "wagon",
+          "paddy wagon",
+          "black Maria"
+        ],
+        "car": [
+          "machine"
+        ]
+      },
+      "renames": {
+        "beach wagon": "Station wagon",
+        "cab": "Taxi",
+        "compact": "Compact car",
+        "electric": "Electric car",
+        "minibike": "Minibike",
+        "pickup": "Pickup truck",
+        "sport utility": "SUV",
+        "racer": "Race car"
+      },
+      "additions": [
+        {
+          "label": "Bus",
+          "aliases": [
+            "Motor bus"
+          ]
+        },
+        {
+          "label": "Motorhome",
+          "aliases": [
+            "Motor home",
+            "RV",
+            "Recreational vehicle"
+          ]
+        },
+        {
+          "label": "Motor scooter",
+          "aliases": [
+            "Scooter"
+          ]
+        },
+        {
+          "label": "Electric car",
+          "aliases": []
+        },
+        {
+          "label": "All terrain vehicle",
+          "aliases": [
+            "ATV",
+            "Quad bike"
+          ]
+        },
+        {
+          "label": "Side by side",
+          "aliases": [
+            "UTV"
+          ]
+        },
+        {
+          "label": "School bus",
+          "aliases": []
+        },
+        {
+          "label": "Coach",
+          "aliases": [
+            "Motorcoach"
+          ]
+        },
+        {
+          "label": "Trolleybus",
+          "aliases": []
+        },
+        {
+          "label": "Articulated bus",
+          "aliases": []
+        },
+        {
+          "label": "Double decker bus",
+          "aliases": []
+        },
+        {
+          "label": "Single decker bus",
+          "aliases": []
+        },
+        {
+          "label": "Airport bus",
+          "aliases": []
+        },
+        {
+          "label": "Shuttle bus",
+          "aliases": []
+        },
+        {
+          "label": "Car transporter",
+          "aliases": []
+        },
+        {
+          "label": "Concrete mixer truck",
+          "aliases": [
+            "Cement mixer truck"
+          ]
+        },
+        {
+          "label": "Tanker truck",
+          "aliases": []
+        },
+        {
+          "label": "Refrigerated truck",
+          "aliases": []
+        },
+        {
+          "label": "Flatbed truck",
+          "aliases": []
+        },
+        {
+          "label": "Box truck",
+          "aliases": []
+        },
+        {
+          "label": "Monster truck",
+          "aliases": []
+        },
+        {
+          "label": "Armored car",
+          "aliases": [
+            "Armoured car"
+          ]
+        },
+        {
+          "label": "Armored personnel carrier",
+          "aliases": [
+            "APC"
+          ]
+        },
+        {
+          "label": "Tank",
+          "aliases": []
+        },
+        {
+          "label": "Fire engine",
+          "aliases": [
+            "Fire truck"
+          ]
+        },
+        {
+          "label": "Mobile crane",
+          "aliases": []
+        },
+        {
+          "label": "Forklift",
+          "aliases": []
+        },
+        {
+          "label": "Excavator",
+          "aliases": []
+        },
+        {
+          "label": "Bulldozer",
+          "aliases": []
+        },
+        {
+          "label": "Road roller",
+          "aliases": []
+        },
+        {
+          "label": "Combine harvester",
+          "aliases": []
+        },
+        {
+          "label": "Snowmobile",
+          "aliases": []
+        },
+        {
+          "label": "Motor tricycle",
+          "aliases": []
+        },
+        {
+          "label": "Auto rickshaw",
+          "aliases": [
+            "Tuk tuk"
+          ]
+        },
+        {
+          "label": "Sandrail",
+          "aliases": []
+        },
+        {
+          "label": "Dune buggy",
+          "aliases": []
+        },
+        {
+          "label": "Amphibious car",
+          "aliases": []
+        },
+        {
+          "label": "Hybrid car",
+          "aliases": []
+        },
+        {
+          "label": "Electric motorcycle",
+          "aliases": []
+        },
+        {
+          "label": "Hydrogen car",
+          "aliases": []
+        },
+        {
+          "label": "Fuel cell vehicle",
+          "aliases": []
+        },
+        {
+          "label": "Electric bus",
+          "aliases": []
+        },
+        {
+          "label": "Garbage truck",
+          "aliases": [
+            "Dustcart",
+            "Refuse truck"
+          ]
+        },
+        {
+          "label": "Backhoe loader",
+          "aliases": []
+        },
+        {
+          "label": "Skid steer loader",
+          "aliases": []
+        },
+        {
+          "label": "Wheel loader",
+          "aliases": []
+        },
+        {
+          "label": "Telehandler",
+          "aliases": []
+        },
+        {
+          "label": "Motor grader",
+          "aliases": []
+        },
+        {
+          "label": "Road sweeper",
+          "aliases": [
+            "Street sweeper"
+          ]
+        },
+        {
+          "label": "Tracked vehicle",
+          "aliases": []
+        },
+        {
+          "label": "Tracked tractor",
+          "aliases": []
+        },
+        {
+          "label": "Utility vehicle",
+          "aliases": []
+        },
+        {
+          "label": "Segway",
+          "aliases": [
+            "Self balancing scooter"
+          ]
+        },
+        {
+          "label": "Electric skateboard",
+          "aliases": []
+        },
+        {
+          "label": "Electric bicycle",
+          "aliases": [
+            "E bike"
+          ]
+        },
+        {
+          "label": "Powered wheelchair",
+          "aliases": []
+        },
+        {
+          "label": "Mobility scooter",
+          "aliases": []
+        }
+      ],
+      "references": [
+        "https://wordnet.princeton.edu/"
+      ],
+      "rare": "Technical",
+      "merges": []
+    },
+    {
+      "key": "optical-equipment-kinds",
+      "root": "optical_instrument.n.01",
+      "family": "science",
+      "prompt": "Name an optical instrument used to aid vision or examine things.",
+      "familiar": [
+        "Telescope",
+        "Microscope",
+        "Binoculars",
+        "Magnifying glass",
+        "Periscope",
+        "Eyeglasses",
+        "Loupe",
+        "Monocular",
+        "Stereoscope",
+        "Endoscope",
+        "Kaleidoscope",
+        "Night vision goggles"
+      ],
+      "exclude": [
+        "Hearing aid",
+        "Soundbar",
+        "Mass spectrometer",
+        "Sound spectrograph",
+        "Electron microscope"
+      ],
+      "scope": "Real instruments that use light to aid sight, magnify, project, examine or measure an optical image or spectrum count. Acoustic and mass-analysis instruments do not qualify merely because a source groups them near spectrometers.",
+      "holds": {
+        "mass spectrograph": "Non-optical measurement technology or a calibration setting, not an optical instrument.",
+        "mass spectrometer": "Non-optical measurement technology or a calibration setting, not an optical instrument.",
+        "sound spectrograph": "Non-optical measurement technology or a calibration setting, not an optical instrument.",
+        "sight setting": "Non-optical measurement technology or a calibration setting, not an optical instrument.",
+        "zero": "Non-optical measurement technology or a calibration setting, not an optical instrument."
+      },
+      "aliasHolds": {
+        "binoculars": [
+          "opera glasses"
+        ]
+      },
+      "renames": {
+        "spectacles": "Eyeglasses",
+        "jeweler's glass": "Loupe"
+      },
+      "additions": [
+        {
+          "label": "Telescope",
+          "aliases": []
+        },
+        {
+          "label": "Microscope",
+          "aliases": []
+        },
+        {
+          "label": "Magnifying glass",
+          "aliases": [
+            "Hand lens"
+          ]
+        },
+        {
+          "label": "Loupe",
+          "aliases": [
+            "Jeweler's loupe"
+          ]
+        },
+        {
+          "label": "Monocular",
+          "aliases": []
+        },
+        {
+          "label": "Stereoscope",
+          "aliases": []
+        },
+        {
+          "label": "Endoscope",
+          "aliases": []
+        },
+        {
+          "label": "Kaleidoscope",
+          "aliases": []
+        },
+        {
+          "label": "Night vision goggles",
+          "aliases": []
+        },
+        {
+          "label": "Spotting scope",
+          "aliases": []
+        },
+        {
+          "label": "Rangefinder",
+          "aliases": [
+            "Range finder"
+          ]
+        },
+        {
+          "label": "Refractometer",
+          "aliases": []
+        },
+        {
+          "label": "Polarimeter",
+          "aliases": []
+        },
+        {
+          "label": "Interferometer",
+          "aliases": []
+        },
+        {
+          "label": "Optical spectrometer",
+          "aliases": []
+        },
+        {
+          "label": "Photometer",
+          "aliases": []
+        },
+        {
+          "label": "Colorimeter",
+          "aliases": []
+        },
+        {
+          "label": "Ophthalmoscope",
+          "aliases": []
+        },
+        {
+          "label": "Otoscope",
+          "aliases": []
+        },
+        {
+          "label": "Retinoscope",
+          "aliases": []
+        },
+        {
+          "label": "Laryngoscope",
+          "aliases": []
+        },
+        {
+          "label": "Dermatoscope",
+          "aliases": []
+        },
+        {
+          "label": "Borescope",
+          "aliases": []
+        },
+        {
+          "label": "Fiber optic scope",
+          "aliases": [
+            "Fiberscope"
+          ]
+        },
+        {
+          "label": "Theodolite",
+          "aliases": []
+        },
+        {
+          "label": "Sextant",
+          "aliases": []
+        },
+        {
+          "label": "Camera obscura",
+          "aliases": []
+        },
+        {
+          "label": "Prism binoculars",
+          "aliases": []
+        },
+        {
+          "label": "Opera glasses",
+          "aliases": []
+        },
+        {
+          "label": "Camera",
+          "aliases": []
+        },
+        {
+          "label": "Optical comparator",
+          "aliases": []
+        },
+        {
+          "label": "Optical profilometer",
+          "aliases": []
+        }
+      ],
+      "references": [
+        "https://wordnet.princeton.edu/",
+        "https://www.celestron.com/",
+        "https://imaging.nikon.com/sport-optics/lineup/binoculars/accessory/"
+      ],
+      "rare": "Epidiascope",
+      "merges": []
+    },
+    {
+      "key": "photography-equipment",
+      "root": "photographic_equipment.n.01",
+      "family": "science",
+      "prompt": "Name a piece of equipment used to take or process photographs.",
+      "familiar": [
+        "Camera",
+        "Lens",
+        "Tripod",
+        "Flash",
+        "Camera bag",
+        "Memory card",
+        "Reflector",
+        "Diffuser",
+        "Light meter",
+        "Photographic film",
+        "Enlarger",
+        "Camera strap",
+        "Shutter release",
+        "Darkroom developer",
+        "Gimbal"
+      ],
+      "exclude": [
+        "Clapperboard",
+        "Box office revenue"
+      ],
+      "scope": "Physical equipment, supplies and accessories used in still photography count, including darkroom materials. A finished photograph, filmed sequence or a device used only to mark a film take does not.",
+      "holds": {
+        "bitewing": "Film-only device, finished image, medical image or generic recorded content; outside the still-photography equipment scope.",
+        "clapperboard": "Film-only device, finished image, medical image or generic recorded content; outside the still-photography equipment scope.",
+        "footage": "Film-only device, finished image, medical image or generic recorded content; outside the still-photography equipment scope.",
+        "microfiche": "Film-only device, finished image, medical image or generic recorded content; outside the still-photography equipment scope.",
+        "microfilm": "Film-only device, finished image, medical image or generic recorded content; outside the still-photography equipment scope.",
+        "motion-picture film": "Film-only device, finished image, medical image or generic recorded content; outside the still-photography equipment scope.",
+        "negative": "Film-only device, finished image, medical image or generic recorded content; outside the still-photography equipment scope.",
+        "positive": "Film-only device, finished image, medical image or generic recorded content; outside the still-photography equipment scope.",
+        "reel": "Film-only device, finished image, medical image or generic recorded content; outside the still-photography equipment scope.",
+        "roll": "Film-only device, finished image, medical image or generic recorded content; outside the still-photography equipment scope.",
+        "sequence": "Film-only device, finished image, medical image or generic recorded content; outside the still-photography equipment scope.",
+        "sound camera": "Film-only device, finished image, medical image or generic recorded content; outside the still-photography equipment scope.",
+        "sound film": "Film-only device, finished image, medical image or generic recorded content; outside the still-photography equipment scope.",
+        "X-ray film": "Film-only device, finished image, medical image or generic recorded content; outside the still-photography equipment scope.",
+        "cytophotometer": "Measures light transmission of cells, not still-photography equipment merely by a dictionary parent.",
+        "film clip": "A finished motion-picture excerpt, not a clip used to handle still-camera film."
+      },
+      "aliasHolds": {},
+      "renames": {},
+      "additions": [
+        {
+          "label": "Lens",
+          "aliases": [
+            "Camera lens"
+          ]
+        },
+        {
+          "label": "Tripod",
+          "aliases": []
+        },
+        {
+          "label": "Camera bag",
+          "aliases": []
+        },
+        {
+          "label": "Memory card",
+          "aliases": []
+        },
+        {
+          "label": "Reflector",
+          "aliases": []
+        },
+        {
+          "label": "Diffuser",
+          "aliases": []
+        },
+        {
+          "label": "Camera strap",
+          "aliases": []
+        },
+        {
+          "label": "Shutter release",
+          "aliases": [
+            "Cable release"
+          ]
+        },
+        {
+          "label": "Gimbal",
+          "aliases": []
+        },
+        {
+          "label": "Camera battery",
+          "aliases": []
+        },
+        {
+          "label": "Battery charger",
+          "aliases": []
+        },
+        {
+          "label": "Filter",
+          "aliases": []
+        },
+        {
+          "label": "Lens hood",
+          "aliases": []
+        },
+        {
+          "label": "Lens cap",
+          "aliases": []
+        },
+        {
+          "label": "Polarizing filter",
+          "aliases": []
+        },
+        {
+          "label": "Neutral density filter",
+          "aliases": [
+            "ND filter"
+          ]
+        },
+        {
+          "label": "UV filter",
+          "aliases": []
+        },
+        {
+          "label": "Lens cleaning cloth",
+          "aliases": []
+        },
+        {
+          "label": "Lens cleaning brush",
+          "aliases": []
+        },
+        {
+          "label": "Lens blower",
+          "aliases": []
+        },
+        {
+          "label": "Remote shutter release",
+          "aliases": []
+        },
+        {
+          "label": "Light stand",
+          "aliases": []
+        },
+        {
+          "label": "Softbox",
+          "aliases": []
+        },
+        {
+          "label": "Umbrella reflector",
+          "aliases": []
+        },
+        {
+          "label": "Beauty dish",
+          "aliases": []
+        },
+        {
+          "label": "Flash trigger",
+          "aliases": []
+        },
+        {
+          "label": "Hot shoe adapter",
+          "aliases": []
+        },
+        {
+          "label": "Camera grip",
+          "aliases": []
+        },
+        {
+          "label": "Battery grip",
+          "aliases": []
+        },
+        {
+          "label": "Monopod",
+          "aliases": []
+        },
+        {
+          "label": "Camera mount",
+          "aliases": []
+        },
+        {
+          "label": "Quick release plate",
+          "aliases": []
+        },
+        {
+          "label": "Extension tube",
+          "aliases": []
+        },
+        {
+          "label": "Teleconverter",
+          "aliases": []
+        },
+        {
+          "label": "Bellows",
+          "aliases": []
+        },
+        {
+          "label": "Developing tank",
+          "aliases": []
+        },
+        {
+          "label": "Film spool",
+          "aliases": []
+        },
+        {
+          "label": "Film reel",
+          "aliases": []
+        },
+        {
+          "label": "Developing tray",
+          "aliases": []
+        },
+        {
+          "label": "Fixer",
+          "aliases": []
+        },
+        {
+          "label": "Safelight",
+          "aliases": []
+        },
+        {
+          "label": "Contact printer",
+          "aliases": []
+        },
+        {
+          "label": "Gray card",
+          "aliases": [
+            "Grey card"
+          ]
+        },
+        {
+          "label": "Color checker",
+          "aliases": [
+            "Colour checker"
+          ]
+        },
+        {
+          "label": "Backdrop",
+          "aliases": []
+        },
+        {
+          "label": "Backdrop stand",
+          "aliases": []
+        },
+        {
+          "label": "Macro rail",
+          "aliases": []
+        },
+        {
+          "label": "Hot shoe flash",
+          "aliases": [
+            "Speedlight"
+          ]
+        },
+        {
+          "label": "Ring flash",
+          "aliases": []
+        },
+        {
+          "label": "Strobe",
+          "aliases": []
+        },
+        {
+          "label": "Instant camera",
+          "aliases": []
+        },
+        {
+          "label": "DSLR",
+          "aliases": [
+            "Digital single lens reflex camera"
+          ]
+        },
+        {
+          "label": "Mirrorless camera",
+          "aliases": []
+        },
+        {
+          "label": "Film camera",
+          "aliases": []
+        },
+        {
+          "label": "Large format camera",
+          "aliases": []
+        },
+        {
+          "label": "Medium format camera",
+          "aliases": []
+        },
+        {
+          "label": "Pinhole camera",
+          "aliases": []
+        },
+        {
+          "label": "Disposable camera",
+          "aliases": []
+        },
+        {
+          "label": "Action camera",
+          "aliases": []
+        },
+        {
+          "label": "Underwater housing",
+          "aliases": []
+        },
+        {
+          "label": "Photographic fixer",
+          "aliases": []
+        },
+        {
+          "label": "Graduated neutral density filter",
+          "aliases": []
+        },
+        {
+          "label": "Darkroom timer",
+          "aliases": []
+        },
+        {
+          "label": "Film scanner",
+          "aliases": []
+        },
+        {
+          "label": "Copy stand",
+          "aliases": []
+        },
+        {
+          "label": "Lens adapter",
+          "aliases": []
+        },
+        {
+          "label": "Reversal ring",
+          "aliases": []
+        },
+        {
+          "label": "Developer",
+          "aliases": [
+            "Darkroom developer",
+            "Photographic developer"
+          ]
+        }
+      ],
+      "references": [
+        "https://wordnet.princeton.edu/",
+        "https://www.nikon-asia.com/cameras",
+        "https://www.nikonusa.com/fileuploads/pdfs/TOTAL-DIGITAL-IMAGING-SYSTEM.pdf"
+      ],
+      "rare": "Sensitometer",
+      "merges": []
+    },
+    {
+      "key": "worship-building-kinds",
+      "root": "place_of_worship.n.01",
+      "family": "world",
+      "prompt": "Name a type of building or place used for worship.",
+      "familiar": [
+        "Church",
+        "Mosque",
+        "Synagogue",
+        "Temple",
+        "Chapel",
+        "Shrine",
+        "Cathedral",
+        "Abbey",
+        "Basilica",
+        "Gurdwara",
+        "Mandir",
+        "Stupa",
+        "Pagoda",
+        "Meetinghouse"
+      ],
+      "exclude": [
+        "Shopping mall",
+        "Parking garage"
+      ],
+      "scope": "Types of religious worship building or built shrine count across religions. Individual named landmarks and a minister or deity alone do not.",
+      "holds": {},
+      "aliasHolds": {},
+      "renames": {},
+      "additions": [
+        {
+          "label": "Gurdwara",
+          "aliases": [
+            "Gurudwara"
+          ]
+        },
+        {
+          "label": "Mandir",
+          "aliases": []
+        },
+        {
+          "label": "Meetinghouse",
+          "aliases": [
+            "Meeting house"
+          ]
+        },
+        {
+          "label": "Oratory",
+          "aliases": []
+        },
+        {
+          "label": "Prayer hall",
+          "aliases": []
+        },
+        {
+          "label": "Zawiya",
+          "aliases": []
+        },
+        {
+          "label": "Imambara",
+          "aliases": []
+        },
+        {
+          "label": "Fire temple",
+          "aliases": []
+        },
+        {
+          "label": "Derasar",
+          "aliases": [
+            "Jain temple"
+          ]
+        },
+        {
+          "label": "Chaitya",
+          "aliases": []
+        },
+        {
+          "label": "Vihara",
+          "aliases": []
+        },
+        {
+          "label": "Tabernacle",
+          "aliases": []
+        },
+        {
+          "label": "Gompa",
+          "aliases": []
+        },
+        {
+          "label": "Kovil",
+          "aliases": []
+        },
+        {
+          "label": "Candi",
+          "aliases": []
+        },
+        {
+          "label": "Kyaung",
+          "aliases": []
+        },
+        {
+          "label": "Honden",
+          "aliases": []
+        },
+        {
+          "label": "Haiden",
+          "aliases": []
+        },
+        {
+          "label": "Shinto shrine",
+          "aliases": []
+        },
+        {
+          "label": "Buddhist temple",
+          "aliases": []
+        },
+        {
+          "label": "Hindu temple",
+          "aliases": []
+        },
+        {
+          "label": "Jain temple",
+          "aliases": []
+        },
+        {
+          "label": "Taoist temple",
+          "aliases": []
+        },
+        {
+          "label": "Confucian temple",
+          "aliases": []
+        },
+        {
+          "label": "Bahai house of worship",
+          "aliases": [
+            "Baha'i House of Worship"
+          ]
+        },
+        {
+          "label": "Musholla",
+          "aliases": [
+            "Musalla"
+          ]
+        },
+        {
+          "label": "Prayer room",
+          "aliases": []
+        },
+        {
+          "label": "Monastery church",
+          "aliases": []
+        },
+        {
+          "label": "Quaker meeting house",
+          "aliases": []
+        },
+        {
+          "label": "Monastery",
+          "aliases": []
+        },
+        {
+          "label": "Convent",
+          "aliases": []
+        },
+        {
+          "label": "Priory",
+          "aliases": []
+        },
+        {
+          "label": "Friary",
+          "aliases": []
+        },
+        {
+          "label": "Khanqah",
+          "aliases": []
+        },
+        {
+          "label": "Tekke",
+          "aliases": []
+        },
+        {
+          "label": "Dargah",
+          "aliases": []
+        },
+        {
+          "label": "Mission church",
+          "aliases": []
+        },
+        {
+          "label": "Sanctuary",
+          "aliases": []
+        },
+        {
+          "label": "Ashram",
+          "aliases": []
+        }
+      ],
+      "references": [
+        "https://wordnet.princeton.edu/"
+      ],
+      "rare": "Chantry",
+      "merges": [
+        {
+          "from": "Masjid",
+          "into": "Mosque"
+        },
+        {
+          "from": "Kirk",
+          "into": "Church"
+        },
+        {
+          "from": "Conventicle",
+          "into": "Meetinghouse"
+        }
+      ]
+    },
+    {
+      "key": "paint-kinds",
+      "root": "paint.n.01",
+      "family": "culture",
+      "prompt": "Name a type of paint.",
+      "familiar": [
+        "Acrylic paint",
+        "Oil paint",
+        "Watercolor",
+        "Gouache",
+        "Tempera",
+        "Enamel paint",
+        "Latex paint",
+        "Spray paint",
+        "Finger paint",
+        "Primer",
+        "Emulsion paint",
+        "Chalk paint",
+        "Casein paint",
+        "Milk paint"
+      ],
+      "exclude": [
+        "Coat of arms",
+        "Computer mouse"
+      ],
+      "scope": "Types of paint defined by medium, finish or purpose count, including artist and building paints. Color names alone, a layer of paint and digital painting software do not.",
+      "holds": {
+        "coat of paint": "A layer rather than a kind of paint.",
+        "couch": "A particular priming layer in this dictionary sense, not a paint formulation.",
+        "finish coat": "A final layer or application stage, not a distinct paint kind."
+      },
+      "aliasHolds": {},
+      "renames": {
+        "oil": "Oil paint",
+        "acrylic": "Acrylic paint",
+        "enamel": "Enamel paint",
+        "flat coat": "Primer",
+        "semigloss": "Semi gloss paint",
+        "wash": "Paint wash",
+        "water-base paint": "Water based paint"
+      },
+      "additions": [
+        {
+          "label": "Oil paint",
+          "aliases": [
+            "Oil color",
+            "Oil colour"
+          ]
+        },
+        {
+          "label": "Acrylic paint",
+          "aliases": [
+            "Acrylic"
+          ]
+        },
+        {
+          "label": "Enamel paint",
+          "aliases": [
+            "Enamel"
+          ]
+        },
+        {
+          "label": "Milk paint",
+          "aliases": []
+        },
+        {
+          "label": "Chalk paint",
+          "aliases": []
+        },
+        {
+          "label": "Emulsion paint",
+          "aliases": []
+        },
+        {
+          "label": "Polyurethane paint",
+          "aliases": []
+        },
+        {
+          "label": "Epoxy paint",
+          "aliases": []
+        },
+        {
+          "label": "Alkyd paint",
+          "aliases": []
+        },
+        {
+          "label": "Silicate paint",
+          "aliases": []
+        },
+        {
+          "label": "Cement paint",
+          "aliases": []
+        },
+        {
+          "label": "Limewash",
+          "aliases": [
+            "Lime wash"
+          ]
+        },
+        {
+          "label": "Chalkboard paint",
+          "aliases": [
+            "Blackboard paint"
+          ]
+        },
+        {
+          "label": "Magnetic paint",
+          "aliases": []
+        },
+        {
+          "label": "Intumescent paint",
+          "aliases": []
+        },
+        {
+          "label": "Luminous paint",
+          "aliases": []
+        },
+        {
+          "label": "Fluorescent paint",
+          "aliases": []
+        },
+        {
+          "label": "Metallic paint",
+          "aliases": []
+        },
+        {
+          "label": "Pearlescent paint",
+          "aliases": []
+        },
+        {
+          "label": "Fabric paint",
+          "aliases": []
+        },
+        {
+          "label": "Body paint",
+          "aliases": []
+        },
+        {
+          "label": "Face paint",
+          "aliases": []
+        },
+        {
+          "label": "Porcelain paint",
+          "aliases": []
+        },
+        {
+          "label": "Ceramic paint",
+          "aliases": []
+        },
+        {
+          "label": "Glass paint",
+          "aliases": []
+        },
+        {
+          "label": "Floor paint",
+          "aliases": []
+        },
+        {
+          "label": "Masonry paint",
+          "aliases": []
+        },
+        {
+          "label": "Roof paint",
+          "aliases": []
+        },
+        {
+          "label": "Road marking paint",
+          "aliases": []
+        },
+        {
+          "label": "Powder coating",
+          "aliases": []
+        },
+        {
+          "label": "Shellac primer",
+          "aliases": []
+        },
+        {
+          "label": "Zinc rich paint",
+          "aliases": []
+        },
+        {
+          "label": "Red lead paint",
+          "aliases": []
+        },
+        {
+          "label": "Bituminous paint",
+          "aliases": []
+        },
+        {
+          "label": "Silicone paint",
+          "aliases": []
+        },
+        {
+          "label": "Vinyl paint",
+          "aliases": []
+        },
+        {
+          "label": "Poster paint",
+          "aliases": [
+            "Tempera"
+          ]
+        },
+        {
+          "label": "Water based paint",
+          "aliases": [
+            "Waterborne paint"
+          ]
+        },
+        {
+          "label": "Solvent based paint",
+          "aliases": []
+        },
+        {
+          "label": "Gloss paint",
+          "aliases": []
+        },
+        {
+          "label": "Matte paint",
+          "aliases": [
+            "Matt paint"
+          ]
+        },
+        {
+          "label": "Satin paint",
+          "aliases": []
+        },
+        {
+          "label": "Eggshell paint",
+          "aliases": []
+        },
+        {
+          "label": "Semi gloss paint",
+          "aliases": []
+        },
+        {
+          "label": "Oil based paint",
+          "aliases": []
+        },
+        {
+          "label": "Aerosol paint",
+          "aliases": []
+        },
+        {
+          "label": "Finger paint",
+          "aliases": [
+            "Fingerpaint"
+          ]
+        },
+        {
+          "label": "Tempera",
+          "aliases": [
+            "Poster paint"
+          ]
+        }
+      ],
+      "references": [
+        "https://wordnet.princeton.edu/",
+        "https://www.habitatbyresene.co.nz/tips/figuring-out-paint-types",
+        "https://www.resene.co.nz/products/finishing-products-topcoats.htm"
+      ],
+      "rare": "Calcimine",
+      "merges": [
+        {
+          "from": "Aerosol paint",
+          "into": "Spray paint"
+        }
+      ]
+    },
+    {
+      "key": "tower-kinds",
+      "root": "tower.n.01",
+      "family": "world",
+      "prompt": "Name a type of tower.",
+      "familiar": [
+        "Clock tower",
+        "Water tower",
+        "Bell tower",
+        "Watchtower",
+        "Radio tower",
+        "Lighthouse",
+        "Control tower",
+        "Cooling tower",
+        "Minaret",
+        "Steeple",
+        "Fire lookout tower",
+        "Transmission tower"
+      ],
+      "exclude": [
+        "Eiffel Tower",
+        "CN Tower"
+      ],
+      "scope": "Types of built tower count, including towers defined by their function or structure. Individual named towers do not.",
+      "holds": {},
+      "aliasHolds": {},
+      "renames": {
+        "beacon": "Lighthouse"
+      },
+      "additions": [
+        {
+          "label": "Water tower",
+          "aliases": []
+        },
+        {
+          "label": "Radio tower",
+          "aliases": []
+        },
+        {
+          "label": "Lighthouse",
+          "aliases": []
+        },
+        {
+          "label": "Cooling tower",
+          "aliases": []
+        },
+        {
+          "label": "Fire lookout tower",
+          "aliases": []
+        },
+        {
+          "label": "Transmission tower",
+          "aliases": [
+            "Electricity pylon"
+          ]
+        },
+        {
+          "label": "Observation tower",
+          "aliases": [
+            "Lookout tower"
+          ]
+        },
+        {
+          "label": "Telecommunications tower",
+          "aliases": [
+            "Telecom tower"
+          ]
+        },
+        {
+          "label": "Cell tower",
+          "aliases": [
+            "Cell phone tower"
+          ]
+        },
+        {
+          "label": "Broadcast tower",
+          "aliases": []
+        },
+        {
+          "label": "TV tower",
+          "aliases": [
+            "Television tower"
+          ]
+        },
+        {
+          "label": "Radar tower",
+          "aliases": []
+        },
+        {
+          "label": "Siege tower",
+          "aliases": []
+        },
+        {
+          "label": "Gantry tower",
+          "aliases": []
+        },
+        {
+          "label": "Launch tower",
+          "aliases": []
+        },
+        {
+          "label": "Drilling derrick",
+          "aliases": []
+        },
+        {
+          "label": "Oil derrick",
+          "aliases": []
+        },
+        {
+          "label": "Elevator tower",
+          "aliases": []
+        },
+        {
+          "label": "Stair tower",
+          "aliases": []
+        },
+        {
+          "label": "Guard tower",
+          "aliases": []
+        },
+        {
+          "label": "Wind turbine tower",
+          "aliases": []
+        },
+        {
+          "label": "Solar power tower",
+          "aliases": []
+        },
+        {
+          "label": "Windmill tower",
+          "aliases": []
+        },
+        {
+          "label": "Flare stack",
+          "aliases": []
+        },
+        {
+          "label": "Drop tower",
+          "aliases": []
+        },
+        {
+          "label": "Diving tower",
+          "aliases": []
+        },
+        {
+          "label": "Lifeguard tower",
+          "aliases": []
+        },
+        {
+          "label": "Signal tower",
+          "aliases": []
+        },
+        {
+          "label": "Martello tower",
+          "aliases": []
+        },
+        {
+          "label": "Round tower",
+          "aliases": []
+        },
+        {
+          "label": "Peel tower",
+          "aliases": []
+        },
+        {
+          "label": "Keep",
+          "aliases": []
+        },
+        {
+          "label": "Donjon",
+          "aliases": []
+        },
+        {
+          "label": "Lattice tower",
+          "aliases": []
+        },
+        {
+          "label": "Guyed tower",
+          "aliases": []
+        },
+        {
+          "label": "Freestanding tower",
+          "aliases": []
+        },
+        {
+          "label": "Monopole tower",
+          "aliases": []
+        }
+      ],
+      "references": [
+        "https://wordnet.princeton.edu/"
+      ],
+      "rare": "Shot tower",
+      "merges": [
+        {
+          "from": "Transmission tower",
+          "into": "Pylon"
+        }
+      ]
+    },
+    {
+      "key": "watercraft-kinds",
+      "root": "vessel.n.02",
+      "family": "world",
+      "prompt": "Name a type of boat, ship or other watercraft.",
+      "familiar": [
+        "Canoe",
+        "Kayak",
+        "Sailboat",
+        "Speedboat",
+        "Cruise ship",
+        "Submarine",
+        "Ferry",
+        "Rowboat",
+        "Raft",
+        "Barge",
+        "Tugboat",
+        "Yacht",
+        "Catamaran",
+        "Jet ski",
+        "Container ship",
+        "Aircraft carrier"
+      ],
+      "exclude": [
+        "HMS Bounty",
+        "RMS Titanic"
+      ],
+      "scope": "Kinds of boat, ship, raft or other vessel designed to travel on water or underwater count, past or present. Individual named vessels, wrecks, ice-only vehicles and descriptors of condition alone do not.",
+      "holds": {
+        "abandoned ship": "Condition, charter/relationship descriptor, figurative shell or ice-only craft rather than a watercraft design.",
+        "bareboat": "Condition, charter/relationship descriptor, figurative shell or ice-only craft rather than a watercraft design.",
+        "cockleshell": "Condition, charter/relationship descriptor, figurative shell or ice-only craft rather than a watercraft design.",
+        "flagship": "Condition, charter/relationship descriptor, figurative shell or ice-only craft rather than a watercraft design.",
+        "hulk": "Condition, charter/relationship descriptor, figurative shell or ice-only craft rather than a watercraft design.",
+        "iceboat": "Condition, charter/relationship descriptor, figurative shell or ice-only craft rather than a watercraft design.",
+        "shipwreck": "Condition, charter/relationship descriptor, figurative shell or ice-only craft rather than a watercraft design.",
+        "sister ship": "Condition, charter/relationship descriptor, figurative shell or ice-only craft rather than a watercraft design.",
+        "treasure ship": "Condition, charter/relationship descriptor, figurative shell or ice-only craft rather than a watercraft design.",
+        "wreck": "Condition, charter/relationship descriptor, figurative shell or ice-only craft rather than a watercraft design.",
+        "ark": "Named individual religious vessel in this source sense, not a sourced real craft type.",
+        "sea boat": "A seaworthiness descriptor rather than a craft design."
+      },
+      "aliasHolds": {
+        "dinghy": [
+          "rowboat"
+        ],
+        "tender": [
+          "cutter"
+        ],
+        "icebreaker": [
+          "iceboat"
+        ]
+      },
+      "renames": {
+        "bottom": "Freighter",
+        "nautilus": "Nuclear submarine",
+        "pirate": "Pirate ship",
+        "tin can": "Destroyer",
+        "rowing boat": "Rowboat",
+        "water scooter": "Water scooter"
+      },
+      "additions": [
+        {
+          "label": "Raft",
+          "aliases": []
+        },
+        {
+          "label": "Rowboat",
+          "aliases": [
+            "Rowing boat"
+          ]
+        },
+        {
+          "label": "Jet ski",
+          "aliases": [
+            "Personal watercraft",
+            "PWC"
+          ]
+        },
+        {
+          "label": "Water scooter",
+          "aliases": [
+            "Sea scooter"
+          ]
+        },
+        {
+          "label": "Hovercraft",
+          "aliases": []
+        },
+        {
+          "label": "Airboat",
+          "aliases": [
+            "Fanboat"
+          ]
+        },
+        {
+          "label": "Swan boat",
+          "aliases": [
+            "Pedalo",
+            "Pedal boat"
+          ]
+        },
+        {
+          "label": "Paddleboard",
+          "aliases": [
+            "Stand up paddleboard",
+            "SUP"
+          ]
+        },
+        {
+          "label": "Surfboard",
+          "aliases": []
+        },
+        {
+          "label": "Windsurf board",
+          "aliases": []
+        },
+        {
+          "label": "Inflatable boat",
+          "aliases": []
+        },
+        {
+          "label": "Rigid inflatable boat",
+          "aliases": [
+            "RIB"
+          ]
+        },
+        {
+          "label": "Dragon boat",
+          "aliases": []
+        },
+        {
+          "label": "Longship",
+          "aliases": []
+        },
+        {
+          "label": "Viking longship",
+          "aliases": []
+        },
+        {
+          "label": "Longtail boat",
+          "aliases": []
+        },
+        {
+          "label": "Bamboo raft",
+          "aliases": []
+        },
+        {
+          "label": "Pontoon boat",
+          "aliases": []
+        },
+        {
+          "label": "Liferaft",
+          "aliases": [
+            "Life raft"
+          ]
+        },
+        {
+          "label": "Landing craft",
+          "aliases": []
+        },
+        {
+          "label": "Landing ship",
+          "aliases": []
+        },
+        {
+          "label": "Assault ship",
+          "aliases": []
+        },
+        {
+          "label": "Research vessel",
+          "aliases": []
+        },
+        {
+          "label": "Survey vessel",
+          "aliases": []
+        },
+        {
+          "label": "Cable ship",
+          "aliases": []
+        },
+        {
+          "label": "Replenishment ship",
+          "aliases": []
+        },
+        {
+          "label": "Drillship",
+          "aliases": []
+        },
+        {
+          "label": "Seismic vessel",
+          "aliases": []
+        },
+        {
+          "label": "Floating production vessel",
+          "aliases": []
+        },
+        {
+          "label": "Cruise ferry",
+          "aliases": []
+        },
+        {
+          "label": "Ro-ro ship",
+          "aliases": [
+            "Roll on roll off ship"
+          ]
+        },
+        {
+          "label": "Bulk carrier",
+          "aliases": []
+        },
+        {
+          "label": "Gas carrier",
+          "aliases": [
+            "LNG carrier"
+          ]
+        },
+        {
+          "label": "Livestock carrier",
+          "aliases": []
+        },
+        {
+          "label": "Car carrier",
+          "aliases": []
+        },
+        {
+          "label": "Caravel",
+          "aliases": []
+        },
+        {
+          "label": "Xebec",
+          "aliases": []
+        },
+        {
+          "label": "Sailing dinghy",
+          "aliases": []
+        },
+        {
+          "label": "Sailing skiff",
+          "aliases": []
+        },
+        {
+          "label": "Foiling boat",
+          "aliases": []
+        },
+        {
+          "label": "Hydrofoil ferry",
+          "aliases": []
+        },
+        {
+          "label": "Trimaran ferry",
+          "aliases": []
+        },
+        {
+          "label": "Water taxi",
+          "aliases": []
+        },
+        {
+          "label": "Duck boat",
+          "aliases": []
+        },
+        {
+          "label": "Canal narrowboat",
+          "aliases": []
+        },
+        {
+          "label": "Log raft",
+          "aliases": []
+        },
+        {
+          "label": "Reed boat",
+          "aliases": []
+        },
+        {
+          "label": "Umiak",
+          "aliases": []
+        },
+        {
+          "label": "Curragh",
+          "aliases": [
+            "Currach"
+          ]
+        },
+        {
+          "label": "Basket boat",
+          "aliases": []
+        },
+        {
+          "label": "Dugout",
+          "aliases": []
+        },
+        {
+          "label": "Sailboard",
+          "aliases": []
+        },
+        {
+          "label": "Corvette",
+          "aliases": []
+        },
+        {
+          "label": "Frigate",
+          "aliases": []
+        },
+        {
+          "label": "Missile boat",
+          "aliases": []
+        },
+        {
+          "label": "Freighter",
+          "aliases": [
+            "Merchant ship",
+            "Merchantman"
+          ]
+        }
+      ],
+      "references": [
+        "https://wordnet.princeton.edu/"
+      ],
+      "rare": "Raceabout",
+      "merges": [
+        {
+          "from": "Dugout",
+          "into": "Dugout canoe"
+        },
+        {
+          "from": "Viking longship",
+          "into": "Longship"
+        },
+        {
+          "from": "Canal narrowboat",
+          "into": "Canal boat"
+        },
+        {
+          "from": "Sailboard",
+          "into": "Windsurf board"
+        }
+      ],
+      "omitOriginalAliases": [
+        "nautilus"
+      ]
+    }
+  ]
+}

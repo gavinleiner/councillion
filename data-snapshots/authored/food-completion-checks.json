@@ -1,0 +1,23 @@
+[
+  {
+    "id": "authored-corn-dishes",
+    "sourceNamedRows": 140,
+    "explicitSourceHolds": 2,
+    "canonicalAnswers": 165,
+    "familiarCases": 52
+  },
+  {
+    "id": "authored-foods-with-custard",
+    "sourceNamedRows": 78,
+    "explicitSourceHolds": 2,
+    "canonicalAnswers": 111,
+    "familiarCases": 41
+  },
+  {
+    "id": "authored-pickled-foods",
+    "sourceNamedRows": 125,
+    "explicitSourceHolds": 2,
+    "canonicalAnswers": 165,
+    "familiarCases": 51
+  }
+]

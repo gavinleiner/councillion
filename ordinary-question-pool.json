@@ -1,6 +1,6 @@
 {
-  "build": "acfa285d2fcac254",
-  "count": 332,
+  "build": "7d849114b9f3190a",
+  "count": 356,
   "categories": [
     {
       "id": "group-q001",
@@ -1819,6 +1819,38 @@
       "scope": "Named examples and standard alternative names count. This is a finite curated inventory, not an exhaustive list of every real-world possibility."
     },
     {
+      "id": "authored-ice-cream-toppings",
+      "prompt": "Name an ice-cream topping or mix-in.",
+      "family": "food",
+      "group": "authored-situations",
+      "answerCount": 99,
+      "scope": "Named toppings and mix-ins used on ice cream, gelato or frozen custard count, including candy, fruit, nuts, sauces and cake pieces. A flavor by itself is not a topping."
+    },
+    {
+      "id": "authored-pickled-foods",
+      "prompt": "Name a food that is commonly pickled.",
+      "family": "food",
+      "group": "authored-properties",
+      "answerCount": 165,
+      "scope": "Vegetables, fruits, eggs, meats and seafood with established pickled preparations count. Vinegar and brine are ingredients, not foods being pickled."
+    },
+    {
+      "id": "authored-corn-dishes",
+      "prompt": "Name a corn-based food or drink.",
+      "family": "food",
+      "group": "authored-situations",
+      "answerCount": 165,
+      "scope": "Corn or cornmeal must be a defining ingredient. Foods, drinks and edible corn products count; incidental corn-derived additives do not make every food corn-based."
+    },
+    {
+      "id": "authored-foods-with-custard",
+      "prompt": "Name a type of custard or a dessert made with custard.",
+      "family": "food",
+      "group": "authored-properties",
+      "answerCount": 112,
+      "scope": "Named custards and desserts made using custard or custard powder count. A cream-only filling does not qualify merely because it is called cream."
+    },
+    {
       "id": "authored-inflatable-objects",
       "prompt": "Name an object designed to be inflated.",
       "family": "everyday",
@@ -2657,6 +2689,166 @@
       "group": "authored-whole-franchise-roster",
       "answerCount": 529,
       "scope": "At least one first-team NBA, BAA or ABA game for this franchise counts, past or present. Coaches, draft rights and preseason-only appearances do not. Chicago Packers, Chicago Zephyrs, Baltimore Bullets, Capital Bullets and Washington Bullets seasons count. The unrelated earlier Baltimore Bullets club does not."
+    },
+    {
+      "id": "authored-sound-equipment",
+      "prompt": "Name an audio listening, recording or amplification device.",
+      "family": "science",
+      "group": "authored-whole-object-concept",
+      "answerCount": 54,
+      "scope": "Physical devices for listening to, picking up, recording, reproducing or amplifying audio count. Musical instruments by themselves, warning bells and noise-suppression-only devices do not."
+    },
+    {
+      "id": "authored-sports-balls",
+      "prompt": "Name a type of ball used in a sport, game or athletic training.",
+      "family": "sports",
+      "group": "authored-whole-object-concept",
+      "answerCount": 54,
+      "scope": "Named balls used in sports, games or athletic training count, including particular game-ball designs. Pucks, shuttlecocks and punching bags are not balls."
+    },
+    {
+      "id": "authored-physical-barriers",
+      "prompt": "Name a kind of physical barrier.",
+      "family": "everyday",
+      "group": "authored-whole-object-concept",
+      "answerCount": 88,
+      "scope": "Physical barriers such as walls, doors, fences, gates and protective barriers count. Figurative barriers and software do not."
+    },
+    {
+      "id": "authored-bottle-flask-kinds",
+      "prompt": "Name a type of bottle or flask.",
+      "family": "everyday",
+      "group": "authored-whole-object-concept",
+      "answerCount": 60,
+      "scope": "Recognizable kinds of bottle or flask count, including scientific flasks and named bottle sizes. A brand alone does not identify a bottle type."
+    },
+    {
+      "id": "authored-box-container-kinds",
+      "prompt": "Name a kind of box or boxed storage container.",
+      "family": "everyday",
+      "group": "authored-whole-object-concept",
+      "answerCount": 67,
+      "scope": "Types of physical box, chest, crate and boxed storage container count, including cases with a recognizable box form. Metaphorical boxes and software do not."
+    },
+    {
+      "id": "authored-chair-styles",
+      "prompt": "Name a type of chair or stool.",
+      "family": "everyday",
+      "group": "authored-whole-object-concept",
+      "answerCount": 75,
+      "scope": "Recognizable chair and seated-stool designs count, past or present. Benches, couches, named individual thrones and the person chairing a meeting do not."
+    },
+    {
+      "id": "authored-coats-jackets",
+      "prompt": "Name a style of coat or jacket.",
+      "family": "everyday",
+      "group": "authored-whole-object-concept",
+      "answerCount": 79,
+      "scope": "Named coat and jacket styles count, including workwear and historical garments. Materials alone and coats of paint do not."
+    },
+    {
+      "id": "authored-fabric-kinds",
+      "prompt": "Name a type of fabric or textile material.",
+      "family": "everyday",
+      "group": "authored-whole-object-concept",
+      "answerCount": 224,
+      "scope": "Named textile fabrics and textile materials count. Finished garments, towels, sails, loose cut pieces and metal meshes do not count merely because a dictionary groups them under cloth."
+    },
+    {
+      "id": "authored-fastener-kinds",
+      "prompt": "Name a mechanical fastener or a fastening knot.",
+      "family": "everyday",
+      "group": "authored-whole-object-concept",
+      "answerCount": 177,
+      "scope": "Mechanical fasteners and named fastening knots count. Adhesives, welding, seals that only stop leaks, fictional knots and decorative marks do not."
+    },
+    {
+      "id": "authored-headwear-kinds",
+      "prompt": "Name a type of headwear or head covering.",
+      "family": "everyday",
+      "group": "authored-whole-object-concept",
+      "answerCount": 122,
+      "scope": "Real kinds of hat, cap, helmet or other wearable head covering count, including religious and historical headwear. Fictional magical items and names of individual objects do not."
+    },
+    {
+      "id": "authored-knife-kinds",
+      "prompt": "Name a type of knife.",
+      "family": "everyday",
+      "group": "authored-whole-object-concept",
+      "answerCount": 64,
+      "scope": "Real knife styles and knife-like edged hand tools count, including kitchen, craft, hunting and surgical knives. Medical devices that only use knife metaphorically do not."
+    },
+    {
+      "id": "authored-lamp-lighting-kinds",
+      "prompt": "Name a type of lamp or lighting fixture.",
+      "family": "science",
+      "group": "authored-whole-object-concept",
+      "answerCount": 78,
+      "scope": "Real lamps, lighting fixtures and manufactured light sources count, including candles and historical lighting. Fictional individual lamps, stars and naturally glowing organisms do not."
+    },
+    {
+      "id": "authored-computer-storage-memory",
+      "prompt": "Name a type of computer memory, storage device or storage medium.",
+      "family": "science",
+      "group": "authored-whole-object-concept",
+      "answerCount": 83,
+      "scope": "Memory technologies and physical digital data-storage media or devices count, including obsolete systems. A song, movie or other recorded work is content, not storage. Online service brand names do not identify storage hardware."
+    },
+    {
+      "id": "authored-motor-vehicle-categories",
+      "prompt": "Name a category of motor vehicle.",
+      "family": "world",
+      "group": "authored-whole-object-concept",
+      "answerCount": 121,
+      "scope": "Types of self-propelled road or off-road vehicle count, with wheels, tracks or skids, including electric versions. Individual named models, rail vehicles, unpowered trailers and descriptions of condition alone do not."
+    },
+    {
+      "id": "authored-optical-equipment-kinds",
+      "prompt": "Name an optical instrument used to aid vision or examine things.",
+      "family": "science",
+      "group": "authored-whole-object-concept",
+      "answerCount": 59,
+      "scope": "Real instruments that use light to aid sight, magnify, project, examine or measure an optical image or spectrum count. Acoustic and mass-analysis instruments do not qualify merely because a source groups them near spectrometers."
+    },
+    {
+      "id": "authored-photography-equipment",
+      "prompt": "Name a piece of equipment used to take or process photographs.",
+      "family": "science",
+      "group": "authored-whole-object-concept",
+      "answerCount": 89,
+      "scope": "Physical equipment, supplies and accessories used in still photography count, including darkroom materials. A finished photograph, filmed sequence or a device used only to mark a film take does not."
+    },
+    {
+      "id": "authored-worship-building-kinds",
+      "prompt": "Name a type of building or place used for worship.",
+      "family": "world",
+      "group": "authored-whole-object-concept",
+      "answerCount": 58,
+      "scope": "Types of religious worship building or built shrine count across religions. Individual named landmarks and a minister or deity alone do not."
+    },
+    {
+      "id": "authored-paint-kinds",
+      "prompt": "Name a type of paint.",
+      "family": "culture",
+      "group": "authored-whole-object-concept",
+      "answerCount": 62,
+      "scope": "Types of paint defined by medium, finish or purpose count, including artist and building paints. Color names alone, a layer of paint and digital painting software do not."
+    },
+    {
+      "id": "authored-tower-kinds",
+      "prompt": "Name a type of tower.",
+      "family": "world",
+      "group": "authored-whole-object-concept",
+      "answerCount": 55,
+      "scope": "Types of built tower count, including towers defined by their function or structure. Individual named towers do not."
+    },
+    {
+      "id": "authored-watercraft-kinds",
+      "prompt": "Name a type of boat, ship or other watercraft.",
+      "family": "world",
+      "group": "authored-whole-object-concept",
+      "answerCount": 208,
+      "scope": "Kinds of boat, ship, raft or other vessel designed to travel on water or underwater count, past or present. Individual named vessels, wrecks, ice-only vehicles and descriptors of condition alone do not."
     }
   ]
 }

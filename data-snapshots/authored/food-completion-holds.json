@@ -1,0 +1,14 @@
+{
+  "authored-corn-dishes": {
+    "Corn steep liquor": "An industrial/feed fermentation input, not a human food or drink.",
+    "Battered sausage": "Generic wheat-battered sausage is not necessarily corn-based; the actual corn-dog preparation is included separately."
+  },
+  "authored-foods-with-custard": {
+    "Kogel mogel": "Raw whipped egg preparation; no established custard ingredient verified in this batch.",
+    "Wuzetka": "Ordinary filling is whipped cream, not custard; no qualifying custard variant verified in this batch."
+  },
+  "authored-pickled-foods": {
+    "Cucumber soup": "Soup made with pickles, not soup that is itself pickled.",
+    "Pickling salt": "A pickling ingredient, not a food that is itself pickled."
+  }
+}

@@ -7877,6 +7877,958 @@
         "https://en.wikipedia.org/wiki/Washington_Wizards_all-time_roster"
       ],
       "review": "One whole all-time NBA/BAA/ABA franchise roster, including its stated former team names. 508 independently supplied familiar player inputs reconcile across the batch. Retired jersey numbers and legend symbols are metadata, not player names. Seattle expands the Thunder inventory rather than becoming another question. NBL-only Lakers table rows are excluded. Real former names and public nicknames are explicit; no initials are generated."
+    },
+    {
+      "id": "authored-ice-cream-toppings",
+      "basis": "individually-reviewed-broad-food-concepts-based-on-original-yes-model",
+      "yes": [
+        "Sprinkles",
+        "Hot fudge",
+        "Whipped cream",
+        "Caramel sauce",
+        "Oreo",
+        "Maraschino cherry",
+        "Chocolate",
+        "Caramel",
+        "Nuts",
+        "Snickers",
+        "Butterfinger",
+        "Heath",
+        "Kit Kat",
+        "Andes mints",
+        "Dove chocolate",
+        "Whipped topping",
+        "Rainbow sprinkles",
+        "Golden Oreo",
+        "Cheesecake",
+        "Chocolate cake",
+        "Graham crackers",
+        "Apple pie filling",
+        "Blackberries",
+        "Peaches",
+        "Cinnamon",
+        "Frosting",
+        "Mint",
+        "Salted caramel",
+        "Marshmallow cream",
+        "Reeses",
+        "Chocolate chips",
+        "Cookie dough",
+        "Brownie",
+        "M and Ms",
+        "Strawberries",
+        "Bananas",
+        "Peanuts",
+        "Pistachios",
+        "Skittles",
+        "Twix",
+        "Nilla wafers",
+        "Whoppers"
+      ],
+      "no": [
+        "Broccoli",
+        "Raw chicken"
+      ],
+      "prompt": "Name an ice-cream topping or mix-in.",
+      "family": "food",
+      "inventoryEvidence": [
+        "https://www.benjerry.com/flavors/ice-cream-sundaes",
+        "https://www.bbcgoodfood.com/recipes/collection/ice-cream-sundae-recipes",
+        "https://www.coldstonecreamery.com/menu/ice-cream/create-your-own/",
+        "https://www.coldstonecreamery.com/nutrition/pdf/CSC_Ingedient%20Statement-Mix-Ins_Cones.pdf",
+        "https://cdn.culvers.com/menu/docs/full-menu.pdf",
+        "https://www.dairyqueen.com/en-us/nutrition/treats/",
+        "https://marsfoodservices.com/recipe/skittles-popd-fireworks-shake",
+        "https://nerdymamma.com/skittles-rainbow-ice-cream-dairy-free-gluten-free/",
+        "https://www.calorieking.com/us/en/foods/b/calories-in-cold-stone-creamery/U30MWlz2SJyghXrKnFayVQ?classification=Toppings"
+      ],
+      "review": "Whole global food inventories expanded with published named-food lists and primary recipes/menus. Independent common-food guesses repair obvious omissions; aliases merge the same preparation. Explicit source holds exclude pickling salt, industrial corn-steep feed liquor, non-corn foods and cream-only/raw-egg desserts. Source sublists and variants expand answers, never question count. The separate leaf-food candidate is still held for article-source reconciliation."
+    },
+    {
+      "id": "authored-pickled-foods",
+      "basis": "individually-reviewed-broad-food-concepts-based-on-original-yes-model",
+      "yes": [
+        "Cucumber",
+        "Onion",
+        "Egg",
+        "Beetroot",
+        "Herring",
+        "Jalapeno",
+        "Cabbage",
+        "Carrot",
+        "Radish",
+        "Garlic",
+        "Cauliflower",
+        "Green beans",
+        "Peppers",
+        "Ginger",
+        "Olives",
+        "Okra",
+        "Turnip",
+        "Mango",
+        "Red onion",
+        "Pearl onions",
+        "Daikon",
+        "Mushrooms",
+        "Asparagus",
+        "Zucchini",
+        "Eggplant",
+        "Watermelon rind",
+        "Green tomatoes",
+        "Capers",
+        "Pickled cucumber",
+        "Pickled eggs",
+        "Pickled red onion",
+        "Pickled jalapenos",
+        "Pickled beets",
+        "Kimchi",
+        "Sauerkraut",
+        "Giardiniera",
+        "Relish",
+        "Achaar",
+        "Acar",
+        "Umeboshi",
+        "Tsukemono",
+        "Gari",
+        "Rollmops",
+        "Corned beef",
+        "Peppadew",
+        "Pickled garlic",
+        "Pickled ginger",
+        "Pickled herring",
+        "Pickled mustard seeds",
+        "Artichoke",
+        "Seaweed",
+        "Kimchee",
+        "Achar",
+        "Red onions",
+        "Pickled red onions",
+        "Pickled beef"
+      ],
+      "no": [
+        "Chocolate cake",
+        "Vinegar",
+        "Pickling salt",
+        "Cucumber soup"
+      ],
+      "prompt": "Name a food that is commonly pickled.",
+      "family": "food",
+      "inventoryEvidence": [
+        "https://www.bbcgoodfood.com/recipes/collection/pickling-recipes",
+        "https://nchfp.uga.edu/how/pickle/",
+        "https://en.wikipedia.org/wiki/List_of_pickled_foods"
+      ],
+      "review": "Whole global food inventories expanded with published named-food lists and primary recipes/menus. Independent common-food guesses repair obvious omissions; aliases merge the same preparation. Explicit source holds exclude pickling salt, industrial corn-steep feed liquor, non-corn foods and cream-only/raw-egg desserts. Source sublists and variants expand answers, never question count. The separate leaf-food candidate is still held for article-source reconciliation."
+    },
+    {
+      "id": "authored-corn-dishes",
+      "basis": "individually-reviewed-broad-food-concepts-based-on-original-yes-model",
+      "yes": [
+        "Popcorn",
+        "Cornbread",
+        "Polenta",
+        "Tortilla",
+        "Grits",
+        "Arepa",
+        "Corn on the cob",
+        "Corn flakes",
+        "Nachos",
+        "Corn chips",
+        "Tamale",
+        "Elote",
+        "Esquites",
+        "Corn chowder",
+        "Corn pudding",
+        "Creamed corn",
+        "Corn fritters",
+        "Hush puppies",
+        "Corn dog",
+        "Hominy",
+        "Tostada",
+        "Gordita",
+        "Sope",
+        "Pupusa",
+        "Pozole",
+        "Chilaquiles",
+        "Enchilada",
+        "Tortilla chips",
+        "Fritos",
+        "Doritos",
+        "Johnnycake",
+        "Spoonbread",
+        "Atole",
+        "Champurrado",
+        "Chicha",
+        "Mazamorra",
+        "Cornmeal",
+        "Corn oil",
+        "Corn starch",
+        "Corn syrup",
+        "Corn soup",
+        "Corn cheese",
+        "Corn tea",
+        "Corn whiskey",
+        "Bourbon whiskey",
+        "Taco",
+        "Taquito",
+        "Makki di roti",
+        "Broa",
+        "Succotash",
+        "Gofio",
+        "Canjica"
+      ],
+      "no": [
+        "Wheat bread",
+        "Rice pudding",
+        "Ducana",
+        "Corned beef",
+        "Coca-Cola"
+      ],
+      "prompt": "Name a corn-based food or drink.",
+      "family": "food",
+      "inventoryEvidence": [
+        "https://www.britannica.com/plant/corn-plant",
+        "https://www.bbcgoodfood.com/recipes/collection/sweetcorn-recipes",
+        "https://www.si.edu/stories/corn-americas",
+        "https://en.wikipedia.org/wiki/List_of_maize_dishes"
+      ],
+      "review": "Whole global food inventories expanded with published named-food lists and primary recipes/menus. Independent common-food guesses repair obvious omissions; aliases merge the same preparation. Explicit source holds exclude pickling salt, industrial corn-steep feed liquor, non-corn foods and cream-only/raw-egg desserts. Source sublists and variants expand answers, never question count. The separate leaf-food candidate is still held for article-source reconciliation."
+    },
+    {
+      "id": "authored-foods-with-custard",
+      "basis": "individually-reviewed-broad-food-concepts-based-on-original-yes-model",
+      "yes": [
+        "Crème brûlée",
+        "Flan",
+        "Custard tart",
+        "Éclair",
+        "Trifle",
+        "Boston cream pie",
+        "Egg custard",
+        "Vanilla custard",
+        "Baked custard",
+        "Chocolate custard",
+        "Custard pudding",
+        "Frozen custard",
+        "Custard slice",
+        "Napoleon",
+        "Boston cream donut",
+        "Pastel de nata",
+        "Portuguese egg tart",
+        "Custard bao",
+        "Custard bun",
+        "Banana cream pie",
+        "Coconut cream pie",
+        "Cream puff",
+        "Bread pudding",
+        "Bread and butter pudding",
+        "Custard pie",
+        "Fruit tart",
+        "Pots de creme",
+        "Creme anglaise",
+        "Bavarian cream",
+        "Zabaglione",
+        "Clafoutis",
+        "Nanaimo bar",
+        "Banana pudding",
+        "Pumpkin pie",
+        "Sweet potato pie",
+        "Cheesecake",
+        "Tiramisu",
+        "Frangipane",
+        "Natillas",
+        "Melktert",
+        "Cream pie",
+        "Custard creams",
+        "Nanaimo bars"
+      ],
+      "no": [
+        "Sorbet",
+        "Baklava",
+        "Panna cotta",
+        "Wuzetka",
+        "Kogel mogel"
+      ],
+      "prompt": "Name a type of custard or a dessert made with custard.",
+      "family": "food",
+      "inventoryEvidence": [
+        "https://www.bbcgoodfood.com/recipes/collection/custard-recipes",
+        "https://www.britannica.com/topic/custard",
+        "https://www.foodnetwork.com/recipes/food-network-kitchen/nai-wong-bao-12514038",
+        "https://www.visitportugal.com/en/content/traditional-portuguese-recipes-past%C3%A9is-de-nata-custard-tarts",
+        "https://www.kraftheinz.com/en-CA/bakers/recipes/549727-nanaimo-bars",
+        "https://en.wikipedia.org/wiki/List_of_custard_desserts",
+        "https://www.kingarthurbaking.com/recipes/nanaimo-bars-recipe",
+        "https://thegreatbritishbakeoff.co.uk/recipes/all/prue-leiths-custard-creams/"
+      ],
+      "review": "Whole global food inventories expanded with published named-food lists and primary recipes/menus. Independent common-food guesses repair obvious omissions; aliases merge the same preparation. Explicit source holds exclude pickling salt, industrial corn-steep feed liquor, non-corn foods and cream-only/raw-egg desserts. Source sublists and variants expand answers, never question count. The separate leaf-food candidate is still held for article-source reconciliation."
+    },
+    {
+      "id": "authored-sound-equipment",
+      "basis": "individually-reviewed-whole-concept-based-on-original-yes-model",
+      "yes": [
+        "Microphone",
+        "Loudspeaker",
+        "Headphones",
+        "Earbuds",
+        "Megaphone",
+        "Hearing aid",
+        "Soundbar",
+        "Subwoofer",
+        "Earphone",
+        "Bullhorn",
+        "PA system",
+        "Headset",
+        "Radio",
+        "Telephone",
+        "Bluetooth speaker",
+        "Smart speaker",
+        "Amplifier",
+        "Record player",
+        "Audio interface",
+        "Sound card"
+      ],
+      "no": [
+        "Camera lens",
+        "Silent film"
+      ],
+      "prompt": "Name an audio listening, recording or amplification device.",
+      "family": "science",
+      "inventoryEvidence": [
+        "https://wordnet.princeton.edu/",
+        "https://www.shure.com/en-US",
+        "https://www.shure.com/en-ASIA/products"
+      ],
+      "review": "One whole recognizable category with a complete licensed dictionary descendant inventory, explicit sense and alias holds, independently specified common inputs and declared modern supplements. Source granularity errors and content-versus-device errors were removed. Actual public abbreviations remain; initials are never generated. No property/tag joins, source sections, individual object models or named-instance traversals create questions."
+    },
+    {
+      "id": "authored-sports-balls",
+      "basis": "individually-reviewed-whole-concept-based-on-original-yes-model",
+      "yes": [
+        "Soccer ball",
+        "Basketball",
+        "Baseball",
+        "Tennis ball",
+        "Golf ball",
+        "Volleyball",
+        "Rugby ball",
+        "Cricket ball",
+        "Softball",
+        "Bowling ball",
+        "Billiard ball",
+        "Ping pong ball",
+        "Pickleball",
+        "Wiffle ball",
+        "Dodgeball",
+        "Kickball",
+        "Water polo ball",
+        "Beach ball",
+        "Racquetball",
+        "Squash ball",
+        "Paintball",
+        "Netball",
+        "Futsal ball"
+      ],
+      "no": [
+        "Hockey puck",
+        "Shuttlecock"
+      ],
+      "prompt": "Name a type of ball used in a sport, game or athletic training.",
+      "family": "sports",
+      "inventoryEvidence": [
+        "https://wordnet.princeton.edu/",
+        "https://www.wilson.com/en-us/collections/basketball-balls",
+        "https://www.wilson.com/en-us/soccer",
+        "https://www.nike.com/w/all-products-balls-3ci69z580b1z8hfx3zbdka"
+      ],
+      "review": "One whole recognizable category with a complete licensed dictionary descendant inventory, explicit sense and alias holds, independently specified common inputs and declared modern supplements. Source granularity errors and content-versus-device errors were removed. Actual public abbreviations remain; initials are never generated. No property/tag joins, source sections, individual object models or named-instance traversals create questions."
+    },
+    {
+      "id": "authored-physical-barriers",
+      "basis": "individually-reviewed-whole-concept-based-on-original-yes-model",
+      "yes": [
+        "Fence",
+        "Wall",
+        "Gate",
+        "Barricade",
+        "Bollard",
+        "Turnstile",
+        "Guardrail",
+        "Roadblock",
+        "Boom barrier",
+        "Crash barrier",
+        "Door",
+        "Moat"
+      ],
+      "no": [
+        "Software firewall",
+        "Language barrier"
+      ],
+      "prompt": "Name a kind of physical barrier.",
+      "family": "everyday",
+      "inventoryEvidence": [
+        "https://wordnet.princeton.edu/"
+      ],
+      "review": "One whole recognizable category with a complete licensed dictionary descendant inventory, explicit sense and alias holds, independently specified common inputs and declared modern supplements. Source granularity errors and content-versus-device errors were removed. Actual public abbreviations remain; initials are never generated. No property/tag joins, source sections, individual object models or named-instance traversals create questions."
+    },
+    {
+      "id": "authored-bottle-flask-kinds",
+      "basis": "individually-reviewed-whole-concept-based-on-original-yes-model",
+      "yes": [
+        "Water bottle",
+        "Baby bottle",
+        "Spray bottle",
+        "Wine bottle",
+        "Beer bottle",
+        "Thermos",
+        "Squeeze bottle",
+        "Perfume bottle",
+        "Medicine bottle",
+        "Hip flask",
+        "Vacuum flask",
+        "Erlenmeyer flask"
+      ],
+      "no": [
+        "Bottle episode",
+        "Bottleneck in traffic"
+      ],
+      "prompt": "Name a type of bottle or flask.",
+      "family": "everyday",
+      "inventoryEvidence": [
+        "https://wordnet.princeton.edu/"
+      ],
+      "review": "One whole recognizable category with a complete licensed dictionary descendant inventory, explicit sense and alias holds, independently specified common inputs and declared modern supplements. Source granularity errors and content-versus-device errors were removed. Actual public abbreviations remain; initials are never generated. No property/tag joins, source sections, individual object models or named-instance traversals create questions."
+    },
+    {
+      "id": "authored-box-container-kinds",
+      "basis": "individually-reviewed-whole-concept-based-on-original-yes-model",
+      "yes": [
+        "Cardboard box",
+        "Shoebox",
+        "Toolbox",
+        "Lunchbox",
+        "Jewelry box",
+        "Cardboard carton",
+        "Cereal box",
+        "Mailbox",
+        "Music box",
+        "Matchbox",
+        "Cashbox",
+        "Toy box"
+      ],
+      "no": [
+        "Boxing match",
+        "Box office revenue"
+      ],
+      "prompt": "Name a kind of box or boxed storage container.",
+      "family": "everyday",
+      "inventoryEvidence": [
+        "https://wordnet.princeton.edu/"
+      ],
+      "review": "One whole recognizable category with a complete licensed dictionary descendant inventory, explicit sense and alias holds, independently specified common inputs and declared modern supplements. Source granularity errors and content-versus-device errors were removed. Actual public abbreviations remain; initials are never generated. No property/tag joins, source sections, individual object models or named-instance traversals create questions."
+    },
+    {
+      "id": "authored-chair-styles",
+      "basis": "individually-reviewed-whole-concept-based-on-original-yes-model",
+      "yes": [
+        "Armchair",
+        "Rocking chair",
+        "Office chair",
+        "Dining chair",
+        "Wheelchair",
+        "Folding chair",
+        "Deck chair",
+        "Recliner",
+        "High chair",
+        "Barber chair",
+        "Beanbag chair",
+        "Gaming chair"
+      ],
+      "no": [
+        "Chairperson",
+        "Dining table"
+      ],
+      "prompt": "Name a type of chair or stool.",
+      "family": "everyday",
+      "inventoryEvidence": [
+        "https://wordnet.princeton.edu/",
+        "https://www.ikea.com/us/en/cat/chairs-fu002/"
+      ],
+      "review": "One whole recognizable category with a complete licensed dictionary descendant inventory, explicit sense and alias holds, independently specified common inputs and declared modern supplements. Source granularity errors and content-versus-device errors were removed. Actual public abbreviations remain; initials are never generated. No property/tag joins, source sections, individual object models or named-instance traversals create questions."
+    },
+    {
+      "id": "authored-coats-jackets",
+      "basis": "individually-reviewed-whole-concept-based-on-original-yes-model",
+      "yes": [
+        "Raincoat",
+        "Parka",
+        "Trench coat",
+        "Peacoat",
+        "Bomber jacket",
+        "Blazer",
+        "Denim jacket",
+        "Leather jacket",
+        "Puffer jacket",
+        "Windbreaker",
+        "Anorak",
+        "Duffle coat"
+      ],
+      "no": [
+        "Coat of paint",
+        "Lab coat color"
+      ],
+      "prompt": "Name a style of coat or jacket.",
+      "family": "everyday",
+      "inventoryEvidence": [
+        "https://wordnet.princeton.edu/"
+      ],
+      "review": "One whole recognizable category with a complete licensed dictionary descendant inventory, explicit sense and alias holds, independently specified common inputs and declared modern supplements. Source granularity errors and content-versus-device errors were removed. Actual public abbreviations remain; initials are never generated. No property/tag joins, source sections, individual object models or named-instance traversals create questions."
+    },
+    {
+      "id": "authored-fabric-kinds",
+      "basis": "individually-reviewed-whole-concept-based-on-original-yes-model",
+      "yes": [
+        "Cotton",
+        "Silk",
+        "Linen",
+        "Denim",
+        "Wool",
+        "Velvet",
+        "Satin",
+        "Corduroy",
+        "Tweed",
+        "Polyester",
+        "Nylon",
+        "Fleece",
+        "Canvas",
+        "Chiffon",
+        "Lace",
+        "Tulle",
+        "Spandex",
+        "Lycra",
+        "Cashmere",
+        "Felt",
+        "Flannel",
+        "Burlap",
+        "Rayon",
+        "Leather",
+        "Suede",
+        "Faux fur",
+        "Terry cloth",
+        "Mesh fabric"
+      ],
+      "no": [
+        "Steel plate",
+        "Glass pane"
+      ],
+      "prompt": "Name a type of fabric or textile material.",
+      "family": "everyday",
+      "inventoryEvidence": [
+        "https://wordnet.princeton.edu/"
+      ],
+      "review": "One whole recognizable category with a complete licensed dictionary descendant inventory, explicit sense and alias holds, independently specified common inputs and declared modern supplements. Source granularity errors and content-versus-device errors were removed. Actual public abbreviations remain; initials are never generated. No property/tag joins, source sections, individual object models or named-instance traversals create questions."
+    },
+    {
+      "id": "authored-fastener-kinds",
+      "basis": "individually-reviewed-whole-concept-based-on-original-yes-model",
+      "yes": [
+        "Screw",
+        "Nail",
+        "Bolt",
+        "Nut",
+        "Rivet",
+        "Staple",
+        "Pin",
+        "Zip tie",
+        "Buckle",
+        "Button",
+        "Zipper",
+        "Hook and loop fastener",
+        "Clip",
+        "Cotter pin",
+        "Clamp",
+        "Snap fastener",
+        "Paper clip",
+        "Clothespin",
+        "Safety pin",
+        "Thumbtack",
+        "Hairpin",
+        "Carabiner",
+        "Padlock",
+        "Wing nut"
+      ],
+      "no": [
+        "Superglue",
+        "Welding"
+      ],
+      "prompt": "Name a mechanical fastener or a fastening knot.",
+      "family": "everyday",
+      "inventoryEvidence": [
+        "https://wordnet.princeton.edu/"
+      ],
+      "review": "One whole recognizable category with a complete licensed dictionary descendant inventory, explicit sense and alias holds, independently specified common inputs and declared modern supplements. Source granularity errors and content-versus-device errors were removed. Actual public abbreviations remain; initials are never generated. No property/tag joins, source sections, individual object models or named-instance traversals create questions."
+    },
+    {
+      "id": "authored-headwear-kinds",
+      "basis": "individually-reviewed-whole-concept-based-on-original-yes-model",
+      "yes": [
+        "Baseball cap",
+        "Beanie",
+        "Helmet",
+        "Beret",
+        "Turban",
+        "Cowboy hat",
+        "Fedora",
+        "Top hat",
+        "Bucket hat",
+        "Sun hat",
+        "Balaclava",
+        "Hijab",
+        "Crown",
+        "Headband",
+        "Wig",
+        "Hood",
+        "Kippah",
+        "Yarmulke",
+        "Shower cap",
+        "Graduation cap",
+        "Party hat",
+        "Visor",
+        "Earmuffs"
+      ],
+      "no": [
+        "Necklace",
+        "Shoelace"
+      ],
+      "prompt": "Name a type of headwear or head covering.",
+      "family": "everyday",
+      "inventoryEvidence": [
+        "https://wordnet.princeton.edu/"
+      ],
+      "review": "One whole recognizable category with a complete licensed dictionary descendant inventory, explicit sense and alias holds, independently specified common inputs and declared modern supplements. Source granularity errors and content-versus-device errors were removed. Actual public abbreviations remain; initials are never generated. No property/tag joins, source sections, individual object models or named-instance traversals create questions."
+    },
+    {
+      "id": "authored-knife-kinds",
+      "basis": "individually-reviewed-whole-concept-based-on-original-yes-model",
+      "yes": [
+        "Butter knife",
+        "Bread knife",
+        "Chef knife",
+        "Pocketknife",
+        "Steak knife",
+        "Paring knife",
+        "Cleaver",
+        "Boning knife",
+        "Carving knife",
+        "Utility knife",
+        "Bowie knife",
+        "Machete",
+        "Fillet knife",
+        "Cheese knife",
+        "Oyster knife",
+        "Scalpel",
+        "Craft knife"
+      ],
+      "no": [
+        "Gamma Knife",
+        "Swiss bank account"
+      ],
+      "prompt": "Name a type of knife.",
+      "family": "everyday",
+      "inventoryEvidence": [
+        "https://wordnet.princeton.edu/"
+      ],
+      "review": "One whole recognizable category with a complete licensed dictionary descendant inventory, explicit sense and alias holds, independently specified common inputs and declared modern supplements. Source granularity errors and content-versus-device errors were removed. Actual public abbreviations remain; initials are never generated. No property/tag joins, source sections, individual object models or named-instance traversals create questions."
+    },
+    {
+      "id": "authored-lamp-lighting-kinds",
+      "basis": "individually-reviewed-whole-concept-based-on-original-yes-model",
+      "yes": [
+        "Desk lamp",
+        "Floor lamp",
+        "Table lamp",
+        "Lava lamp",
+        "Oil lamp",
+        "Lantern",
+        "Headlamp",
+        "Streetlight",
+        "Chandelier",
+        "Night light",
+        "Flashlight",
+        "Pendant light",
+        "Wall sconce",
+        "Grow light",
+        "LED lamp",
+        "Blacklight",
+        "Headlight",
+        "Neon sign",
+        "Floodlight"
+      ],
+      "no": [
+        "Sun",
+        "Firefly"
+      ],
+      "prompt": "Name a type of lamp or lighting fixture.",
+      "family": "science",
+      "inventoryEvidence": [
+        "https://wordnet.princeton.edu/"
+      ],
+      "review": "One whole recognizable category with a complete licensed dictionary descendant inventory, explicit sense and alias holds, independently specified common inputs and declared modern supplements. Source granularity errors and content-versus-device errors were removed. Actual public abbreviations remain; initials are never generated. No property/tag joins, source sections, individual object models or named-instance traversals create questions."
+    },
+    {
+      "id": "authored-computer-storage-memory",
+      "basis": "individually-reviewed-whole-concept-based-on-original-yes-model",
+      "yes": [
+        "Hard drive",
+        "SSD",
+        "USB flash drive",
+        "SD card",
+        "CD",
+        "DVD",
+        "Blu-ray",
+        "Floppy disk",
+        "RAM",
+        "ROM",
+        "Cache",
+        "Magnetic tape",
+        "Memory card",
+        "CPU register",
+        "USB drive",
+        "DRAM",
+        "SRAM",
+        "Flash memory"
+      ],
+      "no": [
+        "Keyboard key",
+        "Computer mouse"
+      ],
+      "prompt": "Name a type of computer memory, storage device or storage medium.",
+      "family": "science",
+      "inventoryEvidence": [
+        "https://wordnet.princeton.edu/",
+        "https://www.kingston.com/en/memory/kingston-glossary",
+        "https://media.kingston.com/pdfs/MKF_283.2_Flash_Memory_Guide_EN.pdf"
+      ],
+      "review": "One whole recognizable category with a complete licensed dictionary descendant inventory, explicit sense and alias holds, independently specified common inputs and declared modern supplements. Source granularity errors and content-versus-device errors were removed. Actual public abbreviations remain; initials are never generated. No property/tag joins, source sections, individual object models or named-instance traversals create questions."
+    },
+    {
+      "id": "authored-motor-vehicle-categories",
+      "basis": "individually-reviewed-whole-concept-based-on-original-yes-model",
+      "yes": [
+        "Car",
+        "Truck",
+        "Bus",
+        "Van",
+        "Motorcycle",
+        "Tractor",
+        "SUV",
+        "Taxi",
+        "Ambulance",
+        "Pickup truck",
+        "Minivan",
+        "Motorhome",
+        "Motor scooter",
+        "Electric car"
+      ],
+      "no": [
+        "Pedal bicycle",
+        "Sailboat",
+        "Steam locomotive"
+      ],
+      "prompt": "Name a category of motor vehicle.",
+      "family": "world",
+      "inventoryEvidence": [
+        "https://wordnet.princeton.edu/"
+      ],
+      "review": "One whole recognizable category with a complete licensed dictionary descendant inventory, explicit sense and alias holds, independently specified common inputs and declared modern supplements. Source granularity errors and content-versus-device errors were removed. Actual public abbreviations remain; initials are never generated. No property/tag joins, source sections, individual object models or named-instance traversals create questions."
+    },
+    {
+      "id": "authored-optical-equipment-kinds",
+      "basis": "individually-reviewed-whole-concept-based-on-original-yes-model",
+      "yes": [
+        "Telescope",
+        "Microscope",
+        "Binoculars",
+        "Magnifying glass",
+        "Periscope",
+        "Eyeglasses",
+        "Loupe",
+        "Monocular",
+        "Stereoscope",
+        "Endoscope",
+        "Kaleidoscope",
+        "Night vision goggles"
+      ],
+      "no": [
+        "Hearing aid",
+        "Soundbar",
+        "Mass spectrometer",
+        "Sound spectrograph",
+        "Electron microscope"
+      ],
+      "prompt": "Name an optical instrument used to aid vision or examine things.",
+      "family": "science",
+      "inventoryEvidence": [
+        "https://wordnet.princeton.edu/",
+        "https://www.celestron.com/",
+        "https://imaging.nikon.com/sport-optics/lineup/binoculars/accessory/"
+      ],
+      "review": "One whole recognizable category with a complete licensed dictionary descendant inventory, explicit sense and alias holds, independently specified common inputs and declared modern supplements. Source granularity errors and content-versus-device errors were removed. Actual public abbreviations remain; initials are never generated. No property/tag joins, source sections, individual object models or named-instance traversals create questions."
+    },
+    {
+      "id": "authored-photography-equipment",
+      "basis": "individually-reviewed-whole-concept-based-on-original-yes-model",
+      "yes": [
+        "Camera",
+        "Lens",
+        "Tripod",
+        "Flash",
+        "Camera bag",
+        "Memory card",
+        "Reflector",
+        "Diffuser",
+        "Light meter",
+        "Photographic film",
+        "Enlarger",
+        "Camera strap",
+        "Shutter release",
+        "Darkroom developer",
+        "Gimbal"
+      ],
+      "no": [
+        "Clapperboard",
+        "Box office revenue"
+      ],
+      "prompt": "Name a piece of equipment used to take or process photographs.",
+      "family": "science",
+      "inventoryEvidence": [
+        "https://wordnet.princeton.edu/",
+        "https://www.nikon-asia.com/cameras",
+        "https://www.nikonusa.com/fileuploads/pdfs/TOTAL-DIGITAL-IMAGING-SYSTEM.pdf"
+      ],
+      "review": "One whole recognizable category with a complete licensed dictionary descendant inventory, explicit sense and alias holds, independently specified common inputs and declared modern supplements. Source granularity errors and content-versus-device errors were removed. Actual public abbreviations remain; initials are never generated. No property/tag joins, source sections, individual object models or named-instance traversals create questions."
+    },
+    {
+      "id": "authored-worship-building-kinds",
+      "basis": "individually-reviewed-whole-concept-based-on-original-yes-model",
+      "yes": [
+        "Church",
+        "Mosque",
+        "Synagogue",
+        "Temple",
+        "Chapel",
+        "Shrine",
+        "Cathedral",
+        "Abbey",
+        "Basilica",
+        "Gurdwara",
+        "Mandir",
+        "Stupa",
+        "Pagoda",
+        "Meetinghouse"
+      ],
+      "no": [
+        "Shopping mall",
+        "Parking garage"
+      ],
+      "prompt": "Name a type of building or place used for worship.",
+      "family": "world",
+      "inventoryEvidence": [
+        "https://wordnet.princeton.edu/"
+      ],
+      "review": "One whole recognizable category with a complete licensed dictionary descendant inventory, explicit sense and alias holds, independently specified common inputs and declared modern supplements. Source granularity errors and content-versus-device errors were removed. Actual public abbreviations remain; initials are never generated. No property/tag joins, source sections, individual object models or named-instance traversals create questions."
+    },
+    {
+      "id": "authored-paint-kinds",
+      "basis": "individually-reviewed-whole-concept-based-on-original-yes-model",
+      "yes": [
+        "Acrylic paint",
+        "Oil paint",
+        "Watercolor",
+        "Gouache",
+        "Tempera",
+        "Enamel paint",
+        "Latex paint",
+        "Spray paint",
+        "Finger paint",
+        "Primer",
+        "Emulsion paint",
+        "Chalk paint",
+        "Casein paint",
+        "Milk paint"
+      ],
+      "no": [
+        "Coat of arms",
+        "Computer mouse"
+      ],
+      "prompt": "Name a type of paint.",
+      "family": "culture",
+      "inventoryEvidence": [
+        "https://wordnet.princeton.edu/",
+        "https://www.habitatbyresene.co.nz/tips/figuring-out-paint-types",
+        "https://www.resene.co.nz/products/finishing-products-topcoats.htm"
+      ],
+      "review": "One whole recognizable category with a complete licensed dictionary descendant inventory, explicit sense and alias holds, independently specified common inputs and declared modern supplements. Source granularity errors and content-versus-device errors were removed. Actual public abbreviations remain; initials are never generated. No property/tag joins, source sections, individual object models or named-instance traversals create questions."
+    },
+    {
+      "id": "authored-tower-kinds",
+      "basis": "individually-reviewed-whole-concept-based-on-original-yes-model",
+      "yes": [
+        "Clock tower",
+        "Water tower",
+        "Bell tower",
+        "Watchtower",
+        "Radio tower",
+        "Lighthouse",
+        "Control tower",
+        "Cooling tower",
+        "Minaret",
+        "Steeple",
+        "Fire lookout tower",
+        "Transmission tower"
+      ],
+      "no": [
+        "Eiffel Tower",
+        "CN Tower"
+      ],
+      "prompt": "Name a type of tower.",
+      "family": "world",
+      "inventoryEvidence": [
+        "https://wordnet.princeton.edu/"
+      ],
+      "review": "One whole recognizable category with a complete licensed dictionary descendant inventory, explicit sense and alias holds, independently specified common inputs and declared modern supplements. Source granularity errors and content-versus-device errors were removed. Actual public abbreviations remain; initials are never generated. No property/tag joins, source sections, individual object models or named-instance traversals create questions."
+    },
+    {
+      "id": "authored-watercraft-kinds",
+      "basis": "individually-reviewed-whole-concept-based-on-original-yes-model",
+      "yes": [
+        "Canoe",
+        "Kayak",
+        "Sailboat",
+        "Speedboat",
+        "Cruise ship",
+        "Submarine",
+        "Ferry",
+        "Rowboat",
+        "Raft",
+        "Barge",
+        "Tugboat",
+        "Yacht",
+        "Catamaran",
+        "Jet ski",
+        "Container ship",
+        "Aircraft carrier"
+      ],
+      "no": [
+        "HMS Bounty",
+        "RMS Titanic"
+      ],
+      "prompt": "Name a type of boat, ship or other watercraft.",
+      "family": "world",
+      "inventoryEvidence": [
+        "https://wordnet.princeton.edu/"
+      ],
+      "review": "One whole recognizable category with a complete licensed dictionary descendant inventory, explicit sense and alias holds, independently specified common inputs and declared modern supplements. Source granularity errors and content-versus-device errors were removed. Actual public abbreviations remain; initials are never generated. No property/tag joins, source sections, individual object models or named-instance traversals create questions."
     }
   ],
   "expansionBatches": [
@@ -8149,6 +9101,59 @@
         "26 NBL-only Lakers rows held outside the NBA/BAA/ABA scope",
         "Column-span aware stats extraction; retired-jersey and formerly-name annotations cleaned",
         "Participation/tenure editorial rarity with common-star overrides; actual public nicknames and verified former names, no generated initials"
+      ]
+    },
+    {
+      "id": "authored-broad-food-completions-13",
+      "date": "2026-10-26",
+      "questions": [
+        "authored-corn-dishes",
+        "authored-foods-with-custard",
+        "authored-ice-cream-toppings",
+        "authored-pickled-foods"
+      ],
+      "status": "admitted in development; requested 5,000-question expansion unfinished",
+      "sourceChecks": [
+        "Complete published maize, custard and pickled-food source lists reconcile into existing inventories",
+        "Named primary ColdStone/Culvers/DQ menus and Mars/recipe evidence repair mainstream topping omissions",
+        "Explicit holds for ingredients/industrial inputs, unrelated soups, raw egg and whipped-cream-only source rows",
+        "Documented custard-powder recipes support Nanaimo bars and custard creams",
+        "Same-preparation aliases unify Portuguese egg tart, custard bao, creme caramel/renversee, tamal and maize-porridge transliterations",
+        "Leaf-food candidate remains excluded until its independent article-source audit finishes"
+      ]
+    },
+    {
+      "id": "authored-whole-object-concepts-14",
+      "date": "2026-10-26",
+      "questions": [
+        "authored-sound-equipment",
+        "authored-sports-balls",
+        "authored-physical-barriers",
+        "authored-bottle-flask-kinds",
+        "authored-box-container-kinds",
+        "authored-chair-styles",
+        "authored-coats-jackets",
+        "authored-fabric-kinds",
+        "authored-fastener-kinds",
+        "authored-headwear-kinds",
+        "authored-knife-kinds",
+        "authored-lamp-lighting-kinds",
+        "authored-computer-storage-memory",
+        "authored-motor-vehicle-categories",
+        "authored-optical-equipment-kinds",
+        "authored-photography-equipment",
+        "authored-worship-building-kinds",
+        "authored-paint-kinds",
+        "authored-tower-kinds",
+        "authored-watercraft-kinds"
+      ],
+      "status": "admitted in development; requested 5,000-question expansion unfinished",
+      "sourceChecks": [
+        "Whole source descendants reconciled by individual word sense; no instance-only traversal",
+        "329 independent familiar guesses and explicit wrong-answer boundaries checked through the gameplay matcher",
+        "Misleading parka/windbreaker, boater/Panama, fedora/homburg/trilby, carabiner/circlip and CD/DVD aliases split",
+        "Primary manufacturer catalog/guide evidence supports modern audio, ball, imaging, optics, storage and paint inputs",
+        "One prompt per whole real category; source children and descriptor combinations never add question count"
       ]
     }
   ]

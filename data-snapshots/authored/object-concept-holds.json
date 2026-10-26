@@ -1,0 +1,1086 @@
+{
+  "sound-equipment": {
+    "rows": [
+      {
+        "name": "bell",
+        "synset": "bell.n.01",
+        "reason": "Warning sound producer, instrument part or attenuator; outside listening/recording/amplification scope."
+      },
+      {
+        "name": "birdcall",
+        "synset": "birdcall.n.02",
+        "reason": "Warning sound producer, instrument part or attenuator; outside listening/recording/amplification scope."
+      },
+      {
+        "name": "boat whistle",
+        "synset": "boat_whistle.n.01",
+        "reason": "Warning sound producer, instrument part or attenuator; outside listening/recording/amplification scope."
+      },
+      {
+        "name": "church bell",
+        "synset": "church_bell.n.01",
+        "reason": "Warning sound producer, instrument part or attenuator; outside listening/recording/amplification scope."
+      },
+      {
+        "name": "cowbell",
+        "synset": "cowbell.n.01",
+        "reason": "Warning sound producer, instrument part or attenuator; outside listening/recording/amplification scope."
+      },
+      {
+        "name": "death knell",
+        "synset": "death_knell.n.02",
+        "reason": "Warning sound producer, instrument part or attenuator; outside listening/recording/amplification scope."
+      },
+      {
+        "name": "dinner bell",
+        "synset": "dinner_bell.n.01",
+        "reason": "Warning sound producer, instrument part or attenuator; outside listening/recording/amplification scope."
+      },
+      {
+        "name": "electric bell",
+        "synset": "electric_bell.n.01",
+        "reason": "Warning sound producer, instrument part or attenuator; outside listening/recording/amplification scope."
+      },
+      {
+        "name": "factory whistle",
+        "synset": "factory_whistle.n.01",
+        "reason": "Warning sound producer, instrument part or attenuator; outside listening/recording/amplification scope."
+      },
+      {
+        "name": "fire bell",
+        "synset": "fire_bell.n.01",
+        "reason": "Warning sound producer, instrument part or attenuator; outside listening/recording/amplification scope."
+      },
+      {
+        "name": "mouthpiece",
+        "synset": "mouthpiece.n.02",
+        "reason": "Warning sound producer, instrument part or attenuator; outside listening/recording/amplification scope."
+      },
+      {
+        "name": "mute",
+        "synset": "mute.n.02",
+        "reason": "Warning sound producer, instrument part or attenuator; outside listening/recording/amplification scope."
+      },
+      {
+        "name": "school bell",
+        "synset": "school_bell.n.01",
+        "reason": "Warning sound producer, instrument part or attenuator; outside listening/recording/amplification scope."
+      },
+      {
+        "name": "sheep bell",
+        "synset": "sheep_bell.n.01",
+        "reason": "Warning sound producer, instrument part or attenuator; outside listening/recording/amplification scope."
+      },
+      {
+        "name": "shop bell",
+        "synset": "shop_bell.n.01",
+        "reason": "Warning sound producer, instrument part or attenuator; outside listening/recording/amplification scope."
+      },
+      {
+        "name": "silencer",
+        "synset": "silencer.n.02",
+        "reason": "Warning sound producer, instrument part or attenuator; outside listening/recording/amplification scope."
+      },
+      {
+        "name": "siren",
+        "synset": "siren.n.04",
+        "reason": "Warning sound producer, instrument part or attenuator; outside listening/recording/amplification scope."
+      },
+      {
+        "name": "slapstick",
+        "synset": "slapstick.n.02",
+        "reason": "Warning sound producer, instrument part or attenuator; outside listening/recording/amplification scope."
+      },
+      {
+        "name": "sleigh bell",
+        "synset": "sleigh_bell.n.01",
+        "reason": "Warning sound producer, instrument part or attenuator; outside listening/recording/amplification scope."
+      },
+      {
+        "name": "sourdine",
+        "synset": "sourdine.n.01",
+        "reason": "Warning sound producer, instrument part or attenuator; outside listening/recording/amplification scope."
+      },
+      {
+        "name": "steam whistle",
+        "synset": "steam_whistle.n.01",
+        "reason": "Warning sound producer, instrument part or attenuator; outside listening/recording/amplification scope."
+      },
+      {
+        "name": "telephone bell",
+        "synset": "telephone_bell.n.01",
+        "reason": "Warning sound producer, instrument part or attenuator; outside listening/recording/amplification scope."
+      },
+      {
+        "name": "tocsin",
+        "synset": "tocsin.n.02",
+        "reason": "Warning sound producer, instrument part or attenuator; outside listening/recording/amplification scope."
+      },
+      {
+        "name": "whistle",
+        "synset": "whistle.n.04",
+        "reason": "Warning sound producer, instrument part or attenuator; outside listening/recording/amplification scope."
+      }
+    ],
+    "aliasHolds": {}
+  },
+  "sports-balls": {
+    "rows": [
+      {
+        "name": "punching bag",
+        "synset": "punching_bag.n.02",
+        "reason": "A bag or suspended training target is not a ball, despite source aliases."
+      }
+    ],
+    "aliasHolds": {
+      "bowling ball": [
+        "bowl"
+      ]
+    }
+  },
+  "physical-barriers": {
+    "rows": [],
+    "aliasHolds": {}
+  },
+  "bottle-flask-kinds": {
+    "rows": [],
+    "aliasHolds": {}
+  },
+  "box-container-kinds": {
+    "rows": [
+      {
+        "name": "bier",
+        "synset": "bier.n.01",
+        "reason": "Coffin plus stand is an assembly, not a separate box design."
+      },
+      {
+        "name": "six-pack",
+        "synset": "six-pack.n.01",
+        "reason": "Quantity/packaging arrangement, not a kind of box."
+      }
+    ],
+    "aliasHolds": {
+      "casket": [
+        "casket"
+      ]
+    }
+  },
+  "chair-styles": {
+    "rows": [
+      {
+        "name": "mercy seat",
+        "synset": "mercy_seat.n.01",
+        "reason": "Specific religious object in the source sense, not a general chair design."
+      },
+      {
+        "name": "peacock-throne",
+        "synset": "peacock-throne.n.01",
+        "reason": "Named individual throne, not a chair type."
+      }
+    ],
+    "aliasHolds": {}
+  },
+  "coats-jackets": {
+    "rows": [],
+    "aliasHolds": {
+      "parka": [
+        "windbreaker",
+        "windcheater",
+        "anorak"
+      ],
+      "swallow-tailed coat": [
+        "morning coat"
+      ]
+    }
+  },
+  "fabric-kinds": {
+    "rows": [
+      {
+        "name": "balloon sail",
+        "synset": "balloon_sail.n.01",
+        "reason": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type."
+      },
+      {
+        "name": "bandanna",
+        "synset": "bandanna.n.01",
+        "reason": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type."
+      },
+      {
+        "name": "bath towel",
+        "synset": "bath_towel.n.01",
+        "reason": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type."
+      },
+      {
+        "name": "beach towel",
+        "synset": "beach_towel.n.01",
+        "reason": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type."
+      },
+      {
+        "name": "bib",
+        "synset": "bib.n.01",
+        "reason": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type."
+      },
+      {
+        "name": "canopy",
+        "synset": "canopy.n.02",
+        "reason": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type."
+      },
+      {
+        "name": "chicken wire",
+        "synset": "chicken_wire.n.01",
+        "reason": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type."
+      },
+      {
+        "name": "crossjack",
+        "synset": "crossjack.n.01",
+        "reason": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type."
+      },
+      {
+        "name": "dishrag",
+        "synset": "dishrag.n.01",
+        "reason": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type."
+      },
+      {
+        "name": "dishtowel",
+        "synset": "dishtowel.n.01",
+        "reason": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type."
+      },
+      {
+        "name": "drapery",
+        "synset": "drapery.n.02",
+        "reason": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type."
+      },
+      {
+        "name": "drop cloth",
+        "synset": "drop_cloth.n.02",
+        "reason": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type."
+      },
+      {
+        "name": "dust cover",
+        "synset": "dust_cover.n.02",
+        "reason": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type."
+      },
+      {
+        "name": "dustcloth",
+        "synset": "dustcloth.n.01",
+        "reason": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type."
+      },
+      {
+        "name": "end",
+        "synset": "end.n.13",
+        "reason": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type."
+      },
+      {
+        "name": "fag end",
+        "synset": "fag_end.n.02",
+        "reason": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type."
+      },
+      {
+        "name": "fiber",
+        "synset": "fiber.n.05",
+        "reason": "Compressed paper/cloth industrial board in this source sense, not a textile fabric type."
+      },
+      {
+        "name": "flash",
+        "synset": "flash.n.09",
+        "reason": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type."
+      },
+      {
+        "name": "flying jib",
+        "synset": "flying_jib.n.01",
+        "reason": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type."
+      },
+      {
+        "name": "fore-and-aft sail",
+        "synset": "fore-and-aft_sail.n.01",
+        "reason": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type."
+      },
+      {
+        "name": "fore-topsail",
+        "synset": "fore-topsail.n.01",
+        "reason": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type."
+      },
+      {
+        "name": "foresail",
+        "synset": "foresail.n.01",
+        "reason": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type."
+      },
+      {
+        "name": "gaff topsail",
+        "synset": "gaff_topsail.n.01",
+        "reason": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type."
+      },
+      {
+        "name": "gaffsail",
+        "synset": "gaffsail.n.01",
+        "reason": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type."
+      },
+      {
+        "name": "gore",
+        "synset": "gore.n.03",
+        "reason": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type."
+      },
+      {
+        "name": "groundsheet",
+        "synset": "groundsheet.n.01",
+        "reason": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type."
+      },
+      {
+        "name": "guimpe",
+        "synset": "guimpe.n.01",
+        "reason": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type."
+      },
+      {
+        "name": "gusset",
+        "synset": "gusset.n.03",
+        "reason": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type."
+      },
+      {
+        "name": "hairnet",
+        "synset": "hairnet.n.01",
+        "reason": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type."
+      },
+      {
+        "name": "hand towel",
+        "synset": "hand_towel.n.01",
+        "reason": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type."
+      },
+      {
+        "name": "handkerchief",
+        "synset": "handkerchief.n.01",
+        "reason": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type."
+      },
+      {
+        "name": "headsail",
+        "synset": "headsail.n.01",
+        "reason": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type."
+      },
+      {
+        "name": "jib",
+        "synset": "jib.n.01",
+        "reason": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type."
+      },
+      {
+        "name": "lateen",
+        "synset": "lateen.n.01",
+        "reason": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type."
+      },
+      {
+        "name": "liner",
+        "synset": "liner.n.03",
+        "reason": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type."
+      },
+      {
+        "name": "lugsail",
+        "synset": "lugsail.n.01",
+        "reason": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type."
+      },
+      {
+        "name": "lungi",
+        "synset": "lungi.n.01",
+        "reason": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type."
+      },
+      {
+        "name": "main-topsail",
+        "synset": "main-topsail.n.01",
+        "reason": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type."
+      },
+      {
+        "name": "main course",
+        "synset": "main_course.n.02",
+        "reason": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type."
+      },
+      {
+        "name": "mainsail",
+        "synset": "mainsail.n.01",
+        "reason": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type."
+      },
+      {
+        "name": "mizzen",
+        "synset": "mizzen.n.02",
+        "reason": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type."
+      },
+      {
+        "name": "paper towel",
+        "synset": "paper_towel.n.01",
+        "reason": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type."
+      },
+      {
+        "name": "pasty",
+        "synset": "pasty.n.02",
+        "reason": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type."
+      },
+      {
+        "name": "patch",
+        "synset": "patch.n.03",
+        "reason": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type."
+      },
+      {
+        "name": "petrolatum gauze",
+        "synset": "petrolatum_gauze.n.01",
+        "reason": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type."
+      },
+      {
+        "name": "piece of cloth",
+        "synset": "piece_of_cloth.n.01",
+        "reason": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type."
+      },
+      {
+        "name": "pine-tar rag",
+        "synset": "pine-tar_rag.n.01",
+        "reason": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type."
+      },
+      {
+        "name": "placket",
+        "synset": "placket.n.01",
+        "reason": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type."
+      },
+      {
+        "name": "pocket-handkerchief",
+        "synset": "pocket-handkerchief.n.01",
+        "reason": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type."
+      },
+      {
+        "name": "press of sail",
+        "synset": "press_of_sail.n.01",
+        "reason": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type."
+      },
+      {
+        "name": "rag",
+        "synset": "rag.n.01",
+        "reason": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type."
+      },
+      {
+        "name": "roller towel",
+        "synset": "roller_towel.n.01",
+        "reason": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type."
+      },
+      {
+        "name": "royal",
+        "synset": "royal.n.01",
+        "reason": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type."
+      },
+      {
+        "name": "safety net",
+        "synset": "safety_net.n.02",
+        "reason": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type."
+      },
+      {
+        "name": "sail",
+        "synset": "sail.n.01",
+        "reason": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type."
+      },
+      {
+        "name": "save-all",
+        "synset": "save-all.n.02",
+        "reason": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type."
+      },
+      {
+        "name": "save-all",
+        "synset": "save-all.n.03",
+        "reason": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type."
+      },
+      {
+        "name": "screening",
+        "synset": "screening.n.02",
+        "reason": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type."
+      },
+      {
+        "name": "shirttail",
+        "synset": "shirttail.n.02",
+        "reason": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type."
+      },
+      {
+        "name": "shoulder patch",
+        "synset": "shoulder_patch.n.01",
+        "reason": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type."
+      },
+      {
+        "name": "skysail",
+        "synset": "skysail.n.01",
+        "reason": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type."
+      },
+      {
+        "name": "snood",
+        "synset": "snood.n.01",
+        "reason": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type."
+      },
+      {
+        "name": "spanker",
+        "synset": "spanker.n.02",
+        "reason": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type."
+      },
+      {
+        "name": "spark arrester",
+        "synset": "spark_arrester.n.02",
+        "reason": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type."
+      },
+      {
+        "name": "spinnaker",
+        "synset": "spinnaker.n.01",
+        "reason": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type."
+      },
+      {
+        "name": "spritsail",
+        "synset": "spritsail.n.01",
+        "reason": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type."
+      },
+      {
+        "name": "square sail",
+        "synset": "square_sail.n.01",
+        "reason": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type."
+      },
+      {
+        "name": "staysail",
+        "synset": "staysail.n.01",
+        "reason": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type."
+      },
+      {
+        "name": "swatch",
+        "synset": "swatch.n.01",
+        "reason": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type."
+      },
+      {
+        "name": "tarpaulin",
+        "synset": "tarpaulin.n.01",
+        "reason": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type."
+      },
+      {
+        "name": "topgallant",
+        "synset": "topgallant.n.01",
+        "reason": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type."
+      },
+      {
+        "name": "topsail",
+        "synset": "topsail.n.01",
+        "reason": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type."
+      },
+      {
+        "name": "towel",
+        "synset": "towel.n.01",
+        "reason": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type."
+      },
+      {
+        "name": "train",
+        "synset": "train.n.05",
+        "reason": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type."
+      },
+      {
+        "name": "tucker",
+        "synset": "tucker.n.04",
+        "reason": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type."
+      },
+      {
+        "name": "Turkish towel",
+        "synset": "turkish_towel.n.01",
+        "reason": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type."
+      },
+      {
+        "name": "wire cloth",
+        "synset": "wire_cloth.n.01",
+        "reason": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type."
+      },
+      {
+        "name": "wirework",
+        "synset": "wirework.n.01",
+        "reason": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type."
+      },
+      {
+        "name": "yoke",
+        "synset": "yoke.n.01",
+        "reason": "Finished article, cloth piece, garment component or non-textile mesh; not a textile material type."
+      }
+    ],
+    "aliasHolds": {}
+  },
+  "fastener-kinds": {
+    "rows": [
+      {
+        "name": "bridge",
+        "synset": "bridge.n.08",
+        "reason": "Source sense is an optical part, weld, leak seal, fictional object, support or gear thread; not an eligible mechanical fastener."
+      },
+      {
+        "name": "fillet",
+        "synset": "fillet.n.05",
+        "reason": "Source sense is an optical part, weld, leak seal, fictional object, support or gear thread; not an eligible mechanical fastener."
+      },
+      {
+        "name": "gasket",
+        "synset": "gasket.n.01",
+        "reason": "Source sense is an optical part, weld, leak seal, fictional object, support or gear thread; not an eligible mechanical fastener."
+      },
+      {
+        "name": "Gordian knot",
+        "synset": "gordian_knot.n.02",
+        "reason": "Source sense is an optical part, weld, leak seal, fictional object, support or gear thread; not an eligible mechanical fastener."
+      },
+      {
+        "name": "head gasket",
+        "synset": "head_gasket.n.01",
+        "reason": "Source sense is an optical part, weld, leak seal, fictional object, support or gear thread; not an eligible mechanical fastener."
+      },
+      {
+        "name": "O ring",
+        "synset": "o_ring.n.01",
+        "reason": "Source sense is an optical part, weld, leak seal, fictional object, support or gear thread; not an eligible mechanical fastener."
+      },
+      {
+        "name": "piston ring",
+        "synset": "piston_ring.n.01",
+        "reason": "Source sense is an optical part, weld, leak seal, fictional object, support or gear thread; not an eligible mechanical fastener."
+      },
+      {
+        "name": "sealing wax",
+        "synset": "sealing_wax.n.01",
+        "reason": "Source sense is an optical part, weld, leak seal, fictional object, support or gear thread; not an eligible mechanical fastener."
+      },
+      {
+        "name": "tee",
+        "synset": "tee.n.03",
+        "reason": "Source sense is an optical part, weld, leak seal, fictional object, support or gear thread; not an eligible mechanical fastener."
+      },
+      {
+        "name": "worm",
+        "synset": "worm.n.04",
+        "reason": "Source sense is an optical part, weld, leak seal, fictional object, support or gear thread; not an eligible mechanical fastener."
+      }
+    ],
+    "aliasHolds": {
+      "lockring": [
+        "lock washer"
+      ],
+      "carabiner": [
+        "snap ring"
+      ],
+      "fisherman's knot": [
+        "true lover's knot"
+      ]
+    }
+  },
+  "headwear-kinds": {
+    "rows": [
+      {
+        "name": "millinery",
+        "synset": "millinery.n.02",
+        "reason": "Collective merchandise category, not another headwear type."
+      },
+      {
+        "name": "wishing cap",
+        "synset": "wishing_cap.n.01",
+        "reason": "Fictional magical cap, outside real headwear scope."
+      }
+    ],
+    "aliasHolds": {
+      "boater": [
+        "Panama",
+        "Panama hat",
+        "straw hat"
+      ],
+      "fedora": [
+        "homburg",
+        "Stetson",
+        "trilby"
+      ],
+      "pillbox": [
+        "toque",
+        "turban"
+      ],
+      "bearskin": [
+        "busby",
+        "shako"
+      ],
+      "cavalier hat": [
+        "slouch hat"
+      ],
+      "dress hat": [
+        "beaver"
+      ]
+    }
+  },
+  "knife-kinds": {
+    "rows": [],
+    "aliasHolds": {}
+  },
+  "lamp-lighting-kinds": {
+    "rows": [
+      {
+        "name": "Aladdin's lamp",
+        "synset": "aladdin's_lamp.n.01",
+        "reason": "Named fictional individual object."
+      },
+      {
+        "name": "chandlery",
+        "synset": "chandlery.n.01",
+        "reason": "A source sense denotes candles collectively, not another lighting type."
+      }
+    ],
+    "aliasHolds": {}
+  },
+  "computer-storage-memory": {
+    "rows": [
+      {
+        "name": "cover",
+        "synset": "cover.n.09",
+        "reason": "Recorded content or analog record, not a computer memory technology or digital storage device."
+      },
+      {
+        "name": "dubbing",
+        "synset": "dubbing.n.01",
+        "reason": "Recorded content or analog record, not a computer memory technology or digital storage device."
+      },
+      {
+        "name": "laugh track",
+        "synset": "laugh_track.n.01",
+        "reason": "Recorded content or analog record, not a computer memory technology or digital storage device."
+      },
+      {
+        "name": "LP",
+        "synset": "lp.n.01",
+        "reason": "Recorded content or analog record, not a computer memory technology or digital storage device."
+      },
+      {
+        "name": "phonograph record",
+        "synset": "phonograph_record.n.01",
+        "reason": "Recorded content or analog record, not a computer memory technology or digital storage device."
+      },
+      {
+        "name": "recording",
+        "synset": "recording.n.03",
+        "reason": "Recorded content or analog record, not a computer memory technology or digital storage device."
+      },
+      {
+        "name": "seventy-eight",
+        "synset": "seventy-eight.n.02",
+        "reason": "Recorded content or analog record, not a computer memory technology or digital storage device."
+      },
+      {
+        "name": "sound recording",
+        "synset": "sound_recording.n.01",
+        "reason": "Recorded content or analog record, not a computer memory technology or digital storage device."
+      },
+      {
+        "name": "soundtrack",
+        "synset": "soundtrack.n.01",
+        "reason": "Recorded content or analog record, not a computer memory technology or digital storage device."
+      },
+      {
+        "name": "talking book",
+        "synset": "talking_book.n.01",
+        "reason": "Recorded content or analog record, not a computer memory technology or digital storage device."
+      },
+      {
+        "name": "tape",
+        "synset": "tape.n.02",
+        "reason": "Recorded content or analog record, not a computer memory technology or digital storage device."
+      },
+      {
+        "name": "transcription",
+        "synset": "transcription.n.03",
+        "reason": "Recorded content or analog record, not a computer memory technology or digital storage device."
+      },
+      {
+        "name": "video recording",
+        "synset": "video_recording.n.01",
+        "reason": "Recorded content or analog record, not a computer memory technology or digital storage device."
+      },
+      {
+        "name": "videodisk",
+        "synset": "videodisk.n.01",
+        "reason": "Generic analog videodisc sense; actual digital DVD and Blu-ray media are added explicitly."
+      }
+    ],
+    "aliasHolds": {
+      "videodisk": [
+        "DVD"
+      ]
+    }
+  },
+  "motor-vehicle-categories": {
+    "rows": [
+      {
+        "name": "bus",
+        "synset": "bus.n.04",
+        "reason": "Source sense is an old-car nickname, race outcome, condition/loan status, single model or unpowered trailer. Actual motor buses are added separately."
+      },
+      {
+        "name": "finisher",
+        "synset": "finisher.n.05",
+        "reason": "Source sense is an old-car nickname, race outcome, condition/loan status, single model or unpowered trailer. Actual motor buses are added separately."
+      },
+      {
+        "name": "gas guzzler",
+        "synset": "gas_guzzler.n.01",
+        "reason": "Source sense is an old-car nickname, race outcome, condition/loan status, single model or unpowered trailer. Actual motor buses are added separately."
+      },
+      {
+        "name": "horseless carriage",
+        "synset": "horseless_carriage.n.01",
+        "reason": "Source sense is an old-car nickname, race outcome, condition/loan status, single model or unpowered trailer. Actual motor buses are added separately."
+      },
+      {
+        "name": "loaner",
+        "synset": "loaner.n.02",
+        "reason": "Source sense is an old-car nickname, race outcome, condition/loan status, single model or unpowered trailer. Actual motor buses are added separately."
+      },
+      {
+        "name": "Model T",
+        "synset": "model_t.n.01",
+        "reason": "Source sense is an old-car nickname, race outcome, condition/loan status, single model or unpowered trailer. Actual motor buses are added separately."
+      },
+      {
+        "name": "Stanley Steamer",
+        "synset": "stanley_steamer.n.01",
+        "reason": "Source sense is an old-car nickname, race outcome, condition/loan status, single model or unpowered trailer. Actual motor buses are added separately."
+      },
+      {
+        "name": "tandem trailer",
+        "synset": "tandem_trailer.n.01",
+        "reason": "Source sense is an old-car nickname, race outcome, condition/loan status, single model or unpowered trailer. Actual motor buses are added separately."
+      },
+      {
+        "name": "used-car",
+        "synset": "used-car.n.01",
+        "reason": "Source sense is an old-car nickname, race outcome, condition/loan status, single model or unpowered trailer. Actual motor buses are added separately."
+      }
+    ],
+    "aliasHolds": {
+      "jeep": [
+        "landrover"
+      ],
+      "motorcycle": [
+        "bike"
+      ],
+      "police van": [
+        "wagon",
+        "paddy wagon",
+        "black Maria"
+      ],
+      "car": [
+        "machine"
+      ]
+    }
+  },
+  "optical-equipment-kinds": {
+    "rows": [
+      {
+        "name": "mass spectrograph",
+        "synset": "mass_spectrograph.n.01",
+        "reason": "Non-optical measurement technology or a calibration setting, not an optical instrument."
+      },
+      {
+        "name": "mass spectrometer",
+        "synset": "mass_spectrometer.n.01",
+        "reason": "Non-optical measurement technology or a calibration setting, not an optical instrument."
+      },
+      {
+        "name": "sight setting",
+        "synset": "sight_setting.n.01",
+        "reason": "Non-optical measurement technology or a calibration setting, not an optical instrument."
+      },
+      {
+        "name": "sound spectrograph",
+        "synset": "sound_spectrograph.n.01",
+        "reason": "Non-optical measurement technology or a calibration setting, not an optical instrument."
+      },
+      {
+        "name": "zero",
+        "synset": "zero.n.04",
+        "reason": "Non-optical measurement technology or a calibration setting, not an optical instrument."
+      }
+    ],
+    "aliasHolds": {
+      "binoculars": [
+        "opera glasses"
+      ]
+    }
+  },
+  "photography-equipment": {
+    "rows": [
+      {
+        "name": "bitewing",
+        "synset": "bitewing.n.01",
+        "reason": "Film-only device, finished image, medical image or generic recorded content; outside the still-photography equipment scope."
+      },
+      {
+        "name": "clapperboard",
+        "synset": "clapperboard.n.01",
+        "reason": "Film-only device, finished image, medical image or generic recorded content; outside the still-photography equipment scope."
+      },
+      {
+        "name": "cytophotometer",
+        "synset": "cytophotometer.n.01",
+        "reason": "Measures light transmission of cells, not still-photography equipment merely by a dictionary parent."
+      },
+      {
+        "name": "film clip",
+        "synset": "film_clip.n.01",
+        "reason": "A finished motion-picture excerpt, not a clip used to handle still-camera film."
+      },
+      {
+        "name": "footage",
+        "synset": "footage.n.01",
+        "reason": "Film-only device, finished image, medical image or generic recorded content; outside the still-photography equipment scope."
+      },
+      {
+        "name": "microfiche",
+        "synset": "microfiche.n.01",
+        "reason": "Film-only device, finished image, medical image or generic recorded content; outside the still-photography equipment scope."
+      },
+      {
+        "name": "microfilm",
+        "synset": "microfilm.n.01",
+        "reason": "Film-only device, finished image, medical image or generic recorded content; outside the still-photography equipment scope."
+      },
+      {
+        "name": "motion-picture film",
+        "synset": "motion-picture_film.n.01",
+        "reason": "Film-only device, finished image, medical image or generic recorded content; outside the still-photography equipment scope."
+      },
+      {
+        "name": "negative",
+        "synset": "negative.n.02",
+        "reason": "Film-only device, finished image, medical image or generic recorded content; outside the still-photography equipment scope."
+      },
+      {
+        "name": "positive",
+        "synset": "positive.n.02",
+        "reason": "Film-only device, finished image, medical image or generic recorded content; outside the still-photography equipment scope."
+      },
+      {
+        "name": "reel",
+        "synset": "reel.n.01",
+        "reason": "Film-only device, finished image, medical image or generic recorded content; outside the still-photography equipment scope."
+      },
+      {
+        "name": "roll",
+        "synset": "roll.n.04",
+        "reason": "Film-only device, finished image, medical image or generic recorded content; outside the still-photography equipment scope."
+      },
+      {
+        "name": "sequence",
+        "synset": "sequence.n.03",
+        "reason": "Film-only device, finished image, medical image or generic recorded content; outside the still-photography equipment scope."
+      },
+      {
+        "name": "sound camera",
+        "synset": "sound_camera.n.01",
+        "reason": "Film-only device, finished image, medical image or generic recorded content; outside the still-photography equipment scope."
+      },
+      {
+        "name": "sound film",
+        "synset": "sound_film.n.01",
+        "reason": "Film-only device, finished image, medical image or generic recorded content; outside the still-photography equipment scope."
+      },
+      {
+        "name": "X-ray film",
+        "synset": "x-ray_film.n.01",
+        "reason": "Film-only device, finished image, medical image or generic recorded content; outside the still-photography equipment scope."
+      }
+    ],
+    "aliasHolds": {}
+  },
+  "worship-building-kinds": {
+    "rows": [],
+    "aliasHolds": {}
+  },
+  "paint-kinds": {
+    "rows": [
+      {
+        "name": "coat of paint",
+        "synset": "coat_of_paint.n.01",
+        "reason": "A layer rather than a kind of paint."
+      },
+      {
+        "name": "couch",
+        "synset": "couch.n.02",
+        "reason": "A particular priming layer in this dictionary sense, not a paint formulation."
+      },
+      {
+        "name": "finish coat",
+        "synset": "finish_coat.n.01",
+        "reason": "A final layer or application stage, not a distinct paint kind."
+      }
+    ],
+    "aliasHolds": {}
+  },
+  "tower-kinds": {
+    "rows": [],
+    "aliasHolds": {}
+  },
+  "watercraft-kinds": {
+    "rows": [
+      {
+        "name": "abandoned ship",
+        "synset": "abandoned_ship.n.01",
+        "reason": "Condition, charter/relationship descriptor, figurative shell or ice-only craft rather than a watercraft design."
+      },
+      {
+        "name": "ark",
+        "synset": "ark.n.02",
+        "reason": "Named individual religious vessel in this source sense, not a sourced real craft type."
+      },
+      {
+        "name": "bareboat",
+        "synset": "bareboat.n.01",
+        "reason": "Condition, charter/relationship descriptor, figurative shell or ice-only craft rather than a watercraft design."
+      },
+      {
+        "name": "cockleshell",
+        "synset": "cockleshell.n.01",
+        "reason": "Condition, charter/relationship descriptor, figurative shell or ice-only craft rather than a watercraft design."
+      },
+      {
+        "name": "flagship",
+        "synset": "flagship.n.02",
+        "reason": "Condition, charter/relationship descriptor, figurative shell or ice-only craft rather than a watercraft design."
+      },
+      {
+        "name": "hulk",
+        "synset": "hulk.n.02",
+        "reason": "Condition, charter/relationship descriptor, figurative shell or ice-only craft rather than a watercraft design."
+      },
+      {
+        "name": "iceboat",
+        "synset": "iceboat.n.02",
+        "reason": "Condition, charter/relationship descriptor, figurative shell or ice-only craft rather than a watercraft design."
+      },
+      {
+        "name": "sea boat",
+        "synset": "sea_boat.n.01",
+        "reason": "A seaworthiness descriptor rather than a craft design."
+      },
+      {
+        "name": "shipwreck",
+        "synset": "shipwreck.n.01",
+        "reason": "Condition, charter/relationship descriptor, figurative shell or ice-only craft rather than a watercraft design."
+      },
+      {
+        "name": "sister ship",
+        "synset": "sister_ship.n.01",
+        "reason": "Condition, charter/relationship descriptor, figurative shell or ice-only craft rather than a watercraft design."
+      },
+      {
+        "name": "treasure ship",
+        "synset": "treasure_ship.n.01",
+        "reason": "Condition, charter/relationship descriptor, figurative shell or ice-only craft rather than a watercraft design."
+      },
+      {
+        "name": "wreck",
+        "synset": "wreck.n.04",
+        "reason": "Condition, charter/relationship descriptor, figurative shell or ice-only craft rather than a watercraft design."
+      }
+    ],
+    "aliasHolds": {
+      "dinghy": [
+        "rowboat"
+      ],
+      "tender": [
+        "cutter"
+      ],
+      "icebreaker": [
+        "iceboat"
+      ]
+    }
+  }
+}
