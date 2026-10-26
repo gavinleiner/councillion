@@ -3,6 +3,13 @@ export function questionFormat(pack){
  if(group.startsWith('group-approved-'))return 'Group-approved prompt';
  if(group.startsWith('group-broad-'))return 'Broad category';
  return ({
+  'authored-closed-inventory':'Facts & records',
+  'authored-game-mechanics':'Game rules & objects',
+  'authored-properties':'Everyday observations',
+  'authored-situations':'Everyday situations',
+  'authored-whole-concept':'Names & categories',
+  'authored-whole-roster':'Characters & rosters',
+  'authored-whole-taxonomic-group':'Animal kinds',
   'distinct-kinds':'Kinds, examples & objects',
   'distinct-screen-credits':'Screen works by cast member',
   'distinct-castmates':'Shared screen casts',

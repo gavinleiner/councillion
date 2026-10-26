@@ -4640,6 +4640,307 @@
         "https://www.bluenote.com/artist/domi-jd-beck/"
       ],
       "review": "90 independent familiar-name checks. Individually reconciled broader group-type gaps and checked named duo lineups; retained known former duos. Excluded same-name larger groups from the supplemental lookup. Earlier Tom and Jerry identity shares Simon/Garfunkel; DOMi and JD Beck spellings share one identity. This is author review, not a claimed user vote."
+    },
+    {
+      "id": "authored-owl-kinds",
+      "basis": "individually-reviewed-whole-publisher-taxonomies-based-on-original-yes-model",
+      "yes": [
+        "Barn owl",
+        "Snowy owl",
+        "Great horned owl",
+        "Burrowing owl",
+        "Tawny owl",
+        "Barred owl",
+        "Little owl",
+        "Elf owl",
+        "Long-eared owl",
+        "Short-eared owl",
+        "Northern saw-whet owl",
+        "Great gray owl",
+        "Eurasian eagle-owl",
+        "Eastern screech-owl",
+        "Western screech-owl",
+        "Northern hawk owl",
+        "Spectacled owl",
+        "Spotted owl",
+        "Screech owl",
+        "Scops owl",
+        "Eagle owl",
+        "Pygmy owl",
+        "Fishing owl"
+      ],
+      "no": [
+        "Nighthawk",
+        "Australian owlet-nightjar",
+        "Barn swallow"
+      ],
+      "prompt": "Name a kind of owl.",
+      "family": "nature",
+      "inventoryEvidence": [
+        "https://api.ebird.org/v2/ref/taxonomy/ebird?fmt=json",
+        "https://www.birds.cornell.edu/clementschecklist/",
+        "https://science.ebird.org/en/use-ebird-data/the-ebird-taxonomy"
+      ],
+      "review": "Whole publisher taxonomic inventories reconciled at species grain, plus independently supplied familiar common names and genuine vernacular synonyms. No word-based membership, geographic slicing, colour morph padding or popularity-based exclusion. All accepted scientific names verified through the actual matcher; current names take precedence over legacy synonyms. This is author review, not a claimed user vote."
+    },
+    {
+      "id": "authored-parrot-kinds",
+      "basis": "individually-reviewed-whole-publisher-taxonomies-based-on-original-yes-model",
+      "yes": [
+        "Macaw",
+        "Cockatoo",
+        "Budgerigar",
+        "Cockatiel",
+        "African grey parrot",
+        "Lovebird",
+        "Parakeet",
+        "Lorikeet",
+        "Conure",
+        "Amazon parrot",
+        "Kea",
+        "Kakapo",
+        "Eclectus parrot",
+        "Scarlet macaw",
+        "Blue-and-yellow macaw",
+        "Hyacinth macaw",
+        "Palm cockatoo",
+        "Galah",
+        "Sulphur-crested cockatoo",
+        "Rose-ringed parakeet",
+        "Monk parakeet",
+        "Sun conure",
+        "Green-cheeked conure",
+        "Rainbow lorikeet",
+        "Vasa parrot",
+        "Caique",
+        "Parrotlet",
+        "Senegal parrot",
+        "Timneh parrot"
+      ],
+      "no": [
+        "Toucan",
+        "Parrotfish",
+        "Parrot crossbill"
+      ],
+      "prompt": "Name a kind of parrot.",
+      "family": "nature",
+      "inventoryEvidence": [
+        "https://api.ebird.org/v2/ref/taxonomy/ebird?fmt=json",
+        "https://www.birds.cornell.edu/clementschecklist/",
+        "https://science.ebird.org/en/use-ebird-data/the-ebird-taxonomy"
+      ],
+      "review": "Whole publisher taxonomic inventories reconciled at species grain, plus independently supplied familiar common names and genuine vernacular synonyms. No word-based membership, geographic slicing, colour morph padding or popularity-based exclusion. All accepted scientific names verified through the actual matcher; current names take precedence over legacy synonyms. This is author review, not a claimed user vote."
+    },
+    {
+      "id": "authored-penguin-kinds",
+      "basis": "individually-reviewed-whole-publisher-taxonomies-based-on-original-yes-model",
+      "yes": [
+        "Emperor penguin",
+        "King penguin",
+        "Little penguin",
+        "Adelie penguin",
+        "Chinstrap penguin",
+        "Gentoo penguin",
+        "African penguin",
+        "Galapagos penguin",
+        "Humboldt penguin",
+        "Magellanic penguin",
+        "Yellow-eyed penguin",
+        "Rockhopper penguin",
+        "Macaroni penguin",
+        "Royal penguin",
+        "Fiordland penguin",
+        "Snares penguin",
+        "Erect-crested penguin",
+        "Fairy penguin",
+        "Little blue penguin",
+        "Jackass penguin"
+      ],
+      "no": [
+        "Puffin",
+        "Great auk",
+        "Penguin-shaped toy"
+      ],
+      "prompt": "Name a kind of penguin.",
+      "family": "nature",
+      "inventoryEvidence": [
+        "https://api.ebird.org/v2/ref/taxonomy/ebird?fmt=json",
+        "https://www.birds.cornell.edu/clementschecklist/",
+        "https://science.ebird.org/en/use-ebird-data/the-ebird-taxonomy"
+      ],
+      "review": "Whole publisher taxonomic inventories reconciled at species grain, plus independently supplied familiar common names and genuine vernacular synonyms. No word-based membership, geographic slicing, colour morph padding or popularity-based exclusion. All accepted scientific names verified through the actual matcher; current names take precedence over legacy synonyms. This is author review, not a claimed user vote."
+    },
+    {
+      "id": "authored-bat-kinds",
+      "basis": "individually-reviewed-whole-publisher-taxonomies-based-on-original-yes-model",
+      "yes": [
+        "Vampire bat",
+        "Fruit bat",
+        "Flying fox",
+        "Little brown bat",
+        "Big brown bat",
+        "Horseshoe bat",
+        "Megabat",
+        "Microbat",
+        "Ghost bat",
+        "Bumblebee bat",
+        "Mexican free-tailed bat",
+        "Straw-coloured fruit bat",
+        "Egyptian fruit bat",
+        "Indian flying fox",
+        "Hammer-headed bat",
+        "Greater horseshoe bat",
+        "Lesser horseshoe bat",
+        "Greater mouse-eared bat",
+        "Natterer's bat",
+        "Serotine bat",
+        "Common noctule",
+        "Common pipistrelle",
+        "Pallid bat",
+        "Spotted bat",
+        "Tent-making bat"
+      ],
+      "no": [
+        "Flying squirrel",
+        "Pterodactyl",
+        "Baseball bat"
+      ],
+      "prompt": "Name a kind of bat.",
+      "family": "nature",
+      "inventoryEvidence": [
+        "https://www.mammaldiversity.org/",
+        "https://doi.org/10.5281/zenodo/21654811",
+        "https://www.mammalsociety.org/"
+      ],
+      "review": "Whole publisher taxonomic inventories reconciled at species grain, plus independently supplied familiar common names and genuine vernacular synonyms. No word-based membership, geographic slicing, colour morph padding or popularity-based exclusion. All accepted scientific names verified through the actual matcher; current names take precedence over legacy synonyms. This is author review, not a claimed user vote."
+    },
+    {
+      "id": "authored-combat-sports",
+      "basis": "individually-reviewed-whole-sport-concepts-based-on-original-yes-model",
+      "yes": [
+        "Boxing",
+        "Wrestling",
+        "Karate",
+        "Judo",
+        "Taekwondo",
+        "Brazilian jiu-jitsu",
+        "Fencing",
+        "Sumo",
+        "Muay Thai",
+        "Kickboxing",
+        "Aikido",
+        "Krav Maga",
+        "MMA",
+        "BJJ",
+        "Tai chi",
+        "Capoeira",
+        "Hapkido",
+        "Wing chun",
+        "Taekkyeon",
+        "Jeet kune do",
+        "Savate",
+        "Kenjutsu",
+        "Iaido",
+        "Ninjutsu",
+        "HEMA",
+        "Arnis",
+        "Sambo",
+        "Shorinji kempo",
+        "Kendo",
+        "Kung fu",
+        "Silat",
+        "Pencak silat",
+        "Pradal serey",
+        "Dambe",
+        "Donga",
+        "Drunken boxing",
+        "Eagle claw",
+        "White crane",
+        "Kenpo",
+        "Jiu-jitsu",
+        "Tai chi chuan",
+        "Shotokan",
+        "Kyokushin"
+      ],
+      "no": [
+        "Quidditch",
+        "Basketball",
+        "Miyagi-do",
+        "Cobra Kai",
+        "Tae Bo"
+      ],
+      "prompt": "Name a combat sport or established martial art.",
+      "family": "sports",
+      "inventoryEvidence": [
+        "https://www.britannica.com/sports/martial-art",
+        "https://olympics.com/en/sports/",
+        "https://www.wkf.net/",
+        "https://www.ijf.org/",
+        "https://qwankido-official.com/en/",
+        "https://qwankido.org/"
+      ],
+      "review": "Independent common-guess sweep repaired Kenpo, Jiu-jitsu, standard school names, ice skating and ordinary sport names. Reconciled generic Nordic skiing vs cross-country and downhill vs the broader Alpine category. Governing-body checks confirm the rare art/discipline and organized snowball fighting; familiar wording cannot farm a 100-point foreign-name bonus. Fictional styles and roller sports excluded. This is author review, not a claimed user vote."
+    },
+    {
+      "id": "authored-winter-sports",
+      "basis": "individually-reviewed-whole-sport-concepts-based-on-original-yes-model",
+      "yes": [
+        "Ice hockey",
+        "Curling",
+        "Figure skating",
+        "Snowboarding",
+        "Bobsleigh",
+        "Biathlon",
+        "Bobsledding",
+        "Luge",
+        "Skeleton",
+        "Nordic combined",
+        "Ski jumping",
+        "Cross-country skiing",
+        "Slalom",
+        "Giant slalom",
+        "Super-G",
+        "Downhill",
+        "Ski mountaineering",
+        "Telemark skiing",
+        "Ice dancing",
+        "Synchronized skating",
+        "Bandy",
+        "Broomball",
+        "Ringette",
+        "Ice stock sport",
+        "Snowshoeing",
+        "Ski orienteering",
+        "Skijoring",
+        "Snowmobile racing",
+        "Ice sailing",
+        "Para ice hockey",
+        "Sledding",
+        "Tobogganing",
+        "Yukigassen",
+        "Snowball fight",
+        "Ice skating",
+        "Nordic skiing",
+        "Ski",
+        "Snowboard"
+      ],
+      "no": [
+        "Beach volleyball",
+        "Basketball",
+        "Roller skating",
+        "Inline skating"
+      ],
+      "prompt": "Name a sport or recognized sporting discipline played on snow or ice.",
+      "family": "sports",
+      "inventoryEvidence": [
+        "https://olympics.com/en/sports/winter-olympics",
+        "https://www.fis-ski.com/",
+        "https://www.isu.org/",
+        "https://jyf.or.jp/english/member/rule/",
+        "https://jyf.or.jp/english/first/",
+        "https://www.worldarchery.sport/sport/disciplines"
+      ],
+      "review": "Independent common-guess sweep repaired Kenpo, Jiu-jitsu, standard school names, ice skating and ordinary sport names. Reconciled generic Nordic skiing vs cross-country and downhill vs the broader Alpine category. Governing-body checks confirm the rare art/discipline and organized snowball fighting; familiar wording cannot farm a 100-point foreign-name bonus. Fictional styles and roller sports excluded. This is author review, not a claimed user vote."
     }
   ],
   "expansionBatches": [
@@ -4724,6 +5025,38 @@
         "90 independently supplied public act names; five invalid solo/trio boundary cases",
         "Official Chemical Brothers and Blue Note artist pages; Warp-owned Bleep Autechre profile",
         "Duplicate early Simon/Garfunkel and DOMi/JD Beck identities reconciled"
+      ]
+    },
+    {
+      "id": "authored-whole-animal-groups-05",
+      "date": "2026-10-25",
+      "questions": [
+        "authored-owl-kinds",
+        "authored-parrot-kinds",
+        "authored-penguin-kinds",
+        "authored-bat-kinds"
+      ],
+      "status": "admitted in development; the requested 5,000-question release is unfinished",
+      "sourceChecks": [
+        "Complete eBird/Clements order membership: 248 owl, 410 parrot and 19 penguin species",
+        "MDD v2.5 CSV matches archived checksum and reconciles 6,904 species / 1,514 bats",
+        "Every source common/scientific name checked through the gameplay matcher",
+        "Independent familiar inputs and wrong-animal boundaries; no invented acronym aliases"
+      ]
+    },
+    {
+      "id": "authored-common-sport-concepts-06",
+      "date": "2026-10-25",
+      "questions": [
+        "authored-combat-sports",
+        "authored-winter-sports"
+      ],
+      "status": "admitted in development; the requested 5,000-question release is unfinished",
+      "sourceChecks": [
+        "81 positive common sport-name cases plus explicit non-combat/fictional/roller-sport boundaries",
+        "WKF, IJF, ISU, FIS and Olympic sport context",
+        "Qwan Ki Do official federation; World Archery ski-archery discipline; Japan Yukigassen Federation rules",
+        "Genuine familiar synonyms assigned to their real identity and familiarity tier"
       ]
     }
   ]

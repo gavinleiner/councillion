@@ -1,6 +1,6 @@
 {
-  "build": "6bb3f0989564da08",
-  "count": 255,
+  "build": "4fbc135e021ba7bc",
+  "count": 261,
   "categories": [
     {
       "id": "group-q001",
@@ -1915,6 +1915,22 @@
       "scope": "This asks for the right-click/use action. Merely chopping or breaking a block does not qualify. Both stripping wood and removing copper oxidation or wax count. Official Java 26.3 recipe, tag or component data defines the inventory; modded behavior does not count."
     },
     {
+      "id": "authored-combat-sports",
+      "prompt": "Name a combat sport or established martial art.",
+      "family": "sports",
+      "group": "authored-situations",
+      "answerCount": 129,
+      "scope": "Named competitive fighting disciplines and established martial arts count, including forms practiced without full-contact competition. Fictional styles do not count."
+    },
+    {
+      "id": "authored-winter-sports",
+      "prompt": "Name a sport or recognized sporting discipline played on snow or ice.",
+      "family": "sports",
+      "group": "authored-situations",
+      "answerCount": 99,
+      "scope": "Established ice and snow sports and competitive disciplines count. A sport merely played during the winter on an ordinary indoor court does not qualify."
+    },
+    {
       "id": "authored-nba-regular-season-mvps",
       "prompt": "Name a player who has won the NBA regular-season MVP award.",
       "family": "sports",
@@ -2041,6 +2057,38 @@
       "group": "authored-whole-concept",
       "answerCount": 366,
       "scope": "Films in which characters travel through time or experience a repeating time loop count, including animated movies and shorts. Ordinary flashbacks, dreams about the past and a futuristic setting alone do not count."
+    },
+    {
+      "id": "authored-owl-kinds",
+      "prompt": "Name a kind of owl.",
+      "family": "nature",
+      "group": "authored-whole-taxonomic-group",
+      "answerCount": 256,
+      "scope": "Owl species and established named groups count, including recently extinct species in the source taxonomy. Common names and scientific names count. An owlet-nightjar or a nighthawk is not an owl."
+    },
+    {
+      "id": "authored-parrot-kinds",
+      "prompt": "Name a kind of parrot.",
+      "family": "nature",
+      "group": "authored-whole-taxonomic-group",
+      "answerCount": 421,
+      "scope": "Parrot species and established named groups count, including recently extinct species in the source taxonomy. Common and scientific names count. Pet colour mutations share their species identity; a bird is not a parrot just because its name contains that word."
+    },
+    {
+      "id": "authored-penguin-kinds",
+      "prompt": "Name a kind of penguin.",
+      "family": "nature",
+      "group": "authored-whole-taxonomic-group",
+      "answerCount": 20,
+      "scope": "Species in the eBird/Clements penguin order and established common group names count. English or scientific names count. Puffins and auks are different kinds of bird."
+    },
+    {
+      "id": "authored-bat-kinds",
+      "prompt": "Name a kind of bat.",
+      "family": "nature",
+      "group": "authored-whole-taxonomic-group",
+      "answerCount": 1523,
+      "scope": "Living and recently extinct species in the Mammal Diversity Database, plus established named bat groups, count. Common names and documented scientific names count. A flying fox is a bat; a flying squirrel is not. Prehistoric fossil-only species are outside this current-species inventory."
     }
   ]
 }

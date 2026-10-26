@@ -140,3 +140,42 @@ test('the music-duo inventory keeps recognizable acts and merges documented form
  const meta=manifest.categories.find(p=>p.id==='authored-musical-duos');
  for(const input of ['Moderat','Noisia','Aphex Twin'])assert.equal(resolveAnswer({...p,answers:p.answers,excludedAnswers:meta.exclude},input).status,'missing',input);
 });
+
+test('bird inventories reconcile every species in their publisher order, not a word in its name',()=>{
+ const source=JSON.parse(gunzipSync(readFileSync(new URL('../data-snapshots/authored/sources/clements-bird-orders.json.gz',import.meta.url))));
+ for(const [key,id,count]of [['owls','owl-kinds',248],['parrots','parrot-kinds',410],['penguins','penguin-kinds',19]]){
+  const rows=source.groups[key].species,p=pack(id);assert.equal(rows.length,count);
+  for(const r of rows){
+   assert.equal(resolveAnswer(p,r.name).status,'exact',r.name);
+   assert.equal(resolveAnswer(p,r.scientificName).answer.label,r.name,r.scientificName);
+  }
+ }
+ assert.equal(resolveAnswer(pack('parrot-kinds'),'Budgie').answer.label,'Budgerigar');
+ assert.equal(resolveAnswer(pack('parrot-kinds'),'African grey parrot').answer.label,'Gray Parrot');
+ assert.equal(resolveAnswer(pack('penguin-kinds'),'Fairy penguin').answer.label,'Little Penguin');
+ assert.equal(resolveAnswer(pack('penguin-kinds'),'Jackass penguin').answer.label,'African Penguin');
+});
+
+test('the bat inventory retains every current MDD species and accepted name without a popularity cutoff',()=>{
+ const source=JSON.parse(gunzipSync(readFileSync(new URL('../data-snapshots/authored/sources/mdd-2.5-species.json.gz',import.meta.url))));
+ assert.equal(source.version,'2.5');assert.equal(source.species.length,6904);assert.equal(new Set(source.species.map(p=>p.id)).size,6904);
+ const bats=source.species.filter(p=>p.order==='Chiroptera'),p=pack('bat-kinds');assert.equal(bats.length,1514);
+ for(const r of bats){
+  const result=resolveAnswer(p,r.sciName.replaceAll('_',' '));
+  assert.equal(result.status,'exact',r.sciName);
+  assert.equal(result.answer.label,r.mainCommonName,r.sciName+': a legacy synonym must not override the accepted name');
+ }
+ for(const n of ['Vampire bat','Little brown bat','Big brown bat','Bumblebee bat','Flying fox','Fruit bat','Hammer-headed bat'])assert.equal(resolveAnswer(p,n).status,'exact',n);
+});
+
+test('common sports inputs work without granting a rare-label bonus for familiar synonyms',()=>{
+ const combat=pack('combat-sports'),winter=pack('winter-sports');
+ for(const n of ['Kenpo','Kempo','Jiu-jitsu','Drunken boxing','Eagle claw','White crane','Tai chi chuan','Shotokan','Kyokushin'])assert.equal(resolveAnswer(combat,n).status,'exact',n);
+ assert.equal(resolveAnswer(combat,'Jiu-jitsu').answer.label,'Jujutsu');
+ for(const n of ['Bobsledding','Ice skating','Ski','Snowboard','Downhill skiing','Nordic skiing','Snowball fight'])assert.equal(resolveAnswer(winter,n).status,'exact',n);
+ assert.equal(resolveAnswer(winter,'Snowball fight').answer.label,'Yukigassen');
+ assert.equal(resolveAnswer(winter,'Snowball fight').answer.points,30);
+ assert.equal(resolveAnswer(winter,'Ski archery').answer.points,100);
+ assert.equal(resolveAnswer(winter,'Downhill skiing').answer.label,'Downhill');
+ assert.notEqual(resolveAnswer(winter,'Nordic skiing').answer.label,resolveAnswer(winter,'Cross-country skiing').answer.label);
+});

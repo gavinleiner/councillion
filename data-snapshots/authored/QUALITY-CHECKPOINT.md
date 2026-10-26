@@ -1,6 +1,6 @@
 # Five-thousand-question expansion: development checkpoint
 
-The requested release is unfinished. The production website still has 227 admitted questions. The development branch now has 255, including 28 newly reviewed inventories. Drafts, answer rows, source entities, archived recipes and reworded prompts do not count toward 5,000.
+The requested release is unfinished. The production website still has 227 admitted questions. The development branch now has 261, including 34 newly reviewed inventories. Drafts, answer rows, source entities, archived recipes and reworded prompts do not count toward 5,000.
 
 ## Review standard
 
@@ -12,7 +12,7 @@ A source classification is evidence, not automatic admission. Each normal-play I
 
 A complete 881-driver Formula One roster reconciles all nine source pages, including current public names and independently supplied familiar inputs. Six everyday inventories were admitted only after a second common-guess sweep repaired missing tools, product names and real aliases. Six Minecraft mechanics use pinned released-game recipes, recursive tags, components and loot tables. This covers every member of the stated game-data rule, rather than a short remembered list. Official character rosters cover Dota 2, Overwatch, Smash Ultimate and Legendary/Mythical Pokemon species. Nintendo alternate costumes share answer identity while actual separately playable fighters remain distinct. NASA supplies all 88 official constellation names. Official NBA award history supplies regular-season MVPs. A second, game-grain NFL inventory reconciles all 60 Super Bowls to 36 distinct winning starting quarterbacks; Bart Starr was caught and repaired during that reconciliation.
 
-There are 69 authored inventories in development, of which 28 are admitted. Canonical answer rows are answers, not questions. The other 41 inventories remain unavailable in normal play.
+There are 73 authored inventories in development, of which 34 are admitted. Canonical answer rows are answers, not questions. The other 39 inventories remain unavailable in normal play.
 
 ## Drafts that still need work
 
@@ -31,9 +31,9 @@ Reach at least 5,000 individually admitted, semantically distinct questions. Kee
 
 ## Verified checkpoint before continuing expansion
 
-Production remains at 227 questions: nothing in this branch has been pushed, merged, deployed or emailed as finished. Development has 255 normal-play questions, including 28 newly admitted authored inventories, with 41 additional authored inventories still ineligible for normal play. The 5,000-question release gate deliberately fails.
+Production remains at 227 questions: nothing in this branch has been pushed, merged, deployed or emailed as finished. Development has 261 normal-play questions, including 34 newly admitted authored inventories, with 39 additional authored inventories still ineligible for normal play. The 5,000-question release gate deliberately fails.
 
-Verification: production build passed; full unit suite passed 235 tests; latest targeted content and migration checks passed after the final alias/rating repairs. Local isolated Playwright tests passed at 1366×768 and 390×844, using local HTTP only and blocking external connections. They exercised legacy saved queues with an unchanged algorithm version, storage persistence across browser tabs, actual Zhou Guanyu grading (+30), the 100-question sample, library counts, and identical Daily IDs in two independent browser contexts. The browser report is in `work/five-thousand/browser/report.json` in the parent workspace; it is development evidence, not a publication receipt.
+Verification: production build passed; full unit suite passed 238 tests; latest targeted content and migration checks passed after the final alias/rating repairs. Local isolated Playwright tests passed at 1366×768 and 390×844, using local HTTP only and blocking external connections. They exercised legacy saved queues with an unchanged algorithm version, storage persistence across browser tabs, actual Zhou Guanyu grading (+30), the 100-question sample, library counts, and identical Daily IDs in two independent browser contexts. The browser report is in `work/five-thousand/browser/report.json` in the parent workspace; it is development evidence, not a publication receipt.
 
 ## Culture and music continuation
 
@@ -44,3 +44,13 @@ The frozen sample was regenerated from all 255 admitted IDs using the same `2026
 A new 37-subject writing/research backlog is in `work/five-thousand/next-whole-concepts.tsv` in the parent workspace. It does not count as finished questions. The QLever endpoint returned HTTP 429 during root lookup; requests to it stopped. Continue with cached factual tables and independently sourced primary-publisher inventories rather than retrying or replaying the denied query through another endpoint. Existing cached flatbread, stew, cloud, space-probe and other whole-concept facts still require scope and common-answer review; raw source rows are not automatically accepted answers.
 
 The corrected full test rerun passed all 235 tests. The previous stale-sample failure is resolved without weakening its exact-pool assertion.
+
+## Animal and sports continuation
+
+Four animal questions are admitted from full publisher taxonomies: owls (248 species), parrots (410), penguins (19) and bats (1,514). Every source common/scientific name is tested through the actual matcher; scientific names currently accepted by MDD take priority over legacy synonyms. The MDD v2.5 CSV reconciles 6,904 unique species IDs and matches the published archive checksum. Current/recently extinct scope does not pretend to be a complete prehistoric-fossil catalog. Traditional common names and named groups are supported without species-code abbreviations or colour-morph padding.
+
+Two sports questions are admitted after 81 independent common-name checks: combat sports/martial arts and ice/snow sports. Kenpo, Jiu-jitsu, ordinary ice-skating names and real martial-art school names were repaired. Downhill is separated from the broader Alpine family; Nordic skiing is separated from cross-country. Actual governing-body sources confirm Qwan Ki Do, ski archery and Yukigassen. Snowball fight correctly shares Yukigassen's identity but earns 30, rather than farming a 100-point foreign-name spelling. The other motorsport/bodyweight candidates still need better scope/common-input coverage.
+
+Development is now 261 admitted questions (34 added to the original 227), with 39 more authored candidates excluded. There are 73 authored inventories total. The 5,000-question target remains unfinished: 4,739 additional distinct admitted questions are required. Do not count the 715,614 answer rows or the source metadata as questions. All 238 unit tests passed; after readable format-label updates, the content/sample/migration checks were rerun. Local browser cases passed actual grading for budgie, fairy penguin, bumblebee bat, snowball fight and Jiu-jitsu.
+
+Next whole-list research is cached in `work/five-thousand/whole-concept-pages/` and `parsed-whole-list-names.json` in the parent workspace. Cheese needs the linked national/type cheese lists because the global page deliberately omits many major French/Italian names; these source pages still feed one global cheese question, not a question per country. Browser/OS/knot extraction retains some notes that need cleaning. Pancake root-word/alias cases need scope review. Rock names have 30 independent common probes present. WMO cloud-classification pages, a whole-list challenge file and older cached source tables are available for further source-backed work. None of those raw lists is an admitted question.
