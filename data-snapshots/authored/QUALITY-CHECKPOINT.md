@@ -1,6 +1,6 @@
 # Five-thousand-question expansion: development checkpoint
 
-The requested release is unfinished. Production still has 227 admitted questions. Development has 376: the 227 baseline plus 149 new admissions. It needs 4,624 more genuinely distinct questions. Answer rows, raw entities, draft inventories and reworded recipes do not count as questions.
+The requested release is unfinished. Production still has 227 admitted questions. Development has 384: the 227 baseline plus 157 new admissions. It needs 4,616 more genuinely distinct questions. Answer rows, raw entities, draft inventories and reworded recipes do not count as questions.
 
 ## Admission standard
 
@@ -10,7 +10,7 @@ Every normal-play question requires explicit admission, an inspectable factual i
 
 ## Current admitted expansion
 
-There are 175 authored inventories, with 149 admitted and 26 held out of normal play. The admitted additions include six Minecraft mechanics sourced from pinned released-game data; Dota, Overwatch and Smash rosters; Legendary/Mythical Pokémon; 881 Formula One drivers; NBA MVPs; winning starting Super Bowl quarterbacks; 88 constellations; six everyday tool/object inventories; seven whole culture subjects; music duos; owls, parrots, penguins and bats; combat and winter sports; and rock names.
+There are 175 authored inventories, with 157 admitted and 18 held out of normal play. The admitted additions include six Minecraft mechanics sourced from pinned released-game data; Dota, Overwatch and Smash rosters; Legendary/Mythical Pokémon; 881 Formula One drivers; NBA MVPs; winning starting Super Bowl quarterbacks; 88 constellations; six everyday tool/object inventories; seven whole culture subjects; music duos; owls, parrots, penguins and bats; combat and winter sports; and rock names.
 
 The latest fourteen admissions are cheese, flatbreads, pancakes, stews, browsers, clouds, record labels, DJs, drummers, keyboard instruments, canals, waterfalls, mountain ranges and museums. Each whole subject is one question. Linked national cheese lists expand the single cheese inventory rather than adding country questions. Performer classifications exclude fictional drummers and writing-only credits; real DJ acts and documented stage performers remain valid. Common-input sweeps repaired named keyboard models, famous museum aliases, major mountain ranges, cheese names, cloud names and fog forms. Explicit public abbreviations such as MoMA, DX7, ECM and MSI are names, not generated initials.
 
@@ -18,7 +18,7 @@ Source attribution and unresolved-row ledgers remain beside the authored inputs.
 
 ## Candidates and next work
 
-The 26 excluded candidates include food inventories, Wizarding World characters, nature/science/sports lists and four worldwide site inventories. They require common-input, source-eligibility and synonym repairs before admission. Large inventories require local loading/typing checks; do not truncate valid rare answers for popularity.
+The 18 excluded candidates include eight food inventories, six nature/sports inventories and four worldwide site inventories. They require common-input, source-eligibility and synonym repairs before admission. Large inventories require local loading/typing checks; do not truncate valid rare answers for popularity.
 
 Twenty-six complete artist catalogs are now admitted, with 379 independent recognizable-song checks. Writing-only, unrelated solo-member and background-only credits are held. Known short titles and version identities are explicit; alternate versions cannot score twice. Drake, Eminem, Chappell Roan, Bieber, Post Malone and Travis Scott remain unadmitted because complete eligible source catalogs were not established. Thirty whole all-time NBA/BAA/ABA franchise questions are now admitted, with 508 independent common-player inputs and 13,408 answer identities. The 31st source roster (Seattle) expands the Thunder question, not the question count. Charlotte/New Orleans history, renamed players, source legend/retired-number cleanup, 26 NBL-only Lakers exclusions and two verified Atlanta source-stat conflicts are documented. No roster-year, position or opponent variants are added. Eight local actual-game player cases pass.
 
@@ -37,3 +37,9 @@ Fourteen whole global feature questions are now admitted in development: mountai
 At 376, the full unit suite passes all 251 tests. The build checks 4,824 familiar inputs and 501 wrong-answer boundaries. The fixed-seed 100-question sample is rebuilt. All 26 local actual-game geographic answer cases and nine rejection cases pass. Local performance checks retain the complete large banks: the 353,705-name mountain draft loaded the game within 1.7 seconds, rendered its initial 100-row answer view in 76 ms and searched it in 44 ms on this machine; final generic-label cleanup leaves 353,704 names. These are local observations, not a performance promise for every device. General browser checks pass again at 376 for saved unseen queues, cross-tab persistence, shared Daily, sample/library counts, laptop and mobile layouts, with external requests blocked. No completed expansion has been published or emailed.
 
 A separately written common-input sweep now covers the held food/science/nature/sports/cast questions. It has exposed source omissions and awkward public-name gaps, including missing sushi names that otherwise become wrong correction offers. These questions remain held until repairs and source checks pass; the audit itself does not add questions to the admitted count.
+
+## Familiar-name checkpoint · 384 questions
+
+Eight more whole concepts are admitted after source and independent familiar-input repairs: human bones, measurement units, cell structures, the Harry Potter cast, salad dressings, pizza styles, sushi varieties and soft-drink products. Their inventories retain 124, 925, 146, 437, 168, 184, 203 and 569 canonical names respectively. Named anatomical positions and 696 legal SI prefix/name combinations expand answers inside the bone/unit concepts, not the question count. Official character-name corrections remain canonical; wrong source spellings trigger the normal after-submit confirmation rather than becoming invented exact aliases. Temari, Temaki and Inari resolve to their own sushi identities. Actual public food/product names are explicit aliases.
+
+At 384, all 255 full-suite tests and 41 focused content/sample/migration tests pass. The production build checks 5,133 familiar inputs and 527 wrong-answer boundaries. Seventeen more actual-game answer cases, eight rejection cases and two spelling-confirmation cases pass locally with external requests blocked. No correction appears before submission. The release gate correctly rejects this unfinished build: 4,616 real admitted questions and final category balance are still required. Production remains 227; no finished expansion email has been sent. Source details are in FAMILIAR-REPAIR-SOURCE-ATTRIBUTION.md.

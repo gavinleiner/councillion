@@ -64,13 +64,23 @@ add('legendary-mythical-pokemon','gaming','Legend has it','Name a Legendary or M
  'Mewtwo|Mew|Rayquaza|Arceus|Lugia|Ho-Oh','Pikachu|Charizard','Phione',
  ['https://pokeapi.co/docs/v2#pokemon-species','https://github.com/PokeAPI/pokeapi/tree/'+s['pokeapiCommit']+'/data/v2/csv'],
  'Articuno|Zapdos|Moltres|Entei|Raikou|Suicune|Celebi|Groudon|Kyogre|Latios|Latias|Jirachi|Deoxys|Dialga|Palkia|Giratina|Darkrai|Shaymin|Victini|Reshiram|Zekrom|Kyurem|Xerneas|Yveltal|Zygarde|Solgaleo|Lunala|Necrozma|Zacian|Zamazenta|Eternatus|Koraidon|Miraidon')
-hp=s['harryPotter']
+hp_supp=json.load(open(ROOT/'data-snapshots/authored/wizarding-world-supplements.json'))
+hp=[]
+for original in s['harryPotter']:
+ row={**original,'aliases':list(original.get('aliases',[]))};old=row['name'];row['name']=hp_supp['rename'].get(old,old)
+ row['aliases']+=hp_supp['aliases'].get(row['name'],[])
+ hp.append(row)
+hp.extend(hp_supp['additions'])
 add('wizarding-world-characters','culture','Names in the record','Name a character from the Harry Potter books or films.',
  'Identifiable characters in the Harry Potter novels, films and their epilogues count, including creatures, ghosts and portraits. Real actors are not their fictional characters. Same-name characters share one answer identity.',hp,
  'Harry Potter|Hermione Granger|Ron Weasley|Albus Dumbledore|Rubeus Hagrid|Severus Snape','Gandalf|Percy Jackson','Godelot',
  ['https://hp-api.onrender.com/api/characters','https://hp-api.onrender.com/'],
- 'Lord Voldemort|Draco Malfoy|Sirius Black|Remus Lupin|Neville Longbottom|Luna Lovegood|Ginny Weasley|Fred Weasley|George Weasley|Molly Weasley|Arthur Weasley|Dobby|Lucius Malfoy|Bellatrix Lestrange|Dolores Umbridge|Minerva McGonagall|Cedric Diggory|Cho Chang|Alastor Moody|Fleur Delacour|Viktor Krum|Peter Pettigrew|Nymphadora Tonks|Narcissa Malfoy|Percy Weasley|Bill Weasley|Charlie Weasley|James Potter|Lily Potter|Hedwig|Crookshanks|Fawkes|Nagini|Buckbeak|Aragog|Fang|Fluffy|Kreacher|Winky|Griphook|Gilderoy Lockhart|Filius Flitwick|Pomona Sprout|Sybill Trelawney|Horace Slughorn|Garrick Ollivander|Argus Filch|Quirinus Quirrell|Madam Pomfrey|Poppy Pomfrey|Vernon Dursley|Petunia Dursley|Dudley Dursley',
+ 'Lord Voldemort|Draco Malfoy|Sirius Black|Remus Lupin|Neville Longbottom|Luna Lovegood|Ginny Weasley|Fred Weasley|George Weasley|Molly Weasley|Arthur Weasley|Dobby|Lucius Malfoy|Bellatrix Lestrange|Dolores Umbridge|Minerva McGonagall|Cedric Diggory|Cho Chang|Alastor Moody|Fleur Delacour|Viktor Krum|Peter Pettigrew|Nymphadora Tonks|Narcissa Malfoy|Percy Weasley|Bill Weasley|Charlie Weasley|James Potter|Lily Potter|Hedwig|Crookshanks|Fawkes|Nagini|Dean Thomas|Buckbeak|Aragog|Fang|Fluffy|Kreacher|Winky|Griphook|Gilderoy Lockhart|Filius Flitwick|Pomona Sprout|Sybill Trelawney|Horace Slughorn|Garrick Ollivander|Argus Filch|Quirinus Quirrell|Madam Pomfrey|Poppy Pomfrey|Vernon Dursley|Petunia Dursley|Dudley Dursley',
  {'Rubeus Hagrid':['Hagrid'],'Albus Dumbledore':['Dumbledore','Professor Dumbledore'],'Severus Snape':['Snape','Professor Snape'],'Minerva McGonagall':['McGonagall','Professor McGonagall'],'Lord Voldemort':['Voldemort','Tom Riddle','Tom Marvolo Riddle'],'Ron Weasley':['Ron','Ronald Weasley'],'Hermione Granger':['Hermione'],'Draco Malfoy':['Draco'],'Aurora Sinistra':['Professor Sinistra'],'Neville Longbottom':['Neville'],'Luna Lovegood':['Luna']})
+hp_question=qs[-1]
+assert hp_question['id']=='authored-wizarding-world-characters'
+hp_question['familiar']=hp_supp['yes'];hp_question['exclude']=hp_supp['no']
+hp_question['references']+=hp_supp['references']+[r['reference']for r in hp_supp['additions']]
 target=ROOT/'data-snapshots/authored/batches/05-whole-character-rosters.json'
 text=json.dumps({'version':1,'questions':qs},ensure_ascii=False,indent=2)+'\n'
 if '--check'in sys.argv:assert target.read_text()==text,'Rebuild character roster questions'

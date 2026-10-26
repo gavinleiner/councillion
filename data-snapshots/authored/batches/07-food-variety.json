@@ -7373,9 +7373,29 @@
         "Ranch",
         "Caesar",
         "Vinaigrette",
-        "Blue cheese dressing",
+        "Blue cheese",
         "Thousand Island",
-        "Honey mustard"
+        "Honey mustard",
+        "Italian",
+        "French",
+        "Russian",
+        "Green goddess",
+        "Balsamic vinaigrette",
+        "Oil and vinegar",
+        "Poppy seed",
+        "Sesame ginger",
+        "Lemon vinaigrette",
+        "Greek",
+        "Catalina",
+        "Coleslaw dressing",
+        "Red wine vinaigrette",
+        "Champagne vinaigrette",
+        "Citrus vinaigrette",
+        "Avocado ranch",
+        "Chipotle ranch",
+        "Buttermilk ranch",
+        "Raspberry vinaigrette",
+        "Tahini dressing"
       ],
       "exclude": [
         "Motor oil",
@@ -7384,14 +7404,744 @@
       "references": [
         "https://www.hiddenvalley.com/products/",
         "https://www.bbcgoodfood.com/recipes/collection/salad-dressing-recipes",
-        "https://www.newmansown.com/food/salad-dressing/"
+        "https://www.newmansown.com/food/salad-dressing/",
+        "https://www.hiddenvalley.com/recipe/homemade-avocado-ranch-dressing/"
       ],
       "answers": {
-        "10": "Ranch~Ranch dressing|Caesar~Caesar dressing|Vinaigrette|Blue cheese dressing~Blue cheese|Thousand Island~Thousand Island dressing|Honey mustard~Honey mustard dressing|Italian dressing|French dressing|Balsamic vinaigrette",
-        "30": "Russian dressing|Green goddess~Green goddess dressing|Poppy seed dressing~Poppyseed dressing|Sesame dressing|Greek dressing|Red wine vinaigrette|Lemon vinaigrette|Lemon dressing|Olive oil|Balsamic vinegar|Oil and vinegar|Coleslaw dressing~Slaw dressing|Salad cream|Yogurt dressing~Yoghurt dressing|Sour cream dressing|Buttermilk dressing|Tahini dressing|Ginger dressing|Carrot ginger dressing|Miso dressing|Peanut dressing|Soy dressing",
-        "60": "Champagne vinaigrette|Sherry vinaigrette|White wine vinaigrette|Raspberry vinaigrette|Strawberry vinaigrette|Honey vinaigrette|Mustard vinaigrette|Dijon vinaigrette|Creamy balsamic dressing|White balsamic vinaigrette|Honey balsamic vinaigrette|Maple vinaigrette|Citrus vinaigrette|Orange vinaigrette|Lime vinaigrette|Grapefruit vinaigrette|Avocado dressing|Avocado lime dressing|Cilantro lime dressing~Coriander lime dressing|Jalapeno ranch|Chipotle ranch|Buffalo ranch|Bacon ranch|Southwest ranch|Spicy ranch|Garlic ranch|Peppercorn ranch|Parmesan ranch|Cucumber ranch|Dill ranch|Vegan ranch|Cashew ranch|Sriracha ranch|Buttermilk ranch|Creamy Italian|Zesty Italian|Parmesan Italian|Olive Garden signature Italian~Olive Garden dressing|Creamy Caesar|Lemon Caesar|Vegan Caesar|Creamy French|Catalina~Catalina dressing|Western dressing|Honey French|Country French|Cobb dressing|Louis dressing~Louie dressing|Roquefort dressing|Gorgonzola dressing|Creamy feta dressing|Parmesan peppercorn|Creamy Parmesan|Asiago peppercorn|Sweet onion dressing|Vidalia onion dressing|Hot bacon dressing|Warm bacon vinaigrette|Waldorf dressing|Sweet chili dressing|Thai peanut dressing|Asian sesame dressing|Toasted sesame dressing|Roasted sesame dressing~Goma dressing|Sesame ginger dressing|Soy ginger dressing|Wasabi dressing|Ponzu dressing~Ponzu|Shiso dressing|Ume dressing|Yuzu dressing|Wafu dressing|Chuka dressing|Miso sesame dressing|Miso ginger dressing|Gochujang vinaigrette|Nuoc cham~Nuoc mam cham|Vietnamese fish sauce dressing|Som tam dressing|Fattoush dressing|Sumac dressing|Pomegranate molasses dressing|Za'atar dressing|Tahini lemon dressing~Lemon tahini dressing|Harissa dressing|Chermoula dressing~Chermoula|Cumin vinaigrette|Chimichurri dressing|Salsa verde dressing|Basil vinaigrette|Pesto dressing|Mint yogurt dressing|Dill dressing|Cucumber dill dressing|Tzatziki dressing~Tzatziki|Lemon dill dressing|Garlic herb dressing|Roasted garlic dressing|Creamy garlic dressing|Lemon anchovy dressing|Lemon caper dressing|Sun-dried tomato dressing|Tomato vinaigrette|Roasted red pepper dressing|Turmeric tahini dressing|Goddess dressing|Annie's Goddess|Bragg vinaigrette|Briannas blush wine vinaigrette|Briannas real French vinaigrette|Ken's Steak House dressing|Wish-Bone Italian|Kraft Zesty Italian|Newman's Own family recipe Italian|Hidden Valley Original Ranch|Marie's chunky blue cheese|Sweet and sour dressing|Orange sesame dressing|Shallot vinaigrette|Walnut oil vinaigrette|Hazelnut vinaigrette|Truffle vinaigrette|Date tahini dressing|Black garlic vinaigrette",
-        "85": "Sauce gribiche|Sauce ravigote|Salatsauce Sylter Art|Ume shiso dressing|Karashi su miso|Su miso~Sumiso|Nanbanzu|Amazu dressing|Tamarind dressing|Caprese dressing|Saffron vinaigrette",
-        "100": "Mayfair dressing"
+        "10": [
+          {
+            "label": "Ranch",
+            "aliases": [
+              "Ranch dressing"
+            ]
+          },
+          {
+            "label": "Caesar",
+            "aliases": [
+              "Caesar dressing"
+            ]
+          },
+          {
+            "label": "Vinaigrette",
+            "aliases": []
+          },
+          {
+            "label": "Blue cheese dressing",
+            "aliases": [
+              "Blue cheese"
+            ]
+          },
+          {
+            "label": "Thousand Island",
+            "aliases": [
+              "Thousand Island dressing"
+            ]
+          },
+          {
+            "label": "Honey mustard",
+            "aliases": [
+              "Honey mustard dressing"
+            ]
+          },
+          {
+            "label": "Italian dressing",
+            "aliases": [
+              "Italian"
+            ]
+          },
+          {
+            "label": "French dressing",
+            "aliases": [
+              "French"
+            ]
+          },
+          {
+            "label": "Balsamic vinaigrette",
+            "aliases": []
+          }
+        ],
+        "30": [
+          {
+            "label": "Russian dressing",
+            "aliases": [
+              "Russian"
+            ]
+          },
+          {
+            "label": "Green goddess",
+            "aliases": [
+              "Green goddess dressing"
+            ]
+          },
+          {
+            "label": "Poppy seed dressing",
+            "aliases": [
+              "Poppy seed",
+              "Poppyseed",
+              "Poppyseed dressing"
+            ]
+          },
+          {
+            "label": "Sesame dressing",
+            "aliases": []
+          },
+          {
+            "label": "Greek dressing",
+            "aliases": [
+              "Greek"
+            ]
+          },
+          {
+            "label": "Red wine vinaigrette",
+            "aliases": []
+          },
+          {
+            "label": "Lemon vinaigrette",
+            "aliases": []
+          },
+          {
+            "label": "Lemon dressing",
+            "aliases": []
+          },
+          {
+            "label": "Olive oil",
+            "aliases": []
+          },
+          {
+            "label": "Balsamic vinegar",
+            "aliases": []
+          },
+          {
+            "label": "Oil and vinegar",
+            "aliases": []
+          },
+          {
+            "label": "Coleslaw dressing",
+            "aliases": [
+              "Slaw dressing"
+            ]
+          },
+          {
+            "label": "Salad cream",
+            "aliases": []
+          },
+          {
+            "label": "Yogurt dressing",
+            "aliases": [
+              "Yoghurt dressing"
+            ]
+          },
+          {
+            "label": "Sour cream dressing",
+            "aliases": []
+          },
+          {
+            "label": "Buttermilk dressing",
+            "aliases": []
+          },
+          {
+            "label": "Tahini dressing",
+            "aliases": []
+          },
+          {
+            "label": "Ginger dressing",
+            "aliases": []
+          },
+          {
+            "label": "Carrot ginger dressing",
+            "aliases": []
+          },
+          {
+            "label": "Miso dressing",
+            "aliases": []
+          },
+          {
+            "label": "Peanut dressing",
+            "aliases": []
+          },
+          {
+            "label": "Soy dressing",
+            "aliases": []
+          },
+          {
+            "label": "Avocado ranch",
+            "aliases": []
+          }
+        ],
+        "60": [
+          {
+            "label": "Champagne vinaigrette",
+            "aliases": []
+          },
+          {
+            "label": "Sherry vinaigrette",
+            "aliases": []
+          },
+          {
+            "label": "White wine vinaigrette",
+            "aliases": []
+          },
+          {
+            "label": "Raspberry vinaigrette",
+            "aliases": []
+          },
+          {
+            "label": "Strawberry vinaigrette",
+            "aliases": []
+          },
+          {
+            "label": "Honey vinaigrette",
+            "aliases": []
+          },
+          {
+            "label": "Mustard vinaigrette",
+            "aliases": []
+          },
+          {
+            "label": "Dijon vinaigrette",
+            "aliases": []
+          },
+          {
+            "label": "Creamy balsamic dressing",
+            "aliases": []
+          },
+          {
+            "label": "White balsamic vinaigrette",
+            "aliases": []
+          },
+          {
+            "label": "Honey balsamic vinaigrette",
+            "aliases": []
+          },
+          {
+            "label": "Maple vinaigrette",
+            "aliases": []
+          },
+          {
+            "label": "Citrus vinaigrette",
+            "aliases": []
+          },
+          {
+            "label": "Orange vinaigrette",
+            "aliases": []
+          },
+          {
+            "label": "Lime vinaigrette",
+            "aliases": []
+          },
+          {
+            "label": "Grapefruit vinaigrette",
+            "aliases": []
+          },
+          {
+            "label": "Avocado dressing",
+            "aliases": []
+          },
+          {
+            "label": "Avocado lime dressing",
+            "aliases": []
+          },
+          {
+            "label": "Cilantro lime dressing",
+            "aliases": [
+              "Coriander lime dressing"
+            ]
+          },
+          {
+            "label": "Jalapeno ranch",
+            "aliases": []
+          },
+          {
+            "label": "Chipotle ranch",
+            "aliases": []
+          },
+          {
+            "label": "Buffalo ranch",
+            "aliases": []
+          },
+          {
+            "label": "Bacon ranch",
+            "aliases": []
+          },
+          {
+            "label": "Southwest ranch",
+            "aliases": []
+          },
+          {
+            "label": "Spicy ranch",
+            "aliases": []
+          },
+          {
+            "label": "Garlic ranch",
+            "aliases": []
+          },
+          {
+            "label": "Peppercorn ranch",
+            "aliases": []
+          },
+          {
+            "label": "Parmesan ranch",
+            "aliases": []
+          },
+          {
+            "label": "Cucumber ranch",
+            "aliases": []
+          },
+          {
+            "label": "Dill ranch",
+            "aliases": []
+          },
+          {
+            "label": "Vegan ranch",
+            "aliases": []
+          },
+          {
+            "label": "Cashew ranch",
+            "aliases": []
+          },
+          {
+            "label": "Sriracha ranch",
+            "aliases": []
+          },
+          {
+            "label": "Buttermilk ranch",
+            "aliases": []
+          },
+          {
+            "label": "Creamy Italian",
+            "aliases": []
+          },
+          {
+            "label": "Zesty Italian",
+            "aliases": []
+          },
+          {
+            "label": "Parmesan Italian",
+            "aliases": []
+          },
+          {
+            "label": "Olive Garden signature Italian",
+            "aliases": [
+              "Olive Garden dressing"
+            ]
+          },
+          {
+            "label": "Creamy Caesar",
+            "aliases": []
+          },
+          {
+            "label": "Lemon Caesar",
+            "aliases": []
+          },
+          {
+            "label": "Vegan Caesar",
+            "aliases": []
+          },
+          {
+            "label": "Creamy French",
+            "aliases": []
+          },
+          {
+            "label": "Catalina",
+            "aliases": [
+              "Catalina dressing"
+            ]
+          },
+          {
+            "label": "Western dressing",
+            "aliases": []
+          },
+          {
+            "label": "Honey French",
+            "aliases": []
+          },
+          {
+            "label": "Country French",
+            "aliases": []
+          },
+          {
+            "label": "Cobb dressing",
+            "aliases": []
+          },
+          {
+            "label": "Louis dressing",
+            "aliases": [
+              "Louie dressing"
+            ]
+          },
+          {
+            "label": "Roquefort dressing",
+            "aliases": []
+          },
+          {
+            "label": "Gorgonzola dressing",
+            "aliases": []
+          },
+          {
+            "label": "Creamy feta dressing",
+            "aliases": []
+          },
+          {
+            "label": "Parmesan peppercorn",
+            "aliases": []
+          },
+          {
+            "label": "Creamy Parmesan",
+            "aliases": []
+          },
+          {
+            "label": "Asiago peppercorn",
+            "aliases": []
+          },
+          {
+            "label": "Sweet onion dressing",
+            "aliases": []
+          },
+          {
+            "label": "Vidalia onion dressing",
+            "aliases": []
+          },
+          {
+            "label": "Hot bacon dressing",
+            "aliases": []
+          },
+          {
+            "label": "Warm bacon vinaigrette",
+            "aliases": []
+          },
+          {
+            "label": "Waldorf dressing",
+            "aliases": []
+          },
+          {
+            "label": "Sweet chili dressing",
+            "aliases": []
+          },
+          {
+            "label": "Thai peanut dressing",
+            "aliases": []
+          },
+          {
+            "label": "Asian sesame dressing",
+            "aliases": []
+          },
+          {
+            "label": "Toasted sesame dressing",
+            "aliases": []
+          },
+          {
+            "label": "Roasted sesame dressing",
+            "aliases": [
+              "Goma dressing"
+            ]
+          },
+          {
+            "label": "Sesame ginger dressing",
+            "aliases": [
+              "Sesame ginger"
+            ]
+          },
+          {
+            "label": "Soy ginger dressing",
+            "aliases": []
+          },
+          {
+            "label": "Wasabi dressing",
+            "aliases": []
+          },
+          {
+            "label": "Ponzu dressing",
+            "aliases": [
+              "Ponzu"
+            ]
+          },
+          {
+            "label": "Shiso dressing",
+            "aliases": []
+          },
+          {
+            "label": "Ume dressing",
+            "aliases": []
+          },
+          {
+            "label": "Yuzu dressing",
+            "aliases": []
+          },
+          {
+            "label": "Wafu dressing",
+            "aliases": []
+          },
+          {
+            "label": "Chuka dressing",
+            "aliases": []
+          },
+          {
+            "label": "Miso sesame dressing",
+            "aliases": []
+          },
+          {
+            "label": "Miso ginger dressing",
+            "aliases": []
+          },
+          {
+            "label": "Gochujang vinaigrette",
+            "aliases": []
+          },
+          {
+            "label": "Nuoc cham",
+            "aliases": [
+              "Nuoc mam cham"
+            ]
+          },
+          {
+            "label": "Vietnamese fish sauce dressing",
+            "aliases": []
+          },
+          {
+            "label": "Som tam dressing",
+            "aliases": []
+          },
+          {
+            "label": "Fattoush dressing",
+            "aliases": []
+          },
+          {
+            "label": "Sumac dressing",
+            "aliases": []
+          },
+          {
+            "label": "Pomegranate molasses dressing",
+            "aliases": []
+          },
+          {
+            "label": "Za'atar dressing",
+            "aliases": []
+          },
+          {
+            "label": "Tahini lemon dressing",
+            "aliases": [
+              "Lemon tahini dressing"
+            ]
+          },
+          {
+            "label": "Harissa dressing",
+            "aliases": []
+          },
+          {
+            "label": "Chermoula dressing",
+            "aliases": [
+              "Chermoula"
+            ]
+          },
+          {
+            "label": "Cumin vinaigrette",
+            "aliases": []
+          },
+          {
+            "label": "Chimichurri dressing",
+            "aliases": []
+          },
+          {
+            "label": "Salsa verde dressing",
+            "aliases": []
+          },
+          {
+            "label": "Basil vinaigrette",
+            "aliases": []
+          },
+          {
+            "label": "Pesto dressing",
+            "aliases": []
+          },
+          {
+            "label": "Mint yogurt dressing",
+            "aliases": []
+          },
+          {
+            "label": "Dill dressing",
+            "aliases": []
+          },
+          {
+            "label": "Cucumber dill dressing",
+            "aliases": []
+          },
+          {
+            "label": "Tzatziki dressing",
+            "aliases": [
+              "Tzatziki"
+            ]
+          },
+          {
+            "label": "Lemon dill dressing",
+            "aliases": []
+          },
+          {
+            "label": "Garlic herb dressing",
+            "aliases": []
+          },
+          {
+            "label": "Roasted garlic dressing",
+            "aliases": []
+          },
+          {
+            "label": "Creamy garlic dressing",
+            "aliases": []
+          },
+          {
+            "label": "Lemon anchovy dressing",
+            "aliases": []
+          },
+          {
+            "label": "Lemon caper dressing",
+            "aliases": []
+          },
+          {
+            "label": "Sun-dried tomato dressing",
+            "aliases": []
+          },
+          {
+            "label": "Tomato vinaigrette",
+            "aliases": []
+          },
+          {
+            "label": "Roasted red pepper dressing",
+            "aliases": []
+          },
+          {
+            "label": "Turmeric tahini dressing",
+            "aliases": []
+          },
+          {
+            "label": "Goddess dressing",
+            "aliases": []
+          },
+          {
+            "label": "Annie's Goddess",
+            "aliases": []
+          },
+          {
+            "label": "Bragg vinaigrette",
+            "aliases": []
+          },
+          {
+            "label": "Briannas blush wine vinaigrette",
+            "aliases": []
+          },
+          {
+            "label": "Briannas real French vinaigrette",
+            "aliases": []
+          },
+          {
+            "label": "Ken's Steak House dressing",
+            "aliases": []
+          },
+          {
+            "label": "Wish-Bone Italian",
+            "aliases": []
+          },
+          {
+            "label": "Kraft Zesty Italian",
+            "aliases": []
+          },
+          {
+            "label": "Newman's Own family recipe Italian",
+            "aliases": []
+          },
+          {
+            "label": "Hidden Valley Original Ranch",
+            "aliases": []
+          },
+          {
+            "label": "Marie's chunky blue cheese",
+            "aliases": []
+          },
+          {
+            "label": "Sweet and sour dressing",
+            "aliases": []
+          },
+          {
+            "label": "Orange sesame dressing",
+            "aliases": []
+          },
+          {
+            "label": "Shallot vinaigrette",
+            "aliases": []
+          },
+          {
+            "label": "Walnut oil vinaigrette",
+            "aliases": []
+          },
+          {
+            "label": "Hazelnut vinaigrette",
+            "aliases": []
+          },
+          {
+            "label": "Truffle vinaigrette",
+            "aliases": []
+          },
+          {
+            "label": "Date tahini dressing",
+            "aliases": []
+          },
+          {
+            "label": "Black garlic vinaigrette",
+            "aliases": []
+          }
+        ],
+        "85": [
+          {
+            "label": "Sauce gribiche",
+            "aliases": []
+          },
+          {
+            "label": "Sauce ravigote",
+            "aliases": []
+          },
+          {
+            "label": "Salatsauce Sylter Art",
+            "aliases": []
+          },
+          {
+            "label": "Ume shiso dressing",
+            "aliases": []
+          },
+          {
+            "label": "Karashi su miso",
+            "aliases": []
+          },
+          {
+            "label": "Su miso",
+            "aliases": [
+              "Sumiso"
+            ]
+          },
+          {
+            "label": "Nanbanzu",
+            "aliases": []
+          },
+          {
+            "label": "Amazu dressing",
+            "aliases": []
+          },
+          {
+            "label": "Tamarind dressing",
+            "aliases": []
+          },
+          {
+            "label": "Caprese dressing",
+            "aliases": []
+          },
+          {
+            "label": "Saffron vinaigrette",
+            "aliases": []
+          }
+        ],
+        "100": [
+          {
+            "label": "Mayfair dressing",
+            "aliases": []
+          }
+        ]
       }
     },
     {
@@ -7404,29 +8154,902 @@
       "format": "whole-concept",
       "rationale": "An accessible everyday food question with common starting answers and genuinely different traditional or commercial examples in its rarer tiers; no title-word or tag combinations.",
       "familiar": [
-        "Neapolitan pizza",
-        "New York-style pizza",
-        "Chicago deep-dish pizza",
-        "Sicilian pizza",
-        "Detroit-style pizza",
-        "Margherita pizza"
+        "Neapolitan",
+        "New York style",
+        "Chicago deep dish",
+        "Sicilian",
+        "Detroit style",
+        "Margherita",
+        "Pepperoni pizza",
+        "Hawaiian pizza",
+        "Meat lovers pizza",
+        "Supreme pizza",
+        "White pizza",
+        "BBQ chicken pizza",
+        "Buffalo chicken pizza",
+        "California style",
+        "New Haven style",
+        "St Louis style",
+        "Roman pizza",
+        "Pizza al taglio",
+        "Pizza bianca",
+        "Grandma pizza",
+        "Greek pizza",
+        "Stuffed crust pizza",
+        "Thin crust pizza",
+        "Pan pizza",
+        "French bread pizza",
+        "Tavern style",
+        "Quad Cities style",
+        "Trenton tomato pie",
+        "Pizza fritta",
+        "Pizza alla pala"
       ],
       "exclude": [
-        "Spaghetti bolognese",
-        "Hamburger"
+        "Hamburger",
+        "Spaghetti bolognese"
       ],
       "references": [
         "https://www.pizzanapoletana.org/en/ricetta_pizza_napoletana",
         "https://www.pizzanapoletana.org/en/",
         "https://www.pizzahut.com/menu/pizza",
-        "https://www.dominos.com/en/pages/order/menu"
+        "https://www.dominos.com/en/pages/order/menu",
+        "https://www.goodnes.com/stouffers/products/french-bread-pizza/"
       ],
       "answers": {
-        "10": "Margherita~Margherita pizza|Pepperoni pizza|Cheese pizza~Plain pizza|Hawaiian pizza|Meat lovers pizza~Meat lover's pizza|Supreme pizza|Vegetarian pizza~Veggie pizza|BBQ chicken pizza|Neapolitan pizza~Napoletana|New York-style pizza~New York pizza|Chicago deep-dish pizza~Deep dish pizza|Detroit-style pizza~Detroit pizza",
-        "30": "Sicilian pizza|Pan pizza|Thin-crust pizza~Thin crust|Stuffed-crust pizza~Stuffed crust|Chicago stuffed pizza|Chicago tavern-style pizza~Tavern pizza|White pizza~Pizza bianca|Four cheese pizza~Quattro formaggi|Four seasons pizza~Quattro stagioni|Marinara pizza~Pizza marinara|Diavola pizza~Pizza diavola|Capricciosa|Pizza romana|Roman pizza|Pizza al taglio|Pizza al metro|Pizza alla pala|Pinsa|Pizza fritta|Calzone|Stromboli|Garlic pizza|Buffalo chicken pizza|Barbecue pizza~BBQ pizza|Breakfast pizza|Dessert pizza|Chocolate pizza~Pizza de chocolate|Nutella pizza|Seafood pizza|Clam pizza~White clam pizza|Potato pizza|Pizza ai funghi~Mushroom pizza|Prosciutto pizza|Prosciutto e funghi|Sausage pizza|Chicken bacon ranch pizza|Pizza al pesto~Pesto pizza|Pizza alla boscaiola",
-        "60": "New Haven-style pizza~Apizza|St. Louis-style pizza|California-style pizza|Colorado-style pizza|Greek pizza|Rhode Island pizza strips~Pizza strip|Old Forge pizza|Altoona-style pizza|Pittsburgh-style pizza|Ohio Valley-style pizza|Dayton-style pizza|Brier Hill pizza|Quad City-style pizza|Trenton tomato pie|Tomato pie|Grandma pizza|Grandpa pizza|Brooklyn-style pizza|Utica tomato pie|Buffalo-style pizza|Milwaukee-style pizza|South Shore bar pizza~Bar pizza|New England Greek pizza|Beach pizza|Scachatta|New Mexican pizza|Indian pizza|Tandoori chicken pizza|Chicken tikka pizza|Paneer tikka pizza|Butter chicken pizza|Mexican pizza|Taco pizza|Bacon cheeseburger pizza~Cheeseburger pizza|Canadian pizza~Pizza canadiana|Montreal-style pizza|Windsor-style pizza|Halifax donair pizza~Donair pizza|Poutine pizza|Australian pizza~Aussie pizza|Portuguese pizza~Pizza portuguesa|Catupiry pizza|Chicken catupiry pizza|Romeu e Julieta pizza|Banana pizza|Banana curry pizza|Kebab pizza|Africana pizza|Vesuvio pizza|Pizza bussola|Pizza al tonno~Tuna pizza|Tonno e cipolla|Pizza Napoli|Pizza pugliese|Pizza alla parmigiana|Pizza prosciutto e rucola|Pizza bufalina|Pizza ortolana|Pizza rustica|Pizza montanara~Montanara|Pizza alla norma|Pizza caprese|Pizza alla carbonara~Carbonara pizza|Pizza amatriciana|Salsiccia e friarielli|Pizza ai frutti di mare~Frutti di mare pizza|Pizza alle vongole|Pizza ai gamberetti|Pizza patate e rosmarino|Pizza ai porcini|Pizza al tartufo~Truffle pizza|Pizza gorgonzola e pere|Pizza speck e brie|Pizza valtellinese|Pizza pistacchio e mortadella|Pizza zucchine e gamberetti|Pizza valdostana|Pizza di scarola|Sfincione|Sfincione bagherese|Rianata~Pizza rianata|Scaccia~Scacce|Scacciata|Schiacciata catanese|Sardenaira~Pizza d'Andrea|Pizza Rossini~Rossini pizza|Pizza al padellino~Pizza al tegamino|Pizza parigina~Parigina|Pizza wurstel e patatine|Pizza a portafoglio~Pizza a libretto|Pizza tonda romana|Pizza in teglia|Pizza contemporanea|Teriyaki chicken pizza|Mentaiko pizza|Bulgogi pizza|Sweet potato pizza~Goguma pizza|Kimchi pizza|Durian pizza|Chili crab pizza|Sambal pizza|Satay pizza|Rendang pizza|Tom yum pizza|Laksa pizza|Shawarma pizza|Sujuk pizza~Sucuk pizza|Gozitan ftira~Ftira pizza|Argentine pizza|Pizza de cancha|Pizza a caballo|Fugazza|Fugazzeta|Fugazzeta rellena|Pizza napolitana argentina|Pizza con palmitos|Pizza de jamón y morrones|Pizza de roquefort|Pizza calabresa|Pizza frango com catupiry|Pizza doce|Pizza de brigadeiro|Pizza de doce de leite",
-        "85": "Pizza scima|Pizza e foje|Pizza cilentana|Pizzolo~Pizzolo di Sortino|Pizzetta sarda|Pizzetta cagliaritana|Mastunicola~Pizza alla mastunicola|Pizza tabisca|Pizza nel ruoto",
-        "100": "Faccia di vecchia"
+        "10": [
+          {
+            "label": "Margherita",
+            "aliases": [
+              "Margherita pizza"
+            ]
+          },
+          {
+            "label": "Pepperoni pizza",
+            "aliases": []
+          },
+          {
+            "label": "Cheese pizza",
+            "aliases": [
+              "Plain pizza"
+            ]
+          },
+          {
+            "label": "Hawaiian pizza",
+            "aliases": []
+          },
+          {
+            "label": "Meat lovers pizza",
+            "aliases": [
+              "Meat lover's pizza"
+            ]
+          },
+          {
+            "label": "Supreme pizza",
+            "aliases": []
+          },
+          {
+            "label": "Vegetarian pizza",
+            "aliases": [
+              "Veggie pizza"
+            ]
+          },
+          {
+            "label": "BBQ chicken pizza",
+            "aliases": []
+          },
+          {
+            "label": "Neapolitan pizza",
+            "aliases": [
+              "Napoletana",
+              "Neapolitan"
+            ]
+          },
+          {
+            "label": "New York-style pizza",
+            "aliases": [
+              "New York pizza",
+              "New York style"
+            ]
+          },
+          {
+            "label": "Chicago deep-dish pizza",
+            "aliases": [
+              "Chicago deep dish",
+              "Deep dish pizza"
+            ]
+          },
+          {
+            "label": "Detroit-style pizza",
+            "aliases": [
+              "Detroit pizza",
+              "Detroit style"
+            ]
+          }
+        ],
+        "30": [
+          {
+            "label": "Sicilian pizza",
+            "aliases": [
+              "Sicilian"
+            ]
+          },
+          {
+            "label": "Pan pizza",
+            "aliases": []
+          },
+          {
+            "label": "Thin-crust pizza",
+            "aliases": [
+              "Thin crust"
+            ]
+          },
+          {
+            "label": "Stuffed-crust pizza",
+            "aliases": [
+              "Stuffed crust"
+            ]
+          },
+          {
+            "label": "Chicago stuffed pizza",
+            "aliases": []
+          },
+          {
+            "label": "Chicago tavern-style pizza",
+            "aliases": [
+              "Tavern pizza",
+              "Tavern style"
+            ]
+          },
+          {
+            "label": "White pizza",
+            "aliases": [
+              "Pizza bianca"
+            ]
+          },
+          {
+            "label": "Four cheese pizza",
+            "aliases": [
+              "Quattro formaggi"
+            ]
+          },
+          {
+            "label": "Four seasons pizza",
+            "aliases": [
+              "Quattro stagioni"
+            ]
+          },
+          {
+            "label": "Marinara pizza",
+            "aliases": [
+              "Pizza marinara"
+            ]
+          },
+          {
+            "label": "Diavola pizza",
+            "aliases": [
+              "Pizza diavola"
+            ]
+          },
+          {
+            "label": "Capricciosa",
+            "aliases": []
+          },
+          {
+            "label": "Pizza romana",
+            "aliases": []
+          },
+          {
+            "label": "Roman pizza",
+            "aliases": []
+          },
+          {
+            "label": "Pizza al taglio",
+            "aliases": []
+          },
+          {
+            "label": "Pizza al metro",
+            "aliases": []
+          },
+          {
+            "label": "Pizza alla pala",
+            "aliases": []
+          },
+          {
+            "label": "Pinsa",
+            "aliases": []
+          },
+          {
+            "label": "Pizza fritta",
+            "aliases": []
+          },
+          {
+            "label": "Calzone",
+            "aliases": []
+          },
+          {
+            "label": "Stromboli",
+            "aliases": []
+          },
+          {
+            "label": "Garlic pizza",
+            "aliases": []
+          },
+          {
+            "label": "Buffalo chicken pizza",
+            "aliases": []
+          },
+          {
+            "label": "Barbecue pizza",
+            "aliases": [
+              "BBQ pizza"
+            ]
+          },
+          {
+            "label": "Breakfast pizza",
+            "aliases": []
+          },
+          {
+            "label": "Dessert pizza",
+            "aliases": []
+          },
+          {
+            "label": "Chocolate pizza",
+            "aliases": [
+              "Pizza de chocolate"
+            ]
+          },
+          {
+            "label": "Nutella pizza",
+            "aliases": []
+          },
+          {
+            "label": "Seafood pizza",
+            "aliases": []
+          },
+          {
+            "label": "Clam pizza",
+            "aliases": [
+              "White clam pizza"
+            ]
+          },
+          {
+            "label": "Potato pizza",
+            "aliases": []
+          },
+          {
+            "label": "Pizza ai funghi",
+            "aliases": [
+              "Mushroom pizza"
+            ]
+          },
+          {
+            "label": "Prosciutto pizza",
+            "aliases": []
+          },
+          {
+            "label": "Prosciutto e funghi",
+            "aliases": []
+          },
+          {
+            "label": "Sausage pizza",
+            "aliases": []
+          },
+          {
+            "label": "Chicken bacon ranch pizza",
+            "aliases": []
+          },
+          {
+            "label": "Pizza al pesto",
+            "aliases": [
+              "Pesto pizza"
+            ]
+          },
+          {
+            "label": "Pizza alla boscaiola",
+            "aliases": []
+          },
+          {
+            "label": "French bread pizza",
+            "aliases": []
+          }
+        ],
+        "60": [
+          {
+            "label": "New Haven-style pizza",
+            "aliases": [
+              "Apizza",
+              "New Haven style"
+            ]
+          },
+          {
+            "label": "St. Louis-style pizza",
+            "aliases": [
+              "St Louis style"
+            ]
+          },
+          {
+            "label": "California-style pizza",
+            "aliases": [
+              "California style"
+            ]
+          },
+          {
+            "label": "Colorado-style pizza",
+            "aliases": []
+          },
+          {
+            "label": "Greek pizza",
+            "aliases": []
+          },
+          {
+            "label": "Rhode Island pizza strips",
+            "aliases": [
+              "Pizza strip"
+            ]
+          },
+          {
+            "label": "Old Forge pizza",
+            "aliases": []
+          },
+          {
+            "label": "Altoona-style pizza",
+            "aliases": []
+          },
+          {
+            "label": "Pittsburgh-style pizza",
+            "aliases": []
+          },
+          {
+            "label": "Ohio Valley-style pizza",
+            "aliases": []
+          },
+          {
+            "label": "Dayton-style pizza",
+            "aliases": []
+          },
+          {
+            "label": "Brier Hill pizza",
+            "aliases": []
+          },
+          {
+            "label": "Quad City-style pizza",
+            "aliases": [
+              "Quad Cities style",
+              "Quad Cities-style pizza"
+            ]
+          },
+          {
+            "label": "Trenton tomato pie",
+            "aliases": []
+          },
+          {
+            "label": "Tomato pie",
+            "aliases": []
+          },
+          {
+            "label": "Grandma pizza",
+            "aliases": []
+          },
+          {
+            "label": "Grandpa pizza",
+            "aliases": []
+          },
+          {
+            "label": "Brooklyn-style pizza",
+            "aliases": []
+          },
+          {
+            "label": "Utica tomato pie",
+            "aliases": []
+          },
+          {
+            "label": "Buffalo-style pizza",
+            "aliases": []
+          },
+          {
+            "label": "Milwaukee-style pizza",
+            "aliases": []
+          },
+          {
+            "label": "South Shore bar pizza",
+            "aliases": [
+              "Bar pizza"
+            ]
+          },
+          {
+            "label": "New England Greek pizza",
+            "aliases": []
+          },
+          {
+            "label": "Beach pizza",
+            "aliases": []
+          },
+          {
+            "label": "Scachatta",
+            "aliases": []
+          },
+          {
+            "label": "New Mexican pizza",
+            "aliases": []
+          },
+          {
+            "label": "Indian pizza",
+            "aliases": []
+          },
+          {
+            "label": "Tandoori chicken pizza",
+            "aliases": []
+          },
+          {
+            "label": "Chicken tikka pizza",
+            "aliases": []
+          },
+          {
+            "label": "Paneer tikka pizza",
+            "aliases": []
+          },
+          {
+            "label": "Butter chicken pizza",
+            "aliases": []
+          },
+          {
+            "label": "Mexican pizza",
+            "aliases": []
+          },
+          {
+            "label": "Taco pizza",
+            "aliases": []
+          },
+          {
+            "label": "Bacon cheeseburger pizza",
+            "aliases": [
+              "Cheeseburger pizza"
+            ]
+          },
+          {
+            "label": "Canadian pizza",
+            "aliases": [
+              "Pizza canadiana"
+            ]
+          },
+          {
+            "label": "Montreal-style pizza",
+            "aliases": []
+          },
+          {
+            "label": "Windsor-style pizza",
+            "aliases": []
+          },
+          {
+            "label": "Halifax donair pizza",
+            "aliases": [
+              "Donair pizza"
+            ]
+          },
+          {
+            "label": "Poutine pizza",
+            "aliases": []
+          },
+          {
+            "label": "Australian pizza",
+            "aliases": [
+              "Aussie pizza"
+            ]
+          },
+          {
+            "label": "Portuguese pizza",
+            "aliases": [
+              "Pizza portuguesa"
+            ]
+          },
+          {
+            "label": "Catupiry pizza",
+            "aliases": []
+          },
+          {
+            "label": "Chicken catupiry pizza",
+            "aliases": []
+          },
+          {
+            "label": "Romeu e Julieta pizza",
+            "aliases": []
+          },
+          {
+            "label": "Banana pizza",
+            "aliases": []
+          },
+          {
+            "label": "Banana curry pizza",
+            "aliases": []
+          },
+          {
+            "label": "Kebab pizza",
+            "aliases": []
+          },
+          {
+            "label": "Africana pizza",
+            "aliases": []
+          },
+          {
+            "label": "Vesuvio pizza",
+            "aliases": []
+          },
+          {
+            "label": "Pizza bussola",
+            "aliases": []
+          },
+          {
+            "label": "Pizza al tonno",
+            "aliases": [
+              "Tuna pizza"
+            ]
+          },
+          {
+            "label": "Tonno e cipolla",
+            "aliases": []
+          },
+          {
+            "label": "Pizza Napoli",
+            "aliases": []
+          },
+          {
+            "label": "Pizza pugliese",
+            "aliases": []
+          },
+          {
+            "label": "Pizza alla parmigiana",
+            "aliases": []
+          },
+          {
+            "label": "Pizza prosciutto e rucola",
+            "aliases": []
+          },
+          {
+            "label": "Pizza bufalina",
+            "aliases": []
+          },
+          {
+            "label": "Pizza ortolana",
+            "aliases": []
+          },
+          {
+            "label": "Pizza rustica",
+            "aliases": []
+          },
+          {
+            "label": "Pizza montanara",
+            "aliases": [
+              "Montanara"
+            ]
+          },
+          {
+            "label": "Pizza alla norma",
+            "aliases": []
+          },
+          {
+            "label": "Pizza caprese",
+            "aliases": []
+          },
+          {
+            "label": "Pizza alla carbonara",
+            "aliases": [
+              "Carbonara pizza"
+            ]
+          },
+          {
+            "label": "Pizza amatriciana",
+            "aliases": []
+          },
+          {
+            "label": "Salsiccia e friarielli",
+            "aliases": []
+          },
+          {
+            "label": "Pizza ai frutti di mare",
+            "aliases": [
+              "Frutti di mare pizza"
+            ]
+          },
+          {
+            "label": "Pizza alle vongole",
+            "aliases": []
+          },
+          {
+            "label": "Pizza ai gamberetti",
+            "aliases": []
+          },
+          {
+            "label": "Pizza patate e rosmarino",
+            "aliases": []
+          },
+          {
+            "label": "Pizza ai porcini",
+            "aliases": []
+          },
+          {
+            "label": "Pizza al tartufo",
+            "aliases": [
+              "Truffle pizza"
+            ]
+          },
+          {
+            "label": "Pizza gorgonzola e pere",
+            "aliases": []
+          },
+          {
+            "label": "Pizza speck e brie",
+            "aliases": []
+          },
+          {
+            "label": "Pizza valtellinese",
+            "aliases": []
+          },
+          {
+            "label": "Pizza pistacchio e mortadella",
+            "aliases": []
+          },
+          {
+            "label": "Pizza zucchine e gamberetti",
+            "aliases": []
+          },
+          {
+            "label": "Pizza valdostana",
+            "aliases": []
+          },
+          {
+            "label": "Pizza di scarola",
+            "aliases": []
+          },
+          {
+            "label": "Sfincione",
+            "aliases": []
+          },
+          {
+            "label": "Sfincione bagherese",
+            "aliases": []
+          },
+          {
+            "label": "Rianata",
+            "aliases": [
+              "Pizza rianata"
+            ]
+          },
+          {
+            "label": "Scaccia",
+            "aliases": [
+              "Scacce"
+            ]
+          },
+          {
+            "label": "Scacciata",
+            "aliases": []
+          },
+          {
+            "label": "Schiacciata catanese",
+            "aliases": []
+          },
+          {
+            "label": "Sardenaira",
+            "aliases": [
+              "Pizza d'Andrea"
+            ]
+          },
+          {
+            "label": "Pizza Rossini",
+            "aliases": [
+              "Rossini pizza"
+            ]
+          },
+          {
+            "label": "Pizza al padellino",
+            "aliases": [
+              "Pizza al tegamino"
+            ]
+          },
+          {
+            "label": "Pizza parigina",
+            "aliases": [
+              "Parigina"
+            ]
+          },
+          {
+            "label": "Pizza wurstel e patatine",
+            "aliases": []
+          },
+          {
+            "label": "Pizza a portafoglio",
+            "aliases": [
+              "Pizza a libretto"
+            ]
+          },
+          {
+            "label": "Pizza tonda romana",
+            "aliases": []
+          },
+          {
+            "label": "Pizza in teglia",
+            "aliases": []
+          },
+          {
+            "label": "Pizza contemporanea",
+            "aliases": []
+          },
+          {
+            "label": "Teriyaki chicken pizza",
+            "aliases": []
+          },
+          {
+            "label": "Mentaiko pizza",
+            "aliases": []
+          },
+          {
+            "label": "Bulgogi pizza",
+            "aliases": []
+          },
+          {
+            "label": "Sweet potato pizza",
+            "aliases": [
+              "Goguma pizza"
+            ]
+          },
+          {
+            "label": "Kimchi pizza",
+            "aliases": []
+          },
+          {
+            "label": "Durian pizza",
+            "aliases": []
+          },
+          {
+            "label": "Chili crab pizza",
+            "aliases": []
+          },
+          {
+            "label": "Sambal pizza",
+            "aliases": []
+          },
+          {
+            "label": "Satay pizza",
+            "aliases": []
+          },
+          {
+            "label": "Rendang pizza",
+            "aliases": []
+          },
+          {
+            "label": "Tom yum pizza",
+            "aliases": []
+          },
+          {
+            "label": "Laksa pizza",
+            "aliases": []
+          },
+          {
+            "label": "Shawarma pizza",
+            "aliases": []
+          },
+          {
+            "label": "Sujuk pizza",
+            "aliases": [
+              "Sucuk pizza"
+            ]
+          },
+          {
+            "label": "Gozitan ftira",
+            "aliases": [
+              "Ftira pizza"
+            ]
+          },
+          {
+            "label": "Argentine pizza",
+            "aliases": []
+          },
+          {
+            "label": "Pizza de cancha",
+            "aliases": []
+          },
+          {
+            "label": "Pizza a caballo",
+            "aliases": []
+          },
+          {
+            "label": "Fugazza",
+            "aliases": []
+          },
+          {
+            "label": "Fugazzeta",
+            "aliases": []
+          },
+          {
+            "label": "Fugazzeta rellena",
+            "aliases": []
+          },
+          {
+            "label": "Pizza napolitana argentina",
+            "aliases": []
+          },
+          {
+            "label": "Pizza con palmitos",
+            "aliases": []
+          },
+          {
+            "label": "Pizza de jamón y morrones",
+            "aliases": []
+          },
+          {
+            "label": "Pizza de roquefort",
+            "aliases": []
+          },
+          {
+            "label": "Pizza calabresa",
+            "aliases": []
+          },
+          {
+            "label": "Pizza frango com catupiry",
+            "aliases": []
+          },
+          {
+            "label": "Pizza doce",
+            "aliases": []
+          },
+          {
+            "label": "Pizza de brigadeiro",
+            "aliases": []
+          },
+          {
+            "label": "Pizza de doce de leite",
+            "aliases": []
+          }
+        ],
+        "85": [
+          {
+            "label": "Pizza scima",
+            "aliases": []
+          },
+          {
+            "label": "Pizza e foje",
+            "aliases": []
+          },
+          {
+            "label": "Pizza cilentana",
+            "aliases": []
+          },
+          {
+            "label": "Pizzolo",
+            "aliases": [
+              "Pizzolo di Sortino"
+            ]
+          },
+          {
+            "label": "Pizzetta sarda",
+            "aliases": []
+          },
+          {
+            "label": "Pizzetta cagliaritana",
+            "aliases": []
+          },
+          {
+            "label": "Mastunicola",
+            "aliases": [
+              "Pizza alla mastunicola"
+            ]
+          },
+          {
+            "label": "Pizza tabisca",
+            "aliases": []
+          },
+          {
+            "label": "Pizza nel ruoto",
+            "aliases": []
+          }
+        ],
+        "100": [
+          {
+            "label": "Faccia di vecchia",
+            "aliases": []
+          }
+        ]
       }
     },
     {
@@ -7444,7 +9067,32 @@
         "Dragon roll",
         "Nigiri",
         "Maki",
-        "Temaki"
+        "Temaki",
+        "Uramaki",
+        "Futomaki",
+        "Hosomaki",
+        "Temari",
+        "Chirashi",
+        "Inari",
+        "Oshi sushi",
+        "Battera",
+        "Tekka maki",
+        "Kappa maki",
+        "Negitoro roll",
+        "Philadelphia roll",
+        "Rainbow roll",
+        "Spider roll",
+        "Volcano roll",
+        "Alaska roll",
+        "Boston roll",
+        "Caterpillar roll",
+        "Avocado roll",
+        "Cucumber roll",
+        "Eel avocado roll",
+        "Salmon skin roll",
+        "Dynamite roll",
+        "Shrimp tempura roll",
+        "Gunkan"
       ],
       "exclude": [
         "Sashimi",
@@ -7453,14 +9101,942 @@
       "references": [
         "https://www.kikkoman.com/en/cookbook/glossary/sushi.html",
         "https://www.kikkoman.com/en/culture/foodforum/the-japanese-table/38-3_sushi.html",
-        "https://www.japan.travel/en/guide/sushi/"
+        "https://www.japan.travel/en/guide/sushi-in-japan/",
+        "https://www.maff.go.jp/e/policies/market/k_ryouri/search_menu/5144/index.html"
       ],
       "answers": {
-        "10": "California roll|Spicy tuna roll|Dragon roll|Rainbow roll|Philadelphia roll~Philly roll|Nigiri~Nigirizushi|Maki~Makizushi|Temaki~Hand roll|Salmon sushi|Tuna sushi",
-        "30": "Uramaki~Inside-out roll|Hosomaki~Thin roll|Futomaki~Thick roll|Gunkanmaki~Gunkan~Battleship sushi|Inari sushi~Inarizushi|Chirashi~Chirashizushi|Oshi sushi~Oshizushi~Pressed sushi|Temari sushi~Temarizushi|Sushi burrito|Sushi donut~Sushi doughnut|Sushi cake|Sushi sandwich~Onigirazu|Baked sushi~Sushi bake|Salmon avocado roll|Tuna avocado roll|Cucumber roll~Kappa maki~Kappamaki|Avocado roll|Vegetable roll|Asparagus roll|Sweet potato roll|Shrimp tempura roll|Spider roll|Eel roll|Dynamite roll|Volcano roll|Boston roll|Alaska roll~Alaskan roll|Salmon skin roll|Spicy salmon roll|Spicy crab roll|Spicy yellowtail roll|Negihama|Negitoro~Negitoro roll|Tekka maki~Tekkamaki|Unagi nigiri|Salmon nigiri|Tuna nigiri|Shrimp nigiri|Tamago sushi~Tamago nigiri|Egg sushi|Ikura sushi|Uni sushi|Yellowtail nigiri|Scallop nigiri|Octopus nigiri|Squid nigiri|Crab nigiri|Aburi sushi~Seared sushi",
-        "60": "Narezushi~Fermented sushi|Funazushi|Edomae sushi|Kakinoha sushi~Kakinohazushi|Battera|Saba sushi~Sabazushi|Hako sushi~Hakozushi|Bo sushi~Bozushi|Masu sushi~Masuzushi|Sasa sushi~Sasazushi|Hoba sushi~Hobazushi|Iwakuni sushi~Iwakunizushi|Bara sushi~Barazushi|Kokera sushi~Kokerazushi|Aji sushi|Sawara sushi|Kohada sushi|Tai sushi|Anago sushi|Amaebi nigiri|Botan ebi sushi|Kuruma ebi sushi|Kani nigiri|Hokkigai sushi|Akagai sushi|Mirugai sushi|Hotate sushi|Awabi sushi|Shako sushi|Hotaruika sushi|Shirauo sushi|Shirasu sushi|Kazunoko sushi|Tobiko sushi|Masago sushi|Tarako sushi|Mentaiko sushi|Buri sushi|Hamachi sushi|Kanpachi sushi|Hiramasa sushi|Suzuki sushi|Hirame sushi|Engawa sushi|Sanma sushi|Iwashi sushi|Nishin sushi|Maguro sushi|Akami sushi|Chutoro sushi|Otoro sushi|Toro nigiri|Negitoro gunkan|Corn gunkan|Tuna mayo gunkan|Salmon roe gunkan|Uni gunkan|Kanikama sushi~Imitation crab sushi|Crab salad gunkan|Tuna salad gunkan|Natto maki~Nattomaki|Oshinko roll~Oshinkomaki|Ume shiso roll|Shiso roll|Kampyo roll~Kanpyomaki|Takuan roll|Yamagobo roll|Ehomaki~Lucky direction roll|Date maki~Datemakizushi|Tamago maki|Avocado cucumber roll|Carrot roll|Mushroom roll|Shiitake roll|Vegan sushi|Tofu nigiri|Tomato sushi|Eggplant sushi~Aubergine sushi|Okra sushi|Shiitake nigiri|Avocado nigiri|Seattle roll|New York roll|Texas roll|Las Vegas roll|Crunchy roll~Crunch roll|Tiger roll|Golden dragon roll|Red dragon roll|Green dragon roll|Black dragon roll|Caterpillar roll|Tempura roll|Tempura California roll|Sakura roll|Cherry blossom roll|Sunset roll|Firecracker roll|Snow crab roll|Snow mountain roll|Kamikaze roll|Samurai roll|Ninja roll|King crab roll|Lobster tempura roll|Surf and turf roll|Cowboy roll|Chicken teriyaki roll|Chicken katsu roll|Mexican roll|Jalapeno roll|Spicy scallop roll|Spicy shrimp roll|Calamari roll|Fried oyster roll|Soft shell crab roll|Eel avocado roll~Unagi avocado roll|Eel cucumber roll~Unakyu~Unakyu roll|Naruto roll~Narutomaki sushi|No-rice sushi roll|Soy paper roll|California temaki|Spicy tuna temaki|Salmon temaki|Negitoro temaki|Natto temaki|Unagi temaki|Kappa temaki|Crispy rice sushi|Spicy tuna crispy rice|Salmon crispy rice|Gomoku chirashi|Bara chirashi",
-        "85": "Tekone sushi~Tekonezushi|Daito sushi~Daitozushi|Mehari sushi~Meharizushi|Izushi|Kabura sushi~Kaburazushi|Hatahata sushi~Hatahatazushi|Ayu narezushi|Sugatazushi|Shima sushi~Shimazushi|Bekko sushi~Bekkozushi|Gozaemon sushi",
-        "100": "Suko sushi~Sukozushi"
+        "10": [
+          {
+            "label": "California roll",
+            "aliases": []
+          },
+          {
+            "label": "Spicy tuna roll",
+            "aliases": []
+          },
+          {
+            "label": "Dragon roll",
+            "aliases": []
+          },
+          {
+            "label": "Rainbow roll",
+            "aliases": []
+          },
+          {
+            "label": "Philadelphia roll",
+            "aliases": [
+              "Philly roll"
+            ]
+          },
+          {
+            "label": "Nigiri",
+            "aliases": [
+              "Nigirizushi"
+            ]
+          },
+          {
+            "label": "Maki",
+            "aliases": [
+              "Makizushi"
+            ]
+          },
+          {
+            "label": "Temaki",
+            "aliases": [
+              "Hand roll"
+            ]
+          },
+          {
+            "label": "Salmon sushi",
+            "aliases": []
+          },
+          {
+            "label": "Tuna sushi",
+            "aliases": []
+          }
+        ],
+        "30": [
+          {
+            "label": "Uramaki",
+            "aliases": [
+              "Inside-out roll"
+            ]
+          },
+          {
+            "label": "Hosomaki",
+            "aliases": [
+              "Thin roll"
+            ]
+          },
+          {
+            "label": "Futomaki",
+            "aliases": [
+              "Thick roll"
+            ]
+          },
+          {
+            "label": "Gunkanmaki",
+            "aliases": [
+              "Gunkan",
+              "Battleship sushi"
+            ]
+          },
+          {
+            "label": "Inari sushi",
+            "aliases": [
+              "Inari",
+              "Inari-zushi",
+              "Inarizushi"
+            ]
+          },
+          {
+            "label": "Chirashi",
+            "aliases": [
+              "Chirashizushi"
+            ]
+          },
+          {
+            "label": "Oshi sushi",
+            "aliases": [
+              "Oshizushi",
+              "Pressed sushi"
+            ]
+          },
+          {
+            "label": "Temari sushi",
+            "aliases": [
+              "Temari",
+              "Temari-zushi",
+              "Temarizushi"
+            ]
+          },
+          {
+            "label": "Sushi burrito",
+            "aliases": []
+          },
+          {
+            "label": "Sushi donut",
+            "aliases": [
+              "Sushi doughnut"
+            ]
+          },
+          {
+            "label": "Sushi cake",
+            "aliases": []
+          },
+          {
+            "label": "Sushi sandwich",
+            "aliases": [
+              "Onigirazu"
+            ]
+          },
+          {
+            "label": "Baked sushi",
+            "aliases": [
+              "Sushi bake"
+            ]
+          },
+          {
+            "label": "Salmon avocado roll",
+            "aliases": []
+          },
+          {
+            "label": "Tuna avocado roll",
+            "aliases": []
+          },
+          {
+            "label": "Cucumber roll",
+            "aliases": [
+              "Kappa maki",
+              "Kappamaki"
+            ]
+          },
+          {
+            "label": "Avocado roll",
+            "aliases": []
+          },
+          {
+            "label": "Vegetable roll",
+            "aliases": []
+          },
+          {
+            "label": "Asparagus roll",
+            "aliases": []
+          },
+          {
+            "label": "Sweet potato roll",
+            "aliases": []
+          },
+          {
+            "label": "Shrimp tempura roll",
+            "aliases": []
+          },
+          {
+            "label": "Spider roll",
+            "aliases": []
+          },
+          {
+            "label": "Eel roll",
+            "aliases": []
+          },
+          {
+            "label": "Dynamite roll",
+            "aliases": []
+          },
+          {
+            "label": "Volcano roll",
+            "aliases": []
+          },
+          {
+            "label": "Boston roll",
+            "aliases": []
+          },
+          {
+            "label": "Alaska roll",
+            "aliases": [
+              "Alaskan roll"
+            ]
+          },
+          {
+            "label": "Salmon skin roll",
+            "aliases": []
+          },
+          {
+            "label": "Spicy salmon roll",
+            "aliases": []
+          },
+          {
+            "label": "Spicy crab roll",
+            "aliases": []
+          },
+          {
+            "label": "Spicy yellowtail roll",
+            "aliases": []
+          },
+          {
+            "label": "Negihama",
+            "aliases": []
+          },
+          {
+            "label": "Negitoro",
+            "aliases": [
+              "Negitoro roll"
+            ]
+          },
+          {
+            "label": "Tekka maki",
+            "aliases": [
+              "Tekkamaki"
+            ]
+          },
+          {
+            "label": "Unagi nigiri",
+            "aliases": []
+          },
+          {
+            "label": "Salmon nigiri",
+            "aliases": []
+          },
+          {
+            "label": "Tuna nigiri",
+            "aliases": []
+          },
+          {
+            "label": "Shrimp nigiri",
+            "aliases": []
+          },
+          {
+            "label": "Tamago sushi",
+            "aliases": [
+              "Tamago nigiri"
+            ]
+          },
+          {
+            "label": "Egg sushi",
+            "aliases": []
+          },
+          {
+            "label": "Ikura sushi",
+            "aliases": []
+          },
+          {
+            "label": "Uni sushi",
+            "aliases": []
+          },
+          {
+            "label": "Yellowtail nigiri",
+            "aliases": []
+          },
+          {
+            "label": "Scallop nigiri",
+            "aliases": []
+          },
+          {
+            "label": "Octopus nigiri",
+            "aliases": []
+          },
+          {
+            "label": "Squid nigiri",
+            "aliases": []
+          },
+          {
+            "label": "Crab nigiri",
+            "aliases": []
+          },
+          {
+            "label": "Aburi sushi",
+            "aliases": [
+              "Seared sushi"
+            ]
+          }
+        ],
+        "60": [
+          {
+            "label": "Narezushi",
+            "aliases": [
+              "Fermented sushi"
+            ]
+          },
+          {
+            "label": "Funazushi",
+            "aliases": []
+          },
+          {
+            "label": "Edomae sushi",
+            "aliases": []
+          },
+          {
+            "label": "Kakinoha sushi",
+            "aliases": [
+              "Kakinohazushi"
+            ]
+          },
+          {
+            "label": "Battera",
+            "aliases": []
+          },
+          {
+            "label": "Saba sushi",
+            "aliases": [
+              "Sabazushi"
+            ]
+          },
+          {
+            "label": "Hako sushi",
+            "aliases": [
+              "Hakozushi"
+            ]
+          },
+          {
+            "label": "Bo sushi",
+            "aliases": [
+              "Bozushi"
+            ]
+          },
+          {
+            "label": "Masu sushi",
+            "aliases": [
+              "Masuzushi"
+            ]
+          },
+          {
+            "label": "Sasa sushi",
+            "aliases": [
+              "Sasazushi"
+            ]
+          },
+          {
+            "label": "Hoba sushi",
+            "aliases": [
+              "Hobazushi"
+            ]
+          },
+          {
+            "label": "Iwakuni sushi",
+            "aliases": [
+              "Iwakunizushi"
+            ]
+          },
+          {
+            "label": "Bara sushi",
+            "aliases": [
+              "Barazushi"
+            ]
+          },
+          {
+            "label": "Kokera sushi",
+            "aliases": [
+              "Kokerazushi"
+            ]
+          },
+          {
+            "label": "Aji sushi",
+            "aliases": []
+          },
+          {
+            "label": "Sawara sushi",
+            "aliases": []
+          },
+          {
+            "label": "Kohada sushi",
+            "aliases": []
+          },
+          {
+            "label": "Tai sushi",
+            "aliases": []
+          },
+          {
+            "label": "Anago sushi",
+            "aliases": []
+          },
+          {
+            "label": "Amaebi nigiri",
+            "aliases": []
+          },
+          {
+            "label": "Botan ebi sushi",
+            "aliases": []
+          },
+          {
+            "label": "Kuruma ebi sushi",
+            "aliases": []
+          },
+          {
+            "label": "Kani nigiri",
+            "aliases": []
+          },
+          {
+            "label": "Hokkigai sushi",
+            "aliases": []
+          },
+          {
+            "label": "Akagai sushi",
+            "aliases": []
+          },
+          {
+            "label": "Mirugai sushi",
+            "aliases": []
+          },
+          {
+            "label": "Hotate sushi",
+            "aliases": []
+          },
+          {
+            "label": "Awabi sushi",
+            "aliases": []
+          },
+          {
+            "label": "Shako sushi",
+            "aliases": []
+          },
+          {
+            "label": "Hotaruika sushi",
+            "aliases": []
+          },
+          {
+            "label": "Shirauo sushi",
+            "aliases": []
+          },
+          {
+            "label": "Shirasu sushi",
+            "aliases": []
+          },
+          {
+            "label": "Kazunoko sushi",
+            "aliases": []
+          },
+          {
+            "label": "Tobiko sushi",
+            "aliases": []
+          },
+          {
+            "label": "Masago sushi",
+            "aliases": []
+          },
+          {
+            "label": "Tarako sushi",
+            "aliases": []
+          },
+          {
+            "label": "Mentaiko sushi",
+            "aliases": []
+          },
+          {
+            "label": "Buri sushi",
+            "aliases": []
+          },
+          {
+            "label": "Hamachi sushi",
+            "aliases": []
+          },
+          {
+            "label": "Kanpachi sushi",
+            "aliases": []
+          },
+          {
+            "label": "Hiramasa sushi",
+            "aliases": []
+          },
+          {
+            "label": "Suzuki sushi",
+            "aliases": []
+          },
+          {
+            "label": "Hirame sushi",
+            "aliases": []
+          },
+          {
+            "label": "Engawa sushi",
+            "aliases": []
+          },
+          {
+            "label": "Sanma sushi",
+            "aliases": []
+          },
+          {
+            "label": "Iwashi sushi",
+            "aliases": []
+          },
+          {
+            "label": "Nishin sushi",
+            "aliases": []
+          },
+          {
+            "label": "Maguro sushi",
+            "aliases": []
+          },
+          {
+            "label": "Akami sushi",
+            "aliases": []
+          },
+          {
+            "label": "Chutoro sushi",
+            "aliases": []
+          },
+          {
+            "label": "Otoro sushi",
+            "aliases": []
+          },
+          {
+            "label": "Toro nigiri",
+            "aliases": []
+          },
+          {
+            "label": "Negitoro gunkan",
+            "aliases": []
+          },
+          {
+            "label": "Corn gunkan",
+            "aliases": []
+          },
+          {
+            "label": "Tuna mayo gunkan",
+            "aliases": []
+          },
+          {
+            "label": "Salmon roe gunkan",
+            "aliases": []
+          },
+          {
+            "label": "Uni gunkan",
+            "aliases": []
+          },
+          {
+            "label": "Kanikama sushi",
+            "aliases": [
+              "Imitation crab sushi"
+            ]
+          },
+          {
+            "label": "Crab salad gunkan",
+            "aliases": []
+          },
+          {
+            "label": "Tuna salad gunkan",
+            "aliases": []
+          },
+          {
+            "label": "Natto maki",
+            "aliases": [
+              "Nattomaki"
+            ]
+          },
+          {
+            "label": "Oshinko roll",
+            "aliases": [
+              "Oshinkomaki"
+            ]
+          },
+          {
+            "label": "Ume shiso roll",
+            "aliases": []
+          },
+          {
+            "label": "Shiso roll",
+            "aliases": []
+          },
+          {
+            "label": "Kampyo roll",
+            "aliases": [
+              "Kanpyomaki"
+            ]
+          },
+          {
+            "label": "Takuan roll",
+            "aliases": []
+          },
+          {
+            "label": "Yamagobo roll",
+            "aliases": []
+          },
+          {
+            "label": "Ehomaki",
+            "aliases": [
+              "Lucky direction roll"
+            ]
+          },
+          {
+            "label": "Date maki",
+            "aliases": [
+              "Datemakizushi"
+            ]
+          },
+          {
+            "label": "Tamago maki",
+            "aliases": []
+          },
+          {
+            "label": "Avocado cucumber roll",
+            "aliases": []
+          },
+          {
+            "label": "Carrot roll",
+            "aliases": []
+          },
+          {
+            "label": "Mushroom roll",
+            "aliases": []
+          },
+          {
+            "label": "Shiitake roll",
+            "aliases": []
+          },
+          {
+            "label": "Vegan sushi",
+            "aliases": []
+          },
+          {
+            "label": "Tofu nigiri",
+            "aliases": []
+          },
+          {
+            "label": "Tomato sushi",
+            "aliases": []
+          },
+          {
+            "label": "Eggplant sushi",
+            "aliases": [
+              "Aubergine sushi"
+            ]
+          },
+          {
+            "label": "Okra sushi",
+            "aliases": []
+          },
+          {
+            "label": "Shiitake nigiri",
+            "aliases": []
+          },
+          {
+            "label": "Avocado nigiri",
+            "aliases": []
+          },
+          {
+            "label": "Seattle roll",
+            "aliases": []
+          },
+          {
+            "label": "New York roll",
+            "aliases": []
+          },
+          {
+            "label": "Texas roll",
+            "aliases": []
+          },
+          {
+            "label": "Las Vegas roll",
+            "aliases": []
+          },
+          {
+            "label": "Crunchy roll",
+            "aliases": [
+              "Crunch roll"
+            ]
+          },
+          {
+            "label": "Tiger roll",
+            "aliases": []
+          },
+          {
+            "label": "Golden dragon roll",
+            "aliases": []
+          },
+          {
+            "label": "Red dragon roll",
+            "aliases": []
+          },
+          {
+            "label": "Green dragon roll",
+            "aliases": []
+          },
+          {
+            "label": "Black dragon roll",
+            "aliases": []
+          },
+          {
+            "label": "Caterpillar roll",
+            "aliases": []
+          },
+          {
+            "label": "Tempura roll",
+            "aliases": []
+          },
+          {
+            "label": "Tempura California roll",
+            "aliases": []
+          },
+          {
+            "label": "Sakura roll",
+            "aliases": []
+          },
+          {
+            "label": "Cherry blossom roll",
+            "aliases": []
+          },
+          {
+            "label": "Sunset roll",
+            "aliases": []
+          },
+          {
+            "label": "Firecracker roll",
+            "aliases": []
+          },
+          {
+            "label": "Snow crab roll",
+            "aliases": []
+          },
+          {
+            "label": "Snow mountain roll",
+            "aliases": []
+          },
+          {
+            "label": "Kamikaze roll",
+            "aliases": []
+          },
+          {
+            "label": "Samurai roll",
+            "aliases": []
+          },
+          {
+            "label": "Ninja roll",
+            "aliases": []
+          },
+          {
+            "label": "King crab roll",
+            "aliases": []
+          },
+          {
+            "label": "Lobster tempura roll",
+            "aliases": []
+          },
+          {
+            "label": "Surf and turf roll",
+            "aliases": []
+          },
+          {
+            "label": "Cowboy roll",
+            "aliases": []
+          },
+          {
+            "label": "Chicken teriyaki roll",
+            "aliases": []
+          },
+          {
+            "label": "Chicken katsu roll",
+            "aliases": []
+          },
+          {
+            "label": "Mexican roll",
+            "aliases": []
+          },
+          {
+            "label": "Jalapeno roll",
+            "aliases": []
+          },
+          {
+            "label": "Spicy scallop roll",
+            "aliases": []
+          },
+          {
+            "label": "Spicy shrimp roll",
+            "aliases": []
+          },
+          {
+            "label": "Calamari roll",
+            "aliases": []
+          },
+          {
+            "label": "Fried oyster roll",
+            "aliases": []
+          },
+          {
+            "label": "Soft shell crab roll",
+            "aliases": []
+          },
+          {
+            "label": "Eel avocado roll",
+            "aliases": [
+              "Unagi avocado roll"
+            ]
+          },
+          {
+            "label": "Eel cucumber roll",
+            "aliases": [
+              "Unakyu",
+              "Unakyu roll"
+            ]
+          },
+          {
+            "label": "Naruto roll",
+            "aliases": [
+              "Narutomaki sushi"
+            ]
+          },
+          {
+            "label": "No-rice sushi roll",
+            "aliases": []
+          },
+          {
+            "label": "Soy paper roll",
+            "aliases": []
+          },
+          {
+            "label": "California temaki",
+            "aliases": []
+          },
+          {
+            "label": "Spicy tuna temaki",
+            "aliases": []
+          },
+          {
+            "label": "Salmon temaki",
+            "aliases": []
+          },
+          {
+            "label": "Negitoro temaki",
+            "aliases": []
+          },
+          {
+            "label": "Natto temaki",
+            "aliases": []
+          },
+          {
+            "label": "Unagi temaki",
+            "aliases": []
+          },
+          {
+            "label": "Kappa temaki",
+            "aliases": []
+          },
+          {
+            "label": "Crispy rice sushi",
+            "aliases": []
+          },
+          {
+            "label": "Spicy tuna crispy rice",
+            "aliases": []
+          },
+          {
+            "label": "Salmon crispy rice",
+            "aliases": []
+          },
+          {
+            "label": "Gomoku chirashi",
+            "aliases": []
+          },
+          {
+            "label": "Bara chirashi",
+            "aliases": []
+          }
+        ],
+        "85": [
+          {
+            "label": "Tekone sushi",
+            "aliases": [
+              "Tekonezushi"
+            ]
+          },
+          {
+            "label": "Daito sushi",
+            "aliases": [
+              "Daitozushi"
+            ]
+          },
+          {
+            "label": "Mehari sushi",
+            "aliases": [
+              "Meharizushi"
+            ]
+          },
+          {
+            "label": "Izushi",
+            "aliases": []
+          },
+          {
+            "label": "Kabura sushi",
+            "aliases": [
+              "Kaburazushi"
+            ]
+          },
+          {
+            "label": "Hatahata sushi",
+            "aliases": [
+              "Hatahatazushi"
+            ]
+          },
+          {
+            "label": "Ayu narezushi",
+            "aliases": []
+          },
+          {
+            "label": "Sugatazushi",
+            "aliases": []
+          },
+          {
+            "label": "Shima sushi",
+            "aliases": [
+              "Shimazushi"
+            ]
+          },
+          {
+            "label": "Bekko sushi",
+            "aliases": [
+              "Bekkozushi"
+            ]
+          },
+          {
+            "label": "Gozaemon sushi",
+            "aliases": []
+          }
+        ],
+        "100": [
+          {
+            "label": "Suko sushi",
+            "aliases": [
+              "Sukozushi"
+            ]
+          }
+        ]
       }
     },
     {
@@ -7474,28 +10050,2399 @@
       "rationale": "An accessible everyday food question with common starting answers and genuinely different traditional or commercial examples in its rarer tiers; no title-word or tag combinations.",
       "familiar": [
         "Coca-Cola",
+        "Coke",
         "Pepsi",
+        "Diet Coke",
+        "Coke Zero",
         "Sprite",
         "Fanta",
         "Dr Pepper",
-        "Mountain Dew"
+        "Mountain Dew",
+        "7 Up",
+        "Sierra Mist",
+        "Starry",
+        "Mug",
+        "Barq's",
+        "A&W",
+        "Canada Dry",
+        "Schweppes",
+        "Sunkist",
+        "Crush",
+        "Fresca",
+        "Squirt",
+        "Sun Drop",
+        "Cheerwine",
+        "Big Red",
+        "Jarritos",
+        "Faygo",
+        "Jones Soda",
+        "RC Cola",
+        "Shasta",
+        "Inca Kola",
+        "Irn-Bru",
+        "Vimto",
+        "Tango",
+        "Orangina",
+        "Pibb Xtra",
+        "Mello Yello",
+        "Baja Blast",
+        "Seagram's ginger ale",
+        "Vernors",
+        "Dad's Root Beer"
       ],
       "exclude": [
-        "Jack Daniel's",
-        "Budweiser"
+        "Budweiser",
+        "Jack Daniels"
       ],
       "references": [
         "https://www.coca-colacompany.com/brands",
         "https://www.pepsico.com/our-brands",
         "https://www.7up.com/en/products",
-        "https://www.keurigdrpepper.com/en/our-brands"
+        "https://www.keurigdrpepper.com/en/our-brands",
+        "https://www.mugrootbeer.com/",
+        "https://www.mountaindew.com/"
       ],
       "answers": {
-        "10": "Coca-Cola~Coke|Pepsi|Sprite|Fanta|Dr Pepper~Doctor Pepper|Mountain Dew~Mtn Dew|7UP~Seven Up|A&W Root Beer|Sunkist|Crush",
-        "30": "Diet Coke|Coke Zero~Coca-Cola Zero Sugar|Diet Pepsi|Pepsi Max~Pepsi Zero Sugar|Diet Dr Pepper|Dr Pepper Zero Sugar|Canada Dry|Schweppes|Seagram's|Canada Dry Ginger Ale|Bundaberg Ginger Beer|Mug Root Beer|Barq's|A&W Cream Soda|A&W|Stewart's|IBC Root Beer|Virgil's|Boylan|Hank's|Sprecher|Dad's Root Beer|Faygo|Vernors|Big Red|Big Blue|Cheerwine|Sun Drop|Mello Yello|Squirt|Fresca|Tab|RC Cola~Royal Crown Cola|Rite Cola|Shasta|Nehi|Jarritos|Jones Soda|Ting|Irn-Bru~Iron Brew|Vimto|Tango|Lucozade|Orangina|San Pellegrino|Perrier Fusions|Bubly|LaCroix|Spindrift|Zevia|Olipop|Poppi",
-        "60": "Coca-Cola Cherry~Cherry Coke|Coca-Cola Vanilla~Vanilla Coke|Coca-Cola Lime|Coca-Cola Lemon|Coca-Cola Raspberry|Coca-Cola Orange Vanilla|Coca-Cola Orange Cream|Coca-Cola Cinnamon|Coca-Cola with Coffee|Coca-Cola C2|Coca-Cola Life|Coca-Cola Blak|Coca-Cola Black Cherry Vanilla|Coca-Cola Starlight|Coca-Cola Dreamworld|Coca-Cola Byte|Coca-Cola Y3000|Coca-Cola Spiced|Coca-Cola Energy|Coca-Cola Georgia Peach|Coca-Cola California Raspberry|Coca-Cola Clear|Pepsi Wild Cherry|Pepsi Vanilla|Pepsi Twist|Pepsi Blue|Crystal Pepsi|Pepsi Lime|Pepsi Mango|Pepsi Pineapple|Pepsi Peach|Pepsi Nitro~Nitro Pepsi|Pepsi A.M.|Pepsi Next|Pepsi True|Pepsi Fire|Pepsi Ice|Pepsi Holiday Spice|Pepsi Tropical Chill|Pepsi Baobab|Pepsi Pink|Pepsi White|Pepsi Gold|Pepsi Salty Watermelon|Pepsi Ice Cucumber|Pepsi Shiso|Pepsi Mont Blanc|Pepsi Christmas Cola|Diet Rite|Diet RC|Cherry RC|Dr Pepper Cherry|Dr Pepper Cherry Vanilla|Dr Pepper Cream Soda|Dr Pepper Strawberries & Cream|Dr Pepper Creamy Coconut|Dr Pepper Blackberry|Dr Pepper Dark Berry|Dr Pepper Berries & Cream|Dr Pepper Red Fusion|Dr Pepper Ten|Dublin Dr Pepper|Mr Pibb~Pibb Xtra|Pibb Zero|Dr Thunder|Dr Perky|Dr Bob|Dr K|Dr Shasta|Dr. Wells|Mountain Dew Code Red|Mountain Dew Voltage|Mountain Dew Baja Blast|Mountain Dew LiveWire|Mountain Dew White Out|Mountain Dew Pitch Black|Mountain Dew Major Melon|Mountain Dew Spark|Mountain Dew Frost Bite|Mountain Dew Thrashed Apple|Mountain Dew Purple Thunder|Mountain Dew Maui Burst|Mountain Dew Sweet Lightning|Mountain Dew Legend|Mountain Dew Dark Berry Bash|Mountain Dew Cyclone|Mountain Dew Berry Monsoon|Mountain Dew Goji Citrus Strawberry|Mountain Dew Sangrita Blast|Mountain Dew Solar Flare|Mountain Dew Supernova|Mountain Dew Distortion|Mountain Dew Revolution|Mountain Dew Typhoon|Mountain Dew Flamin' Hot|Mountain Dew Gingerbread Snap'd|Mountain Dew Fruit Quake|Mountain Dew Merry Mash-Up|Mountain Dew Holiday Brew|Mountain Dew VooDew|Mountain Dew Liberty Brew|Mountain Dew Dew-S-A|Mountain Dew Summer Freeze|Mountain Dew Freedom Fusion|Mountain Dew Star Spangled Splash|Mountain Dew Liberty Chill|Mountain Dew Infinite Swirl|Mountain Dew Overdrive|Mountain Dew Uproar|Mountain Dew Dark Berry|Mountain Dew Dewshine|Mountain Dew Ice|Mountain Dew Kickstart|Mountain Dew Game Fuel|Mountain Dew Game Fuel Citrus Cherry|Mountain Dew Game Fuel Mystic Punch|Mountain Dew Baja Gold|Mountain Dew Baja Mango Gem|Mountain Dew Baja Flash|Mountain Dew Baja Punch|Mountain Dew Baja Caribbean Splash|Mountain Dew Baja Passionfruit Punch|Mountain Dew Baja Laguna Lemonade|Mountain Dew Baja Point Break Punch|Mountain Dew Vibe|Mello Yello Cherry|Mello Yello Melon|Surge|Vault|Citra|Slice|Sierra Mist|Sierra Mist Cranberry Splash|Starry|Starry Zero Sugar|Sprite Zero|Sprite Lymonade|Sprite Chill|Sprite Remix|Sprite Cranberry|Sprite Winter Spiced Cranberry|Sprite Tropical Mix|Sprite Ice|7UP Free|7UP Cherry|7UP Tropical|7UP Gold|7UP Plus|7UP Retro|dnL|7UP Ten|Diet 7UP|Bubble Up|Sun Crest|Sun Drop Cherry Lemon|Squirt Ruby Red|Fresca Peach Citrus|Fresca Black Cherry Citrus|Fresca Grapefruit Citrus|Fanta Orange|Fanta Grape|Fanta Strawberry|Fanta Pineapple|Fanta Peach|Fanta Mango|Fanta Fruit Punch|Fanta Berry|Fanta Green Apple|Fanta Lemon|Fanta Lime|Fanta Shokata|Fanta Exotic|Fanta Cassis|Fanta Blackcurrant|Fanta Wild Cherry|Fanta Raspberry|Fanta Watermelon|Fanta Melon|Fanta Lychee|Fanta Guarana|Fanta Banana|Fanta Guava|Fanta Passion Fruit|Crush Orange|Crush Grape|Crush Strawberry|Crush Pineapple|Crush Peach|Crush Cream Soda|Crush Birch Beer|Crush Grapefruit|Crush Watermelon|Crush Blue Raspberry|Crush Cherry|Sunkist Orange|Sunkist Grape|Sunkist Strawberry|Sunkist Cherry Limeade|Sunkist Berry Lemonade|Sunkist Watermelon Lemonade|Sunkist Pink Lemonade|Faygo Redpop|Faygo Rock & Rye|Faygo Moon Mist|Faygo Cotton Candy|Faygo Candy Apple|Faygo Firework|Faygo Arctic Sun|Faygo Vanilla Creme|Shasta Tiki Punch|Shasta Twist|Shasta Moon Mist|Shasta Black Cherry|Shasta California Dreamin'|Shasta Creme Soda|Jarritos Tamarind|Jarritos Mandarin|Jarritos Lime|Jarritos Pineapple|Jarritos Guava|Jarritos Grapefruit|Jarritos Fruit Punch|Jarritos Mexican Cola|Jarritos Mango|Jarritos Strawberry|Sidral Mundet|Sangria Senorial|Manzanita Sol|Joya|Boing!|Frescolita|Colombiana|Kola Roman|Inca Kola|Guarana Antarctica|Guarana Jesus|Guarana Kuat~Kuat|Itubaína|Grapette|Fruki|Mate Couro|Mineirinho|Cotuba|Kola Inglesa|Kola Escocesa|Ironbeer|Materva|Jupiña~Jupina|Postobon|Pony Malta|Malta India|Malta Goya|Malta Polar|Malta Guinness|Vitamalt~Vita Malt|Supermalt|Tropical Fantasy|Tahitian Treat|Sam's Cola|Big K Cola|Clover Valley Cola|Cott Cola|President's Choice Cola|Double Cola|Jolt Cola|Bawls|Beverly|Chinotto|Sanbitter|Crodino|Bitter Kas|Kas|La Casera|Mezzo Mix|Spezi|Paulaner Spezi|Fritz-kola|Afri-Cola|Sinalco|Vita Cola|Club-Mate|Bionade|Rivella|Kofola|Cockta|Oronamin C|Ramune|Mitsuya Cider|CC Lemon|Calpis Soda~Calpico Soda|Pocari Sweat|Aquarius|Dekavita C|Lifeguard soda|Chilsung Cider|Milkis|McCol|DemiSoda|Ambasa|Thums Up|Limca|Maaza|Frooti|Appy Fizz|Bovonto|Campa Cola|Gold Spot|Duke's|Torino|Sosyo|Pakola|Pakola Ice Cream Soda|Pakola Lychee|Gourmet Cola|Next Cola~Cola Next|Amrat Cola|Necto|Portello|EGB~Elephant Ginger Beer|Stoney|Stoney Tangawizi|Sparletta|Sparletta Creme Soda|Sparletta Sparberry|Twizza|Jive soda|Krest|Krest Bitter Lemon|Schweppes Bitter Lemon|Schweppes Tonic Water|Schweppes Ginger Ale|Schweppes Cream Soda|Schweppes Agrum|Schweppes Lemonade|Schweppes Russchian|Canada Dry Tonic Water|Canada Dry Club Soda|Canada Dry Cranberry Ginger Ale|Canada Dry Blackberry Ginger Ale|Canada Dry Bold Ginger Ale|Seagram's Ginger Ale|Seagram's Tonic Water|Fever-Tree|Fentimans|Franklin & Sons|Q Mixers|London Essence|East Imperial|Thomas Henry|Three Cents|Barr Cola|Barr Cream Soda|Barr Bubblegum|Barr American Cream Soda|Barr Pineapple|Barr Limeade|Barr Cherryade|Irn-Bru Xtra|Irn-Bru 1901|Vimto Fizzy|Vimto Remix|Tango Orange|Tango Apple|Tango Cherry|Tango Dark Berry|Tizer|Dandelion and Burdock~Dandelion & Burdock|Ben Shaws|R Whites~R White's|Lilt|KA|KA Black Grape|KA Pineapple|KA Fruit Punch|KA Karibbean Kola|D&G Kola Champagne|D&G Ting|Solo|Kirks|Kirks Pasito|Kirks Creaming Soda|Kirks Portello|Kirks Kole Beer|Kirks Olde Stoney|Kirks Sno Drop|Kirks Big Sars|Bundaberg|Bundaberg Root Beer|Bundaberg Sarsaparilla|Bundaberg Lemon Lime & Bitters|Bundaberg Passionfruit|Bundaberg Blood Orange|Bundaberg Pink Grapefruit|Bundaberg Peach|Bundaberg Guava|L&P~Lemon & Paeroa~Lemon and Paeroa|Foxton Fizz|Tarax|Saxbys|Cedrata Tassoni|Spuma|Gassosa~Gazzosa|Lemonsoda|Oransoda|Mojito Soda|Pelmosoda|Baladin Cola|Molecola|Brisa|Brisa Maracuja|Sumol|Frize|Frisumo|Mirinda|Big Cola|Est Cola|Green Cola|Epsa|Loux|Gerani|Vikos Cola|Kickapoo Joy Juice|Sarsi|HeySong Sarsaparilla|Apple Sidra|Qoo|Hi-C|Fayrouz|Orijin Zero|Amstel Malta|Maltina|Bigi|La Casera Apple|Mojo Cola|Clemon|Zam Zam Cola~Zamzam Cola~ZamZam|Qibla Cola|Mecca Cola|Salam Cola|Palestine Cola|Gaza Cola|Evoca Cola|Pop Cola|Royal Tru Orange|Royal Tru Grape|Royal Tru Strawberry|Schwip Schwap|Traubisoda|Bambi soda|Oranzada|Zingo|Trocadero|Pommac|Champis|Julmust|Påskmust~Paskmust|Apotekarnes Julmust|Nygårda Julmust|Cuba Cola|Hallonsoda|Fruktsoda|Sockerdricka|Loranga|Hartwall Jaffa|Olvi Cola|Faxe Kondi|Tuborg Squash|Jolly Cola|Nikoline|Harboe Cola|Urge|Villa Farris|Mozell|Oskar Sylte|Oskar Sylte Ananas|Oskar Sylte Pære|Oskar Sylte Bringebær|Hansa Julebrus|Hamar Lillehammer Julebrus|Grans Julebrus|Ringnes Julebrus|Dahls Julebrus|Aass Julebrus|Mack Julebrus|Roma Julebrus",
-        "85": "Kinnie|Krest Grenadine|Gazosa Ticinese|Gazosa La Fiorenzana|Gazosa La Monti|Gazosa della Mesolcina|Blenheim Ginger Ale|Moxie|Cel-Ray|Dr. Brown's|Sun Tang Red Cream Soda|Ale-8-One|Cactus Cooler|Nesbitt's|NuGrape|Nu Icy|Orange Bang|Bubble Up Cherry|Ski soda|Ski Double Cola|Ski Citrus Soda",
-        "100": "Green River soda"
+        "10": [
+          {
+            "label": "Coca-Cola",
+            "aliases": [
+              "Coke"
+            ]
+          },
+          {
+            "label": "Pepsi",
+            "aliases": []
+          },
+          {
+            "label": "Sprite",
+            "aliases": []
+          },
+          {
+            "label": "Fanta",
+            "aliases": []
+          },
+          {
+            "label": "Dr Pepper",
+            "aliases": [
+              "Doctor Pepper"
+            ]
+          },
+          {
+            "label": "Mountain Dew",
+            "aliases": [
+              "Mtn Dew"
+            ]
+          },
+          {
+            "label": "7UP",
+            "aliases": [
+              "Seven Up"
+            ]
+          },
+          {
+            "label": "A&W Root Beer",
+            "aliases": []
+          },
+          {
+            "label": "Sunkist",
+            "aliases": []
+          },
+          {
+            "label": "Crush",
+            "aliases": []
+          }
+        ],
+        "30": [
+          {
+            "label": "Diet Coke",
+            "aliases": []
+          },
+          {
+            "label": "Coke Zero",
+            "aliases": [
+              "Coca-Cola Zero Sugar"
+            ]
+          },
+          {
+            "label": "Diet Pepsi",
+            "aliases": []
+          },
+          {
+            "label": "Pepsi Max",
+            "aliases": [
+              "Pepsi Zero Sugar"
+            ]
+          },
+          {
+            "label": "Diet Dr Pepper",
+            "aliases": []
+          },
+          {
+            "label": "Dr Pepper Zero Sugar",
+            "aliases": []
+          },
+          {
+            "label": "Canada Dry",
+            "aliases": []
+          },
+          {
+            "label": "Schweppes",
+            "aliases": []
+          },
+          {
+            "label": "Seagram's",
+            "aliases": []
+          },
+          {
+            "label": "Canada Dry Ginger Ale",
+            "aliases": []
+          },
+          {
+            "label": "Bundaberg Ginger Beer",
+            "aliases": []
+          },
+          {
+            "label": "Mug Root Beer",
+            "aliases": [
+              "Mug"
+            ]
+          },
+          {
+            "label": "Barq's",
+            "aliases": []
+          },
+          {
+            "label": "A&W Cream Soda",
+            "aliases": []
+          },
+          {
+            "label": "A&W",
+            "aliases": []
+          },
+          {
+            "label": "Stewart's",
+            "aliases": []
+          },
+          {
+            "label": "IBC Root Beer",
+            "aliases": []
+          },
+          {
+            "label": "Virgil's",
+            "aliases": []
+          },
+          {
+            "label": "Boylan",
+            "aliases": []
+          },
+          {
+            "label": "Hank's",
+            "aliases": []
+          },
+          {
+            "label": "Sprecher",
+            "aliases": []
+          },
+          {
+            "label": "Dad's Root Beer",
+            "aliases": []
+          },
+          {
+            "label": "Faygo",
+            "aliases": []
+          },
+          {
+            "label": "Vernors",
+            "aliases": []
+          },
+          {
+            "label": "Big Red",
+            "aliases": []
+          },
+          {
+            "label": "Big Blue",
+            "aliases": []
+          },
+          {
+            "label": "Cheerwine",
+            "aliases": []
+          },
+          {
+            "label": "Sun Drop",
+            "aliases": []
+          },
+          {
+            "label": "Mello Yello",
+            "aliases": []
+          },
+          {
+            "label": "Squirt",
+            "aliases": []
+          },
+          {
+            "label": "Fresca",
+            "aliases": []
+          },
+          {
+            "label": "Tab",
+            "aliases": []
+          },
+          {
+            "label": "RC Cola",
+            "aliases": [
+              "Royal Crown Cola"
+            ]
+          },
+          {
+            "label": "Rite Cola",
+            "aliases": []
+          },
+          {
+            "label": "Shasta",
+            "aliases": []
+          },
+          {
+            "label": "Nehi",
+            "aliases": []
+          },
+          {
+            "label": "Jarritos",
+            "aliases": []
+          },
+          {
+            "label": "Jones Soda",
+            "aliases": []
+          },
+          {
+            "label": "Ting",
+            "aliases": []
+          },
+          {
+            "label": "Irn-Bru",
+            "aliases": [
+              "Iron Brew"
+            ]
+          },
+          {
+            "label": "Vimto",
+            "aliases": []
+          },
+          {
+            "label": "Tango",
+            "aliases": []
+          },
+          {
+            "label": "Lucozade",
+            "aliases": []
+          },
+          {
+            "label": "Orangina",
+            "aliases": []
+          },
+          {
+            "label": "San Pellegrino",
+            "aliases": []
+          },
+          {
+            "label": "Perrier Fusions",
+            "aliases": []
+          },
+          {
+            "label": "Bubly",
+            "aliases": []
+          },
+          {
+            "label": "LaCroix",
+            "aliases": []
+          },
+          {
+            "label": "Spindrift",
+            "aliases": []
+          },
+          {
+            "label": "Zevia",
+            "aliases": []
+          },
+          {
+            "label": "Olipop",
+            "aliases": []
+          },
+          {
+            "label": "Poppi",
+            "aliases": []
+          }
+        ],
+        "60": [
+          {
+            "label": "Coca-Cola Cherry",
+            "aliases": [
+              "Cherry Coke"
+            ]
+          },
+          {
+            "label": "Coca-Cola Vanilla",
+            "aliases": [
+              "Vanilla Coke"
+            ]
+          },
+          {
+            "label": "Coca-Cola Lime",
+            "aliases": []
+          },
+          {
+            "label": "Coca-Cola Lemon",
+            "aliases": []
+          },
+          {
+            "label": "Coca-Cola Raspberry",
+            "aliases": []
+          },
+          {
+            "label": "Coca-Cola Orange Vanilla",
+            "aliases": []
+          },
+          {
+            "label": "Coca-Cola Orange Cream",
+            "aliases": []
+          },
+          {
+            "label": "Coca-Cola Cinnamon",
+            "aliases": []
+          },
+          {
+            "label": "Coca-Cola with Coffee",
+            "aliases": []
+          },
+          {
+            "label": "Coca-Cola C2",
+            "aliases": []
+          },
+          {
+            "label": "Coca-Cola Life",
+            "aliases": []
+          },
+          {
+            "label": "Coca-Cola Blak",
+            "aliases": []
+          },
+          {
+            "label": "Coca-Cola Black Cherry Vanilla",
+            "aliases": []
+          },
+          {
+            "label": "Coca-Cola Starlight",
+            "aliases": []
+          },
+          {
+            "label": "Coca-Cola Dreamworld",
+            "aliases": []
+          },
+          {
+            "label": "Coca-Cola Byte",
+            "aliases": []
+          },
+          {
+            "label": "Coca-Cola Y3000",
+            "aliases": []
+          },
+          {
+            "label": "Coca-Cola Spiced",
+            "aliases": []
+          },
+          {
+            "label": "Coca-Cola Energy",
+            "aliases": []
+          },
+          {
+            "label": "Coca-Cola Georgia Peach",
+            "aliases": []
+          },
+          {
+            "label": "Coca-Cola California Raspberry",
+            "aliases": []
+          },
+          {
+            "label": "Coca-Cola Clear",
+            "aliases": []
+          },
+          {
+            "label": "Pepsi Wild Cherry",
+            "aliases": []
+          },
+          {
+            "label": "Pepsi Vanilla",
+            "aliases": []
+          },
+          {
+            "label": "Pepsi Twist",
+            "aliases": []
+          },
+          {
+            "label": "Pepsi Blue",
+            "aliases": []
+          },
+          {
+            "label": "Crystal Pepsi",
+            "aliases": []
+          },
+          {
+            "label": "Pepsi Lime",
+            "aliases": []
+          },
+          {
+            "label": "Pepsi Mango",
+            "aliases": []
+          },
+          {
+            "label": "Pepsi Pineapple",
+            "aliases": []
+          },
+          {
+            "label": "Pepsi Peach",
+            "aliases": []
+          },
+          {
+            "label": "Pepsi Nitro",
+            "aliases": [
+              "Nitro Pepsi"
+            ]
+          },
+          {
+            "label": "Pepsi A.M.",
+            "aliases": []
+          },
+          {
+            "label": "Pepsi Next",
+            "aliases": []
+          },
+          {
+            "label": "Pepsi True",
+            "aliases": []
+          },
+          {
+            "label": "Pepsi Fire",
+            "aliases": []
+          },
+          {
+            "label": "Pepsi Ice",
+            "aliases": []
+          },
+          {
+            "label": "Pepsi Holiday Spice",
+            "aliases": []
+          },
+          {
+            "label": "Pepsi Tropical Chill",
+            "aliases": []
+          },
+          {
+            "label": "Pepsi Baobab",
+            "aliases": []
+          },
+          {
+            "label": "Pepsi Pink",
+            "aliases": []
+          },
+          {
+            "label": "Pepsi White",
+            "aliases": []
+          },
+          {
+            "label": "Pepsi Gold",
+            "aliases": []
+          },
+          {
+            "label": "Pepsi Salty Watermelon",
+            "aliases": []
+          },
+          {
+            "label": "Pepsi Ice Cucumber",
+            "aliases": []
+          },
+          {
+            "label": "Pepsi Shiso",
+            "aliases": []
+          },
+          {
+            "label": "Pepsi Mont Blanc",
+            "aliases": []
+          },
+          {
+            "label": "Pepsi Christmas Cola",
+            "aliases": []
+          },
+          {
+            "label": "Diet Rite",
+            "aliases": []
+          },
+          {
+            "label": "Diet RC",
+            "aliases": []
+          },
+          {
+            "label": "Cherry RC",
+            "aliases": []
+          },
+          {
+            "label": "Dr Pepper Cherry",
+            "aliases": []
+          },
+          {
+            "label": "Dr Pepper Cherry Vanilla",
+            "aliases": []
+          },
+          {
+            "label": "Dr Pepper Cream Soda",
+            "aliases": []
+          },
+          {
+            "label": "Dr Pepper Strawberries & Cream",
+            "aliases": []
+          },
+          {
+            "label": "Dr Pepper Creamy Coconut",
+            "aliases": []
+          },
+          {
+            "label": "Dr Pepper Blackberry",
+            "aliases": []
+          },
+          {
+            "label": "Dr Pepper Dark Berry",
+            "aliases": []
+          },
+          {
+            "label": "Dr Pepper Berries & Cream",
+            "aliases": []
+          },
+          {
+            "label": "Dr Pepper Red Fusion",
+            "aliases": []
+          },
+          {
+            "label": "Dr Pepper Ten",
+            "aliases": []
+          },
+          {
+            "label": "Dublin Dr Pepper",
+            "aliases": []
+          },
+          {
+            "label": "Mr Pibb",
+            "aliases": [
+              "Pibb Xtra"
+            ]
+          },
+          {
+            "label": "Pibb Zero",
+            "aliases": []
+          },
+          {
+            "label": "Dr Thunder",
+            "aliases": []
+          },
+          {
+            "label": "Dr Perky",
+            "aliases": []
+          },
+          {
+            "label": "Dr Bob",
+            "aliases": []
+          },
+          {
+            "label": "Dr K",
+            "aliases": []
+          },
+          {
+            "label": "Dr Shasta",
+            "aliases": []
+          },
+          {
+            "label": "Dr. Wells",
+            "aliases": []
+          },
+          {
+            "label": "Mountain Dew Code Red",
+            "aliases": []
+          },
+          {
+            "label": "Mountain Dew Voltage",
+            "aliases": []
+          },
+          {
+            "label": "Mountain Dew Baja Blast",
+            "aliases": [
+              "Baja Blast"
+            ]
+          },
+          {
+            "label": "Mountain Dew LiveWire",
+            "aliases": []
+          },
+          {
+            "label": "Mountain Dew White Out",
+            "aliases": []
+          },
+          {
+            "label": "Mountain Dew Pitch Black",
+            "aliases": []
+          },
+          {
+            "label": "Mountain Dew Major Melon",
+            "aliases": []
+          },
+          {
+            "label": "Mountain Dew Spark",
+            "aliases": []
+          },
+          {
+            "label": "Mountain Dew Frost Bite",
+            "aliases": []
+          },
+          {
+            "label": "Mountain Dew Thrashed Apple",
+            "aliases": []
+          },
+          {
+            "label": "Mountain Dew Purple Thunder",
+            "aliases": []
+          },
+          {
+            "label": "Mountain Dew Maui Burst",
+            "aliases": []
+          },
+          {
+            "label": "Mountain Dew Sweet Lightning",
+            "aliases": []
+          },
+          {
+            "label": "Mountain Dew Legend",
+            "aliases": []
+          },
+          {
+            "label": "Mountain Dew Dark Berry Bash",
+            "aliases": []
+          },
+          {
+            "label": "Mountain Dew Cyclone",
+            "aliases": []
+          },
+          {
+            "label": "Mountain Dew Berry Monsoon",
+            "aliases": []
+          },
+          {
+            "label": "Mountain Dew Goji Citrus Strawberry",
+            "aliases": []
+          },
+          {
+            "label": "Mountain Dew Sangrita Blast",
+            "aliases": []
+          },
+          {
+            "label": "Mountain Dew Solar Flare",
+            "aliases": []
+          },
+          {
+            "label": "Mountain Dew Supernova",
+            "aliases": []
+          },
+          {
+            "label": "Mountain Dew Distortion",
+            "aliases": []
+          },
+          {
+            "label": "Mountain Dew Revolution",
+            "aliases": []
+          },
+          {
+            "label": "Mountain Dew Typhoon",
+            "aliases": []
+          },
+          {
+            "label": "Mountain Dew Flamin' Hot",
+            "aliases": []
+          },
+          {
+            "label": "Mountain Dew Gingerbread Snap'd",
+            "aliases": []
+          },
+          {
+            "label": "Mountain Dew Fruit Quake",
+            "aliases": []
+          },
+          {
+            "label": "Mountain Dew Merry Mash-Up",
+            "aliases": []
+          },
+          {
+            "label": "Mountain Dew Holiday Brew",
+            "aliases": []
+          },
+          {
+            "label": "Mountain Dew VooDew",
+            "aliases": []
+          },
+          {
+            "label": "Mountain Dew Liberty Brew",
+            "aliases": []
+          },
+          {
+            "label": "Mountain Dew Dew-S-A",
+            "aliases": []
+          },
+          {
+            "label": "Mountain Dew Summer Freeze",
+            "aliases": []
+          },
+          {
+            "label": "Mountain Dew Freedom Fusion",
+            "aliases": []
+          },
+          {
+            "label": "Mountain Dew Star Spangled Splash",
+            "aliases": []
+          },
+          {
+            "label": "Mountain Dew Liberty Chill",
+            "aliases": []
+          },
+          {
+            "label": "Mountain Dew Infinite Swirl",
+            "aliases": []
+          },
+          {
+            "label": "Mountain Dew Overdrive",
+            "aliases": []
+          },
+          {
+            "label": "Mountain Dew Uproar",
+            "aliases": []
+          },
+          {
+            "label": "Mountain Dew Dark Berry",
+            "aliases": []
+          },
+          {
+            "label": "Mountain Dew Dewshine",
+            "aliases": []
+          },
+          {
+            "label": "Mountain Dew Ice",
+            "aliases": []
+          },
+          {
+            "label": "Mountain Dew Kickstart",
+            "aliases": []
+          },
+          {
+            "label": "Mountain Dew Game Fuel",
+            "aliases": []
+          },
+          {
+            "label": "Mountain Dew Game Fuel Citrus Cherry",
+            "aliases": []
+          },
+          {
+            "label": "Mountain Dew Game Fuel Mystic Punch",
+            "aliases": []
+          },
+          {
+            "label": "Mountain Dew Baja Gold",
+            "aliases": []
+          },
+          {
+            "label": "Mountain Dew Baja Mango Gem",
+            "aliases": []
+          },
+          {
+            "label": "Mountain Dew Baja Flash",
+            "aliases": []
+          },
+          {
+            "label": "Mountain Dew Baja Punch",
+            "aliases": []
+          },
+          {
+            "label": "Mountain Dew Baja Caribbean Splash",
+            "aliases": []
+          },
+          {
+            "label": "Mountain Dew Baja Passionfruit Punch",
+            "aliases": []
+          },
+          {
+            "label": "Mountain Dew Baja Laguna Lemonade",
+            "aliases": []
+          },
+          {
+            "label": "Mountain Dew Baja Point Break Punch",
+            "aliases": []
+          },
+          {
+            "label": "Mountain Dew Vibe",
+            "aliases": []
+          },
+          {
+            "label": "Mello Yello Cherry",
+            "aliases": []
+          },
+          {
+            "label": "Mello Yello Melon",
+            "aliases": []
+          },
+          {
+            "label": "Surge",
+            "aliases": []
+          },
+          {
+            "label": "Vault",
+            "aliases": []
+          },
+          {
+            "label": "Citra",
+            "aliases": []
+          },
+          {
+            "label": "Slice",
+            "aliases": []
+          },
+          {
+            "label": "Sierra Mist",
+            "aliases": []
+          },
+          {
+            "label": "Sierra Mist Cranberry Splash",
+            "aliases": []
+          },
+          {
+            "label": "Starry",
+            "aliases": []
+          },
+          {
+            "label": "Starry Zero Sugar",
+            "aliases": []
+          },
+          {
+            "label": "Sprite Zero",
+            "aliases": []
+          },
+          {
+            "label": "Sprite Lymonade",
+            "aliases": []
+          },
+          {
+            "label": "Sprite Chill",
+            "aliases": []
+          },
+          {
+            "label": "Sprite Remix",
+            "aliases": []
+          },
+          {
+            "label": "Sprite Cranberry",
+            "aliases": []
+          },
+          {
+            "label": "Sprite Winter Spiced Cranberry",
+            "aliases": []
+          },
+          {
+            "label": "Sprite Tropical Mix",
+            "aliases": []
+          },
+          {
+            "label": "Sprite Ice",
+            "aliases": []
+          },
+          {
+            "label": "7UP Free",
+            "aliases": []
+          },
+          {
+            "label": "7UP Cherry",
+            "aliases": []
+          },
+          {
+            "label": "7UP Tropical",
+            "aliases": []
+          },
+          {
+            "label": "7UP Gold",
+            "aliases": []
+          },
+          {
+            "label": "7UP Plus",
+            "aliases": []
+          },
+          {
+            "label": "7UP Retro",
+            "aliases": []
+          },
+          {
+            "label": "dnL",
+            "aliases": []
+          },
+          {
+            "label": "7UP Ten",
+            "aliases": []
+          },
+          {
+            "label": "Diet 7UP",
+            "aliases": []
+          },
+          {
+            "label": "Bubble Up",
+            "aliases": []
+          },
+          {
+            "label": "Sun Crest",
+            "aliases": []
+          },
+          {
+            "label": "Sun Drop Cherry Lemon",
+            "aliases": []
+          },
+          {
+            "label": "Squirt Ruby Red",
+            "aliases": []
+          },
+          {
+            "label": "Fresca Peach Citrus",
+            "aliases": []
+          },
+          {
+            "label": "Fresca Black Cherry Citrus",
+            "aliases": []
+          },
+          {
+            "label": "Fresca Grapefruit Citrus",
+            "aliases": []
+          },
+          {
+            "label": "Fanta Orange",
+            "aliases": []
+          },
+          {
+            "label": "Fanta Grape",
+            "aliases": []
+          },
+          {
+            "label": "Fanta Strawberry",
+            "aliases": []
+          },
+          {
+            "label": "Fanta Pineapple",
+            "aliases": []
+          },
+          {
+            "label": "Fanta Peach",
+            "aliases": []
+          },
+          {
+            "label": "Fanta Mango",
+            "aliases": []
+          },
+          {
+            "label": "Fanta Fruit Punch",
+            "aliases": []
+          },
+          {
+            "label": "Fanta Berry",
+            "aliases": []
+          },
+          {
+            "label": "Fanta Green Apple",
+            "aliases": []
+          },
+          {
+            "label": "Fanta Lemon",
+            "aliases": []
+          },
+          {
+            "label": "Fanta Lime",
+            "aliases": []
+          },
+          {
+            "label": "Fanta Shokata",
+            "aliases": []
+          },
+          {
+            "label": "Fanta Exotic",
+            "aliases": []
+          },
+          {
+            "label": "Fanta Cassis",
+            "aliases": []
+          },
+          {
+            "label": "Fanta Blackcurrant",
+            "aliases": []
+          },
+          {
+            "label": "Fanta Wild Cherry",
+            "aliases": []
+          },
+          {
+            "label": "Fanta Raspberry",
+            "aliases": []
+          },
+          {
+            "label": "Fanta Watermelon",
+            "aliases": []
+          },
+          {
+            "label": "Fanta Melon",
+            "aliases": []
+          },
+          {
+            "label": "Fanta Lychee",
+            "aliases": []
+          },
+          {
+            "label": "Fanta Guarana",
+            "aliases": []
+          },
+          {
+            "label": "Fanta Banana",
+            "aliases": []
+          },
+          {
+            "label": "Fanta Guava",
+            "aliases": []
+          },
+          {
+            "label": "Fanta Passion Fruit",
+            "aliases": []
+          },
+          {
+            "label": "Crush Orange",
+            "aliases": []
+          },
+          {
+            "label": "Crush Grape",
+            "aliases": []
+          },
+          {
+            "label": "Crush Strawberry",
+            "aliases": []
+          },
+          {
+            "label": "Crush Pineapple",
+            "aliases": []
+          },
+          {
+            "label": "Crush Peach",
+            "aliases": []
+          },
+          {
+            "label": "Crush Cream Soda",
+            "aliases": []
+          },
+          {
+            "label": "Crush Birch Beer",
+            "aliases": []
+          },
+          {
+            "label": "Crush Grapefruit",
+            "aliases": []
+          },
+          {
+            "label": "Crush Watermelon",
+            "aliases": []
+          },
+          {
+            "label": "Crush Blue Raspberry",
+            "aliases": []
+          },
+          {
+            "label": "Crush Cherry",
+            "aliases": []
+          },
+          {
+            "label": "Sunkist Orange",
+            "aliases": []
+          },
+          {
+            "label": "Sunkist Grape",
+            "aliases": []
+          },
+          {
+            "label": "Sunkist Strawberry",
+            "aliases": []
+          },
+          {
+            "label": "Sunkist Cherry Limeade",
+            "aliases": []
+          },
+          {
+            "label": "Sunkist Berry Lemonade",
+            "aliases": []
+          },
+          {
+            "label": "Sunkist Watermelon Lemonade",
+            "aliases": []
+          },
+          {
+            "label": "Sunkist Pink Lemonade",
+            "aliases": []
+          },
+          {
+            "label": "Faygo Redpop",
+            "aliases": []
+          },
+          {
+            "label": "Faygo Rock & Rye",
+            "aliases": []
+          },
+          {
+            "label": "Faygo Moon Mist",
+            "aliases": []
+          },
+          {
+            "label": "Faygo Cotton Candy",
+            "aliases": []
+          },
+          {
+            "label": "Faygo Candy Apple",
+            "aliases": []
+          },
+          {
+            "label": "Faygo Firework",
+            "aliases": []
+          },
+          {
+            "label": "Faygo Arctic Sun",
+            "aliases": []
+          },
+          {
+            "label": "Faygo Vanilla Creme",
+            "aliases": []
+          },
+          {
+            "label": "Shasta Tiki Punch",
+            "aliases": []
+          },
+          {
+            "label": "Shasta Twist",
+            "aliases": []
+          },
+          {
+            "label": "Shasta Moon Mist",
+            "aliases": []
+          },
+          {
+            "label": "Shasta Black Cherry",
+            "aliases": []
+          },
+          {
+            "label": "Shasta California Dreamin'",
+            "aliases": []
+          },
+          {
+            "label": "Shasta Creme Soda",
+            "aliases": []
+          },
+          {
+            "label": "Jarritos Tamarind",
+            "aliases": []
+          },
+          {
+            "label": "Jarritos Mandarin",
+            "aliases": []
+          },
+          {
+            "label": "Jarritos Lime",
+            "aliases": []
+          },
+          {
+            "label": "Jarritos Pineapple",
+            "aliases": []
+          },
+          {
+            "label": "Jarritos Guava",
+            "aliases": []
+          },
+          {
+            "label": "Jarritos Grapefruit",
+            "aliases": []
+          },
+          {
+            "label": "Jarritos Fruit Punch",
+            "aliases": []
+          },
+          {
+            "label": "Jarritos Mexican Cola",
+            "aliases": []
+          },
+          {
+            "label": "Jarritos Mango",
+            "aliases": []
+          },
+          {
+            "label": "Jarritos Strawberry",
+            "aliases": []
+          },
+          {
+            "label": "Sidral Mundet",
+            "aliases": []
+          },
+          {
+            "label": "Sangria Senorial",
+            "aliases": []
+          },
+          {
+            "label": "Manzanita Sol",
+            "aliases": []
+          },
+          {
+            "label": "Joya",
+            "aliases": []
+          },
+          {
+            "label": "Boing!",
+            "aliases": []
+          },
+          {
+            "label": "Frescolita",
+            "aliases": []
+          },
+          {
+            "label": "Colombiana",
+            "aliases": []
+          },
+          {
+            "label": "Kola Roman",
+            "aliases": []
+          },
+          {
+            "label": "Inca Kola",
+            "aliases": []
+          },
+          {
+            "label": "Guarana Antarctica",
+            "aliases": []
+          },
+          {
+            "label": "Guarana Jesus",
+            "aliases": []
+          },
+          {
+            "label": "Guarana Kuat",
+            "aliases": [
+              "Kuat"
+            ]
+          },
+          {
+            "label": "Itubaína",
+            "aliases": []
+          },
+          {
+            "label": "Grapette",
+            "aliases": []
+          },
+          {
+            "label": "Fruki",
+            "aliases": []
+          },
+          {
+            "label": "Mate Couro",
+            "aliases": []
+          },
+          {
+            "label": "Mineirinho",
+            "aliases": []
+          },
+          {
+            "label": "Cotuba",
+            "aliases": []
+          },
+          {
+            "label": "Kola Inglesa",
+            "aliases": []
+          },
+          {
+            "label": "Kola Escocesa",
+            "aliases": []
+          },
+          {
+            "label": "Ironbeer",
+            "aliases": []
+          },
+          {
+            "label": "Materva",
+            "aliases": []
+          },
+          {
+            "label": "Jupiña",
+            "aliases": [
+              "Jupina"
+            ]
+          },
+          {
+            "label": "Postobon",
+            "aliases": []
+          },
+          {
+            "label": "Pony Malta",
+            "aliases": []
+          },
+          {
+            "label": "Malta India",
+            "aliases": []
+          },
+          {
+            "label": "Malta Goya",
+            "aliases": []
+          },
+          {
+            "label": "Malta Polar",
+            "aliases": []
+          },
+          {
+            "label": "Malta Guinness",
+            "aliases": []
+          },
+          {
+            "label": "Vitamalt",
+            "aliases": [
+              "Vita Malt"
+            ]
+          },
+          {
+            "label": "Supermalt",
+            "aliases": []
+          },
+          {
+            "label": "Tropical Fantasy",
+            "aliases": []
+          },
+          {
+            "label": "Tahitian Treat",
+            "aliases": []
+          },
+          {
+            "label": "Sam's Cola",
+            "aliases": []
+          },
+          {
+            "label": "Big K Cola",
+            "aliases": []
+          },
+          {
+            "label": "Clover Valley Cola",
+            "aliases": []
+          },
+          {
+            "label": "Cott Cola",
+            "aliases": []
+          },
+          {
+            "label": "President's Choice Cola",
+            "aliases": []
+          },
+          {
+            "label": "Double Cola",
+            "aliases": []
+          },
+          {
+            "label": "Jolt Cola",
+            "aliases": []
+          },
+          {
+            "label": "Bawls",
+            "aliases": []
+          },
+          {
+            "label": "Beverly",
+            "aliases": []
+          },
+          {
+            "label": "Chinotto",
+            "aliases": []
+          },
+          {
+            "label": "Sanbitter",
+            "aliases": []
+          },
+          {
+            "label": "Crodino",
+            "aliases": []
+          },
+          {
+            "label": "Bitter Kas",
+            "aliases": []
+          },
+          {
+            "label": "Kas",
+            "aliases": []
+          },
+          {
+            "label": "La Casera",
+            "aliases": []
+          },
+          {
+            "label": "Mezzo Mix",
+            "aliases": []
+          },
+          {
+            "label": "Spezi",
+            "aliases": []
+          },
+          {
+            "label": "Paulaner Spezi",
+            "aliases": []
+          },
+          {
+            "label": "Fritz-kola",
+            "aliases": []
+          },
+          {
+            "label": "Afri-Cola",
+            "aliases": []
+          },
+          {
+            "label": "Sinalco",
+            "aliases": []
+          },
+          {
+            "label": "Vita Cola",
+            "aliases": []
+          },
+          {
+            "label": "Club-Mate",
+            "aliases": []
+          },
+          {
+            "label": "Bionade",
+            "aliases": []
+          },
+          {
+            "label": "Rivella",
+            "aliases": []
+          },
+          {
+            "label": "Kofola",
+            "aliases": []
+          },
+          {
+            "label": "Cockta",
+            "aliases": []
+          },
+          {
+            "label": "Oronamin C",
+            "aliases": []
+          },
+          {
+            "label": "Ramune",
+            "aliases": []
+          },
+          {
+            "label": "Mitsuya Cider",
+            "aliases": []
+          },
+          {
+            "label": "CC Lemon",
+            "aliases": []
+          },
+          {
+            "label": "Calpis Soda",
+            "aliases": [
+              "Calpico Soda"
+            ]
+          },
+          {
+            "label": "Pocari Sweat",
+            "aliases": []
+          },
+          {
+            "label": "Aquarius",
+            "aliases": []
+          },
+          {
+            "label": "Dekavita C",
+            "aliases": []
+          },
+          {
+            "label": "Lifeguard soda",
+            "aliases": []
+          },
+          {
+            "label": "Chilsung Cider",
+            "aliases": []
+          },
+          {
+            "label": "Milkis",
+            "aliases": []
+          },
+          {
+            "label": "McCol",
+            "aliases": []
+          },
+          {
+            "label": "DemiSoda",
+            "aliases": []
+          },
+          {
+            "label": "Ambasa",
+            "aliases": []
+          },
+          {
+            "label": "Thums Up",
+            "aliases": []
+          },
+          {
+            "label": "Limca",
+            "aliases": []
+          },
+          {
+            "label": "Maaza",
+            "aliases": []
+          },
+          {
+            "label": "Frooti",
+            "aliases": []
+          },
+          {
+            "label": "Appy Fizz",
+            "aliases": []
+          },
+          {
+            "label": "Bovonto",
+            "aliases": []
+          },
+          {
+            "label": "Campa Cola",
+            "aliases": []
+          },
+          {
+            "label": "Gold Spot",
+            "aliases": []
+          },
+          {
+            "label": "Duke's",
+            "aliases": []
+          },
+          {
+            "label": "Torino",
+            "aliases": []
+          },
+          {
+            "label": "Sosyo",
+            "aliases": []
+          },
+          {
+            "label": "Pakola",
+            "aliases": []
+          },
+          {
+            "label": "Pakola Ice Cream Soda",
+            "aliases": []
+          },
+          {
+            "label": "Pakola Lychee",
+            "aliases": []
+          },
+          {
+            "label": "Gourmet Cola",
+            "aliases": []
+          },
+          {
+            "label": "Next Cola",
+            "aliases": [
+              "Cola Next"
+            ]
+          },
+          {
+            "label": "Amrat Cola",
+            "aliases": []
+          },
+          {
+            "label": "Necto",
+            "aliases": []
+          },
+          {
+            "label": "Portello",
+            "aliases": []
+          },
+          {
+            "label": "EGB",
+            "aliases": [
+              "Elephant Ginger Beer"
+            ]
+          },
+          {
+            "label": "Stoney",
+            "aliases": []
+          },
+          {
+            "label": "Stoney Tangawizi",
+            "aliases": []
+          },
+          {
+            "label": "Sparletta",
+            "aliases": []
+          },
+          {
+            "label": "Sparletta Creme Soda",
+            "aliases": []
+          },
+          {
+            "label": "Sparletta Sparberry",
+            "aliases": []
+          },
+          {
+            "label": "Twizza",
+            "aliases": []
+          },
+          {
+            "label": "Jive soda",
+            "aliases": []
+          },
+          {
+            "label": "Krest",
+            "aliases": []
+          },
+          {
+            "label": "Krest Bitter Lemon",
+            "aliases": []
+          },
+          {
+            "label": "Schweppes Bitter Lemon",
+            "aliases": []
+          },
+          {
+            "label": "Schweppes Tonic Water",
+            "aliases": []
+          },
+          {
+            "label": "Schweppes Ginger Ale",
+            "aliases": []
+          },
+          {
+            "label": "Schweppes Cream Soda",
+            "aliases": []
+          },
+          {
+            "label": "Schweppes Agrum",
+            "aliases": []
+          },
+          {
+            "label": "Schweppes Lemonade",
+            "aliases": []
+          },
+          {
+            "label": "Schweppes Russchian",
+            "aliases": []
+          },
+          {
+            "label": "Canada Dry Tonic Water",
+            "aliases": []
+          },
+          {
+            "label": "Canada Dry Club Soda",
+            "aliases": []
+          },
+          {
+            "label": "Canada Dry Cranberry Ginger Ale",
+            "aliases": []
+          },
+          {
+            "label": "Canada Dry Blackberry Ginger Ale",
+            "aliases": []
+          },
+          {
+            "label": "Canada Dry Bold Ginger Ale",
+            "aliases": []
+          },
+          {
+            "label": "Seagram's Ginger Ale",
+            "aliases": []
+          },
+          {
+            "label": "Seagram's Tonic Water",
+            "aliases": []
+          },
+          {
+            "label": "Fever-Tree",
+            "aliases": []
+          },
+          {
+            "label": "Fentimans",
+            "aliases": []
+          },
+          {
+            "label": "Franklin & Sons",
+            "aliases": []
+          },
+          {
+            "label": "Q Mixers",
+            "aliases": []
+          },
+          {
+            "label": "London Essence",
+            "aliases": []
+          },
+          {
+            "label": "East Imperial",
+            "aliases": []
+          },
+          {
+            "label": "Thomas Henry",
+            "aliases": []
+          },
+          {
+            "label": "Three Cents",
+            "aliases": []
+          },
+          {
+            "label": "Barr Cola",
+            "aliases": []
+          },
+          {
+            "label": "Barr Cream Soda",
+            "aliases": []
+          },
+          {
+            "label": "Barr Bubblegum",
+            "aliases": []
+          },
+          {
+            "label": "Barr American Cream Soda",
+            "aliases": []
+          },
+          {
+            "label": "Barr Pineapple",
+            "aliases": []
+          },
+          {
+            "label": "Barr Limeade",
+            "aliases": []
+          },
+          {
+            "label": "Barr Cherryade",
+            "aliases": []
+          },
+          {
+            "label": "Irn-Bru Xtra",
+            "aliases": []
+          },
+          {
+            "label": "Irn-Bru 1901",
+            "aliases": []
+          },
+          {
+            "label": "Vimto Fizzy",
+            "aliases": []
+          },
+          {
+            "label": "Vimto Remix",
+            "aliases": []
+          },
+          {
+            "label": "Tango Orange",
+            "aliases": []
+          },
+          {
+            "label": "Tango Apple",
+            "aliases": []
+          },
+          {
+            "label": "Tango Cherry",
+            "aliases": []
+          },
+          {
+            "label": "Tango Dark Berry",
+            "aliases": []
+          },
+          {
+            "label": "Tizer",
+            "aliases": []
+          },
+          {
+            "label": "Dandelion and Burdock",
+            "aliases": [
+              "Dandelion & Burdock"
+            ]
+          },
+          {
+            "label": "Ben Shaws",
+            "aliases": []
+          },
+          {
+            "label": "R Whites",
+            "aliases": [
+              "R White's"
+            ]
+          },
+          {
+            "label": "Lilt",
+            "aliases": []
+          },
+          {
+            "label": "KA",
+            "aliases": []
+          },
+          {
+            "label": "KA Black Grape",
+            "aliases": []
+          },
+          {
+            "label": "KA Pineapple",
+            "aliases": []
+          },
+          {
+            "label": "KA Fruit Punch",
+            "aliases": []
+          },
+          {
+            "label": "KA Karibbean Kola",
+            "aliases": []
+          },
+          {
+            "label": "D&G Kola Champagne",
+            "aliases": []
+          },
+          {
+            "label": "D&G Ting",
+            "aliases": []
+          },
+          {
+            "label": "Solo",
+            "aliases": []
+          },
+          {
+            "label": "Kirks",
+            "aliases": []
+          },
+          {
+            "label": "Kirks Pasito",
+            "aliases": []
+          },
+          {
+            "label": "Kirks Creaming Soda",
+            "aliases": []
+          },
+          {
+            "label": "Kirks Portello",
+            "aliases": []
+          },
+          {
+            "label": "Kirks Kole Beer",
+            "aliases": []
+          },
+          {
+            "label": "Kirks Olde Stoney",
+            "aliases": []
+          },
+          {
+            "label": "Kirks Sno Drop",
+            "aliases": []
+          },
+          {
+            "label": "Kirks Big Sars",
+            "aliases": []
+          },
+          {
+            "label": "Bundaberg",
+            "aliases": []
+          },
+          {
+            "label": "Bundaberg Root Beer",
+            "aliases": []
+          },
+          {
+            "label": "Bundaberg Sarsaparilla",
+            "aliases": []
+          },
+          {
+            "label": "Bundaberg Lemon Lime & Bitters",
+            "aliases": []
+          },
+          {
+            "label": "Bundaberg Passionfruit",
+            "aliases": []
+          },
+          {
+            "label": "Bundaberg Blood Orange",
+            "aliases": []
+          },
+          {
+            "label": "Bundaberg Pink Grapefruit",
+            "aliases": []
+          },
+          {
+            "label": "Bundaberg Peach",
+            "aliases": []
+          },
+          {
+            "label": "Bundaberg Guava",
+            "aliases": []
+          },
+          {
+            "label": "L&P",
+            "aliases": [
+              "Lemon & Paeroa",
+              "Lemon and Paeroa"
+            ]
+          },
+          {
+            "label": "Foxton Fizz",
+            "aliases": []
+          },
+          {
+            "label": "Tarax",
+            "aliases": []
+          },
+          {
+            "label": "Saxbys",
+            "aliases": []
+          },
+          {
+            "label": "Cedrata Tassoni",
+            "aliases": []
+          },
+          {
+            "label": "Spuma",
+            "aliases": []
+          },
+          {
+            "label": "Gassosa",
+            "aliases": [
+              "Gazzosa"
+            ]
+          },
+          {
+            "label": "Lemonsoda",
+            "aliases": []
+          },
+          {
+            "label": "Oransoda",
+            "aliases": []
+          },
+          {
+            "label": "Mojito Soda",
+            "aliases": []
+          },
+          {
+            "label": "Pelmosoda",
+            "aliases": []
+          },
+          {
+            "label": "Baladin Cola",
+            "aliases": []
+          },
+          {
+            "label": "Molecola",
+            "aliases": []
+          },
+          {
+            "label": "Brisa",
+            "aliases": []
+          },
+          {
+            "label": "Brisa Maracuja",
+            "aliases": []
+          },
+          {
+            "label": "Sumol",
+            "aliases": []
+          },
+          {
+            "label": "Frize",
+            "aliases": []
+          },
+          {
+            "label": "Frisumo",
+            "aliases": []
+          },
+          {
+            "label": "Mirinda",
+            "aliases": []
+          },
+          {
+            "label": "Big Cola",
+            "aliases": []
+          },
+          {
+            "label": "Est Cola",
+            "aliases": []
+          },
+          {
+            "label": "Green Cola",
+            "aliases": []
+          },
+          {
+            "label": "Epsa",
+            "aliases": []
+          },
+          {
+            "label": "Loux",
+            "aliases": []
+          },
+          {
+            "label": "Gerani",
+            "aliases": []
+          },
+          {
+            "label": "Vikos Cola",
+            "aliases": []
+          },
+          {
+            "label": "Kickapoo Joy Juice",
+            "aliases": []
+          },
+          {
+            "label": "Sarsi",
+            "aliases": []
+          },
+          {
+            "label": "HeySong Sarsaparilla",
+            "aliases": []
+          },
+          {
+            "label": "Apple Sidra",
+            "aliases": []
+          },
+          {
+            "label": "Qoo",
+            "aliases": []
+          },
+          {
+            "label": "Hi-C",
+            "aliases": []
+          },
+          {
+            "label": "Fayrouz",
+            "aliases": []
+          },
+          {
+            "label": "Orijin Zero",
+            "aliases": []
+          },
+          {
+            "label": "Amstel Malta",
+            "aliases": []
+          },
+          {
+            "label": "Maltina",
+            "aliases": []
+          },
+          {
+            "label": "Bigi",
+            "aliases": []
+          },
+          {
+            "label": "La Casera Apple",
+            "aliases": []
+          },
+          {
+            "label": "Mojo Cola",
+            "aliases": []
+          },
+          {
+            "label": "Clemon",
+            "aliases": []
+          },
+          {
+            "label": "Zam Zam Cola",
+            "aliases": [
+              "Zamzam Cola",
+              "ZamZam"
+            ]
+          },
+          {
+            "label": "Qibla Cola",
+            "aliases": []
+          },
+          {
+            "label": "Mecca Cola",
+            "aliases": []
+          },
+          {
+            "label": "Salam Cola",
+            "aliases": []
+          },
+          {
+            "label": "Palestine Cola",
+            "aliases": []
+          },
+          {
+            "label": "Gaza Cola",
+            "aliases": []
+          },
+          {
+            "label": "Evoca Cola",
+            "aliases": []
+          },
+          {
+            "label": "Pop Cola",
+            "aliases": []
+          },
+          {
+            "label": "Royal Tru Orange",
+            "aliases": []
+          },
+          {
+            "label": "Royal Tru Grape",
+            "aliases": []
+          },
+          {
+            "label": "Royal Tru Strawberry",
+            "aliases": []
+          },
+          {
+            "label": "Schwip Schwap",
+            "aliases": []
+          },
+          {
+            "label": "Traubisoda",
+            "aliases": []
+          },
+          {
+            "label": "Bambi soda",
+            "aliases": []
+          },
+          {
+            "label": "Oranzada",
+            "aliases": []
+          },
+          {
+            "label": "Zingo",
+            "aliases": []
+          },
+          {
+            "label": "Trocadero",
+            "aliases": []
+          },
+          {
+            "label": "Pommac",
+            "aliases": []
+          },
+          {
+            "label": "Champis",
+            "aliases": []
+          },
+          {
+            "label": "Julmust",
+            "aliases": []
+          },
+          {
+            "label": "Påskmust",
+            "aliases": [
+              "Paskmust"
+            ]
+          },
+          {
+            "label": "Apotekarnes Julmust",
+            "aliases": []
+          },
+          {
+            "label": "Nygårda Julmust",
+            "aliases": []
+          },
+          {
+            "label": "Cuba Cola",
+            "aliases": []
+          },
+          {
+            "label": "Hallonsoda",
+            "aliases": []
+          },
+          {
+            "label": "Fruktsoda",
+            "aliases": []
+          },
+          {
+            "label": "Sockerdricka",
+            "aliases": []
+          },
+          {
+            "label": "Loranga",
+            "aliases": []
+          },
+          {
+            "label": "Hartwall Jaffa",
+            "aliases": []
+          },
+          {
+            "label": "Olvi Cola",
+            "aliases": []
+          },
+          {
+            "label": "Faxe Kondi",
+            "aliases": []
+          },
+          {
+            "label": "Tuborg Squash",
+            "aliases": []
+          },
+          {
+            "label": "Jolly Cola",
+            "aliases": []
+          },
+          {
+            "label": "Nikoline",
+            "aliases": []
+          },
+          {
+            "label": "Harboe Cola",
+            "aliases": []
+          },
+          {
+            "label": "Urge",
+            "aliases": []
+          },
+          {
+            "label": "Villa Farris",
+            "aliases": []
+          },
+          {
+            "label": "Mozell",
+            "aliases": []
+          },
+          {
+            "label": "Oskar Sylte",
+            "aliases": []
+          },
+          {
+            "label": "Oskar Sylte Ananas",
+            "aliases": []
+          },
+          {
+            "label": "Oskar Sylte Pære",
+            "aliases": []
+          },
+          {
+            "label": "Oskar Sylte Bringebær",
+            "aliases": []
+          },
+          {
+            "label": "Hansa Julebrus",
+            "aliases": []
+          },
+          {
+            "label": "Hamar Lillehammer Julebrus",
+            "aliases": []
+          },
+          {
+            "label": "Grans Julebrus",
+            "aliases": []
+          },
+          {
+            "label": "Ringnes Julebrus",
+            "aliases": []
+          },
+          {
+            "label": "Dahls Julebrus",
+            "aliases": []
+          },
+          {
+            "label": "Aass Julebrus",
+            "aliases": []
+          },
+          {
+            "label": "Mack Julebrus",
+            "aliases": []
+          },
+          {
+            "label": "Roma Julebrus",
+            "aliases": []
+          }
+        ],
+        "85": [
+          {
+            "label": "Kinnie",
+            "aliases": []
+          },
+          {
+            "label": "Krest Grenadine",
+            "aliases": []
+          },
+          {
+            "label": "Gazosa Ticinese",
+            "aliases": []
+          },
+          {
+            "label": "Gazosa La Fiorenzana",
+            "aliases": []
+          },
+          {
+            "label": "Gazosa La Monti",
+            "aliases": []
+          },
+          {
+            "label": "Gazosa della Mesolcina",
+            "aliases": []
+          },
+          {
+            "label": "Blenheim Ginger Ale",
+            "aliases": []
+          },
+          {
+            "label": "Moxie",
+            "aliases": []
+          },
+          {
+            "label": "Cel-Ray",
+            "aliases": []
+          },
+          {
+            "label": "Dr. Brown's",
+            "aliases": []
+          },
+          {
+            "label": "Sun Tang Red Cream Soda",
+            "aliases": []
+          },
+          {
+            "label": "Ale-8-One",
+            "aliases": []
+          },
+          {
+            "label": "Cactus Cooler",
+            "aliases": []
+          },
+          {
+            "label": "Nesbitt's",
+            "aliases": []
+          },
+          {
+            "label": "NuGrape",
+            "aliases": []
+          },
+          {
+            "label": "Nu Icy",
+            "aliases": []
+          },
+          {
+            "label": "Orange Bang",
+            "aliases": []
+          },
+          {
+            "label": "Bubble Up Cherry",
+            "aliases": []
+          },
+          {
+            "label": "Ski soda",
+            "aliases": []
+          },
+          {
+            "label": "Ski Double Cola",
+            "aliases": []
+          },
+          {
+            "label": "Ski Citrus Soda",
+            "aliases": []
+          }
+        ],
+        "100": [
+          {
+            "label": "Green River soda",
+            "aliases": []
+          }
+        ]
       }
     },
     {

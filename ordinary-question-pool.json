@@ -1,6 +1,6 @@
 {
-  "build": "3df87ad555158102",
-  "count": 376,
+  "build": "45f78ae57d428bb7",
+  "count": 384,
   "categories": [
     {
       "id": "group-q001",
@@ -1979,6 +1979,30 @@
       "scope": "The quarterback must have started a winning Super Bowl, through Super Bowl LX in February 2026. Winning a ring as a backup alone does not count."
     },
     {
+      "id": "authored-human-bone-names",
+      "prompt": "Name a bone or named group of bones in the human skeleton.",
+      "family": "science",
+      "group": "authored-situations",
+      "answerCount": 124,
+      "scope": "Standard named bones, fused bones and familiar bone groups count. Left and right instances are the same answer. Cartilage, joints, muscles and organs are not bones."
+    },
+    {
+      "id": "authored-measurement-unit-names",
+      "prompt": "Name a unit used to measure a physical quantity or digital information.",
+      "family": "science",
+      "group": "authored-situations",
+      "answerCount": 925,
+      "scope": "Established metric, customary, historical and scientific measurement units count, including named prefixed units. Currency units and arbitrary made-up units do not. Official unit symbols are accepted only when they name that actual unit."
+    },
+    {
+      "id": "authored-cell-structure-names",
+      "prompt": "Name a structure or component found in a living cell.",
+      "family": "science",
+      "group": "authored-situations",
+      "answerCount": 146,
+      "scope": "Plant, animal, fungal and prokaryotic cell structures count. Whole organs or tissues are not structures inside one cell. Established molecular structures such as DNA and chromosomes count. Cellular structures and molecular assemblies count; an individual pigment such as chlorophyll is not an organelle or cell structure by itself."
+    },
+    {
       "id": "authored-official-constellations",
       "prompt": "Name one of the 88 official constellations.",
       "family": "science",
@@ -2019,6 +2043,14 @@
       "scope": "Species classified as Legendary or Mythical in the pinned PokéAPI data count. Forms share their species' answer identity. Pseudo-Legendary is a fan label and does not make a species Legendary."
     },
     {
+      "id": "authored-wizarding-world-characters",
+      "prompt": "Name a character from the Harry Potter books or films.",
+      "family": "culture",
+      "group": "authored-whole-roster",
+      "answerCount": 437,
+      "scope": "Identifiable characters in the Harry Potter novels, films and their epilogues count, including creatures, ghosts and portraits. Real actors are not their fictional characters. Same-name characters share one answer identity."
+    },
+    {
       "id": "authored-musical-duos",
       "prompt": "Name a music act known as a duo.",
       "family": "music",
@@ -2041,6 +2073,38 @@
       "group": "authored-whole-concept",
       "answerCount": 57894,
       "scope": "Named museums and museum complexes count, including historical institutions. Multiple institutions with the same name share an answer identity. A type of museum or a fictional museum is not a named real institution."
+    },
+    {
+      "id": "authored-salad-dressings",
+      "prompt": "Name a salad dressing.",
+      "family": "food",
+      "group": "authored-whole-concept",
+      "answerCount": 168,
+      "scope": "Named dressings, traditional dressing preparations and brands sold as salad dressing count. A generic ingredient can qualify only when it is also conventionally used as a dressing on its own; arbitrary invented ingredient combinations do not count."
+    },
+    {
+      "id": "authored-pizza-styles",
+      "prompt": "Name a recognized pizza style or named pizza variety.",
+      "family": "food",
+      "group": "authored-whole-concept",
+      "answerCount": 184,
+      "scope": "Recognized regional styles and named pizza varieties count. A topping by itself is not a pizza style, and an invented topping combination is not a new variety."
+    },
+    {
+      "id": "authored-sushi-preparations",
+      "prompt": "Name a sushi style or named sushi roll.",
+      "family": "food",
+      "group": "authored-whole-concept",
+      "answerCount": 203,
+      "scope": "Established sushi preparations, named sushi rolls and recognizable filling-specific sushi varieties count. Sashimi by itself is not sushi because it lacks the seasoned rice. A fish or ingredient alone is not a prepared sushi variety."
+    },
+    {
+      "id": "authored-soft-drink-products",
+      "prompt": "Name a soft-drink brand or named soda product.",
+      "family": "food",
+      "group": "authored-whole-concept",
+      "answerCount": 569,
+      "scope": "Commercial nonalcoholic soda and soft-drink brands or named product lines count worldwide, including discontinued products. Plain bottled water and an unbranded beverage category alone do not count."
     },
     {
       "id": "authored-record-labels",

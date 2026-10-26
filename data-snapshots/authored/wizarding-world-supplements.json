@@ -1,0 +1,88 @@
+{
+  "rename": {
+    "Victor Krum": "Viktor Krum",
+    "Quirinus Quirrel": "Quirinus Quirrell"
+  },
+  "additions": [
+    {
+      "name": "Nagini",
+      "aliases": [],
+      "reference": "https://www.harrypotter.com/fact-file/characters-and-pets/nagini"
+    },
+    {
+      "name": "Dean Thomas",
+      "aliases": [],
+      "reference": "https://www.harrypotter.com/features/dean-thomas-hidden-storyline"
+    }
+  ],
+  "aliases": {
+    "Garrick Ollivander": [
+      "Ollivander"
+    ]
+  },
+  "references": [
+    "https://www.harrypotter.com/fact-file/characters-and-pets/viktor-krum",
+    "https://www.harrypotter.com/features/harry-potter-101-the-hogwarts-teachers"
+  ],
+  "yes": [
+    "Harry Potter",
+    "Hermione Granger",
+    "Ron Weasley",
+    "Dumbledore",
+    "Hagrid",
+    "Snape",
+    "Voldemort",
+    "Tom Riddle",
+    "Draco Malfoy",
+    "Sirius Black",
+    "Remus Lupin",
+    "Dobby",
+    "Neville Longbottom",
+    "Luna Lovegood",
+    "Ginny Weasley",
+    "Fred Weasley",
+    "George Weasley",
+    "Arthur Weasley",
+    "Molly Weasley",
+    "Bellatrix Lestrange",
+    "Lucius Malfoy",
+    "Narcissa Malfoy",
+    "Cedric Diggory",
+    "Cho Chang",
+    "Dolores Umbridge",
+    "Minerva McGonagall",
+    "Alastor Moody",
+    "Nymphadora Tonks",
+    "Newt Scamander",
+    "Gellert Grindelwald",
+    "Hedwig",
+    "Scabbers",
+    "Peter Pettigrew",
+    "Buckbeak",
+    "Fawkes",
+    "Nagini",
+    "Crookshanks",
+    "Fleur Delacour",
+    "Viktor Krum",
+    "Gilderoy Lockhart",
+    "Quirinus Quirrell",
+    "Lily Potter",
+    "James Potter",
+    "Vernon Dursley",
+    "Petunia Dursley",
+    "Dudley Dursley",
+    "Ollivander",
+    "Argus Filch",
+    "Peeves",
+    "Seamus Finnigan",
+    "Dean Thomas"
+  ],
+  "no": [
+    "Gandalf",
+    "Percy Jackson",
+    "Frodo",
+    "Daniel Radcliffe",
+    "Queenie Goldstein"
+  ],
+  "scopeDecision": "Named HP book/film characters, including portraits, ghosts, creatures and mentioned people, count. An actor or a character known only from a separate Fantastic Beasts story is not automatically in this inventory. Spelling errors in the fan API are repaired using official names."
+}

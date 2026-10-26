@@ -1,9 +1,9 @@
 {
   "target": 5000,
   "authoredCandidates": 175,
-  "admittedAuthored": 149,
-  "normalPoolAdmitted": 376,
-  "remaining": 4624,
+  "admittedAuthored": 157,
+  "normalPoolAdmitted": 384,
+  "remaining": 4616,
   "candidateFamilies": {
     "culture": 9,
     "everyday": 15,
@@ -15,6 +15,6 @@
     "sports": 38,
     "world": 26
   },
-  "canonicalAnswerRows": 1643172,
-  "familiarAnswerChecks": 3743
+  "canonicalAnswerRows": 1643872,
+  "familiarAnswerChecks": 4004
 }
