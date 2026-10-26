@@ -1,25 +1,24 @@
 {
   "target": 5000,
-  "normalPlayQuestions": 384,
-  "remaining": 4616,
+  "normalPlayQuestions": 398,
+  "remaining": 4602,
   "families": {
     "gaming": 59,
-    "sports": 58,
+    "sports": 60,
     "culture": 36,
     "music": 50,
-    "food": 43,
-    "nature": 34,
+    "food": 51,
+    "nature": 38,
     "science": 32,
     "world": 35,
     "everyday": 37
   },
   "candidateInventories": 175,
-  "admittedCandidates": 157,
-  "candidateCanonicalAnswerRows": 1643872,
+  "admittedCandidates": 171,
+  "candidateCanonicalAnswerRows": 1643895,
   "ready": false,
   "reasons": [
-    "4616 more admitted, distinct normal-play questions required.",
-    "gaming has 15.4% of questions; the completed inventory must keep each subject between 8% and 15%.",
+    "4602 more admitted, distinct normal-play questions required.",
     "sports has 15.1% of questions; the completed inventory must keep each subject between 8% and 15%."
   ],
   "note": "This is an admission/volume gate. Passing it is not factual validation: the full source, alias, familiar-answer, selection, browser and publication checks are also required."

@@ -11,12 +11,42 @@
       "format": "whole-concept",
       "rationale": "An accessible everyday food question with common starting answers and genuinely different traditional or commercial examples in its rarer tiers; no title-word or tag combinations.",
       "familiar": [
-        "Chocolate chip cookie",
+        "Oreo",
+        "Chocolate chip",
+        "Sugar cookie",
+        "Oatmeal raisin cookie",
+        "Peanut butter cookie",
         "Shortbread",
         "Gingerbread",
+        "Gingersnap",
         "Macaron",
+        "Macaroon",
         "Snickerdoodle",
-        "Oreo"
+        "Biscotti",
+        "Biscoff",
+        "Digestive",
+        "Hobnob",
+        "Tim Tam",
+        "Milano",
+        "Nutter Butter",
+        "Chips Ahoy",
+        "Stroopwafel",
+        "Fortune cookie",
+        "Animal cracker",
+        "Nilla Wafer",
+        "Fig Newton",
+        "Samoa",
+        "Thin Mint",
+        "Tagalong",
+        "Do-si-do",
+        "Trefoil",
+        "Madeleine",
+        "Butter cookie",
+        "Pizzelle",
+        "Linzer cookie",
+        "Amaretti",
+        "Florentine biscuit",
+        "Anzac biscuit"
       ],
       "exclude": [
         "Cheeseburger",
@@ -26,7 +56,10 @@
         "https://www.kingarthurbaking.com/recipes/collections/classic-cookie-recipes",
         "https://www.oreo.com/",
         "https://www.mcvities.com/our-range",
-        "https://en.wikipedia.org/wiki/List_of_cookies"
+        "https://en.wikipedia.org/wiki/List_of_cookies",
+        "https://www.kingarthurbaking.com/recipes/vanilla-madeleine-cookies-recipe",
+        "https://www.girlscouts.org/en/cookies/cookie-flavors.html",
+        "https://www.amarettivirginia.com/en/"
       ],
       "answers": {
         "10": [
@@ -76,6 +109,12 @@
               "Ginger nut",
               "Ginger snaps",
               "Gingernut"
+            ]
+          },
+          {
+            "label": "Digestive biscuit",
+            "aliases": [
+              "Digestive"
             ]
           }
         ],
@@ -142,29 +181,36 @@
           },
           {
             "label": "Thin Mints",
-            "aliases": []
+            "aliases": [
+              "Thin Mint"
+            ]
           },
           {
             "label": "Samoas",
             "aliases": [
-              "Caramel deLites"
+              "Caramel deLites",
+              "Samoa"
             ]
           },
           {
             "label": "Tagalongs",
             "aliases": [
-              "Peanut Butter Patties"
+              "Peanut Butter Patties",
+              "Tagalong"
             ]
           },
           {
             "label": "Do-si-dos",
             "aliases": [
+              "Do-si-do",
               "Peanut Butter Sandwiches"
             ]
           },
           {
             "label": "Trefoils",
-            "aliases": []
+            "aliases": [
+              "Trefoil"
+            ]
           },
           {
             "label": "Toll House cookie",
@@ -178,6 +224,33 @@
             "label": "Chocolate crinkle",
             "aliases": [
               "Crinkle cookie"
+            ]
+          },
+          {
+            "label": "Animal cracker",
+            "aliases": []
+          },
+          {
+            "label": "Fortune cookie",
+            "aliases": []
+          },
+          {
+            "label": "Oatmeal raisin cookie",
+            "aliases": [
+              "Oatmeal raisin"
+            ]
+          },
+          {
+            "label": "Madeleine",
+            "aliases": [
+              "Madeleines",
+              "Madeleine cookie"
+            ]
+          },
+          {
+            "label": "Amaretti",
+            "aliases": [
+              "Amaretti cookies"
             ]
           }
         ],
@@ -324,10 +397,6 @@
           },
           {
             "label": "Amaretti di Saronno",
-            "aliases": []
-          },
-          {
-            "label": "Animal cracker",
             "aliases": []
           },
           {
@@ -525,10 +594,6 @@
             "aliases": []
           },
           {
-            "label": "Digestive biscuit",
-            "aliases": []
-          },
-          {
             "label": "Drabbelkoek",
             "aliases": []
           },
@@ -559,10 +624,6 @@
             "aliases": [
               "Un kurabiyesi"
             ]
-          },
-          {
-            "label": "Fortune cookie",
-            "aliases": []
           },
           {
             "label": "Fudge cookie",
@@ -760,12 +821,6 @@
             "label": "Oat crisps",
             "aliases": [
               "Havreflarn"
-            ]
-          },
-          {
-            "label": "Oatmeal raisin cookie",
-            "aliases": [
-              "Oatmeal raisin"
             ]
           },
           {
@@ -981,26 +1036,58 @@
       "family": "food",
       "topic": "Pie chart",
       "prompt": "Name a pie, tart or flan.",
-      "scope": "Named sweet and savory pies, tarts and flans count, including established dishes called pies with mash or crumb toppings. A food that is only a cake, cookie or pizza does not qualify simply because a broad food list mentions it.",
+      "scope": "Named sweet and savory pies, tarts and flans count. Established dishes conventionally called pies count even when they use mash, crumbs or cake, including Boston cream pie and whoopie pie. An ordinary cake without a conventional pie name, pizza or an uncrusted omelette does not qualify.",
       "format": "whole-concept",
       "rationale": "An accessible everyday food question with common starting answers and genuinely different traditional or commercial examples in its rarer tiers; no title-word or tag combinations.",
       "familiar": [
         "Apple pie",
         "Cherry pie",
         "Chicken pot pie",
-        "Shepherd's pie",
+        "Shepherds pie",
         "Pumpkin pie",
-        "Key lime pie"
+        "Key lime pie",
+        "Pecan pie",
+        "Lemon meringue pie",
+        "Blueberry pie",
+        "Peach pie",
+        "Strawberry pie",
+        "Rhubarb pie",
+        "Sweet potato pie",
+        "Coconut cream pie",
+        "Banana cream pie",
+        "Chocolate cream pie",
+        "French silk pie",
+        "Boston cream pie",
+        "Cottage pie",
+        "Steak and kidney pie",
+        "Pork pie",
+        "Fish pie",
+        "Mince pie",
+        "Banoffee pie",
+        "Quiche",
+        "Treacle tart",
+        "Butter tart",
+        "Bakewell tart",
+        "Egg tart",
+        "Flan",
+        "Tarte Tatin",
+        "Whoopie pie",
+        "Engadine nut tart"
       ],
       "exclude": [
         "Pizza",
-        "Hamburger"
+        "Hamburger",
+        "Frittata",
+        "Chocolate cake"
       ],
       "references": [
         "https://www.kingarthurbaking.com/recipes/pies",
         "https://www.bbcgoodfood.com/recipes/collection/pie-recipes",
         "https://www.britannica.com/topic/pie-food",
-        "https://en.wikipedia.org/wiki/List_of_pies,_tarts_and_flans"
+        "https://en.wikipedia.org/wiki/List_of_pies,_tarts_and_flans",
+        "https://www.kingarthurbaking.com/recipes/boston-cream-pie-recipe",
+        "https://suvrettahouse.ch/en/shop/walnut-tart",
+        "https://www.kingarthurbaking.com/recipes/classic-chocolate-whoopie-pies-recipe"
       ],
       "answers": {
         "10": [
@@ -1155,6 +1242,16 @@
           {
             "label": "Treacle tart",
             "aliases": []
+          },
+          {
+            "label": "Boston cream pie",
+            "aliases": []
+          },
+          {
+            "label": "Whoopie pie",
+            "aliases": [
+              "Whoopie pies"
+            ]
           }
         ],
         "60": [
@@ -1562,6 +1659,14 @@
           {
             "label": "Fruit flan",
             "aliases": []
+          },
+          {
+            "label": "Engadine nut tart",
+            "aliases": [
+              "Bündner Nusstorte",
+              "Engadin nut tart",
+              "Bündner walnut tart"
+            ]
           }
         ],
         "85": [
@@ -2031,24 +2136,1167 @@
         "Strawberry",
         "Mint chocolate chip",
         "Cookies and cream",
-        "Cookie dough"
+        "Cookie dough",
+        "Rocky road",
+        "Butter pecan",
+        "Pistachio",
+        "Neapolitan",
+        "Coffee",
+        "Caramel",
+        "Salted caramel",
+        "Peanut butter",
+        "Chocolate peanut butter",
+        "Cotton candy",
+        "Bubblegum",
+        "Birthday cake",
+        "Birthday Cake Remix",
+        "Cake batter",
+        "Banana",
+        "Mango",
+        "Coconut",
+        "Lemon",
+        "Raspberry",
+        "Matcha",
+        "Black sesame",
+        "Ube",
+        "Taro",
+        "Cherry Garcia",
+        "Phish Food",
+        "Chunky Monkey",
+        "Americone Dream",
+        "Chubby Hubby",
+        "Superman",
+        "Moose tracks",
+        "Rum raisin"
       ],
       "exclude": [
-        "Beef Wellington",
-        "Motor oil"
+        "Motor oil",
+        "Beef Wellington"
       ],
       "references": [
         "https://www.benjerry.com/flavors",
         "https://www.baskinrobbins.com/en/ice-cream",
         "https://www.turkeyhill.com/frozen/ice-cream",
-        "https://www.haagendazs.us/products/ice-cream"
+        "https://www.haagendazs.us/products/ice-cream",
+        "https://www.coldstonecreamery.com/icecream/signaturecreations/birthdaycakeremix/",
+        "https://smartlabel.unileverusa.com/076840100125-0001-en-US/index.html",
+        "https://www.freedomtomarry.org/blog/entry/ben-jerrys-renames-legendary-flavor-to-celebrate-freedom-to-marry"
       ],
       "answers": {
-        "10": "Vanilla|Chocolate|Strawberry|Mint chocolate chip~Mint chip|Cookies and cream~Cookies n cream~Oreo|Cookie dough~Chocolate chip cookie dough|Neapolitan|Chocolate chip",
-        "30": "Rocky road|Butter pecan|Coffee|Caramel|Salted caramel|Pistachio|Peanut butter|Banana|Coconut|Mango|Raspberry|Lemon|Orange|Black cherry|Cherry vanilla|French vanilla|Vanilla bean|Chocolate fudge brownie|Birthday cake~Cake batter|Rum raisin|Cotton candy~Candy floss|Bubblegum~Bubble gum|Blue moon|Superman|Cherry Garcia|Phish Food|Half Baked|Chunky Monkey|Americone Dream|New York Super Fudge Chunk|Dulce de leche|Moose Tracks|Chocolate peanut butter|Pralines and cream|Maple walnut|Strawberry cheesecake|Cheesecake|Spumoni|Tutti frutti|Stracciatella|Hazelnut~Nocciola|Tiramisu|Green tea~Matcha|Ube|Black sesame",
-        "60": "White chocolate|Dark chocolate|Milk chocolate|Belgian chocolate|Double chocolate|Triple chocolate|Chocolate malt|Chocolate marshmallow|Chocolate brownie|Brownie batter|Fudge ripple|Fudge swirl|Vanilla fudge|Vanilla caramel|Caramel swirl|Butterscotch|Butterscotch ripple|Toffee|English toffee|Toffee crunch|Honeycomb|Hokey pokey|Honey|Lavender|Rose|Violet|Earl Grey|Chai|Thai tea|Milk tea|Horchata|Cinnamon|Cinnamon bun|Apple pie|Pumpkin|Pumpkin pie|Sweet potato|Sweet corn|Avocado|Taro|Red bean~Azuki~Adzuki|Blackcurrant|Blueberry|Blackberry|Boysenberry|Huckleberry|Marionberry|Raspberry ripple|Strawberry ripple|Peaches and cream|Peach|Apricot|Passion fruit|Pineapple|Guava|Lychee|Durian|Jackfruit|Soursop~Guanabana|Custard apple|Cherimoya|Persimmon|Date|Fig|Raisin|Chestnut|Marron glace|Walnut|Almond|Peanut|Cashew|Macadamia|Pecan|Burnt almond|Burnt caramel|Bourbon vanilla|Banana split|Banana pudding|Banoffee|Boston cream pie|Lemon cheesecake|Lemon meringue|Lemon curd|Key lime pie|Key lime|Orange creamsicle~Creamsicle|Orange chocolate|Mint|Peppermint|Peppermint stick|Peppermint bark|Spearmint|Grasshopper|Irish cream|Irish coffee|Eggnog|Egg custard|Custard|Malted milk|Cereal milk|Brown bread|Bread pudding|Rice pudding~Arroz con leche|Kulfi|Malai|Kesar pista|Saffron|Cardamom|Masala chai|Paan|Gulkand|Falooda|Lassi|Mango lassi|Sitaphal|Chikoo~Sapodilla|Tender coconut|Cheese|Queso|Gorgonzola|Goat cheese|Ricotta|Mascarpone|Olive oil|Sea salt|Fior di latte~Fiordilatte|Zabaglione~Zabaione|Crema|Zuppa inglese|Cassata|Cannoli|Biscotti|Amaretto|Gianduja|Bacio|Nutella|Kinder Bueno|Biscoff|Speculoos|Ginger|Gingerbread|Gingersnap|Snickerdoodle|Sugar cookie|Oatmeal cookie|Oatmeal cream pie|Death by chocolate|S'mores|Red velvet|Black forest|German chocolate cake|Carrot cake|Grape-Nuts|Teaberry|Tiger tail|Black licorice~Licorice|Mastic~Mastiha|Turkish coffee|Ashta|Brown butter|Lobster|Garlic|Wasabi|Black sesame mochi|Basil|Yuzu|Hojicha|Kinako|Sakura|Pandan|Salep|Booza|Dondurma|Blue raspberry|Cherry cheesecake|Strawberry shortcake|Super fudge brownie|Coffee toffee|Dulce de leche cheesecake",
-        "85": "Lucuma|Mamey|Canistel~Eggfruit|Cupuacu|Bacuri|Acai|Tamarind|Baobab|Black sapote|Leche quemada|Leche merengada|Crema catalana|Turron~Nougat|Panettone|Málaga~Malaga|Riso|Puffo|Watermelon|Honeydew|Cantaloupe|Dragon fruit|Rambutan|Mangosteen|Longan|Black garlic|Guinness|Lavender honey|Parma violet|Ginger nut|Jaffa",
-        "100": "Akutaq"
+        "10": [
+          {
+            "label": "Vanilla",
+            "aliases": []
+          },
+          {
+            "label": "Chocolate",
+            "aliases": []
+          },
+          {
+            "label": "Strawberry",
+            "aliases": []
+          },
+          {
+            "label": "Mint chocolate chip",
+            "aliases": [
+              "Mint chip"
+            ]
+          },
+          {
+            "label": "Cookies and cream",
+            "aliases": [
+              "Cookies n cream",
+              "Oreo"
+            ]
+          },
+          {
+            "label": "Cookie dough",
+            "aliases": [
+              "Chocolate chip cookie dough"
+            ]
+          },
+          {
+            "label": "Neapolitan",
+            "aliases": []
+          },
+          {
+            "label": "Chocolate chip",
+            "aliases": []
+          }
+        ],
+        "30": [
+          {
+            "label": "Rocky road",
+            "aliases": []
+          },
+          {
+            "label": "Butter pecan",
+            "aliases": []
+          },
+          {
+            "label": "Coffee",
+            "aliases": []
+          },
+          {
+            "label": "Caramel",
+            "aliases": []
+          },
+          {
+            "label": "Salted caramel",
+            "aliases": []
+          },
+          {
+            "label": "Pistachio",
+            "aliases": []
+          },
+          {
+            "label": "Peanut butter",
+            "aliases": []
+          },
+          {
+            "label": "Banana",
+            "aliases": []
+          },
+          {
+            "label": "Coconut",
+            "aliases": []
+          },
+          {
+            "label": "Mango",
+            "aliases": []
+          },
+          {
+            "label": "Raspberry",
+            "aliases": []
+          },
+          {
+            "label": "Lemon",
+            "aliases": []
+          },
+          {
+            "label": "Orange",
+            "aliases": []
+          },
+          {
+            "label": "Black cherry",
+            "aliases": []
+          },
+          {
+            "label": "Cherry vanilla",
+            "aliases": []
+          },
+          {
+            "label": "French vanilla",
+            "aliases": []
+          },
+          {
+            "label": "Vanilla bean",
+            "aliases": []
+          },
+          {
+            "label": "Chocolate fudge brownie",
+            "aliases": []
+          },
+          {
+            "label": "Birthday cake",
+            "aliases": [
+              "Cake batter"
+            ]
+          },
+          {
+            "label": "Rum raisin",
+            "aliases": []
+          },
+          {
+            "label": "Cotton candy",
+            "aliases": [
+              "Candy floss"
+            ]
+          },
+          {
+            "label": "Bubblegum",
+            "aliases": [
+              "Bubble gum"
+            ]
+          },
+          {
+            "label": "Blue moon",
+            "aliases": []
+          },
+          {
+            "label": "Superman",
+            "aliases": []
+          },
+          {
+            "label": "Cherry Garcia",
+            "aliases": []
+          },
+          {
+            "label": "Phish Food",
+            "aliases": []
+          },
+          {
+            "label": "Half Baked",
+            "aliases": []
+          },
+          {
+            "label": "Chunky Monkey",
+            "aliases": []
+          },
+          {
+            "label": "Americone Dream",
+            "aliases": []
+          },
+          {
+            "label": "New York Super Fudge Chunk",
+            "aliases": []
+          },
+          {
+            "label": "Dulce de leche",
+            "aliases": []
+          },
+          {
+            "label": "Moose Tracks",
+            "aliases": []
+          },
+          {
+            "label": "Chocolate peanut butter",
+            "aliases": []
+          },
+          {
+            "label": "Pralines and cream",
+            "aliases": []
+          },
+          {
+            "label": "Maple walnut",
+            "aliases": []
+          },
+          {
+            "label": "Strawberry cheesecake",
+            "aliases": []
+          },
+          {
+            "label": "Cheesecake",
+            "aliases": []
+          },
+          {
+            "label": "Spumoni",
+            "aliases": []
+          },
+          {
+            "label": "Tutti frutti",
+            "aliases": []
+          },
+          {
+            "label": "Stracciatella",
+            "aliases": []
+          },
+          {
+            "label": "Hazelnut",
+            "aliases": [
+              "Nocciola"
+            ]
+          },
+          {
+            "label": "Tiramisu",
+            "aliases": []
+          },
+          {
+            "label": "Green tea",
+            "aliases": [
+              "Matcha"
+            ]
+          },
+          {
+            "label": "Ube",
+            "aliases": []
+          },
+          {
+            "label": "Black sesame",
+            "aliases": []
+          },
+          {
+            "label": "Birthday Cake Remix",
+            "aliases": []
+          },
+          {
+            "label": "Chubby Hubby",
+            "aliases": [
+              "Hubby Hubby"
+            ]
+          }
+        ],
+        "60": [
+          {
+            "label": "White chocolate",
+            "aliases": []
+          },
+          {
+            "label": "Dark chocolate",
+            "aliases": []
+          },
+          {
+            "label": "Milk chocolate",
+            "aliases": []
+          },
+          {
+            "label": "Belgian chocolate",
+            "aliases": []
+          },
+          {
+            "label": "Double chocolate",
+            "aliases": []
+          },
+          {
+            "label": "Triple chocolate",
+            "aliases": []
+          },
+          {
+            "label": "Chocolate malt",
+            "aliases": []
+          },
+          {
+            "label": "Chocolate marshmallow",
+            "aliases": []
+          },
+          {
+            "label": "Chocolate brownie",
+            "aliases": []
+          },
+          {
+            "label": "Brownie batter",
+            "aliases": []
+          },
+          {
+            "label": "Fudge ripple",
+            "aliases": []
+          },
+          {
+            "label": "Fudge swirl",
+            "aliases": []
+          },
+          {
+            "label": "Vanilla fudge",
+            "aliases": []
+          },
+          {
+            "label": "Vanilla caramel",
+            "aliases": []
+          },
+          {
+            "label": "Caramel swirl",
+            "aliases": []
+          },
+          {
+            "label": "Butterscotch",
+            "aliases": []
+          },
+          {
+            "label": "Butterscotch ripple",
+            "aliases": []
+          },
+          {
+            "label": "Toffee",
+            "aliases": []
+          },
+          {
+            "label": "English toffee",
+            "aliases": []
+          },
+          {
+            "label": "Toffee crunch",
+            "aliases": []
+          },
+          {
+            "label": "Honeycomb",
+            "aliases": []
+          },
+          {
+            "label": "Hokey pokey",
+            "aliases": []
+          },
+          {
+            "label": "Honey",
+            "aliases": []
+          },
+          {
+            "label": "Lavender",
+            "aliases": []
+          },
+          {
+            "label": "Rose",
+            "aliases": []
+          },
+          {
+            "label": "Violet",
+            "aliases": []
+          },
+          {
+            "label": "Earl Grey",
+            "aliases": []
+          },
+          {
+            "label": "Chai",
+            "aliases": []
+          },
+          {
+            "label": "Thai tea",
+            "aliases": []
+          },
+          {
+            "label": "Milk tea",
+            "aliases": []
+          },
+          {
+            "label": "Horchata",
+            "aliases": []
+          },
+          {
+            "label": "Cinnamon",
+            "aliases": []
+          },
+          {
+            "label": "Cinnamon bun",
+            "aliases": []
+          },
+          {
+            "label": "Apple pie",
+            "aliases": []
+          },
+          {
+            "label": "Pumpkin",
+            "aliases": []
+          },
+          {
+            "label": "Pumpkin pie",
+            "aliases": []
+          },
+          {
+            "label": "Sweet potato",
+            "aliases": []
+          },
+          {
+            "label": "Sweet corn",
+            "aliases": []
+          },
+          {
+            "label": "Avocado",
+            "aliases": []
+          },
+          {
+            "label": "Taro",
+            "aliases": []
+          },
+          {
+            "label": "Red bean",
+            "aliases": [
+              "Azuki",
+              "Adzuki"
+            ]
+          },
+          {
+            "label": "Blackcurrant",
+            "aliases": []
+          },
+          {
+            "label": "Blueberry",
+            "aliases": []
+          },
+          {
+            "label": "Blackberry",
+            "aliases": []
+          },
+          {
+            "label": "Boysenberry",
+            "aliases": []
+          },
+          {
+            "label": "Huckleberry",
+            "aliases": []
+          },
+          {
+            "label": "Marionberry",
+            "aliases": []
+          },
+          {
+            "label": "Raspberry ripple",
+            "aliases": []
+          },
+          {
+            "label": "Strawberry ripple",
+            "aliases": []
+          },
+          {
+            "label": "Peaches and cream",
+            "aliases": []
+          },
+          {
+            "label": "Peach",
+            "aliases": []
+          },
+          {
+            "label": "Apricot",
+            "aliases": []
+          },
+          {
+            "label": "Passion fruit",
+            "aliases": []
+          },
+          {
+            "label": "Pineapple",
+            "aliases": []
+          },
+          {
+            "label": "Guava",
+            "aliases": []
+          },
+          {
+            "label": "Lychee",
+            "aliases": []
+          },
+          {
+            "label": "Durian",
+            "aliases": []
+          },
+          {
+            "label": "Jackfruit",
+            "aliases": []
+          },
+          {
+            "label": "Soursop",
+            "aliases": [
+              "Guanabana"
+            ]
+          },
+          {
+            "label": "Custard apple",
+            "aliases": []
+          },
+          {
+            "label": "Cherimoya",
+            "aliases": []
+          },
+          {
+            "label": "Persimmon",
+            "aliases": []
+          },
+          {
+            "label": "Date",
+            "aliases": []
+          },
+          {
+            "label": "Fig",
+            "aliases": []
+          },
+          {
+            "label": "Raisin",
+            "aliases": []
+          },
+          {
+            "label": "Chestnut",
+            "aliases": []
+          },
+          {
+            "label": "Marron glace",
+            "aliases": []
+          },
+          {
+            "label": "Walnut",
+            "aliases": []
+          },
+          {
+            "label": "Almond",
+            "aliases": []
+          },
+          {
+            "label": "Peanut",
+            "aliases": []
+          },
+          {
+            "label": "Cashew",
+            "aliases": []
+          },
+          {
+            "label": "Macadamia",
+            "aliases": []
+          },
+          {
+            "label": "Pecan",
+            "aliases": []
+          },
+          {
+            "label": "Burnt almond",
+            "aliases": []
+          },
+          {
+            "label": "Burnt caramel",
+            "aliases": []
+          },
+          {
+            "label": "Bourbon vanilla",
+            "aliases": []
+          },
+          {
+            "label": "Banana split",
+            "aliases": []
+          },
+          {
+            "label": "Banana pudding",
+            "aliases": []
+          },
+          {
+            "label": "Banoffee",
+            "aliases": []
+          },
+          {
+            "label": "Boston cream pie",
+            "aliases": []
+          },
+          {
+            "label": "Lemon cheesecake",
+            "aliases": []
+          },
+          {
+            "label": "Lemon meringue",
+            "aliases": []
+          },
+          {
+            "label": "Lemon curd",
+            "aliases": []
+          },
+          {
+            "label": "Key lime pie",
+            "aliases": []
+          },
+          {
+            "label": "Key lime",
+            "aliases": []
+          },
+          {
+            "label": "Orange creamsicle",
+            "aliases": [
+              "Creamsicle"
+            ]
+          },
+          {
+            "label": "Orange chocolate",
+            "aliases": []
+          },
+          {
+            "label": "Mint",
+            "aliases": []
+          },
+          {
+            "label": "Peppermint",
+            "aliases": []
+          },
+          {
+            "label": "Peppermint stick",
+            "aliases": []
+          },
+          {
+            "label": "Peppermint bark",
+            "aliases": []
+          },
+          {
+            "label": "Spearmint",
+            "aliases": []
+          },
+          {
+            "label": "Grasshopper",
+            "aliases": []
+          },
+          {
+            "label": "Irish cream",
+            "aliases": []
+          },
+          {
+            "label": "Irish coffee",
+            "aliases": []
+          },
+          {
+            "label": "Eggnog",
+            "aliases": []
+          },
+          {
+            "label": "Egg custard",
+            "aliases": []
+          },
+          {
+            "label": "Custard",
+            "aliases": []
+          },
+          {
+            "label": "Malted milk",
+            "aliases": []
+          },
+          {
+            "label": "Cereal milk",
+            "aliases": []
+          },
+          {
+            "label": "Brown bread",
+            "aliases": []
+          },
+          {
+            "label": "Bread pudding",
+            "aliases": []
+          },
+          {
+            "label": "Rice pudding",
+            "aliases": [
+              "Arroz con leche"
+            ]
+          },
+          {
+            "label": "Kulfi",
+            "aliases": []
+          },
+          {
+            "label": "Malai",
+            "aliases": []
+          },
+          {
+            "label": "Kesar pista",
+            "aliases": []
+          },
+          {
+            "label": "Saffron",
+            "aliases": []
+          },
+          {
+            "label": "Cardamom",
+            "aliases": []
+          },
+          {
+            "label": "Masala chai",
+            "aliases": []
+          },
+          {
+            "label": "Paan",
+            "aliases": []
+          },
+          {
+            "label": "Gulkand",
+            "aliases": []
+          },
+          {
+            "label": "Falooda",
+            "aliases": []
+          },
+          {
+            "label": "Lassi",
+            "aliases": []
+          },
+          {
+            "label": "Mango lassi",
+            "aliases": []
+          },
+          {
+            "label": "Sitaphal",
+            "aliases": []
+          },
+          {
+            "label": "Chikoo",
+            "aliases": [
+              "Sapodilla"
+            ]
+          },
+          {
+            "label": "Tender coconut",
+            "aliases": []
+          },
+          {
+            "label": "Cheese",
+            "aliases": []
+          },
+          {
+            "label": "Queso",
+            "aliases": []
+          },
+          {
+            "label": "Gorgonzola",
+            "aliases": []
+          },
+          {
+            "label": "Goat cheese",
+            "aliases": []
+          },
+          {
+            "label": "Ricotta",
+            "aliases": []
+          },
+          {
+            "label": "Mascarpone",
+            "aliases": []
+          },
+          {
+            "label": "Olive oil",
+            "aliases": []
+          },
+          {
+            "label": "Sea salt",
+            "aliases": []
+          },
+          {
+            "label": "Fior di latte",
+            "aliases": [
+              "Fiordilatte"
+            ]
+          },
+          {
+            "label": "Zabaglione",
+            "aliases": [
+              "Zabaione"
+            ]
+          },
+          {
+            "label": "Crema",
+            "aliases": []
+          },
+          {
+            "label": "Zuppa inglese",
+            "aliases": []
+          },
+          {
+            "label": "Cassata",
+            "aliases": []
+          },
+          {
+            "label": "Cannoli",
+            "aliases": []
+          },
+          {
+            "label": "Biscotti",
+            "aliases": []
+          },
+          {
+            "label": "Amaretto",
+            "aliases": []
+          },
+          {
+            "label": "Gianduja",
+            "aliases": []
+          },
+          {
+            "label": "Bacio",
+            "aliases": []
+          },
+          {
+            "label": "Nutella",
+            "aliases": []
+          },
+          {
+            "label": "Kinder Bueno",
+            "aliases": []
+          },
+          {
+            "label": "Biscoff",
+            "aliases": []
+          },
+          {
+            "label": "Speculoos",
+            "aliases": []
+          },
+          {
+            "label": "Ginger",
+            "aliases": []
+          },
+          {
+            "label": "Gingerbread",
+            "aliases": []
+          },
+          {
+            "label": "Gingersnap",
+            "aliases": []
+          },
+          {
+            "label": "Snickerdoodle",
+            "aliases": []
+          },
+          {
+            "label": "Sugar cookie",
+            "aliases": []
+          },
+          {
+            "label": "Oatmeal cookie",
+            "aliases": []
+          },
+          {
+            "label": "Oatmeal cream pie",
+            "aliases": []
+          },
+          {
+            "label": "Death by chocolate",
+            "aliases": []
+          },
+          {
+            "label": "S'mores",
+            "aliases": []
+          },
+          {
+            "label": "Red velvet",
+            "aliases": []
+          },
+          {
+            "label": "Black forest",
+            "aliases": []
+          },
+          {
+            "label": "German chocolate cake",
+            "aliases": []
+          },
+          {
+            "label": "Carrot cake",
+            "aliases": []
+          },
+          {
+            "label": "Grape-Nuts",
+            "aliases": []
+          },
+          {
+            "label": "Teaberry",
+            "aliases": []
+          },
+          {
+            "label": "Tiger tail",
+            "aliases": []
+          },
+          {
+            "label": "Black licorice",
+            "aliases": [
+              "Licorice"
+            ]
+          },
+          {
+            "label": "Mastic",
+            "aliases": [
+              "Mastiha"
+            ]
+          },
+          {
+            "label": "Turkish coffee",
+            "aliases": []
+          },
+          {
+            "label": "Ashta",
+            "aliases": []
+          },
+          {
+            "label": "Brown butter",
+            "aliases": []
+          },
+          {
+            "label": "Lobster",
+            "aliases": []
+          },
+          {
+            "label": "Garlic",
+            "aliases": []
+          },
+          {
+            "label": "Wasabi",
+            "aliases": []
+          },
+          {
+            "label": "Black sesame mochi",
+            "aliases": []
+          },
+          {
+            "label": "Basil",
+            "aliases": []
+          },
+          {
+            "label": "Yuzu",
+            "aliases": []
+          },
+          {
+            "label": "Hojicha",
+            "aliases": []
+          },
+          {
+            "label": "Kinako",
+            "aliases": []
+          },
+          {
+            "label": "Sakura",
+            "aliases": []
+          },
+          {
+            "label": "Pandan",
+            "aliases": []
+          },
+          {
+            "label": "Salep",
+            "aliases": []
+          },
+          {
+            "label": "Booza",
+            "aliases": []
+          },
+          {
+            "label": "Dondurma",
+            "aliases": []
+          },
+          {
+            "label": "Blue raspberry",
+            "aliases": []
+          },
+          {
+            "label": "Cherry cheesecake",
+            "aliases": []
+          },
+          {
+            "label": "Strawberry shortcake",
+            "aliases": []
+          },
+          {
+            "label": "Super fudge brownie",
+            "aliases": []
+          },
+          {
+            "label": "Coffee toffee",
+            "aliases": []
+          },
+          {
+            "label": "Dulce de leche cheesecake",
+            "aliases": []
+          }
+        ],
+        "85": [
+          {
+            "label": "Lucuma",
+            "aliases": []
+          },
+          {
+            "label": "Mamey",
+            "aliases": []
+          },
+          {
+            "label": "Canistel",
+            "aliases": [
+              "Eggfruit"
+            ]
+          },
+          {
+            "label": "Cupuacu",
+            "aliases": []
+          },
+          {
+            "label": "Bacuri",
+            "aliases": []
+          },
+          {
+            "label": "Acai",
+            "aliases": []
+          },
+          {
+            "label": "Tamarind",
+            "aliases": []
+          },
+          {
+            "label": "Baobab",
+            "aliases": []
+          },
+          {
+            "label": "Black sapote",
+            "aliases": []
+          },
+          {
+            "label": "Leche quemada",
+            "aliases": []
+          },
+          {
+            "label": "Leche merengada",
+            "aliases": []
+          },
+          {
+            "label": "Crema catalana",
+            "aliases": []
+          },
+          {
+            "label": "Turron",
+            "aliases": [
+              "Nougat"
+            ]
+          },
+          {
+            "label": "Panettone",
+            "aliases": []
+          },
+          {
+            "label": "Málaga",
+            "aliases": [
+              "Malaga"
+            ]
+          },
+          {
+            "label": "Riso",
+            "aliases": []
+          },
+          {
+            "label": "Puffo",
+            "aliases": []
+          },
+          {
+            "label": "Watermelon",
+            "aliases": []
+          },
+          {
+            "label": "Honeydew",
+            "aliases": []
+          },
+          {
+            "label": "Cantaloupe",
+            "aliases": []
+          },
+          {
+            "label": "Dragon fruit",
+            "aliases": []
+          },
+          {
+            "label": "Rambutan",
+            "aliases": []
+          },
+          {
+            "label": "Mangosteen",
+            "aliases": []
+          },
+          {
+            "label": "Longan",
+            "aliases": []
+          },
+          {
+            "label": "Black garlic",
+            "aliases": []
+          },
+          {
+            "label": "Guinness",
+            "aliases": []
+          },
+          {
+            "label": "Lavender honey",
+            "aliases": []
+          },
+          {
+            "label": "Parma violet",
+            "aliases": []
+          },
+          {
+            "label": "Ginger nut",
+            "aliases": []
+          },
+          {
+            "label": "Jaffa",
+            "aliases": []
+          }
+        ],
+        "100": [
+          {
+            "label": "Akutaq",
+            "aliases": []
+          }
+        ]
       }
     },
     {
@@ -2056,17 +3304,48 @@
       "concept": "breakfast-cereal-products",
       "family": "food",
       "topic": "Cereal aisle",
-      "prompt": "Name a brand or named product sold as breakfast cereal.",
-      "scope": "Commercial breakfast cereal brands, named cereal product lines and discontinued cereals count worldwide. Hot breakfast cereals also count. A snack bar with no breakfast-cereal version does not qualify.",
+      "prompt": "Name a breakfast cereal, cereal brand or named cereal product.",
+      "scope": "Named breakfast-cereal kinds, brands and products count, including hot cereals, muesli, granola and historical products. An unrelated food does not count just because its maker also sells cereal.",
       "format": "whole-concept",
       "rationale": "An accessible everyday food question with common starting answers and genuinely different traditional or commercial examples in its rarer tiers; no title-word or tag combinations.",
       "familiar": [
         "Cheerios",
+        "Honey Nut Cheerios",
         "Froot Loops",
         "Frosted Flakes",
-        "Weetabix",
         "Lucky Charms",
-        "Cocoa Puffs"
+        "Cocoa Puffs",
+        "Cinnamon Toast Crunch",
+        "Rice Krispies",
+        "Corn Flakes",
+        "Raisin Bran",
+        "Fruity Pebbles",
+        "Cocoa Pebbles",
+        "Cap'n Crunch",
+        "Reese's Puffs",
+        "Cookie Crisp",
+        "Trix",
+        "Apple Jacks",
+        "Golden Grahams",
+        "Honeycomb",
+        "Life",
+        "Chex",
+        "Kix",
+        "Special K",
+        "Shredded Wheat",
+        "Weetabix",
+        "Grape-Nuts",
+        "Mini-Wheats",
+        "Krave",
+        "Wheaties",
+        "Total",
+        "Count Chocula",
+        "Boo Berry",
+        "Franken Berry",
+        "Oatmeal Crisp",
+        "Alpen",
+        "Muesli",
+        "Granola"
       ],
       "exclude": [
         "Doritos",
@@ -2077,7 +3356,9 @@
         "https://www.postconsumerbrands.com/grocery-brands/",
         "https://www.wkkelloggawayfromhome.com/en-us/home",
         "https://www.nestle-cereals.com/uk/cereals",
-        "https://en.wikipedia.org/wiki/List_of_breakfast_cereals"
+        "https://en.wikipedia.org/wiki/List_of_breakfast_cereals",
+        "https://www.nestle-cereals.com/my/my-en/recipes",
+        "https://www.nestle-cereals.com/my/my-en/brands/granola"
       ],
       "answers": {
         "10": [
@@ -2126,6 +3407,17 @@
           {
             "label": "Weetabix",
             "aliases": []
+          },
+          {
+            "label": "Granola",
+            "aliases": []
+          },
+          {
+            "label": "Oatmeal",
+            "aliases": [
+              "Porridge",
+              "Oat porridge"
+            ]
           }
         ],
         "30": [
@@ -2256,6 +3548,24 @@
           },
           {
             "label": "Oatibix",
+            "aliases": []
+          },
+          {
+            "label": "Puffed Rice",
+            "aliases": [
+              "Rice puffs"
+            ]
+          },
+          {
+            "label": "Puffed Wheat",
+            "aliases": []
+          },
+          {
+            "label": "Muesli",
+            "aliases": []
+          },
+          {
+            "label": "Bran flakes",
             "aliases": []
           }
         ],
@@ -3450,10 +4760,6 @@
           },
           {
             "label": "Crazy Cow Strawberry",
-            "aliases": []
-          },
-          {
-            "label": "Curves Fruit & Nut Crunch Curves Honey Crunch",
             "aliases": []
           },
           {
@@ -4893,10 +6199,6 @@
             "aliases": []
           },
           {
-            "label": "Porridge Flahavan's Progress Oatlets Kavanagh's Porridge",
-            "aliases": []
-          },
-          {
             "label": "Powdered Donutz",
             "aliases": []
           },
@@ -4933,15 +6235,7 @@
             "aliases": []
           },
           {
-            "label": "Puffed Rice",
-            "aliases": []
-          },
-          {
             "label": "Puffed Rice Sparkies",
-            "aliases": []
-          },
-          {
-            "label": "Puffed Wheat",
             "aliases": []
           },
           {
@@ -5813,6 +7107,14 @@
           {
             "label": "Wheaties Fuel",
             "aliases": []
+          },
+          {
+            "label": "Curves Fruit & Nut Crunch",
+            "aliases": []
+          },
+          {
+            "label": "Curves Honey Crunch",
+            "aliases": []
           }
         ],
         "100": [
@@ -5839,7 +7141,37 @@
         "Sauerkraut",
         "Kombucha",
         "Miso",
-        "Tempeh"
+        "Tempeh",
+        "Kefir",
+        "Cheese",
+        "Bread",
+        "Sourdough",
+        "Beer",
+        "Wine",
+        "Cider",
+        "Sake",
+        "Soy sauce",
+        "Fish sauce",
+        "Natto",
+        "Gochujang",
+        "Doenjang",
+        "Douchi",
+        "Doubanjiang",
+        "Idli",
+        "Dosa",
+        "Injera",
+        "Poi",
+        "Kvass",
+        "Tepache",
+        "Lassi",
+        "Skyr",
+        "Kumis",
+        "Ayran",
+        "Vinegar",
+        "Tabasco",
+        "Salami",
+        "Pepperoni",
+        "Crème fraîche"
       ],
       "exclude": [
         "Fresh apple",
@@ -5849,7 +7181,9 @@
         "https://www.britannica.com/science/fermentation",
         "https://www.nccih.nih.gov/health/probiotics-what-you-need-to-know",
         "https://nchfp.uga.edu/how/ferment/",
-        "https://en.wikipedia.org/wiki/List_of_fermented_foods"
+        "https://en.wikipedia.org/wiki/List_of_fermented_foods",
+        "https://www.tabasco.com/blog/about-our-barrels/",
+        "https://www.absolut.com/en/blog/vodka-and-spirits/introducing-absolut-tabasco/"
       ],
       "answers": {
         "10": [
@@ -5990,7 +7324,9 @@
           },
           {
             "label": "Tabasco sauce",
-            "aliases": []
+            "aliases": [
+              "Tabasco"
+            ]
           },
           {
             "label": "Worcestershire sauce",
@@ -12456,11 +13792,45 @@
       "rationale": "An accessible everyday food question with common starting answers and genuinely different traditional or commercial examples in its rarer tiers; no title-word or tag combinations.",
       "familiar": [
         "Croissant",
-        "Danish pastry",
+        "Danish",
         "Eclair",
         "Profiterole",
         "Cinnamon roll",
-        "Baklava"
+        "Baklava",
+        "Pain au chocolat",
+        "Mille-feuille",
+        "Napoleon",
+        "Palmier",
+        "Choux pastry",
+        "Puff pastry",
+        "Shortcrust pastry",
+        "Filo pastry",
+        "Cannoli",
+        "Cannolo",
+        "Sfogliatella",
+        "Turnover",
+        "Apple turnover",
+        "Cream horn",
+        "Strudel",
+        "Apple strudel",
+        "Puff puff",
+        "Churro",
+        "Beignet",
+        "Kouign-amann",
+        "Cronut",
+        "Cruffin",
+        "Pasty",
+        "Cornish pasty",
+        "Sausage roll",
+        "Empanada",
+        "Samosa",
+        "Spring roll",
+        "Spanakopita",
+        "Pastel de nata",
+        "Pastéis de nata",
+        "Maamoul",
+        "Rugelach",
+        "Kolache"
       ],
       "exclude": [
         "Spaghetti",
@@ -12470,7 +13840,11 @@
         "https://www.kingarthurbaking.com/recipes/pastry",
         "https://www.britannica.com/topic/pastry",
         "https://www.bbcgoodfood.com/recipes/collection/pastry-recipes",
-        "https://en.wikipedia.org/wiki/List_of_pastries"
+        "https://en.wikipedia.org/wiki/List_of_pastries",
+        "https://en.wikipedia.org/wiki/Puff-puff",
+        "https://www.kingarthurbaking.com/recipes/classic-beignets-recipe",
+        "https://www.kingarthurbaking.com/recipes/kolaches-sweet-savory-recipe",
+        "https://www.kikkoman.eu/food-stories/detail/spring-rolls-vs-summer-rolls"
       ],
       "answers": {
         "10": [
@@ -12606,7 +13980,10 @@
           },
           {
             "label": "Pastel de nata",
-            "aliases": []
+            "aliases": [
+              "Pasteis de nata",
+              "Pastéis de nata"
+            ]
           },
           {
             "label": "Egg tart",
@@ -12741,6 +14118,30 @@
           {
             "label": "Kremna rezina",
             "aliases": []
+          },
+          {
+            "label": "Churros",
+            "aliases": [
+              "Churro"
+            ]
+          },
+          {
+            "label": "Beignet",
+            "aliases": [
+              "Beignets"
+            ]
+          },
+          {
+            "label": "Spring roll",
+            "aliases": [
+              "Spring rolls"
+            ]
+          },
+          {
+            "label": "Kolache",
+            "aliases": [
+              "Kolaches"
+            ]
           }
         ],
         "60": [
@@ -13846,6 +15247,12 @@
           {
             "label": "Bizcocho de queso",
             "aliases": []
+          },
+          {
+            "label": "Puff puff",
+            "aliases": [
+              "Puff-puff"
+            ]
           }
         ],
         "85": [
@@ -13967,10 +15374,6 @@
           },
           {
             "label": "ChaSan",
-            "aliases": []
-          },
-          {
-            "label": "Churros",
             "aliases": []
           },
           {

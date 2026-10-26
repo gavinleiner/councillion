@@ -1,6 +1,6 @@
 {
-  "build": "45f78ae57d428bb7",
-  "count": 384,
+  "build": "bf754fa6fa16ca2e",
+  "count": 398,
   "categories": [
     {
       "id": "group-q001",
@@ -1835,12 +1835,28 @@
       "scope": "Vegetables, fruits, eggs, meats and seafood with established pickled preparations count. Vinegar and brine are ingredients, not foods being pickled."
     },
     {
+      "id": "authored-leaf-wrapped-food",
+      "prompt": "Name a named dish cooked or wrapped in plant leaves.",
+      "family": "food",
+      "group": "authored-situations",
+      "answerCount": 60,
+      "scope": "Traditional leaf-wrapped food parcels, dishes cooked between leaves or in leaf-lined containers, and dishes traditionally sold wrapped in leaves count. Food merely set on a leaf plate without leaf cooking or wrapping does not qualify."
+    },
+    {
       "id": "authored-corn-dishes",
       "prompt": "Name a corn-based food or drink.",
       "family": "food",
       "group": "authored-situations",
       "answerCount": 165,
       "scope": "Corn or cornmeal must be a defining ingredient. Foods, drinks and edible corn products count; incidental corn-derived additives do not make every food corn-based."
+    },
+    {
+      "id": "authored-noodle-dishes",
+      "prompt": "Name a named pasta or noodle dish.",
+      "family": "food",
+      "group": "authored-situations",
+      "answerCount": 119,
+      "scope": "Named dishes and established menu preparations count, including familiar meal names such as spaghetti, udon and soba, filled pastas and gnocchi. A bare unfilled pasta-shape name without a dish or established menu preparation does not count. Plain tteokbokki is a rice-cake dish; rabokki includes noodles."
     },
     {
       "id": "authored-foods-with-custard",
@@ -1963,6 +1979,22 @@
       "scope": "Established ice and snow sports and competitive disciplines count. A sport merely played during the winter on an ordinary indoor court does not qualify."
     },
     {
+      "id": "authored-motorsport-disciplines",
+      "prompt": "Name a motorsport or established motor-racing series.",
+      "family": "sports",
+      "group": "authored-situations",
+      "answerCount": 112,
+      "scope": "Recognized motor-vehicle competitions and racing series count, including cars, motorcycles, boats, snowmobiles and powered aircraft. Drivers, vehicle manufacturers and unpowered sports do not qualify by themselves."
+    },
+    {
+      "id": "authored-bodyweight-exercises",
+      "prompt": "Name an exercise that can be done using your bodyweight instead of added weights.",
+      "family": "sports",
+      "group": "authored-properties",
+      "answerCount": 167,
+      "scope": "Named exercises and recognized variations count, including floor exercises, holds and movements on a pull-up bar. A bar or bench can provide support; dumbbells and loaded barbells are not required."
+    },
+    {
       "id": "authored-nba-regular-season-mvps",
       "prompt": "Name a player who has won the NBA regular-season MVP award.",
       "family": "sports",
@@ -1977,6 +2009,38 @@
       "group": "authored-situations",
       "answerCount": 36,
       "scope": "The quarterback must have started a winning Super Bowl, through Super Bowl LX in February 2026. Winning a ring as a backup alone does not count."
+    },
+    {
+      "id": "authored-animals-with-horns",
+      "prompt": "Name a real animal that has horns or antlers.",
+      "family": "nature",
+      "group": "authored-properties",
+      "answerCount": 140,
+      "scope": "Living and extinct animals count, including beetle horns and other actual horn-like structures. Feathers that merely look like horns do not count. A named animal group counts when it contains horned or antlered members."
+    },
+    {
+      "id": "authored-bioluminescent-animals",
+      "prompt": "Name an animal that can produce its own light.",
+      "family": "nature",
+      "group": "authored-properties",
+      "answerCount": 75,
+      "scope": "Bioluminescence, including light produced by symbiotic bacteria in an animal's light organ, counts. Reflection, fluorescence and bright coloring alone do not. Broad animal groups count when they contain documented luminous members."
+    },
+    {
+      "id": "authored-migrating-animals",
+      "prompt": "Name an animal that makes a regular seasonal migration.",
+      "family": "nature",
+      "group": "authored-properties",
+      "answerCount": 185,
+      "scope": "Named species and animal groups with documented recurring seasonal, breeding or feeding migrations count, including migrating populations of a species. One-off escapes or an individual simply wandering do not."
+    },
+    {
+      "id": "authored-underground-food-crops",
+      "prompt": "Name a food crop with an edible part that normally grows underground.",
+      "family": "nature",
+      "group": "authored-properties",
+      "answerCount": 85,
+      "scope": "Roots, tubers, rhizomes, bulbs, corms and underground fruits count. Named crop kinds and established edible varieties count. A normal above-ground fruit does not count merely because the plant has roots."
     },
     {
       "id": "authored-human-bone-names",
@@ -2075,6 +2139,46 @@
       "scope": "Named museums and museum complexes count, including historical institutions. Multiple institutions with the same name share an answer identity. A type of museum or a fictional museum is not a named real institution."
     },
     {
+      "id": "authored-cookie-biscuit-types",
+      "prompt": "Name a type of cookie or biscuit, including named branded varieties.",
+      "family": "food",
+      "group": "authored-whole-concept",
+      "answerCount": 209,
+      "scope": "Named cookie and sweet biscuit varieties, brands and traditional preparations count. Regional names for the same biscuit share one answer; a cake or cracker is not automatically a cookie."
+    },
+    {
+      "id": "authored-named-pies",
+      "prompt": "Name a pie, tart or flan.",
+      "family": "food",
+      "group": "authored-whole-concept",
+      "answerCount": 242,
+      "scope": "Named sweet and savory pies, tarts and flans count. Established dishes conventionally called pies count even when they use mash, crumbs or cake, including Boston cream pie and whoopie pie. An ordinary cake without a conventional pie name, pizza or an uncrusted omelette does not qualify."
+    },
+    {
+      "id": "authored-ice-cream-flavors",
+      "prompt": "Name a real ice-cream flavor.",
+      "family": "food",
+      "group": "authored-whole-concept",
+      "answerCount": 265,
+      "scope": "Established ice-cream and gelato flavor names, including named branded flavors and dairy-free ice-cream equivalents, count. An invented combination is not automatically an established flavor. A sorbet-only flavor is not evidence of an ice-cream flavor."
+    },
+    {
+      "id": "authored-breakfast-cereal-products",
+      "prompt": "Name a breakfast cereal, cereal brand or named cereal product.",
+      "family": "food",
+      "group": "authored-whole-concept",
+      "answerCount": 930,
+      "scope": "Named breakfast-cereal kinds, brands and products count, including hot cereals, muesli, granola and historical products. An unrelated food does not count just because its maker also sells cereal."
+    },
+    {
+      "id": "authored-fermentation-foods",
+      "prompt": "Name a food or drink made using fermentation.",
+      "family": "food",
+      "group": "authored-whole-concept",
+      "answerCount": 357,
+      "scope": "Named foods, drinks and edible ingredients traditionally produced using microbial fermentation count, including foods subsequently cooked or distilled. An optional fermented ingredient does not make every mixed dish a separate fermentation product."
+    },
+    {
       "id": "authored-salad-dressings",
       "prompt": "Name a salad dressing.",
       "family": "food",
@@ -2105,6 +2209,14 @@
       "group": "authored-whole-concept",
       "answerCount": 569,
       "scope": "Commercial nonalcoholic soda and soft-drink brands or named product lines count worldwide, including discontinued products. Plain bottled water and an unbranded beverage category alone do not count."
+    },
+    {
+      "id": "authored-pastry-types",
+      "prompt": "Name a type of pastry.",
+      "family": "food",
+      "group": "authored-whole-concept",
+      "answerCount": 389,
+      "scope": "Established sweet or savory pastries, named regional pastry foods and pastry families count. A bread, cake or biscuit is not automatically pastry; an established laminated or filled pastry preparation qualifies."
     },
     {
       "id": "authored-record-labels",

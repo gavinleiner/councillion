@@ -1,0 +1,499 @@
+{
+  "note": "Explicit scope, primary-name and common-input repairs. Familiar probes are evaluated; out-of-scope Frittata is a negative. No global matcher change and no extra questions from these answer repairs.",
+  "repairs": {
+    "cookie-biscuit-types": {
+      "familiar": [
+        "Oreo",
+        "Chocolate chip",
+        "Sugar cookie",
+        "Oatmeal raisin cookie",
+        "Peanut butter cookie",
+        "Shortbread",
+        "Gingerbread",
+        "Gingersnap",
+        "Macaron",
+        "Macaroon",
+        "Snickerdoodle",
+        "Biscotti",
+        "Biscoff",
+        "Digestive",
+        "Hobnob",
+        "Tim Tam",
+        "Milano",
+        "Nutter Butter",
+        "Chips Ahoy",
+        "Stroopwafel",
+        "Fortune cookie",
+        "Animal cracker",
+        "Nilla Wafer",
+        "Fig Newton",
+        "Samoa",
+        "Thin Mint",
+        "Tagalong",
+        "Do-si-do",
+        "Trefoil",
+        "Madeleine",
+        "Butter cookie",
+        "Pizzelle",
+        "Linzer cookie",
+        "Amaretti",
+        "Florentine biscuit",
+        "Anzac biscuit"
+      ],
+      "exclude": [
+        "Cheeseburger",
+        "Spaghetti"
+      ],
+      "aliases": {
+        "Digestive biscuit": [
+          "Digestive"
+        ],
+        "Samoas": [
+          "Samoa"
+        ],
+        "Thin Mints": [
+          "Thin Mint"
+        ],
+        "Tagalongs": [
+          "Tagalong"
+        ],
+        "Do-si-dos": [
+          "Do-si-do"
+        ],
+        "Trefoils": [
+          "Trefoil"
+        ]
+      },
+      "additions": [
+        {
+          "label": "Madeleine",
+          "aliases": [
+            "Madeleines",
+            "Madeleine cookie"
+          ],
+          "points": 30
+        },
+        {
+          "label": "Amaretti",
+          "aliases": [
+            "Amaretti cookies"
+          ],
+          "points": 30
+        }
+      ],
+      "merges": {},
+      "references": [
+        "https://www.kingarthurbaking.com/recipes/vanilla-madeleine-cookies-recipe",
+        "https://www.girlscouts.org/en/cookies/cookie-flavors.html",
+        "https://www.amarettivirginia.com/en/"
+      ],
+      "points": {
+        "Digestive biscuit": 10,
+        "Oatmeal raisin cookie": 30,
+        "Fortune cookie": 30,
+        "Animal cracker": 30
+      }
+    },
+    "named-pies": {
+      "familiar": [
+        "Apple pie",
+        "Cherry pie",
+        "Chicken pot pie",
+        "Shepherds pie",
+        "Pumpkin pie",
+        "Key lime pie",
+        "Pecan pie",
+        "Lemon meringue pie",
+        "Blueberry pie",
+        "Peach pie",
+        "Strawberry pie",
+        "Rhubarb pie",
+        "Sweet potato pie",
+        "Coconut cream pie",
+        "Banana cream pie",
+        "Chocolate cream pie",
+        "French silk pie",
+        "Boston cream pie",
+        "Cottage pie",
+        "Steak and kidney pie",
+        "Pork pie",
+        "Fish pie",
+        "Mince pie",
+        "Banoffee pie",
+        "Quiche",
+        "Treacle tart",
+        "Butter tart",
+        "Bakewell tart",
+        "Egg tart",
+        "Flan",
+        "Tarte Tatin",
+        "Whoopie pie",
+        "Engadine nut tart"
+      ],
+      "exclude": [
+        "Pizza",
+        "Hamburger",
+        "Frittata",
+        "Chocolate cake"
+      ],
+      "aliases": {},
+      "additions": [
+        {
+          "label": "Boston cream pie",
+          "aliases": [],
+          "points": 30
+        },
+        {
+          "label": "Whoopie pie",
+          "aliases": [
+            "Whoopie pies"
+          ],
+          "points": 30
+        },
+        {
+          "label": "Engadine nut tart",
+          "aliases": [
+            "Bündner Nusstorte",
+            "Engadin nut tart",
+            "Bündner walnut tart"
+          ],
+          "points": 60
+        }
+      ],
+      "merges": {},
+      "references": [
+        "https://www.kingarthurbaking.com/recipes/boston-cream-pie-recipe",
+        "https://www.kingarthurbaking.com/recipes/classic-chocolate-whoopie-pies-recipe",
+        "https://suvrettahouse.ch/en/shop/walnut-tart"
+      ],
+      "scope": "Named sweet and savory pies, tarts and flans count. Established dishes conventionally called pies count even when they use mash, crumbs or cake, including Boston cream pie and whoopie pie. An ordinary cake without a conventional pie name, pizza or an uncrusted omelette does not qualify."
+    },
+    "ice-cream-flavors": {
+      "familiar": [
+        "Vanilla",
+        "Chocolate",
+        "Strawberry",
+        "Mint chocolate chip",
+        "Cookies and cream",
+        "Cookie dough",
+        "Rocky road",
+        "Butter pecan",
+        "Pistachio",
+        "Neapolitan",
+        "Coffee",
+        "Caramel",
+        "Salted caramel",
+        "Peanut butter",
+        "Chocolate peanut butter",
+        "Cotton candy",
+        "Bubblegum",
+        "Birthday cake",
+        "Birthday Cake Remix",
+        "Cake batter",
+        "Banana",
+        "Mango",
+        "Coconut",
+        "Lemon",
+        "Raspberry",
+        "Matcha",
+        "Black sesame",
+        "Ube",
+        "Taro",
+        "Cherry Garcia",
+        "Phish Food",
+        "Chunky Monkey",
+        "Americone Dream",
+        "Chubby Hubby",
+        "Superman",
+        "Moose tracks",
+        "Rum raisin"
+      ],
+      "exclude": [
+        "Motor oil",
+        "Beef Wellington"
+      ],
+      "aliases": {},
+      "additions": [
+        {
+          "label": "Birthday Cake Remix",
+          "aliases": [],
+          "points": 30
+        },
+        {
+          "label": "Chubby Hubby",
+          "aliases": [
+            "Hubby Hubby"
+          ],
+          "points": 30
+        }
+      ],
+      "merges": {},
+      "references": [
+        "https://www.coldstonecreamery.com/icecream/signaturecreations/birthdaycakeremix/",
+        "https://smartlabel.unileverusa.com/076840100125-0001-en-US/index.html",
+        "https://www.freedomtomarry.org/blog/entry/ben-jerrys-renames-legendary-flavor-to-celebrate-freedom-to-marry"
+      ]
+    },
+    "breakfast-cereal-products": {
+      "familiar": [
+        "Cheerios",
+        "Honey Nut Cheerios",
+        "Froot Loops",
+        "Frosted Flakes",
+        "Lucky Charms",
+        "Cocoa Puffs",
+        "Cinnamon Toast Crunch",
+        "Rice Krispies",
+        "Corn Flakes",
+        "Raisin Bran",
+        "Fruity Pebbles",
+        "Cocoa Pebbles",
+        "Cap'n Crunch",
+        "Reese's Puffs",
+        "Cookie Crisp",
+        "Trix",
+        "Apple Jacks",
+        "Golden Grahams",
+        "Honeycomb",
+        "Life",
+        "Chex",
+        "Kix",
+        "Special K",
+        "Shredded Wheat",
+        "Weetabix",
+        "Grape-Nuts",
+        "Mini-Wheats",
+        "Krave",
+        "Wheaties",
+        "Total",
+        "Count Chocula",
+        "Boo Berry",
+        "Franken Berry",
+        "Oatmeal Crisp",
+        "Alpen",
+        "Muesli",
+        "Granola"
+      ],
+      "exclude": [
+        "Doritos",
+        "Cheetos"
+      ],
+      "aliases": {},
+      "additions": [
+        {
+          "label": "Muesli",
+          "aliases": [],
+          "points": 30
+        },
+        {
+          "label": "Granola",
+          "aliases": [],
+          "points": 10
+        },
+        {
+          "label": "Oatmeal",
+          "aliases": [
+            "Porridge",
+            "Oat porridge"
+          ],
+          "points": 10
+        },
+        {
+          "label": "Bran flakes",
+          "aliases": [],
+          "points": 30
+        },
+        {
+          "label": "Puffed rice",
+          "aliases": [
+            "Rice puffs"
+          ],
+          "points": 30
+        },
+        {
+          "label": "Puffed wheat",
+          "aliases": [],
+          "points": 30
+        },
+        {
+          "label": "Curves Fruit & Nut Crunch",
+          "aliases": [],
+          "points": 85
+        },
+        {
+          "label": "Curves Honey Crunch",
+          "aliases": [],
+          "points": 85
+        }
+      ],
+      "merges": {},
+      "references": [
+        "https://www.nestle-cereals.com/my/my-en/recipes",
+        "https://www.nestle-cereals.com/my/my-en/brands/granola",
+        "https://en.wikipedia.org/wiki/List_of_breakfast_cereals"
+      ],
+      "prompt": "Name a breakfast cereal, cereal brand or named cereal product.",
+      "scope": "Named breakfast-cereal kinds, brands and products count, including hot cereals, muesli, granola and historical products. An unrelated food does not count just because its maker also sells cereal."
+    },
+    "fermentation-foods": {
+      "familiar": [
+        "Yogurt",
+        "Kimchi",
+        "Sauerkraut",
+        "Kombucha",
+        "Miso",
+        "Tempeh",
+        "Kefir",
+        "Cheese",
+        "Bread",
+        "Sourdough",
+        "Beer",
+        "Wine",
+        "Cider",
+        "Sake",
+        "Soy sauce",
+        "Fish sauce",
+        "Natto",
+        "Gochujang",
+        "Doenjang",
+        "Douchi",
+        "Doubanjiang",
+        "Idli",
+        "Dosa",
+        "Injera",
+        "Poi",
+        "Kvass",
+        "Tepache",
+        "Lassi",
+        "Skyr",
+        "Kumis",
+        "Ayran",
+        "Vinegar",
+        "Tabasco",
+        "Salami",
+        "Pepperoni",
+        "Crème fraîche"
+      ],
+      "exclude": [
+        "Fresh apple",
+        "Table salt"
+      ],
+      "aliases": {
+        "Tabasco sauce": [
+          "Tabasco"
+        ]
+      },
+      "additions": [],
+      "merges": {},
+      "references": [
+        "https://www.tabasco.com/blog/about-our-barrels/",
+        "https://www.absolut.com/en/blog/vodka-and-spirits/introducing-absolut-tabasco/"
+      ]
+    },
+    "pastry-types": {
+      "familiar": [
+        "Croissant",
+        "Danish",
+        "Eclair",
+        "Profiterole",
+        "Cinnamon roll",
+        "Baklava",
+        "Pain au chocolat",
+        "Mille-feuille",
+        "Napoleon",
+        "Palmier",
+        "Choux pastry",
+        "Puff pastry",
+        "Shortcrust pastry",
+        "Filo pastry",
+        "Cannoli",
+        "Cannolo",
+        "Sfogliatella",
+        "Turnover",
+        "Apple turnover",
+        "Cream horn",
+        "Strudel",
+        "Apple strudel",
+        "Puff puff",
+        "Churro",
+        "Beignet",
+        "Kouign-amann",
+        "Cronut",
+        "Cruffin",
+        "Pasty",
+        "Cornish pasty",
+        "Sausage roll",
+        "Empanada",
+        "Samosa",
+        "Spring roll",
+        "Spanakopita",
+        "Pastel de nata",
+        "Pastéis de nata",
+        "Maamoul",
+        "Rugelach",
+        "Kolache"
+      ],
+      "exclude": [
+        "Spaghetti",
+        "Steak"
+      ],
+      "aliases": {
+        "Churros": [
+          "Churro"
+        ],
+        "Pastel de nata": [
+          "Pastéis de nata",
+          "Pasteis de nata"
+        ]
+      },
+      "additions": [
+        {
+          "label": "Puff puff",
+          "aliases": [
+            "Puff-puff"
+          ],
+          "points": 60
+        },
+        {
+          "label": "Beignet",
+          "aliases": [
+            "Beignets"
+          ],
+          "points": 30
+        },
+        {
+          "label": "Spring roll",
+          "aliases": [
+            "Spring rolls"
+          ],
+          "points": 30
+        },
+        {
+          "label": "Kolache",
+          "aliases": [
+            "Kolaches"
+          ],
+          "points": 30
+        }
+      ],
+      "merges": {},
+      "references": [
+        "https://www.kingarthurbaking.com/recipes/classic-beignets-recipe",
+        "https://www.kingarthurbaking.com/recipes/kolaches-sweet-savory-recipe",
+        "https://www.kikkoman.eu/food-stories/detail/spring-rolls-vs-summer-rolls",
+        "https://en.wikipedia.org/wiki/Puff-puff"
+      ],
+      "points": {
+        "Churros": 30
+      }
+    }
+  },
+  "retiredReferenceUrls": [
+    "https://www.kingarthurbaking.com/recipes/amaretti-recipe",
+    "https://www.kingarthurbaking.com/recipes/whoopie-pies-recipe",
+    "https://www.bobsredmill.com/collections/cereals",
+    "https://www.kingarthurbaking.com/recipes/beignets-recipe",
+    "https://www.kingarthurbaking.com/recipes/kolaches-recipe",
+    "https://www.kikkoman.com/en/cookbook/recipe/00001505.html"
+  ]
+}

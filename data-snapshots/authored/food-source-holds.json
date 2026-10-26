@@ -191,6 +191,11 @@
   },
   {
     "question": "breakfast-cereal-products",
+    "name": "Curves Fruit & Nut Crunch Curves Honey Crunch (2007)",
+    "reason": "Flattened parent list joins several different cereal products; the separate actual names are retained independently."
+  },
+  {
+    "question": "breakfast-cereal-products",
     "name": "W.K Kellogg No Added Sugar Simply Granola",
     "reason": "Flattened source list needs a manual label split"
   },
@@ -198,6 +203,11 @@
     "question": "breakfast-cereal-products",
     "name": "Muesli Gaia Muesli [ 6 ] Harvest Morn Fruit Muesli – Aldi Harvest Morn Fruit & Nut Muesli – Aldi Kelkin Fruit & Nut Muesli Specially Selected Berries & Cherries Muesli – Aldi Speci",
     "reason": "Flattened source list needs a manual label split"
+  },
+  {
+    "question": "breakfast-cereal-products",
+    "name": "Porridge Flahavan's Progress Oatlets Kavanagh's Porridge – Aldi",
+    "reason": "Flattened parent list joins several different cereal products; the separate actual names are retained independently."
   },
   {
     "question": "fermentation-foods",

@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Reconcile named foods with the finite fetched inventories, without inventing tails."""
 import collections,gzip,json,pathlib,re,sys,unicodedata
+from authored_food_repairs import apply_food_repairs
 ROOT=pathlib.Path(__file__).resolve().parents[1]
 source=json.load(gzip.open(ROOT/'data-snapshots/authored/sources/food-name-lists.json.gz'))
 target=ROOT/'data-snapshots/authored/batches/07-food-variety.json'
@@ -188,6 +189,8 @@ for key,page,kind in specs:
     # Brand names are permitted, but adding their actual cereal use avoids
     # silently accepting unrelated products sold by a supermarket.
     if cleaned in ['Tesco','Nabisco','Harvest Morn','Crownfield']:continue
+   if cleaned in ["Porridge Flahavan's Progress Oatlets Kavanagh's Porridge",'Curves Fruit & Nut Crunch Curves Honey Crunch']:
+    held.append({'question':key,'name':original,'reason':'Flattened parent list joins several different cereal products; the separate actual names are retained independently.'});continue
    for old,new in [('Total Cinnamon Crunch Total Corn','Total Cinnamon Crunch'),('Cracklin\' Oat Bran Kellogg\'s',"Cracklin' Oat Bran"),('Wheat Honeys Nabisco','Wheat Honeys'),('Bart Simpson \'s',"Bart Simpson's"),('Banana Nut Crunch - Post, Great Grains','Banana Nut Crunch'),('Cinnamon Grahams','Cinnamon Grahams~Curiously Cinnamon'),('Sugar Puffs','Sugar Puffs~Honey Monster Puffs')]:
     if cleaned==old:cleaned=new
   name,*als=cleaned.split('~')
@@ -217,6 +220,7 @@ for key,page,kind in specs:
  q['answers']=dict(tiers)
  q['references']=list(dict.fromkeys(q['references']+[source['pages'][page]['url']]))
  q['answerSource']='Whole factual source inventory reconciled with named familiar additions; unresolved source-label and eligibility issues are held in a separate ledger.'
+apply_food_repairs(batch['questions'])
 out=json.dumps(batch,ensure_ascii=False,indent=2)+'\n'
 if '--check'in sys.argv:assert target.read_text()==out,'Rebuild food inventories'
 else:target.write_text(out)

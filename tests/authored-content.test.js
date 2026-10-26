@@ -306,7 +306,7 @@ test('whole food inventories repair everyday guesses and merge equivalent prepar
  ])for(const n of names)assert.equal(resolveAnswer(pack(id),n).status,'exact',id+': '+n);
  for(const [id,a,b]of [['foods-with-custard','Portuguese egg tart','Pastel de nata'],['foods-with-custard','Custard bun','Custard bao'],['foods-with-custard','Creme renversee','Flan'],['corn-dishes','Tamale','Tamal']])assert.equal(resolveAnswer(pack(id),a).answer.label,resolveAnswer(pack(id),b).answer.label);
  for(const [id,names]of [['pickled-foods',['Pickling salt','Cucumber soup']],['corn-dishes',['Corn steep liquor','Ducana','Coca-Cola']],['foods-with-custard',['Wuzetka','Kogel mogel','Panna cotta']]]){const p=pack(id);for(const n of names)assert.equal(resolveAnswer({...p,answers:p.answers,excludedAnswers:names},n).status,'missing',id+': '+n);}
- assert.equal(MIXED_PACKS.includes(pack('leaf-wrapped-food')),false,'unfinished leaf source audit remains outside play');
+ assert.equal(approved.has('authored-leaf-wrapped-food'),true,'the completed leaf-parcel review has an explicit admission record');
 });
 
 
