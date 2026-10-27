@@ -1,0 +1,289 @@
+[
+  {
+    "sourceFile": "source-receipts.json",
+    "url": "https://www.froneri.com/en/brands/",
+    "file": "primary-00.html",
+    "status": "unavailable-no-retry",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "sourceFile": "source-receipts.json",
+    "url": "https://corporate.magnumicecream.com/en/home.html",
+    "file": "primary-01.html",
+    "status": "unavailable-no-retry",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "sourceFile": "source-receipts.json",
+    "url": "https://www.unileverfoodsolutions.co.uk/ice-cream/brands.html?gtm_latency=1",
+    "file": "primary-02.html",
+    "status": "unavailable-no-retry",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "sourceFile": "source-receipts.json",
+    "url": "https://www.mars.com/pl-pl/our-brands/mars-snacking",
+    "file": "primary-03.html",
+    "bytes": 223900,
+    "sha256": "46f0f5b4ac548ff41862858bb8189b5604a7c3f434657dc40d3834984e00c8cd",
+    "status": "captured"
+  },
+  {
+    "sourceFile": "source-receipts.json",
+    "url": "https://termsandconditions.mars.com/articles/mars-frozen-sweepstakes-official-rules",
+    "file": "primary-04.html",
+    "bytes": 79777,
+    "sha256": "863dd3bb884291e781e361fe72771a95d513a6fb4f1d54c402dc7034fcd09bda",
+    "status": "captured"
+  },
+  {
+    "sourceFile": "source-receipts.json",
+    "url": "https://www.unileverfoodsolutions.us/product-catalog/ice-cream.html",
+    "file": "primary-05.html",
+    "status": "unavailable-no-retry",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "sourceFile": "source-receipts.json",
+    "url": "https://www.unilever.com/files/introduction-to-the-magnum-ice-cream-company.pdf",
+    "file": "primary-06.pdf",
+    "bytes": 4714921,
+    "sha256": "c8e3db41ef2f1e89bd8301d938519a3bb8d7676d65eb34219e275bdd5d21c713",
+    "status": "captured"
+  },
+  {
+    "sourceFile": "source-receipts.json",
+    "url": "https://wellsenterprisesinc.com/",
+    "file": "primary-07.html",
+    "status": "unavailable-no-retry",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "sourceFile": "source-receipts.json",
+    "url": "https://wellsenterprisesinc.com/new-items",
+    "file": "primary-08.html",
+    "status": "unavailable-no-retry",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "sourceFile": "source-receipts.json",
+    "url": "https://wellsfoodservice.com/brands",
+    "file": "primary-09.html",
+    "status": "unavailable-no-retry",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "sourceFile": "source-receipts.json",
+    "url": "https://www.marsfoodservices.com/brands-products/ice-cream",
+    "file": "primary-10.html",
+    "status": "unavailable-no-retry",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "sourceFile": "source-receipts.json",
+    "url": "https://www.snickers.com/ice-cream-collection",
+    "file": "primary-11.html",
+    "bytes": 92704,
+    "sha256": "77986b71a6dfcf85773b145288ec7a83974def9e323a2857589aa0fc6f50f7c7",
+    "status": "captured"
+  },
+  {
+    "sourceFile": "source-receipts.json",
+    "url": "https://www.dunkinbrands.com/company/about/about-dunkin-brands",
+    "file": "primary-12.html",
+    "bytes": 27029,
+    "sha256": "b75806c0af3c8118cbd1f04a3376139d280f99355d49708298a3f299108b34c2",
+    "status": "captured"
+  },
+  {
+    "sourceFile": "source-receipts.json",
+    "url": "https://baskinrobbinsathome.com/pages/boardwalk-frozen-treats",
+    "file": "primary-13.html",
+    "bytes": 354779,
+    "sha256": "5045c0dc58d88c250991a785ecd5b151c5b98bb568b439c94b47af39a4179ee7",
+    "status": "captured"
+  },
+  {
+    "sourceFile": "list-receipts.json",
+    "key": "brands",
+    "url": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+    "error": "HTTP Error 403: Forbidden",
+    "status": "unavailable-no-retry"
+  },
+  {
+    "sourceFile": "list-receipts.json",
+    "key": "yogurt",
+    "url": "https://en.wikipedia.org/wiki/List_of_frozen_yogurt_companies",
+    "error": "HTTP Error 403: Forbidden",
+    "status": "unavailable-no-retry"
+  },
+  {
+    "sourceFile": "list-receipts.json",
+    "key": "parlors",
+    "url": "https://en.wikipedia.org/wiki/List_of_ice_cream_parlor_chains",
+    "error": "HTTP Error 403: Forbidden",
+    "status": "unavailable-no-retry"
+  },
+  {
+    "sourceFile": "familiar-receipts.json",
+    "url": "https://www.icecream.com/us/en/brands",
+    "file": "familiar-00.html",
+    "bytes": 57951,
+    "sha256": "6b823b758bbbc1cafeccf9c69e36ce8dd43951f93a918441c83f376f23a93913",
+    "status": "captured"
+  },
+  {
+    "sourceFile": "familiar-receipts.json",
+    "url": "https://www.icecream.com/us/en/brands/dreyers",
+    "file": "familiar-01.html",
+    "bytes": 42689,
+    "sha256": "3d20e90a6ee941803b3493e47c97c5a52e4b38962f0b2fc896b495f0a8c0cea2",
+    "status": "captured"
+  },
+  {
+    "sourceFile": "familiar-receipts.json",
+    "url": "https://www.nestle.com/brands/ice-cream",
+    "file": "familiar-02.html",
+    "status": "unavailable-no-retry",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "sourceFile": "familiar-receipts.json",
+    "url": "https://brighams.com/",
+    "file": "familiar-03.html",
+    "bytes": 20023,
+    "sha256": "028059085ae800bed5ce8b33391f29ea5e2d9e1155f7464ce76872175830b6fd",
+    "status": "captured"
+  },
+  {
+    "sourceFile": "familiar-receipts.json",
+    "url": "https://chapmans.ca/products/",
+    "file": "familiar-04.html",
+    "status": "unavailable-no-retry",
+    "error": "<urlopen error [SSL: TLSV1_ALERT_PROTOCOL_VERSION] tlsv1 alert protocol version (_ssl.c:1129)>"
+  },
+  {
+    "sourceFile": "familiar-receipts.json",
+    "url": "https://www.bluebell.com/",
+    "file": "familiar-05.html",
+    "status": "unavailable-no-retry",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "sourceFile": "familiar-receipts.json",
+    "url": "https://www.tillamook.com/products/ice-cream",
+    "file": "familiar-06.html",
+    "bytes": 3684790,
+    "sha256": "3d84d1a27cdcefd4ef1b28c9e25fae3952baeea45bcfcd336efae4a8f346393f",
+    "status": "captured"
+  },
+  {
+    "sourceFile": "familiar-receipts.json",
+    "url": "https://hood.com/",
+    "file": "familiar-07.html",
+    "bytes": 37871,
+    "sha256": "3fd78fa236d64a02388c5d00fa8ea80bdda2fb7784357492922946ab0f8ce851",
+    "status": "captured"
+  },
+  {
+    "sourceFile": "familiar-receipts.json",
+    "url": "https://www.mayfielddairy.com/",
+    "file": "familiar-08.html",
+    "status": "unavailable-no-retry",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "sourceFile": "familiar-receipts.json",
+    "url": "https://www.perrysicecream.com/",
+    "file": "familiar-09.html",
+    "status": "unavailable-no-retry",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "sourceFile": "familiar-receipts.json",
+    "url": "https://www.graeters.com/",
+    "file": "familiar-10.html",
+    "bytes": 1170810,
+    "sha256": "cd95c3515b049ba57f229218474ec7e6d09460e70d7ae9d7881f36e12d734f89",
+    "status": "captured"
+  },
+  {
+    "sourceFile": "familiar-receipts.json",
+    "url": "https://jenis.com/",
+    "file": "familiar-11.html",
+    "bytes": 1377179,
+    "sha256": "17283de7abe6cc56c6ac5797fc2a3ebae40b1f8b9c9e6dcfeb40cce2e288db31",
+    "status": "captured"
+  },
+  {
+    "sourceFile": "familiar-receipts.json",
+    "url": "https://saltandstraw.com/",
+    "file": "familiar-12.html",
+    "bytes": 362676,
+    "sha256": "db6b17d97f2ac4aa6939453c29d5aaa8b2118917492d428fb7dd536d8e541bb1",
+    "status": "captured"
+  },
+  {
+    "sourceFile": "familiar-receipts.json",
+    "url": "https://vanleeuwenicecream.com/",
+    "file": "familiar-13.html",
+    "status": "unavailable-no-retry",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "sourceFile": "familiar-receipts.json",
+    "url": "https://eatenlightened.com/",
+    "file": "familiar-14.html",
+    "bytes": 2969,
+    "sha256": "dfc22ceba009290fb8d53f2b4da5a0080149a17706784ede684cd3beba1ea98d",
+    "status": "captured"
+  },
+  {
+    "sourceFile": "familiar-receipts.json",
+    "url": "https://friendlys.com/",
+    "file": "familiar-15.html",
+    "status": "unavailable-no-retry",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "sourceFile": "familiar-receipts.json",
+    "url": "https://www.dairyqueen.com/en-us/",
+    "file": "familiar-16.html",
+    "status": "unavailable-no-retry",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "sourceFile": "familiar-receipts.json",
+    "url": "https://www.coldstonecreamery.com/",
+    "file": "familiar-17.html",
+    "bytes": 46864,
+    "sha256": "e741e55e84337263a4cafdb22858553e407046bfc953fb876fa7de0abbd17fb0",
+    "status": "captured"
+  },
+  {
+    "sourceFile": "familiar-receipts.json",
+    "url": "https://www.carvel.com/",
+    "file": "familiar-18.html",
+    "status": "unavailable-no-retry",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "sourceFile": "familiar-receipts.json",
+    "url": "https://www.dippindots.com/",
+    "file": "familiar-19.html",
+    "bytes": 102411,
+    "sha256": "c081511cc0a20ebf2926a036b3ffcccee0e6cc17fc69c206ddb08b289ff19f20",
+    "status": "captured"
+  },
+  {
+    "source": "indexed-complete-list-sections",
+    "urls": [
+      "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+      "https://en.wikipedia.org/wiki/List_of_ice_cream_parlor_chains",
+      "https://en.wikipedia.org/wiki/List_of_frozen_yogurt_companies",
+      "https://en.wikipedia.org/wiki/List_of_frozen_dessert_brands"
+    ],
+    "status": "Main list sections read completely through indexed browser retrieval; direct HTTP403 failures remain separate. No alternate endpoints or evasion.",
+    "historicalScope": true
+  }
+]

@@ -1,0 +1,203 @@
+{
+  "frozen-dessert-brands": {
+    "holds": {},
+    "renameRepairs": {},
+    "aliasMerges": {
+      "Dreyer's": [
+        "Edy's",
+        "Dreyer's Grand Ice Cream",
+        "Edy's Grand Ice Cream"
+      ],
+      "Cows Creamery": [
+        "COWS"
+      ],
+      "Ample Hills": [
+        "Ample Hills Creamery"
+      ],
+      "Bresler's Ice Cream": [
+        "Bresler's 33 Flavors",
+        "Bresler's"
+      ],
+      "Edy's Pie": [
+        "Eskimo Pie"
+      ],
+      "Bassetts Ice Cream": [
+        "Bassetts",
+        "Bassetts Ice"
+      ],
+      "Bell Ice Cream": [
+        "Bell"
+      ],
+      "Brigham's Ice Cream": [
+        "Brigham's"
+      ],
+      "Creamery Novelties": [
+        "Creamery Novelties Ice Cream"
+      ],
+      "Havmor": [
+        "Havmor Ice Cream"
+      ],
+      "Handel's Homemade Ice Cream & Yogurt": [
+        "Handel's",
+        "Handel's Ice Cream"
+      ],
+      "Hennig-Olsen": [
+        "Hennig Olsen Is",
+        "Hennig-Olsen Iskremfabrikk"
+      ],
+      "Hershey Creamery Company": [
+        "Hershey's Ice Cream"
+      ],
+      "It's-It": [
+        "It's-It Ice Cream"
+      ],
+      "Jeni's": [
+        "Jeni's Splendid Ice Creams"
+      ],
+      "Kawartha Dairy": [
+        "Kawartha Dairy Company"
+      ],
+      "Kelly's of Cornwall": [
+        "Kelly's"
+      ],
+      "Mauds": [
+        "Mauds Ice Creams"
+      ],
+      "Mayfield": [
+        "Mayfield Dairy",
+        "Mayfield Creamery",
+        "Mayfield Dairy Farms"
+      ],
+      "Milky Mist": [
+        "Milky Mist Dairy"
+      ],
+      "Mövenpick": [
+        "Movenpick Ice Cream"
+      ],
+      "Mr. Green Tea": [
+        "Mr. Green Tea Ice Cream Company"
+      ],
+      "Naturals Ice Cream": [
+        "Natural Ice Cream"
+      ],
+      "Perry's": [
+        "Perry's Ice Cream"
+      ],
+      "Pierre's": [
+        "Pierre's Ice Cream Company",
+        "Pierre's Ice Cream"
+      ],
+      "Sweet Republic": [
+        "Sweet Republic Ice Cream"
+      ],
+      "Van Leeuwen": [
+        "Van Leeuwen Ice Cream"
+      ],
+      "Yarnell's": [
+        "Yarnell Ice Cream Co.",
+        "Yarnell Ice Cream"
+      ],
+      "Dairy Queen": [
+        "DQ"
+      ],
+      "Ben & Jerry's": [
+        "Ben and Jerry's"
+      ],
+      "Cold Stone Creamery": [
+        "Cold Stone"
+      ],
+      "Blue Bell": [
+        "Blue Bell Creameries"
+      ],
+      "Blue Bunny": [
+        "Blue Bunny Ice Cream"
+      ],
+      "Breyers": [
+        "Breyers Ice Cream"
+      ],
+      "Bruster's": [
+        "Bruster's Ice Cream",
+        "Bruster's Real Ice Cream"
+      ],
+      "Ciao Bella": [
+        "Ciao Bella Gelato Company"
+      ],
+      "Freddy's Frozen Custard & Steakburgers": [
+        "Freddy's Frozen Custard"
+      ],
+      "Rita's": [
+        "Rita's Italian Ice",
+        "Rita's Italian Ice & Frozen Custard",
+        "Rita's Water Ice"
+      ],
+      "Menchie's": [
+        "Menchie's Frozen Yogurt"
+      ],
+      "Orange Leaf": [
+        "Orange Leaf Frozen Yogurt"
+      ],
+      "Sweet Frog": [
+        "sweetFrog"
+      ],
+      "TCBY": [
+        "The Country's Best Yogurt"
+      ],
+      "Tutti Frutti Frozen Yogurt": [
+        "Tutti Frutti"
+      ],
+      "Yogen Früz": [
+        "Yogen Fruz"
+      ],
+      "Wendy's Milk Bar": [
+        "Wendy's Supa Sundaes"
+      ],
+      "MaggieMoo's": [
+        "MaggieMoo's Ice Cream and Treatery"
+      ],
+      "Mixue": [
+        "Mixue Ice Cream & Tea"
+      ],
+      "ICEE": [
+        "The Icee Company"
+      ],
+      "Tofutti": [
+        "Tofutti Cuties"
+      ],
+      "Slush Puppie": [
+        "SLUSH PUPPiE"
+      ],
+      "Snack and a half": [
+        "Snack and a Half Ice Cream Sandwich"
+      ],
+      "Bon Ice": [
+        "BonIce"
+      ],
+      "3 kaveria": [
+        "3 Friends"
+      ],
+      "Snickers Ice Cream": [
+        "Snickers"
+      ],
+      "Dove Ice Cream": [
+        "Dove"
+      ],
+      "M&M'S Ice Cream": [
+        "M&M'S",
+        "M and Ms Ice Cream"
+      ],
+      "Twix Ice Cream": [
+        "Twix"
+      ],
+      "Milky Way Ice Cream": [
+        "Milky Way"
+      ],
+      "Starburst Sorbet": [
+        "Starburst"
+      ],
+      "Kind Frozen": [
+        "Kind"
+      ]
+    },
+    "displayNames": {}
+  }
+}

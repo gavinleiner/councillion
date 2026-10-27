@@ -1,6 +1,6 @@
 {
-  "build": "2471449a53c2a01c",
-  "count": 467,
+  "build": "816e1476ff50fb4d",
+  "count": 468,
   "categories": [
     {
       "id": "group-q001",
@@ -3737,6 +3737,14 @@
       "group": "authored-whole-peppers-messengers",
       "answerCount": 137,
       "scope": "Documented natural human hormones/neurotransmitters and named groups count. Natural dual-role messengers count. Synthetic drug-only analogues and organs do not. Actual published abbreviations count; do not generate initials."
+    },
+    {
+      "id": "authored-frozen-dessert-brands",
+      "prompt": "Name an ice-cream or frozen-dessert brand.",
+      "family": "food",
+      "group": "authored-whole-frozen-brands",
+      "answerCount": 320,
+      "scope": "Real current or historical ice-cream, gelato, frozen-custard, frozen-yogurt, sorbet, ice-pop and branded ice/slush treats count. Documented specialty chains, actual licensed product-line brands and store labels count. Different flavors, package sizes and unbranded desserts are not brands; neither pet food nor a company with no proven frozen-dessert product qualifies."
     }
   ]
 }

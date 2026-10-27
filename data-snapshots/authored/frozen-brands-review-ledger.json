@@ -1,0 +1,3878 @@
+{
+  "frozen-dessert-brands": {
+    "sourceRows": 369,
+    "held": [
+      {
+        "label": "Karnataka Milk Federation",
+        "reason": "Corporate federation is not merged with its separately proven Nandini consumer brand."
+      },
+      {
+        "label": "Thirst Buster",
+        "reason": "Source list alone does not establish which standard fountain-beverage products are actually frozen."
+      },
+      {
+        "label": "Swisslion Group",
+        "reason": "Broad parent portfolio alone is insufficient branded frozen-product proof; no automatic child-brand propagation."
+      },
+      {
+        "label": "24 Flavors of Soft Serve",
+        "reason": "Generic machine/variety claim without verified independent brand identity."
+      },
+      {
+        "label": "Keventers Milkshake",
+        "reason": "Milkshake-only label is not proven a frozen dessert brand by list membership."
+      },
+      {
+        "label": "Slurpee Flavor Tie-Ins",
+        "reason": "Source article/category about licensing tie-ins, not an additional brand."
+      },
+      {
+        "label": "Frosty Paws",
+        "reason": "Pet frozen treats, outside this human-dessert scope."
+      },
+      {
+        "label": "Vanilla",
+        "reason": "Generic flavor, not a brand."
+      },
+      {
+        "label": "Ice cream sandwich",
+        "reason": "Generic dessert form, not a brand."
+      }
+    ],
+    "canonicalAnswers": 320,
+    "independentFamiliarInputs": 37,
+    "scoring": "Explicit editorial familiarity tiers, not measured player frequencies and not spelling length.",
+    "canonicalSourceMap": {
+      "Aavin": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Aavin",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Abbott's Frozen Custard": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Abbott's Frozen Custard",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Algida": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Algida",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Amul": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Amul",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Anita Gelato": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Anita Gelato",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Arun Icecreams": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Arun Icecreams",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Australian Homemade": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Australian Homemade",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Bambino Ice Cream": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Bambino Ice Cream",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Bon Ice Cream": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Bon Ice Cream",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Bonnie Doon Ice Cream": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Bonnie Doon Ice Cream",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Braum's": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Braum's",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Bubbies": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Bubbies",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Bulla": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Bulla",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Cauldron Ice Cream": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Cauldron Ice Cream",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Cargills Magic": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Cargills Magic",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Carvel": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Carvel",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        },
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "first-party-familiar-proof",
+          "label": "Carvel",
+          "origin": "https://www.carvel.com/",
+          "review": "Confirms an original independently proposed familiar input; paused or historical production does not invalidate this historical-inclusive scope."
+        }
+      ],
+      "Chapman's": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Chapman's",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        },
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "first-party-familiar-proof",
+          "label": "Chapman's",
+          "origin": "https://chapmans.ca/products/",
+          "review": "Confirms an original independently proposed familiar input; paused or historical production does not invalidate this historical-inclusive scope."
+        }
+      ],
+      "Chicecream": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Chicecream",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Chilly Moo's Ice Cream Treatery": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Chilly Moo's Ice Cream Treatery",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Choctál": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Choctál",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Cold Rock Ice Creamery": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Cold Rock Ice Creamery",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Colonial Ice Cream": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Colonial Ice Cream",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Coolhaus": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Coolhaus",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Cream Stone": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Cream Stone",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Crem Helado": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Crem Helado",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Dewar's": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Dewar's",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Dickie Dee": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Dickie Dee",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Diplom-Is": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Diplom-Is",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Dippin' Dots": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Dippin' Dots",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        },
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "first-party-familiar-proof",
+          "label": "Dippin' Dots",
+          "origin": "https://www.dippindots.com/",
+          "review": "Confirms an original independently proposed familiar input; paused or historical production does not invalidate this historical-inclusive scope."
+        }
+      ],
+      "D'Onofrio": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "D'Onofrio",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Double Rainbow": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Double Rainbow",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Dale Farm": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Dale Farm",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Elephant House": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Elephant House",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Eskimo": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Eskimo",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Fan Milk": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Fan Milk",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Fenocchio": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Fenocchio",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Fieldbrook Farms": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Fieldbrook Farms",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Friendly's": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Friendly's",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        },
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "first-party-familiar-proof",
+          "label": "Friendly's",
+          "origin": "https://friendlys.com/",
+          "review": "Confirms an original independently proposed familiar input; paused or historical production does not invalidate this historical-inclusive scope."
+        }
+      ],
+      "Frikom": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Frikom",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Froneri": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Froneri",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Frosteez Ice Cream": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Frosteez Ice Cream",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "GB Glace": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "GB Glace",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Gelato Italia": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Gelato Italia",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Giolitti": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Giolitti",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Glacio": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Glacio",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Golden North": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Golden North",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Good Humor": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Good Humor",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        },
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "primary-portfolio-brand",
+          "label": "Good Humor",
+          "origin": "https://www.goodhumor.com/us/en/products.html",
+          "review": "Explicit named frozen product/brand. Product flavor, package count and shared parent do not create identities."
+        }
+      ],
+      "Graeter's": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Graeter's",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        },
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "first-party-familiar-proof",
+          "label": "Graeter's",
+          "origin": "https://www.graeters.com/",
+          "review": "Confirms an original independently proposed familiar input; paused or historical production does not invalidate this historical-inclusive scope."
+        }
+      ],
+      "Grido Helado": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Grido Helado",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Grom": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Grom",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Häagen-Dazs": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Häagen-Dazs",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        },
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "primary-portfolio-brand",
+          "label": "Häagen-Dazs",
+          "origin": "https://www.icecream.com/us/en/brands",
+          "review": "Explicit named frozen product/brand. Product flavor, package count and shared parent do not create identities."
+        },
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "primary-portfolio-brand",
+          "label": "Häagen-Dazs",
+          "origin": "https://www.nestle.com/brands/ice-cream",
+          "review": "Explicit named frozen product/brand. Product flavor, package count and shared parent do not create identities."
+        }
+      ],
+      "Halo Top": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Halo Top",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        },
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "primary-portfolio-brand",
+          "label": "Halo Top",
+          "origin": "https://wellsfoodservice.com/brands",
+          "review": "Explicit named frozen product/brand. Product flavor, package count and shared parent do not create identities."
+        }
+      ],
+      "HB Ice Cream": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "HB Ice Cream",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Herrell's Ice Cream": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Herrell's Ice Cream",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Hertog": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Hertog",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Hjem-IS": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Hjem-IS",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Howard Johnson's": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Howard Johnson's",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Humboldt Creamery": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Humboldt Creamery",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Ideal Ice Cream": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Ideal Ice Cream",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "J.P. Licks": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "J.P. Licks",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Jack and Jill Ice Cream": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Jack and Jill Ice Cream",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Joe Delucci's": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Joe Delucci's",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "KaleidoScoops": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "KaleidoScoops",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Kibon": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Kibon",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Klondike": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Klondike",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        },
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "first-party-familiar-proof",
+          "label": "Klondike",
+          "origin": "https://www.klondikebar.com/us/en/products/bars.html",
+          "review": "Confirms an original independently proposed familiar input; paused or historical production does not invalidate this historical-inclusive scope."
+        }
+      ],
+      "Kowloon Dairy": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Kowloon Dairy",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Kwality Wall's": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Kwality Wall's",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Kyl21": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Kyl21",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Langnese": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Langnese",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Laura Secord": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Laura Secord",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Ledo": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Ledo",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Lick Me I'm Delicious": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Lick Me I'm Delicious",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "The Licktators": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "The Licktators",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        },
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "additional-reviewed-familiar-tail",
+          "label": "The Licktators",
+          "origin": "https://www.thegrocer.co.uk/news/ocado-lists-new-licktators-british-ice-cream-brand/358416.article",
+          "review": "Actual named frozen brand/product line. Discontinuation does not make a historical answer false."
+        }
+      ],
+      "Lovin' Scoopful": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Lovin' Scoopful",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Lyons Maid": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Lyons Maid",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Mackie's": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Mackie's",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Mado": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Mado",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Magnolia": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Magnolia",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Magnum": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Magnum",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        },
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "primary-portfolio-brand",
+          "label": "Magnum",
+          "origin": "https://corporate.magnumicecream.com/en/home.html",
+          "review": "Explicit named frozen product/brand. Product flavor, package count and shared parent do not create identities."
+        },
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "primary-portfolio-brand",
+          "label": "Magnum",
+          "origin": "https://www.unileverfoodsolutions.co.uk/ice-cream/brands.html?gtm_latency=1",
+          "review": "Explicit named frozen product/brand. Product flavor, package count and shared parent do not create identities."
+        }
+      ],
+      "Maola": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Maola",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Marble Slab Creamery": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Marble Slab Creamery",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Maxibon": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Maxibon",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        },
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "primary-portfolio-brand",
+          "label": "Maxibon",
+          "origin": "https://www.nestle.com/brands/ice-cream",
+          "review": "Explicit named frozen product/brand. Product flavor, package count and shared parent do not create identities."
+        }
+      ],
+      "Meiji": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Meiji",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Milma": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Milma",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Míša": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Míša",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Morelli's": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Morelli's",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Mother Dairy": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Mother Dairy",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Murphys Ice Cream": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Murphys Ice Cream",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Neilson Dairy": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Neilson Dairy",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "New Zealand Natural": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "New Zealand Natural",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Nirula's": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Nirula's",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Nestlé": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Nestlé",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Omoré": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Omoré",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Oberweis Dairy": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Oberweis Dairy",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Paletería La Michoacana": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Paletería La Michoacana",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Paddle Pop": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Paddle Pop",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Pappagallo": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Pappagallo",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Peters Ice Cream": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Peters Ice Cream",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Pingviini": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Pingviini",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Polar Ice Cream": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Polar Ice Cream",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Presto Ice Cream": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Presto Ice Cream",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Purity": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Purity",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Salt & Straw": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Salt & Straw",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        },
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "first-party-familiar-proof",
+          "label": "Salt & Straw",
+          "origin": "https://saltandstraw.com/",
+          "review": "Confirms an original independently proposed familiar input; paused or historical production does not invalidate this historical-inclusive scope."
+        }
+      ],
+      "Sealtest": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Sealtest",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Selecta": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Selecta",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Signature Select": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Signature Select",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Snugburys": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Snugburys",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Solero": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Solero",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        },
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "primary-portfolio-brand",
+          "label": "Solero",
+          "origin": "https://www.unileverfoodsolutions.co.uk/ice-cream/brands.html?gtm_latency=1",
+          "review": "Explicit named frozen product/brand. Product flavor, package count and shared parent do not create identities."
+        },
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "primary-portfolio-brand",
+          "label": "Solero",
+          "origin": "https://www.goodhumor.com/us/en/products.html",
+          "review": "Explicit named frozen product/brand. Product flavor, package count and shared parent do not create identities."
+        }
+      ],
+      "Speelman's Ice Cream": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Speelman's Ice Cream",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Star Spangled Ice Cream": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Star Spangled Ice Cream",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Stewart's Shops": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Stewart's Shops",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Straus Family Creamery": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Straus Family Creamery",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Strauss": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Strauss",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Streets": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Streets",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Stroh's Ice Cream": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Stroh's Ice Cream",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Swensen's": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Swensen's",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Talenti": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Talenti",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        },
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "primary-portfolio-brand",
+          "label": "Talenti",
+          "origin": "https://corporate.magnumicecream.com/en/home.html",
+          "review": "Explicit named frozen product/brand. Product flavor, package count and shared parent do not create identities."
+        }
+      ],
+      "Tillamook": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Tillamook",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        },
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "first-party-familiar-proof",
+          "label": "Tillamook",
+          "origin": "https://www.tillamook.com/products/ice-cream",
+          "review": "Confirms an original independently proposed familiar input; paused or historical production does not invalidate this historical-inclusive scope."
+        }
+      ],
+      "Tip Top": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Tip Top",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Tipsy Scoop": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Tipsy Scoop",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Thrifty Ice Cream": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Thrifty Ice Cream",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Toscanini's": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Toscanini's",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Turkey Hill": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Turkey Hill",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        },
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "first-party-familiar-proof",
+          "label": "Turkey Hill",
+          "origin": "https://www.turkeyhill.com/frozen/ice-cream",
+          "review": "Confirms an original independently proposed familiar input; paused or historical production does not invalidate this historical-inclusive scope."
+        }
+      ],
+      "Tio Rico": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Tio Rico",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "United Dairy Farmers": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "United Dairy Farmers",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Vadilal": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Vadilal",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Valio": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Valio",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Wall's": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Wall's",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        },
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "primary-portfolio-brand",
+          "label": "Wall's",
+          "origin": "https://corporate.magnumicecream.com/en/home.html",
+          "review": "Explicit named frozen product/brand. Product flavor, package count and shared parent do not create identities."
+        },
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "primary-portfolio-brand",
+          "label": "Wall's",
+          "origin": "https://www.unileverfoodsolutions.co.uk/ice-cream/brands.html?gtm_latency=1",
+          "review": "Explicit named frozen product/brand. Product flavor, package count and shared parent do not create identities."
+        }
+      ],
+      "Whitey's Ice Cream": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Whitey's Ice Cream",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Wibbly Wobbly Wonder": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Wibbly Wobbly Wonder",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Ysco": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Ysco",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Amorino": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Amorino",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_parlor_chains",
+          "review": "Actual signature frozen-dessert producer or specialty chain. Not a claim that all restaurant or parent-company names qualify."
+        }
+      ],
+      "Amy's Ice Creams": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Amy's Ice Creams",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_parlor_chains",
+          "review": "Actual signature frozen-dessert producer or specialty chain. Not a claim that all restaurant or parent-company names qualify."
+        }
+      ],
+      "Andy's Frozen Custard": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Andy's Frozen Custard",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_parlor_chains",
+          "review": "Actual signature frozen-dessert producer or specialty chain. Not a claim that all restaurant or parent-company names qualify."
+        }
+      ],
+      "Austin's Homemade Ice Cream": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Austin's Homemade Ice Cream",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_parlor_chains",
+          "review": "Actual signature frozen-dessert producer or specialty chain. Not a claim that all restaurant or parent-company names qualify."
+        }
+      ],
+      "Baskin-Robbins": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Baskin-Robbins",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_parlor_chains",
+          "review": "Actual signature frozen-dessert producer or specialty chain. Not a claim that all restaurant or parent-company names qualify."
+        },
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "first-party-familiar-proof",
+          "label": "Baskin-Robbins",
+          "origin": "https://www.dunkinbrands.com/company/about/about-dunkin-brands",
+          "review": "Confirms an original independently proposed familiar input; paused or historical production does not invalidate this historical-inclusive scope."
+        }
+      ],
+      "Big Gay Ice Cream": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Big Gay Ice Cream",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_parlor_chains",
+          "review": "Actual signature frozen-dessert producer or specialty chain. Not a claim that all restaurant or parent-company names qualify."
+        }
+      ],
+      "Cadwaladers": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Cadwaladers",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_parlor_chains",
+          "review": "Actual signature frozen-dessert producer or specialty chain. Not a claim that all restaurant or parent-company names qualify."
+        }
+      ],
+      "Coppelia": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Coppelia",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_parlor_chains",
+          "review": "Actual signature frozen-dessert producer or specialty chain. Not a claim that all restaurant or parent-company names qualify."
+        }
+      ],
+      "Emack & Bolio's": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Emack & Bolio's",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_parlor_chains",
+          "review": "Actual signature frozen-dessert producer or specialty chain. Not a claim that all restaurant or parent-company names qualify."
+        }
+      ],
+      "Farrell's Ice Cream Parlour": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Farrell's Ice Cream Parlour",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_parlor_chains",
+          "review": "Actual signature frozen-dessert producer or specialty chain. Not a claim that all restaurant or parent-company names qualify."
+        }
+      ],
+      "Fifty Licks": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Fifty Licks",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_parlor_chains",
+          "review": "Actual signature frozen-dessert producer or specialty chain. Not a claim that all restaurant or parent-company names qualify."
+        }
+      ],
+      "Frankie & Jo's": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Frankie & Jo's",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_parlor_chains",
+          "review": "Actual signature frozen-dessert producer or specialty chain. Not a claim that all restaurant or parent-company names qualify."
+        }
+      ],
+      "Full Tilt Ice Cream": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Full Tilt Ice Cream",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_parlor_chains",
+          "review": "Actual signature frozen-dessert producer or specialty chain. Not a claim that all restaurant or parent-company names qualify."
+        }
+      ],
+      "G&D's": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "G&D's",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_parlor_chains",
+          "review": "Actual signature frozen-dessert producer or specialty chain. Not a claim that all restaurant or parent-company names qualify."
+        }
+      ],
+      "Good Times Burgers & Frozen Custard": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Good Times Burgers & Frozen Custard",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_parlor_chains",
+          "review": "Actual signature frozen-dessert producer or specialty chain. Not a claim that all restaurant or parent-company names qualify."
+        }
+      ],
+      "High's Dairy Store": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "High's Dairy Store",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_parlor_chains",
+          "review": "Actual signature frozen-dessert producer or specialty chain. Not a claim that all restaurant or parent-company names qualify."
+        }
+      ],
+      "Island Creamery": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Island Creamery",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_parlor_chains",
+          "review": "Actual signature frozen-dessert producer or specialty chain. Not a claim that all restaurant or parent-company names qualify."
+        }
+      ],
+      "Jahn's": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Jahn's",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_parlor_chains",
+          "review": "Actual signature frozen-dessert producer or specialty chain. Not a claim that all restaurant or parent-company names qualify."
+        }
+      ],
+      "Kaspa's": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Kaspa's",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_parlor_chains",
+          "review": "Actual signature frozen-dessert producer or specialty chain. Not a claim that all restaurant or parent-company names qualify."
+        }
+      ],
+      "Kopp's Frozen Custard": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Kopp's Frozen Custard",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_parlor_chains",
+          "review": "Actual signature frozen-dessert producer or specialty chain. Not a claim that all restaurant or parent-company names qualify."
+        }
+      ],
+      "Kilwins": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Kilwins",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_parlor_chains",
+          "review": "Actual signature frozen-dessert producer or specialty chain. Not a claim that all restaurant or parent-company names qualify."
+        }
+      ],
+      "Kline's Dairy Bar": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Kline's Dairy Bar",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_parlor_chains",
+          "review": "Actual signature frozen-dessert producer or specialty chain. Not a claim that all restaurant or parent-company names qualify."
+        }
+      ],
+      "Lappert's": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Lappert's",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_parlor_chains",
+          "review": "Actual signature frozen-dessert producer or specialty chain. Not a claim that all restaurant or parent-company names qualify."
+        }
+      ],
+      "Mashti Malone's": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Mashti Malone's",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_parlor_chains",
+          "review": "Actual signature frozen-dessert producer or specialty chain. Not a claim that all restaurant or parent-company names qualify."
+        }
+      ],
+      "McConnell's": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "McConnell's",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_parlor_chains",
+          "review": "Actual signature frozen-dessert producer or specialty chain. Not a claim that all restaurant or parent-company names qualify."
+        }
+      ],
+      "Meadows Frozen Custard": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Meadows Frozen Custard",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_parlor_chains",
+          "review": "Actual signature frozen-dessert producer or specialty chain. Not a claim that all restaurant or parent-company names qualify."
+        }
+      ],
+      "Newport Creamery": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Newport Creamery",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_parlor_chains",
+          "review": "Actual signature frozen-dessert producer or specialty chain. Not a claim that all restaurant or parent-company names qualify."
+        }
+      ],
+      "Rossi's": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Rossi's",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_parlor_chains",
+          "review": "Actual signature frozen-dessert producer or specialty chain. Not a claim that all restaurant or parent-company names qualify."
+        }
+      ],
+      "Shake Shack": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Shake Shack",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_parlor_chains",
+          "review": "Actual signature frozen-dessert producer or specialty chain. Not a claim that all restaurant or parent-company names qualify."
+        }
+      ],
+      "Shake's Frozen Custard": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Shake's Frozen Custard",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_parlor_chains",
+          "review": "Actual signature frozen-dessert producer or specialty chain. Not a claim that all restaurant or parent-company names qualify."
+        }
+      ],
+      "Steve's Ice Cream": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Steve's Ice Cream",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_parlor_chains",
+          "review": "Actual signature frozen-dessert producer or specialty chain. Not a claim that all restaurant or parent-company names qualify."
+        }
+      ],
+      "Strickland's Frozen Custard": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Strickland's Frozen Custard",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_parlor_chains",
+          "review": "Actual signature frozen-dessert producer or specialty chain. Not a claim that all restaurant or parent-company names qualify."
+        }
+      ],
+      "Sugar Hill Creamery": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Sugar Hill Creamery",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_parlor_chains",
+          "review": "Actual signature frozen-dessert producer or specialty chain. Not a claim that all restaurant or parent-company names qualify."
+        }
+      ],
+      "Sweet Rose Creamery": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Sweet Rose Creamery",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_parlor_chains",
+          "review": "Actual signature frozen-dessert producer or specialty chain. Not a claim that all restaurant or parent-company names qualify."
+        }
+      ],
+      "Tastee-Freez": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Tastee-Freez",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_parlor_chains",
+          "review": "Actual signature frozen-dessert producer or specialty chain. Not a claim that all restaurant or parent-company names qualify."
+        }
+      ],
+      "Twistee Treat": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Twistee Treat",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_parlor_chains",
+          "review": "Actual signature frozen-dessert producer or specialty chain. Not a claim that all restaurant or parent-company names qualify."
+        }
+      ],
+      "Udders": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Udders",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_parlor_chains",
+          "review": "Actual signature frozen-dessert producer or specialty chain. Not a claim that all restaurant or parent-company names qualify."
+        }
+      ],
+      "Wanderlust Creamery": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Wanderlust Creamery",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_parlor_chains",
+          "review": "Actual signature frozen-dessert producer or specialty chain. Not a claim that all restaurant or parent-company names qualify."
+        }
+      ],
+      "16 Handles": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "16 Handles",
+          "origin": "https://en.wikipedia.org/wiki/List_of_frozen_yogurt_companies",
+          "review": "Actual frozen-yogurt specialty brand; historical brands remain eligible."
+        }
+      ],
+      "Chocolate Shoppe Ice Cream": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Chocolate Shoppe Ice Cream",
+          "origin": "https://en.wikipedia.org/wiki/List_of_frozen_yogurt_companies",
+          "review": "Actual frozen-yogurt specialty brand; historical brands remain eligible."
+        }
+      ],
+      "Frosty Boy": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Frosty Boy",
+          "origin": "https://en.wikipedia.org/wiki/List_of_frozen_yogurt_companies",
+          "review": "Actual frozen-yogurt specialty brand; historical brands remain eligible."
+        }
+      ],
+      "Golden Spoon": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Golden Spoon",
+          "origin": "https://en.wikipedia.org/wiki/List_of_frozen_yogurt_companies",
+          "review": "Actual frozen-yogurt specialty brand; historical brands remain eligible."
+        }
+      ],
+      "I Can't Believe It's Yogurt!": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "I Can't Believe It's Yogurt!",
+          "origin": "https://en.wikipedia.org/wiki/List_of_frozen_yogurt_companies",
+          "review": "Actual frozen-yogurt specialty brand; historical brands remain eligible."
+        }
+      ],
+      "Llaollao": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Llaollao",
+          "origin": "https://en.wikipedia.org/wiki/List_of_frozen_yogurt_companies",
+          "review": "Actual frozen-yogurt specialty brand; historical brands remain eligible."
+        }
+      ],
+      "Pinkberry": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Pinkberry",
+          "origin": "https://en.wikipedia.org/wiki/List_of_frozen_yogurt_companies",
+          "review": "Actual frozen-yogurt specialty brand; historical brands remain eligible."
+        }
+      ],
+      "Red Mango": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Red Mango",
+          "origin": "https://en.wikipedia.org/wiki/List_of_frozen_yogurt_companies",
+          "review": "Actual frozen-yogurt specialty brand; historical brands remain eligible."
+        }
+      ],
+      "Sour Sally": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Sour Sally",
+          "origin": "https://en.wikipedia.org/wiki/List_of_frozen_yogurt_companies",
+          "review": "Actual frozen-yogurt specialty brand; historical brands remain eligible."
+        }
+      ],
+      "The Bigg Chill": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "The Bigg Chill",
+          "origin": "https://en.wikipedia.org/wiki/List_of_frozen_yogurt_companies",
+          "review": "Actual frozen-yogurt specialty brand; historical brands remain eligible."
+        }
+      ],
+      "Wakaberry": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Wakaberry",
+          "origin": "https://en.wikipedia.org/wiki/List_of_frozen_yogurt_companies",
+          "review": "Actual frozen-yogurt specialty brand; historical brands remain eligible."
+        }
+      ],
+      "Yo-Chi": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Yo-Chi",
+          "origin": "https://en.wikipedia.org/wiki/List_of_frozen_yogurt_companies",
+          "review": "Actual frozen-yogurt specialty brand; historical brands remain eligible."
+        }
+      ],
+      "Yoajung": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Yoajung",
+          "origin": "https://en.wikipedia.org/wiki/List_of_frozen_yogurt_companies",
+          "review": "Actual frozen-yogurt specialty brand; historical brands remain eligible."
+        }
+      ],
+      "Yogoberry": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Yogoberry",
+          "origin": "https://en.wikipedia.org/wiki/List_of_frozen_yogurt_companies",
+          "review": "Actual frozen-yogurt specialty brand; historical brands remain eligible."
+        }
+      ],
+      "Yogurt Mountain": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Yogurt Mountain",
+          "origin": "https://en.wikipedia.org/wiki/List_of_frozen_yogurt_companies",
+          "review": "Actual frozen-yogurt specialty brand; historical brands remain eligible."
+        }
+      ],
+      "Yogurtland": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Yogurtland",
+          "origin": "https://en.wikipedia.org/wiki/List_of_frozen_yogurt_companies",
+          "review": "Actual frozen-yogurt specialty brand; historical brands remain eligible."
+        }
+      ],
+      "Yumilicious": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Yumilicious",
+          "origin": "https://en.wikipedia.org/wiki/List_of_frozen_yogurt_companies",
+          "review": "Actual frozen-yogurt specialty brand; historical brands remain eligible."
+        }
+      ],
+      "Yogini Frozen Yogurt": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Yogini Frozen Yogurt",
+          "origin": "https://en.wikipedia.org/wiki/List_of_frozen_yogurt_companies",
+          "review": "Actual frozen-yogurt specialty brand; historical brands remain eligible."
+        }
+      ],
+      "Calippo": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Calippo",
+          "origin": "https://en.wikipedia.org/wiki/List_of_frozen_dessert_brands",
+          "review": "Named frozen treat or ice/slush brand. Generic unbranded flavors are not inferred."
+        }
+      ],
+      "Del's": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Del's",
+          "origin": "https://en.wikipedia.org/wiki/List_of_frozen_dessert_brands",
+          "review": "Named frozen treat or ice/slush brand. Generic unbranded flavors are not inferred."
+        }
+      ],
+      "Dole Whip": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Dole Whip",
+          "origin": "https://en.wikipedia.org/wiki/List_of_frozen_dessert_brands",
+          "review": "Named frozen treat or ice/slush brand. Generic unbranded flavors are not inferred."
+        }
+      ],
+      "Elsie Stix": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Elsie Stix",
+          "origin": "https://en.wikipedia.org/wiki/List_of_frozen_dessert_brands",
+          "review": "Named frozen treat or ice/slush brand. Generic unbranded flavors are not inferred."
+        }
+      ],
+      "Fab": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Fab",
+          "origin": "https://en.wikipedia.org/wiki/List_of_frozen_dessert_brands",
+          "review": "Named frozen treat or ice/slush brand. Generic unbranded flavors are not inferred."
+        },
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "primary-portfolio-brand",
+          "label": "Fab",
+          "origin": "https://www.froneri.com/en/brands/",
+          "review": "Explicit named frozen product/brand. Product flavor, package count and shared parent do not create identities."
+        }
+      ],
+      "Fla-Vor-Ice": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Fla-Vor-Ice",
+          "origin": "https://en.wikipedia.org/wiki/List_of_frozen_dessert_brands",
+          "review": "Named frozen treat or ice/slush brand. Generic unbranded flavors are not inferred."
+        }
+      ],
+      "Freaky Ice": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Freaky Ice",
+          "origin": "https://en.wikipedia.org/wiki/List_of_frozen_dessert_brands",
+          "review": "Named frozen treat or ice/slush brand. Generic unbranded flavors are not inferred."
+        }
+      ],
+      "Froster": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Froster",
+          "origin": "https://en.wikipedia.org/wiki/List_of_frozen_dessert_brands",
+          "review": "Named frozen treat or ice/slush brand. Generic unbranded flavors are not inferred."
+        }
+      ],
+      "Golly Bar": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Golly Bar",
+          "origin": "https://en.wikipedia.org/wiki/List_of_frozen_dessert_brands",
+          "review": "Named frozen treat or ice/slush brand. Generic unbranded flavors are not inferred."
+        }
+      ],
+      "Haunted House Ice Cream": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Haunted House Ice Cream",
+          "origin": "https://en.wikipedia.org/wiki/List_of_frozen_dessert_brands",
+          "review": "Named frozen treat or ice/slush brand. Generic unbranded flavors are not inferred."
+        }
+      ],
+      "Little Jimmy's Italian Ices": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Little Jimmy's Italian Ices",
+          "origin": "https://en.wikipedia.org/wiki/List_of_frozen_dessert_brands",
+          "review": "Named frozen treat or ice/slush brand. Generic unbranded flavors are not inferred."
+        }
+      ],
+      "Melona": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Melona",
+          "origin": "https://en.wikipedia.org/wiki/List_of_frozen_dessert_brands",
+          "review": "Named frozen treat or ice/slush brand. Generic unbranded flavors are not inferred."
+        }
+      ],
+      "Otter Pops": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Otter Pops",
+          "origin": "https://en.wikipedia.org/wiki/List_of_frozen_dessert_brands",
+          "review": "Named frozen treat or ice/slush brand. Generic unbranded flavors are not inferred."
+        }
+      ],
+      "Palapa Azul": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Palapa Azul",
+          "origin": "https://en.wikipedia.org/wiki/List_of_frozen_dessert_brands",
+          "review": "Named frozen treat or ice/slush brand. Generic unbranded flavors are not inferred."
+        }
+      ],
+      "Popsicle": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Popsicle",
+          "origin": "https://en.wikipedia.org/wiki/List_of_frozen_dessert_brands",
+          "review": "Named frozen treat or ice/slush brand. Generic unbranded flavors are not inferred."
+        },
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "primary-portfolio-brand",
+          "label": "Popsicle",
+          "origin": "https://corporate.magnumicecream.com/en/home.html",
+          "review": "Explicit named frozen product/brand. Product flavor, package count and shared parent do not create identities."
+        }
+      ],
+      "Pudding Pop": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Pudding Pop",
+          "origin": "https://en.wikipedia.org/wiki/List_of_frozen_dessert_brands",
+          "review": "Named frozen treat or ice/slush brand. Generic unbranded flavors are not inferred."
+        }
+      ],
+      "Slurpee": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Slurpee",
+          "origin": "https://en.wikipedia.org/wiki/List_of_frozen_dessert_brands",
+          "review": "Named frozen treat or ice/slush brand. Generic unbranded flavors are not inferred."
+        }
+      ],
+      "Tasti D-Lite": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Tasti D-Lite",
+          "origin": "https://en.wikipedia.org/wiki/List_of_frozen_dessert_brands",
+          "review": "Named frozen treat or ice/slush brand. Generic unbranded flavors are not inferred."
+        }
+      ],
+      "Zooper Dooper": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Zooper Dooper",
+          "origin": "https://en.wikipedia.org/wiki/List_of_frozen_dessert_brands",
+          "review": "Named frozen treat or ice/slush brand. Generic unbranded flavors are not inferred."
+        }
+      ],
+      "Nuii": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "primary-portfolio-brand",
+          "label": "Nuii",
+          "origin": "https://www.froneri.com/en/brands/",
+          "review": "Explicit named frozen product/brand. Product flavor, package count and shared parent do not create identities."
+        }
+      ],
+      "Rowntree's": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "primary-portfolio-brand",
+          "label": "Rowntree's",
+          "origin": "https://www.froneri.com/en/brands/",
+          "review": "Explicit named frozen product/brand. Product flavor, package count and shared parent do not create identities."
+        }
+      ],
+      "Cadbury": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "primary-portfolio-brand",
+          "label": "Cadbury",
+          "origin": "https://www.froneri.com/en/brands/",
+          "review": "Explicit named frozen product/brand. Product flavor, package count and shared parent do not create identities."
+        }
+      ],
+      "Oreo": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "primary-portfolio-brand",
+          "label": "Oreo",
+          "origin": "https://www.froneri.com/en/brands/",
+          "review": "Explicit named frozen product/brand. Product flavor, package count and shared parent do not create identities."
+        },
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "primary-portfolio-brand",
+          "label": "Oreo",
+          "origin": "https://www.icecream.com/us/en/brands",
+          "review": "Explicit named frozen product/brand. Product flavor, package count and shared parent do not create identities."
+        }
+      ],
+      "Smarties": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "primary-portfolio-brand",
+          "label": "Smarties",
+          "origin": "https://www.froneri.com/en/brands/",
+          "review": "Explicit named frozen product/brand. Product flavor, package count and shared parent do not create identities."
+        }
+      ],
+      "Nobbly Bobbly": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "primary-portfolio-brand",
+          "label": "Nobbly Bobbly",
+          "origin": "https://www.froneri.com/en/brands/",
+          "review": "Explicit named frozen product/brand. Product flavor, package count and shared parent do not create identities."
+        }
+      ],
+      "Del Monte": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "primary-portfolio-brand",
+          "label": "Del Monte",
+          "origin": "https://www.froneri.com/en/brands/",
+          "review": "Explicit named frozen product/brand. Product flavor, package count and shared parent do not create identities."
+        }
+      ],
+      "Perfectly Baked": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "primary-portfolio-brand",
+          "label": "Perfectly Baked",
+          "origin": "https://www.froneri.com/en/brands/",
+          "review": "Explicit named frozen product/brand. Product flavor, package count and shared parent do not create identities."
+        }
+      ],
+      "Drumstick": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "primary-portfolio-brand",
+          "label": "Drumstick",
+          "origin": "https://www.icecream.com/us/en/brands",
+          "review": "Explicit named frozen product/brand. Product flavor, package count and shared parent do not create identities."
+        },
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "primary-portfolio-brand",
+          "label": "Drumstick",
+          "origin": "https://www.nestle.com/brands/ice-cream",
+          "review": "Explicit named frozen product/brand. Product flavor, package count and shared parent do not create identities."
+        }
+      ],
+      "Outshine": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "primary-portfolio-brand",
+          "label": "Outshine",
+          "origin": "https://www.icecream.com/us/en/brands",
+          "review": "Explicit named frozen product/brand. Product flavor, package count and shared parent do not create identities."
+        }
+      ],
+      "Kit Kat": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "primary-portfolio-brand",
+          "label": "Kit Kat",
+          "origin": "https://www.icecream.com/us/en/brands",
+          "review": "Explicit named frozen product/brand. Product flavor, package count and shared parent do not create identities."
+        }
+      ],
+      "Skinny Cow": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "primary-portfolio-brand",
+          "label": "Skinny Cow",
+          "origin": "https://www.icecream.com/us/en/brands",
+          "review": "Explicit named frozen product/brand. Product flavor, package count and shared parent do not create identities."
+        }
+      ],
+      "Nestlé Toll House": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "primary-portfolio-brand",
+          "label": "Nestlé Toll House",
+          "origin": "https://www.icecream.com/us/en/brands",
+          "review": "Explicit named frozen product/brand. Product flavor, package count and shared parent do not create identities."
+        }
+      ],
+      "Nestlé Treats": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "primary-portfolio-brand",
+          "label": "Nestlé Treats",
+          "origin": "https://www.icecream.com/us/en/brands",
+          "review": "Explicit named frozen product/brand. Product flavor, package count and shared parent do not create identities."
+        }
+      ],
+      "Crunch": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "primary-portfolio-brand",
+          "label": "Crunch",
+          "origin": "https://www.icecream.com/us/en/brands",
+          "review": "Explicit named frozen product/brand. Product flavor, package count and shared parent do not create identities."
+        }
+      ],
+      "Extrême": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "primary-portfolio-brand",
+          "label": "Extrême",
+          "origin": "https://www.nestle.com/brands/ice-cream",
+          "review": "Explicit named frozen product/brand. Product flavor, package count and shared parent do not create identities."
+        }
+      ],
+      "Antica Gelateria del Corso": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "primary-portfolio-brand",
+          "label": "Antica Gelateria del Corso",
+          "origin": "https://www.nestle.com/brands/ice-cream",
+          "review": "Explicit named frozen product/brand. Product flavor, package count and shared parent do not create identities."
+        }
+      ],
+      "Bomb Pop": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "primary-portfolio-brand",
+          "label": "Bomb Pop",
+          "origin": "https://wellsfoodservice.com/brands",
+          "review": "Explicit named frozen product/brand. Product flavor, package count and shared parent do not create identities."
+        }
+      ],
+      "Blue Ribbon Classics": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "primary-portfolio-brand",
+          "label": "Blue Ribbon Classics",
+          "origin": "https://wellsfoodservice.com/brands",
+          "review": "Explicit named frozen product/brand. Product flavor, package count and shared parent do not create identities."
+        }
+      ],
+      "Kinder Bueno": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "primary-portfolio-brand",
+          "label": "Kinder Bueno",
+          "origin": "https://wellsenterprisesinc.com/new-items",
+          "review": "Explicit named frozen product/brand. Product flavor, package count and shared parent do not create identities."
+        }
+      ],
+      "Nutella": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "primary-portfolio-brand",
+          "label": "Nutella",
+          "origin": "https://wellsenterprisesinc.com/new-items",
+          "review": "Explicit named frozen product/brand. Product flavor, package count and shared parent do not create identities."
+        }
+      ],
+      "Trolli Gummi Pop": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "primary-portfolio-brand",
+          "label": "Trolli Gummi Pop",
+          "origin": "https://wellsenterprisesinc.com/new-items",
+          "review": "Explicit named frozen product/brand. Product flavor, package count and shared parent do not create identities."
+        }
+      ],
+      "Butterfinger": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "primary-portfolio-brand",
+          "label": "Butterfinger",
+          "origin": "https://wellsenterprisesinc.com/new-items",
+          "review": "Explicit named frozen product/brand. Product flavor, package count and shared parent do not create identities."
+        }
+      ],
+      "Cornetto": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "primary-portfolio-brand",
+          "label": "Cornetto",
+          "origin": "https://corporate.magnumicecream.com/en/home.html",
+          "review": "Explicit named frozen product/brand. Product flavor, package count and shared parent do not create identities."
+        },
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "primary-portfolio-brand",
+          "label": "Cornetto",
+          "origin": "https://www.unileverfoodsolutions.co.uk/ice-cream/brands.html?gtm_latency=1",
+          "review": "Explicit named frozen product/brand. Product flavor, package count and shared parent do not create identities."
+        }
+      ],
+      "Yasso": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "primary-portfolio-brand",
+          "label": "Yasso",
+          "origin": "https://corporate.magnumicecream.com/en/home.html",
+          "review": "Explicit named frozen product/brand. Product flavor, package count and shared parent do not create identities."
+        }
+      ],
+      "Carte d'Or": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "primary-portfolio-brand",
+          "label": "Carte d'Or",
+          "origin": "https://www.unileverfoodsolutions.co.uk/ice-cream/brands.html?gtm_latency=1",
+          "review": "Explicit named frozen product/brand. Product flavor, package count and shared parent do not create identities."
+        }
+      ],
+      "Twister": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "primary-portfolio-brand",
+          "label": "Twister",
+          "origin": "https://www.unileverfoodsolutions.co.uk/ice-cream/brands.html?gtm_latency=1",
+          "review": "Explicit named frozen product/brand. Product flavor, package count and shared parent do not create identities."
+        }
+      ],
+      "Feast": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "primary-portfolio-brand",
+          "label": "Feast",
+          "origin": "https://www.unileverfoodsolutions.co.uk/ice-cream/brands.html?gtm_latency=1",
+          "review": "Explicit named frozen product/brand. Product flavor, package count and shared parent do not create identities."
+        }
+      ],
+      "Creamsicle": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "primary-portfolio-brand",
+          "label": "Creamsicle",
+          "origin": "https://www.goodhumor.com/us/en/products.html",
+          "review": "Explicit named frozen product/brand. Product flavor, package count and shared parent do not create identities."
+        }
+      ],
+      "Chemisse": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "primary-portfolio-brand",
+          "label": "Chemisse",
+          "origin": "https://www.goodhumor.com/us/en/products.html",
+          "review": "Explicit named frozen product/brand. Product flavor, package count and shared parent do not create identities."
+        }
+      ],
+      "Hood": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "first-party-familiar-proof",
+          "label": "Hood",
+          "origin": "https://hood.com/",
+          "review": "Confirms an original independently proposed familiar input; paused or historical production does not invalidate this historical-inclusive scope."
+        }
+      ],
+      "Enlightened": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "first-party-familiar-proof",
+          "label": "Enlightened",
+          "origin": "https://eatenlightened.com/",
+          "review": "Confirms an original independently proposed familiar input; paused or historical production does not invalidate this historical-inclusive scope."
+        }
+      ],
+      "Great Value": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "individually-proven-product-brand",
+          "label": "Great Value",
+          "origin": "https://www.walmart.com/browse/food/great-value-ice-cream/976759_976791_1518625_8406153",
+          "review": "Named frozen product line; flavor/ingredient changes remain within the parent brand identity unless a separately named line is itself a public brand."
+        }
+      ],
+      "Favorite Day": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "individually-proven-product-brand",
+          "label": "Favorite Day",
+          "origin": "https://corporate.target.com/news-features/article/2021/03/favorite-day",
+          "review": "Named frozen product line; flavor/ingredient changes remain within the parent brand identity unless a separately named line is itself a public brand."
+        }
+      ],
+      "Sundae Shoppe": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "individually-proven-product-brand",
+          "label": "Sundae Shoppe",
+          "origin": "https://corporate.aldi.us/fileadmin/fm-dam/news_and_awards/Press_Release_2018/Sundae_Shoppe_Ice_Cream_Bars_Recall_Press_Release_FINAL.pdf",
+          "review": "Named frozen product line; flavor/ingredient changes remain within the parent brand identity unless a separately named line is itself a public brand."
+        }
+      ],
+      "So Delicious": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [
+            "So Delicious Dairy Free"
+          ],
+          "kind": "individually-proven-product-brand",
+          "label": "So Delicious",
+          "origin": "https://www.sodeliciousdairyfree.com/",
+          "review": "Named frozen product line; flavor/ingredient changes remain within the parent brand identity unless a separately named line is itself a public brand."
+        }
+      ],
+      "Oatly": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "individually-proven-product-brand",
+          "label": "Oatly",
+          "origin": "https://www.oatly.com/en-us/products/frozen-dessert",
+          "review": "Named frozen product line; flavor/ingredient changes remain within the parent brand identity unless a separately named line is itself a public brand."
+        }
+      ],
+      "NadaMoo!": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [
+            "NadaMoo"
+          ],
+          "kind": "individually-proven-product-brand",
+          "label": "NadaMoo!",
+          "origin": "https://www.prnewswire.com/news/nadamoo%21/",
+          "review": "Named frozen product line; flavor/ingredient changes remain within the parent brand identity unless a separately named line is itself a public brand."
+        }
+      ],
+      "Cosmic Bliss": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [
+            "Coconut Bliss"
+          ],
+          "kind": "individually-proven-product-brand",
+          "label": "Cosmic Bliss",
+          "origin": "https://www.prnewswire.com/news-releases/cosmic-bliss-formerly-known-as-coconut-bliss-shakes-up-the-freezer-aisle-with-the-launch-of-ultra-creamy-organic-grass-fed-dairy-ice-cream-line-301496487.html",
+          "review": "Named frozen product line; flavor/ingredient changes remain within the parent brand identity unless a separately named line is itself a public brand."
+        }
+      ],
+      "Mars Ice Cream": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [
+            "Mars"
+          ],
+          "kind": "individually-proven-product-brand",
+          "label": "Mars Ice Cream",
+          "origin": "https://www.mars.com/pl-pl/our-brands/mars-snacking",
+          "review": "Named frozen product line; flavor/ingredient changes remain within the parent brand identity unless a separately named line is itself a public brand."
+        }
+      ],
+      "McFlurry": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "additional-reviewed-familiar-tail",
+          "label": "McFlurry",
+          "origin": "https://www.mcdonalds.com/us/en-us/full-menu/sweets-treats.html",
+          "review": "Actual named frozen brand/product line. Discontinuation does not make a historical answer false."
+        }
+      ],
+      "Frosty": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [
+            "Wendy's Frosty"
+          ],
+          "kind": "additional-reviewed-familiar-tail",
+          "label": "Frosty",
+          "origin": "https://www.wendys.com/frosty-flavors",
+          "review": "Actual named frozen brand/product line. Discontinuation does not make a historical answer false."
+        }
+      ],
+      "Blizzard": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [
+            "DQ Blizzard",
+            "Blizzard Treat"
+          ],
+          "kind": "additional-reviewed-familiar-tail",
+          "label": "Blizzard",
+          "origin": "https://www.dairyqueen.com/en-us/nutrition/treats/",
+          "review": "Actual named frozen brand/product line. Discontinuation does not make a historical answer false."
+        }
+      ],
+      "SONIC Blast": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "additional-reviewed-familiar-tail",
+          "label": "SONIC Blast",
+          "origin": "https://www.sonicdrivein.com/menu/categories/sweets/",
+          "review": "Actual named frozen brand/product line. Discontinuation does not make a historical answer false."
+        }
+      ],
+      "Nandini": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "additional-reviewed-familiar-tail",
+          "label": "Nandini",
+          "origin": "https://www.kmfnandini.coop/en",
+          "review": "Actual named frozen brand/product line. Discontinuation does not make a historical answer false."
+        }
+      ],
+      "CreamBell": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "additional-reviewed-familiar-tail",
+          "label": "CreamBell",
+          "origin": "https://www.creambell.com/about/",
+          "review": "Actual named frozen brand/product line. Discontinuation does not make a historical answer false."
+        }
+      ],
+      "Samanco": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [
+            "Bungeo Samanco"
+          ],
+          "kind": "additional-reviewed-familiar-tail",
+          "label": "Samanco",
+          "origin": "https://eng.bing.co.kr/en/company/business",
+          "review": "Actual named frozen brand/product line. Discontinuation does not make a historical answer false."
+        }
+      ],
+      "Yukimi Daifuku": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [
+            "Yukimi"
+          ],
+          "kind": "additional-reviewed-familiar-tail",
+          "label": "Yukimi Daifuku",
+          "origin": "https://lotte.com.vn/en/brand/yukimi/",
+          "review": "Actual named frozen brand/product line. Discontinuation does not make a historical answer false."
+        }
+      ],
+      "My/Mochi": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [
+            "My Mochi"
+          ],
+          "kind": "additional-reviewed-familiar-tail",
+          "label": "My/Mochi",
+          "origin": "https://www.mymochi.com/",
+          "review": "Actual named frozen brand/product line. Discontinuation does not make a historical answer false."
+        }
+      ],
+      "Little Moons": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "additional-reviewed-familiar-tail",
+          "label": "Little Moons",
+          "origin": "https://littlemoons.com/",
+          "review": "Actual named frozen brand/product line. Discontinuation does not make a historical answer false."
+        }
+      ],
+      "Mini Melts": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "additional-reviewed-familiar-tail",
+          "label": "Mini Melts",
+          "origin": "https://www.minimelts.com/",
+          "review": "Actual named frozen brand/product line. Discontinuation does not make a historical answer false."
+        }
+      ],
+      "FatBoy": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [
+            "FatBoy Ice Cream"
+          ],
+          "kind": "additional-reviewed-familiar-tail",
+          "label": "FatBoy",
+          "origin": "https://fatboyicecream.com/",
+          "review": "Actual named frozen brand/product line. Discontinuation does not make a historical answer false."
+        }
+      ],
+      "Fudgsicle": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "additional-reviewed-familiar-tail",
+          "label": "Fudgsicle",
+          "origin": "https://www.popsicle.com/us/en/our-story.html",
+          "review": "Actual named frozen brand/product line. Discontinuation does not make a historical answer false."
+        }
+      ],
+      "Choco Taco": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "additional-reviewed-familiar-tail",
+          "label": "Choco Taco",
+          "origin": "https://www.cbsnews.com/news/choco-taco-discontinued-klondike/",
+          "review": "Actual named frozen brand/product line. Discontinuation does not make a historical answer false."
+        }
+      ],
+      "Dreyer's": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Dreyer's",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        },
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "primary-portfolio-brand",
+          "label": "Dreyer's",
+          "origin": "https://www.icecream.com/us/en/brands",
+          "review": "Explicit named frozen product/brand. Product flavor, package count and shared parent do not create identities."
+        },
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Edy's",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        },
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "primary-portfolio-brand",
+          "label": "Edy's",
+          "origin": "https://www.icecream.com/us/en/brands",
+          "review": "Explicit named frozen product/brand. Product flavor, package count and shared parent do not create identities."
+        }
+      ],
+      "Cows Creamery": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Cows Creamery",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Ample Hills": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Ample Hills",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        },
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Ample Hills Creamery",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_parlor_chains",
+          "review": "Actual signature frozen-dessert producer or specialty chain. Not a claim that all restaurant or parent-company names qualify."
+        }
+      ],
+      "Bresler's Ice Cream": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Bresler's Ice Cream",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        },
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Bresler's 33 Flavors",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_parlor_chains",
+          "review": "Actual signature frozen-dessert producer or specialty chain. Not a claim that all restaurant or parent-company names qualify."
+        }
+      ],
+      "Edy's Pie": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Edy's Pie",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        },
+        {
+          "access": "public-indexed-text",
+          "aliases": [
+            "Eskimo Pie"
+          ],
+          "kind": "additional-reviewed-familiar-tail",
+          "label": "Edy's Pie",
+          "origin": "https://www.dairyprocessing.com/articles/52-dreyers-eskimo-pie-rebranded-as-edys-pie",
+          "review": "Actual named frozen brand/product line. Discontinuation does not make a historical answer false."
+        }
+      ],
+      "Bassetts Ice Cream": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Bassetts Ice Cream",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Bell Ice Cream": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Bell Ice Cream",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Brigham's Ice Cream": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Brigham's Ice Cream",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Creamery Novelties": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Creamery Novelties",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Havmor": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Havmor",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Handel's Homemade Ice Cream & Yogurt": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Handel's Homemade Ice Cream & Yogurt",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Hennig-Olsen": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Hennig-Olsen",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Hershey Creamery Company": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Hershey Creamery Company",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "It's-It": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "It's-It",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Jeni's": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Jeni's",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        },
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "first-party-familiar-proof",
+          "label": "Jeni's",
+          "origin": "https://jenis.com/",
+          "review": "Confirms an original independently proposed familiar input; paused or historical production does not invalidate this historical-inclusive scope."
+        }
+      ],
+      "Kawartha Dairy": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Kawartha Dairy",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Kelly's of Cornwall": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Kelly's of Cornwall",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        },
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "primary-portfolio-brand",
+          "label": "Kelly's of Cornwall",
+          "origin": "https://www.froneri.com/en/brands/",
+          "review": "Explicit named frozen product/brand. Product flavor, package count and shared parent do not create identities."
+        }
+      ],
+      "Mauds": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Mauds",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Mayfield": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Mayfield",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        },
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "first-party-familiar-proof",
+          "label": "Mayfield",
+          "origin": "https://www.mayfielddairy.com/",
+          "review": "Confirms an original independently proposed familiar input; paused or historical production does not invalidate this historical-inclusive scope."
+        }
+      ],
+      "Milky Mist": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Milky Mist",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Mövenpick": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Mövenpick",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        },
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "primary-portfolio-brand",
+          "label": "Mövenpick",
+          "origin": "https://www.froneri.com/en/brands/",
+          "review": "Explicit named frozen product/brand. Product flavor, package count and shared parent do not create identities."
+        },
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "primary-portfolio-brand",
+          "label": "Mövenpick",
+          "origin": "https://www.nestle.com/brands/ice-cream",
+          "review": "Explicit named frozen product/brand. Product flavor, package count and shared parent do not create identities."
+        }
+      ],
+      "Mr. Green Tea": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Mr. Green Tea",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Naturals Ice Cream": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Naturals Ice Cream",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Perry's": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Perry's",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        },
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "first-party-familiar-proof",
+          "label": "Perry's",
+          "origin": "https://www.perrysicecream.com/",
+          "review": "Confirms an original independently proposed familiar input; paused or historical production does not invalidate this historical-inclusive scope."
+        }
+      ],
+      "Pierre's": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Pierre's",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Sweet Republic": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Sweet Republic",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Van Leeuwen": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Van Leeuwen",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        },
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "first-party-familiar-proof",
+          "label": "Van Leeuwen",
+          "origin": "https://vanleeuwenicecream.com/",
+          "review": "Confirms an original independently proposed familiar input; paused or historical production does not invalidate this historical-inclusive scope."
+        }
+      ],
+      "Yarnell's": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Yarnell's",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Dairy Queen": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Dairy Queen",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        },
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "first-party-familiar-proof",
+          "label": "Dairy Queen",
+          "origin": "https://www.dairyqueen.com/en-us/",
+          "review": "Confirms an original independently proposed familiar input; paused or historical production does not invalidate this historical-inclusive scope."
+        }
+      ],
+      "Ben & Jerry's": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Ben & Jerry's",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_parlor_chains",
+          "review": "Actual signature frozen-dessert producer or specialty chain. Not a claim that all restaurant or parent-company names qualify."
+        },
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "primary-portfolio-brand",
+          "label": "Ben & Jerry's",
+          "origin": "https://corporate.magnumicecream.com/en/home.html",
+          "review": "Explicit named frozen product/brand. Product flavor, package count and shared parent do not create identities."
+        },
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "primary-portfolio-brand",
+          "label": "Ben & Jerry's",
+          "origin": "https://www.unileverfoodsolutions.co.uk/ice-cream/brands.html?gtm_latency=1",
+          "review": "Explicit named frozen product/brand. Product flavor, package count and shared parent do not create identities."
+        }
+      ],
+      "Cold Stone Creamery": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Cold Stone Creamery",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        },
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "first-party-familiar-proof",
+          "label": "Cold Stone Creamery",
+          "origin": "https://www.coldstonecreamery.com/",
+          "review": "Confirms an original independently proposed familiar input; paused or historical production does not invalidate this historical-inclusive scope."
+        }
+      ],
+      "Blue Bell": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "first-party-familiar-proof",
+          "label": "Blue Bell",
+          "origin": "https://www.bluebell.com/",
+          "review": "Confirms an original independently proposed familiar input; paused or historical production does not invalidate this historical-inclusive scope."
+        }
+      ],
+      "Blue Bunny": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Blue Bunny",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        },
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "primary-portfolio-brand",
+          "label": "Blue Bunny",
+          "origin": "https://wellsfoodservice.com/brands",
+          "review": "Explicit named frozen product/brand. Product flavor, package count and shared parent do not create identities."
+        }
+      ],
+      "Breyers": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Breyers",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Bruster's": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Bruster's",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_parlor_chains",
+          "review": "Actual signature frozen-dessert producer or specialty chain. Not a claim that all restaurant or parent-company names qualify."
+        }
+      ],
+      "Ciao Bella": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Ciao Bella",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_parlor_chains",
+          "review": "Actual signature frozen-dessert producer or specialty chain. Not a claim that all restaurant or parent-company names qualify."
+        }
+      ],
+      "Freddy's Frozen Custard & Steakburgers": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Freddy's Frozen Custard & Steakburgers",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        }
+      ],
+      "Rita's": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Rita's",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_parlor_chains",
+          "review": "Actual signature frozen-dessert producer or specialty chain. Not a claim that all restaurant or parent-company names qualify."
+        },
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "first-party-familiar-proof",
+          "label": "Rita's",
+          "origin": "https://www.prnewswire.com/news-releases/spring-officially-starts-at-ritas-with-free-italian-ice-giveaway-and-new-mystery-peeps-flavor-302699910.html",
+          "review": "Confirms an original independently proposed familiar input; paused or historical production does not invalidate this historical-inclusive scope."
+        }
+      ],
+      "Menchie's": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Menchie's",
+          "origin": "https://en.wikipedia.org/wiki/List_of_frozen_yogurt_companies",
+          "review": "Actual frozen-yogurt specialty brand; historical brands remain eligible."
+        }
+      ],
+      "Orange Leaf": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Orange Leaf",
+          "origin": "https://en.wikipedia.org/wiki/List_of_frozen_yogurt_companies",
+          "review": "Actual frozen-yogurt specialty brand; historical brands remain eligible."
+        }
+      ],
+      "Sweet Frog": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Sweet Frog",
+          "origin": "https://en.wikipedia.org/wiki/List_of_frozen_yogurt_companies",
+          "review": "Actual frozen-yogurt specialty brand; historical brands remain eligible."
+        }
+      ],
+      "TCBY": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "TCBY",
+          "origin": "https://en.wikipedia.org/wiki/List_of_frozen_yogurt_companies",
+          "review": "Actual frozen-yogurt specialty brand; historical brands remain eligible."
+        }
+      ],
+      "Tutti Frutti Frozen Yogurt": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Tutti Frutti Frozen Yogurt",
+          "origin": "https://en.wikipedia.org/wiki/List_of_frozen_yogurt_companies",
+          "review": "Actual frozen-yogurt specialty brand; historical brands remain eligible."
+        }
+      ],
+      "Yogen Früz": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Yogen Früz",
+          "origin": "https://en.wikipedia.org/wiki/List_of_frozen_yogurt_companies",
+          "review": "Actual frozen-yogurt specialty brand; historical brands remain eligible."
+        }
+      ],
+      "Wendy's Milk Bar": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Wendy's Milk Bar",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_parlor_chains",
+          "review": "Actual signature frozen-dessert producer or specialty chain. Not a claim that all restaurant or parent-company names qualify."
+        }
+      ],
+      "MaggieMoo's": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "MaggieMoo's",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_parlor_chains",
+          "review": "Actual signature frozen-dessert producer or specialty chain. Not a claim that all restaurant or parent-company names qualify."
+        }
+      ],
+      "Mixue": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Mixue",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_parlor_chains",
+          "review": "Actual signature frozen-dessert producer or specialty chain. Not a claim that all restaurant or parent-company names qualify."
+        }
+      ],
+      "ICEE": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "ICEE",
+          "origin": "https://en.wikipedia.org/wiki/List_of_frozen_dessert_brands",
+          "review": "Named frozen treat or ice/slush brand. Generic unbranded flavors are not inferred."
+        }
+      ],
+      "Tofutti": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Tofutti",
+          "origin": "https://en.wikipedia.org/wiki/List_of_frozen_dessert_brands",
+          "review": "Named frozen treat or ice/slush brand. Generic unbranded flavors are not inferred."
+        }
+      ],
+      "Slush Puppie": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Slush Puppie",
+          "origin": "https://en.wikipedia.org/wiki/List_of_frozen_dessert_brands",
+          "review": "Named frozen treat or ice/slush brand. Generic unbranded flavors are not inferred."
+        }
+      ],
+      "Snack and a half": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Snack and a half",
+          "origin": "https://en.wikipedia.org/wiki/List_of_frozen_dessert_brands",
+          "review": "Named frozen treat or ice/slush brand. Generic unbranded flavors are not inferred."
+        }
+      ],
+      "Bon Ice": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "Bon Ice",
+          "origin": "https://en.wikipedia.org/wiki/List_of_frozen_dessert_brands",
+          "review": "Named frozen treat or ice/slush brand. Generic unbranded flavors are not inferred."
+        }
+      ],
+      "3 kaveria": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "documented-brand",
+          "label": "3 kaveria",
+          "origin": "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+          "review": "Explicit named ice-cream brand/company from the full list; country and corporate ownership fields are not reused."
+        },
+        {
+          "access": "public-indexed-text",
+          "aliases": [
+            "3 Friends",
+            "3 Vänner"
+          ],
+          "kind": "additional-reviewed-familiar-tail",
+          "label": "3 kaveria",
+          "origin": "https://3fgroup.fi/cases",
+          "review": "Actual named frozen brand/product line. Discontinuation does not make a historical answer false."
+        }
+      ],
+      "Snickers Ice Cream": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "primary-portfolio-brand",
+          "label": "Snickers Ice Cream",
+          "origin": "https://www.marsfoodservices.com/brands-products/ice-cream",
+          "review": "Explicit named frozen product/brand. Product flavor, package count and shared parent do not create identities."
+        },
+        {
+          "access": "public-indexed-text",
+          "aliases": [
+            "Snickers"
+          ],
+          "kind": "individually-proven-product-brand",
+          "label": "Snickers Ice Cream",
+          "origin": "https://www.snickers.com/ice-cream-collection",
+          "review": "Named frozen product line; flavor/ingredient changes remain within the parent brand identity unless a separately named line is itself a public brand."
+        }
+      ],
+      "Dove Ice Cream": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "primary-portfolio-brand",
+          "label": "Dove Ice Cream",
+          "origin": "https://www.marsfoodservices.com/brands-products/ice-cream",
+          "review": "Explicit named frozen product/brand. Product flavor, package count and shared parent do not create identities."
+        }
+      ],
+      "M&M'S Ice Cream": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "primary-portfolio-brand",
+          "label": "M&M'S Ice Cream",
+          "origin": "https://www.marsfoodservices.com/brands-products/ice-cream",
+          "review": "Explicit named frozen product/brand. Product flavor, package count and shared parent do not create identities."
+        }
+      ],
+      "Twix Ice Cream": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "primary-portfolio-brand",
+          "label": "Twix Ice Cream",
+          "origin": "https://www.marsfoodservices.com/brands-products/ice-cream",
+          "review": "Explicit named frozen product/brand. Product flavor, package count and shared parent do not create identities."
+        }
+      ],
+      "Milky Way Ice Cream": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "primary-portfolio-brand",
+          "label": "Milky Way Ice Cream",
+          "origin": "https://www.marsfoodservices.com/brands-products/ice-cream",
+          "review": "Explicit named frozen product/brand. Product flavor, package count and shared parent do not create identities."
+        }
+      ],
+      "Starburst Sorbet": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "primary-portfolio-brand",
+          "label": "Starburst Sorbet",
+          "origin": "https://www.marsfoodservices.com/brands-products/ice-cream",
+          "review": "Explicit named frozen product/brand. Product flavor, package count and shared parent do not create identities."
+        }
+      ],
+      "Kind Frozen": [
+        {
+          "access": "public-indexed-text",
+          "aliases": [],
+          "kind": "primary-portfolio-brand",
+          "label": "Kind Frozen",
+          "origin": "https://www.marsfoodservices.com/brands-products/ice-cream",
+          "review": "Explicit named frozen product/brand. Product flavor, package count and shared parent do not create identities."
+        }
+      ]
+    },
+    "publicAliases": {
+      "So Delicious": [
+        "So Delicious Dairy Free"
+      ],
+      "Cosmic Bliss": [
+        "Coconut Bliss"
+      ],
+      "Mars Ice Cream": [
+        "Mars"
+      ],
+      "Frosty": [
+        "Wendy's Frosty"
+      ],
+      "Blizzard": [
+        "Blizzard Treat",
+        "DQ Blizzard"
+      ],
+      "Samanco": [
+        "Bungeo Samanco"
+      ],
+      "Yukimi Daifuku": [
+        "Yukimi"
+      ],
+      "FatBoy": [
+        "FatBoy Ice Cream"
+      ],
+      "Dreyer's": [
+        "Dreyer's Grand Ice Cream",
+        "Edy's",
+        "Edy's Grand Ice Cream"
+      ],
+      "Cows Creamery": [
+        "COWS"
+      ],
+      "Ample Hills": [
+        "Ample Hills Creamery"
+      ],
+      "Bresler's Ice Cream": [
+        "Bresler's",
+        "Bresler's 33 Flavors"
+      ],
+      "Edy's Pie": [
+        "Eskimo Pie"
+      ],
+      "Bassetts Ice Cream": [
+        "Bassetts",
+        "Bassetts Ice"
+      ],
+      "Bell Ice Cream": [
+        "Bell"
+      ],
+      "Brigham's Ice Cream": [
+        "Brigham's"
+      ],
+      "Creamery Novelties": [
+        "Creamery Novelties Ice Cream"
+      ],
+      "Havmor": [
+        "Havmor Ice Cream"
+      ],
+      "Handel's Homemade Ice Cream & Yogurt": [
+        "Handel's",
+        "Handel's Ice Cream"
+      ],
+      "Hennig-Olsen": [
+        "Hennig Olsen Is",
+        "Hennig-Olsen Iskremfabrikk"
+      ],
+      "Hershey Creamery Company": [
+        "Hershey's Ice Cream"
+      ],
+      "It's-It": [
+        "It's-It Ice Cream"
+      ],
+      "Jeni's": [
+        "Jeni's Splendid Ice Creams"
+      ],
+      "Kawartha Dairy": [
+        "Kawartha Dairy Company"
+      ],
+      "Kelly's of Cornwall": [
+        "Kelly's"
+      ],
+      "Mauds": [
+        "Mauds Ice Creams"
+      ],
+      "Mayfield": [
+        "Mayfield Creamery",
+        "Mayfield Dairy",
+        "Mayfield Dairy Farms"
+      ],
+      "Milky Mist": [
+        "Milky Mist Dairy"
+      ],
+      "Mövenpick": [
+        "Movenpick Ice Cream"
+      ],
+      "Mr. Green Tea": [
+        "Mr. Green Tea Ice Cream Company"
+      ],
+      "Naturals Ice Cream": [
+        "Natural Ice Cream"
+      ],
+      "Perry's": [
+        "Perry's Ice Cream"
+      ],
+      "Pierre's": [
+        "Pierre's Ice Cream",
+        "Pierre's Ice Cream Company"
+      ],
+      "Sweet Republic": [
+        "Sweet Republic Ice Cream"
+      ],
+      "Van Leeuwen": [
+        "Van Leeuwen Ice Cream"
+      ],
+      "Yarnell's": [
+        "Yarnell Ice Cream",
+        "Yarnell Ice Cream Co."
+      ],
+      "Dairy Queen": [
+        "DQ"
+      ],
+      "Ben & Jerry's": [
+        "Ben and Jerry's"
+      ],
+      "Cold Stone Creamery": [
+        "Cold Stone"
+      ],
+      "Blue Bell": [
+        "Blue Bell Creameries"
+      ],
+      "Blue Bunny": [
+        "Blue Bunny Ice Cream"
+      ],
+      "Breyers": [
+        "Breyers Ice Cream"
+      ],
+      "Bruster's": [
+        "Bruster's Ice Cream",
+        "Bruster's Real Ice Cream"
+      ],
+      "Ciao Bella": [
+        "Ciao Bella Gelato Company"
+      ],
+      "Freddy's Frozen Custard & Steakburgers": [
+        "Freddy's Frozen Custard"
+      ],
+      "Rita's": [
+        "Rita's Italian Ice",
+        "Rita's Italian Ice & Frozen Custard",
+        "Rita's Water Ice"
+      ],
+      "Menchie's": [
+        "Menchie's Frozen Yogurt"
+      ],
+      "Orange Leaf": [
+        "Orange Leaf Frozen Yogurt"
+      ],
+      "TCBY": [
+        "The Country's Best Yogurt"
+      ],
+      "Tutti Frutti Frozen Yogurt": [
+        "Tutti Frutti"
+      ],
+      "Wendy's Milk Bar": [
+        "Wendy's Supa Sundaes"
+      ],
+      "MaggieMoo's": [
+        "MaggieMoo's Ice Cream and Treatery"
+      ],
+      "Mixue": [
+        "Mixue Ice Cream & Tea"
+      ],
+      "ICEE": [
+        "The Icee Company"
+      ],
+      "Tofutti": [
+        "Tofutti Cuties"
+      ],
+      "Snack and a half": [
+        "Snack and a Half Ice Cream Sandwich"
+      ],
+      "3 kaveria": [
+        "3 Friends",
+        "3 Vänner"
+      ],
+      "Snickers Ice Cream": [
+        "Snickers"
+      ],
+      "Dove Ice Cream": [
+        "Dove"
+      ],
+      "M&M'S Ice Cream": [
+        "M and Ms Ice Cream",
+        "M&M'S"
+      ],
+      "Twix Ice Cream": [
+        "Twix"
+      ],
+      "Milky Way Ice Cream": [
+        "Milky Way"
+      ],
+      "Starburst Sorbet": [
+        "Starburst"
+      ],
+      "Kind Frozen": [
+        "Kind"
+      ]
+    }
+  }
+}
