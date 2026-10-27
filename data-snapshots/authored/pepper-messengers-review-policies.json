@@ -1,0 +1,60 @@
+{
+  "chili-bell-pepper-types": {
+    "holds": {},
+    "renameRepairs": {},
+    "aliasMerges": {
+      "Banana pepper": [
+        "Banana"
+      ],
+      "Pimiento": [
+        "Pimento"
+      ],
+      "NuMex Sandia": [
+        "Sandia",
+        "Sandia A"
+      ],
+      "Española Improved": [
+        "NuMex Española Improved"
+      ],
+      "NuMex R Naky": [
+        "NuMex RNaky"
+      ],
+      "NuMex CaJohns": [
+        "NuMex CaJohn's Jumbo Serrano",
+        "NuMex CaJohn's Serrano"
+      ],
+      "NuMex Las Cruces": [
+        "NuMex Las Cruces Cayenne"
+      ],
+      "NuMex Big Jim": [
+        "Big Jim"
+      ],
+      "NuMex Joe E. Parker": [
+        "Joe E. Parker"
+      ],
+      "Jimmy Nardello": [
+        "Jimmy Nardello's",
+        "Jimmy Nardello pepper"
+      ],
+      "Early Jalapeño": [
+        "Early Jalapeno"
+      ],
+      "Fish pepper": [
+        "Fish"
+      ],
+      "NuMex Trick-or-Treat": [
+        "NuMex Trick or Treat"
+      ],
+      "NuMex Piñata": [
+        "NuMex Pinata"
+      ]
+    },
+    "displayNames": {}
+  },
+  "human-chemical-messengers": {
+    "holds": {},
+    "renameRepairs": {},
+    "aliasMerges": {},
+    "displayNames": {}
+  }
+}

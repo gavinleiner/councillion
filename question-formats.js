@@ -22,6 +22,7 @@ export function questionFormat(pack){
   'authored-whole-gaming-hardware':'Gaming hardware',
   'authored-whole-practical-science':'Practical knowledge',
   'authored-whole-garden-plants':'Plant names',
+  'authored-whole-peppers-messengers':'Everyday science and food',
   'authored-whole-color-inventory':'Colors & shades',
   'authored-whole-roster':'Characters & rosters',
   'authored-whole-taxonomic-group':'Animal kinds',

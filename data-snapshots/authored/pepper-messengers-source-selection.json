@@ -1,0 +1,323 @@
+{
+  "pepperCPIExpected": 116,
+  "pepperCPIRepresented": 116,
+  "pepperFedcoProducts": 56,
+  "uniprotHumanReviewedKeywordRecords": 98,
+  "uniprotSelectedMatureProducts": {
+    "P01189": [
+      [
+        "Alpha melanocyte stimulating hormone",
+        [
+          "Alpha MSH",
+          "Alpha melanotropin"
+        ]
+      ],
+      [
+        "Beta melanocyte stimulating hormone",
+        [
+          "Beta MSH",
+          "Beta melanotropin"
+        ]
+      ],
+      [
+        "Gamma melanocyte stimulating hormone",
+        [
+          "Gamma MSH",
+          "Gamma melanotropin"
+        ]
+      ]
+    ],
+    "Q9UBU3": [
+      [
+        "Ghrelin",
+        []
+      ]
+    ],
+    "P06881": [
+      [
+        "Alpha calcitonin gene related peptide",
+        [
+          "Alpha CGRP",
+          "Calcitonin gene related peptide 1",
+          "CGRP1"
+        ]
+      ]
+    ],
+    "P10092": [
+      [
+        "Beta calcitonin gene related peptide",
+        [
+          "Beta CGRP",
+          "Calcitonin gene related peptide 2",
+          "CGRP2"
+        ]
+      ]
+    ],
+    "P23582": [
+      [
+        "C type natriuretic peptide",
+        [
+          "CNP"
+        ]
+      ]
+    ],
+    "P16860": [
+      [
+        "B type natriuretic peptide",
+        [
+          "BNP",
+          "Brain natriuretic peptide"
+        ]
+      ]
+    ],
+    "P01160": [
+      [
+        "Urodilatin",
+        []
+      ]
+    ],
+    "P12272": [
+      [
+        "Parathyroid hormone related protein",
+        [
+          "PTHrP",
+          "Parathyroid hormone related peptide"
+        ]
+      ]
+    ],
+    "P18509": [
+      [
+        "Pituitary adenylate cyclase activating polypeptide",
+        [
+          "PACAP"
+        ]
+      ]
+    ],
+    "P01344": [
+      [
+        "Insulin like growth factor 2",
+        [
+          "IGF2",
+          "IGF 2"
+        ]
+      ]
+    ],
+    "P10997": [
+      [
+        "Amylin",
+        [
+          "Islet amyloid polypeptide",
+          "IAPP"
+        ]
+      ]
+    ],
+    "P81277": [
+      [
+        "Prolactin releasing peptide",
+        [
+          "PrRP"
+        ]
+      ]
+    ],
+    "P12872": [
+      [
+        "Motilin",
+        []
+      ]
+    ],
+    "P22466": [
+      [
+        "Galanin",
+        []
+      ]
+    ],
+    "P55089": [
+      [
+        "Urocortin 1",
+        [
+          "Urocortin"
+        ]
+      ]
+    ],
+    "Q969E3": [
+      [
+        "Urocortin 3",
+        []
+      ]
+    ],
+    "Q96RP3": [
+      [
+        "Urocortin 2",
+        []
+      ]
+    ],
+    "P35318": [
+      [
+        "Adrenomedullin",
+        []
+      ],
+      [
+        "Proadrenomedullin N terminal 20 peptide",
+        [
+          "PAMP"
+        ]
+      ]
+    ],
+    "Q7Z4H4": [
+      [
+        "Adrenomedullin 2",
+        [
+          "Intermedin"
+        ]
+      ]
+    ],
+    "O95399": [
+      [
+        "Urotensin 2",
+        [
+          "Urotensin II"
+        ]
+      ]
+    ],
+    "Q765I0": [
+      [
+        "Urotensin 2B",
+        [
+          "Urotensin II related peptide",
+          "Urotensin related peptide"
+        ]
+      ]
+    ],
+    "P01275": [
+      [
+        "Glucagon like peptide 2",
+        [
+          "GLP2",
+          "GLP 2"
+        ]
+      ],
+      [
+        "Oxyntomodulin",
+        []
+      ],
+      [
+        "Glicentin",
+        []
+      ]
+    ],
+    "P01242": [
+      [
+        "Placental growth hormone",
+        [
+          "Growth hormone variant",
+          "GH V"
+        ]
+      ]
+    ],
+    "P20382": [
+      [
+        "Melanin concentrating hormone",
+        [
+          "MCH"
+        ]
+      ]
+    ],
+    "Q9ULZ1": [
+      [
+        "Apelin",
+        []
+      ]
+    ],
+    "P35555": [
+      [
+        "Asprosin",
+        []
+      ]
+    ],
+    "P35556": [
+      [
+        "Placensin",
+        []
+      ]
+    ],
+    "Q99988": [
+      [
+        "Growth differentiation factor 15",
+        [
+          "GDF15"
+        ]
+      ]
+    ],
+    "Q8NAU1": [
+      [
+        "Irisin",
+        []
+      ]
+    ],
+    "Q9HD89": [
+      [
+        "Resistin",
+        []
+      ]
+    ],
+    "P0DMC3": [
+      [
+        "Elabela",
+        [
+          "Apela",
+          "Toddler peptide"
+        ]
+      ]
+    ],
+    "Q4G0M1": [
+      [
+        "Erythroferrone",
+        [
+          "ERFE"
+        ]
+      ]
+    ],
+    "P52823": [
+      [
+        "Stanniocalcin 1",
+        []
+      ]
+    ],
+    "O76061": [
+      [
+        "Stanniocalcin 2",
+        []
+      ]
+    ],
+    "O00230": [
+      [
+        "Cortistatin",
+        []
+      ]
+    ],
+    "Q9UBC7": [
+      [
+        "Galanin like peptide",
+        [
+          "GALP"
+        ]
+      ]
+    ],
+    "Q5T7M4": [
+      [
+        "Adipolin",
+        []
+      ]
+    ],
+    "Q6UXH0": [
+      [
+        "Angiopoietin like protein 8",
+        [
+          "ANGPTL8",
+          "Betatrophin"
+        ]
+      ]
+    ]
+  },
+  "note": "Records and answer names are not questions. Only TWO whole independently proposed concepts. No claim of a complete universe or of the unfinished 5000 release."
+}

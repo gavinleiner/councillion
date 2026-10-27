@@ -1,6 +1,6 @@
 {
-  "build": "6b80f976e29947b3",
-  "count": 465,
+  "build": "2471449a53c2a01c",
+  "count": 467,
   "categories": [
     {
       "id": "group-q001",
@@ -3721,6 +3721,22 @@
       "group": "authored-whole-garden-plants",
       "answerCount": 1438,
       "scope": "Documented carnivorous plants and recognized named groups count. A whole mixed genus must not bring in non-carnivorous species. Fictional man-eating plants do not count. Cultivar epithets need their plant/genus qualification. Registered and independently documented cultivated forms count; a nomenclatural status alone does not decide real horticultural use."
+    },
+    {
+      "id": "authored-chili-bell-pepper-types",
+      "prompt": "Name a type of chili or bell pepper.",
+      "family": "food",
+      "group": "authored-whole-peppers-messengers",
+      "answerCount": 184,
+      "scope": "Real named Capsicum pepper kinds/cultivars and documented dried names count. Fresh/dried names of one pepper share identity where they identify the same pepper. Black pepper and arbitrary color-plus-food labels are not Capsicum types."
+    },
+    {
+      "id": "authored-human-chemical-messengers",
+      "prompt": "Name a hormone or neurotransmitter made by the human body.",
+      "family": "science",
+      "group": "authored-whole-peppers-messengers",
+      "answerCount": 137,
+      "scope": "Documented natural human hormones/neurotransmitters and named groups count. Natural dual-role messengers count. Synthetic drug-only analogues and organs do not. Actual published abbreviations count; do not generate initials."
     }
   ]
 }

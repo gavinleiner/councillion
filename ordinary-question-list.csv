@@ -464,3 +464,5 @@ id,subject,question,canonical_answers
 "authored-houseplants","nature","Name a plant commonly grown as a houseplant.","1525"
 "authored-succulent-kinds","nature","Name a succulent plant.","377"
 "authored-carnivorous-plant-kinds","nature","Name a carnivorous plant.","1438"
+"authored-chili-bell-pepper-types","food","Name a type of chili or bell pepper.","184"
+"authored-human-chemical-messengers","science","Name a hormone or neurotransmitter made by the human body.","137"
