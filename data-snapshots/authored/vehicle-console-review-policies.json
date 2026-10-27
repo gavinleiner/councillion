@@ -1,0 +1,1180 @@
+{
+  "motor-vehicle-brands": {
+    "question": {
+      "key": "motor-vehicle-brands",
+      "family": "world",
+      "prompt": "Name a car, motorcycle, truck or bus manufacturer or brand.",
+      "scope": "Real current or historical manufacturers and established marques of cars, motorcycles (including racing motorcycles), trucks and buses count, including documented vehicle assembly and coachbuilding firms. A vehicle model alone, a transport operator, an aircraft/rail-only maker, a pure component supplier, a toy or a fictional brand does not count. Actual brand/company names and true renames share an answer.",
+      "familiar": [
+        "Ford",
+        "Chevrolet",
+        "Toyota",
+        "Honda",
+        "Nissan",
+        "BMW",
+        "Mercedes-Benz",
+        "Audi",
+        "Volkswagen",
+        "Porsche",
+        "Ferrari",
+        "Lamborghini",
+        "McLaren",
+        "Aston Martin",
+        "Bentley",
+        "Rolls-Royce",
+        "Jaguar",
+        "Land Rover",
+        "Range Rover",
+        "Volvo",
+        "Saab",
+        "Peugeot",
+        "Citroën",
+        "Renault",
+        "Fiat",
+        "Alfa Romeo",
+        "Maserati",
+        "Lancia",
+        "Opel",
+        "Vauxhall",
+        "Škoda",
+        "SEAT",
+        "Cupra",
+        "Dacia",
+        "Hyundai",
+        "Kia",
+        "Genesis",
+        "Lexus",
+        "Acura",
+        "Infiniti",
+        "Mazda",
+        "Subaru",
+        "Mitsubishi",
+        "Suzuki",
+        "Isuzu",
+        "Daihatsu",
+        "Tesla",
+        "Rivian",
+        "Lucid",
+        "Jeep",
+        "Dodge",
+        "Chrysler",
+        "Ram",
+        "GMC",
+        "Cadillac",
+        "Buick",
+        "Lincoln",
+        "Mercury",
+        "Pontiac",
+        "Oldsmobile",
+        "Plymouth",
+        "Saturn",
+        "Hummer",
+        "Studebaker",
+        "Packard",
+        "DeLorean",
+        "Lotus",
+        "Koenigsegg",
+        "Pagani",
+        "Bugatti",
+        "Morgan",
+        "Caterham",
+        "Ariel",
+        "TVR",
+        "Smart",
+        "Mini",
+        "Polestar",
+        "BYD",
+        "Geely",
+        "Nio",
+        "Xpeng",
+        "Chery",
+        "Haval",
+        "Great Wall",
+        "MG",
+        "Tata",
+        "Mahindra",
+        "Proton",
+        "Perodua",
+        "VinFast",
+        "Harley-Davidson",
+        "Ducati",
+        "Kawasaki",
+        "Yamaha",
+        "Triumph",
+        "Royal Enfield",
+        "Indian Motorcycle",
+        "KTM",
+        "Aprilia",
+        "Vespa",
+        "Scania",
+        "Iveco",
+        "DAF",
+        "Kenworth",
+        "Peterbilt",
+        "Mack",
+        "Freightliner",
+        "International"
+      ],
+      "exclude": [
+        "Boeing",
+        "Michelin",
+        "Hot Wheels",
+        "Batmobile",
+        "Toyota Camry",
+        "Honda Civic",
+        "Corvette",
+        "Mustang model",
+        "Model 3",
+        "Range Rover Sport",
+        "FlixBus",
+        "Cyprus",
+        "Namibia",
+        "Manufacturer",
+        "Image",
+        "Kenworth W900",
+        "Hino 238",
+        "Mercedes-Benz Actros",
+        "UD Quon",
+        "Volvo VN 780",
+        "Iveco PowerStar 420 E5"
+      ],
+      "references": [
+        "https://en.wikipedia.org/wiki/List_of_truck_manufacturers",
+        "https://en.wikipedia.org/wiki/List_of_buses",
+        "https://en.wikipedia.org/wiki/List_of_school_bus_manufacturers",
+        "https://en.wikipedia.org/wiki/List_of_trolleybus_manufacturers",
+        "https://en.wikipedia.org/wiki/List_of_automobile_manufacturers",
+        "https://en.wikipedia.org/wiki/List_of_motorcycle_manufacturers",
+        "https://www.jlr.com/news/2023/06/jaguar-land-rover-unveils-new-jlr-corporate-identity-it-accelerates-modern-luxury",
+        "https://www.brabus.com/en-int/brand.html",
+        "https://www.mercedes-amg.com/en/home.html"
+      ]
+    },
+    "holds": {
+      "Image": "A generic caption, source fragment, geographic cell or transport operator rather than a verified manufacturer/brand name.",
+      "Manufacturer": "A generic caption, source fragment, geographic cell or transport operator rather than a verified manufacturer/brand name.",
+      "Cyprus": "A generic caption, source fragment, geographic cell or transport operator rather than a verified manufacturer/brand name.",
+      "Namibia": "A generic caption, source fragment, geographic cell or transport operator rather than a verified manufacturer/brand name.",
+      "original Springfield company": "A generic caption, source fragment, geographic cell or transport operator rather than a verified manufacturer/brand name.",
+      "Gilroy company": "A generic caption, source fragment, geographic cell or transport operator rather than a verified manufacturer/brand name.",
+      "List of trucks": "A generic caption, source fragment, geographic cell or transport operator rather than a verified manufacturer/brand name.",
+      "List of pickup trucks": "A generic caption, source fragment, geographic cell or transport operator rather than a verified manufacturer/brand name.",
+      "List of electric truck makers": "A generic caption, source fragment, geographic cell or transport operator rather than a verified manufacturer/brand name.",
+      "FlixBus": "A generic caption, source fragment, geographic cell or transport operator rather than a verified manufacturer/brand name.",
+      "Helicron": "An individual/prototype vehicle or model rather than a separately established maker or marque.",
+      "Electric Raceabout": "An individual/prototype vehicle or model rather than a separately established maker or marque.",
+      "KSU Gazal-1": "An individual/prototype vehicle or model rather than a separately established maker or marque.",
+      "Devrim": "An individual/prototype vehicle or model rather than a separately established maker or marque.",
+      "Killinger and Freund Motorcycle": "An individual/prototype vehicle or model rather than a separately established maker or marque.",
+      "Uri Desert Runner": "An individual/prototype vehicle or model rather than a separately established maker or marque.",
+      "FSC Żuk": "An individual/prototype vehicle or model rather than a separately established maker or marque.",
+      "FSR Tarpan": "An individual/prototype vehicle or model rather than a separately established maker or marque.",
+      "Warszawa": "An individual/prototype vehicle or model rather than a separately established maker or marque.",
+      "Syrena": "An individual/prototype vehicle or model rather than a separately established maker or marque.",
+      "GA": "Unverified regional/abbreviated source label; actual independent maker identity is not established.",
+      "Tata Motors Japan": "Unverified regional/abbreviated source label; actual independent maker identity is not established.",
+      "Tata Motor UK": "Unverified regional/abbreviated source label; actual independent maker identity is not established.",
+      "Tata Motors Africa": "Unverified regional/abbreviated source label; actual independent maker identity is not established.",
+      "Mahindra Motors African": "Unverified regional/abbreviated source label; actual independent maker identity is not established.",
+      "Jeffedry Quad": "Unverified regional/abbreviated source label; actual independent maker identity is not established.",
+      "Stellican Limited": "Investment firm, rather than the actual Indian motorcycle marque.",
+      "Brown Boveri & Company": "Electrical-equipment supplier; a complete branded road-vehicle maker role is not established.",
+      "Kiepe Electric": "Primarily electrical-equipment supplier; source describes lead contracting rather than a distinct complete-vehicle marque.",
+      "Yaroslavl motor plant": "Engine supplier rather than a complete car/motorcycle/truck/bus manufacturer."
+    },
+    "renameRepairs": {
+      "Hero Motocop": "Hero MotoCorp",
+      "Nissian/Minsei": "Nissan Diesel",
+      "the Ghabbour Group": "Ghabbour Group",
+      "MCV_Bus_and_Coach": "MCV Bus and Coach",
+      "Fritz Fleischer (Unternehmen)": "Fritz Fleischer",
+      "Chrysler (brand)": "Chrysler",
+      "Ralph (truck manufacturer)": "Ralph",
+      "Shamrock (car)": "Shamrock",
+      "Van Veen (motorcycle)": "Van Veen"
+    },
+    "aliasMerges": {
+      "Ford": [
+        "Ford Motor Company",
+        "Ford Australia",
+        "Ford Otosan"
+      ],
+      "Toyota": [
+        "Toyota Motor Corporation"
+      ],
+      "Honda": [
+        "Honda Motor Company",
+        "Honda Motor Co."
+      ],
+      "Nissan": [
+        "Nissan Motors",
+        "Nissan Motor Company"
+      ],
+      "BMW": [
+        "BMW Motorrad",
+        "Bayerische Motoren Werke"
+      ],
+      "Mercedes-Benz": [
+        "Mercedes-Benz Buses"
+      ],
+      "Volkswagen": [
+        "Volkswagen Commercial Vehicles",
+        "Volkswagen Caminhões e Ônibus",
+        "Volkswagen Truck & Bus",
+        "Volkswagen Truck and Bus"
+      ],
+      "Volvo": [
+        "Volvo Cars",
+        "Volvo Trucks",
+        "Volvo Buses"
+      ],
+      "Mitsubishi": [
+        "Mitsubishi Motors"
+      ],
+      "Lucid": [
+        "Lucid Motors"
+      ],
+      "International": [
+        "International Motors",
+        "Navistar International",
+        "Navistar",
+        "International Harvester"
+      ],
+      "Mack": [
+        "Mack Trucks"
+      ],
+      "Freightliner": [
+        "Freightliner Trucks"
+      ],
+      "Western Star": [
+        "Western Star Trucks"
+      ],
+      "DAF": [
+        "DAF Trucks"
+      ],
+      "Tata": [
+        "Tata Motors"
+      ],
+      "Mahindra": [
+        "Mahindra Truck and Bus Division"
+      ],
+      "Hyundai": [
+        "Hyundai Motor Company"
+      ],
+      "Kia": [
+        "Kia Motors"
+      ],
+      "Foton": [
+        "Foton Motor"
+      ],
+      "BYD": [
+        "BYD Auto",
+        "BYD Company"
+      ],
+      "Dongfeng": [
+        "Dongfeng Motor Corporation"
+      ],
+      "JAC Motors": [
+        "Jianghuai Automobile"
+      ],
+      "Jiangling": [
+        "Jiangling Motors"
+      ],
+      "GWM": [
+        "Great Wall",
+        "Great Wall Motors"
+      ],
+      "BAIC": [
+        "Beijing Automotive Group"
+      ],
+      "SAIC": [
+        "SAIC Motor"
+      ],
+      "MG": [
+        "MG Motor",
+        "Morris Garages"
+      ],
+      "Mini": [
+        "MINI"
+      ],
+      "GM": [
+        "General Motors",
+        "General Motors Company",
+        "General Motors Corporation",
+        "General Motors Canada"
+      ],
+      "Tesla": [
+        "Tesla Motors"
+      ],
+      "DINA": [
+        "Dina"
+      ],
+      "MAN": [
+        "MAN Truck & Bus"
+      ],
+      "Hino": [
+        "Hino Motors"
+      ],
+      "Fuso": [
+        "Mitsubishi Fuso",
+        "Mitsubishi Fuso Truck & Bus Corporation"
+      ],
+      "Scania": [
+        "Scania AB"
+      ],
+      "Renault": [],
+      "Renault Trucks": [
+        "Renault Véhicules Industriels",
+        "Renault Vehicles Industries",
+        "Renault Bus"
+      ],
+      "Force Motors": [
+        "Force"
+      ],
+      "Hero MotoCorp": [
+        "Hero Motocorp"
+      ],
+      "Bajaj": [
+        "Bajaj Auto"
+      ],
+      "TVS": [
+        "TVS Motor"
+      ],
+      "BMC (Turkey)": [
+        "BMC",
+        "BMC Otomotiv"
+      ],
+      "British Motor Corporation": [
+        "BMC Britain"
+      ],
+      "OM": [
+        "Officine Meccaniche",
+        "O.M."
+      ],
+      "SPA": [
+        "S.P.A."
+      ],
+      "SCAT": [
+        "S.C.A.T."
+      ],
+      "Moskvitch": [
+        "Moskvych"
+      ],
+      "Think": [
+        "TH!NK"
+      ],
+      "URO": [
+        "Uro"
+      ],
+      "Hispano-Suiza": [
+        "Hispano Suiza"
+      ],
+      "Rába": [
+        "Raba"
+      ],
+      "Rimac": [
+        "Rimac Automobili"
+      ],
+      "Škoda": [
+        "Skoda"
+      ],
+      "Citroën": [
+        "Citroen"
+      ],
+      "Zündapp": [
+        "Zundapp"
+      ],
+      "Blue Bird": [
+        "Blue Bird Corporation"
+      ],
+      "Thomas Built Buses": [
+        "Thomas Built Buses, Inc.",
+        "Thomas"
+      ],
+      "MCI": [
+        "Motor Coach Industries"
+      ],
+      "Prevost": [
+        "Prevost Car"
+      ],
+      "New Flyer": [
+        "New Flyer Industries",
+        "Western Flyer Coach",
+        "Flyer Industries"
+      ],
+      "Gillig": [
+        "Gillig Corporation"
+      ],
+      "Collins Bus": [
+        "Collins Bus Corporation"
+      ],
+      "Custom Denning": [
+        "Custom Bus"
+      ],
+      "BusTech": [
+        "Bustech"
+      ],
+      "MCV": [
+        "MCV Bus and Coach",
+        "Manufacturing Commercial Vehicles"
+      ],
+      "Solaris": [
+        "Solaris Bus & Coach"
+      ],
+      "TEMSA": [
+        "Temsa"
+      ],
+      "Güleryüz": [
+        "Guleryuz"
+      ],
+      "BKM": [
+        "Belkommunmash"
+      ],
+      "Pivdenmash": [
+        "Yuzhmash"
+      ],
+      "AEC": [
+        "Associated Equipment Company"
+      ],
+      "Bristol": [
+        "Bristol Commercial Vehicles"
+      ],
+      "Bedford": [
+        "Bedford Vehicles"
+      ],
+      "Crossley": [
+        "Crossley Motors"
+      ],
+      "Guy": [
+        "Guy Motors"
+      ],
+      "Leyland": [
+        "Leyland Motors"
+      ],
+      "TAM": [
+        "TAM (trucks)"
+      ],
+      "RAF": [
+        "RAF (Latvija)",
+        "Riga Autobus Factory"
+      ],
+      "FN": [
+        "Fabrique Nationale"
+      ],
+      "Ariel": [
+        "Ariel Motor Company"
+      ],
+      "Buell": [
+        "Buell Motorcycle Company"
+      ],
+      "Indian Motorcycle": [
+        "Indian"
+      ],
+      "VinFast": [
+        "Vinfast"
+      ],
+      "Zastava": [
+        "Zastava Automobiles"
+      ],
+      "Zyle Daewoo": [
+        "Zyle Daewoo Bus"
+      ],
+      "Daewoo Bus": [
+        "Zyle Daewoo"
+      ],
+      "Renault Korea": [
+        "Samsung",
+        "Samsung Motors",
+        "Renault Samsung Motors"
+      ],
+      "KG Mobility": [
+        "SsangYong"
+      ],
+      "SML Mahindra": [
+        "SML Isuzu"
+      ],
+      "Paccar": [
+        "PACCAR"
+      ],
+      "Datsun": [
+        "Datson"
+      ],
+      "FSC Lublin": [
+        "Fabryka Samochodów Ciężarowych"
+      ],
+      "Husqvarna": [
+        "Husqvarna Motorcycles"
+      ],
+      "Royal Enfield": [
+        "Enfield"
+      ],
+      "Triumph": [
+        "Triumph Engineering Ltd"
+      ],
+      "Ner-a-Car": [
+        "Ner-a Car",
+        "Ner-A-Car"
+      ],
+      "Beta": [
+        "Beta Motor"
+      ],
+      "FB Mondial": [
+        "Mondial"
+      ],
+      "GasGas": [
+        "Gas Gas"
+      ],
+      "Z Electric Vehicle": [
+        "ZEV"
+      ],
+      "Kymco": [
+        "Kwang Yang Motor Company"
+      ],
+      "OSCA": [
+        "O.S.C.A."
+      ],
+      "Ford Performance Vehicles": [
+        "Ford Performance Vehicles (FPV)",
+        "FPV"
+      ],
+      "Excelsior (Chicago)": [
+        "Excelsior"
+      ],
+      "UD Trucks": [
+        "Nissan Diesel",
+        "Minsei Diesel"
+      ],
+      "Kenworth": [
+        "Gersix"
+      ],
+      "JLR": [
+        "Jaguar Land Rover"
+      ],
+      "Mercedes-AMG": [
+        "AMG"
+      ],
+      "Brabus": [
+        "BRABUS"
+      ]
+    },
+    "sourceSupplements": {
+      "https://www.jlr.com/news/2023/06/jaguar-land-rover-unveils-new-jlr-corporate-identity-it-accelerates-modern-luxury": "Range Rover|Defender|Discovery|JLR",
+      "https://www.brabus.com/en-int/brand.html": "Brabus",
+      "https://www.mercedes-amg.com/en/home.html": "Mercedes-AMG"
+    },
+    "rare": "Borgward",
+    "entry": [
+      "Ford",
+      "Chevrolet",
+      "Toyota",
+      "Honda",
+      "Nissan",
+      "BMW",
+      "Mercedes-Benz",
+      "Volkswagen",
+      "Audi",
+      "Tesla",
+      "Hyundai",
+      "Kia",
+      "Jeep",
+      "Dodge",
+      "Ferrari",
+      "Lamborghini",
+      "GM"
+    ],
+    "moderate": [
+      "Abarth",
+      "Alpine",
+      "Alpina",
+      "Maybach",
+      "Brabus",
+      "Mercedes-AMG",
+      "GWM",
+      "GM",
+      "SAIC",
+      "BSA",
+      "Polaris",
+      "Can-Am",
+      "CFMoto",
+      "Kymco",
+      "Moto Guzzi",
+      "Piaggio",
+      "Lambretta",
+      "Norton"
+    ]
+  },
+  "game-console-models": {
+    "question": {
+      "key": "game-console-models",
+      "family": "gaming",
+      "prompt": "Name a video game console or dedicated gaming handheld.",
+      "scope": "Named released game consoles, dedicated handheld game systems and purpose-built gaming handheld PCs count. Named revisions, early electronic/VHS-based gaming systems and game-library add-on platforms count; regional renames of the same platform share an answer. N-Gage is a documented gaming-handheld hybrid. General-purpose phones/computers, media-streaming boxes with optional games, unreleased prototypes and input-only controllers do not count. A self-contained plug-and-play game unit counts even if its shell resembles a controller.",
+      "familiar": [
+        "Nintendo Entertainment System",
+        "NES",
+        "Famicom",
+        "Super Nintendo Entertainment System",
+        "SNES",
+        "Super Famicom",
+        "Nintendo 64",
+        "GameCube",
+        "Wii",
+        "Wii U",
+        "Nintendo Switch",
+        "Nintendo Switch Lite",
+        "Nintendo Switch OLED",
+        "Nintendo Switch 2",
+        "Game Boy",
+        "Game Boy Pocket",
+        "Game Boy Color",
+        "Game Boy Advance",
+        "Game Boy Advance SP",
+        "Game Boy Micro",
+        "Nintendo DS",
+        "Nintendo DS Lite",
+        "Nintendo DSi",
+        "Nintendo 3DS",
+        "Nintendo 3DS XL",
+        "Nintendo 2DS",
+        "New Nintendo 3DS",
+        "New Nintendo 2DS XL",
+        "Virtual Boy",
+        "Game & Watch",
+        "PlayStation",
+        "PS one",
+        "PlayStation 2",
+        "PlayStation 3",
+        "PlayStation 4",
+        "PlayStation 4 Pro",
+        "PlayStation 5",
+        "PlayStation 5 Pro",
+        "PlayStation Portable",
+        "PSP",
+        "PSP Go",
+        "PlayStation Vita",
+        "PlayStation TV",
+        "Xbox",
+        "Xbox 360",
+        "Xbox 360 S",
+        "Xbox 360 E",
+        "Xbox One",
+        "Xbox One S",
+        "Xbox One X",
+        "Xbox Series X",
+        "Xbox Series S",
+        "Sega Master System",
+        "Sega Genesis",
+        "Mega Drive",
+        "Sega CD",
+        "Mega-CD",
+        "Sega 32X",
+        "Sega Saturn",
+        "Dreamcast",
+        "Game Gear",
+        "Sega Nomad",
+        "SG-1000",
+        "Atari 2600",
+        "Atari 5200",
+        "Atari 7800",
+        "Atari Jaguar",
+        "Atari Lynx",
+        "Atari XEGS",
+        "Atari VCS",
+        "Magnavox Odyssey",
+        "Odyssey 2",
+        "Intellivision",
+        "ColecoVision",
+        "Coleco Telstar",
+        "Vectrex",
+        "Fairchild Channel F",
+        "RCA Studio II",
+        "Bally Astrocade",
+        "TurboGrafx-16",
+        "PC Engine",
+        "TurboDuo",
+        "TurboExpress",
+        "PC-FX",
+        "Neo Geo AES",
+        "Neo Geo CD",
+        "Neo Geo Pocket",
+        "Neo Geo Pocket Color",
+        "Neo Geo X",
+        "WonderSwan",
+        "WonderSwan Color",
+        "SwanCrystal",
+        "3DO Interactive Multiplayer",
+        "Philips CD-i",
+        "Apple Pippin",
+        "Casio Loopy",
+        "Casio PV-1000",
+        "Amstrad GX4000",
+        "Commodore 64 Games System",
+        "Amiga CD32",
+        "Ouya",
+        "Nokia N-Gage",
+        "N-Gage QD",
+        "Gizmondo",
+        "Tapwave Zodiac",
+        "Tiger Game.com",
+        "Tiger R-Zone",
+        "Watara Supervision",
+        "Gamate",
+        "GameKing",
+        "Mega Duck",
+        "Zeebo",
+        "Playdate",
+        "Analogue Pocket",
+        "Evercade",
+        "Steam Deck",
+        "Steam Deck OLED",
+        "ASUS ROG Ally",
+        "Lenovo Legion Go",
+        "MSI Claw"
+      ],
+      "exclude": [
+        "iPhone",
+        "DualSense controller",
+        "Nintendo Dolphin prototype",
+        "Minecraft",
+        "TV Game",
+        "Video Game",
+        "Console",
+        "Handheld",
+        "Image",
+        "Paddle",
+        "AY-3-8500",
+        "KFConsole",
+        "Atari 2700",
+        "Phantom",
+        "Fire TV",
+        "Chromecast Ultra",
+        "Donkey Kong",
+        "Game & Watch Tetris Jr."
+      ],
+      "references": [
+        "https://en.wikipedia.org/wiki/List_of_first_generation_home_video_game_consoles",
+        "https://en.wikipedia.org/wiki/List_of_Game_%26_Watch_games",
+        "https://en.wikipedia.org/wiki/List_of_handheld_game_consoles",
+        "https://en.wikipedia.org/wiki/List_of_dedicated_video_game_consoles",
+        "https://en.wikipedia.org/wiki/List_of_retro_style_video_game_consoles",
+        "https://en.wikipedia.org/wiki/List_of_home_video_game_consoles",
+        "https://en.wikipedia.org/wiki/List_of_microconsoles",
+        "https://www.nintendo.com/en-gb/Corporate/Consumer-Information/Manuals-and-additional-documents/Manuals-and-additional-documents-622121.html",
+        "https://www.nintendo.com/us/gaming-systems/",
+        "https://sonyinteractive.com/en/our-company/expanded-company-timeline/",
+        "https://www.playstation.com/en-us/ps4/",
+        "https://blog.playstation.com/2024/11/07/getting-started-with-playstation-5-pro-out-today/",
+        "https://en.wikipedia.org/wiki/Xbox_360_technical_specifications",
+        "https://www.xbox.com/en-US/consoles",
+        "https://www.steamdeck.com/en/tech",
+        "https://rog.asus.com/gaming-handhelds/rog-ally-series/",
+        "https://news.xbox.com/en-us/2025/10/16/rog-xbox-ally-handheld-out-now-launch/",
+        "https://news.lenovo.com/pressroom/press-releases/legion-go-gaming-handheld-device-and-accessories/",
+        "https://jp.msi.com/news/detail/Claw-A1M-002JP-143394",
+        "https://en.wikipedia.org/wiki/N-Gage_QD",
+        "https://en.wikipedia.org/wiki/Neo_Geo_Pocket_Color",
+        "https://en.wikipedia.org/wiki/WonderSwan_Color",
+        "https://en.wikipedia.org/wiki/Atari_Lynx",
+        "https://en.wikipedia.org/wiki/Game_Boy",
+        "https://en.wikipedia.org/wiki/Game_Gear",
+        "https://en.wikipedia.org/wiki/R-Zone",
+        "https://en.wikipedia.org/wiki/TurboDuo"
+      ]
+    },
+    "holds": {
+      "Fire TV": "Primarily a media-streaming player rather than a dedicated game console or gaming handheld.",
+      "Fire TV Stick": "Primarily a media-streaming player rather than a dedicated game console or gaming handheld.",
+      "Fire TV Cube": "Primarily a media-streaming player rather than a dedicated game console or gaming handheld.",
+      "Nexus Player": "Primarily a media-streaming player rather than a dedicated game console or gaming handheld.",
+      "Nvidia Shield TV": "Primarily a media-streaming player rather than a dedicated game console or gaming handheld.",
+      "Nvidia Shield TV 3rd Gen": "Primarily a media-streaming player rather than a dedicated game console or gaming handheld.",
+      "Nvidia SHIELD TV Pro 3rd Gen": "Primarily a media-streaming player rather than a dedicated game console or gaming handheld.",
+      "Apple TV 4th Gen (HD)": "Primarily a media-streaming player rather than a dedicated game console or gaming handheld.",
+      "Apple TV 5th Gen (4K)": "Primarily a media-streaming player rather than a dedicated game console or gaming handheld.",
+      "Apple TV 6th Gen (4K)": "Primarily a media-streaming player rather than a dedicated game console or gaming handheld.",
+      "Chromecast Ultra (Google Stadia Premiere Edition)": "Primarily a media-streaming player rather than a dedicated game console or gaming handheld.",
+      "TV with Pong console": "Descriptive television entry without an actual console/model name.",
+      "Inno Hit (TTL7400 series) Pong console": "Unnamed source description identified only by chip family, not an established console/model name.",
+      "M64": "Current source year/announcement does not establish a shipped release; primary release proof is pending.",
+      "Vectrex Mini": "A shipped release has not been established.",
+      "THEA1200": "A shipped release has not been established from the captured source.",
+      "THE800XL": "A shipped release has not been established from the captured source.",
+      "X68000 Z 2": "Current source announcement/year needs actual-release reconciliation.",
+      "PasocomMini PC-8801mkIISR": "Current source announcement/year needs actual-release reconciliation.",
+      "СУ-А": "The source uses a native-only model code. No unambiguous public ASCII model spelling is established; the current matcher would otherwise erase the identifying code and accept its manufacturer alone."
+    },
+    "renameRepairs": {
+      "NES/Family Computer (Famicom)": "Nintendo Entertainment System",
+      "Super NES/Super Famicom": "Super Nintendo Entertainment System",
+      "Sega Mark III/Master System": "Sega Master System",
+      "PC Engine/TurboGrafx-16": "TurboGrafx-16",
+      "Sega Genesis/Mega Drive": "Sega Genesis",
+      "Sega CD/Mega-CD": "Sega CD",
+      "TurboGrafx-CD/CD-ROM²": "TurboGrafx-CD",
+      "PC Engine2/SuperGrafx": "SuperGrafx",
+      "Atari 2600 / Video Computer System": "Atari 2600",
+      "Arcadia 2001 and its variants and clones": "Arcadia 2001",
+      "Channel F": "Fairchild Channel F",
+      "PV-1000": "Casio PV-1000",
+      "Pippin": "Apple Pippin",
+      "GX4000": "Amstrad GX4000",
+      "32X": "Sega 32X",
+      "CD-i": "Philips CD-i",
+      "3DO": "3DO Interactive Multiplayer",
+      "Odyssey 2": "Magnavox Odyssey 2",
+      "Bridge Companion": "BBC Bridge Companion",
+      "Nomad": "Sega Nomad",
+      "Game.com": "Tiger Game.com",
+      "Game & Watch series": "Game & Watch",
+      "Game Gadget": "GameGadget",
+      "ROG Ally": "ASUS ROG Ally",
+      "ROG Xbox Ally": "ASUS ROG Xbox Ally",
+      "Neo Geo X (can be connected to TV)": "Neo Geo X",
+      "Nintendo Entertainment System: NES Classic Edition": "NES Classic Edition",
+      "Super Nintendo Entertainment System: Super NES Classic Edition": "Super NES Classic Edition",
+      "THEC64 Mini (Commodore 64 Mini)": "THEC64 Mini",
+      "THEC64 (Commodore 64 full size \"Maxi\" version)": "THEC64",
+      "THEVIC20 (VIC-20)": "THEVIC20",
+      "THEA500 Mini (Amiga 500 Mini)": "THEA500 Mini",
+      "THE400 Mini (Atari 400 Mini)": "THE400 Mini",
+      "The Spectrum (ZX Spectrum)": "The Spectrum",
+      "Taito Arcade Selection: Egret II Mini": "Egret II Mini",
+      "RetroN 2 Gaming Console": "RetroN 2",
+      "RetroN 3 HD 3in1 Retro Gaming Console": "RetroN 3 HD",
+      "RetroN 5: HD Gaming Console": "RetroN 5",
+      "RetroN 77: HD Gaming Console": "RetroN 77",
+      "RetroN 1 AV Gaming Console": "RetroN 1 AV",
+      "SupaRetroN HD Gaming Console": "SupaRetroN HD",
+      "MegaRetroN HD Gaming Console": "MegaRetroN HD",
+      "SupaBoy Portable Pocket Console": "SupaBoy",
+      "Game & Watch Ball Club Nintendo re-release": "Game & Watch Ball",
+      "Mattel Handheld Games re-release series": "Mattel Handheld Games",
+      "Mattel Handheld Games original series": "Mattel Handheld Games",
+      "Tiger Electronics Handheld Games series": "Tiger Electronics Handheld Games",
+      "Acclaim Handheld Games series": "Acclaim Handheld Games",
+      "VTech Handheld games": "VTech Handheld Games"
+    },
+    "aliasMerges": {
+      "Nintendo Entertainment System": [
+        "NES",
+        "Famicom",
+        "Family Computer",
+        "Nintendo Famicom"
+      ],
+      "Super Nintendo Entertainment System": [
+        "SNES",
+        "Super NES",
+        "Super Nintendo",
+        "Super Famicom"
+      ],
+      "Sega Genesis": [
+        "Mega Drive",
+        "Sega Mega Drive"
+      ],
+      "Sega Master System": [
+        "Master System",
+        "Sega Mark III"
+      ],
+      "Sega CD": [
+        "Mega-CD",
+        "Sega Mega-CD"
+      ],
+      "Sega 32X": [
+        "32X"
+      ],
+      "TurboGrafx-16": [
+        "PC Engine",
+        "NEC PC Engine"
+      ],
+      "TurboGrafx-CD": [
+        "CD-ROM²",
+        "PC Engine CD-ROM2"
+      ],
+      "TurboDuo": [
+        "PC Engine Duo",
+        "Turbo Duo"
+      ],
+      "SuperGrafx": [
+        "PC Engine SuperGrafx"
+      ],
+      "TurboExpress": [
+        "PC Engine GT"
+      ],
+      "GameCube": [
+        "Nintendo GameCube"
+      ],
+      "PlayStation": [
+        "PS1"
+      ],
+      "PS one": [
+        "PlayStation One"
+      ],
+      "PlayStation 2": [
+        "PS2"
+      ],
+      "PlayStation 3": [
+        "PS3"
+      ],
+      "PlayStation 4": [
+        "PS4"
+      ],
+      "PlayStation 4 Pro": [
+        "PS4 Pro"
+      ],
+      "PlayStation 5": [
+        "PS5"
+      ],
+      "PlayStation 5 Pro": [
+        "PS5 Pro"
+      ],
+      "PlayStation Portable": [
+        "PSP"
+      ],
+      "PSP Go": [
+        "PSPgo"
+      ],
+      "PlayStation Vita": [
+        "PS Vita",
+        "PSVita"
+      ],
+      "PlayStation TV": [
+        "PS Vita TV",
+        "Vita TV"
+      ],
+      "Xbox": [
+        "Original Xbox"
+      ],
+      "Xbox 360 S": [
+        "Xbox 360 Slim"
+      ],
+      "Nintendo Switch OLED": [
+        "Nintendo Switch OLED Model",
+        "Nintendo Switch - OLED Model"
+      ],
+      "Nintendo Switch Lite": [
+        "Switch Lite"
+      ],
+      "Nintendo DS": [
+        "DS"
+      ],
+      "Nintendo DS Lite": [
+        "DS Lite"
+      ],
+      "Nintendo DSi": [
+        "DSi"
+      ],
+      "Nintendo DSi XL": [
+        "DSi XL"
+      ],
+      "Nintendo 3DS": [
+        "3DS"
+      ],
+      "Nintendo 3DS XL": [
+        "3DS XL"
+      ],
+      "Nintendo 2DS": [
+        "2DS"
+      ],
+      "New Nintendo 3DS": [
+        "New 3DS"
+      ],
+      "New Nintendo 3DS XL": [
+        "New 3DS XL"
+      ],
+      "New Nintendo 2DS XL": [
+        "New 2DS XL"
+      ],
+      "Game Boy Advance": [
+        "GBA"
+      ],
+      "Game Boy Advance SP": [
+        "GBA SP"
+      ],
+      "Game Boy Micro": [
+        "Gameboy Micro"
+      ],
+      "Game Boy": [
+        "Gameboy"
+      ],
+      "Game Boy Color": [
+        "Gameboy Color"
+      ],
+      "N-Gage QD": [
+        "Nokia N-Gage QD"
+      ],
+      "Nokia N-Gage": [
+        "N-Gage"
+      ],
+      "Neo Geo Pocket Color": [
+        "NeoGeo Pocket Color"
+      ],
+      "SwanCrystal": [
+        "WonderSwan SwanCrystal"
+      ],
+      "Neo Geo AES": [
+        "NeoGeo AES"
+      ],
+      "Neo Geo CD": [
+        "NeoGeo CD"
+      ],
+      "Sega Nomad": [
+        "Genesis Nomad",
+        "Nomad"
+      ],
+      "Magnavox Odyssey": [
+        "Odyssey"
+      ],
+      "Magnavox Odyssey 2": [
+        "Odyssey 2",
+        "Philips Videopac G7000"
+      ],
+      "Coleco Telstar": [
+        "Telstar"
+      ],
+      "Fairchild Channel F": [
+        "Channel F"
+      ],
+      "Atari 2600": [
+        "Atari Video Computer System",
+        "Video Computer System"
+      ],
+      "Apple Pippin": [
+        "Pippin",
+        "Bandai Pippin"
+      ],
+      "BBC Bridge Companion": [
+        "Bridge Companion"
+      ],
+      "Philips CD-i": [
+        "CD-i"
+      ],
+      "Tiger Game.com": [
+        "Game.com"
+      ],
+      "Tiger R-Zone": [
+        "R-Zone"
+      ],
+      "ASUS ROG Ally": [
+        "ROG Ally"
+      ],
+      "ASUS ROG Ally X": [
+        "ROG Ally X"
+      ],
+      "ASUS ROG Xbox Ally": [
+        "ROG Xbox Ally",
+        "Xbox Ally"
+      ],
+      "ASUS ROG Xbox Ally X": [
+        "ROG Xbox Ally X",
+        "Xbox Ally X"
+      ],
+      "Lenovo Legion Go": [
+        "Legion Go"
+      ],
+      "MSI Claw A1M": [
+        "MSI Claw",
+        "Claw A1M"
+      ],
+      "Steam Deck": [
+        "Steam Deck LCD"
+      ],
+      "Steam Deck OLED": [
+        "Valve Steam Deck OLED"
+      ],
+      "NEOGEO mini": [
+        "Neo Geo Mini"
+      ],
+      "NES Classic Edition": [
+        "NES Mini",
+        "Famicom Mini"
+      ],
+      "Super NES Classic Edition": [
+        "SNES Classic Edition",
+        "SNES Mini",
+        "Super Famicom Mini"
+      ],
+      "Sega Genesis Mini": [
+        "Sega Mega Drive Mini",
+        "Mega Drive Mini"
+      ],
+      "Sega Genesis Mini 2": [
+        "Sega Mega Drive Mini 2",
+        "Mega Drive Mini 2"
+      ],
+      "Game & Watch": [
+        "Game and Watch"
+      ],
+      "Neo Geo X": [
+        "NeoGeo X"
+      ]
+    },
+    "splitRows": {
+      "Xbox Series X/S": [
+        "Xbox Series X",
+        "Xbox Series S"
+      ],
+      "Arcade Gamer/Poga/DPG-350/Master System Portátil": [
+        "Arcade Gamer"
+      ],
+      "Mega Drive Twin Pads/DPG-450": [
+        "Mega Drive Twin Pads"
+      ],
+      "X68000 Z Limited Edition Early Access Kit / X68000 Z Product Edition Black Model": [
+        "X68000 Z"
+      ]
+    },
+    "sourceSupplements": {
+      "https://www.nintendo.com/en-gb/Corporate/Consumer-Information/Manuals-and-additional-documents/Manuals-and-additional-documents-622121.html": "Game Boy Pocket|Game Boy Light|Game Boy Advance SP|Game Boy Micro|Nintendo DS Lite|Nintendo DSi|Nintendo DSi XL|Nintendo 3DS XL|Nintendo 2DS|New Nintendo 3DS|New Nintendo 3DS XL|New Nintendo 2DS XL|Virtual Boy",
+      "https://www.nintendo.com/us/gaming-systems/": "Nintendo Switch Lite|Nintendo Switch OLED",
+      "https://sonyinteractive.com/en/our-company/expanded-company-timeline/": "PS one|PSP Go|PSX",
+      "https://www.playstation.com/en-us/ps4/": "PlayStation 4 Pro",
+      "https://blog.playstation.com/2024/11/07/getting-started-with-playstation-5-pro-out-today/": "PlayStation 5 Pro",
+      "https://en.wikipedia.org/wiki/Xbox_360_technical_specifications": "Xbox 360 S|Xbox 360 E",
+      "https://www.xbox.com/en-US/consoles": "Xbox One S|Xbox One X|Xbox Series X|Xbox Series S",
+      "https://www.steamdeck.com/en/tech": "Steam Deck|Steam Deck OLED",
+      "https://rog.asus.com/gaming-handhelds/rog-ally-series/": "ASUS ROG Ally X",
+      "https://news.xbox.com/en-us/2025/10/16/rog-xbox-ally-handheld-out-now-launch/": "ASUS ROG Xbox Ally|ASUS ROG Xbox Ally X",
+      "https://news.lenovo.com/pressroom/press-releases/legion-go-gaming-handheld-device-and-accessories/": "Lenovo Legion Go",
+      "https://jp.msi.com/news/detail/Claw-A1M-002JP-143394": "MSI Claw A1M",
+      "https://en.wikipedia.org/wiki/N-Gage_QD": "N-Gage QD",
+      "https://en.wikipedia.org/wiki/Neo_Geo_Pocket_Color": "Neo Geo Pocket Color",
+      "https://en.wikipedia.org/wiki/WonderSwan_Color": "WonderSwan Color|SwanCrystal",
+      "https://en.wikipedia.org/wiki/Atari_Lynx": "Atari Lynx II",
+      "https://en.wikipedia.org/wiki/Game_Boy": "Game Boy Light",
+      "https://en.wikipedia.org/wiki/Game_Gear": "Game Gear",
+      "https://en.wikipedia.org/wiki/R-Zone": "Tiger R-Zone",
+      "https://en.wikipedia.org/wiki/TurboDuo": "TurboDuo"
+    },
+    "rare": "BBC Bridge Companion",
+    "entry": [
+      "Nintendo Entertainment System",
+      "Super Nintendo Entertainment System",
+      "Nintendo Switch",
+      "Wii",
+      "Game Boy",
+      "Nintendo DS",
+      "PlayStation",
+      "PlayStation 2",
+      "PlayStation 4",
+      "PlayStation 5",
+      "Xbox",
+      "Xbox 360",
+      "Xbox One",
+      "Xbox Series X",
+      "Xbox Series S"
+    ],
+    "moderate": [
+      "Arduboy",
+      "NEOGEO mini",
+      "Atari Flashback",
+      "NES Classic Edition",
+      "Super NES Classic Edition",
+      "PlayStation Classic",
+      "Game Gear Micro",
+      "Game & Watch: Super Mario Bros.",
+      "Super Pocket Taito Edition",
+      "Evercade VS",
+      "Atari 2600+"
+    ]
+  }
+}

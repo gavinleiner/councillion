@@ -1,6 +1,6 @@
 {
-  "build": "80c5dcc012942933",
-  "count": 453,
+  "build": "479fbbdb0a4086c4",
+  "count": 455,
   "categories": [
     {
       "id": "group-q001",
@@ -3625,6 +3625,22 @@
       "group": "authored-whole-familiar-brands-platforms",
       "answerCount": 499,
       "scope": "Real current or historical general-audience social networks, social media and named online community platforms count, including group communication, public discussion networks and social virtual worlds. Ordinary email, devices, generic internet terms, individual profiles/groups, learning-management software and services dedicated to dating or adult content do not. Actual public names such as X, VK, QQ and Hi5 count; generated initials do not."
+    },
+    {
+      "id": "authored-motor-vehicle-brands",
+      "prompt": "Name a car, motorcycle, truck or bus manufacturer or brand.",
+      "family": "world",
+      "group": "authored-whole-vehicle-makers",
+      "answerCount": 1793,
+      "scope": "Real current or historical manufacturers and established marques of cars, motorcycles (including racing motorcycles), trucks and buses count, including documented vehicle assembly and coachbuilding firms. A vehicle model alone, a transport operator, an aircraft/rail-only maker, a pure component supplier, a toy or a fictional brand does not count. Actual brand/company names and true renames share an answer."
+    },
+    {
+      "id": "authored-game-console-models",
+      "prompt": "Name a video game console or dedicated gaming handheld.",
+      "family": "gaming",
+      "group": "authored-whole-gaming-hardware",
+      "answerCount": 1391,
+      "scope": "Named released game consoles, dedicated handheld game systems and purpose-built gaming handheld PCs count. Named revisions, early electronic/VHS-based gaming systems and game-library add-on platforms count; regional renames of the same platform share an answer. N-Gage is a documented gaming-handheld hybrid. General-purpose phones/computers, media-streaming boxes with optional games, unreleased prototypes and input-only controllers do not count. A self-contained plug-and-play game unit counts even if its shell resembles a controller."
     }
   ]
 }

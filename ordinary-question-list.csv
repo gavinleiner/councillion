@@ -452,3 +452,5 @@ id,subject,question,canonical_answers
 "authored-san-francisco-49ers-players","sports","Name a player who has been on the San Francisco 49ers franchise roster.","1851"
 "authored-hotel-brands","world","Name a hotel chain or hotel brand.","539"
 "authored-social-platforms","everyday","Name an online social or community platform.","499"
+"authored-motor-vehicle-brands","world","Name a car, motorcycle, truck or bus manufacturer or brand.","1793"
+"authored-game-console-models","gaming","Name a video game console or dedicated gaming handheld.","1391"

@@ -1,0 +1,230 @@
+{
+  "retrieved": "2026-10-27",
+  "localResearchReceipts": [
+    {
+      "file": "console-first-generation-gaps-0.txt",
+      "sha256": "ca1961f583b89080509de20a603fa82c37011f3d1a05bfafcdcb1e16d8ce7b1c"
+    },
+    {
+      "file": "console-first-generation-gaps-4.txt",
+      "sha256": "f99b7394caf6155294ada224ad6dcc145f74de2e73e458e391c8d2d7ea0d2afc"
+    },
+    {
+      "file": "console-first-generation-gaps-8.txt",
+      "sha256": "61c4321f8ec73978ab4b4a3418d6fa4cfc5b579937540c6c8b1c7b913ca31f7b"
+    },
+    {
+      "file": "console-first-generation-series-0.txt",
+      "sha256": "ac7f487db439f4cabf30dfc1805102b5df8dad382bc3f1ed7f384a738f770336"
+    },
+    {
+      "file": "console-first-generation-series-12.txt",
+      "sha256": "2190d4bd128a946680176cfceccbfbb2271922a6ad28fc6dd58ae3e7d87367c1"
+    },
+    {
+      "file": "console-first-generation-series-16.txt",
+      "sha256": "bb71a4d088c1ad296f7e12c8f63686d539b80d2df70c9dc094bb8294d45aae01"
+    },
+    {
+      "file": "console-first-generation-series-20.txt",
+      "sha256": "41258d05278fbddee2ebc8c471acd2e61d52e6a5b807c6cb505b32786d84a197"
+    },
+    {
+      "file": "console-first-generation-series-24.txt",
+      "sha256": "b12314adebfb212d0cc66dc85c2c4185558208cac1c65e1e1415919745cf0cfd"
+    },
+    {
+      "file": "console-first-generation-series-28.txt",
+      "sha256": "e29215f0c9559c63ffbb528004e4be89f671ae3d0e5ac4ea9f930a20c405e240"
+    },
+    {
+      "file": "console-first-generation-series-32.txt",
+      "sha256": "d3302e785d7c958eb091579dd2c72ec169bb4800ab953338f70f7de530ebeb97"
+    },
+    {
+      "file": "console-first-generation-series-36.txt",
+      "sha256": "fd2a68324bf622d7ae81bcd31c6e800d3d5722e79d25810894bfbd3695a161c4"
+    },
+    {
+      "file": "console-first-generation-series-4.txt",
+      "sha256": "9a7983ec729de83441e884a728cb566562e6afb6196906e3344c33d8da20eedf"
+    },
+    {
+      "file": "console-first-generation-series-8.txt",
+      "sha256": "4965317e6963eb61d2ee798ce2953540b99afa43435d7584f4a5f723470f283f"
+    },
+    {
+      "file": "console-game-watch-models.txt",
+      "sha256": "d314025950c76a4258f434ecb1457d0d7ad6ee76fbd79eb398f3abb0760afd28"
+    },
+    {
+      "file": "console-primary-portable-history.txt",
+      "sha256": "2ab8875e0c0ee41d95571be73724ca86fd18d48906206d40fa8d4a2b645a247d"
+    },
+    {
+      "file": "console-primary-ports-models.txt",
+      "sha256": "576460214bc76bfd91842a8720c37027986e1af065a01eb1ccd48d247da0a080"
+    },
+    {
+      "file": "console-vehicle-boundary-lines.txt",
+      "sha256": "db41cc430bad80dd94f2a0db03b3ab234d64ef7ca1a6711cea32e32624359b73"
+    },
+    {
+      "file": "console-vehicle-bus-gaps.txt",
+      "sha256": "0f6f8fc9396a542e806dbbadd68ecf3e4fbc0d08f06be180ee901b352fff1f2e"
+    },
+    {
+      "file": "console-vehicle-bus-series-0.txt",
+      "sha256": "9dcd20bc5c3bbe2fd50d813ae952189adef1399fcd6f7e21828bbf6d57f22041"
+    },
+    {
+      "file": "console-vehicle-bus-series-12.txt",
+      "sha256": "9868c8931e768bc7a43b74d8de7311846cb977fd2206523be34eb73f5f57ef22"
+    },
+    {
+      "file": "console-vehicle-bus-series-16.txt",
+      "sha256": "5f45209903f34b31a88b7e8daf5ef0ddaa4614bb71192ef3e8813902d3cd38d6"
+    },
+    {
+      "file": "console-vehicle-bus-series-20.txt",
+      "sha256": "70a2e5a14326805924e35a918f4efb5f21c5c058f9974dfd66c5475be5b6a992"
+    },
+    {
+      "file": "console-vehicle-bus-series-24.txt",
+      "sha256": "4562112c8b2e68543214f34c8689ad8f6c364d49fa39ba91f74ca4fbea809405"
+    },
+    {
+      "file": "console-vehicle-bus-series-28.txt",
+      "sha256": "6a0d92b799c300bec44be99688957e9c99e968f07a804eca701c0d103d2a5079"
+    },
+    {
+      "file": "console-vehicle-bus-series-32.txt",
+      "sha256": "27f8494e2cd8b36f117a57956c9380ede92f322e91adf43f71b2edee728066bf"
+    },
+    {
+      "file": "console-vehicle-bus-series-4.txt",
+      "sha256": "c50a197fbc38f191433a3427063ab4256d72f842e78fb58933770faceaee478d"
+    },
+    {
+      "file": "console-vehicle-bus-series-8.txt",
+      "sha256": "b47b7935becc5be477fdd4d2411e38ea849452596bc820a9a2e76f4d78b5b4d4"
+    },
+    {
+      "file": "console-vehicle-bus-sources.txt",
+      "sha256": "e17bbaa5419c124fea12147d6757ed07a5d179a11270464a862050dd039bfdb9"
+    },
+    {
+      "file": "console-vehicle-complete-0.txt",
+      "sha256": "365504e863637b557a60776f81637483f01bd30417fcce3fd78049b73d568c5f"
+    },
+    {
+      "file": "console-vehicle-complete-1.txt",
+      "sha256": "0f12d5fcef6a52308221899c6105c17d622ada51e89cae855bad793d27b9e532"
+    },
+    {
+      "file": "console-vehicle-complete-2.txt",
+      "sha256": "229e19b985bab30893dd2c8cf13b0f7f10dba17651143be604b7ed6b70ca0975"
+    },
+    {
+      "file": "console-vehicle-complete-3.txt",
+      "sha256": "7bca9728a1b24e7041c1e5971444d6aba95a849f2acc82856ea2d94d54a1d7ff"
+    },
+    {
+      "file": "console-vehicle-final-0.txt",
+      "sha256": "20b5bd5c47f902fe733688103125b9279c953d38210154bc052b39b87f1cf5f4"
+    },
+    {
+      "file": "console-vehicle-final-1.txt",
+      "sha256": "a8343c508a89d13c44786b79ff0e92d4cafa9f8d33b6bff27baa996927a01ec7"
+    },
+    {
+      "file": "console-vehicle-final-2.txt",
+      "sha256": "b900ad605f9a87537f2ecbb555157adb48e364bb80d31e1c86758e1e92d66f05"
+    },
+    {
+      "file": "console-vehicle-final-supplement.txt",
+      "sha256": "825f556535f9ae68ed05f873ddf7f921b98d6e91ebd93c052afb609214270aa4"
+    },
+    {
+      "file": "console-vehicle-primary-history.txt",
+      "sha256": "3295f90be6ae8611a9435ffdfcb3b2fd8b51672b7eaf3a1ba8017ddbddd9e7d3"
+    },
+    {
+      "file": "console-vehicle-primary-names.txt",
+      "sha256": "d0382df8d33c0d4793d2e8429c316a9b15c4a7e97a24eae967af990ab61bb329"
+    },
+    {
+      "file": "console-vehicle-remaining-gaps.txt",
+      "sha256": "9c7085049d5a320262657ca307519daeb02292b98aef8f9f6ca88fb4e98dc310"
+    },
+    {
+      "file": "console-vehicle-source-supplement.txt",
+      "sha256": "ed20bdca22d23f7326040f3021956dce0aa919ae6103e51bedf5346330c1f70f"
+    },
+    {
+      "file": "consoles-vehicles-initial.txt",
+      "sha256": "c386dd71f9e003581f67b819f5513aac4e56267e113beb8673db451a18da7fc4"
+    },
+    {
+      "file": "consoles-vehicles-more-0.txt",
+      "sha256": "dcd199d11f206e3d2b0c400b4793855b4fd76d1bec85f27a9b42d6d141d7a9b0"
+    },
+    {
+      "file": "consoles-vehicles-more-1.txt",
+      "sha256": "e6b3fa98c72f1bbda5474cbb1a4b17f77ee4e90b723d5de2fdb11b9df3cd5d82"
+    },
+    {
+      "file": "consoles-vehicles-more-2.txt",
+      "sha256": "f58a80ecef285ed990364f66d57e9ac397ff89a99ff6dfe7a787a229d2915557"
+    },
+    {
+      "file": "consoles-vehicles-more-3.txt",
+      "sha256": "edf51bcb7512a83bd7c1d52b0576b2896d68fab67baaf7c9d1badb3b39b0a58c"
+    },
+    {
+      "file": "consoles-vehicles-windows-0.txt",
+      "sha256": "8f13265f2e22430e2b5062ecfad2f6cecae9e650242090184bd9e95fafdd9c33"
+    },
+    {
+      "file": "consoles-vehicles-windows-1.txt",
+      "sha256": "5327548670892b88bec26394d7717fb2229bcc59c7159cbc22aa18a1b77ee6fd"
+    },
+    {
+      "file": "consoles-vehicles-windows-2.txt",
+      "sha256": "2224dbf73cd9a233090899340e81c3c973131de4833a61913d3fadfe06375040"
+    },
+    {
+      "file": "vehicle-console-supplemental.txt",
+      "sha256": "ea6883e6ebe9b1112ac3ad92a3139a7e750d5f2768cb1d4b87ea4d229e440019"
+    }
+  ],
+  "extraNameFacts": {
+    "motor-vehicle-brands": {
+      "https://www.jlr.com/news/2023/06/jaguar-land-rover-unveils-new-jlr-corporate-identity-it-accelerates-modern-luxury": "Range Rover|Defender|Discovery|JLR",
+      "https://www.brabus.com/en-int/brand.html": "Brabus",
+      "https://www.mercedes-amg.com/en/home.html": "Mercedes-AMG"
+    },
+    "game-console-models": {
+      "https://www.nintendo.com/en-gb/Corporate/Consumer-Information/Manuals-and-additional-documents/Manuals-and-additional-documents-622121.html": "Game Boy Pocket|Game Boy Light|Game Boy Advance SP|Game Boy Micro|Nintendo DS Lite|Nintendo DSi|Nintendo DSi XL|Nintendo 3DS XL|Nintendo 2DS|New Nintendo 3DS|New Nintendo 3DS XL|New Nintendo 2DS XL|Virtual Boy",
+      "https://www.nintendo.com/us/gaming-systems/": "Nintendo Switch Lite|Nintendo Switch OLED",
+      "https://sonyinteractive.com/en/our-company/expanded-company-timeline/": "PS one|PSP Go|PSX",
+      "https://www.playstation.com/en-us/ps4/": "PlayStation 4 Pro",
+      "https://blog.playstation.com/2024/11/07/getting-started-with-playstation-5-pro-out-today/": "PlayStation 5 Pro",
+      "https://en.wikipedia.org/wiki/Xbox_360_technical_specifications": "Xbox 360 S|Xbox 360 E",
+      "https://www.xbox.com/en-US/consoles": "Xbox One S|Xbox One X|Xbox Series X|Xbox Series S",
+      "https://www.steamdeck.com/en/tech": "Steam Deck|Steam Deck OLED",
+      "https://rog.asus.com/gaming-handhelds/rog-ally-series/": "ASUS ROG Ally X",
+      "https://news.xbox.com/en-us/2025/10/16/rog-xbox-ally-handheld-out-now-launch/": "ASUS ROG Xbox Ally|ASUS ROG Xbox Ally X",
+      "https://news.lenovo.com/pressroom/press-releases/legion-go-gaming-handheld-device-and-accessories/": "Lenovo Legion Go",
+      "https://jp.msi.com/news/detail/Claw-A1M-002JP-143394": "MSI Claw A1M",
+      "https://en.wikipedia.org/wiki/N-Gage_QD": "N-Gage QD",
+      "https://en.wikipedia.org/wiki/Neo_Geo_Pocket_Color": "Neo Geo Pocket Color",
+      "https://en.wikipedia.org/wiki/WonderSwan_Color": "WonderSwan Color|SwanCrystal",
+      "https://en.wikipedia.org/wiki/Atari_Lynx": "Atari Lynx II",
+      "https://en.wikipedia.org/wiki/Game_Boy": "Game Boy Light",
+      "https://en.wikipedia.org/wiki/Game_Gear": "Game Gear",
+      "https://en.wikipedia.org/wiki/R-Zone": "Tiger R-Zone",
+      "https://en.wikipedia.org/wiki/TurboDuo": "TurboDuo"
+    }
+  }
+}
