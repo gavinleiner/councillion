@@ -470,3 +470,5 @@ id,subject,question,canonical_answers
 "authored-fairy-tales","culture","Name a fairy tale or traditional folk tale.","1856"
 "authored-literary-genres-forms","culture","Name a literary genre or a form of writing.","421"
 "authored-operating-systems","science","Name a computer or device operating system.","980"
+"authored-named-awards-prizes","world","Name a real named award, prize, medal or trophy.","1793"
+"authored-holidays-observances","world","Name a holiday, traditional festival or recognized observance.","359"

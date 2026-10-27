@@ -1,6 +1,6 @@
 {
-  "build": "1db69e17afeee531",
-  "count": 471,
+  "build": "e3a30d4ea7a319da",
+  "count": 473,
   "categories": [
     {
       "id": "group-q001",
@@ -3769,6 +3769,22 @@
       "group": "authored-whole-operating-systems",
       "answerCount": 980,
       "scope": "Named actual current/historical operating systems, public OS families and documented Linux distributions count. Versions may expand answers but never prompts. Vendor, hardware, shell, desktop environment, app and proposed-only marketing labels are not automatically operating systems."
+    },
+    {
+      "id": "authored-named-awards-prizes",
+      "prompt": "Name a real named award, prize, medal or trophy.",
+      "family": "world",
+      "group": "authored-whole-world-calendar",
+      "answerCount": 1793,
+      "scope": "Actual named awards, prizes, medals, orders and trophies across arts, sports, science and public life count, including historical awards and genuine named award families. Real named categories are answers within this one subject. A generic placing/medal, recipient, sponsor, organization, tournament, festival or hall-of-fame membership is not automatically a named award. Different awards sharing a public surname/title remain distinct and use qualifiers where needed."
+    },
+    {
+      "id": "authored-holidays-observances",
+      "prompt": "Name a holiday, traditional festival or recognized observance.",
+      "family": "world",
+      "group": "authored-whole-world-calendar",
+      "answerCount": 359,
+      "scope": "Real named religious/civic holidays, traditional festivals and established calendar observances count, including historical or regional observances and named periods such as Advent or Ramadan. Modern stand-alone concert/film festivals and conferences are a different subject. A calendar date, month, weekday, person, deity, place, ritual or campaign theme is not automatically an observance. Shared dates and related ancestry do not merge distinct observances; substitute dates do not create new ones."
     }
   ]
 }

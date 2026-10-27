@@ -1,6 +1,6 @@
 # Five-thousand-question expansion: development checkpoint
 
-The requested release is unfinished. Production still has 227 admitted questions. Development has 471: the 227 baseline plus 244 new admissions. It needs 4,529 more genuinely distinct questions. Answer rows, raw entities, draft inventories and reworded recipes do not count as questions. The final section is the latest checkpoint; preceding dated sections retain the development history.
+The requested release is unfinished. Production still has 227 admitted questions. Development has 473: the 227 baseline plus 246 new admissions. It needs 4,527 more genuinely distinct questions. Answer rows, raw entities, draft inventories and reworded recipes do not count as questions. The final section is the latest checkpoint; preceding dated sections retain the development history.
 
 ## Admission standard
 
@@ -252,3 +252,54 @@ sports11,world13.271authored candidates contain244admissions and27held entries.
 The final release gate correctly fails4,529remaining questions. Production remains
 227; no smaller release or completed-expansion email has been sent. The quiet
 heartbeat continues the unfinished authorized work.
+
+## Awards and calendar checkpoint · 473 questions
+
+Two new whole world/public-life subjects are admitted in development: named
+awards/prizes/medals/trophies, with1,793canonical answers, and holidays/traditional
+festivals/calendar observances, with359answers. Their2,152answers are insideTWO
+questions. All35+46original independently supplied common inputs are unchanged.
+Whole actual award-list bodies and primary named-award/calendar cells retain role
+context.416award and24calendar leads are held; removed headers/navboxes are not
+invented answers. Recipient/sponsor/organization/event fields are not award names;
+dates/months/people/deities/campaign themes are not automatically observances.
+Historical or regional names do not imply current worldwide legal holiday status.
+The holiday prompt explicitly says traditional festivals, preserving all original
+common inputs while keeping modern concert/film festivals as a different subject.
+
+Actual Carnegie writing/illustration/heroism medals, Czech/Austrian Kafka prizes,
+American/Australian People's Choice awards, Polish Nautilus/Nautilus Book Awards,
+CWA/Rea short-story awards and different Lumière prizes retain their identities.
+The source's misplaced Czech Kafka entry is held; the independently proven Austrian
+prize is separate. Documented Astounding/Campbell-new-writer and Otherwise/Tiptree
+renames are literal aliases; the Campbell Memorial novel award stays different.
+Public short and singular/plural names are explicit, with no generated initials.
+Familiar publisher supplements preserve Golden Joystick/Game/DICE/BAFTA games,
+YouTube Creator Awards, Purple Heart and other actual named military/public honors.
+Named Oscar categories are answers, not24new prompts.
+
+Shared dates/ancestry do not merge Diwali/BandiChhorDivas,Halloween/Samhain,
+MayDay/Beltane,Christmas/Yule,VeteransDay/RemembranceDay,BoxingDay/StStephen'sDay,
+or DayoftheDead/AllSoulsDay. Actual translations/public spellings work, including
+Hanukkah,Deepavali,HariRayaPuasa/Haji,DiadeReyes,ChingMing,TuenNg andVaisakhi.
+Nowruz's formal international-day name shares its festival identity; Baha'iNawRuz
+stays different. Substitute dates are not extra holiday answers.
+
+Full final build and all340tests pass, checking8,935familiar inputs and949wrong
+boundaries. Five focused tests cover original common probes, role/source holds,
+public aliases and different identities, plus Puffer scoring/duplicate rejection.
+All62actual local-game cases pass:50exact display/rarity cases,9rejections and
+3confirmations onlyafterEnter. General browser QA passes unchanged-version
+persisted unseen-queue migration, independent sharedDaily, library/sample counts,
+laptop1366x768 andmobile390x844. External browser requests were blocked. The
+initial full suite correctly caught a stale471question sample manifest; the
+original fixed seed was used to regenerate it, and all340final tests pass.
+
+Families:gaming64,sports67,culture45,music50,food56,nature54,science47,world43,
+everyday47, all8–15%. Frozen sample seed remains20261025-reviewed-standard;
+its families areculture11,everyday13,food9,gaming13,music11,nature11,science11,
+sports9,world12.273authored candidates contain246admissions and27held entries.
+The release gate correctly fails4,527remaining questions. Production remains227;
+no partial release or completion email is claimed. Quiet heartbeat work continues.
+See WORLD-CALENDAR-SOURCE-ATTRIBUTION.md and frozen source/role/identity/receipt
+ledgers for limitations. Next two fictional-role concepts are research only.
