@@ -1,6 +1,6 @@
 # Five-thousand-question expansion: development checkpoint
 
-The requested release is unfinished. Production still has 227 admitted questions. Development has 468: the 227 baseline plus 241 new admissions. It needs 4,532 more genuinely distinct questions. Answer rows, raw entities, draft inventories and reworded recipes do not count as questions. The final section is the latest checkpoint; preceding dated sections retain the development history.
+The requested release is unfinished. Production still has 227 admitted questions. Development has 470: the 227 baseline plus 243 new admissions. It needs 4,530 more genuinely distinct questions. Answer rows, raw entities, draft inventories and reworded recipes do not count as questions. The final section is the latest checkpoint; preceding dated sections retain the development history.
 
 ## Admission standard
 
@@ -167,3 +167,44 @@ The full build468-full-build.log and all321 tests468-full-tests.log pass;8,694 f
 Frozen sample seed20261025-reviewed-standard remains unchanged; sample counts culture11,everyday11,food11,gaming13,music9,nature11,science12,sports11,world11. Sourcecompiler/reviewedstandard --check andgitdiffcheck pass. Releasegate468-release-gate.log correctly fails4,532 remaining. No merge, deployment, completion email or heartbeat shutdown occurred.
 
 Next-source work is preserved in the parent work/five-thousand/story-systems-36: ten independent candidate concepts with418 familiar probes, and copied earlier source captures for fairy tales,literary genres and operating systems. These planning/source records are ZERO admissions. Authors,painters/sculptors,named visual artworks,fictional spies/medical-science practitioners,awards and holidays are whole potential subjects, not country/year/tag padding. Source membership, public aliases, genre boundaries and common omissions still need full review. Previously admitted tea,color,programminglanguage,measurementunit,scientist and astronaut subjects were checked and not proposed again. The four remaining original17 proposals (butterfly/moth,beetle,bee,ant) remain unfinished. Full objective is still5,000 genuinely distinct validated published questions.
+
+## Whole fairy/folk tales and written forms checkpoint · 470 questions
+
+Two new whole culture subjects are admitted in development: fairy/folk tales
+(1,856 canonical public title answers) and literary genres/written forms(421).
+Their2,277 answers are inside TWO questions. All94 original independently
+supplied familiar inputs remain unchanged and pass. No title word, country,
+tag, source row, literary subgenre or plot-code variant creates an extra question.
+
+Complete captured tale title tables and genre main sections were reconciled
+against primary Grimm, Andersen and Wilde collections, literary catalogs, LC
+hierarchy labels, actual public translations and publisher/author genre evidence.
+Fourteen tale source rows are held, including11 Frost chapters, the composite
+Chanticleer/Partlet heading, a whole collection and the erroneous Shepherdess/Sheep
+header. The correct Chimney Sweep title is retained. Genres preserve meaningful
+qualifiers rather than bare Hard/Medical/Science/Space labels. Source sidebars,
+individual scriptures and subject-only branches are excluded. LC catalog USE/UF
+links never automatically merge distinct forms: novelette/novella, graphic short
+forms, web fiction subtypes, and LitRPG/progression fantasy remain different.
+The inherited Sapphic/Horatian ode conflation is corrected upstream as well as in
+the new broader written-form question. Actual public translated tale names are
+explicit; shared plot numbers or collection/character article links do not prove
+identity. Grimm Snowdrop, Andersen The Snowdrop and Snow White/Rose Red retain the
+correct distinctions. See STORY-FORMS-SOURCE-ATTRIBUTION.md and frozen ledgers.
+
+All326 full-suite tests and the full build pass. The build checks8,788 familiar
+inputs and898 wrong-category boundaries. All42 actual local-game cases pass:
+29 exact display/rarity cases,10 rejections and3 spelling confirmations only
+after Enter. A161-character rare tale title is additionally readable without
+clipping, horizontal overflow or control overlap on1366x768 and390x844 screens.
+General browser QA passes unchanged-version unseen-queue migration/persistence,
+shared Daily across independent contexts, library/sample counts and laptop/mobile.
+All external browser requests were blocked. No global matcher or selection-version
+change was made. The fixed sample seed remains20261025-reviewed-standard.
+
+Normal families:gaming64,sports67,culture45,music50,food56,nature54,science46,
+world41,everyday47; all remain8–15%. Frozen sample family counts are11,13,12,
+11,9,12,10,11,11 in culture/everyday/food/gaming/music/nature/science/sports/world
+order. The release gate correctly fails4,530 remaining admissions. Production
+remains227; no expansion publication or completion email has occurred. DraftPR31
+and the existing quiet heartbeat continue the unfinished authorized work.

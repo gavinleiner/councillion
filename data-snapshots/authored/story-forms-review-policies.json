@@ -1,0 +1,365 @@
+{
+  "fairy-tales": {
+    "holds": {},
+    "renameRepairs": {},
+    "aliasMerges": {
+      "Cinderella": [
+        "Ashputtel",
+        "Aschenputtel"
+      ],
+      "The Singing, Springing Lark": [
+        "Lily and the Lion",
+        "The Lady and the Lion",
+        "The Singing, Soaring Lark"
+      ],
+      "Donkey Cabbages": [
+        "The Salad"
+      ],
+      "Foundling-Bird": [
+        "Fundevogel",
+        "Bird-foundling",
+        "Foundling Bird"
+      ],
+      "The Wolf and the Seven Young Kids": [
+        "The Wolf and the Seven Little Kids"
+      ],
+      "The Four Skillful Brothers": [
+        "The Four Clever Brothers"
+      ],
+      "The Robe of Feathers": [
+        "The Robe of Feathers (The Feathery Robe)",
+        "The Feathery Robe"
+      ],
+      "Tian Xian Pei": [
+        "Tian Xian Pei (The Fairy Couple)",
+        "The Fairy Couple"
+      ],
+      "Uriko-hime": [
+        "Uriko-hime (The Melon Princess)",
+        "The Melon Princess"
+      ],
+      "Dokkaebi bangmangi": [
+        "Dokkaebi bangmangi (The Goblin's Club)",
+        "The Goblin's Club"
+      ],
+      "Baemsillang": [
+        "Baemsillang (The Serpent Husband)",
+        "The Serpent Husband"
+      ],
+      "Ureongi gaksi": [
+        "Ureongi gaksi (The Snail Bride)",
+        "The Snail Bride"
+      ],
+      "The Stolen Veil": [
+        "The Stolen Veil (Der geraubte Schleier)",
+        "Der geraubte Schleier"
+      ],
+      "The Three Swans": [
+        "The Three Swans ( Von drei Schwänen )",
+        "Von drei Schwänen"
+      ],
+      "Fehérlófia": [
+        "Fehérlófia (Son of the White Mare)",
+        "Son of the White Mare"
+      ],
+      "The Prince Who Wanted to See the World": [
+        "The Prince Who Wanted to See the World (O Príncipe que foi correr a sua Ventura)",
+        "O Príncipe que foi correr a sua Ventura"
+      ],
+      "What Came of Picking Flowers": [
+        "What Came of Picking Flowers (Cravo, Rosa e Jasmin)",
+        "Cravo, Rosa e Jasmin"
+      ],
+      "Keong Emas": [
+        "Keong Emas (Golden Snail)",
+        "Golden Snail"
+      ],
+      "Timun Mas": [
+        "Timun Mas (The Golden Cucumber)",
+        "The Golden Cucumber"
+      ],
+      "The Swan Suit": [
+        "The Swan Suit (Svanhammen)",
+        "Svanhammen"
+      ],
+      "The Golden Mermaid": [
+        "The Golden Mermaid (Das goldene Meermädchen)",
+        "Das goldene Meermädchen"
+      ],
+      "Flying Ship": [
+        "Flying Ship (The Fool of the World and the Flying Ship)",
+        "The Fool of the World and the Flying Ship"
+      ],
+      "The Crow": [
+        "The Crow (The Enchanted Crow)",
+        "The Enchanted Crow"
+      ],
+      "Cwn Annwn": [
+        "Cwn Annwn (The Dogs of Hell)",
+        "The Dogs of Hell"
+      ],
+      "Starlight": [
+        "Starlight (fairy tale)"
+      ],
+      "The Shroud": [
+        "The Shroud (fairy tale)"
+      ],
+      "Sleeping Beauty": [
+        "Briar Rose",
+        "Little Briar Rose",
+        "The Sleeping Beauty in the Wood",
+        "The Sleeping Beauty in the Woods"
+      ],
+      "Snow White": [
+        "Snowdrop"
+      ],
+      "Little Red Riding Hood": [
+        "Little Red-Cap",
+        "Little Red Cap"
+      ],
+      "The Bremen Town Musicians": [
+        "The Travelling Musicians",
+        "Bremen Town Musicians",
+        "Town Musicians of Bremen"
+      ],
+      "The Brave Little Tailor": [
+        "The Valiant Little Tailor",
+        "The Brave Little Tailor (Seven at One Blow)"
+      ],
+      "The Golden Goose": [
+        "Golden Goose"
+      ],
+      "The King of the Golden Mountain": [
+        "The King of the Gold Mountain"
+      ],
+      "The Golden Bird": [
+        "Golden Bird"
+      ],
+      "The Elves and the Shoemaker": [
+        "Elves and the Shoemaker"
+      ],
+      "The Three Little Pigs": [
+        "Three Little Pigs"
+      ],
+      "The Three Billy Goats Gruff": [
+        "Three Billy Goats Gruff"
+      ],
+      "Goldilocks and the Three Bears": [
+        "The Three Bears",
+        "Goldilocks"
+      ],
+      "The Emperor's New Clothes": [
+        "The Emperor's New Suit"
+      ],
+      "The Little Match Girl": [
+        "The Little Match-seller",
+        "The Little Matchgirl"
+      ],
+      "Thumbelina": [
+        "Little Tiny or Thumbelina",
+        "Little Tiny"
+      ],
+      "The Steadfast Tin Soldier": [
+        "The Brave Tin Soldier"
+      ],
+      "The Tinderbox": [
+        "The Tinder Box"
+      ],
+      "The Frog Prince": [
+        "The Frog-Prince",
+        "The Frog King",
+        "The Frog King or Iron Henry",
+        "Iron Henry"
+      ],
+      "Jorinde and Joringel": [
+        "Jorinda and Jorindel"
+      ],
+      "Hans in Luck": [
+        "Hans In Luck"
+      ],
+      "Mother Hulda": [
+        "Mother Holle",
+        "Frau Holle"
+      ],
+      "King Thrushbeard": [
+        "King Grisly-Beard"
+      ],
+      "Iron John": [
+        "Iron Hans"
+      ],
+      "Snow-White and Rose-Red": [
+        "Snow White and Rose Red"
+      ],
+      "The Adventures of Pinocchio": [
+        "Pinocchio"
+      ],
+      "Alice's Adventures in Wonderland": [
+        "Alice in Wonderland"
+      ],
+      "Chicken Little": [
+        "Henny Penny",
+        "Chicken Licken"
+      ]
+    },
+    "displayNames": {}
+  },
+  "literary-genres-forms": {
+    "holds": {},
+    "renameRepairs": {
+      "Novel (literature)": "Novel",
+      "Thriller fiction": "Thriller",
+      "Misery lit": "Misery literature",
+      "Romance novel": "Romance",
+      "Guide book": "Guidebook",
+      "Journalistic": "Journalism",
+      "Slave narrative#Contemporary slave narratives": "Contemporary slave narrative",
+      "Sapphic stanza": "Sapphic ode"
+    },
+    "aliasMerges": {
+      "Fantasy": [
+        "Fantasy fiction"
+      ],
+      "Science fiction": [
+        "Sci-fi",
+        "Sci fi"
+      ],
+      "Horror": [
+        "Horror fiction"
+      ],
+      "Mystery": [
+        "Mystery fiction"
+      ],
+      "Western": [
+        "Western fiction"
+      ],
+      "Adventure": [
+        "Action and adventure fiction",
+        "Adventure fiction",
+        "Action fiction"
+      ],
+      "Epic": [
+        "Epic poetry",
+        "Epic (genre)"
+      ],
+      "Folktale": [
+        "Folk tale",
+        "Folklore",
+        "Folk tales"
+      ],
+      "Magical realism": [
+        "Magic realism",
+        "Magic realist fiction"
+      ],
+      "Travelogue": [
+        "Travel writing",
+        "Travel literature"
+      ],
+      "Nonfiction": [
+        "Non-fiction"
+      ],
+      "Nonfiction novel": [
+        "Non-fiction novel"
+      ],
+      "Children's literature": [
+        "Children literature"
+      ],
+      "Metafiction": [
+        "Meta fiction"
+      ],
+      "Flash fiction": [
+        "Microfiction",
+        "Micro fiction",
+        "Short-short story",
+        "Sudden fiction",
+        "Very short fiction"
+      ],
+      "Noir fiction": [
+        "Noir"
+      ],
+      "Historical fiction": [
+        "Historical"
+      ],
+      "Crime fiction": [
+        "Crime"
+      ],
+      "Detective fiction": [
+        "Detective"
+      ],
+      "Self-help book": [
+        "Self-help"
+      ],
+      "Thriller": [
+        "Thriller fiction",
+        "Suspense"
+      ],
+      "Robinsonade": [
+        "Robinsonades",
+        "Robinsonaden",
+        "Robinsonnades",
+        "Desert island fiction"
+      ],
+      "Spy fiction": [
+        "Spy"
+      ],
+      "Spy-fi": [
+        "Spy-fi (subgenre)"
+      ],
+      "Lost-world fiction": [
+        "Lost world"
+      ],
+      "Pirate fiction": [
+        "Pirate novel"
+      ],
+      "Gothic fiction": [
+        "Gothic horror"
+      ],
+      "Lovecraftian horror": [
+        "Cosmic horror"
+      ],
+      "Nonsense verse": [
+        "Nonsense poetry"
+      ],
+      "Romance": [
+        "Romance fiction"
+      ],
+      "Fanfiction": [
+        "Fan fiction",
+        "Fanfic"
+      ],
+      "Literary criticism": [
+        "Literary analysis"
+      ],
+      "Poetry": [
+        "Poem"
+      ],
+      "Scientific literature": [
+        "Scientific writing"
+      ],
+      "Computer-generated literature": [
+        "Generative literature",
+        "Computer literature"
+      ],
+      "Light novel": [
+        "Light novels",
+        "Rainobe",
+        "Raito noberu",
+        "Ranobe"
+      ],
+      "Western romance": [
+        "Western Romance literature"
+      ],
+      "Picaresque novel": [
+        "Picaresque fiction"
+      ],
+      "Monster literature": [
+        "Monster fiction"
+      ]
+    },
+    "displayNames": {},
+    "aliasHolds": {
+      "Elegy": [
+        "lament"
+      ]
+    }
+  }
+}

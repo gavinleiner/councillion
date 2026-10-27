@@ -1,0 +1,134 @@
+[
+  {
+    "sourceFile": "original-source-manifest.json",
+    "key": "famous-fairy-tales",
+    "url": "https://en.wikipedia.org/wiki/List_of_fairy_tales",
+    "sha256": "8e2fb9f7bddcd1672078720926bba968d7146f9c2c637cccf5d5c11cfe2e9e96",
+    "bytes": 1615548,
+    "status": "captured, not admitted"
+  },
+  {
+    "sourceFile": "original-source-manifest.json",
+    "key": "literary-genres",
+    "url": "https://en.wikipedia.org/wiki/List_of_writing_genres",
+    "sha256": "61c5b583d76aa729ba2b4e0b20cb2ddb15e0c68f7a3b2e589f043a8841562f18",
+    "bytes": 345450,
+    "status": "captured, not admitted"
+  },
+  {
+    "sourceFile": "primary-receipts.json",
+    "key": "grimm-primary",
+    "url": "https://www.gutenberg.org/cache/epub/2591/pg2591-images.html",
+    "sha256": "4ff3852b0eb437e0146b5e73f4e403500e3906add3a83e6901f27616707a7cdf",
+    "bytes": 636418,
+    "status": "captured"
+  },
+  {
+    "sourceFile": "primary-receipts.json",
+    "key": "andersen-primary",
+    "url": "https://www.gutenberg.org/cache/epub/27200/pg27200-images.html",
+    "sha256": "14565152c09d4993af475e5f4e9fbaa4873ce2df002d0ff9a2b04255f8968bfd",
+    "bytes": 2162512,
+    "status": "captured"
+  },
+  {
+    "sourceFile": "primary-receipts.json",
+    "key": "wilde-primary-index",
+    "url": "https://www.gutenberg.org/ebooks/902",
+    "sha256": "ce64510f4c23dcac365de133585215901c406a15d56a7f38852bd9ca3a9fd888",
+    "bytes": 24299,
+    "status": "captured"
+  },
+  {
+    "sourceFile": "primary-receipts.json",
+    "key": "loc-genre-index",
+    "url": "https://www.loc.gov/aba/publications/FreeLCGFT/freelcgft.html",
+    "error": "HTTP Error 403: Forbidden",
+    "status": "unavailable-no-retry"
+  },
+  {
+    "sourceFile": "additional-primary-receipts.json",
+    "key": "wilde-primary",
+    "url": "https://www.gutenberg.org/cache/epub/902/pg902-images.html",
+    "sha256": "8926a499152ff25a236056bb41b9ac406cde4d1fa41b6a861da7be55180aa3f2",
+    "bytes": 124020,
+    "status": "captured"
+  },
+  {
+    "sourceFile": "additional-primary-receipts.json",
+    "key": "andersen-shepherdess-canada",
+    "url": "https://gutenberg.ca/ebooks/andersen-shepherdess/andersen-shepherdess-00-h.html",
+    "sha256": "e77fe8b96e16421222f99a025c59d94b0ead560643860f31ff4b3215edbfd667",
+    "bytes": 1095,
+    "status": "returned-library-card-login-shell-not-primary-content",
+    "review": "No login attempted, no bypass and no source-content claim. Independent public Wikisource translation index supports the published title."
+  },
+  {
+    "sourceFile": "additional-primary-receipts.json",
+    "key": "sleeping-beauty-getty",
+    "url": "https://www.getty.edu/cona/CONAIconographyRecord.aspx?iconid=901002197",
+    "error": "HTTP Error 500: Internal Server Error",
+    "status": "unavailable-no-retry"
+  },
+  {
+    "sourceFile": "loc-pdf-receipts.json",
+    "url": "https://www.loc.gov/aba/publications/FreeLCGFT/GENRE-FORM.pdf",
+    "error": "HTTP Error 403: Forbidden",
+    "status": "unavailable-no-retry"
+  },
+  {
+    "sourceFile": "loc-pdf-receipts.json",
+    "url": "https://www.loc.gov/aba/publications/FreeLCGFT/J235.pdf",
+    "error": "HTTP Error 403: Forbidden",
+    "status": "unavailable-no-retry"
+  },
+  {
+    "source": "indexed-official-genre-hierarchy",
+    "urls": [
+      "https://www.loc.gov/aba/publications/FreeLCGFT/freelcgft.html",
+      "https://www.loc.gov/aba/publications/FreeLCGFT/GENRE-FORM.pdf",
+      "https://www.loc.gov/aba/publications/FreeLCGFT/J235.pdf"
+    ],
+    "status": "Public indexed PDF text and page screenshot requests; direct 403s are not raw captures and were not retried. Actual written-form eligibility and primary labels were read; no whole-authority automatic admission.",
+    "note": "Cataloging UF links are NOT universally treated as game-answer identity equivalences. Novelette/novella and graphic short-form distinctions are explicitly preserved.",
+    "sourcePageIndexes0": [
+      20,
+      26,
+      27,
+      31,
+      34,
+      35,
+      36,
+      38,
+      42,
+      55,
+      56,
+      61,
+      67,
+      86,
+      93,
+      104
+    ]
+  },
+  {
+    "source": "individually-read-public-supplements",
+    "urls": [
+      "https://www.gutenberg.org/ebooks/708",
+      "https://en.wikisource.org/wiki/The_Shepherdess_and_the_Chimney_Sweep",
+      "https://www.poetryfoundation.org/education/glossary/ode",
+      "https://poets.org/glossary/sapphic",
+      "https://www.poetryfoundation.org/education/glossary/fixed-and-unfixed-forms",
+      "https://nebulas.sfwa.org/about-the-nebulas/nebula-rules/",
+      "https://en.wikipedia.org/wiki/Web_fiction",
+      "https://en.wikipedia.org/wiki/Manhua",
+      "https://en.wikipedia.org/wiki/Webtoon",
+      "https://en.wikipedia.org/wiki/Vignette_(literature)",
+      "https://www.penguin.co.uk/fiction/fantasy/romantasy",
+      "https://www.penguin.co.uk/fiction/romance",
+      "https://www.penguin.co.uk/discover/articles/best-new-romance-books",
+      "https://andrewkrowe.wordpress.com/faqs/"
+    ],
+    "status": "Public indexed article/catalog/search text; not claimed direct raw HTML captures.",
+    "limitations": "Poetry Foundation direct open returned403; original indexed glossary distinguishes ode forms. Korea.net open redirected in a loop; original indexed named-exhibition text supports manhwa. Gutenberg Canada live host returned a library-card shell, so it supplies no raw text evidence; no login was attempted."
+  }
+]

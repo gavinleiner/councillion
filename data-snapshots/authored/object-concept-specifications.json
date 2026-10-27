@@ -8751,14 +8751,20 @@
         "https://wordnet.princeton.edu/",
         "https://www.poetryfoundation.org/education/glossary",
         "https://poets.org/glossary",
-        "https://rpo.library.utoronto.ca/glossary/r"
+        "https://rpo.library.utoronto.ca/glossary/r",
+        "https://www.poetryfoundation.org/education/glossary/ode",
+        "https://poets.org/glossary/sapphic"
       ],
       "holds": {
         "Edda": "Specific work/liturgical text or generic verse label rather than a particular form of poem.",
         "sursum corda": "Specific work/liturgical text or generic verse label rather than a particular form of poem.",
         "verse": "Specific work/liturgical text or generic verse label rather than a particular form of poem."
       },
-      "aliasHolds": {},
+      "aliasHolds": {
+        "Horatian ode": [
+          "Sapphic ode"
+        ]
+      },
       "renames": {},
       "additions": [
         {
@@ -8990,6 +8996,12 @@
           "label": "Blackout poetry",
           "aliases": [
             "Blackout poem"
+          ]
+        },
+        {
+          "label": "Sapphic ode",
+          "aliases": [
+            "Sapphic"
           ]
         }
       ],

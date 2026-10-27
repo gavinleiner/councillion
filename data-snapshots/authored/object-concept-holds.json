@@ -1355,7 +1355,11 @@
         "reason": "Specific work/liturgical text or generic verse label rather than a particular form of poem."
       }
     ],
-    "aliasHolds": {}
+    "aliasHolds": {
+      "Horatian ode": [
+        "Sapphic ode"
+      ]
+    }
   },
   "art-movements-styles": {
     "rows": [

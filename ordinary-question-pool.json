@@ -1,6 +1,6 @@
 {
-  "build": "816e1476ff50fb4d",
-  "count": 468,
+  "build": "87dc633fb701380f",
+  "count": 470,
   "categories": [
     {
       "id": "group-q001",
@@ -3159,7 +3159,7 @@
       "prompt": "Name a type or form of poem.",
       "family": "culture",
       "group": "authored-whole-object-concept",
-      "answerCount": 67,
+      "answerCount": 68,
       "scope": "Recognized named poem and verse forms count, including complete short forms and established stanza/verse forms used as poems. A subject, individual poet, book title or meter alone does not automatically name a poem form."
     },
     {
@@ -3745,6 +3745,22 @@
       "group": "authored-whole-frozen-brands",
       "answerCount": 320,
       "scope": "Real current or historical ice-cream, gelato, frozen-custard, frozen-yogurt, sorbet, ice-pop and branded ice/slush treats count. Documented specialty chains, actual licensed product-line brands and store labels count. Different flavors, package sizes and unbranded desserts are not brands; neither pet food nor a company with no proven frozen-dessert product qualifies."
+    },
+    {
+      "id": "authored-fairy-tales",
+      "prompt": "Name a fairy tale or traditional folk tale.",
+      "family": "culture",
+      "group": "authored-whole-story-forms",
+      "answerCount": 1856,
+      "scope": "Recognized named traditional folk tales and published literary fairy tales count, including documented fairy-tale novels. Actual translated/alternate titles of a tale share an answer. Whole anthologies, authors and arbitrary modern fantasy novels do not automatically qualify. Different tales are not merged merely because they have a shared ATU plot number or point to a shared character/collection article."
+    },
+    {
+      "id": "authored-literary-genres-forms",
+      "prompt": "Name a literary genre or a form of writing.",
+      "family": "culture",
+      "group": "authored-whole-story-forms",
+      "answerCount": 421,
+      "scope": "Real named story/literary genres, nonfiction and reference forms, and established poem/verse forms count. Qualified subgenres keep their meaningful words. Bare academic subjects, individual book titles, people, physical book parts, musical or film-only categories and unsupported source labels do not automatically qualify."
     }
   ]
 }
