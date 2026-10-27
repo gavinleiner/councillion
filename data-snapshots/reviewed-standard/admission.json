@@ -14339,6 +14339,285 @@
         "https://openknowledge.fao.org/3/cc5044en/cc5044en.pdf"
       ],
       "review": "Two familiar whole culinary categories. Full retained list rows have explicit false-heading/tool/ingredient holds. Independent common cooking verbs and seed inputs are reconciled with documented public names; source sections and cultural/botanical subsets do not count as questions."
+    },
+    {
+      "id": "authored-buffalo-bills-players",
+      "basis": "individually-reviewed-whole-concepts-based-on-original-yes-model",
+      "yes": [
+        "Josh Allen",
+        "Jim Kelly",
+        "Thurman Thomas",
+        "Bruce Smith",
+        "Andre Reed",
+        "Steve Tasker",
+        "O.J. Simpson",
+        "Eric Moulds",
+        "Doug Flutie",
+        "Drew Bledsoe",
+        "Marshawn Lynch",
+        "Fred Jackson",
+        "LeSean McCoy",
+        "Stefon Diggs",
+        "Kyle Williams",
+        "Cornelius Bennett",
+        "Darryl Talley",
+        "Joe DeLamielleure",
+        "Jack Kemp",
+        "Billy Shaw"
+      ],
+      "no": [
+        "Bill Belichick",
+        "LeBron James",
+        "John Batorski",
+        "Ed Too Tall Jones"
+      ],
+      "prompt": "Name a player who has been on the Buffalo Bills franchise roster.",
+      "family": "sports",
+      "inventoryEvidence": [
+        "https://nflreadr.nflverse.com/reference/load_rosters.html",
+        "https://github.com/nflverse/nflverse-data/releases/tag/rosters",
+        "https://www.profootballhof.com/football-history/national-football-league-franchise-histories",
+        "https://github.com/nflverse"
+      ],
+      "review": "Whole recognizable career roster, with independently chosen familiar players and complete captured publisher records. Historical city/code reuse, franchise continuity and real player-name changes are explicitly reconciled. Same-name players do not share personal aliases by name alone. Seven additions maintain the overall balanced ordinary-pool categories; other reviewed franchise candidates await further category expansion."
+    },
+    {
+      "id": "authored-carolina-panthers-players",
+      "basis": "individually-reviewed-whole-concepts-based-on-original-yes-model",
+      "yes": [
+        "Cam Newton",
+        "Steve Smith",
+        "Luke Kuechly",
+        "Julius Peppers",
+        "Thomas Davis",
+        "Greg Olsen",
+        "Christian McCaffrey",
+        "Jonathan Stewart",
+        "DeAngelo Williams",
+        "Muhsin Muhammad",
+        "Jake Delhomme",
+        "Sam Mills",
+        "Jordan Gross",
+        "Ryan Kalil",
+        "Mike Rucker",
+        "Wesley Walls",
+        "Kris Jenkins",
+        "Kevin Greene",
+        "Josh Norman",
+        "Kawann Short"
+      ],
+      "no": [
+        "Bill Belichick",
+        "LeBron James"
+      ],
+      "prompt": "Name a player who has been on the Carolina Panthers franchise roster.",
+      "family": "sports",
+      "inventoryEvidence": [
+        "https://nflreadr.nflverse.com/reference/load_rosters.html",
+        "https://github.com/nflverse/nflverse-data/releases/tag/rosters",
+        "https://www.profootballhof.com/football-history/national-football-league-franchise-histories",
+        "https://github.com/nflverse",
+        "https://www.nfl.com/players/steve-smith/"
+      ],
+      "review": "Whole recognizable career roster, with independently chosen familiar players and complete captured publisher records. Historical city/code reuse, franchise continuity and real player-name changes are explicitly reconciled. Same-name players do not share personal aliases by name alone. Seven additions maintain the overall balanced ordinary-pool categories; other reviewed franchise candidates await further category expansion."
+    },
+    {
+      "id": "authored-dallas-cowboys-players",
+      "basis": "individually-reviewed-whole-concepts-based-on-original-yes-model",
+      "yes": [
+        "Troy Aikman",
+        "Emmitt Smith",
+        "Michael Irvin",
+        "Roger Staubach",
+        "Tony Dorsett",
+        "Bob Lilly",
+        "Randy White",
+        "Tony Romo",
+        "Jason Witten",
+        "Dez Bryant",
+        "Drew Pearson",
+        "Larry Allen",
+        "Deion Sanders",
+        "Darren Woodson",
+        "Ed Too Tall Jones",
+        "Charles Haley",
+        "DeMarcus Ware",
+        "Sean Lee",
+        "Dak Prescott",
+        "Ezekiel Elliott"
+      ],
+      "no": [
+        "Bill Belichick",
+        "LeBron James",
+        "George Taliaferro"
+      ],
+      "prompt": "Name a player who has been on the Dallas Cowboys franchise roster.",
+      "family": "sports",
+      "inventoryEvidence": [
+        "https://nflreadr.nflverse.com/reference/load_rosters.html",
+        "https://github.com/nflverse/nflverse-data/releases/tag/rosters",
+        "https://www.profootballhof.com/football-history/national-football-league-franchise-histories",
+        "https://github.com/nflverse",
+        "https://www.dallascowboys.com/video/a-legend-too-tall-the-ed-jones-story"
+      ],
+      "review": "Whole recognizable career roster, with independently chosen familiar players and complete captured publisher records. Historical city/code reuse, franchise continuity and real player-name changes are explicitly reconciled. Same-name players do not share personal aliases by name alone. Seven additions maintain the overall balanced ordinary-pool categories; other reviewed franchise candidates await further category expansion."
+    },
+    {
+      "id": "authored-kansas-city-chiefs-players",
+      "basis": "individually-reviewed-whole-concepts-based-on-original-yes-model",
+      "yes": [
+        "Patrick Mahomes",
+        "Travis Kelce",
+        "Tony Gonzalez",
+        "Derrick Thomas",
+        "Len Dawson",
+        "Bobby Bell",
+        "Willie Lanier",
+        "Buck Buchanan",
+        "Jan Stenerud",
+        "Emmitt Thomas",
+        "Will Shields",
+        "Willie Roaf",
+        "Priest Holmes",
+        "Jamaal Charles",
+        "Larry Johnson",
+        "Christian Okoye",
+        "Alex Smith",
+        "Tyreek Hill",
+        "Chris Jones",
+        "Joe Montana"
+      ],
+      "no": [
+        "Bill Belichick",
+        "LeBron James"
+      ],
+      "prompt": "Name a player who has been on the Kansas City Chiefs franchise roster.",
+      "family": "sports",
+      "inventoryEvidence": [
+        "https://nflreadr.nflverse.com/reference/load_rosters.html",
+        "https://github.com/nflverse/nflverse-data/releases/tag/rosters",
+        "https://www.profootballhof.com/football-history/national-football-league-franchise-histories",
+        "https://github.com/nflverse"
+      ],
+      "review": "Whole recognizable career roster, with independently chosen familiar players and complete captured publisher records. Historical city/code reuse, franchise continuity and real player-name changes are explicitly reconciled. Same-name players do not share personal aliases by name alone. Seven additions maintain the overall balanced ordinary-pool categories; other reviewed franchise candidates await further category expansion."
+    },
+    {
+      "id": "authored-new-england-patriots-players",
+      "basis": "individually-reviewed-whole-concepts-based-on-original-yes-model",
+      "yes": [
+        "Tom Brady",
+        "Rob Gronkowski",
+        "Julian Edelman",
+        "Wes Welker",
+        "Troy Brown",
+        "Stanley Morgan",
+        "Ben Coates",
+        "Curtis Martin",
+        "Kevin Faulk",
+        "Adam Vinatieri",
+        "Stephen Gostkowski",
+        "Ty Law",
+        "Rodney Harrison",
+        "Willie McGinest",
+        "Tedy Bruschi",
+        "Richard Seymour",
+        "Vince Wilfork",
+        "Andre Tippett",
+        "John Hannah",
+        "Drew Bledsoe"
+      ],
+      "no": [
+        "Bill Belichick",
+        "LeBron James",
+        "Billy White Shoes Johnson"
+      ],
+      "prompt": "Name a player who has been on the New England Patriots franchise roster.",
+      "family": "sports",
+      "inventoryEvidence": [
+        "https://nflreadr.nflverse.com/reference/load_rosters.html",
+        "https://github.com/nflverse/nflverse-data/releases/tag/rosters",
+        "https://www.profootballhof.com/football-history/national-football-league-franchise-histories",
+        "https://github.com/nflverse"
+      ],
+      "review": "Whole recognizable career roster, with independently chosen familiar players and complete captured publisher records. Historical city/code reuse, franchise continuity and real player-name changes are explicitly reconciled. Same-name players do not share personal aliases by name alone. Seven additions maintain the overall balanced ordinary-pool categories; other reviewed franchise candidates await further category expansion."
+    },
+    {
+      "id": "authored-philadelphia-eagles-players",
+      "basis": "individually-reviewed-whole-concepts-based-on-original-yes-model",
+      "yes": [
+        "Donovan McNabb",
+        "Randall Cunningham",
+        "Ron Jaworski",
+        "Nick Foles",
+        "Jalen Hurts",
+        "Brian Westbrook",
+        "LeSean McCoy",
+        "Steve Van Buren",
+        "Wilbert Montgomery",
+        "Harold Carmichael",
+        "Mike Quick",
+        "DeSean Jackson",
+        "Zach Ertz",
+        "Brent Celek",
+        "Reggie White",
+        "Brian Dawkins",
+        "Seth Joyner",
+        "Jerome Brown",
+        "Fletcher Cox",
+        "Jason Kelce"
+      ],
+      "no": [
+        "Bill Belichick",
+        "LeBron James"
+      ],
+      "prompt": "Name a player who has been on the Philadelphia Eagles franchise roster.",
+      "family": "sports",
+      "inventoryEvidence": [
+        "https://nflreadr.nflverse.com/reference/load_rosters.html",
+        "https://github.com/nflverse/nflverse-data/releases/tag/rosters",
+        "https://www.profootballhof.com/football-history/national-football-league-franchise-histories",
+        "https://github.com/nflverse"
+      ],
+      "review": "Whole recognizable career roster, with independently chosen familiar players and complete captured publisher records. Historical city/code reuse, franchise continuity and real player-name changes are explicitly reconciled. Same-name players do not share personal aliases by name alone. Seven additions maintain the overall balanced ordinary-pool categories; other reviewed franchise candidates await further category expansion."
+    },
+    {
+      "id": "authored-san-francisco-49ers-players",
+      "basis": "individually-reviewed-whole-concepts-based-on-original-yes-model",
+      "yes": [
+        "Joe Montana",
+        "Steve Young",
+        "Jerry Rice",
+        "Terrell Owens",
+        "Roger Craig",
+        "Frank Gore",
+        "Joe Perry",
+        "Hugh McElhenny",
+        "John Brodie",
+        "Y.A. Tittle",
+        "Dwight Clark",
+        "Brent Jones",
+        "Vernon Davis",
+        "Ronnie Lott",
+        "Patrick Willis",
+        "NaVorro Bowman",
+        "Bryant Young",
+        "Justin Smith",
+        "DeForest Buckner",
+        "Joe Staley"
+      ],
+      "no": [
+        "Bill Belichick",
+        "LeBron James"
+      ],
+      "prompt": "Name a player who has been on the San Francisco 49ers franchise roster.",
+      "family": "sports",
+      "inventoryEvidence": [
+        "https://nflreadr.nflverse.com/reference/load_rosters.html",
+        "https://github.com/nflverse/nflverse-data/releases/tag/rosters",
+        "https://www.profootballhof.com/football-history/national-football-league-franchise-histories",
+        "https://github.com/nflverse"
+      ],
+      "review": "Whole recognizable career roster, with independently chosen familiar players and complete captured publisher records. Historical city/code reuse, franchise continuity and real player-name changes are explicitly reconciled. Same-name players do not share personal aliases by name alone. Seven additions maintain the overall balanced ordinary-pool categories; other reviewed franchise candidates await further category expansion."
     }
   ],
   "expansionBatches": [
@@ -14901,6 +15180,20 @@
         "authored-nuts-seeds"
       ],
       "status": "Source and common-name review completed; matcher and browser validation required before checkpoint publication."
+    },
+    {
+      "id": "balanced-nfl-franchises-29",
+      "date": "2026-10-27",
+      "questions": [
+        "authored-buffalo-bills-players",
+        "authored-carolina-panthers-players",
+        "authored-dallas-cowboys-players",
+        "authored-kansas-city-chiefs-players",
+        "authored-new-england-patriots-players",
+        "authored-philadelphia-eagles-players",
+        "authored-san-francisco-49ers-players"
+      ],
+      "status": "Seven normal admissions; 25 further roster inventories are reviewed candidates, not ordinary-play questions. Gameplay, source, build and browser validation required before checkpoint publication."
     }
   ]
 }

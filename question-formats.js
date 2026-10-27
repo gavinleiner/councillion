@@ -2,6 +2,7 @@ export function questionFormat(pack){
  const group=pack.group??'';
  if(group.startsWith('group-approved-'))return 'Group-approved prompt';
  if(group.startsWith('group-broad-'))return 'Broad category';
+ if(group==='authored-whole-natural-science-concept')return pack.family==='nature'?'Animals & nature':'Science & academic fields';
  return ({
   'authored-closed-inventory':'Facts & records',
   'authored-game-mechanics':'Game rules & objects',
@@ -11,6 +12,12 @@ export function questionFormat(pack){
   'authored-whole-object-concept':'Objects, tools & materials',
   'authored-whole-artist-catalog':'Songs by one artist',
   'authored-whole-franchise-roster':'Players by franchise',
+  'authored-whole-nfl-franchise-roster':'Players by franchise',
+  'authored-whole-franchise-characters':'Characters & rosters',
+  'authored-whole-familiar-food-concept':'Cooking & ingredients',
+  'authored-whole-game-concept':'Game rules & objects',
+  'authored-whole-brand-inventory':'Brands',
+  'authored-whole-color-inventory':'Colors & shades',
   'authored-whole-roster':'Characters & rosters',
   'authored-whole-taxonomic-group':'Animal kinds',
   'distinct-kinds':'Kinds, examples & objects',

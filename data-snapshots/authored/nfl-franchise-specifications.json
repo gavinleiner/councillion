@@ -1,0 +1,1815 @@
+{
+  "status": "32 independently specified whole concepts; normal admission is explicitly separate.",
+  "questions": [
+    {
+      "key": "arizona-cardinals-players",
+      "teamCode": "ari",
+      "family": "sports",
+      "prompt": "Name a player who has been on the Arizona Cardinals franchise roster.",
+      "scope": "Past or present roster membership for this franchise through the retained 2026 snapshot counts, including its earlier names/locations and NFL, AFL or AAFC membership where applicable. Offseason and practice squads count. An unrelated former team sharing the same city or code does not. The current franchise rules and captured seasons are retained for source review.",
+      "familiar": [
+        "Larry Fitzgerald",
+        "Kurt Warner",
+        "Carson Palmer",
+        "Kyler Murray",
+        "DeAndre Hopkins",
+        "Anquan Boldin",
+        "Patrick Peterson",
+        "Tyrann Mathieu",
+        "Budda Baker",
+        "Adrian Wilson",
+        "Aeneas Williams",
+        "Ottis Anderson",
+        "Jim Hart",
+        "Roy Green",
+        "Dan Dierdorf",
+        "Pat Tillman",
+        "J.J. Watt",
+        "Emmitt Smith",
+        "David Johnson",
+        "Darnell Dockett"
+      ],
+      "exclude": [
+        "Bill Belichick",
+        "LeBron James",
+        "Marshall Faulk"
+      ],
+      "references": [
+        "https://nflreadr.nflverse.com/reference/load_rosters.html",
+        "https://github.com/nflverse/nflverse-data/releases/tag/rosters",
+        "https://www.profootballhof.com/football-history/national-football-league-franchise-histories",
+        "https://github.com/nflverse"
+      ],
+      "franchiseRules": [
+        {
+          "rawCode": "CHC",
+          "from": 1920,
+          "through": 1959
+        },
+        {
+          "rawCode": "STL",
+          "from": 1960,
+          "through": 1987
+        },
+        {
+          "rawCode": "PHO",
+          "from": 1988,
+          "through": 1993
+        },
+        {
+          "rawCode": "ARI",
+          "from": 1994,
+          "through": 2026
+        },
+        {
+          "rawCode": "ARZ",
+          "from": 2002,
+          "through": 2015
+        },
+        {
+          "rawCode": "C-P",
+          "from": 1944,
+          "through": 1944
+        }
+      ],
+      "rare": "Rashard Mendenhall",
+      "publicAliases": {
+        "Michael Pittman": [
+          "Michael Pittman Sr."
+        ]
+      }
+    },
+    {
+      "key": "atlanta-falcons-players",
+      "teamCode": "atl",
+      "family": "sports",
+      "prompt": "Name a player who has been on the Atlanta Falcons franchise roster.",
+      "scope": "Past or present roster membership for this franchise through the retained 2026 snapshot counts, including its earlier names/locations and NFL, AFL or AAFC membership where applicable. Offseason and practice squads count. An unrelated former team sharing the same city or code does not. The current franchise rules and captured seasons are retained for source review.",
+      "familiar": [
+        "Matt Ryan",
+        "Michael Vick",
+        "Julio Jones",
+        "Roddy White",
+        "Tony Gonzalez",
+        "Deion Sanders",
+        "Warrick Dunn",
+        "Jamal Anderson",
+        "Devonta Freeman",
+        "Jessie Tuggle",
+        "Claude Humphrey",
+        "Steve Bartkowski",
+        "Gerald Riggs",
+        "Andre Rison",
+        "John Abraham",
+        "Alge Crumpler",
+        "Deion Jones",
+        "Grady Jarrett",
+        "Jake Matthews",
+        "Matt Bryant"
+      ],
+      "exclude": [
+        "Bill Belichick",
+        "LeBron James"
+      ],
+      "references": [
+        "https://nflreadr.nflverse.com/reference/load_rosters.html",
+        "https://github.com/nflverse/nflverse-data/releases/tag/rosters",
+        "https://www.profootballhof.com/football-history/national-football-league-franchise-histories",
+        "https://github.com/nflverse"
+      ],
+      "franchiseRules": [
+        {
+          "rawCode": "ATL",
+          "from": 1966,
+          "through": 2026
+        }
+      ],
+      "rare": "Joey Harrington",
+      "publicAliases": {
+        "Billy Johnson": [
+          "Billy White Shoes Johnson",
+          "Billy “White Shoes” Johnson"
+        ],
+        "Clay Matthews": [
+          "Clay Matthews Jr."
+        ]
+      }
+    },
+    {
+      "key": "baltimore-ravens-players",
+      "teamCode": "bal",
+      "family": "sports",
+      "prompt": "Name a player who has been on the Baltimore Ravens franchise roster.",
+      "scope": "Past or present roster membership for this franchise through the retained 2026 snapshot counts, including its earlier names/locations and NFL, AFL or AAFC membership where applicable. Offseason and practice squads count. An unrelated former team sharing the same city or code does not. The current franchise rules and captured seasons are retained for source review.",
+      "familiar": [
+        "Ray Lewis",
+        "Ed Reed",
+        "Lamar Jackson",
+        "Joe Flacco",
+        "Terrell Suggs",
+        "Jonathan Ogden",
+        "Jamal Lewis",
+        "Derrick Mason",
+        "Anquan Boldin",
+        "Todd Heap",
+        "Justin Tucker",
+        "Marshal Yanda",
+        "Haloti Ngata",
+        "Peter Boulware",
+        "Tony Siragusa",
+        "Steve Smith",
+        "Shannon Sharpe",
+        "Deion Sanders",
+        "Mark Andrews",
+        "Torrey Smith"
+      ],
+      "exclude": [
+        "Bill Belichick",
+        "LeBron James",
+        "Johnny Unitas",
+        "John Unitas"
+      ],
+      "references": [
+        "https://nflreadr.nflverse.com/reference/load_rosters.html",
+        "https://github.com/nflverse/nflverse-data/releases/tag/rosters",
+        "https://www.profootballhof.com/football-history/national-football-league-franchise-histories",
+        "https://github.com/nflverse",
+        "https://www.nfl.com/players/steve-smith/"
+      ],
+      "franchiseRules": [
+        {
+          "rawCode": "BAL",
+          "from": 1996,
+          "through": 2026
+        },
+        {
+          "rawCode": "BLT",
+          "from": 2002,
+          "through": 2015
+        }
+      ],
+      "rare": "Elvis Grbac",
+      "publicAliases": {
+        "Steve Smith": [
+          "Steve Smith Sr."
+        ]
+      }
+    },
+    {
+      "key": "buffalo-bills-players",
+      "teamCode": "buf",
+      "family": "sports",
+      "prompt": "Name a player who has been on the Buffalo Bills franchise roster.",
+      "scope": "Past or present roster membership for this franchise through the retained 2026 snapshot counts, including its earlier names/locations and NFL, AFL or AAFC membership where applicable. Offseason and practice squads count. An unrelated former team sharing the same city or code does not. The current franchise rules and captured seasons are retained for source review.",
+      "familiar": [
+        "Josh Allen",
+        "Jim Kelly",
+        "Thurman Thomas",
+        "Bruce Smith",
+        "Andre Reed",
+        "Steve Tasker",
+        "O.J. Simpson",
+        "Eric Moulds",
+        "Doug Flutie",
+        "Drew Bledsoe",
+        "Marshawn Lynch",
+        "Fred Jackson",
+        "LeSean McCoy",
+        "Stefon Diggs",
+        "Kyle Williams",
+        "Cornelius Bennett",
+        "Darryl Talley",
+        "Joe DeLamielleure",
+        "Jack Kemp",
+        "Billy Shaw"
+      ],
+      "exclude": [
+        "Bill Belichick",
+        "LeBron James",
+        "John Batorski",
+        "Ed Too Tall Jones"
+      ],
+      "references": [
+        "https://nflreadr.nflverse.com/reference/load_rosters.html",
+        "https://github.com/nflverse/nflverse-data/releases/tag/rosters",
+        "https://www.profootballhof.com/football-history/national-football-league-franchise-histories",
+        "https://github.com/nflverse"
+      ],
+      "franchiseRules": [
+        {
+          "rawCode": "BUF",
+          "from": 1960,
+          "through": 2026
+        }
+      ],
+      "rare": "Gibran Hamdan",
+      "publicAliases": {}
+    },
+    {
+      "key": "carolina-panthers-players",
+      "teamCode": "car",
+      "family": "sports",
+      "prompt": "Name a player who has been on the Carolina Panthers franchise roster.",
+      "scope": "Past or present roster membership for this franchise through the retained 2026 snapshot counts, including its earlier names/locations and NFL, AFL or AAFC membership where applicable. Offseason and practice squads count. An unrelated former team sharing the same city or code does not. The current franchise rules and captured seasons are retained for source review.",
+      "familiar": [
+        "Cam Newton",
+        "Steve Smith",
+        "Luke Kuechly",
+        "Julius Peppers",
+        "Thomas Davis",
+        "Greg Olsen",
+        "Christian McCaffrey",
+        "Jonathan Stewart",
+        "DeAngelo Williams",
+        "Muhsin Muhammad",
+        "Jake Delhomme",
+        "Sam Mills",
+        "Jordan Gross",
+        "Ryan Kalil",
+        "Mike Rucker",
+        "Wesley Walls",
+        "Kris Jenkins",
+        "Kevin Greene",
+        "Josh Norman",
+        "Kawann Short"
+      ],
+      "exclude": [
+        "Bill Belichick",
+        "LeBron James"
+      ],
+      "references": [
+        "https://nflreadr.nflverse.com/reference/load_rosters.html",
+        "https://github.com/nflverse/nflverse-data/releases/tag/rosters",
+        "https://www.profootballhof.com/football-history/national-football-league-franchise-histories",
+        "https://github.com/nflverse",
+        "https://www.nfl.com/players/steve-smith/"
+      ],
+      "franchiseRules": [
+        {
+          "rawCode": "CAR",
+          "from": 1995,
+          "through": 2026
+        }
+      ],
+      "rare": "Stefan LeFors",
+      "publicAliases": {
+        "Steve Smith": [
+          "Steve Smith Sr."
+        ]
+      }
+    },
+    {
+      "key": "chicago-bears-players",
+      "teamCode": "chi",
+      "family": "sports",
+      "prompt": "Name a player who has been on the Chicago Bears franchise roster.",
+      "scope": "Past or present roster membership for this franchise through the retained 2026 snapshot counts, including its earlier names/locations and NFL, AFL or AAFC membership where applicable. Offseason and practice squads count. An unrelated former team sharing the same city or code does not. The current franchise rules and captured seasons are retained for source review.",
+      "familiar": [
+        "Walter Payton",
+        "Dick Butkus",
+        "Gale Sayers",
+        "Brian Urlacher",
+        "Mike Singletary",
+        "Mike Ditka",
+        "Sid Luckman",
+        "Jim McMahon",
+        "Devin Hester",
+        "Richard Dent",
+        "Dan Hampton",
+        "William Perry",
+        "Charles Tillman",
+        "Lance Briggs",
+        "Matt Forte",
+        "Jay Cutler",
+        "Brandon Marshall",
+        "Alshon Jeffery",
+        "George Halas",
+        "Bronko Nagurski"
+      ],
+      "exclude": [
+        "Bill Belichick",
+        "LeBron James"
+      ],
+      "references": [
+        "https://nflreadr.nflverse.com/reference/load_rosters.html",
+        "https://github.com/nflverse/nflverse-data/releases/tag/rosters",
+        "https://www.profootballhof.com/football-history/national-football-league-franchise-histories",
+        "https://github.com/nflverse"
+      ],
+      "franchiseRules": [
+        {
+          "rawCode": "DEC",
+          "from": 1920,
+          "through": 1920
+        },
+        {
+          "rawCode": "CHS",
+          "from": 1921,
+          "through": 1921
+        },
+        {
+          "rawCode": "CHB",
+          "from": 1922,
+          "through": 1959
+        },
+        {
+          "rawCode": "CHI",
+          "from": 1960,
+          "through": 2026
+        }
+      ],
+      "rare": "Henry Burris",
+      "publicAliases": {}
+    },
+    {
+      "key": "cincinnati-bengals-players",
+      "teamCode": "cin",
+      "family": "sports",
+      "prompt": "Name a player who has been on the Cincinnati Bengals franchise roster.",
+      "scope": "Past or present roster membership for this franchise through the retained 2026 snapshot counts, including its earlier names/locations and NFL, AFL or AAFC membership where applicable. Offseason and practice squads count. An unrelated former team sharing the same city or code does not. The current franchise rules and captured seasons are retained for source review.",
+      "familiar": [
+        "Joe Burrow",
+        "Ja’Marr Chase",
+        "Chad Johnson",
+        "A.J. Green",
+        "Boomer Esiason",
+        "Ken Anderson",
+        "Anthony Munoz",
+        "Cris Collinsworth",
+        "Corey Dillon",
+        "Rudi Johnson",
+        "T.J. Houshmandzadeh",
+        "Carson Palmer",
+        "Andy Dalton",
+        "Giovani Bernard",
+        "James Brooks",
+        "Ken Riley",
+        "Lemar Parrish",
+        "Tim Krumrie",
+        "Carlos Dunlap",
+        "Geno Atkins"
+      ],
+      "exclude": [
+        "Bill Belichick",
+        "LeBron James"
+      ],
+      "references": [
+        "https://nflreadr.nflverse.com/reference/load_rosters.html",
+        "https://github.com/nflverse/nflverse-data/releases/tag/rosters",
+        "https://www.profootballhof.com/football-history/national-football-league-franchise-histories",
+        "https://github.com/nflverse"
+      ],
+      "franchiseRules": [
+        {
+          "rawCode": "CIN",
+          "from": 1968,
+          "through": 2026
+        }
+      ],
+      "rare": "Akili Smith",
+      "publicAliases": {}
+    },
+    {
+      "key": "cleveland-browns-players",
+      "teamCode": "cle",
+      "family": "sports",
+      "prompt": "Name a player who has been on the Cleveland Browns franchise roster.",
+      "scope": "Past or present roster membership for this franchise through the retained 2026 snapshot counts, including its earlier names/locations and NFL, AFL or AAFC membership where applicable. Offseason and practice squads count. An unrelated former team sharing the same city or code does not. The current franchise rules and captured seasons are retained for source review.",
+      "familiar": [
+        "Jim Brown",
+        "Otto Graham",
+        "Paul Warfield",
+        "Lou Groza",
+        "Dante Lavelli",
+        "Ozzie Newsome",
+        "Joe Thomas",
+        "Clay Matthews",
+        "Brian Sipe",
+        "Bernie Kosar",
+        "Eric Metcalf",
+        "Hanford Dixon",
+        "Frank Minnifield",
+        "Josh Cribbs",
+        "Joe Haden",
+        "Josh Gordon",
+        "Nick Chubb",
+        "Myles Garrett",
+        "Baker Mayfield",
+        "D’Qwell Jackson"
+      ],
+      "exclude": [
+        "Bill Belichick",
+        "LeBron James",
+        "Ralph Isselhardt",
+        "Clay Matthews III"
+      ],
+      "references": [
+        "https://nflreadr.nflverse.com/reference/load_rosters.html",
+        "https://github.com/nflverse/nflverse-data/releases/tag/rosters",
+        "https://www.profootballhof.com/football-history/national-football-league-franchise-histories",
+        "https://github.com/nflverse"
+      ],
+      "franchiseRules": [
+        {
+          "rawCode": "CLE",
+          "from": 1946,
+          "through": 1995
+        },
+        {
+          "rawCode": "CLE",
+          "from": 1999,
+          "through": 2026
+        },
+        {
+          "rawCode": "CLV",
+          "from": 2002,
+          "through": 2015
+        }
+      ],
+      "rare": "Seneca Wallace",
+      "publicAliases": {
+        "Joshua Cribbs": [
+          "Josh Cribbs"
+        ],
+        "Clay Matthews": [
+          "Clay Matthews Jr."
+        ]
+      }
+    },
+    {
+      "key": "dallas-cowboys-players",
+      "teamCode": "dal",
+      "family": "sports",
+      "prompt": "Name a player who has been on the Dallas Cowboys franchise roster.",
+      "scope": "Past or present roster membership for this franchise through the retained 2026 snapshot counts, including its earlier names/locations and NFL, AFL or AAFC membership where applicable. Offseason and practice squads count. An unrelated former team sharing the same city or code does not. The current franchise rules and captured seasons are retained for source review.",
+      "familiar": [
+        "Troy Aikman",
+        "Emmitt Smith",
+        "Michael Irvin",
+        "Roger Staubach",
+        "Tony Dorsett",
+        "Bob Lilly",
+        "Randy White",
+        "Tony Romo",
+        "Jason Witten",
+        "Dez Bryant",
+        "Drew Pearson",
+        "Larry Allen",
+        "Deion Sanders",
+        "Darren Woodson",
+        "Ed Too Tall Jones",
+        "Charles Haley",
+        "DeMarcus Ware",
+        "Sean Lee",
+        "Dak Prescott",
+        "Ezekiel Elliott"
+      ],
+      "exclude": [
+        "Bill Belichick",
+        "LeBron James",
+        "George Taliaferro"
+      ],
+      "references": [
+        "https://nflreadr.nflverse.com/reference/load_rosters.html",
+        "https://github.com/nflverse/nflverse-data/releases/tag/rosters",
+        "https://www.profootballhof.com/football-history/national-football-league-franchise-histories",
+        "https://github.com/nflverse",
+        "https://www.dallascowboys.com/video/a-legend-too-tall-the-ed-jones-story"
+      ],
+      "franchiseRules": [
+        {
+          "rawCode": "COW",
+          "from": 1960,
+          "through": 1962
+        },
+        {
+          "rawCode": "DAL",
+          "from": 1963,
+          "through": 2026
+        }
+      ],
+      "rare": "Drew Henson",
+      "publicAliases": {
+        "Ed “Too Tall” Jones": [
+          "Ed Jones",
+          "Ed Too Tall Jones",
+          "Too Tall Jones"
+        ]
+      }
+    },
+    {
+      "key": "denver-broncos-players",
+      "teamCode": "den",
+      "family": "sports",
+      "prompt": "Name a player who has been on the Denver Broncos franchise roster.",
+      "scope": "Past or present roster membership for this franchise through the retained 2026 snapshot counts, including its earlier names/locations and NFL, AFL or AAFC membership where applicable. Offseason and practice squads count. An unrelated former team sharing the same city or code does not. The current franchise rules and captured seasons are retained for source review.",
+      "familiar": [
+        "John Elway",
+        "Peyton Manning",
+        "Terrell Davis",
+        "Shannon Sharpe",
+        "Rod Smith",
+        "Ed McCaffrey",
+        "Steve Atwater",
+        "Champ Bailey",
+        "Von Miller",
+        "Demaryius Thomas",
+        "Emmanuel Sanders",
+        "Floyd Little",
+        "Karl Mecklenburg",
+        "Randy Gradishar",
+        "Tom Jackson",
+        "Simon Fletcher",
+        "Jason Elam",
+        "Gary Zimmerman",
+        "Al Wilson",
+        "Trevor Pryce"
+      ],
+      "exclude": [
+        "Bill Belichick",
+        "LeBron James",
+        "Patrick Surtain Sr."
+      ],
+      "references": [
+        "https://nflreadr.nflverse.com/reference/load_rosters.html",
+        "https://github.com/nflverse/nflverse-data/releases/tag/rosters",
+        "https://www.profootballhof.com/football-history/national-football-league-franchise-histories",
+        "https://github.com/nflverse"
+      ],
+      "franchiseRules": [
+        {
+          "rawCode": "DEN",
+          "from": 1960,
+          "through": 2026
+        }
+      ],
+      "rare": "Brock Osweiler",
+      "publicAliases": {
+        "Michael Pittman": [
+          "Michael Pittman Sr."
+        ]
+      }
+    },
+    {
+      "key": "detroit-lions-players",
+      "teamCode": "det",
+      "family": "sports",
+      "prompt": "Name a player who has been on the Detroit Lions franchise roster.",
+      "scope": "Past or present roster membership for this franchise through the retained 2026 snapshot counts, including its earlier names/locations and NFL, AFL or AAFC membership where applicable. Offseason and practice squads count. An unrelated former team sharing the same city or code does not. The current franchise rules and captured seasons are retained for source review.",
+      "familiar": [
+        "Barry Sanders",
+        "Calvin Johnson",
+        "Matthew Stafford",
+        "Bobby Layne",
+        "Doak Walker",
+        "Joe Schmidt",
+        "Night Train Lane",
+        "Lem Barney",
+        "Charlie Sanders",
+        "Billy Sims",
+        "Herman Moore",
+        "Chris Spielman",
+        "Jason Hanson",
+        "Robert Porcher",
+        "Alex Karras",
+        "Lomas Brown",
+        "Ndamukong Suh",
+        "Golden Tate",
+        "Darius Slay",
+        "Amon-Ra St. Brown"
+      ],
+      "exclude": [
+        "Bill Belichick",
+        "LeBron James"
+      ],
+      "references": [
+        "https://nflreadr.nflverse.com/reference/load_rosters.html",
+        "https://github.com/nflverse/nflverse-data/releases/tag/rosters",
+        "https://www.profootballhof.com/football-history/national-football-league-franchise-histories",
+        "https://github.com/nflverse"
+      ],
+      "franchiseRules": [
+        {
+          "rawCode": "POR",
+          "from": 1930,
+          "through": 1933
+        },
+        {
+          "rawCode": "DET",
+          "from": 1934,
+          "through": 2026
+        }
+      ],
+      "rare": "Andre Ware",
+      "publicAliases": {}
+    },
+    {
+      "key": "green-bay-packers-players",
+      "teamCode": "gb",
+      "family": "sports",
+      "prompt": "Name a player who has been on the Green Bay Packers franchise roster.",
+      "scope": "Past or present roster membership for this franchise through the retained 2026 snapshot counts, including its earlier names/locations and NFL, AFL or AAFC membership where applicable. Offseason and practice squads count. An unrelated former team sharing the same city or code does not. The current franchise rules and captured seasons are retained for source review.",
+      "familiar": [
+        "Aaron Rodgers",
+        "Brett Favre",
+        "Bart Starr",
+        "Reggie White",
+        "Ray Nitschke",
+        "Don Hutson",
+        "Jim Taylor",
+        "Paul Hornung",
+        "Jerry Kramer",
+        "Forrest Gregg",
+        "Willie Davis",
+        "Willie Wood",
+        "Sterling Sharpe",
+        "Donald Driver",
+        "Jordy Nelson",
+        "Davante Adams",
+        "Charles Woodson",
+        "Clay Matthews",
+        "Ahman Green",
+        "LeRoy Butler"
+      ],
+      "exclude": [
+        "Bill Belichick",
+        "LeBron James"
+      ],
+      "references": [
+        "https://nflreadr.nflverse.com/reference/load_rosters.html",
+        "https://github.com/nflverse/nflverse-data/releases/tag/rosters",
+        "https://www.profootballhof.com/football-history/national-football-league-franchise-histories",
+        "https://github.com/nflverse"
+      ],
+      "franchiseRules": [
+        {
+          "rawCode": "GB",
+          "from": 1921,
+          "through": 2026
+        }
+      ],
+      "rare": "Ingle Martin",
+      "publicAliases": {
+        "Clay Matthews": [
+          "Clay Matthews III"
+        ]
+      }
+    },
+    {
+      "key": "houston-texans-players",
+      "teamCode": "hou",
+      "family": "sports",
+      "prompt": "Name a player who has been on the Houston Texans franchise roster.",
+      "scope": "Past or present roster membership for this franchise through the retained 2026 snapshot counts, including its earlier names/locations and NFL, AFL or AAFC membership where applicable. Offseason and practice squads count. An unrelated former team sharing the same city or code does not. The current franchise rules and captured seasons are retained for source review.",
+      "familiar": [
+        "Andre Johnson",
+        "J.J. Watt",
+        "Arian Foster",
+        "Matt Schaub",
+        "DeAndre Hopkins",
+        "Deshaun Watson",
+        "Brian Cushing",
+        "Mario Williams",
+        "Duane Brown",
+        "Chris Myers",
+        "Johnathan Joseph",
+        "Kareem Jackson",
+        "Whitney Mercilus",
+        "Jadeveon Clowney",
+        "Owen Daniels",
+        "DeMeco Ryans",
+        "C.J. Stroud",
+        "Nico Collins",
+        "Will Anderson Jr.",
+        "Dalton Schultz"
+      ],
+      "exclude": [
+        "Bill Belichick",
+        "LeBron James",
+        "Warren Moon",
+        "Earl Campbell"
+      ],
+      "references": [
+        "https://nflreadr.nflverse.com/reference/load_rosters.html",
+        "https://github.com/nflverse/nflverse-data/releases/tag/rosters",
+        "https://www.profootballhof.com/football-history/national-football-league-franchise-histories",
+        "https://github.com/nflverse"
+      ],
+      "franchiseRules": [
+        {
+          "rawCode": "HST",
+          "from": 2002,
+          "through": 2015
+        },
+        {
+          "rawCode": "HOU",
+          "from": 2002,
+          "through": 2026
+        }
+      ],
+      "rare": "Dave Ragone",
+      "publicAliases": {
+        "Will Anderson Jr.": [
+          "Will Anderson"
+        ]
+      }
+    },
+    {
+      "key": "indianapolis-colts-players",
+      "teamCode": "ind",
+      "family": "sports",
+      "prompt": "Name a player who has been on the Indianapolis Colts franchise roster.",
+      "scope": "Past or present roster membership for this franchise through the retained 2026 snapshot counts, including its earlier names/locations and NFL, AFL or AAFC membership where applicable. Offseason and practice squads count. An unrelated former team sharing the same city or code does not. The current franchise rules and captured seasons are retained for source review.",
+      "familiar": [
+        "Peyton Manning",
+        "Johnny Unitas",
+        "Andrew Luck",
+        "Marvin Harrison",
+        "Reggie Wayne",
+        "Edgerrin James",
+        "Marshall Faulk",
+        "Eric Dickerson",
+        "Lenny Moore",
+        "Raymond Berry",
+        "John Mackey",
+        "Gino Marchetti",
+        "Art Donovan",
+        "Jeff Saturday",
+        "Dwight Freeney",
+        "Robert Mathis",
+        "Bob Sanders",
+        "Dallas Clark",
+        "Adam Vinatieri",
+        "T.Y. Hilton"
+      ],
+      "exclude": [
+        "Bill Belichick",
+        "LeBron James",
+        "Y.A. Tittle",
+        "Michael Pittman Sr."
+      ],
+      "references": [
+        "https://nflreadr.nflverse.com/reference/load_rosters.html",
+        "https://github.com/nflverse/nflverse-data/releases/tag/rosters",
+        "https://www.profootballhof.com/football-history/national-football-league-franchise-histories",
+        "https://github.com/nflverse"
+      ],
+      "franchiseRules": [
+        {
+          "rawCode": "BAL",
+          "from": 1953,
+          "through": 1983
+        },
+        {
+          "rawCode": "IND",
+          "from": 1984,
+          "through": 2026
+        }
+      ],
+      "rare": "Jim Sorgi",
+      "publicAliases": {
+        "Michael Pittman": [
+          "Michael Pittman Jr."
+        ]
+      }
+    },
+    {
+      "key": "jacksonville-jaguars-players",
+      "teamCode": "jax",
+      "family": "sports",
+      "prompt": "Name a player who has been on the Jacksonville Jaguars franchise roster.",
+      "scope": "Past or present roster membership for this franchise through the retained 2026 snapshot counts, including its earlier names/locations and NFL, AFL or AAFC membership where applicable. Offseason and practice squads count. An unrelated former team sharing the same city or code does not. The current franchise rules and captured seasons are retained for source review.",
+      "familiar": [
+        "Mark Brunell",
+        "Jimmy Smith",
+        "Keenan McCardell",
+        "Fred Taylor",
+        "Maurice Jones-Drew",
+        "Tony Boselli",
+        "Marcus Stroud",
+        "John Henderson",
+        "Donovin Darius",
+        "Rashean Mathis",
+        "Daryl Smith",
+        "Josh Scobee",
+        "Paul Posluszny",
+        "Blake Bortles",
+        "Allen Robinson",
+        "Marcedes Lewis",
+        "Calais Campbell",
+        "Jalen Ramsey",
+        "David Garrard",
+        "Trevor Lawrence"
+      ],
+      "exclude": [
+        "Bill Belichick",
+        "LeBron James"
+      ],
+      "references": [
+        "https://nflreadr.nflverse.com/reference/load_rosters.html",
+        "https://github.com/nflverse/nflverse-data/releases/tag/rosters",
+        "https://www.profootballhof.com/football-history/national-football-league-franchise-histories",
+        "https://github.com/nflverse"
+      ],
+      "franchiseRules": [
+        {
+          "rawCode": "JAX",
+          "from": 1995,
+          "through": 2026
+        }
+      ],
+      "rare": "Quinn Gray",
+      "publicAliases": {}
+    },
+    {
+      "key": "kansas-city-chiefs-players",
+      "teamCode": "kc",
+      "family": "sports",
+      "prompt": "Name a player who has been on the Kansas City Chiefs franchise roster.",
+      "scope": "Past or present roster membership for this franchise through the retained 2026 snapshot counts, including its earlier names/locations and NFL, AFL or AAFC membership where applicable. Offseason and practice squads count. An unrelated former team sharing the same city or code does not. The current franchise rules and captured seasons are retained for source review.",
+      "familiar": [
+        "Patrick Mahomes",
+        "Travis Kelce",
+        "Tony Gonzalez",
+        "Derrick Thomas",
+        "Len Dawson",
+        "Bobby Bell",
+        "Willie Lanier",
+        "Buck Buchanan",
+        "Jan Stenerud",
+        "Emmitt Thomas",
+        "Will Shields",
+        "Willie Roaf",
+        "Priest Holmes",
+        "Jamaal Charles",
+        "Larry Johnson",
+        "Christian Okoye",
+        "Alex Smith",
+        "Tyreek Hill",
+        "Chris Jones",
+        "Joe Montana"
+      ],
+      "exclude": [
+        "Bill Belichick",
+        "LeBron James"
+      ],
+      "references": [
+        "https://nflreadr.nflverse.com/reference/load_rosters.html",
+        "https://github.com/nflverse/nflverse-data/releases/tag/rosters",
+        "https://www.profootballhof.com/football-history/national-football-league-franchise-histories",
+        "https://github.com/nflverse"
+      ],
+      "franchiseRules": [
+        {
+          "rawCode": "TEX",
+          "from": 1960,
+          "through": 1962
+        },
+        {
+          "rawCode": "KC",
+          "from": 1963,
+          "through": 2026
+        }
+      ],
+      "rare": "Tyler Thigpen",
+      "publicAliases": {
+        "Patrick Surtain": [
+          "Patrick Surtain Sr."
+        ]
+      }
+    },
+    {
+      "key": "las-vegas-raiders-players",
+      "teamCode": "lv",
+      "family": "sports",
+      "prompt": "Name a player who has been on the Las Vegas Raiders franchise roster.",
+      "scope": "Past or present roster membership for this franchise through the retained 2026 snapshot counts, including its earlier names/locations and NFL, AFL or AAFC membership where applicable. Offseason and practice squads count. An unrelated former team sharing the same city or code does not. The current franchise rules and captured seasons are retained for source review.",
+      "familiar": [
+        "Ken Stabler",
+        "Jim Plunkett",
+        "Rich Gannon",
+        "Derek Carr",
+        "Tim Brown",
+        "Fred Biletnikoff",
+        "Cliff Branch",
+        "Marcus Allen",
+        "Bo Jackson",
+        "Art Shell",
+        "Gene Upshaw",
+        "Jim Otto",
+        "Howie Long",
+        "Charles Woodson",
+        "Lester Hayes",
+        "Jack Tatum",
+        "Dave Casper",
+        "Sebastian Janikowski",
+        "Shane Lechler",
+        "Khalil Mack"
+      ],
+      "exclude": [
+        "Bill Belichick",
+        "LeBron James"
+      ],
+      "references": [
+        "https://nflreadr.nflverse.com/reference/load_rosters.html",
+        "https://github.com/nflverse/nflverse-data/releases/tag/rosters",
+        "https://www.profootballhof.com/football-history/national-football-league-franchise-histories",
+        "https://github.com/nflverse"
+      ],
+      "franchiseRules": [
+        {
+          "rawCode": "OAK",
+          "from": 1960,
+          "through": 1981
+        },
+        {
+          "rawCode": "RAI",
+          "from": 1982,
+          "through": 1994
+        },
+        {
+          "rawCode": "OAK",
+          "from": 1995,
+          "through": 2019
+        },
+        {
+          "rawCode": "LV",
+          "from": 2020,
+          "through": 2026
+        }
+      ],
+      "rare": "Marques Tuiasosopo",
+      "publicAliases": {}
+    },
+    {
+      "key": "los-angeles-chargers-players",
+      "teamCode": "lac",
+      "family": "sports",
+      "prompt": "Name a player who has been on the Los Angeles Chargers franchise roster.",
+      "scope": "Past or present roster membership for this franchise through the retained 2026 snapshot counts, including its earlier names/locations and NFL, AFL or AAFC membership where applicable. Offseason and practice squads count. An unrelated former team sharing the same city or code does not. The current franchise rules and captured seasons are retained for source review.",
+      "familiar": [
+        "Philip Rivers",
+        "Dan Fouts",
+        "LaDainian Tomlinson",
+        "Antonio Gates",
+        "Kellen Winslow",
+        "Lance Alworth",
+        "Charlie Joiner",
+        "Junior Seau",
+        "Shawne Merriman",
+        "Rodney Harrison",
+        "Eric Weddle",
+        "Leslie O’Neal",
+        "Ron Mix",
+        "Russ Washington",
+        "Nick Hardwick",
+        "Darren Sproles",
+        "Vincent Jackson",
+        "Keenan Allen",
+        "Drew Brees",
+        "Justin Herbert"
+      ],
+      "exclude": [
+        "Bill Belichick",
+        "LeBron James"
+      ],
+      "references": [
+        "https://nflreadr.nflverse.com/reference/load_rosters.html",
+        "https://github.com/nflverse/nflverse-data/releases/tag/rosters",
+        "https://www.profootballhof.com/football-history/national-football-league-franchise-histories",
+        "https://github.com/nflverse"
+      ],
+      "franchiseRules": [
+        {
+          "rawCode": "CHR",
+          "from": 1960,
+          "through": 1960
+        },
+        {
+          "rawCode": "SD",
+          "from": 1961,
+          "through": 2016
+        },
+        {
+          "rawCode": "LAC",
+          "from": 2017,
+          "through": 2026
+        }
+      ],
+      "rare": "Billy Volek",
+      "publicAliases": {}
+    },
+    {
+      "key": "los-angeles-rams-players",
+      "teamCode": "lar",
+      "family": "sports",
+      "prompt": "Name a player who has been on the Los Angeles Rams franchise roster.",
+      "scope": "Past or present roster membership for this franchise through the retained 2026 snapshot counts, including its earlier names/locations and NFL, AFL or AAFC membership where applicable. Offseason and practice squads count. An unrelated former team sharing the same city or code does not. The current franchise rules and captured seasons are retained for source review.",
+      "familiar": [
+        "Kurt Warner",
+        "Marshall Faulk",
+        "Eric Dickerson",
+        "Isaac Bruce",
+        "Torry Holt",
+        "Orlando Pace",
+        "Jackie Slater",
+        "Deacon Jones",
+        "Merlin Olsen",
+        "Jack Youngblood",
+        "Roman Gabriel",
+        "Bob Waterfield",
+        "Norm Van Brocklin",
+        "Elroy Hirsch",
+        "Tom Fears",
+        "Steven Jackson",
+        "Todd Gurley",
+        "Aaron Donald",
+        "Cooper Kupp",
+        "Matthew Stafford"
+      ],
+      "exclude": [
+        "Bill Belichick",
+        "LeBron James",
+        "Dan Dierdorf",
+        "Clay Matthews Jr."
+      ],
+      "references": [
+        "https://nflreadr.nflverse.com/reference/load_rosters.html",
+        "https://github.com/nflverse/nflverse-data/releases/tag/rosters",
+        "https://www.profootballhof.com/football-history/national-football-league-franchise-histories",
+        "https://github.com/nflverse",
+        "https://footballfoundation.org/hof_search.aspx?hof=1712"
+      ],
+      "franchiseRules": [
+        {
+          "rawCode": "CLE",
+          "from": 1937,
+          "through": 1945
+        },
+        {
+          "rawCode": "RAM",
+          "from": 1946,
+          "through": 1994
+        },
+        {
+          "rawCode": "LA",
+          "from": 1950,
+          "through": 1994
+        },
+        {
+          "rawCode": "STL",
+          "from": 1995,
+          "through": 2001
+        },
+        {
+          "rawCode": "SL",
+          "from": 2002,
+          "through": 2015
+        },
+        {
+          "rawCode": "LA",
+          "from": 2016,
+          "through": 2026
+        }
+      ],
+      "rare": "Keith Null",
+      "publicAliases": {
+        "Clay Matthews": [
+          "Clay Matthews III"
+        ],
+        "Elroy Hirsch": [
+          "Crazy Legs Hirsch",
+          "Crazylegs Hirsch"
+        ]
+      }
+    },
+    {
+      "key": "miami-dolphins-players",
+      "teamCode": "mia",
+      "family": "sports",
+      "prompt": "Name a player who has been on the Miami Dolphins franchise roster.",
+      "scope": "Past or present roster membership for this franchise through the retained 2026 snapshot counts, including its earlier names/locations and NFL, AFL or AAFC membership where applicable. Offseason and practice squads count. An unrelated former team sharing the same city or code does not. The current franchise rules and captured seasons are retained for source review.",
+      "familiar": [
+        "Dan Marino",
+        "Bob Griese",
+        "Larry Csonka",
+        "Larry Little",
+        "Jim Langer",
+        "Dwight Stephenson",
+        "Paul Warfield",
+        "Mark Clayton",
+        "Mark Duper",
+        "Nat Moore",
+        "Zach Thomas",
+        "Jason Taylor",
+        "Sam Madison",
+        "Patrick Surtain",
+        "Ricky Williams",
+        "Ronnie Brown",
+        "Cameron Wake",
+        "Reshad Jones",
+        "Ryan Tannehill",
+        "Tua Tagovailoa"
+      ],
+      "exclude": [
+        "Bill Belichick",
+        "LeBron James"
+      ],
+      "references": [
+        "https://nflreadr.nflverse.com/reference/load_rosters.html",
+        "https://github.com/nflverse/nflverse-data/releases/tag/rosters",
+        "https://www.profootballhof.com/football-history/national-football-league-franchise-histories",
+        "https://github.com/nflverse"
+      ],
+      "franchiseRules": [
+        {
+          "rawCode": "MIA",
+          "from": 1966,
+          "through": 2026
+        }
+      ],
+      "rare": "Cleo Lemon",
+      "publicAliases": {
+        "Patrick Surtain": [
+          "Patrick Surtain Sr."
+        ]
+      }
+    },
+    {
+      "key": "minnesota-vikings-players",
+      "teamCode": "min",
+      "family": "sports",
+      "prompt": "Name a player who has been on the Minnesota Vikings franchise roster.",
+      "scope": "Past or present roster membership for this franchise through the retained 2026 snapshot counts, including its earlier names/locations and NFL, AFL or AAFC membership where applicable. Offseason and practice squads count. An unrelated former team sharing the same city or code does not. The current franchise rules and captured seasons are retained for source review.",
+      "familiar": [
+        "Fran Tarkenton",
+        "Adrian Peterson",
+        "Randy Moss",
+        "Cris Carter",
+        "John Randle",
+        "Alan Page",
+        "Carl Eller",
+        "Jim Marshall",
+        "Paul Krause",
+        "Ron Yary",
+        "Mick Tingelhoff",
+        "Chuck Foreman",
+        "Robert Smith",
+        "Daunte Culpepper",
+        "Steve Hutchinson",
+        "Jared Allen",
+        "Kevin Williams",
+        "Chad Greenway",
+        "Harrison Smith",
+        "Justin Jefferson"
+      ],
+      "exclude": [
+        "Bill Belichick",
+        "LeBron James"
+      ],
+      "references": [
+        "https://nflreadr.nflverse.com/reference/load_rosters.html",
+        "https://github.com/nflverse/nflverse-data/releases/tag/rosters",
+        "https://www.profootballhof.com/football-history/national-football-league-franchise-histories",
+        "https://github.com/nflverse"
+      ],
+      "franchiseRules": [
+        {
+          "rawCode": "MIN",
+          "from": 1961,
+          "through": 2026
+        }
+      ],
+      "rare": "Brooks Bollinger",
+      "publicAliases": {}
+    },
+    {
+      "key": "new-england-patriots-players",
+      "teamCode": "ne",
+      "family": "sports",
+      "prompt": "Name a player who has been on the New England Patriots franchise roster.",
+      "scope": "Past or present roster membership for this franchise through the retained 2026 snapshot counts, including its earlier names/locations and NFL, AFL or AAFC membership where applicable. Offseason and practice squads count. An unrelated former team sharing the same city or code does not. The current franchise rules and captured seasons are retained for source review.",
+      "familiar": [
+        "Tom Brady",
+        "Rob Gronkowski",
+        "Julian Edelman",
+        "Wes Welker",
+        "Troy Brown",
+        "Stanley Morgan",
+        "Ben Coates",
+        "Curtis Martin",
+        "Kevin Faulk",
+        "Adam Vinatieri",
+        "Stephen Gostkowski",
+        "Ty Law",
+        "Rodney Harrison",
+        "Willie McGinest",
+        "Tedy Bruschi",
+        "Richard Seymour",
+        "Vince Wilfork",
+        "Andre Tippett",
+        "John Hannah",
+        "Drew Bledsoe"
+      ],
+      "exclude": [
+        "Bill Belichick",
+        "LeBron James",
+        "Billy White Shoes Johnson"
+      ],
+      "references": [
+        "https://nflreadr.nflverse.com/reference/load_rosters.html",
+        "https://github.com/nflverse/nflverse-data/releases/tag/rosters",
+        "https://www.profootballhof.com/football-history/national-football-league-franchise-histories",
+        "https://github.com/nflverse"
+      ],
+      "franchiseRules": [
+        {
+          "rawCode": "BOS",
+          "from": 1960,
+          "through": 1970
+        },
+        {
+          "rawCode": "NE",
+          "from": 1971,
+          "through": 2026
+        }
+      ],
+      "rare": "Michael Bishop",
+      "publicAliases": {}
+    },
+    {
+      "key": "new-orleans-saints-players",
+      "teamCode": "no",
+      "family": "sports",
+      "prompt": "Name a player who has been on the New Orleans Saints franchise roster.",
+      "scope": "Past or present roster membership for this franchise through the retained 2026 snapshot counts, including its earlier names/locations and NFL, AFL or AAFC membership where applicable. Offseason and practice squads count. An unrelated former team sharing the same city or code does not. The current franchise rules and captured seasons are retained for source review.",
+      "familiar": [
+        "Drew Brees",
+        "Archie Manning",
+        "Marques Colston",
+        "Michael Thomas",
+        "Joe Horn",
+        "Jimmy Graham",
+        "Alvin Kamara",
+        "Mark Ingram",
+        "Deuce McAllister",
+        "Ricky Williams",
+        "Rickey Jackson",
+        "Sam Mills",
+        "Vaughan Johnson",
+        "Pat Swilling",
+        "Morten Andersen",
+        "Willie Roaf",
+        "Jahri Evans",
+        "Carl Nicks",
+        "Cameron Jordan",
+        "Demario Davis"
+      ],
+      "exclude": [
+        "Bill Belichick",
+        "LeBron James"
+      ],
+      "references": [
+        "https://nflreadr.nflverse.com/reference/load_rosters.html",
+        "https://github.com/nflverse/nflverse-data/releases/tag/rosters",
+        "https://www.profootballhof.com/football-history/national-football-league-franchise-histories",
+        "https://github.com/nflverse"
+      ],
+      "franchiseRules": [
+        {
+          "rawCode": "NO",
+          "from": 1967,
+          "through": 2026
+        }
+      ],
+      "rare": "Billy Joe Hobert",
+      "publicAliases": {}
+    },
+    {
+      "key": "new-york-giants-players",
+      "teamCode": "nyg",
+      "family": "sports",
+      "prompt": "Name a player who has been on the New York Giants franchise roster.",
+      "scope": "Past or present roster membership for this franchise through the retained 2026 snapshot counts, including its earlier names/locations and NFL, AFL or AAFC membership where applicable. Offseason and practice squads count. An unrelated former team sharing the same city or code does not. The current franchise rules and captured seasons are retained for source review.",
+      "familiar": [
+        "Eli Manning",
+        "Phil Simms",
+        "Y.A. Tittle",
+        "Fran Tarkenton",
+        "Tiki Barber",
+        "Saquon Barkley",
+        "Brandon Jacobs",
+        "Ottis Anderson",
+        "Amani Toomer",
+        "Plaxico Burress",
+        "Odell Beckham Jr.",
+        "Victor Cruz",
+        "Jeremy Shockey",
+        "Mark Bavaro",
+        "Lawrence Taylor",
+        "Harry Carson",
+        "Michael Strahan",
+        "Osi Umenyiora",
+        "Justin Tuck",
+        "Carl Banks"
+      ],
+      "exclude": [
+        "Bill Belichick",
+        "LeBron James",
+        "Steve Smith Sr."
+      ],
+      "references": [
+        "https://nflreadr.nflverse.com/reference/load_rosters.html",
+        "https://github.com/nflverse/nflverse-data/releases/tag/rosters",
+        "https://www.profootballhof.com/football-history/national-football-league-franchise-histories",
+        "https://github.com/nflverse"
+      ],
+      "franchiseRules": [
+        {
+          "rawCode": "NY",
+          "from": 1925,
+          "through": 1959
+        },
+        {
+          "rawCode": "NYG",
+          "from": 1925,
+          "through": 2026
+        }
+      ],
+      "rare": "Jesse Palmer",
+      "publicAliases": {
+        "Odell Beckham Jr.": [
+          "Odell Beckham"
+        ]
+      }
+    },
+    {
+      "key": "new-york-jets-players",
+      "teamCode": "nyj",
+      "family": "sports",
+      "prompt": "Name a player who has been on the New York Jets franchise roster.",
+      "scope": "Past or present roster membership for this franchise through the retained 2026 snapshot counts, including its earlier names/locations and NFL, AFL or AAFC membership where applicable. Offseason and practice squads count. An unrelated former team sharing the same city or code does not. The current franchise rules and captured seasons are retained for source review.",
+      "familiar": [
+        "Joe Namath",
+        "Curtis Martin",
+        "Don Maynard",
+        "Wesley Walker",
+        "Al Toon",
+        "Wayne Chrebet",
+        "Laveranues Coles",
+        "Chad Pennington",
+        "Vinny Testaverde",
+        "Mark Sanchez",
+        "Nick Mangold",
+        "D’Brickashaw Ferguson",
+        "Kevin Mawae",
+        "Joe Klecko",
+        "Mark Gastineau",
+        "Dennis Byrd",
+        "Mo Lewis",
+        "Darrelle Revis",
+        "David Harris",
+        "Freeman McNeil"
+      ],
+      "exclude": [
+        "Bill Belichick",
+        "LeBron James"
+      ],
+      "references": [
+        "https://nflreadr.nflverse.com/reference/load_rosters.html",
+        "https://github.com/nflverse/nflverse-data/releases/tag/rosters",
+        "https://www.profootballhof.com/football-history/national-football-league-franchise-histories",
+        "https://github.com/nflverse"
+      ],
+      "franchiseRules": [
+        {
+          "rawCode": "NYT",
+          "from": 1960,
+          "through": 1962
+        },
+        {
+          "rawCode": "NYJ",
+          "from": 1963,
+          "through": 2026
+        }
+      ],
+      "rare": "Brooks Bollinger",
+      "publicAliases": {}
+    },
+    {
+      "key": "philadelphia-eagles-players",
+      "teamCode": "phi",
+      "family": "sports",
+      "prompt": "Name a player who has been on the Philadelphia Eagles franchise roster.",
+      "scope": "Past or present roster membership for this franchise through the retained 2026 snapshot counts, including its earlier names/locations and NFL, AFL or AAFC membership where applicable. Offseason and practice squads count. An unrelated former team sharing the same city or code does not. The current franchise rules and captured seasons are retained for source review.",
+      "familiar": [
+        "Donovan McNabb",
+        "Randall Cunningham",
+        "Ron Jaworski",
+        "Nick Foles",
+        "Jalen Hurts",
+        "Brian Westbrook",
+        "LeSean McCoy",
+        "Steve Van Buren",
+        "Wilbert Montgomery",
+        "Harold Carmichael",
+        "Mike Quick",
+        "DeSean Jackson",
+        "Zach Ertz",
+        "Brent Celek",
+        "Reggie White",
+        "Brian Dawkins",
+        "Seth Joyner",
+        "Jerome Brown",
+        "Fletcher Cox",
+        "Jason Kelce"
+      ],
+      "exclude": [
+        "Bill Belichick",
+        "LeBron James"
+      ],
+      "references": [
+        "https://nflreadr.nflverse.com/reference/load_rosters.html",
+        "https://github.com/nflverse/nflverse-data/releases/tag/rosters",
+        "https://www.profootballhof.com/football-history/national-football-league-franchise-histories",
+        "https://github.com/nflverse"
+      ],
+      "franchiseRules": [
+        {
+          "rawCode": "PHI",
+          "from": 1933,
+          "through": 2026
+        },
+        {
+          "rawCode": "P-P",
+          "from": 1943,
+          "through": 1943
+        }
+      ],
+      "rare": "Mike McMahon",
+      "publicAliases": {}
+    },
+    {
+      "key": "pittsburgh-steelers-players",
+      "teamCode": "pit",
+      "family": "sports",
+      "prompt": "Name a player who has been on the Pittsburgh Steelers franchise roster.",
+      "scope": "Past or present roster membership for this franchise through the retained 2026 snapshot counts, including its earlier names/locations and NFL, AFL or AAFC membership where applicable. Offseason and practice squads count. An unrelated former team sharing the same city or code does not. The current franchise rules and captured seasons are retained for source review.",
+      "familiar": [
+        "Terry Bradshaw",
+        "Ben Roethlisberger",
+        "Franco Harris",
+        "Jerome Bettis",
+        "Rocky Bleier",
+        "Lynn Swann",
+        "John Stallworth",
+        "Hines Ward",
+        "Antonio Brown",
+        "Heath Miller",
+        "Mike Webster",
+        "Dermontti Dawson",
+        "Alan Faneca",
+        "Joe Greene",
+        "L.C. Greenwood",
+        "Jack Lambert",
+        "Jack Ham",
+        "Mel Blount",
+        "Troy Polamalu",
+        "Rod Woodson"
+      ],
+      "exclude": [
+        "Bill Belichick",
+        "LeBron James"
+      ],
+      "references": [
+        "https://nflreadr.nflverse.com/reference/load_rosters.html",
+        "https://github.com/nflverse/nflverse-data/releases/tag/rosters",
+        "https://www.profootballhof.com/football-history/national-football-league-franchise-histories",
+        "https://github.com/nflverse"
+      ],
+      "franchiseRules": [
+        {
+          "rawCode": "PIT",
+          "from": 1933,
+          "through": 2026
+        },
+        {
+          "rawCode": "P-P",
+          "from": 1943,
+          "through": 1943
+        },
+        {
+          "rawCode": "C-P",
+          "from": 1944,
+          "through": 1944
+        }
+      ],
+      "rare": "Brian St. Pierre",
+      "publicAliases": {}
+    },
+    {
+      "key": "san-francisco-49ers-players",
+      "teamCode": "sf",
+      "family": "sports",
+      "prompt": "Name a player who has been on the San Francisco 49ers franchise roster.",
+      "scope": "Past or present roster membership for this franchise through the retained 2026 snapshot counts, including its earlier names/locations and NFL, AFL or AAFC membership where applicable. Offseason and practice squads count. An unrelated former team sharing the same city or code does not. The current franchise rules and captured seasons are retained for source review.",
+      "familiar": [
+        "Joe Montana",
+        "Steve Young",
+        "Jerry Rice",
+        "Terrell Owens",
+        "Roger Craig",
+        "Frank Gore",
+        "Joe Perry",
+        "Hugh McElhenny",
+        "John Brodie",
+        "Y.A. Tittle",
+        "Dwight Clark",
+        "Brent Jones",
+        "Vernon Davis",
+        "Ronnie Lott",
+        "Patrick Willis",
+        "NaVorro Bowman",
+        "Bryant Young",
+        "Justin Smith",
+        "DeForest Buckner",
+        "Joe Staley"
+      ],
+      "exclude": [
+        "Bill Belichick",
+        "LeBron James"
+      ],
+      "references": [
+        "https://nflreadr.nflverse.com/reference/load_rosters.html",
+        "https://github.com/nflverse/nflverse-data/releases/tag/rosters",
+        "https://www.profootballhof.com/football-history/national-football-league-franchise-histories",
+        "https://github.com/nflverse"
+      ],
+      "franchiseRules": [
+        {
+          "rawCode": "SF",
+          "from": 1946,
+          "through": 2026
+        }
+      ],
+      "rare": "Cody Pickett",
+      "publicAliases": {}
+    },
+    {
+      "key": "seattle-seahawks-players",
+      "teamCode": "sea",
+      "family": "sports",
+      "prompt": "Name a player who has been on the Seattle Seahawks franchise roster.",
+      "scope": "Past or present roster membership for this franchise through the retained 2026 snapshot counts, including its earlier names/locations and NFL, AFL or AAFC membership where applicable. Offseason and practice squads count. An unrelated former team sharing the same city or code does not. The current franchise rules and captured seasons are retained for source review.",
+      "familiar": [
+        "Russell Wilson",
+        "Matt Hasselbeck",
+        "Dave Krieg",
+        "Jim Zorn",
+        "Shaun Alexander",
+        "Marshawn Lynch",
+        "Chris Warren",
+        "Steve Largent",
+        "Darrell Jackson",
+        "Doug Baldwin",
+        "Tyler Lockett",
+        "Walter Jones",
+        "Steve Hutchinson",
+        "Cortez Kennedy",
+        "Jacob Green",
+        "Kenny Easley",
+        "Earl Thomas",
+        "Kam Chancellor",
+        "Richard Sherman",
+        "Bobby Wagner"
+      ],
+      "exclude": [
+        "Bill Belichick",
+        "LeBron James"
+      ],
+      "references": [
+        "https://nflreadr.nflverse.com/reference/load_rosters.html",
+        "https://github.com/nflverse/nflverse-data/releases/tag/rosters",
+        "https://www.profootballhof.com/football-history/national-football-league-franchise-histories",
+        "https://github.com/nflverse"
+      ],
+      "franchiseRules": [
+        {
+          "rawCode": "SEA",
+          "from": 1976,
+          "through": 2026
+        }
+      ],
+      "rare": "Seneca Wallace",
+      "publicAliases": {}
+    },
+    {
+      "key": "tampa-bay-buccaneers-players",
+      "teamCode": "tb",
+      "family": "sports",
+      "prompt": "Name a player who has been on the Tampa Bay Buccaneers franchise roster.",
+      "scope": "Past or present roster membership for this franchise through the retained 2026 snapshot counts, including its earlier names/locations and NFL, AFL or AAFC membership where applicable. Offseason and practice squads count. An unrelated former team sharing the same city or code does not. The current franchise rules and captured seasons are retained for source review.",
+      "familiar": [
+        "Derrick Brooks",
+        "Warren Sapp",
+        "Ronde Barber",
+        "John Lynch",
+        "Lee Roy Selmon",
+        "Hardy Nickerson",
+        "Simeon Rice",
+        "Lavonte David",
+        "Mike Alstott",
+        "Warrick Dunn",
+        "James Wilder",
+        "Doug Williams",
+        "Trent Dilfer",
+        "Brad Johnson",
+        "Tom Brady",
+        "Mike Evans",
+        "Chris Godwin",
+        "Vincent Jackson",
+        "Mark Carrier"
+      ],
+      "exclude": [
+        "Bill Belichick",
+        "LeBron James"
+      ],
+      "references": [
+        "https://nflreadr.nflverse.com/reference/load_rosters.html",
+        "https://github.com/nflverse/nflverse-data/releases/tag/rosters",
+        "https://www.profootballhof.com/football-history/national-football-league-franchise-histories",
+        "https://github.com/nflverse"
+      ],
+      "franchiseRules": [
+        {
+          "rawCode": "TB",
+          "from": 1976,
+          "through": 2026
+        }
+      ],
+      "rare": "Bruce Gradkowski",
+      "publicAliases": {
+        "Michael Pittman": [
+          "Michael Pittman Sr."
+        ]
+      }
+    },
+    {
+      "key": "tennessee-titans-players",
+      "teamCode": "ten",
+      "family": "sports",
+      "prompt": "Name a player who has been on the Tennessee Titans franchise roster.",
+      "scope": "Past or present roster membership for this franchise through the retained 2026 snapshot counts, including its earlier names/locations and NFL, AFL or AAFC membership where applicable. Offseason and practice squads count. An unrelated former team sharing the same city or code does not. The current franchise rules and captured seasons are retained for source review.",
+      "familiar": [
+        "Steve McNair",
+        "Eddie George",
+        "Derrick Henry",
+        "Chris Johnson",
+        "Warren Moon",
+        "Earl Campbell",
+        "Billy White Shoes Johnson",
+        "Charley Hennigan",
+        "George Blanda",
+        "Bruce Matthews",
+        "Mike Munchak",
+        "Kevin Mawae",
+        "Frank Wycheck",
+        "Delanie Walker",
+        "Derrick Mason",
+        "Drew Bennett",
+        "Jevon Kearse",
+        "Keith Bulluck",
+        "Blaine Bishop",
+        "Kevin Byard"
+      ],
+      "exclude": [
+        "Bill Belichick",
+        "LeBron James"
+      ],
+      "references": [
+        "https://nflreadr.nflverse.com/reference/load_rosters.html",
+        "https://github.com/nflverse/nflverse-data/releases/tag/rosters",
+        "https://www.profootballhof.com/football-history/national-football-league-franchise-histories",
+        "https://github.com/nflverse",
+        "https://www.tennesseetitans.com/history/hall-of-fame"
+      ],
+      "franchiseRules": [
+        {
+          "rawCode": "HOU",
+          "from": 1960,
+          "through": 1996
+        },
+        {
+          "rawCode": "TEN",
+          "from": 1997,
+          "through": 2026
+        }
+      ],
+      "rare": "Rusty Smith",
+      "publicAliases": {
+        "Billy Johnson": [
+          "Billy White Shoes Johnson",
+          "Billy “White Shoes” Johnson"
+        ]
+      }
+    },
+    {
+      "key": "washington-commanders-players",
+      "teamCode": "was",
+      "family": "sports",
+      "prompt": "Name a player who has been on the Washington Commanders franchise roster.",
+      "scope": "Past or present roster membership for this franchise through the retained 2026 snapshot counts, including its earlier names/locations and NFL, AFL or AAFC membership where applicable. Offseason and practice squads count. An unrelated former team sharing the same city or code does not. The current franchise rules and captured seasons are retained for source review.",
+      "familiar": [
+        "Sammy Baugh",
+        "Sonny Jurgensen",
+        "Joe Theismann",
+        "Doug Williams",
+        "Mark Rypien",
+        "Billy Kilmer",
+        "John Riggins",
+        "Clinton Portis",
+        "Art Monk",
+        "Gary Clark",
+        "Ricky Sanders",
+        "Santana Moss",
+        "Charley Taylor",
+        "Bobby Mitchell",
+        "Chris Cooley",
+        "Darrell Green",
+        "Sean Taylor",
+        "Ken Houston",
+        "Chris Hanburger",
+        "Russ Grimm"
+      ],
+      "exclude": [
+        "Bill Belichick",
+        "LeBron James"
+      ],
+      "references": [
+        "https://nflreadr.nflverse.com/reference/load_rosters.html",
+        "https://github.com/nflverse/nflverse-data/releases/tag/rosters",
+        "https://www.profootballhof.com/football-history/national-football-league-franchise-histories",
+        "https://github.com/nflverse"
+      ],
+      "franchiseRules": [
+        {
+          "rawCode": "BOS",
+          "from": 1932,
+          "through": 1936
+        },
+        {
+          "rawCode": "WAS",
+          "from": 1937,
+          "through": 2026
+        }
+      ],
+      "rare": "Colt Brennan",
+      "publicAliases": {
+        "Billy Johnson": [
+          "Billy White Shoes Johnson",
+          "Billy “White Shoes” Johnson"
+        ]
+      }
+    }
+  ]
+}

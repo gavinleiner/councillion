@@ -1,6 +1,6 @@
 {
-  "build": "467eaba71bccaaf1",
-  "count": 444,
+  "build": "e35fb8d88e697518",
+  "count": 451,
   "categories": [
     {
       "id": "group-q001",
@@ -3553,6 +3553,62 @@
       "group": "authored-whole-familiar-food-concept",
       "answerCount": 174,
       "scope": "Culinary nuts and food seeds count, including grains, pulses, spice seeds and nuts that are not botanical nuts. Traditional foods that require preparation count. A named food seed or nut group counts; a botanical class, tree alone, finished sauce or book title does not."
+    },
+    {
+      "id": "authored-buffalo-bills-players",
+      "prompt": "Name a player who has been on the Buffalo Bills franchise roster.",
+      "family": "sports",
+      "group": "authored-whole-nfl-franchise-roster",
+      "answerCount": 1725,
+      "scope": "Past or present roster membership for this franchise through the retained 2026 snapshot counts, including its earlier names/locations and NFL, AFL or AAFC membership where applicable. Offseason and practice squads count. An unrelated former team sharing the same city or code does not. The current franchise rules and captured seasons are retained for source review."
+    },
+    {
+      "id": "authored-carolina-panthers-players",
+      "prompt": "Name a player who has been on the Carolina Panthers franchise roster.",
+      "family": "sports",
+      "group": "authored-whole-nfl-franchise-roster",
+      "answerCount": 1171,
+      "scope": "Past or present roster membership for this franchise through the retained 2026 snapshot counts, including its earlier names/locations and NFL, AFL or AAFC membership where applicable. Offseason and practice squads count. An unrelated former team sharing the same city or code does not. The current franchise rules and captured seasons are retained for source review."
+    },
+    {
+      "id": "authored-dallas-cowboys-players",
+      "prompt": "Name a player who has been on the Dallas Cowboys franchise roster.",
+      "family": "sports",
+      "group": "authored-whole-nfl-franchise-roster",
+      "answerCount": 1591,
+      "scope": "Past or present roster membership for this franchise through the retained 2026 snapshot counts, including its earlier names/locations and NFL, AFL or AAFC membership where applicable. Offseason and practice squads count. An unrelated former team sharing the same city or code does not. The current franchise rules and captured seasons are retained for source review."
+    },
+    {
+      "id": "authored-kansas-city-chiefs-players",
+      "prompt": "Name a player who has been on the Kansas City Chiefs franchise roster.",
+      "family": "sports",
+      "group": "authored-whole-nfl-franchise-roster",
+      "answerCount": 1706,
+      "scope": "Past or present roster membership for this franchise through the retained 2026 snapshot counts, including its earlier names/locations and NFL, AFL or AAFC membership where applicable. Offseason and practice squads count. An unrelated former team sharing the same city or code does not. The current franchise rules and captured seasons are retained for source review."
+    },
+    {
+      "id": "authored-new-england-patriots-players",
+      "prompt": "Name a player who has been on the New England Patriots franchise roster.",
+      "family": "sports",
+      "group": "authored-whole-nfl-franchise-roster",
+      "answerCount": 1771,
+      "scope": "Past or present roster membership for this franchise through the retained 2026 snapshot counts, including its earlier names/locations and NFL, AFL or AAFC membership where applicable. Offseason and practice squads count. An unrelated former team sharing the same city or code does not. The current franchise rules and captured seasons are retained for source review."
+    },
+    {
+      "id": "authored-philadelphia-eagles-players",
+      "prompt": "Name a player who has been on the Philadelphia Eagles franchise roster.",
+      "family": "sports",
+      "group": "authored-whole-nfl-franchise-roster",
+      "answerCount": 2141,
+      "scope": "Past or present roster membership for this franchise through the retained 2026 snapshot counts, including its earlier names/locations and NFL, AFL or AAFC membership where applicable. Offseason and practice squads count. An unrelated former team sharing the same city or code does not. The current franchise rules and captured seasons are retained for source review."
+    },
+    {
+      "id": "authored-san-francisco-49ers-players",
+      "prompt": "Name a player who has been on the San Francisco 49ers franchise roster.",
+      "family": "sports",
+      "group": "authored-whole-nfl-franchise-roster",
+      "answerCount": 1851,
+      "scope": "Past or present roster membership for this franchise through the retained 2026 snapshot counts, including its earlier names/locations and NFL, AFL or AAFC membership where applicable. Offseason and practice squads count. An unrelated former team sharing the same city or code does not. The current franchise rules and captured seasons are retained for source review."
     }
   ]
 }

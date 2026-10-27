@@ -1,9 +1,9 @@
 {
   "target": 5000,
-  "authoredCandidates": 219,
-  "admittedAuthored": 217,
-  "normalPoolAdmitted": 444,
-  "remaining": 4556,
+  "authoredCandidates": 251,
+  "admittedAuthored": 224,
+  "normalPoolAdmitted": 451,
+  "remaining": 4549,
   "candidateFamilies": {
     "culture": 17,
     "everyday": 22,
@@ -12,9 +12,9 @@
     "music": 31,
     "nature": 27,
     "science": 21,
-    "sports": 38,
+    "sports": 70,
     "world": 26
   },
-  "canonicalAnswerRows": 1717835,
-  "familiarAnswerChecks": 6590
+  "canonicalAnswerRows": 1774986,
+  "familiarAnswerChecks": 7229
 }

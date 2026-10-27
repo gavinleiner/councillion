@@ -1,6 +1,6 @@
 # Five-thousand-question expansion: development checkpoint
 
-The requested release is unfinished. Production still has 227 admitted questions. Development has 444: the 227 baseline plus 217 new admissions. It needs 4,556 more genuinely distinct questions. Answer rows, raw entities, draft inventories and reworded recipes do not count as questions.
+The requested release is unfinished. Production still has 227 admitted questions. Development has 451: the 227 baseline plus 224 new admissions. It needs 4,549 more genuinely distinct questions. Answer rows, raw entities, draft inventories and reworded recipes do not count as questions.
 
 ## Admission standard
 
@@ -18,7 +18,7 @@ Source attribution and unresolved-row ledgers remain beside the authored inputs.
 
 ## Candidates and next work
 
-The excluded candidates are government/international space organizations and Avatar-franchise characters. Organization classification and full novel-character reconciliation remain unfinished; raw table volume does not establish eligibility. Large inventories require local loading/typing checks; do not truncate valid rare answers for popularity.
+The excluded candidates include government/international space organizations, Avatar-franchise characters and the twenty-five NFL franchise inventories listed in the later checkpoint. Organization classification and full novel-character reconciliation remain unfinished; raw table volume does not establish eligibility. Large inventories require local loading/typing checks; do not truncate valid rare answers for popularity.
 
 Twenty-six complete artist catalogs are now admitted, with 379 independent recognizable-song checks. Writing-only, unrelated solo-member and background-only credits are held. Known short titles and version identities are explicit; alternate versions cannot score twice. Drake, Eminem, Chappell Roan, Bieber, Post Malone and Travis Scott remain unadmitted because complete eligible source catalogs were not established. Thirty whole all-time NBA/BAA/ABA franchise questions are now admitted, with 508 independent common-player inputs and 13,408 answer identities. The 31st source roster (Seattle) expands the Thunder question, not the question count. Charlotte/New Orleans history, renamed players, source legend/retired-number cleanup, 26 NBL-only Lakers exclusions and two verified Atlanta source-stat conflicts are documented. No roster-year, position or opponent variants are added. Eight local actual-game player cases pass.
 
@@ -81,3 +81,13 @@ All 285 automated tests pass at 444; all 13 focused natural/food/reviewed-standa
 Thirty-two NFL-franchise concepts and 639 independent familiar-player probes are prepared in the parent workspace, but none is admitted. Reused historical team codes must be reconciled using franchise history, not the old discovery mapper. In particular, pre-1960 BUF is not the modern Bills, pre-1946 CLE can be Rams, SL2002–2015 is Rams rather than Cardinals, and different incarnations of Baltimore/Houston/Dallas are separate franchises. These research candidates do not add to the 444 count.
 
 An active thread heartbeat, finish-councillion-question-expansion, continues the authorized work every fifteen minutes while the app is available. It must stay quiet without meaningful changes, never bypass OS privacy controls, never count source entities as questions, and send the authorized completion email only after the actual validated 5,000-question publication. Stop it when the full objective is achieved.
+
+## Historical roster identity checkpoint · 451 questions
+
+Seven whole NFL franchise questions are now admitted: Bills, Panthers, Cowboys, Chiefs, Patriots, Eagles and 49ers. Their complete retained inventories have 1,725, 1,171, 1,591, 1,706, 1,771, 2,141 and 1,851 canonical public names respectively. These are seven questions, not 11,956 questions. Twenty-five additional NFL franchise inventories remain outside ordinary play so the overall pool stays balanced while other families expand. All thirty-two candidates have 639 independent familiar-player probes; the admitted seven have 140. No season, position, city-code or source-row variants create additional questions.
+
+The code/season mappings reconcile current franchises against Pro Football Hall of Fame history. In particular, old Buffalo, Cleveland, Baltimore, St. Louis, Houston, Dallas and Boston team-code collisions do not silently assign players to a different franchise. GSIS/PFR identifiers join actual personal name changes; identical name text never bridges different people. Steve Smith Sr., Clay Matthews Jr./III, Patrick Surtain Sr./II, Michael Pittman Sr./Jr., Billy White Shoes Johnson and Ed Too Tall Jones keep the correct franchise. Real name changes such as Chad Johnson/Ochocinco are retained. Source short_name/initial shortcuts are excluded; actual full public names remain accepted. See NFL-FRANCHISE-SOURCE-ATTRIBUTION.md and its source/specification/proof/check files.
+
+All 291 full-suite tests pass at 451; all 11 focused NFL/reviewed-standard checks pass, including every common input across all thirty-two candidates, wrong-franchise identities and historical-year coverage. The complete build passes and checks 7,895 familiar inputs and 748 wrong-answer boundaries for normal play. Fourteen local actual-game cases pass for the new admitted subjects, followed by general shared-Daily, saved-unseen-queue/migration, fixed-seed sample/library, laptop and mobile checks. All external requests are blocked during browser QA. Source-format labels in the sample/library are now readable names instead of internal authored group keys.
+
+All nine ordinary categories remain within 8–15% of the current pool. The final release gate still fails the actual unfinished volume target: 4,549 distinct admitted questions remain. Production remains 227 and no completed expansion has been published or emailed. The thread heartbeat continues the authorized work.

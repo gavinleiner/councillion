@@ -1,102 +1,101 @@
 {
-  "version": "livepool-467eaba71bccaaf1-20261025-reviewed-standard-v1-20261025-reviewed-standard",
+  "version": "livepool-e35fb8d88e697518-20261025-reviewed-standard-v1-20261025-reviewed-standard",
   "selectionBuild": "20261025-reviewed-standard-v1",
   "seed": "20261025-reviewed-standard",
-  "poolBuild": "467eaba71bccaaf1",
-  "poolCount": 444,
+  "poolBuild": "e35fb8d88e697518",
+  "poolCount": 451,
   "method": "Same selection system as live play: random subjects and formats, then random unseen questions. Recent subjects are avoided to keep the mix varied; first 100.",
   "families": {
-    "culture": 10,
-    "everyday": 13,
-    "food": 12,
-    "gaming": 10,
-    "music": 9,
-    "nature": 11,
-    "science": 12,
-    "sports": 12,
+    "culture": 11,
+    "everyday": 9,
+    "food": 11,
+    "gaming": 12,
+    "music": 12,
+    "nature": 10,
+    "science": 13,
+    "sports": 11,
     "world": 11
   },
   "formats": {
-    "Animal kinds": 1,
+    "Animal kinds": 2,
+    "Animals & nature": 2,
     "Artists · one genre": 2,
-    "Broad category": 12,
-    "Characters & rosters": 3,
+    "Brands": 1,
+    "Broad category": 13,
+    "Characters & rosters": 6,
+    "Colors & shades": 1,
+    "Cooking & ingredients": 2,
     "Everyday & world knowledge": 8,
-    "Everyday observations": 6,
-    "Everyday situations": 8,
+    "Everyday observations": 5,
+    "Everyday situations": 5,
     "Facts & records": 1,
-    "Game objects & characters": 1,
-    "Game rules & objects": 2,
-    "Group-approved prompt": 17,
-    "Kinds, examples & objects": 1,
+    "Game objects & characters": 2,
+    "Game rules & objects": 4,
+    "Group-approved prompt": 16,
+    "Kinds, examples & objects": 2,
     "Movies · one genre": 1,
     "Names & categories": 9,
-    "Objects, tools & materials": 10,
-    "Players by franchise": 2,
+    "Objects, tools & materials": 8,
+    "Players by franchise": 3,
+    "Science & academic fields": 2,
     "Songs by one artist": 2,
     "Steam · one tag": 2,
-    "TV · one genre": 1,
-    "authored-whole-brand-inventory": 1,
-    "authored-whole-color-inventory": 1,
-    "authored-whole-familiar-food-concept": 2,
-    "authored-whole-franchise-characters": 1,
-    "authored-whole-game-concept": 2,
-    "authored-whole-natural-science-concept": 4
+    "TV · one genre": 1
   },
   "questions": [
     {
-      "id": "authored-formula-one-drivers",
-      "prompt": "Name a driver who has competed in Formula One.",
+      "id": "authored-bodyweight-exercises",
+      "prompt": "Name an exercise that can be done using your bodyweight instead of added weights.",
       "family": "sports",
-      "format": "Characters & rosters",
-      "group": "authored-whole-roster",
-      "answerCount": 881,
-      "scope": "Drivers in the complete Jolpica/Ergast Formula One World Championship driver inventory count, including historical entrants and the Indianapolis 500 when it was part of that championship. A real surname can identify a valid driver; invented initials and racing three-letter codes do not count as names."
+      "format": "Everyday observations",
+      "group": "authored-properties",
+      "answerCount": 167,
+      "scope": "Named exercises and recognized variations count, including floor exercises, holds and movements on a pull-up bar. A bar or bench can provide support; dumbbells and loaded barbells are not required."
     },
     {
-      "id": "group-q088",
-      "prompt": "Name a country made up entirely of islands.",
-      "family": "world",
-      "format": "Group-approved prompt",
-      "group": "group-approved-world",
-      "answerCount": 48,
-      "scope": "Island countries and countries sharing an island count; Australia explicitly counts."
+      "id": "authored-duck-goose-swan-kinds",
+      "prompt": "Name a kind of duck, goose or swan.",
+      "family": "nature",
+      "format": "Animal kinds",
+      "group": "authored-whole-taxonomic-group",
+      "answerCount": 390,
+      "scope": "Established named groups and species in the Anatidae bird family count, including recently extinct species. Common and scientific names are accepted. Real synonyms share an identity; unrelated birds and objects named after birds do not count. Recognized domestic duck and goose breeds also count."
     },
     {
-      "id": "authored-cooking-techniques",
-      "prompt": "Name a cooking or food-preparation technique.",
-      "family": "food",
-      "format": "authored-whole-familiar-food-concept",
-      "group": "authored-whole-familiar-food-concept",
-      "answerCount": 186,
-      "scope": "Recognized techniques for cooking, preparing, cutting, mixing, baking or preserving food count. Real public verb/noun forms share an answer. An ingredient, utensil, finished dish or desired texture alone is not a technique."
+      "id": "authored-cell-structure-names",
+      "prompt": "Name a structure or component found in a living cell.",
+      "family": "science",
+      "format": "Everyday situations",
+      "group": "authored-situations",
+      "answerCount": 146,
+      "scope": "Plant, animal, fungal and prokaryotic cell structures count. Whole organs or tissues are not structures inside one cell. Established molecular structures such as DNA and chromosomes count. Cellular structures and molecular assemblies count; an individual pigment such as chlorophyll is not an organelle or cell structure by itself."
     },
     {
-      "id": "group-music-k-pop-artist",
-      "prompt": "Name an artist associated with k-pop music.",
-      "family": "music",
-      "format": "Artists · one genre",
-      "group": "group-music-genre-artist",
-      "answerCount": 405,
+      "id": "group-show-genre-crime",
+      "prompt": "Name a crime TV or streaming show.",
+      "family": "culture",
+      "format": "TV · one genre",
+      "group": "group-show-genre",
+      "answerCount": 6723,
       "scope": ""
     },
     {
-      "id": "authored-optical-equipment-kinds",
-      "prompt": "Name an optical instrument used to aid vision or examine things.",
-      "family": "science",
-      "format": "Objects, tools & materials",
-      "group": "authored-whole-object-concept",
-      "answerCount": 59,
-      "scope": "Real instruments that use light to aid sight, magnify, project, examine or measure an optical image or spectrum count. Acoustic and mass-analysis instruments do not qualify merely because a source groups them near spectrometers."
+      "id": "fun-languages",
+      "prompt": "Name a spoken, signed or constructed language.",
+      "family": "world",
+      "format": "Broad category",
+      "group": "group-broad-languages",
+      "answerCount": 7917,
+      "scope": ""
     },
     {
-      "id": "authored-pokemon-moves",
-      "prompt": "Name a move from a Pokémon video game.",
-      "family": "gaming",
-      "format": "authored-whole-game-concept",
-      "group": "authored-whole-game-concept",
-      "answerCount": 919,
-      "scope": "Named moves from released Pokémon games count, including Z-Moves, Max Moves and Colosseum/XD Shadow moves. Physical/special implementations of the same named move share one answer. Generic actions and moves from fan games do not count."
+      "id": "catalog-soups",
+      "prompt": "Name a named soup or established soup variety.",
+      "family": "food",
+      "format": "Broad category",
+      "group": "group-broad-food-soups",
+      "answerCount": 1206,
+      "scope": ""
     },
     {
       "id": "authored-kitchen-hand-tools",
@@ -108,6 +107,177 @@
       "scope": "Kitchen hand tools, utensils, serving implements and nonpowered cookware count. Small measuring tools used in food preparation also count. Large powered appliances and foods do not qualify."
     },
     {
+      "id": "authored-named-drummers",
+      "prompt": "Name a musician known for playing drums.",
+      "family": "music",
+      "format": "Names & categories",
+      "group": "authored-whole-concept",
+      "answerCount": 6262,
+      "scope": "Real musicians known for playing drums count, including multi-instrumentalists and percussionists with a documented drum-playing career. An unrelated band member does not become a drummer just because the band has one."
+    },
+    {
+      "id": "authored-minecraft-fishing-catches",
+      "prompt": "Name an item you can catch by fishing in Minecraft.",
+      "family": "gaming",
+      "format": "Game rules & objects",
+      "group": "authored-game-mechanics",
+      "answerCount": 22,
+      "scope": "Fish, junk and treasure in the ordinary fishing loot tables count. Items merely carried by nearby mobs do not. Official Java 26.3 recipe, tag or component data defines the inventory; modded behavior does not count."
+    },
+    {
+      "id": "authored-winter-sports",
+      "prompt": "Name a sport or recognized sporting discipline played on snow or ice.",
+      "family": "sports",
+      "format": "Everyday situations",
+      "group": "authored-situations",
+      "answerCount": 99,
+      "scope": "Established ice and snow sports and competitive disciplines count. A sport merely played during the winter on an ordinary indoor court does not qualify."
+    },
+    {
+      "id": "distinct-facts-muscles",
+      "prompt": "Name a human muscle or muscle group.",
+      "family": "science",
+      "format": "Everyday & world knowledge",
+      "group": "distinct-authored-facts",
+      "answerCount": 61,
+      "scope": "Named examples and standard alternative names count. This is a finite curated inventory, not an exhaustive list of every real-world possibility."
+    },
+    {
+      "id": "authored-spongebob-characters",
+      "prompt": "Name a character from SpongeBob SquarePants.",
+      "family": "culture",
+      "format": "Characters & rosters",
+      "group": "authored-whole-franchise-characters",
+      "answerCount": 178,
+      "scope": "Named or distinctly identified characters from SpongeBob SquarePants, its films and spin-offs count. Identified character groups also count. Voice actors, episode titles and general species alone are not character names."
+    },
+    {
+      "id": "dog-breeds",
+      "prompt": "Name a dog breed, including historical breeds.",
+      "family": "nature",
+      "format": "Broad category",
+      "group": "group-broad-dog-breeds",
+      "answerCount": 453,
+      "scope": ""
+    },
+    {
+      "id": "group-q099",
+      "prompt": "Name something you can wear that has a button, zipper or buckle.",
+      "family": "everyday",
+      "format": "Group-approved prompt",
+      "group": "group-approved-everyday",
+      "answerCount": 168,
+      "scope": "Clothes, footwear, accessories and protective wear count."
+    },
+    {
+      "id": "authored-sza-songs",
+      "prompt": "Name a song by SZA.",
+      "family": "music",
+      "format": "Songs by one artist",
+      "group": "authored-whole-artist-catalog",
+      "answerCount": 152,
+      "scope": "Released recordings credited to SZA count, including collaborations, features and released covers. Writing or production credit alone does not count. Different versions share one answer."
+    },
+    {
+      "id": "authored-nuts-seeds",
+      "prompt": "Name a culinary nut or a seed people eat.",
+      "family": "food",
+      "format": "Cooking & ingredients",
+      "group": "authored-whole-familiar-food-concept",
+      "answerCount": 174,
+      "scope": "Culinary nuts and food seeds count, including grains, pulses, spice seeds and nuts that are not botanical nuts. Traditional foods that require preparation count. A named food seed or nut group counts; a botanical class, tree alone, finished sauce or book title does not."
+    },
+    {
+      "id": "authored-pokemon-moves",
+      "prompt": "Name a move from a Pokémon video game.",
+      "family": "gaming",
+      "format": "Game rules & objects",
+      "group": "authored-whole-game-concept",
+      "answerCount": 919,
+      "scope": "Named moves from released Pokémon games count, including Z-Moves, Max Moves and Colosseum/XD Shadow moves. Physical/special implementations of the same named move share one answer. Generic actions and moves from fan games do not count."
+    },
+    {
+      "id": "authored-tower-kinds",
+      "prompt": "Name a type of tower.",
+      "family": "world",
+      "format": "Objects, tools & materials",
+      "group": "authored-whole-object-concept",
+      "answerCount": 55,
+      "scope": "Types of built tower count, including towers defined by their function or structure. Individual named towers do not."
+    },
+    {
+      "id": "authored-web-browsers",
+      "prompt": "Name a web browser.",
+      "family": "science",
+      "format": "Names & categories",
+      "group": "authored-whole-concept",
+      "answerCount": 163,
+      "scope": "Actual web-browser products and families count, including historical, mobile and text browsers. A search engine, rendering engine, extension, website or operating system alone is not a browser."
+    },
+    {
+      "id": "authored-underground-food-crops",
+      "prompt": "Name a food crop with an edible part that normally grows underground.",
+      "family": "nature",
+      "format": "Everyday observations",
+      "group": "authored-properties",
+      "answerCount": 85,
+      "scope": "Roots, tubers, rhizomes, bulbs, corms and underground fruits count. Named crop kinds and established edible varieties count. A normal above-ground fruit does not count merely because the plant has roots."
+    },
+    {
+      "id": "authored-paint-kinds",
+      "prompt": "Name a type of paint.",
+      "family": "culture",
+      "format": "Objects, tools & materials",
+      "group": "authored-whole-object-concept",
+      "answerCount": 62,
+      "scope": "Types of paint defined by medium, finish or purpose count, including artist and building paints. Color names alone, a layer of paint and digital painting software do not."
+    },
+    {
+      "id": "authored-writing-drawing-tools",
+      "prompt": "Name a tool used for writing or drawing.",
+      "family": "everyday",
+      "format": "Objects, tools & materials",
+      "group": "authored-whole-object-concept",
+      "answerCount": 37,
+      "scope": "Pens, pencils, crayons and other physical implements used to make written or drawn marks count. Paper, erasers alone, ink alone and software applications do not."
+    },
+    {
+      "id": "authored-sports-balls",
+      "prompt": "Name a type of ball used in a sport, game or athletic training.",
+      "family": "sports",
+      "format": "Objects, tools & materials",
+      "group": "authored-whole-object-concept",
+      "answerCount": 54,
+      "scope": "Named balls used in sports, games or athletic training count, including particular game-ball designs. Pucks, shuttlecocks and punching bags are not balls."
+    },
+    {
+      "id": "group-music-metal-artist",
+      "prompt": "Name an artist associated with metal music.",
+      "family": "music",
+      "format": "Artists · one genre",
+      "group": "group-music-genre-artist",
+      "answerCount": 274,
+      "scope": ""
+    },
+    {
+      "id": "group-q087",
+      "prompt": "Name a landmark people can visit.",
+      "family": "world",
+      "format": "Group-approved prompt",
+      "group": "group-approved-world",
+      "answerCount": 190,
+      "scope": "Named natural or human-made visitor landmarks count, including ruins."
+    },
+    {
+      "id": "distinct-kind-building-material-n-01",
+      "prompt": "Name a building material.",
+      "family": "science",
+      "format": "Kinds, examples & objects",
+      "group": "distinct-kinds",
+      "answerCount": 99,
+      "scope": "Established types and named examples count. Alternate standard names are the same answer."
+    },
+    {
       "id": "authored-flower-kinds",
       "prompt": "Name a type of flower.",
       "family": "nature",
@@ -117,265 +287,13 @@
       "scope": "Recognized common flower types and flowering plants grown for their blooms count, including named horticultural groups and documented varieties. Materials merely named after flowers, artificial flower products and unrelated decorative objects do not count."
     },
     {
-      "id": "authored-worship-building-kinds",
-      "prompt": "Name a type of building or place used for worship.",
-      "family": "world",
-      "format": "Objects, tools & materials",
-      "group": "authored-whole-object-concept",
-      "answerCount": 58,
-      "scope": "Types of religious worship building or built shrine count across religions. Individual named landmarks and a minister or deity alone do not."
-    },
-    {
-      "id": "authored-wizarding-world-characters",
-      "prompt": "Name a character from the Harry Potter books or films.",
-      "family": "culture",
-      "format": "Characters & rosters",
-      "group": "authored-whole-roster",
-      "answerCount": 437,
-      "scope": "Identifiable characters in the Harry Potter novels, films and their epilogues count, including creatures, ghosts and portraits. Real actors are not their fictional characters. Same-name characters share one answer identity."
-    },
-    {
-      "id": "group-q021",
-      "prompt": "Name a team from the NFL, NBA, MLB, NHL, WNBA or MLS.",
-      "family": "sports",
-      "format": "Group-approved prompt",
-      "group": "group-approved-sports",
-      "answerCount": 184,
-      "scope": "Past and present teams from those six leagues count; familiar short team names would be accepted."
-    },
-    {
-      "id": "authored-noodle-dishes",
-      "prompt": "Name a named pasta or noodle dish.",
+      "id": "authored-sushi-preparations",
+      "prompt": "Name a sushi style or named sushi roll.",
       "family": "food",
-      "format": "Everyday situations",
-      "group": "authored-situations",
-      "answerCount": 119,
-      "scope": "Named dishes and established menu preparations count, including familiar meal names such as spaghetti, udon and soba, filled pastas and gnocchi. A bare unfilled pasta-shape name without a dish or established menu preparation does not count. Plain tteokbokki is a rice-cake dish; rabokki includes noodles."
-    },
-    {
-      "id": "authored-named-djs",
-      "prompt": "Name a real DJ or DJ act, past or present.",
-      "family": "music",
       "format": "Names & categories",
       "group": "authored-whole-concept",
-      "answerCount": 7859,
-      "scope": "Real DJs and billed DJ duos or groups count, including people known for presenting recorded music on radio. Being a singer or producer alone does not make someone a DJ. Fictional story DJs and unrelated musical groups do not count."
-    },
-    {
-      "id": "authored-objects-with-hinges",
-      "prompt": "Name an object that commonly has a hinge.",
-      "family": "everyday",
-      "format": "Everyday observations",
-      "group": "authored-properties",
-      "answerCount": 133,
-      "scope": "A common hinged version of the object must exist. Sliding or roll-up versions do not prevent a genuinely hinged object from counting."
-    },
-    {
-      "id": "authored-human-bone-names",
-      "prompt": "Name a bone or named group of bones in the human skeleton.",
-      "family": "science",
-      "format": "Everyday situations",
-      "group": "authored-situations",
-      "answerCount": 124,
-      "scope": "Standard named bones, fused bones and familiar bone groups count. Left and right instances are the same answer. Cartilage, joints, muscles and organs are not bones."
-    },
-    {
-      "id": "authored-bioluminescent-animals",
-      "prompt": "Name an animal that can produce its own light.",
-      "family": "nature",
-      "format": "Everyday observations",
-      "group": "authored-properties",
-      "answerCount": 75,
-      "scope": "Bioluminescence, including light produced by symbiotic bacteria in an animal's light organ, counts. Reflection, fluorescence and bright coloring alone do not. Broad animal groups count when they contain documented luminous members."
-    },
-    {
-      "id": "group-q042",
-      "prompt": "Name a fictional animal character.",
-      "family": "culture",
-      "format": "Group-approved prompt",
-      "group": "group-approved-culture",
-      "answerCount": 354,
-      "scope": "Named animal characters from any published story count; real celebrity pets do not."
-    },
-    {
-      "id": "authored-dallas-mavericks-players",
-      "prompt": "Name a player who has played for the Dallas Mavericks.",
-      "family": "sports",
-      "format": "Players by franchise",
-      "group": "authored-whole-franchise-roster",
-      "answerCount": 338,
-      "scope": "At least one first-team NBA, BAA or ABA game for this franchise counts, past or present. Coaches, draft rights and preseason-only appearances do not."
-    },
-    {
-      "id": "distinct-facts-egg-dishes",
-      "prompt": "Name a named dish or preparation in which eggs are a main ingredient.",
-      "family": "food",
-      "format": "Everyday & world knowledge",
-      "group": "distinct-authored-facts",
-      "answerCount": 66,
-      "scope": "Named examples and standard alternative names count. This is a finite curated inventory, not an exhaustive list of every real-world possibility."
-    },
-    {
-      "id": "authored-islands-archipelagos",
-      "prompt": "Name a real island or archipelago.",
-      "family": "world",
-      "format": "Names & categories",
-      "group": "authored-whole-concept",
-      "answerCount": 116403,
-      "scope": "Real named islands and archipelagos worldwide count, including islands that share a country name. Continental mainlands are not treated as islands. Fictional islands do not count."
-    },
-    {
-      "id": "room-types",
-      "prompt": "Name a type of room or specialized indoor space.",
-      "family": "everyday",
-      "format": "Broad category",
-      "group": "group-broad-room-types",
-      "answerCount": 108,
-      "scope": ""
-    },
-    {
-      "id": "authored-official-constellations",
-      "prompt": "Name one of the 88 official constellations.",
-      "family": "science",
-      "format": "Facts & records",
-      "group": "authored-closed-inventory",
-      "answerCount": 88,
-      "scope": "Official IAU constellation names count. Recognized common names such as Capricorn and the Great Bear are accepted. Asterisms such as the Big Dipper are only parts of constellations."
-    },
-    {
-      "id": "distinct-fortnite-emote",
-      "prompt": "Name an emote from Fortnite.",
-      "family": "gaming",
-      "format": "Game objects & characters",
-      "group": "distinct-game-objects",
-      "answerCount": 1778,
-      "scope": "Any recorded season or collaboration counts. These are cosmetic names, not Battle Royale weapon names."
-    },
-    {
-      "id": "cat-breeds",
-      "prompt": "Name a cat breed, including experimental and historical breeds.",
-      "family": "nature",
-      "format": "Broad category",
-      "group": "group-broad-cat-breeds",
-      "answerCount": 97,
-      "scope": ""
-    },
-    {
-      "id": "group-q047",
-      "prompt": "Name a song with a person's name in its title.",
-      "family": "music",
-      "format": "Group-approved prompt",
-      "group": "group-approved-music",
-      "answerCount": 527,
-      "scope": "Released songs count; the name can be a real person or a fictional person."
-    },
-    {
-      "id": "authored-bodyweight-exercises",
-      "prompt": "Name an exercise that can be done using your bodyweight instead of added weights.",
-      "family": "sports",
-      "format": "Everyday observations",
-      "group": "authored-properties",
-      "answerCount": 167,
-      "scope": "Named exercises and recognized variations count, including floor exercises, holds and movements on a pull-up bar. A bar or bench can provide support; dumbbells and loaded barbells are not required."
-    },
-    {
-      "id": "group-q067",
-      "prompt": "Name a dish made mainly from potatoes.",
-      "family": "food",
-      "format": "Group-approved prompt",
-      "group": "group-approved-food",
-      "answerCount": 215,
-      "scope": "Named dishes count when potato is a main ingredient rather than a garnish."
-    },
-    {
-      "id": "distinct-facts-camping-gear",
-      "prompt": "Name a piece of camping equipment.",
-      "family": "everyday",
-      "format": "Everyday & world knowledge",
-      "group": "distinct-authored-facts",
-      "answerCount": 112,
-      "scope": "Named examples and standard alternative names count. This is a finite curated inventory, not an exhaustive list of every real-world possibility."
-    },
-    {
-      "id": "fun-landforms",
-      "prompt": "Name a landform, natural feature or kind of landscape.",
-      "family": "world",
-      "format": "Broad category",
-      "group": "group-broad-world-features",
-      "answerCount": 592,
-      "scope": ""
-    },
-    {
-      "id": "authored-minecraft-furnace-results",
-      "prompt": "Name an item or block a furnace recipe can produce in Minecraft.",
-      "family": "gaming",
-      "format": "Game rules & objects",
-      "group": "authored-game-mechanics",
-      "answerCount": 61,
-      "scope": "Give the output, rather than the input, of an ordinary furnace smelting or cooking recipe. Official Java 26.3 recipe, tag or component data defines the inventory; modded behavior does not count."
-    },
-    {
-      "id": "authored-computer-languages",
-      "prompt": "Name a programming, scripting, query, markup or stylesheet language.",
-      "family": "science",
-      "format": "Names & categories",
-      "group": "authored-whole-concept",
-      "answerCount": 1370,
-      "scope": "Real current and historical computer languages for programs, scripts, database queries, markup or style sheets count. Named dialects also count. Plain data-file formats, code editors and ordinary spoken languages do not count. Named XML vocabularies and document-markup formats count; an organization, generic data model, element or software platform alone is not a language."
-    },
-    {
-      "id": "group-movie-genre-romance",
-      "prompt": "Name a romance movie.",
-      "family": "culture",
-      "format": "Movies · one genre",
-      "group": "group-movie-genre",
-      "answerCount": 28309,
-      "scope": ""
-    },
-    {
-      "id": "distinct-facts-water-sports",
-      "prompt": "Name a water sport or recreational activity on or in water.",
-      "family": "sports",
-      "format": "Everyday & world knowledge",
-      "group": "distinct-authored-facts",
-      "answerCount": 54,
-      "scope": "Named examples and standard alternative names count. This is a finite curated inventory, not an exhaustive list of every real-world possibility."
-    },
-    {
-      "id": "authored-pickled-foods",
-      "prompt": "Name a food that is commonly pickled.",
-      "family": "food",
-      "format": "Everyday observations",
-      "group": "authored-properties",
-      "answerCount": 165,
-      "scope": "Vegetables, fruits, eggs, meats and seafood with established pickled preparations count. Vinegar and brine are ingredients, not foods being pickled."
-    },
-    {
-      "id": "authored-color-names",
-      "prompt": "Name a color or a named shade.",
-      "family": "everyday",
-      "format": "authored-whole-color-inventory",
-      "group": "authored-whole-color-inventory",
-      "answerCount": 1138,
-      "scope": "Recognized English color names and published named shades count, including named pigments, Crayola colors and standard CSS color keywords. Regional spellings and ordinary synonyms share one answer. Patterns are not a single color. Different standard definitions of the same ordinary name do not create extra answers."
-    },
-    {
-      "id": "group-q075",
-      "prompt": "Name an animal that is active at night.",
-      "family": "nature",
-      "format": "Group-approved prompt",
-      "group": "group-approved-nature",
-      "answerCount": 1100,
-      "scope": "Normally nocturnal or regularly night-active animals count; occasional unusual behavior does not."
-    },
-    {
-      "id": "distinct-facts-landlocked-countries",
-      "prompt": "Name a landlocked country.",
-      "family": "world",
-      "format": "Everyday & world knowledge",
-      "group": "distinct-authored-facts",
-      "answerCount": 45,
-      "scope": "Named examples and standard alternative names count. This is a finite curated inventory, not an exhaustive list of every real-world possibility."
+      "answerCount": 203,
+      "scope": "Established sushi preparations, named sushi rolls and recognizable filling-specific sushi varieties count. Sashimi by itself is not sushi because it lacks the seasoned rice. A fish or ingredient alone is not a prepared sushi variety."
     },
     {
       "id": "group-q009",
@@ -387,75 +305,21 @@
       "scope": "Unique named weapons and established weapon/item names count across all platforms."
     },
     {
-      "id": "distinct-kind-liquid-n-03",
-      "prompt": "Name a substance or mixture that is normally liquid at room temperature.",
-      "family": "science",
-      "format": "Kinds, examples & objects",
-      "group": "distinct-kinds",
-      "answerCount": 119,
-      "scope": "Established types and named examples count. Alternate standard names are the same answer."
-    },
-    {
-      "id": "catalog-genre-clean",
-      "prompt": "Name a musical genre or subgenre.",
-      "family": "music",
-      "format": "Broad category",
-      "group": "group-broad-music-genres",
-      "answerCount": 6327,
-      "scope": ""
-    },
-    {
-      "id": "discovery-nba-teams",
-      "prompt": "Name an NBA team.",
-      "family": "sports",
-      "format": "Broad category",
-      "group": "group-broad-discovery-sports-teams",
-      "answerCount": 30,
-      "scope": ""
-    },
-    {
-      "id": "authored-tea-brands",
-      "prompt": "Name a tea brand or tea company.",
-      "family": "food",
-      "format": "authored-whole-brand-inventory",
-      "group": "authored-whole-brand-inventory",
-      "answerCount": 126,
-      "scope": "Real current or historical tea brands, tea companies and tea estates count. A tea variety, drink preparation or generic ingredient is not a company or brand. The inventory includes packaged-tea and ready-to-drink brands; owning a separate brand does not automatically make a generic parent-name guess eligible."
-    },
-    {
-      "id": "authored-toy-story-characters",
-      "prompt": "Name a character from the Toy Story franchise.",
+      "id": "authored-wizarding-world-characters",
+      "prompt": "Name a character from the Harry Potter books or films.",
       "family": "culture",
-      "format": "authored-whole-franchise-characters",
-      "group": "authored-whole-franchise-characters",
-      "answerCount": 232,
-      "scope": "Named or distinctly identified characters from Toy Story films, shorts, series and the Lightyear spin-off count. Established collective character identities such as the Aliens count. Voice actors, film titles and descriptive organizational headings do not count."
+      "format": "Characters & rosters",
+      "group": "authored-whole-roster",
+      "answerCount": 437,
+      "scope": "Identifiable characters in the Harry Potter novels, films and their epilogues count, including creatures, ghosts and portraits. Real actors are not their fictional characters. Same-name characters share one answer identity."
     },
     {
-      "id": "authored-box-container-kinds",
-      "prompt": "Name a kind of box or boxed storage container.",
+      "id": "distinct-facts-camping-gear",
+      "prompt": "Name a piece of camping equipment.",
       "family": "everyday",
-      "format": "Objects, tools & materials",
-      "group": "authored-whole-object-concept",
-      "answerCount": 67,
-      "scope": "Types of physical box, chest, crate and boxed storage container count, including cases with a recognizable box form. Metaphorical boxes and software do not."
-    },
-    {
-      "id": "authored-arachnid-kinds",
-      "prompt": "Name a kind of arachnid.",
-      "family": "nature",
-      "format": "authored-whole-natural-science-concept",
-      "group": "authored-whole-natural-science-concept",
-      "answerCount": 69,
-      "scope": "Named arachnid groups, species and recognized common kinds count. Spiders, scorpions, ticks, mites, harvestmen and other arachnid orders are included. Insects, crustaceans and myriapods are outside this question."
-    },
-    {
-      "id": "distinct-facts-muscles",
-      "prompt": "Name a human muscle or muscle group.",
-      "family": "science",
       "format": "Everyday & world knowledge",
       "group": "distinct-authored-facts",
-      "answerCount": 61,
+      "answerCount": 112,
       "scope": "Named examples and standard alternative names count. This is a finite curated inventory, not an exhaustive list of every real-world possibility."
     },
     {
@@ -468,67 +332,49 @@
       "scope": "Named examples and standard alternative names count. This is a finite curated inventory, not an exhaustive list of every real-world possibility."
     },
     {
-      "id": "group-steam-action",
-      "prompt": "Name a game on Steam tagged “Action”.",
-      "family": "gaming",
-      "format": "Steam · one tag",
-      "group": "group-steam-single-tag",
-      "answerCount": 38547,
-      "scope": ""
-    },
-    {
-      "id": "authored-super-bowl-winning-starters",
-      "prompt": "Name a quarterback who started and won a Super Bowl.",
-      "family": "sports",
-      "format": "Everyday situations",
-      "group": "authored-situations",
-      "answerCount": 36,
-      "scope": "The quarterback must have started a winning Super Bowl, through Super Bowl LX in February 2026. Winning a ring as a backup alone does not count."
-    },
-    {
-      "id": "authored-breakfast-cereal-products",
-      "prompt": "Name a breakfast cereal, cereal brand or named cereal product.",
-      "family": "food",
-      "format": "Names & categories",
-      "group": "authored-whole-concept",
-      "answerCount": 930,
-      "scope": "Named breakfast-cereal kinds, brands and products count, including hot cereals, muesli, granola and historical products. An unrelated food does not count just because its maker also sells cereal."
-    },
-    {
-      "id": "group-q098",
-      "prompt": "Name something that can be controlled with a remote.",
-      "family": "everyday",
-      "format": "Group-approved prompt",
-      "group": "group-approved-everyday",
-      "answerCount": 135,
-      "scope": "A real consumer product type with a handheld or app-based remote qualifies."
-    },
-    {
-      "id": "authored-heron-egret-bittern-kinds",
-      "prompt": "Name a kind of heron, egret or bittern.",
-      "family": "nature",
-      "format": "Animal kinds",
-      "group": "authored-whole-taxonomic-group",
-      "answerCount": 77,
-      "scope": "Established named groups and species in the Ardeidae bird family count, including recently extinct species. Common and scientific names are accepted. Real synonyms share an identity; unrelated birds and objects named after birds do not count."
-    },
-    {
-      "id": "authored-science-branches",
-      "prompt": "Name a scientific discipline or academic field.",
+      "id": "authored-mathematics-branches",
+      "prompt": "Name a branch or field of mathematics.",
       "family": "science",
-      "format": "authored-whole-natural-science-concept",
+      "format": "Science & academic fields",
       "group": "authored-whole-natural-science-concept",
-      "answerCount": 455,
-      "scope": "Recognized sciences and academic research fields count, including mathematics, social sciences, linguistics, medicine and engineering. Subdisciplines and documented historical names count. A result, isolated technique or pseudoscientific practice is not itself an academic discipline."
+      "answerCount": 98,
+      "scope": "Recognized mathematical branches, subfields and established mathematical research disciplines count. Both pure and applied mathematics count. Individual formulas, symbols, isolated theorems and unrelated school subjects do not by themselves name a branch."
     },
     {
-      "id": "authored-time-travel-films",
-      "prompt": "Name a movie involving time travel or a time loop.",
-      "family": "culture",
-      "format": "Names & categories",
-      "group": "authored-whole-concept",
-      "answerCount": 366,
-      "scope": "Films in which characters travel through time or experience a repeating time loop count, including animated movies and shorts. Ordinary flashbacks, dreams about the past and a futuristic setting alone do not count."
+      "id": "authored-atlanta-hawks-players",
+      "prompt": "Name a player who has played for the Atlanta Hawks.",
+      "family": "sports",
+      "format": "Players by franchise",
+      "group": "authored-whole-franchise-roster",
+      "answerCount": 626,
+      "scope": "At least one first-team NBA, BAA or ABA game for this franchise counts, past or present. Coaches, draft rights and preseason-only appearances do not. Earlier NBA seasons as the Tri-Cities Blackhawks, Milwaukee Hawks and St. Louis Hawks count."
+    },
+    {
+      "id": "distinct-inventory-guitar-makers",
+      "prompt": "Name a guitar manufacturer or established guitar brand, including historical makers.",
+      "family": "music",
+      "format": "Kinds, examples & objects",
+      "group": "distinct-kinds",
+      "answerCount": 154,
+      "scope": "Types, named examples and established synonyms count. This is a finite source inventory."
+    },
+    {
+      "id": "distinct-facts-egg-dishes",
+      "prompt": "Name a named dish or preparation in which eggs are a main ingredient.",
+      "family": "food",
+      "format": "Everyday & world knowledge",
+      "group": "distinct-authored-facts",
+      "answerCount": 66,
+      "scope": "Named examples and standard alternative names count. This is a finite curated inventory, not an exhaustive list of every real-world possibility."
+    },
+    {
+      "id": "authored-arachnid-kinds",
+      "prompt": "Name a kind of arachnid.",
+      "family": "nature",
+      "format": "Animals & nature",
+      "group": "authored-whole-natural-science-concept",
+      "answerCount": 69,
+      "scope": "Named arachnid groups, species and recognized common kinds count. Spiders, scorpions, ticks, mites, harvestmen and other arachnid orders are included. Insects, crustaceans and myriapods are outside this question."
     },
     {
       "id": "authored-dota-heroes",
@@ -540,13 +386,490 @@
       "scope": "The complete official playable hero roster in the October 25, 2026 snapshot counts. Items, cosmetics and non-playable creeps are not heroes."
     },
     {
-      "id": "authored-lady-gaga-songs",
-      "prompt": "Name a song by Lady Gaga.",
+      "id": "authored-beaches",
+      "prompt": "Name a real named beach.",
+      "family": "world",
+      "format": "Names & categories",
+      "group": "authored-whole-concept",
+      "answerCount": 14538,
+      "scope": "Real named coastal, lake and river beaches count. A city name qualifies when it is also the established name of a beach. A whole country, waterbody or general tourist region alone does not name a beach."
+    },
+    {
+      "id": "authored-official-constellations",
+      "prompt": "Name one of the 88 official constellations.",
+      "family": "science",
+      "format": "Facts & records",
+      "group": "authored-closed-inventory",
+      "answerCount": 88,
+      "scope": "Official IAU constellation names count. Recognized common names such as Capricorn and the Great Bear are accepted. Asterisms such as the Big Dipper are only parts of constellations."
+    },
+    {
+      "id": "authored-fictional-pirates",
+      "prompt": "Name a fictional pirate.",
+      "family": "culture",
+      "format": "Names & categories",
+      "group": "authored-whole-concept",
+      "answerCount": 581,
+      "scope": "Named fictional sea, air and space pirates count, including characters who were pirates earlier in their story. A smuggler, sailor or marine is not automatically a pirate."
+    },
+    {
+      "id": "discovery-wnba-players",
+      "prompt": "Name someone who has played in the WNBA.",
+      "family": "sports",
+      "format": "Broad category",
+      "group": "group-broad-discovery-basketball",
+      "answerCount": 1225,
+      "scope": ""
+    },
+    {
+      "id": "group-q048",
+      "prompt": "Name a song with a color in its title.",
+      "family": "music",
+      "format": "Group-approved prompt",
+      "group": "group-approved-music",
+      "answerCount": 966,
+      "scope": "Ordinary color words in released song titles count; color names used as surnames need context."
+    },
+    {
+      "id": "occupation-titles",
+      "prompt": "Name an occupation or recognized job title.",
+      "family": "everyday",
+      "format": "Broad category",
+      "group": "group-broad-occupation-titles",
+      "answerCount": 976,
+      "scope": ""
+    },
+    {
+      "id": "distinct-mc-enchantments",
+      "prompt": "Name an enchantment in Minecraft.",
+      "family": "gaming",
+      "format": "Game objects & characters",
+      "group": "distinct-game-objects",
+      "answerCount": 43,
+      "scope": "Base-game and recorded expansion names count. Versions of the same named object count once."
+    },
+    {
+      "id": "authored-pickled-foods",
+      "prompt": "Name a food that is commonly pickled.",
+      "family": "food",
+      "format": "Everyday observations",
+      "group": "authored-properties",
+      "answerCount": 165,
+      "scope": "Vegetables, fruits, eggs, meats and seafood with established pickled preparations count. Vinegar and brine are ingredients, not foods being pickled."
+    },
+    {
+      "id": "authored-lamp-lighting-kinds",
+      "prompt": "Name a type of lamp or lighting fixture.",
+      "family": "science",
+      "format": "Objects, tools & materials",
+      "group": "authored-whole-object-concept",
+      "answerCount": 78,
+      "scope": "Real lamps, lighting fixtures and manufactured light sources count, including candles and historical lighting. Fictional individual lamps, stars and naturally glowing organisms do not."
+    },
+    {
+      "id": "fun-film-horror",
+      "prompt": "Name a horror movie.",
+      "family": "culture",
+      "format": "Broad category",
+      "group": "group-broad-films",
+      "answerCount": 1667,
+      "scope": ""
+    },
+    {
+      "id": "group-q089",
+      "prompt": "Name an amusement park or theme-park resort.",
+      "family": "world",
+      "format": "Group-approved prompt",
+      "group": "group-approved-world",
+      "answerCount": 231,
+      "scope": "Real parks and resort complexes count worldwide; familiar resort names would be accepted."
+    },
+    {
+      "id": "group-q056",
+      "prompt": "Name a musical instrument played by blowing air into it.",
+      "family": "music",
+      "format": "Group-approved prompt",
+      "group": "group-approved-music",
+      "answerCount": 1016,
+      "scope": "Mouth-blown instruments count, including reed, brass and free-reed instruments."
+    },
+    {
+      "id": "authored-formula-one-drivers",
+      "prompt": "Name a driver who has competed in Formula One.",
+      "family": "sports",
+      "format": "Characters & rosters",
+      "group": "authored-whole-roster",
+      "answerCount": 881,
+      "scope": "Drivers in the complete Jolpica/Ergast Formula One World Championship driver inventory count, including historical entrants and the Indianapolis 500 when it was part of that championship. A real surname can identify a valid driver; invented initials and racing three-letter codes do not count as names."
+    },
+    {
+      "id": "group-steam-building",
+      "prompt": "Name a game on Steam tagged “Building”.",
+      "family": "gaming",
+      "format": "Steam · one tag",
+      "group": "group-steam-single-tag",
+      "answerCount": 4373,
+      "scope": ""
+    },
+    {
+      "id": "distinct-facts-regeneration",
+      "prompt": "Name a kind of animal that can regrow a lost body part.",
+      "family": "nature",
+      "format": "Everyday & world knowledge",
+      "group": "distinct-authored-facts",
+      "answerCount": 48,
+      "scope": "Named examples and standard alternative names count. This is a finite curated inventory, not an exhaustive list of every real-world possibility."
+    },
+    {
+      "id": "group-q080",
+      "prompt": "Name something people use to measure things.",
+      "family": "science",
+      "format": "Group-approved prompt",
+      "group": "group-approved-science",
+      "answerCount": 357,
+      "scope": "Named measuring instruments count; the quantity being measured can be distance, time, temperature or something else."
+    },
+    {
+      "id": "authored-corn-dishes",
+      "prompt": "Name a corn-based food or drink.",
+      "family": "food",
+      "format": "Everyday situations",
+      "group": "authored-situations",
+      "answerCount": 165,
+      "scope": "Corn or cornmeal must be a defining ingredient. Foods, drinks and edible corn products count; incidental corn-derived additives do not make every food corn-based."
+    },
+    {
+      "id": "fun-landforms",
+      "prompt": "Name a landform, natural feature or kind of landscape.",
+      "family": "world",
+      "format": "Broad category",
+      "group": "group-broad-world-features",
+      "answerCount": 592,
+      "scope": ""
+    },
+    {
+      "id": "authored-objects-with-hinges",
+      "prompt": "Name an object that commonly has a hinge.",
+      "family": "everyday",
+      "format": "Everyday observations",
+      "group": "authored-properties",
+      "answerCount": 133,
+      "scope": "A common hinged version of the object must exist. Sliding or roll-up versions do not prevent a genuinely hinged object from counting."
+    },
+    {
+      "id": "authored-queen-songs",
+      "prompt": "Name a song by Queen.",
       "family": "music",
       "format": "Songs by one artist",
       "group": "authored-whole-artist-catalog",
-      "answerCount": 190,
-      "scope": "Released recordings credited to Lady Gaga count, including collaborations, features and released covers. Writing or production credit alone does not count. Different versions share one answer."
+      "answerCount": 207,
+      "scope": "Released recordings credited to Queen count, including collaborations, features and released covers. Writing or production credit alone does not count. Different versions share one answer."
+    },
+    {
+      "id": "group-q021",
+      "prompt": "Name a team from the NFL, NBA, MLB, NHL, WNBA or MLS.",
+      "family": "sports",
+      "format": "Group-approved prompt",
+      "group": "group-approved-sports",
+      "answerCount": 184,
+      "scope": "Past and present teams from those six leagues count; familiar short team names would be accepted."
+    },
+    {
+      "id": "group-q076",
+      "prompt": "Name an animal people have used for work or transport.",
+      "family": "nature",
+      "format": "Group-approved prompt",
+      "group": "group-approved-nature",
+      "answerCount": 137,
+      "scope": "Documented domesticated or trained working animals count, past or present."
+    },
+    {
+      "id": "authored-overwatch-heroes",
+      "prompt": "Name a playable hero in Overwatch.",
+      "family": "gaming",
+      "format": "Characters & rosters",
+      "group": "authored-whole-roster",
+      "answerCount": 54,
+      "scope": "The full official Overwatch roster in the October 25, 2026 snapshot counts, including heroes introduced while it was called Overwatch 2. Skins and unplayable story characters do not."
+    },
+    {
+      "id": "authored-tea-brands",
+      "prompt": "Name a tea brand or tea company.",
+      "family": "food",
+      "format": "Brands",
+      "group": "authored-whole-brand-inventory",
+      "answerCount": 126,
+      "scope": "Real current or historical tea brands, tea companies and tea estates count. A tea variety, drink preparation or generic ingredient is not a company or brand. The inventory includes packaged-tea and ready-to-drink brands; owning a separate brand does not automatically make a generic parent-name guess eligible."
+    },
+    {
+      "id": "fun-scientists",
+      "prompt": "Name a scientist, mathematician, inventor or science communicator.",
+      "family": "science",
+      "format": "Broad category",
+      "group": "group-broad-people",
+      "answerCount": 815,
+      "scope": ""
+    },
+    {
+      "id": "authored-worship-building-kinds",
+      "prompt": "Name a type of building or place used for worship.",
+      "family": "world",
+      "format": "Objects, tools & materials",
+      "group": "authored-whole-object-concept",
+      "answerCount": 58,
+      "scope": "Types of religious worship building or built shrine count across religions. Individual named landmarks and a minister or deity alone do not."
+    },
+    {
+      "id": "group-movie-genre-action",
+      "prompt": "Name an action movie.",
+      "family": "culture",
+      "format": "Movies · one genre",
+      "group": "group-movie-genre",
+      "answerCount": 25981,
+      "scope": ""
+    },
+    {
+      "id": "distinct-facts-water-sports",
+      "prompt": "Name a water sport or recreational activity on or in water.",
+      "family": "sports",
+      "format": "Everyday & world knowledge",
+      "group": "distinct-authored-facts",
+      "answerCount": 54,
+      "scope": "Named examples and standard alternative names count. This is a finite curated inventory, not an exhaustive list of every real-world possibility."
+    },
+    {
+      "id": "group-music-k-pop-artist",
+      "prompt": "Name an artist associated with k-pop music.",
+      "family": "music",
+      "format": "Artists · one genre",
+      "group": "group-music-genre-artist",
+      "answerCount": 405,
+      "scope": ""
+    },
+    {
+      "id": "authored-whale-dolphin-porpoise-kinds",
+      "prompt": "Name a kind of whale, dolphin or porpoise.",
+      "family": "nature",
+      "format": "Animal kinds",
+      "group": "authored-whole-taxonomic-group",
+      "answerCount": 107,
+      "scope": "Living and recently extinct species in the Mammal Diversity Database, plus established named animal groups, count. English names, documented scientific names and genuine public synonyms count. Prehistoric fossil-only species are outside this current-species inventory."
+    },
+    {
+      "id": "group-steam-stealth",
+      "prompt": "Name a game on Steam tagged “Stealth”.",
+      "family": "gaming",
+      "format": "Steam · one tag",
+      "group": "group-steam-single-tag",
+      "answerCount": 2478,
+      "scope": ""
+    },
+    {
+      "id": "authored-astronauts-cosmonauts",
+      "prompt": "Name a real astronaut or cosmonaut.",
+      "family": "science",
+      "format": "Names & categories",
+      "group": "authored-whole-concept",
+      "answerCount": 687,
+      "scope": "Professional astronauts, cosmonauts and taikonauts worldwide, past or present, count, including people selected for professional astronaut training even if they never flew. Private-company professional astronauts and payload specialists count; celebrity passengers and fictional characters are not automatically astronauts."
+    },
+    {
+      "id": "group-q068",
+      "prompt": "Name a fruit used in a sweet dessert.",
+      "family": "food",
+      "format": "Group-approved prompt",
+      "group": "group-approved-food",
+      "answerCount": 143,
+      "scope": "Fresh, dried or cooked fruit in an established dessert qualifies."
+    },
+    {
+      "id": "group-q043",
+      "prompt": "Name an actor who appears in a Marvel Cinematic Universe movie.",
+      "family": "culture",
+      "format": "Group-approved prompt",
+      "group": "group-approved-culture",
+      "answerCount": 300,
+      "scope": "Released MCU feature films count; voice and motion-capture performances count too."
+    },
+    {
+      "id": "authored-philadelphia-eagles-players",
+      "prompt": "Name a player who has been on the Philadelphia Eagles franchise roster.",
+      "family": "sports",
+      "format": "Players by franchise",
+      "group": "authored-whole-nfl-franchise-roster",
+      "answerCount": 2141,
+      "scope": "Past or present roster membership for this franchise through the retained 2026 snapshot counts, including its earlier names/locations and NFL, AFL or AAFC membership where applicable. Offseason and practice squads count. An unrelated former team sharing the same city or code does not. The current franchise rules and captured seasons are retained for source review."
+    },
+    {
+      "id": "authored-color-names",
+      "prompt": "Name a color or a named shade.",
+      "family": "everyday",
+      "format": "Colors & shades",
+      "group": "authored-whole-color-inventory",
+      "answerCount": 1138,
+      "scope": "Recognized English color names and published named shades count, including named pigments, Crayola colors and standard CSS color keywords. Regional spellings and ordinary synonyms share one answer. Patterns are not a single color. Different standard definitions of the same ordinary name do not create extra answers."
+    },
+    {
+      "id": "catalog-genre-clean",
+      "prompt": "Name a musical genre or subgenre.",
+      "family": "music",
+      "format": "Broad category",
+      "group": "group-broad-music-genres",
+      "answerCount": 6327,
+      "scope": ""
+    },
+    {
+      "id": "group-q002",
+      "prompt": "Name a video game where you can drive a car or kart.",
+      "family": "gaming",
+      "format": "Group-approved prompt",
+      "group": "group-approved-gaming",
+      "answerCount": 1891,
+      "scope": "The driving must be part of the unmodded game, not a fan modification."
+    },
+    {
+      "id": "group-q085",
+      "prompt": "Name a chemical element used in everyday products.",
+      "family": "science",
+      "format": "Group-approved prompt",
+      "group": "group-approved-science",
+      "answerCount": 86,
+      "scope": "There must be a documented consumer, industrial or medical use; exact product names are not required."
+    },
+    {
+      "id": "distinct-facts-landlocked-countries",
+      "prompt": "Name a landlocked country.",
+      "family": "world",
+      "format": "Everyday & world knowledge",
+      "group": "distinct-authored-facts",
+      "answerCount": 45,
+      "scope": "Named examples and standard alternative names count. This is a finite curated inventory, not an exhaustive list of every real-world possibility."
+    },
+    {
+      "id": "group-q070",
+      "prompt": "Name an animal that changes color.",
+      "family": "nature",
+      "format": "Group-approved prompt",
+      "group": "group-approved-nature",
+      "answerCount": 140,
+      "scope": "Rapid camouflage and seasonal changes both count."
+    },
+    {
+      "id": "group-q034",
+      "prompt": "Name a movie based on a video game.",
+      "family": "culture",
+      "format": "Group-approved prompt",
+      "group": "group-approved-culture",
+      "answerCount": 270,
+      "scope": "Released feature films count, including animation; a game based on a movie is the reverse and does not qualify."
+    },
+    {
+      "id": "discovery-nba-teams",
+      "prompt": "Name an NBA team.",
+      "family": "sports",
+      "format": "Broad category",
+      "group": "group-broad-discovery-sports-teams",
+      "answerCount": 30,
+      "scope": ""
+    },
+    {
+      "id": "authored-keyboard-instruments",
+      "prompt": "Name a musical instrument with a keyboard.",
+      "family": "music",
+      "format": "Names & categories",
+      "group": "authored-whole-concept",
+      "answerCount": 4631,
+      "scope": "Recognized keyboard-instrument types and documented named keyboard instruments or models count. Keys and buttons form the musical playing interface; having ordinary valves or attaching an external controller does not automatically qualify another instrument."
+    },
+    {
+      "id": "authored-cooking-techniques",
+      "prompt": "Name a cooking or food-preparation technique.",
+      "family": "food",
+      "format": "Cooking & ingredients",
+      "group": "authored-whole-familiar-food-concept",
+      "answerCount": 186,
+      "scope": "Recognized techniques for cooking, preparing, cutting, mixing, baking or preserving food count. Real public verb/noun forms share an answer. An ingredient, utensil, finished dish or desired texture alone is not a technique."
+    },
+    {
+      "id": "authored-pokemon-types",
+      "prompt": "Name a Pokémon type.",
+      "family": "gaming",
+      "format": "Game rules & objects",
+      "group": "authored-whole-game-concept",
+      "answerCount": 19,
+      "scope": "The 18 standard main-series types and the special Stellar Tera type count. The unused Bird/??? data labels and the spin-off Shadow classification are outside this explicitly main-series type list."
+    },
+    {
+      "id": "authored-caves",
+      "prompt": "Name a real cave or cave system.",
+      "family": "world",
+      "format": "Names & categories",
+      "group": "authored-whole-concept",
+      "answerCount": 5345,
+      "scope": "Real named caves, cave systems, rock shelters and historical rock-cut cave complexes count, including show caves. An ordinary mine or tunnel does not automatically count; fictional caves are excluded."
+    },
+    {
+      "id": "authored-inflatable-objects",
+      "prompt": "Name an object designed to be inflated.",
+      "family": "everyday",
+      "format": "Everyday situations",
+      "group": "authored-situations",
+      "answerCount": 78,
+      "scope": "Common inflatable objects and named inflatable equipment types count, whether filled with air, helium or another gas. Objects merely containing an empty cavity do not qualify."
+    },
+    {
+      "id": "authored-science-branches",
+      "prompt": "Name a scientific discipline or academic field.",
+      "family": "science",
+      "format": "Science & academic fields",
+      "group": "authored-whole-natural-science-concept",
+      "answerCount": 455,
+      "scope": "Recognized sciences and academic research fields count, including mathematics, social sciences, linguistics, medicine and engineering. Subdisciplines and documented historical names count. A result, isolated technique or pseudoscientific practice is not itself an academic discipline."
+    },
+    {
+      "id": "authored-toy-story-characters",
+      "prompt": "Name a character from the Toy Story franchise.",
+      "family": "culture",
+      "format": "Characters & rosters",
+      "group": "authored-whole-franchise-characters",
+      "answerCount": 232,
+      "scope": "Named or distinctly identified characters from Toy Story films, shorts, series and the Lightyear spin-off count. Established collective character identities such as the Aliens count. Voice actors, film titles and descriptive organizational headings do not count."
+    },
+    {
+      "id": "authored-musical-duos",
+      "prompt": "Name a music act known as a duo.",
+      "family": "music",
+      "format": "Names & categories",
+      "group": "authored-whole-concept",
+      "answerCount": 2989,
+      "scope": "Current and historical musical duos count. Ordinary backing musicians do not change a two-person act into a larger group. Two solo artists who collaborated once are not automatically a named duo."
+    },
+    {
+      "id": "authored-foods-with-custard",
+      "prompt": "Name a type of custard or a dessert made with custard.",
+      "family": "food",
+      "format": "Everyday observations",
+      "group": "authored-properties",
+      "answerCount": 112,
+      "scope": "Named custards and desserts made using custard or custard powder count. A cream-only filling does not qualify merely because it is called cream."
+    },
+    {
+      "id": "distinct-lol-champions",
+      "prompt": "Name a champion in League of Legends.",
+      "family": "gaming",
+      "format": "Game objects & characters",
+      "group": "distinct-game-objects",
+      "answerCount": 173,
+      "scope": "Base-game and recorded expansion names count. Versions of the same named object count once."
+    },
+    {
+      "id": "authored-los-angeles-clippers-players",
+      "prompt": "Name a player who has played for the Los Angeles Clippers.",
+      "family": "sports",
+      "format": "Players by franchise",
+      "group": "authored-whole-franchise-roster",
+      "answerCount": 513,
+      "scope": "At least one first-team NBA, BAA or ABA game for this franchise counts, past or present. Coaches, draft rights and preseason-only appearances do not. Buffalo Braves and San Diego Clippers seasons also count."
     },
     {
       "id": "group-q092",
@@ -558,12 +881,39 @@
       "scope": "A visible star on the official national flag qualifies; tiny stars inside a coat of arms count too."
     },
     {
-      "id": "var-semantic-building-n-01",
-      "prompt": "Name a type of building.",
-      "family": "everyday",
+      "id": "distinct-facts-lab-tools",
+      "prompt": "Name a tool, instrument or piece of glassware used in a science laboratory.",
+      "family": "science",
+      "format": "Everyday & world knowledge",
+      "group": "distinct-authored-facts",
+      "answerCount": 77,
+      "scope": "Named examples and standard alternative names count. This is a finite curated inventory, not an exhaustive list of every real-world possibility."
+    },
+    {
+      "id": "authored-fungus-kinds",
+      "prompt": "Name a type of mushroom or other fungus.",
+      "family": "nature",
+      "format": "Animals & nature",
+      "group": "authored-whole-natural-science-concept",
+      "answerCount": 306,
+      "scope": "Recognized named fungi, mushroom kinds, molds, mildews and yeasts count. Common or scientific names are accepted. Bacteria, viruses and modern non-fungal slime/water molds do not count; diseases alone are not organism names."
+    },
+    {
+      "id": "catalog-instrument-types",
+      "prompt": "Name a type of musical instrument. Named instrument families count.",
+      "family": "music",
       "format": "Broad category",
-      "group": "group-broad-semantic-artifact",
-      "answerCount": 280,
+      "group": "group-broad-music-instruments",
+      "answerCount": 5134,
+      "scope": ""
+    },
+    {
+      "id": "fun-film-comedy",
+      "prompt": "Name a comedy movie.",
+      "family": "culture",
+      "format": "Broad category",
+      "group": "group-broad-films",
+      "answerCount": 9859,
       "scope": ""
     },
     {
@@ -576,373 +926,22 @@
       "scope": ""
     },
     {
-      "id": "group-q085",
-      "prompt": "Name a chemical element used in everyday products.",
-      "family": "science",
-      "format": "Group-approved prompt",
-      "group": "group-approved-science",
-      "answerCount": 86,
-      "scope": "There must be a documented consumer, industrial or medical use; exact product names are not required."
-    },
-    {
-      "id": "authored-sports-balls",
-      "prompt": "Name a type of ball used in a sport, game or athletic training.",
-      "family": "sports",
-      "format": "Objects, tools & materials",
-      "group": "authored-whole-object-concept",
-      "answerCount": 54,
-      "scope": "Named balls used in sports, games or athletic training count, including particular game-ball designs. Pucks, shuttlecocks and punching bags are not balls."
-    },
-    {
-      "id": "group-show-genre-mystery",
-      "prompt": "Name a mystery TV or streaming show.",
-      "family": "culture",
-      "format": "TV · one genre",
-      "group": "group-show-genre",
-      "answerCount": 3065,
-      "scope": ""
-    },
-    {
-      "id": "authored-pokemon-abilities",
-      "prompt": "Name a Pokémon Ability.",
-      "family": "gaming",
-      "format": "authored-whole-game-concept",
-      "group": "authored-whole-game-concept",
-      "answerCount": 373,
-      "scope": "Named passive Pokémon Abilities from the core games and Pokémon Conquest count. Moves, types, held items and generic trainer actions are separate concepts."
-    },
-    {
-      "id": "authored-reefs-atolls",
-      "prompt": "Name a real named reef or atoll.",
-      "family": "world",
-      "format": "Names & categories",
-      "group": "authored-whole-concept",
-      "answerCount": 10067,
-      "scope": "Real named reefs and atolls count, including coral and rocky reefs. A plain island or river is not automatically a reef or atoll."
-    },
-    {
-      "id": "authored-chair-styles",
-      "prompt": "Name a type of chair or stool.",
+      "id": "authored-physical-barriers",
+      "prompt": "Name a kind of physical barrier.",
       "family": "everyday",
       "format": "Objects, tools & materials",
       "group": "authored-whole-object-concept",
-      "answerCount": 75,
-      "scope": "Recognizable chair and seated-stool designs count, past or present. Benches, couches, named individual thrones and the person chairing a meeting do not."
+      "answerCount": 88,
+      "scope": "Physical barriers such as walls, doors, fences, gates and protective barriers count. Figurative barriers and software do not."
     },
     {
-      "id": "distinct-facts-pollinators",
-      "prompt": "Name a kind of animal that can pollinate flowers.",
-      "family": "nature",
-      "format": "Everyday & world knowledge",
-      "group": "distinct-authored-facts",
-      "answerCount": 49,
-      "scope": "Named examples and standard alternative names count. This is a finite curated inventory, not an exhaustive list of every real-world possibility."
-    },
-    {
-      "id": "authored-lamp-lighting-kinds",
-      "prompt": "Name a type of lamp or lighting fixture.",
-      "family": "science",
-      "format": "Objects, tools & materials",
-      "group": "authored-whole-object-concept",
-      "answerCount": 78,
-      "scope": "Real lamps, lighting fixtures and manufactured light sources count, including candles and historical lighting. Fictional individual lamps, stars and naturally glowing organisms do not."
-    },
-    {
-      "id": "authored-foods-with-custard",
-      "prompt": "Name a type of custard or a dessert made with custard.",
-      "family": "food",
-      "format": "Everyday observations",
-      "group": "authored-properties",
-      "answerCount": 112,
-      "scope": "Named custards and desserts made using custard or custard powder count. A cream-only filling does not qualify merely because it is called cream."
-    },
-    {
-      "id": "catalog-dances",
-      "prompt": "Name a dance style, traditional dance, or named social dance.",
-      "family": "music",
-      "format": "Broad category",
-      "group": "group-broad-dance",
-      "answerCount": 3073,
-      "scope": ""
-    },
-    {
-      "id": "group-q028",
-      "prompt": "Name a player position in a team sport.",
-      "family": "sports",
-      "format": "Group-approved prompt",
-      "group": "group-approved-sports",
-      "answerCount": 111,
-      "scope": "Named playing positions from any established team sport count; shared names are one answer."
-    },
-    {
-      "id": "authored-enderman-carry-blocks",
-      "prompt": "Name a block an Enderman can pick up in Minecraft.",
+      "id": "authored-minecraft-furnace-fuel",
+      "prompt": "Name an item that can be used as furnace fuel in Minecraft.",
       "family": "gaming",
       "format": "Game rules & objects",
       "group": "authored-game-mechanics",
-      "answerCount": 45,
-      "scope": "The actual block-pickup rule counts, including flowers. Endermen may pick up only certain blocks even if the player can carry other blocks. Official Java 26.3 recipe, tag or component data defines the inventory; modded behavior does not count."
-    },
-    {
-      "id": "authored-art-movements-styles",
-      "prompt": "Name an art movement or recognized visual-art style.",
-      "family": "culture",
-      "format": "Objects, tools & materials",
-      "group": "authored-whole-object-concept",
-      "answerCount": 237,
-      "scope": "Recognized visual-art movements, schools and historical styles count, including architectural and moving-image art movements. An individual artist, work, generic medium or music genre alone does not count."
-    },
-    {
-      "id": "authored-inflatable-objects",
-      "prompt": "Name an object designed to be inflated.",
-      "family": "everyday",
-      "format": "Everyday situations",
-      "group": "authored-situations",
-      "answerCount": 78,
-      "scope": "Common inflatable objects and named inflatable equipment types count, whether filled with air, helium or another gas. Objects merely containing an empty cavity do not qualify."
-    },
-    {
-      "id": "authored-underground-food-crops",
-      "prompt": "Name a food crop with an edible part that normally grows underground.",
-      "family": "nature",
-      "format": "Everyday observations",
-      "group": "authored-properties",
-      "answerCount": 85,
-      "scope": "Roots, tubers, rhizomes, bulbs, corms and underground fruits count. Named crop kinds and established edible varieties count. A normal above-ground fruit does not count merely because the plant has roots."
-    },
-    {
-      "id": "fun-water-world",
-      "prompt": "Name a river, lake, sea, ocean, gulf, bay or strait.",
-      "family": "world",
-      "format": "Broad category",
-      "group": "group-broad-world-water",
-      "answerCount": 375,
-      "scope": ""
-    },
-    {
-      "id": "authored-leaf-wrapped-food",
-      "prompt": "Name a named dish cooked or wrapped in plant leaves.",
-      "family": "food",
-      "format": "Everyday situations",
-      "group": "authored-situations",
-      "answerCount": 60,
-      "scope": "Traditional leaf-wrapped food parcels, dishes cooked between leaves or in leaf-lined containers, and dishes traditionally sold wrapped in leaves count. Food merely set on a leaf plate without leaf cooking or wrapping does not qualify."
-    },
-    {
-      "id": "authored-mathematics-branches",
-      "prompt": "Name a branch or field of mathematics.",
-      "family": "science",
-      "format": "authored-whole-natural-science-concept",
-      "group": "authored-whole-natural-science-concept",
-      "answerCount": 98,
-      "scope": "Recognized mathematical branches, subfields and established mathematical research disciplines count. Both pure and applied mathematics count. Individual formulas, symbols, isolated theorems and unrelated school subjects do not by themselves name a branch."
-    },
-    {
-      "id": "group-q002",
-      "prompt": "Name a video game where you can drive a car or kart.",
-      "family": "gaming",
-      "format": "Group-approved prompt",
-      "group": "group-approved-gaming",
-      "answerCount": 1891,
-      "scope": "The driving must be part of the unmodded game, not a fan modification."
-    },
-    {
-      "id": "catalog-mythical-creature-types",
-      "prompt": "Name a type of creature from mythology, folklore, or fantasy.",
-      "family": "culture",
-      "format": "Broad category",
-      "group": "group-broad-mythology",
-      "answerCount": 788,
-      "scope": ""
-    },
-    {
-      "id": "authored-motorsport-disciplines",
-      "prompt": "Name a motorsport or established motor-racing series.",
-      "family": "sports",
-      "format": "Everyday situations",
-      "group": "authored-situations",
-      "answerCount": 112,
-      "scope": "Recognized motor-vehicle competitions and racing series count, including cars, motorcycles, boats, snowmobiles and powered aircraft. Drivers, vehicle manufacturers and unpowered sports do not qualify by themselves."
-    },
-    {
-      "id": "group-q074",
-      "prompt": "Name an animal that lays eggs.",
-      "family": "nature",
-      "format": "Group-approved prompt",
-      "group": "group-approved-nature",
-      "answerCount": 11547,
-      "scope": "Named animal groups and species qualify; males do not have to lay the eggs themselves."
-    },
-    {
-      "id": "group-q096",
-      "prompt": "Name an everyday object with wheels.",
-      "family": "everyday",
-      "format": "Group-approved prompt",
-      "group": "group-approved-everyday",
-      "answerCount": 131,
-      "scope": "Ordinary objects and vehicles count; named types count without needing a brand."
-    },
-    {
-      "id": "authored-keyboard-instruments",
-      "prompt": "Name a musical instrument with a keyboard.",
-      "family": "music",
-      "format": "Names & categories",
-      "group": "authored-whole-concept",
-      "answerCount": 4631,
-      "scope": "Recognized keyboard-instrument types and documented named keyboard instruments or models count. Keys and buttons form the musical playing interface; having ordinary valves or attaching an external controller does not automatically qualify another instrument."
-    },
-    {
-      "id": "group-q079",
-      "prompt": "Name a named object in our Solar System.",
-      "family": "science",
-      "format": "Group-approved prompt",
-      "group": "group-approved-science",
-      "answerCount": 1213,
-      "scope": "Planets, dwarf planets, moons, named asteroids and named comets count; stars beyond the Sun do not."
-    },
-    {
-      "id": "authored-watercraft-kinds",
-      "prompt": "Name a type of boat, ship or other watercraft.",
-      "family": "world",
-      "format": "Objects, tools & materials",
-      "group": "authored-whole-object-concept",
-      "answerCount": 208,
-      "scope": "Kinds of boat, ship, raft or other vessel designed to travel on water or underwater count, past or present. Individual named vessels, wrecks, ice-only vehicles and descriptors of condition alone do not."
-    },
-    {
-      "id": "authored-nuts-seeds",
-      "prompt": "Name a culinary nut or a seed people eat.",
-      "family": "food",
-      "format": "authored-whole-familiar-food-concept",
-      "group": "authored-whole-familiar-food-concept",
-      "answerCount": 174,
-      "scope": "Culinary nuts and food seeds count, including grains, pulses, spice seeds and nuts that are not botanical nuts. Traditional foods that require preparation count. A named food seed or nut group counts; a botanical class, tree alone, finished sauce or book title does not."
-    },
-    {
-      "id": "discovery-mlb-teams",
-      "prompt": "Name a current MLB team (2026).",
-      "family": "sports",
-      "format": "Broad category",
-      "group": "group-broad-discovery-sports-teams",
-      "answerCount": 30,
-      "scope": ""
-    },
-    {
-      "id": "authored-printing-techniques",
-      "prompt": "Name a printmaking or printing technique.",
-      "family": "culture",
-      "format": "Objects, tools & materials",
-      "group": "authored-whole-object-concept",
-      "answerCount": 51,
-      "scope": "Recognized methods of producing printed images or text and artistic printmaking methods count. Named additive manufacturing/3D printing methods also count. A printer brand, image subject or unrelated craft alone is not a technique."
-    },
-    {
-      "id": "group-q097",
-      "prompt": "Name a way to pay for something without physical cash.",
-      "family": "everyday",
-      "format": "Group-approved prompt",
-      "group": "group-approved-everyday",
-      "answerCount": 160,
-      "scope": "Payment methods, payment networks and named payment services count."
-    },
-    {
-      "id": "authored-fungus-kinds",
-      "prompt": "Name a type of mushroom or other fungus.",
-      "family": "nature",
-      "format": "authored-whole-natural-science-concept",
-      "group": "authored-whole-natural-science-concept",
-      "answerCount": 306,
-      "scope": "Recognized named fungi, mushroom kinds, molds, mildews and yeasts count. Common or scientific names are accepted. Bacteria, viruses and modern non-fungal slime/water molds do not count; diseases alone are not organism names."
-    },
-    {
-      "id": "authored-ed-sheeran-songs",
-      "prompt": "Name a song by Ed Sheeran.",
-      "family": "music",
-      "format": "Songs by one artist",
-      "group": "authored-whole-artist-catalog",
-      "answerCount": 182,
-      "scope": "Released recordings credited to Ed Sheeran count, including collaborations, features and released covers. Writing or production credit alone does not count. Different versions share one answer."
-    },
-    {
-      "id": "group-steam-space",
-      "prompt": "Name a game on Steam tagged “Space”.",
-      "family": "gaming",
-      "format": "Steam · one tag",
-      "group": "group-steam-single-tag",
-      "answerCount": 4612,
-      "scope": ""
-    },
-    {
-      "id": "group-q060",
-      "prompt": "Name a food commonly served on a stick.",
-      "family": "food",
-      "format": "Group-approved prompt",
-      "group": "group-approved-food",
-      "answerCount": 130,
-      "scope": "Named foods and established skewer dishes count, including sweets."
-    },
-    {
-      "id": "authored-reservoirs",
-      "prompt": "Name a real reservoir or artificial lake.",
-      "family": "world",
-      "format": "Names & categories",
-      "group": "authored-whole-concept",
-      "answerCount": 81396,
-      "scope": "Named reservoirs and artificial lakes count, including historical and seasonally dry reservoirs. A naturally formed lake does not automatically become a reservoir just because it has a regulated outlet."
-    },
-    {
-      "id": "authored-heist-films",
-      "prompt": "Name a heist movie.",
-      "family": "culture",
-      "format": "Names & categories",
-      "group": "authored-whole-concept",
-      "answerCount": 577,
-      "scope": "Films built around a robbery, theft, con or organized caper count, including comedies, animated movies and shorts. Television series, directors and a film with only an unrelated passing theft do not automatically count."
-    },
-    {
-      "id": "authored-san-antonio-spurs-players",
-      "prompt": "Name a player who has played for the San Antonio Spurs.",
-      "family": "sports",
-      "format": "Players by franchise",
-      "group": "authored-whole-franchise-roster",
-      "answerCount": 469,
-      "scope": "At least one first-team NBA, BAA or ABA game for this franchise counts, past or present. Coaches, draft rights and preseason-only appearances do not. Dallas Chaparrals and Texas Chaparrals ABA seasons also count."
-    },
-    {
-      "id": "authored-sewing-kit",
-      "prompt": "Name an item used for sewing or mending clothes.",
-      "family": "everyday",
-      "format": "Everyday situations",
-      "group": "authored-situations",
-      "answerCount": 109,
-      "scope": "Hand-sewing, machine-sewing and dressmaking tools and supplies count. A finished garment alone is not sewing equipment."
-    },
-    {
-      "id": "group-music-pop-artist",
-      "prompt": "Name an artist associated with pop music.",
-      "family": "music",
-      "format": "Artists · one genre",
-      "group": "group-music-genre-artist",
-      "answerCount": 586,
-      "scope": ""
-    },
-    {
-      "id": "distinct-facts-flightless-birds",
-      "prompt": "Name a bird that cannot normally fly, including extinct flightless birds.",
-      "family": "nature",
-      "format": "Everyday & world knowledge",
-      "group": "distinct-authored-facts",
-      "answerCount": 58,
-      "scope": "Named examples and standard alternative names count. This is a finite curated inventory, not an exhaustive list of every real-world possibility."
-    },
-    {
-      "id": "fun-inventions",
-      "prompt": "Name an invention, tool or piece of technology.",
-      "family": "science",
-      "format": "Broad category",
-      "group": "group-broad-technology",
-      "answerCount": 8863,
-      "scope": ""
+      "answerCount": 347,
+      "scope": "Items actually accepted in the fuel slot count, rather than anything that merely looks flammable. Their fuel value need not be the same. Official Java 26.3 recipe, tag or component data defines the inventory; modded behavior does not count."
     }
   ]
 }
