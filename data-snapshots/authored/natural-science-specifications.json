@@ -1,0 +1,2066 @@
+{
+  "questions": [
+    {
+      "key": "fungus-kinds",
+      "root": "fungus.n.01",
+      "family": "nature",
+      "prompt": "Name a type of mushroom or other fungus.",
+      "familiar": [
+        "Mushroom",
+        "Mold",
+        "Yeast",
+        "Mildew",
+        "Truffle",
+        "Puffball",
+        "Morel",
+        "Chanterelle",
+        "Shiitake",
+        "Oyster mushroom",
+        "Button mushroom",
+        "Portobello",
+        "Cremini",
+        "Enoki",
+        "Lion’s mane",
+        "Reishi",
+        "Chaga",
+        "Turkey tail",
+        "Fly agaric",
+        "Death cap",
+        "Destroying angel",
+        "Bolete",
+        "Porcini",
+        "Wood ear",
+        "Shaggy mane",
+        "Ink cap",
+        "Stinkhorn",
+        "Earthstar",
+        "Coral fungus",
+        "Cauliflower fungus",
+        "Chicken of the woods",
+        "Hen of the woods",
+        "Maitake",
+        "Cordyceps",
+        "Penicillium",
+        "Aspergillus",
+        "Candida",
+        "Saccharomyces",
+        "Baker’s yeast",
+        "Brewer’s yeast",
+        "Black truffle",
+        "White truffle",
+        "Witch’s butter"
+      ],
+      "exclude": [
+        "E. coli",
+        "Coronavirus",
+        "Slime mold"
+      ],
+      "rare": "Veiled polypore",
+      "scope": "Recognized named fungi, mushroom kinds, molds, mildews and yeasts count. Common or scientific names are accepted. Bacteria, viruses and modern non-fungal slime/water molds do not count; diseases alone are not organism names.",
+      "references": [
+        "https://wordnet.princeton.edu/",
+        "https://www.nhm.ac.uk/discover/what-are-fungi.html",
+        "https://extension.umaine.edu/ipm/ipddl/publications/5065e/",
+        "https://www.fs.usda.gov/Internet/FSE_DOCUMENTS/fseprd1180963.pdf",
+        "https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=445424"
+      ],
+      "holds": {},
+      "aliasHolds": {},
+      "renames": {
+        "Jew's-ear": "Wood ear",
+        "shaggymane": "Shaggy mane",
+        "inky cap": "Ink cap",
+        "witches' butter": "Witch’s butter"
+      },
+      "merges": [
+        {
+          "from": "Volvaria bombycina",
+          "into": "Volvariella bombycina"
+        },
+        {
+          "from": "Winter mushroom",
+          "into": "Enoki"
+        }
+      ],
+      "additions": [
+        {
+          "label": "Button mushroom",
+          "aliases": [
+            "Agaricus bisporus"
+          ]
+        },
+        {
+          "label": "Portobello",
+          "aliases": [
+            "Portabella",
+            "Portobello mushroom"
+          ]
+        },
+        {
+          "label": "Cremini",
+          "aliases": [
+            "Crimini",
+            "Baby bella"
+          ]
+        },
+        {
+          "label": "Enoki",
+          "aliases": [
+            "Enokitake",
+            "Flammulina velutipes"
+          ]
+        },
+        {
+          "label": "Lion’s mane",
+          "aliases": [
+            "Hericium erinaceus",
+            "Lions mane mushroom"
+          ]
+        },
+        {
+          "label": "Reishi",
+          "aliases": [
+            "Lingzhi",
+            "Ganoderma lingzhi"
+          ]
+        },
+        {
+          "label": "Chaga",
+          "aliases": [
+            "Inonotus obliquus"
+          ]
+        },
+        {
+          "label": "Turkey tail",
+          "aliases": [
+            "Trametes versicolor",
+            "Coriolus versicolor"
+          ]
+        },
+        {
+          "label": "Chicken of the woods",
+          "aliases": [
+            "Laetiporus"
+          ]
+        },
+        {
+          "label": "Cauliflower fungus",
+          "aliases": [
+            "Sparassis crispa"
+          ]
+        },
+        {
+          "label": "Cordyceps",
+          "aliases": []
+        },
+        {
+          "label": "Penicillium",
+          "aliases": []
+        },
+        {
+          "label": "Aspergillus",
+          "aliases": []
+        },
+        {
+          "label": "Saccharomyces",
+          "aliases": []
+        },
+        {
+          "label": "Black truffle",
+          "aliases": [
+            "Tuber melanosporum"
+          ]
+        },
+        {
+          "label": "White truffle",
+          "aliases": [
+            "Tuber magnatum"
+          ]
+        },
+        {
+          "label": "Veiled polypore",
+          "aliases": [
+            "Cryptoporus volvatus",
+            "Pouch fungus"
+          ]
+        },
+        {
+          "label": "Hen-of-the-woods",
+          "aliases": [
+            "Maitake"
+          ]
+        },
+        {
+          "label": "Boletus edulis",
+          "aliases": [
+            "Porcini",
+            "Cep",
+            "Penny bun"
+          ]
+        },
+        {
+          "label": "Wood ear",
+          "aliases": [
+            "Auricularia auricula-judae"
+          ]
+        }
+      ],
+      "synsetHolds": {
+        "cellular_slime_mold.n.01": "Modern protist/oomycete/Rhizaria classification is outside true fungi.",
+        "clubroot_fungus.n.01": "Modern protist/oomycete/Rhizaria classification is outside true fungi.",
+        "dictostylium.n.01": "Modern protist/oomycete/Rhizaria classification is outside true fungi.",
+        "downy_mildew.n.01": "Modern protist/oomycete/Rhizaria classification is outside true fungi.",
+        "onion_mildew.n.01": "Modern protist/oomycete/Rhizaria classification is outside true fungi.",
+        "phytophthora_citrophthora.n.01": "Modern protist/oomycete/Rhizaria classification is outside true fungi.",
+        "phytophthora_infestans.n.01": "Modern protist/oomycete/Rhizaria classification is outside true fungi.",
+        "potato_fungus.n.01": "Modern protist/oomycete/Rhizaria classification is outside true fungi.",
+        "pythium.n.01": "Modern protist/oomycete/Rhizaria classification is outside true fungi.",
+        "slime_mold.n.01": "Modern protist/oomycete/Rhizaria classification is outside true fungi.",
+        "true_slime_mold.n.01": "Modern protist/oomycete/Rhizaria classification is outside true fungi.",
+        "water_mold.n.01": "Modern protist/oomycete/Rhizaria classification is outside true fungi.",
+        "white_rust.n.01": "Modern protist/oomycete/Rhizaria classification is outside true fungi.",
+        "true_fungus.n.01": "Restates the question category, not a particular named fungal kind."
+      },
+      "synsetRenames": {
+        "agaric.n.01": "Willow bracket",
+        "bunt.n.03": "Tilletia foetida",
+        "bunt.n.04": "Tilletia caries"
+      },
+      "aliasOwners": {
+        "bunt": "Tilletia caries"
+      }
+    },
+    {
+      "key": "reptile-kinds",
+      "root": "reptile.n.01",
+      "family": "nature",
+      "prompt": "Name a kind of reptile.",
+      "familiar": [
+        "Snake",
+        "Lizard",
+        "Turtle",
+        "Tortoise",
+        "Crocodile",
+        "Alligator",
+        "Caiman",
+        "Gharial",
+        "Tuatara",
+        "Gecko",
+        "Iguana",
+        "Chameleon",
+        "Skink",
+        "Monitor lizard",
+        "Komodo dragon",
+        "Bearded dragon",
+        "Anole",
+        "Basilisk",
+        "Gila monster",
+        "Legless lizard",
+        "Slow worm",
+        "Python",
+        "Boa",
+        "Cobra",
+        "Viper",
+        "Rattlesnake",
+        "Kingsnake",
+        "Garter snake",
+        "Coral snake",
+        "Sea snake",
+        "Mamba",
+        "Anaconda",
+        "Hognose snake",
+        "Corn snake",
+        "Ball python",
+        "Leopard gecko",
+        "Crested gecko",
+        "Blue-tongued skink",
+        "Green iguana",
+        "Box turtle",
+        "Snapping turtle",
+        "Sea turtle",
+        "Softshell turtle",
+        "Painted turtle",
+        "Red-eared slider",
+        "Galápagos tortoise",
+        "Tyrannosaurus rex",
+        "Stegosaurus",
+        "Plesiosaur",
+        "Ichthyosaur"
+      ],
+      "exclude": [
+        "Frog",
+        "Salamander",
+        "Penguin"
+      ],
+      "rare": "Rinkhals",
+      "scope": "Named reptile groups, species and established kinds count, living or extinct, including non-avian dinosaurs and extinct marine reptiles. Common and scientific names count. Birds and amphibians are outside this ordinary non-avian reptile scope.",
+      "references": [
+        "https://wordnet.princeton.edu/",
+        "https://www.nhm.ac.uk/discover/reptiles.html",
+        "https://www.fieldmuseum.org/page/explore/fossil-non-mammalian-synapsid-collection-field-museum",
+        "https://australian.museum/learn/animals/reptiles/",
+        "https://www.nhm.ac.uk/discover/slow-worms-most-unusual-lizards-in-britain.html"
+      ],
+      "holds": {},
+      "aliasHolds": {
+        "green snake": [
+          "grass snake"
+        ]
+      },
+      "renames": {
+        "ringhals": "Rinkhals",
+        "king snake": "Kingsnake",
+        "monitor": "Monitor lizard",
+        "gavial": "Gharial",
+        "common iguana": "Green iguana",
+        "stegosaur": "Stegosaurus",
+        "soft-shelled turtle": "Softshell turtle",
+        "slider": "Red-eared slider"
+      },
+      "merges": [
+        {
+          "from": "African crocodile",
+          "into": "Nile crocodile"
+        },
+        {
+          "from": "Asian crocodile",
+          "into": "Saltwater crocodile"
+        },
+        {
+          "from": "Blindworm",
+          "into": "Slow worm"
+        }
+      ],
+      "additions": [
+        {
+          "label": "Bearded dragon",
+          "aliases": [
+            "Pogona"
+          ]
+        },
+        {
+          "label": "Ball python",
+          "aliases": [
+            "Royal python",
+            "Python regius"
+          ]
+        },
+        {
+          "label": "Leopard gecko",
+          "aliases": [
+            "Eublepharis macularius"
+          ]
+        },
+        {
+          "label": "Crested gecko",
+          "aliases": [
+            "Correlophus ciliatus"
+          ]
+        },
+        {
+          "label": "Blue-tongued skink",
+          "aliases": [
+            "Blue tongue skink"
+          ]
+        },
+        {
+          "label": "Galápagos tortoise",
+          "aliases": [
+            "Galapagos tortoise"
+          ]
+        },
+        {
+          "label": "Anole",
+          "aliases": []
+        },
+        {
+          "label": "Slow worm",
+          "aliases": [
+            "Anguis fragilis"
+          ]
+        },
+        {
+          "label": "Saltwater crocodile",
+          "aliases": [
+            "Estuarine crocodile",
+            "Crocodylus porosus"
+          ]
+        },
+        {
+          "label": "Nile crocodile",
+          "aliases": [
+            "Crocodylus niloticus"
+          ]
+        },
+        {
+          "label": "Sulcata tortoise",
+          "aliases": [
+            "African spurred tortoise",
+            "Centrochelys sulcata"
+          ]
+        },
+        {
+          "label": "Russian tortoise",
+          "aliases": [
+            "Testudo horsfieldii"
+          ]
+        },
+        {
+          "label": "Hermann’s tortoise",
+          "aliases": [
+            "Testudo hermanni"
+          ]
+        },
+        {
+          "label": "Leopard tortoise",
+          "aliases": [
+            "Stigmochelys pardalis"
+          ]
+        },
+        {
+          "label": "Tokay gecko",
+          "aliases": [
+            "Gekko gecko"
+          ]
+        },
+        {
+          "label": "Gargoyle gecko",
+          "aliases": [
+            "Rhacodactylus auriculatus"
+          ]
+        },
+        {
+          "label": "Savannah monitor",
+          "aliases": [
+            "Varanus exanthematicus"
+          ]
+        },
+        {
+          "label": "Tegu",
+          "aliases": []
+        }
+      ],
+      "synsetHolds": {
+        "hoop_snake.n.01": "Mythological hoop-snake sense is not a biological reptile.",
+        "chronoperates_paradoxus.n.01": "Non-mammalian synapsid/stem-mammal classification is outside reptiles.",
+        "cynodont.n.01": "Non-mammalian synapsid/stem-mammal classification is outside reptiles.",
+        "dicynodont.n.01": "Non-mammalian synapsid/stem-mammal classification is outside reptiles.",
+        "dimetrodon.n.01": "Non-mammalian synapsid/stem-mammal classification is outside reptiles.",
+        "edaphosaurus.n.01": "Non-mammalian synapsid/stem-mammal classification is outside reptiles.",
+        "ictodosaur.n.01": "Non-mammalian synapsid/stem-mammal classification is outside reptiles.",
+        "pelycosaur.n.01": "Non-mammalian synapsid/stem-mammal classification is outside reptiles.",
+        "synapsid.n.01": "Non-mammalian synapsid/stem-mammal classification is outside reptiles.",
+        "therapsid.n.01": "Non-mammalian synapsid/stem-mammal classification is outside reptiles."
+      },
+      "synsetRenames": {
+        "asp.n.01": "Asp viper",
+        "asp.n.02": "Egyptian cobra",
+        "copperhead.n.02": "Lowland copperhead",
+        "water_moccasin.n.02": "North American water snake",
+        "green_snake.n.02": "North American green snake",
+        "coral_snake.n.01": "Old World coral snake",
+        "coral_snake.n.02": "New World coral snake"
+      },
+      "aliasOwners": {
+        "asp": "Asp viper",
+        "copperhead": "Copperhead",
+        "green snake": "North American green snake",
+        "coral snake": "New World coral snake",
+        "water moccasin": "Water moccasin",
+        "worm snake": "Thunder snake",
+        "ring snake": "Grass snake",
+        "sand viper": "Horned viper"
+      }
+    },
+    {
+      "key": "amphibian-kinds",
+      "root": "amphibian.n.03",
+      "family": "nature",
+      "prompt": "Name a kind of amphibian.",
+      "familiar": [
+        "Frog",
+        "Toad",
+        "Salamander",
+        "Newt",
+        "Axolotl",
+        "Caecilian",
+        "Tree frog",
+        "Bullfrog",
+        "Poison dart frog",
+        "Glass frog",
+        "Leopard frog",
+        "Wood frog",
+        "Marsh frog",
+        "Common frog",
+        "Green frog",
+        "African clawed frog",
+        "African dwarf frog",
+        "Surinam toad",
+        "Cane toad",
+        "Fire-bellied toad",
+        "Midwife toad",
+        "Spadefoot toad",
+        "Common toad",
+        "Tiger salamander",
+        "Spotted salamander",
+        "Fire salamander",
+        "Red salamander",
+        "Hellbender",
+        "Mudpuppy",
+        "Olm",
+        "Siren",
+        "Alpine newt",
+        "Smooth newt",
+        "Palmate newt",
+        "Crested newt",
+        "Eastern newt",
+        "Japanese giant salamander",
+        "Chinese giant salamander",
+        "Red-eyed tree frog",
+        "Pacman frog"
+      ],
+      "exclude": [
+        "Crocodile",
+        "Turtle",
+        "Lungfish"
+      ],
+      "rare": "Dicamptodon",
+      "scope": "Recognized amphibian groups and species count, living or extinct. Common names and scientific names count. Fish, reptiles, and aquatic mammals are not amphibians merely because they live in water.",
+      "references": [
+        "https://wordnet.princeton.edu/",
+        "https://www.amphibians.org/what-we-do/",
+        "https://amphibiaweb.org/",
+        "https://australian.museum/learn/animals/frogs/",
+        "https://www.nps.gov/chat/learn/nature/eastern-newt.htm"
+      ],
+      "holds": {},
+      "aliasHolds": {},
+      "renames": {
+        "agua": "Cane toad",
+        "European toad": "Common toad",
+        "European fire salamander": "Fire salamander",
+        "spadefoot": "Spadefoot toad",
+        "common newt": "Smooth newt",
+        "mud puppy": "Mudpuppy",
+        "wood-frog": "Wood frog"
+      },
+      "merges": [
+        {
+          "from": "Tree toad",
+          "into": "Tree frog"
+        },
+        {
+          "from": "Obstetrical toad",
+          "into": "Midwife toad"
+        },
+        {
+          "from": "Grass frog",
+          "into": "Common frog"
+        },
+        {
+          "from": "Red eft",
+          "into": "Eastern newt"
+        }
+      ],
+      "additions": [
+        {
+          "label": "Toad",
+          "aliases": []
+        },
+        {
+          "label": "Poison dart frog",
+          "aliases": [
+            "Poison arrow frog",
+            "Dendrobatidae"
+          ]
+        },
+        {
+          "label": "Glass frog",
+          "aliases": [
+            "Centrolenidae"
+          ]
+        },
+        {
+          "label": "Marsh frog",
+          "aliases": [
+            "Pelophylax ridibundus"
+          ]
+        },
+        {
+          "label": "Common frog",
+          "aliases": [
+            "Rana temporaria"
+          ]
+        },
+        {
+          "label": "African dwarf frog",
+          "aliases": [
+            "Hymenochirus"
+          ]
+        },
+        {
+          "label": "Red salamander",
+          "aliases": [
+            "Pseudotriton ruber"
+          ]
+        },
+        {
+          "label": "Alpine newt",
+          "aliases": [
+            "Ichthyosaura alpestris"
+          ]
+        },
+        {
+          "label": "Palmate newt",
+          "aliases": [
+            "Lissotriton helveticus"
+          ]
+        },
+        {
+          "label": "Crested newt",
+          "aliases": [
+            "Great crested newt",
+            "Triturus cristatus"
+          ]
+        },
+        {
+          "label": "Eastern newt",
+          "aliases": [
+            "Notophthalmus viridescens"
+          ]
+        },
+        {
+          "label": "Japanese giant salamander",
+          "aliases": [
+            "Andrias japonicus"
+          ]
+        },
+        {
+          "label": "Chinese giant salamander",
+          "aliases": [
+            "Andrias davidianus"
+          ]
+        },
+        {
+          "label": "Red-eyed tree frog",
+          "aliases": [
+            "Agalychnis callidryas"
+          ]
+        },
+        {
+          "label": "Pacman frog",
+          "aliases": [
+            "Horned frog",
+            "Ceratophrys"
+          ]
+        },
+        {
+          "label": "Tomato frog",
+          "aliases": [
+            "Dyscophus"
+          ]
+        },
+        {
+          "label": "Budgett’s frog",
+          "aliases": [
+            "Lepidobatrachus laevis"
+          ]
+        },
+        {
+          "label": "Golden poison frog",
+          "aliases": [
+            "Phyllobates terribilis"
+          ]
+        },
+        {
+          "label": "Vietnamese mossy frog",
+          "aliases": [
+            "Theloderma corticale"
+          ]
+        },
+        {
+          "label": "Amazon milk frog",
+          "aliases": [
+            "Trachycephalus resinifictrix"
+          ]
+        },
+        {
+          "label": "Yellow-banded poison dart frog",
+          "aliases": [
+            "Dendrobates leucomelas"
+          ]
+        },
+        {
+          "label": "Blue poison dart frog",
+          "aliases": [
+            "Dendrobates tinctorius azureus"
+          ]
+        },
+        {
+          "label": "Strawberry poison dart frog",
+          "aliases": [
+            "Oophaga pumilio"
+          ]
+        }
+      ],
+      "synsetHolds": {},
+      "synsetRenames": {},
+      "aliasOwners": {
+        "spring frog": "Leopard frog"
+      }
+    },
+    {
+      "key": "mollusk-kinds",
+      "root": "mollusk.n.01",
+      "family": "nature",
+      "prompt": "Name a kind of mollusc.",
+      "familiar": [
+        "Snail",
+        "Slug",
+        "Clam",
+        "Oyster",
+        "Mussel",
+        "Scallop",
+        "Cockle",
+        "Octopus",
+        "Squid",
+        "Cuttlefish",
+        "Nautilus",
+        "Chiton",
+        "Limpet",
+        "Abalone",
+        "Conch",
+        "Whelk",
+        "Cowrie",
+        "Periwinkle",
+        "Razor clam",
+        "Geoduck",
+        "Giant clam",
+        "Quahog",
+        "Soft-shell clam",
+        "Blue mussel",
+        "Pearl oyster",
+        "Pacific oyster",
+        "Sea slug",
+        "Nudibranch",
+        "Sea hare",
+        "Land snail",
+        "Garden snail",
+        "Roman snail",
+        "Banana slug",
+        "Cone snail",
+        "Apple snail",
+        "Moon snail",
+        "Tusk shell",
+        "Shipworm",
+        "Argonaut",
+        "Vampire squid",
+        "Dumbo octopus",
+        "Blue-ringed octopus",
+        "Giant squid",
+        "Colossal squid",
+        "Humboldt squid"
+      ],
+      "exclude": [
+        "Lobster",
+        "Starfish",
+        "Jellyfish"
+      ],
+      "rare": "Solenogaster",
+      "scope": "Named mollusc groups and species count, including gastropods, bivalves, cephalopods, chitons and other mollusc lineages. Common and scientific names count. Crustaceans, echinoderms and cnidarians do not count.",
+      "references": [
+        "https://wordnet.princeton.edu/",
+        "https://www.molluscabase.org/",
+        "https://www.marinespecies.org/",
+        "https://www.fisheries.noaa.gov/species/pacific-oyster",
+        "https://www.fisheries.noaa.gov/species/queen-conch/science"
+      ],
+      "holds": {},
+      "aliasHolds": {},
+      "renames": {
+        "architeuthis": "Giant squid",
+        "Japanese oyster": "Pacific oyster",
+        "edible snail": "Roman snail",
+        "edible mussel": "Blue mussel",
+        "moon shell": "Moon snail",
+        "tooth shell": "Tusk shell",
+        "paper nautilus": "Argonaut"
+      },
+      "merges": [
+        {
+          "from": "Giant conch",
+          "into": "Queen conch"
+        }
+      ],
+      "additions": [
+        {
+          "label": "Nautilus",
+          "aliases": []
+        },
+        {
+          "label": "Nudibranch",
+          "aliases": []
+        },
+        {
+          "label": "Land snail",
+          "aliases": []
+        },
+        {
+          "label": "Banana slug",
+          "aliases": [
+            "Ariolimax"
+          ]
+        },
+        {
+          "label": "Cone snail",
+          "aliases": [
+            "Conus"
+          ]
+        },
+        {
+          "label": "Apple snail",
+          "aliases": [
+            "Ampullariidae"
+          ]
+        },
+        {
+          "label": "Vampire squid",
+          "aliases": [
+            "Vampyroteuthis infernalis"
+          ]
+        },
+        {
+          "label": "Dumbo octopus",
+          "aliases": [
+            "Grimpoteuthis"
+          ]
+        },
+        {
+          "label": "Blue-ringed octopus",
+          "aliases": [
+            "Hapalochlaena"
+          ]
+        },
+        {
+          "label": "Colossal squid",
+          "aliases": [
+            "Mesonychoteuthis hamiltoni"
+          ]
+        },
+        {
+          "label": "Humboldt squid",
+          "aliases": [
+            "Dosidicus gigas"
+          ]
+        },
+        {
+          "label": "Sea angel",
+          "aliases": [
+            "Clione"
+          ]
+        },
+        {
+          "label": "Sea butterfly",
+          "aliases": [
+            "Thecosomata"
+          ]
+        },
+        {
+          "label": "Flamingo tongue snail",
+          "aliases": [
+            "Cyphoma gibbosum"
+          ]
+        },
+        {
+          "label": "Queen conch",
+          "aliases": [
+            "Aliger gigas",
+            "Lobatus gigas",
+            "Strombus gigas"
+          ]
+        },
+        {
+          "label": "Firefly squid",
+          "aliases": [
+            "Watasenia scintillans"
+          ]
+        },
+        {
+          "label": "Mimic octopus",
+          "aliases": [
+            "Thaumoctopus mimicus"
+          ]
+        },
+        {
+          "label": "Coconut octopus",
+          "aliases": [
+            "Amphioctopus marginatus"
+          ]
+        },
+        {
+          "label": "Giant Pacific octopus",
+          "aliases": [
+            "Enteroctopus dofleini"
+          ]
+        },
+        {
+          "label": "Brown snail",
+          "aliases": [
+            "Cornu aspersum"
+          ]
+        },
+        {
+          "label": "Pacific oyster",
+          "aliases": [
+            "Crassostrea gigas",
+            "Magallana gigas"
+          ]
+        }
+      ],
+      "synsetHolds": {},
+      "synsetRenames": {},
+      "aliasOwners": {}
+    },
+    {
+      "key": "crustacean-kinds",
+      "root": "crustacean.n.01",
+      "family": "nature",
+      "prompt": "Name a kind of crustacean.",
+      "familiar": [
+        "Crab",
+        "Lobster",
+        "Shrimp",
+        "Prawn",
+        "Crayfish",
+        "Krill",
+        "Barnacle",
+        "Woodlouse",
+        "Pill bug",
+        "Hermit crab",
+        "King crab",
+        "Snow crab",
+        "Spider crab",
+        "Blue crab",
+        "Dungeness crab",
+        "Mud crab",
+        "Fiddler crab",
+        "Coconut crab",
+        "Pea crab",
+        "Ghost crab",
+        "Stone crab",
+        "Spiny lobster",
+        "Slipper lobster",
+        "American lobster",
+        "Norway lobster",
+        "Mantis shrimp",
+        "Pistol shrimp",
+        "Cleaner shrimp",
+        "Brine shrimp",
+        "Fairy shrimp",
+        "Tadpole shrimp",
+        "Ghost shrimp",
+        "Cherry shrimp",
+        "Amano shrimp",
+        "Bamboo shrimp",
+        "Vampire shrimp",
+        "Copepod",
+        "Amphipod",
+        "Isopod",
+        "Ostracod",
+        "Water flea",
+        "Daphnia",
+        "Goose barnacle",
+        "Acorn barnacle",
+        "Triops"
+      ],
+      "exclude": [
+        "Horseshoe crab",
+        "Octopus",
+        "Scorpion"
+      ],
+      "rare": "Gnathophausia",
+      "scope": "Named crustacean groups, species and recognized common kinds count, aquatic or terrestrial. Common and scientific names count. Horseshoe crabs are chelicerates, not crustaceans; molluscs and other arthropod groups are outside this question.",
+      "references": [
+        "https://wordnet.princeton.edu/",
+        "https://www.marinespecies.org/",
+        "https://www.marinespecies.org/aphia.php?p=taxlist&tName=Gnathophausia",
+        "https://ocean.si.edu/ocean-life/invertebrates"
+      ],
+      "holds": {},
+      "aliasHolds": {},
+      "renames": {
+        "branchiopod crustacean": "Branchiopod",
+        "decapod crustacean": "Decapod",
+        "malacostracan crustacean": "Malacostracan",
+        "seed shrimp": "Ostracod",
+        "snapping shrimp": "Pistol shrimp"
+      },
+      "merges": [
+        {
+          "from": "Brachyuran",
+          "into": "Crab"
+        },
+        {
+          "from": "Giant crab",
+          "into": "Japanese spider crab"
+        }
+      ],
+      "additions": [
+        {
+          "label": "Snow crab",
+          "aliases": [
+            "Chionoecetes"
+          ]
+        },
+        {
+          "label": "Mud crab",
+          "aliases": [
+            "Scylla"
+          ]
+        },
+        {
+          "label": "Coconut crab",
+          "aliases": [
+            "Birgus latro",
+            "Robber crab"
+          ]
+        },
+        {
+          "label": "Ghost crab",
+          "aliases": [
+            "Ocypode"
+          ]
+        },
+        {
+          "label": "Slipper lobster",
+          "aliases": [
+            "Scyllaridae"
+          ]
+        },
+        {
+          "label": "Cleaner shrimp",
+          "aliases": []
+        },
+        {
+          "label": "Ghost shrimp",
+          "aliases": []
+        },
+        {
+          "label": "Cherry shrimp",
+          "aliases": [
+            "Neocaridina davidi"
+          ]
+        },
+        {
+          "label": "Amano shrimp",
+          "aliases": [
+            "Caridina multidentata"
+          ]
+        },
+        {
+          "label": "Bamboo shrimp",
+          "aliases": [
+            "Atyopsis moluccensis"
+          ]
+        },
+        {
+          "label": "Vampire shrimp",
+          "aliases": [
+            "Atya gabonensis"
+          ]
+        },
+        {
+          "label": "Water flea",
+          "aliases": [
+            "Cladoceran"
+          ]
+        },
+        {
+          "label": "Triops",
+          "aliases": []
+        },
+        {
+          "label": "Gnathophausia",
+          "aliases": []
+        },
+        {
+          "label": "Yeti crab",
+          "aliases": [
+            "Kiwa"
+          ]
+        },
+        {
+          "label": "Japanese spider crab",
+          "aliases": [
+            "Macrocheira kaempferi"
+          ]
+        },
+        {
+          "label": "Horseshoe shrimp",
+          "aliases": [
+            "Cephalocarid"
+          ]
+        },
+        {
+          "label": "Remipede",
+          "aliases": [
+            "Remipedia"
+          ]
+        },
+        {
+          "label": "Harlequin shrimp",
+          "aliases": [
+            "Hymenocera picta"
+          ]
+        },
+        {
+          "label": "Red swamp crayfish",
+          "aliases": [
+            "Procambarus clarkii"
+          ]
+        },
+        {
+          "label": "Signal crayfish",
+          "aliases": [
+            "Pacifastacus leniusculus"
+          ]
+        },
+        {
+          "label": "Pill bug",
+          "aliases": [
+            "Roly poly",
+            "Roly-poly",
+            "Armadillidium"
+          ]
+        }
+      ],
+      "synsetHolds": {},
+      "synsetRenames": {},
+      "aliasOwners": {
+        "crawfish": "Crayfish"
+      }
+    },
+    {
+      "key": "arachnid-kinds",
+      "root": "arachnid.n.01",
+      "family": "nature",
+      "prompt": "Name a kind of arachnid.",
+      "familiar": [
+        "Spider",
+        "Scorpion",
+        "Tick",
+        "Mite",
+        "Harvestman",
+        "Tarantula",
+        "Wolf spider",
+        "Jumping spider",
+        "Orb-weaver",
+        "Black widow",
+        "Brown recluse",
+        "Redback spider",
+        "Huntsman spider",
+        "Funnel-web spider",
+        "Trapdoor spider",
+        "Peacock spider",
+        "Crab spider",
+        "Garden spider",
+        "House spider",
+        "Cellar spider",
+        "Fishing spider",
+        "Nursery web spider",
+        "Lynx spider",
+        "Spitting spider",
+        "Camel spider",
+        "Whip spider",
+        "Whip scorpion",
+        "Vinegaroon",
+        "Pseudoscorpion",
+        "Hooded tickspider",
+        "Dust mite",
+        "Spider mite",
+        "Velvet mite",
+        "Water mite",
+        "Deer tick",
+        "Dog tick",
+        "Lone star tick",
+        "Emperor scorpion",
+        "Deathstalker",
+        "Bark scorpion",
+        "Daddy longlegs"
+      ],
+      "exclude": [
+        "Crab",
+        "Centipede",
+        "Ant"
+      ],
+      "rare": "Ixodes dentatus",
+      "scope": "Named arachnid groups, species and recognized common kinds count. Spiders, scorpions, ticks, mites, harvestmen and other arachnid orders are included. Insects, crustaceans and myriapods are outside this question.",
+      "references": [
+        "https://wordnet.princeton.edu/",
+        "https://www.nhm.ac.uk/discover/arachnids.html",
+        "https://www.americanarachnology.org/about-arachnids/arachnid-orders/ricinulei/",
+        "https://wac.nmbe.ch/",
+        "https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=6945"
+      ],
+      "holds": {},
+      "aliasHolds": {},
+      "renames": {
+        "vinegarroon": "Vinegaroon",
+        "false scorpion": "Pseudoscorpion",
+        "orb-weaving spider": "Orb-weaver",
+        "trap-door spider": "Trapdoor spider"
+      },
+      "merges": [
+        {
+          "from": "Ixodes dammini",
+          "into": "Ixodes scapularis"
+        }
+      ],
+      "additions": [
+        {
+          "label": "Jumping spider",
+          "aliases": [
+            "Salticid",
+            "Salticidae"
+          ]
+        },
+        {
+          "label": "Brown recluse",
+          "aliases": [
+            "Loxosceles reclusa"
+          ]
+        },
+        {
+          "label": "Redback spider",
+          "aliases": [
+            "Latrodectus hasselti"
+          ]
+        },
+        {
+          "label": "Huntsman spider",
+          "aliases": [
+            "Sparassid",
+            "Sparassidae"
+          ]
+        },
+        {
+          "label": "Funnel-web spider",
+          "aliases": []
+        },
+        {
+          "label": "Peacock spider",
+          "aliases": [
+            "Maratus"
+          ]
+        },
+        {
+          "label": "Crab spider",
+          "aliases": [
+            "Thomisid",
+            "Thomisidae"
+          ]
+        },
+        {
+          "label": "House spider",
+          "aliases": []
+        },
+        {
+          "label": "Cellar spider",
+          "aliases": [
+            "Pholcid",
+            "Pholcidae"
+          ]
+        },
+        {
+          "label": "Fishing spider",
+          "aliases": [
+            "Dolomedes"
+          ]
+        },
+        {
+          "label": "Nursery web spider",
+          "aliases": [
+            "Pisaurid",
+            "Pisauridae"
+          ]
+        },
+        {
+          "label": "Lynx spider",
+          "aliases": [
+            "Oxyopid",
+            "Oxyopidae"
+          ]
+        },
+        {
+          "label": "Spitting spider",
+          "aliases": [
+            "Scytodes"
+          ]
+        },
+        {
+          "label": "Camel spider",
+          "aliases": [
+            "Sun spider",
+            "Wind scorpion",
+            "Solifuge",
+            "Solifugae"
+          ]
+        },
+        {
+          "label": "Whip spider",
+          "aliases": [
+            "Tailless whip scorpion",
+            "Amblypygid",
+            "Amblypygi"
+          ]
+        },
+        {
+          "label": "Hooded tickspider",
+          "aliases": [
+            "Hooded tick-spider",
+            "Ricinuleid",
+            "Ricinulei"
+          ]
+        },
+        {
+          "label": "Dust mite",
+          "aliases": [
+            "Dermatophagoides"
+          ]
+        },
+        {
+          "label": "Velvet mite",
+          "aliases": []
+        },
+        {
+          "label": "Water mite",
+          "aliases": [
+            "Hydrachnid"
+          ]
+        },
+        {
+          "label": "Dog tick",
+          "aliases": []
+        },
+        {
+          "label": "Lone star tick",
+          "aliases": [
+            "Amblyomma americanum"
+          ]
+        },
+        {
+          "label": "Emperor scorpion",
+          "aliases": [
+            "Pandinus imperator"
+          ]
+        },
+        {
+          "label": "Deathstalker",
+          "aliases": [
+            "Leiurus quinquestriatus"
+          ]
+        },
+        {
+          "label": "Bark scorpion",
+          "aliases": []
+        },
+        {
+          "label": "Schizomid",
+          "aliases": [
+            "Short-tailed whip scorpion",
+            "Schizomida"
+          ]
+        },
+        {
+          "label": "Palpigrade",
+          "aliases": [
+            "Microwhip scorpion",
+            "Palpigradi"
+          ]
+        },
+        {
+          "label": "Sydney funnel-web spider",
+          "aliases": [
+            "Atrax robustus"
+          ]
+        },
+        {
+          "label": "Brazilian wandering spider",
+          "aliases": [
+            "Phoneutria"
+          ]
+        },
+        {
+          "label": "Goliath birdeater",
+          "aliases": [
+            "Theraphosa blondi"
+          ]
+        },
+        {
+          "label": "Ixodes scapularis",
+          "aliases": [
+            "Deer tick",
+            "Blacklegged tick"
+          ]
+        },
+        {
+          "label": "Harvestman",
+          "aliases": [
+            "Daddy longlegs",
+            "Opilionid",
+            "Opiliones"
+          ]
+        }
+      ],
+      "synsetHolds": {},
+      "synsetRenames": {},
+      "aliasOwners": {}
+    },
+    {
+      "key": "science-branches",
+      "root": "science.n.01",
+      "family": "science",
+      "prompt": "Name a scientific discipline or academic field.",
+      "familiar": [
+        "Physics",
+        "Chemistry",
+        "Biology",
+        "Astronomy",
+        "Geology",
+        "Ecology",
+        "Botany",
+        "Zoology",
+        "Microbiology",
+        "Genetics",
+        "Neuroscience",
+        "Anatomy",
+        "Physiology",
+        "Biochemistry",
+        "Biophysics",
+        "Immunology",
+        "Endocrinology",
+        "Epidemiology",
+        "Virology",
+        "Bacteriology",
+        "Mycology",
+        "Entomology",
+        "Ornithology",
+        "Herpetology",
+        "Marine biology",
+        "Oceanography",
+        "Meteorology",
+        "Climatology",
+        "Seismology",
+        "Volcanology",
+        "Paleontology",
+        "Archaeology",
+        "Anthropology",
+        "Psychology",
+        "Sociology",
+        "Economics",
+        "Political science",
+        "Computer science",
+        "Data science",
+        "Mathematics",
+        "Statistics",
+        "Robotics",
+        "Engineering",
+        "Materials science",
+        "Environmental science",
+        "Forensic science",
+        "Geography",
+        "Linguistics",
+        "Cognitive science",
+        "Astrophysics",
+        "Cosmology",
+        "Nanotechnology"
+      ],
+      "exclude": [
+        "Astrology",
+        "Phrenology",
+        "Palm reading"
+      ],
+      "rare": "Cryobiology",
+      "scope": "Recognized sciences and academic research fields count, including mathematics, social sciences, linguistics, medicine and engineering. Subdisciplines and documented historical names count. A result, isolated technique or pseudoscientific practice is not itself an academic discipline.",
+      "references": [
+        "https://wordnet.princeton.edu/",
+        "https://www.britannica.com/science/science"
+      ],
+      "holds": {},
+      "aliasHolds": {},
+      "renames": {
+        "politics": "Political science",
+        "brain science": "Neuroscience",
+        "archeology": "Archaeology",
+        "psychometry": "Psychometrics"
+      },
+      "merges": [
+        {
+          "from": "Quantum physics",
+          "into": "Quantum mechanics"
+        }
+      ],
+      "additions": [
+        {
+          "label": "Marine biology",
+          "aliases": []
+        },
+        {
+          "label": "Computer science",
+          "aliases": [
+            "Computing science"
+          ]
+        },
+        {
+          "label": "Data science",
+          "aliases": []
+        },
+        {
+          "label": "Robotics",
+          "aliases": []
+        },
+        {
+          "label": "Engineering",
+          "aliases": []
+        },
+        {
+          "label": "Materials science",
+          "aliases": []
+        },
+        {
+          "label": "Environmental science",
+          "aliases": []
+        },
+        {
+          "label": "Forensic science",
+          "aliases": []
+        },
+        {
+          "label": "Nanotechnology",
+          "aliases": []
+        },
+        {
+          "label": "Artificial intelligence",
+          "aliases": []
+        },
+        {
+          "label": "Machine learning",
+          "aliases": []
+        },
+        {
+          "label": "Bioinformatics",
+          "aliases": []
+        },
+        {
+          "label": "Conservation biology",
+          "aliases": []
+        },
+        {
+          "label": "Evolutionary biology",
+          "aliases": []
+        },
+        {
+          "label": "Synthetic biology",
+          "aliases": []
+        },
+        {
+          "label": "Civil engineering",
+          "aliases": []
+        },
+        {
+          "label": "Mechanical engineering",
+          "aliases": []
+        },
+        {
+          "label": "Electrical engineering",
+          "aliases": []
+        },
+        {
+          "label": "Chemical engineering",
+          "aliases": []
+        },
+        {
+          "label": "Aerospace engineering",
+          "aliases": []
+        },
+        {
+          "label": "Biomedical engineering",
+          "aliases": []
+        },
+        {
+          "label": "Environmental engineering",
+          "aliases": []
+        },
+        {
+          "label": "Software engineering",
+          "aliases": []
+        },
+        {
+          "label": "Systems engineering",
+          "aliases": []
+        },
+        {
+          "label": "Renewable energy research",
+          "aliases": []
+        },
+        {
+          "label": "Sustainability science",
+          "aliases": []
+        },
+        {
+          "label": "Educational psychology",
+          "aliases": []
+        },
+        {
+          "label": "Education",
+          "aliases": []
+        },
+        {
+          "label": "History",
+          "aliases": []
+        },
+        {
+          "label": "Philosophy",
+          "aliases": []
+        },
+        {
+          "label": "Literary studies",
+          "aliases": []
+        },
+        {
+          "label": "Religious studies",
+          "aliases": []
+        },
+        {
+          "label": "Communication studies",
+          "aliases": []
+        },
+        {
+          "label": "Media studies",
+          "aliases": []
+        },
+        {
+          "label": "Film studies",
+          "aliases": []
+        },
+        {
+          "label": "Cultural studies",
+          "aliases": []
+        },
+        {
+          "label": "Gender studies",
+          "aliases": []
+        },
+        {
+          "label": "Peace and conflict studies",
+          "aliases": []
+        },
+        {
+          "label": "International relations",
+          "aliases": []
+        },
+        {
+          "label": "International development",
+          "aliases": []
+        },
+        {
+          "label": "Legal studies",
+          "aliases": [
+            "Law"
+          ]
+        },
+        {
+          "label": "Public health",
+          "aliases": []
+        },
+        {
+          "label": "Nursing",
+          "aliases": []
+        },
+        {
+          "label": "Speech-language pathology",
+          "aliases": []
+        },
+        {
+          "label": "Occupational therapy",
+          "aliases": []
+        },
+        {
+          "label": "Physiotherapy",
+          "aliases": [
+            "Physical therapy"
+          ]
+        },
+        {
+          "label": "Human-computer interaction",
+          "aliases": []
+        }
+      ],
+      "synsetHolds": {
+        "correlation.n.03": "A statistical relation, technique, expression or physical action, not an independent discipline.",
+        "curvilinear_correlation.n.01": "A statistical relation, technique, expression or physical action, not an independent discipline.",
+        "decomposition.n.01": "A statistical relation, technique, expression or physical action, not an independent discipline.",
+        "deixis.n.01": "A statistical relation, technique, expression or physical action, not an independent discipline.",
+        "first-order_correlation.n.01": "A statistical relation, technique, expression or physical action, not an independent discipline.",
+        "negative_correlation.n.01": "A statistical relation, technique, expression or physical action, not an independent discipline.",
+        "partial_correlation.n.01": "A statistical relation, technique, expression or physical action, not an independent discipline.",
+        "positive_correlation.n.01": "A statistical relation, technique, expression or physical action, not an independent discipline.",
+        "realpolitik.n.01": "A statistical relation, technique, expression or physical action, not an independent discipline.",
+        "spurious_correlation.n.01": "A statistical relation, technique, expression or physical action, not an independent discipline.",
+        "triangulation.n.01": "A statistical relation, technique, expression or physical action, not an independent discipline.",
+        "undercut.n.03": "A statistical relation, technique, expression or physical action, not an independent discipline.",
+        "cryonics.n.01": "Pseudoscientific, discredited or speculative practice outside modern scientific discipline scope.",
+        "dysgenics.n.01": "Pseudoscientific, discredited or speculative practice outside modern scientific discipline scope.",
+        "eugenics.n.01": "Pseudoscientific, discredited or speculative practice outside modern scientific discipline scope.",
+        "macrobiotics.n.01": "Pseudoscientific, discredited or speculative practice outside modern scientific discipline scope.",
+        "phrenology.n.01": "Pseudoscientific, discredited or speculative practice outside modern scientific discipline scope.",
+        "algorism.n.02": "Calculational technique, not an academic branch."
+      },
+      "synsetRenames": {},
+      "aliasOwners": {
+        "psychopathology": "Abnormal psychology"
+      }
+    },
+    {
+      "key": "mathematics-branches",
+      "root": "mathematics.n.01",
+      "family": "science",
+      "prompt": "Name a branch or field of mathematics.",
+      "familiar": [
+        "Arithmetic",
+        "Algebra",
+        "Geometry",
+        "Calculus",
+        "Statistics",
+        "Probability",
+        "Trigonometry",
+        "Topology",
+        "Number theory",
+        "Combinatorics",
+        "Set theory",
+        "Logic",
+        "Linear algebra",
+        "Abstract algebra",
+        "Boolean algebra",
+        "Differential equations",
+        "Real analysis",
+        "Complex analysis",
+        "Functional analysis",
+        "Numerical analysis",
+        "Mathematical analysis",
+        "Discrete mathematics",
+        "Applied mathematics",
+        "Pure mathematics",
+        "Graph theory",
+        "Group theory",
+        "Game theory",
+        "Information theory",
+        "Optimization",
+        "Operations research",
+        "Cryptography",
+        "Differential geometry",
+        "Euclidean geometry",
+        "Non-Euclidean geometry",
+        "Projective geometry",
+        "Fractal geometry",
+        "Dynamical systems",
+        "Chaos theory",
+        "Vector calculus",
+        "Tensor calculus",
+        "Category theory",
+        "Measure theory",
+        "Mathematical physics",
+        "Mathematical biology",
+        "Financial mathematics",
+        "Mathematical modeling"
+      ],
+      "exclude": [
+        "Astrology",
+        "Poetry",
+        "Photosynthesis"
+      ],
+      "rare": "Transfinite arithmetic",
+      "scope": "Recognized mathematical branches, subfields and established mathematical research disciplines count. Both pure and applied mathematics count. Individual formulas, symbols, isolated theorems and unrelated school subjects do not by themselves name a branch.",
+      "references": [
+        "https://wordnet.princeton.edu/",
+        "https://www.ams.org/msc/msc2020.html",
+        "https://mathscinet.ams.org/msc/msc.html",
+        "https://zbmath.org/static/msc2020.pdf"
+      ],
+      "holds": {},
+      "aliasHolds": {},
+      "renames": {
+        "analysis": "Mathematical analysis",
+        "probability theory": "Probability",
+        "elementary geometry": "Euclidean geometry"
+      },
+      "merges": [],
+      "additions": [
+        {
+          "label": "Number theory",
+          "aliases": []
+        },
+        {
+          "label": "Combinatorics",
+          "aliases": []
+        },
+        {
+          "label": "Logic",
+          "aliases": [
+            "Mathematical logic"
+          ]
+        },
+        {
+          "label": "Abstract algebra",
+          "aliases": []
+        },
+        {
+          "label": "Boolean algebra",
+          "aliases": []
+        },
+        {
+          "label": "Differential equations",
+          "aliases": []
+        },
+        {
+          "label": "Real analysis",
+          "aliases": []
+        },
+        {
+          "label": "Complex analysis",
+          "aliases": []
+        },
+        {
+          "label": "Functional analysis",
+          "aliases": []
+        },
+        {
+          "label": "Discrete mathematics",
+          "aliases": [
+            "Discrete math"
+          ]
+        },
+        {
+          "label": "Graph theory",
+          "aliases": []
+        },
+        {
+          "label": "Game theory",
+          "aliases": []
+        },
+        {
+          "label": "Information theory",
+          "aliases": []
+        },
+        {
+          "label": "Optimization",
+          "aliases": [
+            "Optimisation"
+          ]
+        },
+        {
+          "label": "Operations research",
+          "aliases": [
+            "Operational research"
+          ]
+        },
+        {
+          "label": "Cryptography",
+          "aliases": []
+        },
+        {
+          "label": "Differential geometry",
+          "aliases": []
+        },
+        {
+          "label": "Dynamical systems",
+          "aliases": []
+        },
+        {
+          "label": "Chaos theory",
+          "aliases": []
+        },
+        {
+          "label": "Vector calculus",
+          "aliases": []
+        },
+        {
+          "label": "Tensor calculus",
+          "aliases": []
+        },
+        {
+          "label": "Category theory",
+          "aliases": []
+        },
+        {
+          "label": "Measure theory",
+          "aliases": []
+        },
+        {
+          "label": "Mathematical physics",
+          "aliases": []
+        },
+        {
+          "label": "Mathematical biology",
+          "aliases": []
+        },
+        {
+          "label": "Financial mathematics",
+          "aliases": [
+            "Mathematical finance"
+          ]
+        },
+        {
+          "label": "Mathematical modeling",
+          "aliases": [
+            "Mathematical modelling"
+          ]
+        },
+        {
+          "label": "Transfinite arithmetic",
+          "aliases": []
+        },
+        {
+          "label": "Order theory",
+          "aliases": []
+        },
+        {
+          "label": "Lattice theory",
+          "aliases": []
+        },
+        {
+          "label": "Knot theory",
+          "aliases": []
+        },
+        {
+          "label": "Coding theory",
+          "aliases": []
+        },
+        {
+          "label": "Representation theory",
+          "aliases": []
+        },
+        {
+          "label": "Ring theory",
+          "aliases": []
+        },
+        {
+          "label": "Field theory",
+          "aliases": []
+        },
+        {
+          "label": "Homological algebra",
+          "aliases": []
+        },
+        {
+          "label": "Homotopy theory",
+          "aliases": []
+        },
+        {
+          "label": "Algebraic topology",
+          "aliases": []
+        },
+        {
+          "label": "Algebraic geometry",
+          "aliases": []
+        },
+        {
+          "label": "Algebraic number theory",
+          "aliases": []
+        },
+        {
+          "label": "Analytic number theory",
+          "aliases": []
+        },
+        {
+          "label": "Ergodic theory",
+          "aliases": []
+        },
+        {
+          "label": "Control theory",
+          "aliases": []
+        },
+        {
+          "label": "Decision theory",
+          "aliases": []
+        },
+        {
+          "label": "Fuzzy mathematics",
+          "aliases": []
+        },
+        {
+          "label": "Numerical linear algebra",
+          "aliases": []
+        },
+        {
+          "label": "Stochastic processes",
+          "aliases": []
+        },
+        {
+          "label": "Enumerative combinatorics",
+          "aliases": []
+        },
+        {
+          "label": "Extremal combinatorics",
+          "aliases": []
+        },
+        {
+          "label": "Computational geometry",
+          "aliases": []
+        },
+        {
+          "label": "Geometric topology",
+          "aliases": []
+        },
+        {
+          "label": "Differential topology",
+          "aliases": []
+        },
+        {
+          "label": "Symplectic geometry",
+          "aliases": []
+        },
+        {
+          "label": "Riemannian geometry",
+          "aliases": []
+        },
+        {
+          "label": "Noncommutative geometry",
+          "aliases": []
+        },
+        {
+          "label": "Model theory",
+          "aliases": []
+        },
+        {
+          "label": "Proof theory",
+          "aliases": []
+        },
+        {
+          "label": "Computability theory",
+          "aliases": [
+            "Recursion theory"
+          ]
+        },
+        {
+          "label": "Type theory",
+          "aliases": []
+        }
+      ],
+      "synsetHolds": {
+        "correlation.n.03": "A statistical relation, technique, expression or physical action, not an independent discipline.",
+        "curvilinear_correlation.n.01": "A statistical relation, technique, expression or physical action, not an independent discipline.",
+        "decomposition.n.01": "A statistical relation, technique, expression or physical action, not an independent discipline.",
+        "first-order_correlation.n.01": "A statistical relation, technique, expression or physical action, not an independent discipline.",
+        "negative_correlation.n.01": "A statistical relation, technique, expression or physical action, not an independent discipline.",
+        "partial_correlation.n.01": "A statistical relation, technique, expression or physical action, not an independent discipline.",
+        "positive_correlation.n.01": "A statistical relation, technique, expression or physical action, not an independent discipline.",
+        "spurious_correlation.n.01": "A statistical relation, technique, expression or physical action, not an independent discipline.",
+        "triangulation.n.01": "A statistical relation, technique, expression or physical action, not an independent discipline.",
+        "algorism.n.02": "Calculational technique, not a mathematical branch."
+      },
+      "synsetRenames": {},
+      "aliasOwners": {}
+    }
+  ]
+}

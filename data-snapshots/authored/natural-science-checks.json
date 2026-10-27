@@ -1,0 +1,82 @@
+[
+  {
+    "id": "authored-fungus-kinds",
+    "root": "fungus.n.01",
+    "sourceVersion": "3.0",
+    "sourceRows": 308,
+    "heldRows": 14,
+    "canonicalAnswers": 306,
+    "familiarInputs": 43,
+    "rareAnchor": "Veiled polypore"
+  },
+  {
+    "id": "authored-reptile-kinds",
+    "root": "reptile.n.01",
+    "sourceVersion": "3.0",
+    "sourceRows": 296,
+    "heldRows": 10,
+    "canonicalAnswers": 301,
+    "familiarInputs": 50,
+    "rareAnchor": "Rinkhals"
+  },
+  {
+    "id": "authored-amphibian-kinds",
+    "root": "amphibian.n.03",
+    "sourceVersion": "3.0",
+    "sourceRows": 95,
+    "heldRows": 0,
+    "canonicalAnswers": 113,
+    "familiarInputs": 40,
+    "rareAnchor": "Dicamptodon"
+  },
+  {
+    "id": "authored-mollusk-kinds",
+    "root": "mollusk.n.01",
+    "sourceVersion": "3.0",
+    "sourceRows": 85,
+    "heldRows": 0,
+    "canonicalAnswers": 103,
+    "familiarInputs": 45,
+    "rareAnchor": "Solenogaster"
+  },
+  {
+    "id": "authored-crustacean-kinds",
+    "root": "crustacean.n.01",
+    "sourceVersion": "3.0",
+    "sourceRows": 65,
+    "heldRows": 0,
+    "canonicalAnswers": 84,
+    "familiarInputs": 45,
+    "rareAnchor": "Gnathophausia"
+  },
+  {
+    "id": "authored-arachnid-kinds",
+    "root": "arachnid.n.01",
+    "sourceVersion": "3.0",
+    "sourceRows": 41,
+    "heldRows": 0,
+    "canonicalAnswers": 69,
+    "familiarInputs": 41,
+    "rareAnchor": "Ixodes dentatus"
+  },
+  {
+    "id": "authored-science-branches",
+    "root": "science.n.01",
+    "sourceVersion": "3.0",
+    "sourceRows": 434,
+    "heldRows": 18,
+    "canonicalAnswers": 455,
+    "familiarInputs": 52,
+    "rareAnchor": "Cryobiology"
+  },
+  {
+    "id": "authored-mathematics-branches",
+    "root": "mathematics.n.01",
+    "sourceVersion": "3.0",
+    "sourceRows": 49,
+    "heldRows": 10,
+    "canonicalAnswers": 98,
+    "familiarInputs": 46,
+    "rareAnchor": "Transfinite arithmetic"
+  }
+]

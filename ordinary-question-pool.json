@@ -1,6 +1,6 @@
 {
-  "build": "17fd2bd282e6a754",
-  "count": 434,
+  "build": "467eaba71bccaaf1",
+  "count": 444,
   "categories": [
     {
       "id": "group-q001",
@@ -3473,6 +3473,86 @@
       "group": "authored-whole-color-inventory",
       "answerCount": 1138,
       "scope": "Recognized English color names and published named shades count, including named pigments, Crayola colors and standard CSS color keywords. Regional spellings and ordinary synonyms share one answer. Patterns are not a single color. Different standard definitions of the same ordinary name do not create extra answers."
+    },
+    {
+      "id": "authored-fungus-kinds",
+      "prompt": "Name a type of mushroom or other fungus.",
+      "family": "nature",
+      "group": "authored-whole-natural-science-concept",
+      "answerCount": 306,
+      "scope": "Recognized named fungi, mushroom kinds, molds, mildews and yeasts count. Common or scientific names are accepted. Bacteria, viruses and modern non-fungal slime/water molds do not count; diseases alone are not organism names."
+    },
+    {
+      "id": "authored-reptile-kinds",
+      "prompt": "Name a kind of reptile.",
+      "family": "nature",
+      "group": "authored-whole-natural-science-concept",
+      "answerCount": 301,
+      "scope": "Named reptile groups, species and established kinds count, living or extinct, including non-avian dinosaurs and extinct marine reptiles. Common and scientific names count. Birds and amphibians are outside this ordinary non-avian reptile scope."
+    },
+    {
+      "id": "authored-amphibian-kinds",
+      "prompt": "Name a kind of amphibian.",
+      "family": "nature",
+      "group": "authored-whole-natural-science-concept",
+      "answerCount": 113,
+      "scope": "Recognized amphibian groups and species count, living or extinct. Common names and scientific names count. Fish, reptiles, and aquatic mammals are not amphibians merely because they live in water."
+    },
+    {
+      "id": "authored-mollusk-kinds",
+      "prompt": "Name a kind of mollusc.",
+      "family": "nature",
+      "group": "authored-whole-natural-science-concept",
+      "answerCount": 103,
+      "scope": "Named mollusc groups and species count, including gastropods, bivalves, cephalopods, chitons and other mollusc lineages. Common and scientific names count. Crustaceans, echinoderms and cnidarians do not count."
+    },
+    {
+      "id": "authored-crustacean-kinds",
+      "prompt": "Name a kind of crustacean.",
+      "family": "nature",
+      "group": "authored-whole-natural-science-concept",
+      "answerCount": 84,
+      "scope": "Named crustacean groups, species and recognized common kinds count, aquatic or terrestrial. Common and scientific names count. Horseshoe crabs are chelicerates, not crustaceans; molluscs and other arthropod groups are outside this question."
+    },
+    {
+      "id": "authored-arachnid-kinds",
+      "prompt": "Name a kind of arachnid.",
+      "family": "nature",
+      "group": "authored-whole-natural-science-concept",
+      "answerCount": 69,
+      "scope": "Named arachnid groups, species and recognized common kinds count. Spiders, scorpions, ticks, mites, harvestmen and other arachnid orders are included. Insects, crustaceans and myriapods are outside this question."
+    },
+    {
+      "id": "authored-science-branches",
+      "prompt": "Name a scientific discipline or academic field.",
+      "family": "science",
+      "group": "authored-whole-natural-science-concept",
+      "answerCount": 455,
+      "scope": "Recognized sciences and academic research fields count, including mathematics, social sciences, linguistics, medicine and engineering. Subdisciplines and documented historical names count. A result, isolated technique or pseudoscientific practice is not itself an academic discipline."
+    },
+    {
+      "id": "authored-mathematics-branches",
+      "prompt": "Name a branch or field of mathematics.",
+      "family": "science",
+      "group": "authored-whole-natural-science-concept",
+      "answerCount": 98,
+      "scope": "Recognized mathematical branches, subfields and established mathematical research disciplines count. Both pure and applied mathematics count. Individual formulas, symbols, isolated theorems and unrelated school subjects do not by themselves name a branch."
+    },
+    {
+      "id": "authored-cooking-techniques",
+      "prompt": "Name a cooking or food-preparation technique.",
+      "family": "food",
+      "group": "authored-whole-familiar-food-concept",
+      "answerCount": 186,
+      "scope": "Recognized techniques for cooking, preparing, cutting, mixing, baking or preserving food count. Real public verb/noun forms share an answer. An ingredient, utensil, finished dish or desired texture alone is not a technique."
+    },
+    {
+      "id": "authored-nuts-seeds",
+      "prompt": "Name a culinary nut or a seed people eat.",
+      "family": "food",
+      "group": "authored-whole-familiar-food-concept",
+      "answerCount": 174,
+      "scope": "Culinary nuts and food seeds count, including grains, pulses, spice seeds and nuts that are not botanical nuts. Traditional foods that require preparation count. A named food seed or nut group counts; a botanical class, tree alone, finished sauce or book title does not."
     }
   ]
 }

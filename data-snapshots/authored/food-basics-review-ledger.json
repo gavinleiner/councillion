@@ -1,0 +1,1328 @@
+{
+  "cooking-techniques": {
+    "sourceRows": 186,
+    "held": [
+      {
+        "sourceLabel": "al dente",
+        "reason": "A food/product, ingredient, implement, source heading, cultural model or unverified malformed entry rather than a named technique."
+      },
+      {
+        "sourceLabel": "amandine",
+        "reason": "A food/product, ingredient, implement, source heading, cultural model or unverified malformed entry rather than a named technique."
+      },
+      {
+        "sourceLabel": "anti-griddle",
+        "reason": "A food/product, ingredient, implement, source heading, cultural model or unverified malformed entry rather than a named technique."
+      },
+      {
+        "sourceLabel": "aspic",
+        "reason": "A food/product, ingredient, implement, source heading, cultural model or unverified malformed entry rather than a named technique."
+      },
+      {
+        "sourceLabel": "au jus",
+        "reason": "A food/product, ingredient, implement, source heading, cultural model or unverified malformed entry rather than a named technique."
+      },
+      {
+        "sourceLabel": "au poivre",
+        "reason": "A food/product, ingredient, implement, source heading, cultural model or unverified malformed entry rather than a named technique."
+      },
+      {
+        "sourceLabel": "cartouche",
+        "reason": "A food/product, ingredient, implement, source heading, cultural model or unverified malformed entry rather than a named technique."
+      },
+      {
+        "sourceLabel": "casserole",
+        "reason": "A food/product, ingredient, implement, source heading, cultural model or unverified malformed entry rather than a named technique."
+      },
+      {
+        "sourceLabel": "charbroiler",
+        "reason": "A food/product, ingredient, implement, source heading, cultural model or unverified malformed entry rather than a named technique."
+      },
+      {
+        "sourceLabel": "Chinese cooking techniques",
+        "reason": "A food/product, ingredient, implement, source heading, cultural model or unverified malformed entry rather than a named technique."
+      },
+      {
+        "sourceLabel": "consommé",
+        "reason": "A food/product, ingredient, implement, source heading, cultural model or unverified malformed entry rather than a named technique."
+      },
+      {
+        "sourceLabel": "cream",
+        "reason": "A food/product, ingredient, implement, source heading, cultural model or unverified malformed entry rather than a named technique."
+      },
+      {
+        "sourceLabel": "croquette",
+        "reason": "A food/product, ingredient, implement, source heading, cultural model or unverified malformed entry rather than a named technique."
+      },
+      {
+        "sourceLabel": "culinary triangle",
+        "reason": "A food/product, ingredient, implement, source heading, cultural model or unverified malformed entry rather than a named technique."
+      },
+      {
+        "sourceLabel": "cured fish",
+        "reason": "A food/product, ingredient, implement, source heading, cultural model or unverified malformed entry rather than a named technique."
+      },
+      {
+        "sourceLabel": "earth oven",
+        "reason": "A food/product, ingredient, implement, source heading, cultural model or unverified malformed entry rather than a named technique."
+      },
+      {
+        "sourceLabel": "escagraph",
+        "reason": "A food/product, ingredient, implement, source heading, cultural model or unverified malformed entry rather than a named technique."
+      },
+      {
+        "sourceLabel": "flattop grill",
+        "reason": "A food/product, ingredient, implement, source heading, cultural model or unverified malformed entry rather than a named technique."
+      },
+      {
+        "sourceLabel": "foam",
+        "reason": "A food/product, ingredient, implement, source heading, cultural model or unverified malformed entry rather than a named technique."
+      },
+      {
+        "sourceLabel": "fondue",
+        "reason": "A food/product, ingredient, implement, source heading, cultural model or unverified malformed entry rather than a named technique."
+      },
+      {
+        "sourceLabel": "fruit preserves",
+        "reason": "A food/product, ingredient, implement, source heading, cultural model or unverified malformed entry rather than a named technique."
+      },
+      {
+        "sourceLabel": "hibachi",
+        "reason": "A food/product, ingredient, implement, source heading, cultural model or unverified malformed entry rather than a named technique."
+      },
+      {
+        "sourceLabel": "huff paste",
+        "reason": "A food/product, ingredient, implement, source heading, cultural model or unverified malformed entry rather than a named technique."
+      },
+      {
+        "sourceLabel": "meat cooking techniques",
+        "reason": "A food/product, ingredient, implement, source heading, cultural model or unverified malformed entry rather than a named technique."
+      },
+      {
+        "sourceLabel": "mother sauces",
+        "reason": "A food/product, ingredient, implement, source heading, cultural model or unverified malformed entry rather than a named technique."
+      },
+      {
+        "sourceLabel": "maliard",
+        "reason": "A food/product, ingredient, implement, source heading, cultural model or unverified malformed entry rather than a named technique."
+      },
+      {
+        "sourceLabel": "nappage",
+        "reason": "A food/product, ingredient, implement, source heading, cultural model or unverified malformed entry rather than a named technique."
+      },
+      {
+        "sourceLabel": "paste",
+        "reason": "A food/product, ingredient, implement, source heading, cultural model or unverified malformed entry rather than a named technique."
+      },
+      {
+        "sourceLabel": "pellicle",
+        "reason": "A food/product, ingredient, implement, source heading, cultural model or unverified malformed entry rather than a named technique."
+      },
+      {
+        "sourceLabel": "pig roast",
+        "reason": "A food/product, ingredient, implement, source heading, cultural model or unverified malformed entry rather than a named technique."
+      },
+      {
+        "sourceLabel": "pre-ferment",
+        "reason": "A food/product, ingredient, implement, source heading, cultural model or unverified malformed entry rather than a named technique."
+      },
+      {
+        "sourceLabel": "rillettes",
+        "reason": "A food/product, ingredient, implement, source heading, cultural model or unverified malformed entry rather than a named technique."
+      },
+      {
+        "sourceLabel": "roux",
+        "reason": "A food/product, ingredient, implement, source heading, cultural model or unverified malformed entry rather than a named technique."
+      },
+      {
+        "sourceLabel": "Schwenker",
+        "reason": "A food/product, ingredient, implement, source heading, cultural model or unverified malformed entry rather than a named technique."
+      },
+      {
+        "sourceLabel": "shirred eggs",
+        "reason": "A food/product, ingredient, implement, source heading, cultural model or unverified malformed entry rather than a named technique."
+      },
+      {
+        "sourceLabel": "shrivelling",
+        "reason": "A food/product, ingredient, implement, source heading, cultural model or unverified malformed entry rather than a named technique."
+      },
+      {
+        "sourceLabel": "slow cooker",
+        "reason": "A food/product, ingredient, implement, source heading, cultural model or unverified malformed entry rather than a named technique."
+      },
+      {
+        "sourceLabel": "thermal immersion circulator",
+        "reason": "A food/product, ingredient, implement, source heading, cultural model or unverified malformed entry rather than a named technique."
+      },
+      {
+        "sourceLabel": "food steamer",
+        "reason": "A food/product, ingredient, implement, source heading, cultural model or unverified malformed entry rather than a named technique."
+      },
+      {
+        "sourceLabel": "syringe",
+        "reason": "A food/product, ingredient, implement, source heading, cultural model or unverified malformed entry rather than a named technique."
+      },
+      {
+        "sourceLabel": "tandoor",
+        "reason": "A food/product, ingredient, implement, source heading, cultural model or unverified malformed entry rather than a named technique."
+      },
+      {
+        "sourceLabel": "transglutaminase",
+        "reason": "A food/product, ingredient, implement, source heading, cultural model or unverified malformed entry rather than a named technique."
+      },
+      {
+        "sourceLabel": "turkey fryer",
+        "reason": "A food/product, ingredient, implement, source heading, cultural model or unverified malformed entry rather than a named technique."
+      },
+      {
+        "sourceLabel": "Vietnamese cooking techniques",
+        "reason": "A food/product, ingredient, implement, source heading, cultural model or unverified malformed entry rather than a named technique."
+      }
+    ],
+    "canonicalAnswers": 186,
+    "independentFamiliarInputs": 60,
+    "canonicalSourceMap": {
+      "Acidulating": [
+        "acidulate"
+      ],
+      "Amylolytic process": [
+        "amylolytic process"
+      ],
+      "Gratinating": [
+        "au gratin",
+        "gratin"
+      ],
+      "Backwoods cooking": [
+        "backwoods cooking"
+      ],
+      "Baghaar": [
+        "baghaar"
+      ],
+      "Bain-marie": [
+        "bain-marie",
+        "Independent public-name supplement"
+      ],
+      "Baking": [
+        "baking"
+      ],
+      "Barding": [
+        "barding"
+      ],
+      "Barbecuing": [
+        "barbecuing"
+      ],
+      "Basting": [
+        "basting"
+      ],
+      "Blanching": [
+        "blanching"
+      ],
+      "Boiling": [
+        "boiling"
+      ],
+      "Braising": [
+        "braising"
+      ],
+      "Bricolage": [
+        "bricolage"
+      ],
+      "Brining": [
+        "brine"
+      ],
+      "Broasting": [
+        "broasting"
+      ],
+      "Browning": [
+        "browning"
+      ],
+      "Candy making": [
+        "candy making"
+      ],
+      "Caramelization": [
+        "caramelization"
+      ],
+      "Carryover cooking": [
+        "carryover cooking"
+      ],
+      "Cheesemaking": [
+        "cheesemaking"
+      ],
+      "Chiffonade": [
+        "chiffonade"
+      ],
+      "Red cooking": [
+        "red cooking"
+      ],
+      "Clay pot cooking": [
+        "clay pot cooking"
+      ],
+      "Coddling": [
+        "coddling"
+      ],
+      "Concasse": [
+        "concasse"
+      ],
+      "Conching": [
+        "conche"
+      ],
+      "Confit": [
+        "confit"
+      ],
+      "Cooking with alcohol": [
+        "cooking with alcohol"
+      ],
+      "Creaming": [
+        "creaming"
+      ],
+      "Curdling": [
+        "curdling"
+      ],
+      "Curing": [
+        "curing"
+      ],
+      "Deep frying": [
+        "deep frying"
+      ],
+      "Deglazing": [
+        "deglazing"
+      ],
+      "Degreasing": [
+        "degreasing"
+      ],
+      "Dough sheeting": [
+        "dough sheeting"
+      ],
+      "Dredging": [
+        "dredging"
+      ],
+      "Dry roasting": [
+        "dry roasting"
+      ],
+      "Drying": [
+        "drying"
+      ],
+      "Dum pukht": [
+        "dum pukht"
+      ],
+      "Dutch oven cooking": [
+        "Dutch oven cooking"
+      ],
+      "Egg washing": [
+        "egg wash"
+      ],
+      "Emulsifying": [
+        "emulsify"
+      ],
+      "En papillote": [
+        "en papillote"
+      ],
+      "En vessie": [
+        "en vessie"
+      ],
+      "Engastration": [
+        "engastration"
+      ],
+      "Engine cooking": [
+        "engine cooking"
+      ],
+      "Fermentation": [
+        "fermentation"
+      ],
+      "Filleting": [
+        "fillet"
+      ],
+      "Flambéing": [
+        "flambé"
+      ],
+      "Food preservation": [
+        "food preservation"
+      ],
+      "Canning": [
+        "canning"
+      ],
+      "Fricassee": [
+        "fricassee"
+      ],
+      "Frosting": [
+        "frosting"
+      ],
+      "Frying": [
+        "frying"
+      ],
+      "Chicken frying": [
+        "chicken frying"
+      ],
+      "Garnishing": [
+        "garnish"
+      ],
+      "Gentle frying": [
+        "gentle frying"
+      ],
+      "Glazing": [
+        "glazing"
+      ],
+      "Grilling": [
+        "grilling"
+      ],
+      "Hāngī": [
+        "Hāngī"
+      ],
+      "High-altitude cooking": [
+        "high-altitude cooking"
+      ],
+      "Homogenization": [
+        "homogenization"
+      ],
+      "Hot salt frying": [
+        "hot salt frying"
+      ],
+      "Indirect grilling": [
+        "indirect grilling"
+      ],
+      "Infusion": [
+        "infusion",
+        "steeping"
+      ],
+      "Jugging": [
+        "jugging"
+      ],
+      "Juicing": [
+        "juicing"
+      ],
+      "Julienne": [
+        "Julienne"
+      ],
+      "Kalua": [
+        "kalua"
+      ],
+      "Karaage": [
+        "karaage"
+      ],
+      "Kho": [
+        "kho"
+      ],
+      "Kinpira": [
+        "kinpira"
+      ],
+      "Larding": [
+        "larding"
+      ],
+      "Low-temperature cooking": [
+        "low-temperature cooking"
+      ],
+      "Maceration": [
+        "maceration"
+      ],
+      "Marination": [
+        "marination"
+      ],
+      "Microwaving": [
+        "microwave cooking"
+      ],
+      "Mincing": [
+        "mincing"
+      ],
+      "Mongolian barbecue cooking": [
+        "Mongolian barbecue"
+      ],
+      "Nixtamalization": [
+        "nixtamalization"
+      ],
+      "Once-a-month cooking": [
+        "once-a-month cooking (OAMC)"
+      ],
+      "Outdoor cooking": [
+        "outdoor cooking"
+      ],
+      "Pan frying": [
+        "pan frying"
+      ],
+      "Parbaking": [
+        "parbaking"
+      ],
+      "Parboiling": [
+        "parboiling"
+      ],
+      "Pascalization": [
+        "pascalization"
+      ],
+      "Pasteurization": [
+        "pasteurization"
+      ],
+      "Flash pasteurization": [
+        "flash pasteurization"
+      ],
+      "Pickling": [
+        "pickling"
+      ],
+      "Poaching": [
+        "poaching"
+      ],
+      "Pressure cooking": [
+        "pressure cooking"
+      ],
+      "Pressure frying": [
+        "pressure frying"
+      ],
+      "Proofing": [
+        "proofing"
+      ],
+      "Pulling": [
+        "pulling"
+      ],
+      "Puréeing": [
+        "purée"
+      ],
+      "Reconstitution": [
+        "reconstitution"
+      ],
+      "Reduction": [
+        "reduction"
+      ],
+      "Rendering": [
+        "rendering"
+      ],
+      "Ricing": [
+        "ricing"
+      ],
+      "Roasting": [
+        "roasting"
+      ],
+      "Robatayaki": [
+        "robatayaki"
+      ],
+      "Rotisserie cooking": [
+        "rotisserie"
+      ],
+      "Sautéing": [
+        "sautéing"
+      ],
+      "Scoring": [
+        "score"
+      ],
+      "Searing": [
+        "searing"
+      ],
+      "Seasoning": [
+        "seasoning"
+      ],
+      "Separating eggs": [
+        "separating eggs"
+      ],
+      "Shallow frying": [
+        "shallow frying"
+      ],
+      "Shucking": [
+        "shuck"
+      ],
+      "Simmering": [
+        "simmering"
+      ],
+      "Skimming": [
+        "skimming"
+      ],
+      "Smoking": [
+        "smoking"
+      ],
+      "Smothering": [
+        "smothering"
+      ],
+      "Souring": [
+        "souring"
+      ],
+      "Sous-vide": [
+        "sous-vide"
+      ],
+      "Spatchcocking": [
+        "spatchcock"
+      ],
+      "Spherification": [
+        "spherification"
+      ],
+      "Steaming": [
+        "steaming"
+      ],
+      "Stewing": [
+        "stewing"
+      ],
+      "Stir frying": [
+        "stir frying"
+      ],
+      "Straight-dough method": [
+        "straight dough"
+      ],
+      "Stuffing food": [
+        "stuffing"
+      ],
+      "Sugar panning": [
+        "sugar panning"
+      ],
+      "Supreming": [
+        "supreme"
+      ],
+      "Sweating": [
+        "sweating"
+      ],
+      "Swissing": [
+        "Swissing"
+      ],
+      "Tataki": [
+        "Tataki"
+      ],
+      "Tempering": [
+        "tempering"
+      ],
+      "Tenderizing": [
+        "tenderizing"
+      ],
+      "Teriyaki cooking": [
+        "teriyaki"
+      ],
+      "Thermal cooking": [
+        "thermal cooking"
+      ],
+      "Thermization": [
+        "thermization"
+      ],
+      "Thickening": [
+        "thickening"
+      ],
+      "Trussing": [
+        "truss"
+      ],
+      "Turbo cooking": [
+        "turbo cooking"
+      ],
+      "Velveting": [
+        "velveting"
+      ],
+      "Whipping": [
+        "whip"
+      ],
+      "Wok cooking": [
+        "wok cooking"
+      ],
+      "Zesting": [
+        "zest"
+      ],
+      "Air frying": [
+        "Independent public-name supplement"
+      ],
+      "Broiling": [
+        "Independent public-name supplement"
+      ],
+      "Slow cooking": [
+        "Independent public-name supplement"
+      ],
+      "Toasting": [
+        "Independent public-name supplement"
+      ],
+      "Freezing": [
+        "Independent public-name supplement"
+      ],
+      "Kneading": [
+        "Independent public-name supplement"
+      ],
+      "Whisking": [
+        "Independent public-name supplement"
+      ],
+      "Beating": [
+        "Independent public-name supplement"
+      ],
+      "Folding": [
+        "Independent public-name supplement"
+      ],
+      "Mixing": [
+        "Independent public-name supplement"
+      ],
+      "Chopping": [
+        "Independent public-name supplement"
+      ],
+      "Dicing": [
+        "Independent public-name supplement"
+      ],
+      "Slicing": [
+        "Independent public-name supplement"
+      ],
+      "Grating": [
+        "Independent public-name supplement"
+      ],
+      "Peeling": [
+        "Independent public-name supplement",
+        "Independent public-name supplement"
+      ],
+      "Mashing": [
+        "Independent public-name supplement"
+      ],
+      "Straining": [
+        "Independent public-name supplement"
+      ],
+      "Sifting": [
+        "Independent public-name supplement"
+      ],
+      "Melting": [
+        "Independent public-name supplement"
+      ],
+      "Deboning": [
+        "Independent public-name supplement"
+      ],
+      "Blind baking": [
+        "Independent public-name supplement"
+      ],
+      "Docking": [
+        "Independent public-name supplement"
+      ],
+      "Laminating dough": [
+        "Independent public-name supplement"
+      ],
+      "Autolyse": [
+        "Independent public-name supplement"
+      ],
+      "Stretch and fold": [
+        "Independent public-name supplement"
+      ],
+      "Punching down": [
+        "Independent public-name supplement"
+      ],
+      "Rolling out": [
+        "Independent public-name supplement"
+      ],
+      "Breading": [
+        "Independent public-name supplement"
+      ],
+      "Battering": [
+        "Independent public-name supplement"
+      ],
+      "Butterflying": [
+        "Independent public-name supplement"
+      ],
+      "Flash freezing": [
+        "Independent public-name supplement"
+      ],
+      "Freeze drying": [
+        "Independent public-name supplement"
+      ],
+      "Clarifying": [
+        "Independent public-name supplement"
+      ],
+      "Churning": [
+        "Independent public-name supplement"
+      ],
+      "Grinding": [
+        "Independent public-name supplement"
+      ],
+      "Crushing": [
+        "Independent public-name supplement"
+      ],
+      "Pounding": [
+        "Independent public-name supplement"
+      ],
+      "Piping": [
+        "Independent public-name supplement"
+      ],
+      "Stirring": [
+        "Independent public-name supplement"
+      ],
+      "Draining": [
+        "Independent public-name supplement"
+      ],
+      "Rinsing": [
+        "Independent public-name supplement"
+      ],
+      "Washing": [
+        "Independent public-name supplement"
+      ],
+      "Charring": [
+        "Independent public-name supplement"
+      ],
+      "Vacuum packing": [
+        "Independent public-name supplement"
+      ],
+      "Salt baking": [
+        "Independent public-name supplement"
+      ],
+      "Stone boiling": [
+        "Independent public-name supplement"
+      ]
+    }
+  },
+  "nuts-seeds": {
+    "sourceRows": 100,
+    "held": [
+      {
+        "sourceLabel": "botanical nuts",
+        "reason": "Classification heading, reference title, morphology text or navigation, not a food nut/seed identity."
+      },
+      {
+        "sourceLabel": "Drupes",
+        "reason": "Classification heading, reference title, morphology text or navigation, not a food nut/seed identity."
+      },
+      {
+        "sourceLabel": "Gymnosperm",
+        "reason": "Classification heading, reference title, morphology text or navigation, not a food nut/seed identity."
+      },
+      {
+        "sourceLabel": "Angiosperm",
+        "reason": "Classification heading, reference title, morphology text or navigation, not a food nut/seed identity."
+      },
+      {
+        "sourceLabel": "cold-tolerant",
+        "reason": "Classification heading, reference title, morphology text or navigation, not a food nut/seed identity."
+      },
+      {
+        "sourceLabel": "List of edible seeds",
+        "reason": "Classification heading, reference title, morphology text or navigation, not a food nut/seed identity."
+      },
+      {
+        "sourceLabel": "The Encyclopedia of Fruit and Nuts",
+        "reason": "Classification heading, reference title, morphology text or navigation, not a food nut/seed identity."
+      },
+      {
+        "sourceLabel": "Native American Food Plants: An Ethnobotanical Dictionary",
+        "reason": "Classification heading, reference title, morphology text or navigation, not a food nut/seed identity."
+      },
+      {
+        "sourceLabel": "Permaculture plants: a selection",
+        "reason": "Classification heading, reference title, morphology text or navigation, not a food nut/seed identity."
+      },
+      {
+        "sourceLabel": "The Book of Edible Nuts",
+        "reason": "Classification heading, reference title, morphology text or navigation, not a food nut/seed identity."
+      }
+    ],
+    "canonicalAnswers": 174,
+    "independentFamiliarInputs": 68,
+    "canonicalSourceMap": {
+      "Acorn": [
+        "Acorn"
+      ],
+      "Beech nut": [
+        "Beech"
+      ],
+      "American beech nut": [
+        "American beech"
+      ],
+      "European beech nut": [
+        "European beech"
+      ],
+      "Breadnut": [
+        "Breadnut",
+        "Bread nuts"
+      ],
+      "Candlenut": [
+        "Candlenut"
+      ],
+      "Chestnut": [
+        "Chestnuts"
+      ],
+      "Chinese chestnut": [
+        "Chinese chestnuts"
+      ],
+      "Sweet chestnut": [
+        "Sweet chestnuts"
+      ],
+      "Water caltrop": [
+        "water chestnut",
+        "Independent public-name supplement"
+      ],
+      "Guinea peanut": [
+        "Guinea peanut"
+      ],
+      "Hazelnut": [
+        "Hazelnuts",
+        "Filbert"
+      ],
+      "American hazelnut": [
+        "American hazelnut"
+      ],
+      "Deeknut": [
+        "Deeknut"
+      ],
+      "Beaked hazelnut": [
+        "Eastern and western beaked hazel"
+      ],
+      "European hazelnut": [
+        "European hazelnut"
+      ],
+      "Johnstone River almond": [
+        "Johnstone River almond"
+      ],
+      "Karuka": [
+        "Karuka"
+      ],
+      "Planted karuka": [
+        "Planted karuka"
+      ],
+      "Wild karuka": [
+        "Wild karuka"
+      ],
+      "Kola nut": [
+        "Kola nut"
+      ],
+      "Kurrajong": [
+        "Kurrajong"
+      ],
+      "Malabar chestnut": [
+        "Malabar chestnut"
+      ],
+      "Mongongo": [
+        "Mongongo"
+      ],
+      "Sacha inchi": [
+        "Sacha inchi"
+      ],
+      "Palm nut": [
+        "Palm nuts"
+      ],
+      "Red bopple nut": [
+        "Red bopple nut"
+      ],
+      "Yellow walnut": [
+        "Yellow walnut"
+      ],
+      "Almond": [
+        "Almonds"
+      ],
+      "Apricot kernel": [
+        "Apricot"
+      ],
+      "Australian cashew nut": [
+        "Australian cashew nut"
+      ],
+      "Baru nut": [
+        "Baru nut"
+      ],
+      "Betel nut": [
+        "Betel"
+      ],
+      "Borneo tallow nut": [
+        "Borneo tallow nuts"
+      ],
+      "Canarium nut": [
+        "Canarium",
+        "Canarium nut"
+      ],
+      "Chinese olive": [
+        "Chinese olive"
+      ],
+      "Pili nut": [
+        "Pili nuts"
+      ],
+      "Cashew": [
+        "Cashews"
+      ],
+      "Chilean hazel": [
+        "Chilean hazel"
+      ],
+      "Coconut": [
+        "Coconut"
+      ],
+      "Gabon nut": [
+        "Gabon nut"
+      ],
+      "Hickory nut": [
+        "Hickory"
+      ],
+      "Mockernut hickory nut": [
+        "Mockernut hickory"
+      ],
+      "Pecan": [
+        "Pecans"
+      ],
+      "Shagbark hickory nut": [
+        "Shagbark hickory"
+      ],
+      "Shellbark hickory nut": [
+        "Shellbark hickory"
+      ],
+      "Ogbono nut": [
+        "Ogbono nut",
+        "Irvingia",
+        "Irvingia gabonensis"
+      ],
+      "Jackfruit seed": [
+        "Jack nuts"
+      ],
+      "Jelly palm nut": [
+        "Jelly palm nut"
+      ],
+      "Panda oleosa": [
+        "Panda oleosa"
+      ],
+      "Pekea nut": [
+        "Pekea nut"
+      ],
+      "Pistachio": [
+        "Pistachio"
+      ],
+      "Walnut": [
+        "Walnut"
+      ],
+      "Black walnut": [
+        "Black walnut"
+      ],
+      "Butternut": [
+        "Butternut"
+      ],
+      "English walnut": [
+        "English walnut"
+      ],
+      "Heartnut": [
+        "Heartnut"
+      ],
+      "Cycad seed": [
+        "Cycads"
+      ],
+      "Burrawang nut": [
+        "Burrawang nut"
+      ],
+      "Ginkgo nut": [
+        "Ginkgo nuts"
+      ],
+      "Araucaria nut": [
+        "Araucaria"
+      ],
+      "Bunya nut": [
+        "Bunya nut"
+      ],
+      "Paraná pine nut": [
+        "Paraná pine nut"
+      ],
+      "Pine nut": [
+        "Pine nuts"
+      ],
+      "Chilgoza pine nut": [
+        "Chilgoza pine"
+      ],
+      "Colorado pinyon nut": [
+        "Colorado pinyon"
+      ],
+      "Korean pine nut": [
+        "Korean pine"
+      ],
+      "Mexican pinyon nut": [
+        "Mexican pinyon"
+      ],
+      "Single-leaf pinyon nut": [
+        "Single-leaf pinyon"
+      ],
+      "Stone pine nut": [
+        "Stone pine"
+      ],
+      "Torreya nut": [
+        "Torreya nuts"
+      ],
+      "Chinese nutmeg-yew nut": [
+        "Chinese nutmeg-yew nuts"
+      ],
+      "Japanese nutmeg-yew nut": [
+        "Japanese nutmeg-yew"
+      ],
+      "California nutmeg seed": [
+        "California nutmeg tree"
+      ],
+      "Gnetum nut": [
+        "Gnetum nuts"
+      ],
+      "Brazil nut": [
+        "Brazil nut"
+      ],
+      "Macadamia": [
+        "Macadamia",
+        "Macadamia nut"
+      ],
+      "Queensland macadamia nut": [
+        "Queensland macadamia nut"
+      ],
+      "Paradise nut": [
+        "Paradise nut"
+      ],
+      "Peanut": [
+        "Peanut"
+      ],
+      "Peanut tree seed": [
+        "Peanut tree"
+      ],
+      "Soybean": [
+        "Soybean"
+      ],
+      "Tiger nut": [
+        "Tiger nut"
+      ],
+      "Sunflower seed": [
+        "Independent public-name supplement"
+      ],
+      "Pumpkin seed": [
+        "Independent public-name supplement"
+      ],
+      "Sesame seed": [
+        "Independent public-name supplement"
+      ],
+      "Poppy seed": [
+        "Independent public-name supplement"
+      ],
+      "Chia seed": [
+        "Independent public-name supplement"
+      ],
+      "Flaxseed": [
+        "Independent public-name supplement"
+      ],
+      "Hemp seed": [
+        "Independent public-name supplement"
+      ],
+      "Watermelon seed": [
+        "Independent public-name supplement"
+      ],
+      "Muskmelon seed": [
+        "Independent public-name supplement"
+      ],
+      "Lotus seed": [
+        "Independent public-name supplement"
+      ],
+      "Cacao bean": [
+        "Independent public-name supplement"
+      ],
+      "Coffee bean": [
+        "Independent public-name supplement"
+      ],
+      "Rice": [
+        "Independent public-name supplement"
+      ],
+      "Wheat": [
+        "Independent public-name supplement"
+      ],
+      "Maize": [
+        "Independent public-name supplement"
+      ],
+      "Oat": [
+        "Independent public-name supplement"
+      ],
+      "Barley": [
+        "Independent public-name supplement"
+      ],
+      "Rye": [
+        "Independent public-name supplement"
+      ],
+      "Millet": [
+        "Independent public-name supplement"
+      ],
+      "Sorghum": [
+        "Independent public-name supplement"
+      ],
+      "Quinoa": [
+        "Independent public-name supplement"
+      ],
+      "Amaranth": [
+        "Independent public-name supplement"
+      ],
+      "Buckwheat": [
+        "Independent public-name supplement"
+      ],
+      "Lentil": [
+        "Independent public-name supplement"
+      ],
+      "Chickpea": [
+        "Independent public-name supplement"
+      ],
+      "Pea": [
+        "Independent public-name supplement"
+      ],
+      "Kidney bean": [
+        "Independent public-name supplement"
+      ],
+      "Black bean": [
+        "Independent public-name supplement"
+      ],
+      "Mung bean": [
+        "Independent public-name supplement"
+      ],
+      "Fava bean": [
+        "Independent public-name supplement"
+      ],
+      "Lima bean": [
+        "Independent public-name supplement"
+      ],
+      "Cowpea": [
+        "Independent public-name supplement"
+      ],
+      "Fennel seed": [
+        "Independent public-name supplement"
+      ],
+      "Cumin seed": [
+        "Independent public-name supplement"
+      ],
+      "Coriander seed": [
+        "Independent public-name supplement"
+      ],
+      "Mustard seed": [
+        "Independent public-name supplement"
+      ],
+      "Caraway seed": [
+        "Independent public-name supplement"
+      ],
+      "Fenugreek seed": [
+        "Independent public-name supplement"
+      ],
+      "Nigella seed": [
+        "Independent public-name supplement"
+      ],
+      "Cardamom seed": [
+        "Independent public-name supplement"
+      ],
+      "Anise seed": [
+        "Independent public-name supplement"
+      ],
+      "Ajwain": [
+        "Independent public-name supplement"
+      ],
+      "Dill seed": [
+        "Independent public-name supplement"
+      ],
+      "Bambara groundnut": [
+        "Independent public-name supplement"
+      ],
+      "Wild rice": [
+        "Independent public-name supplement"
+      ],
+      "Teff": [
+        "Independent public-name supplement"
+      ],
+      "Fonio": [
+        "Independent public-name supplement"
+      ],
+      "Triticale": [
+        "Independent public-name supplement"
+      ],
+      "Durum wheat": [
+        "Independent public-name supplement"
+      ],
+      "Spelt": [
+        "Independent public-name supplement"
+      ],
+      "Einkorn wheat": [
+        "Independent public-name supplement"
+      ],
+      "Emmer wheat": [
+        "Independent public-name supplement"
+      ],
+      "Khorasan wheat": [
+        "Independent public-name supplement"
+      ],
+      "Finger millet": [
+        "Independent public-name supplement"
+      ],
+      "Pearl millet": [
+        "Independent public-name supplement"
+      ],
+      "Proso millet": [
+        "Independent public-name supplement"
+      ],
+      "Foxtail millet": [
+        "Independent public-name supplement"
+      ],
+      "Little millet": [
+        "Independent public-name supplement"
+      ],
+      "Kodo millet": [
+        "Independent public-name supplement"
+      ],
+      "Barnyard millet": [
+        "Independent public-name supplement"
+      ],
+      "Pigeon pea": [
+        "Independent public-name supplement"
+      ],
+      "Adzuki bean": [
+        "Independent public-name supplement"
+      ],
+      "Navy bean": [
+        "Independent public-name supplement"
+      ],
+      "Pinto bean": [
+        "Independent public-name supplement"
+      ],
+      "Great Northern bean": [
+        "Independent public-name supplement"
+      ],
+      "Cranberry bean": [
+        "Independent public-name supplement"
+      ],
+      "Cannellini bean": [
+        "Independent public-name supplement"
+      ],
+      "Lupin bean": [
+        "Independent public-name supplement"
+      ],
+      "Horse gram": [
+        "Independent public-name supplement"
+      ],
+      "Urad bean": [
+        "Independent public-name supplement"
+      ],
+      "Moth bean": [
+        "Independent public-name supplement"
+      ],
+      "Winged bean seed": [
+        "Independent public-name supplement"
+      ],
+      "Jack bean seed": [
+        "Independent public-name supplement"
+      ],
+      "Velvet bean seed": [
+        "Independent public-name supplement"
+      ],
+      "Sword bean seed": [
+        "Independent public-name supplement"
+      ],
+      "Celery seed": [
+        "Independent public-name supplement"
+      ],
+      "Nutmeg": [
+        "Independent public-name supplement"
+      ],
+      "Allspice seed": [
+        "Independent public-name supplement"
+      ],
+      "Safflower seed": [
+        "Independent public-name supplement"
+      ],
+      "Egusi": [
+        "Independent public-name supplement"
+      ],
+      "Cucumber seed": [
+        "Independent public-name supplement"
+      ],
+      "Cantaloupe seed": [
+        "Independent public-name supplement"
+      ],
+      "Squash seed": [
+        "Independent public-name supplement"
+      ],
+      "Papaya seed": [
+        "Independent public-name supplement"
+      ],
+      "Tamarind seed": [
+        "Independent public-name supplement"
+      ],
+      "Pomegranate seed": [
+        "Independent public-name supplement"
+      ],
+      "Grape seed": [
+        "Independent public-name supplement"
+      ],
+      "Bay nut": [
+        "Independent public-name supplement"
+      ],
+      "Chinquapin nut": [
+        "Independent public-name supplement"
+      ],
+      "Breadfruit seed": [
+        "Independent public-name supplement"
+      ],
+      "Chilean pine nut": [
+        "Independent public-name supplement",
+        "Monkey-puzzle nut"
+      ]
+    }
+  }
+}
