@@ -17,6 +17,7 @@ export function questionFormat(pack){
   'authored-whole-familiar-food-concept':'Cooking & ingredients',
   'authored-whole-game-concept':'Game rules & objects',
   'authored-whole-brand-inventory':'Brands',
+  'authored-whole-familiar-brands-platforms':'Brands & online communities',
   'authored-whole-color-inventory':'Colors & shades',
   'authored-whole-roster':'Characters & rosters',
   'authored-whole-taxonomic-group':'Animal kinds',

@@ -1,0 +1,883 @@
+{
+  "hotel-brands": {
+    "holds": {
+      "Le Fouquet's Paris": "Individual property rather than a chain or named operating brand.",
+      "Le Majestic Cannes": "Individual property rather than a chain or named operating brand.",
+      "Le Normandy Deauville": "Individual property rather than a chain or named operating brand.",
+      "Les Neiges Courchevel": "Individual property rather than a chain or named operating brand.",
+      "The Pierre": "Individual property rather than a chain or named operating brand.",
+      "OYO Hotel & Casino": "Individual property rather than a chain or named operating brand.",
+      "Soneva Fushi": "Individual property rather than a chain or named operating brand.",
+      "Soneva Jani": "Individual property rather than a chain or named operating brand.",
+      "Soneva Kiri": "Individual property rather than a chain or named operating brand.",
+      "Soneva Secret": "Individual property rather than a chain or named operating brand.",
+      "World-wide": "A geographic table cell.",
+      "Hashoo Group (Pearl-Continental & Resorts)": "Merged source company and brand labels; use explicitly separated actual hotel brands.",
+      "Zhe • Brown": "Unverified malformed translated brand label; not converted into an invented English name.",
+      "Li Feng": "Unverified translated/fragmentary label; primary Lavande name requires separate evidence.",
+      "Tulip Golden Tulip": "Merged source labels, not one actual brand; reconcile from operator portfolio.",
+      "The Residences": "Generic source label insufficient to identify a specific brand.",
+      "Blackstone Group (The)": "Diversified investment firm rather than a hotel brand or primarily hotel-operating group.",
+      "Disney Experiences": "Theme-park division rather than an actual hotel brand; individual Disney resort hotels are not separate brands.",
+      "Grand Copthrone Hotels": "Misspelled property/brand confusion; a distinct operating Grand Copthorne brand was not established.",
+      "Roomph": "Booking/technology service rather than a hotel brand.",
+      "onefinestay": "Vacation-home rental service outside the stated hotel/motel/hostel/serviced-apartment scope.",
+      "favstay": "Vacation rental platform rather than a hotel chain.",
+      "OYO Vacation Homes": "Vacation-home rental grouping outside the hotel brand scope.",
+      "Undergraduate by Hilton": "Publisher says first stays are in 2027, after this operating-brand snapshot.",
+      "Elite Havens": "Vacation villa rental management rather than a hotel chain.",
+      "Homes & Villas by Marriott Bonvoy": "Private vacation-home rental service outside the stated hotel/serviced-apartment scope.",
+      "Denizen Hotels": "Announced Hilton concept that never opened, rather than an operating hotel chain.",
+      "Nickelodeon Resorts by Marriott": "Canceled unbuilt concept; not the separate operating Karisma Nickelodeon Hotels & Resorts brand.",
+      "Parliament House Motor Inn": "A single independent Orlando property, not a chain.",
+      "Capital Bars": "Predominantly pub operator; a distinct hotel-chain identity is not established.",
+      "Norsk Spisevognselskap": "Primarily railway catering; a separately recognized hotel-chain identity is not established.",
+      "Van Noy Railway News and Hotel Company": "Primarily railway news/catering business; hotel-brand scope is not established."
+    },
+    "renameRepairs": {
+      "Grand Millenium Hotels": "Grand Millennium Hotels",
+      "Pearl-Continental Hotels & Resorts PC Signature Collection": "Pearl-Continental Hotels & Resorts",
+      "Jinjiang Metropolis": "Metropolo",
+      "7 days": "7 Days Inn",
+      "M-Star Hotels": "M Star Hotels",
+      "S Hotels & Resorts†www.shotelsresorts.com": "S Hotels & Resorts"
+    },
+    "aliasMerges": {
+      "Hilton": [
+        "Hilton Worldwide",
+        "Hilton Hotels & Resorts"
+      ],
+      "Marriott": [
+        "Marriott International",
+        "Marriott Hotels"
+      ],
+      "Hyatt": [
+        "Hyatt Hotels Corporation",
+        "Hyatt Hotels"
+      ],
+      "Aman": [
+        "Aman Resorts"
+      ],
+      "Ascott": [
+        "Ascott Limited (The)"
+      ],
+      "Four Seasons": [
+        "Four Seasons Hotels",
+        "Four Seasons Hotels and Resorts"
+      ],
+      "Banyan Tree": [
+        "Banyan Group Limited",
+        "Banyan Tree Hótels and Resorts"
+      ],
+      "Belmond": [
+        "Belmond Limited"
+      ],
+      "Best Western": [
+        "Best Western Hotels"
+      ],
+      "Choice Hotels": [
+        "Choice Hotels International"
+      ],
+      "Conrad": [
+        "Conrad Hotels",
+        "Conrad Hotels & Resorts"
+      ],
+      "DoubleTree": [
+        "DoubleTree by Hilton"
+      ],
+      "Canopy by Hilton": [
+        "Canopy Hotels"
+      ],
+      "Curio Collection": [
+        "Curio Collection by Hilton"
+      ],
+      "Embassy Suites": [
+        "Embassy Suites Hotels",
+        "Embassy Suites by Hilton"
+      ],
+      "Hampton Inn": [
+        "Hampton by Hilton",
+        "Hampton",
+        "Hampton Inn & Suites"
+      ],
+      "Homewood Suites": [
+        "Homewood Suites by Hilton"
+      ],
+      "Home2 Suites": [
+        "Home2 Suites by Hilton"
+      ],
+      "Tru by Hilton": [
+        "Tru"
+      ],
+      "Waldorf Astoria": [
+        "Waldorf Astoria Hotels & Resorts"
+      ],
+      "LXR Hotels & Resorts": [
+        "LXR"
+      ],
+      "Signia by Hilton": [
+        "Signia Hilton"
+      ],
+      "Graduate Hotels": [
+        "Graduate by Hilton"
+      ],
+      "LivSmart Studios": [
+        "LivSmart Studios by Hilton"
+      ],
+      "Spark by Hilton": [
+        "Spark"
+      ],
+      "Apartment Collection by Hilton": [
+        "Hilton Apartment Collection"
+      ],
+      "Outset Collection by Hilton": [
+        "Outset Collection"
+      ],
+      "Ritz-Carlton": [
+        "The Ritz-Carlton"
+      ],
+      "Ritz-Carlton Reserve": [
+        "The Ritz-Carlton Reserve"
+      ],
+      "St. Regis": [
+        "St Regis"
+      ],
+      "JW Marriott": [
+        "JW Marriott Hotels"
+      ],
+      "Luxury Collection": [
+        "The Luxury Collection"
+      ],
+      "Edition": [
+        "EDITION",
+        "Edition Hotels"
+      ],
+      "Courtyard": [
+        "Courtyard by Marriott"
+      ],
+      "Four Points by Sheraton": [
+        "Four Points",
+        "Four Points​"
+      ],
+      "Fairfield Inn": [
+        "Fairfield",
+        "Fairfield by Marriott",
+        "Fairfield Inn by Marriott",
+        "Fairfield Inn & Suites"
+      ],
+      "Residence Inn": [
+        "Residence Inn by Marriott"
+      ],
+      "Aloft": [
+        "Aloft Hotels"
+      ],
+      "Moxy": [
+        "Moxy Hotels",
+        "MOXY Hotels"
+      ],
+      "Element": [
+        "Element Hotels"
+      ],
+      "Renaissance": [
+        "Renaissance Hotels"
+      ],
+      "Westin": [
+        "Westin Hotels & Resorts"
+      ],
+      "Marriott Vacation Club": [
+        "The Marriott Vacation Clubs",
+        "Marriott Vacation Clubs"
+      ],
+      "Marriott Executive Apartments": [
+        "Marriott Executive Apartment"
+      ],
+      "Protea Hotels": [
+        "Protea​ Hotels"
+      ],
+      "Delta Hotels": [
+        "Delta Hotels by Marriott",
+        "Delta"
+      ],
+      "Bulgari Hotels": [
+        "Bvlgari Hotels"
+      ],
+      "InterContinental": [
+        "InterContinental Hotels and Resorts"
+      ],
+      "Regent": [
+        "Regent Hotels",
+        "Regent Hotels & Resorts"
+      ],
+      "Kimpton": [
+        "Kimpton Hotels & Restaurants"
+      ],
+      "Hualuxe": [
+        "Hualuxe Hotels & Resorts",
+        "HUALUXE Hotels & Resorts"
+      ],
+      "Ruby": [
+        "Ruby Hotels"
+      ],
+      "Ibis": [
+        "ibis"
+      ],
+      "Ibis Styles": [
+        "ibis Styles"
+      ],
+      "Ibis Budget": [
+        "ibis budget"
+      ],
+      "HotelF1": [
+        "Hotel F1",
+        "hotelF1"
+      ],
+      "Jo&Joe": [
+        "Jo&Joe",
+        "JO&JOE"
+      ],
+      "21c Museum Hotels": [
+        "21c MuseumHotel"
+      ],
+      "25hours Hotels": [
+        "25 Hours"
+      ],
+      "MGallery": [
+        "MGallery Collection"
+      ],
+      "Morgans Originals": [
+        "The House of Originals"
+      ],
+      "Grand Mercure": [
+        "Grand Mercure Hotel"
+      ],
+      "Mövenpick": [
+        "Movenpick"
+      ],
+      "Swissôtel": [
+        "Swissotel"
+      ],
+      "BreakFree": [
+        "Breakfree"
+      ],
+      "Tribe": [
+        "TRIBE"
+      ],
+      "Aiden by Best Western": [
+        "Aiden"
+      ],
+      "SureStay": [
+        "SureStay Hotel by Best Western"
+      ],
+      "SureStay Plus": [
+        "SureStay Plus Hotel by Best Western"
+      ],
+      "SureStay Collection": [
+        "SureStay Collection by Best Western"
+      ],
+      "BW Signature Collection": [
+        "BW Signature Collection by Best Western"
+      ],
+      "Comfort Inn": [
+        "Comfort Inn & Suites"
+      ],
+      "Quality Inn": [
+        "Quality"
+      ],
+      "Drury": [
+        "Drury Hotels"
+      ],
+      "Country Inn & Suites": [
+        "Country Inns & Suites"
+      ],
+      "Park Inn": [
+        "Park Inn by Radisson"
+      ],
+      "Red Lion": [
+        "Red Lion Hotels",
+        "Red Lion Hotels Corporation"
+      ],
+      "Tapestry Collection": [
+        "Tapestry Collection by Hilton"
+      ],
+      "Hyatt House": [
+        "Hyatt House Hotels",
+        "Summerfield Suites"
+      ],
+      "Loews": [
+        "Loews Hotels"
+      ],
+      "IHG": [
+        "IHG Hotels & Resorts",
+        "InterContinental Hotels Group"
+      ],
+      "Mandarin Oriental": [
+        "Mandarin Oriental Hotel Group"
+      ],
+      "Oberoi": [
+        "Oberoi Group",
+        "Oberoi Hotels"
+      ],
+      "Omni": [
+        "Omni Hotels & Resorts"
+      ],
+      "Peninsula": [
+        "The Peninsula Hotels"
+      ],
+      "Taj": [
+        "Taj Hotels and Resorts"
+      ],
+      "Rosewood": [
+        "Rosewood Hotels & Resorts",
+        "Rosewood Hotel Group"
+      ],
+      "Shangri-La": [
+        "Shangri-La Hotels",
+        "Shangri-La Hotels and Resorts"
+      ],
+      "Pan Pacific": [
+        "Pan Pacific Hotels and Resorts"
+      ],
+      "RIU": [
+        "RIU Hotels & Resorts"
+      ],
+      "Rotana": [
+        "Rotana Hotels",
+        "Rotana Hotels & Resorts"
+      ],
+      "Scandic": [
+        "Scandic Hotels"
+      ],
+      "Jetwing": [
+        "Jetwing Hotels",
+        "Jetwing Hotels Ltd"
+      ],
+      "Cinnamon": [
+        "Cinnamon Hotels & Resorts",
+        "Cinnamon Hotels and Resorts"
+      ],
+      "Avari": [
+        "Avari Hotels",
+        "Avari hotels"
+      ],
+      "Wyndham": [
+        "Wyndham Hotels & Resorts"
+      ],
+      "Howard Johnson": [
+        "Howard Johnson's"
+      ],
+      "HomeTowne Studios": [
+        "HomeTowne Studios by Red Roof"
+      ],
+      "Cambria Hotels": [
+        "Cambria"
+      ],
+      "Ginger Hotels": [
+        "Ginger"
+      ],
+      "Radisson Hotel Group": [
+        "Carlson Rezidor"
+      ],
+      "H World": [
+        "Huazhu Hotels Group",
+        "H World Group"
+      ],
+      "Lotte Hotels": [
+        "Lotte Hotels & Resorts"
+      ],
+      "Langham": [
+        "Langham Hospitality Group",
+        "Langham Hotels"
+      ],
+      "NH Hotels": [
+        "NH Hotel Group"
+      ],
+      "Meliá": [
+        "Meliá Hotels International",
+        "Melia"
+      ],
+      "PARKROYAL": [
+        "Parkroyal"
+      ],
+      "PARKROYAL Collection": [
+        "PARKROYAL COLLECTION"
+      ],
+      "OYO": [
+        "OYO Rooms"
+      ],
+      "Ascend Hotel Collection": [
+        "Ascend Collection"
+      ],
+      "Premier Inn": [
+        "Premier Inns"
+      ],
+      "Dusit": [
+        "Dusit International"
+      ],
+      "Sonesta": [
+        "Sonesta Hotels & Resorts"
+      ],
+      "Yotel": [
+        "YOTEL"
+      ],
+      "Extended Stay America": [
+        "Extended Stay"
+      ],
+      "Red Roof Inn": [
+        "Red Roof"
+      ],
+      "La Quinta": [
+        "La Quinta Inn & Suites"
+      ],
+      "Copthorne Hotels": [
+        "Copthorne"
+      ],
+      "Grand Millennium Hotels": [
+        "Grand Millennium"
+      ],
+      "Interstate Hotels & Resorts": [
+        "Interstate Hotels"
+      ],
+      "Baglioni Hotels": [
+        "Baglioni"
+      ],
+      "Hoshino Resorts": [
+        "Hoshino"
+      ],
+      "UrCove by Hyatt": [
+        "UrCove"
+      ],
+      "Royal Sonesta": [
+        "The Royal Sonesta"
+      ],
+      "Classico": [
+        "Classico A Sonesta Collection"
+      ],
+      "Hyatt Vacation Club": [
+        "Hyatt Residence Club"
+      ],
+      "JdV by Hyatt": [
+        "Joie de Vivre"
+      ],
+      "The Unbound Collection by Hyatt": [
+        "Unbound Collection"
+      ],
+      "Thompson Hotels": [
+        "Thompson"
+      ],
+      "Golden Tulip": [
+        "Golden Tulip Hotels"
+      ],
+      "Hôtels & Préférence": [
+        "Hotels & Preference"
+      ],
+      "GreenTree Inn": [
+        "GreenTree Inns"
+      ],
+      "Red Planet Hotels": [
+        "Red Planet"
+      ],
+      "Prince Hotels": [
+        "Prince"
+      ],
+      "Trusthouse Forte": [
+        "Forte Group"
+      ],
+      "Suburban Studios": [
+        "Suburban Extended Stay Hotels"
+      ],
+      "Jinjiang Inns": [
+        "Jinjiang Inn"
+      ],
+      "Motel 168": [
+        "Motel168"
+      ],
+      "Holiday Inn - the niu": [
+        "The Niu"
+      ],
+      "AmeriSuites": [
+        "Amerisuites Hotels"
+      ],
+      "Adam’s Mark": [
+        "Adam's Mark"
+      ],
+      "Horne’s": [
+        "Horne's"
+      ],
+      "Hyatt Place": [
+        "AmeriSuites",
+        "Amerisuites Hotels"
+      ],
+      "Leonardo Hotels": [
+        "Jurys Inn"
+      ],
+      "Strawberry": [
+        "Nordic Choice Hotels"
+      ],
+      "Clarion": [
+        "Clarion Hotel",
+        "Clarion Hotels"
+      ],
+      "Home Hotel": [
+        "Clarion Collection Hotel",
+        "Clarion Collection"
+      ],
+      "Capri by Fraser": [
+        "Capri"
+      ],
+      "Modena by Fraser": [
+        "Modena"
+      ],
+      "Hotel du Vin": [
+        "Hotel du Vin & Bistro"
+      ],
+      "Nickelodeon Hotels & Resorts": [
+        "Nickelodeon Hotels and Resorts",
+        "Nick Resorts"
+      ]
+    },
+    "sourceSupplements": {
+      "https://newsroom.hyatt.com/hyatt-hotels-corporation-fact-sheet": "Alila|Thompson Hotels|Miraval|Hyatt Vacation Club|Hyatt Studios|UrCove by Hyatt|Dream Hotels|Caption by Hyatt|The Unbound Collection by Hyatt|Destination by Hyatt|JdV by Hyatt|Impression by Secrets|Hyatt Ziva|Hyatt Zilara|Zoëtry Wellness & Spa Resorts|Secrets Resorts & Spas|Breathless Resorts & Spas|Dreams Resorts & Spas|Hyatt Vivid Hotels & Resorts|Alua Hotels & Resorts|Sunscape Resorts & Spas",
+      "https://www.sonesta.com/our-brands": "Sonesta|Royal Sonesta|The James Hotels|Classico A Sonesta Collection|Sonesta Essential|Sonesta ES Suites|Sonesta Simply Suites",
+      "https://www.yotel.com/en/hotels": "Yotel|YotelAir|YotelPad",
+      "https://www.extendedstayamerica.com/": "Extended Stay America|Extended Stay America Suites|Extended Stay America Premier Suites|Extended Stay America Select Suites",
+      "https://www.choicehotels.com/comfort-hotels": "Comfort Suites|Clarion Pointe",
+      "https://www.metropolohotels.com/": "Metropolo",
+      "https://www.leonardo-hotels.com/": "Leonardo Hotels",
+      "https://www.karismahotels.com/nickelodeon-hotels-resorts/our-resorts": "Nickelodeon Hotels & Resorts",
+      "https://www.frasershospitality.com/en/our-brands/": "Frasers Hospitality|Fraser Suites|Fraser Residence|Fraser Place|Capri by Fraser|Modena by Fraser|Malmaison|Hotel du Vin",
+      "https://www.strawberryhotels.com/brands/": "Strawberry|Home Hotel|Comfort Hotel|Quality Hotel|Stopover",
+      "https://careers.hyatt.com/assets/documents/2025_CMT_US_Brochure.pdf": "The Standard|Bunkhouse|me and all hotels",
+      "https://corporate.louvrehotels.com/en-us/our-brands/": "Première Classe|Hosho|Kyriad|Campanile|Campanile Prime|Campanile Nature|Tulip Hotels & Residences|Tulip Inn|Golden Tulip|Royal Tulip|Sarovar|Hôtels & Préférence|TemptingPlaces"
+    }
+  },
+  "social-platforms": {
+    "holds": {
+      "Fetlife": "Dedicated dating/adult service outside the explicitly general-audience social/community scope.",
+      "Grindr": "Dedicated dating/adult service outside the explicitly general-audience social/community scope.",
+      "Sharesome": "Dedicated dating/adult service outside the explicitly general-audience social/community scope.",
+      "Rentboy.com": "Dedicated dating/adult service outside the explicitly general-audience social/community scope.",
+      "Fling": "Dedicated dating/adult service outside the explicitly general-audience social/community scope.",
+      "Twoo.com": "Dedicated dating/adult service outside the explicitly general-audience social/community scope.",
+      "Moodle": "Learning-management software rather than a dedicated public social/community platform.",
+      "Kobo": "Ebook store/reader; source does not establish a separately named social platform identity.",
+      "SocialVibe": "Advertising technology company rather than a standalone public social platform.",
+      "Total Recut": "Video remixer with insufficient evidence of a public community platform.",
+      "Wooxie": "Low-evidence old source stub; actual platform role not established.",
+      "Wellwer": "Low-evidence old source stub; actual platform role not established.",
+      "Wepolls.com": "Low-evidence old source stub; actual platform role not established.",
+      "Poolwo": "Low-evidence old source stub; actual platform role not established.",
+      "Smartican": "Low-evidence old source stub; actual platform role not established.",
+      "NGO Post": "Low-evidence old source stub; actual platform role not established.",
+      "Qapacity": "Business website builder; a separately named public community platform is not established.",
+      "Pingsta": "Expert support/consultancy service; public social-platform role not established.",
+      "Zooppa": "Creative crowdsourcing agency rather than a general online community platform.",
+      "FledgeWing": "Entrepreneurship portal with insufficient evidence of a public social platform.",
+      "Hotlist": "Event-discovery service; a distinct social-platform identity needs source reconciliation."
+    },
+    "renameRepairs": {
+      "X (Twitter)": "X",
+      "Delicious (website)": "Delicious",
+      "WAYN (website)": "WAYN",
+      "Yelp, Inc.": "Yelp",
+      "Nasza-klasa.pl": "Nasza-klasa.pl",
+      "Amina – Chechen Republic Online": "Amina",
+      "WordPress": "WordPress.com"
+    },
+    "aliasMerges": {
+      "X": [
+        "Twitter",
+        "X (Twitter)",
+        "Twitter.com"
+      ],
+      "TikTok": [
+        "Musical.ly"
+      ],
+      "Weibo": [
+        "Sina Weibo",
+        "SinaWeibo"
+      ],
+      "Xiaohongshu": [
+        "REDnote",
+        "RedNote",
+        "Little Red Book"
+      ],
+      "VK": [
+        "VKontakte"
+      ],
+      "Odnoklassniki": [
+        "OK.ru"
+      ],
+      "QQ": [
+        "Tencent QQ",
+        "OICQ"
+      ],
+      "Kuaishou": [],
+      "Bilibili": [],
+      "LINE": [
+        "LINE Messenger"
+      ],
+      "KakaoTalk": [
+        "Kakao Talk"
+      ],
+      "Viber": [
+        "Rakuten Viber"
+      ],
+      "Steam Community": [
+        "Steam"
+      ],
+      "MeWe": [
+        "Sgrouples"
+      ],
+      "NK.pl": [
+        "Nasza-klasa.pl",
+        "Nasza Klasa"
+      ],
+      "OpenWeb": [
+        "Spot.IM"
+      ],
+      "Viva Engage": [
+        "Yammer"
+      ],
+      "tvtag": [
+        "GetGlue"
+      ],
+      "MyMFB": [
+        "MillatFacebook"
+      ],
+      "Typepad": [
+        "TypePad"
+      ],
+      "AsianAve": [
+        "AsianAvenue",
+        "Asian Avenue"
+      ],
+      "Audimated": [
+        "Audimated.com"
+      ],
+      "Biip.no": [
+        "Biip"
+      ],
+      "Bolt": [
+        "Bolt.com"
+      ],
+      "Delicious": [
+        "delicious",
+        "Del.icio.us"
+      ],
+      "Diaspora": [
+        "Diaspora*"
+      ],
+      "DXY.cn": [
+        "DXY"
+      ],
+      "English, baby!": [
+        "English baby"
+      ],
+      "Foursquare Swarm": [
+        "Swarm"
+      ],
+      "Gapyear.com": [
+        "Gapyear"
+      ],
+      "Gather.com": [
+        "Gather"
+      ],
+      "Geni.com": [
+        "Geni"
+      ],
+      "Hi5": [
+        "hi5"
+      ],
+      "HR.com": [
+        "HR"
+      ],
+      "italki": [
+        "italki.com"
+      ],
+      "Last.fm": [
+        "Lastfm"
+      ],
+      "MouthShut.com": [
+        "MouthShut"
+      ],
+      "Playlist.com": [
+        "Playlist"
+      ],
+      "ReverbNation": [
+        "ReverbNation.com"
+      ],
+      "Sonico": [
+        "Sonico.com"
+      ],
+      "Spring.me": [
+        "Springme",
+        "Formspring"
+      ],
+      "Stage 32": [
+        "Stage32"
+      ],
+      "Students Circle Network": [
+        "Students Circle"
+      ],
+      "Taringa!": [
+        "Taringa"
+      ],
+      "TravBuddy": [
+        "TravBuddy.com"
+      ],
+      "Trombi": [
+        "Trombi.com"
+      ],
+      "VampireFreaks": [
+        "Vampirefreaks.com"
+      ],
+      "Werkenntwen": [
+        "Wer-kennt-wen"
+      ],
+      "Wiser.org": [
+        "Wiser"
+      ],
+      "WriteAPrisoner.com": [
+        "WriteAPrisoner"
+      ],
+      "zoo.gr": [
+        "Zoo.gr",
+        "Zoo"
+      ],
+      "Yahoo! GeoCities": [
+        "GeoCities"
+      ],
+      "Windows Live Messenger": [
+        "MSN Messenger"
+      ],
+      "Yahoo! Messenger": [
+        "Yahoo Messenger"
+      ],
+      "Yahoo! 360°": [
+        "Yahoo 360"
+      ],
+      "Yahoo! Answers": [
+        "Yahoo Answers"
+      ],
+      "Yahoo! Kickstart": [
+        "Yahoo Kickstart"
+      ],
+      "Yahoo! Mash": [
+        "Yahoo Mash"
+      ],
+      "Yahoo! Meme": [
+        "Yahoo Meme"
+      ],
+      "ICQ": [],
+      "MUBI": [
+        "Mubi"
+      ],
+      "CaringBridge": [
+        "Caring Bridge"
+      ],
+      "ANobii": [
+        "aNobii"
+      ],
+      "SpaceHey": [
+        "Spacehey"
+      ],
+      "Snapchat": [
+        "Snap Chat"
+      ],
+      "Clubhouse": [
+        "Clubhouse app"
+      ],
+      "AIM": [
+        "AOL Instant Messenger"
+      ],
+      "The WELL": [
+        "Whole Earth Lectronic Link"
+      ],
+      "eWorld": [
+        "Apple eWorld"
+      ],
+      "WordPress.com": [
+        "WordPress"
+      ],
+      "MeetMe": [
+        "myYearbook"
+      ],
+      "Foursquare City Guide": [
+        "Foursquare"
+      ],
+      "Messenger": [
+        "Facebook Messenger"
+      ],
+      "Microsoft Teams": [
+        "Teams"
+      ],
+      "Google Hangouts": [
+        "Hangouts"
+      ],
+      "Google Meet": [
+        "Google Duo",
+        "Hangouts Meet"
+      ],
+      "iMessage": [
+        "Apple Messages"
+      ],
+      "Zoom": [
+        "Zoom Workplace"
+      ],
+      "Mumble": [
+        "Mumble voice chat"
+      ]
+    },
+    "sourceSupplements": {
+      "https://www.youtube.com/about/": "YouTube",
+      "https://www.twitch.tv/p/en/about/": "Twitch",
+      "https://about.kick.com/": "Kick",
+      "https://www.artstation.com/about/company": "ArtStation",
+      "https://www.clubhouse.com/": "Clubhouse",
+      "https://tellonym.me/": "Tellonym",
+      "https://www.yikyak.com/": "Yik Yak",
+      "https://stackexchange.com/sites": "Stack Exchange",
+      "https://www.strava.com/about": "Strava",
+      "https://bandcamp.com/about": "Bandcamp",
+      "https://corp.roblox.com/": "Roblox",
+      "https://hello.vrchat.com/": "VRChat",
+      "https://www.tencent.com/products/weixin-wechat/": "WeChat|Weixin",
+      "https://www.tencent.com/products/qq/": "QQ",
+      "https://www.bytedance.com/en/products": "Douyin",
+      "https://ir.bilibili.com/": "Bilibili",
+      "https://ir.kuaishou.com/": "Kuaishou",
+      "https://line.me/en/": "LINE",
+      "https://www.kakaocorp.com/page/service/service/KakaoTalk?lang=en": "KakaoTalk",
+      "https://telegram.org/": "Telegram",
+      "https://signal.org/": "Signal",
+      "https://www.viber.com/en/": "Viber",
+      "https://groupme.com/en-US/": "GroupMe",
+      "https://medium.com/about": "Medium",
+      "https://substack.com/about": "Substack",
+      "https://nostr.com/": "Nostr",
+      "https://join-lemmy.org/": "Lemmy",
+      "https://misskey-hub.net/en/": "Misskey",
+      "https://corp.rumble.com/": "Rumble",
+      "https://about.dailymotion.com/en/": "Dailymotion",
+      "https://www.meetme.com/": "MeetMe",
+      "https://locket.camera/": "Locket",
+      "https://www.appbrain.com/app/curious-cat-q-a-social-network/me.curiouscat": "Curious Cat",
+      "https://www.kuaishou.com/en/products": "Kwai|SnackVideo|AcFun",
+      "https://www.openweb.com/blog/press-release-spot-im-is-now-openweb/": "OpenWeb",
+      "https://bsky.social/about": "Bluesky",
+      "https://500px.com/about": "500px",
+      "https://scratch.mit.edu/about": "Scratch",
+      "https://www.instructables.com/about/": "Instructables",
+      "https://www.openstreetmap.org/about": "OpenStreetMap",
+      "https://about.fb.com/news/2018/02/we-just-made-it-easier-to-add-more-friends-and-family-to-your-messenger-audio-and-video-chats/": "Messenger",
+      "https://slack.com/blog/compare/slack-vs-microsoft-teams": "Slack|Microsoft Teams",
+      "https://teamspeak.com/en/community-guidelines/": "TeamSpeak",
+      "https://www.mumble.info/": "Mumble",
+      "https://support.google.com/meet/answer/15226472?hl=en": "Google Meet",
+      "https://support.google.com/chat/answer/9341104?hl=en": "Google Chat|Google Hangouts",
+      "https://support.apple.com/guide/messages/welcome/mac": "iMessage",
+      "https://support.apple.com/guide/facetime/welcome/mac": "FaceTime",
+      "https://www.zoom.com/en/products/virtual-meetings/": "Zoom"
+    }
+  }
+}

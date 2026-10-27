@@ -1,6 +1,6 @@
 {
-  "build": "e35fb8d88e697518",
-  "count": 451,
+  "build": "80c5dcc012942933",
+  "count": 453,
   "categories": [
     {
       "id": "group-q001",
@@ -3609,6 +3609,22 @@
       "group": "authored-whole-nfl-franchise-roster",
       "answerCount": 1851,
       "scope": "Past or present roster membership for this franchise through the retained 2026 snapshot counts, including its earlier names/locations and NFL, AFL or AAFC membership where applicable. Offseason and practice squads count. An unrelated former team sharing the same city or code does not. The current franchise rules and captured seasons are retained for source review."
+    },
+    {
+      "id": "authored-hotel-brands",
+      "prompt": "Name a hotel chain or hotel brand.",
+      "family": "world",
+      "group": "authored-whole-familiar-brands-platforms",
+      "answerCount": 539,
+      "scope": "Real current or historical hotel, motel, hostel and serviced-apartment brands/chains, branded hotel collections and primarily hotel-operating groups count. Single independent properties, booking/rental marketplaces, private-equity investors and unrelated parent companies do not. Genuine short names and brand renames share an answer."
+    },
+    {
+      "id": "authored-social-platforms",
+      "prompt": "Name an online social or community platform.",
+      "family": "everyday",
+      "group": "authored-whole-familiar-brands-platforms",
+      "answerCount": 499,
+      "scope": "Real current or historical general-audience social networks, social media and named online community platforms count, including group communication, public discussion networks and social virtual worlds. Ordinary email, devices, generic internet terms, individual profiles/groups, learning-management software and services dedicated to dating or adult content do not. Actual public names such as X, VK, QQ and Hi5 count; generated initials do not."
     }
   ]
 }

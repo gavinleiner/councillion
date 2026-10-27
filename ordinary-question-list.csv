@@ -450,3 +450,5 @@ id,subject,question,canonical_answers
 "authored-new-england-patriots-players","sports","Name a player who has been on the New England Patriots franchise roster.","1771"
 "authored-philadelphia-eagles-players","sports","Name a player who has been on the Philadelphia Eagles franchise roster.","2141"
 "authored-san-francisco-49ers-players","sports","Name a player who has been on the San Francisco 49ers franchise roster.","1851"
+"authored-hotel-brands","world","Name a hotel chain or hotel brand.","539"
+"authored-social-platforms","everyday","Name an online social or community platform.","499"
