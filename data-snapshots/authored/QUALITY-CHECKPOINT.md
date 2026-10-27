@@ -1,6 +1,6 @@
 # Five-thousand-question expansion: development checkpoint
 
-The requested release is unfinished. Production still has 227 admitted questions. Development has 413: the 227 baseline plus 186 new admissions. It needs 4,587 more genuinely distinct questions. Answer rows, raw entities, draft inventories and reworded recipes do not count as questions.
+The requested release is unfinished. Production still has 227 admitted questions. Development has 434: the 227 baseline plus 207 new admissions. It needs 4,566 more genuinely distinct questions. Answer rows, raw entities, draft inventories and reworded recipes do not count as questions.
 
 ## Admission standard
 
@@ -63,3 +63,11 @@ SpongeBob SquarePants, Toy Story and Shrek/Puss in Boots are now admitted as thr
 All 38 focused content, reviewed-standard, sample and migration tests pass after these additions. The build checks 6,180 familiar inputs and 631 wrong-category boundaries. Ten additional local actual-game cases pass, as does general browser QA at 413. The prior checkpoint passed all 266 full-suite tests; the four new franchise regression tests also pass in the focused suite. All external requests remain blocked during local browser QA. Production remains 227, 4,587 questions remain, and no completed-release email has been sent.
 
 Eleven actual public short character names are now explicit aliases, including Larry, Bo, Al, Puss and Kitty. Thirteen relevant regression tests and five additional local actual-game cases pass. These are actual given names or public names, never inferred initials; the global typo matcher is unchanged.
+
+## Whole objects, game inventories and colors checkpoint · 434 questions
+
+Fifteen independently specified familiar object categories are now admitted: writing/drawing tools, cleaning equipment, makeup, adhesives, toys, timepieces, computer devices, engines, flat shapes, medical instruments, printing, sculpture, poetry forms, visual-art movements and flowers. Full retained dictionary descendants are reconciled by sense, with explicit modern common-name supplements. Turbojets do not become turbofans; ECG is not ballistocardiography; open/three-dimensional geometry and non-device online services are held. Honeysuckle is its actual Lonicera identity, distinct from a misleading dictionary alias for columbine. Forty-four independent common flower inputs and true public/scientific aliases are covered. See OBJECT-CONCEPT-SOURCE-ATTRIBUTION.md.
+
+Six further whole categories are admitted: Pokémon moves (919 canonical names), abilities (373), items/trainer devices (2,155), types (19), tea brands (126) and color names (1,138). Complete captured English Pokémon source tables are reconciled by actual named identity; old official names and actual device acronyms are retained, without invented initials. Primary material fills the Pokédex and trainer-device omissions. Tea-brand source rows have explicit source-heading/duplicate holds and familiar bottled brands. Full named-color and W3C keyword inventories retain regional synonyms and merge Navy/Navy blue, Cyan/Aqua and Magenta/Fuchsia. These inventories are six questions, not thousands of extra questions. See WHOLE-GAME-COLORS-TEA-SOURCE-ATTRIBUTION.md.
+
+All 277 full-suite automated tests pass, along with all 37 relevant focused content checks. The build passes and checks 7,265 familiar inputs plus 700 wrong-answer boundaries. All 25 new actual-game browser cases pass. General local browser QA passes again for persisted unseen queues, new-ID migration, shared Daily across independent contexts, fixed-seed sample/library counts, and laptop/mobile layout. External network requests are blocked in these browser tests. Production remains 227; 4,566 questions remain before release. No completion email has been sent.

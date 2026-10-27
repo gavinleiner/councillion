@@ -1,0 +1,399 @@
+{
+  "status": "candidate only; not admitted or imported into game; source row and independent exact checks pass, local game/browser validation pending",
+  "canonicalAnswers": 126,
+  "independentInputs": 47,
+  "held": [
+    {
+      "label": "Companies portal",
+      "reason": "Source footer, not a tea brand."
+    },
+    {
+      "label": "Tea",
+      "reason": "Generic topic footer, not a company."
+    }
+  ],
+  "canonicalSourceMap": {
+    "Lipton": [
+      "Lipton"
+    ],
+    "Tetley": [
+      "Tetley"
+    ],
+    "Twinings": [
+      "Twinings"
+    ],
+    "Dilmah": [
+      "Dilmah"
+    ],
+    "Bushells": [
+      "Bushells"
+    ],
+    "Madame Flavour": [
+      "Madame Flavour"
+    ],
+    "Madura Tea Estates": [
+      "Madura Tea Estates"
+    ],
+    "Nerada Tea": [
+      "Nerada Tea"
+    ],
+    "T2": [
+      "T2 (Australian company)",
+      "T2 (tea products company)"
+    ],
+    "Duncan Brothers (Bangladesh) Limited": [
+      "Duncan Brothers (Bangladesh) Limited"
+    ],
+    "JF (Bangladesh) Limited": [
+      "JF (Bangladesh) Limited"
+    ],
+    "Kazi Farms Group": [
+      "Kazi Farms Group"
+    ],
+    "M. M. Ispahani Limited": [
+      "M. M. Ispahani Limited"
+    ],
+    "Orion Group": [
+      "Orion Group"
+    ],
+    "Transcom Group": [
+      "Transcom Group"
+    ],
+    "Matte Leão": [
+      "Matte Leão"
+    ],
+    "DavidsTea": [
+      "DavidsTea"
+    ],
+    "Hojicha Co.": [
+      "Hojicha Co."
+    ],
+    "Red Rose": [
+      "Red Rose Tea"
+    ],
+    "Tim Hortons": [
+      "Tim Hortons"
+    ],
+    "Ten Fu Group": [
+      "Ten Fu Group"
+    ],
+    "Betjeman & Barton": [
+      "Betjeman & Barton"
+    ],
+    "Fauchon": [
+      "Fauchon"
+    ],
+    "Kusmi Tea": [
+      "Kusmi Tea"
+    ],
+    "Ladurée": [
+      "Ladurée"
+    ],
+    "Palais des Thés": [
+      "Le Palais des Thés"
+    ],
+    "Mariage Frères": [
+      "Mariage Frères"
+    ],
+    "TeaGschwendner": [
+      "TeaGschwendner"
+    ],
+    "Teekanne": [
+      "Teekanne"
+    ],
+    "Teekampagne": [
+      "Teekampagne"
+    ],
+    "Luk Yu": [
+      "Luk Yu"
+    ],
+    "Godrej Tea": [
+      "Godrej Tea"
+    ],
+    "Wagh Bakri": [
+      "Gujarat Tea Processors & Packers Ltd",
+      "https://www.waghbakritea.com/"
+    ],
+    "Limtex": [
+      "Limtex"
+    ],
+    "Brooke Bond": [
+      "Brooke Bond"
+    ],
+    "Society Tea": [
+      "Society Tea"
+    ],
+    "Sariwangi": [
+      "Sariwangi"
+    ],
+    "Sosro": [
+      "Sosro"
+    ],
+    "Barry's Tea": [
+      "Barry's Tea"
+    ],
+    "Bewley's": [
+      "Bewley's"
+    ],
+    "Lyons Tea": [
+      "Lyons Tea (Ireland)",
+      "Lyons Tea"
+    ],
+    "Wissotzky": [
+      "Wissotzky Tea"
+    ],
+    "Harada Tea Processing Co., Ltd.": [
+      "Harada Tea Processing Co., Ltd."
+    ],
+    "Ito En": [
+      "Ito En"
+    ],
+    "Kenya Tea Development Agency": [
+      "Kenya Tea Development Agency"
+    ],
+    "Kericho Gold": [
+      "Kericho Gold"
+    ],
+    "Ketepa": [
+      "Ketepa"
+    ],
+    "BOH Tea": [
+      "BOH Tea Plantation"
+    ],
+    "Sabah Tea": [
+      "Sabah Tea"
+    ],
+    "Giribandhu Tea Estate": [
+      "Giribandhu Tea Estate"
+    ],
+    "Rakura": [
+      "Rakura tea"
+    ],
+    "Pickwick": [
+      "Pickwick (brand)"
+    ],
+    "BrewGroup": [
+      "BrewGroup"
+    ],
+    "Zealong": [
+      "Zealong"
+    ],
+    "Tapal Tea": [
+      "Tapal Tea"
+    ],
+    "Rwanda Mountain Tea": [
+      "Rwanda Mountain Tea"
+    ],
+    "TWG Tea": [
+      "TWG Tea"
+    ],
+    "Akbar Tea": [
+      "Akbar Tea"
+    ],
+    "Alghazaleen Tea": [
+      "Alghazaleen Tea"
+    ],
+    "Bogawantalawa": [
+      "Bogawantalawa"
+    ],
+    "Heladiv": [
+      "Heladiv"
+    ],
+    "George Steuart Group": [
+      "George Steuart Group"
+    ],
+    "Mlesna": [
+      "Mlesna"
+    ],
+    "Çaykur": [
+      "Çaykur"
+    ],
+    "Ahmad Tea": [
+      "Ahmad Tea"
+    ],
+    "Associated British Foods": [
+      "Associated British Foods"
+    ],
+    "Bettys and Taylors of Harrogate": [
+      "Bettys and Taylors of Harrogate"
+    ],
+    "Clipper": [
+      "Clipper tea"
+    ],
+    "Fortnum & Mason": [
+      "Fortnum & Mason"
+    ],
+    "Glengettie": [
+      "Glengettie tea"
+    ],
+    "Horniman's Tea": [
+      "Horniman's Tea"
+    ],
+    "Jacksons of Piccadilly": [
+      "Jacksons of Piccadilly"
+    ],
+    "Lancashire Tea": [
+      "Lancashire Tea"
+    ],
+    "Matthew Algie": [
+      "Matthew Algie"
+    ],
+    "Mazawattee Tea Company": [
+      "Mazawattee Tea Company"
+    ],
+    "Nambarrie": [
+      "Nambarrie"
+    ],
+    "PG Tips": [
+      "PG Tips"
+    ],
+    "Punjana": [
+      "Punjana"
+    ],
+    "Scottish Blend": [
+      "Scottish Blend"
+    ],
+    "Taylors of Harrogate": [
+      "Taylors of Harrogate"
+    ],
+    "Typhoo": [
+      "Typhoo"
+    ],
+    "Whittard": [
+      "Whittard of Chelsea"
+    ],
+    "Yorkshire Tea": [
+      "Yorkshire Tea"
+    ],
+    "American Tea Room": [
+      "American Tea Room"
+    ],
+    "Argo Tea": [
+      "Argo Tea"
+    ],
+    "Bigelow": [
+      "Bigelow Tea Company"
+    ],
+    "Capital Teas": [
+      "Capital Teas"
+    ],
+    "Celestial Seasonings": [
+      "Celestial Seasonings"
+    ],
+    "Good Earth Tea": [
+      "Good Earth Tea"
+    ],
+    "Harney & Sons": [
+      "Harney & Sons"
+    ],
+    "Honest Tea": [
+      "Honest Tea"
+    ],
+    "Imperial Tea Court": [
+      "Imperial Tea Court"
+    ],
+    "Luzianne": [
+      "Luzianne"
+    ],
+    "Mighty Leaf": [
+      "Mighty Leaf Tea"
+    ],
+    "Numi": [
+      "Numi Organic Tea"
+    ],
+    "Peet's Coffee & Tea": [
+      "Peet's Coffee & Tea"
+    ],
+    "Red Diamond": [
+      "Red Diamond"
+    ],
+    "Salada": [
+      "Salada tea"
+    ],
+    "Stash Tea": [
+      "Stash Tea"
+    ],
+    "Talbott Teas": [
+      "Talbott Teas"
+    ],
+    "Tavalon Tea": [
+      "Tavalon Tea"
+    ],
+    "Tazo": [
+      "Tazo"
+    ],
+    "Té Company": [
+      "Té Company"
+    ],
+    "Tea Forté": [
+      "Tea Forté"
+    ],
+    "Teavana": [
+      "Teavana"
+    ],
+    "Republic of Tea": [
+      "The Republic of Tea"
+    ],
+    "Upton Tea": [
+      "Upton Tea"
+    ],
+    "Yogi Tea": [
+      "Yogi Tea"
+    ],
+    "AriZona Beverage Company": [
+      "AriZona Beverage Company"
+    ],
+    "Milo's Tea Company": [
+      "Milo's Tea Company"
+    ],
+    "Nestea": [
+      "Nestea"
+    ],
+    "Snapple": [
+      "Snapple"
+    ],
+    "SoBe": [
+      "SoBe"
+    ],
+    "Sweet Leaf Tea": [
+      "Sweet Leaf Tea"
+    ],
+    "Turkey Hill": [
+      "Turkey Hill"
+    ],
+    "Ippodo": [
+      "https://ippodotea.com/"
+    ],
+    "Tata Tea": [
+      "https://www.tataconsumer.com/brands/tea/tata-tea"
+    ],
+    "Vahdam": [
+      "https://www.vahdam.com/"
+    ],
+    "Rishi Tea": [
+      "https://rishi-tea.com/"
+    ],
+    "Teapigs": [
+      "https://www.teapigs.co.uk/"
+    ],
+    "Fukujuen": [
+      "https://global.fukujuen.com/"
+    ],
+    "Peace Tea": [
+      "https://www.coca-cola.com/us/en/brands/peace-tea"
+    ],
+    "Brisk": [
+      "https://contact.pepsico.com/brisk/about-us"
+    ],
+    "Pure Leaf": [
+      "https://www.pepsico.com/en/brands/pure-leaf"
+    ],
+    "Gold Peak": [
+      "https://www.coca-colacompany.com/brands/coffee-tea/gold-peak"
+    ],
+    "Fuze Tea": [
+      "https://www.cocacolaep.com/our-brands/our-brands/fuze-tea/"
+    ]
+  },
+  "sourceAttribution": "Wikipedia List of tea companies, CC BY-SA; primary tea-company websites for independent omissions. Source snapshots and SHA-256 manifests retained beside this candidate."
+}

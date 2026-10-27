@@ -1,0 +1,26 @@
+{
+  "candidates": [
+    {
+      "id": "authored-tea-brands",
+      "canonicalAnswers": 126,
+      "familiarInputs": 47,
+      "wrongBoundaries": 3,
+      "canonicalAndAliasCollisions": 0,
+      "sourceScope": "Complete retained named-source rows plus documented common-name supplements; no claim of every worldwide named brand or shade",
+      "gameValidation": "not run; main workspace access denied",
+      "admitted": false
+    },
+    {
+      "id": "authored-color-names",
+      "canonicalAnswers": 1139,
+      "familiarInputs": 81,
+      "wrongBoundaries": 3,
+      "canonicalAndAliasCollisions": 0,
+      "sourceScope": "Complete retained named-source rows plus documented common-name supplements; no claim of every worldwide named brand or shade",
+      "gameValidation": "not run; main workspace access denied",
+      "admitted": false
+    }
+  ],
+  "normalPlayCountChange": 0,
+  "publicationChange": false
+}

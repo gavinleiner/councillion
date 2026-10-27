@@ -1,0 +1,669 @@
+{
+  "version": 1,
+  "questions": [
+    {
+      "id": "authored-tea-brands",
+      "concept": "tea-brands",
+      "family": "food",
+      "topic": "TEA BRANDS",
+      "prompt": "Name a tea brand or tea company.",
+      "scope": "Real current or historical tea brands, tea companies and tea estates count. A tea variety, drink preparation or generic ingredient is not a company or brand. The inventory includes packaged-tea and ready-to-drink brands; owning a separate brand does not automatically make a generic parent-name guess eligible.",
+      "format": "whole-brand-inventory",
+      "rationale": "A whole recognizable everyday brand category. Source countries, tea flavors, caffeine levels and ownership tags never create extra questions. Actual public short names and duplicate source identities are explicitly reconciled.",
+      "familiar": [
+        "Lipton",
+        "Twinings",
+        "Tetley",
+        "Tazo",
+        "Bigelow",
+        "Celestial Seasonings",
+        "Yogi Tea",
+        "PG Tips",
+        "Yorkshire Tea",
+        "Harney & Sons",
+        "Dilmah",
+        "Barry's Tea",
+        "Bewley's",
+        "T2",
+        "Stash Tea",
+        "Numi",
+        "Republic of Tea",
+        "Teavana",
+        "DavidsTea",
+        "Fortnum & Mason",
+        "Mariage Frères",
+        "Kusmi Tea",
+        "Whittard",
+        "Ahmad Tea",
+        "Typhoo",
+        "Red Rose",
+        "Luzianne",
+        "Mighty Leaf",
+        "Wissotzky",
+        "Ippodo",
+        "Ito En",
+        "Fukujuen",
+        "Boh Tea",
+        "Brooke Bond",
+        "Tata Tea",
+        "Wagh Bakri",
+        "Society Tea",
+        "Vahdam",
+        "Rishi Tea",
+        "Teapigs",
+        "AriZona",
+        "Brisk",
+        "Pure Leaf",
+        "Gold Peak",
+        "Peace Tea",
+        "Fuze Tea",
+        "Milo's Tea"
+      ],
+      "exclude": [
+        "Assam",
+        "Milk",
+        "Green tea"
+      ],
+      "references": [
+        "https://en.wikipedia.org/wiki/List_of_tea_companies",
+        "https://ippodotea.com/",
+        "https://www.tataconsumer.com/brands/tea/tata-tea",
+        "https://www.waghbakritea.com/",
+        "https://www.vahdam.com/",
+        "https://rishi-tea.com/",
+        "https://www.teapigs.co.uk/",
+        "https://global.fukujuen.com/",
+        "https://www.coca-cola.com/us/en/brands/peace-tea",
+        "https://contact.pepsico.com/brisk/about-us",
+        "https://www.pepsico.com/en/brands/pure-leaf",
+        "https://www.coca-colacompany.com/brands/coffee-tea/gold-peak",
+        "https://www.cocacolaep.com/our-brands/our-brands/fuze-tea/"
+      ],
+      "answers": {
+        "30": [
+          {
+            "label": "Ahmad Tea",
+            "aliases": [
+              "Ahmad"
+            ]
+          },
+          {
+            "label": "AriZona Beverage Company",
+            "aliases": [
+              "AriZona",
+              "Arizona Tea"
+            ]
+          },
+          {
+            "label": "Barry's Tea",
+            "aliases": [
+              "Barrys"
+            ]
+          },
+          {
+            "label": "Bewley's",
+            "aliases": [
+              "Bewleys Tea"
+            ]
+          },
+          {
+            "label": "BOH Tea",
+            "aliases": [
+              "BOH Tea Plantation"
+            ]
+          },
+          {
+            "label": "Brisk",
+            "aliases": [
+              "Lipton Brisk"
+            ]
+          },
+          {
+            "label": "Brooke Bond",
+            "aliases": []
+          },
+          {
+            "label": "DavidsTea",
+            "aliases": []
+          },
+          {
+            "label": "Dilmah",
+            "aliases": []
+          },
+          {
+            "label": "Fortnum & Mason",
+            "aliases": []
+          },
+          {
+            "label": "Fukujuen",
+            "aliases": []
+          },
+          {
+            "label": "Fuze Tea",
+            "aliases": [
+              "Fuze Iced Tea"
+            ]
+          },
+          {
+            "label": "Gold Peak",
+            "aliases": [
+              "Gold Peak Tea"
+            ]
+          },
+          {
+            "label": "Harney & Sons",
+            "aliases": [
+              "Harney and Sons"
+            ]
+          },
+          {
+            "label": "Ippodo",
+            "aliases": []
+          },
+          {
+            "label": "Ito En",
+            "aliases": []
+          },
+          {
+            "label": "Kusmi Tea",
+            "aliases": []
+          },
+          {
+            "label": "Luzianne",
+            "aliases": []
+          },
+          {
+            "label": "Mariage Frères",
+            "aliases": []
+          },
+          {
+            "label": "Mighty Leaf",
+            "aliases": [
+              "Mighty Leaf Tea"
+            ]
+          },
+          {
+            "label": "Milo's Tea Company",
+            "aliases": [
+              "Milo's Tea"
+            ]
+          },
+          {
+            "label": "Numi",
+            "aliases": [
+              "Numi Organic Tea"
+            ]
+          },
+          {
+            "label": "Peace Tea",
+            "aliases": [
+              "Peace Iced Tea"
+            ]
+          },
+          {
+            "label": "PG Tips",
+            "aliases": []
+          },
+          {
+            "label": "Pure Leaf",
+            "aliases": [
+              "Pure Leaf Tea"
+            ]
+          },
+          {
+            "label": "Red Rose",
+            "aliases": [
+              "Red Rose Tea"
+            ]
+          },
+          {
+            "label": "Republic of Tea",
+            "aliases": [
+              "The Republic of Tea"
+            ]
+          },
+          {
+            "label": "Rishi Tea",
+            "aliases": [
+              "Rishi"
+            ]
+          },
+          {
+            "label": "Society Tea",
+            "aliases": []
+          },
+          {
+            "label": "Stash Tea",
+            "aliases": [
+              "Stash"
+            ]
+          },
+          {
+            "label": "T2",
+            "aliases": [
+              "T2 Tea"
+            ]
+          },
+          {
+            "label": "Tata Tea",
+            "aliases": [
+              "Tata Tea Premium"
+            ]
+          },
+          {
+            "label": "Teapigs",
+            "aliases": []
+          },
+          {
+            "label": "Teavana",
+            "aliases": []
+          },
+          {
+            "label": "Typhoo",
+            "aliases": []
+          },
+          {
+            "label": "Vahdam",
+            "aliases": []
+          },
+          {
+            "label": "Wagh Bakri",
+            "aliases": [
+              "Gujarat Tea Processors & Packers Ltd",
+              "Wagh Bakri Tea Group"
+            ]
+          },
+          {
+            "label": "Whittard",
+            "aliases": [
+              "Whittard of Chelsea"
+            ]
+          },
+          {
+            "label": "Wissotzky",
+            "aliases": [
+              "Wissotzky Tea"
+            ]
+          },
+          {
+            "label": "Yogi Tea",
+            "aliases": []
+          },
+          {
+            "label": "Yorkshire Tea",
+            "aliases": []
+          }
+        ],
+        "85": [
+          {
+            "label": "Akbar Tea",
+            "aliases": []
+          },
+          {
+            "label": "Alghazaleen Tea",
+            "aliases": []
+          },
+          {
+            "label": "American Tea Room",
+            "aliases": []
+          },
+          {
+            "label": "Argo Tea",
+            "aliases": []
+          },
+          {
+            "label": "Associated British Foods",
+            "aliases": []
+          },
+          {
+            "label": "Betjeman & Barton",
+            "aliases": []
+          },
+          {
+            "label": "Bettys and Taylors of Harrogate",
+            "aliases": []
+          },
+          {
+            "label": "Bogawantalawa",
+            "aliases": []
+          },
+          {
+            "label": "BrewGroup",
+            "aliases": []
+          },
+          {
+            "label": "Bushells",
+            "aliases": []
+          },
+          {
+            "label": "Capital Teas",
+            "aliases": []
+          },
+          {
+            "label": "Çaykur",
+            "aliases": []
+          },
+          {
+            "label": "Clipper",
+            "aliases": [
+              "Clipper tea"
+            ]
+          },
+          {
+            "label": "Duncan Brothers (Bangladesh) Limited",
+            "aliases": []
+          },
+          {
+            "label": "Fauchon",
+            "aliases": []
+          },
+          {
+            "label": "George Steuart Group",
+            "aliases": []
+          },
+          {
+            "label": "Giribandhu Tea Estate",
+            "aliases": []
+          },
+          {
+            "label": "Glengettie",
+            "aliases": [
+              "Glengettie tea"
+            ]
+          },
+          {
+            "label": "Godrej Tea",
+            "aliases": []
+          },
+          {
+            "label": "Good Earth Tea",
+            "aliases": []
+          },
+          {
+            "label": "Harada Tea Processing Co., Ltd.",
+            "aliases": []
+          },
+          {
+            "label": "Heladiv",
+            "aliases": []
+          },
+          {
+            "label": "Hojicha Co.",
+            "aliases": []
+          },
+          {
+            "label": "Honest Tea",
+            "aliases": []
+          },
+          {
+            "label": "Horniman's Tea",
+            "aliases": []
+          },
+          {
+            "label": "Imperial Tea Court",
+            "aliases": []
+          },
+          {
+            "label": "Jacksons of Piccadilly",
+            "aliases": []
+          },
+          {
+            "label": "JF (Bangladesh) Limited",
+            "aliases": []
+          },
+          {
+            "label": "Kazi Farms Group",
+            "aliases": []
+          },
+          {
+            "label": "Kenya Tea Development Agency",
+            "aliases": []
+          },
+          {
+            "label": "Kericho Gold",
+            "aliases": []
+          },
+          {
+            "label": "Ketepa",
+            "aliases": []
+          },
+          {
+            "label": "Ladurée",
+            "aliases": []
+          },
+          {
+            "label": "Lancashire Tea",
+            "aliases": []
+          },
+          {
+            "label": "Limtex",
+            "aliases": []
+          },
+          {
+            "label": "Luk Yu",
+            "aliases": []
+          },
+          {
+            "label": "Lyons Tea",
+            "aliases": []
+          },
+          {
+            "label": "Madame Flavour",
+            "aliases": []
+          },
+          {
+            "label": "Madura Tea Estates",
+            "aliases": []
+          },
+          {
+            "label": "Matte Leão",
+            "aliases": []
+          },
+          {
+            "label": "Matthew Algie",
+            "aliases": []
+          },
+          {
+            "label": "Mazawattee Tea Company",
+            "aliases": []
+          },
+          {
+            "label": "Mlesna",
+            "aliases": []
+          },
+          {
+            "label": "M. M. Ispahani Limited",
+            "aliases": [
+              "Ispahani",
+              "Ispahani Mirzapore"
+            ]
+          },
+          {
+            "label": "Nambarrie",
+            "aliases": []
+          },
+          {
+            "label": "Nerada Tea",
+            "aliases": []
+          },
+          {
+            "label": "Nestea",
+            "aliases": []
+          },
+          {
+            "label": "Orion Group",
+            "aliases": []
+          },
+          {
+            "label": "Palais des Thés",
+            "aliases": [
+              "Le Palais des Thés"
+            ]
+          },
+          {
+            "label": "Peet's Coffee & Tea",
+            "aliases": []
+          },
+          {
+            "label": "Pickwick",
+            "aliases": []
+          },
+          {
+            "label": "Punjana",
+            "aliases": []
+          },
+          {
+            "label": "Rakura",
+            "aliases": [
+              "Rakura tea"
+            ]
+          },
+          {
+            "label": "Red Diamond",
+            "aliases": []
+          },
+          {
+            "label": "Sabah Tea",
+            "aliases": []
+          },
+          {
+            "label": "Salada",
+            "aliases": [
+              "Salada tea"
+            ]
+          },
+          {
+            "label": "Sariwangi",
+            "aliases": []
+          },
+          {
+            "label": "Scottish Blend",
+            "aliases": []
+          },
+          {
+            "label": "Snapple",
+            "aliases": []
+          },
+          {
+            "label": "SoBe",
+            "aliases": []
+          },
+          {
+            "label": "Sosro",
+            "aliases": []
+          },
+          {
+            "label": "Sweet Leaf Tea",
+            "aliases": []
+          },
+          {
+            "label": "Talbott Teas",
+            "aliases": []
+          },
+          {
+            "label": "Tapal Tea",
+            "aliases": []
+          },
+          {
+            "label": "Tavalon Tea",
+            "aliases": []
+          },
+          {
+            "label": "Taylors of Harrogate",
+            "aliases": []
+          },
+          {
+            "label": "Tea Forté",
+            "aliases": []
+          },
+          {
+            "label": "TeaGschwendner",
+            "aliases": []
+          },
+          {
+            "label": "Té Company",
+            "aliases": []
+          },
+          {
+            "label": "Teekampagne",
+            "aliases": []
+          },
+          {
+            "label": "Teekanne",
+            "aliases": []
+          },
+          {
+            "label": "Ten Fu Group",
+            "aliases": []
+          },
+          {
+            "label": "Tim Hortons",
+            "aliases": []
+          },
+          {
+            "label": "Transcom Group",
+            "aliases": []
+          },
+          {
+            "label": "Turkey Hill",
+            "aliases": []
+          },
+          {
+            "label": "TWG Tea",
+            "aliases": []
+          },
+          {
+            "label": "Upton Tea",
+            "aliases": []
+          },
+          {
+            "label": "Zealong",
+            "aliases": []
+          }
+        ],
+        "10": [
+          {
+            "label": "Bigelow",
+            "aliases": [
+              "Bigelow Tea Company"
+            ]
+          },
+          {
+            "label": "Celestial Seasonings",
+            "aliases": [
+              "Celestial"
+            ]
+          },
+          {
+            "label": "Lipton",
+            "aliases": [
+              "Lipton Tea"
+            ]
+          },
+          {
+            "label": "Tazo",
+            "aliases": []
+          },
+          {
+            "label": "Tetley",
+            "aliases": [
+              "Tetley Tea"
+            ]
+          },
+          {
+            "label": "Twinings",
+            "aliases": [
+              "Twinings of London"
+            ]
+          }
+        ],
+        "100": [
+          {
+            "label": "Rwanda Mountain Tea",
+            "aliases": []
+          }
+        ]
+      }
+    }
+  ]
+}

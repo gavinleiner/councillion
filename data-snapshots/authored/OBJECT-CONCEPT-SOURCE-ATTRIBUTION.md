@@ -1,6 +1,6 @@
 # Whole object concept inventories
 
-The 20 independently specified prompts in `object-concept-specifications.json` are whole familiar categories, not combinations of object tags or uses. Scope, familiar guesses and wrong-answer boundaries were written before extracting the source descendants. Neither dictionary senses, answer names nor source subtrees create additional questions.
+The 35 independently specified prompts in `object-concept-specifications.json` are whole familiar categories, not combinations of object tags or uses. Scope, familiar guesses and wrong-answer boundaries were written before extracting the source descendants. Neither dictionary senses, answer names nor source subtrees create additional questions.
 
 The factual lexical inventory in `sources/object-concept-wordnet.json.gz` derives from Princeton WordNet 3.0 (Copyright 2006, Princeton University). Synset identifiers, definitions, aliases and roots are retained to make individual sense decisions inspectable. WordNet is used under its included license at `../variety/wordnet-license.txt`. See https://wordnet.princeton.edu/license-and-commercial-use and https://wordnet.princeton.edu/citing-wordnet. Princeton University has not endorsed Councillion.
 
@@ -11,3 +11,5 @@ Modern/common supplements are explicit records, not generated word combinations.
 Actual synonyms merge one scoring identity. Misleading dictionary synonym groups are separated, including parka/windbreaker/anorak, boater/Panama hat, fedora/homburg/trilby, carabiner/circlip and CD/DVD. No acronyms are generated from initials. Actual names such as CD, DVD, RAM and SSD remain valid.
 
 The points are editorial familiarity estimates with independently declared ordinary examples at the lower tiers and a reviewed rare anchor per inventory. They are not claims of measured player answer frequency. The source date and review are 2026-10-26; this batch does not itself complete the separate 5,000-question release target.
+
+Fifteen additional whole subjects were reviewed October 27. Supplemental arts lists supply named visual-art movements and sculpture forms without making their sections extra prompts. Explicit common flower inputs repair omissions in the older dictionary. WordNet source synonyms are checked against exact scientific identity: Lonicera honeysuckle is separate from Aquilegia; ECG/cardiograph is separate from ballistocardiography; fanjet/turbofan is separate from turbojet. Flat shapes exclude open curves, spherical triangles and solid bodies. Source holds and exact alias repairs remain in the specifications and generated ledgers.

@@ -198,5 +198,155 @@
     "canonicalAnswers": 208,
     "familiarInputs": 16,
     "rareAnchor": "Raceabout"
+  },
+  {
+    "id": "authored-writing-drawing-tools",
+    "root": "writing_implement.n.01",
+    "sourceVersion": "3.0",
+    "sourceRows": 18,
+    "heldRows": 0,
+    "canonicalAnswers": 37,
+    "familiarInputs": 31,
+    "rareAnchor": "Ruling pen"
+  },
+  {
+    "id": "authored-cleaning-equipment-kinds",
+    "root": "cleaning_implement.n.01",
+    "sourceVersion": "3.0",
+    "sourceRows": 14,
+    "heldRows": 0,
+    "canonicalAnswers": 42,
+    "familiarInputs": 32,
+    "rareAnchor": "Besom"
+  },
+  {
+    "id": "authored-makeup-product-kinds",
+    "root": "cosmetic.n.01",
+    "sourceVersion": "3.0",
+    "sourceRows": 17,
+    "heldRows": 4,
+    "canonicalAnswers": 41,
+    "familiarInputs": 40,
+    "rareAnchor": "Spirit gum"
+  },
+  {
+    "id": "authored-adhesive-kinds",
+    "root": "adhesive_material.n.01",
+    "sourceVersion": "3.0",
+    "sourceRows": 16,
+    "heldRows": 1,
+    "canonicalAnswers": 80,
+    "familiarInputs": 59,
+    "rareAnchor": "Isinglass"
+  },
+  {
+    "id": "authored-toy-kinds",
+    "root": "plaything.n.01",
+    "sourceVersion": "3.0",
+    "sourceRows": 50,
+    "heldRows": 1,
+    "canonicalAnswers": 90,
+    "familiarInputs": 61,
+    "rareAnchor": "Thaumatrope"
+  },
+  {
+    "id": "authored-timepiece-kinds",
+    "root": "timepiece.n.01",
+    "sourceVersion": "3.0",
+    "sourceRows": 33,
+    "heldRows": 0,
+    "canonicalAnswers": 53,
+    "familiarInputs": 41,
+    "rareAnchor": "Congreve clock"
+  },
+  {
+    "id": "authored-computer-device-kinds",
+    "root": "computer.n.01",
+    "sourceVersion": "3.0",
+    "sourceRows": 32,
+    "heldRows": 5,
+    "canonicalAnswers": 52,
+    "familiarInputs": 38,
+    "rareAnchor": "Differential analyzer"
+  },
+  {
+    "id": "authored-engine-kinds",
+    "root": "motor.n.01",
+    "sourceVersion": "3.0",
+    "sourceRows": 51,
+    "heldRows": 10,
+    "canonicalAnswers": 67,
+    "familiarInputs": 51,
+    "rareAnchor": "Newcomen engine"
+  },
+  {
+    "id": "authored-flat-geometric-shapes",
+    "root": "plane_figure.n.01",
+    "sourceVersion": "3.0",
+    "sourceRows": 60,
+    "heldRows": 13,
+    "canonicalAnswers": 57,
+    "familiarInputs": 40,
+    "rareAnchor": "Arbelos"
+  },
+  {
+    "id": "authored-medical-instrument-kinds",
+    "root": "medical_instrument.n.01",
+    "sourceVersion": "3.0",
+    "sourceRows": 49,
+    "heldRows": 1,
+    "canonicalAnswers": 83,
+    "familiarInputs": 56,
+    "rareAnchor": "Osteotome"
+  },
+  {
+    "id": "authored-printing-techniques",
+    "root": "printing.n.03",
+    "sourceVersion": "3.0",
+    "sourceRows": 17,
+    "heldRows": 0,
+    "canonicalAnswers": 51,
+    "familiarInputs": 44,
+    "rareAnchor": "Cliche-verre"
+  },
+  {
+    "id": "authored-sculpture-kinds",
+    "root": "sculpture.n.01",
+    "sourceVersion": "3.0",
+    "sourceRows": 27,
+    "heldRows": 2,
+    "canonicalAnswers": 63,
+    "familiarInputs": 50,
+    "rareAnchor": "Acrolith"
+  },
+  {
+    "id": "authored-poem-forms",
+    "root": "poem.n.01",
+    "sourceVersion": "3.0",
+    "sourceRows": 35,
+    "heldRows": 3,
+    "canonicalAnswers": 67,
+    "familiarInputs": 49,
+    "rareAnchor": "Rhopalic verse"
+  },
+  {
+    "id": "authored-art-movements-styles",
+    "root": "artistic_movement.n.01",
+    "sourceVersion": "3.0",
+    "sourceRows": 31,
+    "heldRows": 2,
+    "canonicalAnswers": 237,
+    "familiarInputs": 62,
+    "rareAnchor": "Rayonism"
+  },
+  {
+    "id": "authored-flower-kinds",
+    "root": "flower.n.01",
+    "sourceVersion": "3.0",
+    "sourceRows": 467,
+    "heldRows": 0,
+    "canonicalAnswers": 523,
+    "familiarInputs": 106,
+    "rareAnchor": "Chincherinchee"
   }
 ]

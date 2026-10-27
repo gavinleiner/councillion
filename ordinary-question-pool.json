@@ -1,6 +1,6 @@
 {
-  "build": "065e1a2004c360f6",
-  "count": 413,
+  "build": "17fd2bd282e6a754",
+  "count": 434,
   "categories": [
     {
       "id": "group-q001",
@@ -3059,6 +3059,126 @@
       "scope": "Kinds of boat, ship, raft or other vessel designed to travel on water or underwater count, past or present. Individual named vessels, wrecks, ice-only vehicles and descriptors of condition alone do not."
     },
     {
+      "id": "authored-writing-drawing-tools",
+      "prompt": "Name a tool used for writing or drawing.",
+      "family": "everyday",
+      "group": "authored-whole-object-concept",
+      "answerCount": 37,
+      "scope": "Pens, pencils, crayons and other physical implements used to make written or drawn marks count. Paper, erasers alone, ink alone and software applications do not."
+    },
+    {
+      "id": "authored-cleaning-equipment-kinds",
+      "prompt": "Name a tool or machine used for cleaning.",
+      "family": "everyday",
+      "group": "authored-whole-object-concept",
+      "answerCount": 42,
+      "scope": "Recognized cleaning tools and machines count, including hand tools, wiping materials and powered cleaning equipment. A brand name or chemical cleaning ingredient alone is not a tool."
+    },
+    {
+      "id": "authored-makeup-product-kinds",
+      "prompt": "Name a type of makeup or decorative cosmetic product.",
+      "family": "everyday",
+      "group": "authored-whole-object-concept",
+      "answerCount": 41,
+      "scope": "Recognized decorative makeup types, nail cosmetics, skin-tone products, cosmetic body color and cosmetic application adhesives count. A brand alone, application tool, ordinary cleansing product or hair-removal treatment does not count."
+    },
+    {
+      "id": "authored-adhesive-kinds",
+      "prompt": "Name a glue, adhesive or adhesive brand.",
+      "family": "everyday",
+      "group": "authored-whole-object-concept",
+      "answerCount": 80,
+      "scope": "Recognized glue and adhesive substances, technical types, product forms and established adhesive brands/products count, including tapes and reusable mounting putties. An unrelated fastener, an unrelated brand or an ordinary sticky food alone does not count."
+    },
+    {
+      "id": "authored-toy-kinds",
+      "prompt": "Name a type of toy.",
+      "family": "everyday",
+      "group": "authored-whole-object-concept",
+      "answerCount": 90,
+      "scope": "Recognized toy types and established named kinds of plaything count. Named branded toy kinds such as LEGO bricks, Barbie dolls or Play-Doh also count; a company name alone, a fictional character alone or an unrelated household object is not a toy type."
+    },
+    {
+      "id": "authored-timepiece-kinds",
+      "prompt": "Name a type of clock, watch or timekeeping device.",
+      "family": "everyday",
+      "group": "authored-whole-object-concept",
+      "answerCount": 53,
+      "scope": "Physical timekeeping devices and recognized clock/watch types count, including historic sundials, hourglasses and water clocks. Calendar systems, units of time and software applications alone do not count."
+    },
+    {
+      "id": "authored-computer-device-kinds",
+      "prompt": "Name a kind of computer or computing device.",
+      "family": "science",
+      "group": "authored-whole-object-concept",
+      "answerCount": 52,
+      "scope": "Recognized computer types, architectures and physical computing devices count, including programmable and specialized calculators and historical machines. Computer brands alone, operating systems, standalone storage devices and software applications are outside this hardware-type question."
+    },
+    {
+      "id": "authored-engine-kinds",
+      "prompt": "Name a type of mechanical engine or motor.",
+      "family": "science",
+      "group": "authored-whole-object-concept",
+      "answerCount": 67,
+      "scope": "Recognized mechanical prime movers and engine or motor types count, including combustion engines, turbines, rocket engines and electric, hydraulic or pneumatic motors. Electric generators, software engines and whole vehicles do not count."
+    },
+    {
+      "id": "authored-flat-geometric-shapes",
+      "prompt": "Name a closed, flat geometric shape.",
+      "family": "science",
+      "group": "authored-whole-object-concept",
+      "answerCount": 57,
+      "scope": "Named two-dimensional shapes and recognized shape classes that enclose a planar area count. Specific polygon types, curves used as closed outlines and compound regions count. Three-dimensional solids, open line segments and unnamed drawings do not count."
+    },
+    {
+      "id": "authored-medical-instrument-kinds",
+      "prompt": "Name a medical instrument or piece of medical equipment.",
+      "family": "science",
+      "group": "authored-whole-object-concept",
+      "answerCount": 83,
+      "scope": "Recognized physical instruments and equipment used for examination, diagnosis, monitoring or treatment count. Medical specialties, diseases, drugs and medical procedures alone do not count. This is an equipment-name question, not treatment advice."
+    },
+    {
+      "id": "authored-printing-techniques",
+      "prompt": "Name a printmaking or printing technique.",
+      "family": "culture",
+      "group": "authored-whole-object-concept",
+      "answerCount": 51,
+      "scope": "Recognized methods of producing printed images or text and artistic printmaking methods count. Named additive manufacturing/3D printing methods also count. A printer brand, image subject or unrelated craft alone is not a technique."
+    },
+    {
+      "id": "authored-sculpture-kinds",
+      "prompt": "Name a type or recognized form of sculpture.",
+      "family": "culture",
+      "group": "authored-whole-object-concept",
+      "answerCount": 63,
+      "scope": "Recognized sculpture forms, sculpting techniques and named sculptural object/material types count. Material words can name an established sculptural type, such as bronze, marble, ice or sand sculpture. Individual artists, individual artworks and generic unrelated objects do not count."
+    },
+    {
+      "id": "authored-poem-forms",
+      "prompt": "Name a type or form of poem.",
+      "family": "culture",
+      "group": "authored-whole-object-concept",
+      "answerCount": 67,
+      "scope": "Recognized named poem and verse forms count, including complete short forms and established stanza/verse forms used as poems. A subject, individual poet, book title or meter alone does not automatically name a poem form."
+    },
+    {
+      "id": "authored-art-movements-styles",
+      "prompt": "Name an art movement or recognized visual-art style.",
+      "family": "culture",
+      "group": "authored-whole-object-concept",
+      "answerCount": 237,
+      "scope": "Recognized visual-art movements, schools and historical styles count, including architectural and moving-image art movements. An individual artist, work, generic medium or music genre alone does not count."
+    },
+    {
+      "id": "authored-flower-kinds",
+      "prompt": "Name a type of flower.",
+      "family": "nature",
+      "group": "authored-whole-object-concept",
+      "answerCount": 523,
+      "scope": "Recognized common flower types and flowering plants grown for their blooms count, including named horticultural groups and documented varieties. Materials merely named after flowers, artificial flower products and unrelated decorative objects do not count."
+    },
+    {
       "id": "authored-wild-cat-kinds",
       "prompt": "Name a kind of wild cat.",
       "family": "nature",
@@ -3305,6 +3425,54 @@
       "group": "authored-whole-franchise-characters",
       "answerCount": 82,
       "scope": "Named or distinctly identified characters in the Shrek films and spin-offs, including Puss in Boots films, count. Identified groups such as the Three Little Pigs count. Voice actors and generic fairy-tale species alone do not count."
+    },
+    {
+      "id": "authored-pokemon-moves",
+      "prompt": "Name a move from a Pokémon video game.",
+      "family": "gaming",
+      "group": "authored-whole-game-concept",
+      "answerCount": 919,
+      "scope": "Named moves from released Pokémon games count, including Z-Moves, Max Moves and Colosseum/XD Shadow moves. Physical/special implementations of the same named move share one answer. Generic actions and moves from fan games do not count."
+    },
+    {
+      "id": "authored-pokemon-abilities",
+      "prompt": "Name a Pokémon Ability.",
+      "family": "gaming",
+      "group": "authored-whole-game-concept",
+      "answerCount": 373,
+      "scope": "Named passive Pokémon Abilities from the core games and Pokémon Conquest count. Moves, types, held items and generic trainer actions are separate concepts."
+    },
+    {
+      "id": "authored-pokemon-items",
+      "prompt": "Name an item or trainer device from a Pokémon video game.",
+      "family": "gaming",
+      "group": "authored-whole-game-concept",
+      "answerCount": 2155,
+      "scope": "Named usable items and trainer devices from released Pokémon video games count, including medicine, Poké Balls, Berries, held/key items, TMs/TRs, evolution items, Pokédexes and trainer communication/navigation devices. Historical versions of the same item name share one answer. Pokémon, moves and Abilities are separate concepts."
+    },
+    {
+      "id": "authored-pokemon-types",
+      "prompt": "Name a Pokémon type.",
+      "family": "gaming",
+      "group": "authored-whole-game-concept",
+      "answerCount": 19,
+      "scope": "The 18 standard main-series types and the special Stellar Tera type count. The unused Bird/??? data labels and the spin-off Shadow classification are outside this explicitly main-series type list."
+    },
+    {
+      "id": "authored-tea-brands",
+      "prompt": "Name a tea brand or tea company.",
+      "family": "food",
+      "group": "authored-whole-brand-inventory",
+      "answerCount": 126,
+      "scope": "Real current or historical tea brands, tea companies and tea estates count. A tea variety, drink preparation or generic ingredient is not a company or brand. The inventory includes packaged-tea and ready-to-drink brands; owning a separate brand does not automatically make a generic parent-name guess eligible."
+    },
+    {
+      "id": "authored-color-names",
+      "prompt": "Name a color or a named shade.",
+      "family": "everyday",
+      "group": "authored-whole-color-inventory",
+      "answerCount": 1138,
+      "scope": "Recognized English color names and published named shades count, including named pigments, Crayola colors and standard CSS color keywords. Regional spellings and ordinary synonyms share one answer. Patterns are not a single color. Different standard definitions of the same ordinary name do not create extra answers."
     }
   ]
 }

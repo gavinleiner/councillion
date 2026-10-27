@@ -4,6 +4,7 @@ import collections,gzip,json,pathlib,re,sys,unicodedata
 ROOT=pathlib.Path(__file__).resolve().parents[1];DATA=ROOT/'data-snapshots/authored'
 sources=json.load(gzip.open(DATA/'sources/object-concept-wordnet.json.gz'))['categories']
 spec=json.loads((DATA/'object-concept-specifications.json').read_text())['questions']
+supplemental=json.load(gzip.open(DATA/'sources/object-concept-supplemental-lists.json.gz'))['lists']
 def norm(s):return re.sub('[^a-z0-9+#]','',unicodedata.normalize('NFKD',s).encode('ascii','ignore').decode().lower())
 def display(s):return s[0].upper()+s[1:]
 questions=[];checks=[];holds={};issues=[]
@@ -19,6 +20,9 @@ for q in spec:
   label=q['renames'].get(name,name);aliases=[a for a in row['aliases']if a not in q['aliasHolds'].get(name,[])]
   if label!=name and name not in q.get('omitOriginalAliases',[]):aliases.append(name)
   insert(label,aliases,{'synset':row['synset']})
+ for label in supplemental.get(k,{}).get('names',[]):
+  if label in q['holds']:continue
+  insert(q['renames'].get(label,label),[],{'supplementalList':True})
  for row in q['additions']:insert(row['label'],row['aliases'],{'editorialAddition':True})
  # Canonical identity always protects an exact name. Synonyms merge identities
  # only when explicitly declared in authoring inputs (not by token overlap).

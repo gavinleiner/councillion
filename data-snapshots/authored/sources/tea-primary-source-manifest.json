@@ -1,0 +1,119 @@
+[
+  {
+    "label": "Ippodo",
+    "url": "https://ippodotea.com/",
+    "file": "ippodo.html",
+    "sha256": "f9a4ed5673b1f6d158c7178077cfcf25bf8f4243a5503695b55e723b828a3b17",
+    "bytes": 330956,
+    "pageTitle": "Ippodo Tea \u2013 Kyoto Matcha and Japanese Green Tea (USA & CA)",
+    "bodyMentionCount": 9
+  },
+  {
+    "label": "Tata Tea",
+    "url": "https://www.tataconsumer.com/brands/tea/tata-tea",
+    "file": "tata-tea.html",
+    "sha256": "1feb38a4928950c668c89e261a94cba82c75ae09e16db2f2820c52565e2c6a9b",
+    "bytes": 202349,
+    "pageTitle": "Tata Tea | Tata Consumer Products",
+    "bodyMentionCount": 61
+  },
+  {
+    "label": "Wagh Bakri",
+    "url": "https://www.waghbakritea.com/",
+    "file": "wagh-bakri.html",
+    "sha256": "be0b0e1e8bfeda1d084317479e9b26622f1b9588b05c700c7fa4357102e87d9f",
+    "bytes": 234985,
+    "pageTitle": "Home | Wagh Bakri Tea Group",
+    "bodyMentionCount": 38
+  },
+  {
+    "label": "Vahdam",
+    "url": "https://www.vahdam.com/",
+    "file": "vahdam.html",
+    "sha256": "6b0106df4354ef0ac9e32d8d3a95411e4c5604ce008456e957e6b6d3d210e9c1",
+    "bytes": 648855,
+    "pageTitle": "VAHDAM\u00ae USA | Wellness Teas & Coffee | Feel Alive",
+    "bodyMentionCount": 9
+  },
+  {
+    "label": "Rishi Tea",
+    "url": "https://rishi-tea.com/",
+    "file": "rishi-tea.html",
+    "sha256": "4ad8ae2023244212dbc652d095c699cb31fa1bb0379748df62a6bae3185d0172",
+    "bytes": 1676370,
+    "pageTitle": "Rishi Tea & Botanicals",
+    "bodyMentionCount": 7
+  },
+  {
+    "label": "Teapigs",
+    "url": "https://www.teapigs.co.uk/",
+    "file": "teapigs.html",
+    "sha256": "21f8d3600737bca073228e763cc22a0daffb92473166934bad55452f319e2edd",
+    "bytes": 570986,
+    "pageTitle": "Tea Collection | Assorted Tea Bags | teapigs uk",
+    "bodyMentionCount": 8
+  },
+  {
+    "label": "Fukujuen",
+    "url": "https://global.fukujuen.com/",
+    "file": "fukujuen.html",
+    "sha256": "db44c8fcff8a715b9de9e324023baf8bf749ccb46f4dd9c443f9930ca2a7fd83",
+    "bytes": 544193,
+    "pageTitle": "Fukujuen | Shop Japanese Green Tea | Since 1790\n\u2013 Fukujuen Global Online Shop",
+    "bodyMentionCount": 6
+  },
+  {
+    "label": "Peace Tea",
+    "url": "https://www.coca-cola.com/us/en/brands/peace-tea",
+    "file": "peace-tea.html",
+    "sha256": "f18d0d3f6147f8fc14789e90d987ba7d995ee18b48888f77bc3b1e410d633fa1",
+    "bytes": 177179,
+    "pageTitle": "Happy & Refreshing Iced Tea | Peace Tea\u00ae",
+    "bodyMentionCount": 2
+  },
+  {
+    "label": "Brisk",
+    "url": "https://contact.pepsico.com/brisk/about-us",
+    "error": "HTTP Error 403: Forbidden",
+    "indexedPublisherEvidence": {
+      "url": "https://contact.pepsico.com/brisk/about-us",
+      "title": "About Us | Contact Brisk",
+      "publisher": "PepsiCo",
+      "fact": "The publisher identifies Lipton Iced Tea, Pure Leaf Iced Tea and Brisk Iced Tea in its ready-to-drink tea portfolio."
+    },
+    "evidenceNote": "Official publisher page indexed by the web search tool. Direct HTTP capture returned403; no raw-page capture or full-catalog completeness is claimed."
+  },
+  {
+    "label": "Pure Leaf",
+    "url": "https://www.pepsico.com/en/brands/pure-leaf",
+    "error": "HTTP Error 403: Forbidden",
+    "indexedPublisherEvidence": {
+      "url": "https://www.pepsico.com/en/brands/pure-leaf",
+      "title": "Pure Leaf Tea | PepsiCo",
+      "publisher": "PepsiCo",
+      "fact": "The publisher describes Pure Leaf as a real-brewed iced tea brand."
+    },
+    "evidenceNote": "Official publisher page indexed by the web search tool. Direct HTTP capture returned403; no raw-page capture or full-catalog completeness is claimed."
+  },
+  {
+    "label": "Gold Peak",
+    "url": "https://www.coca-colacompany.com/brands/coffee-tea/gold-peak",
+    "file": "gold-peak.html",
+    "sha256": "46f8ad9982d444f9c3dbb758ba4f6668e942a2c47522fae601941b5779d1ce5c",
+    "bytes": 117942,
+    "pageTitle": "Gold Peak Ready-to-Drink Tea by Coca-Cola",
+    "bodyMentionCount": 7
+  },
+  {
+    "label": "Fuze Tea",
+    "url": "https://www.cocacolaep.com/our-brands/our-brands/fuze-tea/",
+    "error": "HTTP Error 403: Forbidden",
+    "indexedPublisherEvidence": {
+      "url": "https://www.cocacolaep.com/our-brands/our-brands/fuze-tea/",
+      "title": "Fuze Tea - Coca-Cola Europacific Partners",
+      "publisher": "Coca-Cola Europacific Partners",
+      "fact": "The bottler lists Fuze Tea as a tea brand in its own brands portfolio."
+    },
+    "evidenceNote": "Official publisher page indexed by the web search tool. Direct HTTP capture returned403; no raw-page capture or full-catalog completeness is claimed."
+  }
+]

@@ -4934,6 +4934,5104 @@
       "omitOriginalAliases": [
         "nautilus"
       ]
+    },
+    {
+      "key": "writing-drawing-tools",
+      "root": "writing_implement.n.01",
+      "family": "everyday",
+      "prompt": "Name a tool used for writing or drawing.",
+      "scope": "Pens, pencils, crayons and other physical implements used to make written or drawn marks count. Paper, erasers alone, ink alone and software applications do not.",
+      "familiar": [
+        "Pen",
+        "Pencil",
+        "Crayon",
+        "Marker",
+        "Chalk",
+        "Charcoal",
+        "Pastel",
+        "Paintbrush",
+        "Stylus",
+        "Fountain pen",
+        "Ballpoint pen",
+        "Gel pen",
+        "Rollerball pen",
+        "Mechanical pencil",
+        "Colored pencil",
+        "Highlighter",
+        "Felt-tip pen",
+        "Dip pen",
+        "Quill",
+        "Reed pen",
+        "Chalk marker",
+        "Grease pencil",
+        "Chinagraph pencil",
+        "Fineliner",
+        "Brush pen",
+        "Calligraphy pen",
+        "Carpenter pencil",
+        "Conte crayon",
+        "Silverpoint",
+        "Digital pen",
+        "3D pen"
+      ],
+      "exclude": [
+        "Paper",
+        "Microsoft Word",
+        "Ink bottle"
+      ],
+      "rare": "Ruling pen",
+      "references": [
+        "https://wordnet.princeton.edu/",
+        "https://www.crayola.com/products",
+        "https://www.staedtler.com/intl/en/products/pencils-and-accessories/",
+        "https://www.si.edu/object/ruling-pen%3Anmah_904285"
+      ],
+      "holds": {},
+      "aliasHolds": {},
+      "renames": {},
+      "additions": [
+        {
+          "label": "Pen",
+          "aliases": []
+        },
+        {
+          "label": "Pencil",
+          "aliases": []
+        },
+        {
+          "label": "Crayon",
+          "aliases": []
+        },
+        {
+          "label": "Marker",
+          "aliases": []
+        },
+        {
+          "label": "Chalk",
+          "aliases": []
+        },
+        {
+          "label": "Charcoal",
+          "aliases": []
+        },
+        {
+          "label": "Pastel",
+          "aliases": []
+        },
+        {
+          "label": "Paintbrush",
+          "aliases": []
+        },
+        {
+          "label": "Stylus",
+          "aliases": []
+        },
+        {
+          "label": "Fountain pen",
+          "aliases": []
+        },
+        {
+          "label": "Ballpoint pen",
+          "aliases": []
+        },
+        {
+          "label": "Gel pen",
+          "aliases": []
+        },
+        {
+          "label": "Rollerball pen",
+          "aliases": []
+        },
+        {
+          "label": "Mechanical pencil",
+          "aliases": []
+        },
+        {
+          "label": "Colored pencil",
+          "aliases": []
+        },
+        {
+          "label": "Highlighter",
+          "aliases": []
+        },
+        {
+          "label": "Felt-tip pen",
+          "aliases": []
+        },
+        {
+          "label": "Dip pen",
+          "aliases": []
+        },
+        {
+          "label": "Quill",
+          "aliases": []
+        },
+        {
+          "label": "Reed pen",
+          "aliases": []
+        },
+        {
+          "label": "Chalk marker",
+          "aliases": []
+        },
+        {
+          "label": "Grease pencil",
+          "aliases": []
+        },
+        {
+          "label": "Chinagraph pencil",
+          "aliases": []
+        },
+        {
+          "label": "Fineliner",
+          "aliases": []
+        },
+        {
+          "label": "Brush pen",
+          "aliases": []
+        },
+        {
+          "label": "Calligraphy pen",
+          "aliases": []
+        },
+        {
+          "label": "Carpenter pencil",
+          "aliases": []
+        },
+        {
+          "label": "Conte crayon",
+          "aliases": []
+        },
+        {
+          "label": "Silverpoint",
+          "aliases": []
+        },
+        {
+          "label": "Digital pen",
+          "aliases": []
+        },
+        {
+          "label": "3D pen",
+          "aliases": []
+        },
+        {
+          "label": "Ruling pen",
+          "aliases": []
+        },
+        {
+          "label": "Pen",
+          "aliases": [
+            "Pens"
+          ]
+        },
+        {
+          "label": "Pencil",
+          "aliases": [
+            "Pencils"
+          ]
+        },
+        {
+          "label": "Colored pencil",
+          "aliases": [
+            "Coloured pencil",
+            "Color pencil"
+          ]
+        },
+        {
+          "label": "Conte crayon",
+          "aliases": [
+            "Conté crayon"
+          ]
+        },
+        {
+          "label": "Grease pencil",
+          "aliases": [
+            "China marker",
+            "Chinagraph pencil"
+          ]
+        },
+        {
+          "label": "Carpenter pencil",
+          "aliases": [
+            "Carpenter's pencil"
+          ]
+        }
+      ],
+      "merges": [
+        {
+          "from": "ballpoint",
+          "into": "Ballpoint pen"
+        },
+        {
+          "from": "lead pencil",
+          "into": "Pencil"
+        },
+        {
+          "from": "chinagraph pencil",
+          "into": "Grease pencil"
+        }
+      ]
+    },
+    {
+      "key": "cleaning-equipment-kinds",
+      "root": "cleaning_implement.n.01",
+      "family": "everyday",
+      "prompt": "Name a tool or machine used for cleaning.",
+      "scope": "Recognized cleaning tools and machines count, including hand tools, wiping materials and powered cleaning equipment. A brand name or chemical cleaning ingredient alone is not a tool.",
+      "familiar": [
+        "Broom",
+        "Mop",
+        "Vacuum cleaner",
+        "Sponge",
+        "Scrub brush",
+        "Duster",
+        "Dustpan",
+        "Toilet brush",
+        "Bottle brush",
+        "Dish brush",
+        "Scrubbing pad",
+        "Scouring pad",
+        "Microfiber cloth",
+        "Dishcloth",
+        "Cleaning rag",
+        "Feather duster",
+        "Squeegee",
+        "Window washer",
+        "Steam cleaner",
+        "Carpet cleaner",
+        "Pressure washer",
+        "Floor polisher",
+        "Floor scrubber",
+        "Lint roller",
+        "Drain snake",
+        "Pipe brush",
+        "Chimney brush",
+        "Upholstery cleaner",
+        "Robot vacuum",
+        "Wet and dry vacuum",
+        "Handheld vacuum",
+        "Carpet sweeper"
+      ],
+      "exclude": [
+        "Bleach",
+        "Ammonia",
+        "Tide"
+      ],
+      "rare": "Besom",
+      "references": [
+        "https://wordnet.princeton.edu/",
+        "https://www.vileda.com/",
+        "https://www.kaercher.com/int/professional.html"
+      ],
+      "holds": {},
+      "aliasHolds": {},
+      "renames": {},
+      "additions": [
+        {
+          "label": "Broom",
+          "aliases": []
+        },
+        {
+          "label": "Mop",
+          "aliases": []
+        },
+        {
+          "label": "Vacuum cleaner",
+          "aliases": []
+        },
+        {
+          "label": "Sponge",
+          "aliases": []
+        },
+        {
+          "label": "Scrub brush",
+          "aliases": []
+        },
+        {
+          "label": "Duster",
+          "aliases": []
+        },
+        {
+          "label": "Dustpan",
+          "aliases": []
+        },
+        {
+          "label": "Toilet brush",
+          "aliases": []
+        },
+        {
+          "label": "Bottle brush",
+          "aliases": []
+        },
+        {
+          "label": "Dish brush",
+          "aliases": []
+        },
+        {
+          "label": "Scrubbing pad",
+          "aliases": []
+        },
+        {
+          "label": "Scouring pad",
+          "aliases": []
+        },
+        {
+          "label": "Microfiber cloth",
+          "aliases": []
+        },
+        {
+          "label": "Dishcloth",
+          "aliases": []
+        },
+        {
+          "label": "Cleaning rag",
+          "aliases": []
+        },
+        {
+          "label": "Feather duster",
+          "aliases": []
+        },
+        {
+          "label": "Squeegee",
+          "aliases": []
+        },
+        {
+          "label": "Window washer",
+          "aliases": []
+        },
+        {
+          "label": "Steam cleaner",
+          "aliases": []
+        },
+        {
+          "label": "Carpet cleaner",
+          "aliases": []
+        },
+        {
+          "label": "Pressure washer",
+          "aliases": []
+        },
+        {
+          "label": "Floor polisher",
+          "aliases": []
+        },
+        {
+          "label": "Floor scrubber",
+          "aliases": []
+        },
+        {
+          "label": "Lint roller",
+          "aliases": []
+        },
+        {
+          "label": "Drain snake",
+          "aliases": []
+        },
+        {
+          "label": "Pipe brush",
+          "aliases": []
+        },
+        {
+          "label": "Chimney brush",
+          "aliases": []
+        },
+        {
+          "label": "Upholstery cleaner",
+          "aliases": []
+        },
+        {
+          "label": "Robot vacuum",
+          "aliases": []
+        },
+        {
+          "label": "Wet and dry vacuum",
+          "aliases": []
+        },
+        {
+          "label": "Handheld vacuum",
+          "aliases": []
+        },
+        {
+          "label": "Carpet sweeper",
+          "aliases": []
+        },
+        {
+          "label": "Besom",
+          "aliases": []
+        },
+        {
+          "label": "Vacuum cleaner",
+          "aliases": [
+            "Vacuum",
+            "Hoover"
+          ]
+        },
+        {
+          "label": "Whisk broom",
+          "aliases": [
+            "Whisk"
+          ]
+        }
+      ],
+      "merges": [
+        {
+          "from": "dustmop",
+          "into": "Dust mop"
+        },
+        {
+          "from": "Vacuum",
+          "into": "Vacuum cleaner"
+        },
+        {
+          "from": "whisk",
+          "into": "Whisk broom"
+        }
+      ]
+    },
+    {
+      "key": "makeup-product-kinds",
+      "root": "cosmetic.n.01",
+      "family": "everyday",
+      "prompt": "Name a type of makeup or decorative cosmetic product.",
+      "scope": "Recognized decorative makeup types, nail cosmetics, skin-tone products, cosmetic body color and cosmetic application adhesives count. A brand alone, application tool, ordinary cleansing product or hair-removal treatment does not count.",
+      "familiar": [
+        "Lipstick",
+        "Mascara",
+        "Foundation",
+        "Concealer",
+        "Blush",
+        "Eyeshadow",
+        "Eyeliner",
+        "Lip gloss",
+        "Lip liner",
+        "Lip stain",
+        "Lip tint",
+        "Lip balm",
+        "Bronzer",
+        "Highlighter",
+        "Contour",
+        "Primer",
+        "Setting powder",
+        "Setting spray",
+        "Face powder",
+        "Loose powder",
+        "Pressed powder",
+        "Brow pencil",
+        "Brow gel",
+        "Brow powder",
+        "Brow pomade",
+        "False eyelashes",
+        "Eyelash glue",
+        "Nail polish",
+        "Nail varnish",
+        "Nail art stickers",
+        "BB cream",
+        "CC cream",
+        "Tinted moisturizer",
+        "Body glitter",
+        "Face paint",
+        "Hair dye",
+        "Self-tanner",
+        "Kohl",
+        "Rouge",
+        "Lip plumper"
+      ],
+      "exclude": [
+        "Makeup brush",
+        "Sephora",
+        "Shampoo",
+        "Makeup"
+      ],
+      "rare": "Spirit gum",
+      "references": [
+        "https://wordnet.princeton.edu/",
+        "https://www.sephora.com/shop/makeup-cosmetics",
+        "https://www.maccosmetics.com/products/13839/products/makeup",
+        "https://global.kryolan.com/product/spirit-gum"
+      ],
+      "holds": {
+        "blackface": "Practice/category label or hair-removal preparation; not a decorative makeup product type in this question.",
+        "makeup": "Practice/category label or hair-removal preparation; not a decorative makeup product type in this question.",
+        "depilatory": "Practice/category label or hair-removal preparation; not a decorative makeup product type in this question.",
+        "epilating wax": "Practice/category label or hair-removal preparation; not a decorative makeup product type in this question."
+      },
+      "aliasHolds": {},
+      "renames": {},
+      "additions": [
+        {
+          "label": "Lipstick",
+          "aliases": []
+        },
+        {
+          "label": "Mascara",
+          "aliases": []
+        },
+        {
+          "label": "Foundation",
+          "aliases": []
+        },
+        {
+          "label": "Concealer",
+          "aliases": []
+        },
+        {
+          "label": "Blush",
+          "aliases": []
+        },
+        {
+          "label": "Eyeshadow",
+          "aliases": []
+        },
+        {
+          "label": "Eyeliner",
+          "aliases": []
+        },
+        {
+          "label": "Lip gloss",
+          "aliases": []
+        },
+        {
+          "label": "Lip liner",
+          "aliases": []
+        },
+        {
+          "label": "Lip stain",
+          "aliases": []
+        },
+        {
+          "label": "Lip tint",
+          "aliases": []
+        },
+        {
+          "label": "Lip balm",
+          "aliases": []
+        },
+        {
+          "label": "Bronzer",
+          "aliases": []
+        },
+        {
+          "label": "Highlighter",
+          "aliases": []
+        },
+        {
+          "label": "Contour",
+          "aliases": []
+        },
+        {
+          "label": "Primer",
+          "aliases": []
+        },
+        {
+          "label": "Setting powder",
+          "aliases": []
+        },
+        {
+          "label": "Setting spray",
+          "aliases": []
+        },
+        {
+          "label": "Face powder",
+          "aliases": []
+        },
+        {
+          "label": "Loose powder",
+          "aliases": []
+        },
+        {
+          "label": "Pressed powder",
+          "aliases": []
+        },
+        {
+          "label": "Brow pencil",
+          "aliases": []
+        },
+        {
+          "label": "Brow gel",
+          "aliases": []
+        },
+        {
+          "label": "Brow powder",
+          "aliases": []
+        },
+        {
+          "label": "Brow pomade",
+          "aliases": []
+        },
+        {
+          "label": "False eyelashes",
+          "aliases": []
+        },
+        {
+          "label": "Eyelash glue",
+          "aliases": []
+        },
+        {
+          "label": "Nail polish",
+          "aliases": []
+        },
+        {
+          "label": "Nail varnish",
+          "aliases": []
+        },
+        {
+          "label": "Nail art stickers",
+          "aliases": []
+        },
+        {
+          "label": "BB cream",
+          "aliases": []
+        },
+        {
+          "label": "CC cream",
+          "aliases": []
+        },
+        {
+          "label": "Tinted moisturizer",
+          "aliases": []
+        },
+        {
+          "label": "Body glitter",
+          "aliases": []
+        },
+        {
+          "label": "Face paint",
+          "aliases": []
+        },
+        {
+          "label": "Hair dye",
+          "aliases": []
+        },
+        {
+          "label": "Self-tanner",
+          "aliases": []
+        },
+        {
+          "label": "Kohl",
+          "aliases": []
+        },
+        {
+          "label": "Rouge",
+          "aliases": []
+        },
+        {
+          "label": "Lip plumper",
+          "aliases": []
+        },
+        {
+          "label": "Spirit gum",
+          "aliases": []
+        },
+        {
+          "label": "Blush",
+          "aliases": [
+            "Rouge"
+          ]
+        },
+        {
+          "label": "Eyebrow pencil",
+          "aliases": [
+            "Brow pencil"
+          ]
+        },
+        {
+          "label": "Eyelash glue",
+          "aliases": [
+            "Lash glue"
+          ]
+        },
+        {
+          "label": "Nail polish",
+          "aliases": [
+            "Nail varnish"
+          ]
+        }
+      ],
+      "merges": [
+        {
+          "from": "rouge",
+          "into": "Blush"
+        },
+        {
+          "from": "Nail varnish",
+          "into": "Nail polish"
+        },
+        {
+          "from": "Brow pencil",
+          "into": "Eyebrow pencil"
+        },
+        {
+          "from": "Lip gloss",
+          "into": "Lip-gloss"
+        },
+        {
+          "from": "Lash glue",
+          "into": "Eyelash glue"
+        }
+      ]
+    },
+    {
+      "key": "adhesive-kinds",
+      "root": "adhesive_material.n.01",
+      "family": "everyday",
+      "prompt": "Name a glue, adhesive or adhesive brand.",
+      "scope": "Recognized glue and adhesive substances, technical types, product forms and established adhesive brands/products count, including tapes and reusable mounting putties. An unrelated fastener, an unrelated brand or an ordinary sticky food alone does not count.",
+      "familiar": [
+        "Super glue",
+        "Wood glue",
+        "Hot glue",
+        "Epoxy",
+        "Glue stick",
+        "PVA glue",
+        "White glue",
+        "School glue",
+        "Craft glue",
+        "Rubber cement",
+        "Contact cement",
+        "Spray adhesive",
+        "Fabric glue",
+        "Leather glue",
+        "Wallpaper paste",
+        "Starch paste",
+        "Flour paste",
+        "Methyl cellulose paste",
+        "Hide glue",
+        "Animal glue",
+        "Fish glue",
+        "Bone glue",
+        "Casein glue",
+        "Cyanoacrylate",
+        "Polyurethane glue",
+        "Silicone adhesive",
+        "Acrylic adhesive",
+        "UV glue",
+        "Resin glue",
+        "Construction adhesive",
+        "Tile adhesive",
+        "Denture adhesive",
+        "Lash glue",
+        "Pressure-sensitive adhesive",
+        "Double-sided tape",
+        "Duct tape",
+        "Masking tape",
+        "Packing tape",
+        "Electrical tape",
+        "Elmer's Glue",
+        "Gorilla Glue",
+        "Titebond",
+        "Loctite",
+        "Bostik",
+        "UHU",
+        "Pritt",
+        "Araldite",
+        "E6000",
+        "Shoe Goo",
+        "Mod Podge",
+        "Aleene's Tacky Glue",
+        "Scotch tape",
+        "Blu Tack",
+        "Patafix",
+        "Evo-Stik",
+        "Copydex",
+        "Pattex",
+        "Sika",
+        "Selleys"
+      ],
+      "exclude": [
+        "Nail",
+        "Staple",
+        "Nike",
+        "Glue",
+        "Adhesive"
+      ],
+      "rare": "Isinglass",
+      "references": [
+        "https://wordnet.princeton.edu/",
+        "https://www.3m.com/3M/en_US/bonding-and-assembly-us/products/",
+        "https://gorillatough.com/products/",
+        "https://www.elmers.com/",
+        "https://www.titebond.com/",
+        "https://www.uhu.com/en-en",
+        "https://www.loctiteproducts.com/",
+        "https://www.blu-tack.com/"
+      ],
+      "holds": {
+        "glue": "Unqualified umbrella term given in the question, not a particular named type or brand."
+      },
+      "aliasHolds": {},
+      "renames": {},
+      "additions": [
+        {
+          "label": "Super glue",
+          "aliases": []
+        },
+        {
+          "label": "Wood glue",
+          "aliases": []
+        },
+        {
+          "label": "Hot glue",
+          "aliases": []
+        },
+        {
+          "label": "Epoxy",
+          "aliases": []
+        },
+        {
+          "label": "Glue stick",
+          "aliases": []
+        },
+        {
+          "label": "PVA glue",
+          "aliases": []
+        },
+        {
+          "label": "White glue",
+          "aliases": []
+        },
+        {
+          "label": "School glue",
+          "aliases": []
+        },
+        {
+          "label": "Craft glue",
+          "aliases": []
+        },
+        {
+          "label": "Rubber cement",
+          "aliases": []
+        },
+        {
+          "label": "Contact cement",
+          "aliases": []
+        },
+        {
+          "label": "Spray adhesive",
+          "aliases": []
+        },
+        {
+          "label": "Fabric glue",
+          "aliases": []
+        },
+        {
+          "label": "Leather glue",
+          "aliases": []
+        },
+        {
+          "label": "Wallpaper paste",
+          "aliases": []
+        },
+        {
+          "label": "Starch paste",
+          "aliases": []
+        },
+        {
+          "label": "Flour paste",
+          "aliases": []
+        },
+        {
+          "label": "Methyl cellulose paste",
+          "aliases": []
+        },
+        {
+          "label": "Hide glue",
+          "aliases": []
+        },
+        {
+          "label": "Animal glue",
+          "aliases": []
+        },
+        {
+          "label": "Fish glue",
+          "aliases": []
+        },
+        {
+          "label": "Bone glue",
+          "aliases": []
+        },
+        {
+          "label": "Casein glue",
+          "aliases": []
+        },
+        {
+          "label": "Cyanoacrylate",
+          "aliases": []
+        },
+        {
+          "label": "Polyurethane glue",
+          "aliases": []
+        },
+        {
+          "label": "Silicone adhesive",
+          "aliases": []
+        },
+        {
+          "label": "Acrylic adhesive",
+          "aliases": []
+        },
+        {
+          "label": "UV glue",
+          "aliases": []
+        },
+        {
+          "label": "Resin glue",
+          "aliases": []
+        },
+        {
+          "label": "Construction adhesive",
+          "aliases": []
+        },
+        {
+          "label": "Tile adhesive",
+          "aliases": []
+        },
+        {
+          "label": "Denture adhesive",
+          "aliases": []
+        },
+        {
+          "label": "Lash glue",
+          "aliases": []
+        },
+        {
+          "label": "Pressure-sensitive adhesive",
+          "aliases": []
+        },
+        {
+          "label": "Double-sided tape",
+          "aliases": []
+        },
+        {
+          "label": "Duct tape",
+          "aliases": []
+        },
+        {
+          "label": "Masking tape",
+          "aliases": []
+        },
+        {
+          "label": "Packing tape",
+          "aliases": []
+        },
+        {
+          "label": "Electrical tape",
+          "aliases": []
+        },
+        {
+          "label": "Isinglass",
+          "aliases": []
+        },
+        {
+          "label": "Super glue",
+          "aliases": [
+            "Superglue",
+            "Cyanoacrylate adhesive"
+          ]
+        },
+        {
+          "label": "Hot glue",
+          "aliases": [
+            "Hot-melt adhesive",
+            "Hot melt glue"
+          ]
+        },
+        {
+          "label": "PVA glue",
+          "aliases": [
+            "Polyvinyl acetate glue"
+          ]
+        },
+        {
+          "label": "Elmer's Glue",
+          "aliases": [
+            "Elmer's",
+            "Elmers"
+          ]
+        },
+        {
+          "label": "Gorilla Glue",
+          "aliases": [
+            "Gorilla"
+          ]
+        },
+        {
+          "label": "Titebond",
+          "aliases": []
+        },
+        {
+          "label": "Loctite",
+          "aliases": []
+        },
+        {
+          "label": "Bostik",
+          "aliases": []
+        },
+        {
+          "label": "UHU",
+          "aliases": []
+        },
+        {
+          "label": "Pritt",
+          "aliases": []
+        },
+        {
+          "label": "Araldite",
+          "aliases": []
+        },
+        {
+          "label": "E6000",
+          "aliases": []
+        },
+        {
+          "label": "Shoe Goo",
+          "aliases": []
+        },
+        {
+          "label": "Mod Podge",
+          "aliases": []
+        },
+        {
+          "label": "Aleene's Tacky Glue",
+          "aliases": [
+            "Aleene's",
+            "Aleenes"
+          ]
+        },
+        {
+          "label": "Scotch tape",
+          "aliases": [
+            "Scotch adhesive tape"
+          ]
+        },
+        {
+          "label": "Blu Tack",
+          "aliases": [
+            "Blu-Tack",
+            "Blutack"
+          ]
+        },
+        {
+          "label": "Patafix",
+          "aliases": []
+        },
+        {
+          "label": "Evo-Stik",
+          "aliases": [
+            "Evostik"
+          ]
+        },
+        {
+          "label": "Copydex",
+          "aliases": []
+        },
+        {
+          "label": "Pattex",
+          "aliases": []
+        },
+        {
+          "label": "Sika",
+          "aliases": []
+        },
+        {
+          "label": "Selleys",
+          "aliases": []
+        },
+        {
+          "label": "Barge cement",
+          "aliases": [
+            "Barge all-purpose cement"
+          ]
+        },
+        {
+          "label": "Liquid Nails",
+          "aliases": []
+        },
+        {
+          "label": "Duro",
+          "aliases": []
+        },
+        {
+          "label": "Krazy Glue",
+          "aliases": []
+        },
+        {
+          "label": "Super Glue Corporation",
+          "aliases": [
+            "The Original Super Glue"
+          ]
+        },
+        {
+          "label": "Beacon",
+          "aliases": []
+        },
+        {
+          "label": "Glue Dots",
+          "aliases": []
+        },
+        {
+          "label": "Weldbond",
+          "aliases": []
+        },
+        {
+          "label": "Weldwood",
+          "aliases": []
+        },
+        {
+          "label": "J-B Weld",
+          "aliases": [
+            "JB Weld"
+          ]
+        }
+      ],
+      "merges": [
+        {
+          "from": "Cyanoacrylate",
+          "into": "Super glue"
+        }
+      ]
+    },
+    {
+      "key": "toy-kinds",
+      "root": "plaything.n.01",
+      "family": "everyday",
+      "prompt": "Name a type of toy.",
+      "scope": "Recognized toy types and established named kinds of plaything count. Named branded toy kinds such as LEGO bricks, Barbie dolls or Play-Doh also count; a company name alone, a fictional character alone or an unrelated household object is not a toy type.",
+      "familiar": [
+        "Doll",
+        "Action figure",
+        "Toy car",
+        "Teddy bear",
+        "Building blocks",
+        "Jigsaw puzzle",
+        "Yo-yo",
+        "Spinning top",
+        "Kite",
+        "Marbles",
+        "Ball",
+        "Rubber duck",
+        "Rocking horse",
+        "Dollhouse",
+        "Train set",
+        "Toy train",
+        "Toy boat",
+        "Water gun",
+        "Toy robot",
+        "Jack-in-the-box",
+        "Puppet",
+        "Finger puppet",
+        "Hand puppet",
+        "String puppet",
+        "Model airplane",
+        "RC car",
+        "Remote-controlled car",
+        "Toy soldier",
+        "Beanbag",
+        "Beanie Baby",
+        "Stuffed animal",
+        "Plush toy",
+        "Rubik's Cube",
+        "Slinky",
+        "Hula hoop",
+        "Skipping rope",
+        "Jump rope",
+        "Play-Doh",
+        "Silly Putty",
+        "Lego bricks",
+        "Barbie doll",
+        "Frisbee",
+        "Fidget spinner",
+        "Fidget cube",
+        "Pop-it",
+        "Slime",
+        "Kaleidoscope",
+        "View-Master",
+        "Etch A Sketch",
+        "Spirograph",
+        "Magic 8 Ball",
+        "Nerf blaster",
+        "Beyblade",
+        "Tamagotchi",
+        "Furby",
+        "Toy drum",
+        "Toy kitchen",
+        "Play tent",
+        "Toy telephone",
+        "Toy gun",
+        "Doll carriage"
+      ],
+      "exclude": [
+        "Mattel",
+        "SpongeBob SquarePants",
+        "Microwave oven"
+      ],
+      "rare": "Thaumatrope",
+      "references": [
+        "https://wordnet.princeton.edu/",
+        "https://shop.mattel.com/",
+        "https://www.hasbro.com/en-us",
+        "https://www.lego.com/en-us",
+        "https://movingimage.org/collection/collection-spotlight_optical-toys/"
+      ],
+      "holds": {
+        "golliwog": "Historical racial-caricature artifact; omitted from this casual-play toy inventory, retained only in the source ledger."
+      },
+      "aliasHolds": {},
+      "renames": {},
+      "additions": [
+        {
+          "label": "Doll",
+          "aliases": []
+        },
+        {
+          "label": "Action figure",
+          "aliases": []
+        },
+        {
+          "label": "Toy car",
+          "aliases": []
+        },
+        {
+          "label": "Teddy bear",
+          "aliases": []
+        },
+        {
+          "label": "Building blocks",
+          "aliases": []
+        },
+        {
+          "label": "Jigsaw puzzle",
+          "aliases": []
+        },
+        {
+          "label": "Yo-yo",
+          "aliases": []
+        },
+        {
+          "label": "Spinning top",
+          "aliases": []
+        },
+        {
+          "label": "Kite",
+          "aliases": []
+        },
+        {
+          "label": "Marbles",
+          "aliases": []
+        },
+        {
+          "label": "Ball",
+          "aliases": []
+        },
+        {
+          "label": "Rubber duck",
+          "aliases": []
+        },
+        {
+          "label": "Rocking horse",
+          "aliases": []
+        },
+        {
+          "label": "Dollhouse",
+          "aliases": []
+        },
+        {
+          "label": "Train set",
+          "aliases": []
+        },
+        {
+          "label": "Toy train",
+          "aliases": []
+        },
+        {
+          "label": "Toy boat",
+          "aliases": []
+        },
+        {
+          "label": "Water gun",
+          "aliases": []
+        },
+        {
+          "label": "Toy robot",
+          "aliases": []
+        },
+        {
+          "label": "Jack-in-the-box",
+          "aliases": []
+        },
+        {
+          "label": "Puppet",
+          "aliases": []
+        },
+        {
+          "label": "Finger puppet",
+          "aliases": []
+        },
+        {
+          "label": "Hand puppet",
+          "aliases": []
+        },
+        {
+          "label": "String puppet",
+          "aliases": []
+        },
+        {
+          "label": "Model airplane",
+          "aliases": []
+        },
+        {
+          "label": "RC car",
+          "aliases": []
+        },
+        {
+          "label": "Remote-controlled car",
+          "aliases": []
+        },
+        {
+          "label": "Toy soldier",
+          "aliases": []
+        },
+        {
+          "label": "Beanbag",
+          "aliases": []
+        },
+        {
+          "label": "Beanie Baby",
+          "aliases": []
+        },
+        {
+          "label": "Stuffed animal",
+          "aliases": []
+        },
+        {
+          "label": "Plush toy",
+          "aliases": []
+        },
+        {
+          "label": "Rubik's Cube",
+          "aliases": []
+        },
+        {
+          "label": "Slinky",
+          "aliases": []
+        },
+        {
+          "label": "Hula hoop",
+          "aliases": []
+        },
+        {
+          "label": "Skipping rope",
+          "aliases": []
+        },
+        {
+          "label": "Jump rope",
+          "aliases": []
+        },
+        {
+          "label": "Play-Doh",
+          "aliases": []
+        },
+        {
+          "label": "Silly Putty",
+          "aliases": []
+        },
+        {
+          "label": "Lego bricks",
+          "aliases": []
+        },
+        {
+          "label": "Barbie doll",
+          "aliases": []
+        },
+        {
+          "label": "Frisbee",
+          "aliases": []
+        },
+        {
+          "label": "Fidget spinner",
+          "aliases": []
+        },
+        {
+          "label": "Fidget cube",
+          "aliases": []
+        },
+        {
+          "label": "Pop-it",
+          "aliases": []
+        },
+        {
+          "label": "Slime",
+          "aliases": []
+        },
+        {
+          "label": "Kaleidoscope",
+          "aliases": []
+        },
+        {
+          "label": "View-Master",
+          "aliases": []
+        },
+        {
+          "label": "Etch A Sketch",
+          "aliases": []
+        },
+        {
+          "label": "Spirograph",
+          "aliases": []
+        },
+        {
+          "label": "Magic 8 Ball",
+          "aliases": []
+        },
+        {
+          "label": "Nerf blaster",
+          "aliases": []
+        },
+        {
+          "label": "Beyblade",
+          "aliases": []
+        },
+        {
+          "label": "Tamagotchi",
+          "aliases": []
+        },
+        {
+          "label": "Furby",
+          "aliases": []
+        },
+        {
+          "label": "Toy drum",
+          "aliases": []
+        },
+        {
+          "label": "Toy kitchen",
+          "aliases": []
+        },
+        {
+          "label": "Play tent",
+          "aliases": []
+        },
+        {
+          "label": "Toy telephone",
+          "aliases": []
+        },
+        {
+          "label": "Thaumatrope",
+          "aliases": []
+        },
+        {
+          "label": "Toy gun",
+          "aliases": []
+        },
+        {
+          "label": "Doll carriage",
+          "aliases": [
+            "Doll pram"
+          ]
+        }
+      ],
+      "merges": [
+        {
+          "from": "teddy",
+          "into": "Teddy bear"
+        },
+        {
+          "from": "hobby",
+          "into": "Rocking horse"
+        },
+        {
+          "from": "cockhorse",
+          "into": "Stick horse"
+        },
+        {
+          "from": "water pistol",
+          "into": "Water gun"
+        },
+        {
+          "from": "Lego",
+          "into": "Lego bricks"
+        },
+        {
+          "from": "Remote-controlled car",
+          "into": "RC car"
+        },
+        {
+          "from": "Jump rope",
+          "into": "Skipping rope"
+        },
+        {
+          "from": "Top",
+          "into": "Spinning top"
+        }
+      ]
+    },
+    {
+      "key": "timepiece-kinds",
+      "root": "timepiece.n.01",
+      "family": "everyday",
+      "prompt": "Name a type of clock, watch or timekeeping device.",
+      "scope": "Physical timekeeping devices and recognized clock/watch types count, including historic sundials, hourglasses and water clocks. Calendar systems, units of time and software applications alone do not count.",
+      "familiar": [
+        "Wristwatch",
+        "Pocket watch",
+        "Alarm clock",
+        "Wall clock",
+        "Grandfather clock",
+        "Cuckoo clock",
+        "Stopwatch",
+        "Timer",
+        "Hourglass",
+        "Sundial",
+        "Water clock",
+        "Atomic clock",
+        "Digital clock",
+        "Analog clock",
+        "Mechanical clock",
+        "Pendulum clock",
+        "Quartz clock",
+        "Quartz watch",
+        "Smartwatch",
+        "Chronograph",
+        "Chronometer",
+        "Marine chronometer",
+        "Carriage clock",
+        "Mantel clock",
+        "Desk clock",
+        "Travel clock",
+        "Candle clock",
+        "Incense clock",
+        "Sandglass",
+        "Clepsydra",
+        "Skeleton clock",
+        "Torsion pendulum clock",
+        "Anniversary clock",
+        "Tide clock",
+        "Chess clock",
+        "Shot clock",
+        "Time clock",
+        "Water-powered clock",
+        "Flip clock",
+        "Projection clock",
+        "Radio-controlled clock"
+      ],
+      "exclude": [
+        "Second",
+        "Gregorian calendar",
+        "Google Calendar"
+      ],
+      "rare": "Congreve clock",
+      "references": [
+        "https://wordnet.princeton.edu/",
+        "https://www.rmg.co.uk/collections/objects/search/timekeepers",
+        "https://www.nist.gov/pml/time-and-frequency-division/popular-links/brief-history-timekeeping",
+        "https://www.nms.ac.uk/discover-catalogue/congreve-rolling-ball-clock-zigzagging-through-time"
+      ],
+      "holds": {},
+      "aliasHolds": {},
+      "renames": {},
+      "additions": [
+        {
+          "label": "Wristwatch",
+          "aliases": []
+        },
+        {
+          "label": "Pocket watch",
+          "aliases": []
+        },
+        {
+          "label": "Alarm clock",
+          "aliases": []
+        },
+        {
+          "label": "Wall clock",
+          "aliases": []
+        },
+        {
+          "label": "Grandfather clock",
+          "aliases": []
+        },
+        {
+          "label": "Cuckoo clock",
+          "aliases": []
+        },
+        {
+          "label": "Stopwatch",
+          "aliases": []
+        },
+        {
+          "label": "Timer",
+          "aliases": []
+        },
+        {
+          "label": "Hourglass",
+          "aliases": []
+        },
+        {
+          "label": "Sundial",
+          "aliases": []
+        },
+        {
+          "label": "Water clock",
+          "aliases": []
+        },
+        {
+          "label": "Atomic clock",
+          "aliases": []
+        },
+        {
+          "label": "Digital clock",
+          "aliases": []
+        },
+        {
+          "label": "Analog clock",
+          "aliases": []
+        },
+        {
+          "label": "Mechanical clock",
+          "aliases": []
+        },
+        {
+          "label": "Pendulum clock",
+          "aliases": []
+        },
+        {
+          "label": "Quartz clock",
+          "aliases": []
+        },
+        {
+          "label": "Quartz watch",
+          "aliases": []
+        },
+        {
+          "label": "Smartwatch",
+          "aliases": []
+        },
+        {
+          "label": "Chronograph",
+          "aliases": []
+        },
+        {
+          "label": "Chronometer",
+          "aliases": []
+        },
+        {
+          "label": "Marine chronometer",
+          "aliases": []
+        },
+        {
+          "label": "Carriage clock",
+          "aliases": []
+        },
+        {
+          "label": "Mantel clock",
+          "aliases": []
+        },
+        {
+          "label": "Desk clock",
+          "aliases": []
+        },
+        {
+          "label": "Travel clock",
+          "aliases": []
+        },
+        {
+          "label": "Candle clock",
+          "aliases": []
+        },
+        {
+          "label": "Incense clock",
+          "aliases": []
+        },
+        {
+          "label": "Sandglass",
+          "aliases": []
+        },
+        {
+          "label": "Clepsydra",
+          "aliases": []
+        },
+        {
+          "label": "Skeleton clock",
+          "aliases": []
+        },
+        {
+          "label": "Torsion pendulum clock",
+          "aliases": []
+        },
+        {
+          "label": "Anniversary clock",
+          "aliases": []
+        },
+        {
+          "label": "Tide clock",
+          "aliases": []
+        },
+        {
+          "label": "Chess clock",
+          "aliases": []
+        },
+        {
+          "label": "Shot clock",
+          "aliases": []
+        },
+        {
+          "label": "Time clock",
+          "aliases": []
+        },
+        {
+          "label": "Water-powered clock",
+          "aliases": []
+        },
+        {
+          "label": "Flip clock",
+          "aliases": []
+        },
+        {
+          "label": "Projection clock",
+          "aliases": []
+        },
+        {
+          "label": "Radio-controlled clock",
+          "aliases": []
+        },
+        {
+          "label": "Congreve clock",
+          "aliases": []
+        },
+        {
+          "label": "Analog clock",
+          "aliases": [
+            "Analogue clock"
+          ]
+        },
+        {
+          "label": "Analog watch",
+          "aliases": [
+            "Analogue watch"
+          ]
+        },
+        {
+          "label": "Congreve clock",
+          "aliases": [
+            "Congreve rolling ball clock"
+          ]
+        }
+      ],
+      "merges": [
+        {
+          "from": "Sandglass",
+          "into": "Hourglass"
+        },
+        {
+          "from": "Clepsydra",
+          "into": "Water clock"
+        },
+        {
+          "from": "Anniversary clock",
+          "into": "Torsion pendulum clock"
+        }
+      ]
+    },
+    {
+      "key": "computer-device-kinds",
+      "root": "computer.n.01",
+      "family": "science",
+      "prompt": "Name a kind of computer or computing device.",
+      "scope": "Recognized computer types, architectures and physical computing devices count, including programmable and specialized calculators and historical machines. Computer brands alone, operating systems, standalone storage devices and software applications are outside this hardware-type question.",
+      "familiar": [
+        "Laptop",
+        "Desktop computer",
+        "Tablet computer",
+        "Smartphone",
+        "Mainframe",
+        "Supercomputer",
+        "Workstation",
+        "Server",
+        "Personal computer",
+        "Microcomputer",
+        "Minicomputer",
+        "Analog computer",
+        "Digital computer",
+        "Quantum computer",
+        "Mechanical computer",
+        "Embedded computer",
+        "Wearable computer",
+        "Single-board computer",
+        "All-in-one computer",
+        "Netbook",
+        "Ultrabook",
+        "Palmtop",
+        "Handheld computer",
+        "PDA",
+        "Thin client",
+        "Home computer",
+        "Gaming PC",
+        "Gaming laptop",
+        "Graphing calculator",
+        "Scientific calculator",
+        "Calculator",
+        "Digital signal processor",
+        "Microcontroller",
+        "Optical computer",
+        "DNA computer",
+        "Vector computer",
+        "Hybrid computer",
+        "Abacus"
+      ],
+      "exclude": [
+        "Windows",
+        "Microsoft Word",
+        "Hard disk"
+      ],
+      "rare": "Differential analyzer",
+      "references": [
+        "https://wordnet.princeton.edu/",
+        "https://www.computerhistory.org/timeline/computers/",
+        "https://www.raspberrypi.com/products/"
+      ],
+      "holds": {
+        "bulletin board system": "Online service or software/site concept; not a physical computer type.",
+        "chat room": "Online service or software/site concept; not a physical computer type.",
+        "portal site": "Online service or software/site concept; not a physical computer type.",
+        "web site": "Online service or software/site concept; not a physical computer type.",
+        "Turing machine": "Abstract computation model, outside this physical computing-device inventory."
+      },
+      "aliasHolds": {},
+      "renames": {},
+      "additions": [
+        {
+          "label": "Laptop",
+          "aliases": []
+        },
+        {
+          "label": "Desktop computer",
+          "aliases": []
+        },
+        {
+          "label": "Tablet computer",
+          "aliases": []
+        },
+        {
+          "label": "Smartphone",
+          "aliases": []
+        },
+        {
+          "label": "Mainframe",
+          "aliases": []
+        },
+        {
+          "label": "Supercomputer",
+          "aliases": []
+        },
+        {
+          "label": "Workstation",
+          "aliases": []
+        },
+        {
+          "label": "Server",
+          "aliases": []
+        },
+        {
+          "label": "Personal computer",
+          "aliases": []
+        },
+        {
+          "label": "Microcomputer",
+          "aliases": []
+        },
+        {
+          "label": "Minicomputer",
+          "aliases": []
+        },
+        {
+          "label": "Analog computer",
+          "aliases": []
+        },
+        {
+          "label": "Digital computer",
+          "aliases": []
+        },
+        {
+          "label": "Quantum computer",
+          "aliases": []
+        },
+        {
+          "label": "Mechanical computer",
+          "aliases": []
+        },
+        {
+          "label": "Embedded computer",
+          "aliases": []
+        },
+        {
+          "label": "Wearable computer",
+          "aliases": []
+        },
+        {
+          "label": "Single-board computer",
+          "aliases": []
+        },
+        {
+          "label": "All-in-one computer",
+          "aliases": []
+        },
+        {
+          "label": "Netbook",
+          "aliases": []
+        },
+        {
+          "label": "Ultrabook",
+          "aliases": []
+        },
+        {
+          "label": "Palmtop",
+          "aliases": []
+        },
+        {
+          "label": "Handheld computer",
+          "aliases": []
+        },
+        {
+          "label": "PDA",
+          "aliases": []
+        },
+        {
+          "label": "Thin client",
+          "aliases": []
+        },
+        {
+          "label": "Home computer",
+          "aliases": []
+        },
+        {
+          "label": "Gaming PC",
+          "aliases": []
+        },
+        {
+          "label": "Gaming laptop",
+          "aliases": []
+        },
+        {
+          "label": "Graphing calculator",
+          "aliases": []
+        },
+        {
+          "label": "Scientific calculator",
+          "aliases": []
+        },
+        {
+          "label": "Calculator",
+          "aliases": []
+        },
+        {
+          "label": "Digital signal processor",
+          "aliases": []
+        },
+        {
+          "label": "Microcontroller",
+          "aliases": []
+        },
+        {
+          "label": "Optical computer",
+          "aliases": []
+        },
+        {
+          "label": "DNA computer",
+          "aliases": []
+        },
+        {
+          "label": "Vector computer",
+          "aliases": []
+        },
+        {
+          "label": "Hybrid computer",
+          "aliases": []
+        },
+        {
+          "label": "Differential analyzer",
+          "aliases": []
+        },
+        {
+          "label": "Laptop",
+          "aliases": [
+            "Notebook computer",
+            "Notebook"
+          ]
+        },
+        {
+          "label": "Tablet computer",
+          "aliases": [
+            "Tablet"
+          ]
+        },
+        {
+          "label": "PDA",
+          "aliases": [
+            "Personal digital assistant"
+          ]
+        },
+        {
+          "label": "Single-board computer",
+          "aliases": [
+            "Single board computer"
+          ]
+        },
+        {
+          "label": "Abacus",
+          "aliases": []
+        }
+      ],
+      "merges": [
+        {
+          "from": "notebook",
+          "into": "Laptop"
+        },
+        {
+          "from": "hand-held computer",
+          "into": "Handheld computer"
+        }
+      ]
+    },
+    {
+      "key": "engine-kinds",
+      "root": "motor.n.01",
+      "family": "science",
+      "prompt": "Name a type of mechanical engine or motor.",
+      "scope": "Recognized mechanical prime movers and engine or motor types count, including combustion engines, turbines, rocket engines and electric, hydraulic or pneumatic motors. Electric generators, software engines and whole vehicles do not count.",
+      "familiar": [
+        "Steam engine",
+        "Diesel engine",
+        "Petrol engine",
+        "Gasoline engine",
+        "Jet engine",
+        "Rocket engine",
+        "Gas turbine",
+        "Steam turbine",
+        "Internal combustion engine",
+        "External combustion engine",
+        "Two-stroke engine",
+        "Four-stroke engine",
+        "Rotary engine",
+        "Wankel engine",
+        "Stirling engine",
+        "Piston engine",
+        "Reciprocating engine",
+        "Turbofan",
+        "Turbojet",
+        "Turboprop",
+        "Turboshaft",
+        "Ramjet",
+        "Scramjet",
+        "Pulsejet",
+        "V engine",
+        "Inline engine",
+        "Flat engine",
+        "Boxer engine",
+        "Radial engine",
+        "Opposed-piston engine",
+        "Atkinson cycle engine",
+        "Miller cycle engine",
+        "Otto cycle engine",
+        "Gas engine",
+        "Hot-bulb engine",
+        "Steam locomotive engine",
+        "Electric motor",
+        "AC motor",
+        "DC motor",
+        "Induction motor",
+        "Synchronous motor",
+        "Brushless motor",
+        "Stepper motor",
+        "Servo motor",
+        "Linear motor",
+        "Hydraulic motor",
+        "Pneumatic motor",
+        "Steam",
+        "Jet",
+        "Petrol",
+        "Electric"
+      ],
+      "exclude": [
+        "Electric generator",
+        "Google search engine",
+        "Unreal Engine",
+        "Engine",
+        "Motor"
+      ],
+      "rare": "Newcomen engine",
+      "references": [
+        "https://wordnet.princeton.edu/",
+        "https://www.grc.nasa.gov/www/k-12/airplane/engines.html",
+        "https://www.britannica.com/technology/engine",
+        "https://www.nms.ac.uk/discover-catalogue/the-newcomen-engine-and-its-role-in-britains-industrial-revolution"
+      ],
+      "holds": {
+        "alternator": "Electrical generator or complete rocket/stage/installation rather than a prime-mover engine/motor type. Actual turbine and rocket-engine types remain.",
+        "generator": "Electrical generator or complete rocket/stage/installation rather than a prime-mover engine/motor type. Actual turbine and rocket-engine types remain.",
+        "dynamo": "Electrical generator or complete rocket/stage/installation rather than a prime-mover engine/motor type. Actual turbine and rocket-engine types remain.",
+        "magneto": "Electrical generator or complete rocket/stage/installation rather than a prime-mover engine/motor type. Actual turbine and rocket-engine types remain.",
+        "turbogenerator": "Electrical generator or complete rocket/stage/installation rather than a prime-mover engine/motor type. Actual turbine and rocket-engine types remain.",
+        "space rocket": "Electrical generator or complete rocket/stage/installation rather than a prime-mover engine/motor type. Actual turbine and rocket-engine types remain.",
+        "booster": "Electrical generator or complete rocket/stage/installation rather than a prime-mover engine/motor type. Actual turbine and rocket-engine types remain.",
+        "windmill": "Electrical generator or complete rocket/stage/installation rather than a prime-mover engine/motor type. Actual turbine and rocket-engine types remain.",
+        "engine": "Unqualified umbrella term already given in the question, not a particular engine/motor type.",
+        "kick starter": "A mechanical cranking mechanism, not an engine or motor."
+      },
+      "aliasHolds": {
+        "fanjet": [
+          "turbojet",
+          "turbojet engine"
+        ]
+      },
+      "renames": {},
+      "additions": [
+        {
+          "label": "Steam engine",
+          "aliases": []
+        },
+        {
+          "label": "Diesel engine",
+          "aliases": []
+        },
+        {
+          "label": "Petrol engine",
+          "aliases": []
+        },
+        {
+          "label": "Gasoline engine",
+          "aliases": []
+        },
+        {
+          "label": "Jet engine",
+          "aliases": []
+        },
+        {
+          "label": "Rocket engine",
+          "aliases": []
+        },
+        {
+          "label": "Gas turbine",
+          "aliases": []
+        },
+        {
+          "label": "Steam turbine",
+          "aliases": []
+        },
+        {
+          "label": "Internal combustion engine",
+          "aliases": []
+        },
+        {
+          "label": "External combustion engine",
+          "aliases": []
+        },
+        {
+          "label": "Two-stroke engine",
+          "aliases": []
+        },
+        {
+          "label": "Four-stroke engine",
+          "aliases": []
+        },
+        {
+          "label": "Rotary engine",
+          "aliases": []
+        },
+        {
+          "label": "Wankel engine",
+          "aliases": []
+        },
+        {
+          "label": "Stirling engine",
+          "aliases": []
+        },
+        {
+          "label": "Piston engine",
+          "aliases": []
+        },
+        {
+          "label": "Reciprocating engine",
+          "aliases": []
+        },
+        {
+          "label": "Turbofan",
+          "aliases": []
+        },
+        {
+          "label": "Turbojet",
+          "aliases": []
+        },
+        {
+          "label": "Turboprop",
+          "aliases": []
+        },
+        {
+          "label": "Turboshaft",
+          "aliases": []
+        },
+        {
+          "label": "Ramjet",
+          "aliases": []
+        },
+        {
+          "label": "Scramjet",
+          "aliases": []
+        },
+        {
+          "label": "Pulsejet",
+          "aliases": []
+        },
+        {
+          "label": "V engine",
+          "aliases": []
+        },
+        {
+          "label": "Inline engine",
+          "aliases": []
+        },
+        {
+          "label": "Flat engine",
+          "aliases": []
+        },
+        {
+          "label": "Boxer engine",
+          "aliases": []
+        },
+        {
+          "label": "Radial engine",
+          "aliases": []
+        },
+        {
+          "label": "Opposed-piston engine",
+          "aliases": []
+        },
+        {
+          "label": "Atkinson cycle engine",
+          "aliases": []
+        },
+        {
+          "label": "Miller cycle engine",
+          "aliases": []
+        },
+        {
+          "label": "Otto cycle engine",
+          "aliases": []
+        },
+        {
+          "label": "Gas engine",
+          "aliases": []
+        },
+        {
+          "label": "Hot-bulb engine",
+          "aliases": []
+        },
+        {
+          "label": "Steam locomotive engine",
+          "aliases": []
+        },
+        {
+          "label": "Electric motor",
+          "aliases": []
+        },
+        {
+          "label": "AC motor",
+          "aliases": []
+        },
+        {
+          "label": "DC motor",
+          "aliases": []
+        },
+        {
+          "label": "Induction motor",
+          "aliases": []
+        },
+        {
+          "label": "Synchronous motor",
+          "aliases": []
+        },
+        {
+          "label": "Brushless motor",
+          "aliases": []
+        },
+        {
+          "label": "Stepper motor",
+          "aliases": []
+        },
+        {
+          "label": "Servo motor",
+          "aliases": []
+        },
+        {
+          "label": "Linear motor",
+          "aliases": []
+        },
+        {
+          "label": "Hydraulic motor",
+          "aliases": []
+        },
+        {
+          "label": "Pneumatic motor",
+          "aliases": []
+        },
+        {
+          "label": "Newcomen engine",
+          "aliases": []
+        },
+        {
+          "label": "Turbojet engine",
+          "aliases": [
+            "Turbojet"
+          ]
+        },
+        {
+          "label": "Turbofan engine",
+          "aliases": [
+            "Turbofan",
+            "Fanjet",
+            "Fanjet engine"
+          ]
+        },
+        {
+          "label": "Newcomen engine",
+          "aliases": [
+            "Newcomen steam engine"
+          ]
+        },
+        {
+          "label": "Steam engine",
+          "aliases": [
+            "Steam"
+          ]
+        },
+        {
+          "label": "Jet engine",
+          "aliases": [
+            "Jet"
+          ]
+        },
+        {
+          "label": "Gasoline engine",
+          "aliases": [
+            "Petrol engine",
+            "Petrol",
+            "Gasoline"
+          ]
+        },
+        {
+          "label": "Electric motor",
+          "aliases": [
+            "Electric"
+          ]
+        },
+        {
+          "label": "Hydraulic motor",
+          "aliases": [
+            "Hydraulic"
+          ]
+        },
+        {
+          "label": "Pneumatic motor",
+          "aliases": [
+            "Pneumatic"
+          ]
+        }
+      ],
+      "merges": [
+        {
+          "from": "diesel",
+          "into": "Diesel engine"
+        },
+        {
+          "from": "Petrol engine",
+          "into": "Gasoline engine"
+        },
+        {
+          "from": "fanjet",
+          "into": "Turbofan"
+        },
+        {
+          "from": "Rocket",
+          "into": "Rocket engine"
+        },
+        {
+          "from": "put-put",
+          "into": "Gas engine"
+        },
+        {
+          "from": "stepper",
+          "into": "Stepper motor"
+        },
+        {
+          "from": "Turbojet engine",
+          "into": "Turbojet"
+        },
+        {
+          "from": "Turbofan engine",
+          "into": "Turbofan"
+        },
+        {
+          "from": "petrol engine",
+          "into": "Gasoline engine"
+        }
+      ]
+    },
+    {
+      "key": "flat-geometric-shapes",
+      "root": "plane_figure.n.01",
+      "family": "science",
+      "prompt": "Name a closed, flat geometric shape.",
+      "scope": "Named two-dimensional shapes and recognized shape classes that enclose a planar area count. Specific polygon types, curves used as closed outlines and compound regions count. Three-dimensional solids, open line segments and unnamed drawings do not count.",
+      "familiar": [
+        "Circle",
+        "Square",
+        "Triangle",
+        "Rectangle",
+        "Pentagon",
+        "Hexagon",
+        "Octagon",
+        "Ellipse",
+        "Oval",
+        "Rhombus",
+        "Parallelogram",
+        "Trapezoid",
+        "Trapezium",
+        "Kite",
+        "Quadrilateral",
+        "Heptagon",
+        "Nonagon",
+        "Decagon",
+        "Dodecagon",
+        "Equilateral triangle",
+        "Isosceles triangle",
+        "Scalene triangle",
+        "Right triangle",
+        "Acute triangle",
+        "Obtuse triangle",
+        "Semicircle",
+        "Sector",
+        "Annulus",
+        "Crescent",
+        "Star",
+        "Heart",
+        "Cardioid",
+        "Lune",
+        "Lens",
+        "Reuleaux triangle",
+        "Deltoid",
+        "Astroid",
+        "Superellipse",
+        "Lemniscate",
+        "Quatrefoil"
+      ],
+      "exclude": [
+        "Cube",
+        "Sphere",
+        "Straight line",
+        "Open line segment"
+      ],
+      "rare": "Arbelos",
+      "references": [
+        "https://wordnet.princeton.edu/",
+        "https://mathworld.wolfram.com/PlaneFigure.html",
+        "https://mathworld.wolfram.com/ClosedCurve.html"
+      ],
+      "holds": {
+        "asterism": "A phenomenon/diagram, unbounded curve, spherical figure or three-dimensional solid, not a named closed flat shape in this scope.",
+        "cladogram": "A phenomenon/diagram, unbounded curve, spherical figure or three-dimensional solid, not a named closed flat shape in this scope.",
+        "ellipsoid": "A phenomenon/diagram, unbounded curve, spherical figure or three-dimensional solid, not a named closed flat shape in this scope.",
+        "equator": "A phenomenon/diagram, unbounded curve, spherical figure or three-dimensional solid, not a named closed flat shape in this scope.",
+        "hyperbola": "A phenomenon/diagram, unbounded curve, spherical figure or three-dimensional solid, not a named closed flat shape in this scope.",
+        "parabola": "A phenomenon/diagram, unbounded curve, spherical figure or three-dimensional solid, not a named closed flat shape in this scope.",
+        "paraboloid": "A phenomenon/diagram, unbounded curve, spherical figure or three-dimensional solid, not a named closed flat shape in this scope.",
+        "spherical polygon": "A phenomenon/diagram, unbounded curve, spherical figure or three-dimensional solid, not a named closed flat shape in this scope.",
+        "spherical triangle": "A phenomenon/diagram, unbounded curve, spherical figure or three-dimensional solid, not a named closed flat shape in this scope.",
+        "stemma": "A phenomenon/diagram, unbounded curve, spherical figure or three-dimensional solid, not a named closed flat shape in this scope.",
+        "tree": "A phenomenon/diagram, unbounded curve, spherical figure or three-dimensional solid, not a named closed flat shape in this scope.",
+        "wedge": "A phenomenon/diagram, unbounded curve, spherical figure or three-dimensional solid, not a named closed flat shape in this scope.",
+        "conic section": "Generic class also includes open parabolas and hyperbolas; the prompt requires a closed shape."
+      },
+      "aliasHolds": {},
+      "renames": {},
+      "additions": [
+        {
+          "label": "Circle",
+          "aliases": []
+        },
+        {
+          "label": "Square",
+          "aliases": []
+        },
+        {
+          "label": "Triangle",
+          "aliases": []
+        },
+        {
+          "label": "Rectangle",
+          "aliases": []
+        },
+        {
+          "label": "Pentagon",
+          "aliases": []
+        },
+        {
+          "label": "Hexagon",
+          "aliases": []
+        },
+        {
+          "label": "Octagon",
+          "aliases": []
+        },
+        {
+          "label": "Ellipse",
+          "aliases": []
+        },
+        {
+          "label": "Oval",
+          "aliases": []
+        },
+        {
+          "label": "Rhombus",
+          "aliases": []
+        },
+        {
+          "label": "Parallelogram",
+          "aliases": []
+        },
+        {
+          "label": "Trapezoid",
+          "aliases": []
+        },
+        {
+          "label": "Trapezium",
+          "aliases": []
+        },
+        {
+          "label": "Kite",
+          "aliases": []
+        },
+        {
+          "label": "Quadrilateral",
+          "aliases": []
+        },
+        {
+          "label": "Heptagon",
+          "aliases": []
+        },
+        {
+          "label": "Nonagon",
+          "aliases": []
+        },
+        {
+          "label": "Decagon",
+          "aliases": []
+        },
+        {
+          "label": "Dodecagon",
+          "aliases": []
+        },
+        {
+          "label": "Equilateral triangle",
+          "aliases": []
+        },
+        {
+          "label": "Isosceles triangle",
+          "aliases": []
+        },
+        {
+          "label": "Scalene triangle",
+          "aliases": []
+        },
+        {
+          "label": "Right triangle",
+          "aliases": []
+        },
+        {
+          "label": "Acute triangle",
+          "aliases": []
+        },
+        {
+          "label": "Obtuse triangle",
+          "aliases": []
+        },
+        {
+          "label": "Semicircle",
+          "aliases": []
+        },
+        {
+          "label": "Sector",
+          "aliases": []
+        },
+        {
+          "label": "Annulus",
+          "aliases": []
+        },
+        {
+          "label": "Crescent",
+          "aliases": []
+        },
+        {
+          "label": "Star",
+          "aliases": []
+        },
+        {
+          "label": "Heart",
+          "aliases": []
+        },
+        {
+          "label": "Cardioid",
+          "aliases": []
+        },
+        {
+          "label": "Lune",
+          "aliases": []
+        },
+        {
+          "label": "Lens",
+          "aliases": []
+        },
+        {
+          "label": "Reuleaux triangle",
+          "aliases": []
+        },
+        {
+          "label": "Deltoid",
+          "aliases": []
+        },
+        {
+          "label": "Astroid",
+          "aliases": []
+        },
+        {
+          "label": "Superellipse",
+          "aliases": []
+        },
+        {
+          "label": "Lemniscate",
+          "aliases": []
+        },
+        {
+          "label": "Quatrefoil",
+          "aliases": []
+        },
+        {
+          "label": "Arbelos",
+          "aliases": []
+        }
+      ],
+      "merges": [
+        {
+          "from": "box",
+          "into": "Rectangle"
+        },
+        {
+          "from": "circlet",
+          "into": "Circle"
+        },
+        {
+          "from": "quadrate",
+          "into": "Square"
+        },
+        {
+          "from": "deltoid",
+          "into": "Kite"
+        }
+      ]
+    },
+    {
+      "key": "medical-instrument-kinds",
+      "root": "medical_instrument.n.01",
+      "family": "science",
+      "prompt": "Name a medical instrument or piece of medical equipment.",
+      "scope": "Recognized physical instruments and equipment used for examination, diagnosis, monitoring or treatment count. Medical specialties, diseases, drugs and medical procedures alone do not count. This is an equipment-name question, not treatment advice.",
+      "familiar": [
+        "Stethoscope",
+        "Thermometer",
+        "Syringe",
+        "Scalpel",
+        "Blood pressure monitor",
+        "Otoscope",
+        "Ophthalmoscope",
+        "Tongue depressor",
+        "Reflex hammer",
+        "Pulse oximeter",
+        "ECG machine",
+        "EKG machine",
+        "Ultrasound machine",
+        "X-ray machine",
+        "MRI scanner",
+        "CT scanner",
+        "Defibrillator",
+        "Ventilator",
+        "Nebulizer",
+        "Infusion pump",
+        "Insulin pump",
+        "Dialysis machine",
+        "Endoscope",
+        "Colonoscope",
+        "Laryngoscope",
+        "Speculum",
+        "Forceps",
+        "Hemostat",
+        "Surgical scissors",
+        "Retractor",
+        "Suture needle",
+        "Catheter",
+        "Cannula",
+        "Tourniquet",
+        "Glucometer",
+        "Lancet",
+        "Sphygmomanometer",
+        "Spirometer",
+        "Audiometer",
+        "Tuning fork",
+        "Dental drill",
+        "Dental mirror",
+        "Suction machine",
+        "Bag valve mask",
+        "Ambu bag",
+        "Hospital bed",
+        "Wheelchair",
+        "Stretcher",
+        "Crutches",
+        "Walker",
+        "ECG",
+        "EKG",
+        "EEG",
+        "MRI",
+        "CT",
+        "BP cuff"
+      ],
+      "exclude": [
+        "Penicillin",
+        "Influenza",
+        "Cardiology"
+      ],
+      "rare": "Osteotome",
+      "references": [
+        "https://wordnet.princeton.edu/",
+        "https://www.fda.gov/medical-devices/classify-your-medical-device/product-code-classification-database",
+        "https://medlineplus.gov/lab-tests/"
+      ],
+      "holds": {
+        "lie detector": "Dedicated forensic deception-testing device rather than clinical equipment; generic medical polygraphs remain retained."
+      },
+      "aliasHolds": {
+        "ballistocardiograph": [
+          "cardiograph"
+        ]
+      },
+      "renames": {},
+      "additions": [
+        {
+          "label": "Stethoscope",
+          "aliases": []
+        },
+        {
+          "label": "Thermometer",
+          "aliases": []
+        },
+        {
+          "label": "Syringe",
+          "aliases": []
+        },
+        {
+          "label": "Scalpel",
+          "aliases": []
+        },
+        {
+          "label": "Blood pressure monitor",
+          "aliases": []
+        },
+        {
+          "label": "Otoscope",
+          "aliases": []
+        },
+        {
+          "label": "Ophthalmoscope",
+          "aliases": []
+        },
+        {
+          "label": "Tongue depressor",
+          "aliases": []
+        },
+        {
+          "label": "Reflex hammer",
+          "aliases": []
+        },
+        {
+          "label": "Pulse oximeter",
+          "aliases": []
+        },
+        {
+          "label": "ECG machine",
+          "aliases": []
+        },
+        {
+          "label": "EKG machine",
+          "aliases": []
+        },
+        {
+          "label": "Ultrasound machine",
+          "aliases": []
+        },
+        {
+          "label": "X-ray machine",
+          "aliases": []
+        },
+        {
+          "label": "MRI scanner",
+          "aliases": []
+        },
+        {
+          "label": "CT scanner",
+          "aliases": []
+        },
+        {
+          "label": "Defibrillator",
+          "aliases": []
+        },
+        {
+          "label": "Ventilator",
+          "aliases": []
+        },
+        {
+          "label": "Nebulizer",
+          "aliases": []
+        },
+        {
+          "label": "Infusion pump",
+          "aliases": []
+        },
+        {
+          "label": "Insulin pump",
+          "aliases": []
+        },
+        {
+          "label": "Dialysis machine",
+          "aliases": []
+        },
+        {
+          "label": "Endoscope",
+          "aliases": []
+        },
+        {
+          "label": "Colonoscope",
+          "aliases": []
+        },
+        {
+          "label": "Laryngoscope",
+          "aliases": []
+        },
+        {
+          "label": "Speculum",
+          "aliases": []
+        },
+        {
+          "label": "Forceps",
+          "aliases": []
+        },
+        {
+          "label": "Hemostat",
+          "aliases": []
+        },
+        {
+          "label": "Surgical scissors",
+          "aliases": []
+        },
+        {
+          "label": "Retractor",
+          "aliases": []
+        },
+        {
+          "label": "Suture needle",
+          "aliases": []
+        },
+        {
+          "label": "Catheter",
+          "aliases": []
+        },
+        {
+          "label": "Cannula",
+          "aliases": []
+        },
+        {
+          "label": "Tourniquet",
+          "aliases": []
+        },
+        {
+          "label": "Glucometer",
+          "aliases": []
+        },
+        {
+          "label": "Lancet",
+          "aliases": []
+        },
+        {
+          "label": "Sphygmomanometer",
+          "aliases": []
+        },
+        {
+          "label": "Spirometer",
+          "aliases": []
+        },
+        {
+          "label": "Audiometer",
+          "aliases": []
+        },
+        {
+          "label": "Tuning fork",
+          "aliases": []
+        },
+        {
+          "label": "Dental drill",
+          "aliases": []
+        },
+        {
+          "label": "Dental mirror",
+          "aliases": []
+        },
+        {
+          "label": "Suction machine",
+          "aliases": []
+        },
+        {
+          "label": "Bag valve mask",
+          "aliases": []
+        },
+        {
+          "label": "Ambu bag",
+          "aliases": []
+        },
+        {
+          "label": "Hospital bed",
+          "aliases": []
+        },
+        {
+          "label": "Wheelchair",
+          "aliases": []
+        },
+        {
+          "label": "Stretcher",
+          "aliases": []
+        },
+        {
+          "label": "Crutches",
+          "aliases": []
+        },
+        {
+          "label": "Walker",
+          "aliases": []
+        },
+        {
+          "label": "Osteotome",
+          "aliases": []
+        },
+        {
+          "label": "ECG machine",
+          "aliases": [
+            "EKG machine",
+            "Electrocardiograph"
+          ]
+        },
+        {
+          "label": "Bag valve mask",
+          "aliases": [
+            "Ambu bag"
+          ]
+        },
+        {
+          "label": "Sphygmomanometer",
+          "aliases": [
+            "Blood pressure monitor",
+            "Blood-pressure cuff"
+          ]
+        },
+        {
+          "label": "ECG machine",
+          "aliases": [
+            "ECG",
+            "EKG"
+          ]
+        },
+        {
+          "label": "Electroencephalograph",
+          "aliases": [
+            "EEG",
+            "EEG machine"
+          ]
+        },
+        {
+          "label": "MRI scanner",
+          "aliases": [
+            "MRI",
+            "MRI machine"
+          ]
+        },
+        {
+          "label": "CT scanner",
+          "aliases": [
+            "CT",
+            "CAT scanner"
+          ]
+        },
+        {
+          "label": "X-ray machine",
+          "aliases": [
+            "X-ray"
+          ]
+        },
+        {
+          "label": "Sphygmomanometer",
+          "aliases": [
+            "Blood pressure cuff",
+            "BP cuff"
+          ]
+        },
+        {
+          "label": "Pulse oximeter",
+          "aliases": [
+            "Pulse ox"
+          ]
+        }
+      ],
+      "merges": [
+        {
+          "from": "EKG machine",
+          "into": "ECG machine"
+        },
+        {
+          "from": "Ambu bag",
+          "into": "Bag valve mask"
+        },
+        {
+          "from": "Blood pressure monitor",
+          "into": "Sphygmomanometer"
+        },
+        {
+          "from": "cardiograph",
+          "into": "ECG machine"
+        }
+      ]
+    },
+    {
+      "key": "printing-techniques",
+      "root": "printing.n.03",
+      "family": "culture",
+      "prompt": "Name a printmaking or printing technique.",
+      "scope": "Recognized methods of producing printed images or text and artistic printmaking methods count. Named additive manufacturing/3D printing methods also count. A printer brand, image subject or unrelated craft alone is not a technique.",
+      "familiar": [
+        "Screen printing",
+        "Silkscreen printing",
+        "Woodcut",
+        "Linocut",
+        "Etching",
+        "Engraving",
+        "Lithography",
+        "Offset lithography",
+        "Letterpress",
+        "Intaglio",
+        "Relief printing",
+        "Gravure",
+        "Rotogravure",
+        "Flexography",
+        "Inkjet printing",
+        "Laser printing",
+        "Digital printing",
+        "Monotype",
+        "Monoprint",
+        "Aquatint",
+        "Mezzotint",
+        "Drypoint",
+        "Photogravure",
+        "Collagraph",
+        "Cyanotype",
+        "Stencil printing",
+        "Pochoir",
+        "Risograph",
+        "Riso printing",
+        "Giclee",
+        "Pad printing",
+        "Tampography",
+        "Transfer printing",
+        "Dye-sublimation printing",
+        "Thermal printing",
+        "3D printing",
+        "Fused deposition modeling",
+        "Stereolithography",
+        "Selective laser sintering",
+        "Digital light processing",
+        "Binder jetting",
+        "Material jetting",
+        "Direct metal laser sintering",
+        "Riso"
+      ],
+      "exclude": [
+        "Canon",
+        "Portrait",
+        "Knitting"
+      ],
+      "rare": "Cliche-verre",
+      "references": [
+        "https://wordnet.princeton.edu/",
+        "https://www.tate.org.uk/art/art-terms/p/print",
+        "https://www.moma.org/collection/terms/printmaking",
+        "https://www.vam.ac.uk/articles/photographic-processes"
+      ],
+      "holds": {},
+      "aliasHolds": {
+        "rotogravure": [
+          "gravure"
+        ]
+      },
+      "renames": {},
+      "additions": [
+        {
+          "label": "Screen printing",
+          "aliases": []
+        },
+        {
+          "label": "Silkscreen printing",
+          "aliases": []
+        },
+        {
+          "label": "Woodcut",
+          "aliases": []
+        },
+        {
+          "label": "Linocut",
+          "aliases": []
+        },
+        {
+          "label": "Etching",
+          "aliases": []
+        },
+        {
+          "label": "Engraving",
+          "aliases": []
+        },
+        {
+          "label": "Lithography",
+          "aliases": []
+        },
+        {
+          "label": "Offset lithography",
+          "aliases": []
+        },
+        {
+          "label": "Letterpress",
+          "aliases": []
+        },
+        {
+          "label": "Intaglio",
+          "aliases": []
+        },
+        {
+          "label": "Relief printing",
+          "aliases": []
+        },
+        {
+          "label": "Gravure",
+          "aliases": []
+        },
+        {
+          "label": "Rotogravure",
+          "aliases": []
+        },
+        {
+          "label": "Flexography",
+          "aliases": []
+        },
+        {
+          "label": "Inkjet printing",
+          "aliases": []
+        },
+        {
+          "label": "Laser printing",
+          "aliases": []
+        },
+        {
+          "label": "Digital printing",
+          "aliases": []
+        },
+        {
+          "label": "Monotype",
+          "aliases": []
+        },
+        {
+          "label": "Monoprint",
+          "aliases": []
+        },
+        {
+          "label": "Aquatint",
+          "aliases": []
+        },
+        {
+          "label": "Mezzotint",
+          "aliases": []
+        },
+        {
+          "label": "Drypoint",
+          "aliases": []
+        },
+        {
+          "label": "Photogravure",
+          "aliases": []
+        },
+        {
+          "label": "Collagraph",
+          "aliases": []
+        },
+        {
+          "label": "Cyanotype",
+          "aliases": []
+        },
+        {
+          "label": "Stencil printing",
+          "aliases": []
+        },
+        {
+          "label": "Pochoir",
+          "aliases": []
+        },
+        {
+          "label": "Risograph",
+          "aliases": []
+        },
+        {
+          "label": "Riso printing",
+          "aliases": []
+        },
+        {
+          "label": "Giclee",
+          "aliases": []
+        },
+        {
+          "label": "Pad printing",
+          "aliases": []
+        },
+        {
+          "label": "Tampography",
+          "aliases": []
+        },
+        {
+          "label": "Transfer printing",
+          "aliases": []
+        },
+        {
+          "label": "Dye-sublimation printing",
+          "aliases": []
+        },
+        {
+          "label": "Thermal printing",
+          "aliases": []
+        },
+        {
+          "label": "3D printing",
+          "aliases": []
+        },
+        {
+          "label": "Fused deposition modeling",
+          "aliases": []
+        },
+        {
+          "label": "Stereolithography",
+          "aliases": []
+        },
+        {
+          "label": "Selective laser sintering",
+          "aliases": []
+        },
+        {
+          "label": "Digital light processing",
+          "aliases": []
+        },
+        {
+          "label": "Binder jetting",
+          "aliases": []
+        },
+        {
+          "label": "Material jetting",
+          "aliases": []
+        },
+        {
+          "label": "Direct metal laser sintering",
+          "aliases": []
+        },
+        {
+          "label": "Cliche-verre",
+          "aliases": []
+        },
+        {
+          "label": "Screen printing",
+          "aliases": [
+            "Silkscreen printing",
+            "Silk-screen printing"
+          ]
+        },
+        {
+          "label": "Risograph",
+          "aliases": [
+            "Riso printing"
+          ]
+        },
+        {
+          "label": "Pad printing",
+          "aliases": [
+            "Tampography"
+          ]
+        },
+        {
+          "label": "Risograph",
+          "aliases": [
+            "Riso",
+            "Risography"
+          ]
+        }
+      ],
+      "merges": [
+        {
+          "from": "Silkscreen printing",
+          "into": "Screen printing"
+        },
+        {
+          "from": "intaglio printing",
+          "into": "Intaglio"
+        },
+        {
+          "from": "Riso printing",
+          "into": "Risograph"
+        },
+        {
+          "from": "Tampography",
+          "into": "Pad printing"
+        },
+        {
+          "from": "Gravure",
+          "into": "Intaglio"
+        }
+      ]
+    },
+    {
+      "key": "sculpture-kinds",
+      "root": "sculpture.n.01",
+      "family": "culture",
+      "prompt": "Name a type or recognized form of sculpture.",
+      "scope": "Recognized sculpture forms, sculpting techniques and named sculptural object/material types count. Material words can name an established sculptural type, such as bronze, marble, ice or sand sculpture. Individual artists, individual artworks and generic unrelated objects do not count.",
+      "familiar": [
+        "Statue",
+        "Bust",
+        "Relief",
+        "Bas-relief",
+        "High relief",
+        "Low relief",
+        "Sculpture in the round",
+        "Free-standing sculpture",
+        "Equestrian statue",
+        "Figurine",
+        "Statuette",
+        "Kinetic sculpture",
+        "Mobile",
+        "Assemblage",
+        "Installation",
+        "Environmental sculpture",
+        "Land art",
+        "Topiary",
+        "Ice sculpture",
+        "Snow sculpture",
+        "Sand sculpture",
+        "Wood carving",
+        "Stone carving",
+        "Bronze casting",
+        "Lost-wax casting",
+        "Modeling",
+        "Modelling",
+        "Direct carving",
+        "Ready-made",
+        "Readymade",
+        "Found-object sculpture",
+        "Abstract sculpture",
+        "Sound sculpture",
+        "Light sculpture",
+        "Fountain sculpture",
+        "Totem pole",
+        "Effigy",
+        "Caryatid",
+        "Herm",
+        "Intaglio",
+        "Cameo",
+        "Bronze",
+        "Marble",
+        "Ice",
+        "Sand",
+        "Clay",
+        "Wire sculpture",
+        "Wax sculpture",
+        "Glass sculpture",
+        "Paper sculpture"
+      ],
+      "exclude": [
+        "Michelangelo",
+        "The Thinker",
+        "Louvre"
+      ],
+      "rare": "Acrolith",
+      "references": [
+        "https://wordnet.princeton.edu/",
+        "https://www.tate.org.uk/art/art-terms/s/sculpture",
+        "https://www.vam.ac.uk/articles/sculpture-techniques",
+        "https://www.getty.edu/vow/AATFullDisplay?find=genre&logic=null&note=&subjectid=300184577"
+      ],
+      "holds": {
+        "Olympian Zeus": "Individual artwork or ambiguous tool/object entry with incorrect technique synonyms. Actual sculpture types/techniques are retained separately.",
+        "mold": "Individual artwork or ambiguous tool/object entry with incorrect technique synonyms. Actual sculpture types/techniques are retained separately."
+      },
+      "aliasHolds": {},
+      "renames": {
+        "bronze": "Bronze sculpture",
+        "marble": "Marble sculpture"
+      },
+      "additions": [
+        {
+          "label": "Statue",
+          "aliases": []
+        },
+        {
+          "label": "Bust",
+          "aliases": []
+        },
+        {
+          "label": "Relief",
+          "aliases": []
+        },
+        {
+          "label": "Bas-relief",
+          "aliases": []
+        },
+        {
+          "label": "High relief",
+          "aliases": []
+        },
+        {
+          "label": "Low relief",
+          "aliases": []
+        },
+        {
+          "label": "Sculpture in the round",
+          "aliases": []
+        },
+        {
+          "label": "Free-standing sculpture",
+          "aliases": []
+        },
+        {
+          "label": "Equestrian statue",
+          "aliases": []
+        },
+        {
+          "label": "Figurine",
+          "aliases": []
+        },
+        {
+          "label": "Statuette",
+          "aliases": []
+        },
+        {
+          "label": "Kinetic sculpture",
+          "aliases": []
+        },
+        {
+          "label": "Mobile",
+          "aliases": []
+        },
+        {
+          "label": "Assemblage",
+          "aliases": []
+        },
+        {
+          "label": "Installation",
+          "aliases": []
+        },
+        {
+          "label": "Environmental sculpture",
+          "aliases": []
+        },
+        {
+          "label": "Land art",
+          "aliases": []
+        },
+        {
+          "label": "Topiary",
+          "aliases": []
+        },
+        {
+          "label": "Ice sculpture",
+          "aliases": []
+        },
+        {
+          "label": "Snow sculpture",
+          "aliases": []
+        },
+        {
+          "label": "Sand sculpture",
+          "aliases": []
+        },
+        {
+          "label": "Wood carving",
+          "aliases": []
+        },
+        {
+          "label": "Stone carving",
+          "aliases": []
+        },
+        {
+          "label": "Bronze casting",
+          "aliases": []
+        },
+        {
+          "label": "Lost-wax casting",
+          "aliases": []
+        },
+        {
+          "label": "Modeling",
+          "aliases": []
+        },
+        {
+          "label": "Modelling",
+          "aliases": []
+        },
+        {
+          "label": "Direct carving",
+          "aliases": []
+        },
+        {
+          "label": "Ready-made",
+          "aliases": []
+        },
+        {
+          "label": "Readymade",
+          "aliases": []
+        },
+        {
+          "label": "Found-object sculpture",
+          "aliases": []
+        },
+        {
+          "label": "Abstract sculpture",
+          "aliases": []
+        },
+        {
+          "label": "Sound sculpture",
+          "aliases": []
+        },
+        {
+          "label": "Light sculpture",
+          "aliases": []
+        },
+        {
+          "label": "Fountain sculpture",
+          "aliases": []
+        },
+        {
+          "label": "Totem pole",
+          "aliases": []
+        },
+        {
+          "label": "Effigy",
+          "aliases": []
+        },
+        {
+          "label": "Caryatid",
+          "aliases": []
+        },
+        {
+          "label": "Herm",
+          "aliases": []
+        },
+        {
+          "label": "Intaglio",
+          "aliases": []
+        },
+        {
+          "label": "Cameo",
+          "aliases": []
+        },
+        {
+          "label": "Acrolith",
+          "aliases": []
+        },
+        {
+          "label": "Bronze sculpture",
+          "aliases": [
+            "Bronze"
+          ]
+        },
+        {
+          "label": "Marble sculpture",
+          "aliases": [
+            "Marble"
+          ]
+        },
+        {
+          "label": "Ice sculpture",
+          "aliases": [
+            "Ice"
+          ]
+        },
+        {
+          "label": "Snow sculpture",
+          "aliases": [
+            "Snow"
+          ]
+        },
+        {
+          "label": "Sand sculpture",
+          "aliases": [
+            "Sand"
+          ]
+        },
+        {
+          "label": "Clay sculpture",
+          "aliases": [
+            "Clay"
+          ]
+        },
+        {
+          "label": "Wax sculpture",
+          "aliases": [
+            "Wax"
+          ]
+        },
+        {
+          "label": "Glass sculpture",
+          "aliases": [
+            "Glass"
+          ]
+        },
+        {
+          "label": "Wire sculpture",
+          "aliases": [
+            "Wire"
+          ]
+        },
+        {
+          "label": "Paper sculpture",
+          "aliases": [
+            "Paper"
+          ]
+        },
+        {
+          "label": "Concrete sculpture",
+          "aliases": [
+            "Concrete"
+          ]
+        },
+        {
+          "label": "Ceramic sculpture",
+          "aliases": [
+            "Ceramic"
+          ]
+        },
+        {
+          "label": "Fiber sculpture",
+          "aliases": [
+            "Fibre sculpture"
+          ]
+        },
+        {
+          "label": "Molded sculpture",
+          "aliases": [
+            "Moulded sculpture"
+          ]
+        },
+        {
+          "label": "Molding",
+          "aliases": [
+            "Moulding"
+          ]
+        }
+      ],
+      "merges": [
+        {
+          "from": "alto relievo",
+          "into": "High relief"
+        },
+        {
+          "from": "Low relief",
+          "into": "Bas-relief"
+        },
+        {
+          "from": "bas relief",
+          "into": "Bas-relief"
+        },
+        {
+          "from": "anaglyph",
+          "into": "Bas-relief"
+        },
+        {
+          "from": "Modelling",
+          "into": "Modeling"
+        },
+        {
+          "from": "Readymade",
+          "into": "Ready-made"
+        },
+        {
+          "from": "woodcarving",
+          "into": "Wood carving"
+        }
+      ],
+      "omitOriginalAliases": [
+        "bronze",
+        "marble"
+      ]
+    },
+    {
+      "key": "poem-forms",
+      "root": "poem.n.01",
+      "family": "culture",
+      "prompt": "Name a type or form of poem.",
+      "scope": "Recognized named poem and verse forms count, including complete short forms and established stanza/verse forms used as poems. A subject, individual poet, book title or meter alone does not automatically name a poem form.",
+      "familiar": [
+        "Sonnet",
+        "Haiku",
+        "Limerick",
+        "Ode",
+        "Elegy",
+        "Ballad",
+        "Epic",
+        "Free verse",
+        "Blank verse",
+        "Acrostic",
+        "Concrete poem",
+        "Shape poem",
+        "Villanelle",
+        "Sestina",
+        "Pantoum",
+        "Ghazal",
+        "Tanka",
+        "Renga",
+        "Senryu",
+        "Cinquain",
+        "Clerihew",
+        "Triolet",
+        "Rondeau",
+        "Rondel",
+        "Ottava rima",
+        "Terza rima",
+        "Couplet",
+        "Quatrain",
+        "Triplet",
+        "Nonsense verse",
+        "Nursery rhyme",
+        "Lyric",
+        "Dramatic monologue",
+        "Sijo",
+        "Shadorma",
+        "Rubai",
+        "Aubade",
+        "Epigram",
+        "Epitaph",
+        "Pastoral",
+        "Idyll",
+        "Eclogue",
+        "Romance",
+        "Prose poem",
+        "Golden shovel",
+        "Blackout poetry",
+        "Erasure poem",
+        "Found poetry",
+        "Diamante"
+      ],
+      "exclude": [
+        "William Shakespeare",
+        "Iambic pentameter",
+        "Love"
+      ],
+      "rare": "Rhopalic verse",
+      "references": [
+        "https://wordnet.princeton.edu/",
+        "https://www.poetryfoundation.org/education/glossary",
+        "https://poets.org/glossary",
+        "https://rpo.library.utoronto.ca/glossary/r"
+      ],
+      "holds": {
+        "Edda": "Specific work/liturgical text or generic verse label rather than a particular form of poem.",
+        "sursum corda": "Specific work/liturgical text or generic verse label rather than a particular form of poem.",
+        "verse": "Specific work/liturgical text or generic verse label rather than a particular form of poem."
+      },
+      "aliasHolds": {},
+      "renames": {},
+      "additions": [
+        {
+          "label": "Sonnet",
+          "aliases": []
+        },
+        {
+          "label": "Haiku",
+          "aliases": []
+        },
+        {
+          "label": "Limerick",
+          "aliases": []
+        },
+        {
+          "label": "Ode",
+          "aliases": []
+        },
+        {
+          "label": "Elegy",
+          "aliases": []
+        },
+        {
+          "label": "Ballad",
+          "aliases": []
+        },
+        {
+          "label": "Epic",
+          "aliases": []
+        },
+        {
+          "label": "Free verse",
+          "aliases": []
+        },
+        {
+          "label": "Blank verse",
+          "aliases": []
+        },
+        {
+          "label": "Acrostic",
+          "aliases": []
+        },
+        {
+          "label": "Concrete poem",
+          "aliases": []
+        },
+        {
+          "label": "Shape poem",
+          "aliases": []
+        },
+        {
+          "label": "Villanelle",
+          "aliases": []
+        },
+        {
+          "label": "Sestina",
+          "aliases": []
+        },
+        {
+          "label": "Pantoum",
+          "aliases": []
+        },
+        {
+          "label": "Ghazal",
+          "aliases": []
+        },
+        {
+          "label": "Tanka",
+          "aliases": []
+        },
+        {
+          "label": "Renga",
+          "aliases": []
+        },
+        {
+          "label": "Senryu",
+          "aliases": []
+        },
+        {
+          "label": "Cinquain",
+          "aliases": []
+        },
+        {
+          "label": "Clerihew",
+          "aliases": []
+        },
+        {
+          "label": "Triolet",
+          "aliases": []
+        },
+        {
+          "label": "Rondeau",
+          "aliases": []
+        },
+        {
+          "label": "Rondel",
+          "aliases": []
+        },
+        {
+          "label": "Ottava rima",
+          "aliases": []
+        },
+        {
+          "label": "Terza rima",
+          "aliases": []
+        },
+        {
+          "label": "Couplet",
+          "aliases": []
+        },
+        {
+          "label": "Quatrain",
+          "aliases": []
+        },
+        {
+          "label": "Triplet",
+          "aliases": []
+        },
+        {
+          "label": "Nonsense verse",
+          "aliases": []
+        },
+        {
+          "label": "Nursery rhyme",
+          "aliases": []
+        },
+        {
+          "label": "Lyric",
+          "aliases": []
+        },
+        {
+          "label": "Dramatic monologue",
+          "aliases": []
+        },
+        {
+          "label": "Sijo",
+          "aliases": []
+        },
+        {
+          "label": "Shadorma",
+          "aliases": []
+        },
+        {
+          "label": "Rubai",
+          "aliases": []
+        },
+        {
+          "label": "Aubade",
+          "aliases": []
+        },
+        {
+          "label": "Epigram",
+          "aliases": []
+        },
+        {
+          "label": "Epitaph",
+          "aliases": []
+        },
+        {
+          "label": "Pastoral",
+          "aliases": []
+        },
+        {
+          "label": "Idyll",
+          "aliases": []
+        },
+        {
+          "label": "Eclogue",
+          "aliases": []
+        },
+        {
+          "label": "Romance",
+          "aliases": []
+        },
+        {
+          "label": "Prose poem",
+          "aliases": []
+        },
+        {
+          "label": "Golden shovel",
+          "aliases": []
+        },
+        {
+          "label": "Blackout poetry",
+          "aliases": []
+        },
+        {
+          "label": "Erasure poem",
+          "aliases": []
+        },
+        {
+          "label": "Found poetry",
+          "aliases": []
+        },
+        {
+          "label": "Diamante",
+          "aliases": []
+        },
+        {
+          "label": "Rhopalic verse",
+          "aliases": []
+        },
+        {
+          "label": "Concrete poem",
+          "aliases": [
+            "Concrete poetry",
+            "Shape poem"
+          ]
+        },
+        {
+          "label": "Couplet",
+          "aliases": [
+            "Rhyming couplet"
+          ]
+        },
+        {
+          "label": "Epic",
+          "aliases": [
+            "Epic poem"
+          ]
+        },
+        {
+          "label": "Erasure poem",
+          "aliases": [
+            "Erasure poetry"
+          ]
+        },
+        {
+          "label": "Blackout poetry",
+          "aliases": [
+            "Blackout poem"
+          ]
+        }
+      ],
+      "merges": [
+        {
+          "from": "epic poem",
+          "into": "Epic"
+        },
+        {
+          "from": "Shape poem",
+          "into": "Concrete poem"
+        }
+      ]
+    },
+    {
+      "key": "art-movements-styles",
+      "root": "artistic_movement.n.01",
+      "family": "culture",
+      "prompt": "Name an art movement or recognized visual-art style.",
+      "scope": "Recognized visual-art movements, schools and historical styles count, including architectural and moving-image art movements. An individual artist, work, generic medium or music genre alone does not count.",
+      "familiar": [
+        "Impressionism",
+        "Surrealism",
+        "Cubism",
+        "Renaissance",
+        "Baroque",
+        "Rococo",
+        "Romanticism",
+        "Realism",
+        "Abstract expressionism",
+        "Pop art",
+        "Minimalism",
+        "Post-Impressionism",
+        "Dada",
+        "Futurism",
+        "Symbolism",
+        "Art Nouveau",
+        "Art Deco",
+        "Neoclassicism",
+        "Modernism",
+        "Postmodernism",
+        "Bauhaus",
+        "Gothic",
+        "Byzantine art",
+        "Photorealism",
+        "Hyperrealism",
+        "Fauvism",
+        "Suprematism",
+        "Constructivism",
+        "De Stijl",
+        "Color field painting",
+        "CoBrA",
+        "Fluxus",
+        "Conceptual art",
+        "Op art",
+        "Land art",
+        "Street art",
+        "Graffiti art",
+        "Stuckism",
+        "Kitsch",
+        "Camp",
+        "Kawaii art",
+        "International Gothic",
+        "Northern Renaissance",
+        "Neo-expressionism",
+        "Neo-Dada",
+        "Pre-Raphaelitism",
+        "Arts and Crafts movement",
+        "Pointillism",
+        "Expressionism",
+        "Academic art",
+        "Folk art",
+        "Primitivism",
+        "Outsider art",
+        "Abstract art",
+        "Anime",
+        "Cartoon art",
+        "Graffiti",
+        "Regionalism",
+        "Social realism",
+        "Tonalism",
+        "Orphism",
+        "Neo-Impressionism"
+      ],
+      "exclude": [
+        "Vincent van Gogh",
+        "Oil paint",
+        "Heavy metal"
+      ],
+      "rare": "Rayonism",
+      "references": [
+        "https://wordnet.princeton.edu/",
+        "https://www.tate.org.uk/art/art-terms",
+        "https://www.theartstory.org/movements/",
+        "https://en.wikipedia.org/wiki/List_of_art_movements",
+        "https://www.moma.org/collection/terms/rayonism",
+        "https://www.moma.org/calendar/film/688",
+        "https://www.adobe.com/uk/creativecloud/animation/discover/anime.html"
+      ],
+      "holds": {
+        "imagism": "Primarily literary school, outside this visual-art movement/style scope.",
+        "lake poets": "Primarily literary school, outside this visual-art movement/style scope.",
+        "Fine Art": "Generic class of art rather than a named movement or style.",
+        "Visual Art": "Generic class rather than a particular visual-art style."
+      },
+      "aliasHolds": {},
+      "renames": {},
+      "additions": [
+        {
+          "label": "Impressionism",
+          "aliases": []
+        },
+        {
+          "label": "Surrealism",
+          "aliases": []
+        },
+        {
+          "label": "Cubism",
+          "aliases": []
+        },
+        {
+          "label": "Renaissance",
+          "aliases": []
+        },
+        {
+          "label": "Baroque",
+          "aliases": []
+        },
+        {
+          "label": "Rococo",
+          "aliases": []
+        },
+        {
+          "label": "Romanticism",
+          "aliases": []
+        },
+        {
+          "label": "Realism",
+          "aliases": []
+        },
+        {
+          "label": "Abstract expressionism",
+          "aliases": []
+        },
+        {
+          "label": "Pop art",
+          "aliases": []
+        },
+        {
+          "label": "Minimalism",
+          "aliases": []
+        },
+        {
+          "label": "Post-Impressionism",
+          "aliases": []
+        },
+        {
+          "label": "Dada",
+          "aliases": []
+        },
+        {
+          "label": "Futurism",
+          "aliases": []
+        },
+        {
+          "label": "Symbolism",
+          "aliases": []
+        },
+        {
+          "label": "Art Nouveau",
+          "aliases": []
+        },
+        {
+          "label": "Art Deco",
+          "aliases": []
+        },
+        {
+          "label": "Neoclassicism",
+          "aliases": []
+        },
+        {
+          "label": "Modernism",
+          "aliases": []
+        },
+        {
+          "label": "Postmodernism",
+          "aliases": []
+        },
+        {
+          "label": "Bauhaus",
+          "aliases": []
+        },
+        {
+          "label": "Gothic",
+          "aliases": []
+        },
+        {
+          "label": "Byzantine art",
+          "aliases": []
+        },
+        {
+          "label": "Photorealism",
+          "aliases": []
+        },
+        {
+          "label": "Hyperrealism",
+          "aliases": []
+        },
+        {
+          "label": "Fauvism",
+          "aliases": []
+        },
+        {
+          "label": "Suprematism",
+          "aliases": []
+        },
+        {
+          "label": "Constructivism",
+          "aliases": []
+        },
+        {
+          "label": "De Stijl",
+          "aliases": []
+        },
+        {
+          "label": "Color field painting",
+          "aliases": []
+        },
+        {
+          "label": "CoBrA",
+          "aliases": []
+        },
+        {
+          "label": "Fluxus",
+          "aliases": []
+        },
+        {
+          "label": "Conceptual art",
+          "aliases": []
+        },
+        {
+          "label": "Op art",
+          "aliases": []
+        },
+        {
+          "label": "Land art",
+          "aliases": []
+        },
+        {
+          "label": "Street art",
+          "aliases": []
+        },
+        {
+          "label": "Graffiti art",
+          "aliases": []
+        },
+        {
+          "label": "Stuckism",
+          "aliases": []
+        },
+        {
+          "label": "Kitsch",
+          "aliases": []
+        },
+        {
+          "label": "Camp",
+          "aliases": []
+        },
+        {
+          "label": "Kawaii art",
+          "aliases": []
+        },
+        {
+          "label": "International Gothic",
+          "aliases": []
+        },
+        {
+          "label": "Northern Renaissance",
+          "aliases": []
+        },
+        {
+          "label": "Neo-expressionism",
+          "aliases": []
+        },
+        {
+          "label": "Neo-Dada",
+          "aliases": []
+        },
+        {
+          "label": "Pre-Raphaelitism",
+          "aliases": []
+        },
+        {
+          "label": "Arts and Crafts movement",
+          "aliases": []
+        },
+        {
+          "label": "Pointillism",
+          "aliases": []
+        },
+        {
+          "label": "Expressionism",
+          "aliases": []
+        },
+        {
+          "label": "Academic art",
+          "aliases": []
+        },
+        {
+          "label": "Folk art",
+          "aliases": []
+        },
+        {
+          "label": "Primitivism",
+          "aliases": []
+        },
+        {
+          "label": "Outsider art",
+          "aliases": []
+        },
+        {
+          "label": "Rayonism",
+          "aliases": []
+        },
+        {
+          "label": "Anime",
+          "aliases": [
+            "Anime style"
+          ]
+        },
+        {
+          "label": "Cartoon art",
+          "aliases": [
+            "Cartoon style",
+            "Cartooning"
+          ]
+        },
+        {
+          "label": "Social realism",
+          "aliases": []
+        },
+        {
+          "label": "Neo-Impressionism",
+          "aliases": []
+        }
+      ],
+      "merges": [
+        {
+          "from": "deco",
+          "into": "Art Deco"
+        },
+        {
+          "from": "Ash Can",
+          "into": "Ashcan School"
+        },
+        {
+          "from": "neoexpressionism",
+          "into": "Neo-expressionism"
+        },
+        {
+          "from": "Graffiti art",
+          "into": "Graffiti"
+        },
+        {
+          "from": "Color Field",
+          "into": "Color field painting"
+        },
+        {
+          "from": "Gothic art",
+          "into": "Gothic"
+        }
+      ]
+    },
+    {
+      "key": "flower-kinds",
+      "root": "flower.n.01",
+      "family": "nature",
+      "prompt": "Name a type of flower.",
+      "scope": "Recognized common flower types and flowering plants grown for their blooms count, including named horticultural groups and documented varieties. Materials merely named after flowers, artificial flower products and unrelated decorative objects do not count.",
+      "familiar": [
+        "Rose",
+        "Tulip",
+        "Daisy",
+        "Sunflower",
+        "Lily",
+        "Orchid",
+        "Daffodil",
+        "Marigold",
+        "Carnation",
+        "Chrysanthemum",
+        "Petunia",
+        "Geranium",
+        "Begonia",
+        "Hydrangea",
+        "Hibiscus",
+        "Pansy",
+        "Violet",
+        "Iris",
+        "Peony",
+        "Lavender",
+        "Snapdragon",
+        "Zinnia",
+        "Poppy",
+        "Cosmos",
+        "Aster",
+        "Anemone",
+        "Ranunculus",
+        "Amaryllis",
+        "Gladiolus",
+        "Dahlia",
+        "Freesia",
+        "Forget-me-not",
+        "Foxglove",
+        "Impatiens",
+        "Sweet pea",
+        "Lupine",
+        "Lupin",
+        "Bachelor's button",
+        "Cornflower",
+        "Black-eyed Susan",
+        "Coneflower",
+        "Magnolia",
+        "Lilac",
+        "Cherry blossom",
+        "Lotus",
+        "Water lily",
+        "Bird of paradise",
+        "Protea",
+        "Fuchsia",
+        "Bougainvillea",
+        "Camellia",
+        "Gardenia",
+        "Allium",
+        "Hellebore",
+        "Snowdrop",
+        "Bluebell",
+        "Crocus",
+        "Columbine",
+        "Bleeding heart",
+        "Verbena",
+        "Calendula",
+        "Primrose",
+        "Jasmine",
+        "Lily of the valley",
+        "Buttercup",
+        "Dandelion",
+        "Heather",
+        "Hollyhock",
+        "Azalea",
+        "Rhododendron",
+        "Wisteria",
+        "Clematis",
+        "Nasturtium",
+        "Honeysuckle",
+        "Poinsettia",
+        "Oleander",
+        "Periwinkle",
+        "Yarrow",
+        "Forsythia",
+        "Sweet woodruff",
+        "Sweet violet",
+        "Butterfly bush",
+        "Liatris",
+        "Gaillardia",
+        "Lisianthus",
+        "Alstroemeria",
+        "Lobelia",
+        "Salvia",
+        "Nicotiana",
+        "Nemesia",
+        "Lantana",
+        "Passion flower",
+        "Angel's trumpet",
+        "Clivia",
+        "Canna lily",
+        "Dianthus",
+        "Daphne",
+        "Sweet autumn clematis",
+        "Sea holly",
+        "Helenium",
+        "Osteospermum",
+        "Scabiosa",
+        "Sedum",
+        "Monkshood",
+        "Aconite",
+        "Lilyturf"
+      ],
+      "exclude": [
+        "Rose quartz",
+        "Plastic bouquet",
+        "Flower pot"
+      ],
+      "rare": "Chincherinchee",
+      "references": [
+        "https://wordnet.princeton.edu/",
+        "https://www.rhs.org.uk/plants",
+        "https://www.britannica.com/science/flower",
+        "https://www.rhs.org.uk/plants/4327/convallaria-majalis/details",
+        "https://www.rhs.org.uk/plants/jasmine",
+        "https://www.rhs.org.uk/plants/clematis",
+        "https://www.rhs.org.uk/plants/wisteria",
+        "https://www.rhs.org.uk/plants/rhododendron"
+      ],
+      "holds": {},
+      "aliasHolds": {
+        "stock": [
+          "gillyflower"
+        ],
+        "desert four o'clock": [
+          "maravilla"
+        ],
+        "lychnis": [
+          "catchfly"
+        ],
+        "strawflower": [
+          "cornflower"
+        ],
+        "meeting house": [
+          "honeysuckle"
+        ]
+      },
+      "renames": {},
+      "additions": [
+        {
+          "label": "Rose",
+          "aliases": []
+        },
+        {
+          "label": "Tulip",
+          "aliases": []
+        },
+        {
+          "label": "Daisy",
+          "aliases": []
+        },
+        {
+          "label": "Sunflower",
+          "aliases": []
+        },
+        {
+          "label": "Lily",
+          "aliases": []
+        },
+        {
+          "label": "Orchid",
+          "aliases": []
+        },
+        {
+          "label": "Daffodil",
+          "aliases": []
+        },
+        {
+          "label": "Marigold",
+          "aliases": []
+        },
+        {
+          "label": "Carnation",
+          "aliases": []
+        },
+        {
+          "label": "Chrysanthemum",
+          "aliases": []
+        },
+        {
+          "label": "Petunia",
+          "aliases": []
+        },
+        {
+          "label": "Geranium",
+          "aliases": []
+        },
+        {
+          "label": "Begonia",
+          "aliases": []
+        },
+        {
+          "label": "Hydrangea",
+          "aliases": []
+        },
+        {
+          "label": "Hibiscus",
+          "aliases": []
+        },
+        {
+          "label": "Pansy",
+          "aliases": []
+        },
+        {
+          "label": "Violet",
+          "aliases": []
+        },
+        {
+          "label": "Iris",
+          "aliases": []
+        },
+        {
+          "label": "Peony",
+          "aliases": []
+        },
+        {
+          "label": "Lavender",
+          "aliases": []
+        },
+        {
+          "label": "Snapdragon",
+          "aliases": []
+        },
+        {
+          "label": "Zinnia",
+          "aliases": []
+        },
+        {
+          "label": "Poppy",
+          "aliases": []
+        },
+        {
+          "label": "Cosmos",
+          "aliases": []
+        },
+        {
+          "label": "Aster",
+          "aliases": []
+        },
+        {
+          "label": "Anemone",
+          "aliases": []
+        },
+        {
+          "label": "Ranunculus",
+          "aliases": []
+        },
+        {
+          "label": "Amaryllis",
+          "aliases": []
+        },
+        {
+          "label": "Gladiolus",
+          "aliases": []
+        },
+        {
+          "label": "Dahlia",
+          "aliases": []
+        },
+        {
+          "label": "Freesia",
+          "aliases": []
+        },
+        {
+          "label": "Forget-me-not",
+          "aliases": []
+        },
+        {
+          "label": "Foxglove",
+          "aliases": []
+        },
+        {
+          "label": "Impatiens",
+          "aliases": []
+        },
+        {
+          "label": "Sweet pea",
+          "aliases": []
+        },
+        {
+          "label": "Lupine",
+          "aliases": []
+        },
+        {
+          "label": "Lupin",
+          "aliases": []
+        },
+        {
+          "label": "Bachelor's button",
+          "aliases": []
+        },
+        {
+          "label": "Cornflower",
+          "aliases": []
+        },
+        {
+          "label": "Black-eyed Susan",
+          "aliases": []
+        },
+        {
+          "label": "Coneflower",
+          "aliases": []
+        },
+        {
+          "label": "Magnolia",
+          "aliases": []
+        },
+        {
+          "label": "Lilac",
+          "aliases": []
+        },
+        {
+          "label": "Cherry blossom",
+          "aliases": []
+        },
+        {
+          "label": "Lotus",
+          "aliases": []
+        },
+        {
+          "label": "Water lily",
+          "aliases": []
+        },
+        {
+          "label": "Bird of paradise",
+          "aliases": []
+        },
+        {
+          "label": "Protea",
+          "aliases": []
+        },
+        {
+          "label": "Fuchsia",
+          "aliases": []
+        },
+        {
+          "label": "Bougainvillea",
+          "aliases": []
+        },
+        {
+          "label": "Camellia",
+          "aliases": []
+        },
+        {
+          "label": "Gardenia",
+          "aliases": []
+        },
+        {
+          "label": "Allium",
+          "aliases": []
+        },
+        {
+          "label": "Hellebore",
+          "aliases": []
+        },
+        {
+          "label": "Snowdrop",
+          "aliases": []
+        },
+        {
+          "label": "Bluebell",
+          "aliases": []
+        },
+        {
+          "label": "Crocus",
+          "aliases": []
+        },
+        {
+          "label": "Columbine",
+          "aliases": []
+        },
+        {
+          "label": "Bleeding heart",
+          "aliases": []
+        },
+        {
+          "label": "Verbena",
+          "aliases": []
+        },
+        {
+          "label": "Calendula",
+          "aliases": []
+        },
+        {
+          "label": "Primrose",
+          "aliases": []
+        },
+        {
+          "label": "Chincherinchee",
+          "aliases": []
+        },
+        {
+          "label": "Bachelor's button",
+          "aliases": [
+            "Cornflower",
+            "Bachelors button"
+          ]
+        },
+        {
+          "label": "Lupine",
+          "aliases": [
+            "Lupin"
+          ]
+        },
+        {
+          "label": "Jasmine",
+          "aliases": []
+        },
+        {
+          "label": "Lily of the valley",
+          "aliases": []
+        },
+        {
+          "label": "Buttercup",
+          "aliases": []
+        },
+        {
+          "label": "Dandelion",
+          "aliases": []
+        },
+        {
+          "label": "Heather",
+          "aliases": []
+        },
+        {
+          "label": "Hollyhock",
+          "aliases": []
+        },
+        {
+          "label": "Azalea",
+          "aliases": []
+        },
+        {
+          "label": "Rhododendron",
+          "aliases": []
+        },
+        {
+          "label": "Wisteria",
+          "aliases": []
+        },
+        {
+          "label": "Clematis",
+          "aliases": []
+        },
+        {
+          "label": "Nasturtium",
+          "aliases": []
+        },
+        {
+          "label": "Honeysuckle",
+          "aliases": []
+        },
+        {
+          "label": "Poinsettia",
+          "aliases": []
+        },
+        {
+          "label": "Oleander",
+          "aliases": []
+        },
+        {
+          "label": "Periwinkle",
+          "aliases": []
+        },
+        {
+          "label": "Yarrow",
+          "aliases": []
+        },
+        {
+          "label": "Forsythia",
+          "aliases": []
+        },
+        {
+          "label": "Sweet woodruff",
+          "aliases": []
+        },
+        {
+          "label": "Sweet violet",
+          "aliases": []
+        },
+        {
+          "label": "Butterfly bush",
+          "aliases": []
+        },
+        {
+          "label": "Liatris",
+          "aliases": []
+        },
+        {
+          "label": "Gaillardia",
+          "aliases": []
+        },
+        {
+          "label": "Lisianthus",
+          "aliases": []
+        },
+        {
+          "label": "Alstroemeria",
+          "aliases": []
+        },
+        {
+          "label": "Lobelia",
+          "aliases": []
+        },
+        {
+          "label": "Salvia",
+          "aliases": []
+        },
+        {
+          "label": "Nicotiana",
+          "aliases": []
+        },
+        {
+          "label": "Nemesia",
+          "aliases": []
+        },
+        {
+          "label": "Lantana",
+          "aliases": []
+        },
+        {
+          "label": "Passion flower",
+          "aliases": []
+        },
+        {
+          "label": "Angel's trumpet",
+          "aliases": []
+        },
+        {
+          "label": "Clivia",
+          "aliases": []
+        },
+        {
+          "label": "Canna lily",
+          "aliases": []
+        },
+        {
+          "label": "Dianthus",
+          "aliases": []
+        },
+        {
+          "label": "Daphne",
+          "aliases": []
+        },
+        {
+          "label": "Sweet autumn clematis",
+          "aliases": []
+        },
+        {
+          "label": "Sea holly",
+          "aliases": []
+        },
+        {
+          "label": "Helenium",
+          "aliases": []
+        },
+        {
+          "label": "Osteospermum",
+          "aliases": []
+        },
+        {
+          "label": "Sedum",
+          "aliases": []
+        },
+        {
+          "label": "Monkshood",
+          "aliases": []
+        },
+        {
+          "label": "Aconite",
+          "aliases": []
+        },
+        {
+          "label": "Lilyturf",
+          "aliases": []
+        },
+        {
+          "label": "Lily of the valley",
+          "aliases": [
+            "May lily",
+            "Convallaria majalis"
+          ]
+        },
+        {
+          "label": "Jasmine",
+          "aliases": [
+            "Jasminum"
+          ]
+        },
+        {
+          "label": "Wisteria",
+          "aliases": [
+            "Wistaria"
+          ]
+        },
+        {
+          "label": "Honeysuckle",
+          "aliases": [
+            "Lonicera"
+          ]
+        },
+        {
+          "label": "Butterfly bush",
+          "aliases": [
+            "Buddleia",
+            "Buddleja"
+          ]
+        },
+        {
+          "label": "Salvia",
+          "aliases": [
+            "Sage"
+          ]
+        },
+        {
+          "label": "Sea holly",
+          "aliases": [
+            "Eryngium"
+          ]
+        },
+        {
+          "label": "Lilyturf",
+          "aliases": [
+            "Lily turf",
+            "Liriope muscari"
+          ]
+        },
+        {
+          "label": "Monkshood",
+          "aliases": [
+            "Aconitum",
+            "Aconitum napellus"
+          ]
+        },
+        {
+          "label": "Lisianthus",
+          "aliases": [
+            "Eustoma"
+          ]
+        },
+        {
+          "label": "Passion flower",
+          "aliases": [
+            "Passionflower",
+            "Passiflora"
+          ]
+        }
+      ],
+      "merges": [
+        {
+          "from": "Lupin",
+          "into": "Lupine"
+        },
+        {
+          "from": "Cornflower",
+          "into": "Bachelor's button"
+        }
+      ]
     }
   ]
 }

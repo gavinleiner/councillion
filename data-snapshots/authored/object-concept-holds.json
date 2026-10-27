@@ -1082,5 +1082,314 @@
         "iceboat"
       ]
     }
+  },
+  "writing-drawing-tools": {
+    "rows": [],
+    "aliasHolds": {}
+  },
+  "cleaning-equipment-kinds": {
+    "rows": [],
+    "aliasHolds": {}
+  },
+  "makeup-product-kinds": {
+    "rows": [
+      {
+        "name": "blackface",
+        "synset": "blackface.n.01",
+        "reason": "Practice/category label or hair-removal preparation; not a decorative makeup product type in this question."
+      },
+      {
+        "name": "depilatory",
+        "synset": "depilatory.n.02",
+        "reason": "Practice/category label or hair-removal preparation; not a decorative makeup product type in this question."
+      },
+      {
+        "name": "epilating wax",
+        "synset": "epilating_wax.n.01",
+        "reason": "Practice/category label or hair-removal preparation; not a decorative makeup product type in this question."
+      },
+      {
+        "name": "makeup",
+        "synset": "makeup.n.01",
+        "reason": "Practice/category label or hair-removal preparation; not a decorative makeup product type in this question."
+      }
+    ],
+    "aliasHolds": {}
+  },
+  "adhesive-kinds": {
+    "rows": [
+      {
+        "name": "glue",
+        "synset": "glue.n.01",
+        "reason": "Unqualified umbrella term given in the question, not a particular named type or brand."
+      }
+    ],
+    "aliasHolds": {}
+  },
+  "toy-kinds": {
+    "rows": [
+      {
+        "name": "golliwog",
+        "synset": "golliwog.n.01",
+        "reason": "Historical racial-caricature artifact; omitted from this casual-play toy inventory, retained only in the source ledger."
+      }
+    ],
+    "aliasHolds": {}
+  },
+  "timepiece-kinds": {
+    "rows": [],
+    "aliasHolds": {}
+  },
+  "computer-device-kinds": {
+    "rows": [
+      {
+        "name": "bulletin board system",
+        "synset": "bulletin_board_system.n.01",
+        "reason": "Online service or software/site concept; not a physical computer type."
+      },
+      {
+        "name": "chat room",
+        "synset": "chat_room.n.01",
+        "reason": "Online service or software/site concept; not a physical computer type."
+      },
+      {
+        "name": "portal site",
+        "synset": "portal_site.n.01",
+        "reason": "Online service or software/site concept; not a physical computer type."
+      },
+      {
+        "name": "Turing machine",
+        "synset": "turing_machine.n.01",
+        "reason": "Abstract computation model, outside this physical computing-device inventory."
+      },
+      {
+        "name": "web site",
+        "synset": "web_site.n.01",
+        "reason": "Online service or software/site concept; not a physical computer type."
+      }
+    ],
+    "aliasHolds": {}
+  },
+  "engine-kinds": {
+    "rows": [
+      {
+        "name": "alternator",
+        "synset": "alternator.n.01",
+        "reason": "Electrical generator or complete rocket/stage/installation rather than a prime-mover engine/motor type. Actual turbine and rocket-engine types remain."
+      },
+      {
+        "name": "booster",
+        "synset": "booster.n.05",
+        "reason": "Electrical generator or complete rocket/stage/installation rather than a prime-mover engine/motor type. Actual turbine and rocket-engine types remain."
+      },
+      {
+        "name": "dynamo",
+        "synset": "dynamo.n.01",
+        "reason": "Electrical generator or complete rocket/stage/installation rather than a prime-mover engine/motor type. Actual turbine and rocket-engine types remain."
+      },
+      {
+        "name": "engine",
+        "synset": "engine.n.01",
+        "reason": "Unqualified umbrella term already given in the question, not a particular engine/motor type."
+      },
+      {
+        "name": "generator",
+        "synset": "generator.n.02",
+        "reason": "Electrical generator or complete rocket/stage/installation rather than a prime-mover engine/motor type. Actual turbine and rocket-engine types remain."
+      },
+      {
+        "name": "kick starter",
+        "synset": "kick_starter.n.01",
+        "reason": "A mechanical cranking mechanism, not an engine or motor."
+      },
+      {
+        "name": "magneto",
+        "synset": "magneto.n.01",
+        "reason": "Electrical generator or complete rocket/stage/installation rather than a prime-mover engine/motor type. Actual turbine and rocket-engine types remain."
+      },
+      {
+        "name": "space rocket",
+        "synset": "space_rocket.n.01",
+        "reason": "Electrical generator or complete rocket/stage/installation rather than a prime-mover engine/motor type. Actual turbine and rocket-engine types remain."
+      },
+      {
+        "name": "turbogenerator",
+        "synset": "turbogenerator.n.01",
+        "reason": "Electrical generator or complete rocket/stage/installation rather than a prime-mover engine/motor type. Actual turbine and rocket-engine types remain."
+      },
+      {
+        "name": "windmill",
+        "synset": "windmill.n.02",
+        "reason": "Electrical generator or complete rocket/stage/installation rather than a prime-mover engine/motor type. Actual turbine and rocket-engine types remain."
+      }
+    ],
+    "aliasHolds": {
+      "fanjet": [
+        "turbojet",
+        "turbojet engine"
+      ]
+    }
+  },
+  "flat-geometric-shapes": {
+    "rows": [
+      {
+        "name": "asterism",
+        "synset": "asterism.n.01",
+        "reason": "A phenomenon/diagram, unbounded curve, spherical figure or three-dimensional solid, not a named closed flat shape in this scope."
+      },
+      {
+        "name": "cladogram",
+        "synset": "cladogram.n.01",
+        "reason": "A phenomenon/diagram, unbounded curve, spherical figure or three-dimensional solid, not a named closed flat shape in this scope."
+      },
+      {
+        "name": "conic section",
+        "synset": "conic_section.n.01",
+        "reason": "Generic class also includes open parabolas and hyperbolas; the prompt requires a closed shape."
+      },
+      {
+        "name": "ellipsoid",
+        "synset": "ellipsoid.n.01",
+        "reason": "A phenomenon/diagram, unbounded curve, spherical figure or three-dimensional solid, not a named closed flat shape in this scope."
+      },
+      {
+        "name": "equator",
+        "synset": "equator.n.02",
+        "reason": "A phenomenon/diagram, unbounded curve, spherical figure or three-dimensional solid, not a named closed flat shape in this scope."
+      },
+      {
+        "name": "hyperbola",
+        "synset": "hyperbola.n.01",
+        "reason": "A phenomenon/diagram, unbounded curve, spherical figure or three-dimensional solid, not a named closed flat shape in this scope."
+      },
+      {
+        "name": "parabola",
+        "synset": "parabola.n.01",
+        "reason": "A phenomenon/diagram, unbounded curve, spherical figure or three-dimensional solid, not a named closed flat shape in this scope."
+      },
+      {
+        "name": "paraboloid",
+        "synset": "paraboloid.n.01",
+        "reason": "A phenomenon/diagram, unbounded curve, spherical figure or three-dimensional solid, not a named closed flat shape in this scope."
+      },
+      {
+        "name": "spherical polygon",
+        "synset": "spherical_polygon.n.01",
+        "reason": "A phenomenon/diagram, unbounded curve, spherical figure or three-dimensional solid, not a named closed flat shape in this scope."
+      },
+      {
+        "name": "spherical triangle",
+        "synset": "spherical_triangle.n.01",
+        "reason": "A phenomenon/diagram, unbounded curve, spherical figure or three-dimensional solid, not a named closed flat shape in this scope."
+      },
+      {
+        "name": "stemma",
+        "synset": "stemma.n.01",
+        "reason": "A phenomenon/diagram, unbounded curve, spherical figure or three-dimensional solid, not a named closed flat shape in this scope."
+      },
+      {
+        "name": "tree",
+        "synset": "tree.n.02",
+        "reason": "A phenomenon/diagram, unbounded curve, spherical figure or three-dimensional solid, not a named closed flat shape in this scope."
+      },
+      {
+        "name": "wedge",
+        "synset": "wedge.n.01",
+        "reason": "A phenomenon/diagram, unbounded curve, spherical figure or three-dimensional solid, not a named closed flat shape in this scope."
+      }
+    ],
+    "aliasHolds": {}
+  },
+  "medical-instrument-kinds": {
+    "rows": [
+      {
+        "name": "lie detector",
+        "synset": "lie_detector.n.01",
+        "reason": "Dedicated forensic deception-testing device rather than clinical equipment; generic medical polygraphs remain retained."
+      }
+    ],
+    "aliasHolds": {
+      "ballistocardiograph": [
+        "cardiograph"
+      ]
+    }
+  },
+  "printing-techniques": {
+    "rows": [],
+    "aliasHolds": {
+      "rotogravure": [
+        "gravure"
+      ]
+    }
+  },
+  "sculpture-kinds": {
+    "rows": [
+      {
+        "name": "mold",
+        "synset": "mold.n.08",
+        "reason": "Individual artwork or ambiguous tool/object entry with incorrect technique synonyms. Actual sculpture types/techniques are retained separately."
+      },
+      {
+        "name": "Olympian Zeus",
+        "synset": "olympian_zeus.n.01",
+        "reason": "Individual artwork or ambiguous tool/object entry with incorrect technique synonyms. Actual sculpture types/techniques are retained separately."
+      }
+    ],
+    "aliasHolds": {}
+  },
+  "poem-forms": {
+    "rows": [
+      {
+        "name": "Edda",
+        "synset": "edda.n.02",
+        "reason": "Specific work/liturgical text or generic verse label rather than a particular form of poem."
+      },
+      {
+        "name": "sursum corda",
+        "synset": "sursum_corda.n.01",
+        "reason": "Specific work/liturgical text or generic verse label rather than a particular form of poem."
+      },
+      {
+        "name": "verse",
+        "synset": "verse.n.02",
+        "reason": "Specific work/liturgical text or generic verse label rather than a particular form of poem."
+      }
+    ],
+    "aliasHolds": {}
+  },
+  "art-movements-styles": {
+    "rows": [
+      {
+        "name": "imagism",
+        "synset": "imagism.n.01",
+        "reason": "Primarily literary school, outside this visual-art movement/style scope."
+      },
+      {
+        "name": "lake poets",
+        "synset": "lake_poets.n.01",
+        "reason": "Primarily literary school, outside this visual-art movement/style scope."
+      }
+    ],
+    "aliasHolds": {}
+  },
+  "flower-kinds": {
+    "rows": [],
+    "aliasHolds": {
+      "stock": [
+        "gillyflower"
+      ],
+      "desert four o'clock": [
+        "maravilla"
+      ],
+      "lychnis": [
+        "catchfly"
+      ],
+      "strawflower": [
+        "cornflower"
+      ],
+      "meeting house": [
+        "honeysuckle"
+      ]
+    }
   }
 }
