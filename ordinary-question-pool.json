@@ -1,6 +1,6 @@
 {
-  "build": "479fbbdb0a4086c4",
-  "count": 455,
+  "build": "4a4d44c8e2c87ebf",
+  "count": 462,
   "categories": [
     {
       "id": "group-q001",
@@ -3641,6 +3641,62 @@
       "group": "authored-whole-gaming-hardware",
       "answerCount": 1391,
       "scope": "Named released game consoles, dedicated handheld game systems and purpose-built gaming handheld PCs count. Named revisions, early electronic/VHS-based gaming systems and game-library add-on platforms count; regional renames of the same platform share an answer. N-Gage is a documented gaming-handheld hybrid. General-purpose phones/computers, media-streaming boxes with optional games, unreleased prototypes and input-only controllers do not count. A self-contained plug-and-play game unit counts even if its shell resembles a controller."
+    },
+    {
+      "id": "authored-human-joints",
+      "prompt": "Name a human joint or an anatomical joint type.",
+      "family": "science",
+      "group": "authored-whole-practical-science",
+      "answerCount": 179,
+      "scope": "Recognized named joint complexes, specific joints and anatomical joint categories count. Ordinary public names count; actual published shorthand is explicit. A bone or muscle alone does not."
+    },
+    {
+      "id": "authored-human-blood-vessels",
+      "prompt": "Name a human blood vessel, blood-vessel type or named blood-vessel network.",
+      "family": "science",
+      "group": "authored-whole-practical-science",
+      "answerCount": 1076,
+      "scope": "Named human blood vessels, vessel types and recognized arterial/venous networks count, including real fetal vessels. Common vessel groups and proper anatomical names count. Heart chambers, lymph-only vessels, vessel-wall tissue, ligaments and ordinary blood cells do not count."
+    },
+    {
+      "id": "authored-weather-observation-instruments",
+      "prompt": "Name a weather-observation instrument or device.",
+      "family": "science",
+      "group": "authored-whole-practical-science",
+      "answerCount": 131,
+      "scope": "Recognized instrument and observation-platform types used to measure or observe weather count, including historic instruments, remote sensors, and meteorological balloon, aircraft, buoy and satellite platforms. Their ordinary established names count. An unrelated generic vehicle, forecast model, protective item or weather condition does not count."
+    },
+    {
+      "id": "authored-personal-protective-equipment",
+      "prompt": "Name a type of personal protective equipment.",
+      "family": "everyday",
+      "group": "authored-whole-practical-science",
+      "answerCount": 152,
+      "scope": "Recognized personal protective equipment and its named types count, including head, face, hearing, hand, foot, respiratory, fall, flotation and protective-clothing equipment. This classifies equipment names, not suitability for a particular hazard. Ordinary office tools, hand sanitizer and everyday clothing without a protective function do not count."
+    },
+    {
+      "id": "authored-electricity-generation-methods",
+      "prompt": "Name a source, device or process that can generate electricity.",
+      "family": "science",
+      "group": "authored-whole-practical-science",
+      "answerCount": 94,
+      "scope": "Documented energy sources, generating devices and physical conversion processes that produce electric current count, including small experimental generators and electrochemical cells. Storage devices count as conversion devices, without treating stored energy as a new primary source. Fictional devices, perpetual-motion claims, an ordinary power-consuming appliance, and a wire or transmission line alone do not count."
+    },
+    {
+      "id": "authored-radiation-forms",
+      "prompt": "Name a type of electromagnetic or particle radiation, or a named spectrum band.",
+      "family": "science",
+      "group": "authored-whole-practical-science",
+      "answerCount": 88,
+      "scope": "Electromagnetic or particle-radiation types, real named emission processes, physical-origin categories and recognized spectrum bands count. This includes established theoretical predictions such as Hawking radiation; naming a type does not claim it has been directly observed. Acoustic waves, ocean waves, static fields, gravitational waves and fictional energy are outside this electromagnetic/particle scope."
+    },
+    {
+      "id": "authored-puzzle-kinds",
+      "prompt": "Name a type of puzzle or brain teaser.",
+      "family": "everyday",
+      "group": "authored-whole-practical-science",
+      "answerCount": 233,
+      "scope": "Established puzzle forms and named puzzle families count: word, logic, number, visual, mathematical and mechanical puzzles, including actual named physical twisty-puzzle forms. A normal competitive game or a puzzle publisher, isolated article title, or generic software game title is not automatically a puzzle form."
     }
   ]
 }

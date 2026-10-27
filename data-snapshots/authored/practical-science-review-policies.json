@@ -1,0 +1,96 @@
+{
+  "human-joints": {
+    "holds": {},
+    "renameRepairs": {},
+    "aliasMerges": {
+      "Syndesmosis": [
+        "Syndesmoses"
+      ],
+      "Suture": [
+        "Sutures"
+      ],
+      "Synchondrosis": [
+        "Synchondroses"
+      ],
+      "Gomphosis": [
+        "Dentoalveolar syndesmosis"
+      ],
+      "Synovial joint": [
+        "Diarthrosis"
+      ],
+      "Condyloid joint": [
+        "Ellipsoid joint"
+      ],
+      "Sternocostal joint": [
+        "Sternochondral joints"
+      ]
+    }
+  },
+  "human-blood-vessels": {
+    "holds": {},
+    "renameRepairs": {},
+    "aliasMerges": {
+      "Artery": [
+        "Arteries"
+      ],
+      "Vein": [
+        "Veins"
+      ],
+      "Pulmonary artery": [
+        "Pulmonary arteries"
+      ],
+      "Pulmonary vein": [
+        "Pulmonary veins"
+      ],
+      "Brachial vein": [
+        "Brachial veins"
+      ]
+    }
+  },
+  "weather-observation-instruments": {
+    "holds": {},
+    "aliasMerges": {
+      "Evaporimeter": [
+        "Evaporation meter"
+      ]
+    },
+    "renameRepairs": {}
+  },
+  "personal-protective-equipment": {
+    "holds": {},
+    "aliasMerges": {
+      "Shin guards": [
+        "Protective shin guards"
+      ]
+    },
+    "renameRepairs": {}
+  },
+  "electricity-generation-methods": {
+    "holds": {},
+    "aliasMerges": {},
+    "renameRepairs": {}
+  },
+  "radiation-forms": {
+    "holds": {},
+    "aliasMerges": {},
+    "renameRepairs": {}
+  },
+  "puzzle-kinds": {
+    "holds": {
+      "Arithmogriph": "Pending a primary definition establishing a distinct type or true synonym; not counted as a new answer merely from a list entry."
+    },
+    "aliasMerges": {
+      "KenKen": [
+        "KenDoku",
+        "Calcudoku"
+      ],
+      "Hidato": [
+        "Hidoku"
+      ],
+      "Alphametic": [
+        "Word arithmetic"
+      ]
+    },
+    "renameRepairs": {}
+  }
+}
