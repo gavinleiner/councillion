@@ -1,0 +1,121 @@
+{
+  "houseplants": {
+    "aliasMerges": {
+      "Sempervivum": [
+        "Hens and Chicks"
+      ]
+    },
+    "renameRepairs": {},
+    "holds": {},
+    "notes": [
+      "Full public NCSU filtered inventory retained. Source metadata errors, aggregated genus aliases and unproven compound cultivars are explicitly held.",
+      "Shared public names are separate name records, never identity-merges of unrelated taxa.",
+      "Only real documented names are used. No invented initials or wholesale mixed-genus expansion."
+    ],
+    "displayNames": {
+      "Epipremnum aureum": "Pothos",
+      "Dracaena trifasciata": "Snake plant",
+      "Chlorophytum comosum": "Spider plant",
+      "Spathiphyllum": "Peace lily",
+      "Zamioculcas zamiifolia": "ZZ plant",
+      "Ficus lyrata": "Fiddle-leaf fig",
+      "Ficus elastica": "Rubber plant",
+      "Crassula ovata": "Jade plant",
+      "Pilea peperomioides": "Chinese money plant",
+      "Maranta leuconeura": "Prayer plant",
+      "Dieffenbachia seguine": "Dumb cane",
+      "Aglaonema": "Chinese evergreen",
+      "Streptocarpus ionanthus": "African violet",
+      "Phalaenopsis": "Moth orchid",
+      "Nephrolepis exaltata": "Boston fern",
+      "Asplenium nidus": "Bird's nest fern",
+      "Chamaedorea elegans": "Parlor palm",
+      "Chrysalidocarpus lutescens": "Areca palm",
+      "Dracaena sanderiana": "Lucky bamboo",
+      "Schlumbergera x buckleyi": "Christmas cactus",
+      "Curio rowleyanus": "String of pearls",
+      "Codiaeum variegatum": "Croton",
+      "Ficus benjamina": "Weeping fig",
+      "Monstera deliciosa": "Swiss cheese plant",
+      "Beaucarnea recurvata": "Ponytail palm"
+    }
+  },
+  "succulent-kinds": {
+    "aliasMerges": {
+      "Sempervivum": [
+        "Hens and Chicks"
+      ]
+    },
+    "renameRepairs": {},
+    "holds": {},
+    "notes": [
+      "Full public NCSU filtered inventory retained. Source metadata errors, aggregated genus aliases and unproven compound cultivars are explicitly held.",
+      "Shared public names are separate name records, never identity-merges of unrelated taxa.",
+      "Only real documented names are used. No invented initials or wholesale mixed-genus expansion."
+    ],
+    "displayNames": {
+      "Crassula ovata": "Jade plant",
+      "Opuntia": "Prickly pear",
+      "Carnegiea gigantea": "Saguaro",
+      "Kroenleinia grusonii": "Golden barrel cactus",
+      "Schlumbergera x buckleyi": "Christmas cactus",
+      "Curio rowleyanus": "String of pearls",
+      "Sempervivum": "Hens and chicks",
+      "Portulacaria afra": "Elephant bush",
+      "Euphorbia obesa": "Baseball plant",
+      "Faucaria tigrina": "Tiger jaws",
+      "Fenestraria rhopalophylla": "Baby toes",
+      "Cotyledon tomentosa": "Bear's paw",
+      "Pleiospilos nelii": "Split rock",
+      "Pachypodium lamerei": "Madagascar palm",
+      "Beaucarnea recurvata": "Ponytail palm"
+    }
+  },
+  "carnivorous-plant-kinds": {
+    "holds": {},
+    "renameRepairs": {},
+    "aliasMerges": {
+      "Dionaea muscipula": [
+        "Dionaea"
+      ],
+      "Darlingtonia californica": [
+        "Darlingtonia"
+      ],
+      "Cephalotus follicularis": [
+        "Cephalotus"
+      ],
+      "Aldrovanda vesiculosa": [
+        "Aldrovanda"
+      ],
+      "Drosophyllum lusitanicum": [
+        "Drosophyllum"
+      ],
+      "Triphyophyllum peltatum": [
+        "Triphyophyllum"
+      ]
+    },
+    "notes": [
+      "ICPS accepted names are not a blanket carnivory whitelist. Excluded botanical genera and doubtful/unpublished names are held.",
+      "Byblis/Roridula and bromeliad membership are supported by later research; older non-carnivorous/proto-carnivorous comments are not applied as current blanket exclusions.",
+      "Cultivar names remain fully qualified; Magikarp alone remains a Pokemon, not a plant alias.",
+      "Only exact one-target botanical synonym records are reconciled; no inferred genus initials, hybrid formula aliases or trait inheritance across mixed genera."
+    ],
+    "displayNames": {
+      "Dionaea muscipula": "Venus flytrap",
+      "Drosera": "Sundew",
+      "Pinguicula": "Butterwort",
+      "Utricularia": "Bladderwort",
+      "Darlingtonia californica": "Cobra lily",
+      "Aldrovanda vesiculosa": "Waterwheel plant",
+      "Cephalotus follicularis": "Australian pitcher plant",
+      "Drosophyllum lusitanicum": "Dewy pine",
+      "Byblis": "Rainbow plant",
+      "Heliamphora": "Sun pitcher",
+      "Nepenthes": "Tropical pitcher plant",
+      "Sarracenia": "North American pitcher plant",
+      "Drosera capensis": "Cape sundew",
+      "Drosera rotundifolia": "Round-leaved sundew",
+      "Sarracenia purpurea": "Purple pitcher plant"
+    }
+  }
+}

@@ -461,3 +461,6 @@ id,subject,question,canonical_answers
 "authored-electricity-generation-methods","science","Name a source, device or process that can generate electricity.","94"
 "authored-radiation-forms","science","Name a type of electromagnetic or particle radiation, or a named spectrum band.","88"
 "authored-puzzle-kinds","everyday","Name a type of puzzle or brain teaser.","233"
+"authored-houseplants","nature","Name a plant commonly grown as a houseplant.","1525"
+"authored-succulent-kinds","nature","Name a succulent plant.","377"
+"authored-carnivorous-plant-kinds","nature","Name a carnivorous plant.","1438"

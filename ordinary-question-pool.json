@@ -1,6 +1,6 @@
 {
-  "build": "4a4d44c8e2c87ebf",
-  "count": 462,
+  "build": "6b80f976e29947b3",
+  "count": 465,
   "categories": [
     {
       "id": "group-q001",
@@ -3697,6 +3697,30 @@
       "group": "authored-whole-practical-science",
       "answerCount": 233,
       "scope": "Established puzzle forms and named puzzle families count: word, logic, number, visual, mathematical and mechanical puzzles, including actual named physical twisty-puzzle forms. A normal competitive game or a puzzle publisher, isolated article title, or generic software game title is not automatically a puzzle form."
+    },
+    {
+      "id": "authored-houseplants",
+      "prompt": "Name a plant commonly grown as a houseplant.",
+      "family": "nature",
+      "group": "authored-whole-garden-plants",
+      "answerCount": 1525,
+      "scope": "Actual documented indoor houseplants, named groups/species/cultivars count. Do not accept every wild plant merely because it can temporarily fit in a pot."
+    },
+    {
+      "id": "authored-succulent-kinds",
+      "prompt": "Name a succulent plant.",
+      "family": "nature",
+      "group": "authored-whole-garden-plants",
+      "answerCount": 377,
+      "scope": "Recognized succulent plants and documented public groups/species/cultivars count. Do not automatically include all descendants of a mixed succulent/non-succulent genus."
+    },
+    {
+      "id": "authored-carnivorous-plant-kinds",
+      "prompt": "Name a carnivorous plant.",
+      "family": "nature",
+      "group": "authored-whole-garden-plants",
+      "answerCount": 1438,
+      "scope": "Documented carnivorous plants and recognized named groups count. A whole mixed genus must not bring in non-carnivorous species. Fictional man-eating plants do not count. Cultivar epithets need their plant/genus qualification. Registered and independently documented cultivated forms count; a nomenclatural status alone does not decide real horticultural use."
     }
   ]
 }
