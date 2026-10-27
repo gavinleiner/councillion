@@ -469,3 +469,4 @@ id,subject,question,canonical_answers
 "authored-frozen-dessert-brands","food","Name an ice-cream or frozen-dessert brand.","320"
 "authored-fairy-tales","culture","Name a fairy tale or traditional folk tale.","1856"
 "authored-literary-genres-forms","culture","Name a literary genre or a form of writing.","421"
+"authored-operating-systems","science","Name a computer or device operating system.","980"

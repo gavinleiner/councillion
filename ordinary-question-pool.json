@@ -1,6 +1,6 @@
 {
-  "build": "87dc633fb701380f",
-  "count": 470,
+  "build": "1db69e17afeee531",
+  "count": 471,
   "categories": [
     {
       "id": "group-q001",
@@ -3761,6 +3761,14 @@
       "group": "authored-whole-story-forms",
       "answerCount": 421,
       "scope": "Real named story/literary genres, nonfiction and reference forms, and established poem/verse forms count. Qualified subgenres keep their meaningful words. Bare academic subjects, individual book titles, people, physical book parts, musical or film-only categories and unsupported source labels do not automatically qualify."
+    },
+    {
+      "id": "authored-operating-systems",
+      "prompt": "Name a computer or device operating system.",
+      "family": "science",
+      "group": "authored-whole-operating-systems",
+      "answerCount": 980,
+      "scope": "Named actual current/historical operating systems, public OS families and documented Linux distributions count. Versions may expand answers but never prompts. Vendor, hardware, shell, desktop environment, app and proposed-only marketing labels are not automatically operating systems."
     }
   ]
 }

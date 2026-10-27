@@ -25,6 +25,7 @@ export function questionFormat(pack){
   'authored-whole-peppers-messengers':'Everyday science and food',
   'authored-whole-frozen-brands':'Frozen-dessert brands',
   'authored-whole-story-forms':'Stories and writing',
+  'authored-whole-operating-systems':'Operating systems',
   'authored-whole-color-inventory':'Colors & shades',
   'authored-whole-roster':'Characters & rosters',
   'authored-whole-taxonomic-group':'Animal kinds',

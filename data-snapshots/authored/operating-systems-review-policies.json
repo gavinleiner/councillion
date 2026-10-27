@@ -1,0 +1,249 @@
+{
+  "operating-systems": {
+    "holds": {},
+    "renameRepairs": {
+      "MiNT": "Atari MiNT",
+      "Windows 1.0": "Windows version 1.0"
+    },
+    "aliasMerges": {
+      "macOS": [
+        "Mac OS X",
+        "OS X"
+      ],
+      "iOS": [
+        "iPhone OS"
+      ],
+      "ChromeOS": [
+        "Chrome OS"
+      ],
+      "ChromiumOS": [
+        "Chromium OS"
+      ],
+      "Plan 9": [
+        "Plan 9 from Bell Labs"
+      ],
+      "Fuchsia": [
+        "Google Fuchsia"
+      ],
+      "AROS": [
+        "AROS Research Operating System",
+        "Amiga Research Operating System"
+      ],
+      "CTOS": [
+        "Convergent Technologies Operating System"
+      ],
+      "Michigan Terminal System": [
+        "MTS"
+      ],
+      "OpenVMS": [
+        "VMS"
+      ],
+      "Tru64 UNIX": [
+        "Digital UNIX",
+        "DEC OSF/1"
+      ],
+      "Symbian": [
+        "Symbian OS",
+        "Symbian platform"
+      ],
+      "Stratus VOS": [
+        "VOS"
+      ],
+      "Commodore GEOS": [
+        "GEOS"
+      ],
+      "Red Hat Enterprise Linux": [
+        "RHEL"
+      ],
+      "Gentoo": [
+        "Gentoo Linux"
+      ],
+      "Slackware": [
+        "Slackware Linux"
+      ],
+      "Tails": [
+        "The Amnesic Incognito Live System"
+      ],
+      "Pop!_OS": [
+        "Pop OS"
+      ],
+      "elementary OS": [
+        "Elementary OS"
+      ],
+      "Zorin OS": [
+        "Zorin"
+      ],
+      "Arch Linux": [
+        "Arch"
+      ],
+      "Fedora": [
+        "Fedora Linux"
+      ],
+      "Manjaro": [
+        "Manjaro Linux"
+      ],
+      "Kali Linux": [
+        "Kali"
+      ],
+      "Linux Mint": [
+        "Mint"
+      ],
+      "PC DOS": [
+        "IBM DOS"
+      ],
+      "OS/2": [
+        "OS2"
+      ],
+      "Windows 11": [
+        "Windows 11 Home",
+        "Windows 11 Pro",
+        "Windows 11 Enterprise",
+        "Windows 11 Education",
+        "Windows 11 Enterprise LTSC"
+      ],
+      "Windows 10": [
+        "Windows 10 Home",
+        "Windows 10 Pro",
+        "Windows 10 Enterprise",
+        "Windows 10 Education",
+        "Windows 10 Enterprise LTSC"
+      ],
+      "Windows ME": [
+        "Windows Millennium Edition"
+      ],
+      "Windows 3.1": [
+        "Windows 3.1x"
+      ],
+      "Azure Linux": [
+        "CBL-Mariner"
+      ],
+      "Junos OS": [
+        "JunOS"
+      ],
+      "NonStop OS": [
+        "Guardian",
+        "NonStop Kernel"
+      ],
+      "MPE": [
+        "HP Multi-Programming Executive",
+        "MPE/XL",
+        "MPE/iX"
+      ],
+      "IBM i": [
+        "OS/400",
+        "i5/OS"
+      ],
+      "BSD": [
+        "Berkeley Software Distribution"
+      ],
+      "TrueOS": [
+        "PC-BSD"
+      ],
+      "SCO OpenServer": [
+        "SCO Unix",
+        "SCO UNIX"
+      ],
+      "Oberon": [
+        "Oberon (operating system)"
+      ],
+      "Ésope": [
+        "Ésope (operating system)"
+      ],
+      "Atari MiNT": [
+        "FreeMiNT"
+      ],
+      "Maemo": [
+        "Mæmo"
+      ],
+      "Ångström": [
+        "Ångström distribution"
+      ],
+      "PEN/GEOS": [
+        "Pen/GEOS"
+      ],
+      "Novell DOS": [
+        "Novell DOS 7"
+      ],
+      "OpenDOS": [
+        "Caldera OpenDOS"
+      ],
+      "MenuetOS": [
+        "Menuet OS"
+      ],
+      "FreeRTOS": [
+        "Free RTOS"
+      ],
+      "OpenRTOS": [
+        "Open RTOS"
+      ],
+      "SafeRTOS": [
+        "Safe RTOS"
+      ],
+      "Micrium μC/OS-II": [
+        "μC/OS-II",
+        "uC/OS-II",
+        "MicroC/OS-II"
+      ],
+      "Micrium μC/OS-III": [
+        "μC/OS-III",
+        "uC/OS-III",
+        "MicroC/OS-III"
+      ],
+      "μ-velOSity": [
+        "u-velOSity"
+      ]
+    },
+    "displayNames": {
+      "GooglebookOS": "Googlebook OS"
+    },
+    "aliasHolds": {},
+    "foldedLiteralAliases": {
+      "risc/os": "MIPS RISC/os"
+    },
+    "normalizedVariantReviews": {
+      "unix": [
+        "Unix",
+        "UNIX"
+      ],
+      "osiv": [
+        "OS/IV",
+        "OS-IV"
+      ],
+      "googlebookos": [
+        "Googlebook OS",
+        "GooglebookOS"
+      ],
+      "bada": [
+        "Bada",
+        "bada"
+      ],
+      "scounix": [
+        "SCO UNIX",
+        "SCO Unix"
+      ],
+      "minix": [
+        "MINIX",
+        "Minix"
+      ]
+    },
+    "literalAliases": {
+      "MiNT": "Atari MiNT",
+      "RISC/os": "MIPS RISC/os",
+      "RISC/OS": "MIPS RISC/os",
+      "risc/os": "MIPS RISC/os",
+      "IOS": "Cisco IOS",
+      "EOS": "ETA EOS",
+      "Mac OS": "Classic Mac OS",
+      "Android 1.0": "Android version 1.0",
+      "Android1.0": "Android version 1.0",
+      "Android 1.1": "Android version 1.1",
+      "Android1.1": "Android version 1.1",
+      "Android 1.5": "Android Cupcake",
+      "Android1.5": "Android Cupcake",
+      "Android 1.6": "Android Donut",
+      "Android1.6": "Android Donut",
+      "Windows 1.0": "Windows version 1.0",
+      "Windows1.0": "Windows version 1.0"
+    }
+  }
+}

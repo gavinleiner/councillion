@@ -53,6 +53,14 @@ def load_questions():
                 assert norm(familiar) in names,(q['id'],'missing independently specified familiar answer',familiar)
             for wrong in q['exclude']:
                 assert norm(wrong) not in names,(q['id'],'known false answer',wrong)
+            for map_name in ['literalAliases','foldedLiteralAliases']:
+                if not q.get(map_name):continue
+                assert isinstance(q[map_name],dict), (q['id'],'public names must be a map',map_name)
+                for literal,target in q[map_name].items():
+                    assert isinstance(literal,str) and literal.strip()==literal and 0<len(literal)<=256, (q['id'],'invalid public name',map_name)
+                    assert norm(target) in canon and literal not in q['exclude'], (q['id'],'invalid public identity target',literal,target)
+                    if map_name=='foldedLiteralAliases':assert literal==literal.lower(), (q['id'],'folded public spelling must be lowercase',literal)
+            if 'preserveNumericTokens' in q:assert isinstance(q['preserveNumericTokens'],bool), (q['id'],'numeric-token opt-in must be boolean')
             q['rows']=rows
             result.append(q)
     assert len(result)==len({q['id'] for q in result}),'Duplicate question ID'
@@ -91,6 +99,9 @@ def main():
                     dailyEligible=True,partyEligible=True,mixed=True,ranking='editorial-familiarity-v1',
                     naturalFinite=q.get('naturalFinite',False),
                     identityHash=digest('\n'.join(sorted(norm(r[0])for r in q['rows'])).encode()))
+        for map_name in ['literalAliases','foldedLiteralAliases']:
+            if q.get(map_name):meta[map_name]=q[map_name]
+        if q.get('preserveNumericTokens'):meta['preserveNumericTokens']=True
         metadata.append(meta);manifest.append({**meta,'sha256':sha,'familiar':q['familiar'],'exclude':q['exclude'],
                                              'rationale':q['rationale'],'batch':q['batch']})
         target=OUT/filename

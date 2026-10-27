@@ -1,0 +1,7 @@
+{
+  "questionCount": 1,
+  "sourceRows": 1227,
+  "heldRows": 108,
+  "scope": "Named actual current/historical operating systems, public OS families and documented Linux distributions count. Versions may expand answers but never prompts. Vendor, hardware, shell, desktop environment, app and proposed-only marketing labels are not automatically operating systems.",
+  "limitations": "A complete captured source list plus distro tables and primary common-name supplements. Role review and publisher checks, not source membership alone, determine eligibility. No universal exhaustive-all-systems claim."
+}

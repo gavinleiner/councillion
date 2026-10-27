@@ -1,6 +1,6 @@
 # Five-thousand-question expansion: development checkpoint
 
-The requested release is unfinished. Production still has 227 admitted questions. Development has 470: the 227 baseline plus 243 new admissions. It needs 4,530 more genuinely distinct questions. Answer rows, raw entities, draft inventories and reworded recipes do not count as questions. The final section is the latest checkpoint; preceding dated sections retain the development history.
+The requested release is unfinished. Production still has 227 admitted questions. Development has 471: the 227 baseline plus 244 new admissions. It needs 4,529 more genuinely distinct questions. Answer rows, raw entities, draft inventories and reworded recipes do not count as questions. The final section is the latest checkpoint; preceding dated sections retain the development history.
 
 ## Admission standard
 
@@ -208,3 +208,47 @@ world41,everyday47; all remain8–15%. Frozen sample family counts are11,13,12,
 order. The release gate correctly fails4,530 remaining admissions. Production
 remains227; no expansion publication or completion email has occurred. DraftPR31
 and the existing quiet heartbeat continue the unfinished authorized work.
+
+## Whole operating-system checkpoint · 471 questions
+
+One new whole familiar science subject is admitted in development: operating
+systems, with980canonical answers and66 unchanged original familiar probes.
+Those980systems, version names and distributions are answers inside ONE question.
+Full captured OS main sections and actual distro-name tables retain their context;
+108source rows are held for role/identity/eligibility. Vendor and hardware names,
+ordinary GUI/app environments, frameworks and unsupported proposal labels are not
+automatically systems. Actual primary publisher names and published version tables
+fill familiar roots and real modern/historical releases; ranges/API/build numbers
+are not fabricated OS versions. A real hobby project such as osakaOS remains valid,
+while its source link to AzumangaDaioh does not turn an anime into an OS answer.
+CMU's implemented Mach system, actual SculptOS and T2Linux are independently proven;
+framework labels alone do not establish those systems. Continuing communityRaspbian
+is not globally merged into everyRaspberryPiOS branch.
+
+The authored metadata build now carries explicit public-spelling exceptions.
+RISCOS/MIPS RISC/os, iOS/CiscoIOS, LinuxMint/AtariMiNT, classicMacOS/modernmacOS,
+and EOS versus/e/OS retain different identities. Slash-specific RISC/os spelling
+remains case-insensitive. This OS pack opts into whole numeric-token exact matching:
+Windows1.0 is different fromWindows10, and Android1.0/1.1/1.5/1.6 are different
+from10/11/15/16. Public dotted names work regardless of letter case; plausible
+misspellings still receive post-submit confirmation. Fabricated Windows9.5 cannot
+win Windows95's points by dropping a decimal. Other packs retain existing
+punctuation behavior. Source case/punctuation joins are explicitly reviewed rather
+than silently merged by normalizer collisions. No generated initials are added.
+
+Full build and all335tests pass, checking8,854familiar inputs and921wrong boundaries.
+Nine focused checks cover source roles, name/number identities, exact aliases and
+Puffer engine scoring/duplicate rejection. All40actual local-game cases pass:
+29exact display/rarity cases,8rejections and3confirmations only afterEnter. General
+browser QA passes unchanged-version unseen-queue migration/persistence, independent
+sharedDaily, library/sample counts,laptop1366x768 andmobile390x844. All external
+browser requests were blocked. See OPERATING-SYSTEMS-SOURCE-ATTRIBUTION.md and the
+frozen source/identity/role/receipt ledgers for access and factual limits.
+
+Normal families:gaming64,sports67,culture45,music50,food56,nature54,science47,
+world41,everyday47, all8–15%. The fixed sample seed remains20261025-reviewed-standard;
+sample families areculture12,everyday9,food10,gaming12,music9,nature11,science13,
+sports11,world13.271authored candidates contain244admissions and27held entries.
+The final release gate correctly fails4,529remaining questions. Production remains
+227; no smaller release or completed-expansion email has been sent. The quiet
+heartbeat continues the unfinished authorized work.

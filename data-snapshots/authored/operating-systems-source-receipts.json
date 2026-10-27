@@ -1,0 +1,640 @@
+[
+  {
+    "sourceFile": "original-source-manifest.json",
+    "key": "operating-systems",
+    "url": "https://en.wikipedia.org/wiki/List_of_operating_systems",
+    "sha256": "f247334123b886ad2e6a31865278b9f477d05d66c403b12ebcf26177adc26e05",
+    "bytes": 537108,
+    "status": "captured, not admitted"
+  },
+  {
+    "sourceFile": "original-source-manifest.json",
+    "key": "linux-distributions",
+    "url": "https://en.wikipedia.org/wiki/List_of_Linux_distributions",
+    "sha256": "6e54c075a962ade3edba0f040ecb23b97355e6e777a8ac9029076f7093b5daa1",
+    "bytes": 683392,
+    "status": "captured, not admitted"
+  },
+  {
+    "sourceFile": "primary-receipts.json",
+    "key": "windows",
+    "url": "https://learn.microsoft.com/en-us/windows/release-health/",
+    "finalUrl": "https://learn.microsoft.com/en-us/windows/release-health/",
+    "sha256": "8c0934b7f10c73665b8cd95481aef22ec89ea4b6d292d2fadb10a37a0fb7fe9b",
+    "bytes": 49889,
+    "status": 200,
+    "access": "captured-public-response-not-automatically-eligible"
+  },
+  {
+    "sourceFile": "primary-receipts.json",
+    "key": "apple-platforms",
+    "url": "https://support.apple.com/guide/security/welcome/web",
+    "finalUrl": "https://support.apple.com/guide/security/welcome/web",
+    "sha256": "5233e8a7185890d07ac9c2282740d329320f18c6cc7bd57cf1575c60993295c3",
+    "bytes": 725837,
+    "status": 200,
+    "access": "captured-public-response-not-automatically-eligible"
+  },
+  {
+    "sourceFile": "primary-receipts.json",
+    "key": "apple-versions",
+    "url": "https://support.apple.com/en-us/102662",
+    "finalUrl": "https://support.apple.com/en-us/102662",
+    "sha256": "0d358af35e7d2e2f3cc0897a7cf88d2276bee116c56eb51251f4628b0c1f2b99",
+    "bytes": 173706,
+    "status": 200,
+    "access": "captured-public-response-not-automatically-eligible"
+  },
+  {
+    "sourceFile": "primary-receipts.json",
+    "key": "android",
+    "url": "https://source.android.com/docs/core/architecture",
+    "finalUrl": "https://source.android.com/docs/core/architecture",
+    "sha256": "c0ff55277602fab4c214bba4e923b1c1d3d327ec07e19b5cca1e80c3656aa295",
+    "bytes": 190917,
+    "status": 200,
+    "access": "captured-public-response-not-automatically-eligible"
+  },
+  {
+    "sourceFile": "primary-receipts.json",
+    "key": "chromeos",
+    "url": "https://www.chromium.org/chromium-os/",
+    "finalUrl": "https://www.chromium.org/chromium-os/",
+    "sha256": "988b0ec91efeba2c06b83724ebd6366a655e2904da2b030c9fba33dfa256835f",
+    "bytes": 10247,
+    "status": 200,
+    "access": "captured-public-response-not-automatically-eligible"
+  },
+  {
+    "sourceFile": "primary-receipts.json",
+    "key": "ubuntu",
+    "url": "https://ubuntu.com/",
+    "finalUrl": "https://ubuntu.com/",
+    "sha256": "4277de3a83f00e31ed26ba92228a8fdd1bf78c1c692c0048fb4cc978bdcf8ab2",
+    "bytes": 188375,
+    "status": 200,
+    "access": "captured-public-response-not-automatically-eligible"
+  },
+  {
+    "sourceFile": "primary-receipts.json",
+    "key": "debian",
+    "url": "https://www.debian.org/",
+    "finalUrl": "https://www.debian.org/",
+    "sha256": "ef9d44c7325d97d9a36c3c3d7d490f7f44be62601479904bdc4d8940c78a9297",
+    "bytes": 15864,
+    "status": 200,
+    "access": "captured-public-response-not-automatically-eligible"
+  },
+  {
+    "sourceFile": "primary-receipts.json",
+    "key": "fedora",
+    "url": "https://fedoraproject.org/",
+    "finalUrl": "https://fedoraproject.org/",
+    "sha256": "7a8994c25eb210555456c9d18596ab99b3b131c1e80855aa7f96f18891de2dc9",
+    "bytes": 261695,
+    "status": 200,
+    "access": "captured-public-response-not-automatically-eligible"
+  },
+  {
+    "sourceFile": "primary-receipts.json",
+    "key": "mint",
+    "url": "https://linuxmint.com/",
+    "finalUrl": "https://linuxmint.com/",
+    "sha256": "b51f8695b668d6750ab104e6e24957470c3e9b89225164a9f0d4b5b58b2be5da",
+    "bytes": 38491,
+    "status": 200,
+    "access": "captured-public-response-not-automatically-eligible"
+  },
+  {
+    "sourceFile": "primary-receipts.json",
+    "key": "arch",
+    "url": "https://archlinux.org/",
+    "finalUrl": "https://archlinux.org/",
+    "sha256": "b99e214031d39f17d9442bffef95cafac92f1f84368e8e41ac876fd13a2b0d36",
+    "bytes": 24799,
+    "status": 200,
+    "access": "captured-public-response-not-automatically-eligible"
+  },
+  {
+    "sourceFile": "primary-receipts.json",
+    "key": "kali",
+    "url": "https://www.kali.org/",
+    "error": "HTTP Error 403: Forbidden",
+    "status": "unavailable-no-retry"
+  },
+  {
+    "sourceFile": "primary-receipts.json",
+    "key": "rhel",
+    "url": "https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux",
+    "finalUrl": "https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux",
+    "sha256": "537d08d61eeca05ae92e4e256678f8dc33548134a83ef9acda68a94ef6b6c8e6",
+    "bytes": 859595,
+    "status": 200,
+    "access": "captured-public-response-not-automatically-eligible"
+  },
+  {
+    "sourceFile": "primary-receipts.json",
+    "key": "centos",
+    "url": "https://www.centos.org/",
+    "finalUrl": "https://www.centos.org/",
+    "sha256": "9b68100101ea22302253f1db6a887cb53ee063a0557b389b251f1bab410d5a47",
+    "bytes": 42421,
+    "status": 200,
+    "access": "captured-public-response-not-automatically-eligible"
+  },
+  {
+    "sourceFile": "primary-receipts.json",
+    "key": "opensuse",
+    "url": "https://www.opensuse.org/",
+    "finalUrl": "https://www.opensuse.org/",
+    "sha256": "41baa1b238296ebce9503b6d0345ce0c2db862d5dfde76b978f391f35c1185bd",
+    "bytes": 63766,
+    "status": 200,
+    "access": "captured-public-response-not-automatically-eligible"
+  },
+  {
+    "sourceFile": "primary-receipts.json",
+    "key": "gentoo",
+    "url": "https://www.gentoo.org/",
+    "finalUrl": "https://www.gentoo.org/",
+    "sha256": "281f05880c5210506215ad93e37380e935db79fabece1ffe71771155315aad60",
+    "bytes": 25155,
+    "status": 200,
+    "access": "captured-public-response-not-automatically-eligible"
+  },
+  {
+    "sourceFile": "primary-receipts.json",
+    "key": "slackware",
+    "url": "http://www.slackware.com/",
+    "finalUrl": "http://www.slackware.com/",
+    "sha256": "4d6f8a82b72f5dec18d4724f49d1adc9452026113b1b5dcb1e8f2e963d6fc478",
+    "bytes": 6281,
+    "status": 200,
+    "access": "captured-public-response-not-automatically-eligible"
+  },
+  {
+    "sourceFile": "primary-receipts.json",
+    "key": "manjaro",
+    "url": "https://manjaro.org/",
+    "error": "HTTP Error 403: Forbidden",
+    "status": "unavailable-no-retry"
+  },
+  {
+    "sourceFile": "primary-receipts.json",
+    "key": "popos",
+    "url": "https://system76.com/pop/",
+    "finalUrl": "https://system76.com/pop",
+    "sha256": "fe20e62e71ff5db95d4549d8d357564f6cf3d37084f610103d34aedcdbd7ac5f",
+    "bytes": 195545,
+    "status": 200,
+    "access": "captured-public-response-not-automatically-eligible"
+  },
+  {
+    "sourceFile": "primary-receipts.json",
+    "key": "elementary",
+    "url": "https://elementary.io/",
+    "error": "HTTP Error 403: Forbidden",
+    "status": "unavailable-no-retry"
+  },
+  {
+    "sourceFile": "primary-receipts.json",
+    "key": "zorin",
+    "url": "https://zorin.com/os/",
+    "finalUrl": "https://zorin.com/os/",
+    "sha256": "e6ecb6977571f4e1ce51eb61124a47d88589042be8e59578f7b7c13c4fb78ba4",
+    "bytes": 45105,
+    "status": 200,
+    "access": "captured-public-response-not-automatically-eligible"
+  },
+  {
+    "sourceFile": "primary-receipts.json",
+    "key": "raspberrypi",
+    "url": "https://www.raspberrypi.com/software/operating-systems/",
+    "error": "HTTP Error 403: Forbidden",
+    "status": "unavailable-no-retry"
+  },
+  {
+    "sourceFile": "primary-receipts.json",
+    "key": "raspbian",
+    "url": "https://www.raspbian.org/",
+    "finalUrl": "https://www.raspbian.org/",
+    "sha256": "ba64a6c6f1a078b5833b302b60153bfe6e79feb084b3ec63c7ccec315d750db0",
+    "bytes": 7269,
+    "status": 200,
+    "access": "captured-public-response-not-automatically-eligible"
+  },
+  {
+    "sourceFile": "primary-receipts.json",
+    "key": "steamos",
+    "url": "https://store.steampowered.com/steamos",
+    "finalUrl": "https://store.steampowered.com/steamos",
+    "sha256": "4de9896b56ac6098752aec946b0add026bd2ce95435c0b874df4528043e7c3d7",
+    "bytes": 326372,
+    "status": 200,
+    "access": "captured-public-response-not-automatically-eligible"
+  },
+  {
+    "sourceFile": "primary-receipts.json",
+    "key": "freebsd",
+    "url": "https://www.freebsd.org/",
+    "finalUrl": "https://www.freebsd.org/",
+    "sha256": "935a3b1b843491d95400f28c977ae7dd7502d3a256f5da8ddaf66a21ac784412",
+    "bytes": 22060,
+    "status": 200,
+    "access": "captured-public-response-not-automatically-eligible"
+  },
+  {
+    "sourceFile": "primary-receipts.json",
+    "key": "openbsd",
+    "url": "https://www.openbsd.org/",
+    "finalUrl": "https://www.openbsd.org/",
+    "sha256": "55e1b9d199f87d9d457601045614a18857ddd0c9b0c50a110a5244f466b6f341",
+    "bytes": 3622,
+    "status": 200,
+    "access": "captured-public-response-not-automatically-eligible"
+  },
+  {
+    "sourceFile": "primary-receipts.json",
+    "key": "netbsd",
+    "url": "https://www.netbsd.org/",
+    "finalUrl": "https://www.netbsd.org/",
+    "sha256": "d7c197604760aa03730371092b03a42ffec1034694219128c7569e6394002f7e",
+    "bytes": 12582,
+    "status": 200,
+    "access": "captured-public-response-not-automatically-eligible"
+  },
+  {
+    "sourceFile": "primary-receipts.json",
+    "key": "dragonfly",
+    "url": "https://www.dragonflybsd.org/",
+    "finalUrl": "https://www.dragonflybsd.org/",
+    "sha256": "c73b7be441a706e5acec55f90765f5648e7e0b3420e7bafc133cc169f17167b4",
+    "bytes": 10840,
+    "status": 200,
+    "access": "captured-public-response-not-automatically-eligible"
+  },
+  {
+    "sourceFile": "primary-receipts.json",
+    "key": "solaris",
+    "url": "https://www.oracle.com/solaris/solaris11/",
+    "finalUrl": "https://www.oracle.com/solaris/solaris11/",
+    "sha256": "8efb627dbc9ee7a3cd879e7ad44bb25582f57b3da5c99128d6ab7029dc027b01",
+    "bytes": 48658,
+    "status": 200,
+    "access": "captured-public-response-not-automatically-eligible"
+  },
+  {
+    "sourceFile": "primary-receipts.json",
+    "key": "msdos",
+    "url": "https://github.com/microsoft/MS-DOS",
+    "finalUrl": "https://github.com/microsoft/MS-DOS",
+    "sha256": "80e763cc501da2eabee02bf0904ff534db3f507999e033e5b2ee2878baeb67fc",
+    "bytes": 271026,
+    "status": 200,
+    "access": "captured-public-response-not-automatically-eligible"
+  },
+  {
+    "sourceFile": "primary-receipts.json",
+    "key": "freedos",
+    "url": "https://www.freedos.org/",
+    "finalUrl": "https://www.freedos.org/",
+    "sha256": "629c42f910b3371215c10e6bb2816f8f7c19436db7971d7d181e0b199d9ea707",
+    "bytes": 10628,
+    "status": 200,
+    "access": "captured-public-response-not-automatically-eligible"
+  },
+  {
+    "sourceFile": "primary-receipts.json",
+    "key": "os2",
+    "url": "https://www.ibm.com/history/os2",
+    "error": "HTTP Error 404: Not Found",
+    "status": "unavailable-no-retry"
+  },
+  {
+    "sourceFile": "primary-receipts.json",
+    "key": "haiku",
+    "url": "https://www.haiku-os.org/about/",
+    "finalUrl": "https://www.haiku-os.org/about/",
+    "sha256": "a48aa956b6d0812434d597e580489001bea968c657f3297e2fa18a68d386496e",
+    "bytes": 7851,
+    "status": 200,
+    "access": "captured-public-response-not-automatically-eligible"
+  },
+  {
+    "sourceFile": "primary-receipts.json",
+    "key": "amiga",
+    "url": "https://www.amigaos.net/",
+    "finalUrl": "https://www.amigaos.net/",
+    "sha256": "339efbc9696ff0207921ad9e09da4c9e38008eea7629eafe071d1854a50d2369",
+    "bytes": 44420,
+    "status": 200,
+    "access": "captured-public-response-not-automatically-eligible"
+  },
+  {
+    "sourceFile": "primary-receipts.json",
+    "key": "riscos",
+    "url": "https://www.riscosopen.org/content/",
+    "finalUrl": "https://www.riscosopen.org/content/",
+    "sha256": "e51b1cab5cfe3282f3e36a8a7685557d6184faeac7241c1178c09138523c4b7f",
+    "bytes": 12654,
+    "status": 200,
+    "access": "captured-public-response-not-automatically-eligible"
+  },
+  {
+    "sourceFile": "primary-receipts.json",
+    "key": "plan9",
+    "url": "https://9p.io/plan9/",
+    "finalUrl": "https://9p.io/plan9/",
+    "sha256": "70c2b73c452f33bb21c8dfe5260c3b46b43e8a1d7e030b75af7ace29b127b25e",
+    "bytes": 4907,
+    "status": 200,
+    "access": "captured-public-response-not-automatically-eligible"
+  },
+  {
+    "sourceFile": "primary-receipts.json",
+    "key": "reactos",
+    "url": "https://reactos.org/",
+    "finalUrl": "https://reactos.org/",
+    "sha256": "f796507e2ef3175d0384e3d72bc043a5024138f8b6d13728fad2408966899ba4",
+    "bytes": 19323,
+    "status": 200,
+    "access": "captured-public-response-not-automatically-eligible"
+  },
+  {
+    "sourceFile": "primary-receipts.json",
+    "key": "templeos",
+    "url": "https://templeos.org/",
+    "finalUrl": "https://templeos.org/",
+    "sha256": "1fc7d8838b9f1b37bf16cf049fef00fe1f36f9efa06cc6e7077c9a1ac3845633",
+    "bytes": 6941,
+    "status": 200,
+    "access": "captured-public-response-not-automatically-eligible"
+  },
+  {
+    "sourceFile": "primary-receipts.json",
+    "key": "tails",
+    "url": "https://tails.net/",
+    "finalUrl": "https://tails.net/",
+    "sha256": "fd69866cc698c14738c38c16cdee758d6498d044f14f01504942596a464ec699",
+    "bytes": 15348,
+    "status": 200,
+    "access": "captured-public-response-not-automatically-eligible"
+  },
+  {
+    "sourceFile": "primary-receipts.json",
+    "key": "qubes",
+    "url": "https://www.qubes-os.org/",
+    "finalUrl": "https://www.qubes-os.org/",
+    "sha256": "33e726041147fb68564266bb8f6b58343533dd42c3954be875d297a188a23b40",
+    "bytes": 31072,
+    "status": 200,
+    "access": "captured-public-response-not-automatically-eligible"
+  },
+  {
+    "sourceFile": "primary-receipts.json",
+    "key": "nixos",
+    "url": "https://nixos.org/",
+    "finalUrl": "https://nixos.org/",
+    "sha256": "5bd243e427d4b143b2aec561925d3f9c389d22d49d63d41835ccbbe72716a932",
+    "bytes": 64218,
+    "status": 200,
+    "access": "captured-public-response-not-automatically-eligible"
+  },
+  {
+    "sourceFile": "primary-receipts.json",
+    "key": "alpine",
+    "url": "https://www.alpinelinux.org/",
+    "finalUrl": "https://www.alpinelinux.org/",
+    "sha256": "8df8ccf2830f98dd2528334a5696853af31ebd0e51681c77987acfe18c005a8f",
+    "bytes": 9129,
+    "status": 200,
+    "access": "captured-public-response-not-automatically-eligible"
+  },
+  {
+    "sourceFile": "primary-receipts.json",
+    "key": "lineage",
+    "url": "https://lineageos.org/",
+    "error": "HTTP Error 403: Forbidden",
+    "status": "unavailable-no-retry"
+  },
+  {
+    "sourceFile": "primary-receipts.json",
+    "key": "graphene",
+    "url": "https://grapheneos.org/",
+    "finalUrl": "https://grapheneos.org/",
+    "sha256": "2d4538364dc8e65bf3843fe8c8cacd29e2128520a84e34ab24525a94b3efe9a1",
+    "bytes": 6946,
+    "status": 200,
+    "access": "captured-public-response-not-automatically-eligible"
+  },
+  {
+    "sourceFile": "primary-receipts.json",
+    "key": "harmony",
+    "url": "https://developer.huawei.com/consumer/en/harmonyos/",
+    "error": "HTTP Error 404: Not Found",
+    "status": "unavailable-no-retry"
+  },
+  {
+    "sourceFile": "primary-receipts.json",
+    "key": "tizen",
+    "url": "https://www.tizen.org/",
+    "error": "HTTP Error 500: Internal Server Error",
+    "status": "unavailable-no-retry"
+  },
+  {
+    "sourceFile": "primary-receipts.json",
+    "key": "webos",
+    "url": "https://www.webosose.org/",
+    "finalUrl": "https://www.webosose.org/",
+    "sha256": "0f5edeeeafc4b20ed0187a0cd6d2edd2381c6684ab580592fcbdcfddb586d27c",
+    "bytes": 11010,
+    "status": 200,
+    "access": "captured-public-response-not-automatically-eligible"
+  },
+  {
+    "sourceFile": "primary-receipts.json",
+    "key": "kaios",
+    "url": "https://www.kaiostech.com/",
+    "finalUrl": "https://kaiostech.com/",
+    "sha256": "7a61e57d26440cb9e1f182a81a0c0f807aeb1fa8d679df583d8a0d9f02500829",
+    "bytes": 342202,
+    "status": 200,
+    "access": "captured-public-response-not-automatically-eligible"
+  },
+  {
+    "sourceFile": "primary-receipts.json",
+    "key": "unix",
+    "url": "https://www.opengroup.org/what-is-unix",
+    "error": "HTTP Error 404: Not Found",
+    "status": "unavailable-no-retry"
+  },
+  {
+    "sourceFile": "primary-receipts.json",
+    "key": "aix",
+    "url": "https://www.ibm.com/products/aix",
+    "finalUrl": "https://www.ibm.com/products/aix",
+    "sha256": "15313c750a39990bce7790955a3d5bf775fcd73dfce6730eacd4c44bcb9bf68e",
+    "bytes": 213721,
+    "status": 200,
+    "access": "captured-public-response-not-automatically-eligible"
+  },
+  {
+    "sourceFile": "primary-receipts.json",
+    "key": "hpux",
+    "url": "https://www.hpe.com/us/en/servers/hp-ux.html",
+    "error": "[Errno 60] Operation timed out",
+    "status": "unavailable-no-retry"
+  },
+  {
+    "sourceFile": "primary-receipts.json",
+    "key": "openvms",
+    "url": "https://vmssoftware.com/products/openvms/",
+    "finalUrl": "https://vmssoftware.com/products/openvms/",
+    "sha256": "b2012d9b5db2074e152d65a05adee9782e02ca656087bdb1668b477431028d1d",
+    "bytes": 46962,
+    "status": 200,
+    "access": "captured-public-response-not-automatically-eligible"
+  },
+  {
+    "sourceFile": "primary-receipts.json",
+    "key": "zos",
+    "url": "https://www.ibm.com/products/zos",
+    "finalUrl": "https://www.ibm.com/products/zos",
+    "sha256": "58bb39e39e8e4eebb3829f1b2abb85832bca0e737ef8454d5fdb63bd9040605a",
+    "bytes": 197944,
+    "status": 200,
+    "access": "captured-public-response-not-automatically-eligible"
+  },
+  {
+    "sourceFile": "primary-receipts.json",
+    "key": "googlebook",
+    "url": "https://www.google.com/chrome/terms/",
+    "finalUrl": "https://www.google.com/chrome/terms/",
+    "sha256": "de68028ca618140a8ee4c9c8e0e7c76f11b0ddadbd4b219fc1a30a3b1c843cd4",
+    "bytes": 46654,
+    "status": 200,
+    "access": "captured-public-response-not-automatically-eligible"
+  },
+  {
+    "sourceFile": "primary-receipts.json",
+    "key": "osaka",
+    "url": "https://github.com/pac-ac/osakaOS",
+    "finalUrl": "https://github.com/pac-ac/osakaOS",
+    "sha256": "96ec62dc3fe1fca80bfb2a712368c98eb866cdb09a818e34b62eb7c23b344b6c",
+    "bytes": 289474,
+    "status": 200,
+    "access": "captured-public-response-not-automatically-eligible"
+  },
+  {
+    "sourceFile": "primary-receipts.json",
+    "key": "serpae",
+    "url": "https://serpaeos.sourceforge.io",
+    "finalUrl": "https://sourceforge.net/projects/serpaeos/",
+    "sha256": "12c38a799504d6375a56a0a3c893779eb5a15e3099af62d84e0fd29656d95623",
+    "bytes": 97446,
+    "status": 200,
+    "access": "captured-public-response-not-automatically-eligible"
+  },
+  {
+    "sourceFile": "supplement-receipts.json",
+    "key": "apple-version-table",
+    "url": "https://support.apple.com/en-us/109033",
+    "finalUrl": "https://support.apple.com/en-us/109033",
+    "status": "captured",
+    "bytes": 165503,
+    "sha256": "6c76136976a4965b1f77b1aef0a6fd17ccb8f8275e71ac15d5a492e58f6d2c08"
+  },
+  {
+    "sourceFile": "supplement-receipts.json",
+    "key": "android-versions",
+    "url": "https://source.android.com/docs/setup/reference/build-numbers",
+    "finalUrl": "https://source.android.com/docs/setup/reference/build-numbers",
+    "status": "captured",
+    "bytes": 341494,
+    "sha256": "f7b0f3c76e53679d10833d4b5fc8f03b463b686d9fcafaef628661f5a7e2e429"
+  },
+  {
+    "sourceFile": "supplement-receipts.json",
+    "key": "googlebook-help",
+    "url": "https://support.google.com/chrome/a/answer/16634428",
+    "finalUrl": "https://support.google.com/chrome/a/answer/16634428",
+    "status": "captured",
+    "bytes": 1622801,
+    "sha256": "ef0940540e120f0604ee31cc887632678abb5a77fcda0beafa6b9d7871812c81"
+  },
+  {
+    "sourceFile": "supplement-receipts.json",
+    "key": "azure-linux",
+    "url": "https://github.com/microsoft/azurelinux",
+    "finalUrl": "https://github.com/microsoft/azurelinux",
+    "status": "captured",
+    "bytes": 385190,
+    "sha256": "026428d1d77dc3aad5e0b2219202170c9eb206166c1120dbcf4661fd0d4a322d"
+  },
+  {
+    "sourceFile": "supplement-receipts.json",
+    "key": "sculpt",
+    "url": "https://genode.org/documentation/articles/sculpt-25-04",
+    "finalUrl": "https://genode.org/documentation/articles/sculpt-25-04",
+    "status": "captured",
+    "bytes": 129778,
+    "sha256": "fd791d61878fd953bee577e113e9389cdedd81edff8f24c31f5295c7eb65dae8"
+  },
+  {
+    "sourceFile": "supplement-receipts.json",
+    "key": "mach-overview",
+    "url": "https://www.cs.cmu.edu/afs/cs.cmu.edu/project/mach/public/www/overview.html",
+    "finalUrl": "https://www.cs.cmu.edu/afs/cs.cmu.edu/project/mach/public/www/overview.html",
+    "status": "captured",
+    "bytes": 1800,
+    "sha256": "ecb62602f9dab82cf9310000c1a7f61b1b1cab89a825483adf8e28f2ec371b35"
+  },
+  {
+    "sourceFile": "supplement-receipts.json",
+    "key": "cisco",
+    "url": "https://www.cisco.com/c/en/us/products/ios-nx-os-software/index.html",
+    "finalUrl": "https://www.cisco.com/site/us/en/products/networking/software/ios-nx-os/index.html",
+    "status": "captured",
+    "bytes": 71272,
+    "sha256": "adf5cfcefe4d49c4a2d0f14a98c4a30ab6d7cf85ccc6e63bf5da97a12e4413f3"
+  },
+  {
+    "sourceFile": "supplement-receipts.json",
+    "key": "freemint",
+    "url": "https://github.com/freemint/freemint",
+    "finalUrl": "https://github.com/freemint/freemint",
+    "status": "captured",
+    "bytes": 307059,
+    "sha256": "ba0275ff6258c9a32bef0a43a488bffbb60b62bf1ae3366c145c4c284d9c5b72"
+  },
+  {
+    "sourceFile": "supplement-receipts.json",
+    "key": "chromeos-flex",
+    "url": "https://chromeos.google/products/chromeos-flex/",
+    "finalUrl": "https://chromeos.google/products/chromeos-flex/",
+    "status": "captured",
+    "bytes": 716354,
+    "sha256": "b567feb0ec833c02b96d54af7103cd45dc05baf79f95894772f354e8afc56b66"
+  },
+  {
+    "source": "primary-indexed-supplements",
+    "urls": [
+      "https://t2linux.com/",
+      "https://www.unix.org/about.html",
+      "https://consumer.huawei.com/en/harmonyos/",
+      "https://www.tizen.org/sites/default/files/page/tizen_for_platform_developers_and_manufacturers.pdf",
+      "https://www.bitsavers.org/pdf/mips/RISCos/3204DOC_RISC_os_Users_Reference_Manual_Volume_II_BSD_Mar1989.pdf",
+      "https://learn.microsoft.com/en-us/lifecycle/products/windows-11-home-and-pro",
+      "https://learn.microsoft.com/en-us/lifecycle/products/windows-11-enterprise-and-education",
+      "https://learn.microsoft.com/en-us/lifecycle/products/windows-10-home-and-pro",
+      "https://learn.microsoft.com/en-us/lifecycle/products/windows-10-enterprise-and-education",
+      "https://learn.microsoft.com/en-us/windows/whats-new/ltsc/overview"
+    ],
+    "status": "Public indexed first-party names/role text, not claimed raw captures. No login, OS execution or external browser automation.",
+    "limitations": "Old guessed IBM/OpenGroup/Huawei URLs returned404 and remain recorded; direct403/429/500/timeouts were not evaded/retried. Windows comparison URL redirected to homepage and is not edition proof; public lifecycle pages name actual editions. LTSC page displayed a generic authorization notice alongside publicly indexed main text; no login attempted. NIAP page was a JS shell and an unverified guessed CC PDF was inaccessible; neither supports the held XTS400/STOP row."
+  },
+  {
+    "source": "identity-review",
+    "review": "Case/punctuation equivalences are explicitly reviewed. Windows1.0 differs fromWindows10, Android1.0/1.1/1.5/1.6 from10/11/15/16, iOS fromCiscoIOS, RISC OS fromMIPS RISC/os, LinuxMint fromAtariMiNT and modernmacOS fromclassicMacOS. Existing literal-name support is carried into authored metadata. This OS pack additionally preserves numeric tokens; other packs keep existing punctuation handling."
+  }
+]
