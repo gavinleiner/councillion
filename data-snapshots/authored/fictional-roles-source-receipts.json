@@ -1,0 +1,284 @@
+[
+  {
+    "sourceFile": "source-receipts.json",
+    "key": "fictional-spies",
+    "url": "https://en.wikipedia.org/wiki/List_of_fictional_spies",
+    "status": "unavailable-no-retry",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "sourceFile": "source-receipts.json",
+    "key": "fictional-secret-agents",
+    "url": "https://en.wikipedia.org/wiki/List_of_fictional_secret_agents",
+    "status": "unavailable-no-retry",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "sourceFile": "source-receipts.json",
+    "key": "fictional-scientists",
+    "url": "https://en.wikipedia.org/wiki/List_of_fictional_scientists",
+    "status": "unavailable-no-retry",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "sourceFile": "source-receipts.json",
+    "key": "fictional-doctors",
+    "url": "https://en.wikipedia.org/wiki/List_of_fictional_doctors",
+    "status": "unavailable-no-retry",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "sourceFile": "source-receipts.json",
+    "key": "black-widow",
+    "url": "https://www.marvel.com/characters/black-widow-natasha-romanoff",
+    "status": "unavailable-no-retry",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "sourceFile": "source-receipts.json",
+    "key": "doctor-strange",
+    "url": "https://www.marvel.com/characters/doctor-strange-stephen-strange",
+    "status": "unavailable-no-retry",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "sourceFile": "source-receipts.json",
+    "key": "tony-stark",
+    "url": "https://www.marvel.com/characters/iron-man-tony-stark",
+    "status": "unavailable-no-retry",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "sourceFile": "source-receipts.json",
+    "key": "d23-kim",
+    "url": "https://d23.com/a-to-z/kim-possible-television/",
+    "finalUrl": "https://d23.com/a-to-z/kim-possible-television/",
+    "status": "captured-not-approved",
+    "bytes": 65344,
+    "sha256": "517ddee69d50220a66d9d3bbe622598df57cf5b048b480766cc9c389f71c2e23"
+  },
+  {
+    "sourceFile": "source-receipts.json",
+    "key": "eggman",
+    "url": "https://sonic.sega.jp/SonicChannel/character/eggman.html",
+    "finalUrl": "https://sonic.sega.jp/SonicChannel/character/eggman.html",
+    "status": "captured-not-approved",
+    "bytes": 23389,
+    "sha256": "060d153e928bbd641c4e3da019758008d4a0af82be331337e385a6e4c53b45a4"
+  },
+  {
+    "sourceFile": "source-receipts.json",
+    "key": "splinter-cell",
+    "url": "https://www.ubisoft.com/en-us/game/splinter-cell",
+    "status": "unavailable-no-retry",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "sourceFile": "source-receipts.json",
+    "key": "agent-47",
+    "url": "https://www.ioi.dk/hitman/world-of-assassination",
+    "status": "unavailable-no-retry",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "sourceFile": "discovered-source-receipt.json",
+    "url": "https://en.wikipedia.org/wiki/List_of_fictional_scientists_and_engineers",
+    "status": "unavailable-no-retry",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "localReviewCapture": "indexed-agents-full.txt",
+    "access": "public-indexed-source-text-not-raw-html",
+    "bytes": 27329,
+    "sha256": "61fc8656aa4490d515a4715220044c0fbfd07707bd21a886c45c7dd5a236e889",
+    "limitations": "Only actual names/roles/identity decisions are shipped. Indexed text, original/publication text, blank site shells and failures are distinguished; no login, privacy workaround or external browser automation."
+  },
+  {
+    "localReviewCapture": "indexed-doctors-a.txt",
+    "access": "public-indexed-source-text-not-raw-html",
+    "bytes": 24850,
+    "sha256": "f5ffd9e52e68bf64cfcd9dddd9fd19cdc89b80cff8fd018974e2789f6e628fdf",
+    "limitations": "Only actual names/roles/identity decisions are shipped. Indexed text, original/publication text, blank site shells and failures are distinguished; no login, privacy workaround or external browser automation."
+  },
+  {
+    "localReviewCapture": "indexed-doctors-b.txt",
+    "access": "public-indexed-source-text-not-raw-html",
+    "bytes": 22607,
+    "sha256": "1ad69ed7e475ebb931d9c2c1f75ee78843df91aa8d6ba0c912b79250c8073808",
+    "limitations": "Only actual names/roles/identity decisions are shipped. Indexed text, original/publication text, blank site shells and failures are distinguished; no login, privacy workaround or external browser automation."
+  },
+  {
+    "localReviewCapture": "indexed-doctors-c.txt",
+    "access": "public-indexed-source-text-not-raw-html",
+    "bytes": 22219,
+    "sha256": "4ff23c15bb59bab1662937e8b4e0207423228b7a192d500e5ada6103cccbbcd1",
+    "limitations": "Only actual names/roles/identity decisions are shipped. Indexed text, original/publication text, blank site shells and failures are distinguished; no login, privacy workaround or external browser automation."
+  },
+  {
+    "localReviewCapture": "indexed-doctors-d.txt",
+    "access": "public-indexed-source-text-not-raw-html",
+    "bytes": 22377,
+    "sha256": "52cf24f3250e4f79a50ad9b5146dec507a9c4f7342a22211cb8a1df769b2a03e",
+    "limitations": "Only actual names/roles/identity decisions are shipped. Indexed text, original/publication text, blank site shells and failures are distinguished; no login, privacy workaround or external browser automation."
+  },
+  {
+    "localReviewCapture": "indexed-doctors-e.txt",
+    "access": "public-indexed-source-text-not-raw-html",
+    "bytes": 23578,
+    "sha256": "888319a2983423511b0e31d87e742d0b7643cd98cf37397b1a6b86ea0f36b242",
+    "limitations": "Only actual names/roles/identity decisions are shipped. Indexed text, original/publication text, blank site shells and failures are distinguished; no login, privacy workaround or external browser automation."
+  },
+  {
+    "localReviewCapture": "indexed-doctors-head.txt",
+    "access": "public-indexed-source-text-not-raw-html",
+    "bytes": 24927,
+    "sha256": "fc526c6dd5c51a175b669dc802df0abf8742f92641fa474ddb2ba983c064e6a9",
+    "limitations": "Only actual names/roles/identity decisions are shipped. Indexed text, original/publication text, blank site shells and failures are distinguished; no login, privacy workaround or external browser automation."
+  },
+  {
+    "localReviewCapture": "indexed-name-repairs.txt",
+    "access": "public-indexed-source-text-not-raw-html",
+    "bytes": 15217,
+    "sha256": "cb690cebff564fc5b3118ab16c0702c27e031d3795bdda5baaafa28258a879f0",
+    "limitations": "Only actual names/roles/identity decisions are shipped. Indexed text, original/publication text, blank site shells and failures are distinguished; no login, privacy workaround or external browser automation."
+  },
+  {
+    "localReviewCapture": "indexed-primary-classic-texts.txt",
+    "access": "public-indexed-source-text-not-raw-html",
+    "bytes": 26747,
+    "sha256": "e5c46009f3ddd20535abcee9c3a151925c312fd70f324d6b3481e6835c85c353",
+    "limitations": "Only actual names/roles/identity decisions are shipped. Indexed text, original/publication text, blank site shells and failures are distinguished; no login, privacy workaround or external browser automation."
+  },
+  {
+    "localReviewCapture": "indexed-primary-common-a.txt",
+    "access": "public-indexed-source-text-not-raw-html",
+    "bytes": 30769,
+    "sha256": "0bfd605584581357c068ad39de37c7db4aedc435cd5d9fbe6b7f2ea279b06efe",
+    "limitations": "Only actual names/roles/identity decisions are shipped. Indexed text, original/publication text, blank site shells and failures are distinguished; no login, privacy workaround or external browser automation."
+  },
+  {
+    "localReviewCapture": "indexed-primary-marvel-agents.txt",
+    "access": "public-indexed-source-text-not-raw-html",
+    "bytes": 34166,
+    "sha256": "84a1d31e96694de6b0365968dbcf8b06a27145cd32885e1c0613fd4fb47f3daa",
+    "limitations": "Only actual names/roles/identity decisions are shipped. Indexed text, original/publication text, blank site shells and failures are distinguished; no login, privacy workaround or external browser automation."
+  },
+  {
+    "localReviewCapture": "indexed-primary-modern-tv.txt",
+    "access": "public-indexed-source-text-not-raw-html",
+    "bytes": 34821,
+    "sha256": "d8968a62c40ad2b8e1369ee7b0e6c0adcfdd90554588f2ad4afcf1c3305f0a3c",
+    "limitations": "Only actual names/roles/identity decisions are shipped. Indexed text, original/publication text, blank site shells and failures are distinguished; no login, privacy workaround or external browser automation."
+  },
+  {
+    "localReviewCapture": "indexed-primary-roles-extra.txt",
+    "access": "public-indexed-source-text-not-raw-html",
+    "bytes": 33602,
+    "sha256": "bb531a77bd29f324b09a8eac9c0dbe76ce6c02894025001456c648c8194b361d",
+    "limitations": "Only actual names/roles/identity decisions are shipped. Indexed text, original/publication text, blank site shells and failures are distinguished; no login, privacy workaround or external browser automation."
+  },
+  {
+    "localReviewCapture": "indexed-primary-screen-spies-b.txt",
+    "access": "public-indexed-source-text-not-raw-html",
+    "bytes": 35353,
+    "sha256": "88838f1a62854b860717111c45089218363dcb52a20f13b16df5f4d4925e4c8d",
+    "limitations": "Only actual names/roles/identity decisions are shipped. Indexed text, original/publication text, blank site shells and failures are distinguished; no login, privacy workaround or external browser automation."
+  },
+  {
+    "localReviewCapture": "indexed-primary-screen-spies.txt",
+    "access": "public-indexed-source-text-not-raw-html",
+    "bytes": 32464,
+    "sha256": "37b2d2a909d562974d5d3330f27bcab4bde5e459011091dab12810254901c92f",
+    "limitations": "Only actual names/roles/identity decisions are shipped. Indexed text, original/publication text, blank site shells and failures are distinguished; no login, privacy workaround or external browser automation."
+  },
+  {
+    "localReviewCapture": "indexed-primary-specific-aliases.txt",
+    "access": "public-indexed-source-text-not-raw-html",
+    "bytes": 34517,
+    "sha256": "00d0be38898c741f5c2335a4f72d894c1844cc417ee9972acebbc2f4c20af191",
+    "limitations": "Only actual names/roles/identity decisions are shipped. Indexed text, original/publication text, blank site shells and failures are distinguished; no login, privacy workaround or external browser automation."
+  },
+  {
+    "localReviewCapture": "indexed-primary-url-checks.txt",
+    "access": "public-indexed-source-text-not-raw-html",
+    "bytes": 8523,
+    "sha256": "4f8d7301cb406d42ff8fbe792b5a3a50b46eb9deceaa3b1c5db5fe7891556556",
+    "limitations": "Only actual names/roles/identity decisions are shipped. Indexed text, original/publication text, blank site shells and failures are distinguished; no login, privacy workaround or external browser automation."
+  },
+  {
+    "localReviewCapture": "indexed-root-reads.txt",
+    "access": "public-indexed-source-text-not-raw-html",
+    "bytes": 25857,
+    "sha256": "0a5a482ffa2f8824529b7905faff7644ca77aed8adabb4c13d3fa373acc4e878",
+    "limitations": "Only actual names/roles/identity decisions are shipped. Indexed text, original/publication text, blank site shells and failures are distinguished; no login, privacy workaround or external browser automation."
+  },
+  {
+    "localReviewCapture": "indexed-scientists-gap.txt",
+    "access": "public-indexed-source-text-not-raw-html",
+    "bytes": 30819,
+    "sha256": "ff4aad8acd1d7a81216ced56688d15205e95d12ada3917b80191fec8cfc25a8a",
+    "limitations": "Only actual names/roles/identity decisions are shipped. Indexed text, original/publication text, blank site shells and failures are distinguished; no login, privacy workaround or external browser automation."
+  },
+  {
+    "localReviewCapture": "indexed-scientists-head.txt",
+    "access": "public-indexed-source-text-not-raw-html",
+    "bytes": 29620,
+    "sha256": "56c7183146538c87cf6ad2834f11540dbcb343a87e34c2d9a4c2baf024c07d58",
+    "limitations": "Only actual names/roles/identity decisions are shipped. Indexed text, original/publication text, blank site shells and failures are distinguished; no login, privacy workaround or external browser automation."
+  },
+  {
+    "localReviewCapture": "indexed-scientists-mid.txt",
+    "access": "public-indexed-source-text-not-raw-html",
+    "bytes": 30528,
+    "sha256": "504bbf43b91aa721072f39965763e59a9101932d1b4b2eac2221d0824fd47e8a",
+    "limitations": "Only actual names/roles/identity decisions are shipped. Indexed text, original/publication text, blank site shells and failures are distinguished; no login, privacy workaround or external browser automation."
+  },
+  {
+    "localReviewCapture": "indexed-scientists-tail.txt",
+    "access": "public-indexed-source-text-not-raw-html",
+    "bytes": 30145,
+    "sha256": "e63e42fe5361def664406b14de51facec92fc7de283bbcce4bf6d6da7a9ff0f4",
+    "limitations": "Only actual names/roles/identity decisions are shipped. Indexed text, original/publication text, blank site shells and failures are distinguished; no login, privacy workaround or external browser automation."
+  },
+  {
+    "localReviewCapture": "indexed-scientists-top.txt",
+    "access": "public-indexed-source-text-not-raw-html",
+    "bytes": 30396,
+    "sha256": "68f34398eb54e433a2139e4cae58430163d7aa63017e3bccb0cef725475320f0",
+    "limitations": "Only actual names/roles/identity decisions are shipped. Indexed text, original/publication text, blank site shells and failures are distinguished; no login, privacy workaround or external browser automation."
+  },
+  {
+    "localReviewCapture": "indexed-secondary-bond-roles.txt",
+    "access": "public-indexed-source-text-not-raw-html",
+    "bytes": 14666,
+    "sha256": "4c949ea196efc609f7c2b304ca44d0f72644db04bfbc350846aba6ba9d4a98df",
+    "limitations": "Only actual names/roles/identity decisions are shipped. Indexed text, original/publication text, blank site shells and failures are distinguished; no login, privacy workaround or external browser automation."
+  },
+  {
+    "review": "One whole fictional covert-role subject.34 original common inputs unchanged; no new prompts per character or media title. Source list explicitly lacks citations and contains wrong-role/group entries: role holds and original/authorized publisher checks are required, and a list occurrence is not claimed independent primary verification."
+  },
+  {
+    "localReviewCapture": "indexed-public-alias-omissions.txt",
+    "access": "public-indexed-source-text-not-raw-html",
+    "bytes": 1865,
+    "sha256": "e3192083b3b6d0364ead4e078a355a77479fa86e5cd77f5fb385a8b4f7f1ded7",
+    "limitations": "Actual access errors, redirects and public text retained; not claimed raw captures. A blank JS shell or an age/date-of-birth page is not character-role proof. No access workaround attempted."
+  },
+  {
+    "access": "public-indexed-primary-alias-text-read",
+    "urls": [
+      "https://www.marvel.com/articles/tv-shows/ydk-agents-of-shield-the-many-identities-of-daisy-johnson",
+      "https://www.marvel.com/comics/discover/315/shield",
+      "https://www.marvel.com/comics/series/18337/bucky_barnes_the_winter_soldier_2014_-_2015"
+    ],
+    "facts": "Explicit Daisy/Skye/Quake identity, Agent13/SharonCarter role and BuckyBarnes/WinterSoldier public naming. Original character-page fetches failed; different actual published articles/reading lists supply public indexed proof. Not a raw HTML capture."
+  },
+  {
+    "localReviewCapture": "indexed-primary-chuck-authorized.txt",
+    "access": "public-indexed-authorized-publisher-text-not-raw-html",
+    "url": "https://tv.apple.com/us/show/chuck/umc.cmc.6ylwgiluvhw983vfbrkhd9nat",
+    "bytes": 12786,
+    "sha256": "d978de2ab07c668cefe1119b3a0c2ba2513f7b79ca6ee795a0662636e6e7d3a8",
+    "review": "Lines11-28 identify the espionage roles in the authorized Warner Bros. show/episode synopsis; actors/cast and all navigation are not spy answers. The NBC403 remains a recorded failure, not proof."
+  }
+]

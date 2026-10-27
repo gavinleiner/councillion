@@ -1,6 +1,6 @@
 # Five-thousand-question expansion: development checkpoint
 
-The requested release is unfinished. Production still has 227 admitted questions. Development has 473: the 227 baseline plus 246 new admissions. It needs 4,527 more genuinely distinct questions. Answer rows, raw entities, draft inventories and reworded recipes do not count as questions. The final section is the latest checkpoint; preceding dated sections retain the development history.
+The requested release is unfinished. Production still has 227 admitted questions. Development has 474: the 227 baseline plus 247 new admissions. It needs 4,526 more genuinely distinct questions. Answer rows, raw entities, draft inventories and reworded recipes do not count as questions. The final section is the latest checkpoint; preceding dated sections retain the development history.
 
 ## Admission standard
 
@@ -303,3 +303,33 @@ The release gate correctly fails4,527remaining questions. Production remains227;
 no partial release or completion email is claimed. Quiet heartbeat work continues.
 See WORLD-CALENDAR-SOURCE-ATTRIBUTION.md and frozen source/role/identity/receipt
 ledgers for limitations. Next two fictional-role concepts are research only.
+
+## Fictional covert-role checkpoint · 474 questions
+
+One whole spy/secret-agent question adds 318 canonical characters with all 34
+original familiar probes. Forty-two inappropriate or insufficiently supported
+source leads are held. Actual publisher, authorized distributor and original
+fiction supplements repair common aliases. Source-list limitations remain
+explicit; the scientist/doctor preparation is not a second admission.
+See FICTIONAL-ROLES-SOURCE-ATTRIBUTION.md and the frozen role/identity ledgers.
+
+Solid Snake, Big Boss/Naked Snake and Venom Snake remain distinct. Actual
+Winter Soldier, Skye/Quake, Agent P, 006 and 007 aliases work, without invented
+initials. The existing numeric-token option prevents 0.07 or Agent 4.7 from
+automatically scoring as real agent codes. No global matcher, engine, CSS or
+selection version changed. Rarity is editorial, not measured player frequency.
+
+All 345 tests and the full build pass: 8,969 familiar inputs and 966 wrong
+boundaries. All 41 actual local-game cases pass: 27 exact name/rarity cases,
+11 rejections and 3 confirmations only after Enter. General browser checks
+pass persisted unseen migration, shared Daily, library/sample and laptop/mobile
+layout; external requests are blocked. The unchanged fixed sample seed is
+20261025-reviewed-standard, with families culture11, everyday12, food13,
+gaming11, music12, nature9, science12, sports11, world9.
+
+Families gaming64, sports67, culture46, music50, food56, nature54, science47,
+world43, everyday47 are all within 8–15%. There are 274 authored candidates,
+247 admitted and 27 held. Canonical answer rows 1,790,870 are not questions.
+Development still needs 4,526 questions; production remains 227. No partial
+publication or completion email. Four original story/systems concepts remain:
+scientists/doctors, writers, artists and named artworks.

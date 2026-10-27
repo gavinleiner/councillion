@@ -1,0 +1,1508 @@
+{
+  "version": 1,
+  "questions": [
+    {
+      "id": "authored-fictional-spies",
+      "concept": "fictional-spies",
+      "family": "culture",
+      "topic": "Fictional spies and agents",
+      "prompt": "Name a spy or secret agent from fiction.",
+      "scope": "Named fictional intelligence agents, spies, spymasters and documented clandestine/covert operatives from any medium count, including covert support agents and private fictional agencies. A secret identity, ordinary detective/police work, a group/show title, performer or an unnamed generic agent is not automatically a spy. Actual aliases share identity; different characters, clones and officeholders are not merged merely because they share a codename.",
+      "format": "whole-fictional-roles",
+      "rationale": "One independently proposed whole familiar fictional-role subject retains common entry names and rare published characters. Intelligence and covert-operative roles are reviewed; ordinary police, actors, groups, source headings and unsupported labels are held. Actual aliases share identities; different characters are not collapsed by a shared surname, show or codename. Names and source rows expand answers, never prompts",
+      "familiar": [
+        "James Bond",
+        "Ethan Hunt",
+        "Jason Bourne",
+        "Natasha Romanoff",
+        "Black Widow",
+        "Austin Powers",
+        "Kim Possible",
+        "Perry the Platypus",
+        "Sterling Archer",
+        "Loid Forger",
+        "Twilight",
+        "Alex Rider",
+        "Sam Fisher",
+        "Solid Snake",
+        "Naked Snake",
+        "Big Boss",
+        "Agent 47",
+        "Johnny English",
+        "Maxwell Smart",
+        "Agent 99",
+        "Carmen Cortez",
+        "Juni Cortez",
+        "Peggy Carter",
+        "Nick Fury",
+        "Phil Coulson",
+        "Melinda May",
+        "Eggsy",
+        "Harry Hart",
+        "Napoleon Solo",
+        "Illya Kuryakin",
+        "Sydney Bristow",
+        "Chuck Bartowski",
+        "Michael Westen",
+        "George Smiley"
+      ],
+      "exclude": [
+        "Neil Armstrong",
+        "Magnifying glass",
+        "James Cook",
+        "Tom Cruise",
+        "Rowan Atkinson",
+        "Ian Fleming",
+        "MI6",
+        "The Man from UNCLE",
+        "Spy Kids",
+        "Brooklyn Nine Nine",
+        "Jake Peralta",
+        "McGruff the Crime Dog",
+        "Cybersix",
+        "Howard Finch",
+        "XY",
+        "JB",
+        "NP"
+      ],
+      "references": [
+        "https://alexrider.com/mi6-datafiles/who-is-alex-rider/",
+        "https://catalog.afi.com/Catalog/moviedetails/70400",
+        "https://d23.com/a-to-z/kim-possible-television/",
+        "https://d23.com/inside-the-return-of-disneys-phineas-and-ferb/",
+        "https://en.wikipedia.org/wiki/Alec_Trevelyan",
+        "https://en.wikipedia.org/wiki/Alias_(TV_series)",
+        "https://en.wikipedia.org/wiki/List_of_fictional_secret_agents",
+        "https://en.wikipedia.org/wiki/Venom_Snake",
+        "https://ianfleming.com/james-bond/meet-the-characters/",
+        "https://ioi.dk/hitman/the-cast",
+        "https://johnlecarre.com/books/the-spy-who-came-in-from-the-cold",
+        "https://tv.apple.com/us/show/chuck/umc.cmc.6ylwgiluvhw983vfbrkhd9nat",
+        "https://wbpinewmedia.warnerbros.com/GetSmart/gs_online_strat.pdf",
+        "https://www.20thcenturystudios.com/movies/kingsman-the-secret-service",
+        "https://www.crunchyroll.com/news/guides/2024/4/18/spy-x-family-characters",
+        "https://www.fxnetworks.com/shows/archer",
+        "https://www.gutenberg.org/cache/epub/2350/pg2350-images.html",
+        "https://www.konami.com/games/eu/en/products/mgs3r/",
+        "https://www.konami.com/mg/archive/mg2/chara.html",
+        "https://www.konami.com/mg/mgs3r/characters/asia/ja/",
+        "https://www.marvel.com/articles/comics/who-is-nick-fury-the-official-marvel-guide",
+        "https://www.marvel.com/articles/tv-shows/marvels-agents-of-shield-season-5-refresher",
+        "https://www.marvel.com/articles/tv-shows/ydk-agents-of-shield-the-many-identities-of-daisy-johnson",
+        "https://www.marvel.com/characters/black-widow-natasha-romanova/in-comics",
+        "https://www.marvel.com/comics/discover/315/shield",
+        "https://www.marvel.com/comics/discover/442/agent-peggy-carter",
+        "https://www.marvel.com/comics/series/18337/bucky_barnes_the_winter_soldier_2014_-_2015",
+        "https://www.marvel.com/watch/digital-series/marvel-101/phil-coulson-tv-marvel-101",
+        "https://www.miramax.com/movie/spy-kids/",
+        "https://www.paramountpictures.com/movies/mission-impossible-fallout",
+        "https://www.peacocktv.com/stream-tv/burn-notice",
+        "https://www.ubisoft.com/en-us/company/about-us/our-brands/tom-clancy-s-splinter-cell",
+        "https://www.universalpictures.com/movies/jason-bourne",
+        "https://www.universalpictures.com/movies/johnny-english-strikes-again"
+      ],
+      "answers": {
+        "85": [
+          {
+            "label": "Aaron Cross",
+            "aliases": []
+          },
+          {
+            "label": "Abbey Chase",
+            "aliases": []
+          },
+          {
+            "label": "Adam Carter",
+            "aliases": []
+          },
+          {
+            "label": "Ada Wong",
+            "aliases": []
+          },
+          {
+            "label": "Adolf Verloc",
+            "aliases": []
+          },
+          {
+            "label": "Agent 13 (Get Smart)",
+            "aliases": []
+          },
+          {
+            "label": "Agent 327",
+            "aliases": []
+          },
+          {
+            "label": "Agent 44 (Get Smart)",
+            "aliases": []
+          },
+          {
+            "label": "Agent Double 0-0",
+            "aliases": []
+          },
+          {
+            "label": "Agent Flemming",
+            "aliases": []
+          },
+          {
+            "label": "Agent Larabee",
+            "aliases": []
+          },
+          {
+            "label": "Agent Six",
+            "aliases": []
+          },
+          {
+            "label": "Agent Vinod",
+            "aliases": []
+          },
+          {
+            "label": "Alan Blunt",
+            "aliases": []
+          },
+          {
+            "label": "Alec Trevelyan",
+            "aliases": [
+              "006",
+              "Agent 006"
+            ]
+          },
+          {
+            "label": "Alexander Scott",
+            "aliases": []
+          },
+          {
+            "label": "Alexi Dravic",
+            "aliases": []
+          },
+          {
+            "label": "Ali Imran",
+            "aliases": []
+          },
+          {
+            "label": "Amanda Waller",
+            "aliases": []
+          },
+          {
+            "label": "Amos Burke",
+            "aliases": []
+          },
+          {
+            "label": "Anacleto",
+            "aliases": []
+          },
+          {
+            "label": "Andreas Sanchez",
+            "aliases": []
+          },
+          {
+            "label": "Angus MacGyver",
+            "aliases": []
+          },
+          {
+            "label": "Annie Walker",
+            "aliases": []
+          },
+          {
+            "label": "Arun Khanna",
+            "aliases": []
+          },
+          {
+            "label": "Aunt Arctic",
+            "aliases": []
+          },
+          {
+            "label": "Avinash Singh Rathore",
+            "aliases": []
+          },
+          {
+            "label": "Basil Argyros",
+            "aliases": []
+          },
+          {
+            "label": "Basil St. Florian",
+            "aliases": []
+          },
+          {
+            "label": "Benji Dunn",
+            "aliases": []
+          },
+          {
+            "label": "Bishop (Spy Fiction)",
+            "aliases": []
+          },
+          {
+            "label": "Blackford Oakes",
+            "aliases": []
+          },
+          {
+            "label": "Blane Whittaker",
+            "aliases": []
+          },
+          {
+            "label": "Bob Ho",
+            "aliases": []
+          },
+          {
+            "label": "Boris Badenov",
+            "aliases": []
+          },
+          {
+            "label": "Boris Bannon",
+            "aliases": []
+          },
+          {
+            "label": "Brandon Scofield",
+            "aliases": []
+          },
+          {
+            "label": "Callan",
+            "aliases": []
+          },
+          {
+            "label": "Cammie Morgan",
+            "aliases": []
+          },
+          {
+            "label": "Carl Hamilton",
+            "aliases": []
+          },
+          {
+            "label": "Carl the Intern",
+            "aliases": []
+          },
+          {
+            "label": "Carrie Mathison",
+            "aliases": []
+          },
+          {
+            "label": "Cate Archer",
+            "aliases": []
+          },
+          {
+            "label": "Cathy Gale",
+            "aliases": []
+          },
+          {
+            "label": "Charles Hood",
+            "aliases": []
+          },
+          {
+            "label": "Charles Vine",
+            "aliases": []
+          },
+          {
+            "label": "Chloe O'Brian",
+            "aliases": []
+          },
+          {
+            "label": "Clive Reston",
+            "aliases": []
+          },
+          {
+            "label": "Cobra Bubbles",
+            "aliases": []
+          },
+          {
+            "label": "Cody Banks",
+            "aliases": []
+          },
+          {
+            "label": "Cool McCool",
+            "aliases": []
+          },
+          {
+            "label": "Craig Stirling",
+            "aliases": []
+          },
+          {
+            "label": "Cyril Figgis",
+            "aliases": []
+          },
+          {
+            "label": "Daniel Marchant",
+            "aliases": []
+          },
+          {
+            "label": "Dar Adal",
+            "aliases": []
+          },
+          {
+            "label": "Darius Stone",
+            "aliases": []
+          },
+          {
+            "label": "Dave Norton",
+            "aliases": []
+          },
+          {
+            "label": "David Percival",
+            "aliases": []
+          },
+          {
+            "label": "David Shirazi",
+            "aliases": []
+          },
+          {
+            "label": "David Wolf",
+            "aliases": []
+          },
+          {
+            "label": "Daybreak",
+            "aliases": []
+          },
+          {
+            "label": "Derek Flint",
+            "aliases": []
+          },
+          {
+            "label": "Desmond Lockheart",
+            "aliases": []
+          },
+          {
+            "label": "Desmond Simpkins",
+            "aliases": []
+          },
+          {
+            "label": "Desolation Jones",
+            "aliases": [
+              "Michael Desolation Jones",
+              "Michael Jones"
+            ]
+          },
+          {
+            "label": "Diana Burnwood",
+            "aliases": []
+          },
+          {
+            "label": "Dirk Bannon",
+            "aliases": []
+          },
+          {
+            "label": "Dominika Egorova",
+            "aliases": []
+          },
+          {
+            "label": "Dot the Disguise Gal",
+            "aliases": []
+          },
+          {
+            "label": "Drongo",
+            "aliases": []
+          },
+          {
+            "label": "Dudley Puppy",
+            "aliases": []
+          },
+          {
+            "label": "Elektra Natchios",
+            "aliases": []
+          },
+          {
+            "label": "Elim Garak",
+            "aliases": []
+          },
+          {
+            "label": "Elinor White",
+            "aliases": []
+          },
+          {
+            "label": "Elizabeth Jennings",
+            "aliases": []
+          },
+          {
+            "label": "Elle Bannon",
+            "aliases": []
+          },
+          {
+            "label": "Emily Pollifax",
+            "aliases": []
+          },
+          {
+            "label": "Emma Peel",
+            "aliases": []
+          },
+          {
+            "label": "Erik Heller",
+            "aliases": []
+          },
+          {
+            "label": "EVA",
+            "aliases": [
+              "Eva (Metal Gear)"
+            ]
+          },
+          {
+            "label": "Evelyn Salt",
+            "aliases": []
+          },
+          {
+            "label": "Father Unwin",
+            "aliases": []
+          },
+          {
+            "label": "FDR Foster",
+            "aliases": []
+          },
+          {
+            "label": "Felicity Flint",
+            "aliases": [
+              "Felicity Sarah Flint"
+            ]
+          },
+          {
+            "label": "Felix Leiter",
+            "aliases": []
+          },
+          {
+            "label": "Felonius Gru",
+            "aliases": []
+          },
+          {
+            "label": "Filemón Pi",
+            "aliases": []
+          },
+          {
+            "label": "Finn McMissile",
+            "aliases": []
+          },
+          {
+            "label": "Fiona Frost",
+            "aliases": [
+              "Nightfall"
+            ]
+          },
+          {
+            "label": "Fiona Glenanne",
+            "aliases": []
+          },
+          {
+            "label": "Francis Blake",
+            "aliases": []
+          },
+          {
+            "label": "Franky Franklin",
+            "aliases": []
+          },
+          {
+            "label": "Gabriel Logan",
+            "aliases": []
+          },
+          {
+            "label": "Gary the Gadget Guy",
+            "aliases": []
+          },
+          {
+            "label": "Genya Arikado",
+            "aliases": []
+          },
+          {
+            "label": "Gray Fox",
+            "aliases": [
+              "Frank Jaeger"
+            ]
+          },
+          {
+            "label": "Gregorio Cortez",
+            "aliases": []
+          },
+          {
+            "label": "Hal Ambler",
+            "aliases": []
+          },
+          {
+            "label": "Hans Kloss",
+            "aliases": []
+          },
+          {
+            "label": "Harry Palmer",
+            "aliases": []
+          },
+          {
+            "label": "Harry Tasker",
+            "aliases": []
+          },
+          {
+            "label": "Holley Shiftwell",
+            "aliases": []
+          },
+          {
+            "label": "Hubert Bonisseur de La Bath",
+            "aliases": []
+          },
+          {
+            "label": "Hymie (Get Smart)",
+            "aliases": []
+          },
+          {
+            "label": "Ilsa Faust",
+            "aliases": []
+          },
+          {
+            "label": "Ingrid Cortez",
+            "aliases": []
+          },
+          {
+            "label": "Irina Derevko",
+            "aliases": []
+          },
+          {
+            "label": "Iron Bull",
+            "aliases": []
+          },
+          {
+            "label": "Jack Bauer",
+            "aliases": []
+          },
+          {
+            "label": "Jack Bristow",
+            "aliases": []
+          },
+          {
+            "label": "Jack Burns",
+            "aliases": []
+          },
+          {
+            "label": "Jack Ryan",
+            "aliases": []
+          },
+          {
+            "label": "James Adams (CHERUB)",
+            "aliases": []
+          },
+          {
+            "label": "James Wormold",
+            "aliases": []
+          },
+          {
+            "label": "Jane Blonde",
+            "aliases": []
+          },
+          {
+            "label": "Jane Smith (Mr. & Mrs. Smith)",
+            "aliases": [
+              "Jane Smith"
+            ]
+          },
+          {
+            "label": "Jaskirat Singh Rangi",
+            "aliases": []
+          },
+          {
+            "label": "Jason Love",
+            "aliases": []
+          },
+          {
+            "label": "Jason Monk",
+            "aliases": []
+          },
+          {
+            "label": "JC Denton",
+            "aliases": []
+          },
+          {
+            "label": "Jerry Cornelius",
+            "aliases": []
+          },
+          {
+            "label": "Jerry (Totally Spies)",
+            "aliases": []
+          },
+          {
+            "label": "Jesse Porter",
+            "aliases": []
+          },
+          {
+            "label": "Jet Pack Guy",
+            "aliases": []
+          },
+          {
+            "label": "Jimmy Woo",
+            "aliases": []
+          },
+          {
+            "label": "Joanna Dark",
+            "aliases": []
+          },
+          {
+            "label": "John Casey",
+            "aliases": [
+              "Alex Coburn"
+            ]
+          },
+          {
+            "label": "John Craig",
+            "aliases": []
+          },
+          {
+            "label": "John Drake",
+            "aliases": []
+          },
+          {
+            "label": "John Morpurgo",
+            "aliases": []
+          },
+          {
+            "label": "Johnny Fedora",
+            "aliases": []
+          },
+          {
+            "label": "John Reese",
+            "aliases": []
+          },
+          {
+            "label": "John Smith (Mr. & Mrs. Smith)",
+            "aliases": [
+              "John Smith"
+            ]
+          },
+          {
+            "label": "John Steed",
+            "aliases": []
+          },
+          {
+            "label": "John Stone",
+            "aliases": []
+          },
+          {
+            "label": "John Wells",
+            "aliases": []
+          },
+          {
+            "label": "Jonathan Pine",
+            "aliases": []
+          },
+          {
+            "label": "Joonas G. Breitenfeldt",
+            "aliases": []
+          },
+          {
+            "label": "Kabir Dhaliwal",
+            "aliases": []
+          },
+          {
+            "label": "Karen Daniels",
+            "aliases": []
+          },
+          {
+            "label": "Kelly Robinson",
+            "aliases": []
+          },
+          {
+            "label": "Kelvin Inman",
+            "aliases": []
+          },
+          {
+            "label": "KGBeast",
+            "aliases": []
+          },
+          {
+            "label": "King Faraday",
+            "aliases": []
+          },
+          {
+            "label": "Kitty Katswell",
+            "aliases": []
+          },
+          {
+            "label": "Kyle Crane",
+            "aliases": []
+          },
+          {
+            "label": "Lancelot Link",
+            "aliases": []
+          },
+          {
+            "label": "Lance Sterling",
+            "aliases": []
+          },
+          {
+            "label": "Lee Stetson",
+            "aliases": []
+          },
+          {
+            "label": "Leliana",
+            "aliases": []
+          },
+          {
+            "label": "Lemmy Caution",
+            "aliases": []
+          },
+          {
+            "label": "Len Brown",
+            "aliases": []
+          },
+          {
+            "label": "Leon S. Kennedy",
+            "aliases": []
+          },
+          {
+            "label": "Liu Jian",
+            "aliases": []
+          },
+          {
+            "label": "Lord Peter Flint",
+            "aliases": []
+          },
+          {
+            "label": "Lorraine Broughton",
+            "aliases": []
+          },
+          {
+            "label": "Lucas Grey",
+            "aliases": [
+              "Shadow Client"
+            ]
+          },
+          {
+            "label": "Luciel Choi",
+            "aliases": []
+          },
+          {
+            "label": "Lucy Wilde",
+            "aliases": []
+          },
+          {
+            "label": "Luther Sloan",
+            "aliases": []
+          },
+          {
+            "label": "Luther Stickell",
+            "aliases": []
+          },
+          {
+            "label": "Lyla Lolliberry",
+            "aliases": []
+          },
+          {
+            "label": "Madeline (La Femme Nikita)",
+            "aliases": []
+          },
+          {
+            "label": "Malory Archer",
+            "aliases": []
+          },
+          {
+            "label": "Maria Hill",
+            "aliases": []
+          },
+          {
+            "label": "Marshall Flinkman",
+            "aliases": []
+          },
+          {
+            "label": "Martin Rauch",
+            "aliases": []
+          },
+          {
+            "label": "Mary Parker",
+            "aliases": []
+          },
+          {
+            "label": "Masud Rana",
+            "aliases": []
+          },
+          {
+            "label": "Mater",
+            "aliases": []
+          },
+          {
+            "label": "Matt Drake",
+            "aliases": []
+          },
+          {
+            "label": "Matt Helm",
+            "aliases": []
+          },
+          {
+            "label": "Matt Weston",
+            "aliases": []
+          },
+          {
+            "label": "Merlin (Kingsman)",
+            "aliases": [
+              "Merlin"
+            ]
+          },
+          {
+            "label": "Michael Jagger",
+            "aliases": []
+          },
+          {
+            "label": "Michael Samuelle",
+            "aliases": []
+          },
+          {
+            "label": "Michael Thorton",
+            "aliases": []
+          },
+          {
+            "label": "Michael Vaughn",
+            "aliases": []
+          },
+          {
+            "label": "Mike Gambit",
+            "aliases": []
+          },
+          {
+            "label": "Milla Vodello",
+            "aliases": []
+          },
+          {
+            "label": "Miss Froy",
+            "aliases": []
+          },
+          {
+            "label": "Miss Moneypenny",
+            "aliases": []
+          },
+          {
+            "label": "Mitch Rapp",
+            "aliases": []
+          },
+          {
+            "label": "Modesty Blaise",
+            "aliases": []
+          },
+          {
+            "label": "Morocco Mole",
+            "aliases": []
+          },
+          {
+            "label": "Mortadelo",
+            "aliases": []
+          },
+          {
+            "label": "Mr. Black (Johnny Test)",
+            "aliases": [
+              "Mr. Black"
+            ]
+          },
+          {
+            "label": "Mr. White (Johnny Test)",
+            "aliases": [
+              "Mr. White"
+            ]
+          },
+          {
+            "label": "Mylene Hoffman",
+            "aliases": []
+          },
+          {
+            "label": "Natalya Ivanova",
+            "aliases": []
+          },
+          {
+            "label": "Natasha Fatale",
+            "aliases": []
+          },
+          {
+            "label": "Nick Carter (Killmaster)",
+            "aliases": []
+          },
+          {
+            "label": "Nikita",
+            "aliases": []
+          },
+          {
+            "label": "Number Six (The Prisoner)",
+            "aliases": [
+              "Number 6",
+              "Number Six"
+            ]
+          },
+          {
+            "label": "Pathaan",
+            "aliases": []
+          },
+          {
+            "label": "Paul Janson",
+            "aliases": []
+          },
+          {
+            "label": "Paul Kagan",
+            "aliases": []
+          },
+          {
+            "label": "Paul L. Wolfe",
+            "aliases": []
+          },
+          {
+            "label": "Penelope St. John-Orsini",
+            "aliases": []
+          },
+          {
+            "label": "Peter Pettigrew",
+            "aliases": []
+          },
+          {
+            "label": "Peter the Panda",
+            "aliases": []
+          },
+          {
+            "label": "Pete Wisdom",
+            "aliases": []
+          },
+          {
+            "label": "Philip Jennings",
+            "aliases": []
+          },
+          {
+            "label": "Philip McAlpine",
+            "aliases": []
+          },
+          {
+            "label": "Philip Quest",
+            "aliases": []
+          },
+          {
+            "label": "Pinky the Chihuahua",
+            "aliases": []
+          },
+          {
+            "label": "Purdey",
+            "aliases": []
+          },
+          {
+            "label": "Quiller",
+            "aliases": []
+          },
+          {
+            "label": "Raiden (Metal Gear)",
+            "aliases": [
+              "Raiden"
+            ]
+          },
+          {
+            "label": "Ray Gillette",
+            "aliases": []
+          },
+          {
+            "label": "Revolver Ocelot",
+            "aliases": [
+              "Adam (Ocelot)",
+              "Ocelot"
+            ]
+          },
+          {
+            "label": "Richard Barrett",
+            "aliases": []
+          },
+          {
+            "label": "Richard Parker",
+            "aliases": []
+          },
+          {
+            "label": "Ron Stoppable",
+            "aliases": []
+          },
+          {
+            "label": "Rookie (Club Penguin)",
+            "aliases": []
+          },
+          {
+            "label": "Rouge the Bat",
+            "aliases": []
+          },
+          {
+            "label": "Russell Adler",
+            "aliases": []
+          },
+          {
+            "label": "Sam Axe",
+            "aliases": []
+          },
+          {
+            "label": "Sam Durell",
+            "aliases": []
+          },
+          {
+            "label": "Sameen Shaw",
+            "aliases": []
+          },
+          {
+            "label": "Sam Joseph",
+            "aliases": []
+          },
+          {
+            "label": "Sam Nivens",
+            "aliases": []
+          },
+          {
+            "label": "Sam (Spynet)",
+            "aliases": []
+          },
+          {
+            "label": "Sarah Walker",
+            "aliases": []
+          },
+          {
+            "label": "Sarge Steel",
+            "aliases": []
+          },
+          {
+            "label": "Sasha Nein",
+            "aliases": []
+          },
+          {
+            "label": "Saul Berenson",
+            "aliases": []
+          },
+          {
+            "label": "Scorpion",
+            "aliases": []
+          },
+          {
+            "label": "Sean Ryan",
+            "aliases": []
+          },
+          {
+            "label": "Secret Squirrel",
+            "aliases": []
+          },
+          {
+            "label": "Severus Snape",
+            "aliases": []
+          },
+          {
+            "label": "Seymour Birkoff",
+            "aliases": []
+          },
+          {
+            "label": "Shadow the Hedgehog",
+            "aliases": []
+          },
+          {
+            "label": "Shang-Chi",
+            "aliases": []
+          },
+          {
+            "label": "Sharron McCready",
+            "aliases": []
+          },
+          {
+            "label": "Sheila (Spy Fiction)",
+            "aliases": []
+          },
+          {
+            "label": "Simon Templar",
+            "aliases": []
+          },
+          {
+            "label": "Sir Roland King",
+            "aliases": []
+          },
+          {
+            "label": "Six (Agent Six of Hearts)",
+            "aliases": []
+          },
+          {
+            "label": "Special Agent Oso",
+            "aliases": []
+          },
+          {
+            "label": "Spike Bannon",
+            "aliases": []
+          },
+          {
+            "label": "Spy Fox",
+            "aliases": []
+          },
+          {
+            "label": "Stan Smith (American Dad)",
+            "aliases": [
+              "Stan Smith"
+            ]
+          },
+          {
+            "label": "Stephen Metcalfe",
+            "aliases": []
+          },
+          {
+            "label": "Steve Haines",
+            "aliases": []
+          },
+          {
+            "label": "Switters",
+            "aliases": []
+          },
+          {
+            "label": "Sylvia Sherwood",
+            "aliases": [
+              "Fullmetal Lady"
+            ]
+          },
+          {
+            "label": "Talia Bannon",
+            "aliases": []
+          },
+          {
+            "label": "Tallis",
+            "aliases": []
+          },
+          {
+            "label": "Tara King",
+            "aliases": []
+          },
+          {
+            "label": "The Boss",
+            "aliases": [
+              "The Joy"
+            ]
+          },
+          {
+            "label": "The Protagonist (Tenet)",
+            "aliases": []
+          },
+          {
+            "label": "Tim Donohue",
+            "aliases": []
+          },
+          {
+            "label": "Tobin Frost",
+            "aliases": []
+          },
+          {
+            "label": "Tom Klay",
+            "aliases": []
+          },
+          {
+            "label": "Tom Quinn",
+            "aliases": []
+          },
+          {
+            "label": "Tony Almeida",
+            "aliases": []
+          },
+          {
+            "label": "Tuck Henson",
+            "aliases": []
+          },
+          {
+            "label": "United Liberty Paper Contact",
+            "aliases": []
+          },
+          {
+            "label": "Vanderwood",
+            "aliases": []
+          },
+          {
+            "label": "Venom Snake",
+            "aliases": [
+              "Ahab (Metal Gear)",
+              "Punished Snake"
+            ]
+          },
+          {
+            "label": "Vesper Lynd",
+            "aliases": []
+          },
+          {
+            "label": "Vishwanath (Vishwaroopam)",
+            "aliases": []
+          },
+          {
+            "label": "Von Bork",
+            "aliases": []
+          },
+          {
+            "label": "Walter (La Femme Nikita)",
+            "aliases": []
+          },
+          {
+            "label": "Wyman Ford",
+            "aliases": []
+          },
+          {
+            "label": "Xander Cage",
+            "aliases": []
+          },
+          {
+            "label": "Yelena Belova",
+            "aliases": []
+          },
+          {
+            "label": "Yuri Briar",
+            "aliases": []
+          },
+          {
+            "label": "Ziva David",
+            "aliases": []
+          }
+        ],
+        "30": [
+          {
+            "label": "Agent 47",
+            "aliases": []
+          },
+          {
+            "label": "Agent 99",
+            "aliases": []
+          },
+          {
+            "label": "Alex Rider",
+            "aliases": []
+          },
+          {
+            "label": "Big Boss",
+            "aliases": [
+              "John (Big Boss)",
+              "Naked Snake"
+            ]
+          },
+          {
+            "label": "Carmen Cortez",
+            "aliases": [
+              "Carmen Elizabeth Juanita Echo Sky Brava Cortez"
+            ]
+          },
+          {
+            "label": "Chuck Bartowski",
+            "aliases": [
+              "Charles Bartowski"
+            ]
+          },
+          {
+            "label": "Gary Unwin",
+            "aliases": [
+              "Eggsy"
+            ]
+          },
+          {
+            "label": "George Smiley",
+            "aliases": []
+          },
+          {
+            "label": "Harry Hart",
+            "aliases": [
+              "Galahad",
+              "Galahad (Harry Hart)"
+            ]
+          },
+          {
+            "label": "Illya Kuryakin",
+            "aliases": []
+          },
+          {
+            "label": "Johnny English",
+            "aliases": []
+          },
+          {
+            "label": "Juni Cortez",
+            "aliases": [
+              "Juni Rocket Racer Rebel Cortez"
+            ]
+          },
+          {
+            "label": "Loid Forger",
+            "aliases": [
+              "Twilight"
+            ]
+          },
+          {
+            "label": "Maxwell Smart",
+            "aliases": [
+              "Agent 86"
+            ]
+          },
+          {
+            "label": "Melinda May",
+            "aliases": [
+              "The Cavalry"
+            ]
+          },
+          {
+            "label": "Michael Westen",
+            "aliases": []
+          },
+          {
+            "label": "Napoleon Solo",
+            "aliases": []
+          },
+          {
+            "label": "Nick Fury",
+            "aliases": []
+          },
+          {
+            "label": "Peggy Carter",
+            "aliases": [
+              "Agent Peggy Carter",
+              "Margaret Carter"
+            ]
+          },
+          {
+            "label": "Phil Coulson",
+            "aliases": [
+              "Agent Coulson",
+              "Phillip Coulson"
+            ]
+          },
+          {
+            "label": "Sam Fisher",
+            "aliases": []
+          },
+          {
+            "label": "Solid Snake",
+            "aliases": [
+              "David (Solid Snake)"
+            ]
+          },
+          {
+            "label": "Sterling Archer",
+            "aliases": [
+              "Archer (Sterling Archer)"
+            ]
+          },
+          {
+            "label": "Sydney Bristow",
+            "aliases": []
+          }
+        ],
+        "60": [
+          {
+            "label": "Agent J",
+            "aliases": []
+          },
+          {
+            "label": "Agent K",
+            "aliases": []
+          },
+          {
+            "label": "Alex (Totally Spies)",
+            "aliases": [
+              "Alex"
+            ]
+          },
+          {
+            "label": "Bucky Barnes",
+            "aliases": [
+              "James Buchanan Barnes",
+              "Winter Soldier"
+            ]
+          },
+          {
+            "label": "Clover (Totally Spies)",
+            "aliases": [
+              "Clover"
+            ]
+          },
+          {
+            "label": "Daisy Johnson",
+            "aliases": [
+              "Quake",
+              "Skye"
+            ]
+          },
+          {
+            "label": "John Watson",
+            "aliases": [
+              "Dr John Watson",
+              "John H Watson"
+            ]
+          },
+          {
+            "label": "Lana Kane",
+            "aliases": []
+          },
+          {
+            "label": "Major Monogram",
+            "aliases": [
+              "Francis Monogram"
+            ]
+          },
+          {
+            "label": "M (James Bond)",
+            "aliases": [
+              "M"
+            ]
+          },
+          {
+            "label": "Q (James Bond)",
+            "aliases": [
+              "Q"
+            ]
+          },
+          {
+            "label": "Sam (Totally Spies)",
+            "aliases": [
+              "Sam"
+            ]
+          },
+          {
+            "label": "Sharon Carter",
+            "aliases": [
+              "Agent 13"
+            ]
+          },
+          {
+            "label": "Yor Forger",
+            "aliases": [
+              "Thorn Princess",
+              "Yor Briar"
+            ]
+          }
+        ],
+        "100": [
+          {
+            "label": "Alec Leamas",
+            "aliases": []
+          }
+        ],
+        "10": [
+          {
+            "label": "Austin Powers",
+            "aliases": []
+          },
+          {
+            "label": "Ethan Hunt",
+            "aliases": []
+          },
+          {
+            "label": "James Bond",
+            "aliases": [
+              "007",
+              "Bond, James Bond"
+            ]
+          },
+          {
+            "label": "Jason Bourne",
+            "aliases": [
+              "David Webb"
+            ]
+          },
+          {
+            "label": "Kim Possible",
+            "aliases": []
+          },
+          {
+            "label": "Natasha Romanoff",
+            "aliases": [
+              "Black Widow",
+              "Natalia Romanova",
+              "Natasha Romanova"
+            ]
+          },
+          {
+            "label": "Perry the Platypus",
+            "aliases": [
+              "Agent P",
+              "Perry"
+            ]
+          },
+          {
+            "label": "Sherlock Holmes",
+            "aliases": [
+              "Altamont"
+            ]
+          },
+          {
+            "label": "Spy (Team Fortress 2)",
+            "aliases": [
+              "Spy"
+            ]
+          }
+        ]
+      },
+      "preserveNumericTokens": true
+    }
+  ]
+}

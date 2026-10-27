@@ -27,6 +27,7 @@ export function questionFormat(pack){
   'authored-whole-story-forms':'Stories and writing',
   'authored-whole-operating-systems':'Operating systems',
   'authored-whole-world-calendar':'Public life and calendars',
+  'authored-whole-fictional-roles':'Fictional roles',
   'authored-whole-color-inventory':'Colors & shades',
   'authored-whole-roster':'Characters & rosters',
   'authored-whole-taxonomic-group':'Animal kinds',
