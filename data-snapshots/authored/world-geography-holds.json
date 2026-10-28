@@ -1,0 +1,317 @@
+{
+  "mountains-peaks": [
+    {
+      "name": "Unnamed peak on Etheridge Ridge",
+      "reason": "No usable qualified proper-name label; generic object word, technical URL/ID or unnamed feature."
+    },
+    {
+      "name": "Unnamed Point",
+      "reason": "No usable qualified proper-name label; generic object word, technical URL/ID or unnamed feature."
+    },
+    {
+      "name": "Unnamed Point",
+      "reason": "No usable qualified proper-name label; generic object word, technical URL/ID or unnamed feature."
+    },
+    {
+      "name": "Unnamed Point",
+      "reason": "No usable qualified proper-name label; generic object word, technical URL/ID or unnamed feature."
+    },
+    {
+      "name": "Olympia",
+      "id": "734890",
+      "reason": "Misleading entity/planet alias: preserve the actual Earth place name without treating a god-group or the Martian Olympus Mons as an English Earth-mountain answer."
+    },
+    {
+      "name": "Olympus mons",
+      "id": "734890",
+      "reason": "Misleading entity/planet alias: preserve the actual Earth place name without treating a god-group or the Martian Olympus Mons as an English Earth-mountain answer."
+    },
+    {
+      "name": "ollimposeuui 12sin",
+      "id": "734890",
+      "reason": "Misleading entity/planet alias: preserve the actual Earth place name without treating a god-group or the Martian Olympus Mons as an English Earth-mountain answer."
+    },
+    {
+      "name": "올림포스의 12신",
+      "id": "734890",
+      "reason": "Misleading entity/planet alias: preserve the actual Earth place name without treating a god-group or the Martian Olympus Mons as an English Earth-mountain answer."
+    },
+    {
+      "name": "Cave",
+      "reason": "No usable qualified proper-name label; generic object word, technical URL/ID or unnamed feature."
+    },
+    {
+      "name": "Cave",
+      "reason": "No usable qualified proper-name label; generic object word, technical URL/ID or unnamed feature."
+    },
+    {
+      "name": "Gorge",
+      "reason": "No usable qualified proper-name label; generic object word, technical URL/ID or unnamed feature."
+    },
+    {
+      "name": "Dam",
+      "reason": "No usable qualified proper-name label; generic object word, technical URL/ID or unnamed feature."
+    }
+  ],
+  "islands-archipelagos": [
+    {
+      "name": "Unknown Island",
+      "reason": "No usable qualified proper-name label; generic object word, technical URL/ID or unnamed feature."
+    },
+    {
+      "name": "Garden",
+      "reason": "No usable qualified proper-name label; generic object word, technical URL/ID or unnamed feature."
+    },
+    {
+      "name": "Unknown Island",
+      "reason": "No usable qualified proper-name label; generic object word, technical URL/ID or unnamed feature."
+    },
+    {
+      "name": "Beach",
+      "reason": "No usable qualified proper-name label; generic object word, technical URL/ID or unnamed feature."
+    },
+    {
+      "name": "The Desert",
+      "reason": "No usable qualified proper-name label; generic object word, technical URL/ID or unnamed feature."
+    },
+    {
+      "name": "Island",
+      "reason": "No usable qualified proper-name label; generic object word, technical URL/ID or unnamed feature."
+    }
+  ],
+  "deserts": [
+    {
+      "name": "The Desert",
+      "reason": "No usable qualified proper-name label; generic object word, technical URL/ID or unnamed feature."
+    },
+    {
+      "name": "Monjes de la Pacana",
+      "reason": "Not a named desert: hotel, deserted settlement, generic description, valley or isolated rock formation."
+    },
+    {
+      "name": "Wadi Al-Hitan",
+      "reason": "Not a named desert: hotel, deserted settlement, generic description, valley or isolated rock formation."
+    },
+    {
+      "name": "Barren Landslides Areas",
+      "reason": "Not a named desert: hotel, deserted settlement, generic description, valley or isolated rock formation."
+    },
+    {
+      "name": "Sandy Desert",
+      "reason": "No usable qualified proper-name label; generic object word, technical URL/ID or unnamed feature."
+    },
+    {
+      "name": "Dessert Inn Hotel , Dessert Ryk",
+      "reason": "Not a named desert: hotel, deserted settlement, generic description, valley or isolated rock formation."
+    },
+    {
+      "name": "Jodszen",
+      "reason": "Not a named desert: hotel, deserted settlement, generic description, valley or isolated rock formation."
+    },
+    {
+      "name": "Theweln",
+      "reason": "Not a named desert: hotel, deserted settlement, generic description, valley or isolated rock formation."
+    },
+    {
+      "name": "Thompson Plateau",
+      "reason": "Not a named desert: hotel, deserted settlement, generic description, valley or isolated rock formation."
+    },
+    {
+      "name": "Greenland",
+      "reason": "Not a named desert: hotel, deserted settlement, generic description, valley or isolated rock formation."
+    },
+    {
+      "name": "Russian Arctic",
+      "reason": "Not a named desert: hotel, deserted settlement, generic description, valley or isolated rock formation."
+    }
+  ],
+  "beaches": [
+    {
+      "name": "Qargha Reservoir",
+      "reason": "The source lists a waterbody as a beach destination; it does not establish a named beach."
+    }
+  ],
+  "glaciers": [
+    {
+      "name": "Unknown Glacier",
+      "reason": "No usable qualified proper-name label; generic object word, technical URL/ID or unnamed feature."
+    },
+    {
+      "name": "Mawson Peak",
+      "reason": "A mountain, not a named glacial ice body."
+    }
+  ],
+  "caves": [],
+  "reservoirs": [
+    {
+      "name": "Reservoir",
+      "reason": "No usable qualified proper-name label; generic object word, technical URL/ID or unnamed feature."
+    },
+    {
+      "name": "Reservoir",
+      "reason": "No usable qualified proper-name label; generic object word, technical URL/ID or unnamed feature."
+    },
+    {
+      "name": "Reservoir",
+      "reason": "No usable qualified proper-name label; generic object word, technical URL/ID or unnamed feature."
+    },
+    {
+      "name": "Reservoir",
+      "reason": "No usable qualified proper-name label; generic object word, technical URL/ID or unnamed feature."
+    },
+    {
+      "name": "The Reservoir",
+      "reason": "No usable qualified proper-name label; generic object word, technical URL/ID or unnamed feature."
+    },
+    {
+      "name": "The Reservoir",
+      "reason": "No usable qualified proper-name label; generic object word, technical URL/ID or unnamed feature."
+    },
+    {
+      "name": "The Reservoir",
+      "reason": "No usable qualified proper-name label; generic object word, technical URL/ID or unnamed feature."
+    }
+  ],
+  "dams": [
+    {
+      "name": "The Dam",
+      "reason": "No usable qualified proper-name label; generic object word, technical URL/ID or unnamed feature."
+    },
+    {
+      "name": "Dam",
+      "reason": "No usable qualified proper-name label; generic object word, technical URL/ID or unnamed feature."
+    },
+    {
+      "name": "Dam",
+      "reason": "No usable qualified proper-name label; generic object word, technical URL/ID or unnamed feature."
+    },
+    {
+      "name": "Unnamed Tributary Barren Branch Dam",
+      "reason": "No usable qualified proper-name label; generic object word, technical URL/ID or unnamed feature."
+    },
+    {
+      "name": "Unnamed Tributary of Piney Creek Dam",
+      "reason": "No usable qualified proper-name label; generic object word, technical URL/ID or unnamed feature."
+    },
+    {
+      "name": "Unnamed Tributary of Plum Orchard Creek Dam",
+      "reason": "No usable qualified proper-name label; generic object word, technical URL/ID or unnamed feature."
+    },
+    {
+      "name": "Unnamed Lake on Tr-Sleepy Creek Dam",
+      "reason": "No usable qualified proper-name label; generic object word, technical URL/ID or unnamed feature."
+    },
+    {
+      "name": "Dam",
+      "reason": "No usable qualified proper-name label; generic object word, technical URL/ID or unnamed feature."
+    }
+  ],
+  "zoos": [
+    {
+      "name": "Aquarium",
+      "reason": "No usable qualified proper-name label; generic object word, technical URL/ID or unnamed feature."
+    }
+  ],
+  "named-forests": [
+    {
+      "name": "The Forest",
+      "reason": "No usable qualified proper-name label; generic object word, technical URL/ID or unnamed feature."
+    }
+  ],
+  "reefs-atolls": [
+    {
+      "name": "Gulf Reef Mexico Arrecifes de Cozumel National Park",
+      "reason": "Directory/table entry denotes a region, plain island, marine park or broad plateau rather than a reef/atoll name. Do not infer membership just from an illustrative location."
+    },
+    {
+      "name": "Blake Plateau",
+      "reason": "Directory/table entry denotes a region, plain island, marine park or broad plateau rather than a reef/atoll name. Do not infer membership just from an illustrative location."
+    },
+    {
+      "name": "Bunaken National Marine Park",
+      "reason": "Directory/table entry denotes a region, plain island, marine park or broad plateau rather than a reef/atoll name. Do not infer membership just from an illustrative location."
+    },
+    {
+      "name": "Coral Triangle",
+      "reason": "Directory/table entry denotes a region, plain island, marine park or broad plateau rather than a reef/atoll name. Do not infer membership just from an illustrative location."
+    },
+    {
+      "name": "Isla Pérez",
+      "reason": "Directory/table entry denotes a region, plain island, marine park or broad plateau rather than a reef/atoll name. Do not infer membership just from an illustrative location."
+    },
+    {
+      "name": "Minami-Tori-shima",
+      "reason": "Directory/table entry denotes a region, plain island, marine park or broad plateau rather than a reef/atoll name. Do not infer membership just from an illustrative location."
+    },
+    {
+      "name": "Miri-Sibuti Coral Reef National Park",
+      "reason": "Directory/table entry denotes a region, plain island, marine park or broad plateau rather than a reef/atoll name. Do not infer membership just from an illustrative location."
+    },
+    {
+      "name": "Necker Island",
+      "reason": "Directory/table entry denotes a region, plain island, marine park or broad plateau rather than a reef/atoll name. Do not infer membership just from an illustrative location."
+    },
+    {
+      "name": "Ningaloo Coast",
+      "reason": "Directory/table entry denotes a region, plain island, marine park or broad plateau rather than a reef/atoll name. Do not infer membership just from an illustrative location."
+    }
+  ],
+  "capes-headlands": [
+    {
+      "name": "Island",
+      "reason": "No usable qualified proper-name label; generic object word, technical URL/ID or unnamed feature."
+    }
+  ],
+  "botanic-gardens": [
+    {
+      "name": "Botanical Garden",
+      "reason": "No usable qualified proper-name label; generic object word, technical URL/ID or unnamed feature."
+    },
+    {
+      "name": "Botanical Garden",
+      "reason": "No usable qualified proper-name label; generic object word, technical URL/ID or unnamed feature."
+    },
+    {
+      "name": "Botanical Garden",
+      "reason": "No usable qualified proper-name label; generic object word, technical URL/ID or unnamed feature."
+    },
+    {
+      "name": "Botanical Garden",
+      "reason": "No usable qualified proper-name label; generic object word, technical URL/ID or unnamed feature."
+    },
+    {
+      "name": "Botanical Garden",
+      "reason": "No usable qualified proper-name label; generic object word, technical URL/ID or unnamed feature."
+    },
+    {
+      "name": "The African Fan Palms",
+      "reason": "Index or country/place listing, not an individual named garden. A location alone does not prove a garden."
+    },
+    {
+      "name": "National Herbarium, Islamabad",
+      "reason": "Index or country/place listing, not an individual named garden. A location alone does not prove a garden."
+    },
+    {
+      "name": "Palestine Museum of Natural History",
+      "reason": "Index or country/place listing, not an individual named garden. A location alone does not prove a garden."
+    },
+    {
+      "name": "Melbourne parks and gardens",
+      "reason": "Index or country/place listing, not an individual named garden. A location alone does not prove a garden."
+    }
+  ],
+  "valleys-canyons-gorges": [
+    {
+      "name": "Unknown Gulch",
+      "reason": "No usable qualified proper-name label; generic object word, technical URL/ID or unnamed feature."
+    },
+    {
+      "name": "Barron River (Ontario)",
+      "reason": "A country or river included as a location in a list does not itself name the valley/canyon. Preserve the independently named canyon instead."
+    },
+    {
+      "name": "Taiwan",
+      "reason": "Country link in the published list is a location, not a canyon name."
+    }
+  ]
+}

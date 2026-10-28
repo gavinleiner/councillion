@@ -1,0 +1,1015 @@
+{
+  "musical-duos": {
+    "add": [
+      {
+        "id": "Q1058505",
+        "name": "Chad & Jeremy",
+        "aliases": [
+          "Chad and Jeremy"
+        ],
+        "sitelinks": 13,
+        "reference": "https://www.wikidata.org/wiki/Q1058505",
+        "classificationEvidence": "English band"
+      },
+      {
+        "id": "Q1087706",
+        "name": "Chromeo",
+        "aliases": [],
+        "sitelinks": 17,
+        "reference": "https://www.wikidata.org/wiki/Q1087706",
+        "classificationEvidence": "Canadian musical duo"
+      },
+      {
+        "id": "Q1105391",
+        "name": "CocoRosie",
+        "aliases": [
+          "Coco Rosie"
+        ],
+        "sitelinks": 26,
+        "reference": "https://www.wikidata.org/wiki/Q1105391",
+        "classificationEvidence": "American musical group"
+      },
+      {
+        "id": "Q11350174",
+        "name": "Loggins & Messina",
+        "aliases": [
+          "Loggins and Messina",
+          "Tom & Jerry",
+          "Tom and Jerry"
+        ],
+        "sitelinks": 9,
+        "reference": "https://www.wikidata.org/wiki/Q11350174",
+        "classificationEvidence": "American rock-pop duo"
+      },
+      {
+        "id": "Q1167969",
+        "name": "Karmin",
+        "aliases": [],
+        "sitelinks": 27,
+        "reference": "https://www.wikidata.org/wiki/Q1167969",
+        "classificationEvidence": "American musical group; pop duo"
+      },
+      {
+        "id": "Q117522",
+        "name": "Groove Armada",
+        "aliases": [],
+        "sitelinks": 25,
+        "reference": "https://www.wikidata.org/wiki/Q117522",
+        "classificationEvidence": "British electronic music duo"
+      },
+      {
+        "id": "Q1228440",
+        "name": "Disclosure",
+        "aliases": [
+          "Guy Lawrence",
+          "Howard Lawrence"
+        ],
+        "sitelinks": 27,
+        "reference": "https://www.wikidata.org/wiki/Q1228440",
+        "classificationEvidence": "English electronic music duo"
+      },
+      {
+        "id": "Q123561022",
+        "name": "Coco & Clair Clair",
+        "aliases": [],
+        "sitelinks": 2,
+        "reference": "https://www.wikidata.org/wiki/Q123561022",
+        "classificationEvidence": "American pop rap duo"
+      },
+      {
+        "id": "Q1240655",
+        "name": "The Civil Wars",
+        "aliases": [],
+        "sitelinks": 19,
+        "reference": "https://www.wikidata.org/wiki/Q1240655",
+        "classificationEvidence": "American alternative country music duo (2009–2014)"
+      },
+      {
+        "id": "Q1256943",
+        "name": "Peter and Gordon",
+        "aliases": [
+          "Peter&Gordon"
+        ],
+        "sitelinks": 19,
+        "reference": "https://www.wikidata.org/wiki/Q1256943",
+        "classificationEvidence": "British pop duo"
+      },
+      {
+        "id": "Q1344131",
+        "name": "Sparks",
+        "aliases": [
+          "Halfnelson",
+          "The Sparks"
+        ],
+        "sitelinks": 28,
+        "reference": "https://www.wikidata.org/wiki/Q1344131",
+        "classificationEvidence": "American rock and pop band"
+      },
+      {
+        "id": "Q140053",
+        "name": "Boy",
+        "aliases": [],
+        "sitelinks": 8,
+        "reference": "https://www.wikidata.org/wiki/Q140053",
+        "classificationEvidence": "Swiss/German pop duo"
+      },
+      {
+        "id": "Q140295",
+        "name": "Zager and Evans",
+        "aliases": [],
+        "sitelinks": 17,
+        "reference": "https://www.wikidata.org/wiki/Q140295",
+        "classificationEvidence": "pop rock group from Nebraska, USA"
+      },
+      {
+        "id": "Q14594632",
+        "name": "Say Lou Lou",
+        "aliases": [
+          "Saint Lou Lou"
+        ],
+        "sitelinks": 11,
+        "reference": "https://www.wikidata.org/wiki/Q14594632",
+        "classificationEvidence": "twin sister musical duo from Australia and Sweden"
+      },
+      {
+        "id": "Q15964414",
+        "name": "Odesza",
+        "aliases": [
+          "ODESZA"
+        ],
+        "sitelinks": 15,
+        "reference": "https://www.wikidata.org/wiki/Q15964414",
+        "classificationEvidence": "American electronic music duo"
+      },
+      {
+        "id": "Q161723",
+        "name": "t.A.T.u.",
+        "aliases": [
+          "Tatu",
+          "Taty",
+          "this girl loves that girl"
+        ],
+        "sitelinks": 66,
+        "reference": "https://www.wikidata.org/wiki/Q161723",
+        "classificationEvidence": "Russian music duo"
+      },
+      {
+        "id": "Q16632343",
+        "name": "Royal Blood",
+        "aliases": [],
+        "sitelinks": 21,
+        "reference": "https://www.wikidata.org/wiki/Q16632343",
+        "classificationEvidence": "British rock duo"
+      },
+      {
+        "id": "Q16800947",
+        "name": "Ibeyi",
+        "aliases": [],
+        "sitelinks": 16,
+        "reference": "https://www.wikidata.org/wiki/Q16800947",
+        "classificationEvidence": "Cuban/Venezuelan musical duo"
+      },
+      {
+        "id": "Q1682401",
+        "name": "Jan and Dean",
+        "aliases": [
+          "Jan & Dean"
+        ],
+        "sitelinks": 18,
+        "reference": "https://www.wikidata.org/wiki/Q1682401",
+        "classificationEvidence": "American musical duo"
+      },
+      {
+        "id": "Q173790",
+        "name": "Roxette",
+        "aliases": [],
+        "sitelinks": 63,
+        "reference": "https://www.wikidata.org/wiki/Q173790",
+        "classificationEvidence": "Swedish musical group; pop duo"
+      },
+      {
+        "id": "Q1779353",
+        "name": "Kollektiv Turmstrasse",
+        "aliases": [
+          "Kollektiv Turmstraße"
+        ],
+        "sitelinks": 5,
+        "reference": "https://www.wikidata.org/wiki/Q1779353",
+        "classificationEvidence": "Producer & Dj Nico Plagemann"
+      },
+      {
+        "id": "Q1811235",
+        "name": "MSTRKRFT",
+        "aliases": [
+          "BLUE BIRD"
+        ],
+        "sitelinks": 12,
+        "reference": "https://www.wikidata.org/wiki/Q1811235",
+        "classificationEvidence": "Canadian electronic music duo"
+      },
+      {
+        "id": "Q1813380",
+        "name": "The Weepies",
+        "aliases": [],
+        "sitelinks": 8,
+        "reference": "https://www.wikidata.org/wiki/Q1813380",
+        "classificationEvidence": "indie pop-folk duo"
+      },
+      {
+        "id": "Q185828",
+        "name": "Daft Punk",
+        "aliases": [],
+        "sitelinks": 70,
+        "reference": "https://www.wikidata.org/wiki/Q185828",
+        "classificationEvidence": "French electronic duo"
+      },
+      {
+        "id": "Q191915",
+        "name": "Zero 7",
+        "aliases": [],
+        "sitelinks": 22,
+        "reference": "https://www.wikidata.org/wiki/Q191915",
+        "classificationEvidence": "English musical duo"
+      },
+      {
+        "id": "Q193218",
+        "name": "Röyksopp",
+        "aliases": [
+          "Royksopp"
+        ],
+        "sitelinks": 42,
+        "reference": "https://www.wikidata.org/wiki/Q193218",
+        "classificationEvidence": "Norwegian musical group; electronica duo"
+      },
+      {
+        "id": "Q201811",
+        "name": "Jedward",
+        "aliases": [],
+        "sitelinks": 44,
+        "reference": "https://www.wikidata.org/wiki/Q201811",
+        "classificationEvidence": "Irish musical duo"
+      },
+      {
+        "id": "Q2048748",
+        "name": "Pan-Pot",
+        "aliases": [
+          "Tassilo Ippenberger and Thomas Benedix"
+        ],
+        "sitelinks": 8,
+        "reference": "https://www.wikidata.org/wiki/Q2048748",
+        "classificationEvidence": "German DJs and music producers"
+      },
+      {
+        "id": "Q205780",
+        "name": "Tenacious D",
+        "aliases": [
+          "The D"
+        ],
+        "sitelinks": 44,
+        "reference": "https://www.wikidata.org/wiki/Q205780",
+        "classificationEvidence": "American comedy rock duo"
+      },
+      {
+        "id": "Q20615",
+        "name": "Knife Party",
+        "aliases": [],
+        "sitelinks": 25,
+        "reference": "https://www.wikidata.org/wiki/Q20615",
+        "classificationEvidence": "Australian electronic music band"
+      },
+      {
+        "id": "Q2061634",
+        "name": "The Presets",
+        "aliases": [],
+        "sitelinks": 8,
+        "reference": "https://www.wikidata.org/wiki/Q2061634",
+        "classificationEvidence": "Australian electronic music duo"
+      },
+      {
+        "id": "Q20684392",
+        "name": "Knower",
+        "aliases": [
+          "KNOWER",
+          "Louis Cole and Genevieve Artadi"
+        ],
+        "sitelinks": 8,
+        "reference": "https://www.wikidata.org/wiki/Q20684392",
+        "classificationEvidence": "American independent electronic music duo"
+      },
+      {
+        "id": "Q20711766",
+        "name": "Maribou State",
+        "aliases": [],
+        "sitelinks": 5,
+        "reference": "https://www.wikidata.org/wiki/Q20711766",
+        "classificationEvidence": "English electronic music duo"
+      },
+      {
+        "id": "Q207706",
+        "name": "Eurythmics",
+        "aliases": [
+          "bonkars"
+        ],
+        "sitelinks": 49,
+        "reference": "https://www.wikidata.org/wiki/Q207706",
+        "classificationEvidence": "British new wave duo"
+      },
+      {
+        "id": "Q21583944",
+        "name": "Kiasmos",
+        "aliases": [],
+        "sitelinks": 9,
+        "reference": "https://www.wikidata.org/wiki/Q21583944",
+        "classificationEvidence": "Faroese-Icelandic band"
+      },
+      {
+        "id": "Q223495",
+        "name": "The Carpenters",
+        "aliases": [
+          "Carpenters"
+        ],
+        "sitelinks": 195,
+        "reference": "https://www.wikidata.org/wiki/Q223495",
+        "classificationEvidence": "American musical group; vocal sibling duo"
+      },
+      {
+        "id": "Q24450573",
+        "name": "Chloe x Halle",
+        "aliases": [],
+        "sitelinks": 18,
+        "reference": "https://www.wikidata.org/wiki/Q24450573",
+        "classificationEvidence": "American R&B duo"
+      },
+      {
+        "id": "Q24901294",
+        "name": "Let's Eat Grandma",
+        "aliases": [],
+        "sitelinks": 10,
+        "reference": "https://www.wikidata.org/wiki/Q24901294",
+        "classificationEvidence": "British pop band"
+      },
+      {
+        "id": "Q2529057",
+        "name": "The Pierces",
+        "aliases": [
+          "Allison Pierce",
+          "Catherine Pierce",
+          "Pierces"
+        ],
+        "sitelinks": 15,
+        "reference": "https://www.wikidata.org/wiki/Q2529057",
+        "classificationEvidence": "American band"
+      },
+      {
+        "id": "Q268160",
+        "name": "The White Stripes",
+        "aliases": [
+          "White Stripes"
+        ],
+        "sitelinks": 63,
+        "reference": "https://www.wikidata.org/wiki/Q268160",
+        "classificationEvidence": "American rock band"
+      },
+      {
+        "id": "Q269091",
+        "name": "Tears for Fears",
+        "aliases": [],
+        "sitelinks": 48,
+        "reference": "https://www.wikidata.org/wiki/Q269091",
+        "classificationEvidence": "English pop/rock band"
+      },
+      {
+        "id": "Q269646",
+        "name": "Aly & AJ",
+        "aliases": [
+          "78violet"
+        ],
+        "sitelinks": 29,
+        "reference": "https://www.wikidata.org/wiki/Q269646",
+        "classificationEvidence": "American band"
+      },
+      {
+        "id": "Q2761963",
+        "name": "Pnau",
+        "aliases": [],
+        "sitelinks": 14,
+        "reference": "https://www.wikidata.org/wiki/Q2761963",
+        "classificationEvidence": "Australian dance music trio"
+      },
+      {
+        "id": "Q285108",
+        "name": "Suicide",
+        "aliases": [],
+        "sitelinks": 22,
+        "reference": "https://www.wikidata.org/wiki/Q285108",
+        "classificationEvidence": "American musical duo"
+      },
+      {
+        "id": "Q28855240",
+        "name": "Bicep",
+        "aliases": [],
+        "sitelinks": 8,
+        "reference": "https://www.wikidata.org/wiki/Q28855240",
+        "classificationEvidence": "British electronic music duo"
+      },
+      {
+        "id": "Q289622",
+        "name": "The Proclaimers",
+        "aliases": [
+          "Proclaimers"
+        ],
+        "sitelinks": 26,
+        "reference": "https://www.wikidata.org/wiki/Q289622",
+        "classificationEvidence": "Scottish musical group"
+      },
+      {
+        "id": "Q318452",
+        "name": "Air",
+        "aliases": [
+          "Aie",
+          "Air (band)"
+        ],
+        "sitelinks": 44,
+        "reference": "https://www.wikidata.org/wiki/Q318452",
+        "classificationEvidence": "French electronic music band"
+      },
+      {
+        "id": "Q329178",
+        "name": "Justice",
+        "aliases": [
+          "Justice (electronic band)",
+          "Jus†icE",
+          "Jus†ice"
+        ],
+        "sitelinks": 40,
+        "reference": "https://www.wikidata.org/wiki/Q329178",
+        "classificationEvidence": "French electronic music band"
+      },
+      {
+        "id": "Q391969",
+        "name": "MGMT",
+        "aliases": [
+          "The Management"
+        ],
+        "sitelinks": 41,
+        "reference": "https://www.wikidata.org/wiki/Q391969",
+        "classificationEvidence": "American rock band"
+      },
+      {
+        "id": "Q4035408",
+        "name": "Brewer & Shipley",
+        "aliases": [
+          "Brewer And Shipley",
+          "Brewer and Shipley"
+        ],
+        "sitelinks": 8,
+        "reference": "https://www.wikidata.org/wiki/Q4035408",
+        "classificationEvidence": "American musical group; folk rock duo"
+      },
+      {
+        "id": "Q4039264",
+        "name": "Garfunkel and Oates",
+        "aliases": [
+          "Garfunkel & Oates"
+        ],
+        "sitelinks": 11,
+        "reference": "https://www.wikidata.org/wiki/Q4039264",
+        "classificationEvidence": "American comedy-folk duo"
+      },
+      {
+        "id": "Q472595",
+        "name": "OutKast",
+        "aliases": [
+          "Out Kast",
+          "Outkast",
+          "Two Shades Deep"
+        ],
+        "sitelinks": 43,
+        "reference": "https://www.wikidata.org/wiki/Q472595",
+        "classificationEvidence": "American hip hop duo"
+      },
+      {
+        "id": "Q484885",
+        "name": "Erasure",
+        "aliases": [],
+        "sitelinks": 57,
+        "reference": "https://www.wikidata.org/wiki/Q484885",
+        "classificationEvidence": "British synthpop duo"
+      },
+      {
+        "id": "Q484918",
+        "name": "Simon & Garfunkel",
+        "aliases": [
+          "Simon and Garfunkel",
+          "Tom & Jerry",
+          "Tom and Jerry"
+        ],
+        "sitelinks": 70,
+        "reference": "https://www.wikidata.org/wiki/Q484918",
+        "classificationEvidence": "American folk music duo"
+      },
+      {
+        "id": "Q485625",
+        "name": "Pet Shop Boys",
+        "aliases": [
+          "Petshop Boys"
+        ],
+        "sitelinks": 59,
+        "reference": "https://www.wikidata.org/wiki/Q485625",
+        "classificationEvidence": "British synth-pop duo"
+      },
+      {
+        "id": "Q48978",
+        "name": "LMFAO",
+        "aliases": [
+          "Sexe Duo"
+        ],
+        "sitelinks": 45,
+        "reference": "https://www.wikidata.org/wiki/Q48978",
+        "classificationEvidence": "American electronic dance music duo"
+      },
+      {
+        "id": "Q50975",
+        "name": "The Crystal Method",
+        "aliases": [
+          "Crystal Method"
+        ],
+        "sitelinks": 15,
+        "reference": "https://www.wikidata.org/wiki/Q50975",
+        "classificationEvidence": "American electronic music band (formed 1993)"
+      },
+      {
+        "id": "Q515942",
+        "name": "Orbital",
+        "aliases": [],
+        "sitelinks": 24,
+        "reference": "https://www.wikidata.org/wiki/Q515942",
+        "classificationEvidence": "English electronic music band"
+      },
+      {
+        "id": "Q5221647",
+        "name": "Daphne and Celeste",
+        "aliases": [
+          "Daphne DiConcetto, Celeste Cruz"
+        ],
+        "sitelinks": 1,
+        "reference": "https://www.wikidata.org/wiki/Q5221647",
+        "classificationEvidence": "American pop duo"
+      },
+      {
+        "id": "Q530994",
+        "name": "Booka Shade",
+        "aliases": [],
+        "sitelinks": 12,
+        "reference": "https://www.wikidata.org/wiki/Q530994",
+        "classificationEvidence": "German house music duo"
+      },
+      {
+        "id": "Q5377971",
+        "name": "England Dan & John Ford Coley",
+        "aliases": [],
+        "sitelinks": 10,
+        "reference": "https://www.wikidata.org/wiki/Q5377971",
+        "classificationEvidence": "American soft rock duo"
+      },
+      {
+        "id": "Q544018",
+        "name": "Basement Jaxx",
+        "aliases": [],
+        "sitelinks": 27,
+        "reference": "https://www.wikidata.org/wiki/Q544018",
+        "classificationEvidence": "British electronic dance music duo"
+      },
+      {
+        "id": "Q544322",
+        "name": "Angus & Julia Stone",
+        "aliases": [],
+        "sitelinks": 21,
+        "reference": "https://www.wikidata.org/wiki/Q544322",
+        "classificationEvidence": "Australian brother & sister duo-led folk, indie pop group, formed in 2006"
+      },
+      {
+        "id": "Q585470",
+        "name": "Simian Mobile Disco",
+        "aliases": [],
+        "sitelinks": 11,
+        "reference": "https://www.wikidata.org/wiki/Q585470",
+        "classificationEvidence": "English electronic music duo and production team"
+      },
+      {
+        "id": "Q606226",
+        "name": "The Black Keys",
+        "aliases": [
+          "Black Keys"
+        ],
+        "sitelinks": 43,
+        "reference": "https://www.wikidata.org/wiki/Q606226",
+        "classificationEvidence": "American rock band"
+      },
+      {
+        "id": "Q610228",
+        "name": "The Righteous Brothers",
+        "aliases": [
+          "Righteous Brothers"
+        ],
+        "sitelinks": 33,
+        "reference": "https://www.wikidata.org/wiki/Q610228",
+        "classificationEvidence": "American pop duo"
+      },
+      {
+        "id": "Q690138",
+        "name": "The Everly Brothers",
+        "aliases": [
+          "Everly Brothers"
+        ],
+        "sitelinks": 48,
+        "reference": "https://www.wikidata.org/wiki/Q690138",
+        "classificationEvidence": "American rock duo"
+      },
+      {
+        "id": "Q702332",
+        "name": "Digitalism",
+        "aliases": [],
+        "sitelinks": 15,
+        "reference": "https://www.wikidata.org/wiki/Q702332",
+        "classificationEvidence": "German electronic music duo"
+      },
+      {
+        "id": "Q722778",
+        "name": "Boards of Canada",
+        "aliases": [
+          "BoC",
+          "Hell Interface"
+        ],
+        "sitelinks": 31,
+        "reference": "https://www.wikidata.org/wiki/Q722778",
+        "classificationEvidence": "Scottish electronic music band"
+      },
+      {
+        "id": "Q72349",
+        "name": "Krewella",
+        "aliases": [],
+        "sitelinks": 29,
+        "reference": "https://www.wikidata.org/wiki/Q72349",
+        "classificationEvidence": "American band"
+      },
+      {
+        "id": "Q733182",
+        "name": "Hall & Oates",
+        "aliases": [
+          "Daryl Hall & John Oates",
+          "Daryl Hall John Oates",
+          "Daryl Hall and John Oates",
+          "Hall and Oates"
+        ],
+        "sitelinks": 34,
+        "reference": "https://www.wikidata.org/wiki/Q733182",
+        "classificationEvidence": "American musical duo composed of Daryl Hall and John Oates"
+      },
+      {
+        "id": "Q734756",
+        "name": "Tegan and Sara",
+        "aliases": [
+          "Sara & Tegan",
+          "Sara and Tegan",
+          "Tegan & Sara",
+          "Tegan Rain Quin and Sara Keirsten Quin"
+        ],
+        "sitelinks": 29,
+        "reference": "https://www.wikidata.org/wiki/Q734756",
+        "classificationEvidence": "Canadian duo"
+      },
+      {
+        "id": "Q744087",
+        "name": "Wham!",
+        "aliases": [
+          "Wham",
+          "Wham UK",
+          "Wham! U.K.",
+          "Wham! UK"
+        ],
+        "sitelinks": 47,
+        "reference": "https://www.wikidata.org/wiki/Q744087",
+        "classificationEvidence": "British pop band"
+      },
+      {
+        "id": "Q7502880",
+        "name": "Shovels & Rope",
+        "aliases": [
+          "Shovels and Rope"
+        ],
+        "sitelinks": 2,
+        "reference": "https://www.wikidata.org/wiki/Q7502880",
+        "classificationEvidence": "American music group"
+      },
+      {
+        "id": "Q763765",
+        "name": "Seals and Crofts",
+        "aliases": [
+          "Seals & Crofts"
+        ],
+        "sitelinks": 17,
+        "reference": "https://www.wikidata.org/wiki/Q763765",
+        "classificationEvidence": "American band"
+      },
+      {
+        "id": "Q7721993",
+        "name": "The Chainsmokers",
+        "aliases": [
+          "TCS"
+        ],
+        "sitelinks": 49,
+        "reference": "https://www.wikidata.org/wiki/Q7721993",
+        "classificationEvidence": "American electronic music duo"
+      },
+      {
+        "id": "Q7744878",
+        "name": "The Knocks",
+        "aliases": [],
+        "sitelinks": 6,
+        "reference": "https://www.wikidata.org/wiki/Q7744878",
+        "classificationEvidence": "American electronic music duo"
+      },
+      {
+        "id": "Q7751419",
+        "name": "The Milk Carton Kids",
+        "aliases": [
+          "Milk Carton Kids"
+        ],
+        "sitelinks": 4,
+        "reference": "https://www.wikidata.org/wiki/Q7751419",
+        "classificationEvidence": "American indie folk duo"
+      },
+      {
+        "id": "Q7857806",
+        "name": "Twenty One Pilots",
+        "aliases": [
+          "21P",
+          "T.O.P.",
+          "TOP",
+          "twenty one pilots"
+        ],
+        "sitelinks": 61,
+        "reference": "https://www.wikidata.org/wiki/Q7857806",
+        "classificationEvidence": "American musical duo"
+      },
+      {
+        "id": "Q799809",
+        "name": "Bag Raiders",
+        "aliases": [],
+        "sitelinks": 9,
+        "reference": "https://www.wikidata.org/wiki/Q799809",
+        "classificationEvidence": "Australian electronic musical group"
+      },
+      {
+        "id": "Q808703",
+        "name": "Icona Pop",
+        "aliases": [],
+        "sitelinks": 31,
+        "reference": "https://www.wikidata.org/wiki/Q808703",
+        "classificationEvidence": "Swedish DJ duo"
+      },
+      {
+        "id": "Q829725",
+        "name": "Modeselektor",
+        "aliases": [
+          "MDSLKTR"
+        ],
+        "sitelinks": 14,
+        "reference": "https://www.wikidata.org/wiki/Q829725",
+        "classificationEvidence": "band"
+      },
+      {
+        "id": "Q868265",
+        "name": "Flight of the Conchords",
+        "aliases": [
+          "FOTC"
+        ],
+        "sitelinks": 27,
+        "reference": "https://www.wikidata.org/wiki/Q868265",
+        "classificationEvidence": "New Zealand-based musical comedy duo"
+      },
+      {
+        "id": "Q97123456",
+        "name": "Magdalena Bay",
+        "aliases": [],
+        "sitelinks": 14,
+        "reference": "https://www.wikidata.org/wiki/Q97123456",
+        "classificationEvidence": "American musical group; synth-pop duo"
+      },
+      {
+        "id": "Q975437",
+        "name": "First Aid Kit",
+        "aliases": [],
+        "sitelinks": 18,
+        "reference": "https://www.wikidata.org/wiki/Q975437",
+        "classificationEvidence": "Swedish musical group; sibling duo"
+      },
+      {
+        "id": "editorial-chemical-brothers",
+        "name": "The Chemical Brothers",
+        "aliases": [
+          "Chemical Brothers"
+        ],
+        "sitelinks": 80,
+        "reference": "https://www.thechemicalbrothers.com/",
+        "classificationEvidence": "Official site identifies Tom Rowlands and Ed Simons; a named recording duo."
+      },
+      {
+        "id": "editorial-autechre",
+        "name": "Autechre",
+        "aliases": [],
+        "sitelinks": 45,
+        "reference": "https://bleep.com/artist/71-autechre?lang=en_US",
+        "classificationEvidence": "Warp-owned Bleep identifies Rob Brown and Sean Booth as the electronic duo."
+      },
+      {
+        "id": "Q113436721",
+        "name": "DOMi & JD Beck",
+        "aliases": [
+          "Domi and JD Beck",
+          "DOMi & JD BECK"
+        ],
+        "sitelinks": 18,
+        "reference": "https://www.bluenote.com/artist/domi-jd-beck/",
+        "classificationEvidence": "Their record label identifies the named jazz duo."
+      }
+    ],
+    "aliases": {
+      "Q223495": [
+        "Carpenters"
+      ],
+      "Q484918": [
+        "Simon and Garfunkel",
+        "Simon & Garfunkel",
+        "Tom and Jerry",
+        "Tom & Jerry"
+      ],
+      "Q193218": [
+        "Royksopp",
+        "Röyksopp"
+      ],
+      "Q5377971": [
+        "England Dan and John Ford Coley"
+      ],
+      "Q4035408": [
+        "Brewer and Shipley"
+      ],
+      "Q7502880": [
+        "Shovels and Rope"
+      ],
+      "Q1058505": [
+        "Chad and Jeremy"
+      ],
+      "Q1682401": [
+        "Jan & Dean"
+      ],
+      "Q11350174": [
+        "Loggins and Messina"
+      ],
+      "Q763765": [
+        "Seals & Crofts"
+      ],
+      "Q544322": [
+        "Angus and Julia Stone"
+      ],
+      "Q269646": [
+        "Aly and AJ"
+      ],
+      "Q5221647": [
+        "Daphne & Celeste"
+      ]
+    },
+    "note": "The independent 89-name challenge list exposed broad-group type gaps. Named duo lineups and former duo lineups were individually checked; Pnau and Kollektiv Turmstrasse qualify as historical duos. Duplicate earlier Simon/Garfunkel act identity is held and merged into the surviving act. Do not import similarly named larger Air, Justice or Boy groups from a label-only lookup.",
+    "hold": {
+      "Q113550516": "Paul Simon and Art Garfunkel's earlier Tom and Jerry name is an alias of the same act, not a second answer identity."
+    }
+  },
+  "museums": {
+    "add": [
+      {
+        "id": "manual-basketball-hall-of-fame",
+        "name": "Naismith Memorial Basketball Hall of Fame",
+        "aliases": [
+          "Basketball Hall of Fame",
+          "Naismith Basketball Hall of Fame"
+        ],
+        "sitelinks": 45
+      }
+    ],
+    "aliases": {
+      "Q19675": [
+        "Louvre",
+        "The Louvre"
+      ],
+      "Q160236": [
+        "The Met",
+        "Met Museum"
+      ],
+      "Q188740": [
+        "MoMA",
+        "Museum of Modern Art New York"
+      ],
+      "Q213322": [
+        "V&A"
+      ],
+      "Q1414079": [
+        "Museum of Science and Industry Chicago",
+        "Museum of Science and Industry",
+        "Griffin Museum of Science and Industry",
+        "MSI",
+        "Griffin MSI"
+      ],
+      "Q178065": [
+        "Centre Pompidou",
+        "Pompidou Center"
+      ],
+      "Q1960500": [
+        "Palace Museum Beijing",
+        "Forbidden City Museum"
+      ],
+      "Q201219": [
+        "Egyptian Museum Cairo",
+        "Egyptian Museum in Cairo"
+      ],
+      "Q758657": [
+        "Auckland War Memorial Museum",
+        "Auckland Museum"
+      ],
+      "Q841506": [
+        "Borghese Gallery"
+      ],
+      "Q809892": [
+        "National Baseball Hall of Fame",
+        "Baseball Hall of Fame"
+      ]
+    },
+    "note": "Documented public names, not generated initials. Louvre is the museum's own English brand. V&A is the institution's official brand.",
+    "actualShortNames": [
+      "MSI"
+    ],
+    "references": [
+      "https://www.griffinmsi.org/",
+      "https://www.hoophall.com/",
+      "https://baseballhall.org/",
+      "https://www.centrepompidou.fr/en/",
+      "https://www.aucklandmuseum.com/",
+      "https://galleriaborghese.beniculturali.it/",
+      "https://www.mcsarajevo.ba/tunel-spasa",
+      "https://www.visitsarajevo.ba/listings/monument-complex-tunnel-d-b/"
+    ],
+    "removeGenericAliases": [
+      "Museum",
+      "Art museum"
+    ],
+    "hold": {
+      "Q108908800": "Generic category placeholder; no usable proper museum name in the label. Actual named institutions are retained; a generic alias is removed separately.",
+      "Q113532517": "Generic category placeholder; no usable proper museum name in the label. Actual named institutions are retained; a generic alias is removed separately.",
+      "Q55360890": "Generic category placeholder; no usable proper museum name in the label. Actual named institutions are retained; a generic alias is removed separately.",
+      "Q98608217": "Generic category placeholder; no usable proper museum name in the label. Actual named institutions are retained; a generic alias is removed separately."
+    }
+  },
+  "mountain-ranges": {
+    "add": [
+      {
+        "id": "manual-scandes",
+        "name": "Scandinavian Mountains",
+        "aliases": [
+          "Scandes"
+        ],
+        "sitelinks": 60
+      },
+      {
+        "id": "manual-altai",
+        "name": "Altai Mountains",
+        "aliases": [
+          "Altai",
+          "Altay Mountains"
+        ],
+        "sitelinks": 60
+      },
+      {
+        "id": "manual-alaska",
+        "name": "Alaska Range",
+        "aliases": [],
+        "sitelinks": 60
+      }
+    ],
+    "aliases": {
+      "Q1422867": [
+        "Gamburtsev Mountains",
+        "Gamburtsev Subglacial Mountains"
+      ],
+      "Q333711": [
+        "Lebanon Mountains"
+      ]
+    },
+    "note": "Common scientific name variants of the same physical range; no separate answer identity for an alternate name.",
+    "references": [
+      "https://whc.unesco.org/en/list/768/",
+      "https://www.nps.gov/articles/denali.htm",
+      "https://www.naturvardsverket.se/4ac4b2/contentassets/ef0795d1c7434cb4833ec4b9170e95f8/vl-6170-alpinakalkgrasmarker.pdf",
+      "https://www.bas.ac.uk/project/agap/"
+    ]
+  }
+}

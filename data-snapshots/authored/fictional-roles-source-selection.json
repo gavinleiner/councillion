@@ -1,0 +1,26 @@
+{
+  "questionCount": 1,
+  "questions": {
+    "authored-fictional-spies": {
+      "questions": 1,
+      "canonicalAnswers": 318,
+      "originalCommonProbes": 34,
+      "tiers": {
+        "85": 270,
+        "30": 24,
+        "60": 14,
+        "100": 1,
+        "10": 9
+      },
+      "reviewedSourceRows": 373,
+      "heldSourceLeads": 42,
+      "scope": "Named fictional intelligence agents, spies, spymasters and documented clandestine/covert operatives from any medium count, including covert support agents and private fictional agencies. A secret identity, ordinary detective/police work, a group/show title, performer or an unnamed generic agent is not automatically a spy. Actual aliases share identity; different characters, clones and officeholders are not merged merely because they share a codename.",
+      "sourceRoles": "Named intelligence/covert operatives; actor, group, series, mascot and ordinary police/detective-only source leads are held. Source occurrence is not independent primary proof.",
+      "identity": "Explicit public aliases only; different people, Snakes, codenames and franchises retain their identities.",
+      "numericCodes": "Existing pack opt-in preserves full numeric tokens. Fabricated decimal agent codes are not exact answers.",
+      "admission": "Only reviewed-standard/admission.json approves normal play. Unfinished scientist/doctor research is not admitted.",
+      "commonNameRepair": "Gru is the studio-published AVL-agent name, with secondary full-name alias Felonious Gru. Source typo Felonius is not an exact alias."
+    }
+  },
+  "status": "Source/identity decisions for ONE whole subject; final development gameplay checks are recorded in attribution and admission."
+}

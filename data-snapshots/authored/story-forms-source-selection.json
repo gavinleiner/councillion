@@ -1,0 +1,15 @@
+{
+  "questionCount": 2,
+  "scope": "Two independently proposed whole subjects, not thousands of row/title/tag prompts.",
+  "questions": {
+    "fairy-tales": {
+      "sourceRows": 1951,
+      "heldRows": 14
+    },
+    "literary-genres-forms": {
+      "sourceRows": 492,
+      "heldRows": 82
+    }
+  },
+  "limitations": "Complete captured fairy-title tables and primary collection contents; genre main-list sections were audited against actual written-form eligibility and primary authority omissions. Not a claim to capture every tale or genre ever. Source access failures are recorded separately."
+}

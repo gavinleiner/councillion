@@ -1,0 +1,291 @@
+[
+  {
+    "key": "fipat2",
+    "url": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+    "error": "cryptography>=3.1 is required for AES algorithm"
+  },
+  {
+    "key": "fipat4",
+    "url": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-4.pdf",
+    "error": "cryptography>=3.1 is required for AES algorithm"
+  },
+  {
+    "key": "osha-ppe",
+    "url": "https://www.osha.gov/sites/default/files/publications/OSHA3151.pdf",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "key": "hse-ppe",
+    "url": "https://www.hse.gov.uk/ppe/using-the-right-type-of-ppe.htm",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "key": "nikoli",
+    "url": "https://www.nikoli.com/en/puzzles/",
+    "status": 200,
+    "bytes": 43309,
+    "sha256": "555000b6829b42410e321112b635555083451625a32542791dcaa3f1d1ca5e51",
+    "retrieved": "2026-10-27T14:48:05.827230+00:00"
+  },
+  {
+    "key": "nikoli-jp",
+    "url": "https://www.nikoli.co.jp/en/category/en/",
+    "status": 200,
+    "bytes": 99632,
+    "sha256": "15be4edd2c67c5b71eeb95d79c647335b7c79e14a976e9903e67f994d9ce2b4d",
+    "retrieved": "2026-10-27T14:48:06.176023+00:00"
+  },
+  {
+    "key": "puzzlemuseum",
+    "url": "https://www.puzzlemuseum.com/class/puz-class-2-classification.htm",
+    "status": 200,
+    "bytes": 14915,
+    "sha256": "6bb9419514a7cc4cd52eb17a03c378383b2f427082444d163003ffb8e042d247",
+    "retrieved": "2026-10-27T14:48:05.294943+00:00"
+  },
+  {
+    "key": "noaa-observations",
+    "url": "https://www.noaa.gov/education/resource-collections/weather-atmosphere/weather-observations",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "key": "nws-glossary",
+    "url": "https://www.weather.gov/otx/Full_Weather_Glossary",
+    "status": 200,
+    "bytes": 140629,
+    "sha256": "fcb5112f71419c57a12652168bd40f2fd520a0691e9a307a2939ace4100ed8b2",
+    "retrieved": "2026-10-27T14:48:06.611622+00:00"
+  },
+  {
+    "key": "epa-radiation",
+    "url": "https://www.epa.gov/radiation/radiation-basics",
+    "status": 200,
+    "bytes": 73053,
+    "sha256": "bc40509f01ed8ac7c06331a0f7dc863fd5432b3e8b567d2208bd6f4a2ecc4e01",
+    "retrieved": "2026-10-27T14:48:07.634943+00:00"
+  },
+  {
+    "key": "openstax-hormones",
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/17-2-hormones",
+    "status": 200,
+    "bytes": 374720,
+    "sha256": "2d4993a4e6d3fa93ef1ca2184890621fdac2e57ae67a29d8a9d36feaaa20b834",
+    "retrieved": "2026-10-27T14:48:06.400541+00:00"
+  },
+  {
+    "key": "community-wmo-int-site-knowledge-hub-programmes-and-initiatives-instruments-and-methods-of-observation-programme-imop-guide-instru",
+    "url": "https://community.wmo.int/site/knowledge-hub/programmes-and-initiatives/instruments-and-methods-of-observation-programme-imop/guide-instruments-and-methods-of-observation-wmo-no-8",
+    "status": 200,
+    "bytes": 104272,
+    "sha256": "9c03cff6ab3c92d7df69d3e255fc032a2f906b89b8945dc74610c6e829e9b934",
+    "retrieved": "2026-10-27T14:59:49.220649+00:00"
+  },
+  {
+    "key": "weather-metoffice-gov-uk-guides-observations-how-we-measure-sunshine",
+    "url": "https://weather.metoffice.gov.uk/guides/observations/how-we-measure-sunshine",
+    "status": 200,
+    "bytes": 90267,
+    "sha256": "c00f779e4e89b1591a468c3928b205b69d341b4c0e6753e7b5ffbe689ee04d5f",
+    "retrieved": "2026-10-27T14:59:47.272152+00:00"
+  },
+  {
+    "key": "www-btb-termiumplus-gc-ca-tpv2alpha-alpha-eng-html-i-index-est-lang-eng-srchtxt-NEFELOSCOPIO",
+    "url": "https://www.btb.termiumplus.gc.ca/tpv2alpha/alpha-eng.html?i=&index=est&lang=eng&srchtxt=NEFELOSCOPIO",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "key": "www-osha-gov-personal-protective-equipment",
+    "url": "https://www.osha.gov/personal-protective-equipment",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "key": "www-cdc-gov-niosh-ppe-respirators-ffr-html",
+    "url": "https://www.cdc.gov/niosh/ppe/respirators/ffr.html",
+    "status": 200,
+    "bytes": 67329,
+    "sha256": "c86d0071e52649b1d2176b4cb5468eccb95607abb98a0083056b410ff881cd44",
+    "retrieved": "2026-10-27T14:59:47.062996+00:00"
+  },
+  {
+    "key": "wwwn-cdc-gov-NIOSH-CEL-Information-Terms",
+    "url": "https://wwwn.cdc.gov/NIOSH-CEL/Information/Terms",
+    "status": 200,
+    "bytes": 44956,
+    "sha256": "97f1e9e5d6cd6ef53aacc3e77e45950194dc9f4b62a53bda198794a39456d20d",
+    "retrieved": "2026-10-27T14:59:47.409018+00:00"
+  },
+  {
+    "key": "www-eia-gov-energyexplained-electricity-how-electricity-is-generated-php",
+    "url": "https://www.eia.gov/energyexplained/electricity/how-electricity-is-generated.php",
+    "status": 200,
+    "bytes": 88692,
+    "sha256": "5114900ab0c786099b3e981272471b790ced8abc998dd0040f56e4eeb572ddbd",
+    "retrieved": "2026-10-27T14:59:47.570488+00:00"
+  },
+  {
+    "key": "www-energy-gov-cmei-systems-how-does-solar-energy-work",
+    "url": "https://www.energy.gov/cmei/systems/how-does-solar-energy-work",
+    "status": 200,
+    "bytes": 148779,
+    "sha256": "010203ac9c9f2637014863a649835743885574944f1fa1d6b008aa11fc567f07",
+    "retrieved": "2026-10-27T14:59:47.710239+00:00"
+  },
+  {
+    "key": "natural-resources-canada-ca-science-data-science-research-research-centres-low-temperature-magnetohydrodynamics-power-conversion-s",
+    "url": "https://natural-resources.canada.ca/science-data/science-research/research-centres/low-temperature-magnetohydrodynamics-power-conversion-system",
+    "status": 200,
+    "bytes": 29441,
+    "sha256": "64d2744b993799032389f5fbeb635bdd61cd66af379390769d674812da31de34",
+    "retrieved": "2026-10-27T14:59:48.162821+00:00"
+  },
+  {
+    "key": "technology-nasa-gov-advancing-commercial-space-power-systems",
+    "url": "https://technology.nasa.gov/advancing-commercial-space/power_systems",
+    "status": 200,
+    "bytes": 54272,
+    "sha256": "cfaccf70609ac695dbd9856482084d81b62514477114115c1d6b38107c739b07",
+    "retrieved": "2026-10-27T14:59:47.973376+00:00"
+  },
+  {
+    "key": "arxiv-org-abs-2109-02779",
+    "url": "https://arxiv.org/abs/2109.02779",
+    "status": 200,
+    "bytes": 41562,
+    "sha256": "48cc93df09067d93d0b468f00394be2f7d54a87e32a850941ca1263f21a58ab5",
+    "retrieved": "2026-10-27T14:59:48.152796+00:00"
+  },
+  {
+    "key": "www-statkraft-com-newsroom-news-and-stories-2009-worlds-first-osmotic-power-plant-opened",
+    "url": "https://www.statkraft.com/newsroom/news-and-stories/2009/worlds-first-osmotic-power-plant-opened/",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "key": "www-energy-gov-cmei-fuels-fuel-cells",
+    "url": "https://www.energy.gov/cmei/fuels/fuel-cells",
+    "status": 200,
+    "bytes": 123379,
+    "sha256": "3f33243d8de0c6b1f536439d3a677675a78dd536e4afe31607891e4108f366b0",
+    "retrieved": "2026-10-27T14:59:48.387482+00:00"
+  },
+  {
+    "key": "pubs-usgs-gov-fs-2006-3191-pdf-fs2006-3191-pdf",
+    "url": "https://pubs.usgs.gov/fs/2006/3191/pdf/fs2006-3191.pdf",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "key": "science-nasa-gov-ems",
+    "url": "https://science.nasa.gov/ems/",
+    "status": 200,
+    "bytes": 312310,
+    "sha256": "cb5ae0c50c80aa74398043cc56c27e527d51abce8a517fa14abf90fb42ed8c08",
+    "retrieved": "2026-10-27T14:59:49.264388+00:00"
+  },
+  {
+    "key": "heasarc-gsfc-nasa-gov-docs-heasarc-headates-spectrum-html",
+    "url": "https://heasarc.gsfc.nasa.gov/docs/heasarc/headates/spectrum.html",
+    "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'heasarc.gsfc.nasa.gov'. (_ssl.c:1129)>"
+  },
+  {
+    "key": "www-itu-int-rec-R-REC-V-431-en",
+    "url": "https://www.itu.int/rec/R-REC-V.431/en",
+    "status": 200,
+    "bytes": 12475,
+    "sha256": "8e5de66a1bd40d0138b3da0d728eec403124bb4e0bd234f663973e7fe5be7316",
+    "retrieved": "2026-10-27T14:59:49.410532+00:00"
+  },
+  {
+    "key": "www1-psfc-mit-edu-research-wab-pdfs-2006-Marsh-20AIP-20877-pdf",
+    "url": "https://www1.psfc.mit.edu/research/wab/pdfs/2006/Marsh%20AIP%20877.pdf",
+    "status": 200,
+    "bytes": 290871,
+    "sha256": "80293876a1890c1ae15743ba9cce5b621f5d889a44b5ca46017351f18b5f39e6",
+    "retrieved": "2026-10-27T14:59:51.198992+00:00"
+  },
+  {
+    "key": "home-cern-science-accelerators-synchrotron-radiation",
+    "url": "https://home.cern/science/accelerators/synchrotron-radiation",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "key": "doi-org-10-1038-248030a0",
+    "url": "https://doi.org/10.1038/248030a0",
+    "status": 200,
+    "bytes": 238521,
+    "sha256": "84e1d8a0476edf52c3e425308ba562fef75a2ca3fb702e0e7690649619b6e948",
+    "retrieved": "2026-10-27T14:59:51.371021+00:00"
+  },
+  {
+    "key": "science-nasa-gov-ems-09-earthradiationbudget",
+    "url": "https://science.nasa.gov/ems/09_earthradiationbudget/",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "key": "www-nist-gov-pml-laser-safety",
+    "url": "https://www.nist.gov/pml/laser-safety",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "key": "www-gmpuzzles-com-blog",
+    "url": "https://www.gmpuzzles.com/blog/",
+    "status": 200,
+    "bytes": 99194,
+    "sha256": "806b8f9c1e43cd46972bc781bb7ff0ddd8d01a4a0087f89d5ddacb9a1fb621eb",
+    "retrieved": "2026-10-27T14:59:53.733378+00:00"
+  },
+  {
+    "key": "www-rubiks-com-products",
+    "url": "https://www.rubiks.com/products",
+    "status": 200,
+    "bytes": 73112,
+    "sha256": "cefee4801b966cb551f0369a71dd381952bf5601b43679b38041ba81fded2678",
+    "retrieved": "2026-10-27T14:59:51.681069+00:00"
+  },
+  {
+    "key": "www-worldcubeassociation-org-regulations",
+    "url": "https://www.worldcubeassociation.org/regulations/",
+    "status": 200,
+    "bytes": 234398,
+    "sha256": "30c86338c9a1ce69de86c869dab95b2a189a489276b9227d0f71758e24668ecc",
+    "retrieved": "2026-10-27T14:59:52.189689+00:00"
+  },
+  {
+    "key": "www-puzzlebaron-com",
+    "url": "https://www.puzzlebaron.com/",
+    "status": 200,
+    "bytes": 12326,
+    "sha256": "7c8eb4cdeca2f49ac7e3856e38a6c1e201917090096a7b95d17ac612ce7b351a",
+    "retrieved": "2026-10-27T14:59:51.876488+00:00"
+  },
+  {
+    "label": "FIPAT TA2 Part 2",
+    "url": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+    "status": 200,
+    "bytes": 2646771,
+    "sha256": "d30ce0d578b266ce4c47a6ff911e007a0cc440d65e9acaeb0680ec3eafa2231b",
+    "retrieved": "2026-10-27",
+    "textExtraction": "Bundled Python runtime; full retained text available in local research checkpoint. Individual FIPAT terms are explicitly public domain."
+  },
+  {
+    "label": "FIPAT TA2 Part 4",
+    "url": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-4.pdf",
+    "status": 200,
+    "bytes": 2190882,
+    "sha256": "87a621bf143b93519d733eac86b0c85769fbd2b21ed5b696090386e1ff17c0cc",
+    "retrieved": "2026-10-27",
+    "textExtraction": "Bundled Python runtime; full retained text available in local research checkpoint. Individual FIPAT terms are explicitly public domain."
+  },
+  {
+    "label": "WMO No.8 seventh edition, public NWS distribution",
+    "url": "https://www.weather.gov/media/epz/mesonet/CWOP-WMO8.pdf",
+    "status": 200,
+    "bytes": 10139806,
+    "sha256": "95bad9c36e1365d70c568e9aa326badeb4ed7ecbedb4f8e4d8b023d03cd912b5",
+    "retrieved": "2026-10-27",
+    "textExtraction": "Bundled Python runtime; full retained text available in local research checkpoint. Individual FIPAT terms are explicitly public domain."
+  },
+  {
+    "url": "https://library.wmo.int/records/item/68695-guide-to-instruments-and-methods-of-observation?offset=3",
+    "status": "challenge-unavailable",
+    "note": "No challenge solving, certificate disablement or evasion. Older freely distributed WMO text was obtained separately from the US National Weather Service."
+  }
+]

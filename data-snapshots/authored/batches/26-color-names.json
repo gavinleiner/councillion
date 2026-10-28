@@ -1,0 +1,4959 @@
+{
+  "version": 1,
+  "questions": [
+    {
+      "id": "authored-color-names",
+      "concept": "color-names",
+      "family": "everyday",
+      "topic": "COLORS",
+      "prompt": "Name a color or a named shade.",
+      "scope": "Recognized English color names and published named shades count, including named pigments, Crayola colors and standard CSS color keywords. Regional spellings and ordinary synonyms share one answer. Patterns are not a single color. Different standard definitions of the same ordinary name do not create extra answers.",
+      "format": "whole-color-inventory",
+      "rationale": "One whole everyday category. The complete retained alphabetical named-color source and all 148 W3C named keywords expand its answer inventory, not its question count. Source publisher, hue, RGB values and color properties never create extra questions.",
+      "familiar": [
+        "Red",
+        "Blue",
+        "Yellow",
+        "Green",
+        "Orange",
+        "Purple",
+        "Pink",
+        "Brown",
+        "Black",
+        "White",
+        "Gray",
+        "Grey",
+        "Silver",
+        "Gold",
+        "Beige",
+        "Tan",
+        "Cream",
+        "Ivory",
+        "Maroon",
+        "Burgundy",
+        "Crimson",
+        "Scarlet",
+        "Ruby",
+        "Rose",
+        "Magenta",
+        "Fuchsia",
+        "Violet",
+        "Lavender",
+        "Lilac",
+        "Mauve",
+        "Plum",
+        "Indigo",
+        "Navy blue",
+        "Royal blue",
+        "Sky blue",
+        "Baby blue",
+        "Turquoise",
+        "Teal",
+        "Cyan",
+        "Aqua",
+        "Aquamarine",
+        "Mint green",
+        "Lime green",
+        "Olive",
+        "Emerald",
+        "Forest green",
+        "Chartreuse",
+        "Coral",
+        "Salmon",
+        "Peach",
+        "Apricot",
+        "Amber",
+        "Mustard",
+        "Ochre",
+        "Bronze",
+        "Copper",
+        "Rust",
+        "Mahogany",
+        "Chocolate",
+        "Coffee",
+        "Khaki",
+        "Taupe",
+        "Slate gray",
+        "Charcoal",
+        "Pearl",
+        "Champagne",
+        "Cerulean",
+        "Periwinkle",
+        "Sapphire",
+        "Amethyst",
+        "Lemon yellow",
+        "Hot pink",
+        "Neon green",
+        "Pastel pink",
+        "Sea green",
+        "Off-white",
+        "Eggshell",
+        "Terracotta",
+        "Sienna",
+        "Umber",
+        "Ecru"
+      ],
+      "exclude": [
+        "Rainbow",
+        "Striped",
+        "Polka dot"
+      ],
+      "references": [
+        "https://en.wikipedia.org/wiki/List_of_colors_(alphabetical)",
+        "https://www.w3.org/TR/css-color-4/#named-colors",
+        "https://www.collinsdictionary.com/us/dictionary/english/off-white",
+        "https://www.dictionary.com/browse/ocher"
+      ],
+      "answers": {
+        "85": [
+          {
+            "label": "Absolute Zero",
+            "aliases": []
+          },
+          {
+            "label": "Acid green",
+            "aliases": []
+          },
+          {
+            "label": "Aero",
+            "aliases": []
+          },
+          {
+            "label": "African violet",
+            "aliases": []
+          },
+          {
+            "label": "Air superiority blue",
+            "aliases": []
+          },
+          {
+            "label": "Alabaster",
+            "aliases": []
+          },
+          {
+            "label": "Alice blue",
+            "aliases": []
+          },
+          {
+            "label": "Alizarin",
+            "aliases": []
+          },
+          {
+            "label": "Alloy orange",
+            "aliases": []
+          },
+          {
+            "label": "Almond",
+            "aliases": []
+          },
+          {
+            "label": "Amaranth",
+            "aliases": []
+          },
+          {
+            "label": "Amaranth deep purple",
+            "aliases": []
+          },
+          {
+            "label": "Amaranth pink",
+            "aliases": []
+          },
+          {
+            "label": "Amaranth purple",
+            "aliases": []
+          },
+          {
+            "label": "Amazon",
+            "aliases": []
+          },
+          {
+            "label": "Android green",
+            "aliases": []
+          },
+          {
+            "label": "Antique brass",
+            "aliases": []
+          },
+          {
+            "label": "Antique bronze",
+            "aliases": []
+          },
+          {
+            "label": "Antique fuchsia",
+            "aliases": []
+          },
+          {
+            "label": "Antique ruby",
+            "aliases": []
+          },
+          {
+            "label": "Antique white",
+            "aliases": []
+          },
+          {
+            "label": "Arctic lime",
+            "aliases": []
+          },
+          {
+            "label": "Artichoke green",
+            "aliases": []
+          },
+          {
+            "label": "Artist's purple",
+            "aliases": []
+          },
+          {
+            "label": "Arylide yellow",
+            "aliases": []
+          },
+          {
+            "label": "Ash gray",
+            "aliases": [
+              "Ash grey"
+            ]
+          },
+          {
+            "label": "Asparagus",
+            "aliases": []
+          },
+          {
+            "label": "Atomic tangerine",
+            "aliases": []
+          },
+          {
+            "label": "Aureolin",
+            "aliases": []
+          },
+          {
+            "label": "Aztec gold",
+            "aliases": []
+          },
+          {
+            "label": "Azure",
+            "aliases": [
+              "Azure (X11/web color)"
+            ]
+          },
+          {
+            "label": "Baby blue eyes",
+            "aliases": []
+          },
+          {
+            "label": "Baby pink",
+            "aliases": []
+          },
+          {
+            "label": "Baby powder",
+            "aliases": []
+          },
+          {
+            "label": "Baker-Miller pink",
+            "aliases": []
+          },
+          {
+            "label": "Banana Mania",
+            "aliases": []
+          },
+          {
+            "label": "Barbie pink",
+            "aliases": []
+          },
+          {
+            "label": "Barn red",
+            "aliases": []
+          },
+          {
+            "label": "Battleship gray",
+            "aliases": [
+              "Battleship grey"
+            ]
+          },
+          {
+            "label": "B'dazzled blue",
+            "aliases": []
+          },
+          {
+            "label": "Beau blue",
+            "aliases": []
+          },
+          {
+            "label": "Beaver",
+            "aliases": []
+          },
+          {
+            "label": "Berry parfait",
+            "aliases": []
+          },
+          {
+            "label": "Big dip o’ruby",
+            "aliases": []
+          },
+          {
+            "label": "Big Foot Feet",
+            "aliases": []
+          },
+          {
+            "label": "Bisque",
+            "aliases": []
+          },
+          {
+            "label": "Bister brown",
+            "aliases": [
+              "Bister brown (Bistre brown)"
+            ]
+          },
+          {
+            "label": "Bistre",
+            "aliases": [
+              "Bister",
+              "Bister (Bistre)"
+            ]
+          },
+          {
+            "label": "Bitter lemon",
+            "aliases": []
+          },
+          {
+            "label": "Bittersweet",
+            "aliases": []
+          },
+          {
+            "label": "Bittersweet shimmer",
+            "aliases": []
+          },
+          {
+            "label": "Black bean",
+            "aliases": []
+          },
+          {
+            "label": "Black coral",
+            "aliases": []
+          },
+          {
+            "label": "Black olive",
+            "aliases": []
+          },
+          {
+            "label": "Black Shadows",
+            "aliases": []
+          },
+          {
+            "label": "Blanched almond",
+            "aliases": []
+          },
+          {
+            "label": "Blast-off bronze",
+            "aliases": []
+          },
+          {
+            "label": "Bleu de France",
+            "aliases": []
+          },
+          {
+            "label": "Blizzard blue",
+            "aliases": []
+          },
+          {
+            "label": "Blood red",
+            "aliases": []
+          },
+          {
+            "label": "Blue bell",
+            "aliases": []
+          },
+          {
+            "label": "Blueberry",
+            "aliases": []
+          },
+          {
+            "label": "Blue-gray",
+            "aliases": [
+              "Blue-gray (Crayola)",
+              "Blue-grey (Crayola)",
+              "Blue-grey"
+            ]
+          },
+          {
+            "label": "Blue-green",
+            "aliases": []
+          },
+          {
+            "label": "Blue jeans",
+            "aliases": []
+          },
+          {
+            "label": "Blue Ribbon",
+            "aliases": []
+          },
+          {
+            "label": "Blue sapphire",
+            "aliases": []
+          },
+          {
+            "label": "Bluetiful",
+            "aliases": []
+          },
+          {
+            "label": "Blue-violet",
+            "aliases": []
+          },
+          {
+            "label": "Blue yonder",
+            "aliases": []
+          },
+          {
+            "label": "Blush",
+            "aliases": []
+          },
+          {
+            "label": "Bole",
+            "aliases": []
+          },
+          {
+            "label": "Bone",
+            "aliases": []
+          },
+          {
+            "label": "Booger Buster",
+            "aliases": []
+          },
+          {
+            "label": "Brick red",
+            "aliases": []
+          },
+          {
+            "label": "Bright green",
+            "aliases": []
+          },
+          {
+            "label": "Bright lilac",
+            "aliases": []
+          },
+          {
+            "label": "Bright maroon",
+            "aliases": []
+          },
+          {
+            "label": "Bright navy blue",
+            "aliases": []
+          },
+          {
+            "label": "Bright pink",
+            "aliases": []
+          },
+          {
+            "label": "Bright turquoise",
+            "aliases": []
+          },
+          {
+            "label": "Bright yellow",
+            "aliases": [
+              "Bright yellow (Crayola)"
+            ]
+          },
+          {
+            "label": "Brilliant green 1621",
+            "aliases": []
+          },
+          {
+            "label": "Brilliant rose",
+            "aliases": []
+          },
+          {
+            "label": "Brink pink",
+            "aliases": []
+          },
+          {
+            "label": "British racing green",
+            "aliases": []
+          },
+          {
+            "label": "Brown sugar",
+            "aliases": []
+          },
+          {
+            "label": "Bud green",
+            "aliases": []
+          },
+          {
+            "label": "Buff",
+            "aliases": []
+          },
+          {
+            "label": "Burlywood",
+            "aliases": []
+          },
+          {
+            "label": "Burnished brown",
+            "aliases": []
+          },
+          {
+            "label": "Burnt orange",
+            "aliases": []
+          },
+          {
+            "label": "Burnt sienna",
+            "aliases": []
+          },
+          {
+            "label": "Burnt umber",
+            "aliases": []
+          },
+          {
+            "label": "Byzantine",
+            "aliases": []
+          },
+          {
+            "label": "Byzantium",
+            "aliases": []
+          },
+          {
+            "label": "Cadet",
+            "aliases": []
+          },
+          {
+            "label": "Cadet blue",
+            "aliases": []
+          },
+          {
+            "label": "Cadet gray",
+            "aliases": [
+              "Cadet grey"
+            ]
+          },
+          {
+            "label": "Cadmium green",
+            "aliases": []
+          },
+          {
+            "label": "Cadmium orange",
+            "aliases": []
+          },
+          {
+            "label": "Cadmium red",
+            "aliases": []
+          },
+          {
+            "label": "Cadmium yellow",
+            "aliases": []
+          },
+          {
+            "label": "Café au lait",
+            "aliases": []
+          },
+          {
+            "label": "Café Noir",
+            "aliases": []
+          },
+          {
+            "label": "Cambridge blue",
+            "aliases": []
+          },
+          {
+            "label": "Camel",
+            "aliases": []
+          },
+          {
+            "label": "Cameo pink",
+            "aliases": []
+          },
+          {
+            "label": "Canary",
+            "aliases": []
+          },
+          {
+            "label": "Canary yellow",
+            "aliases": []
+          },
+          {
+            "label": "Candy apple red",
+            "aliases": []
+          },
+          {
+            "label": "Candy pink",
+            "aliases": []
+          },
+          {
+            "label": "Caramel",
+            "aliases": []
+          },
+          {
+            "label": "Cardinal",
+            "aliases": []
+          },
+          {
+            "label": "Caribbean green",
+            "aliases": []
+          },
+          {
+            "label": "Carmine",
+            "aliases": []
+          },
+          {
+            "label": "Carnation pink",
+            "aliases": []
+          },
+          {
+            "label": "Carolina blue",
+            "aliases": []
+          },
+          {
+            "label": "Carrot orange",
+            "aliases": []
+          },
+          {
+            "label": "Catawba",
+            "aliases": []
+          },
+          {
+            "label": "Cedar Chest",
+            "aliases": []
+          },
+          {
+            "label": "Celadon",
+            "aliases": []
+          },
+          {
+            "label": "Celeste",
+            "aliases": []
+          },
+          {
+            "label": "Cerise",
+            "aliases": []
+          },
+          {
+            "label": "Cerulean blue",
+            "aliases": []
+          },
+          {
+            "label": "Cerulean frost",
+            "aliases": []
+          },
+          {
+            "label": "Champagne pink",
+            "aliases": []
+          },
+          {
+            "label": "Charleston green",
+            "aliases": []
+          },
+          {
+            "label": "Charm pink",
+            "aliases": []
+          },
+          {
+            "label": "Cherry blossom pink",
+            "aliases": []
+          },
+          {
+            "label": "Chestnut",
+            "aliases": []
+          },
+          {
+            "label": "China pink",
+            "aliases": []
+          },
+          {
+            "label": "Chinese red",
+            "aliases": []
+          },
+          {
+            "label": "Chinese violet",
+            "aliases": []
+          },
+          {
+            "label": "Cinereous",
+            "aliases": []
+          },
+          {
+            "label": "Cinnamon Satin",
+            "aliases": []
+          },
+          {
+            "label": "Citrine",
+            "aliases": []
+          },
+          {
+            "label": "Citron",
+            "aliases": []
+          },
+          {
+            "label": "Claret",
+            "aliases": []
+          },
+          {
+            "label": "Cloud",
+            "aliases": []
+          },
+          {
+            "label": "Cobalt blue",
+            "aliases": []
+          },
+          {
+            "label": "Cocoa brown",
+            "aliases": []
+          },
+          {
+            "label": "Coconut",
+            "aliases": []
+          },
+          {
+            "label": "Columbia Blue",
+            "aliases": []
+          },
+          {
+            "label": "Congo pink",
+            "aliases": []
+          },
+          {
+            "label": "Connor's Lakefront",
+            "aliases": []
+          },
+          {
+            "label": "Cool gray",
+            "aliases": [
+              "Cool grey"
+            ]
+          },
+          {
+            "label": "Copper penny",
+            "aliases": []
+          },
+          {
+            "label": "Copper red",
+            "aliases": []
+          },
+          {
+            "label": "Copper rose",
+            "aliases": []
+          },
+          {
+            "label": "Coquelicot",
+            "aliases": []
+          },
+          {
+            "label": "Coral pink",
+            "aliases": []
+          },
+          {
+            "label": "Cordovan",
+            "aliases": []
+          },
+          {
+            "label": "Cornflower blue",
+            "aliases": [
+              "Cornflower blue (Crayola)",
+              "Cornflower blue (web)"
+            ]
+          },
+          {
+            "label": "Cornsilk",
+            "aliases": []
+          },
+          {
+            "label": "Cosmic cobalt",
+            "aliases": []
+          },
+          {
+            "label": "Cosmic latte",
+            "aliases": []
+          },
+          {
+            "label": "Cotton candy",
+            "aliases": []
+          },
+          {
+            "label": "Coyote brown",
+            "aliases": []
+          },
+          {
+            "label": "Cultured",
+            "aliases": []
+          },
+          {
+            "label": "Cyber grape",
+            "aliases": []
+          },
+          {
+            "label": "Cyber yellow",
+            "aliases": []
+          },
+          {
+            "label": "Cyclamen",
+            "aliases": []
+          },
+          {
+            "label": "Dandelion",
+            "aliases": []
+          },
+          {
+            "label": "Dark blue",
+            "aliases": []
+          },
+          {
+            "label": "Dark blue-gray",
+            "aliases": [
+              "Dark blue-grey"
+            ]
+          },
+          {
+            "label": "Dark brown",
+            "aliases": []
+          },
+          {
+            "label": "Dark byzantium",
+            "aliases": []
+          },
+          {
+            "label": "Dark cyan",
+            "aliases": []
+          },
+          {
+            "label": "Dark electric blue",
+            "aliases": []
+          },
+          {
+            "label": "Dark Fuchsia",
+            "aliases": []
+          },
+          {
+            "label": "Dark goldenrod",
+            "aliases": []
+          },
+          {
+            "label": "Dark gray",
+            "aliases": [
+              "Dark gray (X11)",
+              "Dark grey (X11)",
+              "Dark grey",
+              "darkgrey"
+            ]
+          },
+          {
+            "label": "Dark green",
+            "aliases": [
+              "Dark green (X11)"
+            ]
+          },
+          {
+            "label": "Dark jungle green",
+            "aliases": []
+          },
+          {
+            "label": "Dark khaki",
+            "aliases": []
+          },
+          {
+            "label": "Dark lava",
+            "aliases": []
+          },
+          {
+            "label": "Dark liver",
+            "aliases": []
+          },
+          {
+            "label": "Dark magenta",
+            "aliases": []
+          },
+          {
+            "label": "Dark midnight blue",
+            "aliases": []
+          },
+          {
+            "label": "Dark moss green",
+            "aliases": []
+          },
+          {
+            "label": "Dark olive green",
+            "aliases": []
+          },
+          {
+            "label": "Dark orange",
+            "aliases": []
+          },
+          {
+            "label": "Dark orchid",
+            "aliases": []
+          },
+          {
+            "label": "Dark pastel green",
+            "aliases": []
+          },
+          {
+            "label": "Dark raspberry",
+            "aliases": []
+          },
+          {
+            "label": "Dark red",
+            "aliases": []
+          },
+          {
+            "label": "Dark salmon",
+            "aliases": []
+          },
+          {
+            "label": "Dark sea green",
+            "aliases": []
+          },
+          {
+            "label": "Dark sienna",
+            "aliases": []
+          },
+          {
+            "label": "Dark sky blue",
+            "aliases": []
+          },
+          {
+            "label": "Dark slate blue",
+            "aliases": []
+          },
+          {
+            "label": "Dark slate gray",
+            "aliases": [
+              "Dark slate grey",
+              "darkslategrey"
+            ]
+          },
+          {
+            "label": "Dark spring green",
+            "aliases": []
+          },
+          {
+            "label": "Dark tan",
+            "aliases": []
+          },
+          {
+            "label": "Dark turquoise",
+            "aliases": []
+          },
+          {
+            "label": "Dark vanilla",
+            "aliases": []
+          },
+          {
+            "label": "Dark violet",
+            "aliases": []
+          },
+          {
+            "label": "Dartmouth green",
+            "aliases": []
+          },
+          {
+            "label": "Davy's gray",
+            "aliases": [
+              "Davy's grey"
+            ]
+          },
+          {
+            "label": "Deep cerise",
+            "aliases": []
+          },
+          {
+            "label": "Deep champagne",
+            "aliases": []
+          },
+          {
+            "label": "Deep chestnut",
+            "aliases": []
+          },
+          {
+            "label": "Deep fuchsia",
+            "aliases": []
+          },
+          {
+            "label": "Deep jungle green",
+            "aliases": []
+          },
+          {
+            "label": "Deep lemon",
+            "aliases": []
+          },
+          {
+            "label": "Deep mauve",
+            "aliases": []
+          },
+          {
+            "label": "Deep pink",
+            "aliases": []
+          },
+          {
+            "label": "Deep sky blue",
+            "aliases": []
+          },
+          {
+            "label": "Deep Space Sparkle",
+            "aliases": []
+          },
+          {
+            "label": "Deep Taupe",
+            "aliases": []
+          },
+          {
+            "label": "Denim",
+            "aliases": []
+          },
+          {
+            "label": "Denim Blue",
+            "aliases": []
+          },
+          {
+            "label": "Desert",
+            "aliases": []
+          },
+          {
+            "label": "Desert sand",
+            "aliases": []
+          },
+          {
+            "label": "Dim gray",
+            "aliases": [
+              "Dim grey",
+              "dimgrey"
+            ]
+          },
+          {
+            "label": "Dingy Dungeon",
+            "aliases": []
+          },
+          {
+            "label": "Dirt",
+            "aliases": []
+          },
+          {
+            "label": "Dodger blue",
+            "aliases": []
+          },
+          {
+            "label": "Dogwood rose",
+            "aliases": []
+          },
+          {
+            "label": "Duke blue",
+            "aliases": []
+          },
+          {
+            "label": "Dutch white",
+            "aliases": []
+          },
+          {
+            "label": "Earth yellow",
+            "aliases": []
+          },
+          {
+            "label": "Ebony",
+            "aliases": []
+          },
+          {
+            "label": "Eerie black",
+            "aliases": []
+          },
+          {
+            "label": "Eggplant",
+            "aliases": []
+          },
+          {
+            "label": "Egyptian blue",
+            "aliases": []
+          },
+          {
+            "label": "Electric blue",
+            "aliases": []
+          },
+          {
+            "label": "Electric indigo",
+            "aliases": []
+          },
+          {
+            "label": "Electric lime",
+            "aliases": []
+          },
+          {
+            "label": "Electric purple",
+            "aliases": []
+          },
+          {
+            "label": "Electric violet",
+            "aliases": []
+          },
+          {
+            "label": "Eminence",
+            "aliases": []
+          },
+          {
+            "label": "English lavender",
+            "aliases": []
+          },
+          {
+            "label": "English red",
+            "aliases": []
+          },
+          {
+            "label": "English vermillion",
+            "aliases": []
+          },
+          {
+            "label": "English violet",
+            "aliases": []
+          },
+          {
+            "label": "Erin",
+            "aliases": []
+          },
+          {
+            "label": "Eton blue",
+            "aliases": []
+          },
+          {
+            "label": "Eucalyptus",
+            "aliases": []
+          },
+          {
+            "label": "Extreme violet",
+            "aliases": []
+          },
+          {
+            "label": "Fallow",
+            "aliases": []
+          },
+          {
+            "label": "Falu red",
+            "aliases": []
+          },
+          {
+            "label": "Fandango",
+            "aliases": []
+          },
+          {
+            "label": "Fandango pink",
+            "aliases": []
+          },
+          {
+            "label": "Fashion fuchsia",
+            "aliases": []
+          },
+          {
+            "label": "Fawn",
+            "aliases": []
+          },
+          {
+            "label": "Feldgrau",
+            "aliases": []
+          },
+          {
+            "label": "Fern green",
+            "aliases": []
+          },
+          {
+            "label": "Field drab",
+            "aliases": []
+          },
+          {
+            "label": "Fiery rose",
+            "aliases": []
+          },
+          {
+            "label": "Firebrick",
+            "aliases": []
+          },
+          {
+            "label": "Fire engine red",
+            "aliases": []
+          },
+          {
+            "label": "Fire opal",
+            "aliases": []
+          },
+          {
+            "label": "Flame",
+            "aliases": []
+          },
+          {
+            "label": "Flamingo",
+            "aliases": []
+          },
+          {
+            "label": "Flax",
+            "aliases": []
+          },
+          {
+            "label": "Flirt",
+            "aliases": []
+          },
+          {
+            "label": "Floral white",
+            "aliases": []
+          },
+          {
+            "label": "Fluorescent blue",
+            "aliases": []
+          },
+          {
+            "label": "French beige",
+            "aliases": []
+          },
+          {
+            "label": "French bistre",
+            "aliases": [
+              "French bister",
+              "French bister (French bistre)"
+            ]
+          },
+          {
+            "label": "French blue",
+            "aliases": []
+          },
+          {
+            "label": "French fuchsia",
+            "aliases": []
+          },
+          {
+            "label": "French lilac",
+            "aliases": []
+          },
+          {
+            "label": "French lime",
+            "aliases": []
+          },
+          {
+            "label": "French mauve",
+            "aliases": []
+          },
+          {
+            "label": "French pink",
+            "aliases": []
+          },
+          {
+            "label": "French raspberry",
+            "aliases": []
+          },
+          {
+            "label": "French rose",
+            "aliases": []
+          },
+          {
+            "label": "French sky blue",
+            "aliases": []
+          },
+          {
+            "label": "French violet",
+            "aliases": []
+          },
+          {
+            "label": "Frostbite",
+            "aliases": []
+          },
+          {
+            "label": "Fuchsia purple",
+            "aliases": []
+          },
+          {
+            "label": "Fuchsia rose",
+            "aliases": []
+          },
+          {
+            "label": "Fulvous",
+            "aliases": []
+          },
+          {
+            "label": "Fuzzy Wuzzy",
+            "aliases": []
+          },
+          {
+            "label": "Gainsboro",
+            "aliases": []
+          },
+          {
+            "label": "Gamboge",
+            "aliases": []
+          },
+          {
+            "label": "Garnet",
+            "aliases": []
+          },
+          {
+            "label": "Generic viridian",
+            "aliases": []
+          },
+          {
+            "label": "Ghost white",
+            "aliases": []
+          },
+          {
+            "label": "Glaucous",
+            "aliases": []
+          },
+          {
+            "label": "Glossy grape",
+            "aliases": []
+          },
+          {
+            "label": "GO green",
+            "aliases": []
+          },
+          {
+            "label": "Golden brown",
+            "aliases": []
+          },
+          {
+            "label": "Golden poppy",
+            "aliases": []
+          },
+          {
+            "label": "Goldenrod",
+            "aliases": []
+          },
+          {
+            "label": "Golden yellow",
+            "aliases": []
+          },
+          {
+            "label": "Gold Fusion",
+            "aliases": []
+          },
+          {
+            "label": "Granite gray",
+            "aliases": [
+              "Granite grey"
+            ]
+          },
+          {
+            "label": "Granny Smith apple",
+            "aliases": []
+          },
+          {
+            "label": "Grape",
+            "aliases": []
+          },
+          {
+            "label": "Green-blue",
+            "aliases": [
+              "Green-blue (Crayola)"
+            ]
+          },
+          {
+            "label": "Green-cyan",
+            "aliases": []
+          },
+          {
+            "label": "Green frog",
+            "aliases": []
+          },
+          {
+            "label": "Green Lizard",
+            "aliases": []
+          },
+          {
+            "label": "Green Sheen",
+            "aliases": []
+          },
+          {
+            "label": "Green-yellow",
+            "aliases": [
+              "Green-yellow (Crayola)"
+            ]
+          },
+          {
+            "label": "Grullo",
+            "aliases": []
+          },
+          {
+            "label": "Gunmetal",
+            "aliases": []
+          },
+          {
+            "label": "Han blue",
+            "aliases": []
+          },
+          {
+            "label": "Han purple",
+            "aliases": []
+          },
+          {
+            "label": "Hansa yellow",
+            "aliases": []
+          },
+          {
+            "label": "Harlequin",
+            "aliases": []
+          },
+          {
+            "label": "Harvest gold",
+            "aliases": []
+          },
+          {
+            "label": "Heather",
+            "aliases": []
+          },
+          {
+            "label": "Heat Wave",
+            "aliases": []
+          },
+          {
+            "label": "Heliotrope",
+            "aliases": []
+          },
+          {
+            "label": "Heliotrope gray",
+            "aliases": [
+              "Heliotrope grey"
+            ]
+          },
+          {
+            "label": "Hollywood cerise",
+            "aliases": []
+          },
+          {
+            "label": "Honeydew",
+            "aliases": []
+          },
+          {
+            "label": "Honolulu blue",
+            "aliases": []
+          },
+          {
+            "label": "Hooker's green",
+            "aliases": []
+          },
+          {
+            "label": "Hot fuchsia",
+            "aliases": []
+          },
+          {
+            "label": "Hot magenta",
+            "aliases": []
+          },
+          {
+            "label": "Hunter green",
+            "aliases": []
+          },
+          {
+            "label": "Iceberg",
+            "aliases": []
+          },
+          {
+            "label": "Iced tea",
+            "aliases": []
+          },
+          {
+            "label": "Icterine",
+            "aliases": []
+          },
+          {
+            "label": "Illuminating emerald",
+            "aliases": []
+          },
+          {
+            "label": "Imperial",
+            "aliases": []
+          },
+          {
+            "label": "Imperial blue",
+            "aliases": []
+          },
+          {
+            "label": "Imperial red",
+            "aliases": []
+          },
+          {
+            "label": "Inchworm",
+            "aliases": []
+          },
+          {
+            "label": "Independence",
+            "aliases": []
+          },
+          {
+            "label": "India green",
+            "aliases": []
+          },
+          {
+            "label": "Indian red",
+            "aliases": []
+          },
+          {
+            "label": "Indian yellow",
+            "aliases": []
+          },
+          {
+            "label": "Indigo dye",
+            "aliases": []
+          },
+          {
+            "label": "International orange",
+            "aliases": [
+              "International orange (Golden Gate Bridge)",
+              "International orange (aerospace)",
+              "International orange (engineering)"
+            ]
+          },
+          {
+            "label": "Iridescent Indigo",
+            "aliases": []
+          },
+          {
+            "label": "Iris",
+            "aliases": []
+          },
+          {
+            "label": "Iron Gray",
+            "aliases": [
+              "Iron grey"
+            ]
+          },
+          {
+            "label": "Iron Indigo",
+            "aliases": []
+          },
+          {
+            "label": "Irresistible",
+            "aliases": []
+          },
+          {
+            "label": "Isabelline",
+            "aliases": []
+          },
+          {
+            "label": "Italian sky blue",
+            "aliases": []
+          },
+          {
+            "label": "Jade",
+            "aliases": []
+          },
+          {
+            "label": "Japanese carmine",
+            "aliases": []
+          },
+          {
+            "label": "Japanese indigo",
+            "aliases": []
+          },
+          {
+            "label": "Japanese violet",
+            "aliases": []
+          },
+          {
+            "label": "Jasmine",
+            "aliases": []
+          },
+          {
+            "label": "Jazzberry jam",
+            "aliases": []
+          },
+          {
+            "label": "Jet",
+            "aliases": []
+          },
+          {
+            "label": "Jonquil",
+            "aliases": []
+          },
+          {
+            "label": "June bud",
+            "aliases": []
+          },
+          {
+            "label": "Jungle green",
+            "aliases": []
+          },
+          {
+            "label": "Kelly green",
+            "aliases": []
+          },
+          {
+            "label": "Kenyan copper",
+            "aliases": []
+          },
+          {
+            "label": "Keppel",
+            "aliases": []
+          },
+          {
+            "label": "Key lime",
+            "aliases": []
+          },
+          {
+            "label": "Kobe",
+            "aliases": []
+          },
+          {
+            "label": "Kobi",
+            "aliases": []
+          },
+          {
+            "label": "Kobicha",
+            "aliases": []
+          },
+          {
+            "label": "Kombu green",
+            "aliases": []
+          },
+          {
+            "label": "KSU Purple",
+            "aliases": []
+          },
+          {
+            "label": "Languid lavender",
+            "aliases": []
+          },
+          {
+            "label": "Lanzones",
+            "aliases": []
+          },
+          {
+            "label": "Lapis lazuli",
+            "aliases": []
+          },
+          {
+            "label": "La Salle green",
+            "aliases": []
+          },
+          {
+            "label": "Laser Lemon",
+            "aliases": []
+          },
+          {
+            "label": "Laurel green",
+            "aliases": []
+          },
+          {
+            "label": "Lava",
+            "aliases": []
+          },
+          {
+            "label": "Lavender blue",
+            "aliases": []
+          },
+          {
+            "label": "lavenderblush",
+            "aliases": []
+          },
+          {
+            "label": "Lavender gray",
+            "aliases": [
+              "Lavender grey"
+            ]
+          },
+          {
+            "label": "Lavender indigo",
+            "aliases": []
+          },
+          {
+            "label": "Lavender magenta",
+            "aliases": []
+          },
+          {
+            "label": "Lavender mist",
+            "aliases": []
+          },
+          {
+            "label": "Lavender purple",
+            "aliases": []
+          },
+          {
+            "label": "Lavender rose",
+            "aliases": []
+          },
+          {
+            "label": "lawngreen",
+            "aliases": []
+          },
+          {
+            "label": "Lemon",
+            "aliases": []
+          },
+          {
+            "label": "Lemon chiffon",
+            "aliases": []
+          },
+          {
+            "label": "Lemon curry",
+            "aliases": []
+          },
+          {
+            "label": "Lemon glacier",
+            "aliases": []
+          },
+          {
+            "label": "Lemon iced tea",
+            "aliases": []
+          },
+          {
+            "label": "Lemon lime",
+            "aliases": []
+          },
+          {
+            "label": "Lemon meringue",
+            "aliases": []
+          },
+          {
+            "label": "Licorice",
+            "aliases": []
+          },
+          {
+            "label": "lightblue",
+            "aliases": []
+          },
+          {
+            "label": "Light brown",
+            "aliases": []
+          },
+          {
+            "label": "Light carmine pink",
+            "aliases": []
+          },
+          {
+            "label": "Light chocolate cosmos",
+            "aliases": []
+          },
+          {
+            "label": "Light cobalt blue",
+            "aliases": []
+          },
+          {
+            "label": "lightcoral",
+            "aliases": []
+          },
+          {
+            "label": "Light cornflower blue",
+            "aliases": []
+          },
+          {
+            "label": "Light crimson",
+            "aliases": []
+          },
+          {
+            "label": "Light cyan",
+            "aliases": []
+          },
+          {
+            "label": "Light French beige",
+            "aliases": []
+          },
+          {
+            "label": "Light fuchsia pink",
+            "aliases": []
+          },
+          {
+            "label": "Light gold",
+            "aliases": []
+          },
+          {
+            "label": "lightgoldenrodyellow",
+            "aliases": []
+          },
+          {
+            "label": "lightgray",
+            "aliases": [
+              "lightgrey"
+            ]
+          },
+          {
+            "label": "Light grayish magenta",
+            "aliases": [
+              "Light greyish magenta"
+            ]
+          },
+          {
+            "label": "lightgreen",
+            "aliases": []
+          },
+          {
+            "label": "Light medium orchid",
+            "aliases": []
+          },
+          {
+            "label": "Light Moss Green",
+            "aliases": []
+          },
+          {
+            "label": "Light orchid",
+            "aliases": []
+          },
+          {
+            "label": "Light pastel purple",
+            "aliases": []
+          },
+          {
+            "label": "Light periwinkle",
+            "aliases": []
+          },
+          {
+            "label": "lightpink",
+            "aliases": []
+          },
+          {
+            "label": "Light red",
+            "aliases": []
+          },
+          {
+            "label": "Light red ocher",
+            "aliases": [
+              "Light red ocher (Light red ochre)"
+            ]
+          },
+          {
+            "label": "lightsalmon",
+            "aliases": []
+          },
+          {
+            "label": "Light salmon pink",
+            "aliases": []
+          },
+          {
+            "label": "Light sea green",
+            "aliases": []
+          },
+          {
+            "label": "Light silver",
+            "aliases": []
+          },
+          {
+            "label": "lightskyblue",
+            "aliases": []
+          },
+          {
+            "label": "lightslategray",
+            "aliases": [
+              "lightslategrey"
+            ]
+          },
+          {
+            "label": "lightsteelblue",
+            "aliases": []
+          },
+          {
+            "label": "Light Thulian pink",
+            "aliases": []
+          },
+          {
+            "label": "lightyellow",
+            "aliases": []
+          },
+          {
+            "label": "Lilac Luster",
+            "aliases": []
+          },
+          {
+            "label": "Lime",
+            "aliases": [
+              "Lime (color wheel)",
+              "Lime (web) (X11 green)"
+            ]
+          },
+          {
+            "label": "Limerick",
+            "aliases": []
+          },
+          {
+            "label": "Lincoln green",
+            "aliases": []
+          },
+          {
+            "label": "Linen",
+            "aliases": []
+          },
+          {
+            "label": "Lion",
+            "aliases": []
+          },
+          {
+            "label": "Liseran purple",
+            "aliases": []
+          },
+          {
+            "label": "Little boy blue",
+            "aliases": []
+          },
+          {
+            "label": "Little girl pink",
+            "aliases": []
+          },
+          {
+            "label": "Liver",
+            "aliases": [
+              "Liver (dogs)",
+              "Liver (organ)"
+            ]
+          },
+          {
+            "label": "Liver chestnut",
+            "aliases": []
+          },
+          {
+            "label": "Livid",
+            "aliases": []
+          },
+          {
+            "label": "Lotion",
+            "aliases": []
+          },
+          {
+            "label": "Lotion blue",
+            "aliases": []
+          },
+          {
+            "label": "Lotion pink",
+            "aliases": []
+          },
+          {
+            "label": "Lumber",
+            "aliases": []
+          },
+          {
+            "label": "Lust",
+            "aliases": []
+          },
+          {
+            "label": "Maastricht Blue",
+            "aliases": []
+          },
+          {
+            "label": "Macaroni and Cheese",
+            "aliases": []
+          },
+          {
+            "label": "Madder Lake",
+            "aliases": []
+          },
+          {
+            "label": "Magic Mint",
+            "aliases": []
+          },
+          {
+            "label": "Maize",
+            "aliases": [
+              "Maize (Crayola)"
+            ]
+          },
+          {
+            "label": "Majorelle Blue",
+            "aliases": []
+          },
+          {
+            "label": "Malachite",
+            "aliases": []
+          },
+          {
+            "label": "Manatee",
+            "aliases": []
+          },
+          {
+            "label": "Mandarin",
+            "aliases": []
+          },
+          {
+            "label": "Mango",
+            "aliases": []
+          },
+          {
+            "label": "Mango green",
+            "aliases": []
+          },
+          {
+            "label": "Mango Tango",
+            "aliases": []
+          },
+          {
+            "label": "Mantis",
+            "aliases": []
+          },
+          {
+            "label": "Mardi Gras",
+            "aliases": []
+          },
+          {
+            "label": "Marigold",
+            "aliases": []
+          },
+          {
+            "label": "Mauveine",
+            "aliases": []
+          },
+          {
+            "label": "Mauvelous",
+            "aliases": []
+          },
+          {
+            "label": "Mauve taupe",
+            "aliases": []
+          },
+          {
+            "label": "Maximum Blue",
+            "aliases": []
+          },
+          {
+            "label": "Maximum Blue Green",
+            "aliases": []
+          },
+          {
+            "label": "Maximum Blue Purple",
+            "aliases": []
+          },
+          {
+            "label": "Maximum Green",
+            "aliases": []
+          },
+          {
+            "label": "Maximum Green Yellow",
+            "aliases": []
+          },
+          {
+            "label": "Maximum orange",
+            "aliases": []
+          },
+          {
+            "label": "Maximum pink",
+            "aliases": []
+          },
+          {
+            "label": "Maximum Purple",
+            "aliases": []
+          },
+          {
+            "label": "Maximum red",
+            "aliases": []
+          },
+          {
+            "label": "Maximum Red Purple",
+            "aliases": []
+          },
+          {
+            "label": "Maximum violet",
+            "aliases": []
+          },
+          {
+            "label": "Maximum yellow",
+            "aliases": []
+          },
+          {
+            "label": "Maximum yellow red",
+            "aliases": []
+          },
+          {
+            "label": "Maya blue",
+            "aliases": []
+          },
+          {
+            "label": "May green",
+            "aliases": []
+          },
+          {
+            "label": "Medium aquamarine",
+            "aliases": []
+          },
+          {
+            "label": "Medium blue",
+            "aliases": []
+          },
+          {
+            "label": "Medium candy apple red",
+            "aliases": []
+          },
+          {
+            "label": "Medium carmine",
+            "aliases": []
+          },
+          {
+            "label": "Medium champagne",
+            "aliases": []
+          },
+          {
+            "label": "Medium electric blue",
+            "aliases": []
+          },
+          {
+            "label": "Medium green",
+            "aliases": []
+          },
+          {
+            "label": "Medium jungle green",
+            "aliases": []
+          },
+          {
+            "label": "Medium lavender magenta",
+            "aliases": []
+          },
+          {
+            "label": "Medium orange",
+            "aliases": []
+          },
+          {
+            "label": "Medium orchid",
+            "aliases": []
+          },
+          {
+            "label": "Medium Persian blue",
+            "aliases": []
+          },
+          {
+            "label": "Medium pink",
+            "aliases": []
+          },
+          {
+            "label": "Medium purple",
+            "aliases": []
+          },
+          {
+            "label": "Medium red",
+            "aliases": []
+          },
+          {
+            "label": "Medium red-violet",
+            "aliases": []
+          },
+          {
+            "label": "Medium ruby",
+            "aliases": []
+          },
+          {
+            "label": "Medium sea green",
+            "aliases": []
+          },
+          {
+            "label": "Medium sky blue",
+            "aliases": []
+          },
+          {
+            "label": "Medium slate blue",
+            "aliases": []
+          },
+          {
+            "label": "Medium spring bud",
+            "aliases": []
+          },
+          {
+            "label": "Medium spring green",
+            "aliases": []
+          },
+          {
+            "label": "Medium taupe",
+            "aliases": []
+          },
+          {
+            "label": "Medium turquoise",
+            "aliases": []
+          },
+          {
+            "label": "Medium Tuscan red",
+            "aliases": []
+          },
+          {
+            "label": "Medium vermilion",
+            "aliases": []
+          },
+          {
+            "label": "Medium violet",
+            "aliases": []
+          },
+          {
+            "label": "Medium violet-red",
+            "aliases": []
+          },
+          {
+            "label": "Medium yellow",
+            "aliases": []
+          },
+          {
+            "label": "Mellow apricot",
+            "aliases": []
+          },
+          {
+            "label": "Mellow yellow",
+            "aliases": []
+          },
+          {
+            "label": "Melon",
+            "aliases": [
+              "Melon (Crayola)"
+            ]
+          },
+          {
+            "label": "Menthol",
+            "aliases": []
+          },
+          {
+            "label": "Metallic blue",
+            "aliases": []
+          },
+          {
+            "label": "Metallic bronze",
+            "aliases": []
+          },
+          {
+            "label": "Metallic brown",
+            "aliases": []
+          },
+          {
+            "label": "Metallic gold",
+            "aliases": []
+          },
+          {
+            "label": "Metallic green",
+            "aliases": []
+          },
+          {
+            "label": "Metallic orange",
+            "aliases": []
+          },
+          {
+            "label": "Metallic pink",
+            "aliases": []
+          },
+          {
+            "label": "Metallic red",
+            "aliases": []
+          },
+          {
+            "label": "Metallic Seaweed",
+            "aliases": []
+          },
+          {
+            "label": "Metallic silver",
+            "aliases": []
+          },
+          {
+            "label": "Metallic Sunburst",
+            "aliases": []
+          },
+          {
+            "label": "Metallic violet",
+            "aliases": []
+          },
+          {
+            "label": "Metallic yellow",
+            "aliases": []
+          },
+          {
+            "label": "Mexican pink",
+            "aliases": []
+          },
+          {
+            "label": "Microsoft blue",
+            "aliases": []
+          },
+          {
+            "label": "Microsoft Edge blue",
+            "aliases": []
+          },
+          {
+            "label": "Microsoft green",
+            "aliases": []
+          },
+          {
+            "label": "Microsoft red",
+            "aliases": []
+          },
+          {
+            "label": "Microsoft yellow",
+            "aliases": []
+          },
+          {
+            "label": "Middle blue",
+            "aliases": []
+          },
+          {
+            "label": "Middle blue green",
+            "aliases": []
+          },
+          {
+            "label": "Middle blue purple",
+            "aliases": []
+          },
+          {
+            "label": "Middle gray",
+            "aliases": [
+              "Middle grey"
+            ]
+          },
+          {
+            "label": "Middle green",
+            "aliases": []
+          },
+          {
+            "label": "Middle green yellow",
+            "aliases": []
+          },
+          {
+            "label": "Middle purple",
+            "aliases": []
+          },
+          {
+            "label": "Middle red",
+            "aliases": []
+          },
+          {
+            "label": "Middle red purple",
+            "aliases": []
+          },
+          {
+            "label": "Middle violet",
+            "aliases": []
+          },
+          {
+            "label": "Middle yellow",
+            "aliases": []
+          },
+          {
+            "label": "Middle yellow red",
+            "aliases": []
+          },
+          {
+            "label": "Midnight",
+            "aliases": []
+          },
+          {
+            "label": "Midnight blue",
+            "aliases": []
+          },
+          {
+            "label": "Midnight green",
+            "aliases": [
+              "Midnight green (Eagle green)"
+            ]
+          },
+          {
+            "label": "Mikado yellow",
+            "aliases": []
+          },
+          {
+            "label": "Milk",
+            "aliases": []
+          },
+          {
+            "label": "Milk chocolate",
+            "aliases": []
+          },
+          {
+            "label": "Mimi pink",
+            "aliases": []
+          },
+          {
+            "label": "Mindaro",
+            "aliases": []
+          },
+          {
+            "label": "Ming",
+            "aliases": []
+          },
+          {
+            "label": "Minion yellow",
+            "aliases": []
+          },
+          {
+            "label": "Mint",
+            "aliases": []
+          },
+          {
+            "label": "Mint cream",
+            "aliases": []
+          },
+          {
+            "label": "Misty Moss",
+            "aliases": []
+          },
+          {
+            "label": "Misty rose",
+            "aliases": []
+          },
+          {
+            "label": "Moccasin",
+            "aliases": []
+          },
+          {
+            "label": "Mocha",
+            "aliases": []
+          },
+          {
+            "label": "Mode beige",
+            "aliases": []
+          },
+          {
+            "label": "Moonstone",
+            "aliases": []
+          },
+          {
+            "label": "Moonstone blue",
+            "aliases": []
+          },
+          {
+            "label": "Mordant red 19",
+            "aliases": []
+          },
+          {
+            "label": "Morning blue",
+            "aliases": []
+          },
+          {
+            "label": "Moss green",
+            "aliases": []
+          },
+          {
+            "label": "Mountain Meadow",
+            "aliases": []
+          },
+          {
+            "label": "Mountbatten pink",
+            "aliases": []
+          },
+          {
+            "label": "MSU green",
+            "aliases": []
+          },
+          {
+            "label": "Mud",
+            "aliases": []
+          },
+          {
+            "label": "Mughal green",
+            "aliases": []
+          },
+          {
+            "label": "Mulberry",
+            "aliases": [
+              "Mulberry (Crayola)"
+            ]
+          },
+          {
+            "label": "Mummy's Tomb",
+            "aliases": []
+          },
+          {
+            "label": "Mustard brown",
+            "aliases": []
+          },
+          {
+            "label": "Mustard green",
+            "aliases": []
+          },
+          {
+            "label": "Mustard yellow",
+            "aliases": []
+          },
+          {
+            "label": "Myrtle green",
+            "aliases": []
+          },
+          {
+            "label": "Mystic",
+            "aliases": []
+          },
+          {
+            "label": "Mystic maroon",
+            "aliases": []
+          },
+          {
+            "label": "Mystic red",
+            "aliases": []
+          },
+          {
+            "label": "Nadeshiko pink",
+            "aliases": []
+          },
+          {
+            "label": "Napier green",
+            "aliases": []
+          },
+          {
+            "label": "Naples yellow",
+            "aliases": []
+          },
+          {
+            "label": "Navajo white",
+            "aliases": []
+          },
+          {
+            "label": "Navy purple",
+            "aliases": []
+          },
+          {
+            "label": "Near violet",
+            "aliases": []
+          },
+          {
+            "label": "Neon blue",
+            "aliases": []
+          },
+          {
+            "label": "Neon brown",
+            "aliases": []
+          },
+          {
+            "label": "Neon Carrot",
+            "aliases": []
+          },
+          {
+            "label": "Neon cyan",
+            "aliases": []
+          },
+          {
+            "label": "Neon dark green",
+            "aliases": []
+          },
+          {
+            "label": "Neon fuchsia",
+            "aliases": []
+          },
+          {
+            "label": "Neon gold",
+            "aliases": []
+          },
+          {
+            "label": "Neon gray",
+            "aliases": [
+              "Neon grey"
+            ]
+          },
+          {
+            "label": "Neon pink",
+            "aliases": []
+          },
+          {
+            "label": "Neon purple",
+            "aliases": []
+          },
+          {
+            "label": "Neon red",
+            "aliases": []
+          },
+          {
+            "label": "Neon scarlet",
+            "aliases": []
+          },
+          {
+            "label": "Neon silver",
+            "aliases": []
+          },
+          {
+            "label": "Neon tangerine",
+            "aliases": []
+          },
+          {
+            "label": "Neon yellow",
+            "aliases": []
+          },
+          {
+            "label": "New Car",
+            "aliases": []
+          },
+          {
+            "label": "New York pink",
+            "aliases": []
+          },
+          {
+            "label": "Nickel",
+            "aliases": []
+          },
+          {
+            "label": "Nintendo red",
+            "aliases": []
+          },
+          {
+            "label": "Non-photo blue",
+            "aliases": []
+          },
+          {
+            "label": "Nyanza",
+            "aliases": []
+          },
+          {
+            "label": "Ocean boat blue",
+            "aliases": []
+          },
+          {
+            "label": "Office green",
+            "aliases": []
+          },
+          {
+            "label": "Old burgundy",
+            "aliases": []
+          },
+          {
+            "label": "Old gold",
+            "aliases": []
+          },
+          {
+            "label": "Old heliotrope",
+            "aliases": []
+          },
+          {
+            "label": "Old lace",
+            "aliases": []
+          },
+          {
+            "label": "Old lavender",
+            "aliases": []
+          },
+          {
+            "label": "Old mauve",
+            "aliases": []
+          },
+          {
+            "label": "Old moss green",
+            "aliases": []
+          },
+          {
+            "label": "Old rose",
+            "aliases": []
+          },
+          {
+            "label": "Old silver",
+            "aliases": []
+          },
+          {
+            "label": "Olive drab",
+            "aliases": [
+              "Olive drab (#3)"
+            ]
+          },
+          {
+            "label": "Olive drab #7",
+            "aliases": []
+          },
+          {
+            "label": "Olive green",
+            "aliases": []
+          },
+          {
+            "label": "Olivine",
+            "aliases": []
+          },
+          {
+            "label": "Olo",
+            "aliases": []
+          },
+          {
+            "label": "Onyx",
+            "aliases": []
+          },
+          {
+            "label": "Opal",
+            "aliases": []
+          },
+          {
+            "label": "Opera mauve",
+            "aliases": []
+          },
+          {
+            "label": "Orange iced tea",
+            "aliases": []
+          },
+          {
+            "label": "Orange-red",
+            "aliases": [
+              "Orange-red (Crayola)"
+            ]
+          },
+          {
+            "label": "Orange soda",
+            "aliases": []
+          },
+          {
+            "label": "Orange-yellow",
+            "aliases": [
+              "Orange-yellow (Crayola)"
+            ]
+          },
+          {
+            "label": "Orchid",
+            "aliases": [
+              "Orchid (Crayola)"
+            ]
+          },
+          {
+            "label": "Orchid pink",
+            "aliases": []
+          },
+          {
+            "label": "Orioles orange",
+            "aliases": []
+          },
+          {
+            "label": "Otter brown",
+            "aliases": []
+          },
+          {
+            "label": "OU Crimson red",
+            "aliases": []
+          },
+          {
+            "label": "Outer Space",
+            "aliases": [
+              "Outer space (Crayola)"
+            ]
+          },
+          {
+            "label": "Outrageous orange",
+            "aliases": []
+          },
+          {
+            "label": "Oxblood",
+            "aliases": []
+          },
+          {
+            "label": "Oxford blue",
+            "aliases": []
+          },
+          {
+            "label": "Oxley",
+            "aliases": []
+          },
+          {
+            "label": "Pacific Blue",
+            "aliases": []
+          },
+          {
+            "label": "Pakistan green",
+            "aliases": []
+          },
+          {
+            "label": "Palatinate blue",
+            "aliases": []
+          },
+          {
+            "label": "Palatinate purple",
+            "aliases": []
+          },
+          {
+            "label": "Pale aqua",
+            "aliases": []
+          },
+          {
+            "label": "Pale blue",
+            "aliases": []
+          },
+          {
+            "label": "Pale brown",
+            "aliases": []
+          },
+          {
+            "label": "Pale carmine",
+            "aliases": []
+          },
+          {
+            "label": "Pale cerulean",
+            "aliases": []
+          },
+          {
+            "label": "Pale chestnut",
+            "aliases": []
+          },
+          {
+            "label": "Pale copper",
+            "aliases": []
+          },
+          {
+            "label": "Pale cornflower blue",
+            "aliases": []
+          },
+          {
+            "label": "Pale cyan",
+            "aliases": []
+          },
+          {
+            "label": "Pale gold",
+            "aliases": []
+          },
+          {
+            "label": "Pale goldenrod",
+            "aliases": []
+          },
+          {
+            "label": "Pale green",
+            "aliases": []
+          },
+          {
+            "label": "Pale lavender",
+            "aliases": []
+          },
+          {
+            "label": "Pale magenta",
+            "aliases": []
+          },
+          {
+            "label": "Pale pink",
+            "aliases": []
+          },
+          {
+            "label": "Pale plum",
+            "aliases": []
+          },
+          {
+            "label": "Pale robin egg blue",
+            "aliases": []
+          },
+          {
+            "label": "Pale silver",
+            "aliases": []
+          },
+          {
+            "label": "Pale spring bud",
+            "aliases": []
+          },
+          {
+            "label": "Pale taupe",
+            "aliases": []
+          },
+          {
+            "label": "Pale turquoise",
+            "aliases": []
+          },
+          {
+            "label": "Pale violet",
+            "aliases": []
+          },
+          {
+            "label": "Pale violet-red",
+            "aliases": []
+          },
+          {
+            "label": "Pansy purple",
+            "aliases": []
+          },
+          {
+            "label": "Paolo Veronese green",
+            "aliases": []
+          },
+          {
+            "label": "Papaya whip",
+            "aliases": []
+          },
+          {
+            "label": "Paradise pink",
+            "aliases": []
+          },
+          {
+            "label": "Parchment",
+            "aliases": []
+          },
+          {
+            "label": "Paris Green",
+            "aliases": []
+          },
+          {
+            "label": "Pastel blue",
+            "aliases": []
+          },
+          {
+            "label": "Pastel brown",
+            "aliases": []
+          },
+          {
+            "label": "Pastel gray",
+            "aliases": [
+              "Pastel grey"
+            ]
+          },
+          {
+            "label": "Pastel green",
+            "aliases": []
+          },
+          {
+            "label": "Pastel magenta",
+            "aliases": []
+          },
+          {
+            "label": "Pastel orange",
+            "aliases": []
+          },
+          {
+            "label": "Pastel purple",
+            "aliases": []
+          },
+          {
+            "label": "Pastel red",
+            "aliases": []
+          },
+          {
+            "label": "Pastel violet",
+            "aliases": []
+          },
+          {
+            "label": "Pastel yellow",
+            "aliases": []
+          },
+          {
+            "label": "Patriarch",
+            "aliases": []
+          },
+          {
+            "label": "Payne's gray",
+            "aliases": [
+              "Payne's grey"
+            ]
+          },
+          {
+            "label": "Peach puff",
+            "aliases": []
+          },
+          {
+            "label": "Pear",
+            "aliases": []
+          },
+          {
+            "label": "Pearl Aqua",
+            "aliases": []
+          },
+          {
+            "label": "Pearly purple",
+            "aliases": []
+          },
+          {
+            "label": "Perano",
+            "aliases": [
+              "Perano (Infinitely Hot)"
+            ]
+          },
+          {
+            "label": "Peridot",
+            "aliases": []
+          },
+          {
+            "label": "Persian blue",
+            "aliases": []
+          },
+          {
+            "label": "Persian green",
+            "aliases": []
+          },
+          {
+            "label": "Persian indigo",
+            "aliases": []
+          },
+          {
+            "label": "Persian orange",
+            "aliases": []
+          },
+          {
+            "label": "Persian pink",
+            "aliases": []
+          },
+          {
+            "label": "Persian plum",
+            "aliases": []
+          },
+          {
+            "label": "Persian red",
+            "aliases": []
+          },
+          {
+            "label": "Persian rose",
+            "aliases": []
+          },
+          {
+            "label": "Persimmon",
+            "aliases": []
+          },
+          {
+            "label": "Peru",
+            "aliases": []
+          },
+          {
+            "label": "Petal",
+            "aliases": []
+          },
+          {
+            "label": "Petunia",
+            "aliases": []
+          },
+          {
+            "label": "Pewter blue",
+            "aliases": []
+          },
+          {
+            "label": "Philippine blue",
+            "aliases": []
+          },
+          {
+            "label": "Philippine bronze",
+            "aliases": []
+          },
+          {
+            "label": "Philippine brown",
+            "aliases": []
+          },
+          {
+            "label": "Philippine gold",
+            "aliases": []
+          },
+          {
+            "label": "Philippine golden yellow",
+            "aliases": []
+          },
+          {
+            "label": "Philippine gray",
+            "aliases": [
+              "Philippine grey"
+            ]
+          },
+          {
+            "label": "Philippine green",
+            "aliases": []
+          },
+          {
+            "label": "Philippine indigo",
+            "aliases": []
+          },
+          {
+            "label": "Philippine orange",
+            "aliases": []
+          },
+          {
+            "label": "Philippine pink",
+            "aliases": []
+          },
+          {
+            "label": "Philippine red",
+            "aliases": []
+          },
+          {
+            "label": "Philippine silver",
+            "aliases": []
+          },
+          {
+            "label": "Philippine sky blue",
+            "aliases": []
+          },
+          {
+            "label": "Philippine violet",
+            "aliases": []
+          },
+          {
+            "label": "Philippine yellow",
+            "aliases": []
+          },
+          {
+            "label": "Phlox",
+            "aliases": []
+          },
+          {
+            "label": "Phthalo blue",
+            "aliases": []
+          },
+          {
+            "label": "Phthalo green",
+            "aliases": []
+          },
+          {
+            "label": "Picton blue",
+            "aliases": []
+          },
+          {
+            "label": "Pictorial carmine",
+            "aliases": []
+          },
+          {
+            "label": "Piggy pink",
+            "aliases": []
+          },
+          {
+            "label": "Pigment violet",
+            "aliases": []
+          },
+          {
+            "label": "Pineapple",
+            "aliases": []
+          },
+          {
+            "label": "Pine green",
+            "aliases": []
+          },
+          {
+            "label": "Pink Diamond",
+            "aliases": [
+              "Pink Diamond (Ace Hardware Color)",
+              "Pink Diamond (Independent Retailers Colors)"
+            ]
+          },
+          {
+            "label": "Pink flamingo",
+            "aliases": []
+          },
+          {
+            "label": "Pink lace",
+            "aliases": []
+          },
+          {
+            "label": "Pink pearl",
+            "aliases": []
+          },
+          {
+            "label": "Pink Sherbet",
+            "aliases": []
+          },
+          {
+            "label": "Pistachio",
+            "aliases": []
+          },
+          {
+            "label": "Platinum",
+            "aliases": []
+          },
+          {
+            "label": "Plump Purple",
+            "aliases": []
+          },
+          {
+            "label": "Poison Purple",
+            "aliases": []
+          },
+          {
+            "label": "Police blue",
+            "aliases": []
+          },
+          {
+            "label": "Polished pine",
+            "aliases": []
+          },
+          {
+            "label": "Pomp and Power",
+            "aliases": []
+          },
+          {
+            "label": "Portland Orange",
+            "aliases": []
+          },
+          {
+            "label": "Powder blue",
+            "aliases": []
+          },
+          {
+            "label": "Princeton orange",
+            "aliases": []
+          },
+          {
+            "label": "Prune",
+            "aliases": []
+          },
+          {
+            "label": "Prussian blue",
+            "aliases": []
+          },
+          {
+            "label": "Psychedelic purple",
+            "aliases": []
+          },
+          {
+            "label": "Puce",
+            "aliases": []
+          },
+          {
+            "label": "Puce red",
+            "aliases": []
+          },
+          {
+            "label": "Pullman Brown",
+            "aliases": [
+              "Pullman Brown (UPS Brown)"
+            ]
+          },
+          {
+            "label": "Pumpkin",
+            "aliases": []
+          },
+          {
+            "label": "Purple Heart",
+            "aliases": []
+          },
+          {
+            "label": "Purple mountain majesty",
+            "aliases": []
+          },
+          {
+            "label": "Purple navy",
+            "aliases": []
+          },
+          {
+            "label": "Purple pizzazz",
+            "aliases": []
+          },
+          {
+            "label": "Purple Plum",
+            "aliases": []
+          },
+          {
+            "label": "Purple taupe",
+            "aliases": []
+          },
+          {
+            "label": "Purpureus",
+            "aliases": []
+          },
+          {
+            "label": "Quartz",
+            "aliases": []
+          },
+          {
+            "label": "Queen blue",
+            "aliases": []
+          },
+          {
+            "label": "Queen pink",
+            "aliases": []
+          },
+          {
+            "label": "Quick silver",
+            "aliases": []
+          },
+          {
+            "label": "Quinacridone magenta",
+            "aliases": []
+          },
+          {
+            "label": "Quincy",
+            "aliases": []
+          },
+          {
+            "label": "Rackley",
+            "aliases": []
+          },
+          {
+            "label": "Radical Red",
+            "aliases": []
+          },
+          {
+            "label": "Raisin black",
+            "aliases": []
+          },
+          {
+            "label": "Rajah",
+            "aliases": []
+          },
+          {
+            "label": "Raspberry",
+            "aliases": []
+          },
+          {
+            "label": "Raw Sienna",
+            "aliases": []
+          },
+          {
+            "label": "Raw umber",
+            "aliases": []
+          },
+          {
+            "label": "Razzle Dazzle Rose",
+            "aliases": []
+          },
+          {
+            "label": "Razzmatazz",
+            "aliases": []
+          },
+          {
+            "label": "Rebecca Purple",
+            "aliases": []
+          },
+          {
+            "label": "Red-brown",
+            "aliases": []
+          },
+          {
+            "label": "Red cola",
+            "aliases": []
+          },
+          {
+            "label": "Red-orange",
+            "aliases": [
+              "Red-orange (Color wheel)",
+              "Red-orange (Crayola)"
+            ]
+          },
+          {
+            "label": "Red rum",
+            "aliases": []
+          },
+          {
+            "label": "Red Salsa",
+            "aliases": []
+          },
+          {
+            "label": "Red strawberry",
+            "aliases": []
+          },
+          {
+            "label": "Red-violet",
+            "aliases": [
+              "Red-violet (Color wheel)",
+              "Red-violet (Crayola)"
+            ]
+          },
+          {
+            "label": "Redwood",
+            "aliases": []
+          },
+          {
+            "label": "Registration black",
+            "aliases": []
+          },
+          {
+            "label": "Resolution blue",
+            "aliases": []
+          },
+          {
+            "label": "Rhythm",
+            "aliases": []
+          },
+          {
+            "label": "Rich brilliant lavender",
+            "aliases": []
+          },
+          {
+            "label": "Rich carmine",
+            "aliases": []
+          },
+          {
+            "label": "Rich electric blue",
+            "aliases": []
+          },
+          {
+            "label": "Rich lavender",
+            "aliases": []
+          },
+          {
+            "label": "Rich lilac",
+            "aliases": []
+          },
+          {
+            "label": "Rich maroon",
+            "aliases": []
+          },
+          {
+            "label": "Rifle green",
+            "aliases": []
+          },
+          {
+            "label": "Ripe mango",
+            "aliases": []
+          },
+          {
+            "label": "Roast coffee",
+            "aliases": []
+          },
+          {
+            "label": "Robin egg blue",
+            "aliases": []
+          },
+          {
+            "label": "Rocket metallic",
+            "aliases": []
+          },
+          {
+            "label": "Roman silver",
+            "aliases": []
+          },
+          {
+            "label": "Root beer",
+            "aliases": []
+          },
+          {
+            "label": "Rose dust",
+            "aliases": []
+          },
+          {
+            "label": "Rose madder",
+            "aliases": []
+          },
+          {
+            "label": "rosybrown",
+            "aliases": []
+          },
+          {
+            "label": "Royal azure",
+            "aliases": []
+          },
+          {
+            "label": "Royal brown",
+            "aliases": []
+          },
+          {
+            "label": "Royal fuchsia",
+            "aliases": []
+          },
+          {
+            "label": "Royal green",
+            "aliases": []
+          },
+          {
+            "label": "Royal orange",
+            "aliases": []
+          },
+          {
+            "label": "Royal pink",
+            "aliases": []
+          },
+          {
+            "label": "Royal purple",
+            "aliases": []
+          },
+          {
+            "label": "Royal red",
+            "aliases": []
+          },
+          {
+            "label": "Royal yellow",
+            "aliases": []
+          },
+          {
+            "label": "Rufous",
+            "aliases": []
+          },
+          {
+            "label": "Rum",
+            "aliases": []
+          },
+          {
+            "label": "Russet",
+            "aliases": []
+          },
+          {
+            "label": "Russian green",
+            "aliases": []
+          },
+          {
+            "label": "Russian violet",
+            "aliases": []
+          },
+          {
+            "label": "Rusty red",
+            "aliases": []
+          },
+          {
+            "label": "Sacramento State green",
+            "aliases": []
+          },
+          {
+            "label": "Saddle Brown",
+            "aliases": []
+          },
+          {
+            "label": "Safety orange",
+            "aliases": [
+              "Safety orange (blaze orange)"
+            ]
+          },
+          {
+            "label": "Safety yellow",
+            "aliases": []
+          },
+          {
+            "label": "Saffron",
+            "aliases": []
+          },
+          {
+            "label": "Sage",
+            "aliases": []
+          },
+          {
+            "label": "Salem",
+            "aliases": []
+          },
+          {
+            "label": "Salmon pink",
+            "aliases": []
+          },
+          {
+            "label": "Salmon Rose",
+            "aliases": []
+          },
+          {
+            "label": "Samsung blue",
+            "aliases": []
+          },
+          {
+            "label": "Sand",
+            "aliases": []
+          },
+          {
+            "label": "Sand dune",
+            "aliases": []
+          },
+          {
+            "label": "Sandy brown",
+            "aliases": []
+          },
+          {
+            "label": "Sandy taupe",
+            "aliases": []
+          },
+          {
+            "label": "Sap green",
+            "aliases": []
+          },
+          {
+            "label": "Sapphire blue",
+            "aliases": []
+          },
+          {
+            "label": "Satin sheen gold",
+            "aliases": []
+          },
+          {
+            "label": "Savoy blue",
+            "aliases": []
+          },
+          {
+            "label": "Schauss pink",
+            "aliases": []
+          },
+          {
+            "label": "School bus yellow",
+            "aliases": []
+          },
+          {
+            "label": "Screamin' green",
+            "aliases": []
+          },
+          {
+            "label": "Sea blue",
+            "aliases": []
+          },
+          {
+            "label": "Sea foam green",
+            "aliases": []
+          },
+          {
+            "label": "Seal brown",
+            "aliases": []
+          },
+          {
+            "label": "Seashell",
+            "aliases": []
+          },
+          {
+            "label": "Selective yellow",
+            "aliases": []
+          },
+          {
+            "label": "Sepia",
+            "aliases": []
+          },
+          {
+            "label": "SGBUS green",
+            "aliases": []
+          },
+          {
+            "label": "Shadow",
+            "aliases": []
+          },
+          {
+            "label": "Shadow blue",
+            "aliases": []
+          },
+          {
+            "label": "Shampoo",
+            "aliases": []
+          },
+          {
+            "label": "Shamrock green",
+            "aliases": []
+          },
+          {
+            "label": "Shandy",
+            "aliases": []
+          },
+          {
+            "label": "Sheen green",
+            "aliases": []
+          },
+          {
+            "label": "Shimmering Blush",
+            "aliases": []
+          },
+          {
+            "label": "Shiny shamrock",
+            "aliases": []
+          },
+          {
+            "label": "Shocking pink",
+            "aliases": [
+              "Shocking pink (Crayola)"
+            ]
+          },
+          {
+            "label": "Silver chalice",
+            "aliases": []
+          },
+          {
+            "label": "Silver foil",
+            "aliases": []
+          },
+          {
+            "label": "Silver Lake blue",
+            "aliases": []
+          },
+          {
+            "label": "Silver pink",
+            "aliases": []
+          },
+          {
+            "label": "Silver sand",
+            "aliases": []
+          },
+          {
+            "label": "Sinopia",
+            "aliases": []
+          },
+          {
+            "label": "Sizzling Red",
+            "aliases": []
+          },
+          {
+            "label": "Sizzling Sunrise",
+            "aliases": []
+          },
+          {
+            "label": "Skobeloff",
+            "aliases": []
+          },
+          {
+            "label": "Sky magenta",
+            "aliases": []
+          },
+          {
+            "label": "Slate blue",
+            "aliases": []
+          },
+          {
+            "label": "Slimy green",
+            "aliases": []
+          },
+          {
+            "label": "Smalt",
+            "aliases": [
+              "Smalt (Dark powder blue)"
+            ]
+          },
+          {
+            "label": "Smoke",
+            "aliases": []
+          },
+          {
+            "label": "Smokey Topaz",
+            "aliases": []
+          },
+          {
+            "label": "Smoky black",
+            "aliases": []
+          },
+          {
+            "label": "snow",
+            "aliases": []
+          },
+          {
+            "label": "Soap",
+            "aliases": []
+          },
+          {
+            "label": "Solid pink",
+            "aliases": []
+          },
+          {
+            "label": "Sonic silver",
+            "aliases": []
+          },
+          {
+            "label": "Space cadet",
+            "aliases": []
+          },
+          {
+            "label": "Spanish bister",
+            "aliases": [
+              "Spanish bister (Spanish bistre)"
+            ]
+          },
+          {
+            "label": "Spanish blue",
+            "aliases": []
+          },
+          {
+            "label": "Spanish carmine",
+            "aliases": []
+          },
+          {
+            "label": "Spanish crimson",
+            "aliases": []
+          },
+          {
+            "label": "Spanish gray",
+            "aliases": [
+              "Spanish grey"
+            ]
+          },
+          {
+            "label": "Spanish green",
+            "aliases": []
+          },
+          {
+            "label": "Spanish orange",
+            "aliases": []
+          },
+          {
+            "label": "Spanish pink",
+            "aliases": []
+          },
+          {
+            "label": "Spanish purple",
+            "aliases": []
+          },
+          {
+            "label": "Spanish red",
+            "aliases": []
+          },
+          {
+            "label": "Spanish sky blue",
+            "aliases": []
+          },
+          {
+            "label": "Spanish violet",
+            "aliases": []
+          },
+          {
+            "label": "Spanish viridian",
+            "aliases": []
+          },
+          {
+            "label": "Spanish yellow",
+            "aliases": []
+          },
+          {
+            "label": "Spartan Crimson",
+            "aliases": []
+          },
+          {
+            "label": "Spicy mix",
+            "aliases": []
+          },
+          {
+            "label": "Spring bud",
+            "aliases": []
+          },
+          {
+            "label": "Spring Frost",
+            "aliases": []
+          },
+          {
+            "label": "Spring green",
+            "aliases": [
+              "Spring green (Crayola)"
+            ]
+          },
+          {
+            "label": "Star command blue",
+            "aliases": []
+          },
+          {
+            "label": "Steel blue",
+            "aliases": []
+          },
+          {
+            "label": "Steel pink",
+            "aliases": []
+          },
+          {
+            "label": "Steel teal",
+            "aliases": []
+          },
+          {
+            "label": "Stil de grain yellow",
+            "aliases": []
+          },
+          {
+            "label": "Stop red",
+            "aliases": []
+          },
+          {
+            "label": "St. Patrick's blue",
+            "aliases": []
+          },
+          {
+            "label": "Straw",
+            "aliases": []
+          },
+          {
+            "label": "Strawberry",
+            "aliases": []
+          },
+          {
+            "label": "Strawberry iced tea",
+            "aliases": []
+          },
+          {
+            "label": "Strawberry red",
+            "aliases": []
+          },
+          {
+            "label": "Sugar plum",
+            "aliases": []
+          },
+          {
+            "label": "Sunglow",
+            "aliases": []
+          },
+          {
+            "label": "Sunray",
+            "aliases": []
+          },
+          {
+            "label": "Sunset",
+            "aliases": []
+          },
+          {
+            "label": "Sunset orange",
+            "aliases": []
+          },
+          {
+            "label": "Super pink",
+            "aliases": []
+          },
+          {
+            "label": "Sweet Brown",
+            "aliases": []
+          },
+          {
+            "label": "Tangelo",
+            "aliases": []
+          },
+          {
+            "label": "Tangerine",
+            "aliases": []
+          },
+          {
+            "label": "Tangerine yellow",
+            "aliases": []
+          },
+          {
+            "label": "Tango pink",
+            "aliases": []
+          },
+          {
+            "label": "Tart Orange",
+            "aliases": []
+          },
+          {
+            "label": "Taupe gray",
+            "aliases": [
+              "Taupe grey"
+            ]
+          },
+          {
+            "label": "Tea green",
+            "aliases": []
+          },
+          {
+            "label": "Teal blue",
+            "aliases": []
+          },
+          {
+            "label": "Teal deer",
+            "aliases": []
+          },
+          {
+            "label": "Teal green",
+            "aliases": []
+          },
+          {
+            "label": "Tea rose",
+            "aliases": []
+          },
+          {
+            "label": "Technobotanica",
+            "aliases": []
+          },
+          {
+            "label": "Telemagenta",
+            "aliases": []
+          },
+          {
+            "label": "Temptress",
+            "aliases": []
+          },
+          {
+            "label": "Tenné",
+            "aliases": []
+          },
+          {
+            "label": "Thistle",
+            "aliases": [
+              "Thistle (Crayola)"
+            ]
+          },
+          {
+            "label": "Thulian pink",
+            "aliases": []
+          },
+          {
+            "label": "Tickle Me Pink",
+            "aliases": []
+          },
+          {
+            "label": "Tiffany Blue",
+            "aliases": []
+          },
+          {
+            "label": "Tiger's eye",
+            "aliases": []
+          },
+          {
+            "label": "Timberwolf",
+            "aliases": []
+          },
+          {
+            "label": "Titanium",
+            "aliases": []
+          },
+          {
+            "label": "Titanium yellow",
+            "aliases": []
+          },
+          {
+            "label": "Toad",
+            "aliases": []
+          },
+          {
+            "label": "Tomato",
+            "aliases": []
+          },
+          {
+            "label": "Tomato sauce",
+            "aliases": []
+          },
+          {
+            "label": "Tooth",
+            "aliases": []
+          },
+          {
+            "label": "Topaz",
+            "aliases": []
+          },
+          {
+            "label": "Tractor red",
+            "aliases": []
+          },
+          {
+            "label": "Traffic Black",
+            "aliases": []
+          },
+          {
+            "label": "Traffic Blue",
+            "aliases": []
+          },
+          {
+            "label": "Traffic Gray A",
+            "aliases": [
+              "Traffic grey A"
+            ]
+          },
+          {
+            "label": "Traffic Gray B",
+            "aliases": [
+              "Traffic grey B"
+            ]
+          },
+          {
+            "label": "Traffic Green",
+            "aliases": []
+          },
+          {
+            "label": "Traffic Orange",
+            "aliases": []
+          },
+          {
+            "label": "Traffic Purple",
+            "aliases": []
+          },
+          {
+            "label": "Traffic Red",
+            "aliases": []
+          },
+          {
+            "label": "Traffic White",
+            "aliases": []
+          },
+          {
+            "label": "Traffic Yellow",
+            "aliases": []
+          },
+          {
+            "label": "Trolley gray",
+            "aliases": [
+              "Trolley grey"
+            ]
+          },
+          {
+            "label": "Tropical rain forest",
+            "aliases": []
+          },
+          {
+            "label": "Tropical violet",
+            "aliases": []
+          },
+          {
+            "label": "True blue",
+            "aliases": []
+          },
+          {
+            "label": "True purple",
+            "aliases": []
+          },
+          {
+            "label": "Tufts blue",
+            "aliases": []
+          },
+          {
+            "label": "Tulip",
+            "aliases": []
+          },
+          {
+            "label": "Tumbleweed",
+            "aliases": []
+          },
+          {
+            "label": "Turkish rose",
+            "aliases": []
+          },
+          {
+            "label": "Turquoise blue",
+            "aliases": []
+          },
+          {
+            "label": "Turquoise green",
+            "aliases": []
+          },
+          {
+            "label": "Tuscan brown",
+            "aliases": []
+          },
+          {
+            "label": "Tuscan red",
+            "aliases": []
+          },
+          {
+            "label": "Tuscan tan",
+            "aliases": []
+          },
+          {
+            "label": "Tuscany",
+            "aliases": []
+          },
+          {
+            "label": "Twilight lavender",
+            "aliases": []
+          },
+          {
+            "label": "Twitter blue",
+            "aliases": []
+          },
+          {
+            "label": "Tyrian purple",
+            "aliases": []
+          },
+          {
+            "label": "Ultramarine",
+            "aliases": []
+          },
+          {
+            "label": "Ultramarine blue",
+            "aliases": [
+              "Ultramarine blue (Caran d'Ache)"
+            ]
+          },
+          {
+            "label": "Ultra pink",
+            "aliases": []
+          },
+          {
+            "label": "Ultra red",
+            "aliases": []
+          },
+          {
+            "label": "Unbleached silk",
+            "aliases": []
+          },
+          {
+            "label": "United Nations blue",
+            "aliases": []
+          },
+          {
+            "label": "Unmellow yellow",
+            "aliases": []
+          },
+          {
+            "label": "UP maroon",
+            "aliases": []
+          },
+          {
+            "label": "Upsdell red",
+            "aliases": []
+          },
+          {
+            "label": "Urobilin",
+            "aliases": []
+          },
+          {
+            "label": "Vampire Black",
+            "aliases": []
+          },
+          {
+            "label": "Van Dyke brown",
+            "aliases": []
+          },
+          {
+            "label": "Vanilla",
+            "aliases": []
+          },
+          {
+            "label": "Vanilla ice",
+            "aliases": [
+              "Vanilla ice (#2)",
+              "Vanilla ice (#3)"
+            ]
+          },
+          {
+            "label": "Vantablack",
+            "aliases": []
+          },
+          {
+            "label": "Vantg blue",
+            "aliases": []
+          },
+          {
+            "label": "Vegas gold",
+            "aliases": []
+          },
+          {
+            "label": "Venetian red",
+            "aliases": []
+          },
+          {
+            "label": "Verdigris",
+            "aliases": []
+          },
+          {
+            "label": "Vermilion",
+            "aliases": [
+              "Vermilion (Medium)"
+            ]
+          },
+          {
+            "label": "Veronica",
+            "aliases": []
+          },
+          {
+            "label": "Very light azure",
+            "aliases": []
+          },
+          {
+            "label": "Very light blue",
+            "aliases": []
+          },
+          {
+            "label": "Very light malachite green",
+            "aliases": []
+          },
+          {
+            "label": "Very light tangelo",
+            "aliases": []
+          },
+          {
+            "label": "Very pale orange",
+            "aliases": []
+          },
+          {
+            "label": "Very pale yellow",
+            "aliases": []
+          },
+          {
+            "label": "Vibrant Purple",
+            "aliases": []
+          },
+          {
+            "label": "Vine Green",
+            "aliases": []
+          },
+          {
+            "label": "Violet-blue",
+            "aliases": [
+              "Violet-blue (Crayola)"
+            ]
+          },
+          {
+            "label": "Violin Brown",
+            "aliases": []
+          },
+          {
+            "label": "Viridian",
+            "aliases": []
+          },
+          {
+            "label": "Viridian green",
+            "aliases": []
+          },
+          {
+            "label": "Vista blue",
+            "aliases": []
+          },
+          {
+            "label": "Vivid amber",
+            "aliases": []
+          },
+          {
+            "label": "Vivid auburn",
+            "aliases": []
+          },
+          {
+            "label": "Vivid burgundy",
+            "aliases": []
+          },
+          {
+            "label": "Vivid cerise",
+            "aliases": []
+          },
+          {
+            "label": "Vivid cerulean",
+            "aliases": []
+          },
+          {
+            "label": "Vivid crimson",
+            "aliases": []
+          },
+          {
+            "label": "Vivid gamboge",
+            "aliases": []
+          },
+          {
+            "label": "Vivid lime green",
+            "aliases": []
+          },
+          {
+            "label": "Vivid malachite",
+            "aliases": []
+          },
+          {
+            "label": "Vivid mulberry",
+            "aliases": []
+          },
+          {
+            "label": "Vivid orange",
+            "aliases": []
+          },
+          {
+            "label": "Vivid orange peel",
+            "aliases": []
+          },
+          {
+            "label": "Vivid orchid",
+            "aliases": []
+          },
+          {
+            "label": "Vivid raspberry",
+            "aliases": []
+          },
+          {
+            "label": "Vivid red",
+            "aliases": []
+          },
+          {
+            "label": "Vivid red-tangelo",
+            "aliases": []
+          },
+          {
+            "label": "Vivid sky blue",
+            "aliases": []
+          },
+          {
+            "label": "Vivid tangelo",
+            "aliases": []
+          },
+          {
+            "label": "Vivid tangerine",
+            "aliases": []
+          },
+          {
+            "label": "Vivid vermilion",
+            "aliases": []
+          },
+          {
+            "label": "Vivid violet",
+            "aliases": []
+          },
+          {
+            "label": "Vivid yellow",
+            "aliases": []
+          },
+          {
+            "label": "Volt",
+            "aliases": []
+          },
+          {
+            "label": "Water",
+            "aliases": []
+          },
+          {
+            "label": "Watermelon",
+            "aliases": []
+          },
+          {
+            "label": "Watermelon red",
+            "aliases": []
+          },
+          {
+            "label": "Watermelon Yellow",
+            "aliases": []
+          },
+          {
+            "label": "Waterspout",
+            "aliases": []
+          },
+          {
+            "label": "Websafe Indigo",
+            "aliases": []
+          },
+          {
+            "label": "Websafe Scarlet",
+            "aliases": []
+          },
+          {
+            "label": "Wenge",
+            "aliases": []
+          },
+          {
+            "label": "Wheat",
+            "aliases": []
+          },
+          {
+            "label": "White chocolate",
+            "aliases": []
+          },
+          {
+            "label": "White coffee",
+            "aliases": []
+          },
+          {
+            "label": "White smoke",
+            "aliases": []
+          },
+          {
+            "label": "Wild blue yonder",
+            "aliases": []
+          },
+          {
+            "label": "Wild orchid",
+            "aliases": []
+          },
+          {
+            "label": "Wild Strawberry",
+            "aliases": []
+          },
+          {
+            "label": "Wild watermelon",
+            "aliases": []
+          },
+          {
+            "label": "Willpower orange",
+            "aliases": []
+          },
+          {
+            "label": "Windsor tan",
+            "aliases": []
+          },
+          {
+            "label": "Wine",
+            "aliases": []
+          },
+          {
+            "label": "Wine red",
+            "aliases": []
+          },
+          {
+            "label": "Wintergreen dream",
+            "aliases": []
+          },
+          {
+            "label": "Winter Sky",
+            "aliases": []
+          },
+          {
+            "label": "Wisteria",
+            "aliases": []
+          },
+          {
+            "label": "Wood brown",
+            "aliases": []
+          },
+          {
+            "label": "Xanadu",
+            "aliases": []
+          },
+          {
+            "label": "Xander",
+            "aliases": []
+          },
+          {
+            "label": "Xanthic",
+            "aliases": []
+          },
+          {
+            "label": "Xanthous",
+            "aliases": []
+          },
+          {
+            "label": "Xbox Green",
+            "aliases": []
+          },
+          {
+            "label": "Xiaomi Orange",
+            "aliases": []
+          },
+          {
+            "label": "Xumo",
+            "aliases": []
+          },
+          {
+            "label": "Yale blue",
+            "aliases": [
+              "Yale blue (#2)"
+            ]
+          },
+          {
+            "label": "Yellow-green",
+            "aliases": [
+              "Yellow-green (Crayola)"
+            ]
+          },
+          {
+            "label": "Yellow Orange",
+            "aliases": []
+          },
+          {
+            "label": "Yellow rose",
+            "aliases": []
+          },
+          {
+            "label": "Yellow Sunshine",
+            "aliases": []
+          },
+          {
+            "label": "YInMn Blue",
+            "aliases": []
+          },
+          {
+            "label": "Zaffer",
+            "aliases": [
+              "Zaffer (Zaffre)"
+            ]
+          },
+          {
+            "label": "Zarqa",
+            "aliases": []
+          },
+          {
+            "label": "Zeal",
+            "aliases": []
+          },
+          {
+            "label": "Zebra White",
+            "aliases": []
+          },
+          {
+            "label": "Zinc Gray",
+            "aliases": [
+              "Zinc grey"
+            ]
+          },
+          {
+            "label": "Zinc White",
+            "aliases": []
+          },
+          {
+            "label": "Zinc Yellow",
+            "aliases": []
+          },
+          {
+            "label": "Zinfandel Red",
+            "aliases": []
+          },
+          {
+            "label": "Zinnwaldite brown",
+            "aliases": []
+          },
+          {
+            "label": "Zinzolin",
+            "aliases": []
+          },
+          {
+            "label": "Zircon Blue",
+            "aliases": []
+          },
+          {
+            "label": "Zircon Gray",
+            "aliases": [
+              "Zircon grey"
+            ]
+          },
+          {
+            "label": "Zomp",
+            "aliases": []
+          },
+          {
+            "label": "Zydeco",
+            "aliases": []
+          }
+        ],
+        "30": [
+          {
+            "label": "Amber",
+            "aliases": [
+              "Amber (SAE/ECE)"
+            ]
+          },
+          {
+            "label": "Amethyst",
+            "aliases": [
+              "Amethyst (Crayola)"
+            ]
+          },
+          {
+            "label": "Apricot",
+            "aliases": []
+          },
+          {
+            "label": "Aqua",
+            "aliases": [
+              "Cyan",
+              "cyan"
+            ]
+          },
+          {
+            "label": "Aquamarine",
+            "aliases": [
+              "Aquamarine (Crayola)"
+            ]
+          },
+          {
+            "label": "Baby blue",
+            "aliases": []
+          },
+          {
+            "label": "Beige",
+            "aliases": []
+          },
+          {
+            "label": "Black",
+            "aliases": []
+          },
+          {
+            "label": "Bronze",
+            "aliases": []
+          },
+          {
+            "label": "Brown",
+            "aliases": [
+              "Brown (CMY)",
+              "Brown (crayola)",
+              "Brown (web)"
+            ]
+          },
+          {
+            "label": "Burgundy",
+            "aliases": []
+          },
+          {
+            "label": "Cerulean",
+            "aliases": [
+              "Cerulean (Crayola)"
+            ]
+          },
+          {
+            "label": "Champagne",
+            "aliases": []
+          },
+          {
+            "label": "Charcoal",
+            "aliases": [
+              "Charcoal gray",
+              "Charcoal grey"
+            ]
+          },
+          {
+            "label": "Chartreuse",
+            "aliases": []
+          },
+          {
+            "label": "Chocolate",
+            "aliases": [
+              "Chocolate (traditional)",
+              "Chocolate (web)"
+            ]
+          },
+          {
+            "label": "Coffee",
+            "aliases": []
+          },
+          {
+            "label": "Copper",
+            "aliases": []
+          },
+          {
+            "label": "Coral",
+            "aliases": []
+          },
+          {
+            "label": "Cream",
+            "aliases": []
+          },
+          {
+            "label": "Crimson",
+            "aliases": [
+              "Crimson (UA)"
+            ]
+          },
+          {
+            "label": "Ecru",
+            "aliases": []
+          },
+          {
+            "label": "Eggshell",
+            "aliases": []
+          },
+          {
+            "label": "Emerald",
+            "aliases": []
+          },
+          {
+            "label": "Forest green",
+            "aliases": [
+              "Forest green (Crayola)",
+              "Forest green (traditional)",
+              "Forest green (web)"
+            ]
+          },
+          {
+            "label": "Gold",
+            "aliases": [
+              "Gold (Crayola)",
+              "Gold (metallic)",
+              "Gold (web) (Golden)",
+              "Golden"
+            ]
+          },
+          {
+            "label": "Gray",
+            "aliases": [
+              "Gray (X11)",
+              "Gray (web)",
+              "grey (X11)",
+              "grey (web)",
+              "Grey",
+              "grey"
+            ]
+          },
+          {
+            "label": "Hot pink",
+            "aliases": []
+          },
+          {
+            "label": "Indigo",
+            "aliases": [
+              "Indigo (Crayola)",
+              "Indigo (color wheel)",
+              "Indigo (web color)"
+            ]
+          },
+          {
+            "label": "Ivory",
+            "aliases": []
+          },
+          {
+            "label": "Khaki",
+            "aliases": [
+              "Khaki (X11) (Light khaki)",
+              "Khaki (web) (Khaki)"
+            ]
+          },
+          {
+            "label": "Lavender",
+            "aliases": [
+              "Lavender (floral)",
+              "Lavender (web)"
+            ]
+          },
+          {
+            "label": "Lemon yellow",
+            "aliases": [
+              "Lemon yellow (Crayola)"
+            ]
+          },
+          {
+            "label": "Lilac",
+            "aliases": []
+          },
+          {
+            "label": "Lime green",
+            "aliases": []
+          },
+          {
+            "label": "Magenta",
+            "aliases": [
+              "Fuchsia",
+              "Fuchsia (Crayola)",
+              "Magenta (Pantone)",
+              "fuchsia"
+            ]
+          },
+          {
+            "label": "Mahogany",
+            "aliases": []
+          },
+          {
+            "label": "Maroon",
+            "aliases": [
+              "Maroon (Crayola)",
+              "Maroon (HTML/CSS)",
+              "Maroon (X11)"
+            ]
+          },
+          {
+            "label": "Mauve",
+            "aliases": []
+          },
+          {
+            "label": "Mint green",
+            "aliases": []
+          },
+          {
+            "label": "Mustard",
+            "aliases": []
+          },
+          {
+            "label": "Navy blue",
+            "aliases": [
+              "Navy blue (Crayola)",
+              "Navy"
+            ]
+          },
+          {
+            "label": "Neon green",
+            "aliases": []
+          },
+          {
+            "label": "Ocher",
+            "aliases": [
+              "Ocher (Ochre)",
+              "Ochre"
+            ]
+          },
+          {
+            "label": "Off-white",
+            "aliases": []
+          },
+          {
+            "label": "Olive",
+            "aliases": []
+          },
+          {
+            "label": "Pastel pink",
+            "aliases": []
+          },
+          {
+            "label": "Peach",
+            "aliases": [
+              "Peach (Crayola)"
+            ]
+          },
+          {
+            "label": "Pearl",
+            "aliases": []
+          },
+          {
+            "label": "Periwinkle",
+            "aliases": [
+              "Periwinkle (Crayola)"
+            ]
+          },
+          {
+            "label": "Pink",
+            "aliases": [
+              "Pink (Pantone)"
+            ]
+          },
+          {
+            "label": "Plum",
+            "aliases": [
+              "Plum (web)"
+            ]
+          },
+          {
+            "label": "Rose",
+            "aliases": []
+          },
+          {
+            "label": "Royal blue",
+            "aliases": []
+          },
+          {
+            "label": "Ruby",
+            "aliases": []
+          },
+          {
+            "label": "Rust",
+            "aliases": []
+          },
+          {
+            "label": "Salmon",
+            "aliases": []
+          },
+          {
+            "label": "Sapphire",
+            "aliases": []
+          },
+          {
+            "label": "Scarlet",
+            "aliases": [
+              "Scarlet (Crayola)"
+            ]
+          },
+          {
+            "label": "Sea green",
+            "aliases": [
+              "Sea green (Crayola)"
+            ]
+          },
+          {
+            "label": "Sienna",
+            "aliases": []
+          },
+          {
+            "label": "Silver",
+            "aliases": [
+              "Silver (Crayola)",
+              "Silver (Metallic)"
+            ]
+          },
+          {
+            "label": "Sky blue",
+            "aliases": [
+              "Sky blue (Crayola)"
+            ]
+          },
+          {
+            "label": "Slate gray",
+            "aliases": [
+              "Slate grey",
+              "slategrey"
+            ]
+          },
+          {
+            "label": "Tan",
+            "aliases": [
+              "Tan (Crayola)"
+            ]
+          },
+          {
+            "label": "Taupe",
+            "aliases": []
+          },
+          {
+            "label": "Teal",
+            "aliases": []
+          },
+          {
+            "label": "Terra cotta",
+            "aliases": []
+          },
+          {
+            "label": "Turquoise",
+            "aliases": []
+          },
+          {
+            "label": "Umber",
+            "aliases": []
+          },
+          {
+            "label": "Violet",
+            "aliases": [
+              "Violet (Caran d'Ache)",
+              "Violet (RYB)",
+              "Violet (color wheel)",
+              "Violet (crayola)",
+              "Violet (web)"
+            ]
+          },
+          {
+            "label": "White",
+            "aliases": []
+          }
+        ],
+        "10": [
+          {
+            "label": "Blue",
+            "aliases": [
+              "Blue (Crayola)",
+              "Blue (Munsell)",
+              "Blue (NCS)",
+              "Blue (Pantone)",
+              "Blue (pigment)"
+            ]
+          },
+          {
+            "label": "Green",
+            "aliases": [
+              "Green (Crayola)",
+              "Green (HTML/CSS color)",
+              "Green (Munsell)",
+              "Green (NCS)",
+              "Green (Pantone)",
+              "Green (RYB)",
+              "Green (pigment)"
+            ]
+          },
+          {
+            "label": "Orange",
+            "aliases": [
+              "Orange (Crayola)",
+              "Orange (Pantone)",
+              "Orange (RYB)",
+              "Orange (color wheel)",
+              "Orange (web)"
+            ]
+          },
+          {
+            "label": "Purple",
+            "aliases": [
+              "Purple (HTML)",
+              "Purple (Munsell)",
+              "Purple (X11)"
+            ]
+          },
+          {
+            "label": "Red",
+            "aliases": [
+              "Red (Crayola)",
+              "Red (Munsell)",
+              "Red (NCS)",
+              "Red (Pantone)",
+              "Red (RYB)",
+              "Red (pigment)"
+            ]
+          },
+          {
+            "label": "Yellow",
+            "aliases": [
+              "Yellow (Crayola)",
+              "Yellow (Munsell)",
+              "Yellow (NCS)",
+              "Yellow (Pantone)",
+              "Yellow (RYB)",
+              "Yellow (process)"
+            ]
+          }
+        ],
+        "100": [
+          {
+            "label": "Razzmic Berry",
+            "aliases": []
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,2307 @@
+{
+  "human-joints": {
+    "includedSourceRows": 175,
+    "held": [
+      {
+        "number": 1515,
+        "label": "Joints",
+        "reason": "Repeats the generic word joint instead of naming a kind."
+      },
+      {
+        "number": 1516,
+        "label": "Joint",
+        "reason": "Repeats the generic word joint instead of naming a kind."
+      },
+      {
+        "number": 1519,
+        "label": "Interosseous ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1520,
+        "label": "Interosseous membrane",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1530,
+        "label": "Epiphyseal cartilage",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1534,
+        "label": "Articular cavity",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1535,
+        "label": "Synovial fluid",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1536,
+        "label": "Articular capsule",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1537,
+        "label": "Fibrous layer of articular capsule",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1538,
+        "label": "Synovial membrane of articular capsule",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1539,
+        "label": "Synovial fold",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1540,
+        "label": "Synovial villus",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1541,
+        "label": "Articular fibrocartilage",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1542,
+        "label": "Articular labrum",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1543,
+        "label": "Articular disc",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1544,
+        "label": "Meniscus",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1545,
+        "label": "Accessory ligaments",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1546,
+        "label": "Intracapsular ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1547,
+        "label": "Capsular ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1548,
+        "label": "Extracapsular ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1549,
+        "label": "Articular recess",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1566,
+        "label": "Pterygospinous ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1567,
+        "label": "Stylohyoid ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1568,
+        "label": "Sphenomandibular ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1569,
+        "label": "Stylomandibular ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1570,
+        "label": "Ligaments of auricle",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1571,
+        "label": "Anterior ligament of auricle",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1572,
+        "label": "Superior ligament of auricle",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1573,
+        "label": "Posterior ligament of auricle",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1611,
+        "label": "Periodontal ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1612,
+        "label": "Cement",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1623,
+        "label": "Articular disc of temporomandibular joint",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1624,
+        "label": "Lateral temporomandibular ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1625,
+        "label": "Medial temporomandibular ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1626,
+        "label": "Superior synovial membrane of temporomandibular joint",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1627,
+        "label": "Inferior synovial membrane of temporomandibular joint",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1628,
+        "label": "Superior cavity of temporomandibular joint",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1629,
+        "label": "Inferior cavity of temporomandibular joint",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1631,
+        "label": "Anterior atlantooccipital membrane",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1632,
+        "label": "Anterior atlantooccipital ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1633,
+        "label": "Posterior atlantooccipital membrane",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1634,
+        "label": "Lateral atlantooccipital ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1638,
+        "label": "Ligaments of auditory ossicles",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1639,
+        "label": "Anterior ligament of malleus",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1640,
+        "label": "Superior ligament of malleus",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1641,
+        "label": "Lateral ligament of malleus",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1642,
+        "label": "Superior ligament of incus",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1643,
+        "label": "Posterior ligament of incus",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1644,
+        "label": "Stapedial membrane",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1645,
+        "label": "Annular ligament of stapes",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1646,
+        "label": "Articulations of auditory ossicles",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1651,
+        "label": "Thyrohyoid membrane",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1652,
+        "label": "Median thyrohyoid ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1653,
+        "label": "Lateral thyrohyoid ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1654,
+        "label": "Ligaments of epiglottis",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1655,
+        "label": "Thyroepiglottic ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1656,
+        "label": "Hyoepiglottic ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1657,
+        "label": "Fibroelastic membrane of larynx",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1658,
+        "label": "Quadrangular membrane",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1659,
+        "label": "Vestibular ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1660,
+        "label": "Conus elasticus",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1661,
+        "label": "Vocal ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1662,
+        "label": "Median cricothyroid ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1663,
+        "label": "Cricotracheal ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1666,
+        "label": "Ceratocricoid ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1668,
+        "label": "Cricoarytenoid ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1669,
+        "label": "Cricopharyngeal ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1672,
+        "label": "Anterior atlantoaxial membrane",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1673,
+        "label": "Posterior atlantoaxial membrane",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1674,
+        "label": "Interspinous ligaments",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1675,
+        "label": "Ligamenta flava",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1676,
+        "label": "Intertransverse ligaments",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1677,
+        "label": "Supraspinous ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1678,
+        "label": "Nuchal ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1679,
+        "label": "Anterior longitudinal ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1680,
+        "label": "Posterior longitudinal ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1681,
+        "label": "Intercornual ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1684,
+        "label": "Intervertebral disc",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1685,
+        "label": "Anulus fibrosus",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1686,
+        "label": "Nucleus pulposus",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1689,
+        "label": "Superficial posterior sacrococcygeal ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1690,
+        "label": "Deep posterior sacrococcygeal ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1691,
+        "label": "Anterior sacrococcygeal ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1692,
+        "label": "Lateral sacrococcygeal ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1695,
+        "label": "Alar ligaments",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1696,
+        "label": "Transverse occipital ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1697,
+        "label": "Apical ligament of dens",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1698,
+        "label": "Anterior atlantodental ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1699,
+        "label": "Cruciform ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1700,
+        "label": "Longitudinal bands of cruciform ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1701,
+        "label": "Superior longitudinal band of cruciform ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1702,
+        "label": "Inferior longitudinal band of cruciform ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1703,
+        "label": "Transverse ligament of atlas",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1704,
+        "label": "Tectorial membrane of cervical vertebral column",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1710,
+        "label": "External intercostal membrane",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1711,
+        "label": "Internal intercostal membrane",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1722,
+        "label": "Radiate ligament of head of rib",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1723,
+        "label": "Intraarticular ligament of head of rib",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1725,
+        "label": "Costotransverse ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1726,
+        "label": "Superior costotransverse ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1727,
+        "label": "Lateral costotransverse ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1728,
+        "label": "Lumbocostal ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1729,
+        "label": "Costotransverse foramen",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1731,
+        "label": "Intraarticular sternochondral ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1732,
+        "label": "Radiate sternochondral ligaments",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1733,
+        "label": "Sternal membrane",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1734,
+        "label": "Xiphichondral ligaments",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1736,
+        "label": "Interchondral ligaments",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1740,
+        "label": "Coracoacromial ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1741,
+        "label": "Superior transverse scapular ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1742,
+        "label": "Inferior transverse scapular ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1745,
+        "label": "Acromioclavicular ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1746,
+        "label": "Articular disc of acromioclavicular joint",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1747,
+        "label": "Coracoclavicular ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1748,
+        "label": "Trapezoid ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1749,
+        "label": "Conoid ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1751,
+        "label": "Articular disc of sternoclavicular joint",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1752,
+        "label": "Medial cavity of sternoclavicular joint",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1753,
+        "label": "Lateral cavity of sternoclavicular joint",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1754,
+        "label": "Anterior sternoclavicular ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1755,
+        "label": "Posterior sternoclavicular ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1756,
+        "label": "Costoclavicular ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1757,
+        "label": "Interclavicular ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1761,
+        "label": "Interosseous membrane of forearm",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1762,
+        "label": "Oblique cord",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1765,
+        "label": "Glenoid labrum",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1766,
+        "label": "Glenohumeral ligaments",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1767,
+        "label": "Superior glenohumeral ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1768,
+        "label": "Middle glenohumeral ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1769,
+        "label": "Inferior glenohumeral ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1770,
+        "label": "Coracohumeral ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1771,
+        "label": "Transverse humeral ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1776,
+        "label": "Ulnar collateral ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1777,
+        "label": "Radial collateral ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1778,
+        "label": "Annular ligament of radius",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1779,
+        "label": "Quadrate ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1780,
+        "label": "Sacciform recess of elbow joint",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1782,
+        "label": "Articular disc of distal radioulnar joint",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1783,
+        "label": "Sacciform recess of distal radioulnar joint",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1784,
+        "label": "Dorsal radioulnar ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1785,
+        "label": "Palmar radioulnar ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1787,
+        "label": "Dorsal radiocarpal ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1788,
+        "label": "Palmar radiocarpal ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1789,
+        "label": "Radioscaphocapitate ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1790,
+        "label": "Radiocapitate ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1791,
+        "label": "Long radiolunate ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1792,
+        "label": "Short radiolunate ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1793,
+        "label": "Radioscapholunate ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1794,
+        "label": "Dorsal ulnocarpal ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1795,
+        "label": "Palmar ulnocarpal ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1796,
+        "label": "Ulnocapitate ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1797,
+        "label": "Ulnolunate ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1798,
+        "label": "Ulnotriquetral ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1799,
+        "label": "Ulnopisiform ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1800,
+        "label": "Ulnar collateral ligament of wrist joint",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1801,
+        "label": "Radial collateral ligament of wrist joint",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1805,
+        "label": "Radiate carpal ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1806,
+        "label": "Dorsal intercarpal ligaments",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1807,
+        "label": "Dorsal scaphotriquetral ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1808,
+        "label": "Palmar intercarpal ligaments",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1809,
+        "label": "Scaphotrapeziotrapezoidal ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1810,
+        "label": "Scaphocapitate ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1811,
+        "label": "Palmar scaphotriquetral ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1812,
+        "label": "Triquetrocapitate ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1813,
+        "label": "Triquetrohamate ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1814,
+        "label": "Pisotriquetral ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1815,
+        "label": "Palmar capitohamate ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1816,
+        "label": "Palmar trapezoideocapitate ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1817,
+        "label": "Palmar lunotriquetral ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1818,
+        "label": "Interosseous intercarpal ligaments",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1819,
+        "label": "Scapholunate interosseous ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1820,
+        "label": "Trapeziotrapezoidal interosseous ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1821,
+        "label": "Capitohamate interosseous ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1822,
+        "label": "Trapezoideocapitate interosseous ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1823,
+        "label": "Lunotriquetral interosseous ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1825,
+        "label": "Pisohamate ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1826,
+        "label": "Pisometacarpal ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1828,
+        "label": "Dorsal carpometacarpal ligaments",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1829,
+        "label": "Palmar carpometacarpal ligaments",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1832,
+        "label": "Dorsal metacarpal ligaments",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1833,
+        "label": "Palmar metacarpal ligaments",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1834,
+        "label": "Interosseous metacarpal ligaments",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1836,
+        "label": "Collateral metacarpophalangeal ligaments",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1837,
+        "label": "Palmar metacarpophalangeal ligaments",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1838,
+        "label": "Deep transverse metacarpal ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1843,
+        "label": "Collateral interphalangeal ligaments of hand",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1844,
+        "label": "Palmar interphalangeal ligaments",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1848,
+        "label": "Obturator membrane",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1849,
+        "label": "Obturator canal",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1850,
+        "label": "Sacrotuberous ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1851,
+        "label": "Falciform process",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1852,
+        "label": "Sacrospinous ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1853,
+        "label": "Iliolumbar ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1856,
+        "label": "Interpubic disc",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1857,
+        "label": "Superior pubic ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1858,
+        "label": "Inferior pubic ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1859,
+        "label": "Triradiate cartilage",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1862,
+        "label": "Anterior sacroiliac ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1863,
+        "label": "Interosseous sacroiliac ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1864,
+        "label": "Posterior sacroiliac ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1867,
+        "label": "Interosseous membrane of leg",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1869,
+        "label": "Anterior tibiofibular ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1870,
+        "label": "Posterior tibiofibular ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1871,
+        "label": "Transverse tibiofibular ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1874,
+        "label": "Zona orbicularis",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1875,
+        "label": "Iliofemoral ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1876,
+        "label": "Transverse part of iliofemoral ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1877,
+        "label": "Descending part of iliofemoral ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1878,
+        "label": "Ischiofemoral ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1879,
+        "label": "Pubofemoral ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1880,
+        "label": "Acetabular labrum",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1881,
+        "label": "Transverse acetabular ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1882,
+        "label": "Ligament of head of femur",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1884,
+        "label": "Patellar part of knee joint",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1885,
+        "label": "Lateral meniscus",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1886,
+        "label": "Anterior meniscofemoral ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1887,
+        "label": "Posterior meniscofemoral ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1888,
+        "label": "Medial meniscus",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1889,
+        "label": "Transverse ligament of knee",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1890,
+        "label": "Anterior cruciate ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1891,
+        "label": "Posterior cruciate ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1892,
+        "label": "Infrapatellar synovial fold",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1893,
+        "label": "Alar folds",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1894,
+        "label": "Ligamentum mucosum",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1895,
+        "label": "Fibular collateral ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1896,
+        "label": "Tibial collateral ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1897,
+        "label": "Superficial part of tibial collateral ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1898,
+        "label": "Deep part of tibial collateral ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1899,
+        "label": "Oblique popliteal ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1900,
+        "label": "Arcuate popliteal ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1901,
+        "label": "Lateral meniscotibial ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1902,
+        "label": "Medial meniscotibial ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1903,
+        "label": "Medial patellofemoral ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1904,
+        "label": "Meniscopatellar ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1905,
+        "label": "Patellotibial ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1906,
+        "label": "Popliteofibular ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1907,
+        "label": "Fabellofibular ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1908,
+        "label": "Infrapatellar fat pad",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1910,
+        "label": "Anterior ligament of fibular head",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1911,
+        "label": "Posterior ligament of fibular head",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1913,
+        "label": "Medial collateral ligament of ankle",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1914,
+        "label": "Tibionavicular ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1915,
+        "label": "Tibiocalcaneal ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1916,
+        "label": "Anterior tibiotalar ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1917,
+        "label": "Posterior tibiotalar ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1918,
+        "label": "Lateral collateral ligament of ankle",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1919,
+        "label": "Anterior talofibular ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1920,
+        "label": "Posterior talofibular ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1921,
+        "label": "Calcaneofibular ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1925,
+        "label": "Lateral talocalcaneal ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1926,
+        "label": "Medial talocalcaneal ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1927,
+        "label": "Posterior talocalcaneal ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1928,
+        "label": "Talocalcaneal interosseous ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1929,
+        "label": "Anterior talocalcaneal ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1931,
+        "label": "Bifurcate ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1932,
+        "label": "Calcaneonavicular ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1933,
+        "label": "Calcaneocuboid ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1934,
+        "label": "Long plantar ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1936,
+        "label": "Talonavicular ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1937,
+        "label": "Plantar calcaneonavicular ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1939,
+        "label": "Dorsal calcaneocuboid ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1940,
+        "label": "Plantar calcaneocuboid ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1942,
+        "label": "Dorsal cuneonavicular ligaments",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1943,
+        "label": "Plantar cuneonavicular ligaments",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1945,
+        "label": "Cuneocuboid interosseous ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1946,
+        "label": "Dorsal cuneocuboid ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1947,
+        "label": "Plantar cuneocuboid ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1949,
+        "label": "Dorsal cuboideonavicular ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1950,
+        "label": "Plantar cuboideonavicular ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1952,
+        "label": "Intercuneiform interosseous ligaments",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1953,
+        "label": "Dorsal intercuneiform ligaments",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1954,
+        "label": "Plantar intercuneiform ligaments",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1956,
+        "label": "Dorsal tarsometatarsal ligaments",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1957,
+        "label": "Plantar tarsometatarsal ligaments",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1958,
+        "label": "Cuneometatarsal interosseous ligaments",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1960,
+        "label": "Metatarsal interosseous ligaments",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1961,
+        "label": "Dorsal metatarsal ligaments",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1962,
+        "label": "Plantar metatarsal ligaments",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1963,
+        "label": "Intersesamoid ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1965,
+        "label": "Collateral metatarsophalangeal ligaments",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1966,
+        "label": "Plantar metatarsophalangeal ligaments",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1967,
+        "label": "Deep transverse metatarsal ligament",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1972,
+        "label": "Collateral interphalangeal ligaments of foot",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 1973,
+        "label": "Plantar interphalangeal ligaments",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      }
+    ]
+  },
+  "human-blood-vessels": {
+    "includedSourceRows": 1065,
+    "held": [
+      {
+        "number": 3891,
+        "label": "Cardiovascular system",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 3892,
+        "label": "Blood",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 3893,
+        "label": "Lymph",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 3894,
+        "label": "Vessels",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 3895,
+        "label": "Blood vessels",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 3915,
+        "label": "Lymphatic vessels",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 3916,
+        "label": "Superficial lymphatic vessel",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 3917,
+        "label": "Deep lymphatic vessel",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 3918,
+        "label": "Lymphatic capillary",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 3919,
+        "label": "Vessel",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 3920,
+        "label": "Tunica externa of vessel",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 3921,
+        "label": "Tunica media of vessel",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 3922,
+        "label": "Tunica intima of vessel",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 3923,
+        "label": "Venous valve",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 3924,
+        "label": "Lymphatic valve",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 3930,
+        "label": "Lymphatic plexus",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 3931,
+        "label": "Lymphatic rete",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 3932,
+        "label": "Heart",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 3933,
+        "label": "Base of heart",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 3934,
+        "label": "Anterior surface of heart",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 3935,
+        "label": "Inferior surface of heart",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 3936,
+        "label": "Right surface of heart",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 3937,
+        "label": "Left surface of heart",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 3938,
+        "label": "Right border of heart",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 3939,
+        "label": "Inferior border of heart",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 3940,
+        "label": "Left border of heart",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 3941,
+        "label": "Apex of heart",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 3942,
+        "label": "Notch of cardiac apex",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 3943,
+        "label": "Anterior interventricular sulcus",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 3944,
+        "label": "Inferior interventricular sulcus",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 3945,
+        "label": "Coronary sulcus",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 3946,
+        "label": "Sulcus terminalis of heart",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 3947,
+        "label": "Epicardium",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 3948,
+        "label": "Serosa of epicaridum",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 3949,
+        "label": "Subserosa of epicardium",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 3950,
+        "label": "Myocardium",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 3951,
+        "label": "Vortex of heart",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 3952,
+        "label": "Conducting system of heart",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 3953,
+        "label": "Sinuatrial node",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 3954,
+        "label": "Atrioventricular node",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 3955,
+        "label": "Atrioventricular bundle",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 3956,
+        "label": "Right bundle branch",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 3957,
+        "label": "Left bundle branch",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 3958,
+        "label": "Left anterior branch of atrioventricular bundle",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 3959,
+        "label": "Left intermediate branch of atrioventricular bundle",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 3960,
+        "label": "Left posterior branch of atrioventricular bundle",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 3961,
+        "label": "Subendocardial branches",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 3962,
+        "label": "Endocardium",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 3963,
+        "label": "Cardiac septa",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 3964,
+        "label": "Interatrial septum",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 3965,
+        "label": "Fossa ovalis of right atrium",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 3966,
+        "label": "Limbus fossae ovalis",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 3967,
+        "label": "Foramen ovale of heart",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 3968,
+        "label": "Valve of foramen ovale",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 3969,
+        "label": "Atrioventricular septum",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 3970,
+        "label": "Interventricular septum",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 3971,
+        "label": "Muscular part of interventricular septum",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 3972,
+        "label": "Membranous part of interventricular septum",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 3973,
+        "label": "Valvular complex of heart",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 3974,
+        "label": "Fibrous skeleton of heart",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 3975,
+        "label": "Right fibrous ring",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 3976,
+        "label": "Left fibrous ring",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 3977,
+        "label": "Left fibrous trigone",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 3978,
+        "label": "Central fibrous body of heart",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 3979,
+        "label": "Right fibrous trigone",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 3980,
+        "label": "Inferior pyramidal space",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 3981,
+        "label": "Tendon of inferior pyramidal space",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 3982,
+        "label": "Right atrioventricular valve",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 3983,
+        "label": "Right atrioventricular orifice",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 3984,
+        "label": "Superior leaflet of right atrioventricular valve",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 3985,
+        "label": "Inferior leaflet of right atrioventricular valve",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 3986,
+        "label": "Septal leaflet of right atrioventricular valve",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 3987,
+        "label": "Left atrioventricular valve",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 3988,
+        "label": "Left atrioventricular orifice",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 3989,
+        "label": "Anterior leaflet of left atrioventricular valve",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 3990,
+        "label": "Posterior leaflet of left atrioventricular valve",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 3991,
+        "label": "Commissural leaflets",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 3992,
+        "label": "Root of aorta",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 3993,
+        "label": "Aortic valve",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 3994,
+        "label": "Aortic orifice",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 3995,
+        "label": "Right coronary leaflet",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 3996,
+        "label": "Left coronary leaflet",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 3997,
+        "label": "Noncoronary leaflet",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 3998,
+        "label": "Nodules of semilunar leaflets of aortic valve",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 3999,
+        "label": "Lunules of semilunar leaflets of aortic valve",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 4000,
+        "label": "Commissures of semilunar leaflets of aortic valve",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 4001,
+        "label": "Aortic sinuses",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 4002,
+        "label": "Right coronary aortic sinus",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 4003,
+        "label": "Left coronary aortic sinus",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 4004,
+        "label": "Noncoronary aortic sinus",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 4005,
+        "label": "Interleaflet triangles of aortic valve",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 4006,
+        "label": "Supravalvular ridge of aorta",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 4007,
+        "label": "Root of pulmonary trunk",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 4008,
+        "label": "Pulmonary valve",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 4009,
+        "label": "Opening of pulmonary trunk",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 4010,
+        "label": "Right semilunar leaflet of pulmonary valve",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 4011,
+        "label": "Left semilunar leaflet of pulmonary valve",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 4012,
+        "label": "Anterior semilunar leaflet of pulmonary valve",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 4013,
+        "label": "Nodules of semilunar leaflets of pulmonary valve",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 4014,
+        "label": "Lunules of semilunar leaflets of pulmonary valve",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 4015,
+        "label": "Commissures of semilunar leaflets of pulmonary valve",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 4016,
+        "label": "Sinuses of pulmonary trunk",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 4017,
+        "label": "Right sinus of pulmonary trunk",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 4018,
+        "label": "Left sinus of pulmonary trunk",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 4019,
+        "label": "Anterior sinus of pulmonary trunk",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 4020,
+        "label": "Interleaflet triangles of pulmonary trunk",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 4021,
+        "label": "Supravalvular ridge of pulmonary trunk",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 4022,
+        "label": "Right atrium",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 4023,
+        "label": "Right auricle of heart",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 4024,
+        "label": "Pectinate muscles of right atrium",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 4025,
+        "label": "Crista terminalis",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 4026,
+        "label": "Smooth part of right atrium",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 4027,
+        "label": "Sinus of venae cavae",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 4028,
+        "label": "Opening of superior vena cava",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 4029,
+        "label": "Opening of coronary sinus",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 4030,
+        "label": "Valve of coronary sinus",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 4031,
+        "label": "Opening of inferior vena cava",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 4032,
+        "label": "Valve of inferior vena cava",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 4033,
+        "label": "Body of right atrium",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 4034,
+        "label": "Vestibule of right atrioventricular valve",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 4035,
+        "label": "Triangle of atrioventricular node",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 4036,
+        "label": "Openings of smallest cardiac veins",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 4037,
+        "label": "Cavotricuspid isthmus",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 4038,
+        "label": "Right ventricle",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 4039,
+        "label": "Inlet of right ventricle",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 4040,
+        "label": "Supraventricular crest",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 4041,
+        "label": "Conus arteriosus",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 4042,
+        "label": "Trabecular part of right ventricle",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 4043,
+        "label": "Papillary muscles of right ventricle",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 4044,
+        "label": "Anterior papillary muscle of right ventricle",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 4045,
+        "label": "Inferior papillary muscle of right ventricle",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 4046,
+        "label": "Septal papillary muscle of right ventricle",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 4047,
+        "label": "Chordae tendineae of right atrioventricular valve",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 4048,
+        "label": "Chordae tendineae spuriae of right ventricle",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 4049,
+        "label": "Trabeculae carneae of right ventricle",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 4050,
+        "label": "Septomarginal trabecula",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 4051,
+        "label": "Parietal limb of septomarginal trabecula",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 4052,
+        "label": "Anterior limb of septomarginal trabecula",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 4053,
+        "label": "Coarse apical trabeculations",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 4054,
+        "label": "Left atrium",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 4055,
+        "label": "Left auricle of heart",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 4056,
+        "label": "Pectinate muscles of left atrium",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 4057,
+        "label": "Smooth part of left atrium",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 4058,
+        "label": "Sinus of pulmonary veins",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 4059,
+        "label": "Openings of pulmonary veins",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 4060,
+        "label": "Body of left atrium",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 4061,
+        "label": "Vestibule of left atrioventricular valve",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 4062,
+        "label": "Left ventricle",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 4063,
+        "label": "Inlet of left ventricle",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 4064,
+        "label": "Aortic vestibule",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 4065,
+        "label": "Trabecular part of left ventricle",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 4066,
+        "label": "Papillary muscles of left ventricle",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 4067,
+        "label": "Superior papillary muscle of left ventricle",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 4068,
+        "label": "Inferior papillary muscle of left ventricle",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 4069,
+        "label": "Chordae tendineae of left atrioventricular valve",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 4070,
+        "label": "Chordae tendineae spuriae of left ventricle",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 4071,
+        "label": "Trabeculae carneae of left ventricle",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 4072,
+        "label": "Fine apical trabeculations",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 4073,
+        "label": "Pulmonary vessels",
+        "reason": "A component, neighboring anatomy, heading without a named joint/vessel type, or outside the scoped blood-vessel system."
+      },
+      {
+        "number": 4076,
+        "label": "Bifurcation of pulmonary trunk",
+        "reason": "Bifurcation/union description, closed fetal remnant/ligament, or generic editorial branch/tributary heading, not a separate patent vessel or named network."
+      },
+      {
+        "number": 4092,
+        "label": "Ligamentum arteriosum",
+        "reason": "Bifurcation/union description, closed fetal remnant/ligament, or generic editorial branch/tributary heading, not a separate patent vessel or named network."
+      },
+      {
+        "number": 4164,
+        "label": "Ligament of left superior vena cava",
+        "reason": "Bifurcation/union description, closed fetal remnant/ligament, or generic editorial branch/tributary heading, not a separate patent vessel or named network."
+      },
+      {
+        "number": 4297,
+        "label": "Aortic bifurcation",
+        "reason": "Bifurcation/union description, closed fetal remnant/ligament, or generic editorial branch/tributary heading, not a separate patent vessel or named network."
+      },
+      {
+        "number": 4321,
+        "label": "Occluded part of umbilical artery",
+        "reason": "Bifurcation/union description, closed fetal remnant/ligament, or generic editorial branch/tributary heading, not a separate patent vessel or named network."
+      },
+      {
+        "number": 4322,
+        "label": "Medial umbilical ligament",
+        "reason": "Bifurcation/union description, closed fetal remnant/ligament, or generic editorial branch/tributary heading, not a separate patent vessel or named network."
+      },
+      {
+        "number": 4368,
+        "label": "Carotid bifurcation",
+        "reason": "Bifurcation/union description, closed fetal remnant/ligament, or generic editorial branch/tributary heading, not a separate patent vessel or named network."
+      },
+      {
+        "number": 4526,
+        "label": "Union of anterior spinal branches of vertebral artery",
+        "reason": "Bifurcation/union description, closed fetal remnant/ligament, or generic editorial branch/tributary heading, not a separate patent vessel or named network."
+      },
+      {
+        "number": 4549,
+        "label": "Union of vertebral arteries",
+        "reason": "Bifurcation/union description, closed fetal remnant/ligament, or generic editorial branch/tributary heading, not a separate patent vessel or named network."
+      },
+      {
+        "number": 4564,
+        "label": "Bifurcation of basilar artery",
+        "reason": "Bifurcation/union description, closed fetal remnant/ligament, or generic editorial branch/tributary heading, not a separate patent vessel or named network."
+      },
+      {
+        "number": 4746,
+        "label": "Union of brachiocephalic veins",
+        "reason": "Bifurcation/union description, closed fetal remnant/ligament, or generic editorial branch/tributary heading, not a separate patent vessel or named network."
+      },
+      {
+        "number": 5020,
+        "label": "Union of common iliac veins",
+        "reason": "Bifurcation/union description, closed fetal remnant/ligament, or generic editorial branch/tributary heading, not a separate patent vessel or named network."
+      },
+      {
+        "number": 5093,
+        "label": "Branches of hepatic portal vein",
+        "reason": "Bifurcation/union description, closed fetal remnant/ligament, or generic editorial branch/tributary heading, not a separate patent vessel or named network."
+      },
+      {
+        "number": 5101,
+        "label": "Ligamentum venosum",
+        "reason": "Bifurcation/union description, closed fetal remnant/ligament, or generic editorial branch/tributary heading, not a separate patent vessel or named network."
+      },
+      {
+        "number": 5104,
+        "label": "Round ligament of liver",
+        "reason": "Bifurcation/union description, closed fetal remnant/ligament, or generic editorial branch/tributary heading, not a separate patent vessel or named network."
+      },
+      {
+        "number": 5106,
+        "label": "Tributaries of hepatic portal vein",
+        "reason": "Bifurcation/union description, closed fetal remnant/ligament, or generic editorial branch/tributary heading, not a separate patent vessel or named network."
+      }
+    ]
+  }
+}

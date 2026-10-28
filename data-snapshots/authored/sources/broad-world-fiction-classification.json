@@ -1,0 +1,46 @@
+{
+  "source": "https://qlever.dev/api/wikidata",
+  "query": "PREFIX wd:<http://www.wikidata.org/entity/> PREFIX wdt:<http://www.wikidata.org/prop/direct/> PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#> SELECT DISTINCT ?group ?item ?name WHERE { VALUES (?group ?root) { (\"museums\" wd:Q33506) (\"mountain-ranges\" wd:Q46831) } ?item wdt:P31/wdt:P279* ?root; wdt:P31/wdt:P279* wd:Q14897293. OPTIONAL{?item rdfs:label ?name. FILTER(LANG(?name)=\"en\")} } LIMIT 10000",
+  "data": {
+    "head": {
+      "vars": [
+        "group",
+        "item",
+        "name"
+      ]
+    },
+    "results": {
+      "bindings": [
+        {
+          "group": {
+            "type": "literal",
+            "value": "mountain-ranges"
+          },
+          "item": {
+            "type": "uri",
+            "value": "http://www.wikidata.org/entity/Q140334297"
+          }
+        },
+        {
+          "group": {
+            "type": "literal",
+            "value": "museums"
+          },
+          "item": {
+            "type": "uri",
+            "value": "http://www.wikidata.org/entity/Q1400323"
+          },
+          "name": {
+            "type": "literal",
+            "value": "Sarajevo Tunnel",
+            "xml:lang": "en"
+          }
+        }
+      ]
+    },
+    "meta": {
+      "query-time-ms": 2083,
+      "result-size-total": 2
+    }
+  }
+}

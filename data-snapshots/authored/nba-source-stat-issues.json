@@ -1,0 +1,23 @@
+{
+  "note": "These are raw source statistic conflicts, not missing or invalid players. Rarity is editorial and does not present these zero totals as verified career statistics.",
+  "issues": [
+    {
+      "franchise": "Atlanta Hawks",
+      "player": "Jackie Moore",
+      "issue": "All-time table prints 0 GP, but the official NBA career profile and season record establish a Milwaukee Hawks appearance. Retained as a valid player.",
+      "evidence": [
+        "https://www.nba.com/player/77634/jackie-moore",
+        "https://www.landofbasketball.com/nba_rosters/1954_1955_hawks_grs.htm"
+      ]
+    },
+    {
+      "franchise": "Atlanta Hawks",
+      "player": "Odie Spears",
+      "issue": "All-time table prints 0 GP, while Western Kentucky athlete history and the season roster confirm the St. Louis Hawks 1956\u201357 stint. Retained as valid; no false zero-based eligibility filter.",
+      "evidence": [
+        "https://wkusports.com/documents/download/2025/10/29/2025-26_MBB_Media_Guide.pdf",
+        "https://www.landofbasketball.com/nba_rosters/1956_1957_hawks_grs.htm"
+      ]
+    }
+  ]
+}

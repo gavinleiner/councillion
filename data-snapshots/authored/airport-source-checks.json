@@ -1,0 +1,53 @@
+{
+  "source": "https://davidmegginson.github.io/ourairports-data/airports.csv",
+  "csvSha256": "27c6500d0a742edece15c5aaf960e08c01df0d4356c5c86255897b5d3749ad3b",
+  "sourceRows": 86286,
+  "matchedRows": 24557,
+  "addedRows": 61721,
+  "heldRows": [
+    {
+      "id": "610410",
+      "name": "金鸭子国际机场",
+      "reason": "No qualified usable actual facility name."
+    },
+    {
+      "id": "8434",
+      "name": "Unknown Field",
+      "reason": "No qualified usable actual facility name."
+    },
+    {
+      "id": "41393",
+      "name": "Unknown Airport",
+      "reason": "No qualified usable actual facility name."
+    },
+    {
+      "id": "316631",
+      "name": "Unknown Farm Strip",
+      "reason": "No qualified usable actual facility name."
+    },
+    {
+      "id": "335145",
+      "name": "Unknown Rural MB Airport",
+      "reason": "No qualified usable actual facility name."
+    },
+    {
+      "id": "352537",
+      "name": "Unknown airstrip",
+      "reason": "No qualified usable actual facility name."
+    },
+    {
+      "id": "610766",
+      "name": "Unknown airstrip",
+      "reason": "No qualified usable actual facility name."
+    },
+    {
+      "id": "609181",
+      "name": "Unknown Airport",
+      "reason": "No qualified usable actual facility name."
+    }
+  ],
+  "documentedCodes": 38953,
+  "iataCodes": 9052,
+  "icaoCodes": 10616,
+  "faaCodes": 21398
+}

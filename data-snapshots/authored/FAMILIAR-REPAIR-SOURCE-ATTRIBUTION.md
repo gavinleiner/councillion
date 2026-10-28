@@ -1,0 +1,27 @@
+# Familiar-answer repairs: bones, units, cells, characters and food
+
+These eight whole concepts are development additions toward the unfinished 5,000-question release. The admission records contain independent familiar-input checks and wrong-category boundaries. An answer-name expansion does not add any extra questions.
+
+## Scientific concepts
+
+The bone inventory uses factual anatomical names from FIPAT, *Terminologia Anatomica*, second edition, 2019, approved by the IFAA in 2020: [TA2 Part II](https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf). The publisher identifies the individual anatomical terms as public domain; the unaltered publication itself is CC BY-ND 4.0. Only factual terms and original editorial question text are included here, not the publisher's diagrams or prose. The inventory includes bone groups, accessory/fused bones and named C1–C7, T1–T12, L1–L5 and rib positions. Its 124 canonical names are not a claim that a human has 124 bones. Paired left/right names share a scoring identity.
+
+Measurement-unit names and prefix rules use [NIST SI Units](https://www.nist.gov/pml/owm/metric-si/si-units), [SP 811 Chapter 4](https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-4-two-classes-si-units-and-si-prefixes), [Chapter 5](https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-5-units-outside-si), and the [2023 prefix update](https://www.nist.gov/news-events/news/2023/01/si-prefix-progress). All 24 legal prefixes across the 29 named SI base/derived units are reconciled within one unit question. Mass prefixes attach to gram, not kilogram. This produces 696 source-rule combinations, joined to the existing customary, historical and digital units. Real unit spellings and standard aliases such as MPH remain valid. New unit-symbol abbreviations are not constructed: case-sensitive symbols cannot safely be invented by a case-insensitive name index.
+
+Cell terminology uses [NHGRI's cell glossary](https://www.genome.gov/genetics-glossary/Cell) and [organelle glossary](https://www.genome.gov/genetics-glossary/Organelle) as foundational references. The inventory is editorial, not a claim of an exhaustive official organelle registry. Cell capsule and bacterial capsule share the capsule identity. Chlorophyll alone is a pigment rather than an organelle or structural assembly and is explicitly held as a wrong-category input; it must not become Chloroplast through spelling correction.
+
+`science-concept-specifications.json` retains the three base inventories. `scripts/prepare-authored-science-concepts.py --check` reconstructs the named bone-position, side-name and legal SI-prefix coverage. `science-prefix-checks.json` records the 696 name-rule reconciliations. These names add answers within existing concepts, never prompts for prefixes or body positions.
+
+## Whole Harry Potter cast
+
+The retained [HP API](https://hp-api.onrender.com/) snapshot supplies factual character names, not an official completeness guarantee. It is supplemented with the official [Nagini fact file](https://www.harrypotter.com/fact-file/characters-and-pets/nagini), [Dean Thomas feature](https://www.harrypotter.com/features/dean-thomas-hidden-storyline), [Viktor Krum fact file](https://www.harrypotter.com/fact-file/characters-and-pets/viktor-krum), and [Hogwarts teachers feature](https://www.harrypotter.com/features/harry-potter-101-the-hogwarts-teachers). These repair two missing familiar characters and two incorrect source spellings. Ollivander is an explicit public-name alias of Garrick Ollivander. Actual actors and characters only established in separate Fantastic Beasts stories do not automatically qualify for this HP-book/film prompt. No actor images, character art or story paragraphs are included.
+
+`wizarding-world-supplements.json` records these decisions and 51 independent familiar inputs. The whole roster is one question, including its 437 canonical character names.
+
+## Four food concepts
+
+Established menu/product names are exact aliases within the relevant whole category. They do not widen the global typo matcher. Italian/French/Russian dressing names, Sicilian/Neapolitan/tavern pizza styles, MUG and Baja Blast therefore work directly. [Hidden Valley's avocado ranch recipe](https://www.hiddenvalley.com/recipe/homemade-avocado-ranch-dressing/), [Stouffer's French bread pizza catalog](https://www.goodnes.com/stouffers/products/french-bread-pizza/), [MUG](https://www.mugrootbeer.com/), and [Mountain Dew](https://www.mountaindew.com/) support the named additions and product aliases.
+
+[Kikkoman's sushi glossary](https://www.kikkoman.com/en/cookbook/glossary/sushi.html) distinguishes Temari, Temaki and Inari. [MAFF's Inari-zushi entry](https://www.maff.go.jp/e/policies/market/k_ryouri/search_menu/5144/index.html) supports the traditional public spelling. Temari must resolve to Temari sushi, never to Temaki as a fallback correction; Inari and Inarizushi share the Inari sushi identity. Sashimi alone is excluded by the stated sushi scope.
+
+The larger retained food inventories and their earlier source credits remain in `07-food-variety.json` and FOOD-SOURCE-ATTRIBUTION.md. This repair does not claim to enumerate every restaurant-created roll, dressing or beverage ever made. It verifies the independent familiar-name sweep and preserves the full existing source-backed tail. Rarity tiers remain editorial estimates, not collected player-choice statistics.

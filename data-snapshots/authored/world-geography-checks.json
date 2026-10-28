@@ -1,0 +1,211 @@
+[
+  {
+    "id": "authored-mountains-peaks",
+    "key": "mountains-peaks",
+    "rawPrimaryRows": 476853,
+    "qualifiedPrimaryRows": 476845,
+    "canonicalAnswers": 353704,
+    "familiarChecks": 28,
+    "rareAnchor": "Gangkhar Puensum",
+    "geoSources": [
+      "mountains-peaks",
+      "volcanoes"
+    ],
+    "listSources": []
+  },
+  {
+    "id": "authored-islands-archipelagos",
+    "key": "islands-archipelagos",
+    "rawPrimaryRows": 175037,
+    "qualifiedPrimaryRows": 175031,
+    "canonicalAnswers": 116403,
+    "familiarChecks": 35,
+    "rareAnchor": "Surtsey",
+    "geoSources": [
+      "islands-archipelagos"
+    ],
+    "listSources": []
+  },
+  {
+    "id": "authored-named-deserts",
+    "key": "deserts",
+    "rawPrimaryRows": 348,
+    "qualifiedPrimaryRows": 340,
+    "canonicalAnswers": 366,
+    "familiarChecks": 33,
+    "rareAnchor": "Pustynia Bledowska",
+    "geoSources": [
+      "deserts"
+    ],
+    "listSources": [
+      "List_of_deserts"
+    ]
+  },
+  {
+    "id": "authored-beaches",
+    "key": "beaches",
+    "rawPrimaryRows": 16219,
+    "qualifiedPrimaryRows": 16219,
+    "canonicalAnswers": 14538,
+    "familiarChecks": 26,
+    "rareAnchor": "Mahana Beach",
+    "geoSources": [
+      "beaches"
+    ],
+    "listSources": [
+      "List_of_beaches"
+    ]
+  },
+  {
+    "id": "authored-glaciers",
+    "key": "glaciers",
+    "rawPrimaryRows": 8353,
+    "qualifiedPrimaryRows": 8352,
+    "canonicalAnswers": 7476,
+    "familiarChecks": 28,
+    "rareAnchor": "Nathorstbreen",
+    "geoSources": [
+      "glaciers",
+      "icecaps"
+    ],
+    "listSources": [
+      "List_of_glaciers"
+    ]
+  },
+  {
+    "id": "authored-caves",
+    "key": "caves",
+    "rawPrimaryRows": 4110,
+    "qualifiedPrimaryRows": 4110,
+    "canonicalAnswers": 5345,
+    "familiarChecks": 26,
+    "rareAnchor": "Movile Cave",
+    "geoSources": [
+      "caves"
+    ],
+    "listSources": [
+      "List_of_caves",
+      "List_of_show_caves"
+    ]
+  },
+  {
+    "id": "authored-reservoirs",
+    "key": "reservoirs",
+    "rawPrimaryRows": 112870,
+    "qualifiedPrimaryRows": 112863,
+    "canonicalAnswers": 81396,
+    "familiarChecks": 32,
+    "rareAnchor": "Kielder Water",
+    "geoSources": [
+      "reservoirs"
+    ],
+    "listSources": [
+      "List_of_dams_and_reservoirs"
+    ]
+  },
+  {
+    "id": "authored-dams",
+    "key": "dams",
+    "rawPrimaryRows": 70192,
+    "qualifiedPrimaryRows": 70184,
+    "canonicalAnswers": 57781,
+    "familiarChecks": 26,
+    "rareAnchor": "Vajont Dam",
+    "geoSources": [
+      "dams"
+    ],
+    "listSources": [
+      "List_of_dams_and_reservoirs"
+    ]
+  },
+  {
+    "id": "authored-zoos",
+    "key": "zoos",
+    "rawPrimaryRows": 490,
+    "qualifiedPrimaryRows": 490,
+    "canonicalAnswers": 2108,
+    "familiarChecks": 42,
+    "rareAnchor": "Valencia Bioparc",
+    "geoSources": [
+      "zoos"
+    ],
+    "listSources": [
+      "List_of_zoos_by_country",
+      "List_of_zoos_in_the_United_States",
+      "List_of_aquaria"
+    ]
+  },
+  {
+    "id": "authored-named-forests",
+    "key": "named-forests",
+    "rawPrimaryRows": 91974,
+    "qualifiedPrimaryRows": 91973,
+    "canonicalAnswers": 66467,
+    "familiarChecks": 30,
+    "rareAnchor": "Crooked Forest",
+    "geoSources": [
+      "named-forests"
+    ],
+    "listSources": []
+  },
+  {
+    "id": "authored-reefs-atolls",
+    "key": "reefs-atolls",
+    "rawPrimaryRows": 10994,
+    "qualifiedPrimaryRows": 10994,
+    "canonicalAnswers": 10067,
+    "familiarChecks": 26,
+    "rareAnchor": "Lihou Reefs",
+    "geoSources": [
+      "reefs-atolls"
+    ],
+    "listSources": [
+      "List_of_reefs"
+    ]
+  },
+  {
+    "id": "authored-capes-headlands",
+    "key": "capes-headlands",
+    "rawPrimaryRows": 141595,
+    "qualifiedPrimaryRows": 141594,
+    "canonicalAnswers": 95478,
+    "familiarChecks": 32,
+    "rareAnchor": "Rt Kamenjak",
+    "geoSources": [
+      "capes-headlands"
+    ],
+    "listSources": []
+  },
+  {
+    "id": "authored-botanic-gardens",
+    "key": "botanic-gardens",
+    "rawPrimaryRows": 2545,
+    "qualifiedPrimaryRows": 2540,
+    "canonicalAnswers": 2575,
+    "familiarChecks": 37,
+    "rareAnchor": "Garden of Cosmic Speculation",
+    "geoSources": [
+      "botanic-gardens"
+    ],
+    "listSources": [
+      "List_of_botanical_gardens",
+      "List_of_gardens"
+    ]
+  },
+  {
+    "id": "authored-valleys-canyons-gorges",
+    "key": "valleys-canyons-gorges",
+    "rawPrimaryRows": 149559,
+    "qualifiedPrimaryRows": 149558,
+    "canonicalAnswers": 92248,
+    "familiarChecks": 60,
+    "rareAnchor": "Vikos Gorge",
+    "geoSources": [
+      "valleys",
+      "canyons-gorges"
+    ],
+    "listSources": [
+      "List_of_canyons"
+    ]
+  }
+]

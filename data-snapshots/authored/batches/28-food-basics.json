@@ -1,0 +1,1934 @@
+{
+  "version": 1,
+  "questions": [
+    {
+      "id": "authored-cooking-techniques",
+      "concept": "cooking-techniques",
+      "family": "food",
+      "topic": "COOKING AND INGREDIENTS",
+      "prompt": "Name a cooking or food-preparation technique.",
+      "scope": "Recognized techniques for cooking, preparing, cutting, mixing, baking or preserving food count. Real public verb/noun forms share an answer. An ingredient, utensil, finished dish or desired texture alone is not a technique.",
+      "format": "whole-familiar-food-concept",
+      "rationale": "One independently selected familiar whole culinary subject. Complete source-list rows are reconciled by meaning, with explicit ingredient/tool/heading holds, public verb forms and identity merges. Source sections, botanical classes and cultural regions never make additional questions.",
+      "familiar": [
+        "Baking",
+        "Boiling",
+        "Frying",
+        "Grilling",
+        "Roasting",
+        "Steaming",
+        "Simmering",
+        "Poaching",
+        "Braising",
+        "Stewing",
+        "Sautéing",
+        "Stir frying",
+        "Deep frying",
+        "Shallow frying",
+        "Pan frying",
+        "Air frying",
+        "Broiling",
+        "Smoking",
+        "Barbecuing",
+        "Pressure cooking",
+        "Slow cooking",
+        "Microwaving",
+        "Blanching",
+        "Searing",
+        "Caramelizing",
+        "Toasting",
+        "Pickling",
+        "Fermenting",
+        "Curing",
+        "Drying",
+        "Freezing",
+        "Marinating",
+        "Basting",
+        "Brining",
+        "Kneading",
+        "Whisking",
+        "Beating",
+        "Folding",
+        "Mixing",
+        "Chopping",
+        "Dicing",
+        "Slicing",
+        "Mincing",
+        "Grating",
+        "Peeling",
+        "Mashing",
+        "Puréeing",
+        "Straining",
+        "Sifting",
+        "Melting",
+        "Tempering",
+        "Proofing",
+        "Scoring",
+        "Flambéing",
+        "Sous vide",
+        "Spatchcocking",
+        "Julienne",
+        "Zesting",
+        "Deboning",
+        "Filleting"
+      ],
+      "exclude": [
+        "Fork",
+        "Vanilla",
+        "Lasagna"
+      ],
+      "references": [
+        "https://en.wikipedia.org/wiki/List_of_cooking_techniques",
+        "https://www.kingarthurbaking.com/learn/guides/sourdough/glossary",
+        "https://www.kingarthurbaking.com/learn/guides/sourdough/bake",
+        "https://www.redpathsugar.com/posts/baking-terminology",
+        "https://www.ciaprochef.com/prochef-professional-development-courses"
+      ],
+      "answers": {
+        "60": [
+          {
+            "label": "Acidulating",
+            "aliases": []
+          },
+          {
+            "label": "Amylolytic process",
+            "aliases": []
+          },
+          {
+            "label": "Autolyse",
+            "aliases": [
+              "Autolysis"
+            ]
+          },
+          {
+            "label": "Backwoods cooking",
+            "aliases": []
+          },
+          {
+            "label": "Baghaar",
+            "aliases": []
+          },
+          {
+            "label": "Bain-marie",
+            "aliases": [
+              "Double boil",
+              "Double boiling"
+            ]
+          },
+          {
+            "label": "Barding",
+            "aliases": []
+          },
+          {
+            "label": "Battering",
+            "aliases": [
+              "Batter"
+            ]
+          },
+          {
+            "label": "Blind baking",
+            "aliases": [
+              "Bake blind"
+            ]
+          },
+          {
+            "label": "Breading",
+            "aliases": [
+              "Bread"
+            ]
+          },
+          {
+            "label": "Bricolage",
+            "aliases": []
+          },
+          {
+            "label": "Broasting",
+            "aliases": []
+          },
+          {
+            "label": "Browning",
+            "aliases": []
+          },
+          {
+            "label": "Butterflying",
+            "aliases": [
+              "Butterfly"
+            ]
+          },
+          {
+            "label": "Candy making",
+            "aliases": []
+          },
+          {
+            "label": "Canning",
+            "aliases": []
+          },
+          {
+            "label": "Carryover cooking",
+            "aliases": []
+          },
+          {
+            "label": "Charring",
+            "aliases": [
+              "Char"
+            ]
+          },
+          {
+            "label": "Cheesemaking",
+            "aliases": []
+          },
+          {
+            "label": "Chicken frying",
+            "aliases": []
+          },
+          {
+            "label": "Chiffonade",
+            "aliases": []
+          },
+          {
+            "label": "Churning",
+            "aliases": [
+              "Churn"
+            ]
+          },
+          {
+            "label": "Clarifying",
+            "aliases": [
+              "Clarify"
+            ]
+          },
+          {
+            "label": "Clay pot cooking",
+            "aliases": []
+          },
+          {
+            "label": "Coddling",
+            "aliases": []
+          },
+          {
+            "label": "Concasse",
+            "aliases": []
+          },
+          {
+            "label": "Conching",
+            "aliases": []
+          },
+          {
+            "label": "Confit",
+            "aliases": []
+          },
+          {
+            "label": "Cooking with alcohol",
+            "aliases": []
+          },
+          {
+            "label": "Creaming",
+            "aliases": []
+          },
+          {
+            "label": "Crushing",
+            "aliases": [
+              "Crush"
+            ]
+          },
+          {
+            "label": "Curdling",
+            "aliases": []
+          },
+          {
+            "label": "Deglazing",
+            "aliases": []
+          },
+          {
+            "label": "Degreasing",
+            "aliases": []
+          },
+          {
+            "label": "Docking",
+            "aliases": [
+              "Dock"
+            ]
+          },
+          {
+            "label": "Dough sheeting",
+            "aliases": [
+              "Sheeting dough"
+            ]
+          },
+          {
+            "label": "Draining",
+            "aliases": [
+              "Drain"
+            ]
+          },
+          {
+            "label": "Dredging",
+            "aliases": []
+          },
+          {
+            "label": "Dry roasting",
+            "aliases": []
+          },
+          {
+            "label": "Dum pukht",
+            "aliases": []
+          },
+          {
+            "label": "Dutch oven cooking",
+            "aliases": []
+          },
+          {
+            "label": "Egg washing",
+            "aliases": [
+              "Egg wash"
+            ]
+          },
+          {
+            "label": "Emulsifying",
+            "aliases": [
+              "Emulsification"
+            ]
+          },
+          {
+            "label": "Engastration",
+            "aliases": []
+          },
+          {
+            "label": "Engine cooking",
+            "aliases": []
+          },
+          {
+            "label": "En papillote",
+            "aliases": []
+          },
+          {
+            "label": "En vessie",
+            "aliases": []
+          },
+          {
+            "label": "Flash freezing",
+            "aliases": [
+              "Flash freeze"
+            ]
+          },
+          {
+            "label": "Flash pasteurization",
+            "aliases": []
+          },
+          {
+            "label": "Food preservation",
+            "aliases": []
+          },
+          {
+            "label": "Freeze drying",
+            "aliases": [
+              "Freeze dry"
+            ]
+          },
+          {
+            "label": "Fricassee",
+            "aliases": [
+              "Fricasseeing"
+            ]
+          },
+          {
+            "label": "Frosting",
+            "aliases": [
+              "Decorating with icing",
+              "Icing"
+            ]
+          },
+          {
+            "label": "Garnishing",
+            "aliases": []
+          },
+          {
+            "label": "Gentle frying",
+            "aliases": []
+          },
+          {
+            "label": "Glazing",
+            "aliases": []
+          },
+          {
+            "label": "Gratinating",
+            "aliases": [
+              "Au gratin",
+              "Gratin"
+            ]
+          },
+          {
+            "label": "Grinding",
+            "aliases": [
+              "Grind"
+            ]
+          },
+          {
+            "label": "Hāngī",
+            "aliases": []
+          },
+          {
+            "label": "Homogenization",
+            "aliases": [
+              "Homogenisation"
+            ]
+          },
+          {
+            "label": "Hot salt frying",
+            "aliases": []
+          },
+          {
+            "label": "Indirect grilling",
+            "aliases": []
+          },
+          {
+            "label": "Infusion",
+            "aliases": [
+              "Steeping"
+            ]
+          },
+          {
+            "label": "Jugging",
+            "aliases": []
+          },
+          {
+            "label": "Juicing",
+            "aliases": []
+          },
+          {
+            "label": "Kalua",
+            "aliases": []
+          },
+          {
+            "label": "Karaage",
+            "aliases": []
+          },
+          {
+            "label": "Kho",
+            "aliases": []
+          },
+          {
+            "label": "Kinpira",
+            "aliases": []
+          },
+          {
+            "label": "Laminating dough",
+            "aliases": [
+              "Dough lamination"
+            ]
+          },
+          {
+            "label": "Larding",
+            "aliases": []
+          },
+          {
+            "label": "Maceration",
+            "aliases": []
+          },
+          {
+            "label": "Once-a-month cooking",
+            "aliases": []
+          },
+          {
+            "label": "Outdoor cooking",
+            "aliases": []
+          },
+          {
+            "label": "Parbaking",
+            "aliases": []
+          },
+          {
+            "label": "Parboiling",
+            "aliases": []
+          },
+          {
+            "label": "Pascalization",
+            "aliases": []
+          },
+          {
+            "label": "Pasteurization",
+            "aliases": [
+              "Pasteurisation"
+            ]
+          },
+          {
+            "label": "Piping",
+            "aliases": [
+              "Pipe"
+            ]
+          },
+          {
+            "label": "Pounding",
+            "aliases": [
+              "Pound"
+            ]
+          },
+          {
+            "label": "Pressure frying",
+            "aliases": []
+          },
+          {
+            "label": "Pulling",
+            "aliases": []
+          },
+          {
+            "label": "Punching down",
+            "aliases": [
+              "Degassing"
+            ]
+          },
+          {
+            "label": "Reconstitution",
+            "aliases": []
+          },
+          {
+            "label": "Red cooking",
+            "aliases": []
+          },
+          {
+            "label": "Reduction",
+            "aliases": []
+          },
+          {
+            "label": "Rendering",
+            "aliases": []
+          },
+          {
+            "label": "Ricing",
+            "aliases": []
+          },
+          {
+            "label": "Rinsing",
+            "aliases": [
+              "Rinse"
+            ]
+          },
+          {
+            "label": "Robatayaki",
+            "aliases": []
+          },
+          {
+            "label": "Rolling out",
+            "aliases": [
+              "Rolling"
+            ]
+          },
+          {
+            "label": "Rotisserie cooking",
+            "aliases": []
+          },
+          {
+            "label": "Salt baking",
+            "aliases": [
+              "Salt crust baking"
+            ]
+          },
+          {
+            "label": "Seasoning",
+            "aliases": []
+          },
+          {
+            "label": "Separating eggs",
+            "aliases": []
+          },
+          {
+            "label": "Shucking",
+            "aliases": []
+          },
+          {
+            "label": "Skimming",
+            "aliases": []
+          },
+          {
+            "label": "Smothering",
+            "aliases": []
+          },
+          {
+            "label": "Souring",
+            "aliases": []
+          },
+          {
+            "label": "Spherification",
+            "aliases": []
+          },
+          {
+            "label": "Stirring",
+            "aliases": [
+              "Stir"
+            ]
+          },
+          {
+            "label": "Stone boiling",
+            "aliases": []
+          },
+          {
+            "label": "Stretch and fold",
+            "aliases": [
+              "Stretching and folding"
+            ]
+          },
+          {
+            "label": "Stuffing food",
+            "aliases": []
+          },
+          {
+            "label": "Sugar panning",
+            "aliases": []
+          },
+          {
+            "label": "Supreming",
+            "aliases": []
+          },
+          {
+            "label": "Sweating",
+            "aliases": []
+          },
+          {
+            "label": "Swissing",
+            "aliases": []
+          },
+          {
+            "label": "Tataki",
+            "aliases": []
+          },
+          {
+            "label": "Tenderizing",
+            "aliases": []
+          },
+          {
+            "label": "Teriyaki cooking",
+            "aliases": []
+          },
+          {
+            "label": "Thermal cooking",
+            "aliases": []
+          },
+          {
+            "label": "Thermization",
+            "aliases": []
+          },
+          {
+            "label": "Thickening",
+            "aliases": []
+          },
+          {
+            "label": "Trussing",
+            "aliases": []
+          },
+          {
+            "label": "Turbo cooking",
+            "aliases": []
+          },
+          {
+            "label": "Vacuum packing",
+            "aliases": [
+              "Vacuum sealing"
+            ]
+          },
+          {
+            "label": "Velveting",
+            "aliases": []
+          },
+          {
+            "label": "Washing",
+            "aliases": [
+              "Wash"
+            ]
+          },
+          {
+            "label": "Whipping",
+            "aliases": []
+          },
+          {
+            "label": "Wok cooking",
+            "aliases": []
+          }
+        ],
+        "30": [
+          {
+            "label": "Air frying",
+            "aliases": [
+              "Air fry"
+            ]
+          },
+          {
+            "label": "Barbecuing",
+            "aliases": [
+              "BBQ cooking",
+              "Barbecue"
+            ]
+          },
+          {
+            "label": "Basting",
+            "aliases": [
+              "Baste"
+            ]
+          },
+          {
+            "label": "Beating",
+            "aliases": [
+              "Beat"
+            ]
+          },
+          {
+            "label": "Blanching",
+            "aliases": [
+              "Blanch"
+            ]
+          },
+          {
+            "label": "Braising",
+            "aliases": [
+              "Braise"
+            ]
+          },
+          {
+            "label": "Brining",
+            "aliases": []
+          },
+          {
+            "label": "Broiling",
+            "aliases": [
+              "Broil"
+            ]
+          },
+          {
+            "label": "Caramelization",
+            "aliases": [
+              "Caramelisation",
+              "Caramelising",
+              "Caramelizing"
+            ]
+          },
+          {
+            "label": "Chopping",
+            "aliases": [
+              "Chop"
+            ]
+          },
+          {
+            "label": "Curing",
+            "aliases": [
+              "Cure"
+            ]
+          },
+          {
+            "label": "Deboning",
+            "aliases": [
+              "Debone"
+            ]
+          },
+          {
+            "label": "Deep frying",
+            "aliases": [
+              "Deep fry"
+            ]
+          },
+          {
+            "label": "Dicing",
+            "aliases": [
+              "Dice"
+            ]
+          },
+          {
+            "label": "Drying",
+            "aliases": [
+              "Dehydrating",
+              "Dehydration",
+              "Dry"
+            ]
+          },
+          {
+            "label": "Fermentation",
+            "aliases": [
+              "Ferment",
+              "Fermenting"
+            ]
+          },
+          {
+            "label": "Filleting",
+            "aliases": []
+          },
+          {
+            "label": "Flambéing",
+            "aliases": []
+          },
+          {
+            "label": "Folding",
+            "aliases": [
+              "Fold"
+            ]
+          },
+          {
+            "label": "Freezing",
+            "aliases": [
+              "Freeze"
+            ]
+          },
+          {
+            "label": "Grating",
+            "aliases": [
+              "Grate"
+            ]
+          },
+          {
+            "label": "Julienne",
+            "aliases": [
+              "Julienning"
+            ]
+          },
+          {
+            "label": "Kneading",
+            "aliases": [
+              "Knead"
+            ]
+          },
+          {
+            "label": "Marination",
+            "aliases": [
+              "Marinate",
+              "Marinating"
+            ]
+          },
+          {
+            "label": "Mashing",
+            "aliases": [
+              "Mash"
+            ]
+          },
+          {
+            "label": "Melting",
+            "aliases": [
+              "Melt"
+            ]
+          },
+          {
+            "label": "Microwaving",
+            "aliases": []
+          },
+          {
+            "label": "Mincing",
+            "aliases": [
+              "Mince"
+            ]
+          },
+          {
+            "label": "Mixing",
+            "aliases": [
+              "Mix"
+            ]
+          },
+          {
+            "label": "Pan frying",
+            "aliases": [
+              "Pan fry"
+            ]
+          },
+          {
+            "label": "Peeling",
+            "aliases": [
+              "Peel",
+              "Peeling tomatoes",
+              "Skinning tomatoes"
+            ]
+          },
+          {
+            "label": "Pickling",
+            "aliases": [
+              "Pickle"
+            ]
+          },
+          {
+            "label": "Poaching",
+            "aliases": [
+              "Poach"
+            ]
+          },
+          {
+            "label": "Pressure cooking",
+            "aliases": [
+              "Pressure cook"
+            ]
+          },
+          {
+            "label": "Proofing",
+            "aliases": [
+              "Proof",
+              "Prove",
+              "Proving"
+            ]
+          },
+          {
+            "label": "Puréeing",
+            "aliases": [
+              "Puree"
+            ]
+          },
+          {
+            "label": "Sautéing",
+            "aliases": [
+              "Saute",
+              "Sauté"
+            ]
+          },
+          {
+            "label": "Scoring",
+            "aliases": []
+          },
+          {
+            "label": "Searing",
+            "aliases": [
+              "Sear"
+            ]
+          },
+          {
+            "label": "Shallow frying",
+            "aliases": [
+              "Shallow fry"
+            ]
+          },
+          {
+            "label": "Sifting",
+            "aliases": [
+              "Sift"
+            ]
+          },
+          {
+            "label": "Simmering",
+            "aliases": [
+              "Simmer"
+            ]
+          },
+          {
+            "label": "Slicing",
+            "aliases": [
+              "Slice"
+            ]
+          },
+          {
+            "label": "Slow cooking",
+            "aliases": [
+              "Slow cook"
+            ]
+          },
+          {
+            "label": "Smoking",
+            "aliases": [
+              "Smoke"
+            ]
+          },
+          {
+            "label": "Sous-vide",
+            "aliases": [
+              "Sous vide cooking"
+            ]
+          },
+          {
+            "label": "Spatchcocking",
+            "aliases": []
+          },
+          {
+            "label": "Stewing",
+            "aliases": [
+              "Stew"
+            ]
+          },
+          {
+            "label": "Stir frying",
+            "aliases": [
+              "Stir fry"
+            ]
+          },
+          {
+            "label": "Straining",
+            "aliases": [
+              "Strain"
+            ]
+          },
+          {
+            "label": "Tempering",
+            "aliases": [
+              "Temper"
+            ]
+          },
+          {
+            "label": "Toasting",
+            "aliases": [
+              "Toast"
+            ]
+          },
+          {
+            "label": "Whisking",
+            "aliases": [
+              "Whisk"
+            ]
+          },
+          {
+            "label": "Zesting",
+            "aliases": []
+          }
+        ],
+        "10": [
+          {
+            "label": "Baking",
+            "aliases": [
+              "Bake"
+            ]
+          },
+          {
+            "label": "Boiling",
+            "aliases": [
+              "Boil"
+            ]
+          },
+          {
+            "label": "Frying",
+            "aliases": [
+              "Fry"
+            ]
+          },
+          {
+            "label": "Grilling",
+            "aliases": [
+              "Grill"
+            ]
+          },
+          {
+            "label": "Roasting",
+            "aliases": [
+              "Roast"
+            ]
+          },
+          {
+            "label": "Steaming",
+            "aliases": [
+              "Steam"
+            ]
+          }
+        ],
+        "85": [
+          {
+            "label": "High-altitude cooking",
+            "aliases": []
+          },
+          {
+            "label": "Low-temperature cooking",
+            "aliases": []
+          },
+          {
+            "label": "Mongolian barbecue cooking",
+            "aliases": []
+          },
+          {
+            "label": "Straight-dough method",
+            "aliases": []
+          }
+        ],
+        "100": [
+          {
+            "label": "Nixtamalization",
+            "aliases": [
+              "Nixtamalisation"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "authored-nuts-seeds",
+      "concept": "nuts-seeds",
+      "family": "food",
+      "topic": "COOKING AND INGREDIENTS",
+      "prompt": "Name a culinary nut or a seed people eat.",
+      "scope": "Culinary nuts and food seeds count, including grains, pulses, spice seeds and nuts that are not botanical nuts. Traditional foods that require preparation count. A named food seed or nut group counts; a botanical class, tree alone, finished sauce or book title does not.",
+      "format": "whole-familiar-food-concept",
+      "rationale": "One independently selected familiar whole culinary subject. Complete source-list rows are reconciled by meaning, with explicit ingredient/tool/heading holds, public verb forms and identity merges. Source sections, botanical classes and cultural regions never make additional questions.",
+      "familiar": [
+        "Peanut",
+        "Almond",
+        "Walnut",
+        "Cashew",
+        "Pistachio",
+        "Hazelnut",
+        "Pecan",
+        "Brazil nut",
+        "Macadamia",
+        "Pine nut",
+        "Chestnut",
+        "Coconut",
+        "Acorn",
+        "Beech nut",
+        "Ginkgo nut",
+        "Kola nut",
+        "Sunflower seed",
+        "Pumpkin seed",
+        "Sesame seed",
+        "Poppy seed",
+        "Chia seed",
+        "Flaxseed",
+        "Hemp seed",
+        "Watermelon seed",
+        "Muskmelon seed",
+        "Lotus seed",
+        "Jackfruit seed",
+        "Cacao bean",
+        "Coffee bean",
+        "Rice",
+        "Wheat",
+        "Maize",
+        "Oat",
+        "Barley",
+        "Rye",
+        "Millet",
+        "Sorghum",
+        "Quinoa",
+        "Amaranth",
+        "Buckwheat",
+        "Lentil",
+        "Chickpea",
+        "Soybean",
+        "Pea",
+        "Kidney bean",
+        "Black bean",
+        "Mung bean",
+        "Fava bean",
+        "Lima bean",
+        "Cowpea",
+        "Fennel seed",
+        "Cumin seed",
+        "Coriander seed",
+        "Mustard seed",
+        "Caraway seed",
+        "Fenugreek seed",
+        "Nigella seed",
+        "Cardamom seed",
+        "Anise seed",
+        "Ajwain",
+        "Dill seed",
+        "Sacha inchi",
+        "Tiger nut",
+        "Butternut",
+        "Apricot kernel",
+        "Bunya nut",
+        "Pili nut",
+        "Bambara groundnut"
+      ],
+      "exclude": [
+        "Strawberry fruit",
+        "Maple leaf",
+        "Sunflower oil"
+      ],
+      "references": [
+        "https://en.wikipedia.org/wiki/List_of_culinary_nuts",
+        "https://www.fao.org/4/W0073e/w0073e06.htm",
+        "https://openknowledge.fao.org/3/cc5044en/cc5044en.pdf"
+      ],
+      "answers": {
+        "30": [
+          {
+            "label": "Acorn",
+            "aliases": []
+          },
+          {
+            "label": "Ajwain",
+            "aliases": [
+              "Carom seed"
+            ]
+          },
+          {
+            "label": "Amaranth",
+            "aliases": []
+          },
+          {
+            "label": "Anise seed",
+            "aliases": [
+              "Aniseed"
+            ]
+          },
+          {
+            "label": "Apricot kernel",
+            "aliases": [
+              "Apricot seed"
+            ]
+          },
+          {
+            "label": "Bambara groundnut",
+            "aliases": []
+          },
+          {
+            "label": "Barley",
+            "aliases": []
+          },
+          {
+            "label": "Beech nut",
+            "aliases": []
+          },
+          {
+            "label": "Black bean",
+            "aliases": []
+          },
+          {
+            "label": "Brazil nut",
+            "aliases": [
+              "Bertholletia excelsa"
+            ]
+          },
+          {
+            "label": "Buckwheat",
+            "aliases": []
+          },
+          {
+            "label": "Bunya nut",
+            "aliases": []
+          },
+          {
+            "label": "Butternut",
+            "aliases": []
+          },
+          {
+            "label": "Cacao bean",
+            "aliases": [
+              "Cocoa bean"
+            ]
+          },
+          {
+            "label": "Caraway seed",
+            "aliases": []
+          },
+          {
+            "label": "Cardamom seed",
+            "aliases": []
+          },
+          {
+            "label": "Chestnut",
+            "aliases": [
+              "Chestnuts"
+            ]
+          },
+          {
+            "label": "Chia seed",
+            "aliases": [
+              "Chia"
+            ]
+          },
+          {
+            "label": "Chickpea",
+            "aliases": [
+              "Garbanzo bean"
+            ]
+          },
+          {
+            "label": "Coconut",
+            "aliases": [
+              "Cocos nucifera"
+            ]
+          },
+          {
+            "label": "Coffee bean",
+            "aliases": []
+          },
+          {
+            "label": "Coriander seed",
+            "aliases": []
+          },
+          {
+            "label": "Cowpea",
+            "aliases": [
+              "Black-eyed pea"
+            ]
+          },
+          {
+            "label": "Cumin seed",
+            "aliases": []
+          },
+          {
+            "label": "Dill seed",
+            "aliases": []
+          },
+          {
+            "label": "Fava bean",
+            "aliases": [
+              "Broad bean"
+            ]
+          },
+          {
+            "label": "Fennel seed",
+            "aliases": []
+          },
+          {
+            "label": "Fenugreek seed",
+            "aliases": []
+          },
+          {
+            "label": "Flaxseed",
+            "aliases": [
+              "Linseed"
+            ]
+          },
+          {
+            "label": "Ginkgo nut",
+            "aliases": []
+          },
+          {
+            "label": "Hemp seed",
+            "aliases": [
+              "Hemp heart"
+            ]
+          },
+          {
+            "label": "Jackfruit seed",
+            "aliases": []
+          },
+          {
+            "label": "Kidney bean",
+            "aliases": []
+          },
+          {
+            "label": "Kola nut",
+            "aliases": []
+          },
+          {
+            "label": "Lentil",
+            "aliases": []
+          },
+          {
+            "label": "Lima bean",
+            "aliases": [
+              "Butter bean"
+            ]
+          },
+          {
+            "label": "Lotus seed",
+            "aliases": []
+          },
+          {
+            "label": "Macadamia",
+            "aliases": [
+              "Macadamia nut",
+              "Queensland nut"
+            ]
+          },
+          {
+            "label": "Maize",
+            "aliases": [
+              "Corn"
+            ]
+          },
+          {
+            "label": "Millet",
+            "aliases": []
+          },
+          {
+            "label": "Mung bean",
+            "aliases": [
+              "Green gram"
+            ]
+          },
+          {
+            "label": "Muskmelon seed",
+            "aliases": [
+              "Melon seed"
+            ]
+          },
+          {
+            "label": "Mustard seed",
+            "aliases": []
+          },
+          {
+            "label": "Nigella seed",
+            "aliases": [
+              "Black cumin seed"
+            ]
+          },
+          {
+            "label": "Oat",
+            "aliases": [
+              "Oats"
+            ]
+          },
+          {
+            "label": "Pea",
+            "aliases": []
+          },
+          {
+            "label": "Pecan",
+            "aliases": []
+          },
+          {
+            "label": "Pili nut",
+            "aliases": [
+              "Canarium ovatum"
+            ]
+          },
+          {
+            "label": "Pine nut",
+            "aliases": [
+              "Pignoli",
+              "Pinon"
+            ]
+          },
+          {
+            "label": "Poppy seed",
+            "aliases": []
+          },
+          {
+            "label": "Pumpkin seed",
+            "aliases": [
+              "Pepita"
+            ]
+          },
+          {
+            "label": "Quinoa",
+            "aliases": []
+          },
+          {
+            "label": "Rice",
+            "aliases": []
+          },
+          {
+            "label": "Rye",
+            "aliases": []
+          },
+          {
+            "label": "Sacha inchi",
+            "aliases": [
+              "Inca peanut"
+            ]
+          },
+          {
+            "label": "Sesame seed",
+            "aliases": [
+              "Sesame"
+            ]
+          },
+          {
+            "label": "Sorghum",
+            "aliases": []
+          },
+          {
+            "label": "Soybean",
+            "aliases": [
+              "Soya bean"
+            ]
+          },
+          {
+            "label": "Sunflower seed",
+            "aliases": []
+          },
+          {
+            "label": "Tiger nut",
+            "aliases": []
+          },
+          {
+            "label": "Watermelon seed",
+            "aliases": []
+          },
+          {
+            "label": "Wheat",
+            "aliases": []
+          }
+        ],
+        "60": [
+          {
+            "label": "Adzuki bean",
+            "aliases": [
+              "Azuki bean"
+            ]
+          },
+          {
+            "label": "Allspice seed",
+            "aliases": []
+          },
+          {
+            "label": "American beech nut",
+            "aliases": []
+          },
+          {
+            "label": "American hazelnut",
+            "aliases": []
+          },
+          {
+            "label": "Araucaria nut",
+            "aliases": []
+          },
+          {
+            "label": "Barnyard millet",
+            "aliases": []
+          },
+          {
+            "label": "Baru nut",
+            "aliases": []
+          },
+          {
+            "label": "Bay nut",
+            "aliases": []
+          },
+          {
+            "label": "Beaked hazelnut",
+            "aliases": []
+          },
+          {
+            "label": "Betel nut",
+            "aliases": []
+          },
+          {
+            "label": "Black walnut",
+            "aliases": []
+          },
+          {
+            "label": "Borneo tallow nut",
+            "aliases": []
+          },
+          {
+            "label": "Breadfruit seed",
+            "aliases": []
+          },
+          {
+            "label": "Breadnut",
+            "aliases": []
+          },
+          {
+            "label": "Burrawang nut",
+            "aliases": []
+          },
+          {
+            "label": "Canarium nut",
+            "aliases": [
+              "Canarium"
+            ]
+          },
+          {
+            "label": "Candlenut",
+            "aliases": [
+              "Kukui nut"
+            ]
+          },
+          {
+            "label": "Cannellini bean",
+            "aliases": []
+          },
+          {
+            "label": "Cantaloupe seed",
+            "aliases": []
+          },
+          {
+            "label": "Celery seed",
+            "aliases": []
+          },
+          {
+            "label": "Chilean hazel",
+            "aliases": []
+          },
+          {
+            "label": "Chilean pine nut",
+            "aliases": [
+              "Monkey puzzle nut",
+              "Monkey-puzzle nut"
+            ]
+          },
+          {
+            "label": "Chilgoza pine nut",
+            "aliases": []
+          },
+          {
+            "label": "Chinese chestnut",
+            "aliases": []
+          },
+          {
+            "label": "Chinese olive",
+            "aliases": []
+          },
+          {
+            "label": "Chinquapin nut",
+            "aliases": []
+          },
+          {
+            "label": "Colorado pinyon nut",
+            "aliases": []
+          },
+          {
+            "label": "Cranberry bean",
+            "aliases": [
+              "Borlotti bean"
+            ]
+          },
+          {
+            "label": "Cucumber seed",
+            "aliases": []
+          },
+          {
+            "label": "Cycad seed",
+            "aliases": []
+          },
+          {
+            "label": "Deeknut",
+            "aliases": []
+          },
+          {
+            "label": "Durum wheat",
+            "aliases": []
+          },
+          {
+            "label": "Egusi",
+            "aliases": [
+              "Egusi seed"
+            ]
+          },
+          {
+            "label": "Einkorn wheat",
+            "aliases": []
+          },
+          {
+            "label": "Emmer wheat",
+            "aliases": []
+          },
+          {
+            "label": "English walnut",
+            "aliases": []
+          },
+          {
+            "label": "European beech nut",
+            "aliases": []
+          },
+          {
+            "label": "European hazelnut",
+            "aliases": []
+          },
+          {
+            "label": "Finger millet",
+            "aliases": [
+              "Ragi"
+            ]
+          },
+          {
+            "label": "Fonio",
+            "aliases": []
+          },
+          {
+            "label": "Foxtail millet",
+            "aliases": []
+          },
+          {
+            "label": "Gabon nut",
+            "aliases": []
+          },
+          {
+            "label": "Gnetum nut",
+            "aliases": []
+          },
+          {
+            "label": "Grape seed",
+            "aliases": []
+          },
+          {
+            "label": "Great Northern bean",
+            "aliases": []
+          },
+          {
+            "label": "Guinea peanut",
+            "aliases": []
+          },
+          {
+            "label": "Heartnut",
+            "aliases": []
+          },
+          {
+            "label": "Hickory nut",
+            "aliases": []
+          },
+          {
+            "label": "Horse gram",
+            "aliases": []
+          },
+          {
+            "label": "Jack bean seed",
+            "aliases": []
+          },
+          {
+            "label": "Jelly palm nut",
+            "aliases": []
+          },
+          {
+            "label": "Karuka",
+            "aliases": []
+          },
+          {
+            "label": "Khorasan wheat",
+            "aliases": [
+              "Kamut"
+            ]
+          },
+          {
+            "label": "Kodo millet",
+            "aliases": []
+          },
+          {
+            "label": "Korean pine nut",
+            "aliases": []
+          },
+          {
+            "label": "Kurrajong",
+            "aliases": []
+          },
+          {
+            "label": "Little millet",
+            "aliases": []
+          },
+          {
+            "label": "Lupin bean",
+            "aliases": [
+              "Lupini bean"
+            ]
+          },
+          {
+            "label": "Malabar chestnut",
+            "aliases": []
+          },
+          {
+            "label": "Mexican pinyon nut",
+            "aliases": []
+          },
+          {
+            "label": "Mongongo",
+            "aliases": []
+          },
+          {
+            "label": "Moth bean",
+            "aliases": []
+          },
+          {
+            "label": "Navy bean",
+            "aliases": [
+              "Haricot bean"
+            ]
+          },
+          {
+            "label": "Nutmeg",
+            "aliases": []
+          },
+          {
+            "label": "Ogbono nut",
+            "aliases": [
+              "Gabon mango kernel",
+              "Irvingia",
+              "Irvingia gabonensis",
+              "Irvingia nut"
+            ]
+          },
+          {
+            "label": "Palm nut",
+            "aliases": []
+          },
+          {
+            "label": "Panda oleosa",
+            "aliases": []
+          },
+          {
+            "label": "Papaya seed",
+            "aliases": []
+          },
+          {
+            "label": "Paradise nut",
+            "aliases": []
+          },
+          {
+            "label": "Paraná pine nut",
+            "aliases": []
+          },
+          {
+            "label": "Peanut tree seed",
+            "aliases": []
+          },
+          {
+            "label": "Pearl millet",
+            "aliases": []
+          },
+          {
+            "label": "Pigeon pea",
+            "aliases": [
+              "Toor dal"
+            ]
+          },
+          {
+            "label": "Pinto bean",
+            "aliases": []
+          },
+          {
+            "label": "Planted karuka",
+            "aliases": []
+          },
+          {
+            "label": "Pomegranate seed",
+            "aliases": []
+          },
+          {
+            "label": "Proso millet",
+            "aliases": []
+          },
+          {
+            "label": "Red bopple nut",
+            "aliases": []
+          },
+          {
+            "label": "Safflower seed",
+            "aliases": []
+          },
+          {
+            "label": "Shagbark hickory nut",
+            "aliases": []
+          },
+          {
+            "label": "Spelt",
+            "aliases": []
+          },
+          {
+            "label": "Squash seed",
+            "aliases": []
+          },
+          {
+            "label": "Stone pine nut",
+            "aliases": []
+          },
+          {
+            "label": "Sweet chestnut",
+            "aliases": []
+          },
+          {
+            "label": "Sword bean seed",
+            "aliases": []
+          },
+          {
+            "label": "Tamarind seed",
+            "aliases": []
+          },
+          {
+            "label": "Teff",
+            "aliases": []
+          },
+          {
+            "label": "Torreya nut",
+            "aliases": []
+          },
+          {
+            "label": "Triticale",
+            "aliases": []
+          },
+          {
+            "label": "Urad bean",
+            "aliases": [
+              "Black gram"
+            ]
+          },
+          {
+            "label": "Velvet bean seed",
+            "aliases": []
+          },
+          {
+            "label": "Water caltrop",
+            "aliases": [
+              "Water chestnut"
+            ]
+          },
+          {
+            "label": "Wild karuka",
+            "aliases": []
+          },
+          {
+            "label": "Wild rice",
+            "aliases": []
+          },
+          {
+            "label": "Winged bean seed",
+            "aliases": []
+          },
+          {
+            "label": "Yellow walnut",
+            "aliases": []
+          }
+        ],
+        "10": [
+          {
+            "label": "Almond",
+            "aliases": [
+              "Prunus dulcis"
+            ]
+          },
+          {
+            "label": "Cashew",
+            "aliases": []
+          },
+          {
+            "label": "Hazelnut",
+            "aliases": [
+              "Cobnut",
+              "Filbert"
+            ]
+          },
+          {
+            "label": "Peanut",
+            "aliases": [
+              "Goober",
+              "Groundnut"
+            ]
+          },
+          {
+            "label": "Pistachio",
+            "aliases": [
+              "Pistacia vera"
+            ]
+          },
+          {
+            "label": "Walnut",
+            "aliases": [
+              "Walnuts"
+            ]
+          }
+        ],
+        "85": [
+          {
+            "label": "Australian cashew nut",
+            "aliases": []
+          },
+          {
+            "label": "California nutmeg seed",
+            "aliases": []
+          },
+          {
+            "label": "Chinese nutmeg-yew nut",
+            "aliases": []
+          },
+          {
+            "label": "Japanese nutmeg-yew nut",
+            "aliases": []
+          },
+          {
+            "label": "Johnstone River almond",
+            "aliases": []
+          },
+          {
+            "label": "Mockernut hickory nut",
+            "aliases": []
+          },
+          {
+            "label": "Queensland macadamia nut",
+            "aliases": []
+          },
+          {
+            "label": "Shellbark hickory nut",
+            "aliases": []
+          },
+          {
+            "label": "Single-leaf pinyon nut",
+            "aliases": []
+          }
+        ],
+        "100": [
+          {
+            "label": "Pekea nut",
+            "aliases": []
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,231 @@
+[
+  {
+    "sourceFile": "source-receipts.json",
+    "file": "johnnys-catalog-2024.pdf",
+    "url": "https://www.johnnyseeds.com/on/demandware.static/-/Library-Sites-JSSSharedLibrary/default/dw6b02211a/assets/information/2024-johnnys-digital-master-catalog.pdf",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "sourceFile": "source-receipts.json",
+    "file": "nmsu-cpi.html",
+    "url": "https://cpi.nmsu.edu/",
+    "bytes": 61010,
+    "sha256": "55f9bf5da20238926f695bb1f81ef6dfb01b87bd70c94b96ebe1d8ff434aaacc"
+  },
+  {
+    "sourceFile": "source-receipts.json",
+    "file": "openstax-secondary.html",
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/17-10-organs-with-secondary-endocrine-functions",
+    "bytes": 343852,
+    "sha256": "2736a24734011e84864be7e799c7a8adb14b3f143c3448eadb5fa017f5e9e9cf"
+  },
+  {
+    "sourceFile": "source-receipts.json",
+    "file": "openstax-pituitary.html",
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/17-3-the-pituitary-gland-and-hypothalamus",
+    "bytes": 378965,
+    "sha256": "6e79c46c3a3dcdfd824c7e943dcd13335a572a29bc0c7dff61f742067974931a"
+  },
+  {
+    "sourceFile": "source-receipts.json",
+    "file": "openstax-thyroid.html",
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/17-4-the-thyroid-gland",
+    "bytes": 357798,
+    "sha256": "54ea2e93f6d46bfd9af8e25111bd7ef573d15392c38e70577d5fb452ba46a40a"
+  },
+  {
+    "sourceFile": "source-receipts.json",
+    "file": "openstax-parathyroid.html",
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/17-5-the-parathyroid-glands",
+    "bytes": 347373,
+    "sha256": "08a06625a111357a4e0f10746c4f835d0391988e89e383e57f2182ccf929866a"
+  },
+  {
+    "sourceFile": "source-receipts.json",
+    "file": "openstax-adrenal.html",
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/17-6-the-adrenal-glands",
+    "bytes": 353437,
+    "sha256": "da0d5ba4ddf3c722347684ffc4c25847794379d9e68d4e71065826521c55e055"
+  },
+  {
+    "sourceFile": "source-receipts.json",
+    "file": "openstax-pineal.html",
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/17-7-the-pineal-gland",
+    "bytes": 335693,
+    "sha256": "194ae9c25b24cfde7acbfbbf5c6df9f7591208ae502dfc3d00a63f71184db9f3"
+  },
+  {
+    "sourceFile": "source-receipts.json",
+    "file": "openstax-gonadal.html",
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/17-8-gonadal-and-placental-hormones",
+    "bytes": 339086,
+    "sha256": "69c35afa9d45cef9c07e5d68de038f2b52fd6b4a650cda7ab792717b81aca35b"
+  },
+  {
+    "sourceFile": "source-receipts.json",
+    "file": "openstax-pancreas.html",
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/17-9-the-endocrine-pancreas",
+    "bytes": 358324,
+    "sha256": "5b21b84b064a95656598f4a3199d167980aa519b7aebbef5f6c5a09c35c5a7f0"
+  },
+  {
+    "sourceFile": "source-receipts.json",
+    "file": "openstax-neurons.html",
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/12-5-communication-between-neurons",
+    "bytes": 376716,
+    "sha256": "cb8aa6cfc2bc0a8752c6aae35d20576d2c008a13d21d522ffc0c7c81ad92db7a"
+  },
+  {
+    "sourceFile": "pepper-additional-receipts.json",
+    "file": "fedco-peppers.html",
+    "url": "https://fedcoseeds.com/seeds/peppers",
+    "bytes": 415651,
+    "sha256": "af12dbd263decef670aa283eada44fb1e762f938679e74c44590aea2b5ff7a47"
+  },
+  {
+    "sourceFile": "pepper-additional-receipts.json",
+    "file": "nmsu-cultivars.html",
+    "url": "https://cpi.nmsu.edu/chile-info/nmsu-cultivars.html",
+    "bytes": 63679,
+    "sha256": "cbdd6074fcfe9e882400f954e951df5f6ae996988b28f70e8b6d356dad1c27d1"
+  },
+  {
+    "sourceFile": "pepper-additional-receipts.json",
+    "file": "nmsu-online-store.html",
+    "url": "https://chilepepperinstitute.ecwid.com/",
+    "bytes": 529753,
+    "sha256": "524b156e6fc9bbe6ef67629f8dd4fd7d72b949f4180b43527b17e7020e7a9092"
+  },
+  {
+    "sourceFile": "pepper-additional-receipts.json",
+    "file": "aas-peppers.html",
+    "url": "https://all-americaselections.org/product-category/edibles-vegetables/pepper/",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "sourceFile": "subject-index-receipts.json",
+    "file": "nmsu-seed-category.html",
+    "url": "https://chilepepperinstitute.ecwid.com/Seeds-c85441005",
+    "bytes": 586098,
+    "sha256": "9abbf7d38480151939c29311068cdf206943e8f10d7958d300b7641bd1d54e42"
+  },
+  {
+    "sourceFile": "subject-index-receipts.json",
+    "file": "society-hormones.html",
+    "url": "https://www.yourhormones.info/hormones/",
+    "error": "<urlopen error [SSL: TLSV1_ALERT_PROTOCOL_VERSION] tlsv1 alert protocol version (_ssl.c:1129)>"
+  },
+  {
+    "sourceFile": "nmsu-page2-receipt.json",
+    "url": "https://chilepepperinstitute.ecwid.com/Seeds-c85441005?offset=60",
+    "bytes": 571798,
+    "sha256": "57519e17cd791bea9ae85f30c3b1b3da909f8dd74fa148e5bde2609ac7e892f5"
+  },
+  {
+    "sourceFile": "fedco-page2-receipt.json",
+    "url": "https://fedcoseeds.com/seeds/peppers?page=2",
+    "bytes": 266923,
+    "sha256": "25fa23abcf81c7b9b7cdf82261746cd2b7fa8ad1b34c7d4a217528995d38a605"
+  },
+  {
+    "sourceFile": "supplement-receipts.json",
+    "key": "melbourne-annuum",
+    "url": "https://www.plantnames.unimelb.edu.au/Sorting/Capsicum_annuum.html",
+    "bytes": 105694,
+    "sha256": "dee93475af03868b35640c93ff017386ee4f67df18244d69d60f59c6110702d2",
+    "status": "captured"
+  },
+  {
+    "sourceFile": "supplement-receipts.json",
+    "key": "melbourne-chinense",
+    "url": "https://www.plantnames.unimelb.edu.au/Sorting/Capsicum_chinense.html",
+    "bytes": 35878,
+    "sha256": "f2ef04b7c2aa786007fa6f465926a1cf9815b7b6ae20a8a811ee25fdf9168401",
+    "status": "captured"
+  },
+  {
+    "sourceFile": "supplement-receipts.json",
+    "key": "melbourne-baccatum",
+    "url": "https://www.plantnames.unimelb.edu.au/Sorting/Capsicum_baccatum.html",
+    "bytes": 41049,
+    "sha256": "8fdd762079ae30de027a27b24b7560f562ae98eb64637d217dfb0c0dbdd0ed98",
+    "status": "captured"
+  },
+  {
+    "sourceFile": "supplement-receipts.json",
+    "key": "melbourne-frutescens",
+    "url": "https://www.plantnames.unimelb.edu.au/Sorting/Capsicum_frutescens.html",
+    "bytes": 53126,
+    "sha256": "68017c2fd5c198256312d97f7eb3a4a8f379d7f074703e8d07ff944bd37bfbf5",
+    "status": "captured"
+  },
+  {
+    "sourceFile": "supplement-receipts.json",
+    "key": "melbourne-pubescens",
+    "url": "https://www.plantnames.unimelb.edu.au/Sorting/Capsicum_pubescens.html",
+    "bytes": 24094,
+    "sha256": "6e0f51b2239d9bcb25d0275cef6457283bb3cd212fa947fe3ae0b55c367ce928",
+    "status": "captured"
+  },
+  {
+    "sourceFile": "supplement-receipts.json",
+    "key": "chocolate-grower",
+    "url": "https://southdevonchillifarm.co.uk/products/chocolate-habanero",
+    "bytes": 372186,
+    "sha256": "fb238c5b1ce97b49892578d0cfcfabe0b8da585ceb4578e5c5f80507a9a69371",
+    "status": "captured"
+  },
+  {
+    "sourceFile": "supplement-receipts.json",
+    "key": "naga-grower",
+    "url": "https://www.cercatoridisemi.com/en/product-page/naga-viper-capsicum-chinense",
+    "bytes": 1273598,
+    "sha256": "b43dc2b4c49c6b0048a21261612efe3ddac2f987422edf23e3edce2a62767768",
+    "status": "captured"
+  },
+  {
+    "sourceFile": "supplement-receipts.json",
+    "key": "scotch-grower",
+    "url": "https://southdevonchillifarm.co.uk/products/fresh-scotch-bonnet-chillies",
+    "bytes": 372066,
+    "sha256": "e91ed0bcc7b48d63b54739028092d89b23c7543386800710dabec3c28c052d0f",
+    "status": "captured"
+  },
+  {
+    "sourceFile": "supplement-receipts.json",
+    "key": "birdseye-nursery",
+    "url": "https://www.chengtainursery.com/product/chili-padi-m150/",
+    "bytes": 184834,
+    "sha256": "84663c0d83bd62bcd80e36e4fe7034b21c1a41baa6bf91a0373719381e5c95a0",
+    "status": "captured"
+  },
+  {
+    "sourceFile": "supplement-receipts.json",
+    "key": "reaper-creator",
+    "url": "https://puckerbuttpeppercompany.com/pages/faq",
+    "bytes": 156565,
+    "sha256": "654c57d4d32f43e3173a24a43a5bfd0080a6bb09e4a69395aee5400d8a888797",
+    "status": "captured"
+  },
+  {
+    "sourceFile": "supplement-receipts.json",
+    "key": "pepperx-creator",
+    "url": "https://puckerbuttpeppercompany.com/pages/our-roots",
+    "bytes": 237665,
+    "sha256": "6543319bfcd8aa54e86986059a789e8075bd3bb022717149e27db37264e78838",
+    "status": "captured"
+  },
+  {
+    "url": "https://rest.uniprot.org/uniprotkb/search?query=%28organism_id%3A9606%29+AND+%28reviewed%3Atrue%29+AND+%28keyword%3AKW-0372%29&format=json&size=500",
+    "sha256": "a3b7b97947dda482a6a8eb77e08b67e15c8130d7ef566d393148f7dc7cb107aa",
+    "bytes": 4506354,
+    "returned": 98,
+    "totalResults": 98,
+    "paginationLinkPresent": false
+  },
+  {
+    "url": "https://rest.uniprot.org/help/license",
+    "sha256": "5960c22bf17f22286504b927dbb3ca41713c571ed91a10fe7a88ddd964b416ce",
+    "bytes": 914
+  }
+]

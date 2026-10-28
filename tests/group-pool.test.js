@@ -13,7 +13,7 @@ const read=path=>readFileSync(new URL('../'+path,import.meta.url));
 const manifest=JSON.parse(read('group-bank-manifest.json'));
 const approved=JSON.parse(read('data-snapshots/group/approved-prompts.json'));
 test('all 98 approved prompts are playable; the 5,000 source archive is distinct from normal games',()=>{
- assert.equal(GROUP_PACKS.length,5000);assert.equal(MIXED_PACKS.length,227);assert.equal(PARTY_PACKS.length,MIXED_PACKS.length);
+ assert.equal(GROUP_PACKS.length,5000);assert.deepEqual(new Set(MIXED_PACKS.map(p=>p.id)),new Set(JSON.parse(readFileSync(new URL('../data-snapshots/reviewed-standard/admission.json',import.meta.url))).questions.map(p=>p.id)));assert.equal(PARTY_PACKS.length,MIXED_PACKS.length);
  assert.equal(new Set(GROUP_PACKS.map(p=>p.id)).size,5000);assert.equal(new Set(GROUP_PACKS.map(p=>p.identityHash)).size,5000);
  assert.equal(new Set(GROUP_PACKS.map(p=>canonicalQuestionId(p.id))).size,5000);
  assert.equal(GROUP_PACKS.filter(p=>p.reviewId).length,98);

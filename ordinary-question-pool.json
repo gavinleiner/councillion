@@ -1,6 +1,6 @@
 {
-  "build": "a45caad1429ce021",
-  "count": 227,
+  "build": "91bccdc8deeb8c06",
+  "count": 474,
   "categories": [
     {
       "id": "group-q001",
@@ -1817,6 +1817,1982 @@
       "group": "distinct-authored-facts",
       "answerCount": 112,
       "scope": "Named examples and standard alternative names count. This is a finite curated inventory, not an exhaustive list of every real-world possibility."
+    },
+    {
+      "id": "authored-ice-cream-toppings",
+      "prompt": "Name an ice-cream topping or mix-in.",
+      "family": "food",
+      "group": "authored-situations",
+      "answerCount": 99,
+      "scope": "Named toppings and mix-ins used on ice cream, gelato or frozen custard count, including candy, fruit, nuts, sauces and cake pieces. A flavor by itself is not a topping."
+    },
+    {
+      "id": "authored-pickled-foods",
+      "prompt": "Name a food that is commonly pickled.",
+      "family": "food",
+      "group": "authored-properties",
+      "answerCount": 165,
+      "scope": "Vegetables, fruits, eggs, meats and seafood with established pickled preparations count. Vinegar and brine are ingredients, not foods being pickled."
+    },
+    {
+      "id": "authored-leaf-wrapped-food",
+      "prompt": "Name a named dish cooked or wrapped in plant leaves.",
+      "family": "food",
+      "group": "authored-situations",
+      "answerCount": 60,
+      "scope": "Traditional leaf-wrapped food parcels, dishes cooked between leaves or in leaf-lined containers, and dishes traditionally sold wrapped in leaves count. Food merely set on a leaf plate without leaf cooking or wrapping does not qualify."
+    },
+    {
+      "id": "authored-corn-dishes",
+      "prompt": "Name a corn-based food or drink.",
+      "family": "food",
+      "group": "authored-situations",
+      "answerCount": 165,
+      "scope": "Corn or cornmeal must be a defining ingredient. Foods, drinks and edible corn products count; incidental corn-derived additives do not make every food corn-based."
+    },
+    {
+      "id": "authored-noodle-dishes",
+      "prompt": "Name a named pasta or noodle dish.",
+      "family": "food",
+      "group": "authored-situations",
+      "answerCount": 119,
+      "scope": "Named dishes and established menu preparations count, including familiar meal names such as spaghetti, udon and soba, filled pastas and gnocchi. A bare unfilled pasta-shape name without a dish or established menu preparation does not count. Plain tteokbokki is a rice-cake dish; rabokki includes noodles."
+    },
+    {
+      "id": "authored-foods-with-custard",
+      "prompt": "Name a type of custard or a dessert made with custard.",
+      "family": "food",
+      "group": "authored-properties",
+      "answerCount": 112,
+      "scope": "Named custards and desserts made using custard or custard powder count. A cream-only filling does not qualify merely because it is called cream."
+    },
+    {
+      "id": "authored-inflatable-objects",
+      "prompt": "Name an object designed to be inflated.",
+      "family": "everyday",
+      "group": "authored-situations",
+      "answerCount": 78,
+      "scope": "Common inflatable objects and named inflatable equipment types count, whether filled with air, helium or another gas. Objects merely containing an empty cavity do not qualify."
+    },
+    {
+      "id": "authored-sewing-kit",
+      "prompt": "Name an item used for sewing or mending clothes.",
+      "family": "everyday",
+      "group": "authored-situations",
+      "answerCount": 109,
+      "scope": "Hand-sewing, machine-sewing and dressmaking tools and supplies count. A finished garment alone is not sewing equipment."
+    },
+    {
+      "id": "authored-garden-tools",
+      "prompt": "Name a tool or piece of equipment used for gardening.",
+      "family": "everyday",
+      "group": "authored-situations",
+      "answerCount": 129,
+      "scope": "Tools, devices and durable equipment used to plant, water, prune, move soil or maintain gardens count. Plant names are not tools."
+    },
+    {
+      "id": "authored-laundry-supplies",
+      "prompt": "Name an item or product used to wash, dry or care for laundry.",
+      "family": "everyday",
+      "group": "authored-situations",
+      "answerCount": 162,
+      "scope": "Laundry appliances, supplies, stain treatments and clothes-care tools count, as do named product types and established laundry-product brands, including historical ones. A garment itself is not a laundry supply."
+    },
+    {
+      "id": "authored-objects-with-hinges",
+      "prompt": "Name an object that commonly has a hinge.",
+      "family": "everyday",
+      "group": "authored-properties",
+      "answerCount": 133,
+      "scope": "A common hinged version of the object must exist. Sliding or roll-up versions do not prevent a genuinely hinged object from counting."
+    },
+    {
+      "id": "authored-kitchen-hand-tools",
+      "prompt": "Name a hand tool or utensil used to prepare or serve food.",
+      "family": "everyday",
+      "group": "authored-situations",
+      "answerCount": 246,
+      "scope": "Kitchen hand tools, utensils, serving implements and nonpowered cookware count. Small measuring tools used in food preparation also count. Large powered appliances and foods do not qualify."
+    },
+    {
+      "id": "authored-enderman-carry-blocks",
+      "prompt": "Name a block an Enderman can pick up in Minecraft.",
+      "family": "gaming",
+      "group": "authored-game-mechanics",
+      "answerCount": 45,
+      "scope": "The actual block-pickup rule counts, including flowers. Endermen may pick up only certain blocks even if the player can carry other blocks. Official Java 26.3 recipe, tag or component data defines the inventory; modded behavior does not count."
+    },
+    {
+      "id": "authored-minecraft-flowers",
+      "prompt": "Name a flower or flowering block found in Minecraft.",
+      "family": "gaming",
+      "group": "authored-game-mechanics",
+      "answerCount": 31,
+      "scope": "Flower items and blocks count, including tall flowers and Nether-compatible flowers. Named crops and saplings do not become flowers merely because they are plants. Official Java 26.3 recipe, tag or component data defines the inventory; modded behavior does not count."
+    },
+    {
+      "id": "authored-minecraft-fishing-catches",
+      "prompt": "Name an item you can catch by fishing in Minecraft.",
+      "family": "gaming",
+      "group": "authored-game-mechanics",
+      "answerCount": 22,
+      "scope": "Fish, junk and treasure in the ordinary fishing loot tables count. Items merely carried by nearby mobs do not. Official Java 26.3 recipe, tag or component data defines the inventory; modded behavior does not count."
+    },
+    {
+      "id": "authored-minecraft-furnace-results",
+      "prompt": "Name an item or block a furnace recipe can produce in Minecraft.",
+      "family": "gaming",
+      "group": "authored-game-mechanics",
+      "answerCount": 61,
+      "scope": "Give the output, rather than the input, of an ordinary furnace smelting or cooking recipe. Official Java 26.3 recipe, tag or component data defines the inventory; modded behavior does not count."
+    },
+    {
+      "id": "authored-minecraft-furnace-fuel",
+      "prompt": "Name an item that can be used as furnace fuel in Minecraft.",
+      "family": "gaming",
+      "group": "authored-game-mechanics",
+      "answerCount": 347,
+      "scope": "Items actually accepted in the fuel slot count, rather than anything that merely looks flammable. Their fuel value need not be the same. Official Java 26.3 recipe, tag or component data defines the inventory; modded behavior does not count."
+    },
+    {
+      "id": "authored-minecraft-axe-transformations",
+      "prompt": "Name a Minecraft block you can strip, scrape or unwax by using an axe on it.",
+      "family": "gaming",
+      "group": "authored-game-mechanics",
+      "answerCount": 130,
+      "scope": "This asks for the right-click/use action. Merely chopping or breaking a block does not qualify. Both stripping wood and removing copper oxidation or wax count. Official Java 26.3 recipe, tag or component data defines the inventory; modded behavior does not count."
+    },
+    {
+      "id": "authored-combat-sports",
+      "prompt": "Name a combat sport or established martial art.",
+      "family": "sports",
+      "group": "authored-situations",
+      "answerCount": 129,
+      "scope": "Named competitive fighting disciplines and established martial arts count, including forms practiced without full-contact competition. Fictional styles do not count."
+    },
+    {
+      "id": "authored-winter-sports",
+      "prompt": "Name a sport or recognized sporting discipline played on snow or ice.",
+      "family": "sports",
+      "group": "authored-situations",
+      "answerCount": 99,
+      "scope": "Established ice and snow sports and competitive disciplines count. A sport merely played during the winter on an ordinary indoor court does not qualify."
+    },
+    {
+      "id": "authored-motorsport-disciplines",
+      "prompt": "Name a motorsport or established motor-racing series.",
+      "family": "sports",
+      "group": "authored-situations",
+      "answerCount": 112,
+      "scope": "Recognized motor-vehicle competitions and racing series count, including cars, motorcycles, boats, snowmobiles and powered aircraft. Drivers, vehicle manufacturers and unpowered sports do not qualify by themselves."
+    },
+    {
+      "id": "authored-bodyweight-exercises",
+      "prompt": "Name an exercise that can be done using your bodyweight instead of added weights.",
+      "family": "sports",
+      "group": "authored-properties",
+      "answerCount": 167,
+      "scope": "Named exercises and recognized variations count, including floor exercises, holds and movements on a pull-up bar. A bar or bench can provide support; dumbbells and loaded barbells are not required."
+    },
+    {
+      "id": "authored-nba-regular-season-mvps",
+      "prompt": "Name a player who has won the NBA regular-season MVP award.",
+      "family": "sports",
+      "group": "authored-situations",
+      "answerCount": 37,
+      "scope": "Winners of the main NBA regular-season Most Valuable Player award through the 2025–26 season count. Finals, All-Star and other leagues' MVP awards are different."
+    },
+    {
+      "id": "authored-super-bowl-winning-starters",
+      "prompt": "Name a quarterback who started and won a Super Bowl.",
+      "family": "sports",
+      "group": "authored-situations",
+      "answerCount": 36,
+      "scope": "The quarterback must have started a winning Super Bowl, through Super Bowl LX in February 2026. Winning a ring as a backup alone does not count."
+    },
+    {
+      "id": "authored-animals-with-horns",
+      "prompt": "Name a real animal that has horns or antlers.",
+      "family": "nature",
+      "group": "authored-properties",
+      "answerCount": 140,
+      "scope": "Living and extinct animals count, including beetle horns and other actual horn-like structures. Feathers that merely look like horns do not count. A named animal group counts when it contains horned or antlered members."
+    },
+    {
+      "id": "authored-bioluminescent-animals",
+      "prompt": "Name an animal that can produce its own light.",
+      "family": "nature",
+      "group": "authored-properties",
+      "answerCount": 75,
+      "scope": "Bioluminescence, including light produced by symbiotic bacteria in an animal's light organ, counts. Reflection, fluorescence and bright coloring alone do not. Broad animal groups count when they contain documented luminous members."
+    },
+    {
+      "id": "authored-migrating-animals",
+      "prompt": "Name an animal that makes a regular seasonal migration.",
+      "family": "nature",
+      "group": "authored-properties",
+      "answerCount": 185,
+      "scope": "Named species and animal groups with documented recurring seasonal, breeding or feeding migrations count, including migrating populations of a species. One-off escapes or an individual simply wandering do not."
+    },
+    {
+      "id": "authored-underground-food-crops",
+      "prompt": "Name a food crop with an edible part that normally grows underground.",
+      "family": "nature",
+      "group": "authored-properties",
+      "answerCount": 85,
+      "scope": "Roots, tubers, rhizomes, bulbs, corms and underground fruits count. Named crop kinds and established edible varieties count. A normal above-ground fruit does not count merely because the plant has roots."
+    },
+    {
+      "id": "authored-human-bone-names",
+      "prompt": "Name a bone or named group of bones in the human skeleton.",
+      "family": "science",
+      "group": "authored-situations",
+      "answerCount": 124,
+      "scope": "Standard named bones, fused bones and familiar bone groups count. Left and right instances are the same answer. Cartilage, joints, muscles and organs are not bones."
+    },
+    {
+      "id": "authored-measurement-unit-names",
+      "prompt": "Name a unit used to measure a physical quantity or digital information.",
+      "family": "science",
+      "group": "authored-situations",
+      "answerCount": 925,
+      "scope": "Established metric, customary, historical and scientific measurement units count, including named prefixed units. Currency units and arbitrary made-up units do not. Official unit symbols are accepted only when they name that actual unit."
+    },
+    {
+      "id": "authored-cell-structure-names",
+      "prompt": "Name a structure or component found in a living cell.",
+      "family": "science",
+      "group": "authored-situations",
+      "answerCount": 146,
+      "scope": "Plant, animal, fungal and prokaryotic cell structures count. Whole organs or tissues are not structures inside one cell. Established molecular structures such as DNA and chromosomes count. Cellular structures and molecular assemblies count; an individual pigment such as chlorophyll is not an organelle or cell structure by itself."
+    },
+    {
+      "id": "authored-official-constellations",
+      "prompt": "Name one of the 88 official constellations.",
+      "family": "science",
+      "group": "authored-closed-inventory",
+      "answerCount": 88,
+      "scope": "Official IAU constellation names count. Recognized common names such as Capricorn and the Great Bear are accepted. Asterisms such as the Big Dipper are only parts of constellations."
+    },
+    {
+      "id": "authored-dota-heroes",
+      "prompt": "Name a playable hero in Dota 2.",
+      "family": "gaming",
+      "group": "authored-whole-roster",
+      "answerCount": 127,
+      "scope": "The complete official playable hero roster in the October 25, 2026 snapshot counts. Items, cosmetics and non-playable creeps are not heroes."
+    },
+    {
+      "id": "authored-overwatch-heroes",
+      "prompt": "Name a playable hero in Overwatch.",
+      "family": "gaming",
+      "group": "authored-whole-roster",
+      "answerCount": 54,
+      "scope": "The full official Overwatch roster in the October 25, 2026 snapshot counts, including heroes introduced while it was called Overwatch 2. Skins and unplayable story characters do not."
+    },
+    {
+      "id": "authored-smash-ultimate-fighters",
+      "prompt": "Name a playable fighter in Super Smash Bros. Ultimate.",
+      "family": "gaming",
+      "group": "authored-whole-roster",
+      "answerCount": 89,
+      "scope": "All base-game, Echo and DLC fighters count. Pokémon Trainer's three Pokémon, the three Mii fighting styles, and Pyra/Mythra count separately. Alternate costumes share the original fighter's answer; Assist Trophies do not count."
+    },
+    {
+      "id": "authored-legendary-mythical-pokemon",
+      "prompt": "Name a Legendary or Mythical Pokémon.",
+      "family": "gaming",
+      "group": "authored-whole-roster",
+      "answerCount": 94,
+      "scope": "Species classified as Legendary or Mythical in the pinned PokéAPI data count. Forms share their species' answer identity. Pseudo-Legendary is a fan label and does not make a species Legendary."
+    },
+    {
+      "id": "authored-wizarding-world-characters",
+      "prompt": "Name a character from the Harry Potter books or films.",
+      "family": "culture",
+      "group": "authored-whole-roster",
+      "answerCount": 437,
+      "scope": "Identifiable characters in the Harry Potter novels, films and their epilogues count, including creatures, ghosts and portraits. Real actors are not their fictional characters. Same-name characters share one answer identity."
+    },
+    {
+      "id": "authored-musical-duos",
+      "prompt": "Name a music act known as a duo.",
+      "family": "music",
+      "group": "authored-whole-concept",
+      "answerCount": 2989,
+      "scope": "Current and historical musical duos count. Ordinary backing musicians do not change a two-person act into a larger group. Two solo artists who collaborated once are not automatically a named duo."
+    },
+    {
+      "id": "authored-mountain-ranges",
+      "prompt": "Name a real mountain range.",
+      "family": "world",
+      "group": "authored-whole-concept",
+      "answerCount": 19641,
+      "scope": "Named ranges, chains, mountain systems and subranges count, anywhere in the world. A single peak by itself is not a range."
+    },
+    {
+      "id": "authored-museums",
+      "prompt": "Name a real museum.",
+      "family": "world",
+      "group": "authored-whole-concept",
+      "answerCount": 57894,
+      "scope": "Named museums and museum complexes count, including historical institutions. Multiple institutions with the same name share an answer identity. A type of museum or a fictional museum is not a named real institution."
+    },
+    {
+      "id": "authored-cookie-biscuit-types",
+      "prompt": "Name a type of cookie or biscuit, including named branded varieties.",
+      "family": "food",
+      "group": "authored-whole-concept",
+      "answerCount": 209,
+      "scope": "Named cookie and sweet biscuit varieties, brands and traditional preparations count. Regional names for the same biscuit share one answer; a cake or cracker is not automatically a cookie."
+    },
+    {
+      "id": "authored-named-pies",
+      "prompt": "Name a pie, tart or flan.",
+      "family": "food",
+      "group": "authored-whole-concept",
+      "answerCount": 242,
+      "scope": "Named sweet and savory pies, tarts and flans count. Established dishes conventionally called pies count even when they use mash, crumbs or cake, including Boston cream pie and whoopie pie. An ordinary cake without a conventional pie name, pizza or an uncrusted omelette does not qualify."
+    },
+    {
+      "id": "authored-ice-cream-flavors",
+      "prompt": "Name a real ice-cream flavor.",
+      "family": "food",
+      "group": "authored-whole-concept",
+      "answerCount": 265,
+      "scope": "Established ice-cream and gelato flavor names, including named branded flavors and dairy-free ice-cream equivalents, count. An invented combination is not automatically an established flavor. A sorbet-only flavor is not evidence of an ice-cream flavor."
+    },
+    {
+      "id": "authored-breakfast-cereal-products",
+      "prompt": "Name a breakfast cereal, cereal brand or named cereal product.",
+      "family": "food",
+      "group": "authored-whole-concept",
+      "answerCount": 930,
+      "scope": "Named breakfast-cereal kinds, brands and products count, including hot cereals, muesli, granola and historical products. An unrelated food does not count just because its maker also sells cereal."
+    },
+    {
+      "id": "authored-fermentation-foods",
+      "prompt": "Name a food or drink made using fermentation.",
+      "family": "food",
+      "group": "authored-whole-concept",
+      "answerCount": 357,
+      "scope": "Named foods, drinks and edible ingredients traditionally produced using microbial fermentation count, including foods subsequently cooked or distilled. An optional fermented ingredient does not make every mixed dish a separate fermentation product."
+    },
+    {
+      "id": "authored-salad-dressings",
+      "prompt": "Name a salad dressing.",
+      "family": "food",
+      "group": "authored-whole-concept",
+      "answerCount": 168,
+      "scope": "Named dressings, traditional dressing preparations and brands sold as salad dressing count. A generic ingredient can qualify only when it is also conventionally used as a dressing on its own; arbitrary invented ingredient combinations do not count."
+    },
+    {
+      "id": "authored-pizza-styles",
+      "prompt": "Name a recognized pizza style or named pizza variety.",
+      "family": "food",
+      "group": "authored-whole-concept",
+      "answerCount": 184,
+      "scope": "Recognized regional styles and named pizza varieties count. A topping by itself is not a pizza style, and an invented topping combination is not a new variety."
+    },
+    {
+      "id": "authored-sushi-preparations",
+      "prompt": "Name a sushi style or named sushi roll.",
+      "family": "food",
+      "group": "authored-whole-concept",
+      "answerCount": 203,
+      "scope": "Established sushi preparations, named sushi rolls and recognizable filling-specific sushi varieties count. Sashimi by itself is not sushi because it lacks the seasoned rice. A fish or ingredient alone is not a prepared sushi variety."
+    },
+    {
+      "id": "authored-soft-drink-products",
+      "prompt": "Name a soft-drink brand or named soda product.",
+      "family": "food",
+      "group": "authored-whole-concept",
+      "answerCount": 569,
+      "scope": "Commercial nonalcoholic soda and soft-drink brands or named product lines count worldwide, including discontinued products. Plain bottled water and an unbranded beverage category alone do not count."
+    },
+    {
+      "id": "authored-pastry-types",
+      "prompt": "Name a type of pastry.",
+      "family": "food",
+      "group": "authored-whole-concept",
+      "answerCount": 389,
+      "scope": "Established sweet or savory pastries, named regional pastry foods and pastry families count. A bread, cake or biscuit is not automatically pastry; an established laminated or filled pastry preparation qualifies."
+    },
+    {
+      "id": "authored-record-labels",
+      "prompt": "Name a record label or record company.",
+      "family": "music",
+      "group": "authored-whole-concept",
+      "answerCount": 13766,
+      "scope": "Real current and historical record labels, imprints and record companies count. A publisher, streaming platform or music store is not automatically a record label."
+    },
+    {
+      "id": "authored-named-djs",
+      "prompt": "Name a real DJ or DJ act, past or present.",
+      "family": "music",
+      "group": "authored-whole-concept",
+      "answerCount": 7859,
+      "scope": "Real DJs and billed DJ duos or groups count, including people known for presenting recorded music on radio. Being a singer or producer alone does not make someone a DJ. Fictional story DJs and unrelated musical groups do not count."
+    },
+    {
+      "id": "authored-named-drummers",
+      "prompt": "Name a musician known for playing drums.",
+      "family": "music",
+      "group": "authored-whole-concept",
+      "answerCount": 6262,
+      "scope": "Real musicians known for playing drums count, including multi-instrumentalists and percussionists with a documented drum-playing career. An unrelated band member does not become a drummer just because the band has one."
+    },
+    {
+      "id": "authored-keyboard-instruments",
+      "prompt": "Name a musical instrument with a keyboard.",
+      "family": "music",
+      "group": "authored-whole-concept",
+      "answerCount": 4631,
+      "scope": "Recognized keyboard-instrument types and documented named keyboard instruments or models count. Keys and buttons form the musical playing interface; having ordinary valves or attaching an external controller does not automatically qualify another instrument."
+    },
+    {
+      "id": "authored-named-airports",
+      "prompt": "Name a real airport or airfield.",
+      "family": "world",
+      "group": "authored-whole-concept",
+      "answerCount": 85415,
+      "scope": "Named airports and airfields worldwide count, including historical facilities. An airport code must be an actual documented code or name; invented initials do not count."
+    },
+    {
+      "id": "authored-castles-palaces",
+      "prompt": "Name a real castle or palace.",
+      "family": "world",
+      "group": "authored-whole-concept",
+      "answerCount": 43400,
+      "scope": "Named castles, palaces and châteaux worldwide count, including historical or ruined ones and real decorative castle attractions. A real theme-park castle based on fiction counts; a castle that exists only in a story and a generic type of building do not count."
+    },
+    {
+      "id": "authored-named-canals",
+      "prompt": "Name a real named canal.",
+      "family": "world",
+      "group": "authored-whole-concept",
+      "answerCount": 39905,
+      "scope": "Named canals, shipping channels and recognized artificial waterways count worldwide, including disused historical ones. Natural rivers are not automatically canals."
+    },
+    {
+      "id": "authored-archaeological-sites",
+      "prompt": "Name an archaeological site or ancient ruin.",
+      "family": "world",
+      "group": "authored-whole-concept",
+      "answerCount": 226252,
+      "scope": "Named archaeological sites, ancient ruins and recognized archaeological complexes count worldwide, including settlements and individual excavated monuments. Entire modern countries or generic objects are not named sites."
+    },
+    {
+      "id": "authored-named-mausoleums",
+      "prompt": "Name a real tomb, mausoleum or cemetery.",
+      "family": "world",
+      "group": "authored-whole-concept",
+      "answerCount": 240569,
+      "scope": "Named tombs, mausoleums, cemeteries and recognized named burial complexes count, including historical sites. A person or a generic grave type alone does not name a burial site."
+    },
+    {
+      "id": "authored-named-waterfalls",
+      "prompt": "Name a real waterfall.",
+      "family": "world",
+      "group": "authored-whole-concept",
+      "answerCount": 11701,
+      "scope": "Named waterfalls and recognized waterfall complexes count worldwide. Multiple real falls with the same name share an answer identity. Fictional falls and generic words such as waterfall do not count."
+    },
+    {
+      "id": "authored-formula-one-drivers",
+      "prompt": "Name a driver who has competed in Formula One.",
+      "family": "sports",
+      "group": "authored-whole-roster",
+      "answerCount": 881,
+      "scope": "Drivers in the complete Jolpica/Ergast Formula One World Championship driver inventory count, including historical entrants and the Indianapolis 500 when it was part of that championship. A real surname can identify a valid driver; invented initials and racing three-letter codes do not count as names."
+    },
+    {
+      "id": "authored-fictional-detectives",
+      "prompt": "Name a fictional detective.",
+      "family": "culture",
+      "group": "authored-whole-concept",
+      "answerCount": 739,
+      "scope": "Named fictional professional detectives and amateur sleuths count across books, comics, film, TV and games. A character must actually investigate cases; merely appearing in a mystery does not qualify."
+    },
+    {
+      "id": "authored-fictional-pirates",
+      "prompt": "Name a fictional pirate.",
+      "family": "culture",
+      "group": "authored-whole-concept",
+      "answerCount": 581,
+      "scope": "Named fictional sea, air and space pirates count, including characters who were pirates earlier in their story. A smuggler, sailor or marine is not automatically a pirate."
+    },
+    {
+      "id": "authored-fictional-princesses",
+      "prompt": "Name a princess from fiction.",
+      "family": "culture",
+      "group": "authored-whole-concept",
+      "answerCount": 193,
+      "scope": "Characters who are, were, or are explicitly known as princesses count, along with the official Disney Princess lineup. A character does not qualify simply by being female, wearing a crown or appearing in a Disney movie."
+    },
+    {
+      "id": "authored-named-fictional-vehicles",
+      "prompt": "Name a named vehicle from fiction.",
+      "family": "culture",
+      "group": "authored-whole-concept",
+      "answerCount": 1087,
+      "scope": "Named fictional vehicles, ships and vehicle models count across film, TV, books, comics and games, including living vehicle characters. Generic words such as car or spaceship, and individual parts that are not vehicles, do not count."
+    },
+    {
+      "id": "authored-fictional-schools",
+      "prompt": "Name a school or college from fiction.",
+      "family": "culture",
+      "group": "authored-whole-concept",
+      "answerCount": 180,
+      "scope": "Named fictional schools, colleges, universities and training academies count across books, TV, film, comics and games. A real school does not qualify just because a fictional story mentions it."
+    },
+    {
+      "id": "authored-heist-films",
+      "prompt": "Name a heist movie.",
+      "family": "culture",
+      "group": "authored-whole-concept",
+      "answerCount": 577,
+      "scope": "Films built around a robbery, theft, con or organized caper count, including comedies, animated movies and shorts. Television series, directors and a film with only an unrelated passing theft do not automatically count."
+    },
+    {
+      "id": "authored-time-travel-films",
+      "prompt": "Name a movie involving time travel or a time loop.",
+      "family": "culture",
+      "group": "authored-whole-concept",
+      "answerCount": 366,
+      "scope": "Films in which characters travel through time or experience a repeating time loop count, including animated movies and shorts. Ordinary flashbacks, dreams about the past and a futuristic setting alone do not count."
+    },
+    {
+      "id": "authored-owl-kinds",
+      "prompt": "Name a kind of owl.",
+      "family": "nature",
+      "group": "authored-whole-taxonomic-group",
+      "answerCount": 256,
+      "scope": "Owl species and established named groups count, including recently extinct species in the source taxonomy. Common names and scientific names count. An owlet-nightjar or a nighthawk is not an owl."
+    },
+    {
+      "id": "authored-parrot-kinds",
+      "prompt": "Name a kind of parrot.",
+      "family": "nature",
+      "group": "authored-whole-taxonomic-group",
+      "answerCount": 421,
+      "scope": "Parrot species and established named groups count, including recently extinct species in the source taxonomy. Common and scientific names count. Pet colour mutations share their species identity; a bird is not a parrot just because its name contains that word."
+    },
+    {
+      "id": "authored-penguin-kinds",
+      "prompt": "Name a kind of penguin.",
+      "family": "nature",
+      "group": "authored-whole-taxonomic-group",
+      "answerCount": 20,
+      "scope": "Species in the eBird/Clements penguin order and established common group names count. English or scientific names count. Puffins and auks are different kinds of bird."
+    },
+    {
+      "id": "authored-bat-kinds",
+      "prompt": "Name a kind of bat.",
+      "family": "nature",
+      "group": "authored-whole-taxonomic-group",
+      "answerCount": 1523,
+      "scope": "Living and recently extinct species in the Mammal Diversity Database, plus established named bat groups, count. Common names and documented scientific names count. A flying fox is a bat; a flying squirrel is not. Prehistoric fossil-only species are outside this current-species inventory."
+    },
+    {
+      "id": "authored-rock-types",
+      "prompt": "Name a type of rock.",
+      "family": "science",
+      "group": "authored-whole-concept",
+      "answerCount": 193,
+      "scope": "Recognized geological rock names, rock families and established natural stone varieties count. Common and scientific rock names are accepted. Individual minerals, chemical elements, whole mountains and manufactured building products are not rock types."
+    },
+    {
+      "id": "authored-cheese-types",
+      "prompt": "Name a type or named product of dairy cheese.",
+      "family": "food",
+      "group": "authored-whole-concept",
+      "answerCount": 2211,
+      "scope": "Named dairy cheeses, traditional cheese families and named processed-cheese products count. Different names for the same cheese share one answer. A dairy animal, plain milk, a manufacturer with no named cheese product, and a complete meal merely containing cheese do not count."
+    },
+    {
+      "id": "authored-flatbread-types",
+      "prompt": "Name a kind of flatbread.",
+      "family": "food",
+      "group": "authored-whole-concept",
+      "answerCount": 141,
+      "scope": "Recognized flatbread types, named regional breads and flatbread dishes count, including leavened and unleavened types. Ordinary sandwich loaves, toppings and ingredients alone do not count."
+    },
+    {
+      "id": "authored-pancake-dishes",
+      "prompt": "Name a pancake style or a named pancake dish.",
+      "family": "food",
+      "group": "authored-whole-concept",
+      "answerCount": 141,
+      "scope": "Recognized sweet and savory pancake styles and named pancake dishes count, including potato pancakes and international griddle-batter breads. A topping alone, an unrelated pastry, or simply the category word pancake does not count."
+    },
+    {
+      "id": "authored-stew-dishes",
+      "prompt": "Name a stew or a named stew dish.",
+      "family": "food",
+      "group": "authored-whole-concept",
+      "answerCount": 252,
+      "scope": "Named stews, braised one-pot dishes and recognized ingredient-based stew styles count. Soups that are also conventionally served as stews count; a raw ingredient, drink or dry standalone food does not."
+    },
+    {
+      "id": "authored-web-browsers",
+      "prompt": "Name a web browser.",
+      "family": "science",
+      "group": "authored-whole-concept",
+      "answerCount": 163,
+      "scope": "Actual web-browser products and families count, including historical, mobile and text browsers. A search engine, rendering engine, extension, website or operating system alone is not a browser."
+    },
+    {
+      "id": "authored-cloud-kinds",
+      "prompt": "Name a cloud type, form or recognized cloud feature.",
+      "family": "science",
+      "group": "authored-whole-concept",
+      "answerCount": 72,
+      "scope": "Cloud genera, species, varieties and recognized cloud features count, along with established common names such as lenticular cloud, contrail and fog at ground level. Weather events, precipitation and a blue sky alone do not count."
+    },
+    {
+      "id": "authored-taylor-swift-songs",
+      "prompt": "Name a song by Taylor Swift.",
+      "family": "music",
+      "group": "authored-whole-artist-catalog",
+      "answerCount": 290,
+      "scope": "Released recordings credited to Taylor Swift count, including collaborations, features and released covers. Writing or production credit alone does not count. Different versions share one answer."
+    },
+    {
+      "id": "authored-the-weeknd-songs",
+      "prompt": "Name a song by The Weeknd.",
+      "family": "music",
+      "group": "authored-whole-artist-catalog",
+      "answerCount": 238,
+      "scope": "Released recordings credited to The Weeknd count, including collaborations, features and released covers. Writing or production credit alone does not count. Different versions share one answer."
+    },
+    {
+      "id": "authored-kendrick-lamar-songs",
+      "prompt": "Name a song by Kendrick Lamar.",
+      "family": "music",
+      "group": "authored-whole-artist-catalog",
+      "answerCount": 183,
+      "scope": "Released recordings credited to Kendrick Lamar count, including collaborations, features and released covers. Writing or production credit alone does not count. Different versions share one answer."
+    },
+    {
+      "id": "authored-beyonce-songs",
+      "prompt": "Name a song by Beyoncé.",
+      "family": "music",
+      "group": "authored-whole-artist-catalog",
+      "answerCount": 261,
+      "scope": "Released recordings credited to Beyoncé count, including collaborations, features and released covers. Writing or production credit alone does not count. Different versions share one answer."
+    },
+    {
+      "id": "authored-rihanna-songs",
+      "prompt": "Name a song by Rihanna.",
+      "family": "music",
+      "group": "authored-whole-artist-catalog",
+      "answerCount": 163,
+      "scope": "Released recordings credited to Rihanna count, including collaborations, features and released covers. Writing or production credit alone does not count. Different versions share one answer."
+    },
+    {
+      "id": "authored-ariana-grande-songs",
+      "prompt": "Name a song by Ariana Grande.",
+      "family": "music",
+      "group": "authored-whole-artist-catalog",
+      "answerCount": 198,
+      "scope": "Released recordings credited to Ariana Grande count, including collaborations, features and released covers. Writing or production credit alone does not count. Different versions share one answer."
+    },
+    {
+      "id": "authored-bruno-mars-songs",
+      "prompt": "Name a song by Bruno Mars.",
+      "family": "music",
+      "group": "authored-whole-artist-catalog",
+      "answerCount": 76,
+      "scope": "Released recordings credited to Bruno Mars count, including collaborations, features and released covers. Writing or production credit alone does not count. Different versions share one answer."
+    },
+    {
+      "id": "authored-dua-lipa-songs",
+      "prompt": "Name a song by Dua Lipa.",
+      "family": "music",
+      "group": "authored-whole-artist-catalog",
+      "answerCount": 83,
+      "scope": "Released recordings credited to Dua Lipa count, including collaborations, features and released covers. Writing or production credit alone does not count. Different versions share one answer."
+    },
+    {
+      "id": "authored-lady-gaga-songs",
+      "prompt": "Name a song by Lady Gaga.",
+      "family": "music",
+      "group": "authored-whole-artist-catalog",
+      "answerCount": 190,
+      "scope": "Released recordings credited to Lady Gaga count, including collaborations, features and released covers. Writing or production credit alone does not count. Different versions share one answer."
+    },
+    {
+      "id": "authored-billie-eilish-songs",
+      "prompt": "Name a song by Billie Eilish.",
+      "family": "music",
+      "group": "authored-whole-artist-catalog",
+      "answerCount": 65,
+      "scope": "Released recordings credited to Billie Eilish count, including collaborations, features and released covers. Writing or production credit alone does not count. Different versions share one answer."
+    },
+    {
+      "id": "authored-olivia-rodrigo-songs",
+      "prompt": "Name a song by Olivia Rodrigo.",
+      "family": "music",
+      "group": "authored-whole-artist-catalog",
+      "answerCount": 67,
+      "scope": "Released recordings credited to Olivia Rodrigo count, including collaborations, features and released covers. Writing or production credit alone does not count. Different versions share one answer."
+    },
+    {
+      "id": "authored-sabrina-carpenter-songs",
+      "prompt": "Name a song by Sabrina Carpenter.",
+      "family": "music",
+      "group": "authored-whole-artist-catalog",
+      "answerCount": 122,
+      "scope": "Released recordings credited to Sabrina Carpenter count, including collaborations, features and released covers. Writing or production credit alone does not count. Different versions share one answer."
+    },
+    {
+      "id": "authored-ed-sheeran-songs",
+      "prompt": "Name a song by Ed Sheeran.",
+      "family": "music",
+      "group": "authored-whole-artist-catalog",
+      "answerCount": 182,
+      "scope": "Released recordings credited to Ed Sheeran count, including collaborations, features and released covers. Writing or production credit alone does not count. Different versions share one answer."
+    },
+    {
+      "id": "authored-sza-songs",
+      "prompt": "Name a song by SZA.",
+      "family": "music",
+      "group": "authored-whole-artist-catalog",
+      "answerCount": 152,
+      "scope": "Released recordings credited to SZA count, including collaborations, features and released covers. Writing or production credit alone does not count. Different versions share one answer."
+    },
+    {
+      "id": "authored-coldplay-songs",
+      "prompt": "Name a song by Coldplay.",
+      "family": "music",
+      "group": "authored-whole-artist-catalog",
+      "answerCount": 200,
+      "scope": "Released recordings credited to Coldplay count, including collaborations, features and released covers. Writing or production credit alone does not count. Different versions share one answer."
+    },
+    {
+      "id": "authored-imagine-dragons-songs",
+      "prompt": "Name a song by Imagine Dragons.",
+      "family": "music",
+      "group": "authored-whole-artist-catalog",
+      "answerCount": 166,
+      "scope": "Released recordings credited to Imagine Dragons count, including collaborations, features and released covers. Writing or production credit alone does not count. Different versions share one answer."
+    },
+    {
+      "id": "authored-maroon-5-songs",
+      "prompt": "Name a song by Maroon 5.",
+      "family": "music",
+      "group": "authored-whole-artist-catalog",
+      "answerCount": 140,
+      "scope": "Released recordings credited to Maroon 5 count, including collaborations, features and released covers. Writing or production credit alone does not count. Different versions share one answer. The same band's earlier releases as Kara's Flowers also count; solo-member features do not."
+    },
+    {
+      "id": "authored-queen-songs",
+      "prompt": "Name a song by Queen.",
+      "family": "music",
+      "group": "authored-whole-artist-catalog",
+      "answerCount": 207,
+      "scope": "Released recordings credited to Queen count, including collaborations, features and released covers. Writing or production credit alone does not count. Different versions share one answer."
+    },
+    {
+      "id": "authored-the-beatles-songs",
+      "prompt": "Name a song by The Beatles.",
+      "family": "music",
+      "group": "authored-whole-artist-catalog",
+      "answerCount": 374,
+      "scope": "Released recordings credited to The Beatles count, including collaborations, features and released covers. Writing or production credit alone does not count. Different versions share one answer."
+    },
+    {
+      "id": "authored-green-day-songs",
+      "prompt": "Name a song by Green Day.",
+      "family": "music",
+      "group": "authored-whole-artist-catalog",
+      "answerCount": 258,
+      "scope": "Released recordings credited to Green Day count, including collaborations, features and released covers. Writing or production credit alone does not count. Different versions share one answer."
+    },
+    {
+      "id": "authored-linkin-park-songs",
+      "prompt": "Name a song by Linkin Park.",
+      "family": "music",
+      "group": "authored-whole-artist-catalog",
+      "answerCount": 289,
+      "scope": "Released recordings credited to Linkin Park count, including collaborations, features and released covers. Writing or production credit alone does not count. Different versions share one answer. Released Xero and Hybrid Theory recordings from the same band also count; fan-contest songs do not."
+    },
+    {
+      "id": "authored-nirvana-songs",
+      "prompt": "Name a song by Nirvana.",
+      "family": "music",
+      "group": "authored-whole-artist-catalog",
+      "answerCount": 100,
+      "scope": "Released recordings credited to Nirvana count, including collaborations, features and released covers. Writing or production credit alone does not count. Different versions share one answer."
+    },
+    {
+      "id": "authored-metallica-songs",
+      "prompt": "Name a song by Metallica.",
+      "family": "music",
+      "group": "authored-whole-artist-catalog",
+      "answerCount": 176,
+      "scope": "Released recordings credited to Metallica count, including collaborations, features and released covers. Writing or production credit alone does not count. Different versions share one answer."
+    },
+    {
+      "id": "authored-foo-fighters-songs",
+      "prompt": "Name a song by Foo Fighters.",
+      "family": "music",
+      "group": "authored-whole-artist-catalog",
+      "answerCount": 243,
+      "scope": "Released recordings credited to Foo Fighters count, including collaborations, features and released covers. Writing or production credit alone does not count. Different versions share one answer."
+    },
+    {
+      "id": "authored-red-hot-chili-peppers-songs",
+      "prompt": "Name a song by Red Hot Chili Peppers.",
+      "family": "music",
+      "group": "authored-whole-artist-catalog",
+      "answerCount": 299,
+      "scope": "Released recordings credited to Red Hot Chili Peppers count, including collaborations, features and released covers. Writing or production credit alone does not count. Different versions share one answer."
+    },
+    {
+      "id": "authored-twenty-one-pilots-songs",
+      "prompt": "Name a song by Twenty One Pilots.",
+      "family": "music",
+      "group": "authored-whole-artist-catalog",
+      "answerCount": 112,
+      "scope": "Released recordings credited to Twenty One Pilots count, including collaborations, features and released covers. Writing or production credit alone does not count. Different versions share one answer."
+    },
+    {
+      "id": "authored-atlanta-hawks-players",
+      "prompt": "Name a player who has played for the Atlanta Hawks.",
+      "family": "sports",
+      "group": "authored-whole-franchise-roster",
+      "answerCount": 626,
+      "scope": "At least one first-team NBA, BAA or ABA game for this franchise counts, past or present. Coaches, draft rights and preseason-only appearances do not. Earlier NBA seasons as the Tri-Cities Blackhawks, Milwaukee Hawks and St. Louis Hawks count."
+    },
+    {
+      "id": "authored-boston-celtics-players",
+      "prompt": "Name a player who has played for the Boston Celtics.",
+      "family": "sports",
+      "group": "authored-whole-franchise-roster",
+      "answerCount": 529,
+      "scope": "At least one first-team NBA, BAA or ABA game for this franchise counts, past or present. Coaches, draft rights and preseason-only appearances do not."
+    },
+    {
+      "id": "authored-brooklyn-nets-players",
+      "prompt": "Name a player who has played for the Brooklyn Nets.",
+      "family": "sports",
+      "group": "authored-whole-franchise-roster",
+      "answerCount": 578,
+      "scope": "At least one first-team NBA, BAA or ABA game for this franchise counts, past or present. Coaches, draft rights and preseason-only appearances do not. The same franchise as the New Jersey Nets, New York Nets and New York Americans counts, including ABA games."
+    },
+    {
+      "id": "authored-charlotte-hornets-players",
+      "prompt": "Name a player who has played for the Charlotte Hornets.",
+      "family": "sports",
+      "group": "authored-whole-franchise-roster",
+      "answerCount": 325,
+      "scope": "At least one first-team NBA, BAA or ABA game for this franchise counts, past or present. Coaches, draft rights and preseason-only appearances do not. Charlotte Hornets history from 1988–2002 and 2014 onward, and Charlotte Bobcats history from 2004–2014 count. The New Orleans franchise is separate."
+    },
+    {
+      "id": "authored-chicago-bulls-players",
+      "prompt": "Name a player who has played for the Chicago Bulls.",
+      "family": "sports",
+      "group": "authored-whole-franchise-roster",
+      "answerCount": 438,
+      "scope": "At least one first-team NBA, BAA or ABA game for this franchise counts, past or present. Coaches, draft rights and preseason-only appearances do not."
+    },
+    {
+      "id": "authored-cleveland-cavaliers-players",
+      "prompt": "Name a player who has played for the Cleveland Cavaliers.",
+      "family": "sports",
+      "group": "authored-whole-franchise-roster",
+      "answerCount": 468,
+      "scope": "At least one first-team NBA, BAA or ABA game for this franchise counts, past or present. Coaches, draft rights and preseason-only appearances do not."
+    },
+    {
+      "id": "authored-dallas-mavericks-players",
+      "prompt": "Name a player who has played for the Dallas Mavericks.",
+      "family": "sports",
+      "group": "authored-whole-franchise-roster",
+      "answerCount": 338,
+      "scope": "At least one first-team NBA, BAA or ABA game for this franchise counts, past or present. Coaches, draft rights and preseason-only appearances do not."
+    },
+    {
+      "id": "authored-denver-nuggets-players",
+      "prompt": "Name a player who has played for the Denver Nuggets.",
+      "family": "sports",
+      "group": "authored-whole-franchise-roster",
+      "answerCount": 438,
+      "scope": "At least one first-team NBA, BAA or ABA game for this franchise counts, past or present. Coaches, draft rights and preseason-only appearances do not. The same ABA franchise as the Denver Rockets also counts."
+    },
+    {
+      "id": "authored-detroit-pistons-players",
+      "prompt": "Name a player who has played for the Detroit Pistons.",
+      "family": "sports",
+      "group": "authored-whole-franchise-roster",
+      "answerCount": 579,
+      "scope": "At least one first-team NBA, BAA or ABA game for this franchise counts, past or present. Coaches, draft rights and preseason-only appearances do not. NBA/BAA seasons as the Fort Wayne Pistons also count."
+    },
+    {
+      "id": "authored-golden-state-warriors-players",
+      "prompt": "Name a player who has played for the Golden State Warriors.",
+      "family": "sports",
+      "group": "authored-whole-franchise-roster",
+      "answerCount": 576,
+      "scope": "At least one first-team NBA, BAA or ABA game for this franchise counts, past or present. Coaches, draft rights and preseason-only appearances do not. Philadelphia Warriors and San Francisco Warriors seasons also count."
+    },
+    {
+      "id": "authored-houston-rockets-players",
+      "prompt": "Name a player who has played for the Houston Rockets.",
+      "family": "sports",
+      "group": "authored-whole-franchise-roster",
+      "answerCount": 445,
+      "scope": "At least one first-team NBA, BAA or ABA game for this franchise counts, past or present. Coaches, draft rights and preseason-only appearances do not."
+    },
+    {
+      "id": "authored-indiana-pacers-players",
+      "prompt": "Name a player who has played for the Indiana Pacers.",
+      "family": "sports",
+      "group": "authored-whole-franchise-roster",
+      "answerCount": 402,
+      "scope": "At least one first-team NBA, BAA or ABA game for this franchise counts, past or present. Coaches, draft rights and preseason-only appearances do not."
+    },
+    {
+      "id": "authored-los-angeles-clippers-players",
+      "prompt": "Name a player who has played for the Los Angeles Clippers.",
+      "family": "sports",
+      "group": "authored-whole-franchise-roster",
+      "answerCount": 513,
+      "scope": "At least one first-team NBA, BAA or ABA game for this franchise counts, past or present. Coaches, draft rights and preseason-only appearances do not. Buffalo Braves and San Diego Clippers seasons also count."
+    },
+    {
+      "id": "authored-los-angeles-lakers-players",
+      "prompt": "Name a player who has played for the Los Angeles Lakers.",
+      "family": "sports",
+      "group": "authored-whole-franchise-roster",
+      "answerCount": 516,
+      "scope": "At least one first-team NBA, BAA or ABA game for this franchise counts, past or present. Coaches, draft rights and preseason-only appearances do not. Minneapolis Lakers NBA/BAA seasons also count; NBL-only appearances do not."
+    },
+    {
+      "id": "authored-memphis-grizzlies-players",
+      "prompt": "Name a player who has played for the Memphis Grizzlies.",
+      "family": "sports",
+      "group": "authored-whole-franchise-roster",
+      "answerCount": 322,
+      "scope": "At least one first-team NBA, BAA or ABA game for this franchise counts, past or present. Coaches, draft rights and preseason-only appearances do not. Vancouver Grizzlies seasons also count."
+    },
+    {
+      "id": "authored-miami-heat-players",
+      "prompt": "Name a player who has played for the Miami Heat.",
+      "family": "sports",
+      "group": "authored-whole-franchise-roster",
+      "answerCount": 305,
+      "scope": "At least one first-team NBA, BAA or ABA game for this franchise counts, past or present. Coaches, draft rights and preseason-only appearances do not."
+    },
+    {
+      "id": "authored-milwaukee-bucks-players",
+      "prompt": "Name a player who has played for the Milwaukee Bucks.",
+      "family": "sports",
+      "group": "authored-whole-franchise-roster",
+      "answerCount": 479,
+      "scope": "At least one first-team NBA, BAA or ABA game for this franchise counts, past or present. Coaches, draft rights and preseason-only appearances do not."
+    },
+    {
+      "id": "authored-minnesota-timberwolves-players",
+      "prompt": "Name a player who has played for the Minnesota Timberwolves.",
+      "family": "sports",
+      "group": "authored-whole-franchise-roster",
+      "answerCount": 310,
+      "scope": "At least one first-team NBA, BAA or ABA game for this franchise counts, past or present. Coaches, draft rights and preseason-only appearances do not."
+    },
+    {
+      "id": "authored-new-orleans-pelicans-players",
+      "prompt": "Name a player who has played for the New Orleans Pelicans.",
+      "family": "sports",
+      "group": "authored-whole-franchise-roster",
+      "answerCount": 258,
+      "scope": "At least one first-team NBA, BAA or ABA game for this franchise counts, past or present. Coaches, draft rights and preseason-only appearances do not. New Orleans Hornets and New Orleans/Oklahoma City Hornets history counts. The earlier Charlotte Hornets history belongs to Charlotte."
+    },
+    {
+      "id": "authored-new-york-knicks-players",
+      "prompt": "Name a player who has played for the New York Knicks.",
+      "family": "sports",
+      "group": "authored-whole-franchise-roster",
+      "answerCount": 558,
+      "scope": "At least one first-team NBA, BAA or ABA game for this franchise counts, past or present. Coaches, draft rights and preseason-only appearances do not."
+    },
+    {
+      "id": "authored-oklahoma-city-thunder-players",
+      "prompt": "Name a player who has played for the Thunder or Seattle SuperSonics.",
+      "family": "sports",
+      "group": "authored-whole-franchise-roster",
+      "answerCount": 406,
+      "scope": "At least one first-team NBA, BAA or ABA game for this franchise counts, past or present. Coaches, draft rights and preseason-only appearances do not. Seattle SuperSonics history is included in this franchise question; it is not a separate extra question."
+    },
+    {
+      "id": "authored-orlando-magic-players",
+      "prompt": "Name a player who has played for the Orlando Magic.",
+      "family": "sports",
+      "group": "authored-whole-franchise-roster",
+      "answerCount": 297,
+      "scope": "At least one first-team NBA, BAA or ABA game for this franchise counts, past or present. Coaches, draft rights and preseason-only appearances do not."
+    },
+    {
+      "id": "authored-philadelphia-76ers-players",
+      "prompt": "Name a player who has played for the Philadelphia 76ers.",
+      "family": "sports",
+      "group": "authored-whole-franchise-roster",
+      "answerCount": 597,
+      "scope": "At least one first-team NBA, BAA or ABA game for this franchise counts, past or present. Coaches, draft rights and preseason-only appearances do not. Syracuse Nationals NBA seasons also count."
+    },
+    {
+      "id": "authored-phoenix-suns-players",
+      "prompt": "Name a player who has played for the Phoenix Suns.",
+      "family": "sports",
+      "group": "authored-whole-franchise-roster",
+      "answerCount": 455,
+      "scope": "At least one first-team NBA, BAA or ABA game for this franchise counts, past or present. Coaches, draft rights and preseason-only appearances do not."
+    },
+    {
+      "id": "authored-portland-trail-blazers-players",
+      "prompt": "Name a player who has played for the Portland Trail Blazers.",
+      "family": "sports",
+      "group": "authored-whole-franchise-roster",
+      "answerCount": 407,
+      "scope": "At least one first-team NBA, BAA or ABA game for this franchise counts, past or present. Coaches, draft rights and preseason-only appearances do not."
+    },
+    {
+      "id": "authored-sacramento-kings-players",
+      "prompt": "Name a player who has played for the Sacramento Kings.",
+      "family": "sports",
+      "group": "authored-whole-franchise-roster",
+      "answerCount": 567,
+      "scope": "At least one first-team NBA, BAA or ABA game for this franchise counts, past or present. Coaches, draft rights and preseason-only appearances do not. Rochester Royals, Cincinnati Royals, Kansas City-Omaha Kings and Kansas City Kings seasons also count."
+    },
+    {
+      "id": "authored-san-antonio-spurs-players",
+      "prompt": "Name a player who has played for the San Antonio Spurs.",
+      "family": "sports",
+      "group": "authored-whole-franchise-roster",
+      "answerCount": 469,
+      "scope": "At least one first-team NBA, BAA or ABA game for this franchise counts, past or present. Coaches, draft rights and preseason-only appearances do not. Dallas Chaparrals and Texas Chaparrals ABA seasons also count."
+    },
+    {
+      "id": "authored-toronto-raptors-players",
+      "prompt": "Name a player who has played for the Toronto Raptors.",
+      "family": "sports",
+      "group": "authored-whole-franchise-roster",
+      "answerCount": 308,
+      "scope": "At least one first-team NBA, BAA or ABA game for this franchise counts, past or present. Coaches, draft rights and preseason-only appearances do not."
+    },
+    {
+      "id": "authored-utah-jazz-players",
+      "prompt": "Name a player who has played for the Utah Jazz.",
+      "family": "sports",
+      "group": "authored-whole-franchise-roster",
+      "answerCount": 370,
+      "scope": "At least one first-team NBA, BAA or ABA game for this franchise counts, past or present. Coaches, draft rights and preseason-only appearances do not. New Orleans Jazz seasons also count."
+    },
+    {
+      "id": "authored-washington-wizards-players",
+      "prompt": "Name a player who has played for the Washington Wizards.",
+      "family": "sports",
+      "group": "authored-whole-franchise-roster",
+      "answerCount": 529,
+      "scope": "At least one first-team NBA, BAA or ABA game for this franchise counts, past or present. Coaches, draft rights and preseason-only appearances do not. Chicago Packers, Chicago Zephyrs, Baltimore Bullets, Capital Bullets and Washington Bullets seasons count. The unrelated earlier Baltimore Bullets club does not."
+    },
+    {
+      "id": "authored-sound-equipment",
+      "prompt": "Name an audio listening, recording or amplification device.",
+      "family": "science",
+      "group": "authored-whole-object-concept",
+      "answerCount": 54,
+      "scope": "Physical devices for listening to, picking up, recording, reproducing or amplifying audio count. Musical instruments by themselves, warning bells and noise-suppression-only devices do not."
+    },
+    {
+      "id": "authored-sports-balls",
+      "prompt": "Name a type of ball used in a sport, game or athletic training.",
+      "family": "sports",
+      "group": "authored-whole-object-concept",
+      "answerCount": 54,
+      "scope": "Named balls used in sports, games or athletic training count, including particular game-ball designs. Pucks, shuttlecocks and punching bags are not balls."
+    },
+    {
+      "id": "authored-physical-barriers",
+      "prompt": "Name a kind of physical barrier.",
+      "family": "everyday",
+      "group": "authored-whole-object-concept",
+      "answerCount": 88,
+      "scope": "Physical barriers such as walls, doors, fences, gates and protective barriers count. Figurative barriers and software do not."
+    },
+    {
+      "id": "authored-bottle-flask-kinds",
+      "prompt": "Name a type of bottle or flask.",
+      "family": "everyday",
+      "group": "authored-whole-object-concept",
+      "answerCount": 60,
+      "scope": "Recognizable kinds of bottle or flask count, including scientific flasks and named bottle sizes. A brand alone does not identify a bottle type."
+    },
+    {
+      "id": "authored-box-container-kinds",
+      "prompt": "Name a kind of box or boxed storage container.",
+      "family": "everyday",
+      "group": "authored-whole-object-concept",
+      "answerCount": 67,
+      "scope": "Types of physical box, chest, crate and boxed storage container count, including cases with a recognizable box form. Metaphorical boxes and software do not."
+    },
+    {
+      "id": "authored-chair-styles",
+      "prompt": "Name a type of chair or stool.",
+      "family": "everyday",
+      "group": "authored-whole-object-concept",
+      "answerCount": 75,
+      "scope": "Recognizable chair and seated-stool designs count, past or present. Benches, couches, named individual thrones and the person chairing a meeting do not."
+    },
+    {
+      "id": "authored-coats-jackets",
+      "prompt": "Name a style of coat or jacket.",
+      "family": "everyday",
+      "group": "authored-whole-object-concept",
+      "answerCount": 79,
+      "scope": "Named coat and jacket styles count, including workwear and historical garments. Materials alone and coats of paint do not."
+    },
+    {
+      "id": "authored-fabric-kinds",
+      "prompt": "Name a type of fabric or textile material.",
+      "family": "everyday",
+      "group": "authored-whole-object-concept",
+      "answerCount": 224,
+      "scope": "Named textile fabrics and textile materials count. Finished garments, towels, sails, loose cut pieces and metal meshes do not count merely because a dictionary groups them under cloth."
+    },
+    {
+      "id": "authored-fastener-kinds",
+      "prompt": "Name a mechanical fastener or a fastening knot.",
+      "family": "everyday",
+      "group": "authored-whole-object-concept",
+      "answerCount": 177,
+      "scope": "Mechanical fasteners and named fastening knots count. Adhesives, welding, seals that only stop leaks, fictional knots and decorative marks do not."
+    },
+    {
+      "id": "authored-headwear-kinds",
+      "prompt": "Name a type of headwear or head covering.",
+      "family": "everyday",
+      "group": "authored-whole-object-concept",
+      "answerCount": 122,
+      "scope": "Real kinds of hat, cap, helmet or other wearable head covering count, including religious and historical headwear. Fictional magical items and names of individual objects do not."
+    },
+    {
+      "id": "authored-knife-kinds",
+      "prompt": "Name a type of knife.",
+      "family": "everyday",
+      "group": "authored-whole-object-concept",
+      "answerCount": 64,
+      "scope": "Real knife styles and knife-like edged hand tools count, including kitchen, craft, hunting and surgical knives. Medical devices that only use knife metaphorically do not."
+    },
+    {
+      "id": "authored-lamp-lighting-kinds",
+      "prompt": "Name a type of lamp or lighting fixture.",
+      "family": "science",
+      "group": "authored-whole-object-concept",
+      "answerCount": 78,
+      "scope": "Real lamps, lighting fixtures and manufactured light sources count, including candles and historical lighting. Fictional individual lamps, stars and naturally glowing organisms do not."
+    },
+    {
+      "id": "authored-computer-storage-memory",
+      "prompt": "Name a type of computer memory, storage device or storage medium.",
+      "family": "science",
+      "group": "authored-whole-object-concept",
+      "answerCount": 83,
+      "scope": "Memory technologies and physical digital data-storage media or devices count, including obsolete systems. A song, movie or other recorded work is content, not storage. Online service brand names do not identify storage hardware."
+    },
+    {
+      "id": "authored-motor-vehicle-categories",
+      "prompt": "Name a category of motor vehicle.",
+      "family": "world",
+      "group": "authored-whole-object-concept",
+      "answerCount": 121,
+      "scope": "Types of self-propelled road or off-road vehicle count, with wheels, tracks or skids, including electric versions. Individual named models, rail vehicles, unpowered trailers and descriptions of condition alone do not."
+    },
+    {
+      "id": "authored-optical-equipment-kinds",
+      "prompt": "Name an optical instrument used to aid vision or examine things.",
+      "family": "science",
+      "group": "authored-whole-object-concept",
+      "answerCount": 59,
+      "scope": "Real instruments that use light to aid sight, magnify, project, examine or measure an optical image or spectrum count. Acoustic and mass-analysis instruments do not qualify merely because a source groups them near spectrometers."
+    },
+    {
+      "id": "authored-photography-equipment",
+      "prompt": "Name a piece of equipment used to take or process photographs.",
+      "family": "science",
+      "group": "authored-whole-object-concept",
+      "answerCount": 89,
+      "scope": "Physical equipment, supplies and accessories used in still photography count, including darkroom materials. A finished photograph, filmed sequence or a device used only to mark a film take does not."
+    },
+    {
+      "id": "authored-worship-building-kinds",
+      "prompt": "Name a type of building or place used for worship.",
+      "family": "world",
+      "group": "authored-whole-object-concept",
+      "answerCount": 58,
+      "scope": "Types of religious worship building or built shrine count across religions. Individual named landmarks and a minister or deity alone do not."
+    },
+    {
+      "id": "authored-paint-kinds",
+      "prompt": "Name a type of paint.",
+      "family": "culture",
+      "group": "authored-whole-object-concept",
+      "answerCount": 62,
+      "scope": "Types of paint defined by medium, finish or purpose count, including artist and building paints. Color names alone, a layer of paint and digital painting software do not."
+    },
+    {
+      "id": "authored-tower-kinds",
+      "prompt": "Name a type of tower.",
+      "family": "world",
+      "group": "authored-whole-object-concept",
+      "answerCount": 55,
+      "scope": "Types of built tower count, including towers defined by their function or structure. Individual named towers do not."
+    },
+    {
+      "id": "authored-watercraft-kinds",
+      "prompt": "Name a type of boat, ship or other watercraft.",
+      "family": "world",
+      "group": "authored-whole-object-concept",
+      "answerCount": 208,
+      "scope": "Kinds of boat, ship, raft or other vessel designed to travel on water or underwater count, past or present. Individual named vessels, wrecks, ice-only vehicles and descriptors of condition alone do not."
+    },
+    {
+      "id": "authored-writing-drawing-tools",
+      "prompt": "Name a tool used for writing or drawing.",
+      "family": "everyday",
+      "group": "authored-whole-object-concept",
+      "answerCount": 37,
+      "scope": "Pens, pencils, crayons and other physical implements used to make written or drawn marks count. Paper, erasers alone, ink alone and software applications do not."
+    },
+    {
+      "id": "authored-cleaning-equipment-kinds",
+      "prompt": "Name a tool or machine used for cleaning.",
+      "family": "everyday",
+      "group": "authored-whole-object-concept",
+      "answerCount": 42,
+      "scope": "Recognized cleaning tools and machines count, including hand tools, wiping materials and powered cleaning equipment. A brand name or chemical cleaning ingredient alone is not a tool."
+    },
+    {
+      "id": "authored-makeup-product-kinds",
+      "prompt": "Name a type of makeup or decorative cosmetic product.",
+      "family": "everyday",
+      "group": "authored-whole-object-concept",
+      "answerCount": 41,
+      "scope": "Recognized decorative makeup types, nail cosmetics, skin-tone products, cosmetic body color and cosmetic application adhesives count. A brand alone, application tool, ordinary cleansing product or hair-removal treatment does not count."
+    },
+    {
+      "id": "authored-adhesive-kinds",
+      "prompt": "Name a glue, adhesive or adhesive brand.",
+      "family": "everyday",
+      "group": "authored-whole-object-concept",
+      "answerCount": 80,
+      "scope": "Recognized glue and adhesive substances, technical types, product forms and established adhesive brands/products count, including tapes and reusable mounting putties. An unrelated fastener, an unrelated brand or an ordinary sticky food alone does not count."
+    },
+    {
+      "id": "authored-toy-kinds",
+      "prompt": "Name a type of toy.",
+      "family": "everyday",
+      "group": "authored-whole-object-concept",
+      "answerCount": 90,
+      "scope": "Recognized toy types and established named kinds of plaything count. Named branded toy kinds such as LEGO bricks, Barbie dolls or Play-Doh also count; a company name alone, a fictional character alone or an unrelated household object is not a toy type."
+    },
+    {
+      "id": "authored-timepiece-kinds",
+      "prompt": "Name a type of clock, watch or timekeeping device.",
+      "family": "everyday",
+      "group": "authored-whole-object-concept",
+      "answerCount": 53,
+      "scope": "Physical timekeeping devices and recognized clock/watch types count, including historic sundials, hourglasses and water clocks. Calendar systems, units of time and software applications alone do not count."
+    },
+    {
+      "id": "authored-computer-device-kinds",
+      "prompt": "Name a kind of computer or computing device.",
+      "family": "science",
+      "group": "authored-whole-object-concept",
+      "answerCount": 52,
+      "scope": "Recognized computer types, architectures and physical computing devices count, including programmable and specialized calculators and historical machines. Computer brands alone, operating systems, standalone storage devices and software applications are outside this hardware-type question."
+    },
+    {
+      "id": "authored-engine-kinds",
+      "prompt": "Name a type of mechanical engine or motor.",
+      "family": "science",
+      "group": "authored-whole-object-concept",
+      "answerCount": 67,
+      "scope": "Recognized mechanical prime movers and engine or motor types count, including combustion engines, turbines, rocket engines and electric, hydraulic or pneumatic motors. Electric generators, software engines and whole vehicles do not count."
+    },
+    {
+      "id": "authored-flat-geometric-shapes",
+      "prompt": "Name a closed, flat geometric shape.",
+      "family": "science",
+      "group": "authored-whole-object-concept",
+      "answerCount": 57,
+      "scope": "Named two-dimensional shapes and recognized shape classes that enclose a planar area count. Specific polygon types, curves used as closed outlines and compound regions count. Three-dimensional solids, open line segments and unnamed drawings do not count."
+    },
+    {
+      "id": "authored-medical-instrument-kinds",
+      "prompt": "Name a medical instrument or piece of medical equipment.",
+      "family": "science",
+      "group": "authored-whole-object-concept",
+      "answerCount": 83,
+      "scope": "Recognized physical instruments and equipment used for examination, diagnosis, monitoring or treatment count. Medical specialties, diseases, drugs and medical procedures alone do not count. This is an equipment-name question, not treatment advice."
+    },
+    {
+      "id": "authored-printing-techniques",
+      "prompt": "Name a printmaking or printing technique.",
+      "family": "culture",
+      "group": "authored-whole-object-concept",
+      "answerCount": 51,
+      "scope": "Recognized methods of producing printed images or text and artistic printmaking methods count. Named additive manufacturing/3D printing methods also count. A printer brand, image subject or unrelated craft alone is not a technique."
+    },
+    {
+      "id": "authored-sculpture-kinds",
+      "prompt": "Name a type or recognized form of sculpture.",
+      "family": "culture",
+      "group": "authored-whole-object-concept",
+      "answerCount": 63,
+      "scope": "Recognized sculpture forms, sculpting techniques and named sculptural object/material types count. Material words can name an established sculptural type, such as bronze, marble, ice or sand sculpture. Individual artists, individual artworks and generic unrelated objects do not count."
+    },
+    {
+      "id": "authored-poem-forms",
+      "prompt": "Name a type or form of poem.",
+      "family": "culture",
+      "group": "authored-whole-object-concept",
+      "answerCount": 68,
+      "scope": "Recognized named poem and verse forms count, including complete short forms and established stanza/verse forms used as poems. A subject, individual poet, book title or meter alone does not automatically name a poem form."
+    },
+    {
+      "id": "authored-art-movements-styles",
+      "prompt": "Name an art movement or recognized visual-art style.",
+      "family": "culture",
+      "group": "authored-whole-object-concept",
+      "answerCount": 237,
+      "scope": "Recognized visual-art movements, schools and historical styles count, including architectural and moving-image art movements. An individual artist, work, generic medium or music genre alone does not count."
+    },
+    {
+      "id": "authored-flower-kinds",
+      "prompt": "Name a type of flower.",
+      "family": "nature",
+      "group": "authored-whole-object-concept",
+      "answerCount": 523,
+      "scope": "Recognized common flower types and flowering plants grown for their blooms count, including named horticultural groups and documented varieties. Materials merely named after flowers, artificial flower products and unrelated decorative objects do not count."
+    },
+    {
+      "id": "authored-wild-cat-kinds",
+      "prompt": "Name a kind of wild cat.",
+      "family": "nature",
+      "group": "authored-whole-taxonomic-group",
+      "answerCount": 46,
+      "scope": "Living and recently extinct species in the Mammal Diversity Database, plus established named animal groups, count. English names, documented scientific names and genuine public synonyms count. Prehistoric fossil-only species are outside this current-species inventory. Domestic cat breeds and captive cross-species hybrids do not count. Named tiger and lion populations share their parent species identity."
+    },
+    {
+      "id": "authored-wild-canid-kinds",
+      "prompt": "Name a wild animal in the dog family.",
+      "family": "nature",
+      "group": "authored-whole-taxonomic-group",
+      "answerCount": 43,
+      "scope": "Living and recently extinct species in the Mammal Diversity Database, plus established named animal groups, count. English names, documented scientific names and genuine public synonyms count. Prehistoric fossil-only species are outside this current-species inventory. Domestic dog breeds do not count. Dingoes and New Guinea singing dogs count as established wild-dog groups; their disputed species rank does not make their names invalid."
+    },
+    {
+      "id": "authored-weasel-family-animals",
+      "prompt": "Name a kind of animal in the weasel family.",
+      "family": "nature",
+      "group": "authored-whole-taxonomic-group",
+      "answerCount": 77,
+      "scope": "Living and recently extinct species in the Mammal Diversity Database, plus established named animal groups, count. English names, documented scientific names and genuine public synonyms count. Prehistoric fossil-only species are outside this current-species inventory."
+    },
+    {
+      "id": "authored-deer-kinds",
+      "prompt": "Name a kind of deer.",
+      "family": "nature",
+      "group": "authored-whole-taxonomic-group",
+      "answerCount": 65,
+      "scope": "Living and recently extinct species in the Mammal Diversity Database, plus established named animal groups, count. English names, documented scientific names and genuine public synonyms count. Prehistoric fossil-only species are outside this current-species inventory."
+    },
+    {
+      "id": "authored-seal-sea-lion-walrus-kinds",
+      "prompt": "Name a kind of seal, sea lion or walrus.",
+      "family": "nature",
+      "group": "authored-whole-taxonomic-group",
+      "answerCount": 40,
+      "scope": "Living and recently extinct species in the Mammal Diversity Database, plus established named animal groups, count. English names, documented scientific names and genuine public synonyms count. Prehistoric fossil-only species are outside this current-species inventory."
+    },
+    {
+      "id": "authored-whale-dolphin-porpoise-kinds",
+      "prompt": "Name a kind of whale, dolphin or porpoise.",
+      "family": "nature",
+      "group": "authored-whole-taxonomic-group",
+      "answerCount": 107,
+      "scope": "Living and recently extinct species in the Mammal Diversity Database, plus established named animal groups, count. English names, documented scientific names and genuine public synonyms count. Prehistoric fossil-only species are outside this current-species inventory."
+    },
+    {
+      "id": "authored-beaches",
+      "prompt": "Name a real named beach.",
+      "family": "world",
+      "group": "authored-whole-concept",
+      "answerCount": 14538,
+      "scope": "Real named coastal, lake and river beaches count. A city name qualifies when it is also the established name of a beach. A whole country, waterbody or general tourist region alone does not name a beach."
+    },
+    {
+      "id": "authored-botanic-gardens",
+      "prompt": "Name a real garden, botanical garden or arboretum.",
+      "family": "world",
+      "group": "authored-whole-concept",
+      "answerCount": 2575,
+      "scope": "Real named gardens, botanical gardens, arboretums and established garden complexes or garden estates count. Fictional gardens and an ordinary private address without a named garden do not count."
+    },
+    {
+      "id": "authored-capes-headlands",
+      "prompt": "Name a real named cape or headland.",
+      "family": "world",
+      "group": "authored-whole-concept",
+      "answerCount": 95478,
+      "scope": "Real named capes, headlands and projecting points of land count, including lake headlands. A city containing the word Cape does not qualify merely because of its name."
+    },
+    {
+      "id": "authored-caves",
+      "prompt": "Name a real cave or cave system.",
+      "family": "world",
+      "group": "authored-whole-concept",
+      "answerCount": 5345,
+      "scope": "Real named caves, cave systems, rock shelters and historical rock-cut cave complexes count, including show caves. An ordinary mine or tunnel does not automatically count; fictional caves are excluded."
+    },
+    {
+      "id": "authored-dams",
+      "prompt": "Name a real named dam.",
+      "family": "world",
+      "group": "authored-whole-concept",
+      "answerCount": 57781,
+      "scope": "Named real dams and barrages count, including historical dams and named projects already under construction. A reservoir name does not automatically name its dam, and fictional dams do not count."
+    },
+    {
+      "id": "authored-named-deserts",
+      "prompt": "Name a desert.",
+      "family": "world",
+      "group": "authored-whole-concept",
+      "answerCount": 366,
+      "scope": "Real named deserts and established desert regions worldwide count, including polar deserts and places traditionally known as deserts. A hotel, village, isolated rock, beach or generic dune does not automatically become a desert."
+    },
+    {
+      "id": "authored-glaciers",
+      "prompt": "Name a real glacier or named glacial ice body.",
+      "family": "world",
+      "group": "authored-whole-concept",
+      "answerCount": 7476,
+      "scope": "Real named glaciers, ice caps, icefields and land ice sheets count. Seasonal sea ice, icebergs, mountains without a named ice body and fictional ice are outside this inventory."
+    },
+    {
+      "id": "authored-islands-archipelagos",
+      "prompt": "Name a real island or archipelago.",
+      "family": "world",
+      "group": "authored-whole-concept",
+      "answerCount": 116403,
+      "scope": "Real named islands and archipelagos worldwide count, including islands that share a country name. Continental mainlands are not treated as islands. Fictional islands do not count."
+    },
+    {
+      "id": "authored-mountains-peaks",
+      "prompt": "Name a real mountain, mountain peak or volcano.",
+      "family": "world",
+      "group": "authored-whole-concept",
+      "answerCount": 353704,
+      "scope": "Named mountains, mountain peaks and volcanoes on Earth count. Whole mountain ranges, unnamed coordinates, fictional mountains and names only found on other planets are outside this inventory."
+    },
+    {
+      "id": "authored-named-forests",
+      "prompt": "Name a real named forest or woodland.",
+      "family": "world",
+      "group": "authored-whole-concept",
+      "answerCount": 66467,
+      "scope": "Real named forests, woodlands and established forest regions count, including national forests and named historical or petrified forests. A country or a fictional woodland does not count by itself."
+    },
+    {
+      "id": "authored-reefs-atolls",
+      "prompt": "Name a real named reef or atoll.",
+      "family": "world",
+      "group": "authored-whole-concept",
+      "answerCount": 10067,
+      "scope": "Real named reefs and atolls count, including coral and rocky reefs. A plain island or river is not automatically a reef or atoll."
+    },
+    {
+      "id": "authored-reservoirs",
+      "prompt": "Name a real reservoir or artificial lake.",
+      "family": "world",
+      "group": "authored-whole-concept",
+      "answerCount": 81396,
+      "scope": "Named reservoirs and artificial lakes count, including historical and seasonally dry reservoirs. A naturally formed lake does not automatically become a reservoir just because it has a regulated outlet."
+    },
+    {
+      "id": "authored-valleys-canyons-gorges",
+      "prompt": "Name a real valley, canyon or gorge.",
+      "family": "world",
+      "group": "authored-whole-concept",
+      "answerCount": 92248,
+      "scope": "Real named valleys, canyons and gorges on Earth count. Features conventionally known by these names count, including Bryce Canyon. Fictional places and a whole country alone do not count."
+    },
+    {
+      "id": "authored-zoos",
+      "prompt": "Name a real zoo, wildlife park or public aquarium.",
+      "family": "world",
+      "group": "authored-whole-concept",
+      "answerCount": 2108,
+      "scope": "Real zoos, zoological parks, public aquariums, aviaries and established public animal collections count, past or present. Fictional parks and a generic nature reserve without a zoological collection do not count."
+    },
+    {
+      "id": "authored-duck-goose-swan-kinds",
+      "prompt": "Name a kind of duck, goose or swan.",
+      "family": "nature",
+      "group": "authored-whole-taxonomic-group",
+      "answerCount": 390,
+      "scope": "Established named groups and species in the Anatidae bird family count, including recently extinct species. Common and scientific names are accepted. Real synonyms share an identity; unrelated birds and objects named after birds do not count. Recognized domestic duck and goose breeds also count."
+    },
+    {
+      "id": "authored-woodpecker-kinds",
+      "prompt": "Name a kind of woodpecker.",
+      "family": "nature",
+      "group": "authored-whole-taxonomic-group",
+      "answerCount": 240,
+      "scope": "Established named groups and species in the Picidae bird family count, including recently extinct species. Common and scientific names are accepted. Real synonyms share an identity; unrelated birds and objects named after birds do not count."
+    },
+    {
+      "id": "authored-hummingbird-kinds",
+      "prompt": "Name a kind of hummingbird.",
+      "family": "nature",
+      "group": "authored-whole-taxonomic-group",
+      "answerCount": 374,
+      "scope": "Established named groups and species in the Trochilidae bird family count, including recently extinct species. Common and scientific names are accepted. Real synonyms share an identity; unrelated birds and objects named after birds do not count."
+    },
+    {
+      "id": "authored-gull-tern-kinds",
+      "prompt": "Name a kind of gull, tern or skimmer.",
+      "family": "nature",
+      "group": "authored-whole-taxonomic-group",
+      "answerCount": 109,
+      "scope": "Established named groups and species in the Laridae bird family count, including recently extinct species. Common and scientific names are accepted. Real synonyms share an identity; unrelated birds and objects named after birds do not count."
+    },
+    {
+      "id": "authored-swallow-martin-kinds",
+      "prompt": "Name a kind of swallow or martin.",
+      "family": "nature",
+      "group": "authored-whole-taxonomic-group",
+      "answerCount": 95,
+      "scope": "Established named groups and species in the Hirundinidae bird family count, including recently extinct species. Common and scientific names are accepted. Real synonyms share an identity; unrelated birds and objects named after birds do not count."
+    },
+    {
+      "id": "authored-heron-egret-bittern-kinds",
+      "prompt": "Name a kind of heron, egret or bittern.",
+      "family": "nature",
+      "group": "authored-whole-taxonomic-group",
+      "answerCount": 77,
+      "scope": "Established named groups and species in the Ardeidae bird family count, including recently extinct species. Common and scientific names are accepted. Real synonyms share an identity; unrelated birds and objects named after birds do not count."
+    },
+    {
+      "id": "authored-computer-languages",
+      "prompt": "Name a programming, scripting, query, markup or stylesheet language.",
+      "family": "science",
+      "group": "authored-whole-concept",
+      "answerCount": 1370,
+      "scope": "Real current and historical computer languages for programs, scripts, database queries, markup or style sheets count. Named dialects also count. Plain data-file formats, code editors and ordinary spoken languages do not count. Named XML vocabularies and document-markup formats count; an organization, generic data model, element or software platform alone is not a language."
+    },
+    {
+      "id": "authored-astronauts-cosmonauts",
+      "prompt": "Name a real astronaut or cosmonaut.",
+      "family": "science",
+      "group": "authored-whole-concept",
+      "answerCount": 687,
+      "scope": "Professional astronauts, cosmonauts and taikonauts worldwide, past or present, count, including people selected for professional astronaut training even if they never flew. Private-company professional astronauts and payload specialists count; celebrity passengers and fictional characters are not automatically astronauts."
+    },
+    {
+      "id": "authored-spongebob-characters",
+      "prompt": "Name a character from SpongeBob SquarePants.",
+      "family": "culture",
+      "group": "authored-whole-franchise-characters",
+      "answerCount": 178,
+      "scope": "Named or distinctly identified characters from SpongeBob SquarePants, its films and spin-offs count. Identified character groups also count. Voice actors, episode titles and general species alone are not character names."
+    },
+    {
+      "id": "authored-toy-story-characters",
+      "prompt": "Name a character from the Toy Story franchise.",
+      "family": "culture",
+      "group": "authored-whole-franchise-characters",
+      "answerCount": 232,
+      "scope": "Named or distinctly identified characters from Toy Story films, shorts, series and the Lightyear spin-off count. Established collective character identities such as the Aliens count. Voice actors, film titles and descriptive organizational headings do not count."
+    },
+    {
+      "id": "authored-shrek-characters",
+      "prompt": "Name a character from Shrek or Puss in Boots.",
+      "family": "culture",
+      "group": "authored-whole-franchise-characters",
+      "answerCount": 82,
+      "scope": "Named or distinctly identified characters in the Shrek films and spin-offs, including Puss in Boots films, count. Identified groups such as the Three Little Pigs count. Voice actors and generic fairy-tale species alone do not count."
+    },
+    {
+      "id": "authored-pokemon-moves",
+      "prompt": "Name a move from a Pokémon video game.",
+      "family": "gaming",
+      "group": "authored-whole-game-concept",
+      "answerCount": 919,
+      "scope": "Named moves from released Pokémon games count, including Z-Moves, Max Moves and Colosseum/XD Shadow moves. Physical/special implementations of the same named move share one answer. Generic actions and moves from fan games do not count."
+    },
+    {
+      "id": "authored-pokemon-abilities",
+      "prompt": "Name a Pokémon Ability.",
+      "family": "gaming",
+      "group": "authored-whole-game-concept",
+      "answerCount": 373,
+      "scope": "Named passive Pokémon Abilities from the core games and Pokémon Conquest count. Moves, types, held items and generic trainer actions are separate concepts."
+    },
+    {
+      "id": "authored-pokemon-items",
+      "prompt": "Name an item or trainer device from a Pokémon video game.",
+      "family": "gaming",
+      "group": "authored-whole-game-concept",
+      "answerCount": 2155,
+      "scope": "Named usable items and trainer devices from released Pokémon video games count, including medicine, Poké Balls, Berries, held/key items, TMs/TRs, evolution items, Pokédexes and trainer communication/navigation devices. Historical versions of the same item name share one answer. Pokémon, moves and Abilities are separate concepts."
+    },
+    {
+      "id": "authored-pokemon-types",
+      "prompt": "Name a Pokémon type.",
+      "family": "gaming",
+      "group": "authored-whole-game-concept",
+      "answerCount": 19,
+      "scope": "The 18 standard main-series types and the special Stellar Tera type count. The unused Bird/??? data labels and the spin-off Shadow classification are outside this explicitly main-series type list."
+    },
+    {
+      "id": "authored-tea-brands",
+      "prompt": "Name a tea brand or tea company.",
+      "family": "food",
+      "group": "authored-whole-brand-inventory",
+      "answerCount": 126,
+      "scope": "Real current or historical tea brands, tea companies and tea estates count. A tea variety, drink preparation or generic ingredient is not a company or brand. The inventory includes packaged-tea and ready-to-drink brands; owning a separate brand does not automatically make a generic parent-name guess eligible."
+    },
+    {
+      "id": "authored-color-names",
+      "prompt": "Name a color or a named shade.",
+      "family": "everyday",
+      "group": "authored-whole-color-inventory",
+      "answerCount": 1138,
+      "scope": "Recognized English color names and published named shades count, including named pigments, Crayola colors and standard CSS color keywords. Regional spellings and ordinary synonyms share one answer. Patterns are not a single color. Different standard definitions of the same ordinary name do not create extra answers."
+    },
+    {
+      "id": "authored-fungus-kinds",
+      "prompt": "Name a type of mushroom or other fungus.",
+      "family": "nature",
+      "group": "authored-whole-natural-science-concept",
+      "answerCount": 306,
+      "scope": "Recognized named fungi, mushroom kinds, molds, mildews and yeasts count. Common or scientific names are accepted. Bacteria, viruses and modern non-fungal slime/water molds do not count; diseases alone are not organism names."
+    },
+    {
+      "id": "authored-reptile-kinds",
+      "prompt": "Name a kind of reptile.",
+      "family": "nature",
+      "group": "authored-whole-natural-science-concept",
+      "answerCount": 301,
+      "scope": "Named reptile groups, species and established kinds count, living or extinct, including non-avian dinosaurs and extinct marine reptiles. Common and scientific names count. Birds and amphibians are outside this ordinary non-avian reptile scope."
+    },
+    {
+      "id": "authored-amphibian-kinds",
+      "prompt": "Name a kind of amphibian.",
+      "family": "nature",
+      "group": "authored-whole-natural-science-concept",
+      "answerCount": 113,
+      "scope": "Recognized amphibian groups and species count, living or extinct. Common names and scientific names count. Fish, reptiles, and aquatic mammals are not amphibians merely because they live in water."
+    },
+    {
+      "id": "authored-mollusk-kinds",
+      "prompt": "Name a kind of mollusc.",
+      "family": "nature",
+      "group": "authored-whole-natural-science-concept",
+      "answerCount": 103,
+      "scope": "Named mollusc groups and species count, including gastropods, bivalves, cephalopods, chitons and other mollusc lineages. Common and scientific names count. Crustaceans, echinoderms and cnidarians do not count."
+    },
+    {
+      "id": "authored-crustacean-kinds",
+      "prompt": "Name a kind of crustacean.",
+      "family": "nature",
+      "group": "authored-whole-natural-science-concept",
+      "answerCount": 84,
+      "scope": "Named crustacean groups, species and recognized common kinds count, aquatic or terrestrial. Common and scientific names count. Horseshoe crabs are chelicerates, not crustaceans; molluscs and other arthropod groups are outside this question."
+    },
+    {
+      "id": "authored-arachnid-kinds",
+      "prompt": "Name a kind of arachnid.",
+      "family": "nature",
+      "group": "authored-whole-natural-science-concept",
+      "answerCount": 69,
+      "scope": "Named arachnid groups, species and recognized common kinds count. Spiders, scorpions, ticks, mites, harvestmen and other arachnid orders are included. Insects, crustaceans and myriapods are outside this question."
+    },
+    {
+      "id": "authored-science-branches",
+      "prompt": "Name a scientific discipline or academic field.",
+      "family": "science",
+      "group": "authored-whole-natural-science-concept",
+      "answerCount": 455,
+      "scope": "Recognized sciences and academic research fields count, including mathematics, social sciences, linguistics, medicine and engineering. Subdisciplines and documented historical names count. A result, isolated technique or pseudoscientific practice is not itself an academic discipline."
+    },
+    {
+      "id": "authored-mathematics-branches",
+      "prompt": "Name a branch or field of mathematics.",
+      "family": "science",
+      "group": "authored-whole-natural-science-concept",
+      "answerCount": 98,
+      "scope": "Recognized mathematical branches, subfields and established mathematical research disciplines count. Both pure and applied mathematics count. Individual formulas, symbols, isolated theorems and unrelated school subjects do not by themselves name a branch."
+    },
+    {
+      "id": "authored-cooking-techniques",
+      "prompt": "Name a cooking or food-preparation technique.",
+      "family": "food",
+      "group": "authored-whole-familiar-food-concept",
+      "answerCount": 186,
+      "scope": "Recognized techniques for cooking, preparing, cutting, mixing, baking or preserving food count. Real public verb/noun forms share an answer. An ingredient, utensil, finished dish or desired texture alone is not a technique."
+    },
+    {
+      "id": "authored-nuts-seeds",
+      "prompt": "Name a culinary nut or a seed people eat.",
+      "family": "food",
+      "group": "authored-whole-familiar-food-concept",
+      "answerCount": 174,
+      "scope": "Culinary nuts and food seeds count, including grains, pulses, spice seeds and nuts that are not botanical nuts. Traditional foods that require preparation count. A named food seed or nut group counts; a botanical class, tree alone, finished sauce or book title does not."
+    },
+    {
+      "id": "authored-buffalo-bills-players",
+      "prompt": "Name a player who has been on the Buffalo Bills franchise roster.",
+      "family": "sports",
+      "group": "authored-whole-nfl-franchise-roster",
+      "answerCount": 1725,
+      "scope": "Past or present roster membership for this franchise through the retained 2026 snapshot counts, including its earlier names/locations and NFL, AFL or AAFC membership where applicable. Offseason and practice squads count. An unrelated former team sharing the same city or code does not. The current franchise rules and captured seasons are retained for source review."
+    },
+    {
+      "id": "authored-carolina-panthers-players",
+      "prompt": "Name a player who has been on the Carolina Panthers franchise roster.",
+      "family": "sports",
+      "group": "authored-whole-nfl-franchise-roster",
+      "answerCount": 1171,
+      "scope": "Past or present roster membership for this franchise through the retained 2026 snapshot counts, including its earlier names/locations and NFL, AFL or AAFC membership where applicable. Offseason and practice squads count. An unrelated former team sharing the same city or code does not. The current franchise rules and captured seasons are retained for source review."
+    },
+    {
+      "id": "authored-dallas-cowboys-players",
+      "prompt": "Name a player who has been on the Dallas Cowboys franchise roster.",
+      "family": "sports",
+      "group": "authored-whole-nfl-franchise-roster",
+      "answerCount": 1591,
+      "scope": "Past or present roster membership for this franchise through the retained 2026 snapshot counts, including its earlier names/locations and NFL, AFL or AAFC membership where applicable. Offseason and practice squads count. An unrelated former team sharing the same city or code does not. The current franchise rules and captured seasons are retained for source review."
+    },
+    {
+      "id": "authored-kansas-city-chiefs-players",
+      "prompt": "Name a player who has been on the Kansas City Chiefs franchise roster.",
+      "family": "sports",
+      "group": "authored-whole-nfl-franchise-roster",
+      "answerCount": 1706,
+      "scope": "Past or present roster membership for this franchise through the retained 2026 snapshot counts, including its earlier names/locations and NFL, AFL or AAFC membership where applicable. Offseason and practice squads count. An unrelated former team sharing the same city or code does not. The current franchise rules and captured seasons are retained for source review."
+    },
+    {
+      "id": "authored-new-england-patriots-players",
+      "prompt": "Name a player who has been on the New England Patriots franchise roster.",
+      "family": "sports",
+      "group": "authored-whole-nfl-franchise-roster",
+      "answerCount": 1771,
+      "scope": "Past or present roster membership for this franchise through the retained 2026 snapshot counts, including its earlier names/locations and NFL, AFL or AAFC membership where applicable. Offseason and practice squads count. An unrelated former team sharing the same city or code does not. The current franchise rules and captured seasons are retained for source review."
+    },
+    {
+      "id": "authored-philadelphia-eagles-players",
+      "prompt": "Name a player who has been on the Philadelphia Eagles franchise roster.",
+      "family": "sports",
+      "group": "authored-whole-nfl-franchise-roster",
+      "answerCount": 2141,
+      "scope": "Past or present roster membership for this franchise through the retained 2026 snapshot counts, including its earlier names/locations and NFL, AFL or AAFC membership where applicable. Offseason and practice squads count. An unrelated former team sharing the same city or code does not. The current franchise rules and captured seasons are retained for source review."
+    },
+    {
+      "id": "authored-san-francisco-49ers-players",
+      "prompt": "Name a player who has been on the San Francisco 49ers franchise roster.",
+      "family": "sports",
+      "group": "authored-whole-nfl-franchise-roster",
+      "answerCount": 1851,
+      "scope": "Past or present roster membership for this franchise through the retained 2026 snapshot counts, including its earlier names/locations and NFL, AFL or AAFC membership where applicable. Offseason and practice squads count. An unrelated former team sharing the same city or code does not. The current franchise rules and captured seasons are retained for source review."
+    },
+    {
+      "id": "authored-hotel-brands",
+      "prompt": "Name a hotel chain or hotel brand.",
+      "family": "world",
+      "group": "authored-whole-familiar-brands-platforms",
+      "answerCount": 539,
+      "scope": "Real current or historical hotel, motel, hostel and serviced-apartment brands/chains, branded hotel collections and primarily hotel-operating groups count. Single independent properties, booking/rental marketplaces, private-equity investors and unrelated parent companies do not. Genuine short names and brand renames share an answer."
+    },
+    {
+      "id": "authored-social-platforms",
+      "prompt": "Name an online social or community platform.",
+      "family": "everyday",
+      "group": "authored-whole-familiar-brands-platforms",
+      "answerCount": 499,
+      "scope": "Real current or historical general-audience social networks, social media and named online community platforms count, including group communication, public discussion networks and social virtual worlds. Ordinary email, devices, generic internet terms, individual profiles/groups, learning-management software and services dedicated to dating or adult content do not. Actual public names such as X, VK, QQ and Hi5 count; generated initials do not."
+    },
+    {
+      "id": "authored-motor-vehicle-brands",
+      "prompt": "Name a car, motorcycle, truck or bus manufacturer or brand.",
+      "family": "world",
+      "group": "authored-whole-vehicle-makers",
+      "answerCount": 1793,
+      "scope": "Real current or historical manufacturers and established marques of cars, motorcycles (including racing motorcycles), trucks and buses count, including documented vehicle assembly and coachbuilding firms. A vehicle model alone, a transport operator, an aircraft/rail-only maker, a pure component supplier, a toy or a fictional brand does not count. Actual brand/company names and true renames share an answer."
+    },
+    {
+      "id": "authored-game-console-models",
+      "prompt": "Name a video game console or dedicated gaming handheld.",
+      "family": "gaming",
+      "group": "authored-whole-gaming-hardware",
+      "answerCount": 1391,
+      "scope": "Named released game consoles, dedicated handheld game systems and purpose-built gaming handheld PCs count. Named revisions, early electronic/VHS-based gaming systems and game-library add-on platforms count; regional renames of the same platform share an answer. N-Gage is a documented gaming-handheld hybrid. General-purpose phones/computers, media-streaming boxes with optional games, unreleased prototypes and input-only controllers do not count. A self-contained plug-and-play game unit counts even if its shell resembles a controller."
+    },
+    {
+      "id": "authored-human-joints",
+      "prompt": "Name a human joint or an anatomical joint type.",
+      "family": "science",
+      "group": "authored-whole-practical-science",
+      "answerCount": 179,
+      "scope": "Recognized named joint complexes, specific joints and anatomical joint categories count. Ordinary public names count; actual published shorthand is explicit. A bone or muscle alone does not."
+    },
+    {
+      "id": "authored-human-blood-vessels",
+      "prompt": "Name a human blood vessel, blood-vessel type or named blood-vessel network.",
+      "family": "science",
+      "group": "authored-whole-practical-science",
+      "answerCount": 1076,
+      "scope": "Named human blood vessels, vessel types and recognized arterial/venous networks count, including real fetal vessels. Common vessel groups and proper anatomical names count. Heart chambers, lymph-only vessels, vessel-wall tissue, ligaments and ordinary blood cells do not count."
+    },
+    {
+      "id": "authored-weather-observation-instruments",
+      "prompt": "Name a weather-observation instrument or device.",
+      "family": "science",
+      "group": "authored-whole-practical-science",
+      "answerCount": 131,
+      "scope": "Recognized instrument and observation-platform types used to measure or observe weather count, including historic instruments, remote sensors, and meteorological balloon, aircraft, buoy and satellite platforms. Their ordinary established names count. An unrelated generic vehicle, forecast model, protective item or weather condition does not count."
+    },
+    {
+      "id": "authored-personal-protective-equipment",
+      "prompt": "Name a type of personal protective equipment.",
+      "family": "everyday",
+      "group": "authored-whole-practical-science",
+      "answerCount": 152,
+      "scope": "Recognized personal protective equipment and its named types count, including head, face, hearing, hand, foot, respiratory, fall, flotation and protective-clothing equipment. This classifies equipment names, not suitability for a particular hazard. Ordinary office tools, hand sanitizer and everyday clothing without a protective function do not count."
+    },
+    {
+      "id": "authored-electricity-generation-methods",
+      "prompt": "Name a source, device or process that can generate electricity.",
+      "family": "science",
+      "group": "authored-whole-practical-science",
+      "answerCount": 94,
+      "scope": "Documented energy sources, generating devices and physical conversion processes that produce electric current count, including small experimental generators and electrochemical cells. Storage devices count as conversion devices, without treating stored energy as a new primary source. Fictional devices, perpetual-motion claims, an ordinary power-consuming appliance, and a wire or transmission line alone do not count."
+    },
+    {
+      "id": "authored-radiation-forms",
+      "prompt": "Name a type of electromagnetic or particle radiation, or a named spectrum band.",
+      "family": "science",
+      "group": "authored-whole-practical-science",
+      "answerCount": 88,
+      "scope": "Electromagnetic or particle-radiation types, real named emission processes, physical-origin categories and recognized spectrum bands count. This includes established theoretical predictions such as Hawking radiation; naming a type does not claim it has been directly observed. Acoustic waves, ocean waves, static fields, gravitational waves and fictional energy are outside this electromagnetic/particle scope."
+    },
+    {
+      "id": "authored-puzzle-kinds",
+      "prompt": "Name a type of puzzle or brain teaser.",
+      "family": "everyday",
+      "group": "authored-whole-practical-science",
+      "answerCount": 233,
+      "scope": "Established puzzle forms and named puzzle families count: word, logic, number, visual, mathematical and mechanical puzzles, including actual named physical twisty-puzzle forms. A normal competitive game or a puzzle publisher, isolated article title, or generic software game title is not automatically a puzzle form."
+    },
+    {
+      "id": "authored-houseplants",
+      "prompt": "Name a plant commonly grown as a houseplant.",
+      "family": "nature",
+      "group": "authored-whole-garden-plants",
+      "answerCount": 1525,
+      "scope": "Actual documented indoor houseplants, named groups/species/cultivars count. Do not accept every wild plant merely because it can temporarily fit in a pot."
+    },
+    {
+      "id": "authored-succulent-kinds",
+      "prompt": "Name a succulent plant.",
+      "family": "nature",
+      "group": "authored-whole-garden-plants",
+      "answerCount": 377,
+      "scope": "Recognized succulent plants and documented public groups/species/cultivars count. Do not automatically include all descendants of a mixed succulent/non-succulent genus."
+    },
+    {
+      "id": "authored-carnivorous-plant-kinds",
+      "prompt": "Name a carnivorous plant.",
+      "family": "nature",
+      "group": "authored-whole-garden-plants",
+      "answerCount": 1438,
+      "scope": "Documented carnivorous plants and recognized named groups count. A whole mixed genus must not bring in non-carnivorous species. Fictional man-eating plants do not count. Cultivar epithets need their plant/genus qualification. Registered and independently documented cultivated forms count; a nomenclatural status alone does not decide real horticultural use."
+    },
+    {
+      "id": "authored-chili-bell-pepper-types",
+      "prompt": "Name a type of chili or bell pepper.",
+      "family": "food",
+      "group": "authored-whole-peppers-messengers",
+      "answerCount": 184,
+      "scope": "Real named Capsicum pepper kinds/cultivars and documented dried names count. Fresh/dried names of one pepper share identity where they identify the same pepper. Black pepper and arbitrary color-plus-food labels are not Capsicum types."
+    },
+    {
+      "id": "authored-human-chemical-messengers",
+      "prompt": "Name a hormone or neurotransmitter made by the human body.",
+      "family": "science",
+      "group": "authored-whole-peppers-messengers",
+      "answerCount": 137,
+      "scope": "Documented natural human hormones/neurotransmitters and named groups count. Natural dual-role messengers count. Synthetic drug-only analogues and organs do not. Actual published abbreviations count; do not generate initials."
+    },
+    {
+      "id": "authored-frozen-dessert-brands",
+      "prompt": "Name an ice-cream or frozen-dessert brand.",
+      "family": "food",
+      "group": "authored-whole-frozen-brands",
+      "answerCount": 320,
+      "scope": "Real current or historical ice-cream, gelato, frozen-custard, frozen-yogurt, sorbet, ice-pop and branded ice/slush treats count. Documented specialty chains, actual licensed product-line brands and store labels count. Different flavors, package sizes and unbranded desserts are not brands; neither pet food nor a company with no proven frozen-dessert product qualifies."
+    },
+    {
+      "id": "authored-fairy-tales",
+      "prompt": "Name a fairy tale or traditional folk tale.",
+      "family": "culture",
+      "group": "authored-whole-story-forms",
+      "answerCount": 1856,
+      "scope": "Recognized named traditional folk tales and published literary fairy tales count, including documented fairy-tale novels. Actual translated/alternate titles of a tale share an answer. Whole anthologies, authors and arbitrary modern fantasy novels do not automatically qualify. Different tales are not merged merely because they have a shared ATU plot number or point to a shared character/collection article."
+    },
+    {
+      "id": "authored-literary-genres-forms",
+      "prompt": "Name a literary genre or a form of writing.",
+      "family": "culture",
+      "group": "authored-whole-story-forms",
+      "answerCount": 421,
+      "scope": "Real named story/literary genres, nonfiction and reference forms, and established poem/verse forms count. Qualified subgenres keep their meaningful words. Bare academic subjects, individual book titles, people, physical book parts, musical or film-only categories and unsupported source labels do not automatically qualify."
+    },
+    {
+      "id": "authored-operating-systems",
+      "prompt": "Name a computer or device operating system.",
+      "family": "science",
+      "group": "authored-whole-operating-systems",
+      "answerCount": 980,
+      "scope": "Named actual current/historical operating systems, public OS families and documented Linux distributions count. Versions may expand answers but never prompts. Vendor, hardware, shell, desktop environment, app and proposed-only marketing labels are not automatically operating systems."
+    },
+    {
+      "id": "authored-named-awards-prizes",
+      "prompt": "Name a real named award, prize, medal or trophy.",
+      "family": "world",
+      "group": "authored-whole-world-calendar",
+      "answerCount": 1793,
+      "scope": "Actual named awards, prizes, medals, orders and trophies across arts, sports, science and public life count, including historical awards and genuine named award families. Real named categories are answers within this one subject. A generic placing/medal, recipient, sponsor, organization, tournament, festival or hall-of-fame membership is not automatically a named award. Different awards sharing a public surname/title remain distinct and use qualifiers where needed."
+    },
+    {
+      "id": "authored-holidays-observances",
+      "prompt": "Name a holiday, traditional festival or recognized observance.",
+      "family": "world",
+      "group": "authored-whole-world-calendar",
+      "answerCount": 359,
+      "scope": "Real named religious/civic holidays, traditional festivals and established calendar observances count, including historical or regional observances and named periods such as Advent or Ramadan. Modern stand-alone concert/film festivals and conferences are a different subject. A calendar date, month, weekday, person, deity, place, ritual or campaign theme is not automatically an observance. Shared dates and related ancestry do not merge distinct observances; substitute dates do not create new ones."
+    },
+    {
+      "id": "authored-fictional-spies",
+      "prompt": "Name a spy or secret agent from fiction.",
+      "family": "culture",
+      "group": "authored-whole-fictional-roles",
+      "answerCount": 318,
+      "scope": "Named fictional intelligence agents, spies, spymasters and documented clandestine/covert operatives from any medium count, including covert support agents and private fictional agencies. A secret identity, ordinary detective/police work, a group/show title, performer or an unnamed generic agent is not automatically a spy. Actual aliases share identity; different characters, clones and officeholders are not merged merely because they share a codename."
     }
   ]
 }

@@ -1,0 +1,39 @@
+# Three whole plant subjects
+
+These are three questions: indoor houseplants, succulent plants, and carnivorous plants. Their 3,340 canonical answer records do not add 3,340 questions. Scientific names, named cultivars, shared public names and documented groups remain answers inside those three subjects. The independent familiar-input lists were proposed before assembling these inventories.
+
+## Indoor and succulent sources
+
+The [NC State Extension Gardener Plant Toolbox](https://plants.ces.ncsu.edu/) supplied a complete public capture of its houseplant-type, houseplant-location and succulent-type searches. Pagination retained each filter on every page. The union contained 591 distinct plant profiles; all 591 profile captures succeeded. The source receipts preserve the actual filter descriptors, source counts, URLs and hashes. Only factual names and reviewed relationships are frozen here. Photos, signed image URLs, contribution widgets and long horticultural descriptions are not redistributed.
+
+The frozen rows preserve the complete filtered-source selection, named species and specific-profile cultivar fields. Genus pages sometimes aggregate common names of many species. Those fields do not automatically become aliases of the whole genus, and a genus does not automatically admit every descendant. Explicitly printed Echeveria, Haworthia and Kalanchoe examples have individual source mappings. Unproven compound group-plus-cultivar concatenations remain held.
+
+Additional group and common-name checks use [Colorado State houseplant guidance](https://planttalk.colostate.edu/topics/houseplants/), [Oklahoma State houseplant selection](https://extension.okstate.edu/fact-sheets/houseplant-care), [UC Sonoma succulent guidance](https://ucanr.edu/site/mg-sonoma/succulents), RHS profiles for [Pachyphytum](https://www.rhs.org.uk/plants/12090/pachyphytum-oviferum/details) and [Gasteria](https://www.rhs.org.uk/plants/7617/gasteria/details), and the [RHS Houseplant Takeover plant list](https://www.rhs.org.uk/gardens/pdf/wisley/rhs-houseplant-takeover-plant-list-and-information.pdf). Public indexed content was usable for some pages whose direct download returned 403; those responses were not evaded or treated as captured HTML.
+
+The common-input sweep also reconciles [Oregon State saguaro](https://landscapeplants.oregonstate.edu/plants/carnegiea-gigantea), [Wisconsin elephant bush](https://hort.extension.wisc.edu/articles/elephant-bush-portulacaria-afra/), [SANBI Portulacaria](https://pza.sanbi.org/portulacaria-afra), [SANBI baseball plant](https://pza.sanbi.org/euphorbia-obesa), [SANBI tiger jaws](https://pza.sanbi.org/faucaria-tigrina), [MNHN Madagascar palm](https://www.mnhn.fr/en/madagascar-palm), [NParks baby toes](https://www.nparks.gov.sg/florafaunaweb/flora/8/0/8088), [NParks bear's paw](https://www.nparks.gov.sg/florafaunaweb/flora/8/4/8489), and the [CITES succulent identification guide](https://cites.org/sites/default/files/vc-files/files/Succulent-Plants_ID_guide_swedish_epa.pdf). The original 24 succulent and 30 houseplant inputs remain exact accepted answers.
+
+Known source corrections are explicit:
+
+- A nectarine cultivar, Prunus persica 'Carolina Red', has a false succulent metadata tag and is excluded.
+- The Calathea crotalifera page incorrectly claims Calathea insignis as a synonym. That name belongs to Goeppertia insignis; the plants remain distinct.
+- Gasteria gracilis is of unresolved horticultural application. Its profile conflates names belonging to [Gasteria obliqua](https://www.nparks.gov.sg/florafaunaweb/flora/5/9/5901). The latter's supported bicolor/maculata names are reconciled without pretending the unresolved name is a proven synonym.
+- Pereskia and the whole broad Dracaena genus are not admitted as succulent answers from a filter alone. Individually supported succulent Dracaena species remain valid.
+- Shared English labels do not merge different taxa. A familiar name with an explicit conventional owner uses that owner; other shared labels are represented once with their supporting profiles. Hens-and-chicks wording variants share their reviewed group identity.
+
+## Carnivorous plants
+
+The [ICPS Carnivorous Plant Names Resource](https://cpnames.carnivorousplants.org/) supplied 4,862 full name records through its ordinary public read-only search form. Its 840 accepted species/name records are not a carnivory whitelist. Accepted non-carnivorous genera, unpublished/doubtful names, unresolved synonym targets and unsafe author-free homonyms are held. A complete accepted name has precedence over an unrelated historical homonym. The stripped factual rows preserve source publication/registration details and the capture hash.
+
+The resource supports 608 registered cultivars in the reviewed genera. Full genus-qualified names remain distinct from their parent species. A monotypic full Dionaea muscipula qualification names the same cultivar. Bare epithets such as Magikarp are not plant answers. The [ICPS cultivar account](https://cpn.carnivorousplants.org/articles/CPNv36n2p53_56.pdf) supports the Akai Ryu/Red Dragon naming and distinguishes Petite Dragon. Cultivars sharing hybrid parentage are not merged merely because the older database calls their parentage taxonomically synonymous.
+
+[US Botanic Garden guidance](https://www.usbg.gov/gardens-plants/cultivating-carnivorous-plants) anchors familiar public groups. [Kew](https://www.kew.org/plants/australian-pitcher-plant) and [John Innes Centre](https://innerworlds.jic.ac.uk/inner-worlds/carnivorous-plants/cephalotus/) support the single-species Cephalotus identity. Monotypic living Dionaea, Darlingtonia, Drosophyllum, Aldrovanda and Triphyophyllum group/species names likewise share identity; mixed genera do not receive blanket descendant inclusion.
+
+Later scientific evidence supersedes the older database's blanket non-carnivorous/proto-carnivorous comments for supported members: [digestive phosphatase research](https://pubmed.ncbi.nlm.nih.gov/16865659/), [Byblis enzyme research](https://pmc.ncbi.nlm.nih.gov/articles/PMC12096042/), and the [2018 plant-carnivory review](https://archive.botany.wisc.edu/givnishlab/Givnish/Welcome_files/Fleischmann%20et%20al.%202018.pdf). Only specifically supported Brocchinia and Catopsis members are added. [Triantha occidentalis](https://pubmed.ncbi.nlm.nih.gov/34373325/) and [Philcoxia minensis](https://pmc.ncbi.nlm.nih.gov/articles/PMC3268334/) have direct experimental support. The 2021 Triantha paper does not establish every Triantha species as carnivorous.
+
+Formal registration or nomenclatural standing does not by itself decide whether a real cultivated plant name can be a trivia answer. Independent current sources repair familiar omissions: [NParks ventrata](https://www.nparks.gov.sg/florafaunaweb/flora/6/9/6989), [NParks hookeriana](https://www.nparks.gov.sg/florafaunaweb/flora/7/1/7188), and [RHS Miranda](https://www.rhs.org.uk/plants/172554/nepenthes-miranda/details). These remain separate from their parent species. Other unsupported trade names stay in the review ledger rather than being asserted to be nonexistent.
+
+## Scoring and limitations
+
+Rarity tiers are deliberate editorial familiarity estimates, not measured player frequencies. Explicit common inputs receive entry/ordinary tiers; independently chosen rare anchors receive 100. Scientific spelling length does not determine score. Familiar result cards prefer the actual public plant name while preserving scientific aliases.
+
+The frozen source/selection/held ledgers make these inventories inspectable; they do not establish that every plant name ever published has been captured or that every unresolved nomenclatural dispute is settled. No source-row volume, synonym count, cultivar count or research draft is counted toward the requested 5,000-question release.

@@ -1,0 +1,449 @@
+{
+  "questions": [
+    {
+      "key": "computer-languages",
+      "prompt": "Name a programming, scripting, query, markup or stylesheet language.",
+      "scope": "Real current and historical computer languages for programs, scripts, database queries, markup or style sheets count. Named dialects also count. Plain data-file formats, code editors and ordinary spoken languages do not count. Named XML vocabularies and document-markup formats count; an organization, generic data model, element or software platform alone is not a language.",
+      "familiar": [
+        "Python",
+        "Java",
+        "JavaScript",
+        "C",
+        "C++",
+        "C#",
+        "TypeScript",
+        "Ruby",
+        "PHP",
+        "Swift",
+        "Kotlin",
+        "Rust",
+        "Go",
+        "R",
+        "Perl",
+        "Lua",
+        "Haskell",
+        "COBOL",
+        "Fortran",
+        "Bash",
+        "PowerShell",
+        "Scratch",
+        "Blockly",
+        "HTML",
+        "CSS",
+        "SQL",
+        "Dart",
+        "Pascal",
+        "Visual Basic",
+        "MATLAB",
+        "Objective-C",
+        "Julia",
+        "Scala",
+        "Elixir",
+        "Erlang",
+        "Lisp",
+        "Prolog",
+        "Scheme",
+        "BASIC",
+        "Logo",
+        "APL",
+        "Smalltalk",
+        "Delphi",
+        "Groovy",
+        "Solidity",
+        "VHDL",
+        "Verilog",
+        "Markdown",
+        "XML",
+        "LaTeX",
+        "TeX",
+        "SGML",
+        "MathML",
+        "SVG",
+        "XAML",
+        "AsciiDoc",
+        "reStructuredText",
+        "Wikitext",
+        "Sass",
+        "Less"
+      ],
+      "exclude": [
+        "Microsoft Word",
+        "English",
+        "JSON"
+      ],
+      "rare": "INTERCAL",
+      "aliases": {
+        "C#": [
+          "C sharp"
+        ],
+        "C++": [
+          "C plus plus"
+        ],
+        "JavaScript": [
+          "ECMAScript"
+        ],
+        "Objective-C": [
+          "Objective C"
+        ],
+        "Visual Basic .NET": [
+          "VB.NET",
+          "Visual Basic NET"
+        ],
+        "HTML": [
+          "HyperText Markup Language"
+        ],
+        "XML": [
+          "Extensible Markup Language"
+        ],
+        "SGML": [
+          "Standard Generalized Markup Language"
+        ],
+        "MathML": [
+          "Mathematical Markup Language"
+        ],
+        "SVG": [
+          "Scalable Vector Graphics"
+        ],
+        "XHTML": [
+          "Extensible HyperText Markup Language"
+        ],
+        "XAML": [
+          "Extensible Application Markup Language"
+        ],
+        "KML": [
+          "Keyhole Markup Language"
+        ],
+        "X3D": [
+          "Extensible 3D"
+        ],
+        "XSLT": [
+          "XSL Transformations"
+        ],
+        "XSL-FO": [
+          "XSL Formatting Objects"
+        ],
+        "Wikitext": [
+          "Wiki markup"
+        ],
+        "Pod": [
+          "Plain Old Documentation"
+        ],
+        "Roff": [
+          "Typesetter roff"
+        ],
+        "MusicXML": [
+          "Music Extensible Markup Language"
+        ],
+        "JATS": [
+          "Journal Article Tag Suite"
+        ],
+        "ODD": [
+          "One Document Does it all"
+        ]
+      },
+      "holds": {
+        "Agricultural Ontology Service": "Organization, software platform, generic model/service, protocol attachment or individual element; not a named language or markup vocabulary.",
+        "Clinical Data Interchange Standards Consortium": "Organization, software platform, generic model/service, protocol attachment or individual element; not a named language or markup vocabulary.",
+        "Unified XUL Platform": "Organization, software platform, generic model/service, protocol attachment or individual element; not a named language or markup vocabulary.",
+        "Microformats": "Organization, software platform, generic model/service, protocol attachment or individual element; not a named language or markup vocabulary.",
+        "SOAP with Attachments": "Organization, software platform, generic model/service, protocol attachment or individual element; not a named language or markup vocabulary.",
+        "Universal Description Discovery and Integration": "Organization, software platform, generic model/service, protocol attachment or individual element; not a named language or markup vocabulary.",
+        "Web feed": "Organization, software platform, generic model/service, protocol attachment or individual element; not a named language or markup vocabulary.",
+        "RSS enclosure": "Organization, software platform, generic model/service, protocol attachment or individual element; not a named language or markup vocabulary.",
+        "XML Information Set": "Organization, software platform, generic model/service, protocol attachment or individual element; not a named language or markup vocabulary.",
+        "Link contract": "Organization, software platform, generic model/service, protocol attachment or individual element; not a named language or markup vocabulary."
+      },
+      "additions": [
+        {
+          "label": "Visual Basic",
+          "aliases": []
+        },
+        {
+          "label": "INTERCAL",
+          "aliases": []
+        },
+        {
+          "label": "LaTeX",
+          "aliases": []
+        },
+        {
+          "label": "Scribble",
+          "aliases": []
+        },
+        {
+          "label": "XML",
+          "aliases": []
+        },
+        {
+          "label": "SGML",
+          "aliases": []
+        },
+        {
+          "label": "KML",
+          "aliases": []
+        },
+        {
+          "label": "XSL-FO",
+          "aliases": []
+        }
+      ],
+      "references": [
+        "https://github.com/github-linguist/linguist/blob/main/lib/linguist/languages.yml",
+        "https://en.wikipedia.org/wiki/List_of_programming_languages",
+        "https://www.python.org/",
+        "https://scratch.mit.edu/",
+        "https://developers.google.com/blockly",
+        "https://learn.microsoft.com/en-us/dotnet/visual-basic/",
+        "https://catb.org/~esr/intercal/",
+        "https://en.wikipedia.org/wiki/List_of_document_markup_languages",
+        "https://en.wikipedia.org/wiki/List_of_XML_markup_languages",
+        "https://www.w3.org/XML/",
+        "https://daringfireball.net/projects/markdown/"
+      ],
+      "renames": {
+        "RSS (file format)": "RSS",
+        "Atom (standard)": "Atom"
+      }
+    },
+    {
+      "key": "astronauts-cosmonauts",
+      "prompt": "Name a real astronaut or cosmonaut.",
+      "scope": "Professional astronauts, cosmonauts and taikonauts worldwide, past or present, count, including people selected for professional astronaut training even if they never flew. Private-company professional astronauts and payload specialists count; celebrity passengers and fictional characters are not automatically astronauts.",
+      "familiar": [
+        "Neil Armstrong",
+        "Buzz Aldrin",
+        "Yuri Gagarin",
+        "Sally Ride",
+        "John Glenn",
+        "Valentina Tereshkova",
+        "Chris Hadfield",
+        "Alan Shepard",
+        "Gus Grissom",
+        "Scott Carpenter",
+        "Gordon Cooper",
+        "Deke Slayton",
+        "Wally Schirra",
+        "Jim Lovell",
+        "Fred Haise",
+        "Jack Swigert",
+        "Michael Collins",
+        "Pete Conrad",
+        "Alan Bean",
+        "Edgar Mitchell",
+        "David Scott",
+        "James Irwin",
+        "John Young",
+        "Charles Duke",
+        "Gene Cernan",
+        "Harrison Schmitt",
+        "Mae Jemison",
+        "Sunita Williams",
+        "Butch Wilmore",
+        "Scott Kelly",
+        "Mark Kelly",
+        "Peggy Whitson",
+        "Christina Koch",
+        "Victor Glover",
+        "Reid Wiseman",
+        "Jeremy Hansen",
+        "Tim Peake",
+        "Helen Sharman",
+        "Alexei Leonov",
+        "Yang Liwei",
+        "Liu Yang",
+        "Kalpana Chawla",
+        "Rakesh Sharma",
+        "Eileen Collins"
+      ],
+      "exclude": [
+        "Buzz Lightyear",
+        "Stephen Hawking",
+        "Harry Potter"
+      ],
+      "rare": "Bertalan Farkas",
+      "aliases": {
+        "Virgil I. \"Gus\" Grissom": [
+          "Gus Grissom",
+          "Virgil Grissom"
+        ],
+        "Donald \"Deke\" Slayton": [
+          "Deke Slayton",
+          "Donald Slayton"
+        ],
+        "John \"Jack\" Swigert": [
+          "Jack Swigert",
+          "John Swigert"
+        ],
+        "Charles \"Pete\" Conrad": [
+          "Pete Conrad",
+          "Charles Conrad"
+        ],
+        "Eugene Cernan": [
+          "Gene Cernan"
+        ],
+        "Barry Wilmore": [
+          "Butch Wilmore",
+          "Barry E. Wilmore"
+        ],
+        "Timothy Peake": [
+          "Tim Peake"
+        ]
+      },
+      "holds": {},
+      "additions": [
+        {
+          "label": "Ben Bailey",
+          "aliases": []
+        },
+        {
+          "label": "Cameron Jones",
+          "aliases": []
+        },
+        {
+          "label": "Katherine Spies",
+          "aliases": []
+        },
+        {
+          "label": "Erin Overcash",
+          "aliases": []
+        },
+        {
+          "label": "Adam Fuhrmann",
+          "aliases": []
+        },
+        {
+          "label": "Lauren Edgar",
+          "aliases": []
+        },
+        {
+          "label": "Yuri Kubo",
+          "aliases": []
+        },
+        {
+          "label": "Rebecca Lawler",
+          "aliases": []
+        },
+        {
+          "label": "Imelda Muller",
+          "aliases": []
+        }
+      ],
+      "references": [
+        "https://en.wikipedia.org/wiki/List_of_astronauts_by_name",
+        "https://www.nasa.gov/humans-in-space/astronauts/former-astronauts/",
+        "https://www.nasa.gov/humans-in-space/astronauts/active-astronauts/",
+        "https://www.nasa.gov/reference/astronaut-fact-book/",
+        "https://www.nasa.gov/history/mercury-seven-astronaut-biographies/",
+        "https://www.nasa.gov/former-astronaut-charles-pete-conrad-jr/",
+        "https://www.nasa.gov/people/barry-butch-e-wilmore/",
+        "https://www.esa.int/Science_Exploration/Human_and_Robotic_Exploration/Astronauts/Timothy_Tim_Peake",
+        "https://www.nasa.gov/humans-in-space/astronauts/astronaut-candidates/"
+      ]
+    },
+    {
+      "key": "government-space-agencies",
+      "prompt": "Name a government space agency or international space-research organization.",
+      "scope": "Real national, governmental and international organizations whose main work includes space research, space exploration or coordinating space activities count, including historical agencies. A commercial rocket company, a location alone or an individual is not automatically an agency.",
+      "familiar": [
+        "NASA",
+        "ESA",
+        "Roscosmos",
+        "ISRO",
+        "JAXA",
+        "CNSA",
+        "Canadian Space Agency",
+        "CNES",
+        "German Aerospace Center",
+        "DLR",
+        "UK Space Agency",
+        "Italian Space Agency",
+        "ASI",
+        "Australian Space Agency",
+        "South African National Space Agency",
+        "SANSA",
+        "United Arab Emirates Space Agency",
+        "Egyptian Space Agency",
+        "Brazilian Space Agency",
+        "Mexican Space Agency",
+        "Korea Aerospace Research Institute",
+        "KARI",
+        "Korea AeroSpace Administration",
+        "KASA",
+        "Taiwan Space Agency",
+        "TASA",
+        "SUPARCO",
+        "Polish Space Agency",
+        "POLSA",
+        "New Zealand Space Agency",
+        "Norwegian Space Agency",
+        "Swedish National Space Agency",
+        "Turkish Space Agency",
+        "Israel Space Agency",
+        "Iranian Space Agency",
+        "UNOOSA",
+        "EUSPA"
+      ],
+      "exclude": [
+        "SpaceX",
+        "Blue Origin",
+        "Elon Musk",
+        "California"
+      ],
+      "rare": "Rwanda Space Agency",
+      "aliases": {
+        "European Space Agency": [
+          "ESA",
+          "ASE",
+          "EWO"
+        ],
+        "Indian Space Research Organisation": [
+          "ISRO"
+        ],
+        "Canadian Space Agency": [
+          "CSA",
+          "ASC"
+        ],
+        "Japan Aerospace Exploration Agency": [
+          "JAXA"
+        ],
+        "Korea Aerospace Research Institute": [
+          "KARI"
+        ],
+        "Korea AeroSpace Administration": [
+          "KASA"
+        ],
+        "National Aeronautics and Space Administration": [
+          "NASA"
+        ],
+        "Roscosmos State Corporation for Space Activities": [
+          "Roscosmos"
+        ],
+        "Agencia Espacial Española": [
+          "Spanish Space Agency"
+        ]
+      },
+      "preferredAliases": {
+        "CSA": "Canadian Space Agency",
+        "LSA": "Luxembourg Space Agency",
+        "SSA": "Saudi Space Agency",
+        "ISA": "Iranian Space Agency"
+      },
+      "holds": {
+        "California": "Malformed subnational row: the location is not an agency; actual organization classification remains unverified.",
+        "Kerala": "Malformed subnational row, not an organization name.",
+        "Lithuanian Space Association": "Private business association, not a government agency or international scientific research body."
+      },
+      "additions": [],
+      "references": [
+        "https://en.wikipedia.org/wiki/List_of_government_space_agencies",
+        "https://www.unoosa.org/oosa/en/ourwork/space-agencies.html",
+        "https://www.nasa.gov/",
+        "https://www.esa.int/",
+        "https://www.isro.gov.in/"
+      ],
+      "renames": {
+        "Turkish Space Agency (Türkiye Uzay Ajansı)": "Turkish Space Agency"
+      }
+    }
+  ]
+}

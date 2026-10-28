@@ -1,0 +1,40 @@
+{
+  "cheese-types": {
+    "Cauliflower Cheese": "A dish containing cheese, not a cheese type.",
+    "Cheeses of Mexico": "Article-group heading, not one cheese.",
+    "Trentino-Alto Adige/Südtirol": "Region heading.",
+    "Abbey Cheese Company (Closed)": "Manufacturer, not a named cheese product.",
+    "The Little Milk Company": "Manufacturer, not a named cheese product.",
+    "Sumac": "Spice, not cheese.",
+    "Brânză": "Generic word for cheese, not a named type.",
+    "Ardsallagh Goat Farm": "Producer name, not a specific named cheese product.",
+    "Fivemiletown Creamery": "Producer name, not a specific named cheese product.",
+    "Bó Rua Farm": "A farm/producer label, not a named cheese product.",
+    "Glyde Farm Produce": "A producer label, not a named cheese product.",
+    "Wyke Farms": "A producer label, not a named cheese product.",
+    "болсон сүүний": "No usable transliterated name in the source name cell.",
+    "түүхий сүүний": "No usable transliterated name in the source name cell."
+  },
+  "flatbread-types": {
+    "Roti canai / Roti prata": "Merged into Roti canai.",
+    "Pide / Ramazan pidesi": "Separated generic pide and actual named Ramadan variety.",
+    "Pide / İçli pide": "Separated actual named variety from generic pide."
+  },
+  "pancake-dishes": {
+    "Kouign-amann": "Laminated pastry, not a pancake.",
+    "Bánh cuốn": "Steamed rice sheets, not pancake batter cooked on a griddle.",
+    "Suncake": "Ambiguous pastry name, not an identified pancake style."
+  },
+  "stew-dishes": {},
+  "web-browsers": {
+    "Free and open source": "License heading.",
+    "Proprietary": "License heading.",
+    "Qt WebEngine": "Rendering component, not a complete browser.",
+    "K-Meleon with the IE Tab extension": "An extension configuration shares K-Meleon identity.",
+    "Mozilla Firefox with the IE Tab extension": "An extension configuration shares Firefox identity.",
+    "Netscape Browser 8 to Netscape Navigator 9": "Version range, not a single product name.",
+    "Nightingale": "Music player; embedded web access alone is not treated as a browser product.",
+    "Miro": "Media player, not a general web-browser product."
+  },
+  "cloud-kinds": {}
+}

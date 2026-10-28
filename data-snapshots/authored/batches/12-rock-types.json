@@ -1,0 +1,892 @@
+{
+  "version": 1,
+  "questions": [
+    {
+      "id": "authored-rock-types",
+      "concept": "rock-types",
+      "family": "science",
+      "topic": "Rock collection",
+      "prompt": "Name a type of rock.",
+      "scope": "Recognized geological rock names, rock families and established natural stone varieties count. Common and scientific rock names are accepted. Individual minerals, chemical elements, whole mountains and manufactured building products are not rock types.",
+      "format": "whole-concept",
+      "rationale": "One recognizable science subject, with independently supplied common-rock inputs and a sourced long tail. It is not split into a question for each colour, country, age or chemical filter.",
+      "familiar": [
+        "Granite",
+        "Basalt",
+        "Marble",
+        "Sandstone",
+        "Limestone",
+        "Slate",
+        "Obsidian",
+        "Pumice",
+        "Shale",
+        "Chalk",
+        "Flint",
+        "Gneiss",
+        "Quartzite",
+        "Schist",
+        "Coal",
+        "Breccia",
+        "Conglomerate",
+        "Tuff",
+        "Gabbro",
+        "Diorite",
+        "Andesite",
+        "Rhyolite",
+        "Siltstone",
+        "Mudstone",
+        "Soapstone",
+        "Travertine",
+        "Coquina",
+        "Lignite",
+        "Anthracite",
+        "Hornfels",
+        "Igneous",
+        "Sedimentary",
+        "Metamorphic",
+        "Intrusive",
+        "Plutonic",
+        "Extrusive",
+        "Volcanic",
+        "Lava rock",
+        "Dolerite",
+        "Dolostone",
+        "Dolomite rock"
+      ],
+      "exclude": [
+        "Diamond",
+        "Quartz",
+        "Gold",
+        "Concrete",
+        "Mount Everest"
+      ],
+      "references": [
+        "https://en.wikipedia.org/wiki/List_of_rock_types",
+        "https://www.usgs.gov/faqs/what-difference-between-a-rock-and-a-mineral",
+        "https://www.nps.gov/subjects/geology/how-rocks-are-classified.htm",
+        "https://www.nps.gov/subjects/geology/igneous.htm",
+        "https://www.bgs.ac.uk/discovering-geology/rocks-and-minerals/"
+      ],
+      "answers": {
+        "60": [
+          {
+            "label": "ʻAʻā",
+            "aliases": [
+              "A'a",
+              "Aa"
+            ]
+          },
+          {
+            "label": "Adakite",
+            "aliases": []
+          },
+          {
+            "label": "Adamellite",
+            "aliases": []
+          },
+          {
+            "label": "Agpaitic rock",
+            "aliases": []
+          },
+          {
+            "label": "Amphibolite",
+            "aliases": []
+          },
+          {
+            "label": "Ankaramite",
+            "aliases": []
+          },
+          {
+            "label": "Anorthosite",
+            "aliases": []
+          },
+          {
+            "label": "Aphanite",
+            "aliases": []
+          },
+          {
+            "label": "Aplite",
+            "aliases": []
+          },
+          {
+            "label": "Appinite",
+            "aliases": []
+          },
+          {
+            "label": "Argillite",
+            "aliases": []
+          },
+          {
+            "label": "Arkose",
+            "aliases": []
+          },
+          {
+            "label": "Basaltic andesite",
+            "aliases": []
+          },
+          {
+            "label": "Basanite",
+            "aliases": []
+          },
+          {
+            "label": "Benmoreite",
+            "aliases": []
+          },
+          {
+            "label": "Blairmorite",
+            "aliases": []
+          },
+          {
+            "label": "Blue Granite",
+            "aliases": []
+          },
+          {
+            "label": "Blueschist",
+            "aliases": []
+          },
+          {
+            "label": "Borolanite",
+            "aliases": []
+          },
+          {
+            "label": "Calcarenite",
+            "aliases": []
+          },
+          {
+            "label": "Calcflinta",
+            "aliases": []
+          },
+          {
+            "label": "Carbonatite",
+            "aliases": []
+          },
+          {
+            "label": "Cataclasite",
+            "aliases": []
+          },
+          {
+            "label": "Charnockite",
+            "aliases": []
+          },
+          {
+            "label": "Chert",
+            "aliases": []
+          },
+          {
+            "label": "Claystone",
+            "aliases": []
+          },
+          {
+            "label": "Comendite",
+            "aliases": []
+          },
+          {
+            "label": "Dacite",
+            "aliases": []
+          },
+          {
+            "label": "Diamictite",
+            "aliases": []
+          },
+          {
+            "label": "Diatomite",
+            "aliases": []
+          },
+          {
+            "label": "Dunite",
+            "aliases": []
+          },
+          {
+            "label": "Eclogite",
+            "aliases": []
+          },
+          {
+            "label": "Enderbite",
+            "aliases": []
+          },
+          {
+            "label": "Epidosite",
+            "aliases": []
+          },
+          {
+            "label": "Essexite",
+            "aliases": []
+          },
+          {
+            "label": "Evaporite",
+            "aliases": []
+          },
+          {
+            "label": "Felsite",
+            "aliases": []
+          },
+          {
+            "label": "Foidolite",
+            "aliases": []
+          },
+          {
+            "label": "Ganister",
+            "aliases": []
+          },
+          {
+            "label": "Geyserite",
+            "aliases": []
+          },
+          {
+            "label": "Gossan",
+            "aliases": []
+          },
+          {
+            "label": "Granodiorite",
+            "aliases": []
+          },
+          {
+            "label": "Granophyre",
+            "aliases": []
+          },
+          {
+            "label": "Granulite",
+            "aliases": []
+          },
+          {
+            "label": "Greenschist",
+            "aliases": []
+          },
+          {
+            "label": "Greywacke",
+            "aliases": [
+              "Graywacke"
+            ]
+          },
+          {
+            "label": "Gritstone",
+            "aliases": []
+          },
+          {
+            "label": "Harzburgite",
+            "aliases": []
+          },
+          {
+            "label": "Hawaiite",
+            "aliases": []
+          },
+          {
+            "label": "Hornblendite",
+            "aliases": []
+          },
+          {
+            "label": "Hyaloclastite",
+            "aliases": []
+          },
+          {
+            "label": "Icelandite",
+            "aliases": []
+          },
+          {
+            "label": "Ignimbrite",
+            "aliases": []
+          },
+          {
+            "label": "Ijolite",
+            "aliases": []
+          },
+          {
+            "label": "Ironstone",
+            "aliases": []
+          },
+          {
+            "label": "Itacolumite",
+            "aliases": []
+          },
+          {
+            "label": "Jadeitite",
+            "aliases": []
+          },
+          {
+            "label": "Jasperoid",
+            "aliases": []
+          },
+          {
+            "label": "Jaspillite",
+            "aliases": []
+          },
+          {
+            "label": "Kenyte",
+            "aliases": []
+          },
+          {
+            "label": "Kimberlite",
+            "aliases": []
+          },
+          {
+            "label": "Komatiite",
+            "aliases": []
+          },
+          {
+            "label": "Lamproite",
+            "aliases": []
+          },
+          {
+            "label": "Lamprophyre",
+            "aliases": []
+          },
+          {
+            "label": "Lapis lazuli",
+            "aliases": []
+          },
+          {
+            "label": "Larvikite",
+            "aliases": []
+          },
+          {
+            "label": "Laterite",
+            "aliases": []
+          },
+          {
+            "label": "Latite",
+            "aliases": []
+          },
+          {
+            "label": "Leucitite",
+            "aliases": []
+          },
+          {
+            "label": "Lherzolite",
+            "aliases": []
+          },
+          {
+            "label": "Listwanite",
+            "aliases": []
+          },
+          {
+            "label": "Litchfieldite",
+            "aliases": []
+          },
+          {
+            "label": "Llanite",
+            "aliases": []
+          },
+          {
+            "label": "Luxullianite",
+            "aliases": []
+          },
+          {
+            "label": "Mangerite",
+            "aliases": []
+          },
+          {
+            "label": "Marl",
+            "aliases": []
+          },
+          {
+            "label": "Metaconglomerate",
+            "aliases": []
+          },
+          {
+            "label": "Metapelite",
+            "aliases": []
+          },
+          {
+            "label": "Metapsammite",
+            "aliases": []
+          },
+          {
+            "label": "Migmatite",
+            "aliases": []
+          },
+          {
+            "label": "Minette",
+            "aliases": []
+          },
+          {
+            "label": "Monzodiorite",
+            "aliases": []
+          },
+          {
+            "label": "Monzogabbro",
+            "aliases": []
+          },
+          {
+            "label": "Monzogranite",
+            "aliases": []
+          },
+          {
+            "label": "Monzonite",
+            "aliases": []
+          },
+          {
+            "label": "Mugearite",
+            "aliases": []
+          },
+          {
+            "label": "Mylonite",
+            "aliases": []
+          },
+          {
+            "label": "Napoleonite",
+            "aliases": [
+              "Corsite"
+            ]
+          },
+          {
+            "label": "Nepheline syenite",
+            "aliases": []
+          },
+          {
+            "label": "Nephelinite",
+            "aliases": []
+          },
+          {
+            "label": "Norite",
+            "aliases": []
+          },
+          {
+            "label": "Novaculite",
+            "aliases": []
+          },
+          {
+            "label": "Oil shale",
+            "aliases": []
+          },
+          {
+            "label": "Oolite",
+            "aliases": []
+          },
+          {
+            "label": "Pāhoehoe",
+            "aliases": [
+              "Pahoehoe"
+            ]
+          },
+          {
+            "label": "Pantellerite",
+            "aliases": []
+          },
+          {
+            "label": "Pegmatite",
+            "aliases": []
+          },
+          {
+            "label": "Peridotite",
+            "aliases": []
+          },
+          {
+            "label": "Phonolite",
+            "aliases": []
+          },
+          {
+            "label": "Phonotephrite",
+            "aliases": []
+          },
+          {
+            "label": "Phosphorite",
+            "aliases": []
+          },
+          {
+            "label": "Phyllite",
+            "aliases": []
+          },
+          {
+            "label": "Picrite",
+            "aliases": []
+          },
+          {
+            "label": "Pietersite",
+            "aliases": []
+          },
+          {
+            "label": "Porphyry",
+            "aliases": []
+          },
+          {
+            "label": "Pseudotachylite",
+            "aliases": []
+          },
+          {
+            "label": "Pyroxenite",
+            "aliases": []
+          },
+          {
+            "label": "Quartz diorite",
+            "aliases": []
+          },
+          {
+            "label": "Quartz monzonite",
+            "aliases": []
+          },
+          {
+            "label": "Quartzolite",
+            "aliases": []
+          },
+          {
+            "label": "Rapakivi granite",
+            "aliases": []
+          },
+          {
+            "label": "Rhomb porphyry",
+            "aliases": []
+          },
+          {
+            "label": "Rhyodacite",
+            "aliases": []
+          },
+          {
+            "label": "Rodingite",
+            "aliases": []
+          },
+          {
+            "label": "Scoria",
+            "aliases": []
+          },
+          {
+            "label": "Semipelite",
+            "aliases": []
+          },
+          {
+            "label": "Serpentinite",
+            "aliases": []
+          },
+          {
+            "label": "Shonkinite",
+            "aliases": []
+          },
+          {
+            "label": "Shoshonite",
+            "aliases": []
+          },
+          {
+            "label": "Skarn",
+            "aliases": []
+          },
+          {
+            "label": "Sovite",
+            "aliases": []
+          },
+          {
+            "label": "Suevite",
+            "aliases": []
+          },
+          {
+            "label": "Syenite",
+            "aliases": []
+          },
+          {
+            "label": "Syenogranite",
+            "aliases": []
+          },
+          {
+            "label": "Sylvinite",
+            "aliases": []
+          },
+          {
+            "label": "Tachylite",
+            "aliases": [
+              "Tachylyte"
+            ]
+          },
+          {
+            "label": "Taconite",
+            "aliases": []
+          },
+          {
+            "label": "Talc carbonate",
+            "aliases": []
+          },
+          {
+            "label": "Tectonite",
+            "aliases": []
+          },
+          {
+            "label": "Tephriphonolite",
+            "aliases": []
+          },
+          {
+            "label": "Tephrite",
+            "aliases": []
+          },
+          {
+            "label": "Teschenite",
+            "aliases": []
+          },
+          {
+            "label": "Theralite",
+            "aliases": []
+          },
+          {
+            "label": "Tillite",
+            "aliases": []
+          },
+          {
+            "label": "Tonalite",
+            "aliases": []
+          },
+          {
+            "label": "Trachyandesite",
+            "aliases": []
+          },
+          {
+            "label": "Trachybasalt",
+            "aliases": []
+          },
+          {
+            "label": "Trachyte",
+            "aliases": []
+          },
+          {
+            "label": "Troctolite",
+            "aliases": []
+          },
+          {
+            "label": "Trondhjemite",
+            "aliases": []
+          },
+          {
+            "label": "Tufa",
+            "aliases": []
+          },
+          {
+            "label": "Turbidite",
+            "aliases": []
+          },
+          {
+            "label": "Unakite",
+            "aliases": []
+          },
+          {
+            "label": "Variolite",
+            "aliases": []
+          },
+          {
+            "label": "Vitrophyre",
+            "aliases": []
+          },
+          {
+            "label": "Vogesite",
+            "aliases": []
+          },
+          {
+            "label": "Wackestone",
+            "aliases": []
+          },
+          {
+            "label": "Websterite",
+            "aliases": []
+          },
+          {
+            "label": "Wehrlite",
+            "aliases": []
+          },
+          {
+            "label": "Whiteschist",
+            "aliases": []
+          }
+        ],
+        "85": [
+          {
+            "label": "Alkali feldspar granite",
+            "aliases": []
+          },
+          {
+            "label": "Banded iron formation",
+            "aliases": []
+          },
+          {
+            "label": "Basaltic trachyandesite",
+            "aliases": []
+          },
+          {
+            "label": "Nepheline-bearing diorite",
+            "aliases": []
+          }
+        ],
+        "30": [
+          {
+            "label": "Andesite",
+            "aliases": []
+          },
+          {
+            "label": "Anthracite",
+            "aliases": []
+          },
+          {
+            "label": "Breccia",
+            "aliases": []
+          },
+          {
+            "label": "Chalk",
+            "aliases": []
+          },
+          {
+            "label": "Coal",
+            "aliases": []
+          },
+          {
+            "label": "Conglomerate",
+            "aliases": []
+          },
+          {
+            "label": "Coquina",
+            "aliases": []
+          },
+          {
+            "label": "Diabase",
+            "aliases": [
+              "Dolerite"
+            ]
+          },
+          {
+            "label": "Diorite",
+            "aliases": []
+          },
+          {
+            "label": "Dolostone",
+            "aliases": [
+              "Dolomite",
+              "Dolomite rock"
+            ]
+          },
+          {
+            "label": "Extrusive igneous rock",
+            "aliases": [
+              "Extrusive",
+              "Extrusive rock",
+              "Volcanic",
+              "Volcanic rock"
+            ]
+          },
+          {
+            "label": "Flint",
+            "aliases": []
+          },
+          {
+            "label": "Gabbro",
+            "aliases": []
+          },
+          {
+            "label": "Gneiss",
+            "aliases": []
+          },
+          {
+            "label": "Hornfels",
+            "aliases": []
+          },
+          {
+            "label": "Intrusive igneous rock",
+            "aliases": [
+              "Intrusive",
+              "Intrusive rock",
+              "Plutonic",
+              "Plutonic rock"
+            ]
+          },
+          {
+            "label": "Lava rock",
+            "aliases": [
+              "Lava stone"
+            ]
+          },
+          {
+            "label": "Lignite",
+            "aliases": []
+          },
+          {
+            "label": "Mudstone",
+            "aliases": []
+          },
+          {
+            "label": "Obsidian",
+            "aliases": []
+          },
+          {
+            "label": "Pumice",
+            "aliases": []
+          },
+          {
+            "label": "Quartzite",
+            "aliases": []
+          },
+          {
+            "label": "Rhyolite",
+            "aliases": []
+          },
+          {
+            "label": "Schist",
+            "aliases": []
+          },
+          {
+            "label": "Shale",
+            "aliases": []
+          },
+          {
+            "label": "Siltstone",
+            "aliases": []
+          },
+          {
+            "label": "Soapstone",
+            "aliases": [
+              "Steatite"
+            ]
+          },
+          {
+            "label": "Travertine",
+            "aliases": []
+          },
+          {
+            "label": "Tuff",
+            "aliases": []
+          }
+        ],
+        "10": [
+          {
+            "label": "Basalt",
+            "aliases": []
+          },
+          {
+            "label": "Granite",
+            "aliases": []
+          },
+          {
+            "label": "Igneous rock",
+            "aliases": [
+              "Igneous"
+            ]
+          },
+          {
+            "label": "Limestone",
+            "aliases": []
+          },
+          {
+            "label": "Marble",
+            "aliases": []
+          },
+          {
+            "label": "Metamorphic rock",
+            "aliases": [
+              "Metamorphic"
+            ]
+          },
+          {
+            "label": "Sandstone",
+            "aliases": []
+          },
+          {
+            "label": "Sedimentary rock",
+            "aliases": [
+              "Sedimentary"
+            ]
+          },
+          {
+            "label": "Slate",
+            "aliases": []
+          }
+        ],
+        "100": [
+          {
+            "label": "Boninite",
+            "aliases": []
+          }
+        ]
+      }
+    }
+  ]
+}

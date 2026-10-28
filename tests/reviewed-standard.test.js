@@ -23,7 +23,7 @@ test('same-name repairs preserve one answer identity and never manufacture acron
  for(const query of ['GT','GTA V','AB','XY'])assert.notEqual(resolveAnswer(PACK_BY_ID.get('group-steam-open-world'),query).status,'exact');
 });
 test('retired recipes cannot survive old saved queues or randomly return in new rooms',()=>{
- const retired=['group-song-word-sun','distinct-kind-leather-n-01','distinct-facts-laboratory-processes'],pending=[...retired,...MIXED_PACKS.slice(0,30).map(p=>p.id)],queue=reshufflePracticeQueue(pending,random(4),'20261025-expansion-v1');assert.deepEqual(new Set(queue),new Set(pending.filter(id=>!retired.includes(id))));
+ const retired=['group-song-word-sun','distinct-kind-leather-n-01','distinct-facts-laboratory-processes'],pending=[...retired,...MIXED_PACKS.slice(0,30).map(p=>p.id)],queue=reshufflePracticeQueue(pending,random(4),'20261025-expansion-v1',MIXED_PACKS.map(p=>p.id));assert.deepEqual(new Set(queue),new Set(pending.filter(id=>!retired.includes(id))));
  for(let seed=0;seed<100;seed++){const deck=partyDeck(random(seed));assert.deepEqual(new Set(deck),new Set(PARTY_PACKS.map(p=>p.id)));assert.ok(!deck.some(id=>retired.includes(id)));}
  const draw=practiceDraw(pending,null,random(8));assert.ok(![...draw.ids,...draw.remaining].some(id=>retired.includes(id)));assert.equal(new Set(dailyPacks('2026-10-25').map(p=>p.family)).size,7);
 });

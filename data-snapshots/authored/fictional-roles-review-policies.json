@@ -1,0 +1,63 @@
+{
+  "fictional-spies": {
+    "holds": {},
+    "renameRepairs": {
+      "Felonius Gru": "Gru"
+    },
+    "aliasMerges": {
+      "Sam (Totally Spies)": [
+        "Sam"
+      ],
+      "Clover (Totally Spies)": [
+        "Clover"
+      ],
+      "Alex (Totally Spies)": [
+        "Alex"
+      ],
+      "John Smith (Mr. & Mrs. Smith)": [
+        "John Smith"
+      ],
+      "Jane Smith (Mr. & Mrs. Smith)": [
+        "Jane Smith"
+      ],
+      "Raiden (Metal Gear)": [
+        "Raiden"
+      ],
+      "Stan Smith (American Dad)": [
+        "Stan Smith"
+      ],
+      "Spy (Team Fortress 2)": [
+        "Spy"
+      ],
+      "Number Six (The Prisoner)": [
+        "Number Six",
+        "Number 6"
+      ],
+      "Mr. Black (Johnny Test)": [
+        "Mr. Black"
+      ],
+      "Mr. White (Johnny Test)": [
+        "Mr. White"
+      ],
+      "Felicity Flint": [
+        "Felicity Sarah Flint"
+      ],
+      "Desolation Jones": [
+        "Michael Desolation Jones",
+        "Michael Jones"
+      ],
+      "Gary Unwin": [
+        "Eggsy"
+      ],
+      "Loid Forger": [
+        "Twilight"
+      ],
+      "Big Boss": [
+        "Naked Snake"
+      ]
+    },
+    "displayNames": {},
+    "aliasHolds": {},
+    "normalizedVariantReviews": {}
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "questions": {
+    "authored-named-awards-prizes": {
+      "questions": 1,
+      "canonicalAnswers": 1793,
+      "originalCommonProbes": 35,
+      "tiers": {
+        "85": 1743,
+        "30": 26,
+        "10": 8,
+        "60": 15,
+        "100": 1
+      },
+      "reviewedSourceRows": 2012,
+      "heldSourceLeads": 416,
+      "scope": "Actual named awards, prizes, medals, orders and trophies across arts, sports, science and public life count, including historical awards and genuine named award families. Real named categories are answers within this one subject. A generic placing/medal, recipient, sponsor, organization, tournament, festival or hall-of-fame membership is not automatically a named award. Different awards sharing a public surname/title remain distinct and use qualifiers where needed.",
+      "sourceRoles": "Explicit source-role holds; sponsor, recipient, event, date, header and navbox are not automatically answers.",
+      "sourceRegions": "Source section labels are context, not inferred claims about current awarding authority or worldwide legal observance.",
+      "admission": "Only reviewed-standard/admission.json approves normal play; inventories and answer rows never count as new questions."
+    },
+    "authored-holidays-observances": {
+      "questions": 1,
+      "canonicalAnswers": 359,
+      "originalCommonProbes": 46,
+      "tiers": {
+        "85": 299,
+        "60": 13,
+        "30": 37,
+        "10": 9,
+        "100": 1
+      },
+      "reviewedSourceRows": 402,
+      "heldSourceLeads": 24,
+      "scope": "Real named religious/civic holidays, traditional festivals and established calendar observances count, including historical or regional observances and named periods such as Advent or Ramadan. Modern stand-alone concert/film festivals and conferences are a different subject. A calendar date, month, weekday, person, deity, place, ritual or campaign theme is not automatically an observance. Shared dates and related ancestry do not merge distinct observances; substitute dates do not create new ones.",
+      "sourceRoles": "Explicit source-role holds; sponsor, recipient, event, date, header and navbox are not automatically answers.",
+      "sourceRegions": "Source section labels are context, not inferred claims about current awarding authority or worldwide legal observance.",
+      "admission": "Only reviewed-standard/admission.json approves normal play; inventories and answer rows never count as new questions."
+    }
+  },
+  "questionCount": 2,
+  "status": "Source/identity decisions for two whole subjects; gameplay validation is tracked separately."
+}

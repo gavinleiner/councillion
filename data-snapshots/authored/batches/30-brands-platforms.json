@@ -1,0 +1,4915 @@
+{
+  "version": 1,
+  "questions": [
+    {
+      "id": "authored-hotel-brands",
+      "concept": "hotel-brands",
+      "family": "world",
+      "topic": "HOTELS AND TRAVEL",
+      "prompt": "Name a hotel chain or hotel brand.",
+      "scope": "Real current or historical hotel, motel, hostel and serviced-apartment brands/chains, branded hotel collections and primarily hotel-operating groups count. Single independent properties, booking/rental marketplaces, private-equity investors and unrelated parent companies do not. Genuine short names and brand renames share an answer.",
+      "format": "whole-familiar-brands-platforms",
+      "rationale": "One independently chosen recognizable whole subject. Complete retained public list sections and primary portfolios are reconciled with explicit heading/scope holds, historical continuity and actual public names. Invented initials, country slices and source headings never add answers or questions.",
+      "familiar": [
+        "Hilton",
+        "Marriott",
+        "Hyatt",
+        "Sheraton",
+        "Westin",
+        "Ritz-Carlton",
+        "St. Regis",
+        "Waldorf Astoria",
+        "Conrad",
+        "DoubleTree",
+        "Hampton Inn",
+        "Embassy Suites",
+        "Homewood Suites",
+        "Home2 Suites",
+        "Tru by Hilton",
+        "Canopy by Hilton",
+        "Curio Collection",
+        "Tapestry Collection",
+        "Four Seasons",
+        "Fairmont",
+        "Raffles",
+        "Rosewood",
+        "Mandarin Oriental",
+        "Kempinski",
+        "Peninsula",
+        "Aman",
+        "Banyan Tree",
+        "Shangri-La",
+        "Jumeirah",
+        "Oberoi",
+        "Taj",
+        "Belmond",
+        "Six Senses",
+        "InterContinental",
+        "Holiday Inn",
+        "Holiday Inn Express",
+        "Crowne Plaza",
+        "Kimpton",
+        "Hotel Indigo",
+        "Staybridge Suites",
+        "Candlewood Suites",
+        "Best Western",
+        "Days Inn",
+        "Super 8",
+        "Motel 6",
+        "Red Roof Inn",
+        "Comfort Inn",
+        "Quality Inn",
+        "Clarion",
+        "Sleep Inn",
+        "Rodeway Inn",
+        "Econo Lodge",
+        "Travelodge",
+        "Howard Johnson",
+        "Ramada",
+        "Wyndham",
+        "La Quinta",
+        "Baymont",
+        "Microtel",
+        "Courtyard",
+        "Residence Inn",
+        "Fairfield Inn",
+        "SpringHill Suites",
+        "TownePlace Suites",
+        "AC Hotels",
+        "Aloft",
+        "Element",
+        "W Hotels",
+        "Le Méridien",
+        "Renaissance",
+        "Autograph Collection",
+        "Moxy",
+        "Edition",
+        "Bulgari Hotels",
+        "Hyatt Regency",
+        "Hyatt Place",
+        "Hyatt House",
+        "Grand Hyatt",
+        "Park Hyatt",
+        "Andaz",
+        "Thompson Hotels",
+        "Alila",
+        "Ibis",
+        "Novotel",
+        "Sofitel",
+        "Mercure",
+        "Pullman",
+        "Mövenpick",
+        "Swissôtel",
+        "Rixos",
+        "Radisson",
+        "Radisson Blu",
+        "Park Inn",
+        "Country Inn & Suites",
+        "Sonesta",
+        "Omni",
+        "Loews",
+        "Drury",
+        "Premier Inn",
+        "CitizenM",
+        "Yotel",
+        "Graduate Hotels",
+        "Extended Stay America",
+        "Red Lion"
+      ],
+      "exclude": [
+        "Booking.com",
+        "Airbnb",
+        "Trivago",
+        "The Plaza Hotel",
+        "Denizen Hotels",
+        "Nickelodeon Resorts by Marriott",
+        "Homes & Villas by Marriott Bonvoy",
+        "Undergraduate by Hilton",
+        "Blackstone",
+        "Hawaii"
+      ],
+      "references": [
+        "https://en.wikipedia.org/wiki/List_of_chained-brand_hotels",
+        "https://www.ihg.com/content/us/en/about/brands",
+        "https://group.accor.com/en/brands-and-experiences/our-hotel-brands",
+        "https://www.hilton.com/en/brands/",
+        "https://www.marriott.com/brands.mi",
+        "https://en.wikipedia.org/wiki/List_of_defunct_hotel_chains",
+        "https://newsroom.hyatt.com/hyatt-hotels-corporation-fact-sheet",
+        "https://www.sonesta.com/our-brands",
+        "https://www.yotel.com/en/hotels",
+        "https://www.extendedstayamerica.com/",
+        "https://www.choicehotels.com/comfort-hotels",
+        "https://www.metropolohotels.com/",
+        "https://www.leonardo-hotels.com/",
+        "https://www.karismahotels.com/nickelodeon-hotels-resorts/our-resorts",
+        "https://www.frasershospitality.com/en/our-brands/",
+        "https://www.strawberryhotels.com/brands/",
+        "https://careers.hyatt.com/assets/documents/2025_CMT_US_Brochure.pdf",
+        "https://corporate.louvrehotels.com/en-us/our-brands/"
+      ],
+      "answers": {
+        "60": [
+          {
+            "label": "21c Museum Hotels",
+            "aliases": [
+              "21c MuseumHotel"
+            ]
+          },
+          {
+            "label": "25hours Hotels",
+            "aliases": [
+              "25 Hours"
+            ]
+          },
+          {
+            "label": "7 Days Inn",
+            "aliases": []
+          },
+          {
+            "label": "Accor",
+            "aliases": []
+          },
+          {
+            "label": "Adagio",
+            "aliases": []
+          },
+          {
+            "label": "Adam’s Mark",
+            "aliases": []
+          },
+          {
+            "label": "Admiral Benbow Inn",
+            "aliases": []
+          },
+          {
+            "label": "Albert Pick",
+            "aliases": []
+          },
+          {
+            "label": "AmericInn",
+            "aliases": []
+          },
+          {
+            "label": "Angsana",
+            "aliases": []
+          },
+          {
+            "label": "APA Group",
+            "aliases": []
+          },
+          {
+            "label": "APA Hotels",
+            "aliases": []
+          },
+          {
+            "label": "Art Series",
+            "aliases": []
+          },
+          {
+            "label": "ASAI HOTELS",
+            "aliases": []
+          },
+          {
+            "label": "Ascott",
+            "aliases": [
+              "Ascott Limited (The)"
+            ]
+          },
+          {
+            "label": "ASTON",
+            "aliases": []
+          },
+          {
+            "label": "Atlantis",
+            "aliases": []
+          },
+          {
+            "label": "Atwell Suites",
+            "aliases": []
+          },
+          {
+            "label": "Avari",
+            "aliases": [
+              "Avari Hotels",
+              "Avari hotels"
+            ]
+          },
+          {
+            "label": "Avid Hotels",
+            "aliases": []
+          },
+          {
+            "label": "Baglioni Hotels",
+            "aliases": [
+              "Baglioni"
+            ]
+          },
+          {
+            "label": "Barrière",
+            "aliases": []
+          },
+          {
+            "label": "Best Western Plus",
+            "aliases": []
+          },
+          {
+            "label": "Best Western Premier",
+            "aliases": []
+          },
+          {
+            "label": "BreakFree",
+            "aliases": []
+          },
+          {
+            "label": "BTG Homeinns",
+            "aliases": []
+          },
+          {
+            "label": "Bunkhouse",
+            "aliases": []
+          },
+          {
+            "label": "Cambria Hotels",
+            "aliases": [
+              "Cambria"
+            ]
+          },
+          {
+            "label": "Campanile",
+            "aliases": []
+          },
+          {
+            "label": "Campanile Nature",
+            "aliases": []
+          },
+          {
+            "label": "Campanile Prime",
+            "aliases": []
+          },
+          {
+            "label": "Capital O",
+            "aliases": []
+          },
+          {
+            "label": "Capri by Fraser",
+            "aliases": [
+              "Capri"
+            ]
+          },
+          {
+            "label": "Caption by Hyatt",
+            "aliases": []
+          },
+          {
+            "label": "Cassia",
+            "aliases": []
+          },
+          {
+            "label": "Centro Hotels",
+            "aliases": []
+          },
+          {
+            "label": "Chelsea Hotels",
+            "aliases": []
+          },
+          {
+            "label": "Choice Hotels",
+            "aliases": [
+              "Choice Hotels International"
+            ]
+          },
+          {
+            "label": "Cinnamon",
+            "aliases": [
+              "Cinnamon Hotels & Resorts",
+              "Cinnamon Hotels and Resorts"
+            ]
+          },
+          {
+            "label": "Citadines",
+            "aliases": []
+          },
+          {
+            "label": "City Express",
+            "aliases": []
+          },
+          {
+            "label": "Clarion Pointe",
+            "aliases": []
+          },
+          {
+            "label": "Classico",
+            "aliases": [
+              "Classico A Sonesta Collection"
+            ]
+          },
+          {
+            "label": "Clayton",
+            "aliases": []
+          },
+          {
+            "label": "Coast Hotels",
+            "aliases": []
+          },
+          {
+            "label": "Collection by ASTON",
+            "aliases": []
+          },
+          {
+            "label": "Collection O",
+            "aliases": []
+          },
+          {
+            "label": "Comfort Hotel",
+            "aliases": []
+          },
+          {
+            "label": "Comfort Suites",
+            "aliases": []
+          },
+          {
+            "label": "Copthorne Hotels",
+            "aliases": [
+              "Copthorne"
+            ]
+          },
+          {
+            "label": "Cordis Hotels",
+            "aliases": []
+          },
+          {
+            "label": "Crest Hotels",
+            "aliases": []
+          },
+          {
+            "label": "Cross Country Inn",
+            "aliases": []
+          },
+          {
+            "label": "Dalata Hotel Group",
+            "aliases": []
+          },
+          {
+            "label": "Dazzler",
+            "aliases": []
+          },
+          {
+            "label": "Delano",
+            "aliases": []
+          },
+          {
+            "label": "Delta Hotels",
+            "aliases": [
+              "Delta",
+              "Delta Hotels by Marriott"
+            ]
+          },
+          {
+            "label": "Design Hotels",
+            "aliases": []
+          },
+          {
+            "label": "Destination by Hyatt",
+            "aliases": []
+          },
+          {
+            "label": "Dhawa",
+            "aliases": []
+          },
+          {
+            "label": "Dolce",
+            "aliases": []
+          },
+          {
+            "label": "Dream Hotels",
+            "aliases": []
+          },
+          {
+            "label": "Drury Inn",
+            "aliases": []
+          },
+          {
+            "label": "Drury Inn and Suites",
+            "aliases": []
+          },
+          {
+            "label": "Drury Plaza Hotel",
+            "aliases": []
+          },
+          {
+            "label": "Drury Suites",
+            "aliases": []
+          },
+          {
+            "label": "Dusit",
+            "aliases": [
+              "Dusit International"
+            ]
+          },
+          {
+            "label": "dusitD2",
+            "aliases": []
+          },
+          {
+            "label": "Dusit Devarana",
+            "aliases": []
+          },
+          {
+            "label": "Dusit Princess",
+            "aliases": []
+          },
+          {
+            "label": "Dusit Residence",
+            "aliases": []
+          },
+          {
+            "label": "Dusit Thani",
+            "aliases": []
+          },
+          {
+            "label": "Eaton Hotels",
+            "aliases": []
+          },
+          {
+            "label": "Edge",
+            "aliases": []
+          },
+          {
+            "label": "Elan Hotel",
+            "aliases": []
+          },
+          {
+            "label": "Elewana Collection",
+            "aliases": []
+          },
+          {
+            "label": "Emblems Collection",
+            "aliases": []
+          },
+          {
+            "label": "Esplendor",
+            "aliases": []
+          },
+          {
+            "label": "Esso Motor Hotel",
+            "aliases": []
+          },
+          {
+            "label": "Estudio 6",
+            "aliases": []
+          },
+          {
+            "label": "EVEN Hotels",
+            "aliases": []
+          },
+          {
+            "label": "Exel Inn",
+            "aliases": []
+          },
+          {
+            "label": "Faena",
+            "aliases": []
+          },
+          {
+            "label": "Fairyland Hotels",
+            "aliases": []
+          },
+          {
+            "label": "favehotels",
+            "aliases": []
+          },
+          {
+            "label": "Fortune",
+            "aliases": []
+          },
+          {
+            "label": "Four Pillars Hotels",
+            "aliases": []
+          },
+          {
+            "label": "Fox Hotels",
+            "aliases": []
+          },
+          {
+            "label": "Fraser Place",
+            "aliases": []
+          },
+          {
+            "label": "Fraser Residence",
+            "aliases": []
+          },
+          {
+            "label": "Frasers Hospitality",
+            "aliases": []
+          },
+          {
+            "label": "Fraser Suites",
+            "aliases": []
+          },
+          {
+            "label": "Fred Harvey Company",
+            "aliases": []
+          },
+          {
+            "label": "Friendship Inn",
+            "aliases": []
+          },
+          {
+            "label": "Garner",
+            "aliases": []
+          },
+          {
+            "label": "Gaylord Hotels",
+            "aliases": []
+          },
+          {
+            "label": "Ginger Hotels",
+            "aliases": [
+              "Ginger"
+            ]
+          },
+          {
+            "label": "Glō",
+            "aliases": []
+          },
+          {
+            "label": "Golden Tulip",
+            "aliases": [
+              "Golden Tulip Hotels"
+            ]
+          },
+          {
+            "label": "Grand Mercure",
+            "aliases": [
+              "Grand Mercure Hotel"
+            ]
+          },
+          {
+            "label": "Gran Dorado",
+            "aliases": []
+          },
+          {
+            "label": "Grand Prince",
+            "aliases": []
+          },
+          {
+            "label": "Gran Meliá",
+            "aliases": []
+          },
+          {
+            "label": "GreenTree Eastern",
+            "aliases": []
+          },
+          {
+            "label": "GreenTree Inn",
+            "aliases": [
+              "GreenTree Inns"
+            ]
+          },
+          {
+            "label": "greet",
+            "aliases": []
+          },
+          {
+            "label": "GTA Hotel",
+            "aliases": []
+          },
+          {
+            "label": "GuestHouse",
+            "aliases": []
+          },
+          {
+            "label": "HanTing Hotel",
+            "aliases": []
+          },
+          {
+            "label": "HanTing Plus Hotel",
+            "aliases": []
+          },
+          {
+            "label": "HARPER",
+            "aliases": []
+          },
+          {
+            "label": "Hawthorn Suites",
+            "aliases": []
+          },
+          {
+            "label": "Hi Inn",
+            "aliases": []
+          },
+          {
+            "label": "Hilton Garden Inn",
+            "aliases": []
+          },
+          {
+            "label": "Hiway House",
+            "aliases": []
+          },
+          {
+            "label": "Holiday Inn Resort",
+            "aliases": []
+          },
+          {
+            "label": "Home Hotel",
+            "aliases": [
+              "Clarion Collection",
+              "Clarion Collection Hotel"
+            ]
+          },
+          {
+            "label": "Homeinn Plus",
+            "aliases": []
+          },
+          {
+            "label": "Home Inns",
+            "aliases": []
+          },
+          {
+            "label": "HomeTowne Studios",
+            "aliases": [
+              "HomeTowne Studios by Red Roof"
+            ]
+          },
+          {
+            "label": "Horne’s",
+            "aliases": []
+          },
+          {
+            "label": "Hoshino Resorts",
+            "aliases": [
+              "Hoshino"
+            ]
+          },
+          {
+            "label": "Hoshinoya",
+            "aliases": []
+          },
+          {
+            "label": "Hosho",
+            "aliases": []
+          },
+          {
+            "label": "Hotel 6",
+            "aliases": []
+          },
+          {
+            "label": "Hotel du Vin",
+            "aliases": [
+              "Hotel du Vin & Bistro"
+            ]
+          },
+          {
+            "label": "HotelF1",
+            "aliases": []
+          },
+          {
+            "label": "Hotel JAL City",
+            "aliases": []
+          },
+          {
+            "label": "Hotel Jen",
+            "aliases": []
+          },
+          {
+            "label": "HotelNeo",
+            "aliases": []
+          },
+          {
+            "label": "Hotel One Vogue",
+            "aliases": []
+          },
+          {
+            "label": "Hotel RL",
+            "aliases": []
+          },
+          {
+            "label": "Hôtels & Préférence",
+            "aliases": []
+          },
+          {
+            "label": "Hualuxe",
+            "aliases": [
+              "HUALUXE Hotels & Resorts",
+              "Hualuxe Hotels & Resorts"
+            ]
+          },
+          {
+            "label": "hub by Premier Inn",
+            "aliases": []
+          },
+          {
+            "label": "Huxley",
+            "aliases": []
+          },
+          {
+            "label": "H World",
+            "aliases": [
+              "H World Group",
+              "Huazhu Hotels Group"
+            ]
+          },
+          {
+            "label": "Hyatt Centric",
+            "aliases": []
+          },
+          {
+            "label": "Hyatt Studios",
+            "aliases": []
+          },
+          {
+            "label": "Hyatt Vacation Club",
+            "aliases": [
+              "Hyatt Residence Club"
+            ]
+          },
+          {
+            "label": "Hyatt Zilara",
+            "aliases": []
+          },
+          {
+            "label": "Hyatt Ziva",
+            "aliases": []
+          },
+          {
+            "label": "Hyde",
+            "aliases": []
+          },
+          {
+            "label": "Iberostar Selection",
+            "aliases": []
+          },
+          {
+            "label": "Iberostar Waves",
+            "aliases": []
+          },
+          {
+            "label": "Ibis Budget",
+            "aliases": []
+          },
+          {
+            "label": "Ibis Styles",
+            "aliases": []
+          },
+          {
+            "label": "IHG",
+            "aliases": [
+              "IHG Hotels & Resorts",
+              "InterContinental Hotels Group"
+            ]
+          },
+          {
+            "label": "Imperial 400",
+            "aliases": []
+          },
+          {
+            "label": "Innside",
+            "aliases": []
+          },
+          {
+            "label": "InTown Suites",
+            "aliases": []
+          },
+          {
+            "label": "ITC Hotels",
+            "aliases": []
+          },
+          {
+            "label": "J",
+            "aliases": []
+          },
+          {
+            "label": "Jack Tar Hotels",
+            "aliases": []
+          },
+          {
+            "label": "JdV by Hyatt",
+            "aliases": [
+              "Joie de Vivre"
+            ]
+          },
+          {
+            "label": "Jetwing",
+            "aliases": [
+              "Jetwing Hotels",
+              "Jetwing Hotels Ltd"
+            ]
+          },
+          {
+            "label": "JI Hotel",
+            "aliases": []
+          },
+          {
+            "label": "Jinjiang",
+            "aliases": []
+          },
+          {
+            "label": "Jinjiang Inns",
+            "aliases": [
+              "Jinjiang Inn"
+            ]
+          },
+          {
+            "label": "JOIA by Iberostar",
+            "aliases": []
+          },
+          {
+            "label": "Jo&Joe",
+            "aliases": []
+          },
+          {
+            "label": "Joya Hotel",
+            "aliases": []
+          },
+          {
+            "label": "JW Marriott",
+            "aliases": [
+              "JW Marriott Hotels"
+            ]
+          },
+          {
+            "label": "Kai",
+            "aliases": []
+          },
+          {
+            "label": "Kamuela Villas",
+            "aliases": []
+          },
+          {
+            "label": "Kerry Hotels",
+            "aliases": []
+          },
+          {
+            "label": "KHOS",
+            "aliases": []
+          },
+          {
+            "label": "Kingsgate Hotels",
+            "aliases": []
+          },
+          {
+            "label": "Knights Inn",
+            "aliases": []
+          },
+          {
+            "label": "Kunlun",
+            "aliases": []
+          },
+          {
+            "label": "Kyriad",
+            "aliases": []
+          },
+          {
+            "label": "L7 hotels",
+            "aliases": []
+          },
+          {
+            "label": "Langham",
+            "aliases": [
+              "Langham Hospitality Group",
+              "Langham Hotels"
+            ]
+          },
+          {
+            "label": "Langham Place Hotels",
+            "aliases": []
+          },
+          {
+            "label": "Lees Inn",
+            "aliases": []
+          },
+          {
+            "label": "Leonardo Hotels",
+            "aliases": [
+              "Jurys Inn"
+            ]
+          },
+          {
+            "label": "LivSmart Studios",
+            "aliases": [
+              "LivSmart Studios by Hilton"
+            ]
+          },
+          {
+            "label": "Lotte City Hotels",
+            "aliases": []
+          },
+          {
+            "label": "Lotte Hotels",
+            "aliases": [
+              "Lotte Hotels & Resorts"
+            ]
+          },
+          {
+            "label": "Lotte Resorts",
+            "aliases": []
+          },
+          {
+            "label": "Luxury Collection",
+            "aliases": [
+              "The Luxury Collection"
+            ]
+          },
+          {
+            "label": "LXR Hotels & Resorts",
+            "aliases": [
+              "LXR"
+            ]
+          },
+          {
+            "label": "lyf",
+            "aliases": []
+          },
+          {
+            "label": "Magnuson Grand",
+            "aliases": []
+          },
+          {
+            "label": "Magnuson Hotels",
+            "aliases": []
+          },
+          {
+            "label": "MainStay Suites",
+            "aliases": []
+          },
+          {
+            "label": "Maldron",
+            "aliases": []
+          },
+          {
+            "label": "Malmaison",
+            "aliases": []
+          },
+          {
+            "label": "Mama Shelter",
+            "aliases": []
+          },
+          {
+            "label": "Mantis",
+            "aliases": []
+          },
+          {
+            "label": "Mantra",
+            "aliases": []
+          },
+          {
+            "label": "Maqo",
+            "aliases": []
+          },
+          {
+            "label": "Marco Polo Hotels",
+            "aliases": []
+          },
+          {
+            "label": "me and all hotels",
+            "aliases": []
+          },
+          {
+            "label": "ME by Meliá",
+            "aliases": []
+          },
+          {
+            "label": "Meliá",
+            "aliases": [
+              "Meliá Hotels International"
+            ]
+          },
+          {
+            "label": "Mementos",
+            "aliases": []
+          },
+          {
+            "label": "Metropolo",
+            "aliases": []
+          },
+          {
+            "label": "MGallery",
+            "aliases": [
+              "MGallery Collection"
+            ]
+          },
+          {
+            "label": "M Hotels",
+            "aliases": []
+          },
+          {
+            "label": "Millennium Hotels",
+            "aliases": []
+          },
+          {
+            "label": "Minor Hotels",
+            "aliases": []
+          },
+          {
+            "label": "Miraval",
+            "aliases": []
+          },
+          {
+            "label": "Modena by Fraser",
+            "aliases": [
+              "Modena"
+            ]
+          },
+          {
+            "label": "Mondrian",
+            "aliases": []
+          },
+          {
+            "label": "Morgans Hotel Group",
+            "aliases": []
+          },
+          {
+            "label": "Morgans Originals",
+            "aliases": [
+              "The House of Originals"
+            ]
+          },
+          {
+            "label": "Motel 168",
+            "aliases": []
+          },
+          {
+            "label": "Motto by Hilton",
+            "aliases": []
+          },
+          {
+            "label": "M Star Hotels",
+            "aliases": []
+          },
+          {
+            "label": "New World Hotels",
+            "aliases": []
+          },
+          {
+            "label": "NH Collection",
+            "aliases": []
+          },
+          {
+            "label": "NH Hotels",
+            "aliases": [
+              "NH Hotel Group"
+            ]
+          },
+          {
+            "label": "nhow Hotels",
+            "aliases": []
+          },
+          {
+            "label": "Niccolo Hotels",
+            "aliases": []
+          },
+          {
+            "label": "Nikko Hotels",
+            "aliases": []
+          },
+          {
+            "label": "NoMad",
+            "aliases": []
+          },
+          {
+            "label": "Nomad Hostels",
+            "aliases": []
+          },
+          {
+            "label": "Oakwood",
+            "aliases": []
+          },
+          {
+            "label": "Oakwood Premier",
+            "aliases": []
+          },
+          {
+            "label": "OMO",
+            "aliases": []
+          },
+          {
+            "label": "One&Only Resorts",
+            "aliases": []
+          },
+          {
+            "label": "Orange Hotel",
+            "aliases": []
+          },
+          {
+            "label": "Orange Selected",
+            "aliases": []
+          },
+          {
+            "label": "Orient Express",
+            "aliases": []
+          },
+          {
+            "label": "Our Habitas",
+            "aliases": []
+          },
+          {
+            "label": "Outrigger",
+            "aliases": []
+          },
+          {
+            "label": "OYO",
+            "aliases": [
+              "OYO Rooms"
+            ]
+          },
+          {
+            "label": "OYO Home",
+            "aliases": []
+          },
+          {
+            "label": "OYO Life",
+            "aliases": []
+          },
+          {
+            "label": "OYO Townhouse",
+            "aliases": []
+          },
+          {
+            "label": "Palette Resort",
+            "aliases": []
+          },
+          {
+            "label": "Pan Pacific",
+            "aliases": [
+              "Pan Pacific Hotels and Resorts"
+            ]
+          },
+          {
+            "label": "Paradisus",
+            "aliases": []
+          },
+          {
+            "label": "Park Plaza",
+            "aliases": []
+          },
+          {
+            "label": "PARKROYAL",
+            "aliases": []
+          },
+          {
+            "label": "PARKROYAL Collection",
+            "aliases": []
+          },
+          {
+            "label": "Patio Hotels",
+            "aliases": []
+          },
+          {
+            "label": "PC Legacy",
+            "aliases": []
+          },
+          {
+            "label": "PC Residences",
+            "aliases": []
+          },
+          {
+            "label": "Pear Tree Inn",
+            "aliases": []
+          },
+          {
+            "label": "Pentahotels",
+            "aliases": []
+          },
+          {
+            "label": "Peppers",
+            "aliases": []
+          },
+          {
+            "label": "POP! Hotels",
+            "aliases": []
+          },
+          {
+            "label": "Preference Hotels",
+            "aliases": []
+          },
+          {
+            "label": "Première Classe",
+            "aliases": []
+          },
+          {
+            "label": "Prince Hotels",
+            "aliases": [
+              "Prince"
+            ]
+          },
+          {
+            "label": "prizeotel",
+            "aliases": []
+          },
+          {
+            "label": "Protea Hotels",
+            "aliases": []
+          },
+          {
+            "label": "Quality Hotel",
+            "aliases": []
+          },
+          {
+            "label": "Quest Hotels",
+            "aliases": []
+          },
+          {
+            "label": "Radisson Collection",
+            "aliases": []
+          },
+          {
+            "label": "Radisson Hotel Group",
+            "aliases": [
+              "Carlson Rezidor"
+            ]
+          },
+          {
+            "label": "Radisson Red",
+            "aliases": []
+          },
+          {
+            "label": "Ramada Jarvis",
+            "aliases": []
+          },
+          {
+            "label": "Rare Finds",
+            "aliases": []
+          },
+          {
+            "label": "Red Planet Hotels",
+            "aliases": [
+              "Red Planet"
+            ]
+          },
+          {
+            "label": "Red Roof PLUS+",
+            "aliases": []
+          },
+          {
+            "label": "Regent",
+            "aliases": [
+              "Regent Hotels",
+              "Regent Hotels & Resorts"
+            ]
+          },
+          {
+            "label": "Rica Hotels",
+            "aliases": []
+          },
+          {
+            "label": "Risonare",
+            "aliases": []
+          },
+          {
+            "label": "Ritz-Carlton Reserve",
+            "aliases": [
+              "The Ritz-Carlton Reserve"
+            ]
+          },
+          {
+            "label": "RIU",
+            "aliases": [
+              "RIU Hotels & Resorts"
+            ]
+          },
+          {
+            "label": "RIU Holiday",
+            "aliases": []
+          },
+          {
+            "label": "RIU Plaza",
+            "aliases": []
+          },
+          {
+            "label": "Rocco Forte Hotels",
+            "aliases": []
+          },
+          {
+            "label": "Rock Garden",
+            "aliases": []
+          },
+          {
+            "label": "Rotana",
+            "aliases": [
+              "Rotana Hotels",
+              "Rotana Hotels & Resorts"
+            ]
+          },
+          {
+            "label": "Royal Sonesta",
+            "aliases": [
+              "The Royal Sonesta"
+            ]
+          },
+          {
+            "label": "Royal Tulip",
+            "aliases": []
+          },
+          {
+            "label": "Ruby",
+            "aliases": [
+              "Ruby Hotels"
+            ]
+          },
+          {
+            "label": "Sadie",
+            "aliases": []
+          },
+          {
+            "label": "SAii",
+            "aliases": []
+          },
+          {
+            "label": "Santiburi",
+            "aliases": []
+          },
+          {
+            "label": "Sarovar",
+            "aliases": []
+          },
+          {
+            "label": "Scandic",
+            "aliases": [
+              "Scandic Hotels"
+            ]
+          },
+          {
+            "label": "SeleQtions",
+            "aliases": []
+          },
+          {
+            "label": "Series by Marriott",
+            "aliases": []
+          },
+          {
+            "label": "Shell Hotel",
+            "aliases": []
+          },
+          {
+            "label": "Shilo Inns",
+            "aliases": []
+          },
+          {
+            "label": "Shoney's Inn",
+            "aliases": []
+          },
+          {
+            "label": "S Hotels & Resorts",
+            "aliases": []
+          },
+          {
+            "label": "Signature Inn",
+            "aliases": []
+          },
+          {
+            "label": "Signia by Hilton",
+            "aliases": [
+              "Signia Hilton"
+            ]
+          },
+          {
+            "label": "Signiel",
+            "aliases": []
+          },
+          {
+            "label": "Silver Key",
+            "aliases": []
+          },
+          {
+            "label": "Siro Hotels",
+            "aliases": []
+          },
+          {
+            "label": "SLS",
+            "aliases": []
+          },
+          {
+            "label": "SO/",
+            "aliases": []
+          },
+          {
+            "label": "Sofitel Legend",
+            "aliases": []
+          },
+          {
+            "label": "Sol",
+            "aliases": []
+          },
+          {
+            "label": "Somerset",
+            "aliases": []
+          },
+          {
+            "label": "Sonesta Essential",
+            "aliases": []
+          },
+          {
+            "label": "Sonesta ES Suites",
+            "aliases": []
+          },
+          {
+            "label": "Soneva",
+            "aliases": []
+          },
+          {
+            "label": "Spark by Hilton",
+            "aliases": [
+              "Spark"
+            ]
+          },
+          {
+            "label": "Spot On",
+            "aliases": []
+          },
+          {
+            "label": "Stakis Hotels",
+            "aliases": []
+          },
+          {
+            "label": "Starway Hotel",
+            "aliases": []
+          },
+          {
+            "label": "Starwood",
+            "aliases": []
+          },
+          {
+            "label": "Statler Hotels",
+            "aliases": []
+          },
+          {
+            "label": "Stopover",
+            "aliases": []
+          },
+          {
+            "label": "Storii",
+            "aliases": []
+          },
+          {
+            "label": "Strawberry",
+            "aliases": [
+              "Nordic Choice Hotels"
+            ]
+          },
+          {
+            "label": "Studio 6",
+            "aliases": []
+          },
+          {
+            "label": "StudioRes",
+            "aliases": []
+          },
+          {
+            "label": "Suburban Studios",
+            "aliases": [
+              "Suburban Extended Stay Hotels"
+            ]
+          },
+          {
+            "label": "SureStay",
+            "aliases": [
+              "SureStay Hotel by Best Western"
+            ]
+          },
+          {
+            "label": "SureStay Collection",
+            "aliases": [
+              "SureStay Collection by Best Western"
+            ]
+          },
+          {
+            "label": "SureStay Plus",
+            "aliases": [
+              "SureStay Plus Hotel by Best Western"
+            ]
+          },
+          {
+            "label": "Susse Chalet",
+            "aliases": []
+          },
+          {
+            "label": "Swallow Hotels",
+            "aliases": []
+          },
+          {
+            "label": "Tage Inn",
+            "aliases": []
+          },
+          {
+            "label": "Taj Exotica",
+            "aliases": []
+          },
+          {
+            "label": "Temple Hotels",
+            "aliases": []
+          },
+          {
+            "label": "Tempo by Hilton",
+            "aliases": []
+          },
+          {
+            "label": "TemptingPlaces",
+            "aliases": []
+          },
+          {
+            "label": "The Alana",
+            "aliases": []
+          },
+          {
+            "label": "The Crest Collection",
+            "aliases": []
+          },
+          {
+            "label": "The Gateway",
+            "aliases": []
+          },
+          {
+            "label": "The Hotel Collection",
+            "aliases": []
+          },
+          {
+            "label": "The Hoxton",
+            "aliases": []
+          },
+          {
+            "label": "The James Hotels",
+            "aliases": []
+          },
+          {
+            "label": "The Okura Prestige",
+            "aliases": []
+          },
+          {
+            "label": "The Prince",
+            "aliases": []
+          },
+          {
+            "label": "The Red Collection",
+            "aliases": []
+          },
+          {
+            "label": "The Sebel",
+            "aliases": []
+          },
+          {
+            "label": "The Standard",
+            "aliases": []
+          },
+          {
+            "label": "Toyoko Inn",
+            "aliases": []
+          },
+          {
+            "label": "Trademark",
+            "aliases": []
+          },
+          {
+            "label": "Traders Hotels",
+            "aliases": []
+          },
+          {
+            "label": "Treebo",
+            "aliases": []
+          },
+          {
+            "label": "Tribe",
+            "aliases": []
+          },
+          {
+            "label": "Tribute Portfolio",
+            "aliases": []
+          },
+          {
+            "label": "Trident Hotels",
+            "aliases": []
+          },
+          {
+            "label": "Trusthouse Forte",
+            "aliases": [
+              "Forte Group"
+            ]
+          },
+          {
+            "label": "Trust Houses Ltd",
+            "aliases": []
+          },
+          {
+            "label": "TRYP",
+            "aliases": []
+          },
+          {
+            "label": "Tulip Inn",
+            "aliases": []
+          },
+          {
+            "label": "UrCove by Hyatt",
+            "aliases": [
+              "UrCove"
+            ]
+          },
+          {
+            "label": "Vantage Hospitality",
+            "aliases": []
+          },
+          {
+            "label": "Vatica Hotel",
+            "aliases": []
+          },
+          {
+            "label": "Vertu",
+            "aliases": []
+          },
+          {
+            "label": "Vīb",
+            "aliases": []
+          },
+          {
+            "label": "Vienna",
+            "aliases": []
+          },
+          {
+            "label": "Vignette Collection",
+            "aliases": []
+          },
+          {
+            "label": "Vivanta",
+            "aliases": []
+          },
+          {
+            "label": "voco",
+            "aliases": []
+          },
+          {
+            "label": "WelcomHeritage",
+            "aliases": []
+          },
+          {
+            "label": "WelcomHotel",
+            "aliases": []
+          },
+          {
+            "label": "Westgate Resorts",
+            "aliases": []
+          },
+          {
+            "label": "Wharf Hotels",
+            "aliases": []
+          },
+          {
+            "label": "Whitbread",
+            "aliases": []
+          },
+          {
+            "label": "Wilson World Hotels",
+            "aliases": []
+          },
+          {
+            "label": "Wingate",
+            "aliases": []
+          },
+          {
+            "label": "WoodSpring Suites",
+            "aliases": []
+          },
+          {
+            "label": "Wyndham Garden",
+            "aliases": []
+          },
+          {
+            "label": "Wyndham Grand",
+            "aliases": []
+          },
+          {
+            "label": "YELLO",
+            "aliases": []
+          },
+          {
+            "label": "YotelAir",
+            "aliases": []
+          },
+          {
+            "label": "YotelPad",
+            "aliases": []
+          },
+          {
+            "label": "Zabeel House",
+            "aliases": []
+          }
+        ],
+        "30": [
+          {
+            "label": "AC Hotels",
+            "aliases": []
+          },
+          {
+            "label": "Alila",
+            "aliases": []
+          },
+          {
+            "label": "Aloft",
+            "aliases": [
+              "Aloft Hotels"
+            ]
+          },
+          {
+            "label": "Aman",
+            "aliases": [
+              "Aman Resorts"
+            ]
+          },
+          {
+            "label": "Andaz",
+            "aliases": []
+          },
+          {
+            "label": "Autograph Collection",
+            "aliases": []
+          },
+          {
+            "label": "Banyan Tree",
+            "aliases": [
+              "Banyan Group Limited",
+              "Banyan Tree Hótels and Resorts"
+            ]
+          },
+          {
+            "label": "Baymont",
+            "aliases": []
+          },
+          {
+            "label": "Belmond",
+            "aliases": [
+              "Belmond Limited"
+            ]
+          },
+          {
+            "label": "Best Western",
+            "aliases": [
+              "Best Western Hotels"
+            ]
+          },
+          {
+            "label": "Bulgari Hotels",
+            "aliases": [
+              "Bvlgari Hotels"
+            ]
+          },
+          {
+            "label": "Candlewood Suites",
+            "aliases": []
+          },
+          {
+            "label": "Canopy by Hilton",
+            "aliases": [
+              "Canopy Hotels"
+            ]
+          },
+          {
+            "label": "citizenM",
+            "aliases": []
+          },
+          {
+            "label": "Clarion",
+            "aliases": [
+              "Clarion Hotel",
+              "Clarion Hotels"
+            ]
+          },
+          {
+            "label": "Comfort Inn",
+            "aliases": [
+              "Comfort Inn & Suites"
+            ]
+          },
+          {
+            "label": "Conrad",
+            "aliases": [
+              "Conrad Hotels",
+              "Conrad Hotels & Resorts"
+            ]
+          },
+          {
+            "label": "Country Inn & Suites",
+            "aliases": [
+              "Country Inns & Suites"
+            ]
+          },
+          {
+            "label": "Courtyard",
+            "aliases": [
+              "Courtyard by Marriott"
+            ]
+          },
+          {
+            "label": "Crowne Plaza",
+            "aliases": []
+          },
+          {
+            "label": "Curio Collection",
+            "aliases": [
+              "Curio Collection by Hilton"
+            ]
+          },
+          {
+            "label": "Days Inn",
+            "aliases": []
+          },
+          {
+            "label": "DoubleTree",
+            "aliases": [
+              "DoubleTree by Hilton"
+            ]
+          },
+          {
+            "label": "Drury",
+            "aliases": [
+              "Drury Hotels"
+            ]
+          },
+          {
+            "label": "Econo Lodge",
+            "aliases": []
+          },
+          {
+            "label": "Edition",
+            "aliases": [
+              "Edition Hotels"
+            ]
+          },
+          {
+            "label": "Element",
+            "aliases": [
+              "Element Hotels"
+            ]
+          },
+          {
+            "label": "Embassy Suites",
+            "aliases": [
+              "Embassy Suites Hotels",
+              "Embassy Suites by Hilton"
+            ]
+          },
+          {
+            "label": "Extended Stay America",
+            "aliases": [
+              "Extended Stay"
+            ]
+          },
+          {
+            "label": "Fairfield Inn",
+            "aliases": [
+              "Fairfield",
+              "Fairfield Inn & Suites",
+              "Fairfield Inn by Marriott",
+              "Fairfield by Marriott"
+            ]
+          },
+          {
+            "label": "Fairmont",
+            "aliases": []
+          },
+          {
+            "label": "Four Seasons",
+            "aliases": [
+              "Four Seasons Hotels",
+              "Four Seasons Hotels and Resorts"
+            ]
+          },
+          {
+            "label": "Graduate Hotels",
+            "aliases": [
+              "Graduate by Hilton"
+            ]
+          },
+          {
+            "label": "Grand Hyatt",
+            "aliases": []
+          },
+          {
+            "label": "Hampton Inn",
+            "aliases": [
+              "Hampton",
+              "Hampton Inn & Suites",
+              "Hampton by Hilton"
+            ]
+          },
+          {
+            "label": "Holiday Inn",
+            "aliases": []
+          },
+          {
+            "label": "Holiday Inn Express",
+            "aliases": []
+          },
+          {
+            "label": "Home2 Suites",
+            "aliases": [
+              "Home2 Suites by Hilton"
+            ]
+          },
+          {
+            "label": "Homewood Suites",
+            "aliases": [
+              "Homewood Suites by Hilton"
+            ]
+          },
+          {
+            "label": "Hotel Indigo",
+            "aliases": []
+          },
+          {
+            "label": "Howard Johnson",
+            "aliases": [
+              "Howard Johnson's"
+            ]
+          },
+          {
+            "label": "Hyatt House",
+            "aliases": [
+              "Hyatt House Hotels",
+              "Summerfield Suites"
+            ]
+          },
+          {
+            "label": "Hyatt Place",
+            "aliases": [
+              "AmeriSuites",
+              "Amerisuites Hotels"
+            ]
+          },
+          {
+            "label": "Hyatt Regency",
+            "aliases": []
+          },
+          {
+            "label": "Ibis",
+            "aliases": []
+          },
+          {
+            "label": "InterContinental",
+            "aliases": [
+              "InterContinental Hotels and Resorts"
+            ]
+          },
+          {
+            "label": "Jumeirah",
+            "aliases": []
+          },
+          {
+            "label": "Kempinski",
+            "aliases": []
+          },
+          {
+            "label": "Kimpton",
+            "aliases": [
+              "Kimpton Hotels & Restaurants"
+            ]
+          },
+          {
+            "label": "La Quinta",
+            "aliases": [
+              "La Quinta Inn & Suites"
+            ]
+          },
+          {
+            "label": "Le Méridien",
+            "aliases": []
+          },
+          {
+            "label": "Loews",
+            "aliases": [
+              "Loews Hotels"
+            ]
+          },
+          {
+            "label": "Mandarin Oriental",
+            "aliases": [
+              "Mandarin Oriental Hotel Group"
+            ]
+          },
+          {
+            "label": "Mercure",
+            "aliases": []
+          },
+          {
+            "label": "Microtel",
+            "aliases": []
+          },
+          {
+            "label": "Motel 6",
+            "aliases": []
+          },
+          {
+            "label": "Mövenpick",
+            "aliases": []
+          },
+          {
+            "label": "Moxy",
+            "aliases": [
+              "MOXY Hotels",
+              "Moxy Hotels"
+            ]
+          },
+          {
+            "label": "Novotel",
+            "aliases": []
+          },
+          {
+            "label": "Oberoi",
+            "aliases": [
+              "Oberoi Group",
+              "Oberoi Hotels"
+            ]
+          },
+          {
+            "label": "Omni",
+            "aliases": [
+              "Omni Hotels & Resorts"
+            ]
+          },
+          {
+            "label": "Park Hyatt",
+            "aliases": []
+          },
+          {
+            "label": "Park Inn",
+            "aliases": [
+              "Park Inn by Radisson"
+            ]
+          },
+          {
+            "label": "Peninsula",
+            "aliases": [
+              "The Peninsula Hotels"
+            ]
+          },
+          {
+            "label": "Premier Inn",
+            "aliases": [
+              "Premier Inns"
+            ]
+          },
+          {
+            "label": "Pullman",
+            "aliases": []
+          },
+          {
+            "label": "Quality Inn",
+            "aliases": [
+              "Quality"
+            ]
+          },
+          {
+            "label": "Radisson",
+            "aliases": []
+          },
+          {
+            "label": "Radisson Blu",
+            "aliases": []
+          },
+          {
+            "label": "Raffles",
+            "aliases": []
+          },
+          {
+            "label": "Ramada",
+            "aliases": []
+          },
+          {
+            "label": "Red Lion",
+            "aliases": [
+              "Red Lion Hotels",
+              "Red Lion Hotels Corporation"
+            ]
+          },
+          {
+            "label": "Red Roof Inn",
+            "aliases": [
+              "Red Roof"
+            ]
+          },
+          {
+            "label": "Renaissance",
+            "aliases": [
+              "Renaissance Hotels"
+            ]
+          },
+          {
+            "label": "Residence Inn",
+            "aliases": [
+              "Residence Inn by Marriott"
+            ]
+          },
+          {
+            "label": "Rixos",
+            "aliases": []
+          },
+          {
+            "label": "Rodeway Inn",
+            "aliases": []
+          },
+          {
+            "label": "Rosewood",
+            "aliases": [
+              "Rosewood Hotel Group",
+              "Rosewood Hotels & Resorts"
+            ]
+          },
+          {
+            "label": "Shangri-La",
+            "aliases": [
+              "Shangri-La Hotels",
+              "Shangri-La Hotels and Resorts"
+            ]
+          },
+          {
+            "label": "Six Senses",
+            "aliases": []
+          },
+          {
+            "label": "Sleep Inn",
+            "aliases": []
+          },
+          {
+            "label": "Sofitel",
+            "aliases": []
+          },
+          {
+            "label": "Sonesta",
+            "aliases": [
+              "Sonesta Hotels & Resorts"
+            ]
+          },
+          {
+            "label": "SpringHill Suites",
+            "aliases": []
+          },
+          {
+            "label": "Staybridge Suites",
+            "aliases": []
+          },
+          {
+            "label": "St. Regis",
+            "aliases": []
+          },
+          {
+            "label": "Super 8",
+            "aliases": []
+          },
+          {
+            "label": "Swissôtel",
+            "aliases": []
+          },
+          {
+            "label": "Taj",
+            "aliases": [
+              "Taj Hotels and Resorts"
+            ]
+          },
+          {
+            "label": "Tapestry Collection",
+            "aliases": [
+              "Tapestry Collection by Hilton"
+            ]
+          },
+          {
+            "label": "Thompson Hotels",
+            "aliases": [
+              "Thompson"
+            ]
+          },
+          {
+            "label": "TownePlace Suites",
+            "aliases": []
+          },
+          {
+            "label": "Travelodge",
+            "aliases": []
+          },
+          {
+            "label": "Tru by Hilton",
+            "aliases": [
+              "Tru"
+            ]
+          },
+          {
+            "label": "Waldorf Astoria",
+            "aliases": [
+              "Waldorf Astoria Hotels & Resorts"
+            ]
+          },
+          {
+            "label": "W Hotels",
+            "aliases": []
+          },
+          {
+            "label": "Wyndham",
+            "aliases": [
+              "Wyndham Hotels & Resorts"
+            ]
+          },
+          {
+            "label": "Yotel",
+            "aliases": []
+          }
+        ],
+        "85": [
+          {
+            "label": "Aiden by Best Western",
+            "aliases": [
+              "Aiden"
+            ]
+          },
+          {
+            "label": "Alamo Plaza Hotel Courts",
+            "aliases": []
+          },
+          {
+            "label": "Allegro Resorts Corporation",
+            "aliases": []
+          },
+          {
+            "label": "Alua Hotels & Resorts",
+            "aliases": []
+          },
+          {
+            "label": "Americas Best Value Inn",
+            "aliases": []
+          },
+          {
+            "label": "Anantara Hotels & Resorts",
+            "aliases": []
+          },
+          {
+            "label": "Apartment Collection by Hilton",
+            "aliases": [
+              "Hilton Apartment Collection"
+            ]
+          },
+          {
+            "label": "Apartments by Marriott Bonvoy",
+            "aliases": []
+          },
+          {
+            "label": "Archipelago International",
+            "aliases": []
+          },
+          {
+            "label": "Arjaan Hotel Apartments",
+            "aliases": []
+          },
+          {
+            "label": "Ascend Hotel Collection",
+            "aliases": [
+              "Ascend Collection"
+            ]
+          },
+          {
+            "label": "Avani Hotels & Resorts",
+            "aliases": []
+          },
+          {
+            "label": "Breathless Resorts & Spas",
+            "aliases": []
+          },
+          {
+            "label": "BW Premier Collection",
+            "aliases": []
+          },
+          {
+            "label": "BW Signature Collection",
+            "aliases": [
+              "BW Signature Collection by Best Western"
+            ]
+          },
+          {
+            "label": "Canadas Best Value Inn",
+            "aliases": []
+          },
+          {
+            "label": "Country Hearth Inn & Suites",
+            "aliases": []
+          },
+          {
+            "label": "Dorchester Collection",
+            "aliases": []
+          },
+          {
+            "label": "Dreams Resorts & Spas",
+            "aliases": []
+          },
+          {
+            "label": "Executive Residency by Best Western",
+            "aliases": []
+          },
+          {
+            "label": "Extended Stay America Premier Suites",
+            "aliases": []
+          },
+          {
+            "label": "Extended Stay America Select Suites",
+            "aliases": []
+          },
+          {
+            "label": "Extended Stay America Suites",
+            "aliases": []
+          },
+          {
+            "label": "Four Points by Sheraton",
+            "aliases": [
+              "Four Points",
+              "Four Points​"
+            ]
+          },
+          {
+            "label": "Four Points Flex by Sheraton",
+            "aliases": []
+          },
+          {
+            "label": "Grand Millennium Hotels",
+            "aliases": [
+              "Grand Millennium"
+            ]
+          },
+          {
+            "label": "Great Southern Hotels",
+            "aliases": []
+          },
+          {
+            "label": "Handwritten Collection",
+            "aliases": []
+          },
+          {
+            "label": "Harris Hotels & Resorts",
+            "aliases": []
+          },
+          {
+            "label": "Hilton Grand Vacations",
+            "aliases": []
+          },
+          {
+            "label": "Holiday Inn Club Vacations",
+            "aliases": []
+          },
+          {
+            "label": "Holiday Inn - the niu",
+            "aliases": [
+              "The Niu"
+            ]
+          },
+          {
+            "label": "Homestead Studio Suites Hotels",
+            "aliases": []
+          },
+          {
+            "label": "Hongkong and Shanghai Hotels",
+            "aliases": []
+          },
+          {
+            "label": "Hyatt Vivid Hotels & Resorts",
+            "aliases": []
+          },
+          {
+            "label": "Iberostar Beachfront Resorts",
+            "aliases": []
+          },
+          {
+            "label": "Impression by Secrets",
+            "aliases": []
+          },
+          {
+            "label": "Indian Hotels Company Limited",
+            "aliases": []
+          },
+          {
+            "label": "Interstate Hotels & Resorts",
+            "aliases": [
+              "Interstate Hotels"
+            ]
+          },
+          {
+            "label": "Jinjiang International",
+            "aliases": []
+          },
+          {
+            "label": "Kerzner International",
+            "aliases": []
+          },
+          {
+            "label": "Manxin Hotels & Resorts",
+            "aliases": []
+          },
+          {
+            "label": "Marriott Executive Apartments",
+            "aliases": [
+              "Marriott Executive Apartment"
+            ]
+          },
+          {
+            "label": "Marriott Vacation Club",
+            "aliases": [
+              "Marriott Vacation Clubs",
+              "The Marriott Vacation Clubs"
+            ]
+          },
+          {
+            "label": "MGM Collection with Marriott Bonvoy",
+            "aliases": []
+          },
+          {
+            "label": "MGM Resorts International",
+            "aliases": []
+          },
+          {
+            "label": "Millennium & Copthorne Hotels",
+            "aliases": []
+          },
+          {
+            "label": "Nickelodeon Hotels & Resorts",
+            "aliases": [
+              "Nick Resorts",
+              "Nickelodeon Hotels and Resorts"
+            ]
+          },
+          {
+            "label": "Oaks Hotels, Resorts & Suites",
+            "aliases": []
+          },
+          {
+            "label": "Okura Hotels & Resorts",
+            "aliases": []
+          },
+          {
+            "label": "Okura Nikko Hotel Management",
+            "aliases": []
+          },
+          {
+            "label": "Outdoor Collection by Marriott Bonvoy",
+            "aliases": []
+          },
+          {
+            "label": "Outset Collection by Hilton",
+            "aliases": [
+              "Outset Collection"
+            ]
+          },
+          {
+            "label": "Pearl-Continental Hotels & Resorts",
+            "aliases": []
+          },
+          {
+            "label": "Promus Hotel Corporation",
+            "aliases": []
+          },
+          {
+            "label": "Quest Apartment Hotels",
+            "aliases": []
+          },
+          {
+            "label": "Rayhaan Hotels & Resorts",
+            "aliases": []
+          },
+          {
+            "label": "Red Lion Inn & Suites",
+            "aliases": []
+          },
+          {
+            "label": "Royal Inns of America",
+            "aliases": []
+          },
+          {
+            "label": "Secrets Resorts & Spas",
+            "aliases": []
+          },
+          {
+            "label": "Settle Inn Extended Stay",
+            "aliases": []
+          },
+          {
+            "label": "Small Luxury Hotels of the World",
+            "aliases": []
+          },
+          {
+            "label": "Sonesta Simply Suites",
+            "aliases": []
+          },
+          {
+            "label": "Sunscape Resorts & Spas",
+            "aliases": []
+          },
+          {
+            "label": "The Real Hotel Company",
+            "aliases": []
+          },
+          {
+            "label": "The Unbound Collection by Hyatt",
+            "aliases": [
+              "Unbound Collection"
+            ]
+          },
+          {
+            "label": "The Unlimited Collection",
+            "aliases": []
+          },
+          {
+            "label": "Tivoli Hotels & Resorts",
+            "aliases": []
+          },
+          {
+            "label": "Tulip Hotels & Residences",
+            "aliases": []
+          },
+          {
+            "label": "United Hotels Company of America",
+            "aliases": []
+          },
+          {
+            "label": "Warwick Hotels and Resorts",
+            "aliases": []
+          },
+          {
+            "label": "Zoëtry Wellness & Spa Resorts",
+            "aliases": []
+          }
+        ],
+        "10": [
+          {
+            "label": "Hilton",
+            "aliases": [
+              "Hilton Hotels & Resorts",
+              "Hilton Worldwide"
+            ]
+          },
+          {
+            "label": "Hyatt",
+            "aliases": [
+              "Hyatt Hotels",
+              "Hyatt Hotels Corporation"
+            ]
+          },
+          {
+            "label": "Marriott",
+            "aliases": [
+              "Marriott Hotels",
+              "Marriott International"
+            ]
+          },
+          {
+            "label": "Ritz-Carlton",
+            "aliases": [
+              "The Ritz-Carlton"
+            ]
+          },
+          {
+            "label": "Sheraton",
+            "aliases": []
+          },
+          {
+            "label": "Westin",
+            "aliases": [
+              "Westin Hotels & Resorts"
+            ]
+          }
+        ],
+        "100": [
+          {
+            "label": "Yitel",
+            "aliases": []
+          }
+        ]
+      }
+    },
+    {
+      "id": "authored-social-platforms",
+      "concept": "social-platforms",
+      "family": "everyday",
+      "topic": "SOCIAL AND COMMUNITY PLATFORMS",
+      "prompt": "Name an online social or community platform.",
+      "scope": "Real current or historical general-audience social networks, social media and named online community platforms count, including group communication, public discussion networks and social virtual worlds. Ordinary email, devices, generic internet terms, individual profiles/groups, learning-management software and services dedicated to dating or adult content do not. Actual public names such as X, VK, QQ and Hi5 count; generated initials do not.",
+      "format": "whole-familiar-brands-platforms",
+      "rationale": "One independently chosen recognizable whole subject. Complete retained public list sections and primary portfolios are reconciled with explicit heading/scope holds, historical continuity and actual public names. Invented initials, country slices and source headings never add answers or questions.",
+      "familiar": [
+        "Instagram",
+        "TikTok",
+        "YouTube",
+        "Snapchat",
+        "Facebook",
+        "Twitter",
+        "X",
+        "Threads",
+        "Bluesky",
+        "Mastodon",
+        "Reddit",
+        "Discord",
+        "Pinterest",
+        "Tumblr",
+        "LinkedIn",
+        "Twitch",
+        "Kick",
+        "BeReal",
+        "Flickr",
+        "DeviantArt",
+        "ArtStation",
+        "Behance",
+        "Newgrounds",
+        "Myspace",
+        "Friendster",
+        "Orkut",
+        "Google+",
+        "Vine",
+        "Periscope",
+        "Clubhouse",
+        "Houseparty",
+        "Ask.fm",
+        "Curious Cat",
+        "Tellonym",
+        "Yik Yak",
+        "Nextdoor",
+        "Quora",
+        "Stack Overflow",
+        "Stack Exchange",
+        "Goodreads",
+        "Letterboxd",
+        "Strava",
+        "Last.fm",
+        "SoundCloud",
+        "Bandcamp",
+        "Steam Community",
+        "Roblox",
+        "VRChat",
+        "Rec Room",
+        "WeChat",
+        "QQ",
+        "Weibo",
+        "Douyin",
+        "Xiaohongshu",
+        "Bilibili",
+        "Kuaishou",
+        "VK",
+        "Odnoklassniki",
+        "LINE",
+        "KakaoTalk",
+        "Telegram",
+        "WhatsApp",
+        "Signal",
+        "Viber",
+        "GroupMe",
+        "Wattpad",
+        "Medium",
+        "Substack",
+        "Nostr",
+        "Lemmy",
+        "Misskey",
+        "MeWe",
+        "Truth Social",
+        "Gab",
+        "Parler",
+        "Rumble",
+        "Dailymotion",
+        "LiveJournal",
+        "Dreamwidth",
+        "Plurk",
+        "Tagged",
+        "Hi5",
+        "MeetMe",
+        "Bebo",
+        "Amino",
+        "Yubo",
+        "Locket",
+        "Dispo",
+        "SpaceHey",
+        "Ello",
+        "Taringa!"
+      ],
+      "exclude": [
+        "iPhone",
+        "Microsoft Excel",
+        "Wi-Fi",
+        "Pied Piper",
+        "Gmail",
+        "Google Docs",
+        "Moodle",
+        "Tinder",
+        "A subreddit",
+        "My Instagram profile"
+      ],
+      "references": [
+        "https://en.wikipedia.org/wiki/List_of_social_networking_services",
+        "https://en.wikipedia.org/wiki/List_of_defunct_social_networking_services",
+        "https://github.com/dariusk/corpora/blob/master/data/technology/social_networking_websites.json",
+        "https://www.youtube.com/about/",
+        "https://www.twitch.tv/p/en/about/",
+        "https://about.kick.com/",
+        "https://www.artstation.com/about/company",
+        "https://www.clubhouse.com/",
+        "https://tellonym.me/",
+        "https://www.yikyak.com/",
+        "https://stackexchange.com/sites",
+        "https://www.strava.com/about",
+        "https://bandcamp.com/about",
+        "https://corp.roblox.com/",
+        "https://hello.vrchat.com/",
+        "https://www.tencent.com/products/weixin-wechat/",
+        "https://www.tencent.com/products/qq/",
+        "https://www.bytedance.com/en/products",
+        "https://ir.bilibili.com/",
+        "https://ir.kuaishou.com/",
+        "https://line.me/en/",
+        "https://www.kakaocorp.com/page/service/service/KakaoTalk?lang=en",
+        "https://telegram.org/",
+        "https://signal.org/",
+        "https://www.viber.com/en/",
+        "https://groupme.com/en-US/",
+        "https://medium.com/about",
+        "https://substack.com/about",
+        "https://nostr.com/",
+        "https://join-lemmy.org/",
+        "https://misskey-hub.net/en/",
+        "https://corp.rumble.com/",
+        "https://about.dailymotion.com/en/",
+        "https://www.meetme.com/",
+        "https://locket.camera/",
+        "https://www.appbrain.com/app/curious-cat-q-a-social-network/me.curiouscat",
+        "https://www.kuaishou.com/en/products",
+        "https://www.openweb.com/blog/press-release-spot-im-is-now-openweb/",
+        "https://bsky.social/about",
+        "https://500px.com/about",
+        "https://scratch.mit.edu/about",
+        "https://www.instructables.com/about/",
+        "https://www.openstreetmap.org/about",
+        "https://about.fb.com/news/2018/02/we-just-made-it-easier-to-add-more-friends-and-family-to-your-messenger-audio-and-video-chats/",
+        "https://slack.com/blog/compare/slack-vs-microsoft-teams",
+        "https://teamspeak.com/en/community-guidelines/",
+        "https://www.mumble.info/",
+        "https://support.google.com/meet/answer/15226472?hl=en",
+        "https://support.google.com/chat/answer/9341104?hl=en",
+        "https://support.apple.com/guide/messages/welcome/mac",
+        "https://support.apple.com/guide/facetime/welcome/mac",
+        "https://www.zoom.com/en/products/virtual-meetings/"
+      ],
+      "answers": {
+        "60": [
+          {
+            "label": "23snaps",
+            "aliases": []
+          },
+          {
+            "label": "2channel",
+            "aliases": []
+          },
+          {
+            "label": "360voice",
+            "aliases": []
+          },
+          {
+            "label": "43 Things",
+            "aliases": []
+          },
+          {
+            "label": "4chan",
+            "aliases": []
+          },
+          {
+            "label": "500px",
+            "aliases": []
+          },
+          {
+            "label": "8tracks.com",
+            "aliases": []
+          },
+          {
+            "label": "About.me",
+            "aliases": []
+          },
+          {
+            "label": "Academia.edu",
+            "aliases": []
+          },
+          {
+            "label": "AcFun",
+            "aliases": []
+          },
+          {
+            "label": "Advogato",
+            "aliases": []
+          },
+          {
+            "label": "AIM",
+            "aliases": [
+              "AOL Instant Messenger"
+            ]
+          },
+          {
+            "label": "Amen",
+            "aliases": []
+          },
+          {
+            "label": "Amina",
+            "aliases": []
+          },
+          {
+            "label": "ANobii",
+            "aliases": []
+          },
+          {
+            "label": "Anphabe.com",
+            "aliases": []
+          },
+          {
+            "label": "App.net",
+            "aliases": []
+          },
+          {
+            "label": "Are.na",
+            "aliases": []
+          },
+          {
+            "label": "AsianAve",
+            "aliases": [
+              "Asian Avenue",
+              "AsianAvenue"
+            ]
+          },
+          {
+            "label": "aSmallWorld",
+            "aliases": []
+          },
+          {
+            "label": "Athlinks",
+            "aliases": []
+          },
+          {
+            "label": "Audimated",
+            "aliases": [
+              "Audimated.com"
+            ]
+          },
+          {
+            "label": "Avatars United",
+            "aliases": []
+          },
+          {
+            "label": "Baidu Space",
+            "aliases": []
+          },
+          {
+            "label": "Band",
+            "aliases": []
+          },
+          {
+            "label": "beBee",
+            "aliases": []
+          },
+          {
+            "label": "bianca.com",
+            "aliases": []
+          },
+          {
+            "label": "Biip.no",
+            "aliases": [
+              "Biip"
+            ]
+          },
+          {
+            "label": "BitClout",
+            "aliases": []
+          },
+          {
+            "label": "BlackPlanet",
+            "aliases": []
+          },
+          {
+            "label": "Blacksky",
+            "aliases": []
+          },
+          {
+            "label": "Blind",
+            "aliases": []
+          },
+          {
+            "label": "Blip.no",
+            "aliases": []
+          },
+          {
+            "label": "Blogger",
+            "aliases": []
+          },
+          {
+            "label": "Bolt",
+            "aliases": [
+              "Bolt.com"
+            ]
+          },
+          {
+            "label": "Boredat",
+            "aliases": []
+          },
+          {
+            "label": "Busuu",
+            "aliases": []
+          },
+          {
+            "label": "Buzznet",
+            "aliases": []
+          },
+          {
+            "label": "CafeMom",
+            "aliases": []
+          },
+          {
+            "label": "Capazoo",
+            "aliases": []
+          },
+          {
+            "label": "Cara",
+            "aliases": []
+          },
+          {
+            "label": "Care2",
+            "aliases": []
+          },
+          {
+            "label": "CaringBridge",
+            "aliases": []
+          },
+          {
+            "label": "Cellufun",
+            "aliases": []
+          },
+          {
+            "label": "Chess.com",
+            "aliases": []
+          },
+          {
+            "label": "Chictopia",
+            "aliases": []
+          },
+          {
+            "label": "Clapper",
+            "aliases": []
+          },
+          {
+            "label": "Classical Lounge",
+            "aliases": []
+          },
+          {
+            "label": "Classmates.com",
+            "aliases": []
+          },
+          {
+            "label": "Cloob",
+            "aliases": []
+          },
+          {
+            "label": "ClusterFlunk",
+            "aliases": []
+          },
+          {
+            "label": "Cohost",
+            "aliases": []
+          },
+          {
+            "label": "Convoz",
+            "aliases": []
+          },
+          {
+            "label": "CouchSurfing",
+            "aliases": []
+          },
+          {
+            "label": "CozyCot",
+            "aliases": []
+          },
+          {
+            "label": "Cross.tv",
+            "aliases": []
+          },
+          {
+            "label": "Crunchyroll",
+            "aliases": []
+          },
+          {
+            "label": "Cucumbertown",
+            "aliases": []
+          },
+          {
+            "label": "Cyworld",
+            "aliases": []
+          },
+          {
+            "label": "DailyBooth",
+            "aliases": []
+          },
+          {
+            "label": "DailyStrength",
+            "aliases": []
+          },
+          {
+            "label": "Dayviews",
+            "aliases": []
+          },
+          {
+            "label": "Dead Runners Society",
+            "aliases": []
+          },
+          {
+            "label": "Delicious",
+            "aliases": []
+          },
+          {
+            "label": "Diaspora",
+            "aliases": []
+          },
+          {
+            "label": "Disaboom",
+            "aliases": []
+          },
+          {
+            "label": "Dodgeball",
+            "aliases": []
+          },
+          {
+            "label": "Dol2day",
+            "aliases": []
+          },
+          {
+            "label": "DontStayIn",
+            "aliases": []
+          },
+          {
+            "label": "Douban",
+            "aliases": []
+          },
+          {
+            "label": "Doximity",
+            "aliases": []
+          },
+          {
+            "label": "Draugiem.lv",
+            "aliases": []
+          },
+          {
+            "label": "Dubsmash",
+            "aliases": []
+          },
+          {
+            "label": "Dulwich OnView",
+            "aliases": []
+          },
+          {
+            "label": "DXY.cn",
+            "aliases": [
+              "DXY"
+            ]
+          },
+          {
+            "label": "eConozco",
+            "aliases": []
+          },
+          {
+            "label": "Edmodo",
+            "aliases": []
+          },
+          {
+            "label": "Elftown",
+            "aliases": []
+          },
+          {
+            "label": "Elfwood",
+            "aliases": []
+          },
+          {
+            "label": "Elixio",
+            "aliases": []
+          },
+          {
+            "label": "Emojli",
+            "aliases": []
+          },
+          {
+            "label": "English, baby!",
+            "aliases": []
+          },
+          {
+            "label": "Eons.com",
+            "aliases": []
+          },
+          {
+            "label": "Epernicus",
+            "aliases": []
+          },
+          {
+            "label": "Essembly",
+            "aliases": []
+          },
+          {
+            "label": "eToro",
+            "aliases": []
+          },
+          {
+            "label": "Everloop",
+            "aliases": []
+          },
+          {
+            "label": "eWorld",
+            "aliases": [
+              "Apple eWorld"
+            ]
+          },
+          {
+            "label": "Experience Project",
+            "aliases": []
+          },
+          {
+            "label": "Experts Exchange",
+            "aliases": []
+          },
+          {
+            "label": "Exploroo",
+            "aliases": []
+          },
+          {
+            "label": "Eyegroove",
+            "aliases": []
+          },
+          {
+            "label": "Ezboard",
+            "aliases": []
+          },
+          {
+            "label": "FaceGlat",
+            "aliases": []
+          },
+          {
+            "label": "Faceparty",
+            "aliases": []
+          },
+          {
+            "label": "Faces",
+            "aliases": []
+          },
+          {
+            "label": "FaceTime",
+            "aliases": []
+          },
+          {
+            "label": "Fandom",
+            "aliases": []
+          },
+          {
+            "label": "Fark",
+            "aliases": []
+          },
+          {
+            "label": "Faves.com",
+            "aliases": []
+          },
+          {
+            "label": "FFFFOUND!",
+            "aliases": []
+          },
+          {
+            "label": "Fieldoo",
+            "aliases": []
+          },
+          {
+            "label": "Fillos de Galicia",
+            "aliases": []
+          },
+          {
+            "label": "FilmAffinity",
+            "aliases": []
+          },
+          {
+            "label": "Filmow",
+            "aliases": []
+          },
+          {
+            "label": "Fishbrain",
+            "aliases": []
+          },
+          {
+            "label": "FitFinder",
+            "aliases": []
+          },
+          {
+            "label": "Fitocracy",
+            "aliases": []
+          },
+          {
+            "label": "Flickchart",
+            "aliases": []
+          },
+          {
+            "label": "Flixster",
+            "aliases": []
+          },
+          {
+            "label": "Focus.com",
+            "aliases": []
+          },
+          {
+            "label": "Foodie.fm",
+            "aliases": []
+          },
+          {
+            "label": "Foodily.com",
+            "aliases": []
+          },
+          {
+            "label": "Fotki",
+            "aliases": []
+          },
+          {
+            "label": "Fotolog",
+            "aliases": []
+          },
+          {
+            "label": "Foursquare Swarm",
+            "aliases": [
+              "Swarm"
+            ]
+          },
+          {
+            "label": "FriendFeed",
+            "aliases": []
+          },
+          {
+            "label": "Friendica",
+            "aliases": []
+          },
+          {
+            "label": "Friends Reunited",
+            "aliases": []
+          },
+          {
+            "label": "Fuelmyblog",
+            "aliases": []
+          },
+          {
+            "label": "Fyuse",
+            "aliases": []
+          },
+          {
+            "label": "Gaia Online",
+            "aliases": []
+          },
+          {
+            "label": "GameFAQs",
+            "aliases": []
+          },
+          {
+            "label": "GamerDNA",
+            "aliases": []
+          },
+          {
+            "label": "GameTZ.com",
+            "aliases": []
+          },
+          {
+            "label": "Gapo",
+            "aliases": []
+          },
+          {
+            "label": "Gapyear.com",
+            "aliases": [
+              "Gapyear"
+            ]
+          },
+          {
+            "label": "Gather.com",
+            "aliases": [
+              "Gather"
+            ]
+          },
+          {
+            "label": "Gays.com",
+            "aliases": []
+          },
+          {
+            "label": "Gaysir",
+            "aliases": []
+          },
+          {
+            "label": "Geni.com",
+            "aliases": [
+              "Geni"
+            ]
+          },
+          {
+            "label": "GEnie",
+            "aliases": []
+          },
+          {
+            "label": "Gentlemint",
+            "aliases": []
+          },
+          {
+            "label": "Gettr",
+            "aliases": []
+          },
+          {
+            "label": "GirlsAskGuys",
+            "aliases": []
+          },
+          {
+            "label": "GitHub",
+            "aliases": []
+          },
+          {
+            "label": "Glee.com",
+            "aliases": []
+          },
+          {
+            "label": "Gogoyoko",
+            "aliases": []
+          },
+          {
+            "label": "Goodwizz",
+            "aliases": []
+          },
+          {
+            "label": "Google Buzz",
+            "aliases": []
+          },
+          {
+            "label": "Google Chat",
+            "aliases": []
+          },
+          {
+            "label": "Google Hangouts",
+            "aliases": [
+              "Hangouts"
+            ]
+          },
+          {
+            "label": "Google Meet",
+            "aliases": [
+              "Google Duo",
+              "Hangouts Meet"
+            ]
+          },
+          {
+            "label": "GovLoop",
+            "aliases": []
+          },
+          {
+            "label": "Grono.net",
+            "aliases": []
+          },
+          {
+            "label": "Habbo",
+            "aliases": []
+          },
+          {
+            "label": "Heello",
+            "aliases": []
+          },
+          {
+            "label": "HeiaHeia",
+            "aliases": []
+          },
+          {
+            "label": "Hello",
+            "aliases": []
+          },
+          {
+            "label": "Highlight",
+            "aliases": []
+          },
+          {
+            "label": "Hive",
+            "aliases": []
+          },
+          {
+            "label": "Horizon Worlds",
+            "aliases": []
+          },
+          {
+            "label": "Hospitality Club",
+            "aliases": []
+          },
+          {
+            "label": "HR.com",
+            "aliases": [
+              "HR"
+            ]
+          },
+          {
+            "label": "Hub Culture",
+            "aliases": []
+          },
+          {
+            "label": "Huddles",
+            "aliases": []
+          },
+          {
+            "label": "Hyves",
+            "aliases": []
+          },
+          {
+            "label": "Ibibo",
+            "aliases": []
+          },
+          {
+            "label": "ICQ",
+            "aliases": []
+          },
+          {
+            "label": "IdeaPlane",
+            "aliases": []
+          },
+          {
+            "label": "Identi.ca",
+            "aliases": []
+          },
+          {
+            "label": "I Had Cancer",
+            "aliases": []
+          },
+          {
+            "label": "iMessage",
+            "aliases": [
+              "Apple Messages"
+            ]
+          },
+          {
+            "label": "Imgur",
+            "aliases": []
+          },
+          {
+            "label": "IMVU",
+            "aliases": []
+          },
+          {
+            "label": "iNaturalist",
+            "aliases": []
+          },
+          {
+            "label": "İnci Sözlük",
+            "aliases": []
+          },
+          {
+            "label": "Indaba Music",
+            "aliases": []
+          },
+          {
+            "label": "Influenster",
+            "aliases": []
+          },
+          {
+            "label": "Inspire",
+            "aliases": []
+          },
+          {
+            "label": "Instructables",
+            "aliases": []
+          },
+          {
+            "label": "IRC-Galleria",
+            "aliases": []
+          },
+          {
+            "label": "italki",
+            "aliases": [
+              "italki.com"
+            ]
+          },
+          {
+            "label": "Itsmy",
+            "aliases": []
+          },
+          {
+            "label": "iTunes Ping",
+            "aliases": []
+          },
+          {
+            "label": "iTwixie",
+            "aliases": []
+          },
+          {
+            "label": "iWiW",
+            "aliases": []
+          },
+          {
+            "label": "Jaiku",
+            "aliases": []
+          },
+          {
+            "label": "JamiiForums",
+            "aliases": []
+          },
+          {
+            "label": "Jappy",
+            "aliases": []
+          },
+          {
+            "label": "Jiepang",
+            "aliases": []
+          },
+          {
+            "label": "Juvenation",
+            "aliases": []
+          },
+          {
+            "label": "Kactoos",
+            "aliases": []
+          },
+          {
+            "label": "Kaixin001",
+            "aliases": []
+          },
+          {
+            "label": "KakaoStory",
+            "aliases": []
+          },
+          {
+            "label": "Keek",
+            "aliases": []
+          },
+          {
+            "label": "Kik",
+            "aliases": []
+          },
+          {
+            "label": "Kiwibox",
+            "aliases": []
+          },
+          {
+            "label": "KizlarSoruyor",
+            "aliases": []
+          },
+          {
+            "label": "Koo",
+            "aliases": []
+          },
+          {
+            "label": "Koofers",
+            "aliases": []
+          },
+          {
+            "label": "Kroogi",
+            "aliases": []
+          },
+          {
+            "label": "Kumu",
+            "aliases": []
+          },
+          {
+            "label": "Kwai",
+            "aliases": []
+          },
+          {
+            "label": "Lafango",
+            "aliases": []
+          },
+          {
+            "label": "LaiBhaari",
+            "aliases": []
+          },
+          {
+            "label": "LambdaMOO",
+            "aliases": []
+          },
+          {
+            "label": "Laneros",
+            "aliases": []
+          },
+          {
+            "label": "Late Night Shots",
+            "aliases": []
+          },
+          {
+            "label": "Lemon8",
+            "aliases": []
+          },
+          {
+            "label": "LibraryThing",
+            "aliases": []
+          },
+          {
+            "label": "Lifeknot",
+            "aliases": []
+          },
+          {
+            "label": "Likee",
+            "aliases": []
+          },
+          {
+            "label": "LinguaLeo",
+            "aliases": []
+          },
+          {
+            "label": "LinkExpats",
+            "aliases": []
+          },
+          {
+            "label": "Listography",
+            "aliases": []
+          },
+          {
+            "label": "Livemocha",
+            "aliases": []
+          },
+          {
+            "label": "Loopt",
+            "aliases": []
+          },
+          {
+            "label": "LunarStorm",
+            "aliases": []
+          },
+          {
+            "label": "Lunchclub",
+            "aliases": []
+          },
+          {
+            "label": "Makeoutclub",
+            "aliases": []
+          },
+          {
+            "label": "Marco Polo",
+            "aliases": []
+          },
+          {
+            "label": "Me2day",
+            "aliases": []
+          },
+          {
+            "label": "MeatballWiki",
+            "aliases": []
+          },
+          {
+            "label": "Meerkat",
+            "aliases": []
+          },
+          {
+            "label": "MEETin",
+            "aliases": []
+          },
+          {
+            "label": "Meetro",
+            "aliases": []
+          },
+          {
+            "label": "Meettheboss",
+            "aliases": []
+          },
+          {
+            "label": "Meetup",
+            "aliases": []
+          },
+          {
+            "label": "Meez",
+            "aliases": []
+          },
+          {
+            "label": "MemeStreams",
+            "aliases": []
+          },
+          {
+            "label": "Messenger",
+            "aliases": [
+              "Facebook Messenger"
+            ]
+          },
+          {
+            "label": "MetroMates",
+            "aliases": []
+          },
+          {
+            "label": "Miaopai",
+            "aliases": []
+          },
+          {
+            "label": "Micro.blog",
+            "aliases": []
+          },
+          {
+            "label": "Microsoft Teams",
+            "aliases": [
+              "Teams"
+            ]
+          },
+          {
+            "label": "MiGente.com",
+            "aliases": []
+          },
+          {
+            "label": "Miiverse",
+            "aliases": []
+          },
+          {
+            "label": "Minds",
+            "aliases": []
+          },
+          {
+            "label": "Mivasocial",
+            "aliases": []
+          },
+          {
+            "label": "MixBit",
+            "aliases": []
+          },
+          {
+            "label": "mixi",
+            "aliases": []
+          },
+          {
+            "label": "Mixx",
+            "aliases": []
+          },
+          {
+            "label": "Mobli",
+            "aliases": []
+          },
+          {
+            "label": "MocoSpace",
+            "aliases": []
+          },
+          {
+            "label": "MOG",
+            "aliases": []
+          },
+          {
+            "label": "MouthShut.com",
+            "aliases": [
+              "MouthShut"
+            ]
+          },
+          {
+            "label": "MUBI",
+            "aliases": []
+          },
+          {
+            "label": "Mugshot",
+            "aliases": []
+          },
+          {
+            "label": "Multiply",
+            "aliases": []
+          },
+          {
+            "label": "Mulu",
+            "aliases": []
+          },
+          {
+            "label": "Mumble",
+            "aliases": [
+              "Mumble voice chat"
+            ]
+          },
+          {
+            "label": "MyHeritage",
+            "aliases": []
+          },
+          {
+            "label": "MyLife",
+            "aliases": []
+          },
+          {
+            "label": "MyMFB",
+            "aliases": [
+              "MillatFacebook"
+            ]
+          },
+          {
+            "label": "My Opera",
+            "aliases": []
+          },
+          {
+            "label": "MyVetwork",
+            "aliases": []
+          },
+          {
+            "label": "My World@Mail.Ru",
+            "aliases": []
+          },
+          {
+            "label": "Naymz",
+            "aliases": []
+          },
+          {
+            "label": "Nearby",
+            "aliases": []
+          },
+          {
+            "label": "Netlog",
+            "aliases": []
+          },
+          {
+            "label": "Netropolitan Club",
+            "aliases": []
+          },
+          {
+            "label": "Nettby",
+            "aliases": []
+          },
+          {
+            "label": "Nexopia",
+            "aliases": []
+          },
+          {
+            "label": "Ning",
+            "aliases": []
+          },
+          {
+            "label": "NK.pl",
+            "aliases": [
+              "Nasza Klasa",
+              "Nasza-klasa.pl"
+            ]
+          },
+          {
+            "label": "Omegle",
+            "aliases": []
+          },
+          {
+            "label": "Open Diary",
+            "aliases": []
+          },
+          {
+            "label": "OpenFeint",
+            "aliases": []
+          },
+          {
+            "label": "OpenStreetMap",
+            "aliases": []
+          },
+          {
+            "label": "OpenWeb",
+            "aliases": [
+              "Spot.IM"
+            ]
+          },
+          {
+            "label": "OUTeverywhere",
+            "aliases": []
+          },
+          {
+            "label": "Partyflock",
+            "aliases": []
+          },
+          {
+            "label": "PatientsLikeMe",
+            "aliases": []
+          },
+          {
+            "label": "Peach",
+            "aliases": []
+          },
+          {
+            "label": "Pebble",
+            "aliases": []
+          },
+          {
+            "label": "PEERtrainer",
+            "aliases": []
+          },
+          {
+            "label": "Pheed",
+            "aliases": []
+          },
+          {
+            "label": "Piczo",
+            "aliases": []
+          },
+          {
+            "label": "Pillowfort",
+            "aliases": []
+          },
+          {
+            "label": "Pixelfed",
+            "aliases": []
+          },
+          {
+            "label": "Pixnet",
+            "aliases": []
+          },
+          {
+            "label": "PlanetAll",
+            "aliases": []
+          },
+          {
+            "label": "Planet Cancer",
+            "aliases": []
+          },
+          {
+            "label": "Plaxo",
+            "aliases": []
+          },
+          {
+            "label": "Player.me",
+            "aliases": []
+          },
+          {
+            "label": "Playfire",
+            "aliases": []
+          },
+          {
+            "label": "Play.fm",
+            "aliases": []
+          },
+          {
+            "label": "Playlist.com",
+            "aliases": [
+              "Playlist"
+            ]
+          },
+          {
+            "label": "Poparazzi",
+            "aliases": []
+          },
+          {
+            "label": "Portfolium",
+            "aliases": []
+          },
+          {
+            "label": "Postcrossing",
+            "aliases": []
+          },
+          {
+            "label": "Posterous",
+            "aliases": []
+          },
+          {
+            "label": "Poupéegirl",
+            "aliases": []
+          },
+          {
+            "label": "Pownce",
+            "aliases": []
+          },
+          {
+            "label": "Qaiku",
+            "aliases": []
+          },
+          {
+            "label": "Quechup",
+            "aliases": []
+          },
+          {
+            "label": "Qzone",
+            "aliases": []
+          },
+          {
+            "label": "RallyPoint",
+            "aliases": []
+          },
+          {
+            "label": "Raptr",
+            "aliases": []
+          },
+          {
+            "label": "RateItAll",
+            "aliases": []
+          },
+          {
+            "label": "Ravelry",
+            "aliases": []
+          },
+          {
+            "label": "Readgeek",
+            "aliases": []
+          },
+          {
+            "label": "Renren",
+            "aliases": []
+          },
+          {
+            "label": "ResearchGate",
+            "aliases": []
+          },
+          {
+            "label": "ReverbNation",
+            "aliases": [
+              "ReverbNation.com"
+            ]
+          },
+          {
+            "label": "Rupture",
+            "aliases": []
+          },
+          {
+            "label": "Ryze",
+            "aliases": []
+          },
+          {
+            "label": "Sarahah",
+            "aliases": []
+          },
+          {
+            "label": "ScienceStage",
+            "aliases": []
+          },
+          {
+            "label": "Scratch",
+            "aliases": []
+          },
+          {
+            "label": "ScuttlePad",
+            "aliases": []
+          },
+          {
+            "label": "Second Life",
+            "aliases": []
+          },
+          {
+            "label": "ShareChat",
+            "aliases": []
+          },
+          {
+            "label": "ShareTheMusic",
+            "aliases": []
+          },
+          {
+            "label": "Shelfari",
+            "aliases": []
+          },
+          {
+            "label": "Sixdegrees.com",
+            "aliases": []
+          },
+          {
+            "label": "SkillPages",
+            "aliases": []
+          },
+          {
+            "label": "Skoob",
+            "aliases": []
+          },
+          {
+            "label": "Skype",
+            "aliases": []
+          },
+          {
+            "label": "Skyrock",
+            "aliases": []
+          },
+          {
+            "label": "Slack",
+            "aliases": []
+          },
+          {
+            "label": "SnackVideo",
+            "aliases": []
+          },
+          {
+            "label": "Snow",
+            "aliases": []
+          },
+          {
+            "label": "So.cl",
+            "aliases": []
+          },
+          {
+            "label": "Something Awful",
+            "aliases": []
+          },
+          {
+            "label": "Sonico",
+            "aliases": [
+              "Sonico.com"
+            ]
+          },
+          {
+            "label": "Soup.io",
+            "aliases": []
+          },
+          {
+            "label": "Spaces",
+            "aliases": []
+          },
+          {
+            "label": "Spire",
+            "aliases": []
+          },
+          {
+            "label": "Spoutible",
+            "aliases": []
+          },
+          {
+            "label": "Spring.me",
+            "aliases": [
+              "Formspring"
+            ]
+          },
+          {
+            "label": "Stage 32",
+            "aliases": []
+          },
+          {
+            "label": "Steemit",
+            "aliases": []
+          },
+          {
+            "label": "Stickam",
+            "aliases": []
+          },
+          {
+            "label": "StockPickr",
+            "aliases": []
+          },
+          {
+            "label": "Streetlife",
+            "aliases": []
+          },
+          {
+            "label": "StudiVZ",
+            "aliases": []
+          },
+          {
+            "label": "StumbleUpon",
+            "aliases": []
+          },
+          {
+            "label": "Surfbook",
+            "aliases": []
+          },
+          {
+            "label": "TakingITGlobal",
+            "aliases": []
+          },
+          {
+            "label": "Tal Canal",
+            "aliases": []
+          },
+          {
+            "label": "Talenthouse",
+            "aliases": []
+          },
+          {
+            "label": "Talkbiznow",
+            "aliases": []
+          },
+          {
+            "label": "Taltopia",
+            "aliases": []
+          },
+          {
+            "label": "tbh",
+            "aliases": []
+          },
+          {
+            "label": "TeachStreet",
+            "aliases": []
+          },
+          {
+            "label": "TeamSpeak",
+            "aliases": []
+          },
+          {
+            "label": "Tea Party Community",
+            "aliases": []
+          },
+          {
+            "label": "TermWiki",
+            "aliases": []
+          },
+          {
+            "label": "The Sphere",
+            "aliases": []
+          },
+          {
+            "label": "The WELL",
+            "aliases": [
+              "Whole Earth Lectronic Link"
+            ]
+          },
+          {
+            "label": "TOTSE",
+            "aliases": []
+          },
+          {
+            "label": "Tout",
+            "aliases": []
+          },
+          {
+            "label": "TravBuddy",
+            "aliases": [
+              "TravBuddy.com"
+            ]
+          },
+          {
+            "label": "Travellerspoint",
+            "aliases": []
+          },
+          {
+            "label": "tribe.net",
+            "aliases": []
+          },
+          {
+            "label": "Triller",
+            "aliases": []
+          },
+          {
+            "label": "Trombi",
+            "aliases": [
+              "Trombi.com"
+            ]
+          },
+          {
+            "label": "Trust Café",
+            "aliases": []
+          },
+          {
+            "label": "Tsu",
+            "aliases": []
+          },
+          {
+            "label": "Tuenti",
+            "aliases": []
+          },
+          {
+            "label": "tvtag",
+            "aliases": [
+              "GetGlue"
+            ]
+          },
+          {
+            "label": "TV Time",
+            "aliases": []
+          },
+          {
+            "label": "TV Tropes",
+            "aliases": []
+          },
+          {
+            "label": "Tylted",
+            "aliases": []
+          },
+          {
+            "label": "Untappd",
+            "aliases": []
+          },
+          {
+            "label": "Uplike",
+            "aliases": []
+          },
+          {
+            "label": "UpScrolled",
+            "aliases": []
+          },
+          {
+            "label": "VampireFreaks",
+            "aliases": [
+              "Vampirefreaks.com"
+            ]
+          },
+          {
+            "label": "Vero",
+            "aliases": []
+          },
+          {
+            "label": "Viadeo",
+            "aliases": []
+          },
+          {
+            "label": "Viddy",
+            "aliases": []
+          },
+          {
+            "label": "Vingle",
+            "aliases": []
+          },
+          {
+            "label": "Virb",
+            "aliases": []
+          },
+          {
+            "label": "Viva Engage",
+            "aliases": [
+              "Yammer"
+            ]
+          },
+          {
+            "label": "Voat",
+            "aliases": []
+          },
+          {
+            "label": "Vox",
+            "aliases": []
+          },
+          {
+            "label": "Warm Showers",
+            "aliases": []
+          },
+          {
+            "label": "WAYN",
+            "aliases": []
+          },
+          {
+            "label": "WeeWorld",
+            "aliases": []
+          },
+          {
+            "label": "We Heart It",
+            "aliases": []
+          },
+          {
+            "label": "Weixin",
+            "aliases": []
+          },
+          {
+            "label": "weRead",
+            "aliases": []
+          },
+          {
+            "label": "Werkenntwen",
+            "aliases": []
+          },
+          {
+            "label": "Whisper",
+            "aliases": []
+          },
+          {
+            "label": "Wikipedia",
+            "aliases": []
+          },
+          {
+            "label": "WikiWikiWeb",
+            "aliases": []
+          },
+          {
+            "label": "Windows Live Spaces",
+            "aliases": []
+          },
+          {
+            "label": "Wiser.org",
+            "aliases": [
+              "Wiser"
+            ]
+          },
+          {
+            "label": "Woo Media",
+            "aliases": []
+          },
+          {
+            "label": "Woozworld",
+            "aliases": []
+          },
+          {
+            "label": "WordPress.com",
+            "aliases": [
+              "WordPress"
+            ]
+          },
+          {
+            "label": "Wretch",
+            "aliases": []
+          },
+          {
+            "label": "WriteAPrisoner.com",
+            "aliases": [
+              "WriteAPrisoner"
+            ]
+          },
+          {
+            "label": "Wykop.pl",
+            "aliases": []
+          },
+          {
+            "label": "Xanga",
+            "aliases": []
+          },
+          {
+            "label": "XING",
+            "aliases": []
+          },
+          {
+            "label": "Xt3",
+            "aliases": []
+          },
+          {
+            "label": "Yahoo! 360°",
+            "aliases": []
+          },
+          {
+            "label": "Yahoo! Answers",
+            "aliases": []
+          },
+          {
+            "label": "Yahoo! GeoCities",
+            "aliases": [
+              "GeoCities"
+            ]
+          },
+          {
+            "label": "Yahoo! Kickstart",
+            "aliases": []
+          },
+          {
+            "label": "Yahoo! Mash",
+            "aliases": []
+          },
+          {
+            "label": "Yahoo! Meme",
+            "aliases": []
+          },
+          {
+            "label": "Yahoo! Messenger",
+            "aliases": []
+          },
+          {
+            "label": "Yelp",
+            "aliases": []
+          },
+          {
+            "label": "Yo",
+            "aliases": []
+          },
+          {
+            "label": "Yookos",
+            "aliases": []
+          },
+          {
+            "label": "YTMND",
+            "aliases": []
+          },
+          {
+            "label": "zoo.gr",
+            "aliases": [
+              "Zoo"
+            ]
+          },
+          {
+            "label": "Zoom",
+            "aliases": [
+              "Zoom Workplace"
+            ]
+          },
+          {
+            "label": "Zoopy",
+            "aliases": []
+          }
+        ],
+        "100": [
+          {
+            "label": "Amikumu",
+            "aliases": []
+          }
+        ],
+        "30": [
+          {
+            "label": "Amino",
+            "aliases": []
+          },
+          {
+            "label": "ArtStation",
+            "aliases": []
+          },
+          {
+            "label": "Ask.fm",
+            "aliases": []
+          },
+          {
+            "label": "Bandcamp",
+            "aliases": []
+          },
+          {
+            "label": "Bebo",
+            "aliases": []
+          },
+          {
+            "label": "Behance",
+            "aliases": []
+          },
+          {
+            "label": "BeReal",
+            "aliases": []
+          },
+          {
+            "label": "Bilibili",
+            "aliases": []
+          },
+          {
+            "label": "Bluesky",
+            "aliases": []
+          },
+          {
+            "label": "Clubhouse",
+            "aliases": [
+              "Clubhouse app"
+            ]
+          },
+          {
+            "label": "Curious Cat",
+            "aliases": []
+          },
+          {
+            "label": "Dailymotion",
+            "aliases": []
+          },
+          {
+            "label": "DeviantArt",
+            "aliases": []
+          },
+          {
+            "label": "Discord",
+            "aliases": []
+          },
+          {
+            "label": "Dispo",
+            "aliases": []
+          },
+          {
+            "label": "Douyin",
+            "aliases": []
+          },
+          {
+            "label": "Dreamwidth",
+            "aliases": []
+          },
+          {
+            "label": "Ello",
+            "aliases": []
+          },
+          {
+            "label": "Flickr",
+            "aliases": []
+          },
+          {
+            "label": "Friendster",
+            "aliases": []
+          },
+          {
+            "label": "Gab",
+            "aliases": []
+          },
+          {
+            "label": "Goodreads",
+            "aliases": []
+          },
+          {
+            "label": "Google+",
+            "aliases": []
+          },
+          {
+            "label": "GroupMe",
+            "aliases": []
+          },
+          {
+            "label": "Hi5",
+            "aliases": []
+          },
+          {
+            "label": "Houseparty",
+            "aliases": []
+          },
+          {
+            "label": "KakaoTalk",
+            "aliases": []
+          },
+          {
+            "label": "Kick",
+            "aliases": []
+          },
+          {
+            "label": "Kuaishou",
+            "aliases": []
+          },
+          {
+            "label": "Last.fm",
+            "aliases": []
+          },
+          {
+            "label": "Lemmy",
+            "aliases": []
+          },
+          {
+            "label": "Letterboxd",
+            "aliases": []
+          },
+          {
+            "label": "LINE",
+            "aliases": [
+              "LINE Messenger"
+            ]
+          },
+          {
+            "label": "LinkedIn",
+            "aliases": []
+          },
+          {
+            "label": "LiveJournal",
+            "aliases": []
+          },
+          {
+            "label": "Locket",
+            "aliases": []
+          },
+          {
+            "label": "Mastodon",
+            "aliases": []
+          },
+          {
+            "label": "Medium",
+            "aliases": []
+          },
+          {
+            "label": "MeetMe",
+            "aliases": [
+              "myYearbook"
+            ]
+          },
+          {
+            "label": "MeWe",
+            "aliases": [
+              "Sgrouples"
+            ]
+          },
+          {
+            "label": "Misskey",
+            "aliases": []
+          },
+          {
+            "label": "Myspace",
+            "aliases": []
+          },
+          {
+            "label": "Newgrounds",
+            "aliases": []
+          },
+          {
+            "label": "Nextdoor",
+            "aliases": []
+          },
+          {
+            "label": "Nostr",
+            "aliases": []
+          },
+          {
+            "label": "Odnoklassniki",
+            "aliases": [
+              "OK.ru"
+            ]
+          },
+          {
+            "label": "Orkut",
+            "aliases": []
+          },
+          {
+            "label": "Parler",
+            "aliases": []
+          },
+          {
+            "label": "Periscope",
+            "aliases": []
+          },
+          {
+            "label": "Pinterest",
+            "aliases": []
+          },
+          {
+            "label": "Plurk",
+            "aliases": []
+          },
+          {
+            "label": "QQ",
+            "aliases": [
+              "OICQ",
+              "Tencent QQ"
+            ]
+          },
+          {
+            "label": "Quora",
+            "aliases": []
+          },
+          {
+            "label": "Rec Room",
+            "aliases": []
+          },
+          {
+            "label": "Reddit",
+            "aliases": []
+          },
+          {
+            "label": "Roblox",
+            "aliases": []
+          },
+          {
+            "label": "Rumble",
+            "aliases": []
+          },
+          {
+            "label": "Signal",
+            "aliases": []
+          },
+          {
+            "label": "SoundCloud",
+            "aliases": []
+          },
+          {
+            "label": "SpaceHey",
+            "aliases": []
+          },
+          {
+            "label": "Stack Exchange",
+            "aliases": []
+          },
+          {
+            "label": "Stack Overflow",
+            "aliases": []
+          },
+          {
+            "label": "Steam Community",
+            "aliases": [
+              "Steam"
+            ]
+          },
+          {
+            "label": "Strava",
+            "aliases": []
+          },
+          {
+            "label": "Substack",
+            "aliases": []
+          },
+          {
+            "label": "Tagged",
+            "aliases": []
+          },
+          {
+            "label": "Taringa!",
+            "aliases": []
+          },
+          {
+            "label": "Telegram",
+            "aliases": []
+          },
+          {
+            "label": "Tellonym",
+            "aliases": []
+          },
+          {
+            "label": "Threads",
+            "aliases": []
+          },
+          {
+            "label": "Truth Social",
+            "aliases": []
+          },
+          {
+            "label": "Tumblr",
+            "aliases": []
+          },
+          {
+            "label": "Twitch",
+            "aliases": []
+          },
+          {
+            "label": "Viber",
+            "aliases": [
+              "Rakuten Viber"
+            ]
+          },
+          {
+            "label": "Vine",
+            "aliases": []
+          },
+          {
+            "label": "VK",
+            "aliases": [
+              "VKontakte"
+            ]
+          },
+          {
+            "label": "VRChat",
+            "aliases": []
+          },
+          {
+            "label": "Wattpad",
+            "aliases": []
+          },
+          {
+            "label": "WeChat",
+            "aliases": []
+          },
+          {
+            "label": "Weibo",
+            "aliases": [
+              "Sina Weibo",
+              "SinaWeibo"
+            ]
+          },
+          {
+            "label": "WhatsApp",
+            "aliases": []
+          },
+          {
+            "label": "Xiaohongshu",
+            "aliases": [
+              "Little Red Book",
+              "REDnote",
+              "RedNote"
+            ]
+          },
+          {
+            "label": "Yik Yak",
+            "aliases": []
+          },
+          {
+            "label": "Yubo",
+            "aliases": []
+          }
+        ],
+        "10": [
+          {
+            "label": "Facebook",
+            "aliases": []
+          },
+          {
+            "label": "Instagram",
+            "aliases": []
+          },
+          {
+            "label": "Snapchat",
+            "aliases": []
+          },
+          {
+            "label": "TikTok",
+            "aliases": [
+              "Musical.ly"
+            ]
+          },
+          {
+            "label": "X",
+            "aliases": [
+              "Twitter",
+              "Twitter.com",
+              "X (Twitter)"
+            ]
+          },
+          {
+            "label": "YouTube",
+            "aliases": []
+          }
+        ],
+        "85": [
+          {
+            "label": "Foursquare City Guide",
+            "aliases": [
+              "Foursquare"
+            ]
+          },
+          {
+            "label": "Natter Social Network",
+            "aliases": []
+          },
+          {
+            "label": "Students Circle Network",
+            "aliases": [
+              "Students Circle"
+            ]
+          },
+          {
+            "label": "Travel Companion Exchange",
+            "aliases": []
+          },
+          {
+            "label": "Windows Live Messenger",
+            "aliases": [
+              "MSN Messenger"
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

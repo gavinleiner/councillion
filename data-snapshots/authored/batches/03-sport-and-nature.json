@@ -1,0 +1,4179 @@
+{
+  "version": 1,
+  "questions": [
+    {
+      "id": "authored-combat-sports",
+      "concept": "combat-sports",
+      "family": "sports",
+      "topic": "One on one",
+      "prompt": "Name a combat sport or established martial art.",
+      "scope": "Named competitive fighting disciplines and established martial arts count, including forms practiced without full-contact competition. Fictional styles do not count.",
+      "format": "situations",
+      "rationale": "A concrete familiar entry point and a wider factual tail, following the saved review; this asks for a different activity or object relationship rather than a tag combination.",
+      "familiar": [
+        "Boxing",
+        "Wrestling",
+        "Karate",
+        "Judo",
+        "Taekwondo",
+        "Brazilian jiu-jitsu",
+        "Fencing",
+        "Sumo",
+        "Muay Thai",
+        "Kickboxing",
+        "Aikido",
+        "Krav Maga",
+        "MMA",
+        "BJJ",
+        "Tai chi",
+        "Capoeira",
+        "Hapkido",
+        "Wing chun",
+        "Taekkyeon",
+        "Jeet kune do",
+        "Savate",
+        "Kenjutsu",
+        "Iaido",
+        "Ninjutsu",
+        "HEMA",
+        "Arnis",
+        "Sambo",
+        "Shorinji kempo",
+        "Kendo",
+        "Kung fu",
+        "Silat",
+        "Pencak silat",
+        "Pradal serey",
+        "Dambe",
+        "Donga",
+        "Drunken boxing",
+        "Eagle claw",
+        "White crane",
+        "Kenpo",
+        "Jiu-jitsu",
+        "Tai chi chuan",
+        "Shotokan",
+        "Kyokushin"
+      ],
+      "exclude": [
+        "Quidditch",
+        "Basketball",
+        "Miyagi-do",
+        "Cobra Kai",
+        "Tae Bo"
+      ],
+      "references": [
+        "https://www.britannica.com/sports/martial-art",
+        "https://olympics.com/en/sports/",
+        "https://www.wkf.net/",
+        "https://www.ijf.org/",
+        "https://qwankido-official.com/en/",
+        "https://qwankido.org/"
+      ],
+      "answers": {
+        "10": [
+          "Boxing",
+          "Wrestling",
+          "Karate~Karate-do",
+          "Judo",
+          "Taekwondo~Tae kwon do",
+          "Kung fu~Kungfu",
+          "Mixed martial arts~MMA",
+          "Kickboxing"
+        ],
+        "30": [
+          "Brazilian jiu-jitsu~BJJ",
+          "Jujutsu~Japanese jiu-jitsu~Jiu-jitsu~Jujitsu",
+          "Muay Thai",
+          "Sumo",
+          "Fencing",
+          "Kendo",
+          "Aikido",
+          "Krav Maga",
+          "Sambo",
+          "Tai chi~Tai chi chuan~Taijiquan",
+          "Capoeira",
+          "Greco-Roman wrestling",
+          "Freestyle wrestling",
+          "Submission wrestling",
+          "Savate",
+          "Hapkido",
+          "Jeet kune do",
+          "Wing chun",
+          "Silat",
+          "Pencak silat",
+          "Arnis~Eskrima~Kali",
+          "Dambe",
+          "Kenjutsu",
+          "Iaido",
+          "Ninjutsu",
+          "Shorinji kempo",
+          "Kyokushin karate~Kyokushin",
+          "Shotokan karate~Shotokan",
+          "Taekkyeon",
+          "Pradal serey~Kun khmer",
+          "Donga~Suri stick fighting",
+          "Historical European martial arts~HEMA",
+          "Kenpo~Kempo",
+          "Drunken boxing~Zui quan~Zuiquan",
+          "Eagle claw~Ying zhao pai",
+          "Fujian white crane~Bai he quan~White crane"
+        ],
+        "60": [
+          "Muay boran",
+          "Lethwei",
+          "Sanda~Sanshou",
+          "Wushu",
+          "Pankration",
+          "Shooto",
+          "Shoot wrestling",
+          "Catch wrestling",
+          "Vale tudo",
+          "Combat sambo",
+          "Sport sambo",
+          "Shuai jiao",
+          "Bokh~Bökh",
+          "Pehlwani~Kushti",
+          "Gouren",
+          "Glima~Glíma",
+          "Schwingen",
+          "Kurash",
+          "Alysh",
+          "Ssireum",
+          "Belt wrestling",
+          "Luta livre",
+          "Luta livre esportiva",
+          "Luta marajoara",
+          "Beach wrestling",
+          "Collegiate wrestling~Folkstyle wrestling",
+          "Cornish wrestling",
+          "Cumberland and Westmorland wrestling",
+          "Bartitsu",
+          "Tang soo do",
+          "Shaolin kung fu",
+          "Hung gar",
+          "Baguazhang",
+          "Xingyiquan",
+          "Bajiquan",
+          "Choy li fut",
+          "Praying mantis kung fu",
+          "Laamb~Senegalese wrestling"
+        ],
+        "85": [
+          "Naginatajutsu",
+          "Naginata",
+          "Sojutsu",
+          "Iaijutsu",
+          "Jodo~Jōdō",
+          "Jojutsu",
+          "Bojutsu",
+          "Kobudo",
+          "Nippon kempo",
+          "Kudo~Daido juku",
+          "Goju-ryu",
+          "Shito-ryu",
+          "Wado-ryu",
+          "Uechi-ryu",
+          "Shorin-ryu",
+          "Enshin karate",
+          "Ashihara karate",
+          "Seidokaikan",
+          "Hwa rang do",
+          "Kuk sool won",
+          "Gatka",
+          "Kalaripayattu",
+          "Thang-ta",
+          "Malla-yuddha",
+          "Musti-yuddha",
+          "Mardani khel",
+          "Vovinam",
+          "Bokator",
+          "Bando",
+          "Naban",
+          "Banshay",
+          "Lerdrit",
+          "Dumog",
+          "Yaw-Yan",
+          "Panantukan",
+          "Pangamot",
+          "Engolo",
+          "Nguni stick fighting",
+          "Bataireacht",
+          "Canne de combat",
+          "Singlestick",
+          "Longsword fencing",
+          "Rapier fencing",
+          "Sabre fencing",
+          "Foil fencing",
+          "Épée fencing~Epee fencing"
+        ],
+        "100": [
+          "Qwan ki do"
+        ]
+      }
+    },
+    {
+      "id": "authored-winter-sports",
+      "concept": "winter-sports",
+      "family": "sports",
+      "topic": "Cold competition",
+      "prompt": "Name a sport or recognized sporting discipline played on snow or ice.",
+      "scope": "Established ice and snow sports and competitive disciplines count. A sport merely played during the winter on an ordinary indoor court does not qualify.",
+      "format": "situations",
+      "rationale": "A concrete familiar entry point and a wider factual tail, following the saved review; this asks for a different activity or object relationship rather than a tag combination.",
+      "familiar": [
+        "Ice hockey",
+        "Curling",
+        "Figure skating",
+        "Snowboarding",
+        "Bobsleigh",
+        "Biathlon",
+        "Bobsledding",
+        "Luge",
+        "Skeleton",
+        "Nordic combined",
+        "Ski jumping",
+        "Cross-country skiing",
+        "Slalom",
+        "Giant slalom",
+        "Super-G",
+        "Downhill",
+        "Ski mountaineering",
+        "Telemark skiing",
+        "Ice dancing",
+        "Synchronized skating",
+        "Bandy",
+        "Broomball",
+        "Ringette",
+        "Ice stock sport",
+        "Snowshoeing",
+        "Ski orienteering",
+        "Skijoring",
+        "Snowmobile racing",
+        "Ice sailing",
+        "Para ice hockey",
+        "Sledding",
+        "Tobogganing",
+        "Yukigassen",
+        "Snowball fight",
+        "Ice skating",
+        "Nordic skiing",
+        "Ski",
+        "Snowboard"
+      ],
+      "exclude": [
+        "Beach volleyball",
+        "Basketball",
+        "Roller skating",
+        "Inline skating"
+      ],
+      "references": [
+        "https://olympics.com/en/sports/winter-olympics",
+        "https://www.fis-ski.com/",
+        "https://www.isu.org/",
+        "https://jyf.or.jp/english/member/rule/",
+        "https://jyf.or.jp/english/first/",
+        "https://www.worldarchery.sport/sport/disciplines"
+      ],
+      "answers": {
+        "10": [
+          "Ice hockey",
+          "Figure skating",
+          "Snowboarding~Snowboard",
+          "Skiing~Ski",
+          "Curling",
+          "Speed skating",
+          "Bobsleigh~Bobsled~Bobsledding~Bobsleighing",
+          "Luge",
+          "Skeleton"
+        ],
+        "30": [
+          "Alpine skiing",
+          "Cross-country skiing",
+          "Ski jumping",
+          "Biathlon",
+          "Nordic combined",
+          "Freestyle skiing",
+          "Short-track speed skating~Short track",
+          "Slalom",
+          "Giant slalom",
+          "Super-G",
+          "Ski cross",
+          "Snowboard cross~Boardercross",
+          "Halfpipe",
+          "Snowboard slopestyle",
+          "Ski slopestyle",
+          "Ski halfpipe",
+          "Mogul skiing~Moguls",
+          "Aerial skiing~Aerials",
+          "Freeride skiing",
+          "Bandy",
+          "Ringette",
+          "Broomball",
+          "Ice stock sport~Eisstock",
+          "Ski mountaineering~Skimo",
+          "Telemark skiing",
+          "Ski orienteering",
+          "Snowshoeing",
+          "Skijoring",
+          "Snowmobile racing",
+          "Ice sailing~Ice yachting",
+          "Para ice hockey~Sledge hockey~Sled hockey",
+          "Synchronized skating",
+          "Ice dancing~Ice dance",
+          "Sledding~Tobogganing",
+          "Yukigassen~Snowball fight~Snowball fighting",
+          "Nordic skiing",
+          "Downhill~Alpine downhill~Downhill skiing",
+          "Ice skating~Skating"
+        ],
+        "60": [
+          "Ice climbing",
+          "Winter triathlon",
+          "Winter pentathlon",
+          "Snowshoe racing",
+          "Dog sled racing~Sled dog racing",
+          "Ski ballet~Acroski",
+          "Snowkiting",
+          "Speed skiing",
+          "Ice speedway",
+          "Ice racing",
+          "Snowmobile freestyle",
+          "Snow bike racing",
+          "Ice cross downhill~Ice cross",
+          "Ice canoeing",
+          "Ice cricket",
+          "Snow volleyball",
+          "Snow rugby",
+          "Snow golf",
+          "Snow polo",
+          "Snow kayaking",
+          "Snow boating"
+        ],
+        "100": [
+          "Ski archery"
+        ],
+        "85": [
+          "Wheelchair curling",
+          "Para alpine skiing",
+          "Para Nordic skiing",
+          "Para snowboarding",
+          "Para biathlon",
+          "Monobob",
+          "Two-man bobsleigh",
+          "Four-man bobsleigh",
+          "Singles luge",
+          "Doubles luge",
+          "Natural track luge",
+          "Pair skating",
+          "Singles figure skating",
+          "Long-track speed skating",
+          "Marathon skating",
+          "Tour skating",
+          "Team pursuit speed skating",
+          "Mass-start speed skating",
+          "Ski flying",
+          "Snowboarding big air",
+          "Freeski big air",
+          "Parallel giant slalom snowboarding",
+          "Parallel slalom snowboarding",
+          "Dual moguls",
+          "Airboarding",
+          "Shovel racing",
+          "Snowskating",
+          "Speed riding",
+          "Snow sailing",
+          "Ski biking"
+        ]
+      }
+    },
+    {
+      "id": "authored-motorsport-disciplines",
+      "concept": "motorsport-disciplines",
+      "family": "sports",
+      "topic": "Start your engines",
+      "prompt": "Name a motorsport or established motor-racing series.",
+      "scope": "Recognized motor-vehicle competitions and racing series count, including cars, motorcycles, boats, snowmobiles and powered aircraft. Drivers, vehicle manufacturers and unpowered sports do not qualify by themselves.",
+      "format": "situations",
+      "rationale": "A concrete familiar entry point and a wider factual tail, following the saved review; this asks for a different activity or object relationship rather than a tag combination.",
+      "familiar": [
+        "Formula One",
+        "NASCAR",
+        "Rally",
+        "Drag racing",
+        "Motocross",
+        "Karting",
+        "IndyCar",
+        "MotoGP",
+        "Formula E",
+        "Drifting",
+        "Stock car racing",
+        "Touring car racing",
+        "Rallycross",
+        "Speedway",
+        "Supercross",
+        "Enduro",
+        "Trials",
+        "Hillclimb",
+        "Autocross",
+        "Rally raid",
+        "Truck racing",
+        "Monster truck racing",
+        "Powerboat racing",
+        "Jet ski racing",
+        "Snowmobile racing",
+        "Ice racing",
+        "Motorcycle road racing",
+        "Drag boat racing",
+        "Supermoto",
+        "Sprint car racing"
+      ],
+      "exclude": [
+        "Marathon running",
+        "Tour de France",
+        "Horse racing"
+      ],
+      "references": [
+        "https://www.fia.com/sport",
+        "https://www.fim-moto.com/en/sports",
+        "https://www.uim.sport/",
+        "https://www.fim-moto.com/en/fim/history-heritage"
+      ],
+      "answers": {
+        "10": [
+          {
+            "label": "Formula One",
+            "aliases": [
+              "F1",
+              "Formula 1"
+            ]
+          },
+          {
+            "label": "NASCAR",
+            "aliases": []
+          },
+          {
+            "label": "Rallying",
+            "aliases": [
+              "Rally",
+              "Rally racing"
+            ]
+          },
+          {
+            "label": "Drag racing",
+            "aliases": []
+          },
+          {
+            "label": "Motocross",
+            "aliases": []
+          },
+          {
+            "label": "Karting",
+            "aliases": [
+              "Go-kart racing"
+            ]
+          },
+          {
+            "label": "Motorcycle racing",
+            "aliases": []
+          },
+          {
+            "label": "IndyCar",
+            "aliases": []
+          },
+          {
+            "label": "Stock car racing",
+            "aliases": []
+          }
+        ],
+        "30": [
+          {
+            "label": "Formula E",
+            "aliases": []
+          },
+          {
+            "label": "MotoGP",
+            "aliases": []
+          },
+          {
+            "label": "Superbike racing",
+            "aliases": []
+          },
+          {
+            "label": "Touring car racing",
+            "aliases": []
+          },
+          {
+            "label": "Sports car racing",
+            "aliases": []
+          },
+          {
+            "label": "Endurance racing",
+            "aliases": []
+          },
+          {
+            "label": "Drifting",
+            "aliases": []
+          },
+          {
+            "label": "Rallycross",
+            "aliases": []
+          },
+          {
+            "label": "Hillclimbing",
+            "aliases": [
+              "Hill climb"
+            ]
+          },
+          {
+            "label": "Desert racing",
+            "aliases": []
+          },
+          {
+            "label": "Off-road racing",
+            "aliases": []
+          },
+          {
+            "label": "Sprint car racing",
+            "aliases": []
+          },
+          {
+            "label": "Dirt track racing",
+            "aliases": []
+          },
+          {
+            "label": "Truck racing",
+            "aliases": []
+          },
+          {
+            "label": "Monster truck racing",
+            "aliases": []
+          },
+          {
+            "label": "Supercross",
+            "aliases": []
+          },
+          {
+            "label": "Speedway",
+            "aliases": []
+          },
+          {
+            "label": "Motorcycle speedway",
+            "aliases": []
+          },
+          {
+            "label": "Powerboat racing",
+            "aliases": []
+          },
+          {
+            "label": "Air racing",
+            "aliases": []
+          },
+          {
+            "label": "Motorcycle road racing",
+            "aliases": []
+          }
+        ],
+        "60": [
+          {
+            "label": "Formula 2",
+            "aliases": [
+              "F2"
+            ]
+          },
+          {
+            "label": "Formula 3",
+            "aliases": [
+              "F3"
+            ]
+          },
+          {
+            "label": "Formula 4",
+            "aliases": [
+              "F4"
+            ]
+          },
+          {
+            "label": "Formula Ford",
+            "aliases": []
+          },
+          {
+            "label": "Formula Vee",
+            "aliases": []
+          },
+          {
+            "label": "Super Formula",
+            "aliases": []
+          },
+          {
+            "label": "Super GT",
+            "aliases": []
+          },
+          {
+            "label": "GT racing",
+            "aliases": [
+              "Grand touring racing"
+            ]
+          },
+          {
+            "label": "GT3 racing",
+            "aliases": []
+          },
+          {
+            "label": "GT4 racing",
+            "aliases": []
+          },
+          {
+            "label": "Prototype racing",
+            "aliases": []
+          },
+          {
+            "label": "Le Mans Hypercar",
+            "aliases": [
+              "Hypercar racing"
+            ]
+          },
+          {
+            "label": "LMP2 racing",
+            "aliases": []
+          },
+          {
+            "label": "One-make racing",
+            "aliases": []
+          },
+          {
+            "label": "Time attack",
+            "aliases": []
+          },
+          {
+            "label": "Autocross",
+            "aliases": []
+          },
+          {
+            "label": "Autotesting",
+            "aliases": []
+          },
+          {
+            "label": "Gymkhana",
+            "aliases": []
+          },
+          {
+            "label": "Auto slalom",
+            "aliases": []
+          },
+          {
+            "label": "Ice racing",
+            "aliases": []
+          },
+          {
+            "label": "Sand drag racing",
+            "aliases": []
+          },
+          {
+            "label": "Mud bogging",
+            "aliases": []
+          },
+          {
+            "label": "Rock crawling",
+            "aliases": []
+          },
+          {
+            "label": "Rock racing",
+            "aliases": []
+          },
+          {
+            "label": "Baja racing",
+            "aliases": []
+          },
+          {
+            "label": "Rally raid",
+            "aliases": [
+              "Cross-country rally"
+            ]
+          },
+          {
+            "label": "Trophy truck racing",
+            "aliases": []
+          },
+          {
+            "label": "Stadium truck racing",
+            "aliases": []
+          },
+          {
+            "label": "Super truck racing",
+            "aliases": []
+          },
+          {
+            "label": "Legends car racing",
+            "aliases": []
+          },
+          {
+            "label": "Midget car racing",
+            "aliases": []
+          },
+          {
+            "label": "Quarter midget racing",
+            "aliases": []
+          },
+          {
+            "label": "Mini sprint racing",
+            "aliases": []
+          },
+          {
+            "label": "Supermodified racing",
+            "aliases": []
+          },
+          {
+            "label": "Late model racing",
+            "aliases": []
+          },
+          {
+            "label": "Banger racing",
+            "aliases": []
+          },
+          {
+            "label": "Demolition derby",
+            "aliases": []
+          },
+          {
+            "label": "Figure-eight racing",
+            "aliases": [
+              "Figure 8 racing"
+            ]
+          },
+          {
+            "label": "Motorcycle trials",
+            "aliases": [
+              "Trials"
+            ]
+          },
+          {
+            "label": "Enduro",
+            "aliases": []
+          },
+          {
+            "label": "Hard enduro",
+            "aliases": []
+          },
+          {
+            "label": "SuperEnduro",
+            "aliases": []
+          },
+          {
+            "label": "Supermoto",
+            "aliases": []
+          },
+          {
+            "label": "Flat track racing",
+            "aliases": []
+          },
+          {
+            "label": "Road racing",
+            "aliases": []
+          },
+          {
+            "label": "Sidecar racing",
+            "aliases": []
+          },
+          {
+            "label": "Ice speedway",
+            "aliases": []
+          },
+          {
+            "label": "Grass track racing",
+            "aliases": []
+          },
+          {
+            "label": "Long track speedway",
+            "aliases": []
+          },
+          {
+            "label": "Cross-country motorcycle racing",
+            "aliases": []
+          },
+          {
+            "label": "Hare scramble",
+            "aliases": []
+          },
+          {
+            "label": "Dirt drag racing",
+            "aliases": []
+          },
+          {
+            "label": "Drag boat racing",
+            "aliases": []
+          }
+        ],
+        "85": [
+          {
+            "label": "Motorcycle land speed racing",
+            "aliases": []
+          },
+          {
+            "label": "Land speed racing",
+            "aliases": []
+          },
+          {
+            "label": "Watercross",
+            "aliases": [
+              "Snowmobile watercross"
+            ]
+          },
+          {
+            "label": "Snowmobile racing",
+            "aliases": []
+          },
+          {
+            "label": "Snow bike racing",
+            "aliases": []
+          },
+          {
+            "label": "Personal watercraft racing",
+            "aliases": [
+              "Jet ski racing"
+            ]
+          },
+          {
+            "label": "Offshore powerboat racing",
+            "aliases": []
+          },
+          {
+            "label": "Hydroplane racing",
+            "aliases": []
+          },
+          {
+            "label": "Circuit powerboat racing",
+            "aliases": []
+          },
+          {
+            "label": "Formula 1 powerboat racing",
+            "aliases": [
+              "F1H2O"
+            ]
+          },
+          {
+            "label": "Hovercraft racing",
+            "aliases": []
+          },
+          {
+            "label": "Motorized lawn mower racing",
+            "aliases": [
+              "Lawn mower racing"
+            ]
+          },
+          {
+            "label": "Tractor pulling",
+            "aliases": []
+          },
+          {
+            "label": "Truck pulling",
+            "aliases": []
+          },
+          {
+            "label": "Drift trike racing",
+            "aliases": [
+              "Motorized drift trike racing"
+            ]
+          },
+          {
+            "label": "Solar car racing",
+            "aliases": []
+          },
+          {
+            "label": "Electric touring car racing",
+            "aliases": []
+          },
+          {
+            "label": "Electric motorcycle racing",
+            "aliases": []
+          },
+          {
+            "label": "Kartcross",
+            "aliases": [
+              "Crosskart"
+            ]
+          },
+          {
+            "label": "Rally sprint",
+            "aliases": []
+          },
+          {
+            "label": "Regularity rally",
+            "aliases": []
+          },
+          {
+            "label": "Historic rallying",
+            "aliases": []
+          },
+          {
+            "label": "Vintage car racing",
+            "aliases": []
+          },
+          {
+            "label": "Historic motorsport",
+            "aliases": []
+          },
+          {
+            "label": "Aerobatic racing",
+            "aliases": []
+          },
+          {
+            "label": "Reno air racing",
+            "aliases": []
+          },
+          {
+            "label": "Paramotor racing",
+            "aliases": []
+          },
+          {
+            "label": "Drone racing",
+            "aliases": []
+          }
+        ],
+        "100": [
+          {
+            "label": "Sprint boat racing",
+            "aliases": [
+              "Jet sprint racing"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "authored-bodyweight-exercises",
+      "concept": "bodyweight-exercises",
+      "family": "sports",
+      "topic": "No weights needed",
+      "prompt": "Name an exercise that can be done using your bodyweight instead of added weights.",
+      "scope": "Named exercises and recognized variations count, including floor exercises, holds and movements on a pull-up bar. A bar or bench can provide support; dumbbells and loaded barbells are not required.",
+      "format": "properties",
+      "rationale": "A concrete familiar entry point and a wider factual tail, following the saved review; this asks for a different activity or object relationship rather than a tag combination.",
+      "familiar": [
+        "Push up",
+        "Sit up",
+        "Squat",
+        "Lunge",
+        "Plank",
+        "Burpee",
+        "Pull up",
+        "Chin up",
+        "Crunch",
+        "Jumping jack",
+        "Mountain climber",
+        "Bicycle crunch",
+        "Leg raise",
+        "Flutter kick",
+        "Russian twist",
+        "Wall sit",
+        "Glute bridge",
+        "Calf raise",
+        "Triceps dip",
+        "Handstand push up",
+        "Bear crawl",
+        "Crab walk",
+        "Broad jump",
+        "Tuck jump",
+        "High knees",
+        "Butt kicks",
+        "Side plank",
+        "Reverse crunch",
+        "Superman",
+        "Pistol squat",
+        "Diamond push up",
+        "Hollow hold",
+        "Bird dog",
+        "Dead bug",
+        "Donkey kick",
+        "Fire hydrant"
+      ],
+      "exclude": [
+        "Barbell bench press",
+        "Dumbbell curl",
+        "Weighted deadlift"
+      ],
+      "references": [
+        "https://www.acefitness.org/resources/everyone/exercise-library/",
+        "https://www.nhs.uk/live-well/exercise/strength-exercises/"
+      ],
+      "answers": {
+        "10": [
+          {
+            "label": "Push-up",
+            "aliases": [
+              "Pushup",
+              "Press-up"
+            ]
+          },
+          {
+            "label": "Squat",
+            "aliases": []
+          },
+          {
+            "label": "Lunge",
+            "aliases": []
+          },
+          {
+            "label": "Plank",
+            "aliases": []
+          },
+          {
+            "label": "Sit-up",
+            "aliases": [
+              "Situp"
+            ]
+          },
+          {
+            "label": "Crunch",
+            "aliases": []
+          },
+          {
+            "label": "Burpee",
+            "aliases": []
+          },
+          {
+            "label": "Pull-up",
+            "aliases": [
+              "Pullup"
+            ]
+          },
+          {
+            "label": "Chin-up",
+            "aliases": [
+              "Chinup"
+            ]
+          },
+          {
+            "label": "Jumping jack",
+            "aliases": [
+              "Star jump"
+            ]
+          }
+        ],
+        "30": [
+          {
+            "label": "Mountain climber",
+            "aliases": []
+          },
+          {
+            "label": "Dip",
+            "aliases": [
+              "Triceps dip"
+            ]
+          },
+          {
+            "label": "Wall sit",
+            "aliases": []
+          },
+          {
+            "label": "High knees",
+            "aliases": []
+          },
+          {
+            "label": "Butt kick",
+            "aliases": [
+              "Butt kicks"
+            ]
+          },
+          {
+            "label": "Calf raise",
+            "aliases": []
+          },
+          {
+            "label": "Glute bridge",
+            "aliases": []
+          },
+          {
+            "label": "Leg raise",
+            "aliases": []
+          },
+          {
+            "label": "Bicycle crunch",
+            "aliases": []
+          },
+          {
+            "label": "Side plank",
+            "aliases": []
+          },
+          {
+            "label": "Russian twist",
+            "aliases": []
+          },
+          {
+            "label": "Superman",
+            "aliases": []
+          },
+          {
+            "label": "Bird dog",
+            "aliases": []
+          },
+          {
+            "label": "Dead bug",
+            "aliases": []
+          },
+          {
+            "label": "Bear crawl",
+            "aliases": []
+          },
+          {
+            "label": "Inchworm",
+            "aliases": []
+          },
+          {
+            "label": "Jump squat",
+            "aliases": [
+              "Squat jump"
+            ]
+          },
+          {
+            "label": "Jump lunge",
+            "aliases": []
+          },
+          {
+            "label": "Step-up",
+            "aliases": [
+              "Step up"
+            ]
+          },
+          {
+            "label": "Handstand",
+            "aliases": []
+          },
+          {
+            "label": "Handstand push-up",
+            "aliases": []
+          },
+          {
+            "label": "Pike push-up",
+            "aliases": []
+          },
+          {
+            "label": "Diamond push-up",
+            "aliases": []
+          }
+        ],
+        "60": [
+          {
+            "label": "Reverse crunch",
+            "aliases": []
+          },
+          {
+            "label": "Flutter kick",
+            "aliases": [
+              "Flutter kicks"
+            ]
+          },
+          {
+            "label": "Scissor kick",
+            "aliases": [
+              "Scissor kicks"
+            ]
+          },
+          {
+            "label": "V-up",
+            "aliases": []
+          },
+          {
+            "label": "Hollow body hold",
+            "aliases": [
+              "Hollow hold"
+            ]
+          },
+          {
+            "label": "Hollow rock",
+            "aliases": []
+          },
+          {
+            "label": "Arch hold",
+            "aliases": []
+          },
+          {
+            "label": "Arch rock",
+            "aliases": []
+          },
+          {
+            "label": "L-sit",
+            "aliases": []
+          },
+          {
+            "label": "V-sit",
+            "aliases": []
+          },
+          {
+            "label": "Pistol squat",
+            "aliases": [
+              "Single-leg squat"
+            ]
+          },
+          {
+            "label": "Shrimp squat",
+            "aliases": []
+          },
+          {
+            "label": "Cossack squat",
+            "aliases": []
+          },
+          {
+            "label": "Sissy squat",
+            "aliases": []
+          },
+          {
+            "label": "Bulgarian split squat",
+            "aliases": [
+              "Rear-foot-elevated split squat"
+            ]
+          },
+          {
+            "label": "Split squat",
+            "aliases": []
+          },
+          {
+            "label": "Reverse lunge",
+            "aliases": []
+          },
+          {
+            "label": "Side lunge",
+            "aliases": [
+              "Lateral lunge"
+            ]
+          },
+          {
+            "label": "Walking lunge",
+            "aliases": []
+          },
+          {
+            "label": "Curtsy lunge",
+            "aliases": []
+          },
+          {
+            "label": "Skater jump",
+            "aliases": []
+          },
+          {
+            "label": "Broad jump",
+            "aliases": []
+          },
+          {
+            "label": "Box jump",
+            "aliases": []
+          },
+          {
+            "label": "Tuck jump",
+            "aliases": []
+          },
+          {
+            "label": "Frog jump",
+            "aliases": []
+          },
+          {
+            "label": "Bunny hop",
+            "aliases": []
+          },
+          {
+            "label": "Bounds",
+            "aliases": [
+              "Bounding"
+            ]
+          },
+          {
+            "label": "Single-leg calf raise",
+            "aliases": []
+          },
+          {
+            "label": "Donkey calf raise",
+            "aliases": []
+          },
+          {
+            "label": "Wall push-up",
+            "aliases": []
+          },
+          {
+            "label": "Knee push-up",
+            "aliases": []
+          },
+          {
+            "label": "Incline push-up",
+            "aliases": []
+          },
+          {
+            "label": "Decline push-up",
+            "aliases": []
+          },
+          {
+            "label": "Wide push-up",
+            "aliases": []
+          },
+          {
+            "label": "Archer push-up",
+            "aliases": []
+          },
+          {
+            "label": "One-arm push-up",
+            "aliases": [
+              "One arm push-up"
+            ]
+          },
+          {
+            "label": "Hindu push-up",
+            "aliases": []
+          },
+          {
+            "label": "Dive bomber push-up",
+            "aliases": []
+          },
+          {
+            "label": "Pseudo planche push-up",
+            "aliases": []
+          },
+          {
+            "label": "Clapping push-up",
+            "aliases": []
+          },
+          {
+            "label": "Explosive push-up",
+            "aliases": []
+          },
+          {
+            "label": "Scapular push-up",
+            "aliases": []
+          },
+          {
+            "label": "Scapular pull-up",
+            "aliases": []
+          },
+          {
+            "label": "Australian pull-up",
+            "aliases": [
+              "Inverted row",
+              "Bodyweight row"
+            ]
+          },
+          {
+            "label": "Commando pull-up",
+            "aliases": []
+          },
+          {
+            "label": "Archer pull-up",
+            "aliases": []
+          },
+          {
+            "label": "Typewriter pull-up",
+            "aliases": []
+          },
+          {
+            "label": "Muscle-up",
+            "aliases": [
+              "Muscle up"
+            ]
+          },
+          {
+            "label": "Bench dip",
+            "aliases": []
+          },
+          {
+            "label": "Straight bar dip",
+            "aliases": []
+          },
+          {
+            "label": "Parallel bar dip",
+            "aliases": []
+          },
+          {
+            "label": "Ring dip",
+            "aliases": []
+          },
+          {
+            "label": "Back extension",
+            "aliases": []
+          },
+          {
+            "label": "Hip thrust",
+            "aliases": []
+          },
+          {
+            "label": "Single-leg glute bridge",
+            "aliases": []
+          },
+          {
+            "label": "Donkey kick",
+            "aliases": []
+          },
+          {
+            "label": "Fire hydrant",
+            "aliases": []
+          },
+          {
+            "label": "Clamshell",
+            "aliases": []
+          },
+          {
+            "label": "Side-lying leg lift",
+            "aliases": []
+          },
+          {
+            "label": "Standing leg raise",
+            "aliases": []
+          },
+          {
+            "label": "Wall handstand",
+            "aliases": []
+          },
+          {
+            "label": "Shoulder tap",
+            "aliases": []
+          },
+          {
+            "label": "Plank jack",
+            "aliases": []
+          },
+          {
+            "label": "Plank up-down",
+            "aliases": []
+          },
+          {
+            "label": "Walking plank",
+            "aliases": []
+          },
+          {
+            "label": "Spiderman plank",
+            "aliases": []
+          },
+          {
+            "label": "Reverse plank",
+            "aliases": []
+          },
+          {
+            "label": "Copenhagen plank",
+            "aliases": []
+          }
+        ],
+        "85": [
+          {
+            "label": "Nordic curl",
+            "aliases": [
+              "Nordic hamstring curl"
+            ]
+          },
+          {
+            "label": "Reverse Nordic curl",
+            "aliases": [
+              "Natural leg extension"
+            ]
+          },
+          {
+            "label": "Good morning",
+            "aliases": [
+              "Bodyweight good morning"
+            ]
+          },
+          {
+            "label": "Jefferson curl",
+            "aliases": [
+              "Bodyweight Jefferson curl"
+            ]
+          },
+          {
+            "label": "Single-leg deadlift",
+            "aliases": [
+              "Bodyweight single-leg deadlift"
+            ]
+          },
+          {
+            "label": "Toe touch",
+            "aliases": []
+          },
+          {
+            "label": "Standing knee drive",
+            "aliases": []
+          },
+          {
+            "label": "Knee tuck",
+            "aliases": []
+          },
+          {
+            "label": "Hanging knee raise",
+            "aliases": []
+          },
+          {
+            "label": "Hanging leg raise",
+            "aliases": []
+          },
+          {
+            "label": "Toes-to-bar",
+            "aliases": [
+              "Toes to bar"
+            ]
+          },
+          {
+            "label": "Windshield wiper",
+            "aliases": []
+          },
+          {
+            "label": "Dragon flag",
+            "aliases": []
+          },
+          {
+            "label": "Front lever",
+            "aliases": []
+          },
+          {
+            "label": "Back lever",
+            "aliases": []
+          },
+          {
+            "label": "Human flag",
+            "aliases": []
+          },
+          {
+            "label": "Planche",
+            "aliases": []
+          },
+          {
+            "label": "Frog stand",
+            "aliases": []
+          },
+          {
+            "label": "Crow pose",
+            "aliases": []
+          },
+          {
+            "label": "Crab walk",
+            "aliases": []
+          },
+          {
+            "label": "Duck walk",
+            "aliases": []
+          },
+          {
+            "label": "Lizard crawl",
+            "aliases": []
+          },
+          {
+            "label": "Crocodile crawl",
+            "aliases": []
+          },
+          {
+            "label": "Bunny plank",
+            "aliases": []
+          },
+          {
+            "label": "Bear hold",
+            "aliases": []
+          },
+          {
+            "label": "Bear plank",
+            "aliases": []
+          },
+          {
+            "label": "Prone swimmer",
+            "aliases": []
+          },
+          {
+            "label": "Reverse snow angel",
+            "aliases": []
+          },
+          {
+            "label": "Y-T-W raise",
+            "aliases": [
+              "YTW raise"
+            ]
+          },
+          {
+            "label": "Wall angel",
+            "aliases": []
+          },
+          {
+            "label": "Prone cobra",
+            "aliases": []
+          },
+          {
+            "label": "Snow angel",
+            "aliases": []
+          },
+          {
+            "label": "Tabletop bridge",
+            "aliases": []
+          },
+          {
+            "label": "Full bridge",
+            "aliases": []
+          },
+          {
+            "label": "Shoulder bridge",
+            "aliases": []
+          },
+          {
+            "label": "Wall walk",
+            "aliases": []
+          },
+          {
+            "label": "Handstand walk",
+            "aliases": []
+          },
+          {
+            "label": "Rope climb",
+            "aliases": []
+          },
+          {
+            "label": "Side-to-side hop",
+            "aliases": []
+          },
+          {
+            "label": "Single-leg hop",
+            "aliases": []
+          },
+          {
+            "label": "Power skip",
+            "aliases": []
+          },
+          {
+            "label": "A-skip",
+            "aliases": []
+          },
+          {
+            "label": "B-skip",
+            "aliases": []
+          },
+          {
+            "label": "Duck under",
+            "aliases": []
+          },
+          {
+            "label": "Sit-through",
+            "aliases": []
+          },
+          {
+            "label": "Kick-through",
+            "aliases": []
+          },
+          {
+            "label": "Deck squat",
+            "aliases": []
+          },
+          {
+            "label": "Rolling squat",
+            "aliases": []
+          },
+          {
+            "label": "Candlestick",
+            "aliases": []
+          },
+          {
+            "label": "Candlestick roll",
+            "aliases": []
+          },
+          {
+            "label": "Rollover",
+            "aliases": []
+          },
+          {
+            "label": "Pancake stretch",
+            "aliases": []
+          },
+          {
+            "label": "Seated pike stretch",
+            "aliases": []
+          },
+          {
+            "label": "Forward fold",
+            "aliases": []
+          },
+          {
+            "label": "Downward dog",
+            "aliases": []
+          },
+          {
+            "label": "Upward dog",
+            "aliases": []
+          },
+          {
+            "label": "Cat-cow",
+            "aliases": []
+          },
+          {
+            "label": "Child's pose",
+            "aliases": [
+              "Childs pose"
+            ]
+          },
+          {
+            "label": "Cobra stretch",
+            "aliases": []
+          },
+          {
+            "label": "Side bend",
+            "aliases": []
+          },
+          {
+            "label": "Torso rotation",
+            "aliases": []
+          },
+          {
+            "label": "Hip circle",
+            "aliases": []
+          },
+          {
+            "label": "Arm circle",
+            "aliases": []
+          },
+          {
+            "label": "Neck rotation",
+            "aliases": []
+          },
+          {
+            "label": "Wrist circle",
+            "aliases": []
+          }
+        ],
+        "100": [
+          {
+            "label": "Russian dip",
+            "aliases": []
+          }
+        ]
+      }
+    },
+    {
+      "id": "authored-nba-regular-season-mvps",
+      "concept": "nba-regular-season-mvps",
+      "family": "sports",
+      "topic": "Most valuable",
+      "prompt": "Name a player who has won the NBA regular-season MVP award.",
+      "scope": "Winners of the main NBA regular-season Most Valuable Player award through the 2025–26 season count. Finals, All-Star and other leagues' MVP awards are different.",
+      "format": "situations",
+      "rationale": "A concrete familiar entry point and a wider factual tail, following the saved review; this asks for a different activity or object relationship rather than a tag combination.",
+      "familiar": [
+        "Michael Jordan",
+        "LeBron James",
+        "Stephen Curry",
+        "Kobe Bryant",
+        "Nikola Jokić",
+        "Shaquille O'Neal",
+        "James",
+        "Bryant",
+        "O'Neal",
+        "ONeal",
+        "Antetokounmpo",
+        "Johnson",
+        "Abdul-Jabbar",
+        "Gilgeous-Alexander",
+        "Nowitzki",
+        "Olajuwon",
+        "Malone",
+        "Chamberlain",
+        "Robertson",
+        "Erving"
+      ],
+      "exclude": [
+        "Luka Doncic",
+        "Dwyane Wade"
+      ],
+      "references": [
+        "https://www.nba.com/news/history-mvp-award-winners",
+        "https://s3.grizzliesapp.com/assets/media_guides/25-26/MG_25-26_MediaGuide.pdf"
+      ],
+      "answers": {
+        "10": "Michael Jordan~Jordan|LeBron James~LeBron~James|Stephen Curry~Steph Curry~Curry|Kobe Bryant~Kobe~Bryant|Nikola Jokić~Nikola Jokic~Jokic|Shaquille O'Neal~Shaquille ONeal~Shaq~O'Neal~ONeal",
+        "30": "Giannis Antetokounmpo~Giannis~Antetokounmpo|Kevin Durant~Durant|James Harden~Harden|Russell Westbrook~Westbrook|Derrick Rose~Rose|Allen Iverson~Iverson|Tim Duncan~Duncan|Magic Johnson~Magic~Johnson|Larry Bird~Bird|Kareem Abdul-Jabbar~Kareem Abdul Jabbar~Kareem~Lew Alcindor~Abdul-Jabbar|Shai Gilgeous-Alexander~Shai Gilgeous Alexander~Shai~Gilgeous-Alexander|Joel Embiid~Embiid",
+        "60": "Dirk Nowitzki~Dirk~Nowitzki|Steve Nash~Nash|Kevin Garnett~Garnett|Charles Barkley~Barkley|Hakeem Olajuwon~Hakeem~Olajuwon|David Robinson~Robinson|Karl Malone~Karl~Malone|Moses Malone~Moses|Bill Russell~Russell|Wilt Chamberlain~Wilt~Chamberlain",
+        "85": "Bob Pettit~Pettit|Bob Cousy~Cousy|Oscar Robertson~Oscar~Robertson|Willis Reed~Reed|Bill Walton~Walton|Julius Erving~Dr J~Doctor J~Erving|Dave Cowens~Cowens|Bob McAdoo~McAdoo",
+        "100": "Wes Unseld~Unseld"
+      }
+    },
+    {
+      "id": "authored-super-bowl-winning-starters",
+      "concept": "super-bowl-winning-starters",
+      "family": "sports",
+      "topic": "Under center",
+      "prompt": "Name a quarterback who started and won a Super Bowl.",
+      "scope": "The quarterback must have started a winning Super Bowl, through Super Bowl LX in February 2026. Winning a ring as a backup alone does not count.",
+      "format": "situations",
+      "rationale": "A concrete familiar entry point and a wider factual tail, following the saved review; this asks for a different activity or object relationship rather than a tag combination.",
+      "familiar": [
+        "Tom Brady",
+        "Patrick Mahomes",
+        "Joe Montana",
+        "Peyton Manning",
+        "Aaron Rodgers",
+        "Russell Wilson",
+        "Bart Starr",
+        "Manning",
+        "Williams",
+        "Johnson"
+      ],
+      "exclude": [
+        "Dan Marino",
+        "Jim Kelly"
+      ],
+      "references": [
+        "https://www.pro-football-reference.com/pfr-blog/2023/10/complete-list-of-super-bowl-winning-quarterbacks/",
+        "https://www.nfl.com/super-bowl/history/",
+        "https://www.seahawks.com/news/2025-the-seahawks-are-super-bowl-lx-champions"
+      ],
+      "answers": {
+        "10": "Tom Brady~Brady|Patrick Mahomes~Mahomes|Joe Montana~Montana|Peyton Manning~Peyton~Manning|Aaron Rodgers~Rodgers|Russell Wilson~Wilson",
+        "30": "Drew Brees~Brees|Eli Manning~Eli|Ben Roethlisberger~Roethlisberger~Big Ben|Brett Favre~Favre|Terry Bradshaw~Bradshaw|Troy Aikman~Aikman|John Elway~Elway|Kurt Warner~Warner|Matthew Stafford~Stafford|Jalen Hurts~Hurts|Nick Foles~Foles|Joe Flacco~Flacco|Sam Darnold~Darnold|Bart Starr~Starr",
+        "60": "Phil Simms~Simms|Steve Young~Young|Roger Staubach~Staubach|Joe Namath~Namath|Jim McMahon~McMahon|Doug Williams~Williams|Jim Plunkett~Plunkett|Bob Griese~Griese|Len Dawson~Dawson|Johnny Unitas~Unitas|Ken Stabler~Stabler",
+        "85": "Jeff Hostetler~Hostetler|Trent Dilfer~Dilfer|Brad Johnson~Johnson|Joe Theismann~Theismann",
+        "100": "Mark Rypien~Rypien"
+      }
+    },
+    {
+      "id": "authored-animals-with-horns",
+      "concept": "animals-with-horns",
+      "family": "nature",
+      "topic": "Headgear",
+      "prompt": "Name a real animal that has horns or antlers.",
+      "scope": "Living and extinct animals count, including beetle horns and other actual horn-like structures. Feathers that merely look like horns do not count. A named animal group counts when it contains horned or antlered members.",
+      "format": "properties",
+      "rationale": "A concrete familiar entry point and a wider factual tail, following the saved review; this asks for a different activity or object relationship rather than a tag combination.",
+      "familiar": [
+        "Goat",
+        "Deer",
+        "Rhino",
+        "Cow",
+        "Moose",
+        "Triceratops",
+        "Antelope",
+        "Gazelle",
+        "Impala",
+        "Kudu",
+        "Springbok",
+        "Wildebeest",
+        "Eland",
+        "Oryx",
+        "Ibex",
+        "Bighorn sheep",
+        "Ram",
+        "Bison",
+        "Buffalo",
+        "Yak",
+        "Pronghorn",
+        "Elk",
+        "Reindeer",
+        "Caribou",
+        "Rhinoceros beetle",
+        "Horned lizard",
+        "Markhor",
+        "Saiga",
+        "Water buffalo",
+        "Giraffe"
+      ],
+      "exclude": [
+        "Unicorn",
+        "Horned owl",
+        "Walrus"
+      ],
+      "references": [
+        "https://animals.sandiegozoo.org/animals/antelope",
+        "https://animals.sandiegozoo.org/animals/rhino",
+        "https://www.nps.gov/articles/000/horns-and-antlers.htm"
+      ],
+      "answers": {
+        "10": [
+          {
+            "label": "Goat",
+            "aliases": []
+          },
+          {
+            "label": "Deer",
+            "aliases": []
+          },
+          {
+            "label": "Rhinoceros",
+            "aliases": [
+              "Rhino"
+            ]
+          },
+          {
+            "label": "Cow",
+            "aliases": [
+              "Cattle"
+            ]
+          },
+          {
+            "label": "Bull",
+            "aliases": []
+          },
+          {
+            "label": "Moose",
+            "aliases": []
+          },
+          {
+            "label": "Elk",
+            "aliases": [
+              "Wapiti"
+            ]
+          },
+          {
+            "label": "Reindeer",
+            "aliases": [
+              "Caribou"
+            ]
+          },
+          {
+            "label": "Triceratops",
+            "aliases": []
+          }
+        ],
+        "30": [
+          {
+            "label": "Buffalo",
+            "aliases": []
+          },
+          {
+            "label": "Bison",
+            "aliases": []
+          },
+          {
+            "label": "Antelope",
+            "aliases": []
+          },
+          {
+            "label": "Ram",
+            "aliases": []
+          },
+          {
+            "label": "Sheep",
+            "aliases": []
+          },
+          {
+            "label": "Gazelle",
+            "aliases": []
+          },
+          {
+            "label": "Impala",
+            "aliases": []
+          },
+          {
+            "label": "Wildebeest",
+            "aliases": [
+              "Gnu"
+            ]
+          },
+          {
+            "label": "Yak",
+            "aliases": []
+          },
+          {
+            "label": "Water buffalo",
+            "aliases": []
+          },
+          {
+            "label": "Ibex",
+            "aliases": []
+          },
+          {
+            "label": "Oryx",
+            "aliases": []
+          },
+          {
+            "label": "Musk ox",
+            "aliases": [
+              "Muskox"
+            ]
+          },
+          {
+            "label": "Pronghorn",
+            "aliases": []
+          },
+          {
+            "label": "Chamois",
+            "aliases": []
+          },
+          {
+            "label": "Kudu",
+            "aliases": []
+          },
+          {
+            "label": "Fallow deer",
+            "aliases": []
+          },
+          {
+            "label": "Red deer",
+            "aliases": []
+          },
+          {
+            "label": "White-tailed deer",
+            "aliases": [
+              "Whitetail deer"
+            ]
+          },
+          {
+            "label": "Mule deer",
+            "aliases": []
+          },
+          {
+            "label": "Blackbuck",
+            "aliases": []
+          },
+          {
+            "label": "Springbok",
+            "aliases": []
+          },
+          {
+            "label": "Bongo",
+            "aliases": []
+          },
+          {
+            "label": "Eland",
+            "aliases": []
+          }
+        ],
+        "60": [
+          {
+            "label": "Nyala",
+            "aliases": []
+          },
+          {
+            "label": "Sable antelope",
+            "aliases": []
+          },
+          {
+            "label": "Roan antelope",
+            "aliases": []
+          },
+          {
+            "label": "Gemsbok",
+            "aliases": []
+          },
+          {
+            "label": "Addax",
+            "aliases": []
+          },
+          {
+            "label": "Scimitar-horned oryx",
+            "aliases": []
+          },
+          {
+            "label": "Arabian oryx",
+            "aliases": []
+          },
+          {
+            "label": "Markhor",
+            "aliases": []
+          },
+          {
+            "label": "Tahr",
+            "aliases": []
+          },
+          {
+            "label": "Mouflon",
+            "aliases": []
+          },
+          {
+            "label": "Argali",
+            "aliases": []
+          },
+          {
+            "label": "Bighorn sheep",
+            "aliases": []
+          },
+          {
+            "label": "Dall sheep",
+            "aliases": []
+          },
+          {
+            "label": "Mountain goat",
+            "aliases": []
+          },
+          {
+            "label": "Saiga",
+            "aliases": []
+          },
+          {
+            "label": "Goral",
+            "aliases": []
+          },
+          {
+            "label": "Serow",
+            "aliases": []
+          },
+          {
+            "label": "Takin",
+            "aliases": []
+          },
+          {
+            "label": "Gaur",
+            "aliases": []
+          },
+          {
+            "label": "Banteng",
+            "aliases": []
+          },
+          {
+            "label": "Anoa",
+            "aliases": []
+          },
+          {
+            "label": "Saola",
+            "aliases": []
+          },
+          {
+            "label": "Kouprey",
+            "aliases": []
+          },
+          {
+            "label": "Nilgai",
+            "aliases": []
+          },
+          {
+            "label": "Chinkara",
+            "aliases": []
+          },
+          {
+            "label": "Dik-dik",
+            "aliases": []
+          },
+          {
+            "label": "Duiker",
+            "aliases": []
+          },
+          {
+            "label": "Klipspringer",
+            "aliases": []
+          },
+          {
+            "label": "Steenbok",
+            "aliases": []
+          },
+          {
+            "label": "Reedbuck",
+            "aliases": []
+          },
+          {
+            "label": "Waterbuck",
+            "aliases": []
+          },
+          {
+            "label": "Lechwe",
+            "aliases": []
+          },
+          {
+            "label": "Sitatunga",
+            "aliases": []
+          },
+          {
+            "label": "Bushbuck",
+            "aliases": []
+          },
+          {
+            "label": "Gerenuk",
+            "aliases": []
+          },
+          {
+            "label": "Hartebeest",
+            "aliases": []
+          },
+          {
+            "label": "Topi",
+            "aliases": []
+          },
+          {
+            "label": "Bontebok",
+            "aliases": []
+          },
+          {
+            "label": "Blesbok",
+            "aliases": []
+          },
+          {
+            "label": "Tsessebe",
+            "aliases": []
+          },
+          {
+            "label": "Puku",
+            "aliases": []
+          },
+          {
+            "label": "Kob",
+            "aliases": []
+          },
+          {
+            "label": "Suni",
+            "aliases": []
+          },
+          {
+            "label": "Oribi",
+            "aliases": []
+          },
+          {
+            "label": "Royal antelope",
+            "aliases": []
+          },
+          {
+            "label": "Four-horned antelope",
+            "aliases": []
+          },
+          {
+            "label": "Muntjac",
+            "aliases": []
+          },
+          {
+            "label": "Pudu",
+            "aliases": []
+          },
+          {
+            "label": "Roe deer",
+            "aliases": []
+          },
+          {
+            "label": "Sika deer",
+            "aliases": []
+          },
+          {
+            "label": "Sambar deer",
+            "aliases": []
+          },
+          {
+            "label": "Barasingha",
+            "aliases": []
+          },
+          {
+            "label": "Rusa deer",
+            "aliases": []
+          },
+          {
+            "label": "Eld's deer",
+            "aliases": [
+              "Elds deer"
+            ]
+          },
+          {
+            "label": "Père David's deer",
+            "aliases": [
+              "Pere Davids deer"
+            ]
+          },
+          {
+            "label": "Marsh deer",
+            "aliases": []
+          },
+          {
+            "label": "Brocket deer",
+            "aliases": []
+          },
+          {
+            "label": "Hog deer",
+            "aliases": []
+          },
+          {
+            "label": "Chital",
+            "aliases": [
+              "Axis deer"
+            ]
+          },
+          {
+            "label": "Rhinoceros beetle",
+            "aliases": []
+          },
+          {
+            "label": "Hercules beetle",
+            "aliases": []
+          },
+          {
+            "label": "Goliath beetle",
+            "aliases": []
+          },
+          {
+            "label": "Dung beetle",
+            "aliases": []
+          },
+          {
+            "label": "Horned lizard",
+            "aliases": []
+          },
+          {
+            "label": "Jackson's chameleon",
+            "aliases": [
+              "Jacksons chameleon"
+            ]
+          },
+          {
+            "label": "Horned viper",
+            "aliases": []
+          }
+        ],
+        "85": [
+          {
+            "label": "Styracosaurus",
+            "aliases": []
+          },
+          {
+            "label": "Centrosaurus",
+            "aliases": []
+          },
+          {
+            "label": "Pachyrhinosaurus",
+            "aliases": []
+          },
+          {
+            "label": "Chasmosaurus",
+            "aliases": []
+          },
+          {
+            "label": "Pentaceratops",
+            "aliases": []
+          },
+          {
+            "label": "Torosaurus",
+            "aliases": []
+          },
+          {
+            "label": "Diabloceratops",
+            "aliases": []
+          },
+          {
+            "label": "Nasutoceratops",
+            "aliases": []
+          },
+          {
+            "label": "Kosmoceratops",
+            "aliases": []
+          },
+          {
+            "label": "Utahceratops",
+            "aliases": []
+          },
+          {
+            "label": "Albertaceratops",
+            "aliases": []
+          },
+          {
+            "label": "Einiosaurus",
+            "aliases": []
+          },
+          {
+            "label": "Achelousaurus",
+            "aliases": []
+          },
+          {
+            "label": "Sinoceratops",
+            "aliases": []
+          },
+          {
+            "label": "Avaceratops",
+            "aliases": []
+          },
+          {
+            "label": "Anchiceratops",
+            "aliases": []
+          },
+          {
+            "label": "Arrhinoceratops",
+            "aliases": []
+          },
+          {
+            "label": "Regaliceratops",
+            "aliases": []
+          },
+          {
+            "label": "Wendiceratops",
+            "aliases": []
+          },
+          {
+            "label": "Medusaceratops",
+            "aliases": []
+          },
+          {
+            "label": "Agujaceratops",
+            "aliases": []
+          },
+          {
+            "label": "Coahuilaceratops",
+            "aliases": []
+          },
+          {
+            "label": "Mercuriceratops",
+            "aliases": []
+          },
+          {
+            "label": "Lokiceratops",
+            "aliases": []
+          },
+          {
+            "label": "Carnotaurus",
+            "aliases": []
+          },
+          {
+            "label": "Ceratosaurus",
+            "aliases": []
+          },
+          {
+            "label": "Eotriceratops",
+            "aliases": []
+          },
+          {
+            "label": "Diceratops",
+            "aliases": [
+              "Nedoceratops"
+            ]
+          },
+          {
+            "label": "Woolly rhinoceros",
+            "aliases": []
+          },
+          {
+            "label": "Elasmotherium",
+            "aliases": []
+          },
+          {
+            "label": "Sivatherium",
+            "aliases": []
+          },
+          {
+            "label": "Arsinoitherium",
+            "aliases": []
+          },
+          {
+            "label": "Uintatherium",
+            "aliases": []
+          },
+          {
+            "label": "Synthetoceras",
+            "aliases": []
+          },
+          {
+            "label": "Protoceras",
+            "aliases": []
+          },
+          {
+            "label": "Giraffe",
+            "aliases": [
+              "Ossicone-bearing giraffe"
+            ]
+          },
+          {
+            "label": "Okapi",
+            "aliases": []
+          },
+          {
+            "label": "Ankole-Watusi",
+            "aliases": []
+          },
+          {
+            "label": "Texas Longhorn",
+            "aliases": []
+          },
+          {
+            "label": "Syndyoceras",
+            "aliases": []
+          }
+        ],
+        "100": [
+          {
+            "label": "Bramatherium",
+            "aliases": []
+          }
+        ]
+      }
+    },
+    {
+      "id": "authored-bioluminescent-animals",
+      "concept": "bioluminescent-animals",
+      "family": "nature",
+      "topic": "Lights in the deep",
+      "prompt": "Name an animal that can produce its own light.",
+      "scope": "Bioluminescence, including light produced by symbiotic bacteria in an animal's light organ, counts. Reflection, fluorescence and bright coloring alone do not. Broad animal groups count when they contain documented luminous members.",
+      "format": "properties",
+      "rationale": "A concrete familiar entry point and a wider factual tail, following the saved review; this asks for a different activity or object relationship rather than a tag combination.",
+      "familiar": [
+        "Firefly",
+        "Glowworm",
+        "Anglerfish",
+        "Jellyfish",
+        "Lanternfish",
+        "Vampire squid",
+        "Comb jelly",
+        "Krill",
+        "Firefly squid",
+        "Cookiecutter shark",
+        "Click beetle",
+        "Glowworm beetle",
+        "Dragonfish",
+        "Hatchetfish",
+        "Flashlight fish",
+        "Brittle star",
+        "Sea pen",
+        "Sea pansy",
+        "Tomopteris",
+        "Motyxia",
+        "Siphonophore",
+        "Pyrosome",
+        "Bermuda fireworm",
+        "Railroad worm",
+        "Octopus",
+        "Squid"
+      ],
+      "exclude": [
+        "Cat",
+        "Parrot",
+        "Ordinary housefly"
+      ],
+      "references": [
+        "https://oceanservice.noaa.gov/facts/biolum.html",
+        "https://ocean.si.edu/ocean-life/fish/bioluminescence",
+        "https://latzlab.ucsd.edu/bioluminescence/bioluminescence-questions-and-answers/",
+        "https://environment.bm/bermuda-fireworm"
+      ],
+      "answers": {
+        "10": [
+          {
+            "label": "Firefly",
+            "aliases": [
+              "Lightning bug"
+            ]
+          },
+          {
+            "label": "Glowworm",
+            "aliases": [
+              "Glow worm"
+            ]
+          },
+          {
+            "label": "Anglerfish",
+            "aliases": []
+          },
+          {
+            "label": "Jellyfish",
+            "aliases": []
+          }
+        ],
+        "30": [
+          {
+            "label": "Lanternfish",
+            "aliases": []
+          },
+          {
+            "label": "Vampire squid",
+            "aliases": []
+          },
+          {
+            "label": "Squid",
+            "aliases": []
+          },
+          {
+            "label": "Comb jelly",
+            "aliases": [
+              "Ctenophore"
+            ]
+          },
+          {
+            "label": "Krill",
+            "aliases": []
+          },
+          {
+            "label": "Firefly squid",
+            "aliases": [
+              "Sparkling enope squid",
+              "Watasenia scintillans"
+            ]
+          },
+          {
+            "label": "Flashlight fish",
+            "aliases": []
+          },
+          {
+            "label": "Cookiecutter shark",
+            "aliases": []
+          },
+          {
+            "label": "Dragonfish",
+            "aliases": []
+          },
+          {
+            "label": "Viperfish",
+            "aliases": []
+          },
+          {
+            "label": "Bermuda fireworm",
+            "aliases": [
+              "Odontosyllis enopla"
+            ]
+          }
+        ],
+        "60": [
+          {
+            "label": "Hatchetfish",
+            "aliases": []
+          },
+          {
+            "label": "Lantern shark",
+            "aliases": [
+              "Lanternshark"
+            ]
+          },
+          {
+            "label": "Kitefin shark",
+            "aliases": []
+          },
+          {
+            "label": "Shark",
+            "aliases": []
+          },
+          {
+            "label": "Deep-sea shrimp",
+            "aliases": []
+          },
+          {
+            "label": "Shrimp",
+            "aliases": []
+          },
+          {
+            "label": "Copepod",
+            "aliases": []
+          },
+          {
+            "label": "Ostracod",
+            "aliases": []
+          },
+          {
+            "label": "Sea firefly",
+            "aliases": [
+              "Vargula hilgendorfii"
+            ]
+          },
+          {
+            "label": "Siphonophore",
+            "aliases": []
+          },
+          {
+            "label": "Sea pen",
+            "aliases": []
+          },
+          {
+            "label": "Sea pansy",
+            "aliases": []
+          },
+          {
+            "label": "Brittle star",
+            "aliases": []
+          },
+          {
+            "label": "Basket star",
+            "aliases": []
+          },
+          {
+            "label": "Starfish",
+            "aliases": [
+              "Sea star"
+            ]
+          },
+          {
+            "label": "Sea cucumber",
+            "aliases": []
+          },
+          {
+            "label": "Sea squirt",
+            "aliases": [
+              "Tunicate"
+            ]
+          },
+          {
+            "label": "Pyrosome",
+            "aliases": []
+          },
+          {
+            "label": "Polychaete worm",
+            "aliases": []
+          },
+          {
+            "label": "Tomopteris",
+            "aliases": [
+              "Gossamer worm"
+            ]
+          },
+          {
+            "label": "Railroad worm",
+            "aliases": []
+          },
+          {
+            "label": "Click beetle",
+            "aliases": []
+          },
+          {
+            "label": "Glowworm beetle",
+            "aliases": []
+          },
+          {
+            "label": "Fungus gnat",
+            "aliases": []
+          },
+          {
+            "label": "Arachnocampa",
+            "aliases": []
+          },
+          {
+            "label": "Bioluminescent millipede",
+            "aliases": [
+              "Motyxia"
+            ]
+          },
+          {
+            "label": "Crystal jelly",
+            "aliases": [
+              "Aequorea victoria"
+            ]
+          },
+          {
+            "label": "Atolla jellyfish",
+            "aliases": [
+              "Atolla wyvillei"
+            ]
+          },
+          {
+            "label": "Helmet jellyfish",
+            "aliases": [
+              "Periphylla periphylla"
+            ]
+          },
+          {
+            "label": "Comb jelly Beroe",
+            "aliases": [
+              "Beroe"
+            ]
+          },
+          {
+            "label": "Mnemiopsis leidyi",
+            "aliases": []
+          },
+          {
+            "label": "Lobed comb jelly",
+            "aliases": [
+              "Bolinopsis"
+            ]
+          },
+          {
+            "label": "Bathyctena",
+            "aliases": []
+          },
+          {
+            "label": "Parchment tubeworm",
+            "aliases": [
+              "Chaetopterus"
+            ]
+          }
+        ],
+        "85": [
+          {
+            "label": "Bristlemouth",
+            "aliases": []
+          },
+          {
+            "label": "Stoplight loosejaw",
+            "aliases": [
+              "Malacosteus niger"
+            ]
+          },
+          {
+            "label": "Black dragonfish",
+            "aliases": [
+              "Idiacanthus atlanticus"
+            ]
+          },
+          {
+            "label": "Pinecone fish",
+            "aliases": [
+              "Pineconefish"
+            ]
+          },
+          {
+            "label": "Pineapplefish",
+            "aliases": [
+              "Cleidopus gloriamaris"
+            ]
+          },
+          {
+            "label": "Pelican eel",
+            "aliases": [
+              "Gulper eel"
+            ]
+          },
+          {
+            "label": "Bobtail squid",
+            "aliases": []
+          },
+          {
+            "label": "Hawaiian bobtail squid",
+            "aliases": [
+              "Euprymna scolopes"
+            ]
+          },
+          {
+            "label": "Octopus",
+            "aliases": []
+          },
+          {
+            "label": "Stauroteuthis syrtensis",
+            "aliases": []
+          },
+          {
+            "label": "Japetella",
+            "aliases": []
+          },
+          {
+            "label": "Bolitaena",
+            "aliases": []
+          },
+          {
+            "label": "Heteroteuthis dispar",
+            "aliases": []
+          },
+          {
+            "label": "Deep-sea octocoral",
+            "aliases": []
+          },
+          {
+            "label": "Bamboo coral",
+            "aliases": []
+          },
+          {
+            "label": "Sea fan",
+            "aliases": []
+          },
+          {
+            "label": "Sea whip",
+            "aliases": []
+          },
+          {
+            "label": "Renilla reniformis",
+            "aliases": []
+          },
+          {
+            "label": "Quantula striata",
+            "aliases": [
+              "Bioluminescent snail"
+            ]
+          },
+          {
+            "label": "Hinea brasiliana",
+            "aliases": [
+              "Clusterwink snail"
+            ]
+          },
+          {
+            "label": "Planaxis sulcatus",
+            "aliases": []
+          },
+          {
+            "label": "Luminous limpet",
+            "aliases": [
+              "Latia neritoides"
+            ]
+          },
+          {
+            "label": "Limpet",
+            "aliases": []
+          },
+          {
+            "label": "Luminous earthworm",
+            "aliases": [
+              "Diplocardia longa"
+            ]
+          },
+          {
+            "label": "Earthworm",
+            "aliases": []
+          }
+        ],
+        "100": [
+          {
+            "label": "Swima bombiviridis",
+            "aliases": [
+              "Green bomber worm"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "authored-migrating-animals",
+      "concept": "migrating-animals",
+      "family": "nature",
+      "topic": "Long-distance travelers",
+      "prompt": "Name an animal that makes a regular seasonal migration.",
+      "scope": "Named species and animal groups with documented recurring seasonal, breeding or feeding migrations count, including migrating populations of a species. One-off escapes or an individual simply wandering do not.",
+      "format": "properties",
+      "rationale": "A concrete familiar entry point and a wider factual tail, following the saved review; this asks for a different activity or object relationship rather than a tag combination.",
+      "familiar": [
+        "Monarch butterfly",
+        "Arctic tern",
+        "Wildebeest",
+        "Humpback whale",
+        "Salmon",
+        "Caribou",
+        "Reindeer",
+        "Canada goose",
+        "Snow goose",
+        "Swallow",
+        "Swift",
+        "Cuckoo",
+        "European eel",
+        "Sea turtle",
+        "Leatherback turtle",
+        "Green sea turtle",
+        "Herring",
+        "Sardine",
+        "Tuna",
+        "Blue whale",
+        "Gray whale",
+        "Sandhill crane",
+        "Bar-tailed godwit",
+        "Red knot",
+        "Christmas Island red crab",
+        "Dragonfly",
+        "Locust",
+        "Elephant",
+        "Zebra",
+        "Mule deer"
+      ],
+      "exclude": [
+        "Rock",
+        "Sloth"
+      ],
+      "references": [
+        "https://www.nationalgeographic.com/animals/article/animal-migration",
+        "https://www.fws.gov/program/migratory-birds",
+        "https://www.fisheries.noaa.gov/insight/whale-migration",
+        "https://www.fao.org/ag/locusts/common/ecg/347_en_DLG1e.pdf",
+        "https://www.agriculture.gov.au/biosecurity-trade/pests-diseases-weeds/locusts/about/migratory",
+        "https://www.agriculture.gov.au/pests-diseases-weeds/locusts/about/australia"
+      ],
+      "answers": {
+        "10": [
+          {
+            "label": "Monarch butterfly",
+            "aliases": []
+          },
+          {
+            "label": "Salmon",
+            "aliases": []
+          },
+          {
+            "label": "Goose",
+            "aliases": [
+              "Geese"
+            ]
+          },
+          {
+            "label": "Whale",
+            "aliases": []
+          },
+          {
+            "label": "Humpback whale",
+            "aliases": []
+          },
+          {
+            "label": "Caribou",
+            "aliases": [
+              "Reindeer"
+            ]
+          },
+          {
+            "label": "Wildebeest",
+            "aliases": [
+              "Gnu"
+            ]
+          },
+          {
+            "label": "Duck",
+            "aliases": []
+          }
+        ],
+        "30": [
+          {
+            "label": "Arctic tern",
+            "aliases": []
+          },
+          {
+            "label": "Swallow",
+            "aliases": []
+          },
+          {
+            "label": "Barn swallow",
+            "aliases": []
+          },
+          {
+            "label": "Canada goose",
+            "aliases": []
+          },
+          {
+            "label": "Snow goose",
+            "aliases": []
+          },
+          {
+            "label": "Swan",
+            "aliases": []
+          },
+          {
+            "label": "Crane",
+            "aliases": []
+          },
+          {
+            "label": "Stork",
+            "aliases": []
+          },
+          {
+            "label": "Flamingo",
+            "aliases": []
+          },
+          {
+            "label": "Hummingbird",
+            "aliases": []
+          },
+          {
+            "label": "Ruby-throated hummingbird",
+            "aliases": []
+          },
+          {
+            "label": "Sea turtle",
+            "aliases": []
+          },
+          {
+            "label": "Green sea turtle",
+            "aliases": []
+          },
+          {
+            "label": "Loggerhead sea turtle",
+            "aliases": []
+          },
+          {
+            "label": "Leatherback sea turtle",
+            "aliases": [
+              "Leatherback turtle"
+            ]
+          },
+          {
+            "label": "Gray whale",
+            "aliases": [
+              "Grey whale"
+            ]
+          },
+          {
+            "label": "Blue whale",
+            "aliases": []
+          },
+          {
+            "label": "Southern right whale",
+            "aliases": []
+          },
+          {
+            "label": "Northern right whale",
+            "aliases": []
+          },
+          {
+            "label": "Beluga",
+            "aliases": []
+          },
+          {
+            "label": "Elephant seal",
+            "aliases": []
+          },
+          {
+            "label": "Zebra",
+            "aliases": []
+          },
+          {
+            "label": "Pronghorn",
+            "aliases": []
+          },
+          {
+            "label": "Elk",
+            "aliases": []
+          },
+          {
+            "label": "Mule deer",
+            "aliases": []
+          },
+          {
+            "label": "Bison",
+            "aliases": []
+          },
+          {
+            "label": "African buffalo",
+            "aliases": []
+          },
+          {
+            "label": "Elephant",
+            "aliases": []
+          },
+          {
+            "label": "Fruit bat",
+            "aliases": []
+          },
+          {
+            "label": "Dragonfly",
+            "aliases": []
+          },
+          {
+            "label": "Locust",
+            "aliases": []
+          }
+        ],
+        "60": [
+          {
+            "label": "Bar-tailed godwit",
+            "aliases": []
+          },
+          {
+            "label": "Black-tailed godwit",
+            "aliases": []
+          },
+          {
+            "label": "Hudsonian godwit",
+            "aliases": []
+          },
+          {
+            "label": "Red knot",
+            "aliases": []
+          },
+          {
+            "label": "Sandpiper",
+            "aliases": []
+          },
+          {
+            "label": "Sanderling",
+            "aliases": []
+          },
+          {
+            "label": "Semipalmated sandpiper",
+            "aliases": []
+          },
+          {
+            "label": "Pectoral sandpiper",
+            "aliases": []
+          },
+          {
+            "label": "Western sandpiper",
+            "aliases": []
+          },
+          {
+            "label": "Curlew",
+            "aliases": []
+          },
+          {
+            "label": "Eurasian curlew",
+            "aliases": []
+          },
+          {
+            "label": "Whimbrel",
+            "aliases": []
+          },
+          {
+            "label": "Dunlin",
+            "aliases": []
+          },
+          {
+            "label": "Golden plover",
+            "aliases": []
+          },
+          {
+            "label": "Pacific golden plover",
+            "aliases": []
+          },
+          {
+            "label": "American golden plover",
+            "aliases": []
+          },
+          {
+            "label": "Ruff",
+            "aliases": []
+          },
+          {
+            "label": "Turnstone",
+            "aliases": []
+          },
+          {
+            "label": "Ruddy turnstone",
+            "aliases": []
+          },
+          {
+            "label": "Osprey",
+            "aliases": []
+          },
+          {
+            "label": "Peregrine falcon",
+            "aliases": []
+          },
+          {
+            "label": "Swainson's hawk",
+            "aliases": [
+              "Swainsons hawk"
+            ]
+          },
+          {
+            "label": "Broad-winged hawk",
+            "aliases": []
+          },
+          {
+            "label": "Rough-legged hawk",
+            "aliases": []
+          },
+          {
+            "label": "Northern harrier",
+            "aliases": []
+          },
+          {
+            "label": "Golden eagle",
+            "aliases": []
+          },
+          {
+            "label": "Bald eagle",
+            "aliases": []
+          },
+          {
+            "label": "Red-tailed hawk",
+            "aliases": []
+          },
+          {
+            "label": "Turkey vulture",
+            "aliases": []
+          },
+          {
+            "label": "Black kite",
+            "aliases": []
+          },
+          {
+            "label": "European honey buzzard",
+            "aliases": []
+          },
+          {
+            "label": "Cuckoo",
+            "aliases": []
+          },
+          {
+            "label": "Common cuckoo",
+            "aliases": []
+          },
+          {
+            "label": "Swift",
+            "aliases": []
+          },
+          {
+            "label": "Common swift",
+            "aliases": []
+          },
+          {
+            "label": "Chimney swift",
+            "aliases": []
+          },
+          {
+            "label": "Purple martin",
+            "aliases": []
+          },
+          {
+            "label": "Sand martin",
+            "aliases": []
+          },
+          {
+            "label": "House martin",
+            "aliases": []
+          },
+          {
+            "label": "Tree swallow",
+            "aliases": []
+          },
+          {
+            "label": "Bobolink",
+            "aliases": []
+          },
+          {
+            "label": "Baltimore oriole",
+            "aliases": []
+          },
+          {
+            "label": "Bullock's oriole",
+            "aliases": [
+              "Bullocks oriole"
+            ]
+          },
+          {
+            "label": "Red-winged blackbird",
+            "aliases": []
+          },
+          {
+            "label": "American robin",
+            "aliases": []
+          },
+          {
+            "label": "Fieldfare",
+            "aliases": []
+          },
+          {
+            "label": "Redwing",
+            "aliases": []
+          },
+          {
+            "label": "Song thrush",
+            "aliases": []
+          },
+          {
+            "label": "Wheatear",
+            "aliases": []
+          },
+          {
+            "label": "Northern wheatear",
+            "aliases": []
+          },
+          {
+            "label": "Bluethroat",
+            "aliases": []
+          },
+          {
+            "label": "Nightingale",
+            "aliases": []
+          },
+          {
+            "label": "Warbler",
+            "aliases": []
+          },
+          {
+            "label": "Yellow warbler",
+            "aliases": []
+          },
+          {
+            "label": "Blackpoll warbler",
+            "aliases": []
+          },
+          {
+            "label": "Willow warbler",
+            "aliases": []
+          },
+          {
+            "label": "Wood thrush",
+            "aliases": []
+          },
+          {
+            "label": "Swainson's thrush",
+            "aliases": [
+              "Swainsons thrush"
+            ]
+          },
+          {
+            "label": "Veery",
+            "aliases": []
+          },
+          {
+            "label": "Hermit thrush",
+            "aliases": []
+          },
+          {
+            "label": "Sooty shearwater",
+            "aliases": []
+          },
+          {
+            "label": "Manx shearwater",
+            "aliases": []
+          },
+          {
+            "label": "Short-tailed shearwater",
+            "aliases": []
+          },
+          {
+            "label": "Wandering albatross",
+            "aliases": []
+          },
+          {
+            "label": "Whooper swan",
+            "aliases": []
+          },
+          {
+            "label": "Bewick's swan",
+            "aliases": [
+              "Bewicks swan"
+            ]
+          },
+          {
+            "label": "Tundra swan",
+            "aliases": []
+          },
+          {
+            "label": "Sandhill crane",
+            "aliases": []
+          },
+          {
+            "label": "Whooping crane",
+            "aliases": []
+          },
+          {
+            "label": "Common crane",
+            "aliases": []
+          },
+          {
+            "label": "Demoiselle crane",
+            "aliases": []
+          },
+          {
+            "label": "Migratory locust",
+            "aliases": []
+          },
+          {
+            "label": "Desert locust",
+            "aliases": []
+          }
+        ],
+        "85": [
+          {
+            "label": "Atlantic salmon",
+            "aliases": []
+          },
+          {
+            "label": "Chinook salmon",
+            "aliases": []
+          },
+          {
+            "label": "Coho salmon",
+            "aliases": []
+          },
+          {
+            "label": "Sockeye salmon",
+            "aliases": []
+          },
+          {
+            "label": "Chum salmon",
+            "aliases": []
+          },
+          {
+            "label": "Pink salmon",
+            "aliases": []
+          },
+          {
+            "label": "Steelhead",
+            "aliases": []
+          },
+          {
+            "label": "American eel",
+            "aliases": []
+          },
+          {
+            "label": "European eel",
+            "aliases": []
+          },
+          {
+            "label": "Japanese eel",
+            "aliases": []
+          },
+          {
+            "label": "Lamprey",
+            "aliases": []
+          },
+          {
+            "label": "Sea lamprey",
+            "aliases": []
+          },
+          {
+            "label": "Sturgeon",
+            "aliases": []
+          },
+          {
+            "label": "Atlantic sturgeon",
+            "aliases": []
+          },
+          {
+            "label": "Green sturgeon",
+            "aliases": []
+          },
+          {
+            "label": "Striped bass",
+            "aliases": []
+          },
+          {
+            "label": "American shad",
+            "aliases": []
+          },
+          {
+            "label": "Herring",
+            "aliases": []
+          },
+          {
+            "label": "Sardine",
+            "aliases": []
+          },
+          {
+            "label": "Anchovy",
+            "aliases": []
+          },
+          {
+            "label": "Tuna",
+            "aliases": []
+          },
+          {
+            "label": "Bluefin tuna",
+            "aliases": []
+          },
+          {
+            "label": "Atlantic bluefin tuna",
+            "aliases": []
+          },
+          {
+            "label": "Southern bluefin tuna",
+            "aliases": []
+          },
+          {
+            "label": "Pacific bluefin tuna",
+            "aliases": []
+          },
+          {
+            "label": "Albacore",
+            "aliases": []
+          },
+          {
+            "label": "Bonito",
+            "aliases": []
+          },
+          {
+            "label": "Mackerel",
+            "aliases": []
+          },
+          {
+            "label": "Atlantic mackerel",
+            "aliases": []
+          },
+          {
+            "label": "Pacific hake",
+            "aliases": []
+          },
+          {
+            "label": "Capelin",
+            "aliases": []
+          },
+          {
+            "label": "Arctic char",
+            "aliases": []
+          },
+          {
+            "label": "Bull shark",
+            "aliases": []
+          },
+          {
+            "label": "Great white shark",
+            "aliases": []
+          },
+          {
+            "label": "Whale shark",
+            "aliases": []
+          },
+          {
+            "label": "Basking shark",
+            "aliases": []
+          },
+          {
+            "label": "Hammerhead shark",
+            "aliases": []
+          },
+          {
+            "label": "Manta ray",
+            "aliases": []
+          },
+          {
+            "label": "Mobula ray",
+            "aliases": []
+          },
+          {
+            "label": "Mormon cricket",
+            "aliases": []
+          },
+          {
+            "label": "Painted lady butterfly",
+            "aliases": []
+          },
+          {
+            "label": "Red admiral butterfly",
+            "aliases": []
+          },
+          {
+            "label": "Cloudless sulphur",
+            "aliases": []
+          },
+          {
+            "label": "Bogong moth",
+            "aliases": []
+          },
+          {
+            "label": "Globe skimmer dragonfly",
+            "aliases": []
+          },
+          {
+            "label": "Green darner",
+            "aliases": []
+          },
+          {
+            "label": "Mexican free-tailed bat",
+            "aliases": []
+          },
+          {
+            "label": "Hoary bat",
+            "aliases": []
+          },
+          {
+            "label": "Silver-haired bat",
+            "aliases": []
+          },
+          {
+            "label": "Straw-colored fruit bat",
+            "aliases": []
+          },
+          {
+            "label": "Springbok",
+            "aliases": []
+          },
+          {
+            "label": "Saiga",
+            "aliases": []
+          },
+          {
+            "label": "Mongolian gazelle",
+            "aliases": []
+          },
+          {
+            "label": "Tibetan antelope",
+            "aliases": [
+              "Chiru"
+            ]
+          },
+          {
+            "label": "Mountain goat",
+            "aliases": []
+          },
+          {
+            "label": "Dall sheep",
+            "aliases": []
+          },
+          {
+            "label": "Impala",
+            "aliases": []
+          },
+          {
+            "label": "Harbor seal",
+            "aliases": [
+              "Harbour seal"
+            ]
+          },
+          {
+            "label": "Harp seal",
+            "aliases": []
+          },
+          {
+            "label": "Hooded seal",
+            "aliases": []
+          },
+          {
+            "label": "Walrus",
+            "aliases": []
+          },
+          {
+            "label": "Bowhead whale",
+            "aliases": []
+          },
+          {
+            "label": "Fin whale",
+            "aliases": []
+          },
+          {
+            "label": "Sei whale",
+            "aliases": []
+          },
+          {
+            "label": "Minke whale",
+            "aliases": []
+          },
+          {
+            "label": "Sperm whale",
+            "aliases": []
+          },
+          {
+            "label": "Narwhal",
+            "aliases": []
+          },
+          {
+            "label": "Dugong",
+            "aliases": []
+          },
+          {
+            "label": "Manatee",
+            "aliases": []
+          },
+          {
+            "label": "Australian plague locust",
+            "aliases": []
+          },
+          {
+            "label": "Red locust",
+            "aliases": []
+          },
+          {
+            "label": "Spur-throated locust",
+            "aliases": []
+          }
+        ],
+        "100": [
+          {
+            "label": "Christmas Island red crab",
+            "aliases": []
+          }
+        ]
+      }
+    },
+    {
+      "id": "authored-underground-food-crops",
+      "concept": "underground-food-crops",
+      "family": "nature",
+      "topic": "Below the surface",
+      "prompt": "Name a food crop with an edible part that normally grows underground.",
+      "scope": "Roots, tubers, rhizomes, bulbs, corms and underground fruits count. Named crop kinds and established edible varieties count. A normal above-ground fruit does not count merely because the plant has roots.",
+      "format": "properties",
+      "rationale": "A concrete familiar entry point and a wider factual tail, following the saved review; this asks for a different activity or object relationship rather than a tag combination.",
+      "familiar": [
+        "Potato",
+        "Carrot",
+        "Onion",
+        "Garlic",
+        "Ginger",
+        "Peanut",
+        "Sweet potato",
+        "Yam",
+        "Cassava",
+        "Turnip",
+        "Parsnip",
+        "Beet",
+        "Radish",
+        "Rutabaga",
+        "Celeriac",
+        "Taro",
+        "Turmeric",
+        "Jerusalem artichoke",
+        "Horseradish",
+        "Lotus root",
+        "Galangal",
+        "Shallot",
+        "Jicama",
+        "Salsify",
+        "Scorzonera",
+        "Yacon",
+        "Oca",
+        "Ulluco",
+        "Mashua",
+        "Arrowroot",
+        "Water chestnut"
+      ],
+      "exclude": [
+        "Apple",
+        "Broccoli",
+        "Tomato"
+      ],
+      "references": [
+        "https://www.britannica.com/plant/root-vegetable",
+        "https://www.rhs.org.uk/vegetables",
+        "https://www.myplate.gov/food-groups/vegetables"
+      ],
+      "answers": {
+        "10": [
+          {
+            "label": "Potato",
+            "aliases": []
+          },
+          {
+            "label": "Carrot",
+            "aliases": []
+          },
+          {
+            "label": "Onion",
+            "aliases": []
+          },
+          {
+            "label": "Garlic",
+            "aliases": []
+          },
+          {
+            "label": "Ginger",
+            "aliases": []
+          },
+          {
+            "label": "Sweet potato",
+            "aliases": []
+          },
+          {
+            "label": "Radish",
+            "aliases": []
+          },
+          {
+            "label": "Beetroot",
+            "aliases": [
+              "Beet"
+            ]
+          },
+          {
+            "label": "Peanut",
+            "aliases": [
+              "Groundnut"
+            ]
+          }
+        ],
+        "30": [
+          {
+            "label": "Turnip",
+            "aliases": []
+          },
+          {
+            "label": "Parsnip",
+            "aliases": []
+          },
+          {
+            "label": "Yam",
+            "aliases": []
+          },
+          {
+            "label": "Cassava",
+            "aliases": [
+              "Manioc",
+              "Yuca"
+            ]
+          },
+          {
+            "label": "Rutabaga",
+            "aliases": [
+              "Swede"
+            ]
+          },
+          {
+            "label": "Shallot",
+            "aliases": []
+          },
+          {
+            "label": "Turmeric",
+            "aliases": []
+          },
+          {
+            "label": "Taro",
+            "aliases": []
+          },
+          {
+            "label": "Celeriac",
+            "aliases": [
+              "Celery root"
+            ]
+          },
+          {
+            "label": "Horseradish",
+            "aliases": []
+          },
+          {
+            "label": "Wasabi",
+            "aliases": []
+          },
+          {
+            "label": "Jerusalem artichoke",
+            "aliases": [
+              "Sunchoke"
+            ]
+          },
+          {
+            "label": "Daikon",
+            "aliases": []
+          },
+          {
+            "label": "Lotus root",
+            "aliases": []
+          },
+          {
+            "label": "Sugar beet",
+            "aliases": []
+          },
+          {
+            "label": "Spring onion",
+            "aliases": [
+              "Green onion",
+              "Scallion"
+            ]
+          }
+        ],
+        "60": [
+          {
+            "label": "Water chestnut",
+            "aliases": [
+              "Chinese water chestnut"
+            ]
+          },
+          {
+            "label": "Jicama",
+            "aliases": [
+              "Yam bean"
+            ]
+          },
+          {
+            "label": "Arrowroot",
+            "aliases": [
+              "West Indian arrowroot",
+              "Maranta starch"
+            ]
+          },
+          {
+            "label": "Galangal",
+            "aliases": []
+          },
+          {
+            "label": "Lesser galangal",
+            "aliases": []
+          },
+          {
+            "label": "Kencur",
+            "aliases": [
+              "Aromatic ginger"
+            ]
+          },
+          {
+            "label": "Fingerroot",
+            "aliases": [
+              "Chinese keys"
+            ]
+          },
+          {
+            "label": "Chicory root",
+            "aliases": []
+          },
+          {
+            "label": "Salsify",
+            "aliases": []
+          },
+          {
+            "label": "Black salsify",
+            "aliases": [
+              "Scorzonera"
+            ]
+          },
+          {
+            "label": "Burdock root",
+            "aliases": [
+              "Gobo"
+            ]
+          },
+          {
+            "label": "Dandelion root",
+            "aliases": []
+          },
+          {
+            "label": "Parsley root",
+            "aliases": [
+              "Hamburg parsley"
+            ]
+          },
+          {
+            "label": "Skirret",
+            "aliases": []
+          },
+          {
+            "label": "Maca",
+            "aliases": []
+          },
+          {
+            "label": "Yacon",
+            "aliases": []
+          },
+          {
+            "label": "Oca",
+            "aliases": []
+          },
+          {
+            "label": "Ulluco",
+            "aliases": []
+          },
+          {
+            "label": "Mashua",
+            "aliases": []
+          },
+          {
+            "label": "Arracacha",
+            "aliases": []
+          },
+          {
+            "label": "Malanga",
+            "aliases": []
+          },
+          {
+            "label": "Yautia",
+            "aliases": []
+          },
+          {
+            "label": "Eddoe",
+            "aliases": [
+              "Eddoes"
+            ]
+          },
+          {
+            "label": "Cocoyam",
+            "aliases": []
+          },
+          {
+            "label": "Konjac",
+            "aliases": []
+          },
+          {
+            "label": "Elephant foot yam",
+            "aliases": []
+          },
+          {
+            "label": "Chinese yam",
+            "aliases": []
+          },
+          {
+            "label": "Purple yam",
+            "aliases": [
+              "Ube"
+            ]
+          },
+          {
+            "label": "Water yam",
+            "aliases": []
+          },
+          {
+            "label": "Tigernut",
+            "aliases": [
+              "Tiger nut",
+              "Chufa"
+            ]
+          },
+          {
+            "label": "Crosne",
+            "aliases": [
+              "Chinese artichoke"
+            ]
+          },
+          {
+            "label": "Pignut",
+            "aliases": []
+          },
+          {
+            "label": "Earthnut pea",
+            "aliases": []
+          },
+          {
+            "label": "Prairie turnip",
+            "aliases": []
+          },
+          {
+            "label": "Prairie potato",
+            "aliases": []
+          },
+          {
+            "label": "Indian breadroot",
+            "aliases": []
+          },
+          {
+            "label": "Leek",
+            "aliases": []
+          }
+        ],
+        "85": [
+          {
+            "label": "Camas",
+            "aliases": []
+          },
+          {
+            "label": "Bitterroot",
+            "aliases": []
+          },
+          {
+            "label": "Sego lily",
+            "aliases": []
+          },
+          {
+            "label": "Spring beauty corm",
+            "aliases": []
+          },
+          {
+            "label": "Wapato",
+            "aliases": [
+              "Duck potato"
+            ]
+          },
+          {
+            "label": "Koorka",
+            "aliases": [
+              "Chinese potato"
+            ]
+          },
+          {
+            "label": "Hausa potato",
+            "aliases": []
+          },
+          {
+            "label": "Livingstone potato",
+            "aliases": []
+          },
+          {
+            "label": "Mauka",
+            "aliases": []
+          },
+          {
+            "label": "Ahipa",
+            "aliases": []
+          },
+          {
+            "label": "Apios",
+            "aliases": [
+              "American groundnut"
+            ]
+          },
+          {
+            "label": "Hog peanut",
+            "aliases": []
+          },
+          {
+            "label": "Canna rhizome",
+            "aliases": [
+              "Achira"
+            ]
+          },
+          {
+            "label": "Chervil root",
+            "aliases": [
+              "Tuberous-rooted chervil"
+            ]
+          },
+          {
+            "label": "Enset corm",
+            "aliases": [
+              "Ensete corm"
+            ]
+          },
+          {
+            "label": "Giant swamp taro",
+            "aliases": []
+          },
+          {
+            "label": "Licorice root",
+            "aliases": [
+              "Liquorice root"
+            ]
+          },
+          {
+            "label": "Sassafras root",
+            "aliases": []
+          },
+          {
+            "label": "Valerian root",
+            "aliases": []
+          },
+          {
+            "label": "Ginseng root",
+            "aliases": []
+          },
+          {
+            "label": "Chayote root",
+            "aliases": []
+          },
+          {
+            "label": "Sweet flag rhizome",
+            "aliases": []
+          }
+        ],
+        "100": [
+          {
+            "label": "Yellow nutsedge tuber",
+            "aliases": []
+          }
+        ]
+      }
+    }
+  ]
+}

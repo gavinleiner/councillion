@@ -1,0 +1,4399 @@
+{
+  "version": 1,
+  "questions": [
+    {
+      "id": "authored-operating-systems",
+      "concept": "operating-systems",
+      "family": "science",
+      "topic": "Operating systems",
+      "prompt": "Name a computer or device operating system.",
+      "scope": "Named actual current/historical operating systems, public OS families and documented Linux distributions count. Versions may expand answers but never prompts. Vendor, hardware, shell, desktop environment, app and proposed-only marketing labels are not automatically operating systems.",
+      "format": "whole-operating-systems",
+      "rationale": "One independent whole operating-system subject preserves common entry answers and a documented rare tail. Public OS families, actual current/historical systems, implemented research systems, named real versions and Linux distributions are reviewed by role and identity. Vendors, hardware, applications, source headings and unverified proposal-only labels are held. Source rows and version/distro names expand answers, never question count.",
+      "familiar": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Android",
+        "iOS",
+        "iPadOS",
+        "ChromeOS",
+        "Ubuntu",
+        "Debian",
+        "Fedora",
+        "Linux Mint",
+        "Arch Linux",
+        "Kali Linux",
+        "Red Hat Enterprise Linux",
+        "CentOS",
+        "openSUSE",
+        "Gentoo",
+        "Slackware",
+        "Manjaro",
+        "Pop!_OS",
+        "Elementary OS",
+        "Zorin OS",
+        "Raspberry Pi OS",
+        "Raspbian",
+        "SteamOS",
+        "FreeBSD",
+        "OpenBSD",
+        "NetBSD",
+        "DragonFly BSD",
+        "Solaris",
+        "OpenSolaris",
+        "MS-DOS",
+        "PC DOS",
+        "FreeDOS",
+        "OS/2",
+        "Haiku",
+        "BeOS",
+        "AmigaOS",
+        "RISC OS",
+        "Plan 9",
+        "ReactOS",
+        "TempleOS",
+        "Tails",
+        "Qubes OS",
+        "NixOS",
+        "Alpine Linux",
+        "LineageOS",
+        "GrapheneOS",
+        "HarmonyOS",
+        "Tizen",
+        "webOS",
+        "watchOS",
+        "tvOS",
+        "visionOS",
+        "Windows Phone",
+        "Windows Mobile",
+        "Symbian",
+        "BlackBerry OS",
+        "Palm OS",
+        "KaiOS",
+        "CP/M",
+        "UNIX",
+        "AIX",
+        "HP-UX",
+        "OpenVMS",
+        "z/OS"
+      ],
+      "exclude": [
+        "Microsoft Word",
+        "Intel Core i7",
+        "MacBook",
+        "Windows 9",
+        "Android 99",
+        "macOS Moon Cheese",
+        "Cosmos framework",
+        "Apple II",
+        "MacBook",
+        "Apple Watch",
+        "Microsoft Azure",
+        "Windows Azure",
+        "DeskMate",
+        "GEM",
+        "DESQview",
+        "Azumanga daioh",
+        "L4",
+        "OpenEmbedded",
+        "Yocto Project",
+        "AOS family header",
+        "Google Chrome browser",
+        "RPOS",
+        "FB"
+      ],
+      "references": [
+        "https://9p.io/plan9/",
+        "https://archlinux.org/",
+        "https://chromeos.google/products/chromeos-flex/",
+        "https://consumer.huawei.com/en/harmonyos/",
+        "https://elementary.io/",
+        "https://en.wikipedia.org/wiki/DOS",
+        "https://en.wikipedia.org/wiki/List_of_Linux_distributions",
+        "https://en.wikipedia.org/wiki/List_of_operating_systems",
+        "https://en.wikipedia.org/wiki/OpenServer",
+        "https://en.wikipedia.org/wiki/Tru64_UNIX",
+        "https://fedoraproject.org/",
+        "https://genode.org/documentation/articles/sculpt-25-04",
+        "https://github.com/microsoft/MS-DOS",
+        "https://github.com/pac-ac/osakaOS",
+        "https://grapheneos.org/",
+        "https://learn.microsoft.com/en-us/lifecycle/products/windows-11-home-and-pro",
+        "https://learn.microsoft.com/en-us/windows/release-health/",
+        "https://learn.microsoft.com/en-us/windows/whats-new/ltsc/overview",
+        "https://lineageos.org/",
+        "https://linuxmint.com/",
+        "https://manjaro.org/",
+        "https://nixos.org/",
+        "https://reactos.org/",
+        "https://serpaeos.sourceforge.io",
+        "https://source.android.com/docs/core/architecture",
+        "https://source.android.com/docs/setup/reference/build-numbers",
+        "https://store.steampowered.com/steamos",
+        "https://support.apple.com/en-us/109033",
+        "https://support.apple.com/guide/security/welcome/web",
+        "https://support.google.com/chrome/a/answer/16634428",
+        "https://system76.com/pop/",
+        "https://t2linux.com/",
+        "https://tails.net/",
+        "https://templeos.org/",
+        "https://ubuntu.com/",
+        "https://vmssoftware.com/products/openvms/",
+        "https://www.alpinelinux.org/",
+        "https://www.amigaos.net/",
+        "https://www.bitsavers.org/pdf/mips/RISCos/3204DOC_RISC_os_Users_Reference_Manual_Volume_II_BSD_Mar1989.pdf",
+        "https://www.centos.org/",
+        "https://www.chromium.org/chromium-os/",
+        "https://www.cisco.com/site/us/en/products/networking/software/ios-nx-os/index.html",
+        "https://www.cs.cmu.edu/afs/cs.cmu.edu/project/mach/public/www/overview.html",
+        "https://www.debian.org/",
+        "https://www.dragonflybsd.org/",
+        "https://www.freebsd.org/",
+        "https://www.freedos.org/",
+        "https://www.gentoo.org/",
+        "https://www.gnu.org/software/hurd/",
+        "https://www.haiku-os.org/about/",
+        "https://www.ibm.com/products/aix",
+        "https://www.ibm.com/products/zos",
+        "https://www.kaiostech.com/",
+        "https://www.kali.org/",
+        "https://www.kernel.org/linux.html",
+        "https://www.menuetos.net/",
+        "https://www.netbsd.org/",
+        "https://www.openbsd.org/",
+        "https://www.opensuse.org/",
+        "https://www.oracle.com/solaris/solaris11/",
+        "https://www.qubes-os.org/",
+        "https://www.raspberrypi.com/software/operating-systems/",
+        "https://www.raspbian.org/",
+        "https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux",
+        "https://www.riscosopen.org/content/",
+        "https://www.tizen.org/sites/default/files/page/tizen_for_platform_developers_and_manufacturers.pdf",
+        "https://www.unix.org/about.html",
+        "https://www.webosose.org/",
+        "https://zorin.com/os/"
+      ],
+      "answers": {
+        "85": [
+          {
+            "label": "4MLinux",
+            "aliases": []
+          },
+          {
+            "label": "86-DOS",
+            "aliases": []
+          },
+          {
+            "label": "9front",
+            "aliases": []
+          },
+          {
+            "label": "A2",
+            "aliases": []
+          },
+          {
+            "label": "Absolute Linux",
+            "aliases": []
+          },
+          {
+            "label": "Accent",
+            "aliases": []
+          },
+          {
+            "label": "Access Linux Platform",
+            "aliases": []
+          },
+          {
+            "label": "ACP",
+            "aliases": []
+          },
+          {
+            "label": "Ageless Linux",
+            "aliases": []
+          },
+          {
+            "label": "AIX/370",
+            "aliases": []
+          },
+          {
+            "label": "AIX/ESA",
+            "aliases": []
+          },
+          {
+            "label": "Altair DOS",
+            "aliases": []
+          },
+          {
+            "label": "ALT Linux",
+            "aliases": []
+          },
+          {
+            "label": "Amazon Linux 2",
+            "aliases": []
+          },
+          {
+            "label": "AmigaOS 4",
+            "aliases": []
+          },
+          {
+            "label": "Amiga Unix",
+            "aliases": []
+          },
+          {
+            "label": "Amoeba",
+            "aliases": []
+          },
+          {
+            "label": "AMSDOS",
+            "aliases": []
+          },
+          {
+            "label": "ANDOS",
+            "aliases": []
+          },
+          {
+            "label": "Android 16 QPR2",
+            "aliases": []
+          },
+          {
+            "label": "Android Cupcake",
+            "aliases": [
+              "Cupcake"
+            ]
+          },
+          {
+            "label": "Android Donut",
+            "aliases": [
+              "Donut"
+            ]
+          },
+          {
+            "label": "Android Eclair",
+            "aliases": [
+              "Android 2.0",
+              "Android 2.0.1",
+              "Android 2.1",
+              "Eclair"
+            ]
+          },
+          {
+            "label": "Android Froyo",
+            "aliases": [
+              "Froyo"
+            ]
+          },
+          {
+            "label": "Android Gingerbread",
+            "aliases": [
+              "Gingerbread"
+            ]
+          },
+          {
+            "label": "Android Honeycomb",
+            "aliases": [
+              "Android 3.0",
+              "Android 3.1",
+              "Honeycomb"
+            ]
+          },
+          {
+            "label": "Android Ice Cream Sandwich",
+            "aliases": [
+              "Ice Cream Sandwich"
+            ]
+          },
+          {
+            "label": "Android Jelly Bean",
+            "aliases": [
+              "Jelly Bean"
+            ]
+          },
+          {
+            "label": "Android KitKat",
+            "aliases": [
+              "KitKat"
+            ]
+          },
+          {
+            "label": "Android Lollipop",
+            "aliases": [
+              "Android 5.0",
+              "Android 5.1",
+              "Lollipop"
+            ]
+          },
+          {
+            "label": "Android Marshmallow",
+            "aliases": [
+              "Android 6.0",
+              "Marshmallow"
+            ]
+          },
+          {
+            "label": "Android Nougat",
+            "aliases": [
+              "Android 7.0",
+              "Android 7.1",
+              "Nougat"
+            ]
+          },
+          {
+            "label": "Android Oreo",
+            "aliases": [
+              "Android 8.0.0",
+              "Android 8.1.0",
+              "Oreo"
+            ]
+          },
+          {
+            "label": "Android Pie",
+            "aliases": [
+              "Android 9",
+              "Pie"
+            ]
+          },
+          {
+            "label": "Android version 1.0",
+            "aliases": []
+          },
+          {
+            "label": "Android version 1.1",
+            "aliases": []
+          },
+          {
+            "label": "Android-x86",
+            "aliases": []
+          },
+          {
+            "label": "Ångström",
+            "aliases": [
+              "Ångström distribution"
+            ]
+          },
+          {
+            "label": "Antergos",
+            "aliases": []
+          },
+          {
+            "label": "antiX",
+            "aliases": []
+          },
+          {
+            "label": "AOS/VS",
+            "aliases": []
+          },
+          {
+            "label": "Apache Mynewt",
+            "aliases": []
+          },
+          {
+            "label": "Apollo Aegis",
+            "aliases": []
+          },
+          {
+            "label": "Apple DOS",
+            "aliases": []
+          },
+          {
+            "label": "Apple Pascal",
+            "aliases": []
+          },
+          {
+            "label": "Apple SOS",
+            "aliases": []
+          },
+          {
+            "label": "ArcaOS",
+            "aliases": []
+          },
+          {
+            "label": "ArchBang",
+            "aliases": []
+          },
+          {
+            "label": "ArchLabs",
+            "aliases": []
+          },
+          {
+            "label": "Arch Linux ARM",
+            "aliases": []
+          },
+          {
+            "label": "AROS",
+            "aliases": [
+              "AROS Research Operating System",
+              "Amiga Research Operating System"
+            ]
+          },
+          {
+            "label": "A/ROSE",
+            "aliases": []
+          },
+          {
+            "label": "Arthur",
+            "aliases": []
+          },
+          {
+            "label": "Artix Linux",
+            "aliases": []
+          },
+          {
+            "label": "Asahi Linux",
+            "aliases": []
+          },
+          {
+            "label": "Asianux",
+            "aliases": []
+          },
+          {
+            "label": "Astra Linux",
+            "aliases": []
+          },
+          {
+            "label": "Atari DOS",
+            "aliases": []
+          },
+          {
+            "label": "Atari MiNT",
+            "aliases": [
+              "FreeMiNT"
+            ]
+          },
+          {
+            "label": "Atari MultiTOS",
+            "aliases": []
+          },
+          {
+            "label": "Atari TOS",
+            "aliases": []
+          },
+          {
+            "label": "AtheOS",
+            "aliases": []
+          },
+          {
+            "label": "Aurora OS",
+            "aliases": []
+          },
+          {
+            "label": "Austrumi Linux",
+            "aliases": []
+          },
+          {
+            "label": "A/UX",
+            "aliases": []
+          },
+          {
+            "label": "Azure Linux",
+            "aliases": [
+              "CBL-Mariner"
+            ]
+          },
+          {
+            "label": "Azure Sphere",
+            "aliases": []
+          },
+          {
+            "label": "BackBox",
+            "aliases": []
+          },
+          {
+            "label": "Bada",
+            "aliases": []
+          },
+          {
+            "label": "Banyan VINES",
+            "aliases": []
+          },
+          {
+            "label": "BareMetal",
+            "aliases": []
+          },
+          {
+            "label": "Barrelfish",
+            "aliases": []
+          },
+          {
+            "label": "Batch-11/DOS-11",
+            "aliases": []
+          },
+          {
+            "label": "Bedrock Linux",
+            "aliases": []
+          },
+          {
+            "label": "BeIA",
+            "aliases": []
+          },
+          {
+            "label": "BeOS r5.1d0",
+            "aliases": []
+          },
+          {
+            "label": "Berkeley Timesharing System",
+            "aliases": []
+          },
+          {
+            "label": "Berry Linux",
+            "aliases": []
+          },
+          {
+            "label": "BESYS",
+            "aliases": []
+          },
+          {
+            "label": "Bharat Operating System Solutions",
+            "aliases": [
+              "BOSS",
+              "BOSS Linux"
+            ]
+          },
+          {
+            "label": "Bitrig",
+            "aliases": []
+          },
+          {
+            "label": "BlackArch",
+            "aliases": []
+          },
+          {
+            "label": "BlackBerry 10",
+            "aliases": []
+          },
+          {
+            "label": "BLAG Linux and GNU",
+            "aliases": []
+          },
+          {
+            "label": "BLIS/COBOL",
+            "aliases": []
+          },
+          {
+            "label": "Bodhi Linux",
+            "aliases": []
+          },
+          {
+            "label": "BOS/360",
+            "aliases": []
+          },
+          {
+            "label": "brickOS",
+            "aliases": []
+          },
+          {
+            "label": "bridgeOS",
+            "aliases": []
+          },
+          {
+            "label": "BS1000",
+            "aliases": []
+          },
+          {
+            "label": "BS2000",
+            "aliases": []
+          },
+          {
+            "label": "BS3000",
+            "aliases": []
+          },
+          {
+            "label": "BSD",
+            "aliases": [
+              "Berkeley Software Distribution"
+            ]
+          },
+          {
+            "label": "Burroughs MCP",
+            "aliases": []
+          },
+          {
+            "label": "Business Operating System",
+            "aliases": []
+          },
+          {
+            "label": "Calculate Linux",
+            "aliases": []
+          },
+          {
+            "label": "Caldera OpenLinux",
+            "aliases": []
+          },
+          {
+            "label": "Canaima",
+            "aliases": []
+          },
+          {
+            "label": "CatOS",
+            "aliases": []
+          },
+          {
+            "label": "CB Unix",
+            "aliases": []
+          },
+          {
+            "label": "CCI Multiuser DOS",
+            "aliases": []
+          },
+          {
+            "label": "CentOS Stream",
+            "aliases": []
+          },
+          {
+            "label": "Cesium RTOS",
+            "aliases": []
+          },
+          {
+            "label": "Chakra Linux",
+            "aliases": []
+          },
+          {
+            "label": "CHAOS",
+            "aliases": []
+          },
+          {
+            "label": "ChibiOS/RT",
+            "aliases": []
+          },
+          {
+            "label": "Chimera Linux",
+            "aliases": []
+          },
+          {
+            "label": "Chippewa Operating System",
+            "aliases": []
+          },
+          {
+            "label": "ChorusOS",
+            "aliases": []
+          },
+          {
+            "label": "Cisco IOS",
+            "aliases": []
+          },
+          {
+            "label": "Cisco IOS XE",
+            "aliases": [
+              "IOS XE"
+            ]
+          },
+          {
+            "label": "Cisco IOS XR",
+            "aliases": []
+          },
+          {
+            "label": "Cisco NX-OS",
+            "aliases": []
+          },
+          {
+            "label": "Classic Mac OS",
+            "aliases": []
+          },
+          {
+            "label": "Clear Linux OS",
+            "aliases": []
+          },
+          {
+            "label": "ClearOS",
+            "aliases": []
+          },
+          {
+            "label": "Clip OS",
+            "aliases": []
+          },
+          {
+            "label": "Coherent",
+            "aliases": []
+          },
+          {
+            "label": "ColorOS",
+            "aliases": []
+          },
+          {
+            "label": "Commodore GEOS",
+            "aliases": [
+              "GEOS"
+            ]
+          },
+          {
+            "label": "Compatible Time-Sharing System",
+            "aliases": []
+          },
+          {
+            "label": "Concurrent CP/M",
+            "aliases": []
+          },
+          {
+            "label": "Concurrent CP/M-68K",
+            "aliases": []
+          },
+          {
+            "label": "Concurrent CP/M 8-16",
+            "aliases": []
+          },
+          {
+            "label": "Concurrent CP/M-86",
+            "aliases": []
+          },
+          {
+            "label": "Concurrent DOS",
+            "aliases": []
+          },
+          {
+            "label": "Concurrent DOS 286",
+            "aliases": []
+          },
+          {
+            "label": "Concurrent DOS 386",
+            "aliases": []
+          },
+          {
+            "label": "Concurrent DOS 386/MGE",
+            "aliases": []
+          },
+          {
+            "label": "Concurrent DOS 68K",
+            "aliases": []
+          },
+          {
+            "label": "Concurrent DOS 8-16",
+            "aliases": []
+          },
+          {
+            "label": "Concurrent DOS XM",
+            "aliases": []
+          },
+          {
+            "label": "Concurrent PC DOS",
+            "aliases": []
+          },
+          {
+            "label": "Container Linux",
+            "aliases": []
+          },
+          {
+            "label": "Container-Optimized OS",
+            "aliases": []
+          },
+          {
+            "label": "Contiki",
+            "aliases": []
+          },
+          {
+            "label": "CopperheadOS",
+            "aliases": []
+          },
+          {
+            "label": "Corel Linux",
+            "aliases": []
+          },
+          {
+            "label": "CoRTOS",
+            "aliases": []
+          },
+          {
+            "label": "CP-40/CMS",
+            "aliases": []
+          },
+          {
+            "label": "CP-6",
+            "aliases": []
+          },
+          {
+            "label": "CP-67/CMS",
+            "aliases": []
+          },
+          {
+            "label": "CP/CMS",
+            "aliases": []
+          },
+          {
+            "label": "CPF",
+            "aliases": []
+          },
+          {
+            "label": "CP/M 2.2",
+            "aliases": []
+          },
+          {
+            "label": "CP/M-68K",
+            "aliases": []
+          },
+          {
+            "label": "CP/M-8000",
+            "aliases": []
+          },
+          {
+            "label": "CP/M-86",
+            "aliases": []
+          },
+          {
+            "label": "CP/M-86 Plus",
+            "aliases": []
+          },
+          {
+            "label": "CP/M Plus",
+            "aliases": []
+          },
+          {
+            "label": "CP-R",
+            "aliases": []
+          },
+          {
+            "label": "CPS",
+            "aliases": []
+          },
+          {
+            "label": "CP-V",
+            "aliases": []
+          },
+          {
+            "label": "Cromemco DOS",
+            "aliases": []
+          },
+          {
+            "label": "Cromix",
+            "aliases": []
+          },
+          {
+            "label": "CrunchBang Linux",
+            "aliases": []
+          },
+          {
+            "label": "CRUX",
+            "aliases": []
+          },
+          {
+            "label": "CSI-DOS",
+            "aliases": []
+          },
+          {
+            "label": "CTOS",
+            "aliases": [
+              "Convergent Technologies Operating System"
+            ]
+          },
+          {
+            "label": "Cub Linux",
+            "aliases": []
+          },
+          {
+            "label": "CX/UX",
+            "aliases": []
+          },
+          {
+            "label": "CyanogenMod",
+            "aliases": []
+          },
+          {
+            "label": "Damn Small Linux",
+            "aliases": []
+          },
+          {
+            "label": "Damn Vulnerable Linux",
+            "aliases": []
+          },
+          {
+            "label": "Darwin",
+            "aliases": []
+          },
+          {
+            "label": "Data General AOS",
+            "aliases": []
+          },
+          {
+            "label": "Data General DOS",
+            "aliases": []
+          },
+          {
+            "label": "Data General RDOS",
+            "aliases": []
+          },
+          {
+            "label": "Data General RTOS",
+            "aliases": []
+          },
+          {
+            "label": "Data ONTAP",
+            "aliases": []
+          },
+          {
+            "label": "Datapac Multiuser DOS",
+            "aliases": []
+          },
+          {
+            "label": "Datapac System Manager",
+            "aliases": []
+          },
+          {
+            "label": "Datapoint CTOS",
+            "aliases": []
+          },
+          {
+            "label": "Datapoint DOS",
+            "aliases": []
+          },
+          {
+            "label": "DC/OSx",
+            "aliases": []
+          },
+          {
+            "label": "Deos",
+            "aliases": []
+          },
+          {
+            "label": "Devuan",
+            "aliases": []
+          },
+          {
+            "label": "DG/UX",
+            "aliases": []
+          },
+          {
+            "label": "DIP DOS",
+            "aliases": []
+          },
+          {
+            "label": "Distributed Processing Programming Executive/370",
+            "aliases": []
+          },
+          {
+            "label": "DivestOS",
+            "aliases": []
+          },
+          {
+            "label": "DMS",
+            "aliases": []
+          },
+          {
+            "label": "DNIX",
+            "aliases": []
+          },
+          {
+            "label": "Domain/OS",
+            "aliases": []
+          },
+          {
+            "label": "DOS/360",
+            "aliases": []
+          },
+          {
+            "label": "DOS/360/RJE",
+            "aliases": []
+          },
+          {
+            "label": "DOS Plus",
+            "aliases": []
+          },
+          {
+            "label": "DOS/V",
+            "aliases": []
+          },
+          {
+            "label": "DOS/VS",
+            "aliases": []
+          },
+          {
+            "label": "DOS/VSE",
+            "aliases": []
+          },
+          {
+            "label": "DoudouLinux",
+            "aliases": []
+          },
+          {
+            "label": "DPCX",
+            "aliases": []
+          },
+          {
+            "label": "DPPX",
+            "aliases": []
+          },
+          {
+            "label": "Dragora GNU/Linux-Libre",
+            "aliases": []
+          },
+          {
+            "label": "DR-DOS",
+            "aliases": []
+          },
+          {
+            "label": "Dreamlinux",
+            "aliases": []
+          },
+          {
+            "label": "DriveNets DNOS",
+            "aliases": []
+          },
+          {
+            "label": "Drum SCOPE",
+            "aliases": []
+          },
+          {
+            "label": "DSPnano RTOS",
+            "aliases": []
+          },
+          {
+            "label": "DX10",
+            "aliases": []
+          },
+          {
+            "label": "dyne:bolic",
+            "aliases": []
+          },
+          {
+            "label": "Dynix",
+            "aliases": []
+          },
+          {
+            "label": "EasyPeasy",
+            "aliases": []
+          },
+          {
+            "label": "eComStation",
+            "aliases": []
+          },
+          {
+            "label": "eCos",
+            "aliases": []
+          },
+          {
+            "label": "Edinburgh Multiple Access System",
+            "aliases": []
+          },
+          {
+            "label": "Edos",
+            "aliases": []
+          },
+          {
+            "label": "Edubuntu",
+            "aliases": []
+          },
+          {
+            "label": "EDX",
+            "aliases": []
+          },
+          {
+            "label": "Eeebuntu",
+            "aliases": []
+          },
+          {
+            "label": "Element OS",
+            "aliases": []
+          },
+          {
+            "label": "Elive",
+            "aliases": []
+          },
+          {
+            "label": "Embedded Linux",
+            "aliases": []
+          },
+          {
+            "label": "EMBOS",
+            "aliases": []
+          },
+          {
+            "label": "Emdebian Grip",
+            "aliases": []
+          },
+          {
+            "label": "Emmabuntüs",
+            "aliases": []
+          },
+          {
+            "label": "EMUI",
+            "aliases": []
+          },
+          {
+            "label": "EmuTOS",
+            "aliases": []
+          },
+          {
+            "label": "EnGarde Secure Linux",
+            "aliases": []
+          },
+          {
+            "label": "/e/OS",
+            "aliases": [
+              "/e/"
+            ]
+          },
+          {
+            "label": "EPOC",
+            "aliases": []
+          },
+          {
+            "label": "ERIKA Enterprise",
+            "aliases": []
+          },
+          {
+            "label": "EROS",
+            "aliases": []
+          },
+          {
+            "label": "ES",
+            "aliases": []
+          },
+          {
+            "label": "Ésope",
+            "aliases": [
+              "Ésope (operating system)"
+            ]
+          },
+          {
+            "label": "ETA EOS",
+            "aliases": []
+          },
+          {
+            "label": "EulerOS",
+            "aliases": []
+          },
+          {
+            "label": "EXEC 8",
+            "aliases": []
+          },
+          {
+            "label": "EXEC I",
+            "aliases": []
+          },
+          {
+            "label": "EXEC II",
+            "aliases": []
+          },
+          {
+            "label": "Executive",
+            "aliases": []
+          },
+          {
+            "label": "ExtremeWare",
+            "aliases": []
+          },
+          {
+            "label": "ExtremeXOS",
+            "aliases": []
+          },
+          {
+            "label": "Fabric OS",
+            "aliases": []
+          },
+          {
+            "label": "Familiar Linux",
+            "aliases": []
+          },
+          {
+            "label": "Feather Linux",
+            "aliases": []
+          },
+          {
+            "label": "Fermi Linux LTS",
+            "aliases": []
+          },
+          {
+            "label": "Finnix",
+            "aliases": []
+          },
+          {
+            "label": "Fire OS",
+            "aliases": []
+          },
+          {
+            "label": "FLEX9",
+            "aliases": []
+          },
+          {
+            "label": "FlexOS",
+            "aliases": []
+          },
+          {
+            "label": "FlexOS 186",
+            "aliases": []
+          },
+          {
+            "label": "FlexOS 286",
+            "aliases": []
+          },
+          {
+            "label": "FlexOS 386",
+            "aliases": []
+          },
+          {
+            "label": "FlexOS 68K",
+            "aliases": []
+          },
+          {
+            "label": "fli4l",
+            "aliases": []
+          },
+          {
+            "label": "Flyme OS",
+            "aliases": []
+          },
+          {
+            "label": "Foresight Linux",
+            "aliases": []
+          },
+          {
+            "label": "FORTRAN Monitor System",
+            "aliases": []
+          },
+          {
+            "label": "Frugalware Linux",
+            "aliases": []
+          },
+          {
+            "label": "FTOS",
+            "aliases": []
+          },
+          {
+            "label": "Fuchsia",
+            "aliases": [
+              "Google Fuchsia"
+            ]
+          },
+          {
+            "label": "Fuduntu",
+            "aliases": []
+          },
+          {
+            "label": "FuguIta",
+            "aliases": []
+          },
+          {
+            "label": "Fujitsu MSP",
+            "aliases": []
+          },
+          {
+            "label": "Fujitsu MSP-EX",
+            "aliases": []
+          },
+          {
+            "label": "GalliumOS",
+            "aliases": []
+          },
+          {
+            "label": "Gargoyle",
+            "aliases": []
+          },
+          {
+            "label": "GCOS",
+            "aliases": []
+          },
+          {
+            "label": "GEC COS",
+            "aliases": []
+          },
+          {
+            "label": "GEC DOS",
+            "aliases": []
+          },
+          {
+            "label": "GeckoLinux",
+            "aliases": []
+          },
+          {
+            "label": "GeeXboX",
+            "aliases": []
+          },
+          {
+            "label": "GendBuntu",
+            "aliases": []
+          },
+          {
+            "label": "Genera",
+            "aliases": []
+          },
+          {
+            "label": "GEORGE",
+            "aliases": []
+          },
+          {
+            "label": "GEOS-SC",
+            "aliases": []
+          },
+          {
+            "label": "GEOS-SE",
+            "aliases": []
+          },
+          {
+            "label": "GhostBSD",
+            "aliases": []
+          },
+          {
+            "label": "gLinux",
+            "aliases": []
+          },
+          {
+            "label": "GM-NAA I/O",
+            "aliases": []
+          },
+          {
+            "label": "GM OS",
+            "aliases": []
+          },
+          {
+            "label": "gNewSense",
+            "aliases": []
+          },
+          {
+            "label": "GNO/ME",
+            "aliases": []
+          },
+          {
+            "label": "GNU",
+            "aliases": []
+          },
+          {
+            "label": "GNU Guix System",
+            "aliases": []
+          },
+          {
+            "label": "GNU Hurd",
+            "aliases": []
+          },
+          {
+            "label": "GoboLinux",
+            "aliases": []
+          },
+          {
+            "label": "Gobuntu",
+            "aliases": []
+          },
+          {
+            "label": "Goobuntu",
+            "aliases": []
+          },
+          {
+            "label": "GORDO",
+            "aliases": []
+          },
+          {
+            "label": "gOS",
+            "aliases": []
+          },
+          {
+            "label": "grml",
+            "aliases": []
+          },
+          {
+            "label": "GS/OS",
+            "aliases": []
+          },
+          {
+            "label": "HandyLinux",
+            "aliases": []
+          },
+          {
+            "label": "Hanthana",
+            "aliases": []
+          },
+          {
+            "label": "Harmony",
+            "aliases": []
+          },
+          {
+            "label": "HarmonyOS NEXT",
+            "aliases": []
+          },
+          {
+            "label": "HDOS",
+            "aliases": []
+          },
+          {
+            "label": "HeartOS",
+            "aliases": []
+          },
+          {
+            "label": "HelenOS",
+            "aliases": []
+          },
+          {
+            "label": "HeliOS",
+            "aliases": []
+          },
+          {
+            "label": "HT-11",
+            "aliases": []
+          },
+          {
+            "label": "Huawei VRP",
+            "aliases": []
+          },
+          {
+            "label": "HYDRA",
+            "aliases": []
+          },
+          {
+            "label": "Hyperbola GNU/Linux-libre",
+            "aliases": []
+          },
+          {
+            "label": "HyperOS",
+            "aliases": []
+          },
+          {
+            "label": "IBM 1410 Processor Operating System",
+            "aliases": []
+          },
+          {
+            "label": "IBM 4680 OS",
+            "aliases": []
+          },
+          {
+            "label": "IBM 4690 OS",
+            "aliases": []
+          },
+          {
+            "label": "IBM 7040/7044 Operating System",
+            "aliases": []
+          },
+          {
+            "label": "IBM AOS",
+            "aliases": []
+          },
+          {
+            "label": "IBM i",
+            "aliases": [
+              "OS/400",
+              "i5/OS"
+            ]
+          },
+          {
+            "label": "IBM System/3 DMS",
+            "aliases": []
+          },
+          {
+            "label": "IBSYS",
+            "aliases": []
+          },
+          {
+            "label": "ICL J",
+            "aliases": []
+          },
+          {
+            "label": "ICL VME",
+            "aliases": []
+          },
+          {
+            "label": "ILIOS",
+            "aliases": []
+          },
+          {
+            "label": "illumos",
+            "aliases": []
+          },
+          {
+            "label": "iMAX 432",
+            "aliases": []
+          },
+          {
+            "label": "IMOS",
+            "aliases": []
+          },
+          {
+            "label": "IMS Multiuser DOS",
+            "aliases": []
+          },
+          {
+            "label": "Incompatible Timesharing System",
+            "aliases": []
+          },
+          {
+            "label": "Inferno",
+            "aliases": []
+          },
+          {
+            "label": "INTEGRITY",
+            "aliases": []
+          },
+          {
+            "label": "INTEGRITY-178B",
+            "aliases": []
+          },
+          {
+            "label": "Interactive Unix",
+            "aliases": []
+          },
+          {
+            "label": "IPFire",
+            "aliases": []
+          },
+          {
+            "label": "iPodLinux",
+            "aliases": []
+          },
+          {
+            "label": "iPod system software",
+            "aliases": []
+          },
+          {
+            "label": "IRIX",
+            "aliases": []
+          },
+          {
+            "label": "iRMX",
+            "aliases": []
+          },
+          {
+            "label": "ISIS",
+            "aliases": []
+          },
+          {
+            "label": "IX/370",
+            "aliases": []
+          },
+          {
+            "label": "JavaOS",
+            "aliases": []
+          },
+          {
+            "label": "Jlime",
+            "aliases": []
+          },
+          {
+            "label": "JNode",
+            "aliases": []
+          },
+          {
+            "label": "Joli OS",
+            "aliases": []
+          },
+          {
+            "label": "Junos OS",
+            "aliases": [
+              "JunOS"
+            ]
+          },
+          {
+            "label": "JX",
+            "aliases": []
+          },
+          {
+            "label": "K42",
+            "aliases": []
+          },
+          {
+            "label": "Kali NetHunter",
+            "aliases": []
+          },
+          {
+            "label": "Kanotix",
+            "aliases": []
+          },
+          {
+            "label": "KaOS",
+            "aliases": []
+          },
+          {
+            "label": "KateOS",
+            "aliases": []
+          },
+          {
+            "label": "KDE neon",
+            "aliases": []
+          },
+          {
+            "label": "KeyKOS",
+            "aliases": []
+          },
+          {
+            "label": "KIN OS",
+            "aliases": []
+          },
+          {
+            "label": "KolibriOS",
+            "aliases": []
+          },
+          {
+            "label": "Korora",
+            "aliases": []
+          },
+          {
+            "label": "Kronos",
+            "aliases": []
+          },
+          {
+            "label": "Kubuntu",
+            "aliases": []
+          },
+          {
+            "label": "Kwort",
+            "aliases": []
+          },
+          {
+            "label": "LCOS",
+            "aliases": []
+          },
+          {
+            "label": "LEAF Project",
+            "aliases": []
+          },
+          {
+            "label": "LEDE",
+            "aliases": []
+          },
+          {
+            "label": "leJOS",
+            "aliases": []
+          },
+          {
+            "label": "Libranet",
+            "aliases": []
+          },
+          {
+            "label": "LibreCMC",
+            "aliases": []
+          },
+          {
+            "label": "Lightweight Portable Security",
+            "aliases": [
+              "LPS",
+              "LPS Linux"
+            ]
+          },
+          {
+            "label": "LiMux",
+            "aliases": []
+          },
+          {
+            "label": "LinHES",
+            "aliases": []
+          },
+          {
+            "label": "Linpus Linux",
+            "aliases": []
+          },
+          {
+            "label": "Linux Caixa Mágica",
+            "aliases": []
+          },
+          {
+            "label": "LinuxConsole",
+            "aliases": []
+          },
+          {
+            "label": "Linux for PlayStation 2",
+            "aliases": []
+          },
+          {
+            "label": "Linux from Scratch",
+            "aliases": []
+          },
+          {
+            "label": "Linux Lite",
+            "aliases": []
+          },
+          {
+            "label": "LinuxMCE",
+            "aliases": []
+          },
+          {
+            "label": "Linux on IBM Z",
+            "aliases": []
+          },
+          {
+            "label": "Linux Router Project",
+            "aliases": []
+          },
+          {
+            "label": "Linux Schools",
+            "aliases": [
+              "The Linux for Schools Project"
+            ]
+          },
+          {
+            "label": "LinuxTLE",
+            "aliases": []
+          },
+          {
+            "label": "Linux XP",
+            "aliases": []
+          },
+          {
+            "label": "LiteOS",
+            "aliases": []
+          },
+          {
+            "label": "LliureX",
+            "aliases": []
+          },
+          {
+            "label": "LMDE",
+            "aliases": []
+          },
+          {
+            "label": "LSE/OS",
+            "aliases": []
+          },
+          {
+            "label": "Lubuntu",
+            "aliases": []
+          },
+          {
+            "label": "LXLE Linux",
+            "aliases": []
+          },
+          {
+            "label": "LynxOS",
+            "aliases": []
+          },
+          {
+            "label": "m0n0wall",
+            "aliases": []
+          },
+          {
+            "label": "M65MP",
+            "aliases": []
+          },
+          {
+            "label": "MACE",
+            "aliases": []
+          },
+          {
+            "label": "Mach",
+            "aliases": []
+          },
+          {
+            "label": "macOS Big Sur",
+            "aliases": [
+              "Big Sur",
+              "macOS 11",
+              "macOS Big Sur 11"
+            ]
+          },
+          {
+            "label": "macOS Catalina",
+            "aliases": [
+              "Catalina",
+              "macOS 10.15",
+              "macOS Catalina 10.15"
+            ]
+          },
+          {
+            "label": "macOS Golden Gate",
+            "aliases": [
+              "Golden Gate",
+              "macOS 27",
+              "macOS 27 Golden Gate"
+            ]
+          },
+          {
+            "label": "macOS High Sierra",
+            "aliases": [
+              "High Sierra",
+              "macOS 10.13",
+              "macOS High Sierra 10.13"
+            ]
+          },
+          {
+            "label": "macOS Mojave",
+            "aliases": [
+              "Mojave",
+              "macOS 10.14",
+              "macOS Mojave 10.14"
+            ]
+          },
+          {
+            "label": "macOS Monterey",
+            "aliases": [
+              "Monterey",
+              "macOS 12",
+              "macOS Monterey 12"
+            ]
+          },
+          {
+            "label": "macOS Sequoia",
+            "aliases": [
+              "Sequoia",
+              "macOS 15",
+              "macOS Sequoia 15"
+            ]
+          },
+          {
+            "label": "macOS Server",
+            "aliases": []
+          },
+          {
+            "label": "macOS Sierra",
+            "aliases": [
+              "Sierra",
+              "macOS 10.12",
+              "macOS Sierra 10.12"
+            ]
+          },
+          {
+            "label": "macOS Sonoma",
+            "aliases": [
+              "Sonoma",
+              "macOS 14",
+              "macOS Sonoma 14"
+            ]
+          },
+          {
+            "label": "macOS Tahoe",
+            "aliases": [
+              "Tahoe",
+              "macOS 26",
+              "macOS Tahoe 26"
+            ]
+          },
+          {
+            "label": "macOS Ventura",
+            "aliases": [
+              "Ventura",
+              "macOS 13",
+              "macOS Ventura 13"
+            ]
+          },
+          {
+            "label": "Mac OS X Cheetah",
+            "aliases": [
+              "Cheetah",
+              "Mac OS X 10",
+              "Mac OS X 10.0",
+              "Mac OS X Cheetah 10",
+              "macOS 10.0"
+            ]
+          },
+          {
+            "label": "Mac OS X Jaguar",
+            "aliases": [
+              "Jaguar",
+              "Mac OS X 10.2",
+              "Mac OS X Jaguar 10.2"
+            ]
+          },
+          {
+            "label": "Mac OS X Leopard",
+            "aliases": [
+              "Leopard",
+              "Mac OS X 10.5",
+              "Mac OS X Leopard 10.5"
+            ]
+          },
+          {
+            "label": "Mac OS X Panther",
+            "aliases": [
+              "Mac OS X 10.3",
+              "Mac OS X Panther 10.3",
+              "Panther"
+            ]
+          },
+          {
+            "label": "Mac OS X Puma",
+            "aliases": [
+              "Mac OS X 10.1",
+              "Mac OS X Puma 10.1",
+              "Puma"
+            ]
+          },
+          {
+            "label": "Mac OS X Snow Leopard",
+            "aliases": [
+              "Mac OS X 10.6",
+              "Mac OS X Snow Leopard 10.6",
+              "Snow Leopard"
+            ]
+          },
+          {
+            "label": "Mac OS X Tiger",
+            "aliases": [
+              "Mac OS X 10.4",
+              "Mac OS X Tiger 10.4",
+              "Tiger"
+            ]
+          },
+          {
+            "label": "Maemo",
+            "aliases": [
+              "Mæmo"
+            ]
+          },
+          {
+            "label": "Mageia",
+            "aliases": []
+          },
+          {
+            "label": "MagiC",
+            "aliases": []
+          },
+          {
+            "label": "Magic Cap",
+            "aliases": []
+          },
+          {
+            "label": "magnussoft ZETA",
+            "aliases": []
+          },
+          {
+            "label": "Managarm",
+            "aliases": []
+          },
+          {
+            "label": "MASIX",
+            "aliases": []
+          },
+          {
+            "label": "MAX",
+            "aliases": []
+          },
+          {
+            "label": "Maya OS",
+            "aliases": []
+          },
+          {
+            "label": "MCC Interim Linux",
+            "aliases": []
+          },
+          {
+            "label": "Medley",
+            "aliases": []
+          },
+          {
+            "label": "MeeGo",
+            "aliases": []
+          },
+          {
+            "label": "MeikOS",
+            "aliases": []
+          },
+          {
+            "label": "MEPIS",
+            "aliases": []
+          },
+          {
+            "label": "MERLIN",
+            "aliases": []
+          },
+          {
+            "label": "MFT",
+            "aliases": []
+          },
+          {
+            "label": "MFT II",
+            "aliases": []
+          },
+          {
+            "label": "Michigan Terminal System",
+            "aliases": [
+              "MTS"
+            ]
+          },
+          {
+            "label": "Micrium μC/OS-II",
+            "aliases": [
+              "MicroC/OS-II",
+              "uC/OS-II",
+              "μC/OS-II"
+            ]
+          },
+          {
+            "label": "Micrium μC/OS-III",
+            "aliases": [
+              "MicroC/OS-III",
+              "uC/OS-III",
+              "μC/OS-III"
+            ]
+          },
+          {
+            "label": "Micrium OS",
+            "aliases": []
+          },
+          {
+            "label": "Microport System V/386",
+            "aliases": []
+          },
+          {
+            "label": "Microport System V/AT",
+            "aliases": []
+          },
+          {
+            "label": "MidnightBSD",
+            "aliases": []
+          },
+          {
+            "label": "MINI-UNIX",
+            "aliases": []
+          },
+          {
+            "label": "MINIX",
+            "aliases": []
+          },
+          {
+            "label": "MintPPC",
+            "aliases": []
+          },
+          {
+            "label": "MIPS RISC/os",
+            "aliases": []
+          },
+          {
+            "label": "Miracle Linux",
+            "aliases": []
+          },
+          {
+            "label": "MIUI",
+            "aliases": []
+          },
+          {
+            "label": "MK-DOS",
+            "aliases": []
+          },
+          {
+            "label": "MkLinux",
+            "aliases": []
+          },
+          {
+            "label": "MMURTL",
+            "aliases": []
+          },
+          {
+            "label": "Mobilinux",
+            "aliases": []
+          },
+          {
+            "label": "Moblin",
+            "aliases": []
+          },
+          {
+            "label": "Molinux",
+            "aliases": []
+          },
+          {
+            "label": "MontaVista Linux",
+            "aliases": []
+          },
+          {
+            "label": "MorphOS",
+            "aliases": []
+          },
+          {
+            "label": "MOS",
+            "aliases": []
+          },
+          {
+            "label": "MotoMagx",
+            "aliases": []
+          },
+          {
+            "label": "MP/AOS",
+            "aliases": []
+          },
+          {
+            "label": "MPE",
+            "aliases": [
+              "HP Multi-Programming Executive",
+              "MPE/XL",
+              "MPE/iX"
+            ]
+          },
+          {
+            "label": "MP/M",
+            "aliases": []
+          },
+          {
+            "label": "MP/M 8-16",
+            "aliases": []
+          },
+          {
+            "label": "MP/M-86",
+            "aliases": []
+          },
+          {
+            "label": "MP/M II",
+            "aliases": []
+          },
+          {
+            "label": "MPX",
+            "aliases": []
+          },
+          {
+            "label": "MS-DOS 4.0 (multitasking)",
+            "aliases": []
+          },
+          {
+            "label": "MS-DOS 7",
+            "aliases": []
+          },
+          {
+            "label": "MSX-DOS",
+            "aliases": []
+          },
+          {
+            "label": "MuLinux",
+            "aliases": []
+          },
+          {
+            "label": "Multics",
+            "aliases": []
+          },
+          {
+            "label": "Multiuser DOS",
+            "aliases": []
+          },
+          {
+            "label": "MUSIC/SP",
+            "aliases": []
+          },
+          {
+            "label": "Musix GNU+Linux",
+            "aliases": []
+          },
+          {
+            "label": "MVS",
+            "aliases": []
+          },
+          {
+            "label": "MVS/370",
+            "aliases": []
+          },
+          {
+            "label": "MVS/ESA",
+            "aliases": []
+          },
+          {
+            "label": "MVS/ESA SP V4",
+            "aliases": []
+          },
+          {
+            "label": "MVS/ESA SP V5",
+            "aliases": []
+          },
+          {
+            "label": "MVS/SE",
+            "aliases": []
+          },
+          {
+            "label": "MVS/SP V1",
+            "aliases": []
+          },
+          {
+            "label": "MVS/SP V3",
+            "aliases": []
+          },
+          {
+            "label": "MVS/XA",
+            "aliases": []
+          },
+          {
+            "label": "MVT",
+            "aliases": []
+          },
+          {
+            "label": "Mythbuntu",
+            "aliases": []
+          },
+          {
+            "label": "NCOS",
+            "aliases": []
+          },
+          {
+            "label": "Nemesis",
+            "aliases": []
+          },
+          {
+            "label": "NepaLinux",
+            "aliases": []
+          },
+          {
+            "label": "NestOS",
+            "aliases": []
+          },
+          {
+            "label": "Netrunner",
+            "aliases": []
+          },
+          {
+            "label": "NetWare",
+            "aliases": []
+          },
+          {
+            "label": "Network Security Toolkit",
+            "aliases": []
+          },
+          {
+            "label": "NewDos/80",
+            "aliases": []
+          },
+          {
+            "label": "Newton OS",
+            "aliases": []
+          },
+          {
+            "label": "Nexenta OS",
+            "aliases": []
+          },
+          {
+            "label": "NeXTSTEP",
+            "aliases": []
+          },
+          {
+            "label": "NimbleX",
+            "aliases": []
+          },
+          {
+            "label": "Nintendo 3DS system software",
+            "aliases": []
+          },
+          {
+            "label": "Nintendo DSi system software",
+            "aliases": []
+          },
+          {
+            "label": "Nintendo Switch system software",
+            "aliases": []
+          },
+          {
+            "label": "Nobara",
+            "aliases": []
+          },
+          {
+            "label": "NomadBSD",
+            "aliases": []
+          },
+          {
+            "label": "NonStop OS",
+            "aliases": [
+              "Guardian",
+              "NonStop Kernel"
+            ]
+          },
+          {
+            "label": "NOS",
+            "aliases": []
+          },
+          {
+            "label": "NOS/BE",
+            "aliases": []
+          },
+          {
+            "label": "NOS/VE",
+            "aliases": []
+          },
+          {
+            "label": "Nova",
+            "aliases": []
+          },
+          {
+            "label": "Novell DOS",
+            "aliases": [
+              "Novell DOS 7"
+            ]
+          },
+          {
+            "label": "Nucleus RTOS",
+            "aliases": []
+          },
+          {
+            "label": "Nura",
+            "aliases": []
+          },
+          {
+            "label": "NuttX",
+            "aliases": []
+          },
+          {
+            "label": "Oberon",
+            "aliases": [
+              "Oberon (operating system)"
+            ]
+          },
+          {
+            "label": "OIS",
+            "aliases": []
+          },
+          {
+            "label": "Omarchy",
+            "aliases": []
+          },
+          {
+            "label": "OmniROM",
+            "aliases": []
+          },
+          {
+            "label": "One UI",
+            "aliases": []
+          },
+          {
+            "label": "OpenDOS",
+            "aliases": [
+              "Caldera OpenDOS"
+            ]
+          },
+          {
+            "label": "Open Enterprise Server",
+            "aliases": []
+          },
+          {
+            "label": "openEuler",
+            "aliases": []
+          },
+          {
+            "label": "OpenGEU",
+            "aliases": []
+          },
+          {
+            "label": "OpenHarmony",
+            "aliases": []
+          },
+          {
+            "label": "OpenIndiana",
+            "aliases": []
+          },
+          {
+            "label": "OpenMandriva Lx",
+            "aliases": []
+          },
+          {
+            "label": "Openmoko Linux",
+            "aliases": []
+          },
+          {
+            "label": "OpenRTOS",
+            "aliases": []
+          },
+          {
+            "label": "OpenSolaris for System z",
+            "aliases": []
+          },
+          {
+            "label": "OPENSTEP",
+            "aliases": []
+          },
+          {
+            "label": "OpenZaurus",
+            "aliases": []
+          },
+          {
+            "label": "OPhone",
+            "aliases": []
+          },
+          {
+            "label": "OPNsense",
+            "aliases": []
+          },
+          {
+            "label": "Oracle Linux",
+            "aliases": []
+          },
+          {
+            "label": "Orsay",
+            "aliases": []
+          },
+          {
+            "label": "ORVYL",
+            "aliases": []
+          },
+          {
+            "label": "OS 1100",
+            "aliases": []
+          },
+          {
+            "label": "OS 2200",
+            "aliases": []
+          },
+          {
+            "label": "OS/2 Warp 3",
+            "aliases": []
+          },
+          {
+            "label": "OS/2 Warp 4",
+            "aliases": []
+          },
+          {
+            "label": "OS/360",
+            "aliases": []
+          },
+          {
+            "label": "OS/360 PCP",
+            "aliases": []
+          },
+          {
+            "label": "OS/390",
+            "aliases": []
+          },
+          {
+            "label": "OS/4",
+            "aliases": []
+          },
+          {
+            "label": "OS4000",
+            "aliases": []
+          },
+          {
+            "label": "OS/8",
+            "aliases": []
+          },
+          {
+            "label": "OS-9",
+            "aliases": []
+          },
+          {
+            "label": "OS-9000",
+            "aliases": []
+          },
+          {
+            "label": "OS-9/68K",
+            "aliases": []
+          },
+          {
+            "label": "osakaOS",
+            "aliases": []
+          },
+          {
+            "label": "OSD/XC",
+            "aliases": []
+          },
+          {
+            "label": "OSE",
+            "aliases": []
+          },
+          {
+            "label": "OS ES",
+            "aliases": []
+          },
+          {
+            "label": "OSF/1",
+            "aliases": []
+          },
+          {
+            "label": "osFree",
+            "aliases": []
+          },
+          {
+            "label": "OS/IV",
+            "aliases": []
+          },
+          {
+            "label": "OSv",
+            "aliases": []
+          },
+          {
+            "label": "OS/VS",
+            "aliases": []
+          },
+          {
+            "label": "OS/VS1",
+            "aliases": []
+          },
+          {
+            "label": "OS/VS2",
+            "aliases": []
+          },
+          {
+            "label": "OS X El Capitan",
+            "aliases": [
+              "El Capitan",
+              "OS X 10.11",
+              "OS X El Capitan 10.11"
+            ]
+          },
+          {
+            "label": "OS X Lion",
+            "aliases": [
+              "Lion",
+              "OS X 10.7",
+              "OS X Lion 10.7"
+            ]
+          },
+          {
+            "label": "OS X Mavericks",
+            "aliases": [
+              "Mavericks",
+              "OS X 10.9",
+              "OS X Mavericks 10.9"
+            ]
+          },
+          {
+            "label": "OS X Mountain Lion",
+            "aliases": [
+              "Mountain Lion",
+              "OS X 10.8",
+              "OS X Mountain Lion 10.8"
+            ]
+          },
+          {
+            "label": "OS X Yosemite",
+            "aliases": [
+              "OS X 10.10",
+              "OS X Yosemite 10.10",
+              "Yosemite"
+            ]
+          },
+          {
+            "label": "paldo",
+            "aliases": []
+          },
+          {
+            "label": "PalmDOS",
+            "aliases": []
+          },
+          {
+            "label": "Parabola GNU/Linux-libre",
+            "aliases": []
+          },
+          {
+            "label": "Paranoid Android",
+            "aliases": []
+          },
+          {
+            "label": "Pardus",
+            "aliases": []
+          },
+          {
+            "label": "Parsix",
+            "aliases": []
+          },
+          {
+            "label": "PC DOS 2000",
+            "aliases": []
+          },
+          {
+            "label": "PC DOS 6.1",
+            "aliases": []
+          },
+          {
+            "label": "PC DOS 6.3",
+            "aliases": []
+          },
+          {
+            "label": "PC DOS 7",
+            "aliases": []
+          },
+          {
+            "label": "PC DOS 7.10",
+            "aliases": []
+          },
+          {
+            "label": "PCLinuxOS",
+            "aliases": []
+          },
+          {
+            "label": "PC-MOS/386",
+            "aliases": []
+          },
+          {
+            "label": "PelicanHPC",
+            "aliases": []
+          },
+          {
+            "label": "PEN/GEOS",
+            "aliases": []
+          },
+          {
+            "label": "PenPoint OS",
+            "aliases": []
+          },
+          {
+            "label": "Pentoo",
+            "aliases": []
+          },
+          {
+            "label": "Peppermint OS",
+            "aliases": []
+          },
+          {
+            "label": "PERQ Operating System",
+            "aliases": []
+          },
+          {
+            "label": "Personal CP/M",
+            "aliases": []
+          },
+          {
+            "label": "Personal CP/M-86",
+            "aliases": []
+          },
+          {
+            "label": "pfSense",
+            "aliases": []
+          },
+          {
+            "label": "Phantom OS",
+            "aliases": []
+          },
+          {
+            "label": "Phoenix/MVS",
+            "aliases": []
+          },
+          {
+            "label": "Pick",
+            "aliases": []
+          },
+          {
+            "label": "PikeOS",
+            "aliases": []
+          },
+          {
+            "label": "Pilot",
+            "aliases": []
+          },
+          {
+            "label": "Pinguy OS",
+            "aliases": []
+          },
+          {
+            "label": "Platypux",
+            "aliases": []
+          },
+          {
+            "label": "PlayStation 3 system software",
+            "aliases": []
+          },
+          {
+            "label": "PlayStation 4 system software",
+            "aliases": []
+          },
+          {
+            "label": "PlayStation 5 system software",
+            "aliases": []
+          },
+          {
+            "label": "PlayStation Vita system software",
+            "aliases": []
+          },
+          {
+            "label": "Plurix",
+            "aliases": []
+          },
+          {
+            "label": "PNX",
+            "aliases": []
+          },
+          {
+            "label": "PonyOS",
+            "aliases": []
+          },
+          {
+            "label": "Porteus",
+            "aliases": []
+          },
+          {
+            "label": "Poseidon Linux",
+            "aliases": []
+          },
+          {
+            "label": "Prevas Industrial Linux",
+            "aliases": []
+          },
+          {
+            "label": "PRIMOS",
+            "aliases": []
+          },
+          {
+            "label": "ProDOS",
+            "aliases": []
+          },
+          {
+            "label": "Prolog-Dispatcher",
+            "aliases": []
+          },
+          {
+            "label": "pSOS",
+            "aliases": []
+          },
+          {
+            "label": "PTS-DOS",
+            "aliases": []
+          },
+          {
+            "label": "Puffin OS",
+            "aliases": []
+          },
+          {
+            "label": "PureOS",
+            "aliases": []
+          },
+          {
+            "label": "PVOS",
+            "aliases": []
+          },
+          {
+            "label": "PWB/UNIX",
+            "aliases": []
+          },
+          {
+            "label": "PX5 RTOS",
+            "aliases": []
+          },
+          {
+            "label": "Q4OS",
+            "aliases": []
+          },
+          {
+            "label": "REAL/32",
+            "aliases": []
+          },
+          {
+            "label": "REAL/NG",
+            "aliases": []
+          },
+          {
+            "label": "Real-Time Multiprogramming Operating System",
+            "aliases": []
+          },
+          {
+            "label": "Red Flag Linux",
+            "aliases": []
+          },
+          {
+            "label": "Red Hat Linux",
+            "aliases": []
+          },
+          {
+            "label": "Redox",
+            "aliases": []
+          },
+          {
+            "label": "Red Star OS",
+            "aliases": []
+          },
+          {
+            "label": "Remix OS",
+            "aliases": []
+          },
+          {
+            "label": "Replicant",
+            "aliases": []
+          },
+          {
+            "label": "Research Unix",
+            "aliases": []
+          },
+          {
+            "label": "Resurrection Remix OS",
+            "aliases": []
+          },
+          {
+            "label": "REX OS",
+            "aliases": []
+          },
+          {
+            "label": "Rhapsody",
+            "aliases": []
+          },
+          {
+            "label": "RIOT",
+            "aliases": []
+          },
+          {
+            "label": "RISC iX",
+            "aliases": []
+          },
+          {
+            "label": "RMX",
+            "aliases": []
+          },
+          {
+            "label": "Rockbox",
+            "aliases": []
+          },
+          {
+            "label": "Rocks Cluster Distribution",
+            "aliases": []
+          },
+          {
+            "label": "ROM-DOS",
+            "aliases": []
+          },
+          {
+            "label": "ROSA Linux",
+            "aliases": []
+          },
+          {
+            "label": "RouterOS",
+            "aliases": []
+          },
+          {
+            "label": "rPath",
+            "aliases": []
+          },
+          {
+            "label": "RPS",
+            "aliases": []
+          },
+          {
+            "label": "RSTS/E",
+            "aliases": []
+          },
+          {
+            "label": "RSX-11",
+            "aliases": []
+          },
+          {
+            "label": "RT-11",
+            "aliases": []
+          },
+          {
+            "label": "RTEMS",
+            "aliases": []
+          },
+          {
+            "label": "RTOS/360",
+            "aliases": []
+          },
+          {
+            "label": "RT-Thread",
+            "aliases": []
+          },
+          {
+            "label": "RTXC Quadros",
+            "aliases": []
+          },
+          {
+            "label": "Russian Fedora Remix",
+            "aliases": []
+          },
+          {
+            "label": "Sabayon Linux",
+            "aliases": []
+          },
+          {
+            "label": "Sabily",
+            "aliases": []
+          },
+          {
+            "label": "SafeRTOS",
+            "aliases": []
+          },
+          {
+            "label": "Salix OS",
+            "aliases": []
+          },
+          {
+            "label": "Scientific Linux",
+            "aliases": []
+          },
+          {
+            "label": "SCO Open Desktop",
+            "aliases": []
+          },
+          {
+            "label": "SCO OpenServer",
+            "aliases": [
+              "SCO UNIX",
+              "SCO Unix"
+            ]
+          },
+          {
+            "label": "SCO OpenServer 5",
+            "aliases": []
+          },
+          {
+            "label": "SCO OpenServer 6",
+            "aliases": []
+          },
+          {
+            "label": "SCOPE",
+            "aliases": []
+          },
+          {
+            "label": "Sculpt OS",
+            "aliases": [
+              "Sculpt"
+            ]
+          },
+          {
+            "label": "Sentry Firewall",
+            "aliases": []
+          },
+          {
+            "label": "SerIX",
+            "aliases": []
+          },
+          {
+            "label": "SerpaeOS",
+            "aliases": []
+          },
+          {
+            "label": "SHARE Operating System",
+            "aliases": []
+          },
+          {
+            "label": "SharpOS",
+            "aliases": []
+          },
+          {
+            "label": "Siemens S5-DOS/MT",
+            "aliases": []
+          },
+          {
+            "label": "Sinclair QDOS",
+            "aliases": []
+          },
+          {
+            "label": "Single Virtual Storage",
+            "aliases": []
+          },
+          {
+            "label": "Singularity",
+            "aliases": []
+          },
+          {
+            "label": "SINIX",
+            "aliases": []
+          },
+          {
+            "label": "SINTRAN III",
+            "aliases": []
+          },
+          {
+            "label": "SIPROS",
+            "aliases": []
+          },
+          {
+            "label": "Siris 8",
+            "aliases": []
+          },
+          {
+            "label": "SkyOS",
+            "aliases": []
+          },
+          {
+            "label": "Slackintosh",
+            "aliases": []
+          },
+          {
+            "label": "Slax",
+            "aliases": []
+          },
+          {
+            "label": "SliTaz",
+            "aliases": []
+          },
+          {
+            "label": "Smallfoot",
+            "aliases": []
+          },
+          {
+            "label": "SmartOS",
+            "aliases": []
+          },
+          {
+            "label": "SmoothWall",
+            "aliases": []
+          },
+          {
+            "label": "SODA",
+            "aliases": []
+          },
+          {
+            "label": "Softlanding Linux System",
+            "aliases": []
+          },
+          {
+            "label": "Solus",
+            "aliases": []
+          },
+          {
+            "label": "SolydXK",
+            "aliases": []
+          },
+          {
+            "label": "SONiC",
+            "aliases": []
+          },
+          {
+            "label": "Source Mage",
+            "aliases": []
+          },
+          {
+            "label": "SparkyLinux",
+            "aliases": []
+          },
+          {
+            "label": "Spring",
+            "aliases": []
+          },
+          {
+            "label": "Sprite",
+            "aliases": []
+          },
+          {
+            "label": "SSB-DOS",
+            "aliases": []
+          },
+          {
+            "label": "SSP",
+            "aliases": []
+          },
+          {
+            "label": "SteamOS 1.0",
+            "aliases": []
+          },
+          {
+            "label": "SteamOS 2.0",
+            "aliases": []
+          },
+          {
+            "label": "SteamOS 3.0",
+            "aliases": []
+          },
+          {
+            "label": "Stratus VOS",
+            "aliases": [
+              "VOS"
+            ]
+          },
+          {
+            "label": "Sugar-on-a-Stick Linux",
+            "aliases": []
+          },
+          {
+            "label": "SunOS",
+            "aliases": []
+          },
+          {
+            "label": "Sunwah Linux",
+            "aliases": []
+          },
+          {
+            "label": "SuperGamer",
+            "aliases": []
+          },
+          {
+            "label": "SuperTinyKernel RTOS",
+            "aliases": []
+          },
+          {
+            "label": "SUPER-UX",
+            "aliases": []
+          },
+          {
+            "label": "SUSE Linux Enterprise",
+            "aliases": []
+          },
+          {
+            "label": "Syllable Desktop",
+            "aliases": []
+          },
+          {
+            "label": "SymbOS",
+            "aliases": []
+          },
+          {
+            "label": "Symobi",
+            "aliases": []
+          },
+          {
+            "label": "SystemRescue",
+            "aliases": []
+          },
+          {
+            "label": "System V",
+            "aliases": []
+          },
+          {
+            "label": "T2 Linux",
+            "aliases": [
+              "T2",
+              "T2 SDE"
+            ]
+          },
+          {
+            "label": "TENEX",
+            "aliases": []
+          },
+          {
+            "label": "Texas Instruments DNOS",
+            "aliases": []
+          },
+          {
+            "label": "THE multiprogramming system",
+            "aliases": []
+          },
+          {
+            "label": "THEOS",
+            "aliases": []
+          },
+          {
+            "label": "Think Blue Linux",
+            "aliases": []
+          },
+          {
+            "label": "Thoth",
+            "aliases": []
+          },
+          {
+            "label": "ThreadX",
+            "aliases": []
+          },
+          {
+            "label": "Time Sharing Operating System",
+            "aliases": []
+          },
+          {
+            "label": "Tinfoil Hat Linux",
+            "aliases": []
+          },
+          {
+            "label": "Tiny Core Linux",
+            "aliases": []
+          },
+          {
+            "label": "TinyOS",
+            "aliases": []
+          },
+          {
+            "label": "TI-RTOS Kernel",
+            "aliases": []
+          },
+          {
+            "label": "T-Kernel",
+            "aliases": []
+          },
+          {
+            "label": "TME",
+            "aliases": []
+          },
+          {
+            "label": "TMX",
+            "aliases": []
+          },
+          {
+            "label": "ToaruOS",
+            "aliases": []
+          },
+          {
+            "label": "Tock",
+            "aliases": []
+          },
+          {
+            "label": "tomsrtbt",
+            "aliases": []
+          },
+          {
+            "label": "Topologilinux",
+            "aliases": []
+          },
+          {
+            "label": "TOPS-10",
+            "aliases": []
+          },
+          {
+            "label": "TOPS-20",
+            "aliases": []
+          },
+          {
+            "label": "TOS/360",
+            "aliases": []
+          },
+          {
+            "label": "Toshiba 4690 OS",
+            "aliases": []
+          },
+          {
+            "label": "Towns OS",
+            "aliases": []
+          },
+          {
+            "label": "TPF",
+            "aliases": []
+          },
+          {
+            "label": "TripOS",
+            "aliases": []
+          },
+          {
+            "label": "Trisquel GNU/Linux",
+            "aliases": []
+          },
+          {
+            "label": "TRON",
+            "aliases": []
+          },
+          {
+            "label": "TRSDOS",
+            "aliases": []
+          },
+          {
+            "label": "Tru64 UNIX",
+            "aliases": [
+              "DEC OSF/1",
+              "Digital UNIX"
+            ]
+          },
+          {
+            "label": "TrueNAS",
+            "aliases": []
+          },
+          {
+            "label": "TrueOS",
+            "aliases": [
+              "PC-BSD"
+            ]
+          },
+          {
+            "label": "Trusted Solaris",
+            "aliases": []
+          },
+          {
+            "label": "TSS/360",
+            "aliases": []
+          },
+          {
+            "label": "TSS/370",
+            "aliases": []
+          },
+          {
+            "label": "TSX",
+            "aliases": []
+          },
+          {
+            "label": "TSX-32",
+            "aliases": []
+          },
+          {
+            "label": "TUNIS",
+            "aliases": []
+          },
+          {
+            "label": "TurboDOS",
+            "aliases": []
+          },
+          {
+            "label": "Turbolinux",
+            "aliases": []
+          },
+          {
+            "label": "TurnKey Linux",
+            "aliases": []
+          },
+          {
+            "label": "Twister OS",
+            "aliases": []
+          },
+          {
+            "label": "TX990/TXDS",
+            "aliases": []
+          },
+          {
+            "label": "UberStudent",
+            "aliases": []
+          },
+          {
+            "label": "Ubuntu Budgie",
+            "aliases": []
+          },
+          {
+            "label": "Ubuntu Cinnamon",
+            "aliases": []
+          },
+          {
+            "label": "Ubuntu GNOME",
+            "aliases": []
+          },
+          {
+            "label": "Ubuntu JeOS",
+            "aliases": []
+          },
+          {
+            "label": "Ubuntu Kylin",
+            "aliases": []
+          },
+          {
+            "label": "Ubuntu MATE",
+            "aliases": []
+          },
+          {
+            "label": "Ubuntu Mobile",
+            "aliases": []
+          },
+          {
+            "label": "Ubuntu Netbook Edition",
+            "aliases": []
+          },
+          {
+            "label": "Ubuntu Server",
+            "aliases": []
+          },
+          {
+            "label": "Ubuntu Studio",
+            "aliases": []
+          },
+          {
+            "label": "Ubuntu TV",
+            "aliases": []
+          },
+          {
+            "label": "Ubuntu Unity",
+            "aliases": []
+          },
+          {
+            "label": "UCSD p-System",
+            "aliases": []
+          },
+          {
+            "label": "Ultrix",
+            "aliases": []
+          },
+          {
+            "label": "Uncom OS",
+            "aliases": []
+          },
+          {
+            "label": "Unicos",
+            "aliases": []
+          },
+          {
+            "label": "UniFLEX",
+            "aliases": []
+          },
+          {
+            "label": "UniProton",
+            "aliases": []
+          },
+          {
+            "label": "Univention Corporate Server",
+            "aliases": []
+          },
+          {
+            "label": "University of Michigan Executive System",
+            "aliases": []
+          },
+          {
+            "label": "Unix System III",
+            "aliases": []
+          },
+          {
+            "label": "Unix System V",
+            "aliases": []
+          },
+          {
+            "label": "Unix System V Release 2.0",
+            "aliases": []
+          },
+          {
+            "label": "Unix System V Release 3.0",
+            "aliases": []
+          },
+          {
+            "label": "Unix System V Release 3.2",
+            "aliases": []
+          },
+          {
+            "label": "Unix System V Release 4.0",
+            "aliases": []
+          },
+          {
+            "label": "Unix System V Release 4.2",
+            "aliases": []
+          },
+          {
+            "label": "UNIX Time-Sharing System v1",
+            "aliases": []
+          },
+          {
+            "label": "UNIX Time-Sharing System v10",
+            "aliases": []
+          },
+          {
+            "label": "UNIX Time-Sharing System v2",
+            "aliases": []
+          },
+          {
+            "label": "UNIX Time-Sharing System v3",
+            "aliases": []
+          },
+          {
+            "label": "UNIX Time-Sharing System v4",
+            "aliases": []
+          },
+          {
+            "label": "UNIX Time-Sharing System v5",
+            "aliases": []
+          },
+          {
+            "label": "UNIX Time-Sharing System v6",
+            "aliases": []
+          },
+          {
+            "label": "UNIX Time-Sharing System v7",
+            "aliases": []
+          },
+          {
+            "label": "UNIX Time-Sharing System v8",
+            "aliases": []
+          },
+          {
+            "label": "UNIX Time-Sharing System v9",
+            "aliases": []
+          },
+          {
+            "label": "UnixWare",
+            "aliases": []
+          },
+          {
+            "label": "UnixWare 2",
+            "aliases": []
+          },
+          {
+            "label": "UnixWare 7",
+            "aliases": []
+          },
+          {
+            "label": "Uruk GNU/Linux",
+            "aliases": []
+          },
+          {
+            "label": "USG Unix",
+            "aliases": []
+          },
+          {
+            "label": "UTS",
+            "aliases": []
+          },
+          {
+            "label": "Ututo",
+            "aliases": []
+          },
+          {
+            "label": "UTX-32",
+            "aliases": []
+          },
+          {
+            "label": "V",
+            "aliases": []
+          },
+          {
+            "label": "VectorLinux",
+            "aliases": []
+          },
+          {
+            "label": "μ-velOSity",
+            "aliases": [
+              "u-velOSity"
+            ]
+          },
+          {
+            "label": "VERSAdos",
+            "aliases": []
+          },
+          {
+            "label": "Verve",
+            "aliases": []
+          },
+          {
+            "label": "Vine Linux",
+            "aliases": []
+          },
+          {
+            "label": "Vinux",
+            "aliases": []
+          },
+          {
+            "label": "Virtual Machine Facility/370",
+            "aliases": []
+          },
+          {
+            "label": "Visopsys",
+            "aliases": []
+          },
+          {
+            "label": "VME/K",
+            "aliases": []
+          },
+          {
+            "label": "VM/ESA",
+            "aliases": []
+          },
+          {
+            "label": "VM/IX",
+            "aliases": []
+          },
+          {
+            "label": "VM/SP",
+            "aliases": []
+          },
+          {
+            "label": "VM/XA",
+            "aliases": []
+          },
+          {
+            "label": "VM/XA MA",
+            "aliases": []
+          },
+          {
+            "label": "VM/XA SF",
+            "aliases": []
+          },
+          {
+            "label": "VM/XA SP",
+            "aliases": []
+          },
+          {
+            "label": "Void Linux",
+            "aliases": []
+          },
+          {
+            "label": "VOS3",
+            "aliases": []
+          },
+          {
+            "label": "VPS/VM",
+            "aliases": []
+          },
+          {
+            "label": "VRX",
+            "aliases": []
+          },
+          {
+            "label": "VS/9",
+            "aliases": []
+          },
+          {
+            "label": "VSE/ESA",
+            "aliases": []
+          },
+          {
+            "label": "VSE/SP",
+            "aliases": []
+          },
+          {
+            "label": "VSTa",
+            "aliases": []
+          },
+          {
+            "label": "Vulcan O/S",
+            "aliases": []
+          },
+          {
+            "label": "VxWorks",
+            "aliases": []
+          },
+          {
+            "label": "Vyatta",
+            "aliases": []
+          },
+          {
+            "label": "VyOS",
+            "aliases": []
+          },
+          {
+            "label": "WAITS",
+            "aliases": []
+          },
+          {
+            "label": "Webconverger",
+            "aliases": []
+          },
+          {
+            "label": "Whonix",
+            "aliases": []
+          },
+          {
+            "label": "Wii system software",
+            "aliases": []
+          },
+          {
+            "label": "Wii U system software",
+            "aliases": []
+          },
+          {
+            "label": "Windows 10 Mobile",
+            "aliases": []
+          },
+          {
+            "label": "Windows 2.0",
+            "aliases": []
+          },
+          {
+            "label": "Windows 2.1",
+            "aliases": []
+          },
+          {
+            "label": "Windows 3.0",
+            "aliases": []
+          },
+          {
+            "label": "Windows 3.1",
+            "aliases": [
+              "Windows 3.1x"
+            ]
+          },
+          {
+            "label": "Windows 3.2",
+            "aliases": []
+          },
+          {
+            "label": "Windows 8",
+            "aliases": []
+          },
+          {
+            "label": "Windows 8.1",
+            "aliases": []
+          },
+          {
+            "label": "Windows CE",
+            "aliases": []
+          },
+          {
+            "label": "Windows CE 3.0",
+            "aliases": []
+          },
+          {
+            "label": "Windows CE 5.0",
+            "aliases": []
+          },
+          {
+            "label": "Windows Embedded CE 6.0",
+            "aliases": []
+          },
+          {
+            "label": "Windows Embedded Compact 2013",
+            "aliases": []
+          },
+          {
+            "label": "Windows Embedded Compact 7",
+            "aliases": []
+          },
+          {
+            "label": "Windows for Workgroups 3.1",
+            "aliases": []
+          },
+          {
+            "label": "Windows for Workgroups 3.11",
+            "aliases": []
+          },
+          {
+            "label": "Windows Fundamentals for Legacy PCs",
+            "aliases": []
+          },
+          {
+            "label": "Windows Home Server",
+            "aliases": []
+          },
+          {
+            "label": "Windows Home Server 2011",
+            "aliases": []
+          },
+          {
+            "label": "Windows IoT",
+            "aliases": []
+          },
+          {
+            "label": "Windows IoT Core",
+            "aliases": []
+          },
+          {
+            "label": "Windows IoT Enterprise",
+            "aliases": []
+          },
+          {
+            "label": "Windows NT 3.1",
+            "aliases": []
+          },
+          {
+            "label": "Windows NT 3.5",
+            "aliases": []
+          },
+          {
+            "label": "Windows NT 3.51",
+            "aliases": []
+          },
+          {
+            "label": "Windows NT 4.0",
+            "aliases": []
+          },
+          {
+            "label": "Windows Phone 7",
+            "aliases": []
+          },
+          {
+            "label": "Windows Phone 8",
+            "aliases": []
+          },
+          {
+            "label": "Windows Phone 8.1",
+            "aliases": []
+          },
+          {
+            "label": "Windows RT",
+            "aliases": []
+          },
+          {
+            "label": "Windows Server 2003",
+            "aliases": []
+          },
+          {
+            "label": "Windows Server 2008",
+            "aliases": []
+          },
+          {
+            "label": "Windows Server 2008 R2",
+            "aliases": []
+          },
+          {
+            "label": "Windows Server 2012",
+            "aliases": []
+          },
+          {
+            "label": "Windows Server 2012 R2",
+            "aliases": []
+          },
+          {
+            "label": "Windows Server 2016",
+            "aliases": []
+          },
+          {
+            "label": "Windows Server 2019",
+            "aliases": []
+          },
+          {
+            "label": "Windows Server 2022",
+            "aliases": []
+          },
+          {
+            "label": "Windows Server 2025",
+            "aliases": []
+          },
+          {
+            "label": "Windows version 1.0",
+            "aliases": []
+          },
+          {
+            "label": "Winux",
+            "aliases": []
+          },
+          {
+            "label": "Wombat",
+            "aliases": []
+          },
+          {
+            "label": "WPS",
+            "aliases": []
+          },
+          {
+            "label": "WYLBUR",
+            "aliases": []
+          },
+          {
+            "label": "Xbox 360 system software",
+            "aliases": []
+          },
+          {
+            "label": "Xbox (first generation) system software",
+            "aliases": []
+          },
+          {
+            "label": "Xbox One system software",
+            "aliases": []
+          },
+          {
+            "label": "Xbox Series X/S system software",
+            "aliases": []
+          },
+          {
+            "label": "Xbox system software",
+            "aliases": []
+          },
+          {
+            "label": "Xenix",
+            "aliases": []
+          },
+          {
+            "label": "Xenix 286",
+            "aliases": []
+          },
+          {
+            "label": "Xenix 386",
+            "aliases": []
+          },
+          {
+            "label": "Xerox Operating System",
+            "aliases": []
+          },
+          {
+            "label": "Xinu",
+            "aliases": []
+          },
+          {
+            "label": "XSP",
+            "aliases": []
+          },
+          {
+            "label": "Xubuntu",
+            "aliases": []
+          },
+          {
+            "label": "Xv6",
+            "aliases": []
+          },
+          {
+            "label": "Yellow Dog Linux",
+            "aliases": []
+          },
+          {
+            "label": "Yggdrasil Linux/GNU/X",
+            "aliases": []
+          },
+          {
+            "label": "Z80-RIO",
+            "aliases": []
+          },
+          {
+            "label": "Z-DOS",
+            "aliases": []
+          },
+          {
+            "label": "Zenix",
+            "aliases": []
+          },
+          {
+            "label": "Zenwalk",
+            "aliases": []
+          },
+          {
+            "label": "Zephyr",
+            "aliases": []
+          },
+          {
+            "label": "Zeroshell",
+            "aliases": []
+          },
+          {
+            "label": "ZipSlack",
+            "aliases": []
+          },
+          {
+            "label": "z/TPF",
+            "aliases": []
+          },
+          {
+            "label": "z/VM",
+            "aliases": []
+          },
+          {
+            "label": "z/VSE",
+            "aliases": []
+          }
+        ],
+        "30": [
+          {
+            "label": "AIX",
+            "aliases": []
+          },
+          {
+            "label": "Alpine Linux",
+            "aliases": []
+          },
+          {
+            "label": "AmigaOS",
+            "aliases": []
+          },
+          {
+            "label": "Arch Linux",
+            "aliases": [
+              "Arch"
+            ]
+          },
+          {
+            "label": "BeOS",
+            "aliases": []
+          },
+          {
+            "label": "BlackBerry OS",
+            "aliases": []
+          },
+          {
+            "label": "CentOS",
+            "aliases": []
+          },
+          {
+            "label": "CP/M",
+            "aliases": []
+          },
+          {
+            "label": "Debian",
+            "aliases": []
+          },
+          {
+            "label": "DragonFly BSD",
+            "aliases": []
+          },
+          {
+            "label": "elementary OS",
+            "aliases": []
+          },
+          {
+            "label": "Fedora",
+            "aliases": [
+              "Fedora Linux"
+            ]
+          },
+          {
+            "label": "FreeBSD",
+            "aliases": []
+          },
+          {
+            "label": "FreeDOS",
+            "aliases": []
+          },
+          {
+            "label": "Gentoo",
+            "aliases": [
+              "Gentoo Linux"
+            ]
+          },
+          {
+            "label": "GrapheneOS",
+            "aliases": []
+          },
+          {
+            "label": "Haiku",
+            "aliases": []
+          },
+          {
+            "label": "HarmonyOS",
+            "aliases": []
+          },
+          {
+            "label": "HP-UX",
+            "aliases": []
+          },
+          {
+            "label": "KaiOS",
+            "aliases": []
+          },
+          {
+            "label": "Kali Linux",
+            "aliases": [
+              "Kali"
+            ]
+          },
+          {
+            "label": "LineageOS",
+            "aliases": []
+          },
+          {
+            "label": "Linux Mint",
+            "aliases": [
+              "Mint"
+            ]
+          },
+          {
+            "label": "Manjaro",
+            "aliases": [
+              "Manjaro Linux"
+            ]
+          },
+          {
+            "label": "MS-DOS",
+            "aliases": []
+          },
+          {
+            "label": "NetBSD",
+            "aliases": []
+          },
+          {
+            "label": "NixOS",
+            "aliases": []
+          },
+          {
+            "label": "OpenBSD",
+            "aliases": []
+          },
+          {
+            "label": "OpenSolaris",
+            "aliases": []
+          },
+          {
+            "label": "openSUSE",
+            "aliases": []
+          },
+          {
+            "label": "OpenVMS",
+            "aliases": [
+              "VMS"
+            ]
+          },
+          {
+            "label": "OS/2",
+            "aliases": []
+          },
+          {
+            "label": "Palm OS",
+            "aliases": []
+          },
+          {
+            "label": "PC DOS",
+            "aliases": [
+              "IBM DOS"
+            ]
+          },
+          {
+            "label": "Plan 9",
+            "aliases": [
+              "Plan 9 from Bell Labs"
+            ]
+          },
+          {
+            "label": "Pop!_OS",
+            "aliases": []
+          },
+          {
+            "label": "Qubes OS",
+            "aliases": []
+          },
+          {
+            "label": "Raspberry Pi OS",
+            "aliases": []
+          },
+          {
+            "label": "Raspbian",
+            "aliases": []
+          },
+          {
+            "label": "ReactOS",
+            "aliases": []
+          },
+          {
+            "label": "Red Hat Enterprise Linux",
+            "aliases": [
+              "RHEL"
+            ]
+          },
+          {
+            "label": "RISC OS",
+            "aliases": []
+          },
+          {
+            "label": "Slackware",
+            "aliases": [
+              "Slackware Linux"
+            ]
+          },
+          {
+            "label": "Solaris",
+            "aliases": []
+          },
+          {
+            "label": "SteamOS",
+            "aliases": []
+          },
+          {
+            "label": "Symbian",
+            "aliases": [
+              "Symbian OS",
+              "Symbian platform"
+            ]
+          },
+          {
+            "label": "Tails",
+            "aliases": [
+              "The Amnesic Incognito Live System"
+            ]
+          },
+          {
+            "label": "TempleOS",
+            "aliases": []
+          },
+          {
+            "label": "Tizen",
+            "aliases": []
+          },
+          {
+            "label": "tvOS",
+            "aliases": []
+          },
+          {
+            "label": "Unix",
+            "aliases": []
+          },
+          {
+            "label": "visionOS",
+            "aliases": []
+          },
+          {
+            "label": "watchOS",
+            "aliases": []
+          },
+          {
+            "label": "webOS",
+            "aliases": []
+          },
+          {
+            "label": "Windows Mobile",
+            "aliases": []
+          },
+          {
+            "label": "Windows Phone",
+            "aliases": []
+          },
+          {
+            "label": "Zorin OS",
+            "aliases": [
+              "Zorin"
+            ]
+          },
+          {
+            "label": "z/OS",
+            "aliases": []
+          }
+        ],
+        "60": [
+          {
+            "label": "AlmaLinux",
+            "aliases": []
+          },
+          {
+            "label": "Android 10",
+            "aliases": []
+          },
+          {
+            "label": "Android 11",
+            "aliases": []
+          },
+          {
+            "label": "Android 12",
+            "aliases": []
+          },
+          {
+            "label": "Android 12L",
+            "aliases": []
+          },
+          {
+            "label": "Android 13",
+            "aliases": []
+          },
+          {
+            "label": "Android 14",
+            "aliases": []
+          },
+          {
+            "label": "Android 15",
+            "aliases": []
+          },
+          {
+            "label": "Android 16",
+            "aliases": []
+          },
+          {
+            "label": "Android 17",
+            "aliases": []
+          },
+          {
+            "label": "Android TV",
+            "aliases": []
+          },
+          {
+            "label": "Bazzite",
+            "aliases": []
+          },
+          {
+            "label": "CachyOS",
+            "aliases": []
+          },
+          {
+            "label": "CalyxOS",
+            "aliases": []
+          },
+          {
+            "label": "ChromeOS Flex",
+            "aliases": []
+          },
+          {
+            "label": "ChromiumOS",
+            "aliases": []
+          },
+          {
+            "label": "DD-WRT",
+            "aliases": []
+          },
+          {
+            "label": "Deepin",
+            "aliases": []
+          },
+          {
+            "label": "DOS",
+            "aliases": []
+          },
+          {
+            "label": "EndeavourOS",
+            "aliases": []
+          },
+          {
+            "label": "Firefox OS",
+            "aliases": []
+          },
+          {
+            "label": "FreeRTOS",
+            "aliases": []
+          },
+          {
+            "label": "Garuda Linux",
+            "aliases": []
+          },
+          {
+            "label": "Googlebook OS",
+            "aliases": []
+          },
+          {
+            "label": "MX Linux",
+            "aliases": []
+          },
+          {
+            "label": "OpenWrt",
+            "aliases": []
+          },
+          {
+            "label": "Parrot OS",
+            "aliases": []
+          },
+          {
+            "label": "Puppy Linux",
+            "aliases": []
+          },
+          {
+            "label": "QNX",
+            "aliases": []
+          },
+          {
+            "label": "Rocky Linux",
+            "aliases": []
+          },
+          {
+            "label": "Sailfish OS",
+            "aliases": []
+          },
+          {
+            "label": "SerenityOS",
+            "aliases": []
+          },
+          {
+            "label": "Ubuntu Touch",
+            "aliases": []
+          },
+          {
+            "label": "Wear OS",
+            "aliases": []
+          },
+          {
+            "label": "Windows 2000",
+            "aliases": []
+          },
+          {
+            "label": "Windows 7",
+            "aliases": []
+          },
+          {
+            "label": "Windows 95",
+            "aliases": []
+          },
+          {
+            "label": "Windows 98",
+            "aliases": []
+          },
+          {
+            "label": "Windows ME",
+            "aliases": [
+              "Windows Millennium Edition"
+            ]
+          },
+          {
+            "label": "Windows NT",
+            "aliases": []
+          },
+          {
+            "label": "Windows Vista",
+            "aliases": []
+          },
+          {
+            "label": "Windows XP",
+            "aliases": []
+          }
+        ],
+        "10": [
+          {
+            "label": "Android",
+            "aliases": []
+          },
+          {
+            "label": "ChromeOS",
+            "aliases": []
+          },
+          {
+            "label": "iOS",
+            "aliases": [
+              "iPhone OS"
+            ]
+          },
+          {
+            "label": "iPadOS",
+            "aliases": []
+          },
+          {
+            "label": "Linux",
+            "aliases": [
+              "GNU/Linux"
+            ]
+          },
+          {
+            "label": "macOS",
+            "aliases": [
+              "Mac OS X",
+              "OS X"
+            ]
+          },
+          {
+            "label": "Ubuntu",
+            "aliases": []
+          },
+          {
+            "label": "Windows",
+            "aliases": []
+          },
+          {
+            "label": "Windows 10",
+            "aliases": [
+              "Windows 10 Education",
+              "Windows 10 Enterprise",
+              "Windows 10 Enterprise LTSC",
+              "Windows 10 Home",
+              "Windows 10 Pro"
+            ]
+          },
+          {
+            "label": "Windows 11",
+            "aliases": [
+              "Windows 11 Education",
+              "Windows 11 Enterprise",
+              "Windows 11 Enterprise LTSC",
+              "Windows 11 Home",
+              "Windows 11 Pro"
+            ]
+          }
+        ],
+        "100": [
+          {
+            "label": "MenuetOS",
+            "aliases": []
+          }
+        ]
+      },
+      "literalAliases": {
+        "MiNT": "Atari MiNT",
+        "RISC/os": "MIPS RISC/os",
+        "RISC/OS": "MIPS RISC/os",
+        "risc/os": "MIPS RISC/os",
+        "IOS": "Cisco IOS",
+        "EOS": "ETA EOS",
+        "Mac OS": "Classic Mac OS",
+        "Android 1.0": "Android version 1.0",
+        "Android1.0": "Android version 1.0",
+        "Android 1.1": "Android version 1.1",
+        "Android1.1": "Android version 1.1",
+        "Android 1.5": "Android Cupcake",
+        "Android1.5": "Android Cupcake",
+        "Android 1.6": "Android Donut",
+        "Android1.6": "Android Donut",
+        "Windows 1.0": "Windows version 1.0",
+        "Windows1.0": "Windows version 1.0"
+      },
+      "foldedLiteralAliases": {
+        "risc/os": "MIPS RISC/os"
+      },
+      "preserveNumericTokens": true
+    }
+  ]
+}

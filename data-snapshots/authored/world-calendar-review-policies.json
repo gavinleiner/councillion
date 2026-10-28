@@ -1,0 +1,347 @@
+{
+  "named-awards-prizes": {
+    "holds": {},
+    "renameRepairs": {},
+    "aliasMerges": {
+      "Academy Award": [
+        "Academy Awards"
+      ],
+      "Grammy Award": [
+        "Grammy Awards"
+      ],
+      "Golden Globe Award": [
+        "Golden Globes"
+      ],
+      "British Academy Film Award": [
+        "British Academy Film Awards"
+      ],
+      "Hugo Award": [
+        "Hugo Awards"
+      ],
+      "Juno Award": [
+        "Juno Awards"
+      ],
+      "Brit Award": [
+        "Brit Awards"
+      ],
+      "Golden Raspberry Award": [
+        "Golden Raspberry",
+        "Golden Raspberry Awards",
+        "Razzie Award",
+        "Razzies"
+      ],
+      "MTV Video Music Award": [
+        "MTV Video Music Awards",
+        "MTV VMA"
+      ],
+      "Edgar Award": [
+        "Edgar Awards",
+        "Edgar Allan Poe Awards",
+        "Edgar Allan Poe Award"
+      ],
+      "Bram Stoker Award": [
+        "Bram Stoker Awards"
+      ],
+      "Palme d’Or": [
+        "Palme d'Or",
+        "Cannes Palme d Or",
+        "Cannes Palme d’Or"
+      ],
+      "Carnegie Medal for Writing": [
+        "Carnegie Medal"
+      ],
+      "Carnegie Medal for Illustration": [
+        "Kate Greenaway Medal"
+      ],
+      "Otherwise Award": [
+        "Tiptree award",
+        "James Tiptree Jr Award"
+      ],
+      "Astounding Award for Best New Writer": [
+        "John W. Campbell Award for Best New Writer in Science Fiction"
+      ],
+      "Camões Prize": [
+        "Prémio Camões"
+      ],
+      "Strega Prize": [
+        "Premio Strega"
+      ],
+      "Urania Award": [
+        "Premio Urania",
+        "Urania award"
+      ],
+      "Arthur Ellis Award": [
+        "Arthur Ellis Awards"
+      ],
+      "Lambda Literary Award": [
+        "Lambda Literary Awards"
+      ],
+      "Stonewall Book Award": [
+        "Stonewall Book Awards"
+      ],
+      "National Book Critics Circle Award": [
+        "National Book Critics Circle Awards"
+      ],
+      "Windham–Campbell Literature Prizes": [
+        "Windham Campbell Literature Prize"
+      ],
+      "Portuguese Golden Globes": [
+        "Golden Globes (Portugal)"
+      ],
+      "Prisma Literary Award": [
+        "Prisma"
+      ],
+      "CWA Short Story Dagger": [
+        "Short Story Award",
+        "CWA Short Story Award"
+      ],
+      "Filmfare Awards": [
+        "Filmfare Award"
+      ],
+      "People’s Choice Award": [
+        "People's Choice Awards",
+        "People's Choice Award"
+      ],
+      "Kids’ Choice Award": [
+        "Kids' Choice Awards",
+        "Nickelodeon Kids' Choice Awards",
+        "Nickelodeon Kids' Choice Award"
+      ],
+      "MTV Movie & TV Awards": [
+        "MTV Movie Award",
+        "MTV Movie Awards",
+        "MTV Movie and TV Award",
+        "MTV Movie and TV Awards"
+      ],
+      "Latin Grammy Award": [
+        "Latin Grammy Awards",
+        "Latin Grammy"
+      ],
+      "Latin American Music Award": [
+        "Latin American Music Awards"
+      ],
+      "Soul Train Music Award": [
+        "Soul Train Music Awards"
+      ],
+      "Logie Award": [
+        "Logie Awards",
+        "TV Week Logie Awards"
+      ],
+      "ATOM Award": [
+        "ATOM Awards"
+      ],
+      "GAMIQ Awards": [
+        "GAMIQ"
+      ],
+      "LOS40 Music Awards": [
+        "Los 40 Music Awards"
+      ],
+      "Actor Awards": [
+        "Screen Actors Guild Awards",
+        "Screen Actors Guild Award",
+        "SAG Award",
+        "SAG Awards"
+      ],
+      "AACTA Awards": [
+        "Australian Academy of Cinema and Television Arts Awards"
+      ],
+      "International Indian Film Academy Awards": [
+        "IIFA Awards"
+      ],
+      "Luna Awards": [
+        "Luna Award Film Academy of the Philippines (FAP) or Luna Awards"
+      ],
+      "Anugerah Skrin Awards": [
+        "Screen Awards (Malay: Anugerah Skrin)"
+      ],
+      "South African Film and Television Awards": [
+        "South African Film and Television Awards (SAFTA)"
+      ],
+      "NAACP Image Awards": [
+        "Image Awards"
+      ],
+      "Sahitya Akademi Award": [
+        "Sahitya Akademi Awards"
+      ]
+    },
+    "displayNames": {},
+    "aliasHolds": {},
+    "normalizedVariantReviews": {
+      "luxstyleawards": [
+        "Lux Style Awards",
+        "Lux style awards"
+      ],
+      "uraniaaward": [
+        "Urania Award",
+        "Urania award"
+      ],
+      "marshawardforchildrensliteratureintranslation": [
+        "Marsh Award for Children's Literature in Translation",
+        "Marsh Award for Children’s Literature in Translation"
+      ],
+      "los40musicawards": [
+        "LOS40 Music Awards",
+        "Los 40 Music Awards"
+      ]
+    }
+  },
+  "holidays-observances": {
+    "holds": {},
+    "renameRepairs": {},
+    "aliasMerges": {
+      "Christmas": [
+        "Christmas Day"
+      ],
+      "Hanukkah": [
+        "Chanukkah",
+        "Chanukah",
+        "Chanuka",
+        "Hanukah"
+      ],
+      "Passover": [
+        "Pesach"
+      ],
+      "Feast of Unleavened Bread": [
+        "Chag HaMatzot"
+      ],
+      "Feast of Firstfruits": [
+        "Reishit Katzir"
+      ],
+      "Shavuot": [
+        "Feast of Weeks"
+      ],
+      "Sukkot": [
+        "Feast of Tabernacles"
+      ],
+      "Rosh Hashanah": [
+        "Feast of Trumpets"
+      ],
+      "Yom Kippur": [
+        "Day of Atonement"
+      ],
+      "Diwali": [
+        "Deepavali"
+      ],
+      "Eid al-Fitr": [
+        "Hari Raya Puasa"
+      ],
+      "Eid al-Adha": [
+        "Hari Raya Haji"
+      ],
+      "Vesak": [
+        "Buddha Jayanti",
+        "Vesak Day",
+        "Buddha Purnima"
+      ],
+      "Ramadan": [
+        "Holy Month of Ramadan"
+      ],
+      "Epiphany": [
+        "Epiphany of the Lord",
+        "Día de Reyes"
+      ],
+      "Krishna Janmashtami": [
+        "Krishna Janmaashtami",
+        "Gokul Ashtami",
+        "Janmashtami"
+      ],
+      "All Saints’ Day": [
+        "All Saints' Day",
+        "Solemnity of All Saints",
+        "All Hallows Day"
+      ],
+      "Valentine's Day": [
+        "Saint Valentine's Day",
+        "St Valentine's Day"
+      ],
+      "Thanksgiving": [
+        "Thanksgiving Day"
+      ],
+      "Chongyang Festival": [
+        "Chung Yeung Festival",
+        "Double Ninth Festival"
+      ],
+      "Qingming Festival": [
+        "Ching Ming Festival",
+        "Tomb Sweeping Day"
+      ],
+      "Dragon Boat Festival": [
+        "Tuen Ng Festival",
+        "Duanwu Festival"
+      ],
+      "Bon Festival": [
+        "Obon"
+      ],
+      "Mid-Autumn Festival": [
+        "Mid Autumn Festival",
+        "Moon Festival",
+        "Chinese Mid-Autumn Festival"
+      ],
+      "Day of Arafah": [
+        "Arafah"
+      ],
+      "Presidents Day": [
+        "Washington's Birthday",
+        "Washington’s Birthday"
+      ],
+      "Martin Luther King Jr. Day": [
+        "Martin Luther King Jr Day",
+        "Birthday of Martin Luther King Jr."
+      ],
+      "Ascension Day": [
+        "Feast of the Ascension",
+        "Feast of the Ascension of Jesus"
+      ],
+      "Assumption of Mary": [
+        "Feast of the Assumption"
+      ],
+      "Corpus Christi": [
+        "Feast of Corpus Christi"
+      ],
+      "Christ the King Sunday": [
+        "Solemnity of Christ the King"
+      ],
+      "Immaculate Conception": [
+        "Feast of the Immaculate Conception"
+      ],
+      "Islamic New Year": [
+        "Hijri New Year",
+        "Raʼs as-Sanah al-Hijrīyah"
+      ],
+      "Vaisakhi": [
+        "Baisakhi"
+      ],
+      "Jumu’ah": [
+        "Jumu'ah",
+        "Jummah"
+      ],
+      "Labor Day": [
+        "Labour Day"
+      ],
+      "Nowruz": [
+        "International Day of Nowruz"
+      ],
+      "International Day of Peace": [
+        "World Peace Day"
+      ],
+      "International Day of the Girl Child": [
+        "International Day of the Girl"
+      ],
+      "International Day for Disaster Risk Reduction": [
+        "International Day for Disaster Reduction"
+      ]
+    },
+    "displayNames": {},
+    "aliasHolds": {},
+    "normalizedVariantReviews": {
+      "newyearseve": [
+        "New Year's Eve",
+        "New Year’s Eve"
+      ],
+      "newyearsday": [
+        "New Year's Day",
+        "New Year’s Day"
+      ]
+    }
+  }
+}

@@ -1,0 +1,2133 @@
+{
+  "questions": [
+    {
+      "key": "mountains-peaks",
+      "prompt": "Name a real mountain, mountain peak or volcano.",
+      "familiar": [
+        "Mount Everest",
+        "K2",
+        "Denali",
+        "Kilimanjaro",
+        "Mount Fuji",
+        "Mont Blanc",
+        "Aconcagua",
+        "Elbrus",
+        "Annapurna",
+        "Matterhorn",
+        "Kangchenjunga",
+        "Lhotse",
+        "Makalu",
+        "Manaslu",
+        "Nanga Parbat",
+        "Dhaulagiri",
+        "Pikes Peak",
+        "Mount Whitney",
+        "Mount Rainier",
+        "Mount Shasta",
+        "Mount Hood",
+        "Mount Mitchell",
+        "Grandfather Mountain",
+        "Mount Olympus",
+        "Mount Sinai",
+        "Table Mountain",
+        "Mount Kenya",
+        "Vinson Massif"
+      ],
+      "exclude": [
+        "Hogwarts",
+        "Pacific Ocean",
+        "Olympus Mons",
+        "Himalayas",
+        "Mountain",
+        "Peak",
+        "Volcano"
+      ],
+      "review": "Single mountains and peaks only; MTS ranges already have their own admitted inventory. Review PKS groups rather than importing blindly.",
+      "id": "authored-mountains-peaks",
+      "concept": "mountains-peaks",
+      "geoSources": [
+        "mountains-peaks",
+        "volcanoes"
+      ],
+      "listSources": [],
+      "rare": "Gangkhar Puensum",
+      "scope": "Named mountains, mountain peaks and volcanoes on Earth count. Whole mountain ranges, unnamed coordinates, fictional mountains and names only found on other planets are outside this inventory.",
+      "references": [
+        "https://download.geonames.org/export/dump/",
+        "https://download.geonames.org/export/dump/featureCodes_en.txt",
+        "https://science.nasa.gov/earth/earth-observatory/vinson-massif-3643/",
+        "https://www.usgs.gov/publications/craddock-massif-and-vinson-massif-remeasured",
+        "https://www.nasa.gov/wp-content/uploads/2015/04/how_big_is_it_web_040920_hires.pdf"
+      ],
+      "holds": {},
+      "aliases": {
+        "Mount Vinson": [
+          "Vinson Massif"
+        ]
+      },
+      "additions": [],
+      "merges": [],
+      "actualShortNames": [
+        "K2"
+      ],
+      "family": "world",
+      "buildStage": "reviewable-candidate",
+      "aliasHolds": {
+        "Mount Olympus": [
+          "Olympus mons",
+          "Olympia",
+          "ollimposeuui 12sin",
+          "올림포스의 12신"
+        ]
+      }
+    },
+    {
+      "key": "islands-archipelagos",
+      "prompt": "Name a real island or archipelago.",
+      "familiar": [
+        "Greenland",
+        "Madagascar",
+        "Borneo",
+        "Sumatra",
+        "Java",
+        "Hawaii",
+        "Oahu",
+        "Maui",
+        "Kauai",
+        "Great Britain",
+        "Ireland",
+        "Sicily",
+        "Sardinia",
+        "Corsica",
+        "Cyprus",
+        "Crete",
+        "Hokkaido",
+        "Honshu",
+        "Shikoku",
+        "Kyushu",
+        "New Guinea",
+        "Tasmania",
+        "Newfoundland",
+        "Vancouver Island",
+        "Easter Island",
+        "Isle of Wight",
+        "Long Island",
+        "Manhattan",
+        "Alcatraz",
+        "Galapagos Islands",
+        "Canary Islands",
+        "Azores",
+        "Bermuda",
+        "Maldives",
+        "Bahamas"
+      ],
+      "exclude": [
+        "Westeros",
+        "Pangaea",
+        "Australia",
+        "United Kingdom",
+        "Island",
+        "Archipelago"
+      ],
+      "review": "Country and island/archipelago may share a real name. Standard continent-versus-island boundary must be stated clearly; no country slicing creates extra prompts.",
+      "id": "authored-islands-archipelagos",
+      "concept": "islands-archipelagos",
+      "geoSources": [
+        "islands-archipelagos"
+      ],
+      "listSources": [],
+      "rare": "Surtsey",
+      "scope": "Real named islands and archipelagos worldwide count, including islands that share a country name. Continental mainlands are not treated as islands. Fictional islands do not count.",
+      "references": [
+        "https://download.geonames.org/export/dump/",
+        "https://download.geonames.org/export/dump/featureCodes_en.txt",
+        "https://en.wikipedia.org/wiki/Ireland",
+        "https://visitmaldives.com/en/maldives"
+      ],
+      "holds": {},
+      "aliases": {},
+      "additions": [
+        {
+          "label": "Ireland",
+          "aliases": [
+            "Island of Ireland"
+          ],
+          "evidence": "Published geographic/visitor/operator reference establishes this ordinary name and eligible physical feature. Adds a missing label or public synonym to the full primary inventory; no extra question.",
+          "references": [
+            "https://en.wikipedia.org/wiki/Ireland",
+            "https://visitmaldives.com/en/maldives"
+          ]
+        },
+        {
+          "label": "Maldives",
+          "aliases": [
+            "Maldivian Archipelago"
+          ],
+          "evidence": "Published geographic/visitor/operator reference establishes this ordinary name and eligible physical feature. Adds a missing label or public synonym to the full primary inventory; no extra question.",
+          "references": [
+            "https://en.wikipedia.org/wiki/Ireland",
+            "https://visitmaldives.com/en/maldives"
+          ]
+        }
+      ],
+      "merges": [],
+      "actualShortNames": [
+        "K2"
+      ],
+      "family": "world",
+      "buildStage": "reviewable-candidate"
+    },
+    {
+      "key": "deserts",
+      "existingCandidate": "authored-named-deserts",
+      "prompt": "Name a desert.",
+      "familiar": [
+        "Sahara",
+        "Gobi Desert",
+        "Kalahari Desert",
+        "Namib Desert",
+        "Atacama Desert",
+        "Arabian Desert",
+        "Great Victoria Desert",
+        "Great Sandy Desert",
+        "Simpson Desert",
+        "Gibson Desert",
+        "Tanami Desert",
+        "Mojave Desert",
+        "Sonoran Desert",
+        "Chihuahuan Desert",
+        "Great Basin Desert",
+        "Patagonian Desert",
+        "Karakum Desert",
+        "Kyzylkum Desert",
+        "Taklamakan Desert",
+        "Thar Desert",
+        "Rub al Khali",
+        "Dasht-e Kavir",
+        "Dasht-e Lut",
+        "Arctic Desert",
+        "Antarctic Desert",
+        "Negev Desert",
+        "Sinai Desert",
+        "Nubian Desert",
+        "Libyan Desert",
+        "White Desert",
+        "Eastern Desert",
+        "Western Desert",
+        "Colorado Desert"
+      ],
+      "exclude": [
+        "Pacific Ocean",
+        "Amazon rainforest",
+        "Desert",
+        "The desert"
+      ],
+      "review": "Reconcile primary geographical membership; a sand dune or sandy tourist beach is not automatically a climatic desert.",
+      "id": "authored-named-deserts",
+      "concept": "named-deserts",
+      "geoSources": [
+        "deserts"
+      ],
+      "listSources": [
+        "List_of_deserts"
+      ],
+      "rare": "Bledow Desert",
+      "scope": "Real named deserts and established desert regions worldwide count, including polar deserts and places traditionally known as deserts. A hotel, village, isolated rock, beach or generic dune does not automatically become a desert.",
+      "references": [
+        "https://download.geonames.org/export/dump/",
+        "https://download.geonames.org/export/dump/featureCodes_en.txt",
+        "https://en.wikipedia.org/wiki/List_of_deserts",
+        "https://visitmalopolska.pl/en/obiekt/-/poi/pustynia-bledowska",
+        "https://www.poland.travel/attachments/article/6505/PRZYRODA_EN.pdf"
+      ],
+      "holds": {
+        "Dessert Inn Hotel , Dessert Ryk": "Not a named desert: hotel, deserted settlement, generic description, valley or isolated rock formation.",
+        "Barren Landslides Areas": "Not a named desert: hotel, deserted settlement, generic description, valley or isolated rock formation.",
+        "Jodszen": "Not a named desert: hotel, deserted settlement, generic description, valley or isolated rock formation.",
+        "Theweln": "Not a named desert: hotel, deserted settlement, generic description, valley or isolated rock formation.",
+        "Wadi Al-Hitan": "Not a named desert: hotel, deserted settlement, generic description, valley or isolated rock formation.",
+        "Monjes de la Pacana": "Not a named desert: hotel, deserted settlement, generic description, valley or isolated rock formation.",
+        "The Desert": "Not a named desert: hotel, deserted settlement, generic description, valley or isolated rock formation.",
+        "Sandy Desert": "Not a named desert: hotel, deserted settlement, generic description, valley or isolated rock formation.",
+        "Greenland": "Not a named desert: hotel, deserted settlement, generic description, valley or isolated rock formation.",
+        "Russian Arctic": "Not a named desert: hotel, deserted settlement, generic description, valley or isolated rock formation.",
+        "Thompson Plateau": "Not a named desert: hotel, deserted settlement, generic description, valley or isolated rock formation."
+      },
+      "aliases": {
+        "Chihuahua Desert": [
+          "Chihuahuan Desert"
+        ],
+        "Great Basin": [
+          "Great Basin Desert"
+        ],
+        "Qizilqum": [
+          "Kyzylkum Desert"
+        ],
+        "Negev": [
+          "Negev Desert"
+        ],
+        "Sinai Peninsula": [
+          "Sinai Desert"
+        ],
+        "Pustynia Bledowska": [
+          "Bledow Desert",
+          "Bledowska Desert",
+          "Błędów Desert"
+        ]
+      },
+      "additions": [],
+      "merges": [],
+      "actualShortNames": [
+        "K2"
+      ],
+      "family": "world",
+      "replaces": "authored-named-deserts",
+      "buildStage": "reviewable-candidate"
+    },
+    {
+      "key": "beaches",
+      "prompt": "Name a real named beach.",
+      "familiar": [
+        "Waikiki Beach",
+        "Venice Beach",
+        "Santa Monica Beach",
+        "Bondi Beach",
+        "Copacabana",
+        "Ipanema",
+        "Miami Beach",
+        "South Beach",
+        "Myrtle Beach",
+        "Clearwater Beach",
+        "Virginia Beach",
+        "Wrightsville Beach",
+        "Carolina Beach",
+        "Kure Beach",
+        "Topsail Beach",
+        "Daytona Beach",
+        "Cannon Beach",
+        "Huntington Beach",
+        "Laguna Beach",
+        "Kaanapali Beach",
+        "Lanikai Beach",
+        "Anse Source d'Argent",
+        "Whitehaven Beach",
+        "Diani Beach",
+        "Navagio Beach",
+        "Maya Bay"
+      ],
+      "exclude": [
+        "Hogwarts",
+        "Sahara Desert",
+        "Beach"
+      ],
+      "review": "Beach cities can share a genuinely established beach name. Regions or islands alone are not automatically beaches.",
+      "id": "authored-beaches",
+      "concept": "beaches",
+      "geoSources": [
+        "beaches"
+      ],
+      "listSources": [
+        "List_of_beaches"
+      ],
+      "rare": "Papakolea Beach",
+      "scope": "Real named coastal, lake and river beaches count. A city name qualifies when it is also the established name of a beach. A whole country, waterbody or general tourist region alone does not name a beach.",
+      "references": [
+        "https://download.geonames.org/export/dump/",
+        "https://download.geonames.org/export/dump/featureCodes_en.txt",
+        "https://en.wikipedia.org/wiki/List_of_beaches",
+        "https://www.wilmingtonandbeaches.com/places-to-stay/beaches/",
+        "https://www.visitgreece.gr/en/experiences/culture/museums/navagio-beach",
+        "https://www.daytonabeach.com/things-to-do/beaches/",
+        "https://www.visitlagunabeach.com/things-to-do/beaches/",
+        "https://en.wikipedia.org/wiki/Anse_Source_d%27Argent",
+        "https://en.wikipedia.org/wiki/Maya_Bay"
+      ],
+      "holds": {
+        "Qargha Reservoir": "The source lists a waterbody as a beach destination; it does not establish a named beach."
+      },
+      "aliases": {
+        "Copacabana Beach": [
+          "Copacabana"
+        ],
+        "Praia de Ipanema": [
+          "Ipanema",
+          "Ipanema Beach"
+        ],
+        "Wrightsville Beach": [
+          "Wrightsville Beach, North Carolina"
+        ],
+        "Daytona Beach": [
+          "Daytona Beach, Florida"
+        ]
+      },
+      "additions": [
+        {
+          "label": "Wrightsville Beach",
+          "aliases": [],
+          "evidence": "Published geographic/visitor/operator reference establishes this ordinary name and eligible physical feature. Adds a missing label or public synonym to the full primary inventory; no extra question.",
+          "references": [
+            "https://www.wilmingtonandbeaches.com/places-to-stay/beaches/",
+            "https://www.visitgreece.gr/en/experiences/culture/museums/navagio-beach",
+            "https://www.daytonabeach.com/things-to-do/beaches/",
+            "https://www.visitlagunabeach.com/things-to-do/beaches/",
+            "https://en.wikipedia.org/wiki/Anse_Source_d%27Argent",
+            "https://en.wikipedia.org/wiki/Maya_Bay"
+          ]
+        },
+        {
+          "label": "Carolina Beach",
+          "aliases": [],
+          "evidence": "Published geographic/visitor/operator reference establishes this ordinary name and eligible physical feature. Adds a missing label or public synonym to the full primary inventory; no extra question.",
+          "references": [
+            "https://www.wilmingtonandbeaches.com/places-to-stay/beaches/",
+            "https://www.visitgreece.gr/en/experiences/culture/museums/navagio-beach",
+            "https://www.daytonabeach.com/things-to-do/beaches/",
+            "https://www.visitlagunabeach.com/things-to-do/beaches/",
+            "https://en.wikipedia.org/wiki/Anse_Source_d%27Argent",
+            "https://en.wikipedia.org/wiki/Maya_Bay"
+          ]
+        },
+        {
+          "label": "Kure Beach",
+          "aliases": [],
+          "evidence": "Published geographic/visitor/operator reference establishes this ordinary name and eligible physical feature. Adds a missing label or public synonym to the full primary inventory; no extra question.",
+          "references": [
+            "https://www.wilmingtonandbeaches.com/places-to-stay/beaches/",
+            "https://www.visitgreece.gr/en/experiences/culture/museums/navagio-beach",
+            "https://www.daytonabeach.com/things-to-do/beaches/",
+            "https://www.visitlagunabeach.com/things-to-do/beaches/",
+            "https://en.wikipedia.org/wiki/Anse_Source_d%27Argent",
+            "https://en.wikipedia.org/wiki/Maya_Bay"
+          ]
+        },
+        {
+          "label": "Daytona Beach",
+          "aliases": [],
+          "evidence": "Published geographic/visitor/operator reference establishes this ordinary name and eligible physical feature. Adds a missing label or public synonym to the full primary inventory; no extra question.",
+          "references": [
+            "https://www.wilmingtonandbeaches.com/places-to-stay/beaches/",
+            "https://www.visitgreece.gr/en/experiences/culture/museums/navagio-beach",
+            "https://www.daytonabeach.com/things-to-do/beaches/",
+            "https://www.visitlagunabeach.com/things-to-do/beaches/",
+            "https://en.wikipedia.org/wiki/Anse_Source_d%27Argent",
+            "https://en.wikipedia.org/wiki/Maya_Bay"
+          ]
+        },
+        {
+          "label": "Laguna Beach",
+          "aliases": [],
+          "evidence": "Published geographic/visitor/operator reference establishes this ordinary name and eligible physical feature. Adds a missing label or public synonym to the full primary inventory; no extra question.",
+          "references": [
+            "https://www.wilmingtonandbeaches.com/places-to-stay/beaches/",
+            "https://www.visitgreece.gr/en/experiences/culture/museums/navagio-beach",
+            "https://www.daytonabeach.com/things-to-do/beaches/",
+            "https://www.visitlagunabeach.com/things-to-do/beaches/",
+            "https://en.wikipedia.org/wiki/Anse_Source_d%27Argent",
+            "https://en.wikipedia.org/wiki/Maya_Bay"
+          ]
+        },
+        {
+          "label": "Anse Source d'Argent",
+          "aliases": [
+            "Anse Source d’Argent"
+          ],
+          "evidence": "Published geographic/visitor/operator reference establishes this ordinary name and eligible physical feature. Adds a missing label or public synonym to the full primary inventory; no extra question.",
+          "references": [
+            "https://www.wilmingtonandbeaches.com/places-to-stay/beaches/",
+            "https://www.visitgreece.gr/en/experiences/culture/museums/navagio-beach",
+            "https://www.daytonabeach.com/things-to-do/beaches/",
+            "https://www.visitlagunabeach.com/things-to-do/beaches/",
+            "https://en.wikipedia.org/wiki/Anse_Source_d%27Argent",
+            "https://en.wikipedia.org/wiki/Maya_Bay"
+          ]
+        },
+        {
+          "label": "Navagio Beach",
+          "aliases": [
+            "Navagio",
+            "Shipwreck Beach"
+          ],
+          "evidence": "Published geographic/visitor/operator reference establishes this ordinary name and eligible physical feature. Adds a missing label or public synonym to the full primary inventory; no extra question.",
+          "references": [
+            "https://www.wilmingtonandbeaches.com/places-to-stay/beaches/",
+            "https://www.visitgreece.gr/en/experiences/culture/museums/navagio-beach",
+            "https://www.daytonabeach.com/things-to-do/beaches/",
+            "https://www.visitlagunabeach.com/things-to-do/beaches/",
+            "https://en.wikipedia.org/wiki/Anse_Source_d%27Argent",
+            "https://en.wikipedia.org/wiki/Maya_Bay"
+          ]
+        },
+        {
+          "label": "Maya Bay",
+          "aliases": [
+            "Maya Bay Beach"
+          ],
+          "evidence": "Published geographic/visitor/operator reference establishes this ordinary name and eligible physical feature. Adds a missing label or public synonym to the full primary inventory; no extra question.",
+          "references": [
+            "https://www.wilmingtonandbeaches.com/places-to-stay/beaches/",
+            "https://www.visitgreece.gr/en/experiences/culture/museums/navagio-beach",
+            "https://www.daytonabeach.com/things-to-do/beaches/",
+            "https://www.visitlagunabeach.com/things-to-do/beaches/",
+            "https://en.wikipedia.org/wiki/Anse_Source_d%27Argent",
+            "https://en.wikipedia.org/wiki/Maya_Bay"
+          ]
+        }
+      ],
+      "merges": [],
+      "actualShortNames": [
+        "K2"
+      ],
+      "family": "world",
+      "buildStage": "reviewable-candidate"
+    },
+    {
+      "key": "glaciers",
+      "prompt": "Name a real glacier or named glacial ice body.",
+      "familiar": [
+        "Perito Moreno Glacier",
+        "Hubbard Glacier",
+        "Mendenhall Glacier",
+        "Columbia Glacier",
+        "Aletsch Glacier",
+        "Mer de Glace",
+        "Athabasca Glacier",
+        "Franz Josef Glacier",
+        "Fox Glacier",
+        "Tasman Glacier",
+        "Khumbu Glacier",
+        "Siachen Glacier",
+        "Baltoro Glacier",
+        "Biafo Glacier",
+        "Fedchenko Glacier",
+        "Vatnajokull",
+        "Langjokull",
+        "Jostedalsbreen",
+        "Briksdal Glacier",
+        "Engabreen",
+        "Petermann Glacier",
+        "Jakobshavn Glacier",
+        "Lambert Glacier",
+        "Taylor Glacier",
+        "Thwaites Glacier",
+        "Pine Island Glacier",
+        "Greenland Ice Sheet",
+        "Antarctic Ice Sheet"
+      ],
+      "exclude": [
+        "Iceberg lettuce",
+        "Frozen Lake Erie",
+        "Glacier",
+        "Iceberg"
+      ],
+      "review": "State clearly whether named ice caps, icefields and ice sheets qualify; include common public names rather than requiring a technical suffix.",
+      "id": "authored-glaciers",
+      "concept": "glaciers",
+      "geoSources": [
+        "glaciers",
+        "icecaps"
+      ],
+      "listSources": [
+        "List_of_glaciers"
+      ],
+      "rare": "Nathorst Glacier",
+      "scope": "Real named glaciers, ice caps, icefields and land ice sheets count. Seasonal sea ice, icebergs, mountains without a named ice body and fictional ice are outside this inventory.",
+      "references": [
+        "https://download.geonames.org/export/dump/",
+        "https://download.geonames.org/export/dump/featureCodes_en.txt",
+        "https://en.wikipedia.org/wiki/List_of_glaciers",
+        "https://en.wikipedia.org/wiki/Vanch-Yakh_Glacier",
+        "https://en.wikipedia.org/wiki/Briksdalsbreen",
+        "https://en.wikipedia.org/wiki/Jakobshavn_Glacier",
+        "https://science.nasa.gov/earth/explore/earth-indicators/ice-sheets/"
+      ],
+      "holds": {
+        "Mawson Peak": "A mountain, not a named glacial ice body."
+      },
+      "aliases": {
+        "Vanch-Yakh Glacier": [
+          "Fedchenko Glacier",
+          "Piryakhi Fedchenko",
+          "Lednik Fedchenko",
+          "Vanch Yakh Glacier"
+        ],
+        "Brigsdalsbreen": [
+          "Briksdal Glacier",
+          "Briksdalsbreen"
+        ],
+        "Jakobshavn Isbrae": [
+          "Jakobshavn Glacier",
+          "Jakobshavn Isbrae",
+          "Sermeq Kujalleq"
+        ]
+      },
+      "additions": [
+        {
+          "label": "Greenland Ice Sheet",
+          "aliases": [],
+          "references": [
+            "https://science.nasa.gov/earth/explore/earth-indicators/ice-sheets/"
+          ],
+          "evidence": "Named land ice sheets and their standard Antarctic divisions in NASA ice-sheet monitoring; included by the stated glacial-ice-body scope."
+        },
+        {
+          "label": "Antarctic Ice Sheet",
+          "aliases": [],
+          "references": [
+            "https://science.nasa.gov/earth/explore/earth-indicators/ice-sheets/"
+          ],
+          "evidence": "Named land ice sheets and their standard Antarctic divisions in NASA ice-sheet monitoring; included by the stated glacial-ice-body scope."
+        },
+        {
+          "label": "East Antarctic Ice Sheet",
+          "aliases": [],
+          "references": [
+            "https://science.nasa.gov/earth/explore/earth-indicators/ice-sheets/"
+          ],
+          "evidence": "Named land ice sheets and their standard Antarctic divisions in NASA ice-sheet monitoring; included by the stated glacial-ice-body scope."
+        },
+        {
+          "label": "West Antarctic Ice Sheet",
+          "aliases": [],
+          "references": [
+            "https://science.nasa.gov/earth/explore/earth-indicators/ice-sheets/"
+          ],
+          "evidence": "Named land ice sheets and their standard Antarctic divisions in NASA ice-sheet monitoring; included by the stated glacial-ice-body scope."
+        }
+      ],
+      "merges": [],
+      "actualShortNames": [
+        "K2"
+      ],
+      "family": "world",
+      "buildStage": "reviewable-candidate"
+    },
+    {
+      "key": "caves",
+      "prompt": "Name a real cave or cave system.",
+      "familiar": [
+        "Mammoth Cave",
+        "Carlsbad Caverns",
+        "Luray Caverns",
+        "Waitomo Glowworm Caves",
+        "Jeita Grotto",
+        "Son Doong Cave",
+        "Reed Flute Cave",
+        "Postojna Cave",
+        "Skocjan Caves",
+        "Fingal's Cave",
+        "Blue Grotto",
+        "Altamira",
+        "Lascaux",
+        "Chauvet Cave",
+        "Ellison's Cave",
+        "Lechuguilla Cave",
+        "Kula Kai Caverns",
+        "Phong Nha Cave",
+        "Sterkfontein",
+        "Cave of Swallows",
+        "Krubera Cave",
+        "Veryovkina Cave",
+        "Wind Cave",
+        "Jewel Cave",
+        "Meramec Caverns",
+        "Onondaga Cave"
+      ],
+      "exclude": [
+        "Batcave from Batman",
+        "Minecraft cave",
+        "Cave"
+      ],
+      "review": "Named archaeological painted caves count as caves. A cave attraction and the cave can have different public names; verify real identity.",
+      "id": "authored-caves",
+      "concept": "caves",
+      "geoSources": [
+        "caves"
+      ],
+      "listSources": [
+        "List_of_caves",
+        "List_of_show_caves"
+      ],
+      "rare": "Movile Cave",
+      "scope": "Real named caves, cave systems, rock shelters and historical rock-cut cave complexes count, including show caves. An ordinary mine or tunnel does not automatically count; fictional caves are excluded.",
+      "references": [
+        "https://download.geonames.org/export/dump/",
+        "https://download.geonames.org/export/dump/featureCodes_en.txt",
+        "https://en.wikipedia.org/wiki/List_of_caves",
+        "https://en.wikipedia.org/wiki/List_of_show_caves",
+        "https://www.kulakaicaverns.com/",
+        "https://en.wikipedia.org/wiki/Veryovkina_Cave",
+        "https://mostateparks.com/park/onondaga-cave-state-park",
+        "https://www.nps.gov/wica/"
+      ],
+      "holds": {},
+      "aliases": {
+        "Onondaga Cave State Park": [
+          "Onondaga Cave"
+        ]
+      },
+      "additions": [
+        {
+          "label": "Kula Kai Caverns",
+          "aliases": [
+            "Kula Kai Cavern",
+            "Kulakai Caverns"
+          ],
+          "evidence": "Published geographic/visitor/operator reference establishes this ordinary name and eligible physical feature. Adds a missing label or public synonym to the full primary inventory; no extra question.",
+          "references": [
+            "https://www.kulakaicaverns.com/",
+            "https://en.wikipedia.org/wiki/Veryovkina_Cave",
+            "https://mostateparks.com/park/onondaga-cave-state-park"
+          ]
+        },
+        {
+          "label": "Veryovkina Cave",
+          "aliases": [
+            "Verevkina Cave",
+            "Veriovkina Cave"
+          ],
+          "evidence": "Published geographic/visitor/operator reference establishes this ordinary name and eligible physical feature. Adds a missing label or public synonym to the full primary inventory; no extra question.",
+          "references": [
+            "https://www.kulakaicaverns.com/",
+            "https://en.wikipedia.org/wiki/Veryovkina_Cave",
+            "https://mostateparks.com/park/onondaga-cave-state-park"
+          ]
+        },
+        {
+          "label": "Wind Cave",
+          "aliases": [
+            "Wind Cave South Dakota"
+          ],
+          "references": [
+            "https://www.nps.gov/wica/"
+          ],
+          "evidence": "The National Park Service describes the real namesake cave; its absence from the cave-class gazetteer is a classification gap, not an invalid answer."
+        }
+      ],
+      "merges": [],
+      "actualShortNames": [
+        "K2"
+      ],
+      "family": "world",
+      "buildStage": "reviewable-candidate"
+    },
+    {
+      "key": "reservoirs",
+      "prompt": "Name a real reservoir or artificial lake.",
+      "familiar": [
+        "Lake Mead",
+        "Lake Powell",
+        "Lake Nasser",
+        "Lake Kariba",
+        "Lake Volta",
+        "Three Gorges Reservoir",
+        "Guri Reservoir",
+        "Bratsk Reservoir",
+        "Kuybyshev Reservoir",
+        "Krasnoyarsk Reservoir",
+        "Lake Marion",
+        "Lake Moultrie",
+        "Lake Norman",
+        "Lake Gaston",
+        "Kerr Lake",
+        "Buggs Island Lake",
+        "Jordan Lake",
+        "Falls Lake",
+        "Shearon Harris Reservoir",
+        "Lake Wylie",
+        "Fontana Lake",
+        "Lake Murray",
+        "New Melones Lake",
+        "Shasta Lake",
+        "Lake Oroville",
+        "Lake Eucumbene",
+        "Lake Argyle",
+        "Lake Hume",
+        "Lake Texoma",
+        "Table Rock Lake",
+        "Beaver Lake",
+        "Harris Lake"
+      ],
+      "exclude": [
+        "Lake Superior",
+        "Caspian Sea",
+        "Reservoir"
+      ],
+      "review": "Do not import every lake as a reservoir. Documented alternate names for one reservoir share one score identity.",
+      "id": "authored-reservoirs",
+      "concept": "reservoirs",
+      "geoSources": [
+        "reservoirs"
+      ],
+      "listSources": [
+        "List_of_dams_and_reservoirs"
+      ],
+      "rare": "Kielder Water",
+      "scope": "Named reservoirs and artificial lakes count, including historical and seasonally dry reservoirs. A naturally formed lake does not automatically become a reservoir just because it has a regulated outlet.",
+      "references": [
+        "https://download.geonames.org/export/dump/",
+        "https://download.geonames.org/export/dump/featureCodes_en.txt",
+        "https://en.wikipedia.org/wiki/List_of_dams_and_reservoirs",
+        "https://en.wikipedia.org/wiki/Three_Gorges_Dam",
+        "https://en.wikipedia.org/wiki/Krasnoyarsk_Reservoir",
+        "https://en.wikipedia.org/wiki/Harris_Lake_(New_Hill,_North_Carolina)",
+        "https://www.snowyhydro.com.au/visit/guidelines-for-visiting-the-scheme/"
+      ],
+      "holds": {},
+      "aliases": {
+        "Krasnoyarskoye Vodokhranilishche": [
+          "Krasnoyarsk Reservoir"
+        ],
+        "Harris Lake": [
+          "Shearon Harris Reservoir"
+        ],
+        "Lake Eucumbene": [
+          "Eucumbene"
+        ]
+      },
+      "additions": [
+        {
+          "label": "Three Gorges Reservoir",
+          "aliases": [],
+          "evidence": "Published geographic/visitor/operator reference establishes this ordinary name and eligible physical feature. Adds a missing label or public synonym to the full primary inventory; no extra question.",
+          "references": [
+            "https://en.wikipedia.org/wiki/Three_Gorges_Dam",
+            "https://en.wikipedia.org/wiki/Krasnoyarsk_Reservoir",
+            "https://en.wikipedia.org/wiki/Harris_Lake_(New_Hill,_North_Carolina)",
+            "https://www.snowyhydro.com.au/visit/guidelines-for-visiting-the-scheme/"
+          ]
+        },
+        {
+          "label": "Shearon Harris Reservoir",
+          "aliases": [
+            "Harris Lake",
+            "Harris Reservoir North Carolina"
+          ],
+          "evidence": "Published geographic/visitor/operator reference establishes this ordinary name and eligible physical feature. Adds a missing label or public synonym to the full primary inventory; no extra question.",
+          "references": [
+            "https://en.wikipedia.org/wiki/Three_Gorges_Dam",
+            "https://en.wikipedia.org/wiki/Krasnoyarsk_Reservoir",
+            "https://en.wikipedia.org/wiki/Harris_Lake_(New_Hill,_North_Carolina)",
+            "https://www.snowyhydro.com.au/visit/guidelines-for-visiting-the-scheme/"
+          ]
+        },
+        {
+          "label": "Lake Eucumbene",
+          "aliases": [
+            "Eucumbene Reservoir",
+            "Eucumbene"
+          ],
+          "evidence": "Published geographic/visitor/operator reference establishes this ordinary name and eligible physical feature. Adds a missing label or public synonym to the full primary inventory; no extra question.",
+          "references": [
+            "https://en.wikipedia.org/wiki/Three_Gorges_Dam",
+            "https://en.wikipedia.org/wiki/Krasnoyarsk_Reservoir",
+            "https://en.wikipedia.org/wiki/Harris_Lake_(New_Hill,_North_Carolina)",
+            "https://www.snowyhydro.com.au/visit/guidelines-for-visiting-the-scheme/"
+          ]
+        }
+      ],
+      "merges": [],
+      "actualShortNames": [
+        "K2"
+      ],
+      "family": "world",
+      "buildStage": "reviewable-candidate"
+    },
+    {
+      "key": "dams",
+      "prompt": "Name a real named dam.",
+      "familiar": [
+        "Hoover Dam",
+        "Three Gorges Dam",
+        "Aswan High Dam",
+        "Grand Coulee Dam",
+        "Glen Canyon Dam",
+        "Itaipu Dam",
+        "Guri Dam",
+        "Kariba Dam",
+        "Tarbela Dam",
+        "Mangla Dam",
+        "Ataturk Dam",
+        "Rogun Dam",
+        "Nurek Dam",
+        "Tehri Dam",
+        "Hirakud Dam",
+        "Srisailam Dam",
+        "Fontana Dam",
+        "Shasta Dam",
+        "Oroville Dam",
+        "Fort Peck Dam",
+        "Garrison Dam",
+        "Table Rock Dam",
+        "Hartwell Dam",
+        "Sardar Sarovar Dam",
+        "Belo Monte Dam",
+        "John H. Kerr Dam"
+      ],
+      "exclude": [
+        "Hoover vacuum",
+        "Grand Canyon",
+        "Dam"
+      ],
+      "review": "The dam and the lake it forms are different named objects; actual public aliases may still refer to one of them.",
+      "id": "authored-dams",
+      "concept": "dams",
+      "geoSources": [
+        "dams"
+      ],
+      "listSources": [
+        "List_of_dams_and_reservoirs"
+      ],
+      "rare": "Vajont Dam",
+      "scope": "Named real dams and barrages count, including historical dams and named projects already under construction. A reservoir name does not automatically name its dam, and fictional dams do not count.",
+      "references": [
+        "https://download.geonames.org/export/dump/",
+        "https://download.geonames.org/export/dump/featureCodes_en.txt",
+        "https://en.wikipedia.org/wiki/List_of_dams_and_reservoirs",
+        "https://uttarakhandirrigation.com/tehri-dam-project",
+        "https://sambalpur.odisha.gov.in/en/tourism/tourist-places/hirakud-dam",
+        "https://demo.ssnnl.in/project.aspx",
+        "https://en.wikipedia.org/wiki/Belo_Monte_Dam",
+        "https://www.krmb.gov.in/html/project19.html"
+      ],
+      "holds": {},
+      "aliases": {
+        "Barragem Belo Monte": [
+          "Belo Monte Dam"
+        ]
+      },
+      "additions": [
+        {
+          "label": "Tehri Dam",
+          "aliases": [],
+          "evidence": "Published geographic/visitor/operator reference establishes this ordinary name and eligible physical feature. Adds a missing label or public synonym to the full primary inventory; no extra question.",
+          "references": [
+            "https://uttarakhandirrigation.com/tehri-dam-project",
+            "https://sambalpur.odisha.gov.in/en/tourism/tourist-places/hirakud-dam",
+            "https://www.krmb.gov.in/html/project19.html",
+            "https://demo.ssnnl.in/project.aspx",
+            "https://en.wikipedia.org/wiki/Belo_Monte_Dam"
+          ]
+        },
+        {
+          "label": "Hirakud Dam",
+          "aliases": [],
+          "evidence": "Published geographic/visitor/operator reference establishes this ordinary name and eligible physical feature. Adds a missing label or public synonym to the full primary inventory; no extra question.",
+          "references": [
+            "https://uttarakhandirrigation.com/tehri-dam-project",
+            "https://sambalpur.odisha.gov.in/en/tourism/tourist-places/hirakud-dam",
+            "https://www.krmb.gov.in/html/project19.html",
+            "https://demo.ssnnl.in/project.aspx",
+            "https://en.wikipedia.org/wiki/Belo_Monte_Dam"
+          ]
+        },
+        {
+          "label": "Srisailam Dam",
+          "aliases": [],
+          "evidence": "Published geographic/visitor/operator reference establishes this ordinary name and eligible physical feature. Adds a missing label or public synonym to the full primary inventory; no extra question.",
+          "references": [
+            "https://www.krmb.gov.in/html/project19.html"
+          ]
+        },
+        {
+          "label": "Sardar Sarovar Dam",
+          "aliases": [],
+          "evidence": "Published geographic/visitor/operator reference establishes this ordinary name and eligible physical feature. Adds a missing label or public synonym to the full primary inventory; no extra question.",
+          "references": [
+            "https://uttarakhandirrigation.com/tehri-dam-project",
+            "https://sambalpur.odisha.gov.in/en/tourism/tourist-places/hirakud-dam",
+            "https://www.krmb.gov.in/html/project19.html",
+            "https://demo.ssnnl.in/project.aspx",
+            "https://en.wikipedia.org/wiki/Belo_Monte_Dam"
+          ]
+        }
+      ],
+      "merges": [],
+      "actualShortNames": [
+        "K2"
+      ],
+      "family": "world",
+      "buildStage": "reviewable-candidate"
+    },
+    {
+      "key": "zoos",
+      "prompt": "Name a real zoo, wildlife park or public aquarium.",
+      "familiar": [
+        "San Diego Zoo",
+        "Bronx Zoo",
+        "Smithsonian National Zoo",
+        "North Carolina Zoo",
+        "London Zoo",
+        "Singapore Zoo",
+        "Henry Doorly Zoo",
+        "Brookfield Zoo",
+        "Columbus Zoo",
+        "Cincinnati Zoo",
+        "Saint Louis Zoo",
+        "Chester Zoo",
+        "Edinburgh Zoo",
+        "Dublin Zoo",
+        "Berlin Zoo",
+        "Schönbrunn Zoo",
+        "Toronto Zoo",
+        "Calgary Zoo",
+        "Beijing Zoo",
+        "Taronga Zoo",
+        "Australia Zoo",
+        "Perth Zoo",
+        "Adelaide Zoo",
+        "Melbourne Zoo",
+        "Basel Zoo",
+        "Zurich Zoo",
+        "Beauval Zoo",
+        "Twycross Zoo",
+        "Whipsnade Zoo",
+        "Marwell Zoo",
+        "Paignton Zoo",
+        "Houston Zoo",
+        "Dallas Zoo",
+        "Fort Worth Zoo",
+        "Oakland Zoo",
+        "Los Angeles Zoo",
+        "Zoo Atlanta",
+        "San Antonio Zoo",
+        "Philadelphia Zoo",
+        "Point Defiance Zoo",
+        "San Francisco Zoo",
+        "Loro Parque"
+      ],
+      "exclude": [
+        "Jurassic Park",
+        "Hogwarts",
+        "Zoo",
+        "Aquarium"
+      ],
+      "review": "Whole global named-feature concept, not one question per country, subtype, property or label. Source classification and ordinary public names still require explicit review.",
+      "id": "authored-zoos",
+      "concept": "zoos",
+      "geoSources": [
+        "zoos"
+      ],
+      "listSources": [
+        "List_of_zoos_by_country",
+        "List_of_zoos_in_the_United_States",
+        "List_of_aquaria"
+      ],
+      "rare": "Bioparc Valencia",
+      "scope": "Real zoos, zoological parks, public aquariums, aviaries and established public animal collections count, past or present. Fictional parks and a generic nature reserve without a zoological collection do not count.",
+      "references": [
+        "https://download.geonames.org/export/dump/",
+        "https://download.geonames.org/export/dump/featureCodes_en.txt",
+        "https://en.wikipedia.org/wiki/List_of_zoos_by_country",
+        "https://en.wikipedia.org/wiki/List_of_zoos_in_the_United_States",
+        "https://en.wikipedia.org/wiki/List_of_aquaria",
+        "https://www.zsl.org/",
+        "https://www.calgaryzoo.com/",
+        "https://www.taronga.org.au/",
+        "https://www.adelaidezoo.com.au/",
+        "https://en.wikipedia.org/wiki/Twycross_Zoo"
+      ],
+      "holds": {},
+      "aliases": {
+        "National Zoological Park": [
+          "Smithsonian National Zoo",
+          "Smithsonian National Zoological Park"
+        ],
+        "Omaha's Henry Doorly Zoo and Aquarium": [
+          "Henry Doorly Zoo",
+          "Omaha Zoo"
+        ],
+        "Brookfield Zoo Chicago": [
+          "Brookfield Zoo"
+        ],
+        "Columbus Zoo and Aquarium": [
+          "Columbus Zoo"
+        ],
+        "Cincinnati Zoo and Botanical Garden": [
+          "Cincinnati Zoo"
+        ],
+        "Zoo Dublin": [
+          "Dublin Zoo"
+        ],
+        "Zoo Zuerich": [
+          "Zurich Zoo",
+          "Zoo Zurich"
+        ],
+        "ZooParc de Beauval": [
+          "Beauval Zoo"
+        ],
+        "Point Defiance Zoo & Aquarium": [
+          "Point Defiance Zoo"
+        ],
+        "Valencia Bioparc": [
+          "Bioparc Valencia"
+        ]
+      },
+      "additions": [
+        {
+          "label": "London Zoo",
+          "aliases": [
+            "ZSL London Zoo"
+          ],
+          "references": [
+            "https://www.zsl.org/"
+          ],
+          "evidence": "Named real feature or institution and public-name spelling in the linked source; supplementary to complete eligible gazetteer classes."
+        },
+        {
+          "label": "Whipsnade Zoo",
+          "aliases": [
+            "ZSL Whipsnade Zoo"
+          ],
+          "references": [
+            "https://www.zsl.org/"
+          ],
+          "evidence": "Named real feature or institution and public-name spelling in the linked source; supplementary to complete eligible gazetteer classes."
+        },
+        {
+          "label": "Calgary Zoo",
+          "aliases": [
+            "Wilder Institute's Calgary Zoo"
+          ],
+          "references": [
+            "https://www.calgaryzoo.com/"
+          ],
+          "evidence": "Named real feature or institution and public-name spelling in the linked source; supplementary to complete eligible gazetteer classes."
+        },
+        {
+          "label": "Taronga Zoo",
+          "aliases": [
+            "Taronga Zoo Sydney"
+          ],
+          "references": [
+            "https://www.taronga.org.au/"
+          ],
+          "evidence": "Named real feature or institution and public-name spelling in the linked source; supplementary to complete eligible gazetteer classes."
+        },
+        {
+          "label": "Taronga Western Plains Zoo",
+          "aliases": [
+            "Western Plains Zoo"
+          ],
+          "references": [
+            "https://www.taronga.org.au/"
+          ],
+          "evidence": "Named real feature or institution and public-name spelling in the linked source; supplementary to complete eligible gazetteer classes."
+        },
+        {
+          "label": "Adelaide Zoo",
+          "aliases": [],
+          "references": [
+            "https://www.adelaidezoo.com.au/"
+          ],
+          "evidence": "Named real feature or institution and public-name spelling in the linked source; supplementary to complete eligible gazetteer classes."
+        },
+        {
+          "label": "Twycross Zoo",
+          "aliases": [],
+          "references": [
+            "https://en.wikipedia.org/wiki/Twycross_Zoo"
+          ],
+          "evidence": "Named real feature or institution and public-name spelling in the linked source; supplementary to complete eligible gazetteer classes."
+        }
+      ],
+      "merges": [],
+      "actualShortNames": [
+        "K2"
+      ],
+      "family": "world",
+      "buildStage": "reviewable-candidate"
+    },
+    {
+      "key": "named-forests",
+      "prompt": "Name a real named forest or woodland.",
+      "familiar": [
+        "Amazon rainforest",
+        "Black Forest",
+        "Sherwood Forest",
+        "Congo rainforest",
+        "Daintree Rainforest",
+        "Bialowieza Forest",
+        "New Forest",
+        "Forest of Dean",
+        "Epping Forest",
+        "Redwood Forest",
+        "Bavarian Forest",
+        "Hoh Rain Forest",
+        "Tongass National Forest",
+        "Pisgah National Forest",
+        "Nantahala National Forest",
+        "Uwharrie National Forest",
+        "Croatan National Forest",
+        "Dixie National Forest",
+        "Allegheny National Forest",
+        "Angelina National Forest",
+        "Aokigahara",
+        "Yakushima Forest",
+        "Sinharaja Forest",
+        "Waipoua Forest",
+        "Great Bear Rainforest",
+        "Ardennes Forest",
+        "Brocéliande Forest",
+        "Compiègne Forest",
+        "Fontainebleau Forest",
+        "Hurtgen Forest"
+      ],
+      "exclude": [
+        "Forbidden Forest from Harry Potter",
+        "Mirkwood",
+        "Forest"
+      ],
+      "review": "Whole global named-feature concept, not one question per country, subtype, property or label. Source classification and ordinary public names still require explicit review.",
+      "id": "authored-named-forests",
+      "concept": "named-forests",
+      "geoSources": [
+        "named-forests"
+      ],
+      "listSources": [],
+      "rare": "Crooked Forest",
+      "scope": "Real named forests, woodlands and established forest regions count, including national forests and named historical or petrified forests. A country or a fictional woodland does not count by itself.",
+      "references": [
+        "https://download.geonames.org/export/dump/",
+        "https://download.geonames.org/export/dump/featureCodes_en.txt",
+        "https://en.wikipedia.org/wiki/Amazon_rainforest",
+        "https://en.wikipedia.org/wiki/Congolian_rainforests",
+        "https://en.wikipedia.org/wiki/Daintree_Rainforest",
+        "https://parks.ca.gov/?page_id=28127",
+        "https://en.wikipedia.org/wiki/Bavarian_Forest",
+        "https://www.rinya.maff.go.jp/e/national_forest/recreation_forest/yakushima_shiratani.html",
+        "https://whc.unesco.org/en/list/405/",
+        "https://en.wikipedia.org/wiki/Great_Bear_Rainforest",
+        "https://en.wikipedia.org/wiki/Paimpont_forest",
+        "https://en.wikipedia.org/wiki/Crooked_Forest",
+        "https://whc.unesco.org/en/list/33",
+        "https://www.unesco.pl/kultura/dziedzictwo-kulturowe/swiatowe-dziedzictwo/lista-swiatowego-dziedzictwa/europa-i-ameryka-polnocna/bialorus/"
+      ],
+      "holds": {},
+      "aliases": {
+        "Belovezhskaya Pushcha": [
+          "Bialowieza Forest",
+          "Białowieża Forest",
+          "Puszcza Białowieska"
+        ],
+        "Foret des Ardennes": [
+          "Ardennes Forest"
+        ],
+        "Foret de Compiegne": [
+          "Compiegne Forest",
+          "Compiègne Forest"
+        ],
+        "Foret de Fontainebleau": [
+          "Fontainebleau Forest"
+        ],
+        "Forst Hurtgen": [
+          "Hurtgen Forest",
+          "Hürtgen Forest",
+          "Hürtgenwald"
+        ]
+      },
+      "additions": [
+        {
+          "label": "Amazon rainforest",
+          "aliases": [
+            "Amazon Forest",
+            "Amazon Rain Forest",
+            "Amazon jungle"
+          ],
+          "references": [
+            "https://en.wikipedia.org/wiki/Amazon_rainforest"
+          ],
+          "evidence": "Named real feature or institution and public-name spelling in the linked source; supplementary to complete eligible gazetteer classes."
+        },
+        {
+          "label": "Congo rainforest",
+          "aliases": [
+            "Congolian rainforests",
+            "Congo Forest"
+          ],
+          "references": [
+            "https://en.wikipedia.org/wiki/Congolian_rainforests"
+          ],
+          "evidence": "Named real feature or institution and public-name spelling in the linked source; supplementary to complete eligible gazetteer classes."
+        },
+        {
+          "label": "Daintree Rainforest",
+          "aliases": [
+            "Daintree Forest"
+          ],
+          "references": [
+            "https://en.wikipedia.org/wiki/Daintree_Rainforest"
+          ],
+          "evidence": "Named real feature or institution and public-name spelling in the linked source; supplementary to complete eligible gazetteer classes."
+        },
+        {
+          "label": "Redwood Forest",
+          "aliases": [
+            "Coast redwood forest"
+          ],
+          "references": [
+            "https://parks.ca.gov/?page_id=28127"
+          ],
+          "evidence": "Named real feature or institution and public-name spelling in the linked source; supplementary to complete eligible gazetteer classes."
+        },
+        {
+          "label": "Bavarian Forest",
+          "aliases": [
+            "Bayerischer Wald"
+          ],
+          "references": [
+            "https://en.wikipedia.org/wiki/Bavarian_Forest"
+          ],
+          "evidence": "Named real feature or institution and public-name spelling in the linked source; supplementary to complete eligible gazetteer classes."
+        },
+        {
+          "label": "Yakushima Forest",
+          "aliases": [
+            "Yakushima Primeval Cedar Forest"
+          ],
+          "references": [
+            "https://www.rinya.maff.go.jp/e/national_forest/recreation_forest/yakushima_shiratani.html"
+          ],
+          "evidence": "Named real feature or institution and public-name spelling in the linked source; supplementary to complete eligible gazetteer classes."
+        },
+        {
+          "label": "Sinharaja Forest",
+          "aliases": [
+            "Sinharaja Forest Reserve",
+            "Sinharaja rainforest"
+          ],
+          "references": [
+            "https://whc.unesco.org/en/list/405/"
+          ],
+          "evidence": "Named real feature or institution and public-name spelling in the linked source; supplementary to complete eligible gazetteer classes."
+        },
+        {
+          "label": "Great Bear Rainforest",
+          "aliases": [],
+          "references": [
+            "https://en.wikipedia.org/wiki/Great_Bear_Rainforest"
+          ],
+          "evidence": "Named real feature or institution and public-name spelling in the linked source; supplementary to complete eligible gazetteer classes."
+        },
+        {
+          "label": "Brocéliande Forest",
+          "aliases": [
+            "Paimpont Forest",
+            "Brocéliande",
+            "Brocéliande forest"
+          ],
+          "references": [
+            "https://en.wikipedia.org/wiki/Paimpont_forest"
+          ],
+          "evidence": "Named real feature or institution and public-name spelling in the linked source; supplementary to complete eligible gazetteer classes."
+        },
+        {
+          "label": "Crooked Forest",
+          "aliases": [
+            "Krzywy Las"
+          ],
+          "references": [
+            "https://en.wikipedia.org/wiki/Crooked_Forest"
+          ],
+          "evidence": "Named real feature or institution and public-name spelling in the linked source; supplementary to complete eligible gazetteer classes."
+        }
+      ],
+      "merges": [],
+      "actualShortNames": [
+        "K2"
+      ],
+      "family": "world",
+      "buildStage": "reviewable-candidate"
+    },
+    {
+      "key": "reefs-atolls",
+      "prompt": "Name a real named reef or atoll.",
+      "familiar": [
+        "Great Barrier Reef",
+        "Ningaloo Reef",
+        "Belize Barrier Reef",
+        "Florida Reef",
+        "Tubbataha Reef",
+        "Apo Reef",
+        "New Caledonia Barrier Reef",
+        "Great Astrolabe Reef",
+        "Rainbow Reef",
+        "Andros Barrier Reef",
+        "Amazon Reef",
+        "Kingman Reef",
+        "Bikini Atoll",
+        "Enewetak Atoll",
+        "Rangiroa",
+        "Aldabra Atoll",
+        "Palmyra Atoll",
+        "Midway Atoll",
+        "Kwajalein Atoll",
+        "Wake Atoll",
+        "Johnston Atoll",
+        "Tikehau",
+        "Fakarava",
+        "Clipperton Island",
+        "Rose Atoll",
+        "Turneffe Atoll"
+      ],
+      "exclude": [
+        "Amazon River",
+        "Hogwarts Reef",
+        "Reef",
+        "Atoll",
+        "Coral Triangle"
+      ],
+      "review": "Whole global named-feature concept, not one question per country, subtype, property or label. Source classification and ordinary public names still require explicit review.",
+      "id": "authored-reefs-atolls",
+      "concept": "reefs-atolls",
+      "geoSources": [
+        "reefs-atolls"
+      ],
+      "listSources": [
+        "List_of_reefs"
+      ],
+      "rare": "Lihou Reef",
+      "scope": "Real named reefs and atolls count, including coral and rocky reefs. A plain island or river is not automatically a reef or atoll.",
+      "references": [
+        "https://download.geonames.org/export/dump/",
+        "https://download.geonames.org/export/dump/featureCodes_en.txt",
+        "https://en.wikipedia.org/wiki/List_of_reefs",
+        "https://en.wikipedia.org/wiki/Ningaloo_Coast",
+        "https://en.wikipedia.org/wiki/Rainbow_Reef",
+        "https://en.wikipedia.org/wiki/Andros,_Bahamas",
+        "https://en.wikipedia.org/wiki/Rose_Atoll",
+        "https://en.wikipedia.org/wiki/Turneffe_Atoll"
+      ],
+      "holds": {
+        "Coral Triangle": "Directory/table entry denotes a region, plain island, marine park or broad plateau rather than a reef/atoll name. Do not infer membership just from an illustrative location.",
+        "Bunaken National Marine Park": "Directory/table entry denotes a region, plain island, marine park or broad plateau rather than a reef/atoll name. Do not infer membership just from an illustrative location.",
+        "Gulf Reef Mexico Arrecifes de Cozumel National Park": "Directory/table entry denotes a region, plain island, marine park or broad plateau rather than a reef/atoll name. Do not infer membership just from an illustrative location.",
+        "Blake Plateau": "Directory/table entry denotes a region, plain island, marine park or broad plateau rather than a reef/atoll name. Do not infer membership just from an illustrative location.",
+        "Isla Pérez": "Directory/table entry denotes a region, plain island, marine park or broad plateau rather than a reef/atoll name. Do not infer membership just from an illustrative location.",
+        "Minami-Tori-shima": "Directory/table entry denotes a region, plain island, marine park or broad plateau rather than a reef/atoll name. Do not infer membership just from an illustrative location.",
+        "Necker Island": "Directory/table entry denotes a region, plain island, marine park or broad plateau rather than a reef/atoll name. Do not infer membership just from an illustrative location.",
+        "Ningaloo Coast": "Directory/table entry denotes a region, plain island, marine park or broad plateau rather than a reef/atoll name. Do not infer membership just from an illustrative location.",
+        "Miri-Sibuti Coral Reef National Park": "Directory/table entry denotes a region, plain island, marine park or broad plateau rather than a reef/atoll name. Do not infer membership just from an illustrative location."
+      },
+      "aliases": {
+        "Florida Reefs": [
+          "Florida Reef",
+          "Florida Reef Tract",
+          "Florida's Coral Reef"
+        ],
+        "Tubbataha Reefs": [
+          "Tubbataha Reef"
+        ],
+        "Aldabra": [
+          "Aldabra Atoll"
+        ]
+      },
+      "additions": [
+        {
+          "label": "Ningaloo Reef",
+          "aliases": [],
+          "references": [
+            "https://en.wikipedia.org/wiki/Ningaloo_Coast"
+          ],
+          "evidence": "Named real feature or institution and public-name spelling in the linked source; supplementary to complete eligible gazetteer classes."
+        },
+        {
+          "label": "Rainbow Reef",
+          "aliases": [],
+          "references": [
+            "https://en.wikipedia.org/wiki/Rainbow_Reef"
+          ],
+          "evidence": "Named real feature or institution and public-name spelling in the linked source; supplementary to complete eligible gazetteer classes."
+        },
+        {
+          "label": "Andros Barrier Reef",
+          "aliases": [],
+          "references": [
+            "https://en.wikipedia.org/wiki/Andros,_Bahamas"
+          ],
+          "evidence": "Named real feature or institution and public-name spelling in the linked source; supplementary to complete eligible gazetteer classes."
+        },
+        {
+          "label": "Rose Atoll",
+          "aliases": [],
+          "references": [
+            "https://en.wikipedia.org/wiki/Rose_Atoll"
+          ],
+          "evidence": "Named real feature or institution and public-name spelling in the linked source; supplementary to complete eligible gazetteer classes."
+        },
+        {
+          "label": "Turneffe Atoll",
+          "aliases": [],
+          "references": [
+            "https://en.wikipedia.org/wiki/Turneffe_Atoll"
+          ],
+          "evidence": "Named real feature or institution and public-name spelling in the linked source; supplementary to complete eligible gazetteer classes."
+        }
+      ],
+      "merges": [],
+      "actualShortNames": [
+        "K2"
+      ],
+      "family": "world",
+      "buildStage": "reviewable-candidate"
+    },
+    {
+      "key": "capes-headlands",
+      "prompt": "Name a real named cape or headland.",
+      "familiar": [
+        "Cape of Good Hope",
+        "Cape Horn",
+        "Cape Cod",
+        "Cape Canaveral",
+        "Cape Hatteras",
+        "Cape Fear",
+        "Cape Lookout",
+        "Cape Flattery",
+        "Cape Disappointment",
+        "Cape Agulhas",
+        "Cape Point",
+        "North Cape",
+        "Cape Finisterre",
+        "Cape Roca",
+        "Cape St Vincent",
+        "Land's End",
+        "Dungeness",
+        "Beachy Head",
+        "Lizard Point",
+        "Dunnet Head",
+        "St Abb's Head",
+        "Mull of Kintyre",
+        "Mull of Galloway",
+        "Cape Byron",
+        "Cape York",
+        "Cape Tribulation",
+        "Cape Reinga",
+        "Cape Leeuwin",
+        "Cape Naturaliste",
+        "Cape Farewell",
+        "Point Reyes",
+        "Point Conception"
+      ],
+      "exclude": [
+        "Superman cape",
+        "Cape Town",
+        "Cape",
+        "Headland"
+      ],
+      "review": "Whole global named-feature concept, not one question per country, subtype, property or label. Source classification and ordinary public names still require explicit review.",
+      "id": "authored-capes-headlands",
+      "concept": "capes-headlands",
+      "geoSources": [
+        "capes-headlands"
+      ],
+      "listSources": [],
+      "rare": "Cape Kamenjak",
+      "scope": "Real named capes, headlands and projecting points of land count, including lake headlands. A city containing the word Cape does not qualify merely because of its name.",
+      "references": [
+        "https://download.geonames.org/export/dump/",
+        "https://download.geonames.org/export/dump/featureCodes_en.txt"
+      ],
+      "holds": {},
+      "aliases": {
+        "Cabo Fisterra": [
+          "Cape Finisterre",
+          "Cape Fisterra"
+        ],
+        "Cabo da Roca": [
+          "Cape Roca"
+        ],
+        "Cabo de Sao Vicente": [
+          "Cape St Vincent",
+          "Cape St. Vincent"
+        ],
+        "Saint Abbs Head": [
+          "St Abb's Head",
+          "St Abbs Head"
+        ],
+        "Rt Kamenjak": [
+          "Cape Kamenjak"
+        ]
+      },
+      "additions": [],
+      "merges": [],
+      "actualShortNames": [
+        "K2"
+      ],
+      "family": "world",
+      "buildStage": "reviewable-candidate"
+    },
+    {
+      "key": "botanic-gardens",
+      "prompt": "Name a real garden, botanical garden or arboretum.",
+      "familiar": [
+        "Kew Gardens",
+        "Singapore Botanic Gardens",
+        "Butchart Gardens",
+        "Gardens of Versailles",
+        "Huntington Botanical Gardens",
+        "Kenrokuen",
+        "Rikugien",
+        "Claude Monet Gardens",
+        "Dumbarton Oaks Gardens",
+        "Shalimar Gardens",
+        "Nishat Bagh",
+        "Yuyuan Garden",
+        "Gardens by the Bay",
+        "Royal Botanic Garden Edinburgh",
+        "Brooklyn Botanic Garden",
+        "Missouri Botanical Garden",
+        "United States Botanic Garden",
+        "Kirstenbosch National Botanical Garden",
+        "Sissinghurst Castle Garden",
+        "Great Dixter",
+        "Bodnant Garden",
+        "Wisley",
+        "Rosemoor",
+        "Harlow Carr",
+        "Hyde Hall",
+        "Trebah Garden",
+        "Lost Gardens of Heligan",
+        "Keukenhof",
+        "Villa d'Este",
+        "Majorelle Garden",
+        "Montreal Botanical Garden",
+        "Sarah P. Duke Gardens",
+        "JC Raulston Arboretum",
+        "Airlie Gardens",
+        "Elizabethan Gardens",
+        "North Carolina Botanical Garden",
+        "Biltmore Gardens"
+      ],
+      "exclude": [
+        "Garden of Eden",
+        "Hogwarts greenhouses",
+        "Garden",
+        "Botanical garden"
+      ],
+      "review": "Whole global named-feature concept, not one question per country, subtype, property or label. Source classification and ordinary public names still require explicit review.",
+      "id": "authored-botanic-gardens",
+      "concept": "botanic-gardens",
+      "geoSources": [
+        "botanic-gardens"
+      ],
+      "listSources": [
+        "List_of_botanical_gardens",
+        "List_of_gardens"
+      ],
+      "rare": "Garden of Cosmic Speculation",
+      "scope": "Real named gardens, botanical gardens, arboretums and established garden complexes or garden estates count. Fictional gardens and an ordinary private address without a named garden do not count.",
+      "references": [
+        "https://download.geonames.org/export/dump/",
+        "https://download.geonames.org/export/dump/featureCodes_en.txt",
+        "https://en.wikipedia.org/wiki/List_of_botanical_gardens",
+        "https://en.wikipedia.org/wiki/List_of_gardens",
+        "https://en.wikipedia.org/wiki/Kew_Gardens",
+        "https://en.wikipedia.org/wiki/The_Huntington",
+        "https://en.wikipedia.org/wiki/Kenroku-en",
+        "https://en.wikipedia.org/wiki/Rikugi-en",
+        "https://en.wikipedia.org/wiki/Fondation_Monet_in_Giverny",
+        "https://en.wikipedia.org/wiki/Dumbarton_Oaks",
+        "https://en.wikipedia.org/wiki/Yu_Garden",
+        "https://en.wikipedia.org/wiki/Gardens_by_the_Bay",
+        "https://en.wikipedia.org/wiki/Royal_Botanic_Garden_Edinburgh",
+        "https://en.wikipedia.org/wiki/Missouri_Botanical_Garden",
+        "https://en.wikipedia.org/wiki/United_States_Botanic_Garden",
+        "https://en.wikipedia.org/wiki/Sissinghurst_Castle_Garden",
+        "https://en.wikipedia.org/wiki/Great_Dixter",
+        "https://en.wikipedia.org/wiki/Trebah",
+        "https://en.wikipedia.org/wiki/Sarah_P._Duke_Gardens",
+        "https://en.wikipedia.org/wiki/JC_Raulston_Arboretum",
+        "https://en.wikipedia.org/wiki/Airlie_Gardens",
+        "https://en.wikipedia.org/wiki/Elizabethan_Gardens",
+        "https://en.wikipedia.org/wiki/North_Carolina_Botanical_Garden",
+        "https://en.wikipedia.org/wiki/Biltmore_Estate",
+        "https://en.wikipedia.org/wiki/Garden_of_Cosmic_Speculation",
+        "https://www.rhs.org.uk/groups-and-travel-trade/gardens"
+      ],
+      "holds": {
+        "Melbourne parks and gardens": "Index or country/place listing, not an individual named garden. A location alone does not prove a garden.",
+        "The African Fan Palms": "Index or country/place listing, not an individual named garden. A location alone does not prove a garden.",
+        "National Herbarium, Islamabad": "Index or country/place listing, not an individual named garden. A location alone does not prove a garden.",
+        "Palestine Museum of Natural History": "Index or country/place listing, not an individual named garden. A location alone does not prove a garden."
+      },
+      "aliases": {
+        "Kirstenbosch National Botanical Gardens": [
+          "Kirstenbosch National Botanical Garden"
+        ],
+        "RHS Garden, Wisley": [
+          "Wisley",
+          "RHS Wisley",
+          "RHS Garden Wisley"
+        ],
+        "The Lost Gardens of Heligan": [
+          "Lost Gardens of Heligan"
+        ]
+      },
+      "additions": [
+        {
+          "label": "Kew Gardens",
+          "aliases": [
+            "Royal Botanic Gardens Kew"
+          ],
+          "references": [
+            "https://en.wikipedia.org/wiki/Kew_Gardens"
+          ],
+          "evidence": "Named real feature or institution and public-name spelling in the linked source; supplementary to complete eligible gazetteer classes."
+        },
+        {
+          "label": "Huntington Botanical Gardens",
+          "aliases": [
+            "Huntington Gardens",
+            "The Huntington Botanical Gardens"
+          ],
+          "references": [
+            "https://en.wikipedia.org/wiki/The_Huntington"
+          ],
+          "evidence": "Named real feature or institution and public-name spelling in the linked source; supplementary to complete eligible gazetteer classes."
+        },
+        {
+          "label": "Kenrokuen",
+          "aliases": [
+            "Kenroku-en"
+          ],
+          "references": [
+            "https://en.wikipedia.org/wiki/Kenroku-en"
+          ],
+          "evidence": "Named real feature or institution and public-name spelling in the linked source; supplementary to complete eligible gazetteer classes."
+        },
+        {
+          "label": "Rikugien",
+          "aliases": [
+            "Rikugi-en"
+          ],
+          "references": [
+            "https://en.wikipedia.org/wiki/Rikugi-en"
+          ],
+          "evidence": "Named real feature or institution and public-name spelling in the linked source; supplementary to complete eligible gazetteer classes."
+        },
+        {
+          "label": "Claude Monet Gardens",
+          "aliases": [
+            "Monet's Garden",
+            "Monet Garden",
+            "Giverny Gardens"
+          ],
+          "references": [
+            "https://en.wikipedia.org/wiki/Fondation_Monet_in_Giverny"
+          ],
+          "evidence": "Named real feature or institution and public-name spelling in the linked source; supplementary to complete eligible gazetteer classes."
+        },
+        {
+          "label": "Dumbarton Oaks Gardens",
+          "aliases": [
+            "Dumbarton Oaks Garden"
+          ],
+          "references": [
+            "https://en.wikipedia.org/wiki/Dumbarton_Oaks"
+          ],
+          "evidence": "Named real feature or institution and public-name spelling in the linked source; supplementary to complete eligible gazetteer classes."
+        },
+        {
+          "label": "Yuyuan Garden",
+          "aliases": [
+            "Yu Garden",
+            "Yuyuan"
+          ],
+          "references": [
+            "https://en.wikipedia.org/wiki/Yu_Garden"
+          ],
+          "evidence": "Named real feature or institution and public-name spelling in the linked source; supplementary to complete eligible gazetteer classes."
+        },
+        {
+          "label": "Gardens by the Bay",
+          "aliases": [],
+          "references": [
+            "https://en.wikipedia.org/wiki/Gardens_by_the_Bay"
+          ],
+          "evidence": "Named real feature or institution and public-name spelling in the linked source; supplementary to complete eligible gazetteer classes."
+        },
+        {
+          "label": "Royal Botanic Garden Edinburgh",
+          "aliases": [
+            "Edinburgh Botanic Garden"
+          ],
+          "references": [
+            "https://en.wikipedia.org/wiki/Royal_Botanic_Garden_Edinburgh"
+          ],
+          "evidence": "Named real feature or institution and public-name spelling in the linked source; supplementary to complete eligible gazetteer classes."
+        },
+        {
+          "label": "Missouri Botanical Garden",
+          "aliases": [
+            "Shaw's Garden"
+          ],
+          "references": [
+            "https://en.wikipedia.org/wiki/Missouri_Botanical_Garden"
+          ],
+          "evidence": "Named real feature or institution and public-name spelling in the linked source; supplementary to complete eligible gazetteer classes."
+        },
+        {
+          "label": "United States Botanic Garden",
+          "aliases": [
+            "US Botanic Garden",
+            "U.S. Botanic Garden"
+          ],
+          "references": [
+            "https://en.wikipedia.org/wiki/United_States_Botanic_Garden"
+          ],
+          "evidence": "Named real feature or institution and public-name spelling in the linked source; supplementary to complete eligible gazetteer classes."
+        },
+        {
+          "label": "Sissinghurst Castle Garden",
+          "aliases": [
+            "Sissinghurst Garden"
+          ],
+          "references": [
+            "https://en.wikipedia.org/wiki/Sissinghurst_Castle_Garden"
+          ],
+          "evidence": "Named real feature or institution and public-name spelling in the linked source; supplementary to complete eligible gazetteer classes."
+        },
+        {
+          "label": "Great Dixter",
+          "aliases": [
+            "Great Dixter Garden"
+          ],
+          "references": [
+            "https://en.wikipedia.org/wiki/Great_Dixter"
+          ],
+          "evidence": "Named real feature or institution and public-name spelling in the linked source; supplementary to complete eligible gazetteer classes."
+        },
+        {
+          "label": "Trebah Garden",
+          "aliases": [
+            "Trebah"
+          ],
+          "references": [
+            "https://en.wikipedia.org/wiki/Trebah"
+          ],
+          "evidence": "Named real feature or institution and public-name spelling in the linked source; supplementary to complete eligible gazetteer classes."
+        },
+        {
+          "label": "Sarah P. Duke Gardens",
+          "aliases": [
+            "Duke Gardens"
+          ],
+          "references": [
+            "https://en.wikipedia.org/wiki/Sarah_P._Duke_Gardens"
+          ],
+          "evidence": "Named real feature or institution and public-name spelling in the linked source; supplementary to complete eligible gazetteer classes."
+        },
+        {
+          "label": "JC Raulston Arboretum",
+          "aliases": [
+            "J. C. Raulston Arboretum"
+          ],
+          "references": [
+            "https://en.wikipedia.org/wiki/JC_Raulston_Arboretum"
+          ],
+          "evidence": "Named real feature or institution and public-name spelling in the linked source; supplementary to complete eligible gazetteer classes."
+        },
+        {
+          "label": "Airlie Gardens",
+          "aliases": [],
+          "references": [
+            "https://en.wikipedia.org/wiki/Airlie_Gardens"
+          ],
+          "evidence": "Named real feature or institution and public-name spelling in the linked source; supplementary to complete eligible gazetteer classes."
+        },
+        {
+          "label": "Elizabethan Gardens",
+          "aliases": [
+            "The Elizabethan Gardens"
+          ],
+          "references": [
+            "https://en.wikipedia.org/wiki/Elizabethan_Gardens"
+          ],
+          "evidence": "Named real feature or institution and public-name spelling in the linked source; supplementary to complete eligible gazetteer classes."
+        },
+        {
+          "label": "North Carolina Botanical Garden",
+          "aliases": [],
+          "references": [
+            "https://en.wikipedia.org/wiki/North_Carolina_Botanical_Garden"
+          ],
+          "evidence": "Named real feature or institution and public-name spelling in the linked source; supplementary to complete eligible gazetteer classes."
+        },
+        {
+          "label": "Biltmore Gardens",
+          "aliases": [
+            "Biltmore Estate Gardens"
+          ],
+          "references": [
+            "https://en.wikipedia.org/wiki/Biltmore_Estate"
+          ],
+          "evidence": "Named real feature or institution and public-name spelling in the linked source; supplementary to complete eligible gazetteer classes."
+        },
+        {
+          "label": "Garden of Cosmic Speculation",
+          "aliases": [],
+          "references": [
+            "https://en.wikipedia.org/wiki/Garden_of_Cosmic_Speculation"
+          ],
+          "evidence": "Named real feature or institution and public-name spelling in the linked source; supplementary to complete eligible gazetteer classes."
+        },
+        {
+          "label": "RHS Garden Rosemoor",
+          "aliases": [
+            "Rosemoor",
+            "RHS Rosemoor"
+          ],
+          "references": [
+            "https://www.rhs.org.uk/groups-and-travel-trade/gardens"
+          ],
+          "evidence": "Named real feature or institution and public-name spelling in the linked source; supplementary to complete eligible gazetteer classes."
+        },
+        {
+          "label": "RHS Garden Harlow Carr",
+          "aliases": [
+            "Harlow Carr",
+            "RHS Harlow Carr"
+          ],
+          "references": [
+            "https://www.rhs.org.uk/groups-and-travel-trade/gardens"
+          ],
+          "evidence": "Named real feature or institution and public-name spelling in the linked source; supplementary to complete eligible gazetteer classes."
+        },
+        {
+          "label": "RHS Garden Hyde Hall",
+          "aliases": [
+            "Hyde Hall",
+            "RHS Hyde Hall"
+          ],
+          "references": [
+            "https://www.rhs.org.uk/groups-and-travel-trade/gardens"
+          ],
+          "evidence": "Named real feature or institution and public-name spelling in the linked source; supplementary to complete eligible gazetteer classes."
+        },
+        {
+          "label": "RHS Garden Bridgewater",
+          "aliases": [
+            "Bridgewater",
+            "RHS Bridgewater"
+          ],
+          "references": [
+            "https://www.rhs.org.uk/groups-and-travel-trade/gardens"
+          ],
+          "evidence": "Named real feature or institution and public-name spelling in the linked source; supplementary to complete eligible gazetteer classes."
+        }
+      ],
+      "merges": [],
+      "actualShortNames": [
+        "K2"
+      ],
+      "family": "world",
+      "buildStage": "reviewable-candidate"
+    },
+    {
+      "key": "valleys-canyons-gorges",
+      "prompt": "Name a real valley, canyon or gorge.",
+      "familiar": [
+        "Death Valley",
+        "Yosemite Valley",
+        "Napa Valley",
+        "Silicon Valley",
+        "Shenandoah Valley",
+        "San Fernando Valley",
+        "San Joaquin Valley",
+        "Central Valley",
+        "Rift Valley",
+        "Great Rift Valley",
+        "Jordan Valley",
+        "Bekaa Valley",
+        "Hunza Valley",
+        "Kashmir Valley",
+        "Kathmandu Valley",
+        "Kullu Valley",
+        "Valley of the Kings",
+        "Loire Valley",
+        "Rhone Valley",
+        "Douro Valley",
+        "Aosta Valley",
+        "Barossa Valley",
+        "Hunter Valley",
+        "Yarra Valley",
+        "Monument Valley",
+        "Carmel Valley",
+        "Matanuska Valley",
+        "Wairau Valley",
+        "Lauterbrunnen Valley",
+        "Sacred Valley",
+        "Grand Canyon",
+        "Bryce Canyon",
+        "Antelope Canyon",
+        "Gorges du Verdon",
+        "Fish River Canyon",
+        "Colca Canyon",
+        "Copper Canyon",
+        "Cotahuasi Canyon",
+        "Blyde River Canyon",
+        "Tara River Canyon",
+        "Tiger Leaping Gorge",
+        "Yarlung Tsangpo Grand Canyon",
+        "Kali Gandaki Gorge",
+        "Itaimbezinho",
+        "Kings Canyon",
+        "Waimea Canyon",
+        "Canyon de Chelly",
+        "Black Canyon of the Gunnison",
+        "Royal Gorge",
+        "New River Gorge",
+        "Red River Gorge",
+        "Linville Gorge",
+        "Palo Duro Canyon",
+        "Hells Canyon",
+        "Samaria Gorge",
+        "Cheddar Gorge",
+        "Todgha Gorge",
+        "Wadi Ghul",
+        "Sumidero Canyon",
+        "Bicaz Gorge"
+      ],
+      "exclude": [
+        "Diagon Alley",
+        "Death Star trench",
+        "Valley",
+        "Canyon",
+        "Gorge",
+        "Taiwan"
+      ],
+      "review": "Grand Canyon was incorrectly proposed as a negative for valleys. A canyon is a type of valley; accept it and combine these overlapping concepts.",
+      "id": "authored-valleys-canyons-gorges",
+      "concept": "valleys-canyons-gorges",
+      "geoSources": [
+        "valleys",
+        "canyons-gorges"
+      ],
+      "listSources": [
+        "List_of_canyons"
+      ],
+      "rare": "Vikos Gorge",
+      "scope": "Real named valleys, canyons and gorges on Earth count. Features conventionally known by these names count, including Bryce Canyon. Fictional places and a whole country alone do not count.",
+      "references": [
+        "https://download.geonames.org/export/dump/",
+        "https://download.geonames.org/export/dump/featureCodes_en.txt",
+        "https://en.wikipedia.org/wiki/List_of_canyons",
+        "https://en.wikipedia.org/wiki/Kullu_Valley",
+        "https://en.wikipedia.org/wiki/Valley_of_the_Kings",
+        "https://en.wikipedia.org/wiki/Rh%C3%B4ne_Valley",
+        "https://en.wikipedia.org/wiki/Douro",
+        "https://en.wikipedia.org/wiki/Yarra_Valley",
+        "https://en.wikipedia.org/wiki/Wairau_Valley",
+        "https://en.wikipedia.org/wiki/Lauterbrunnen",
+        "https://en.wikipedia.org/wiki/Sacred_Valley",
+        "https://www.algonquinpark.on.ca/visit/recreational_activites/barron-canyon-trail.php",
+        "https://experienceoman.om/wp-content/uploads/2025/05/Oman-Gide-Wanderlust.pdf"
+      ],
+      "holds": {
+        "Lesotho": "A country or river included as a location in a list does not itself name the valley/canyon. Preserve the independently named canyon instead.",
+        "Mali": "A country or river included as a location in a list does not itself name the valley/canyon. Preserve the independently named canyon instead.",
+        "Namibia": "A country or river included as a location in a list does not itself name the valley/canyon. Preserve the independently named canyon instead.",
+        "Tanzania": "A country or river included as a location in a list does not itself name the valley/canyon. Preserve the independently named canyon instead.",
+        "Tunisia": "A country or river included as a location in a list does not itself name the valley/canyon. Preserve the independently named canyon instead.",
+        "Barron River (Ontario)": "A country or river included as a location in a list does not itself name the valley/canyon. Preserve the independently named canyon instead.",
+        "Taiwan": "Country link in the published list is a location, not a canyon name."
+      },
+      "aliases": {},
+      "additions": [
+        {
+          "label": "Kullu Valley",
+          "aliases": [],
+          "references": [
+            "https://en.wikipedia.org/wiki/Kullu_Valley"
+          ],
+          "evidence": "Named real feature or institution and public-name spelling in the linked source; supplementary to complete eligible gazetteer classes."
+        },
+        {
+          "label": "Valley of the Kings",
+          "aliases": [],
+          "references": [
+            "https://en.wikipedia.org/wiki/Valley_of_the_Kings"
+          ],
+          "evidence": "Named real feature or institution and public-name spelling in the linked source; supplementary to complete eligible gazetteer classes."
+        },
+        {
+          "label": "Rhone Valley",
+          "aliases": [
+            "Rhône Valley"
+          ],
+          "references": [
+            "https://en.wikipedia.org/wiki/Rh%C3%B4ne_Valley"
+          ],
+          "evidence": "Named real feature or institution and public-name spelling in the linked source; supplementary to complete eligible gazetteer classes."
+        },
+        {
+          "label": "Douro Valley",
+          "aliases": [],
+          "references": [
+            "https://en.wikipedia.org/wiki/Douro"
+          ],
+          "evidence": "Named real feature or institution and public-name spelling in the linked source; supplementary to complete eligible gazetteer classes."
+        },
+        {
+          "label": "Yarra Valley",
+          "aliases": [],
+          "references": [
+            "https://en.wikipedia.org/wiki/Yarra_Valley"
+          ],
+          "evidence": "Named real feature or institution and public-name spelling in the linked source; supplementary to complete eligible gazetteer classes."
+        },
+        {
+          "label": "Wairau Valley",
+          "aliases": [],
+          "references": [
+            "https://en.wikipedia.org/wiki/Wairau_Valley"
+          ],
+          "evidence": "Named real feature or institution and public-name spelling in the linked source; supplementary to complete eligible gazetteer classes."
+        },
+        {
+          "label": "Lauterbrunnen Valley",
+          "aliases": [],
+          "references": [
+            "https://en.wikipedia.org/wiki/Lauterbrunnen"
+          ],
+          "evidence": "Named real feature or institution and public-name spelling in the linked source; supplementary to complete eligible gazetteer classes."
+        },
+        {
+          "label": "Sacred Valley",
+          "aliases": [
+            "Sacred Valley of the Incas"
+          ],
+          "references": [
+            "https://en.wikipedia.org/wiki/Sacred_Valley"
+          ],
+          "evidence": "Named real feature or institution and public-name spelling in the linked source; supplementary to complete eligible gazetteer classes."
+        },
+        {
+          "label": "Wadi Ghul",
+          "aliases": [],
+          "references": [
+            "https://experienceoman.om/wp-content/uploads/2025/05/Oman-Gide-Wanderlust.pdf"
+          ],
+          "evidence": "Named real feature or institution and public-name spelling in the linked source; supplementary to complete eligible gazetteer classes."
+        },
+        {
+          "label": "Barron Canyon",
+          "aliases": [],
+          "references": [
+            "https://www.algonquinpark.on.ca/visit/recreational_activites/barron-canyon-trail.php"
+          ],
+          "evidence": "Named real feature or institution and public-name spelling in the linked source; supplementary to complete eligible gazetteer classes."
+        }
+      ],
+      "merges": [],
+      "actualShortNames": [
+        "K2"
+      ],
+      "family": "world",
+      "buildStage": "reviewable-candidate"
+    }
+  ],
+  "replaces": [
+    "authored-named-deserts"
+  ],
+  "note": "Explicit independently chosen whole global features. Valleys/canyons are combined, source country sections never create question IDs. Candidate classification and aliases are reviewed before separate admission."
+}

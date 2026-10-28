@@ -1,0 +1,71 @@
+{
+  "status": "Candidates require full classification, supplemental-evidence and familiar-name review before admission. No issue is waived by a large answer count.",
+  "issues": [],
+  "challenges": [
+    {
+      "question": "record-labels",
+      "checked": 71,
+      "notAssumedValid": [],
+      "missing": []
+    },
+    {
+      "question": "named-djs",
+      "checked": 69,
+      "notAssumedValid": [],
+      "missing": []
+    },
+    {
+      "question": "named-drummers",
+      "checked": 70,
+      "notAssumedValid": [
+        "Rick Savage"
+      ],
+      "missing": []
+    },
+    {
+      "question": "keyboard-instruments",
+      "checked": 58,
+      "notAssumedValid": [
+        "Sampler",
+        "Vocoder"
+      ],
+      "missing": []
+    },
+    {
+      "question": "named-airports",
+      "checked": 60,
+      "notAssumedValid": [],
+      "missing": []
+    },
+    {
+      "question": "castles-palaces",
+      "checked": 32,
+      "notAssumedValid": [],
+      "missing": []
+    },
+    {
+      "question": "named-canals",
+      "checked": 30,
+      "notAssumedValid": [],
+      "missing": []
+    },
+    {
+      "question": "archaeological-sites",
+      "checked": 51,
+      "notAssumedValid": [],
+      "missing": []
+    },
+    {
+      "question": "named-mausoleums",
+      "checked": 31,
+      "notAssumedValid": [],
+      "missing": []
+    },
+    {
+      "question": "named-waterfalls",
+      "checked": 56,
+      "notAssumedValid": [],
+      "missing": []
+    }
+  ]
+}

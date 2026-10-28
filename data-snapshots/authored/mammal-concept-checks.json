@@ -1,0 +1,56 @@
+[
+  {
+    "id": "authored-wild-cat-kinds",
+    "publisherVersion": "2.5",
+    "sourceSpecies": 45,
+    "canonicalAnswers": 46,
+    "familiarChecks": 28,
+    "sourceCsvSha256": "0d07a7e9409712fa86c1e3afadcf4c67bf4f9e16d5693a878e11ec1bf6860493",
+    "rareAnchor": "Flat-headed Cat"
+  },
+  {
+    "id": "authored-wild-canid-kinds",
+    "publisherVersion": "2.5",
+    "sourceSpecies": 39,
+    "canonicalAnswers": 43,
+    "familiarChecks": 28,
+    "sourceCsvSha256": "0d07a7e9409712fa86c1e3afadcf4c67bf4f9e16d5693a878e11ec1bf6860493",
+    "rareAnchor": "Warrah"
+  },
+  {
+    "id": "authored-weasel-family-animals",
+    "publisherVersion": "2.5",
+    "sourceSpecies": 72,
+    "canonicalAnswers": 77,
+    "familiarChecks": 26,
+    "sourceCsvSha256": "0d07a7e9409712fa86c1e3afadcf4c67bf4f9e16d5693a878e11ec1bf6860493",
+    "rareAnchor": "Cuc Phuong Ferret-badger"
+  },
+  {
+    "id": "authored-deer-kinds",
+    "publisherVersion": "2.5",
+    "sourceSpecies": 61,
+    "canonicalAnswers": 65,
+    "familiarChecks": 25,
+    "sourceCsvSha256": "0d07a7e9409712fa86c1e3afadcf4c67bf4f9e16d5693a878e11ec1bf6860493",
+    "rareAnchor": "Puhoat Muntjac"
+  },
+  {
+    "id": "authored-seal-sea-lion-walrus-kinds",
+    "publisherVersion": "2.5",
+    "sourceSpecies": 37,
+    "canonicalAnswers": 40,
+    "familiarChecks": 27,
+    "sourceCsvSha256": "0d07a7e9409712fa86c1e3afadcf4c67bf4f9e16d5693a878e11ec1bf6860493",
+    "rareAnchor": "Saimaa Seal"
+  },
+  {
+    "id": "authored-whale-dolphin-porpoise-kinds",
+    "publisherVersion": "2.5",
+    "sourceSpecies": 102,
+    "canonicalAnswers": 107,
+    "familiarChecks": 31,
+    "sourceCsvSha256": "0d07a7e9409712fa86c1e3afadcf4c67bf4f9e16d5693a878e11ec1bf6860493",
+    "rareAnchor": "Spade-toothed Whale"
+  }
+]

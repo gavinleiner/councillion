@@ -1,0 +1,1 @@
+Complete eligible feature-class excerpts from GeoNames allCountries, CC BY 4.0. See ../../GEOGRAPHIC-FEATURE-SOURCE-ATTRIBUTION.md for attribution, source receipts, eligibility and name-repair methods. Factual source rows are answers, never extra questions.

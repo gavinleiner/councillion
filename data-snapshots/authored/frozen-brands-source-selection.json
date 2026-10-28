@@ -1,0 +1,45 @@
+{
+  "questionCount": 1,
+  "independentFamiliarInputs": 37,
+  "sourceFactualRows": 369,
+  "held": [
+    {
+      "label": "Karnataka Milk Federation",
+      "reason": "Corporate federation is not merged with its separately proven Nandini consumer brand."
+    },
+    {
+      "label": "Thirst Buster",
+      "reason": "Source list alone does not establish which standard fountain-beverage products are actually frozen."
+    },
+    {
+      "label": "Swisslion Group",
+      "reason": "Broad parent portfolio alone is insufficient branded frozen-product proof; no automatic child-brand propagation."
+    },
+    {
+      "label": "24 Flavors of Soft Serve",
+      "reason": "Generic machine/variety claim without verified independent brand identity."
+    },
+    {
+      "label": "Keventers Milkshake",
+      "reason": "Milkshake-only label is not proven a frozen dessert brand by list membership."
+    },
+    {
+      "label": "Slurpee Flavor Tie-Ins",
+      "reason": "Source article/category about licensing tie-ins, not an additional brand."
+    },
+    {
+      "label": "Frosty Paws",
+      "reason": "Pet frozen treats, outside this human-dessert scope."
+    },
+    {
+      "label": "Vanilla",
+      "reason": "Generic flavor, not a brand."
+    },
+    {
+      "label": "Ice cream sandwich",
+      "reason": "Generic dessert form, not a brand."
+    }
+  ],
+  "scope": "A broad human frozen-dessert brand question; no per-country, flavor or source-row prompts.",
+  "limitations": "Full visible source list sections plus primary supplements do not prove every brand ever has been captured. Indexed-only sources and failed direct requests are distinguished. Historical names are allowed; current ownership and store counts are not asserted."
+}

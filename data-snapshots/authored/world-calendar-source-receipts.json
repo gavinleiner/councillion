@@ -1,0 +1,652 @@
+[
+  {
+    "sourceFile": "root-receipts.json",
+    "key": "award-directory",
+    "url": "https://en.wikipedia.org/wiki/Lists_of_awards",
+    "status": "unavailable-no-retry",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "sourceFile": "root-receipts.json",
+    "key": "holiday-main",
+    "url": "https://en.wikipedia.org/wiki/Lists_of_holidays",
+    "status": "unavailable-no-retry",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "sourceFile": "root-receipts.json",
+    "key": "multinational-holidays",
+    "url": "https://en.wikipedia.org/wiki/List_of_multinational_festivals_and_holidays",
+    "status": "unavailable-no-retry",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "sourceFile": "root-receipts.json",
+    "key": "holiday-countries",
+    "url": "https://en.wikipedia.org/wiki/List_of_holidays_by_country",
+    "status": "unavailable-no-retry",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "sourceFile": "root-receipts.json",
+    "key": "opm-holidays",
+    "url": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/",
+    "finalUrl": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/",
+    "status": "captured-not-approved",
+    "bytes": 151930,
+    "sha256": "3797368151ea3b4264f54287097a2120ea9391715fd2b6e6ab7266e4c6bf2e92"
+  },
+  {
+    "sourceFile": "root-receipts.json",
+    "key": "nobel",
+    "url": "https://www.nobelprize.org/prizes/",
+    "status": "unavailable-no-retry",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "sourceFile": "root-receipts.json",
+    "key": "oscars",
+    "url": "https://www.oscars.org/oscars",
+    "status": "unavailable-no-retry",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "sourceFile": "root-receipts.json",
+    "key": "fields",
+    "url": "https://www.mathunion.org/imu-awards/fields-medal",
+    "finalUrl": "https://www.mathunion.org/imu-awards/fields-medal",
+    "status": "captured-not-approved",
+    "bytes": 58511,
+    "sha256": "42de533880448054516f49f9a2c3ca96115b3f79afe317053d820ccd523cb57b"
+  },
+  {
+    "sourceFile": "root-receipts.json",
+    "key": "abel",
+    "url": "https://abelprize.no/",
+    "finalUrl": "https://abelprize.no/",
+    "status": "captured-not-approved",
+    "bytes": 110193,
+    "sha256": "ceed2dc1ab0722803a48a8d8f8dd15c2cbb8c5c7cf681bb2b6a03c26fbc32e4f"
+  },
+  {
+    "sourceFile": "root-receipts.json",
+    "key": "booker",
+    "url": "https://thebookerprizes.com/",
+    "status": "unavailable-no-retry",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "sourceFile": "root-receipts.json",
+    "key": "un-observances",
+    "url": "https://www.un.org/en/observances/list-days-weeks",
+    "status": "unavailable-no-retry",
+    "error": "Web tool direct open returned403; not retried through another endpoint or header."
+  },
+  {
+    "sourceFile": "secondary-primary-receipts.json",
+    "key": "film-awards",
+    "url": "https://en.wikipedia.org/wiki/List_of_film_awards",
+    "status": "unavailable-no-retry",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "sourceFile": "secondary-primary-receipts.json",
+    "key": "literary-awards",
+    "url": "https://en.wikipedia.org/wiki/List_of_literary_awards",
+    "status": "unavailable-no-retry",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "sourceFile": "secondary-primary-receipts.json",
+    "key": "sport-awards",
+    "url": "https://en.wikipedia.org/wiki/List_of_sport_awards",
+    "status": "unavailable-no-retry",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "sourceFile": "secondary-primary-receipts.json",
+    "key": "music-awards",
+    "url": "https://en.wikipedia.org/wiki/List_of_music_awards",
+    "status": "unavailable-no-retry",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "sourceFile": "secondary-primary-receipts.json",
+    "key": "television-awards",
+    "url": "https://en.wikipedia.org/wiki/List_of_television_awards",
+    "status": "unavailable-no-retry",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "sourceFile": "secondary-primary-receipts.json",
+    "key": "mathematics-awards",
+    "url": "https://en.wikipedia.org/wiki/List_of_mathematics_awards",
+    "status": "unavailable-no-retry",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "sourceFile": "secondary-primary-receipts.json",
+    "key": "civil-awards",
+    "url": "https://en.wikipedia.org/wiki/List_of_civil_awards_and_decorations",
+    "status": "unavailable-no-retry",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "sourceFile": "secondary-primary-receipts.json",
+    "key": "game-awards",
+    "url": "https://en.wikipedia.org/wiki/List_of_game_awards",
+    "status": "unavailable-no-retry",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "sourceFile": "secondary-primary-receipts.json",
+    "key": "hindu-festivals",
+    "url": "https://en.wikipedia.org/wiki/List_of_Hindu_festivals",
+    "status": "unavailable-no-retry",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "sourceFile": "secondary-primary-receipts.json",
+    "key": "jewish-holidays",
+    "url": "https://en.wikipedia.org/wiki/Jewish_holidays",
+    "status": "unavailable-no-retry",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "sourceFile": "secondary-primary-receipts.json",
+    "key": "buddhist-holidays",
+    "url": "https://en.wikipedia.org/wiki/Buddhist_holidays",
+    "status": "unavailable-no-retry",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "sourceFile": "secondary-primary-receipts.json",
+    "key": "islamic-holidays",
+    "url": "https://en.wikipedia.org/wiki/Islamic_holidays",
+    "status": "unavailable-no-retry",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "sourceFile": "secondary-primary-receipts.json",
+    "key": "japanese-festivals",
+    "url": "https://en.wikipedia.org/wiki/Japanese_festivals",
+    "status": "unavailable-no-retry",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "sourceFile": "secondary-primary-receipts.json",
+    "key": "filmfestivals",
+    "url": "https://en.wikipedia.org/wiki/List_of_film_festivals",
+    "status": "unavailable-no-retry",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "sourceFile": "secondary-primary-receipts.json",
+    "key": "govuk-holidays",
+    "url": "https://www.gov.uk/bank-holidays",
+    "finalUrl": "https://www.gov.uk/bank-holidays",
+    "status": "captured-not-approved",
+    "bytes": 175926,
+    "sha256": "457cb94d88113acf5dbdf130d25ecf9daccae676d7cf6d9361a4bbd0e6e8a7a6"
+  },
+  {
+    "sourceFile": "secondary-primary-receipts.json",
+    "key": "canada-holidays",
+    "url": "https://www.canada.ca/en/revenue-agency/services/tax/public-holidays.html",
+    "finalUrl": "https://www.canada.ca/en/revenue-agency/services/tax/public-holidays.html",
+    "status": "captured-not-approved",
+    "bytes": 22284,
+    "sha256": "9c95a46a8b5d89b818e7ffa4e552dc3e7748c6b2a15fcbb4b101171ed5d79fd1"
+  },
+  {
+    "sourceFile": "secondary-primary-receipts.json",
+    "key": "singapore-holidays",
+    "url": "https://www.mom.gov.sg/employment-practices/public-holidays",
+    "finalUrl": "https://www.mom.gov.sg/employment-practices/public-holidays",
+    "status": "captured-not-approved",
+    "bytes": 87485,
+    "sha256": "488cc461716f5f55819b5398b9444e4fb65b8f39d4df2c7ad52a44c317292c75"
+  },
+  {
+    "sourceFile": "secondary-primary-receipts.json",
+    "key": "hongkong-holidays",
+    "url": "https://www.gov.hk/en/about/abouthk/holiday/",
+    "finalUrl": "https://www.gov.hk/en/about/abouthk/holiday/",
+    "status": "captured-not-approved",
+    "bytes": 81039,
+    "sha256": "bbdc9e3f2abf37d43aafcc680d523e04f0ef256cc26d54fe5814f95eff030e18"
+  },
+  {
+    "sourceFile": "secondary-primary-receipts.json",
+    "key": "unesco-days",
+    "url": "https://www.unesco.org/en/days",
+    "finalUrl": "https://www.unesco.org/en/days",
+    "status": "captured-not-approved",
+    "bytes": 270002,
+    "sha256": "95f04a53c1f837b42f80bf305e067ce1fc970ebde49f7e2bc6ce4b430a45beae"
+  },
+  {
+    "sourceFile": "secondary-primary-receipts.json",
+    "key": "grammy",
+    "url": "https://www.grammy.com/awards",
+    "status": "unavailable-no-retry",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "sourceFile": "secondary-primary-receipts.json",
+    "key": "emmy",
+    "url": "https://www.televisionacademy.com/awards",
+    "finalUrl": "https://www.televisionacademy.com/awards",
+    "status": "captured-not-approved",
+    "bytes": 327381,
+    "sha256": "f7a26fee762a00f1240fd12e0d209976d7862c74285e53b562ae6942d3fbdbb6"
+  },
+  {
+    "sourceFile": "secondary-primary-receipts.json",
+    "key": "tony",
+    "url": "https://www.tonyawards.com/about/",
+    "status": "unavailable-no-retry",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "sourceFile": "secondary-primary-receipts.json",
+    "key": "newbery",
+    "url": "https://www.ala.org/alsc/awardsgrants/bookmedia/newbery",
+    "finalUrl": "https://www.ala.org/alsc/awardsgrants/bookmedia/newbery",
+    "status": "captured-not-approved",
+    "bytes": 277884,
+    "sha256": "f8851072d2393d4fcbf08c96199dd0203cfa6b033f7df7524f4f01a2c672a996"
+  },
+  {
+    "sourceFile": "secondary-primary-receipts.json",
+    "key": "caldecott",
+    "url": "https://www.ala.org/alsc/awardsgrants/bookmedia/caldecott",
+    "finalUrl": "https://www.ala.org/alsc/awardsgrants/bookmedia/caldecott",
+    "status": "captured-not-approved",
+    "bytes": 280841,
+    "sha256": "97c205174cf2f0724697e605f50c01f646a0042effb3f6d32c1297d490580091"
+  },
+  {
+    "sourceFile": "secondary-primary-receipts.json",
+    "key": "carnegie-book",
+    "url": "https://yotocarnegies.co.uk/about-the-awards/",
+    "status": "unavailable-no-retry",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "sourceFile": "secondary-primary-receipts.json",
+    "key": "carnegie-hero",
+    "url": "https://www.carnegiehero.org/about-the-fund/",
+    "finalUrl": "https://www.carnegiehero.org/about/mission/",
+    "status": "captured-not-approved",
+    "bytes": 65045,
+    "sha256": "4e769b1f9dd8560f6d3ffd341fe34a5ddac7d2e3977b4bd3b4f5b7156bcdcd36"
+  },
+  {
+    "sourceFile": "secondary-primary-receipts.json",
+    "key": "turing",
+    "url": "https://amturing.acm.org/",
+    "status": "unavailable-no-retry",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "sourceFile": "secondary-primary-receipts.json",
+    "key": "lasker",
+    "url": "https://laskerfoundation.org/awards/",
+    "status": "unavailable-no-retry",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "sourceFile": "secondary-primary-receipts.json",
+    "key": "presidential-medal",
+    "url": "https://www.archives.gov/federal-register/codification/executive-order/11085.html",
+    "status": "unavailable-no-retry",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "sourceFile": "secondary-primary-receipts.json",
+    "key": "medal-honor",
+    "url": "https://www.cmohs.org/medal",
+    "status": "unavailable-no-retry",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "sourceFile": "secondary-primary-receipts.json",
+    "key": "heisman",
+    "url": "https://www.heisman.com/about-the-heisman/",
+    "status": "unavailable-no-retry",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "sourceFile": "secondary-primary-receipts.json",
+    "key": "nba-trophies",
+    "url": "https://www.nba.com/news/nba-unveils-new-trophies-to-honor-75th-anniversary-season",
+    "status": "unavailable-no-retry",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "sourceFile": "secondary-primary-receipts.json",
+    "key": "hugo",
+    "url": "https://www.thehugoawards.org/about/",
+    "finalUrl": "https://www.thehugoawards.org/about/",
+    "status": "captured-not-approved",
+    "bytes": 56275,
+    "sha256": "458d652a4a7d16815a1353d9bfcb5e7df513863c7efdabdbcff9463c4ba7782d"
+  },
+  {
+    "sourceFile": "secondary-primary-receipts.json",
+    "key": "nebula",
+    "url": "https://nebulas.sfwa.org/about-the-nebulas/",
+    "status": "unavailable-no-retry",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "sourceFile": "secondary-primary-receipts.json",
+    "key": "bram-stoker",
+    "url": "https://www.thebramstokerawards.com/about-the-awards/",
+    "finalUrl": "https://www.thebramstokerawards.com/about-the-awards/",
+    "status": "captured-not-approved",
+    "bytes": 61670,
+    "sha256": "a285e8073179c0d231573d29c08bf19be9b989de097823a15a0515025d3153af"
+  },
+  {
+    "sourceFile": "secondary-primary-receipts.json",
+    "key": "edgar",
+    "url": "https://edgarawards.com/about-the-edgars/",
+    "status": "unavailable-no-retry",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "sourceFile": "secondary-primary-receipts.json",
+    "key": "juno",
+    "url": "https://junoawards.ca/awards/",
+    "status": "unavailable-no-retry",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "sourceFile": "secondary-primary-receipts.json",
+    "key": "brit",
+    "url": "https://www.brits.co.uk/",
+    "status": "unavailable-no-retry",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "sourceFile": "secondary-primary-receipts.json",
+    "key": "mercury",
+    "url": "https://www.mercuryprize.com/",
+    "status": "unavailable-no-retry",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "sourceFile": "secondary-primary-receipts.json",
+    "key": "cannes",
+    "url": "https://www.festival-cannes.com/en/the-festival/palme-dor/",
+    "finalUrl": "https://www.festival-cannes.com/en/2007/palme-d-or-4-months-3-weeks-and-2-days-by-cristian-mungiu/",
+    "status": "captured-not-approved",
+    "bytes": 91493,
+    "sha256": "d4200c170f28188718788a949e0752682b0c43205776f0164548d5ebbb48b865"
+  },
+  {
+    "sourceFile": "secondary-primary-receipts.json",
+    "key": "kwanzaa",
+    "url": "https://www.officialkwanzaawebsite.org/",
+    "finalUrl": "https://www.officialkwanzaawebsite.org/",
+    "status": "captured-not-approved",
+    "bytes": 21205,
+    "sha256": "2234a580544d6c16fc122dc7683d6a7f7106bdb9463cbc984a5bf5ed5bf6e9ab"
+  },
+  {
+    "sourceFile": "secondary-primary-receipts.json",
+    "key": "oktoberfest",
+    "url": "https://www.oktoberfest.de/en",
+    "finalUrl": "https://www.oktoberfest.de/en",
+    "status": "captured-not-approved",
+    "bytes": 144752,
+    "sha256": "a3c1e7d774fd56ba54ba01bb4e2dbe09538d25ed437d3cd70d2ed08ff093dde2"
+  },
+  {
+    "sourceFile": "secondary-primary-receipts.json",
+    "key": "mardi-gras",
+    "url": "https://www.mardigrasneworleans.com/",
+    "status": "unavailable-no-retry",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "sourceFile": "linked-receipts.json",
+    "key": "unesco-complete",
+    "url": "https://www.unesco.org/en/days/list",
+    "finalUrl": "https://www.unesco.org/en/days/list",
+    "status": "captured-not-approved",
+    "bytes": 271697,
+    "sha256": "68d1fb2fbfb7a7ead24ff65a4d0f08c3791efefeba1cc76e84d533bc0228c6cf"
+  },
+  {
+    "sourceFile": "linked-receipts.json",
+    "key": "hongkong-2026",
+    "url": "https://www.gov.hk/en/about/abouthk/holiday/2026.htm",
+    "finalUrl": "https://www.gov.hk/en/about/abouthk/holiday/2026.htm",
+    "status": "captured-not-approved",
+    "bytes": 85434,
+    "sha256": "5997383be4e265ac0765b18b6a1226c5f725a7731e9aad3dd84728ade6f2c653"
+  },
+  {
+    "localReviewCapture": "indexed-civil-a.txt",
+    "access": "public-indexed-source-text-not-raw-html",
+    "bytes": 16542,
+    "sha256": "90ce48dc70bd58677568b6a7bcd25674a7324f439ea287a05112f21d2ffe6dfc",
+    "limitations": "Tool-indexed public text is distinguished from raw HTTP captures. Errors and redirects remain visible in the work receipt; failed URLs are not treated as primary proof. No login or external browser automation."
+  },
+  {
+    "localReviewCapture": "indexed-film-a.txt",
+    "access": "public-indexed-source-text-not-raw-html",
+    "bytes": 26562,
+    "sha256": "247d1ca6542393bd8ee5dafe1cbea2c831955c0e7b1b98c185af137cc086c7cc",
+    "limitations": "Tool-indexed public text is distinguished from raw HTTP captures. Errors and redirects remain visible in the work receipt; failed URLs are not treated as primary proof. No login or external browser automation."
+  },
+  {
+    "localReviewCapture": "indexed-film-b.txt",
+    "access": "public-indexed-source-text-not-raw-html",
+    "bytes": 25392,
+    "sha256": "3e43791bf206546aefceb4ba81383f1d14f64bf985f1e5832c3dce965417121b",
+    "limitations": "Tool-indexed public text is distinguished from raw HTTP captures. Errors and redirects remain visible in the work receipt; failed URLs are not treated as primary proof. No login or external browser automation."
+  },
+  {
+    "localReviewCapture": "indexed-film-c.txt",
+    "access": "public-indexed-source-text-not-raw-html",
+    "bytes": 24843,
+    "sha256": "2046117fe60d7f38148bb73ce1a55a881631af77f0668406c28a56d52eff5da7",
+    "limitations": "Tool-indexed public text is distinguished from raw HTTP captures. Errors and redirects remain visible in the work receipt; failed URLs are not treated as primary proof. No login or external browser automation."
+  },
+  {
+    "localReviewCapture": "indexed-film-d.txt",
+    "access": "public-indexed-source-text-not-raw-html",
+    "bytes": 24843,
+    "sha256": "493b9ff6bc914046bbf172bcf81c5a244c6681ed8d5a2e539b63bc007298ff39",
+    "limitations": "Tool-indexed public text is distinguished from raw HTTP captures. Errors and redirects remain visible in the work receipt; failed URLs are not treated as primary proof. No login or external browser automation."
+  },
+  {
+    "localReviewCapture": "indexed-game-a.txt",
+    "access": "public-indexed-source-text-not-raw-html",
+    "bytes": 9715,
+    "sha256": "33bca3f76284df9a35078b4e2377bd2c41404fb7b0643a711a15e33ea418478d",
+    "limitations": "Tool-indexed public text is distinguished from raw HTTP captures. Errors and redirects remain visible in the work receipt; failed URLs are not treated as primary proof. No login or external browser automation."
+  },
+  {
+    "localReviewCapture": "indexed-holiday-a.txt",
+    "access": "public-indexed-source-text-not-raw-html",
+    "bytes": 26942,
+    "sha256": "722d8a00a74a6cc3ee54d7bbac8f18364bbc375649b7b02444bcc4269844b90d",
+    "limitations": "Tool-indexed public text is distinguished from raw HTTP captures. Errors and redirects remain visible in the work receipt; failed URLs are not treated as primary proof. No login or external browser automation."
+  },
+  {
+    "localReviewCapture": "indexed-holiday-b.txt",
+    "access": "public-indexed-source-text-not-raw-html",
+    "bytes": 28067,
+    "sha256": "456a8f7c634b17c58105634438469830e16780f636f669f55df1df17a11e7e02",
+    "limitations": "Tool-indexed public text is distinguished from raw HTTP captures. Errors and redirects remain visible in the work receipt; failed URLs are not treated as primary proof. No login or external browser automation."
+  },
+  {
+    "localReviewCapture": "indexed-literary-a.txt",
+    "access": "public-indexed-source-text-not-raw-html",
+    "bytes": 27046,
+    "sha256": "357632133ff9bd721bcb2c1b66860ef7156d6ae4563095f68e965e56752d2ab4",
+    "limitations": "Tool-indexed public text is distinguished from raw HTTP captures. Errors and redirects remain visible in the work receipt; failed URLs are not treated as primary proof. No login or external browser automation."
+  },
+  {
+    "localReviewCapture": "indexed-literary-b.txt",
+    "access": "public-indexed-source-text-not-raw-html",
+    "bytes": 26465,
+    "sha256": "2e241f637aba8f8c7ef0d59b646516849791086e892f99cb38850606a0bb54c8",
+    "limitations": "Tool-indexed public text is distinguished from raw HTTP captures. Errors and redirects remain visible in the work receipt; failed URLs are not treated as primary proof. No login or external browser automation."
+  },
+  {
+    "localReviewCapture": "indexed-literary-c.txt",
+    "access": "public-indexed-source-text-not-raw-html",
+    "bytes": 25277,
+    "sha256": "192e5398eb938339518cf040c6fc21d760b15a7a54d3177304cb81f60feeebdf",
+    "limitations": "Tool-indexed public text is distinguished from raw HTTP captures. Errors and redirects remain visible in the work receipt; failed URLs are not treated as primary proof. No login or external browser automation."
+  },
+  {
+    "localReviewCapture": "indexed-literary-d.txt",
+    "access": "public-indexed-source-text-not-raw-html",
+    "bytes": 25534,
+    "sha256": "a3bf9cd5282a6661d4456607a88aacac38cae5d94767706f995bb6cc4b46964b",
+    "limitations": "Tool-indexed public text is distinguished from raw HTTP captures. Errors and redirects remain visible in the work receipt; failed URLs are not treated as primary proof. No login or external browser automation."
+  },
+  {
+    "localReviewCapture": "indexed-literary-e.txt",
+    "access": "public-indexed-source-text-not-raw-html",
+    "bytes": 26348,
+    "sha256": "7de05c6d2dc5be76d7d4a073918e79fd5e5ead1bff6939932d369ee1269a50af",
+    "limitations": "Tool-indexed public text is distinguished from raw HTTP captures. Errors and redirects remain visible in the work receipt; failed URLs are not treated as primary proof. No login or external browser automation."
+  },
+  {
+    "localReviewCapture": "indexed-math-a.txt",
+    "access": "public-indexed-source-text-not-raw-html",
+    "bytes": 35551,
+    "sha256": "d07193523f93af9e508c811cb3944fe803e2867441372acb893b0197456ef758",
+    "limitations": "Tool-indexed public text is distinguished from raw HTTP captures. Errors and redirects remain visible in the work receipt; failed URLs are not treated as primary proof. No login or external browser automation."
+  },
+  {
+    "localReviewCapture": "indexed-math-tail.txt",
+    "access": "public-indexed-source-text-not-raw-html",
+    "bytes": 34446,
+    "sha256": "fa320b894ce16a8be83a7ff705f32414716b99bec7df8e5d033473eb51be4add",
+    "limitations": "Tool-indexed public text is distinguished from raw HTTP captures. Errors and redirects remain visible in the work receipt; failed URLs are not treated as primary proof. No login or external browser automation."
+  },
+  {
+    "localReviewCapture": "indexed-math-top.txt",
+    "access": "public-indexed-source-text-not-raw-html",
+    "bytes": 33745,
+    "sha256": "c5dec42ffc816d50f7eb99afa2f3d4f519d2909094306c2c50943a09170e828d",
+    "limitations": "Tool-indexed public text is distinguished from raw HTTP captures. Errors and redirects remain visible in the work receipt; failed URLs are not treated as primary proof. No login or external browser automation."
+  },
+  {
+    "localReviewCapture": "indexed-music-a.txt",
+    "access": "public-indexed-source-text-not-raw-html",
+    "bytes": 26611,
+    "sha256": "3ab55cb260af51a2d650b15146b6043b34c683f1fc44c96af1b84a047c0029a9",
+    "limitations": "Tool-indexed public text is distinguished from raw HTTP captures. Errors and redirects remain visible in the work receipt; failed URLs are not treated as primary proof. No login or external browser automation."
+  },
+  {
+    "localReviewCapture": "indexed-music-b.txt",
+    "access": "public-indexed-source-text-not-raw-html",
+    "bytes": 25767,
+    "sha256": "6881595a7c150a2b0ee3a4aa4d0aa25a43fcd516ded05794bbdf6338eedcd9b3",
+    "limitations": "Tool-indexed public text is distinguished from raw HTTP captures. Errors and redirects remain visible in the work receipt; failed URLs are not treated as primary proof. No login or external browser automation."
+  },
+  {
+    "localReviewCapture": "indexed-music-c.txt",
+    "access": "public-indexed-source-text-not-raw-html",
+    "bytes": 25767,
+    "sha256": "c2e1d59a4fb0cc7ab9d68cab92c3c2acd4311c60f1b4ae0cbc14ceb6fdca636b",
+    "limitations": "Tool-indexed public text is distinguished from raw HTTP captures. Errors and redirects remain visible in the work receipt; failed URLs are not treated as primary proof. No login or external browser automation."
+  },
+  {
+    "localReviewCapture": "indexed-oscar-categories.txt",
+    "access": "public-indexed-source-text-not-raw-html",
+    "bytes": 17376,
+    "sha256": "c6d55059944544ac37d2ce6cb78572cdeac65a6e07760f0302bfb98c30255a85",
+    "limitations": "Tool-indexed public text is distinguished from raw HTTP captures. Errors and redirects remain visible in the work receipt; failed URLs are not treated as primary proof. No login or external browser automation."
+  },
+  {
+    "localReviewCapture": "indexed-primary-award-omissions.txt",
+    "access": "public-indexed-source-text-not-raw-html",
+    "bytes": 27255,
+    "sha256": "ad14d32aa5fe5232e09301756ba03f555de7717534c261b72887d76de4616e31",
+    "limitations": "Tool-indexed public text is distinguished from raw HTTP captures. Errors and redirects remain visible in the work receipt; failed URLs are not treated as primary proof. No login or external browser automation."
+  },
+  {
+    "localReviewCapture": "indexed-primary-calendar-omissions.txt",
+    "access": "public-indexed-source-text-not-raw-html",
+    "bytes": 27389,
+    "sha256": "33c75b4430d48af3ae2be6a6b78eb5597729fd99ec1e85ac9dfefe5437d7c616",
+    "limitations": "Tool-indexed public text is distinguished from raw HTTP captures. Errors and redirects remain visible in the work receipt; failed URLs are not treated as primary proof. No login or external browser automation."
+  },
+  {
+    "localReviewCapture": "indexed-primary-support-checks.txt",
+    "access": "public-indexed-source-text-not-raw-html",
+    "bytes": 25400,
+    "sha256": "53576fd0259b85e8dfbf800a9ecd82a1c5548b14ece2e015118e4cbf9f58ac72",
+    "limitations": "Tool-indexed public text is distinguished from raw HTTP captures. Errors and redirects remain visible in the work receipt; failed URLs are not treated as primary proof. No login or external browser automation."
+  },
+  {
+    "localReviewCapture": "indexed-sport-a.txt",
+    "access": "public-indexed-source-text-not-raw-html",
+    "bytes": 28719,
+    "sha256": "ed80e11374b59d7bf392916056bfd0bbd1e88073b79fbcb4a2d8237436ae4dc3",
+    "limitations": "Tool-indexed public text is distinguished from raw HTTP captures. Errors and redirects remain visible in the work receipt; failed URLs are not treated as primary proof. No login or external browser automation."
+  },
+  {
+    "localReviewCapture": "indexed-sport-b.txt",
+    "access": "public-indexed-source-text-not-raw-html",
+    "bytes": 28359,
+    "sha256": "60c38243bcbeb3ccc2562a2388a860aad8fd12a63ca171e5ea61ebd44c4743da",
+    "limitations": "Tool-indexed public text is distinguished from raw HTTP captures. Errors and redirects remain visible in the work receipt; failed URLs are not treated as primary proof. No login or external browser automation."
+  },
+  {
+    "localReviewCapture": "indexed-sport-tail.txt",
+    "access": "public-indexed-source-text-not-raw-html",
+    "bytes": 28359,
+    "sha256": "6b7f08cac0c3360b2aea94a9260a6dd6c1d7da28c13b483d136596eaaa511ad6",
+    "limitations": "Tool-indexed public text is distinguished from raw HTTP captures. Errors and redirects remain visible in the work receipt; failed URLs are not treated as primary proof. No login or external browser automation."
+  },
+  {
+    "localReviewCapture": "indexed-sport-top.txt",
+    "access": "public-indexed-source-text-not-raw-html",
+    "bytes": 27960,
+    "sha256": "df1b08411cb93ad4c596f3a16033e1e99dd19e300edbfbb8b405970c4783e195",
+    "limitations": "Tool-indexed public text is distinguished from raw HTTP captures. Errors and redirects remain visible in the work receipt; failed URLs are not treated as primary proof. No login or external browser automation."
+  },
+  {
+    "localReviewCapture": "indexed-tv-a.txt",
+    "access": "public-indexed-source-text-not-raw-html",
+    "bytes": 12603,
+    "sha256": "37f7b77e0e7cf077941d4642437a9f78eafcc4818dcc5beb4abd410351ed5a51",
+    "limitations": "Tool-indexed public text is distinguished from raw HTTP captures. Errors and redirects remain visible in the work receipt; failed URLs are not treated as primary proof. No login or external browser automation."
+  },
+  {
+    "review": "Two independently proposed world subjects retain all original81 familiar probes. All award rows and calendar names are answers inside TWO questions. Source roles, meaningful shared names, genuine historical renames and shared-date traps are reviewed explicitly. Dates, sponsors, artists, countries, navboxes and unsupported labels cannot approve themselves."
+  },
+  {
+    "localReviewCapture": "indexed-shared-name-checks.txt",
+    "access": "public-indexed-source-text-not-raw-html",
+    "bytes": 15167,
+    "sha256": "0beabc74c4f0a55fe0d8412bc638ae406c5908e4a5c899f23d6421fea45c4dbf",
+    "limitations": "Public indexed text or source-access error is retained honestly; not a claimed raw HTML capture. No login or external browser automation."
+  },
+  {
+    "localReviewCapture": "indexed-familiar-honors-2.txt",
+    "access": "public-indexed-source-text-not-raw-html",
+    "bytes": 16275,
+    "sha256": "20df097869680084e867abfd6f8348ae1779e7d8bd4ee8ddef07b59f679a904f",
+    "limitations": "Actual public publisher/indexed names and source errors retained; no claimed raw capture, login or browser automation."
+  },
+  {
+    "localReviewCapture": "indexed-familiar-honors.txt",
+    "access": "public-indexed-source-text-not-raw-html",
+    "bytes": 34524,
+    "sha256": "99f325e1ca63b1f4221e197b1d4a73bf70831ff8d7d27017775b74f3cb782ba5",
+    "limitations": "Actual public publisher/indexed names and source errors retained; no claimed raw capture, login or browser automation."
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "id": "authored-owl-kinds",
+    "publisherSpecies": 248,
+    "answerIdentities": 256,
+    "familiarChecks": 23
+  },
+  {
+    "id": "authored-parrot-kinds",
+    "publisherSpecies": 410,
+    "answerIdentities": 421,
+    "familiarChecks": 29
+  },
+  {
+    "id": "authored-penguin-kinds",
+    "publisherSpecies": 19,
+    "answerIdentities": 20,
+    "familiarChecks": 20
+  },
+  {
+    "id": "authored-bat-kinds",
+    "publisherSpecies": 1514,
+    "answerIdentities": 1523,
+    "familiarChecks": 25
+  }
+]

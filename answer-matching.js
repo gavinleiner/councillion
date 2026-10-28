@@ -51,6 +51,9 @@ function wordCost(a,b,context=false){
  const cost=typoDistance(a,b,limit);
  return cost<=limit&&1-cost/(Math.max(a.length,b.length)*100)>=(context ? .60 : .70)?cost:Infinity;
 }
+// Numeric version punctuation can identify different real systems (1.0 vs10).
+// Whole numeric tokens preserve that evidence only for explicitly opted-in packs.
+const numericKey=value=>normalize(value)+'\0'+(String(value).match(/\d+(?:\.\d+)*/g)??[]).join('|');
 const banks=new Map();
 function compile(pack){
  if(banks.has(pack)){const b=banks.get(pack);banks.delete(pack);banks.set(pack,b);return b;}
@@ -60,9 +63,22 @@ function compile(pack){
   if(!byLength.has(key.length))byLength.set(key.length,[]);
   byLength.get(key.length).push({key,label,answer,acronym:label!==answer.label&&/^[A-Z][A-Z0-9. -]{1,7}$/.test(label)});
  }
+ const numericExact=pack.preserveNumericTokens?new Map():null;
+ if(numericExact){
+  for(const rows of byLength.values())for(const record of rows)numericExact.set(numericKey(record.label),record.answer);
+  // Explicit public dotted-version names may collide under the usual punctuation
+  // folding. Preserve their actual case-insensitive spelling for exact matching
+  // and post-submit typo proposals, while letter-case identity exceptions stay literal.
+  for(const [label,target]of Object.entries(pack.literalAliases??{})){
+   if(!/\d/.test(label))continue;const answer=exact.get(normalize(target));if(!answer)continue;
+   numericExact.set(numericKey(label),answer);const key=normalize(label);
+   if(!byLength.has(key.length))byLength.set(key.length,[]);
+   if(!byLength.get(key.length).some(r=>r.label===label&&r.answer===answer))byLength.get(key.length).push({key,label,answer,acronym:false});
+  }
+ }
  // No generated initials: a short form must actually be a name or alias in
  // the inventory. In particular, two random letters never expand to a title.
- const b={exact,byLength};banks.set(pack,b);if(banks.size>8)banks.delete(banks.keys().next().value);return b;
+ const b={exact,byLength,numericExact};banks.set(pack,b);if(banks.size>8)banks.delete(banks.keys().next().value);return b;
 }
 function recordWords(record,pack){return record.tokens??=tokens(record.label,pack);}
 function wordIndex(bank,pack){
@@ -108,10 +124,12 @@ function bitCount(n){n-=n>>>1&0x55555555;n=(n&0x33333333)+(n>>>2&0x33333333);ret
 function grams(value){const g=new Set();for(let i=0;i<value.length-1;i++)g.add(value.slice(i,i+2));return g;}
 export function resolveAnswer(pack,input){
  const raw=String(input??'');if(raw.length>256)return {status:'missing',choices:[]};
- const bank=compile(pack),literal=pack.literalAliases?.[raw.trim()];
+ const bank=compile(pack),spelling=raw.trim();
+ const own=(map,key)=>map&&Object.hasOwn(map,key)?map[key]:null;
+ const literal=own(pack.literalAliases,spelling)??own(pack.foldedLiteralAliases,spelling.toLowerCase());
  if(literal){const answer=bank.exact.get(normalize(literal));if(answer)return {status:'exact',answer:{...answer,corrected:false},choices:[]};}
  const query=normalize(raw);if(!query)return {status:'missing',choices:[]};
- const exact=bank.exact.get(query);if(exact)return {status:'exact',answer:{...exact,corrected:false},choices:[]};
+ const exact=pack.preserveNumericTokens?bank.numericExact.get(numericKey(raw)):bank.exact.get(query);if(exact)return {status:'exact',answer:{...exact,corrected:false},choices:[]};
  if(query.length<4||pack.excludedAnswers?.some(name=>normalize(name)===query))return {status:'missing',choices:[]};
  const qt=tokens(raw,pack,true),qdigits=digits(qt),found=new Map(),checked=new Set();
  if(!qt.length)return {status:'missing',choices:[]};

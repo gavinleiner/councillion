@@ -1,0 +1,36 @@
+{
+  "source": "https://qlever.dev/api/wikidata",
+  "query": "PREFIX wd:<http://www.wikidata.org/entity/> PREFIX wdt:<http://www.wikidata.org/prop/direct/> PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#> SELECT DISTINCT ?group ?item ?name WHERE { VALUES (?group ?root) { (\"record-labels\" wd:Q18127) (\"keyboard-instruments\" wd:Q52954) (\"named-airports\" wd:Q1248784) (\"castles-palaces\" wd:Q23413) (\"castles-palaces\" wd:Q16560) (\"named-deserts\" wd:Q8514) (\"named-canals\" wd:Q12284) (\"named-waterfalls\" wd:Q34038) } ?item wdt:P31/wdt:P279* ?root; wdt:P31/wdt:P279* wd:Q14897293. OPTIONAL{?item rdfs:label ?name. FILTER(LANG(?name)=\"en\")} } LIMIT 10000",
+  "data": {
+    "head": {
+      "vars": [
+        "group",
+        "item",
+        "name"
+      ]
+    },
+    "results": {
+      "bindings": [
+        {
+          "group": {
+            "type": "literal",
+            "value": "named-deserts"
+          },
+          "item": {
+            "type": "uri",
+            "value": "http://www.wikidata.org/entity/Q912861"
+          },
+          "name": {
+            "type": "literal",
+            "value": "Desert of Paran",
+            "xml:lang": "en"
+          }
+        }
+      ]
+    },
+    "meta": {
+      "query-time-ms": 542,
+      "result-size-total": 1
+    }
+  }
+}

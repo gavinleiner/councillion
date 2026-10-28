@@ -1,0 +1,302 @@
+{
+  "fungus-kinds": {
+    "rows": [
+      {
+        "name": "cellular slime mold",
+        "synset": "cellular_slime_mold.n.01",
+        "reason": "Modern protist/oomycete/Rhizaria classification is outside true fungi."
+      },
+      {
+        "name": "clubroot fungus",
+        "synset": "clubroot_fungus.n.01",
+        "reason": "Modern protist/oomycete/Rhizaria classification is outside true fungi."
+      },
+      {
+        "name": "dictostylium",
+        "synset": "dictostylium.n.01",
+        "reason": "Modern protist/oomycete/Rhizaria classification is outside true fungi."
+      },
+      {
+        "name": "downy mildew",
+        "synset": "downy_mildew.n.01",
+        "reason": "Modern protist/oomycete/Rhizaria classification is outside true fungi."
+      },
+      {
+        "name": "onion mildew",
+        "synset": "onion_mildew.n.01",
+        "reason": "Modern protist/oomycete/Rhizaria classification is outside true fungi."
+      },
+      {
+        "name": "Phytophthora citrophthora",
+        "synset": "phytophthora_citrophthora.n.01",
+        "reason": "Modern protist/oomycete/Rhizaria classification is outside true fungi."
+      },
+      {
+        "name": "Phytophthora infestans",
+        "synset": "phytophthora_infestans.n.01",
+        "reason": "Modern protist/oomycete/Rhizaria classification is outside true fungi."
+      },
+      {
+        "name": "potato fungus",
+        "synset": "potato_fungus.n.01",
+        "reason": "Modern protist/oomycete/Rhizaria classification is outside true fungi."
+      },
+      {
+        "name": "pythium",
+        "synset": "pythium.n.01",
+        "reason": "Modern protist/oomycete/Rhizaria classification is outside true fungi."
+      },
+      {
+        "name": "slime mold",
+        "synset": "slime_mold.n.01",
+        "reason": "Modern protist/oomycete/Rhizaria classification is outside true fungi."
+      },
+      {
+        "name": "true fungus",
+        "synset": "true_fungus.n.01",
+        "reason": "Restates the question category, not a particular named fungal kind."
+      },
+      {
+        "name": "true slime mold",
+        "synset": "true_slime_mold.n.01",
+        "reason": "Modern protist/oomycete/Rhizaria classification is outside true fungi."
+      },
+      {
+        "name": "water mold",
+        "synset": "water_mold.n.01",
+        "reason": "Modern protist/oomycete/Rhizaria classification is outside true fungi."
+      },
+      {
+        "name": "white rust",
+        "synset": "white_rust.n.01",
+        "reason": "Modern protist/oomycete/Rhizaria classification is outside true fungi."
+      }
+    ],
+    "aliasHolds": {}
+  },
+  "reptile-kinds": {
+    "rows": [
+      {
+        "name": "Chronoperates paradoxus",
+        "synset": "chronoperates_paradoxus.n.01",
+        "reason": "Non-mammalian synapsid/stem-mammal classification is outside reptiles."
+      },
+      {
+        "name": "cynodont",
+        "synset": "cynodont.n.01",
+        "reason": "Non-mammalian synapsid/stem-mammal classification is outside reptiles."
+      },
+      {
+        "name": "dicynodont",
+        "synset": "dicynodont.n.01",
+        "reason": "Non-mammalian synapsid/stem-mammal classification is outside reptiles."
+      },
+      {
+        "name": "dimetrodon",
+        "synset": "dimetrodon.n.01",
+        "reason": "Non-mammalian synapsid/stem-mammal classification is outside reptiles."
+      },
+      {
+        "name": "edaphosaurus",
+        "synset": "edaphosaurus.n.01",
+        "reason": "Non-mammalian synapsid/stem-mammal classification is outside reptiles."
+      },
+      {
+        "name": "hoop snake",
+        "synset": "hoop_snake.n.01",
+        "reason": "Mythological hoop-snake sense is not a biological reptile."
+      },
+      {
+        "name": "ictodosaur",
+        "synset": "ictodosaur.n.01",
+        "reason": "Non-mammalian synapsid/stem-mammal classification is outside reptiles."
+      },
+      {
+        "name": "pelycosaur",
+        "synset": "pelycosaur.n.01",
+        "reason": "Non-mammalian synapsid/stem-mammal classification is outside reptiles."
+      },
+      {
+        "name": "synapsid",
+        "synset": "synapsid.n.01",
+        "reason": "Non-mammalian synapsid/stem-mammal classification is outside reptiles."
+      },
+      {
+        "name": "therapsid",
+        "synset": "therapsid.n.01",
+        "reason": "Non-mammalian synapsid/stem-mammal classification is outside reptiles."
+      }
+    ],
+    "aliasHolds": {
+      "green snake": [
+        "grass snake"
+      ]
+    }
+  },
+  "amphibian-kinds": {
+    "rows": [],
+    "aliasHolds": {}
+  },
+  "mollusk-kinds": {
+    "rows": [],
+    "aliasHolds": {}
+  },
+  "crustacean-kinds": {
+    "rows": [],
+    "aliasHolds": {}
+  },
+  "arachnid-kinds": {
+    "rows": [],
+    "aliasHolds": {}
+  },
+  "science-branches": {
+    "rows": [
+      {
+        "name": "algorism",
+        "synset": "algorism.n.02",
+        "reason": "Calculational technique, not an academic branch."
+      },
+      {
+        "name": "correlation",
+        "synset": "correlation.n.03",
+        "reason": "A statistical relation, technique, expression or physical action, not an independent discipline."
+      },
+      {
+        "name": "cryonics",
+        "synset": "cryonics.n.01",
+        "reason": "Pseudoscientific, discredited or speculative practice outside modern scientific discipline scope."
+      },
+      {
+        "name": "curvilinear correlation",
+        "synset": "curvilinear_correlation.n.01",
+        "reason": "A statistical relation, technique, expression or physical action, not an independent discipline."
+      },
+      {
+        "name": "decomposition",
+        "synset": "decomposition.n.01",
+        "reason": "A statistical relation, technique, expression or physical action, not an independent discipline."
+      },
+      {
+        "name": "deixis",
+        "synset": "deixis.n.01",
+        "reason": "A statistical relation, technique, expression or physical action, not an independent discipline."
+      },
+      {
+        "name": "dysgenics",
+        "synset": "dysgenics.n.01",
+        "reason": "Pseudoscientific, discredited or speculative practice outside modern scientific discipline scope."
+      },
+      {
+        "name": "eugenics",
+        "synset": "eugenics.n.01",
+        "reason": "Pseudoscientific, discredited or speculative practice outside modern scientific discipline scope."
+      },
+      {
+        "name": "first-order correlation",
+        "synset": "first-order_correlation.n.01",
+        "reason": "A statistical relation, technique, expression or physical action, not an independent discipline."
+      },
+      {
+        "name": "macrobiotics",
+        "synset": "macrobiotics.n.01",
+        "reason": "Pseudoscientific, discredited or speculative practice outside modern scientific discipline scope."
+      },
+      {
+        "name": "negative correlation",
+        "synset": "negative_correlation.n.01",
+        "reason": "A statistical relation, technique, expression or physical action, not an independent discipline."
+      },
+      {
+        "name": "partial correlation",
+        "synset": "partial_correlation.n.01",
+        "reason": "A statistical relation, technique, expression or physical action, not an independent discipline."
+      },
+      {
+        "name": "phrenology",
+        "synset": "phrenology.n.01",
+        "reason": "Pseudoscientific, discredited or speculative practice outside modern scientific discipline scope."
+      },
+      {
+        "name": "positive correlation",
+        "synset": "positive_correlation.n.01",
+        "reason": "A statistical relation, technique, expression or physical action, not an independent discipline."
+      },
+      {
+        "name": "realpolitik",
+        "synset": "realpolitik.n.01",
+        "reason": "A statistical relation, technique, expression or physical action, not an independent discipline."
+      },
+      {
+        "name": "spurious correlation",
+        "synset": "spurious_correlation.n.01",
+        "reason": "A statistical relation, technique, expression or physical action, not an independent discipline."
+      },
+      {
+        "name": "triangulation",
+        "synset": "triangulation.n.01",
+        "reason": "A statistical relation, technique, expression or physical action, not an independent discipline."
+      },
+      {
+        "name": "undercut",
+        "synset": "undercut.n.03",
+        "reason": "A statistical relation, technique, expression or physical action, not an independent discipline."
+      }
+    ],
+    "aliasHolds": {}
+  },
+  "mathematics-branches": {
+    "rows": [
+      {
+        "name": "algorism",
+        "synset": "algorism.n.02",
+        "reason": "Calculational technique, not a mathematical branch."
+      },
+      {
+        "name": "correlation",
+        "synset": "correlation.n.03",
+        "reason": "A statistical relation, technique, expression or physical action, not an independent discipline."
+      },
+      {
+        "name": "curvilinear correlation",
+        "synset": "curvilinear_correlation.n.01",
+        "reason": "A statistical relation, technique, expression or physical action, not an independent discipline."
+      },
+      {
+        "name": "decomposition",
+        "synset": "decomposition.n.01",
+        "reason": "A statistical relation, technique, expression or physical action, not an independent discipline."
+      },
+      {
+        "name": "first-order correlation",
+        "synset": "first-order_correlation.n.01",
+        "reason": "A statistical relation, technique, expression or physical action, not an independent discipline."
+      },
+      {
+        "name": "negative correlation",
+        "synset": "negative_correlation.n.01",
+        "reason": "A statistical relation, technique, expression or physical action, not an independent discipline."
+      },
+      {
+        "name": "partial correlation",
+        "synset": "partial_correlation.n.01",
+        "reason": "A statistical relation, technique, expression or physical action, not an independent discipline."
+      },
+      {
+        "name": "positive correlation",
+        "synset": "positive_correlation.n.01",
+        "reason": "A statistical relation, technique, expression or physical action, not an independent discipline."
+      },
+      {
+        "name": "spurious correlation",
+        "synset": "spurious_correlation.n.01",
+        "reason": "A statistical relation, technique, expression or physical action, not an independent discipline."
+      },
+      {
+        "name": "triangulation",
+        "synset": "triangulation.n.01",
+        "reason": "A statistical relation, technique, expression or physical action, not an independent discipline."
+      }
+    ],
+    "aliasHolds": {}
+  }
+}

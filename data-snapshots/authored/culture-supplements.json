@@ -1,0 +1,845 @@
+{
+  "actualShortNames": [
+    "L",
+    "N",
+    "TARDIS",
+    "KITT",
+    "KARR",
+    "R2-D2",
+    "C-3PO",
+    "AT-AT",
+    "AT-ST",
+    "Ecto-1",
+    "Ecto-1A",
+    "U.A.",
+    "U.A. High School",
+    "U.A. High",
+    "T2",
+    "T3",
+    "T4",
+    "T5",
+    "USS Enterprise",
+    "SS Enterprise"
+  ],
+  "fictional-detectives": {
+    "references": [
+      "https://www.wikidata.org/wiki/Wikidata:Data_access",
+      "https://qlever.dev/wikidata/",
+      "https://www.dc.com/characters/batman",
+      "https://www.dc.com/blog/2022/02/23/who-is-the-riddler",
+      "https://www.agathachristie.com/characters",
+      "https://www.sonypictures.com/movies/knivesout"
+    ],
+    "add": [
+      {
+        "name": "Inspector Gadget",
+        "aliases": []
+      },
+      {
+        "name": "Tintin",
+        "aliases": []
+      },
+      {
+        "name": "Fox Mulder",
+        "aliases": [
+          "Mulder"
+        ]
+      },
+      {
+        "name": "Joe Hardy",
+        "aliases": []
+      },
+      {
+        "name": "Frank Hardy",
+        "aliases": []
+      },
+      {
+        "name": "Jessica Fletcher",
+        "aliases": [
+          "J.B. Fletcher"
+        ]
+      },
+      {
+        "name": "Nick Wilde",
+        "aliases": []
+      },
+      {
+        "name": "Judy Hopps",
+        "aliases": []
+      },
+      {
+        "name": "Shawn Spencer",
+        "aliases": []
+      },
+      {
+        "name": "Jake Peralta",
+        "aliases": []
+      },
+      {
+        "name": "Detective Pikachu",
+        "aliases": []
+      },
+      {
+        "name": "Benoit Blanc",
+        "aliases": [
+          "Blanc"
+        ]
+      },
+      {
+        "name": "Enola Holmes",
+        "aliases": []
+      },
+      {
+        "name": "Thomas Magnum",
+        "aliases": [
+          "Magnum"
+        ]
+      },
+      {
+        "name": "Jim Rockford",
+        "aliases": []
+      },
+      {
+        "name": "Kinsey Millhone",
+        "aliases": []
+      },
+      {
+        "name": "V.I. Warshawski",
+        "aliases": []
+      },
+      {
+        "name": "Phryne Fisher",
+        "aliases": []
+      },
+      {
+        "name": "Flavia de Luce",
+        "aliases": []
+      },
+      {
+        "name": "Encyclopedia Brown",
+        "aliases": []
+      },
+      {
+        "name": "Nate the Great",
+        "aliases": []
+      },
+      {
+        "name": "Harriet the Spy",
+        "aliases": []
+      },
+      {
+        "name": "Trixie Belden",
+        "aliases": []
+      },
+      {
+        "name": "Theodore Boone",
+        "aliases": []
+      }
+    ],
+    "aliases": {
+      "Sherlock Holmes": [
+        "Holmes"
+      ],
+      "Hercule Poirot": [
+        "Poirot"
+      ],
+      "Miss Marple": [
+        "Marple"
+      ],
+      "Velma Dinkley": [
+        "Velma"
+      ],
+      "L": [
+        "L Lawliet"
+      ],
+      "Scooby-Doo": [
+        "Scooby"
+      ],
+      "Philip Marlowe": [
+        "Marlowe"
+      ],
+      "C. Auguste Dupin": [
+        "Auguste Dupin"
+      ],
+      "Inspector Lestrade": [
+        "Lestrade"
+      ],
+      "Columbo": [
+        "Lieutenant Columbo"
+      ],
+      "Adrian Monk": [
+        "Monk"
+      ],
+      "Nero Wolfe": [
+        "Wolfe"
+      ],
+      "John McClane": [
+        "McClane"
+      ]
+    },
+    "rare": "Tam Sventon"
+  },
+  "fictional-pirates": {
+    "references": [
+      "https://www.wikidata.org/wiki/Wikidata:Data_access",
+      "https://qlever.dev/wikidata/",
+      "https://en.wikipedia.org/wiki/List_of_fictional_pirates",
+      "https://www.starwars.com/databank/Hondo-Ohnaka",
+      "https://impact.disney.com/resources/pirates-of-the-caribbean-activity-packet/"
+    ],
+    "add": [
+      {
+        "name": "Captain Pugwash",
+        "aliases": []
+      },
+      {
+        "name": "Ridley",
+        "aliases": []
+      },
+      {
+        "name": "Captain Syrup",
+        "aliases": []
+      },
+      {
+        "name": "Captain K'nuckles",
+        "aliases": [
+          "Captain Knuckles"
+        ]
+      },
+      {
+        "name": "Metalbeard",
+        "aliases": [
+          "MetalBeard"
+        ]
+      },
+      {
+        "name": "Captain Harlock",
+        "aliases": [
+          "Harlock"
+        ]
+      }
+    ],
+    "aliases": {
+      "Captain Jack Sparrow": [
+        "Jack Sparrow",
+        "Sparrow"
+      ],
+      "Captain Hook": [
+        "Hook"
+      ],
+      "Hector Barbossa": [
+        "Barbossa",
+        "Captain Barbossa"
+      ],
+      "Monkey D. Luffy": [
+        "Luffy"
+      ],
+      "Princess Zelda": [
+        "Tetra"
+      ],
+      "Patchy the Pirate": [
+        "Patchy"
+      ]
+    },
+    "rare": "Alpacaman"
+  },
+  "fictional-princesses": {
+    "references": [
+      "https://www.wikidata.org/wiki/Wikidata:Data_access",
+      "https://qlever.dev/wikidata/",
+      "https://characters.disney.com/",
+      "https://www.disneyplus.com/en-gb/explore/articles/disney-princess-movies",
+      "https://princess.disney.com/"
+    ],
+    "add": [
+      {
+        "name": "Belle",
+        "aliases": [
+          "Princess Belle"
+        ]
+      },
+      {
+        "name": "Mulan",
+        "aliases": [
+          "Fa Mulan",
+          "Hua Mulan"
+        ]
+      },
+      {
+        "name": "Moana",
+        "aliases": [
+          "Vaiana"
+        ]
+      },
+      {
+        "name": "Raya",
+        "aliases": []
+      },
+      {
+        "name": "Merida",
+        "aliases": [
+          "Princess Merida"
+        ]
+      },
+      {
+        "name": "Pocahontas",
+        "aliases": []
+      },
+      {
+        "name": "Princess Celestia",
+        "aliases": [
+          "Celestia"
+        ]
+      },
+      {
+        "name": "Princess Odette",
+        "aliases": [
+          "Odette"
+        ]
+      },
+      {
+        "name": "Xena",
+        "aliases": [
+          "Xena Warrior Princess"
+        ]
+      },
+      {
+        "name": "Princess Allura",
+        "aliases": [
+          "Allura"
+        ]
+      },
+      {
+        "name": "Princess Anastasia",
+        "aliases": [
+          "Anastasia",
+          "Anya"
+        ]
+      },
+      {
+        "name": "Thumbelina",
+        "aliases": []
+      },
+      {
+        "name": "Princess Jasmine",
+        "aliases": []
+      },
+      {
+        "name": "Princess Diana",
+        "aliases": []
+      }
+    ],
+    "aliases": {
+      "Princess Leia": [
+        "Leia"
+      ],
+      "Cinderella": [
+        "Princess Cinderella"
+      ],
+      "Ariel": [
+        "Princess Ariel"
+      ],
+      "Princess Peach": [
+        "Peach"
+      ],
+      "Princess Zelda": [
+        "Zelda"
+      ],
+      "Jasmine": [
+        "Princess Jasmine"
+      ],
+      "Princess Fiona": [
+        "Fiona"
+      ],
+      "Princess Bubblegum": [
+        "Bubblegum"
+      ],
+      "Lumpy Space Princess": [
+        "Lumpy Princess"
+      ],
+      "Kida": [
+        "Princess Kida",
+        "Kidagakash"
+      ],
+      "Eilonwy": [
+        "Princess Eilonwy"
+      ],
+      "Aurora": [
+        "Princess Aurora",
+        "Sleeping Beauty"
+      ]
+    },
+    "rare": "Amalia Sheran Sharm"
+  },
+  "named-fictional-vehicles": {
+    "references": [
+      "https://www.wikidata.org/wiki/Wikidata:Data_access",
+      "https://qlever.dev/wikidata/",
+      "https://www.starwars.com/databank/",
+      "https://www.starwars.com/databank/Millennium-Falcon",
+      "https://www.doctorwho.tv/characters/tardis",
+      "https://www.ghostbusters.com/"
+    ],
+    "hold": {
+      "Q84236264": "Flux capacitor is a component, not a vehicle",
+      "Q12169191": "Time-Turner is a time-travel device worn by the user, not a vehicle",
+      "Q1195697": "Generic time machine class, not a named fictional vehicle"
+    },
+    "add": [
+      {
+        "name": "Chitty Chitty Bang Bang",
+        "aliases": [
+          "Chitty"
+        ]
+      },
+      {
+        "name": "Magic School Bus",
+        "aliases": [
+          "The Magic School Bus"
+        ]
+      },
+      {
+        "name": "Hogwarts Express",
+        "aliases": []
+      },
+      {
+        "name": "Yellow Submarine",
+        "aliases": []
+      },
+      {
+        "name": "Thunderbird 2",
+        "aliases": []
+      },
+      {
+        "name": "Thunderbird 1",
+        "aliases": []
+      },
+      {
+        "name": "Thunderbird 3",
+        "aliases": []
+      },
+      {
+        "name": "Thunderbird 4",
+        "aliases": []
+      },
+      {
+        "name": "Thunderbird 5",
+        "aliases": []
+      },
+      {
+        "name": "FAB 1",
+        "aliases": []
+      },
+      {
+        "name": "FAB 2",
+        "aliases": []
+      }
+    ],
+    "aliases": {
+      "Millennium Falcon": [
+        "The Millennium Falcon"
+      ],
+      "Ectomobile": [
+        "Ecto-1",
+        "Ecto 1",
+        "Ghostbusters car"
+      ],
+      "DeLorean time machine": [
+        "DeLorean",
+        "DeLorean Time Machine",
+        "Back to the Future DeLorean"
+      ],
+      "The Mystery Machine": [
+        "Mystery Machine"
+      ],
+      "USS Enterprise": [
+        "Enterprise"
+      ],
+      "Black Pearl": [
+        "The Black Pearl"
+      ],
+      "S. S. Minnow": [
+        "S.S. Minnow",
+        "SS Minnow"
+      ],
+      "Lightning McQueen": [
+        "McQueen"
+      ],
+      "Thomas the Tank Engine": [
+        "Thomas"
+      ],
+      "Invisible Plane": [
+        "Invisible Jet"
+      ],
+      "Pequod": [
+        "The Pequod"
+      ],
+      "Bebop": [
+        "The Bebop"
+      ]
+    },
+    "rare": "Il Tempo Gigante"
+  },
+  "fictional-schools": {
+    "references": [
+      "https://www.wikidata.org/wiki/Wikidata:Data_access",
+      "https://qlever.dev/wikidata/",
+      "https://en.wikipedia.org/wiki/List_of_fictional_schools",
+      "https://www.wbstudiotour.co.uk/press-office/wbstl-press-pack/",
+      "https://www.pixar.com/monsters-university",
+      "https://www.universalkidsresort.com/en/us/things-to-do/rides-attractions/mrs-puffs-boating-school",
+      "https://www.scholastic.ca/books/app/webroot/img/pdfs/9781338845679.pdf"
+    ],
+    "lists": [
+      "List of fictional schools"
+    ],
+    "heldListLabels": {
+      "University of Salamanca": "The magical faculty in a novel is fictional; the real university alone is not"
+    },
+    "hold": {
+      "Q100335360": "Generic school-building entry, not a name",
+      "Q127386821": "Generic School label lacks a usable identifiable institution name",
+      "Q54857444": "Generic magic-school class is not a named institution",
+      "Q123296826": "Same South Park Elementary institution already present under Q3578329"
+    },
+    "patch": {
+      "Q174097": {
+        "name": "Hogwarts School of Witchcraft and Wizardry",
+        "aliases": [
+          "Hogwarts"
+        ]
+      },
+      "Q107616453": {
+        "name": "Kamiyama High School"
+      }
+    },
+    "add": [
+      {
+        "name": "Xavier's School for Gifted Youngsters",
+        "aliases": [
+          "Xavier School",
+          "Xavier's School",
+          "Xavier Institute",
+          "Xavier's School for the Gifted",
+          "X-Mansion"
+        ]
+      },
+      {
+        "name": "Monster High",
+        "aliases": []
+      },
+      {
+        "name": "Ever After High",
+        "aliases": []
+      },
+      {
+        "name": "East High",
+        "aliases": [
+          "East High School"
+        ]
+      },
+      {
+        "name": "West Beverly Hills High",
+        "aliases": [
+          "West Beverly Hills High School"
+        ]
+      },
+      {
+        "name": "Riverdale High",
+        "aliases": [
+          "Riverdale High School"
+        ]
+      },
+      {
+        "name": "Nevermore Academy",
+        "aliases": [
+          "Nevermore"
+        ]
+      },
+      {
+        "name": "Monsters University",
+        "aliases": []
+      },
+      {
+        "name": "Greendale Community College",
+        "aliases": [
+          "Greendale"
+        ]
+      },
+      {
+        "name": "Ridgemont High",
+        "aliases": [
+          "Ridgemont High School"
+        ]
+      },
+      {
+        "name": "Rushmore Academy",
+        "aliases": [
+          "Rushmore"
+        ]
+      },
+      {
+        "name": "Abbott Elementary",
+        "aliases": [
+          "Abbott Elementary School"
+        ]
+      },
+      {
+        "name": "Degrassi",
+        "aliases": [
+          "Degrassi Community School",
+          "Degrassi High",
+          "Degrassi Junior High"
+        ]
+      },
+      {
+        "name": "Pawnee High",
+        "aliases": [
+          "Pawnee Central High School"
+        ]
+      },
+      {
+        "name": "Smallville High",
+        "aliases": [
+          "Smallville High School"
+        ]
+      },
+      {
+        "name": "Wayside School",
+        "aliases": [
+          "Wayside"
+        ]
+      },
+      {
+        "name": "Waverly Academy",
+        "aliases": [
+          "Waverly"
+        ]
+      },
+      {
+        "name": "Acme Looniversity",
+        "aliases": []
+      },
+      {
+        "name": "Angel Grove High",
+        "aliases": [
+          "Angel Grove High School"
+        ]
+      },
+      {
+        "name": "Bronson Alcott High School",
+        "aliases": [
+          "Bronson Alcott High"
+        ]
+      },
+      {
+        "name": "PCA",
+        "aliases": [
+          "Pacific Coast Academy"
+        ]
+      },
+      {
+        "name": "Hollywood Arts",
+        "aliases": [
+          "Hollywood Arts High School"
+        ]
+      },
+      {
+        "name": "Wiz Tech",
+        "aliases": []
+      },
+      {
+        "name": "Chilton",
+        "aliases": [
+          "Chilton Preparatory School"
+        ]
+      },
+      {
+        "name": "Hill Valley High School",
+        "aliases": [
+          "Hill Valley High"
+        ]
+      },
+      {
+        "name": "John Adams High School",
+        "aliases": []
+      }
+    ],
+    "aliases": {
+      "Springfield Elementary School": [
+        "Springfield Elementary"
+      ],
+      "South Park Elementary": [
+        "South Park Elementary School"
+      ],
+      "Mrs. Puff's Boating School": [
+        "Bikini Bottom Boating School",
+        "Mrs Puffs Boating School",
+        "Puffs Boating School"
+      ],
+      "U.A. High School": [
+        "U.A.",
+        "UA High",
+        "U.A. High"
+      ],
+      "Bayside High School": [
+        "Bayside High"
+      ],
+      "Sunnydale High": [
+        "Sunnydale High School"
+      ],
+      "Beauxbatons": [
+        "Beauxbatons Academy of Magic"
+      ],
+      "Durmstrang": [
+        "Durmstrang Institute for Magical Learning"
+      ],
+      "Ilvermorny": [
+        "Ilvermorny School of Witchcraft and Wizardry"
+      ]
+    },
+    "rare": "Strixhaven"
+  },
+  "heist-films": {
+    "references": [
+      "https://www.wikidata.org/wiki/Wikidata:Data_access",
+      "https://qlever.dev/wikidata/",
+      "https://en.wikipedia.org/wiki/List_of_heist_films",
+      "https://www.sonypictures.com/movies/babydriver",
+      "https://www.dreamworks.com/movies/the-bad-guys",
+      "https://www.20thcenturystudios.com/movies/fantastic-mr-fox"
+    ],
+    "lists": [
+      "List of heist films"
+    ],
+    "add": [
+      {
+        "name": "The Bad Guys",
+        "aliases": []
+      },
+      {
+        "name": "Baby Driver",
+        "aliases": []
+      },
+      {
+        "name": "Fantastic Mr. Fox",
+        "aliases": []
+      },
+      {
+        "name": "Wallace & Gromit: Vengeance Most Fowl",
+        "aliases": [
+          "Wallace and Gromit Vengeance Most Fowl",
+          "Vengeance Most Fowl"
+        ]
+      },
+      {
+        "name": "American Animals",
+        "aliases": []
+      }
+    ],
+    "aliases": {
+      "Ocean's Eleven": [
+        "Oceans Eleven",
+        "Ocean's 11"
+      ],
+      "The Italian Job": [
+        "Italian Job"
+      ],
+      "Ocean's 8": [
+        "Oceans 8",
+        "Oceans Eight"
+      ],
+      "The Wrong Trousers": [
+        "Wallace and Gromit The Wrong Trousers"
+      ]
+    },
+    "rare": "11 Harrowhouse"
+  },
+  "time-travel-films": {
+    "references": [
+      "https://www.wikidata.org/wiki/Wikidata:Data_access",
+      "https://qlever.dev/wikidata/",
+      "https://en.wikipedia.org/wiki/List_of_time_travel_works_of_fiction",
+      "https://en.wikipedia.org/wiki/List_of_films_featuring_time_loops",
+      "https://www.sonypictures.com/movies/groundhogday",
+      "https://www.marvel.com/movies/avengers-endgame"
+    ],
+    "lists": [
+      "List of time travel works of fiction",
+      "List of films featuring time loops"
+    ],
+    "add": [
+      {
+        "name": "Groundhog Day",
+        "aliases": []
+      },
+      {
+        "name": "Edge of Tomorrow",
+        "aliases": [
+          "Live Die Repeat"
+        ]
+      },
+      {
+        "name": "Looper",
+        "aliases": []
+      },
+      {
+        "name": "Avengers: Endgame",
+        "aliases": [
+          "Avengers Endgame",
+          "Endgame"
+        ]
+      },
+      {
+        "name": "Timecrimes",
+        "aliases": [
+          "Los Cronocrimenes"
+        ]
+      },
+      {
+        "name": "Donnie Darko",
+        "aliases": []
+      },
+      {
+        "name": "Palm Springs",
+        "aliases": []
+      },
+      {
+        "name": "Frequently Asked Questions About Time Travel",
+        "aliases": []
+      },
+      {
+        "name": "Free Birds",
+        "aliases": []
+      },
+      {
+        "name": "Meet the Robinsons",
+        "aliases": []
+      },
+      {
+        "name": "Twelve Monkeys",
+        "aliases": [
+          "12 Monkeys"
+        ]
+      }
+    ],
+    "aliases": {
+      "Bill & Ted's Excellent Adventure": [
+        "Bill and Ted's Excellent Adventure"
+      ],
+      "The Terminator": [
+        "Terminator"
+      ],
+      "The Time Machine": [
+        "Time Machine"
+      ],
+      "Back to the Future": [
+        "Back To The Future"
+      ],
+      "Happy Death Day": [
+        "Happy Death Day 1"
+      ]
+    },
+    "rare": "12:01 PM"
+  }
+}

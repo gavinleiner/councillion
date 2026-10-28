@@ -1,0 +1,1560 @@
+{
+  "version": 1,
+  "questions": [
+    {
+      "id": "authored-frozen-dessert-brands",
+      "concept": "frozen-dessert-brands",
+      "family": "food",
+      "topic": "Ice-cream and frozen-dessert brands",
+      "prompt": "Name an ice-cream or frozen-dessert brand.",
+      "scope": "Real current or historical ice-cream, gelato, frozen-custard, frozen-yogurt, sorbet, ice-pop and branded ice/slush treats count. Documented specialty chains, actual licensed product-line brands and store labels count. Different flavors, package sizes and unbranded desserts are not brands; neither pet food nor a company with no proven frozen-dessert product qualifies.",
+      "format": "whole-frozen-brands",
+      "rationale": "One independently proposed familiar whole subject with a documented rare tail. Actual frozen-dessert brands, specialty chains and named frozen product lines remain answers inside ONE subject. Public-name identities, real renames, current/historical scope and primary familiar-input checks are explicit. Flavors, packaging, countries and source rows do not create prompts.",
+      "familiar": [
+        "Ben & Jerry's",
+        "Häagen-Dazs",
+        "Breyers",
+        "Dreyer's",
+        "Edy's",
+        "Blue Bell",
+        "Blue Bunny",
+        "Tillamook",
+        "Talenti",
+        "Dairy Queen",
+        "Magnum",
+        "Wall's",
+        "Cornetto",
+        "Solero",
+        "Carte d'Or",
+        "Turkey Hill",
+        "Friendly's",
+        "Chapman's",
+        "Hood",
+        "Mayfield",
+        "Perry's",
+        "Graeter's",
+        "Jeni's",
+        "Salt & Straw",
+        "Van Leeuwen",
+        "Halo Top",
+        "Enlightened",
+        "Yasso",
+        "Good Humor",
+        "Popsicle",
+        "Klondike",
+        "Drumstick",
+        "Dippin' Dots",
+        "Baskin-Robbins",
+        "Cold Stone Creamery",
+        "Carvel",
+        "Rita's"
+      ],
+      "exclude": [
+        "Vanilla flavor",
+        "Frozen pizza",
+        "Snickers candy bar",
+        "Cookie dough flavor",
+        "Ice cream scoop utensil",
+        "Frosty Paws",
+        "Slurpee Flavor Tie-Ins"
+      ],
+      "references": [
+        "https://3fgroup.fi/cases",
+        "https://chapmans.ca/products/",
+        "https://corporate.aldi.us/fileadmin/fm-dam/news_and_awards/Press_Release_2018/Sundae_Shoppe_Ice_Cream_Bars_Recall_Press_Release_FINAL.pdf",
+        "https://corporate.magnumicecream.com/en/home.html",
+        "https://corporate.target.com/news-features/article/2021/03/favorite-day",
+        "https://eatenlightened.com/",
+        "https://en.wikipedia.org/wiki/List_of_frozen_dessert_brands",
+        "https://en.wikipedia.org/wiki/List_of_frozen_yogurt_companies",
+        "https://en.wikipedia.org/wiki/List_of_ice_cream_brands",
+        "https://en.wikipedia.org/wiki/List_of_ice_cream_parlor_chains",
+        "https://eng.bing.co.kr/en/company/business",
+        "https://fatboyicecream.com/",
+        "https://friendlys.com/",
+        "https://hood.com/",
+        "https://jenis.com/",
+        "https://littlemoons.com/",
+        "https://lotte.com.vn/en/brand/yukimi/",
+        "https://saltandstraw.com/",
+        "https://vanleeuwenicecream.com/",
+        "https://wellsenterprisesinc.com/new-items",
+        "https://wellsfoodservice.com/brands",
+        "https://www.bluebell.com/",
+        "https://www.carvel.com/",
+        "https://www.cbsnews.com/news/choco-taco-discontinued-klondike/",
+        "https://www.coldstonecreamery.com/",
+        "https://www.creambell.com/about/",
+        "https://www.dairyprocessing.com/articles/52-dreyers-eskimo-pie-rebranded-as-edys-pie",
+        "https://www.dairyqueen.com/en-us/",
+        "https://www.dairyqueen.com/en-us/nutrition/treats/",
+        "https://www.dippindots.com/",
+        "https://www.dunkinbrands.com/company/about/about-dunkin-brands",
+        "https://www.froneri.com/en/brands/",
+        "https://www.goodhumor.com/us/en/products.html",
+        "https://www.graeters.com/",
+        "https://www.icecream.com/us/en/brands",
+        "https://www.klondikebar.com/us/en/products/bars.html",
+        "https://www.kmfnandini.coop/en",
+        "https://www.mars.com/pl-pl/our-brands/mars-snacking",
+        "https://www.marsfoodservices.com/brands-products/ice-cream",
+        "https://www.mayfielddairy.com/",
+        "https://www.mcdonalds.com/us/en-us/full-menu/sweets-treats.html",
+        "https://www.minimelts.com/",
+        "https://www.mymochi.com/",
+        "https://www.nestle.com/brands/ice-cream",
+        "https://www.oatly.com/en-us/products/frozen-dessert",
+        "https://www.perrysicecream.com/",
+        "https://www.popsicle.com/us/en/our-story.html",
+        "https://www.prnewswire.com/news-releases/cosmic-bliss-formerly-known-as-coconut-bliss-shakes-up-the-freezer-aisle-with-the-launch-of-ultra-creamy-organic-grass-fed-dairy-ice-cream-line-301496487.html",
+        "https://www.prnewswire.com/news-releases/spring-officially-starts-at-ritas-with-free-italian-ice-giveaway-and-new-mystery-peeps-flavor-302699910.html",
+        "https://www.prnewswire.com/news/nadamoo%21/",
+        "https://www.snickers.com/ice-cream-collection",
+        "https://www.sodeliciousdairyfree.com/",
+        "https://www.sonicdrivein.com/menu/categories/sweets/",
+        "https://www.thegrocer.co.uk/news/ocado-lists-new-licktators-british-ice-cream-brand/358416.article",
+        "https://www.tillamook.com/products/ice-cream",
+        "https://www.turkeyhill.com/frozen/ice-cream",
+        "https://www.unileverfoodsolutions.co.uk/ice-cream/brands.html?gtm_latency=1",
+        "https://www.walmart.com/browse/food/great-value-ice-cream/976759_976791_1518625_8406153",
+        "https://www.wendys.com/frosty-flavors"
+      ],
+      "answers": {
+        "85": [
+          {
+            "label": "16 Handles",
+            "aliases": []
+          },
+          {
+            "label": "3 kaveria",
+            "aliases": [
+              "3 Friends",
+              "3 Vänner"
+            ]
+          },
+          {
+            "label": "Aavin",
+            "aliases": []
+          },
+          {
+            "label": "Abbott's Frozen Custard",
+            "aliases": []
+          },
+          {
+            "label": "Algida",
+            "aliases": []
+          },
+          {
+            "label": "Amorino",
+            "aliases": []
+          },
+          {
+            "label": "Ample Hills",
+            "aliases": [
+              "Ample Hills Creamery"
+            ]
+          },
+          {
+            "label": "Amy's Ice Creams",
+            "aliases": []
+          },
+          {
+            "label": "Andy's Frozen Custard",
+            "aliases": []
+          },
+          {
+            "label": "Anita Gelato",
+            "aliases": []
+          },
+          {
+            "label": "Antica Gelateria del Corso",
+            "aliases": []
+          },
+          {
+            "label": "Arun Icecreams",
+            "aliases": []
+          },
+          {
+            "label": "Austin's Homemade Ice Cream",
+            "aliases": []
+          },
+          {
+            "label": "Australian Homemade",
+            "aliases": []
+          },
+          {
+            "label": "Bambino Ice Cream",
+            "aliases": []
+          },
+          {
+            "label": "Bassetts Ice Cream",
+            "aliases": [
+              "Bassetts",
+              "Bassetts Ice"
+            ]
+          },
+          {
+            "label": "Bell Ice Cream",
+            "aliases": [
+              "Bell"
+            ]
+          },
+          {
+            "label": "Big Gay Ice Cream",
+            "aliases": []
+          },
+          {
+            "label": "Blue Ribbon Classics",
+            "aliases": []
+          },
+          {
+            "label": "Bon Ice",
+            "aliases": []
+          },
+          {
+            "label": "Bon Ice Cream",
+            "aliases": []
+          },
+          {
+            "label": "Bonnie Doon Ice Cream",
+            "aliases": []
+          },
+          {
+            "label": "Braum's",
+            "aliases": []
+          },
+          {
+            "label": "Bresler's Ice Cream",
+            "aliases": [
+              "Bresler's",
+              "Bresler's 33 Flavors"
+            ]
+          },
+          {
+            "label": "Brigham's Ice Cream",
+            "aliases": [
+              "Brigham's"
+            ]
+          },
+          {
+            "label": "Bruster's",
+            "aliases": [
+              "Bruster's Ice Cream",
+              "Bruster's Real Ice Cream"
+            ]
+          },
+          {
+            "label": "Bubbies",
+            "aliases": []
+          },
+          {
+            "label": "Bulla",
+            "aliases": []
+          },
+          {
+            "label": "Butterfinger",
+            "aliases": []
+          },
+          {
+            "label": "Cadbury",
+            "aliases": []
+          },
+          {
+            "label": "Cadwaladers",
+            "aliases": []
+          },
+          {
+            "label": "Calippo",
+            "aliases": []
+          },
+          {
+            "label": "Cargills Magic",
+            "aliases": []
+          },
+          {
+            "label": "Cauldron Ice Cream",
+            "aliases": []
+          },
+          {
+            "label": "Chemisse",
+            "aliases": []
+          },
+          {
+            "label": "Chicecream",
+            "aliases": []
+          },
+          {
+            "label": "Chilly Moo's Ice Cream Treatery",
+            "aliases": []
+          },
+          {
+            "label": "Chocolate Shoppe Ice Cream",
+            "aliases": []
+          },
+          {
+            "label": "Choctál",
+            "aliases": []
+          },
+          {
+            "label": "Ciao Bella",
+            "aliases": [
+              "Ciao Bella Gelato Company"
+            ]
+          },
+          {
+            "label": "Cold Rock Ice Creamery",
+            "aliases": []
+          },
+          {
+            "label": "Colonial Ice Cream",
+            "aliases": []
+          },
+          {
+            "label": "Coolhaus",
+            "aliases": []
+          },
+          {
+            "label": "Coppelia",
+            "aliases": []
+          },
+          {
+            "label": "Cosmic Bliss",
+            "aliases": [
+              "Coconut Bliss"
+            ]
+          },
+          {
+            "label": "Cows Creamery",
+            "aliases": [
+              "COWS"
+            ]
+          },
+          {
+            "label": "CreamBell",
+            "aliases": []
+          },
+          {
+            "label": "Creamery Novelties",
+            "aliases": [
+              "Creamery Novelties Ice Cream"
+            ]
+          },
+          {
+            "label": "Cream Stone",
+            "aliases": []
+          },
+          {
+            "label": "Crem Helado",
+            "aliases": []
+          },
+          {
+            "label": "Crunch",
+            "aliases": []
+          },
+          {
+            "label": "Dale Farm",
+            "aliases": []
+          },
+          {
+            "label": "Del Monte",
+            "aliases": []
+          },
+          {
+            "label": "Del's",
+            "aliases": []
+          },
+          {
+            "label": "Dewar's",
+            "aliases": []
+          },
+          {
+            "label": "Dickie Dee",
+            "aliases": []
+          },
+          {
+            "label": "Diplom-Is",
+            "aliases": []
+          },
+          {
+            "label": "Dole Whip",
+            "aliases": []
+          },
+          {
+            "label": "D'Onofrio",
+            "aliases": []
+          },
+          {
+            "label": "Double Rainbow",
+            "aliases": []
+          },
+          {
+            "label": "Edy's Pie",
+            "aliases": [
+              "Eskimo Pie"
+            ]
+          },
+          {
+            "label": "Elephant House",
+            "aliases": []
+          },
+          {
+            "label": "Elsie Stix",
+            "aliases": []
+          },
+          {
+            "label": "Emack & Bolio's",
+            "aliases": []
+          },
+          {
+            "label": "Eskimo",
+            "aliases": []
+          },
+          {
+            "label": "Extrême",
+            "aliases": []
+          },
+          {
+            "label": "Fab",
+            "aliases": []
+          },
+          {
+            "label": "Fan Milk",
+            "aliases": []
+          },
+          {
+            "label": "Farrell's Ice Cream Parlour",
+            "aliases": []
+          },
+          {
+            "label": "FatBoy",
+            "aliases": [
+              "FatBoy Ice Cream"
+            ]
+          },
+          {
+            "label": "Favorite Day",
+            "aliases": []
+          },
+          {
+            "label": "Feast",
+            "aliases": []
+          },
+          {
+            "label": "Fenocchio",
+            "aliases": []
+          },
+          {
+            "label": "Fieldbrook Farms",
+            "aliases": []
+          },
+          {
+            "label": "Fifty Licks",
+            "aliases": []
+          },
+          {
+            "label": "Fla-Vor-Ice",
+            "aliases": []
+          },
+          {
+            "label": "Frankie & Jo's",
+            "aliases": []
+          },
+          {
+            "label": "Freaky Ice",
+            "aliases": []
+          },
+          {
+            "label": "Freddy's Frozen Custard & Steakburgers",
+            "aliases": [
+              "Freddy's Frozen Custard"
+            ]
+          },
+          {
+            "label": "Frikom",
+            "aliases": []
+          },
+          {
+            "label": "Froneri",
+            "aliases": []
+          },
+          {
+            "label": "Frosteez Ice Cream",
+            "aliases": []
+          },
+          {
+            "label": "Froster",
+            "aliases": []
+          },
+          {
+            "label": "Frosty Boy",
+            "aliases": []
+          },
+          {
+            "label": "Full Tilt Ice Cream",
+            "aliases": []
+          },
+          {
+            "label": "GB Glace",
+            "aliases": []
+          },
+          {
+            "label": "G&D's",
+            "aliases": []
+          },
+          {
+            "label": "Gelato Italia",
+            "aliases": []
+          },
+          {
+            "label": "Giolitti",
+            "aliases": []
+          },
+          {
+            "label": "Glacio",
+            "aliases": []
+          },
+          {
+            "label": "Golden North",
+            "aliases": []
+          },
+          {
+            "label": "Golden Spoon",
+            "aliases": []
+          },
+          {
+            "label": "Golly Bar",
+            "aliases": []
+          },
+          {
+            "label": "Good Times Burgers & Frozen Custard",
+            "aliases": []
+          },
+          {
+            "label": "Grido Helado",
+            "aliases": []
+          },
+          {
+            "label": "Grom",
+            "aliases": []
+          },
+          {
+            "label": "Handel's Homemade Ice Cream & Yogurt",
+            "aliases": [
+              "Handel's",
+              "Handel's Ice Cream"
+            ]
+          },
+          {
+            "label": "Haunted House Ice Cream",
+            "aliases": []
+          },
+          {
+            "label": "Havmor",
+            "aliases": [
+              "Havmor Ice Cream"
+            ]
+          },
+          {
+            "label": "HB Ice Cream",
+            "aliases": []
+          },
+          {
+            "label": "Hennig-Olsen",
+            "aliases": [
+              "Hennig Olsen Is",
+              "Hennig-Olsen Iskremfabrikk"
+            ]
+          },
+          {
+            "label": "Herrell's Ice Cream",
+            "aliases": []
+          },
+          {
+            "label": "Hershey Creamery Company",
+            "aliases": [
+              "Hershey's Ice Cream"
+            ]
+          },
+          {
+            "label": "Hertog",
+            "aliases": []
+          },
+          {
+            "label": "High's Dairy Store",
+            "aliases": []
+          },
+          {
+            "label": "Hjem-IS",
+            "aliases": []
+          },
+          {
+            "label": "Howard Johnson's",
+            "aliases": []
+          },
+          {
+            "label": "Humboldt Creamery",
+            "aliases": []
+          },
+          {
+            "label": "I Can't Believe It's Yogurt!",
+            "aliases": []
+          },
+          {
+            "label": "ICEE",
+            "aliases": [
+              "The Icee Company"
+            ]
+          },
+          {
+            "label": "Ideal Ice Cream",
+            "aliases": []
+          },
+          {
+            "label": "Island Creamery",
+            "aliases": []
+          },
+          {
+            "label": "It's-It",
+            "aliases": [
+              "It's-It Ice Cream"
+            ]
+          },
+          {
+            "label": "Jack and Jill Ice Cream",
+            "aliases": []
+          },
+          {
+            "label": "Jahn's",
+            "aliases": []
+          },
+          {
+            "label": "Joe Delucci's",
+            "aliases": []
+          },
+          {
+            "label": "J.P. Licks",
+            "aliases": []
+          },
+          {
+            "label": "KaleidoScoops",
+            "aliases": []
+          },
+          {
+            "label": "Kaspa's",
+            "aliases": []
+          },
+          {
+            "label": "Kawartha Dairy",
+            "aliases": [
+              "Kawartha Dairy Company"
+            ]
+          },
+          {
+            "label": "Kelly's of Cornwall",
+            "aliases": [
+              "Kelly's"
+            ]
+          },
+          {
+            "label": "Kibon",
+            "aliases": []
+          },
+          {
+            "label": "Kilwins",
+            "aliases": []
+          },
+          {
+            "label": "Kinder Bueno",
+            "aliases": []
+          },
+          {
+            "label": "Kind Frozen",
+            "aliases": [
+              "Kind"
+            ]
+          },
+          {
+            "label": "Kit Kat",
+            "aliases": []
+          },
+          {
+            "label": "Kline's Dairy Bar",
+            "aliases": []
+          },
+          {
+            "label": "Kopp's Frozen Custard",
+            "aliases": []
+          },
+          {
+            "label": "Kowloon Dairy",
+            "aliases": []
+          },
+          {
+            "label": "Kwality Wall's",
+            "aliases": []
+          },
+          {
+            "label": "Kyl21",
+            "aliases": []
+          },
+          {
+            "label": "Langnese",
+            "aliases": []
+          },
+          {
+            "label": "Lappert's",
+            "aliases": []
+          },
+          {
+            "label": "Laura Secord",
+            "aliases": []
+          },
+          {
+            "label": "Ledo",
+            "aliases": []
+          },
+          {
+            "label": "Lick Me I'm Delicious",
+            "aliases": []
+          },
+          {
+            "label": "Little Jimmy's Italian Ices",
+            "aliases": []
+          },
+          {
+            "label": "Llaollao",
+            "aliases": []
+          },
+          {
+            "label": "Lovin' Scoopful",
+            "aliases": []
+          },
+          {
+            "label": "Lyons Maid",
+            "aliases": []
+          },
+          {
+            "label": "Mackie's",
+            "aliases": []
+          },
+          {
+            "label": "Mado",
+            "aliases": []
+          },
+          {
+            "label": "MaggieMoo's",
+            "aliases": [
+              "MaggieMoo's Ice Cream and Treatery"
+            ]
+          },
+          {
+            "label": "Magnolia",
+            "aliases": []
+          },
+          {
+            "label": "Maola",
+            "aliases": []
+          },
+          {
+            "label": "Marble Slab Creamery",
+            "aliases": []
+          },
+          {
+            "label": "Mars Ice Cream",
+            "aliases": [
+              "Mars"
+            ]
+          },
+          {
+            "label": "Mashti Malone's",
+            "aliases": []
+          },
+          {
+            "label": "Mauds",
+            "aliases": [
+              "Mauds Ice Creams"
+            ]
+          },
+          {
+            "label": "Maxibon",
+            "aliases": []
+          },
+          {
+            "label": "McConnell's",
+            "aliases": []
+          },
+          {
+            "label": "Meadows Frozen Custard",
+            "aliases": []
+          },
+          {
+            "label": "Meiji",
+            "aliases": []
+          },
+          {
+            "label": "Melona",
+            "aliases": []
+          },
+          {
+            "label": "Milky Mist",
+            "aliases": [
+              "Milky Mist Dairy"
+            ]
+          },
+          {
+            "label": "Milky Way Ice Cream",
+            "aliases": [
+              "Milky Way"
+            ]
+          },
+          {
+            "label": "Milma",
+            "aliases": []
+          },
+          {
+            "label": "Mini Melts",
+            "aliases": []
+          },
+          {
+            "label": "Míša",
+            "aliases": []
+          },
+          {
+            "label": "Mixue",
+            "aliases": [
+              "Mixue Ice Cream & Tea"
+            ]
+          },
+          {
+            "label": "M&M'S Ice Cream",
+            "aliases": [
+              "M and Ms Ice Cream",
+              "M&M'S"
+            ]
+          },
+          {
+            "label": "Morelli's",
+            "aliases": []
+          },
+          {
+            "label": "Mother Dairy",
+            "aliases": []
+          },
+          {
+            "label": "Mövenpick",
+            "aliases": [
+              "Movenpick Ice Cream"
+            ]
+          },
+          {
+            "label": "Mr. Green Tea",
+            "aliases": [
+              "Mr. Green Tea Ice Cream Company"
+            ]
+          },
+          {
+            "label": "Murphys Ice Cream",
+            "aliases": []
+          },
+          {
+            "label": "NadaMoo!",
+            "aliases": []
+          },
+          {
+            "label": "Nandini",
+            "aliases": []
+          },
+          {
+            "label": "Naturals Ice Cream",
+            "aliases": [
+              "Natural Ice Cream"
+            ]
+          },
+          {
+            "label": "Neilson Dairy",
+            "aliases": []
+          },
+          {
+            "label": "Nestlé",
+            "aliases": []
+          },
+          {
+            "label": "Nestlé Toll House",
+            "aliases": []
+          },
+          {
+            "label": "Nestlé Treats",
+            "aliases": []
+          },
+          {
+            "label": "Newport Creamery",
+            "aliases": []
+          },
+          {
+            "label": "New Zealand Natural",
+            "aliases": []
+          },
+          {
+            "label": "Nirula's",
+            "aliases": []
+          },
+          {
+            "label": "Nobbly Bobbly",
+            "aliases": []
+          },
+          {
+            "label": "Nuii",
+            "aliases": []
+          },
+          {
+            "label": "Nutella",
+            "aliases": []
+          },
+          {
+            "label": "Oberweis Dairy",
+            "aliases": []
+          },
+          {
+            "label": "Omoré",
+            "aliases": []
+          },
+          {
+            "label": "Orange Leaf",
+            "aliases": [
+              "Orange Leaf Frozen Yogurt"
+            ]
+          },
+          {
+            "label": "Otter Pops",
+            "aliases": []
+          },
+          {
+            "label": "Paddle Pop",
+            "aliases": []
+          },
+          {
+            "label": "Palapa Azul",
+            "aliases": []
+          },
+          {
+            "label": "Paletería La Michoacana",
+            "aliases": []
+          },
+          {
+            "label": "Pappagallo",
+            "aliases": []
+          },
+          {
+            "label": "Perfectly Baked",
+            "aliases": []
+          },
+          {
+            "label": "Pierre's",
+            "aliases": [
+              "Pierre's Ice Cream",
+              "Pierre's Ice Cream Company"
+            ]
+          },
+          {
+            "label": "Pingviini",
+            "aliases": []
+          },
+          {
+            "label": "Polar Ice Cream",
+            "aliases": []
+          },
+          {
+            "label": "Presto Ice Cream",
+            "aliases": []
+          },
+          {
+            "label": "Pudding Pop",
+            "aliases": []
+          },
+          {
+            "label": "Purity",
+            "aliases": []
+          },
+          {
+            "label": "Red Mango",
+            "aliases": []
+          },
+          {
+            "label": "Rossi's",
+            "aliases": []
+          },
+          {
+            "label": "Rowntree's",
+            "aliases": []
+          },
+          {
+            "label": "Samanco",
+            "aliases": [
+              "Bungeo Samanco"
+            ]
+          },
+          {
+            "label": "Sealtest",
+            "aliases": []
+          },
+          {
+            "label": "Selecta",
+            "aliases": []
+          },
+          {
+            "label": "Shake's Frozen Custard",
+            "aliases": []
+          },
+          {
+            "label": "Shake Shack",
+            "aliases": []
+          },
+          {
+            "label": "Signature Select",
+            "aliases": []
+          },
+          {
+            "label": "Slurpee",
+            "aliases": []
+          },
+          {
+            "label": "Slush Puppie",
+            "aliases": []
+          },
+          {
+            "label": "Smarties",
+            "aliases": []
+          },
+          {
+            "label": "Snack and a half",
+            "aliases": [
+              "Snack and a Half Ice Cream Sandwich"
+            ]
+          },
+          {
+            "label": "Snugburys",
+            "aliases": []
+          },
+          {
+            "label": "Sour Sally",
+            "aliases": []
+          },
+          {
+            "label": "Speelman's Ice Cream",
+            "aliases": []
+          },
+          {
+            "label": "Starburst Sorbet",
+            "aliases": [
+              "Starburst"
+            ]
+          },
+          {
+            "label": "Star Spangled Ice Cream",
+            "aliases": []
+          },
+          {
+            "label": "Steve's Ice Cream",
+            "aliases": []
+          },
+          {
+            "label": "Stewart's Shops",
+            "aliases": []
+          },
+          {
+            "label": "Straus Family Creamery",
+            "aliases": []
+          },
+          {
+            "label": "Strauss",
+            "aliases": []
+          },
+          {
+            "label": "Streets",
+            "aliases": []
+          },
+          {
+            "label": "Strickland's Frozen Custard",
+            "aliases": []
+          },
+          {
+            "label": "Stroh's Ice Cream",
+            "aliases": []
+          },
+          {
+            "label": "Sugar Hill Creamery",
+            "aliases": []
+          },
+          {
+            "label": "Sundae Shoppe",
+            "aliases": []
+          },
+          {
+            "label": "Sweet Frog",
+            "aliases": []
+          },
+          {
+            "label": "Sweet Republic",
+            "aliases": [
+              "Sweet Republic Ice Cream"
+            ]
+          },
+          {
+            "label": "Sweet Rose Creamery",
+            "aliases": []
+          },
+          {
+            "label": "Swensen's",
+            "aliases": []
+          },
+          {
+            "label": "Tastee-Freez",
+            "aliases": []
+          },
+          {
+            "label": "Tasti D-Lite",
+            "aliases": []
+          },
+          {
+            "label": "The Bigg Chill",
+            "aliases": []
+          },
+          {
+            "label": "Thrifty Ice Cream",
+            "aliases": []
+          },
+          {
+            "label": "Tio Rico",
+            "aliases": []
+          },
+          {
+            "label": "Tipsy Scoop",
+            "aliases": []
+          },
+          {
+            "label": "Toscanini's",
+            "aliases": []
+          },
+          {
+            "label": "Trolli Gummi Pop",
+            "aliases": []
+          },
+          {
+            "label": "Tutti Frutti Frozen Yogurt",
+            "aliases": [
+              "Tutti Frutti"
+            ]
+          },
+          {
+            "label": "Twistee Treat",
+            "aliases": []
+          },
+          {
+            "label": "Twister",
+            "aliases": []
+          },
+          {
+            "label": "Udders",
+            "aliases": []
+          },
+          {
+            "label": "United Dairy Farmers",
+            "aliases": []
+          },
+          {
+            "label": "Vadilal",
+            "aliases": []
+          },
+          {
+            "label": "Valio",
+            "aliases": []
+          },
+          {
+            "label": "Wakaberry",
+            "aliases": []
+          },
+          {
+            "label": "Wanderlust Creamery",
+            "aliases": []
+          },
+          {
+            "label": "Wendy's Milk Bar",
+            "aliases": [
+              "Wendy's Supa Sundaes"
+            ]
+          },
+          {
+            "label": "Whitey's Ice Cream",
+            "aliases": []
+          },
+          {
+            "label": "Wibbly Wobbly Wonder",
+            "aliases": []
+          },
+          {
+            "label": "Yarnell's",
+            "aliases": [
+              "Yarnell Ice Cream",
+              "Yarnell Ice Cream Co."
+            ]
+          },
+          {
+            "label": "Yoajung",
+            "aliases": []
+          },
+          {
+            "label": "Yo-Chi",
+            "aliases": []
+          },
+          {
+            "label": "Yogen Früz",
+            "aliases": []
+          },
+          {
+            "label": "Yogini Frozen Yogurt",
+            "aliases": []
+          },
+          {
+            "label": "Yogoberry",
+            "aliases": []
+          },
+          {
+            "label": "Yogurt Mountain",
+            "aliases": []
+          },
+          {
+            "label": "Ysco",
+            "aliases": []
+          },
+          {
+            "label": "Yukimi Daifuku",
+            "aliases": [
+              "Yukimi"
+            ]
+          },
+          {
+            "label": "Yumilicious",
+            "aliases": []
+          },
+          {
+            "label": "Zooper Dooper",
+            "aliases": []
+          }
+        ],
+        "60": [
+          {
+            "label": "Amul",
+            "aliases": []
+          },
+          {
+            "label": "Blizzard",
+            "aliases": [
+              "Blizzard Treat",
+              "DQ Blizzard"
+            ]
+          },
+          {
+            "label": "Bomb Pop",
+            "aliases": []
+          },
+          {
+            "label": "Choco Taco",
+            "aliases": []
+          },
+          {
+            "label": "Creamsicle",
+            "aliases": []
+          },
+          {
+            "label": "Dove Ice Cream",
+            "aliases": [
+              "Dove"
+            ]
+          },
+          {
+            "label": "Frosty",
+            "aliases": [
+              "Wendy's Frosty"
+            ]
+          },
+          {
+            "label": "Fudgsicle",
+            "aliases": []
+          },
+          {
+            "label": "Great Value",
+            "aliases": []
+          },
+          {
+            "label": "Little Moons",
+            "aliases": []
+          },
+          {
+            "label": "McFlurry",
+            "aliases": []
+          },
+          {
+            "label": "Menchie's",
+            "aliases": [
+              "Menchie's Frozen Yogurt"
+            ]
+          },
+          {
+            "label": "My/Mochi",
+            "aliases": []
+          },
+          {
+            "label": "Oatly",
+            "aliases": []
+          },
+          {
+            "label": "Oreo",
+            "aliases": []
+          },
+          {
+            "label": "Outshine",
+            "aliases": []
+          },
+          {
+            "label": "Peters Ice Cream",
+            "aliases": []
+          },
+          {
+            "label": "Pinkberry",
+            "aliases": []
+          },
+          {
+            "label": "Skinny Cow",
+            "aliases": []
+          },
+          {
+            "label": "Snickers Ice Cream",
+            "aliases": [
+              "Snickers"
+            ]
+          },
+          {
+            "label": "So Delicious",
+            "aliases": [
+              "So Delicious Dairy Free"
+            ]
+          },
+          {
+            "label": "SONIC Blast",
+            "aliases": []
+          },
+          {
+            "label": "TCBY",
+            "aliases": [
+              "The Country's Best Yogurt"
+            ]
+          },
+          {
+            "label": "Tip Top",
+            "aliases": []
+          },
+          {
+            "label": "Tofutti",
+            "aliases": [
+              "Tofutti Cuties"
+            ]
+          },
+          {
+            "label": "Twix Ice Cream",
+            "aliases": [
+              "Twix"
+            ]
+          },
+          {
+            "label": "Yogurtland",
+            "aliases": []
+          }
+        ],
+        "10": [
+          {
+            "label": "Baskin-Robbins",
+            "aliases": []
+          },
+          {
+            "label": "Ben & Jerry's",
+            "aliases": [
+              "Ben and Jerry's"
+            ]
+          },
+          {
+            "label": "Blue Bell",
+            "aliases": [
+              "Blue Bell Creameries"
+            ]
+          },
+          {
+            "label": "Breyers",
+            "aliases": [
+              "Breyers Ice Cream"
+            ]
+          },
+          {
+            "label": "Dairy Queen",
+            "aliases": [
+              "DQ"
+            ]
+          },
+          {
+            "label": "Dreyer's",
+            "aliases": [
+              "Dreyer's Grand Ice Cream",
+              "Edy's",
+              "Edy's Grand Ice Cream"
+            ]
+          },
+          {
+            "label": "Häagen-Dazs",
+            "aliases": []
+          },
+          {
+            "label": "Magnum",
+            "aliases": []
+          }
+        ],
+        "30": [
+          {
+            "label": "Blue Bunny",
+            "aliases": [
+              "Blue Bunny Ice Cream"
+            ]
+          },
+          {
+            "label": "Carte d'Or",
+            "aliases": []
+          },
+          {
+            "label": "Carvel",
+            "aliases": []
+          },
+          {
+            "label": "Chapman's",
+            "aliases": []
+          },
+          {
+            "label": "Cold Stone Creamery",
+            "aliases": [
+              "Cold Stone"
+            ]
+          },
+          {
+            "label": "Cornetto",
+            "aliases": []
+          },
+          {
+            "label": "Dippin' Dots",
+            "aliases": []
+          },
+          {
+            "label": "Drumstick",
+            "aliases": []
+          },
+          {
+            "label": "Enlightened",
+            "aliases": []
+          },
+          {
+            "label": "Friendly's",
+            "aliases": []
+          },
+          {
+            "label": "Good Humor",
+            "aliases": []
+          },
+          {
+            "label": "Graeter's",
+            "aliases": []
+          },
+          {
+            "label": "Halo Top",
+            "aliases": []
+          },
+          {
+            "label": "Hood",
+            "aliases": []
+          },
+          {
+            "label": "Jeni's",
+            "aliases": [
+              "Jeni's Splendid Ice Creams"
+            ]
+          },
+          {
+            "label": "Klondike",
+            "aliases": []
+          },
+          {
+            "label": "Mayfield",
+            "aliases": [
+              "Mayfield Creamery",
+              "Mayfield Dairy",
+              "Mayfield Dairy Farms"
+            ]
+          },
+          {
+            "label": "Perry's",
+            "aliases": [
+              "Perry's Ice Cream"
+            ]
+          },
+          {
+            "label": "Popsicle",
+            "aliases": []
+          },
+          {
+            "label": "Rita's",
+            "aliases": [
+              "Rita's Italian Ice",
+              "Rita's Italian Ice & Frozen Custard",
+              "Rita's Water Ice"
+            ]
+          },
+          {
+            "label": "Salt & Straw",
+            "aliases": []
+          },
+          {
+            "label": "Solero",
+            "aliases": []
+          },
+          {
+            "label": "Talenti",
+            "aliases": []
+          },
+          {
+            "label": "Tillamook",
+            "aliases": []
+          },
+          {
+            "label": "Turkey Hill",
+            "aliases": []
+          },
+          {
+            "label": "Van Leeuwen",
+            "aliases": [
+              "Van Leeuwen Ice Cream"
+            ]
+          },
+          {
+            "label": "Wall's",
+            "aliases": []
+          },
+          {
+            "label": "Yasso",
+            "aliases": []
+          }
+        ],
+        "100": [
+          {
+            "label": "The Licktators",
+            "aliases": []
+          }
+        ]
+      }
+    }
+  ]
+}

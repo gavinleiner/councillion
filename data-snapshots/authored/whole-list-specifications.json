@@ -1,0 +1,1121 @@
+{
+  "version": 1,
+  "questions": [
+    {
+      "key": "cheese-types",
+      "family": "food",
+      "topic": "Cheese board",
+      "prompt": "Name a type or named product of dairy cheese.",
+      "scope": "Named dairy cheeses, traditional cheese families and named processed-cheese products count. Different names for the same cheese share one answer. A dairy animal, plain milk, a manufacturer with no named cheese product, and a complete meal merely containing cheese do not count.",
+      "familiar": [
+        "Cheddar",
+        "Mozzarella",
+        "Parmesan",
+        "Brie",
+        "Gouda",
+        "Feta",
+        "Emmental",
+        "Swiss cheese",
+        "Cottage cheese",
+        "Cream cheese",
+        "Blue cheese",
+        "Stilton",
+        "Roquefort",
+        "Gorgonzola",
+        "Ricotta",
+        "Camembert",
+        "Halloumi",
+        "Manchego",
+        "Pecorino",
+        "Provolone",
+        "Monterey Jack",
+        "Colby",
+        "Pepper Jack",
+        "American cheese",
+        "Queso fresco",
+        "Cotija",
+        "Paneer",
+        "Mascarpone",
+        "Burrata",
+        "Fontina",
+        "Havarti",
+        "Limburger",
+        "Muenster",
+        "Wensleydale",
+        "Red Leicester",
+        "Edam",
+        "Gruyere",
+        "Goat cheese",
+        "Quark",
+        "Raclette",
+        "Babybel",
+        "Boursin",
+        "Velveeta",
+        "Cheez Whiz",
+        "The Laughing Cow",
+        "Pule cheese",
+        "Smoked gouda",
+        "Smoked cheddar",
+        "Sharp cheddar",
+        "White cheddar",
+        "Baby Swiss",
+        "Buffalo mozzarella",
+        "Fresh mozzarella",
+        "Asiago",
+        "Jarlsberg",
+        "Double Gloucester",
+        "Port Salut",
+        "Reblochon",
+        "Taleggio",
+        "Bel Paese",
+        "Appenzeller",
+        "Tete de Moine",
+        "Romano",
+        "Brunost",
+        "Queso blanco",
+        "Queso de bola",
+        "Oaxaca",
+        "Queso asadero",
+        "Queso de freir",
+        "Farmer cheese",
+        "Fromage frais",
+        "Fromage blanc",
+        "Neufchatel",
+        "Leerdammer",
+        "Maasdam",
+        "Bocconcini",
+        "Gjetost",
+        "Caciocavallo",
+        "Tilsit",
+        "Liptauer",
+        "Humboldt Fog",
+        "Stinking Bishop",
+        "Casu marzu",
+        "Shropshire Blue",
+        "Cheshire",
+        "Caerphilly",
+        "Lancashire",
+        "Cabrales",
+        "Mahon",
+        "Idiazabal",
+        "Caciotta",
+        "Kashkaval",
+        "Wagasi",
+        "Queso panela",
+        "Queso chihuahua",
+        "Philadelphia cream cheese",
+        "Kraft Singles",
+        "Swiss",
+        "American",
+        "Chevre"
+      ],
+      "exclude": [
+        "Milk",
+        "Butter",
+        "Yogurt",
+        "Cauliflower cheese",
+        "Abbey Cheese Company",
+        "Pizza",
+        "Allspice",
+        "Mahlep",
+        "Ardsallagh Goat Farm"
+      ],
+      "extra": [
+        "Blue cheese",
+        "Goat cheese",
+        "Swiss cheese",
+        "Parmesan",
+        "Camembert",
+        "Cheez Whiz",
+        "The Laughing Cow",
+        "Emmental",
+        "Gvina levana",
+        "Labneh",
+        "Tzfatit",
+        "Halloumi",
+        "Akkawi",
+        "Bulgarit",
+        "Kefir cheese",
+        "Kashkaval",
+        "Kasseri",
+        "Galil",
+        "Jibneh Arabieh",
+        "Smoked gouda",
+        "Smoked cheddar",
+        "Sharp cheddar",
+        "White cheddar",
+        "Fresh mozzarella",
+        "Romano cheese",
+        "Queso blanco",
+        "Queso de freir",
+        "Gjetost",
+        "Mahon cheese",
+        "Philadelphia cream cheese",
+        "Kraft Singles",
+        "Mild cheddar",
+        "Medium cheddar",
+        "Extra sharp cheddar"
+      ],
+      "aliases": {
+        "Cheddar cheese": [
+          "Cheddar"
+        ],
+        "Mozzarella": [
+          "Mozzarella cheese"
+        ],
+        "Parmesan": [
+          "Parmigiano Reggiano",
+          "Parmigiano",
+          "Parmigiano-Reggiano"
+        ],
+        "Brie": [
+          "Brie cheese"
+        ],
+        "Gouda cheese": [
+          "Gouda"
+        ],
+        "Feta": [
+          "Feta cheese"
+        ],
+        "Emmental": [
+          "Emmentaler",
+          "Emmentaler cheese",
+          "Emmental cheese"
+        ],
+        "Stilton cheese": [
+          "Stilton"
+        ],
+        "Ricotta": [
+          "Ricotta cheese"
+        ],
+        "Camembert": [
+          "Camembert cheese"
+        ],
+        "Pecorino": [
+          "Pecorino cheese"
+        ],
+        "Colby cheese": [
+          "Colby"
+        ],
+        "Colby-Jack cheese": [
+          "Colby Jack",
+          "Colby Jack cheese"
+        ],
+        "Pepper Jack cheese": [
+          "Pepper Jack"
+        ],
+        "Cotija cheese": [
+          "Cotija"
+        ],
+        "Muenster cheese": [
+          "Muenster"
+        ],
+        "Boursin cheese": [
+          "Boursin"
+        ],
+        "The Laughing Cow": [
+          "Laughing Cow",
+          "La vache qui rit"
+        ],
+        "Cheese curds": [
+          "Cheese curd"
+        ],
+        "Tyrolean grey cheese": [
+          "Tyrolean grey",
+          "Tiroler Graukase",
+          "Tiroler Graukäse"
+        ],
+        "String cheese": [
+          "String cheese refers to several different types of cheese whose manufacturing process aligns the proteins in the cheese"
+        ],
+        "Jarlsberg cheese": [
+          "Jarlsberg"
+        ],
+        "Romano cheese": [
+          "Romano"
+        ],
+        "Queso blanco": [
+          "White cheese"
+        ],
+        "Edam": [
+          "Queso de bola"
+        ],
+        "Oaxaca cheese": [
+          "Oaxaca",
+          "Quesillo Oaxaca"
+        ],
+        "Asadero cheese": [
+          "Queso asadero"
+        ],
+        "Tilsit cheese": [
+          "Tilsit",
+          "Tilsiter"
+        ],
+        "Cabrales cheese": [
+          "Cabrales",
+          "Queso Cabrales"
+        ],
+        "Mahon cheese": [
+          "Mahon",
+          "Mahón",
+          "Queso Mahon"
+        ],
+        "Idiazabal cheese": [
+          "Idiazabal",
+          "Queso Idiazábal"
+        ],
+        "Chihuahua cheese": [
+          "Queso chihuahua"
+        ],
+        "Philadelphia cream cheese": [
+          "Philadelphia",
+          "Philly cream cheese"
+        ],
+        "Swiss cheese": [
+          "Swiss"
+        ],
+        "American cheese": [
+          "American"
+        ],
+        "Goat cheese": [
+          "Chevre",
+          "Chèvre"
+        ]
+      },
+      "hold": {
+        "Cauliflower Cheese": "A dish containing cheese, not a cheese type.",
+        "Cheeses of Mexico": "Article-group heading, not one cheese.",
+        "Trentino-Alto Adige/Südtirol": "Region heading.",
+        "Abbey Cheese Company (Closed)": "Manufacturer, not a named cheese product.",
+        "The Little Milk Company": "Manufacturer, not a named cheese product.",
+        "Sumac": "Spice, not cheese.",
+        "Brânză": "Generic word for cheese, not a named type.",
+        "Ardsallagh Goat Farm": "Producer name, not a specific named cheese product.",
+        "Fivemiletown Creamery": "Producer name, not a specific named cheese product.",
+        "Bó Rua Farm": "A farm/producer label, not a named cheese product.",
+        "Glyde Farm Produce": "A producer label, not a named cheese product.",
+        "Wyke Farms": "A producer label, not a named cheese product."
+      },
+      "rare": "Pule cheese",
+      "references": [
+        "https://en.wikipedia.org/wiki/List_of_American_cheeses",
+        "https://en.wikipedia.org/wiki/List_of_Argentine_cheeses",
+        "https://en.wikipedia.org/wiki/List_of_Bosnia_and_Herzegovina_cheeses",
+        "https://en.wikipedia.org/wiki/List_of_British_cheeses",
+        "https://en.wikipedia.org/wiki/List_of_Cornish_cheeses",
+        "https://en.wikipedia.org/wiki/List_of_Dutch_cheeses",
+        "https://en.wikipedia.org/wiki/List_of_English_cheeses",
+        "https://en.wikipedia.org/wiki/List_of_French_cheeses",
+        "https://en.wikipedia.org/wiki/List_of_German_cheeses",
+        "https://en.wikipedia.org/wiki/List_of_Greek_Protected_Designations_of_Origin_cheeses",
+        "https://en.wikipedia.org/wiki/List_of_Irish_cheeses",
+        "https://en.wikipedia.org/wiki/List_of_Israeli_cheeses",
+        "https://en.wikipedia.org/wiki/List_of_Italian_DOP_cheeses",
+        "https://en.wikipedia.org/wiki/List_of_Italian_PDO_cheeses",
+        "https://en.wikipedia.org/wiki/List_of_Italian_cheeses",
+        "https://en.wikipedia.org/wiki/List_of_Norwegian_cheeses",
+        "https://en.wikipedia.org/wiki/List_of_Polish_cheeses",
+        "https://en.wikipedia.org/wiki/List_of_Spanish_cheeses",
+        "https://en.wikipedia.org/wiki/List_of_Swiss_cheeses",
+        "https://en.wikipedia.org/wiki/List_of_Syrian_cheeses",
+        "https://en.wikipedia.org/wiki/List_of_Turkish_cheeses",
+        "https://en.wikipedia.org/wiki/List_of_blue_cheeses",
+        "https://en.wikipedia.org/wiki/List_of_cheeses",
+        "https://en.wikipedia.org/wiki/List_of_goat_cheeses",
+        "https://en.wikipedia.org/wiki/List_of_goat_milk_cheeses",
+        "https://en.wikipedia.org/wiki/List_of_sheep_milk_cheeses",
+        "https://en.wikipedia.org/wiki/List_of_stretch-curd_cheeses",
+        "https://en.wikipedia.org/wiki/List_of_water_buffalo_cheeses",
+        "https://www.boursin.com/products/",
+        "https://www.kraftheinz.com/cheezwhiz",
+        "https://www.thelaughingcow.com/",
+        "https://www.tillamook.com/products/cheese",
+        "https://www.kraftheinz.com/philadelphia",
+        "https://www.kraftheinz.com/kraft-singles",
+        "https://en.wikipedia.org/wiki/Queso_blanco",
+        "https://en.wikipedia.org/wiki/Romano_cheese",
+        "https://en.wikipedia.org/wiki/Queso_frito"
+      ],
+      "deep": [
+        "Aragatsyan panir",
+        "Bachensteiner",
+        "Bouhezza",
+        "Charkassiye",
+        "Chloro",
+        "Begiunn",
+        "Caciottina",
+        "Brânză de Suhaia",
+        "Caprino della Limina",
+        "Zlatna kap"
+      ]
+    },
+    {
+      "key": "flatbread-types",
+      "family": "food",
+      "topic": "Flatbread basket",
+      "prompt": "Name a kind of flatbread.",
+      "scope": "Recognized flatbread types, named regional breads and flatbread dishes count, including leavened and unleavened types. Ordinary sandwich loaves, toppings and ingredients alone do not count.",
+      "familiar": [
+        "Naan",
+        "Pita",
+        "Tortilla",
+        "Roti",
+        "Chapati",
+        "Lavash",
+        "Paratha",
+        "Injera",
+        "Matzah",
+        "Bannock",
+        "Piadina",
+        "Focaccia",
+        "Sangak",
+        "Manakish",
+        "Lefse",
+        "Yufka",
+        "Laffa",
+        "Arepa",
+        "Pupusa",
+        "Gozleme",
+        "Khachapuri",
+        "Roti canai",
+        "Roti prata",
+        "Luchi",
+        "Bhakri",
+        "Kulcha",
+        "Papad",
+        "Bazlama",
+        "Barbari bread",
+        "Frybread"
+      ],
+      "exclude": [
+        "Baguette",
+        "Sourdough loaf",
+        "Butter",
+        "Rice",
+        "Pasta"
+      ],
+      "extra": [
+        "Roti",
+        "Injera",
+        "Tortilla",
+        "Chapati",
+        "Corn tortilla",
+        "Flour tortilla",
+        "Pide",
+        "Ramazan pidesi",
+        "İçli pide",
+        "Piadina",
+        "Barbari bread",
+        "Frybread",
+        "Khachapuri"
+      ],
+      "aliases": {
+        "Matzah": [
+          "Matzo",
+          "Matzoh"
+        ],
+        "Papadam": [
+          "Papad",
+          "Poppadom",
+          "Papadum"
+        ],
+        "Piadina romagnola": [
+          "Piadina"
+        ],
+        "Roti canai": [
+          "Roti prata"
+        ],
+        "Corn tortilla": [
+          "Tortilla, maize",
+          "Maize tortilla"
+        ],
+        "Flour tortilla": [
+          "Tortilla, wheat",
+          "Wheat tortilla"
+        ],
+        "Stuffed paratha": [
+          "Paratha, stuffed"
+        ],
+        "Gozleme": [
+          "Gözleme"
+        ],
+        "Naan": [
+          "Naan bread"
+        ],
+        "Pita": [
+          "Pitta",
+          "Pita bread"
+        ],
+        "Barbari bread": [
+          "Barbari"
+        ],
+        "Frybread": [
+          "Fry bread"
+        ]
+      },
+      "hold": {
+        "Roti canai / Roti prata": "Merged into Roti canai.",
+        "Pide / Ramazan pidesi": "Separated generic pide and actual named Ramadan variety.",
+        "Pide / İçli pide": "Separated actual named variety from generic pide."
+      },
+      "rare": "Sanchuisanda",
+      "references": [
+        "https://en.wikipedia.org/wiki/List_of_flatbreads",
+        "https://georgia.travel/khachapuri"
+      ],
+      "deep": [
+        "Carchiola",
+        "Crescentina modenese",
+        "Dhebra",
+        "Frena",
+        "Girda",
+        "Gul poli",
+        "Hamursuz",
+        "Khoshk",
+        "Korsan",
+        "Maadjouna",
+        "Mont lay bway",
+        "Ngome",
+        "Pistoccu",
+        "Tachnift",
+        "Tafarnout",
+        "Terabelesi",
+        "Zichi"
+      ]
+    },
+    {
+      "key": "pancake-dishes",
+      "family": "food",
+      "topic": "Pancake pan",
+      "prompt": "Name a pancake style or a named pancake dish.",
+      "scope": "Recognized sweet and savory pancake styles and named pancake dishes count, including potato pancakes and international griddle-batter breads. A topping alone, an unrelated pastry, or simply the category word pancake does not count.",
+      "familiar": [
+        "Crepe",
+        "Buttermilk pancake",
+        "Dutch baby",
+        "Scotch pancake",
+        "Blini",
+        "Pikelet",
+        "American pancake",
+        "English pancake",
+        "Buckwheat pancake",
+        "Scallion pancake",
+        "Potato pancake",
+        "Latke",
+        "Boxty",
+        "Banh xeo",
+        "Baghrir",
+        "Crespelle",
+        "Dosa",
+        "Injera",
+        "Flapjack",
+        "Hotcake",
+        "Dorayaki",
+        "Okonomiyaki",
+        "Poffertjes",
+        "Aebleskiver",
+        "Palacsinta",
+        "Pannekoek",
+        "Pannkaka",
+        "Cong you bing",
+        "Souffle pancake",
+        "Blueberry pancake",
+        "Chocolate chip pancake",
+        "Banana pancake"
+      ],
+      "exclude": [
+        "Maple syrup",
+        "Pancake",
+        "Croissant",
+        "Kouign-amann"
+      ],
+      "extra": [
+        "American pancake",
+        "Buttermilk pancake",
+        "English pancake",
+        "Buckwheat pancake",
+        "Scotch pancake",
+        "Crespelle",
+        "Palacsinta",
+        "Pannkaka",
+        "Souffle pancake",
+        "Blueberry pancake",
+        "Chocolate chip pancake",
+        "Banana pancake",
+        "Whole wheat pancake",
+        "Vegan pancake",
+        "Oatmeal pancake",
+        "Coconut pancake",
+        "Ricotta pancake",
+        "Lemon ricotta pancake",
+        "Pumpkin pancake",
+        "Korean pancake",
+        "Japanese pancake"
+      ],
+      "aliases": {
+        "American pancake": [
+          "Flapjack",
+          "Hotcake",
+          "Hotcakes",
+          "American pancakes"
+        ],
+        "Crêpe": [
+          "Crepe",
+          "French pancake"
+        ],
+        "Dutch baby pancake": [
+          "Dutch baby",
+          "German pancake"
+        ],
+        "Pannenkoek": [
+          "Pannekoek"
+        ],
+        "Swedish pancake": [
+          "Pannkaka"
+        ],
+        "Scallion pancake": [
+          "Cong you bing",
+          "Green onion pancake"
+        ],
+        "Latke": [
+          "Latkes"
+        ],
+        "Æbleskiver": [
+          "Aebleskiver"
+        ],
+        "Blini": [
+          "Blin",
+          "Bliny"
+        ],
+        "Souffle pancake": [
+          "Japanese souffle pancake",
+          "Soufflé pancake"
+        ],
+        "Pajeon": [
+          "Korean scallion pancake"
+        ]
+      },
+      "hold": {
+        "Kouign-amann": "Laminated pastry, not a pancake.",
+        "Bánh cuốn": "Steamed rice sheets, not pancake batter cooked on a griddle.",
+        "Suncake": "Ambiguous pastry name, not an identified pancake style."
+      },
+      "rare": "Gyabrag",
+      "references": [
+        "https://en.wikipedia.org/wiki/List_of_pancakes",
+        "https://www.kingarthurbaking.com/recipes/buttermilk-pancakes-recipe",
+        "https://www.kingarthurbaking.com/recipes/blueberry-pancakes-recipe",
+        "https://www.kingarthurbaking.com/recipes/collection/pancake-recipes"
+      ],
+      "deep": [
+        "Akok",
+        "Ashishim",
+        "Bein mont",
+        "Chataamari",
+        "Cholermus",
+        "Daral",
+        "Funkaso",
+        "Hirayachi",
+        "Kalathappam",
+        "Mont lin maya",
+        "Munini-imo",
+        "Panyalam",
+        "Pashti",
+        "Pek nga",
+        "Salukara",
+        "Scovardă",
+        "Surnoli"
+      ]
+    },
+    {
+      "key": "stew-dishes",
+      "family": "food",
+      "topic": "One pot",
+      "prompt": "Name a stew or a named stew dish.",
+      "scope": "Named stews, braised one-pot dishes and recognized ingredient-based stew styles count. Soups that are also conventionally served as stews count; a raw ingredient, drink or dry standalone food does not.",
+      "familiar": [
+        "Beef stew",
+        "Chicken stew",
+        "Vegetable stew",
+        "Irish stew",
+        "Goulash",
+        "Gumbo",
+        "Chili",
+        "Ratatouille",
+        "Beef bourguignon",
+        "Coq au vin",
+        "Cassoulet",
+        "Rendang",
+        "Lamb stew",
+        "Brunswick stew",
+        "Oxtail stew",
+        "Seafood stew",
+        "Lentil stew",
+        "Chickpea stew",
+        "Tagine",
+        "Beef stroganoff",
+        "Birria",
+        "Kare kare",
+        "Kimchi jjigae",
+        "Budae jjigae",
+        "Feijoada",
+        "Cioppino",
+        "Pozole",
+        "Caldereta",
+        "Curry",
+        "Nikujaga",
+        "Coddle",
+        "Pork stew",
+        "Fish stew",
+        "Potato stew"
+      ],
+      "exclude": [
+        "Ice cream",
+        "Cola",
+        "Raw carrot",
+        "Chocolate bar"
+      ],
+      "extra": [
+        "Beef stew",
+        "Chicken stew",
+        "Vegetable stew",
+        "Lamb stew",
+        "Seafood stew",
+        "Lentil stew",
+        "Chickpea stew",
+        "Pork stew",
+        "Fish stew",
+        "Potato stew",
+        "Turkey stew",
+        "Rabbit stew",
+        "Goat stew",
+        "Mushroom stew",
+        "Bean stew",
+        "Venison stew",
+        "Kimchi jjigae",
+        "Budae jjigae",
+        "Doenjang jjigae",
+        "Sundubu jjigae",
+        "Curry",
+        "Chicken curry",
+        "Beef curry",
+        "Vegetable curry",
+        "Green curry",
+        "Red curry",
+        "Massaman curry",
+        "Panang curry",
+        "Japanese curry",
+        "Katsu curry",
+        "Bunny chow",
+        "Kedjenou",
+        "Tavce gravce"
+      ],
+      "aliases": {
+        "Chili con carne": [
+          "Chili",
+          "Chilli con carne",
+          "Chilli"
+        ],
+        "Tajine": [
+          "Tagine"
+        ],
+        "Kaldereta": [
+          "Caldereta"
+        ],
+        "Beef bourguignon": [
+          "Boeuf bourguignon",
+          "Boeuf Bourgignon"
+        ],
+        "Coq au vin": [
+          "Chicken in wine"
+        ],
+        "Trippa alla milanese": [
+          "Trippa alla milanese ( Buseca in South America)",
+          "Buseca"
+        ],
+        "Wat": [
+          "Wat (food)",
+          "Wot"
+        ],
+        "Cozido": [
+          "Cozido / Cocido"
+        ],
+        "Cocido": [
+          "Spanish cocido"
+        ],
+        "Kare-kare": [
+          "Kare kare"
+        ],
+        "Ragout": [
+          "Ragoût"
+        ]
+      },
+      "hold": {},
+      "rare": "Dillegrout",
+      "references": [
+        "https://en.wikipedia.org/wiki/List_of_stews",
+        "https://www.bbcgoodfood.com/recipes/collection/stew-recipes",
+        "https://www.japan.travel/en/guide/curry/"
+      ],
+      "deep": [
+        "Alicot",
+        "Blindhuhn",
+        "Drokpa Katsa",
+        "Hoosh",
+        "Lunggoi Katsa",
+        "Maconochie",
+        "Molagoottal",
+        "Qoiri",
+        "Rubaboo",
+        "Sagamite",
+        "Spanish fricco",
+        "Zoervleis"
+      ]
+    },
+    {
+      "key": "web-browsers",
+      "family": "science",
+      "topic": "Browser tabs",
+      "prompt": "Name a web browser.",
+      "scope": "Actual web-browser products and families count, including historical, mobile and text browsers. A search engine, rendering engine, extension, website or operating system alone is not a browser.",
+      "familiar": [
+        "Chrome",
+        "Safari",
+        "Firefox",
+        "Edge",
+        "Opera",
+        "Brave",
+        "Internet Explorer",
+        "Chromium",
+        "Tor Browser",
+        "DuckDuckGo",
+        "Vivaldi",
+        "Arc",
+        "Samsung Internet",
+        "UC Browser",
+        "Netscape Navigator",
+        "Mosaic",
+        "Lynx",
+        "Netsurf",
+        "Konqueror",
+        "Pale Moon",
+        "Waterfox",
+        "SeaMonkey",
+        "Maxthon",
+        "Yandex Browser",
+        "Kiwi Browser",
+        "Dolphin Browser",
+        "Opera GX",
+        "Firefox Focus",
+        "LibreWolf",
+        "Ladybird",
+        "Zen Browser",
+        "Mullvad Browser"
+      ],
+      "exclude": [
+        "Google Search",
+        "Bing",
+        "WebKit",
+        "Blink",
+        "Gecko",
+        "Qt WebEngine",
+        "Windows",
+        "uBlock Origin"
+      ],
+      "extra": [
+        "Kiwi Browser",
+        "Samsung Internet",
+        "DuckDuckGo Browser",
+        "Netscape Navigator",
+        "Mosaic",
+        "Firefox",
+        "Safari",
+        "Chromium",
+        "Microsoft Edge",
+        "Mozilla Firefox",
+        "Google Chrome"
+      ],
+      "aliases": {
+        "Google Chrome": [
+          "Chrome"
+        ],
+        "Mozilla Firefox": [
+          "Firefox"
+        ],
+        "Microsoft Edge": [
+          "Edge"
+        ],
+        "Safari": [
+          "Apple Safari"
+        ],
+        "DuckDuckGo Browser": [
+          "DuckDuckGo",
+          "DuckDuckGo browser for macOS",
+          "DuckDuckGo for Android and Windows"
+        ],
+        "Samsung Internet": [
+          "Samsung Browser",
+          "Samsung Internet Browser"
+        ],
+        "Netscape Navigator": [
+          "Netscape",
+          "Netscape Navigator 9"
+        ],
+        "Mosaic": [
+          "NCSA Mosaic"
+        ],
+        "Tor Browser": [
+          "Tor"
+        ],
+        "GNOME Web": [
+          "Epiphany"
+        ],
+        "Ungoogled-chromium": [
+          "Ungoogled Chromium"
+        ]
+      },
+      "hold": {
+        "Free and open source": "License heading.",
+        "Proprietary": "License heading.",
+        "Qt WebEngine": "Rendering component, not a complete browser.",
+        "K-Meleon with the IE Tab extension": "An extension configuration shares K-Meleon identity.",
+        "Mozilla Firefox with the IE Tab extension": "An extension configuration shares Firefox identity.",
+        "Netscape Browser 8 to Netscape Navigator 9": "Version range, not a single product name.",
+        "Nightingale": "Music player; embedded web access alone is not treated as a browser product.",
+        "Miro": "Media player, not a general web-browser product."
+      },
+      "rare": "Ariadna",
+      "references": [
+        "https://en.wikipedia.org/wiki/List_of_web_browsers",
+        "https://www.firefox.com/en-US/",
+        "https://www.google.com/chrome/",
+        "https://www.apple.com/safari/",
+        "https://duckduckgo.com/app",
+        "https://www.samsung.com/us/apps/samsung-internet/"
+      ],
+      "deep": [
+        "AMosaic",
+        "AWeb",
+        "Abaco",
+        "Arachne",
+        "Beonex Communicator",
+        "DR-WebSpyder",
+        "Embrowser",
+        "Ghostzilla",
+        "MicroB",
+        "Mothra",
+        "VMS Mosaic",
+        "tkWWW",
+        "Timberwolf",
+        "Kirix Strata"
+      ],
+      "common": [
+        "Opera Mini",
+        "Opera Mobile",
+        "Firefox for Android",
+        "Midori",
+        "Tor Browser",
+        "Samsung Internet"
+      ]
+    },
+    {
+      "key": "cloud-kinds",
+      "family": "science",
+      "topic": "Cloud spotting",
+      "prompt": "Name a cloud type, form or recognized cloud feature.",
+      "scope": "Cloud genera, species, varieties and recognized cloud features count, along with established common names such as lenticular cloud, contrail and fog at ground level. Weather events, precipitation and a blue sky alone do not count.",
+      "familiar": [
+        "Cumulus",
+        "Cirrus",
+        "Stratus",
+        "Cumulonimbus",
+        "Nimbostratus",
+        "Altostratus",
+        "Altocumulus",
+        "Stratocumulus",
+        "Cirrocumulus",
+        "Cirrostratus",
+        "Lenticular cloud",
+        "Mammatus",
+        "Contrail",
+        "Noctilucent cloud",
+        "Shelf cloud",
+        "Wall cloud",
+        "Roll cloud",
+        "Funnel cloud",
+        "Fog",
+        "Anvil cloud",
+        "Kelvin Helmholtz cloud",
+        "Fallstreak hole",
+        "Pyrocumulus",
+        "Pyrocumulonimbus",
+        "Thundercloud",
+        "Murus",
+        "Cauda",
+        "Tail cloud",
+        "Cumulus cloud",
+        "Cirrus cloud",
+        "Condensation trail",
+        "Vapor trail",
+        "Advection fog",
+        "Radiation fog",
+        "Upslope fog",
+        "Ice fog",
+        "Steam fog",
+        "Precipitation fog",
+        "Freezing fog",
+        "Sea fog",
+        "Frontal fog",
+        "Mushroom cloud"
+      ],
+      "exclude": [
+        "Rain",
+        "Lightning",
+        "Rainbow",
+        "Blue sky",
+        "Hurricane",
+        "iCloud",
+        "Amazon Web Services",
+        "Cloud Strife"
+      ],
+      "extra": [],
+      "aliases": {
+        "Incus": [
+          "Anvil cloud"
+        ],
+        "Mamma": [
+          "Mammatus",
+          "Mammatus cloud"
+        ],
+        "Fluctus": [
+          "Kelvin-Helmholtz cloud",
+          "Kelvin Helmholtz cloud"
+        ],
+        "Cavum": [
+          "Fallstreak hole",
+          "Hole punch cloud"
+        ],
+        "Lenticularis": [
+          "Lenticular cloud",
+          "Lenticular"
+        ],
+        "Pileus": [
+          "Pileus cloud",
+          "Cap cloud"
+        ],
+        "Volutus": [
+          "Roll cloud"
+        ],
+        "Tuba": [
+          "Funnel cloud"
+        ],
+        "Noctilucent cloud": [
+          "Polar mesospheric cloud",
+          "Noctilucent"
+        ],
+        "Nacreous cloud": [
+          "Polar stratospheric cloud",
+          "Mother of pearl cloud",
+          "Nacreous"
+        ],
+        "Murus": [
+          "Wall cloud"
+        ],
+        "Cauda": [
+          "Tail cloud"
+        ],
+        "Cumulonimbus": [
+          "Thundercloud",
+          "Thunderhead",
+          "Cumulonimbus cloud"
+        ],
+        "Nimbostratus": [
+          "Rain cloud",
+          "Nimbostratus cloud"
+        ],
+        "Arcus": [
+          "Shelf cloud"
+        ],
+        "Flammagenitus": [
+          "Fire cloud"
+        ],
+        "Cirrus": [
+          "Cirrus cloud"
+        ],
+        "Cirrocumulus": [
+          "Cirrocumulus cloud"
+        ],
+        "Cirrostratus": [
+          "Cirrostratus cloud"
+        ],
+        "Altocumulus": [
+          "Altocumulus cloud"
+        ],
+        "Altostratus": [
+          "Altostratus cloud"
+        ],
+        "Stratocumulus": [
+          "Stratocumulus cloud"
+        ],
+        "Stratus": [
+          "Stratus cloud"
+        ],
+        "Cumulus": [
+          "Cumulus cloud"
+        ],
+        "Contrail": [
+          "Condensation trail",
+          "Vapor trail",
+          "Vapour trail"
+        ],
+        "Radiation fog": [
+          "Ground fog",
+          "Valley fog",
+          "Tule fog"
+        ],
+        "Precipitation fog": [
+          "Rain induced fog",
+          "Precipitation induced fog",
+          "Rain fog"
+        ],
+        "Steam fog": [
+          "Evaporation fog",
+          "Sea smoke",
+          "Sea smoke fog"
+        ],
+        "Mushroom cloud": [
+          "Mushroom",
+          "Nuclear mushroom cloud",
+          "Atomic mushroom cloud"
+        ]
+      },
+      "hold": {},
+      "rare": "Perlucidus",
+      "references": [
+        "https://cloudatlas.wmo.int/en/cloud-classification-summary.html",
+        "https://cloudatlas.wmo.int/en/clouds-genera.html",
+        "https://cloudatlas.wmo.int/en/upper-atmospheric-clouds.html",
+        "https://www.weather.gov/lmk/cloud_classification",
+        "https://www.noaa.gov/jetstream/appendix/weather-glossary-f",
+        "https://www.weather.gov/media/zhu/ZHU_Training_Page/fog_stuff/fog_guide/fog.pdf",
+        "https://preview.weather.gov/oun/spotterglossary"
+      ],
+      "deep": [
+        "Intortus",
+        "Duplicatus",
+        "Lacunosus",
+        "Opacus",
+        "Translucidus",
+        "Radiatus",
+        "Vertebratus",
+        "Homomutatus",
+        "Cataractagenitus",
+        "Silvagenitus",
+        "Praecipitatio",
+        "Mediocris",
+        "Velum",
+        "Flumen"
+      ]
+    }
+  ]
+}

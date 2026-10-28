@@ -1,0 +1,101 @@
+id	family	prompt	familiar
+animal-companion-games	gaming	Name a video game where you can have an animal companion.	Minecraft|The Elder Scrolls V: Skyrim|Fallout 4|Far Cry 5|Red Dead Redemption 2|Stardew Valley
+playable-robot-games	gaming	Name a video game where you can play as a robot or android.	Mega Man|Detroit: Become Human|Nier: Automata|Astro Bot|Chibi-Robo!|Portal 2
+level-editor-games	gaming	Name a video game with a player-accessible level editor.	Super Mario Maker 2|LittleBigPlanet 3|Geometry Dash|Dreams|Trackmania|Portal 2
+grappling-hook-games	gaming	Name a video game where the player can use a grappling hook.	Just Cause 3|Titanfall 2|Halo Infinite|Sekiro: Shadows Die Twice|Dying Light|Apex Legends
+time-manipulation-games	gaming	Name a video game where the player can reverse time, time-travel or experience a time loop.	Life Is Strange|Braid|Chrono Trigger|The Legend of Zelda: Ocarina of Time|Prince of Persia: The Sands of Time|Deathloop
+vehicle-hijacking-games	gaming	Name a video game where you can take control of someone else's vehicle.	Grand Theft Auto V|Watch Dogs 2|Saints Row: The Third|Just Cause 3|Halo Infinite|Battlefield 2042
+underwater-play-games	gaming	Name a video game with playable underwater areas.	Subnautica|Abzu|Super Mario 64|Donkey Kong Country|Sea of Thieves|Assassin's Creed Odyssey
+minecraft-growable-plants	gaming	Name a plant a player can grow in Minecraft.	Wheat|Carrot|Potato|Sugar Cane|Bamboo|Cactus
+zelda-characters	gaming	Name a character from The Legend of Zelda games.	Link|Zelda|Ganondorf|Impa|Midna|Tingle
+sonic-characters	gaming	Name a character from the Sonic the Hedgehog games.	Sonic|Tails|Knuckles|Amy Rose|Shadow|Dr. Eggman
+animal-crossing-characters	gaming	Name a character from the Animal Crossing games.	Isabelle|Tom Nook|K.K. Slider|Blathers|Raymond|Ankha
+mortal-kombat-fighters	gaming	Name a fighter from a Mortal Kombat game.	Scorpion|Sub-Zero|Liu Kang|Raiden|Kitana|Johnny Cage
+professional-tennis-players	sports	Name a professional tennis player, past or present.	Roger Federer|Rafael Nadal|Novak Djokovic|Serena Williams|Venus Williams|Carlos Alcaraz
+professional-golfers	sports	Name a professional golfer, past or present.	Tiger Woods|Rory McIlroy|Scottie Scheffler|Phil Mickelson|Jack Nicklaus|Arnold Palmer
+formula-one-drivers	sports	Name a driver who has competed in Formula One.	Lewis Hamilton|Max Verstappen|Michael Schumacher|Ayrton Senna|Lando Norris|Charles Leclerc
+professional-wrestlers	sports	Name a professional wrestler, past or present.	The Rock|John Cena|The Undertaker|Becky Lynch|Rey Mysterio|Hulk Hogan
+professional-boxers	sports	Name a professional boxer, past or present.	Muhammad Ali|Mike Tyson|Floyd Mayweather Jr.|Manny Pacquiao|Canelo Alvarez|Oleksandr Usyk
+nba-all-stars	sports	Name a player selected for an NBA All-Star Game.	LeBron James|Stephen Curry|Nikola Jokic|Kevin Durant|Giannis Antetokounmpo|Kobe Bryant
+board-sports	sports	Name a sport or recognized sporting discipline that uses a board.	Surfing|Skateboarding|Snowboarding|Wakeboarding|Windsurfing|Bodyboarding
+timed-racing-sports	sports	Name a sport or sporting discipline in which competitors race against a clock.	Swimming|Track cycling|Speed skating|Alpine skiing|Formula One|Rowing
+sport-scoring-terms	sports	Name a term for a scoring play or scoring result in a sport.	Goal|Touchdown|Home run|Try|Basket|Field goal
+gymnastics-apparatus	sports	Name a piece of apparatus used in gymnastics.	Balance beam|Uneven bars|Parallel bars|Rings|Pommel horse|Vault
+named-sports-competitions	sports	Name a named sports competition or tournament.	Wimbledon|Super Bowl|World Series|FIFA World Cup|Tour de France|The Masters
+sports-venue-types	sports	Name a type of place where people play or compete in sports.	Stadium|Gym|Swimming pool|Ice rink|Golf course|Tennis court
+fictional-detectives	culture	Name a fictional detective or mystery-solving character.	Sherlock Holmes|Hercule Poirot|Miss Marple|Nancy Drew|Velma Dinkley|Benoit Blanc
+fictional-pirates	culture	Name a fictional pirate character.	Jack Sparrow|Captain Hook|Long John Silver|Monkey D. Luffy|Davy Jones|Hector Barbossa
+fictional-princesses	culture	Name a fictional princess.	Cinderella|Ariel|Princess Peach|Princess Zelda|Princess Leia|Jasmine
+time-travel-films	culture	Name a movie involving time travel or a time loop.	Back to the Future|The Terminator|Groundhog Day|Edge of Tomorrow|Looper|The Time Machine
+heist-films	culture	Name a movie centered on a heist or robbery.	Ocean's Eleven|The Italian Job|Heat|Inside Man|The Town|Logan Lucky
+prison-escape-films	culture	Name a movie with a prison escape.	The Shawshank Redemption|The Great Escape|Escape from Alcatraz|Chicken Run|Papillon|Escape Plan
+fictional-superpowers	culture	Name a superpower that a fictional character has.	Flight|Invisibility|Teleportation|Telepathy|Super strength|Telekinesis
+named-fictional-vehicles	culture	Name a named fictional vehicle.	Millennium Falcon|Batmobile|Ecto-1|TARDIS|Chitty Chitty Bang Bang|Magic School Bus
+fictional-schools	culture	Name a school from a fictional story, movie, show or game.	Hogwarts|Xavier's School for Gifted Youngsters|Springfield Elementary School|South Park Elementary|Bikini Bottom Boating School|U.A. High School
+wedding-scene-films	culture	Name a movie with a wedding ceremony.	Four Weddings and a Funeral|My Best Friend's Wedding|Bridesmaids|Father of the Bride|Crazy Rich Asians|The Princess Bride
+shipboard-films	culture	Name a movie with a major part of its story aboard a boat or ship.	Titanic|Master and Commander: The Far Side of the World|Life of Pi|Das Boot|The Poseidon Adventure|Captain Phillips
+animated-film-voice-actors	culture	Name an actor who has voiced a character in an animated movie.	Tom Hanks|Tim Allen|Robin Williams|Eddie Murphy|Cameron Diaz|Jack Black
+sibling-music-groups	music	Name a music group with at least two members who are siblings.	Oasis|Bee Gees|Jonas Brothers|Haim|The Kinks|Radiohead
+named-djs	music	Name a DJ, past or present.	David Guetta|Calvin Harris|Avicii|Tiesto|Marshmello|Skrillex
+named-drummers	music	Name a musician known for playing drums.	Ringo Starr|Dave Grohl|Travis Barker|Phil Collins|Lars Ulrich|Neil Peart
+live-music-venues	music	Name a real venue used for live music performances.	Royal Albert Hall|Carnegie Hall|Red Rocks Amphitheatre|Hollywood Bowl|Sydney Opera House|The O2 Arena
+music-recording-equipment	music	Name a tool or piece of equipment used to record music.	Microphone|Audio interface|Mixing console|Headphones|Studio monitor|Digital audio workstation
+keyboard-instruments	music	Name a musical instrument with a keyboard.	Piano|Organ|Synthesizer|Harpsichord|Accordion|Keytar
+masked-music-acts	music	Name an artist or group known for performing in masks or face-concealing headgear.	Daft Punk|Marshmello|Deadmau5|MF DOOM|Slipknot|Ghost
+christmas-songs	music	Name a Christmas song or carol.	All I Want for Christmas Is You|Last Christmas|Jingle Bells|Silent Night|Deck the Halls|White Christmas
+record-labels	music	Name a record label or record company.	Columbia Records|Atlantic Records|Republic Records|Interscope Records|Motown|Def Jam Recordings
+music-streaming-platforms	music	Name a music-streaming platform, past or present.	Spotify|Apple Music|YouTube Music|Amazon Music|Tidal|Deezer
+cookie-biscuit-types	food	Name a type of cookie or biscuit, including named branded varieties.	Chocolate chip cookie|Shortbread|Gingerbread|Macaron|Snickerdoodle|Oreo
+named-pies	food	Name a pie or established pie dish.	Apple pie|Cherry pie|Chicken pot pie|Shepherd's pie|Pumpkin pie|Key lime pie
+ice-cream-flavors	food	Name a real ice-cream flavor.	Vanilla|Chocolate|Strawberry|Mint chocolate chip|Cookies and cream|Cookie dough
+breakfast-cereal-products	food	Name a brand or named product sold as breakfast cereal.	Cheerios|Froot Loops|Frosted Flakes|Weetabix|Lucky Charms|Cocoa Puffs
+fermentation-foods	food	Name a food or drink made using fermentation.	Yogurt|Kimchi|Sauerkraut|Kombucha|Miso|Tempeh
+salad-dressings	food	Name a salad dressing.	Ranch|Caesar|Vinaigrette|Blue cheese dressing|Thousand Island|Honey mustard
+pizza-styles	food	Name a recognized pizza style or named pizza variety.	Neapolitan pizza|New York-style pizza|Chicago deep-dish pizza|Sicilian pizza|Detroit-style pizza|Margherita pizza
+sushi-preparations	food	Name a sushi style or named sushi roll.	California roll|Spicy tuna roll|Dragon roll|Nigiri|Maki|Temaki
+soft-drink-products	food	Name a soft-drink brand or named soda product.	Coca-Cola|Pepsi|Sprite|Fanta|Dr Pepper|Mountain Dew
+pastry-types	food	Name a type of pastry.	Croissant|Danish pastry|Eclair|Profiterole|Cinnamon roll|Baklava
+winter-dormant-animals	nature	Name an animal that hibernates or spends winter in prolonged torpor.	Bear|Bat|Hedgehog|Dormouse|Ground squirrel|Groundhog
+nest-building-animals	nature	Name an animal that builds a nest.	Bird|Squirrel|Chimpanzee|Orangutan|Ant|Bee
+colonial-animals	nature	Name an animal known for living in a colony.	Ant|Bee|Termite|Coral|Penguin|Prairie dog
+tool-using-animals	nature	Name a nonhuman animal documented using a tool.	Chimpanzee|Crow|Sea otter|Octopus|Bottlenose dolphin|Orangutan
+herbivorous-animals	nature	Name an animal whose normal diet is mainly plants.	Elephant|Giraffe|Horse|Rabbit|Goat|Deer
+carnivorous-animals	nature	Name an animal whose normal diet is mainly other animals.	Lion|Tiger|Wolf|Crocodile|Shark|Eagle
+omnivorous-animals	nature	Name an animal that normally eats both plant and animal foods.	Pig|Brown bear|Raccoon|Chicken|Rat|Opossum
+burrow-using-animals	nature	Name an animal that uses a burrow or tunnel as shelter.	Rabbit|Mole|Badger|Meerkat|Groundhog|Prairie dog
+pet-birds	nature	Name a bird commonly kept as a companion animal.	Budgie|Cockatiel|Canary|Lovebird|Macaw|Cockatoo
+climbing-plants	nature	Name a vine or climbing plant.	Ivy|Wisteria|Grape|Jasmine|Clematis|Honeysuckle
+edible-fungi	nature	Name a kind of edible mushroom or fungus.	Button mushroom|Shiitake|Portobello|Oyster mushroom|Morel|Truffle
+pouched-animals	nature	Name an animal with a cheek, throat or brood pouch.	Kangaroo|Koala|Pelican|Hamster|Chipmunk|Seahorse
+everyday-levers	science	Name an everyday object that works as a lever.	Seesaw|Scissors|Wheelbarrow|Pliers|Bottle opener|Crowbar
+lens-using-devices	science	Name a device that uses an optical lens.	Camera|Microscope|Telescope|Glasses|Binoculars|Magnifying glass
+magnet-using-objects	science	Name a man-made object that uses a magnet or electromagnet.	Loudspeaker|Headphones|Compass|Refrigerator magnet|Electric motor|MRI machine
+infrared-using-devices	science	Name a device that uses infrared light for heating, sensing or communication.	Remote control|Thermal camera|Heat lamp|Motion sensor|Infrared thermometer|Night-vision goggles
+gear-using-devices	science	Name a device or machine that uses gears.	Clock|Bicycle|Car|Watch|Hand drill|Can opener
+pneumatic-devices	science	Name a tool or device that uses compressed air.	Jackhammer|Air brakes|Air horn|Nail gun|Airbrush|Scuba tank
+human-organ-names	science	Name an organ in the human body.	Heart|Liver|Brain|Kidney|Lung|Stomach
+real-spacecraft	science	Name a real spacecraft, space station or named space mission.	International Space Station|Hubble Space Telescope|Voyager 1|Cassini|Soyuz|Apollo 11
+common-chemical-compounds	science	Name a chemical compound encountered in everyday products or materials.	Water|Sodium chloride|Sucrose|Sodium bicarbonate|Carbon dioxide|Acetic acid
+electricity-generation-methods	science	Name a real technology or method used to generate electricity.	Solar power|Wind power|Hydropower|Nuclear power|Biomass power|Tidal power
+named-airports	world	Name a real airport or airfield.	John F. Kennedy International Airport|Los Angeles International Airport|Heathrow Airport|Singapore Changi Airport|Dubai International Airport|Tokyo Haneda Airport
+castles-palaces	world	Name a real castle or palace.	Windsor Castle|Buckingham Palace|Palace of Versailles|Edinburgh Castle|Neuschwanstein Castle|Alhambra
+named-deserts	world	Name a desert.	Sahara|Gobi|Kalahari|Namib|Atacama|Arabian Desert
+named-canals	world	Name a real named canal.	Suez Canal|Panama Canal|Erie Canal|Grand Canal|Rideau Canal|Corinth Canal
+archaeological-sites	world	Name an archaeological site or ancient ruin.	Machu Picchu|Pompeii|Stonehenge|Petra|Chichen Itza|Angkor Wat
+dollar-currency-countries	world	Name a country or territory that officially uses a currency called a dollar.	United States|Canada|Australia|New Zealand|Singapore|Jamaica
+left-driving-countries	world	Name a country or territory where road traffic normally keeps to the left.	United Kingdom|Ireland|Australia|New Zealand|Japan|India
+monarchies	world	Name a country with a current monarchy.	United Kingdom|Japan|Sweden|Thailand|Saudi Arabia|Jordan
+named-mausoleums	world	Name a real tomb, mausoleum or burial monument people can visit.	Taj Mahal|Great Pyramid of Giza|Ming Tombs|Lenin's Mausoleum|Lincoln Tomb|Mausoleum at Halicarnassus
+world-expo-hosts	world	Name a host location of a World Expo or internationally recognized World's Fair.	Paris|London|Chicago|New York City|Shanghai|Osaka
+transport-operators	world	Name a transportation company or transit operator.	American Airlines|Delta Air Lines|Amtrak|Greyhound|Eurostar|Royal Caribbean International
+named-waterfalls	world	Name a real waterfall.	Niagara Falls|Victoria Falls|Angel Falls|Iguazu Falls|Yosemite Falls|Looking Glass Falls
+knotted-objects	everyday	Name something people commonly tie in a knot.	Shoelace|Necktie|Rope|Fishing line|Balloon|Ribbon
+fasteners-adhesives	everyday	Name a fastener or adhesive used to join objects.	Nail|Screw|Bolt|Nut|Rivet|Staple
+wallet-items	everyday	Name something people commonly carry in a wallet.	Cash|Credit card|Debit card|Driver's license|Photo|Receipt
+battery-powered-devices	everyday	Name a device that can be powered by a battery.	Remote control|Flashlight|Smoke alarm|Wall clock|Game controller|Phone
+power-tools	everyday	Name a powered hand tool or workshop tool.	Drill|Sander|Circular saw|Jigsaw|Angle grinder|Impact driver
+cleaning-supplies	everyday	Name a tool or product used for cleaning.	Broom|Mop|Sponge|Vacuum cleaner|Dustpan|Scrubbing brush
+paper-cardboard-objects	everyday	Name an object commonly made mainly from paper or cardboard.	Book|Newspaper|Cardboard box|Paper bag|Envelope|Notebook
+sharpened-items	everyday	Name a physical item that people sharpen.	Knife|Scissors|Pencil|Axe|Chisel|Ice skates
+hairstyles	everyday	Name a hairstyle, haircut or facial-hair style.	Ponytail|Bob|Buzz cut|Braid|Mohawk|Afro
+packing-materials	everyday	Name a packing material or shipping container.	Cardboard box|Bubble wrap|Packing peanuts|Packing tape|Mailing bag|Mailing tube

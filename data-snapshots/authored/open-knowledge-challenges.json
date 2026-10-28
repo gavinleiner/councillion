@@ -1,0 +1,151 @@
+{
+  "status": "Draft source coverage checks; a missing classification is not evidence an answer is wrong.",
+  "checks": {
+    "record-labels": "Columbia Records|Atlantic Records|Republic Records|Interscope Records|Motown|Def Jam Recordings|EMI|Capitol Records|Warner Records|Virgin Records|Sony Music|Universal Music Group|Island Records|RCA Records|Decca Records|Polydor Records|Sub Pop|XL Recordings|Matador Records|Domino Recording Company|Mute Records|4AD|Warp Records|Ninja Tune|Cash Money Records|Young Money Entertainment|OVO Sound|Aftermath Entertainment|Top Dawg Entertainment|Dreamville Records|Shady Records|Elektra Records|Fueled by Ramen|Epitaph Records|Roadrunner Records|Metal Blade Records|Nuclear Blast|Season of Mist|Geffen Records|A&M Records|Arista Records|Jive Records|J Records|LaFace Records|Bad Boy Records|Roc-A-Fella Records|Roc Nation|Death Row Records|Strange Music|Stones Throw Records|Merge Records|Saddle Creek Records|Fat Possum Records|Fat Wreck Chords|Hopeless Records|Fearless Records|Victory Records|Sumerian Records|Century Media Records|Relapse Records|Southern Lord Records|Dischord Records|Touch and Go Records|Drag City|Jagjaguwar|Secretly Canadian|Dead Oceans|XL|ECM|A&M|R&S",
+    "named-djs": "David Guetta|Calvin Harris|Avicii|Tiesto|Marshmello|Skrillex|Deadmau5|Martin Garrix|Armin van Buuren|Steve Aoki|Diplo|DJ Khaled|Zedd|Alesso|Hardwell|Afrojack|Carl Cox|Fatboy Slim|Paul Oakenfold|Paul van Dyk|Eric Prydz|Fisher|Charlotte de Witte|Amelie Lens|Peggy Gou|Nina Kraviz|Honey Dijon|The Blessed Madonna|Black Coffee|Solomun|Boris Brejcha|Fred again..|John Summit|Dom Dolla|James Hype|Mau P|DJ Snake|Dillon Francis|Benny Benassi|Darude|DJ Jazzy Jeff|Grandmaster Flash|Afrika Bambaataa|Grand Wizzard Theodore|DJ Kool Herc|DJ Shadow|DJ Premier|DJ Qbert|Mix Master Mike|A-Trak|Pete Tong|Annie Mac|Zane Lowe|Annie Nightingale|John Peel|Bob Harris|Howard Stern|Casey Kasem|Wolfman Jack|Alan Freed|Dick Clark|Delilah|Sub Zero Project|Gorgon City|D-Block & S-te-Fan|ATB|BT|EDX|DJ AM",
+    "named-drummers": "Ringo Starr|Dave Grohl|Travis Barker|Phil Collins|Lars Ulrich|Neil Peart|John Bonham|Keith Moon|Charlie Watts|Stewart Copeland|Chad Smith|Danny Carey|Mike Portnoy|Taylor Hawkins|Joey Jordison|Jay Weinberg|Josh Freese|Roger Taylor|Nick Mason|Mick Fleetwood|Bill Ward|Ian Paice|Ginger Baker|Buddy Rich|Gene Krupa|Max Roach|Art Blakey|Elvin Jones|Tony Williams|Cindy Blackman Santana|Sheila E.|Meg White|Karen Carpenter|Debbi Peterson|Janet Weiss|Bun E. Carlos|Alex Van Halen|Steven Adler|Matt Sorum|Tommy Lee|Rick Allen|Rick Savage|Nicko McBrain|Clive Burr|Dave Lombardo|Paul Bostaph|Vinnie Paul|Mike Mangini|Mario Duplantier|Vinnie Colaiuta|Steve Gadd|Bernard Purdie|Carter Beauford|Questlove|Anderson .Paak|Yussef Dayes|ZackGrooves|II|JD Beck|Larnell Lewis|Louis Cole|Nandi Bushell|Yoyoka|Mike Wengren|Brad Wilk|Tre Cool|Frank Edwin Wright III|II|Nyango Star|Martin Rongen",
+    "keyboard-instruments": "Piano|Organ|Synthesizer|Harpsichord|Accordion|Keytar|Celesta|Clavichord|Melodica|Harmonium|Digital piano|Electric piano|Mellotron|Clavinet|Ondes Martenot|Hurdy-gurdy|Concertina|Bandoneon|Calliope|Carillon|Rhodes piano|Wurlitzer electric piano|Toy piano|Virginals|Spinet|Pipe organ|Pump organ|Chamber organ|Portative organ|Hammond organ|Theatre organ|Tangent piano|Square piano|Grand piano|Upright piano|Fortepiano|Glasschord|Dulcitone|Clavicytherium|Lautenwerck|Orphica|Optigan|Vocoder|Sampler|Yamaha DX7|DX7|Minimoog|Moog Model D|Korg M1|MicroKorg|Roland Juno-106|Nord Stage|Prophet-5|Yamaha CS-80|ARP 2600|Casio SK-1|Fairlight CMI|Mellotron M400",
+    "named-airports": "John F. Kennedy International Airport|Los Angeles International Airport|Heathrow Airport|Singapore Changi Airport|Dubai International Airport|Haneda Airport|Hartsfield-Jackson Atlanta International Airport|O'Hare International Airport|Denver International Airport|Dallas Fort Worth International Airport|Charlotte Douglas International Airport|LaGuardia Airport|Newark Liberty International Airport|Boston Logan International Airport|Miami International Airport|San Francisco International Airport|Amsterdam Airport Schiphol|Charles de Gaulle Airport|Frankfurt Airport|Madrid-Barajas Airport|Beijing Capital International Airport|Indira Gandhi International Airport|Sydney Airport|Wilmington International Airport|Raleigh-Durham International Airport|JFK|LAX|LHR|CLT|RDU|ILM|ATL|ORD|DFW|BOS|MIA|SFO|DEN|SEA|EWR|IAD|DCA|BWI|PHL|SLC|SAN|LAS|MCO|CDG|FRA|HND|NRT|SIN|DXB|SYD|YYZ|HKG|PEK|ICN|DOH",
+    "castles-palaces": "Windsor Castle|Buckingham Palace|Palace of Versailles|Edinburgh Castle|Neuschwanstein Castle|Alhambra|Balmoral Castle|Prague Castle|Himeji Castle|Osaka Castle|Matsumoto Castle|Nagoya Castle|Leeds Castle|Warwick Castle|Blarney Castle|Dublin Castle|Chateau de Chambord|Chateau de Chenonceau|Chateau de Chillon|Pena Palace|Alcazar of Seville|Alcazar of Segovia|Topkapi Palace|Dolmabahce Palace|Potala Palace|Forbidden City|Summer Palace|Grand Palace|Royal Palace of Madrid|Kensington Palace|Hampton Court Palace|Schönbrunn Palace",
+    "named-deserts": "Sahara|Gobi Desert|Kalahari Desert|Namib Desert|Atacama Desert|Arabian Desert|Mojave Desert|Sonoran Desert|Great Victoria Desert|Great Sandy Desert|Simpson Desert|Gibson Desert|Tanami Desert|Thar Desert|Taklamakan Desert|Karakum Desert|Kyzylkum Desert|Chihuahuan Desert|Great Basin Desert|Patagonian Desert|Syrian Desert|Judean Desert|Negev|Dasht-e Kavir|Dasht-e Lut|Antarctic Desert|Arctic Desert|Colorado Desert|Rub' al Khali|Empty Quarter",
+    "named-canals": "Suez Canal|Panama Canal|Erie Canal|Grand Canal|Rideau Canal|Corinth Canal|Kiel Canal|Manchester Ship Canal|Caledonian Canal|Forth and Clyde Canal|Union Canal|Birmingham Canal|Regent's Canal|Oxford Canal|Grand Union Canal|Leeds and Liverpool Canal|Trent and Mersey Canal|Bridgewater Canal|Amsterdam-Rhine Canal|North Sea Canal|Welland Canal|Göta Canal|White Sea-Baltic Canal|Volga-Don Canal|Moscow Canal|Cape Cod Canal|Houston Ship Channel|Chesapeake and Ohio Canal|Dismal Swamp Canal|Intracoastal Waterway",
+    "archaeological-sites": "Machu Picchu|Pompeii|Stonehenge|Petra|Chichen Itza|Angkor Wat|Pyramids of Giza|Great Pyramid of Giza|Acropolis of Athens|Colosseum|Roman Forum|Herculaneum|Troy|Knossos|Ephesus|Delphi|Olympia|Mycenae|Mystras|Palmyra|Baalbek|Babylon|Persepolis|Ur|Uruk|Nineveh|Mohenjo-daro|Harappa|Taxila|Sanchi|Bodh Gaya|Bagan|Ayutthaya|Sukhothai|Borobudur|Prambanan|Terracotta Army|Tikal|Teotihuacan|Palenque|Uxmal|Copan|Coba|Chaco Canyon|Mesa Verde|Cahokia|Skara Brae|Newgrange|Avebury|Göbekli Tepe|Çatalhöyük",
+    "named-mausoleums": "Taj Mahal|Great Pyramid of Giza|Ming tombs|Lenin's Mausoleum|Lincoln Tomb|Mausoleum at Halicarnassus|Tomb of Tutankhamun|Westminster Abbey|Graceland|Grant's Tomb|Tomb of the Unknown Soldier|Valley of the Kings|Pere Lachaise Cemetery|Mount Vernon|Monticello|Humayun's Tomb|Akbar's tomb|Itmad-ud-Daulah's Tomb|Mausoleum of the First Qin Emperor|Ho Chi Minh Mausoleum|Mausoleum of Mao Zedong|Sun Yat-sen Mausoleum|Anitkabir|Samanid Mausoleum|Gur-e-Amir|Shah-i-Zinda|Sheikh Safi al-din Khānegāh and Shrine Ensemble|Khwaja Ahmed Yasawi Mausoleum|Napoleon's tomb|Les Invalides|Pantheon",
+    "named-waterfalls": "Niagara Falls|Victoria Falls|Angel Falls|Iguazu Falls|Yosemite Falls|Looking Glass Falls|Multnomah Falls|Bridalveil Fall|Vernal Fall|Nevada Fall|Horsetail Fall|Burney Falls|Shoshone Falls|Snoqualmie Falls|Ruby Falls|Amicalola Falls|Cumberland Falls|Akaka Falls|Rainbow Falls|Wailua Falls|Khone Phapheng Falls|Kuang Si Falls|Erawan Falls|Jog Falls|Dudhsagar Falls|Athirappilly Falls|Nohkalikai Falls|Huangguoshu Waterfall|Dettifoss|Gullfoss|Skogafoss|Seljalandsfoss|Godafoss|Dynjandi|Svartifoss|Voringfossen|Langfossen|Seven Sisters Waterfall|Krimml Waterfalls|Staubbach Falls|Trummelbach Falls|Rhine Falls|Reichenbach Falls|Plitvice Waterfalls|Krka Waterfalls|Sutherland Falls|Huka Falls|Stirling Falls|Bowen Falls|Tugela Falls|Kalambo Falls|Augrabies Falls|Kaieteur Falls|Gocta Cataracts|Catarata del Toro|La Fortuna Waterfall"
+  },
+  "results": {
+    "record-labels": {
+      "checked": 67,
+      "missing": [
+        "Fat Possum Records"
+      ]
+    },
+    "named-djs": {
+      "checked": 62,
+      "missing": [
+        "David Guetta",
+        "Calvin Harris",
+        "Tiesto",
+        "Marshmello",
+        "Skrillex",
+        "Fisher",
+        "Fred again..",
+        "Dom Dolla",
+        "Mau P",
+        "DJ Snake",
+        "Annie Mac",
+        "Bob Harris",
+        "Howard Stern",
+        "Dick Clark",
+        "Delilah"
+      ]
+    },
+    "named-drummers": {
+      "checked": 67,
+      "missing": [
+        "Debbi Peterson",
+        "Rick Savage",
+        "Anderson .Paak",
+        "ZackGrooves",
+        "Yoyoka",
+        "Frank Edwin Wright III"
+      ]
+    },
+    "keyboard-instruments": {
+      "checked": 44,
+      "missing": [
+        "Synthesizer",
+        "Digital piano",
+        "Electric piano",
+        "Mellotron",
+        "Hurdy-gurdy",
+        "Calliope",
+        "Rhodes piano",
+        "Wurlitzer electric piano",
+        "Optigan",
+        "Vocoder",
+        "Sampler"
+      ]
+    },
+    "named-airports": {
+      "checked": 25,
+      "missing": [
+        "Amsterdam Airport Schiphol"
+      ]
+    },
+    "castles-palaces": {
+      "checked": 32,
+      "missing": [
+        "Balmoral Castle",
+        "Chateau de Chambord",
+        "Chateau de Chenonceau",
+        "Topkapi Palace",
+        "Schönbrunn Palace"
+      ]
+    },
+    "named-deserts": {
+      "checked": 30,
+      "missing": [
+        "Kyzylkum Desert",
+        "Patagonian Desert",
+        "Antarctic Desert"
+      ]
+    },
+    "named-canals": {
+      "checked": 30,
+      "missing": []
+    },
+    "archaeological-sites": {
+      "checked": 51,
+      "missing": [
+        "Pyramids of Giza",
+        "Sanchi",
+        "Bodh Gaya",
+        "Ayutthaya",
+        "Sukhothai",
+        "Borobudur",
+        "Prambanan",
+        "Chaco Canyon",
+        "Mesa Verde"
+      ]
+    },
+    "named-mausoleums": {
+      "checked": 31,
+      "missing": [
+        "Ming tombs",
+        "Lenin's Mausoleum",
+        "Mausoleum at Halicarnassus",
+        "Westminster Abbey",
+        "Graceland",
+        "Grant's Tomb",
+        "Valley of the Kings",
+        "Pere Lachaise Cemetery",
+        "Mount Vernon",
+        "Monticello",
+        "Akbar's tomb",
+        "Itmad-ud-Daulah's Tomb",
+        "Mausoleum of the First Qin Emperor",
+        "Ho Chi Minh Mausoleum",
+        "Mausoleum of Mao Zedong",
+        "Sun Yat-sen Mausoleum",
+        "Anitkabir",
+        "Samanid Mausoleum",
+        "Gur-e-Amir",
+        "Shah-i-Zinda",
+        "Khwaja Ahmed Yasawi Mausoleum",
+        "Les Invalides",
+        "Pantheon"
+      ]
+    },
+    "named-waterfalls": {
+      "checked": 56,
+      "missing": [
+        "Godafoss",
+        "Voringfossen",
+        "Plitvice Waterfalls",
+        "Krka Waterfalls",
+        "Catarata del Toro"
+      ]
+    }
+  }
+}

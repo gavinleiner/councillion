@@ -1,0 +1,358 @@
+{
+  "questions": [
+    {
+      "key": "pokemon-moves",
+      "table": "move",
+      "prompt": "Name a move from a Pokémon video game.",
+      "scope": "Named moves from released Pokémon games count, including Z-Moves, Max Moves and Colosseum/XD Shadow moves. Physical/special implementations of the same named move share one answer. Generic actions and moves from fan games do not count.",
+      "familiar": [
+        "Tackle",
+        "Thunderbolt",
+        "Flamethrower",
+        "Surf",
+        "Fly",
+        "Cut",
+        "Strength",
+        "Water Gun",
+        "Hydro Pump",
+        "Solar Beam",
+        "Ice Beam",
+        "Quick Attack",
+        "Hyper Beam",
+        "Earthquake",
+        "Splash",
+        "Protect",
+        "Rest",
+        "Recover",
+        "Sing",
+        "Growl",
+        "Tail Whip",
+        "Thunder Shock",
+        "Vine Whip",
+        "Razor Leaf",
+        "Ember",
+        "Fire Blast",
+        "Psychic",
+        "Shadow Ball",
+        "Iron Tail",
+        "Double Team",
+        "Metronome",
+        "Toxic",
+        "Dig",
+        "Rock Smash",
+        "Waterfall",
+        "Confusion",
+        "Dream Eater",
+        "Dragon Rage",
+        "Dragon Claw",
+        "Self-Destruct",
+        "Explosion",
+        "Bite",
+        "Scratch",
+        "Pound",
+        "Bubble Beam",
+        "High Jump Kick",
+        "Vise Grip"
+      ],
+      "exclude": [
+        "Intimidate",
+        "Poké Ball",
+        "Kamehameha"
+      ],
+      "rare": "Clangorous Soulblaze",
+      "aliases": {
+        "Vise Grip": [
+          "Vice Grip"
+        ],
+        "High Jump Kick": [
+          "Hi Jump Kick"
+        ],
+        "Feint Attack": [
+          "Faint Attack"
+        ],
+        "Smelling Salts": [
+          "SmellingSalt",
+          "Smelling Salt"
+        ]
+      }
+    },
+    {
+      "key": "pokemon-abilities",
+      "table": "ability",
+      "prompt": "Name a Pokémon Ability.",
+      "scope": "Named passive Pokémon Abilities from the core games and Pokémon Conquest count. Moves, types, held items and generic trainer actions are separate concepts.",
+      "familiar": [
+        "Intimidate",
+        "Levitate",
+        "Pressure",
+        "Overgrow",
+        "Blaze",
+        "Torrent",
+        "Static",
+        "Lightning Rod",
+        "Sturdy",
+        "Wonder Guard",
+        "Speed Boost",
+        "Swift Swim",
+        "Chlorophyll",
+        "Drizzle",
+        "Drought",
+        "Sand Stream",
+        "Snow Warning",
+        "Guts",
+        "Huge Power",
+        "Pure Power",
+        "Pickup",
+        "Run Away",
+        "Synchronize",
+        "Trace",
+        "Inner Focus",
+        "Insomnia",
+        "Immunity",
+        "Thick Fat",
+        "Water Absorb",
+        "Volt Absorb",
+        "Flash Fire",
+        "Moxie",
+        "Protean",
+        "Libero",
+        "Multiscale",
+        "Rough Skin",
+        "Poison Point",
+        "Effect Spore",
+        "Serene Grace",
+        "Super Luck",
+        "Technician",
+        "Adaptability",
+        "Contrary",
+        "Prankster"
+      ],
+      "exclude": [
+        "Thunderbolt",
+        "Leftovers",
+        "Fire type"
+      ],
+      "rare": "Hospitality",
+      "aliases": {}
+    },
+    {
+      "key": "pokemon-items",
+      "table": "item",
+      "prompt": "Name an item or trainer device from a Pokémon video game.",
+      "scope": "Named usable items and trainer devices from released Pokémon video games count, including medicine, Poké Balls, Berries, held/key items, TMs/TRs, evolution items, Pokédexes and trainer communication/navigation devices. Historical versions of the same item name share one answer. Pokémon, moves and Abilities are separate concepts.",
+      "familiar": [
+        "Poké Ball",
+        "Great Ball",
+        "Ultra Ball",
+        "Master Ball",
+        "Potion",
+        "Super Potion",
+        "Hyper Potion",
+        "Max Potion",
+        "Full Restore",
+        "Revive",
+        "Max Revive",
+        "Antidote",
+        "Paralyze Heal",
+        "Awakening",
+        "Burn Heal",
+        "Ice Heal",
+        "Full Heal",
+        "Repel",
+        "Super Repel",
+        "Max Repel",
+        "Rare Candy",
+        "Exp. Share",
+        "Lucky Egg",
+        "Leftovers",
+        "Life Orb",
+        "Focus Sash",
+        "Choice Band",
+        "Choice Scarf",
+        "Choice Specs",
+        "Sitrus Berry",
+        "Oran Berry",
+        "Lum Berry",
+        "Cheri Berry",
+        "Chesto Berry",
+        "Pecha Berry",
+        "Rawst Berry",
+        "Aspear Berry",
+        "Leppa Berry",
+        "Everstone",
+        "Fire Stone",
+        "Water Stone",
+        "Thunder Stone",
+        "Leaf Stone",
+        "Moon Stone",
+        "Sun Stone",
+        "Dusk Stone",
+        "Dawn Stone",
+        "Shiny Stone",
+        "Ice Stone",
+        "Escape Rope",
+        "Bicycle",
+        "Old Rod",
+        "Good Rod",
+        "Super Rod",
+        "Town Map",
+        "Pokédex",
+        "Nugget",
+        "Big Nugget",
+        "Stardust",
+        "Star Piece",
+        "Pearl",
+        "Big Pearl",
+        "Fresh Water",
+        "Soda Pop",
+        "Lemonade",
+        "Moomoo Milk",
+        "Ether",
+        "Max Ether",
+        "Elixir",
+        "Max Elixir",
+        "Ability Capsule",
+        "Ability Patch",
+        "Bottle Cap",
+        "Gold Bottle Cap",
+        "Metal Coat",
+        "Dragon Scale",
+        "King’s Rock",
+        "Razor Claw",
+        "Razor Fang",
+        "TM01",
+        "TR01",
+        "Hopo Berry",
+        "Rotom Phone",
+        "Pokétch",
+        "Pokégear",
+        "PokéNav",
+        "C-Gear",
+        "P★DA"
+      ],
+      "exclude": [
+        "Pikachu",
+        "Thunderbolt",
+        "Intimidate"
+      ],
+      "rare": "Max Honey",
+      "aliases": {
+        "Exp. Share": [
+          "Experience Share",
+          "EXP Share",
+          "XP Share"
+        ],
+        "Pokédex": [
+          "Pokedex"
+        ],
+        "Paralyze Heal": [
+          "Parlyz Heal"
+        ],
+        "X Defense": [
+          "X Defend"
+        ],
+        "X Sp. Atk": [
+          "X Special",
+          "X Special Attack"
+        ],
+        "X Sp. Def": [
+          "X Special Defense"
+        ],
+        "King’s Rock": [
+          "King's Rock"
+        ],
+        "Oak’s Letter": [
+          "Oak's Letter"
+        ]
+      },
+      "missingEnglish": {
+        "2278": "Hopo Berry",
+        "2279": "Roseli Berry"
+      },
+      "supplement": [
+        {
+          "label": "Pokédex",
+          "aliases": [
+            "Rotom Pokédex",
+            "Rotom Dex"
+          ],
+          "evidence": "https://swordshield.pokemon.com/en-us/gameplay/about-pokedex-rotom-phone/"
+        },
+        {
+          "label": "Rotom Phone",
+          "aliases": [],
+          "evidence": "https://swordshield.pokemon.com/en-us/gameplay/about-pokedex-rotom-phone/"
+        },
+        {
+          "label": "Pokétch",
+          "aliases": [],
+          "evidence": "https://csassets.nintendo.com/noaext/image/private/t_KA_PDF/DS_Pokemon_Pearl?_a=DATC1RAAZAA0"
+        },
+        {
+          "label": "Pokégear",
+          "aliases": [],
+          "evidence": "https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9gear"
+        },
+        {
+          "label": "PokéNav",
+          "aliases": [
+            "PokéNav Plus",
+            "PokéNav+",
+            "Pokémon Navigator"
+          ],
+          "evidence": "https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9Nav"
+        },
+        {
+          "label": "C-Gear",
+          "aliases": [],
+          "evidence": "https://bulbapedia.bulbagarden.net/wiki/C-Gear"
+        },
+        {
+          "label": "P★DA",
+          "aliases": [
+            "PDA"
+          ],
+          "evidence": "https://bulbapedia.bulbagarden.net/wiki/P%E2%98%85DA"
+        }
+      ]
+    },
+    {
+      "key": "pokemon-types",
+      "table": "type",
+      "prompt": "Name a Pokémon type.",
+      "scope": "The 18 standard main-series types and the special Stellar Tera type count. The unused Bird/??? data labels and the spin-off Shadow classification are outside this explicitly main-series type list.",
+      "familiar": [
+        "Normal",
+        "Fire",
+        "Water",
+        "Grass",
+        "Electric",
+        "Ice",
+        "Fighting",
+        "Poison",
+        "Ground",
+        "Flying",
+        "Psychic",
+        "Bug",
+        "Rock",
+        "Ghost",
+        "Dragon",
+        "Dark",
+        "Steel",
+        "Fairy"
+      ],
+      "exclude": [
+        "Bird",
+        "Shadow",
+        "Light"
+      ],
+      "rare": "Stellar",
+      "aliases": {},
+      "naturalFinite": true,
+      "heldIds": {
+        "10001": "Unused ??? placeholder, not a standard main-series type.",
+        "10002": "Shadow is a spin-off classification, outside the main-series prompt scope."
+      }
+    }
+  ]
+}

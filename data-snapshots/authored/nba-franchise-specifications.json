@@ -1,0 +1,4900 @@
+{
+  "status": "30 whole all-time franchise questions. No per-season, position, draft, opponent or team-pair variants. Source Seattle roster expands the existing Thunder question only. Independent familiar names were supplied before parsing.",
+  "questions": [
+    {
+      "team": "Atlanta Hawks",
+      "history": "Earlier NBA seasons as the Tri-Cities Blackhawks, Milwaukee Hawks and St. Louis Hawks count.",
+      "familiar": [
+        "Dominique Wilkins",
+        "Trae Young",
+        "Al Horford",
+        "Bob Pettit",
+        "Dikembe Mutombo",
+        "Joe Johnson",
+        "Clint Capela",
+        "Dejounte Murray",
+        "Jalen Johnson",
+        "Josh Smith",
+        "Jason Terry",
+        "Spud Webb",
+        "Pete Maravich",
+        "Lenny Wilkens"
+      ],
+      "exclude": [
+        "Michael Jordan"
+      ],
+      "aliases": {
+        "Shaquille O'Neal": [
+          "Shaq",
+          "Shaquille"
+        ],
+        "Michael Jordan": [
+          "Jordan"
+        ],
+        "Kobe Bryant": [
+          "Kobe"
+        ],
+        "LeBron James": [
+          "LeBron"
+        ],
+        "Stephen Curry": [
+          "Steph Curry",
+          "Steph"
+        ],
+        "Julius Erving": [
+          "Dr. J",
+          "Doctor J"
+        ],
+        "Anfernee Hardaway": [
+          "Penny Hardaway",
+          "Penny"
+        ],
+        "Penny Hardaway": [
+          "Anfernee Hardaway",
+          "Penny"
+        ],
+        "Magic Johnson": [
+          "Earvin Johnson",
+          "Earvin Magic Johnson",
+          "Magic"
+        ],
+        "Hakeem Olajuwon": [
+          "Akeem Olajuwon",
+          "Hakeem"
+        ],
+        "Giannis Antetokounmpo": [
+          "Giannis"
+        ],
+        "Nikola Jokic": [
+          "Jokic"
+        ],
+        "Shai Gilgeous-Alexander": [
+          "Shai"
+        ],
+        "Luka Doncic": [
+          "Luka"
+        ],
+        "Metta World Peace": [
+          "Ron Artest",
+          "Metta Sandiford-Artest",
+          "Artest",
+          "Metta"
+        ],
+        "Ron Artest": [
+          "Metta World Peace",
+          "Metta Sandiford-Artest",
+          "Artest",
+          "Metta"
+        ],
+        "Nene": [
+          "Nene Hilario"
+        ],
+        "Fat Lever": [
+          "Lafayette Lever"
+        ],
+        "Maurice Williams": [
+          "Mo Williams"
+        ],
+        "Mo Williams": [
+          "Maurice Williams"
+        ],
+        "Richard Hamilton": [
+          "Rip Hamilton"
+        ],
+        "Jason Williams": [
+          "White Chocolate"
+        ],
+        "Victor Wembanyama": [
+          "Wemby",
+          "Wembanyama"
+        ],
+        "Lafayette Lever": [
+          "Fat Lever"
+        ],
+        "Herbert Jones": [
+          "Herb Jones"
+        ],
+        "Herb Jones": [
+          "Herbert Jones"
+        ],
+        "Lew Alcindor": [
+          "Kareem Abdul-Jabbar"
+        ],
+        "Kareem Abdul-Jabbar": [
+          "Lew Alcindor",
+          "Kareem",
+          "Alcindor"
+        ],
+        "Jose Juan Barea": [
+          "JJ Barea",
+          "J.J. Barea"
+        ],
+        "Mahmoud Abdul-Rauf": [
+          "Chris Jackson"
+        ],
+        "Bison Dele": [
+          "Brian Williams"
+        ],
+        "Enes Freedom": [
+          "Enes Kanter"
+        ],
+        "Metta Sandiford-Artest": [
+          "Ron Artest",
+          "Metta World Peace",
+          "Artest",
+          "Metta"
+        ],
+        "World B. Free": [
+          "Lloyd Free"
+        ],
+        "Jamaal Wilkes": [
+          "Keith Wilkes"
+        ],
+        "Henry Walker": [
+          "Bill Walker"
+        ],
+        "Ronald Murray": [
+          "Flip Murray"
+        ]
+      },
+      "references": [
+        "https://en.wikipedia.org/wiki/Atlanta_Hawks_all-time_roster",
+        "https://www.nba.com/player/77634/jackie-moore",
+        "https://wkusports.com/documents/download/2025/10/29/2025-26_MBB_Media_Guide.pdf"
+      ]
+    },
+    {
+      "team": "Boston Celtics",
+      "history": "",
+      "familiar": [
+        "Larry Bird",
+        "Bill Russell",
+        "Paul Pierce",
+        "Kevin Garnett",
+        "Jayson Tatum",
+        "Jaylen Brown",
+        "Bob Cousy",
+        "John Havlicek",
+        "Kevin McHale",
+        "Robert Parish",
+        "Ray Allen",
+        "Rajon Rondo",
+        "Marcus Smart",
+        "Isaiah Thomas",
+        "Derrick White",
+        "Jrue Holiday",
+        "Shaquille O Neal"
+      ],
+      "exclude": [
+        "Michael Jordan"
+      ],
+      "aliases": {
+        "Shaquille O'Neal": [
+          "Shaq",
+          "Shaquille"
+        ],
+        "Michael Jordan": [
+          "Jordan"
+        ],
+        "Kobe Bryant": [
+          "Kobe"
+        ],
+        "LeBron James": [
+          "LeBron"
+        ],
+        "Stephen Curry": [
+          "Steph Curry",
+          "Steph"
+        ],
+        "Julius Erving": [
+          "Dr. J",
+          "Doctor J"
+        ],
+        "Anfernee Hardaway": [
+          "Penny Hardaway",
+          "Penny"
+        ],
+        "Penny Hardaway": [
+          "Anfernee Hardaway",
+          "Penny"
+        ],
+        "Magic Johnson": [
+          "Earvin Johnson",
+          "Earvin Magic Johnson",
+          "Magic"
+        ],
+        "Hakeem Olajuwon": [
+          "Akeem Olajuwon",
+          "Hakeem"
+        ],
+        "Giannis Antetokounmpo": [
+          "Giannis"
+        ],
+        "Nikola Jokic": [
+          "Jokic"
+        ],
+        "Shai Gilgeous-Alexander": [
+          "Shai"
+        ],
+        "Luka Doncic": [
+          "Luka"
+        ],
+        "Metta World Peace": [
+          "Ron Artest",
+          "Metta Sandiford-Artest",
+          "Artest",
+          "Metta"
+        ],
+        "Ron Artest": [
+          "Metta World Peace",
+          "Metta Sandiford-Artest",
+          "Artest",
+          "Metta"
+        ],
+        "Nene": [
+          "Nene Hilario"
+        ],
+        "Fat Lever": [
+          "Lafayette Lever"
+        ],
+        "Maurice Williams": [
+          "Mo Williams"
+        ],
+        "Mo Williams": [
+          "Maurice Williams"
+        ],
+        "Richard Hamilton": [
+          "Rip Hamilton"
+        ],
+        "Jason Williams": [
+          "White Chocolate"
+        ],
+        "Victor Wembanyama": [
+          "Wemby",
+          "Wembanyama"
+        ],
+        "Lafayette Lever": [
+          "Fat Lever"
+        ],
+        "Herbert Jones": [
+          "Herb Jones"
+        ],
+        "Herb Jones": [
+          "Herbert Jones"
+        ],
+        "Lew Alcindor": [
+          "Kareem Abdul-Jabbar"
+        ],
+        "Kareem Abdul-Jabbar": [
+          "Lew Alcindor",
+          "Kareem",
+          "Alcindor"
+        ],
+        "Jose Juan Barea": [
+          "JJ Barea",
+          "J.J. Barea"
+        ],
+        "Mahmoud Abdul-Rauf": [
+          "Chris Jackson"
+        ],
+        "Bison Dele": [
+          "Brian Williams"
+        ],
+        "Enes Freedom": [
+          "Enes Kanter"
+        ],
+        "Metta Sandiford-Artest": [
+          "Ron Artest",
+          "Metta World Peace",
+          "Artest",
+          "Metta"
+        ],
+        "World B. Free": [
+          "Lloyd Free"
+        ],
+        "Jamaal Wilkes": [
+          "Keith Wilkes"
+        ],
+        "Henry Walker": [
+          "Bill Walker"
+        ],
+        "Ronald Murray": [
+          "Flip Murray"
+        ]
+      },
+      "references": [
+        "https://en.wikipedia.org/wiki/Boston_Celtics_all-time_roster"
+      ]
+    },
+    {
+      "team": "Brooklyn Nets",
+      "history": "The same franchise as the New Jersey Nets, New York Nets and New York Americans counts, including ABA games.",
+      "familiar": [
+        "Jason Kidd",
+        "Julius Erving",
+        "Vince Carter",
+        "Kevin Durant",
+        "Kyrie Irving",
+        "Brook Lopez",
+        "Drazen Petrovic",
+        "Kerry Kittles",
+        "Kenyon Martin",
+        "Richard Jefferson",
+        "James Harden",
+        "Joe Johnson",
+        "Dangelo Russell",
+        "Ben Simmons",
+        "Deron Williams"
+      ],
+      "exclude": [
+        "Michael Jordan"
+      ],
+      "aliases": {
+        "Shaquille O'Neal": [
+          "Shaq",
+          "Shaquille"
+        ],
+        "Michael Jordan": [
+          "Jordan"
+        ],
+        "Kobe Bryant": [
+          "Kobe"
+        ],
+        "LeBron James": [
+          "LeBron"
+        ],
+        "Stephen Curry": [
+          "Steph Curry",
+          "Steph"
+        ],
+        "Julius Erving": [
+          "Dr. J",
+          "Doctor J"
+        ],
+        "Anfernee Hardaway": [
+          "Penny Hardaway",
+          "Penny"
+        ],
+        "Penny Hardaway": [
+          "Anfernee Hardaway",
+          "Penny"
+        ],
+        "Magic Johnson": [
+          "Earvin Johnson",
+          "Earvin Magic Johnson",
+          "Magic"
+        ],
+        "Hakeem Olajuwon": [
+          "Akeem Olajuwon",
+          "Hakeem"
+        ],
+        "Giannis Antetokounmpo": [
+          "Giannis"
+        ],
+        "Nikola Jokic": [
+          "Jokic"
+        ],
+        "Shai Gilgeous-Alexander": [
+          "Shai"
+        ],
+        "Luka Doncic": [
+          "Luka"
+        ],
+        "Metta World Peace": [
+          "Ron Artest",
+          "Metta Sandiford-Artest",
+          "Artest",
+          "Metta"
+        ],
+        "Ron Artest": [
+          "Metta World Peace",
+          "Metta Sandiford-Artest",
+          "Artest",
+          "Metta"
+        ],
+        "Nene": [
+          "Nene Hilario"
+        ],
+        "Fat Lever": [
+          "Lafayette Lever"
+        ],
+        "Maurice Williams": [
+          "Mo Williams"
+        ],
+        "Mo Williams": [
+          "Maurice Williams"
+        ],
+        "Richard Hamilton": [
+          "Rip Hamilton"
+        ],
+        "Jason Williams": [
+          "White Chocolate"
+        ],
+        "Victor Wembanyama": [
+          "Wemby",
+          "Wembanyama"
+        ],
+        "Lafayette Lever": [
+          "Fat Lever"
+        ],
+        "Herbert Jones": [
+          "Herb Jones"
+        ],
+        "Herb Jones": [
+          "Herbert Jones"
+        ],
+        "Lew Alcindor": [
+          "Kareem Abdul-Jabbar"
+        ],
+        "Kareem Abdul-Jabbar": [
+          "Lew Alcindor",
+          "Kareem",
+          "Alcindor"
+        ],
+        "Jose Juan Barea": [
+          "JJ Barea",
+          "J.J. Barea"
+        ],
+        "Mahmoud Abdul-Rauf": [
+          "Chris Jackson"
+        ],
+        "Bison Dele": [
+          "Brian Williams"
+        ],
+        "Enes Freedom": [
+          "Enes Kanter"
+        ],
+        "Metta Sandiford-Artest": [
+          "Ron Artest",
+          "Metta World Peace",
+          "Artest",
+          "Metta"
+        ],
+        "World B. Free": [
+          "Lloyd Free"
+        ],
+        "Jamaal Wilkes": [
+          "Keith Wilkes"
+        ],
+        "Henry Walker": [
+          "Bill Walker"
+        ],
+        "Ronald Murray": [
+          "Flip Murray"
+        ]
+      },
+      "references": [
+        "https://en.wikipedia.org/wiki/Brooklyn_Nets_all-time_roster"
+      ]
+    },
+    {
+      "team": "Charlotte Hornets",
+      "history": "Charlotte Hornets history from 1988–2002 and 2014 onward, and Charlotte Bobcats history from 2004–2014 count. The New Orleans franchise is separate.",
+      "familiar": [
+        "Kemba Walker",
+        "LaMelo Ball",
+        "Larry Johnson",
+        "Alonzo Mourning",
+        "Muggsy Bogues",
+        "Dell Curry",
+        "Gerald Wallace",
+        "Emeka Okafor",
+        "Glen Rice",
+        "Baron Davis",
+        "Boris Diaw",
+        "Terry Rozier",
+        "Brandon Miller",
+        "Miles Bridges",
+        "Mark Williams"
+      ],
+      "exclude": [
+        "Michael Jordan"
+      ],
+      "aliases": {
+        "Shaquille O'Neal": [
+          "Shaq",
+          "Shaquille"
+        ],
+        "Michael Jordan": [
+          "Jordan"
+        ],
+        "Kobe Bryant": [
+          "Kobe"
+        ],
+        "LeBron James": [
+          "LeBron"
+        ],
+        "Stephen Curry": [
+          "Steph Curry",
+          "Steph"
+        ],
+        "Julius Erving": [
+          "Dr. J",
+          "Doctor J"
+        ],
+        "Anfernee Hardaway": [
+          "Penny Hardaway",
+          "Penny"
+        ],
+        "Penny Hardaway": [
+          "Anfernee Hardaway",
+          "Penny"
+        ],
+        "Magic Johnson": [
+          "Earvin Johnson",
+          "Earvin Magic Johnson",
+          "Magic"
+        ],
+        "Hakeem Olajuwon": [
+          "Akeem Olajuwon",
+          "Hakeem"
+        ],
+        "Giannis Antetokounmpo": [
+          "Giannis"
+        ],
+        "Nikola Jokic": [
+          "Jokic"
+        ],
+        "Shai Gilgeous-Alexander": [
+          "Shai"
+        ],
+        "Luka Doncic": [
+          "Luka"
+        ],
+        "Metta World Peace": [
+          "Ron Artest",
+          "Metta Sandiford-Artest",
+          "Artest",
+          "Metta"
+        ],
+        "Ron Artest": [
+          "Metta World Peace",
+          "Metta Sandiford-Artest",
+          "Artest",
+          "Metta"
+        ],
+        "Nene": [
+          "Nene Hilario"
+        ],
+        "Fat Lever": [
+          "Lafayette Lever"
+        ],
+        "Maurice Williams": [
+          "Mo Williams"
+        ],
+        "Mo Williams": [
+          "Maurice Williams"
+        ],
+        "Richard Hamilton": [
+          "Rip Hamilton"
+        ],
+        "Jason Williams": [
+          "White Chocolate"
+        ],
+        "Victor Wembanyama": [
+          "Wemby",
+          "Wembanyama"
+        ],
+        "Lafayette Lever": [
+          "Fat Lever"
+        ],
+        "Herbert Jones": [
+          "Herb Jones"
+        ],
+        "Herb Jones": [
+          "Herbert Jones"
+        ],
+        "Lew Alcindor": [
+          "Kareem Abdul-Jabbar"
+        ],
+        "Kareem Abdul-Jabbar": [
+          "Lew Alcindor",
+          "Kareem",
+          "Alcindor"
+        ],
+        "Jose Juan Barea": [
+          "JJ Barea",
+          "J.J. Barea"
+        ],
+        "Mahmoud Abdul-Rauf": [
+          "Chris Jackson"
+        ],
+        "Bison Dele": [
+          "Brian Williams"
+        ],
+        "Enes Freedom": [
+          "Enes Kanter"
+        ],
+        "Metta Sandiford-Artest": [
+          "Ron Artest",
+          "Metta World Peace",
+          "Artest",
+          "Metta"
+        ],
+        "World B. Free": [
+          "Lloyd Free"
+        ],
+        "Jamaal Wilkes": [
+          "Keith Wilkes"
+        ],
+        "Henry Walker": [
+          "Bill Walker"
+        ],
+        "Ronald Murray": [
+          "Flip Murray"
+        ]
+      },
+      "references": [
+        "https://en.wikipedia.org/wiki/Charlotte_Hornets_all-time_roster",
+        "https://www.nba.com/hornets/news/buzz-back-nba-approves-bobcats-name-change-hornets",
+        "https://faq.sports-reference.com/portal/en/kb/articles/charlotte-hornets-bobcats-franchise-history"
+      ]
+    },
+    {
+      "team": "Chicago Bulls",
+      "history": "",
+      "familiar": [
+        "Michael Jordan",
+        "Scottie Pippen",
+        "Dennis Rodman",
+        "Derrick Rose",
+        "Jimmy Butler",
+        "Joakim Noah",
+        "DeMar DeRozan",
+        "Zach LaVine",
+        "Luol Deng",
+        "Horace Grant",
+        "Toni Kukoc",
+        "Artis Gilmore",
+        "Kirk Hinrich",
+        "Lonzo Ball",
+        "Coby White",
+        "Josh Giddey"
+      ],
+      "exclude": [
+        "Stephen Curry"
+      ],
+      "aliases": {
+        "Shaquille O'Neal": [
+          "Shaq",
+          "Shaquille"
+        ],
+        "Michael Jordan": [
+          "Jordan"
+        ],
+        "Kobe Bryant": [
+          "Kobe"
+        ],
+        "LeBron James": [
+          "LeBron"
+        ],
+        "Stephen Curry": [
+          "Steph Curry",
+          "Steph"
+        ],
+        "Julius Erving": [
+          "Dr. J",
+          "Doctor J"
+        ],
+        "Anfernee Hardaway": [
+          "Penny Hardaway",
+          "Penny"
+        ],
+        "Penny Hardaway": [
+          "Anfernee Hardaway",
+          "Penny"
+        ],
+        "Magic Johnson": [
+          "Earvin Johnson",
+          "Earvin Magic Johnson",
+          "Magic"
+        ],
+        "Hakeem Olajuwon": [
+          "Akeem Olajuwon",
+          "Hakeem"
+        ],
+        "Giannis Antetokounmpo": [
+          "Giannis"
+        ],
+        "Nikola Jokic": [
+          "Jokic"
+        ],
+        "Shai Gilgeous-Alexander": [
+          "Shai"
+        ],
+        "Luka Doncic": [
+          "Luka"
+        ],
+        "Metta World Peace": [
+          "Ron Artest",
+          "Metta Sandiford-Artest",
+          "Artest",
+          "Metta"
+        ],
+        "Ron Artest": [
+          "Metta World Peace",
+          "Metta Sandiford-Artest",
+          "Artest",
+          "Metta"
+        ],
+        "Nene": [
+          "Nene Hilario"
+        ],
+        "Fat Lever": [
+          "Lafayette Lever"
+        ],
+        "Maurice Williams": [
+          "Mo Williams"
+        ],
+        "Mo Williams": [
+          "Maurice Williams"
+        ],
+        "Richard Hamilton": [
+          "Rip Hamilton"
+        ],
+        "Jason Williams": [
+          "White Chocolate"
+        ],
+        "Victor Wembanyama": [
+          "Wemby",
+          "Wembanyama"
+        ],
+        "Lafayette Lever": [
+          "Fat Lever"
+        ],
+        "Herbert Jones": [
+          "Herb Jones"
+        ],
+        "Herb Jones": [
+          "Herbert Jones"
+        ],
+        "Lew Alcindor": [
+          "Kareem Abdul-Jabbar"
+        ],
+        "Kareem Abdul-Jabbar": [
+          "Lew Alcindor",
+          "Kareem",
+          "Alcindor"
+        ],
+        "Jose Juan Barea": [
+          "JJ Barea",
+          "J.J. Barea"
+        ],
+        "Mahmoud Abdul-Rauf": [
+          "Chris Jackson"
+        ],
+        "Bison Dele": [
+          "Brian Williams"
+        ],
+        "Enes Freedom": [
+          "Enes Kanter"
+        ],
+        "Metta Sandiford-Artest": [
+          "Ron Artest",
+          "Metta World Peace",
+          "Artest",
+          "Metta"
+        ],
+        "World B. Free": [
+          "Lloyd Free"
+        ],
+        "Jamaal Wilkes": [
+          "Keith Wilkes"
+        ],
+        "Henry Walker": [
+          "Bill Walker"
+        ],
+        "Ronald Murray": [
+          "Flip Murray"
+        ]
+      },
+      "references": [
+        "https://en.wikipedia.org/wiki/Chicago_Bulls_all-time_roster"
+      ]
+    },
+    {
+      "team": "Cleveland Cavaliers",
+      "history": "",
+      "familiar": [
+        "LeBron James",
+        "Kyrie Irving",
+        "Kevin Love",
+        "Mark Price",
+        "Brad Daugherty",
+        "Donovan Mitchell",
+        "Zydrunas Ilgauskas",
+        "Anderson Varejao",
+        "Austin Carr",
+        "Larry Nance",
+        "Andre Miller",
+        "Tristan Thompson",
+        "JR Smith",
+        "Darius Garland",
+        "Evan Mobley",
+        "Jarrett Allen"
+      ],
+      "exclude": [
+        "Michael Jordan"
+      ],
+      "aliases": {
+        "Shaquille O'Neal": [
+          "Shaq",
+          "Shaquille"
+        ],
+        "Michael Jordan": [
+          "Jordan"
+        ],
+        "Kobe Bryant": [
+          "Kobe"
+        ],
+        "LeBron James": [
+          "LeBron"
+        ],
+        "Stephen Curry": [
+          "Steph Curry",
+          "Steph"
+        ],
+        "Julius Erving": [
+          "Dr. J",
+          "Doctor J"
+        ],
+        "Anfernee Hardaway": [
+          "Penny Hardaway",
+          "Penny"
+        ],
+        "Penny Hardaway": [
+          "Anfernee Hardaway",
+          "Penny"
+        ],
+        "Magic Johnson": [
+          "Earvin Johnson",
+          "Earvin Magic Johnson",
+          "Magic"
+        ],
+        "Hakeem Olajuwon": [
+          "Akeem Olajuwon",
+          "Hakeem"
+        ],
+        "Giannis Antetokounmpo": [
+          "Giannis"
+        ],
+        "Nikola Jokic": [
+          "Jokic"
+        ],
+        "Shai Gilgeous-Alexander": [
+          "Shai"
+        ],
+        "Luka Doncic": [
+          "Luka"
+        ],
+        "Metta World Peace": [
+          "Ron Artest",
+          "Metta Sandiford-Artest",
+          "Artest",
+          "Metta"
+        ],
+        "Ron Artest": [
+          "Metta World Peace",
+          "Metta Sandiford-Artest",
+          "Artest",
+          "Metta"
+        ],
+        "Nene": [
+          "Nene Hilario"
+        ],
+        "Fat Lever": [
+          "Lafayette Lever"
+        ],
+        "Maurice Williams": [
+          "Mo Williams"
+        ],
+        "Mo Williams": [
+          "Maurice Williams"
+        ],
+        "Richard Hamilton": [
+          "Rip Hamilton"
+        ],
+        "Jason Williams": [
+          "White Chocolate"
+        ],
+        "Victor Wembanyama": [
+          "Wemby",
+          "Wembanyama"
+        ],
+        "Lafayette Lever": [
+          "Fat Lever"
+        ],
+        "Herbert Jones": [
+          "Herb Jones"
+        ],
+        "Herb Jones": [
+          "Herbert Jones"
+        ],
+        "Lew Alcindor": [
+          "Kareem Abdul-Jabbar"
+        ],
+        "Kareem Abdul-Jabbar": [
+          "Lew Alcindor",
+          "Kareem",
+          "Alcindor"
+        ],
+        "Jose Juan Barea": [
+          "JJ Barea",
+          "J.J. Barea"
+        ],
+        "Mahmoud Abdul-Rauf": [
+          "Chris Jackson"
+        ],
+        "Bison Dele": [
+          "Brian Williams"
+        ],
+        "Enes Freedom": [
+          "Enes Kanter"
+        ],
+        "Metta Sandiford-Artest": [
+          "Ron Artest",
+          "Metta World Peace",
+          "Artest",
+          "Metta"
+        ],
+        "World B. Free": [
+          "Lloyd Free"
+        ],
+        "Jamaal Wilkes": [
+          "Keith Wilkes"
+        ],
+        "Henry Walker": [
+          "Bill Walker"
+        ],
+        "Ronald Murray": [
+          "Flip Murray"
+        ]
+      },
+      "references": [
+        "https://en.wikipedia.org/wiki/Cleveland_Cavaliers_all-time_roster"
+      ]
+    },
+    {
+      "team": "Dallas Mavericks",
+      "history": "",
+      "familiar": [
+        "Dirk Nowitzki",
+        "Luka Doncic",
+        "Jason Kidd",
+        "Jason Terry",
+        "Michael Finley",
+        "Kyrie Irving",
+        "Rolando Blackman",
+        "Derek Harper",
+        "Tyson Chandler",
+        "JJ Barea",
+        "Steve Nash",
+        "Kristaps Porzingis",
+        "Mark Aguirre",
+        "Jamal Mashburn",
+        "Anthony Davis",
+        "Klay Thompson",
+        "Cooper Flagg"
+      ],
+      "exclude": [
+        "Michael Jordan"
+      ],
+      "aliases": {
+        "Shaquille O'Neal": [
+          "Shaq",
+          "Shaquille"
+        ],
+        "Michael Jordan": [
+          "Jordan"
+        ],
+        "Kobe Bryant": [
+          "Kobe"
+        ],
+        "LeBron James": [
+          "LeBron"
+        ],
+        "Stephen Curry": [
+          "Steph Curry",
+          "Steph"
+        ],
+        "Julius Erving": [
+          "Dr. J",
+          "Doctor J"
+        ],
+        "Anfernee Hardaway": [
+          "Penny Hardaway",
+          "Penny"
+        ],
+        "Penny Hardaway": [
+          "Anfernee Hardaway",
+          "Penny"
+        ],
+        "Magic Johnson": [
+          "Earvin Johnson",
+          "Earvin Magic Johnson",
+          "Magic"
+        ],
+        "Hakeem Olajuwon": [
+          "Akeem Olajuwon",
+          "Hakeem"
+        ],
+        "Giannis Antetokounmpo": [
+          "Giannis"
+        ],
+        "Nikola Jokic": [
+          "Jokic"
+        ],
+        "Shai Gilgeous-Alexander": [
+          "Shai"
+        ],
+        "Luka Doncic": [
+          "Luka"
+        ],
+        "Metta World Peace": [
+          "Ron Artest",
+          "Metta Sandiford-Artest",
+          "Artest",
+          "Metta"
+        ],
+        "Ron Artest": [
+          "Metta World Peace",
+          "Metta Sandiford-Artest",
+          "Artest",
+          "Metta"
+        ],
+        "Nene": [
+          "Nene Hilario"
+        ],
+        "Fat Lever": [
+          "Lafayette Lever"
+        ],
+        "Maurice Williams": [
+          "Mo Williams"
+        ],
+        "Mo Williams": [
+          "Maurice Williams"
+        ],
+        "Richard Hamilton": [
+          "Rip Hamilton"
+        ],
+        "Jason Williams": [
+          "White Chocolate"
+        ],
+        "Victor Wembanyama": [
+          "Wemby",
+          "Wembanyama"
+        ],
+        "Lafayette Lever": [
+          "Fat Lever"
+        ],
+        "Herbert Jones": [
+          "Herb Jones"
+        ],
+        "Herb Jones": [
+          "Herbert Jones"
+        ],
+        "Lew Alcindor": [
+          "Kareem Abdul-Jabbar"
+        ],
+        "Kareem Abdul-Jabbar": [
+          "Lew Alcindor",
+          "Kareem",
+          "Alcindor"
+        ],
+        "Jose Juan Barea": [
+          "JJ Barea",
+          "J.J. Barea"
+        ],
+        "Mahmoud Abdul-Rauf": [
+          "Chris Jackson"
+        ],
+        "Bison Dele": [
+          "Brian Williams"
+        ],
+        "Enes Freedom": [
+          "Enes Kanter"
+        ],
+        "Metta Sandiford-Artest": [
+          "Ron Artest",
+          "Metta World Peace",
+          "Artest",
+          "Metta"
+        ],
+        "World B. Free": [
+          "Lloyd Free"
+        ],
+        "Jamaal Wilkes": [
+          "Keith Wilkes"
+        ],
+        "Henry Walker": [
+          "Bill Walker"
+        ],
+        "Ronald Murray": [
+          "Flip Murray"
+        ]
+      },
+      "references": [
+        "https://en.wikipedia.org/wiki/Dallas_Mavericks_all-time_roster"
+      ]
+    },
+    {
+      "team": "Denver Nuggets",
+      "history": "The same ABA franchise as the Denver Rockets also counts.",
+      "familiar": [
+        "Nikola Jokic",
+        "Jamal Murray",
+        "Alex English",
+        "Carmelo Anthony",
+        "Dikembe Mutombo",
+        "Fat Lever",
+        "David Thompson",
+        "Dan Issel",
+        "Chauncey Billups",
+        "Kiki Vandeweghe",
+        "Antonio McDyess",
+        "Nene",
+        "Aaron Gordon",
+        "Michael Porter Jr",
+        "Bruce Brown",
+        "Russell Westbrook"
+      ],
+      "exclude": [
+        "Michael Jordan"
+      ],
+      "aliases": {
+        "Shaquille O'Neal": [
+          "Shaq",
+          "Shaquille"
+        ],
+        "Michael Jordan": [
+          "Jordan"
+        ],
+        "Kobe Bryant": [
+          "Kobe"
+        ],
+        "LeBron James": [
+          "LeBron"
+        ],
+        "Stephen Curry": [
+          "Steph Curry",
+          "Steph"
+        ],
+        "Julius Erving": [
+          "Dr. J",
+          "Doctor J"
+        ],
+        "Anfernee Hardaway": [
+          "Penny Hardaway",
+          "Penny"
+        ],
+        "Penny Hardaway": [
+          "Anfernee Hardaway",
+          "Penny"
+        ],
+        "Magic Johnson": [
+          "Earvin Johnson",
+          "Earvin Magic Johnson",
+          "Magic"
+        ],
+        "Hakeem Olajuwon": [
+          "Akeem Olajuwon",
+          "Hakeem"
+        ],
+        "Giannis Antetokounmpo": [
+          "Giannis"
+        ],
+        "Nikola Jokic": [
+          "Jokic"
+        ],
+        "Shai Gilgeous-Alexander": [
+          "Shai"
+        ],
+        "Luka Doncic": [
+          "Luka"
+        ],
+        "Metta World Peace": [
+          "Ron Artest",
+          "Metta Sandiford-Artest",
+          "Artest",
+          "Metta"
+        ],
+        "Ron Artest": [
+          "Metta World Peace",
+          "Metta Sandiford-Artest",
+          "Artest",
+          "Metta"
+        ],
+        "Nene": [
+          "Nene Hilario"
+        ],
+        "Fat Lever": [
+          "Lafayette Lever"
+        ],
+        "Maurice Williams": [
+          "Mo Williams"
+        ],
+        "Mo Williams": [
+          "Maurice Williams"
+        ],
+        "Richard Hamilton": [
+          "Rip Hamilton"
+        ],
+        "Jason Williams": [
+          "White Chocolate"
+        ],
+        "Victor Wembanyama": [
+          "Wemby",
+          "Wembanyama"
+        ],
+        "Lafayette Lever": [
+          "Fat Lever"
+        ],
+        "Herbert Jones": [
+          "Herb Jones"
+        ],
+        "Herb Jones": [
+          "Herbert Jones"
+        ],
+        "Lew Alcindor": [
+          "Kareem Abdul-Jabbar"
+        ],
+        "Kareem Abdul-Jabbar": [
+          "Lew Alcindor",
+          "Kareem",
+          "Alcindor"
+        ],
+        "Jose Juan Barea": [
+          "JJ Barea",
+          "J.J. Barea"
+        ],
+        "Mahmoud Abdul-Rauf": [
+          "Chris Jackson"
+        ],
+        "Bison Dele": [
+          "Brian Williams"
+        ],
+        "Enes Freedom": [
+          "Enes Kanter"
+        ],
+        "Metta Sandiford-Artest": [
+          "Ron Artest",
+          "Metta World Peace",
+          "Artest",
+          "Metta"
+        ],
+        "World B. Free": [
+          "Lloyd Free"
+        ],
+        "Jamaal Wilkes": [
+          "Keith Wilkes"
+        ],
+        "Henry Walker": [
+          "Bill Walker"
+        ],
+        "Ronald Murray": [
+          "Flip Murray"
+        ]
+      },
+      "references": [
+        "https://en.wikipedia.org/wiki/Denver_Nuggets_all-time_roster"
+      ]
+    },
+    {
+      "team": "Detroit Pistons",
+      "history": "NBA/BAA seasons as the Fort Wayne Pistons also count.",
+      "familiar": [
+        "Isiah Thomas",
+        "Ben Wallace",
+        "Chauncey Billups",
+        "Grant Hill",
+        "Joe Dumars",
+        "Richard Hamilton",
+        "Rasheed Wallace",
+        "John Salley",
+        "Dennis Rodman",
+        "Dave Bing",
+        "Vinnie Johnson",
+        "Tayshaun Prince",
+        "Andre Drummond",
+        "Blake Griffin",
+        "Cade Cunningham",
+        "Jalen Duren"
+      ],
+      "exclude": [
+        "Michael Jordan"
+      ],
+      "aliases": {
+        "Shaquille O'Neal": [
+          "Shaq",
+          "Shaquille"
+        ],
+        "Michael Jordan": [
+          "Jordan"
+        ],
+        "Kobe Bryant": [
+          "Kobe"
+        ],
+        "LeBron James": [
+          "LeBron"
+        ],
+        "Stephen Curry": [
+          "Steph Curry",
+          "Steph"
+        ],
+        "Julius Erving": [
+          "Dr. J",
+          "Doctor J"
+        ],
+        "Anfernee Hardaway": [
+          "Penny Hardaway",
+          "Penny"
+        ],
+        "Penny Hardaway": [
+          "Anfernee Hardaway",
+          "Penny"
+        ],
+        "Magic Johnson": [
+          "Earvin Johnson",
+          "Earvin Magic Johnson",
+          "Magic"
+        ],
+        "Hakeem Olajuwon": [
+          "Akeem Olajuwon",
+          "Hakeem"
+        ],
+        "Giannis Antetokounmpo": [
+          "Giannis"
+        ],
+        "Nikola Jokic": [
+          "Jokic"
+        ],
+        "Shai Gilgeous-Alexander": [
+          "Shai"
+        ],
+        "Luka Doncic": [
+          "Luka"
+        ],
+        "Metta World Peace": [
+          "Ron Artest",
+          "Metta Sandiford-Artest",
+          "Artest",
+          "Metta"
+        ],
+        "Ron Artest": [
+          "Metta World Peace",
+          "Metta Sandiford-Artest",
+          "Artest",
+          "Metta"
+        ],
+        "Nene": [
+          "Nene Hilario"
+        ],
+        "Fat Lever": [
+          "Lafayette Lever"
+        ],
+        "Maurice Williams": [
+          "Mo Williams"
+        ],
+        "Mo Williams": [
+          "Maurice Williams"
+        ],
+        "Richard Hamilton": [
+          "Rip Hamilton"
+        ],
+        "Jason Williams": [
+          "White Chocolate"
+        ],
+        "Victor Wembanyama": [
+          "Wemby",
+          "Wembanyama"
+        ],
+        "Lafayette Lever": [
+          "Fat Lever"
+        ],
+        "Herbert Jones": [
+          "Herb Jones"
+        ],
+        "Herb Jones": [
+          "Herbert Jones"
+        ],
+        "Lew Alcindor": [
+          "Kareem Abdul-Jabbar"
+        ],
+        "Kareem Abdul-Jabbar": [
+          "Lew Alcindor",
+          "Kareem",
+          "Alcindor"
+        ],
+        "Jose Juan Barea": [
+          "JJ Barea",
+          "J.J. Barea"
+        ],
+        "Mahmoud Abdul-Rauf": [
+          "Chris Jackson"
+        ],
+        "Bison Dele": [
+          "Brian Williams"
+        ],
+        "Enes Freedom": [
+          "Enes Kanter"
+        ],
+        "Metta Sandiford-Artest": [
+          "Ron Artest",
+          "Metta World Peace",
+          "Artest",
+          "Metta"
+        ],
+        "World B. Free": [
+          "Lloyd Free"
+        ],
+        "Jamaal Wilkes": [
+          "Keith Wilkes"
+        ],
+        "Henry Walker": [
+          "Bill Walker"
+        ],
+        "Ronald Murray": [
+          "Flip Murray"
+        ]
+      },
+      "references": [
+        "https://en.wikipedia.org/wiki/Detroit_Pistons_all-time_roster"
+      ]
+    },
+    {
+      "team": "Golden State Warriors",
+      "history": "Philadelphia Warriors and San Francisco Warriors seasons also count.",
+      "familiar": [
+        "Stephen Curry",
+        "Klay Thompson",
+        "Draymond Green",
+        "Wilt Chamberlain",
+        "Rick Barry",
+        "Chris Mullin",
+        "Kevin Durant",
+        "Tim Hardaway",
+        "Latrell Sprewell",
+        "Mitch Richmond",
+        "Nate Thurmond",
+        "Andre Iguodala",
+        "Andrew Wiggins",
+        "David Lee",
+        "Jordan Poole",
+        "Jimmy Butler"
+      ],
+      "exclude": [
+        "Michael Jordan"
+      ],
+      "aliases": {
+        "Shaquille O'Neal": [
+          "Shaq",
+          "Shaquille"
+        ],
+        "Michael Jordan": [
+          "Jordan"
+        ],
+        "Kobe Bryant": [
+          "Kobe"
+        ],
+        "LeBron James": [
+          "LeBron"
+        ],
+        "Stephen Curry": [
+          "Steph Curry",
+          "Steph"
+        ],
+        "Julius Erving": [
+          "Dr. J",
+          "Doctor J"
+        ],
+        "Anfernee Hardaway": [
+          "Penny Hardaway",
+          "Penny"
+        ],
+        "Penny Hardaway": [
+          "Anfernee Hardaway",
+          "Penny"
+        ],
+        "Magic Johnson": [
+          "Earvin Johnson",
+          "Earvin Magic Johnson",
+          "Magic"
+        ],
+        "Hakeem Olajuwon": [
+          "Akeem Olajuwon",
+          "Hakeem"
+        ],
+        "Giannis Antetokounmpo": [
+          "Giannis"
+        ],
+        "Nikola Jokic": [
+          "Jokic"
+        ],
+        "Shai Gilgeous-Alexander": [
+          "Shai"
+        ],
+        "Luka Doncic": [
+          "Luka"
+        ],
+        "Metta World Peace": [
+          "Ron Artest",
+          "Metta Sandiford-Artest",
+          "Artest",
+          "Metta"
+        ],
+        "Ron Artest": [
+          "Metta World Peace",
+          "Metta Sandiford-Artest",
+          "Artest",
+          "Metta"
+        ],
+        "Nene": [
+          "Nene Hilario"
+        ],
+        "Fat Lever": [
+          "Lafayette Lever"
+        ],
+        "Maurice Williams": [
+          "Mo Williams"
+        ],
+        "Mo Williams": [
+          "Maurice Williams"
+        ],
+        "Richard Hamilton": [
+          "Rip Hamilton"
+        ],
+        "Jason Williams": [
+          "White Chocolate"
+        ],
+        "Victor Wembanyama": [
+          "Wemby",
+          "Wembanyama"
+        ],
+        "Lafayette Lever": [
+          "Fat Lever"
+        ],
+        "Herbert Jones": [
+          "Herb Jones"
+        ],
+        "Herb Jones": [
+          "Herbert Jones"
+        ],
+        "Lew Alcindor": [
+          "Kareem Abdul-Jabbar"
+        ],
+        "Kareem Abdul-Jabbar": [
+          "Lew Alcindor",
+          "Kareem",
+          "Alcindor"
+        ],
+        "Jose Juan Barea": [
+          "JJ Barea",
+          "J.J. Barea"
+        ],
+        "Mahmoud Abdul-Rauf": [
+          "Chris Jackson"
+        ],
+        "Bison Dele": [
+          "Brian Williams"
+        ],
+        "Enes Freedom": [
+          "Enes Kanter"
+        ],
+        "Metta Sandiford-Artest": [
+          "Ron Artest",
+          "Metta World Peace",
+          "Artest",
+          "Metta"
+        ],
+        "World B. Free": [
+          "Lloyd Free"
+        ],
+        "Jamaal Wilkes": [
+          "Keith Wilkes"
+        ],
+        "Henry Walker": [
+          "Bill Walker"
+        ],
+        "Ronald Murray": [
+          "Flip Murray"
+        ]
+      },
+      "references": [
+        "https://en.wikipedia.org/wiki/Golden_State_Warriors_all-time_roster"
+      ]
+    },
+    {
+      "team": "Houston Rockets",
+      "history": "",
+      "familiar": [
+        "Hakeem Olajuwon",
+        "Yao Ming",
+        "James Harden",
+        "Moses Malone",
+        "Tracy McGrady",
+        "Steve Francis",
+        "Ralph Sampson",
+        "Kenny Smith",
+        "Vernon Maxwell",
+        "Robert Horry",
+        "Sam Cassell",
+        "Charles Barkley",
+        "Chris Paul",
+        "Russell Westbrook",
+        "Alperen Sengun",
+        "Jalen Green",
+        "Fred VanVleet"
+      ],
+      "exclude": [
+        "Michael Jordan"
+      ],
+      "aliases": {
+        "Shaquille O'Neal": [
+          "Shaq",
+          "Shaquille"
+        ],
+        "Michael Jordan": [
+          "Jordan"
+        ],
+        "Kobe Bryant": [
+          "Kobe"
+        ],
+        "LeBron James": [
+          "LeBron"
+        ],
+        "Stephen Curry": [
+          "Steph Curry",
+          "Steph"
+        ],
+        "Julius Erving": [
+          "Dr. J",
+          "Doctor J"
+        ],
+        "Anfernee Hardaway": [
+          "Penny Hardaway",
+          "Penny"
+        ],
+        "Penny Hardaway": [
+          "Anfernee Hardaway",
+          "Penny"
+        ],
+        "Magic Johnson": [
+          "Earvin Johnson",
+          "Earvin Magic Johnson",
+          "Magic"
+        ],
+        "Hakeem Olajuwon": [
+          "Akeem Olajuwon",
+          "Hakeem"
+        ],
+        "Giannis Antetokounmpo": [
+          "Giannis"
+        ],
+        "Nikola Jokic": [
+          "Jokic"
+        ],
+        "Shai Gilgeous-Alexander": [
+          "Shai"
+        ],
+        "Luka Doncic": [
+          "Luka"
+        ],
+        "Metta World Peace": [
+          "Ron Artest",
+          "Metta Sandiford-Artest",
+          "Artest",
+          "Metta"
+        ],
+        "Ron Artest": [
+          "Metta World Peace",
+          "Metta Sandiford-Artest",
+          "Artest",
+          "Metta"
+        ],
+        "Nene": [
+          "Nene Hilario"
+        ],
+        "Fat Lever": [
+          "Lafayette Lever"
+        ],
+        "Maurice Williams": [
+          "Mo Williams"
+        ],
+        "Mo Williams": [
+          "Maurice Williams"
+        ],
+        "Richard Hamilton": [
+          "Rip Hamilton"
+        ],
+        "Jason Williams": [
+          "White Chocolate"
+        ],
+        "Victor Wembanyama": [
+          "Wemby",
+          "Wembanyama"
+        ],
+        "Lafayette Lever": [
+          "Fat Lever"
+        ],
+        "Herbert Jones": [
+          "Herb Jones"
+        ],
+        "Herb Jones": [
+          "Herbert Jones"
+        ],
+        "Lew Alcindor": [
+          "Kareem Abdul-Jabbar"
+        ],
+        "Kareem Abdul-Jabbar": [
+          "Lew Alcindor",
+          "Kareem",
+          "Alcindor"
+        ],
+        "Jose Juan Barea": [
+          "JJ Barea",
+          "J.J. Barea"
+        ],
+        "Mahmoud Abdul-Rauf": [
+          "Chris Jackson"
+        ],
+        "Bison Dele": [
+          "Brian Williams"
+        ],
+        "Enes Freedom": [
+          "Enes Kanter"
+        ],
+        "Metta Sandiford-Artest": [
+          "Ron Artest",
+          "Metta World Peace",
+          "Artest",
+          "Metta"
+        ],
+        "World B. Free": [
+          "Lloyd Free"
+        ],
+        "Jamaal Wilkes": [
+          "Keith Wilkes"
+        ],
+        "Henry Walker": [
+          "Bill Walker"
+        ],
+        "Ronald Murray": [
+          "Flip Murray"
+        ]
+      },
+      "references": [
+        "https://en.wikipedia.org/wiki/Houston_Rockets_all-time_roster"
+      ]
+    },
+    {
+      "team": "Indiana Pacers",
+      "history": "",
+      "familiar": [
+        "Reggie Miller",
+        "Paul George",
+        "Jermaine O Neal",
+        "Rik Smits",
+        "Tyrese Haliburton",
+        "Detlef Schrempf",
+        "Mel Daniels",
+        "Roger Brown",
+        "George McGinnis",
+        "Mark Jackson",
+        "Jalen Rose",
+        "Danny Granger",
+        "Victor Oladipo",
+        "Domantas Sabonis",
+        "Myles Turner",
+        "Pascal Siakam",
+        "Lance Stephenson"
+      ],
+      "exclude": [
+        "Michael Jordan"
+      ],
+      "aliases": {
+        "Shaquille O'Neal": [
+          "Shaq",
+          "Shaquille"
+        ],
+        "Michael Jordan": [
+          "Jordan"
+        ],
+        "Kobe Bryant": [
+          "Kobe"
+        ],
+        "LeBron James": [
+          "LeBron"
+        ],
+        "Stephen Curry": [
+          "Steph Curry",
+          "Steph"
+        ],
+        "Julius Erving": [
+          "Dr. J",
+          "Doctor J"
+        ],
+        "Anfernee Hardaway": [
+          "Penny Hardaway",
+          "Penny"
+        ],
+        "Penny Hardaway": [
+          "Anfernee Hardaway",
+          "Penny"
+        ],
+        "Magic Johnson": [
+          "Earvin Johnson",
+          "Earvin Magic Johnson",
+          "Magic"
+        ],
+        "Hakeem Olajuwon": [
+          "Akeem Olajuwon",
+          "Hakeem"
+        ],
+        "Giannis Antetokounmpo": [
+          "Giannis"
+        ],
+        "Nikola Jokic": [
+          "Jokic"
+        ],
+        "Shai Gilgeous-Alexander": [
+          "Shai"
+        ],
+        "Luka Doncic": [
+          "Luka"
+        ],
+        "Metta World Peace": [
+          "Ron Artest",
+          "Metta Sandiford-Artest",
+          "Artest",
+          "Metta"
+        ],
+        "Ron Artest": [
+          "Metta World Peace",
+          "Metta Sandiford-Artest",
+          "Artest",
+          "Metta"
+        ],
+        "Nene": [
+          "Nene Hilario"
+        ],
+        "Fat Lever": [
+          "Lafayette Lever"
+        ],
+        "Maurice Williams": [
+          "Mo Williams"
+        ],
+        "Mo Williams": [
+          "Maurice Williams"
+        ],
+        "Richard Hamilton": [
+          "Rip Hamilton"
+        ],
+        "Jason Williams": [
+          "White Chocolate"
+        ],
+        "Victor Wembanyama": [
+          "Wemby",
+          "Wembanyama"
+        ],
+        "Lafayette Lever": [
+          "Fat Lever"
+        ],
+        "Herbert Jones": [
+          "Herb Jones"
+        ],
+        "Herb Jones": [
+          "Herbert Jones"
+        ],
+        "Lew Alcindor": [
+          "Kareem Abdul-Jabbar"
+        ],
+        "Kareem Abdul-Jabbar": [
+          "Lew Alcindor",
+          "Kareem",
+          "Alcindor"
+        ],
+        "Jose Juan Barea": [
+          "JJ Barea",
+          "J.J. Barea"
+        ],
+        "Mahmoud Abdul-Rauf": [
+          "Chris Jackson"
+        ],
+        "Bison Dele": [
+          "Brian Williams"
+        ],
+        "Enes Freedom": [
+          "Enes Kanter"
+        ],
+        "Metta Sandiford-Artest": [
+          "Ron Artest",
+          "Metta World Peace",
+          "Artest",
+          "Metta"
+        ],
+        "World B. Free": [
+          "Lloyd Free"
+        ],
+        "Jamaal Wilkes": [
+          "Keith Wilkes"
+        ],
+        "Henry Walker": [
+          "Bill Walker"
+        ],
+        "Ronald Murray": [
+          "Flip Murray"
+        ]
+      },
+      "references": [
+        "https://en.wikipedia.org/wiki/Indiana_Pacers_all-time_roster"
+      ]
+    },
+    {
+      "team": "Los Angeles Clippers",
+      "history": "Buffalo Braves and San Diego Clippers seasons also count.",
+      "familiar": [
+        "Blake Griffin",
+        "Chris Paul",
+        "DeAndre Jordan",
+        "Kawhi Leonard",
+        "Paul George",
+        "Bob McAdoo",
+        "Elton Brand",
+        "Corey Maggette",
+        "Lamar Odom",
+        "Eric Gordon",
+        "Lou Williams",
+        "Jamal Crawford",
+        "Danny Manning",
+        "Norm Nixon",
+        "Ron Harper",
+        "James Harden",
+        "Norman Powell",
+        "Ivica Zubac"
+      ],
+      "exclude": [
+        "Michael Jordan"
+      ],
+      "aliases": {
+        "Shaquille O'Neal": [
+          "Shaq",
+          "Shaquille"
+        ],
+        "Michael Jordan": [
+          "Jordan"
+        ],
+        "Kobe Bryant": [
+          "Kobe"
+        ],
+        "LeBron James": [
+          "LeBron"
+        ],
+        "Stephen Curry": [
+          "Steph Curry",
+          "Steph"
+        ],
+        "Julius Erving": [
+          "Dr. J",
+          "Doctor J"
+        ],
+        "Anfernee Hardaway": [
+          "Penny Hardaway",
+          "Penny"
+        ],
+        "Penny Hardaway": [
+          "Anfernee Hardaway",
+          "Penny"
+        ],
+        "Magic Johnson": [
+          "Earvin Johnson",
+          "Earvin Magic Johnson",
+          "Magic"
+        ],
+        "Hakeem Olajuwon": [
+          "Akeem Olajuwon",
+          "Hakeem"
+        ],
+        "Giannis Antetokounmpo": [
+          "Giannis"
+        ],
+        "Nikola Jokic": [
+          "Jokic"
+        ],
+        "Shai Gilgeous-Alexander": [
+          "Shai"
+        ],
+        "Luka Doncic": [
+          "Luka"
+        ],
+        "Metta World Peace": [
+          "Ron Artest",
+          "Metta Sandiford-Artest",
+          "Artest",
+          "Metta"
+        ],
+        "Ron Artest": [
+          "Metta World Peace",
+          "Metta Sandiford-Artest",
+          "Artest",
+          "Metta"
+        ],
+        "Nene": [
+          "Nene Hilario"
+        ],
+        "Fat Lever": [
+          "Lafayette Lever"
+        ],
+        "Maurice Williams": [
+          "Mo Williams"
+        ],
+        "Mo Williams": [
+          "Maurice Williams"
+        ],
+        "Richard Hamilton": [
+          "Rip Hamilton"
+        ],
+        "Jason Williams": [
+          "White Chocolate"
+        ],
+        "Victor Wembanyama": [
+          "Wemby",
+          "Wembanyama"
+        ],
+        "Lafayette Lever": [
+          "Fat Lever"
+        ],
+        "Herbert Jones": [
+          "Herb Jones"
+        ],
+        "Herb Jones": [
+          "Herbert Jones"
+        ],
+        "Lew Alcindor": [
+          "Kareem Abdul-Jabbar"
+        ],
+        "Kareem Abdul-Jabbar": [
+          "Lew Alcindor",
+          "Kareem",
+          "Alcindor"
+        ],
+        "Jose Juan Barea": [
+          "JJ Barea",
+          "J.J. Barea"
+        ],
+        "Mahmoud Abdul-Rauf": [
+          "Chris Jackson"
+        ],
+        "Bison Dele": [
+          "Brian Williams"
+        ],
+        "Enes Freedom": [
+          "Enes Kanter"
+        ],
+        "Metta Sandiford-Artest": [
+          "Ron Artest",
+          "Metta World Peace",
+          "Artest",
+          "Metta"
+        ],
+        "World B. Free": [
+          "Lloyd Free"
+        ],
+        "Jamaal Wilkes": [
+          "Keith Wilkes"
+        ],
+        "Henry Walker": [
+          "Bill Walker"
+        ],
+        "Ronald Murray": [
+          "Flip Murray"
+        ]
+      },
+      "references": [
+        "https://en.wikipedia.org/wiki/Los_Angeles_Clippers_all-time_roster"
+      ]
+    },
+    {
+      "team": "Los Angeles Lakers",
+      "history": "Minneapolis Lakers NBA/BAA seasons also count; NBL-only appearances do not.",
+      "familiar": [
+        "Kobe Bryant",
+        "Shaquille O Neal",
+        "Magic Johnson",
+        "Kareem Abdul Jabbar",
+        "Jerry West",
+        "LeBron James",
+        "George Mikan",
+        "Wilt Chamberlain",
+        "Elgin Baylor",
+        "James Worthy",
+        "Pau Gasol",
+        "Derek Fisher",
+        "Andrew Bynum",
+        "Ron Artest",
+        "Dwight Howard",
+        "Luka Doncic",
+        "Anthony Davis",
+        "Austin Reaves"
+      ],
+      "exclude": [
+        "Michael Jordan"
+      ],
+      "aliases": {
+        "Shaquille O'Neal": [
+          "Shaq",
+          "Shaquille"
+        ],
+        "Michael Jordan": [
+          "Jordan"
+        ],
+        "Kobe Bryant": [
+          "Kobe"
+        ],
+        "LeBron James": [
+          "LeBron"
+        ],
+        "Stephen Curry": [
+          "Steph Curry",
+          "Steph"
+        ],
+        "Julius Erving": [
+          "Dr. J",
+          "Doctor J"
+        ],
+        "Anfernee Hardaway": [
+          "Penny Hardaway",
+          "Penny"
+        ],
+        "Penny Hardaway": [
+          "Anfernee Hardaway",
+          "Penny"
+        ],
+        "Magic Johnson": [
+          "Earvin Johnson",
+          "Earvin Magic Johnson",
+          "Magic"
+        ],
+        "Hakeem Olajuwon": [
+          "Akeem Olajuwon",
+          "Hakeem"
+        ],
+        "Giannis Antetokounmpo": [
+          "Giannis"
+        ],
+        "Nikola Jokic": [
+          "Jokic"
+        ],
+        "Shai Gilgeous-Alexander": [
+          "Shai"
+        ],
+        "Luka Doncic": [
+          "Luka"
+        ],
+        "Metta World Peace": [
+          "Ron Artest",
+          "Metta Sandiford-Artest",
+          "Artest",
+          "Metta"
+        ],
+        "Ron Artest": [
+          "Metta World Peace",
+          "Metta Sandiford-Artest",
+          "Artest",
+          "Metta"
+        ],
+        "Nene": [
+          "Nene Hilario"
+        ],
+        "Fat Lever": [
+          "Lafayette Lever"
+        ],
+        "Maurice Williams": [
+          "Mo Williams"
+        ],
+        "Mo Williams": [
+          "Maurice Williams"
+        ],
+        "Richard Hamilton": [
+          "Rip Hamilton"
+        ],
+        "Jason Williams": [
+          "White Chocolate"
+        ],
+        "Victor Wembanyama": [
+          "Wemby",
+          "Wembanyama"
+        ],
+        "Lafayette Lever": [
+          "Fat Lever"
+        ],
+        "Herbert Jones": [
+          "Herb Jones"
+        ],
+        "Herb Jones": [
+          "Herbert Jones"
+        ],
+        "Lew Alcindor": [
+          "Kareem Abdul-Jabbar"
+        ],
+        "Kareem Abdul-Jabbar": [
+          "Lew Alcindor",
+          "Kareem",
+          "Alcindor"
+        ],
+        "Jose Juan Barea": [
+          "JJ Barea",
+          "J.J. Barea"
+        ],
+        "Mahmoud Abdul-Rauf": [
+          "Chris Jackson"
+        ],
+        "Bison Dele": [
+          "Brian Williams"
+        ],
+        "Enes Freedom": [
+          "Enes Kanter"
+        ],
+        "Metta Sandiford-Artest": [
+          "Ron Artest",
+          "Metta World Peace",
+          "Artest",
+          "Metta"
+        ],
+        "World B. Free": [
+          "Lloyd Free"
+        ],
+        "Jamaal Wilkes": [
+          "Keith Wilkes"
+        ],
+        "Henry Walker": [
+          "Bill Walker"
+        ],
+        "Ronald Murray": [
+          "Flip Murray"
+        ]
+      },
+      "references": [
+        "https://en.wikipedia.org/wiki/Los_Angeles_Lakers_all-time_roster"
+      ]
+    },
+    {
+      "team": "Memphis Grizzlies",
+      "history": "Vancouver Grizzlies seasons also count.",
+      "familiar": [
+        "Marc Gasol",
+        "Zach Randolph",
+        "Mike Conley",
+        "Ja Morant",
+        "Jaren Jackson Jr",
+        "Shane Battier",
+        "Pau Gasol",
+        "Rudy Gay",
+        "OJ Mayo",
+        "Shareef Abdur Rahim",
+        "Desmond Bane",
+        "Dillon Brooks",
+        "Tony Allen",
+        "Jonas Valanciunas",
+        "Bryant Reeves"
+      ],
+      "exclude": [
+        "Michael Jordan"
+      ],
+      "aliases": {
+        "Shaquille O'Neal": [
+          "Shaq",
+          "Shaquille"
+        ],
+        "Michael Jordan": [
+          "Jordan"
+        ],
+        "Kobe Bryant": [
+          "Kobe"
+        ],
+        "LeBron James": [
+          "LeBron"
+        ],
+        "Stephen Curry": [
+          "Steph Curry",
+          "Steph"
+        ],
+        "Julius Erving": [
+          "Dr. J",
+          "Doctor J"
+        ],
+        "Anfernee Hardaway": [
+          "Penny Hardaway",
+          "Penny"
+        ],
+        "Penny Hardaway": [
+          "Anfernee Hardaway",
+          "Penny"
+        ],
+        "Magic Johnson": [
+          "Earvin Johnson",
+          "Earvin Magic Johnson",
+          "Magic"
+        ],
+        "Hakeem Olajuwon": [
+          "Akeem Olajuwon",
+          "Hakeem"
+        ],
+        "Giannis Antetokounmpo": [
+          "Giannis"
+        ],
+        "Nikola Jokic": [
+          "Jokic"
+        ],
+        "Shai Gilgeous-Alexander": [
+          "Shai"
+        ],
+        "Luka Doncic": [
+          "Luka"
+        ],
+        "Metta World Peace": [
+          "Ron Artest",
+          "Metta Sandiford-Artest",
+          "Artest",
+          "Metta"
+        ],
+        "Ron Artest": [
+          "Metta World Peace",
+          "Metta Sandiford-Artest",
+          "Artest",
+          "Metta"
+        ],
+        "Nene": [
+          "Nene Hilario"
+        ],
+        "Fat Lever": [
+          "Lafayette Lever"
+        ],
+        "Maurice Williams": [
+          "Mo Williams"
+        ],
+        "Mo Williams": [
+          "Maurice Williams"
+        ],
+        "Richard Hamilton": [
+          "Rip Hamilton"
+        ],
+        "Jason Williams": [
+          "White Chocolate"
+        ],
+        "Victor Wembanyama": [
+          "Wemby",
+          "Wembanyama"
+        ],
+        "Lafayette Lever": [
+          "Fat Lever"
+        ],
+        "Herbert Jones": [
+          "Herb Jones"
+        ],
+        "Herb Jones": [
+          "Herbert Jones"
+        ],
+        "Lew Alcindor": [
+          "Kareem Abdul-Jabbar"
+        ],
+        "Kareem Abdul-Jabbar": [
+          "Lew Alcindor",
+          "Kareem",
+          "Alcindor"
+        ],
+        "Jose Juan Barea": [
+          "JJ Barea",
+          "J.J. Barea"
+        ],
+        "Mahmoud Abdul-Rauf": [
+          "Chris Jackson"
+        ],
+        "Bison Dele": [
+          "Brian Williams"
+        ],
+        "Enes Freedom": [
+          "Enes Kanter"
+        ],
+        "Metta Sandiford-Artest": [
+          "Ron Artest",
+          "Metta World Peace",
+          "Artest",
+          "Metta"
+        ],
+        "World B. Free": [
+          "Lloyd Free"
+        ],
+        "Jamaal Wilkes": [
+          "Keith Wilkes"
+        ],
+        "Henry Walker": [
+          "Bill Walker"
+        ],
+        "Ronald Murray": [
+          "Flip Murray"
+        ]
+      },
+      "references": [
+        "https://en.wikipedia.org/wiki/Memphis_Grizzlies_all-time_roster"
+      ]
+    },
+    {
+      "team": "Miami Heat",
+      "history": "",
+      "familiar": [
+        "Dwyane Wade",
+        "LeBron James",
+        "Chris Bosh",
+        "Alonzo Mourning",
+        "Jimmy Butler",
+        "Udonis Haslem",
+        "Shaquille O Neal",
+        "Tim Hardaway",
+        "Glen Rice",
+        "Rony Seikaly",
+        "Eddie Jones",
+        "Antoine Walker",
+        "Shane Battier",
+        "Ray Allen",
+        "Goran Dragic",
+        "Bam Adebayo",
+        "Tyler Herro"
+      ],
+      "exclude": [
+        "Michael Jordan"
+      ],
+      "aliases": {
+        "Shaquille O'Neal": [
+          "Shaq",
+          "Shaquille"
+        ],
+        "Michael Jordan": [
+          "Jordan"
+        ],
+        "Kobe Bryant": [
+          "Kobe"
+        ],
+        "LeBron James": [
+          "LeBron"
+        ],
+        "Stephen Curry": [
+          "Steph Curry",
+          "Steph"
+        ],
+        "Julius Erving": [
+          "Dr. J",
+          "Doctor J"
+        ],
+        "Anfernee Hardaway": [
+          "Penny Hardaway",
+          "Penny"
+        ],
+        "Penny Hardaway": [
+          "Anfernee Hardaway",
+          "Penny"
+        ],
+        "Magic Johnson": [
+          "Earvin Johnson",
+          "Earvin Magic Johnson",
+          "Magic"
+        ],
+        "Hakeem Olajuwon": [
+          "Akeem Olajuwon",
+          "Hakeem"
+        ],
+        "Giannis Antetokounmpo": [
+          "Giannis"
+        ],
+        "Nikola Jokic": [
+          "Jokic"
+        ],
+        "Shai Gilgeous-Alexander": [
+          "Shai"
+        ],
+        "Luka Doncic": [
+          "Luka"
+        ],
+        "Metta World Peace": [
+          "Ron Artest",
+          "Metta Sandiford-Artest",
+          "Artest",
+          "Metta"
+        ],
+        "Ron Artest": [
+          "Metta World Peace",
+          "Metta Sandiford-Artest",
+          "Artest",
+          "Metta"
+        ],
+        "Nene": [
+          "Nene Hilario"
+        ],
+        "Fat Lever": [
+          "Lafayette Lever"
+        ],
+        "Maurice Williams": [
+          "Mo Williams"
+        ],
+        "Mo Williams": [
+          "Maurice Williams"
+        ],
+        "Richard Hamilton": [
+          "Rip Hamilton"
+        ],
+        "Jason Williams": [
+          "White Chocolate"
+        ],
+        "Victor Wembanyama": [
+          "Wemby",
+          "Wembanyama"
+        ],
+        "Lafayette Lever": [
+          "Fat Lever"
+        ],
+        "Herbert Jones": [
+          "Herb Jones"
+        ],
+        "Herb Jones": [
+          "Herbert Jones"
+        ],
+        "Lew Alcindor": [
+          "Kareem Abdul-Jabbar"
+        ],
+        "Kareem Abdul-Jabbar": [
+          "Lew Alcindor",
+          "Kareem",
+          "Alcindor"
+        ],
+        "Jose Juan Barea": [
+          "JJ Barea",
+          "J.J. Barea"
+        ],
+        "Mahmoud Abdul-Rauf": [
+          "Chris Jackson"
+        ],
+        "Bison Dele": [
+          "Brian Williams"
+        ],
+        "Enes Freedom": [
+          "Enes Kanter"
+        ],
+        "Metta Sandiford-Artest": [
+          "Ron Artest",
+          "Metta World Peace",
+          "Artest",
+          "Metta"
+        ],
+        "World B. Free": [
+          "Lloyd Free"
+        ],
+        "Jamaal Wilkes": [
+          "Keith Wilkes"
+        ],
+        "Henry Walker": [
+          "Bill Walker"
+        ],
+        "Ronald Murray": [
+          "Flip Murray"
+        ]
+      },
+      "references": [
+        "https://en.wikipedia.org/wiki/Miami_Heat_all-time_roster"
+      ]
+    },
+    {
+      "team": "Milwaukee Bucks",
+      "history": "",
+      "familiar": [
+        "Kareem Abdul Jabbar",
+        "Giannis Antetokounmpo",
+        "Khris Middleton",
+        "Oscar Robertson",
+        "Sidney Moncrief",
+        "Ray Allen",
+        "Glenn Robinson",
+        "Michael Redd",
+        "Andrew Bogut",
+        "Brandon Jennings",
+        "Sam Cassell",
+        "Bob Dandridge",
+        "Marques Johnson",
+        "Brook Lopez",
+        "Jrue Holiday",
+        "Damian Lillard"
+      ],
+      "exclude": [
+        "Michael Jordan"
+      ],
+      "aliases": {
+        "Shaquille O'Neal": [
+          "Shaq",
+          "Shaquille"
+        ],
+        "Michael Jordan": [
+          "Jordan"
+        ],
+        "Kobe Bryant": [
+          "Kobe"
+        ],
+        "LeBron James": [
+          "LeBron"
+        ],
+        "Stephen Curry": [
+          "Steph Curry",
+          "Steph"
+        ],
+        "Julius Erving": [
+          "Dr. J",
+          "Doctor J"
+        ],
+        "Anfernee Hardaway": [
+          "Penny Hardaway",
+          "Penny"
+        ],
+        "Penny Hardaway": [
+          "Anfernee Hardaway",
+          "Penny"
+        ],
+        "Magic Johnson": [
+          "Earvin Johnson",
+          "Earvin Magic Johnson",
+          "Magic"
+        ],
+        "Hakeem Olajuwon": [
+          "Akeem Olajuwon",
+          "Hakeem"
+        ],
+        "Giannis Antetokounmpo": [
+          "Giannis"
+        ],
+        "Nikola Jokic": [
+          "Jokic"
+        ],
+        "Shai Gilgeous-Alexander": [
+          "Shai"
+        ],
+        "Luka Doncic": [
+          "Luka"
+        ],
+        "Metta World Peace": [
+          "Ron Artest",
+          "Metta Sandiford-Artest",
+          "Artest",
+          "Metta"
+        ],
+        "Ron Artest": [
+          "Metta World Peace",
+          "Metta Sandiford-Artest",
+          "Artest",
+          "Metta"
+        ],
+        "Nene": [
+          "Nene Hilario"
+        ],
+        "Fat Lever": [
+          "Lafayette Lever"
+        ],
+        "Maurice Williams": [
+          "Mo Williams"
+        ],
+        "Mo Williams": [
+          "Maurice Williams"
+        ],
+        "Richard Hamilton": [
+          "Rip Hamilton"
+        ],
+        "Jason Williams": [
+          "White Chocolate"
+        ],
+        "Victor Wembanyama": [
+          "Wemby",
+          "Wembanyama"
+        ],
+        "Lafayette Lever": [
+          "Fat Lever"
+        ],
+        "Herbert Jones": [
+          "Herb Jones"
+        ],
+        "Herb Jones": [
+          "Herbert Jones"
+        ],
+        "Lew Alcindor": [
+          "Kareem Abdul-Jabbar"
+        ],
+        "Kareem Abdul-Jabbar": [
+          "Lew Alcindor",
+          "Kareem",
+          "Alcindor"
+        ],
+        "Jose Juan Barea": [
+          "JJ Barea",
+          "J.J. Barea"
+        ],
+        "Mahmoud Abdul-Rauf": [
+          "Chris Jackson"
+        ],
+        "Bison Dele": [
+          "Brian Williams"
+        ],
+        "Enes Freedom": [
+          "Enes Kanter"
+        ],
+        "Metta Sandiford-Artest": [
+          "Ron Artest",
+          "Metta World Peace",
+          "Artest",
+          "Metta"
+        ],
+        "World B. Free": [
+          "Lloyd Free"
+        ],
+        "Jamaal Wilkes": [
+          "Keith Wilkes"
+        ],
+        "Henry Walker": [
+          "Bill Walker"
+        ],
+        "Ronald Murray": [
+          "Flip Murray"
+        ]
+      },
+      "references": [
+        "https://en.wikipedia.org/wiki/Milwaukee_Bucks_all-time_roster",
+        "https://www.nba.com/lakers/history/alumni/kareem-abdul-jabbar",
+        "https://www.hoophall.com/hall-of-famers/kareem-abdul-jabbar"
+      ]
+    },
+    {
+      "team": "Minnesota Timberwolves",
+      "history": "",
+      "familiar": [
+        "Kevin Garnett",
+        "Kevin Love",
+        "Anthony Edwards",
+        "Karl Anthony Towns",
+        "Ricky Rubio",
+        "Sam Cassell",
+        "Stephon Marbury",
+        "Wally Szczerbiak",
+        "Tom Gugliotta",
+        "Latrell Sprewell",
+        "Jimmy Butler",
+        "Zach LaVine",
+        "Rudy Gobert",
+        "Mike Conley",
+        "Naz Reid",
+        "Jaden McDaniels",
+        "Julius Randle"
+      ],
+      "exclude": [
+        "Michael Jordan"
+      ],
+      "aliases": {
+        "Shaquille O'Neal": [
+          "Shaq",
+          "Shaquille"
+        ],
+        "Michael Jordan": [
+          "Jordan"
+        ],
+        "Kobe Bryant": [
+          "Kobe"
+        ],
+        "LeBron James": [
+          "LeBron"
+        ],
+        "Stephen Curry": [
+          "Steph Curry",
+          "Steph"
+        ],
+        "Julius Erving": [
+          "Dr. J",
+          "Doctor J"
+        ],
+        "Anfernee Hardaway": [
+          "Penny Hardaway",
+          "Penny"
+        ],
+        "Penny Hardaway": [
+          "Anfernee Hardaway",
+          "Penny"
+        ],
+        "Magic Johnson": [
+          "Earvin Johnson",
+          "Earvin Magic Johnson",
+          "Magic"
+        ],
+        "Hakeem Olajuwon": [
+          "Akeem Olajuwon",
+          "Hakeem"
+        ],
+        "Giannis Antetokounmpo": [
+          "Giannis"
+        ],
+        "Nikola Jokic": [
+          "Jokic"
+        ],
+        "Shai Gilgeous-Alexander": [
+          "Shai"
+        ],
+        "Luka Doncic": [
+          "Luka"
+        ],
+        "Metta World Peace": [
+          "Ron Artest",
+          "Metta Sandiford-Artest",
+          "Artest",
+          "Metta"
+        ],
+        "Ron Artest": [
+          "Metta World Peace",
+          "Metta Sandiford-Artest",
+          "Artest",
+          "Metta"
+        ],
+        "Nene": [
+          "Nene Hilario"
+        ],
+        "Fat Lever": [
+          "Lafayette Lever"
+        ],
+        "Maurice Williams": [
+          "Mo Williams"
+        ],
+        "Mo Williams": [
+          "Maurice Williams"
+        ],
+        "Richard Hamilton": [
+          "Rip Hamilton"
+        ],
+        "Jason Williams": [
+          "White Chocolate"
+        ],
+        "Victor Wembanyama": [
+          "Wemby",
+          "Wembanyama"
+        ],
+        "Lafayette Lever": [
+          "Fat Lever"
+        ],
+        "Herbert Jones": [
+          "Herb Jones"
+        ],
+        "Herb Jones": [
+          "Herbert Jones"
+        ],
+        "Lew Alcindor": [
+          "Kareem Abdul-Jabbar"
+        ],
+        "Kareem Abdul-Jabbar": [
+          "Lew Alcindor",
+          "Kareem",
+          "Alcindor"
+        ],
+        "Jose Juan Barea": [
+          "JJ Barea",
+          "J.J. Barea"
+        ],
+        "Mahmoud Abdul-Rauf": [
+          "Chris Jackson"
+        ],
+        "Bison Dele": [
+          "Brian Williams"
+        ],
+        "Enes Freedom": [
+          "Enes Kanter"
+        ],
+        "Metta Sandiford-Artest": [
+          "Ron Artest",
+          "Metta World Peace",
+          "Artest",
+          "Metta"
+        ],
+        "World B. Free": [
+          "Lloyd Free"
+        ],
+        "Jamaal Wilkes": [
+          "Keith Wilkes"
+        ],
+        "Henry Walker": [
+          "Bill Walker"
+        ],
+        "Ronald Murray": [
+          "Flip Murray"
+        ]
+      },
+      "references": [
+        "https://en.wikipedia.org/wiki/Minnesota_Timberwolves_all-time_roster"
+      ]
+    },
+    {
+      "team": "New Orleans Pelicans",
+      "history": "New Orleans Hornets and New Orleans/Oklahoma City Hornets history counts. The earlier Charlotte Hornets history belongs to Charlotte.",
+      "familiar": [
+        "Anthony Davis",
+        "Zion Williamson",
+        "Chris Paul",
+        "Jrue Holiday",
+        "Brandon Ingram",
+        "David West",
+        "Tyson Chandler",
+        "Baron Davis",
+        "Jamal Mashburn",
+        "Eric Gordon",
+        "Ryan Anderson",
+        "Trevor Ariza",
+        "Peja Stojakovic",
+        "DeMarcus Cousins",
+        "CJ McCollum",
+        "Herb Jones",
+        "Dejounte Murray"
+      ],
+      "exclude": [
+        "Michael Jordan"
+      ],
+      "aliases": {
+        "Shaquille O'Neal": [
+          "Shaq",
+          "Shaquille"
+        ],
+        "Michael Jordan": [
+          "Jordan"
+        ],
+        "Kobe Bryant": [
+          "Kobe"
+        ],
+        "LeBron James": [
+          "LeBron"
+        ],
+        "Stephen Curry": [
+          "Steph Curry",
+          "Steph"
+        ],
+        "Julius Erving": [
+          "Dr. J",
+          "Doctor J"
+        ],
+        "Anfernee Hardaway": [
+          "Penny Hardaway",
+          "Penny"
+        ],
+        "Penny Hardaway": [
+          "Anfernee Hardaway",
+          "Penny"
+        ],
+        "Magic Johnson": [
+          "Earvin Johnson",
+          "Earvin Magic Johnson",
+          "Magic"
+        ],
+        "Hakeem Olajuwon": [
+          "Akeem Olajuwon",
+          "Hakeem"
+        ],
+        "Giannis Antetokounmpo": [
+          "Giannis"
+        ],
+        "Nikola Jokic": [
+          "Jokic"
+        ],
+        "Shai Gilgeous-Alexander": [
+          "Shai"
+        ],
+        "Luka Doncic": [
+          "Luka"
+        ],
+        "Metta World Peace": [
+          "Ron Artest",
+          "Metta Sandiford-Artest",
+          "Artest",
+          "Metta"
+        ],
+        "Ron Artest": [
+          "Metta World Peace",
+          "Metta Sandiford-Artest",
+          "Artest",
+          "Metta"
+        ],
+        "Nene": [
+          "Nene Hilario"
+        ],
+        "Fat Lever": [
+          "Lafayette Lever"
+        ],
+        "Maurice Williams": [
+          "Mo Williams"
+        ],
+        "Mo Williams": [
+          "Maurice Williams"
+        ],
+        "Richard Hamilton": [
+          "Rip Hamilton"
+        ],
+        "Jason Williams": [
+          "White Chocolate"
+        ],
+        "Victor Wembanyama": [
+          "Wemby",
+          "Wembanyama"
+        ],
+        "Lafayette Lever": [
+          "Fat Lever"
+        ],
+        "Herbert Jones": [
+          "Herb Jones"
+        ],
+        "Herb Jones": [
+          "Herbert Jones"
+        ],
+        "Lew Alcindor": [
+          "Kareem Abdul-Jabbar"
+        ],
+        "Kareem Abdul-Jabbar": [
+          "Lew Alcindor",
+          "Kareem",
+          "Alcindor"
+        ],
+        "Jose Juan Barea": [
+          "JJ Barea",
+          "J.J. Barea"
+        ],
+        "Mahmoud Abdul-Rauf": [
+          "Chris Jackson"
+        ],
+        "Bison Dele": [
+          "Brian Williams"
+        ],
+        "Enes Freedom": [
+          "Enes Kanter"
+        ],
+        "Metta Sandiford-Artest": [
+          "Ron Artest",
+          "Metta World Peace",
+          "Artest",
+          "Metta"
+        ],
+        "World B. Free": [
+          "Lloyd Free"
+        ],
+        "Jamaal Wilkes": [
+          "Keith Wilkes"
+        ],
+        "Henry Walker": [
+          "Bill Walker"
+        ],
+        "Ronald Murray": [
+          "Flip Murray"
+        ]
+      },
+      "references": [
+        "https://en.wikipedia.org/wiki/New_Orleans_Pelicans_all-time_roster"
+      ]
+    },
+    {
+      "team": "New York Knicks",
+      "history": "",
+      "familiar": [
+        "Patrick Ewing",
+        "Walt Frazier",
+        "Willis Reed",
+        "Carmelo Anthony",
+        "Jalen Brunson",
+        "Bernard King",
+        "Dave DeBusschere",
+        "Earl Monroe",
+        "Allan Houston",
+        "John Starks",
+        "Latrell Sprewell",
+        "Larry Johnson",
+        "Amare Stoudemire",
+        "Jeremy Lin",
+        "Kristaps Porzingis",
+        "Julius Randle",
+        "Josh Hart",
+        "Karl Anthony Towns",
+        "Mikal Bridges"
+      ],
+      "exclude": [
+        "Michael Jordan"
+      ],
+      "aliases": {
+        "Shaquille O'Neal": [
+          "Shaq",
+          "Shaquille"
+        ],
+        "Michael Jordan": [
+          "Jordan"
+        ],
+        "Kobe Bryant": [
+          "Kobe"
+        ],
+        "LeBron James": [
+          "LeBron"
+        ],
+        "Stephen Curry": [
+          "Steph Curry",
+          "Steph"
+        ],
+        "Julius Erving": [
+          "Dr. J",
+          "Doctor J"
+        ],
+        "Anfernee Hardaway": [
+          "Penny Hardaway",
+          "Penny"
+        ],
+        "Penny Hardaway": [
+          "Anfernee Hardaway",
+          "Penny"
+        ],
+        "Magic Johnson": [
+          "Earvin Johnson",
+          "Earvin Magic Johnson",
+          "Magic"
+        ],
+        "Hakeem Olajuwon": [
+          "Akeem Olajuwon",
+          "Hakeem"
+        ],
+        "Giannis Antetokounmpo": [
+          "Giannis"
+        ],
+        "Nikola Jokic": [
+          "Jokic"
+        ],
+        "Shai Gilgeous-Alexander": [
+          "Shai"
+        ],
+        "Luka Doncic": [
+          "Luka"
+        ],
+        "Metta World Peace": [
+          "Ron Artest",
+          "Metta Sandiford-Artest",
+          "Artest",
+          "Metta"
+        ],
+        "Ron Artest": [
+          "Metta World Peace",
+          "Metta Sandiford-Artest",
+          "Artest",
+          "Metta"
+        ],
+        "Nene": [
+          "Nene Hilario"
+        ],
+        "Fat Lever": [
+          "Lafayette Lever"
+        ],
+        "Maurice Williams": [
+          "Mo Williams"
+        ],
+        "Mo Williams": [
+          "Maurice Williams"
+        ],
+        "Richard Hamilton": [
+          "Rip Hamilton"
+        ],
+        "Jason Williams": [
+          "White Chocolate"
+        ],
+        "Victor Wembanyama": [
+          "Wemby",
+          "Wembanyama"
+        ],
+        "Lafayette Lever": [
+          "Fat Lever"
+        ],
+        "Herbert Jones": [
+          "Herb Jones"
+        ],
+        "Herb Jones": [
+          "Herbert Jones"
+        ],
+        "Lew Alcindor": [
+          "Kareem Abdul-Jabbar"
+        ],
+        "Kareem Abdul-Jabbar": [
+          "Lew Alcindor",
+          "Kareem",
+          "Alcindor"
+        ],
+        "Jose Juan Barea": [
+          "JJ Barea",
+          "J.J. Barea"
+        ],
+        "Mahmoud Abdul-Rauf": [
+          "Chris Jackson"
+        ],
+        "Bison Dele": [
+          "Brian Williams"
+        ],
+        "Enes Freedom": [
+          "Enes Kanter"
+        ],
+        "Metta Sandiford-Artest": [
+          "Ron Artest",
+          "Metta World Peace",
+          "Artest",
+          "Metta"
+        ],
+        "World B. Free": [
+          "Lloyd Free"
+        ],
+        "Jamaal Wilkes": [
+          "Keith Wilkes"
+        ],
+        "Henry Walker": [
+          "Bill Walker"
+        ],
+        "Ronald Murray": [
+          "Flip Murray"
+        ]
+      },
+      "references": [
+        "https://en.wikipedia.org/wiki/New_York_Knicks_all-time_roster"
+      ]
+    },
+    {
+      "team": "Oklahoma City Thunder",
+      "history": "Seattle SuperSonics history is included in this franchise question; it is not a separate extra question.",
+      "familiar": [
+        "Gary Payton",
+        "Shawn Kemp",
+        "Ray Allen",
+        "Kevin Durant",
+        "Russell Westbrook",
+        "Shai Gilgeous Alexander",
+        "Detlef Schrempf",
+        "Jack Sikma",
+        "Spencer Haywood",
+        "Dennis Johnson",
+        "Dale Ellis",
+        "Fred Brown",
+        "Serge Ibaka",
+        "James Harden",
+        "Steven Adams",
+        "Luguentz Dort",
+        "Jalen Williams",
+        "Chet Holmgren"
+      ],
+      "exclude": [
+        "Michael Jordan"
+      ],
+      "aliases": {
+        "Shaquille O'Neal": [
+          "Shaq",
+          "Shaquille"
+        ],
+        "Michael Jordan": [
+          "Jordan"
+        ],
+        "Kobe Bryant": [
+          "Kobe"
+        ],
+        "LeBron James": [
+          "LeBron"
+        ],
+        "Stephen Curry": [
+          "Steph Curry",
+          "Steph"
+        ],
+        "Julius Erving": [
+          "Dr. J",
+          "Doctor J"
+        ],
+        "Anfernee Hardaway": [
+          "Penny Hardaway",
+          "Penny"
+        ],
+        "Penny Hardaway": [
+          "Anfernee Hardaway",
+          "Penny"
+        ],
+        "Magic Johnson": [
+          "Earvin Johnson",
+          "Earvin Magic Johnson",
+          "Magic"
+        ],
+        "Hakeem Olajuwon": [
+          "Akeem Olajuwon",
+          "Hakeem"
+        ],
+        "Giannis Antetokounmpo": [
+          "Giannis"
+        ],
+        "Nikola Jokic": [
+          "Jokic"
+        ],
+        "Shai Gilgeous-Alexander": [
+          "Shai"
+        ],
+        "Luka Doncic": [
+          "Luka"
+        ],
+        "Metta World Peace": [
+          "Ron Artest",
+          "Metta Sandiford-Artest",
+          "Artest",
+          "Metta"
+        ],
+        "Ron Artest": [
+          "Metta World Peace",
+          "Metta Sandiford-Artest",
+          "Artest",
+          "Metta"
+        ],
+        "Nene": [
+          "Nene Hilario"
+        ],
+        "Fat Lever": [
+          "Lafayette Lever"
+        ],
+        "Maurice Williams": [
+          "Mo Williams"
+        ],
+        "Mo Williams": [
+          "Maurice Williams"
+        ],
+        "Richard Hamilton": [
+          "Rip Hamilton"
+        ],
+        "Jason Williams": [
+          "White Chocolate"
+        ],
+        "Victor Wembanyama": [
+          "Wemby",
+          "Wembanyama"
+        ],
+        "Lafayette Lever": [
+          "Fat Lever"
+        ],
+        "Herbert Jones": [
+          "Herb Jones"
+        ],
+        "Herb Jones": [
+          "Herbert Jones"
+        ],
+        "Lew Alcindor": [
+          "Kareem Abdul-Jabbar"
+        ],
+        "Kareem Abdul-Jabbar": [
+          "Lew Alcindor",
+          "Kareem",
+          "Alcindor"
+        ],
+        "Jose Juan Barea": [
+          "JJ Barea",
+          "J.J. Barea"
+        ],
+        "Mahmoud Abdul-Rauf": [
+          "Chris Jackson"
+        ],
+        "Bison Dele": [
+          "Brian Williams"
+        ],
+        "Enes Freedom": [
+          "Enes Kanter"
+        ],
+        "Metta Sandiford-Artest": [
+          "Ron Artest",
+          "Metta World Peace",
+          "Artest",
+          "Metta"
+        ],
+        "World B. Free": [
+          "Lloyd Free"
+        ],
+        "Jamaal Wilkes": [
+          "Keith Wilkes"
+        ],
+        "Henry Walker": [
+          "Bill Walker"
+        ],
+        "Ronald Murray": [
+          "Flip Murray"
+        ]
+      },
+      "references": [
+        "https://en.wikipedia.org/wiki/Oklahoma_City_Thunder_all-time_roster",
+        "https://en.wikipedia.org/wiki/Seattle_SuperSonics_all-time_roster"
+      ]
+    },
+    {
+      "team": "Orlando Magic",
+      "history": "",
+      "familiar": [
+        "Shaquille O Neal",
+        "Penny Hardaway",
+        "Dwight Howard",
+        "Tracy McGrady",
+        "Nick Anderson",
+        "Paolo Banchero",
+        "Dennis Scott",
+        "Scott Skiles",
+        "Darrell Armstrong",
+        "Horace Grant",
+        "Hedo Turkoglu",
+        "Rashard Lewis",
+        "Jameer Nelson",
+        "Aaron Gordon",
+        "Nikola Vucevic",
+        "Franz Wagner",
+        "Jalen Suggs"
+      ],
+      "exclude": [
+        "Michael Jordan"
+      ],
+      "aliases": {
+        "Shaquille O'Neal": [
+          "Shaq",
+          "Shaquille"
+        ],
+        "Michael Jordan": [
+          "Jordan"
+        ],
+        "Kobe Bryant": [
+          "Kobe"
+        ],
+        "LeBron James": [
+          "LeBron"
+        ],
+        "Stephen Curry": [
+          "Steph Curry",
+          "Steph"
+        ],
+        "Julius Erving": [
+          "Dr. J",
+          "Doctor J"
+        ],
+        "Anfernee Hardaway": [
+          "Penny Hardaway",
+          "Penny"
+        ],
+        "Penny Hardaway": [
+          "Anfernee Hardaway",
+          "Penny"
+        ],
+        "Magic Johnson": [
+          "Earvin Johnson",
+          "Earvin Magic Johnson",
+          "Magic"
+        ],
+        "Hakeem Olajuwon": [
+          "Akeem Olajuwon",
+          "Hakeem"
+        ],
+        "Giannis Antetokounmpo": [
+          "Giannis"
+        ],
+        "Nikola Jokic": [
+          "Jokic"
+        ],
+        "Shai Gilgeous-Alexander": [
+          "Shai"
+        ],
+        "Luka Doncic": [
+          "Luka"
+        ],
+        "Metta World Peace": [
+          "Ron Artest",
+          "Metta Sandiford-Artest",
+          "Artest",
+          "Metta"
+        ],
+        "Ron Artest": [
+          "Metta World Peace",
+          "Metta Sandiford-Artest",
+          "Artest",
+          "Metta"
+        ],
+        "Nene": [
+          "Nene Hilario"
+        ],
+        "Fat Lever": [
+          "Lafayette Lever"
+        ],
+        "Maurice Williams": [
+          "Mo Williams"
+        ],
+        "Mo Williams": [
+          "Maurice Williams"
+        ],
+        "Richard Hamilton": [
+          "Rip Hamilton"
+        ],
+        "Jason Williams": [
+          "White Chocolate"
+        ],
+        "Victor Wembanyama": [
+          "Wemby",
+          "Wembanyama"
+        ],
+        "Lafayette Lever": [
+          "Fat Lever"
+        ],
+        "Herbert Jones": [
+          "Herb Jones"
+        ],
+        "Herb Jones": [
+          "Herbert Jones"
+        ],
+        "Lew Alcindor": [
+          "Kareem Abdul-Jabbar"
+        ],
+        "Kareem Abdul-Jabbar": [
+          "Lew Alcindor",
+          "Kareem",
+          "Alcindor"
+        ],
+        "Jose Juan Barea": [
+          "JJ Barea",
+          "J.J. Barea"
+        ],
+        "Mahmoud Abdul-Rauf": [
+          "Chris Jackson"
+        ],
+        "Bison Dele": [
+          "Brian Williams"
+        ],
+        "Enes Freedom": [
+          "Enes Kanter"
+        ],
+        "Metta Sandiford-Artest": [
+          "Ron Artest",
+          "Metta World Peace",
+          "Artest",
+          "Metta"
+        ],
+        "World B. Free": [
+          "Lloyd Free"
+        ],
+        "Jamaal Wilkes": [
+          "Keith Wilkes"
+        ],
+        "Henry Walker": [
+          "Bill Walker"
+        ],
+        "Ronald Murray": [
+          "Flip Murray"
+        ]
+      },
+      "references": [
+        "https://en.wikipedia.org/wiki/Orlando_Magic_all-time_roster"
+      ]
+    },
+    {
+      "team": "Philadelphia 76ers",
+      "history": "Syracuse Nationals NBA seasons also count.",
+      "familiar": [
+        "Allen Iverson",
+        "Julius Erving",
+        "Wilt Chamberlain",
+        "Charles Barkley",
+        "Joel Embiid",
+        "Moses Malone",
+        "Hal Greer",
+        "Dolph Schayes",
+        "Billy Cunningham",
+        "Maurice Cheeks",
+        "Bobby Jones",
+        "Andrew Toney",
+        "Andre Iguodala",
+        "Andre Miller",
+        "Ben Simmons",
+        "Tobias Harris",
+        "Tyrese Maxey",
+        "Paul George"
+      ],
+      "exclude": [
+        "Michael Jordan"
+      ],
+      "aliases": {
+        "Shaquille O'Neal": [
+          "Shaq",
+          "Shaquille"
+        ],
+        "Michael Jordan": [
+          "Jordan"
+        ],
+        "Kobe Bryant": [
+          "Kobe"
+        ],
+        "LeBron James": [
+          "LeBron"
+        ],
+        "Stephen Curry": [
+          "Steph Curry",
+          "Steph"
+        ],
+        "Julius Erving": [
+          "Dr. J",
+          "Doctor J"
+        ],
+        "Anfernee Hardaway": [
+          "Penny Hardaway",
+          "Penny"
+        ],
+        "Penny Hardaway": [
+          "Anfernee Hardaway",
+          "Penny"
+        ],
+        "Magic Johnson": [
+          "Earvin Johnson",
+          "Earvin Magic Johnson",
+          "Magic"
+        ],
+        "Hakeem Olajuwon": [
+          "Akeem Olajuwon",
+          "Hakeem"
+        ],
+        "Giannis Antetokounmpo": [
+          "Giannis"
+        ],
+        "Nikola Jokic": [
+          "Jokic"
+        ],
+        "Shai Gilgeous-Alexander": [
+          "Shai"
+        ],
+        "Luka Doncic": [
+          "Luka"
+        ],
+        "Metta World Peace": [
+          "Ron Artest",
+          "Metta Sandiford-Artest",
+          "Artest",
+          "Metta"
+        ],
+        "Ron Artest": [
+          "Metta World Peace",
+          "Metta Sandiford-Artest",
+          "Artest",
+          "Metta"
+        ],
+        "Nene": [
+          "Nene Hilario"
+        ],
+        "Fat Lever": [
+          "Lafayette Lever"
+        ],
+        "Maurice Williams": [
+          "Mo Williams"
+        ],
+        "Mo Williams": [
+          "Maurice Williams"
+        ],
+        "Richard Hamilton": [
+          "Rip Hamilton"
+        ],
+        "Jason Williams": [
+          "White Chocolate"
+        ],
+        "Victor Wembanyama": [
+          "Wemby",
+          "Wembanyama"
+        ],
+        "Lafayette Lever": [
+          "Fat Lever"
+        ],
+        "Herbert Jones": [
+          "Herb Jones"
+        ],
+        "Herb Jones": [
+          "Herbert Jones"
+        ],
+        "Lew Alcindor": [
+          "Kareem Abdul-Jabbar"
+        ],
+        "Kareem Abdul-Jabbar": [
+          "Lew Alcindor",
+          "Kareem",
+          "Alcindor"
+        ],
+        "Jose Juan Barea": [
+          "JJ Barea",
+          "J.J. Barea"
+        ],
+        "Mahmoud Abdul-Rauf": [
+          "Chris Jackson"
+        ],
+        "Bison Dele": [
+          "Brian Williams"
+        ],
+        "Enes Freedom": [
+          "Enes Kanter"
+        ],
+        "Metta Sandiford-Artest": [
+          "Ron Artest",
+          "Metta World Peace",
+          "Artest",
+          "Metta"
+        ],
+        "World B. Free": [
+          "Lloyd Free"
+        ],
+        "Jamaal Wilkes": [
+          "Keith Wilkes"
+        ],
+        "Henry Walker": [
+          "Bill Walker"
+        ],
+        "Ronald Murray": [
+          "Flip Murray"
+        ]
+      },
+      "references": [
+        "https://en.wikipedia.org/wiki/Philadelphia_76ers_all-time_roster"
+      ]
+    },
+    {
+      "team": "Phoenix Suns",
+      "history": "",
+      "familiar": [
+        "Steve Nash",
+        "Charles Barkley",
+        "Devin Booker",
+        "Kevin Johnson",
+        "Amare Stoudemire",
+        "Shawn Marion",
+        "Paul Westphal",
+        "Walter Davis",
+        "Connie Hawkins",
+        "Alvan Adams",
+        "Dan Majerle",
+        "Tom Chambers",
+        "Goran Dragic",
+        "Chris Paul",
+        "Deandre Ayton",
+        "Kevin Durant",
+        "Bradley Beal"
+      ],
+      "exclude": [
+        "Michael Jordan"
+      ],
+      "aliases": {
+        "Shaquille O'Neal": [
+          "Shaq",
+          "Shaquille"
+        ],
+        "Michael Jordan": [
+          "Jordan"
+        ],
+        "Kobe Bryant": [
+          "Kobe"
+        ],
+        "LeBron James": [
+          "LeBron"
+        ],
+        "Stephen Curry": [
+          "Steph Curry",
+          "Steph"
+        ],
+        "Julius Erving": [
+          "Dr. J",
+          "Doctor J"
+        ],
+        "Anfernee Hardaway": [
+          "Penny Hardaway",
+          "Penny"
+        ],
+        "Penny Hardaway": [
+          "Anfernee Hardaway",
+          "Penny"
+        ],
+        "Magic Johnson": [
+          "Earvin Johnson",
+          "Earvin Magic Johnson",
+          "Magic"
+        ],
+        "Hakeem Olajuwon": [
+          "Akeem Olajuwon",
+          "Hakeem"
+        ],
+        "Giannis Antetokounmpo": [
+          "Giannis"
+        ],
+        "Nikola Jokic": [
+          "Jokic"
+        ],
+        "Shai Gilgeous-Alexander": [
+          "Shai"
+        ],
+        "Luka Doncic": [
+          "Luka"
+        ],
+        "Metta World Peace": [
+          "Ron Artest",
+          "Metta Sandiford-Artest",
+          "Artest",
+          "Metta"
+        ],
+        "Ron Artest": [
+          "Metta World Peace",
+          "Metta Sandiford-Artest",
+          "Artest",
+          "Metta"
+        ],
+        "Nene": [
+          "Nene Hilario"
+        ],
+        "Fat Lever": [
+          "Lafayette Lever"
+        ],
+        "Maurice Williams": [
+          "Mo Williams"
+        ],
+        "Mo Williams": [
+          "Maurice Williams"
+        ],
+        "Richard Hamilton": [
+          "Rip Hamilton"
+        ],
+        "Jason Williams": [
+          "White Chocolate"
+        ],
+        "Victor Wembanyama": [
+          "Wemby",
+          "Wembanyama"
+        ],
+        "Lafayette Lever": [
+          "Fat Lever"
+        ],
+        "Herbert Jones": [
+          "Herb Jones"
+        ],
+        "Herb Jones": [
+          "Herbert Jones"
+        ],
+        "Lew Alcindor": [
+          "Kareem Abdul-Jabbar"
+        ],
+        "Kareem Abdul-Jabbar": [
+          "Lew Alcindor",
+          "Kareem",
+          "Alcindor"
+        ],
+        "Jose Juan Barea": [
+          "JJ Barea",
+          "J.J. Barea"
+        ],
+        "Mahmoud Abdul-Rauf": [
+          "Chris Jackson"
+        ],
+        "Bison Dele": [
+          "Brian Williams"
+        ],
+        "Enes Freedom": [
+          "Enes Kanter"
+        ],
+        "Metta Sandiford-Artest": [
+          "Ron Artest",
+          "Metta World Peace",
+          "Artest",
+          "Metta"
+        ],
+        "World B. Free": [
+          "Lloyd Free"
+        ],
+        "Jamaal Wilkes": [
+          "Keith Wilkes"
+        ],
+        "Henry Walker": [
+          "Bill Walker"
+        ],
+        "Ronald Murray": [
+          "Flip Murray"
+        ]
+      },
+      "references": [
+        "https://en.wikipedia.org/wiki/Phoenix_Suns_all-time_roster"
+      ]
+    },
+    {
+      "team": "Portland Trail Blazers",
+      "history": "",
+      "familiar": [
+        "Damian Lillard",
+        "Clyde Drexler",
+        "Bill Walton",
+        "Brandon Roy",
+        "LaMarcus Aldridge",
+        "Terry Porter",
+        "Geoff Petrie",
+        "Maurice Lucas",
+        "Mychal Thompson",
+        "Jerome Kersey",
+        "Kevin Duckworth",
+        "Clifford Robinson",
+        "Rasheed Wallace",
+        "Zach Randolph",
+        "Nicolas Batum",
+        "CJ McCollum",
+        "Anfernee Simons",
+        "Scoot Henderson"
+      ],
+      "exclude": [
+        "Michael Jordan"
+      ],
+      "aliases": {
+        "Shaquille O'Neal": [
+          "Shaq",
+          "Shaquille"
+        ],
+        "Michael Jordan": [
+          "Jordan"
+        ],
+        "Kobe Bryant": [
+          "Kobe"
+        ],
+        "LeBron James": [
+          "LeBron"
+        ],
+        "Stephen Curry": [
+          "Steph Curry",
+          "Steph"
+        ],
+        "Julius Erving": [
+          "Dr. J",
+          "Doctor J"
+        ],
+        "Anfernee Hardaway": [
+          "Penny Hardaway",
+          "Penny"
+        ],
+        "Penny Hardaway": [
+          "Anfernee Hardaway",
+          "Penny"
+        ],
+        "Magic Johnson": [
+          "Earvin Johnson",
+          "Earvin Magic Johnson",
+          "Magic"
+        ],
+        "Hakeem Olajuwon": [
+          "Akeem Olajuwon",
+          "Hakeem"
+        ],
+        "Giannis Antetokounmpo": [
+          "Giannis"
+        ],
+        "Nikola Jokic": [
+          "Jokic"
+        ],
+        "Shai Gilgeous-Alexander": [
+          "Shai"
+        ],
+        "Luka Doncic": [
+          "Luka"
+        ],
+        "Metta World Peace": [
+          "Ron Artest",
+          "Metta Sandiford-Artest",
+          "Artest",
+          "Metta"
+        ],
+        "Ron Artest": [
+          "Metta World Peace",
+          "Metta Sandiford-Artest",
+          "Artest",
+          "Metta"
+        ],
+        "Nene": [
+          "Nene Hilario"
+        ],
+        "Fat Lever": [
+          "Lafayette Lever"
+        ],
+        "Maurice Williams": [
+          "Mo Williams"
+        ],
+        "Mo Williams": [
+          "Maurice Williams"
+        ],
+        "Richard Hamilton": [
+          "Rip Hamilton"
+        ],
+        "Jason Williams": [
+          "White Chocolate"
+        ],
+        "Victor Wembanyama": [
+          "Wemby",
+          "Wembanyama"
+        ],
+        "Lafayette Lever": [
+          "Fat Lever"
+        ],
+        "Herbert Jones": [
+          "Herb Jones"
+        ],
+        "Herb Jones": [
+          "Herbert Jones"
+        ],
+        "Lew Alcindor": [
+          "Kareem Abdul-Jabbar"
+        ],
+        "Kareem Abdul-Jabbar": [
+          "Lew Alcindor",
+          "Kareem",
+          "Alcindor"
+        ],
+        "Jose Juan Barea": [
+          "JJ Barea",
+          "J.J. Barea"
+        ],
+        "Mahmoud Abdul-Rauf": [
+          "Chris Jackson"
+        ],
+        "Bison Dele": [
+          "Brian Williams"
+        ],
+        "Enes Freedom": [
+          "Enes Kanter"
+        ],
+        "Metta Sandiford-Artest": [
+          "Ron Artest",
+          "Metta World Peace",
+          "Artest",
+          "Metta"
+        ],
+        "World B. Free": [
+          "Lloyd Free"
+        ],
+        "Jamaal Wilkes": [
+          "Keith Wilkes"
+        ],
+        "Henry Walker": [
+          "Bill Walker"
+        ],
+        "Ronald Murray": [
+          "Flip Murray"
+        ]
+      },
+      "references": [
+        "https://en.wikipedia.org/wiki/Portland_Trail_Blazers_all-time_roster"
+      ]
+    },
+    {
+      "team": "Sacramento Kings",
+      "history": "Rochester Royals, Cincinnati Royals, Kansas City-Omaha Kings and Kansas City Kings seasons also count.",
+      "familiar": [
+        "Oscar Robertson",
+        "Chris Webber",
+        "Peja Stojakovic",
+        "Vlade Divac",
+        "Mitch Richmond",
+        "De Aaron Fox",
+        "Jerry Lucas",
+        "Nate Archibald",
+        "Reggie Theus",
+        "Jason Williams",
+        "Mike Bibby",
+        "Brad Miller",
+        "Kevin Martin",
+        "DeMarcus Cousins",
+        "Isaiah Thomas",
+        "Tyreke Evans",
+        "Domantas Sabonis",
+        "Keegan Murray",
+        "Zach LaVine"
+      ],
+      "exclude": [
+        "Michael Jordan"
+      ],
+      "aliases": {
+        "Shaquille O'Neal": [
+          "Shaq",
+          "Shaquille"
+        ],
+        "Michael Jordan": [
+          "Jordan"
+        ],
+        "Kobe Bryant": [
+          "Kobe"
+        ],
+        "LeBron James": [
+          "LeBron"
+        ],
+        "Stephen Curry": [
+          "Steph Curry",
+          "Steph"
+        ],
+        "Julius Erving": [
+          "Dr. J",
+          "Doctor J"
+        ],
+        "Anfernee Hardaway": [
+          "Penny Hardaway",
+          "Penny"
+        ],
+        "Penny Hardaway": [
+          "Anfernee Hardaway",
+          "Penny"
+        ],
+        "Magic Johnson": [
+          "Earvin Johnson",
+          "Earvin Magic Johnson",
+          "Magic"
+        ],
+        "Hakeem Olajuwon": [
+          "Akeem Olajuwon",
+          "Hakeem"
+        ],
+        "Giannis Antetokounmpo": [
+          "Giannis"
+        ],
+        "Nikola Jokic": [
+          "Jokic"
+        ],
+        "Shai Gilgeous-Alexander": [
+          "Shai"
+        ],
+        "Luka Doncic": [
+          "Luka"
+        ],
+        "Metta World Peace": [
+          "Ron Artest",
+          "Metta Sandiford-Artest",
+          "Artest",
+          "Metta"
+        ],
+        "Ron Artest": [
+          "Metta World Peace",
+          "Metta Sandiford-Artest",
+          "Artest",
+          "Metta"
+        ],
+        "Nene": [
+          "Nene Hilario"
+        ],
+        "Fat Lever": [
+          "Lafayette Lever"
+        ],
+        "Maurice Williams": [
+          "Mo Williams"
+        ],
+        "Mo Williams": [
+          "Maurice Williams"
+        ],
+        "Richard Hamilton": [
+          "Rip Hamilton"
+        ],
+        "Jason Williams": [
+          "White Chocolate"
+        ],
+        "Victor Wembanyama": [
+          "Wemby",
+          "Wembanyama"
+        ],
+        "Lafayette Lever": [
+          "Fat Lever"
+        ],
+        "Herbert Jones": [
+          "Herb Jones"
+        ],
+        "Herb Jones": [
+          "Herbert Jones"
+        ],
+        "Lew Alcindor": [
+          "Kareem Abdul-Jabbar"
+        ],
+        "Kareem Abdul-Jabbar": [
+          "Lew Alcindor",
+          "Kareem",
+          "Alcindor"
+        ],
+        "Jose Juan Barea": [
+          "JJ Barea",
+          "J.J. Barea"
+        ],
+        "Mahmoud Abdul-Rauf": [
+          "Chris Jackson"
+        ],
+        "Bison Dele": [
+          "Brian Williams"
+        ],
+        "Enes Freedom": [
+          "Enes Kanter"
+        ],
+        "Metta Sandiford-Artest": [
+          "Ron Artest",
+          "Metta World Peace",
+          "Artest",
+          "Metta"
+        ],
+        "World B. Free": [
+          "Lloyd Free"
+        ],
+        "Jamaal Wilkes": [
+          "Keith Wilkes"
+        ],
+        "Henry Walker": [
+          "Bill Walker"
+        ],
+        "Ronald Murray": [
+          "Flip Murray"
+        ]
+      },
+      "references": [
+        "https://en.wikipedia.org/wiki/Sacramento_Kings_all-time_roster"
+      ]
+    },
+    {
+      "team": "San Antonio Spurs",
+      "history": "Dallas Chaparrals and Texas Chaparrals ABA seasons also count.",
+      "familiar": [
+        "Tim Duncan",
+        "David Robinson",
+        "Tony Parker",
+        "Manu Ginobili",
+        "Kawhi Leonard",
+        "George Gervin",
+        "Victor Wembanyama",
+        "Vinny Del Negro",
+        "Dejounte Murray",
+        "Sean Elliott",
+        "Avery Johnson",
+        "Bruce Bowen",
+        "Alvin Robertson",
+        "De Aaron Fox",
+        "Chris Paul",
+        "Dennis Rodman"
+      ],
+      "exclude": [
+        "Michael Jordan"
+      ],
+      "aliases": {
+        "Shaquille O'Neal": [
+          "Shaq",
+          "Shaquille"
+        ],
+        "Michael Jordan": [
+          "Jordan"
+        ],
+        "Kobe Bryant": [
+          "Kobe"
+        ],
+        "LeBron James": [
+          "LeBron"
+        ],
+        "Stephen Curry": [
+          "Steph Curry",
+          "Steph"
+        ],
+        "Julius Erving": [
+          "Dr. J",
+          "Doctor J"
+        ],
+        "Anfernee Hardaway": [
+          "Penny Hardaway",
+          "Penny"
+        ],
+        "Penny Hardaway": [
+          "Anfernee Hardaway",
+          "Penny"
+        ],
+        "Magic Johnson": [
+          "Earvin Johnson",
+          "Earvin Magic Johnson",
+          "Magic"
+        ],
+        "Hakeem Olajuwon": [
+          "Akeem Olajuwon",
+          "Hakeem"
+        ],
+        "Giannis Antetokounmpo": [
+          "Giannis"
+        ],
+        "Nikola Jokic": [
+          "Jokic"
+        ],
+        "Shai Gilgeous-Alexander": [
+          "Shai"
+        ],
+        "Luka Doncic": [
+          "Luka"
+        ],
+        "Metta World Peace": [
+          "Ron Artest",
+          "Metta Sandiford-Artest",
+          "Artest",
+          "Metta"
+        ],
+        "Ron Artest": [
+          "Metta World Peace",
+          "Metta Sandiford-Artest",
+          "Artest",
+          "Metta"
+        ],
+        "Nene": [
+          "Nene Hilario"
+        ],
+        "Fat Lever": [
+          "Lafayette Lever"
+        ],
+        "Maurice Williams": [
+          "Mo Williams"
+        ],
+        "Mo Williams": [
+          "Maurice Williams"
+        ],
+        "Richard Hamilton": [
+          "Rip Hamilton"
+        ],
+        "Jason Williams": [
+          "White Chocolate"
+        ],
+        "Victor Wembanyama": [
+          "Wemby",
+          "Wembanyama"
+        ],
+        "Lafayette Lever": [
+          "Fat Lever"
+        ],
+        "Herbert Jones": [
+          "Herb Jones"
+        ],
+        "Herb Jones": [
+          "Herbert Jones"
+        ],
+        "Lew Alcindor": [
+          "Kareem Abdul-Jabbar"
+        ],
+        "Kareem Abdul-Jabbar": [
+          "Lew Alcindor",
+          "Kareem",
+          "Alcindor"
+        ],
+        "Jose Juan Barea": [
+          "JJ Barea",
+          "J.J. Barea"
+        ],
+        "Mahmoud Abdul-Rauf": [
+          "Chris Jackson"
+        ],
+        "Bison Dele": [
+          "Brian Williams"
+        ],
+        "Enes Freedom": [
+          "Enes Kanter"
+        ],
+        "Metta Sandiford-Artest": [
+          "Ron Artest",
+          "Metta World Peace",
+          "Artest",
+          "Metta"
+        ],
+        "World B. Free": [
+          "Lloyd Free"
+        ],
+        "Jamaal Wilkes": [
+          "Keith Wilkes"
+        ],
+        "Henry Walker": [
+          "Bill Walker"
+        ],
+        "Ronald Murray": [
+          "Flip Murray"
+        ]
+      },
+      "references": [
+        "https://en.wikipedia.org/wiki/San_Antonio_Spurs_all-time_roster"
+      ]
+    },
+    {
+      "team": "Toronto Raptors",
+      "history": "",
+      "familiar": [
+        "Vince Carter",
+        "Chris Bosh",
+        "Kyle Lowry",
+        "DeMar DeRozan",
+        "Kawhi Leonard",
+        "Pascal Siakam",
+        "Damon Stoudamire",
+        "Marcus Camby",
+        "Tracy McGrady",
+        "Morris Peterson",
+        "Antonio Davis",
+        "Jonas Valanciunas",
+        "Serge Ibaka",
+        "Fred VanVleet",
+        "OG Anunoby",
+        "Scottie Barnes",
+        "Immanuel Quickley",
+        "RJ Barrett",
+        "Brandon Ingram"
+      ],
+      "exclude": [
+        "Michael Jordan"
+      ],
+      "aliases": {
+        "Shaquille O'Neal": [
+          "Shaq",
+          "Shaquille"
+        ],
+        "Michael Jordan": [
+          "Jordan"
+        ],
+        "Kobe Bryant": [
+          "Kobe"
+        ],
+        "LeBron James": [
+          "LeBron"
+        ],
+        "Stephen Curry": [
+          "Steph Curry",
+          "Steph"
+        ],
+        "Julius Erving": [
+          "Dr. J",
+          "Doctor J"
+        ],
+        "Anfernee Hardaway": [
+          "Penny Hardaway",
+          "Penny"
+        ],
+        "Penny Hardaway": [
+          "Anfernee Hardaway",
+          "Penny"
+        ],
+        "Magic Johnson": [
+          "Earvin Johnson",
+          "Earvin Magic Johnson",
+          "Magic"
+        ],
+        "Hakeem Olajuwon": [
+          "Akeem Olajuwon",
+          "Hakeem"
+        ],
+        "Giannis Antetokounmpo": [
+          "Giannis"
+        ],
+        "Nikola Jokic": [
+          "Jokic"
+        ],
+        "Shai Gilgeous-Alexander": [
+          "Shai"
+        ],
+        "Luka Doncic": [
+          "Luka"
+        ],
+        "Metta World Peace": [
+          "Ron Artest",
+          "Metta Sandiford-Artest",
+          "Artest",
+          "Metta"
+        ],
+        "Ron Artest": [
+          "Metta World Peace",
+          "Metta Sandiford-Artest",
+          "Artest",
+          "Metta"
+        ],
+        "Nene": [
+          "Nene Hilario"
+        ],
+        "Fat Lever": [
+          "Lafayette Lever"
+        ],
+        "Maurice Williams": [
+          "Mo Williams"
+        ],
+        "Mo Williams": [
+          "Maurice Williams"
+        ],
+        "Richard Hamilton": [
+          "Rip Hamilton"
+        ],
+        "Jason Williams": [
+          "White Chocolate"
+        ],
+        "Victor Wembanyama": [
+          "Wemby",
+          "Wembanyama"
+        ],
+        "Lafayette Lever": [
+          "Fat Lever"
+        ],
+        "Herbert Jones": [
+          "Herb Jones"
+        ],
+        "Herb Jones": [
+          "Herbert Jones"
+        ],
+        "Lew Alcindor": [
+          "Kareem Abdul-Jabbar"
+        ],
+        "Kareem Abdul-Jabbar": [
+          "Lew Alcindor",
+          "Kareem",
+          "Alcindor"
+        ],
+        "Jose Juan Barea": [
+          "JJ Barea",
+          "J.J. Barea"
+        ],
+        "Mahmoud Abdul-Rauf": [
+          "Chris Jackson"
+        ],
+        "Bison Dele": [
+          "Brian Williams"
+        ],
+        "Enes Freedom": [
+          "Enes Kanter"
+        ],
+        "Metta Sandiford-Artest": [
+          "Ron Artest",
+          "Metta World Peace",
+          "Artest",
+          "Metta"
+        ],
+        "World B. Free": [
+          "Lloyd Free"
+        ],
+        "Jamaal Wilkes": [
+          "Keith Wilkes"
+        ],
+        "Henry Walker": [
+          "Bill Walker"
+        ],
+        "Ronald Murray": [
+          "Flip Murray"
+        ]
+      },
+      "references": [
+        "https://en.wikipedia.org/wiki/Toronto_Raptors_all-time_roster"
+      ]
+    },
+    {
+      "team": "Utah Jazz",
+      "history": "New Orleans Jazz seasons also count.",
+      "familiar": [
+        "Karl Malone",
+        "John Stockton",
+        "Rudy Gobert",
+        "Donovan Mitchell",
+        "Adrian Dantley",
+        "Pete Maravich",
+        "Jeff Malone",
+        "Mark Eaton",
+        "Bryon Russell",
+        "Deron Williams",
+        "Carlos Boozer",
+        "Andrei Kirilenko",
+        "Al Jefferson",
+        "Paul Millsap",
+        "Jordan Clarkson",
+        "Lauri Markkanen",
+        "Walker Kessler"
+      ],
+      "exclude": [
+        "Michael Jordan"
+      ],
+      "aliases": {
+        "Shaquille O'Neal": [
+          "Shaq",
+          "Shaquille"
+        ],
+        "Michael Jordan": [
+          "Jordan"
+        ],
+        "Kobe Bryant": [
+          "Kobe"
+        ],
+        "LeBron James": [
+          "LeBron"
+        ],
+        "Stephen Curry": [
+          "Steph Curry",
+          "Steph"
+        ],
+        "Julius Erving": [
+          "Dr. J",
+          "Doctor J"
+        ],
+        "Anfernee Hardaway": [
+          "Penny Hardaway",
+          "Penny"
+        ],
+        "Penny Hardaway": [
+          "Anfernee Hardaway",
+          "Penny"
+        ],
+        "Magic Johnson": [
+          "Earvin Johnson",
+          "Earvin Magic Johnson",
+          "Magic"
+        ],
+        "Hakeem Olajuwon": [
+          "Akeem Olajuwon",
+          "Hakeem"
+        ],
+        "Giannis Antetokounmpo": [
+          "Giannis"
+        ],
+        "Nikola Jokic": [
+          "Jokic"
+        ],
+        "Shai Gilgeous-Alexander": [
+          "Shai"
+        ],
+        "Luka Doncic": [
+          "Luka"
+        ],
+        "Metta World Peace": [
+          "Ron Artest",
+          "Metta Sandiford-Artest",
+          "Artest",
+          "Metta"
+        ],
+        "Ron Artest": [
+          "Metta World Peace",
+          "Metta Sandiford-Artest",
+          "Artest",
+          "Metta"
+        ],
+        "Nene": [
+          "Nene Hilario"
+        ],
+        "Fat Lever": [
+          "Lafayette Lever"
+        ],
+        "Maurice Williams": [
+          "Mo Williams"
+        ],
+        "Mo Williams": [
+          "Maurice Williams"
+        ],
+        "Richard Hamilton": [
+          "Rip Hamilton"
+        ],
+        "Jason Williams": [
+          "White Chocolate"
+        ],
+        "Victor Wembanyama": [
+          "Wemby",
+          "Wembanyama"
+        ],
+        "Lafayette Lever": [
+          "Fat Lever"
+        ],
+        "Herbert Jones": [
+          "Herb Jones"
+        ],
+        "Herb Jones": [
+          "Herbert Jones"
+        ],
+        "Lew Alcindor": [
+          "Kareem Abdul-Jabbar"
+        ],
+        "Kareem Abdul-Jabbar": [
+          "Lew Alcindor",
+          "Kareem",
+          "Alcindor"
+        ],
+        "Jose Juan Barea": [
+          "JJ Barea",
+          "J.J. Barea"
+        ],
+        "Mahmoud Abdul-Rauf": [
+          "Chris Jackson"
+        ],
+        "Bison Dele": [
+          "Brian Williams"
+        ],
+        "Enes Freedom": [
+          "Enes Kanter"
+        ],
+        "Metta Sandiford-Artest": [
+          "Ron Artest",
+          "Metta World Peace",
+          "Artest",
+          "Metta"
+        ],
+        "World B. Free": [
+          "Lloyd Free"
+        ],
+        "Jamaal Wilkes": [
+          "Keith Wilkes"
+        ],
+        "Henry Walker": [
+          "Bill Walker"
+        ],
+        "Ronald Murray": [
+          "Flip Murray"
+        ]
+      },
+      "references": [
+        "https://en.wikipedia.org/wiki/Utah_Jazz_all-time_roster"
+      ]
+    },
+    {
+      "team": "Washington Wizards",
+      "history": "Chicago Packers, Chicago Zephyrs, Baltimore Bullets, Capital Bullets and Washington Bullets seasons count. The unrelated earlier Baltimore Bullets club does not.",
+      "familiar": [
+        "Wes Unseld",
+        "Elvin Hayes",
+        "John Wall",
+        "Bradley Beal",
+        "Gilbert Arenas",
+        "Antawn Jamison",
+        "Earl Monroe",
+        "Bob Dandridge",
+        "Jeff Malone",
+        "Manute Bol",
+        "Gheorghe Muresan",
+        "Rod Strickland",
+        "Chris Webber",
+        "Juwan Howard",
+        "Richard Hamilton",
+        "Michael Jordan",
+        "Caron Butler",
+        "Kyle Kuzma",
+        "Kristaps Porzingis",
+        "Jordan Poole"
+      ],
+      "exclude": [
+        "Stephen Curry"
+      ],
+      "aliases": {
+        "Shaquille O'Neal": [
+          "Shaq",
+          "Shaquille"
+        ],
+        "Michael Jordan": [
+          "Jordan"
+        ],
+        "Kobe Bryant": [
+          "Kobe"
+        ],
+        "LeBron James": [
+          "LeBron"
+        ],
+        "Stephen Curry": [
+          "Steph Curry",
+          "Steph"
+        ],
+        "Julius Erving": [
+          "Dr. J",
+          "Doctor J"
+        ],
+        "Anfernee Hardaway": [
+          "Penny Hardaway",
+          "Penny"
+        ],
+        "Penny Hardaway": [
+          "Anfernee Hardaway",
+          "Penny"
+        ],
+        "Magic Johnson": [
+          "Earvin Johnson",
+          "Earvin Magic Johnson",
+          "Magic"
+        ],
+        "Hakeem Olajuwon": [
+          "Akeem Olajuwon",
+          "Hakeem"
+        ],
+        "Giannis Antetokounmpo": [
+          "Giannis"
+        ],
+        "Nikola Jokic": [
+          "Jokic"
+        ],
+        "Shai Gilgeous-Alexander": [
+          "Shai"
+        ],
+        "Luka Doncic": [
+          "Luka"
+        ],
+        "Metta World Peace": [
+          "Ron Artest",
+          "Metta Sandiford-Artest",
+          "Artest",
+          "Metta"
+        ],
+        "Ron Artest": [
+          "Metta World Peace",
+          "Metta Sandiford-Artest",
+          "Artest",
+          "Metta"
+        ],
+        "Nene": [
+          "Nene Hilario"
+        ],
+        "Fat Lever": [
+          "Lafayette Lever"
+        ],
+        "Maurice Williams": [
+          "Mo Williams"
+        ],
+        "Mo Williams": [
+          "Maurice Williams"
+        ],
+        "Richard Hamilton": [
+          "Rip Hamilton"
+        ],
+        "Jason Williams": [
+          "White Chocolate"
+        ],
+        "Victor Wembanyama": [
+          "Wemby",
+          "Wembanyama"
+        ],
+        "Lafayette Lever": [
+          "Fat Lever"
+        ],
+        "Herbert Jones": [
+          "Herb Jones"
+        ],
+        "Herb Jones": [
+          "Herbert Jones"
+        ],
+        "Lew Alcindor": [
+          "Kareem Abdul-Jabbar"
+        ],
+        "Kareem Abdul-Jabbar": [
+          "Lew Alcindor",
+          "Kareem",
+          "Alcindor"
+        ],
+        "Jose Juan Barea": [
+          "JJ Barea",
+          "J.J. Barea"
+        ],
+        "Mahmoud Abdul-Rauf": [
+          "Chris Jackson"
+        ],
+        "Bison Dele": [
+          "Brian Williams"
+        ],
+        "Enes Freedom": [
+          "Enes Kanter"
+        ],
+        "Metta Sandiford-Artest": [
+          "Ron Artest",
+          "Metta World Peace",
+          "Artest",
+          "Metta"
+        ],
+        "World B. Free": [
+          "Lloyd Free"
+        ],
+        "Jamaal Wilkes": [
+          "Keith Wilkes"
+        ],
+        "Henry Walker": [
+          "Bill Walker"
+        ],
+        "Ronald Murray": [
+          "Flip Murray"
+        ]
+      },
+      "references": [
+        "https://en.wikipedia.org/wiki/Washington_Wizards_all-time_roster"
+      ]
+    }
+  ]
+}

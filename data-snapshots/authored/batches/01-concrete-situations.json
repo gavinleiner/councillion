@@ -1,0 +1,4489 @@
+{
+  "version": 1,
+  "questions": [
+    {
+      "id": "authored-ice-cream-toppings",
+      "concept": "ice-cream-toppings",
+      "family": "food",
+      "topic": "Sundae service",
+      "prompt": "Name an ice-cream topping or mix-in.",
+      "scope": "Named toppings and mix-ins used on ice cream, gelato or frozen custard count, including candy, fruit, nuts, sauces and cake pieces. A flavor by itself is not a topping.",
+      "format": "situations",
+      "rationale": "A concrete familiar entry point and a wider factual tail, following the saved review; this asks for a different activity or object relationship rather than a tag combination.",
+      "familiar": [
+        "Sprinkles",
+        "Hot fudge",
+        "Whipped cream",
+        "Caramel sauce",
+        "Oreo",
+        "Maraschino cherry",
+        "Chocolate",
+        "Caramel",
+        "Nuts",
+        "Snickers",
+        "Butterfinger",
+        "Heath",
+        "Kit Kat",
+        "Andes mints",
+        "Dove chocolate",
+        "Whipped topping",
+        "Rainbow sprinkles",
+        "Golden Oreo",
+        "Cheesecake",
+        "Chocolate cake",
+        "Graham crackers",
+        "Apple pie filling",
+        "Blackberries",
+        "Peaches",
+        "Cinnamon",
+        "Frosting",
+        "Mint",
+        "Salted caramel",
+        "Marshmallow cream",
+        "Reeses",
+        "Chocolate chips",
+        "Cookie dough",
+        "Brownie",
+        "M and Ms",
+        "Strawberries",
+        "Bananas",
+        "Peanuts",
+        "Pistachios",
+        "Skittles",
+        "Twix",
+        "Nilla wafers",
+        "Whoppers"
+      ],
+      "exclude": [
+        "Broccoli",
+        "Raw chicken"
+      ],
+      "references": [
+        "https://www.benjerry.com/flavors/ice-cream-sundaes",
+        "https://www.bbcgoodfood.com/recipes/collection/ice-cream-sundae-recipes",
+        "https://www.coldstonecreamery.com/menu/ice-cream/create-your-own/",
+        "https://www.coldstonecreamery.com/nutrition/pdf/CSC_Ingedient%20Statement-Mix-Ins_Cones.pdf",
+        "https://cdn.culvers.com/menu/docs/full-menu.pdf",
+        "https://www.dairyqueen.com/en-us/nutrition/treats/",
+        "https://marsfoodservices.com/recipe/skittles-popd-fireworks-shake",
+        "https://nerdymamma.com/skittles-rainbow-ice-cream-dairy-free-gluten-free/",
+        "https://www.calorieking.com/us/en/foods/b/calories-in-cold-stone-creamery/U30MWlz2SJyghXrKnFayVQ?classification=Toppings"
+      ],
+      "answers": {
+        "10": [
+          {
+            "label": "Sprinkles",
+            "aliases": [
+              "Candy sprinkles",
+              "Chocolate sprinkles",
+              "Hundreds and thousands",
+              "Rainbow sprinkles"
+            ]
+          },
+          {
+            "label": "Chocolate sauce",
+            "aliases": [
+              "Chocolate",
+              "Chocolate syrup"
+            ]
+          },
+          {
+            "label": "Hot fudge",
+            "aliases": [
+              "Fudge sauce"
+            ]
+          },
+          {
+            "label": "Whipped cream",
+            "aliases": [
+              "Cool Whip",
+              "Whipped topping"
+            ]
+          },
+          {
+            "label": "Caramel sauce",
+            "aliases": [
+              "Caramel",
+              "Hot caramel"
+            ]
+          },
+          {
+            "label": "Oreo",
+            "aliases": [
+              "Oreos"
+            ]
+          },
+          {
+            "label": "Chocolate chips",
+            "aliases": []
+          },
+          {
+            "label": "Cherry",
+            "aliases": [
+              "Cherries"
+            ]
+          },
+          {
+            "label": "Strawberry",
+            "aliases": [
+              "Strawberries"
+            ]
+          },
+          {
+            "label": "Banana",
+            "aliases": [
+              "Bananas"
+            ]
+          }
+        ],
+        "30": [
+          {
+            "label": "Maraschino cherry",
+            "aliases": [
+              "Maraschino cherries"
+            ]
+          },
+          {
+            "label": "Peanut",
+            "aliases": [
+              "Nut",
+              "Nuts",
+              "Peanuts"
+            ]
+          },
+          {
+            "label": "Almond",
+            "aliases": [
+              "Almonds"
+            ]
+          },
+          {
+            "label": "Walnut",
+            "aliases": [
+              "Walnuts"
+            ]
+          },
+          {
+            "label": "Pecan",
+            "aliases": [
+              "Pecans"
+            ]
+          },
+          {
+            "label": "Crushed cookies",
+            "aliases": [
+              "Cookie crumbs"
+            ]
+          },
+          {
+            "label": "Brownie",
+            "aliases": [
+              "Brownies"
+            ]
+          },
+          {
+            "label": "M&M's",
+            "aliases": [
+              "M and Ms"
+            ]
+          },
+          {
+            "label": "Peanut butter",
+            "aliases": [
+              "Reeses peanut butter sauce"
+            ]
+          },
+          {
+            "label": "Marshmallow",
+            "aliases": [
+              "Marshmallows"
+            ]
+          },
+          {
+            "label": "Butterscotch sauce",
+            "aliases": []
+          },
+          {
+            "label": "Strawberry sauce",
+            "aliases": []
+          },
+          {
+            "label": "Raspberry",
+            "aliases": [
+              "Raspberries"
+            ]
+          },
+          {
+            "label": "Blueberry",
+            "aliases": [
+              "Blueberries"
+            ]
+          },
+          {
+            "label": "Honey",
+            "aliases": []
+          },
+          {
+            "label": "Coconut",
+            "aliases": [
+              "Coconut flakes"
+            ]
+          },
+          {
+            "label": "Cookie dough",
+            "aliases": []
+          },
+          {
+            "label": "Peanut butter cup",
+            "aliases": [
+              "Peanut butter cups",
+              "Reese's peanut butter cups",
+              "Reeses",
+              "Reeses peanut butter cups"
+            ]
+          },
+          {
+            "label": "Pistachio",
+            "aliases": [
+              "Pistachios"
+            ]
+          },
+          {
+            "label": "Snickers",
+            "aliases": []
+          },
+          {
+            "label": "Butterfinger",
+            "aliases": []
+          },
+          {
+            "label": "Heath bar",
+            "aliases": [
+              "Heath"
+            ]
+          },
+          {
+            "label": "Andes mints",
+            "aliases": [
+              "Andes"
+            ]
+          },
+          {
+            "label": "Dove chocolate",
+            "aliases": [
+              "Dove"
+            ]
+          },
+          {
+            "label": "Chocolate cake",
+            "aliases": [
+              "Chocolate cake pieces"
+            ]
+          },
+          {
+            "label": "Cheesecake",
+            "aliases": [
+              "Cheesecake bites",
+              "Cheesecake pieces"
+            ]
+          },
+          {
+            "label": "Butter cake",
+            "aliases": [
+              "Butter cake pieces"
+            ]
+          },
+          {
+            "label": "Sugar cookie",
+            "aliases": [
+              "Sugar cookies"
+            ]
+          },
+          {
+            "label": "Peach",
+            "aliases": [
+              "Peaches"
+            ]
+          },
+          {
+            "label": "Blackberry",
+            "aliases": [
+              "Blackberries"
+            ]
+          },
+          {
+            "label": "Mint topping",
+            "aliases": [
+              "Mint"
+            ]
+          },
+          {
+            "label": "Salted caramel sauce",
+            "aliases": [
+              "Salted caramel"
+            ]
+          },
+          {
+            "label": "Marshmallow creme",
+            "aliases": [
+              "Marshmallow cream",
+              "Marshmallow fluff"
+            ]
+          },
+          {
+            "label": "Frosting",
+            "aliases": [
+              "Icing"
+            ]
+          },
+          {
+            "label": "Yellow cake",
+            "aliases": [
+              "Yellow cake pieces"
+            ]
+          },
+          {
+            "label": "Golden Oreo",
+            "aliases": [
+              "Golden Oreos"
+            ]
+          },
+          {
+            "label": "Kit Kat",
+            "aliases": []
+          },
+          {
+            "label": "Graham cracker crumbs",
+            "aliases": [
+              "Graham cracker",
+              "Graham cracker pie crust",
+              "Graham crackers"
+            ]
+          },
+          {
+            "label": "Apple pie filling",
+            "aliases": []
+          },
+          {
+            "label": "Sugar crystals",
+            "aliases": []
+          },
+          {
+            "label": "Cinnamon",
+            "aliases": []
+          },
+          {
+            "label": "Skittles",
+            "aliases": [
+              "Crushed Skittles",
+              "Skittles POPd"
+            ]
+          },
+          {
+            "label": "Twix",
+            "aliases": []
+          },
+          {
+            "label": "Nilla wafers",
+            "aliases": [
+              "Vanilla wafers"
+            ]
+          },
+          {
+            "label": "Malted milk ball",
+            "aliases": [
+              "Malted milk balls",
+              "Whoppers"
+            ]
+          }
+        ],
+        "60": [
+          {
+            "label": "Toffee",
+            "aliases": [
+              "Toffee pieces"
+            ]
+          },
+          {
+            "label": "Gummy bear",
+            "aliases": [
+              "Gummy bears"
+            ]
+          },
+          {
+            "label": "Gummy worm",
+            "aliases": [
+              "Gummy worms"
+            ]
+          },
+          {
+            "label": "Reese's Pieces",
+            "aliases": []
+          },
+          {
+            "label": "Chocolate shavings",
+            "aliases": []
+          },
+          {
+            "label": "Chocolate curls",
+            "aliases": []
+          },
+          {
+            "label": "Hazelnut",
+            "aliases": [
+              "Hazelnuts"
+            ]
+          },
+          {
+            "label": "Cashew",
+            "aliases": [
+              "Cashews"
+            ]
+          },
+          {
+            "label": "Pineapple",
+            "aliases": []
+          },
+          {
+            "label": "Mango",
+            "aliases": []
+          },
+          {
+            "label": "Raspberry sauce",
+            "aliases": []
+          },
+          {
+            "label": "Chocolate shell",
+            "aliases": [
+              "Magic Shell"
+            ]
+          },
+          {
+            "label": "Waffle cone pieces",
+            "aliases": [
+              "Crushed waffle cone"
+            ]
+          },
+          {
+            "label": "Pretzel",
+            "aliases": [
+              "Pretzels"
+            ]
+          },
+          {
+            "label": "Cereal",
+            "aliases": []
+          },
+          {
+            "label": "Granola",
+            "aliases": []
+          },
+          {
+            "label": "Maple syrup",
+            "aliases": []
+          },
+          {
+            "label": "Caramelized banana",
+            "aliases": []
+          },
+          {
+            "label": "Fudge brownie",
+            "aliases": []
+          },
+          {
+            "label": "Biscoff",
+            "aliases": [
+              "Lotus Biscoff"
+            ]
+          }
+        ],
+        "85": [
+          {
+            "label": "Amarena cherry",
+            "aliases": [
+              "Amarena cherries"
+            ]
+          },
+          {
+            "label": "Candied ginger",
+            "aliases": [
+              "Crystallized ginger"
+            ]
+          },
+          {
+            "label": "Praline",
+            "aliases": []
+          },
+          {
+            "label": "Brittle",
+            "aliases": [
+              "Nut brittle"
+            ]
+          },
+          {
+            "label": "Candied pecans",
+            "aliases": []
+          },
+          {
+            "label": "Caramel popcorn",
+            "aliases": []
+          },
+          {
+            "label": "Lemon curd",
+            "aliases": []
+          },
+          {
+            "label": "Passion fruit pulp",
+            "aliases": []
+          },
+          {
+            "label": "Freeze-dried raspberry",
+            "aliases": []
+          },
+          {
+            "label": "Freeze-dried strawberry",
+            "aliases": []
+          },
+          {
+            "label": "Cacao nibs",
+            "aliases": []
+          },
+          {
+            "label": "Sesame seeds",
+            "aliases": []
+          },
+          {
+            "label": "Halva",
+            "aliases": []
+          },
+          {
+            "label": "Tahini",
+            "aliases": []
+          },
+          {
+            "label": "Mochi pieces",
+            "aliases": []
+          },
+          {
+            "label": "Red bean paste",
+            "aliases": [
+              "Anko"
+            ]
+          },
+          {
+            "label": "Boba",
+            "aliases": [
+              "Tapioca pearls"
+            ]
+          },
+          {
+            "label": "Dulce de leche",
+            "aliases": []
+          },
+          {
+            "label": "Cotton candy",
+            "aliases": [
+              "Candy floss"
+            ]
+          },
+          {
+            "label": "Popping candy",
+            "aliases": [
+              "Pop Rocks"
+            ]
+          },
+          {
+            "label": "Turkish delight",
+            "aliases": []
+          },
+          {
+            "label": "Meringue pieces",
+            "aliases": []
+          },
+          {
+            "label": "Coulis",
+            "aliases": [
+              "Fruit coulis"
+            ]
+          }
+        ],
+        "100": [
+          {
+            "label": "Feuilletine",
+            "aliases": []
+          }
+        ]
+      }
+    },
+    {
+      "id": "authored-pickled-foods",
+      "concept": "pickled-foods",
+      "family": "food",
+      "topic": "In a pickle",
+      "prompt": "Name a food that is commonly pickled.",
+      "scope": "Vegetables, fruits, eggs, meats and seafood with established pickled preparations count. Vinegar and brine are ingredients, not foods being pickled.",
+      "format": "properties",
+      "rationale": "A concrete familiar entry point and a wider factual tail, following the saved review; this asks for a different activity or object relationship rather than a tag combination.",
+      "familiar": [
+        "Cucumber",
+        "Onion",
+        "Egg",
+        "Beetroot",
+        "Herring",
+        "Jalapeno",
+        "Cabbage",
+        "Carrot",
+        "Radish",
+        "Garlic",
+        "Cauliflower",
+        "Green beans",
+        "Peppers",
+        "Ginger",
+        "Olives",
+        "Okra",
+        "Turnip",
+        "Mango",
+        "Red onion",
+        "Pearl onions",
+        "Daikon",
+        "Mushrooms",
+        "Asparagus",
+        "Zucchini",
+        "Eggplant",
+        "Watermelon rind",
+        "Green tomatoes",
+        "Capers",
+        "Pickled cucumber",
+        "Pickled eggs",
+        "Pickled red onion",
+        "Pickled jalapenos",
+        "Pickled beets",
+        "Kimchi",
+        "Sauerkraut",
+        "Giardiniera",
+        "Relish",
+        "Achaar",
+        "Acar",
+        "Umeboshi",
+        "Tsukemono",
+        "Gari",
+        "Rollmops",
+        "Corned beef",
+        "Peppadew",
+        "Pickled garlic",
+        "Pickled ginger",
+        "Pickled herring",
+        "Pickled mustard seeds",
+        "Artichoke",
+        "Seaweed",
+        "Kimchee",
+        "Achar",
+        "Red onions",
+        "Pickled red onions",
+        "Pickled beef"
+      ],
+      "exclude": [
+        "Chocolate cake",
+        "Vinegar",
+        "Pickling salt",
+        "Cucumber soup"
+      ],
+      "references": [
+        "https://www.bbcgoodfood.com/recipes/collection/pickling-recipes",
+        "https://nchfp.uga.edu/how/pickle/",
+        "https://en.wikipedia.org/wiki/List_of_pickled_foods"
+      ],
+      "answers": {
+        "10": [
+          {
+            "label": "Cucumber",
+            "aliases": [
+              "Gherkin",
+              "Pickle",
+              "Pickled Cucumber",
+              "Pickled Gherkin",
+              "Pickled Pickle",
+              "Pickled cucumber"
+            ]
+          },
+          {
+            "label": "Onion",
+            "aliases": [
+              "Onions",
+              "Pickled Onion",
+              "Pickled Onions",
+              "Pickled onion"
+            ]
+          },
+          {
+            "label": "Beetroot",
+            "aliases": [
+              "Beet",
+              "Beetroots",
+              "Beets",
+              "Pickled Beet",
+              "Pickled Beetroot",
+              "Pickled Beetroots",
+              "Pickled Beets"
+            ]
+          },
+          {
+            "label": "Egg",
+            "aliases": [
+              "Eggs",
+              "Pickled Egg",
+              "Pickled Eggs"
+            ]
+          },
+          {
+            "label": "Jalapeno",
+            "aliases": [
+              "Jalapenos",
+              "Jalapeños",
+              "Pickled Jalapeno",
+              "Pickled Jalapenos",
+              "Pickled Jalapeño",
+              "Pickled Jalapeños"
+            ]
+          },
+          {
+            "label": "Cabbage",
+            "aliases": [
+              "Pickled Cabbage"
+            ]
+          }
+        ],
+        "30": [
+          {
+            "label": "Carrot",
+            "aliases": [
+              "Carrots",
+              "Pickled Carrot",
+              "Pickled Carrots",
+              "Pickled carrot"
+            ]
+          },
+          {
+            "label": "Radish",
+            "aliases": [
+              "Pickled Radish",
+              "Pickled Radishes",
+              "Pickled radish",
+              "Radishes"
+            ]
+          },
+          {
+            "label": "Garlic",
+            "aliases": [
+              "Pickled Garlic"
+            ]
+          },
+          {
+            "label": "Cauliflower",
+            "aliases": [
+              "Pickled Cauliflower"
+            ]
+          },
+          {
+            "label": "Green bean",
+            "aliases": [
+              "Green beans",
+              "Pickled Green bean",
+              "Pickled Green beans"
+            ]
+          },
+          {
+            "label": "Pepper",
+            "aliases": [
+              "Peppers",
+              "Pickled Pepper",
+              "Pickled Peppers",
+              "Pickled pepper"
+            ]
+          },
+          {
+            "label": "Chili",
+            "aliases": [
+              "Chilli",
+              "Pickled Chili",
+              "Pickled Chilli"
+            ]
+          },
+          {
+            "label": "Ginger",
+            "aliases": [
+              "Pickled Ginger"
+            ]
+          },
+          {
+            "label": "Herring",
+            "aliases": [
+              "Pickled Herring"
+            ]
+          },
+          {
+            "label": "Olive",
+            "aliases": [
+              "Olives",
+              "Pickled Olive",
+              "Pickled Olives"
+            ]
+          },
+          {
+            "label": "Lemon",
+            "aliases": [
+              "Pickled Lemon",
+              "Pickled Preserved lemon",
+              "Preserved lemon"
+            ]
+          },
+          {
+            "label": "Okra",
+            "aliases": [
+              "Pickled Okra"
+            ]
+          },
+          {
+            "label": "Turnip",
+            "aliases": [
+              "Pickled Turnip",
+              "Pickled Turnips",
+              "Turnips"
+            ]
+          },
+          {
+            "label": "Mango",
+            "aliases": [
+              "Pickled Mango"
+            ]
+          },
+          {
+            "label": "Red onion",
+            "aliases": [
+              "Pickled Red onion",
+              "Red onions",
+              "Pickled red onions"
+            ]
+          },
+          {
+            "label": "Pearl onion",
+            "aliases": [
+              "Pearl onions",
+              "Pickled Pearl onion",
+              "Pickled Pearl onions"
+            ]
+          },
+          {
+            "label": "Daikon",
+            "aliases": [
+              "Pickled Daikon"
+            ]
+          },
+          {
+            "label": "Mushroom",
+            "aliases": [
+              "Mushrooms",
+              "Pickled Mushroom",
+              "Pickled Mushrooms"
+            ]
+          },
+          {
+            "label": "Asparagus",
+            "aliases": [
+              "Pickled Asparagus"
+            ]
+          },
+          {
+            "label": "Zucchini",
+            "aliases": [
+              "Courgette",
+              "Pickled Courgette",
+              "Pickled Zucchini"
+            ]
+          },
+          {
+            "label": "Eggplant",
+            "aliases": [
+              "Aubergine",
+              "Brinjal",
+              "Pickled Aubergine",
+              "Pickled Eggplant"
+            ]
+          },
+          {
+            "label": "Watermelon rind",
+            "aliases": [
+              "Pickled Watermelon rind"
+            ]
+          },
+          {
+            "label": "Green tomato",
+            "aliases": [
+              "Green tomatoes",
+              "Pickled Green tomato",
+              "Pickled Green tomatoes"
+            ]
+          },
+          {
+            "label": "Acar",
+            "aliases": [
+              "Pickled Acar"
+            ]
+          },
+          {
+            "label": "Achaar",
+            "aliases": [
+              "Pickled Achaar",
+              "Achar"
+            ]
+          },
+          {
+            "label": "Artichoke",
+            "aliases": [
+              "Pickled Artichoke"
+            ]
+          },
+          {
+            "label": "Caper",
+            "aliases": [
+              "Capers",
+              "Pickled Caper",
+              "Pickled Capers"
+            ]
+          },
+          {
+            "label": "Corned beef",
+            "aliases": [
+              "Pickled Corned beef",
+              "Salt beef",
+              "Pickled beef"
+            ]
+          },
+          {
+            "label": "Gari",
+            "aliases": [
+              "Pickled Gari"
+            ]
+          },
+          {
+            "label": "Giardiniera",
+            "aliases": [
+              "Pickled Giardiniera"
+            ]
+          },
+          {
+            "label": "Kimchi",
+            "aliases": [
+              "Pickled Kimchi",
+              "Kimchee"
+            ]
+          },
+          {
+            "label": "Mustard seeds",
+            "aliases": [
+              "Pickled Mustard seeds"
+            ]
+          },
+          {
+            "label": "Peppadew",
+            "aliases": [
+              "Pickled Peppadew"
+            ]
+          },
+          {
+            "label": "Relish",
+            "aliases": [
+              "Pickled Relish"
+            ]
+          },
+          {
+            "label": "Rollmops",
+            "aliases": [
+              "Pickled Rollmops"
+            ]
+          },
+          {
+            "label": "Sauerkraut",
+            "aliases": [
+              "Pickled Sauerkraut"
+            ]
+          },
+          {
+            "label": "Seaweed",
+            "aliases": [
+              "Pickled Seaweed"
+            ]
+          },
+          {
+            "label": "Tsukemono",
+            "aliases": [
+              "Pickled Tsukemono"
+            ]
+          },
+          {
+            "label": "Umeboshi",
+            "aliases": [
+              "Pickled Umeboshi"
+            ]
+          }
+        ],
+        "60": [
+          {
+            "label": "Shallot",
+            "aliases": [
+              "Pickled Shallot",
+              "Pickled Shallots",
+              "Shallots"
+            ]
+          },
+          {
+            "label": "Tomato",
+            "aliases": [
+              "Pickled Tomato",
+              "Pickled Tomatoes",
+              "Tomatoes"
+            ]
+          },
+          {
+            "label": "Corn",
+            "aliases": [
+              "Pickled Corn"
+            ]
+          },
+          {
+            "label": "Baby corn",
+            "aliases": [
+              "Pickled Baby corn"
+            ]
+          },
+          {
+            "label": "Peach",
+            "aliases": [
+              "Peaches",
+              "Pickled Peach",
+              "Pickled Peaches"
+            ]
+          },
+          {
+            "label": "Pear",
+            "aliases": [
+              "Pears",
+              "Pickled Pear",
+              "Pickled Pears"
+            ]
+          },
+          {
+            "label": "Plum",
+            "aliases": [
+              "Pickled Plum",
+              "Pickled Plums",
+              "Plums"
+            ]
+          },
+          {
+            "label": "Cherry",
+            "aliases": [
+              "Cherries",
+              "Pickled Cherries",
+              "Pickled Cherry"
+            ]
+          },
+          {
+            "label": "Walnut",
+            "aliases": [
+              "Pickled Walnut",
+              "Pickled Walnuts",
+              "Walnuts"
+            ]
+          },
+          {
+            "label": "Apple",
+            "aliases": [
+              "Apples",
+              "Pickled Apple",
+              "Pickled Apples"
+            ]
+          },
+          {
+            "label": "Pork",
+            "aliases": [
+              "Pickle meat",
+              "Pickled Pork"
+            ]
+          },
+          {
+            "label": "Pig's foot",
+            "aliases": [
+              "Pickled Pig's feet",
+              "Pickled Pig's foot",
+              "Pickled pigs' feet",
+              "Pig's feet"
+            ]
+          },
+          {
+            "label": "Sausage",
+            "aliases": [
+              "Pickled Sausage",
+              "Pickled Sausages",
+              "Sausages"
+            ]
+          },
+          {
+            "label": "Shrimp",
+            "aliases": [
+              "Pickled Prawn",
+              "Pickled Shrimp",
+              "Prawn"
+            ]
+          },
+          {
+            "label": "Mackerel",
+            "aliases": [
+              "Pickled Mackerel"
+            ]
+          },
+          {
+            "label": "Salmon",
+            "aliases": [
+              "Pickled Salmon"
+            ]
+          },
+          {
+            "label": "Sardine",
+            "aliases": [
+              "Pickled Sardine",
+              "Pickled Sardines",
+              "Sardines"
+            ]
+          },
+          {
+            "label": "Aavakaaya",
+            "aliases": [
+              "Pickled Aavakaaya"
+            ]
+          },
+          {
+            "label": "Allium chinense",
+            "aliases": [
+              "Pickled Allium chinense"
+            ]
+          },
+          {
+            "label": "Amba",
+            "aliases": [
+              "Pickled Amba"
+            ]
+          },
+          {
+            "label": "Asazuke",
+            "aliases": [
+              "Pickled Asazuke"
+            ]
+          },
+          {
+            "label": "Asinan",
+            "aliases": [
+              "Pickled Asinan"
+            ]
+          },
+          {
+            "label": "Atchara",
+            "aliases": [
+              "Pickled Atchara"
+            ]
+          },
+          {
+            "label": "Beet eggs",
+            "aliases": [
+              "Pickled Beet eggs"
+            ]
+          },
+          {
+            "label": "Beni shōga",
+            "aliases": [
+              "Pickled Beni shōga"
+            ]
+          },
+          {
+            "label": "Bettarazuke",
+            "aliases": [
+              "Pickled Bettarazuke"
+            ]
+          },
+          {
+            "label": "Bodi ko achar",
+            "aliases": [
+              "Pickled Bodi ko achar"
+            ]
+          },
+          {
+            "label": "Bostongurka",
+            "aliases": [
+              "Pickled Bostongurka"
+            ]
+          },
+          {
+            "label": "Branston pickle",
+            "aliases": [
+              "Pickled Branston pickle"
+            ]
+          },
+          {
+            "label": "Brined cheese",
+            "aliases": [
+              "Pickled Brined cheese"
+            ]
+          },
+          {
+            "label": "Burong mangga",
+            "aliases": [
+              "Pickled Burong mangga"
+            ]
+          },
+          {
+            "label": "Chamoy",
+            "aliases": [
+              "Pickled Chamoy"
+            ]
+          },
+          {
+            "label": "Champoy",
+            "aliases": [
+              "Pickled Champoy"
+            ]
+          },
+          {
+            "label": "Chanh muối",
+            "aliases": [
+              "Pickled Chanh muối"
+            ]
+          },
+          {
+            "label": "Chhundo",
+            "aliases": [
+              "Pickled Chhundo"
+            ]
+          },
+          {
+            "label": "Chinese pickles",
+            "aliases": [
+              "Pickled Chinese pickles"
+            ]
+          },
+          {
+            "label": "Chow-chow",
+            "aliases": [
+              "Pickled Chow-chow"
+            ]
+          },
+          {
+            "label": "Coleslaw",
+            "aliases": [
+              "Pickled Coleslaw"
+            ]
+          },
+          {
+            "label": "Crab meat",
+            "aliases": [
+              "Pickled Crab meat"
+            ]
+          },
+          {
+            "label": "Crack seed",
+            "aliases": [
+              "Pickled Crack seed"
+            ]
+          },
+          {
+            "label": "Cueritos",
+            "aliases": [
+              "Pickled Cueritos"
+            ]
+          },
+          {
+            "label": "Curtido",
+            "aliases": [
+              "Pickled Curtido"
+            ]
+          },
+          {
+            "label": "Dilly beans",
+            "aliases": [
+              "Pickled Dilly beans"
+            ]
+          },
+          {
+            "label": "Fermented bean curd",
+            "aliases": [
+              "Pickled Fermented bean curd"
+            ]
+          },
+          {
+            "label": "Eisbein",
+            "aliases": [
+              "Pickled Eisbein"
+            ]
+          },
+          {
+            "label": "Encurtido",
+            "aliases": [
+              "Pickled Encurtido"
+            ]
+          },
+          {
+            "label": "Fried pickle",
+            "aliases": [
+              "Pickled Fried pickle"
+            ]
+          },
+          {
+            "label": "Fruit",
+            "aliases": [
+              "Pickled Fruit"
+            ]
+          },
+          {
+            "label": "Fukujinzuke",
+            "aliases": [
+              "Pickled Fukujinzuke"
+            ]
+          },
+          {
+            "label": "Ginger pickle",
+            "aliases": [
+              "Pickled Ginger pickle"
+            ]
+          },
+          {
+            "label": "Ham hock",
+            "aliases": [
+              "Pickled Ham hock"
+            ]
+          },
+          {
+            "label": "Jujube",
+            "aliases": [
+              "Pickled Jujube"
+            ]
+          },
+          {
+            "label": "Karashizuke",
+            "aliases": [
+              "Pickled Karashizuke"
+            ]
+          },
+          {
+            "label": "Kasuzuke",
+            "aliases": [
+              "Pickled Kasuzuke"
+            ]
+          },
+          {
+            "label": "Kiamoy",
+            "aliases": [
+              "Pickled Kiamoy"
+            ]
+          },
+          {
+            "label": "Baek-kimchi",
+            "aliases": [
+              "Pickled Baek-kimchi"
+            ]
+          },
+          {
+            "label": "Dongchimi",
+            "aliases": [
+              "Pickled Dongchimi"
+            ]
+          },
+          {
+            "label": "Kkakdugi",
+            "aliases": [
+              "Pickled Kkakdugi"
+            ]
+          },
+          {
+            "label": "Nabak-kimchi",
+            "aliases": [
+              "Pickled Nabak-kimchi"
+            ]
+          },
+          {
+            "label": "Yeolmu-kimchi",
+            "aliases": [
+              "Pickled Yeolmu-kimchi"
+            ]
+          },
+          {
+            "label": "Knieperkohl",
+            "aliases": [
+              "Pickled Knieperkohl"
+            ]
+          },
+          {
+            "label": "Kool-Aid pickles",
+            "aliases": [
+              "Pickled Kool-Aid pickles"
+            ]
+          },
+          {
+            "label": "Lahpet",
+            "aliases": [
+              "Pickled Lahpet"
+            ]
+          },
+          {
+            "label": "Li hing mui",
+            "aliases": [
+              "Pickled Li hing mui"
+            ]
+          },
+          {
+            "label": "Limes",
+            "aliases": [
+              "Pickled Limes"
+            ]
+          },
+          {
+            "label": "Mango pickle",
+            "aliases": [
+              "Pickled Mango pickle"
+            ]
+          },
+          {
+            "label": "Matsumaezuke",
+            "aliases": [
+              "Pickled Matsumaezuke"
+            ]
+          },
+          {
+            "label": "Meigan cai",
+            "aliases": [
+              "Pickled Meigan cai"
+            ]
+          },
+          {
+            "label": "Mixed pickle",
+            "aliases": [
+              "Pickled Mixed pickle"
+            ]
+          },
+          {
+            "label": "Mohnyin tjin",
+            "aliases": [
+              "Pickled Mohnyin tjin"
+            ]
+          },
+          {
+            "label": "Morkovcha",
+            "aliases": [
+              "Pickled Morkovcha"
+            ]
+          },
+          {
+            "label": "Murabba",
+            "aliases": [
+              "Pickled Murabba"
+            ]
+          },
+          {
+            "label": "Murături",
+            "aliases": [
+              "Pickled Murături"
+            ]
+          },
+          {
+            "label": "Nem chua",
+            "aliases": [
+              "Pickled Nem chua"
+            ]
+          },
+          {
+            "label": "Nozawana",
+            "aliases": [
+              "Pickled Nozawana"
+            ]
+          },
+          {
+            "label": "Nukazuke",
+            "aliases": [
+              "Pickled Nukazuke"
+            ]
+          },
+          {
+            "label": "Oorgai",
+            "aliases": [
+              "Pickled Oorgai"
+            ]
+          },
+          {
+            "label": "Pachranga",
+            "aliases": [
+              "Pickled Pachranga"
+            ]
+          },
+          {
+            "label": "Pao cai",
+            "aliases": [
+              "Pickled Pao cai"
+            ]
+          },
+          {
+            "label": "Piccalilli",
+            "aliases": [
+              "Pickled Piccalilli"
+            ]
+          },
+          {
+            "label": "Pikliz",
+            "aliases": [
+              "Pickled Pikliz"
+            ]
+          },
+          {
+            "label": "Prune",
+            "aliases": [
+              "Pickled Prune"
+            ]
+          },
+          {
+            "label": "Salt pork",
+            "aliases": [
+              "Pickled Salt pork"
+            ]
+          },
+          {
+            "label": "Salt-cured meat",
+            "aliases": [
+              "Pickled Salt-cured meat"
+            ]
+          },
+          {
+            "label": "Seer Torshi",
+            "aliases": [
+              "Pickled Seer Torshi"
+            ]
+          },
+          {
+            "label": "Sour cabbage",
+            "aliases": [
+              "Pickled Sour cabbage"
+            ]
+          },
+          {
+            "label": "Spanish pickle",
+            "aliases": [
+              "Pickled Spanish pickle"
+            ]
+          },
+          {
+            "label": "Spreewald gherkins",
+            "aliases": [
+              "Pickled Spreewald gherkins"
+            ]
+          },
+          {
+            "label": "Suan cai",
+            "aliases": [
+              "Pickled Suan cai"
+            ]
+          },
+          {
+            "label": "Takuan",
+            "aliases": [
+              "Pickled Takuan"
+            ]
+          },
+          {
+            "label": "Three bean salad",
+            "aliases": [
+              "Pickled Three bean salad"
+            ]
+          },
+          {
+            "label": "Tianjin preserved vegetable",
+            "aliases": [
+              "Pickled Tianjin preserved vegetable"
+            ]
+          },
+          {
+            "label": "Torshi",
+            "aliases": [
+              "Pickled Torshi"
+            ]
+          },
+          {
+            "label": "Whelks",
+            "aliases": [
+              "Pickled Whelks"
+            ]
+          },
+          {
+            "label": "Zha cai",
+            "aliases": [
+              "Pickled Zha cai"
+            ]
+          }
+        ],
+        "85": [
+          {
+            "label": "Bamboo shoot",
+            "aliases": [
+              "Bamboo shoots",
+              "Pickled Bamboo shoot",
+              "Pickled Bamboo shoots"
+            ]
+          },
+          {
+            "label": "Lotus root",
+            "aliases": [
+              "Pickled Lotus root"
+            ]
+          },
+          {
+            "label": "Mustard greens",
+            "aliases": [
+              "Pickled Mustard greens"
+            ]
+          },
+          {
+            "label": "Napa cabbage",
+            "aliases": [
+              "Pickled Napa cabbage"
+            ]
+          },
+          {
+            "label": "Papaya",
+            "aliases": [
+              "Pickled Papaya"
+            ]
+          },
+          {
+            "label": "Pineapple",
+            "aliases": [
+              "Pickled Pineapple"
+            ]
+          },
+          {
+            "label": "Gooseberry",
+            "aliases": [
+              "Gooseberries",
+              "Pickled Gooseberries",
+              "Pickled Gooseberry"
+            ]
+          },
+          {
+            "label": "Crab apple",
+            "aliases": [
+              "Crab apples",
+              "Pickled Crab apple",
+              "Pickled Crab apples"
+            ]
+          },
+          {
+            "label": "Green almond",
+            "aliases": [
+              "Green almonds",
+              "Pickled Green almond",
+              "Pickled Green almonds"
+            ]
+          },
+          {
+            "label": "Caper berry",
+            "aliases": [
+              "Caper berries",
+              "Pickled Caper berries",
+              "Pickled Caper berry"
+            ]
+          },
+          {
+            "label": "Samphire",
+            "aliases": [
+              "Pickled Samphire"
+            ]
+          },
+          {
+            "label": "Sea fennel",
+            "aliases": [
+              "Pickled Sea fennel"
+            ]
+          },
+          {
+            "label": "Banana blossom",
+            "aliases": [
+              "Pickled Banana blossom"
+            ]
+          },
+          {
+            "label": "Tea leaf",
+            "aliases": [
+              "Pickled Tea leaf",
+              "Pickled Tea leaves",
+              "Tea leaves"
+            ]
+          },
+          {
+            "label": "Ramps",
+            "aliases": [
+              "Pickled Ramps",
+              "Pickled Wild leek",
+              "Wild leek"
+            ]
+          },
+          {
+            "label": "Fiddlehead fern",
+            "aliases": [
+              "Fiddleheads",
+              "Pickled Fiddlehead fern",
+              "Pickled Fiddleheads"
+            ]
+          },
+          {
+            "label": "Fish roe",
+            "aliases": [
+              "Pickled Fish roe"
+            ]
+          },
+          {
+            "label": "Squid",
+            "aliases": [
+              "Pickled Squid"
+            ]
+          },
+          {
+            "label": "Octopus",
+            "aliases": [
+              "Pickled Octopus"
+            ]
+          },
+          {
+            "label": "Cockle",
+            "aliases": [
+              "Cockles",
+              "Pickled Cockle",
+              "Pickled Cockles"
+            ]
+          },
+          {
+            "label": "Mussel",
+            "aliases": [
+              "Mussels",
+              "Pickled Mussel",
+              "Pickled Mussels"
+            ]
+          },
+          {
+            "label": "Tongue",
+            "aliases": [
+              "Beef tongue",
+              "Pickled Beef tongue",
+              "Pickled Tongue"
+            ]
+          },
+          {
+            "label": "Hog plum",
+            "aliases": [
+              "Pickled Hog plum"
+            ]
+          },
+          {
+            "label": "Amla",
+            "aliases": [
+              "Indian gooseberry",
+              "Pickled Amla",
+              "Pickled Indian gooseberry"
+            ]
+          }
+        ],
+        "100": [
+          {
+            "label": "Myoga",
+            "aliases": [
+              "Pickled Myoga"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "authored-leaf-wrapped-food",
+      "concept": "leaf-wrapped-food",
+      "family": "food",
+      "topic": "Unwrap it",
+      "prompt": "Name a named dish cooked or wrapped in plant leaves.",
+      "scope": "Traditional leaf-wrapped food parcels, dishes cooked between leaves or in leaf-lined containers, and dishes traditionally sold wrapped in leaves count. Food merely set on a leaf plate without leaf cooking or wrapping does not qualify.",
+      "format": "situations",
+      "rationale": "A concrete familiar entry point and a wider factual tail, following the saved review; this asks for a different activity or object relationship rather than a tag combination.",
+      "familiar": [
+        "Tamale",
+        "Dolma",
+        "Zongzi",
+        "Grape leaves",
+        "Sarma",
+        "Pasteles",
+        "Cabbage roll",
+        "Stuffed grape leaves",
+        "Lau lau",
+        "Kalua pork",
+        "Banh chung",
+        "Banh tet",
+        "Lo mai gai",
+        "Otak otak",
+        "Pepes",
+        "Lemper",
+        "Lontong",
+        "Ketupat",
+        "Hallaca",
+        "Nacatamal",
+        "Humita",
+        "Palusami",
+        "Fish amok",
+        "Suman",
+        "Ducana",
+        "Tempeh",
+        "Puto bumbong",
+        "Patoli",
+        "Patholi",
+        "Khao tom mat",
+        "Khao tom mud"
+      ],
+      "exclude": [
+        "Burrito",
+        "Foil"
+      ],
+      "references": [
+        "https://www.britannica.com/topic/tamale",
+        "https://www.britannica.com/topic/dolma",
+        "https://www.smithsonianmag.com/arts-culture/a-brief-history-of-zongzi-the-sticky-rice-dumplings-of-the-dragon-boat-festival-180980174/",
+        "https://antiguabarbuda365.com/dishes/ducana",
+        "https://e-journal.faperta.universitasmuarabungo.ac.id/index.php/baselang/article/download/244/117",
+        "https://www.nalis.gov.tt/resources/tt-content-guide/christmas/christmas-recipes/",
+        "https://www.simplytrinicooking.com/trinidad-paime/",
+        "https://en.wikipedia.org/wiki/Khao_tom",
+        "https://en.wikipedia.org/wiki/Patoleo",
+        "https://www.philstar.com/lifestyle/food-and-leisure/2025/12/24/2496543/where-did-puto-bumbong-come-from/amp"
+      ],
+      "answers": {
+        "10": [
+          {
+            "label": "Tamale",
+            "aliases": [
+              "Tamales"
+            ]
+          },
+          {
+            "label": "Dolma",
+            "aliases": [
+              "Dolmades",
+              "Grape leaves",
+              "Stuffed grape leaves",
+              "Turkish yaprak sarma",
+              "Yaprak sarma"
+            ]
+          },
+          {
+            "label": "Stuffed cabbage",
+            "aliases": [
+              "Cabbage roll",
+              "Cabbage rolls"
+            ]
+          },
+          {
+            "label": "Zongzi",
+            "aliases": []
+          },
+          {
+            "label": "Sarma",
+            "aliases": []
+          }
+        ],
+        "30": [
+          {
+            "label": "Pasteles",
+            "aliases": []
+          },
+          {
+            "label": "Suman",
+            "aliases": []
+          },
+          {
+            "label": "Lau lau",
+            "aliases": []
+          },
+          {
+            "label": "Kalua pig",
+            "aliases": [
+              "Kalua pork"
+            ]
+          },
+          {
+            "label": "Paturi",
+            "aliases": []
+          },
+          {
+            "label": "Bánh chưng",
+            "aliases": []
+          },
+          {
+            "label": "Bánh tét",
+            "aliases": []
+          },
+          {
+            "label": "Lo mai gai",
+            "aliases": []
+          },
+          {
+            "label": "Otak-otak",
+            "aliases": []
+          },
+          {
+            "label": "Pepes",
+            "aliases": []
+          },
+          {
+            "label": "Nagasari",
+            "aliases": []
+          },
+          {
+            "label": "Pandan chicken",
+            "aliases": [
+              "Gai hor bai toey"
+            ]
+          },
+          {
+            "label": "Lemper",
+            "aliases": []
+          },
+          {
+            "label": "Lontong",
+            "aliases": []
+          },
+          {
+            "label": "Ketupat",
+            "aliases": []
+          },
+          {
+            "label": "Humita",
+            "aliases": [
+              "Humitas"
+            ]
+          },
+          {
+            "label": "Hallaca",
+            "aliases": [
+              "Hallacas"
+            ]
+          },
+          {
+            "label": "Nacatamal",
+            "aliases": [
+              "Nacatamales"
+            ]
+          },
+          {
+            "label": "Amok trey",
+            "aliases": [
+              "Fish amok"
+            ]
+          },
+          {
+            "label": "Palusami",
+            "aliases": []
+          },
+          {
+            "label": "Ducana",
+            "aliases": []
+          },
+          {
+            "label": "Tempeh",
+            "aliases": [
+              "Tempe",
+              "Leaf-wrapped tempeh"
+            ]
+          }
+        ],
+        "60": [
+          {
+            "label": "Bibingka",
+            "aliases": []
+          },
+          {
+            "label": "Puto bumbong",
+            "aliases": []
+          },
+          {
+            "label": "Binalot",
+            "aliases": []
+          },
+          {
+            "label": "Botok",
+            "aliases": []
+          },
+          {
+            "label": "Kue bugis",
+            "aliases": []
+          },
+          {
+            "label": "Arem-arem",
+            "aliases": []
+          },
+          {
+            "label": "Khao tom mat",
+            "aliases": [
+              "Khao tom mud"
+            ]
+          },
+          {
+            "label": "Khao niew sangkhaya",
+            "aliases": []
+          },
+          {
+            "label": "Patra",
+            "aliases": [
+              "Alu vadi"
+            ]
+          },
+          {
+            "label": "Patoleo",
+            "aliases": [
+              "Patholi",
+              "Patoli"
+            ]
+          },
+          {
+            "label": "Ada",
+            "aliases": [
+              "Ela ada"
+            ]
+          },
+          {
+            "label": "Panki",
+            "aliases": []
+          },
+          {
+            "label": "Sarmale",
+            "aliases": []
+          },
+          {
+            "label": "Holubtsi",
+            "aliases": []
+          },
+          {
+            "label": "Gołąbki",
+            "aliases": [
+              "Golabki"
+            ]
+          },
+          {
+            "label": "Niangao",
+            "aliases": []
+          },
+          {
+            "label": "Corundas",
+            "aliases": []
+          }
+        ],
+        "85": [
+          {
+            "label": "Juane",
+            "aliases": [
+              "Juanes"
+            ]
+          },
+          {
+            "label": "Mekong mok pa",
+            "aliases": [
+              "Mok pa"
+            ]
+          },
+          {
+            "label": "Laplap",
+            "aliases": []
+          },
+          {
+            "label": "Bougna",
+            "aliases": []
+          },
+          {
+            "label": "Mumu",
+            "aliases": []
+          },
+          {
+            "label": "Zacahuil",
+            "aliases": []
+          },
+          {
+            "label": "Mucbilpollo",
+            "aliases": []
+          },
+          {
+            "label": "Chikwangue",
+            "aliases": [
+              "Kwanga"
+            ]
+          },
+          {
+            "label": "Bobolo",
+            "aliases": []
+          },
+          {
+            "label": "Liboke",
+            "aliases": []
+          },
+          {
+            "label": "Pitha",
+            "aliases": []
+          },
+          {
+            "label": "Lepet",
+            "aliases": []
+          },
+          {
+            "label": "Bánh lá",
+            "aliases": []
+          },
+          {
+            "label": "Bánh ít",
+            "aliases": []
+          },
+          {
+            "label": "Bánh giò",
+            "aliases": []
+          }
+        ],
+        "100": [
+          {
+            "label": "Paime",
+            "aliases": []
+          }
+        ]
+      }
+    },
+    {
+      "id": "authored-corn-dishes",
+      "concept": "corn-dishes",
+      "family": "food",
+      "topic": "Off the cob",
+      "prompt": "Name a corn-based food or drink.",
+      "scope": "Corn or cornmeal must be a defining ingredient. Foods, drinks and edible corn products count; incidental corn-derived additives do not make every food corn-based.",
+      "format": "situations",
+      "rationale": "A concrete familiar entry point and a wider factual tail, following the saved review; this asks for a different activity or object relationship rather than a tag combination.",
+      "familiar": [
+        "Popcorn",
+        "Cornbread",
+        "Polenta",
+        "Tortilla",
+        "Grits",
+        "Arepa",
+        "Corn on the cob",
+        "Corn flakes",
+        "Nachos",
+        "Corn chips",
+        "Tamale",
+        "Elote",
+        "Esquites",
+        "Corn chowder",
+        "Corn pudding",
+        "Creamed corn",
+        "Corn fritters",
+        "Hush puppies",
+        "Corn dog",
+        "Hominy",
+        "Tostada",
+        "Gordita",
+        "Sope",
+        "Pupusa",
+        "Pozole",
+        "Chilaquiles",
+        "Enchilada",
+        "Tortilla chips",
+        "Fritos",
+        "Doritos",
+        "Johnnycake",
+        "Spoonbread",
+        "Atole",
+        "Champurrado",
+        "Chicha",
+        "Mazamorra",
+        "Cornmeal",
+        "Corn oil",
+        "Corn starch",
+        "Corn syrup",
+        "Corn soup",
+        "Corn cheese",
+        "Corn tea",
+        "Corn whiskey",
+        "Bourbon whiskey",
+        "Taco",
+        "Taquito",
+        "Makki di roti",
+        "Broa",
+        "Succotash",
+        "Gofio",
+        "Canjica"
+      ],
+      "exclude": [
+        "Wheat bread",
+        "Rice pudding",
+        "Ducana",
+        "Corned beef",
+        "Coca-Cola"
+      ],
+      "references": [
+        "https://www.britannica.com/plant/corn-plant",
+        "https://www.bbcgoodfood.com/recipes/collection/sweetcorn-recipes",
+        "https://www.si.edu/stories/corn-americas",
+        "https://en.wikipedia.org/wiki/List_of_maize_dishes"
+      ],
+      "answers": {
+        "10": [
+          {
+            "label": "Popcorn",
+            "aliases": []
+          },
+          {
+            "label": "Cornbread",
+            "aliases": []
+          },
+          {
+            "label": "Corn on the cob",
+            "aliases": []
+          },
+          {
+            "label": "Tortilla",
+            "aliases": [
+              "Corn tortilla"
+            ]
+          },
+          {
+            "label": "Corn flakes",
+            "aliases": []
+          },
+          {
+            "label": "Polenta",
+            "aliases": []
+          },
+          {
+            "label": "Grits",
+            "aliases": []
+          },
+          {
+            "label": "Corn chips",
+            "aliases": []
+          },
+          {
+            "label": "Nachos",
+            "aliases": []
+          }
+        ],
+        "30": [
+          {
+            "label": "Arepa",
+            "aliases": [
+              "Arepas"
+            ]
+          },
+          {
+            "label": "Tamale",
+            "aliases": [
+              "Tamal",
+              "Tamales"
+            ]
+          },
+          {
+            "label": "Elote",
+            "aliases": [
+              "Mexican street corn"
+            ]
+          },
+          {
+            "label": "Esquites",
+            "aliases": []
+          },
+          {
+            "label": "Corn chowder",
+            "aliases": []
+          },
+          {
+            "label": "Corn pudding",
+            "aliases": []
+          },
+          {
+            "label": "Creamed corn",
+            "aliases": []
+          },
+          {
+            "label": "Corn fritter",
+            "aliases": [
+              "Corn fritters"
+            ]
+          },
+          {
+            "label": "Hushpuppy",
+            "aliases": [
+              "Hush puppies"
+            ]
+          },
+          {
+            "label": "Corn dog",
+            "aliases": [
+              "Corn dogs"
+            ]
+          },
+          {
+            "label": "Hominy",
+            "aliases": []
+          },
+          {
+            "label": "Masa",
+            "aliases": []
+          },
+          {
+            "label": "Masa harina",
+            "aliases": []
+          },
+          {
+            "label": "Tostada",
+            "aliases": [
+              "Tostadas"
+            ]
+          },
+          {
+            "label": "Gordita",
+            "aliases": [
+              "Gorditas"
+            ]
+          },
+          {
+            "label": "Sope",
+            "aliases": [
+              "Sopes"
+            ]
+          },
+          {
+            "label": "Pupusa",
+            "aliases": [
+              "Pupusas"
+            ]
+          },
+          {
+            "label": "Pozole",
+            "aliases": [
+              "Posole"
+            ]
+          },
+          {
+            "label": "Chilaquiles",
+            "aliases": []
+          },
+          {
+            "label": "Enchilada",
+            "aliases": [
+              "Enchiladas"
+            ]
+          },
+          {
+            "label": "Johnnycake",
+            "aliases": [
+              "Johnnycakes"
+            ]
+          },
+          {
+            "label": "Spoonbread",
+            "aliases": []
+          },
+          {
+            "label": "Fritos",
+            "aliases": []
+          },
+          {
+            "label": "Doritos",
+            "aliases": []
+          },
+          {
+            "label": "Tortilla chips",
+            "aliases": []
+          },
+          {
+            "label": "Atol",
+            "aliases": [
+              "Atole"
+            ]
+          },
+          {
+            "label": "Champurrado",
+            "aliases": []
+          },
+          {
+            "label": "Chicha",
+            "aliases": []
+          },
+          {
+            "label": "Mazamorra",
+            "aliases": []
+          },
+          {
+            "label": "Canjica",
+            "aliases": []
+          },
+          {
+            "label": "Cornmeal",
+            "aliases": []
+          },
+          {
+            "label": "Corn oil",
+            "aliases": []
+          },
+          {
+            "label": "Corn starch",
+            "aliases": []
+          },
+          {
+            "label": "Corn syrup",
+            "aliases": []
+          },
+          {
+            "label": "Corn soup",
+            "aliases": []
+          },
+          {
+            "label": "Succotash",
+            "aliases": []
+          },
+          {
+            "label": "Broa",
+            "aliases": []
+          },
+          {
+            "label": "Makki di roti",
+            "aliases": []
+          },
+          {
+            "label": "Taco",
+            "aliases": []
+          },
+          {
+            "label": "Taquito",
+            "aliases": []
+          },
+          {
+            "label": "Corn cheese",
+            "aliases": []
+          },
+          {
+            "label": "Gofio",
+            "aliases": []
+          },
+          {
+            "label": "Bourbon whiskey",
+            "aliases": []
+          },
+          {
+            "label": "Corn tea",
+            "aliases": []
+          },
+          {
+            "label": "Corn whiskey",
+            "aliases": []
+          }
+        ],
+        "60": [
+          {
+            "label": "Quesadilla",
+            "aliases": [
+              "Corn quesadilla",
+              "Quesadillas"
+            ]
+          },
+          {
+            "label": "Tlacoyo",
+            "aliases": [
+              "Tlacoyos"
+            ]
+          },
+          {
+            "label": "Tlayuda",
+            "aliases": [
+              "Tlayudas"
+            ]
+          },
+          {
+            "label": "Fufu",
+            "aliases": [
+              "Corn fufu"
+            ]
+          },
+          {
+            "label": "Ugali",
+            "aliases": []
+          },
+          {
+            "label": "Sadza",
+            "aliases": []
+          },
+          {
+            "label": "Nshima",
+            "aliases": []
+          },
+          {
+            "label": "Nsima",
+            "aliases": []
+          },
+          {
+            "label": "Pap",
+            "aliases": [
+              "Mieliepap"
+            ]
+          },
+          {
+            "label": "Banku",
+            "aliases": []
+          },
+          {
+            "label": "Kenkey",
+            "aliases": []
+          },
+          {
+            "label": "Kachamak",
+            "aliases": [
+              "Kacamak",
+              "Kačamak"
+            ]
+          },
+          {
+            "label": "Mămăligă",
+            "aliases": [
+              "Mămăligă with milk"
+            ]
+          },
+          {
+            "label": "Hoecake",
+            "aliases": [
+              "Hoecakes"
+            ]
+          },
+          {
+            "label": "Corn pone",
+            "aliases": []
+          },
+          {
+            "label": "Scrapple",
+            "aliases": []
+          },
+          {
+            "label": "Mush",
+            "aliases": [
+              "Cornmeal mush"
+            ]
+          },
+          {
+            "label": "Fried polenta",
+            "aliases": []
+          },
+          {
+            "label": "Cachapa",
+            "aliases": [
+              "Cachapas"
+            ]
+          },
+          {
+            "label": "Humita",
+            "aliases": [
+              "Humitas"
+            ]
+          },
+          {
+            "label": "Choclo",
+            "aliases": []
+          },
+          {
+            "label": "Corn nut",
+            "aliases": [
+              "Corn nuts"
+            ]
+          },
+          {
+            "label": "Corn salsa",
+            "aliases": []
+          },
+          {
+            "label": "Corn relish",
+            "aliases": []
+          },
+          {
+            "label": "Boota copassa",
+            "aliases": []
+          },
+          {
+            "label": "Glucose syrup",
+            "aliases": []
+          },
+          {
+            "label": "High-fructose corn syrup",
+            "aliases": []
+          },
+          {
+            "label": "High-maltose corn syrup",
+            "aliases": []
+          },
+          {
+            "label": "Mielie-meal",
+            "aliases": []
+          },
+          {
+            "label": "Samp",
+            "aliases": []
+          },
+          {
+            "label": "Akple",
+            "aliases": []
+          },
+          {
+            "label": "Amiwo",
+            "aliases": []
+          },
+          {
+            "label": "Bulz",
+            "aliases": []
+          },
+          {
+            "label": "Cocoloși",
+            "aliases": []
+          },
+          {
+            "label": "Corn crab soup",
+            "aliases": []
+          },
+          {
+            "label": "Corn stew",
+            "aliases": []
+          },
+          {
+            "label": "Ginataang mais",
+            "aliases": []
+          },
+          {
+            "label": "Hasty pudding",
+            "aliases": []
+          },
+          {
+            "label": "Kānga pirau",
+            "aliases": []
+          },
+          {
+            "label": "Mămăligă în pături",
+            "aliases": []
+          },
+          {
+            "label": "Milho Frito",
+            "aliases": []
+          },
+          {
+            "label": "Ogi",
+            "aliases": []
+          },
+          {
+            "label": "Pashofa",
+            "aliases": []
+          },
+          {
+            "label": "Patasca",
+            "aliases": []
+          },
+          {
+            "label": "Sagamite",
+            "aliases": []
+          },
+          {
+            "label": "Suam na mais",
+            "aliases": []
+          },
+          {
+            "label": "Xarém",
+            "aliases": []
+          },
+          {
+            "label": "Acaçá",
+            "aliases": []
+          },
+          {
+            "label": "Binaki",
+            "aliases": []
+          },
+          {
+            "label": "Guanime",
+            "aliases": []
+          },
+          {
+            "label": "Hallaca",
+            "aliases": []
+          },
+          {
+            "label": "Nacatamal",
+            "aliases": []
+          },
+          {
+            "label": "Pasteles",
+            "aliases": []
+          },
+          {
+            "label": "Bollo",
+            "aliases": []
+          },
+          {
+            "label": "Cobu",
+            "aliases": []
+          },
+          {
+            "label": "Corn cookie",
+            "aliases": []
+          },
+          {
+            "label": "Huarache",
+            "aliases": []
+          },
+          {
+            "label": "Mălai dulce",
+            "aliases": []
+          },
+          {
+            "label": "Manuê",
+            "aliases": []
+          },
+          {
+            "label": "Piki",
+            "aliases": []
+          },
+          {
+            "label": "Proja",
+            "aliases": []
+          },
+          {
+            "label": "Sloosh",
+            "aliases": []
+          },
+          {
+            "label": "Talo",
+            "aliases": []
+          },
+          {
+            "label": "Totopo",
+            "aliases": []
+          },
+          {
+            "label": "Wotou",
+            "aliases": []
+          },
+          {
+            "label": "Panuchos",
+            "aliases": []
+          },
+          {
+            "label": "Salbutes",
+            "aliases": []
+          },
+          {
+            "label": "Tortilla chip",
+            "aliases": []
+          },
+          {
+            "label": "Corn chip",
+            "aliases": []
+          },
+          {
+            "label": "Cornick",
+            "aliases": []
+          },
+          {
+            "label": "Sorullos",
+            "aliases": []
+          },
+          {
+            "label": "Alivenci",
+            "aliases": []
+          },
+          {
+            "label": "Corn sauce",
+            "aliases": []
+          },
+          {
+            "label": "Grontol",
+            "aliases": []
+          },
+          {
+            "label": "Kuymak",
+            "aliases": []
+          },
+          {
+            "label": "Maíz con hielo",
+            "aliases": []
+          },
+          {
+            "label": "Maja maíz",
+            "aliases": []
+          },
+          {
+            "label": "Maque choux",
+            "aliases": []
+          },
+          {
+            "label": "Suantangzi",
+            "aliases": []
+          },
+          {
+            "label": "Cauim",
+            "aliases": []
+          },
+          {
+            "label": "Chicha de jora",
+            "aliases": []
+          },
+          {
+            "label": "Colada morada",
+            "aliases": []
+          },
+          {
+            "label": "Corn beer",
+            "aliases": []
+          },
+          {
+            "label": "Pinolillo",
+            "aliases": []
+          },
+          {
+            "label": "Pozol",
+            "aliases": []
+          },
+          {
+            "label": "Tejuino",
+            "aliases": []
+          },
+          {
+            "label": "Tesgüino",
+            "aliases": []
+          }
+        ],
+        "85": [
+          {
+            "label": "Tejate",
+            "aliases": []
+          },
+          {
+            "label": "Tascalate",
+            "aliases": []
+          },
+          {
+            "label": "Pinole",
+            "aliases": []
+          },
+          {
+            "label": "Chicha morada",
+            "aliases": []
+          },
+          {
+            "label": "Mote",
+            "aliases": []
+          },
+          {
+            "label": "Maja blanca",
+            "aliases": []
+          },
+          {
+            "label": "Binatog",
+            "aliases": []
+          },
+          {
+            "label": "Pastel de choclo",
+            "aliases": []
+          },
+          {
+            "label": "Sopa paraguaya",
+            "aliases": []
+          },
+          {
+            "label": "Chipa guasu",
+            "aliases": []
+          },
+          {
+            "label": "Mchadi",
+            "aliases": []
+          },
+          {
+            "label": "Abista",
+            "aliases": []
+          },
+          {
+            "label": "Gomi",
+            "aliases": []
+          },
+          {
+            "label": "Pulenda",
+            "aliases": []
+          },
+          {
+            "label": "Coo-coo",
+            "aliases": [
+              "Cou-cou"
+            ]
+          },
+          {
+            "label": "Conkies",
+            "aliases": []
+          },
+          {
+            "label": "Funche",
+            "aliases": []
+          },
+          {
+            "label": "Cachupa",
+            "aliases": []
+          },
+          {
+            "label": "Pamonha",
+            "aliases": []
+          },
+          {
+            "label": "Curau",
+            "aliases": []
+          },
+          {
+            "label": "Bolo de fubá",
+            "aliases": []
+          },
+          {
+            "label": "Tamal de elote",
+            "aliases": []
+          },
+          {
+            "label": "Tô",
+            "aliases": [
+              "Toh"
+            ]
+          }
+        ],
+        "100": [
+          {
+            "label": "Mbaipy",
+            "aliases": []
+          }
+        ]
+      }
+    },
+    {
+      "id": "authored-noodle-dishes",
+      "concept": "noodle-dishes",
+      "family": "food",
+      "topic": "Send noodles",
+      "prompt": "Name a named pasta or noodle dish.",
+      "scope": "Named dishes and established menu preparations count, including familiar meal names such as spaghetti, udon and soba, filled pastas and gnocchi. A bare unfilled pasta-shape name without a dish or established menu preparation does not count. Plain tteokbokki is a rice-cake dish; rabokki includes noodles.",
+      "format": "situations",
+      "rationale": "A concrete familiar entry point and a wider factual tail, following the saved review; this asks for a different activity or object relationship rather than a tag combination.",
+      "familiar": [
+        "Ramen",
+        "Pad thai",
+        "Mac and cheese",
+        "Lasagna",
+        "Pho",
+        "Carbonara",
+        "Spaghetti bolognese",
+        "Spaghetti and meatballs",
+        "Fettuccine Alfredo",
+        "Pasta primavera",
+        "Penne alla vodka",
+        "Cacio e pepe",
+        "Pasta puttanesca",
+        "Chow mein",
+        "Lo mein",
+        "Laksa",
+        "Japchae",
+        "Yakisoba",
+        "Udon",
+        "Soba",
+        "Dan dan noodles",
+        "Zha jiang mian",
+        "Jajangmyeon",
+        "Bun bo Hue",
+        "Baked ziti",
+        "Chicken noodle soup",
+        "Beef stroganoff",
+        "Kugel",
+        "Spaghetti aglio e olio",
+        "Rabokki",
+        "Spaghetti"
+      ],
+      "exclude": [
+        "Fusilli",
+        "Pizza",
+        "Tteokbokki",
+        "Rice",
+        "Potato"
+      ],
+      "references": [
+        "https://www.bbcgoodfood.com/recipes/collection/noodle-recipes",
+        "https://www.bbcgoodfood.com/recipes/collection/pasta-recipes",
+        "https://www.japan.travel/en/ph/guide/udon-soba/",
+        "https://www.maff.go.jp/e/policies/market/k_ryouri/search_menu/6156/index.html",
+        "https://www.merriam-webster.com/dictionary/spaghetti",
+        "https://en.wikipedia.org/wiki/Rabokki"
+      ],
+      "answers": {
+        "10": [
+          {
+            "label": "Ramen",
+            "aliases": []
+          },
+          {
+            "label": "Spaghetti bolognese",
+            "aliases": [
+              "Spag bol"
+            ]
+          },
+          {
+            "label": "Spaghetti and meatballs",
+            "aliases": []
+          },
+          {
+            "label": "Macaroni and cheese",
+            "aliases": [
+              "Mac and cheese"
+            ]
+          },
+          {
+            "label": "Lasagna",
+            "aliases": [
+              "Lasagne"
+            ]
+          },
+          {
+            "label": "Pad thai",
+            "aliases": []
+          },
+          {
+            "label": "Pho",
+            "aliases": []
+          },
+          {
+            "label": "Chow mein",
+            "aliases": []
+          },
+          {
+            "label": "Lo mein",
+            "aliases": []
+          },
+          {
+            "label": "Spaghetti",
+            "aliases": []
+          }
+        ],
+        "30": [
+          {
+            "label": "Spaghetti carbonara",
+            "aliases": [
+              "Carbonara"
+            ]
+          },
+          {
+            "label": "Fettuccine Alfredo",
+            "aliases": [
+              "Alfredo"
+            ]
+          },
+          {
+            "label": "Pasta primavera",
+            "aliases": []
+          },
+          {
+            "label": "Pesto pasta",
+            "aliases": []
+          },
+          {
+            "label": "Spaghetti aglio e olio",
+            "aliases": [
+              "Aglio e olio"
+            ]
+          },
+          {
+            "label": "Penne alla vodka",
+            "aliases": [
+              "Pasta alla vodka"
+            ]
+          },
+          {
+            "label": "Pasta puttanesca",
+            "aliases": [
+              "Puttanesca"
+            ]
+          },
+          {
+            "label": "Pasta salad",
+            "aliases": []
+          },
+          {
+            "label": "Baked ziti",
+            "aliases": []
+          },
+          {
+            "label": "Beef stroganoff",
+            "aliases": []
+          },
+          {
+            "label": "Chicken noodle soup",
+            "aliases": []
+          },
+          {
+            "label": "Laksa",
+            "aliases": []
+          },
+          {
+            "label": "Yakisoba",
+            "aliases": []
+          },
+          {
+            "label": "Udon",
+            "aliases": [
+              "Udon soup"
+            ]
+          },
+          {
+            "label": "Cacio e pepe",
+            "aliases": []
+          },
+          {
+            "label": "Tuna noodle casserole",
+            "aliases": []
+          },
+          {
+            "label": "Kugel",
+            "aliases": [
+              "Noodle kugel"
+            ]
+          },
+          {
+            "label": "Ravioli",
+            "aliases": []
+          },
+          {
+            "label": "Tortellini",
+            "aliases": []
+          },
+          {
+            "label": "Cannelloni",
+            "aliases": []
+          },
+          {
+            "label": "Manicotti",
+            "aliases": []
+          },
+          {
+            "label": "Gnocchi",
+            "aliases": []
+          },
+          {
+            "label": "Stuffed shells",
+            "aliases": []
+          },
+          {
+            "label": "Soba",
+            "aliases": []
+          }
+        ],
+        "60": [
+          {
+            "label": "Drunken noodles",
+            "aliases": [
+              "Pad kee mao"
+            ]
+          },
+          {
+            "label": "Pad see ew",
+            "aliases": []
+          },
+          {
+            "label": "Japchae",
+            "aliases": []
+          },
+          {
+            "label": "Jajangmyeon",
+            "aliases": []
+          },
+          {
+            "label": "Jjampong",
+            "aliases": [
+              "Jjamppong"
+            ]
+          },
+          {
+            "label": "Naengmyeon",
+            "aliases": []
+          },
+          {
+            "label": "Bibim guksu",
+            "aliases": []
+          },
+          {
+            "label": "Soba salad",
+            "aliases": []
+          },
+          {
+            "label": "Zaru soba",
+            "aliases": []
+          },
+          {
+            "label": "Kitsune udon",
+            "aliases": []
+          },
+          {
+            "label": "Tempura udon",
+            "aliases": []
+          },
+          {
+            "label": "Curry udon",
+            "aliases": []
+          },
+          {
+            "label": "Kake udon",
+            "aliases": []
+          },
+          {
+            "label": "Dan dan noodles",
+            "aliases": [
+              "Dandan noodles"
+            ]
+          },
+          {
+            "label": "Zhajiangmian",
+            "aliases": []
+          },
+          {
+            "label": "Beef chow fun",
+            "aliases": []
+          },
+          {
+            "label": "Singapore noodles",
+            "aliases": []
+          },
+          {
+            "label": "Hokkien mee",
+            "aliases": []
+          },
+          {
+            "label": "Char kway teow",
+            "aliases": []
+          },
+          {
+            "label": "Mee goreng",
+            "aliases": [
+              "Mie goreng"
+            ]
+          },
+          {
+            "label": "Pancit",
+            "aliases": []
+          },
+          {
+            "label": "Pancit canton",
+            "aliases": []
+          },
+          {
+            "label": "Pancit bihon",
+            "aliases": []
+          },
+          {
+            "label": "Khao soi",
+            "aliases": []
+          },
+          {
+            "label": "Kuy teav",
+            "aliases": []
+          },
+          {
+            "label": "Bún bò Huế",
+            "aliases": [
+              "Bun bo Hue"
+            ]
+          },
+          {
+            "label": "Bún chả",
+            "aliases": [
+              "Bun cha"
+            ]
+          },
+          {
+            "label": "Bún thịt nướng",
+            "aliases": [
+              "Bun thit nuong"
+            ]
+          },
+          {
+            "label": "Bánh canh",
+            "aliases": [
+              "Banh canh"
+            ]
+          },
+          {
+            "label": "Mie ayam",
+            "aliases": []
+          },
+          {
+            "label": "Soto mie",
+            "aliases": []
+          },
+          {
+            "label": "Saimin",
+            "aliases": []
+          },
+          {
+            "label": "Somen",
+            "aliases": []
+          },
+          {
+            "label": "Hiyashi chuka",
+            "aliases": []
+          },
+          {
+            "label": "Tonkotsu ramen",
+            "aliases": []
+          },
+          {
+            "label": "Miso ramen",
+            "aliases": []
+          },
+          {
+            "label": "Shoyu ramen",
+            "aliases": []
+          },
+          {
+            "label": "Shio ramen",
+            "aliases": []
+          },
+          {
+            "label": "Tsukemen",
+            "aliases": []
+          },
+          {
+            "label": "Tantanmen",
+            "aliases": []
+          }
+        ],
+        "85": [
+          {
+            "label": "Amatriciana",
+            "aliases": []
+          },
+          {
+            "label": "Pasta alla Norma",
+            "aliases": []
+          },
+          {
+            "label": "Pasta e fagioli",
+            "aliases": []
+          },
+          {
+            "label": "Pasta con le sarde",
+            "aliases": []
+          },
+          {
+            "label": "Pasta al forno",
+            "aliases": []
+          },
+          {
+            "label": "Pasta e ceci",
+            "aliases": []
+          },
+          {
+            "label": "Tortellini in brodo",
+            "aliases": []
+          },
+          {
+            "label": "Orecchiette con cime di rapa",
+            "aliases": []
+          },
+          {
+            "label": "Spaghetti alle vongole",
+            "aliases": []
+          },
+          {
+            "label": "Linguine alle vongole",
+            "aliases": []
+          },
+          {
+            "label": "Pasta arrabbiata",
+            "aliases": []
+          },
+          {
+            "label": "Pasta alla gricia",
+            "aliases": []
+          },
+          {
+            "label": "Pizzoccheri",
+            "aliases": []
+          },
+          {
+            "label": "Fideuà",
+            "aliases": [
+              "Fideua"
+            ]
+          },
+          {
+            "label": "Fideo seco",
+            "aliases": []
+          },
+          {
+            "label": "Sopa de fideo",
+            "aliases": []
+          },
+          {
+            "label": "Naporitan",
+            "aliases": [
+              "Napolitan"
+            ]
+          },
+          {
+            "label": "Tallarines verdes",
+            "aliases": []
+          },
+          {
+            "label": "Sorrentinos",
+            "aliases": []
+          },
+          {
+            "label": "Käsespätzle",
+            "aliases": [
+              "Kasespatzle"
+            ]
+          },
+          {
+            "label": "Schupfnudeln",
+            "aliases": []
+          },
+          {
+            "label": "Haluski",
+            "aliases": []
+          },
+          {
+            "label": "Halušky",
+            "aliases": [
+              "Halusky"
+            ]
+          },
+          {
+            "label": "Chicken tetrazzini",
+            "aliases": []
+          },
+          {
+            "label": "Turkey tetrazzini",
+            "aliases": []
+          },
+          {
+            "label": "Johnny Marzetti",
+            "aliases": []
+          },
+          {
+            "label": "American goulash",
+            "aliases": []
+          },
+          {
+            "label": "Chili mac",
+            "aliases": []
+          },
+          {
+            "label": "Cincinnati chili",
+            "aliases": []
+          },
+          {
+            "label": "Yaka mein",
+            "aliases": []
+          },
+          {
+            "label": "Rabokki",
+            "aliases": [
+              "Ramen tteokbokki",
+              "Tteokbokki with ramen"
+            ]
+          },
+          {
+            "label": "Bamigoreng",
+            "aliases": [
+              "Bami goreng"
+            ]
+          },
+          {
+            "label": "Bakmi",
+            "aliases": []
+          },
+          {
+            "label": "Mie aceh",
+            "aliases": []
+          },
+          {
+            "label": "Mee rebus",
+            "aliases": []
+          },
+          {
+            "label": "Mee siam",
+            "aliases": []
+          },
+          {
+            "label": "Mee soto",
+            "aliases": []
+          },
+          {
+            "label": "Lor mee",
+            "aliases": []
+          },
+          {
+            "label": "Chee cheong fun",
+            "aliases": []
+          },
+          {
+            "label": "Yum woon sen",
+            "aliases": []
+          },
+          {
+            "label": "Sukiyaki",
+            "aliases": []
+          },
+          {
+            "label": "Nabeyaki udon",
+            "aliases": []
+          },
+          {
+            "label": "Bún riêu",
+            "aliases": [
+              "Bun rieu"
+            ]
+          },
+          {
+            "label": "Mì Quảng",
+            "aliases": [
+              "Mi Quang"
+            ]
+          }
+        ],
+        "100": [
+          {
+            "label": "Ash reshteh",
+            "aliases": [
+              "Ash-e reshteh"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "authored-foods-with-custard",
+      "concept": "foods-with-custard",
+      "family": "food",
+      "topic": "Custard case",
+      "prompt": "Name a type of custard or a dessert made with custard.",
+      "scope": "Named custards and desserts made using custard or custard powder count. A cream-only filling does not qualify merely because it is called cream.",
+      "format": "properties",
+      "rationale": "A concrete familiar entry point and a wider factual tail, following the saved review; this asks for a different activity or object relationship rather than a tag combination.",
+      "familiar": [
+        "Crème brûlée",
+        "Flan",
+        "Custard tart",
+        "Éclair",
+        "Trifle",
+        "Boston cream pie",
+        "Egg custard",
+        "Vanilla custard",
+        "Baked custard",
+        "Chocolate custard",
+        "Custard pudding",
+        "Frozen custard",
+        "Custard slice",
+        "Napoleon",
+        "Boston cream donut",
+        "Pastel de nata",
+        "Portuguese egg tart",
+        "Custard bao",
+        "Custard bun",
+        "Banana cream pie",
+        "Coconut cream pie",
+        "Cream puff",
+        "Bread pudding",
+        "Bread and butter pudding",
+        "Custard pie",
+        "Fruit tart",
+        "Pots de creme",
+        "Creme anglaise",
+        "Bavarian cream",
+        "Zabaglione",
+        "Clafoutis",
+        "Nanaimo bar",
+        "Banana pudding",
+        "Pumpkin pie",
+        "Sweet potato pie",
+        "Cheesecake",
+        "Tiramisu",
+        "Frangipane",
+        "Natillas",
+        "Melktert",
+        "Cream pie",
+        "Custard creams",
+        "Nanaimo bars"
+      ],
+      "exclude": [
+        "Sorbet",
+        "Baklava",
+        "Panna cotta",
+        "Wuzetka",
+        "Kogel mogel"
+      ],
+      "references": [
+        "https://www.bbcgoodfood.com/recipes/collection/custard-recipes",
+        "https://www.britannica.com/topic/custard",
+        "https://www.foodnetwork.com/recipes/food-network-kitchen/nai-wong-bao-12514038",
+        "https://www.visitportugal.com/en/content/traditional-portuguese-recipes-past%C3%A9is-de-nata-custard-tarts",
+        "https://www.kraftheinz.com/en-CA/bakers/recipes/549727-nanaimo-bars",
+        "https://en.wikipedia.org/wiki/List_of_custard_desserts",
+        "https://www.kingarthurbaking.com/recipes/nanaimo-bars-recipe",
+        "https://thegreatbritishbakeoff.co.uk/recipes/all/prue-leiths-custard-creams/"
+      ],
+      "answers": {
+        "10": [
+          {
+            "label": "Crème brûlée",
+            "aliases": []
+          },
+          {
+            "label": "Flan",
+            "aliases": [
+              "Caramel custard",
+              "Caramel pudding",
+              "Creme caramel",
+              "Crème caramel",
+              "Crème renversée"
+            ]
+          },
+          {
+            "label": "Custard tart",
+            "aliases": []
+          },
+          {
+            "label": "Egg tart",
+            "aliases": []
+          },
+          {
+            "label": "Éclair",
+            "aliases": []
+          },
+          {
+            "label": "Trifle",
+            "aliases": []
+          },
+          {
+            "label": "Boston cream pie",
+            "aliases": []
+          }
+        ],
+        "30": [
+          {
+            "label": "Cream puff",
+            "aliases": [
+              "Profiterole"
+            ]
+          },
+          {
+            "label": "Vanilla slice",
+            "aliases": [
+              "Custard slice"
+            ]
+          },
+          {
+            "label": "Mille-feuille",
+            "aliases": [
+              "Napoleon"
+            ]
+          },
+          {
+            "label": "Boston cream doughnut",
+            "aliases": [
+              "Boston cream donut"
+            ]
+          },
+          {
+            "label": "Pastel de nata",
+            "aliases": [
+              "Pastéis de nata",
+              "Portuguese egg tart"
+            ]
+          },
+          {
+            "label": "Bread and butter pudding",
+            "aliases": []
+          },
+          {
+            "label": "Bread pudding",
+            "aliases": []
+          },
+          {
+            "label": "Crème anglaise",
+            "aliases": []
+          },
+          {
+            "label": "Pastry cream",
+            "aliases": [
+              "Creme patissiere",
+              "Crème pâtissière"
+            ]
+          },
+          {
+            "label": "Pots de crème",
+            "aliases": [
+              "Pot de crème"
+            ]
+          },
+          {
+            "label": "Lemon custard tart",
+            "aliases": []
+          },
+          {
+            "label": "Custard pie",
+            "aliases": []
+          },
+          {
+            "label": "Fruit tart",
+            "aliases": []
+          },
+          {
+            "label": "Banana cream pie",
+            "aliases": []
+          },
+          {
+            "label": "Coconut cream pie",
+            "aliases": []
+          },
+          {
+            "label": "Custard bun",
+            "aliases": [
+              "Custard bao",
+              "Lai wong bao",
+              "Nai wong bao"
+            ]
+          },
+          {
+            "label": "Clafoutis",
+            "aliases": []
+          },
+          {
+            "label": "Zabaglione",
+            "aliases": [
+              "Sabayon",
+              "Zabaione"
+            ]
+          },
+          {
+            "label": "Bavarois",
+            "aliases": [
+              "Bavarian cream"
+            ]
+          },
+          {
+            "label": "Custard",
+            "aliases": [
+              "Egg custard",
+              "Vanilla custard"
+            ]
+          },
+          {
+            "label": "Baked custard",
+            "aliases": []
+          },
+          {
+            "label": "Chocolate custard",
+            "aliases": []
+          },
+          {
+            "label": "Custard pudding",
+            "aliases": []
+          },
+          {
+            "label": "Ice cream",
+            "aliases": [
+              "French ice cream",
+              "Frozen custard"
+            ]
+          },
+          {
+            "label": "Banana pudding",
+            "aliases": []
+          },
+          {
+            "label": "Cheesecake",
+            "aliases": []
+          },
+          {
+            "label": "Cream pie",
+            "aliases": []
+          },
+          {
+            "label": "Frangipane",
+            "aliases": []
+          },
+          {
+            "label": "Melktert",
+            "aliases": []
+          },
+          {
+            "label": "Nanaimo bar",
+            "aliases": [
+              "Nanaimo bars"
+            ]
+          },
+          {
+            "label": "Natillas",
+            "aliases": []
+          },
+          {
+            "label": "Pumpkin pie",
+            "aliases": []
+          },
+          {
+            "label": "Sweet potato pie",
+            "aliases": []
+          },
+          {
+            "label": "Tiramisu",
+            "aliases": []
+          },
+          {
+            "label": "Custard cream biscuit",
+            "aliases": [
+              "Custard creams",
+              "Custard cream biscuits"
+            ]
+          }
+        ],
+        "60": [
+          {
+            "label": "Galaktoboureko",
+            "aliases": []
+          },
+          {
+            "label": "Bougatsa",
+            "aliases": []
+          },
+          {
+            "label": "Kremna rezina",
+            "aliases": [
+              "Bled cream cake"
+            ]
+          },
+          {
+            "label": "Kremówka",
+            "aliases": []
+          },
+          {
+            "label": "Krempita",
+            "aliases": []
+          },
+          {
+            "label": "Karpatka",
+            "aliases": []
+          },
+          {
+            "label": "Cremeschnitte",
+            "aliases": []
+          },
+          {
+            "label": "Tarte tropézienne",
+            "aliases": []
+          },
+          {
+            "label": "Hong Kong egg tart",
+            "aliases": []
+          },
+          {
+            "label": "Macau egg tart",
+            "aliases": []
+          },
+          {
+            "label": "Quindim",
+            "aliases": []
+          },
+          {
+            "label": "Crème catalane",
+            "aliases": [
+              "Crema catalana"
+            ]
+          },
+          {
+            "label": "Leche flan",
+            "aliases": []
+          },
+          {
+            "label": "Purin",
+            "aliases": []
+          },
+          {
+            "label": "Semolina custard pie",
+            "aliases": []
+          },
+          {
+            "label": "Floating island",
+            "aliases": [
+              "Ile flottante",
+              "Île flottante"
+            ]
+          },
+          {
+            "label": "Diplomat pudding",
+            "aliases": []
+          },
+          {
+            "label": "Cabinet pudding",
+            "aliases": []
+          },
+          {
+            "label": "Manchester tart",
+            "aliases": []
+          },
+          {
+            "label": "Manchester pudding",
+            "aliases": []
+          },
+          {
+            "label": "Queen of puddings",
+            "aliases": []
+          },
+          {
+            "label": "Canalé",
+            "aliases": [
+              "Canele",
+              "Canelé"
+            ]
+          },
+          {
+            "label": "Pasticciotto",
+            "aliases": []
+          },
+          {
+            "label": "Zeppole di San Giuseppe",
+            "aliases": []
+          },
+          {
+            "label": "Saint Honoré cake",
+            "aliases": [
+              "St. Honoré cake"
+            ]
+          },
+          {
+            "label": "Paris-Brest",
+            "aliases": []
+          },
+          {
+            "label": "Tarte au flan",
+            "aliases": [
+              "Flan patissier",
+              "Flan pâtissier"
+            ]
+          },
+          {
+            "label": "Far breton",
+            "aliases": []
+          },
+          {
+            "label": "Flaune",
+            "aliases": []
+          },
+          {
+            "label": "Gâteau basque",
+            "aliases": []
+          },
+          {
+            "label": "Diplomat cream",
+            "aliases": [
+              "Creme diplomate",
+              "Crème diplomate"
+            ]
+          },
+          {
+            "label": "Banana custard",
+            "aliases": []
+          },
+          {
+            "label": "Bean pie",
+            "aliases": []
+          },
+          {
+            "label": "Bienenstich",
+            "aliases": []
+          },
+          {
+            "label": "Bob Andy pie",
+            "aliases": []
+          },
+          {
+            "label": "Bonèt",
+            "aliases": []
+          },
+          {
+            "label": "Brazo de Mercedes",
+            "aliases": []
+          },
+          {
+            "label": "Buttermilk pie",
+            "aliases": []
+          },
+          {
+            "label": "Charlotte",
+            "aliases": []
+          },
+          {
+            "label": "Chiboust cream",
+            "aliases": []
+          },
+          {
+            "label": "Crema de fruta",
+            "aliases": []
+          },
+          {
+            "label": "Flanby",
+            "aliases": []
+          },
+          {
+            "label": "Flapper pie",
+            "aliases": []
+          },
+          {
+            "label": "Krofne",
+            "aliases": []
+          },
+          {
+            "label": "Malvern pudding",
+            "aliases": []
+          },
+          {
+            "label": "Mató de Pedralbes",
+            "aliases": []
+          },
+          {
+            "label": "Normandy tart",
+            "aliases": []
+          },
+          {
+            "label": "Ozark pudding",
+            "aliases": []
+          },
+          {
+            "label": "Pączki",
+            "aliases": []
+          },
+          {
+            "label": "Pio Quinto",
+            "aliases": []
+          },
+          {
+            "label": "Rožata",
+            "aliases": []
+          },
+          {
+            "label": "Salzburger Nockerl",
+            "aliases": []
+          },
+          {
+            "label": "Semifreddo",
+            "aliases": []
+          },
+          {
+            "label": "Skolebrød",
+            "aliases": []
+          },
+          {
+            "label": "Soufflé",
+            "aliases": []
+          },
+          {
+            "label": "Tarte à la Bouillie",
+            "aliases": []
+          },
+          {
+            "label": "Tipsy cake",
+            "aliases": []
+          },
+          {
+            "label": "Tompouce",
+            "aliases": []
+          },
+          {
+            "label": "Torta de nata",
+            "aliases": []
+          },
+          {
+            "label": "Vla",
+            "aliases": []
+          },
+          {
+            "label": "Watalappam",
+            "aliases": []
+          },
+          {
+            "label": "Yema",
+            "aliases": []
+          },
+          {
+            "label": "Zeppole",
+            "aliases": []
+          }
+        ],
+        "85": [
+          {
+            "label": "Fraisier",
+            "aliases": []
+          },
+          {
+            "label": "Miguelito",
+            "aliases": [
+              "Miguelitos"
+            ]
+          },
+          {
+            "label": "Torta della nonna",
+            "aliases": []
+          },
+          {
+            "label": "Zuppa inglese",
+            "aliases": []
+          },
+          {
+            "label": "Diplomat cake",
+            "aliases": []
+          },
+          {
+            "label": "Malva pudding with custard",
+            "aliases": []
+          }
+        ],
+        "100": [
+          {
+            "label": "Pantxineta",
+            "aliases": []
+          }
+        ]
+      }
+    },
+    {
+      "id": "authored-inflatable-objects",
+      "concept": "inflatable-objects",
+      "family": "everyday",
+      "topic": "Just add air",
+      "prompt": "Name an object designed to be inflated.",
+      "scope": "Common inflatable objects and named inflatable equipment types count, whether filled with air, helium or another gas. Objects merely containing an empty cavity do not qualify.",
+      "format": "situations",
+      "rationale": "A concrete familiar entry point and a wider factual tail, following the saved review; this asks for a different activity or object relationship rather than a tag combination.",
+      "familiar": [
+        "Balloon",
+        "Air mattress",
+        "Football",
+        "Tire",
+        "Pool float",
+        "Bouncy castle",
+        "Beach ball",
+        "Basketball",
+        "Weather balloon",
+        "Blimp",
+        "Airship",
+        "Blood pressure cuff",
+        "Inflatable life jacket",
+        "Buoyancy compensator",
+        "Ball",
+        "Mattress",
+        "Boat",
+        "Raft",
+        "Pillow",
+        "Life jacket",
+        "Airbag"
+      ],
+      "exclude": [
+        "Brick",
+        "Glass bottle"
+      ],
+      "references": [
+        "https://www.britannica.com/technology/pneumatic-device",
+        "https://www.cpsc.gov/Safety-Education/Safety-Guides/Sports-Fitness-and-Recreation/Moonwalks-and-Bounce-Houses",
+        "https://www.nasa.gov/news-release/nasa-launches-new-technology-an-inflatable-heat-shield/"
+      ],
+      "answers": {
+        "10": "Balloon|Tire~Tyre|Air mattress~Air bed~Mattress|Beach ball~Ball|Football~Soccer ball|Basketball|Pool float~Pool toy|Bouncy castle~Bounce house~Moonwalk|Airbag~Car airbag",
+        "30": "Volleyball|American football|Rugby ball|Kickball|Dodgeball|Exercise ball~Yoga ball~Stability ball|Swim ring~Swimming ring~Inner tube|Armband~Water wing~Water wings~Armbands|Inflatable boat~Rubber boat~Dinghy~Rubber dinghy~Boat|Inflatable raft~Life raft~Raft|Paddling pool~Kiddie pool|Inflatable hot tub|Inflatable sofa|Inflatable chair|Inflatable pillow~Pillow|Bicycle tire~Bicycle tyre|Car tire~Car tyre|Motorcycle tire~Motorcycle tyre",
+        "60": "Inflatable kayak|Inflatable canoe|Inflatable paddleboard~Inflatable SUP~Paddleboard~Stand-up paddleboard|Inflatable life jacket~Inflatable life vest~Life jacket~Life vest|Inflatable tent|Air beam tent|Inflatable camping mat~Self-inflating sleeping pad|Inflatable slide|Inflatable obstacle course|Inflatable trampoline|Inflatable costume|Advertising blimp|Parade balloon|Weather balloon|Hot-air balloon~Hot air balloon|Helium balloon|Blimp|Airship|Zorb~Zorbing ball|Bubble suit~Bubble football suit|Ski airbag|Avalanche airbag|Blood pressure cuff~Sphygmomanometer cuff|Pneumatic splint~Air splint|Air cushion|Air jack|Inflatable dock|Floating trampoline|Inflatable water park|Inflatable cooler|Pneumatic dunnage bag~Dunnage bag|Inflatable movie screen|Inflatable arch|Inflatable finish line",
+        "85": "Lifting bag~Air lifting bag|Buoyancy compensator~BCD|Lift bag~Diving lift bag|Pneumatic fender~Yokohama fender|Inflatable packraft~Packraft|Inflatable pontoon|Inflatable landing bag|Air landing mat|Inflatable decoy|Inflatable dam~Rubber dam|Inflatable plug|Inflatable pipe stopper|Pneumatic sealing bladder|Inflatable rib boat~Rigid inflatable boat|Air-supported dome~Air dome|Inflatable evacuation slide~Aircraft evacuation slide",
+        "100": "Inflatable reentry decelerator"
+      },
+      "reviewNotes": "Reviewed concrete tools/items and their scope after the expanded common-guess sweep; accepted spellings are real names or contextual names, never manufactured initials. Uncertain pyxis eligibility is explicitly held rather than becoming a rare answer."
+    },
+    {
+      "id": "authored-sewing-kit",
+      "concept": "sewing-kit",
+      "family": "everyday",
+      "topic": "Stitch in time",
+      "prompt": "Name an item used for sewing or mending clothes.",
+      "scope": "Hand-sewing, machine-sewing and dressmaking tools and supplies count. A finished garment alone is not sewing equipment.",
+      "format": "situations",
+      "rationale": "A concrete familiar entry point and a wider factual tail, following the saved review; this asks for a different activity or object relationship rather than a tag combination.",
+      "familiar": [
+        "Needle",
+        "Thread",
+        "Thimble",
+        "Scissors",
+        "Seam ripper",
+        "Pin",
+        "Ruler",
+        "Pencil",
+        "Chalk",
+        "Sewing scissors",
+        "Fabric glue",
+        "Safety pin",
+        "Bobbin",
+        "Iron-on patch",
+        "Velcro",
+        "Fabric",
+        "Zipper",
+        "Tape measure"
+      ],
+      "exclude": [
+        "Microwave",
+        "Basketball"
+      ],
+      "references": [
+        "https://www.singer.com/collections/sewing-accessories",
+        "https://www.brother-usa.com/home/sewing-embroidery/accessories",
+        "https://simflex-gauge.com/"
+      ],
+      "answers": {
+        "10": "Needle~Sewing needle|Thread~Sewing thread|Scissors~Sewing scissors|Pin~Pins~Straight pin|Sewing machine|Button~Buttons|Tape measure~Measuring tape",
+        "30": "Thimble|Seam ripper|Pincushion~Pin cushion|Safety pin~Safety pins|Fabric~Cloth|Bobbin|Zipper~Zip|Elastic|Tailor's chalk~Tailors chalk~Chalk|Needle threader|Iron|Ironing board|Ribbon|Patch~Fabric patch~Iron-on patch|Sewing pattern~Pattern|Hem tape~Hemming tape|Dressmaking shears~Fabric shears|Ruler~Sewing ruler|Pencil|Fabric glue|Fabric dye|Buttonhole cutter|Hook-and-loop tape~Velcro",
+        "60": "Embroidery hoop|Embroidery floss|Embroidery needle|Darning needle|Darning mushroom|Darning egg|Tracing wheel|Tracing paper|Rotary cutter|Cutting mat|Pinking shears|Seam gauge|Seam roller|Presser foot|Walking foot|Zipper foot|Buttonhole foot|Bodkin|Awl|Stiletto|Beeswax|Thread wax|Interfacing|Batting|Bias tape~Bias binding|Twill tape|Hook and eye|Snap fastener~Press stud|Fusible web|Serger~Overlocker|Cone thread|Sewing clip~Wonder clip~Sewing clips|Basting thread|Fabric marker|Disappearing ink pen|Water-soluble pen|Dress form~Tailor's dummy~Dressmaker's dummy|French curve|Hip curve|Seam roll|Tailor's ham~Tailors ham|Quilting ruler|Seam allowance ruler|Pattern paper|Pattern scissors|Tracing pencil|Chalk pencil|Tailoring canvas|Sew-in label|Grommet~Eyelet|Grommet setter|Rivet setter|Buttonhole elastic|Applique patch|Embroidery stabilizer",
+        "85": "Tailor's clapper~Tailors clapper|Sleeve board|Point turner|Button shank tool|Loop turner|Rouleau turner|Hemmer foot|Ruffler foot|Bias tape maker|Needle case|Thread snips~Embroidery scissors|Thread stand|Spool cap|Basting spray|Bobbin winder|Basting glue|Appliqué scissors~Applique scissors|Sewing machine oil|Needle plate|Feed dog|Sewing machine belt|Pattern weights|Pattern notcher",
+        "100": "Simflex gauge~Buttonhole spacing gauge"
+      },
+      "reviewNotes": "Reviewed concrete tools/items and their scope after the expanded common-guess sweep; accepted spellings are real names or contextual names, never manufactured initials. Uncertain pyxis eligibility is explicitly held rather than becoming a rare answer."
+    },
+    {
+      "id": "authored-garden-tools",
+      "concept": "garden-tools",
+      "family": "everyday",
+      "topic": "Shed inventory",
+      "prompt": "Name a tool or piece of equipment used for gardening.",
+      "scope": "Tools, devices and durable equipment used to plant, water, prune, move soil or maintain gardens count. Plant names are not tools.",
+      "format": "situations",
+      "rationale": "A concrete familiar entry point and a wider factual tail, following the saved review; this asks for a different activity or object relationship rather than a tag combination.",
+      "familiar": [
+        "Shovel",
+        "Rake",
+        "Hose",
+        "Watering can",
+        "Trowel",
+        "Pruning shears",
+        "Chainsaw",
+        "Scissors",
+        "Gloves",
+        "Shears",
+        "Saw",
+        "Machete",
+        "Sickle",
+        "Scythe",
+        "Brush cutter",
+        "Wood chipper",
+        "Tiller",
+        "Edger",
+        "Wheelbarrow",
+        "Lawnmower",
+        "Shoes",
+        "Shoe",
+        "Boots",
+        "Goggles",
+        "Hat",
+        "Apron",
+        "Safety glasses"
+      ],
+      "exclude": [
+        "Rose",
+        "Television"
+      ],
+      "references": [
+        "https://www.rhs.org.uk/advice/beginners-guide/tools",
+        "https://www.fiskars.com/en-us/gardening-and-yard-care/products",
+        "https://www.faithfulltools.com/pdf-cat/268-Faithfull-catalogue-2018.pdf"
+      ],
+      "answers": {
+        "10": "Shovel|Spade|Rake|Hose~Garden hose|Watering can|Trowel|Lawn mower~Lawnmower|Wheelbarrow|Pruning shears~Secateurs~Pruner~Shears~Pruners",
+        "30": "Hoe~Garden hoe|Garden fork~Digging fork|Hand fork|Lopper~Loppers|Hedge trimmer~Hedge cutter|Hedge shears|Sprinkler|Leaf blower|String trimmer~Weed eater~Strimmer|Gardening gloves~Garden gloves~Gloves|Bucket|Plant pot~Flowerpot|Seed tray|Plant label~Plant marker|Spray bottle|Garden kneeler~Kneeler|Pruning saw~Saw|Compost bin|Chainsaw|Brush cutter|Wood chipper~Garden shredder|Machete|Sickle|Scythe|Grass shears|Knee pads~Kneepads|Lawn vacuum~Leaf vacuum|Mulcher|Garden knife|Gardening shoes~Garden shoes~Shoes~Shoe|Gardening boots~Garden boots~Boots~Boot|Safety goggles~Goggles|Safety glasses|Gardening apron~Garden apron~Apron|Garden hat~Gardening hat~Hat",
+        "60": "Dibber~Dibble~Seed dibbler|Bulb planter|Edging iron~Lawn edger~Edger|Lawn aerator|Scarifier~Dethatcher|Soil sieve~Garden sieve|Garden cart|Hori hori~Soil knife|Weeding knife|Weeder|Dutch hoe|Draw hoe|Stirrup hoe~Oscillating hoe|Cultivator|Rotavator~Rototiller~Tiller|Broadfork|Mattock|Pickaxe~Pickax|Post-hole digger|Garden auger|Hand spreader|Seed spreader|Fertilizer spreader|Propagator|Cold frame|Greenhouse|Cloche|Garden fleece~Horticultural fleece|Bird netting|Plant support|Trellis|Garden stake|Garden twine|Soil thermometer|Soil pH meter|Moisture meter|Rain barrel~Water butt|Watering wand|Drip irrigation line|Soaker hose|Hose reel|Hose connector|Garden scissors~Scissors|Pole pruner|Pole saw|Stump grinder|Pole hedge trimmer|Grass collector|Garden broom|Soil scoop|Garden basket|Trench spade|Drain spade|Border spade|Felling axe|Hatchet|Log splitter|Splitting maul",
+        "85": "Grafting knife|Budding knife|Bonsai wire|Root hook|Concave cutter|Bonsai shears|Sod cutter~Turf cutter|Lawn roller~Garden roller|Topiary shears|Fruit picker|Berry picker|Peat pot|Root trainer|Potting bench|Potting scoop|Potting mat|Seed dispenser|Seed sower|Flame weeder|Pressure sprayer|Compost aerator|Compost thermometer|Compost tumbler|Garden trug|Daisy grubber|Long-handled bulb planter",
+        "100": "Swoe"
+      },
+      "reviewNotes": "Reviewed concrete tools/items and their scope after the expanded common-guess sweep; accepted spellings are real names or contextual names, never manufactured initials. Uncertain pyxis eligibility is explicitly held rather than becoming a rare answer."
+    },
+    {
+      "id": "authored-laundry-supplies",
+      "concept": "laundry-supplies",
+      "family": "everyday",
+      "topic": "Spin cycle",
+      "prompt": "Name an item or product used to wash, dry or care for laundry.",
+      "scope": "Laundry appliances, supplies, stain treatments and clothes-care tools count, as do named product types and established laundry-product brands, including historical ones. A garment itself is not a laundry supply.",
+      "format": "situations",
+      "rationale": "A concrete familiar entry point and a wider factual tail, following the saved review; this asks for a different activity or object relationship rather than a tag combination.",
+      "familiar": [
+        "Detergent",
+        "Washing machine",
+        "Clothes dryer",
+        "Clothesline",
+        "Clothespin",
+        "Iron",
+        "Soap",
+        "Dryer",
+        "Bucket",
+        "Sink",
+        "Sponge",
+        "Fabric conditioner",
+        "Basket",
+        "Detergent pods",
+        "Drying rack",
+        "Washboard",
+        "Hanger",
+        "Water",
+        "Tide",
+        "Gain",
+        "Persil",
+        "OxiClean",
+        "Vanish",
+        "Downy",
+        "Bounce",
+        "Clorox",
+        "Woolite",
+        "Dreft",
+        "Ariel",
+        "All",
+        "Arm & Hammer",
+        "Method",
+        "Rit"
+      ],
+      "exclude": [
+        "Shirt",
+        "Laptop"
+      ],
+      "references": [
+        "https://www.cleaninginstitute.org/cleaning-tips/clothes",
+        "https://www.tide.com/en-us/how-to-wash-clothes",
+        "https://us.pg.com/brands/",
+        "https://www.unilever.com/brands/home-care/omo/"
+      ],
+      "answers": {
+        "10": "Detergent~Laundry detergent|Washing machine~Washer|Clothes dryer~Tumble dryer~Dryer|Iron|Ironing board|Laundry basket~Basket|Fabric softener~Fabric conditioner|Bleach|Water|Tide|Gain|Persil|OxiClean|Vanish|Downy|Bounce|Clorox",
+        "30": "Clothesline~Washing line|Clothespin~Clothes peg~Peg|Drying rack~Clothes horse~Clothes airer|Dryer sheet~Dryer sheets|Stain remover|Laundry pod~Detergent pod~Detergent pods~Laundry pods|Laundry powder~Washing powder|Laundry liquid~Liquid detergent|Laundry bag|Mesh wash bag|Hamper|Hanger~Clothes hanger|Lint roller|Lint brush|Steamer~Garment steamer|Starch~Laundry starch|Washcloth|Washboard~Hand wash board|Laundry soap~Soap|Dryer ball~Dryer balls|Wool dryer ball|Bucket|Laundry sink~Sink|Laundry brush~Clothes scrubbing brush|Scrub brush|Sponge|Drying cabinet|All~All laundry detergent~All detergent|Ariel|Surf|Woolite|Dreft|Fairy laundry detergent~Fairy Non Bio|Lenor|Comfort|Snuggle|Arm & Hammer~Arm & Hammer laundry detergent~Arm and Hammer~Arm and Hammer detergent|Lysol laundry sanitizer|Dettol laundry cleanser|Sunlight laundry detergent|Fels-Naptha~Fels Naptha|Zote|Ecover|Seventh Generation|Method~Method laundry detergent|Mrs. Meyer's Clean Day~Mrs Meyers|Earth Breeze|Tru Earth|ECOS|The Laundress|Carbona|Dr. Beckmann~Dr Beckmann|Dylon|Rit~Rit dye|Nellie's Laundry Soda~Nellies|Molly's Suds~Mollys Suds|Dirty Labs|Dropps|Blueland laundry detergent|Napisan|Sard Wonder Soap|White King|Daz|Bold laundry detergent|Radion|Dixan|Dash laundry detergent|Le Chat laundry detergent|Formil|Almat|OMO|Skip laundry detergent~Skip|Surf Excel|Breeze laundry detergent~Breeze|Rinso|Purex|Cheer|Drive laundry detergent~Drive",
+        "60": "Oxygen bleach~Color-safe bleach|Chlorine bleach|Bluing~Laundry bluing|Washing soda~Sodium carbonate~Laundry soda crystals|Borax|White vinegar|Baking soda~Bicarbonate of soda|Laundry sanitizer~Laundry disinfectant|Fabric refresher|Wrinkle-release spray~Wrinkle releaser|Delicates detergent|Wool wash|Prewash spray|Stain stick|Enzyme pretreatment|Color catcher~Colour catcher|Dye remover~Color run remover|Whitening booster|Water softener|Dry-cleaning kit|Dry-cleaning solvent|Lint remover~Fabric shaver|Sweater stone~Pumice fabric stone|Pressing cloth|Sleeve board|Wash tub~Laundry tub~Washbasin|Wash bag for shoes|Sock clip~Sock clips|Bra wash bag|Sweater drying rack|Clothes brush|Detergent sheet~Laundry detergent sheet|Laundry detergent bar|Castile soap|Soap flakes|Garment bag|Iron descaler|Laundry tap|Clothesline prop|Clothesline pulley|Laundry soak|Laundry stain pen|Suede brush|Hydrogen peroxide|Laundry scent booster~Scent beads|Detergent refill|Laundry soap nut~Soap nuts",
+        "85": "Mangle~Wringer|Clothes press~Laundry press|Steam press|Iron cleaner|Soleplate cleaner|Laundry blue bag|Laundry sour|Pressing mitt|Tailor's ham~Tailors ham|Dryer vent brush|Laundry trolley|Hanging peg dryer~Sock airer|Laundry sorting bin|Sew-in laundry label|Laundry marking pen|Wash ball~Laundry ball|Cedar block~Cedar blocks|Moth repellent~Mothballs|Dehumidifying clothes dryer",
+        "100": "Trouser press~Pants press"
+      },
+      "reviewNotes": "Reviewed concrete tools/items and their scope after the expanded common-guess sweep; accepted spellings are real names or contextual names, never manufactured initials. Uncertain pyxis eligibility is explicitly held rather than becoming a rare answer."
+    },
+    {
+      "id": "authored-objects-with-hinges",
+      "concept": "objects-with-hinges",
+      "family": "everyday",
+      "topic": "Open and shut",
+      "prompt": "Name an object that commonly has a hinge.",
+      "scope": "A common hinged version of the object must exist. Sliding or roll-up versions do not prevent a genuinely hinged object from counting.",
+      "format": "properties",
+      "rationale": "A concrete familiar entry point and a wider factual tail, following the saved review; this asks for a different activity or object relationship rather than a tag combination.",
+      "familiar": [
+        "Door",
+        "Laptop",
+        "Gate",
+        "Briefcase",
+        "Toilet seat",
+        "Piano",
+        "Stapler",
+        "Car hood",
+        "Car boot",
+        "Glove box",
+        "Barbecue",
+        "Hole punch",
+        "Lid",
+        "Printer",
+        "Scanner",
+        "Tailgate",
+        "Fuel door",
+        "Wheelchair",
+        "Folding stroller"
+      ],
+      "exclude": [
+        "Soccer ball",
+        "Paper clip"
+      ],
+      "references": [
+        "https://www.britannica.com/technology/hinge",
+        "https://www.hafele.com/us/en/info/products/hardware/hinges/57687/",
+        "https://hardwoodartisans.com/products/butterfly-table"
+      ],
+      "answers": {
+        "10": "Door|Gate|Laptop|Cabinet~Cupboard|Box|Chest|Window|Toilet seat|Briefcase|Stapler|Car hood~Bonnet|Car trunk~Car boot|Glove box~Glove compartment|Barbecue grill~Barbecue~BBQ grill",
+        "30": "Jewelry box~Jewellery box|Toolbox~Tool box|Suitcase|Trunk|Cooler~Ice chest|Refrigerator~Fridge|Freezer|Oven|Microwave|Dishwasher|Washing machine|Clothes dryer~Tumble dryer|Piano|Grand piano|Upright piano|Spectacles~Eyeglasses~Glasses|Locket|Folding chair|Folding table|Garage door|Car door|School locker~Locker|Laptop screen|Clamshell phone~Flip phone|Hole punch~Paper punch|Lid~Hinged lid|Printer|Scanner|Copier|Tailgate|Fuel door~Fuel filler flap|Car sun visor|Folding stroller~Pushchair|Wheelchair|Folding umbrella|Folding wagon|Folding shopping trolley|Clamshell packaging|Hinged food container",
+        "60": "Sunglasses|Watch clasp|Bracelet clasp|Folding knife~Pocketknife|Swiss Army knife|Multi-tool~Multitool|Ladder~Stepladder|Folding bed|Murphy bed~Wall bed|Ironing board|Folding screen|Room divider|Shutter|Hatch|Trapdoor~Trap door|Attic hatch|Pet door~Cat flap|Dog crate|Birdcage~Bird cage|Garden shed|Mailbox|Bin lid~Trash can lid|Dustbin~Trash can|Bread box~Breadbin|Butter dish|Tea chest|Cigar box|Humidor|Lunchbox|Hinged picture frame|Triptych|Diptych|Pillbox|Compact mirror~Makeup compact|Casket~Coffin|Folding ruler~Carpenter's rule|Clamshell grill~Contact grill|Waffle iron|Sandwich maker|Folding clothes rack|Portable easel|Folding hand truck|Tablet keyboard case|Keyboard cover|Screen door|Storm door|Security gate|Shed door|Dog flap|Hatchback|Hospital bed|Reclining chair~Recliner|Folding wheelchair|Pocket mirror|Lipstick compact|Car bonnet latch|Hinged baking tin",
+        "85": "Drop-leaf table|Secretary desk|Hinged music stand|Razor case|Spectacle case~Glasses case|Travel sewing case|Reliquary|Book press|Camera battery door|Film camera back|Printer lid|Scanner lid|Copier lid|Welding helmet visor|Motorcycle helmet visor|Fireplace screen|Bellows camera|Folding bicycle|Hinged splint|Lid support chest|Cockpit canopy|Pyx",
+        "100": "Butterfly table~Butterfly-leaf table"
+      },
+      "reviewNotes": "Reviewed concrete tools/items and their scope after the expanded common-guess sweep; accepted spellings are real names or contextual names, never manufactured initials. Uncertain pyxis eligibility is explicitly held rather than becoming a rare answer.",
+      "reviewHolds": [
+        {
+          "name": "Pyxis~Hinged pyxis",
+          "reason": "A generic ancient pyxis normally has a removable lid; held until the hinged/common-version claim has direct evidence."
+        }
+      ]
+    },
+    {
+      "id": "authored-kitchen-hand-tools",
+      "concept": "kitchen-hand-tools",
+      "family": "everyday",
+      "topic": "Kitchen drawer",
+      "prompt": "Name a hand tool or utensil used to prepare or serve food.",
+      "scope": "Kitchen hand tools, utensils, serving implements and nonpowered cookware count. Small measuring tools used in food preparation also count. Large powered appliances and foods do not qualify.",
+      "format": "situations",
+      "rationale": "A concrete familiar entry point and a wider factual tail, following the saved review; this asks for a different activity or object relationship rather than a tag combination.",
+      "familiar": [
+        "Whisk",
+        "Spatula",
+        "Peeler",
+        "Ladle",
+        "Can opener",
+        "Rolling pin",
+        "Cutting board",
+        "Chopping board",
+        "Bowl",
+        "Mixing bowl",
+        "Plate",
+        "Pot",
+        "Pan",
+        "Frying pan",
+        "Saucepan",
+        "Wok",
+        "Baking tray",
+        "Kitchen scale",
+        "Spork",
+        "Salad spinner",
+        "Ice cube tray",
+        "Oven mitt"
+      ],
+      "exclude": [
+        "Refrigerator",
+        "Onion"
+      ],
+      "references": [
+        "https://www.oxo.com/shop/kitchenware.html",
+        "https://www.bbcgoodfood.com/review/best-kitchen-gadgets",
+        "https://www.oxo.com/shop/kitchenware/cooking-baking/cutting-boards.html"
+      ],
+      "answers": {
+        "10": "Knife~Kitchen knife|Fork|Spoon|Spatula|Whisk~Egg whisk|Peeler~Vegetable peeler|Can opener~Tin opener|Tongs|Ladle|Rolling pin|Cutting board~Chopping board|Bowl|Mixing bowl|Plate~Dinner plate|Pot~Cooking pot|Pan|Frying pan~Skillet|Saucepan|Baking tray~Baking sheet|Spork",
+        "30": "Grater|Colander|Sieve~Strainer|Measuring cup|Measuring spoon|Pizza cutter|Potato masher|Garlic press|Corkscrew|Bottle opener|Ice cream scoop|Wooden spoon|Slotted spoon|Serving spoon|Soup spoon|Teaspoon|Tablespoon|Chopsticks|Kitchen scissors~Kitchen shears|Pastry brush|Basting brush|Baster~Turkey baster|Meat tenderizer~Meat mallet|Mortar and pestle|Pestle|Mortar|Salad servers|Cake server|Fish slice|Turner|Bench scraper~Dough scraper~Dough cutter|Wok|Dutch oven|Roasting pan|Baking pan|Cake tin~Cake pan|Loaf tin~Loaf pan|Muffin tin~Muffin pan|Pie tin~Pie dish|Ramekin|Kitchen scale~Kitchen scales|Serving platter~Platter|Serving bowl|Salad bowl|Salad spinner|Squeeze bottle~Squeezy bottle|Cookie press|Oven mitt~Oven glove|Pot holder~Potholder|Spiralizer",
+        "60": "Mandoline|Zester|Microplane|Lemon squeezer~Citrus press|Citrus reamer|Melon baller|Apple corer|Apple slicer|Cherry pitter|Avocado slicer|Pineapple corer|Egg slicer|Egg separator|Egg timer|Kitchen thermometer~Meat thermometer|Probe thermometer|Sugar thermometer~Candy thermometer|Pastry wheel|Pastry cutter|Pastry blender|Dough whisk~Danish dough whisk|Dough docker|Biscuit cutter~Cookie cutter|Biscuit stamp|Ravioli cutter|Pasta fork~Spaghetti server|Pasta tongs|Cheese slicer|Cheese plane|Cheese knife|Oyster knife|Clam knife|Fish scaler|Fish tweezers|Boning knife|Fillet knife|Paring knife|Bread knife|Chef's knife~Chefs knife|Carving knife|Cleaver|Santoku|Carving fork|Poultry shears|Kitchen funnel|Skimmer|Spider strainer~Spider|Slotted turner|Potato ricer|Food mill|Manual egg beater|Manual coffee grinder|Pepper mill|Nutcracker|Seafood cracker|Lobster pick|Toast tongs|Tea infuser|Tea strainer|Honey dipper|Butter knife|Butter curler|Corn cob holder~Corn holder|Baking mat~Silicone baking mat|Pastry mat|Dough bowl scraper|Scraper spatula|Silicone spatula|Spatula spoon~Spoonula|Fish spatula|Offset turner|Burger press|Meat press|Egg ring|Egg cup|Poached egg mould~Poached egg mold|Popsicle mould~Popsicle mold~Ice pop mold|Ice cube tray|Ice tongs|Ice pick|Ice scoop|Measuring jug|Gravy boat|Sauce boat|Sauce spoon|Sugar tongs|Sugar spoon|Coffee scoop|Tea scoop|Tea ball|Vegetable scrubber|Coconut scraper|Coconut grater|Chopping bowl|Ulu|Mezzaluna|Mandoline guard|Pastry crimper|Pastry stencil|Banneton~Proofing basket|Bread lame~Lame|Butter paddle|Butter mould~Butter mold|Oyster glove|Clam fork|Pickle fork|Spaghetti measure|Pasta drying rack|Pot lid|Splatter screen|Cooling rack|Trivet|Steamer basket|Collapsible steamer|Bamboo steamer|Tagine|Casserole dish|Souffle dish|Gratin dish|Bain-marie pot|Double boiler|Stockpot|Saute pan|Braising pan|Griddle|Grill pan|Crepe pan|Paella pan|Comal|Tawa|Karahi|Balti dish|Appam pan|Takoyaki pan|Aebleskiver pan|Poffertjes pan|Pancake dispenser|Batter dispenser|Sifter~Flour sifter|Fat separator|Salad chopper|Lettuce knife|Tomato knife|Grapefruit knife|Grapefruit spoon|Scalloped spoon",
+        "85": "Chinois|Tamis|Spurtle~Spurtle spoon|Spatule maryse~Rubber scraper|Offset spatula~Palette knife|Icing comb|Cake smoother|Piping bag~Pastry bag|Piping tip~Pastry nozzle|Syringe baster|Trussing needle|Larding needle|Chopstick rest|Bamboo sushi mat~Makisu|Tortilla press|Tostonera|Molcajete|Metate|Comal scraper|Crinkle cutter~Crinkle knife|Herb scissors|Herb stripper|Crab pick|Gnocchi board|Pizzelle roller|Chestnut knife|Truffle slicer|Omelette turner|Krumkake roller",
+        "100": "Chasen~Matcha whisk"
+      },
+      "reviewNotes": "Reviewed concrete tools/items and their scope after the expanded common-guess sweep; accepted spellings are real names or contextual names, never manufactured initials. Uncertain pyxis eligibility is explicitly held rather than becoming a rare answer."
+    }
+  ]
+}

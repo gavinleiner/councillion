@@ -1,0 +1,207 @@
+{
+  "captured": "2026-10-27",
+  "receipts": [
+    {
+      "workCapture": "ncsu-filtered-receipts.json",
+      "receipts": [
+        {
+          "url": "https://plants.ces.ncsu.edu/find_a_plant/?plant_type__id=24&page=1",
+          "bytes": 498303,
+          "sha256": "b5b30c0dc7903f5e617e860f049a55b4b0285751a6e7aa2dc76b4fb126b31719",
+          "records": 48,
+          "retrieved": "2026-10-27T15:44:45.655849+00:00"
+        },
+        {
+          "url": "https://plants.ces.ncsu.edu/find_a_plant/?plant_type__id=24&page=2",
+          "bytes": 488053,
+          "sha256": "5a3724bcace6e4e4487070a6c92899bdcbf0a3084bdb34817cef2d59818ab0b3",
+          "records": 48,
+          "retrieved": "2026-10-27T15:44:46.618270+00:00"
+        },
+        {
+          "url": "https://plants.ces.ncsu.edu/find_a_plant/?plant_type__id=24&page=3",
+          "bytes": 474238,
+          "sha256": "468a00985abb84131c37a53c3ce8ec8a2dba43a8d9a9466a37f882bbe0cfbdac",
+          "records": 48,
+          "retrieved": "2026-10-27T15:44:47.566720+00:00"
+        },
+        {
+          "url": "https://plants.ces.ncsu.edu/find_a_plant/?plant_type__id=24&page=4",
+          "bytes": 461163,
+          "sha256": "d699b3e0ca84cc318c51fc7bb17d358b7181f83dd8fa20a025b5a22dc02eaab3",
+          "records": 48,
+          "retrieved": "2026-10-27T15:44:48.483064+00:00"
+        },
+        {
+          "url": "https://plants.ces.ncsu.edu/find_a_plant/?plant_type__id=24&page=5",
+          "bytes": 444776,
+          "sha256": "44c46f67faaa0582316be23812dc1517435f4b07224c48619c1a566c41980fed",
+          "records": 48,
+          "retrieved": "2026-10-27T15:44:49.366526+00:00"
+        },
+        {
+          "url": "https://plants.ces.ncsu.edu/find_a_plant/?plant_type__id=24&page=6",
+          "bytes": 449617,
+          "sha256": "11b73a331c2b21248951de6c91b50b425dc8dc5ff075342b9df139aaec1141a1",
+          "records": 48,
+          "retrieved": "2026-10-27T15:44:50.354891+00:00"
+        },
+        {
+          "url": "https://plants.ces.ncsu.edu/find_a_plant/?plant_type__id=24&page=7",
+          "bytes": 452477,
+          "sha256": "42a97c6de828683da85001159282f4959b9d4b69a4c028d7732eca9e0d2dab67",
+          "records": 48,
+          "retrieved": "2026-10-27T15:44:51.299290+00:00"
+        },
+        {
+          "url": "https://plants.ces.ncsu.edu/find_a_plant/?plant_type__id=24&page=8",
+          "bytes": 431733,
+          "sha256": "1fdca4c8e6a12abf8037716159c6cc682961aabe51ec0daf00924a6519574ee8",
+          "records": 48,
+          "retrieved": "2026-10-27T15:44:52.190981+00:00"
+        },
+        {
+          "url": "https://plants.ces.ncsu.edu/find_a_plant/?plant_type__id=24&page=9",
+          "bytes": 355707,
+          "sha256": "5ac74f45efb084d97394a739a2b534bc778b730ee2071541a5896b4d57baab10",
+          "records": 31,
+          "retrieved": "2026-10-27T15:44:53.044816+00:00"
+        },
+        {
+          "url": "https://plants.ces.ncsu.edu/find_a_plant/?landscape_location__id=3&page=1",
+          "bytes": 500425,
+          "sha256": "f9e0ab9d12da419169d9bc7ff351598351a211f1d334d4e7bddccbfa9a54a420",
+          "records": 48,
+          "retrieved": "2026-10-27T15:44:53.537828+00:00"
+        },
+        {
+          "url": "https://plants.ces.ncsu.edu/find_a_plant/?landscape_location__id=3&page=2",
+          "bytes": 470391,
+          "sha256": "a6202fe13a8c4005b23dfc60de291bfd22e022b09dae1d90a40458981b15b823",
+          "records": 48,
+          "retrieved": "2026-10-27T15:44:54.469396+00:00"
+        },
+        {
+          "url": "https://plants.ces.ncsu.edu/find_a_plant/?landscape_location__id=3&page=3",
+          "bytes": 473162,
+          "sha256": "214a583cb2ada59914d94eba9c53d3440329ea224421ba5c9a43de0d023be0d6",
+          "records": 48,
+          "retrieved": "2026-10-27T15:44:55.407752+00:00"
+        },
+        {
+          "url": "https://plants.ces.ncsu.edu/find_a_plant/?landscape_location__id=3&page=4",
+          "bytes": 514016,
+          "sha256": "2f98c030284bd726e179780e24e5b43b20d39691cf15aca6ba65915bf7ea51b3",
+          "records": 48,
+          "retrieved": "2026-10-27T15:44:56.401833+00:00"
+        },
+        {
+          "url": "https://plants.ces.ncsu.edu/find_a_plant/?landscape_location__id=3&page=5",
+          "bytes": 442458,
+          "sha256": "351c105809d63edc2423795ba73ba96a68b27298d6be0c0d99a579730672472b",
+          "records": 48,
+          "retrieved": "2026-10-27T15:44:57.307889+00:00"
+        },
+        {
+          "url": "https://plants.ces.ncsu.edu/find_a_plant/?landscape_location__id=3&page=6",
+          "bytes": 455125,
+          "sha256": "c8804afac0986356faa6d82c08ec73beeb63e76d486fe504b827d1c253ee41e2",
+          "records": 48,
+          "retrieved": "2026-10-27T15:44:58.231457+00:00"
+        },
+        {
+          "url": "https://plants.ces.ncsu.edu/find_a_plant/?landscape_location__id=3&page=7",
+          "bytes": 418326,
+          "sha256": "1560be8dd7a2c75d9b80fd75585cd039b22927f11a72904f4e4d92bdc1e817af",
+          "records": 48,
+          "retrieved": "2026-10-27T15:44:59.110882+00:00"
+        },
+        {
+          "url": "https://plants.ces.ncsu.edu/find_a_plant/?landscape_location__id=3&page=8",
+          "bytes": 484338,
+          "sha256": "cbde99f1abdd1780571f20dd3d72dfcfdace40e1a54f3910bd30c3110bcf14a5",
+          "records": 48,
+          "retrieved": "2026-10-27T15:45:00.059388+00:00"
+        },
+        {
+          "url": "https://plants.ces.ncsu.edu/find_a_plant/?landscape_location__id=3&page=9",
+          "bytes": 435484,
+          "sha256": "625793334f27a27657076a3d27f039222643ac9048b26bd00af0444b8d6b23e0",
+          "records": 48,
+          "retrieved": "2026-10-27T15:45:00.973543+00:00"
+        },
+        {
+          "url": "https://plants.ces.ncsu.edu/find_a_plant/?landscape_location__id=3&page=10",
+          "bytes": 464837,
+          "sha256": "f6cec4357d07802d138a3b4749a7212c23145540f685a1830e3e2141293e3e22",
+          "records": 48,
+          "retrieved": "2026-10-27T15:45:01.923575+00:00"
+        },
+        {
+          "url": "https://plants.ces.ncsu.edu/find_a_plant/?landscape_location__id=3&page=11",
+          "bytes": 421066,
+          "sha256": "3afeafea26874a71a3ffccae9de7afdb418ab695a6031481ec7da08ed068f0ef",
+          "records": 36,
+          "retrieved": "2026-10-27T15:45:02.937772+00:00"
+        },
+        {
+          "url": "https://plants.ces.ncsu.edu/find_a_plant/?plant_type__id=25&page=1",
+          "bytes": 524291,
+          "sha256": "87d690e411fab4dfa60ad44891c3fbf7e9f253289abeb051b1e948b3c24a2680",
+          "records": 48,
+          "retrieved": "2026-10-27T15:45:03.434779+00:00"
+        },
+        {
+          "url": "https://plants.ces.ncsu.edu/find_a_plant/?plant_type__id=25&page=2",
+          "bytes": 497573,
+          "sha256": "a19a0aa48cee9e8b32e59de361597e9965ad0ee63f400944e5928eeecb5aee65",
+          "records": 48,
+          "retrieved": "2026-10-27T15:45:04.392045+00:00"
+        },
+        {
+          "url": "https://plants.ces.ncsu.edu/find_a_plant/?plant_type__id=25&page=3",
+          "bytes": 465046,
+          "sha256": "25cdbd0ac1252542d1f55ea6265ed377ea260b2b8b7d122591bb3ec303871870",
+          "records": 48,
+          "retrieved": "2026-10-27T15:45:05.304982+00:00"
+        },
+        {
+          "url": "https://plants.ces.ncsu.edu/find_a_plant/?plant_type__id=25&page=4",
+          "bytes": 37452,
+          "sha256": "871b71c432aae9ed57d506754c2df8bc64f8886844fd1c35f55554bbe82ab58e",
+          "records": 2,
+          "retrieved": "2026-10-27T15:45:05.955231+00:00"
+        }
+      ]
+    },
+    {
+      "workCapture": "plant-supplement-receipts.json",
+      "receipts": [
+        {
+          "key": "ucanr-succulents",
+          "url": "https://ucanr.edu/site/mg-sonoma/succulents",
+          "sha256": "09daaf03b021b98d02698a21b643192a9b5b8de8651efa808969d9c117c77116",
+          "bytes": 125674
+        },
+        {
+          "key": "okstate-houseplants",
+          "url": "https://extension.okstate.edu/fact-sheets/houseplant-care",
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "key": "colorado-houseplants",
+          "url": "https://planttalk.colostate.edu/topics/houseplants/",
+          "sha256": "a1342023e867c826fab409fa41adf98544f418b85e4c4d826c1b9dedf35c6a91",
+          "bytes": 96269
+        }
+      ]
+    },
+    {
+      "url": "https://cpnames.carnivorousplants.org/",
+      "method": "Public read-only search form; all name types with full records",
+      "sha256": "c66f062ce06ca2ab0af938fa5e91facd0d19ae722b593d3dd29886bc796322fc",
+      "sourceRecords": 4862,
+      "note": "Only factual names/identities are frozen. Full prose descriptions, images, contributor widgets and signed image URLs are not redistributed."
+    }
+  ]
+}

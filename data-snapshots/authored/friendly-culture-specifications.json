@@ -1,0 +1,653 @@
+{
+  "questions": [
+    {
+      "key": "spongebob-characters",
+      "title": "List_of_SpongeBob_SquarePants_characters",
+      "prompt": "Name a character from SpongeBob SquarePants.",
+      "scope": "Named or distinctly identified characters from SpongeBob SquarePants, its films and spin-offs count. Identified character groups also count. Voice actors, episode titles and general species alone are not character names.",
+      "familiar": [
+        "SpongeBob",
+        "Patrick",
+        "Squidward",
+        "Mr. Krabs",
+        "Plankton",
+        "Karen",
+        "Sandy",
+        "Mrs. Puff",
+        "Pearl",
+        "Gary",
+        "Larry the Lobster",
+        "Mermaid Man",
+        "Barnacle Boy",
+        "Flying Dutchman",
+        "King Neptune",
+        "Princess Mindy",
+        "Patchy the Pirate",
+        "Potty the Parrot",
+        "French Narrator",
+        "Bubble Bass",
+        "Bubble Buddy",
+        "DoodleBob",
+        "Squilliam Fancyson",
+        "Man Ray",
+        "Dirty Bubble",
+        "Old Man Jenkins",
+        "Fred",
+        "Perch Perkins",
+        "Nosferatu",
+        "Dennis",
+        "The Cyclops",
+        "Burger Beard",
+        "Squidina",
+        "Grandma SquarePants",
+        "Harold SquarePants",
+        "Margaret SquarePants",
+        "Kevin the Sea Cucumber",
+        "Flats the Flounder",
+        "Fuzzy Acorns",
+        "Larry",
+        "Patchy",
+        "Potty",
+        "Neptune"
+      ],
+      "exclude": [
+        "Tom Kenny",
+        "Pikachu",
+        "Krusty Krab",
+        "Goo Lagoon lifeguard"
+      ],
+      "rare": "Fuzzy Acorns",
+      "aliases": {
+        "SpongeBob SquarePants": [
+          "SpongeBob",
+          "Quickster"
+        ],
+        "Patrick Star": [
+          "Patrick",
+          "Elastic Waistband"
+        ],
+        "Squidward Tentacles": [
+          "Squidward",
+          "Captain Magma"
+        ],
+        "Mr. Krabs": [
+          "Eugene Krabs"
+        ],
+        "Sandy Cheeks": [
+          "Sandy",
+          "Miss Appear"
+        ],
+        "Gary the Snail": [
+          "Gary"
+        ],
+        "Pearl Krabs": [
+          "Pearl"
+        ],
+        "Sheldon J. Plankton": [
+          "Plankton",
+          "Sheldon Plankton"
+        ],
+        "Karen Plankton": [
+          "Karen"
+        ],
+        "The Flying Dutchman": [
+          "Flying Dutchman"
+        ],
+        "Squidina Star": [
+          "Squidina"
+        ],
+        "Burger-Beard the Pirate": [
+          "Burger Beard",
+          "Burger-Beard"
+        ],
+        "Squilliam Fancyson": [
+          "Squilliam"
+        ],
+        "Lord Royal Highness": [
+          "LRH"
+        ],
+        "Larry the Lobster": [
+          "Larry"
+        ],
+        "Patchy the Pirate": [
+          "Patchy"
+        ],
+        "Potty the Parrot": [
+          "Potty"
+        ],
+        "King Neptune": [
+          "Neptune"
+        ]
+      },
+      "additions": [
+        {
+          "label": "Kevin C. Cucumber",
+          "aliases": [
+            "Kevin",
+            "Kevin the Sea Cucumber"
+          ]
+        },
+        {
+          "label": "Fuzzy Acorns",
+          "aliases": []
+        }
+      ],
+      "holds": {},
+      "references": [
+        "https://en.wikipedia.org/wiki/List_of_SpongeBob_SquarePants_characters",
+        "https://www.nick.com/info-page/xe31fl/spongebob-squarepants",
+        "https://spongebob.fandom.com/wiki/Kevin_C._Cucumber",
+        "https://spongebob.fandom.com/wiki/Fuzzy_Acorns",
+        "https://en.wikipedia.org/wiki/SpongeBob_SquarePants_season_8"
+      ],
+      "renames": {
+        "Squilliam Fancyson III": "Squilliam Fancyson"
+      },
+      "probeDispositions": {
+        "Goo Lagoon lifeguard": "An unqualified job/location description, not a supplied character name; not assumed valid merely because an independent probe included it."
+      }
+    },
+    {
+      "key": "toy-story-characters",
+      "title": "List_of_Toy_Story_characters",
+      "prompt": "Name a character from the Toy Story franchise.",
+      "scope": "Named or distinctly identified characters from Toy Story films, shorts, series and the Lightyear spin-off count. Established collective character identities such as the Aliens count. Voice actors, film titles and descriptive organizational headings do not count.",
+      "familiar": [
+        "Woody",
+        "Buzz Lightyear",
+        "Jessie",
+        "Bo Peep",
+        "Bullseye",
+        "Slinky Dog",
+        "Rex",
+        "Hamm",
+        "Mr. Potato Head",
+        "Mrs. Potato Head",
+        "Aliens",
+        "Forky",
+        "Andy",
+        "Sid",
+        "Molly",
+        "Bonnie",
+        "Barbie",
+        "Ken",
+        "Wheezy",
+        "Stinky Pete",
+        "Zurg",
+        "Lotso",
+        "Big Baby",
+        "Buster",
+        "Duke Caboom",
+        "Gabby Gabby",
+        "Giggle McDimples",
+        "Ducky",
+        "Bunny",
+        "Mr. Pricklepants",
+        "Buttercup",
+        "Trixie",
+        "Dolly",
+        "Sarge",
+        "RC",
+        "Al McWhiggin",
+        "Benson",
+        "Daisy",
+        "Chuckles",
+        "Lilypad",
+        "Smarty Pants",
+        "Reptillus Maximus",
+        "Sox",
+        "Izzy Hawthorne",
+        "Mira Nova",
+        "Booster",
+        "XR",
+        "Commander Nebula",
+        "Warp Darkmatter",
+        "NOS-4-A2",
+        "Bo",
+        "Al",
+        "Duke",
+        "Pricklepants",
+        "Potato Head"
+      ],
+      "exclude": [
+        "Tom Hanks",
+        "Lightning McQueen",
+        "Pizza Planet"
+      ],
+      "rare": "Reptillus Maximus",
+      "aliases": {
+        "Woody": [
+          "Sheriff Woody",
+          "Woody Pride"
+        ],
+        "Buzz Lightyear": [
+          "Buzz"
+        ],
+        "Andy Davis": [
+          "Andy"
+        ],
+        "Sid Phillips": [
+          "Sid"
+        ],
+        "Bonnie Anderson": [
+          "Bonnie"
+        ],
+        "Molly Davis": [
+          "Molly"
+        ],
+        "Slinky Dog": [
+          "Slinky"
+        ],
+        "Lots-o'-Huggin' Bear": [
+          "Lotso"
+        ],
+        "Emperor Zurg": [
+          "Zurg"
+        ],
+        "Booster Sinclair Munchapper": [
+          "Booster"
+        ],
+        "Aliens": [
+          "LGMs",
+          "Little Green Men"
+        ],
+        "Warp Darkmatter": [
+          "Agent Z"
+        ],
+        "Ty Parsec": [
+          "Wirewolf"
+        ],
+        "Bo Peep": [
+          "Bo"
+        ],
+        "Al McWhiggin": [
+          "Al"
+        ],
+        "Duke Caboom": [
+          "Duke"
+        ],
+        "Mr. Pricklepants": [
+          "Pricklepants"
+        ],
+        "Mr. Potato Head": [
+          "Potato Head"
+        ]
+      },
+      "additions": [
+        {
+          "label": "Benson",
+          "aliases": []
+        },
+        {
+          "label": "Era",
+          "aliases": []
+        },
+        {
+          "label": "Eon",
+          "aliases": []
+        },
+        {
+          "label": "Epoch",
+          "aliases": []
+        }
+      ],
+      "holds": {
+        "LGMs , or Little Green Men": "Combined source name field; actual LGMs/Little Green Men names share the established Aliens identity.",
+        "The Raenoks are the fiercest aliens in the Galaxy. Kleev": "Paragraph prefix, not a character name; the actual named Kleev record remains.",
+        "Chlorm Scientists - Era": "Combined group/header prefix, not the individual name."
+      },
+      "references": [
+        "https://en.wikipedia.org/wiki/List_of_Toy_Story_characters",
+        "https://www.pixar.com/toy-story",
+        "https://www.pixar.com/toy-story-5",
+        "https://www.disney.co.uk/movies/toy-story-4/meet-the-characters",
+        "https://service.mattel.com/us/productPopup.aspx?prodno=GGJ89&siteid=27",
+        "https://en.wikipedia.org/wiki/Buzz_Lightyear_of_Star_Command"
+      ],
+      "renames": {}
+    },
+    {
+      "key": "shrek-characters",
+      "title": "List_of_Shrek_characters",
+      "prompt": "Name a character from Shrek or Puss in Boots.",
+      "scope": "Named or distinctly identified characters in the Shrek films and spin-offs, including Puss in Boots films, count. Identified groups such as the Three Little Pigs count. Voice actors and generic fairy-tale species alone do not count.",
+      "familiar": [
+        "Shrek",
+        "Donkey",
+        "Fiona",
+        "Puss in Boots",
+        "Dragon",
+        "Gingy",
+        "Pinocchio",
+        "Big Bad Wolf",
+        "Three Little Pigs",
+        "Three Blind Mice",
+        "Lord Farquaad",
+        "Magic Mirror",
+        "Thelonius",
+        "Fairy Godmother",
+        "Prince Charming",
+        "King Harold",
+        "Queen Lillian",
+        "Doris",
+        "Ugly Stepsister",
+        "Arthur",
+        "Merlin",
+        "Rumpelstiltskin",
+        "Fergus",
+        "Farkle",
+        "Felicia",
+        "Kitty Softpaws",
+        "Perrito",
+        "Humpty Dumpty",
+        "Jack and Jill",
+        "Goldilocks",
+        "Papa Bear",
+        "Mama Bear",
+        "Baby Bear",
+        "Big Jack Horner",
+        "Death",
+        "Captain Hook",
+        "Snow White",
+        "Sleeping Beauty",
+        "Rapunzel",
+        "Cinderella",
+        "Mabel",
+        "Dronkeys",
+        "Brogan",
+        "Fifi",
+        "Dulcinea",
+        "Artephius",
+        "Pajuna",
+        "Toby",
+        "Esme",
+        "El Moco",
+        "Mama Luna",
+        "Doctor",
+        "Puss",
+        "Kitty"
+      ],
+      "exclude": [
+        "Mike Myers",
+        "Elsa",
+        "Duloc",
+        "Jiminy Cricket"
+      ],
+      "rare": "Brogan",
+      "aliases": {
+        "Princess Fiona": [
+          "Fiona"
+        ],
+        "Gingerbread Man": [
+          "Gingy"
+        ],
+        "The Big Bad Wolf": [
+          "Big Bad Wolf"
+        ],
+        "The Three Blind Mice": [
+          "Three Blind Mice"
+        ],
+        "The Magic Mirror": [
+          "Magic Mirror"
+        ],
+        "King Harold": [
+          "Harold"
+        ],
+        "Queen Lillian": [
+          "Lillian"
+        ],
+        "Arthur Pendragon": [
+          "Arthur",
+          "Artie"
+        ],
+        "Death": [
+          "The Wolf",
+          "Wolf"
+        ],
+        "Doris": [
+          "Ugly Stepsister"
+        ],
+        "Artephius": [
+          "The Great Mage Sino",
+          "Sino"
+        ],
+        "Cleevil": [
+          "Green Tulpa"
+        ],
+        "The Duchess": [
+          "Maldonna Eldritch"
+        ],
+        "Goldilocks": [
+          "Young Goldilocks"
+        ],
+        "Governor of Del Mar": [
+          "Governor"
+        ],
+        "Puss in Boots": [
+          "Puss"
+        ],
+        "Kitty Softpaws": [
+          "Kitty"
+        ]
+      },
+      "additions": [
+        {
+          "label": "Fergus",
+          "aliases": []
+        },
+        {
+          "label": "Farkle",
+          "aliases": []
+        },
+        {
+          "label": "Felicia",
+          "aliases": []
+        },
+        {
+          "label": "Goldilocks",
+          "aliases": []
+        },
+        {
+          "label": "Papa Bear",
+          "aliases": []
+        },
+        {
+          "label": "Mama Bear",
+          "aliases": []
+        },
+        {
+          "label": "Baby Bear",
+          "aliases": []
+        },
+        {
+          "label": "Fifi",
+          "aliases": []
+        }
+      ],
+      "holds": {
+        "Fergus , Farkle and Felicia": "Combined source field; the three actual individually named children are retained separately.",
+        "Goldilocks and the Three Bears": "Combined source field; actual named individual characters retained separately.",
+        "the Wolf / Death": "Combined credit field; both public names share the existing Death identity."
+      },
+      "references": [
+        "https://en.wikipedia.org/wiki/List_of_Shrek_characters",
+        "https://www.dreamworks.com/movies/shrek",
+        "https://pibfyc.dreamworks.com/wp-content/uploads/2023/02/PUSS-IN-BOOTS_THE-LAST-WISH_Screenplay.pdf",
+        "https://shrek.fandom.com/wiki/Fifi",
+        "https://en.wikipedia.org/wiki/The_Adventures_of_Puss_in_Boots",
+        "https://en.wikipedia.org/wiki/Puss_in_Boots:_The_Last_Wish",
+        "https://www.dreamworks.com/movies/puss-in-boots-the-last-wish"
+      ],
+      "renames": {
+        "the doctor who tells Puss to retire after informing him of his eight deaths.": "Doctor",
+        "the Ethical Bug": "Ethical Bug",
+        "the Governor of Del Mar": "Governor of Del Mar"
+      },
+      "probeDispositions": {
+        "Jiminy Cricket": "The film credits/script identify Ethical Bug, a parody character rather than the separate Disney character. Do not alias the actual Disney name to a different character."
+      }
+    },
+    {
+      "key": "avatar-characters",
+      "title": "List_of_Avatar:_The_Last_Airbender_characters",
+      "prompt": "Name a character from Avatar: The Last Airbender or The Legend of Korra.",
+      "scope": "Named or distinctly identified characters from the Avatar: The Last Airbender/Legend of Korra world, including its comics and novels, count. Animals and named spirits count. James Cameron's unrelated Avatar films, voice actors, nations and generic bending abilities do not count.",
+      "familiar": [
+        "Aang",
+        "Katara",
+        "Sokka",
+        "Toph",
+        "Zuko",
+        "Iroh",
+        "Azula",
+        "Ozai",
+        "Appa",
+        "Momo",
+        "Suki",
+        "Mai",
+        "Ty Lee",
+        "Yue",
+        "Jet",
+        "Bumi",
+        "Pakku",
+        "Hama",
+        "Roku",
+        "Kyoshi",
+        "Zhao",
+        "Long Feng",
+        "Combustion Man",
+        "June",
+        "Hei Bai",
+        "Koh",
+        "Wan Shi Tong",
+        "Cabbage Merchant",
+        "Korra",
+        "Asami",
+        "Mako",
+        "Bolin",
+        "Tenzin",
+        "Jinora",
+        "Lin Beifong",
+        "Suyin Beifong",
+        "Varrick",
+        "Zhu Li",
+        "Amon",
+        "Zaheer",
+        "Kuvira",
+        "Unalaq",
+        "P'Li",
+        "Ming-Hua",
+        "Ghazan",
+        "Raava",
+        "Vaatu",
+        "Naga",
+        "Pabu",
+        "Meelo",
+        "Ikki",
+        "Wan",
+        "Yangchen",
+        "Rangi",
+        "Yun"
+      ],
+      "exclude": [
+        "Jake Sully",
+        "Dante Basco",
+        "Fire Nation",
+        "Waterbending"
+      ],
+      "rare": "Lao Ge",
+      "aliases": {
+        "Avatar Aang": [
+          "Aang"
+        ],
+        "Toph Beifong": [
+          "Toph"
+        ],
+        "Uncle Iroh": [
+          "Iroh"
+        ],
+        "Fire Lord Ozai": [
+          "Ozai"
+        ],
+        "Avatar Korra": [
+          "Korra"
+        ],
+        "Asami Sato": [
+          "Asami"
+        ],
+        "Avatar Roku": [
+          "Roku"
+        ],
+        "Avatar Kyoshi": [
+          "Kyoshi"
+        ],
+        "Avatar Wan": [
+          "Wan"
+        ],
+        "Avatar Yangchen": [
+          "Yangchen"
+        ],
+        "Princess Yue": [
+          "Yue"
+        ],
+        "Master Pakku": [
+          "Pakku"
+        ],
+        "Admiral Zhao": [
+          "Zhao"
+        ],
+        "Grand Secretariat Long Feng": [
+          "Long Feng"
+        ],
+        "Koh the Face Stealer": [
+          "Koh"
+        ],
+        "Sir Iknik Blackstone Varrick": [
+          "Varrick"
+        ],
+        "Zhu Li Moon": [
+          "Zhu Li"
+        ],
+        "Combustion Man": [
+          "Sparky Sparky Boom Man"
+        ],
+        "Amon": [
+          "Noatak"
+        ]
+      },
+      "additions": [
+        {
+          "label": "Rangi",
+          "aliases": []
+        },
+        {
+          "label": "Yun",
+          "aliases": []
+        },
+        {
+          "label": "Lao Ge",
+          "aliases": []
+        }
+      ],
+      "holds": {
+        "The era of Raava": "Generic concept, species, organization or group heading rather than a named or distinctly identified individual character.",
+        "The Avatar Spirit": "Generic concept, species, organization or group heading rather than a named or distinctly identified individual character.",
+        "Blind Badgermoles": "Generic concept, species, organization or group heading rather than a named or distinctly identified individual character.",
+        "Sky Bison": "Generic concept, species, organization or group heading rather than a named or distinctly identified individual character.",
+        "Air Bison": "Generic concept, species, organization or group heading rather than a named or distinctly identified individual character.",
+        "Dai Li": "Generic concept, species, organization or group heading rather than a named or distinctly identified individual character.",
+        "Sandbender Tribes": "Generic concept, species, organization or group heading rather than a named or distinctly identified individual character.",
+        "Foggy Swamp Tribe": "Generic concept, species, organization or group heading rather than a named or distinctly identified individual character.",
+        "Fire Sages": "Generic concept, species, organization or group heading rather than a named or distinctly identified individual character.",
+        "The Sun Warriors": "Generic concept, species, organization or group heading rather than a named or distinctly identified individual character.",
+        "Ember Island Players": "Generic concept, species, organization or group heading rather than a named or distinctly identified individual character."
+      },
+      "references": [
+        "https://en.wikipedia.org/wiki/List_of_Avatar:_The_Last_Airbender_characters",
+        "https://www.nick.com/fan-hub/avatar",
+        "https://riseofkyoshi.abrams.link/"
+      ],
+      "renames": {}
+    }
+  ]
+}

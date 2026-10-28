@@ -1,0 +1,874 @@
+{
+  "status": "One whole credited-performer catalog per artist. Separate independent familiar inputs, real public aliases, explicit wrong-album boundaries and held-row decisions. No per-album/year/title-word variants.",
+  "questions": [
+    {
+      "artist": "Taylor Swift",
+      "familiar": [
+        "Love Story",
+        "You Belong with Me",
+        "Shake It Off",
+        "Blank Space",
+        "Bad Blood",
+        "Anti-Hero",
+        "Cruel Summer",
+        "All Too Well",
+        "Style",
+        "Our Song",
+        "Enchanted",
+        "Teardrops on My Guitar",
+        "Fortnight",
+        "Look What You Made Me Do",
+        "Better Man",
+        "Babe",
+        "I Knew You Were Trouble",
+        "Wildest Dreams",
+        "Delicate"
+      ],
+      "aliases": {
+        "Anti-Hero": [
+          "Antihero"
+        ]
+      },
+      "exclude": [
+        "1989",
+        "This Is What You Came For"
+      ],
+      "rare": "Christmas Must Be Something More",
+      "fixes": {},
+      "hold": {},
+      "references": [
+        "https://en.wikipedia.org/wiki/List_of_songs_recorded_by_Taylor_Swift",
+        "https://music.apple.com/us/song/1590368916",
+        "https://www.youtube.com/watch?v=8xg3vE8Ie_E"
+      ],
+      "extra": [
+        {
+          "name": "Better Man",
+          "source": "https://music.apple.com/us/song/1590368916",
+          "reason": "Taylor Swift released her own vocal recording on Red (Taylors Version); the older list row only credits Little Big Town."
+        }
+      ]
+    },
+    {
+      "artist": "The Weeknd",
+      "familiar": [
+        "Blinding Lights",
+        "Starboy",
+        "The Hills",
+        "Can't Feel My Face",
+        "Save Your Tears",
+        "Die for You",
+        "Wicked Games",
+        "House of Balloons",
+        "I Feel It Coming",
+        "Earned It",
+        "Call Out My Name",
+        "In the Night",
+        "After Hours",
+        "Heartless",
+        "Often"
+      ],
+      "aliases": {
+        "House of Balloons / Glass Table Girls": [
+          "House of Balloons",
+          "Glass Table Girls"
+        ]
+      },
+      "exclude": [
+        "Beauty Behind the Madness"
+      ],
+      "rare": "Anima Pt. 2",
+      "fixes": {},
+      "hold": {
+        "Title Unknown": "A placeholder for an unnamed performance is not a public song title."
+      },
+      "references": [
+        "https://en.wikipedia.org/wiki/List_of_songs_recorded_by_the_Weeknd",
+        "https://www.youtube.com/watch?v=8ex38L8xtNI"
+      ]
+    },
+    {
+      "artist": "Kendrick Lamar",
+      "familiar": [
+        "HUMBLE.",
+        "DNA.",
+        "Not Like Us",
+        "Alright",
+        "Swimming Pools",
+        "Money Trees",
+        "Love",
+        "Loyalty",
+        "King Kunta",
+        "Poetic Justice",
+        "Bitch Dont Kill My Vibe",
+        "Euphoria",
+        "Luther",
+        "TV Off"
+      ],
+      "aliases": {
+        "Swimming Pools (Drank)": [
+          "Swimming Pools"
+        ]
+      },
+      "exclude": [
+        "To Pimp a Butterfly",
+        "The Ways"
+      ],
+      "rare": "Best Rapper Under 25",
+      "fixes": {},
+      "hold": {},
+      "references": [
+        "https://en.wikipedia.org/wiki/List_of_songs_recorded_by_Kendrick_Lamar"
+      ]
+    },
+    {
+      "artist": "Beyoncé",
+      "familiar": [
+        "Crazy in Love",
+        "Single Ladies",
+        "Halo",
+        "Irreplaceable",
+        "Formation",
+        "Love on Top",
+        "Drunk in Love",
+        "Texas Hold Em",
+        "Break My Soul",
+        "Cuff It",
+        "If I Were a Boy",
+        "Beautiful Liar",
+        "Diva",
+        "Run the World",
+        "Partition"
+      ],
+      "aliases": {
+        "Single Ladies (Put a Ring on It)": [
+          "Single Ladies"
+        ],
+        "All That I'm Lookin' For": [
+          "Sex Kitten"
+        ],
+        "Run the World (Girls)": [
+          "Run the World"
+        ]
+      },
+      "exclude": [
+        "I Am... Sasha Fierce"
+      ],
+      "rare": "All That I'm Lookin' For",
+      "fixes": {},
+      "hold": {},
+      "references": [
+        "https://en.wikipedia.org/wiki/List_of_songs_recorded_by_Beyonc%C3%A9"
+      ]
+    },
+    {
+      "artist": "Rihanna",
+      "familiar": [
+        "Umbrella",
+        "Diamonds",
+        "We Found Love",
+        "Work",
+        "Only Girl",
+        "Stay",
+        "Dont Stop the Music",
+        "S and M",
+        "Rude Boy",
+        "Take a Bow",
+        "Disturbia",
+        "Pon de Replay",
+        "Love on the Brain",
+        "Love the Way You Lie",
+        "This Is What You Came For"
+      ],
+      "aliases": {
+        "Only Girl (In the World)": [
+          "Only Girl"
+        ],
+        "S&M": [
+          "S and M"
+        ]
+      },
+      "exclude": [
+        "Unapologetic"
+      ],
+      "rare": "Coulda Been the One",
+      "fixes": {},
+      "hold": {},
+      "references": [
+        "https://en.wikipedia.org/wiki/List_of_songs_recorded_by_Rihanna"
+      ]
+    },
+    {
+      "artist": "Ariana Grande",
+      "familiar": [
+        "Thank U, Next",
+        "7 Rings",
+        "Side to Side",
+        "Into You",
+        "Problem",
+        "No Tears Left to Cry",
+        "God Is a Woman",
+        "Break Free",
+        "Love Me Harder",
+        "Bang Bang",
+        "Breathin",
+        "Dangerous Woman",
+        "One Last Time",
+        "We Cant Be Friends",
+        "Popular",
+        "Defying Gravity",
+        "Give It Up",
+        "LA Boyz",
+        "Leave It All to Shine"
+      ],
+      "aliases": {
+        "7 Rings": [
+          "Seven Rings"
+        ],
+        "34+35": [
+          "Thirty Four Plus Thirty Five"
+        ],
+        "We Can't Be Friends (Wait for Your Love)": [
+          "We Cant Be Friends"
+        ]
+      },
+      "exclude": [
+        "Yours Truly"
+      ],
+      "rare": "Cadillac Song",
+      "fixes": {
+        "Bad Idea (Ariana Grande song)": "Bad Idea"
+      },
+      "hold": {},
+      "references": [
+        "https://en.wikipedia.org/wiki/List_of_songs_recorded_by_Ariana_Grande"
+      ]
+    },
+    {
+      "artist": "Bruno Mars",
+      "familiar": [
+        "Just the Way You Are",
+        "Grenade",
+        "Locked Out of Heaven",
+        "When I Was Your Man",
+        "24K Magic",
+        "That's What I Like",
+        "Uptown Funk",
+        "Leave the Door Open",
+        "Smokin out the Window",
+        "Skate",
+        "Loves Train",
+        "The Lazy Song",
+        "Treasure",
+        "Marry You",
+        "Billionaire",
+        "Finesse",
+        "Die With a Smile",
+        "Apt"
+      ],
+      "aliases": {
+        "Smokin out the Window": [
+          "Smoking Out the Window"
+        ]
+      },
+      "exclude": [
+        "Doo-Wops & Hooligans"
+      ],
+      "rare": "Bruno San's Theme Song",
+      "fixes": {},
+      "hold": {},
+      "references": [
+        "https://en.wikipedia.org/wiki/List_of_songs_recorded_by_Bruno_Mars"
+      ]
+    },
+    {
+      "artist": "Dua Lipa",
+      "familiar": [
+        "New Rules",
+        "Don't Start Now",
+        "Levitating",
+        "Physical",
+        "Dance the Night",
+        "Houdini",
+        "One Kiss",
+        "IDGAF",
+        "Break My Heart",
+        "Love Again",
+        "Cold Heart",
+        "Training Season",
+        "Illusion"
+      ],
+      "aliases": {},
+      "exclude": [
+        "Radical Optimism"
+      ],
+      "rare": "For Julian",
+      "fixes": {},
+      "hold": {},
+      "references": [
+        "https://en.wikipedia.org/wiki/List_of_songs_recorded_by_Dua_Lipa"
+      ]
+    },
+    {
+      "artist": "Lady Gaga",
+      "familiar": [
+        "Poker Face",
+        "Bad Romance",
+        "Just Dance",
+        "Born This Way",
+        "Paparazzi",
+        "Alejandro",
+        "Shallow",
+        "Telephone",
+        "Rain on Me",
+        "Million Reasons",
+        "Judas",
+        "Applause",
+        "Die With a Smile",
+        "Abracadabra",
+        "Bloody Mary"
+      ],
+      "aliases": {},
+      "exclude": [
+        "The Fame Monster",
+        "Quicksand"
+      ],
+      "rare": "Again Again",
+      "fixes": {},
+      "hold": {
+        "Carolina": "Source legend explicitly marks background vocals, rather than a credited lead/featured-artist recording.",
+        "Find Yourself": "Source legend explicitly marks background vocals, rather than a credited lead/featured-artist recording.",
+        "Make Her Say": "Source legend explicitly marks background vocals, rather than a credited lead/featured-artist recording.",
+        "Murder My Heart": "Source legend explicitly marks background vocals, rather than a credited lead/featured-artist recording.",
+        "Quicksand": "Source legend explicitly marks background vocals, rather than a credited lead/featured-artist recording.",
+        "Summer of Love": "Source legend explicitly marks background vocals, rather than a credited lead/featured-artist recording."
+      },
+      "references": [
+        "https://en.wikipedia.org/wiki/List_of_songs_recorded_by_Lady_Gaga"
+      ]
+    },
+    {
+      "artist": "Billie Eilish",
+      "familiar": [
+        "Bad Guy",
+        "Ocean Eyes",
+        "Happier Than Ever",
+        "Everything I Wanted",
+        "Birds of a Feather",
+        "What Was I Made For?",
+        "Lovely",
+        "Bellyache",
+        "Lunch",
+        "Wildflower",
+        "Chihiro",
+        "TV",
+        "Therefore I Am",
+        "When the Partys Over",
+        "Bury a Friend",
+        "Guess"
+      ],
+      "aliases": {},
+      "exclude": [
+        "When We All Fall Asleep, Where Do We Go?"
+      ],
+      "rare": "Fingers Crossed",
+      "fixes": {
+        "Guess featuring Billie Eilish": "Guess"
+      },
+      "hold": {},
+      "references": [
+        "https://en.wikipedia.org/wiki/List_of_songs_recorded_by_Billie_Eilish"
+      ]
+    },
+    {
+      "artist": "Olivia Rodrigo",
+      "familiar": [
+        "Drivers License",
+        "Good 4 U",
+        "Deja Vu",
+        "Vampire",
+        "Traitor",
+        "Bad Idea Right?",
+        "Brutal",
+        "Favorite Crime",
+        "Enough for You",
+        "Happier",
+        "Jealousy Jealousy",
+        "Get Him Back",
+        "Obsessed",
+        "Love Is Embarrassing",
+        "All I Want"
+      ],
+      "aliases": {},
+      "exclude": [
+        "Sour"
+      ],
+      "rare": "Blobfish",
+      "fixes": {},
+      "hold": {},
+      "references": [
+        "https://en.wikipedia.org/wiki/List_of_songs_recorded_by_Olivia_Rodrigo"
+      ]
+    },
+    {
+      "artist": "Sabrina Carpenter",
+      "familiar": [
+        "Espresso",
+        "Please Please Please",
+        "Taste",
+        "Nonsense",
+        "Feather",
+        "Manchild",
+        "Skin",
+        "Because I Liked a Boy",
+        "Thumbs",
+        "Bed Chem",
+        "Juno",
+        "Slim Pickins",
+        "Tornado Warnings",
+        "On Purpose"
+      ],
+      "aliases": {},
+      "exclude": [
+        "Short n Sweet"
+      ],
+      "rare": "Your Love's Like",
+      "fixes": {},
+      "hold": {},
+      "references": [
+        "https://en.wikipedia.org/wiki/List_of_songs_recorded_by_Sabrina_Carpenter"
+      ]
+    },
+    {
+      "artist": "Ed Sheeran",
+      "familiar": [
+        "Shape of You",
+        "Thinking Out Loud",
+        "Perfect",
+        "Photograph",
+        "The A Team",
+        "Bad Habits",
+        "Shivers",
+        "Galway Girl",
+        "Castle on the Hill",
+        "Sing",
+        "Lego House",
+        "I Dont Care",
+        "Eyes Closed",
+        "Beautiful People"
+      ],
+      "aliases": {},
+      "exclude": [
+        "No.6 Collaborations Project"
+      ],
+      "rare": "You Need to Cut Your Hair",
+      "fixes": {},
+      "hold": {},
+      "references": [
+        "https://en.wikipedia.org/wiki/List_of_songs_recorded_by_Ed_Sheeran"
+      ]
+    },
+    {
+      "artist": "SZA",
+      "familiar": [
+        "Kill Bill",
+        "Snooze",
+        "Good Days",
+        "Love Galore",
+        "Broken Clocks",
+        "The Weekend",
+        "All the Stars",
+        "Saturn",
+        "Nobody Gets Me",
+        "Shirt",
+        "I Hate U",
+        "Drew Barrymore",
+        "Kiss Me More"
+      ],
+      "aliases": {},
+      "exclude": [
+        "Ctrl"
+      ],
+      "rare": "About a Gemini, Pt. 3",
+      "fixes": {},
+      "hold": {},
+      "references": [
+        "https://en.wikipedia.org/wiki/List_of_songs_recorded_by_SZA"
+      ]
+    },
+    {
+      "artist": "Coldplay",
+      "familiar": [
+        "Yellow",
+        "The Scientist",
+        "Clocks",
+        "Fix You",
+        "Viva la Vida",
+        "A Sky Full of Stars",
+        "Paradise",
+        "Hymn for the Weekend",
+        "Something Just Like This",
+        "My Universe",
+        "Speed of Sound",
+        "In My Place",
+        "Trouble"
+      ],
+      "aliases": {},
+      "exclude": [
+        "Viva la Vida or Death and All His Friends"
+      ],
+      "rare": "Amor Argentina",
+      "fixes": {},
+      "hold": {},
+      "references": [
+        "https://en.wikipedia.org/wiki/List_of_songs_recorded_by_Coldplay"
+      ]
+    },
+    {
+      "artist": "Imagine Dragons",
+      "familiar": [
+        "Radioactive",
+        "Demons",
+        "Believer",
+        "Thunder",
+        "It's Time",
+        "Whatever It Takes",
+        "Enemy",
+        "Bones",
+        "On Top of the World",
+        "Natural",
+        "Warriors",
+        "Walking the Wire",
+        "Sharks"
+      ],
+      "aliases": {},
+      "exclude": [
+        "Evolve"
+      ],
+      "rare": "All Eyes",
+      "fixes": {},
+      "hold": {},
+      "references": [
+        "https://en.wikipedia.org/wiki/List_of_songs_recorded_by_Imagine_Dragons"
+      ]
+    },
+    {
+      "artist": "Maroon 5",
+      "familiar": [
+        "This Love",
+        "She Will Be Loved",
+        "Moves Like Jagger",
+        "Payphone",
+        "Sugar",
+        "Memories",
+        "Girls Like You",
+        "Animals",
+        "Maps",
+        "One More Night",
+        "Sunday Morning",
+        "Wake Up Call",
+        "Harder to Breathe",
+        "Makes Me Wonder"
+      ],
+      "aliases": {},
+      "exclude": [
+        "Songs About Jane",
+        "Heard Em Say"
+      ],
+      "rare": "The Never Saga",
+      "fixes": {},
+      "hold": {},
+      "references": [
+        "https://en.wikipedia.org/wiki/List_of_songs_recorded_by_Maroon_5"
+      ]
+    },
+    {
+      "artist": "Queen",
+      "familiar": [
+        "Bohemian Rhapsody",
+        "We Will Rock You",
+        "We Are the Champions",
+        "Don't Stop Me Now",
+        "Another One Bites the Dust",
+        "Somebody to Love",
+        "Radio Ga Ga",
+        "Killer Queen",
+        "Crazy Little Thing Called Love",
+        "Under Pressure",
+        "I Want to Break Free",
+        "Fat Bottomed Girls",
+        "The Show Must Go On"
+      ],
+      "aliases": {},
+      "exclude": [
+        "A Night at the Opera"
+      ],
+      "rare": "Blurred Vision",
+      "fixes": {},
+      "hold": {},
+      "references": [
+        "https://en.wikipedia.org/wiki/List_of_songs_recorded_by_Queen"
+      ]
+    },
+    {
+      "artist": "The Beatles",
+      "familiar": [
+        "Hey Jude",
+        "Let It Be",
+        "Yesterday",
+        "Come Together",
+        "Here Comes the Sun",
+        "Help!",
+        "A Hard Days Night",
+        "Yellow Submarine",
+        "Twist and Shout",
+        "Blackbird",
+        "Eleanor Rigby",
+        "Strawberry Fields Forever",
+        "Ob La Di Ob La Da",
+        "I Want to Hold Your Hand",
+        "All You Need Is Love",
+        "Penny Lane"
+      ],
+      "aliases": {},
+      "exclude": [
+        "Abbey Road"
+      ],
+      "rare": "You Wear Your Women Out",
+      "fixes": {},
+      "hold": {},
+      "references": [
+        "https://en.wikipedia.org/wiki/List_of_songs_recorded_by_The_Beatles"
+      ]
+    },
+    {
+      "artist": "Green Day",
+      "familiar": [
+        "Basket Case",
+        "American Idiot",
+        "Boulevard of Broken Dreams",
+        "Wake Me Up When September Ends",
+        "Holiday",
+        "Good Riddance",
+        "When I Come Around",
+        "Longview",
+        "Welcome to Paradise",
+        "Jesus of Suburbia",
+        "21 Guns",
+        "Brain Stew",
+        "Warning",
+        "Know Your Enemy"
+      ],
+      "aliases": {
+        "Good Riddance (Time of Your Life)": [
+          "Good Riddance",
+          "Time of Your Life"
+        ]
+      },
+      "exclude": [
+        "Dookie"
+      ],
+      "rare": "You Irritate Me",
+      "fixes": {
+        "Another State of Mind † ( Social Distortion cover)": "Another State of Mind"
+      },
+      "hold": {},
+      "references": [
+        "https://en.wikipedia.org/wiki/List_of_songs_recorded_by_Green_Day"
+      ]
+    },
+    {
+      "artist": "Linkin Park",
+      "familiar": [
+        "In the End",
+        "Numb",
+        "Crawling",
+        "Faint",
+        "Breaking the Habit",
+        "What I've Done",
+        "Somewhere I Belong",
+        "One Step Closer",
+        "Papercut",
+        "Bleed It Out",
+        "New Divide",
+        "One More Light",
+        "Leave Out All the Rest",
+        "The Emptiness Machine",
+        "Heavy Is the Crown"
+      ],
+      "aliases": {},
+      "exclude": [
+        "Hybrid Theory"
+      ],
+      "rare": "Fiends",
+      "fixes": {},
+      "hold": {
+        "Deftest": "Incomplete unreleased Xero demo; not a released full song.",
+        "Truth Inside a Lie (By Ryan Giles) [LPU Sessions 2013]": "Fan contest artist Ryan Giles, not a Linkin Park song.",
+        "Change (By Beta State ) [LPU Sessions 2013]": "Fan contest artist Beta State, not a Linkin Park song."
+      },
+      "references": [
+        "https://en.wikipedia.org/wiki/List_of_songs_recorded_by_Linkin_Park"
+      ]
+    },
+    {
+      "artist": "Nirvana",
+      "familiar": [
+        "Smells Like Teen Spirit",
+        "Come as You Are",
+        "Lithium",
+        "In Bloom",
+        "Heart-Shaped Box",
+        "All Apologies",
+        "Heart Shaped Box",
+        "Polly",
+        "About a Girl",
+        "Rape Me",
+        "Dumb",
+        "Something in the Way",
+        "The Man Who Sold the World",
+        "Where Did You Sleep Last Night"
+      ],
+      "aliases": {},
+      "exclude": [
+        "Nevermind"
+      ],
+      "rare": "Anorexorcist",
+      "fixes": {},
+      "hold": {},
+      "references": [
+        "https://en.wikipedia.org/wiki/List_of_songs_recorded_by_Nirvana"
+      ]
+    },
+    {
+      "artist": "Metallica",
+      "familiar": [
+        "Enter Sandman",
+        "Master of Puppets",
+        "Nothing Else Matters",
+        "One",
+        "The Unforgiven",
+        "For Whom the Bell Tolls",
+        "Fade to Black",
+        "Sad but True",
+        "Seek and Destroy",
+        "Battery",
+        "Fuel",
+        "The Memory Remains",
+        "Creeping Death",
+        "The Call of Ktulu"
+      ],
+      "aliases": {
+        "Seek & Destroy": [
+          "Seek and Destroy"
+        ]
+      },
+      "exclude": [
+        "Kill Em All"
+      ],
+      "rare": "Commando",
+      "fixes": {},
+      "hold": {},
+      "references": [
+        "https://en.wikipedia.org/wiki/List_of_songs_recorded_by_Metallica"
+      ]
+    },
+    {
+      "artist": "Foo Fighters",
+      "familiar": [
+        "Everlong",
+        "The Pretender",
+        "My Hero",
+        "Learn to Fly",
+        "Best of You",
+        "All My Life",
+        "Times Like These",
+        "Walk",
+        "Monkey Wrench",
+        "These Days",
+        "Big Me",
+        "DOA",
+        "Rope",
+        "This Is a Call"
+      ],
+      "aliases": {},
+      "exclude": [
+        "Echoes, Silence, Patience & Grace"
+      ],
+      "rare": "Amen, Caveman",
+      "fixes": {},
+      "hold": {},
+      "references": [
+        "https://en.wikipedia.org/wiki/List_of_songs_recorded_by_Foo_Fighters"
+      ]
+    },
+    {
+      "artist": "Red Hot Chili Peppers",
+      "familiar": [
+        "Californication",
+        "Under the Bridge",
+        "Scar Tissue",
+        "Can't Stop",
+        "Otherside",
+        "Dani California",
+        "Snow",
+        "By the Way",
+        "Give It Away",
+        "Around the World",
+        "Higher Ground"
+      ],
+      "aliases": {
+        "Snow (Hey Oh)": [
+          "Snow"
+        ]
+      },
+      "exclude": [
+        "The Uplift Mofo Party Plan"
+      ],
+      "rare": "Drum Homage Medley",
+      "fixes": {},
+      "hold": {},
+      "references": [
+        "https://en.wikipedia.org/wiki/List_of_songs_recorded_by_Red_Hot_Chili_Peppers"
+      ]
+    },
+    {
+      "artist": "Twenty One Pilots",
+      "familiar": [
+        "Stressed Out",
+        "Ride",
+        "Heathens",
+        "Car Radio",
+        "Tear in My Heart",
+        "Chlorine",
+        "Holding on to You",
+        "Lane Boy",
+        "Jumpsuit",
+        "My Blood",
+        "Level of Concern",
+        "Overcompensate",
+        "Navigating"
+      ],
+      "aliases": {
+        "Chlorine": [
+          "Chlorine (Mexico City)"
+        ],
+        "Cut My Lip": [
+          "Cut My Lip (Brooklyn)"
+        ],
+        "The Hype": [
+          "The Hype (Berlin)"
+        ]
+      },
+      "exclude": [
+        "Blurryface"
+      ],
+      "rare": "Before You Start Your Day",
+      "fixes": {},
+      "hold": {},
+      "references": [
+        "https://en.wikipedia.org/wiki/List_of_songs_recorded_by_Twenty_One_Pilots"
+      ]
+    }
+  ]
+}
