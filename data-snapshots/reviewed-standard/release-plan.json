@@ -1,0 +1,18 @@
+{
+  "target": 1000,
+  "previousTarget": 5000,
+  "changedBy": "Explicit user instruction: just do 1k then",
+  "changedOn": "2026-10-28",
+  "scope": "Total distinct admitted normal-play questions shared by Daily and Puffer, including the existing baseline.",
+  "quality": "Preserve the saved review standard, 8–15% per category, common and rare valid answers, no arbitrary tag/title padding, and no missing obvious answers.",
+  "publication": "The user explicitly authorized the best available validated partial update at the delivery deadline, even below1,000. Publish only factual/gameplay-validated work; email the actual published count and link, and identify anything unfinished.",
+  "workflow": "Balanced batches of roughly 100 candidates; reuse appropriate source-backed inventories, check individual common/rare answers and boundaries, reject weak or duplicate concepts, then run complete validation per batch.",
+  "delivery": {
+    "at": "2026-10-28T08:00:00-04:00",
+    "timezone": "America/New_York",
+    "email": "gavin@theleiners.com",
+    "partialAuthorized": true,
+    "instruction": "its fine just email me whatever you have at8am",
+    "stopHeartbeatAfterConfirmedDelivery": true
+  }
+}

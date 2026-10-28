@@ -1,9 +1,9 @@
 {
-  "target": 5000,
+  "target": 1000,
   "authoredCandidates": 274,
   "admittedAuthored": 247,
   "normalPoolAdmitted": 474,
-  "remaining": 4526,
+  "remaining": 526,
   "candidateFamilies": {
     "culture": 20,
     "everyday": 25,

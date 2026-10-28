@@ -81,8 +81,11 @@ def main():
     qs=load_questions()
     admission=json.loads((ROOT/'data-snapshots/reviewed-standard/admission.json').read_text())
     admitted={q['id'] for q in admission['questions']}
-    summary={'target':5000,'authoredCandidates':len(qs),'admittedAuthored':sum(q['id'] in admitted for q in qs),
-             'normalPoolAdmitted':len(admitted),'remaining':max(0,5000-len(admitted)),
+    plan=json.loads((ROOT/'data-snapshots/reviewed-standard/release-plan.json').read_text())
+    requested_target=plan['target']
+    assert type(requested_target) is int and requested_target>0, 'Invalid explicit release target'
+    summary={'target':requested_target,'authoredCandidates':len(qs),'admittedAuthored':sum(q['id'] in admitted for q in qs),
+             'normalPoolAdmitted':len(admitted),'remaining':max(0,requested_target-len(admitted)),
              'candidateFamilies':dict(sorted(collections.Counter(q['family'] for q in qs).items())),
              'canonicalAnswerRows':sum(len(q['rows']) for q in qs),
              'familiarAnswerChecks':sum(len(q['familiar']) for q in qs)}

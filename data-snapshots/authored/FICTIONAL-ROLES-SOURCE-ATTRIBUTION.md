@@ -77,3 +77,18 @@ fictional covert operative ever published has been enumerated. The normal-play
 admission is explicit and separate from inventory generation. The full 5,000
 question release remains unfinished, and production is not updated by this
 development checkpoint.
+
+## October28 common-name repair
+
+The prior source spelling Felonius Gru omitted the ordinary public answer Gru.
+Illumination's Despicable Me3/4 pages explicitly name Gru as an AVL agent. Gru is
+now the canonical entry-tier answer; the public secondary character biography
+supports Felonious Gru as an exact full-name alias. The source typo is repaired
+and still uses post-submit confirmation. No new question or character is counted:
+there are still318 canonical characters,34 original probes and42 held leads,
+with373 supporting source rows. Eighteen additional actual local-game cases pass,
+including both correct Gru names/scores and confirmation for the misspelling.
+
+The user reduced the release goal to1,000 total, then authorized delivery of the
+best validated partial build at8a.m.Eastern onOctober28. See release-plan.json.
+All346 full-suite tests pass after that scope change and the name correction.

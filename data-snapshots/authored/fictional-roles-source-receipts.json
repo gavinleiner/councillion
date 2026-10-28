@@ -280,5 +280,19 @@
     "bytes": 12786,
     "sha256": "d978de2ab07c668cefe1119b3a0c2ba2513f7b79ca6ee795a0662636e6e7d3a8",
     "review": "Lines11-28 identify the espionage roles in the authorized Warner Bros. show/episode synopsis; actors/cast and all navigation are not spy answers. The NBC403 remains a recorded failure, not proof."
+  },
+  {
+    "localReviewCapture": "gru-published-name-role-repair.txt",
+    "access": "public-indexed-search-result-text-not-raw-html",
+    "sha256": "c0990ac5a6751ac4149c14428e58aa81b3e4174887b5d72f8f08c8d9131df191",
+    "bytes": 7454,
+    "review": "Illumination Despicable Me3/4 explicitly calls Gru an AVL agent; actual common name Gru is canonical. The separate public character biography supports Felonious Gru. The source list Felonius spelling is repaired, not promoted to an exact alias."
+  },
+  {
+    "localReviewCapture": "gru-secondary-full-name.txt",
+    "access": "public-indexed-search-result-text-not-raw-html",
+    "sha256": "3240d903deb29e869a523635c40bac550efa69048d7cda3b16bc7e1bd8f251d3",
+    "bytes": 15826,
+    "review": "Illumination Despicable Me3/4 explicitly calls Gru an AVL agent; actual common name Gru is canonical. The separate public character biography supports Felonious Gru. The source list Felonius spelling is repaired, not promoted to an exact alias."
   }
 ]

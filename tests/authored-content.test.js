@@ -12,6 +12,20 @@ const admission=JSON.parse(readFileSync(new URL('../data-snapshots/reviewed-stan
 const approved=new Set(admission.questions.map(p=>p.id));
 const pack=id=>AUTHORED_PACKS.find(p=>p.id==='authored-'+id);
 
+test('the current delivery plan preserves the actual admission count without claiming the full target is complete',()=>{
+ const base=new URL('../',import.meta.url);
+ const plan=JSON.parse(readFileSync(new URL('data-snapshots/reviewed-standard/release-plan.json',base)));
+ const progress=JSON.parse(readFileSync(new URL('data-snapshots/authored/progress.json',base)));
+ const readiness=JSON.parse(readFileSync(new URL('data-snapshots/authored/release-readiness.json',base)));
+ assert.ok(Number.isSafeInteger(plan.target)&&plan.target>0);
+ assert.equal(progress.target,plan.target);assert.equal(readiness.target,plan.target);
+ assert.equal(progress.normalPoolAdmitted,MIXED_PACKS.length);
+ assert.equal(readiness.normalPlayQuestions,MIXED_PACKS.length);
+ assert.equal(readiness.remaining,Math.max(0,plan.target-MIXED_PACKS.length));
+ if(MIXED_PACKS.length<plan.target)assert.equal(readiness.ready,false);
+ assert.equal(readiness.deliveryAuthorized,plan.delivery?.partialAuthorized===true);
+});
+
 test('candidate inventories cannot count toward the live target or appear in optional play without explicit admission',()=>{
  assert.equal(AUTHORED_PACKS.length,manifest.count);
  assert.deepEqual(new Set(MIXED_PACKS.map(p=>p.id)),approved);

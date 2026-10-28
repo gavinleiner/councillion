@@ -1,6 +1,11 @@
-# Five-thousand-question expansion: development checkpoint
+# Councillion question expansion: delivery checkpoint
 
-The requested release is unfinished. Production still has 227 admitted questions. Development has 474: the 227 baseline plus 247 new admissions. It needs 4,526 more genuinely distinct questions. Answer rows, raw entities, draft inventories and reworded recipes do not count as questions. The final section is the latest checkpoint; preceding dated sections retain the development history.
+The current goal is **1,000 total validated questions**, explicitly reduced by
+the user onOctober28. Development has474 admitted questions (227baseline plus
+247additions), leaving526 to reach that target. The user subsequently authorized
+the best validated partial update and a self-email at8a.m.Eastern onOctober28.
+The old5,000-only publication hold is superseded. Historical sections below
+record their original goals and are not the current delivery policy.
 
 ## Admission standard
 
@@ -333,3 +338,21 @@ world43, everyday47 are all within 8–15%. There are 274 authored candidates,
 Development still needs 4,526 questions; production remains 227. No partial
 publication or completion email. Four original story/systems concepts remain:
 scientists/doctors, writers, artists and named artworks.
+
+## October28 authorized partial delivery
+
+The current target and delivery instructions live in
+data-snapshots/reviewed-standard/release-plan.json. Both the authored progress
+compiler and the release gate read this target. The normal1,000-target gate
+still honestly reports526remaining; explicit--delivery mode allows the
+authorized partial release only when the admission, duplication, Daily/Puffer,
+category-balance and no-padding checks otherwise pass. It does not substitute
+for factual or gameplay QA.
+
+Gru/Felonious Gru now resolve to the public character Gru at10points. The old
+Felonius source spelling prompts confirmation after submission. All346tests
+and18additional actual local-game cases pass after the correction and scope
+change. The first42 frozen Daily IDs (October23–28) stay unchanged. A refreshed
+future calendar fromOctober29 uses the expanded admitted subjects with seven
+distinct categories per day. New medical/scientist source research is not an
+admission. Actual published counts and email delivery must be verified separately.

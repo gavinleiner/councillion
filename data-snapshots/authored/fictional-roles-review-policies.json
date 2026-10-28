@@ -1,7 +1,9 @@
 {
   "fictional-spies": {
     "holds": {},
-    "renameRepairs": {},
+    "renameRepairs": {
+      "Felonius Gru": "Gru"
+    },
     "aliasMerges": {
       "Sam (Totally Spies)": [
         "Sam"

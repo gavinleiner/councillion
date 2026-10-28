@@ -3,7 +3,7 @@
     "foldedPublicSpellings": {},
     "normalizedVariantReviews": {},
     "literalPublicNames": {},
-    "sourceRows": 371,
+    "sourceRows": 373,
     "held": [
       {
         "sourceLine": 151,
@@ -2045,7 +2045,7 @@
           "review": "Named intelligence/secret/covert operative in identified fiction. Generic groups, real performers and ordinary detective-only roles are not automatically characters in this subject."
         }
       ],
-      "Felonius Gru": [
+      "Gru": [
         {
           "label": "Felonius Gru",
           "aliases": [],
@@ -2054,6 +2054,22 @@
           "sourceSection": "Television/film",
           "kind": "reviewed-fictional-covert-role",
           "review": "Named intelligence/secret/covert operative in identified fiction. Generic groups, real performers and ordinary detective-only roles are not automatically characters in this subject."
+        },
+        {
+          "label": "Gru",
+          "aliases": [],
+          "origin": "https://www.illumination.com/movie/despicable-me-3/",
+          "kind": "publisher-familiar-role-or-identity",
+          "review": "Public character name/actual fictional covert role; exact aliases require published identity, never generated initials. A covert support operative need not be a government employee."
+        },
+        {
+          "label": "Gru",
+          "aliases": [
+            "Felonious Gru"
+          ],
+          "origin": "https://en.wikipedia.org/wiki/Gru",
+          "kind": "public-secondary-name-or-role",
+          "review": "Public character name/actual fictional covert role; exact aliases require published identity, never generated initials. A covert support operative need not be a government employee."
         }
       ],
       "Lucy Wilde": [
@@ -4202,6 +4218,9 @@
       ],
       "Chuck Bartowski": [
         "Charles Bartowski"
+      ],
+      "Gru": [
+        "Felonious Gru"
       ],
       "John Casey": [
         "Alex Coburn"

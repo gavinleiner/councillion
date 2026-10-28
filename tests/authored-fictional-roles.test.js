@@ -17,6 +17,9 @@ test('one whole fictional covert-role subject preserves all34 original common in
  for(const input of specs[0].familiar)exact(input);
  for(const input of specs[0].exclude)assert.notEqual(resolveAnswer(p,input).status,'exact',input);
  assert.equal(exact('James Bond').points,10);assert.equal(exact('Alec Leamas').points,100);
+ assert.equal(exact('Gru').label,'Gru');assert.equal(exact('Gru').points,10);
+ same('Gru','Felonious Gru');
+ assert.equal(resolveAnswer(p,'Felonius Gru').status,'matched');
 });
 
 test('actual identities and public codenames work without generated initials or actor-name shortcuts',()=>{
