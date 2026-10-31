@@ -473,3 +473,8 @@ id,subject,question,canonical_answers
 "authored-named-awards-prizes","world","Name a real named award, prize, medal or trophy.","1793"
 "authored-holidays-observances","world","Name a holiday, traditional festival or recognized observance.","359"
 "authored-fictional-spies","culture","Name a spy or secret agent from fiction.","318"
+"authored-j-cole-songs","music","Name a song by J. Cole.","295"
+"authored-j-cole-projects","music","Name a J. Cole album, mixtape or EP.","20"
+"authored-j-cole-collaborators","music","Name another artist credited on a song with J. Cole.","124"
+"authored-j-cole-forest-hills-songs","music","Name a track on J. Cole’s 2014 Forest Hills Drive.","21"
+"authored-j-cole-born-sinner-songs","music","Name a track on J. Cole’s Born Sinner.","21"

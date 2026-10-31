@@ -1,0 +1,2528 @@
+{
+  "version": 1,
+  "questions": [
+    {
+      "id": "authored-j-cole-songs",
+      "concept": "j-cole-songs",
+      "family": "music",
+      "topic": "J. COLE",
+      "prompt": "Name a song by J. Cole.",
+      "scope": "Released song titles credited to J. Cole as a lead or vocal guest count, including mixtapes, released freestyles, collaborations and bonus tracks. Album names, production-only credits, unverified leaks and instrumental-only releases do not count. Clean/explicit, live and remix spellings of one title score once.",
+      "format": "cole-requested-set",
+      "rationale": "A deliberately requested five-question J. Cole set: a full artist catalog, project names, credited collaborators and two defining album tracklists. This small explicit themed request does not authorize artist × album/year/tag padding elsewhere. Factual metadata and independent familiar inputs are retained; aliases do not count as extra answers.",
+      "naturalFinite": false,
+      "familiar": [
+        "No Role Modelz",
+        "Wet Dreamz",
+        "Love Yourz",
+        "Power Trip",
+        "MIDDLE CHILD",
+        "Work Out",
+        "Neighbors",
+        "Deja Vu",
+        "Kevin's Heart",
+        "Crooked Smile",
+        "She Knows",
+        "Apparently",
+        "G.O.M.D",
+        "January 28th",
+        "A Tale Of 2 Citiez",
+        "Fire Squad",
+        "Lights Please",
+        "Lost Ones",
+        "Born Sinner",
+        "4 Your Eyez Only",
+        "a m a r i",
+        "m y . l i f e",
+        "p r i d e . i s . t h e . d e v i l",
+        "Johnny P's Caddy",
+        "All My Life",
+        "First Person Shooter",
+        "Under the Sun",
+        "Sacrifices",
+        "Can I Holla At Ya",
+        "Cole Summer",
+        "Kenny Lofton",
+        "Chris Tucker",
+        "3 Wishes",
+        "Heavens EP",
+        "The Fall-Off is Inevitable",
+        "No Sleeep",
+        "24K of Gold",
+        "Green Ranger",
+        "Looking for Trouble",
+        "Return of Simba",
+        "Get Free ColeWorld"
+      ],
+      "exclude": [
+        "HUMBLE.",
+        "SICKO MODE",
+        "KOD Album",
+        "Dreamville Records",
+        "To Pimp a Butterfly"
+      ],
+      "references": [
+        "https://music.apple.com/us/artist/j-cole/73705833",
+        "https://soundcloud.com/j-cole/sets/truly-yours-2",
+        "https://en.wikipedia.org/wiki/Truly_Yours_(EP)"
+      ],
+      "answers": {
+        "60": [
+          {
+            "label": "03’ Adolescence",
+            "aliases": [
+              "03’ Adolescence (Live)"
+            ]
+          },
+          {
+            "label": "1 0 0 . m i l ‘",
+            "aliases": []
+          },
+          {
+            "label": "1985 (Intro to \"The Fall Off\")",
+            "aliases": []
+          },
+          {
+            "label": "1993",
+            "aliases": [
+              "1993 (feat. Smino & Buddy)"
+            ]
+          },
+          {
+            "label": "29 Intro",
+            "aliases": []
+          },
+          {
+            "label": "2Face",
+            "aliases": []
+          },
+          {
+            "label": "3001",
+            "aliases": []
+          },
+          {
+            "label": "39 Intro",
+            "aliases": []
+          },
+          {
+            "label": "7 Minute Drill",
+            "aliases": []
+          },
+          {
+            "label": "90 Proof",
+            "aliases": []
+          },
+          {
+            "label": "9 5 . s o u t h",
+            "aliases": []
+          },
+          {
+            "label": "99 Build Freestyle",
+            "aliases": []
+          },
+          {
+            "label": "Adonis Interlude (The Montage)",
+            "aliases": []
+          },
+          {
+            "label": "Ain't That Some S***",
+            "aliases": [
+              "Ain't That Some S*** (Interlude)"
+            ]
+          },
+          {
+            "label": "Ain't That Some Shit",
+            "aliases": [
+              "Ain't That Some Shit (Interlude)"
+            ]
+          },
+          {
+            "label": "Album of the Year (Freestyle)",
+            "aliases": []
+          },
+          {
+            "label": "All I Want Is You",
+            "aliases": [
+              "All I Want Is You (feat. J.Cole)"
+            ]
+          },
+          {
+            "label": "and the whole world is the Ville",
+            "aliases": []
+          },
+          {
+            "label": "Animals",
+            "aliases": [
+              "Animals (feat. J. Cole) [Remix]"
+            ]
+          },
+          {
+            "label": "a p p l y i n g . p r e s s u r e",
+            "aliases": []
+          },
+          {
+            "label": "A Star Is Born",
+            "aliases": [
+              "A Star Is Born (feat. J. Cole)"
+            ]
+          },
+          {
+            "label": "ATM",
+            "aliases": []
+          },
+          {
+            "label": "Back to the Topic",
+            "aliases": []
+          },
+          {
+            "label": "Bad Girls Club",
+            "aliases": [
+              "Bad Girls Club (feat. J. Cole)"
+            ]
+          },
+          {
+            "label": "Before I'm Gone",
+            "aliases": []
+          },
+          {
+            "label": "Be Free",
+            "aliases": []
+          },
+          {
+            "label": "Best Friend - Friday Night Lights",
+            "aliases": []
+          },
+          {
+            "label": "Black Friday",
+            "aliases": []
+          },
+          {
+            "label": "Black Heaven",
+            "aliases": [
+              "Black Heaven (feat. Keyshia Cole & J. Cole)"
+            ]
+          },
+          {
+            "label": "Black Man in Hollywood",
+            "aliases": []
+          },
+          {
+            "label": "Blow for Blow",
+            "aliases": [
+              "Blow for Blow (feat. J. Cole)"
+            ]
+          },
+          {
+            "label": "Blow Up",
+            "aliases": []
+          },
+          {
+            "label": "Boblo Boat",
+            "aliases": [
+              "Boblo Boat (feat. J. Cole)"
+            ]
+          },
+          {
+            "label": "Bombs in the Ville/Hit the Gas",
+            "aliases": []
+          },
+          {
+            "label": "BRACKETS",
+            "aliases": []
+          },
+          {
+            "label": "Breakdown",
+            "aliases": []
+          },
+          {
+            "label": "Bronx Zoo Freestyle",
+            "aliases": []
+          },
+          {
+            "label": "Bunce Road Blues",
+            "aliases": []
+          },
+          {
+            "label": "Caged Bird",
+            "aliases": [
+              "Caged Bird (feat. Omen)"
+            ]
+          },
+          {
+            "label": "Can I Live",
+            "aliases": []
+          },
+          {
+            "label": "Can't Cry",
+            "aliases": []
+          },
+          {
+            "label": "Can't Get Enough",
+            "aliases": [
+              "Can't Get Enough (feat. Trey Songz)"
+            ]
+          },
+          {
+            "label": "Carolina On My Mind",
+            "aliases": [
+              "Carolina On My Mind (feat. Deacon)"
+            ]
+          },
+          {
+            "label": "Chaining Day",
+            "aliases": []
+          },
+          {
+            "label": "Change",
+            "aliases": []
+          },
+          {
+            "label": "Children of Men",
+            "aliases": [
+              "Children of Men (feat. J. Cole & Ink)"
+            ]
+          },
+          {
+            "label": "c l o s e",
+            "aliases": []
+          },
+          {
+            "label": "cLOUDs",
+            "aliases": []
+          },
+          {
+            "label": "Cold Blood",
+            "aliases": [
+              "Cold Blood (feat. J. Cole & Canei Finch)"
+            ]
+          },
+          {
+            "label": "Cole World",
+            "aliases": []
+          },
+          {
+            "label": "College Boy",
+            "aliases": []
+          },
+          {
+            "label": "Come Through and Chill",
+            "aliases": [
+              "Come Through and Chill (feat. J. Cole & Salaam Remi)"
+            ]
+          },
+          {
+            "label": "Cost Me a Lot",
+            "aliases": []
+          },
+          {
+            "label": "Cousins",
+            "aliases": []
+          },
+          {
+            "label": "Crocodile Tearz",
+            "aliases": []
+          },
+          {
+            "label": "Crunch Time",
+            "aliases": []
+          },
+          {
+            "label": "Daddy's Little Girl",
+            "aliases": []
+          },
+          {
+            "label": "Dead Presidents",
+            "aliases": []
+          },
+          {
+            "label": "Dead Presidents II",
+            "aliases": []
+          },
+          {
+            "label": "Die Together",
+            "aliases": []
+          },
+          {
+            "label": "Dollar And A Dream",
+            "aliases": []
+          },
+          {
+            "label": "Dollar and a Dream II",
+            "aliases": []
+          },
+          {
+            "label": "Dollar and a Dream III",
+            "aliases": []
+          },
+          {
+            "label": "Down Bad",
+            "aliases": [
+              "Down Bad (feat. JID, Bas, J. Cole, EARTHGANG & Young Nudy)"
+            ]
+          },
+          {
+            "label": "Dreams",
+            "aliases": [
+              "Dreams (feat. Brandon Hines)"
+            ]
+          },
+          {
+            "label": "Drum n Bass",
+            "aliases": []
+          },
+          {
+            "label": "Enchanted",
+            "aliases": []
+          },
+          {
+            "label": "everybody dies",
+            "aliases": []
+          },
+          {
+            "label": "Evil Ways",
+            "aliases": [
+              "Evil Ways (feat. J. Cole)"
+            ]
+          },
+          {
+            "label": "False Prophets",
+            "aliases": []
+          },
+          {
+            "label": "Family and Loyalty",
+            "aliases": [
+              "Family and Loyalty (feat. J. Cole)"
+            ]
+          },
+          {
+            "label": "Farewell",
+            "aliases": []
+          },
+          {
+            "label": "Feel Love",
+            "aliases": [
+              "Feel Love (feat. J. Cole)"
+            ]
+          },
+          {
+            "label": "Fever",
+            "aliases": []
+          },
+          {
+            "label": "Fitted Cap",
+            "aliases": [
+              "Fitted Cap (feat. J Cole)"
+            ]
+          },
+          {
+            "label": "Foldin Clothes",
+            "aliases": []
+          },
+          {
+            "label": "Folgers Crystals",
+            "aliases": []
+          },
+          {
+            "label": "Forbidden Fruit",
+            "aliases": [
+              "Forbidden Fruit (feat. Kendrick Lamar)"
+            ]
+          },
+          {
+            "label": "For Whom The Bell Tolls",
+            "aliases": []
+          },
+          {
+            "label": "Freedom of Speech",
+            "aliases": []
+          },
+          {
+            "label": "Free Fall",
+            "aliases": [
+              "Free Fall (feat. J. Cole)"
+            ]
+          },
+          {
+            "label": "Friday Night Lights",
+            "aliases": []
+          },
+          {
+            "label": "FRIENDS",
+            "aliases": [
+              "FRIENDS (feat. kiLL edward)"
+            ]
+          },
+          {
+            "label": "Get Away",
+            "aliases": []
+          },
+          {
+            "label": "God's Gift",
+            "aliases": []
+          },
+          {
+            "label": "Goin' Off",
+            "aliases": []
+          },
+          {
+            "label": "Golden Goose Freestyle",
+            "aliases": []
+          },
+          {
+            "label": "Grew Up Fast",
+            "aliases": []
+          },
+          {
+            "label": "Grippy",
+            "aliases": []
+          },
+          {
+            "label": "Grown Simba",
+            "aliases": []
+          },
+          {
+            "label": "Head Bussa",
+            "aliases": []
+          },
+          {
+            "label": "Heartache",
+            "aliases": []
+          },
+          {
+            "label": "Hello",
+            "aliases": [
+              "Hello (Live)"
+            ]
+          },
+          {
+            "label": "Higher",
+            "aliases": []
+          },
+          {
+            "label": "High for Hours",
+            "aliases": []
+          },
+          {
+            "label": "Hold It Down",
+            "aliases": []
+          },
+          {
+            "label": "Homecoming",
+            "aliases": []
+          },
+          {
+            "label": "Home for the Holidays",
+            "aliases": []
+          },
+          {
+            "label": "Home Soon",
+            "aliases": []
+          },
+          {
+            "label": "How Did I Get Here",
+            "aliases": [
+              "How Did I Get Here (feat. J. Cole)"
+            ]
+          },
+          {
+            "label": "h u n g e r . o n . h i l l s i d e",
+            "aliases": []
+          },
+          {
+            "label": "Huntin’ Wabbitz",
+            "aliases": []
+          },
+          {
+            "label": "H.Y.B.",
+            "aliases": []
+          },
+          {
+            "label": "I Get Up",
+            "aliases": []
+          },
+          {
+            "label": "I Love Her Again",
+            "aliases": []
+          },
+          {
+            "label": "Immortal",
+            "aliases": []
+          },
+          {
+            "label": "I'm On 2.0",
+            "aliases": [
+              "I'm On 2.0 (feat. J. Cole, Kendrick Lamar, B.o.B, Tyga, Gudda Gudda, Bun B & Mark Morrison)"
+            ]
+          },
+          {
+            "label": "I'm The Man",
+            "aliases": []
+          },
+          {
+            "label": "Interlude",
+            "aliases": []
+          },
+          {
+            "label": "Intermission / Lights Please / In The Morning / Nobody's Perfect",
+            "aliases": [
+              "Intermission / Lights Please / In The Morning / Nobody's Perfect (Live)"
+            ]
+          },
+          {
+            "label": "In the Morning",
+            "aliases": [
+              "In The Morning (feat. Drake)"
+            ]
+          },
+          {
+            "label": "Intro",
+            "aliases": [
+              "Intro (Live)"
+            ]
+          },
+          {
+            "label": "Intro (The Warm Up)",
+            "aliases": []
+          },
+          {
+            "label": "Is She Gon Pop",
+            "aliases": []
+          },
+          {
+            "label": "Jermaine's Interlude",
+            "aliases": [
+              "Jermaine's Interlude (feat. J. Cole)"
+            ]
+          },
+          {
+            "label": "Jodeci Freestyle",
+            "aliases": [
+              "Jodeci Freestyle (feat. J. Cole)"
+            ]
+          },
+          {
+            "label": "Judgement Day",
+            "aliases": []
+          },
+          {
+            "label": "Just Begun",
+            "aliases": [
+              "Just Begun (feat. Jay Electronica, J. Cole & Mos Def)",
+              "Just Begun (feat. Jay Electronica, J. Cole and Mos Def)"
+            ]
+          },
+          {
+            "label": "Just To Get By",
+            "aliases": []
+          },
+          {
+            "label": "Keep Heaven Dancing",
+            "aliases": []
+          },
+          {
+            "label": "Kerney Sermon",
+            "aliases": [
+              "Kerney Sermon (Skit)"
+            ]
+          },
+          {
+            "label": "Knock Knock",
+            "aliases": [
+              "The Warm Up - \"Knock Knock\""
+            ]
+          },
+          {
+            "label": "KOD",
+            "aliases": []
+          },
+          {
+            "label": "Ladies",
+            "aliases": [
+              "The Warm Up - \"Ladies\" (feat. Lee Fields & The Expressions)"
+            ]
+          },
+          {
+            "label": "LAnd of the Snakes",
+            "aliases": []
+          },
+          {
+            "label": "Last Call",
+            "aliases": []
+          },
+          {
+            "label": "Legacy",
+            "aliases": []
+          },
+          {
+            "label": "l e t . g o . m y . h a n d",
+            "aliases": []
+          },
+          {
+            "label": "Let Me Calm Down",
+            "aliases": [
+              "Let Me Calm Down (feat. J. Cole)"
+            ]
+          },
+          {
+            "label": "Let Me Calm Down [Extended Version]",
+            "aliases": [
+              "Let Me Calm Down (feat. J. Cole) [Extended Version]"
+            ]
+          },
+          {
+            "label": "Let Nas Down",
+            "aliases": [
+              "Let Nas Down (Remix)"
+            ]
+          },
+          {
+            "label": "Life Sentence",
+            "aliases": []
+          },
+          {
+            "label": "Lil' Ghetto N***a",
+            "aliases": []
+          },
+          {
+            "label": "Lion King on Ice",
+            "aliases": []
+          },
+          {
+            "label": "LONDON",
+            "aliases": []
+          },
+          {
+            "label": "Lonely at the Top",
+            "aliases": [
+              "Lonely at the Top (Bonus)"
+            ]
+          },
+          {
+            "label": "Losing My Balance (Bonus Track)",
+            "aliases": []
+          },
+          {
+            "label": "Love Me Not",
+            "aliases": []
+          },
+          {
+            "label": "Man Up Above",
+            "aliases": []
+          },
+          {
+            "label": "May the Bitter Man Win",
+            "aliases": [
+              "May the Bitter Man Win (feat. J. Cole)"
+            ]
+          },
+          {
+            "label": "Miles",
+            "aliases": [
+              "Miles (feat. Bone Thugs-N-Harmony)"
+            ]
+          },
+          {
+            "label": "Miss America",
+            "aliases": []
+          },
+          {
+            "label": "Mo Money",
+            "aliases": [
+              "Mo Money (Interlude)"
+            ]
+          },
+          {
+            "label": "Motiv8",
+            "aliases": []
+          },
+          {
+            "label": "Mr. Nice Watch",
+            "aliases": [
+              "Mr. Nice Watch (feat. JAŸ-Z)"
+            ]
+          },
+          {
+            "label": "My Boy [Freestyle]",
+            "aliases": [
+              "My Boy (feat. J. Cole) [Freestyle]"
+            ]
+          },
+          {
+            "label": "Never Told",
+            "aliases": []
+          },
+          {
+            "label": "New York Times",
+            "aliases": [
+              "New York Times (feat. 50 Cent & Bas)"
+            ]
+          },
+          {
+            "label": "Night Job",
+            "aliases": [
+              "Night Job (feat. J. Cole)"
+            ]
+          },
+          {
+            "label": "Nobody's Perfect",
+            "aliases": [
+              "Nobody's Perfect (feat. Missy Elliott)"
+            ]
+          },
+          {
+            "label": "Note To Self",
+            "aliases": []
+          },
+          {
+            "label": "Nothin for the Radio",
+            "aliases": [
+              "Nothin for the Radio (feat. J. Cole)"
+            ]
+          },
+          {
+            "label": "N****z Know",
+            "aliases": []
+          },
+          {
+            "label": "Obviously",
+            "aliases": []
+          },
+          {
+            "label": "Ocean Way",
+            "aliases": [
+              "Ocean Way (Bonus)"
+            ]
+          },
+          {
+            "label": "Off Deez",
+            "aliases": []
+          },
+          {
+            "label": "Oh Wow...Swerve",
+            "aliases": [
+              "Oh Wow...Swerve (feat. Zoink Gang, KEY! & Maxo Kream)"
+            ]
+          },
+          {
+            "label": "Old Dog",
+            "aliases": []
+          },
+          {
+            "label": "Once an Addict",
+            "aliases": [
+              "Once an Addict (Interlude)"
+            ]
+          },
+          {
+            "label": "Only Wanna Give It to You",
+            "aliases": [
+              "Only Wanna Give It to You (feat. J. Cole)"
+            ]
+          },
+          {
+            "label": "Only You",
+            "aliases": []
+          },
+          {
+            "label": "on the street",
+            "aliases": []
+          },
+          {
+            "label": "OSOM",
+            "aliases": [
+              "OSOM (feat. J. Cole)"
+            ]
+          },
+          {
+            "label": "Party",
+            "aliases": [
+              "Party (feat. J Cole)"
+            ]
+          },
+          {
+            "label": "Passport Bros",
+            "aliases": []
+          },
+          {
+            "label": "Photograph",
+            "aliases": []
+          },
+          {
+            "label": "Pi",
+            "aliases": [
+              "Pi (feat. Daylyt & Ab-Soul)"
+            ]
+          },
+          {
+            "label": "Plain",
+            "aliases": []
+          },
+          {
+            "label": "Planez",
+            "aliases": [
+              "Planez (feat. J. Cole)"
+            ]
+          },
+          {
+            "label": "Poke It Out",
+            "aliases": [
+              "Poke It Out (feat. J. Cole)"
+            ]
+          },
+          {
+            "label": "Poor Thang",
+            "aliases": []
+          },
+          {
+            "label": "Port Antonio",
+            "aliases": []
+          },
+          {
+            "label": "Premeditated Murder",
+            "aliases": []
+          },
+          {
+            "label": "Pretty Little Fears",
+            "aliases": [
+              "Pretty Little Fears (feat. J. Cole)"
+            ]
+          },
+          {
+            "label": "Pricey",
+            "aliases": [
+              "Pricey (feat. Young Dro & Gucci Mane)"
+            ]
+          },
+          {
+            "label": "p u n c h i n ‘ . t h e . c l o c k",
+            "aliases": []
+          },
+          {
+            "label": "Purple Emoji",
+            "aliases": [
+              "Purple Emoji (feat. J. Cole)"
+            ]
+          },
+          {
+            "label": "Quik Stop",
+            "aliases": []
+          },
+          {
+            "label": "Quote Me",
+            "aliases": []
+          },
+          {
+            "label": "Raggamuffin",
+            "aliases": [
+              "Raggamuffin (feat. J. Cole) [Remix]"
+            ]
+          },
+          {
+            "label": "Rags To Riches (At The Beep)",
+            "aliases": []
+          },
+          {
+            "label": "Rather Be With You (Vagina Is for Lovers)",
+            "aliases": [
+              "Rather Be With You (Vagina Is for Lovers) {feat. J. Cole and Currensy}"
+            ]
+          },
+          {
+            "label": "Ready ‘24",
+            "aliases": [
+              "Ready ‘24 (feat. Cam’ron)"
+            ]
+          },
+          {
+            "label": "Red Leather",
+            "aliases": []
+          },
+          {
+            "label": "Relaxation",
+            "aliases": [
+              "Relaxation (feat. J. Cole & Omen)"
+            ]
+          },
+          {
+            "label": "Rembrandt...Run It Back",
+            "aliases": [
+              "Rembrandt...Run It Back (feat. Vince Staples)"
+            ]
+          },
+          {
+            "label": "Rich N****z",
+            "aliases": []
+          },
+          {
+            "label": "Rise Above",
+            "aliases": []
+          },
+          {
+            "label": "Rise and Shine",
+            "aliases": []
+          },
+          {
+            "label": "Royal Flush",
+            "aliases": [
+              "The Warm Up - \"Royal Flush\""
+            ]
+          },
+          {
+            "label": "Run A Train",
+            "aliases": []
+          },
+          {
+            "label": "Runaway",
+            "aliases": []
+          },
+          {
+            "label": "SAFETY",
+            "aliases": []
+          },
+          {
+            "label": "Say Na",
+            "aliases": [
+              "Say Na (feat. J. Cole)"
+            ]
+          },
+          {
+            "label": "Scared Money",
+            "aliases": [
+              "Scared Money (feat. J. Cole & Moneybagg Yo)"
+            ]
+          },
+          {
+            "label": "School Daze",
+            "aliases": []
+          },
+          {
+            "label": "See World",
+            "aliases": []
+          },
+          {
+            "label": "Shea Butter Baby",
+            "aliases": []
+          },
+          {
+            "label": "She's Mine, Pt. 1",
+            "aliases": []
+          },
+          {
+            "label": "She's Mine, Pt. 2",
+            "aliases": []
+          },
+          {
+            "label": "Sideline Story",
+            "aliases": []
+          },
+          {
+            "label": "Simba",
+            "aliases": []
+          },
+          {
+            "label": "Snow on tha Bluff",
+            "aliases": []
+          },
+          {
+            "label": "Sojourner",
+            "aliases": [
+              "Sojourner (feat. J. Cole)"
+            ]
+          },
+          {
+            "label": "Sparks Will Fly",
+            "aliases": [
+              "Sparks Will Fly (feat. Jhené Aiko)"
+            ]
+          },
+          {
+            "label": "Split You Up",
+            "aliases": []
+          },
+          {
+            "label": "Stay",
+            "aliases": []
+          },
+          {
+            "label": "Stealth Mode",
+            "aliases": []
+          },
+          {
+            "label": "Stick",
+            "aliases": [
+              "Stick (feat. Kenny Mason & Sheck Wes)",
+              "Stick (feat. Sheck Wes)"
+            ]
+          },
+          {
+            "label": "Stickz N Stonez",
+            "aliases": []
+          },
+          {
+            "label": "St. Tropez",
+            "aliases": [
+              "Saint Tropez",
+              "St. Tropez (Live)"
+            ]
+          },
+          {
+            "label": "Sunset",
+            "aliases": [
+              "Sunset (feat. Young Nudy)"
+            ]
+          }
+        ],
+        "30": [
+          {
+            "label": "24K of Gold",
+            "aliases": [
+              "24 Karat of Gold"
+            ]
+          },
+          {
+            "label": "3 Wishes",
+            "aliases": []
+          },
+          {
+            "label": "4 Your Eyez Only",
+            "aliases": []
+          },
+          {
+            "label": "All My Life",
+            "aliases": [
+              "All My Life (feat. J. Cole)"
+            ]
+          },
+          {
+            "label": "a m a r i",
+            "aliases": []
+          },
+          {
+            "label": "Apparently",
+            "aliases": [
+              "Apparently (Live)"
+            ]
+          },
+          {
+            "label": "A Tale Of 2 Citiez",
+            "aliases": [
+              "A Tale Of 2 Citiez (Live)",
+              "A Tale of 2 Cities",
+              "A Tale of Two Cities"
+            ]
+          },
+          {
+            "label": "Born Sinner",
+            "aliases": [
+              "Born Sinner (feat. James Fauntleroy)"
+            ]
+          },
+          {
+            "label": "Can I Holla At Ya",
+            "aliases": []
+          },
+          {
+            "label": "Chris Tucker",
+            "aliases": []
+          },
+          {
+            "label": "Cole Summer",
+            "aliases": []
+          },
+          {
+            "label": "Crooked Smile",
+            "aliases": [
+              "Crooked Smile (feat. TLC)"
+            ]
+          },
+          {
+            "label": "Deja Vu",
+            "aliases": []
+          },
+          {
+            "label": "Fire Squad",
+            "aliases": [
+              "Fire Squad (Live)"
+            ]
+          },
+          {
+            "label": "First Person Shooter",
+            "aliases": [
+              "First Person Shooter (feat. J. Cole)"
+            ]
+          },
+          {
+            "label": "Get Free ColeWorld",
+            "aliases": [
+              "Get Free"
+            ]
+          },
+          {
+            "label": "G.O.M.D",
+            "aliases": [
+              "G.O.M.D (Live)"
+            ]
+          },
+          {
+            "label": "Green Ranger",
+            "aliases": []
+          },
+          {
+            "label": "Heavens EP",
+            "aliases": []
+          },
+          {
+            "label": "January 28th",
+            "aliases": [
+              "January 28",
+              "January 28th (Live)"
+            ]
+          },
+          {
+            "label": "Johnny P's Caddy",
+            "aliases": []
+          },
+          {
+            "label": "Kenny Lofton",
+            "aliases": []
+          },
+          {
+            "label": "Kevin's Heart",
+            "aliases": []
+          },
+          {
+            "label": "Lights Please",
+            "aliases": []
+          },
+          {
+            "label": "Looking for Trouble",
+            "aliases": []
+          },
+          {
+            "label": "Lost Ones",
+            "aliases": []
+          },
+          {
+            "label": "m y . l i f e",
+            "aliases": []
+          },
+          {
+            "label": "Neighbors",
+            "aliases": []
+          },
+          {
+            "label": "No Sleeep",
+            "aliases": [
+              "No Sleep"
+            ]
+          },
+          {
+            "label": "p r i d e . i s . t h e . d e v i l",
+            "aliases": []
+          },
+          {
+            "label": "Return of Simba",
+            "aliases": []
+          },
+          {
+            "label": "Sacrifices",
+            "aliases": [
+              "Sacrifices (feat. Smino & Saba)"
+            ]
+          },
+          {
+            "label": "She Knows",
+            "aliases": [
+              "She Knows (feat. Amber Coffman & Cults)"
+            ]
+          },
+          {
+            "label": "The Fall-Off is Inevitable",
+            "aliases": []
+          },
+          {
+            "label": "Under the Sun",
+            "aliases": [
+              "Under the Sun (feat. DaBaby)"
+            ]
+          }
+        ],
+        "10": [
+          {
+            "label": "Love Yourz",
+            "aliases": [
+              "Love Yours",
+              "Love Yourz (Live)"
+            ]
+          },
+          {
+            "label": "MIDDLE CHILD",
+            "aliases": []
+          },
+          {
+            "label": "No Role Modelz",
+            "aliases": [
+              "No Role Models",
+              "No Role Modelz (Live)"
+            ]
+          },
+          {
+            "label": "Power Trip",
+            "aliases": [
+              "Power Trip (feat. Miguel)"
+            ]
+          },
+          {
+            "label": "Wet Dreamz",
+            "aliases": [
+              "Wet Dreams",
+              "Wet Dreamz (Live)"
+            ]
+          },
+          {
+            "label": "Work Out",
+            "aliases": []
+          }
+        ],
+        "85": [
+          {
+            "label": "Tears for ODB",
+            "aliases": []
+          },
+          {
+            "label": "The Autograph",
+            "aliases": []
+          },
+          {
+            "label": "The Badness",
+            "aliases": []
+          },
+          {
+            "label": "t h e . c l i m b . b a c k",
+            "aliases": []
+          },
+          {
+            "label": "The Come Up",
+            "aliases": []
+          },
+          {
+            "label": "The Cure",
+            "aliases": []
+          },
+          {
+            "label": "The Cut Off",
+            "aliases": [
+              "The Cut Off (feat. kiLL edward)"
+            ]
+          },
+          {
+            "label": "The Jackie",
+            "aliases": [
+              "The Jackie (feat. Lil Tjay)"
+            ]
+          },
+          {
+            "label": "The Let Out",
+            "aliases": []
+          },
+          {
+            "label": "The London",
+            "aliases": [
+              "The London (feat. J. Cole & Travis Scott)"
+            ]
+          },
+          {
+            "label": "The Pessimist",
+            "aliases": [
+              "The Pessimist (feat. J. Cole)"
+            ]
+          },
+          {
+            "label": "There I Go",
+            "aliases": [
+              "There I Go (feat. J. Cole & Mike WiLL Made-It)"
+            ]
+          },
+          {
+            "label": "The Secret Recipe",
+            "aliases": []
+          },
+          {
+            "label": "The Villest",
+            "aliases": []
+          },
+          {
+            "label": "Throw It Up",
+            "aliases": []
+          },
+          {
+            "label": "Til' Infinity",
+            "aliases": []
+          },
+          {
+            "label": "Tko",
+            "aliases": [
+              "Tko (feat. J Cole, A$AP Rocky & Pusha T) [Black Friday Remix]"
+            ]
+          },
+          {
+            "label": "Too Deep for the Intro",
+            "aliases": []
+          },
+          {
+            "label": "To Summer, From Cole (Audio Hug)",
+            "aliases": []
+          },
+          {
+            "label": "Trae Tha Truth in Ibiza",
+            "aliases": [
+              "Trae Tha Truth in Ibiza (Remix)"
+            ]
+          },
+          {
+            "label": "Trae The Truth in Ibiza",
+            "aliases": []
+          },
+          {
+            "label": "Tribe",
+            "aliases": []
+          },
+          {
+            "label": "Trippy",
+            "aliases": [
+              "Trippy (feat. J. Cole)"
+            ]
+          },
+          {
+            "label": "Trouble",
+            "aliases": [
+              "Trouble (Remix) [feat. Wale, Trey Songz, T-Pain, J. Cole & DJ Bay Bay]",
+              "Trouble (feat. J Cole)"
+            ]
+          },
+          {
+            "label": "Two Six",
+            "aliases": []
+          },
+          {
+            "label": "Undercover",
+            "aliases": [
+              "Undercover (feat. Chris Brown & J Cole)"
+            ]
+          },
+          {
+            "label": "Villematic",
+            "aliases": []
+          },
+          {
+            "label": "Ville Mentality",
+            "aliases": []
+          },
+          {
+            "label": "Villuminati",
+            "aliases": []
+          },
+          {
+            "label": "Water Break",
+            "aliases": [
+              "Water Break (Interlude)"
+            ]
+          },
+          {
+            "label": "Welcome",
+            "aliases": []
+          },
+          {
+            "label": "What If",
+            "aliases": []
+          },
+          {
+            "label": "Where's Jermaine?",
+            "aliases": [
+              "Where's Jermaine? (Skit)"
+            ]
+          },
+          {
+            "label": "Who Dat",
+            "aliases": []
+          },
+          {
+            "label": "WHO TF IZ U",
+            "aliases": []
+          },
+          {
+            "label": "Window Pain (Outro)",
+            "aliases": []
+          },
+          {
+            "label": "Winter Storm Freestyle",
+            "aliases": []
+          },
+          {
+            "label": "Winter Wonderland",
+            "aliases": []
+          },
+          {
+            "label": "World Is Empty",
+            "aliases": []
+          },
+          {
+            "label": "You Got It",
+            "aliases": [
+              "You Got It (feat. Wale)"
+            ]
+          },
+          {
+            "label": "Your Heart",
+            "aliases": []
+          }
+        ],
+        "100": [
+          {
+            "label": "Visionz of Home",
+            "aliases": []
+          }
+        ]
+      }
+    },
+    {
+      "id": "authored-j-cole-projects",
+      "concept": "j-cole-projects",
+      "family": "music",
+      "topic": "J. COLE",
+      "prompt": "Name a J. Cole album, mixtape or EP.",
+      "scope": "J. Cole studio albums, mixtapes, EPs, live albums and the Dreamville compilation projects count. Lewis Street, his two-song release, counts. Deluxe editions share their base project. A standalone one-song single, fan compilation, concert tour or podcast does not count.",
+      "format": "cole-requested-set",
+      "rationale": "A deliberately requested five-question J. Cole set: a full artist catalog, project names, credited collaborators and two defining album tracklists. This small explicit themed request does not authorize artist × album/year/tag padding elsewhere. Factual metadata and independent familiar inputs are retained; aliases do not count as extra answers.",
+      "naturalFinite": true,
+      "familiar": [
+        "2014 Forest Hills Drive",
+        "Born Sinner",
+        "KOD",
+        "The Off-Season",
+        "4 Your Eyez Only",
+        "Cole World",
+        "Friday Night Lights",
+        "The Warm Up",
+        "The Come Up",
+        "Might Delete Later",
+        "Truly Yours",
+        "Truly Yours 2",
+        "The Fall-Off"
+      ],
+      "exclude": [
+        "No Role Modelz",
+        "DAMN.",
+        "Inevitable",
+        "The Blow Up",
+        "The Fall-Off World Tour"
+      ],
+      "references": [
+        "https://music.apple.com/us/artist/j-cole/73705833",
+        "https://soundcloud.com/j-cole/sets/truly-yours-2",
+        "https://en.wikipedia.org/wiki/J._Cole_discography"
+      ],
+      "answers": {
+        "10": [
+          {
+            "label": "Cole World: The Sideline Story",
+            "aliases": [
+              "Cole World",
+              "The Sideline Story"
+            ]
+          },
+          {
+            "label": "Born Sinner",
+            "aliases": [
+              "Truly Yours 3",
+              "Truly Yours III"
+            ]
+          },
+          {
+            "label": "2014 Forest Hills Drive",
+            "aliases": [
+              "Forest Hills Drive"
+            ]
+          },
+          {
+            "label": "4 Your Eyez Only",
+            "aliases": [
+              "For Your Eyes Only",
+              "4 Your Eyes Only"
+            ]
+          },
+          {
+            "label": "KOD",
+            "aliases": []
+          },
+          {
+            "label": "The Off-Season",
+            "aliases": [
+              "The Off Season"
+            ]
+          }
+        ],
+        "30": [
+          {
+            "label": "The Fall-Off",
+            "aliases": [
+              "The Fall Off"
+            ]
+          },
+          {
+            "label": "The Come Up",
+            "aliases": [
+              "The Come Up Mixtape Vol. 1"
+            ]
+          },
+          {
+            "label": "The Warm Up",
+            "aliases": []
+          },
+          {
+            "label": "Friday Night Lights",
+            "aliases": []
+          },
+          {
+            "label": "Might Delete Later",
+            "aliases": []
+          },
+          {
+            "label": "Truly Yours",
+            "aliases": [
+              "Truly Yours 1"
+            ]
+          },
+          {
+            "label": "Truly Yours 2",
+            "aliases": [
+              "Truly Yours II"
+            ]
+          }
+        ],
+        "60": [
+          {
+            "label": "Lewis Street",
+            "aliases": []
+          },
+          {
+            "label": "Birthday Blizzard ‘26",
+            "aliases": [
+              "Birthday Blizzard 26"
+            ]
+          },
+          {
+            "label": "Revenge of the Dreamers",
+            "aliases": [
+              "Revenge of the Dreamers 1"
+            ]
+          },
+          {
+            "label": "Revenge of the Dreamers II",
+            "aliases": [
+              "Revenge of the Dreamers 2"
+            ]
+          },
+          {
+            "label": "Revenge of the Dreamers III",
+            "aliases": [
+              "Revenge of the Dreamers 3",
+              "Revenge of the Dreamers III: Director's Cut"
+            ]
+          },
+          {
+            "label": "D-Day: A Gangsta Grillz Mixtape",
+            "aliases": [
+              "D-Day",
+              "D Day"
+            ]
+          }
+        ],
+        "100": [
+          {
+            "label": "Forest Hills Drive: Live from Fayetteville, NC",
+            "aliases": [
+              "Forest Hills Drive Live",
+              "Live from Fayetteville"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "authored-j-cole-collaborators",
+      "concept": "j-cole-collaborators",
+      "family": "music",
+      "topic": "J. COLE",
+      "prompt": "Name another artist credited on a song with J. Cole.",
+      "scope": "Another named lead or featured artist on a released recording with J. Cole counts, including groups and credited producer-artists. Production or songwriting credit alone, an uncredited sample, a group member inferred from a group credit, and J. Cole’s own aliases do not count.",
+      "format": "cole-requested-set",
+      "rationale": "A deliberately requested five-question J. Cole set: a full artist catalog, project names, credited collaborators and two defining album tracklists. This small explicit themed request does not authorize artist × album/year/tag padding elsewhere. Factual metadata and independent familiar inputs are retained; aliases do not count as extra answers.",
+      "naturalFinite": false,
+      "familiar": [
+        "Drake",
+        "Kendrick Lamar",
+        "21 Savage",
+        "Miguel",
+        "Lil Baby",
+        "Bas",
+        "JID",
+        "Ari Lennox",
+        "TLC",
+        "Missy Elliott",
+        "Jay-Z",
+        "Jeezy",
+        "Nas",
+        "2 Chainz",
+        "BIA",
+        "Beyoncé",
+        "Smino",
+        "Summer Walker",
+        "Lil Durk",
+        "Kanye West",
+        "Big Sean",
+        "Lil Wayne",
+        "Janet Jackson"
+      ],
+      "exclude": [
+        "J. Cole",
+        "kiLL edward",
+        "Taylor Swift",
+        "Eminem",
+        "Dreamville Records"
+      ],
+      "references": [
+        "https://music.apple.com/us/artist/j-cole/73705833",
+        "https://music.apple.com/us/album/born-sinner-deluxe-version/1529510479",
+        "https://soundcloud.com/j-cole/sets/truly-yours-2"
+      ],
+      "answers": {
+        "10": [
+          {
+            "label": "21 Savage",
+            "aliases": []
+          },
+          {
+            "label": "Bas",
+            "aliases": []
+          },
+          {
+            "label": "Drake",
+            "aliases": []
+          },
+          {
+            "label": "Kendrick Lamar",
+            "aliases": []
+          },
+          {
+            "label": "Lil Baby",
+            "aliases": []
+          },
+          {
+            "label": "Miguel",
+            "aliases": []
+          }
+        ],
+        "30": [
+          {
+            "label": "2 Chainz",
+            "aliases": []
+          },
+          {
+            "label": "Ari Lennox",
+            "aliases": []
+          },
+          {
+            "label": "Beyoncé",
+            "aliases": []
+          },
+          {
+            "label": "BIA",
+            "aliases": []
+          },
+          {
+            "label": "Big Sean",
+            "aliases": []
+          },
+          {
+            "label": "Janet Jackson",
+            "aliases": []
+          },
+          {
+            "label": "Jay-Z",
+            "aliases": []
+          },
+          {
+            "label": "Jeezy",
+            "aliases": [
+              "Young Jeezy"
+            ]
+          },
+          {
+            "label": "JID",
+            "aliases": []
+          },
+          {
+            "label": "Kanye West",
+            "aliases": [
+              "Ye"
+            ]
+          },
+          {
+            "label": "Lil Durk",
+            "aliases": []
+          },
+          {
+            "label": "Lil Wayne",
+            "aliases": []
+          },
+          {
+            "label": "Missy Elliott",
+            "aliases": []
+          },
+          {
+            "label": "Nas",
+            "aliases": []
+          },
+          {
+            "label": "Smino",
+            "aliases": []
+          },
+          {
+            "label": "Summer Walker",
+            "aliases": []
+          },
+          {
+            "label": "TLC",
+            "aliases": []
+          }
+        ],
+        "60": [
+          {
+            "label": "50 Cent",
+            "aliases": []
+          },
+          {
+            "label": "6LACK",
+            "aliases": []
+          },
+          {
+            "label": "9th Wonder",
+            "aliases": []
+          },
+          {
+            "label": "A$AP Rocky",
+            "aliases": [
+              "ASAP Rocky"
+            ]
+          },
+          {
+            "label": "Ab-Soul",
+            "aliases": []
+          },
+          {
+            "label": "Amber Coffman",
+            "aliases": []
+          },
+          {
+            "label": "Anderson .Paak",
+            "aliases": []
+          },
+          {
+            "label": "Benny the Butcher",
+            "aliases": []
+          },
+          {
+            "label": "Big K.R.I.T.",
+            "aliases": []
+          },
+          {
+            "label": "B.o.B",
+            "aliases": []
+          },
+          {
+            "label": "Bone Thugs-N-Harmony",
+            "aliases": []
+          },
+          {
+            "label": "Boosie Badazz",
+            "aliases": []
+          },
+          {
+            "label": "Brandon Hines",
+            "aliases": []
+          },
+          {
+            "label": "Buddy",
+            "aliases": []
+          },
+          {
+            "label": "Bun B",
+            "aliases": []
+          },
+          {
+            "label": "Burna Boy",
+            "aliases": []
+          },
+          {
+            "label": "Cam’ron",
+            "aliases": []
+          },
+          {
+            "label": "Canei Finch",
+            "aliases": []
+          },
+          {
+            "label": "Cash Cobain",
+            "aliases": []
+          },
+          {
+            "label": "Central Cee",
+            "aliases": []
+          },
+          {
+            "label": "Chris Brown",
+            "aliases": []
+          },
+          {
+            "label": "Cozz",
+            "aliases": []
+          },
+          {
+            "label": "Cults",
+            "aliases": []
+          },
+          {
+            "label": "Curren$y",
+            "aliases": [
+              "Currensy"
+            ]
+          },
+          {
+            "label": "CyHi the Prynce",
+            "aliases": [
+              "CyHi Da Prynce",
+              "Cyhi"
+            ]
+          },
+          {
+            "label": "DaBaby",
+            "aliases": []
+          },
+          {
+            "label": "Daylyt",
+            "aliases": []
+          },
+          {
+            "label": "Deacon",
+            "aliases": []
+          },
+          {
+            "label": "DJ Bay Bay",
+            "aliases": []
+          },
+          {
+            "label": "DJ Drama",
+            "aliases": []
+          },
+          {
+            "label": "DJ Khaled",
+            "aliases": []
+          },
+          {
+            "label": "EARTHGANG",
+            "aliases": []
+          },
+          {
+            "label": "Elle Varner",
+            "aliases": []
+          },
+          {
+            "label": "Erykah Badu",
+            "aliases": []
+          },
+          {
+            "label": "Fashawn",
+            "aliases": []
+          },
+          {
+            "label": "Future",
+            "aliases": []
+          },
+          {
+            "label": "Gang Starr",
+            "aliases": []
+          },
+          {
+            "label": "Gucci Mane",
+            "aliases": []
+          },
+          {
+            "label": "Gudda Gudda",
+            "aliases": []
+          },
+          {
+            "label": "Hi-Tek",
+            "aliases": []
+          },
+          {
+            "label": "Ink",
+            "aliases": []
+          },
+          {
+            "label": "Jadakiss",
+            "aliases": []
+          },
+          {
+            "label": "James Fauntleroy",
+            "aliases": []
+          },
+          {
+            "label": "Jay Electronica",
+            "aliases": []
+          },
+          {
+            "label": "Jay Rock",
+            "aliases": []
+          },
+          {
+            "label": "Jeremih",
+            "aliases": []
+          },
+          {
+            "label": "Jhené Aiko",
+            "aliases": []
+          },
+          {
+            "label": "j-hope",
+            "aliases": []
+          },
+          {
+            "label": "Joyner Lucas",
+            "aliases": []
+          },
+          {
+            "label": "Justin Timberlake",
+            "aliases": []
+          },
+          {
+            "label": "Kenny Mason",
+            "aliases": []
+          },
+          {
+            "label": "KEY!",
+            "aliases": []
+          },
+          {
+            "label": "Keyshia Cole",
+            "aliases": []
+          },
+          {
+            "label": "Lee Fields",
+            "aliases": []
+          },
+          {
+            "label": "Lil Tjay",
+            "aliases": []
+          },
+          {
+            "label": "Lil Yachty",
+            "aliases": []
+          },
+          {
+            "label": "Lute",
+            "aliases": []
+          },
+          {
+            "label": "Maejor",
+            "aliases": []
+          },
+          {
+            "label": "Major Lazer",
+            "aliases": []
+          },
+          {
+            "label": "Mark Morrison",
+            "aliases": []
+          },
+          {
+            "label": "Maroon 5",
+            "aliases": []
+          },
+          {
+            "label": "Maxo Kream",
+            "aliases": []
+          },
+          {
+            "label": "Meek Mill",
+            "aliases": []
+          },
+          {
+            "label": "Metro Boomin",
+            "aliases": []
+          },
+          {
+            "label": "Mike WiLL Made-It",
+            "aliases": []
+          },
+          {
+            "label": "Moneybagg Yo",
+            "aliases": []
+          },
+          {
+            "label": "Morray",
+            "aliases": []
+          },
+          {
+            "label": "Mos Def",
+            "aliases": [
+              "Yasiin Bey"
+            ]
+          },
+          {
+            "label": "Nicki Minaj",
+            "aliases": []
+          },
+          {
+            "label": "Offset",
+            "aliases": []
+          },
+          {
+            "label": "Omen",
+            "aliases": []
+          },
+          {
+            "label": "Petey Pablo",
+            "aliases": []
+          },
+          {
+            "label": "PJ",
+            "aliases": []
+          },
+          {
+            "label": "Pusha T",
+            "aliases": []
+          },
+          {
+            "label": "Rapsody",
+            "aliases": []
+          },
+          {
+            "label": "Rick Ross",
+            "aliases": []
+          },
+          {
+            "label": "Royce Da 5'9\"",
+            "aliases": []
+          },
+          {
+            "label": "Saba",
+            "aliases": []
+          },
+          {
+            "label": "Salaam Remi",
+            "aliases": []
+          },
+          {
+            "label": "Sean Garrett",
+            "aliases": []
+          },
+          {
+            "label": "Selah Sue",
+            "aliases": []
+          },
+          {
+            "label": "Sheck Wes",
+            "aliases": []
+          },
+          {
+            "label": "Talib Kweli",
+            "aliases": []
+          },
+          {
+            "label": "Tee Grizzley",
+            "aliases": []
+          },
+          {
+            "label": "Tems",
+            "aliases": []
+          }
+        ],
+        "85": [
+          {
+            "label": "The Expressions",
+            "aliases": []
+          },
+          {
+            "label": "T-Pain",
+            "aliases": []
+          },
+          {
+            "label": "Trae tha Truth",
+            "aliases": []
+          },
+          {
+            "label": "Travis Scott",
+            "aliases": []
+          },
+          {
+            "label": "Trey Songz",
+            "aliases": []
+          },
+          {
+            "label": "Ty Dolla $ign",
+            "aliases": [
+              "Ty Dolla Sign"
+            ]
+          },
+          {
+            "label": "Tyga",
+            "aliases": []
+          },
+          {
+            "label": "Vince Staples",
+            "aliases": []
+          },
+          {
+            "label": "Wale",
+            "aliases": []
+          },
+          {
+            "label": "YG",
+            "aliases": []
+          },
+          {
+            "label": "Yo Gotti",
+            "aliases": []
+          },
+          {
+            "label": "Young Dro",
+            "aliases": []
+          },
+          {
+            "label": "Young Nudy",
+            "aliases": []
+          },
+          {
+            "label": "Young Thug",
+            "aliases": []
+          },
+          {
+            "label": "Zoink Gang",
+            "aliases": []
+          }
+        ],
+        "100": [
+          {
+            "label": "Treasure Davis",
+            "aliases": []
+          }
+        ]
+      }
+    },
+    {
+      "id": "authored-j-cole-forest-hills-songs",
+      "concept": "j-cole-forest-hills-songs",
+      "family": "music",
+      "topic": "J. COLE",
+      "prompt": "Name a track on J. Cole’s 2014 Forest Hills Drive.",
+      "scope": "The complete original album and all eight 10 Year Anniversary bonus tracks count. Skits/intros count as tracks; live versions share the original title. Songs on other albums do not count.",
+      "format": "cole-requested-set",
+      "rationale": "A deliberately requested five-question J. Cole set: a full artist catalog, project names, credited collaborators and two defining album tracklists. This small explicit themed request does not authorize artist × album/year/tag padding elsewhere. Factual metadata and independent familiar inputs are retained; aliases do not count as extra answers.",
+      "naturalFinite": true,
+      "familiar": [
+        "No Role Modelz",
+        "Wet Dreamz",
+        "Love Yourz",
+        "Apparently",
+        "Fire Squad",
+        "January 28th",
+        "G.O.M.D",
+        "A Tale Of 2 Citiez",
+        "03’ Adolescence",
+        "St. Tropez",
+        "Hello",
+        "Note To Self",
+        "Home Soon"
+      ],
+      "exclude": [
+        "MIDDLE CHILD",
+        "Power Trip",
+        "Crooked Smile",
+        "Neighbors",
+        "The Fall-Off"
+      ],
+      "references": [
+        "https://music.apple.com/us/album/2014-forest-hills-drive-10-year-anniversary-edition/1786468896"
+      ],
+      "answers": {
+        "30": [
+          {
+            "label": "03’ Adolescence",
+            "aliases": [
+              "03 Adolescence",
+              "03 Adolescence"
+            ]
+          },
+          {
+            "label": "A Tale Of 2 Citiez",
+            "aliases": [
+              "A Tale of Two Cities",
+              "A Tale of 2 Cities"
+            ]
+          },
+          {
+            "label": "G.O.M.D",
+            "aliases": [
+              "GOMD"
+            ]
+          },
+          {
+            "label": "Hello",
+            "aliases": []
+          },
+          {
+            "label": "Home Soon",
+            "aliases": []
+          },
+          {
+            "label": "Note To Self",
+            "aliases": []
+          },
+          {
+            "label": "St. Tropez",
+            "aliases": [
+              "Saint Tropez"
+            ]
+          }
+        ],
+        "10": [
+          {
+            "label": "Apparently",
+            "aliases": []
+          },
+          {
+            "label": "Fire Squad",
+            "aliases": []
+          },
+          {
+            "label": "January 28th",
+            "aliases": [
+              "January 28"
+            ]
+          },
+          {
+            "label": "Love Yourz",
+            "aliases": [
+              "Love Yours"
+            ]
+          },
+          {
+            "label": "No Role Modelz",
+            "aliases": [
+              "No Role Models"
+            ]
+          },
+          {
+            "label": "Wet Dreamz",
+            "aliases": [
+              "Wet Dreams"
+            ]
+          }
+        ],
+        "60": [
+          {
+            "label": "Black Man in Hollywood",
+            "aliases": []
+          },
+          {
+            "label": "Die Together",
+            "aliases": []
+          },
+          {
+            "label": "Intro",
+            "aliases": []
+          },
+          {
+            "label": "Judgement Day",
+            "aliases": []
+          },
+          {
+            "label": "Miles",
+            "aliases": [
+              "Miles (feat. Bone Thugs-N-Harmony)"
+            ]
+          },
+          {
+            "label": "Obviously",
+            "aliases": []
+          },
+          {
+            "label": "Winter Wonderland",
+            "aliases": []
+          }
+        ],
+        "100": [
+          {
+            "label": "Keep Heaven Dancing",
+            "aliases": []
+          }
+        ]
+      }
+    },
+    {
+      "id": "authored-j-cole-born-sinner-songs",
+      "concept": "j-cole-born-sinner-songs",
+      "family": "music",
+      "topic": "J. COLE",
+      "prompt": "Name a track on J. Cole’s Born Sinner.",
+      "scope": "The complete standard album and the five deluxe bonus tracks (also called Truly Yours 3) count, including named skits and interludes. Other albums and the separate Truly Yours and Truly Yours 2 EPs do not count.",
+      "format": "cole-requested-set",
+      "rationale": "A deliberately requested five-question J. Cole set: a full artist catalog, project names, credited collaborators and two defining album tracklists. This small explicit themed request does not authorize artist × album/year/tag padding elsewhere. Factual metadata and independent familiar inputs are retained; aliases do not count as extra answers.",
+      "naturalFinite": true,
+      "familiar": [
+        "Power Trip",
+        "She Knows",
+        "Crooked Smile",
+        "Forbidden Fruit",
+        "Let Nas Down",
+        "Born Sinner",
+        "Villuminati",
+        "Land Of The Snakes",
+        "Chaining Day",
+        "Miss America",
+        "New York Times",
+        "Sparks Will Fly"
+      ],
+      "exclude": [
+        "No Role Modelz",
+        "Wet Dreamz",
+        "Cole Summer",
+        "Kenny Lofton",
+        "Neighbors"
+      ],
+      "references": [
+        "https://music.apple.com/us/album/born-sinner-deluxe-version/1529510479",
+        "https://dreamville.lnk.to/BornSinner"
+      ],
+      "answers": {
+        "60": [
+          {
+            "label": "Ain't That Some Shit",
+            "aliases": [
+              "Ain't That Some Shit (Interlude)"
+            ]
+          },
+          {
+            "label": "Is She Gon Pop",
+            "aliases": []
+          },
+          {
+            "label": "Kerney Sermon",
+            "aliases": [
+              "Kerney Sermon (Skit)"
+            ]
+          },
+          {
+            "label": "Mo Money",
+            "aliases": [
+              "Mo Money (Interlude)"
+            ]
+          },
+          {
+            "label": "N****z Know",
+            "aliases": []
+          },
+          {
+            "label": "Rich N****z",
+            "aliases": []
+          },
+          {
+            "label": "Runaway",
+            "aliases": []
+          },
+          {
+            "label": "Trouble",
+            "aliases": []
+          }
+        ],
+        "10": [
+          {
+            "label": "Born Sinner",
+            "aliases": [
+              "Born Sinner (feat. James Fauntleroy)"
+            ]
+          },
+          {
+            "label": "Crooked Smile",
+            "aliases": [
+              "Crooked Smile (feat. TLC)"
+            ]
+          },
+          {
+            "label": "Forbidden Fruit",
+            "aliases": [
+              "Forbidden Fruit (feat. Kendrick Lamar)"
+            ]
+          },
+          {
+            "label": "Let Nas Down",
+            "aliases": []
+          },
+          {
+            "label": "Power Trip",
+            "aliases": [
+              "Power Trip (feat. Miguel)"
+            ]
+          },
+          {
+            "label": "She Knows",
+            "aliases": [
+              "She Knows (feat. Amber Coffman & Cults)"
+            ]
+          }
+        ],
+        "30": [
+          {
+            "label": "Chaining Day",
+            "aliases": [
+              "Chaining Day"
+            ]
+          },
+          {
+            "label": "Land Of The Snakes",
+            "aliases": []
+          },
+          {
+            "label": "Miss America",
+            "aliases": []
+          },
+          {
+            "label": "New York Times",
+            "aliases": [
+              "New York Times (feat. 50 Cent & Bas)"
+            ]
+          },
+          {
+            "label": "Sparks Will Fly",
+            "aliases": [
+              "Sparks Will Fly (feat. Jhené Aiko)"
+            ]
+          },
+          {
+            "label": "Villuminati",
+            "aliases": []
+          }
+        ],
+        "100": [
+          {
+            "label": "Where's Jermaine?",
+            "aliases": [
+              "Where's Jermaine? (Skit)"
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

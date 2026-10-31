@@ -78,6 +78,18 @@ Draft saves are debounced; boundary changes and page exit flush progress immedia
 
 Serve the root of `main` using **Settings → Pages → Deploy from a branch**. There is no backend build. The empty `.nojekyll` file disables Jekyll processing. Daily, Practice and Endless need no backend. The new Puffer Party uses the configured Firebase project on its no-cost Spark plan; its public web configuration is bundled with the client.
 
+Puffer's pixel bailiff removes one heart when a living participant leaves the
+visible game tab for more than 1.5 seconds during a match. The room shares a
+named gavel attack and a floating −1 heart; a surviving player stays in the game.
+Lobbies, countdowns, finished matches and spectators are exempt. Window blur
+alone does not count, so browser chrome and sign-in popups do not report a tab
+switch. Minimizing the game or switching mobile apps can hide the document too.
+Authenticated players report through their own existing request node; the host
+adjudicates the heart loss and broadcasts it once. This is a social game rule
+based on browser visibility, not proof of cheating or tamper-proof anti-cheat.
+Reports are bound to the match, short returns preserve the grace period, and
+late returns preserve the absence if a host's background tab was suspended.
+
 ## Online rooms
 
 The new room service uses Firebase Authentication and Realtime Database. Database rules require the Google sign-in provider, bind player writes to their authenticated UID, protect request/response mailboxes and reserve game-state writes for the current host. Public directory entries omit private rooms and become stale when the host stops updating them. Google email and sign-in tokens are never sent to players. Daily, Practice and Endless remain playable as guests.
