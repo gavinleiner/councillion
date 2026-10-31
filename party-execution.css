@@ -1,0 +1,30 @@
+/* Pixel puffer bailiff: swim in, raise the gavel, pop one heart, retreat. */
+.puffer-sentence{position:absolute;inset:0;z-index:45;pointer-events:none;overflow:hidden;contain:layout paint}
+.puffer-sentenced>.player-buddy{visibility:hidden}
+.bailiff-puffer,.sentenced-buddy,.sentence-blood,.sentence-stain,.sentence-heart,.sentence-caption{position:absolute;left:var(--sentence-x);top:var(--sentence-y)}
+.bailiff-puffer{width:72px;height:70px;margin:-48px 0 0 -92px;animation:bailiff-approach 2.65s both;filter:drop-shadow(0 4px 0 #061725)}
+.bailiff-puffer>img{width:100%;height:100%;image-rendering:pixelated}
+.bailiff-gavel{position:absolute;width:48px;height:48px;right:-19px;top:-17px;transform-origin:25% 85%;animation:bailiff-strike 2.65s both}
+.sentenced-buddy{width:100px;height:90px;margin:-45px 0 0 -50px;animation:sentence-knock 2.65s both}
+.sentenced-buddy>.player-buddy{width:100%;height:100%;animation:none;visibility:visible}
+.sentenced-buddy>.player-buddy>:first-child{width:100%;height:100%;object-fit:contain}
+.sentence-blood{margin-top:-16px;z-index:3}
+.sentence-blood i{position:absolute;width:var(--bs);height:calc(var(--bs) * 1.6);background:var(--blood);box-shadow:1px 1px #541d30;animation:sentence-spatter 2.65s both;animation-timing-function:linear}
+.sentence-stain{width:24px;height:4px;margin:46px 0 0 -3px;background:#782636aa;box-shadow:9px 1px #922a3b88,-7px -1px #71263499,19px -1px #78263655;animation:sentence-stain 2.65s both}
+.sentence-wound{position:absolute;left:51%;top:40%;width:6px;height:4px;background:#b92c35;box-shadow:4px 2px #892533,1px 6px #c43b40,5px 10px #872634;animation:sentence-wound 2.65s both}
+.sentence-heart{left:clamp(40px,var(--sentence-x),calc(100% - 78px));font-size:31px;color:#ff8f9f;margin:-72px 0 0 14px;text-shadow:2px 3px #19243b;animation:sentence-heart 2.65s both}
+.sentence-heart small{font-size:20px;margin-left:5px;color:#fff4df}
+.sentence-caption{left:50%;top:var(--sentence-caption-y);translate:-50% 0;width:min(340px,calc(100% - 24px));padding:9px 14px;text-align:center;font-size:10px;letter-spacing:1px;color:#ffdc97;text-shadow:2px 2px #091d2e;background:#071c2eed;border:1px solid #e0bf6866;box-shadow:0 3px 0 #06162666;animation:sentence-caption 2.65s both}
+.sentence-caption b,.sentence-caption small{display:block}.sentence-caption b{font-size:22px;letter-spacing:0;margin-bottom:4px}.sentence-caption small{font-size:12px}
+.puffer-sentence:has(~.puffer-sentence) .sentence-caption{display:none}
+@keyframes bailiff-approach{0%{opacity:0;transform:translate(var(--approach),-30px) rotate(-15deg) scale(.7)}12%{opacity:1}29%,44%{transform:translate(0,0) rotate(0) scale(1)}48%{transform:translate(20px,0) rotate(12deg) scale(1.1)}56%,76%{opacity:1;transform:translate(0,0) rotate(-4deg) scale(1)}100%{opacity:0;transform:translate(var(--approach),-55px) rotate(-8deg) scale(.8)}}
+@keyframes bailiff-strike{0%,30%{transform:rotate(-20deg)}39%,45%{transform:translate(-4px,-10px) rotate(-115deg)}48%{transform:translate(10px,9px) rotate(37deg)}52%{transform:translate(2px,1px) rotate(15deg)}64%,100%{transform:rotate(-20deg)}}
+@keyframes sentence-knock{0%,47%{transform:translate(0,0) rotate(0)}49%{transform:translate(9px,-4px) rotate(16deg)}56%{transform:translate(var(--knock-x),-18px) rotate(37deg)}65%{transform:translate(var(--knock-x),12px) rotate(18deg)}70%{transform:translate(calc(var(--knock-x) * .7),4px) rotate(6deg)}80%{transform:translate(4px,0) rotate(-5deg)}94%,100%{transform:translate(0,0) rotate(0)}}
+@keyframes sentence-spatter{0%,47%{opacity:0;transform:translate(0,0) scale(.3)}49%{opacity:1;transform:translate(0,0) scale(1)}58%{opacity:1;transform:translate(var(--dx),var(--dy)) rotate(var(--br))}76%{opacity:.8;transform:translate(var(--ex),var(--ey)) rotate(var(--br)) scale(.8)}90%,100%{opacity:0;transform:translate(var(--ex),calc(var(--ey) + 16px)) scale(.5)}}
+@keyframes sentence-stain{0%,68%{opacity:0;scale:.3 1}76%,85%{opacity:.7;scale:1 1}100%{opacity:0;scale:1.4 1}}
+@keyframes sentence-wound{0%,47%{opacity:0}50%,73%{opacity:1}94%,100%{opacity:0}}
+@keyframes sentence-heart{0%,47%{opacity:0;transform:translateY(0)}52%{opacity:1;transform:translateY(-7px)}85%,100%{opacity:0;transform:translateY(-48px)}}
+@keyframes sentence-caption{0%,35%{opacity:0}48%,83%{opacity:1}100%{opacity:0}}
+.reduced-sentence .bailiff-puffer,.reduced-sentence .bailiff-gavel,.reduced-sentence .sentenced-buddy,.reduced-sentence .sentence-heart,.reduced-sentence .sentence-caption{animation:none}
+.reduced-sentence .sentence-blood,.reduced-sentence .sentence-stain,.reduced-sentence .sentence-wound{display:none}
+@media(prefers-reduced-motion:reduce){.puffer-sentence *{animation:none}.sentence-blood,.sentence-stain,.sentence-wound{display:none}}

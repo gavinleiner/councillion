@@ -93,3 +93,18 @@ export function disconnectPlayer(s,id,now=Date.now()){
  if(s.phase!=='lobby'&&s.phase!=='ended'&&!p.spectator&&p.hearts>0){s.eliminations??=[];p.eliminationOrder=s.eliminations.length;s.eliminations.push(p.id);p.forfeit=true;}
  p.hearts=0;if(s.phase==='lobby')s.players=s.players.filter(p=>p.id!==id);else if(s.phase!=='ended'&&!victory(s,now)&&s.players[s.turn]?.id===id){nextTurn(s);s.turnStartedAt=now;}s.notice=`${p.name} left the room.`;s.revision++;
 }
+export function finishPartyIfAlone(s,now=Date.now()){return victory(s,now);}
+export function sentenceTabSwitch(s,id,now=Date.now(),leftAt=now,finish=true){
+ const p=s.players.find(p=>p.id===id);
+ if(!['playing','burst'].includes(s.phase)||!s.matchId||!p?.connected||p.spectator||p.hearts<=0||s.focusPenalties?.[id]===leftAt)return false;
+ s.focusPenalties??={};s.focusPenalties[id]=leftAt;
+ p.hearts--;p.heartsLost=(p.heartsLost||0)+1;p.answerStreak=0;delete p.lastAnswer;
+ if(!p.hearts){s.eliminations??=[];p.eliminationOrder=s.eliminations.length;s.eliminations.push(id);}
+ s.executions=[...Object.values(s.executions??{}),{id:s.matchId+':'+id+':'+leftAt,player:id,at:now}].slice(-16);
+ // A brief new-category pause avoids hitting the same player again with an
+ // already expired fuse while the bailiff animation plays.
+ if(s.players[s.turn]?.id===id)nextTurn(s);
+ delete s.finalDuel;delete s.clutchFinish;s.phase='burst';s.nextAt=now+2800;s.deadline=0;
+ s.notice=`${p.name} tried to cheat. Puffer sentence: −1 heart.`;
+ if(finish)victory(s,now);s.revision++;return true;
+}

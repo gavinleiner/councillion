@@ -1,6 +1,6 @@
 {
-  "build": "91bccdc8deeb8c06",
-  "count": 474,
+  "build": "6ffb7c6b80541d9e",
+  "count": 479,
   "categories": [
     {
       "id": "group-q001",
@@ -3793,6 +3793,46 @@
       "group": "authored-whole-fictional-roles",
       "answerCount": 318,
       "scope": "Named fictional intelligence agents, spies, spymasters and documented clandestine/covert operatives from any medium count, including covert support agents and private fictional agencies. A secret identity, ordinary detective/police work, a group/show title, performer or an unnamed generic agent is not automatically a spy. Actual aliases share identity; different characters, clones and officeholders are not merged merely because they share a codename."
+    },
+    {
+      "id": "authored-j-cole-songs",
+      "prompt": "Name a song by J. Cole.",
+      "family": "music",
+      "group": "authored-cole-requested-set",
+      "answerCount": 295,
+      "scope": "Released song titles credited to J. Cole as a lead or vocal guest count, including mixtapes, released freestyles, collaborations and bonus tracks. Album names, production-only credits, unverified leaks and instrumental-only releases do not count. Clean/explicit, live and remix spellings of one title score once."
+    },
+    {
+      "id": "authored-j-cole-projects",
+      "prompt": "Name a J. Cole album, mixtape or EP.",
+      "family": "music",
+      "group": "authored-cole-requested-set",
+      "answerCount": 20,
+      "scope": "J. Cole studio albums, mixtapes, EPs, live albums and the Dreamville compilation projects count. Lewis Street, his two-song release, counts. Deluxe editions share their base project. A standalone one-song single, fan compilation, concert tour or podcast does not count."
+    },
+    {
+      "id": "authored-j-cole-collaborators",
+      "prompt": "Name another artist credited on a song with J. Cole.",
+      "family": "music",
+      "group": "authored-cole-requested-set",
+      "answerCount": 124,
+      "scope": "Another named lead or featured artist on a released recording with J. Cole counts, including groups and credited producer-artists. Production or songwriting credit alone, an uncredited sample, a group member inferred from a group credit, and J. Cole’s own aliases do not count."
+    },
+    {
+      "id": "authored-j-cole-forest-hills-songs",
+      "prompt": "Name a track on J. Cole’s 2014 Forest Hills Drive.",
+      "family": "music",
+      "group": "authored-cole-requested-set",
+      "answerCount": 21,
+      "scope": "The complete original album and all eight 10 Year Anniversary bonus tracks count. Skits/intros count as tracks; live versions share the original title. Songs on other albums do not count."
+    },
+    {
+      "id": "authored-j-cole-born-sinner-songs",
+      "prompt": "Name a track on J. Cole’s Born Sinner.",
+      "family": "music",
+      "group": "authored-cole-requested-set",
+      "answerCount": 21,
+      "scope": "The complete standard album and the five deluxe bonus tracks (also called Truly Yours 3) count, including named skits and interludes. Other albums and the separate Truly Yours and Truly Yours 2 EPs do not count."
     }
   ]
 }

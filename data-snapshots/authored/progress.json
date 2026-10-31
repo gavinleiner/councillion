@@ -1,20 +1,20 @@
 {
   "target": 1000,
-  "authoredCandidates": 274,
-  "admittedAuthored": 247,
-  "normalPoolAdmitted": 474,
-  "remaining": 526,
+  "authoredCandidates": 279,
+  "admittedAuthored": 252,
+  "normalPoolAdmitted": 479,
+  "remaining": 521,
   "candidateFamilies": {
     "culture": 20,
     "everyday": 25,
     "food": 25,
     "gaming": 15,
-    "music": 31,
+    "music": 36,
     "nature": 30,
     "science": 28,
     "sports": 70,
     "world": 30
   },
-  "canonicalAnswerRows": 1790870,
-  "familiarAnswerChecks": 8303
+  "canonicalAnswerRows": 1791351,
+  "familiarAnswerChecks": 8405
 }
