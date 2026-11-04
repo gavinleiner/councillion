@@ -46,10 +46,10 @@ test('sports, console games and entertainment accept recognizable exact answers,
 test('the quality revision preserves today, records future replacement and keeps account-independent selections',()=>{
  const baseline=JSON.parse(read('data-snapshots/discovery/published-daily-prefix.json'));
  assert.deepEqual(FRESH_DAILY_IDS.slice(0,7),baseline.slice(0,7));assert.equal(new Set(FRESH_DAILY_IDS).size,FRESH_DAILY_IDS.length);assert.ok(FRESH_DAILY_IDS.length>=14*7);
- const calendar=JSON.parse(read('daily-schedule.json'));assert.deepEqual(calendar.ids,FRESH_DAILY_IDS);assert.ok(calendar.revisions.some(r=>r.from==='2026-10-24'&&r.quality==='20261023-group5000-v1'));for(const id of FRESH_DAILY_IDS.slice(14))assert.ok(MIXED_PACKS.some(p=>p.id===id));
+ const calendar=JSON.parse(read('daily-schedule.json'));assert.deepEqual(calendar.ids,FRESH_DAILY_IDS);assert.ok(calendar.revisions.some(r=>r.from==='2026-10-24'&&r.quality==='20261023-group5000-v1'));for(const id of FRESH_DAILY_IDS.slice(91))assert.ok(MIXED_PACKS.some(p=>p.id===id));
  assert.deepEqual(dailyPacks('2026-10-23').map(p=>p.id),['fun-terraria','fun-sea-life','fun-tv','occupation-titles','fun-elements','catalog-snacks','fun-water-world']);
  const sports=new Set(PARTY_PACKS.filter(p=>p.family==='sports').map(p=>p.id));
- for(let seed=1;seed<=4;seed++){const deck=partyDeck(random(seed));assert.equal(deck.length,PARTY_PACKS.length);assert.equal(new Set(deck).size,deck.length);assert.ok(deck.some(id=>sports.has(id)));const seen=deck.slice(0,40);const next=partyDeck(random(seed),seen);assert.equal(next.length,deck.length-40);assert.ok(next.every(id=>!seen.includes(id)));}
+ for(let seed=1;seed<=4;seed++){const deck=partyDeck(random(seed));assert.equal(deck.length,PARTY_PACKS.length);assert.equal(new Set(deck).size,deck.length);assert.ok(deck.some(id=>sports.has(id)));const seen=deck.slice(0,40);const next=partyDeck(random(seed),seen);assert.equal(next.length,deck.length);assert.deepEqual(next,deck);}
  for(const p of PACKS)assert.equal(PACK_BY_ID.get(p.id),p);assert.equal(new Set(PARTY_PACKS.map(p=>canonicalQuestionId(p.id))).size,PARTY_PACKS.length);
 });
 

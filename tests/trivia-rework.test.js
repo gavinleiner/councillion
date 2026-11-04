@@ -12,7 +12,7 @@ test('main rotation uses approachable mixed topics, with specialists available s
  assert.ok(!MIXED_PACKS.some(p=>/^(lex-|bird-warblers|city-west-100)/.test(p.id)||p.family==='words'));
  assert.ok(MIXED_PACKS.some(p=>p.id==='group-q011'));assert.ok(MIXED_PACKS.some(p=>p.id==='group-q061'));
  const published=JSON.parse(await readFile(new URL('../data-snapshots/group/published-20261023-24.json',import.meta.url),'utf8'));
- for(let i=0;i<10;i++){const day=new Date(Date.UTC(2026,9,24+i)).toISOString().slice(0,10),draw=dailyPacks(day);assert.equal(draw.length,7);assert.equal(new Set(draw.map(p=>p.id)).size,7);if(day==='2026-10-24')assert.deepEqual(draw.map(p=>p.id),published.slice(7));else assert.ok(draw.every(p=>MIXED_PACKS.some(q=>q.id===canonicalQuestionId(p.id))));if(day>='2026-10-26')assert.ok(draw.every(p=>MIXED_PACKS.includes(p)));}
+ for(let i=0;i<25;i++){const day=new Date(Date.UTC(2026,9,24+i)).toISOString().slice(0,10),draw=dailyPacks(day);assert.equal(draw.length,7);assert.equal(new Set(draw.map(p=>p.id)).size,7);if(day==='2026-10-24')assert.deepEqual(draw.map(p=>p.id),published.slice(7));else if(day>='2026-11-05')assert.ok(draw.every(p=>MIXED_PACKS.some(q=>q.id===canonicalQuestionId(p.id))));if(day>='2026-11-05')assert.ok(draw.every(p=>MIXED_PACKS.includes(p)));}
 });
 test('major inventories include their unfamiliar tail and do not count aliases as answers',async()=>{
  assert.ok(pack('fun-video-games').answerCount>300000);assert.ok(pack('fun-movies').answerCount>40000);assert.ok(pack('fun-tv').answerCount>100000);assert.ok(pack('fun-cities').answerCount>100000);assert.ok(pack('fun-birds').answerCount>11000);
@@ -41,9 +41,9 @@ test('forgiving matching preserves exact names, scores and numeric sequel identi
  assert.equal(matchAnswer(pack('fun-minecraft'),'dimond swrod').points,matchAnswer(pack('fun-minecraft'),'Diamond Sword').points);
  assert.equal(matchAnswer(pack('dinosaur-genera'),'Mosasaurus'),null);assert.ok(matchAnswer(pack('fun-prehistoric'),'Mosasaurus'));
 });
-test('repeat practice draws exhaust the mixed pool before recycling and survive queue persistence',()=>{
- let queue=[],seen=[],rng=random(321);
- for(let i=0;i<Math.ceil(MIXED_PACKS.length/7)+3;i++){const draw=practiceDraw(JSON.parse(JSON.stringify(queue)),null,rng);assert.equal(draw.ids.length,7);assert.equal(new Set(draw.ids).size,7);seen.push(...draw.ids);queue=draw.remaining;}
- assert.equal(new Set(seen.slice(0,MIXED_PACKS.length)).size,MIXED_PACKS.length);
- const featured=practiceDraw([], 'lex-top-row-words',random(4));assert.equal(featured.ids[0],'lex-top-row-words');assert.ok(featured.ids.slice(1).every(id=>MIXED_PACKS.some(p=>p.id===id)));
+test('Practice draws seven distinct questions freshly on each run, with explicit featured selection',()=>{
+ const rng=random(321),openers=new Set();
+ for(let i=0;i<100;i++){const draw=practiceDraw(MIXED_PACKS.map(p=>p.id),null,rng);assert.equal(draw.ids.length,7);assert.equal(new Set(draw.ids).size,7);assert.ok(draw.ids.every(id=>MIXED_PACKS.some(p=>p.id===id)));assert.deepEqual(draw.remaining,[]);openers.add(draw.ids[0]);}
+ assert.ok(openers.size>70);
+ const featured=practiceDraw([], 'group-q001',random(4));assert.equal(featured.ids[0],'group-q001');assert.equal(new Set(featured.ids).size,7);assert.ok(featured.ids.slice(1).every(id=>MIXED_PACKS.some(p=>p.id===id)));
 });

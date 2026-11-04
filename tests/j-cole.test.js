@@ -5,8 +5,8 @@ import {PACK_BY_ID,MIXED_PACKS,PARTY_PACKS} from '../data.js';
 import {resolveAnswer} from '../answer-matching.js';
 import {newParty,startParty,answerParty} from '../engine.js';
 const specs=JSON.parse(readFileSync(new URL('../data-snapshots/authored/batches/40-j-cole-requested.json',import.meta.url))).questions;
-test('exactly five deliberately requested Cole tasks enter the same balanced Daily/Puffer pool',()=>{
- assert.equal(specs.length,5);for(const q of specs){const p=PACK_BY_ID.get(q.id);assert.ok(MIXED_PACKS.includes(p)&&PARTY_PACKS.includes(p));assert.ok(p.answers.length>=20);for(const input of q.familiar)assert.equal(resolveAnswer(p,input).status,'exact',input);for(const input of q.exclude)assert.equal(resolveAnswer(p,input).status,'missing',input);}
+test('three broad Cole prompts remain playable; the two album-specific prompts retain their archived answer evidence',()=>{
+ assert.equal(specs.length,5);for(const q of specs){const p=PACK_BY_ID.get(q.id);assert.equal(MIXED_PACKS.includes(p)&&PARTY_PACKS.includes(p),!['authored-j-cole-forest-hills-songs','authored-j-cole-born-sinner-songs'].includes(q.id));assert.ok(p.answers.length>=20);for(const input of q.familiar)assert.equal(resolveAnswer(p,input).status,'exact',input);for(const input of q.exclude)assert.equal(resolveAnswer(p,input).status,'missing',input);}
  assert.ok(MIXED_PACKS.length>=479);
 });
 test('all defining-album tracks include deluxe skits and every anniversary bonus, not just hit singles',()=>{

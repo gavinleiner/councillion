@@ -1,8 +1,7 @@
 import { PACKS, PLAY_PACKS, REVIEWED_PACKS, ORIGINAL_PLAY_PACKS, MIXED_PACKS, PARTY_PACKS, PACK_BY_ID, PARTY_IDS, canonicalQuestionId, answerCount } from './data.js';
 import {normalize,matchAnswer,resolveAnswer} from './answer-matching.js';
-import {LEGACY_REVIEWED_POOL_IDS} from './practice-pool-history.js';
 export {normalize,matchAnswer,resolveAnswer,typoDistance} from './answer-matching.js';
-import {hash,random,shuffle,balancedQuestionDeck,QUESTION_SELECTION_BUILD} from './question-selection.js';
+import {hash,random,shuffle,uniformQuestionDeck,QUESTION_SELECTION_BUILD} from './question-selection.js';
 export {hash,random,shuffle} from './question-selection.js';
 import {FRESH_DAILY_START,FRESH_DAILY_IDS} from './daily-schedule.js';
 export const GROUP_DAILY_START='2026-10-24';
@@ -36,36 +35,30 @@ export function isSharedDailyRun(run,day=dateKey()){
 }
 export function tier(points){return points>=100?{name:'KRILLION',icon:'✦',color:'rarity-krillion'}:points>=85?{name:'DEEP CUT',icon:'◆',color:'rarity-deepcut'}:points>=60?{name:'RARE',icon:'✧',color:'rarity-rare'}:points>=30?{name:'SCHOOLER',icon:'◈',color:'rarity-schooler'}:points>0?{name:'PLANKTON',icon:'·',color:'rarity-plankton'}:{name:'NO ECHO',icon:'×',color:'muted'};}
 
-export function partyDeck(rng=Math.random,seen=[]){const excluded=new Set(seen.map(canonicalQuestionId));return balancedQuestionDeck(PARTY_PACKS.filter(p=>!excluded.has(canonicalQuestionId(p.id))),{rng,recent:seen.slice(-6).map(id=>PACK_BY_ID.get(canonicalQuestionId(id))?.family).filter(Boolean)});}
-export function reshufflePracticeQueue(pending=[],rng=Math.random,previousSelection=null,previousPoolIds=null){
- const ids=new Set(pending);
- // Keep unplayed admitted IDs and add only IDs that did not exist in the
- // previous pool. Played questions and retired recipes must stay absent.
- if(Array.isArray(previousPoolIds)||previousSelection||pending.length){
-  const previous=new Set(Array.isArray(previousPoolIds)?previousPoolIds:LEGACY_REVIEWED_POOL_IDS);
-  for(const p of MIXED_PACKS)if(!previous.has(p.id))ids.add(p.id);
- }
- return balancedQuestionDeck(MIXED_PACKS.filter(p=>ids.has(p.id)),{rng});
+// Every match starts from the entire admitted pool. Account and prior-match
+// histories never weight or exclude a question; the shuffle prevents repeats
+// only within this match.
+export function partyDeck(rng=Math.random){return uniformQuestionDeck(PARTY_PACKS,{rng});}
+export function reshufflePracticeQueue(_pending=[],rng=Math.random){
+ return uniformQuestionDeck(MIXED_PACKS,{rng});
 }
-export function practiceDraw(pending=[],featured=null,rng=Math.random){
+export function practiceDraw(_pending=[],featured=null,rng=Math.random){
  if(featured&&!REVIEWED_PACKS.some(p=>p.id===featured))throw Error('This category has been retired. Choose a reviewed question.');
- const pool=new Set(MIXED_PACKS.map(p=>p.id));let queue=[...new Set(pending)].filter(id=>pool.has(id)),ids=featured?[featured]:[];
- if(featured)queue=queue.filter(id=>id!==featured);
- const seen=new Set(ids);
- while(ids.length<7){if(!queue.length)queue=balancedQuestionDeck(MIXED_PACKS,{rng});const id=queue.shift();if(!seen.has(id)){ids.push(id);seen.add(id);}else queue.push(id);}
- return {ids,remaining:queue};
+ const deck=uniformQuestionDeck(MIXED_PACKS,{rng}),ids=featured?[featured,...deck.filter(id=>id!==featured).slice(0,6)]:deck.slice(0,7);
+ return {ids,remaining:[]};
 }
 export function refreshPartyQuestions(state,now=Date.now(),rng=Math.random){
  const allowed=PARTY_IDS,keep=['lobby','countdown'].includes(state.phase)?0:state.round,
- prefix=state.packIds.slice(0,keep),seen=new Set([...(state.seenIds??[]).map(canonicalQuestionId),...prefix.map(canonicalQuestionId)]),tail=[];
+ prefix=state.packIds.slice(0,keep),played=[...new Set(prefix.map(canonicalQuestionId))],seen=new Set(played),tail=[];
  for(const id of state.packIds.slice(keep)){const key=canonicalQuestionId(id);if(allowed.has(id)&&!seen.has(key)){tail.push(id);seen.add(key);}}
- const migration=state.selectionBuild!==QUESTION_SELECTION_BUILD,remaining=[...tail,...partyDeck(rng,[...seen])];
- const next=[...prefix,...(migration?balancedQuestionDeck(remaining.map(id=>PACK_BY_ID.get(id)),{rng,recent:prefix.slice(-6).map(id=>PACK_BY_ID.get(canonicalQuestionId(id))?.family).filter(Boolean)}):remaining)],retired=state.phase==='playing'&&!allowed.has(state.packIds[state.round-1]);
- const changed=migration||next.length!==state.packIds.length||next.some((id,i)=>id!==state.packIds[i]);if(changed){state.packIds=next;state.selectionBuild=QUESTION_SELECTION_BUILD;}
+ const migration=state.selectionBuild!==QUESTION_SELECTION_BUILD,draw=partyDeck(rng);
+ const remaining=migration?draw.filter(id=>!played.includes(canonicalQuestionId(id))):[...tail,...draw.filter(id=>!seen.has(canonicalQuestionId(id)))];
+ const next=[...prefix,...remaining],retired=state.phase==='playing'&&!allowed.has(state.packIds[state.round-1]);
+ const changed=migration||JSON.stringify(state.seenIds)!==JSON.stringify(played)||next.length!==state.packIds.length||next.some((id,i)=>id!==state.packIds[i]);if(changed){state.packIds=next;state.seenIds=played;state.selectionBuild=QUESTION_SELECTION_BUILD;}
  if(retired){state.phase='burst';state.nextAt=now+900;state.used=[];state.players.forEach(p=>delete p.lastAnswer);state.notice='Reviewed question refreshed · no heart lost.';}
  if(changed||retired)state.revision++;return changed||retired;
 }
-export function newParty(players,rng=Math.random,seenIds=[]){return {exhausted:false,selectionBuild:QUESTION_SELECTION_BUILD,seenIds:[...new Set(seenIds)],phase:'lobby',mode:'casual',players:players.map(p=>({...p,hearts:2,meter:0,score:0,connected:true,answers:0,rare:0,krillions:0,answerStreak:0,bestStreak:0,fastestMs:0,heartsLost:0,forfeit:false})),eliminations:[],turn:0,round:0,packIds:partyDeck(rng,seenIds),used:[],log:[],settings:{lives:2,maxLives:5,meterTarget:600,minTurnMs:8000,fuseMinMs:10000,fuseMaxMs:30000,maxPlayers:6},notice:'The court is assembling.',deadline:0,startedAt:0,revision:0};}
+export function newParty(players,rng=Math.random){return {exhausted:false,selectionBuild:QUESTION_SELECTION_BUILD,seenIds:[],phase:'lobby',mode:'casual',players:players.map(p=>({...p,hearts:2,meter:0,score:0,connected:true,answers:0,rare:0,krillions:0,answerStreak:0,bestStreak:0,fastestMs:0,heartsLost:0,forfeit:false})),eliminations:[],turn:0,round:0,packIds:partyDeck(rng),used:[],log:[],settings:{lives:2,maxLives:5,meterTarget:600,minTurnMs:8000,fuseMinMs:10000,fuseMaxMs:30000,maxPlayers:6},notice:'The court is assembling.',deadline:0,startedAt:0,revision:0};}
 export const partyPack=s=>PACK_BY_ID.get(s.packIds[Math.max(s.round,1)-1]);
 function alive(s){return s.players.filter(p=>p.connected&&p.hearts>0);}
 function trackFinalDuel(s,now){const active=alive(s);if(active.length===2&&active.every(p=>p.hearts===1)){const ids=active.map(p=>p.id).sort();if(!s.finalDuel||s.finalDuel.ids.join('|')!==ids.join('|'))s.finalDuel={ids,startedAt:now,answers:Object.fromEntries(ids.map(id=>[id,0]))};}else if(active.length>1)delete s.finalDuel;}
@@ -85,7 +78,7 @@ export function answerParty(s,id,text,now=Date.now()){
 }
 export function tickParty(s,now=Date.now(),rng=Math.random){
  if(s.phase==='playing'&&now>=s.deadline){trackFinalDuel(s,now);const duel=s.finalDuel,clutch=duel&&duel.ids.every(id=>(duel.answers[id]??0)>=1)&&now-duel.startedAt>=8000;const p=s.players[s.turn];p.hearts=Math.max(0,p.hearts-1);p.heartsLost=(p.heartsLost||0)+1;p.answerStreak=0;if(!p.hearts){s.eliminations??=[];p.eliminationOrder=s.eliminations.length;s.eliminations.push(p.id);}s.notice=`POP! ${p.name} ${p.hearts?'lost a heart.':'is out of the case.'}`;s.phase='burst';s.nextAt=now+3000;s.revision++;if(victory(s,now)){if(clutch&&duel.ids.includes(s.winner)&&!p.forfeit)s.clutchFinish={ids:duel.ids,exchanges:Object.values(duel.answers).reduce((a,b)=>a+b,0)};}else nextTurn(s);return true;}
- if(s.phase==='burst'&&now>=s.nextAt){if(victory(s,now))return true;s.round++;if(!partyPack(s)){s.phase='ended';s.exhausted=true;s.deadline=0;s.notice='You reached the end of the unseen questions. Earlier prompts will not be recycled.';s.revision++;return true;}s.seenIds=[...new Set([...(s.seenIds??[]),partyPack(s).id])];s.used=[];s.skipVotes=[];s.phase='playing';s.deadline=now+Math.floor(s.settings.fuseMinMs+rng()*(s.settings.fuseMaxMs-s.settings.fuseMinMs));s.startedAt=now;s.turnStartedAt=now;s.notice='New case. New answers. Same puffer.';s.revision++;return true;}return false;
+ if(s.phase==='burst'&&now>=s.nextAt){if(victory(s,now))return true;s.round++;if(!partyPack(s)){s.phase='ended';s.exhausted=true;s.deadline=0;s.notice='Every question in this match has been used. Start a new game for a fresh shuffle.';s.revision++;return true;}s.seenIds=[...new Set([...(s.seenIds??[]),partyPack(s).id])];s.used=[];s.skipVotes=[];s.phase='playing';s.deadline=now+Math.floor(s.settings.fuseMinMs+rng()*(s.settings.fuseMaxMs-s.settings.fuseMinMs));s.startedAt=now;s.turnStartedAt=now;s.notice='New case. New answers. Same puffer.';s.revision++;return true;}return false;
 }
 export function disconnectPlayer(s,id,now=Date.now()){
  const p=s.players.find(p=>p.id===id);if(!p)return;p.connected=false;

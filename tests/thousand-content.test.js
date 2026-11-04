@@ -8,10 +8,10 @@ const release=JSON.parse(readFileSync(new URL('../data-snapshots/authored/thousa
 const p=k=>PACK_BY_ID.get('authored-1000-'+k);
 function exact(k,input){const r=resolveAnswer(p(k),input);assert.equal(r.status,'exact',`${k}: ${input}`);return r.answer;}
 function reject(k,input){assert.equal(resolveAnswer(p(k),input).status,'missing',`${k}: ${input}`);}
-test('the thousand-question release admits 321 new subjects into both balanced game pools',()=>{
- assert.equal(release.base,679);assert.equal(release.added,321);assert.ok(MIXED_PACKS.length>=release.total);
+test('the historical thousand-question release remains readable after the broader-playability cull',()=>{
+ assert.equal(release.base,679);assert.equal(release.added,321);assert.equal(MIXED_PACKS.length,499);
  assert.deepEqual(PARTY_PACKS.map(p=>p.id),MIXED_PACKS.map(p=>p.id));
- const ids=new Set(MIXED_PACKS.map(p=>p.id));for(const id of release.questionIds)assert.ok(ids.has(id),id);
+ const ids=new Set(PACK_BY_ID.keys());for(const id of release.questionIds)assert.ok(ids.has(id),id);
  for(const id of release.priorQuestionIds)assert.ok(ids.has(id),id);
  const families=Object.groupBy(MIXED_PACKS,p=>p.family);assert.equal(Object.keys(families).length,9);
  for(const rows of Object.values(families))assert.ok(rows.length/MIXED_PACKS.length>=.08&&rows.length/MIXED_PACKS.length<=.15);
@@ -59,7 +59,7 @@ test('a room started with 679 subjects receives the new deck without resetting i
  const additions=new Set(release.questionIds),old=[...release.priorQuestionIds];assert.equal(old.length,679);
  const state=newParty([{id:'one',name:'One'},{id:'two',name:'Two'}],random(4));state.packIds=[...old];state.selectionBuild='20261103-plus200-v1';state.firstTurn=0;startParty(state,1000,random(5));
  const active=state.packIds[0],hearts=state.players.map(p=>p.hearts);assert.equal(refreshPartyQuestions(state,1100,random(6)),true);
- assert.equal(state.packIds[0],active);assert.deepEqual(state.players.map(p=>p.hearts),hearts);for(const id of additions)assert.ok(state.packIds.includes(id));
+ assert.equal(state.packIds[0],active);assert.deepEqual(state.players.map(p=>p.hearts),hearts);for(const id of additions)if(PARTY_PACKS.some(p=>p.id===id))assert.ok(state.packIds.includes(id));
  assert.ok(state.packIds.slice(1,70).some(id=>additions.has(id)));const stable=[...state.packIds];assert.equal(refreshPartyQuestions(state,1200,random(7)),false);assert.deepEqual(state.packIds,stable);
 });
 

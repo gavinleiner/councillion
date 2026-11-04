@@ -8,10 +8,10 @@ const release=JSON.parse(readFileSync(new URL('../data-snapshots/authored/plus20
 const p=k=>PACK_BY_ID.get('authored-200-'+k);
 function exact(k,input){const r=resolveAnswer(p(k),input);assert.equal(r.status,'exact',`${k}: ${input}`);return r.answer;}
 function reject(k,input){assert.equal(resolveAnswer(p(k),input).status,'missing',`${k}: ${input}`);}
-test('the 200-question release is playable in both shared pools with balanced families',()=>{
- assert.equal(release.added,200);assert.equal(release.total,679);assert.ok(MIXED_PACKS.length>=release.total);
+test('the historical 200-question release remains readable after the broader-playability cull',()=>{
+ assert.equal(release.added,200);assert.equal(release.total,679);assert.equal(MIXED_PACKS.length,499);
  assert.equal(new Set(release.questionIds).size,200);
- for(const id of release.questionIds){assert.ok(MIXED_PACKS.some(p=>p.id===id),id);assert.ok(PARTY_PACKS.some(p=>p.id===id),id);}
+ for(const id of release.questionIds){assert.ok(PACK_BY_ID.has(id),id);}
  const counts={};for(const q of MIXED_PACKS)counts[q.family]=(counts[q.family]??0)+1;
  assert.equal(Object.keys(counts).length,9);for(const n of Object.values(counts))assert.ok(n/MIXED_PACKS.length<0.15);
 });
@@ -58,6 +58,6 @@ test('rooms from the 479-question release mix new subjects into unplayed turns',
  const state=newParty([{id:'one',name:'One'},{id:'two',name:'Two'}],random(41));state.packIds=[...old];state.selectionBuild='20261025-reviewed-standard-v1';state.firstTurn=0;startParty(state,1000,random(4));
  const active=state.packIds[0],hearts=state.players.map(p=>p.hearts);assert.equal(refreshPartyQuestions(state,1100,random(49)),true);
  assert.equal(state.packIds[0],active);assert.deepEqual(state.players.map(p=>p.hearts),hearts);assert.equal(state.phase,'playing');
- for(const id of additions)assert.ok(state.packIds.includes(id),id);assert.ok(state.packIds.slice(1,100).some(id=>additions.has(id)));
+ for(const id of additions)if(PARTY_PACKS.some(p=>p.id===id))assert.ok(state.packIds.includes(id),id);assert.ok(state.packIds.slice(1,100).some(id=>additions.has(id)));
  const stable=[...state.packIds];assert.equal(refreshPartyQuestions(state,1200,random(22)),false);assert.deepEqual(state.packIds,stable);
 });

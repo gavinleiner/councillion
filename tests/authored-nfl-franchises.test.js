@@ -23,7 +23,7 @@ test('all source rows and qualified historical franchise seasons stay represente
   const r=q.checks.find(p=>p.id===id(code));for(const y of years)assert.ok(r.coverageYears.includes(y),code+': '+y);
  }
 });
-test('only the balanced seven approved NFL additions enter both ordinary pools',()=>{
- const expected=new Set(['buf','car','dal','kc','ne','phi','sf'].map(c=>'authored-'+byCode.get(c).key));
+test('team-specific NFL rosters remain archived after the playability review',()=>{
+ const expected=new Set();
  const actual=MIXED_PACKS.filter(q=>q.group==='authored-whole-nfl-franchise-roster').map(q=>q.id);assert.deepEqual(new Set(actual),expected);assert.deepEqual(PARTY_PACKS.map(q=>q.id),MIXED_PACKS.map(q=>q.id));
 });

@@ -1,18 +1,25 @@
-# Councillion question expansion: delivery checkpoint
+# Councillion current delivery checkpoint
 
-The current goal is **1,000 total validated questions**. On November 3, the
-verified public release reached **679**, and the final **321** whole-subject
-questions have now been individually admitted locally. The production admission
-checks pass 15,883 familiar inputs and 2,036 negative boundaries. The production build and all 380 tests pass, along with 642 Puffer scoring
-transactions and 15 actual browser answer cases. The library/sample, laptop and
-mobile layouts and independent New York/Tokyo Daily contexts also pass.
-The 1,000-question release is ready for publication. Completion requires checking the public
-count and deployed bytes. See QUESTION-EXPANSION-1000.md for category totals,
-source/identity decisions and the Daily calendar policy.
+Current work is the November 4 playability fix: `20261104-broad-random-v1`.
+The November 3 release reached and publicly verified 1,000 questions; the user
+then requested removing most specialist prompts and removing per-player history
+from random selection. The explicit review retains 499 broader questions and
+retires 501. All 98 original Yes-voted prompts remain. No +500 draft is admitted.
 
-The October 28 partial-delivery email is historical, already fulfilled work.
-The earlier 5,000-question-only goal is superseded. Dated sections below are
-historical checkpoints, not current counts or unfinished deliverables.
+Puffer lobbies/rematches and Practice use a fresh full-pool uniform shuffle.
+Legacy history reports are ignored; only the current match's revealed prefix
+remains in room state. No prompt repeats within a match. Daily remains shared,
+with dates through November 4 fixed and curated assignments from November 5.
+The new admission check passes 7,577 familiar inputs and 915 wrong boundaries.
+The production build, all 385 regression tests and nine actual browser answer
+cases pass. Library/sample, laptop/mobile and independent New York/Tokyo Daily
+contexts also pass. Publication is pending; do not claim the public update
+until its deployed bytes and the 499-count pool are verified.
+See QUESTION-BREADTH-REVIEW.md and work/broad-random-20261104 in the task root.
+
+The earlier 5,000/1,500/1,000 volume goals and October 28 email delivery are
+historical, superseded or already fulfilled. Dated sections below record prior
+work rather than the current ordinary pool or outstanding delivery promises.
 
 ## Admission standard
 
