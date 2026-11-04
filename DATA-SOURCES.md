@@ -1,6 +1,8 @@
 # Councillion answer banks
 
-Current ordinary play: **679 individually admitted questions**, shared by Daily, Puffer and random Practice. The November 3 release adds **200 questions and 48,972 canonical answer entries** across nine balanced families. Production validates 11,635 familiar exact inputs and 1,392 wrong-answer boundaries. These checks do not establish exhaustive coverage of every possible answer. See [the release review](QUESTION-EXPANSION-200.md) and [the admission standard](QUESTION-STANDARD.md).
+Current ordinary play contains **1,000 individually admitted questions**, shared by Daily, Puffer and random Practice across nine balanced families. The final 321 whole subjects add **35,065 canonical answer entries**, with 4,248 independently chosen familiar inputs and 643 wrong-answer boundaries. These counts do not include aliases or source records as additional questions.
+
+The complete production admission check covers **15,883 familiar exact inputs and 2,036 wrong-answer boundaries**. Sources, naming decisions, recording-version merges and held memberships accompany the inventories. Source review and these checks do not establish exhaustive coverage of every possible answer. See [the 1,000-question release](QUESTION-EXPANSION-1000.md), [the earlier 200-question addition](QUESTION-EXPANSION-200.md) and [the admission standard](QUESTION-STANDARD.md).
 
 ## Historical catalog counts
 

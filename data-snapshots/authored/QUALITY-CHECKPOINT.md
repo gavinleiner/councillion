@@ -1,11 +1,18 @@
 # Councillion question expansion: delivery checkpoint
 
-The current goal is **1,000 total validated questions**, explicitly reduced by
-the user onOctober28. Development has474 admitted questions (227baseline plus
-247additions), leaving526 to reach that target. The user subsequently authorized
-the best validated partial update and a self-email at8a.m.Eastern onOctober28.
-The old5,000-only publication hold is superseded. Historical sections below
-record their original goals and are not the current delivery policy.
+The current goal is **1,000 total validated questions**. On November 3, the
+verified public release reached **679**, and the final **321** whole-subject
+questions have now been individually admitted locally. The production admission
+checks pass 15,883 familiar inputs and 2,036 negative boundaries. The production build and all 380 tests pass, along with 642 Puffer scoring
+transactions and 15 actual browser answer cases. The library/sample, laptop and
+mobile layouts and independent New York/Tokyo Daily contexts also pass.
+The 1,000-question release is ready for publication. Completion requires checking the public
+count and deployed bytes. See QUESTION-EXPANSION-1000.md for category totals,
+source/identity decisions and the Daily calendar policy.
+
+The October 28 partial-delivery email is historical, already fulfilled work.
+The earlier 5,000-question-only goal is superseded. Dated sections below are
+historical checkpoints, not current counts or unfinished deliverables.
 
 ## Admission standard
 

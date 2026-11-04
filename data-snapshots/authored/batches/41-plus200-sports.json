@@ -35205,6 +35205,26 @@
           {
             "label": "Paul Silas",
             "aliases": []
+          },
+          {
+            "label": "Magic Johnson",
+            "aliases": []
+          },
+          {
+            "label": "Paul Westhead",
+            "aliases": []
+          },
+          {
+            "label": "Maurice Cheeks",
+            "aliases": []
+          },
+          {
+            "label": "Earl Watson",
+            "aliases": []
+          },
+          {
+            "label": "Tyrone Corbin",
+            "aliases": []
           }
         ],
         "85": [
@@ -35477,12 +35497,10 @@
             "aliases": []
           },
           {
-            "label": "Bobby Weiss",
-            "aliases": []
-          },
-          {
             "label": "Bob Weiss",
-            "aliases": []
+            "aliases": [
+              "Bobby Weiss"
+            ]
           },
           {
             "label": "Gene Shue",
@@ -35726,7 +35744,9 @@
           },
           {
             "label": "Andrew Levane",
-            "aliases": []
+            "aliases": [
+              "Andy Levane"
+            ]
           },
           {
             "label": "Buddy Jeannette",
