@@ -17782,6 +17782,4971 @@
       ],
       "prompt": "Name a track on J. Cole’s Born Sinner.",
       "family": "music"
+    },
+    {
+      "id": "authored-200-simpsons-characters",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Homer Simpson",
+        "Marge Simpson",
+        "Bart Simpson",
+        "Lisa Simpson",
+        "Maggie Simpson",
+        "Ned Flanders",
+        "Charles Montgomery Burns",
+        "Moe Szyslak",
+        "Milhouse Van Houten",
+        "Krusty the Clown",
+        "Sideshow Bob",
+        "Chief Wiggum"
+      ],
+      "no": [
+        "Eric Cartman",
+        "Dipper Pines"
+      ],
+      "prompt": "Name a named character from The Simpsons.",
+      "family": "culture"
+    },
+    {
+      "id": "authored-200-family-guy-characters",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Peter Griffin",
+        "Lois Griffin",
+        "Stewie Griffin",
+        "Brian Griffin",
+        "Chris Griffin",
+        "Meg Griffin",
+        "Glenn Quagmire",
+        "Cleveland Brown",
+        "Joe Swanson",
+        "Bonnie Swanson",
+        "Mort Goldman",
+        "Herbert"
+      ],
+      "no": [
+        "Tanjiro Kamado",
+        "Dipper Pines"
+      ],
+      "prompt": "Name a named character from Family Guy.",
+      "family": "culture"
+    },
+    {
+      "id": "authored-200-south-park-characters",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Eric Cartman",
+        "Stan Marsh",
+        "Kyle Broflovski",
+        "Kenny McCormick",
+        "Butters Stotch",
+        "Randy Marsh",
+        "Sharon Marsh",
+        "Wendy Testaburger",
+        "Mr. Garrison",
+        "Chef",
+        "Towelie",
+        "Jimmy Valmer"
+      ],
+      "no": [
+        "Peter Griffin",
+        "Hank Hill"
+      ],
+      "prompt": "Name a named character from South Park.",
+      "family": "culture"
+    },
+    {
+      "id": "authored-200-bobs-burgers-characters",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Bob Belcher",
+        "Linda Belcher",
+        "Tina Belcher",
+        "Gene Belcher",
+        "Louise Belcher",
+        "Teddy",
+        "Mort",
+        "Jimmy Pesto",
+        "Jimmy Pesto Jr.",
+        "Zeke",
+        "Tammy Larsen",
+        "Regular Sized Rudy"
+      ],
+      "no": [
+        "Homer Simpson",
+        "Stan Smith"
+      ],
+      "prompt": "Name a named character from Bob's Burgers.",
+      "family": "culture"
+    },
+    {
+      "id": "authored-200-rick-morty-characters",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Rick Sanchez",
+        "Morty Smith",
+        "Summer Smith",
+        "Beth Smith",
+        "Jerry Smith",
+        "Mr. Meeseeks",
+        "Birdperson",
+        "Squanchy",
+        "Mr. Poopybutthole",
+        "Evil Morty",
+        "Space Beth",
+        "Tammy Gueterman"
+      ],
+      "no": [
+        "Peter Griffin",
+        "BoJack Horseman"
+      ],
+      "prompt": "Name a named character from Rick and Morty.",
+      "family": "culture"
+    },
+    {
+      "id": "authored-200-adventure-time-characters",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Finn",
+        "Jake",
+        "Princess Bubblegum",
+        "Marceline",
+        "Ice King",
+        "BMO",
+        "Lumpy Space Princess",
+        "Flame Princess",
+        "Lemongrab",
+        "Peppermint Butler",
+        "Tree Trunks",
+        "The Lich"
+      ],
+      "no": [
+        "Mordecai",
+        "Dipper Pines"
+      ],
+      "prompt": "Name a named character from Adventure Time.",
+      "family": "culture"
+    },
+    {
+      "id": "authored-200-regular-show-characters",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Mordecai",
+        "Rigby",
+        "Benson",
+        "Pops",
+        "Skips",
+        "Muscle Man",
+        "Hi Five Ghost",
+        "Eileen",
+        "Margaret",
+        "Thomas",
+        "Death",
+        "Gary"
+      ],
+      "no": [
+        "Finn the Human",
+        "Gumball Watterson"
+      ],
+      "prompt": "Name a named character from Regular Show.",
+      "family": "culture"
+    },
+    {
+      "id": "authored-200-gravity-falls-characters",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Dipper Pines",
+        "Mabel Pines",
+        "Stanley Pines",
+        "Stanford Pines",
+        "Jesus Alzamirano Ramirez",
+        "Wendy Corduroy",
+        "Bill Cipher",
+        "Gideon Gleeful",
+        "Pacifica Northwest",
+        "Waddles",
+        "Robbie Valentino",
+        "Candy Chiu"
+      ],
+      "no": [
+        "Phineas Flynn",
+        "Luz Noceda"
+      ],
+      "prompt": "Name a named character from Gravity Falls.",
+      "family": "culture"
+    },
+    {
+      "id": "authored-200-phineas-ferb-characters",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Phineas Flynn",
+        "Ferb Fletcher",
+        "Candace Flynn",
+        "Perry the Platypus",
+        "Dr. Doofenshmirtz",
+        "Isabella Garcia-Shapiro",
+        "Baljeet Tjinder",
+        "Buford Van Stomm",
+        "Jeremy Johnson",
+        "Vanessa Doofenshmirtz",
+        "Linda Flynn-Fletcher",
+        "Major Monogram"
+      ],
+      "no": [
+        "Dipper Pines",
+        "Gumball Watterson"
+      ],
+      "prompt": "Name a named character from Phineas and Ferb.",
+      "family": "culture"
+    },
+    {
+      "id": "authored-200-tmnt-characters",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Leonardo",
+        "Donatello",
+        "Raphael",
+        "Michelangelo",
+        "Splinter",
+        "April O'Neil",
+        "Casey Jones",
+        "Shredder",
+        "Bebop",
+        "Rocksteady",
+        "Krang",
+        "Karai"
+      ],
+      "no": [
+        "Sonic the Hedgehog",
+        "Peter Griffin"
+      ],
+      "prompt": "Name a named character from Teenage Mutant Ninja Turtles.",
+      "family": "culture"
+    },
+    {
+      "id": "authored-200-transformers-characters",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Optimus Prime",
+        "Bumblebee",
+        "Megatron",
+        "Starscream",
+        "Soundwave",
+        "Shockwave",
+        "Ratchet",
+        "Ironhide",
+        "Jazz",
+        "Arcee",
+        "Hot Rod",
+        "Grimlock"
+      ],
+      "no": [
+        "Goku",
+        "Pikachu"
+      ],
+      "prompt": "Name a named character from Transformers.",
+      "family": "culture"
+    },
+    {
+      "id": "authored-200-looney-tunes-characters",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Bugs Bunny",
+        "Daffy Duck",
+        "Porky Pig",
+        "Tweety",
+        "Sylvester",
+        "Road Runner",
+        "Wile E. Coyote",
+        "Yosemite Sam",
+        "Elmer Fudd",
+        "Marvin the Martian",
+        "Foghorn Leghorn",
+        "Speedy Gonzales"
+      ],
+      "no": [
+        "Mickey Mouse",
+        "SpongeBob SquarePants"
+      ],
+      "prompt": "Name a named character from Looney Tunes.",
+      "family": "culture"
+    },
+    {
+      "id": "authored-200-peanuts-characters",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Charlie Brown",
+        "Snoopy",
+        "Woodstock",
+        "Lucy van Pelt",
+        "Linus van Pelt",
+        "Sally Brown",
+        "Peppermint Patty",
+        "Marcie",
+        "Schroeder",
+        "Franklin",
+        "Pig-Pen",
+        "Rerun van Pelt"
+      ],
+      "no": [
+        "Garfield",
+        "Calvin"
+      ],
+      "prompt": "Name a named character from Peanuts.",
+      "family": "culture"
+    },
+    {
+      "id": "authored-200-gumball-characters",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Gumball Watterson",
+        "Darwin Watterson",
+        "Anais Watterson",
+        "Nicole Watterson",
+        "Richard Watterson",
+        "Penny Fitzgerald",
+        "Carrie Krueger",
+        "Tobias Wilson",
+        "Banana Joe",
+        "Sarah G. Lato",
+        "Bobert",
+        "Rob"
+      ],
+      "no": [
+        "Finn the Human",
+        "Lincoln Loud"
+      ],
+      "prompt": "Name a named character from The Amazing World of Gumball.",
+      "family": "culture"
+    },
+    {
+      "id": "authored-200-fairly-oddparents-characters",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Timmy Turner",
+        "Cosmo",
+        "Wanda",
+        "Poof",
+        "Peri",
+        "Vicky",
+        "Chester McBadbat",
+        "A.J.",
+        "Mr. Crocker",
+        "Jorgen Von Strangle",
+        "Trixie Tang",
+        "Doug Dimmadome"
+      ],
+      "no": [
+        "Phineas Flynn",
+        "Homer Simpson"
+      ],
+      "prompt": "Name a named character from The Fairly OddParents.",
+      "family": "culture"
+    },
+    {
+      "id": "authored-200-dexters-lab-characters",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Dexter",
+        "Dee Dee",
+        "Mandark",
+        "Mom",
+        "Dad",
+        "Monkey",
+        "Agent Honeydew",
+        "Major Glory",
+        "Valhallen",
+        "The Infraggable Krunk",
+        "Koosalagoopagoop",
+        "Action Hank"
+      ],
+      "no": [
+        "Jimmy Neutron",
+        "Professor Utonium"
+      ],
+      "prompt": "Name a named character from Dexter's Laboratory.",
+      "family": "culture"
+    },
+    {
+      "id": "authored-200-powerpuff-characters",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Blossom",
+        "Bubbles",
+        "Buttercup",
+        "Professor Utonium",
+        "Mojo Jojo",
+        "HIM",
+        "Fuzzy Lumpkins",
+        "Princess Morbucks",
+        "Sedusa",
+        "The Mayor",
+        "Ms. Bellum",
+        "Ace"
+      ],
+      "no": [
+        "Raven",
+        "Starfire"
+      ],
+      "prompt": "Name a named character from The Powerpuff Girls.",
+      "family": "culture"
+    },
+    {
+      "id": "authored-avatar-characters",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Aang",
+        "Katara",
+        "Sokka",
+        "Toph Beifong",
+        "Zuko",
+        "Iroh",
+        "Azula",
+        "Suki",
+        "Appa",
+        "Momo",
+        "Ozai",
+        "Mai"
+      ],
+      "no": [
+        "Jake Sully",
+        "Neytiri"
+      ],
+      "prompt": "Name a character from Avatar: The Last Airbender or The Legend of Korra.",
+      "family": "culture"
+    },
+    {
+      "id": "authored-200-naruto-characters",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Naruto Uzumaki",
+        "Sasuke Uchiha",
+        "Sakura Haruno",
+        "Kakashi Hatake",
+        "Hinata Hyuga",
+        "Itachi Uchiha",
+        "Gaara",
+        "Rock Lee",
+        "Shikamaru Nara",
+        "Jiraiya",
+        "Tsunade",
+        "Orochimaru"
+      ],
+      "no": [
+        "Monkey D. Luffy",
+        "Goku"
+      ],
+      "prompt": "Name a named character from Naruto.",
+      "family": "culture"
+    },
+    {
+      "id": "authored-200-one-piece-characters",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Monkey D. Luffy",
+        "Roronoa Zoro",
+        "Nami",
+        "Usopp",
+        "Sanji",
+        "Tony Tony Chopper",
+        "Nico Robin",
+        "Franky",
+        "Brook",
+        "Jinbe",
+        "Shanks",
+        "Portgas D. Ace"
+      ],
+      "no": [
+        "Naruto Uzumaki",
+        "Ichigo Kurosaki"
+      ],
+      "prompt": "Name a named character from One Piece.",
+      "family": "culture"
+    },
+    {
+      "id": "authored-200-dragon-ball-characters",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Goku",
+        "Vegeta",
+        "Gohan",
+        "Piccolo",
+        "Krillin",
+        "Bulma",
+        "Trunks",
+        "Frieza",
+        "Cell",
+        "Majin Buu",
+        "Beerus",
+        "Whis"
+      ],
+      "no": [
+        "Monkey D. Luffy",
+        "Saitama"
+      ],
+      "prompt": "Name a named character from Dragon Ball.",
+      "family": "culture"
+    },
+    {
+      "id": "authored-200-attack-on-titan-characters",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Eren Yeager",
+        "Mikasa Ackerman",
+        "Armin Arlert",
+        "Levi Ackerman",
+        "Hange Zoe",
+        "Erwin Smith",
+        "Reiner Braun",
+        "Annie Leonhart",
+        "Sasha Braus",
+        "Jean Kirstein",
+        "Connie Springer",
+        "Historia Reiss"
+      ],
+      "no": [
+        "Tanjiro Kamado",
+        "Gojo Satoru"
+      ],
+      "prompt": "Name a named character from Attack on Titan.",
+      "family": "culture"
+    },
+    {
+      "id": "authored-200-death-note-characters",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Light Yagami",
+        "L",
+        "Ryuk",
+        "Misa Amane",
+        "Rem",
+        "Near",
+        "Mello",
+        "Soichiro Yagami",
+        "Touta Matsuda",
+        "Teru Mikami",
+        "Kiyomi Takada",
+        "Naomi Misora"
+      ],
+      "no": [
+        "Lelouch Lamperouge",
+        "Eren Yeager"
+      ],
+      "prompt": "Name a named character from Death Note.",
+      "family": "culture"
+    },
+    {
+      "id": "authored-200-demon-slayer-characters",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Tanjiro Kamado",
+        "Nezuko Kamado",
+        "Zenitsu Agatsuma",
+        "Inosuke Hashibira",
+        "Giyu Tomioka",
+        "Shinobu Kocho",
+        "Kyojuro Rengoku",
+        "Tengen Uzui",
+        "Mitsuri Kanroji",
+        "Muichiro Tokito",
+        "Muzan Kibutsuji",
+        "Akaza"
+      ],
+      "no": [
+        "Naruto Uzumaki",
+        "Yuji Itadori"
+      ],
+      "prompt": "Name a named character from Demon Slayer.",
+      "family": "culture"
+    },
+    {
+      "id": "authored-200-jujutsu-kaisen-characters",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Yuji Itadori",
+        "Megumi Fushiguro",
+        "Nobara Kugisaki",
+        "Satoru Gojo",
+        "Ryomen Sukuna",
+        "Maki Zenin",
+        "Toge Inumaki",
+        "Panda",
+        "Yuta Okkotsu",
+        "Kento Nanami",
+        "Suguru Geto",
+        "Mahito"
+      ],
+      "no": [
+        "Tanjiro Kamado",
+        "Eren Yeager"
+      ],
+      "prompt": "Name a named character from Jujutsu Kaisen.",
+      "family": "culture"
+    },
+    {
+      "id": "authored-200-hairstyles",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Buzz cut",
+        "Crew cut",
+        "Bob",
+        "Pixie cut",
+        "Mohawk",
+        "Mullet",
+        "Ponytail",
+        "Braids",
+        "Afro",
+        "Bun",
+        "Undercut",
+        "Fade"
+      ],
+      "no": [
+        "Hair dryer",
+        "Hairbrush"
+      ],
+      "prompt": "Name a hairstyle or haircut.",
+      "family": "everyday"
+    },
+    {
+      "id": "authored-200-haircare-brands",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Pantene",
+        "Head & Shoulders",
+        "Dove",
+        "TRESemme",
+        "Garnier",
+        "L’Oréal",
+        "Herbal Essences",
+        "Suave",
+        "Aussie",
+        "OGX",
+        "Olaplex",
+        "Redken"
+      ],
+      "no": [
+        "Nike",
+        "Nintendo"
+      ],
+      "prompt": "Name a haircare brand.",
+      "family": "everyday"
+    },
+    {
+      "id": "authored-200-skincare-brands",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "CeraVe",
+        "Cetaphil",
+        "Neutrogena",
+        "La Roche-Posay",
+        "The Ordinary",
+        "CeraVe",
+        "Aveeno",
+        "Nivea",
+        "Eucerin",
+        "Olay",
+        "Dove",
+        "Vaseline"
+      ],
+      "no": [
+        "PlayStation",
+        "Toyota"
+      ],
+      "prompt": "Name a skincare brand.",
+      "family": "everyday"
+    },
+    {
+      "id": "authored-200-makeup-brands",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Maybelline",
+        "L’Oréal Paris",
+        "CoverGirl",
+        "Revlon",
+        "e.l.f.",
+        "NYX",
+        "MAC",
+        "Fenty Beauty",
+        "Rare Beauty",
+        "Charlotte Tilbury",
+        "Dior",
+        "NARS"
+      ],
+      "no": [
+        "John Deere",
+        "Bose"
+      ],
+      "prompt": "Name a makeup brand.",
+      "family": "everyday"
+    },
+    {
+      "id": "authored-200-fragrance-brands",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Dior",
+        "Chanel",
+        "Gucci",
+        "Versace",
+        "Calvin Klein",
+        "Armani",
+        "Yves Saint Laurent",
+        "Tom Ford",
+        "Dolce & Gabbana",
+        "Burberry",
+        "Prada",
+        "Jean Paul Gaultier"
+      ],
+      "no": [
+        "Nintendo",
+        "Tupperware"
+      ],
+      "prompt": "Name a perfume or fragrance brand.",
+      "family": "everyday"
+    },
+    {
+      "id": "authored-200-eyewear-brands",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Ray-Ban",
+        "Oakley",
+        "Warby Parker",
+        "Gucci",
+        "Prada",
+        "Versace",
+        "Dolce & Gabbana",
+        "Persol",
+        "Costa",
+        "Maui Jim",
+        "Pit Viper",
+        "Arnette"
+      ],
+      "no": [
+        "Kellogg’s",
+        "Lego"
+      ],
+      "prompt": "Name an eyewear or sunglasses brand.",
+      "family": "everyday"
+    },
+    {
+      "id": "authored-200-watch-brands",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Rolex",
+        "Casio",
+        "Seiko",
+        "Citizen",
+        "Omega",
+        "Timex",
+        "Swatch",
+        "Apple",
+        "Tag Heuer",
+        "Tissot",
+        "Fossil",
+        "Patek Philippe"
+      ],
+      "no": [
+        "Bose",
+        "Dyson"
+      ],
+      "prompt": "Name a watch brand.",
+      "family": "everyday"
+    },
+    {
+      "id": "authored-200-luggage-brands",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Samsonite",
+        "American Tourister",
+        "Tumi",
+        "Away",
+        "Travelpro",
+        "Rimowa",
+        "Delsey",
+        "Briggs & Riley",
+        "SwissGear",
+        "Herschel",
+        "Monos",
+        "Calpak"
+      ],
+      "no": [
+        "Gillette",
+        "Nintendo"
+      ],
+      "prompt": "Name a luggage, suitcase or travel-bag brand.",
+      "family": "everyday"
+    },
+    {
+      "id": "authored-200-stationery-brands",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "BIC",
+        "Pilot",
+        "Sharpie",
+        "Paper Mate",
+        "Crayola",
+        "Prismacolor",
+        "Faber-Castell",
+        "Staedtler",
+        "Pentel",
+        "Uni-ball",
+        "Post-it",
+        "Five Star"
+      ],
+      "no": [
+        "Nike",
+        "Spotify"
+      ],
+      "prompt": "Name a stationery or school-supply brand.",
+      "family": "everyday"
+    },
+    {
+      "id": "authored-200-toy-brands",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Lego",
+        "Mattel",
+        "Hasbro",
+        "Fisher-Price",
+        "Playmobil",
+        "Hot Wheels",
+        "Barbie",
+        "Nerf",
+        "Funko",
+        "Melissa & Doug",
+        "VTech",
+        "Little Tikes"
+      ],
+      "no": [
+        "Adobe",
+        "Toyota"
+      ],
+      "prompt": "Name a toy or board-game brand or manufacturer.",
+      "family": "everyday"
+    },
+    {
+      "id": "authored-200-bookstore-chains",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Barnes & Noble",
+        "Books-A-Million",
+        "Waterstones",
+        "Half Price Books",
+        "Powell’s Books",
+        "WHSmith",
+        "Indigo",
+        "Blackwell’s",
+        "Foyles",
+        "Kinokuniya",
+        "Book Off",
+        "Hatchards"
+      ],
+      "no": [
+        "GameStop",
+        "Sephora"
+      ],
+      "prompt": "Name a bookstore chain.",
+      "family": "everyday"
+    },
+    {
+      "id": "authored-200-cleaning-brands",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Clorox",
+        "Lysol",
+        "Tide",
+        "Dawn",
+        "Gain",
+        "Downy",
+        "Febreze",
+        "Mr. Clean",
+        "Windex",
+        "Pine-Sol",
+        "Swiffer",
+        "OxiClean"
+      ],
+      "no": [
+        "Nintendo",
+        "Adidas"
+      ],
+      "prompt": "Name a household cleaning or laundry brand.",
+      "family": "everyday"
+    },
+    {
+      "id": "authored-200-headphone-brands",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Apple",
+        "Beats",
+        "Sony",
+        "Bose",
+        "JBL",
+        "Sennheiser",
+        "Skullcandy",
+        "Audio-Technica",
+        "Samsung",
+        "Anker Soundcore",
+        "Jabra",
+        "Beyerdynamic"
+      ],
+      "no": [
+        "LEGO",
+        "Miele"
+      ],
+      "prompt": "Name a headphone or earbud brand.",
+      "family": "everyday"
+    },
+    {
+      "id": "authored-200-camera-makers",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Canon",
+        "Nikon",
+        "Sony",
+        "Fujifilm",
+        "Panasonic",
+        "Olympus",
+        "OM System",
+        "Pentax",
+        "Leica",
+        "Kodak",
+        "Polaroid",
+        "GoPro"
+      ],
+      "no": [
+        "Pepsi",
+        "Under Armour"
+      ],
+      "prompt": "Name a camera manufacturer or camera brand.",
+      "family": "everyday"
+    },
+    {
+      "id": "authored-200-baby-care-items",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Diaper",
+        "Baby wipes",
+        "Baby bottle",
+        "Pacifier",
+        "Crib",
+        "Stroller",
+        "Car seat",
+        "Changing mat",
+        "Bib",
+        "Baby blanket",
+        "Baby monitor",
+        "Baby formula"
+      ],
+      "no": [
+        "Lawn mower",
+        "Car engine"
+      ],
+      "prompt": "Name an item used to care for a baby.",
+      "family": "everyday"
+    },
+    {
+      "id": "authored-200-office-equipment",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Pen",
+        "Pencil",
+        "Paper",
+        "Stapler",
+        "Printer",
+        "Scanner",
+        "Computer",
+        "Desk",
+        "Chair",
+        "Paper clip",
+        "Sticky notes",
+        "Folder"
+      ],
+      "no": [
+        "Motorboat",
+        "Anvil"
+      ],
+      "prompt": "Name an office supply or piece of office equipment.",
+      "family": "everyday"
+    },
+    {
+      "id": "authored-200-beach-packing",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Towel",
+        "Sunscreen",
+        "Swimsuit",
+        "Water bottle",
+        "Sunglasses",
+        "Flip-flops",
+        "Beach umbrella",
+        "Cooler",
+        "Snacks",
+        "Hat",
+        "Beach chair",
+        "Beach bag"
+      ],
+      "no": [
+        "Snowmobile",
+        "Radiator"
+      ],
+      "prompt": "Name something people pack for a beach day.",
+      "family": "everyday"
+    },
+    {
+      "id": "authored-200-dog-care-equipment",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Leash",
+        "Collar",
+        "Harness",
+        "Dog bed",
+        "Dog bowl",
+        "Dog food",
+        "Dog treats",
+        "Poop bags",
+        "Dog toy",
+        "Ball",
+        "Crate",
+        "Brush"
+      ],
+      "no": [
+        "Horse saddle",
+        "Fish tank"
+      ],
+      "prompt": "Name an item used to care for, walk or play with a dog.",
+      "family": "everyday"
+    },
+    {
+      "id": "authored-200-gardening-tasks",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Planting",
+        "Watering",
+        "Weeding",
+        "Pruning",
+        "Mowing",
+        "Mulching",
+        "Fertilizing",
+        "Sowing",
+        "Transplanting",
+        "Harvesting",
+        "Digging",
+        "Composting"
+      ],
+      "no": [
+        "Formatting a hard drive",
+        "Welding a pipe"
+      ],
+      "prompt": "Name a gardening task or technique.",
+      "family": "everyday"
+    },
+    {
+      "id": "authored-200-rope-knots",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Bowline",
+        "Square knot",
+        "Clove hitch",
+        "Sheet bend",
+        "Figure-eight knot",
+        "Overhand knot",
+        "Slip knot",
+        "Double fisherman’s knot",
+        "Prusik knot",
+        "Round turn and two half-hitches",
+        "Timber hitch",
+        "Trucker’s hitch"
+      ],
+      "no": [
+        "Zipper",
+        "Paperclip"
+      ],
+      "prompt": "Name a knot, bend, hitch or splice.",
+      "family": "everyday"
+    },
+    {
+      "id": "authored-200-lock-types",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Padlock",
+        "Deadbolt",
+        "Combination lock",
+        "Mortise lock",
+        "Cylinder lock",
+        "Rim lock",
+        "Cam lock",
+        "Chain lock",
+        "Electronic lock",
+        "Keypad lock",
+        "Smart lock",
+        "Fingerprint lock"
+      ],
+      "no": [
+        "Canal lock",
+        "Hair lock"
+      ],
+      "prompt": "Name a type of lock.",
+      "family": "everyday"
+    },
+    {
+      "id": "authored-200-gift-wrapping-supplies",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Wrapping paper",
+        "Gift bag",
+        "Ribbon",
+        "Bow",
+        "Tape",
+        "Scissors",
+        "Gift tag",
+        "Tissue paper",
+        "Gift box",
+        "String",
+        "Sticker",
+        "Greeting card"
+      ],
+      "no": [
+        "Engine oil",
+        "Concrete mixer"
+      ],
+      "prompt": "Name an item used to wrap or decorate a gift.",
+      "family": "everyday"
+    },
+    {
+      "id": "authored-200-room-decorations",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Balloon",
+        "Banner",
+        "Garland",
+        "Streamer",
+        "Confetti",
+        "Flowers",
+        "Vase",
+        "Candle",
+        "Poster",
+        "Painting",
+        "Picture frame",
+        "Fairy lights"
+      ],
+      "no": [
+        "Spark plug",
+        "Lawn fertilizer"
+      ],
+      "prompt": "Name a decoration for a room or celebration.",
+      "family": "everyday"
+    },
+    {
+      "id": "authored-200-pizza-chains",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Domino’s",
+        "Pizza Hut",
+        "Papa Johns",
+        "Little Caesars",
+        "Papa Murphy’s",
+        "Marco’s Pizza",
+        "MOD Pizza",
+        "Blaze Pizza",
+        "California Pizza Kitchen",
+        "Sbarro",
+        "Cicis",
+        "Mellow Mushroom"
+      ],
+      "no": [
+        "Chipotle",
+        "Five Guys"
+      ],
+      "prompt": "Name a pizza restaurant chain.",
+      "family": "food"
+    },
+    {
+      "id": "authored-200-coffeehouse-chains",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Starbucks",
+        "Dunkin’",
+        "Tim Hortons",
+        "Costa Coffee",
+        "Peet’s Coffee",
+        "Caribou Coffee",
+        "Dutch Bros",
+        "The Coffee Bean & Tea Leaf",
+        "Caffè Nero",
+        "Scooter’s Coffee",
+        "Biggby Coffee",
+        "Black Rock Coffee Bar"
+      ],
+      "no": [
+        "GameStop",
+        "Lowe’s"
+      ],
+      "prompt": "Name a coffeehouse or cafe chain.",
+      "family": "food"
+    },
+    {
+      "id": "authored-200-chocolate-bars",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Snickers",
+        "Kit Kat",
+        "Twix",
+        "Mars",
+        "Milky Way",
+        "Bounty",
+        "Hershey’s Milk Chocolate",
+        "Cadbury Dairy Milk",
+        "Crunch",
+        "Butterfinger",
+        "Toblerone",
+        "Aero"
+      ],
+      "no": [
+        "Skittles",
+        "Haribo Goldbears"
+      ],
+      "prompt": "Name a chocolate bar or named chocolate-bar product.",
+      "family": "food"
+    },
+    {
+      "id": "authored-200-savory-snack-brands",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Lay’s",
+        "Doritos",
+        "Cheetos",
+        "Pringles",
+        "Ruffles",
+        "Tostitos",
+        "Fritos",
+        "Cheez-It",
+        "Goldfish",
+        "Ritz",
+        "Triscuit",
+        "Wheat Thins"
+      ],
+      "no": [
+        "Jolly Rancher",
+        "Trolli"
+      ],
+      "prompt": "Name a brand of chips, crackers, popcorn or another packaged savory snack.",
+      "family": "food"
+    },
+    {
+      "id": "authored-200-chewing-gum-brands",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Orbit",
+        "Extra",
+        "Trident",
+        "Dentyne",
+        "5 Gum",
+        "Juicy Fruit",
+        "Doublemint",
+        "Big Red",
+        "Hubba Bubba",
+        "Bubble Yum",
+        "Bubblicious",
+        "Mentos Gum"
+      ],
+      "no": [
+        "Haribo Goldbears",
+        "Skittles"
+      ],
+      "prompt": "Name a chewing-gum brand or named gum product.",
+      "family": "food"
+    },
+    {
+      "id": "authored-200-juice-brands",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Tropicana",
+        "Minute Maid",
+        "Simply",
+        "Ocean Spray",
+        "Welch’s",
+        "Mott’s",
+        "V8",
+        "Dole",
+        "Naked",
+        "Bolthouse Farms",
+        "Juicy Juice",
+        "Capri Sun"
+      ],
+      "no": [
+        "Coca-Cola Classic",
+        "Red Bull"
+      ],
+      "prompt": "Name a fruit-juice or vegetable-juice brand.",
+      "family": "food"
+    },
+    {
+      "id": "authored-200-water-brands",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Dasani",
+        "Aquafina",
+        "Evian",
+        "Fiji",
+        "Smartwater",
+        "Poland Spring",
+        "Nestlé Pure Life",
+        "Deer Park",
+        "Ice Mountain",
+        "Perrier",
+        "San Pellegrino",
+        "Voss"
+      ],
+      "no": [
+        "Mountain Dew",
+        "Dr Pepper"
+      ],
+      "prompt": "Name a bottled or canned drinking-water brand.",
+      "family": "food"
+    },
+    {
+      "id": "authored-200-bagel-varieties",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Plain bagel",
+        "Everything bagel",
+        "Sesame bagel",
+        "Poppy seed bagel",
+        "Cinnamon raisin bagel",
+        "Onion bagel",
+        "Garlic bagel",
+        "Whole wheat bagel",
+        "Egg bagel",
+        "Blueberry bagel",
+        "Asiago bagel",
+        "Pumpernickel bagel"
+      ],
+      "no": [
+        "Croissant",
+        "Brioche loaf"
+      ],
+      "prompt": "Name an established bagel variety.",
+      "family": "food"
+    },
+    {
+      "id": "authored-200-doughnut-varieties",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Glazed doughnut",
+        "Jelly doughnut",
+        "Boston cream doughnut",
+        "Chocolate doughnut",
+        "Cake doughnut",
+        "Old-fashioned doughnut",
+        "Apple fritter",
+        "Cinnamon doughnut",
+        "Powdered doughnut",
+        "Maple bar",
+        "Cruller",
+        "Sour cream doughnut"
+      ],
+      "no": [
+        "Croissant",
+        "Macaron"
+      ],
+      "prompt": "Name an established doughnut variety.",
+      "family": "food"
+    },
+    {
+      "id": "authored-200-curry-dishes",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Chicken tikka masala",
+        "Butter chicken",
+        "Korma",
+        "Vindaloo",
+        "Madras curry",
+        "Jalfrezi",
+        "Rogan josh",
+        "Tikka masala",
+        "Thai green curry",
+        "Thai red curry",
+        "Massaman curry",
+        "Panang curry"
+      ],
+      "no": [
+        "Sushi",
+        "Carbonara"
+      ],
+      "prompt": "Name a curry dish or established curry style.",
+      "family": "food"
+    },
+    {
+      "id": "authored-200-casseroles",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Green bean casserole",
+        "Tuna casserole",
+        "Chicken casserole",
+        "Tater tot casserole",
+        "Breakfast casserole",
+        "Broccoli casserole",
+        "Hash brown casserole",
+        "Sweet potato casserole",
+        "Corn casserole",
+        "Lasagna",
+        "Baked ziti",
+        "Shepherd’s pie"
+      ],
+      "no": [
+        "Gazpacho",
+        "Sashimi"
+      ],
+      "prompt": "Name a casserole or established baked casserole dish.",
+      "family": "food"
+    },
+    {
+      "id": "authored-200-sweet-spreads",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Strawberry jam",
+        "Raspberry jam",
+        "Grape jelly",
+        "Orange marmalade",
+        "Nutella",
+        "Honey",
+        "Peanut butter",
+        "Apple butter",
+        "Lemon curd",
+        "Dulce de leche",
+        "Cookie butter",
+        "Chocolate spread"
+      ],
+      "no": [
+        "Mayonnaise",
+        "Soy sauce"
+      ],
+      "prompt": "Name a sweet spread, jam, jelly or preserve.",
+      "family": "food"
+    },
+    {
+      "id": "authored-200-flour-types",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "All-purpose flour",
+        "Plain flour",
+        "Self-raising flour",
+        "Self-rising flour",
+        "Bread flour",
+        "Cake flour",
+        "Whole wheat flour",
+        "Almond flour",
+        "Coconut flour",
+        "Rice flour",
+        "Cornmeal",
+        "Semolina"
+      ],
+      "no": [
+        "Baking soda",
+        "Cream of tartar"
+      ],
+      "prompt": "Name a flour or culinary meal.",
+      "family": "food"
+    },
+    {
+      "id": "authored-200-culinary-thickeners",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Cornstarch",
+        "Flour",
+        "Gelatin",
+        "Agar",
+        "Pectin",
+        "Arrowroot",
+        "Tapioca starch",
+        "Potato starch",
+        "Xanthan gum",
+        "Guar gum",
+        "Egg yolk",
+        "Chia seeds"
+      ],
+      "no": [
+        "Table salt",
+        "Vanilla extract"
+      ],
+      "prompt": "Name an ingredient used to thicken or gel food.",
+      "family": "food"
+    },
+    {
+      "id": "authored-200-hot-sauce-products",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Tabasco",
+        "Frank’s RedHot",
+        "Cholula",
+        "Texas Pete",
+        "Sriracha",
+        "Valentina",
+        "Tapatio",
+        "Louisiana Hot Sauce",
+        "Crystal Hot Sauce",
+        "El Yucateco",
+        "Trappey’s",
+        "Dave’s Gourmet"
+      ],
+      "no": [
+        "Heinz Tomato Ketchup",
+        "Hellmann’s Mayonnaise"
+      ],
+      "prompt": "Name a hot-sauce brand or named hot-sauce product.",
+      "family": "food"
+    },
+    {
+      "id": "authored-200-salad-dressing-brands",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Hidden Valley",
+        "Kraft",
+        "Wish-Bone",
+        "Ken’s Steak House",
+        "Newman’s Own",
+        "Briannas",
+        "Marzetti",
+        "Litehouse",
+        "Bolthouse Farms",
+        "Annie’s",
+        "Primal Kitchen",
+        "Good Seasons"
+      ],
+      "no": [
+        "Nutella",
+        "Skittles"
+      ],
+      "prompt": "Name a salad-dressing brand.",
+      "family": "food"
+    },
+    {
+      "id": "authored-200-edible-berries",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Strawberry",
+        "Blueberry",
+        "Raspberry",
+        "Blackberry",
+        "Cranberry",
+        "Gooseberry",
+        "Blackcurrant",
+        "Redcurrant",
+        "Elderberry",
+        "Mulberry",
+        "Boysenberry",
+        "Huckleberry"
+      ],
+      "no": [
+        "Holly berry",
+        "Yew seed"
+      ],
+      "prompt": "Name an edible fruit commonly called a berry.",
+      "family": "food"
+    },
+    {
+      "id": "authored-200-italian-dishes",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Pizza",
+        "Lasagna",
+        "Spaghetti bolognese",
+        "Carbonara",
+        "Risotto",
+        "Ravioli",
+        "Gnocchi",
+        "Tiramisu",
+        "Pesto",
+        "Bruschetta",
+        "Focaccia",
+        "Minestrone"
+      ],
+      "no": [
+        "Pad thai",
+        "Bibimbap"
+      ],
+      "prompt": "Name an Italian dish or established Italian food preparation.",
+      "family": "food"
+    },
+    {
+      "id": "authored-200-mexican-dishes",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Tacos",
+        "Burritos",
+        "Enchiladas",
+        "Quesadillas",
+        "Tamales",
+        "Nachos",
+        "Guacamole",
+        "Chilaquiles",
+        "Pozole",
+        "Mole",
+        "Elote",
+        "Tostadas"
+      ],
+      "no": [
+        "Sushi",
+        "Haggis"
+      ],
+      "prompt": "Name a Mexican dish or established Mexican food.",
+      "family": "food"
+    },
+    {
+      "id": "authored-200-japanese-dishes",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Sushi",
+        "Ramen",
+        "Tempura",
+        "Sashimi",
+        "Udon",
+        "Soba",
+        "Miso soup",
+        "Onigiri",
+        "Takoyaki",
+        "Okonomiyaki",
+        "Katsu curry",
+        "Teriyaki"
+      ],
+      "no": [
+        "Biryani",
+        "Pad thai"
+      ],
+      "prompt": "Name a Japanese dish or established Japanese food.",
+      "family": "food"
+    },
+    {
+      "id": "authored-200-chinese-dishes",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Fried rice",
+        "Chow mein",
+        "Dumplings",
+        "Peking duck",
+        "Kung pao chicken",
+        "Sweet and sour pork",
+        "Mapo tofu",
+        "Spring rolls",
+        "Wonton soup",
+        "Hot and sour soup",
+        "Char siu",
+        "Dim sum"
+      ],
+      "no": [
+        "Tacos al pastor",
+        "Lasagna"
+      ],
+      "prompt": "Name a Chinese dish or established Chinese food.",
+      "family": "food"
+    },
+    {
+      "id": "authored-200-indian-dishes",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Butter chicken",
+        "Biryani",
+        "Samosa",
+        "Naan",
+        "Chicken tikka masala",
+        "Tandoori chicken",
+        "Dal",
+        "Palak paneer",
+        "Chana masala",
+        "Dosa",
+        "Idli",
+        "Gulab jamun"
+      ],
+      "no": [
+        "Sashimi",
+        "Peking duck"
+      ],
+      "prompt": "Name an Indian dish or established Indian food.",
+      "family": "food"
+    },
+    {
+      "id": "authored-200-zelda-monsters",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Bokoblin",
+        "Moblin",
+        "Lynel",
+        "Lizalfos",
+        "Octorok",
+        "Keese",
+        "Chuchu",
+        "Hinox",
+        "Gleeok",
+        "Ganondorf"
+      ],
+      "no": [
+        "Pikachu",
+        "Rathalos"
+      ],
+      "prompt": "Name a monster or boss from a Legend of Zelda game.",
+      "family": "gaming"
+    },
+    {
+      "id": "authored-200-animal-crossing-characters",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Tom Nook",
+        "Isabelle",
+        "K.K. Slider",
+        "Blathers",
+        "Celeste",
+        "Timmy",
+        "Tommy",
+        "Mabel",
+        "Sable",
+        "Brewster",
+        "Mr. Resetti",
+        "Kapp’n",
+        "Raymond",
+        "Bob",
+        "Ankha",
+        "Marshal",
+        "Stitches",
+        "Goldie"
+      ],
+      "no": [
+        "Pikachu",
+        "Master Chief"
+      ],
+      "prompt": "Name a character from Animal Crossing.",
+      "family": "gaming"
+    },
+    {
+      "id": "authored-200-stardew-characters",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Abigail",
+        "Sebastian",
+        "Leah",
+        "Shane",
+        "Penny",
+        "Harvey",
+        "Elliott",
+        "Sam",
+        "Robin",
+        "Linus",
+        "Krobus",
+        "Pierre"
+      ],
+      "no": [
+        "Tom Nook",
+        "Ranni"
+      ],
+      "prompt": "Name a character from Stardew Valley.",
+      "family": "gaming"
+    },
+    {
+      "id": "authored-200-stardew-crops",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Parsnip",
+        "Potato",
+        "Cauliflower",
+        "Strawberry",
+        "Blueberry",
+        "Melon",
+        "Pumpkin",
+        "Starfruit",
+        "Ancient Fruit",
+        "Apple",
+        "Pineapple",
+        "Coffee Bean"
+      ],
+      "no": [
+        "Diamond",
+        "Golden Pumpkin"
+      ],
+      "prompt": "Name a crop or fruit-tree harvest you can grow in Stardew Valley.",
+      "family": "gaming"
+    },
+    {
+      "id": "authored-200-stardew-fish",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Catfish",
+        "Sturgeon",
+        "Largemouth Bass",
+        "Smallmouth Bass",
+        "Salmon",
+        "Tuna",
+        "Eel",
+        "Pufferfish",
+        "Rainbow Trout",
+        "Legend",
+        "Angler",
+        "Crimsonfish"
+      ],
+      "no": [
+        "Clownfish",
+        "Megalodon"
+      ],
+      "prompt": "Name a fish you can catch in Stardew Valley.",
+      "family": "gaming"
+    },
+    {
+      "id": "authored-200-stardew-recipes",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Fried Egg",
+        "Omelet",
+        "Salad",
+        "Cheese Cauliflower",
+        "Parsnip Soup",
+        "Pizza",
+        "Spaghetti",
+        "Pink Cake",
+        "Complete Breakfast",
+        "Pumpkin Soup",
+        "Lucky Lunch",
+        "Spicy Eel"
+      ],
+      "no": [
+        "Golden Apple",
+        "Sweetroll"
+      ],
+      "prompt": "Name a cooking recipe from Stardew Valley.",
+      "family": "gaming"
+    },
+    {
+      "id": "authored-200-sonic-characters",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Sonic",
+        "Tails",
+        "Knuckles",
+        "Amy Rose",
+        "Shadow",
+        "Dr. Eggman",
+        "Rouge",
+        "Silver",
+        "Blaze",
+        "Cream",
+        "Big the Cat",
+        "Metal Sonic"
+      ],
+      "no": [
+        "Master Chief",
+        "Wario"
+      ],
+      "prompt": "Name a character from a Sonic the Hedgehog game.",
+      "family": "gaming"
+    },
+    {
+      "id": "authored-200-street-fighter-fighters",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Ryu",
+        "Ken",
+        "Chun-Li",
+        "Guile",
+        "Cammy",
+        "Zangief",
+        "Blanka",
+        "Dhalsim",
+        "Akuma",
+        "Sagat",
+        "M. Bison",
+        "Juri"
+      ],
+      "no": [
+        "Scorpion",
+        "Jin Kazama"
+      ],
+      "prompt": "Name a playable fighter from the main Street Fighter games.",
+      "family": "gaming"
+    },
+    {
+      "id": "authored-200-mortal-kombat-fighters",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Scorpion",
+        "Sub-Zero",
+        "Liu Kang",
+        "Raiden",
+        "Johnny Cage",
+        "Sonya Blade",
+        "Jax",
+        "Kitana",
+        "Mileena",
+        "Kung Lao",
+        "Shang Tsung",
+        "Reptile"
+      ],
+      "no": [
+        "Ryu",
+        "Kazuya Mishima"
+      ],
+      "prompt": "Name a playable fighter from Mortal Kombat.",
+      "family": "gaming"
+    },
+    {
+      "id": "authored-200-tekken-fighters",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Jin Kazama",
+        "Kazuya Mishima",
+        "Heihachi Mishima",
+        "Nina Williams",
+        "Paul Phoenix",
+        "King",
+        "Yoshimitsu",
+        "Hwoarang",
+        "Ling Xiaoyu",
+        "Marshall Law",
+        "Bryan Fury",
+        "Panda"
+      ],
+      "no": [
+        "Chun-Li",
+        "Scorpion"
+      ],
+      "prompt": "Name a playable fighter from Tekken.",
+      "family": "gaming"
+    },
+    {
+      "id": "authored-200-pokemon-ball-types",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Poke Ball",
+        "Great Ball",
+        "Ultra Ball",
+        "Master Ball",
+        "Premier Ball",
+        "Luxury Ball",
+        "Quick Ball",
+        "Dusk Ball",
+        "Dive Ball",
+        "Net Ball",
+        "Timer Ball",
+        "Safari Ball"
+      ],
+      "no": [
+        "Dragon Ball",
+        "Crystal Ball",
+        "Pester Ball"
+      ],
+      "prompt": "Name a type of Poké Ball from the Pokémon games.",
+      "family": "gaming"
+    },
+    {
+      "id": "authored-200-minecraft-music-discs",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Cat",
+        "13",
+        "11",
+        "Pigstep",
+        "Otherside",
+        "Relic",
+        "5",
+        "Mellohi",
+        "Stal",
+        "Chirp",
+        "Blocks",
+        "Wait"
+      ],
+      "no": [
+        "Megalovania",
+        "Never Gonna Give You Up"
+      ],
+      "prompt": "Name a music disc in vanilla Minecraft.",
+      "family": "gaming"
+    },
+    {
+      "id": "authored-200-minecraft-effects",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Speed",
+        "Slowness",
+        "Strength",
+        "Poison",
+        "Regeneration",
+        "Invisibility",
+        "Night Vision",
+        "Fire Resistance",
+        "Water Breathing",
+        "Haste",
+        "Weakness",
+        "Wither"
+      ],
+      "no": [
+        "Burning Rage",
+        "Mega Evolution"
+      ],
+      "prompt": "Name a status effect in vanilla Minecraft.",
+      "family": "gaming"
+    },
+    {
+      "id": "authored-200-minecraft-job-blocks",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Composter",
+        "Lectern",
+        "Brewing Stand",
+        "Blast Furnace",
+        "Smoker",
+        "Barrel",
+        "Loom",
+        "Stonecutter",
+        "Cartography Table",
+        "Fletching Table",
+        "Smithing Table",
+        "Grindstone"
+      ],
+      "no": [
+        "Crafting Table",
+        "Furnace"
+      ],
+      "prompt": "Name a villager job-site block in Minecraft.",
+      "family": "gaming"
+    },
+    {
+      "id": "authored-200-fortnite-vehicles",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Shopping Cart",
+        "ATK",
+        "Quadcrasher",
+        "Driftboard",
+        "The Baller",
+        "Motorboat",
+        "Choppa",
+        "Whiplash",
+        "Trail Thrasher",
+        "Rogue Bike",
+        "Octane",
+        "Nitro Fang"
+      ],
+      "no": [
+        "Battle Bus Balloon",
+        "Mjolnir"
+      ],
+      "prompt": "Name a drivable vehicle or vehicle body that has appeared in Fortnite Battle Royale.",
+      "family": "gaming"
+    },
+    {
+      "id": "authored-200-elden-ring-weapons",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Rivers of Blood",
+        "Moonveil",
+        "Bloodhound's Fang",
+        "Blasphemous Blade",
+        "Dark Moon Greatsword",
+        "Uchigatana",
+        "Nagakiba",
+        "Reduvia",
+        "Claymore",
+        "Zweihander",
+        "Giant-Crusher",
+        "Bolt of Gransax"
+      ],
+      "no": [
+        "Master Sword",
+        "Buster Sword"
+      ],
+      "prompt": "Name a weapon, staff or sacred seal from Elden Ring.",
+      "family": "gaming"
+    },
+    {
+      "id": "authored-200-elden-ring-spells",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Comet Azur",
+        "Glintstone Pebble",
+        "Rock Sling",
+        "Carian Slicer",
+        "Night Comet",
+        "Ranni's Dark Moon",
+        "Golden Vow",
+        "Flame, Grant Me Strength",
+        "Rotten Breath",
+        "Lightning Spear",
+        "Black Flame",
+        "Flame, Cleanse Me"
+      ],
+      "no": [
+        "Expelliarmus",
+        "Fus Ro Dah"
+      ],
+      "prompt": "Name a sorcery or incantation from Elden Ring.",
+      "family": "gaming"
+    },
+    {
+      "id": "authored-200-terraria-bosses",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "King Slime",
+        "Eye of Cthulhu",
+        "Eater of Worlds",
+        "Brain of Cthulhu",
+        "Queen Bee",
+        "Skeletron",
+        "Wall of Flesh",
+        "The Destroyer",
+        "Plantera",
+        "Golem",
+        "Duke Fishron",
+        "Moon Lord"
+      ],
+      "no": [
+        "Ender Dragon",
+        "Bowser"
+      ],
+      "prompt": "Name a boss or miniboss from Terraria.",
+      "family": "gaming"
+    },
+    {
+      "id": "authored-200-video-game-currencies",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "V-Bucks",
+        "Robux",
+        "Minecoins",
+        "Simoleons",
+        "Gil",
+        "Rupees",
+        "Bells",
+        "Poke Dollars",
+        "Apex Coins",
+        "Valorant Points",
+        "Galleons",
+        "Bottle Caps"
+      ],
+      "no": [
+        "Photosynthesis",
+        "Middle C"
+      ],
+      "prompt": "Name a named currency used in a video game.",
+      "family": "gaming"
+    },
+    {
+      "id": "authored-200-team-fortress-weapons",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Rocket Launcher",
+        "Scattergun",
+        "Flamethrower",
+        "Minigun",
+        "Sniper Rifle",
+        "Knife",
+        "Medi Gun",
+        "Stickybomb Launcher",
+        "Grenade Launcher",
+        "Ambassador",
+        "Force-A-Nature",
+        "Sandman"
+      ],
+      "no": [
+        "Rivers of Blood",
+        "Moonveil"
+      ],
+      "prompt": "Name a weapon or equippable combat item from Team Fortress 2.",
+      "family": "gaming"
+    },
+    {
+      "id": "authored-200-counter-strike-maps",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Dust II",
+        "Mirage",
+        "Inferno",
+        "Nuke",
+        "Train",
+        "Cache",
+        "Overpass",
+        "Ancient",
+        "Anubis",
+        "Vertigo",
+        "Cobblestone",
+        "Office"
+      ],
+      "no": [
+        "Summoner's Rift",
+        "Tilted Towers"
+      ],
+      "prompt": "Name an official map from a Counter-Strike game.",
+      "family": "gaming"
+    },
+    {
+      "id": "authored-200-apex-legends",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Wraith",
+        "Bangalore",
+        "Lifeline",
+        "Bloodhound",
+        "Gibraltar",
+        "Pathfinder",
+        "Mirage",
+        "Octane",
+        "Wattson",
+        "Crypto",
+        "Revenant",
+        "Loba"
+      ],
+      "no": [
+        "Tracer",
+        "Jett"
+      ],
+      "prompt": "Name a playable Legend from Apex Legends.",
+      "family": "gaming"
+    },
+    {
+      "id": "authored-200-drake-songs",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "God’s Plan",
+        "Hotline Bling",
+        "One Dance",
+        "Passionfruit",
+        "In My Feelings",
+        "Nice for What",
+        "Started from the Bottom",
+        "Headlines",
+        "Take Care",
+        "Marvins Room",
+        "Best I Ever Had",
+        "Find Your Love",
+        "Hold On, We’re Going Home",
+        "Forever",
+        "Jumpman",
+        "Nonstop",
+        "Rich Flex",
+        "First Person Shooter",
+        "Jimmy Cooks",
+        "Laugh Now Cry Later"
+      ],
+      "no": [
+        "HUMBLE.",
+        "Bohemian Rhapsody"
+      ],
+      "prompt": "Name a song by Drake.",
+      "family": "music"
+    },
+    {
+      "id": "authored-200-eminem-songs",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Lose Yourself",
+        "Without Me",
+        "The Real Slim Shady",
+        "Stan",
+        "Mockingbird",
+        "Not Afraid",
+        "Love the Way You Lie",
+        "Rap God",
+        "Godzilla",
+        "My Name Is",
+        "Till I Collapse",
+        "The Monster",
+        "When I’m Gone",
+        "Cleanin’ Out My Closet",
+        "Superman",
+        "Sing for the Moment",
+        "Just Lose It",
+        "Houdini",
+        "Lucky You",
+        "Berzerk"
+      ],
+      "no": [
+        "SICKO MODE",
+        "No Role Modelz"
+      ],
+      "prompt": "Name a song by Eminem.",
+      "family": "music"
+    },
+    {
+      "id": "authored-200-travis-scott-songs",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "SICKO MODE",
+        "goosebumps",
+        "HIGHEST IN THE ROOM",
+        "FE!N",
+        "Antidote",
+        "BUTTERFLY EFFECT",
+        "90210",
+        "SKELETONS",
+        "3500",
+        "I KNOW ?",
+        "MY EYES",
+        "TELEKINESIS",
+        "STARGAZING",
+        "MELTDOWN",
+        "CAN’T SAY",
+        "MAFIA",
+        "HYAENA",
+        "NO BYSTANDERS",
+        "Oh My Dis Side",
+        "pick up the phone"
+      ],
+      "no": [
+        "HUMBLE.",
+        "Blank Space"
+      ],
+      "prompt": "Name a song by Travis Scott.",
+      "family": "music"
+    },
+    {
+      "id": "authored-200-tyler-the-creator-songs",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "See You Again",
+        "EARFQUAKE",
+        "NEW MAGIC WAND",
+        "WUSYANAME",
+        "Yonkers",
+        "She",
+        "IFHY",
+        "Who Dat Boy",
+        "Boredom",
+        "DOGTOOTH",
+        "SWEET / I THOUGHT YOU WANTED TO DANCE",
+        "911 / Mr. Lonely",
+        "BEST INTEREST",
+        "A BOY IS A GUN",
+        "GONE, GONE / THANK YOU",
+        "Noid",
+        "Sticky",
+        "Like Him",
+        "JUGGERNAUT",
+        "SORRY NOT SORRY"
+      ],
+      "no": [
+        "Hotline Bling",
+        "Cruel Summer"
+      ],
+      "prompt": "Name a song by Tyler, The Creator.",
+      "family": "music"
+    },
+    {
+      "id": "authored-200-frank-ocean-songs",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Thinkin Bout You",
+        "Pink + White",
+        "Nights",
+        "Ivy",
+        "Lost",
+        "Self Control",
+        "White Ferrari",
+        "Novacane",
+        "Chanel",
+        "Pyramids",
+        "Super Rich Kids",
+        "Swim Good",
+        "Bad Religion",
+        "Godspeed",
+        "Solo",
+        "Nikes",
+        "Biking",
+        "In My Room",
+        "DHL",
+        "Moon River"
+      ],
+      "no": [
+        "After Hours",
+        "God’s Plan"
+      ],
+      "prompt": "Name a song by Frank Ocean.",
+      "family": "music"
+    },
+    {
+      "id": "authored-200-post-malone-songs",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Sunflower",
+        "Circles",
+        "Rockstar",
+        "Congratulations",
+        "White Iverson",
+        "Better Now",
+        "Psycho",
+        "I Fall Apart",
+        "Wow.",
+        "Candy Paint",
+        "Goodbyes",
+        "I Had Some Help",
+        "Chemical",
+        "Feeling Whitney",
+        "Stay",
+        "Hollywood’s Bleeding",
+        "One Right Now",
+        "Mourning",
+        "Pour Me a Drink",
+        "Overdrive"
+      ],
+      "no": [
+        "Blinding Lights",
+        "HUMBLE."
+      ],
+      "prompt": "Name a song by Post Malone.",
+      "family": "music"
+    },
+    {
+      "id": "authored-200-mac-miller-songs",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Self Care",
+        "The Spins",
+        "Weekend",
+        "Donald Trump",
+        "Dang!",
+        "Good News",
+        "Blue World",
+        "2009",
+        "Come Back to Earth",
+        "Congratulations",
+        "Ladders",
+        "Small Worlds",
+        "Objects in the Mirror",
+        "Best Day Ever",
+        "Nikes on My Feet",
+        "Knock Knock",
+        "100 Grandkids",
+        "Hurt Feelings",
+        "Surf",
+        "Circles"
+      ],
+      "no": [
+        "SICKO MODE",
+        "Espresso"
+      ],
+      "prompt": "Name a song by Mac Miller.",
+      "family": "music"
+    },
+    {
+      "id": "authored-200-doja-cat-songs",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Say So",
+        "Kiss Me More",
+        "Paint the Town Red",
+        "Woman",
+        "Need to Know",
+        "Agora Hills",
+        "Get Into It (Yuh)",
+        "Streets",
+        "You Right",
+        "Like That",
+        "Boss Bitch",
+        "Juicy",
+        "Rules",
+        "Demons",
+        "Attention",
+        "Vegas",
+        "Tia Tamera",
+        "Candy",
+        "Mooo!",
+        "Go to Town"
+      ],
+      "no": [
+        "Super Bass",
+        "God’s Plan"
+      ],
+      "prompt": "Name a song by Doja Cat.",
+      "family": "music"
+    },
+    {
+      "id": "authored-200-nicki-minaj-songs",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Super Bass",
+        "Starships",
+        "Anaconda",
+        "Super Freaky Girl",
+        "Chun-Li",
+        "Moment 4 Life",
+        "Pound the Alarm",
+        "Beez in the Trap",
+        "Your Love",
+        "Only",
+        "Truffle Butter",
+        "Chun Swae",
+        "FTCU",
+        "Everybody",
+        "Red Ruby Da Sleeze",
+        "The Night Is Still Young",
+        "Va Va Voom",
+        "Right Thru Me",
+        "Feeling Myself",
+        "Roman’s Revenge"
+      ],
+      "no": [
+        "Bodak Yellow",
+        "WAP"
+      ],
+      "prompt": "Name a song by Nicki Minaj.",
+      "family": "music"
+    },
+    {
+      "id": "authored-200-juice-wrld-songs",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Lucid Dreams",
+        "All Girls Are the Same",
+        "Robbery",
+        "Wishing Well",
+        "Lean Wit Me",
+        "Legends",
+        "Bandit",
+        "Come & Go",
+        "Righteous",
+        "Empty",
+        "Armed and Dangerous",
+        "Black & White",
+        "Hear Me Calling",
+        "Fast",
+        "Smile",
+        "Already Dead",
+        "Burn",
+        "Sometimes",
+        "Conversations",
+        "Graduation"
+      ],
+      "no": [
+        "XO TOUR Llif3",
+        "SICKO MODE"
+      ],
+      "prompt": "Name a song by Juice WRLD.",
+      "family": "music"
+    },
+    {
+      "id": "authored-200-lil-uzi-vert-songs",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "XO TOUR Llif3",
+        "Just Wanna Rock",
+        "20 Min",
+        "The Way Life Goes",
+        "Money Longer",
+        "You Was Right",
+        "Do What I Want",
+        "Ps & Qs",
+        "Erase Your Social",
+        "Myron",
+        "Sanguine Paradise",
+        "Neon Guts",
+        "Futsal Shuffle 2020",
+        "Baby Pluto",
+        "That Way",
+        "Sauce It Up",
+        "New Patek",
+        "Two",
+        "Flooded The Face",
+        "Endless Fashion"
+      ],
+      "no": [
+        "Bohemian Rhapsody",
+        "HUMBLE."
+      ],
+      "prompt": "Name a song by Lil Uzi Vert.",
+      "family": "music"
+    },
+    {
+      "id": "authored-200-lil-wayne-songs",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Lollipop",
+        "A Milli",
+        "6 Foot 7 Foot",
+        "Mrs. Officer",
+        "How to Love",
+        "Mirror",
+        "Love Me",
+        "Right Above It",
+        "She Will",
+        "Drop the World",
+        "Go DJ",
+        "Hustler Musik",
+        "Fireman",
+        "Got Money",
+        "John",
+        "Uproar",
+        "Mona Lisa",
+        "Let the Beat Build",
+        "Mr. Carter",
+        "Tie My Hands"
+      ],
+      "no": [
+        "God’s Plan",
+        "Mask Off"
+      ],
+      "prompt": "Name a song by Lil Wayne.",
+      "family": "music"
+    },
+    {
+      "id": "authored-200-jay-z-songs",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Empire State of Mind",
+        "Numb/Encore",
+        "99 Problems",
+        "Big Pimpin’",
+        "Izzo (H.O.V.A.)",
+        "Hard Knock Life (Ghetto Anthem)",
+        "Dirt Off Your Shoulder",
+        "Run This Town",
+        "Holy Grail",
+        "The Story of O.J.",
+        "Public Service Announcement",
+        "Can I Get A...",
+        "Heart of the City (Ain’t No Love)",
+        "Dead Presidents II",
+        "Can’t Knock the Hustle",
+        "Song Cry",
+        "No Church in the Wild",
+        "Otis",
+        "Niggas in Paris",
+        "4:44"
+      ],
+      "no": [
+        "HUMBLE.",
+        "Lucid Dreams"
+      ],
+      "prompt": "Name a song by JAY-Z.",
+      "family": "music"
+    },
+    {
+      "id": "authored-200-kanye-west-songs",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Stronger",
+        "Gold Digger",
+        "Heartless",
+        "Runaway",
+        "Flashing Lights",
+        "All of the Lights",
+        "POWER",
+        "Jesus Walks",
+        "Through the Wire",
+        "All Falls Down",
+        "Good Life",
+        "Can’t Tell Me Nothing",
+        "Bound 2",
+        "Father Stretch My Hands Pt. 1",
+        "Ghost Town",
+        "I Wonder",
+        "Ultralight Beam",
+        "Black Skinhead",
+        "Famous",
+        "Touch the Sky"
+      ],
+      "no": [
+        "SICKO MODE",
+        "Hotline Bling"
+      ],
+      "prompt": "Name a song by Kanye West.",
+      "family": "music"
+    },
+    {
+      "id": "authored-200-future-songs",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Mask Off",
+        "March Madness",
+        "Turn On the Lights",
+        "Low Life",
+        "Life Is Good",
+        "Where Ya At",
+        "Fuck Up Some Commas",
+        "Stick Talk",
+        "Thought It Was a Drought",
+        "Codeine Crazy",
+        "Solo",
+        "WAIT FOR U",
+        "LOVE YOU BETTER",
+        "PUFFIN ON ZOOTIEZ",
+        "712PM",
+        "Type Shit",
+        "Like That",
+        "Too Comfortable",
+        "My Savages",
+        "Never Stop"
+      ],
+      "no": [
+        "HUMBLE.",
+        "XO TOUR Llif3"
+      ],
+      "prompt": "Name a song by Future.",
+      "family": "music"
+    },
+    {
+      "id": "authored-200-21-savage-songs",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "a lot",
+        "Bank Account",
+        "redrum",
+        "X",
+        "No Heart",
+        "Runnin",
+        "Glock in My Lap",
+        "ball w/o you",
+        "Rich Flex",
+        "Jimmy Cooks",
+        "Creepin’",
+        "surround sound",
+        "10 Freaky Girls",
+        "Peaches & Eggplants",
+        "née-nah",
+        "all of me",
+        "No Opp Left Behind",
+        "Many Men",
+        "Sneakin’",
+        "My Choppa Hate Niggas"
+      ],
+      "no": [
+        "Lucid Dreams",
+        "Gold Digger"
+      ],
+      "prompt": "Name a song by 21 Savage.",
+      "family": "music"
+    },
+    {
+      "id": "authored-200-lana-del-rey-songs",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Summertime Sadness",
+        "Video Games",
+        "Young and Beautiful",
+        "Born to Die",
+        "West Coast",
+        "Brooklyn Baby",
+        "Doin’ Time",
+        "Blue Jeans",
+        "National Anthem",
+        "Ride",
+        "Cinnamon Girl",
+        "Dark Paradise",
+        "Diet Mountain Dew",
+        "Love",
+        "Lust for Life",
+        "Mariners Apartment Complex",
+        "Venice Bitch",
+        "Norman fucking Rockwell",
+        "A&W",
+        "Say Yes to Heaven"
+      ],
+      "no": [
+        "Bad Guy",
+        "Cruel Summer"
+      ],
+      "prompt": "Name a song by Lana Del Rey.",
+      "family": "music"
+    },
+    {
+      "id": "authored-200-hozier-songs",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Take Me to Church",
+        "Too Sweet",
+        "Someone New",
+        "Work Song",
+        "From Eden",
+        "Cherry Wine",
+        "Jackie and Wilson",
+        "Like Real People Do",
+        "Almost (Sweet Music)",
+        "Movement",
+        "Dinner & Diatribes",
+        "Would That I",
+        "Nina Cried Power",
+        "Angel of Small Death and the Codeine Scene",
+        "Francesca",
+        "De Selby (Part 2)",
+        "Eat Your Young",
+        "Unknown / Nth",
+        "Abstract (Psychopomp)",
+        "First Time"
+      ],
+      "no": [
+        "Viva la Vida",
+        "Shape of You"
+      ],
+      "prompt": "Name a song by Hozier.",
+      "family": "music"
+    },
+    {
+      "id": "authored-200-gorillaz-songs",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Feel Good Inc.",
+        "Clint Eastwood",
+        "DARE",
+        "On Melancholy Hill",
+        "Dirty Harry",
+        "Rhinestone Eyes",
+        "Kids with Guns",
+        "19-2000",
+        "Stylo",
+        "Saturnz Barz",
+        "Humility",
+        "Tranz",
+        "Tomorrow Comes Today",
+        "Rock the House",
+        "El Mañana",
+        "Empire Ants",
+        "Andromeda",
+        "Cracker Island",
+        "New Gold",
+        "Silent Running"
+      ],
+      "no": [
+        "Bohemian Rhapsody",
+        "Mr. Brightside"
+      ],
+      "prompt": "Name a song by Gorillaz.",
+      "family": "music"
+    },
+    {
+      "id": "authored-200-paramore-songs",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Misery Business",
+        "Still Into You",
+        "Ain’t It Fun",
+        "The Only Exception",
+        "Decode",
+        "Hard Times",
+        "That’s What You Get",
+        "crushcrushcrush",
+        "Brick by Boring Brick",
+        "All I Wanted",
+        "Ignorance",
+        "Playing God",
+        "Last Hope",
+        "Rose-Colored Boy",
+        "Fake Happy",
+        "This Is Why",
+        "Running Out of Time",
+        "Emergency",
+        "Pressure",
+        "Hate to See Your Heart Break"
+      ],
+      "no": [
+        "Bring Me to Life",
+        "Mr. Brightside"
+      ],
+      "prompt": "Name a song by Paramore.",
+      "family": "music"
+    },
+    {
+      "id": "authored-200-frog-kinds",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Bullfrog",
+        "Tree frog",
+        "Poison dart frog",
+        "Common frog",
+        "American toad",
+        "Cane toad",
+        "Glass frog",
+        "Red-eyed tree frog",
+        "African clawed frog",
+        "Goliath frog",
+        "Surinam toad",
+        "Tomato frog"
+      ],
+      "no": [
+        "Axolotl",
+        "Komodo dragon"
+      ],
+      "prompt": "Name a kind of frog or toad.",
+      "family": "nature"
+    },
+    {
+      "id": "authored-200-lizard-kinds",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Iguana",
+        "Gecko",
+        "Chameleon",
+        "Komodo dragon",
+        "Bearded dragon",
+        "Leopard gecko",
+        "Skink",
+        "Anole",
+        "Gila monster",
+        "Monitor lizard",
+        "Frilled lizard",
+        "Green iguana"
+      ],
+      "no": [
+        "Salamander",
+        "Axolotl"
+      ],
+      "prompt": "Name a kind of lizard.",
+      "family": "nature"
+    },
+    {
+      "id": "authored-200-snake-kinds",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Cobra",
+        "King cobra",
+        "Python",
+        "Boa constrictor",
+        "Rattlesnake",
+        "Garter snake",
+        "Corn snake",
+        "Ball python",
+        "Black mamba",
+        "Anaconda",
+        "Copperhead",
+        "Cottonmouth"
+      ],
+      "no": [
+        "Slow worm",
+        "Caecilian"
+      ],
+      "prompt": "Name a kind of snake.",
+      "family": "nature"
+    },
+    {
+      "id": "authored-200-butterfly-kinds",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Monarch",
+        "Swallowtail",
+        "Painted lady",
+        "Red admiral",
+        "Cabbage white",
+        "Morpho",
+        "Viceroy",
+        "Peacock butterfly",
+        "Comma butterfly",
+        "Brimstone",
+        "Common blue",
+        "Glasswing"
+      ],
+      "no": [
+        "Luna moth",
+        "Atlas moth"
+      ],
+      "prompt": "Name a kind of butterfly.",
+      "family": "nature"
+    },
+    {
+      "id": "authored-200-moth-kinds",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Luna moth",
+        "Atlas moth",
+        "Silkworm moth",
+        "Peppered moth",
+        "Hummingbird hawk-moth",
+        "Death’s-head hawkmoth",
+        "Rosy maple moth",
+        "Cecropia moth",
+        "Polyphemus moth",
+        "Clothes moth",
+        "Emperor moth",
+        "Tiger moth"
+      ],
+      "no": [
+        "Monarch",
+        "Glasswing"
+      ],
+      "prompt": "Name a kind of moth.",
+      "family": "nature"
+    },
+    {
+      "id": "authored-200-bee-kinds",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Honey bee",
+        "Bumblebee",
+        "Carpenter bee",
+        "Mason bee",
+        "Leafcutter bee",
+        "Sweat bee",
+        "Mining bee",
+        "Cuckoo bee",
+        "Orchid bee",
+        "Stingless bee",
+        "Africanized honey bee",
+        "Blue orchard bee"
+      ],
+      "no": [
+        "Yellowjacket",
+        "Velvet ant"
+      ],
+      "prompt": "Name a kind of bee.",
+      "family": "nature"
+    },
+    {
+      "id": "authored-200-ant-kinds",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Fire ant",
+        "Carpenter ant",
+        "Leafcutter ant",
+        "Army ant",
+        "Bullet ant",
+        "Black garden ant",
+        "Pharaoh ant",
+        "Argentine ant",
+        "Weaver ant",
+        "Trap-jaw ant",
+        "Harvester ant",
+        "Pavement ant"
+      ],
+      "no": [
+        "Termite",
+        "Velvet ant"
+      ],
+      "prompt": "Name a kind of ant.",
+      "family": "nature"
+    },
+    {
+      "id": "authored-200-beetle-kinds",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Ladybug",
+        "Stag beetle",
+        "Rhinoceros beetle",
+        "Dung beetle",
+        "Firefly",
+        "Scarab",
+        "Weevil",
+        "Ground beetle",
+        "Click beetle",
+        "Tiger beetle",
+        "Japanese beetle",
+        "Longhorn beetle"
+      ],
+      "no": [
+        "Cockroach",
+        "Earwig"
+      ],
+      "prompt": "Name a kind of beetle.",
+      "family": "nature"
+    },
+    {
+      "id": "authored-200-horse-breeds",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Arabian",
+        "Thoroughbred",
+        "Quarter Horse",
+        "Mustang",
+        "Appaloosa",
+        "Clydesdale",
+        "Shire",
+        "Shetland pony",
+        "Friesian",
+        "Morgan",
+        "Tennessee Walking Horse",
+        "Andalusian"
+      ],
+      "no": [
+        "Dachshund",
+        "Holstein"
+      ],
+      "prompt": "Name a horse breed.",
+      "family": "nature"
+    },
+    {
+      "id": "authored-200-rabbit-breeds",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Holland Lop",
+        "Netherland Dwarf",
+        "Flemish Giant",
+        "Rex",
+        "Mini Rex",
+        "Lionhead",
+        "Dutch",
+        "English Lop",
+        "French Lop",
+        "Angora",
+        "Californian",
+        "New Zealand"
+      ],
+      "no": [
+        "Jackrabbit",
+        "Guinea pig"
+      ],
+      "prompt": "Name a rabbit breed.",
+      "family": "nature"
+    },
+    {
+      "id": "authored-200-cattle-breeds",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Angus",
+        "Hereford",
+        "Holstein",
+        "Jersey",
+        "Guernsey",
+        "Charolais",
+        "Limousin",
+        "Simmental",
+        "Highland",
+        "Brahman",
+        "Texas Longhorn",
+        "Shorthorn"
+      ],
+      "no": [
+        "Bison",
+        "Impala"
+      ],
+      "prompt": "Name a breed of cattle.",
+      "family": "nature"
+    },
+    {
+      "id": "authored-200-pig-breeds",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Berkshire",
+        "Duroc",
+        "Hampshire",
+        "Yorkshire",
+        "Large White",
+        "Landrace",
+        "Tamworth",
+        "Gloucestershire Old Spots",
+        "Mangalica",
+        "Vietnamese Pot-bellied",
+        "Meishan",
+        "Pietrain"
+      ],
+      "no": [
+        "Warthog",
+        "Peccary"
+      ],
+      "prompt": "Name a pig breed.",
+      "family": "nature"
+    },
+    {
+      "id": "authored-200-sheep-breeds",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Merino",
+        "Suffolk",
+        "Dorset",
+        "Dorper",
+        "Hampshire",
+        "Southdown",
+        "Lincoln",
+        "Romney",
+        "Jacob",
+        "Icelandic",
+        "Shetland",
+        "Texel"
+      ],
+      "no": [
+        "Alpaca",
+        "Angora goat"
+      ],
+      "prompt": "Name a sheep breed.",
+      "family": "nature"
+    },
+    {
+      "id": "authored-200-goat-breeds",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Nubian",
+        "Boer",
+        "Saanen",
+        "Alpine",
+        "Toggenburg",
+        "LaMancha",
+        "Nigerian Dwarf",
+        "Pygmy",
+        "Angora",
+        "Kiko",
+        "Myotonic",
+        "Oberhasli"
+      ],
+      "no": [
+        "Chamois",
+        "Rocky Mountain goat"
+      ],
+      "prompt": "Name a goat breed.",
+      "family": "nature"
+    },
+    {
+      "id": "authored-200-duck-breeds",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Pekin",
+        "Indian Runner",
+        "Khaki Campbell",
+        "Muscovy",
+        "Cayuga",
+        "Rouen",
+        "Welsh Harlequin",
+        "Swedish Blue",
+        "Call duck",
+        "Aylesbury",
+        "Silver Appleyard",
+        "Buff Orpington"
+      ],
+      "no": [
+        "Canada goose",
+        "Mandarin duck"
+      ],
+      "prompt": "Name a domestic duck breed.",
+      "family": "nature"
+    },
+    {
+      "id": "authored-200-chicken-breeds",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Leghorn",
+        "Rhode Island Red",
+        "Plymouth Rock",
+        "Silkie",
+        "Orpington",
+        "Brahma",
+        "Wyandotte",
+        "Sussex",
+        "Australorp",
+        "Cornish",
+        "Cochin",
+        "Ameraucana"
+      ],
+      "no": [
+        "Mallard",
+        "Peacock"
+      ],
+      "prompt": "Name a chicken breed.",
+      "family": "nature"
+    },
+    {
+      "id": "authored-200-fish-kinds",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Salmon",
+        "Tuna",
+        "Cod",
+        "Trout",
+        "Goldfish",
+        "Clownfish",
+        "Angelfish",
+        "Shark",
+        "Guppy",
+        "Carp",
+        "Catfish",
+        "Pufferfish"
+      ],
+      "no": [
+        "Orca",
+        "Cuttlefish"
+      ],
+      "prompt": "Name a kind of fish.",
+      "family": "nature"
+    },
+    {
+      "id": "authored-200-aquarium-fish",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Goldfish",
+        "Betta",
+        "Guppy",
+        "Neon tetra",
+        "Angelfish",
+        "Molly",
+        "Platy",
+        "Swordtail",
+        "Gourami",
+        "Discus",
+        "Oscar",
+        "Pleco"
+      ],
+      "no": [
+        "Clownfish",
+        "Blue tang"
+      ],
+      "prompt": "Name a freshwater fish commonly kept in an aquarium.",
+      "family": "nature"
+    },
+    {
+      "id": "authored-200-turtle-kinds",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Sea turtle",
+        "Green sea turtle",
+        "Loggerhead",
+        "Leatherback",
+        "Snapping turtle",
+        "Alligator snapping turtle",
+        "Box turtle",
+        "Red-eared slider",
+        "Painted turtle",
+        "Softshell turtle",
+        "Galapagos tortoise",
+        "Aldabra giant tortoise"
+      ],
+      "no": [
+        "Armadillo",
+        "Pangolin"
+      ],
+      "prompt": "Name a kind of turtle or tortoise.",
+      "family": "nature"
+    },
+    {
+      "id": "authored-200-crocodilian-kinds",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "American alligator",
+        "Chinese alligator",
+        "Nile crocodile",
+        "Saltwater crocodile",
+        "American crocodile",
+        "Mugger crocodile",
+        "Freshwater crocodile",
+        "Siamese crocodile",
+        "Cuban crocodile",
+        "Spectacled caiman",
+        "Black caiman",
+        "Gharial"
+      ],
+      "no": [
+        "Komodo dragon",
+        "Tuatara"
+      ],
+      "prompt": "Name a kind of crocodile, alligator, caiman or gharial.",
+      "family": "nature"
+    },
+    {
+      "id": "authored-200-songbird-kinds",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Robin",
+        "Sparrow",
+        "Finch",
+        "Canary",
+        "Nightingale",
+        "Blackbird",
+        "Thrush",
+        "Wren",
+        "Lark",
+        "Warbler",
+        "Cardinal",
+        "Mockingbird"
+      ],
+      "no": [
+        "Hummingbird",
+        "Woodpecker"
+      ],
+      "prompt": "Name a kind of songbird.",
+      "family": "nature"
+    },
+    {
+      "id": "authored-200-bear-kinds",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Brown bear",
+        "Polar bear",
+        "American black bear",
+        "Asiatic black bear",
+        "Giant panda",
+        "Sloth bear",
+        "Sun bear",
+        "Spectacled bear",
+        "Grizzly bear",
+        "Kodiak bear",
+        "Cinnamon bear",
+        "Kermode bear"
+      ],
+      "no": [
+        "Red panda",
+        "Koala"
+      ],
+      "prompt": "Name a kind of bear.",
+      "family": "nature"
+    },
+    {
+      "id": "authored-200-acid-kinds",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Hydrochloric acid",
+        "Sulfuric acid",
+        "Nitric acid",
+        "Acetic acid",
+        "Citric acid",
+        "Carbonic acid",
+        "Lactic acid",
+        "Ascorbic acid",
+        "Phosphoric acid",
+        "Formic acid",
+        "Sulfurous acid",
+        "Hydrofluoric acid"
+      ],
+      "no": [
+        "Sodium hydroxide",
+        "Ammonia"
+      ],
+      "prompt": "Name an acid.",
+      "family": "science"
+    },
+    {
+      "id": "authored-200-alloy-kinds",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Steel",
+        "Stainless steel",
+        "Brass",
+        "Bronze",
+        "Pewter",
+        "Solder",
+        "Sterling silver",
+        "White gold",
+        "Rose gold",
+        "Cast iron",
+        "Duralumin",
+        "Nichrome"
+      ],
+      "no": [
+        "Pure copper",
+        "Pure gold"
+      ],
+      "prompt": "Name a metal alloy.",
+      "family": "science"
+    },
+    {
+      "id": "authored-200-chemical-compounds",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Water",
+        "Sodium chloride",
+        "Carbon dioxide",
+        "Carbon monoxide",
+        "Ammonia",
+        "Methane",
+        "Glucose",
+        "Sucrose",
+        "Sodium bicarbonate",
+        "Calcium carbonate",
+        "Ethanol",
+        "Hydrogen peroxide"
+      ],
+      "no": [
+        "Helium",
+        "Pure iron"
+      ],
+      "prompt": "Name a chemical compound.",
+      "family": "science"
+    },
+    {
+      "id": "authored-200-mineral-kinds",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Quartz",
+        "Feldspar",
+        "Mica",
+        "Calcite",
+        "Gypsum",
+        "Halite",
+        "Fluorite",
+        "Pyrite",
+        "Hematite",
+        "Magnetite",
+        "Talc",
+        "Diamond"
+      ],
+      "no": [
+        "Obsidian",
+        "Amber"
+      ],
+      "prompt": "Name a mineral.",
+      "family": "science"
+    },
+    {
+      "id": "authored-200-polymers",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Plastic",
+        "Polyethylene",
+        "Polypropylene",
+        "Polystyrene",
+        "PVC",
+        "Nylon",
+        "Polyester",
+        "Rubber",
+        "Cellulose",
+        "Starch",
+        "DNA",
+        "Protein"
+      ],
+      "no": [
+        "Sodium chloride",
+        "Diamond"
+      ],
+      "prompt": "Name a natural or synthetic polymer.",
+      "family": "science"
+    },
+    {
+      "id": "authored-200-electronic-components",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Resistor",
+        "Capacitor",
+        "Diode",
+        "Transistor",
+        "Inductor",
+        "Integrated circuit",
+        "LED",
+        "Switch",
+        "Relay",
+        "Fuse",
+        "Transformer",
+        "Battery"
+      ],
+      "no": [
+        "Wrench",
+        "Hydraulic pump"
+      ],
+      "prompt": "Name an electronic component.",
+      "family": "science"
+    },
+    {
+      "id": "authored-200-computer-peripherals",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Keyboard",
+        "Mouse",
+        "Monitor",
+        "Printer",
+        "Scanner",
+        "Webcam",
+        "Microphone",
+        "Speakers",
+        "Headphones",
+        "Game controller",
+        "Joystick",
+        "External hard drive"
+      ],
+      "no": [
+        "CPU instruction",
+        "Spreadsheet formula"
+      ],
+      "prompt": "Name a computer peripheral.",
+      "family": "science"
+    },
+    {
+      "id": "authored-200-computer-connectors",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "USB",
+        "USB-A",
+        "USB-C",
+        "USB-B",
+        "HDMI",
+        "DisplayPort",
+        "VGA",
+        "DVI",
+        "Ethernet",
+        "Thunderbolt",
+        "3.5 mm audio jack",
+        "Lightning"
+      ],
+      "no": [
+        "Bluetooth keyboard",
+        "Computer virus"
+      ],
+      "prompt": "Name a computer connector or connection port.",
+      "family": "science"
+    },
+    {
+      "id": "authored-200-computer-file-formats",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "PDF",
+        "JPEG",
+        "PNG",
+        "GIF",
+        "MP3",
+        "MP4",
+        "TXT",
+        "DOCX",
+        "XLSX",
+        "PPTX",
+        "ZIP",
+        "CSV"
+      ],
+      "no": [
+        "USB cable",
+        "Keyboard"
+      ],
+      "prompt": "Name a computer file format.",
+      "family": "science"
+    },
+    {
+      "id": "authored-200-battery-cell-types",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Alkaline battery",
+        "Lithium-ion battery",
+        "Lithium-polymer battery",
+        "Lead-acid battery",
+        "Nickel-metal hydride",
+        "Nickel-cadmium",
+        "Zinc-carbon battery",
+        "Lithium battery",
+        "Button cell",
+        "AA battery",
+        "AAA battery",
+        "9-volt battery"
+      ],
+      "no": [
+        "Supercapacitor",
+        "Solar panel"
+      ],
+      "prompt": "Name a battery or electrochemical cell type.",
+      "family": "science"
+    },
+    {
+      "id": "authored-200-human-organs",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Heart",
+        "Brain",
+        "Liver",
+        "Kidney",
+        "Lung",
+        "Stomach",
+        "Intestine",
+        "Skin",
+        "Pancreas",
+        "Spleen",
+        "Gallbladder",
+        "Bladder"
+      ],
+      "no": [
+        "Gill",
+        "Ovipositor"
+      ],
+      "prompt": "Name a human organ.",
+      "family": "science"
+    },
+    {
+      "id": "authored-200-vitamins-minerals",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Vitamin A",
+        "Vitamin B1",
+        "Vitamin B2",
+        "Vitamin B3",
+        "Vitamin B6",
+        "Vitamin B12",
+        "Vitamin C",
+        "Vitamin D",
+        "Vitamin E",
+        "Vitamin K",
+        "Calcium",
+        "Iron"
+      ],
+      "no": [
+        "Caffeine",
+        "Testosterone"
+      ],
+      "prompt": "Name a vitamin or dietary mineral.",
+      "family": "science"
+    },
+    {
+      "id": "authored-200-chemical-reaction-types",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Combustion",
+        "Oxidation",
+        "Reduction",
+        "Neutralization",
+        "Precipitation",
+        "Decomposition",
+        "Synthesis",
+        "Displacement",
+        "Double displacement",
+        "Hydrolysis",
+        "Fermentation",
+        "Polymerization"
+      ],
+      "no": [
+        "Melting",
+        "Boiling"
+      ],
+      "prompt": "Name a type of chemical reaction.",
+      "family": "science"
+    },
+    {
+      "id": "authored-200-energy-forms",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Kinetic energy",
+        "Potential energy",
+        "Chemical energy",
+        "Thermal energy",
+        "Electrical energy",
+        "Nuclear energy",
+        "Light energy",
+        "Sound energy",
+        "Mechanical energy",
+        "Gravitational potential energy",
+        "Elastic potential energy",
+        "Magnetic energy"
+      ],
+      "no": [
+        "Velocity",
+        "Electric current"
+      ],
+      "prompt": "Name a form or recognized type of energy.",
+      "family": "science"
+    },
+    {
+      "id": "authored-200-physical-forces",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Gravity",
+        "Friction",
+        "Tension",
+        "Normal force",
+        "Magnetic force",
+        "Electric force",
+        "Electromagnetic force",
+        "Strong nuclear force",
+        "Weak nuclear force",
+        "Air resistance",
+        "Buoyancy",
+        "Spring force"
+      ],
+      "no": [
+        "Momentum",
+        "Acceleration"
+      ],
+      "prompt": "Name a force or type of force in physics.",
+      "family": "science"
+    },
+    {
+      "id": "authored-200-scientific-laws",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Newton’s first law",
+        "Newton’s second law",
+        "Newton’s third law",
+        "Law of gravity",
+        "Ohm’s law",
+        "Boyle’s law",
+        "Charles’s law",
+        "Archimedes’ principle",
+        "Pascal’s law",
+        "Hooke’s law",
+        "Conservation of energy",
+        "Conservation of mass"
+      ],
+      "no": [
+        "Murphy’s law",
+        "Moore’s prediction"
+      ],
+      "prompt": "Name a scientific law or principle.",
+      "family": "science"
+    },
+    {
+      "id": "authored-200-nasa-missions",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Apollo",
+        "Apollo 11",
+        "Artemis",
+        "Space Shuttle",
+        "Mercury",
+        "Gemini",
+        "Voyager 1",
+        "Voyager 2",
+        "Hubble Space Telescope",
+        "James Webb Space Telescope",
+        "Curiosity",
+        "Perseverance"
+      ],
+      "no": [
+        "Venera 9",
+        "Mir"
+      ],
+      "prompt": "Name a NASA mission or spaceflight program.",
+      "family": "science"
+    },
+    {
+      "id": "authored-government-space-agencies",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "NASA",
+        "ESA",
+        "JAXA",
+        "ISRO",
+        "CNSA",
+        "Roscosmos",
+        "Canadian Space Agency",
+        "UK Space Agency",
+        "Australian Space Agency",
+        "Italian Space Agency",
+        "French Space Agency",
+        "German Aerospace Center"
+      ],
+      "no": [
+        "SpaceX",
+        "Blue Origin"
+      ],
+      "prompt": "Name a government space agency or international space-research organization.",
+      "family": "science"
+    },
+    {
+      "id": "authored-200-telescope-kinds",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Refracting telescope",
+        "Reflecting telescope",
+        "Radio telescope",
+        "Optical telescope",
+        "Space telescope",
+        "Newtonian telescope",
+        "Cassegrain telescope",
+        "Schmidt-Cassegrain telescope",
+        "Dobsonian telescope",
+        "Solar telescope",
+        "Infrared telescope",
+        "X-ray telescope"
+      ],
+      "no": [
+        "Microscope",
+        "Endoscope"
+      ],
+      "prompt": "Name a type of telescope.",
+      "family": "science"
+    },
+    {
+      "id": "authored-200-robot-types",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Industrial robot",
+        "Humanoid robot",
+        "Robotic arm",
+        "Cleaning robot",
+        "Vacuum robot",
+        "Surgical robot",
+        "Autonomous vehicle",
+        "Drone",
+        "Underwater robot",
+        "Rover",
+        "Social robot",
+        "Service robot"
+      ],
+      "no": [
+        "Search engine bot",
+        "Email spam bot"
+      ],
+      "prompt": "Name a type of physical robot.",
+      "family": "science"
+    },
+    {
+      "id": "authored-200-sensor-types",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Temperature sensor",
+        "Motion sensor",
+        "Light sensor",
+        "Pressure sensor",
+        "Proximity sensor",
+        "Humidity sensor",
+        "Smoke detector",
+        "Gas sensor",
+        "Accelerometer",
+        "Gyroscope",
+        "Microphone",
+        "Camera sensor"
+      ],
+      "no": [
+        "Screwdriver",
+        "Gearbox"
+      ],
+      "prompt": "Name a type of sensor.",
+      "family": "science"
+    },
+    {
+      "id": "authored-200-engineering-disciplines",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Mechanical engineering",
+        "Electrical engineering",
+        "Civil engineering",
+        "Chemical engineering",
+        "Software engineering",
+        "Computer engineering",
+        "Aerospace engineering",
+        "Biomedical engineering",
+        "Environmental engineering",
+        "Industrial engineering",
+        "Nuclear engineering",
+        "Materials engineering"
+      ],
+      "no": [
+        "Astrology",
+        "Accounting"
+      ],
+      "prompt": "Name an engineering discipline.",
+      "family": "science"
+    },
+    {
+      "id": "authored-200-search-engines",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Google",
+        "Bing",
+        "Yahoo",
+        "DuckDuckGo",
+        "Baidu",
+        "Yandex",
+        "Ecosia",
+        "Qwant",
+        "Brave Search",
+        "Startpage",
+        "Ask.com",
+        "AOL Search"
+      ],
+      "no": [
+        "Google Chrome",
+        "Mozilla Firefox"
+      ],
+      "prompt": "Name an internet search engine.",
+      "family": "science"
+    },
+    {
+      "id": "authored-200-nhl-players",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Wayne Gretzky",
+        "Sidney Crosby",
+        "Alex Ovechkin",
+        "Connor McDavid",
+        "Mario Lemieux",
+        "Gordie Howe",
+        "Bobby Orr",
+        "Patrick Kane",
+        "Nathan MacKinnon",
+        "Auston Matthews",
+        "Jaromir Jagr",
+        "Martin Brodeur"
+      ],
+      "no": [
+        "Michael Jordan",
+        "Tom Brady"
+      ],
+      "prompt": "Name someone who has played in the NHL.",
+      "family": "sports"
+    },
+    {
+      "id": "authored-200-nba-coaches",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Phil Jackson",
+        "Gregg Popovich",
+        "Pat Riley",
+        "Steve Kerr",
+        "Erik Spoelstra",
+        "Doc Rivers",
+        "Red Auerbach",
+        "Larry Brown",
+        "Mike D'Antoni",
+        "Jason Kidd",
+        "Tyronn Lue",
+        "Don Nelson"
+      ],
+      "no": [
+        "Bill Belichick",
+        "Nick Saban"
+      ],
+      "prompt": "Name an NBA head coach, past or present.",
+      "family": "sports"
+    },
+    {
+      "id": "authored-200-nfl-coaches",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Bill Belichick",
+        "Andy Reid",
+        "Vince Lombardi",
+        "Don Shula",
+        "Mike Tomlin",
+        "Tom Landry",
+        "Pete Carroll",
+        "Sean McVay",
+        "John Harbaugh",
+        "Jim Harbaugh",
+        "Kyle Shanahan",
+        "Dan Campbell"
+      ],
+      "no": [
+        "Phil Jackson",
+        "Steve Kerr"
+      ],
+      "prompt": "Name an NFL or AFL head coach, past or present.",
+      "family": "sports"
+    },
+    {
+      "id": "authored-200-nfl-mvp-winners",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Tom Brady",
+        "Peyton Manning",
+        "Aaron Rodgers",
+        "Patrick Mahomes",
+        "Lamar Jackson",
+        "Josh Allen",
+        "Brett Favre",
+        "Cam Newton",
+        "Adrian Peterson",
+        "LaDainian Tomlinson",
+        "Joe Montana",
+        "Kurt Warner"
+      ],
+      "no": [
+        "Jerry Rice",
+        "Drew Brees"
+      ],
+      "prompt": "Name a player who has won the AP NFL regular-season MVP award.",
+      "family": "sports"
+    },
+    {
+      "id": "authored-200-super-bowl-mvps",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Tom Brady",
+        "Patrick Mahomes",
+        "Joe Montana",
+        "Terry Bradshaw",
+        "Eli Manning",
+        "Peyton Manning",
+        "Nick Foles",
+        "Cooper Kupp",
+        "Julian Edelman",
+        "Von Miller",
+        "Ray Lewis",
+        "Drew Brees"
+      ],
+      "no": [
+        "Dan Marino",
+        "Barry Sanders"
+      ],
+      "prompt": "Name a player who has won Super Bowl MVP.",
+      "family": "sports"
+    },
+    {
+      "id": "authored-200-ballon-dor-winners",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Lionel Messi",
+        "Cristiano Ronaldo",
+        "Luka Modric",
+        "Karim Benzema",
+        "Ronaldinho",
+        "Ronaldo",
+        "Zinedine Zidane",
+        "Kaka",
+        "Alexia Putellas",
+        "Aitana Bonmati",
+        "Ada Hegerberg",
+        "Megan Rapinoe"
+      ],
+      "no": [
+        "Neymar",
+        "David Beckham"
+      ],
+      "prompt": "Name a footballer who has won the men's or women's Ballon d'Or.",
+      "family": "sports"
+    },
+    {
+      "id": "authored-200-champions-league-winning-clubs",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Real Madrid",
+        "Barcelona",
+        "Bayern Munich",
+        "Liverpool",
+        "Manchester United",
+        "Manchester City",
+        "Chelsea",
+        "AC Milan",
+        "Inter Milan",
+        "Juventus",
+        "Ajax",
+        "Porto"
+      ],
+      "no": [
+        "Tottenham Hotspur",
+        "Atletico Madrid"
+      ],
+      "prompt": "Name a club that has won the European Cup or UEFA Champions League.",
+      "family": "sports"
+    },
+    {
+      "id": "authored-200-nba-all-stars",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "LeBron James",
+        "Michael Jordan",
+        "Kobe Bryant",
+        "Stephen Curry",
+        "Kevin Durant",
+        "Shaquille O'Neal",
+        "Tim Duncan",
+        "Magic Johnson",
+        "Larry Bird",
+        "Allen Iverson",
+        "Giannis Antetokounmpo",
+        "Nikola Jokic"
+      ],
+      "no": [
+        "Seth Curry",
+        "Bronny James"
+      ],
+      "prompt": "Name a player selected for an NBA All-Star Game.",
+      "family": "sports"
+    },
+    {
+      "id": "authored-200-pro-wrestlers",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "John Cena",
+        "The Rock",
+        "The Undertaker",
+        "Hulk Hogan",
+        "Roman Reigns",
+        "Stone Cold Steve Austin",
+        "Randy Orton",
+        "Triple H",
+        "Shawn Michaels",
+        "CM Punk",
+        "Cody Rhodes",
+        "Rhea Ripley"
+      ],
+      "no": [
+        "Goku",
+        "Michael Jordan"
+      ],
+      "prompt": "Name a professional wrestler, past or present.",
+      "family": "sports"
+    },
+    {
+      "id": "authored-200-ufc-champions",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Conor McGregor",
+        "Jon Jones",
+        "Georges St-Pierre",
+        "Anderson Silva",
+        "Khabib Nurmagomedov",
+        "Ronda Rousey",
+        "Amanda Nunes",
+        "Israel Adesanya",
+        "Daniel Cormier",
+        "Stipe Miocic",
+        "Kamaru Usman",
+        "Alex Pereira"
+      ],
+      "no": [
+        "Jake Paul",
+        "Floyd Mayweather"
+      ],
+      "prompt": "Name a fighter who has held a UFC title.",
+      "family": "sports"
+    },
+    {
+      "id": "authored-200-boxing-world-champions",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Muhammad Ali",
+        "Mike Tyson",
+        "Floyd Mayweather",
+        "Manny Pacquiao",
+        "Canelo Alvarez",
+        "Sugar Ray Leonard",
+        "Lennox Lewis",
+        "Evander Holyfield",
+        "Tyson Fury",
+        "Oleksandr Usyk",
+        "Terence Crawford",
+        "Naoya Inoue"
+      ],
+      "no": [
+        "Bruce Lee",
+        "Khabib Nurmagomedov"
+      ],
+      "prompt": "Name a boxer who has won a recognized professional world title.",
+      "family": "sports"
+    },
+    {
+      "id": "authored-200-tennis-slam-champions",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Roger Federer",
+        "Rafael Nadal",
+        "Novak Djokovic",
+        "Serena Williams",
+        "Venus Williams",
+        "Andy Murray",
+        "Andre Agassi",
+        "Pete Sampras",
+        "Naomi Osaka",
+        "Coco Gauff",
+        "Iga Swiatek",
+        "Carlos Alcaraz"
+      ],
+      "no": [
+        "Anna Kournikova",
+        "Nick Kyrgios"
+      ],
+      "prompt": "Name a Grand Slam singles champion in tennis.",
+      "family": "sports"
+    },
+    {
+      "id": "authored-200-golf-major-champions",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Tiger Woods",
+        "Jack Nicklaus",
+        "Arnold Palmer",
+        "Phil Mickelson",
+        "Rory McIlroy",
+        "Scottie Scheffler",
+        "Brooks Koepka",
+        "Jordan Spieth",
+        "Annika Sorenstam",
+        "Nelly Korda",
+        "Lydia Ko",
+        "Michelle Wie West"
+      ],
+      "no": [
+        "Stephen Curry",
+        "Charles Barkley"
+      ],
+      "prompt": "Name a winner of a men's or women's major golf championship.",
+      "family": "sports"
+    },
+    {
+      "id": "authored-200-f1-constructors",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Ferrari",
+        "McLaren",
+        "Mercedes",
+        "Red Bull",
+        "Williams",
+        "Renault",
+        "Lotus",
+        "Aston Martin",
+        "Alpine",
+        "Haas",
+        "Sauber",
+        "Benetton"
+      ],
+      "no": [
+        "Joe Gibbs Racing",
+        "Hendrick Motorsports"
+      ],
+      "prompt": "Name a constructor that has competed in Formula One.",
+      "family": "sports"
+    },
+    {
+      "id": "authored-200-f1-circuits",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Silverstone",
+        "Monza",
+        "Monaco",
+        "Spa-Francorchamps",
+        "Suzuka",
+        "Interlagos",
+        "Imola",
+        "Circuit Gilles Villeneuve",
+        "Yas Marina",
+        "Hungaroring",
+        "Bahrain International Circuit",
+        "Circuit of the Americas"
+      ],
+      "no": [
+        "Mount Panorama",
+        "Isle of Man TT"
+      ],
+      "prompt": "Name a circuit that has hosted a Formula One World Championship race.",
+      "family": "sports"
+    },
+    {
+      "id": "authored-200-nascar-champions",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Richard Petty",
+        "Dale Earnhardt",
+        "Jimmie Johnson",
+        "Jeff Gordon",
+        "Tony Stewart",
+        "Kyle Busch",
+        "Chase Elliott",
+        "Joey Logano",
+        "Kevin Harvick",
+        "Kyle Larson",
+        "Ryan Blaney",
+        "Brad Keselowski"
+      ],
+      "no": [
+        "Dale Earnhardt Jr.",
+        "Danica Patrick"
+      ],
+      "prompt": "Name a NASCAR Cup Series champion.",
+      "family": "sports"
+    },
+    {
+      "id": "authored-200-hart-trophy-winners",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Wayne Gretzky",
+        "Mario Lemieux",
+        "Sidney Crosby",
+        "Alex Ovechkin",
+        "Connor McDavid",
+        "Nathan MacKinnon",
+        "Leon Draisaitl",
+        "Nikita Kucherov",
+        "Gordie Howe",
+        "Bobby Orr",
+        "Carey Price",
+        "Mark Messier"
+      ],
+      "no": [
+        "Nicklas Lidstrom",
+        "Patrick Roy"
+      ],
+      "prompt": "Name a winner of the NHL Hart Memorial Trophy.",
+      "family": "sports"
+    },
+    {
+      "id": "authored-200-sports-mascots",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Gritty",
+        "Phillie Phanatic",
+        "Mr. Met",
+        "Benny the Bull",
+        "Hugo",
+        "Sir Purr",
+        "KC Wolf",
+        "The Raptor",
+        "Rocky",
+        "Clutch",
+        "Gunnersaurus",
+        "Fred the Red"
+      ],
+      "no": [
+        "Mickey Mouse",
+        "SpongeBob SquarePants"
+      ],
+      "prompt": "Name a sports team's or school's mascot.",
+      "family": "sports"
+    },
+    {
+      "id": "authored-200-baseball-ballparks",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Fenway Park",
+        "Wrigley Field",
+        "Yankee Stadium",
+        "Dodger Stadium",
+        "Citi Field",
+        "Camden Yards",
+        "Oracle Park",
+        "Rogers Centre",
+        "Coors Field",
+        "Kauffman Stadium",
+        "Busch Stadium",
+        "Tiger Stadium"
+      ],
+      "no": [
+        "Lambeau Field",
+        "Madison Square Garden"
+      ],
+      "prompt": "Name a ballpark used by a Major League Baseball team, past or present.",
+      "family": "sports"
+    },
+    {
+      "id": "authored-200-nfl-stadiums",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Lambeau Field",
+        "Soldier Field",
+        "Arrowhead Stadium",
+        "AT&T Stadium",
+        "MetLife Stadium",
+        "Gillette Stadium",
+        "Bank of America Stadium",
+        "Hard Rock Stadium",
+        "Lincoln Financial Field",
+        "SoFi Stadium",
+        "Allegiant Stadium",
+        "Superdome"
+      ],
+      "no": [
+        "Old Trafford",
+        "Arthur Ashe Stadium"
+      ],
+      "prompt": "Name a stadium used for an NFL or AFL regular-season home game.",
+      "family": "sports"
+    },
+    {
+      "id": "authored-200-national-capitals",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Washington, D.C.",
+        "London",
+        "Paris",
+        "Tokyo",
+        "Rome",
+        "Berlin",
+        "Madrid",
+        "Ottawa",
+        "Canberra",
+        "Beijing",
+        "Cairo",
+        "New Delhi"
+      ],
+      "no": [
+        "Los Angeles",
+        "Sydney"
+      ],
+      "prompt": "Name a national capital city.",
+      "family": "world"
+    },
+    {
+      "id": "authored-200-us-national-parks",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Yellowstone",
+        "Yosemite",
+        "Grand Canyon",
+        "Great Smoky Mountains",
+        "Zion",
+        "Acadia",
+        "Everglades",
+        "Glacier",
+        "Grand Teton",
+        "Joshua Tree",
+        "Rocky Mountain",
+        "Olympic"
+      ],
+      "no": [
+        "Niagara Falls",
+        "Blue Ridge Parkway"
+      ],
+      "prompt": "Name a U.S. national park.",
+      "family": "world"
+    },
+    {
+      "id": "authored-200-airlines",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "American Airlines",
+        "Delta Air Lines",
+        "United Airlines",
+        "Southwest Airlines",
+        "JetBlue",
+        "Spirit Airlines",
+        "Frontier Airlines",
+        "British Airways",
+        "Emirates",
+        "Qatar Airways",
+        "Singapore Airlines",
+        "Air France"
+      ],
+      "no": [
+        "Amtrak",
+        "Greyhound"
+      ],
+      "prompt": "Name an airline, active now or in the past.",
+      "family": "world"
+    },
+    {
+      "id": "authored-200-cruise-lines",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Carnival Cruise Line",
+        "Royal Caribbean International",
+        "Norwegian Cruise Line",
+        "Disney Cruise Line",
+        "Princess Cruises",
+        "Celebrity Cruises",
+        "Holland America Line",
+        "MSC Cruises",
+        "Viking",
+        "Virgin Voyages",
+        "Cunard",
+        "Costa Cruises"
+      ],
+      "no": [
+        "Delta Air Lines",
+        "Eurostar"
+      ],
+      "prompt": "Name a cruise line.",
+      "family": "world"
+    },
+    {
+      "id": "authored-200-bank-brands",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Chase",
+        "Bank of America",
+        "Wells Fargo",
+        "Citibank",
+        "Capital One",
+        "PNC Bank",
+        "Truist",
+        "US Bank",
+        "TD Bank",
+        "HSBC",
+        "Barclays",
+        "Navy Federal Credit Union"
+      ],
+      "no": [
+        "Venmo",
+        "Spotify"
+      ],
+      "prompt": "Name a bank or credit union.",
+      "family": "world"
+    },
+    {
+      "id": "authored-200-department-store-chains",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Macy’s",
+        "Nordstrom",
+        "Bloomingdale’s",
+        "Dillard’s",
+        "Belk",
+        "JCPenney",
+        "Kohl’s",
+        "Sears",
+        "Neiman Marcus",
+        "Saks Fifth Avenue",
+        "Harrods",
+        "Selfridges"
+      ],
+      "no": [
+        "Domino’s",
+        "AutoZone"
+      ],
+      "prompt": "Name a department-store chain.",
+      "family": "world"
+    },
+    {
+      "id": "authored-200-grocery-chains",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Walmart",
+        "Kroger",
+        "Costco",
+        "Target",
+        "Publix",
+        "Food Lion",
+        "Harris Teeter",
+        "Trader Joe’s",
+        "Whole Foods Market",
+        "Aldi",
+        "Lidl",
+        "Wegmans"
+      ],
+      "no": [
+        "Barnes & Noble",
+        "GameStop"
+      ],
+      "prompt": "Name a supermarket or grocery-store chain.",
+      "family": "world"
+    },
+    {
+      "id": "authored-200-fashion-labels",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Nike",
+        "Adidas",
+        "Puma",
+        "Under Armour",
+        "Levi’s",
+        "Gap",
+        "Old Navy",
+        "H&M",
+        "Zara",
+        "Uniqlo",
+        "American Eagle",
+        "Hollister"
+      ],
+      "no": [
+        "Boeing",
+        "Kellogg’s"
+      ],
+      "prompt": "Name a clothing brand or fashion retail chain.",
+      "family": "world"
+    },
+    {
+      "id": "authored-200-sporting-goods-retailers",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Dick’s Sporting Goods",
+        "Academy Sports + Outdoors",
+        "Bass Pro Shops",
+        "Cabela’s",
+        "REI",
+        "Scheels",
+        "Sportsman’s Warehouse",
+        "Big 5 Sporting Goods",
+        "Decathlon",
+        "Sports Direct",
+        "JD Sports",
+        "Foot Locker"
+      ],
+      "no": [
+        "Domino’s",
+        "Sephora"
+      ],
+      "prompt": "Name a sporting-goods or outdoor-equipment retail chain.",
+      "family": "world"
+    },
+    {
+      "id": "authored-200-parcel-postal-carriers",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "USPS",
+        "UPS",
+        "FedEx",
+        "DHL",
+        "Royal Mail",
+        "Canada Post",
+        "Australia Post",
+        "Amazon Logistics",
+        "DPD",
+        "Evri",
+        "Parcelforce",
+        "TNT"
+      ],
+      "no": [
+        "Amtrak",
+        "Delta Air Lines"
+      ],
+      "prompt": "Name a postal operator or parcel-delivery carrier.",
+      "family": "world"
+    },
+    {
+      "id": "authored-200-phone-brands",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Apple",
+        "Samsung",
+        "Google",
+        "Motorola",
+        "Nokia",
+        "Huawei",
+        "Xiaomi",
+        "OnePlus",
+        "Sony",
+        "LG",
+        "BlackBerry",
+        "HTC"
+      ],
+      "no": [
+        "Canon",
+        "Bose"
+      ],
+      "prompt": "Name a mobile-phone brand or manufacturer.",
+      "family": "world"
+    },
+    {
+      "id": "authored-200-aircraft-manufacturers",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Boeing",
+        "Airbus",
+        "Cessna",
+        "Piper",
+        "Beechcraft",
+        "Embraer",
+        "Bombardier",
+        "Gulfstream",
+        "Lockheed Martin",
+        "McDonnell Douglas",
+        "Dassault",
+        "Cirrus"
+      ],
+      "no": [
+        "Rolls-Royce Motor Cars",
+        "Amtrak"
+      ],
+      "prompt": "Name an aircraft manufacturer, past or present.",
+      "family": "world"
+    },
+    {
+      "id": "authored-200-international-organisations",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "United Nations",
+        "European Union",
+        "NATO",
+        "World Health Organization",
+        "World Trade Organization",
+        "UNESCO",
+        "UNICEF",
+        "International Monetary Fund",
+        "World Bank",
+        "G7",
+        "G20",
+        "OPEC"
+      ],
+      "no": [
+        "Amazon.com",
+        "Disney"
+      ],
+      "prompt": "Name an international organization or formal group of countries.",
+      "family": "world"
+    },
+    {
+      "id": "authored-200-universities-colleges",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Harvard University",
+        "Stanford University",
+        "Yale University",
+        "Princeton University",
+        "Massachusetts Institute of Technology",
+        "University of Oxford",
+        "University of Cambridge",
+        "Duke University",
+        "University of North Carolina at Chapel Hill",
+        "North Carolina State University",
+        "University of California Los Angeles",
+        "University of Southern California"
+      ],
+      "no": [
+        "Hogwarts",
+        "Xavier’s School for Gifted Youngsters"
+      ],
+      "prompt": "Name a real university or college.",
+      "family": "world"
+    },
+    {
+      "id": "authored-200-port-cities",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "New York City",
+        "Los Angeles",
+        "London",
+        "Liverpool",
+        "Rotterdam",
+        "Hamburg",
+        "Singapore",
+        "Shanghai",
+        "Hong Kong",
+        "Tokyo",
+        "Sydney",
+        "Wilmington"
+      ],
+      "no": [
+        "Denver",
+        "Kathmandu"
+      ],
+      "prompt": "Name a real city with a sea or river port.",
+      "family": "world"
+    },
+    {
+      "id": "authored-200-railway-stations",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Grand Central Terminal",
+        "Penn Station",
+        "Union Station",
+        "King’s Cross",
+        "St Pancras",
+        "London Waterloo",
+        "Tokyo Station",
+        "Shinjuku Station",
+        "Kyoto Station",
+        "Shibuya Station",
+        "Times Square–42nd Street",
+        "World Trade Center"
+      ],
+      "no": [
+        "Platform 9¾",
+        "Hogwarts School"
+      ],
+      "prompt": "Name a real railway or subway station.",
+      "family": "world"
+    },
+    {
+      "id": "authored-200-passenger-ship-names",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Titanic",
+        "Queen Mary",
+        "Queen Mary 2",
+        "Queen Elizabeth",
+        "Queen Elizabeth 2",
+        "Lusitania",
+        "Mauretania",
+        "Olympic",
+        "Britannic",
+        "SS United States",
+        "Normandie",
+        "Disney Dream"
+      ],
+      "no": [
+        "Flying Dutchman",
+        "Black Pearl"
+      ],
+      "prompt": "Name a real passenger ship or ocean liner.",
+      "family": "world"
+    },
+    {
+      "id": "authored-200-naval-ships",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "USS Enterprise",
+        "USS Nimitz",
+        "USS Gerald R. Ford",
+        "USS Missouri",
+        "USS Arizona",
+        "USS Iowa",
+        "USS Constitution",
+        "HMS Victory",
+        "HMS Hood",
+        "Bismarck",
+        "Yamato",
+        "HMS Queen Elizabeth"
+      ],
+      "no": [
+        "USS Enterprise NCC-1701",
+        "RMS Titanic"
+      ],
+      "prompt": "Name a real naval warship or military submarine.",
+      "family": "world"
+    },
+    {
+      "id": "authored-200-disney-attractions",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Space Mountain",
+        "Big Thunder Mountain Railroad",
+        "Splash Mountain",
+        "Pirates of the Caribbean",
+        "Haunted Mansion",
+        "It’s a Small World",
+        "Jungle Cruise",
+        "Peter Pan’s Flight",
+        "Dumbo the Flying Elephant",
+        "Mad Tea Party",
+        "Matterhorn Bobsleds",
+        "Expedition Everest"
+      ],
+      "no": [
+        "Harry Potter and the Forbidden Journey",
+        "VelociCoaster"
+      ],
+      "prompt": "Name an attraction from a Disney theme park.",
+      "family": "world"
+    },
+    {
+      "id": "authored-200-universal-attractions",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Harry Potter and the Forbidden Journey",
+        "Harry Potter and the Escape from Gringotts",
+        "Hagrid’s Magical Creatures Motorbike Adventure",
+        "Hogwarts Express",
+        "Jurassic World VelociCoaster",
+        "The Incredible Hulk Coaster",
+        "Hollywood Rip Ride Rockit",
+        "Revenge of the Mummy",
+        "The Amazing Adventures of Spider-Man",
+        "Transformers: The Ride 3D",
+        "The Simpsons Ride",
+        "E.T. Adventure"
+      ],
+      "no": [
+        "Space Mountain",
+        "Pirates of the Caribbean"
+      ],
+      "prompt": "Name an attraction from a Universal theme park.",
+      "family": "world"
+    },
+    {
+      "id": "authored-200-national-anthems",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "The Star-Spangled Banner",
+        "God Save the King",
+        "O Canada",
+        "La Marseillaise",
+        "Deutschlandlied",
+        "Kimigayo",
+        "March of the Volunteers",
+        "Advance Australia Fair",
+        "God Defend New Zealand",
+        "Amhrán na bhFiann",
+        "Jana Gana Mana",
+        "Hatikvah"
+      ],
+      "no": [
+        "Baby Shark",
+        "Bohemian Rhapsody"
+      ],
+      "prompt": "Name a national anthem by its title.",
+      "family": "world"
+    },
+    {
+      "id": "authored-200-named-passenger-trains",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Orient Express",
+        "Eurostar",
+        "TGV",
+        "Shinkansen",
+        "Acela",
+        "California Zephyr",
+        "Coast Starlight",
+        "Empire Builder",
+        "Southwest Chief",
+        "Flying Scotsman",
+        "The Ghan",
+        "Indian Pacific"
+      ],
+      "no": [
+        "USS Nimitz",
+        "Boeing 747"
+      ],
+      "prompt": "Name a passenger train or named passenger-rail service.",
+      "family": "world"
+    },
+    {
+      "id": "authored-200-retired-atlantic-storms",
+      "basis": "2026-11-03-plus200-whole-subject-review",
+      "yes": [
+        "Katrina",
+        "Sandy",
+        "Andrew",
+        "Hugo",
+        "Florence",
+        "Floyd",
+        "Fran",
+        "Matthew",
+        "Dorian",
+        "Harvey",
+        "Irma",
+        "Maria"
+      ],
+      "no": [
+        "Nicole",
+        "Elsa"
+      ],
+      "prompt": "Name an Atlantic tropical cyclone whose name has been retired.",
+      "family": "world"
     }
   ],
   "expansionBatches": [

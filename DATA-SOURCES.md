@@ -1,6 +1,10 @@
 # Councillion answer banks
 
-Current ordinary play: **227 individually admitted questions**, including all 98 Yes-voted tryout prompts. The production build checks 1,257 familiar exact answers and 137 wrong-answer boundaries. Sources and structural validity alone no longer admit content. See [QUESTION-STANDARD.md](QUESTION-STANDARD.md). The dated release notes below document historical counts and policies.
+Current ordinary play: **679 individually admitted questions**, shared by Daily, Puffer and random Practice. The November 3 release adds **200 questions and 48,972 canonical answer entries** across nine balanced families. Production validates 11,635 familiar exact inputs and 1,392 wrong-answer boundaries. These checks do not establish exhaustive coverage of every possible answer. See [the release review](QUESTION-EXPANSION-200.md) and [the admission standard](QUESTION-STANDARD.md).
+
+## Historical catalog counts
+
+The following table and dated notes describe earlier builds; current admission is recorded in `ordinary-question-pool.json`.
 
 | Subject | Visible catalog | Automatic mix | Puffer |
 | --- | ---: | ---: | ---: |
