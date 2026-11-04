@@ -60,7 +60,7 @@ test('old rooms refresh their future deck once, preserving valid active question
 
 test('the repaired shared Daily has seven different subjects each day, with no repeated IDs or hidden cycling',()=>{
  const schedule=JSON.parse(readFileSync(new URL('../daily-schedule.json',import.meta.url)));
- const revision=schedule.revisions.findLast(r=>r.from==='2026-10-25');assert.ok(revision);assert.equal(revision.selection,QUESTION_SELECTION_BUILD);
+ const revision=schedule.revisions.findLast(r=>r.from==='2026-10-25');assert.ok(revision);assert.equal(revision.selection,'20261025-reviewed-standard-v1');
  const published=JSON.parse(readFileSync(new URL('../data-snapshots/group/published-20261023-24.json',import.meta.url)));assert.deepEqual(schedule.ids.slice(0,14),published);
  assert.equal(new Set(schedule.ids).size,schedule.ids.length);assert.equal(schedule.ids.length%7,0);assert.ok(schedule.ids.length>=21*7);
  for(let i=14;i<schedule.ids.length;i+=7){const day=new Date(Date.UTC(2026,9,23+i/7)).toISOString().slice(0,10),draw=dailyPacks(day);assert.equal(draw.length,7);assert.equal(new Set(draw.map(p=>p.family)).size,7,day);assert.ok(draw.every(p=>MIXED_PACKS.includes(p)));assert.ok(draw.filter(p=>steam(p.id)).length<=1);assert.deepEqual(draw,dailyPacks(day));}

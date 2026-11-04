@@ -1,24 +1,24 @@
 {
   "target": 1000,
-  "normalPlayQuestions": 479,
-  "remaining": 521,
+  "normalPlayQuestions": 679,
+  "remaining": 321,
   "families": {
-    "gaming": 64,
-    "sports": 67,
-    "culture": 46,
-    "music": 55,
-    "food": 56,
-    "nature": 54,
-    "science": 47,
-    "world": 43,
-    "everyday": 47
+    "gaming": 86,
+    "sports": 87,
+    "culture": 71,
+    "music": 75,
+    "food": 78,
+    "nature": 76,
+    "science": 70,
+    "world": 66,
+    "everyday": 70
   },
-  "candidateInventories": 279,
-  "admittedCandidates": 252,
-  "candidateCanonicalAnswerRows": 1791351,
+  "candidateInventories": 477,
+  "admittedCandidates": 452,
+  "candidateCanonicalAnswerRows": 1840092,
   "ready": false,
   "reasons": [
-    "521 more admitted, distinct normal-play questions required."
+    "321 more admitted, distinct normal-play questions required."
   ],
   "deliveryAuthorized": true,
   "deliveryReady": true,

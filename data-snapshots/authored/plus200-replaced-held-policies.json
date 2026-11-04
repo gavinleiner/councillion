@@ -1,0 +1,269 @@
+{
+  "avatar-characters": {
+    "key": "avatar-characters",
+    "title": "List_of_Avatar:_The_Last_Airbender_characters",
+    "prompt": "Name a character from Avatar: The Last Airbender or The Legend of Korra.",
+    "scope": "Named or distinctly identified characters from the Avatar: The Last Airbender/Legend of Korra world, including its comics and novels, count. Animals and named spirits count. James Cameron's unrelated Avatar films, voice actors, nations and generic bending abilities do not count.",
+    "familiar": [
+      "Aang",
+      "Katara",
+      "Sokka",
+      "Toph",
+      "Zuko",
+      "Iroh",
+      "Azula",
+      "Ozai",
+      "Appa",
+      "Momo",
+      "Suki",
+      "Mai",
+      "Ty Lee",
+      "Yue",
+      "Jet",
+      "Bumi",
+      "Pakku",
+      "Hama",
+      "Roku",
+      "Kyoshi",
+      "Zhao",
+      "Long Feng",
+      "Combustion Man",
+      "June",
+      "Hei Bai",
+      "Koh",
+      "Wan Shi Tong",
+      "Cabbage Merchant",
+      "Korra",
+      "Asami",
+      "Mako",
+      "Bolin",
+      "Tenzin",
+      "Jinora",
+      "Lin Beifong",
+      "Suyin Beifong",
+      "Varrick",
+      "Zhu Li",
+      "Amon",
+      "Zaheer",
+      "Kuvira",
+      "Unalaq",
+      "P'Li",
+      "Ming-Hua",
+      "Ghazan",
+      "Raava",
+      "Vaatu",
+      "Naga",
+      "Pabu",
+      "Meelo",
+      "Ikki",
+      "Wan",
+      "Yangchen",
+      "Rangi",
+      "Yun"
+    ],
+    "exclude": [
+      "Jake Sully",
+      "Dante Basco",
+      "Fire Nation",
+      "Waterbending"
+    ],
+    "rare": "Lao Ge",
+    "aliases": {
+      "Avatar Aang": [
+        "Aang"
+      ],
+      "Toph Beifong": [
+        "Toph"
+      ],
+      "Uncle Iroh": [
+        "Iroh"
+      ],
+      "Fire Lord Ozai": [
+        "Ozai"
+      ],
+      "Avatar Korra": [
+        "Korra"
+      ],
+      "Asami Sato": [
+        "Asami"
+      ],
+      "Avatar Roku": [
+        "Roku"
+      ],
+      "Avatar Kyoshi": [
+        "Kyoshi"
+      ],
+      "Avatar Wan": [
+        "Wan"
+      ],
+      "Avatar Yangchen": [
+        "Yangchen"
+      ],
+      "Princess Yue": [
+        "Yue"
+      ],
+      "Master Pakku": [
+        "Pakku"
+      ],
+      "Admiral Zhao": [
+        "Zhao"
+      ],
+      "Grand Secretariat Long Feng": [
+        "Long Feng"
+      ],
+      "Koh the Face Stealer": [
+        "Koh"
+      ],
+      "Sir Iknik Blackstone Varrick": [
+        "Varrick"
+      ],
+      "Zhu Li Moon": [
+        "Zhu Li"
+      ],
+      "Combustion Man": [
+        "Sparky Sparky Boom Man"
+      ],
+      "Amon": [
+        "Noatak"
+      ]
+    },
+    "additions": [
+      {
+        "label": "Rangi",
+        "aliases": []
+      },
+      {
+        "label": "Yun",
+        "aliases": []
+      },
+      {
+        "label": "Lao Ge",
+        "aliases": []
+      }
+    ],
+    "holds": {
+      "The era of Raava": "Generic concept, species, organization or group heading rather than a named or distinctly identified individual character.",
+      "The Avatar Spirit": "Generic concept, species, organization or group heading rather than a named or distinctly identified individual character.",
+      "Blind Badgermoles": "Generic concept, species, organization or group heading rather than a named or distinctly identified individual character.",
+      "Sky Bison": "Generic concept, species, organization or group heading rather than a named or distinctly identified individual character.",
+      "Air Bison": "Generic concept, species, organization or group heading rather than a named or distinctly identified individual character.",
+      "Dai Li": "Generic concept, species, organization or group heading rather than a named or distinctly identified individual character.",
+      "Sandbender Tribes": "Generic concept, species, organization or group heading rather than a named or distinctly identified individual character.",
+      "Foggy Swamp Tribe": "Generic concept, species, organization or group heading rather than a named or distinctly identified individual character.",
+      "Fire Sages": "Generic concept, species, organization or group heading rather than a named or distinctly identified individual character.",
+      "The Sun Warriors": "Generic concept, species, organization or group heading rather than a named or distinctly identified individual character.",
+      "Ember Island Players": "Generic concept, species, organization or group heading rather than a named or distinctly identified individual character."
+    },
+    "references": [
+      "https://en.wikipedia.org/wiki/List_of_Avatar:_The_Last_Airbender_characters",
+      "https://www.nick.com/fan-hub/avatar",
+      "https://riseofkyoshi.abrams.link/"
+    ],
+    "renames": {}
+  },
+  "government-space-agencies": {
+    "key": "government-space-agencies",
+    "prompt": "Name a government space agency or international space-research organization.",
+    "scope": "Real national, governmental and international organizations whose main work includes space research, space exploration or coordinating space activities count, including historical agencies. A commercial rocket company, a location alone or an individual is not automatically an agency.",
+    "familiar": [
+      "NASA",
+      "ESA",
+      "Roscosmos",
+      "ISRO",
+      "JAXA",
+      "CNSA",
+      "Canadian Space Agency",
+      "CNES",
+      "German Aerospace Center",
+      "DLR",
+      "UK Space Agency",
+      "Italian Space Agency",
+      "ASI",
+      "Australian Space Agency",
+      "South African National Space Agency",
+      "SANSA",
+      "United Arab Emirates Space Agency",
+      "Egyptian Space Agency",
+      "Brazilian Space Agency",
+      "Mexican Space Agency",
+      "Korea Aerospace Research Institute",
+      "KARI",
+      "Korea AeroSpace Administration",
+      "KASA",
+      "Taiwan Space Agency",
+      "TASA",
+      "SUPARCO",
+      "Polish Space Agency",
+      "POLSA",
+      "New Zealand Space Agency",
+      "Norwegian Space Agency",
+      "Swedish National Space Agency",
+      "Turkish Space Agency",
+      "Israel Space Agency",
+      "Iranian Space Agency",
+      "UNOOSA",
+      "EUSPA"
+    ],
+    "exclude": [
+      "SpaceX",
+      "Blue Origin",
+      "Elon Musk",
+      "California"
+    ],
+    "rare": "Rwanda Space Agency",
+    "aliases": {
+      "European Space Agency": [
+        "ESA",
+        "ASE",
+        "EWO"
+      ],
+      "Indian Space Research Organisation": [
+        "ISRO"
+      ],
+      "Canadian Space Agency": [
+        "CSA",
+        "ASC"
+      ],
+      "Japan Aerospace Exploration Agency": [
+        "JAXA"
+      ],
+      "Korea Aerospace Research Institute": [
+        "KARI"
+      ],
+      "Korea AeroSpace Administration": [
+        "KASA"
+      ],
+      "National Aeronautics and Space Administration": [
+        "NASA"
+      ],
+      "Roscosmos State Corporation for Space Activities": [
+        "Roscosmos"
+      ],
+      "Agencia Espacial Española": [
+        "Spanish Space Agency"
+      ]
+    },
+    "preferredAliases": {
+      "CSA": "Canadian Space Agency",
+      "LSA": "Luxembourg Space Agency",
+      "SSA": "Saudi Space Agency",
+      "ISA": "Iranian Space Agency"
+    },
+    "holds": {
+      "California": "Malformed subnational row: the location is not an agency; actual organization classification remains unverified.",
+      "Kerala": "Malformed subnational row, not an organization name.",
+      "Lithuanian Space Association": "Private business association, not a government agency or international scientific research body."
+    },
+    "additions": [],
+    "references": [
+      "https://en.wikipedia.org/wiki/List_of_government_space_agencies",
+      "https://www.unoosa.org/oosa/en/ourwork/space-agencies.html",
+      "https://www.nasa.gov/",
+      "https://www.esa.int/",
+      "https://www.isro.gov.in/"
+    ],
+    "renames": {
+      "Turkish Space Agency (Türkiye Uzay Ajansı)": "Turkish Space Agency"
+    }
+  }
+}
