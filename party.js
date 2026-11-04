@@ -1,12 +1,12 @@
 import {PartyFocus,focusEligible,FOCUS_BUILD} from './party-focus.js';
 import {TOURNAMENT_BUILD,newTournament,prepareTournament,beginTournamentMatch,recordTournamentMatch,cancelTournament,tournamentReceipt,list} from './tournament.js';
 import {saveTournamentResult} from './tournament-career.js';
-import {readQuestionHistory,rememberQuestions} from './question-history.js';
+import {clearQuestionHistory} from './question-history.js';
 import {waitForDatabaseConnection,databaseClockOffset,compatiblePublicRooms,partyConnectionError} from './party-connection.js';
 import {newParty,startParty,answerParty,tickParty,disconnectPlayer,partyPack,refreshPartyQuestions} from './engine.js';
 import {beginParty,syncRoster,stepParty,setLobbyRules,enforceTabFocus} from './party-rules.js';
 import {canPlayParty,requirePartyIdentity} from './party-access.js';
-import {PACKS,PARTY_PACKS,PACK_BY_ID,PARTY_IDS,canonicalQuestionId} from './data.js';
+import {PACK_BY_ID,PARTY_IDS} from './data.js';
 import {QUESTION_QUALITY_BUILD} from './question-quality.js';
 import {QUESTION_SELECTION_BUILD} from './question-selection.js';
 import {catalogBuild} from './question-bank-loader.js';
@@ -26,18 +26,18 @@ export async function publicRooms(authorize,callback,onError){await authorize();
 export class PartySession{
  constructor(onState,onError,getIdentity=()=>null,authorize=null,getCloud=loadCloud){Object.assign(this,{onState,onError,getIdentity,authorize,getCloud,clock:()=>Date.now(),host:false,local:false,state:null,closed:false,offset:0,members:{},chat:[],unsub:[],processed:new Set(),processing:Promise.resolve()});this.focus=new PartyFocus({clock:()=>this.now(),eligible:()=>!this.closed&&this.connected&&focusEligible(this.state,this.myId)?this.state.matchId:null,report:r=>this.reportFocus(r)});this.timer=setInterval(()=>this.tick(),200);}
  fail(message){if(!this.closed)this.onError(message);}
- snapshot(){if(!this.closed&&this.state){const draftTurn=[this.state.matchId,this.state.round,this.state.turnStartedAt,this.state.players[this.state.turn]?.id].join(':');if(draftTurn!==this.draftTurn){this.draftTurn=draftTurn;this.flushDraft();}if(this.state.phase==='playing'){const p=partyPack(this.state);if(p&&p.id!==this.lastRemembered){this.lastRemembered=p.id;rememberQuestions(this.myId,[p.id]);}}this.focus.sync();this.onState(this.state,this);}}
- async auth(){if(!this.authorize)throw Error('Google party sign-in is unavailable.');this.myId=(await this.authorize()).uid;this.c=await this.getCloud();requirePartyIdentity(this.getIdentity());await waitForDatabaseConnection(this.c);if(this.closed)throw Error('Connection cancelled.');this.offset=await databaseClockOffset(this.c);if(this.closed)throw Error('Connection cancelled.');this.profileStore??=new PartyProfileStore(this.c,()=>this.snapshot());this.profileStore.watch(this.myId);}
+ snapshot(){if(!this.closed&&this.state){const draftTurn=[this.state.matchId,this.state.round,this.state.turnStartedAt,this.state.players[this.state.turn]?.id].join(':');if(draftTurn!==this.draftTurn){this.draftTurn=draftTurn;this.flushDraft();}this.focus.sync();this.onState(this.state,this);}}
+ async auth(){if(!this.authorize)throw Error('Google party sign-in is unavailable.');this.myId=(await this.authorize()).uid;clearQuestionHistory(this.myId);this.c=await this.getCloud();requirePartyIdentity(this.getIdentity());await waitForDatabaseConnection(this.c);if(this.closed)throw Error('Connection cancelled.');this.offset=await databaseClockOffset(this.c);if(this.closed)throw Error('Connection cancelled.');this.profileStore??=new PartyProfileStore(this.c,()=>this.snapshot());this.profileStore.watch(this.myId);}
  path(part=''){return this.c.ref(this.c.db,`rooms/${this.code}${part?'/'+part:''}`);}
  get isAdmin(){return canAdmin(this.getIdentity());}
  async create(name,options={}){
   await this.auth();this.host=true;this.name=cleanName(name);this.mode=options.mode==='casual'?'casual':'ranked';this.buddy=options.buddy??'krill';
-  for(let i=0;i<5;i++){this.code=Array.from(crypto.getRandomValues(new Uint8Array(4)),x=>'ABCDEFGHJKLMNPQRSTUVWXYZ'[x%24]).join('');const m={name:this.name,buddy:this.buddy,protocol:4,joinedAt:this.now(),lastSeen:this.now(),online:true,ready:true,autoJoin:false};const state=newParty([{id:this.myId,...m}],Math.random,readQuestionHistory(this.myId));state.mode=this.mode;state.settings.maxPlayers=[2,3,6].includes(options.maxPlayers)?options.maxPlayers:6;if(options.tournament)state.tournament=newTournament(this.now());this.meta={protocol:4,mode:this.mode,format:options.tournament?'tournament':'classic',host:this.myId,hostName:this.name,version:3,catalogBuild:partyCatalogBuild(),createdAt:this.now(),isPrivate:!!options.isPrivate,seats:state.settings.maxPlayers,phase:'lobby'};try{await this.c.set(this.path(),{meta:this.meta,members:{[this.myId]:m},state});this.state=state;this.members={[this.myId]:m};await this.listen();return;}catch(e){if(i===4)throw Error(friendly(e));}}
+  for(let i=0;i<5;i++){this.code=Array.from(crypto.getRandomValues(new Uint8Array(4)),x=>'ABCDEFGHJKLMNPQRSTUVWXYZ'[x%24]).join('');const m={name:this.name,buddy:this.buddy,protocol:4,joinedAt:this.now(),lastSeen:this.now(),online:true,ready:true,autoJoin:false};const state=newParty([{id:this.myId,...m}],Math.random);state.mode=this.mode;state.settings.maxPlayers=[2,3,6].includes(options.maxPlayers)?options.maxPlayers:6;if(options.tournament)state.tournament=newTournament(this.now());this.meta={protocol:4,mode:this.mode,format:options.tournament?'tournament':'classic',host:this.myId,hostName:this.name,version:3,catalogBuild:partyCatalogBuild(),createdAt:this.now(),isPrivate:!!options.isPrivate,seats:state.settings.maxPlayers,phase:'lobby'};try{await this.c.set(this.path(),{meta:this.meta,members:{[this.myId]:m},state});this.state=state;this.members={[this.myId]:m};await this.listen();return;}catch(e){if(i===4)throw Error(friendly(e));}}
  }
  async join(name,code,options={}){
   await this.auth();this.name=cleanName(name);this.buddy=options.buddy??'krill';this.code=String(code??'').toUpperCase().replace(/[^A-Z]/g,'');if(this.code.length!==4)throw Error('Enter a four-letter room code.');
   const meta=(await this.c.get(this.path('meta'))).val();if(!meta||this.now()-meta.createdAt>24*3600000)throw Error('Room not found. Check the code or host a new room.');if(meta.mode!=='ranked'&&options.mode==='ranked')throw Error('This is an older Casual room. Ask the host to create a new ranked court.');if(meta.catalogBuild&&meta.catalogBuild!==partyCatalogBuild())throw Error('That room belongs to an older question or answer update. The host needs to open the latest Councillion link and host a new room.');if(meta.protocol!==4)throw Error('That room belongs to an older Puffer version. Ask the host to open the latest link and host a new room.');this.meta=meta;this.mode=meta.mode??'casual';this.host=meta.host===this.myId;
-  await this.c.set(this.path('members/'+this.myId),{name:this.name,buddy:this.buddy,protocol:4,joinedAt:this.now(),lastSeen:this.now(),online:true,ready:meta.phase==='lobby',autoJoin:false});await this.listen();await this.reportHistory();
+  await this.c.set(this.path('members/'+this.myId),{name:this.name,buddy:this.buddy,protocol:4,joinedAt:this.now(),lastSeen:this.now(),online:true,ready:meta.phase==='lobby',autoJoin:false});await this.listen();
  }
  async listen(){const c=this.c;this.unsub.push(c.onValue(c.ref(c.db,'.info/serverTimeOffset'),snap=>this.offset=snap.val()??0));
   this.unsub.push(c.onValue(this.path('meta'),snap=>{if(!snap.exists())return this.fail('The host closed this room.');const wasHost=this.host;this.meta=snap.val();this.meta.hostName=safeDisplayName(this.meta.hostName);this.host=this.meta.host===this.myId;if(this.host&&!wasHost)this.becomeHost();this.snapshot();},e=>this.fail(friendly(e))));
@@ -80,11 +80,11 @@ export class PartySession{
    else if(r.type==='answer'){await loadQuestionData([partyPack(this.state)]);result=answerParty(this.state,uid,r.text,this.now());}
    else if(uid!==this.myId)throw Error('Only the host can change the room.');
    else if(r.type==='start'||r.type==='rematch'){
-    await this.finishResult();this.excludeSeenQuestions();
+    await this.finishResult();
     const previous=structuredClone(this.state);this.starting=true;
     try{
      const t=this.state.tournament,prepared=t?prepareTournament(t,this.state.players):null;
-     if(!beginParty(this.state,this.now(),Math.random,prepared?.ids)){if(this.state.exhausted)await this.broadcast();throw Error(this.state.exhausted?'All unseen questions have been used. Earlier questions will not repeat.':'At least two ready players are needed.');}
+     if(!beginParty(this.state,this.now(),Math.random,prepared?.ids)){if(this.state.exhausted)await this.broadcast();throw Error(this.state.exhausted?'No reviewed questions are available. Refresh Councillion before starting a new room.':'At least two ready players are needed.');}
      if(t)beginTournamentMatch(t,this.state.matchId,prepared);
      await loadQuestionData([partyPack(this.state)]);warmAnswerBank(partyPack(this.state));
      const profiles=await Promise.all(this.state.matchRoster.map(async id=>[id,await this.profileStore.fetch(id)]));
@@ -127,10 +127,8 @@ export class PartySession{
   else if(!prior||prior.leftAt!==leftAt)this.state.focusReports[uid]={game:report.game,leftAt,returnedAt:at};
   enforceTabFocus(this.state,this.now());
  }
- async reportHistory(){if(!this.c||this.closed)return;await this.c.set(this.path('requests/'+this.myId),{id:crypto.randomUUID(),type:'ready',patch:{seenIds:readQuestionHistory(this.myId)},at:this.now()});}
- excludeSeenQuestions(){const seen=new Set((this.state.seenIds??[]).map(canonicalQuestionId)),keep=['playing','burst'].includes(this.state.phase)?this.state.round:0;this.state.packIds=[...this.state.packIds.slice(0,keep),...this.state.packIds.slice(keep).filter(id=>PARTY_IDS.has(id)&&!seen.has(canonicalQuestionId(id)))];if(!this.state.packIds.length&&this.state.phase==='countdown'){this.state.exhausted=true;this.state.phase='ended';this.state.deadline=0;this.state.notice='No unseen prompts remain. Earlier questions will not repeat.';}}
  receiveQuestionReport(uid,patch){
-  if(Array.isArray(patch.seenIds)){const valid=new Set(PACKS.map(p=>p.id)),seen=patch.seenIds.slice(0,10000).filter(id=>valid.has(id)).map(canonicalQuestionId);this.state.seenIds=[...new Set([...(this.state.seenIds??[]),...seen])];this.excludeSeenQuestions();}
+  // Legacy clients may send account history. It never changes this match.
   if(patch.skip&&this.state.phase==='playing'&&patch.round===this.state.round){if(this.now()>=this.state.deadline)throw Error('The puffer already popped.');const eligible=this.state.players.filter(p=>p.connected&&p.hearts>0&&!p.spectator);if(!eligible.some(p=>p.id===uid))throw Error('Only active players can vote.');this.state.skipVotes=[...new Set([...(this.state.skipVotes??[]),uid])].filter(id=>eligible.some(p=>p.id===id));const needed=Math.max(2,Math.ceil(eligible.length/2));if(this.state.skipVotes.length>=needed){this.state.phase='burst';this.state.nextAt=this.now()+1500;this.state.notice='The room chose a fresh category. No heart lost.';}}
  }
  voteQuestion(){this.request('ready',{patch:{skip:true,round:this.state?.round}});}

@@ -30,14 +30,13 @@ test('new banks retain their exact declared inventory and hash, with unique labe
   for(const name of p.editorialNegative??[])assert.ok(!owners.has(normalize(name)),p.id+': '+name);
  }
 });
-test('a stale Practice queue gets newly admitted IDs once; old source histories exclude their replacements',()=>{
+test('old source histories do not exclude current replacements in a fresh game',()=>{
  const pending=baseline.categories.slice(80,130).map(p=>p.id),queue=reshufflePracticeQueue(pending,random(12),'20261025-variety-v1',MIXED_PACKS.map(p=>p.id));
- assert.deepEqual(new Set(queue),new Set(pending.filter(id=>MIXED_PACKS.some(p=>p.id===id))));assert.equal(new Set(queue).size,queue.length);
- const stable=reshufflePracticeQueue(pending,random(13),'20261025-expansion-v1',MIXED_PACKS.map(p=>p.id));assert.deepEqual(new Set(stable),new Set(pending.filter(id=>MIXED_PACKS.some(p=>p.id===id))));
- for(const p of DISTINCT_PACKS.filter(p=>p.originId&&MIXED_PACKS.includes(p))){assert.equal(canonicalQuestionId(p.originId),p.id);assert.ok(!partyDeck(random(5),[p.originId]).includes(p.id));}
- const retained=DISTINCT_PACKS.find(p=>p.originId&&MIXED_PACKS.includes(p));for(let seed=0;seed<30;seed++)assert.notEqual(PACK_BY_ID.get(partyDeck(random(seed),[retained.originId])[0]).family,retained.family);
- const draw=practiceDraw(queue,null,random(9));assert.equal(draw.ids.length,7);assert.equal(new Set([...draw.ids,...draw.remaining]).size,queue.length);
+ assert.deepEqual(new Set(queue),new Set(MIXED_PACKS.map(p=>p.id)));assert.equal(new Set(queue).size,queue.length);
+ for(const p of DISTINCT_PACKS.filter(p=>p.originId&&MIXED_PACKS.includes(p))){assert.equal(canonicalQuestionId(p.originId),p.id);assert.ok(partyDeck(random(5),[p.originId]).includes(p.id));}
+ const draw=practiceDraw(queue,null,random(9));assert.equal(draw.ids.length,7);assert.equal(new Set(draw.ids).size,7);assert.deepEqual(draw.remaining,[]);
 });
+
 test('specific new answers and deliberate negative boundaries work through the real matcher',()=>{
  const checks={
   'distinct-facts-flightless-birds':{yes:['Penguin','Kiwi','Dodo','Great auk','Kakapo','Emu'],no:['Passenger pigeon','Guam kingfisher','Laughing owl']},

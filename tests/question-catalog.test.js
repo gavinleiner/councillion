@@ -31,7 +31,7 @@ test('daily calendar never reuses a prompt and historical dates retain their dra
   for(const p of chosen){assert.ok(!seen.has(p.id),day+': '+p.id);seen.add(p.id);}
  }
  assert.ok(days>=14);assert.equal(seen.size,days*7);
- assert.ok([...seen].every(id=>published.includes(id)||MIXED_PACKS.some(p=>p.id===canonicalQuestionId(id))),'only frozen history may contain retired prompts');
+ const frozen=JSON.parse(await readFile(new URL('../daily-schedule.json',import.meta.url),'utf8')).ids.slice(0,91);assert.ok([...seen].every(id=>frozen.includes(id)||MIXED_PACKS.some(p=>p.id===canonicalQuestionId(id))),'only frozen history through November 4 may contain retired prompts');
 });
 test('party decks cover the ordinary pool exactly once without an alphabetic or family cycle',()=>{
  for(let seed=0;seed<20;seed++){

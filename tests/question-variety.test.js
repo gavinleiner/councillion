@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import {MIXED_PACKS,PARTY_PACKS,PACK_BY_ID} from '../data.js';
 import {GROUP_PACKS} from '../group-question-catalog.js';
-import {balancedQuestionDeck,random,QUESTION_SELECTION_BUILD} from '../question-selection.js';
+import {balancedQuestionDeck,uniformQuestionDeck,random,QUESTION_SELECTION_BUILD} from '../question-selection.js';
 import {partyDeck,practiceDraw,reshufflePracticeQueue,dailyPacks,newParty,startParty,refreshPartyQuestions,tickParty,isSharedDailyRun} from '../engine.js';
 const family=id=>PACK_BY_ID.get(id).family;
 const steam=id=>PACK_BY_ID.get(id).predicate?.kind==='steam-tag';
@@ -16,17 +16,13 @@ test('normal games keep every approved prompt and exclude all multiple-label Ste
  for(const p of MIXED_PACKS){assert.ok(!['steam-tags','steam-any-tags'].includes(p.predicate?.kind),p.id);assert.doesNotMatch(p.prompt,/Steam tagged .*”\s+(?:and|or)\s+“/i);}
 });
 
-test('500 random lobbies have seven distinct opening subjects and no Steam format flood',()=>{
+test('500 random lobbies use an unweighted shuffle of every admitted question',()=>{
  const openers=new Set();
  for(let seed=1;seed<=500;seed++){
-  const ids=partyDeck(random(seed));openers.add(ids[0]);assert.deepEqual(ids,balancedQuestionDeck(PARTY_PACKS,{rng:random(seed)}));
-  assert.equal(ids.length,PARTY_PACKS.length);assert.equal(new Set(ids).size,ids.length);
-  for(let i=0;i<=70;i++)assert.equal(new Set(ids.slice(i,i+7).map(family)).size,7,'seed '+seed+' at '+i);
-  const counts={};for(const id of ids.slice(0,100))counts[family(id)]=(counts[family(id)]??0)+1;
-  assert.equal(Object.keys(counts).length,9);assert.ok(Math.max(...Object.values(counts))<=16,JSON.stringify(counts));
-  assert.ok(ids.slice(0,100).filter(steam).length<=8,'Steam format balance');
+  const ids=partyDeck(random(seed));openers.add(ids[0]);assert.deepEqual(ids,uniformQuestionDeck(PARTY_PACKS,{rng:random(seed)}));
+  assert.equal(ids.length,PARTY_PACKS.length);assert.equal(new Set(ids).size,ids.length);assert.deepEqual(new Set(ids),new Set(PARTY_PACKS.map(p=>p.id)));
  }
- assert.ok(openers.size>150,openers.size+' unique openers');
+ assert.ok(openers.size>250,openers.size+' unique openers');
 });
 
 test('random bucket selection can open on any question and handles uneven, exhausted or seen buckets',()=>{
@@ -39,19 +35,17 @@ test('random bucket selection can open on any question and handles uneven, exhau
  const follow=balancedQuestionDeck(pool,{recent:['f0','f1','f2','f3','f4','f5'],rng:random(1)});assert.ok(!['f0','f1','f2','f3','f4','f5'].includes(pool.find(p=>p.id===follow[0]).family));
 });
 
-test('Practice uses the same balanced random draw and filters two-tag saved queues',()=>{
- const party=partyDeck(random(42)),practice=practiceDraw([],null,random(42));assert.deepEqual([...practice.ids,...practice.remaining],party);
- const pending=MIXED_PACKS.slice(30,400).map(p=>p.id),retired=GROUP_PACKS.filter(p=>p.predicate?.kind==='steam-tags').slice(0,10).map(p=>p.id),migrated=reshufflePracticeQueue([...retired,...pending],random(7),QUESTION_SELECTION_BUILD,MIXED_PACKS.map(p=>p.id));assert.deepEqual(new Set(migrated),new Set(pending));assert.equal(new Set(migrated).size,pending.length);
- const next=practiceDraw(practice.remaining,null,random(9));assert.deepEqual(next.ids,party.slice(7,14));assert.ok(!next.ids.some(id=>practice.ids.includes(id)));
- const kept=MIXED_PACKS.slice(20,30).map(p=>p.id);
- const updated=reshufflePracticeQueue([...retired,...kept],random(8),'20261023-balanced-v1',MIXED_PACKS.map(p=>p.id));assert.deepEqual(new Set(updated),new Set(kept));
+test('Practice draws seven fresh random questions and ignores old queues',()=>{
+ const party=partyDeck(random(42)),practice=practiceDraw([],null,random(42));assert.deepEqual(practice.ids,party.slice(0,7));assert.deepEqual(practice.remaining,[]);
+ const pending=MIXED_PACKS.slice(30,400).map(p=>p.id),retired=GROUP_PACKS.filter(p=>p.predicate?.kind==='steam-tags').slice(0,10).map(p=>p.id),migrated=reshufflePracticeQueue([...retired,...pending],random(7),QUESTION_SELECTION_BUILD,MIXED_PACKS.map(p=>p.id));assert.deepEqual(new Set(migrated),new Set(party));
+ assert.deepEqual(practiceDraw(party,null,random(42)),practice);assert.notDeepEqual(practiceDraw(party,null,random(9)).ids,practice.ids);
 });
 
 test('old rooms refresh their future deck once, preserving valid active questions and hearts',()=>{
  const s=newParty([{id:'a',name:'A'},{id:'b',name:'B'}],random(3));startParty(s,1000,random(1));
  delete s.selectionBuild;const active=s.packIds[0],before=[...s.packIds],hearts=s.players.map(p=>p.hearts);
  assert.equal(refreshPartyQuestions(s,1100,random(9)),true);assert.equal(s.packIds[0],active);assert.equal(s.phase,'playing');assert.deepEqual(s.players.map(p=>p.hearts),hearts);
- assert.deepEqual(new Set(s.packIds),new Set(before));assert.notDeepEqual(s.packIds,before);assert.equal(new Set(s.packIds.slice(0,7).map(family)).size,7);
+ assert.deepEqual(new Set(s.packIds),new Set(before));assert.notDeepEqual(s.packIds,before);assert.equal(new Set(s.packIds).size,s.packIds.length);
  const stable=[...s.packIds];assert.equal(refreshPartyQuestions(s,1200,random(10)),false);assert.deepEqual(s.packIds,stable);
  const bad=GROUP_PACKS.find(p=>p.predicate?.kind==='steam-tags');s.packIds[0]=bad.id;s.seenIds=[bad.id];s.selectionBuild='20261024-uniform-v1';
  assert.equal(refreshPartyQuestions(s,1300,random(11)),true);assert.equal(s.phase,'burst');assert.deepEqual(s.players.map(p=>p.hearts),hearts);assert.match(s.notice,/no heart lost/);
@@ -63,7 +57,7 @@ test('the repaired shared Daily has seven different subjects each day, with no r
  const revision=schedule.revisions.findLast(r=>r.from==='2026-10-25');assert.ok(revision);assert.equal(revision.selection,'20261025-reviewed-standard-v1');
  const published=JSON.parse(readFileSync(new URL('../data-snapshots/group/published-20261023-24.json',import.meta.url)));assert.deepEqual(schedule.ids.slice(0,14),published);
  assert.equal(new Set(schedule.ids).size,schedule.ids.length);assert.equal(schedule.ids.length%7,0);assert.ok(schedule.ids.length>=21*7);
- for(let i=14;i<schedule.ids.length;i+=7){const day=new Date(Date.UTC(2026,9,23+i/7)).toISOString().slice(0,10),draw=dailyPacks(day);assert.equal(draw.length,7);assert.equal(new Set(draw.map(p=>p.family)).size,7,day);assert.ok(draw.every(p=>MIXED_PACKS.includes(p)));assert.ok(draw.filter(p=>steam(p.id)).length<=1);assert.deepEqual(draw,dailyPacks(day));}
+ for(let i=14;i<schedule.ids.length;i+=7){const day=new Date(Date.UTC(2026,9,23+i/7)).toISOString().slice(0,10),draw=dailyPacks(day);assert.equal(draw.length,7);assert.equal(new Set(draw.map(p=>p.family)).size,7,day);if(day>='2026-11-05')assert.ok(draw.every(p=>MIXED_PACKS.includes(p)));else assert.ok(draw.every(p=>PACK_BY_ID.has(p.id)));assert.ok(draw.filter(p=>steam(p.id)).length<=1);assert.deepEqual(draw,dailyPacks(day));}
  const after=new Date(Date.UTC(2026,9,23+schedule.ids.length/7)).toISOString().slice(0,10);assert.deepEqual(dailyPacks(after),[]);
  const old=['group-steam-alternate-history-and-war','group-steam-atmospheric-and-medieval','group-movie-adventure-theme-spies','group-steam-fantasy-and-rts','group-steam-stylized-and-third-person','group-movie-word-war','group-steam-management-and-tactical'];
  assert.equal(isSharedDailyRun({mode:'daily',day:'2026-10-25',ids:old},'2026-10-25'),false);assert.equal(isSharedDailyRun({mode:'daily',day:'2026-10-25',ids:dailyPacks('2026-10-25').map(p=>p.id)},'2026-10-25'),true);
