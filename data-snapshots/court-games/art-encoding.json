@@ -1,0 +1,50 @@
+[
+  {
+    "source": "assets/court-games/verdict-stage.png",
+    "web": "assets/court-games/verdict-stage.webp",
+    "pngBytes": 2041377,
+    "webpBytes": 1591630,
+    "identicalVisiblePixels": true,
+    "identicalAlpha": true
+  },
+  {
+    "source": "assets/court-games/figure-wide.png",
+    "web": "assets/court-games/figure-wide.webp",
+    "pngBytes": 2090690,
+    "webpBytes": 1605536,
+    "identicalVisiblePixels": true,
+    "identicalAlpha": true
+  },
+  {
+    "source": "assets/court-games/team-bench.png",
+    "web": "assets/court-games/team-bench.webp",
+    "pngBytes": 1975959,
+    "webpBytes": 1627908,
+    "identicalVisiblePixels": true,
+    "identicalAlpha": true
+  },
+  {
+    "source": "assets/court-games/host-atlas.png",
+    "web": "assets/court-games/host-atlas.webp",
+    "pngBytes": 785085,
+    "webpBytes": 514408,
+    "identicalVisiblePixels": true,
+    "identicalAlpha": true
+  },
+  {
+    "source": "assets/court-games/clash-faceoff.png",
+    "web": "assets/court-games/clash-faceoff.webp",
+    "pngBytes": 2182604,
+    "webpBytes": 1798458,
+    "identicalVisiblePixels": true,
+    "identicalAlpha": true
+  },
+  {
+    "source": "assets/court-games/clash-wide.png",
+    "web": "assets/court-games/clash-wide.webp",
+    "pngBytes": 2050145,
+    "webpBytes": 1605382,
+    "identicalVisiblePixels": true,
+    "identicalAlpha": true
+  }
+]

@@ -18,6 +18,7 @@ export function partyAtmosphere(){return `<div class="court-atmosphere" aria-hid
 export function entryMarkup(name,connected,preferences={}){return `<section class="party-entry">${partyAtmosphere()}
 <a class="back" href="#home">◂ SURFACE</a>
 <div class="party-title"><small>FUTURE COUNSEL PRESENTS</small><h1>COUNCILLION</h1><h2>PUFFER PARTY</h2><p>Name an answer. Pass the puffer before it pops.<br>Play with friends. Last counsel floating wins.</p></div>
+<p class="party-other-courts"><a href="#clash">COUNSEL CLASH · TEAM FEUD ↗</a><a href="#figure">FINAL FIGURE · CLOSEST WINS ↗</a></p>
 <div class="entry-stage-preview" id="entry-counsel-preview" aria-label="Your counsel preview"></div>
 <div class="party-entry-grid"><div class="entry-left-stack">
 <section class="party-entry-card identity-card"><div class="party-entry-heading"><h2>WHO’S PLAYING?</h2><button class="text-button" data-p-help>HOW TO PLAY</button></div>

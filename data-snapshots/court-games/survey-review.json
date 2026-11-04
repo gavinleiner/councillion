@@ -1,0 +1,706 @@
+{
+  "checked": "2026-11-04",
+  "provenance": "Fan transcriptions of aired Family Feud boards, not official raw survey data. No popularity ranking of the questions themselves is claimed. Wording condensed; numerical scores retained without normalization.",
+  "boards": [
+    {
+      "id": "big-ears",
+      "source": "https://mstiescott.neocities.org/feud16_6.html",
+      "season": 16,
+      "sourceBoardIndex": 26,
+      "sourceSha256": "2942c80d581e4d51911bf5bccd322654b0e8e3b8deaf38e4a50490c253ca777a",
+      "answerCount": 6,
+      "points": [
+        46,
+        34,
+        9,
+        4,
+        2,
+        2
+      ],
+      "boardTotal": 97,
+      "review": "Broad, playable prompt; complete displayed board; combined categories kept intact; aliases checked against source category."
+    },
+    {
+      "id": "noisy-replacement",
+      "source": "https://mstiescott.neocities.org/feud16_6.html",
+      "season": 16,
+      "sourceBoardIndex": 141,
+      "sourceSha256": "2942c80d581e4d51911bf5bccd322654b0e8e3b8deaf38e4a50490c253ca777a",
+      "answerCount": 6,
+      "points": [
+        31,
+        11,
+        10,
+        7,
+        6,
+        6
+      ],
+      "boardTotal": 71,
+      "review": "Broad, playable prompt; complete displayed board; combined categories kept intact; aliases checked against source category."
+    },
+    {
+      "id": "catch",
+      "source": "https://mstiescott.neocities.org/feud16_5.html",
+      "season": 16,
+      "sourceBoardIndex": 36,
+      "sourceSha256": "ab77f2edd62a9739db13be664e9ca140e197324ef2c344279d93bc703308fe65",
+      "answerCount": 5,
+      "points": [
+        79,
+        8,
+        3,
+        2,
+        2
+      ],
+      "boardTotal": 94,
+      "review": "Broad, playable prompt; complete displayed board; combined categories kept intact; aliases checked against source category."
+    },
+    {
+      "id": "lottery-gifts",
+      "source": "https://mstiescott.neocities.org/feud16_5.html",
+      "season": 16,
+      "sourceBoardIndex": 52,
+      "sourceSha256": "ab77f2edd62a9739db13be664e9ca140e197324ef2c344279d93bc703308fe65",
+      "answerCount": 5,
+      "points": [
+        46,
+        33,
+        4,
+        3,
+        3
+      ],
+      "boardTotal": 89,
+      "review": "Broad, playable prompt; complete displayed board; combined categories kept intact; aliases checked against source category."
+    },
+    {
+      "id": "sharp",
+      "source": "https://mstiescott.neocities.org/feud17_6.html",
+      "season": 17,
+      "sourceBoardIndex": 31,
+      "sourceSha256": "5907c129b4c97cfed68a8a4e68b327cebfc7c8625f43c3b5ce1a2b611cf56f77",
+      "answerCount": 6,
+      "points": [
+        69,
+        8,
+        7,
+        5,
+        5,
+        3
+      ],
+      "boardTotal": 97,
+      "review": "Broad, playable prompt; complete displayed board; combined categories kept intact; aliases checked against source category."
+    },
+    {
+      "id": "one-tooth",
+      "source": "https://mstiescott.neocities.org/feud17_6.html",
+      "season": 17,
+      "sourceBoardIndex": 75,
+      "sourceSha256": "5907c129b4c97cfed68a8a4e68b327cebfc7c8625f43c3b5ce1a2b611cf56f77",
+      "answerCount": 6,
+      "points": [
+        28,
+        27,
+        27,
+        8,
+        2,
+        2
+      ],
+      "boardTotal": 94,
+      "review": "Broad, playable prompt; complete displayed board; combined categories kept intact; aliases checked against source category."
+    },
+    {
+      "id": "kid-roadtrip",
+      "source": "https://mstiescott.neocities.org/feud17_5.html",
+      "season": 17,
+      "sourceBoardIndex": 4,
+      "sourceSha256": "9f891b04512c9f6e1dae078792c0c8cb70278a9041803f53cd7c93e251b17a21",
+      "answerCount": 5,
+      "points": [
+        64,
+        27,
+        3,
+        3,
+        2
+      ],
+      "boardTotal": 99,
+      "review": "Broad, playable prompt; complete displayed board; combined categories kept intact; aliases checked against source category."
+    },
+    {
+      "id": "party-watch",
+      "source": "https://mstiescott.neocities.org/feud17_5.html",
+      "season": 17,
+      "sourceBoardIndex": 41,
+      "sourceSha256": "9f891b04512c9f6e1dae078792c0c8cb70278a9041803f53cd7c93e251b17a21",
+      "answerCount": 5,
+      "points": [
+        37,
+        24,
+        22,
+        7,
+        4
+      ],
+      "boardTotal": 94,
+      "review": "Broad, playable prompt; complete displayed board; combined categories kept intact; aliases checked against source category."
+    },
+    {
+      "id": "dog-lawsuit",
+      "source": "https://mstiescott.neocities.org/feud18_6.html",
+      "season": 18,
+      "sourceBoardIndex": 36,
+      "sourceSha256": "28343de0a72e9d0c9f2d956b47b4b3f3173ad4ade4e8def8b714b195877770b1",
+      "answerCount": 6,
+      "points": [
+        40,
+        23,
+        20,
+        6,
+        6,
+        2
+      ],
+      "boardTotal": 97,
+      "review": "Broad, playable prompt; complete displayed board; combined categories kept intact; aliases checked against source category."
+    },
+    {
+      "id": "food-addiction",
+      "source": "https://mstiescott.neocities.org/feud18_6.html",
+      "season": 18,
+      "sourceBoardIndex": 188,
+      "sourceSha256": "28343de0a72e9d0c9f2d956b47b4b3f3173ad4ade4e8def8b714b195877770b1",
+      "answerCount": 6,
+      "points": [
+        21,
+        12,
+        11,
+        9,
+        7,
+        6
+      ],
+      "boardTotal": 66,
+      "review": "Broad, playable prompt; complete displayed board; combined categories kept intact; aliases checked against source category."
+    },
+    {
+      "id": "houseguest",
+      "source": "https://mstiescott.neocities.org/feud18_5.html",
+      "season": 18,
+      "sourceBoardIndex": 59,
+      "sourceSha256": "88ac70c037ec2aa5ba3c2e0864661e6574e56ccd70973ecc9b6f9b105ac9180d",
+      "answerCount": 5,
+      "points": [
+        56,
+        23,
+        10,
+        3,
+        2
+      ],
+      "boardTotal": 94,
+      "review": "Broad, playable prompt; complete displayed board; combined categories kept intact; aliases checked against source category."
+    },
+    {
+      "id": "towed-car",
+      "source": "https://mstiescott.neocities.org/feud18_5.html",
+      "season": 18,
+      "sourceBoardIndex": 62,
+      "sourceSha256": "88ac70c037ec2aa5ba3c2e0864661e6574e56ccd70973ecc9b6f9b105ac9180d",
+      "answerCount": 5,
+      "points": [
+        40,
+        27,
+        10,
+        10,
+        7
+      ],
+      "boardTotal": 94,
+      "review": "Broad, playable prompt; complete displayed board; combined categories kept intact; aliases checked against source category."
+    },
+    {
+      "id": "hook-games",
+      "source": "https://mstiescott.neocities.org/feud19_6.html",
+      "season": 19,
+      "sourceBoardIndex": 192,
+      "sourceSha256": "2e85facec325b9d618f48d4cfce49f16592a1d62fbddc99fba5ffc3c404945b8",
+      "answerCount": 6,
+      "points": [
+        18,
+        16,
+        12,
+        11,
+        5,
+        4
+      ],
+      "boardTotal": 66,
+      "review": "Broad, playable prompt; complete displayed board; combined categories kept intact; aliases checked against source category."
+    },
+    {
+      "id": "horror-classic",
+      "source": "https://mstiescott.neocities.org/feud19_6.html",
+      "season": 19,
+      "sourceBoardIndex": 198,
+      "sourceSha256": "2e85facec325b9d618f48d4cfce49f16592a1d62fbddc99fba5ffc3c404945b8",
+      "answerCount": 6,
+      "points": [
+        21,
+        14,
+        8,
+        5,
+        5,
+        5
+      ],
+      "boardTotal": 58,
+      "review": "Broad, playable prompt; complete displayed board; combined categories kept intact; aliases checked against source category."
+    },
+    {
+      "id": "small-green",
+      "source": "https://mstiescott.neocities.org/feud19_5.html",
+      "season": 19,
+      "sourceBoardIndex": 87,
+      "sourceSha256": "e073f207a8467dce168ba50fc07fcc0c60da5c5e89f5e27dd0fe8ee72c99702a",
+      "answerCount": 5,
+      "points": [
+        29,
+        22,
+        12,
+        4,
+        4
+      ],
+      "boardTotal": 71,
+      "review": "Broad, playable prompt; complete displayed board; combined categories kept intact; aliases checked against source category."
+    },
+    {
+      "id": "weather-wrestler",
+      "source": "https://mstiescott.neocities.org/feud19_5.html",
+      "season": 19,
+      "sourceBoardIndex": 88,
+      "sourceSha256": "e073f207a8467dce168ba50fc07fcc0c60da5c5e89f5e27dd0fe8ee72c99702a",
+      "answerCount": 5,
+      "points": [
+        19,
+        18,
+        16,
+        12,
+        6
+      ],
+      "boardTotal": 71,
+      "review": "Broad, playable prompt; complete displayed board; combined categories kept intact; aliases checked against source category."
+    },
+    {
+      "id": "billionaire-size",
+      "source": "https://mstiescott.neocities.org/feud20_6.html",
+      "season": 20,
+      "sourceBoardIndex": 144,
+      "sourceSha256": "d70d901e79018611afad81a5870f8d638123791f259eb90351eaf4f54d2e8bc6",
+      "answerCount": 6,
+      "points": [
+        30,
+        16,
+        13,
+        10,
+        9,
+        6
+      ],
+      "boardTotal": 84,
+      "review": "Broad, playable prompt; complete displayed board; combined categories kept intact; aliases checked against source category."
+    },
+    {
+      "id": "meat-blank",
+      "source": "https://mstiescott.neocities.org/feud20_6.html",
+      "season": 20,
+      "sourceBoardIndex": 189,
+      "sourceSha256": "d70d901e79018611afad81a5870f8d638123791f259eb90351eaf4f54d2e8bc6",
+      "answerCount": 6,
+      "points": [
+        17,
+        16,
+        13,
+        5,
+        4,
+        4
+      ],
+      "boardTotal": 59,
+      "review": "Broad, playable prompt; complete displayed board; combined categories kept intact; aliases checked against source category."
+    },
+    {
+      "id": "music-money",
+      "source": "https://mstiescott.neocities.org/feud20_5.html",
+      "season": 20,
+      "sourceBoardIndex": 88,
+      "sourceSha256": "950acff87dcbf59c5416dcaa428205e985413207499cbd5071bff63f29e4c43e",
+      "answerCount": 5,
+      "points": [
+        27,
+        16,
+        16,
+        6,
+        5
+      ],
+      "boardTotal": 70,
+      "review": "Broad, playable prompt; complete displayed board; combined categories kept intact; aliases checked against source category."
+    },
+    {
+      "id": "food-forever",
+      "source": "https://mstiescott.neocities.org/feud20_5.html",
+      "season": 20,
+      "sourceBoardIndex": 101,
+      "sourceSha256": "950acff87dcbf59c5416dcaa428205e985413207499cbd5071bff63f29e4c43e",
+      "answerCount": 5,
+      "points": [
+        27,
+        12,
+        8,
+        8,
+        7
+      ],
+      "boardTotal": 62,
+      "review": "Broad, playable prompt; complete displayed board; combined categories kept intact; aliases checked against source category."
+    },
+    {
+      "id": "hidden-bone",
+      "source": "https://mstiescott.neocities.org/feud21_6.html",
+      "season": 21,
+      "sourceBoardIndex": 153,
+      "sourceSha256": "23c8f8e53f419d4c21f5c060a6c95c9d2c71826fdd9c56f081408eff2c7d6c11",
+      "answerCount": 6,
+      "points": [
+        40,
+        22,
+        12,
+        4,
+        4,
+        3
+      ],
+      "boardTotal": 85,
+      "review": "Broad, playable prompt; complete displayed board; combined categories kept intact; aliases checked against source category."
+    },
+    {
+      "id": "wrong-tennis-ball",
+      "source": "https://mstiescott.neocities.org/feud21_6.html",
+      "season": 21,
+      "sourceBoardIndex": 157,
+      "sourceSha256": "23c8f8e53f419d4c21f5c060a6c95c9d2c71826fdd9c56f081408eff2c7d6c11",
+      "answerCount": 6,
+      "points": [
+        27,
+        19,
+        16,
+        16,
+        4,
+        3
+      ],
+      "boardTotal": 85,
+      "review": "Broad, playable prompt; complete displayed board; combined categories kept intact; aliases checked against source category."
+    },
+    {
+      "id": "office-projectile",
+      "source": "https://mstiescott.neocities.org/feud21_5.html",
+      "season": 21,
+      "sourceBoardIndex": 56,
+      "sourceSha256": "eaf8cfbfe3017048d70a57e587451a136bdf26b51655d0db793a4355fbf443e1",
+      "answerCount": 5,
+      "points": [
+        26,
+        17,
+        14,
+        13,
+        7
+      ],
+      "boardTotal": 77,
+      "review": "Broad, playable prompt; complete displayed board; combined categories kept intact; aliases checked against source category."
+    },
+    {
+      "id": "dont-touch",
+      "source": "https://mstiescott.neocities.org/feud21_5.html",
+      "season": 21,
+      "sourceBoardIndex": 67,
+      "sourceSha256": "eaf8cfbfe3017048d70a57e587451a136bdf26b51655d0db793a4355fbf443e1",
+      "answerCount": 5,
+      "points": [
+        40,
+        9,
+        8,
+        7,
+        5
+      ],
+      "boardTotal": 69,
+      "review": "Broad, playable prompt; complete displayed board; combined categories kept intact; aliases checked against source category."
+    },
+    {
+      "id": "fruit-head",
+      "source": "https://mstiescott.neocities.org/feud22_6.html",
+      "season": 22,
+      "sourceBoardIndex": 118,
+      "sourceSha256": "61e7d3f7bfecd01c501b4950fe37b96ac60afb8a5c70799419a1b5c3c35a8efc",
+      "answerCount": 6,
+      "points": [
+        41,
+        20,
+        18,
+        3,
+        3,
+        3
+      ],
+      "boardTotal": 88,
+      "review": "Broad, playable prompt; complete displayed board; combined categories kept intact; aliases checked against source category."
+    },
+    {
+      "id": "sharp-teeth",
+      "source": "https://mstiescott.neocities.org/feud22_6.html",
+      "season": 22,
+      "sourceBoardIndex": 156,
+      "sourceSha256": "61e7d3f7bfecd01c501b4950fe37b96ac60afb8a5c70799419a1b5c3c35a8efc",
+      "answerCount": 6,
+      "points": [
+        33,
+        17,
+        12,
+        9,
+        5,
+        5
+      ],
+      "boardTotal": 81,
+      "review": "Broad, playable prompt; complete displayed board; combined categories kept intact; aliases checked against source category."
+    },
+    {
+      "id": "animal-nose",
+      "source": "https://mstiescott.neocities.org/feud22_5.html",
+      "season": 22,
+      "sourceBoardIndex": 60,
+      "sourceSha256": "64cc5fea50e860b6c0cb4273b916eae5d405e6c54946f617add9cd44f83845e2",
+      "answerCount": 5,
+      "points": [
+        36,
+        14,
+        13,
+        13,
+        6
+      ],
+      "boardTotal": 82,
+      "review": "Broad, playable prompt; complete displayed board; combined categories kept intact; aliases checked against source category."
+    },
+    {
+      "id": "tutu",
+      "source": "https://mstiescott.neocities.org/feud22_5.html",
+      "season": 22,
+      "sourceBoardIndex": 79,
+      "sourceSha256": "64cc5fea50e860b6c0cb4273b916eae5d405e6c54946f617add9cd44f83845e2",
+      "answerCount": 5,
+      "points": [
+        28,
+        12,
+        11,
+        9,
+        5
+      ],
+      "boardTotal": 65,
+      "review": "Broad, playable prompt; complete displayed board; combined categories kept intact; aliases checked against source category."
+    },
+    {
+      "id": "whole-food",
+      "source": "https://mstiescott.neocities.org/feud23_6.html",
+      "season": 23,
+      "sourceBoardIndex": 148,
+      "sourceSha256": "49655911b7d1c91df16053645f171fa584a8dd17eb4aed48cb7fd4554b051ff7",
+      "answerCount": 6,
+      "points": [
+        33,
+        15,
+        14,
+        11,
+        9,
+        5
+      ],
+      "boardTotal": 87,
+      "review": "Broad, playable prompt; complete displayed board; combined categories kept intact; aliases checked against source category."
+    },
+    {
+      "id": "holiday-letdown",
+      "source": "https://mstiescott.neocities.org/feud23_6.html",
+      "season": 23,
+      "sourceBoardIndex": 159,
+      "sourceSha256": "49655911b7d1c91df16053645f171fa584a8dd17eb4aed48cb7fd4554b051ff7",
+      "answerCount": 6,
+      "points": [
+        33,
+        17,
+        15,
+        10,
+        6,
+        5
+      ],
+      "boardTotal": 86,
+      "review": "Broad, playable prompt; complete displayed board; combined categories kept intact; aliases checked against source category."
+    },
+    {
+      "id": "nice-smelling-place",
+      "source": "https://mstiescott.neocities.org/feud23_5.html",
+      "season": 23,
+      "sourceBoardIndex": 89,
+      "sourceSha256": "b85db416749d6c5e482d978fd8399a721378a5c57d9214875b875dc8c19d848a",
+      "answerCount": 5,
+      "points": [
+        35,
+        23,
+        6,
+        4,
+        4
+      ],
+      "boardTotal": 72,
+      "review": "Broad, playable prompt; complete displayed board; combined categories kept intact; aliases checked against source category."
+    },
+    {
+      "id": "baby-animal",
+      "source": "https://mstiescott.neocities.org/feud23_5.html",
+      "season": 23,
+      "sourceBoardIndex": 90,
+      "sourceSha256": "b85db416749d6c5e482d978fd8399a721378a5c57d9214875b875dc8c19d848a",
+      "answerCount": 5,
+      "points": [
+        24,
+        17,
+        16,
+        9,
+        6
+      ],
+      "boardTotal": 72,
+      "review": "Broad, playable prompt; complete displayed board; combined categories kept intact; aliases checked against source category."
+    },
+    {
+      "id": "wet-job",
+      "source": "https://mstiescott.neocities.org/feud24_6.html",
+      "season": 24,
+      "sourceBoardIndex": 156,
+      "sourceSha256": "0ef41d8924ddf4264b99365656412eb4615cc0afd3057318a88e7e71a46930f1",
+      "answerCount": 6,
+      "points": [
+        32,
+        12,
+        10,
+        8,
+        7,
+        5
+      ],
+      "boardTotal": 74,
+      "review": "Broad, playable prompt; complete displayed board; combined categories kept intact; aliases checked against source category."
+    },
+    {
+      "id": "small-candy",
+      "source": "https://mstiescott.neocities.org/feud24_6.html",
+      "season": 24,
+      "sourceBoardIndex": 163,
+      "sourceSha256": "0ef41d8924ddf4264b99365656412eb4615cc0afd3057318a88e7e71a46930f1",
+      "answerCount": 6,
+      "points": [
+        16,
+        16,
+        11,
+        9,
+        7,
+        5
+      ],
+      "boardTotal": 64,
+      "review": "Broad, playable prompt; complete displayed board; combined categories kept intact; aliases checked against source category."
+    },
+    {
+      "id": "dog-s-words",
+      "source": "https://mstiescott.neocities.org/feud24_5.html",
+      "season": 24,
+      "sourceBoardIndex": 27,
+      "sourceSha256": "da829aa00b8ee2fa9b72d7e20210ead0ce7293d6bd7a44e03a4edd687f82b056",
+      "answerCount": 5,
+      "points": [
+        78,
+        8,
+        3,
+        2,
+        2
+      ],
+      "boardTotal": 93,
+      "review": "Broad, playable prompt; complete displayed board; combined categories kept intact; aliases checked against source category."
+    },
+    {
+      "id": "sport-size",
+      "source": "https://mstiescott.neocities.org/feud24_5.html",
+      "season": 24,
+      "sourceBoardIndex": 31,
+      "sourceSha256": "da829aa00b8ee2fa9b72d7e20210ead0ce7293d6bd7a44e03a4edd687f82b056",
+      "answerCount": 5,
+      "points": [
+        46,
+        29,
+        12,
+        3,
+        3
+      ],
+      "boardTotal": 93,
+      "review": "Broad, playable prompt; complete displayed board; combined categories kept intact; aliases checked against source category."
+    },
+    {
+      "id": "football-icons",
+      "source": "https://mstiescott.neocities.org/feud25_6.html",
+      "season": 25,
+      "sourceBoardIndex": 149,
+      "sourceSha256": "376c46e92084f82b16e575c61a40f7370d2c4ceec605c68dfa637dfd5f887718",
+      "answerCount": 6,
+      "points": [
+        40,
+        8,
+        7,
+        4,
+        4,
+        4
+      ],
+      "boardTotal": 67,
+      "review": "Broad, playable prompt; complete displayed board; combined categories kept intact; aliases checked against source category."
+    },
+    {
+      "id": "high-paid-work",
+      "source": "https://mstiescott.neocities.org/feud25_6.html",
+      "season": 25,
+      "sourceBoardIndex": 161,
+      "sourceSha256": "376c46e92084f82b16e575c61a40f7370d2c4ceec605c68dfa637dfd5f887718",
+      "answerCount": 6,
+      "points": [
+        19,
+        10,
+        10,
+        7,
+        6,
+        5
+      ],
+      "boardTotal": 57,
+      "review": "Broad, playable prompt; complete displayed board; combined categories kept intact; aliases checked against source category."
+    },
+    {
+      "id": "sleeping-bag",
+      "source": "https://mstiescott.neocities.org/feud25_5.html",
+      "season": 25,
+      "sourceBoardIndex": 15,
+      "sourceSha256": "91ea7f35979f23ff98d4b1719e4e6cd7795b888d4a7d59bf004a1aa42b62728e",
+      "answerCount": 5,
+      "points": [
+        69,
+        19,
+        4,
+        3,
+        3
+      ],
+      "boardTotal": 98,
+      "review": "Broad, playable prompt; complete displayed board; combined categories kept intact; aliases checked against source category."
+    },
+    {
+      "id": "cowboy-instrument",
+      "source": "https://mstiescott.neocities.org/feud25_5.html",
+      "season": 25,
+      "sourceBoardIndex": 54,
+      "sourceSha256": "91ea7f35979f23ff98d4b1719e4e6cd7795b888d4a7d59bf004a1aa42b62728e",
+      "answerCount": 5,
+      "points": [
+        27,
+        15,
+        11,
+        9,
+        8
+      ],
+      "boardTotal": 70,
+      "review": "Broad, playable prompt; complete displayed board; combined categories kept intact; aliases checked against source category."
+    }
+  ]
+}
