@@ -1,6 +1,6 @@
 {
-  "build": "f76d48e6faa2df82",
-  "count": 679,
+  "build": "8b71fac59116f5c5",
+  "count": 1000,
   "categories": [
     {
       "id": "group-q001",
@@ -5103,7 +5103,7 @@
       "prompt": "Name an NBA head coach, past or present.",
       "family": "sports",
       "group": "authored-curated-200-whole-subject",
-      "answerCount": 168,
+      "answerCount": 172,
       "scope": "Head coaches and interim head coaches of NBA teams count. Assistant-only, college-only and player-only roles do not qualify."
     },
     {
@@ -5433,6 +5433,2574 @@
       "group": "authored-curated-200-whole-subject",
       "answerCount": 98,
       "scope": "Names officially retired from Atlantic tropical-cyclone naming lists count. Ordinary storm names and names retired only in another ocean basin do not."
+    },
+    {
+      "id": "authored-1000-star-wars-characters",
+      "prompt": "Name a character from Star Wars.",
+      "family": "culture",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 122,
+      "scope": "Named characters appearing in the original franchise, its direct adaptations or sequels count. Actors, production staff, fan characters and characters appearing only in unrelated crossover games do not. Public aliases of one character share a scoring identity."
+    },
+    {
+      "id": "authored-1000-middle-earth-characters",
+      "prompt": "Name a character from The Lord of the Rings or The Hobbit.",
+      "family": "culture",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 94,
+      "scope": "Named characters appearing in the original franchise, its direct adaptations or sequels count. Actors, production staff, fan characters and characters appearing only in unrelated crossover games do not. Public aliases of one character share a scoring identity."
+    },
+    {
+      "id": "authored-1000-marvel-characters",
+      "prompt": "Name a character from Marvel comics or a Marvel adaptation.",
+      "family": "culture",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 186,
+      "scope": "Named characters appearing in the original franchise, its direct adaptations or sequels count. Actors, production staff, fan characters and characters appearing only in unrelated crossover games do not. Public aliases of one character share a scoring identity."
+    },
+    {
+      "id": "authored-1000-dc-characters",
+      "prompt": "Name a character from DC comics or a DC adaptation.",
+      "family": "culture",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 166,
+      "scope": "Named characters appearing in the original franchise, its direct adaptations or sequels count. Actors, production staff, fan characters and characters appearing only in unrelated crossover games do not. Public aliases of one character share a scoring identity."
+    },
+    {
+      "id": "authored-1000-stranger-things-characters",
+      "prompt": "Name a character from Stranger Things.",
+      "family": "culture",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 54,
+      "scope": "Named characters appearing in the original franchise, its direct adaptations or sequels count. Actors, production staff, fan characters and characters appearing only in unrelated crossover games do not. Public aliases of one character share a scoring identity."
+    },
+    {
+      "id": "authored-1000-office-characters",
+      "prompt": "Name a character from The Office (U.S.).",
+      "family": "culture",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 55,
+      "scope": "Named characters appearing in the original franchise, its direct adaptations or sequels count. Actors, production staff, fan characters and characters appearing only in unrelated crossover games do not. Public aliases of one character share a scoring identity."
+    },
+    {
+      "id": "authored-1000-friends-characters",
+      "prompt": "Name a character from Friends.",
+      "family": "culture",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 56,
+      "scope": "Named characters appearing in the original franchise, its direct adaptations or sequels count. Actors, production staff, fan characters and characters appearing only in unrelated crossover games do not. Public aliases of one character share a scoring identity."
+    },
+    {
+      "id": "authored-1000-brooklyn-nine-nine-characters",
+      "prompt": "Name a character from Brooklyn Nine-Nine.",
+      "family": "culture",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 49,
+      "scope": "Named characters appearing in the original franchise, its direct adaptations or sequels count. Actors, production staff, fan characters and characters appearing only in unrelated crossover games do not. Public aliases of one character share a scoring identity."
+    },
+    {
+      "id": "authored-1000-modern-family-characters",
+      "prompt": "Name a character from Modern Family.",
+      "family": "culture",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 47,
+      "scope": "Named characters appearing in the original franchise, its direct adaptations or sequels count. Actors, production staff, fan characters and characters appearing only in unrelated crossover games do not. Public aliases of one character share a scoring identity."
+    },
+    {
+      "id": "authored-1000-big-bang-characters",
+      "prompt": "Name a character from The Big Bang Theory.",
+      "family": "culture",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 45,
+      "scope": "Named fictional characters in The Big Bang Theory count. Real celebrity guest stars count only when explicitly playing a separately named fictional character; actor names are not automatically character aliases."
+    },
+    {
+      "id": "authored-1000-how-i-met-your-mother",
+      "prompt": "Name a character from How I Met Your Mother.",
+      "family": "culture",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 48,
+      "scope": "Named characters appearing in the original franchise, its direct adaptations or sequels count. Actors, production staff, fan characters and characters appearing only in unrelated crossover games do not. Public aliases of one character share a scoring identity."
+    },
+    {
+      "id": "authored-1000-seinfeld-characters",
+      "prompt": "Name a character from Seinfeld.",
+      "family": "culture",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 46,
+      "scope": "Named characters appearing in the original franchise, its direct adaptations or sequels count. Actors, production staff, fan characters and characters appearing only in unrelated crossover games do not. Public aliases of one character share a scoring identity."
+    },
+    {
+      "id": "authored-1000-parks-and-recreation",
+      "prompt": "Name a character from Parks and Recreation.",
+      "family": "culture",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 48,
+      "scope": "Named characters appearing in the original franchise, its direct adaptations or sequels count. Actors, production staff, fan characters and characters appearing only in unrelated crossover games do not. Public aliases of one character share a scoring identity."
+    },
+    {
+      "id": "authored-1000-community-characters",
+      "prompt": "Name a character from Community.",
+      "family": "culture",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 48,
+      "scope": "Named characters appearing in the original franchise, its direct adaptations or sequels count. Actors, production staff, fan characters and characters appearing only in unrelated crossover games do not. Public aliases of one character share a scoring identity."
+    },
+    {
+      "id": "authored-1000-futurama-characters",
+      "prompt": "Name a character from Futurama.",
+      "family": "culture",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 57,
+      "scope": "Named characters appearing in the original franchise, its direct adaptations or sequels count. Actors, production staff, fan characters and characters appearing only in unrelated crossover games do not. Public aliases of one character share a scoring identity."
+    },
+    {
+      "id": "authored-1000-scooby-doo-characters",
+      "prompt": "Name a character from Scooby-Doo.",
+      "family": "culture",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 49,
+      "scope": "Named characters appearing in the original franchise, its direct adaptations or sequels count. Actors, production staff, fan characters and characters appearing only in unrelated crossover games do not. Public aliases of one character share a scoring identity."
+    },
+    {
+      "id": "authored-1000-ben-ten-characters",
+      "prompt": "Name a character from Ben 10.",
+      "family": "culture",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 94,
+      "scope": "Named characters appearing in the original franchise, its direct adaptations or sequels count. Actors, production staff, fan characters and characters appearing only in unrelated crossover games do not. Public aliases of one character share a scoring identity."
+    },
+    {
+      "id": "authored-1000-danny-phantom-characters",
+      "prompt": "Name a character from Danny Phantom.",
+      "family": "culture",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 49,
+      "scope": "Named characters appearing in the original franchise, its direct adaptations or sequels count. Actors, production staff, fan characters and characters appearing only in unrelated crossover games do not. Public aliases of one character share a scoring identity."
+    },
+    {
+      "id": "authored-1000-kim-possible-characters",
+      "prompt": "Name a character from Kim Possible.",
+      "family": "culture",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 49,
+      "scope": "Named characters appearing in the original franchise, its direct adaptations or sequels count. Actors, production staff, fan characters and characters appearing only in unrelated crossover games do not. Public aliases of one character share a scoring identity."
+    },
+    {
+      "id": "authored-1000-steven-universe-characters",
+      "prompt": "Name a character from Steven Universe.",
+      "family": "culture",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 68,
+      "scope": "Named characters appearing in the original franchise, its direct adaptations or sequels count. Actors, production staff, fan characters and characters appearing only in unrelated crossover games do not. Public aliases of one character share a scoring identity."
+    },
+    {
+      "id": "authored-1000-invincible-characters",
+      "prompt": "Name a character from Invincible.",
+      "family": "culture",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 56,
+      "scope": "Named characters appearing in the original franchise, its direct adaptations or sequels count. Actors, production staff, fan characters and characters appearing only in unrelated crossover games do not. Public aliases of one character share a scoring identity."
+    },
+    {
+      "id": "authored-1000-arcane-characters",
+      "prompt": "Name a character from Arcane.",
+      "family": "culture",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 46,
+      "scope": "Named characters appearing in the Arcane television series count. A League of Legends champion who has never appeared in the series does not count simply because the settings are connected."
+    },
+    {
+      "id": "authored-1000-wednesday-characters",
+      "prompt": "Name a character from Wednesday.",
+      "family": "culture",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 41,
+      "scope": "Named characters appearing in the original franchise, its direct adaptations or sequels count. Actors, production staff, fan characters and characters appearing only in unrelated crossover games do not. Public aliases of one character share a scoring identity."
+    },
+    {
+      "id": "authored-1000-pokemon-anime-characters",
+      "prompt": "Name a character from the Pokemon animated series.",
+      "family": "culture",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 93,
+      "scope": "Named characters appearing in the original franchise, its direct adaptations or sequels count. Actors, production staff, fan characters and characters appearing only in unrelated crossover games do not. Public aliases of one character share a scoring identity."
+    },
+    {
+      "id": "authored-1000-digimon-characters",
+      "prompt": "Name a character from Digimon.",
+      "family": "culture",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 65,
+      "scope": "Named characters appearing in the original franchise, its direct adaptations or sequels count. Actors, production staff, fan characters and characters appearing only in unrelated crossover games do not. Public aliases of one character share a scoring identity."
+    },
+    {
+      "id": "authored-1000-yugioh-characters",
+      "prompt": "Name a character from Yu-Gi-Oh!.",
+      "family": "culture",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 59,
+      "scope": "Named characters appearing in the original franchise, its direct adaptations or sequels count. Actors, production staff, fan characters and characters appearing only in unrelated crossover games do not. Public aliases of one character share a scoring identity."
+    },
+    {
+      "id": "authored-1000-bleach-characters",
+      "prompt": "Name a character from Bleach.",
+      "family": "culture",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 85,
+      "scope": "Named characters appearing in the original franchise, its direct adaptations or sequels count. Actors, production staff, fan characters and characters appearing only in unrelated crossover games do not. Public aliases of one character share a scoring identity."
+    },
+    {
+      "id": "authored-1000-my-hero-academia",
+      "prompt": "Name a character from My Hero Academia.",
+      "family": "culture",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 71,
+      "scope": "Named characters appearing in the original franchise, its direct adaptations or sequels count. Actors, production staff, fan characters and characters appearing only in unrelated crossover games do not. Public aliases of one character share a scoring identity."
+    },
+    {
+      "id": "authored-1000-hunter-hunter",
+      "prompt": "Name a character from Hunter x Hunter.",
+      "family": "culture",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 79,
+      "scope": "Named characters appearing in the original franchise, its direct adaptations or sequels count. Actors, production staff, fan characters and characters appearing only in unrelated crossover games do not. Public aliases of one character share a scoring identity."
+    },
+    {
+      "id": "authored-1000-fullmetal-alchemist",
+      "prompt": "Name a character from Fullmetal Alchemist.",
+      "family": "culture",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 64,
+      "scope": "Named characters appearing in the original franchise, its direct adaptations or sequels count. Actors, production staff, fan characters and characters appearing only in unrelated crossover games do not. Public aliases of one character share a scoring identity."
+    },
+    {
+      "id": "authored-1000-chainsaw-man",
+      "prompt": "Name a character from Chainsaw Man.",
+      "family": "culture",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 52,
+      "scope": "Named characters appearing in the original franchise, its direct adaptations or sequels count. Actors, production staff, fan characters and characters appearing only in unrelated crossover games do not. Public aliases of one character share a scoring identity."
+    },
+    {
+      "id": "authored-1000-spy-family",
+      "prompt": "Name a character from Spy x Family.",
+      "family": "culture",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 45,
+      "scope": "Named characters appearing in the original franchise, its direct adaptations or sequels count. Actors, production staff, fan characters and characters appearing only in unrelated crossover games do not. Public aliases of one character share a scoring identity."
+    },
+    {
+      "id": "authored-1000-disney-ducks",
+      "prompt": "Name a character from the Donald Duck or DuckTales stories.",
+      "family": "culture",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 55,
+      "scope": "Named characters appearing in the original franchise, its direct adaptations or sequels count. Actors, production staff, fan characters and characters appearing only in unrelated crossover games do not. Public aliases of one character share a scoring identity."
+    },
+    {
+      "id": "authored-1000-kung-fu-panda",
+      "prompt": "Name a character from Kung Fu Panda.",
+      "family": "culture",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 49,
+      "scope": "Named characters appearing in the original franchise, its direct adaptations or sequels count. Actors, production staff, fan characters and characters appearing only in unrelated crossover games do not. Public aliases of one character share a scoring identity."
+    },
+    {
+      "id": "authored-1000-madagascar-characters",
+      "prompt": "Name a character from Madagascar.",
+      "family": "culture",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 49,
+      "scope": "Named characters appearing in the original franchise, its direct adaptations or sequels count. Actors, production staff, fan characters and characters appearing only in unrelated crossover games do not. Public aliases of one character share a scoring identity."
+    },
+    {
+      "id": "authored-1000-how-to-train-dragon",
+      "prompt": "Name a character from How to Train Your Dragon.",
+      "family": "culture",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 53,
+      "scope": "Named characters appearing in the original franchise, its direct adaptations or sequels count. Actors, production staff, fan characters and characters appearing only in unrelated crossover games do not. Public aliases of one character share a scoring identity."
+    },
+    {
+      "id": "authored-1000-muppets-characters",
+      "prompt": "Name a character from The Muppet Show or a Muppets movie.",
+      "family": "culture",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 85,
+      "scope": "Named Muppets and human characters appearing in The Muppet Show or official Muppets feature films count. A performer name is not automatically the name of their character. Fan creations and unrelated television characters do not count."
+    },
+    {
+      "id": "authored-1000-pixar-films",
+      "prompt": "Name a movie made by Pixar.",
+      "family": "culture",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 31,
+      "scope": "Released feature films credited to the named animation studio count, including theatrical and streaming originals. Shorts, TV episodes and films merely distributed by the same parent company do not count."
+    },
+    {
+      "id": "authored-1000-dreamworks-films",
+      "prompt": "Name a movie made by DreamWorks Animation.",
+      "family": "culture",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 53,
+      "scope": "Released feature films credited to the named animation studio count, including theatrical and streaming originals. Shorts, TV episodes and films merely distributed by the same parent company do not count."
+    },
+    {
+      "id": "authored-1000-ghibli-films",
+      "prompt": "Name a feature film in Studio Ghibli’s official film catalog.",
+      "family": "culture",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 25,
+      "scope": "Official feature works listed by Studio Ghibli count, including the predecessor production Nausicaa and the co-production The Red Turtle. Shorts and episodes do not."
+    },
+    {
+      "id": "authored-1000-mythological-deities",
+      "prompt": "Name a named deity from mythology or a traditional religion.",
+      "family": "culture",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 162,
+      "scope": "Named deities from established mythological or religious traditions count. This is a cultural identification question, not a claim about religious truth. Fictional superheroes who borrow a deity’s name do not create a second answer."
+    },
+    {
+      "id": "authored-1000-table-kinds",
+      "prompt": "Name a type of table.",
+      "family": "everyday",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 64,
+      "scope": "Named examples of the whole subject count, including documented historical examples. Real public synonyms share one answer; arbitrary initials and invented combinations do not."
+    },
+    {
+      "id": "authored-1000-bed-kinds",
+      "prompt": "Name a type of bed.",
+      "family": "everyday",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 47,
+      "scope": "Named examples of the whole subject count, including documented historical examples. Real public synonyms share one answer; arbitrary initials and invented combinations do not."
+    },
+    {
+      "id": "authored-1000-bedding",
+      "prompt": "Name an item of bedding.",
+      "family": "everyday",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 41,
+      "scope": "Named examples of the whole subject count, including documented historical examples. Real public synonyms share one answer; arbitrary initials and invented combinations do not."
+    },
+    {
+      "id": "authored-1000-window-coverings",
+      "prompt": "Name a type of window covering.",
+      "family": "everyday",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 38,
+      "scope": "Named examples of the whole subject count, including documented historical examples. Real public synonyms share one answer; arbitrary initials and invented combinations do not."
+    },
+    {
+      "id": "authored-1000-floor-coverings",
+      "prompt": "Name a type of flooring or floor covering.",
+      "family": "everyday",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 43,
+      "scope": "Named examples of the whole subject count, including documented historical examples. Real public synonyms share one answer; arbitrary initials and invented combinations do not."
+    },
+    {
+      "id": "authored-1000-sewing-stitches",
+      "prompt": "Name a sewing or embroidery stitch.",
+      "family": "everyday",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 60,
+      "scope": "Named sewing, mending and embroidery stitches count. Knitting-only stitch patterns and rope knots are different subjects."
+    },
+    {
+      "id": "authored-1000-knitting-crochet",
+      "prompt": "Name a knitting or crochet stitch or established stitch pattern.",
+      "family": "everyday",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 40,
+      "scope": "Named examples of the whole subject count, including documented historical examples. Real public synonyms share one answer; arbitrary initials and invented combinations do not."
+    },
+    {
+      "id": "authored-1000-paper-kinds",
+      "prompt": "Name a type of paper or paper material.",
+      "family": "everyday",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 121,
+      "scope": "Named examples of the whole subject count, including documented historical examples. Real public synonyms share one answer; arbitrary initials and invented combinations do not."
+    },
+    {
+      "id": "authored-1000-wood-materials",
+      "prompt": "Name a wood used for building, furniture or crafts.",
+      "family": "everyday",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 151,
+      "scope": "Named woods, including botanical species and established timber names, count. Wood composites may count when independently named in the source inventory."
+    },
+    {
+      "id": "authored-1000-housekeeping-tasks",
+      "prompt": "Name a cleaning or housekeeping task.",
+      "family": "everyday",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 61,
+      "scope": "Named examples of the whole subject count, including documented historical examples. Real public synonyms share one answer; arbitrary initials and invented combinations do not."
+    },
+    {
+      "id": "authored-1000-repair-jobs",
+      "prompt": "Name a type of repair, restoration or maintenance job.",
+      "family": "everyday",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 73,
+      "scope": "Named examples of the whole subject count, including documented historical examples. Real public synonyms share one answer; arbitrary initials and invented combinations do not."
+    },
+    {
+      "id": "authored-1000-school-subjects",
+      "prompt": "Name a school subject or course.",
+      "family": "everyday",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 56,
+      "scope": "Named examples of the whole subject count, including documented historical examples. Real public synonyms share one answer; arbitrary initials and invented combinations do not."
+    },
+    {
+      "id": "authored-1000-teaching-activities",
+      "prompt": "Name a teaching, studying or learning activity.",
+      "family": "everyday",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 69,
+      "scope": "Named examples of the whole subject count, including documented historical examples. Real public synonyms share one answer; arbitrary initials and invented combinations do not."
+    },
+    {
+      "id": "authored-1000-school-kinds",
+      "prompt": "Name a type of school or educational institution.",
+      "family": "everyday",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 74,
+      "scope": "Named examples of the whole subject count, including documented historical examples. Real public synonyms share one answer; arbitrary initials and invented combinations do not."
+    },
+    {
+      "id": "authored-1000-documents",
+      "prompt": "Name a type of document or written record.",
+      "family": "everyday",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 394,
+      "scope": "Named examples of the whole subject count, including documented historical examples. Real public synonyms share one answer; arbitrary initials and invented combinations do not."
+    },
+    {
+      "id": "authored-1000-container-kinds",
+      "prompt": "Name a type of container.",
+      "family": "everyday",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 498,
+      "scope": "Named examples of the whole subject count, including documented historical examples. Real public synonyms share one answer; arbitrary initials and invented combinations do not."
+    },
+    {
+      "id": "authored-1000-storage-items",
+      "prompt": "Name an item of storage furniture or a storage organizer.",
+      "family": "everyday",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 42,
+      "scope": "Named examples of the whole subject count, including documented historical examples. Real public synonyms share one answer; arbitrary initials and invented combinations do not."
+    },
+    {
+      "id": "authored-1000-cutting-tools",
+      "prompt": "Name a tool or machine designed to cut things.",
+      "family": "everyday",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 140,
+      "scope": "Named examples of the whole subject count, including documented historical examples. Real public synonyms share one answer; arbitrary initials and invented combinations do not."
+    },
+    {
+      "id": "authored-1000-types-of-shelter",
+      "prompt": "Name a type of shelter.",
+      "family": "everyday",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 78,
+      "scope": "Named examples of the whole subject count, including documented historical examples. Real public synonyms share one answer; arbitrary initials and invented combinations do not."
+    },
+    {
+      "id": "authored-1000-types-of-tent",
+      "prompt": "Name a type or established design of tent.",
+      "family": "everyday",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 41,
+      "scope": "Named examples of the whole subject count, including documented historical examples. Real public synonyms share one answer; arbitrary initials and invented combinations do not."
+    },
+    {
+      "id": "authored-1000-personal-items-lost",
+      "prompt": "Name an item people commonly carry in a pocket, bag or wallet.",
+      "family": "everyday",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 60,
+      "scope": "Named examples of the whole subject count, including documented historical examples. Real public synonyms share one answer; arbitrary initials and invented combinations do not."
+    },
+    {
+      "id": "authored-1000-types-of-mirror",
+      "prompt": "Name a type or established design of mirror.",
+      "family": "everyday",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 38,
+      "scope": "Named examples of the whole subject count, including documented historical examples. Real public synonyms share one answer; arbitrary initials and invented combinations do not."
+    },
+    {
+      "id": "authored-1000-light-switch-controls",
+      "prompt": "Name a household control, button or switch.",
+      "family": "everyday",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 42,
+      "scope": "Named examples of the whole subject count, including documented historical examples. Real public synonyms share one answer; arbitrary initials and invented combinations do not."
+    },
+    {
+      "id": "authored-1000-types-of-heating",
+      "prompt": "Name a device or system used to heat a room or building.",
+      "family": "everyday",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 41,
+      "scope": "Named examples of the whole subject count, including documented historical examples. Real public synonyms share one answer; arbitrary initials and invented combinations do not."
+    },
+    {
+      "id": "authored-1000-cooling-ventilation",
+      "prompt": "Name a device or system for cooling or ventilating a space.",
+      "family": "everyday",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 38,
+      "scope": "Named examples of the whole subject count, including documented historical examples. Real public synonyms share one answer; arbitrary initials and invented combinations do not."
+    },
+    {
+      "id": "authored-1000-door-kinds",
+      "prompt": "Name a type of door.",
+      "family": "everyday",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 39,
+      "scope": "Named examples of the whole subject count, including documented historical examples. Real public synonyms share one answer; arbitrary initials and invented combinations do not."
+    },
+    {
+      "id": "authored-1000-stairs-ladders",
+      "prompt": "Name a type of staircase, ladder or step access.",
+      "family": "everyday",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 41,
+      "scope": "Named examples of the whole subject count, including documented historical examples. Real public synonyms share one answer; arbitrary initials and invented combinations do not."
+    },
+    {
+      "id": "authored-1000-roof-kinds",
+      "prompt": "Name a roof shape, roof structure or roof covering.",
+      "family": "everyday",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 42,
+      "scope": "Named examples of the whole subject count, including documented historical examples. Real public synonyms share one answer; arbitrary initials and invented combinations do not."
+    },
+    {
+      "id": "authored-1000-types-of-fence",
+      "prompt": "Name a type of fence, gate or railing.",
+      "family": "everyday",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 43,
+      "scope": "Named examples of the whole subject count, including documented historical examples. Real public synonyms share one answer; arbitrary initials and invented combinations do not."
+    },
+    {
+      "id": "authored-1000-first-aid-kit",
+      "prompt": "Name an item found in a first-aid kit.",
+      "family": "everyday",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 46,
+      "scope": "Named supplies included in established home, travel, workplace or specialist first-aid kits count. This is a trivia inventory, not treatment advice."
+    },
+    {
+      "id": "authored-1000-hair-accessories",
+      "prompt": "Name a hair accessory or hair-styling tool.",
+      "family": "everyday",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 46,
+      "scope": "Named examples of the whole subject count, including documented historical examples. Real public synonyms share one answer; arbitrary initials and invented combinations do not."
+    },
+    {
+      "id": "authored-1000-shaving-products",
+      "prompt": "Name an item used for shaving, beard care or hair removal.",
+      "family": "everyday",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 41,
+      "scope": "Named examples of the whole subject count, including documented historical examples. Real public synonyms share one answer; arbitrary initials and invented combinations do not."
+    },
+    {
+      "id": "authored-1000-nail-care",
+      "prompt": "Name a nail-care item or nail-art technique.",
+      "family": "everyday",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 44,
+      "scope": "Named examples of the whole subject count, including documented historical examples. Real public synonyms share one answer; arbitrary initials and invented combinations do not."
+    },
+    {
+      "id": "authored-1000-travel-accessories",
+      "prompt": "Name a travel accessory.",
+      "family": "everyday",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 45,
+      "scope": "Named examples of the whole subject count, including documented historical examples. Real public synonyms share one answer; arbitrary initials and invented combinations do not."
+    },
+    {
+      "id": "authored-1000-birthday-party-supplies",
+      "prompt": "Name a party supply or item used for a celebration.",
+      "family": "everyday",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 47,
+      "scope": "Named examples of the whole subject count, including documented historical examples. Real public synonyms share one answer; arbitrary initials and invented combinations do not."
+    },
+    {
+      "id": "authored-1000-handicraft-materials",
+      "prompt": "Name a material or supply used for arts and crafts.",
+      "family": "everyday",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 55,
+      "scope": "Named examples of the whole subject count, including documented historical examples. Real public synonyms share one answer; arbitrary initials and invented combinations do not."
+    },
+    {
+      "id": "authored-1000-clothing-care-tools",
+      "prompt": "Name an item used to care for, repair or organize clothing.",
+      "family": "everyday",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 45,
+      "scope": "Named examples of the whole subject count, including documented historical examples. Real public synonyms share one answer; arbitrary initials and invented combinations do not."
+    },
+    {
+      "id": "authored-1000-school-clubs",
+      "prompt": "Name a school club or extracurricular activity.",
+      "family": "everyday",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 74,
+      "scope": "Named examples of the whole subject count, including documented historical examples. Real public synonyms share one answer; arbitrary initials and invented combinations do not."
+    },
+    {
+      "id": "authored-1000-postal-supplies",
+      "prompt": "Name an item used to send, pack or deliver mail or parcels.",
+      "family": "everyday",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 46,
+      "scope": "Named examples of the whole subject count, including documented historical examples. Real public synonyms share one answer; arbitrary initials and invented combinations do not."
+    },
+    {
+      "id": "authored-1000-types-of-recycling",
+      "prompt": "Name a material or item commonly collected for recycling.",
+      "family": "everyday",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 53,
+      "scope": "Named materials and products accepted by at least one established household, commercial or specialist recycling stream count. This is trivia, not a claim that every local curbside service accepts them."
+    },
+    {
+      "id": "authored-1000-furniture-brands",
+      "prompt": "Name a furniture brand or furniture retailer.",
+      "family": "everyday",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 89,
+      "scope": "Named examples of the whole subject count, including documented historical examples. Real public synonyms share one answer; arbitrary initials and invented combinations do not."
+    },
+    {
+      "id": "authored-1000-appliance-brands",
+      "prompt": "Name a household-appliance brand or manufacturer.",
+      "family": "everyday",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 83,
+      "scope": "Named examples of the whole subject count, including documented historical examples. Real public synonyms share one answer; arbitrary initials and invented combinations do not."
+    },
+    {
+      "id": "authored-1000-power-tool-brands",
+      "prompt": "Name a power-tool brand.",
+      "family": "everyday",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 70,
+      "scope": "Named examples of the whole subject count, including documented historical examples. Real public synonyms share one answer; arbitrary initials and invented combinations do not."
+    },
+    {
+      "id": "authored-1000-paint-brands",
+      "prompt": "Name a paint brand or paint manufacturer.",
+      "family": "everyday",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 75,
+      "scope": "Named examples of the whole subject count, including documented historical examples. Real public synonyms share one answer; arbitrary initials and invented combinations do not."
+    },
+    {
+      "id": "authored-1000-pet-food-brands",
+      "prompt": "Name a pet-food brand.",
+      "family": "everyday",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 81,
+      "scope": "Named examples of the whole subject count, including documented historical examples. Real public synonyms share one answer; arbitrary initials and invented combinations do not."
+    },
+    {
+      "id": "authored-1000-pet-retailers",
+      "prompt": "Name a pet-store chain or specialist pet-supply retailer.",
+      "family": "everyday",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 66,
+      "scope": "Named examples of the whole subject count, including documented historical examples. Real public synonyms share one answer; arbitrary initials and invented combinations do not."
+    },
+    {
+      "id": "authored-1000-streaming-services",
+      "prompt": "Name a video, live-TV or music streaming service.",
+      "family": "everyday",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 112,
+      "scope": "Named active or historical streaming services count. Live and on-demand audio or video qualify; successor brand names of the same continuing service share an identity where explicitly documented."
+    },
+    {
+      "id": "authored-1000-hardware-stores",
+      "prompt": "Name a home-improvement, hardware or building-supply retail chain.",
+      "family": "everyday",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 86,
+      "scope": "Named examples of the whole subject count, including documented historical examples. Real public synonyms share one answer; arbitrary initials and invented combinations do not."
+    },
+    {
+      "id": "authored-1000-food-delivery-apps",
+      "prompt": "Name a restaurant-food delivery or takeaway-ordering app or service.",
+      "family": "everyday",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 78,
+      "scope": "Named consumer restaurant-ordering and food-delivery services, including historical brands, count. Business-only dispatch software and a restaurant chain’s ordinary website are not standalone delivery-service brands."
+    },
+    {
+      "id": "authored-1000-charities",
+      "prompt": "Name a real charity or charitable organization.",
+      "family": "everyday",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 127,
+      "scope": "Documented charitable organizations, charitable foundations and recognized humanitarian aid agencies count, including historic public names. Ordinary for-profit businesses do not count simply because they make donations."
+    },
+    {
+      "id": "authored-1000-tea-styles",
+      "prompt": "Name a tea, tea style or established herbal infusion.",
+      "family": "food",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 55,
+      "scope": "Named examples of the whole subject count, including documented historical examples. Real public synonyms share one answer; arbitrary initials and invented combinations do not."
+    },
+    {
+      "id": "authored-1000-apple-cultivars",
+      "prompt": "Name an apple variety.",
+      "family": "food",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 54,
+      "scope": "Named examples of the whole subject count, including documented historical examples. Real public synonyms share one answer; arbitrary initials and invented combinations do not."
+    },
+    {
+      "id": "authored-1000-citrus-fruits",
+      "prompt": "Name a citrus fruit, citrus variety or citrus hybrid.",
+      "family": "food",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 55,
+      "scope": "Named examples of the whole subject count, including documented historical examples. Real public synonyms share one answer; arbitrary initials and invented combinations do not."
+    },
+    {
+      "id": "authored-1000-cereal-grains",
+      "prompt": "Name a cereal grain, pseudocereal or named grain variety.",
+      "family": "food",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 86,
+      "scope": "Named examples of the whole subject count, including documented historical examples. Real public synonyms share one answer; arbitrary initials and invented combinations do not."
+    },
+    {
+      "id": "authored-1000-raw-dishes",
+      "prompt": "Name a named dish traditionally served with an uncooked main ingredient.",
+      "family": "food",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 46,
+      "scope": "Established dishes with a raw or acid-cured principal ingredient count. Raw side garnishes on an otherwise cooked main dish do not make it a raw dish."
+    },
+    {
+      "id": "authored-1000-wine-styles",
+      "prompt": "Name a wine or established wine style.",
+      "family": "food",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 92,
+      "scope": "Named examples of the whole subject count, including documented historical examples. Real public synonyms share one answer; arbitrary initials and invented combinations do not."
+    },
+    {
+      "id": "authored-1000-distilled-spirits",
+      "prompt": "Name a distilled spirit or liqueur.",
+      "family": "food",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 72,
+      "scope": "Named examples of the whole subject count, including documented historical examples. Real public synonyms share one answer; arbitrary initials and invented combinations do not."
+    },
+    {
+      "id": "authored-1000-cocktails",
+      "prompt": "Name an established cocktail.",
+      "family": "food",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 56,
+      "scope": "Named examples of the whole subject count, including documented historical examples. Real public synonyms share one answer; arbitrary initials and invented combinations do not."
+    },
+    {
+      "id": "authored-1000-beer-styles",
+      "prompt": "Name a beer style.",
+      "family": "food",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 59,
+      "scope": "Named examples of the whole subject count, including documented historical examples. Real public synonyms share one answer; arbitrary initials and invented combinations do not."
+    },
+    {
+      "id": "authored-1000-french-foods",
+      "prompt": "Name a French dish or established French food.",
+      "family": "food",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 54,
+      "scope": "Named examples of the whole subject count, including documented historical examples. Real public synonyms share one answer; arbitrary initials and invented combinations do not."
+    },
+    {
+      "id": "authored-1000-greek-foods",
+      "prompt": "Name a Greek dish or established Greek food.",
+      "family": "food",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 48,
+      "scope": "Named examples of the whole subject count, including documented historical examples. Real public synonyms share one answer; arbitrary initials and invented combinations do not."
+    },
+    {
+      "id": "authored-1000-spanish-foods",
+      "prompt": "Name a Spanish dish or established Spanish food.",
+      "family": "food",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 49,
+      "scope": "Named examples of the whole subject count, including documented historical examples. Real public synonyms share one answer; arbitrary initials and invented combinations do not."
+    },
+    {
+      "id": "authored-1000-thai-foods",
+      "prompt": "Name a Thai dish or established Thai food.",
+      "family": "food",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 50,
+      "scope": "Named examples of the whole subject count, including documented historical examples. Real public synonyms share one answer; arbitrary initials and invented combinations do not."
+    },
+    {
+      "id": "authored-1000-vietnamese-foods",
+      "prompt": "Name a Vietnamese dish or established Vietnamese food.",
+      "family": "food",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 48,
+      "scope": "Named examples of the whole subject count, including documented historical examples. Real public synonyms share one answer; arbitrary initials and invented combinations do not."
+    },
+    {
+      "id": "authored-1000-korean-foods",
+      "prompt": "Name a Korean dish or established Korean food.",
+      "family": "food",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 53,
+      "scope": "Named examples of the whole subject count, including documented historical examples. Real public synonyms share one answer; arbitrary initials and invented combinations do not."
+    },
+    {
+      "id": "authored-1000-turkish-foods",
+      "prompt": "Name a Turkish dish or established Turkish food.",
+      "family": "food",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 49,
+      "scope": "Named examples of the whole subject count, including documented historical examples. Real public synonyms share one answer; arbitrary initials and invented combinations do not."
+    },
+    {
+      "id": "authored-1000-middle-eastern-foods",
+      "prompt": "Name a dish or established food from the Middle East.",
+      "family": "food",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 58,
+      "scope": "Named examples of the whole subject count, including documented historical examples. Real public synonyms share one answer; arbitrary initials and invented combinations do not."
+    },
+    {
+      "id": "authored-1000-caribbean-foods",
+      "prompt": "Name a Caribbean dish or established Caribbean food.",
+      "family": "food",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 56,
+      "scope": "Named examples of the whole subject count, including documented historical examples. Real public synonyms share one answer; arbitrary initials and invented combinations do not."
+    },
+    {
+      "id": "authored-1000-barbecue-foods",
+      "prompt": "Name a named barbecue dish or established barbecue preparation.",
+      "family": "food",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 51,
+      "scope": "Named examples of the whole subject count, including documented historical examples. Real public synonyms share one answer; arbitrary initials and invented combinations do not."
+    },
+    {
+      "id": "authored-1000-dips",
+      "prompt": "Name an established dip or dipping sauce.",
+      "family": "food",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 49,
+      "scope": "Named examples of the whole subject count, including documented historical examples. Real public synonyms share one answer; arbitrary initials and invented combinations do not."
+    },
+    {
+      "id": "authored-1000-beans-lentils",
+      "prompt": "Name an edible bean, lentil, pea or other pulse.",
+      "family": "food",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 47,
+      "scope": "Named examples of the whole subject count, including documented historical examples. Real public synonyms share one answer; arbitrary initials and invented combinations do not."
+    },
+    {
+      "id": "authored-1000-leafy-greens",
+      "prompt": "Name an edible leafy green.",
+      "family": "food",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 50,
+      "scope": "Named examples of the whole subject count, including documented historical examples. Real public synonyms share one answer; arbitrary initials and invented combinations do not."
+    },
+    {
+      "id": "authored-1000-edible-fruits",
+      "prompt": "Name a fruit people eat.",
+      "family": "food",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 73,
+      "scope": "Culinary fruits and edible botanical fruits count. Toxic plants and non-edible plant parts do not. Familiar varieties share the established named identities present in the bank."
+    },
+    {
+      "id": "authored-1000-frostings-fillings",
+      "prompt": "Name a cake frosting, icing or established sweet cake filling.",
+      "family": "food",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 47,
+      "scope": "Named examples of the whole subject count, including documented historical examples. Real public synonyms share one answer; arbitrary initials and invented combinations do not."
+    },
+    {
+      "id": "authored-1000-food-additives",
+      "prompt": "Name a food additive or named ingredient used to preserve or improve food.",
+      "family": "food",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 56,
+      "scope": "Named examples of the whole subject count, including documented historical examples. Real public synonyms share one answer; arbitrary initials and invented combinations do not."
+    },
+    {
+      "id": "authored-1000-cheese-brands",
+      "prompt": "Name a cheese brand or cheese producer.",
+      "family": "food",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 50,
+      "scope": "Named examples of the whole subject count, including documented historical examples. Real public synonyms share one answer; arbitrary initials and invented combinations do not."
+    },
+    {
+      "id": "authored-1000-energy-drinks",
+      "prompt": "Name an energy-drink brand or named energy-drink product.",
+      "family": "food",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 51,
+      "scope": "Named examples of the whole subject count, including documented historical examples. Real public synonyms share one answer; arbitrary initials and invented combinations do not."
+    },
+    {
+      "id": "authored-1000-sports-drinks",
+      "prompt": "Name a sports-drink, electrolyte-drink or oral-rehydration brand.",
+      "family": "food",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 45,
+      "scope": "Named examples of the whole subject count, including documented historical examples. Real public synonyms share one answer; arbitrary initials and invented combinations do not."
+    },
+    {
+      "id": "authored-1000-plant-milks",
+      "prompt": "Name a plant-based milk or plant-based milk brand.",
+      "family": "food",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 46,
+      "scope": "Named examples of the whole subject count, including documented historical examples. Real public synonyms share one answer; arbitrary initials and invented combinations do not."
+    },
+    {
+      "id": "authored-1000-seafood-dishes",
+      "prompt": "Name a named seafood dish.",
+      "family": "food",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 54,
+      "scope": "Named examples of the whole subject count, including documented historical examples. Real public synonyms share one answer; arbitrary initials and invented combinations do not."
+    },
+    {
+      "id": "authored-1000-sandwich-bread-brands",
+      "prompt": "Name a bread or bakery brand.",
+      "family": "food",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 48,
+      "scope": "Named examples of the whole subject count, including documented historical examples. Real public synonyms share one answer; arbitrary initials and invented combinations do not."
+    },
+    {
+      "id": "authored-1000-rice-varieties",
+      "prompt": "Name a rice variety or established type of rice.",
+      "family": "food",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 48,
+      "scope": "Named examples of the whole subject count, including documented historical examples. Real public synonyms share one answer; arbitrary initials and invented combinations do not."
+    },
+    {
+      "id": "authored-1000-noodle-types",
+      "prompt": "Name a type or shape of noodle.",
+      "family": "food",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 43,
+      "scope": "Named noodle shapes, families and established noodle products count. Names of complete prepared dishes are not automatically noodle types."
+    },
+    {
+      "id": "authored-1000-food-preservation",
+      "prompt": "Name a food-preservation method.",
+      "family": "food",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 47,
+      "scope": "Named examples of the whole subject count, including documented historical examples. Real public synonyms share one answer; arbitrary initials and invented combinations do not."
+    },
+    {
+      "id": "authored-1000-food-service-brands",
+      "prompt": "Name a catering, meal-kit or prepared-meal delivery company.",
+      "family": "food",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 49,
+      "scope": "Named examples of the whole subject count, including documented historical examples. Real public synonyms share one answer; arbitrary initials and invented combinations do not."
+    },
+    {
+      "id": "authored-1000-all-pokemon",
+      "prompt": "Name a Pokemon.",
+      "family": "gaming",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 1025,
+      "scope": "Officially released named examples from the stated game or franchise count. Mods, fan creations, unreleased leaks, unrelated crossovers and production staff do not. Alternate public names share an answer."
+    },
+    {
+      "id": "authored-1000-minecraft-blocks",
+      "prompt": "Name a block in vanilla Minecraft.",
+      "family": "gaming",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 1117,
+      "scope": "Named block identities present in current vanilla Java Edition count, including unobtainable technical blocks and air variants. Bedrock-only historical blocks and mods are outside this snapshot."
+    },
+    {
+      "id": "authored-1000-minecraft-inventory-items",
+      "prompt": "Name a non-block inventory item in vanilla Minecraft.",
+      "family": "gaming",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 472,
+      "scope": "Items with a non-block identity in current vanilla Java Edition count, including tools, weapons, food, materials, spawn eggs and worn equipment. Placeable blocks are a separate question; a block item is not accepted here."
+    },
+    {
+      "id": "authored-1000-minecraft-structures",
+      "prompt": "Name a generated structure in vanilla Minecraft.",
+      "family": "gaming",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 67,
+      "scope": "Named world-generated structures and recognized variants count, including small generated features such as dungeons and geodes. Player builds and mods do not."
+    },
+    {
+      "id": "authored-1000-zelda-characters",
+      "prompt": "Name a character from a Legend of Zelda game.",
+      "family": "gaming",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 116,
+      "scope": "Officially released named examples from the stated game or franchise count. Mods, fan creations, unreleased leaks, unrelated crossovers and production staff do not. Alternate public names share an answer."
+    },
+    {
+      "id": "authored-1000-mario-kart-courses",
+      "prompt": "Name a race course from a Mario Kart game.",
+      "family": "gaming",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 149,
+      "scope": "Officially released named examples from the stated game or franchise count. Mods, fan creations, unreleased leaks, unrelated crossovers and production staff do not. Alternate public names share an answer."
+    },
+    {
+      "id": "authored-1000-mario-kart-items",
+      "prompt": "Name a usable item from a Mario Kart game.",
+      "family": "gaming",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 48,
+      "scope": "Named usable power-ups and special items appearing in official Mario Kart games, including Tour and arcade games, count. Kart parts and general Mario platform-game items do not automatically count."
+    },
+    {
+      "id": "authored-1000-kirby-characters",
+      "prompt": "Name a character or named boss from a Kirby game.",
+      "family": "gaming",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 80,
+      "scope": "Officially released named examples from the stated game or franchise count. Mods, fan creations, unreleased leaks, unrelated crossovers and production staff do not. Alternate public names share an answer."
+    },
+    {
+      "id": "authored-1000-donkey-kong-characters",
+      "prompt": "Name a character from a Donkey Kong game.",
+      "family": "gaming",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 76,
+      "scope": "Officially released named examples from the stated game or franchise count. Mods, fan creations, unreleased leaks, unrelated crossovers and production staff do not. Alternate public names share an answer."
+    },
+    {
+      "id": "authored-1000-crash-bandicoot-characters",
+      "prompt": "Name a character from Crash Bandicoot.",
+      "family": "gaming",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 65,
+      "scope": "Officially released named examples from the stated game or franchise count. Mods, fan creations, unreleased leaks, unrelated crossovers and production staff do not. Alternate public names share an answer."
+    },
+    {
+      "id": "authored-1000-spyro-characters",
+      "prompt": "Name a character from a Spyro game.",
+      "family": "gaming",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 76,
+      "scope": "Officially released named examples from the stated game or franchise count. Mods, fan creations, unreleased leaks, unrelated crossovers and production staff do not. Alternate public names share an answer."
+    },
+    {
+      "id": "authored-1000-halo-characters",
+      "prompt": "Name a character from Halo.",
+      "family": "gaming",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 67,
+      "scope": "Officially released named examples from the stated game or franchise count. Mods, fan creations, unreleased leaks, unrelated crossovers and production staff do not. Alternate public names share an answer."
+    },
+    {
+      "id": "authored-1000-resident-evil-characters",
+      "prompt": "Name a character from Resident Evil.",
+      "family": "gaming",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 80,
+      "scope": "Officially released named examples from the stated game or franchise count. Mods, fan creations, unreleased leaks, unrelated crossovers and production staff do not. Alternate public names share an answer."
+    },
+    {
+      "id": "authored-1000-final-fantasy-characters",
+      "prompt": "Name a named character from a Final Fantasy game.",
+      "family": "gaming",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 182,
+      "scope": "Officially released named examples from the stated game or franchise count. Mods, fan creations, unreleased leaks, unrelated crossovers and production staff do not. Alternate public names share an answer."
+    },
+    {
+      "id": "authored-1000-genshin-playable",
+      "prompt": "Name a playable character from Genshin Impact.",
+      "family": "gaming",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 120,
+      "scope": "Officially released named examples from the stated game or franchise count. Mods, fan creations, unreleased leaks, unrelated crossovers and production staff do not. Alternate public names share an answer."
+    },
+    {
+      "id": "authored-1000-honkai-star-rail-playable",
+      "prompt": "Name a playable character from Honkai: Star Rail.",
+      "family": "gaming",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 86,
+      "scope": "Officially released named examples from the stated game or franchise count. Mods, fan creations, unreleased leaks, unrelated crossovers and production staff do not. Alternate public names share an answer."
+    },
+    {
+      "id": "authored-1000-brawlstars-brawlers",
+      "prompt": "Name a playable Brawler from Brawl Stars.",
+      "family": "gaming",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 106,
+      "scope": "Officially released named examples from the stated game or franchise count. Mods, fan creations, unreleased leaks, unrelated crossovers and production staff do not. Alternate public names share an answer."
+    },
+    {
+      "id": "authored-1000-clash-royale-cards",
+      "prompt": "Name a card from Clash Royale.",
+      "family": "gaming",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 120,
+      "scope": "Released named Troop, Spell, Building, Champion and Tower Troop card identities count. Evolutions share their underlying card identity; unreleased test cards and troop-only summons are not additional collectible cards."
+    },
+    {
+      "id": "authored-1000-clash-of-clans-troops",
+      "prompt": "Name a troop, hero or pet from Clash of Clans.",
+      "family": "gaming",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 93,
+      "scope": "Official controllable troops, heroes, hero pets and documented seasonal event troops count. Defensive buildings, potions, spells and troops that exist only in Clash Royale do not."
+    },
+    {
+      "id": "authored-1000-hollow-knight-bosses",
+      "prompt": "Name a boss or boss encounter from Hollow Knight.",
+      "family": "gaming",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 48,
+      "scope": "Named bosses and separately named dream or Godhome boss encounters from Hollow Knight and its official expansions count. Silksong is a different game; unnamed difficulty settings do not create new boss identities."
+    },
+    {
+      "id": "authored-1000-hades-characters",
+      "prompt": "Name a named character from Hades or Hades II.",
+      "family": "gaming",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 62,
+      "scope": "Officially released named examples from the stated game or franchise count. Mods, fan creations, unreleased leaks, unrelated crossovers and production staff do not. Alternate public names share an answer."
+    },
+    {
+      "id": "authored-1000-undertale-deltarune",
+      "prompt": "Name a named character from Undertale or Deltarune.",
+      "family": "gaming",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 101,
+      "scope": "Officially released named examples from the stated game or franchise count. Mods, fan creations, unreleased leaks, unrelated crossovers and production staff do not. Alternate public names share an answer."
+    },
+    {
+      "id": "authored-1000-video-game-studios",
+      "prompt": "Name a video-game developer or publisher.",
+      "family": "gaming",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 162,
+      "scope": "Credited professional or independent game developers, individual indie creators and game publishers count. Descriptive guesses such as “the Minecraft company” are not aliases unless they are real public trading names."
+    },
+    {
+      "id": "authored-1000-video-game-engines",
+      "prompt": "Name a game engine or game-development framework.",
+      "family": "gaming",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 76,
+      "scope": "Released game engines, engine recreations and development frameworks count. General image editors, office apps, emulators and standalone physics or animation middleware are not themselves game engines."
+    },
+    {
+      "id": "authored-1000-video-game-genres",
+      "prompt": "Name a video-game genre or established game subgenre.",
+      "family": "gaming",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 92,
+      "scope": "Officially released named examples from the stated game or franchise count. Mods, fan creations, unreleased leaks, unrelated crossovers and production staff do not. Alternate public names share an answer."
+    },
+    {
+      "id": "authored-1000-michael-jackson-songs",
+      "prompt": "Name a song by Michael Jackson.",
+      "family": "music",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 248,
+      "scope": "Released song titles with the named artist as a lead or vocal guest count, including released mixtape songs and actual group performances. Production-only credits, unofficial leaks and instrumental-only versions do not count. Clean/explicit, live and remix variants share an identity."
+    },
+    {
+      "id": "authored-1000-elton-john-songs",
+      "prompt": "Name a song by Elton John.",
+      "family": "music",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 663,
+      "scope": "Released song titles with the named artist as a lead or vocal guest count, including released mixtape songs and actual group performances. Production-only credits, unofficial leaks and instrumental-only versions do not count. Clean/explicit, live and remix variants share an identity."
+    },
+    {
+      "id": "authored-1000-david-bowie-songs",
+      "prompt": "Name a song by David Bowie.",
+      "family": "music",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 609,
+      "scope": "Released song titles with the named artist as a lead or vocal guest count, including released mixtape songs and actual group performances. Production-only credits, unofficial leaks and instrumental-only versions do not count. Clean/explicit, live and remix variants share an identity."
+    },
+    {
+      "id": "authored-1000-prince-songs",
+      "prompt": "Name a song by Prince.",
+      "family": "music",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 632,
+      "scope": "Released song titles with the named artist as a lead or vocal guest count, including released mixtape songs and actual group performances. Production-only credits, unofficial leaks and instrumental-only versions do not count. Clean/explicit, live and remix variants share an identity."
+    },
+    {
+      "id": "authored-1000-abba-songs",
+      "prompt": "Name a song by ABBA.",
+      "family": "music",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 119,
+      "scope": "Released song titles with the named artist as a lead or vocal guest count, including released mixtape songs and actual group performances. Production-only credits, unofficial leaks and instrumental-only versions do not count. Clean/explicit, live and remix variants share an identity."
+    },
+    {
+      "id": "authored-1000-bob-marley-the-wailers-songs",
+      "prompt": "Name a song by Bob Marley & The Wailers.",
+      "family": "music",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 125,
+      "scope": "Released song titles with the named artist as a lead or vocal guest count, including released mixtape songs and actual group performances. Production-only credits, unofficial leaks and instrumental-only versions do not count. Clean/explicit, live and remix variants share an identity."
+    },
+    {
+      "id": "authored-1000-stevie-wonder-songs",
+      "prompt": "Name a song by Stevie Wonder.",
+      "family": "music",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 111,
+      "scope": "Released song titles with the named artist as a lead or vocal guest count, including released mixtape songs and actual group performances. Production-only credits, unofficial leaks and instrumental-only versions do not count. Clean/explicit, live and remix variants share an identity."
+    },
+    {
+      "id": "authored-1000-adele-songs",
+      "prompt": "Name a song by Adele.",
+      "family": "music",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 78,
+      "scope": "Released song titles with the named artist as a lead or vocal guest count, including released mixtape songs and actual group performances. Production-only credits, unofficial leaks and instrumental-only versions do not count. Clean/explicit, live and remix variants share an identity."
+    },
+    {
+      "id": "authored-1000-amy-winehouse-songs",
+      "prompt": "Name a song by Amy Winehouse.",
+      "family": "music",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 70,
+      "scope": "Released song titles with the named artist as a lead or vocal guest count, including released mixtape songs and actual group performances. Production-only credits, unofficial leaks and instrumental-only versions do not count. Clean/explicit, live and remix variants share an identity."
+    },
+    {
+      "id": "authored-1000-alicia-keys-songs",
+      "prompt": "Name a song by Alicia Keys.",
+      "family": "music",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 136,
+      "scope": "Released song titles with the named artist as a lead or vocal guest count, including released mixtape songs and actual group performances. Production-only credits, unofficial leaks and instrumental-only versions do not count. Clean/explicit, live and remix variants share an identity."
+    },
+    {
+      "id": "authored-1000-whitney-houston-songs",
+      "prompt": "Name a song by Whitney Houston.",
+      "family": "music",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 117,
+      "scope": "Released song titles with the named artist as a lead or vocal guest count, including released mixtape songs and actual group performances. Production-only credits, unofficial leaks and instrumental-only versions do not count. Clean/explicit, live and remix variants share an identity."
+    },
+    {
+      "id": "authored-1000-mariah-carey-songs",
+      "prompt": "Name a song by Mariah Carey.",
+      "family": "music",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 118,
+      "scope": "Released song titles with the named artist as a lead or vocal guest count, including released mixtape songs and actual group performances. Production-only credits, unofficial leaks and instrumental-only versions do not count. Clean/explicit, live and remix variants share an identity."
+    },
+    {
+      "id": "authored-1000-c-line-dion-songs",
+      "prompt": "Name a song by Céline Dion.",
+      "family": "music",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 132,
+      "scope": "Released song titles with the named artist as a lead or vocal guest count, including released mixtape songs and actual group performances. Production-only credits, unofficial leaks and instrumental-only versions do not count. Clean/explicit, live and remix variants share an identity."
+    },
+    {
+      "id": "authored-1000-p-nk-songs",
+      "prompt": "Name a song by P!nk.",
+      "family": "music",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 116,
+      "scope": "Released song titles with the named artist as a lead or vocal guest count, including released mixtape songs and actual group performances. Production-only credits, unofficial leaks and instrumental-only versions do not count. Clean/explicit, live and remix variants share an identity."
+    },
+    {
+      "id": "authored-1000-britney-spears-songs",
+      "prompt": "Name a song by Britney Spears.",
+      "family": "music",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 115,
+      "scope": "Released song titles with the named artist as a lead or vocal guest count, including released mixtape songs and actual group performances. Production-only credits, unofficial leaks and instrumental-only versions do not count. Clean/explicit, live and remix variants share an identity."
+    },
+    {
+      "id": "authored-1000-christina-aguilera-songs",
+      "prompt": "Name a song by Christina Aguilera.",
+      "family": "music",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 135,
+      "scope": "Released song titles with the named artist as a lead or vocal guest count, including released mixtape songs and actual group performances. Production-only credits, unofficial leaks and instrumental-only versions do not count. Clean/explicit, live and remix variants share an identity."
+    },
+    {
+      "id": "authored-1000-shakira-songs",
+      "prompt": "Name a song by Shakira.",
+      "family": "music",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 145,
+      "scope": "Released song titles with the named artist as a lead or vocal guest count, including released mixtape songs and actual group performances. Production-only credits, unofficial leaks and instrumental-only versions do not count. Clean/explicit, live and remix variants share an identity."
+    },
+    {
+      "id": "authored-1000-pitbull-songs",
+      "prompt": "Name a song by Pitbull.",
+      "family": "music",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 127,
+      "scope": "Released song titles with the named artist as a lead or vocal guest count, including released mixtape songs and actual group performances. Production-only credits, unofficial leaks and instrumental-only versions do not count. Clean/explicit, live and remix variants share an identity."
+    },
+    {
+      "id": "authored-1000-usher-songs",
+      "prompt": "Name a song by USHER.",
+      "family": "music",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 141,
+      "scope": "Released song titles with the named artist as a lead or vocal guest count, including released mixtape songs and actual group performances. Production-only credits, unofficial leaks and instrumental-only versions do not count. Clean/explicit, live and remix variants share an identity."
+    },
+    {
+      "id": "authored-1000-akon-songs",
+      "prompt": "Name a song by Akon.",
+      "family": "music",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 129,
+      "scope": "Released song titles with the named artist as a lead or vocal guest count, including released mixtape songs and actual group performances. Production-only credits, unofficial leaks and instrumental-only versions do not count. Clean/explicit, live and remix variants share an identity."
+    },
+    {
+      "id": "authored-1000-t-pain-songs",
+      "prompt": "Name a song by T-Pain.",
+      "family": "music",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 106,
+      "scope": "Released song titles with the named artist as a lead or vocal guest count, including released mixtape songs and actual group performances. Production-only credits, unofficial leaks and instrumental-only versions do not count. Clean/explicit, live and remix variants share an identity."
+    },
+    {
+      "id": "authored-1000-nelly-songs",
+      "prompt": "Name a song by Nelly.",
+      "family": "music",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 97,
+      "scope": "Released song titles with the named artist as a lead or vocal guest count, including released mixtape songs and actual group performances. Production-only credits, unofficial leaks and instrumental-only versions do not count. Clean/explicit, live and remix variants share an identity."
+    },
+    {
+      "id": "authored-1000-50-cent-songs",
+      "prompt": "Name a song by 50 Cent.",
+      "family": "music",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 126,
+      "scope": "Released song titles with the named artist as a lead or vocal guest count, including released mixtape songs and actual group performances. Production-only credits, unofficial leaks and instrumental-only versions do not count. Clean/explicit, live and remix variants share an identity."
+    },
+    {
+      "id": "authored-1000-outkast-songs",
+      "prompt": "Name a song by Outkast.",
+      "family": "music",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 117,
+      "scope": "Released song titles with the named artist as a lead or vocal guest count, including released mixtape songs and actual group performances. Production-only credits, unofficial leaks and instrumental-only versions do not count. Clean/explicit, live and remix variants share an identity."
+    },
+    {
+      "id": "authored-1000-a-ap-rocky-songs",
+      "prompt": "Name a song by A$AP Rocky.",
+      "family": "music",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 153,
+      "scope": "Released song titles with the named artist as a lead or vocal guest count, including released mixtape songs and actual group performances. Production-only credits, unofficial leaks and instrumental-only versions do not count. Clean/explicit, live and remix variants share an identity."
+    },
+    {
+      "id": "authored-1000-lil-baby-songs",
+      "prompt": "Name a song by Lil Baby.",
+      "family": "music",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 182,
+      "scope": "Released song titles with the named artist as a lead or vocal guest count, including released mixtape songs and actual group performances. Production-only credits, unofficial leaks and instrumental-only versions do not count. Clean/explicit, live and remix variants share an identity."
+    },
+    {
+      "id": "authored-1000-gunna-songs",
+      "prompt": "Name a song by Gunna.",
+      "family": "music",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 156,
+      "scope": "Released song titles with the named artist as a lead or vocal guest count, including released mixtape songs and actual group performances. Production-only credits, unofficial leaks and instrumental-only versions do not count. Clean/explicit, live and remix variants share an identity."
+    },
+    {
+      "id": "authored-1000-playboi-carti-songs",
+      "prompt": "Name a song by Playboi Carti.",
+      "family": "music",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 142,
+      "scope": "Released song titles with the named artist as a lead or vocal guest count, including released mixtape songs and actual group performances. Production-only credits, unofficial leaks and instrumental-only versions do not count. Clean/explicit, live and remix variants share an identity."
+    },
+    {
+      "id": "authored-1000-childish-gambino-songs",
+      "prompt": "Name a song by Childish Gambino.",
+      "family": "music",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 122,
+      "scope": "Released song titles with the named artist as a lead or vocal guest count, including released mixtape songs and actual group performances. Production-only credits, unofficial leaks and instrumental-only versions do not count. Clean/explicit, live and remix variants share an identity."
+    },
+    {
+      "id": "authored-1000-daft-punk-songs",
+      "prompt": "Name a song by Daft Punk.",
+      "family": "music",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 105,
+      "scope": "Released song titles with the named artist as a lead or vocal guest count, including released mixtape songs and actual group performances. Production-only credits, unofficial leaks and instrumental-only versions do not count. Clean/explicit, live and remix variants share an identity."
+    },
+    {
+      "id": "authored-1000-arctic-monkeys-songs",
+      "prompt": "Name a song by Arctic Monkeys.",
+      "family": "music",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 121,
+      "scope": "Released song titles with the named artist as a lead or vocal guest count, including released mixtape songs and actual group performances. Production-only credits, unofficial leaks and instrumental-only versions do not count. Clean/explicit, live and remix variants share an identity."
+    },
+    {
+      "id": "authored-1000-tame-impala-songs",
+      "prompt": "Name a song by Tame Impala.",
+      "family": "music",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 110,
+      "scope": "Released song titles with the named artist as a lead or vocal guest count, including released mixtape songs and actual group performances. Production-only credits, unofficial leaks and instrumental-only versions do not count. Clean/explicit, live and remix variants share an identity."
+    },
+    {
+      "id": "authored-1000-fleetwood-mac-songs",
+      "prompt": "Name a song by Fleetwood Mac.",
+      "family": "music",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 81,
+      "scope": "Released song titles with the named artist as a lead or vocal guest count, including released mixtape songs and actual group performances. Production-only credits, unofficial leaks and instrumental-only versions do not count. Clean/explicit, live and remix variants share an identity."
+    },
+    {
+      "id": "authored-1000-eagles-songs",
+      "prompt": "Name a song by Eagles.",
+      "family": "music",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 81,
+      "scope": "Released song titles with the named artist as a lead or vocal guest count, including released mixtape songs and actual group performances. Production-only credits, unofficial leaks and instrumental-only versions do not count. Clean/explicit, live and remix variants share an identity."
+    },
+    {
+      "id": "authored-1000-ac-dc-songs",
+      "prompt": "Name a song by AC/DC.",
+      "family": "music",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 98,
+      "scope": "Released song titles with the named artist as a lead or vocal guest count, including released mixtape songs and actual group performances. Production-only credits, unofficial leaks and instrumental-only versions do not count. Clean/explicit, live and remix variants share an identity."
+    },
+    {
+      "id": "authored-1000-harry-styles-songs",
+      "prompt": "Name a song by Harry Styles.",
+      "family": "music",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 49,
+      "scope": "Released song titles with the named artist as a lead or vocal guest count, including released mixtape songs and actual group performances. Production-only credits, unofficial leaks and instrumental-only versions do not count. Clean/explicit, live and remix variants share an identity."
+    },
+    {
+      "id": "authored-1000-one-direction-songs",
+      "prompt": "Name a song by One Direction.",
+      "family": "music",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 94,
+      "scope": "Released song titles with the named artist as a lead or vocal guest count, including released mixtape songs and actual group performances. Production-only credits, unofficial leaks and instrumental-only versions do not count. Clean/explicit, live and remix variants share an identity."
+    },
+    {
+      "id": "authored-1000-zayn-songs",
+      "prompt": "Name a song by ZAYN.",
+      "family": "music",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 122,
+      "scope": "Released song titles with the named artist as a lead or vocal guest count, including released mixtape songs and actual group performances. Production-only credits, unofficial leaks and instrumental-only versions do not count. Clean/explicit, live and remix variants share an identity."
+    },
+    {
+      "id": "authored-1000-niall-horan-songs",
+      "prompt": "Name a song by Niall Horan.",
+      "family": "music",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 68,
+      "scope": "Released song titles with the named artist as a lead or vocal guest count, including released mixtape songs and actual group performances. Production-only credits, unofficial leaks and instrumental-only versions do not count. Clean/explicit, live and remix variants share an identity."
+    },
+    {
+      "id": "authored-1000-louis-tomlinson-songs",
+      "prompt": "Name a song by Louis Tomlinson.",
+      "family": "music",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 60,
+      "scope": "Released song titles with the named artist as a lead or vocal guest count, including released mixtape songs and actual group performances. Production-only credits, unofficial leaks and instrumental-only versions do not count. Clean/explicit, live and remix variants share an identity."
+    },
+    {
+      "id": "authored-1000-selena-gomez-songs",
+      "prompt": "Name a song by Selena Gomez.",
+      "family": "music",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 150,
+      "scope": "Released song titles with the named artist as a lead or vocal guest count, including released mixtape songs and actual group performances. Production-only credits, unofficial leaks and instrumental-only versions do not count. Clean/explicit, live and remix variants share an identity."
+    },
+    {
+      "id": "authored-1000-demi-lovato-songs",
+      "prompt": "Name a song by Demi Lovato.",
+      "family": "music",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 196,
+      "scope": "Released song titles with the named artist as a lead or vocal guest count, including released mixtape songs and actual group performances. Production-only credits, unofficial leaks and instrumental-only versions do not count. Clean/explicit, live and remix variants share an identity."
+    },
+    {
+      "id": "authored-1000-halsey-songs",
+      "prompt": "Name a song by Halsey.",
+      "family": "music",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 129,
+      "scope": "Released song titles with the named artist as a lead or vocal guest count, including released mixtape songs and actual group performances. Production-only credits, unofficial leaks and instrumental-only versions do not count. Clean/explicit, live and remix variants share an identity."
+    },
+    {
+      "id": "authored-1000-lorde-songs",
+      "prompt": "Name a song by Lorde.",
+      "family": "music",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 73,
+      "scope": "Released song titles with the named artist as a lead or vocal guest count, including released mixtape songs and actual group performances. Production-only credits, unofficial leaks and instrumental-only versions do not count. Clean/explicit, live and remix variants share an identity."
+    },
+    {
+      "id": "authored-1000-kehlani-songs",
+      "prompt": "Name a song by Kehlani.",
+      "family": "music",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 134,
+      "scope": "Released song titles with the named artist as a lead or vocal guest count, including released mixtape songs and actual group performances. Production-only credits, unofficial leaks and instrumental-only versions do not count. Clean/explicit, live and remix variants share an identity."
+    },
+    {
+      "id": "authored-1000-summer-walker-songs",
+      "prompt": "Name a song by Summer Walker.",
+      "family": "music",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 121,
+      "scope": "Released song titles with the named artist as a lead or vocal guest count, including released mixtape songs and actual group performances. Production-only credits, unofficial leaks and instrumental-only versions do not count. Clean/explicit, live and remix variants share an identity."
+    },
+    {
+      "id": "authored-1000-frank-sinatra-songs",
+      "prompt": "Name a song by Frank Sinatra.",
+      "family": "music",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 124,
+      "scope": "Released song titles with the named artist as a lead or vocal guest count, including released mixtape songs and actual group performances. Production-only credits, unofficial leaks and instrumental-only versions do not count. Clean/explicit, live and remix variants share an identity."
+    },
+    {
+      "id": "authored-1000-bts-songs",
+      "prompt": "Name a song by BTS.",
+      "family": "music",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 134,
+      "scope": "Released song titles with the named artist as a lead or vocal guest count, including released mixtape songs and actual group performances. Production-only credits, unofficial leaks and instrumental-only versions do not count. Clean/explicit, live and remix variants share an identity."
+    },
+    {
+      "id": "authored-1000-blackpink-songs",
+      "prompt": "Name a song by BLACKPINK.",
+      "family": "music",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 67,
+      "scope": "Released song titles with the named artist as a lead or vocal guest count, including released mixtape songs and actual group performances. Production-only credits, unofficial leaks and instrumental-only versions do not count. Clean/explicit, live and remix variants share an identity."
+    },
+    {
+      "id": "authored-1000-bad-bunny-songs",
+      "prompt": "Name a song by Bad Bunny.",
+      "family": "music",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 177,
+      "scope": "Released song titles with the named artist as a lead or vocal guest count, including released mixtape songs and actual group performances. Production-only credits, unofficial leaks and instrumental-only versions do not count. Clean/explicit, live and remix variants share an identity."
+    },
+    {
+      "id": "authored-1000-climbing-plants",
+      "prompt": "Name a climbing plant or vine.",
+      "family": "nature",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 281,
+      "scope": "Recognized common names, scientific names and established named kinds count. A documented natural example is required; invented combinations and individual pet names do not."
+    },
+    {
+      "id": "authored-1000-shrubs",
+      "prompt": "Name a shrub or bush.",
+      "family": "nature",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 763,
+      "scope": "Recognized common names, scientific names and established named kinds count. A documented natural example is required; invented combinations and individual pet names do not."
+    },
+    {
+      "id": "authored-1000-aquatic-plants",
+      "prompt": "Name an aquatic or wetland plant.",
+      "family": "nature",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 134,
+      "scope": "Recognized common names, scientific names and established named kinds count. A documented natural example is required; invented combinations and individual pet names do not."
+    },
+    {
+      "id": "authored-1000-fern-kinds",
+      "prompt": "Name a kind of fern.",
+      "family": "nature",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 180,
+      "scope": "True ferns and named fern groups count. Flowering plants sold under misleading “fern” common names, such as asparagus fern, are excluded."
+    },
+    {
+      "id": "authored-1000-grasses",
+      "prompt": "Name a grass or established grass variety.",
+      "family": "nature",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 188,
+      "scope": "Recognized common names, scientific names and established named kinds count. A documented natural example is required; invented combinations and individual pet names do not."
+    },
+    {
+      "id": "authored-1000-palm-kinds",
+      "prompt": "Name a kind of palm.",
+      "family": "nature",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 77,
+      "scope": "True palms in Arecaceae count. Sago palm is accepted as the real palm Metroxylon sagu; the unrelated cycad Cycas revoluta, ponytail palm and traveler’s palm are excluded."
+    },
+    {
+      "id": "authored-1000-conifer-kinds",
+      "prompt": "Name a conifer.",
+      "family": "nature",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 172,
+      "scope": "Recognized common names, scientific names and established named kinds count. A documented natural example is required; invented combinations and individual pet names do not."
+    },
+    {
+      "id": "authored-1000-garden-weeds",
+      "prompt": "Name a plant commonly considered a garden or lawn weed.",
+      "family": "nature",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 96,
+      "scope": "Recognized plants treated as weeds in at least one ordinary garden, lawn or agricultural context count. “Weed” depends on place; it does not mean a plant is universally undesirable."
+    },
+    {
+      "id": "authored-1000-cacti",
+      "prompt": "Name a cactus or named kind of cactus.",
+      "family": "nature",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 68,
+      "scope": "Recognized common names, scientific names and established named kinds count. A documented natural example is required; invented combinations and individual pet names do not."
+    },
+    {
+      "id": "authored-1000-algae-seaweeds",
+      "prompt": "Name a seaweed or other named kind of alga.",
+      "family": "nature",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 47,
+      "scope": "Seaweeds, microalgae and established edible cyanobacterial products commonly discussed as algae count; Spirulina is included explicitly under that public food name. Animals and seagrasses are excluded."
+    },
+    {
+      "id": "authored-1000-habitats",
+      "prompt": "Name a natural habitat, biome or ecosystem.",
+      "family": "nature",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 67,
+      "scope": "Recognized common names, scientific names and established named kinds count. A documented natural example is required; invented combinations and individual pet names do not."
+    },
+    {
+      "id": "authored-1000-waterbirds",
+      "prompt": "Name a bird that lives around water.",
+      "family": "nature",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 282,
+      "scope": "Recognized common names, scientific names and established named kinds count. A documented natural example is required; invented combinations and individual pet names do not."
+    },
+    {
+      "id": "authored-1000-antelope-kinds",
+      "prompt": "Name an antelope or established kind of antelope.",
+      "family": "nature",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 62,
+      "scope": "Members conventionally called antelopes, including named genera, species and subspecies, count. Deer and the unrelated North American pronghorn are not true antelopes."
+    },
+    {
+      "id": "authored-1000-wasps",
+      "prompt": "Name a kind of wasp or hornet.",
+      "family": "nature",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 49,
+      "scope": "Recognized common names, scientific names and established named kinds count. A documented natural example is required; invented combinations and individual pet names do not."
+    },
+    {
+      "id": "authored-1000-flies",
+      "prompt": "Name a kind of fly or mosquito.",
+      "family": "nature",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 55,
+      "scope": "True flies in Diptera, including mosquitoes, midges and gnats, count. Insects merely bearing “fly” in a common name, such as butterflies and dragonflies, are excluded."
+    },
+    {
+      "id": "authored-1000-parasites",
+      "prompt": "Name a parasitic organism or recognized kind of parasite.",
+      "family": "nature",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 58,
+      "scope": "Named endoparasites, ectoparasites, parasitic plants and recognized brood parasites count. Pathogens not ordinarily classified as parasites and unrelated free-living lookalikes do not."
+    },
+    {
+      "id": "authored-1000-hibernating-animals",
+      "prompt": "Name an animal that hibernates or enters seasonal torpor.",
+      "family": "nature",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 50,
+      "scope": "True hibernation, seasonal torpor and reptile/amphibian brumation count. A named species qualifies if members normally use that winter dormancy; pregnant polar bears qualify, but ordinary daily sleep does not."
+    },
+    {
+      "id": "authored-1000-burrowing-animals",
+      "prompt": "Name an animal that digs or lives in a burrow.",
+      "family": "nature",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 66,
+      "scope": "Recognized common names, scientific names and established named kinds count. A documented natural example is required; invented combinations and individual pet names do not."
+    },
+    {
+      "id": "authored-1000-animal-homes",
+      "prompt": "Name a kind of animal home, nest or shelter.",
+      "family": "nature",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 58,
+      "scope": "Named natural homes, nesting structures and shelters built for animals count. Generic human rooms and objects with no recognized animal-housing use do not."
+    },
+    {
+      "id": "authored-1000-animal-sounds",
+      "prompt": "Name an animal sound or a recognized name for an animal call.",
+      "family": "nature",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 64,
+      "scope": "Recognized common names, scientific names and established named kinds count. A documented natural example is required; invented combinations and individual pet names do not."
+    },
+    {
+      "id": "authored-1000-animal-group-names",
+      "prompt": "Name a collective noun used for a group of animals.",
+      "family": "nature",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 75,
+      "scope": "Ordinary and documented traditional animal collective nouns count, including fanciful ones found in established reference works. Invented phrases do not."
+    },
+    {
+      "id": "authored-1000-plant-parts",
+      "prompt": "Name a part or structure of a plant.",
+      "family": "nature",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 83,
+      "scope": "Recognized common names, scientific names and established named kinds count. A documented natural example is required; invented combinations and individual pet names do not."
+    },
+    {
+      "id": "authored-1000-animal-adaptations",
+      "prompt": "Name a recognized animal adaptation, survival strategy or defense.",
+      "family": "nature",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 60,
+      "scope": "Recognized common names, scientific names and established named kinds count. A documented natural example is required; invented combinations and individual pet names do not."
+    },
+    {
+      "id": "authored-1000-software-types",
+      "prompt": "Name a type of software.",
+      "family": "science",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 145,
+      "scope": "Named examples of the whole subject count, including documented historical examples. Real public synonyms share one answer; arbitrary initials and invented combinations do not."
+    },
+    {
+      "id": "authored-1000-computer-networks",
+      "prompt": "Name a type or established design of computer network.",
+      "family": "science",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 42,
+      "scope": "Named computer-network types, network architectures, topologies and physically deployed networking systems count. Artificial neural networks are not communication networks and are excluded."
+    },
+    {
+      "id": "authored-1000-computer-brands",
+      "prompt": "Name a computer manufacturer or computer brand.",
+      "family": "science",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 75,
+      "scope": "Named examples of the whole subject count, including documented historical examples. Real public synonyms share one answer; arbitrary initials and invented combinations do not."
+    },
+    {
+      "id": "authored-1000-processor-families",
+      "prompt": "Name a computer or mobile processor family or named processor model.",
+      "family": "science",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 81,
+      "scope": "Named CPU families, architectures, commercial SoCs and documented processor models count. GPU cards and peripherals do not become CPUs simply because they process data."
+    },
+    {
+      "id": "authored-1000-image-editing-apps",
+      "prompt": "Name an image-editing, drawing or digital-painting program.",
+      "family": "science",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 62,
+      "scope": "Named examples of the whole subject count, including documented historical examples. Real public synonyms share one answer; arbitrary initials and invented combinations do not."
+    },
+    {
+      "id": "authored-1000-video-editing-apps",
+      "prompt": "Name a video-editing program.",
+      "family": "science",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 57,
+      "scope": "Programs for editing, compositing, trimming or assembling video count. Capture-only software and media players do not automatically count."
+    },
+    {
+      "id": "authored-1000-code-editors",
+      "prompt": "Name a code editor or integrated development environment.",
+      "family": "science",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 83,
+      "scope": "Named examples of the whole subject count, including documented historical examples. Real public synonyms share one answer; arbitrary initials and invented combinations do not."
+    },
+    {
+      "id": "authored-1000-email-services-clients",
+      "prompt": "Name an email service or email-client app.",
+      "family": "science",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 82,
+      "scope": "Named active or historical email services, clients and webmail software count. A general messaging app without an email service does not count."
+    },
+    {
+      "id": "authored-1000-cad-modeling-software",
+      "prompt": "Name a CAD, 3D-modeling or 3D-sculpting program.",
+      "family": "science",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 62,
+      "scope": "Named examples of the whole subject count, including documented historical examples. Real public synonyms share one answer; arbitrary initials and invented combinations do not."
+    },
+    {
+      "id": "authored-1000-antivirus-security-brands",
+      "prompt": "Name an antivirus or endpoint-security product or brand.",
+      "family": "science",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 50,
+      "scope": "Named examples of the whole subject count, including documented historical examples. Real public synonyms share one answer; arbitrary initials and invented combinations do not."
+    },
+    {
+      "id": "authored-1000-malware-types",
+      "prompt": "Name a type of malware or malicious software.",
+      "family": "science",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 50,
+      "scope": "Named examples of the whole subject count, including documented historical examples. Real public synonyms share one answer; arbitrary initials and invented combinations do not."
+    },
+    {
+      "id": "authored-1000-computer-errors",
+      "prompt": "Name a computer error, error message or software failure.",
+      "family": "science",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 64,
+      "scope": "Recognized error classes, named crashes and actual error messages count. Generic complaints such as “it’s bad” and success notifications do not."
+    },
+    {
+      "id": "authored-1000-scientific-theories",
+      "prompt": "Name a scientific theory or established scientific model.",
+      "family": "science",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 56,
+      "scope": "Established, historically important and actively researched scientific theories or named models count, including superseded scientific models. Pseudoscience is not included simply because someone calls it a theory."
+    },
+    {
+      "id": "authored-1000-natural-processes",
+      "prompt": "Name a natural physical, chemical, geological or biological process.",
+      "family": "science",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 78,
+      "scope": "Named examples of the whole subject count, including documented historical examples. Real public synonyms share one answer; arbitrary initials and invented combinations do not."
+    },
+    {
+      "id": "authored-1000-math-operations",
+      "prompt": "Name a mathematical operation, procedure or calculation.",
+      "family": "science",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 76,
+      "scope": "Named examples of the whole subject count, including documented historical examples. Real public synonyms share one answer; arbitrary initials and invented combinations do not."
+    },
+    {
+      "id": "authored-1000-chart-types",
+      "prompt": "Name a chart, graph or established data-visualization type.",
+      "family": "science",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 74,
+      "scope": "Named examples of the whole subject count, including documented historical examples. Real public synonyms share one answer; arbitrary initials and invented combinations do not."
+    },
+    {
+      "id": "authored-1000-named-stars",
+      "prompt": "Name a star by its proper name or stellar designation.",
+      "family": "science",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 122,
+      "scope": "Named stars, named multiple-star systems and documented stellar catalog designations count. Galaxies, planets, constellations and invented “buy a star” names do not."
+    },
+    {
+      "id": "authored-1000-galaxies",
+      "prompt": "Name a galaxy or recognized galaxy type.",
+      "family": "science",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 73,
+      "scope": "Named galaxies, interacting galaxy pairs, published galaxy catalog names and recognized galaxy types count. Star clusters, nebulae and constellations are separate subjects."
+    },
+    {
+      "id": "authored-1000-nebulae",
+      "prompt": "Name a nebula or recognized nebula type.",
+      "family": "science",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 65,
+      "scope": "Named examples of the whole subject count, including documented historical examples. Real public synonyms share one answer; arbitrary initials and invented combinations do not."
+    },
+    {
+      "id": "authored-1000-observatories",
+      "prompt": "Name a real named astronomical telescope or observatory.",
+      "family": "science",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 85,
+      "scope": "Named examples of the whole subject count, including documented historical examples. Real public synonyms share one answer; arbitrary initials and invented combinations do not."
+    },
+    {
+      "id": "authored-1000-space-probes",
+      "prompt": "Name an uncrewed space probe, planetary rover or planetary lander.",
+      "family": "science",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 334,
+      "scope": "Named uncrewed spacecraft sent to study the Solar System, including failed missions, landers, orbiters, impactors and rovers, count. Crewed missions and generic Earth-orbit station names do not."
+    },
+    {
+      "id": "authored-1000-wave-kinds",
+      "prompt": "Name a type of wave.",
+      "family": "science",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 56,
+      "scope": "Named examples of the whole subject count, including documented historical examples. Real public synonyms share one answer; arbitrary initials and invented combinations do not."
+    },
+    {
+      "id": "authored-1000-optical-phenomena",
+      "prompt": "Name a phenomenon involving light or vision.",
+      "family": "science",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 62,
+      "scope": "Named examples of the whole subject count, including documented historical examples. Real public synonyms share one answer; arbitrary initials and invented combinations do not."
+    },
+    {
+      "id": "authored-1000-bases-alkalis",
+      "prompt": "Name a chemical base or alkali.",
+      "family": "science",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 57,
+      "scope": "Named Brønsted bases, Lewis bases, alkalis and established basic preparations count. This is identification trivia, not chemical handling advice."
+    },
+    {
+      "id": "authored-1000-chemical-salts",
+      "prompt": "Name a chemical salt.",
+      "family": "science",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 63,
+      "scope": "Named examples of the whole subject count, including documented historical examples. Real public synonyms share one answer; arbitrary initials and invented combinations do not."
+    },
+    {
+      "id": "authored-1000-mixtures",
+      "prompt": "Name a mixture or a blended material.",
+      "family": "science",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 224,
+      "scope": "Recognized mixtures and common blended materials count. A chemically pure element or compound is not a mixture merely because a sample could be contaminated."
+    },
+    {
+      "id": "authored-1000-fibres",
+      "prompt": "Name a natural or manufactured textile fibre.",
+      "family": "science",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 111,
+      "scope": "Named examples of the whole subject count, including documented historical examples. Real public synonyms share one answer; arbitrary initials and invented combinations do not."
+    },
+    {
+      "id": "authored-1000-oil-types",
+      "prompt": "Name an oil or established oil product.",
+      "family": "science",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 125,
+      "scope": "Named edible, cosmetic, essential, industrial and mineral oils count. This broad material question does not imply every listed oil is edible or suitable for the same use."
+    },
+    {
+      "id": "authored-1000-metric-prefixes",
+      "prompt": "Name an official SI prefix or a standardized binary prefix.",
+      "family": "science",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 34,
+      "scope": "The 24 official SI prefixes and ten standardized IEC binary prefixes count. Prefix names are required; an invented extension does not count."
+    },
+    {
+      "id": "authored-1000-diseases",
+      "prompt": "Name a recognized disease or medical disorder.",
+      "family": "science",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 644,
+      "scope": "Recognized diseases, syndromes and medical disorders count. This is terminology trivia and does not diagnose symptoms or suggest treatment."
+    },
+    {
+      "id": "authored-1000-medical-specialties",
+      "prompt": "Name a medical specialty or healthcare field.",
+      "family": "science",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 72,
+      "scope": "Named examples of the whole subject count, including documented historical examples. Real public synonyms share one answer; arbitrary initials and invented combinations do not."
+    },
+    {
+      "id": "authored-1000-phobias",
+      "prompt": "Name a recognized phobia or named fear.",
+      "family": "science",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 67,
+      "scope": "Established named fears, including well-documented colloquial phobia names, count. Not every term is an independent clinical diagnosis; prejudice labels and invented words do not count."
+    },
+    {
+      "id": "authored-1000-dental-tools",
+      "prompt": "Name a dental-care item or piece of dental equipment.",
+      "family": "science",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 53,
+      "scope": "Named examples of the whole subject count, including documented historical examples. Real public synonyms share one answer; arbitrary initials and invented combinations do not."
+    },
+    {
+      "id": "authored-1000-communication-methods",
+      "prompt": "Name a method or technology used to communicate.",
+      "family": "science",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 88,
+      "scope": "Established human communication methods and communication technologies count. An information-destroying device is not a communication method."
+    },
+    {
+      "id": "authored-1000-display-technologies",
+      "prompt": "Name a display technology or established display type.",
+      "family": "science",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 47,
+      "scope": "Named examples of the whole subject count, including documented historical examples. Real public synonyms share one answer; arbitrary initials and invented combinations do not."
+    },
+    {
+      "id": "authored-1000-computer-hardware",
+      "prompt": "Name a physical computer component.",
+      "family": "science",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 80,
+      "scope": "Named examples of the whole subject count, including documented historical examples. Real public synonyms share one answer; arbitrary initials and invented combinations do not."
+    },
+    {
+      "id": "authored-1000-mechanical-devices",
+      "prompt": "Name a mechanical device or mechanism.",
+      "family": "science",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 219,
+      "scope": "Named examples of the whole subject count, including documented historical examples. Real public synonyms share one answer; arbitrary initials and invented combinations do not."
+    },
+    {
+      "id": "authored-1000-car-parts",
+      "prompt": "Name a part or component of a car.",
+      "family": "science",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 123,
+      "scope": "Named examples of the whole subject count, including documented historical examples. Real public synonyms share one answer; arbitrary initials and invented combinations do not."
+    },
+    {
+      "id": "authored-1000-nba-finals-mvp",
+      "prompt": "Name an NBA Finals MVP winner.",
+      "family": "sports",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 37,
+      "scope": "Named examples satisfying the stated sporting role or achievement count. A nomination, appearance in a different sport or fan-invented name does not establish eligibility."
+    },
+    {
+      "id": "authored-1000-nba-defensive-award",
+      "prompt": "Name an NBA Defensive Player of the Year winner.",
+      "family": "sports",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 27,
+      "scope": "Named examples satisfying the stated sporting role or achievement count. A nomination, appearance in a different sport or fan-invented name does not establish eligibility."
+    },
+    {
+      "id": "authored-1000-nba-rookie-award",
+      "prompt": "Name an NBA Rookie of the Year winner.",
+      "family": "sports",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 78,
+      "scope": "Named examples satisfying the stated sporting role or achievement count. A nomination, appearance in a different sport or fan-invented name does not establish eligibility."
+    },
+    {
+      "id": "authored-1000-nba-coach-award",
+      "prompt": "Name an NBA Coach of the Year winner.",
+      "family": "sports",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 50,
+      "scope": "Named examples satisfying the stated sporting role or achievement count. A nomination, appearance in a different sport or fan-invented name does not establish eligibility."
+    },
+    {
+      "id": "authored-1000-nba-threepoint-champs",
+      "prompt": "Name an NBA All-Star 3-Point Contest winner.",
+      "family": "sports",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 28,
+      "scope": "Named examples satisfying the stated sporting role or achievement count. A nomination, appearance in a different sport or fan-invented name does not establish eligibility."
+    },
+    {
+      "id": "authored-1000-nba-dunk-champs",
+      "prompt": "Name an NBA All-Star Slam Dunk Contest winner.",
+      "family": "sports",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 32,
+      "scope": "Named examples satisfying the stated sporting role or achievement count. A nomination, appearance in a different sport or fan-invented name does not establish eligibility."
+    },
+    {
+      "id": "authored-1000-wnba-mvp-award",
+      "prompt": "Name a WNBA regular-season MVP winner.",
+      "family": "sports",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 16,
+      "scope": "Named examples satisfying the stated sporting role or achievement count. A nomination, appearance in a different sport or fan-invented name does not establish eligibility."
+    },
+    {
+      "id": "authored-1000-cy-young-winners",
+      "prompt": "Name a Cy Young Award winner.",
+      "family": "sports",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 88,
+      "scope": "Named examples satisfying the stated sporting role or achievement count. A nomination, appearance in a different sport or fan-invented name does not establish eligibility."
+    },
+    {
+      "id": "authored-1000-conn-smythe-winners",
+      "prompt": "Name a Conn Smythe Trophy winner in the NHL.",
+      "family": "sports",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 52,
+      "scope": "Named examples satisfying the stated sporting role or achievement count. A nomination, appearance in a different sport or fan-invented name does not establish eligibility."
+    },
+    {
+      "id": "authored-1000-heisman-winners",
+      "prompt": "Name a Heisman Trophy winner.",
+      "family": "sports",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 90,
+      "scope": "Named examples satisfying the stated sporting role or achievement count. A nomination, appearance in a different sport or fan-invented name does not establish eligibility."
+    },
+    {
+      "id": "authored-1000-super-bowl-winning-teams",
+      "prompt": "Name an NFL franchise that has won a Super Bowl.",
+      "family": "sports",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 20,
+      "scope": "Actual Super Bowl-winning NFL franchises count once per franchise. A former city or former team name is a public alias of that same club. Winning an earlier NFL title or reaching a Super Bowl is not enough."
+    },
+    {
+      "id": "authored-1000-world-cup-countries",
+      "prompt": "Name a national team that has played in a senior FIFA World Cup.",
+      "family": "sports",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 93,
+      "scope": "National teams that have played in the finals of a senior men’s or women’s FIFA World Cup count. Qualifying alone and youth or club World Cups are different competitions. Historical predecessor-team names remain eligible."
+    },
+    {
+      "id": "authored-1000-world-series-winning-teams",
+      "prompt": "Name an MLB franchise that has won a World Series.",
+      "family": "sports",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 26,
+      "scope": "Winning franchises in the modern World Series since 1903 count once per club. Historical city/name aliases count for the same franchise; an appearance without a championship does not."
+    },
+    {
+      "id": "authored-1000-stanley-cup-winning-clubs",
+      "prompt": "Name a club that has won the Stanley Cup.",
+      "family": "sports",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 35,
+      "scope": "Documented champion clubs across the Stanley Cup’s history count, including pre-NHL champions. The original Ottawa Senators club is distinct from the modern expansion team. Historical names of the same continuous winning franchise score once."
+    },
+    {
+      "id": "authored-1000-soccer-players",
+      "prompt": "Name a real association-football (soccer) player.",
+      "family": "sports",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 398,
+      "scope": "Named examples satisfying the stated sporting role or achievement count. A nomination, appearance in a different sport or fan-invented name does not establish eligibility."
+    },
+    {
+      "id": "authored-1000-tennis-players",
+      "prompt": "Name a real competitive tennis player.",
+      "family": "sports",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 701,
+      "scope": "Documented competitive tennis players count, including doubles specialists, historic players, professionals and major-championship amateurs. Public playing names and real legal-name variants share an identity."
+    },
+    {
+      "id": "authored-1000-golf-players",
+      "prompt": "Name a professional golfer or major-championship competitor.",
+      "family": "sports",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 171,
+      "scope": "Named examples satisfying the stated sporting role or achievement count. A nomination, appearance in a different sport or fan-invented name does not establish eligibility."
+    },
+    {
+      "id": "authored-1000-baseball-managers",
+      "prompt": "Name someone who has managed an MLB team.",
+      "family": "sports",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 930,
+      "scope": "People who actually served as an MLB field manager, including interim managers, count. A coach, general manager or broadcaster who never managed an MLB team does not."
+    },
+    {
+      "id": "authored-1000-rally-drivers",
+      "prompt": "Name a real rally driver or rally raid driver.",
+      "family": "sports",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 103,
+      "scope": "Named examples satisfying the stated sporting role or achievement count. A nomination, appearance in a different sport or fan-invented name does not establish eligibility."
+    },
+    {
+      "id": "authored-1000-boxers",
+      "prompt": "Name a real competitive boxer.",
+      "family": "sports",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 182,
+      "scope": "Documented amateur or professional boxers count, including officially contested crossover boxing bouts. A person who only kickboxes or appears as a fictional boxer is not automatically eligible."
+    },
+    {
+      "id": "authored-1000-basketball-moves",
+      "prompt": "Name a basketball shot, pass, move or established skill.",
+      "family": "sports",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 74,
+      "scope": "Named examples satisfying the stated sporting role or achievement count. A nomination, appearance in a different sport or fan-invented name does not establish eligibility."
+    },
+    {
+      "id": "authored-1000-soccer-actions",
+      "prompt": "Name a soccer pass, shot, move or established playing technique.",
+      "family": "sports",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 75,
+      "scope": "Named examples satisfying the stated sporting role or achievement count. A nomination, appearance in a different sport or fan-invented name does not establish eligibility."
+    },
+    {
+      "id": "authored-1000-baseball-pitches",
+      "prompt": "Name an established baseball pitch type.",
+      "family": "sports",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 38,
+      "scope": "Established pitch types and historical named pitches count, including illegal historical pitches as facts. A location or count situation alone is not a pitch type."
+    },
+    {
+      "id": "authored-1000-skateboard-tricks",
+      "prompt": "Name an established skateboard trick.",
+      "family": "sports",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 91,
+      "scope": "Named examples satisfying the stated sporting role or achievement count. A nomination, appearance in a different sport or fan-invented name does not establish eligibility."
+    },
+    {
+      "id": "authored-1000-gymnastics-skills",
+      "prompt": "Name an established gymnastics skill or named element.",
+      "family": "sports",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 103,
+      "scope": "Recognized artistic-gymnastics skills, body shapes and named elements count. Named element families share one identity when the short public name is identical; unrelated sports moves do not count."
+    },
+    {
+      "id": "authored-1000-us-presidents",
+      "prompt": "Name a president of the United States.",
+      "family": "world",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 45,
+      "scope": "People who actually served as U.S. president count once per person, including presidents who served nonconsecutive terms. Candidates, vice presidents and founding figures who never held the presidency do not."
+    },
+    {
+      "id": "authored-1000-english-uk-monarchs",
+      "prompt": "Name a reigning monarch of England or the United Kingdom.",
+      "family": "world",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 60,
+      "scope": "English sovereigns and their British or United Kingdom successors count, including documented disputed reigns and pre-1066 English monarchs. Queen consorts and princes who never reigned do not. Regnal numbers identify different people."
+    },
+    {
+      "id": "authored-1000-real-pirates",
+      "prompt": "Name a real pirate, privateer or buccaneer.",
+      "family": "world",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 67,
+      "scope": "Documented historical pirates, privateers and buccaneers count. Legendary people whose existence is unverified and fictional screen characters do not."
+    },
+    {
+      "id": "authored-1000-explorers",
+      "prompt": "Name a real historical explorer, navigator or pioneering expedition leader.",
+      "family": "world",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 85,
+      "scope": "Documented explorers, navigators, notable expedition members and expedition leaders count, including Indigenous guides. Fictional adventurers do not."
+    },
+    {
+      "id": "authored-1000-historical-empires",
+      "prompt": "Name a real historical empire.",
+      "family": "world",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 90,
+      "scope": "Named examples of the whole subject count, including documented historical examples. Real public synonyms share one answer; arbitrary initials and invented combinations do not."
+    },
+    {
+      "id": "authored-1000-ancient-civilizations",
+      "prompt": "Name an ancient civilization or ancient people.",
+      "family": "world",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 82,
+      "scope": "Documented ancient or premodern civilizations, archaeological cultures and peoples count. Mythical places and fictional civilizations do not."
+    },
+    {
+      "id": "authored-1000-wars",
+      "prompt": "Name a real war or recognized armed conflict.",
+      "family": "world",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 103,
+      "scope": "Named examples of the whole subject count, including documented historical examples. Real public synonyms share one answer; arbitrary initials and invented combinations do not."
+    },
+    {
+      "id": "authored-1000-battles",
+      "prompt": "Name a real historical battle.",
+      "family": "world",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 129,
+      "scope": "Documented battles, naval battles and established named battle operations count. A fictional battle does not count. A commonly used place name counts when it identifies a documented battle."
+    },
+    {
+      "id": "authored-1000-government-systems",
+      "prompt": "Name a form of government or political system.",
+      "family": "world",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 60,
+      "scope": "Named examples of the whole subject count, including documented historical examples. Real public synonyms share one answer; arbitrary initials and invented combinations do not."
+    },
+    {
+      "id": "authored-1000-military-units",
+      "prompt": "Name a type of military unit or formation.",
+      "family": "world",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 113,
+      "scope": "Named examples of the whole subject count, including documented historical examples. Real public synonyms share one answer; arbitrary initials and invented combinations do not."
+    },
+    {
+      "id": "authored-1000-court-kinds",
+      "prompt": "Name a type of law court or tribunal.",
+      "family": "world",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 72,
+      "scope": "Named examples of the whole subject count, including documented historical examples. Real public synonyms share one answer; arbitrary initials and invented combinations do not."
+    },
+    {
+      "id": "authored-1000-architectural-styles",
+      "prompt": "Name an architectural style or movement.",
+      "family": "world",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 80,
+      "scope": "Named examples of the whole subject count, including documented historical examples. Real public synonyms share one answer; arbitrary initials and invented combinations do not."
+    },
+    {
+      "id": "authored-1000-bridge-designs",
+      "prompt": "Name a type or established design of bridge.",
+      "family": "world",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 52,
+      "scope": "Named examples of the whole subject count, including documented historical examples. Real public synonyms share one answer; arbitrary initials and invented combinations do not."
+    },
+    {
+      "id": "authored-1000-road-types",
+      "prompt": "Name a type of road or land route.",
+      "family": "world",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 89,
+      "scope": "Named examples of the whole subject count, including documented historical examples. Real public synonyms share one answer; arbitrary initials and invented combinations do not."
+    },
+    {
+      "id": "authored-1000-journey-types",
+      "prompt": "Name a type of trip, journey or travel.",
+      "family": "world",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 94,
+      "scope": "Named examples of the whole subject count, including documented historical examples. Real public synonyms share one answer; arbitrary initials and invented combinations do not."
+    },
+    {
+      "id": "authored-1000-lodging-types",
+      "prompt": "Name a type of accommodation for travelers.",
+      "family": "world",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 63,
+      "scope": "Named examples of the whole subject count, including documented historical examples. Real public synonyms share one answer; arbitrary initials and invented combinations do not."
+    },
+    {
+      "id": "authored-1000-industries",
+      "prompt": "Name an industry or sector of the economy.",
+      "family": "world",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 111,
+      "scope": "Named examples of the whole subject count, including documented historical examples. Real public synonyms share one answer; arbitrary initials and invented combinations do not."
+    },
+    {
+      "id": "authored-1000-news-outlets",
+      "prompt": "Name a news organization, newspaper or news broadcaster.",
+      "family": "world",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 123,
+      "scope": "Named examples of the whole subject count, including documented historical examples. Real public synonyms share one answer; arbitrary initials and invented combinations do not."
+    },
+    {
+      "id": "authored-1000-mobile-carriers",
+      "prompt": "Name a mobile-phone network or mobile-service brand.",
+      "family": "world",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 146,
+      "scope": "Named examples of the whole subject count, including documented historical examples. Real public synonyms share one answer; arbitrary initials and invented combinations do not."
+    },
+    {
+      "id": "authored-1000-car-models",
+      "prompt": "Name a car model, past or present.",
+      "family": "world",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 230,
+      "scope": "Real production, low-volume and officially named concept passenger-car, SUV and pickup models count. Manufacturer names alone are not model names. Recognized public model names without the make are supported only where explicitly listed."
+    },
+    {
+      "id": "authored-1000-aircraft-models",
+      "prompt": "Name a real aircraft model or aircraft family.",
+      "family": "world",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 167,
+      "scope": "Real named fixed-wing, rotary-wing and tiltrotor aircraft models or established aircraft families count, including historical and military models. Fictional spacecraft and a manufacturer name by itself do not."
+    },
+    {
+      "id": "authored-1000-bicycle-brands",
+      "prompt": "Name a bicycle brand or bicycle manufacturer.",
+      "family": "world",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 117,
+      "scope": "Named examples of the whole subject count, including documented historical examples. Real public synonyms share one answer; arbitrary initials and invented combinations do not."
+    },
+    {
+      "id": "authored-1000-rail-operators",
+      "prompt": "Name a passenger-rail operator or passenger-rail brand.",
+      "family": "world",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 129,
+      "scope": "Named examples of the whole subject count, including documented historical examples. Real public synonyms share one answer; arbitrary initials and invented combinations do not."
+    },
+    {
+      "id": "authored-1000-metro-systems",
+      "prompt": "Name a metro, subway or urban rapid-transit system.",
+      "family": "world",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 159,
+      "scope": "Named examples of the whole subject count, including documented historical examples. Real public synonyms share one answer; arbitrary initials and invented combinations do not."
+    },
+    {
+      "id": "authored-1000-shipping-lines",
+      "prompt": "Name a shipping line, ferry company or sea-freight carrier.",
+      "family": "world",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 105,
+      "scope": "Named examples of the whole subject count, including documented historical examples. Real public synonyms share one answer; arbitrary initials and invented combinations do not."
+    },
+    {
+      "id": "authored-1000-named-streets",
+      "prompt": "Name a real named street, avenue, boulevard or road.",
+      "family": "world",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 108,
+      "scope": "Named examples of the whole subject count, including documented historical examples. Real public synonyms share one answer; arbitrary initials and invented combinations do not."
+    },
+    {
+      "id": "authored-1000-walking-trails",
+      "prompt": "Name a real hiking trail, long-distance path or walking route.",
+      "family": "world",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 94,
+      "scope": "Named examples of the whole subject count, including documented historical examples. Real public synonyms share one answer; arbitrary initials and invented combinations do not."
+    },
+    {
+      "id": "authored-1000-global-national-parks",
+      "prompt": "Name a national park anywhere in the world.",
+      "family": "world",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 274,
+      "scope": "Places formally designated national parks, including named historical national parks and local-language national-park names, count. Nature reserves, UNESCO sites and urban parks without national-park status are not automatically eligible."
+    },
+    {
+      "id": "authored-1000-city-parks",
+      "prompt": "Name a real public city park or urban garden.",
+      "family": "world",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 139,
+      "scope": "Named examples of the whole subject count, including documented historical examples. Real public synonyms share one answer; arbitrary initials and invented combinations do not."
+    },
+    {
+      "id": "authored-1000-forts-fortresses",
+      "prompt": "Name a real fort or fortress.",
+      "family": "world",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 105,
+      "scope": "Named examples of the whole subject count, including documented historical examples. Real public synonyms share one answer; arbitrary initials and invented combinations do not."
+    },
+    {
+      "id": "authored-1000-statues-monuments",
+      "prompt": "Name a real statue, sculpture or public monument.",
+      "family": "world",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 92,
+      "scope": "Documented named sculptures, statues and public commemorative monuments count. A fictional statue and an ordinary building without landmark or monument identity do not."
+    },
+    {
+      "id": "authored-1000-named-libraries",
+      "prompt": "Name a real named library or library system.",
+      "family": "world",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 92,
+      "scope": "Documented public, academic, national, monastic, specialist and historical libraries or library systems count. Fictional libraries and private fictional archives do not."
+    },
+    {
+      "id": "authored-1000-concert-venues",
+      "prompt": "Name a real named concert venue, opera house or music arena.",
+      "family": "world",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 117,
+      "scope": "Named examples of the whole subject count, including documented historical examples. Real public synonyms share one answer; arbitrary initials and invented combinations do not."
+    },
+    {
+      "id": "authored-1000-named-markets",
+      "prompt": "Name a real named market or public-market district.",
+      "family": "world",
+      "group": "authored-curated-1000-whole-subject",
+      "answerCount": 146,
+      "scope": "Documented named public markets, food halls, traditional bazaars and established open-air market districts count. An ordinary chain store or an invented marketplace does not."
     }
   ]
 }

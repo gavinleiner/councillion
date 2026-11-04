@@ -6311,7 +6311,9 @@
           },
           {
             "label": "Anker Soundcore",
-            "aliases": []
+            "aliases": [
+              "Soundcore"
+            ]
           },
           {
             "label": "Jabra",
