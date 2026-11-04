@@ -32,3 +32,6 @@ body[data-screen="court-games"] .court-game :is(.cg-board,.cg-bench)>header{posi
 .cg-arena[data-camera=faceoff] .cg-board:after{display:none}
 .cg-arena[data-stage=finish] #cg-event{display:none}
 .cg-champions :is(img,svg){max-width:100%}
+/* Keep all entry actions visible on common 720p/768p laptop screens. */
+@media(min-width:1001px) and (max-height:800px){.cg-shared-title h1{font-size:58px;margin:8px 0}.cg-shared-title h2{font-size:18px;margin-bottom:10px}.cg-shared-title>p{font-size:16px}.cg-shared-setup{margin-top:12px}.cg-setup-card{padding:13px 15px}.cg-setup-left,.cg-setup-right{gap:9px}.cg-entry-v2 .cg-buddy-choices{margin-top:10px;margin-bottom:9px}.cg-entry-v2 .cg-buddy-choices button{height:55px}.cg-entry-v2 .cg-buddy-choices :is(img,svg){height:35px}.cg-setup-card .field{padding:8px 11px}.cg-host-card .cg-card-heading{margin-bottom:10px}.cg-host-card .cg-public{margin-top:10px}.cg-join-card h2{margin-bottom:10px}}
+.cg-entry-v2 .cg-buddy-choices button{gap:3px}.cg-entry-v2 .cg-buddy-choices button>span{min-height:0;line-height:1;margin-top:0}.cg-entry-v2 .cg-buddy-choices button>:is(img,svg){flex-shrink:0}
