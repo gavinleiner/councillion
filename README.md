@@ -1,6 +1,6 @@
 # Councillion
 
-Current release: `20261104-broad-random-v1`. The website opens publicly without a password. Puffer still requires verified Google sign-in for every account; there is no player email allowlist. Earlier entrance-screen descriptions below describe the previous private-entry presentation.
+Current release: `20261104-court-games-v1`. Counsel Clash (team feud, up to ten) and Final Figure (simultaneous closest-answer estimates, up to eight) are available from the home screen and Puffer setup. See [COURT-GAMES.md](COURT-GAMES.md) for rules, sources, private rooms and validation. The prior broad-question curation and fresh Puffer draws remain in place. The website opens publicly without a password. Puffer still requires verified Google sign-in for every account; there is no player email allowlist. Earlier entrance-screen descriptions below describe the previous private-entry presentation.
 
 Hosting and joining renew the Firebase Google session, wait for the database connection, and synchronize the server clock before writing timestamp-validated room data. Public directory entries include the catalog build so quick play does not select incompatible rooms. Expired-room errors identify the host’s old room instead of asking the joining player to refresh repeatedly. An offline connection times out with a retry instruction. Backend authentication, moderation, rank records and special account permissions are unchanged.
 

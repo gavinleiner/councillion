@@ -1,0 +1,721 @@
+{
+  "checked": "2026-11-04",
+  "questions": [
+    {
+      "id": "moon-distance",
+      "category": "Science",
+      "answer": 384400,
+      "unit": "km",
+      "source": "https://spaceplace.nasa.gov/moon-distance/en/",
+      "sourceTitle": "NASA",
+      "checked": "2026-11-04",
+      "method": "Primary publication; numerical value and prompt scope reviewed",
+      "scopeNote": "NASA gives the mean distance as 384,400 km; the orbit is not a circle.",
+      "fetch": {
+        "url": "https://spaceplace.nasa.gov/moon-distance/en/",
+        "status": 200,
+        "sha256": "c19bbbee984d1e861fa0c98000602d6a089647d2430096aa397651d6fec8094c",
+        "error": null
+      }
+    },
+    {
+      "id": "light-speed",
+      "category": "Science",
+      "answer": 299792458,
+      "unit": "metres",
+      "source": "https://www.nist.gov/pml/special-publication-330/sp-330-section-2",
+      "sourceTitle": "NIST",
+      "checked": "2026-11-04",
+      "method": "Primary NIST SI publication",
+      "scopeNote": "The defining constant is written 299 792 458 m/s; grouping spaces do not change its integer value.",
+      "fetch": {
+        "url": "https://www.nist.gov/pml/special-publication-330/sp-330-section-2",
+        "status": 200,
+        "sha256": "5502f219790cdc2c317129cec7b6475b20a3cbb8cb8ab878db3ef1b4472859b7",
+        "error": null
+      }
+    },
+    {
+      "id": "sunlight",
+      "category": "Science",
+      "answer": 500,
+      "unit": "seconds",
+      "source": "https://science.nasa.gov/mission/voyager/voyager-1/voyager-1-what-is-a-light-day/",
+      "sourceTitle": "NASA",
+      "checked": "2026-11-04",
+      "method": "Primary publication; numerical value and prompt scope reviewed",
+      "scopeNote": "NASA states about eight minutes twenty seconds; converted as 8*60+20.",
+      "fetch": {
+        "url": "https://science.nasa.gov/mission/voyager/voyager-1/voyager-1-what-is-a-light-day/",
+        "status": 200,
+        "sha256": "858303ce4b99e965c485f4817119814f6db632af2d0d403270f731e1575e8e69",
+        "error": null
+      }
+    },
+    {
+      "id": "bones",
+      "category": "Science",
+      "answer": 206,
+      "unit": "bones",
+      "source": "https://my.clevelandclinic.org/health/body/22344-axial-skeleton",
+      "sourceTitle": "Cleveland Clinic",
+      "checked": "2026-11-04",
+      "method": "Primary publication; numerical value and prompt scope reviewed",
+      "scopeNote": "The standard adult count is 206; individual anatomy can vary.",
+      "fetch": {
+        "url": "https://my.clevelandclinic.org/health/body/22344-axial-skeleton",
+        "status": 200,
+        "sha256": "23efeb64751683ffab66ee62cf5f0dcfb7660c7dfaf088aefa2f829f0c5baceb",
+        "error": null
+      }
+    },
+    {
+      "id": "intestine",
+      "category": "Science",
+      "answer": 20,
+      "unit": "feet",
+      "source": "https://www.cancer.gov/publications/dictionaries/cancer-terms/def/small-intestine",
+      "sourceTitle": "US National Cancer Institute",
+      "checked": "2026-11-04",
+      "method": "Primary publication; numerical value and prompt scope reviewed",
+      "scopeNote": "NCI uses the written-out approximation twenty feet.",
+      "fetch": {
+        "url": "https://www.cancer.gov/publications/dictionaries/cancer-terms/def/small-intestine",
+        "status": 200,
+        "sha256": "16642440474dfc4892935c36dfff8a3deed2bba4749a4427d4f6a2559bd83e28",
+        "error": null
+      }
+    },
+    {
+      "id": "elements",
+      "category": "Science",
+      "answer": 118,
+      "unit": "elements",
+      "source": "https://iupac.org/what-we-do/periodic-table-of-elements/",
+      "sourceTitle": "IUPAC",
+      "checked": "2026-11-04",
+      "method": "Primary publication; numerical value and prompt scope reviewed",
+      "scopeNote": "The named table ends at oganesson, atomic number 118.",
+      "fetch": {
+        "url": "https://iupac.org/what-we-do/periodic-table-of-elements/",
+        "status": 200,
+        "sha256": "e3ba6814b0bd70c84f9b13687fc234bcd5c94e7feb827d9142b740619a19dee8",
+        "error": null
+      }
+    },
+    {
+      "id": "ocean-depth",
+      "category": "Nature",
+      "answer": 3682,
+      "unit": "metres",
+      "source": "https://oceanservice.noaa.gov/facts/oceandepth.html",
+      "sourceTitle": "NOAA",
+      "checked": "2026-11-04",
+      "method": "Primary publication; numerical value and prompt scope reviewed",
+      "scopeNote": "This is a global average, not the deepest trench.",
+      "fetch": {
+        "url": "https://oceanservice.noaa.gov/facts/oceandepth.html",
+        "status": 200,
+        "sha256": "d1fba87709d1a4bb77c77f2b5d60d930a87c99618f85e4e9691fca58627c4ab3",
+        "error": null
+      }
+    },
+    {
+      "id": "ocean-cover",
+      "category": "Nature",
+      "answer": 71,
+      "unit": "%",
+      "source": "https://oceanservice.noaa.gov/facts/howmanyoceans.html",
+      "sourceTitle": "NOAA",
+      "checked": "2026-11-04",
+      "method": "Primary publication; numerical value and prompt scope reviewed",
+      "scopeNote": "The commonly reported rounded figure is 71 percent.",
+      "fetch": {
+        "url": "https://oceanservice.noaa.gov/facts/howmanyoceans.html",
+        "status": 200,
+        "sha256": "b43b4026f8b800d6a83cc6a27046f2d2fe65906f0a804db916bc691044c43e4d",
+        "error": null
+      }
+    },
+    {
+      "id": "cheetah",
+      "category": "Nature",
+      "answer": 70,
+      "unit": "mph",
+      "source": "https://animals.sandiegozoo.org/animals/cheetah",
+      "sourceTitle": "San Diego Zoo",
+      "checked": "2026-11-04",
+      "method": "Primary publication; numerical value and prompt scope reviewed",
+      "scopeNote": "This is a stated maximum sprint speed, not a sustained average.",
+      "fetch": {
+        "url": "https://animals.sandiegozoo.org/animals/cheetah",
+        "status": 200,
+        "sha256": "f18bfc80a6d05e2b509e20316253394e7aa5b40ffc8785ab0599071159dc2171",
+        "error": null
+      }
+    },
+    {
+      "id": "whale",
+      "category": "Nature",
+      "answer": 180,
+      "unit": "tonnes",
+      "source": "https://www.nhm.ac.uk/bluewhale/ocean/record-breaker/",
+      "sourceTitle": "Natural History Museum",
+      "checked": "2026-11-04",
+      "method": "Primary publication; numerical value and prompt scope reviewed",
+      "scopeNote": "The museum gives an upper figure of 180 tonnes, with most adults lighter.",
+      "fetch": {
+        "url": "https://www.nhm.ac.uk/bluewhale/ocean/record-breaker/",
+        "status": 200,
+        "sha256": "d3178c268ac99cf46f9ab8460b4746174f924772d13c552949537d4404cfa117",
+        "error": null
+      }
+    },
+    {
+      "id": "giraffe",
+      "category": "Nature",
+      "answer": 7,
+      "unit": "vertebrae",
+      "source": "https://animals.sandiegozoo.org/animals/giraffe",
+      "sourceTitle": "San Diego Zoo",
+      "checked": "2026-11-04",
+      "method": "Primary publication; numerical value and prompt scope reviewed",
+      "scopeNote": "A giraffe has seven neck vertebrae, like a human.",
+      "fetch": {
+        "url": "https://animals.sandiegozoo.org/animals/giraffe",
+        "status": 200,
+        "sha256": "a4957fbe76bb404144bb8e49931fe2a316b3a8c859768643d0d7526ee42e8357",
+        "error": null
+      }
+    },
+    {
+      "id": "octopus",
+      "category": "Nature",
+      "answer": 3,
+      "unit": "hearts",
+      "source": "https://www.horniman.ac.uk/story/fact-file-octopus/",
+      "sourceTitle": "Horniman Museum",
+      "checked": "2026-11-04",
+      "method": "Primary publication; numerical value and prompt scope reviewed",
+      "scopeNote": "Two hearts pump to the gills; a third supplies the body.",
+      "fetch": {
+        "url": "https://www.horniman.ac.uk/story/fact-file-octopus/",
+        "status": 200,
+        "sha256": "4530b772f574101d8f2f6ca6fd38ffedef880bc63eaf12f42e993d92ce23a16d",
+        "error": null
+      }
+    },
+    {
+      "id": "eiffel-stairs",
+      "category": "World",
+      "answer": 1665,
+      "unit": "steps",
+      "source": "https://www.toureiffel.paris/en/faq/spot/how-can-you-walk-eiffel-tower-foot",
+      "sourceTitle": "Eiffel Tower official site",
+      "checked": "2026-11-04",
+      "method": "Primary operator FAQ indexed verification",
+      "scopeNote": "Total stair count 1,665; scope is all the way to the top, not publicly accessible second-floor stair count.",
+      "fetch": {
+        "url": "https://www.toureiffel.paris/en/faq/spot/how-can-you-walk-eiffel-tower-foot",
+        "status": 403,
+        "sha256": null,
+        "error": null
+      }
+    },
+    {
+      "id": "bridge",
+      "category": "World",
+      "answer": 2737,
+      "unit": "metres",
+      "source": "https://www.goldengate.org/exhibits/facts-and-figures-about-the-bridge/",
+      "sourceTitle": "Golden Gate Bridge district",
+      "checked": "2026-11-04",
+      "method": "Primary publication; numerical value and prompt scope reviewed",
+      "scopeNote": "The bridge district gives 2,737 metres from abutment to abutment.",
+      "fetch": {
+        "url": "https://www.goldengate.org/exhibits/facts-and-figures-about-the-bridge/",
+        "status": 200,
+        "sha256": "378aa8ecf18c3f231150d09ecb9ee1a2a655950ba4e4f071ee4f09ba2612c28b",
+        "error": null
+      }
+    },
+    {
+      "id": "burj",
+      "category": "World",
+      "answer": 828,
+      "unit": "metres",
+      "source": "https://www.som.com/projects/burj-khalifa/",
+      "sourceTitle": "SOM, the tower’s architects",
+      "checked": "2026-11-04",
+      "method": "Primary architect publication search-index verification",
+      "scopeNote": "SOM describes its Burj Khalifa project as 828 metres; replaced an unavailable older owner PDF URL.",
+      "fetch": {
+        "url": "https://www.som.com/projects/burj-khalifa/",
+        "status": 200,
+        "sha256": "1ea695efa0cc0dbbcfe6a37194534fad3645e16a0e377d8213ad9733f6e92e99",
+        "error": null
+      }
+    },
+    {
+      "id": "opera-tiles",
+      "category": "World",
+      "answer": 1056006,
+      "unit": "tiles",
+      "source": "https://www.arup.com/en-us/projects/designing-the-sydney-opera-house/",
+      "sourceTitle": "Arup, the project engineers",
+      "checked": "2026-11-04",
+      "method": "Primary publication; numerical value and prompt scope reviewed",
+      "scopeNote": "Arup reports 1,056,006 ceramic tiles in its account of the roof design.",
+      "fetch": {
+        "url": "https://www.arup.com/en-us/projects/designing-the-sydney-opera-house/",
+        "status": 200,
+        "sha256": "95eed51c84e4810f46816879ba06073318cbfaaafa351908a95054be6a3f3338",
+        "error": null
+      }
+    },
+    {
+      "id": "liberty-stairs",
+      "category": "World",
+      "answer": 377,
+      "unit": "steps",
+      "source": "https://www.nps.gov/thingstodo/visit-liberty-crown.htm",
+      "sourceTitle": "US National Park Service",
+      "checked": "2026-11-04",
+      "method": "Primary publication; numerical value and prompt scope reviewed",
+      "scopeNote": "NPS lists 377 from the ground, including 162 above the pedestal.",
+      "fetch": {
+        "url": "https://www.nps.gov/thingstodo/visit-liberty-crown.htm",
+        "status": 200,
+        "sha256": "caec2896da9de18c4c1e516ad9a5b97df980e9985a140a9dddf1f5adedaa225a",
+        "error": null
+      }
+    },
+    {
+      "id": "empire",
+      "category": "World",
+      "answer": 102,
+      "unit": "floor",
+      "source": "https://www.esbnyc.com/tickets/102nd-86th-floor-observation-decks",
+      "sourceTitle": "Empire State Building",
+      "checked": "2026-11-04",
+      "method": "Primary publication; numerical value and prompt scope reviewed",
+      "scopeNote": "Its Top Deck is on floor 102; the Main Deck is on floor 86.",
+      "fetch": {
+        "url": "https://www.esbnyc.com/tickets/102nd-86th-floor-observation-decks",
+        "status": 200,
+        "sha256": "6e7565eba7cea3a378250c3e6e8654f90cd9ebaa5efecd1672bf89256e7177e5",
+        "error": null
+      }
+    },
+    {
+      "id": "marathon",
+      "category": "Sports",
+      "answer": 42.195,
+      "unit": "km",
+      "source": "https://worldathletics.org/disciplines/roadrunning/marathon",
+      "sourceTitle": "World Athletics",
+      "checked": "2026-11-04",
+      "method": "Primary publication; numerical value and prompt scope reviewed",
+      "scopeNote": "The distance is 42.195 kilometres, or 26 miles and 385 yards.",
+      "fetch": {
+        "url": "https://worldathletics.org/disciplines/roadrunning/marathon",
+        "status": 200,
+        "sha256": "f8ebe030cf903245e78d7c6c50341a7782f2cc47588fd3f351e3a580ac8af651",
+        "error": null
+      }
+    },
+    {
+      "id": "shot-put",
+      "category": "Sports",
+      "answer": 7.26,
+      "unit": "kg",
+      "source": "https://worldathletics.org/disciplines/throws/shot-put",
+      "sourceTitle": "World Athletics",
+      "checked": "2026-11-04",
+      "method": "Primary publication; numerical value and prompt scope reviewed",
+      "scopeNote": "The senior men’s implement weighs 7.26 kg.",
+      "fetch": {
+        "url": "https://worldathletics.org/disciplines/throws/shot-put",
+        "status": 200,
+        "sha256": "857b9454f4435c1616ad70c2425a777380458957407366bfa88c20d5f46a3c71",
+        "error": null
+      }
+    },
+    {
+      "id": "goal",
+      "category": "Sports",
+      "answer": 7.32,
+      "unit": "metres",
+      "source": "https://www.theifab.com/laws/latest/the-field-of-play/",
+      "sourceTitle": "IFAB, Law 1",
+      "checked": "2026-11-04",
+      "method": "Primary publication; numerical value and prompt scope reviewed",
+      "scopeNote": "Measure between the inside edges of the posts.",
+      "fetch": {
+        "url": "https://www.theifab.com/laws/latest/the-field-of-play/",
+        "status": 200,
+        "sha256": "17a1b1a776d2aeff8b7fd154a4f9919b03c686b9b409b906bf968be6eda99c2b",
+        "error": null
+      }
+    },
+    {
+      "id": "court",
+      "category": "Sports",
+      "answer": 94,
+      "unit": "feet",
+      "source": "https://www.nba.com/news/faq",
+      "sourceTitle": "NBA",
+      "checked": "2026-11-04",
+      "method": "Primary publication; numerical value and prompt scope reviewed",
+      "scopeNote": "NBA court length: 94 feet.",
+      "fetch": {
+        "url": "https://www.nba.com/news/faq",
+        "status": 200,
+        "sha256": "b313c6b5d3fe4bc25bff27e5b5df47915b41c4e8a97eeb986f5a1c8a07e6b35a",
+        "error": null
+      }
+    },
+    {
+      "id": "nba-shootout",
+      "category": "Sports",
+      "answer": 370,
+      "unit": "points",
+      "source": "https://www.nba.com/news/most-points-scored-by-a-team-in-an-nba-game",
+      "sourceTitle": "NBA",
+      "checked": "2026-11-04",
+      "method": "Primary publication; numerical value and prompt scope reviewed",
+      "scopeNote": "NBA game account: 186 plus 184 = 370 combined points, not one team’s total.",
+      "fetch": {
+        "url": "https://www.nba.com/news/most-points-scored-by-a-team-in-an-nba-game",
+        "status": 200,
+        "sha256": "16915549b6d944e59e9383d88338c142ae5a5e4eaeeefa0d31dd18db08915e1c",
+        "error": null
+      }
+    },
+    {
+      "id": "baseball",
+      "category": "Sports",
+      "answer": 108,
+      "unit": "stitches",
+      "source": "https://milb.bamcontent.com/documents/4/4/0/313082440/Farm_Grown_Magazine_8th_Edition.pdf",
+      "sourceTitle": "Minor League Baseball",
+      "checked": "2026-11-04",
+      "method": "Primary publication; numerical value and prompt scope reviewed",
+      "scopeNote": "MiLB publication counts 108 double stitches, not 216 individual holes.",
+      "fetch": {
+        "url": "https://milb.bamcontent.com/documents/4/4/0/313082440/Farm_Grown_Magazine_8th_Edition.pdf",
+        "status": 200,
+        "sha256": "1a82e9dc0b793783c34fdf5696c70926688b74879e5fff3d462ba8966e305a3c",
+        "error": null
+      }
+    },
+    {
+      "id": "lego-tower",
+      "category": "Culture",
+      "answer": 10001,
+      "unit": "pieces",
+      "source": "https://www.lego.com/en-us/product/eiffel-tower-10307",
+      "sourceTitle": "LEGO",
+      "checked": "2026-11-04",
+      "method": "Primary LEGO product indexed verification",
+      "scopeNote": "Set 10307, 10,001 pieces; not a different Eiffel Tower set.",
+      "fetch": {
+        "url": "https://www.lego.com/en-us/product/eiffel-tower-10307",
+        "status": 403,
+        "sha256": null,
+        "error": null
+      }
+    },
+    {
+      "id": "lego-ship",
+      "category": "Culture",
+      "answer": 9090,
+      "unit": "pieces",
+      "source": "https://www.lego.com/en-us/product/lego-titanic-10294",
+      "sourceTitle": "LEGO",
+      "checked": "2026-11-04",
+      "method": "Primary LEGO product indexed verification",
+      "scopeNote": "Set 10294, 9,090 pieces.",
+      "fetch": {
+        "url": "https://www.lego.com/en-us/product/lego-titanic-10294",
+        "status": 403,
+        "sha256": null,
+        "error": null
+      }
+    },
+    {
+      "id": "rubik",
+      "category": "Culture",
+      "answer": 43.25200327448986,
+      "unit": "quintillion",
+      "source": "https://www.usitc.gov/publications/337/pub1334.pdf",
+      "sourceTitle": "US International Trade Commission",
+      "checked": "2026-11-04",
+      "method": "Primary publication; numerical value and prompt scope reviewed",
+      "scopeNote": "Reachable-position integer is expressed in quintillions, not entered as a 20-digit value.",
+      "fetch": {
+        "url": "https://www.usitc.gov/publications/337/pub1334.pdf",
+        "status": 200,
+        "sha256": "16ea7668166d1824aabd9b9ff85a5d3664baf20e44777b6888d2bcdddb958b80",
+        "error": null
+      }
+    },
+    {
+      "id": "crayons",
+      "category": "Culture",
+      "answer": 152,
+      "unit": "crayons",
+      "source": "https://www.crayola.com/products/crayons/ultimate-crayon-collection-152-count-crayons-520030",
+      "sourceTitle": "Crayola",
+      "checked": "2026-11-04",
+      "method": "Primary publication; numerical value and prompt scope reviewed",
+      "scopeNote": "The named collection includes regular, metallic and glitter crayons.",
+      "fetch": {
+        "url": "https://www.crayola.com/products/crayons/ultimate-crayon-collection-152-count-crayons-520030",
+        "status": 200,
+        "sha256": "a08d75f05eeadfb9ce84533760ef438cd4152c2bfb8e665a0ab42366602d0119",
+        "error": null
+      }
+    },
+    {
+      "id": "oscar",
+      "category": "Culture",
+      "answer": 13.5,
+      "unit": "inches",
+      "source": "https://www.oscars.org/oscars/statuette",
+      "sourceTitle": "Academy of Motion Picture Arts and Sciences",
+      "checked": "2026-11-04",
+      "method": "Primary publication; numerical value and prompt scope reviewed",
+      "scopeNote": "Academy height of thirteen and a half inches; recorded as 13.5.",
+      "fetch": {
+        "url": "https://www.oscars.org/oscars/statuette",
+        "status": 200,
+        "sha256": "5ce8afce77795daaeab70b4dfd193f456143b6fd66d48a2db2fb93b09b115fa9",
+        "error": null
+      }
+    },
+    {
+      "id": "jenga",
+      "category": "Culture",
+      "answer": 54,
+      "unit": "blocks",
+      "source": "https://www.jenga.com/about.php",
+      "sourceTitle": "Jenga",
+      "checked": "2026-11-04",
+      "method": "Primary publication; numerical value and prompt scope reviewed",
+      "scopeNote": "Classic Jenga uses 54 blocks, arranged three per level.",
+      "fetch": {
+        "url": "https://www.jenga.com/about.php",
+        "status": 200,
+        "sha256": "cc30c0e9da0f88b4b43cc36298b2a432aa7e933529c03878a5fbb91c59cf09d4",
+        "error": null
+      }
+    },
+    {
+      "id": "mario-kart",
+      "category": "Gaming",
+      "answer": 96,
+      "unit": "courses",
+      "source": "https://www.nintendo.com/ph/news/article/4YLfQ0qIKZXFmQZoJ0ubsT",
+      "sourceTitle": "Nintendo",
+      "checked": "2026-11-04",
+      "method": "Primary publication; numerical value and prompt scope reviewed",
+      "scopeNote": "The base game and the completed pass together contain 96 race courses.",
+      "fetch": {
+        "url": "https://www.nintendo.com/ph/news/article/4YLfQ0qIKZXFmQZoJ0ubsT",
+        "status": 200,
+        "sha256": "1b3cbab728a5a75a6a6425d25ce39937b03706af4fc196c746ea1668b9b056fe",
+        "error": null
+      }
+    },
+    {
+      "id": "pokemon",
+      "category": "Gaming",
+      "answer": 151,
+      "unit": "species",
+      "source": "https://www.pokemon.com/us/pokemon-tcg/scarlet-violet-151",
+      "sourceTitle": "The Pokémon Company",
+      "checked": "2026-11-04",
+      "method": "Primary publisher page and indexed description",
+      "scopeNote": "The 151 set describes the original Kanto species; dynamic HTML omits some copy from a static fetch.",
+      "fetch": {
+        "url": "https://www.pokemon.com/us/pokemon-tcg/scarlet-violet-151",
+        "status": 200,
+        "sha256": "f282c44c9f555d03f64bc71a7e813574b6ca38ae5cfb051f0be7fd4367d30666",
+        "error": null
+      }
+    },
+    {
+      "id": "tetris",
+      "category": "Gaming",
+      "answer": 7,
+      "unit": "shapes",
+      "source": "https://cdn.akamai.steamstatic.com/steam/apps/1259790/manuals/tenpex_WM_210216_Steam_en.pdf",
+      "sourceTitle": "Tetris Effect: Connected official manual",
+      "checked": "2026-11-04",
+      "method": "Primary publication; numerical value and prompt scope reviewed",
+      "scopeNote": "The seven shapes are I, O, T, S, Z, J and L.",
+      "fetch": {
+        "url": "https://cdn.akamai.steamstatic.com/steam/apps/1259790/manuals/tenpex_WM_210216_Steam_en.pdf",
+        "status": 200,
+        "sha256": "f31ae9e0447de1f549b21c0a93d69b0ab58bc7329692b3bd76de4e7687acaf34",
+        "error": null
+      }
+    },
+    {
+      "id": "nether",
+      "category": "Gaming",
+      "answer": 800,
+      "unit": "blocks",
+      "source": "https://github.com/misode/mcmeta/blob/5f312935898c8f75f64d185b9874b129d0c67287/data/minecraft/dimension_type/the_nether.json",
+      "sourceTitle": "Released Minecraft dimension data",
+      "checked": "2026-11-04",
+      "method": "Pinned released game data",
+      "scopeNote": "coordinate_scale = 8.0; 100 horizontal Nether blocks correspond to 800 Overworld blocks.",
+      "fetch": {
+        "url": "https://raw.githubusercontent.com/misode/mcmeta/5f312935898c8f75f64d185b9874b129d0c67287/data/minecraft/dimension_type/the_nether.json",
+        "status": 200,
+        "sha256": "858d6747b7dd90a962671f5c8db2e404bf51f235990093da85d3e95df1f3c51d",
+        "error": null
+      }
+    },
+    {
+      "id": "portal",
+      "category": "Gaming",
+      "answer": 10,
+      "unit": "blocks",
+      "source": "https://www.minecraft.net/en-us/article/visit-nether-",
+      "sourceTitle": "Mojang / Minecraft",
+      "checked": "2026-11-04",
+      "method": "Primary publication; numerical value and prompt scope reviewed",
+      "scopeNote": "Mojang describes the cornerless frame as two on top and bottom plus three on each side: 2+2+3+3.",
+      "fetch": {
+        "url": "https://www.minecraft.net/en-us/article/visit-nether-",
+        "status": 200,
+        "sha256": "cba89f73992cc69c67ec0f3944e0f771bee900a0e4303dce658b2d1f3ee085b1",
+        "error": null
+      }
+    },
+    {
+      "id": "pacman",
+      "category": "Gaming",
+      "answer": 3333360,
+      "unit": "points",
+      "source": "https://www.guinnessworldrecords.com/world-records/84401-fastest-perfect-completion-of-pac-man",
+      "sourceTitle": "Guinness World Records",
+      "checked": "2026-11-04",
+      "method": "Primary publication; numerical value and prompt scope reviewed",
+      "scopeNote": "The perfect-game score is 3,333,360.",
+      "fetch": {
+        "url": "https://www.guinnessworldrecords.com/world-records/84401-fastest-perfect-completion-of-pac-man",
+        "status": 200,
+        "sha256": "fb3cd18f9b25028918baafa0a6626c2daf48b77103bcc0d2b0ad52c2c30f8c49",
+        "error": null
+      }
+    },
+    {
+      "id": "penny",
+      "category": "Everyday",
+      "answer": 2.5,
+      "unit": "grams",
+      "source": "https://www.usmint.gov/learn/coins-and-medals/circulating-coins/coin-specifications",
+      "sourceTitle": "US Mint",
+      "checked": "2026-11-04",
+      "method": "Primary US Mint specifications indexed verification",
+      "scopeNote": "2.50 g for the copper-plated zinc cent, not older copper cents.",
+      "fetch": {
+        "url": "https://www.usmint.gov/learn/coins-and-medals/circulating-coins/coin-specifications",
+        "status": 403,
+        "sha256": null,
+        "error": null
+      }
+    },
+    {
+      "id": "nickel",
+      "category": "Everyday",
+      "answer": 5,
+      "unit": "grams",
+      "source": "https://www.usmint.gov/learn/coins-and-medals/circulating-coins/coin-specifications",
+      "sourceTitle": "US Mint",
+      "checked": "2026-11-04",
+      "method": "Primary US Mint specifications indexed verification",
+      "scopeNote": "US nickel specification 5.00 g.",
+      "fetch": {
+        "url": "https://www.usmint.gov/learn/coins-and-medals/circulating-coins/coin-specifications",
+        "status": 403,
+        "sha256": null,
+        "error": null
+      }
+    },
+    {
+      "id": "coke",
+      "category": "Everyday",
+      "answer": 39,
+      "unit": "grams",
+      "source": "https://www.coca-colacompany.com/about-us/faq/ingredients",
+      "sourceTitle": "The Coca-Cola Company",
+      "checked": "2026-11-04",
+      "method": "Primary publication; numerical value and prompt scope reviewed",
+      "scopeNote": "The company lists 39 grams for this can size and formulation.",
+      "fetch": {
+        "url": "https://www.coca-colacompany.com/about-us/faq/ingredients",
+        "status": 200,
+        "sha256": "8d806815b9fcec867fe268fba324d3130def7874f402c28645f68a437adaa947",
+        "error": null
+      }
+    },
+    {
+      "id": "uno",
+      "category": "Everyday",
+      "answer": 108,
+      "unit": "cards",
+      "source": "https://service.mattel.com/instruction_sheets/M1002.pdf",
+      "sourceTitle": "Mattel",
+      "checked": "2026-11-04",
+      "method": "Primary publication; numerical value and prompt scope reviewed",
+      "scopeNote": "Mattel M1002 classic deck: 108. Scope excludes modern extra customizable/Shuffle Hands editions.",
+      "fetch": {
+        "url": "https://service.mattel.com/instruction_sheets/M1002.pdf",
+        "status": 200,
+        "sha256": "bf9dde084ee51a7c1b3f6c4aa045530d27ac2571fdbbb4a469ad81582cc06d9e",
+        "error": null
+      }
+    },
+    {
+      "id": "cards",
+      "category": "Everyday",
+      "answer": 52,
+      "unit": "cards",
+      "source": "https://www.slga.com/-/media/slga/files/permits-and-licences/integrity-standards/playing-cards-standards-june-2022.pdf",
+      "sourceTitle": "Saskatchewan Liquor and Gaming Authority",
+      "checked": "2026-11-04",
+      "method": "Primary publication; numerical value and prompt scope reviewed",
+      "scopeNote": "Four suits with thirteen ranks give 52 cards.",
+      "fetch": {
+        "url": "https://www.slga.com/-/media/slga/files/permits-and-licences/integrity-standards/playing-cards-standards-june-2022.pdf",
+        "status": 200,
+        "sha256": "ece9e17717b42d63cc0b557e88f88e827f3f6f4c99826a0b85df884bdf68833b",
+        "error": null
+      }
+    },
+    {
+      "id": "pen",
+      "category": "Everyday",
+      "answer": 2000,
+      "unit": "metres",
+      "source": "https://corporate.bic.com/en-us/news/an-everyday-icon-the-bic-m10-celebrates-70-years",
+      "sourceTitle": "BIC",
+      "checked": "2026-11-04",
+      "method": "Primary publication; numerical value and prompt scope reviewed",
+      "scopeNote": "BIC claim is an upper limit of two kilometres, converted to 2,000 metres.",
+      "fetch": {
+        "url": "https://corporate.bic.com/en-us/news/an-everyday-icon-the-bic-m10-celebrates-70-years",
+        "status": 200,
+        "sha256": "86455821266976cadf50725ac474e6a49315c9d778b5ff2185aa057844f17a19",
+        "error": null
+      }
+    }
+  ],
+  "admitted": 42,
+  "sourcePolicy": "Primary publications or pinned released game data. Search-index verification is named explicitly when direct access is unavailable. HTTP status/number detection alone is not validation."
+}
