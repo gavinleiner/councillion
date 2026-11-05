@@ -2,12 +2,13 @@ import test from 'node:test';
 import {figureRevealMarkup} from '../court-games-view.js';
 import assert from 'node:assert/strict';
 import {CLASH_BOARDS,FIGURE_QUESTIONS,CLASH_BY_ID,FIGURE_BY_ID} from '../court-games-data.js';
-import {createCourtGame,startCourtGame,tickCourtGame,actCourtGame,parseEstimate,accuracyScore} from '../court-games-engine.js';
+import {createCourtGame,startCourtGame,tickCourtGame,actCourtGame,parseEstimate,accuracyScore,canCourtHuddle} from '../court-games-engine.js';
 import {random} from '../question-selection.js';
 import {matchAnswer,normalize} from '../answer-matching.js';
 const players=()=>Array.from({length:6},(_,i)=>({id:'p'+i,name:'Player '+i,team:i%2,ready:true,connected:true,buddy:i%2?'squid':'krill'}));
 const game=(variant='clash')=>{const s=createCourtGame(variant,players()),secret={estimates:{},fast:{}};startCourtGame(s,1000,random(42));tickCourtGame(s,secret,4200);return {s,secret};};
-const answer=(s,secret,uid,text,now=5000)=>actCourtGame(s,secret,uid,'answer',{text},now);
+const answer=(s,secret,uid,text,now=5000)=>{const r=actCourtGame(s,secret,uid,'answer',{text},now);if(s.stage==='survey')tickCourtGame(s,secret,s.deadline);return r;};
+const fastReady=(s,secret)=>{if(s.stage==='fastReady')actCourtGame(s,secret,s.turn,'fast-ready',{},s.stageAt+1);if(s.stage==='fastRead')tickCourtGame(s,secret,s.deadline);};
 test('40 sourced aired boards preserve complete displayed categories, published scores and unambiguous aliases',()=>{
  assert.equal(CLASH_BOARDS.length,40);assert.equal(new Set(CLASH_BOARDS.map(q=>q.id)).size,40);assert.equal(new Set(CLASH_BOARDS.map(q=>q.source)).size,20);
  for(const q of CLASH_BOARDS){assert.match(q.basis,/Scores preserved/);assert.ok(q.answers.length>=5&&q.answers.length<=6);assert.ok(q.answers.reduce((n,a)=>n+a.points,0)<=100);assert.equal(new URL(q.source).hostname,'mstiescott.neocities.org');assert.ok(q.season>=16&&q.season<=25);const aliases=new Map();for(const [i,a]of q.answers.entries()){assert.ok(Number.isInteger(a.points)&&a.points>0);if(i)assert.ok(q.answers[i-1].points>=a.points);for(const text of [a.label,...a.aliases]){const norm=normalize(text);assert.ok(!aliases.has(norm)||aliases.get(norm)===a.label,q.id+': '+text);aliases.set(norm,a.label);assert.equal(matchAnswer(q,text)?.label,a.label,q.id+': '+text);}}}
@@ -27,7 +28,7 @@ test('highest face-off answer earns play/pass, with a real chance for the other 
 });
 test('a top face-off answer wins immediately; teammates rotate and a third strike opens one steal',()=>{
  const {s,secret}=game(),q=CLASH_BY_ID.get(s.board.id);actCourtGame(s,secret,'p0','buzz',{},5000);answer(s,secret,'p0',q.answers[0].label,5100);assert.equal(s.stage,'choice');actCourtGame(s,secret,'p0','choice',{pass:false},5200);assert.equal(s.turn,'p2');
- answer(s,secret,s.turn,'not on the board',5300);assert.equal(s.strikes,1);assert.equal(s.turn,'p4');answer(s,secret,s.turn,q.answers[0].label,5400);assert.equal(s.strikes,2);assert.equal(s.turn,'p0');answer(s,secret,s.turn,'still not on the board',5500);assert.equal(s.stage,'steal');assert.equal(s.turn,'p1');
+ answer(s,secret,s.turn,'not on the board',5300);assert.equal(s.strikes,1);assert.equal(s.turn,'p4');answer(s,secret,s.turn,q.answers[0].label,5400);assert.equal(s.strikes,1);assert.equal(s.turn,'p4');answer(s,secret,s.turn,'another miss',5450);assert.equal(s.strikes,2);assert.equal(s.turn,'p0');answer(s,secret,s.turn,'still not on the board',5500);assert.equal(s.stage,'steal');assert.equal(s.turn,'p1');
  const bank=s.pot;answer(s,secret,'p1',q.answers[1].label,5600);assert.equal(s.stage,'roundResult');assert.equal(s.teamScores[1],bank);assert.equal(s.teamScores[0],0);assert.equal(s.roundResult.steal,true);assert.equal(s.event.type,'steal-win');
 });
 test('a failed steal awards the bank to the controlling bench',()=>{
@@ -41,13 +42,13 @@ test('a whole team leaving ends the match rather than stranding a turn',()=>{
 });
 test('Fast Money uses two distinct teammates, hides first answers and gives duplicates a retry',()=>{
  const {s,secret}=game();s.stage='roundResult';s.deadline=5000;s.teamScores=[350,100];s.round=4;tickCourtGame(s,secret,5000);assert.equal(s.stage,'fastIntro');
- actCourtGame(s,secret,'p0','runner',{player:'p0'},5100);actCourtGame(s,secret,'p0','runner',{player:'p2'},5200);actCourtGame(s,secret,'p0','fast-start',{},5300);assert.equal(s.fastTarget,200);assert.equal(s.fastPlayers.length,2);assert.equal(s.deadline,25300);
- const first=s.fastIds.map(id=>CLASH_BY_ID.get(id).answers[0].label);const r=actCourtGame(s,secret,'p0','fast',{values:first,pass:0,matchId:s.matchId},5400);assert.equal(r.accepted,true);assert.equal(s.stage,'fastFirstReview');assert.equal(s.fastPass,0);assert.equal(s.turn,null);assert.ok(s.fast.total>0);tickCourtGame(s,secret,s.deadline);assert.equal(s.fastPass,1);assert.equal(s.turn,'p2');assert.ok(!JSON.stringify(s).includes('"input"'));
- const retry=actCourtGame(s,secret,'p2','fast',{values:first,pass:1,matchId:s.matchId},s.stageAt+50);assert.equal(retry.retry.length,5);assert.equal(s.stage,'fast');const second=s.fastIds.map(id=>CLASH_BY_ID.get(id).answers[1].label);actCourtGame(s,secret,'p2','fast',{values:second,pass:1,matchId:s.matchId},s.stageAt+100);assert.equal(s.stage,'fastReview');const expected=s.fastIds.reduce((sum,id)=>sum+CLASH_BY_ID.get(id).answers[0].points+CLASH_BY_ID.get(id).answers[1].points,0);assert.equal(s.fast.total,expected);assert.equal(s.fast.success,expected>=200);assert.equal(s.fast.rows.length,5);
+ actCourtGame(s,secret,'p0','runner',{player:'p0'},5100);actCourtGame(s,secret,'p0','runner',{player:'p2'},5200);actCourtGame(s,secret,'p0','fast-start',{},5300);assert.equal(s.stage,'fastReady');fastReady(s,secret);assert.equal(s.fastTarget,200);assert.equal(s.fastPlayers.length,2);assert.equal(s.deadline-s.stageAt,20000);
+ const first=s.fastIds.map(id=>CLASH_BY_ID.get(id).answers[1].label);const r=actCourtGame(s,secret,'p0','fast',{values:first,pass:0,matchId:s.matchId},5400);assert.equal(r.accepted,true);assert.equal(s.stage,'fastFirstReview');assert.equal(s.fastPass,0);assert.equal(s.turn,null);assert.ok(s.fast.total>0);tickCourtGame(s,secret,s.deadline);fastReady(s,secret);assert.equal(s.fastPass,1);assert.equal(s.turn,'p2');assert.ok(!JSON.stringify(s).includes('"input"'));
+ const retry=actCourtGame(s,secret,'p2','fast',{values:first,pass:1,matchId:s.matchId},s.stageAt+50);assert.equal(retry.retry.length,5);assert.equal(s.stage,'fast');const second=s.fastIds.map(id=>CLASH_BY_ID.get(id).answers[0].label);actCourtGame(s,secret,'p2','fast',{values:second,pass:1,matchId:s.matchId},s.stageAt+100);assert.equal(s.stage,'fastReview');let expected=s.fastIds.reduce((sum,id)=>sum+CLASH_BY_ID.get(id).answers[1].points,0);for(const id of s.fastIds){if(expected>=200)break;expected+=CLASH_BY_ID.get(id).answers[0].points;}assert.equal(s.fast.total,expected);assert.equal(s.fast.success,expected>=200);assert.equal(s.fast.rows.length,5);
  tickCourtGame(s,secret,s.deadline);assert.equal(s.stage,'finish');assert.equal(s.result.team,0);
 });
 test('1v1 is permitted but Fast Money handles the single winner without inventing a teammate',()=>{
- const s=createCourtGame('clash',players().slice(0,2)),secret={};startCourtGame(s,1000,random(1));tickCourtGame(s,secret,4200);s.round=4;s.stage='roundResult';s.deadline=5000;s.teamScores=[300,50];tickCourtGame(s,secret,5000);actCourtGame(s,secret,'p0','fast-start',{},5100);assert.equal(s.fastPlayers.length,1);assert.equal(s.fastTarget,100);tickCourtGame(s,secret,s.deadline);assert.equal(s.stage,'fastReview');assert.equal(s.fast.total,0);
+ const s=createCourtGame('clash',players().slice(0,2)),secret={};startCourtGame(s,1000,random(1));tickCourtGame(s,secret,4200);s.round=4;s.stage='roundResult';s.deadline=5000;s.teamScores=[300,50];tickCourtGame(s,secret,5000);actCourtGame(s,secret,'p0','fast-start',{},5100);fastReady(s,secret);assert.equal(s.fastPlayers.length,1);assert.equal(s.fastTarget,100);tickCourtGame(s,secret,s.deadline);assert.equal(s.stage,'fastReview');assert.equal(s.fast.total,0);
 });
 test('estimate parser accepts usable notation without accepting units, NaN or negative entries',()=>{
  for(const [input,value]of [['1,250',1250],['1.5k',1500],['2M',2000000],['.25',.25],['1e3',1000],['0',0]])assert.equal(parseEstimate(input),value);
@@ -75,7 +76,7 @@ test('equal-valued face-off answers keep the first buzzer in control',()=>{
  const {s,secret}=game();const q=CLASH_BOARDS.find(q=>q.answers.slice(1).some((a,i)=>a.points===q.answers[i].points));s.board={id:q.id,prompt:q.prompt,slots:q.answers.map((_,index)=>({index,revealed:false}))};const i=q.answers.findIndex((a,i)=>i>1&&a.points===q.answers[i-1].points);assert.ok(i>1);actCourtGame(s,secret,'p0','buzz',{},5000);answer(s,secret,'p0',q.answers[i].label,5100);answer(s,secret,'p1',q.answers[i-1].label,5200);assert.equal(s.choicePlayer,'p0');
 });
 test('Fast Money banks the last private draft at the buzzer and never leaks it to public state',()=>{
- const {s,secret}=game();s.stage='roundResult';s.deadline=5000;s.teamScores=[350,100];s.round=4;tickCourtGame(s,secret,5000);actCourtGame(s,secret,'p0','fast-start',{},5100);const input=s.fastIds.map(id=>CLASH_BY_ID.get(id).answers[0].label);actCourtGame(s,secret,'p0','fast-draft',{values:input,pass:0,matchId:s.matchId},5200);assert.ok(!JSON.stringify(s).includes('"values"'));assert.equal(s.fast.total,0);tickCourtGame(s,secret,s.deadline);assert.equal(s.stage,'fastFirstReview');tickCourtGame(s,secret,s.deadline);assert.equal(s.fastPass,1);assert.deepEqual(secret.fast.p0.map(a=>a.input),input);assert.throws(()=>actCourtGame(s,secret,'p0','fast-draft',{values:input,pass:0,matchId:s.matchId},s.deadline-1),/earlier/);
+ const {s,secret}=game();s.stage='roundResult';s.deadline=5000;s.teamScores=[350,100];s.round=4;tickCourtGame(s,secret,5000);actCourtGame(s,secret,'p0','fast-start',{},5100);fastReady(s,secret);const input=s.fastIds.map(id=>CLASH_BY_ID.get(id).answers[1].label);actCourtGame(s,secret,'p0','fast-draft',{values:input,pass:0,matchId:s.matchId},5200);assert.ok(!JSON.stringify(s).includes('"values"'));assert.equal(s.fast.total,0);tickCourtGame(s,secret,s.deadline);assert.equal(s.stage,'fastFirstReview');tickCourtGame(s,secret,s.deadline);fastReady(s,secret);assert.equal(s.fastPass,1);assert.deepEqual(secret.fast.p0.map(a=>a.input),input);assert.throws(()=>actCourtGame(s,secret,'p0','fast-draft',{values:input,pass:0,matchId:s.matchId},s.deadline-1),/earlier/);
 });
 test('online teammates take turns while a disconnected seat retains its reconnect grace',()=>{
  const {s,secret}=game();s.players.find(p=>p.id==='p2').online=false;actCourtGame(s,secret,'p0','buzz',{},5000);answer(s,secret,'p0',CLASH_BY_ID.get(s.board.id).answers[0].label,5100);actCourtGame(s,secret,'p0','choice',{pass:false},5200);assert.equal(s.turn,'p4');assert.throws(()=>actCourtGame(s,secret,'p2','answer',{text:'test'},5300),/Only players/);assert.equal(s.players.find(p=>p.id==='p2').connected,true);
@@ -90,8 +91,40 @@ test('a new referee waits for private answers before expiring a round',async()=>
 });
 
 test('Fast Money validates one answer without revealing the first runner and preserves passed-question progress',()=>{
- const {s,secret}=game();s.stage='roundResult';s.deadline=5000;s.teamScores=[350,100];s.round=4;tickCourtGame(s,secret,5000);actCourtGame(s,secret,'p0','fast-start',{},5100);
- const first=s.fastIds.map(id=>CLASH_BY_ID.get(id).answers[0].label);actCourtGame(s,secret,'p0','fast',{values:first,pass:0,matchId:s.matchId},5200);assert.equal(s.stage,'fastFirstReview');assert.ok(!JSON.stringify(s).includes('"input"'));tickCourtGame(s,secret,s.deadline);
+ const {s,secret}=game();s.stage='roundResult';s.deadline=5000;s.teamScores=[350,100];s.round=4;tickCourtGame(s,secret,5000);actCourtGame(s,secret,'p0','fast-start',{},5100);fastReady(s,secret);
+ const first=s.fastIds.map(id=>CLASH_BY_ID.get(id).answers[1].label);actCourtGame(s,secret,'p0','fast',{values:first,pass:0,matchId:s.matchId},5200);assert.equal(s.stage,'fastFirstReview');assert.ok(!JSON.stringify(s).includes('"input"'));tickCourtGame(s,secret,s.deadline);fastReady(s,secret);
  const duplicate=actCourtGame(s,secret,s.turn,'fast-draft',{values:first,pass:1,checkIndex:0,cursor:0,passed:[],lap:0,matchId:s.matchId},s.stageAt+1);assert.deepEqual(duplicate.retry,[0]);assert.equal(secret.fastDraft?.[s.turn],undefined);
- const values=first.map((_,i)=>i===0?CLASH_BY_ID.get(s.fastIds[0]).answers[1].label:'');const receipt=actCourtGame(s,secret,s.turn,'fast-draft',{values,pass:1,checkIndex:0,cursor:0,passed:[2,3],lap:1,matchId:s.matchId},s.stageAt+2);assert.equal(receipt.checked,0);assert.equal(receipt.saved,true);assert.deepEqual(secret.fastDraft[s.turn].passed,[2,3]);assert.equal(secret.fastDraft[s.turn].lap,1);
+ const values=first.map((_,i)=>i===0?CLASH_BY_ID.get(s.fastIds[0]).answers[0].label:'');const receipt=actCourtGame(s,secret,s.turn,'fast-draft',{values,pass:1,checkIndex:0,cursor:0,passed:[2,3],lap:1,matchId:s.matchId},s.stageAt+2);assert.equal(receipt.checked,0);assert.equal(receipt.saved,true);assert.deepEqual(secret.fastDraft[s.turn].passed,[2,3]);assert.equal(secret.fastDraft[s.turn].lap,1);
+});
+
+
+test('survey judgement is a single referee-resolved beat, including after a state round trip',()=>{
+ const {s,secret}=game(),q=CLASH_BY_ID.get(s.board.id);actCourtGame(s,secret,'p0','buzz',{},5000);
+ const r=actCourtGame(s,secret,'p0','answer',{text:q.answers[0].label,resolve:true},5100);assert.equal(r.judging,true);assert.equal(s.stage,'survey');assert.equal(s.pot,0);assert.ok(s.board.slots.every(a=>!a.revealed));assert.throws(()=>actCourtGame(s,secret,'p0','answer',{text:q.answers[1].label},5200),/Wait/);
+ const restored=JSON.parse(JSON.stringify(s));assert.equal(tickCourtGame(restored,secret,6099),false);assert.equal(tickCourtGame(restored,secret,6100),true);assert.equal(restored.stage,'choice');assert.equal(restored.pot,q.answers[0].points);assert.equal(tickCourtGame(restored,secret,6100),false);
+});
+test('two failed representatives hand answers to the next pair in first-buzzer order',()=>{
+ const {s,secret}=game();actCourtGame(s,secret,'p1','buzz',{},5000);answer(s,secret,'p1','bad first',5100);answer(s,secret,'p0','bad second',6200);assert.equal(s.stage,'faceAnswer');assert.deepEqual(s.faceoffPlayers,['p2','p3']);assert.equal(s.faceoffTurn,'p3');answer(s,secret,'p3','bad third',7300);assert.equal(s.faceoffTurn,'p2');
+});
+test('only the defending bench can confer and already-revealed answers preserve the turn and clock',()=>{
+ const {s,secret}=game(),q=CLASH_BY_ID.get(s.board.id);actCourtGame(s,secret,'p0','buzz',{},5000);answer(s,secret,'p0',q.answers[0].label,5100);actCourtGame(s,secret,'p0','choice',{},6200);assert.equal(canCourtHuddle(s,'p0'),false);assert.equal(canCourtHuddle(s,'p1'),true);const deadline=s.deadline,id=s.turn;const r=answer(s,secret,id,q.answers[0].label,6300);assert.equal(r.retry,true);assert.equal(s.turn,id);assert.equal(s.deadline,deadline);assert.equal(s.strikes,0);
+});
+test('Fast Money instructions and first-question read do not consume the answer clock',()=>{
+ const {s,secret}=game();s.stage='roundResult';s.deadline=5000;s.teamScores=[350,100];s.round=4;tickCourtGame(s,secret,5000);actCourtGame(s,secret,'p0','fast-start',{},5100);assert.equal(s.stage,'fastReady');assert.throws(()=>actCourtGame(s,secret,'p0','fast-draft',{values:['','','','',''],pass:0,matchId:s.matchId},5200),/earlier/);actCourtGame(s,secret,'p0','fast-ready',{},10000);assert.equal(s.stage,'fastRead');tickCourtGame(s,secret,s.deadline);assert.equal(s.stage,'fast');assert.equal(s.deadline-s.stageAt,20000);
+});
+test('Fast Money second review preserves the first column and scores each answer after its reveal',async()=>{
+ const {fastRevealPlan,fastScene}=await import('../court-games-fast.js');const rows=Array.from({length:5},(_,i)=>({prompt:'Question '+i,answers:[{label:'First '+i,points:27},{label:'Second '+i,points:25}]}));const plan=fastRevealPlan(rows,{second:true,target:200});assert.equal(plan.baseline,135);assert.deepEqual(plan.rows.map(r=>r.show),[true,true,true,false,false]);assert.ok(plan.rows.every(r=>r.pointsAt>r.answerAt));
+ const {s}=game();Object.assign(s,{stage:'fastReview',fastPass:1,fastTarget:200,fast:{success:true,rows}});const html=fastScene(s,'p0',{});assert.ok(!html.includes('CASE CLOSED'));assert.equal((html.match(/is-banked/g)??[]).length,5);assert.equal((html.match(/data-reveal-ms=/g)??[]).length,3);
+});
+
+test('an uninterrupted six-player match reaches Fast Money and a finale through real actions',()=>{
+ const {s,secret}=game();let now=5000,boards=0;
+ const say=(uid,text)=>{actCourtGame(s,secret,uid,'answer',{text},now);assert.equal(s.stage,'survey');now=s.deadline;tickCourtGame(s,secret,now);now+=50;};
+ while(s.stage==='faceoff'){
+  boards++;const rep=s.faceoffPlayers[(boards-1)%2],q=CLASH_BY_ID.get(s.board.id);actCourtGame(s,secret,rep,'buzz',{},now);now+=50;say(rep,q.answers[0].label);assert.equal(s.stage,'choice');actCourtGame(s,secret,rep,'choice',{pass:false},now);now+=50;
+  for(const a of q.answers.slice(1))say(s.turn,a.label);assert.equal(s.stage,'roundResult');now=s.deadline;tickCourtGame(s,secret,now);now+=50;assert.ok(boards<=4);
+ }
+ assert.equal(s.stage,'fastIntro');const captain=s.choicePlayer;actCourtGame(s,secret,captain,'fast-start',{},now);assert.equal(s.stage,'fastReady');actCourtGame(s,secret,s.turn,'fast-ready',{},now+50);now=s.deadline;tickCourtGame(s,secret,now);now+=50;
+ actCourtGame(s,secret,s.turn,'fast',{values:s.fastIds.map(id=>CLASH_BY_ID.get(id).answers[1].label),pass:0,matchId:s.matchId},now);assert.equal(s.stage,'fastFirstReview');now=s.deadline;tickCourtGame(s,secret,now);assert.equal(s.stage,'fastReady');actCourtGame(s,secret,s.turn,'fast-ready',{},now+50);now=s.deadline;tickCourtGame(s,secret,now);assert.equal(s.deadline-now,25000);now+=50;
+ actCourtGame(s,secret,s.turn,'fast',{values:s.fastIds.map(id=>CLASH_BY_ID.get(id).answers[0].label),pass:1,matchId:s.matchId},now);assert.equal(s.stage,'fastReview');assert.equal(s.event.type,'fast-review');assert.ok(!JSON.stringify(s).includes('"input"'));tickCourtGame(s,secret,s.deadline);assert.equal(s.stage,'finish');assert.equal(s.history.length,boards);assert.equal(s.result.fast.complete,true);
 });
