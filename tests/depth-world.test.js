@@ -1,6 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {depthDistance,cameraAtDepth,depthScreenY,sceneryBands,biomeAt} from '../depth-world.js';
+test('longer expeditions still move beyond 8,000m and their extended scenery covers the deepest score',()=>{for(const h of [600,768,900]){assert.ok(cameraAtDepth(12000,h)>cameraAtDepth(10000,h));assert.ok(cameraAtDepth(10000,h)>cameraAtDepth(8000,h));assert.ok(sceneryBands(h,12000).at(-1).bottom>cameraAtDepth(12000,h)+h);assert.equal(sceneryBands(h).at(-1).bottom,sceneryBands(h,8000).at(-1).bottom);}});
 test('common scores reach later scenes while the 10m-per-point scoring scale is preserved',()=>{assert.equal(biomeAt(30*10).name,'THE TWILIGHT');assert.equal(biomeAt(70*10).name,'MIDNIGHT RUINS');assert.equal(biomeAt(150*10).name,'THE ABYSS');assert.equal(biomeAt(300*10).name,'HADAL DEPTHS');});
 test('descent moves landmarks past the fixed camera anchor in the correct direction',()=>{
  for(const height of [600,768,900]){let previous=-1;for(let d=0;d<=7000;d+=10){const distance=depthDistance(d,height);assert.ok(distance>previous);previous=distance;assert.ok(Math.abs(depthScreenY(d,cameraAtDepth(d,height),height)-height*.4)<1e-8);}

@@ -1,14 +1,15 @@
 import {shuffle} from './question-selection.js';
 import {matchAnswer,normalize} from './answer-matching.js';
 import {CLASH_BOARDS,CLASH_BY_ID,FIGURE_QUESTIONS,FIGURE_BY_ID} from './court-games-data.js';
-export const COURT_GAMES_BUILD='20261104-feud-dialogue-v6';
+import {courtSettings} from './court-games-settings.js';
+export const COURT_GAMES_BUILD='20261104-final-figure-v7';
 export const GAME_MODES={clash:{name:'Counsel Clash',subtitle:'TEAM FEUD',seats:10},figure:{name:'Final Figure',subtitle:'CLOSEST ANSWER WINS',seats:8}};
 const live=s=>s.players.filter(p=>!p.spectator&&p.connected!==false);
 const team=(s,n)=>{const rows=live(s).filter(p=>p.team===n),online=rows.filter(p=>p.online!==false);return online.length?online:rows;};
 const actor=(s,id)=>s.players.find(p=>p.id===id&&!p.spectator&&p.connected!==false&&p.online!==false);
 const emit=(s,type,text,now,extra={})=>{s.notice=text;s.event={id:++s.eventSerial,type,text,at:now,...extra};s.revision++;};
 const stage=(s,value,now,ms)=>{s.stage=value;s.phase=['roundResult','reveal','fastFirstReview','fastReview'].includes(value)?'burst':value==='finish'?'ended':value==='lobby'?'lobby':'playing';s.deadline=ms?now+ms:0;s.stageAt=now;};
-export function createCourtGame(mode,players=[],rng=Math.random){if(!GAME_MODES[mode])throw Error('Choose a game mode.');return {build:COURT_GAMES_BUILD,variant:mode,phase:'lobby',stage:'lobby',players:players.map(p=>({...p,score:0,team:p.team??0})),settings:{maxPlayers:GAME_MODES[mode].seats},round:0,revision:0,eventSerial:0,teamScores:[0,0],deadline:0,notice:'Bring your friends. The court is assembling.',questionIds:[],locked:{},history:[]};}
+export function createCourtGame(mode,players=[],rng=Math.random){if(!GAME_MODES[mode])throw Error('Choose a game mode.');return {build:COURT_GAMES_BUILD,variant:mode,phase:'lobby',stage:'lobby',players:players.map(p=>({...p,score:0,team:p.team??0})),settings:{maxPlayers:GAME_MODES[mode].seats,...courtSettings(mode)},round:0,revision:0,eventSerial:0,teamScores:[0,0],deadline:0,notice:'Bring your friends. The court is assembling.',questionIds:[],locked:{},history:[]};}
 export function startCourtGame(s,now=Date.now(),rng=Math.random){
  const ready=s.players.filter(p=>p.ready&&p.connected!==false&&p.online!==false).slice(0,GAME_MODES[s.variant].seats);
  if(ready.length<2)throw Error('At least two ready players are needed.');
@@ -17,9 +18,10 @@ export function startCourtGame(s,now=Date.now(),rng=Math.random){
  s.matchId=crypto.randomUUID();s.players=s.players.map(p=>({...p,score:0,spectator:!ready.some(r=>r.id===p.id)}));s.teamScores=[0,0];s.round=0;s.history=[];s.locked={};s.secretEpoch=s.matchId;delete s.result;delete s.roundResult;delete s.fast;delete s.board;delete s.lastAnswer;delete s.judgement;
  s.questionIds=shuffle((s.variant==='clash'?CLASH_BOARDS:FIGURE_QUESTIONS).map(q=>q.id),rng);
  if(s.variant==='figure'){
-  // Six independent subjects when available, then random order; no player history.
-  const groups=new Set(),selected=[];for(const id of s.questionIds){const q=FIGURE_BY_ID.get(id);if(!groups.has(q.category)){groups.add(q.category);selected.push(id);}if(selected.length===6)break;}
-  s.questionIds=[...selected,...s.questionIds.filter(id=>!selected.includes(id))];
+  // Repeatedly draw from the least-used available subjects. Longer custom
+  // expeditions keep the same variety and never repeat a question in a match.
+  s.settings={...s.settings,...courtSettings('figure',s.settings)};const remaining=s.questionIds.slice(),selected=[],counts={};
+  while(remaining.length){const least=Math.min(...remaining.map(id=>counts[FIGURE_BY_ID.get(id).category]??0)),i=remaining.findIndex(id=>(counts[FIGURE_BY_ID.get(id).category]??0)===least),id=remaining.splice(i,1)[0],category=FIGURE_BY_ID.get(id).category;selected.push(id);counts[category]=(counts[category]??0)+1;}s.questionIds=selected;
  }
  stage(s,'intro',now,3200);emit(s,'intro','Court is in session.',now);return true;
 }
@@ -53,16 +55,22 @@ export function parseEstimate(input){
  const n=Number(m[1])*({k:1e3,m:1e6,b:1e9}[m[2]?.toLowerCase()]??1);return Number.isFinite(n)&&n>=0&&n<=1e15?n:null;
 }
 export function accuracyScore(guess,target,scale=1){if(!Number.isFinite(guess)||!Number.isFinite(target)||!Number.isFinite(scale)||scale<=0)return 0;return Math.max(0,Math.min(1000,Math.round(1000*Math.exp(-2.2*Math.abs(guess-target)/Math.max(Math.abs(target),scale)))));}
-function nextFigure(s,now){s.round++;const q=FIGURE_BY_ID.get(s.questionIds[s.round-1]);s.question={id:q.id,prompt:q.prompt,unit:q.unit,category:q.category};s.locked={};delete s.roundResult;stage(s,'estimate',now,30000);emit(s,'estimate','One number. Seal your answer.',now);}
+function nextFigure(s,now){s.round++;const q=FIGURE_BY_ID.get(s.questionIds[s.round-1]);s.question={id:q.id,prompt:q.prompt,unit:q.unit,category:q.category};s.locked={};s.advanceReady={};delete s.roundResult;stage(s,'estimate',now,(s.settings.seconds??30)*1000);emit(s,'estimate','One number. Seal your answer.',now);}
 function revealFigure(s,secret,now){
+ const before=s.players.filter(p=>!p.spectator).map(p=>({id:p.id,score:p.score}));
  const q=FIGURE_BY_ID.get(s.question.id),rows=s.players.filter(p=>!p.spectator).map(p=>{const v=secret.estimates?.[p.id]?.round===s.round?secret.estimates[p.id].value:null;return {id:p.id,guess:v,error:v===null?null:Math.abs(v-q.answer)};}),valid=rows.filter(r=>r.guess!==null),least=valid.length?Math.min(...valid.map(r=>r.error)):null;
  for(const r of rows){r.closest=r.error!==null&&Math.abs(r.error-least)<=Math.max(1e-10,Math.abs(q.answer)*1e-12);r.accuracy=r.guess===null?0:accuracyScore(r.guess,q.answer,q.scale??1);r.bonus=r.closest?200:0;r.points=r.accuracy+r.bonus;s.players.find(p=>p.id===r.id).score+=r.points;}
- s.roundResult={answer:q.answer,unit:q.unit,explanation:q.explanation,source:q.source,sourceTitle:q.sourceTitle,rows:rows.sort((a,b)=>(a.error??Infinity)-(b.error??Infinity))};s.history.push({round:s.round,id:q.id,...s.roundResult});stage(s,'reveal',now,11000);emit(s,'reveal','Unseal the estimates. Closest counsel earns +200.',now);
+ for(const r of rows){r.before=before.find(p=>p.id===r.id).score;r.total=s.players.find(p=>p.id===r.id).score;r.rankBefore=1+before.filter(p=>p.score>r.before).length;r.rankAfter=1+s.players.filter(p=>!p.spectator&&p.score>r.total).length;}
+ const leaders=s.players.filter(p=>!p.spectator&&p.score===Math.max(...s.players.filter(p=>!p.spectator).map(p=>p.score))).map(p=>p.id);
+ s.advanceReady={};s.roundResult={answer:q.answer,unit:q.unit,explanation:q.explanation,source:q.source,sourceTitle:q.sourceTitle,leaders,rows:rows.sort((a,b)=>(a.error??Infinity)-(b.error??Infinity))};s.history.push({round:s.round,id:q.id,...s.roundResult});stage(s,'reveal',now,14000);emit(s,'reveal','Unseal the estimates. Closest counsel earns +200.',now);
 }
 export function actCourtGame(s,secret,uid,action,payload={},now=Date.now()){
  const p=payload.timeout?s.players.find(p=>p.id===uid&&!p.spectator):actor(s,uid);if(!p)throw Error('Only players in this game can act.');
  if(s.deadline&&now>=s.deadline)throw Error('That timer has ended.');
  if(s.variant==='figure'){
+  if(action==='next'){
+   if(s.stage!=='reveal')throw Error('Wait for the evidence reveal.');if(payload.round!==s.round||payload.matchId!==s.matchId)throw Error('That vote belongs to an earlier dive.');if(now-s.stageAt<5000)throw Error('Let the evidence reveal finish first.');s.advanceReady??={};s.advanceReady[uid]=true;s.revision++;return {accepted:true};
+  }
   if(action!=='estimate'||s.stage!=='estimate')throw Error('Wait for the next estimate.');
   if(payload.round!==s.round||payload.matchId!==s.matchId)throw Error('That answer belongs to an earlier question.');
   if(s.locked?.[uid])throw Error('Your answer is already sealed.');
@@ -138,11 +146,12 @@ export function tickCourtGame(s,secret,now=Date.now()){
  if(['lobby','finish'].includes(s.stage))return false;
  if(s.variant==='clash'&&s.stage!=='intro'&&[0,1].some(t=>!team(s,t).length)){s.winningTeam=team(s,0).length?0:1;finish(s,now);s.notice='The other bench left. The court is adjourned.';return true;}
  if(s.stage==='estimate'&&live(s).every(p=>s.locked?.[p.id])){revealFigure(s,secret,now);return true;}
+ if(s.variant==='figure'&&s.stage==='reveal'&&now-s.stageAt>=5000&&live(s).filter(p=>p.online!==false).every(p=>s.advanceReady?.[p.id])){s.round>=(s.settings.rounds??6)?finish(s,now):nextFigure(s,now);return true;}
  if(!s.deadline||now<s.deadline)return false;
  if(s.stage==='survey'){const pending=s.judgement;delete s.judgement;stage(s,pending.from,now,1);resolveBoardAnswer(s,pending.uid,{text:pending.text},now);return true;}
  if(s.stage==='intro'){s.variant==='clash'?nextClash(s,now):nextFigure(s,now);return true;}
  if(s.stage==='estimate'){revealFigure(s,secret,now);return true;}
- if(s.stage==='reveal'){s.round>=6?finish(s,now):nextFigure(s,now);return true;}
+ if(s.stage==='reveal'){s.round>=(s.settings.rounds??6)?finish(s,now):nextFigure(s,now);return true;}
  if(s.stage==='roundResult'){if(s.round>=4||s.teamScores.some(n=>n>=300))finishClashMain(s,now);else nextClash(s,now);return true;}
  if(s.stage==='faceoff'){
   const choices=s.faceoffPlayers.filter(Boolean);s.faceoffTurn=choices[(s.round-1)%choices.length];s.faceoffFirstTeam=s.players.find(p=>p.id===s.faceoffTurn)?.team??0;stage(s,'faceAnswer',now,7000);emit(s,'buzz','Time to answer. '+(s.players.find(p=>p.id===s.faceoffTurn)?.team===0?'Petitioners':'Respondents')+' go first.',now,{player:s.faceoffTurn});return true;
