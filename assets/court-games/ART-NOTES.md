@@ -44,3 +44,8 @@ The built-in image generator edited the original puffer atlas into four mouth po
 ## Final Figure registry · v7
 
 `figure-registry-ai-v1.png` is the new expedition registry, generated with the built-in image generator using `feud-court-ai-v1.png` as a style reference only. The plate has a brass diving bell, chart ledges, restrained law details, and an open-water launch gap; controls and lettering are real HTML. `figure-registry-ai-v1.webp` preserves the PNG pixels exactly. The full prompt and file mapping are recorded in [figure-registry-prompt-v7.json](figure-registry-prompt-v7.json). The main game continues to render the moving ocean rather than placing this registry plate behind every round.
+
+
+## Final Figure evidence theatre — 2026-11-05
+
+`figure-folio-ai-v1.png` and `figure-capsule-ai-v1.png` were generated with the built-in `image_gen.imagegen` tool, using the approved registry as a pixel-art style reference. The transparent originals are preserved. Lossless WebP versions are used in the game. The exact prompts and conversion record are in `figure-theatre-prompts-v1.json`. Neither image contains game text: questions, figures, controls and accessible descriptions remain real HTML. The live prompt remains ordinary readable text with no scroll. Code animates the reveal folio opening, capsule flight after sealing, player seals and current; no pre-rendered UI screenshots or long image sequences.

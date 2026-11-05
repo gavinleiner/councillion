@@ -1,0 +1,17 @@
+{
+  "tool": "image_gen.imagegen (built-in)",
+  "date": "2026-11-05",
+  "assets": [
+    {
+      "file": "figure-folio-ai-v1.png",
+      "prompt": "Use case: stylized-concept\nAsset type: transparent 2D game prop for Councillion, an underwater pixel-art trivia expedition.\nPrimary request: An opened, horizontal evidence folio floating underwater. Two dark navy wooden narrow rollers on the left and right hold a large blank pale ivory parchment. Small aged brass corner clips, a dark teal lower rim and one tiny wax seal with a simple scales-of-justice impression. It must feel like a physical readable evidence artifact, not an app panel.\nReference image: use the supplied Councillion registry only as a palette and medium-detail pixel-art style reference. The prop is new.\nComposition: straight-on, wide landscape approximately 2.7:1, centered isolated object. The parchment reading area is a completely blank clean rectangle occupying at least 80% of the width and 72% of the height. Edges slightly stepped, very little ornament, no hanging cords. Full prop visible with a small transparent margin.\nStyle: crisp hand-placed medium-size pixel clusters, limited teal/navy/brass/ivory palette, black-navy outlines, 4-5 shading tones per material. Same approachable illustrated game quality as the reference. Flat 2D game sprite, no realistic painting.\nConstraints: true transparent background outside the entire folio, opaque light parchment centre. NO words, numbers, letters, watermark, glow, scenery, gradients, photoreal textures, tiny noisy details, extra objects or interface controls. Do not create a complete screen."
+    },
+    {
+      "file": "figure-capsule-ai-v1.png",
+      "prompt": "Use case: stylized-concept\nAsset type: transparent pixel-art game sprite for Councillion.\nPrimary request: a small sealed brass underwater evidence capsule, about the size of a diving helmet. A cylindrical navy metal evidence tube with brass end caps, little side lifting handles, one small dark round porthole, and a small red justice-scales wax seal on the front. A pair of compact brass fins. It contains a sealed court document. Looks like a practical quirky nautical prop, not a submarine or character.\nReference image: supplied underwater registry for colour palette and medium-detail pixel-art rendering only.\nComposition: single isolated object, straight-on three-quarter very slight top view, full silhouette, centred in square canvas with 10% clear margin. No scenery, no text. Actual transparent background.\nStyle: approachable game pixel sprite, readable at 96 pixels wide, clean navy outlines, clear clustered pixels, 4-5 shading tones per material, same controlled navy/teal/brass palette as the reference. Simple enough to animate by rotating, opening shutters and bubble jets in code.\nAvoid: photorealism, painting, soft lighting, dense surface noise, enormous ornate fantasy details, letters, numbers, words, UI frames, water backdrop, floor, shadow on any background."
+    }
+  ],
+  "reference": "figure-registry-ai-v1.png",
+  "transparent_background": true,
+  "conversion": "Lossless WebP; no generative modifications outside the image tool."
+}
