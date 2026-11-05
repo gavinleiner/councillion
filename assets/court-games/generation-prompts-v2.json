@@ -1,0 +1,10 @@
+{
+  "tool": "Built-in image_gen",
+  "style": "Final Figure chart room uses medium-resolution pixel art. Clash uses the existing Puffer scenery and native pixel interface components.",
+  "assets": [
+    {
+      "file": "assets/court-games/figure-cabin-v2.webp",
+      "prompt": "Redraw the navigation-cabin picture (image1) to match the balanced pixel-art density of the courtroom reference (image2) EXACTLY. Medium-resolution hand-authored pixel-art game scenery, about a 480x270 logical pixel canvas enlarged for display, consistent visible small pixel clusters, stepped silhouettes, restrained 4\u20135-shade ramps, no realism or painterly fine texture. Do not make giant coarse blocks; the second image is the density target. Keep the cabin composition: huge circular brass window LEFT 60% looking into turquoise ocean and distant sunken courthouse, small compass star, desk with map and little gold balance scale at lower left, pressure gauge and lantern upper right, dark navy clear wall in RIGHT THIRD (x65..92%, y23..82%) for HTML game controls. Future Counsel underwater legal expedition atmosphere. No characters, no words, no UI, no numbers, no watermark. Simplify busy details into clean deliberate pixel clusters but keep wood grain, small bolts, book silhouettes and underwater light shafts. Wide 16:9. Distinctly 2D pixel art, not realistic."
+    }
+  ]
+}

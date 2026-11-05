@@ -11,11 +11,12 @@ export class Ocean {
   this.backdrop=document.createElement('canvas');this.background=this.backdrop.getContext('2d',{alpha:false});this.loop=this.loop.bind(this);
   this.resize=()=>{this.w=innerWidth;this.h=innerHeight;this.ratio=1;canvas.width=this.w;canvas.height=this.h;this.backdrop.width=this.w;this.backdrop.height=this.h;this.ctx.imageSmoothingEnabled=false;this.background.imageSmoothingEnabled=false;this.cacheKey='';this.tiles.clear();this.locateBuddy();this.schedule();};
   this.resize();addEventListener('resize',this.resize);
-  document.addEventListener('visibilitychange',()=>{if(document.hidden){cancelAnimationFrame(this.raf);this.raf=null;}else{this.previous=0;this.schedule();}});
+  this.visibility=()=>{if(document.hidden){cancelAnimationFrame(this.raf);this.raf=null;}else{this.previous=0;this.schedule();}};document.addEventListener('visibilitychange',this.visibility);
   this.load('sky');
  }
  load(key){if(this.images[key])return;const img=new Image();img.decoding='async';img.onload=()=>{this.cacheKey='';this.tiles.delete(key);this.schedule();};img.src='assets/'+this.files[key];this.images[key]=img;}
  suspend(value){this.suspended=value;if(value){cancelAnimationFrame(this.raf);this.raf=null;}else this.schedule();}
+ destroy(){this.suspended=true;cancelAnimationFrame(this.raf);this.raf=null;removeEventListener('resize',this.resize);document.removeEventListener('visibilitychange',this.visibility);this.buddy=null;}
  schedule(){if(this.raf===null&&!document.hidden&&!this.suspended)this.raf=requestAnimationFrame(this.loop);}
  set(mode,depth=0){
   if(mode===this.mode&&depth===this.depth)return;
