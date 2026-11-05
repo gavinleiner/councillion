@@ -13,7 +13,7 @@ export class FigureVoyage {
   this.updateBiome();
   if(this.lastDepth!==undefined&&depth>this.lastDepth){this.root.dataset.descending='true';this.ocean.celebrate();clearTimeout(this.dropTimer);this.dropTimer=setTimeout(()=>delete this.root.dataset.descending,4000);}this.lastDepth=depth;
  }
- updateBiome(){const biome=biomeAt(this.ocean.displayedDepth);if(this.root.dataset.biome===biome.name)return;const label=this.root.querySelector('.cg-current-biome');if(label)label.textContent=biome.name;this.root.style.setProperty('--biome-accent',biome.color);this.root.dataset.biome=biome.name;}
+ updateBiome(){this.root.dataset.figureSurface=String(this.ocean.displayedDepth<120);const biome=biomeAt(this.ocean.displayedDepth);if(this.root.dataset.biome===biome.name)return;const label=this.root.querySelector('.cg-current-biome');if(label)label.textContent=biome.name;this.root.style.setProperty('--biome-accent',biome.color);this.root.dataset.biome=biome.name;}
  frame(s,uid,now){if(this.pendingReveal&&s.stage==='reveal'&&now-s.stageAt>=3100)this.update(s,uid,now);this.updateBiome();}
  dispose(){clearTimeout(this.dropTimer);this.media.removeEventListener('change',this.motion);this.ocean.destroy();this.canvas.remove();}
 }
