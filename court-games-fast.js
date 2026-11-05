@@ -26,7 +26,7 @@ export class FastRun{
  save(){if(!this.disposed&&this.waiting===undefined)this.session.request('fast-draft',this.patch()).catch(this.onError);}
  step(pass){
   if(this.waiting!==undefined||this.session.pending||this.finishing)return;
-  clearTimeout(this.timer);this.values[this.cursor]=pass?'':this.input.value.trim();this.passClick=pass;this.waiting=this.cursor;this.beforeAck=this.session.lastAck;
+  pass=pass||!this.input.value.trim();clearTimeout(this.timer);this.values[this.cursor]=pass?'':this.input.value.trim();this.passClick=pass;this.waiting=this.cursor;this.beforeAck=this.session.lastAck;
   this.form.querySelector('.cg-fast-feedback').textContent='';this.session.request('fast-draft',this.patch({checkIndex:this.cursor})).catch(e=>{this.waiting=undefined;this.onError(e);});
  }
  update(s,session){
