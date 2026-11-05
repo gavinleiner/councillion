@@ -1,0 +1,7 @@
+export const COURT_PALETTES={tide:{name:'Tide',color:'#9cdbd0',dark:'#285964'},brass:{name:'Brass',color:'#e6c57c',dark:'#76623c'},coral:{name:'Coral',color:'#eda5a4',dark:'#815266'},pearl:{name:'Pearl',color:'#d5e3eb',dark:'#546c88'}};
+export const COURT_TITLES={none:'No title',counsel:'COUNSEL',clerk:'CLERK',advocate:'ADVOCATE',archivist:'ARCHIVIST',diver:'DIVER'};
+export const COURT_SEALS={scales:'Scales',gavel:'Gavel',quill:'Quill',anchor:'Anchor'};
+export const COURT_VENUES={court:'Lantern court',moon:'Moonlit court',reef:'Reef court'};
+export function courtAppearance(value={}){return {palette:Object.hasOwn(COURT_PALETTES,value?.palette)?value.palette:'tide',seal:Object.hasOwn(COURT_SEALS,value?.seal)?value.seal:'scales',title:Object.hasOwn(COURT_TITLES,value?.title)?value.title:'none'};}
+export function courtSettings(mode,value={}){return mode==='figure'?{rounds:[6,8,10].includes(value?.rounds)?value.rounds:6,seconds:[20,30,45].includes(value?.seconds)?value.seconds:30}:{venue:Object.hasOwn(COURT_VENUES,value?.venue)?value.venue:'court'};}
+export function validCourtSettings(mode,value){const allowed=mode==='figure'?['rounds','seconds']:['venue'];if(!value||typeof value!=='object'||Array.isArray(value)||Object.keys(value).some(k=>!allowed.includes(k)))throw Error('Choose one of the court’s match settings.');const safe=courtSettings(mode,value);if(Object.keys(value).some(k=>value[k]!==safe[k]))throw Error('Choose one of the listed match settings.');return safe;}

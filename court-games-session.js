@@ -4,6 +4,7 @@ import {waitForDatabaseConnection,databaseClockOffset,partyConnectionError,permi
 import {validateDisplayName,validateChat,safeDisplayName} from './moderation.js';
 import {requirePartyIdentity} from './party-access.js';
 import {answerTurn,safeDraft,fastLiveAnswer} from './court-games-dialogue.js';
+import {courtAppearance,courtSettings,validCourtSettings} from './court-games-settings.js';
 const clone=o=>JSON.parse(JSON.stringify(o)),values=o=>Object.values(o??{}),build=mode=>COURT_GAMES_BUILD+':'+mode;
 const loadCloud=()=>import('./cloud.bundle.js?v=20261024-open-v1');
 function normalizeState(state){
@@ -12,11 +13,16 @@ function normalizeState(state){
 }
 
 export class CourtGameSession{
- constructor({mode,onState=()=>{},onDrafts=()=>{},onError=()=>{},identity=()=>null,authorize,getCloud=loadCloud,clock=()=>Date.now()}){this.googleId=identity()?.id??null;Object.assign(this,{mode,onState,onDrafts,onError,identity,authorize,getCloud,clock,unsub:[],members:{},drafts:{},responses:{},secret:{estimates:{},fast:{}},processed:new Set(),queue:Promise.resolve(),closed:false,offset:0});this.timer=setInterval(()=>this.tick(),200);}
+ constructor({mode,onState=()=>{},onDrafts=()=>{},onError=()=>{},identity=()=>null,authorize,getCloud=loadCloud,clock=()=>Date.now(),appearance={},settings={}}){this.googleId=identity()?.id??null;Object.assign(this,{mode,onState,onDrafts,onError,identity,authorize,getCloud,clock,appearance:courtAppearance(appearance),initialSettings:courtSettings(mode,settings),unsub:[],members:{},drafts:{},responses:{},secret:{estimates:{},fast:{}},processed:new Set(),queue:Promise.resolve(),closed:false,offset:0});this.timer=setInterval(()=>this.tick(),200);}
  now(){return this.clock()+this.offset;}
  path(part=''){return this.c.ref(this.c.db,'rooms/'+this.code+(part?'/'+part:''));}
  fail(e){if(!this.closed)this.onError(partyConnectionError(e));}
- render(){if(!this.closed)this.onState(this.state,this);}
+ render(){if(!this.closed){this.onState(this.state,this);queueMicrotask(()=>this.syncAppearance());}}
+ syncAppearance(){
+  if(this.closed||!this.connected||this.pending||this.syncingAppearance||!['lobby','finish'].includes(this.state?.stage))return;
+  const player=this.state.players.find(p=>p.id===this.uid);if(!player||JSON.stringify(courtAppearance(player.appearance))===JSON.stringify(this.appearance))return;
+  this.syncingAppearance=true;this.request('appearance',{appearance:this.appearance}).catch(e=>this.fail(e)).finally(()=>this.syncingAppearance=false);
+ }
  async auth(){const auth=await this.authorize();this.uid=auth.uid;requirePartyIdentity(this.identity());this.c=await this.getCloud();await waitForDatabaseConnection(this.c);this.offset=await databaseClockOffset(this.c);if(this.closed)throw Error('Connection cancelled.');}
  member(name,buddy,ready){return {name:validateDisplayName(name),buddy:['krill','schooler','squid','angler','evil'].includes(buddy)?buddy:'krill',protocol:4,joinedAt:this.now(),lastSeen:this.now(),online:true,ready,autoJoin:false};}
  async create(name,buddy='krill',isPrivate=true){
@@ -24,7 +30,7 @@ export class CourtGameSession{
   for(let i=0;i<5;i++){
    this.code=Array.from(crypto.getRandomValues(new Uint8Array(4)),x=>'ABCDEFGHJKLMNPQRSTUVWXYZ'[x%24]).join('');
    this.meta={host:this.uid,hostName:m.name,version:3,protocol:4,format:'classic',catalogBuild:build(this.mode),game:this.mode,mode:'court-game',createdAt:this.now(),isPrivate,seats:GAME_MODES[this.mode].seats,phase:'lobby'};
-   this.state=createCourtGame(this.mode,[{id:this.uid,...m,team:0}]);this.members={[this.uid]:m};
+   this.state=createCourtGame(this.mode,[{id:this.uid,...m,team:0,appearance:this.appearance}]);Object.assign(this.state.settings,this.initialSettings);this.members={[this.uid]:m};
    try{await this.c.set(this.path(),{meta:this.meta,state:this.state,members:this.members});await this.listen();return this.code;}catch(e){if(i===4)throw e;}
   }
  }
@@ -92,7 +98,11 @@ export class CourtGameSession{
    if(!r.at||Math.abs(this.now()-r.at)>15000)throw Error('That request expired. Try again.');
    const p=this.state.players.find(p=>p.id===uid);if(!p)throw Error('The room is full.');
    const a=r.patch?.action;
-   if(a==='team'){
+   if(a==='appearance'){
+    if(!['lobby','finish'].includes(this.state.stage))throw Error('Change your counsel appearance between games.');p.appearance=courtAppearance(r.patch.appearance);this.state.revision++;
+   }else if(a==='settings'){
+    if(uid!==this.meta.host)throw Error('Only the host chooses match settings.');if(this.state.stage!=='lobby'&&this.state.stage!=='finish')throw Error('Match settings lock when the game starts.');Object.assign(this.state.settings,validCourtSettings(this.mode,r.patch.settings));this.state.revision++;
+   }else if(a==='team'){
     if(this.mode!=='clash'||!['lobby','finish'].includes(this.state.stage))throw Error('Teams lock when the match begins.');
     const target=Number(r.patch.team);if(![0,1].includes(target))throw Error('Choose a bench.');if(this.state.players.filter(p=>p.id!==uid&&p.team===target&&p.connected).length>=5)throw Error('That bench is full.');p.team=target;this.state.revision++;
    }else if(a==='huddle'){
@@ -124,6 +134,7 @@ export class CourtGameSession{
   if(this.pending&&action==='react')return false;
   if(this.pending)throw Error('Your last action is still reaching the court.');
   if(action==='answer')this.clearDraft();
+  if(action==='appearance')this.appearance=courtAppearance(extra.appearance);
   if(action==='fast'){this.queuedDraft=null;clearTimeout(this.draftRetry);}
   const id=crypto.randomUUID(),{text='',...patch}=extra;this.pending=true;this.render();
   try{await this.c.set(this.path('requests/'+this.uid),{id,type:action==='start'?(this.state.stage==='finish'?'rematch':'start'):'ready',text:String(text).slice(0,256),patch:{...patch,action,matchId:this.state.matchId??'',round:this.state.round},at:this.now()});}catch(e){this.pending=false;this.render();throw e;}

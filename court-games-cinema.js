@@ -1,6 +1,7 @@
 // Original pixel art + lightweight scene direction. Cosmetic only: never changes
 // turn order, guesses, clocks or score. Controls remain usable during every beat.
 import {buddySprite} from './party-view.js';
+import {counselNameplate} from './court-games-customization.js';
 import {TypingBubble} from './party-typing.js';
 import {answerTurn,visibleCourtDraft,visibleFastDraft,safeDraft,hostCue,HostVoice} from './court-games-dialogue.js';
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -32,7 +33,7 @@ export class CourtCinema{
  celebrateFast(){const host=this.layer.querySelector('.cg-host-sprite');host.dataset.pose='cheer';this.layer.classList.add('is-fast-win');this.later(()=>{host.dataset.pose='idle';this.layer.classList.remove('is-fast-win');},5000);}
  frame(s,now=Date.now(),context={}){
   if(s.variant!=='clash')return;if(!this.preloaded){this.preloaded=true;for(const file of ['feud-court-ai-v1.webp','feud-bench-angle-ai-v1.webp','feud-counter-ai-v1.webp','host-talk-ai-v1.webp']){const img=new Image();img.src='assets/court-games/'+file;}}const shot=feudCameraShot(s,now);if(this.shot!==shot){this.shot=shot;this.arena.dataset.shot=shot;}
-  const runner=s.players.find(p=>p.id===s.turn);if(shot==='fast-runner'&&runner&&this.runnerId!==runner.id){this.runnerId=runner.id;this.runner.innerHTML=buddySprite(runner.buddy)+'<strong>'+esc(runner.name)+'</strong><small>FAST MONEY · RUN '+(s.fastPass+1)+'</small>';}
+  const runner=s.players.find(p=>p.id===s.turn);if(shot==='fast-runner'&&runner&&this.runnerId!==runner.id){this.runnerId=runner.id;this.runner.innerHTML=buddySprite(runner.buddy)+counselNameplate(runner)+'<small>FAST MONEY · RUN '+(s.fastPass+1)+'</small>';}
   this.dialogue(s,now,context);
  }
  dialogue(s,now,{session={},fastRun}={}){

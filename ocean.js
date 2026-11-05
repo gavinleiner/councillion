@@ -72,11 +72,11 @@ export class Ocean {
  environment(){
   const key=[this.mode,Math.round(this.camera),...Object.keys(this.images).map(k=>Number(this.ready(k)))].join(':');
   if(key===this.cacheKey)return;this.cacheKey=key;this.cacheRebuilds++;
-  const c=this.background,W=this.w,H=this.h,surface=H*.48-this.camera;
+  const c=this.background,W=this.w,H=this.h,surface=H*.48-this.camera,maxDepth=this.worldDepth??8000;
   c.globalAlpha=1;
   // These colors live in the world, so the light boundary travels upwards.
-  const water=c.createLinearGradient(0,surface,0,worldAtDepth(8000,H)-this.camera);
-  for(const [d,color] of [[0,'#225b7c'],[200,'#173b59'],[650,'#132e4b'],[1500,'#112d42'],[3000,'#1b243b'],[8000,'#152038']])water.addColorStop((worldAtDepth(d,H)-H*.48)/(worldAtDepth(8000,H)-H*.48),color);
+  const water=c.createLinearGradient(0,surface,0,worldAtDepth(maxDepth,H)-this.camera);
+  for(const [d,color] of [[0,'#225b7c'],[200,'#173b59'],[650,'#132e4b'],[1500,'#112d42'],[3000,'#1b243b'],[maxDepth,'#152038']])water.addColorStop((worldAtDepth(d,H)-H*.48)/(worldAtDepth(maxDepth,H)-H*.48),color);
   water.addColorStop(0,'#286886');c.fillStyle=water;c.fillRect(0,0,W,H);
   if(surface>0){
    const sky=c.createLinearGradient(0,-this.camera,0,surface);sky.addColorStop(0,'#86ccdd');sky.addColorStop(1,'#dcefeb');c.fillStyle=sky;c.fillRect(0,0,W,Math.min(H,surface));
@@ -86,7 +86,7 @@ export class Ocean {
    const sea=c.createLinearGradient(0,surface,0,H);sea.addColorStop(0,'#194760');sea.addColorStop(1,'#102c47');c.fillStyle=sea;c.fillRect(0,Math.max(0,surface),W,H-Math.max(0,surface));
   }else{
    c.save();c.beginPath();c.rect(0,Math.max(0,surface),W,H-Math.max(0,surface));c.clip();
-   for(const band of sceneryBands(H)){
+   for(const band of sceneryBands(H,maxDepth)){
     if(band.bottom+H*.12<this.camera||band.top-H*.12>this.camera+H)continue;
     this.load(band.key);const tile=this.tile(band);if(tile)c.drawImage(tile.canvas,0,Math.round(tile.top-this.camera));
    }

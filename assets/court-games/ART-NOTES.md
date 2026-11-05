@@ -40,3 +40,7 @@ Camera direction changes the actual environment plate, cast blocking, board plac
 ## Talking host · v6
 
 The built-in image generator edited the original puffer atlas into four mouth poses, retaining his paper, suit and silhouette. `host-talk-ai-v1.png` is the generated RGBA sheet; its WebP is lossless. Exact prompt and reference are in [host-talk-prompt-v6.json](host-talk-prompt-v6.json). CSS mouth movement follows actual speech start/end events. Browser speech synthesis reads changing questions and player names without sending text to an external service.
+
+## Final Figure registry · v7
+
+`figure-registry-ai-v1.png` is the new expedition registry, generated with the built-in image generator using `feud-court-ai-v1.png` as a style reference only. The plate has a brass diving bell, chart ledges, restrained law details, and an open-water launch gap; controls and lettering are real HTML. `figure-registry-ai-v1.webp` preserves the PNG pixels exactly. The full prompt and file mapping are recorded in [figure-registry-prompt-v7.json](figure-registry-prompt-v7.json). The main game continues to render the moving ocean rather than placing this registry plate behind every round.
