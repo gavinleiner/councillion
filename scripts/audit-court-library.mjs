@@ -34,7 +34,7 @@ for(let seed=0;seed<400;seed++)for(const mode of ['clash','figure']){
  assert.equal(s.questionIds.length,size);assert.equal(new Set(s.questionIds).size,size,'A match repeats questions');first[mode].add(s.questionIds[0]);if((mode==='clash'?extra.surveyBoards:extra.numericQuestions).some(q=>q.id===s.questionIds[0]))newFirst[mode]++;
  if(mode==='figure'){const cats=s.questionIds.slice(0,7).map(id=>FIGURE_BY_ID.get(id).category);assert.equal(new Set(cats).size,7);}
  else for(const runners of [1,2]){
-  const t=structuredClone(s);tickCourtGame(t,secret,4200);t.history=[{id:t.board.id}];t.stage='roundResult';t.round=4;t.deadline=5000;t.teamScores=[350,100];tickCourtGame(t,secret,5000);t.fastPlayers=runners===1?['p0']:['p0','p2'];actCourtGame(t,secret,'p0','fast-start',{},5100);
+  const t=structuredClone(s);for(const p of t.players)actCourtGame(t,secret,p.id,'briefing-ready',{},1001);tickCourtGame(t,secret,1002);tickCourtGame(t,secret,t.deadline);t.history=[{id:t.board.id}];t.stage='roundResult';t.round=4;t.deadline=15000;t.teamScores=[350,100];tickCourtGame(t,secret,15000);t.fastPlayers=runners===1?['p0']:['p0','p2'];actCourtGame(t,secret,'p0','fast-start',{},15100);
   assert.equal(t.fastIds.length,5);assert.equal(new Set(t.fastIds).size,5);assert.ok(!t.fastIds.includes(t.history[0].id));const possible=t.fastIds.reduce((n,id)=>n+CLASH_BOARDS.find(q=>q.id===id).answers.slice(0,runners).reduce((a,b)=>a+b.points,0),0);assert.ok(possible>=t.fastTarget,'Unwinnable Fast Money');
  }
 }

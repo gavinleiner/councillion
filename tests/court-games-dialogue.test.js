@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {answerTurn,visibleCourtDraft,fastLiveAnswer,visibleFastDraft,hostCue,HostVoice} from '../court-games-dialogue.js';
 import {CLASH_BOARDS} from '../court-games-data.js';
-const state=()=>({variant:'clash',stage:'control',matchId:'match',round:2,turn:'a',deadline:28000,controlTeam:0,players:[{id:'a',name:'Nori',team:0},{id:'b',name:'Pearl',team:1}],fastPlayers:['a','b'],fastPass:0,fastIds:CLASH_BOARDS.slice(0,5).map(q=>q.id)});
+const state=()=>({variant:'clash',stage:'control',matchId:'match',round:2,turn:'a',deadline:40000,turnOpenedAt:10000,controlTeam:0,players:[{id:'a',name:'Nori',team:0},{id:'b',name:'Pearl',team:1}],fastPlayers:['a','b'],fastPass:0,fastIds:CLASH_BOARDS.slice(0,5).map(q=>q.id)});
 test('only the active connected answerer’s current-turn text is visible',()=>{
  const s=state(),d={a:{game:'match',round:2,text:'Blue whale',editedAt:11000},b:{game:'match',round:2,text:'secret suggestion',editedAt:11000}};
  assert.equal(visibleCourtDraft(s,d,12000).text,'Blue whale');
@@ -11,7 +11,7 @@ test('only the active connected answerer’s current-turn text is visible',()=>{
 });
 test('submissions, turn rotation, deletion and Figure guesses never leave stale text',()=>{
  const s=state(),d={a:{game:'match',round:2,text:'Blue whale',editedAt:11000}};
- const first=answerTurn(s).key;s.deadline=40000;assert.notEqual(answerTurn(s).key,first);assert.equal(visibleCourtDraft(s,d,23000),null);
+ const first=answerTurn(s).key;s.deadline=52000;s.turnOpenedAt=22000;assert.notEqual(answerTurn(s).key,first);assert.equal(visibleCourtDraft(s,d,23000),null);
  s.stage='survey';assert.equal(visibleCourtDraft(s,d,23000),null);s.stage='fast';assert.equal(answerTurn(s),null);s.variant='figure';assert.equal(answerTurn(s),null);
  s.variant='clash';s.stage='control';d.a.editedAt=23000;d.a.text='';assert.equal(visibleCourtDraft(s,d,23000).text,'');
 });

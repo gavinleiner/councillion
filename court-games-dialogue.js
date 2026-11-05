@@ -1,13 +1,14 @@
 import {CLASH_BY_ID} from './court-games-data.js';
 import {containsBlockedLanguage} from './moderation.js';
+import {CLASH_TIMING} from './court-games-engine.js';
 
 const values=o=>Object.values(o??{}),name=(s,id)=>s.players.find(p=>p.id===id)?.name??'Counsel';
 export function answerTurn(s){
  if(s?.variant!=='clash')return null;
  const uid=s.stage==='faceAnswer'?s.faceoffTurn:['control','steal'].includes(s.stage)?s.turn:null;
  if(!uid)return null;
- const duration=s.stage==='faceAnswer'?7000:s.stage==='control'?18000:20000;
- return {uid,key:[s.matchId,s.round,s.stage,uid,s.deadline].join(':'),since:s.deadline-duration};
+ const duration=CLASH_TIMING[s.stage];
+ return {uid,key:[s.matchId,s.round,s.stage,uid,s.deadline].join(':'),since:s.turnOpenedAt??s.deadline-duration};
 }
 export function safeDraft(text){text=String(text??'').slice(0,120);return containsBlockedLanguage(text)?'':text;}
 // Never choose an arbitrary player's draft. The current actor, match, board and
