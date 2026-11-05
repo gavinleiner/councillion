@@ -128,3 +128,10 @@ test('an uninterrupted six-player match reaches Fast Money and a finale through 
  actCourtGame(s,secret,s.turn,'fast',{values:s.fastIds.map(id=>CLASH_BY_ID.get(id).answers[1].label),pass:0,matchId:s.matchId},now);assert.equal(s.stage,'fastFirstReview');now=s.deadline;tickCourtGame(s,secret,now);assert.equal(s.stage,'fastReady');actCourtGame(s,secret,s.turn,'fast-ready',{},now+50);now=s.deadline;tickCourtGame(s,secret,now);assert.equal(s.deadline-now,25000);now+=50;
  actCourtGame(s,secret,s.turn,'fast',{values:s.fastIds.map(id=>CLASH_BY_ID.get(id).answers[0].label),pass:1,matchId:s.matchId},now);assert.equal(s.stage,'fastReview');assert.equal(s.event.type,'fast-review');assert.ok(!JSON.stringify(s).includes('"input"'));tickCourtGame(s,secret,s.deadline);assert.equal(s.stage,'finish');assert.equal(s.history.length,boards);assert.equal(s.result.fast.complete,true);
 });
+
+
+test('Feud directs distinct face-off, board, left/right bench, steal and Fast Money shots',async()=>{
+ const {feudCameraShot}=await import('../court-games-cinema.js'),base={players:[]};
+ for(const [stage,extra,shot]of [['lobby',{},'wide'],['faceoff',{},'faceoff'],['choice',{},'faceoff'],['survey',{},'board'],['control',{controlTeam:0},'team0'],['control',{controlTeam:1},'team1'],['steal',{stealTeam:0},'steal0'],['steal',{stealTeam:1},'steal1'],['fastReady',{},'fast-runner'],['fast',{},'fast-runner'],['fastReview',{},'fast-board'],['finish',{},'verdict']])assert.equal(feudCameraShot({...base,stage,...extra},10000),shot);
+ const s={...base,stage:'control',controlTeam:1,lastAnswer:{at:10000}};assert.equal(feudCameraShot(s,10500),'board');assert.equal(feudCameraShot(s,11200),'team1');
+});

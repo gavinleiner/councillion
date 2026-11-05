@@ -51,3 +51,11 @@ This is host-authoritative casual play, like the existing Puffer architecture: a
 - `node tests/court-games-network.mjs` against the database emulator on localhost:9000 with unchanged production rules: ten-player teams, full-room rejection, huddle privacy, steals, spectator admission, sealed estimates, duplicate acceptance, host hand-off, private Fast Money draft recovery, timer banking and clean rematch.
 - `node tests/database-security.mjs`: 71 existing authorization assertions.
 - Additional stage screenshots inspect lobby, face-off, control, steal, board result, Fast Money ready/read/reveal timing, both finales, estimate reveal and mobile layouts. A local-only visual director lives outside the repository; no public bot room or sign-in bypass is deployed.
+
+## Feud camera and menu follow-up
+
+`20261104-feud-cameras-v5` replaces the subtle whole-screen zoom with distinct shot compositions. The two face-off representatives move to large central stands; the controlling bench fills the foreground from the left or right with the readable board on the other side; the steal cuts to defending counsel; judgement briefly takes the board; Fast Money places its runner and host beside the answer form. The oblique environment plate reverses with the bench camera. The board, cast, physical stands and backdrop change together, while input/caret and clocks stay stable.
+
+The current Feud menu is a separate AI-created court foyer, with a live character preview, a matching stand, host/join panel and public room list. Final Figure and Puffer keep their existing layouts. The four generated court/foyer/counter assets and exact prompts are documented in [ART-NOTES.md](assets/court-games/ART-NOTES.md). Runtime WebP decoding was verified identical to each original PNG, including counter alpha.
+
+Validation includes the 28 court tests, all 40 board layouts in both team shots at three laptop sizes, the original four-size board checks, both hubs and numerical play checks, a continuous six-bot four-board match through both Fast Money runs, and captured wide/face-off/board/team/steal/bonus shots. Room rules, scoring and admitted question banks are unchanged in this cosmetic release; it remains compatible with v4 rooms.

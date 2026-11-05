@@ -2,10 +2,25 @@
 // turn order, guesses, clocks or score. Controls remain usable during every beat.
 import {buddySprite} from './party-view.js';
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+export function feudCameraShot(s,now=Date.now()){
+ if(s.stage==='finish')return 'verdict';
+ if(s.stage==='fastReview'||s.stage==='fastFirstReview')return 'fast-board';
+ if(['fastReady','fastRead','fast'].includes(s.stage))return 'fast-runner';
+ if(s.stage==='survey')return 'board';
+ if(['control','choice'].includes(s.stage)&&s.lastAnswer&&now-s.lastAnswer.at<1200)return 'board';
+ if(['faceoff','faceAnswer','choice'].includes(s.stage))return 'faceoff';
+ if(s.stage==='steal')return 'steal'+s.stealTeam;
+ if(s.stage==='control')return 'team'+s.controlTeam;
+ return 'wide';
+}
 export class CourtCinema{
- constructor(root){this.root=root;this.timers=new Set();this.layer=document.createElement('div');this.layer.className='cg-cinema-layer';this.layer.setAttribute('aria-hidden','true');this.layer.innerHTML='<div class="cg-puffer-host"><div class="cg-host-sprite"></div></div><aside class="cg-team-cut"></aside><div class="cg-strike-splash"></div><div class="cg-point-pop"></div><div class="cg-victory-glints">'+Array.from({length:18},(_,i)=>`<i style="--x:${6+i*89/18}%;--delay:${-i*.7}s;--duration:${5+i%5}s"></i>`).join('')+'</div>';root.append(this.layer);}
+ constructor(root){this.root=root;this.arena=root.closest('.court-game');this.timers=new Set();this.layer=document.createElement('div');this.layer.className='cg-cinema-layer';this.layer.setAttribute('aria-hidden','true');this.layer.innerHTML='<div class="cg-puffer-host"><div class="cg-host-sprite"></div></div><aside class="cg-team-cut"></aside><div class="cg-strike-splash"></div><div class="cg-point-pop"></div><div class="cg-victory-glints">'+Array.from({length:18},(_,i)=>`<i style="--x:${6+i*89/18}%;--delay:${-i*.7}s;--duration:${5+i%5}s"></i>`).join('')+'</div>';root.append(this.layer);this.runner=document.createElement('div');this.runner.className='cg-fast-runner';root.append(this.runner);this.curtain=document.createElement('div');this.curtain.className='cg-shot-cut';this.arena.append(this.curtain);}
  later(fn,ms){const timer=setTimeout(()=>{this.timers.delete(timer);fn();},ms);this.timers.add(timer);return timer;}
  celebrateFast(){const host=this.layer.querySelector('.cg-host-sprite');host.dataset.pose='cheer';this.layer.classList.add('is-fast-win');this.later(()=>{host.dataset.pose='idle';this.layer.classList.remove('is-fast-win');},5000);}
+ frame(s,now=Date.now()){
+  if(s.variant!=='clash')return;if(!this.preloaded){this.preloaded=true;for(const file of ['feud-court-ai-v1.webp','feud-bench-angle-ai-v1.webp','feud-counter-ai-v1.webp']){const img=new Image();img.src='assets/court-games/'+file;}}const shot=feudCameraShot(s,now);if(this.shot!==shot){this.shot=shot;this.arena.dataset.shot=shot;this.curtain.classList.remove('is-cutting');void this.curtain.offsetWidth;this.curtain.classList.add('is-cutting');this.later(()=>{if(this.shot===shot)this.curtain.classList.remove('is-cutting');},350);}
+  const runner=s.players.find(p=>p.id===s.turn);if(shot==='fast-runner'&&runner&&this.runnerId!==runner.id){this.runnerId=runner.id;this.runner.innerHTML=buddySprite(runner.buddy)+'<strong>'+esc(runner.name)+'</strong><small>FAST MONEY · RUN '+(s.fastPass+1)+'</small>';}
+ }
  update(s){
   const key=s.matchId+':'+s.event?.id;if(this.lastKey===key)return;this.lastKey=key;
   const fresh=s.lastAnswer&&this.lastAnswer!==s.matchId+':'+s.lastAnswer.id;if(fresh)this.lastAnswer=s.matchId+':'+s.lastAnswer.id;const event=fresh&&s.lastAnswer.points>0&&!['round-win','steal-win','finish'].includes(s.event?.type)?s.lastAnswer:s.event??{},type=event.type,team=event.team??s.players.find(p=>p.id===event.player)?.team??s.controlTeam;
@@ -25,5 +40,5 @@ export class CourtCinema{
   cut.innerHTML='<div class="cg-cut-heading">'+(team===0?'PETITIONERS':'RESPONDENTS')+'<small>'+({control:'THE BOARD IS YOURS',steal:'ONE CHANCE TO STEAL','steal-win':'STOLE THE BANK','round-win':'ROUND WON'}[type])+'</small></div><div class="cg-cut-crew">'+crew.map((p,i)=>`<div class="cg-cut-player" style="--i:${i}">${buddySprite(p.buddy)}<strong>${esc(p.name)}</strong></div>`).join('')+'</div>';
   cut.classList.remove('is-showing');void cut.offsetWidth;cut.classList.add('is-showing');this.cutTimer=setTimeout(()=>cut.classList.remove('is-showing'),2400);
  }
- dispose(){for(const t of this.timers)clearTimeout(t);clearTimeout(this.cutTimer);this.layer.remove();}
+ dispose(){for(const t of this.timers)clearTimeout(t);clearTimeout(this.cutTimer);this.layer.remove();this.runner.remove();this.curtain.remove();delete this.arena.dataset.shot;}
 }

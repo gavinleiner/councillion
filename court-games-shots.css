@@ -1,0 +1,93 @@
+/* Feud's own court set and shot blocking. Game inputs and clocks stay on HUD. */
+.cg-feud-architecture{display:none}
+.cg-arena[data-game="clash"] .cg-feud-architecture{display:block;position:absolute;inset:0;background:url('assets/court-games/feud-court-ai-v1.webp') center/100% 100%;image-rendering:pixelated;z-index:1;transform-origin:50% 55%;transition:transform .8s cubic-bezier(.2,.75,.25,1)}
+.cg-arena[data-game="clash"][data-shot] .cg-camera,.cg-arena[data-game="clash"][data-shot] .cg-set{transform:none!important}
+.cg-arena[data-game="clash"][data-shot] .cg-stage-wide{background-image:url('assets/water-open.png');background-size:100% 100%;transform:scale(1.06) translateX(var(--cg-pan,0%))!important;filter:brightness(.64);transition:transform 1.2s ease}
+.cg-arena[data-game="clash"][data-shot] .cg-stage-shade{z-index:2;background:linear-gradient(#061c2b44,transparent 25%,transparent 83%,#061a2d66)}
+.cg-arena[data-game="clash"] .cg-shot-cut{position:absolute;inset:0;z-index:12;pointer-events:none;background:#041625;opacity:0}
+.cg-arena[data-game="clash"] .cg-shot-cut.is-cutting{animation:cg-shot-cut .32s ease-out both}
+@keyframes cg-shot-cut{0%{opacity:.24}100%{opacity:0}}
+.cg-fast-runner{display:none}
+@media(min-width:761px){
+ .cg-arena[data-game="clash"][data-shot] .cg-board{left:50%;top:18vh;width:46%;padding:15px 18px 8px;background:#0a253cf5;border:4px solid #3f6477;border-top-color:#78918c;box-shadow:0 5px #051a2d,0 0 0 2px #142f44,inset 0 1px #a2a17a;transform:translateX(-50%);transition:left .72s cubic-bezier(.2,.75,.2,1),width .72s,top .72s;z-index:4}
+ .cg-arena[data-game="clash"][data-shot] .cg-board h2{font-size:clamp(22px,1.85vw,28px)}
+ .cg-arena[data-game="clash"][data-shot] .cg-bench{top:61vh;width:28%;transition:left .8s,right .8s,top .8s,width .8s,opacity .5s;opacity:1}
+ .cg-arena[data-game="clash"][data-shot] .bench-0{left:2%;right:auto}.cg-arena[data-game="clash"][data-shot] .bench-1{left:auto;right:2%}
+ .cg-arena[data-game="clash"][data-shot] .cg-bench>header{top:-35px;left:0;width:100%;font-size:16px;padding:5px 10px;background:#0b293beb;border-bottom:2px solid #527383;height:31px}
+ .cg-arena[data-game="clash"][data-shot] .cg-team-players{display:flex;justify-content:center;align-items:end;gap:0}
+ .cg-arena[data-game="clash"][data-shot] .cg-empty-seat{display:none}
+ .cg-arena[data-game="clash"][data-shot] .cg-player{flex:1;max-width:110px;min-width:0}
+ .cg-arena[data-game="clash"][data-shot] .cg-avatar{height:90px;min-height:0}
+ .cg-arena[data-game="clash"][data-shot] .cg-avatar>:is(img,svg){width:85px;height:85px;max-width:100%;transition:width .6s,height .6s}
+ .cg-arena[data-game="clash"][data-shot] .cg-bench:after{top:80px;height:105px;left:-3%;right:-3%}
+ .cg-arena[data-game="clash"][data-shot] .cg-player>strong{font-size:17px;position:relative;z-index:1;margin:3px 0 0;background:#0a273bea;padding:4px 2px}
+ .cg-arena[data-game="clash"][data-shot] .cg-player>span{font-size:8px;margin-top:4px}
+ .cg-arena[data-game="clash"][data-shot] .cg-puffer-host{left:50%;bottom:21vh;width:100px;height:100px;transition:left .75s,bottom .75s,opacity .4s}
+ .cg-arena[data-game="clash"][data-shot] .cg-puffer-host:after{content:'';position:absolute;left:-12%;right:-12%;top:86px;height:63px;background:url('assets/court-games/feud-counter-ai-v1.webp') center/100% 100%;image-rendering:pixelated;z-index:-1}
+ .cg-arena[data-game="clash"][data-shot] #cg-controls{width:45%;bottom:3vh}
+ .cg-arena[data-game="clash"][data-shot] .cg-event{bottom:17vh;width:40%;font-size:17px}
+ .cg-arena[data-game="clash"][data-shot] .cg-director{top:12vh}
+ /* Two representatives and their shared stand fill the foreground. */
+ .cg-arena[data-game="clash"][data-shot="faceoff"] .cg-feud-architecture{transform:scale(1.14) translateY(-2%)}
+ .cg-arena[data-game="clash"][data-shot="faceoff"] .cg-bench{opacity:0;pointer-events:none}
+ .cg-arena[data-game="clash"][data-shot="faceoff"] .cg-faceoff-counsel>div{left:36%;bottom:25vh;width:190px}
+ .cg-arena[data-game="clash"][data-shot="faceoff"] .cg-faceoff-counsel>.faceoff-1{left:64%}
+ .cg-arena[data-game="clash"][data-shot="faceoff"] .cg-faceoff-counsel :is(img,svg){width:132px;height:132px;image-rendering:pixelated}
+ .cg-arena[data-game="clash"][data-shot="faceoff"] .cg-faceoff-counsel>div:after{top:119px;height:80px;left:-2%;right:-2%}
+ .cg-arena[data-game="clash"][data-shot="faceoff"] .cg-faceoff-counsel strong{font-size:22px;background:#09243ce8;margin-top:0;padding:4px}
+ .cg-arena[data-game="clash"][data-shot="faceoff"] .cg-faceoff-counsel small{font-size:11px}
+ .cg-arena[data-game="clash"][data-shot="faceoff"] .cg-puffer-host{left:15%;bottom:20vh;width:105px;height:105px}
+ .cg-arena[data-game="clash"][data-shot]:not([data-shot="faceoff"]) .cg-faceoff-counsel{visibility:hidden}
+ /* Alternate bench angles: the cast moves into the foreground; the board
+    remains readable on the opposite side, like the show's board insert. */
+ .cg-arena[data-game="clash"][data-shot^="team"],.cg-arena[data-game="clash"][data-shot^="steal"]{--cg-pan:-4%}
+ .cg-arena[data-game="clash"][data-shot$="1"]{--cg-pan:4%}
+ .cg-arena[data-game="clash"][data-shot^="team"] .cg-feud-architecture,.cg-arena[data-game="clash"][data-shot^="steal"] .cg-feud-architecture{transform:scale(1.25) translateX(var(--cg-pan))}
+ .cg-arena[data-game="clash"][data-shot$="0"] .cg-board{left:75%;width:43%;top:20vh}
+ .cg-arena[data-game="clash"][data-shot$="1"] .cg-board{left:25%;width:43%;top:20vh}
+ .cg-arena[data-game="clash"][data-shot$="0"] .bench-0{left:3%;top:43vh;width:47%}
+ .cg-arena[data-game="clash"][data-shot$="1"] .bench-1{right:3%;top:43vh;width:47%}
+ .cg-arena[data-game="clash"][data-shot$="0"] .bench-1{right:-48%;opacity:0}
+ .cg-arena[data-game="clash"][data-shot$="1"] .bench-0{left:-48%;opacity:0}
+ .cg-arena[data-game="clash"][data-shot$="0"] .bench-0 .cg-player,.cg-arena[data-game="clash"][data-shot$="1"] .bench-1 .cg-player{max-width:150px}
+ .cg-arena[data-game="clash"][data-shot$="0"] .bench-0 .cg-avatar,.cg-arena[data-game="clash"][data-shot$="1"] .bench-1 .cg-avatar{height:140px}
+ .cg-arena[data-game="clash"][data-shot$="0"] .bench-0 .cg-avatar>:is(img,svg),.cg-arena[data-game="clash"][data-shot$="1"] .bench-1 .cg-avatar>:is(img,svg){width:126px;height:126px}
+ .cg-arena[data-game="clash"][data-shot$="0"] .bench-0:after,.cg-arena[data-game="clash"][data-shot$="1"] .bench-1:after{top:125px;height:130px}
+ .cg-arena[data-game="clash"][data-shot$="0"] .bench-0 .cg-player>strong,.cg-arena[data-game="clash"][data-shot$="1"] .bench-1 .cg-player>strong{font-size:21px;padding:5px}
+ .cg-arena[data-game="clash"][data-shot^="steal"] .cg-player.is-active .cg-avatar>:is(img,svg){width:145px;height:145px}
+ .cg-arena[data-game="clash"][data-shot^="steal"] .cg-player.is-active>strong{color:#f0d08b}
+ .cg-arena[data-game="clash"][data-shot="board"] .cg-board{left:50%;top:17vh;width:56%}
+ .cg-arena[data-game="clash"][data-shot="board"] .cg-bench{opacity:.32}
+ .cg-arena[data-game="clash"][data-shot="board"] .cg-feud-architecture{transform:scale(1.08)}
+ .cg-arena[data-game="clash"][data-shot="board"] .cg-puffer-host{opacity:.5}
+ /* Fast Money is a separate runner-and-host composition, followed by the
+    large two-column survey reveal. */
+ .cg-arena[data-game="clash"][data-shot^="fast"] .cg-bench{opacity:0;pointer-events:none}
+ .cg-arena[data-game="clash"][data-shot^="fast"] .cg-feud-architecture{transform:scale(1.13);filter:brightness(.65)}
+ .cg-arena[data-game="clash"][data-shot="fast-runner"] .cg-fast-card{position:absolute;left:60%;top:17vh;transform:translateX(-50%);width:54%;max-width:none;margin:0;padding:20px 25px}
+ .cg-arena[data-game="clash"][data-shot="fast-runner"] .cg-fast-runner{display:flex;position:absolute;left:16%;top:44vh;flex-direction:column;align-items:center;width:170px;transform:translateX(-50%);z-index:5}
+ .cg-arena[data-game="clash"][data-shot="fast-runner"] .cg-fast-ready>:is(img,svg){display:none}
+ .cg-fast-runner>:is(img,svg){height:140px;width:150px;object-fit:contain;image-rendering:pixelated;animation:cg-buddy-idle 6s ease-in-out infinite}
+ .cg-fast-runner:after{content:'';position:absolute;top:124px;width:190px;height:105px;background:url('assets/court-games/feud-counter-ai-v1.webp') center/100% 100%;z-index:-1}
+ .cg-fast-runner strong{font-size:24px;color:#ead79b;background:#0b2a3cf0;padding:5px 12px;margin-top:0}.cg-fast-runner small{font-size:11px;letter-spacing:1px;margin-top:8px;color:#b2ccd0}
+ .cg-arena[data-game="clash"][data-shot="fast-runner"] .cg-puffer-host{left:30%;bottom:12vh;width:85px;height:85px}
+ .cg-arena[data-game="clash"][data-shot="fast-board"] .cg-puffer-host{left:12%;bottom:20vh;width:95px;height:95px}
+ .cg-arena[data-game="clash"][data-shot="fast-board"] .cg-fast-card{top:15vh;margin-top:0}
+ .cg-arena[data-game="clash"][data-shot="verdict"] .cg-feud-architecture{transform:scale(1.06);filter:brightness(.8)}
+ .cg-arena[data-game="clash"][data-shot] .cg-huddle[open]{position:relative;bottom:auto;left:auto;width:100%;padding:9px 12px;max-height:160px;overflow:auto}
+}
+@media(max-width:760px){.cg-arena[data-game="clash"] .cg-feud-architecture{background-size:auto 100dvh;background-position:center top}.cg-arena[data-game="clash"] .cg-stage-wide{background-image:url('assets/water-open.png')}}
+@media(prefers-reduced-motion:reduce){.cg-arena[data-game="clash"] .cg-feud-architecture,.cg-arena[data-game="clash"][data-shot] .cg-stage-wide{transform:none!important;transition:none}.cg-arena[data-game="clash"][data-shot] .cg-board,.cg-arena[data-game="clash"][data-shot] .cg-bench{transition:none}.cg-shot-cut.is-cutting{animation:none!important}.cg-fast-runner>:is(img,svg){animation:none}}
+/* Final generated environment plates and alpha-preserving counter sprite. */
+.cg-arena[data-game="clash"] .cg-feud-architecture{background-image:url('assets/court-games/feud-court-ai-v1.webp')}
+.cg-arena[data-game="clash"] .cg-feud-architecture:after{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 15.5% 31%,#f9d16a33,transparent 9%),radial-gradient(ellipse at 86% 31%,#f9d16a2b,transparent 9%);mix-blend-mode:screen;animation:cg-court-lanterns 7s ease-in-out infinite alternate;pointer-events:none}
+@keyframes cg-court-lanterns{0%{opacity:.3}45%{opacity:.62}60%{opacity:.48}100%{opacity:.8}}
+@media(min-width:761px){
+ .cg-arena[data-game="clash"][data-shot^="team"] .cg-feud-architecture,.cg-arena[data-game="clash"][data-shot^="steal"] .cg-feud-architecture{background-image:url('assets/court-games/feud-bench-angle-ai-v1.webp');transform:scale(1.04) translateX(-1%)}
+ .cg-arena[data-game="clash"][data-shot="team1"] .cg-feud-architecture,.cg-arena[data-game="clash"][data-shot="steal1"] .cg-feud-architecture{transform:scale(-1.04,1.04) translateX(-1%)}
+ .cg-arena[data-game="clash"][data-shot] .cg-bench:after{background-image:url('assets/court-games/feud-counter-ai-v1.webp');background-size:102.5% 198.9%;background-position:51% 55.6%;background-repeat:no-repeat}
+ .cg-arena[data-game="clash"][data-shot] .cg-faceoff-counsel>div:after,.cg-arena[data-game="clash"][data-shot] .cg-puffer-host:after,.cg-arena[data-game="clash"][data-shot] .cg-fast-runner:after{background-image:url('assets/court-games/feud-counter-ai-v1.webp');background-size:305% 198.9%;background-position:50% 55.6%;background-repeat:no-repeat}
+}
+@media(prefers-reduced-motion:reduce){.cg-arena[data-game="clash"] .cg-feud-architecture:after{animation:none;opacity:.45}}
+
+.cg-arena[data-game="clash"][data-shot^="fast"] .cg-point-pop{display:none}

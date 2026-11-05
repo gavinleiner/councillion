@@ -1,0 +1,82 @@
+[
+  {
+    "asset": "assets/court-games/feud-court-ai-v1.webp",
+    "original": "assets/court-games/feud-court-ai-v1.png",
+    "generatedSource": "/Users/gavin/.codex/generated_images/01a160d5-54c6-7e42-b905-7ed9a7f03a28/exec-216f8e60-bc25-405b-9e7b-f6e045edaec5.png",
+    "size": [
+      1672,
+      941
+    ],
+    "alpha": [
+      255,
+      255
+    ],
+    "visibleBounds": [
+      0,
+      0,
+      1672,
+      941
+    ],
+    "lossless": true
+  },
+  {
+    "asset": "assets/court-games/feud-bench-angle-ai-v1.webp",
+    "original": "assets/court-games/feud-bench-angle-ai-v1.png",
+    "generatedSource": "/Users/gavin/.codex/generated_images/01a160d5-54c6-7e42-b905-7ed9a7f03a28/exec-7a1b3e6e-a663-46de-913c-dfa1848a9322.png",
+    "size": [
+      1672,
+      941
+    ],
+    "alpha": [
+      255,
+      255
+    ],
+    "visibleBounds": [
+      0,
+      0,
+      1672,
+      941
+    ],
+    "lossless": true
+  },
+  {
+    "asset": "assets/court-games/feud-foyer-ai-v1.webp",
+    "original": "assets/court-games/feud-foyer-ai-v1.png",
+    "generatedSource": "/Users/gavin/.codex/generated_images/01a160d5-54c6-7e42-b905-7ed9a7f03a28/exec-d60e17b5-ba05-4a85-8a39-5fc0271e7267.png",
+    "size": [
+      1672,
+      941
+    ],
+    "alpha": [
+      255,
+      255
+    ],
+    "visibleBounds": [
+      0,
+      0,
+      1672,
+      941
+    ],
+    "lossless": true
+  },
+  {
+    "asset": "assets/court-games/feud-counter-ai-v1.webp",
+    "original": "assets/court-games/feud-counter-ai-v1.png",
+    "generatedSource": "/Users/gavin/.codex/generated_images/01a160d5-54c6-7e42-b905-7ed9a7f03a28/exec-949c47a3-c8c5-4ba6-89b4-033ef3507fc5.png",
+    "size": [
+      2172,
+      724
+    ],
+    "alpha": [
+      0,
+      255
+    ],
+    "visibleBounds": [
+      0,
+      0,
+      2156,
+      658
+    ],
+    "lossless": true
+  }
+]

@@ -23,3 +23,16 @@ The final Feud implementation uses the existing approved `assets/party-court-v2.
 - `assets/court-games/counsel-bench.svg`: a native, pixel-aligned slate bench using Puffer's palette, with restrained scales detail.
 
 Interactive labels, controls, board answers, one-at-a-time Fast Money questions, private first-run review, camera movement, seals and diving crews are DOM/canvas components. Final Figure's changing underwater biomes reuse the existing Daily ocean renderer and artwork. There is no runtime image-generation dependency.
+
+## Feud camera and menu update — `20261104-feud-cameras-v5`
+
+Four new assets were generated with the built-in `image_gen` tool using the approved pixel ocean artwork, the layout prototype, and then the new wide court as references. These replace the flat court prototype and the reused Puffer background in Feud. No runtime generation is required.
+
+- `feud-court-ai-v1.png` / `.webp`: frontal submerged court, with an empty wall and stage for the live board and cast.
+- `feud-bench-angle-ai-v1.png` / `.webp`: oblique left-bench view of the same court; the right-bench shot mirrors the environmental plate while keeping text and characters upright.
+- `feud-foyer-ai-v1.png` / `.webp`: separate menu entrance with curved steps and court archways.
+- `feud-counter-ai-v1.png` / `.webp`: transparent slate-and-gold counsel stand. CSS displays its visible region without editing or discarding the original alpha. Small stands use the center panel; team benches use the full stand.
+
+The exact prompts are saved in [feud-camera-prompts-v5.json](feud-camera-prompts-v5.json). Original generated PNGs are retained beside lossless WebP runtime copies. [feud-camera-art.json](../../data-snapshots/court-games/feud-camera-art.json) records dimensions, visible alpha bounds, source files, and byte-for-byte decoded pixel verification.
+
+Camera direction changes the actual environment plate, cast blocking, board placement and stand scale: wide establishing view; two-person face-off; left/right team and steal views; centered survey judgement; runner-and-host Fast Money view; large two-column review; and the finale. The live input is outside those moving set elements. Reduced motion keeps the framing changes immediate and removes pans, light pulses and transitions.
