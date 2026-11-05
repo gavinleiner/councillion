@@ -18,3 +18,4 @@
 .cg-fast-runner .cg-counsel-nameplate>svg{width:17px;height:17px}
 .cg-faceoff-counsel .cg-counsel-nameplate{background:#09243ce8;padding:4px;max-width:100%;margin-top:0}
 .cg-arena[data-game="clash"][data-shot] .cg-faceoff-counsel .cg-counsel-nameplate strong{color:var(--counsel-accent,#d4e2d5);background:none;padding:0;font-size:22px}
+.cg-arena[data-game="clash"][data-shot] .cg-faceoff-counsel .cg-counsel-nameplate>.cg-court-seal{width:15px;height:15px;min-height:0}
