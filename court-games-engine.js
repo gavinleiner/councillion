@@ -2,7 +2,8 @@ import {shuffle} from './question-selection.js';
 import {matchAnswer,normalize,resolveAnswer} from './answer-matching.js';
 import {CLASH_BOARDS,CLASH_BY_ID,FIGURE_QUESTIONS,FIGURE_BY_ID} from './court-games-data.js';
 import {courtSettings} from './court-games-settings.js';
-export const COURT_GAMES_BUILD='20261105-court-rebuild-v11';
+import {figureDeck} from './court-games-figure-deck.js';
+export const COURT_GAMES_BUILD='20261105-figure-curated-v12';
 export const GAME_MODES={clash:{name:'Counsel Clash',subtitle:'TEAM FEUD',seats:10},figure:{name:'Final Figure',subtitle:'CLOSEST ANSWER WINS',seats:8}};
 export const CLASH_TIMING={buzz:20000,faceAnswer:20000,choice:30000,control:30000,steal:40000,survey:1600,handoff:4200,roundBreak:45000};
 const live=s=>s.players.filter(p=>!p.spectator&&p.connected!==false);
@@ -18,12 +19,10 @@ export function startCourtGame(s,now=Date.now(),rng=Math.random){
  if(s.variant==='clash'&&(!ready.some(p=>p.team===0)||!ready.some(p=>p.team===1)))throw Error('Each team needs at least one ready player.');
  if(s.variant==='clash'&&[0,1].some(t=>ready.filter(p=>p.team===t).length>5))throw Error('Each bench has five seats.');
  s.matchId=crypto.randomUUID();s.players=s.players.map(p=>({...p,score:0,spectator:!ready.some(r=>r.id===p.id)}));s.teamScores=[0,0];s.round=0;s.history=[];s.locked={};s.secretEpoch=s.matchId;delete s.result;delete s.roundResult;delete s.fast;delete s.board;delete s.lastAnswer;delete s.judgement;
- s.questionIds=shuffle((s.variant==='clash'?CLASH_BOARDS:FIGURE_QUESTIONS).map(q=>q.id),rng);
+ if(s.variant==='clash')s.questionIds=shuffle(CLASH_BOARDS.map(q=>q.id),rng);
  if(s.variant==='figure'){
-  // Repeatedly draw from the least-used available subjects. Longer custom
-  // expeditions keep the same variety and never repeat a question in a match.
-  s.settings={...s.settings,...courtSettings('figure',s.settings)};const remaining=s.questionIds.slice(),selected=[],counts={};
-  while(remaining.length){const least=Math.min(...remaining.map(id=>counts[FIGURE_BY_ID.get(id).category]??0)),i=remaining.findIndex(id=>(counts[FIGURE_BY_ID.get(id).category]??0)===least),id=remaining.splice(i,1)[0],category=FIGURE_BY_ID.get(id).category;selected.push(id);counts[category]=(counts[category]??0)+1;}s.questionIds=selected;
+  s.settings={...s.settings,...courtSettings('figure',s.settings)};
+  s.questionIds=figureDeck(FIGURE_QUESTIONS,rng).slice(0,s.settings.rounds??6);
  }
  for(const key of ['resume','answerResult','briefingReady','readReady','breakReady'])delete s[key];
  if(s.variant==='clash'){s.briefingReady={};stage(s,'briefing',now,0);emit(s,'briefing','A quick practice before we open the first board.',now);}else{stage(s,'intro',now,3200);emit(s,'intro','Court is in session.',now);}return true;
@@ -64,15 +63,15 @@ export function parseEstimate(input){
  const clean=String(input??'').trim().replaceAll(',','').replace(/\s+/g,'');const m=clean.match(/^([+-]?(?:\d+(?:\.\d*)?|\.\d+)(?:e[+-]?\d+)?)([kmb])?$/i);if(!m)return null;
  const n=Number(m[1])*({k:1e3,m:1e6,b:1e9}[m[2]?.toLowerCase()]??1);return Number.isFinite(n)&&n>=0&&n<=1e15?n:null;
 }
-export function accuracyScore(guess,target,scale=1){if(!Number.isFinite(guess)||!Number.isFinite(target)||!Number.isFinite(scale)||scale<=0)return 0;return Math.max(0,Math.min(1000,Math.round(1000*Math.exp(-2.2*Math.abs(guess-target)/Math.max(Math.abs(target),scale)))));}
+export function accuracyScore(guess,target,scale=1,scoringSpan=null){if(!Number.isFinite(guess)||!Number.isFinite(target)||!Number.isFinite(scale)||scale<=0||(scoringSpan!==null&&(!Number.isFinite(scoringSpan)||scoringSpan<=0)))return 0;return Math.max(0,Math.min(1000,Math.round(1000*Math.exp(-2.2*Math.abs(guess-target)/(scoringSpan??Math.max(Math.abs(target),scale))))));}
 function nextFigure(s,now){s.round++;const q=FIGURE_BY_ID.get(s.questionIds[s.round-1]);s.question={id:q.id,prompt:q.prompt,unit:q.unit,category:q.category};s.locked={};s.advanceReady={};delete s.roundResult;stage(s,'estimate',now,(s.settings.seconds??30)*1000);emit(s,'estimate','One number. Seal your answer.',now);}
 function revealFigure(s,secret,now){
  const before=s.players.filter(p=>!p.spectator).map(p=>({id:p.id,score:p.score}));
  const q=FIGURE_BY_ID.get(s.question.id),rows=s.players.filter(p=>!p.spectator).map(p=>{const v=secret.estimates?.[p.id]?.round===s.round?secret.estimates[p.id].value:null;return {id:p.id,guess:v,error:v===null?null:Math.abs(v-q.answer)};}),valid=rows.filter(r=>r.guess!==null),least=valid.length?Math.min(...valid.map(r=>r.error)):null;
- for(const r of rows){r.closest=r.error!==null&&Math.abs(r.error-least)<=Math.max(1e-10,Math.abs(q.answer)*1e-12);r.accuracy=r.guess===null?0:accuracyScore(r.guess,q.answer,q.scale??1);r.bonus=r.closest?200:0;r.points=r.accuracy+r.bonus;s.players.find(p=>p.id===r.id).score+=r.points;}
+ for(const r of rows){r.closest=r.error!==null&&Math.abs(r.error-least)<=Math.max(1e-10,Math.abs(q.answer)*1e-12);r.accuracy=r.guess===null?0:accuracyScore(r.guess,q.answer,q.scale??1,q.scoringSpan??null);r.bonus=r.closest?200:0;r.points=r.accuracy+r.bonus;s.players.find(p=>p.id===r.id).score+=r.points;}
  for(const r of rows){r.before=before.find(p=>p.id===r.id).score;r.total=s.players.find(p=>p.id===r.id).score;r.rankBefore=1+before.filter(p=>p.score>r.before).length;r.rankAfter=1+s.players.filter(p=>!p.spectator&&p.score>r.total).length;}
  const leaders=s.players.filter(p=>!p.spectator&&p.score===Math.max(...s.players.filter(p=>!p.spectator).map(p=>p.score))).map(p=>p.id);
- s.advanceReady={};s.roundResult={answer:q.answer,unit:q.unit,explanation:q.explanation,source:q.source,sourceTitle:q.sourceTitle,leaders,rows:rows.sort((a,b)=>(a.error??Infinity)-(b.error??Infinity))};s.history.push({round:s.round,id:q.id,...s.roundResult});stage(s,'reveal',now,14000);emit(s,'reveal','Unseal the estimates. Closest counsel earns +200.',now);
+ s.advanceReady={};s.roundResult={answer:q.answer,unit:q.unit,...(q.scoringSpan?{scoringSpan:q.scoringSpan}:{}),explanation:q.explanation,source:q.source,sourceTitle:q.sourceTitle,leaders,rows:rows.sort((a,b)=>(a.error??Infinity)-(b.error??Infinity))};s.history.push({round:s.round,id:q.id,...s.roundResult});stage(s,'reveal',now,14000);emit(s,'reveal','Unseal the estimates. Closest counsel earns +200.',now);
 }
 export function actCourtGame(s,secret,uid,action,payload={},now=Date.now()){
  const p=payload.timeout?s.players.find(p=>p.id===uid&&!p.spectator):actor(s,uid);if(!p)throw Error('Only players in this game can act.');

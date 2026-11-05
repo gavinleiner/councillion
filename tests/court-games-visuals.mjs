@@ -24,12 +24,14 @@ try {
   const view=new CourtGameView(document.querySelector('#app'),{mode:'figure',identity:()=>null,preferences:{},signIn(){}});
   window.figureFixture={view,E,D,s,secret,session};view.render(s,session);window.estimateBefore=document.querySelector('#cg-estimate');
  });
+ const cpu=await c.newCDPSession(p);await cpu.send('Emulation.setCPUThrottlingRate',{rate:4});
  await p.locator('#cg-estimate').fill('12345');await p.locator('#cg-estimate').evaluate(n=>n.setSelectionRange(2,2));
  await p.evaluate(()=>{const {view,s,session}=window.figureFixture;s.locked.p1=true;s.revision++;view.render(s,session);});
  assert.equal(await p.evaluate(()=>document.querySelector('#cg-estimate')===window.estimateBefore&&document.activeElement===window.estimateBefore&&document.activeElement.selectionStart===2),true,'another sealed guess must not recreate the active input');
+ assert.match(await p.locator('[data-estimate-preview]').innerText(),/12,345/);await cpu.send('Emulation.setCPUThrottlingRate',{rate:1});
  assert.equal(await p.locator('#cg-estimate').inputValue(),'12345');assert.match(await p.locator('.cg-seal-progress>span').innerText(),/1 \/ 8/);
  assert.equal(await p.locator('.cg-reveal-rows').count(),0,'other guesses stay hidden');
- for(const viewport of [{width:1366,height:768},{width:1280,height:720},{width:1024,height:768},{width:390,height:844}]){
+ for(const viewport of [{width:1366,height:768},{width:1366,height:650},{width:1280,height:720},{width:1280,height:600},{width:1024,height:768},{width:1024,height:600},{width:390,height:844}]){
   await p.setViewportSize(viewport);await p.evaluate(()=>{
    const {view,s,session,D}=window.figureFixture;
    for(const q of D.FIGURE_QUESTIONS){s.question={id:q.id,prompt:q.prompt,unit:q.unit,category:q.category};s.revision++;view.render(s,session);
@@ -53,7 +55,7 @@ try {
  await p.evaluate(()=>{const {view,s,session}=window.figureFixture;s.players[0].score=4500;s.revision++;view.render(s,session);});await p.waitForTimeout(120);
  assert.equal(await p.evaluate(()=>window.figureFixture.view.voyage.ocean.displayedDepth),4500);
  await p.evaluate(()=>{const {view}=window.figureFixture,o=view.voyage.ocean,canvas=view.voyage.canvas;view.destroy();if(!o.suspended||canvas.isConnected||o.raf!==null)throw Error('Voyage renderer leaked after leaving');});
- assert.deepEqual(errors,[]);console.log('PASS: distinct hubs at three sizes; character visibility; stable private estimate input; all 210 prompt layouts at four sizes; real 0–4000m descent and hadal art; reduced motion; renderer cleanup.');
+ assert.deepEqual(errors,[]);console.log('PASS: distinct hubs at three sizes; character visibility; stable private estimate input; all 1001 prompt layouts at seven sizes; real 0–4000m descent and hadal art; reduced motion; renderer cleanup.');
  await c.close();
 } finally {await browser.close();}
 
