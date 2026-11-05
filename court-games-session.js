@@ -1,5 +1,5 @@
 import {CLASH_BY_ID} from './court-games-data.js';
-import {createCourtGame,startCourtGame,tickCourtGame,actCourtGame,GAME_MODES,COURT_GAMES_BUILD} from './court-games-engine.js';
+import {createCourtGame,startCourtGame,tickCourtGame,actCourtGame,canCourtHuddle,GAME_MODES,COURT_GAMES_BUILD} from './court-games-engine.js';
 import {waitForDatabaseConnection,databaseClockOffset,partyConnectionError,permissionDenied} from './party-connection.js';
 import {validateDisplayName,validateChat,safeDisplayName} from './moderation.js';
 import {requirePartyIdentity} from './party-access.js';
@@ -72,7 +72,7 @@ export class CourtGameSession{
  }
  async broadcast(extra={}){
   if(!this.host||this.closed)return;
-  if(this.state.stage==='fastFirstReview'){
+  if(this.state.stage==='fastFirstReview'||(this.state.fastPass===1&&['fastReady','fastRead','fast'].includes(this.state.stage))){
    const first=this.secret.fast?.[this.state.fastPlayers[0]];
    if(first)for(const id of Object.keys(this.members))if(id!==this.state.fastPlayers[1])extra['responses/'+id+'/fastAudience']={matchId:this.state.matchId,rows:this.state.fastIds.map((qid,i)=>({prompt:CLASH_BY_ID.get(qid).prompt,label:first[i].label,points:first[i].points}))};
   }
@@ -93,7 +93,7 @@ export class CourtGameSession{
     if(this.mode!=='clash'||!['lobby','finish'].includes(this.state.stage))throw Error('Teams lock when the match begins.');
     const target=Number(r.patch.team);if(![0,1].includes(target))throw Error('Choose a bench.');if(this.state.players.filter(p=>p.id!==uid&&p.team===target&&p.connected).length>=5)throw Error('That bench is full.');p.team=target;this.state.revision++;
    }else if(a==='huddle'){
-    if(this.mode!=='clash'||p.spectator||!['faceoff','faceAnswer','choice','control','steal'].includes(this.state.stage))throw Error('The huddle opens during a board.');
+    if(!canCourtHuddle(this.state,uid))throw Error('Only the defending bench may confer for its steal.');
     if(r.patch?.matchId!==this.state.matchId||r.patch?.round!==this.state.round)throw Error('That suggestion belongs to an earlier board.');
     const text=validateChat(r.text).slice(0,60);if(!text)throw Error('Enter a short suggestion.');
     for(const mate of this.state.players.filter(q=>q.team===p.team&&!q.spectator))extra['responses/'+mate.id+'/huddle/'+uid]={name:p.name,text,round:this.state.round,at:this.now()};

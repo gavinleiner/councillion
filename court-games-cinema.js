@@ -5,6 +5,7 @@ const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&
 export class CourtCinema{
  constructor(root){this.root=root;this.timers=new Set();this.layer=document.createElement('div');this.layer.className='cg-cinema-layer';this.layer.setAttribute('aria-hidden','true');this.layer.innerHTML='<div class="cg-puffer-host"><div class="cg-host-sprite"></div></div><aside class="cg-team-cut"></aside><div class="cg-strike-splash"></div><div class="cg-point-pop"></div><div class="cg-victory-glints">'+Array.from({length:18},(_,i)=>`<i style="--x:${6+i*89/18}%;--delay:${-i*.7}s;--duration:${5+i%5}s"></i>`).join('')+'</div>';root.append(this.layer);}
  later(fn,ms){const timer=setTimeout(()=>{this.timers.delete(timer);fn();},ms);this.timers.add(timer);return timer;}
+ celebrateFast(){const host=this.layer.querySelector('.cg-host-sprite');host.dataset.pose='cheer';this.layer.classList.add('is-fast-win');this.later(()=>{host.dataset.pose='idle';this.layer.classList.remove('is-fast-win');},5000);}
  update(s){
   const key=s.matchId+':'+s.event?.id;if(this.lastKey===key)return;this.lastKey=key;
   const fresh=s.lastAnswer&&this.lastAnswer!==s.matchId+':'+s.lastAnswer.id;if(fresh)this.lastAnswer=s.matchId+':'+s.lastAnswer.id;const event=fresh&&s.lastAnswer.points>0&&!['round-win','steal-win','finish'].includes(s.event?.type)?s.lastAnswer:s.event??{},type=event.type,team=event.team??s.players.find(p=>p.id===event.player)?.team??s.controlTeam;
