@@ -1,3 +1,4 @@
+import {CLASH_BY_ID} from './court-games-data.js';
 import {createCourtGame,startCourtGame,tickCourtGame,actCourtGame,GAME_MODES,COURT_GAMES_BUILD} from './court-games-engine.js';
 import {waitForDatabaseConnection,databaseClockOffset,partyConnectionError,permissionDenied} from './party-connection.js';
 import {validateDisplayName,validateChat,safeDisplayName} from './moderation.js';
@@ -70,7 +71,12 @@ export class CourtGameSession{
   if(before!==JSON.stringify(this.state.players)){this.state.revision++;await this.broadcast();}
  }
  async broadcast(extra={}){
-  if(!this.host||this.closed)return;const changes={state:clone(this.state),'meta/phase':this.state.phase,...extra};await this.c.update(this.path(),changes);this.render();await this.publish();
+  if(!this.host||this.closed)return;
+  if(this.state.stage==='fastFirstReview'){
+   const first=this.secret.fast?.[this.state.fastPlayers[0]];
+   if(first)for(const id of Object.keys(this.members))if(id!==this.state.fastPlayers[1])extra['responses/'+id+'/fastAudience']={matchId:this.state.matchId,rows:this.state.fastIds.map((qid,i)=>({prompt:CLASH_BY_ID.get(qid).prompt,label:first[i].label,points:first[i].points}))};
+  }
+  const changes={state:clone(this.state),'meta/phase':this.state.phase,...extra};await this.c.update(this.path(),changes);this.render();await this.publish();
  }
  async publish(){if(!this.host||this.closed)return;const path=this.c.ref(this.c.db,'directory/'+this.code);if(this.meta.isPrivate){await this.c.remove(path);return;}await this.c.onDisconnect(path).remove();return this.c.set(path,{protocol:4,catalogBuild:build(this.mode),mode:'court-game',game:this.mode,format:'classic',hostName:this.meta.hostName,count:this.state.players.filter(p=>p.connected&&!p.spectator).length,seats:GAME_MODES[this.mode].seats,phase:this.state.phase,updatedAt:this.c.serverTimestamp()});}
  async process(uid,r){
@@ -95,7 +101,7 @@ export class CourtGameSession{
     if(!['nice','close','clutch','ready'].includes(r.patch.reaction))throw Error('Choose a reaction.');
     if(this.now()-(this.lastReaction?.[uid]??0)<2500)throw Error('Give the reaction a moment.');this.lastReaction??={};this.lastReaction[uid]=this.now();this.state.reaction={id:crypto.randomUUID(),uid,type:r.patch.reaction,at:this.now()};this.state.revision++;
    }else if(r.type==='start'||r.type==='rematch'){
-    if(uid!==this.meta.host)throw Error('Only the host starts the game.');if(!['lobby','finish'].includes(this.state.stage))throw Error('The match is already running.');startCourtGame(this.state,this.now());this.secret={estimates:{},fast:{}};for(const id of Object.keys(this.members)){extra['responses/'+id+'/secret']=null;extra['responses/'+id+'/huddle']=null;}
+    if(uid!==this.meta.host)throw Error('Only the host starts the game.');if(!['lobby','finish'].includes(this.state.stage))throw Error('The match is already running.');startCourtGame(this.state,this.now());this.secret={estimates:{},fast:{}};for(const id of Object.keys(this.members)){extra['responses/'+id+'/secret']=null;extra['responses/'+id+'/huddle']=null;extra['responses/'+id+'/fastAudience']=null;}
    }else{
     if(r.patch?.matchId!==this.state.matchId||r.patch?.round!==this.state.round)throw Error('That action belongs to an earlier round.');
     result=actCourtGame(this.state,this.secret,uid,a,{...r.patch,text:r.text,timeout:false},this.now());

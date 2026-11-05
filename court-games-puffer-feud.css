@@ -1,0 +1,97 @@
+/* Feud shares Puffer's actual world and interface language. */
+.cg-entry-v3[data-game="clash"] .cg-stage-wide,.cg-arena[data-game="clash"][data-camera] .cg-stage-wide,.cg-arena[data-game="clash"][data-stage="lobby"] .cg-stage-wide{background-image:url('assets/party-court-v2.png');background-size:cover;background-position:center;filter:none;opacity:1;transform:none}
+.cg-entry-v3[data-game="clash"] .cg-stage-shade,.cg-arena[data-game="clash"] .cg-stage-shade{background:linear-gradient(#071c3355,transparent 30%,#06192922)}
+.cg-clash-hub{position:relative;min-height:100dvh;padding:70px 35px 45px;max-width:1250px;margin:auto}
+.cg-clash-title{padding:10px 0 23px}
+.cg-clash-title h1{font-family:Pixel,VT,monospace;font-size:48px;letter-spacing:4px;line-height:1;margin:10px 0;color:#eacb79;text-shadow:0 4px #071724}
+.cg-clash-title h2{font-family:VT,monospace;font-size:24px;letter-spacing:4px;margin:12px 0;color:#c9dce1}
+.cg-clash-title p{font-size:19px;line-height:1.15;margin:0;color:#a5c2cf}
+.cg-social-grid{display:grid;grid-template-columns:330px 300px;justify-content:space-between;gap:260px;align-items:start;margin-top:8px}
+.cg-social-left{display:flex;flex-direction:column;gap:10px}
+.cg-social-grid .party-entry-card,.cg-social-directory{padding:17px 20px;background:#102136ed;border:1px solid #48677e;box-shadow:inset 0 2px #cadfe612,0 8px 24px #05101f22}
+.cg-social-grid .party-entry-heading{margin-bottom:12px}
+.cg-social-grid h2{font-size:16px;letter-spacing:1.5px;margin:0 0 12px;color:#c6d8e6}
+.cg-social-grid .party-entry-heading h2{margin:0}
+.cg-social-grid .text-button{background:none;border:0;padding:0;font-size:10px;letter-spacing:1px;color:#88becd}
+.cg-social-grid .field-label{display:block;font-size:10px;color:#9cb8c8;letter-spacing:1.6px;margin-bottom:6px}
+.cg-social-grid #cg-name{font-size:22px;background:#091828c9;border:1px solid #46647b;min-height:39px;padding:8px 10px}
+.cg-entry-v3[data-game="clash"] .cg-social-grid .cg-buddy-choices{display:flex;margin:13px 0 0;gap:5px}
+.cg-entry-v3[data-game="clash"] .cg-social-grid .cg-buddy-choices button{flex:1;height:61px;border:1px solid transparent;background:#08182775;color:#94b0c0;padding:5px 1px;gap:5px}
+.cg-entry-v3[data-game="clash"] .cg-social-grid .cg-buddy-choices button[aria-pressed="true"]{border-color:#d4b86d;background:#29313c;transform:none}
+.cg-entry-v3[data-game="clash"] .cg-social-grid .cg-buddy-choices button>:is(img,svg){width:42px;height:38px;min-height:38px}
+.cg-entry-v3[data-game="clash"] .cg-social-grid .cg-buddy-choices button>span{font-size:8px;line-height:1;min-height:0}
+.cg-social-host>.cg-primary{width:100%;min-height:40px;font-size:18px;padding:9px 10px;background:#ceb771;border:1px solid #e7d294;box-shadow:0 3px #5b4b2d}
+.cg-entry-v3[data-game="clash"] .cg-social-grid .cg-public{font-size:10px;margin:12px 0 0}
+.cg-social-grid .cg-public small{font-size:9px;margin-left:auto;color:#85a8b9}
+.cg-entry-v3[data-game="clash"] .cg-social-grid #cg-join .field{font-size:22px;background:#091828c9;border:1px solid #46647b;min-height:39px;padding:7px 10px}
+.cg-entry-v3[data-game="clash"] .cg-social-grid #cg-join button{min-height:39px;padding:8px 13px;font-size:17px;background:#28495c;border:1px solid #5e7f8e;box-shadow:none}
+.cg-social-player{position:absolute;top:58vh;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;width:250px;pointer-events:none}
+.cg-social-player #cg-preview-buddy{width:132px;height:120px;display:grid;place-items:center;z-index:2}
+.cg-social-player #cg-preview-buddy>:is(img,svg){width:129px;height:117px;image-rendering:pixelated;object-fit:contain;animation:cg-buddy-idle 7s ease-in-out infinite}
+.cg-social-player>img{width:180px;height:65px;object-fit:fill;margin-top:-15px;image-rendering:pixelated}
+.cg-social-player>strong{font-size:24px;color:#e5d9bc;text-shadow:1px 2px #03192d;margin-top:4px;max-width:250px;overflow-wrap:anywhere}
+.cg-social-player>small{font-size:9px;letter-spacing:1.5px;color:#91b2c4;margin-top:8px}
+.cg-social-directory{min-height:180px}
+.cg-social-directory #cg-rooms p{font-size:17px;color:#9cb3c5;line-height:1.2}
+.cg-social-note{font-size:12px;color:#7f9dab;line-height:1.4;border-top:1px solid #335066;margin-top:17px;padding-top:13px}
+.cg-social-directory #cg-rooms{max-height:310px;overflow:auto}
+.cg-arena[data-game="clash"] .cg-board,.cg-arena[data-game="clash"][data-camera="faceoff"] .cg-board{top:21vh;width:45%;padding:15px 18px 8px;background:#0c253ceF;border:1px solid #4b7087;box-shadow:inset 0 2px #a9c3cd13,0 5px #061827aa}
+.cg-arena[data-game="clash"] .cg-board h2{color:#e6ead9;text-shadow:0 2px #071a2b}
+.cg-arena[data-game="clash"] .cg-answer-cover{background:#17394f;box-shadow:inset 0 2px #5d82904d,inset 0 -2px #071b2b;color:#b7cfd9}
+.cg-arena[data-game="clash"] .cg-answer-face{background:#c9b47b;box-shadow:inset 0 2px #e2d4a2,inset 0 -2px #8c7951;color:#152d3e}
+.cg-arena[data-game="clash"] .cg-bench:after{content:'';position:absolute;left:-4%;right:-4%;top:10vh;height:13vh;background:url('assets/court-games/counsel-bench.svg') center top/100% 100% no-repeat;z-index:-1;image-rendering:pixelated}
+.cg-arena[data-game="clash"] .cg-bench>header{top:18vh}
+.cg-arena[data-game="clash"] .cg-bench{top:61vh}
+.cg-arena[data-game="clash"] .cg-faceoff-counsel>div:after{content:'';position:absolute;top:76px;left:0;right:0;height:55px;background:url('assets/court-games/counsel-bench.svg') center/100% 100%;z-index:-1}
+.cg-arena[data-game="clash"] .cg-faceoff-counsel>div{bottom:25vh}
+.cg-arena[data-game="clash"] .cg-faceoff-counsel strong{background:#0a253caa;font-size:17px}
+.cg-arena[data-game="clash"] .cg-puffer-host{bottom:24vh}
+.cg-arena[data-game="clash"] .cg-lobby-card{top:20vh;padding:20px;background:#102136ed;border:1px solid #48677e;box-shadow:inset 0 2px #cadfe612,0 8px 24px #05101f22}
+.cg-fast-run{max-width:640px!important;text-align:center}
+.cg-fast-position{font-size:12px;letter-spacing:1.6px;color:#9bbfcb;margin:15px 0}
+.cg-fast-prompt{font-size:31px;line-height:1.12;margin:18px 0 25px;color:#ece4ca;min-height:70px;text-wrap:balance}
+.cg-fast-progress{display:flex;justify-content:center;gap:9px;margin:20px 0 0}
+.cg-fast-progress i{height:5px;width:37px;background:#2d5066}
+.cg-fast-progress i.current{background:#dfc47d}
+.cg-fast-progress i.answered{background:#8ec2b1}
+.cg-fast-progress i.passed{background:#99787e}
+.cg-fast-buttons{display:flex;justify-content:space-between;gap:15px;margin-top:10px}
+.cg-fast-buttons button{min-width:125px;font-size:20px}
+.cg-fast-feedback{min-height:19px;font-size:14px;color:#e6a4ac;letter-spacing:1px;margin:12px 0}
+.cg-fast-run .cg-small{font-size:12px;margin-top:20px}
+.cg-fast-waiting>:is(img,svg),.cg-soundproof>:is(img,svg){height:130px;width:130px;object-fit:contain;image-rendering:pixelated;margin:20px}
+.cg-fast-waiting p,.cg-soundproof p{font-size:21px;line-height:1.2}
+.cg-fast-goal{height:4px;background:#264655;margin:15px auto 20px;max-width:500px}
+.cg-fast-goal i{display:block;height:100%;background:#d8c27a;transition:width .5s}
+.cg-fast-results .cg-fast-result{margin:0;padding:8px 0}
+.cg-fast-results .cg-fast-result h3{font-size:17px;line-height:1.1;margin:0 0 7px}
+.cg-fast-results .cg-fast-result>div{display:grid;grid-template-columns:1fr 1fr;gap:15px}
+.cg-fast-results .cg-fast-result p{margin:0;padding:3px 0;border:0;background:none;font-size:19px}
+.cg-survey-reveal{animation:cg-survey-unseal .4s var(--reveal-at) both}
+.cg-fast-total{font-size:44px;color:#e1cc8c}
+.cg-fast-total small{font-size:18px;margin-left:8px}
+.cg-quiet-waves{display:flex;gap:6px;justify-content:center;margin-top:30px;height:25px;align-items:center}
+.cg-quiet-waves i{width:3px;height:12px;background:#759eae;animation:cg-quiet 2s ease-in-out infinite alternate}
+.cg-quiet-waves i:nth-child(2n){animation-delay:-1s;height:20px}
+@keyframes cg-survey-unseal{from{opacity:0;transform:rotateX(90deg)}to{opacity:1;transform:none}}
+@keyframes cg-quiet{to{height:4px;opacity:.4}}
+@media(max-height:760px) and (min-width:761px){
+ .cg-clash-hub{padding-top:60px}.cg-clash-title{padding-bottom:12px}.cg-clash-title h1{font-size:40px}.cg-clash-title h2{margin:8px 0;font-size:21px}.cg-clash-title p{font-size:17px}
+ .cg-social-grid .party-entry-card,.cg-social-directory{padding:12px 17px}.cg-social-grid h2{font-size:14px;margin-bottom:10px}.cg-social-grid .party-entry-heading{margin-bottom:10px}
+ .cg-social-grid{margin-top:5px}.cg-social-left{gap:8px}.cg-social-player{top:57vh}
+ .cg-arena .cg-fast-card{margin-top:115px}.cg-fast-prompt{font-size:27px;min-height:60px;margin:16px 0 18px}.cg-fast-progress{margin-top:15px}.cg-fast-results .cg-fast-result{padding:5px 0}.cg-fast-results .cg-fast-result h3{font-size:15px}
+}
+@media(max-width:1100px) and (min-width:761px){.cg-social-grid{grid-template-columns:310px 265px;gap:100px}.cg-clash-hub{padding-left:25px;padding-right:25px}.cg-social-player{width:160px}.cg-social-player #cg-preview-buddy{width:100px}.cg-social-player #cg-preview-buddy>:is(img,svg){width:100px;height:95px}.cg-social-player>img{width:150px}}
+@media(max-width:760px){
+ .cg-clash-hub{padding:80px 20px 45px}.cg-clash-title h1{font-size:33px}.cg-clash-title h2{font-size:21px}.cg-clash-title p{font-size:17px}
+ .cg-social-player{position:relative;top:auto;left:auto;transform:none;margin:5px auto 25px}
+ .cg-social-player #cg-preview-buddy{height:90px;width:100px}.cg-social-player #cg-preview-buddy>:is(img,svg){height:90px;width:100px}.cg-social-player>img{width:150px;height:50px}
+ .cg-social-grid{grid-template-columns:1fr;gap:15px}.cg-social-grid .party-entry-card{padding:17px}.cg-social-directory{min-height:140px}
+ .cg-arena[data-game="clash"] .cg-board,.cg-arena[data-game="clash"][data-camera="faceoff"] .cg-board{position:relative;top:auto;width:100%;padding:15px}
+ .cg-arena[data-game="clash"] .cg-bench{top:auto}.cg-arena[data-game="clash"] .cg-bench:after{top:58px;height:80px}.cg-arena[data-game="clash"] .cg-bench>header{top:auto}
+ .cg-arena[data-game="clash"] .cg-faceoff-counsel>div{bottom:auto}.cg-arena[data-game="clash"] .cg-faceoff-counsel>div:after{display:none}
+ .cg-arena[data-game="clash"] .cg-lobby-card{top:auto;width:100%;padding:18px}
+ .cg-fast-prompt{font-size:26px}.cg-fast-results .cg-fast-result h3{font-size:16px}.cg-fast-results .cg-fast-result p{font-size:17px}
+}
+@media(prefers-reduced-motion:reduce){.cg-survey-reveal{opacity:1;transform:none;animation:none!important}}
+
