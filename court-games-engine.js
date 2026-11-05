@@ -2,7 +2,7 @@ import {shuffle} from './question-selection.js';
 import {matchAnswer,normalize} from './answer-matching.js';
 import {CLASH_BOARDS,CLASH_BY_ID,FIGURE_QUESTIONS,FIGURE_BY_ID} from './court-games-data.js';
 import {courtSettings} from './court-games-settings.js';
-export const COURT_GAMES_BUILD='20261104-final-figure-v7';
+export const COURT_GAMES_BUILD='20261105-court-library-v10';
 export const GAME_MODES={clash:{name:'Counsel Clash',subtitle:'TEAM FEUD',seats:10},figure:{name:'Final Figure',subtitle:'CLOSEST ANSWER WINS',seats:8}};
 const live=s=>s.players.filter(p=>!p.spectator&&p.connected!==false);
 const team=(s,n)=>{const rows=live(s).filter(p=>p.team===n),online=rows.filter(p=>p.online!==false);return online.length?online:rows;};
@@ -42,7 +42,13 @@ function strike(s,now,reason='Not on the board'){s.strikes++;emit(s,'strike',rea
 function finishClashMain(s,now){const scores=s.teamScores;if(scores[0]===scores[1]){nextClash(s,now);return;}const winner=scores[0]>scores[1]?0:1;s.winningTeam=winner;s.fastPlayers=[];s.fastIds=s.questionIds.filter(id=>!s.history.some(h=>h.id===id)).slice(0,5);s.choicePlayer=team(s,winner)[0]?.id;stage(s,'fastIntro',now,30000);emit(s,'fast-intro','Main verdict: '+(winner===0?'Petitioners':'Respondents')+'. Choose your Fast Money counsel.',now,{team:winner});}
 function readyFast(s,now){stage(s,'fastReady',now,30000);emit(s,'fast-ready',s.fastPass===0?'First counsel: get ready. Your clock has not started.':'Second counsel: '+s.fast.total+' banked. You need '+Math.max(0,s.fastTarget-s.fast.total)+' more. No duplicate answers.',now,{player:s.turn});}
 function readFast(s,now){const words=CLASH_BY_ID.get(s.fastIds[0]).prompt.trim().split(/\s+/).length;stage(s,'fastRead',now,Math.max(3000,Math.min(10000,words*360+650)));emit(s,'fast-read','First question. The clock starts after the read.',now,{player:s.turn});}
-function beginFast(s,now){const winners=team(s,s.winningTeam);s.fastPlayers=s.fastPlayers.length?s.fastPlayers:winners.slice(0,2).map(p=>p.id);s.fastPass=0;s.fastTarget=s.fastPlayers.length>=2?200:100;s.turn=s.fastPlayers[0];s.fast={total:0,complete:false};readyFast(s,now);}
+function beginFast(s,now){const winners=team(s,s.winningTeam);s.fastPlayers=s.fastPlayers.length?s.fastPlayers:winners.slice(0,2).map(p=>p.id);s.fastPass=0;s.fastTarget=s.fastPlayers.length>=2?200:100;
+ // Historical board totals vary. Keep the fresh draw unless even perfect
+ // answers could not reach the bonus; then replace its weakest board from
+ // the unused shuffle. Never change published scores or reuse a main board.
+ const capacity=id=>CLASH_BY_ID.get(id).answers.slice(0,s.fastPlayers.length).reduce((n,a)=>n+a.points,0),pool=s.questionIds.filter(id=>!s.fastIds.includes(id)&&!s.history.some(h=>h.id===id));
+ while(s.fastIds.reduce((n,id)=>n+capacity(id),0)<s.fastTarget){const low=s.fastIds.reduce((a,b)=>capacity(a)<=capacity(b)?a:b),i=pool.findIndex(id=>capacity(id)>capacity(low));if(i<0)throw Error('No attainable Fast Money draw remains.');s.fastIds[s.fastIds.indexOf(low)]=pool.splice(i,1)[0];}
+ s.turn=s.fastPlayers[0];s.fast={total:0,complete:false};readyFast(s,now);}
 // Only the defending bench may confer while the controlling family answers.
 export function canCourtHuddle(s,uid){const p=s.players.find(p=>p.id===uid);const phase=s.stage==='survey'?s.judgement?.from:s.stage;return s.variant==='clash'&&p&&!p.spectator&&p.connected!==false&&p.online!==false&&['control','steal'].includes(phase)&&p.team===(phase==='steal'?s.stealTeam:1-s.controlTeam);}
 function finish(s,now){
