@@ -14,8 +14,8 @@ test('200 sourced aired boards preserve complete displayed categories, published
  assert.equal(CLASH_BOARDS.length,200);assert.equal(new Set(CLASH_BOARDS.map(q=>q.id)).size,200);assert.equal(new Set(CLASH_BOARDS.map(q=>q.source)).size,40);
  for(const q of CLASH_BOARDS){assert.match(q.basis,/Scores preserved/);assert.ok(q.answers.length>=5&&q.answers.length<=8);assert.ok(q.answers.reduce((n,a)=>n+a.points,0)<=100);assert.equal(new URL(q.source).hostname,'mstiescott.neocities.org');assert.ok(q.season>=16&&q.season<=25);const aliases=new Map();for(const [i,a]of q.answers.entries()){assert.ok(Number.isInteger(a.points)&&a.points>0);if(i)assert.ok(q.answers[i-1].points>=a.points);for(const text of [a.label,...a.aliases]){const norm=normalize(text);assert.ok(!aliases.has(norm)||aliases.get(norm)===a.label,q.id+': '+text);aliases.set(norm,a.label);assert.equal(matchAnswer(q,text)?.label,a.label,q.id+': '+text);}}}
 });
-test('210 individually sourced numerical questions have balanced subjects and clear units',()=>{
- assert.equal(FIGURE_QUESTIONS.length,210);assert.equal(new Set(FIGURE_QUESTIONS.map(q=>q.id)).size,210);const cats=Object.groupBy(FIGURE_QUESTIONS,q=>q.category);assert.equal(Object.keys(cats).length,7);for(const rows of Object.values(cats))assert.equal(rows.length,30);
+test('1001 individually sourced numerical questions have balanced subjects and clear units',()=>{
+ assert.equal(FIGURE_QUESTIONS.length,1001);assert.equal(new Set(FIGURE_QUESTIONS.map(q=>q.id)).size,1001);const cats=Object.groupBy(FIGURE_QUESTIONS,q=>q.category);assert.equal(Object.keys(cats).length,7);for(const rows of Object.values(cats))assert.ok(rows.length>=90&&rows.length/FIGURE_QUESTIONS.length<.22);
  for(const q of FIGURE_QUESTIONS){assert.ok(Number.isFinite(q.answer)&&q.answer>=0&&q.answer<=1e15);assert.ok(q.unit&&q.explanation&&q.sourceTitle&&q.prompt);assert.equal(new URL(q.source).protocol,'https:');assert.ok(['2026-11-04','2026-11-05'].includes(q.checked));}
 });
 test('default team match supports six players, locks roster, rotates face-off players and never reuses a board',()=>{

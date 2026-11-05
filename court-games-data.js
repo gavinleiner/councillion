@@ -1,4 +1,5 @@
-import {EXTRA_CLASH_BOARDS,EXTRA_FIGURE_QUESTIONS} from './court-games-expansion-data.js';
+import {EXTRA_CLASH_BOARDS} from './court-games-expansion-data.js';
+import {CURATED_FIGURE_QUESTIONS} from './court-games-figure-data.js';
 // Curated aired survey boards. Sources are fan transcriptions, not an official
 // partnership. Prompts/labels are condensed; numerical scores are unchanged.
 export const CLASH_BOARDS=[
@@ -1995,52 +1996,7 @@ export const CLASH_BOARDS=[
 CLASH_BOARDS.push(...EXTRA_CLASH_BOARDS);
 export const CLASH_BY_ID=new Map(CLASH_BOARDS.map(q=>[q.id,q]));
 
-// Finite, individually sourced numerical facts. Units and scope are part of
-// each prompt; approximations are stated. Sources appear after the reveal.
-const figure=(id,category,prompt,answer,unit,source,sourceTitle,explanation)=>({id,category,prompt,answer,unit,source,sourceTitle,explanation,checked:'2026-11-04',scale:1});
-export const FIGURE_QUESTIONS=[
- figure('moon-distance','Science','On average, how many kilometres separate Earth and the Moon?',384400,'km','https://spaceplace.nasa.gov/moon-distance/en/','NASA','NASA gives the mean distance as 384,400 km; the orbit is not a circle.'),
- figure('light-speed','Science','How many metres does light travel in one second in a vacuum?',299792458,'metres','https://www.nist.gov/pml/special-publication-330/sp-330-section-2','NIST','The SI definition fixes this value exactly.'),
- figure('sunlight','Science','About how many seconds does sunlight take to reach Earth?',500,'seconds','https://science.nasa.gov/mission/voyager/voyager-1/voyager-1-what-is-a-light-day/','NASA','About eight minutes and twenty seconds: 8 × 60 + 20 = 500.'),
- figure('bones','Science','How many bones are in the typical adult human skeleton?',206,'bones','https://my.clevelandclinic.org/health/body/22344-axial-skeleton','Cleveland Clinic','The standard adult count is 206; individual anatomy can vary.'),
- figure('intestine','Science','About how many feet long is the human small intestine?',20,'feet','https://www.cancer.gov/publications/dictionaries/cancer-terms/def/small-intestine','US National Cancer Institute','The NCI describes it as approximately twenty feet long.'),
- figure('elements','Science','How many named elements are on the IUPAC periodic table as of November 2026?',118,'elements','https://iupac.org/what-we-do/periodic-table-of-elements/','IUPAC','The named table ends at oganesson, atomic number 118.'),
- figure('ocean-depth','Nature','According to NOAA, what is the average ocean depth in metres?',3682,'metres','https://oceanservice.noaa.gov/facts/oceandepth.html','NOAA','This is a global average, not the deepest trench.'),
- figure('ocean-cover','Nature','Approximately what percentage of Earth’s surface is covered by ocean?',71,'%','https://oceanservice.noaa.gov/facts/howmanyoceans.html','NOAA','The commonly reported rounded figure is 71 percent.'),
- figure('cheetah','Nature','San Diego Zoo lists a cheetah’s top speed at about how many miles per hour?',70,'mph','https://animals.sandiegozoo.org/animals/cheetah','San Diego Zoo','This is a stated maximum sprint speed, not a sustained average.'),
- figure('whale','Nature','The Natural History Museum says blue whales can reach about how many metric tonnes?',180,'tonnes','https://www.nhm.ac.uk/bluewhale/ocean/record-breaker/','Natural History Museum','The museum gives an upper figure of 180 tonnes, with most adults lighter.'),
- figure('giraffe','Nature','How many vertebrae are in a giraffe’s neck?',7,'vertebrae','https://animals.sandiegozoo.org/animals/giraffe','San Diego Zoo','A giraffe has seven neck vertebrae, like a human.'),
- figure('octopus','Nature','How many hearts does an octopus have?',3,'hearts','https://www.horniman.ac.uk/story/fact-file-octopus/','Horniman Museum','Two hearts pump to the gills; a third supplies the body.'),
- figure('eiffel-stairs','World','How many stairs run from the Eiffel Tower’s esplanade to its top?',1665,'steps','https://www.toureiffel.paris/en/faq/spot/how-can-you-walk-eiffel-tower-foot','Eiffel Tower official site','There are 1,665 in total; public stair access ends at the second floor.'),
- figure('bridge','World','Including its approaches, how long is the Golden Gate Bridge in metres?',2737,'metres','https://www.goldengate.org/exhibits/facts-and-figures-about-the-bridge/','Golden Gate Bridge district','The bridge district gives 2,737 metres from abutment to abutment.'),
- figure('burj','World','How tall is the Burj Khalifa in metres?',828,'metres','https://www.som.com/projects/burj-khalifa/','SOM, the tower’s architects','The tower’s official stated height is 828 metres.'),
- figure('opera-tiles','World','How many ceramic roof tiles does engineering firm Arup report for the Sydney Opera House?',1056006,'tiles','https://www.arup.com/en-us/projects/designing-the-sydney-opera-house/','Arup, the project engineers','Arup reports 1,056,006 ceramic tiles in its account of the roof design.'),
- figure('liberty-stairs','World','How many steps from ground level reach the Statue of Liberty’s crown, according to NPS?',377,'steps','https://www.nps.gov/thingstodo/visit-liberty-crown.htm','US National Park Service','NPS lists 377 from the ground, including 162 above the pedestal.'),
- figure('empire','World','On which floor is the Empire State Building’s Top Deck observatory?',102,'floor','https://www.esbnyc.com/tickets/102nd-86th-floor-observation-decks','Empire State Building','Its Top Deck is on floor 102; the Main Deck is on floor 86.'),
- figure('marathon','Sports','What is the official marathon distance in kilometres?',42.195,'km','https://worldathletics.org/disciplines/roadrunning/marathon','World Athletics','The distance is 42.195 kilometres, or 26 miles and 385 yards.'),
- figure('shot-put','Sports','How many kilograms does a senior men’s competition shot weigh?',7.26,'kg','https://worldathletics.org/disciplines/throws/shot-put','World Athletics','The senior men’s implement weighs 7.26 kg.'),
- figure('goal','Sports','What is the regulation football goal’s inside width in metres?',7.32,'metres','https://www.theifab.com/laws/latest/the-field-of-play/','IFAB, Law 1','Measure between the inside edges of the posts.'),
- figure('court','Sports','How many feet long is an NBA court?',94,'feet','https://www.nba.com/news/faq','NBA','NBA court length: 94 feet.'),
- figure('nba-shootout','Sports','How many combined points were scored in Detroit–Denver’s 1983 triple-overtime NBA game?',370,'points','https://www.nba.com/news/most-points-scored-by-a-team-in-an-nba-game','NBA','Detroit 186; Denver 184.'),
- figure('baseball','Sports','How many double stitches are on a regulation baseball?',108,'stitches','https://milb.bamcontent.com/documents/4/4/0/313082440/Farm_Grown_Magazine_8th_Edition.pdf','Minor League Baseball','The count refers to double stitches, not individual holes.'),
- figure('lego-tower','Culture','How many pieces are in LEGO’s Eiffel Tower set 10307?',10001,'pieces','https://www.lego.com/en-us/product/eiffel-tower-10307','LEGO','The official set has 10,001 pieces.'),
- figure('lego-ship','Culture','How many pieces are in LEGO’s Titanic set 10294?',9090,'pieces','https://www.lego.com/en-us/product/lego-titanic-10294','LEGO','LEGO lists 9,090 pieces for set 10294.'),
- figure('rubik','Culture','Roughly how many QUINTILLION reachable positions does a standard 3×3 Rubik’s Cube have?',43.252003274489856,'quintillion','https://www.usitc.gov/publications/337/pub1334.pdf','US International Trade Commission','43,252,003,274,489,856,000 positions, expressed in quintillions.'),
- figure('crayons','Culture','How many crayons come in Crayola’s Ultimate Crayon Collection caddy?',152,'crayons','https://www.crayola.com/products/crayons/ultimate-crayon-collection-152-count-crayons-520030','Crayola','The named collection includes regular, metallic and glitter crayons.'),
- figure('oscar','Culture','How tall is an Oscar statuette in inches?',13.5,'inches','https://www.oscars.org/oscars/statuette','Academy of Motion Picture Arts and Sciences','The Academy lists a height of thirteen and a half inches.'),
- figure('jenga','Culture','How many wooden blocks come in classic Jenga?',54,'blocks','https://www.jenga.com/about.php','Jenga','Classic Jenga uses 54 blocks, arranged three per level.'),
- figure('mario-kart','Gaming','How many race courses were in Mario Kart 8 Deluxe with the complete Booster Course Pass in December 2023?',96,'courses','https://www.nintendo.com/ph/news/article/4YLfQ0qIKZXFmQZoJ0ubsT','Nintendo','The base game and the completed pass together contain 96 race courses.'),
- figure('pokemon','Gaming','How many original Pokémon species were introduced in Generation I?',151,'species','https://www.pokemon.com/us/pokemon-tcg/scarlet-violet-151','The Pokémon Company','The original Kanto species run from Bulbasaur through Mew.'),
- figure('tetris','Gaming','How many distinct Tetrimino shapes are used in standard Tetris?',7,'shapes','https://cdn.akamai.steamstatic.com/steam/apps/1259790/manuals/tenpex_WM_210216_Steam_en.pdf','Tetris Effect: Connected official manual','The seven shapes are I, O, T, S, Z, J and L.'),
- figure('nether','Gaming','Travelling 100 blocks horizontally in Minecraft’s Nether corresponds to how many Overworld blocks?',800,'blocks','https://github.com/misode/mcmeta/blob/5f312935898c8f75f64d185b9874b129d0c67287/data/minecraft/dimension_type/the_nether.json','Released Minecraft dimension data','The horizontal distance ratio is eight to one: 100 × 8 = 800.'),
- figure('portal','Gaming','Without the corners, how many obsidian blocks make the smallest working Nether portal?',10,'blocks','https://www.minecraft.net/en-us/article/visit-nether-','Mojang / Minecraft','Two blocks on top and bottom, with three on each side: ten.'),
- figure('pacman','Gaming','What is the perfect score in the original arcade Pac-Man under the standard perfect-game rules?',3333360,'points','https://www.guinnessworldrecords.com/world-records/84401-fastest-perfect-completion-of-pac-man','Guinness World Records','The perfect-game score is 3,333,360.'),
- figure('penny','Everyday','How many grams does a modern copper-plated zinc US penny weigh?',2.5,'grams','https://www.usmint.gov/learn/coins-and-medals/circulating-coins/coin-specifications','US Mint','The modern specification is 2.50 g; older copper cents differ.'),
- figure('nickel','Everyday','How many grams does a US nickel weigh?',5,'grams','https://www.usmint.gov/learn/coins-and-medals/circulating-coins/coin-specifications','US Mint','The US Mint specification is 5.00 grams.'),
- figure('coke','Everyday','How many grams of sugar are in a standard US 12-fluid-ounce can of original Coca-Cola?',39,'grams','https://www.coca-colacompany.com/about-us/faq/ingredients','The Coca-Cola Company','The company lists 39 grams for this can size and formulation.'),
- figure('uno','Everyday','How many cards are in the classic UNO deck, before the extra Shuffle Hands and customizable cards?',108,'cards','https://service.mattel.com/instruction_sheets/M1002.pdf','Mattel','This older classic deck has 108 cards; newer editions can have 112.'),
- figure('cards','Everyday','Excluding jokers, how many cards are in a standard four-suit playing-card deck?',52,'cards','https://www.slga.com/-/media/slga/files/permits-and-licences/integrity-standards/playing-cards-standards-june-2022.pdf','Saskatchewan Liquor and Gaming Authority','Four suits with thirteen ranks give 52 cards.'),
- figure('pen','Everyday','BIC advertises its M10 pen as writing up to how many metres?',2000,'metres','https://corporate.bic.com/en-us/news/an-everyday-icon-the-bic-m10-celebrates-70-years','BIC','Its stated maximum is two kilometres: 2 × 1,000 metres.')
-];
-FIGURE_QUESTIONS.push(...EXTRA_FIGURE_QUESTIONS);
+// Only the admitted source-reviewed bank is playable. Legacy technical drafts
+// remain archived in snapshots and are not appended to this pool.
+export const FIGURE_QUESTIONS=CURATED_FIGURE_QUESTIONS;
 export const FIGURE_BY_ID=new Map(FIGURE_QUESTIONS.map(q=>[q.id,q]));
