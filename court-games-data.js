@@ -1,3 +1,4 @@
+import {EXTRA_CLASH_BOARDS,EXTRA_FIGURE_QUESTIONS} from './court-games-expansion-data.js';
 // Curated aired survey boards. Sources are fan transcriptions, not an official
 // partnership. Prompts/labels are condensed; numerical scores are unchanged.
 export const CLASH_BOARDS=[
@@ -1991,6 +1992,7 @@ export const CLASH_BOARDS=[
   "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
  }
 ];
+CLASH_BOARDS.push(...EXTRA_CLASH_BOARDS);
 export const CLASH_BY_ID=new Map(CLASH_BOARDS.map(q=>[q.id,q]));
 
 // Finite, individually sourced numerical facts. Units and scope are part of
@@ -2040,4 +2042,5 @@ export const FIGURE_QUESTIONS=[
  figure('cards','Everyday','Excluding jokers, how many cards are in a standard four-suit playing-card deck?',52,'cards','https://www.slga.com/-/media/slga/files/permits-and-licences/integrity-standards/playing-cards-standards-june-2022.pdf','Saskatchewan Liquor and Gaming Authority','Four suits with thirteen ranks give 52 cards.'),
  figure('pen','Everyday','BIC advertises its M10 pen as writing up to how many metres?',2000,'metres','https://corporate.bic.com/en-us/news/an-everyday-icon-the-bic-m10-celebrates-70-years','BIC','Its stated maximum is two kilometres: 2 × 1,000 metres.')
 ];
+FIGURE_QUESTIONS.push(...EXTRA_FIGURE_QUESTIONS);
 export const FIGURE_BY_ID=new Map(FIGURE_QUESTIONS.map(q=>[q.id,q]));

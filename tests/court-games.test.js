@@ -9,17 +9,17 @@ const players=()=>Array.from({length:6},(_,i)=>({id:'p'+i,name:'Player '+i,team:
 const game=(variant='clash')=>{const s=createCourtGame(variant,players()),secret={estimates:{},fast:{}};startCourtGame(s,1000,random(42));tickCourtGame(s,secret,4200);return {s,secret};};
 const answer=(s,secret,uid,text,now=5000)=>{const r=actCourtGame(s,secret,uid,'answer',{text},now);if(s.stage==='survey')tickCourtGame(s,secret,s.deadline);return r;};
 const fastReady=(s,secret)=>{if(s.stage==='fastReady')actCourtGame(s,secret,s.turn,'fast-ready',{},s.stageAt+1);if(s.stage==='fastRead')tickCourtGame(s,secret,s.deadline);};
-test('40 sourced aired boards preserve complete displayed categories, published scores and unambiguous aliases',()=>{
- assert.equal(CLASH_BOARDS.length,40);assert.equal(new Set(CLASH_BOARDS.map(q=>q.id)).size,40);assert.equal(new Set(CLASH_BOARDS.map(q=>q.source)).size,20);
- for(const q of CLASH_BOARDS){assert.match(q.basis,/Scores preserved/);assert.ok(q.answers.length>=5&&q.answers.length<=6);assert.ok(q.answers.reduce((n,a)=>n+a.points,0)<=100);assert.equal(new URL(q.source).hostname,'mstiescott.neocities.org');assert.ok(q.season>=16&&q.season<=25);const aliases=new Map();for(const [i,a]of q.answers.entries()){assert.ok(Number.isInteger(a.points)&&a.points>0);if(i)assert.ok(q.answers[i-1].points>=a.points);for(const text of [a.label,...a.aliases]){const norm=normalize(text);assert.ok(!aliases.has(norm)||aliases.get(norm)===a.label,q.id+': '+text);aliases.set(norm,a.label);assert.equal(matchAnswer(q,text)?.label,a.label,q.id+': '+text);}}}
+test('200 sourced aired boards preserve complete displayed categories, published scores and unambiguous aliases',()=>{
+ assert.equal(CLASH_BOARDS.length,200);assert.equal(new Set(CLASH_BOARDS.map(q=>q.id)).size,200);assert.equal(new Set(CLASH_BOARDS.map(q=>q.source)).size,40);
+ for(const q of CLASH_BOARDS){assert.match(q.basis,/Scores preserved/);assert.ok(q.answers.length>=5&&q.answers.length<=8);assert.ok(q.answers.reduce((n,a)=>n+a.points,0)<=100);assert.equal(new URL(q.source).hostname,'mstiescott.neocities.org');assert.ok(q.season>=16&&q.season<=25);const aliases=new Map();for(const [i,a]of q.answers.entries()){assert.ok(Number.isInteger(a.points)&&a.points>0);if(i)assert.ok(q.answers[i-1].points>=a.points);for(const text of [a.label,...a.aliases]){const norm=normalize(text);assert.ok(!aliases.has(norm)||aliases.get(norm)===a.label,q.id+': '+text);aliases.set(norm,a.label);assert.equal(matchAnswer(q,text)?.label,a.label,q.id+': '+text);}}}
 });
-test('42 individually sourced numerical questions have balanced subjects and clear units',()=>{
- assert.equal(FIGURE_QUESTIONS.length,42);assert.equal(new Set(FIGURE_QUESTIONS.map(q=>q.id)).size,42);const cats=Object.groupBy(FIGURE_QUESTIONS,q=>q.category);assert.equal(Object.keys(cats).length,7);for(const rows of Object.values(cats))assert.equal(rows.length,6);
- for(const q of FIGURE_QUESTIONS){assert.ok(Number.isFinite(q.answer)&&q.answer>=0&&q.answer<=1e15);assert.ok(q.unit&&q.explanation&&q.sourceTitle&&q.prompt);assert.equal(new URL(q.source).protocol,'https:');assert.equal(q.checked,'2026-11-04');}
+test('210 individually sourced numerical questions have balanced subjects and clear units',()=>{
+ assert.equal(FIGURE_QUESTIONS.length,210);assert.equal(new Set(FIGURE_QUESTIONS.map(q=>q.id)).size,210);const cats=Object.groupBy(FIGURE_QUESTIONS,q=>q.category);assert.equal(Object.keys(cats).length,7);for(const rows of Object.values(cats))assert.equal(rows.length,30);
+ for(const q of FIGURE_QUESTIONS){assert.ok(Number.isFinite(q.answer)&&q.answer>=0&&q.answer<=1e15);assert.ok(q.unit&&q.explanation&&q.sourceTitle&&q.prompt);assert.equal(new URL(q.source).protocol,'https:');assert.ok(['2026-11-04','2026-11-05'].includes(q.checked));}
 });
 test('default team match supports six players, locks roster, rotates face-off players and never reuses a board',()=>{
  const {s,secret}=game();assert.equal(s.settings.maxPlayers,10);assert.equal(s.players.filter(p=>!p.spectator).length,6);assert.equal(s.stage,'faceoff');assert.deepEqual(s.faceoffPlayers,['p0','p1']);
- const ids=new Set(s.questionIds);assert.equal(ids.size,40);s.history=[{id:s.board.id}];s.stage='roundResult';s.phase='burst';s.deadline=6000;s.teamScores=[50,0];tickCourtGame(s,secret,6000);assert.equal(s.round,2);assert.deepEqual(s.faceoffPlayers,['p2','p3']);assert.ok(ids.has(s.board.id));assert.notEqual(s.board.id,s.history[0].id);
+ const ids=new Set(s.questionIds);assert.equal(ids.size,200);s.history=[{id:s.board.id}];s.stage='roundResult';s.phase='burst';s.deadline=6000;s.teamScores=[50,0];tickCourtGame(s,secret,6000);assert.equal(s.round,2);assert.deepEqual(s.faceoffPlayers,['p2','p3']);assert.ok(ids.has(s.board.id));assert.notEqual(s.board.id,s.history[0].id);
 });
 test('highest face-off answer earns play/pass, with a real chance for the other representative',()=>{
  const {s,secret}=game(),q=CLASH_BY_ID.get(s.board.id);actCourtGame(s,secret,'p0','buzz',{},5000);assert.throws(()=>actCourtGame(s,secret,'p1','buzz',{},5100),/buzzers/);
@@ -53,6 +53,12 @@ test('1v1 is permitted but Fast Money handles the single winner without inventin
 test('estimate parser accepts usable notation without accepting units, NaN or negative entries',()=>{
  for(const [input,value]of [['1,250',1250],['1.5k',1500],['2M',2000000],['.25',.25],['1e3',1000],['0',0]])assert.equal(parseEstimate(input),value);
  for(const input of ['', '-1','NaN','Infinity','1/2','12 km','1e999','1e16','0x12'])assert.equal(parseEstimate(input),null,input);
+});
+for(const runners of [1,2])test(`Fast Money replaces an impossible ${runners}-runner draw without changing survey scores or reusing main boards`,()=>{
+ const {s,secret}=game(),scores=CLASH_BOARDS.map(q=>q.answers.map(a=>a.points));s.stage='roundResult';s.round=4;s.deadline=5000;s.teamScores=[350,100];s.history=[{id:s.board.id}];tickCourtGame(s,secret,5000);
+ const capacity=id=>CLASH_BY_ID.get(id).answers.slice(0,runners).reduce((sum,a)=>sum+a.points,0);
+ s.fastIds=CLASH_BOARDS.filter(q=>q.id!==s.board.id).map(q=>q.id).sort((a,b)=>capacity(a)-capacity(b)).slice(0,5);const impossible=s.fastIds.slice();assert.ok(impossible.reduce((n,id)=>n+capacity(id),0)<runners*100);
+ s.fastPlayers=runners===1?['p0']:['p0','p2'];actCourtGame(s,secret,'p0','fast-start',{},5100);assert.equal(s.fastIds.length,5);assert.equal(new Set(s.fastIds).size,5);assert.ok(s.fastIds.reduce((n,id)=>n+capacity(id),0)>=s.fastTarget);assert.ok(!s.fastIds.includes(s.board.id));assert.deepEqual(CLASH_BOARDS.map(q=>q.answers.map(a=>a.points)),scores);
 });
 test('accuracy is monotone, handles zero and rewards equal error equally, regardless of guess direction',()=>{
  assert.equal(accuracyScore(100,100),1000);assert.equal(accuracyScore(0,0),1000);assert.equal(accuracyScore(0,10),accuracyScore(20,10));let last=1001;for(let error=0;error<1000;error++){const points=accuracyScore(100+error,100);assert.ok(points<=last);last=points;}

@@ -1,0 +1,11730 @@
+// Generated from the reviewed court library snapshot. Run scripts/build-court-library.mjs.
+export const EXTRA_CLASH_BOARDS=[
+ {
+  "id": "survey-16-5-31",
+  "prompt": "What does a snake do that a person doesn't?",
+  "answers": [
+   {
+    "label": "Slither",
+    "points": 53,
+    "aliases": []
+   },
+   {
+    "label": "Hiss",
+    "points": 14,
+    "aliases": []
+   },
+   {
+    "label": "Eat animal whole / Rat",
+    "points": 14,
+    "aliases": [
+     "EAT ANIMAL WHOLE",
+     "RAT",
+     "Eat animal whole",
+     "Rat"
+    ]
+   },
+   {
+    "label": "Shed entire skin",
+    "points": 9,
+    "aliases": []
+   },
+   {
+    "label": "Bite / With venom",
+    "points": 5,
+    "aliases": [
+     "BITE",
+     "WITH VENOM",
+     "Bite",
+     "With venom"
+    ]
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud16_5.html",
+  "sourceTitle": "Family Feud season 16 · broadcast-board transcription",
+  "season": 16,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-16-5-29",
+  "prompt": "Where might an overnight stay leave you missing home?",
+  "answers": [
+   {
+    "label": "Hotel / Motel",
+    "points": 56,
+    "aliases": [
+     "HOTEL",
+     "MOTEL",
+     "Hotel",
+     "Motel"
+    ]
+   },
+   {
+    "label": "Outside / Camp / Tent",
+    "points": 28,
+    "aliases": [
+     "OUTSIDE",
+     "CAMP",
+     "TENT",
+     "Outside",
+     "Camp",
+     "Tent"
+    ]
+   },
+   {
+    "label": "Jail",
+    "points": 7,
+    "aliases": [
+     "JAIL/WITH JIM-BOB",
+     "WITH JIM-BOB",
+     "prison"
+    ]
+   },
+   {
+    "label": "Relative's home",
+    "points": 2,
+    "aliases": []
+   },
+   {
+    "label": "Airport",
+    "points": 2,
+    "aliases": []
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud16_5.html",
+  "sourceTitle": "Family Feud season 16 · broadcast-board transcription",
+  "season": 16,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-16-5-28",
+  "prompt": "Instead of sheep, what might Jay-Z and Beyoncé count to get to sleep?",
+  "answers": [
+   {
+    "label": "Money",
+    "points": 64,
+    "aliases": [
+     "THEIR MONEY",
+     "cash",
+     "dollars",
+     "moolah",
+     "moola"
+    ]
+   },
+   {
+    "label": "Hit records / Grammys",
+    "points": 14,
+    "aliases": [
+     "HIT RECORDS",
+     "GRAMMYS",
+     "Hit records",
+     "Grammys"
+    ]
+   },
+   {
+    "label": "Sheep",
+    "points": 11,
+    "aliases": []
+   },
+   {
+    "label": "Blessings",
+    "points": 3,
+    "aliases": [
+     "\"THEIR BLESSINGS\""
+    ]
+   },
+   {
+    "label": "Music notes",
+    "points": 3,
+    "aliases": []
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud16_5.html",
+  "sourceTitle": "Family Feud season 16 · broadcast-board transcription",
+  "season": 16,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-16-6-62",
+  "prompt": "What could you spot outdoors that makes staying inside look better?",
+  "answers": [
+   {
+    "label": "Weather / Tornado",
+    "points": 71,
+    "aliases": [
+     "WEATHER",
+     "TORNADO",
+     "Weather",
+     "Tornado"
+    ]
+   },
+   {
+    "label": "Bear / Animal",
+    "points": 13,
+    "aliases": [
+     "BEAR",
+     "ANIMAL",
+     "Bear",
+     "Animal"
+    ]
+   },
+   {
+    "label": "Zombies",
+    "points": 3,
+    "aliases": []
+   },
+   {
+    "label": "Fire / Smoke",
+    "points": 2,
+    "aliases": [
+     "FIRE",
+     "SMOKE",
+     "Fire",
+     "Smoke"
+    ]
+   },
+   {
+    "label": "Bad celeb / Biebs",
+    "points": 2,
+    "aliases": [
+     "BAD CELEB",
+     "BIEBS",
+     "Bad celeb",
+     "Biebs"
+    ]
+   },
+   {
+    "label": "Apocalypse",
+    "points": 2,
+    "aliases": []
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud16_6.html",
+  "sourceTitle": "Family Feud season 16 · broadcast-board transcription",
+  "season": 16,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-16-6-68",
+  "prompt": "What feature of Mickey Mouse might another mouse tease him about?",
+  "answers": [
+   {
+    "label": "Large ears",
+    "points": 36,
+    "aliases": [
+     "GIGANTIC EARS"
+    ]
+   },
+   {
+    "label": "Clothes / Gloves",
+    "points": 29,
+    "aliases": [
+     "CLOTHES",
+     "GLOVES",
+     "Clothes",
+     "Gloves",
+     "clothes",
+     "clothing"
+    ]
+   },
+   {
+    "label": "Voice / laugh",
+    "points": 19,
+    "aliases": [
+     "WUSSY VOICE/LAUGH",
+     "WUSSY VOICE",
+     "LAUGH",
+     "Voice",
+     "laugh",
+     "laughing"
+    ]
+   },
+   {
+    "label": "Besties w / Duck",
+    "points": 3,
+    "aliases": [
+     "BESTIES W/ A DUCK",
+     "BESTIES W",
+     "DUCK",
+     "Besties w",
+     "Duck"
+    ]
+   },
+   {
+    "label": "Honker / Big nose",
+    "points": 3,
+    "aliases": [
+     "HONKER",
+     "BIG NOSE",
+     "Honker",
+     "Big nose"
+    ]
+   },
+   {
+    "label": "Large feet",
+    "points": 3,
+    "aliases": [
+     "HIS HUGE FEET",
+     "HUGE FEET"
+    ]
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud16_6.html",
+  "sourceTitle": "Family Feud season 16 · broadcast-board transcription",
+  "season": 16,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-16-6-87",
+  "prompt": "What change to Grandma's hair would surprise you?",
+  "answers": [
+   {
+    "label": "Dyed it / Pink",
+    "points": 62,
+    "aliases": [
+     "DYED IT",
+     "PINK",
+     "Dyed it",
+     "Pink"
+    ]
+   },
+   {
+    "label": "Shaved / Mohawk",
+    "points": 10,
+    "aliases": [
+     "SHAVED",
+     "MOHAWK",
+     "Shaved",
+     "Mohawk"
+    ]
+   },
+   {
+    "label": "Cut it",
+    "points": 5,
+    "aliases": []
+   },
+   {
+    "label": "Permed / Curled it",
+    "points": 5,
+    "aliases": [
+     "PERMED",
+     "CURLED IT",
+     "Permed",
+     "Curled it"
+    ]
+   },
+   {
+    "label": "Straightened it",
+    "points": 4,
+    "aliases": []
+   },
+   {
+    "label": "Braided / Cornrows",
+    "points": 3,
+    "aliases": [
+     "BRAIDED",
+     "CORNROWS",
+     "Braided",
+     "Cornrows"
+    ]
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud16_6.html",
+  "sourceTitle": "Family Feud season 16 · broadcast-board transcription",
+  "season": 16,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-16-7-68",
+  "prompt": "What gets measured in cups?",
+  "answers": [
+   {
+    "label": "Flour",
+    "points": 31,
+    "aliases": []
+   },
+   {
+    "label": "Sugar",
+    "points": 26,
+    "aliases": []
+   },
+   {
+    "label": "Bra / Dairy pillows",
+    "points": 14,
+    "aliases": [
+     "BRA",
+     "DAIRY PILLOWS",
+     "Bra",
+     "Dairy pillows"
+    ]
+   },
+   {
+    "label": "Milk",
+    "points": 9,
+    "aliases": []
+   },
+   {
+    "label": "Water",
+    "points": 8,
+    "aliases": []
+   },
+   {
+    "label": "Coffee",
+    "points": 3,
+    "aliases": []
+   },
+   {
+    "label": "Oatmeal",
+    "points": 2,
+    "aliases": []
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud16_7.html",
+  "sourceTitle": "Family Feud season 16 · broadcast-board transcription",
+  "season": 16,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-16-7-93",
+  "prompt": "Where can a loud visitor spoil everyone else's experience?",
+  "answers": [
+   {
+    "label": "Movies / Theater",
+    "points": 33,
+    "aliases": [
+     "MOVIES",
+     "THEATER",
+     "Movies",
+     "Theater"
+    ]
+   },
+   {
+    "label": "Eatery / Waffle house",
+    "points": 23,
+    "aliases": [
+     "EATERY",
+     "WAFFLE HOUSE",
+     "Eatery",
+     "Waffle house",
+     "waffle house"
+    ]
+   },
+   {
+    "label": "Library",
+    "points": 11,
+    "aliases": []
+   },
+   {
+    "label": "Bar / Club",
+    "points": 10,
+    "aliases": [
+     "BAR",
+     "CLUB",
+     "Bar",
+     "Club",
+     "bar",
+     "pub"
+    ]
+   },
+   {
+    "label": "Sporting event",
+    "points": 6,
+    "aliases": []
+   },
+   {
+    "label": "Concert / Susan boyle",
+    "points": 5,
+    "aliases": [
+     "CONCERT",
+     "SUSAN BOYLE",
+     "Concert",
+     "Susan boyle"
+    ]
+   },
+   {
+    "label": "Park",
+    "points": 3,
+    "aliases": []
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud16_7.html",
+  "sourceTitle": "Family Feud season 16 · broadcast-board transcription",
+  "season": 16,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-16-8-41",
+  "prompt": "What can be riddled with holes?",
+  "answers": [
+   {
+    "label": "Swiss cheese",
+    "points": 40,
+    "aliases": []
+   },
+   {
+    "label": "Clothes / Socks",
+    "points": 16,
+    "aliases": [
+     "CLOTHES",
+     "SOCKS",
+     "Clothes",
+     "Socks",
+     "clothes",
+     "clothing"
+    ]
+   },
+   {
+    "label": "Alibi / Story",
+    "points": 14,
+    "aliases": [
+     "ALIBI",
+     "STORY",
+     "Alibi",
+     "Story"
+    ]
+   },
+   {
+    "label": "Net / Fishing net",
+    "points": 9,
+    "aliases": [
+     "NET",
+     "FISHING NET",
+     "Net",
+     "Fishing net"
+    ]
+   },
+   {
+    "label": "Colander / Strainer",
+    "points": 8,
+    "aliases": [
+     "COLANDER",
+     "STRAINER",
+     "Colander",
+     "Strainer"
+    ]
+   },
+   {
+    "label": "Golf course",
+    "points": 2,
+    "aliases": []
+   },
+   {
+    "label": "Screen",
+    "points": 2,
+    "aliases": []
+   },
+   {
+    "label": "Road / Street",
+    "points": 2,
+    "aliases": [
+     "ROAD",
+     "STREET",
+     "Road",
+     "Street"
+    ]
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud16_8.html",
+  "sourceTitle": "Family Feud season 16 · broadcast-board transcription",
+  "season": 16,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-16-8-61",
+  "prompt": "Your seatmate on a flight smells terrible. What might you do?",
+  "answers": [
+   {
+    "label": "Change seats",
+    "points": 39,
+    "aliases": []
+   },
+   {
+    "label": "Cover nose / Mask",
+    "points": 24,
+    "aliases": [
+     "COVER NOSE",
+     "MASK",
+     "Cover nose",
+     "Mask"
+    ]
+   },
+   {
+    "label": "Spray perfume",
+    "points": 6,
+    "aliases": []
+   },
+   {
+    "label": "Turn head",
+    "points": 6,
+    "aliases": []
+   },
+   {
+    "label": "Endure / Enjoy it",
+    "points": 6,
+    "aliases": [
+     "ENDURE",
+     "ENJOY IT",
+     "Endure",
+     "Enjoy it"
+    ]
+   },
+   {
+    "label": "Tell them they smell",
+    "points": 3,
+    "aliases": [
+     "\"YOU REEK, YO\"",
+     "YOU REEK, YO"
+    ]
+   },
+   {
+    "label": "Sleep",
+    "points": 3,
+    "aliases": [
+     "sleeping"
+    ]
+   },
+   {
+    "label": "Hang in bathroom",
+    "points": 3,
+    "aliases": []
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud16_8.html",
+  "sourceTitle": "Family Feud season 16 · broadcast-board transcription",
+  "season": 16,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-17-5-48",
+  "prompt": "Finish a familiar expression: “Shark ___.”",
+  "answers": [
+   {
+    "label": "Shark tank",
+    "points": 33,
+    "aliases": [
+     "TANK",
+     "TANK"
+    ]
+   },
+   {
+    "label": "Shark attack",
+    "points": 29,
+    "aliases": [
+     "ATTACK",
+     "ATTACK"
+    ]
+   },
+   {
+    "label": "Shark bait",
+    "points": 22,
+    "aliases": [
+     "BAIT",
+     "BAIT"
+    ]
+   },
+   {
+    "label": "Shark week",
+    "points": 4,
+    "aliases": [
+     "WEEK",
+     "WEEK"
+    ]
+   },
+   {
+    "label": "Shark Tale / shark tail",
+    "points": 4,
+    "aliases": [
+     "SHARK TALE/TAIL",
+     "SHARK TALE",
+     "TAIL",
+     "Shark Tale",
+     "shark tail",
+     "TALE/TAIL",
+     "TALE"
+    ]
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud17_5.html",
+  "sourceTitle": "Family Feud season 17 · broadcast-board transcription",
+  "season": 17,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-17-5-55",
+  "prompt": "Where might someone complain that the place is completely dead?",
+  "answers": [
+   {
+    "label": "Bar / Club",
+    "points": 65,
+    "aliases": [
+     "BAR",
+     "CLUB",
+     "Bar",
+     "Club",
+     "bar",
+     "pub"
+    ]
+   },
+   {
+    "label": "Mortuary / Cemetery",
+    "points": 7,
+    "aliases": [
+     "MORTUARY",
+     "CEMETERY",
+     "Mortuary",
+     "Cemetery"
+    ]
+   },
+   {
+    "label": "Mall / Store",
+    "points": 6,
+    "aliases": [
+     "MALL",
+     "STORE",
+     "Mall",
+     "Store"
+    ]
+   },
+   {
+    "label": "Party",
+    "points": 6,
+    "aliases": []
+   },
+   {
+    "label": "Restaurant",
+    "points": 4,
+    "aliases": [
+     "eatery"
+    ]
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud17_5.html",
+  "sourceTitle": "Family Feud season 17 · broadcast-board transcription",
+  "season": 17,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-17-5-18",
+  "prompt": "What can be pumped up and let down?",
+  "answers": [
+   {
+    "label": "Tire / Inner tube",
+    "points": 33,
+    "aliases": [
+     "TIRE",
+     "INNER TUBE",
+     "Tire",
+     "Inner tube"
+    ]
+   },
+   {
+    "label": "Ball / Football",
+    "points": 26,
+    "aliases": [
+     "BALL",
+     "FOOTBALL",
+     "Ball",
+     "Football",
+     "football"
+    ]
+   },
+   {
+    "label": "Ego / Emotions",
+    "points": 18,
+    "aliases": [
+     "EGO",
+     "EMOTIONS",
+     "Ego",
+     "Emotions"
+    ]
+   },
+   {
+    "label": "Balloon",
+    "points": 13,
+    "aliases": []
+   },
+   {
+    "label": "Air mattress",
+    "points": 8,
+    "aliases": []
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud17_5.html",
+  "sourceTitle": "Family Feud season 17 · broadcast-board transcription",
+  "season": 17,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-17-6-65",
+  "prompt": "What would you need to get a disco open for business?",
+  "answers": [
+   {
+    "label": "Music / DJ",
+    "points": 35,
+    "aliases": [
+     "GROOVY TUNES/DJ",
+     "GROOVY TUNES",
+     "DJ",
+     "Music"
+    ]
+   },
+   {
+    "label": "Disco ball",
+    "points": 35,
+    "aliases": []
+   },
+   {
+    "label": "Money",
+    "points": 11,
+    "aliases": [
+     "cash",
+     "dollars",
+     "moolah",
+     "moola"
+    ]
+   },
+   {
+    "label": "Dance floor",
+    "points": 7,
+    "aliases": []
+   },
+   {
+    "label": "Licenses / Permits",
+    "points": 4,
+    "aliases": [
+     "LICENSES",
+     "PERMITS",
+     "Licenses",
+     "Permits"
+    ]
+   },
+   {
+    "label": "Funky lights",
+    "points": 3,
+    "aliases": []
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud17_6.html",
+  "sourceTitle": "Family Feud season 17 · broadcast-board transcription",
+  "season": 17,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-17-6-46",
+  "prompt": "What might someone slide across their lips?",
+  "answers": [
+   {
+    "label": "Chapstick / Balm",
+    "points": 44,
+    "aliases": [
+     "CHAPSTICK",
+     "BALM",
+     "Chapstick",
+     "Balm"
+    ]
+   },
+   {
+    "label": "Tongue",
+    "points": 26,
+    "aliases": []
+   },
+   {
+    "label": "Lipstick / Gloss",
+    "points": 19,
+    "aliases": [
+     "LIPSTICK",
+     "GLOSS",
+     "Lipstick",
+     "Gloss"
+    ]
+   },
+   {
+    "label": "Finger",
+    "points": 3,
+    "aliases": []
+   },
+   {
+    "label": "Food / Juicy cherry",
+    "points": 2,
+    "aliases": [
+     "FOOD",
+     "JUICY CHERRY",
+     "Food",
+     "Juicy cherry",
+     "food",
+     "snacks"
+    ]
+   },
+   {
+    "label": "Ice / Water",
+    "points": 2,
+    "aliases": [
+     "ICE",
+     "WATER",
+     "Ice",
+     "Water"
+    ]
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud17_6.html",
+  "sourceTitle": "Family Feud season 17 · broadcast-board transcription",
+  "season": 17,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-17-6-44",
+  "prompt": "Which creature's bite could send you to a doctor?",
+  "answers": [
+   {
+    "label": "Snake / Rattlesnake",
+    "points": 48,
+    "aliases": [
+     "SNAKE",
+     "RATTLESNAKE",
+     "Snake",
+     "Rattlesnake"
+    ]
+   },
+   {
+    "label": "Bug / Brown recluse",
+    "points": 22,
+    "aliases": [
+     "BUG",
+     "BROWN RECLUSE",
+     "Bug",
+     "Brown recluse"
+    ]
+   },
+   {
+    "label": "Dog",
+    "points": 20,
+    "aliases": [
+     "dogs",
+     "puppy",
+     "puppies",
+     "pooch"
+    ]
+   },
+   {
+    "label": "Raccoon",
+    "points": 2,
+    "aliases": []
+   },
+   {
+    "label": "Rat",
+    "points": 2,
+    "aliases": []
+   },
+   {
+    "label": "Alligator",
+    "points": 2,
+    "aliases": []
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud17_6.html",
+  "sourceTitle": "Family Feud season 17 · broadcast-board transcription",
+  "season": 17,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-17-7-82",
+  "prompt": "What might a kindergartner stick into their nose?",
+  "answers": [
+   {
+    "label": "Crayon",
+    "points": 31,
+    "aliases": []
+   },
+   {
+    "label": "Finger",
+    "points": 26,
+    "aliases": [
+     "HIS FINGER"
+    ]
+   },
+   {
+    "label": "Pencil",
+    "points": 17,
+    "aliases": []
+   },
+   {
+    "label": "Produce / Broccoli",
+    "points": 10,
+    "aliases": [
+     "PRODUCE",
+     "BROCCOLI",
+     "Produce",
+     "Broccoli"
+    ]
+   },
+   {
+    "label": "Toy / LEGO",
+    "points": 4,
+    "aliases": [
+     "TOY",
+     "LEGO",
+     "Toy"
+    ]
+   },
+   {
+    "label": "Eraser",
+    "points": 3,
+    "aliases": []
+   },
+   {
+    "label": "Candy / Jelly bean",
+    "points": 2,
+    "aliases": [
+     "CANDY",
+     "JELLY BEAN",
+     "Candy",
+     "Jelly bean",
+     "candy",
+     "sweets"
+    ]
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud17_7.html",
+  "sourceTitle": "Family Feud season 17 · broadcast-board transcription",
+  "season": 17,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-17-7-72",
+  "prompt": "A brawl erupts at bingo night. What might fly across the room?",
+  "answers": [
+   {
+    "label": "Cane / Walker",
+    "points": 35,
+    "aliases": [
+     "CANE",
+     "WALKER",
+     "Cane",
+     "Walker"
+    ]
+   },
+   {
+    "label": "False teeth",
+    "points": 28,
+    "aliases": []
+   },
+   {
+    "label": "Marker / Dauber",
+    "points": 11,
+    "aliases": [
+     "MARKER",
+     "DAUBER",
+     "Marker",
+     "Dauber"
+    ]
+   },
+   {
+    "label": "Bingo chips",
+    "points": 11,
+    "aliases": []
+   },
+   {
+    "label": "Purse",
+    "points": 5,
+    "aliases": []
+   },
+   {
+    "label": "Pen / Pencil",
+    "points": 2,
+    "aliases": [
+     "PEN",
+     "PENCIL",
+     "Pen",
+     "Pencil"
+    ]
+   },
+   {
+    "label": "Bingo card",
+    "points": 2,
+    "aliases": []
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud17_7.html",
+  "sourceTitle": "Family Feud season 17 · broadcast-board transcription",
+  "season": 17,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-17-8-75",
+  "prompt": "What might a wedding guest sneak home without permission?",
+  "answers": [
+   {
+    "label": "Flowers",
+    "points": 27,
+    "aliases": [
+     "flower"
+    ]
+   },
+   {
+    "label": "Gift / cash",
+    "points": 15,
+    "aliases": [
+     "GIFT",
+     "CASH",
+     "Gift",
+     "cash"
+    ]
+   },
+   {
+    "label": "Silverware",
+    "points": 14,
+    "aliases": []
+   },
+   {
+    "label": "Cake / Food",
+    "points": 12,
+    "aliases": [
+     "CAKE",
+     "FOOD",
+     "Cake",
+     "Food",
+     "food",
+     "snacks"
+    ]
+   },
+   {
+    "label": "Napkins",
+    "points": 8,
+    "aliases": []
+   },
+   {
+    "label": "Bride / Person",
+    "points": 6,
+    "aliases": [
+     "BRIDE",
+     "PERSON",
+     "Bride",
+     "Person"
+    ]
+   },
+   {
+    "label": "Glass / Wine glass",
+    "points": 6,
+    "aliases": [
+     "GLASS",
+     "WINE GLASS",
+     "Glass",
+     "Wine glass"
+    ]
+   },
+   {
+    "label": "Alcohol",
+    "points": 6,
+    "aliases": [
+     "BOOZE"
+    ]
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud17_8.html",
+  "sourceTitle": "Family Feud season 17 · broadcast-board transcription",
+  "season": 17,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-17-8-26",
+  "prompt": "What looks adorable on a baby but ridiculous on an adult?",
+  "answers": [
+   {
+    "label": "Bonnet / Ducky hat",
+    "points": 31,
+    "aliases": [
+     "BONNET",
+     "DUCKY HAT",
+     "Bonnet",
+     "Ducky hat"
+    ]
+   },
+   {
+    "label": "Onesie / Romper",
+    "points": 29,
+    "aliases": [
+     "ONESIE",
+     "ROMPER",
+     "Onesie",
+     "Romper"
+    ]
+   },
+   {
+    "label": "Bib",
+    "points": 14,
+    "aliases": []
+   },
+   {
+    "label": "Diaper",
+    "points": 12,
+    "aliases": [
+     "nappy"
+    ]
+   },
+   {
+    "label": "Footie pajamas",
+    "points": 3,
+    "aliases": []
+   },
+   {
+    "label": "Booties",
+    "points": 3,
+    "aliases": []
+   },
+   {
+    "label": "Headband / Bow",
+    "points": 3,
+    "aliases": [
+     "HEADBAND",
+     "BOW",
+     "Headband",
+     "Bow"
+    ]
+   },
+   {
+    "label": "Tutu",
+    "points": 2,
+    "aliases": []
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud17_8.html",
+  "sourceTitle": "Family Feud season 17 · broadcast-board transcription",
+  "season": 17,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-18-5-58",
+  "prompt": "You win the lottery. What might you do to your boss?",
+  "answers": [
+   {
+    "label": "Quit",
+    "points": 58,
+    "aliases": [
+     "WAVE BYE/QUIT",
+     "WAVE BYE"
+    ]
+   },
+   {
+    "label": "Tell them off / rude gesture",
+    "points": 17,
+    "aliases": [
+     "TELL OFF/FLIP OFF",
+     "TELL OFF",
+     "FLIP OFF",
+     "Tell them off",
+     "rude gesture"
+    ]
+   },
+   {
+    "label": "Buy the company / fire the boss",
+    "points": 13,
+    "aliases": [
+     "BUY CO./FIRE BOSS",
+     "BUY CO.",
+     "FIRE BOSS",
+     "Buy the company",
+     "fire the boss"
+    ]
+   },
+   {
+    "label": "Beat / Smack 'em",
+    "points": 3,
+    "aliases": [
+     "BEAT",
+     "SMACK 'EM",
+     "Beat",
+     "Smack 'em"
+    ]
+   },
+   {
+    "label": "Give money to the boss",
+    "points": 3,
+    "aliases": [
+     "SPEND ON BOSS/SHARE $",
+     "SPEND ON BOSS",
+     "SHARE $"
+    ]
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud18_5.html",
+  "sourceTitle": "Family Feud season 18 · broadcast-board transcription",
+  "season": 18,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-18-5-92",
+  "prompt": "What could a 100-year-old bank robber forget at the scene?",
+  "answers": [
+   {
+    "label": "Teeth / Dentures",
+    "points": 37,
+    "aliases": [
+     "TEETH",
+     "DENTURES",
+     "Teeth",
+     "Dentures",
+     "dentures",
+     "false teeth"
+    ]
+   },
+   {
+    "label": "Cane / Walker",
+    "points": 12,
+    "aliases": [
+     "CANE",
+     "WALKER",
+     "Cane",
+     "Walker"
+    ]
+   },
+   {
+    "label": "Gun / Musket",
+    "points": 12,
+    "aliases": [
+     "GUN",
+     "MUSKET",
+     "Gun",
+     "Musket",
+     "gun",
+     "firearm",
+     "pistol",
+     "rifle",
+     "shotgun"
+    ]
+   },
+   {
+    "label": "Money",
+    "points": 11,
+    "aliases": [
+     "cash",
+     "dollars",
+     "moolah",
+     "moola"
+    ]
+   },
+   {
+    "label": "Glasses",
+    "points": 7,
+    "aliases": [
+     "HIS GLASSES"
+    ]
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud18_5.html",
+  "sourceTitle": "Family Feud season 18 · broadcast-board transcription",
+  "season": 18,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-18-5-102",
+  "prompt": "Where do you find people fidgeting uncomfortably in their chairs?",
+  "answers": [
+   {
+    "label": "Theater / Movies",
+    "points": 27,
+    "aliases": [
+     "THEATER",
+     "MOVIES",
+     "Theater",
+     "Movies"
+    ]
+   },
+   {
+    "label": "Church",
+    "points": 18,
+    "aliases": []
+   },
+   {
+    "label": "Dentist / Doctor",
+    "points": 12,
+    "aliases": [
+     "DENTIST",
+     "DOCTOR",
+     "Dentist",
+     "Doctor",
+     "doctor",
+     "physician"
+    ]
+   },
+   {
+    "label": "Court",
+    "points": 9,
+    "aliases": []
+   },
+   {
+    "label": "Airplane",
+    "points": 5,
+    "aliases": [
+     "plane",
+     "aeroplane"
+    ]
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud18_5.html",
+  "sourceTitle": "Family Feud season 18 · broadcast-board transcription",
+  "season": 18,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-18-6-105",
+  "prompt": "What should you wait to stop before getting off it?",
+  "answers": [
+   {
+    "label": "Train / Subway",
+    "points": 25,
+    "aliases": [
+     "TRAIN",
+     "SUBWAY",
+     "Train",
+     "Subway",
+     "subway",
+     "underground",
+     "metro"
+    ]
+   },
+   {
+    "label": "Car / Truck",
+    "points": 25,
+    "aliases": [
+     "CAR",
+     "TRUCK",
+     "Car",
+     "Truck",
+     "car",
+     "cars",
+     "automobile",
+     "vehicle"
+    ]
+   },
+   {
+    "label": "Airplane",
+    "points": 17,
+    "aliases": [
+     "plane",
+     "aeroplane"
+    ]
+   },
+   {
+    "label": "Amusement ride",
+    "points": 9,
+    "aliases": []
+   },
+   {
+    "label": "Bicycle",
+    "points": 9,
+    "aliases": []
+   },
+   {
+    "label": "Horse",
+    "points": 5,
+    "aliases": [
+     "horses"
+    ]
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud18_6.html",
+  "sourceTitle": "Family Feud season 18 · broadcast-board transcription",
+  "season": 18,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-18-6-101",
+  "prompt": "Your boss is looking for someone to fire. Where at work could you hide?",
+  "answers": [
+   {
+    "label": "Bathroom",
+    "points": 52,
+    "aliases": [
+     "restroom",
+     "washroom"
+    ]
+   },
+   {
+    "label": "Under my desk",
+    "points": 22,
+    "aliases": []
+   },
+   {
+    "label": "Conference room",
+    "points": 4,
+    "aliases": []
+   },
+   {
+    "label": "Break room",
+    "points": 4,
+    "aliases": []
+   },
+   {
+    "label": "Car / Pkg. lot",
+    "points": 4,
+    "aliases": [
+     "MY CAR/PKG. LOT",
+     "CAR",
+     "PKG. LOT",
+     "Car",
+     "Pkg. lot",
+     "car",
+     "cars",
+     "automobile",
+     "vehicle"
+    ]
+   },
+   {
+    "label": "Closet",
+    "points": 4,
+    "aliases": []
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud18_6.html",
+  "sourceTitle": "Family Feud season 18 · broadcast-board transcription",
+  "season": 18,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-18-6-109",
+  "prompt": "What do you hope Grandpa won't do over Thanksgiving dinner?",
+  "answers": [
+   {
+    "label": "Pass gas",
+    "points": 54,
+    "aliases": [
+     "RIP A JUICY ONE",
+     "fart",
+     "farting",
+     "flatulence"
+    ]
+   },
+   {
+    "label": "Belch",
+    "points": 14,
+    "aliases": []
+   },
+   {
+    "label": "Sleep / Snore",
+    "points": 7,
+    "aliases": [
+     "SLEEP",
+     "SNORE",
+     "Sleep",
+     "Snore",
+     "sleep",
+     "sleeping"
+    ]
+   },
+   {
+    "label": "Pick / Remove teeth",
+    "points": 6,
+    "aliases": [
+     "PICK",
+     "REMOVE TEETH",
+     "Pick",
+     "Remove teeth"
+    ]
+   },
+   {
+    "label": "Die",
+    "points": 5,
+    "aliases": [
+     "DIE/IN STUFFING",
+     "IN STUFFING"
+    ]
+   },
+   {
+    "label": "Vomit",
+    "points": 3,
+    "aliases": [
+     "BARF",
+     "barf",
+     "throw up",
+     "puke"
+    ]
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud18_6.html",
+  "sourceTitle": "Family Feud season 18 · broadcast-board transcription",
+  "season": 18,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-18-6-39",
+  "prompt": "What would a cowboy want to take to his grave?",
+  "answers": [
+   {
+    "label": "Boots on",
+    "points": 54,
+    "aliases": [
+     "HIS BOOTS ON"
+    ]
+   },
+   {
+    "label": "Horse of course",
+    "points": 13,
+    "aliases": []
+   },
+   {
+    "label": "Gun / Revolver",
+    "points": 12,
+    "aliases": [
+     "GUN/SIX-SHOOTER",
+     "GUN",
+     "SIX-SHOOTER",
+     "Gun",
+     "Revolver",
+     "gun",
+     "firearm",
+     "pistol",
+     "rifle",
+     "shotgun"
+    ]
+   },
+   {
+    "label": "Hat",
+    "points": 9,
+    "aliases": [
+     "HIS HAT"
+    ]
+   },
+   {
+    "label": "Spurs",
+    "points": 5,
+    "aliases": [
+     "HIS SPURS"
+    ]
+   },
+   {
+    "label": "Saddle",
+    "points": 3,
+    "aliases": [
+     "HIS SADDLE"
+    ]
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud18_6.html",
+  "sourceTitle": "Family Feud season 18 · broadcast-board transcription",
+  "season": 18,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-18-7-51",
+  "prompt": "What might you take out just before bedtime?",
+  "answers": [
+   {
+    "label": "Teeth / Dentures",
+    "points": 41,
+    "aliases": [
+     "TEETH",
+     "DENTURES",
+     "Teeth",
+     "Dentures",
+     "dentures",
+     "false teeth"
+    ]
+   },
+   {
+    "label": "Trash",
+    "points": 25,
+    "aliases": [
+     "garbage",
+     "rubbish"
+    ]
+   },
+   {
+    "label": "Dog / Cat",
+    "points": 13,
+    "aliases": [
+     "DOG",
+     "CAT",
+     "Dog",
+     "Cat",
+     "dog",
+     "dogs",
+     "puppy",
+     "puppies",
+     "pooch",
+     "cat",
+     "cats",
+     "kitten",
+     "kittens",
+     "kitty"
+    ]
+   },
+   {
+    "label": "Frozen food / Snack",
+    "points": 5,
+    "aliases": [
+     "FROZEN FOOD",
+     "SNACK",
+     "Frozen food",
+     "Snack"
+    ]
+   },
+   {
+    "label": "Contacts",
+    "points": 4,
+    "aliases": []
+   },
+   {
+    "label": "Book",
+    "points": 4,
+    "aliases": [
+     "A BOOK",
+     "books"
+    ]
+   },
+   {
+    "label": "Clothes / Pajamas",
+    "points": 3,
+    "aliases": [
+     "CLOTHES/PJS",
+     "CLOTHES",
+     "PJS",
+     "Clothes",
+     "Pajamas",
+     "clothes",
+     "clothing"
+    ]
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud18_7.html",
+  "sourceTitle": "Family Feud season 18 · broadcast-board transcription",
+  "season": 18,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-18-7-28",
+  "prompt": "What does Grandpa like keeping close enough to reach?",
+  "answers": [
+   {
+    "label": "TV remote",
+    "points": 66,
+    "aliases": []
+   },
+   {
+    "label": "Beverage / Beer",
+    "points": 11,
+    "aliases": [
+     "BEVERAGE",
+     "BEER",
+     "Beverage",
+     "Beer"
+    ]
+   },
+   {
+    "label": "Cane",
+    "points": 6,
+    "aliases": []
+   },
+   {
+    "label": "Candy / Snacks",
+    "points": 5,
+    "aliases": [
+     "CANDY",
+     "SNACKS",
+     "Candy",
+     "Snacks",
+     "candy",
+     "sweets"
+    ]
+   },
+   {
+    "label": "Medicine",
+    "points": 3,
+    "aliases": [
+     "MEDS"
+    ]
+   },
+   {
+    "label": "Grandma",
+    "points": 3,
+    "aliases": []
+   },
+   {
+    "label": "Newspaper",
+    "points": 2,
+    "aliases": []
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud18_7.html",
+  "sourceTitle": "Family Feud season 18 · broadcast-board transcription",
+  "season": 18,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-18-7-23",
+  "prompt": "Which way of cooking an egg could also describe a boss?",
+  "answers": [
+   {
+    "label": "Scrambled",
+    "points": 39,
+    "aliases": []
+   },
+   {
+    "label": "Hard / Soft-boiled",
+    "points": 26,
+    "aliases": [
+     "HARD",
+     "SOFT-BOILED",
+     "Hard",
+     "Soft-boiled"
+    ]
+   },
+   {
+    "label": "Fried",
+    "points": 14,
+    "aliases": []
+   },
+   {
+    "label": "Over easy",
+    "points": 9,
+    "aliases": []
+   },
+   {
+    "label": "Sunny-side up",
+    "points": 4,
+    "aliases": []
+   },
+   {
+    "label": "Poached",
+    "points": 3,
+    "aliases": []
+   },
+   {
+    "label": "Runny",
+    "points": 2,
+    "aliases": []
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud18_7.html",
+  "sourceTitle": "Family Feud season 18 · broadcast-board transcription",
+  "season": 18,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-18-8-86",
+  "prompt": "What would ruin a meatball if you found it inside?",
+  "answers": [
+   {
+    "label": "Hair / fur",
+    "points": 42,
+    "aliases": [
+     "HAIR",
+     "FUR",
+     "Hair",
+     "fur"
+    ]
+   },
+   {
+    "label": "Maggots / Bug / Worm",
+    "points": 20,
+    "aliases": [
+     "MAGGOTS",
+     "BUG",
+     "WORM",
+     "Maggots",
+     "Bug",
+     "Worm"
+    ]
+   },
+   {
+    "label": "Bone",
+    "points": 11,
+    "aliases": []
+   },
+   {
+    "label": "Fingernail",
+    "points": 5,
+    "aliases": []
+   },
+   {
+    "label": "Veggies / Onion",
+    "points": 4,
+    "aliases": [
+     "VEGGIES",
+     "ONION",
+     "Veggies",
+     "Onion"
+    ]
+   },
+   {
+    "label": "Eggshell",
+    "points": 2,
+    "aliases": []
+   },
+   {
+    "label": "Severed finger",
+    "points": 2,
+    "aliases": []
+   },
+   {
+    "label": "Teeth",
+    "points": 2,
+    "aliases": []
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud18_8.html",
+  "sourceTitle": "Family Feud season 18 · broadcast-board transcription",
+  "season": 18,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-18-8-12",
+  "prompt": "What might an extremely cheap airline make two passengers share?",
+  "answers": [
+   {
+    "label": "Seat",
+    "points": 45,
+    "aliases": []
+   },
+   {
+    "label": "Food / Drink",
+    "points": 20,
+    "aliases": [
+     "FOOD",
+     "DRINK",
+     "Food",
+     "Drink",
+     "food",
+     "snacks"
+    ]
+   },
+   {
+    "label": "Pillow / Blanket",
+    "points": 14,
+    "aliases": [
+     "PILLOW",
+     "BLANKET",
+     "Pillow",
+     "Blanket",
+     "pillow",
+     "pillows"
+    ]
+   },
+   {
+    "label": "Luggage",
+    "points": 6,
+    "aliases": [
+     "baggage"
+    ]
+   },
+   {
+    "label": "TV monitor",
+    "points": 4,
+    "aliases": []
+   },
+   {
+    "label": "Tray table",
+    "points": 3,
+    "aliases": []
+   },
+   {
+    "label": "Oxygen mask",
+    "points": 3,
+    "aliases": []
+   },
+   {
+    "label": "Barf bag",
+    "points": 2,
+    "aliases": []
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud18_8.html",
+  "sourceTitle": "Family Feud season 18 · broadcast-board transcription",
+  "season": 18,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-19-5-34",
+  "prompt": "What does an indoor cat wish it could join outdoor cats in chasing?",
+  "answers": [
+   {
+    "label": "Birds",
+    "points": 50,
+    "aliases": []
+   },
+   {
+    "label": "Mice / Rats",
+    "points": 24,
+    "aliases": [
+     "MICE",
+     "RATS",
+     "Mice",
+     "Rats"
+    ]
+   },
+   {
+    "label": "Squirrels",
+    "points": 15,
+    "aliases": []
+   },
+   {
+    "label": "Dogs",
+    "points": 3,
+    "aliases": [
+     "WEAK DOGS"
+    ]
+   },
+   {
+    "label": "Cats",
+    "points": 2,
+    "aliases": [
+     "CATS/HOT KITTIES",
+     "HOT KITTIES"
+    ]
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud19_5.html",
+  "sourceTitle": "Family Feud season 19 · broadcast-board transcription",
+  "season": 19,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-19-5-62",
+  "prompt": "A bald person wakes up with a full head of hair. What do they do?",
+  "answers": [
+   {
+    "label": "Celebrate / cry / jump for joy",
+    "points": 56,
+    "aliases": [
+     "YELL/CRY/JUMP 4 JOY",
+     "YELL",
+     "CRY",
+     "JUMP 4 JOY",
+     "Celebrate",
+     "cry",
+     "jump for joy",
+     "crying"
+    ]
+   },
+   {
+    "label": "Comb / Style it",
+    "points": 16,
+    "aliases": [
+     "COMB",
+     "STYLE IT",
+     "Comb",
+     "Style it"
+    ]
+   },
+   {
+    "label": "Feel / Pull it",
+    "points": 6,
+    "aliases": [
+     "FEEL",
+     "PULL IT",
+     "Feel",
+     "Pull it"
+    ]
+   },
+   {
+    "label": "Stare in mirror",
+    "points": 5,
+    "aliases": []
+   },
+   {
+    "label": "Haircut / Shave it",
+    "points": 4,
+    "aliases": [
+     "HAIRCUT",
+     "SHAVE IT",
+     "Haircut",
+     "Shave it"
+    ]
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud19_5.html",
+  "sourceTitle": "Family Feud season 19 · broadcast-board transcription",
+  "season": 19,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-19-5-97",
+  "prompt": "Where do you enjoy visiting but wouldn't want a job?",
+  "answers": [
+   {
+    "label": "Restaurant",
+    "points": 24,
+    "aliases": [
+     "eatery"
+    ]
+   },
+   {
+    "label": "Store / Mall",
+    "points": 19,
+    "aliases": [
+     "STORE",
+     "MALL",
+     "Store",
+     "Mall"
+    ]
+   },
+   {
+    "label": "Bar / Nightclub",
+    "points": 7,
+    "aliases": [
+     "BAR",
+     "NIGHTCLUB",
+     "Bar",
+     "Nightclub",
+     "bar",
+     "pub"
+    ]
+   },
+   {
+    "label": "Amusement park",
+    "points": 7,
+    "aliases": []
+   },
+   {
+    "label": "Zoo",
+    "points": 5,
+    "aliases": []
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud19_5.html",
+  "sourceTitle": "Family Feud season 19 · broadcast-board transcription",
+  "season": 19,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-19-5-98",
+  "prompt": "What might we have caught you eating in kindergarten?",
+  "answers": [
+   {
+    "label": "Cookies / Crackers",
+    "points": 14,
+    "aliases": [
+     "COOKIES",
+     "CRACKERS",
+     "Cookies",
+     "Crackers"
+    ]
+   },
+   {
+    "label": "Sandwich / Pbj",
+    "points": 14,
+    "aliases": [
+     "SANDWICH",
+     "PBJ",
+     "Sandwich",
+     "Pbj"
+    ]
+   },
+   {
+    "label": "Paste / Glue",
+    "points": 13,
+    "aliases": [
+     "PASTE",
+     "GLUE",
+     "Paste",
+     "Glue"
+    ]
+   },
+   {
+    "label": "Candy",
+    "points": 12,
+    "aliases": [
+     "sweets"
+    ]
+   },
+   {
+    "label": "Apple / Fruit",
+    "points": 9,
+    "aliases": [
+     "APPLE",
+     "FRUIT",
+     "Apple",
+     "Fruit"
+    ]
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud19_5.html",
+  "sourceTitle": "Family Feud season 19 · broadcast-board transcription",
+  "season": 19,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-19-6-92",
+  "prompt": "What would they teach at a school for elves?",
+  "answers": [
+   {
+    "label": "Build toys",
+    "points": 68,
+    "aliases": []
+   },
+   {
+    "label": "Wrap gifts",
+    "points": 12,
+    "aliases": []
+   },
+   {
+    "label": "Sew / Make clothes",
+    "points": 4,
+    "aliases": [
+     "SEW",
+     "MAKE CLOTHES",
+     "Sew",
+     "Make clothes"
+    ]
+   },
+   {
+    "label": "Sing carols",
+    "points": 4,
+    "aliases": []
+   },
+   {
+    "label": "Fly sleigh",
+    "points": 2,
+    "aliases": []
+   },
+   {
+    "label": "Smile / Have fun",
+    "points": 2,
+    "aliases": [
+     "SMILE",
+     "HAVE FUN",
+     "Smile",
+     "Have fun",
+     "smile",
+     "smiling"
+    ]
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud19_6.html",
+  "sourceTitle": "Family Feud season 19 · broadcast-board transcription",
+  "season": 19,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-19-6-76",
+  "prompt": "What would be strange for a pair of twins to share?",
+  "answers": [
+   {
+    "label": "Spouse / Date",
+    "points": 56,
+    "aliases": [
+     "SPOUSE",
+     "DATE",
+     "Spouse",
+     "Date"
+    ]
+   },
+   {
+    "label": "Toothbrush",
+    "points": 18,
+    "aliases": [
+     "A TOOTHBRUSH"
+    ]
+   },
+   {
+    "label": "Undies",
+    "points": 8,
+    "aliases": []
+   },
+   {
+    "label": "First name",
+    "points": 4,
+    "aliases": [
+     "A FIRST NAME"
+    ]
+   },
+   {
+    "label": "Food / Baby bottle",
+    "points": 4,
+    "aliases": [
+     "FOOD",
+     "BABY BOTTLE",
+     "Food",
+     "Baby bottle",
+     "food",
+     "snacks"
+    ]
+   },
+   {
+    "label": "Bed",
+    "points": 4,
+    "aliases": [
+     "A BED"
+    ]
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud19_6.html",
+  "sourceTitle": "Family Feud season 19 · broadcast-board transcription",
+  "season": 19,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-19-6-113",
+  "prompt": "Where is it difficult to slip away unnoticed?",
+  "answers": [
+   {
+    "label": "Church",
+    "points": 37,
+    "aliases": []
+   },
+   {
+    "label": "Police station / Jail",
+    "points": 21,
+    "aliases": [
+     "POLICE STATION",
+     "JAIL",
+     "Police station",
+     "Jail",
+     "jail",
+     "prison"
+    ]
+   },
+   {
+    "label": "Work / Biz meeting",
+    "points": 12,
+    "aliases": [
+     "WORK",
+     "BIZ MEETING",
+     "Work",
+     "Biz meeting"
+    ]
+   },
+   {
+    "label": "Home / Relative's",
+    "points": 10,
+    "aliases": [
+     "HOME",
+     "RELATIVE'S",
+     "Home",
+     "Relative's"
+    ]
+   },
+   {
+    "label": "Theater / Concert",
+    "points": 7,
+    "aliases": [
+     "THEATER",
+     "CONCERT",
+     "Theater",
+     "Concert"
+    ]
+   },
+   {
+    "label": "Wedding",
+    "points": 3,
+    "aliases": [
+     "A WEDDING"
+    ]
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud19_6.html",
+  "sourceTitle": "Family Feud season 19 · broadcast-board transcription",
+  "season": 19,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-19-6-80",
+  "prompt": "What might a Powerball winner suddenly worry about?",
+  "answers": [
+   {
+    "label": "Greedy \"pals / Family",
+    "points": 37,
+    "aliases": [
+     "GREEDY \"PALS\"/KIN",
+     "GREEDY \"PALS",
+     "KIN",
+     "Greedy \"pals",
+     "Family"
+    ]
+   },
+   {
+    "label": "Taxes",
+    "points": 25,
+    "aliases": []
+   },
+   {
+    "label": "Theft / Crime target",
+    "points": 21,
+    "aliases": [
+     "THEFT",
+     "CRIME TARGET",
+     "Theft",
+     "Crime target"
+    ]
+   },
+   {
+    "label": "Losing ticket",
+    "points": 4,
+    "aliases": []
+   },
+   {
+    "label": "Losing anonymity",
+    "points": 4,
+    "aliases": []
+   },
+   {
+    "label": "Salespeople",
+    "points": 3,
+    "aliases": []
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud19_6.html",
+  "sourceTitle": "Family Feud season 19 · broadcast-board transcription",
+  "season": 19,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-19-7-108",
+  "prompt": "What do some people keep using until it's totally dead?",
+  "answers": [
+   {
+    "label": "Battery",
+    "points": 50,
+    "aliases": []
+   },
+   {
+    "label": "Car / Truck",
+    "points": 10,
+    "aliases": [
+     "CAR",
+     "TRUCK",
+     "Car",
+     "Truck",
+     "car",
+     "cars",
+     "automobile",
+     "vehicle"
+    ]
+   },
+   {
+    "label": "Light bulb",
+    "points": 9,
+    "aliases": []
+   },
+   {
+    "label": "Plants / Flowers",
+    "points": 6,
+    "aliases": [
+     "PLANTS",
+     "FLOWERS",
+     "Plants",
+     "Flowers",
+     "flowers",
+     "flower"
+    ]
+   },
+   {
+    "label": "Phone",
+    "points": 6,
+    "aliases": [
+     "cell phone",
+     "mobile",
+     "mobile phone"
+    ]
+   },
+   {
+    "label": "TV",
+    "points": 5,
+    "aliases": [
+     "television"
+    ]
+   },
+   {
+    "label": "Spouse",
+    "points": 4,
+    "aliases": []
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud19_7.html",
+  "sourceTitle": "Family Feud season 19 · broadcast-board transcription",
+  "season": 19,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-19-7-110",
+  "prompt": "What would a five-year-old want a bank loan to buy?",
+  "answers": [
+   {
+    "label": "Toys",
+    "points": 31,
+    "aliases": []
+   },
+   {
+    "label": "Bike / Tricycle",
+    "points": 26,
+    "aliases": [
+     "BIKE",
+     "TRICYCLE",
+     "Bike",
+     "Tricycle"
+    ]
+   },
+   {
+    "label": "Candy / Gum",
+    "points": 16,
+    "aliases": [
+     "CANDY",
+     "GUM",
+     "Candy",
+     "Gum",
+     "candy",
+     "sweets"
+    ]
+   },
+   {
+    "label": "Gift / For mom",
+    "points": 5,
+    "aliases": [
+     "GIFT",
+     "FOR MOM",
+     "Gift",
+     "For mom"
+    ]
+   },
+   {
+    "label": "Video game / System",
+    "points": 5,
+    "aliases": [
+     "VIDEO GAME",
+     "SYSTEM",
+     "Video game",
+     "System",
+     "video game",
+     "game console",
+     "videogame"
+    ]
+   },
+   {
+    "label": "Pet / Pony",
+    "points": 5,
+    "aliases": [
+     "A PET/PONY",
+     "PET",
+     "PONY",
+     "Pet",
+     "Pony"
+    ]
+   },
+   {
+    "label": "Latest iphone",
+    "points": 2,
+    "aliases": []
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud19_7.html",
+  "sourceTitle": "Family Feud season 19 · broadcast-board transcription",
+  "season": 19,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-19-8-73",
+  "prompt": "What can leak without a plumber being the right person to call?",
+  "answers": [
+   {
+    "label": "Bladder / Body",
+    "points": 33,
+    "aliases": [
+     "BLADDER",
+     "BODY",
+     "Bladder",
+     "Body"
+    ]
+   },
+   {
+    "label": "Roof",
+    "points": 22,
+    "aliases": [
+     "THE ROOF"
+    ]
+   },
+   {
+    "label": "Car / Tire",
+    "points": 21,
+    "aliases": [
+     "CAR",
+     "TIRE",
+     "Car",
+     "Tire",
+     "car",
+     "cars",
+     "automobile",
+     "vehicle"
+    ]
+   },
+   {
+    "label": "Gas line",
+    "points": 5,
+    "aliases": []
+   },
+   {
+    "label": "Groceries / Milk",
+    "points": 3,
+    "aliases": [
+     "GROCERIES",
+     "MILK",
+     "Groceries",
+     "Milk"
+    ]
+   },
+   {
+    "label": "Fridge / Freezer",
+    "points": 3,
+    "aliases": [
+     "FRIDGE",
+     "FREEZER",
+     "Fridge",
+     "Freezer"
+    ]
+   },
+   {
+    "label": "Secrets / Data",
+    "points": 2,
+    "aliases": [
+     "SECRETS",
+     "DATA",
+     "Secrets",
+     "Data"
+    ]
+   },
+   {
+    "label": "Balloon",
+    "points": 2,
+    "aliases": []
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud19_8.html",
+  "sourceTitle": "Family Feud season 19 · broadcast-board transcription",
+  "season": 19,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-19-8-49",
+  "prompt": "What might a lonely person slow-dance with around their apartment?",
+  "answers": [
+   {
+    "label": "Broom / Mop",
+    "points": 35,
+    "aliases": [
+     "BROOM",
+     "MOP",
+     "Broom",
+     "Mop"
+    ]
+   },
+   {
+    "label": "Pillow / Cushion",
+    "points": 22,
+    "aliases": [
+     "PILLOW",
+     "CUSHION",
+     "Pillow",
+     "Cushion",
+     "pillow",
+     "pillows"
+    ]
+   },
+   {
+    "label": "Doll / Mannequin",
+    "points": 15,
+    "aliases": [
+     "DOLL",
+     "MANNEQUIN",
+     "Doll",
+     "Mannequin"
+    ]
+   },
+   {
+    "label": "Lamp",
+    "points": 8,
+    "aliases": []
+   },
+   {
+    "label": "Pet / Great dane",
+    "points": 7,
+    "aliases": [
+     "PET",
+     "GREAT DANE",
+     "Pet",
+     "Great dane",
+     "great dane"
+    ]
+   },
+   {
+    "label": "Stuffed animal",
+    "points": 3,
+    "aliases": []
+   },
+   {
+    "label": "Lonely girl / Guy",
+    "points": 2,
+    "aliases": [
+     "LONELY GIRL",
+     "GUY",
+     "Lonely girl",
+     "Guy"
+    ]
+   },
+   {
+    "label": "Himself",
+    "points": 2,
+    "aliases": []
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud19_8.html",
+  "sourceTitle": "Family Feud season 19 · broadcast-board transcription",
+  "season": 19,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-19-8-105",
+  "prompt": "What would make being a frog unappealing?",
+  "answers": [
+   {
+    "label": "Short life / Eaten",
+    "points": 21,
+    "aliases": [
+     "SHORT LIFE",
+     "EATEN",
+     "Short life",
+     "Eaten"
+    ]
+   },
+   {
+    "label": "Eat bugs",
+    "points": 14,
+    "aliases": []
+   },
+   {
+    "label": "I hate water / Swim'g",
+    "points": 12,
+    "aliases": [
+     "I HATE WATER",
+     "SWIM'G",
+     "I hate water",
+     "Swim'g"
+    ]
+   },
+   {
+    "label": "Too slimy",
+    "points": 12,
+    "aliases": []
+   },
+   {
+    "label": "Too warty",
+    "points": 10,
+    "aliases": []
+   },
+   {
+    "label": "Croak / Don't talk",
+    "points": 9,
+    "aliases": [
+     "CROAK",
+     "DON'T TALK",
+     "Croak",
+     "Don't talk"
+    ]
+   },
+   {
+    "label": "Have to hop",
+    "points": 6,
+    "aliases": []
+   },
+   {
+    "label": "Green isn't my color",
+    "points": 4,
+    "aliases": []
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud19_8.html",
+  "sourceTitle": "Family Feud season 19 · broadcast-board transcription",
+  "season": 19,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-19-8-30",
+  "prompt": "You run out of toilet paper. What might become the last-resort substitute?",
+  "answers": [
+   {
+    "label": "Tissue",
+    "points": 19,
+    "aliases": []
+   },
+   {
+    "label": "Newspaper / Mag",
+    "points": 17,
+    "aliases": [
+     "NEWSPAPER",
+     "MAG",
+     "Newspaper",
+     "Mag"
+    ]
+   },
+   {
+    "label": "Paper towel",
+    "points": 14,
+    "aliases": []
+   },
+   {
+    "label": "Towel / Washcloth",
+    "points": 11,
+    "aliases": [
+     "TOWEL",
+     "WASHCLOTH",
+     "Towel",
+     "Washcloth"
+    ]
+   },
+   {
+    "label": "Napkin",
+    "points": 11,
+    "aliases": []
+   },
+   {
+    "label": "Clothes / Sock",
+    "points": 9,
+    "aliases": [
+     "CLOTHES",
+     "SOCK",
+     "Clothes",
+     "Sock",
+     "clothes",
+     "clothing"
+    ]
+   },
+   {
+    "label": "Hand / Finger",
+    "points": 9,
+    "aliases": [
+     "HAND",
+     "FINGER",
+     "Hand",
+     "Finger"
+    ]
+   },
+   {
+    "label": "Leaf",
+    "points": 6,
+    "aliases": [
+     "A LEAF"
+    ]
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud19_8.html",
+  "sourceTitle": "Family Feud season 19 · broadcast-board transcription",
+  "season": 19,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-20-5-34",
+  "prompt": "Which kind of ball can you chew?",
+  "answers": [
+   {
+    "label": "Gum ball",
+    "points": 81,
+    "aliases": []
+   },
+   {
+    "label": "Meatball",
+    "points": 6,
+    "aliases": []
+   },
+   {
+    "label": "Jawbreaker",
+    "points": 4,
+    "aliases": []
+   },
+   {
+    "label": "Melon ball",
+    "points": 2,
+    "aliases": []
+   },
+   {
+    "label": "Cheese ball",
+    "points": 2,
+    "aliases": []
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud20_5.html",
+  "sourceTitle": "Family Feud season 20 · broadcast-board transcription",
+  "season": 20,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-20-6-81",
+  "prompt": "What do you own that can expire?",
+  "answers": [
+   {
+    "label": "Food / Milk",
+    "points": 43,
+    "aliases": [
+     "FOOD",
+     "MILK",
+     "Food",
+     "Milk",
+     "food",
+     "snacks"
+    ]
+   },
+   {
+    "label": "Driver's license",
+    "points": 15,
+    "aliases": []
+   },
+   {
+    "label": "Body / Life",
+    "points": 12,
+    "aliases": [
+     "MY BODY/LIFE",
+     "BODY",
+     "LIFE",
+     "Body",
+     "Life"
+    ]
+   },
+   {
+    "label": "Medicine",
+    "points": 12,
+    "aliases": []
+   },
+   {
+    "label": "Debit / Credit card",
+    "points": 9,
+    "aliases": [
+     "DEBIT",
+     "CREDIT CARD",
+     "Debit",
+     "Credit card"
+    ]
+   },
+   {
+    "label": "Makeup",
+    "points": 2,
+    "aliases": []
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud20_6.html",
+  "sourceTitle": "Family Feud season 20 · broadcast-board transcription",
+  "season": 20,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-20-6-100",
+  "prompt": "What in a doctor's office gets handled by lots of sick visitors?",
+  "answers": [
+   {
+    "label": "Door / Knob",
+    "points": 43,
+    "aliases": [
+     "DOOR",
+     "KNOB",
+     "Door",
+     "Knob"
+    ]
+   },
+   {
+    "label": "Magazine",
+    "points": 17,
+    "aliases": [
+     "MAG/HERPES WEEKLY",
+     "MAG",
+     "HERPES WEEKLY",
+     "magazines"
+    ]
+   },
+   {
+    "label": "Chair",
+    "points": 17,
+    "aliases": []
+   },
+   {
+    "label": "Pen",
+    "points": 5,
+    "aliases": []
+   },
+   {
+    "label": "Sign-in desk / Sheet",
+    "points": 5,
+    "aliases": [
+     "SIGN-IN DESK",
+     "SHEET",
+     "Sign-in desk",
+     "Sheet"
+    ]
+   },
+   {
+    "label": "Stethoscope",
+    "points": 3,
+    "aliases": []
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud20_6.html",
+  "sourceTitle": "Family Feud season 20 · broadcast-board transcription",
+  "season": 20,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-20-6-47",
+  "prompt": "What might workers do when they feel their pay is too low?",
+  "answers": [
+   {
+    "label": "ASK for RAISE / Gripe",
+    "points": 28,
+    "aliases": [
+     "ASK 4 RAISE/GRIPE",
+     "ASK 4 RAISE",
+     "GRIPE",
+     "ASK for RAISE",
+     "Gripe"
+    ]
+   },
+   {
+    "label": "Slack off / Work less",
+    "points": 27,
+    "aliases": [
+     "SLACK OFF",
+     "WORK LESS",
+     "Slack off",
+     "Work less"
+    ]
+   },
+   {
+    "label": "Steal / Pen",
+    "points": 19,
+    "aliases": [
+     "STEAL/A PEN",
+     "STEAL",
+     "PEN",
+     "Steal",
+     "Pen"
+    ]
+   },
+   {
+    "label": "Look for job / Quit",
+    "points": 16,
+    "aliases": [
+     "LOOK FOR JOB",
+     "QUIT",
+     "Look for job",
+     "Quit"
+    ]
+   },
+   {
+    "label": "Go on strike",
+    "points": 4,
+    "aliases": []
+   },
+   {
+    "label": "Sulk / Be annoyed",
+    "points": 2,
+    "aliases": [
+     "SULK",
+     "BE ANNOYED",
+     "Sulk",
+     "Be annoyed"
+    ]
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud20_6.html",
+  "sourceTitle": "Family Feud season 20 · broadcast-board transcription",
+  "season": 20,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-20-7-79",
+  "prompt": "What could make a pig a great pet?",
+  "answers": [
+   {
+    "label": "Eat anything",
+    "points": 23,
+    "aliases": []
+   },
+   {
+    "label": "Smart / Do tricks",
+    "points": 21,
+    "aliases": [
+     "SMART",
+     "DO TRICKS",
+     "Smart",
+     "Do tricks"
+    ]
+   },
+   {
+    "label": "Loving / Affectionate",
+    "points": 13,
+    "aliases": [
+     "LOVING",
+     "AFFECTIONATE",
+     "Loving",
+     "Affectionate"
+    ]
+   },
+   {
+    "label": "Clean / Don't shed",
+    "points": 11,
+    "aliases": [
+     "CLEAN",
+     "DON'T SHED",
+     "Clean",
+     "Don't shed"
+    ]
+   },
+   {
+    "label": "Cuties / Twirly tail",
+    "points": 10,
+    "aliases": [
+     "CUTIES",
+     "TWIRLY TAIL",
+     "Cuties",
+     "Twirly tail"
+    ]
+   },
+   {
+    "label": "Can eat them / Bacon",
+    "points": 10,
+    "aliases": [
+     "CAN EAT THEM",
+     "BACON",
+     "Can eat them",
+     "Bacon"
+    ]
+   },
+   {
+    "label": "No barking / Quiet",
+    "points": 5,
+    "aliases": [
+     "NO BARKING",
+     "QUIET",
+     "No barking",
+     "Quiet"
+    ]
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud20_7.html",
+  "sourceTitle": "Family Feud season 20 · broadcast-board transcription",
+  "season": 20,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-20-7-95",
+  "prompt": "Which food would put you off if it arrived with its head attached?",
+  "answers": [
+   {
+    "label": "Fish / Eel",
+    "points": 46,
+    "aliases": [
+     "FISH",
+     "EEL",
+     "Fish",
+     "Eel"
+    ]
+   },
+   {
+    "label": "Chicken",
+    "points": 16,
+    "aliases": [
+     "chickens"
+    ]
+   },
+   {
+    "label": "Pork / Bacon",
+    "points": 10,
+    "aliases": [
+     "PORK",
+     "BACON",
+     "Pork",
+     "Bacon"
+    ]
+   },
+   {
+    "label": "Beef",
+    "points": 8,
+    "aliases": []
+   },
+   {
+    "label": "Shrimp",
+    "points": 5,
+    "aliases": []
+   },
+   {
+    "label": "Crawfish",
+    "points": 3,
+    "aliases": []
+   },
+   {
+    "label": "Turkey",
+    "points": 3,
+    "aliases": []
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud20_7.html",
+  "sourceTitle": "Family Feud season 20 · broadcast-board transcription",
+  "season": 20,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-20-8-57",
+  "prompt": "Why might the Tooth Fairy leave a tooth without paying for it?",
+  "answers": [
+   {
+    "label": "The child has behaved badly",
+    "points": 29,
+    "aliases": [
+     "KID'S EVIL HEATHEN"
+    ]
+   },
+   {
+    "label": "Fairy's broke / Robbed",
+    "points": 18,
+    "aliases": [
+     "FAIRY'S BROKE",
+     "ROBBED",
+     "Fairy's broke",
+     "Robbed"
+    ]
+   },
+   {
+    "label": "Cavity / It's rotten",
+    "points": 16,
+    "aliases": [
+     "CAVITY",
+     "IT'S ROTTEN",
+     "Cavity",
+     "It's rotten"
+    ]
+   },
+   {
+    "label": "Fake tooth",
+    "points": 12,
+    "aliases": []
+   },
+   {
+    "label": "Tooth's not there",
+    "points": 7,
+    "aliases": []
+   },
+   {
+    "label": "The child is too old",
+    "points": 4,
+    "aliases": [
+     "KID'S OLD/30",
+     "KID'S OLD",
+     "30"
+    ]
+   },
+   {
+    "label": "Fairy forgot",
+    "points": 4,
+    "aliases": []
+   },
+   {
+    "label": "Kid pulled just for $",
+    "points": 3,
+    "aliases": []
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud20_8.html",
+  "sourceTitle": "Family Feud season 20 · broadcast-board transcription",
+  "season": 20,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-20-8-49",
+  "prompt": "What do mothers guilt their children about forgetting to do?",
+  "answers": [
+   {
+    "label": "Chores / Cleaning",
+    "points": 55,
+    "aliases": [
+     "CHORES",
+     "CLEANING",
+     "Chores",
+     "Cleaning"
+    ]
+   },
+   {
+    "label": "Calling her",
+    "points": 12,
+    "aliases": []
+   },
+   {
+    "label": "Homework / Learning",
+    "points": 9,
+    "aliases": [
+     "HOMEWORK",
+     "LEARNING",
+     "Homework",
+     "Learning"
+    ]
+   },
+   {
+    "label": "Brushing teeth",
+    "points": 6,
+    "aliases": []
+   },
+   {
+    "label": "Visiting",
+    "points": 5,
+    "aliases": []
+   },
+   {
+    "label": "Eating / Veggies",
+    "points": 3,
+    "aliases": [
+     "EATING",
+     "VEGGIES",
+     "Eating",
+     "Veggies"
+    ]
+   },
+   {
+    "label": "Sharing",
+    "points": 2,
+    "aliases": []
+   },
+   {
+    "label": "Bathing",
+    "points": 2,
+    "aliases": []
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud20_8.html",
+  "sourceTitle": "Family Feud season 20 · broadcast-board transcription",
+  "season": 20,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-20-8-92",
+  "prompt": "A waiter keeps ignoring you. How might you try to get noticed?",
+  "answers": [
+   {
+    "label": "Raise hand / Wave",
+    "points": 27,
+    "aliases": [
+     "RAISE HAND",
+     "WAVE",
+     "Raise hand",
+     "Wave"
+    ]
+   },
+   {
+    "label": "Call out to the waiter",
+    "points": 19,
+    "aliases": [
+     "\"YO! GARCON!\"",
+     "YO! GARCON!"
+    ]
+   },
+   {
+    "label": "Whistle at him",
+    "points": 15,
+    "aliases": []
+   },
+   {
+    "label": "Snap fingers",
+    "points": 12,
+    "aliases": []
+   },
+   {
+    "label": "Throw stuff at him",
+    "points": 6,
+    "aliases": []
+   },
+   {
+    "label": "Walk up to him",
+    "points": 4,
+    "aliases": []
+   },
+   {
+    "label": "Get the manager",
+    "points": 3,
+    "aliases": []
+   },
+   {
+    "label": "Stare intensely",
+    "points": 3,
+    "aliases": []
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud20_8.html",
+  "sourceTitle": "Family Feud season 20 · broadcast-board transcription",
+  "season": 20,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-20-8-29",
+  "prompt": "Where might you give up going when money gets tight?",
+  "answers": [
+   {
+    "label": "Restaurants",
+    "points": 32,
+    "aliases": []
+   },
+   {
+    "label": "Bar / Nightclub",
+    "points": 16,
+    "aliases": [
+     "BAR",
+     "NIGHTCLUB",
+     "Bar",
+     "Nightclub",
+     "bar",
+     "pub"
+    ]
+   },
+   {
+    "label": "Store / Mall",
+    "points": 16,
+    "aliases": [
+     "STORE",
+     "MALL",
+     "Store",
+     "Mall"
+    ]
+   },
+   {
+    "label": "Casino",
+    "points": 15,
+    "aliases": []
+   },
+   {
+    "label": "Movies",
+    "points": 8,
+    "aliases": [
+     "THE MOVIES"
+    ]
+   },
+   {
+    "label": "Bank",
+    "points": 4,
+    "aliases": [
+     "THE BANK"
+    ]
+   },
+   {
+    "label": "Race track",
+    "points": 3,
+    "aliases": []
+   },
+   {
+    "label": "Ball game",
+    "points": 2,
+    "aliases": []
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud20_8.html",
+  "sourceTitle": "Family Feud season 20 · broadcast-board transcription",
+  "season": 20,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-21-5-33",
+  "prompt": "What tool could Pinocchio pack to shorten his nose after a lie?",
+  "answers": [
+   {
+    "label": "Saw / Chain saw",
+    "points": 54,
+    "aliases": [
+     "SAW",
+     "CHAIN SAW",
+     "Saw",
+     "Chain saw",
+     "chainsaw",
+     "chain saw"
+    ]
+   },
+   {
+    "label": "File",
+    "points": 19,
+    "aliases": [
+     "A FILE"
+    ]
+   },
+   {
+    "label": "Knife / Chisel",
+    "points": 7,
+    "aliases": [
+     "KNIFE",
+     "CHISEL",
+     "Knife",
+     "Chisel"
+    ]
+   },
+   {
+    "label": "Scissors / Clippers",
+    "points": 7,
+    "aliases": [
+     "SCISSORS",
+     "CLIPPERS",
+     "Scissors",
+     "Clippers"
+    ]
+   },
+   {
+    "label": "Sandpaper / Sander",
+    "points": 5,
+    "aliases": [
+     "SANDPAPER",
+     "SANDER",
+     "Sandpaper",
+     "Sander"
+    ]
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud21_5.html",
+  "sourceTitle": "Family Feud season 21 · broadcast-board transcription",
+  "season": 21,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-21-5-16",
+  "prompt": "How would you act if you were pretending to be a chicken?",
+  "answers": [
+   {
+    "label": "Cluck / Bawk-bawk",
+    "points": 63,
+    "aliases": [
+     "CLUCK",
+     "BAWK-BAWK",
+     "Cluck",
+     "Bawk-bawk",
+     "cluck",
+     "clucking",
+     "bawk"
+    ]
+   },
+   {
+    "label": "Flap arms",
+    "points": 20,
+    "aliases": []
+   },
+   {
+    "label": "Strut",
+    "points": 7,
+    "aliases": []
+   },
+   {
+    "label": "Lay egg / Squat",
+    "points": 4,
+    "aliases": [
+     "LAY EGG",
+     "SQUAT",
+     "Lay egg",
+     "Squat"
+    ]
+   },
+   {
+    "label": "Peck",
+    "points": 2,
+    "aliases": []
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud21_5.html",
+  "sourceTitle": "Family Feud season 21 · broadcast-board transcription",
+  "season": 21,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-21-5-52",
+  "prompt": "Where could someone get a very long beard caught?",
+  "answers": [
+   {
+    "label": "Zipper / Clothes",
+    "points": 35,
+    "aliases": [
+     "ZIPPER",
+     "CLOTHES",
+     "Zipper",
+     "Clothes",
+     "clothes",
+     "clothing"
+    ]
+   },
+   {
+    "label": "Door / Elevator",
+    "points": 24,
+    "aliases": [
+     "DOOR",
+     "ELEVATOR",
+     "Door",
+     "Elevator"
+    ]
+   },
+   {
+    "label": "Food / Honey",
+    "points": 14,
+    "aliases": [
+     "FOOD",
+     "HONEY",
+     "Food",
+     "Honey",
+     "food",
+     "snacks"
+    ]
+   },
+   {
+    "label": "Sink / Disposal",
+    "points": 3,
+    "aliases": [
+     "SINK",
+     "DISPOSAL",
+     "Sink",
+     "Disposal"
+    ]
+   },
+   {
+    "label": "Paper shredder",
+    "points": 3,
+    "aliases": []
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud21_5.html",
+  "sourceTitle": "Family Feud season 21 · broadcast-board transcription",
+  "season": 21,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-21-6-102",
+  "prompt": "What does Taylor Swift have plenty of?",
+  "answers": [
+   {
+    "label": "Money",
+    "points": 50,
+    "aliases": [
+     "MOOLAH",
+     "cash",
+     "dollars",
+     "moolah",
+     "moola"
+    ]
+   },
+   {
+    "label": "Boyfriends / Exes",
+    "points": 15,
+    "aliases": [
+     "BOYFRIENDS",
+     "EXES",
+     "Boyfriends",
+     "Exes"
+    ]
+   },
+   {
+    "label": "Songs / Hits",
+    "points": 14,
+    "aliases": [
+     "SONGS",
+     "HITS",
+     "Songs",
+     "Hits"
+    ]
+   },
+   {
+    "label": "Fans",
+    "points": 6,
+    "aliases": []
+   },
+   {
+    "label": "Clothes / Shoes",
+    "points": 3,
+    "aliases": [
+     "CLOTHES",
+     "SHOES",
+     "Clothes",
+     "Shoes",
+     "clothes",
+     "clothing"
+    ]
+   },
+   {
+    "label": "Talent",
+    "points": 3,
+    "aliases": []
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud21_6.html",
+  "sourceTitle": "Family Feud season 21 · broadcast-board transcription",
+  "season": 21,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-21-6-80",
+  "prompt": "What shouldn't you do in the front pew during church?",
+  "answers": [
+   {
+    "label": "Sleep / Yawn",
+    "points": 47,
+    "aliases": [
+     "SLEEP",
+     "YAWN",
+     "Sleep",
+     "Yawn",
+     "sleep",
+     "sleeping"
+    ]
+   },
+   {
+    "label": "Talk / Yell / Swear",
+    "points": 16,
+    "aliases": [
+     "TALK/YELL/CUSS",
+     "TALK",
+     "YELL",
+     "CUSS",
+     "Talk",
+     "Yell",
+     "Swear",
+     "swear",
+     "swearing",
+     "curse",
+     "cuss"
+    ]
+   },
+   {
+    "label": "Pass gas",
+    "points": 12,
+    "aliases": [
+     "2-TOOT SALUTE",
+     "fart",
+     "farting",
+     "flatulence"
+    ]
+   },
+   {
+    "label": "Pick your nose",
+    "points": 10,
+    "aliases": []
+   },
+   {
+    "label": "Sneeze",
+    "points": 4,
+    "aliases": []
+   },
+   {
+    "label": "Laugh / Mid-prayer",
+    "points": 4,
+    "aliases": [
+     "LAUGH",
+     "MID-PRAYER",
+     "Laugh",
+     "Mid-prayer",
+     "laugh",
+     "laughing"
+    ]
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud21_6.html",
+  "sourceTitle": "Family Feud season 21 · broadcast-board transcription",
+  "season": 21,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-21-6-69",
+  "prompt": "For Halloween, which ball could a bald person paint their head to resemble?",
+  "answers": [
+   {
+    "label": "Basketball",
+    "points": 41,
+    "aliases": []
+   },
+   {
+    "label": "Bowling ball",
+    "points": 14,
+    "aliases": []
+   },
+   {
+    "label": "8-ball / Pool ball",
+    "points": 14,
+    "aliases": [
+     "8-BALL",
+     "POOL BALL",
+     "8-ball",
+     "Pool ball"
+    ]
+   },
+   {
+    "label": "Baseball",
+    "points": 12,
+    "aliases": []
+   },
+   {
+    "label": "Soccer ball",
+    "points": 11,
+    "aliases": []
+   },
+   {
+    "label": "Golf ball",
+    "points": 2,
+    "aliases": []
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud21_6.html",
+  "sourceTitle": "Family Feud season 21 · broadcast-board transcription",
+  "season": 21,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-21-7-66",
+  "prompt": "Where might the world's stingiest airline make a passenger sit?",
+  "answers": [
+   {
+    "label": "On toilet / Lavatory",
+    "points": 40,
+    "aliases": [
+     "ON TOILET",
+     "LAVATORY",
+     "On toilet",
+     "Lavatory"
+    ]
+   },
+   {
+    "label": "Floor / Aisle",
+    "points": 15,
+    "aliases": [
+     "FLOOR",
+     "AISLE",
+     "Floor",
+     "Aisle"
+    ]
+   },
+   {
+    "label": "Cargo / Luggage hold",
+    "points": 15,
+    "aliases": [
+     "CARGO",
+     "LUGGAGE HOLD",
+     "Cargo",
+     "Luggage hold"
+    ]
+   },
+   {
+    "label": "On wing / Tail",
+    "points": 12,
+    "aliases": [
+     "ON WING",
+     "TAIL",
+     "On wing",
+     "Tail"
+    ]
+   },
+   {
+    "label": "Back row",
+    "points": 6,
+    "aliases": []
+   },
+   {
+    "label": "Cockpit",
+    "points": 3,
+    "aliases": []
+   },
+   {
+    "label": "Overhead bin",
+    "points": 2,
+    "aliases": []
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud21_7.html",
+  "sourceTitle": "Family Feud season 21 · broadcast-board transcription",
+  "season": 21,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-21-7-95",
+  "prompt": "What makes a terrible boss terrible?",
+  "answers": [
+   {
+    "label": "Yell / Berate",
+    "points": 54,
+    "aliases": [
+     "YELL",
+     "BERATE",
+     "Yell",
+     "Berate"
+    ]
+   },
+   {
+    "label": "Fire you",
+    "points": 10,
+    "aliases": []
+   },
+   {
+    "label": "Pile on work / O.t.",
+    "points": 8,
+    "aliases": [
+     "PILE ON WORK",
+     "O.T.",
+     "Pile on work",
+     "O.t."
+    ]
+   },
+   {
+    "label": "Lie / Take credit",
+    "points": 6,
+    "aliases": [
+     "LIE",
+     "TAKE CREDIT",
+     "Lie",
+     "Take credit"
+    ]
+   },
+   {
+    "label": "Flirt",
+    "points": 5,
+    "aliases": []
+   },
+   {
+    "label": "Underpay you",
+    "points": 4,
+    "aliases": []
+   },
+   {
+    "label": "Micromanage",
+    "points": 3,
+    "aliases": []
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud21_7.html",
+  "sourceTitle": "Family Feud season 21 · broadcast-board transcription",
+  "season": 21,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-21-7-61",
+  "prompt": "Where would a swear jar quickly collect a fortune?",
+  "answers": [
+   {
+    "label": "Bar",
+    "points": 22,
+    "aliases": [
+     "pub"
+    ]
+   },
+   {
+    "label": "Car / Road",
+    "points": 22,
+    "aliases": [
+     "CAR/THE ROAD",
+     "CAR",
+     "ROAD",
+     "Car",
+     "Road",
+     "car",
+     "cars",
+     "automobile",
+     "vehicle"
+    ]
+   },
+   {
+    "label": "Home / Kitchen",
+    "points": 22,
+    "aliases": [
+     "HOME",
+     "KITCHEN",
+     "Home",
+     "Kitchen"
+    ]
+   },
+   {
+    "label": "Work",
+    "points": 18,
+    "aliases": []
+   },
+   {
+    "label": "Church",
+    "points": 4,
+    "aliases": []
+   },
+   {
+    "label": "Sports venue / Golf",
+    "points": 4,
+    "aliases": [
+     "SPORTS VENUE",
+     "GOLF",
+     "Sports venue",
+     "Golf"
+    ]
+   },
+   {
+    "label": "Casino",
+    "points": 2,
+    "aliases": []
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud21_7.html",
+  "sourceTitle": "Family Feud season 21 · broadcast-board transcription",
+  "season": 21,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-21-7-30",
+  "prompt": "Why might you find yourself “in a hole”?",
+  "answers": [
+   {
+    "label": "Fell / Into trap",
+    "points": 33,
+    "aliases": [
+     "FELL",
+     "INTO TRAP",
+     "Fell",
+     "Into trap"
+    ]
+   },
+   {
+    "label": "Debt / No $$$",
+    "points": 24,
+    "aliases": [
+     "DEBT",
+     "NO $$$",
+     "Debt",
+     "No $$$"
+    ]
+   },
+   {
+    "label": "Digging",
+    "points": 20,
+    "aliases": []
+   },
+   {
+    "label": "Hiding / Trench",
+    "points": 9,
+    "aliases": [
+     "HIDING",
+     "TRENCH",
+     "Hiding",
+     "Trench"
+    ]
+   },
+   {
+    "label": "I'm dead",
+    "points": 5,
+    "aliases": []
+   },
+   {
+    "label": "I'm golfing",
+    "points": 3,
+    "aliases": []
+   },
+   {
+    "label": "I'm a bunny! yay",
+    "points": 2,
+    "aliases": []
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud21_7.html",
+  "sourceTitle": "Family Feud season 21 · broadcast-board transcription",
+  "season": 21,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-21-8-39",
+  "prompt": "What starting to shake would make you nervous?",
+  "answers": [
+   {
+    "label": "Car / Steering wheel",
+    "points": 27,
+    "aliases": [
+     "CAR",
+     "STEERING WHEEL",
+     "Car",
+     "Steering wheel",
+     "car",
+     "cars",
+     "automobile",
+     "vehicle"
+    ]
+   },
+   {
+    "label": "House / Building",
+    "points": 26,
+    "aliases": [
+     "HOUSE",
+     "BUILDING",
+     "House",
+     "Building"
+    ]
+   },
+   {
+    "label": "Person / Me",
+    "points": 19,
+    "aliases": [
+     "PERSON",
+     "ME",
+     "Person",
+     "Me"
+    ]
+   },
+   {
+    "label": "Ground / Earth",
+    "points": 9,
+    "aliases": [
+     "GROUND",
+     "EARTH",
+     "Ground",
+     "Earth"
+    ]
+   },
+   {
+    "label": "Airplane",
+    "points": 6,
+    "aliases": [
+     "plane",
+     "aeroplane"
+    ]
+   },
+   {
+    "label": "Washer",
+    "points": 3,
+    "aliases": []
+   },
+   {
+    "label": "Snake / Rattler",
+    "points": 2,
+    "aliases": [
+     "SNAKE",
+     "RATTLER",
+     "Snake",
+     "Rattler"
+    ]
+   },
+   {
+    "label": "Refrigerator",
+    "points": 2,
+    "aliases": [
+     "fridge"
+    ]
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud21_8.html",
+  "sourceTitle": "Family Feud season 21 · broadcast-board transcription",
+  "season": 21,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-22-5-40",
+  "prompt": "Which music would surprise you coming from a church organ on Sunday?",
+  "answers": [
+   {
+    "label": "Rap / Hip-hop",
+    "points": 45,
+    "aliases": [
+     "RAP",
+     "HIP-HOP",
+     "Rap",
+     "Hip-hop"
+    ]
+   },
+   {
+    "label": "Rock & roll",
+    "points": 33,
+    "aliases": []
+   },
+   {
+    "label": "Country",
+    "points": 6,
+    "aliases": []
+   },
+   {
+    "label": "Jazz",
+    "points": 6,
+    "aliases": []
+   },
+   {
+    "label": "Pop / Britney",
+    "points": 2,
+    "aliases": [
+     "POP",
+     "BRITNEY",
+     "Pop",
+     "Britney"
+    ]
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud22_5.html",
+  "sourceTitle": "Family Feud season 22 · broadcast-board transcription",
+  "season": 22,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-22-5-37",
+  "prompt": "What on the ground tells you a snowman used to stand there?",
+  "answers": [
+   {
+    "label": "Carrot nose",
+    "points": 49,
+    "aliases": []
+   },
+   {
+    "label": "Melted snow / Water",
+    "points": 29,
+    "aliases": [
+     "MELTED SNOW",
+     "WATER",
+     "Melted snow",
+     "Water"
+    ]
+   },
+   {
+    "label": "Hat / Scarf",
+    "points": 6,
+    "aliases": [
+     "HAT",
+     "SCARF",
+     "Hat",
+     "Scarf"
+    ]
+   },
+   {
+    "label": "Coal eyes",
+    "points": 6,
+    "aliases": []
+   },
+   {
+    "label": "Footprints / Tracks",
+    "points": 3,
+    "aliases": [
+     "FOOTPRINTS",
+     "TRACKS",
+     "Footprints",
+     "Tracks"
+    ]
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud22_5.html",
+  "sourceTitle": "Family Feud season 22 · broadcast-board transcription",
+  "season": 22,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-22-6-95",
+  "prompt": "What could you put out front to deter a burglar?",
+  "answers": [
+   {
+    "label": "Camera / Alarm",
+    "points": 35,
+    "aliases": [
+     "CAMERA",
+     "ALARM",
+     "Camera",
+     "Alarm"
+    ]
+   },
+   {
+    "label": "Dog",
+    "points": 25,
+    "aliases": [
+     "PISSY POOCH",
+     "dogs",
+     "puppy",
+     "puppies",
+     "pooch"
+    ]
+   },
+   {
+    "label": "Sign / Security",
+    "points": 16,
+    "aliases": [
+     "SIGN",
+     "SECURITY",
+     "Sign",
+     "Security"
+    ]
+   },
+   {
+    "label": "Lights",
+    "points": 9,
+    "aliases": []
+   },
+   {
+    "label": "Weapon / Cannon",
+    "points": 4,
+    "aliases": [
+     "WEAPON",
+     "CANNON",
+     "Weapon",
+     "Cannon"
+    ]
+   },
+   {
+    "label": "Person / Mother-in-law",
+    "points": 3,
+    "aliases": [
+     "PERSON",
+     "MOTHER-IN-LAW",
+     "Person",
+     "Mother-in-law"
+    ]
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud22_6.html",
+  "sourceTitle": "Family Feud season 22 · broadcast-board transcription",
+  "season": 22,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-22-6-60",
+  "prompt": "Which feature of a person could remind you of a snowman?",
+  "answers": [
+   {
+    "label": "Belly / Round",
+    "points": 37,
+    "aliases": [
+     "BELLY",
+     "ROUND",
+     "Belly",
+     "Round"
+    ]
+   },
+   {
+    "label": "Long pointy nose",
+    "points": 20,
+    "aliases": []
+   },
+   {
+    "label": "Cold bod / Heart",
+    "points": 19,
+    "aliases": [
+     "COLD BOD",
+     "HEART",
+     "Cold bod",
+     "Heart"
+    ]
+   },
+   {
+    "label": "Top hat",
+    "points": 10,
+    "aliases": []
+   },
+   {
+    "label": "Smokes a pipe",
+    "points": 5,
+    "aliases": []
+   },
+   {
+    "label": "White clothes / Skin",
+    "points": 4,
+    "aliases": [
+     "WHITE CLOTHES",
+     "SKIN",
+     "White clothes",
+     "Skin"
+    ]
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud22_6.html",
+  "sourceTitle": "Family Feud season 22 · broadcast-board transcription",
+  "season": 22,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-22-6-34",
+  "prompt": "What shares your home whether you invited it or not?",
+  "answers": [
+   {
+    "label": "Bugs / Roaches",
+    "points": 52,
+    "aliases": [
+     "BUGS",
+     "ROACHES",
+     "Bugs",
+     "Roaches"
+    ]
+   },
+   {
+    "label": "Mice / Rats",
+    "points": 16,
+    "aliases": [
+     "MICE",
+     "RATS",
+     "Mice",
+     "Rats"
+    ]
+   },
+   {
+    "label": "Cat / pet",
+    "points": 10,
+    "aliases": [
+     "SNITTY CAT/PET",
+     "SNITTY CAT",
+     "PET",
+     "Cat",
+     "pet",
+     "cat",
+     "cats",
+     "kitten",
+     "kittens",
+     "kitty"
+    ]
+   },
+   {
+    "label": "Family / In-laws",
+    "points": 10,
+    "aliases": [
+     "MY FAMILY/IN-LAWS",
+     "FAMILY",
+     "IN-LAWS",
+     "Family",
+     "In-laws"
+    ]
+   },
+   {
+    "label": "Dust bunny / Dirt",
+    "points": 5,
+    "aliases": [
+     "DUST BUNNY",
+     "DIRT",
+     "Dust bunny",
+     "Dirt"
+    ]
+   },
+   {
+    "label": "Mold / Mildew",
+    "points": 3,
+    "aliases": [
+     "MOLD",
+     "MILDEW",
+     "Mold",
+     "Mildew"
+    ]
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud22_6.html",
+  "sourceTitle": "Family Feud season 22 · broadcast-board transcription",
+  "season": 22,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-22-7-51",
+  "prompt": "What used to preserve food might also help a mortician preserve a body?",
+  "answers": [
+   {
+    "label": "Fridge / Ice",
+    "points": 54,
+    "aliases": [
+     "FRIDGE",
+     "ICE",
+     "Fridge",
+     "Ice"
+    ]
+   },
+   {
+    "label": "Plastic wrap / Bag",
+    "points": 15,
+    "aliases": [
+     "PLASTIC WRAP",
+     "BAG",
+     "Plastic wrap",
+     "Bag"
+    ]
+   },
+   {
+    "label": "Salt",
+    "points": 7,
+    "aliases": []
+   },
+   {
+    "label": "Baking soda",
+    "points": 7,
+    "aliases": []
+   },
+   {
+    "label": "Container / Tupperware",
+    "points": 5,
+    "aliases": [
+     "CONTAINER",
+     "TUPPERWARE",
+     "Container",
+     "Tupperware"
+    ]
+   },
+   {
+    "label": "Alcohol",
+    "points": 3,
+    "aliases": []
+   },
+   {
+    "label": "Lemon / Lime juice",
+    "points": 3,
+    "aliases": [
+     "LEMON",
+     "LIME JUICE",
+     "Lemon",
+     "Lime juice"
+    ]
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud22_7.html",
+  "sourceTitle": "Family Feud season 22 · broadcast-board transcription",
+  "season": 22,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-22-7-33",
+  "prompt": "What would you be shocked to catch your dog using in the bathroom?",
+  "answers": [
+   {
+    "label": "Toilet / Toilet paper",
+    "points": 68,
+    "aliases": [
+     "TOILET/T.P.",
+     "TOILET",
+     "T.P.",
+     "Toilet",
+     "Toilet paper",
+     "toilet",
+     "loo",
+     "lavatory",
+     "toilet paper",
+     "tp"
+    ]
+   },
+   {
+    "label": "Toothbrush / Paste",
+    "points": 13,
+    "aliases": [
+     "TOOTHBRUSH",
+     "PASTE",
+     "Toothbrush",
+     "Paste",
+     "toothbrush",
+     "tooth brush"
+    ]
+   },
+   {
+    "label": "Shower / Tub",
+    "points": 4,
+    "aliases": [
+     "SHOWER",
+     "TUB",
+     "Shower",
+     "Tub"
+    ]
+   },
+   {
+    "label": "Sink",
+    "points": 4,
+    "aliases": []
+   },
+   {
+    "label": "Bath rug",
+    "points": 2,
+    "aliases": []
+   },
+   {
+    "label": "Scale",
+    "points": 2,
+    "aliases": []
+   },
+   {
+    "label": "Razor",
+    "points": 2,
+    "aliases": []
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud22_7.html",
+  "sourceTitle": "Family Feud season 22 · broadcast-board transcription",
+  "season": 22,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-22-8-82",
+  "prompt": "Which bird would you hate to discover was your Thanksgiving meal?",
+  "answers": [
+   {
+    "label": "Pigeon / Dove",
+    "points": 28,
+    "aliases": [
+     "PIGEON",
+     "DOVE",
+     "Pigeon",
+     "Dove"
+    ]
+   },
+   {
+    "label": "Duck",
+    "points": 18,
+    "aliases": []
+   },
+   {
+    "label": "Turkey / I hate it",
+    "points": 9,
+    "aliases": [
+     "TURKEY",
+     "I HATE IT!",
+     "Turkey",
+     "I hate it"
+    ]
+   },
+   {
+    "label": "Crow / Raven",
+    "points": 9,
+    "aliases": [
+     "CROW",
+     "RAVEN",
+     "Crow",
+     "Raven"
+    ]
+   },
+   {
+    "label": "Chicken",
+    "points": 9,
+    "aliases": [
+     "chickens"
+    ]
+   },
+   {
+    "label": "Quail",
+    "points": 6,
+    "aliases": []
+   },
+   {
+    "label": "Parrot",
+    "points": 4,
+    "aliases": []
+   },
+   {
+    "label": "Peacock",
+    "points": 3,
+    "aliases": []
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud22_8.html",
+  "sourceTitle": "Family Feud season 22 · broadcast-board transcription",
+  "season": 22,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-22-8-87",
+  "prompt": "Which kind of court operates without a jury?",
+  "answers": [
+   {
+    "label": "Tennis court",
+    "points": 27,
+    "aliases": []
+   },
+   {
+    "label": "Basketball court",
+    "points": 21,
+    "aliases": []
+   },
+   {
+    "label": "Food court",
+    "points": 9,
+    "aliases": []
+   },
+   {
+    "label": "Kangaroo court",
+    "points": 7,
+    "aliases": []
+   },
+   {
+    "label": "Supreme court",
+    "points": 6,
+    "aliases": []
+   },
+   {
+    "label": "Traffic court",
+    "points": 6,
+    "aliases": []
+   },
+   {
+    "label": "Divorce court",
+    "points": 4,
+    "aliases": []
+   },
+   {
+    "label": "King's / Royal court",
+    "points": 4,
+    "aliases": [
+     "KING'S",
+     "ROYAL COURT",
+     "King's",
+     "Royal court"
+    ]
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud22_8.html",
+  "sourceTitle": "Family Feud season 22 · broadcast-board transcription",
+  "season": 22,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-22-8-52",
+  "prompt": "If your dog had Instagram, what would fill its feed?",
+  "answers": [
+   {
+    "label": "Himself / Doing stuff",
+    "points": 30,
+    "aliases": [
+     "HIMSELF",
+     "DOING STUFF",
+     "Himself",
+     "Doing stuff"
+    ]
+   },
+   {
+    "label": "Food / Bowl",
+    "points": 26,
+    "aliases": [
+     "FOOD",
+     "BOWL",
+     "Food",
+     "Bowl",
+     "food",
+     "snacks"
+    ]
+   },
+   {
+    "label": "Other dog / Boo",
+    "points": 14,
+    "aliases": [
+     "OTHER DOG/HIS BOO",
+     "OTHER DOG",
+     "BOO",
+     "Other dog",
+     "Boo"
+    ]
+   },
+   {
+    "label": "Squirrels",
+    "points": 6,
+    "aliases": []
+   },
+   {
+    "label": "Owners",
+    "points": 6,
+    "aliases": [
+     "HIS OWNERS"
+    ]
+   },
+   {
+    "label": "Toys",
+    "points": 5,
+    "aliases": [
+     "HIS TOYS"
+    ]
+   },
+   {
+    "label": "Fire hydrants",
+    "points": 3,
+    "aliases": []
+   },
+   {
+    "label": "Cats",
+    "points": 3,
+    "aliases": []
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud22_8.html",
+  "sourceTitle": "Family Feud season 22 · broadcast-board transcription",
+  "season": 22,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-23-5-99",
+  "prompt": "What tiny thing can create an enormous problem?",
+  "answers": [
+   {
+    "label": "Bug / Termite",
+    "points": 26,
+    "aliases": [
+     "BUG",
+     "TERMITE",
+     "Bug",
+     "Termite"
+    ]
+   },
+   {
+    "label": "Kid / Baby",
+    "points": 12,
+    "aliases": [
+     "KID",
+     "BABY",
+     "Kid",
+     "Baby"
+    ]
+   },
+   {
+    "label": "Tooth / Cavity",
+    "points": 8,
+    "aliases": [
+     "TOOTH",
+     "CAVITY",
+     "Tooth",
+     "Cavity"
+    ]
+   },
+   {
+    "label": "Money / Bills",
+    "points": 7,
+    "aliases": [
+     "MONEY",
+     "BILLS",
+     "Money",
+     "Bills",
+     "money",
+     "cash",
+     "dollars",
+     "moolah",
+     "moola"
+    ]
+   },
+   {
+    "label": "Mouse",
+    "points": 6,
+    "aliases": []
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud23_5.html",
+  "sourceTitle": "Family Feud season 23 · broadcast-board transcription",
+  "season": 23,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-23-6-84",
+  "prompt": "What would be difficult if both your feet really were left feet?",
+  "answers": [
+   {
+    "label": "Walk / Run",
+    "points": 40,
+    "aliases": [
+     "WALK",
+     "RUN",
+     "Walk",
+     "Run",
+     "walk",
+     "walking"
+    ]
+   },
+   {
+    "label": "Dance",
+    "points": 34,
+    "aliases": [
+     "dancing"
+    ]
+   },
+   {
+    "label": "Buy / Wear shoes",
+    "points": 13,
+    "aliases": [
+     "BUY",
+     "WEAR SHOES",
+     "Buy",
+     "Wear shoes"
+    ]
+   },
+   {
+    "label": "Balance",
+    "points": 2,
+    "aliases": []
+   },
+   {
+    "label": "Kick a ball",
+    "points": 2,
+    "aliases": []
+   },
+   {
+    "label": "Turn right",
+    "points": 2,
+    "aliases": []
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud23_6.html",
+  "sourceTitle": "Family Feud season 23 · broadcast-board transcription",
+  "season": 23,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-23-7-85",
+  "prompt": "Which description could apply to both you and a pizza?",
+  "answers": [
+   {
+    "label": "Tasty / Delish",
+    "points": 35,
+    "aliases": [
+     "TASTY",
+     "DELISH",
+     "Tasty",
+     "Delish"
+    ]
+   },
+   {
+    "label": "Cheesy",
+    "points": 19,
+    "aliases": []
+   },
+   {
+    "label": "Hot",
+    "points": 17,
+    "aliases": []
+   },
+   {
+    "label": "Spicy",
+    "points": 8,
+    "aliases": []
+   },
+   {
+    "label": "Saucy",
+    "points": 7,
+    "aliases": []
+   },
+   {
+    "label": "Doughy",
+    "points": 4,
+    "aliases": []
+   },
+   {
+    "label": "Round",
+    "points": 2,
+    "aliases": []
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud23_7.html",
+  "sourceTitle": "Family Feud season 23 · broadcast-board transcription",
+  "season": 23,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-23-7-69",
+  "prompt": "What might be hidden inside a magician's sleeve?",
+  "answers": [
+   {
+    "label": "Cards / Ace",
+    "points": 31,
+    "aliases": [
+     "CARDS/AN ACE",
+     "CARDS",
+     "ACE",
+     "Cards",
+     "Ace"
+    ]
+   },
+   {
+    "label": "Rabbit",
+    "points": 26,
+    "aliases": [
+     "bunny"
+    ]
+   },
+   {
+    "label": "Handkerchief / Scarf",
+    "points": 20,
+    "aliases": [
+     "HANKIE/SCARF",
+     "HANKIE",
+     "SCARF",
+     "Handkerchief",
+     "Scarf"
+    ]
+   },
+   {
+    "label": "Flowers",
+    "points": 9,
+    "aliases": [
+     "flower"
+    ]
+   },
+   {
+    "label": "Arm",
+    "points": 3,
+    "aliases": [
+     "HIS ARM"
+    ]
+   },
+   {
+    "label": "Dove / Bird",
+    "points": 3,
+    "aliases": [
+     "DOVE",
+     "BIRD",
+     "Dove",
+     "Bird",
+     "bird",
+     "birds"
+    ]
+   },
+   {
+    "label": "Wand",
+    "points": 2,
+    "aliases": []
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud23_7.html",
+  "sourceTitle": "Family Feud season 23 · broadcast-board transcription",
+  "season": 23,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-23-7-45",
+  "prompt": "Where would you hate being assigned the seat beside the bathroom?",
+  "answers": [
+   {
+    "label": "Restaurant / Bar",
+    "points": 46,
+    "aliases": [
+     "RESTAURANT",
+     "BAR",
+     "Restaurant",
+     "Bar",
+     "restaurant",
+     "eatery",
+     "bar",
+     "pub"
+    ]
+   },
+   {
+    "label": "Airplane",
+    "points": 25,
+    "aliases": [
+     "plane",
+     "aeroplane"
+    ]
+   },
+   {
+    "label": "Bus",
+    "points": 11,
+    "aliases": []
+   },
+   {
+    "label": "Theater / Movies",
+    "points": 5,
+    "aliases": [
+     "THEATER",
+     "MOVIES",
+     "Theater",
+     "Movies"
+    ]
+   },
+   {
+    "label": "Sporting event",
+    "points": 4,
+    "aliases": []
+   },
+   {
+    "label": "Gastroenterologist's office",
+    "points": 2,
+    "aliases": [
+     "G.I. DOC'S OFFICE"
+    ]
+   },
+   {
+    "label": "Work",
+    "points": 2,
+    "aliases": []
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud23_7.html",
+  "sourceTitle": "Family Feud season 23 · broadcast-board transcription",
+  "season": 23,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-23-8-70",
+  "prompt": "What possessions might relatives stake a claim to before a rich uncle dies?",
+  "answers": [
+   {
+    "label": "Cash / Rare coins",
+    "points": 19,
+    "aliases": [
+     "CASH",
+     "RARE COINS",
+     "Cash",
+     "Rare coins"
+    ]
+   },
+   {
+    "label": "Porsche",
+    "points": 16,
+    "aliases": []
+   },
+   {
+    "label": "House",
+    "points": 15,
+    "aliases": [
+     "HIS HOUSE"
+    ]
+   },
+   {
+    "label": "Pictures / art",
+    "points": 12,
+    "aliases": [
+     "PICS/ART",
+     "PICS",
+     "ART",
+     "Pictures",
+     "art"
+    ]
+   },
+   {
+    "label": "Jewelry",
+    "points": 10,
+    "aliases": [
+     "jewellery"
+    ]
+   },
+   {
+    "label": "Dishes / China",
+    "points": 8,
+    "aliases": [
+     "DISHES",
+     "CHINA",
+     "Dishes",
+     "China"
+    ]
+   },
+   {
+    "label": "Furniture / Lamp",
+    "points": 5,
+    "aliases": [
+     "FURNITURE",
+     "LAMP",
+     "Furniture",
+     "Lamp"
+    ]
+   },
+   {
+    "label": "Guns",
+    "points": 4,
+    "aliases": [
+     "HIS GUNS"
+    ]
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud23_8.html",
+  "sourceTitle": "Family Feud season 23 · broadcast-board transcription",
+  "season": 23,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-23-8-9",
+  "prompt": "Which potato dish might an angry Mrs. Potato Head turn her husband into?",
+  "answers": [
+   {
+    "label": "Fries / Tots",
+    "points": 46,
+    "aliases": [
+     "FRIES",
+     "TOTS",
+     "Fries",
+     "Tots"
+    ]
+   },
+   {
+    "label": "Mashed potatoes",
+    "points": 30,
+    "aliases": []
+   },
+   {
+    "label": "Baked potato",
+    "points": 7,
+    "aliases": []
+   },
+   {
+    "label": "Hash browns",
+    "points": 5,
+    "aliases": []
+   },
+   {
+    "label": "Casserole",
+    "points": 3,
+    "aliases": []
+   },
+   {
+    "label": "Potato chips",
+    "points": 3,
+    "aliases": []
+   },
+   {
+    "label": "Ms. potato head",
+    "points": 2,
+    "aliases": []
+   },
+   {
+    "label": "Fritter",
+    "points": 2,
+    "aliases": []
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud23_8.html",
+  "sourceTitle": "Family Feud season 23 · broadcast-board transcription",
+  "season": 23,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-23-8-59",
+  "prompt": "Which seasoning could double as a chef's daughter's name?",
+  "answers": [
+   {
+    "label": "Rosemary",
+    "points": 26,
+    "aliases": []
+   },
+   {
+    "label": "Pepper",
+    "points": 22,
+    "aliases": []
+   },
+   {
+    "label": "Cinnamon",
+    "points": 14,
+    "aliases": []
+   },
+   {
+    "label": "Sage",
+    "points": 11,
+    "aliases": []
+   },
+   {
+    "label": "Saffron",
+    "points": 6,
+    "aliases": []
+   },
+   {
+    "label": "Ginger",
+    "points": 6,
+    "aliases": []
+   },
+   {
+    "label": "Paprika",
+    "points": 4,
+    "aliases": []
+   },
+   {
+    "label": "Vanilla",
+    "points": 2,
+    "aliases": []
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud23_8.html",
+  "sourceTitle": "Family Feud season 23 · broadcast-board transcription",
+  "season": 23,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-24-5-39",
+  "prompt": "What would an astronaut dread realizing was left off the spaceship?",
+  "answers": [
+   {
+    "label": "Food / Water",
+    "points": 47,
+    "aliases": [
+     "FOOD",
+     "WATER",
+     "Food",
+     "Water",
+     "food",
+     "snacks"
+    ]
+   },
+   {
+    "label": "Toilet / Toilet paper",
+    "points": 17,
+    "aliases": [
+     "TOILET/T.P.",
+     "TOILET",
+     "T.P.",
+     "Toilet",
+     "Toilet paper",
+     "toilet",
+     "loo",
+     "lavatory",
+     "toilet paper",
+     "tp"
+    ]
+   },
+   {
+    "label": "Oxygen",
+    "points": 13,
+    "aliases": []
+   },
+   {
+    "label": "Space suit / Helmet",
+    "points": 8,
+    "aliases": [
+     "SPACE SUIT",
+     "HELMET",
+     "Space suit",
+     "Helmet"
+    ]
+   },
+   {
+    "label": "Enough fuel",
+    "points": 4,
+    "aliases": []
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud24_5.html",
+  "sourceTitle": "Family Feud season 24 · broadcast-board transcription",
+  "season": 24,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-24-5-55",
+  "prompt": "What might an angry teacher toss at a disruptive pupil?",
+  "answers": [
+   {
+    "label": "Eraser",
+    "points": 47,
+    "aliases": []
+   },
+   {
+    "label": "Pen / Pencil",
+    "points": 9,
+    "aliases": [
+     "PEN",
+     "PENCIL",
+     "Pen",
+     "Pencil"
+    ]
+   },
+   {
+    "label": "Ruler",
+    "points": 8,
+    "aliases": []
+   },
+   {
+    "label": "Book",
+    "points": 8,
+    "aliases": [
+     "books"
+    ]
+   },
+   {
+    "label": "Chalk",
+    "points": 7,
+    "aliases": []
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud24_5.html",
+  "sourceTitle": "Family Feud season 24 · broadcast-board transcription",
+  "season": 24,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-24-5-60",
+  "prompt": "What might you do on your birthday and no other day?",
+  "answers": [
+   {
+    "label": "Cake & ice cream",
+    "points": 30,
+    "aliases": []
+   },
+   {
+    "label": "Drink alcohol",
+    "points": 19,
+    "aliases": [
+     "GET SLOSHED"
+    ]
+   },
+   {
+    "label": "Blow out candles",
+    "points": 12,
+    "aliases": []
+   },
+   {
+    "label": "Sleep in / All day",
+    "points": 6,
+    "aliases": [
+     "SLEEP IN",
+     "ALL DAY",
+     "Sleep in",
+     "All day"
+    ]
+   },
+   {
+    "label": "Get sung to",
+    "points": 5,
+    "aliases": []
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud24_5.html",
+  "sourceTitle": "Family Feud season 24 · broadcast-board transcription",
+  "season": 24,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-24-6-98",
+  "prompt": "What might little kids turn their mother's bra into while playing?",
+  "answers": [
+   {
+    "label": "Slingshot",
+    "points": 38,
+    "aliases": []
+   },
+   {
+    "label": "Hat / Headband",
+    "points": 36,
+    "aliases": [
+     "HAT",
+     "HEADBAND",
+     "Hat",
+     "Headband"
+    ]
+   },
+   {
+    "label": "Face mask",
+    "points": 7,
+    "aliases": []
+   },
+   {
+    "label": "Hold stuff / Snacks",
+    "points": 5,
+    "aliases": [
+     "HOLD STUFF",
+     "SNACKS",
+     "Hold stuff",
+     "Snacks"
+    ]
+   },
+   {
+    "label": "As bra / Play mom",
+    "points": 3,
+    "aliases": [
+     "AS BRA",
+     "PLAY MOM",
+     "As bra",
+     "Play mom"
+    ]
+   },
+   {
+    "label": "Earmuffs",
+    "points": 3,
+    "aliases": []
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud24_6.html",
+  "sourceTitle": "Family Feud season 24 · broadcast-board transcription",
+  "season": 24,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-24-6-73",
+  "prompt": "What could you do after getting a terrible haircut?",
+  "answers": [
+   {
+    "label": "Wear hat",
+    "points": 40,
+    "aliases": []
+   },
+   {
+    "label": "Cry",
+    "points": 24,
+    "aliases": [
+     "crying"
+    ]
+   },
+   {
+    "label": "Recut / Fix it",
+    "points": 13,
+    "aliases": [
+     "RECUT",
+     "FIX IT",
+     "Recut",
+     "Fix it"
+    ]
+   },
+   {
+    "label": "Complain",
+    "points": 7,
+    "aliases": []
+   },
+   {
+    "label": "Put in pigtails",
+    "points": 5,
+    "aliases": []
+   },
+   {
+    "label": "Shave it all off",
+    "points": 5,
+    "aliases": []
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud24_6.html",
+  "sourceTitle": "Family Feud season 24 · broadcast-board transcription",
+  "season": 24,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-24-6-121",
+  "prompt": "Which lunchbox item used to get the best trades at school?",
+  "answers": [
+   {
+    "label": "Cookie",
+    "points": 25,
+    "aliases": []
+   },
+   {
+    "label": "Candy",
+    "points": 24,
+    "aliases": [
+     "sweets"
+    ]
+   },
+   {
+    "label": "Chips",
+    "points": 14,
+    "aliases": []
+   },
+   {
+    "label": "Twinkie / Cake",
+    "points": 14,
+    "aliases": [
+     "TWINKIE",
+     "CAKE",
+     "Twinkie",
+     "Cake"
+    ]
+   },
+   {
+    "label": "Pudding",
+    "points": 7,
+    "aliases": []
+   },
+   {
+    "label": "Banana / Fruit",
+    "points": 5,
+    "aliases": [
+     "BANANA",
+     "FRUIT",
+     "Banana",
+     "Fruit"
+    ]
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud24_6.html",
+  "sourceTitle": "Family Feud season 24 · broadcast-board transcription",
+  "season": 24,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-24-7-121",
+  "prompt": "What would you hate your therapist doing while you describe your problems?",
+  "answers": [
+   {
+    "label": "Yawn / Doze off",
+    "points": 57,
+    "aliases": [
+     "YAWN",
+     "DOZE OFF",
+     "Yawn",
+     "Doze off"
+    ]
+   },
+   {
+    "label": "Use phone / Text",
+    "points": 14,
+    "aliases": [
+     "USE PHONE",
+     "TEXT",
+     "Use phone",
+     "Text"
+    ]
+   },
+   {
+    "label": "Laugh",
+    "points": 6,
+    "aliases": [
+     "laughing"
+    ]
+   },
+   {
+    "label": "Blow / Pick nose",
+    "points": 4,
+    "aliases": [
+     "BLOW",
+     "PICK NOSE",
+     "Blow",
+     "Pick nose"
+    ]
+   },
+   {
+    "label": "Talk about their own problems",
+    "points": 4,
+    "aliases": [
+     "YAP/SHARE HIS PROBS",
+     "YAP",
+     "SHARE HIS PROBS"
+    ]
+   },
+   {
+    "label": "Clip nails",
+    "points": 3,
+    "aliases": []
+   },
+   {
+    "label": "Roll eyes / Sigh",
+    "points": 3,
+    "aliases": [
+     "ROLL EYES",
+     "SIGH",
+     "Roll eyes",
+     "Sigh"
+    ]
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud24_7.html",
+  "sourceTitle": "Family Feud season 24 · broadcast-board transcription",
+  "season": 24,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-24-8-79",
+  "prompt": "What might someone retrieve from the toilet and keep using?",
+  "answers": [
+   {
+    "label": "Phone",
+    "points": 37,
+    "aliases": [
+     "cell phone",
+     "mobile",
+     "mobile phone"
+    ]
+   },
+   {
+    "label": "Toilet brush",
+    "points": 23,
+    "aliases": []
+   },
+   {
+    "label": "Comb / Brush",
+    "points": 8,
+    "aliases": [
+     "COMB",
+     "BRUSH",
+     "Comb",
+     "Brush"
+    ]
+   },
+   {
+    "label": "Toothbrush",
+    "points": 8,
+    "aliases": []
+   },
+   {
+    "label": "Jewelry / Ring",
+    "points": 6,
+    "aliases": [
+     "JEWELRY",
+     "RING",
+     "Jewelry",
+     "Ring",
+     "jewelry",
+     "jewellery"
+    ]
+   },
+   {
+    "label": "$ / Penny",
+    "points": 4,
+    "aliases": []
+   },
+   {
+    "label": "Plunger",
+    "points": 4,
+    "aliases": []
+   },
+   {
+    "label": "Keys",
+    "points": 2,
+    "aliases": []
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud24_8.html",
+  "sourceTitle": "Family Feud season 24 · broadcast-board transcription",
+  "season": 24,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-24-8-63",
+  "prompt": "What would disappoint a child if the Tooth Fairy left it instead of money?",
+  "answers": [
+   {
+    "label": "Toothbrush / Floss",
+    "points": 42,
+    "aliases": [
+     "TOOTHBRUSH",
+     "FLOSS",
+     "Toothbrush",
+     "Floss",
+     "toothbrush",
+     "tooth brush"
+    ]
+   },
+   {
+    "label": "Food / Candy",
+    "points": 18,
+    "aliases": [
+     "FOOD",
+     "CANDY",
+     "Food",
+     "Candy",
+     "food",
+     "snacks",
+     "candy",
+     "sweets"
+    ]
+   },
+   {
+    "label": "Iou",
+    "points": 10,
+    "aliases": []
+   },
+   {
+    "label": "Book",
+    "points": 6,
+    "aliases": [
+     "books"
+    ]
+   },
+   {
+    "label": "Clothes / Socks",
+    "points": 5,
+    "aliases": [
+     "CLOTHES",
+     "SOCKS",
+     "Clothes",
+     "Socks",
+     "clothes",
+     "clothing"
+    ]
+   },
+   {
+    "label": "Tooth",
+    "points": 5,
+    "aliases": [
+     "A TOOTH"
+    ]
+   },
+   {
+    "label": "Coal / Rock",
+    "points": 5,
+    "aliases": [
+     "COAL",
+     "ROCK",
+     "Coal",
+     "Rock"
+    ]
+   },
+   {
+    "label": "Note / Thanks",
+    "points": 2,
+    "aliases": [
+     "NOTE",
+     "THANKS!",
+     "Note",
+     "Thanks"
+    ]
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud24_8.html",
+  "sourceTitle": "Family Feud season 24 · broadcast-board transcription",
+  "season": 24,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-25-5-29",
+  "prompt": "What does a stand-up comic dread seeing the audience do?",
+  "answers": [
+   {
+    "label": "Partner / Heckle",
+    "points": 56,
+    "aliases": [
+     "BOO/HECKLE",
+     "BOO",
+     "HECKLE",
+     "Partner",
+     "Heckle"
+    ]
+   },
+   {
+    "label": "Walk out",
+    "points": 24,
+    "aliases": []
+   },
+   {
+    "label": "Silent / No laughs",
+    "points": 10,
+    "aliases": [
+     "SILENT",
+     "NO LAUGHS",
+     "Silent",
+     "No laughs"
+    ]
+   },
+   {
+    "label": "Cry / Be sad",
+    "points": 3,
+    "aliases": [
+     "CRY",
+     "BE SAD",
+     "Cry",
+     "Be sad",
+     "cry",
+     "crying"
+    ]
+   },
+   {
+    "label": "Fall asleep",
+    "points": 2,
+    "aliases": []
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud25_5.html",
+  "sourceTitle": "Family Feud season 25 · broadcast-board transcription",
+  "season": 25,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-25-5-25",
+  "prompt": "What is fun to bounce on as a kid but risky in old age?",
+  "answers": [
+   {
+    "label": "Trampoline",
+    "points": 58,
+    "aliases": []
+   },
+   {
+    "label": "Bed",
+    "points": 24,
+    "aliases": []
+   },
+   {
+    "label": "Bounce house",
+    "points": 6,
+    "aliases": []
+   },
+   {
+    "label": "Ball / Yoga ball",
+    "points": 6,
+    "aliases": [
+     "BALL",
+     "YOGA BALL",
+     "Ball",
+     "Yoga ball"
+    ]
+   },
+   {
+    "label": "Pogo stick",
+    "points": 2,
+    "aliases": []
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud25_5.html",
+  "sourceTitle": "Family Feud season 25 · broadcast-board transcription",
+  "season": 25,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-25-5-1",
+  "prompt": "What could other elves tease an elf about?",
+  "answers": [
+   {
+    "label": "Small body",
+    "points": 59,
+    "aliases": [
+     "HIS WEE BOD",
+     "WEE BOD"
+    ]
+   },
+   {
+    "label": "Big ears",
+    "points": 33,
+    "aliases": []
+   },
+   {
+    "label": "Pointy nose",
+    "points": 3,
+    "aliases": []
+   },
+   {
+    "label": "Clothes",
+    "points": 3,
+    "aliases": [
+     "NERDY CLOTHES",
+     "clothing"
+    ]
+   },
+   {
+    "label": "Worst toymaker",
+    "points": 2,
+    "aliases": []
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud25_5.html",
+  "sourceTitle": "Family Feud season 25 · broadcast-board transcription",
+  "season": 25,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-25-6-107",
+  "prompt": "Which workplace item could get you into trouble if you took it home?",
+  "answers": [
+   {
+    "label": "Computer",
+    "points": 41,
+    "aliases": [
+     "pc",
+     "laptop"
+    ]
+   },
+   {
+    "label": "Printer / Copier",
+    "points": 18,
+    "aliases": [
+     "PRINTER",
+     "COPIER",
+     "Printer",
+     "Copier"
+    ]
+   },
+   {
+    "label": "Cash",
+    "points": 12,
+    "aliases": []
+   },
+   {
+    "label": "Classified files",
+    "points": 11,
+    "aliases": []
+   },
+   {
+    "label": "Vehicle / Forklift",
+    "points": 3,
+    "aliases": [
+     "VEHICLE",
+     "FORKLIFT",
+     "Vehicle",
+     "Forklift"
+    ]
+   },
+   {
+    "label": "Coworker / Assistant",
+    "points": 3,
+    "aliases": [
+     "COWORKER",
+     "ASSISTANT",
+     "Coworker",
+     "Assistant"
+    ]
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud25_6.html",
+  "sourceTitle": "Family Feud season 25 · broadcast-board transcription",
+  "season": 25,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-25-6-26",
+  "prompt": "How might a cheap friend wriggle out of their part of the dinner bill?",
+  "answers": [
+   {
+    "label": "Hides in loo",
+    "points": 34,
+    "aliases": []
+   },
+   {
+    "label": "Leaves early",
+    "points": 33,
+    "aliases": []
+   },
+   {
+    "label": "Forgets\" wallet",
+    "points": 25,
+    "aliases": []
+   },
+   {
+    "label": "Complains about food",
+    "points": 2,
+    "aliases": []
+   },
+   {
+    "label": "I'm broke\" :(",
+    "points": 2,
+    "aliases": []
+   },
+   {
+    "label": "Just gets water",
+    "points": 2,
+    "aliases": []
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud25_6.html",
+  "sourceTitle": "Family Feud season 25 · broadcast-board transcription",
+  "season": 25,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-25-7-91",
+  "prompt": "Where can you count on a long wait for the bathroom?",
+  "answers": [
+   {
+    "label": "Sports venue",
+    "points": 28,
+    "aliases": []
+   },
+   {
+    "label": "Concert",
+    "points": 27,
+    "aliases": []
+   },
+   {
+    "label": "Bar / Club",
+    "points": 15,
+    "aliases": [
+     "BAR",
+     "CLUB",
+     "Bar",
+     "Club",
+     "bar",
+     "pub"
+    ]
+   },
+   {
+    "label": "Movie",
+    "points": 8,
+    "aliases": []
+   },
+   {
+    "label": "Theme park / Fair",
+    "points": 6,
+    "aliases": [
+     "THEME PARK",
+     "FAIR",
+     "Theme park",
+     "Fair"
+    ]
+   },
+   {
+    "label": "Restaurant",
+    "points": 5,
+    "aliases": [
+     "eatery"
+    ]
+   },
+   {
+    "label": "Women's restroom",
+    "points": 4,
+    "aliases": [
+     "EVERY LADIES' ROOM"
+    ]
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud25_7.html",
+  "sourceTitle": "Family Feud season 25 · broadcast-board transcription",
+  "season": 25,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-25-7-115",
+  "prompt": "What would hurt to land on while running barefoot along a beach?",
+  "answers": [
+   {
+    "label": "Glass",
+    "points": 36,
+    "aliases": []
+   },
+   {
+    "label": "Shell",
+    "points": 27,
+    "aliases": []
+   },
+   {
+    "label": "Jellyfish",
+    "points": 11,
+    "aliases": []
+   },
+   {
+    "label": "Crab",
+    "points": 6,
+    "aliases": []
+   },
+   {
+    "label": "Rock",
+    "points": 5,
+    "aliases": []
+   },
+   {
+    "label": "Used syringe",
+    "points": 3,
+    "aliases": []
+   },
+   {
+    "label": "Sea urchin",
+    "points": 3,
+    "aliases": []
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud25_7.html",
+  "sourceTitle": "Family Feud season 25 · broadcast-board transcription",
+  "season": 25,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-25-7-71",
+  "prompt": "Which food goes well with romance?",
+  "answers": [
+   {
+    "label": "Chocolate / Candy",
+    "points": 56,
+    "aliases": [
+     "CHOCOLATE",
+     "CANDY",
+     "Chocolate",
+     "Candy",
+     "candy",
+     "sweets"
+    ]
+   },
+   {
+    "label": "Strawberries",
+    "points": 21,
+    "aliases": []
+   },
+   {
+    "label": "Steak",
+    "points": 5,
+    "aliases": []
+   },
+   {
+    "label": "Oysters",
+    "points": 5,
+    "aliases": []
+   },
+   {
+    "label": "Lobster",
+    "points": 3,
+    "aliases": []
+   },
+   {
+    "label": "Pasta / Spaghetti",
+    "points": 2,
+    "aliases": [
+     "PASTA",
+     "SPAGHETTI",
+     "Pasta",
+     "Spaghetti"
+    ]
+   },
+   {
+    "label": "Whipped cream",
+    "points": 2,
+    "aliases": []
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud25_7.html",
+  "sourceTitle": "Family Feud season 25 · broadcast-board transcription",
+  "season": 25,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-25-7-124",
+  "prompt": "What might a caveman give his partner for her birthday?",
+  "answers": [
+   {
+    "label": "Shiny rock",
+    "points": 24,
+    "aliases": []
+   },
+   {
+    "label": "New club",
+    "points": 19,
+    "aliases": []
+   },
+   {
+    "label": "Fur / Pelt dress",
+    "points": 18,
+    "aliases": [
+     "FUR",
+     "PELT DRESS",
+     "Fur",
+     "Pelt dress"
+    ]
+   },
+   {
+    "label": "Food / T-rex pie",
+    "points": 15,
+    "aliases": [
+     "FOOD",
+     "T-REX PIE",
+     "Food",
+     "T-rex pie",
+     "food",
+     "snacks"
+    ]
+   },
+   {
+    "label": "Bone",
+    "points": 5,
+    "aliases": []
+   },
+   {
+    "label": "Pet / Mammoth",
+    "points": 5,
+    "aliases": [
+     "PET",
+     "MAMMOTH",
+     "Pet",
+     "Mammoth"
+    ]
+   },
+   {
+    "label": "Flower / Weeds",
+    "points": 4,
+    "aliases": [
+     "FLOWER",
+     "WEEDS",
+     "Flower",
+     "Weeds"
+    ]
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud25_7.html",
+  "sourceTitle": "Family Feud season 25 · broadcast-board transcription",
+  "season": 25,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-25-8-103",
+  "prompt": "At the Roadkill Café, which animal might become a nugget besides a chicken?",
+  "answers": [
+   {
+    "label": "Possum",
+    "points": 33,
+    "aliases": []
+   },
+   {
+    "label": "Squirrel",
+    "points": 16,
+    "aliases": []
+   },
+   {
+    "label": "Deer",
+    "points": 14,
+    "aliases": []
+   },
+   {
+    "label": "Raccoon",
+    "points": 13,
+    "aliases": []
+   },
+   {
+    "label": "Wild turkey",
+    "points": 6,
+    "aliases": []
+   },
+   {
+    "label": "Skunk",
+    "points": 4,
+    "aliases": []
+   },
+   {
+    "label": "Rabbit",
+    "points": 3,
+    "aliases": [
+     "bunny"
+    ]
+   },
+   {
+    "label": "Gator",
+    "points": 3,
+    "aliases": []
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud25_8.html",
+  "sourceTitle": "Family Feud season 25 · broadcast-board transcription",
+  "season": 25,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-25-8-114",
+  "prompt": "You forgot deodorant this morning. What might you do about it?",
+  "answers": [
+   {
+    "label": "Cologne",
+    "points": 26,
+    "aliases": []
+   },
+   {
+    "label": "Wash off / Wipes",
+    "points": 19,
+    "aliases": [
+     "WASH OFF",
+     "WIPES",
+     "Wash off",
+     "Wipes"
+    ]
+   },
+   {
+    "label": "Avoid people",
+    "points": 12,
+    "aliases": []
+   },
+   {
+    "label": "Keep arms down",
+    "points": 10,
+    "aliases": []
+   },
+   {
+    "label": "Do nothing / accept it",
+    "points": 7,
+    "aliases": [
+     "OWN MY STANK!",
+     "Do nothing",
+     "accept it"
+    ]
+   },
+   {
+    "label": "Buy / Borrow some",
+    "points": 7,
+    "aliases": [
+     "BUY",
+     "BORROW SOME",
+     "Buy",
+     "Borrow some"
+    ]
+   },
+   {
+    "label": "Stay cool / Swim",
+    "points": 6,
+    "aliases": [
+     "STAY COOL",
+     "SWIM",
+     "Stay cool",
+     "Swim"
+    ]
+   },
+   {
+    "label": "Sniff pits",
+    "points": 4,
+    "aliases": []
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud25_8.html",
+  "sourceTitle": "Family Feud season 25 · broadcast-board transcription",
+  "season": 25,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-25-8-56",
+  "prompt": "What could fall from a roller-coaster rider into the area underneath?",
+  "answers": [
+   {
+    "label": "Money / Wallet",
+    "points": 27,
+    "aliases": [
+     "MONEY",
+     "WALLET",
+     "Money",
+     "Wallet",
+     "money",
+     "cash",
+     "dollars",
+     "moolah",
+     "moola"
+    ]
+   },
+   {
+    "label": "Phone",
+    "points": 21,
+    "aliases": [
+     "cell phone",
+     "mobile",
+     "mobile phone"
+    ]
+   },
+   {
+    "label": "Glasses",
+    "points": 19,
+    "aliases": []
+   },
+   {
+    "label": "Hat",
+    "points": 15,
+    "aliases": []
+   },
+   {
+    "label": "Keys",
+    "points": 5,
+    "aliases": []
+   },
+   {
+    "label": "Vomit",
+    "points": 4,
+    "aliases": [
+     "\"THEIR LUNCH\"",
+     "LUNCH",
+     "barf",
+     "throw up",
+     "puke"
+    ]
+   },
+   {
+    "label": "Shoe",
+    "points": 3,
+    "aliases": [
+     "A SHOE"
+    ]
+   },
+   {
+    "label": "Teeth",
+    "points": 2,
+    "aliases": []
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud25_8.html",
+  "sourceTitle": "Family Feud season 25 · broadcast-board transcription",
+  "season": 25,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-16-5-61",
+  "prompt": "Which weapon would you want against a pack of zombies?",
+  "answers": [
+   {
+    "label": "Gun / Machine gun",
+    "points": 51,
+    "aliases": [
+     "GUN",
+     "MACHINE GUN",
+     "Gun",
+     "Machine gun",
+     "gun",
+     "firearm",
+     "pistol",
+     "rifle",
+     "shotgun"
+    ]
+   },
+   {
+    "label": "Sword",
+    "points": 13,
+    "aliases": []
+   },
+   {
+    "label": "Knife / Machete",
+    "points": 12,
+    "aliases": [
+     "KNIFE",
+     "MACHETE",
+     "Knife",
+     "Machete"
+    ]
+   },
+   {
+    "label": "Tank",
+    "points": 4,
+    "aliases": []
+   },
+   {
+    "label": "Flamethrower",
+    "points": 4,
+    "aliases": []
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud16_5.html",
+  "sourceTitle": "Family Feud season 16 · broadcast-board transcription",
+  "season": 16,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-16-6-107",
+  "prompt": "What do you find yourself talking to even though it can't answer?",
+  "answers": [
+   {
+    "label": "Dog / Animals",
+    "points": 52,
+    "aliases": [
+     "DOG",
+     "ANIMALS",
+     "Dog",
+     "Animals",
+     "dog",
+     "dogs",
+     "puppy",
+     "puppies",
+     "pooch"
+    ]
+   },
+   {
+    "label": "TV / Movie",
+    "points": 11,
+    "aliases": [
+     "TV",
+     "MOVIE",
+     "Movie",
+     "tv",
+     "television"
+    ]
+   },
+   {
+    "label": "Car",
+    "points": 6,
+    "aliases": [
+     "cars",
+     "automobile",
+     "vehicle"
+    ]
+   },
+   {
+    "label": "Plants / Trees",
+    "points": 6,
+    "aliases": [
+     "PLANTS",
+     "TREES",
+     "Plants",
+     "Trees"
+    ]
+   },
+   {
+    "label": "Mirror / Reflection",
+    "points": 5,
+    "aliases": [
+     "MIRROR",
+     "REFLECTION",
+     "Mirror",
+     "Reflection"
+    ]
+   },
+   {
+    "label": "Computer",
+    "points": 5,
+    "aliases": [
+     "pc",
+     "laptop"
+    ]
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud16_6.html",
+  "sourceTitle": "Family Feud season 16 · broadcast-board transcription",
+  "season": 16,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-16-7-110",
+  "prompt": "Which food comes shaped like a ball?",
+  "answers": [
+   {
+    "label": "Orange",
+    "points": 46,
+    "aliases": []
+   },
+   {
+    "label": "Meatball",
+    "points": 14,
+    "aliases": []
+   },
+   {
+    "label": "Melon",
+    "points": 13,
+    "aliases": []
+   },
+   {
+    "label": "Apple",
+    "points": 6,
+    "aliases": []
+   },
+   {
+    "label": "Cheese",
+    "points": 5,
+    "aliases": []
+   },
+   {
+    "label": "Rice balls",
+    "points": 2,
+    "aliases": []
+   },
+   {
+    "label": "Matzo balls",
+    "points": 2,
+    "aliases": []
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud16_7.html",
+  "sourceTitle": "Family Feud season 16 · broadcast-board transcription",
+  "season": 16,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-16-7-156",
+  "prompt": "Which sea creature could remind you of your boss?",
+  "answers": [
+   {
+    "label": "Shark",
+    "points": 34,
+    "aliases": []
+   },
+   {
+    "label": "Crab",
+    "points": 12,
+    "aliases": []
+   },
+   {
+    "label": "Eel",
+    "points": 11,
+    "aliases": []
+   },
+   {
+    "label": "Whale",
+    "points": 7,
+    "aliases": []
+   },
+   {
+    "label": "Octopus",
+    "points": 6,
+    "aliases": []
+   },
+   {
+    "label": "Dolphin",
+    "points": 5,
+    "aliases": []
+   },
+   {
+    "label": "Jellyfish",
+    "points": 5,
+    "aliases": []
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud16_7.html",
+  "sourceTitle": "Family Feud season 16 · broadcast-board transcription",
+  "season": 16,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-16-8-85",
+  "prompt": "Your dog runs away. What would you be shocked it packed to take along?",
+  "answers": [
+   {
+    "label": "Cat",
+    "points": 23,
+    "aliases": [
+     "THE CAT",
+     "cats",
+     "kitten",
+     "kittens",
+     "kitty"
+    ]
+   },
+   {
+    "label": "Leash / Collar",
+    "points": 17,
+    "aliases": [
+     "LEASH",
+     "COLLAR",
+     "Leash",
+     "Collar"
+    ]
+   },
+   {
+    "label": "Food / Bowl",
+    "points": 16,
+    "aliases": [
+     "FOOD",
+     "BOWL",
+     "Food",
+     "Bowl",
+     "food",
+     "snacks"
+    ]
+   },
+   {
+    "label": "Bone",
+    "points": 9,
+    "aliases": [
+     "HIS BONE"
+    ]
+   },
+   {
+    "label": "Clothes / Shoe",
+    "points": 6,
+    "aliases": [
+     "CLOTHES",
+     "SHOE",
+     "Clothes",
+     "Shoe",
+     "clothes",
+     "clothing"
+    ]
+   },
+   {
+    "label": "Bed / Pillow",
+    "points": 6,
+    "aliases": [
+     "BED",
+     "PILLOW",
+     "Bed",
+     "Pillow",
+     "pillow",
+     "pillows"
+    ]
+   },
+   {
+    "label": "Favorite toy",
+    "points": 4,
+    "aliases": []
+   },
+   {
+    "label": "Wallet / Money",
+    "points": 4,
+    "aliases": [
+     "WALLET",
+     "MONEY",
+     "Wallet",
+     "Money",
+     "money",
+     "cash",
+     "dollars",
+     "moolah",
+     "moola"
+    ]
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud16_8.html",
+  "sourceTitle": "Family Feud season 16 · broadcast-board transcription",
+  "season": 16,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-16-8-98",
+  "prompt": "If a divorce cake had a couple on top, what might they be holding instead of hands?",
+  "answers": [
+   {
+    "label": "Divorce papers",
+    "points": 24,
+    "aliases": []
+   },
+   {
+    "label": "Knives",
+    "points": 18,
+    "aliases": []
+   },
+   {
+    "label": "Guns",
+    "points": 16,
+    "aliases": []
+   },
+   {
+    "label": "Axes",
+    "points": 6,
+    "aliases": []
+   },
+   {
+    "label": "Lawyer / Bill",
+    "points": 4,
+    "aliases": [
+     "LAWYER",
+     "BILL",
+     "Lawyer",
+     "Bill",
+     "lawyer",
+     "attorney"
+    ]
+   },
+   {
+    "label": "Money / Bankbook",
+    "points": 4,
+    "aliases": [
+     "MONEY",
+     "BANKBOOK",
+     "Money",
+     "Bankbook",
+     "money",
+     "cash",
+     "dollars",
+     "moolah",
+     "moola"
+    ]
+   },
+   {
+    "label": "Kids",
+    "points": 4,
+    "aliases": [
+     "THE KIDS"
+    ]
+   },
+   {
+    "label": "Throats / Necks",
+    "points": 4,
+    "aliases": [
+     "THROATS",
+     "NECKS",
+     "Throats",
+     "Necks"
+    ]
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud16_8.html",
+  "sourceTitle": "Family Feud season 16 · broadcast-board transcription",
+  "season": 16,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-17-5-66",
+  "prompt": "Complete an irritated demand: “Get out of my ___!”",
+  "answers": [
+   {
+    "label": "Face",
+    "points": 25,
+    "aliases": [
+     "get out of my face"
+    ]
+   },
+   {
+    "label": "Way",
+    "points": 20,
+    "aliases": [
+     "get out of my way"
+    ]
+   },
+   {
+    "label": "House",
+    "points": 18,
+    "aliases": [
+     "get out of my house"
+    ]
+   },
+   {
+    "label": "Life",
+    "points": 12,
+    "aliases": [
+     "get out of my life"
+    ]
+   },
+   {
+    "label": "Hair",
+    "points": 8,
+    "aliases": [
+     "get out of my hair"
+    ]
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud17_5.html",
+  "sourceTitle": "Family Feud season 17 · broadcast-board transcription",
+  "season": 17,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-17-6-118",
+  "prompt": "What is harder to ride than a bicycle?",
+  "answers": [
+   {
+    "label": "Unicycle",
+    "points": 29,
+    "aliases": []
+   },
+   {
+    "label": "Motorcycle / Scooter",
+    "points": 25,
+    "aliases": [
+     "MOTORCYCLE",
+     "SCOOTER",
+     "Motorcycle",
+     "Scooter"
+    ]
+   },
+   {
+    "label": "Skateboard",
+    "points": 13,
+    "aliases": [
+     "skateboarding"
+    ]
+   },
+   {
+    "label": "Horse",
+    "points": 12,
+    "aliases": [
+     "horses"
+    ]
+   },
+   {
+    "label": "Bull / Mechanical",
+    "points": 5,
+    "aliases": [
+     "BULL",
+     "MECHANICAL",
+     "Bull",
+     "Mechanical"
+    ]
+   },
+   {
+    "label": "Camel",
+    "points": 3,
+    "aliases": []
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud17_6.html",
+  "sourceTitle": "Family Feud season 17 · broadcast-board transcription",
+  "season": 17,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-17-7-58",
+  "prompt": "What might a furious adult do that you'd also see in a child's tantrum?",
+  "answers": [
+   {
+    "label": "Yell / Swear",
+    "points": 51,
+    "aliases": [
+     "YELL/CUSS",
+     "YELL",
+     "CUSS",
+     "Yell",
+     "Swear",
+     "swear",
+     "swearing",
+     "curse",
+     "cuss"
+    ]
+   },
+   {
+    "label": "Throw things",
+    "points": 13,
+    "aliases": []
+   },
+   {
+    "label": "Cry / Whine",
+    "points": 9,
+    "aliases": [
+     "CRY",
+     "WHINE",
+     "Cry",
+     "Whine",
+     "cry",
+     "crying"
+    ]
+   },
+   {
+    "label": "Hit / Kick things",
+    "points": 8,
+    "aliases": [
+     "HIT",
+     "KICK THINGS",
+     "Hit",
+     "Kick things"
+    ]
+   },
+   {
+    "label": "Pout / Sulk",
+    "points": 6,
+    "aliases": [
+     "POUT",
+     "SULK",
+     "Pout",
+     "Sulk"
+    ]
+   },
+   {
+    "label": "Stomp feet",
+    "points": 6,
+    "aliases": []
+   },
+   {
+    "label": "Turn red",
+    "points": 2,
+    "aliases": []
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud17_7.html",
+  "sourceTitle": "Family Feud season 17 · broadcast-board transcription",
+  "season": 17,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-17-7-28",
+  "prompt": "What could go wrong for a teenage boy just before an important date?",
+  "answers": [
+   {
+    "label": "Big zit",
+    "points": 69,
+    "aliases": []
+   },
+   {
+    "label": "She cancels",
+    "points": 12,
+    "aliases": []
+   },
+   {
+    "label": "Gets grounded",
+    "points": 6,
+    "aliases": []
+   },
+   {
+    "label": "Sick / Diarrhea",
+    "points": 3,
+    "aliases": [
+     "SICK",
+     "DIARRHEA",
+     "Sick",
+     "Diarrhea"
+    ]
+   },
+   {
+    "label": "Car problem / Tires",
+    "points": 3,
+    "aliases": [
+     "CAR PROBLEM",
+     "TIRES",
+     "Car problem",
+     "Tires"
+    ]
+   },
+   {
+    "label": "Has no cash",
+    "points": 2,
+    "aliases": []
+   },
+   {
+    "label": "Gets nervous",
+    "points": 2,
+    "aliases": []
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud17_7.html",
+  "sourceTitle": "Family Feud season 17 · broadcast-board transcription",
+  "season": 17,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-17-8-101",
+  "prompt": "Which job might involve hurting somebody?",
+  "answers": [
+   {
+    "label": "Police officer",
+    "points": 39,
+    "aliases": [
+     "policeman",
+     "cop"
+    ]
+   },
+   {
+    "label": "Boxer",
+    "points": 15,
+    "aliases": []
+   },
+   {
+    "label": "Doctor / dentist",
+    "points": 14,
+    "aliases": [
+     "DOCTOR",
+     "DENTIST",
+     "Doctor",
+     "dentist",
+     "doctor",
+     "physician"
+    ]
+   },
+   {
+    "label": "Wrestler",
+    "points": 6,
+    "aliases": []
+   },
+   {
+    "label": "Bodyguard",
+    "points": 5,
+    "aliases": []
+   },
+   {
+    "label": "Military",
+    "points": 5,
+    "aliases": []
+   },
+   {
+    "label": "Nurse",
+    "points": 3,
+    "aliases": []
+   },
+   {
+    "label": "Football player",
+    "points": 3,
+    "aliases": []
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud17_8.html",
+  "sourceTitle": "Family Feud season 17 · broadcast-board transcription",
+  "season": 17,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-18-5-94",
+  "prompt": "What is another way of saying you're completely broke?",
+  "answers": [
+   {
+    "label": "Busted",
+    "points": 22,
+    "aliases": []
+   },
+   {
+    "label": "Tapped out",
+    "points": 21,
+    "aliases": []
+   },
+   {
+    "label": "Poor",
+    "points": 13,
+    "aliases": []
+   },
+   {
+    "label": "Spent",
+    "points": 12,
+    "aliases": []
+   },
+   {
+    "label": "Bankrupt",
+    "points": 11,
+    "aliases": []
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud18_5.html",
+  "sourceTitle": "Family Feud season 18 · broadcast-board transcription",
+  "season": 18,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-18-8-114",
+  "prompt": "Which animal would you enjoy becoming for a day?",
+  "answers": [
+   {
+    "label": "Bird / Chicken",
+    "points": 29,
+    "aliases": [
+     "BIRD",
+     "CHICKEN",
+     "Bird",
+     "Chicken",
+     "bird",
+     "birds",
+     "chicken",
+     "chickens"
+    ]
+   },
+   {
+    "label": "Dog / Pomeranian",
+    "points": 19,
+    "aliases": [
+     "DOG",
+     "POMERANIAN",
+     "Dog",
+     "Pomeranian",
+     "dog",
+     "dogs",
+     "puppy",
+     "puppies",
+     "pooch"
+    ]
+   },
+   {
+    "label": "Lion",
+    "points": 9,
+    "aliases": []
+   },
+   {
+    "label": "Cat",
+    "points": 7,
+    "aliases": [
+     "cats",
+     "kitten",
+     "kittens",
+     "kitty"
+    ]
+   },
+   {
+    "label": "Monkey / Ape",
+    "points": 6,
+    "aliases": [
+     "MONKEY",
+     "APE",
+     "Monkey",
+     "Ape"
+    ]
+   },
+   {
+    "label": "Tiger",
+    "points": 5,
+    "aliases": []
+   },
+   {
+    "label": "Horse",
+    "points": 5,
+    "aliases": [
+     "horses"
+    ]
+   },
+   {
+    "label": "Fox",
+    "points": 3,
+    "aliases": []
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud18_8.html",
+  "sourceTitle": "Family Feud season 18 · broadcast-board transcription",
+  "season": 18,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-18-8-88",
+  "prompt": "Which musical instrument could imitate the noises you make in the bathroom?",
+  "answers": [
+   {
+    "label": "Tuba",
+    "points": 33,
+    "aliases": []
+   },
+   {
+    "label": "Trombone",
+    "points": 12,
+    "aliases": []
+   },
+   {
+    "label": "Flute",
+    "points": 11,
+    "aliases": []
+   },
+   {
+    "label": "Trumpet",
+    "points": 10,
+    "aliases": []
+   },
+   {
+    "label": "Drums / Bongos",
+    "points": 9,
+    "aliases": [
+     "DRUMS",
+     "BONGOS",
+     "Drums",
+     "Bongos"
+    ]
+   },
+   {
+    "label": "Violin",
+    "points": 5,
+    "aliases": []
+   },
+   {
+    "label": "Piano",
+    "points": 4,
+    "aliases": []
+   },
+   {
+    "label": "Guitar",
+    "points": 4,
+    "aliases": []
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud18_8.html",
+  "sourceTitle": "Family Feud season 18 · broadcast-board transcription",
+  "season": 18,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-19-7-178",
+  "prompt": "Which activity from a fifth-birthday party would feel silly at a fiftieth?",
+  "answers": [
+   {
+    "label": "Pin tail on donkey",
+    "points": 37,
+    "aliases": []
+   },
+   {
+    "label": "Have a clown",
+    "points": 17,
+    "aliases": []
+   },
+   {
+    "label": "Balloons",
+    "points": 8,
+    "aliases": []
+   },
+   {
+    "label": "Hit a pinata",
+    "points": 5,
+    "aliases": []
+   },
+   {
+    "label": "Bouncy house",
+    "points": 4,
+    "aliases": []
+   },
+   {
+    "label": "Pony rides",
+    "points": 3,
+    "aliases": []
+   },
+   {
+    "label": "Blow out candles",
+    "points": 3,
+    "aliases": []
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud19_7.html",
+  "sourceTitle": "Family Feud season 19 · broadcast-board transcription",
+  "season": 19,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-19-7-0",
+  "prompt": "You catch a colleague asleep at work. What might you do?",
+  "answers": [
+   {
+    "label": "Wake / Scare them",
+    "points": 61,
+    "aliases": [
+     "WAKE",
+     "SCARE THEM",
+     "Wake",
+     "Scare them"
+    ]
+   },
+   {
+    "label": "Laugh",
+    "points": 8,
+    "aliases": [
+     "laughing"
+    ]
+   },
+   {
+    "label": "Ignore / Let them be",
+    "points": 8,
+    "aliases": [
+     "IGNORE",
+     "LET THEM BE",
+     "Ignore",
+     "Let them be"
+    ]
+   },
+   {
+    "label": "Tell the boss",
+    "points": 7,
+    "aliases": [
+     "TELL BOSS"
+    ]
+   },
+   {
+    "label": "Join them",
+    "points": 7,
+    "aliases": []
+   },
+   {
+    "label": "Take pic / Vid",
+    "points": 5,
+    "aliases": [
+     "TAKE PIC",
+     "VID",
+     "Take pic",
+     "Vid"
+    ]
+   },
+   {
+    "label": "Draw on them",
+    "points": 4,
+    "aliases": []
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud19_7.html",
+  "sourceTitle": "Family Feud season 19 · broadcast-board transcription",
+  "season": 19,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-20-5-76",
+  "prompt": "What might a young child experiment with flushing away?",
+  "answers": [
+   {
+    "label": "Toy / Teddy bear",
+    "points": 57,
+    "aliases": [
+     "TOY",
+     "TEDDY BEAR",
+     "Toy",
+     "Teddy bear"
+    ]
+   },
+   {
+    "label": "Food / Broccoli",
+    "points": 9,
+    "aliases": [
+     "FOOD",
+     "BROCCOLI",
+     "Food",
+     "Broccoli",
+     "food",
+     "snacks"
+    ]
+   },
+   {
+    "label": "Clothes / Diaper",
+    "points": 8,
+    "aliases": [
+     "CLOTHES",
+     "DIAPER",
+     "Clothes",
+     "Diaper",
+     "clothes",
+     "clothing",
+     "diaper",
+     "nappy"
+    ]
+   },
+   {
+    "label": "Pet / Goldfish",
+    "points": 7,
+    "aliases": [
+     "PET",
+     "GOLDFISH",
+     "Pet",
+     "Goldfish"
+    ]
+   },
+   {
+    "label": "Paper / Report card",
+    "points": 3,
+    "aliases": [
+     "PAPER",
+     "REPORT CARD",
+     "Paper",
+     "Report card"
+    ]
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud20_5.html",
+  "sourceTitle": "Family Feud season 20 · broadcast-board transcription",
+  "season": 20,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-20-5-73",
+  "prompt": "At a mermaid's wedding, what might replace the bouquet she tosses?",
+  "answers": [
+   {
+    "label": "Fish / fish scales",
+    "points": 28,
+    "aliases": [
+     "FISH/SCALES",
+     "FISH",
+     "SCALES",
+     "Fish",
+     "fish scales"
+    ]
+   },
+   {
+    "label": "Seashells",
+    "points": 26,
+    "aliases": [
+     "shells"
+    ]
+   },
+   {
+    "label": "Seaweed / Kelp",
+    "points": 25,
+    "aliases": [
+     "SEAWEED",
+     "KELP",
+     "Seaweed",
+     "Kelp",
+     "seaweed",
+     "kelp"
+    ]
+   },
+   {
+    "label": "Starfish",
+    "points": 4,
+    "aliases": []
+   },
+   {
+    "label": "Saltwater",
+    "points": 3,
+    "aliases": []
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud20_5.html",
+  "sourceTitle": "Family Feud season 20 · broadcast-board transcription",
+  "season": 20,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-20-5-63",
+  "prompt": "Which pricey supermarket food might a thief conceal in their clothes?",
+  "answers": [
+   {
+    "label": "Meat / Prime rib",
+    "points": 67,
+    "aliases": [
+     "MEAT",
+     "PRIME RIB",
+     "Meat",
+     "Prime rib"
+    ]
+   },
+   {
+    "label": "Caviar",
+    "points": 11,
+    "aliases": []
+   },
+   {
+    "label": "Lobster / Crab",
+    "points": 5,
+    "aliases": [
+     "LOBSTER",
+     "CRAB",
+     "Lobster",
+     "Crab"
+    ]
+   },
+   {
+    "label": "Cheese",
+    "points": 3,
+    "aliases": []
+   },
+   {
+    "label": "Truffles",
+    "points": 3,
+    "aliases": []
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud20_5.html",
+  "sourceTitle": "Family Feud season 20 · broadcast-board transcription",
+  "season": 20,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-20-6-176",
+  "prompt": "Your child says, “It followed me home!” What would surprise you standing beside them?",
+  "answers": [
+   {
+    "label": "Dog / Puppy",
+    "points": 20,
+    "aliases": [
+     "DOG",
+     "PUPPY",
+     "Dog",
+     "Puppy",
+     "dog",
+     "dogs",
+     "puppy",
+     "puppies",
+     "pooch"
+    ]
+   },
+   {
+    "label": "Person / Creepy clown",
+    "points": 19,
+    "aliases": [
+     "PERSON",
+     "CREEPY CLOWN",
+     "Person",
+     "Creepy clown"
+    ]
+   },
+   {
+    "label": "Skunk",
+    "points": 10,
+    "aliases": []
+   },
+   {
+    "label": "Horse / Pony",
+    "points": 10,
+    "aliases": [
+     "HORSE",
+     "PONY",
+     "Horse",
+     "Pony",
+     "horse",
+     "horses"
+    ]
+   },
+   {
+    "label": "Alligator / Croc",
+    "points": 5,
+    "aliases": [
+     "ALLIGATOR",
+     "CROC",
+     "Alligator",
+     "Croc"
+    ]
+   },
+   {
+    "label": "Rat / Mouse",
+    "points": 4,
+    "aliases": [
+     "RAT",
+     "MOUSE",
+     "Rat",
+     "Mouse"
+    ]
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud20_6.html",
+  "sourceTitle": "Family Feud season 20 · broadcast-board transcription",
+  "season": 20,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-20-7-130",
+  "prompt": "What would a skydiver dread colliding with during a jump?",
+  "answers": [
+   {
+    "label": "Bird / Geese",
+    "points": 30,
+    "aliases": [
+     "BIRD",
+     "GEESE",
+     "Bird",
+     "Geese",
+     "bird",
+     "birds"
+    ]
+   },
+   {
+    "label": "Plane / Propeller",
+    "points": 19,
+    "aliases": [
+     "PLANE",
+     "PROPELLER",
+     "Plane",
+     "Propeller"
+    ]
+   },
+   {
+    "label": "Skydiver / Ex",
+    "points": 16,
+    "aliases": [
+     "SKYDIVER/THEIR EX",
+     "SKYDIVER",
+     "EX",
+     "Skydiver",
+     "Ex"
+    ]
+   },
+   {
+    "label": "Tree",
+    "points": 11,
+    "aliases": []
+   },
+   {
+    "label": "Power line / Pole",
+    "points": 5,
+    "aliases": [
+     "POWER LINE",
+     "POLE",
+     "Power line",
+     "Pole"
+    ]
+   },
+   {
+    "label": "Mountain / Volcano",
+    "points": 4,
+    "aliases": [
+     "MOUNTAIN",
+     "VOLCANO",
+     "Mountain",
+     "Volcano"
+    ]
+   },
+   {
+    "label": "Building",
+    "points": 3,
+    "aliases": []
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud20_7.html",
+  "sourceTitle": "Family Feud season 20 · broadcast-board transcription",
+  "season": 20,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-20-7-60",
+  "prompt": "What could a tipsy witch crash her broom into?",
+  "answers": [
+   {
+    "label": "Tree",
+    "points": 40,
+    "aliases": []
+   },
+   {
+    "label": "House / Wall",
+    "points": 25,
+    "aliases": [
+     "HOUSE",
+     "WALL",
+     "House",
+     "Wall"
+    ]
+   },
+   {
+    "label": "Pole / Lamppost",
+    "points": 13,
+    "aliases": [
+     "POLE",
+     "LAMPPOST",
+     "Pole",
+     "Lamppost"
+    ]
+   },
+   {
+    "label": "Another witch",
+    "points": 6,
+    "aliases": []
+   },
+   {
+    "label": "Plane",
+    "points": 4,
+    "aliases": [
+     "A PLANE"
+    ]
+   },
+   {
+    "label": "Moon",
+    "points": 3,
+    "aliases": [
+     "THE MOON"
+    ]
+   },
+   {
+    "label": "Bird / Crow",
+    "points": 3,
+    "aliases": [
+     "BIRD/HER CROW",
+     "BIRD",
+     "CROW",
+     "Bird",
+     "Crow",
+     "bird",
+     "birds"
+    ]
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud20_7.html",
+  "sourceTitle": "Family Feud season 20 · broadcast-board transcription",
+  "season": 20,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-21-5-48",
+  "prompt": "Which city makes you think of serious wealth?",
+  "answers": [
+   {
+    "label": "Las Vegas",
+    "points": 40,
+    "aliases": []
+   },
+   {
+    "label": "New York City",
+    "points": 32,
+    "aliases": []
+   },
+   {
+    "label": "Los Angeles / Beverly Hills",
+    "points": 6,
+    "aliases": [
+     "LA/BEVERLY HILLS",
+     "LA",
+     "BEVERLY HILLS",
+     "Los Angeles",
+     "Beverly Hills"
+    ]
+   },
+   {
+    "label": "Miami",
+    "points": 4,
+    "aliases": []
+   },
+   {
+    "label": "Dubai",
+    "points": 3,
+    "aliases": []
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud21_5.html",
+  "sourceTitle": "Family Feud season 21 · broadcast-board transcription",
+  "season": 21,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-21-6-160",
+  "prompt": "What might someone glue themselves to so they can't fall off?",
+  "answers": [
+   {
+    "label": "Chair / Stool / Sofa",
+    "points": 36,
+    "aliases": [
+     "CHAIR",
+     "STOOL",
+     "SOFA",
+     "Chair",
+     "Stool",
+     "Sofa"
+    ]
+   },
+   {
+    "label": "Ladder",
+    "points": 21,
+    "aliases": []
+   },
+   {
+    "label": "Bicycle",
+    "points": 10,
+    "aliases": []
+   },
+   {
+    "label": "Toilet seat",
+    "points": 7,
+    "aliases": []
+   },
+   {
+    "label": "Saddle / Horse / Bull",
+    "points": 6,
+    "aliases": [
+     "SADDLE",
+     "HORSE",
+     "BULL",
+     "Saddle",
+     "Horse",
+     "Bull",
+     "horse",
+     "horses"
+    ]
+   },
+   {
+    "label": "Bed",
+    "points": 4,
+    "aliases": []
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud21_6.html",
+  "sourceTitle": "Family Feud season 21 · broadcast-board transcription",
+  "season": 21,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-21-8-81",
+  "prompt": "What hidden inside a pillow would make a pillow fight much less fun?",
+  "answers": [
+   {
+    "label": "Rocks",
+    "points": 52,
+    "aliases": []
+   },
+   {
+    "label": "Bricks",
+    "points": 15,
+    "aliases": []
+   },
+   {
+    "label": "Shoes",
+    "points": 5,
+    "aliases": []
+   },
+   {
+    "label": "Books",
+    "points": 4,
+    "aliases": []
+   },
+   {
+    "label": "Soap bars",
+    "points": 3,
+    "aliases": []
+   },
+   {
+    "label": "Fist",
+    "points": 3,
+    "aliases": [
+     "THEIR FIST"
+    ]
+   },
+   {
+    "label": "Coins",
+    "points": 3,
+    "aliases": []
+   },
+   {
+    "label": "Ball / Billiard balls",
+    "points": 3,
+    "aliases": [
+     "BALL",
+     "BILLIARD BALLS",
+     "Ball",
+     "Billiard balls"
+    ]
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud21_8.html",
+  "sourceTitle": "Family Feud season 21 · broadcast-board transcription",
+  "season": 21,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-21-8-103",
+  "prompt": "For a prisoner's final meal, which food might they request?",
+  "answers": [
+   {
+    "label": "Steak / Prime rib",
+    "points": 32,
+    "aliases": [
+     "STEAK",
+     "PRIME RIB",
+     "Steak",
+     "Prime rib"
+    ]
+   },
+   {
+    "label": "Seafood / Sushi",
+    "points": 19,
+    "aliases": [
+     "SEAFOOD",
+     "SUSHI",
+     "Seafood",
+     "Sushi"
+    ]
+   },
+   {
+    "label": "Pizza",
+    "points": 8,
+    "aliases": []
+   },
+   {
+    "label": "Pasta / Lasagna",
+    "points": 8,
+    "aliases": [
+     "PASTA",
+     "LASAGNA",
+     "Pasta",
+     "Lasagna"
+    ]
+   },
+   {
+    "label": "Bacon / Pork",
+    "points": 4,
+    "aliases": [
+     "BACON",
+     "PORK",
+     "Bacon",
+     "Pork"
+    ]
+   },
+   {
+    "label": "Chicken / Wings",
+    "points": 4,
+    "aliases": [
+     "CHICKEN",
+     "WINGS",
+     "Chicken",
+     "Wings",
+     "chicken",
+     "chickens"
+    ]
+   },
+   {
+    "label": "Ice cream",
+    "points": 3,
+    "aliases": []
+   },
+   {
+    "label": "Rice-a-roni",
+    "points": 3,
+    "aliases": []
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud21_8.html",
+  "sourceTitle": "Family Feud season 21 · broadcast-board transcription",
+  "season": 21,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-21-8-104",
+  "prompt": "If you had a kangaroo pouch, what would you carry inside?",
+  "answers": [
+   {
+    "label": "Money / Wallet",
+    "points": 23,
+    "aliases": [
+     "MONEY",
+     "WALLET",
+     "Money",
+     "Wallet",
+     "money",
+     "cash",
+     "dollars",
+     "moolah",
+     "moola"
+    ]
+   },
+   {
+    "label": "Food / Candy",
+    "points": 18,
+    "aliases": [
+     "FOOD",
+     "CANDY",
+     "Food",
+     "Candy",
+     "food",
+     "snacks",
+     "candy",
+     "sweets"
+    ]
+   },
+   {
+    "label": "Babies / Kids",
+    "points": 15,
+    "aliases": [
+     "BABIES",
+     "KIDS",
+     "Babies",
+     "Kids"
+    ]
+   },
+   {
+    "label": "Cell phone",
+    "points": 7,
+    "aliases": [
+     "phone",
+     "mobile phone",
+     "smartphone"
+    ]
+   },
+   {
+    "label": "Alcohol / keg",
+    "points": 6,
+    "aliases": [
+     "BOOZE/A KEG",
+     "BOOZE",
+     "KEG",
+     "Alcohol",
+     "keg"
+    ]
+   },
+   {
+    "label": "Keys",
+    "points": 5,
+    "aliases": []
+   },
+   {
+    "label": "Bottled water",
+    "points": 4,
+    "aliases": []
+   },
+   {
+    "label": "Gun",
+    "points": 3,
+    "aliases": [
+     "firearm",
+     "pistol",
+     "rifle",
+     "shotgun"
+    ]
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud21_8.html",
+  "sourceTitle": "Family Feud season 21 · broadcast-board transcription",
+  "season": 21,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-22-5-7",
+  "prompt": "What would you need terrible luck to get struck by?",
+  "answers": [
+   {
+    "label": "Lightning",
+    "points": 86,
+    "aliases": []
+   },
+   {
+    "label": "Car / Truck",
+    "points": 4,
+    "aliases": [
+     "CAR",
+     "TRUCK",
+     "Car",
+     "Truck",
+     "car",
+     "cars",
+     "automobile",
+     "vehicle"
+    ]
+   },
+   {
+    "label": "Airplane",
+    "points": 4,
+    "aliases": [
+     "plane",
+     "aeroplane"
+    ]
+   },
+   {
+    "label": "Train",
+    "points": 2,
+    "aliases": []
+   },
+   {
+    "label": "Meteor",
+    "points": 2,
+    "aliases": []
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud22_5.html",
+  "sourceTitle": "Family Feud season 22 · broadcast-board transcription",
+  "season": 22,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-22-5-3",
+  "prompt": "Which quality helps make a great game-show host?",
+  "answers": [
+   {
+    "label": "Charisma / Humor",
+    "points": 83,
+    "aliases": [
+     "CHARISMA",
+     "HUMOR",
+     "Charisma",
+     "Humor"
+    ]
+   },
+   {
+    "label": "Voice",
+    "points": 6,
+    "aliases": [
+     "BUTTERY VOICE"
+    ]
+   },
+   {
+    "label": "Face / smile",
+    "points": 4,
+    "aliases": [
+     "CUTE FACE/SMILE",
+     "CUTE FACE",
+     "SMILE",
+     "Face",
+     "smile",
+     "smiling"
+    ]
+   },
+   {
+    "label": "Patience",
+    "points": 4,
+    "aliases": []
+   },
+   {
+    "label": "Intelligence",
+    "points": 2,
+    "aliases": [
+     "SMARTS/180 I.Q.",
+     "SMARTS",
+     "180 I.Q."
+    ]
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud22_5.html",
+  "sourceTitle": "Family Feud season 22 · broadcast-board transcription",
+  "season": 22,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-22-6-159",
+  "prompt": "What might a teacher catch a student doing in high school?",
+  "answers": [
+   {
+    "label": "Cheating",
+    "points": 25,
+    "aliases": []
+   },
+   {
+    "label": "Skipping class",
+    "points": 15,
+    "aliases": []
+   },
+   {
+    "label": "Smoking",
+    "points": 12,
+    "aliases": []
+   },
+   {
+    "label": "Talking / Cussing",
+    "points": 11,
+    "aliases": [
+     "TALKING",
+     "CUSSING",
+     "Talking",
+     "Cussing"
+    ]
+   },
+   {
+    "label": "Sleeping",
+    "points": 11,
+    "aliases": []
+   },
+   {
+    "label": "Passing notes",
+    "points": 6,
+    "aliases": []
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud22_6.html",
+  "sourceTitle": "Family Feud season 22 · broadcast-board transcription",
+  "season": 22,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-22-7-128",
+  "prompt": "What in your home might a visiting Martian take for intelligent life?",
+  "answers": [
+   {
+    "label": "TV",
+    "points": 25,
+    "aliases": [
+     "MY TV",
+     "television"
+    ]
+   },
+   {
+    "label": "Me / Person",
+    "points": 19,
+    "aliases": [
+     "ME",
+     "PERSON",
+     "Me",
+     "Person"
+    ]
+   },
+   {
+    "label": "Pet / Parrot",
+    "points": 19,
+    "aliases": [
+     "PET",
+     "PARROT",
+     "Pet",
+     "Parrot"
+    ]
+   },
+   {
+    "label": "Computer",
+    "points": 14,
+    "aliases": [
+     "pc",
+     "laptop"
+    ]
+   },
+   {
+    "label": "Teddy bear / Toy",
+    "points": 3,
+    "aliases": [
+     "TEDDY BEAR",
+     "TOY",
+     "Teddy bear",
+     "Toy"
+    ]
+   },
+   {
+    "label": "Vacuum / Roomba",
+    "points": 3,
+    "aliases": [
+     "VACUUM",
+     "ROOMBA",
+     "Vacuum",
+     "Roomba",
+     "vacuum",
+     "vacuum cleaner"
+    ]
+   },
+   {
+    "label": "Cell phone",
+    "points": 3,
+    "aliases": [
+     "phone",
+     "mobile phone",
+     "smartphone"
+    ]
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud22_7.html",
+  "sourceTitle": "Family Feud season 22 · broadcast-board transcription",
+  "season": 22,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-22-7-7",
+  "prompt": "What does a magician hope stays alive for the whole performance?",
+  "answers": [
+   {
+    "label": "Rabbit",
+    "points": 65,
+    "aliases": [
+     "THE RABBIT",
+     "bunny"
+    ]
+   },
+   {
+    "label": "Assistant",
+    "points": 14,
+    "aliases": [
+     "HIS ASSISTANT"
+    ]
+   },
+   {
+    "label": "Dove",
+    "points": 8,
+    "aliases": [
+     "THE DOVE"
+    ]
+   },
+   {
+    "label": "Himself",
+    "points": 4,
+    "aliases": []
+   },
+   {
+    "label": "Act / Jokes",
+    "points": 2,
+    "aliases": [
+     "HIS ACT/JOKES",
+     "ACT",
+     "JOKES",
+     "Act",
+     "Jokes"
+    ]
+   },
+   {
+    "label": "Audience volunteer",
+    "points": 2,
+    "aliases": []
+   },
+   {
+    "label": "Magic wand",
+    "points": 2,
+    "aliases": [
+     "HIS MAGIC WAND"
+    ]
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud22_7.html",
+  "sourceTitle": "Family Feud season 22 · broadcast-board transcription",
+  "season": 22,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-22-7-1",
+  "prompt": "Which service might a cheapskate ask Mom to do for free?",
+  "answers": [
+   {
+    "label": "Laundry / Clean",
+    "points": 65,
+    "aliases": [
+     "LAUNDRY",
+     "CLEAN",
+     "Laundry",
+     "Clean"
+    ]
+   },
+   {
+    "label": "Cook / Bring food",
+    "points": 15,
+    "aliases": [
+     "COOK",
+     "BRING FOOD",
+     "Cook",
+     "Bring food"
+    ]
+   },
+   {
+    "label": "Cut his hair",
+    "points": 5,
+    "aliases": []
+   },
+   {
+    "label": "Babysit his kids",
+    "points": 5,
+    "aliases": []
+   },
+   {
+    "label": "Pay his rent / Bills",
+    "points": 3,
+    "aliases": [
+     "PAY HIS RENT",
+     "BILLS",
+     "Pay his rent",
+     "Bills"
+    ]
+   },
+   {
+    "label": "Drive him / On dates",
+    "points": 3,
+    "aliases": [
+     "DRIVE HIM",
+     "ON DATES",
+     "Drive him",
+     "On dates"
+    ]
+   },
+   {
+    "label": "Sew / Hem clothes",
+    "points": 3,
+    "aliases": [
+     "SEW",
+     "HEM CLOTHES",
+     "Sew",
+     "Hem clothes"
+    ]
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud22_7.html",
+  "sourceTitle": "Family Feud season 22 · broadcast-board transcription",
+  "season": 22,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-22-8-84",
+  "prompt": "What have people told a lie to avoid having to attend or do?",
+  "answers": [
+   {
+    "label": "Work / Meeting",
+    "points": 23,
+    "aliases": [
+     "WORK",
+     "MEETING",
+     "Work",
+     "Meeting"
+    ]
+   },
+   {
+    "label": "Jury duty",
+    "points": 18,
+    "aliases": []
+   },
+   {
+    "label": "Trouble",
+    "points": 15,
+    "aliases": []
+   },
+   {
+    "label": "Ticket",
+    "points": 9,
+    "aliases": [
+     "A TICKET"
+    ]
+   },
+   {
+    "label": "Jail",
+    "points": 8,
+    "aliases": [
+     "prison"
+    ]
+   },
+   {
+    "label": "Church",
+    "points": 7,
+    "aliases": []
+   },
+   {
+    "label": "In-law / Family visit",
+    "points": 3,
+    "aliases": [
+     "IN-LAW",
+     "FAMILY VISIT",
+     "In-law",
+     "Family visit"
+    ]
+   },
+   {
+    "label": "Doing dishes",
+    "points": 3,
+    "aliases": []
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud22_8.html",
+  "sourceTitle": "Family Feud season 22 · broadcast-board transcription",
+  "season": 22,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-23-5-104",
+  "prompt": "What around the house could a lonely ventriloquist make talk?",
+  "answers": [
+   {
+    "label": "Dummy / Doll",
+    "points": 17,
+    "aliases": [
+     "DUMMY",
+     "DOLL",
+     "Dummy",
+     "Doll"
+    ]
+   },
+   {
+    "label": "Pet",
+    "points": 15,
+    "aliases": [
+     "HIS PET"
+    ]
+   },
+   {
+    "label": "Food / Sandwich",
+    "points": 8,
+    "aliases": [
+     "FOOD",
+     "SANDWICH",
+     "Food",
+     "Sandwich",
+     "food",
+     "snacks"
+    ]
+   },
+   {
+    "label": "Plant / Venus flytrap",
+    "points": 6,
+    "aliases": [
+     "PLANT",
+     "VENUS FLYTRAP",
+     "Plant",
+     "Venus flytrap"
+    ]
+   },
+   {
+    "label": "Pillow",
+    "points": 6,
+    "aliases": [
+     "pillows"
+    ]
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud23_5.html",
+  "sourceTitle": "Family Feud season 23 · broadcast-board transcription",
+  "season": 23,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-23-5-70",
+  "prompt": "Which of their child's “firsts” do parents never forget?",
+  "answers": [
+   {
+    "label": "Word",
+    "points": 52,
+    "aliases": []
+   },
+   {
+    "label": "Steps",
+    "points": 19,
+    "aliases": []
+   },
+   {
+    "label": "Birthday",
+    "points": 5,
+    "aliases": []
+   },
+   {
+    "label": "Day of school",
+    "points": 5,
+    "aliases": []
+   },
+   {
+    "label": "Name",
+    "points": 4,
+    "aliases": []
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud23_5.html",
+  "sourceTitle": "Family Feud season 23 · broadcast-board transcription",
+  "season": 23,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-23-5-76",
+  "prompt": "Which piece of clothing might someone wear five days straight?",
+  "answers": [
+   {
+    "label": "Jeans / Pants",
+    "points": 39,
+    "aliases": [
+     "JEANS",
+     "PANTS",
+     "Jeans",
+     "Pants"
+    ]
+   },
+   {
+    "label": "Jacket / Hoodie",
+    "points": 19,
+    "aliases": [
+     "JACKET",
+     "HOODIE",
+     "Jacket",
+     "Hoodie"
+    ]
+   },
+   {
+    "label": "Shirt / Tee",
+    "points": 9,
+    "aliases": [
+     "SHIRT",
+     "TEE",
+     "Shirt",
+     "Tee"
+    ]
+   },
+   {
+    "label": "Bra",
+    "points": 8,
+    "aliases": []
+   },
+   {
+    "label": "Shoes / Sandals",
+    "points": 7,
+    "aliases": [
+     "SHOES",
+     "SANDALS",
+     "Shoes",
+     "Sandals"
+    ]
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud23_5.html",
+  "sourceTitle": "Family Feud season 23 · broadcast-board transcription",
+  "season": 23,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-23-6-154",
+  "prompt": "What would you bring for an overnight stay in a cemetery?",
+  "answers": [
+   {
+    "label": "Light / Candle",
+    "points": 47,
+    "aliases": [
+     "LIGHT",
+     "CANDLE",
+     "Light",
+     "Candle",
+     "light",
+     "flashlight",
+     "torch"
+    ]
+   },
+   {
+    "label": "Weapon",
+    "points": 13,
+    "aliases": []
+   },
+   {
+    "label": "Pillow / Blanket",
+    "points": 10,
+    "aliases": [
+     "PILLOW",
+     "BLANKET",
+     "Pillow",
+     "Blanket",
+     "pillow",
+     "pillows"
+    ]
+   },
+   {
+    "label": "Cross / Rosary",
+    "points": 8,
+    "aliases": [
+     "CROSS",
+     "ROSARY",
+     "Cross",
+     "Rosary"
+    ]
+   },
+   {
+    "label": "Company / Priest",
+    "points": 5,
+    "aliases": [
+     "COMPANY/A PRIEST",
+     "COMPANY",
+     "PRIEST",
+     "Company",
+     "Priest"
+    ]
+   },
+   {
+    "label": "Video camera",
+    "points": 3,
+    "aliases": []
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud23_6.html",
+  "sourceTitle": "Family Feud season 23 · broadcast-board transcription",
+  "season": 23,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-23-6-129",
+  "prompt": "A child holds a “running away from home” sale. What might they sell?",
+  "answers": [
+   {
+    "label": "Toys",
+    "points": 47,
+    "aliases": []
+   },
+   {
+    "label": "Bed / Bedding",
+    "points": 13,
+    "aliases": [
+     "BED",
+     "BEDDING",
+     "Bed",
+     "Bedding"
+    ]
+   },
+   {
+    "label": "Clothes / Mom's undies",
+    "points": 8,
+    "aliases": [
+     "GARB/MOM'S UNDIES",
+     "GARB",
+     "MOM'S UNDIES",
+     "Clothes",
+     "Mom's undies",
+     "clothes",
+     "clothing"
+    ]
+   },
+   {
+    "label": "Books / Comics",
+    "points": 8,
+    "aliases": [
+     "BOOKS",
+     "COMICS",
+     "Books",
+     "Comics"
+    ]
+   },
+   {
+    "label": "Sibling",
+    "points": 7,
+    "aliases": []
+   },
+   {
+    "label": "Lemonade",
+    "points": 6,
+    "aliases": []
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud23_6.html",
+  "sourceTitle": "Family Feud season 23 · broadcast-board transcription",
+  "season": 23,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-23-7-38",
+  "prompt": "What might convince you your new home is haunted?",
+  "answers": [
+   {
+    "label": "Noises / Voices",
+    "points": 40,
+    "aliases": [
+     "NOISES",
+     "VOICES",
+     "Noises",
+     "Voices"
+    ]
+   },
+   {
+    "label": "Doors open / Close",
+    "points": 15,
+    "aliases": [
+     "DOORS OPEN",
+     "CLOSE",
+     "Doors open",
+     "Close"
+    ]
+   },
+   {
+    "label": "Moving objects",
+    "points": 15,
+    "aliases": []
+   },
+   {
+    "label": "Ghost",
+    "points": 14,
+    "aliases": [
+     "ORNERY GHOST",
+     "spirit"
+    ]
+   },
+   {
+    "label": "Lights flicker",
+    "points": 7,
+    "aliases": []
+   },
+   {
+    "label": "Death / Body in home",
+    "points": 3,
+    "aliases": [
+     "DEATH",
+     "BODY IN HOME",
+     "Death",
+     "Body in home"
+    ]
+   },
+   {
+    "label": "Dark shadows",
+    "points": 2,
+    "aliases": []
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud23_7.html",
+  "sourceTitle": "Family Feud season 23 · broadcast-board transcription",
+  "season": 23,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-23-8-76",
+  "prompt": "Which Disney character's speaking voice are you glad you don't have?",
+  "answers": [
+   {
+    "label": "Donald duck",
+    "points": 43,
+    "aliases": []
+   },
+   {
+    "label": "Goofy",
+    "points": 15,
+    "aliases": []
+   },
+   {
+    "label": "Mickey mouse",
+    "points": 13,
+    "aliases": []
+   },
+   {
+    "label": "Minnie mouse",
+    "points": 8,
+    "aliases": []
+   },
+   {
+    "label": "Tinker bell",
+    "points": 2,
+    "aliases": []
+   },
+   {
+    "label": "Dopey",
+    "points": 2,
+    "aliases": []
+   },
+   {
+    "label": "Snow white",
+    "points": 2,
+    "aliases": []
+   },
+   {
+    "label": "Beast",
+    "points": 2,
+    "aliases": [
+     "THE BEAST"
+    ]
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud23_8.html",
+  "sourceTitle": "Family Feud season 23 · broadcast-board transcription",
+  "season": 23,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-24-5-41",
+  "prompt": "Complete a familiar word or expression ending in “hop.”",
+  "answers": [
+   {
+    "label": "Bunny hop",
+    "points": 29,
+    "aliases": [
+     "bunny"
+    ]
+   },
+   {
+    "label": "Hip-hop",
+    "points": 21,
+    "aliases": [
+     "hip"
+    ]
+   },
+   {
+    "label": "Bellhop",
+    "points": 16,
+    "aliases": [
+     "bell"
+    ]
+   },
+   {
+    "label": "Sock hop",
+    "points": 12,
+    "aliases": [
+     "sock"
+    ]
+   },
+   {
+    "label": "Ihop",
+    "points": 10,
+    "aliases": []
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud24_5.html",
+  "sourceTitle": "Family Feud season 24 · broadcast-board transcription",
+  "season": 24,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-24-6-122",
+  "prompt": "You hear that your boss has been arrested. How might you react?",
+  "answers": [
+   {
+    "label": "Laugh / Celebrate",
+    "points": 63,
+    "aliases": [
+     "LAUGH",
+     "CELEBRATE",
+     "Laugh",
+     "Celebrate",
+     "laugh",
+     "laughing"
+    ]
+   },
+   {
+    "label": "Find out why",
+    "points": 8,
+    "aliases": []
+   },
+   {
+    "label": "Bail 'em out",
+    "points": 7,
+    "aliases": []
+   },
+   {
+    "label": "Gossip / Post it",
+    "points": 4,
+    "aliases": [
+     "GOSSIP",
+     "POST IT",
+     "Gossip",
+     "Post it"
+    ]
+   },
+   {
+    "label": "Gasp / In shock",
+    "points": 3,
+    "aliases": [
+     "GASP",
+     "IN SHOCK",
+     "Gasp",
+     "In shock"
+    ]
+   },
+   {
+    "label": "Slack off / Skip work",
+    "points": 3,
+    "aliases": [
+     "SLACK OFF",
+     "SKIP WORK",
+     "Slack off",
+     "Skip work"
+    ]
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud24_6.html",
+  "sourceTitle": "Family Feud season 24 · broadcast-board transcription",
+  "season": 24,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-24-7-198",
+  "prompt": "Which skill had you learned by age five?",
+  "answers": [
+   {
+    "label": "Tie my shoes",
+    "points": 35,
+    "aliases": []
+   },
+   {
+    "label": "Read",
+    "points": 17,
+    "aliases": [
+     "READ/SHAKESPEARE",
+     "SHAKESPEARE",
+     "reading"
+    ]
+   },
+   {
+    "label": "Ride bike",
+    "points": 7,
+    "aliases": []
+   },
+   {
+    "label": "Use toilet / Wipe",
+    "points": 7,
+    "aliases": [
+     "USE TOILET",
+     "WIPE",
+     "Use toilet",
+     "Wipe"
+    ]
+   },
+   {
+    "label": "Walk",
+    "points": 4,
+    "aliases": [
+     "walking"
+    ]
+   },
+   {
+    "label": "Talk",
+    "points": 4,
+    "aliases": []
+   },
+   {
+    "label": "Count / To two",
+    "points": 4,
+    "aliases": [
+     "COUNT",
+     "TO TWO",
+     "Count",
+     "To two"
+    ]
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud24_7.html",
+  "sourceTitle": "Family Feud season 24 · broadcast-board transcription",
+  "season": 24,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-24-7-27",
+  "prompt": "What about Superman could make Batman jealous?",
+  "answers": [
+   {
+    "label": "He can fly",
+    "points": 55,
+    "aliases": []
+   },
+   {
+    "label": "Lois Lane",
+    "points": 12,
+    "aliases": [
+     "HIS BAE, LOIS",
+     "BAE, LOIS"
+    ]
+   },
+   {
+    "label": "Strength / physique",
+    "points": 10,
+    "aliases": [
+     "STRONG/HOT BOD",
+     "STRONG",
+     "HOT BOD",
+     "Strength",
+     "physique"
+    ]
+   },
+   {
+    "label": "X-ray vision",
+    "points": 7,
+    "aliases": []
+   },
+   {
+    "label": "Cool suit / No mask",
+    "points": 6,
+    "aliases": [
+     "COOL SUIT",
+     "NO MASK",
+     "Cool suit",
+     "No mask"
+    ]
+   },
+   {
+    "label": "Appearance / hair",
+    "points": 5,
+    "aliases": [
+     "CUTE/THAT CURL!",
+     "CUTE",
+     "THAT CURL!",
+     "Appearance",
+     "hair"
+    ]
+   },
+   {
+    "label": "No Robin",
+    "points": 2,
+    "aliases": [
+     "NO ANNOYING ROBIN"
+    ]
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud24_7.html",
+  "sourceTitle": "Family Feud season 24 · broadcast-board transcription",
+  "season": 24,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-24-8-136",
+  "prompt": "Which ball might extremely tough people choose for dodgeball?",
+  "answers": [
+   {
+    "label": "Medicine ball",
+    "points": 21,
+    "aliases": []
+   },
+   {
+    "label": "Baseball",
+    "points": 19,
+    "aliases": []
+   },
+   {
+    "label": "Basketball",
+    "points": 18,
+    "aliases": []
+   },
+   {
+    "label": "Bowling ball",
+    "points": 12,
+    "aliases": []
+   },
+   {
+    "label": "Soccer ball",
+    "points": 4,
+    "aliases": []
+   },
+   {
+    "label": "Football",
+    "points": 4,
+    "aliases": []
+   },
+   {
+    "label": "Softball",
+    "points": 4,
+    "aliases": []
+   },
+   {
+    "label": "Golf ball",
+    "points": 4,
+    "aliases": []
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud24_8.html",
+  "sourceTitle": "Family Feud season 24 · broadcast-board transcription",
+  "season": 24,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-24-8-133",
+  "prompt": "What would you pack, just in case, for a date with Bigfoot?",
+  "answers": [
+   {
+    "label": "Weapon",
+    "points": 33,
+    "aliases": []
+   },
+   {
+    "label": "Razor / Groom tool",
+    "points": 14,
+    "aliases": [
+     "RAZOR",
+     "GROOM TOOL",
+     "Razor",
+     "Groom tool"
+    ]
+   },
+   {
+    "label": "Mouth / Body spray",
+    "points": 10,
+    "aliases": [
+     "MOUTH",
+     "BODY SPRAY",
+     "Mouth",
+     "Body spray"
+    ]
+   },
+   {
+    "label": "Treats / Jerky",
+    "points": 9,
+    "aliases": [
+     "TREATS",
+     "JERKY",
+     "Treats",
+     "Jerky"
+    ]
+   },
+   {
+    "label": "Camera",
+    "points": 7,
+    "aliases": [
+     "A CAMERA!"
+    ]
+   },
+   {
+    "label": "Good shoes / For him",
+    "points": 7,
+    "aliases": [
+     "GOOD SHOES",
+     "FOR HIM",
+     "Good shoes",
+     "For him"
+    ]
+   },
+   {
+    "label": "Lint brush",
+    "points": 3,
+    "aliases": []
+   },
+   {
+    "label": "Ladder",
+    "points": 3,
+    "aliases": []
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud24_8.html",
+  "sourceTitle": "Family Feud season 24 · broadcast-board transcription",
+  "season": 24,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-25-5-38",
+  "prompt": "Which famous person or character named Harry comes to mind?",
+  "answers": [
+   {
+    "label": "Harry Potter",
+    "points": 58,
+    "aliases": [
+     "potter"
+    ]
+   },
+   {
+    "label": "Harry Houdini",
+    "points": 13,
+    "aliases": [
+     "houdini"
+    ]
+   },
+   {
+    "label": "Prince Harry",
+    "points": 7,
+    "aliases": [
+     "harry windsor"
+    ]
+   },
+   {
+    "label": "Harry Styles",
+    "points": 5,
+    "aliases": [
+     "styles"
+    ]
+   },
+   {
+    "label": "Harry Truman",
+    "points": 4,
+    "aliases": [
+     "truman"
+    ]
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud25_5.html",
+  "sourceTitle": "Family Feud season 25 · broadcast-board transcription",
+  "season": 25,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-25-6-10",
+  "prompt": "What would you buy if vampires moved in next door?",
+  "answers": [
+   {
+    "label": "Garlic",
+    "points": 57,
+    "aliases": []
+   },
+   {
+    "label": "New house",
+    "points": 13,
+    "aliases": []
+   },
+   {
+    "label": "Cross",
+    "points": 13,
+    "aliases": []
+   },
+   {
+    "label": "Stake / Weapon",
+    "points": 10,
+    "aliases": [
+     "STAKE",
+     "WEAPON",
+     "Stake",
+     "Weapon"
+    ]
+   },
+   {
+    "label": "Blood welcome gift",
+    "points": 3,
+    "aliases": []
+   },
+   {
+    "label": "New locks",
+    "points": 3,
+    "aliases": []
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud25_6.html",
+  "sourceTitle": "Family Feud season 25 · broadcast-board transcription",
+  "season": 25,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-25-6-14",
+  "prompt": "What could dress a farm pig as Miss Piggy for Halloween?",
+  "answers": [
+   {
+    "label": "Wig",
+    "points": 37,
+    "aliases": []
+   },
+   {
+    "label": "Dress / Clothes",
+    "points": 26,
+    "aliases": [
+     "DRESS/GARB",
+     "DRESS",
+     "GARB",
+     "Dress",
+     "Clothes",
+     "clothes",
+     "clothing"
+    ]
+   },
+   {
+    "label": "Makeup / Lashes",
+    "points": 24,
+    "aliases": [
+     "MAKEUP",
+     "LASHES",
+     "Makeup",
+     "Lashes"
+    ]
+   },
+   {
+    "label": "Pearls / Jewelry",
+    "points": 7,
+    "aliases": [
+     "PEARLS",
+     "JEWELRY",
+     "Pearls",
+     "Jewelry",
+     "jewelry",
+     "jewellery"
+    ]
+   },
+   {
+    "label": "Boa",
+    "points": 3,
+    "aliases": []
+   },
+   {
+    "label": "Bow",
+    "points": 2,
+    "aliases": []
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud25_6.html",
+  "sourceTitle": "Family Feud season 25 · broadcast-board transcription",
+  "season": 25,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-25-8-69",
+  "prompt": "What would a sword swallower dread doing halfway through the act?",
+  "answers": [
+   {
+    "label": "Cough",
+    "points": 32,
+    "aliases": []
+   },
+   {
+    "label": "Sneeze",
+    "points": 22,
+    "aliases": []
+   },
+   {
+    "label": "Hiccup",
+    "points": 12,
+    "aliases": []
+   },
+   {
+    "label": "Choke",
+    "points": 10,
+    "aliases": []
+   },
+   {
+    "label": "Burp",
+    "points": 8,
+    "aliases": []
+   },
+   {
+    "label": "Puke / Gag",
+    "points": 7,
+    "aliases": [
+     "PUKE",
+     "GAG",
+     "Puke",
+     "Gag"
+    ]
+   },
+   {
+    "label": "Trip / Fall",
+    "points": 2,
+    "aliases": [
+     "TRIP",
+     "FALL",
+     "Trip",
+     "Fall"
+    ]
+   },
+   {
+    "label": "Stab self / Die",
+    "points": 2,
+    "aliases": [
+     "STAB SELF",
+     "DIE",
+     "Stab self",
+     "Die"
+    ]
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud25_8.html",
+  "sourceTitle": "Family Feud season 25 · broadcast-board transcription",
+  "season": 25,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-16-5-67",
+  "prompt": "What would you hate using after a whole crowd had already used it?",
+  "answers": [
+   {
+    "label": "Toothbrush",
+    "points": 40,
+    "aliases": []
+   },
+   {
+    "label": "Toilet / Bathroom",
+    "points": 18,
+    "aliases": [
+     "TOILET",
+     "BATHROOM",
+     "Toilet",
+     "Bathroom",
+     "toilet",
+     "loo",
+     "lavatory",
+     "bathroom",
+     "restroom",
+     "washroom"
+    ]
+   },
+   {
+    "label": "Tissue / Toilet paper",
+    "points": 8,
+    "aliases": [
+     "TISSUE",
+     "TOILET PAPER",
+     "Tissue",
+     "Toilet paper",
+     "toilet paper",
+     "tp"
+    ]
+   },
+   {
+    "label": "Hairbrush",
+    "points": 7,
+    "aliases": []
+   },
+   {
+    "label": "Cup / Glass",
+    "points": 6,
+    "aliases": [
+     "CUP",
+     "GLASS",
+     "Cup",
+     "Glass"
+    ]
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud16_5.html",
+  "sourceTitle": "Family Feud season 16 · broadcast-board transcription",
+  "season": 16,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-17-5-10",
+  "prompt": "What bathroom fixture might a billionaire have made from solid gold?",
+  "answers": [
+   {
+    "label": "Toilet / Seat",
+    "points": 44,
+    "aliases": [
+     "TOILET",
+     "SEAT",
+     "Toilet",
+     "Seat",
+     "toilet",
+     "loo",
+     "lavatory"
+    ]
+   },
+   {
+    "label": "Faucet / Sink",
+    "points": 34,
+    "aliases": [
+     "FAUCET",
+     "SINK",
+     "Faucet",
+     "Sink"
+    ]
+   },
+   {
+    "label": "Shower / Tub",
+    "points": 16,
+    "aliases": [
+     "SHOWER",
+     "TUB",
+     "Shower",
+     "Tub"
+    ]
+   },
+   {
+    "label": "Toilet paper / Holder",
+    "points": 3,
+    "aliases": [
+     "TOILET PAPER",
+     "HOLDER",
+     "Toilet paper",
+     "Holder",
+     "toilet paper",
+     "tp"
+    ]
+   },
+   {
+    "label": "Razor",
+    "points": 2,
+    "aliases": []
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud17_5.html",
+  "sourceTitle": "Family Feud season 17 · broadcast-board transcription",
+  "season": 17,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ },
+ {
+  "id": "survey-17-6-134",
+  "prompt": "What is something you turn over?",
+  "answers": [
+   {
+    "label": "Pancakes",
+    "points": 44,
+    "aliases": []
+   },
+   {
+    "label": "Pillow",
+    "points": 12,
+    "aliases": [
+     "HOT SLOBBERY PILLOW",
+     "pillows"
+    ]
+   },
+   {
+    "label": "Mattress",
+    "points": 9,
+    "aliases": []
+   },
+   {
+    "label": "Pages of book",
+    "points": 8,
+    "aliases": []
+   },
+   {
+    "label": "Car / Engine",
+    "points": 5,
+    "aliases": [
+     "CAR",
+     "ENGINE",
+     "Car",
+     "Engine",
+     "car",
+     "cars",
+     "automobile",
+     "vehicle"
+    ]
+   },
+   {
+    "label": "Eggs",
+    "points": 5,
+    "aliases": [
+     "egg"
+    ]
+   }
+  ],
+  "source": "https://mstiescott.neocities.org/feud17_6.html",
+  "sourceTitle": "Family Feud season 17 · broadcast-board transcription",
+  "season": 17,
+  "checked": "2026-11-05",
+  "basis": "Aired board, fan-transcribed; question and answer wording condensed. Scores preserved as published."
+ }
+];
+export const EXTRA_FIGURE_QUESTIONS=[
+ {
+  "id": "adult-teeth",
+  "category": "Science",
+  "prompt": "Including wisdom teeth, how many teeth make a complete adult human set?",
+  "answer": 32,
+  "unit": "teeth",
+  "source": "https://www.nhsinform.scot/healthy-living/dental-health/your-teeth/everything-you-need-to-know-about-teeth/",
+  "sourceTitle": "NHS inform",
+  "explanation": "A complete permanent set includes the four wisdom teeth; not everyone develops or keeps all of them.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "human-lobes",
+  "category": "Science",
+  "prompt": "How many lobes do the two human lungs have altogether?",
+  "answer": 5,
+  "unit": "lobes",
+  "source": "https://www.nhlbi.nih.gov/health/lungs/respiratory-system",
+  "sourceTitle": "US National Heart, Lung, and Blood Institute",
+  "explanation": "The right lung has three lobes and the left has two.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "chromosome-pairs",
+  "category": "Science",
+  "prompt": "How many chromosome pairs are normally in a human body cell?",
+  "answer": 23,
+  "unit": "pairs",
+  "source": "https://www.genome.gov/about-genomics/fact-sheets/Chromosomes-Fact-Sheet",
+  "sourceTitle": "US National Human Genome Research Institute",
+  "explanation": "A typical body cell has 46 chromosomes arranged in 23 pairs; reproductive cells differ.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "dna-alphabet",
+  "category": "Science",
+  "prompt": "How many different bases form DNA's letter alphabet?",
+  "answer": 4,
+  "unit": "bases",
+  "source": "https://www.genome.gov/about-genomics/fact-sheets/Deoxyribonucleic-Acid-Fact-Sheet",
+  "sourceTitle": "US National Human Genome Research Institute",
+  "explanation": "The four letters represent adenine, cytosine, guanine and thymine.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "heart-chambers",
+  "category": "Science",
+  "prompt": "How many chambers does a normal human heart have?",
+  "answer": 4,
+  "unit": "chambers",
+  "source": "https://www.nhlbi.nih.gov/health/heart/anatomy",
+  "sourceTitle": "US National Heart, Lung, and Blood Institute",
+  "explanation": "There are two atria and two ventricles.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "air-nitrogen",
+  "category": "Science",
+  "prompt": "About what percentage of dry air is nitrogen, rounded to a whole percent?",
+  "answer": 78,
+  "unit": "percent",
+  "source": "https://www.noaa.gov/jetstream/atmosphere",
+  "sourceTitle": "US National Oceanic and Atmospheric Administration",
+  "explanation": "Nitrogen makes up roughly 78 percent of dry air; oxygen accounts for about 21 percent.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "sun-surface",
+  "category": "Science",
+  "prompt": "NASA puts the Sun's visible surface at roughly how many degrees Celsius?",
+  "answer": 5500,
+  "unit": "°C",
+  "source": "https://science.nasa.gov/sun/facts/",
+  "sourceTitle": "NASA Science",
+  "explanation": "This is the rounded temperature of the photosphere, not the much hotter core or corona.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "mercury-year",
+  "category": "Science",
+  "prompt": "Roughly how many Earth days make one year on Mercury?",
+  "answer": 88,
+  "unit": "Earth days",
+  "source": "https://science.nasa.gov/mercury/facts/",
+  "sourceTitle": "NASA Science",
+  "explanation": "Mercury takes about 88 Earth days to travel around the Sun.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "venus-spin",
+  "category": "Science",
+  "prompt": "About how many Earth days does Venus take to rotate once, relative to the stars?",
+  "answer": 243,
+  "unit": "Earth days",
+  "source": "https://science.nasa.gov/venus/venus-facts/",
+  "sourceTitle": "NASA Science",
+  "explanation": "This is the sidereal rotation period; Venus's sunrise-to-sunrise day is different.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "mars-day",
+  "category": "Science",
+  "prompt": "About how many Earth hours does Mars take to spin once relative to the stars?",
+  "answer": 24.6,
+  "unit": "hours",
+  "source": "https://science.nasa.gov/mars/facts/",
+  "sourceTitle": "NASA Science",
+  "explanation": "Its sidereal rotation is about 24 hours 37 minutes, or 24.6 hours. A solar day, or sol, is slightly longer.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "neptune-year",
+  "category": "Science",
+  "prompt": "About how many Earth years does Neptune take to go around the Sun?",
+  "answer": 165,
+  "unit": "Earth years",
+  "source": "https://science.nasa.gov/neptune/neptune-facts/",
+  "sourceTitle": "NASA Science",
+  "explanation": "Neptune's long orbit takes approximately 165 Earth years.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "iss-orbit",
+  "category": "Science",
+  "prompt": "About how many minutes does the International Space Station take to orbit Earth?",
+  "answer": 90,
+  "unit": "minutes",
+  "source": "https://www.nasa.gov/missions/station/spot-the-station-frequently-asked-questions/",
+  "sourceTitle": "NASA",
+  "explanation": "The station completes an orbit in roughly an hour and a half.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "iss-length",
+  "category": "Science",
+  "prompt": "NASA lists the International Space Station as how many metres long, end to end?",
+  "answer": 109,
+  "unit": "metres",
+  "source": "https://www.nasa.gov/international-space-station/space-station-facts-and-figures/",
+  "sourceTitle": "NASA",
+  "explanation": "Its end-to-end length is close to an American football field including the end zones.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "moon-walkers",
+  "category": "Science",
+  "prompt": "Across all six Apollo landings, how many people walked on the Moon?",
+  "answer": 12,
+  "unit": "people",
+  "source": "https://science.nasa.gov/wp-content/uploads/2024/01/62217main-moon-lithograph.pdf",
+  "sourceTitle": "NASA",
+  "explanation": "Each of the six successful landing missions put two astronauts on the lunar surface.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "gold-number",
+  "category": "Science",
+  "prompt": "What is gold's atomic number?",
+  "answer": 79,
+  "unit": "protons",
+  "source": "https://physics.nist.gov/PhysRefData/Handbook/Tables/goldtable1.htm",
+  "sourceTitle": "US National Institute of Standards and Technology",
+  "explanation": "An element's atomic number is the number of protons in one atom's nucleus.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "lhc-ring",
+  "category": "Science",
+  "prompt": "About how many kilometres long is the Large Hadron Collider ring?",
+  "answer": 27,
+  "unit": "km",
+  "source": "https://home.web.cern.ch/science/accelerators/large-hadron-collider",
+  "sourceTitle": "CERN",
+  "explanation": "CERN describes its ring of magnets as 27 kilometres long.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "neutral-ph",
+  "category": "Science",
+  "prompt": "At 25°C, what pH is considered neutral?",
+  "answer": 7,
+  "unit": "pH",
+  "source": "https://www.usgs.gov/special-topics/water-science-school/science/ph-and-water",
+  "sourceTitle": "US Geological Survey",
+  "explanation": "At this temperature a neutral solution has a pH of seven.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "sound-speed",
+  "category": "Science",
+  "prompt": "In dry air at 20°C, sound travels at about how many metres per second?",
+  "answer": 343,
+  "unit": "m/s",
+  "source": "https://www.grc.nasa.gov/www/k-12/airplane/sound.html",
+  "sourceTitle": "NASA Glenn Research Center",
+  "explanation": "The speed changes with temperature; 343 m/s is the rounded value at 20°C.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "karman-line",
+  "category": "Science",
+  "prompt": "How many kilometres above sea level is the FAI's Kármán-line boundary of space?",
+  "answer": 100,
+  "unit": "km",
+  "source": "https://www.fai.org/sites/default/files/documents/annex_4_fai_icare_plenary_meeting-_karman_line_presentation._berend.pdf",
+  "sourceTitle": "Fédération Aéronautique Internationale",
+  "explanation": "The FAI uses the 100 km convention; other organizations use different boundaries.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "vostok-flight",
+  "category": "Science",
+  "prompt": "How many minutes did Yuri Gagarin's first spaceflight last?",
+  "answer": 108,
+  "unit": "minutes",
+  "source": "https://www.fai.org/sites/default/files/documents/record_file_gagarin_1.pdf",
+  "sourceTitle": "Fédération Aéronautique Internationale",
+  "explanation": "Vostok 1 carried Gagarin around Earth on 12 April 1961.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "brain-mass",
+  "category": "Science",
+  "prompt": "About how many kilograms does an adult human brain weigh?",
+  "answer": 1.4,
+  "unit": "kg",
+  "source": "https://my.clevelandclinic.org/health/body/22638-brain",
+  "sourceTitle": "Cleveland Clinic",
+  "explanation": "The commonly quoted adult mass is about three pounds, or 1.4 kilograms.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "hubble-mirror",
+  "category": "Science",
+  "prompt": "What is the diameter, in metres, of Hubble's primary mirror?",
+  "answer": 2.4,
+  "unit": "metres",
+  "source": "https://science.nasa.gov/mission/hubble/observatory/design/optics/",
+  "sourceTitle": "NASA Science",
+  "explanation": "The main mirror is about 7.9 feet across, corresponding to 2.4 metres.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "sun-earths",
+  "category": "Science",
+  "prompt": "Roughly how many Earth-sized volumes would fit inside the Sun?",
+  "answer": 1300000,
+  "unit": "Earths",
+  "source": "https://science.nasa.gov/sun/facts/",
+  "sourceTitle": "NASA Science",
+  "explanation": "This comparison uses volume; it is approximately 1.3 million Earths.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "microwave-frequency",
+  "category": "Science",
+  "prompt": "A typical household microwave uses radiation at about how many megahertz?",
+  "answer": 2450,
+  "unit": "MHz",
+  "source": "https://www.hhs.gov/guidance/sites/default/files/hhs-guidance-documents/FDA/Procedures-for-Field-Testing-Microwave-Ovens.pdf",
+  "sourceTitle": "US Food and Drug Administration",
+  "explanation": "The commonly used microwave-oven frequency is 2.45 gigahertz, equivalent to 2,450 megahertz.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "elephant-pregnancy",
+  "category": "Nature",
+  "prompt": "About how many months does an elephant's pregnancy last?",
+  "answer": 22,
+  "unit": "months",
+  "source": "https://animals.sandiegozoo.org/animals/elephant",
+  "sourceTitle": "San Diego Zoo Wildlife Alliance",
+  "explanation": "Elephants have a gestation period of roughly 22 months, longer than any other living land mammal.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "ostrich-egg",
+  "category": "Nature",
+  "prompt": "About how many pounds does a typical ostrich egg weigh?",
+  "answer": 3,
+  "unit": "pounds",
+  "source": "https://animals.sandiegozoo.org/animals/ostrich",
+  "sourceTitle": "San Diego Zoo Wildlife Alliance",
+  "explanation": "San Diego Zoo describes the egg as about three pounds; individual eggs vary.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "koala-sleep",
+  "category": "Nature",
+  "prompt": "According to San Diego Zoo, koalas may sleep up to how many hours a day?",
+  "answer": 22,
+  "unit": "hours",
+  "source": "https://animals.sandiegozoo.org/animals/koala",
+  "sourceTitle": "San Diego Zoo Wildlife Alliance",
+  "explanation": "Koalas rest or sleep for much of the day; the quoted upper sleeping figure is 22 hours.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "honeybee-eyes",
+  "category": "Nature",
+  "prompt": "How many eyes does a honey bee have altogether?",
+  "answer": 5,
+  "unit": "eyes",
+  "source": "https://ask.ifas.ufl.edu/publication/4h419",
+  "sourceTitle": "University of Florida IFAS Extension",
+  "explanation": "Two large compound eyes are accompanied by three small simple eyes.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "spider-legs",
+  "category": "Nature",
+  "prompt": "How many legs does a spider have?",
+  "answer": 8,
+  "unit": "legs",
+  "source": "https://www.burkemuseum.org/collections-and-research/biology/arachnology-and-entomology/spider-myths/myth-spiders-are-insects",
+  "sourceTitle": "Burke Museum, University of Washington",
+  "explanation": "Spiders are arachnids with four pairs of walking legs, unlike six-legged insects.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "squid-limbs",
+  "category": "Nature",
+  "prompt": "Including the two long feeding tentacles, how many appendages does a squid have?",
+  "answer": 10,
+  "unit": "appendages",
+  "source": "https://www.montereybayaquarium.org/animals/animals-a-to-z/bigfin-reef-squid",
+  "sourceTitle": "Monterey Bay Aquarium",
+  "explanation": "A squid has eight arms plus two specialized tentacles.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "cow-stomach",
+  "category": "Nature",
+  "prompt": "How many compartments are in a cow's stomach?",
+  "answer": 4,
+  "unit": "compartments",
+  "source": "https://rvs.umn.edu/Uploads/EducationalMaterials/0278c078-eee2-4428-ac7f-c7b61c65cd8a.pdf",
+  "sourceTitle": "University of Minnesota Extension",
+  "explanation": "The rumen, reticulum, omasum and abomasum are compartments of one stomach.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "chicken-incubation",
+  "category": "Nature",
+  "prompt": "A chicken egg usually takes how many days of incubation to hatch?",
+  "answer": 21,
+  "unit": "days",
+  "source": "https://extension.msstate.edu/agriculture/livestock/poultry/incubation-duration-periods",
+  "sourceTitle": "Mississippi State University Extension",
+  "explanation": "Under normal incubation conditions, a chicken egg hatches in about three weeks.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "butterfly-stages",
+  "category": "Nature",
+  "prompt": "How many stages make up a butterfly's complete life cycle?",
+  "answer": 4,
+  "unit": "stages",
+  "source": "https://www.floridamuseum.ufl.edu/discover-butterflies/faq/",
+  "sourceTitle": "Florida Museum of Natural History",
+  "explanation": "The stages are egg, larva or caterpillar, pupa or chrysalis, and adult.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "honeycomb-cell",
+  "category": "Nature",
+  "prompt": "The familiar cells in a honeycomb normally have how many sides?",
+  "answer": 6,
+  "unit": "sides",
+  "source": "https://www.cheltglosbeekeepers.org.uk/wp-content/uploads/2025/07/Activity-Pack-2025.pdf",
+  "sourceTitle": "Cheltenham and Gloucester Beekeepers",
+  "explanation": "The question asks about the usual hexagonal cell shape, not the whole comb.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "giraffe-tongue",
+  "category": "Nature",
+  "prompt": "San Diego Zoo describes a giraffe's tongue as roughly how many inches long?",
+  "answer": 18,
+  "unit": "inches",
+  "source": "https://animals.sandiegozoo.org/animals/giraffe",
+  "sourceTitle": "San Diego Zoo Wildlife Alliance",
+  "explanation": "San Diego Zoo describes an 18-inch tongue, about 46 centimetres long.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "sloth-toilet",
+  "category": "Nature",
+  "prompt": "Roughly how many times per week does a sloth descend to poop?",
+  "answer": 1,
+  "unit": "times per week",
+  "source": "https://www.nationalzoo.si.edu/animals/news/why-are-sloths-so-slow-and-other-sloth-facts",
+  "sourceTitle": "Smithsonian National Zoo",
+  "explanation": "Sloths usually leave the canopy for this toilet trip about once a week.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "earth-age",
+  "category": "Nature",
+  "prompt": "About how many years old is Earth?",
+  "answer": 4540000000,
+  "unit": "years",
+  "source": "https://pubs.usgs.gov/gip/geotime/age.html",
+  "sourceTitle": "US Geological Survey",
+  "explanation": "The accepted estimate is about 4.54 billion years. You can enter 4.54b for 4,540,000,000.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "ocean-salinity",
+  "category": "Nature",
+  "prompt": "Average seawater contains about how many grams of dissolved salt per kilogram of seawater?",
+  "answer": 35,
+  "unit": "grams",
+  "source": "https://oceanservice.noaa.gov/facts/whysalty.html",
+  "sourceTitle": "US National Oceanic and Atmospheric Administration",
+  "explanation": "Average open-ocean salinity is about 35 parts per thousand by mass, or 35 grams per kilogram of seawater.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "sea-freezing",
+  "category": "Nature",
+  "prompt": "At average ocean salinity, seawater freezes at about what Fahrenheit temperature?",
+  "answer": 28.4,
+  "unit": "°F",
+  "source": "https://oceanservice.noaa.gov/facts/oceanfreeze.html",
+  "sourceTitle": "US National Oceanic and Atmospheric Administration",
+  "explanation": "Salt lowers the freezing point below freshwater's 32°F; the usual quoted value is 28.4°F.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "lightning-heat",
+  "category": "Nature",
+  "prompt": "NOAA says a lightning channel can heat the air to about how many degrees Fahrenheit?",
+  "answer": 50000,
+  "unit": "°F",
+  "source": "https://www.weather.gov/safety/lightning-science-thunder",
+  "sourceTitle": "US National Oceanic and Atmospheric Administration",
+  "explanation": "The rounded channel temperature is about 50,000°F, hotter than the Sun's visible surface.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "death-valley-heat",
+  "category": "Nature",
+  "prompt": "What Fahrenheit temperature was recorded at Death Valley's Furnace Creek in July 1913?",
+  "answer": 134,
+  "unit": "°F",
+  "source": "https://www.weather.gov/media/wrh/online_publications/TMs/TM-289.pdf",
+  "sourceTitle": "US National Weather Service",
+  "explanation": "The historically recognized Furnace Creek reading was 134°F on 10 July 1913.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "coast-redwood",
+  "category": "Nature",
+  "prompt": "To the nearest ten feet, how tall is the world's tallest known living tree, Hyperion?",
+  "answer": 380,
+  "unit": "feet",
+  "source": "https://www.guinnessworldrecords.com/world-records/largest-living-tree",
+  "sourceTitle": "Guinness World Records",
+  "explanation": "Guinness reports Hyperion at 116.07 metres, or 380 feet 9.7 inches, in its 2019 measurement; rounded to the nearest ten feet this is 380.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "sherman-volume",
+  "category": "Nature",
+  "prompt": "Rounded to the nearest whole cubic metre, what trunk volume does NPS estimate for General Sherman?",
+  "answer": 1487,
+  "unit": "cubic metres",
+  "source": "https://www.nps.gov/seki/learn/nature/sherman.htm",
+  "sourceTitle": "US National Park Service",
+  "explanation": "NPS gives a trunk volume of about 1,486.6 cubic metres; rounding to a whole cubic metre gives 1,487.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "monarch-flight",
+  "category": "Nature",
+  "prompt": "Migrating North American monarch butterflies may travel about how many miles to their wintering grounds?",
+  "answer": 3000,
+  "unit": "miles",
+  "source": "https://www.fws.gov/media/monarch-butterflies-31",
+  "sourceTitle": "US Fish and Wildlife Service",
+  "explanation": "Some monarchs make a migration of around 3,000 miles; many individuals travel shorter distances.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "bamboo-growth",
+  "category": "Nature",
+  "prompt": "Guinness lists the fastest-growing bamboo at about how many centimetres per day?",
+  "answer": 91,
+  "unit": "cm per day",
+  "source": "https://www.guinnessworldrecords.com/world-records/fastest-growing-plant",
+  "sourceTitle": "Guinness World Records",
+  "explanation": "The record growth rate is roughly 0.91 metres in 24 hours.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "venus-flytrap",
+  "category": "Nature",
+  "prompt": "Usually, how many quick trigger-hair touches make a Venus flytrap snap shut?",
+  "answer": 2,
+  "unit": "touches",
+  "source": "https://pubmed.ncbi.nlm.nih.gov/41619979/",
+  "sourceTitle": "Plant Science, threshold decision-making in the Venus flytrap",
+  "explanation": "A second trigger within a short interval normally causes closure; this helps avoid wasting energy on debris.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "angel-falls",
+  "category": "Nature",
+  "prompt": "Including its full drop, how many metres high is Venezuela's Angel Falls?",
+  "answer": 979,
+  "unit": "metres",
+  "source": "https://www.guinnessworldrecords.com/world-records/highest-waterfall",
+  "sourceTitle": "Guinness World Records",
+  "explanation": "The total height is 979 metres; its uninterrupted drop is a different, shorter measurement.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "sea-stars",
+  "category": "Nature",
+  "prompt": "How many arms does the familiar, typical sea-star shape have?",
+  "answer": 5,
+  "unit": "arms",
+  "source": "https://oceanservice.noaa.gov/facts/starfish.html",
+  "sourceTitle": "US National Oceanic and Atmospheric Administration",
+  "explanation": "Many familiar sea stars have five arms, although some species have many more.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "big-ben-bell",
+  "category": "World",
+  "prompt": "About how many tonnes does London's Big Ben bell weigh?",
+  "answer": 13.7,
+  "unit": "tonnes",
+  "source": "https://www.parliament.uk/about/living-heritage/building/palace/big-ben/facts-figures/",
+  "sourceTitle": "UK Parliament",
+  "explanation": "Big Ben is the Great Bell, not the name of the entire clock tower.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "liberty-height",
+  "category": "World",
+  "prompt": "From ground level to the torch tip, about how many metres tall is the Statue of Liberty?",
+  "answer": 93,
+  "unit": "metres",
+  "source": "https://www.nps.gov/places/000/statue-front.htm",
+  "sourceTitle": "US National Park Service",
+  "explanation": "This includes the pedestal and foundation; the statue alone is shorter.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "rushmore-faces",
+  "category": "World",
+  "prompt": "How many feet high are the presidential faces on Mount Rushmore?",
+  "answer": 60,
+  "unit": "feet",
+  "source": "https://www.nps.gov/moru/learn/historyculture/carving-history.htm",
+  "sourceTitle": "US National Park Service",
+  "explanation": "The four carved faces are each about 60 feet high.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "christ-statue",
+  "category": "World",
+  "prompt": "Excluding its pedestal, how many metres tall is Rio's Christ the Redeemer statue?",
+  "answer": 30,
+  "unit": "metres",
+  "source": "https://www.gov.br/mma/pt-br/composicao/secex/g20/ecswg-concept-note-technical-visit-tijuca-national-park-in-rio-de-janeiro.pdf",
+  "sourceTitle": "Brazilian Ministry of Environment",
+  "explanation": "The statue itself is 30 metres high; the pedestal adds another eight metres.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "pyramid-original",
+  "category": "World",
+  "prompt": "About how many metres tall was the Great Pyramid of Giza originally?",
+  "answer": 146.6,
+  "unit": "metres",
+  "source": "https://www.guinnessworldrecords.com/world-records/largest-pyramid",
+  "sourceTitle": "Guinness World Records",
+  "explanation": "The original height was approximately 146.6 metres; the present pyramid is shorter.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "panama-length",
+  "category": "World",
+  "prompt": "The Panama Canal Authority describes its canal as approximately how many kilometres long?",
+  "answer": 80,
+  "unit": "km",
+  "source": "https://pancanal.com/en/history-of-the-panama-canal/",
+  "sourceTitle": "Panama Canal Authority",
+  "explanation": "This is the authority's rounded Atlantic-to-Pacific canal length.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "channel-narrow",
+  "category": "World",
+  "prompt": "At the Strait of Dover, the English Channel is about how many miles wide?",
+  "answer": 21,
+  "unit": "miles",
+  "source": "https://science.nasa.gov/earth/earth-observatory/strait-of-dover-92299/",
+  "sourceTitle": "NASA Earth Observatory",
+  "explanation": "This is the narrowest crossing between the English and French coasts, not the channel's length.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "channel-tunnel",
+  "category": "World",
+  "prompt": "What is the Channel Tunnel's total length in kilometres, to two decimal places?",
+  "answer": 50.45,
+  "unit": "km",
+  "source": "https://concrete.ethz.ch/assets/asc/slides/asc_30-fire-as2024.pdf",
+  "sourceTitle": "ETH Zürich, concrete engineering case study",
+  "explanation": "This is the full rail tunnel; only part of it lies under the sea.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "trans-siberian",
+  "category": "World",
+  "prompt": "The classic Moscow–Vladivostok Trans-Siberian route spans roughly how many kilometres?",
+  "answer": 9288,
+  "unit": "km",
+  "source": "https://cit-rail.org/media/files/public/CIT-Info_EN/2012/CIT-Info4_2012_EN.pdf",
+  "sourceTitle": "International Rail Transport Committee",
+  "explanation": "The traditional route is approximately 9,288 kilometres long.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "great-wall",
+  "category": "World",
+  "prompt": "China's 2012 survey put all sections of the Great Wall at about how many kilometres in total?",
+  "answer": 21196,
+  "unit": "km",
+  "source": "https://historicengland.org.uk/content/docs/advice/wall-to-wall-seminar-proceedings/",
+  "sourceTitle": "Historic England / Great Wall seminar proceedings",
+  "explanation": "Rounded to the nearest kilometre, the full surveyed system totals 21,196 kilometres, including different historical periods.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "grand-canyon",
+  "category": "World",
+  "prompt": "The Grand Canyon runs about how many river miles from end to end?",
+  "answer": 277,
+  "unit": "miles",
+  "source": "https://www.nps.gov/grca/faqs.htm",
+  "sourceTitle": "US National Park Service",
+  "explanation": "NPS gives the canyon's length along the river as 277 miles.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "tower-bridge",
+  "category": "World",
+  "prompt": "How many metres tall are the two towers of London's Tower Bridge?",
+  "answer": 65,
+  "unit": "metres",
+  "source": "https://docs.planning.org.uk/20250910/54/T24DANKBG9900/o2283jo8978vtn7u.pdf",
+  "sourceTitle": "Tower Bridge architectural specification",
+  "explanation": "The bridge's two main towers rise about 65 metres.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "brooklyn-build",
+  "category": "World",
+  "prompt": "About how many years did construction of the Brooklyn Bridge take?",
+  "answer": 14,
+  "unit": "years",
+  "source": "https://brooklynbridgepark.org/places-to-see/brooklyn-bridge/",
+  "sourceTitle": "Brooklyn Bridge Park",
+  "explanation": "Construction began in 1869 and the bridge opened in 1883.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "route-66",
+  "category": "World",
+  "prompt": "The historic Chicago–Los Angeles Route 66 is traditionally listed at how many miles?",
+  "answer": 2448,
+  "unit": "miles",
+  "source": "https://www.blm.gov/sites/default/files/documents/files/media-center-public-room-california-route-66-map-and-guide.pdf",
+  "sourceTitle": "US Bureau of Land Management",
+  "explanation": "The traditional historic route length is 2,448 miles; exact driven alignments can differ.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "suez-length",
+  "category": "World",
+  "prompt": "How many kilometres long is the Suez Canal in the authority's canal-characteristics table?",
+  "answer": 193.3,
+  "unit": "km",
+  "source": "https://www.suezcanal.gov.eg/English/About/SuezCanal/Pages/CanalCharacteristics.aspx",
+  "sourceTitle": "Suez Canal Authority",
+  "explanation": "The official table gives a total canal length of 193.3 kilometres.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "table-mountain",
+  "category": "World",
+  "prompt": "SANParks lists Table Mountain's highest point, Maclear's Beacon, at how many metres above sea level?",
+  "answer": 1088,
+  "unit": "metres",
+  "source": "https://www.sanparks.org/parks/table-mountain/what-to-do/activities/hikes-walks-trails",
+  "sourceTitle": "South African National Parks",
+  "explanation": "The current SANParks trail information lists Maclear's Beacon at 1,088 metres, 21 metres above the upper cableway station.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "nile-length",
+  "category": "World",
+  "prompt": "Using its commonly cited rounded length, about how many kilometres long is the Nile?",
+  "answer": 6650,
+  "unit": "km",
+  "source": "https://deepblue.lib.umich.edu/bitstream/handle/2027.42/89719/cookrj_1.pdf?isAllowed=y&sequence=1",
+  "sourceTitle": "University of Michigan, Nile irrigation study",
+  "explanation": "The commonly cited length is roughly 6,650 kilometres; river-source definitions affect exact measurements.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "sahara-area",
+  "category": "World",
+  "prompt": "About how many square kilometres does the Sahara cover?",
+  "answer": 9200000,
+  "unit": "km²",
+  "source": "https://www.jstor.org/stable/j.ctv1kbgsz1",
+  "sourceTitle": "Martin Williams, When the Sahara Was Green",
+  "explanation": "The rounded area is about 9.2 million square kilometres. Entering 9.2m is equivalent to 9,200,000.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "merlion-height",
+  "category": "World",
+  "prompt": "Singapore's famous Merlion statue at Merlion Park stands how many metres tall?",
+  "answer": 8.6,
+  "unit": "metres",
+  "source": "https://www.visitsingapore.com/see-do-singapore/recreation-leisure/viewpoints/merlion-park/",
+  "sourceTitle": "Singapore Tourism Board",
+  "explanation": "The waterfront Merlion statue is 8.6 metres high.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "one-world",
+  "category": "World",
+  "prompt": "Including its spire, how many feet tall is One World Trade Center?",
+  "answer": 1776,
+  "unit": "feet",
+  "source": "https://wtc.com/work-place/1wtc/",
+  "sourceTitle": "World Trade Center official site",
+  "explanation": "The symbolic architectural height is 1,776 feet.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "titanic-length",
+  "category": "World",
+  "prompt": "Rounded to the nearest metre, how long was the actual RMS Titanic?",
+  "answer": 269,
+  "unit": "metres",
+  "source": "https://www.encyclopedia-titanica.org/titanic/",
+  "sourceTitle": "Encyclopedia Titanica",
+  "explanation": "The ship measured about 269 metres from bow to stern.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "cinderella-castle",
+  "category": "World",
+  "prompt": "How many feet high is Cinderella Castle at Walt Disney World's Magic Kingdom?",
+  "answer": 189,
+  "unit": "feet",
+  "source": "https://disneyworld.disney.go.com/attractions/magic-kingdom/cinderella-castle/",
+  "sourceTitle": "Disney Parks Blog",
+  "explanation": "The Florida castle stands 189 feet high; other Disney castles have different heights.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "london-eye",
+  "category": "World",
+  "prompt": "How many metres high is the London Eye, including its supporting structure?",
+  "answer": 135,
+  "unit": "metres",
+  "source": "https://www.londoneye.com/plan-your-visit/information-and-support/faqs/",
+  "sourceTitle": "London Eye official site",
+  "explanation": "The overall attraction reaches 135 metres above the ground.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "machu-picchu",
+  "category": "World",
+  "prompt": "UNESCO places Machu Picchu about how many metres above sea level?",
+  "answer": 2430,
+  "unit": "metres",
+  "source": "https://whc.unesco.org/en/list/274/",
+  "sourceTitle": "UNESCO World Heritage Centre",
+  "explanation": "The historic sanctuary's famous citadel is at approximately 2,430 metres above sea level.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "olympic-rings",
+  "category": "Sports",
+  "prompt": "How many interlocking rings are in the Olympic symbol?",
+  "answer": 5,
+  "unit": "rings",
+  "source": "https://www.olympics.com/ioc/faq/olympic-symbol-and-identity/what-is-the-meaning-of-the-olympic-rings",
+  "sourceTitle": "International Olympic Committee",
+  "explanation": "The five rings represent the union of the five continents and the meeting of athletes worldwide.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "phelps-medals",
+  "category": "Sports",
+  "prompt": "How many Olympic medals did Michael Phelps win in his career?",
+  "answer": 28,
+  "unit": "medals",
+  "source": "https://www.worldaquatics.com/athletes/1001621/michael-phelps/medals",
+  "sourceTitle": "World Aquatics",
+  "explanation": "He won 23 gold, three silver and two bronze medals.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "bolt-berlin",
+  "category": "Sports",
+  "prompt": "What was Usain Bolt's winning time, in seconds, in the 2009 Berlin 100-metre world-record race?",
+  "answer": 9.58,
+  "unit": "seconds",
+  "source": "https://worldathletics.org/news/news/bolt-again-958-world-record-in-berlin-updat",
+  "sourceTitle": "World Athletics",
+  "explanation": "His Berlin performance on 16 August 2009 stopped the clock at 9.58 seconds.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "wimbledon-longest",
+  "category": "Sports",
+  "prompt": "How many total minutes of play did the 2010 Isner–Mahut Wimbledon match last?",
+  "answer": 665,
+  "unit": "minutes",
+  "source": "https://www.wimbledon.com/pdf/2025_Wimbledon_Compendium_W_250617.pdf",
+  "sourceTitle": "Wimbledon",
+  "explanation": "The match lasted 11 hours and five minutes: 11 × 60 + 5 = 665 minutes, across three days.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "tennis-majors",
+  "category": "Sports",
+  "prompt": "How many tournaments make up tennis's annual Grand Slam set?",
+  "answer": 4,
+  "unit": "tournaments",
+  "source": "https://www.itftennis.com/en/itf-tours/grand-slam-tournaments/",
+  "sourceTitle": "International Tennis Federation",
+  "explanation": "The Australian Open, Roland Garros, Wimbledon and US Open form the set.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "tennis-set",
+  "category": "Sports",
+  "prompt": "Without a tiebreak, what is the fewest games you must win to take a standard tennis set?",
+  "answer": 6,
+  "unit": "games",
+  "source": "https://www.itftennis.com/en/about-us/governance/rules-and-regulations/",
+  "sourceTitle": "International Tennis Federation",
+  "explanation": "In a normal advantage or tiebreak set, six games can win the set if the lead is at least two.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "volleyball-team",
+  "category": "Sports",
+  "prompt": "During normal indoor volleyball play, how many players per team are on court?",
+  "answer": 6,
+  "unit": "players",
+  "source": "https://www.fivb.com/wp-content/uploads/2025/01/FIVB-Volleyball_Rules2025_2028-EN.pdf",
+  "sourceTitle": "International Volleyball Federation",
+  "explanation": "Each side fields six players; substitutions and libero replacements do not increase that number.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "volleyball-set",
+  "category": "Sports",
+  "prompt": "In indoor volleyball, how many points usually win a non-deciding set if the margin is sufficient?",
+  "answer": 25,
+  "unit": "points",
+  "source": "https://www.fivb.com/wp-content/uploads/2025/01/FIVB-Volleyball_Rules2025_2028-EN.pdf",
+  "sourceTitle": "International Volleyball Federation",
+  "explanation": "The first four sets use a 25-point target and a two-point winning margin; the deciding set differs.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "hockey-period",
+  "category": "Sports",
+  "prompt": "How many minutes are in one regulation NHL period?",
+  "answer": 20,
+  "unit": "minutes",
+  "source": "https://media.nhl.com/site/asset/public/ext/2025-26/2025-26Rules.pdf",
+  "sourceTitle": "National Hockey League",
+  "explanation": "An NHL game has three regulation periods of 20 playing minutes.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "hockey-players",
+  "category": "Sports",
+  "prompt": "With a goalie and no penalties, how many players does one NHL team normally have on the ice?",
+  "answer": 6,
+  "unit": "players",
+  "source": "https://media.nhl.com/site/asset/public/ext/2025-26/2025-26Rules.pdf",
+  "sourceTitle": "National Hockey League",
+  "explanation": "There are five skaters plus one goaltender in the normal six-player lineup.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "nfl-field",
+  "category": "Sports",
+  "prompt": "Including both end zones, how many yards long is an NFL field?",
+  "answer": 120,
+  "unit": "yards",
+  "source": "https://operations.nfl.com/the-rules/nfl-rulebook/",
+  "sourceTitle": "National Football League",
+  "explanation": "There are 100 yards between the goal lines and two 10-yard end zones.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "touchdown",
+  "category": "Sports",
+  "prompt": "Before any conversion attempt, how many points is an NFL touchdown worth?",
+  "answer": 6,
+  "unit": "points",
+  "source": "https://operations.nfl.com/the-rules/nfl-rulebook/",
+  "sourceTitle": "National Football League",
+  "explanation": "The extra-point kick or two-point try is scored separately from the six-point touchdown.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "nfl-1966",
+  "category": "Sports",
+  "prompt": "How many points did Washington score against the Giants in its famous November 1966 game?",
+  "answer": 72,
+  "unit": "points",
+  "source": "https://www.profootballhof.com/news/highest-scoring-game",
+  "sourceTitle": "Pro Football Hall of Fame",
+  "explanation": "Washington won 72–41 in the highest-scoring game in NFL history at the time.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "nba-minutes",
+  "category": "Sports",
+  "prompt": "Excluding overtime, how many minutes of playing time are in an NBA game?",
+  "answer": 48,
+  "unit": "minutes",
+  "source": "https://official.nba.com/rule-no-5-scoring-and-timing/",
+  "sourceTitle": "National Basketball Association",
+  "explanation": "Four 12-minute quarters add up to 48 regulation minutes.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "warriors-2016",
+  "category": "Sports",
+  "prompt": "How many regular-season games did the Golden State Warriors win in 2015–16?",
+  "answer": 73,
+  "unit": "wins",
+  "source": "https://www.nba.com/news/history-season-review-2015-16",
+  "sourceTitle": "National Basketball Association",
+  "explanation": "The Warriors finished that regular season 73–9; the playoffs are not included.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "football-minutes",
+  "category": "Sports",
+  "prompt": "Without stoppage time or extra time, how many minutes are in a standard senior football match?",
+  "answer": 90,
+  "unit": "minutes",
+  "source": "https://www.theifab.com/laws/latest/the-duration-of-the-match/",
+  "sourceTitle": "International Football Association Board",
+  "explanation": "The normal match consists of two equal halves of 45 minutes.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "t20-overs",
+  "category": "Sports",
+  "prompt": "In a full T20 cricket match, each team is scheduled to face how many overs?",
+  "answer": 20,
+  "unit": "overs",
+  "source": "https://documents.bcci.tv/smart-images/1747375689423_mens-t20-playing-conditions.pdf",
+  "sourceTitle": "BCCI, T20 playing conditions",
+  "explanation": "The T20 format gives each side a maximum of 20 overs unless conditions shorten the match.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "golf-round",
+  "category": "Sports",
+  "prompt": "How many holes make up the conventional full round of golf?",
+  "answer": 18,
+  "unit": "holes",
+  "source": "https://www.randa.org/en/rog/the-rules-of-golf/rule-1",
+  "sourceTitle": "The R&A",
+  "explanation": "The Rules of Golf define a round as 18 or fewer holes; the conventional full course is 18.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "darts-start",
+  "category": "Sports",
+  "prompt": "In the standard professional leg format, what score does a darts player count down from?",
+  "answer": 501,
+  "unit": "points",
+  "source": "https://www.pdc.tv/sites/default/files/2020-08/DRA-Rules.pdf",
+  "sourceTitle": "Professional Darts Corporation",
+  "explanation": "Players subtract each visit's score and must finish on a double; the starting score is 501.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "snooker-perfect",
+  "category": "Sports",
+  "prompt": "Without a free ball, what is snooker's maximum possible break?",
+  "answer": 147,
+  "unit": "points",
+  "source": "https://www.wst.tv/147s/fascinatingfactsabout147s/",
+  "sourceTitle": "World Snooker Tour",
+  "explanation": "Fifteen reds with fifteen blacks, followed by all six colours, give 147 points.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "bowling-perfect",
+  "category": "Sports",
+  "prompt": "How many points are scored in a perfect ten-pin bowling game?",
+  "answer": 300,
+  "unit": "points",
+  "source": "https://bowl.com/getmedia/004237d3-3d9a-4f03-8cf2-91c916df8d79/hsguide.pdf",
+  "sourceTitle": "United States Bowling Congress",
+  "explanation": "Twelve consecutive strikes produce the maximum score of 300.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "super-bowl-comeback",
+  "category": "Sports",
+  "prompt": "At their lowest point in Super Bowl LI, how many points behind were the Patriots?",
+  "answer": 25,
+  "unit": "points",
+  "source": "https://static.www.nfl.com/league/apps/league-site/media-guides/2024/NE.pdf",
+  "sourceTitle": "National Football League",
+  "explanation": "New England trailed Atlanta 28–3 before coming back to win in overtime.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "baseball-bases",
+  "category": "Sports",
+  "prompt": "What side length, in feet, defines an MLB infield's square layout?",
+  "answer": 90,
+  "unit": "feet",
+  "source": "https://www.mlb.com/glossary/rules/field-dimensions",
+  "sourceTitle": "Major League Baseball",
+  "explanation": "The infield is laid out as a 90-foot square; the measurement follows the rulebook's specified points.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "rugby-union",
+  "category": "Sports",
+  "prompt": "In a full-strength rugby union side, how many players are on the field?",
+  "answer": 15,
+  "unit": "players",
+  "source": "https://www.world.rugby/the-game/laws/law/3",
+  "sourceTitle": "World Rugby",
+  "explanation": "Standard rugby union is fifteen-a-side; rugby sevens is a different format.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "harry-potter-books",
+  "category": "Culture",
+  "prompt": "How many main Harry Potter novels were written by J. K. Rowling?",
+  "answer": 7,
+  "unit": "books",
+  "source": "https://www.bloomsbury.com/uk/harry-potter-boxed-set-the-complete-collection-adult-paperback-9781408898659/",
+  "sourceTitle": "Bloomsbury",
+  "explanation": "The main novel sequence runs from Philosopher's Stone to Deathly Hallows; companion books and the stage play are separate.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "hobbit-dwarves",
+  "category": "Culture",
+  "prompt": "How many dwarves make up Thorin's company in The Hobbit?",
+  "answer": 13,
+  "unit": "dwarves",
+  "source": "https://www.harperreach.com/products/the-hobbit-j-r-r-tolkien-9780261103344/",
+  "sourceTitle": "HarperCollins / HarperReach",
+  "explanation": "Thorin and twelve other dwarves travel with Bilbo; Bilbo and Gandalf are not dwarves.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "snow-white-dwarfs",
+  "category": "Culture",
+  "prompt": "In Disney's original Snow White film, how many dwarfs share the cottage?",
+  "answer": 7,
+  "unit": "dwarfs",
+  "source": "https://d23.com/a-to-z/snow-white-and-the-seven-dwarfs-film/",
+  "sourceTitle": "Disney / D23",
+  "explanation": "The cottage belongs to Doc, Grumpy, Happy, Sleepy, Bashful, Sneezy and Dopey.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "friends-episodes",
+  "category": "Culture",
+  "prompt": "How many episodes make up the original ten-season run of Friends?",
+  "answer": 236,
+  "unit": "episodes",
+  "source": "https://press.wbd.com/us/media-release/one-where-they-got-back-together",
+  "sourceTitle": "Warner Bros. Discovery",
+  "explanation": "The full original series contains 236 episodes, counting its two-part episodes as separate installments.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "breaking-bad-episodes",
+  "category": "Culture",
+  "prompt": "Across its five seasons, how many episodes does Breaking Bad have?",
+  "answer": 62,
+  "unit": "episodes",
+  "source": "https://play.google.com/store/tv/show?cdid=tvseason-0mgsbBNj1H9er-FFrsgQEg&gdid=tvepisode-M5fFrZ0mL4A&id=hqgy8T_v7tg",
+  "sourceTitle": "Google Play / Sony Pictures Television",
+  "explanation": "The five seasons contain 7, 13, 13, 13 and 16 episodes, totaling 62.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "big-bang-episodes",
+  "category": "Culture",
+  "prompt": "How many episodes were made in The Big Bang Theory's original twelve-season run?",
+  "answer": 279,
+  "unit": "episodes",
+  "source": "https://press.wbd.com/us/ca/media-release/hbo-max-nabs-exclusive-streaming-rights-big-bang-theory-and-tbs-extends-its-cable?language_content_entity=en",
+  "sourceTitle": "Warner Bros. Television",
+  "explanation": "The sitcom's original run ended after 279 episodes.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "titanic-runtime",
+  "category": "Culture",
+  "prompt": "How many minutes long is the original theatrical cut of James Cameron's 1997 Titanic?",
+  "answer": 194,
+  "unit": "minutes",
+  "source": "https://ir.paramount.com/news-releases/news-release-details/experience-james-camerons-epic-masterpiece-never-when-titanic",
+  "sourceTitle": "Paramount Home Media Distribution",
+  "explanation": "The theatrical feature runs three hours and fourteen minutes; this is not a TV edit or a documentary.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "inside-out-emotions",
+  "category": "Culture",
+  "prompt": "In the original 2015 Inside Out, how many main emotions run Riley's Headquarters?",
+  "answer": 5,
+  "unit": "emotions",
+  "source": "https://d23.com/which-emotion-are-you/inside-out-2/",
+  "sourceTitle": "Disney / D23",
+  "explanation": "Joy, Sadness, Anger, Fear and Disgust make up the original five; the sequel introduces additional emotions.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "up-balloons",
+  "category": "Culture",
+  "prompt": "Pixar says how many balloons lift Carl's house when it takes off in Up?",
+  "answer": 20622,
+  "unit": "balloons",
+  "source": "https://emanuellevy.com/review/up-pixars-technical-team-reaches-new-heights-5/",
+  "sourceTitle": "Emanuel Levy, quoting Pixar production notes",
+  "explanation": "The lift-off shot uses 20,622 balloons; other shots can use a smaller displayed cluster.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "monsters-code",
+  "category": "Culture",
+  "prompt": "In Monsters, Inc., what four-digit code is shouted when a sock is found on George?",
+  "answer": 2319,
+  "unit": "code",
+  "source": "https://d23.com/can-you-find-these-23s-in-disney-movies-and-series/",
+  "sourceTitle": "Disney",
+  "explanation": "The familiar contamination warning is spoken as “twenty-three nineteen.”",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "abbey-road-tracks",
+  "category": "Culture",
+  "prompt": "How many tracks are on the original Abbey Road album, counting Her Majesty?",
+  "answer": 17,
+  "unit": "tracks",
+  "source": "https://www.thebeatles.com/abbey-road",
+  "sourceTitle": "The Beatles official site",
+  "explanation": "The original album's track list contains 17 songs, including the short final track Her Majesty.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "forest-hills-tracks",
+  "category": "Culture",
+  "prompt": "How many tracks were on J. Cole's original 2014 Forest Hills Drive release?",
+  "answer": 13,
+  "unit": "tracks",
+  "source": "https://music.apple.com/us/album/2014-forest-hills-drive/1600766204",
+  "sourceTitle": "Apple Music / Cole World–Interscope",
+  "explanation": "The original release includes Intro and Note to Self in its thirteen tracks; later anniversary bonus tracks are excluded.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "thriller-tracks",
+  "category": "Culture",
+  "prompt": "How many songs were on Michael Jackson's original Thriller album?",
+  "answer": 9,
+  "unit": "tracks",
+  "source": "https://www.michaeljackson.com/music/thriller/",
+  "sourceTitle": "Michael Jackson official site",
+  "explanation": "The original album runs from Wanna Be Startin' Somethin' through The Lady in My Life, with nine tracks.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "white-stripes-members",
+  "category": "Culture",
+  "prompt": "How many musicians made up The White Stripes?",
+  "answer": 2,
+  "unit": "members",
+  "source": "https://rockhall.com/inductees/white-stripes/",
+  "sourceTitle": "Rock & Roll Hall of Fame",
+  "explanation": "The duo consisted of Jack White and Meg White.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "piano-keys",
+  "category": "Culture",
+  "prompt": "How many keys does a standard full-size piano have?",
+  "answer": 88,
+  "unit": "keys",
+  "source": "https://www.yamaha.com/en/musical_instrument_guide/piano/trivia/trivia007.html",
+  "sourceTitle": "Yamaha",
+  "explanation": "The usual modern keyboard has 52 white keys and 36 black keys.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "guitar-strings",
+  "category": "Culture",
+  "prompt": "How many strings does a standard guitar have?",
+  "answer": 6,
+  "unit": "strings",
+  "source": "https://www.yamaha.com/en/musical_instrument_guide/acoustic_guitar/mechanism/mechanism002.html",
+  "sourceTitle": "Yamaha",
+  "explanation": "Six is the usual configuration; twelve-string and extended-range guitars are different designs.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "violin-strings",
+  "category": "Culture",
+  "prompt": "How many strings are on a standard violin?",
+  "answer": 4,
+  "unit": "strings",
+  "source": "https://www.yamaha.com/en/musical_instrument_guide/violin/mechanism/mechanism002.html",
+  "sourceTitle": "Yamaha",
+  "explanation": "The standard strings are G, D, A and E.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "scrabble-tiles",
+  "category": "Culture",
+  "prompt": "Including the two blanks, how many tiles are in a classic English-language Scrabble set?",
+  "answer": 100,
+  "unit": "tiles",
+  "source": "https://www.hasbro.com/common/instruct/Scrabble_%282003%29.pdf",
+  "sourceTitle": "Hasbro",
+  "explanation": "There are 98 letter tiles and two blank tiles; other languages and special editions may differ.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "connect-four-discs",
+  "category": "Culture",
+  "prompt": "How many discs come with classic Connect Four, counting both colors?",
+  "answer": 42,
+  "unit": "discs",
+  "source": "https://instructions.hasbro.com/en-us/instruction/Connect-4-Game",
+  "sourceTitle": "Hasbro",
+  "explanation": "Each side has 21 discs, so the complete set has 42.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "twister-spots",
+  "category": "Culture",
+  "prompt": "How many colored circles are printed on a classic Twister mat?",
+  "answer": 24,
+  "unit": "circles",
+  "source": "https://assets-us-01.kc-usercontent.com/500e0a65-283d-00ef-33b2-7f1f20488fe2/4813d34d-4aa2-4e6f-bc83-d105507805b2/caa5df13fe37ccd58afd93abe0cf939d.pdf",
+  "sourceTitle": "Hasbro, classic Twister instructions C98831",
+  "explanation": "The classic mat has four color rows with six circles in each row.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "clue-rooms",
+  "category": "Culture",
+  "prompt": "How many named rooms are on the classic Clue or Cluedo mansion board?",
+  "answer": 9,
+  "unit": "rooms",
+  "source": "https://instructions.hasbro.com/en-gb/instruction/clue-game",
+  "sourceTitle": "Hasbro",
+  "explanation": "The classic mansion has nine rooms; corridors and the central area are not additional named rooms.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "monopoly-spaces",
+  "category": "Culture",
+  "prompt": "How many spaces go around the outside of a classic Monopoly board?",
+  "answer": 40,
+  "unit": "spaces",
+  "source": "https://monopolyclub.com/rules/classic/board-layout",
+  "sourceTitle": "MonopolyClub, classic board layout",
+  "explanation": "The four corner spaces are included in the count of forty.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "dnd-ability-die",
+  "category": "Culture",
+  "prompt": "How many faces does the die used for a normal Dungeons & Dragons ability check have?",
+  "answer": 20,
+  "unit": "faces",
+  "source": "https://www.dndbeyond.com/sources/dnd/free-rules/playing-the-game",
+  "sourceTitle": "D&D Beyond / Wizards of the Coast",
+  "explanation": "A normal ability check rolls a twenty-sided die before adding modifiers.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "chess-opening-moves",
+  "category": "Culture",
+  "prompt": "From chess's initial position, how many different legal first moves does White have?",
+  "answer": 20,
+  "unit": "moves",
+  "source": "https://handbook.fide.com/chapter/E012023",
+  "sourceTitle": "FIDE",
+  "explanation": "Each of eight pawns can move one or two squares, and each knight has two moves: 16 + 4 = 20.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "minecraft-chest",
+  "category": "Gaming",
+  "prompt": "How many inventory slots does a double chest have in Minecraft?",
+  "answer": 54,
+  "unit": "slots",
+  "source": "https://minecraft.wiki/w/Chest",
+  "sourceTitle": "Minecraft Wiki",
+  "explanation": "A double chest has two sets of 27 slots, for 54 in total.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "minecraft-beacon",
+  "category": "Gaming",
+  "prompt": "How many mineral blocks build the full four-layer pyramid for one Minecraft beacon?",
+  "answer": 164,
+  "unit": "blocks",
+  "source": "https://minecraft.wiki/w/Beacon",
+  "sourceTitle": "Minecraft Wiki",
+  "explanation": "The layers contain 81, 49, 25 and 9 blocks; the beacon block itself is not included.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "minecraft-day",
+  "category": "Gaming",
+  "prompt": "In a normal unmodified Minecraft world, how many real minutes make a full day-and-night cycle?",
+  "answer": 20,
+  "unit": "minutes",
+  "source": "https://minecraft.wiki/w/Daylight_cycle",
+  "sourceTitle": "Minecraft Wiki",
+  "explanation": "The full cycle takes 24,000 game ticks, which is 20 minutes at the normal tick rate.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "minecraft-bookshelves",
+  "category": "Gaming",
+  "prompt": "How many properly placed bookshelves unlock the highest enchanting-table levels in Minecraft?",
+  "answer": 15,
+  "unit": "bookshelves",
+  "source": "https://minecraft.wiki/w/Enchanting_table_mechanics",
+  "sourceTitle": "Minecraft Wiki",
+  "explanation": "Fifteen surrounding bookshelves are enough to unlock level-30 enchantment offers.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "fortnite-battle-royale",
+  "category": "Gaming",
+  "prompt": "How many players did Fortnite advertise for its original standard Battle Royale matches?",
+  "answer": 100,
+  "unit": "players",
+  "source": "https://www.youtube.com/watch?v=2gUtfBmw86Y",
+  "sourceTitle": "Fortnite official launch trailer",
+  "explanation": "The original announcement described the mode as a 100-player contest; this does not refer to smaller side modes.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "rocket-league-clock",
+  "category": "Gaming",
+  "prompt": "Before overtime, how many minutes are on the normal Rocket League match clock?",
+  "answer": 5,
+  "unit": "minutes",
+  "source": "https://www.usu.edu/campusrec/files/intramurals/Rocket-League-Rules.pdf",
+  "sourceTitle": "Utah State University, standard Rocket League tournament rules",
+  "explanation": "The usual match lasts five minutes, with the final play and any overtime handled separately.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "wii-sports-count",
+  "category": "Gaming",
+  "prompt": "How many different sports were included in the original Wii Sports?",
+  "answer": 5,
+  "unit": "sports",
+  "source": "https://www.nintendo.com/en-gb/Games/Wii/Wii-Sports-283971.html",
+  "sourceTitle": "Nintendo",
+  "explanation": "Tennis, baseball, bowling, golf and boxing make up the original game's five sports.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "mario64-stars",
+  "category": "Gaming",
+  "prompt": "How many Power Stars can Mario collect in the original Super Mario 64?",
+  "answer": 120,
+  "unit": "stars",
+  "source": "https://www.nintendo.com/en-gb/Games/Nintendo-64/Super-Mario-64-269745.html",
+  "sourceTitle": "Nintendo",
+  "explanation": "The original Nintendo 64 game has 120 Power Stars; the DS remake has a different total.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "mario-nes-levels",
+  "category": "Gaming",
+  "prompt": "Across all eight worlds, how many main stages are in the original Super Mario Bros.?",
+  "answer": 32,
+  "unit": "stages",
+  "source": "https://www.nintendo.com/en-gb/Games/NES/Super-Mario-Bros--803853.html",
+  "sourceTitle": "Nintendo",
+  "explanation": "Each of the eight worlds has four numbered main stages, so 8 × 4 = 32.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "botw-shrines",
+  "category": "Gaming",
+  "prompt": "Without its DLC, how many shrines are in The Legend of Zelda: Breath of the Wild?",
+  "answer": 120,
+  "unit": "shrines",
+  "source": "https://www.zeldadungeon.net/breath-of-the-wild-walkthrough/shrine-locations/",
+  "sourceTitle": "Zelda Dungeon",
+  "explanation": "The base game contains 120 shrines; expansion-pack shrines are not counted here.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "animal-crossing-villagers",
+  "category": "Gaming",
+  "prompt": "In Animal Crossing: New Horizons, how many animal villagers can live on your island at once?",
+  "answer": 10,
+  "unit": "animal villagers",
+  "source": "https://nookipedia.com/wiki/Moving",
+  "sourceTitle": "Nookipedia",
+  "explanation": "This counts animal residents, not the human player characters, visiting characters or shop staff.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "among-us-lobby",
+  "category": "Gaming",
+  "prompt": "After its June 2021 expansion, what was the maximum player count in a standard Among Us lobby?",
+  "answer": 15,
+  "unit": "players",
+  "source": "https://www.innersloth.com/among-us-3rd-birthday-15-player-lobbies/",
+  "sourceTitle": "Innersloth",
+  "explanation": "The June update increased standard lobbies from ten players to fifteen.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "stardew-season",
+  "category": "Gaming",
+  "prompt": "In Stardew Valley, how many in-game days are in one season?",
+  "answer": 28,
+  "unit": "days",
+  "source": "https://stardewvalleywiki.com/Seasons",
+  "sourceTitle": "Stardew Valley Wiki",
+  "explanation": "Every season has four seven-day weeks, giving 28 days.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "sims-household",
+  "category": "Gaming",
+  "prompt": "Without mods, how many Sims can a normal Sims 4 household contain?",
+  "answer": 8,
+  "unit": "Sims",
+  "source": "https://sims.fandom.com/wiki/Household",
+  "sourceTitle": "The Sims Wiki",
+  "explanation": "The normal household limit is eight slots; pets also use household slots when the relevant pack is installed.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "plants-zombies-adventure",
+  "category": "Gaming",
+  "prompt": "How many levels are in the original PC Plants vs. Zombies Adventure campaign?",
+  "answer": 50,
+  "unit": "levels",
+  "source": "https://plantsvszombies.fandom.com/wiki/Adventure_Mode",
+  "sourceTitle": "Plants vs. Zombies Wiki",
+  "explanation": "The original campaign has five areas of ten levels each; replay and side modes are separate.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "sonic-extra-life",
+  "category": "Gaming",
+  "prompt": "In the original Sonic the Hedgehog, collecting how many rings awards an extra life?",
+  "answer": 100,
+  "unit": "rings",
+  "source": "https://info.sonicretro.org/images/4/4b/Sonic1_MD_US_manual.pdf",
+  "sourceTitle": "Original SEGA instruction manual, archived by Sonic Retro",
+  "explanation": "Reaching the first 100-ring threshold grants an extra life in the original Mega Drive or Genesis game.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "pacman-maze",
+  "category": "Gaming",
+  "prompt": "Counting the four energizers, how many pellets are on a normal original Pac-Man maze?",
+  "answer": 244,
+  "unit": "pellets",
+  "source": "https://pacman.fandom.com/wiki/Pac-Man_(game)",
+  "sourceTitle": "Pac-Man Wiki",
+  "explanation": "There are 240 ordinary dots and four power pellets on a normal full maze.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "minesweeper-expert",
+  "category": "Gaming",
+  "prompt": "How many mines are hidden on the classic Windows Minesweeper Expert board?",
+  "answer": 99,
+  "unit": "mines",
+  "source": "https://minesweepergame.com/strategy/how-to-play-minesweeper.php",
+  "sourceTitle": "MinesweeperGame.com",
+  "explanation": "The classic Expert layout is 30 columns by 16 rows with 99 mines; custom boards differ.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "mario-kart64-tracks",
+  "category": "Gaming",
+  "prompt": "How many race tracks are in the original Mario Kart 64, excluding battle arenas?",
+  "answer": 16,
+  "unit": "tracks",
+  "source": "https://www.world-of-nintendo.com/manuals/nintendo_64/mario_kart_64.shtml",
+  "sourceTitle": "Original Nintendo manual, transcribed by World of Nintendo",
+  "explanation": "There are four cups with four race courses each, separate from the battle arenas.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "splatoon-turf-war",
+  "category": "Gaming",
+  "prompt": "How many minutes is a normal Turf War match in Splatoon 3?",
+  "answer": 3,
+  "unit": "minutes",
+  "source": "https://play.nintendo.com/news-tips/tips-tricks/splatoon-3-tips-and-tricks/",
+  "sourceTitle": "Nintendo",
+  "explanation": "Standard Turf War matches use a three-minute clock.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "ps2-sales",
+  "category": "Gaming",
+  "prompt": "PlayStation's official history says PS2 sales exceeded how many consoles?",
+  "answer": 160000000,
+  "unit": "consoles",
+  "source": "https://www.playstation.com/en-us/playstation-history/2000-ps2-psp/",
+  "sourceTitle": "Sony Interactive Entertainment",
+  "explanation": "The official retrospective states more than 160 million units. The requested figure is that stated threshold; 160m works as an entry.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "game-boy-batteries",
+  "category": "Gaming",
+  "prompt": "How many AA batteries power the original 1989 Game Boy?",
+  "answer": 4,
+  "unit": "AA batteries",
+  "source": "https://www.nintendo.com/en-gb/Hardware/Nintendo-History/Game-Boy/Game-Boy-627031.html",
+  "sourceTitle": "Nintendo",
+  "explanation": "The original full-size Game Boy uses four AA cells; later Game Boy models use different batteries.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "elden-ring-level",
+  "category": "Gaming",
+  "prompt": "In unmodified Elden Ring, what is the maximum character level when every attribute reaches 99?",
+  "answer": 713,
+  "unit": "level",
+  "source": "https://eldenring.wiki.fextralife.com/Level",
+  "sourceTitle": "Elden Ring Wiki",
+  "explanation": "All eight attributes can reach 99. The Wretch starts at level 1 with a total of 80 attribute points, so 1 + (8 × 99 − 80) = 713.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "terraria-life-fruit",
+  "category": "Gaming",
+  "prompt": "In Terraria, how many permanent health points can Life Fruit bring you to, before temporary buffs?",
+  "answer": 500,
+  "unit": "health points",
+  "source": "https://terraria.wiki.gg/wiki/Life_Fruit",
+  "sourceTitle": "Official Terraria Wiki",
+  "explanation": "Twenty Life Fruit upgrades add 100 permanent life to the earlier 400-life limit, reaching 500.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "big-mac-calories",
+  "category": "Everyday",
+  "prompt": "McDonald's US nutrition listing gives a standard Big Mac about how many calories?",
+  "answer": 580,
+  "unit": "calories",
+  "source": "https://www.mcdonalds.com/us/en-us/product/big-mac.html",
+  "sourceTitle": "McDonald's USA",
+  "explanation": "The published US sandwich value is 580 calories; side dishes and drinks are excluded.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "red-bull-caffeine",
+  "category": "Everyday",
+  "prompt": "How many milligrams of caffeine are in a standard 250 ml Red Bull Energy Drink?",
+  "answer": 80,
+  "unit": "mg",
+  "source": "https://www.redbull.com/int-en/energydrink/questions/how-much-caffeine-is-in-a-can-of-red-bull-energy-drink",
+  "sourceTitle": "Red Bull",
+  "explanation": "The 250 ml or 8.4 US fl oz can contains 80 mg of caffeine; larger cans contain more.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "kfc-recipe",
+  "category": "Everyday",
+  "prompt": "How many herbs and spices are in KFC's advertised Original Recipe blend?",
+  "answer": 11,
+  "unit": "herbs and spices",
+  "source": "https://global.kfc.com/press-releases/the-all-new-kfcinsider-movement",
+  "sourceTitle": "KFC",
+  "explanation": "The brand's familiar Original Recipe promise is a blend of eleven herbs and spices.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "heinz-label",
+  "category": "Everyday",
+  "prompt": "Which number appears in the classic Heinz “varieties” slogan?",
+  "answer": 57,
+  "unit": "varieties",
+  "source": "https://www.heinz.com/our-story",
+  "sourceTitle": "Heinz",
+  "explanation": "The number is the famous branding slogan, not a count of every product Heinz sells today.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "wd40-attempt",
+  "category": "Everyday",
+  "prompt": "The famous water-displacing spray in a blue-and-yellow can was perfected on which numbered attempt?",
+  "answer": 40,
+  "unit": "attempt",
+  "source": "https://www.wd40.com/history/",
+  "sourceTitle": "WD-40 Company",
+  "explanation": "The name means Water Displacement, fortieth formula; it is not the number of ingredients.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "skittles-flavors",
+  "category": "Everyday",
+  "prompt": "How many fruit flavors are in the standard US Skittles Original mix?",
+  "answer": 5,
+  "unit": "flavors",
+  "source": "https://www.skittles.com/products/skittles-original-fruity-candy-single-pack-217-oz-skittles-chewy",
+  "sourceTitle": "Mars / Skittles",
+  "explanation": "The standard Original mix contains five flavors; special mixes can differ.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "oreo-serving",
+  "category": "Everyday",
+  "prompt": "In the US nutrition label, a three-cookie serving of Original Oreo has how many calories?",
+  "answer": 160,
+  "unit": "calories",
+  "source": "https://sellsheets.syndigo.com/food/27ac089c-1142-4b53-87f7-e3cd43a3c7b6?GTIN=10019320009355&ItemID=311329",
+  "sourceTitle": "Mondelēz manufacturer nutrition label via Syndigo",
+  "explanation": "This is the label's three-cookie serving, not the calorie value of one cookie or a Double Stuf version.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "pez-refill",
+  "category": "Everyday",
+  "prompt": "How many candies are in one standard PEZ refill roll?",
+  "answer": 12,
+  "unit": "candies",
+  "source": "https://int.pez.com/upload/files/2294.pdf",
+  "sourceTitle": "PEZ International, brand press information",
+  "explanation": "A standard refill package contains twelve pieces.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "iphone-screen",
+  "category": "Everyday",
+  "prompt": "How many inches was the original iPhone's screen diagonal when it launched?",
+  "answer": 3.5,
+  "unit": "inches",
+  "source": "https://www.apple.com/newsroom/2007/01/09Apple-Reinvents-the-Phone-with-iPhone/",
+  "sourceTitle": "Apple",
+  "explanation": "Apple's original announcement describes a 3.5-inch display.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "compact-disc",
+  "category": "Everyday",
+  "prompt": "The original audio CD standard was designed to hold about how many minutes of music?",
+  "answer": 74,
+  "unit": "minutes",
+  "source": "https://www.philips.com/c-dam/corporate/research/technologies/cd/The-Emergence-of-the-Compact-Disc_v2.pdf",
+  "sourceTitle": "Philips Research",
+  "explanation": "The original Red Book target was 74 minutes; later discs often allow 80 minutes.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "dvd-capacity",
+  "category": "Everyday",
+  "prompt": "What is the advertised capacity in decimal gigabytes of a standard single-layer DVD?",
+  "answer": 4.7,
+  "unit": "GB",
+  "source": "https://pro.sony/s3/cms-static-content/operation-manual/2653115111.pdf",
+  "sourceTitle": "Sony, RDR-VX410 operation manual",
+  "explanation": "The marketed single-layer DVD capacity is 4.7 billion bytes; the number shown in binary units is smaller.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "qr-numeric-capacity",
+  "category": "Everyday",
+  "prompt": "At maximum size and lowest error correction, how many numeric digits can one standard QR code hold?",
+  "answer": 7089,
+  "unit": "digits",
+  "source": "https://www.qrcode.com/en/about/featurePage/featurePage1.html",
+  "sourceTitle": "DENSO WAVE",
+  "explanation": "The maximum is for numeric mode in a version-40 code at error correction level L, not arbitrary text characters.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "us-gallon",
+  "category": "Everyday",
+  "prompt": "How many US fluid ounces are in one US liquid gallon?",
+  "answer": 128,
+  "unit": "US fl oz",
+  "source": "https://www.nist.gov/system/files/documents/2024/01/14/NIST%20HB%2044%202024%20Appendix%20C%20General%20Tables%20of%20Units%20of%20Measurement.pdf",
+  "sourceTitle": "NIST Handbook 44, units of measurement",
+  "explanation": "A US gallon has four quarts, eight pints or 128 US fluid ounces; the Imperial gallon differs.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "a4-long-edge",
+  "category": "Everyday",
+  "prompt": "What is the length in millimetres of A4 paper's longer edge?",
+  "answer": 297,
+  "unit": "mm",
+  "source": "https://www.adobe.com/uk/creativecloud/design/discover/a4-format.html",
+  "sourceTitle": "Adobe",
+  "explanation": "Standard A4 paper measures 210 by 297 millimetres.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "usb2-speed",
+  "category": "Everyday",
+  "prompt": "What is the theoretical high-speed signaling rate of USB 2.0, in megabits per second?",
+  "answer": 480,
+  "unit": "Mbit/s",
+  "source": "https://www.usb.org/faq",
+  "sourceTitle": "USB Implementers Forum",
+  "explanation": "The USB 2.0 High Speed signaling rate is 480 megabits per second; real file-transfer speeds are lower.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "rubik-stickers",
+  "category": "Everyday",
+  "prompt": "On a classic stickered 3×3 Rubik's Cube, how many small colored stickers cover its faces?",
+  "answer": 54,
+  "unit": "stickers",
+  "source": "https://www.rubiks.com/products/rubiks-3x3",
+  "sourceTitle": "Rubik's",
+  "explanation": "Six faces with nine visible stickers each give 54 stickers.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "aa-voltage",
+  "category": "Everyday",
+  "prompt": "What nominal voltage is printed on a standard alkaline AA battery?",
+  "answer": 1.5,
+  "unit": "volts",
+  "source": "https://data.energizer.com/pdfs/e91.pdf",
+  "sourceTitle": "Energizer",
+  "explanation": "A standard alkaline AA is rated at 1.5 volts; rechargeable chemistries can have a different nominal voltage.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "dollar-length",
+  "category": "Everyday",
+  "prompt": "According to the US Currency Education Program, how many inches long is a modern dollar bill?",
+  "answer": 6.14,
+  "unit": "inches",
+  "source": "https://www.uscurrency.gov/history",
+  "sourceTitle": "US Currency Education Program",
+  "explanation": "Modern US notes share the same 6.14 by 2.61 inch dimensions.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "mcnugget-shapes",
+  "category": "Everyday",
+  "prompt": "How many official shapes does McDonald's use for Chicken McNuggets?",
+  "answer": 4,
+  "unit": "shapes",
+  "source": "https://eu-assets.contentstack.com/v3/assets/blt5004e64d3579c43f/blt2f49b1daf9f532e3/69ea24829828711a8156064e/Fiches_Filiere_POULET_2026.pdf",
+  "sourceTitle": "McDonald's France",
+  "explanation": "The four familiar shapes are the ball, bell, boot and bone.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "grand-slam",
+  "category": "Everyday",
+  "prompt": "In Denny's standard Build Your Own Grand Slam menu, how many items do you choose before paid extras?",
+  "answer": 4,
+  "unit": "items",
+  "source": "https://dennys-menus.com/wp-content/uploads/2025/03/Dennys-Menu.pdf",
+  "sourceTitle": "Denny's national core menu, public menu archive",
+  "explanation": "The national core menu says to pick four items; additional paid items are separate.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "monopoly-go",
+  "category": "Everyday",
+  "prompt": "In classic Monopoly, how many dollars do you normally collect for passing GO?",
+  "answer": 200,
+  "unit": "dollars",
+  "source": "https://www.hasbro.com/common/instruct/Monopoly.pdf",
+  "sourceTitle": "Hasbro / Parker Brothers",
+  "explanation": "The standard rule pays $200 when passing GO; house-rule bonuses are excluded.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "snellen-distance",
+  "category": "Everyday",
+  "prompt": "In the US Snellen convention, what is the standard eye-chart test distance in feet?",
+  "answer": 20,
+  "unit": "feet",
+  "source": "https://www.aao.org/eye-health/tips-prevention/what-does-20-20-vision-mean",
+  "sourceTitle": "American Academy of Ophthalmology",
+  "explanation": "The familiar US chart notation uses a 20-foot comparison distance; metric notation uses different numbers.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "zip-digits",
+  "category": "Everyday",
+  "prompt": "Excluding the optional four-digit extension, how many digits are in a basic US ZIP Code?",
+  "answer": 5,
+  "unit": "digits",
+  "source": "https://postalpro.usps.com/address-quality/five-digit-zip-product",
+  "sourceTitle": "United States Postal Service",
+  "explanation": "The original basic ZIP Code has five digits; the ZIP+4 extension adds four more.",
+  "checked": "2026-11-05",
+  "scale": 1
+ },
+ {
+  "id": "byte-bits",
+  "category": "Everyday",
+  "prompt": "In modern computing, how many bits make up one byte?",
+  "answer": 8,
+  "unit": "bits",
+  "source": "https://physics.nist.gov/cuu/Units/binary.html",
+  "sourceTitle": "US National Institute of Standards and Technology",
+  "explanation": "A byte is an eight-bit unit in modern standard usage.",
+  "checked": "2026-11-05",
+  "scale": 1
+ }
+];

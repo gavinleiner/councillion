@@ -53,7 +53,7 @@ try {
  await p.evaluate(()=>{const {view,s,session}=window.figureFixture;s.players[0].score=4500;s.revision++;view.render(s,session);});await p.waitForTimeout(120);
  assert.equal(await p.evaluate(()=>window.figureFixture.view.voyage.ocean.displayedDepth),4500);
  await p.evaluate(()=>{const {view}=window.figureFixture,o=view.voyage.ocean,canvas=view.voyage.canvas;view.destroy();if(!o.suspended||canvas.isConnected||o.raf!==null)throw Error('Voyage renderer leaked after leaving');});
- assert.deepEqual(errors,[]);console.log('PASS: distinct hubs at three sizes; character visibility; stable private estimate input; all 42 prompt layouts at four sizes; real 0–4000m descent and hadal art; reduced motion; renderer cleanup.');
+ assert.deepEqual(errors,[]);console.log('PASS: distinct hubs at three sizes; character visibility; stable private estimate input; all 210 prompt layouts at four sizes; real 0–4000m descent and hadal art; reduced motion; renderer cleanup.');
  await c.close();
 } finally {await browser.close();}
 
