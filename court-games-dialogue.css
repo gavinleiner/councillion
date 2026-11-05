@@ -1,0 +1,70 @@
+/* The host's words belong to the host, not a caption bar over the controls. */
+.cg-host-bubble{display:none}
+.cg-arena[data-game="clash"] .cg-event,.cg-arena[data-game="clash"] .cg-watching,.cg-arena[data-game="clash"] .cg-survey-hold{display:none}
+.cg-arena[data-game="clash"] .cg-host-bubble{display:block;position:absolute;bottom:calc(100% + 12px);left:50%;width:245px;padding:12px 15px;background:#f0e6bf;color:#153448;border:3px solid #153448;box-shadow:3px 4px 0 #04172590;font:20px/1.12 VT,monospace;white-space:normal;text-align:left;pointer-events:none;z-index:12;transform:translateX(-30%)}
+.cg-arena[data-game="clash"] .cg-host-bubble:after{content:'';position:absolute;bottom:-10px;left:24%;width:13px;height:13px;background:#f0e6bf;border-right:3px solid #153448;border-bottom:3px solid #153448;transform:skewY(35deg)}
+.cg-arena[data-game="clash"] .cg-host-bubble[hidden]{display:none}
+.cg-arena[data-game="clash"] .cg-puffer-host.is-speaking .cg-host-sprite{background-image:url('assets/court-games/host-talk-ai-v1.webp');animation:cg-puffer-talk .48s steps(1,end) infinite!important;background-size:200% 200%}
+@keyframes cg-puffer-talk{0%,100%{background-position:0 0}22%,72%{background-position:100% 0}43%{background-position:0 100%}60%,88%{background-position:100% 100%}}
+.cg-answer-bubble{position:absolute;z-index:16;pointer-events:none;background:#ecf7eb;color:#183b48;border:2px solid #5c958d;box-shadow:2px 3px #041a2b80;padding:7px 11px;font:21px/1.12 VT,monospace;max-width:265px;min-height:35px;overflow-wrap:anywhere;white-space:pre-wrap;text-align:left;width:max-content;isolation:isolate}
+.cg-answer-bubble:after{content:'';position:absolute;bottom:-7px;left:calc(50% - 6px);height:10px;width:10px;background:#ecf7eb;border-bottom:2px solid #5c958d;border-right:2px solid #5c958d;transform:rotate(45deg)}
+.cg-answer-bubble[hidden]{display:none}
+.cg-answer-bubble>i{display:inline-block;width:2px;height:16px;margin-left:3px;vertical-align:-2px;background:#377870;animation:cg-draft-caret .8s steps(1,end) infinite}
+@keyframes cg-draft-caret{50%{opacity:0}}
+.cg-voice-toggle{font:14px VT,monospace!important;color:#b5cacc!important;white-space:nowrap;padding:5px 8px!important}
+.cg-voice-toggle[aria-pressed="false"]{opacity:.65}
+/* Three static plates crossfade. Mirroring is fixed on its own hidden plane,
+   so the environment can never interpolate through a zero-width flip. */
+.cg-arena[data-game="clash"] .cg-feud-architecture{background:none!important;transform:scale(1.02)!important;filter:none!important;transition:transform 1.05s cubic-bezier(.22,.61,.36,1)!important}
+.cg-plate{position:absolute;inset:0;background:center/100% 100% no-repeat;opacity:0;transition:opacity 1.05s ease;will-change:opacity}
+.cg-plate-wide{background-image:url('assets/court-games/feud-court-ai-v1.webp');opacity:1}
+.cg-plate-left,.cg-plate-right{background-image:url('assets/court-games/feud-bench-angle-ai-v1.webp')}
+.cg-plate-right{transform:scaleX(-1)}
+.cg-arena[data-game="clash"][data-shot^="team"] .cg-plate-wide,.cg-arena[data-game="clash"][data-shot^="steal"] .cg-plate-wide{opacity:0}
+.cg-arena[data-game="clash"][data-shot="team0"] .cg-plate-left,.cg-arena[data-game="clash"][data-shot="steal0"] .cg-plate-left,.cg-arena[data-game="clash"][data-shot="team1"] .cg-plate-right,.cg-arena[data-game="clash"][data-shot="steal1"] .cg-plate-right{opacity:1}
+@media(min-width:761px){
+ .cg-arena[data-game="clash"][data-shot] .cg-board{width:46%;left:50%;top:19vh;transform:translateX(-50%) translateX(var(--board-pan,0px));transition:transform 1.05s cubic-bezier(.22,.61,.36,1);will-change:transform}
+ .cg-arena[data-game="clash"][data-shot$="0"] .cg-board{--board-pan:25vw}
+ .cg-arena[data-game="clash"][data-shot$="1"] .cg-board{--board-pan:-25vw}
+ .cg-arena[data-game="clash"][data-shot] .cg-bench{top:43vh;width:47%;opacity:1;transition:transform 1.05s cubic-bezier(.22,.61,.36,1),opacity .7s ease;will-change:transform;transform:translateY(18vh) scale(.62);transform-origin:bottom center}
+ .cg-arena[data-game="clash"][data-shot] .bench-0{left:3%;right:auto;transform-origin:bottom left}
+ .cg-arena[data-game="clash"][data-shot] .bench-1{left:auto;right:3%;transform-origin:bottom right}
+ .cg-arena[data-game="clash"][data-shot] .cg-player{max-width:150px}
+ .cg-arena[data-game="clash"][data-shot] .cg-avatar{height:140px}
+ .cg-arena[data-game="clash"][data-shot] .cg-avatar>:is(img,svg){width:126px;height:126px;transition:none}
+ .cg-arena[data-game="clash"][data-shot] .cg-bench:after{top:125px;height:130px}
+ .cg-arena[data-game="clash"][data-shot] .cg-player>strong{font-size:21px;padding:5px}
+ .cg-arena[data-game="clash"][data-shot$="0"] .bench-0,.cg-arena[data-game="clash"][data-shot$="1"] .bench-1{transform:none}
+ .cg-arena[data-game="clash"][data-shot$="0"] .bench-1{transform:translateX(55vw) scale(.8);opacity:0;pointer-events:none}
+ .cg-arena[data-game="clash"][data-shot$="1"] .bench-0{transform:translateX(-55vw) scale(.8);opacity:0;pointer-events:none}
+ .cg-arena[data-game="clash"][data-shot="faceoff"] .cg-bench,.cg-arena[data-game="clash"][data-shot^="fast"] .cg-bench{transform:translateY(25vh) scale(.62);opacity:0;pointer-events:none}
+ .cg-arena[data-game="clash"][data-shot="board"] .cg-bench{opacity:.45}
+ .cg-arena[data-game="clash"][data-shot^="steal"] .cg-player.is-active .cg-avatar>:is(img,svg){width:126px;height:126px}
+ .cg-arena[data-game="clash"][data-shot] .cg-faceoff-counsel{opacity:0;visibility:visible!important;pointer-events:none;transition:opacity .65s ease}
+ .cg-arena[data-game="clash"][data-shot="faceoff"] .cg-faceoff-counsel{opacity:1}
+ .cg-arena[data-game="clash"][data-shot] .cg-faceoff-counsel>div{left:36%;bottom:25vh;width:190px}
+ .cg-arena[data-game="clash"][data-shot] .cg-faceoff-counsel>.faceoff-1{left:64%}
+ .cg-arena[data-game="clash"][data-shot] .cg-faceoff-counsel :is(img,svg){width:132px;height:132px;image-rendering:pixelated}
+ .cg-arena[data-game="clash"][data-shot] .cg-faceoff-counsel>div:after{top:119px;height:80px;left:-2%;right:-2%}
+ .cg-arena[data-game="clash"][data-shot] .cg-faceoff-counsel strong{font-size:22px;background:#09243ce8;margin-top:0;padding:4px}
+ .cg-arena[data-game="clash"][data-shot] .cg-puffer-host{opacity:1;width:100px;height:100px;transition:left 1.05s cubic-bezier(.22,.61,.36,1),bottom 1.05s cubic-bezier(.22,.61,.36,1)}
+ .cg-arena[data-game="clash"][data-shot="faceoff"] .cg-puffer-host{left:8%;bottom:20vh}
+ .cg-arena[data-game="clash"][data-shot="faceoff"] .cg-host-bubble{left:92%;bottom:25%;transform:none;width:240px}
+ .cg-arena[data-game="clash"][data-shot$="0"] .cg-puffer-host{left:57%;bottom:20vh}
+ .cg-arena[data-game="clash"][data-shot$="1"] .cg-puffer-host{left:43%;bottom:20vh}
+ .cg-arena[data-game="clash"][data-shot$="0"] .cg-host-bubble{left:95%;bottom:15%;transform:none;width:245px}
+ .cg-arena[data-game="clash"][data-shot$="1"] .cg-host-bubble{left:auto;right:95%;bottom:15%;transform:none;width:245px}
+ .cg-arena[data-game="clash"][data-shot$="1"] .cg-host-bubble:after{left:auto;right:12%}
+ .cg-arena[data-game="clash"][data-shot="fast-runner"] .cg-host-bubble{left:95%;bottom:0;transform:none;width:265px}
+ .cg-arena[data-game="clash"][data-shot="fast-board"] .cg-puffer-host{left:9%;bottom:16vh}
+ .cg-arena[data-game="clash"][data-shot="fast-board"] .cg-host-bubble{left:50%;width:clamp(130px,16vw,220px);transform:translateX(-50%)}
+}
+@media(max-width:760px){
+ .cg-plate{background-size:auto 100dvh;background-position:center top}
+ .cg-arena[data-game="clash"] .cg-puffer-host{left:auto!important;right:10px;bottom:145px!important;width:65px!important;height:65px!important;opacity:1!important}
+ .cg-arena[data-game="clash"] .cg-host-bubble{left:auto;right:95%;bottom:0;width:240px;max-width:70vw;transform:none;font-size:17px;padding:8px 10px}
+ .cg-arena[data-game="clash"] .cg-host-bubble:after{left:auto;right:8%}
+ .cg-answer-bubble{font-size:17px;max-width:180px;padding:6px 9px}
+ .cg-nav{flex-wrap:wrap}.cg-voice-toggle{font-size:11px!important}
+}
+@media(prefers-reduced-motion:reduce){.cg-plate,.cg-arena[data-game="clash"][data-shot] :is(.cg-board,.cg-bench,.cg-puffer-host,.cg-faceoff-counsel){transition:none!important}.cg-puffer-host.is-speaking .cg-host-sprite,.cg-answer-bubble>i{animation:none!important}}

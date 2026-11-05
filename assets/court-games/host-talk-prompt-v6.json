@@ -1,0 +1,7 @@
+{
+  "tool": "built-in image_gen",
+  "source": "host-atlas.png",
+  "output": "host-talk-ai-v1.png",
+  "encoding": "Lossless WebP, unchanged pixels",
+  "prompt": "Edit the attached 2x2 pixel sprite atlas into a matching 2x2 TALKING animation atlas for the SAME puffer game-show host. Preserve the original orange round spiky puffer, navy formal coat, cream shirt collar, white notepad, exact coarse pixel-art style, dark outlines, face proportions and identity. Transparent background with real alpha. Exactly four equally sized square cells in a perfectly regular 2 by 2 grid, no padding between cells, no cell outlines or labels. Each host must occupy the SAME coordinates, body size, notepad position and neutral standing pose within its own cell, centered identically, fully visible. NO cheering arm, NO gavel. ONLY change the mouth: upper left small closed smile; upper right small open speaking mouth; lower left larger open O speaking mouth with a little pink tongue; lower right medium open smiling speaking mouth. Eyes open in all four cells. Keep the character's body and outer silhouette identical in all four frames so animation does not wobble or change size. Output a square sprite sheet. Do not add any scene, props other than existing paper, letters, shiny highlights, gradients, realistic textures or extra decorations. This is a production game animation, crisp pixel clusters exactly like the reference."
+}

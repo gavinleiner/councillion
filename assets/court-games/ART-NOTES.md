@@ -36,3 +36,7 @@ Four new assets were generated with the built-in `image_gen` tool using the appr
 The exact prompts are saved in [feud-camera-prompts-v5.json](feud-camera-prompts-v5.json). Original generated PNGs are retained beside lossless WebP runtime copies. [feud-camera-art.json](../../data-snapshots/court-games/feud-camera-art.json) records dimensions, visible alpha bounds, source files, and byte-for-byte decoded pixel verification.
 
 Camera direction changes the actual environment plate, cast blocking, board placement and stand scale: wide establishing view; two-person face-off; left/right team and steal views; centered survey judgement; runner-and-host Fast Money view; large two-column review; and the finale. The live input is outside those moving set elements. Reduced motion keeps the framing changes immediate and removes pans, light pulses and transitions.
+
+## Talking host · v6
+
+The built-in image generator edited the original puffer atlas into four mouth poses, retaining his paper, suit and silhouette. `host-talk-ai-v1.png` is the generated RGBA sheet; its WebP is lossless. Exact prompt and reference are in [host-talk-prompt-v6.json](host-talk-prompt-v6.json). CSS mouth movement follows actual speech start/end events. Browser speech synthesis reads changing questions and player names without sending text to an external service.

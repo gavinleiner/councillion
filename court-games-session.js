@@ -3,6 +3,7 @@ import {createCourtGame,startCourtGame,tickCourtGame,actCourtGame,canCourtHuddle
 import {waitForDatabaseConnection,databaseClockOffset,partyConnectionError,permissionDenied} from './party-connection.js';
 import {validateDisplayName,validateChat,safeDisplayName} from './moderation.js';
 import {requirePartyIdentity} from './party-access.js';
+import {answerTurn,safeDraft,fastLiveAnswer} from './court-games-dialogue.js';
 const clone=o=>JSON.parse(JSON.stringify(o)),values=o=>Object.values(o??{}),build=mode=>COURT_GAMES_BUILD+':'+mode;
 const loadCloud=()=>import('./cloud.bundle.js?v=20261024-open-v1');
 function normalizeState(state){
@@ -11,7 +12,7 @@ function normalizeState(state){
 }
 
 export class CourtGameSession{
- constructor({mode,onState=()=>{},onError=()=>{},identity=()=>null,authorize,getCloud=loadCloud,clock=()=>Date.now()}){this.googleId=identity()?.id??null;Object.assign(this,{mode,onState,onError,identity,authorize,getCloud,clock,unsub:[],members:{},responses:{},secret:{estimates:{},fast:{}},processed:new Set(),queue:Promise.resolve(),closed:false,offset:0});this.timer=setInterval(()=>this.tick(),200);}
+ constructor({mode,onState=()=>{},onDrafts=()=>{},onError=()=>{},identity=()=>null,authorize,getCloud=loadCloud,clock=()=>Date.now()}){this.googleId=identity()?.id??null;Object.assign(this,{mode,onState,onDrafts,onError,identity,authorize,getCloud,clock,unsub:[],members:{},drafts:{},responses:{},secret:{estimates:{},fast:{}},processed:new Set(),queue:Promise.resolve(),closed:false,offset:0});this.timer=setInterval(()=>this.tick(),200);}
  now(){return this.clock()+this.offset;}
  path(part=''){return this.c.ref(this.c.db,'rooms/'+this.code+(part?'/'+part:''));}
  fail(e){if(!this.closed)this.onError(partyConnectionError(e));}
@@ -40,10 +41,11 @@ export class CourtGameSession{
  async listen(){
   const c=this.c;
   this.unsub.push(c.onValue(this.path('meta'),snap=>{if(!snap.exists()){this.fail(Error('The host closed this court.'));return;}const was=this.host;this.meta=snap.val();this.host=this.meta.host===this.uid;if(was&&!this.host){for(const off of this.hostUnsub??[])off();this.hostUnsub=[];this.hostListening=false;this.refereeReady=false;}if(this.host&&!was)this.resumeHost();this.render();},e=>this.fail(e)));
-  this.unsub.push(c.onValue(this.path('state'),snap=>{if(!snap.exists())return;this.state=normalizeState(snap.val());this.render();},e=>this.fail(e)));
+  this.unsub.push(c.onValue(this.path('state'),snap=>{if(!snap.exists())return;this.state=normalizeState(snap.val());const turn=answerTurn(this.state)?.key;if(turn!==this.draftTurn){this.draftTurn=turn;this.clearDraft();}this.render();},e=>this.fail(e)));
+  this.unsub.push(c.onValue(this.path('typing'),snap=>{this.drafts=snap.val()??{};if(!this.closed)this.onDrafts();},e=>this.fail(e)));
   this.unsub.push(c.onValue(this.path('members'),snap=>{this.members=snap.val()??{};if(!this.members[this.uid]){this.fail(Error('You have left this court.'));return;}if(this.host&&this.refereeReady)this.enqueue(()=>this.syncRoster());this.render();},e=>this.fail(e)));
   this.unsub.push(c.onValue(this.path('responses/'+this.uid),snap=>{this.response=snap.val()??{};const ack=this.response.ack;if(ack?.id&&ack.id!==this.lastAck){this.lastAck=ack.id;this.pending=false;if(ack.error)this.fail(Error(ack.error));if(ack.result?.retry)this.onError(ack.result.message);this.lastResult=ack.result;}this.render();},e=>this.fail(e)));
-  this.unsub.push(c.onValue(c.ref(c.db,'.info/connected'),async snap=>{const online=snap.val()===true;this.connected=false;if(online&&!this.closed){try{await c.onDisconnect(this.path('members/'+this.uid)).update({online:false,lastSeen:c.serverTimestamp()});if(this.closed)return;await c.update(this.path('members/'+this.uid),{online:true,lastSeen:c.serverTimestamp()});if(!this.closed)this.connected=true;}catch(e){this.fail(e);}}this.render();}));
+  this.unsub.push(c.onValue(c.ref(c.db,'.info/connected'),async snap=>{const online=snap.val()===true;this.connected=false;if(online&&!this.closed){try{await c.onDisconnect(this.path('members/'+this.uid)).update({online:false,lastSeen:c.serverTimestamp()});await c.onDisconnect(this.path('typing/'+this.uid)).remove();if(this.closed)return;await c.update(this.path('members/'+this.uid),{online:true,lastSeen:c.serverTimestamp()});if(!this.closed)this.connected=true;}catch(e){this.fail(e);}}this.render();}));
   this.heartbeat=setInterval(()=>{if(!this.closed&&this.connected)c.update(this.path('members/'+this.uid),{lastSeen:c.serverTimestamp()}).catch(e=>this.fail(e));},15000);
   if(this.host)await this.becomeHost();this.render();
  }
@@ -72,6 +74,7 @@ export class CourtGameSession{
  }
  async broadcast(extra={}){
   if(!this.host||this.closed)return;
+  for(const id of Object.keys(this.members))extra['responses/'+id+'/liveAnswer']=fastLiveAnswer(this.state,this.secret,id,this.now());
   if(this.state.stage==='fastFirstReview'||(this.state.fastPass===1&&['fastReady','fastRead','fast'].includes(this.state.stage))){
    const first=this.secret.fast?.[this.state.fastPlayers[0]];
    if(first)for(const id of Object.keys(this.members))if(id!==this.state.fastPlayers[1])extra['responses/'+id+'/fastAudience']={matchId:this.state.matchId,rows:this.state.fastIds.map((qid,i)=>({prompt:CLASH_BY_ID.get(qid).prompt,label:first[i].label,points:first[i].points}))};
@@ -116,12 +119,26 @@ export class CourtGameSession{
  async request(action,extra={}){
   if(!this.connected||this.closed)throw Error('Reconnect before sending an answer.');
   if(action==='fast-draft'&&this.pending){this.queuedDraft=extra;clearTimeout(this.draftRetry);this.draftRetry=setTimeout(()=>{const next=this.queuedDraft;this.queuedDraft=null;if(!this.closed&&this.state.stage==='fast'&&this.state.turn===this.uid&&this.state.fastPass===next.pass)this.request('fast-draft',next).catch(e=>this.fail(e));},150);return false;}
+  if(action==='fast'||(action==='fast-draft'&&extra.checkIndex!==undefined)){this.queuedDraft=null;clearTimeout(this.draftRetry);}
   if(action==='fast'&&this.pending){const until=this.now()+3000;while(this.pending&&this.now()<until&&!this.closed)await new Promise(r=>setTimeout(r,30));}
   if(this.pending&&action==='react')return false;
   if(this.pending)throw Error('Your last action is still reaching the court.');
+  if(action==='answer')this.clearDraft();
+  if(action==='fast'){this.queuedDraft=null;clearTimeout(this.draftRetry);}
   const id=crypto.randomUUID(),{text='',...patch}=extra;this.pending=true;this.render();
   try{await this.c.set(this.path('requests/'+this.uid),{id,type:action==='start'?(this.state.stage==='finish'?'rematch':'start'):'ready',text:String(text).slice(0,256),patch:{...patch,action,matchId:this.state.matchId??'',round:this.state.round},at:this.now()});}catch(e){this.pending=false;this.render();throw e;}
  }
+ setDraft(value){
+  const turn=answerTurn(this.state);if(!turn||turn.uid!==this.uid||this.closed)return this.clearDraft();
+  this.draftText=safeDraft(value);this.draftEditedAt=this.now();this.draftTurn=turn.key;clearTimeout(this.typingTimer);
+  if(!this.draftText)return this.clearDraft();
+  const wait=Math.max(0,150-(this.now()-(this.lastDraftAt??0)));if(wait)this.typingTimer=setTimeout(()=>this.flushDraft(),wait);else this.flushDraft();
+ }
+ flushDraft(){
+  const turn=answerTurn(this.state);if(!this.c||this.closed||!this.connected||!this.draftText||turn?.uid!==this.uid||turn.key!==this.draftTurn)return;
+  this.lastDraftAt=this.now();this.c.set(this.path('typing/'+this.uid),{text:this.draftText,at:this.c.serverTimestamp(),editedAt:this.draftEditedAt,round:this.state.round,game:this.state.matchId}).catch(()=>{});
+ }
+ clearDraft(){clearTimeout(this.typingTimer);this.draftText='';if(this.c&&this.uid&&this.code)this.c.remove(this.path('typing/'+this.uid)).catch(()=>{});}
  async ready(value){await this.c.update(this.path('members/'+this.uid),{ready:!!value});}
  tick(){if(this.closed||!this.state||!this.connected)return;
   if(!this.host){const m=this.members[this.meta?.host];if(m?.online===false&&this.now()-(m.lastSeen??0)>30000&&!this.claiming){this.claiming=true;this.c.runTransaction(this.path('meta/host'),id=>id===this.meta.host?this.uid:undefined,{applyLocally:false}).catch(e=>{if(!permissionDenied(e))this.fail(e);}).finally(()=>this.claiming=false);}return;}
@@ -129,7 +146,7 @@ export class CourtGameSession{
   if(this.ticking)return;this.ticking=true;this.enqueue(async()=>{try{await this.syncRoster();if(tickCourtGame(this.state,this.secret,this.now())){const extra={};for(const [id,rows]of Object.entries(this.secret.fast))extra['responses/'+id+'/secret']={matchId:this.state.matchId,estimate:this.secret.estimates[id]??null,fast:rows};await this.broadcast(extra);}if(!this.publishedAt||this.now()-this.publishedAt>15000){this.publishedAt=this.now();await this.publish();}}finally{this.ticking=false;}});
  }
  async close(){
-  if(this.closed)return;this.closed=true;clearInterval(this.timer);clearInterval(this.heartbeat);clearTimeout(this.draftRetry);for(const off of this.unsub)off();this.unsub=[];
+  if(this.closed)return;this.clearDraft();this.closed=true;clearInterval(this.timer);clearInterval(this.heartbeat);clearTimeout(this.draftRetry);for(const off of this.unsub)off();this.unsub=[];
   if(!this.c||!this.uid||!this.code)return;
   try{
    // A deliberate exit can hand the referee directly to another participant.

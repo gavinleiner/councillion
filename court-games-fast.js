@@ -33,18 +33,20 @@ export class FastRun{
   const saved=session.response?.secret?.fastDraft;if(saved?.pass===this.pass){this.values=Array.from({length:5},(_,i)=>vals(saved.values)[i]??'');this.cursor=saved.cursor??0;this.passed=vals(saved.passed);this.lap=saved.lap??0;}
   this.input=form.querySelector('input');this.submit=form.querySelector('button[type=submit]');this.skip=form.querySelector('[data-fast-pass]');
   form.onsubmit=e=>{e.preventDefault();this.step(false);};this.skip.onclick=()=>this.step(true);
-  this.input.oninput=()=>{this.values[this.cursor]=this.input.value;clearTimeout(this.timer);this.timer=setTimeout(()=>this.save(),160);};
+  this.input.oninput=()=>{this.values[this.cursor]=this.input.value;clearTimeout(this.timer);const wait=Math.max(0,170-(performance.now()-(this.lastSave??0)));if(wait)this.timer=setTimeout(()=>this.save(),wait);else this.save();};
   this.paint();
  }
  patch(extra={}){return {values:this.values.slice(),pass:this.pass,cursor:this.cursor,passed:this.passed.slice(),lap:this.lap,...extra};}
- save(){if(!this.disposed&&this.waiting===undefined)this.session.request('fast-draft',this.patch()).catch(this.onError);}
+ save(){if(!this.disposed&&this.waiting===undefined&&this.queuedStep===undefined){this.lastSave=performance.now();this.session.request('fast-draft',this.patch()).catch(this.onError);}}
  step(pass){
-  if(this.waiting!==undefined||this.session.pending||this.finishing)return;
+  if(this.waiting!==undefined||this.finishing)return;
+  if(this.session.pending){this.queuedStep=pass;clearTimeout(this.timer);return;}
   pass=pass||!this.input.value.trim();clearTimeout(this.timer);this.values[this.cursor]=pass?'':this.input.value.trim();this.passClick=pass;this.waiting=this.cursor;this.beforeAck=this.session.lastAck;
   this.form.querySelector('.cg-fast-feedback').textContent='';this.session.request('fast-draft',this.patch({checkIndex:this.cursor})).catch(e=>{this.waiting=undefined;this.onError(e);});
  }
  update(s,session){
   this.session=session;
+  if(this.queuedStep!==undefined&&!session.pending){const pass=this.queuedStep;this.queuedStep=undefined;this.step(pass);return;}
   if(this.waiting!==undefined&&session.lastAck!==this.beforeAck){
    const result=session.lastResult;
    if(result?.checked===this.waiting){
@@ -53,7 +55,7 @@ export class FastRun{
    }
   }
   if(this.finishing&&!session.pending&&session.lastResult?.retry?.length){this.finishing=false;this.cursor=session.lastResult.retry[0];this.passed=vals(session.lastResult.retry);this.lap=1;this.paint();this.form.querySelector('.cg-fast-feedback').textContent='ALREADY SAID. TRY ANOTHER.';}
-  const disabled=!!session.pending||this.waiting!==undefined||this.finishing;this.submit.disabled=disabled;this.skip.disabled=disabled;
+  const disabled=this.waiting!==undefined||this.finishing||this.queuedStep!==undefined;this.submit.disabled=disabled;this.skip.disabled=disabled;
  }
  advance(){
   if(this.lap===0){if(this.passClick)this.passed.push(this.cursor);if(this.cursor<4)this.cursor++;else if(this.passed.length){this.lap=1;this.cursor=this.passed[0];}else return this.finish();}
