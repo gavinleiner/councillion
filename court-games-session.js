@@ -105,6 +105,11 @@ export class CourtGameSession{
    }else if(a==='team'){
     if(this.mode!=='clash'||!['lobby','finish'].includes(this.state.stage))throw Error('Teams lock when the match begins.');
     const target=Number(r.patch.team);if(![0,1].includes(target))throw Error('Choose a bench.');if(this.state.players.filter(p=>p.id!==uid&&p.team===target&&p.connected).length>=5)throw Error('That bench is full.');p.team=target;this.state.revision++;
+   }else if(a==='lobby-rock'){
+    if(this.mode!=='clash'||this.state.stage!=='lobby'||p.spectator)throw Error('Save the pebbles for the waiting room.');
+    this.lastRock??={};if(this.now()-(this.lastRock[uid]??0)<1200)throw Error('One pebble at a time.');
+    const opponents=this.state.players.filter(q=>q.id!==uid&&q.team!==p.team&&q.online!==false&&q.connected!==false&&!q.spectator);if(!opponents.length)throw Error('The other bench is empty.');
+    const target=opponents[Math.floor(Math.random()*opponents.length)];this.lastRock[uid]=this.now();this.state.lobbyRock={id:crypto.randomUUID(),from:uid,to:target.id,at:this.now()};this.state.revision++;
    }else if(a==='huddle'){
     if(!canCourtHuddle(this.state,uid))throw Error('Only the defending bench may confer for its steal.');
     if(r.patch?.matchId!==this.state.matchId||r.patch?.round!==this.state.round)throw Error('That suggestion belongs to an earlier board.');

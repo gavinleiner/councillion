@@ -7,7 +7,12 @@ export class TypingBubble{
   if(key!==this.key){this.cancel();this.key=key;this.target='';this.shown='';this.node.querySelector('span').textContent='';this.node.hidden=true;}
   if(text===this.target)return;this.target=text;this.cancel();
   if(!text){this.shown='';this.node.querySelector('span').textContent='';this.node.hidden=true;return;}
-  const fresh=this.node.hidden;this.node.hidden=false;this.node.style.setProperty('--draft-width',Math.min(152,Math.max(38,text.length*6.7+21))+'px');this.node.setAttribute('aria-label',name+' is answering');this.node.title=text;
+  const fresh=this.node.hidden;this.node.hidden=false;
+  // Use the actual font: the Feud bubble is larger than the Puffer bubble.
+  // A character-count estimate was clipping even short eight-letter answers.
+  let width=text.length*6.7+21;
+  if(globalThis.getComputedStyle&&globalThis.document){this.measure??=document.createElement('canvas').getContext('2d');const style=getComputedStyle(this.node);if(this.measure){this.measure.font=style.font;width=this.measure.measureText(text).width+parseFloat(style.paddingLeft)+parseFloat(style.paddingRight)+parseFloat(style.borderLeftWidth)+parseFloat(style.borderRightWidth)+4;}}
+  this.node.style.setProperty('--draft-width',Math.min(152,Math.max(38,width))+'px');this.node.setAttribute('aria-label',name+' is answering');this.node.title=text;
   const reduced=document.body.classList.contains('reduced')||globalThis.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
   if(fresh&&!reduced)this.node.animate?.([{opacity:0,transform:'translateY(2px)'},{opacity:1,transform:'translateY(0)'}],{duration:180,easing:'ease-out'});
   if(reduced||typeof requestAnimationFrame!=='function'){this.paint(text);this.onSize();return;}
