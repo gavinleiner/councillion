@@ -5,9 +5,9 @@ import {matchFeudAnswer,resolveFeudAnswer} from './court-games-feud-matching.js'
 import {CLASH_BOARDS,CLASH_BY_ID,FIGURE_QUESTIONS,FIGURE_BY_ID} from './court-games-data.js';
 import {courtSettings} from './court-games-settings.js';
 import {figureDeck} from './court-games-figure-deck.js';
-export const COURT_GAMES_BUILD='20261105-docket-polish-v15';
+export const COURT_GAMES_BUILD='20261106-feud-pace-v16';
 export const GAME_MODES={clash:{name:'Counsel Clash',subtitle:'TEAM FEUD',seats:10},figure:{name:'Final Figure',subtitle:'CLOSEST ANSWER WINS',seats:8},docket:{name:'The Docket',subtitle:'CHOOSE. BUZZ. WAGER.',seats:6}};
-export const CLASH_TIMING={briefing:7000,countdown:3000,buzz:20000,faceAnswer:20000,choice:12000,control:30000,steal:30000,survey:1600,handoff:5000,roundBreak:12000,fastCasting:15000,fastRun:30000};
+export const CLASH_TIMING={briefing:4000,countdown:3000,buzz:8000,faceAnswer:3000,choice:5000,control:6000,steal:6000,survey:600,handoff:900,roundBreak:2500,fastCasting:5000,fastRun:32000,fastReadMin:1800,fastReadMax:6500,fastReadWord:230,fastReadLead:450,fastRevealStart:350,fastRevealStep:1000,fastRevealScore:450,fastReview:6000};
 const live=s=>s.players.filter(p=>!p.spectator&&p.connected!==false);
 const team=(s,n)=>{const rows=live(s).filter(p=>p.team===n),online=rows.filter(p=>p.online!==false);return online.length?online:rows;};
 const actor=(s,id)=>s.players.find(p=>p.id===id&&!p.spectator&&p.connected!==false&&p.online!==false);
@@ -49,8 +49,8 @@ function finishBoard(s,winner,now,steal=false){
 function rotate(s,now){const a=team(s,s.controlTeam),i=a.findIndex(p=>p.id===s.turn);s.turn=a[(i+1)%a.length]?.id;s.deadline=now+CLASH_TIMING.control;s.turnOpenedAt=now;}
 function strike(s,now,reason='Not on the board'){s.strikes++;emit(s,'strike',reason+'. Strike '+s.strikes+'.',now,{team:s.controlTeam});if(s.strikes>=3){s.stealTeam=1-s.controlTeam;s.turn=team(s,s.stealTeam)[0]?.id;stage(s,'steal',now,CLASH_TIMING.steal);emit(s,'steal','Three strikes. Opposing counsel, one answer to steal.',now,{team:s.stealTeam});}else rotate(s,now);}
 function finishClashMain(s,now){const scores=s.teamScores;if(scores[0]===scores[1]){nextClash(s,now);return;}const winner=scores[0]>scores[1]?0:1;s.winningTeam=winner;s.fastPlayers=team(s,winner).slice(0,2).map(p=>p.id);s.fastIds=s.questionIds.filter(id=>!s.history.some(h=>h.id===id)).slice(0,5);s.choicePlayer=team(s,winner)[0]?.id;stage(s,'fastIntro',now,CLASH_TIMING.fastCasting);emit(s,'fast-intro','Main verdict: '+(winner===0?'Petitioners':'Respondents')+'. Choose your Fast Money counsel. Casting ends automatically.',now,{team:winner});}
-function readyFast(s,now){stage(s,'fastReady',now,CLASH_TIMING.countdown);emit(s,'fast-ready',s.fastPass===0?'First counsel. Thirty seconds, after the first question.':'Second counsel: '+s.fast.total+' banked. Thirty seconds. No duplicate answers.',now,{player:s.turn});}
-function readFast(s,now){const words=CLASH_BY_ID.get(s.fastIds[0]).prompt.trim().split(/\s+/).length;stage(s,'fastRead',now,Math.max(3000,Math.min(10000,words*360+650)));emit(s,'fast-read','First question. The clock starts after the read.',now,{player:s.turn});}
+function readyFast(s,now){stage(s,'fastReady',now,CLASH_TIMING.countdown);emit(s,'fast-ready',s.fastPass===0?'First counsel. Thirty-two seconds, after the first question.':'Second counsel: '+s.fast.total+' banked. Thirty-two seconds. No duplicate answers.',now,{player:s.turn});}
+function readFast(s,now){const words=CLASH_BY_ID.get(s.fastIds[0]).prompt.trim().split(/\s+/).length;stage(s,'fastRead',now,Math.max(CLASH_TIMING.fastReadMin,Math.min(CLASH_TIMING.fastReadMax,words*CLASH_TIMING.fastReadWord+CLASH_TIMING.fastReadLead)));emit(s,'fast-read','First question. The clock starts after the read.',now,{player:s.turn});}
 function beginFast(s,now){const winners=team(s,s.winningTeam);s.fastPlayers=s.fastPlayers.length?s.fastPlayers:winners.slice(0,2).map(p=>p.id);s.fastPass=0;s.fastTarget=s.fastPlayers.length>=2?200:100;
  // Historical board totals vary. Keep the fresh draw unless even perfect
  // answers could not reach the bonus; then replace its weakest board from
@@ -161,8 +161,8 @@ export function actCourtGame(s,secret,uid,action,payload={},now=Date.now()){
   if(duplicates.length&&!payload.timeout)return {retry:duplicates,message:'Already used in question '+duplicates.map(i=>i+1).join(', ')+'. Give a different answer or leave it blank.'};
   for(const i of duplicates)rows[i]={...rows[i],label:'',points:0};
   secret.fast??={};secret.fast[uid]=rows;const firstTotal=Object.values(secret.fast).flat().reduce((n,r)=>n+r.points,0);s.fast.total=0;
-  if(s.fastPass===0&&s.fastPlayers.length>1&&firstTotal<s.fastTarget){s.fast.total=firstTotal;s.turn=null;stage(s,'fastFirstReview',now,12000);emit(s,'fast-first-review','First counsel: let’s see what the survey said.',now,{player:uid});}
-  else{let reviewTotal=s.fastPass===1?(secret.fast[s.fastPlayers[0]]??[]).reduce((n,r)=>n+r.points,0):0;for(const row of rows){if(reviewTotal>=s.fastTarget)break;reviewTotal+=row.points;}s.fast={total:reviewTotal,target:s.fastTarget,success:reviewTotal>=s.fastTarget,complete:true,rows:s.fastIds.map((id,i)=>({prompt:CLASH_BY_ID.get(id).prompt,source:CLASH_BY_ID.get(id).source,answers:s.fastPlayers.filter(uid=>secret.fast[uid]).map(uid=>({label:secret.fast[uid][i].label,points:secret.fast[uid][i].points}))}))};stage(s,'fastReview',now,14000);emit(s,'fast-review','Let’s see what the survey said. Reveal the final answers.',now);}
+  if(s.fastPass===0&&s.fastPlayers.length>1&&firstTotal<s.fastTarget){s.fast.total=firstTotal;s.turn=null;stage(s,'fastFirstReview',now,CLASH_TIMING.fastReview);emit(s,'fast-first-review','First counsel: let’s see what the survey said.',now,{player:uid});}
+  else{let reviewTotal=s.fastPass===1?(secret.fast[s.fastPlayers[0]]??[]).reduce((n,r)=>n+r.points,0):0;for(const row of rows){if(reviewTotal>=s.fastTarget)break;reviewTotal+=row.points;}s.fast={total:reviewTotal,target:s.fastTarget,success:reviewTotal>=s.fastTarget,complete:true,rows:s.fastIds.map((id,i)=>({prompt:CLASH_BY_ID.get(id).prompt,source:CLASH_BY_ID.get(id).source,answers:s.fastPlayers.filter(uid=>secret.fast[uid]).map(uid=>({label:secret.fast[uid][i].label,points:secret.fast[uid][i].points}))}))};stage(s,'fastReview',now,CLASH_TIMING.fastReview);emit(s,'fast-review','Let’s see what the survey said. Reveal the final answers.',now);}
   return {accepted:true,rows};
  }
  if(action!=='answer'||!['faceAnswer','control','steal'].includes(s.stage))throw Error('Wait for your answer turn.');
@@ -218,7 +218,7 @@ export function tickCourtGame(s,secret,now=Date.now()){
  if(s.stage==='choice'){control(s,actor(s,s.choicePlayer)?.team??0,now);return true;}
  if(s.stage==='fastIntro'){beginFast(s,now);return true;}
  if(s.stage==='fastReady'){readFast(s,now);return true;}
- if(s.stage==='fastRead'){stage(s,'fast',now,CLASH_TIMING.fastRun);emit(s,'fast',s.fastPass===0?'Thirty seconds. Find the top answers.':'Thirty seconds. Find different answers.',now,{player:s.turn});return true;}
+ if(s.stage==='fastRead'){stage(s,'fast',now,CLASH_TIMING.fastRun);emit(s,'fast',s.fastPass===0?'Thirty-two seconds. Find the top answers.':'Thirty-two seconds. Find different answers.',now,{player:s.turn});return true;}
  if(s.stage==='fast'){s.deadline=now+1;actCourtGame(s,secret,s.turn,'fast',{values:secret.fastDraft?.[s.turn]?.pass===s.fastPass?secret.fastDraft[s.turn].values:['','','','',''],pass:s.fastPass,matchId:s.matchId,timeout:true},now);return true;}
  if(s.stage==='fastFirstReview'){s.fastPass=1;s.turn=s.fastPlayers[1];readyFast(s,now);return true;}
  if(s.stage==='fastReview'){finish(s,now);return true;}return false;

@@ -73,9 +73,9 @@ test('two-thirds voting is idempotent, board-scoped, excludes spectators and awa
  }
 });
 
-test('both Fast Money runs start automatically and have thirty actual answer seconds',()=>{
- const c=court();fast(c);const {s}=c;assert.equal(s.deadline-s.stageAt,30000);const first=s.fastIds.map(id=>CLASH_BY_ID.get(id).answers[1].label);
- send(c,s.turn,'fast',{values:first,pass:0});assert.equal(s.stage,'fastFirstReview');due(c);assert.equal(s.stage,'fastReady');due(c);assert.equal(s.stage,'fastRead');due(c);assert.equal(s.stage,'fast');assert.equal(s.fastPass,1);assert.equal(s.deadline-s.stageAt,30000);
+test('both Fast Money runs start automatically and have thirty-two actual answer seconds',()=>{
+ const c=court();fast(c);const {s}=c;assert.equal(s.deadline-s.stageAt,32000);const first=s.fastIds.map(id=>CLASH_BY_ID.get(id).answers[1].label);
+ send(c,s.turn,'fast',{values:first,pass:0});assert.equal(s.stage,'fastFirstReview');due(c);assert.equal(s.stage,'fastReady');due(c);assert.equal(s.stage,'fastRead');due(c);assert.equal(s.stage,'fast');assert.equal(s.fastPass,1);assert.equal(s.deadline-s.stageAt,32000);
  const duplicate=send(c,s.turn,'fast-draft',{values:first,checkIndex:0,pass:1,cursor:0});assert.deepEqual(duplicate.retry,[0]);
 });
 
@@ -107,4 +107,20 @@ test('a late background autosave is harmless and cannot overwrite a sealed Fast 
  send(c,runner,'fast',{values,pass:0});const saved=JSON.stringify(c.secret.fast[runner]);assert.equal(c.s.stage,'fastFirstReview');
  assert.equal(send(c,runner,'fast-draft',{values:['late','','','',''],pass:0}).ignored,true);assert.equal(JSON.stringify(c.secret.fast[runner]),saved);
  assert.throws(()=>send(c,runner,'fast-draft',{values,checkIndex:0,pass:0}),/earlier/,'an actual checked submission is not falsely acknowledged');
+});
+
+test('short main-game clocks preserve the full next turn after the abbreviated reveal',()=>{
+ const c=court();assert.equal(c.s.deadline-c.s.stageAt,4000);open(c);
+ assert.equal(c.s.deadline-c.s.stageAt,8000);send(c,'p0','buzz');assert.equal(c.s.deadline-c.now,3000);
+ const q=CLASH_BY_ID.get(c.s.board.id);send(c,'p0','answer',{text:q.answers[0].label});assert.equal(c.s.deadline-c.now,600);due(c);
+ assert.equal(c.s.stage,'answerResult');assert.equal(c.s.deadline-c.now,900);due(c);assert.equal(c.s.stage,'choice');assert.equal(c.s.deadline-c.now,5000);
+ send(c,'p0','choice',{pass:false});assert.equal(c.s.deadline-c.now,6000);
+ for(let i=0;i<3;i++){send(c,c.s.turn,'answer',{text:'not a board answer'});due(c);assert.equal(c.s.stage,'answerResult');due(c);assert.equal(c.s.deadline-c.now,6000);}
+ assert.equal(c.s.stage,'steal');send(c,c.s.turn,'answer',{text:'not a board answer'});due(c);assert.equal(c.s.stage,'roundResult');assert.equal(c.s.deadline-c.now,2500);
+});
+test('the five-question finale has one shared 32-second clock and completes every score reveal before advancing',async()=>{
+ const c=court();fast(c);const deadline=c.s.deadline,values=['','','','',''];
+ c.now+=1000;send(c,c.s.turn,'fast-draft',{values,checkIndex:0,pass:0,cursor:0});assert.equal(c.s.deadline,deadline,'checking or passing never resets the total run clock');
+ const {fastRevealPlan}=await import('../court-games-fast.js');const plan=fastRevealPlan(Array.from({length:5},(_,i)=>({prompt:String(i),answers:[{label:'Answer',points:10}]})));
+ assert.ok(Math.max(...plan.rows.map(r=>r.pointsAt))<CLASH_TIMING.fastReview);assert.equal(CLASH_TIMING.fastRun,32000);
 });
