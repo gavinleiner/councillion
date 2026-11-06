@@ -9,3 +9,5 @@ body[data-screen="home"] .home-panel{max-width:610px;padding-top:18px}
 @media(prefers-reduced-motion:reduce){.surface-play-links .home-party,.surface-court-links>a,.home-panel>.surface-descent{transition:none}}
 
 .surface-court-links>a{flex-direction:column;justify-content:center;gap:5px}.surface-court-links strong{font-size:16px}.surface-court-links small{font-size:7.5px}@media(max-width:600px){.surface-court-links strong{font-size:14px;letter-spacing:.3px}.surface-court-links{gap:7px}}
+
+.surface-play-links .surface-games-button{width:100%;margin-bottom:12px;position:relative;overflow:hidden;text-decoration:none}.surface-play-links .surface-games-button>small{font-size:10px;line-height:1.4;letter-spacing:1px}.surface-games-button>i{position:absolute;inset:0;pointer-events:none;background:linear-gradient(110deg,transparent 30%,#c1fcf412 49%,transparent 65%);transform:translateX(-140%);animation:surface-court-shimmer 9s ease-in-out infinite}.surface-games-note{font-size:9px;letter-spacing:2px;color:#87aaba;text-align:center;margin:10px 0 23px}@keyframes surface-court-shimmer{0%,65%{transform:translateX(-140%)}95%,100%{transform:translateX(140%)}}

@@ -1,12 +1,13 @@
 import {startDocket,actDocket,tickDocket} from './docket-engine.js';
+import {startOath,actOath,tickOath} from './oath-engine.js';
 import {shuffle} from './question-selection.js';
 import {normalize} from './answer-matching.js';
 import {matchFeudAnswer,resolveFeudAnswer} from './court-games-feud-matching.js';
 import {CLASH_BOARDS,CLASH_BY_ID,FIGURE_QUESTIONS,FIGURE_BY_ID} from './court-games-data.js';
 import {courtSettings} from './court-games-settings.js';
 import {figureDeck} from './court-games-figure-deck.js';
-export const COURT_GAMES_BUILD='20261106-feud-answer-time-v17';
-export const GAME_MODES={clash:{name:'Counsel Clash',subtitle:'TEAM FEUD',seats:10},figure:{name:'Final Figure',subtitle:'CLOSEST ANSWER WINS',seats:8},docket:{name:'The Docket',subtitle:'CHOOSE. BUZZ. WAGER.',seats:6}};
+export const COURT_GAMES_BUILD='20261106-puffer-games-oath-v22';
+export const GAME_MODES={clash:{name:'Counsel Clash',subtitle:'TEAM FEUD',seats:10},figure:{name:'Final Figure',subtitle:'CLOSEST ANSWER WINS',seats:8},docket:{name:'The Docket',subtitle:'CHOOSE. BUZZ. WAGER.',seats:6},oath:{name:'Under Oath',subtitle:'BLUFF. VOTE. EXPOSE.',seats:6}};
 export const CLASH_TIMING={briefing:4000,countdown:3000,buzz:8000,faceAnswer:10000,choice:5000,control:15000,steal:15000,survey:600,handoff:900,roundBreak:2500,fastCasting:5000,fastRun:32000,fastReadMin:1800,fastReadMax:6500,fastReadWord:230,fastReadLead:450,fastRevealStart:350,fastRevealStep:1000,fastRevealScore:450,fastReview:6000};
 const live=s=>s.players.filter(p=>!p.spectator&&p.connected!==false);
 const team=(s,n)=>{const rows=live(s).filter(p=>p.team===n),online=rows.filter(p=>p.online!==false);return online.length?online:rows;};
@@ -15,6 +16,7 @@ const emit=(s,type,text,now,extra={})=>{s.notice=text;s.event={id:++s.eventSeria
 const stage=(s,value,now,ms)=>{s.stage=value;s.phase=['roundResult','reveal','fastFirstReview','fastReview'].includes(value)?'burst':value==='finish'?'ended':value==='lobby'?'lobby':'playing';s.deadline=ms?now+ms:0;s.stageAt=now;if(['faceAnswer','control','steal'].includes(value))s.turnOpenedAt=now;};
 export function createCourtGame(mode,players=[],rng=Math.random){if(!GAME_MODES[mode])throw Error('Choose a game mode.');return {build:COURT_GAMES_BUILD,variant:mode,phase:'lobby',stage:'lobby',players:players.map(p=>({...p,score:0,team:p.team??0})),settings:{maxPlayers:GAME_MODES[mode].seats,...courtSettings(mode)},round:0,revision:0,eventSerial:0,teamScores:[0,0],deadline:0,notice:'Bring your friends. The court is assembling.',questionIds:[],locked:{},history:[]};}
 export function startCourtGame(s,now=Date.now(),rng=Math.random,secret={}){
+ if(s.variant==='oath')return startOath(s,secret,now,rng);
  if(s.variant==='docket')return startDocket(s,secret,now,rng);
  const ready=s.players.filter(p=>p.ready&&p.connected!==false&&p.online!==false).slice(0,GAME_MODES[s.variant].seats);
  if(ready.length<2)throw Error('At least two ready players are needed.');
@@ -80,6 +82,7 @@ function revealFigure(s,secret,now){
  s.advanceReady={};s.roundResult={answer:q.answer,unit:q.unit,...(q.scoringSpan?{scoringSpan:q.scoringSpan}:{}),explanation:q.explanation,source:q.source,sourceTitle:q.sourceTitle,leaders,rows:rows.sort((a,b)=>(a.error??Infinity)-(b.error??Infinity))};s.history.push({round:s.round,id:q.id,...s.roundResult});stage(s,'reveal',now,14000);emit(s,'reveal','Unseal the estimates. Closest counsel earns +200.',now);
 }
 export function actCourtGame(s,secret,uid,action,payload={},now=Date.now()){
+ if(s.variant==='oath')return actOath(s,secret,uid,action,payload,now);
  if(s.variant==='docket')return actDocket(s,secret,uid,action,payload,now);
  const p=payload.timeout?s.players.find(p=>p.id===uid&&!p.spectator):actor(s,uid);if(!p)throw Error('Only players in this game can act.');
  // A background save can arrive after the runner has already sealed or the
@@ -194,6 +197,7 @@ function resolveBoardAnswer(s,uid,payload,now){
  return {accepted:true,found:valid,label:valid?answer.label:null};
 }
 export function tickCourtGame(s,secret,now=Date.now()){
+ if(s.variant==='oath')return tickOath(s,secret,now);
  if(s.variant==='docket')return tickDocket(s,secret,now);
  if(['lobby','finish'].includes(s.stage))return false;
  if(s.variant==='clash'&&s.skipVotes&&['faceoff','faceAnswer','choice','control','steal','survey','answerResult'].includes(s.stage)&&clashSkipStatus(s).votes>=clashSkipStatus(s).required){skipBoard(s,now);return true;}

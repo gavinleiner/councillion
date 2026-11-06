@@ -1,3 +1,4 @@
+import {oathReceipt} from './oath-engine.js';
 import {CLASH_BY_ID} from './court-games-data.js';
 import {createCourtGame,startCourtGame,tickCourtGame,actCourtGame,canCourtHuddle,GAME_MODES,COURT_GAMES_BUILD} from './court-games-engine.js';
 import {waitForDatabaseConnection,databaseClockOffset,partyConnectionError,permissionDenied} from './party-connection.js';
@@ -8,7 +9,7 @@ import {courtAppearance,courtSettings,validCourtSettings} from './court-games-se
 const clone=o=>JSON.parse(JSON.stringify(o)),values=o=>Object.values(o??{}),build=mode=>COURT_GAMES_BUILD+':'+mode;
 const loadCloud=()=>import('./cloud.bundle.js?v=20261024-open-v1');
 function normalizeState(state){
- state.players=values(state.players).map(p=>({...p,name:safeDisplayName(p.name)}));for(const field of ['teamScores','questionIds','history','faceoffPlayers','faceoffTried','fastIds','fastPlayers'])state[field]=values(state[field]);if(state.board)state.board.slots=values(state.board.slots);if(state.variant==='docket'){for(const k of ['categoryIds','cells','finalRows','eligible','tied','finalOrder'])state[k]=values(state[k]);state.attempts??={};state.lockouts??={};if(state.result){state.result.scores=values(state.result.scores);state.result.winners=values(state.result.winners);}}state.locked??={};
+ state.players=values(state.players).map(p=>({...p,name:safeDisplayName(p.name)}));for(const field of ['teamScores','questionIds','history','faceoffPlayers','faceoffTried','fastIds','fastPlayers'])state[field]=values(state[field]);if(state.board)state.board.slots=values(state.board.slots);if(state.variant==='docket'){for(const k of ['categoryIds','cells','finalRows','eligible','tied','finalOrder'])state[k]=values(state[k]);state.attempts??={};state.lockouts??={};if(state.result){state.result.scores=values(state.result.scores);state.result.winners=values(state.result.winners);}}if(state.variant==='oath'){for(const k of ['choices','revealed'])state[k]=values(state[k]);for(const r of state.revealed){r.authors=values(r.authors);r.voters=values(r.voters);}state.voted??={};state.advanceReady??={};if(state.roundResult)state.roundResult.rows=values(state.roundResult.rows);if(state.result){state.result.scores=values(state.result.scores);state.result.winners=values(state.result.winners);}}state.locked??={};
  if(state.variant==='figure'&&state.roundResult)state.roundResult.rows=values(state.roundResult.rows).map(r=>({...r,guess:Number.isFinite(r.guess)?r.guess:null,error:Number.isFinite(r.error)?r.error:null}));return state;
 }
 
@@ -63,6 +64,7 @@ export class CourtGameSession{
   const match=this.state?.matchId;this.secret={estimates:{},fast:{},fastDraft:{}};
   for(const [id,value]of Object.entries(snapshot.responses??{}))if(value.secret?.matchId===match){if(value.secret.estimate)this.secret.estimates[id]=value.secret.estimate;if(value.secret.fast)this.secret.fast[id]=values(value.secret.fast);if(value.secret.fastDraft)this.secret.fastDraft[id]={...value.secret.fastDraft,values:values(value.secret.fastDraft.values)};}
   if(this.mode==='docket'){const referees=Object.values(snapshot.responses??{}).map(r=>r.secret).filter(r=>r?.matchId===match&&r.docketReferee).sort((a,b)=>(b.revision??0)-(a.revision??0));if(referees[0]){this.secret.docket=referees[0].docketReferee;this.secret.docket.doubles=values(this.secret.docket.doubles);this.secret.docket.tieIds=values(this.secret.docket.tieIds);this.secret.docket.wagers??={};this.secret.docket.answers??={};}}
+  if(this.mode==='oath'){const refs=Object.values(snapshot.responses??{}).map(r=>r.secret).filter(r=>r?.matchId===match&&r.oathReferee).sort((a,b)=>(b.revision??0)-(a.revision??0));if(refs[0]){this.secret.oath=refs[0].oathReferee;for(const key of ['deck','options','verdict'])this.secret.oath[key]=values(this.secret.oath[key]);for(const row of [...this.secret.oath.options,...this.secret.oath.verdict]){row.authors=values(row.authors);if(row.voters)row.voters=values(row.voters);}this.secret.oath.submissions??={};this.secret.oath.votes??={};this.secret.oath.knowers??={};}}
   this.responses=snapshot.responses??{};
   const incoming=snap=>this.enqueue(()=>this.process(snap.key,snap.val()));this.hostUnsub=[this.c.onChildAdded(this.path('requests'),incoming),this.c.onChildChanged(this.path('requests'),incoming)];this.unsub.push(...this.hostUnsub);
   if(this.state?.deadline&&this.state.deadline<this.now())this.state.deadline=this.now()+5000;
@@ -87,6 +89,7 @@ export class CourtGameSession{
    if(first)for(const id of Object.keys(this.members))if(id!==this.state.fastPlayers[1])extra['responses/'+id+'/fastAudience']={matchId:this.state.matchId,rows:this.state.fastIds.map((qid,i)=>({prompt:CLASH_BY_ID.get(qid).prompt,label:first[i].label,points:first[i].points}))};
   }
   if(this.mode==='docket'&&this.secret.docket)extra['responses/'+this.uid+'/secret']={matchId:this.state.matchId,revision:this.state.revision,docketReferee:this.secret.docket};
+  if(this.mode==='oath'&&this.secret.oath){extra['responses/'+this.uid+'/secret']={matchId:this.state.matchId,revision:this.state.revision,oathReferee:this.secret.oath};for(const id of Object.keys(this.members))extra['responses/'+id+'/oath']=oathReceipt(this.state,this.secret,id);}
   const changes={...(publicState?{state:clone(this.state),'meta/phase':this.state.phase}:{}),...extra};await this.c.update(this.path(),changes);this.render();
   const directoryKey=JSON.stringify([this.meta.isPrivate,this.state.phase,this.state.players.map(p=>[p.id,p.connected,p.spectator])]);
   if(publicState&&(directoryKey!==this.directoryKey||!this.publishedAt)){this.directoryKey=directoryKey;this.publishedAt=this.now();await this.publish();}
@@ -149,7 +152,7 @@ export class CourtGameSession{
   if(action==='appearance')this.appearance=courtAppearance(extra.appearance);
   if(action==='fast'){this.queuedDraft=null;clearTimeout(this.draftRetry);}
   const id=crypto.randomUUID(),{text='',...patch}=extra;this.pending=true;this.pendingId=id;this.render();
-  try{await this.c.set(this.path('requests/'+this.uid),{id,type:action==='start'?(this.state.stage==='finish'?'rematch':'start'):'ready',text:String(text).slice(0,256),patch:{...context,...patch,action,matchId:context.matchId??this.state.matchId??'',round:context.round??this.state.round,...(this.mode==='docket'?{stageAt:extra.stageAt??this.state.stageAt??0}:{})},at:this.now()});}catch(e){this.pending=false;this.pendingId=null;this.render();throw e;}
+  try{await this.c.set(this.path('requests/'+this.uid),{id,type:action==='start'?(this.state.stage==='finish'?'rematch':'start'):'ready',text:String(text).slice(0,256),patch:{...context,...patch,action,matchId:context.matchId??this.state.matchId??'',round:context.round??this.state.round,...(['docket','oath'].includes(this.mode)?{stageAt:extra.stageAt??this.state.stageAt??0}:{})},at:this.now()});}catch(e){this.pending=false;this.pendingId=null;this.render();throw e;}
  }
  setDraft(value){
   const turn=answerTurn(this.state);if(!turn||turn.uid!==this.uid||this.closed)return this.clearDraft();
