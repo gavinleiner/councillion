@@ -1,11 +1,11 @@
 // Batched pixel scenery: one low-resolution canvas, capped at 20 fps.
 // Every creature stays around the reef so the prompt and player cards stay clear.
-export function mountCourtAmbience(canvas){
+export function mountCourtAmbience(canvas,{cove=false}={}){
  if(!canvas||typeof requestAnimationFrame!=='function')return null;
  const c=canvas.getContext('2d');if(!c)return null;
- let w=0,h=0,frame=null,last=0,previous=0,t=0,disposed=false,reduced=false,bursts=[];
+ let w=0,h=0,frame=null,last=0,previous=0,t=0,disposed=false,reduced=false,paused=false,attention=null,bursts=[];
  const media=matchMedia('(prefers-reduced-motion: reduce)');
- const schedule=()=>{if(frame===null&&!disposed&&!document.hidden&&canvas.isConnected)frame=requestAnimationFrame(paint);};
+ const schedule=()=>{if(frame===null&&!disposed&&!paused&&!document.hidden&&canvas.isConnected)frame=requestAnimationFrame(paint);};
  const motion=()=>{reduced=media.matches||document.body.classList.contains('reduced');schedule();};
  function resize(){w=Math.ceil(innerWidth/2);h=Math.ceil(innerHeight/2);canvas.width=w;canvas.height=h;c.imageSmoothingEnabled=false;schedule();}
  const pixel=(x,y,width,height,color,alpha=1)=>{c.globalAlpha=alpha;c.fillStyle=color;c.fillRect(Math.round(x),Math.round(y),width,height);};
@@ -37,9 +37,33 @@ export function mountCourtAmbience(canvas){
   pixel(-3,-5,6,9,'#8da89f',.5);pixel(-2,-4,4,7,'#c0c5a8',.45);pixel(-1,-3,2,1,'#405e69',.55);pixel(-1,-1,3,1,'#405e69',.45);pixel(-1,1,2,1,'#405e69',.45);pixel(2,3,2,2,'#77949a',.5);c.restore();
  }
  function paint(now){
-  frame=null;if(disposed||document.hidden||!canvas.isConnected)return;
+  frame=null;if(disposed||paused||document.hidden||!canvas.isConnected)return;
   if(!reduced&&now-last<49){schedule();return;}
   t+=reduced?0:Math.min(.1,(now-previous)/1000||.05);previous=now;last=now;c.clearRect(0,0,w,h);
+  if(cove){
+   // Distant rays cross slowly behind the court. Their flat silhouettes stay
+   // darker than the selectable mascots, and do not obscure their labels.
+   for(let r=0;r<2;r++){
+    const x=((t*(r?1.3:.8)+w*(r?.67:.2))%(w+100))-50,y=h*(r?.32:.16)+Math.sin(t*.1+r)*5,flap=Math.sin(t*.6+r);
+    c.save();c.translate(Math.round(x),Math.round(y));c.scale(r?-1.1:1.6,r?1.1:1.6);
+    pixel(-11,-1,21,2,'#123f5b',.3);pixel(-8,-3,15,2,'#164a64',.28);
+    for(let wing=0;wing<4;wing++){pixel(-9+wing*3,-4-wing*1.4+flap*wing*.5,3,4,'#164a64',.24);pixel(-9+wing*3,1+wing*1.4-flap*wing*.5,3,4,'#164a64',.24);}
+    pixel(10,0,11,1,'#164a64',.25);pixel(20,1,5,1,'#164a64',.2);c.restore();
+   }
+   // Broken light threads glide over the ledges rather than shifting the sand.
+   for(let i=0;i<14;i++){
+    const x=w*(.12+i*.057)+Math.sin(t*.18+i*.7)*5,y=h*(.34+(i%4)*.1)+Math.cos(t*.13+i)*2;
+    pixel(x,y,8+i%3*4,1,'#bbebda',Math.max(0,Math.sin(t*.35+i))*.09);
+    pixel(x+6,y+2,4,1,'#c6e7cb',Math.max(0,Math.sin(t*.35+i))*.05);
+   }
+   if(attention){
+    const x=w*attention.x,y=h*attention.y+3;
+    for(let ring=0;ring<2;ring++){
+     const phase=(t*.28+ring*.5)%1,rx=11+phase*17,ry=3+phase*3;
+     for(let i=0;i<44;i++)pixel(x+Math.cos(i/44*Math.PI*2)*rx,y+Math.sin(i/44*Math.PI*2)*ry,1,1,attention.color,(1-phase)*.15);
+    }
+   }
+  }
   // Three separate schools glide at different depths and never race across the table.
   for(let school=0;school<3;school++)for(let i=0;i<4;i++){
    const dir=school===1?-1:1,base=[.08,.83,.06][school],travel=Math.sin(t*.025+school*1.8)*.055;
@@ -71,11 +95,11 @@ export function mountCourtAmbience(canvas){
    pixel(x,y,9+i%5*4,1,'#cadac1',.018+Math.max(0,Math.sin(t*.18+i))*.035);
   }
   [[.889,.775],[.053,.65],[.905,.644]].forEach(([x,y],i)=>{const shine=Math.pow(Math.max(0,Math.sin(t*.32-i*2)),12);pixel(w*x,h*y,3,1,'#f0db9c',shine*.4);pixel(w*x+1,h*y-1,1,3,'#d7ccac',shine*.2);});
-  bursts=bursts.filter(b=>t-b.at<2.8);for(const b of bursts)for(let i=0;i<7;i++){const life=(t-b.at)/2.8;pixel(w*b.x+Math.cos(i*1.3)*life*12,h*b.y-life*(8+i*2),1,1,'#aad8da',(1-life)*.45);}
+  bursts=bursts.filter(b=>t-b.at<2.8);for(const b of bursts)for(let i=0;i<(b.kind==='pick'?16:7);i++){const life=(t-b.at)/2.8;pixel(w*b.x+Math.cos(i*1.3)*life*(b.kind==='pick'?24:12),h*b.y-life*(8+i*2),i%5===0?2:1,1,b.kind==='pick'&&i%3===0?'#f2d79e':'#aad8da',(1-life)*.55);}
   c.globalAlpha=1;if(!reduced)schedule();
  }
  const visibility=()=>{if(document.hidden){cancelAnimationFrame(frame);frame=null;}else{previous=0;schedule();}};
  const observer=new MutationObserver(motion);observer.observe(document.body,{attributes:true,attributeFilter:['class']});
  addEventListener('resize',resize);document.addEventListener('visibilitychange',visibility);media.addEventListener('change',motion);motion();resize();
- return {pulse(x,y){if(!reduced)bursts.push({x:x/100,y:y/100,at:t});},dispose(){disposed=true;cancelAnimationFrame(frame);observer.disconnect();removeEventListener('resize',resize);document.removeEventListener('visibilitychange',visibility);media.removeEventListener('change',motion);}};
+ return {focus(x,y,color='#aad8da'){attention=x===null?null:{x:x/100,y:y/100,color};if(reduced)schedule();},pulse(x,y,kind){if(!reduced&&!paused){bursts.push({x:x/100,y:y/100,at:t,kind});bursts=bursts.slice(-16);}},setPaused(value){paused=!!value;if(paused){cancelAnimationFrame(frame);frame=null;}else{previous=0;schedule();}},dispose(){disposed=true;cancelAnimationFrame(frame);observer.disconnect();removeEventListener('resize',resize);document.removeEventListener('visibilitychange',visibility);media.removeEventListener('change',motion);}};
 }

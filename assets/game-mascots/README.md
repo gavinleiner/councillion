@@ -12,4 +12,5 @@ The original Party judge remains `../puffer.svg` unchanged. New icons use a
 
 `game-mascots.js` maps each game to its mascot; the Puffer Games cove and mode
 entry titles consume that mapping. Player avatars remain independently chosen.
-`game-availability.js` keeps Under Oath closed, including direct invites.
+`game-availability.js` keeps Under Oath closed to the public, including direct invites. The verified
+owner has a private preview against five labelled bots.
