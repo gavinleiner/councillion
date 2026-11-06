@@ -1,0 +1,39 @@
+/* Feud's host cadence: quiet countdowns, readable reveals, crisp pixel strikes. */
+.cc-board{position:relative;background:linear-gradient(#103b4c,#0a2c3d)}
+.cc-countdown-panel{position:absolute;inset:82px 6% 55px;z-index:5;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;pointer-events:none;background:#082b3cf2;border:1px solid #71999b;box-shadow:inset 0 0 0 4px #0b3444}
+.cc-countdown-panel>span{font-size:clamp(14px,1.6vw,22px);letter-spacing:1.4px;color:#c5d8cf}
+.cc-countdown-number{display:block;font:clamp(52px,7vw,90px)/.95 VT,monospace;color:#f0d58f;text-shadow:0 4px #39525a;min-width:1.1em;text-align:center}
+.cc-countdown-panel>small{font-size:clamp(9px,1.1vw,14px);letter-spacing:.7px;color:#a7c9cb;text-align:center}
+.cc-game[data-stage=roundRead] .cc-answers{opacity:.22}
+.cc-board-foot{gap:8px}
+.cc-board-foot .cc-survey-note{font-size:10px;letter-spacing:.6px;flex:1;text-align:center}
+.cc-skip-board{font:14px VT,monospace;white-space:nowrap;padding:6px 8px;min-height:30px;color:#b9cdca;background:#0d2c3b;border:1px solid #5f8388;box-shadow:0 2px #051d2c;cursor:pointer}
+.cc-skip-board:hover:not(:disabled),.cc-skip-board:focus-visible{color:#f5dda1;border-color:#e4c27c;outline-offset:3px}
+.cc-skip-board:disabled{opacity:.5;cursor:default}
+.cc-event-effects{position:absolute;top:47%;left:50%;transform:translate(-50%,-50%);width:min(460px,46%);z-index:18;pointer-events:none;text-align:center}
+.cc-impact{padding:15px 12px 19px;background:#062433f5;border:2px solid #a5c5ba;box-shadow:0 0 0 4px #062433,0 0 0 5px #496e77,0 10px #031a2866;display:flex;flex-direction:column;align-items:center;gap:8px}
+.cc-impact>strong{font:clamp(52px,7vw,100px)/.95 VT,monospace;color:#f4d28b;text-shadow:0 4px #684f39}
+.cc-impact>span{font:clamp(16px,1.7vw,24px)/1.05 VT,monospace;color:#e1e7d8}
+.cc-impact>small{font:clamp(11px,1.1vw,15px)/1.1 VT,monospace;color:#efaa91}
+.cc-impact-strike{border-color:#b86460;background:#211f2ff5}
+.cc-impact-strike>strong{font-size:clamp(80px,12vw,155px);line-height:.75;white-space:nowrap;color:#ff947c;text-shadow:3px 0 #7d373c,-3px 0 #7d373c,0 4px #7d373c,0 7px #411f32}
+.cc-impact-strike>span{color:#f1b3a2}
+.cc-impact-skip>strong{font-size:clamp(25px,3.5vw,42px)}
+.cc-team-score>strong{display:inline-block;transform-origin:center}
+.cc-briefing-auto h1{font-size:clamp(25px,3.4vw,42px);margin:0 0 12px}
+.cc-briefing-auto .cc-briefing-steps{display:grid;gap:9px;text-align:left;max-width:430px;margin:auto}
+.cc-briefing-auto .cc-briefing-steps p{margin:0;display:grid;gap:3px}
+.cc-briefing-auto .cc-briefing-steps b{color:#e6ca8c;font:19px VT,monospace}
+.cc-briefing-auto .cc-briefing-steps span{color:#b5ccca;font:17px/1.08 VT,monospace}
+.cc-briefing-auto .cc-briefing-count{margin-top:14px}
+.cc-break{display:flex;align-items:center;justify-content:center;gap:14px;color:#c0d3ca;font:18px VT,monospace}
+.cc-break>strong{font-weight:400;color:#efd297}
+.cc-correction{font-family:VT,monospace;gap:8px}
+.cc-correction>span{font-size:19px;line-height:1.05}
+.cc-correction button{font-size:17px;padding:7px 10px}
+.cc-game .cg-fast-feedback{font:18px/1.12 VT,monospace;color:#f0d598;min-height:1.1em}
+.cc-game input[readonly]{caret-color:transparent}
+@media(max-width:1100px){.cc-impact{padding:12px 8px}.cc-board-foot .cc-survey-note{font-size:8px}.cc-skip-board{font-size:12px;padding:5px}.cc-countdown-panel{inset:92px 5% 48px}.cc-briefing-auto .cc-briefing-steps span{font-size:16px}.cc-break{font-size:16px;gap:8px}}
+@media(max-height:650px) and (min-width:761px){.cc-countdown-panel{gap:7px;inset:75px 5% 45px}.cc-countdown-number{font-size:58px}.cc-briefing-auto h1{font-size:29px;margin-bottom:9px}.cc-briefing-auto .cc-briefing-steps{gap:7px}.cc-briefing-auto .cc-briefing-steps b{font-size:17px}.cc-briefing-auto .cc-briefing-steps span{font-size:15px}.cc-briefing-auto .cc-briefing-count{margin-top:10px}}
+@media(max-width:760px){.cc-event-effects{width:72%;top:42%}.cc-countdown-panel{inset:95px 5% 58px}.cc-impact>strong{font-size:65px}.cc-impact-strike>strong{font-size:100px}.cc-board-foot .cc-survey-note{display:none}.cc-skip-board{margin-left:auto}.cc-break{flex-direction:column;gap:2px}.cc-countdown-number{font-size:65px}}
+@media(prefers-reduced-motion:reduce){.cc-event-effects *,.cc-countdown-panel *{animation:none!important;transition:none!important}}

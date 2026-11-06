@@ -1,0 +1,21 @@
+# Feud pacing and answer handling — v14
+
+The first briefing, face-off countdown, answer reveals, handoffs, board breaks, and runner preparation advance automatically. There is one shared three-second face-off countdown. The question stays hidden until both buzzers open. Old countdown clicks cannot reserve a buzzer. A representative chooses play/pass; the winning captain can change the two Fast Money runners before automatic casting ends.
+
+Cadence: a seven-second opening, three-second face-off/runner countdowns, 1.6-second survey judgement, five-second answer reveal/handoff, and twelve-second board reveal. Typed face-off answers get twenty seconds; team answers and steal discussion get thirty. These typing allowances are an online adaptation, not a claim that the spoken television show uses those clocks. Both Fast Money runners get thirty answer seconds, as requested, after the first-question read.
+
+Format references: [Family Feud's official site](https://www.familyfeud.com/) and the licensed live show's [published rules](https://familyfeudlive.com/FFL_USA.pdf). The live rules distinguish face-off, alternating teammates, three strikes/steal, and a two-runner finale. They explicitly describe spoken response timing and the normal twenty-/twenty-five-second finale. Councillion deliberately uses the requested thirty-second runs.
+
+The existing 200 historical survey boards and 1,255 scored answer groups retain their original scores. Recognition aliases add equivalent wording, not extra scored answers. Graveyard, burial ground, and cemetery identify the same survey group. Transcription aliases in capitals are ordinary words, so their spelling candidates remain available. Case folding changes the recognition copy only.
+
+`game-show-answer-matching.js` is an opt-in layer for show modes. It accepts known short names, initials of meaningful multiword phrases, and identifying partial names. Shared initials across different answer groups require a clearer response. Single-letter guesses, unrelated words, conflicting numbers, and arbitrary fragments do not get an answer. Every typed content word needs spelling or shortening evidence. Puffer/Daily's shared matcher and Final Figure's numerical parser are unchanged.
+
+Spelling suggestions appear privately after Enter. Enter again confirms the proposal; editing replaces it. This works for main boards and individual Fast Money questions. Confirmed words are stored canonically; an unconfirmed typo cannot be approved merely by letting the clock expire. Background saves cannot replace a sealed result, and a late autosave is ignored without falsely reporting a lost answer.
+
+Fast Money's private background receipts no longer rewrite the full public game or directory on each keystroke. Submissions have priority over queued autosaves; acknowledgements clear only their matching pending request. Inputs and avatar nodes stay mounted through ordinary phase/peer updates. Final-run isolation and the existing Google-authenticated room rules are preserved.
+
+At least two-thirds of active online contestants can vote to dismiss the whole current survey. Votes are idempotent and scoped to match, round, and board. Skipping awards no points, reveals the board, discards its unfinished bank, and draws another unused survey automatically. Skips do not consume a scoring round. Six players need four votes; ten need seven.
+
+Visuals use the existing pixel court, with crisp animated strikes, bank/score reveals, score count-up, and short countdown pulses. Reduced-motion settings are honored. The board is opaque so old painted scene details cannot look like extra answer slots.
+
+Validation covers existing court/Docket/moderation cases, spelling/shorthand collision checks over all survey boards, request queueing and late saves, automatic timers, skip quorum, a complete ten-bot match, and browser keyboard/layout checks for all 200 boards at four laptop sizes. The Firebase network rerun could not start: the official local database emulator exceeded its startup allowance, including a bounded-heap/CPU attempt. Existing rules were not changed; the prior Google room/rules tests remain the baseline. The new request behavior was exercised in the browser with real `CourtGameSession` code and delayed acknowledgements.
