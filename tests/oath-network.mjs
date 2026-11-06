@@ -1,3 +1,5 @@
+import {isGameAvailable} from '../game-availability.js';
+if(!isGameAvailable('oath')){await import('./game-availability-network.mjs');process.exit(0);}
 import {initializeTestEnvironment,assertFails} from '@firebase/rules-unit-testing';
 import * as sdk from 'firebase/database';
 import {readFile} from 'node:fs/promises';

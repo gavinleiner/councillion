@@ -1,0 +1,14 @@
+/* Native, limited-palette sprites: the same visual language as the Puffer judge. */
+.game-mascot{display:inline-block;object-fit:contain;image-rendering:pixelated;flex:none;vertical-align:middle;pointer-events:none}
+.game-title-lockup{display:flex;justify-content:center;align-items:center;gap:14px}
+.game-title-lockup>.game-mascot{width:.95em;height:.95em;animation:game-mascot-breathe 6.5s ease-in-out infinite;filter:drop-shadow(0 3px #062239)}
+.party-title .game-title-lockup{margin-top:0}
+.party-title .game-title-lockup>.game-mascot{width:1em;height:1em}
+.oa-coming-message>.game-mascot{width:96px;height:96px}
+@keyframes game-mascot-breathe{50%{translate:0 -3px;rotate:1deg}}
+@media(max-width:620px){.game-title-lockup{gap:9px}}
+body.reduced .game-mascot{animation:none!important}
+@media(prefers-reduced-motion:reduce){.game-mascot{animation:none!important}}
+/* Keep Clash's compact header clear of the fixed join desk on Chromebooks. */
+.cc-entry-heading .game-title-lockup{margin-bottom:6px}
+.cc-entry-heading>span{display:block;line-height:1}
