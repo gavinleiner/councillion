@@ -1,4 +1,5 @@
 import {readFile,writeFile} from 'node:fs/promises';
+import {COMING_SOON_GAMES} from '../game-availability.js';
 import {OWNER_EMAIL,VICE_PRESIDENT_EMAILS,PRESIDENT_EMAIL} from '../account-honors.js';
 const file=new URL('../database.rules.json',import.meta.url),data=JSON.parse(await readFile(file,'utf8')),r=data.rules;
 const google="auth !== null && auth.token.firebase.sign_in_provider === 'google.com'";
@@ -7,7 +8,10 @@ const vice=`${google} && auth.token.email_verified === true && (${VICE_PRESIDENT
 const president=`${google} && auth.token.email_verified === true && auth.token.email === '${PRESIDENT_EMAIL}'`;
 r.rooms['.read']=owner;
 r.rooms.$code['.write']=`${google} && ((!data.exists() && newData.child('meta/host').val() === auth.uid && newData.child('meta/version').val() === 3) || data.child('meta/host').val() === auth.uid || (${owner}))`;
-r.directory.$code['.write']=`${google} && (root.child('rooms').child($code).child('meta/host').val() === auth.uid || (${owner}))`;
+const roomAvailability=COMING_SOON_GAMES.flatMap(mode=>[`newData.child('meta/game').val() !== '${mode}'`,`newData.child('state/variant').val() !== '${mode}'`]);
+r.rooms.$code['.validate']="$code.matches(/^[A-Z]{4}$/) && newData.hasChildren(['meta','members','state'])"+(roomAvailability.length?' && '+roomAvailability.join(' && '):'');
+const directoryAvailability=COMING_SOON_GAMES.flatMap(mode=>[`newData.child('game').val() !== '${mode}'`,`root.child('rooms').child($code).child('meta/game').val() !== '${mode}'`]);
+r.directory.$code['.write']=`${google} && (root.child('rooms').child($code).child('meta/host').val() === auth.uid || (${owner}))`+(directoryAvailability.length?' && (!newData.exists() || ('+directoryAvailability.join(' && ')+'))':'');
 r.accountHonors={$uid:{'.read':google,'.write':`auth.uid === $uid && ((${owner}) || (${vice}) || (${president}))`,'.validate':`newData.hasChildren(['kind','title']) && (((${owner}) && newData.child('kind').val() === 'owner' && newData.child('title').val().matches(/^(super-admin|the-owner|final-authority)$/)) || ((${vice}) && newData.child('kind').val() === 'vice-president' && newData.child('title').val() === 'vice-president') || ((${president}) && newData.child('kind').val() === 'president' && newData.child('title').val() === 'pres'))`,$field:{'.validate':"$field.matches(/^(kind|title)$/)"}}};
 r.rankGrants={$uid:{'.read':google,'.write':owner,'.validate':"newData.hasChildren(['version','rank','at']) && newData.child('version').val() === 1 && newData.child('rank').val() === 'highest' && newData.child('at').isNumber() && newData.child('at').val() > 0 && newData.child('at').val() <= now + 5000",$field:{'.validate':"$field.matches(/^(version|rank|at)$/)"}}};
 const read=`${google} && (root.child('rooms').child($code).child('members').child(auth.uid).exists() && !root.child('rooms').child($code).child('bans').child(auth.uid).exists() || root.child('rooms').child($code).child('meta/host').val() === auth.uid)`;
