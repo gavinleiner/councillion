@@ -8,7 +8,7 @@ import {courtAppearance,courtSettings,validCourtSettings} from './court-games-se
 const clone=o=>JSON.parse(JSON.stringify(o)),values=o=>Object.values(o??{}),build=mode=>COURT_GAMES_BUILD+':'+mode;
 const loadCloud=()=>import('./cloud.bundle.js?v=20261024-open-v1');
 function normalizeState(state){
- state.players=values(state.players).map(p=>({...p,name:safeDisplayName(p.name)}));for(const field of ['teamScores','questionIds','history','faceoffPlayers','faceoffTried','fastIds','fastPlayers'])state[field]=values(state[field]);if(state.board)state.board.slots=values(state.board.slots);state.locked??={};
+ state.players=values(state.players).map(p=>({...p,name:safeDisplayName(p.name)}));for(const field of ['teamScores','questionIds','history','faceoffPlayers','faceoffTried','fastIds','fastPlayers'])state[field]=values(state[field]);if(state.board)state.board.slots=values(state.board.slots);if(state.variant==='docket'){for(const k of ['categoryIds','cells','finalRows','eligible','tied','finalOrder'])state[k]=values(state[k]);state.attempts??={};state.lockouts??={};if(state.result){state.result.scores=values(state.result.scores);state.result.winners=values(state.result.winners);}}state.locked??={};
  if(state.variant==='figure'&&state.roundResult)state.roundResult.rows=values(state.roundResult.rows).map(r=>({...r,guess:Number.isFinite(r.guess)?r.guess:null,error:Number.isFinite(r.error)?r.error:null}));return state;
 }
 
@@ -62,6 +62,7 @@ export class CourtGameSession{
   if(snapshot.state)this.state=normalizeState(snapshot.state);this.members=snapshot.members??this.members;
   const match=this.state?.matchId;this.secret={estimates:{},fast:{},fastDraft:{}};
   for(const [id,value]of Object.entries(snapshot.responses??{}))if(value.secret?.matchId===match){if(value.secret.estimate)this.secret.estimates[id]=value.secret.estimate;if(value.secret.fast)this.secret.fast[id]=values(value.secret.fast);if(value.secret.fastDraft)this.secret.fastDraft[id]={...value.secret.fastDraft,values:values(value.secret.fastDraft.values)};}
+  if(this.mode==='docket'){const referees=Object.values(snapshot.responses??{}).map(r=>r.secret).filter(r=>r?.matchId===match&&r.docketReferee).sort((a,b)=>(b.revision??0)-(a.revision??0));if(referees[0]){this.secret.docket=referees[0].docketReferee;this.secret.docket.doubles=values(this.secret.docket.doubles);this.secret.docket.tieIds=values(this.secret.docket.tieIds);this.secret.docket.wagers??={};this.secret.docket.answers??={};}}
   this.responses=snapshot.responses??{};
   const incoming=snap=>this.enqueue(()=>this.process(snap.key,snap.val()));this.hostUnsub=[this.c.onChildAdded(this.path('requests'),incoming),this.c.onChildChanged(this.path('requests'),incoming)];this.unsub.push(...this.hostUnsub);
   if(this.state?.deadline&&this.state.deadline<this.now())this.state.deadline=this.now()+5000;
@@ -85,6 +86,7 @@ export class CourtGameSession{
    const first=this.secret.fast?.[this.state.fastPlayers[0]];
    if(first)for(const id of Object.keys(this.members))if(id!==this.state.fastPlayers[1])extra['responses/'+id+'/fastAudience']={matchId:this.state.matchId,rows:this.state.fastIds.map((qid,i)=>({prompt:CLASH_BY_ID.get(qid).prompt,label:first[i].label,points:first[i].points}))};
   }
+  if(this.mode==='docket'&&this.secret.docket)extra['responses/'+this.uid+'/secret']={matchId:this.state.matchId,revision:this.state.revision,docketReferee:this.secret.docket};
   const changes={state:clone(this.state),'meta/phase':this.state.phase,...extra};await this.c.update(this.path(),changes);this.render();await this.publish();
  }
  async publish(){if(!this.host||this.closed)return;const path=this.c.ref(this.c.db,'directory/'+this.code);if(this.meta.isPrivate){await this.c.remove(path);return;}await this.c.onDisconnect(path).remove();return this.c.set(path,{protocol:4,catalogBuild:build(this.mode),mode:'court-game',game:this.mode,format:'classic',hostName:this.meta.hostName,count:this.state.players.filter(p=>p.connected&&!p.spectator).length,seats:GAME_MODES[this.mode].seats,phase:this.state.phase,updatedAt:this.c.serverTimestamp()});}
@@ -119,7 +121,7 @@ export class CourtGameSession{
     if(!['nice','close','clutch','ready'].includes(r.patch.reaction))throw Error('Choose a reaction.');
     if(this.now()-(this.lastReaction?.[uid]??0)<2500)throw Error('Give the reaction a moment.');this.lastReaction??={};this.lastReaction[uid]=this.now();this.state.reaction={id:crypto.randomUUID(),uid,type:r.patch.reaction,at:this.now()};this.state.revision++;
    }else if(r.type==='start'||r.type==='rematch'){
-    if(uid!==this.meta.host)throw Error('Only the host starts the game.');if(!['lobby','finish'].includes(this.state.stage))throw Error('The match is already running.');startCourtGame(this.state,this.now());this.secret={estimates:{},fast:{}};for(const id of Object.keys(this.members)){extra['responses/'+id+'/secret']=null;extra['responses/'+id+'/huddle']=null;extra['responses/'+id+'/fastAudience']=null;}
+    if(uid!==this.meta.host)throw Error('Only the host starts the game.');if(!['lobby','finish'].includes(this.state.stage))throw Error('The match is already running.');this.secret={estimates:{},fast:{}};startCourtGame(this.state,this.now(),Math.random,this.secret);for(const id of Object.keys(this.members)){extra['responses/'+id+'/secret']=null;extra['responses/'+id+'/huddle']=null;extra['responses/'+id+'/fastAudience']=null;}
    }else{
     if(r.patch?.matchId!==this.state.matchId||r.patch?.round!==this.state.round)throw Error('That action belongs to an earlier round.');
     result=actCourtGame(this.state,this.secret,uid,a,{...r.patch,text:r.text,timeout:false},this.now());
@@ -138,11 +140,11 @@ export class CourtGameSession{
   if(action==='fast'&&this.pending){const until=this.now()+3000;while(this.pending&&this.now()<until&&!this.closed)await new Promise(r=>setTimeout(r,30));}
   if(this.pending&&action==='react')return false;
   if(this.pending)throw Error('Your last action is still reaching the court.');
-  if(action==='answer')this.clearDraft();
+  if(action==='answer'||action==='docket-answer')this.clearDraft();
   if(action==='appearance')this.appearance=courtAppearance(extra.appearance);
   if(action==='fast'){this.queuedDraft=null;clearTimeout(this.draftRetry);}
   const id=crypto.randomUUID(),{text='',...patch}=extra;this.pending=true;this.render();
-  try{await this.c.set(this.path('requests/'+this.uid),{id,type:action==='start'?(this.state.stage==='finish'?'rematch':'start'):'ready',text:String(text).slice(0,256),patch:{...patch,action,matchId:this.state.matchId??'',round:this.state.round},at:this.now()});}catch(e){this.pending=false;this.render();throw e;}
+  try{await this.c.set(this.path('requests/'+this.uid),{id,type:action==='start'?(this.state.stage==='finish'?'rematch':'start'):'ready',text:String(text).slice(0,256),patch:{...patch,action,matchId:this.state.matchId??'',round:this.state.round,...(this.mode==='docket'?{stageAt:extra.stageAt??this.state.stageAt??0}:{})},at:this.now()});}catch(e){this.pending=false;this.render();throw e;}
  }
  setDraft(value){
   const turn=answerTurn(this.state);if(!turn||turn.uid!==this.uid||this.closed)return this.clearDraft();

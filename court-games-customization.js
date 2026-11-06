@@ -1,6 +1,6 @@
 import {COURT_PALETTES,COURT_TITLES,COURT_SEALS,COURT_VENUES,courtAppearance,courtSettings} from './court-games-settings.js';
 export {COURT_PALETTES,COURT_TITLES,COURT_SEALS,COURT_VENUES,courtAppearance,courtSettings,validCourtSettings} from './court-games-settings.js';
-import {buddySprite} from './party-view.js';
+import {buddySprite} from './party-buddy-sprite.js';
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 export function sealIcon(id='scales'){
  const paths={scales:'M8 2h2v2h5v2h-2v2h2v2h1v2h-6v-2h1V8h1V6h-2v8h3v2H5v-2h3V6H6v2h1v2h1v2H2v-2h1V8h2V6H3V4h5z',gavel:'M10 2h3v2h2v3h-2v2h-2l-1-1-5 5-2-2 5-5-1-1V3h3zM2 14h12v2H2z',quill:'M12 1h4v4h-2v3h-3v3H8v2H5v2H2v-3h2V9h2V6h3V3h3zM4 11h2v2H4z',anchor:'M7 1h3v2h1v3H9v6l2-1V9h4v4h-2v2h-3v1H6v-1H3v-2H1V9h4v2l2 1V6H5V3h2zM7 3v2h2V3z'};

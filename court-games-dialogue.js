@@ -4,6 +4,7 @@ import {CLASH_TIMING} from './court-games-engine.js';
 
 const values=o=>Object.values(o??{}),name=(s,id)=>s.players.find(p=>p.id===id)?.name??'Counsel';
 export function answerTurn(s){
+ if(s?.variant==='docket'){if(s.stage!=='docketAnswer'||!s.turn)return null;return {uid:s.turn,key:[s.matchId,s.round,s.stage,s.turn,s.stageAt].join(':'),since:s.turnOpenedAt??s.stageAt};}
  if(s?.variant!=='clash')return null;
  const uid=s.stage==='faceAnswer'?s.faceoffTurn:['control','steal'].includes(s.stage)?s.turn:null;
  if(!uid)return null;

@@ -6,14 +6,13 @@ import {mountCourtAmbience} from './party-ambience.js';
 import {activeOwnerEffect,OWNER_EFFECTS} from './party-admin.js';
 import {partyPack,tier} from './engine.js';
 import {tierSprite} from './sprites.js';
-import {detailedBuddySprite} from './party-buddy-art.js';
+import {BUDDIES,buddySprite} from './party-buddy-sprite.js';
 import {safeDisplayName,containsBlockedLanguage} from './moderation.js';
 import {emptyCareer,rankFor,TRACKERS,rosterKey as groupKey} from './party-career.js';
 import {nameBadges,textBanner} from './party-badges.js';
 import {AnswerConfirmation} from './answer-confirmation.js';
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-export const BUDDIES=[['krill','THE COUNSEL',10],['schooler','THE CLERK',30],['squid','THE ADVOCATE',60],['angler','DEEP COUNSEL',85],['evil','DEVIL’S ADVOCATE',100]];
-export function buddySprite(kind='krill'){return kind==='krill'?`<img class="counsel-buddy" src="assets/${globalThis.document?.body?.classList.contains('reduced')||globalThis.matchMedia?.('(prefers-reduced-motion: reduce)').matches?'counsel-krill-still.svg':'counsel-krill.svg'}?v=20261022" alt="Krill wearing a barrister wig">`:detailedBuddySprite(kind)||tierSprite(BUDDIES.find(b=>b[0]===kind)?.[2]??10,'party-buddy');}
+export {BUDDIES,buddySprite} from './party-buddy-sprite.js';
 export function partyAtmosphere(){return `<div class="court-atmosphere" aria-hidden="true"><canvas class="court-life"></canvas><i class="court-bubble" style="--bx:7%;--by:80%;--bd:19s;--bs:3px;--delay:-0s"></i><i class="court-bubble" style="--bx:12%;--by:40%;--bd:23s;--bs:2px;--delay:-2s"></i><i class="court-bubble" style="--bx:91%;--by:68%;--bd:26s;--bs:3px;--delay:-4s"></i><i class="court-bubble" style="--bx:84%;--by:48%;--bd:22s;--bs:2px;--delay:-6s"></i><i class="court-bubble" style="--bx:38%;--by:85%;--bd:28s;--bs:2px;--delay:-8s"></i><i class="court-bubble" style="--bx:63%;--by:91%;--bd:25s;--bs:2px;--delay:-10s"></i><i class="court-bubble" style="--bx:3%;--by:64%;--bd:21s;--bs:3px;--delay:-12s"></i><i class="court-bubble" style="--bx:96%;--by:30%;--bd:30s;--bs:2px;--delay:-14s"></i><i class="court-bubble" style="--bx:24%;--by:60%;--bd:27s;--bs:2px;--delay:-16s"></i><i class="court-bubble" style="--bx:74%;--by:71%;--bd:24s;--bs:2px;--delay:-18s"></i>${Array.from({length:12},(_,i)=>`<i class="court-mote" style="--mx:${6+(i*37)%89}%;--my:${18+(i*29)%76}%;--md:${19+i%5*3}s;--m-delay:${-i*2.7}s"></i>`).join('')}${[0,1,2].map(i=>`<svg class="court-fish school-${i}" viewBox="0 0 40 14" shape-rendering="crispEdges"><g fill="currentColor"><path d="M6 3h5v1h3v1h2v3h-3v2H7V9H4V7H1V4h3v2h1V4h1zM27 5h4v1h3v3h-3v2h-5V9h-2V7h-3V5h3v2h1V6h2z"/></g></svg>`).join('')}${Array.from({length:8},(_,i)=>`<i class="reef-glow" style="--gx:${[4,8,13,89,94,97,18,82][i]}%;--gy:${[52,78,90,87,63,39,95,94][i]}%;--gd:${9+i%4*3}s;--delay:${-i*2}s"></i>`).join('')}<span class="court-lamp left"></span><span class="court-lamp right"></span></div>`;}
 export function entryMarkup(name,connected,preferences={}){return `<section class="party-entry">${partyAtmosphere()}
 <a class="back" href="#home">◂ SURFACE</a>
