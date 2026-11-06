@@ -5,7 +5,7 @@ import {matchFeudAnswer,resolveFeudAnswer} from './court-games-feud-matching.js'
 import {CLASH_BOARDS,CLASH_BY_ID,FIGURE_QUESTIONS,FIGURE_BY_ID} from './court-games-data.js';
 import {courtSettings} from './court-games-settings.js';
 import {figureDeck} from './court-games-figure-deck.js';
-export const COURT_GAMES_BUILD='20261105-feud-flow-v14';
+export const COURT_GAMES_BUILD='20261105-docket-polish-v15';
 export const GAME_MODES={clash:{name:'Counsel Clash',subtitle:'TEAM FEUD',seats:10},figure:{name:'Final Figure',subtitle:'CLOSEST ANSWER WINS',seats:8},docket:{name:'The Docket',subtitle:'CHOOSE. BUZZ. WAGER.',seats:6}};
 export const CLASH_TIMING={briefing:7000,countdown:3000,buzz:20000,faceAnswer:20000,choice:12000,control:30000,steal:30000,survey:1600,handoff:5000,roundBreak:12000,fastCasting:15000,fastRun:30000};
 const live=s=>s.players.filter(p=>!p.spectator&&p.connected!==false);

@@ -40,3 +40,51 @@
 .dk-entry-counsel strong{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;padding:0 12px}.dk-nameplate [data-person-status]{max-width:150%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 
 .dk-controls>.dk-typing{position:relative;left:auto;top:auto;bottom:auto;translate:none;width:clamp(150px,30vw,330px);max-width:calc(100vw - 220px);min-height:36px;padding:6px 13px;margin:0;font-size:22px;line-height:1;text-align:left;text-overflow:clip;flex-shrink:0}.dk-controls>.dk-typing[hidden]{display:none}
+
+/* v15: the court fills the play viewport; art, avatars and stands share anchors. */
+.dk-match{position:relative;height:100dvh;min-height:480px!important;isolation:isolate;display:block}
+.dk-match>.dk-nav{position:absolute;inset:0 0 auto;background:#061b2bdc;backdrop-filter:none}
+.dk-match .dk-room{position:absolute;inset:0;display:block;overflow:hidden;padding:0;min-height:0}
+.dk-match .dk-stage{position:absolute;inset:0;width:100%;height:100%;max-width:none;min-width:0;aspect-ratio:auto;left:0;transform:none}
+.dk-match .dk-dock{position:absolute;inset:auto 0 0;min-height:68px;margin:0;padding:8px 16px;background:#061c2bf5;border-top:1px solid #6b98a45c}
+.dk-match .dk-connection:empty{display:none}
+.dk-match .dk-ribbon{top:55px;left:5%;right:5%}
+.dk-match .dk-board{top:18%;height:40.5%}
+.dk-match .dk-nameplate [data-person-status]{top:125%;font-size:clamp(9px,1cqw,12px)}
+.dk-buzz-lights{position:absolute;left:21.1%;top:18%;width:57.8%;height:40.5%;z-index:6;pointer-events:none;display:flex;justify-content:space-between}
+.dk-buzz-lights>i{width:9px;height:100%;background:repeating-linear-gradient(0deg,#163b4c 0 7px,#092635 7px 11px);border:1px solid #446c7955;transition:background .18s,box-shadow .18s}
+.dk-match[data-stage="docketBuzz"] .dk-buzz-lights>i{background:repeating-linear-gradient(0deg,#9be6ff 0 7px,#2b7dc7 7px 11px);border-color:#d1f6ff;box-shadow:0 0 12px #5bc5ff99,0 0 28px #3aafff33;animation:dk-blue-arrival .45s ease-out both}
+.dk-match[data-stage="docketBuzz"] .dk-clue{border-color:#83d9ff;box-shadow:inset 0 0 24px #228fe517,0 0 15px #389eee22}
+.dk-match[data-stage="docketBuzz"] .dk-clue>p{color:#a1e5ff;font-size:clamp(12px,1.35cqw,17px)}
+.dk-match[data-stage="docketBuzz"] .dk-contestant.can-buzz .dk-light{background:#66b6ef;box-shadow:0 0 12px #46afff55}
+.dk-match[data-stage="docketAnswer"] .is-active .dk-light{background:#d5f2ff;box-shadow:0 0 18px #69c5ff99}
+.dk-match[data-stage="docketAnswer"] .is-active .dk-nameplate>b{color:#c2ebff}
+.dk-clue:after{content:'';position:absolute;left:0;bottom:0;height:3px;width:100%;transform-origin:left;transform:scaleX(var(--read-progress));background:#d9bd75;opacity:0}
+.dk-match[data-stage="docketRead"] .dk-clue:after,.dk-match[data-stage="docketFinalRead"] .dk-clue:after{opacity:.85}
+.dk-buzzer-panel{display:flex;align-items:center;justify-content:center;gap:16px}
+.dk-buzzer-panel>span,.dk-buzzer-panel>small{font-size:13px;max-width:210px;color:#9ab8c5}
+.dk-buzzer-panel>span{letter-spacing:1px;color:#c5bc9a;text-align:right}
+.dk-buzzer-panel [data-act]{min-width:245px;touch-action:manipulation;user-select:none}
+.dk-match[data-stage="docketBuzz"] .dk-buzzer-panel [data-act]{background:#8cdbff;border-color:#d9f6ff;box-shadow:inset 0 2px #ffffff50,0 3px #0a365b,0 0 18px #4099e72a;color:#06253d}
+.dk-match[data-stage="docketRead"] .dk-buzzer-panel [data-act]{background:#193c50;border-color:#547687;color:#a1b4b8}
+.dk-grid .dk-column h3{animation:dk-cell-in .5s calc(var(--col)*65ms) both ease-out}
+.dk-grid .dk-column button:not(.used){animation:dk-cell-in .5s calc(var(--col)*45ms + var(--row)*35ms) both ease-out}
+.dk-verdict.correct:before{content:'✓';font-size:clamp(24px,3cqw,38px);color:#a8e1c6;animation:dk-seal-land .6s both ease-out}
+.dk-final-rows>div{border-left:2px solid #a57168}.dk-final-rows>div.correct{border-left-color:#8cd0b2}
+.dk-match .dk-host{top:34%}.dk-match .dk-host p{max-height:23vh;overflow:auto}
+@keyframes dk-blue-arrival{from{opacity:.3;filter:brightness(1.6)}to{opacity:1;filter:brightness(1)}}
+@keyframes dk-cell-in{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:translateY(0)}}
+@keyframes dk-seal-land{from{opacity:0;transform:scale(1.35)}to{opacity:1;transform:scale(1)}}
+@media(max-height:650px){.dk-match .dk-dock{min-height:62px;padding:7px 12px}.dk-match .dk-controls{min-height:42px}.dk-match .dk-host p{font-size:14px}.dk-match .dk-nameplate [data-person-status]{top:120%}}
+@media(max-width:850px){.dk-match .dk-controls{flex-wrap:nowrap}.dk-buzzer-panel>small{display:none}.dk-buzzer-panel{gap:10px}.dk-buzzer-panel [data-act]{min-width:210px}.dk-match .dk-controls form{flex-wrap:nowrap}.dk-match .dk-host{display:block}.dk-match .dk-host p{font-size:12px}.dk-match .dk-nav{padding:6px 10px!important}}
+@media(max-width:600px){.dk-match .dk-host{display:none}.dk-match .dk-board{left:13%;width:74%;top:19%;height:40%}.dk-match .dk-buzz-lights{left:10%;width:80%;top:19%;height:40%}.dk-buzzer-panel>span{display:none}.dk-match .dk-controls form{gap:4px}.dk-match .dk-controls input{width:100px}.dk-match .dk-controls select{width:75px;font-size:15px}.dk-match .dk-dock{min-height:76px}.dk-match .dk-controls>.dk-typing{max-width:100%;font-size:17px}.dk-match .dk-controls>span{font-size:14px}.dk-match .dk-nameplate>strong{font-size:9px}.dk-match .dk-nameplate>b{font-size:14px}}
+@media(prefers-reduced-motion:reduce){.dk-match .dk-buzz-lights>i,.dk-grid .dk-column h3,.dk-grid .dk-column button,.dk-verdict.correct:before{animation:none!important}.dk-buzz-lights>i{transition:none}}
+/* Text scales to the board's height as well as its width on short laptops. */
+.dk-match .dk-stage{container-type:size}
+.dk-match .dk-clue h2{font-size:clamp(20px,min(3cqw,4.8cqh),37px);flex-shrink:0}
+.dk-match .dk-clue.long-clue h2{font-size:clamp(19px,min(2.7cqw,4.1cqh),33px)}
+
+/* Clues stay readable across buzzer and correction updates. */
+.dk-match .dk-clue{animation:none}
+.dk-match .dk-nameplate>strong{display:flex;align-items:center;justify-content:center;gap:3px}
+.dk-match .dk-nameplate>strong>.cg-court-seal{width:11px;height:11px;flex-shrink:0}
