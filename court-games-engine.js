@@ -1,10 +1,11 @@
+import {startDocket,actDocket,tickDocket} from './docket-engine.js';
 import {shuffle} from './question-selection.js';
 import {matchAnswer,normalize,resolveAnswer} from './answer-matching.js';
 import {CLASH_BOARDS,CLASH_BY_ID,FIGURE_QUESTIONS,FIGURE_BY_ID} from './court-games-data.js';
 import {courtSettings} from './court-games-settings.js';
 import {figureDeck} from './court-games-figure-deck.js';
-export const COURT_GAMES_BUILD='20261105-figure-curated-v12';
-export const GAME_MODES={clash:{name:'Counsel Clash',subtitle:'TEAM FEUD',seats:10},figure:{name:'Final Figure',subtitle:'CLOSEST ANSWER WINS',seats:8}};
+export const COURT_GAMES_BUILD='20261105-docket-v13';
+export const GAME_MODES={clash:{name:'Counsel Clash',subtitle:'TEAM FEUD',seats:10},figure:{name:'Final Figure',subtitle:'CLOSEST ANSWER WINS',seats:8},docket:{name:'The Docket',subtitle:'CHOOSE. BUZZ. WAGER.',seats:6}};
 export const CLASH_TIMING={buzz:20000,faceAnswer:20000,choice:30000,control:30000,steal:40000,survey:1600,handoff:4200,roundBreak:45000};
 const live=s=>s.players.filter(p=>!p.spectator&&p.connected!==false);
 const team=(s,n)=>{const rows=live(s).filter(p=>p.team===n),online=rows.filter(p=>p.online!==false);return online.length?online:rows;};
@@ -12,7 +13,8 @@ const actor=(s,id)=>s.players.find(p=>p.id===id&&!p.spectator&&p.connected!==fal
 const emit=(s,type,text,now,extra={})=>{s.notice=text;s.event={id:++s.eventSerial,type,text,at:now,...extra};s.revision++;};
 const stage=(s,value,now,ms)=>{s.stage=value;s.phase=['roundResult','reveal','fastFirstReview','fastReview'].includes(value)?'burst':value==='finish'?'ended':value==='lobby'?'lobby':'playing';s.deadline=ms?now+ms:0;s.stageAt=now;if(['faceAnswer','control','steal'].includes(value))s.turnOpenedAt=now;};
 export function createCourtGame(mode,players=[],rng=Math.random){if(!GAME_MODES[mode])throw Error('Choose a game mode.');return {build:COURT_GAMES_BUILD,variant:mode,phase:'lobby',stage:'lobby',players:players.map(p=>({...p,score:0,team:p.team??0})),settings:{maxPlayers:GAME_MODES[mode].seats,...courtSettings(mode)},round:0,revision:0,eventSerial:0,teamScores:[0,0],deadline:0,notice:'Bring your friends. The court is assembling.',questionIds:[],locked:{},history:[]};}
-export function startCourtGame(s,now=Date.now(),rng=Math.random){
+export function startCourtGame(s,now=Date.now(),rng=Math.random,secret={}){
+ if(s.variant==='docket')return startDocket(s,secret,now,rng);
  const ready=s.players.filter(p=>p.ready&&p.connected!==false&&p.online!==false).slice(0,GAME_MODES[s.variant].seats);
  if(ready.length<2)throw Error('At least two ready players are needed.');
  if(s.players.some(p=>!p.spectator&&p.connected!==false&&p.online!==false&&!p.ready))throw Error('Wait for everyone in the room to ready up.');
@@ -74,6 +76,7 @@ function revealFigure(s,secret,now){
  s.advanceReady={};s.roundResult={answer:q.answer,unit:q.unit,...(q.scoringSpan?{scoringSpan:q.scoringSpan}:{}),explanation:q.explanation,source:q.source,sourceTitle:q.sourceTitle,leaders,rows:rows.sort((a,b)=>(a.error??Infinity)-(b.error??Infinity))};s.history.push({round:s.round,id:q.id,...s.roundResult});stage(s,'reveal',now,14000);emit(s,'reveal','Unseal the estimates. Closest counsel earns +200.',now);
 }
 export function actCourtGame(s,secret,uid,action,payload={},now=Date.now()){
+ if(s.variant==='docket')return actDocket(s,secret,uid,action,payload,now);
  const p=payload.timeout?s.players.find(p=>p.id===uid&&!p.spectator):actor(s,uid);if(!p)throw Error('Only players in this game can act.');
  if(s.deadline&&now>=s.deadline)throw Error('That timer has ended.');
  if(s.variant==='clash'&&action==='briefing-ready'){
@@ -167,6 +170,7 @@ function resolveBoardAnswer(s,uid,payload,now){
  return {accepted:true,found:valid,label:valid?answer.label:null};
 }
 export function tickCourtGame(s,secret,now=Date.now()){
+ if(s.variant==='docket')return tickDocket(s,secret,now);
  if(['lobby','finish'].includes(s.stage))return false;
  if(s.variant==='clash'&&s.stage==='briefing'&&live(s).filter(p=>p.online!==false).every(p=>s.briefingReady?.[p.id])){stage(s,'intro',now,5000);emit(s,'intro','Both benches are ready. Let’s open the case.',now);return true;}
  if(s.variant==='clash'&&s.stage==='roundRead'&&now-s.stageAt>=4500&&s.faceoffPlayers.every(id=>s.readReady?.[id])){openBuzzers(s,now);return true;}
