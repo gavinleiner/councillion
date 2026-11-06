@@ -1,5 +1,5 @@
 import {DOCKET_CATEGORIES,DOCKET_FINALS,DOCKET_TIES,DOCKET_BY_ID} from './docket-data.js';
-import {resolveAnswer} from './answer-matching.js';
+import {resolveShowAnswer} from './game-show-answer-matching.js';
 import {containsBlockedLanguage} from './moderation.js';
 import {shuffle} from './question-selection.js';
 
@@ -11,13 +11,15 @@ const allReady=s=>crew(s).length>0&&crew(s).every(p=>s.acknowledged?.[p.id]);
 const clearReady=s=>{s.acknowledged={};};
 const name=(s,id)=>s.players.find(p=>p.id===id)?.name??'Counsel';
 export const docketWagerMax=s=>Math.max(s.players.find(p=>p.id===s.turn)?.score??0,s.round===1?1000:2000);
+const responsePacks=new WeakMap();
 export function docketResponse(q,text){
- const pack={answers:[{label:q.answer,aliases:q.aliases??[]}],family:'trivia'};
+ if(!responsePacks.has(q))responsePacks.set(q,{answers:[{label:q.answer,aliases:q.aliases??[]}],family:'trivia'});
+ const pack=responsePacks.get(q);
  let clean=String(text??'').trim().replace(/\?+$/,'').trim(),result;
  // A player may type the question prefix even though the UI supplies one.
  // Test the real title first, so names such as What Is Love are preserved.
  for(let i=0;i<4;i++){
-  result=resolveAnswer(pack,clean);if(result.answer)return result;
+  result=resolveShowAnswer(pack,clean);if(result.answer)return result;
   const next=clean.replace(/^(?:(?:what|who|where)\s+(?:is|are|was|were)\s+|(?:what|who|where)['’]s\s+)/i,'').trim();
   if(next===clean)break;clean=next;
  }
@@ -52,7 +54,7 @@ export function startDocket(s,secret,now,rng=Math.random){
  clearReady(s);stage(s,'docketBriefing',now);tell(s,'briefing','Welcome to The Docket. Every counsel has a stand.',now);return true;
 }
 function selection(s,now){s.turn=null;s.attempts={};s.lockouts={};if(!crew(s).some(p=>p.id===s.selector))s.selector=crew(s)[0]?.id;stage(s,'docketBoard',now,45000);tell(s,'select',name(s,s.selector)+', choose a category and value.',now);}
-function reading(s,now){s.attempts={};s.lockouts={};stage(s,'docketRead',now,Math.min(24000,Math.max(5000,s.clue.prompt.split(/\s+/).length*450+1500)));tell(s,'read',s.clue.prompt,now);}
+function reading(s,now){s.attempts={};s.lockouts={};s.readOpenedAt=now;stage(s,'docketRead',now,Math.min(24000,Math.max(5000,s.clue.prompt.split(/\s+/).length*450+1500)));tell(s,'read',s.clue.prompt,now);}
 function buzz(s,now){s.turn=null;s.turnOpenedAt=now;s.buzzOpenedAt=now;stage(s,'docketBuzz',now,9000);tell(s,'buzz-open','Buzzers open.',now);}
 function show(s,secret,now,uid,text,correct,value){
  const q=DOCKET_BY_ID.get(s.clue.id),p=s.players.find(p=>p.id===uid);if(p)p.score+=correct?value:-value;
@@ -84,6 +86,7 @@ function tie(s,secret,now){
 export function actDocket(s,secret,uid,action,payload,now){
  const p=crew(s).find(p=>p.id===uid);if(!p)throw Error('Only active counsel can act.');
  if(action==='docket-buzz'&&s.stage==='docketAnswer'&&!s.clue.double&&payload.matchId===s.matchId&&payload.round===s.round&&payload.stageAt===s.buzzOpenedAt)return {lostBuzz:true};
+ if(action==='docket-buzz'&&s.stage==='docketBuzz'&&payload.matchId===s.matchId&&payload.round===s.round&&payload.stageAt===s.readOpenedAt){s.lockouts[uid]=now+500;s.revision++;return {early:true};}
  if(payload.matchId!==s.matchId||payload.round!==s.round||payload.stageAt!==s.stageAt)throw Error('That action belongs to an earlier turn.');
  if(s.deadline&&now>=s.deadline)throw Error('That timer has ended.');
  if(action==='docket-ready'&&['docketBriefing','docketBoardIntro','docketVerdict','docketBreak'].includes(s.stage)){ready(s,uid);return {accepted:true};}
@@ -100,9 +103,10 @@ export function actDocket(s,secret,uid,action,payload,now){
   throw Error('Wait for your wagering window.');
  }
  if(action==='docket-buzz'){
-  if(s.stage==='docketRead'&&!s.clue.double){s.lockouts[uid]=now+250;s.revision++;return {early:true};}
+  if(s.stage==='docketRead'&&!s.clue.double){s.lockouts[uid]=now+500;s.revision++;return {early:true};}
   if(s.stage!=='docketBuzz'||s.attempts[uid]||(s.clue.tiebreak&&!s.tied.includes(uid)))throw Error('Your buzzer is not open.');
-  if((s.lockouts[uid]??0)>now)return {early:true};
+  // Repeated early presses extend the penalty; mashing cannot pre-arm a buzz.
+  if((s.lockouts[uid]??0)>now){s.lockouts[uid]=now+500;s.revision++;return {early:true};}
   s.turn=uid;s.attempts[uid]=true;s.turnOpenedAt=now;stage(s,'docketAnswer',now,20000);tell(s,'buzz',name(s,uid)+', your response?',now);return {accepted:true};
  }
  if(action==='docket-answer'){

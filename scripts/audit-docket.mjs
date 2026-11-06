@@ -10,7 +10,7 @@ assert.equal(DOCKET_CATEGORIES.flatMap(c=>c.clues).length,500);assert.equal(DOCK
 for(const c of DOCKET_CATEGORIES)assert.equal(c.clues.length,5);
 for(const n of Object.values(families))assert.ok(n>=60&&n<=65);
 for(const q of questions){assert.ok(q.prompt.length<260);assert.match(q.source,/^https:\/\//);assert.equal(docketResponse(q,q.answer).answer?.label,q.answer);for(const alias of q.aliases)assert.equal(docketResponse(q,alias).answer?.label,q.answer);}
-const result={version:'20261105-docket-v13',boardClues:500,categories:100,finalClues:16,tiebreakClues:8,totalClues:524,families,questions:questions.map(q=>({...q,sha256:sha(JSON.stringify(q))}))};
-const file=new URL('../data-snapshots/court-games/docket-v13.json',import.meta.url),text=JSON.stringify(result,null,2)+'\n';
+const result={version:'20261105-docket-polish-v15',boardClues:500,categories:100,finalClues:16,tiebreakClues:8,totalClues:524,families,questions:questions.map(q=>({...q,sha256:sha(JSON.stringify(q))}))};
+const file=new URL('../data-snapshots/court-games/docket-v15.json',import.meta.url),text=JSON.stringify(result,null,2)+'\n';
 if(process.argv.includes('--write'))await writeFile(file,text);else assert.equal(await readFile(file,'utf8'),text,'Docket snapshot is stale. Review changes, then run --write.');
 console.log(JSON.stringify({board:500,categories:100,finals:16,tiebreakers:8,total:524,families}));

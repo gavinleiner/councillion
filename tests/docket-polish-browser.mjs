@@ -1,0 +1,50 @@
+import {chromium} from 'playwright-core';
+import {build} from 'esbuild';
+import http from 'node:http';
+import {readFile,writeFile,mkdir} from 'node:fs/promises';
+import {createReadStream} from 'node:fs';
+import {resolve,extname,sep} from 'node:path';
+import assert from 'node:assert/strict';
+const root=resolve(new URL('../',import.meta.url).pathname),out=resolve(root,'../../work/docket-polish-20261105');await mkdir(out,{recursive:true});
+const built=await build({entryPoints:[resolve(root,'tests/docket-polish-fixture.mjs')],bundle:true,write:false,format:'esm',platform:'browser',external:['./cloud.bundle.js*','./question-answers.bundle.js']});
+const sourceHtml=await readFile(resolve(root,'index.html'),'utf8'),assets=new Map();
+// Keep the local QA server's disk I/O out of the browser startup clock.
+// The production stylesheet set is unchanged; serve the same bytes from RAM.
+const warm=[...sourceHtml.matchAll(/href="([^"?]+\.css)/g)].map(m=>m[1]);warm.push('assets/vt323.ttf',...Array.from({length:6},(_,i)=>'assets/court-games/docket-'+(i+1)+'-podiums-v13.webp'));
+await Promise.all(warm.map(async path=>{assets.set(resolve(root,path),await readFile(resolve(root,path)));}));
+const mime={'.js':'text/javascript','.mjs':'text/javascript','.html':'text/html','.css':'text/css','.ttf':'font/ttf','.svg':'image/svg+xml','.webp':'image/webp','.png':'image/png'};
+const server=http.createServer(async(req,res)=>{try{const u=new URL(req.url,'http://localhost');res.setHeader('Cache-Control','no-store');
+ if(u.pathname==='/__docket-polish-test'){const html=sourceHtml.replace(/<script defer src="entrance.bundle.js[^"]*"><\/script>/,'').replace(/<script>if\(location.hostname[\s\S]*?<\/script>/,'').replace('</body>','<script type="module" src="/__fixture.mjs"></script></body>');res.setHeader('Content-Type','text/html');res.end(html);return;}
+ if(u.pathname==='/__fixture.mjs'){res.setHeader('Content-Type','text/javascript');res.end(built.outputFiles[0].contents);return;}
+ const path=resolve(root,'.'+u.pathname);if(!path.startsWith(root+sep))throw Error();res.setHeader('Content-Type',mime[extname(path)]??'application/octet-stream');if(assets.has(path)){res.end(assets.get(path));return;}createReadStream(path).on('error',()=>{res.statusCode=404;res.end();}).pipe(res);
+ }catch{res.statusCode=404;res.end();}});await new Promise(r=>server.listen(4179,'127.0.0.1',r));
+let browser;const errors=[],checks=[];
+try{
+ browser=await chromium.launch({executablePath:process.env.CHROME_PATH||'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',headless:true});
+ const p=await browser.newPage({viewport:{width:1366,height:650}});p.on('pageerror',e=>errors.push(e.message));await p.route('**/*',r=>/^http:\/\/(localhost|127\.0\.0\.1):/.test(r.request().url())?r.continue():r.abort());
+ await p.goto('http://localhost:4179/__docket-polish-test',{waitUntil:'commit',timeout:90000});await p.locator('.dk-match').waitFor({timeout:90000});await p.evaluate(()=>document.fonts.ready);await p.emulateMedia({reducedMotion:'reduce'});
+ for(const viewport of [{width:1366,height:650},{width:1280,height:600},{width:1024,height:600},{width:1440,height:900}]){
+  await p.setViewportSize(viewport);
+  for(let n=1;n<=6;n++){
+   await p.evaluate(n=>window.docketTest.make(n),n);await p.locator('.dk-scene').evaluate(e=>e.decode());
+   const layout=await p.evaluate(()=>{const r=document.querySelector('.dk-stage').getBoundingClientRect();return {stage:r.toJSON(),view:[innerWidth,innerHeight],overflow:document.documentElement.scrollWidth>innerWidth,feet:[...document.querySelectorAll('.dk-character')].map(el=>el.getBoundingClientRect().bottom),controls:document.querySelector('.dk-dock').getBoundingClientRect().toJSON()};});
+   assert.ok(Math.abs(layout.stage.width-viewport.width)<1);assert.ok(Math.abs(layout.stage.height-viewport.height)<1);assert.equal(layout.overflow,false);assert.equal(await p.locator('[data-person]').count(),n);
+   for(const foot of layout.feet)assert.ok(Math.abs(foot-viewport.height*.73)<1,'feet stay grounded');assert.ok(layout.controls.bottom<=viewport.height+1);checks.push({viewport,podiums:n});
+  }
+  const failures=await p.evaluate(async()=>{const f=window.docketTest;f.prepare();const {DOCKET_BY_ID}=await import('/docket-data.js'),fail=[];Object.assign(f.s,{stage:'docketAnswer',turn:'p0'});for(const q of DOCKET_BY_ID.values()){f.s.clue={id:q.id,prompt:q.prompt,category:q.category,value:1000};f.view.panelKey='';f.render();const card=document.querySelector('.dk-clue'),r=card.getBoundingClientRect(),h=card.querySelector('h2').getBoundingClientRect(),input=document.querySelector('[data-response]').getBoundingClientRect();if(card.scrollHeight>card.clientHeight+2||h.bottom>r.bottom||h.top<r.top||input.bottom>innerHeight+1)fail.push(q.id);}return fail;});assert.deepEqual(failures,[],JSON.stringify({viewport,failures}));
+ }
+ await p.setViewportSize({width:1366,height:650});await p.emulateMedia({reducedMotion:'no-preference'});await p.evaluate(()=>window.docketTest.prepare());
+ // A held key never sends a second signal when the board changes to blue.
+ await p.keyboard.down('Space');await p.waitForFunction(()=>!window.docketTest.session.pending);assert.equal(await p.evaluate(()=>window.docketTest.calls.length),1);
+ await p.evaluate(()=>{window.docketTest.due();window.docketTest.advance(600);});await p.keyboard.down('Space');await p.waitForTimeout(150);assert.equal(await p.evaluate(()=>window.docketTest.calls.length),1);await p.keyboard.up('Space');
+ assert.equal(await p.locator('.dk-match').getAttribute('data-stage'),'docketBuzz');const color=await p.locator('.dk-buzz-lights>i').first().evaluate(e=>getComputedStyle(e).backgroundImage);assert.match(color,/155, 230, 255/);await p.waitForTimeout(600);await p.screenshot({path:resolve(out,'blue-buzzer.png')});
+ await p.keyboard.press('Space');await p.waitForFunction(()=>window.docketTest.s.stage==='docketAnswer');assert.equal(await p.evaluate(()=>window.docketTest.s.turn),'p0');
+ // A press started while amber cannot win by releasing after blue.
+ await p.evaluate(()=>window.docketTest.prepare());const buzz=p.locator('[data-act=docket-buzz]');await buzz.hover();await p.mouse.down();await p.waitForFunction(()=>!window.docketTest.session.pending);await p.evaluate(()=>{window.docketTest.due();window.docketTest.advance(600);});await p.mouse.up();await p.waitForTimeout(150);assert.equal(await p.evaluate(()=>window.docketTest.s.stage),'docketBuzz');assert.equal(await p.evaluate(()=>window.docketTest.calls.length),1);
+ await p.locator('[data-act=docket-buzz]').click();await p.waitForFunction(()=>window.docketTest.s.stage==='docketAnswer');
+ const cdp=await p.context().newCDPSession(p);await cdp.send('Emulation.setCPUThrottlingRate',{rate:4});await p.locator('[data-response]').fill('Creper');await p.locator('[data-response]').press('ArrowLeft');
+ const stable=await p.evaluate(()=>{const f=window.docketTest,node=document.querySelector('[data-response]'),caret=node.selectionStart;for(let i=0;i<20;i++){f.s.players[1].score=i;f.render();}return {same:node===document.querySelector('[data-response]'),value:node.value,caret:node.selectionStart,expected:caret,suggestions:!!document.querySelector('[data-confirm]')};});assert.equal(stable.same,true);assert.equal(stable.value,'Creper');assert.equal(stable.caret,stable.expected);assert.equal(stable.suggestions,false);
+ await p.locator('[data-response]').focus();await p.keyboard.down('Enter');await p.locator('[data-confirm]').waitFor();await p.keyboard.down('Enter');await p.waitForTimeout(150);assert.equal(await p.evaluate(()=>window.docketTest.s.stage),'docketAnswer','held Enter cannot auto-confirm');await p.keyboard.up('Enter');assert.equal(await p.evaluate(()=>window.docketTest.s.stage),'docketAnswer');assert.match(await p.locator('.dk-correction').textContent(),/Creeper/);await p.screenshot({path:resolve(out,'post-enter-correction.png')});await p.locator('[data-confirm]').press('Enter');await p.waitForFunction(()=>window.docketTest.s.stage==='docketVerdict');assert.equal(await p.evaluate(()=>window.docketTest.s.verdict.correct),true);await cdp.send('Emulation.setCPUThrottlingRate',{rate:1});
+ await p.evaluate(()=>window.docketTest.prepare('small-screen-3'));await p.evaluate(()=>window.docketTest.due());await p.keyboard.press('Space');await p.waitForFunction(()=>window.docketTest.s.stage==='docketAnswer');await p.locator('[data-response]').fill('ST');await p.locator('[data-response]').press('Enter');await p.waitForFunction(()=>window.docketTest.s.stage==='docketVerdict');assert.equal(await p.evaluate(()=>window.docketTest.s.verdict.correct),true,'shorthand accepted through real session requests');
+ assert.deepEqual(errors,[]);await writeFile(resolve(out,'browser-verification.json'),JSON.stringify({checks,cluesPerViewport:524,fullViewport:true,heldKey:true,heldPointer:true,blueLights:true,postEnterCorrection:true,shorthand:true,input:stable,errors},null,2));console.log('PASS: full-viewport 1–6 podiums; all 524 clue layouts at four laptop sizes; visible blue lights; held keys/pointers cannot pre-arm; Enter correction and shorthand through actual session requests; stable typing at 4× CPU.');
+}catch(e){if(browser){const p=browser.contexts()[0]?.pages()[0];if(p){console.error((await p.locator('body').innerText()).slice(0,1800));await p.screenshot({path:resolve(out,'failure.png')}).catch(()=>{});}}throw e;}finally{await browser?.close();await new Promise(r=>server.close(r));}

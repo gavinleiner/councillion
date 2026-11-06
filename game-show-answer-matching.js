@@ -82,7 +82,12 @@ function phraseQuality(query,target){
  walk(0,new Set(),0);return best>=(missing ? .87 : .78)?best-(missing ? .07 : 0):0;
 }
 export function resolveShowAnswer(source,input){
- const pack=showAnswerPack(source),basic=resolveAnswer(pack,input);if(basic.status!=='missing')return basic;
+ const pack=showAnswerPack(source),literal=normalize(input),withoutArticle=String(input).replace(/^\s*(?:a|an|the)\s+/i,'');
+ // Articles add no identifying information. Test whole titles first, then
+ // accept an otherwise literal answer without forcing a typo confirmation.
+ const exact=pack.answers.filter(a=>[a.label,...a.aliases].some(t=>normalize(t)===literal||normalize(t)===normalize(withoutArticle)));
+ if(exact.length===1)return {status:'exact',answer:exact[0],choices:[]};
+ const basic=resolveAnswer(pack,input);if(basic.status!=='missing')return basic;
  const query=words(input);if(String(input).length>120||!query.length||normalize(input).length<4||source.excludedAnswers?.some(t=>normalize(t)===normalize(input)))return basic;
  const candidates=[];
  for(const answer of pack.answers){let score=0;for(const label of [answer.label,...answer.aliases])score=Math.max(score,phraseQuality(query,words(label)));if(score)candidates.push({answer,score});}
