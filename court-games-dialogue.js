@@ -46,16 +46,16 @@ export function hostCue(s,uid,now,liveAnswer,localCursor){
  if(stage==='roundResult')return {key:key('round:'+s.round),text:s.event.text};
  if(stage==='fastIntro')return {key:key('fast-intro'),text:'Fast Money! Choose two counsel. Five questions. Two runs. Get to '+(s.fastTarget??200)+'.'};
  if(s.fastPass===0&&uid===s.fastPlayers?.[1]&&['fastReady','fastRead','fast','fastFirstReview'].includes(stage))return {key:key('isolated'),text:'You’re in the quiet bench. Your partner’s answers stay sealed.',silent:true};
- if(stage==='fastReady')return {key:key('ready:'+s.fastPass),text:who(s.turn)+', your run starts after the countdown. '+(s.fastPass===0?'Thirty seconds. Your clock starts after the first question.':s.fast.total+' banked. Thirty seconds. Give different answers.')};
+ if(stage==='fastReady')return {key:key('ready:'+s.fastPass),text:who(s.turn)+', your run starts after the countdown. '+(s.fastPass===0?'Thirty-two seconds. Your clock starts after the first question.':s.fast.total+' banked. Thirty-two seconds. Give different answers.')};
  if(stage==='fastRead'||stage==='fast'){
   const cursor=stage==='fastRead'?0:localCursor??liveAnswer?.cursor??0;
   return {key:key('fast:'+s.fastPass+':'+cursor),text:CLASH_BY_ID.get(values(s.fastIds)[cursor])?.prompt??'Next question.'};
  }
  if(stage==='fastFirstReview'||stage==='fastReview'){
-  const second=stage==='fastReview',rows=second?values(s.fast?.rows):values(liveAnswer?.rows),elapsed=now-s.stageAt;
+  const second=stage==='fastReview',rows=second?values(s.fast?.rows):values(liveAnswer?.rows),elapsed=now-s.stageAt,revealAt=CLASH_TIMING.fastRevealStart+CLASH_TIMING.fastRevealScore;
   let total=second&&s.fastPass===1?rows.reduce((n,r)=>n+(values(r.answers)[0]?.points??0),0):0;
-  for(let j=0;j<rows.length;j++){if(elapsed>=1500+j*1700)total+=second?(values(rows[j].answers)[s.fastPass===1?1:0]?.points??0):(rows[j].points??0);if(total>=(s.fastTarget??200))return {key:key('fast-win:'+s.stageAt),text:'Case closed! '+total+' points!'};}
-  const i=Math.min(4,Math.floor((elapsed-1500)/1700));
+  for(let j=0;j<rows.length;j++){if(elapsed>=revealAt+j*CLASH_TIMING.fastRevealStep)total+=second?(values(rows[j].answers)[s.fastPass===1?1:0]?.points??0):(rows[j].points??0);if(total>=(s.fastTarget??200))return {key:key('fast-win:'+s.stageAt),text:'Case closed! '+total+' points!'};}
+  const i=Math.min(4,Math.floor((elapsed-revealAt)/CLASH_TIMING.fastRevealStep));
   if(i>=0){const row=rows[i],a=second?values(row?.answers)[s.fastPass===1?1:0]:row;if(a)return {key:key(stage+':'+s.stageAt+':'+i),text:a.points+' points!'};}
   return {key:key(stage+':'+s.stageAt),text:'Let’s see what the survey said.'};
  }
