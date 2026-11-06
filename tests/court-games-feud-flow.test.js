@@ -109,13 +109,13 @@ test('a late background autosave is harmless and cannot overwrite a sealed Fast 
  assert.throws(()=>send(c,runner,'fast-draft',{values,checkIndex:0,pass:0}),/earlier/,'an actual checked submission is not falsely acknowledged');
 });
 
-test('short main-game clocks preserve the full next turn after the abbreviated reveal',()=>{
+test('typing-friendly main clocks preserve the full next turn after the abbreviated reveal',()=>{
  const c=court();assert.equal(c.s.deadline-c.s.stageAt,4000);open(c);
- assert.equal(c.s.deadline-c.s.stageAt,8000);send(c,'p0','buzz');assert.equal(c.s.deadline-c.now,3000);
+ assert.equal(c.s.deadline-c.s.stageAt,8000);send(c,'p0','buzz');assert.equal(c.s.deadline-c.now,10000);
  const q=CLASH_BY_ID.get(c.s.board.id);send(c,'p0','answer',{text:q.answers[0].label});assert.equal(c.s.deadline-c.now,600);due(c);
  assert.equal(c.s.stage,'answerResult');assert.equal(c.s.deadline-c.now,900);due(c);assert.equal(c.s.stage,'choice');assert.equal(c.s.deadline-c.now,5000);
- send(c,'p0','choice',{pass:false});assert.equal(c.s.deadline-c.now,6000);
- for(let i=0;i<3;i++){send(c,c.s.turn,'answer',{text:'not a board answer'});due(c);assert.equal(c.s.stage,'answerResult');due(c);assert.equal(c.s.deadline-c.now,6000);}
+ send(c,'p0','choice',{pass:false});assert.equal(c.s.deadline-c.now,15000);
+ for(let i=0;i<3;i++){send(c,c.s.turn,'answer',{text:'not a board answer'});due(c);assert.equal(c.s.stage,'answerResult');due(c);assert.equal(c.s.deadline-c.now,15000);}
  assert.equal(c.s.stage,'steal');send(c,c.s.turn,'answer',{text:'not a board answer'});due(c);assert.equal(c.s.stage,'roundResult');assert.equal(c.s.deadline-c.now,2500);
 });
 test('the five-question finale has one shared 32-second clock and completes every score reveal before advancing',async()=>{

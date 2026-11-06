@@ -30,7 +30,7 @@ function make(n=10){view?.dispose();if(session){session.closed=true;clearInterva
 }
 function due(){now=s.deadline;E.tickCourtGame(s,secret,now);render();}
 function open(){while(['briefing','roundRead'].includes(s.stage))due();}
-function board(id='big-ears',phase='faceAnswer',n=10){make(n);open();const q=CLASH_BY_ID.get(id);Object.assign(s,{board:{id:q.id,prompt:q.prompt,slots:q.answers.map((_,index)=>({index,revealed:false}))},stage:phase,stageAt:now,turnOpenedAt:now,deadline:now+30000,faceoffTurn:'p0',turn:'p0',controlTeam:0,strikes:0,pot:0});view.centerKey=null;render();}
+function board(id='big-ears',phase='faceAnswer',n=10){make(n);open();const q=CLASH_BY_ID.get(id);Object.assign(s,{board:{id:q.id,prompt:q.prompt,slots:q.answers.map((_,index)=>({index,revealed:false}))},stage:phase,stageAt:now,turnOpenedAt:now,deadline:now+E.CLASH_TIMING[phase],faceoffTurn:'p0',turn:'p0',controlTeam:0,strikes:0,pot:0});view.centerKey=null;render();}
 function fast(){make(6);open();Object.assign(s,{stage:'roundResult',deadline:now+1,teamScores:[350,100]});due();due();due();due();s.fastIds[0]='big-ears';session.uid=s.turn;view.centerKey=null;render();}
 make();setInterval(()=>view.frame(),40);
 window.feudTest={get s(){return s;},get secret(){return secret;},get session(){return session;},get view(){return view;},get calls(){return calls;},boards:CLASH_BOARDS,make,board,fast,due,open,render,setNow:n=>{now=n;view.frame();},setLatency:n=>latency=n,act(uid,a,p={}){const result=E.actCourtGame(s,secret,uid,a,{matchId:s.matchId,round:s.round,...p},++now);render();return result;}};
