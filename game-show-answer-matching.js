@@ -41,6 +41,18 @@ const stops=new Set(['a','an','the','and','of','to','in','for','on','at','jr','s
 const words=value=>(String(value).normalize('NFKD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/['’]/g,'').match(/[a-z0-9]+/g)??[]).filter(w=>!stops.has(w));
 const digits=w=>w.flatMap(t=>t.match(/\d+/g)??[]).sort().join(',');
 const cache=new WeakMap();
+// Exact, identifying words may stand for a longer show answer. This is token
+// matching, never substring matching: PIT can identify PIT STOP; IT cannot.
+const genericFragments=new Set(['thing','things','stuff','person','people','someone','something','place','new','old','big','small','great','little','black','white','red','blue','green','yellow','north','south','east','west','world','war','game','games','movie','film','book','song','show','city','country','state','stop']);
+function identifyingFragment(pack,input){
+ const query=words(input);if(!query.length||query.some(w=>w.length<3)||query.every(w=>genericFragments.has(w)))return null;
+ const hits=pack.answers.filter(answer=>[answer.label,...answer.aliases].some(label=>{
+  const target=words(label);if(query.length>=target.length||!query.every(w=>target.includes(w)))return false;
+  const versions=target.filter(w=>/\d/.test(w)||/^(?:i{1,3}|iv|v|vi{1,3}|ix|x|xi{1,3}|xiv|xv|xx)$/.test(w));
+  return versions.every(w=>query.includes(w));
+ }));
+ return hits.length===1?hits[0]:null;
+}
 export function showAnswerPack(source){
  if(cache.has(source))return cache.get(source);
  const answers=source.answers.map(a=>({...a,aliases:[...(a.aliases??[])]})),owners=new Map(),proposals=new Map();
@@ -62,9 +74,27 @@ function quality(a,b,anchored=false){
  if(a===b)return 1;
  if(a.length>=2&&b.startsWith(a))return .88;
  if(Math.min(a.length,b.length)<(anchored?3:4))return 0;
- const budget=Math.min(a.length,b.length)<5?100:anchored?Math.min(a.length,b.length)<10?300:400:Math.min(a.length,b.length)<6?100:Math.min(a.length,b.length)<10?250:350;
+ // Sound-alike spellings need an independently correct word beside them.
+ // For example, "beuro investigation" still identifies the whole answer.
+ if(anchored&&Math.min(a.length,b.length)>=4&&a[0]===b[0]&&Math.abs(a.length-b.length)<=2&&sounds(a)===sounds(b))return .88;
+ const budget=Math.min(a.length,b.length)<5?100:anchored?Math.min(a.length,b.length)<10?300:400:Math.min(a.length,b.length)<6?100:Math.min(a.length,b.length)<8?250:Math.min(a.length,b.length)<12?350:450;
  const distance=typoDistance(a,b,budget),score=1-distance/(Math.max(a.length,b.length)*100);
- return distance<=budget&&score>=(anchored ? .60 : .72)?score:0;
+ const sameStart=a.slice(0,2)===b.slice(0,2)&&Math.min(a.length,b.length)>=8;
+ return distance<=budget&&score>=(anchored ? .60 : sameStart?.68:.72)?score:0;
+}
+function sounds(word){return word.replace(/^kn/,'n').replace(/^wr/,'r').replace(/ph/g,'f').replace(/ck|qu/g,'k').replace(/c(?=[eiy])/g,'s').replace(/c/g,'k').replace(/[aeiouy]+/g,'').replace(/(.)\1+/g,'$1');}
+function misspelledFragment(pack,query){
+ if(query.length!==1||query[0].length<5||genericFragments.has(query[0]))return null;
+ const candidates=[];
+ for(const answer of pack.answers){let score=0;
+  for(const label of [answer.label,...answer.aliases]){
+   const target=words(label);if(target.some(w=>/\d/.test(w)||/^(?:i{1,3}|iv|v|vi{1,3}|ix|x|xi{1,3}|xiv|xv|xx)$/.test(w)))continue;
+   for(const word of target)if(word.length>=5&&!genericFragments.has(word))score=Math.max(score,quality(query[0],word));
+  }
+  if(score>=.72||score>=.68&&query[0].length>=8)candidates.push({answer,score});
+ }
+ candidates.sort((a,b)=>b.score-a.score);
+ return candidates.length&&(!candidates[1]||candidates[0].score-candidates[1].score>=.08)?candidates[0].answer:null;
 }
 function phraseQuality(query,target){
  if(!query.length||query.length>target.length||target.length-query.length>1||digits(query)!==digits(target))return 0;
@@ -87,8 +117,11 @@ export function resolveShowAnswer(source,input){
  // accept an otherwise literal answer without forcing a typo confirmation.
  const exact=pack.answers.filter(a=>[a.label,...a.aliases].some(t=>normalize(t)===literal||normalize(t)===normalize(withoutArticle)));
  if(exact.length===1)return {status:'exact',answer:exact[0],choices:[]};
+ const fragment=source.excludedAnswers?.some(t=>normalize(t)===literal)?null:identifyingFragment(pack,input);
+ if(fragment)return {status:'exact',answer:fragment,choices:[],partial:true};
  const basic=resolveAnswer(pack,input);if(basic.status!=='missing')return basic;
  const query=words(input);if(String(input).length>120||!query.length||normalize(input).length<4||source.excludedAnswers?.some(t=>normalize(t)===normalize(input)))return basic;
+ const fragmentTypo=misspelledFragment(pack,query);if(fragmentTypo)return {status:'matched',answer:{...fragmentTypo,corrected:true},choices:[]};
  const candidates=[];
  for(const answer of pack.answers){let score=0;for(const label of [answer.label,...answer.aliases])score=Math.max(score,phraseQuality(query,words(label)));if(score)candidates.push({answer,score});}
  candidates.sort((a,b)=>b.score-a.score);
