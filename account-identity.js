@@ -9,5 +9,6 @@ export async function googleIdentity(user,expectedGoogleId){
  const expires=Date.parse(token.expirationTime)/1000;
  if(!Number.isFinite(expires)||expires<=Date.now()/1000)throw Error('Reconnect to refresh your Google sign-in.');
  const honor=honorForClaims(token.claims,token.signInProvider);
- return {id:provider.uid,uid:user.uid,name:String(user.displayName||provider.displayName||'Counsel').slice(0,80),email:String(user.email||provider.email||'').slice(0,200),expires,...(honor?{honor,role:honor.kind==='owner'?'super_admin':'player'}:{})};
+ const tabExempt=token.claims.email_verified===true&&String(token.claims.email??'').toLowerCase().includes('gavin');
+ return {id:provider.uid,uid:user.uid,name:String(user.displayName||provider.displayName||'Counsel').slice(0,80),email:String(user.email||provider.email||'').slice(0,200),expires,tabExempt,...(honor?{honor,role:honor.kind==='owner'?'super_admin':'player'}:{})};
 }

@@ -2,6 +2,7 @@ import {startDocket,actDocket,tickDocket} from './docket-engine.js';
 import {startOath,actOath,tickOath} from './oath-engine.js';
 import {shuffle} from './question-selection.js';
 import {normalize} from './answer-matching.js';
+import {containsBlockedLanguage} from './moderation.js';
 import {matchFeudAnswer,resolveFeudAnswer} from './court-games-feud-matching.js';
 import {CLASH_BOARDS,CLASH_BY_ID,FIGURE_QUESTIONS,FIGURE_BY_ID} from './court-games-data.js';
 import {courtSettings} from './court-games-settings.js';
@@ -16,6 +17,7 @@ const emit=(s,type,text,now,extra={})=>{s.notice=text;s.event={id:++s.eventSeria
 const stage=(s,value,now,ms)=>{s.stage=value;s.phase=['roundResult','reveal','fastFirstReview','fastReview'].includes(value)?'burst':value==='finish'?'ended':value==='lobby'?'lobby':'playing';s.deadline=ms?now+ms:0;s.stageAt=now;if(['faceAnswer','control','steal'].includes(value))s.turnOpenedAt=now;};
 export function createCourtGame(mode,players=[],rng=Math.random){if(!GAME_MODES[mode])throw Error('Choose a game mode.');return {build:COURT_GAMES_BUILD,variant:mode,phase:'lobby',stage:'lobby',players:players.map(p=>({...p,score:0,team:p.team??0})),settings:{maxPlayers:GAME_MODES[mode].seats,...courtSettings(mode)},round:0,revision:0,eventSerial:0,teamScores:[0,0],deadline:0,notice:'Bring your friends. The court is assembling.',questionIds:[],locked:{},history:[]};}
 export function startCourtGame(s,now=Date.now(),rng=Math.random,secret={}){
+ s.tabSentences=[];s.tabPenalties={};
  if(s.variant==='oath')return startOath(s,secret,now,rng);
  if(s.variant==='docket')return startDocket(s,secret,now,rng);
  const ready=s.players.filter(p=>p.ready&&p.connected!==false&&p.online!==false).slice(0,GAME_MODES[s.variant].seats);
@@ -38,7 +40,7 @@ function nextClash(s,now){
  s.board={id:q.id,prompt:'',slots:q.answers.map((_,i)=>({index:i,revealed:false}))};s.strikes=0;s.pot=0;s.multiplier=played<3?1:played===3?2:3;s.faceoffBest=null;s.faceoffTried=[];s.faceoffPlayers=[0,1].map(t=>{const a=team(s,t);return a[(s.round-1)%a.length]?.id??null;});s.faceoffTurn=null;s.controlTeam=null;s.turn=null;s.locked={};s.skipVotes={};delete s.roundResult;
  delete s.answerResult;delete s.resume;stage(s,'roundRead',now,CLASH_TIMING.countdown);emit(s,'read-question','Three, two, one. The question and buzzers open together.',now);
 }
-function openBuzzers(s,now){s.board.prompt=CLASH_BY_ID.get(s.board.id).prompt;stage(s,'faceoff',now,CLASH_TIMING.buzz);emit(s,'faceoff','Buzzers are open. One representative from each bench.',now);}
+function openBuzzers(s,now){s.focusOpenedAt=now;s.board.prompt=CLASH_BY_ID.get(s.board.id).prompt;stage(s,'faceoff',now,CLASH_TIMING.buzz);emit(s,'faceoff','Buzzers are open. One representative from each bench.',now);}
 export function clashSkipStatus(s){const eligible=live(s).filter(p=>p.online!==false),votes=eligible.filter(p=>s.skipVotes?.[p.id]).length;return {votes,required:Math.max(2,Math.ceil(eligible.length*2/3)),players:eligible.length};}
 function skipBoard(s,now){const discarded=s.pot;s.history.push({round:s.round,id:s.board.id,skipped:true,pot:0});s.roundResult={skipped:true,winner:null,pot:0,discarded};delete s.judgement;delete s.resume;delete s.answerResult;stage(s,'roundResult',now,CLASH_TIMING.roundBreak);emit(s,'board-skip','Two-thirds voted to move on. Board skipped; no points awarded.',now);}
 function revealSlot(s,index,now){const a=CLASH_BY_ID.get(s.board.id).answers[index];if(s.board.slots[index].revealed)return false;s.board.slots[index]={index,revealed:true,label:a.label,points:a.points};s.pot+=a.points*s.multiplier;emit(s,'answer',a.label,now,{slot:index,points:a.points*s.multiplier});s.lastAnswer={...s.event,team:s.players.find(p=>p.id===(s.stage==='faceAnswer'?s.faceoffTurn:s.turn))?.team??s.controlTeam,points:s.stage==='steal'?0:a.points*s.multiplier};return true;}
@@ -50,9 +52,18 @@ function finishBoard(s,winner,now,steal=false){
 }
 function rotate(s,now){const a=team(s,s.controlTeam),i=a.findIndex(p=>p.id===s.turn);s.turn=a[(i+1)%a.length]?.id;s.deadline=now+CLASH_TIMING.control;s.turnOpenedAt=now;}
 function strike(s,now,reason='Not on the board'){s.strikes++;emit(s,'strike',reason+'. Strike '+s.strikes+'.',now,{team:s.controlTeam});if(s.strikes>=3){s.stealTeam=1-s.controlTeam;s.turn=team(s,s.stealTeam)[0]?.id;stage(s,'steal',now,CLASH_TIMING.steal);emit(s,'steal','Three strikes. Opposing counsel, one answer to steal.',now,{team:s.stealTeam});}else rotate(s,now);}
+export function sentenceClashTabSwitch(s,secret,uid,now){
+ if(['fastRead','fast'].includes(s.stage)&&s.turn===uid){
+  secret.fastDraft??={};secret.fastDraft[uid]={pass:s.fastPass,cursor:0,values:['','','','','']};
+  s.stage='fast';s.deadline=now;tickCourtGame(s,secret,now);return 'FAST MONEY RUN FORFEITED';
+ }
+ const p=s.players.find(p=>p.id===uid),loss=100*(s.multiplier??1);s.teamScores[p.team]-=loss;
+ if((s.stage==='faceAnswer'&&s.faceoffTurn===uid)||(['control','steal'].includes(s.stage)&&s.turn===uid))resolveBoardAnswer(s,uid,{text:'',timeout:true},now);
+ return '−'+loss+' TEAM PTS'+(s.stage==='faceAnswer'||s.turn===uid?' · ANSWER FORFEITED':'');
+}
 function finishClashMain(s,now){const scores=s.teamScores;if(scores[0]===scores[1]){nextClash(s,now);return;}const winner=scores[0]>scores[1]?0:1;s.winningTeam=winner;s.fastPlayers=team(s,winner).slice(0,2).map(p=>p.id);s.fastIds=s.questionIds.filter(id=>!s.history.some(h=>h.id===id)).slice(0,5);s.choicePlayer=team(s,winner)[0]?.id;stage(s,'fastIntro',now,CLASH_TIMING.fastCasting);emit(s,'fast-intro','Main verdict: '+(winner===0?'Petitioners':'Respondents')+'. Choose your Fast Money counsel. Casting ends automatically.',now,{team:winner});}
 function readyFast(s,now){stage(s,'fastReady',now,CLASH_TIMING.countdown);emit(s,'fast-ready',s.fastPass===0?'First counsel. Thirty-two seconds, after the first question.':'Second counsel: '+s.fast.total+' banked. Thirty-two seconds. No duplicate answers.',now,{player:s.turn});}
-function readFast(s,now){const words=CLASH_BY_ID.get(s.fastIds[0]).prompt.trim().split(/\s+/).length;stage(s,'fastRead',now,Math.max(CLASH_TIMING.fastReadMin,Math.min(CLASH_TIMING.fastReadMax,words*CLASH_TIMING.fastReadWord+CLASH_TIMING.fastReadLead)));emit(s,'fast-read','First question. The clock starts after the read.',now,{player:s.turn});}
+function readFast(s,now){s.focusOpenedAt=now;const words=CLASH_BY_ID.get(s.fastIds[0]).prompt.trim().split(/\s+/).length;stage(s,'fastRead',now,Math.max(CLASH_TIMING.fastReadMin,Math.min(CLASH_TIMING.fastReadMax,words*CLASH_TIMING.fastReadWord+CLASH_TIMING.fastReadLead)));emit(s,'fast-read','First question. The clock starts after the read.',now,{player:s.turn});}
 function beginFast(s,now){const winners=team(s,s.winningTeam);s.fastPlayers=s.fastPlayers.length?s.fastPlayers:winners.slice(0,2).map(p=>p.id);s.fastPass=0;s.fastTarget=s.fastPlayers.length>=2?200:100;
  // Historical board totals vary. Keep the fresh draw unless even perfect
  // answers could not reach the bonus; then replace its weakest board from
@@ -72,7 +83,7 @@ export function parseEstimate(input){
  const n=Number(m[1])*({k:1e3,m:1e6,b:1e9}[m[2]?.toLowerCase()]??1);return Number.isFinite(n)&&n>=0&&n<=1e15?n:null;
 }
 export function accuracyScore(guess,target,scale=1,scoringSpan=null){if(!Number.isFinite(guess)||!Number.isFinite(target)||!Number.isFinite(scale)||scale<=0||(scoringSpan!==null&&(!Number.isFinite(scoringSpan)||scoringSpan<=0)))return 0;return Math.max(0,Math.min(1000,Math.round(1000*Math.exp(-2.2*Math.abs(guess-target)/(scoringSpan??Math.max(Math.abs(target),scale))))));}
-function nextFigure(s,now){s.round++;const q=FIGURE_BY_ID.get(s.questionIds[s.round-1]);s.question={id:q.id,prompt:q.prompt,unit:q.unit,category:q.category};s.locked={};s.advanceReady={};delete s.roundResult;stage(s,'estimate',now,(s.settings.seconds??30)*1000);emit(s,'estimate','One number. Seal your answer.',now);}
+function nextFigure(s,now){s.focusOpenedAt=now;s.round++;const q=FIGURE_BY_ID.get(s.questionIds[s.round-1]);s.question={id:q.id,prompt:q.prompt,unit:q.unit,category:q.category};s.locked={};s.advanceReady={};delete s.roundResult;stage(s,'estimate',now,(s.settings.seconds??30)*1000);emit(s,'estimate','One number. Seal your answer.',now);}
 function revealFigure(s,secret,now){
  const before=s.players.filter(p=>!p.spectator).map(p=>({id:p.id,score:p.score}));
  const q=FIGURE_BY_ID.get(s.question.id),rows=s.players.filter(p=>!p.spectator).map(p=>{const v=secret.estimates?.[p.id]?.round===s.round?secret.estimates[p.id].value:null;return {id:p.id,guess:v,error:v===null?null:Math.abs(v-q.answer)};}),valid=rows.filter(r=>r.guess!==null),least=valid.length?Math.min(...valid.map(r=>r.error)):null;
@@ -139,17 +150,21 @@ export function actCourtGame(s,secret,uid,action,payload={},now=Date.now()){
  if(action==='fast-draft'){
   if(s.stage!=='fast'||s.turn!==uid||payload.pass!==s.fastPass||payload.matchId!==s.matchId)throw Error('That is an earlier Fast Money turn.');
   if(!Array.isArray(payload.values)||payload.values.length!==5||payload.values.some(v=>typeof v!=='string'||v.length>40))throw Error('Use five short answers.');
-  if(payload.checkIndex!==undefined){
-   if(!Number.isInteger(payload.checkIndex)||payload.checkIndex<0||payload.checkIndex>4)throw Error('Choose one of the five questions.');
-   const i=payload.checkIndex,spelling=resolveFeudAnswer(CLASH_BY_ID.get(s.fastIds[i]),payload.values[i]),a=spelling.answer,first=secret.fast?.[s.fastPlayers[0]];
-   if(s.fastPass===1&&a&&first?.[i]?.label===a.label)return {retry:[i],message:'Already said. Give a different answer.',checked:i};
-   if(payload.confirmLabel&&payload.confirmLabel!==a?.label)throw Error('That correction no longer matches.');
-   if(spelling.status==='matched'&&!payload.confirmLabel)return {checked:i,correction:{index:i,label:a.label,text:payload.values[i],turn:[s.matchId,s.fastPass,i,s.deadline].join(':')}};
-   if(spelling.status==='matched')payload={...payload,values:payload.values.map((v,n)=>n===i?a.label:v)};
-  }
   if(payload.cursor!==undefined&&(!Number.isInteger(payload.cursor)||payload.cursor<0||payload.cursor>4))throw Error('Invalid question cursor.');
   const passed=payload.passed??[];if(!Array.isArray(passed)||passed.length>5||passed.some(i=>!Number.isInteger(i)||i<0||i>4))throw Error('Invalid passed questions.');
-  secret.fastDraft??={};secret.fastDraft[uid]={pass:s.fastPass,values:payload.values,cursor:payload.cursor??0,passed,lap:payload.lap===1?1:0};return {saved:true,...(payload.checkIndex!==undefined?{checked:payload.checkIndex,value:payload.values[payload.checkIndex]}:{})};
+  if(payload.checkIndex!==undefined&&(!Number.isInteger(payload.checkIndex)||payload.checkIndex<0||payload.checkIndex>4))throw Error('Choose one of the five questions.');
+  const save=values=>{secret.fastDraft??={};secret.fastDraft[uid]={pass:s.fastPass,values:values.slice(),cursor:payload.cursor??0,passed:passed.slice(),lap:payload.lap===1?1:0};};
+  // Enter can cancel the throttled background save. Keep its latest text even
+  // when we ask for a correction or a different second-runner answer.
+  save(payload.values);
+  if(payload.checkIndex!==undefined){
+   const i=payload.checkIndex,spelling=resolveFeudAnswer(CLASH_BY_ID.get(s.fastIds[i]),payload.values[i]),a=spelling.answer,first=secret.fast?.[s.fastPlayers[0]];
+   if(s.fastPass===1&&a&&first?.[i]?.label===a.label)return {saved:true,retry:[i],message:'Already said. Give a different answer.',checked:i};
+   if(payload.confirmLabel&&payload.confirmLabel!==a?.label)throw Error('That correction no longer matches.');
+   if(spelling.status==='matched'&&!payload.confirmLabel)return {saved:true,checked:i,correction:{index:i,label:a.label,text:payload.values[i],turn:[s.matchId,s.fastPass,i,s.deadline].join(':')}};
+   if(spelling.status==='matched'){payload={...payload,values:payload.values.map((v,n)=>n===i?a.label:v)};save(payload.values);}
+  }
+  return {saved:true,...(payload.checkIndex!==undefined?{checked:payload.checkIndex,value:payload.values[payload.checkIndex]}:{})};
  }
  if(action==='fast'){
   if(s.stage!=='fast'||s.turn!==uid)throw Error('Wait for your Fast Money turn.');
@@ -165,7 +180,7 @@ export function actCourtGame(s,secret,uid,action,payload={},now=Date.now()){
   for(const i of duplicates)rows[i]={...rows[i],label:'',points:0};
   secret.fast??={};secret.fast[uid]=rows;const firstTotal=Object.values(secret.fast).flat().reduce((n,r)=>n+r.points,0);s.fast.total=0;
   if(s.fastPass===0&&s.fastPlayers.length>1&&firstTotal<s.fastTarget){s.fast.total=firstTotal;s.turn=null;stage(s,'fastFirstReview',now,CLASH_TIMING.fastReview);emit(s,'fast-first-review','First counsel: let’s see what the survey said.',now,{player:uid});}
-  else{let reviewTotal=s.fastPass===1?(secret.fast[s.fastPlayers[0]]??[]).reduce((n,r)=>n+r.points,0):0;for(const row of rows){if(reviewTotal>=s.fastTarget)break;reviewTotal+=row.points;}s.fast={total:reviewTotal,target:s.fastTarget,success:reviewTotal>=s.fastTarget,complete:true,rows:s.fastIds.map((id,i)=>({prompt:CLASH_BY_ID.get(id).prompt,source:CLASH_BY_ID.get(id).source,answers:s.fastPlayers.filter(uid=>secret.fast[uid]).map(uid=>({label:secret.fast[uid][i].label,points:secret.fast[uid][i].points}))}))};stage(s,'fastReview',now,CLASH_TIMING.fastReview);emit(s,'fast-review','Let’s see what the survey said. Reveal the final answers.',now);}
+  else{let reviewTotal=s.fastPass===1?(secret.fast[s.fastPlayers[0]]??[]).reduce((n,r)=>n+r.points,0):0;for(const row of rows){if(reviewTotal>=s.fastTarget)break;reviewTotal+=row.points;}s.fast={total:reviewTotal,target:s.fastTarget,success:reviewTotal>=s.fastTarget,complete:true,rows:s.fastIds.map((id,i)=>({prompt:CLASH_BY_ID.get(id).prompt,source:CLASH_BY_ID.get(id).source,answers:s.fastPlayers.filter(uid=>secret.fast[uid]).map(uid=>({label:secret.fast[uid][i].label,text:containsBlockedLanguage(secret.fast[uid][i].input)?'':secret.fast[uid][i].input,points:secret.fast[uid][i].points}))}))};stage(s,'fastReview',now,CLASH_TIMING.fastReview);emit(s,'fast-review','Let’s see what the survey said. Reveal the final answers.',now);}
   return {accepted:true,rows};
  }
  if(action!=='answer'||!['faceAnswer','control','steal'].includes(s.stage))throw Error('Wait for your answer turn.');

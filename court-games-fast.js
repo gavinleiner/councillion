@@ -12,7 +12,7 @@ export function fastRevealPlan(rows,{second=false,target=200}={}){
 }
 function revealRows(rows,second=false,animated=false,target=200){
  const plan=fastRevealPlan(rows,{second,target});
- return plan.rows.map((r,i)=>`<div class="cg-fast-result" style="--i:${i}"><h3>${esc(r.prompt)}${r.source?` <a class="cg-fast-source" href="${esc(r.source)}" target="_blank" rel="noopener noreferrer" aria-label="Board source">↗</a>`:''}</h3><div>${r.answers.map((a,j)=>{const old=second&&j===0,show=old||!animated||r.show;if(!show)return '<p class="cg-fast-not-needed">VERDICT REACHED</p>';return `<p class="cg-survey-reveal ${old?'is-banked':''}" ${animated&&!old?`data-answer-ms="${r.answerAt}" data-reveal-ms="${r.pointsAt}" data-points="${a.points}"`:''}><span>${esc(a.label||'No board answer')}</span><b>${a.points}</b></p>`;}).join('')}</div></div>`).join('');
+ return plan.rows.map((r,i)=>`<div class="cg-fast-result" style="--i:${i}"><h3>${esc(r.prompt)}${r.source?` <a class="cg-fast-source" href="${esc(r.source)}" target="_blank" rel="noopener noreferrer" aria-label="Board source">↗</a>`:''}</h3><div>${r.answers.map((a,j)=>{const old=second&&j===0,show=old||!animated||r.show;if(!show)return '<p class="cg-fast-not-needed">VERDICT REACHED</p>';return `<p class="cg-survey-reveal ${old?'is-banked':''}" ${animated&&!old?`data-answer-ms="${r.answerAt}" data-reveal-ms="${r.pointsAt}" data-points="${a.points}"`:''}><span>${esc(a.label||a.text||'No response')}</span><b>${a.points}</b></p>`;}).join('')}</div></div>`).join('');
 }
 export function fastScene(s,uid,session){
  if(s.stage==='fastIntro')return `<section class="cg-fast-card cg-fast-casting"><p class="cg-eyebrow">${teams[s.winningTeam]} WIN THE MAIN GAME</p><h2>FAST MONEY</h2><p>Choose two counsel to finish the case.<br>Five questions. ${CLASH_TIMING.fastRun/1000} seconds per runner. Get to 200.</p><div class="cg-runner-choices">${s.players.filter(p=>p.team===s.winningTeam&&!p.spectator&&p.connected!==false).map(p=>`<button type="button" data-runner="${esc(p.id)}" ${uid!==s.choicePlayer?'disabled':''} aria-pressed="${s.fastPlayers?.includes(p.id)}">${buddySprite(p.buddy)}<strong>${esc(p.name)}</strong></button>`).join('')}</div><p class="cg-small">Starting automatically in <b data-cc-countdown>${CLASH_TIMING.fastCasting/1000}</b>s. Your captain can change the runners.</p>${uid===s.choicePlayer?'<button class="cg-secondary" data-game-action="fast-start">USE THESE RUNNERS ▸</button>':''}</section>`;
@@ -58,6 +58,7 @@ export class FastRun{
     else if(result.saved){const i=this.waiting;this.values[i]=result.value??this.values[i];this.waiting=undefined;this.form.querySelector('.cg-fast-feedback').textContent='';this.submit.textContent='NEXT ▸';this.advance();}
    }
   }
+  if(this.finishing&&!session.pending&&session.lastAck!==this.finishAck&&session.lastResult?.error){this.finishing=false;this.onError(Error(session.lastResult.error));}
   if(this.finishing&&!session.pending&&session.lastResult?.retry?.length){this.finishing=false;this.cursor=session.lastResult.retry[0];this.passed=vals(session.lastResult.retry);this.lap=1;this.paint();this.form.querySelector('.cg-fast-feedback').textContent='ALREADY SAID. TRY ANOTHER.';}
   const disabled=this.waiting!==undefined||this.finishing||this.queuedStep!==undefined;this.submit.disabled=disabled;this.skip.disabled=disabled;this.input.readOnly=!!disabled;
  }
@@ -66,7 +67,7 @@ export class FastRun{
   else{this.passed=this.passed.filter(i=>i!==this.cursor);if(this.passed.length)this.cursor=this.passed[0];else return this.finish();}
   this.paint();this.save();
  }
- finish(){this.finishing=true;this.form.querySelector('.cg-fast-feedback').textContent='ANSWERS SEALED.';this.submit.disabled=true;this.skip.disabled=true;this.session.request('fast',{values:this.values.slice(),pass:this.pass,matchId:this.match}).catch(e=>{this.finishing=false;this.onError(e);});}
+ finish(){this.finishAck=this.session.lastAck;this.finishing=true;this.form.querySelector('.cg-fast-feedback').textContent='ANSWERS SEALED.';this.submit.disabled=true;this.skip.disabled=true;this.session.request('fast',{values:this.values.slice(),pass:this.pass,matchId:this.match}).catch(e=>{this.finishing=false;this.onError(e);});}
  paint(){
   this.input.id='fast'+this.cursor;this.input.name='fast'+this.cursor;this.input.value=this.values[this.cursor];this.form.querySelector('label').htmlFor=this.input.id;
   this.form.querySelector('.cg-fast-prompt').textContent=CLASH_BY_ID.get(this.ids[this.cursor]).prompt;

@@ -100,7 +100,7 @@ test('a new referee waits for private answers before expiring a round',async()=>
 test('Fast Money validates one answer without revealing the first runner and preserves passed-question progress',()=>{
  const {s,secret}=game();s.stage='roundResult';s.deadline=5000;s.teamScores=[350,100];s.round=4;tickCourtGame(s,secret,5000);actCourtGame(s,secret,'p0','fast-start',{},5100);fastReady(s,secret);
  const first=s.fastIds.map(id=>CLASH_BY_ID.get(id).answers[1].label);actCourtGame(s,secret,'p0','fast',{values:first,pass:0,matchId:s.matchId},5200);assert.equal(s.stage,'fastFirstReview');assert.ok(!JSON.stringify(s).includes('"input"'));tickCourtGame(s,secret,s.deadline);fastReady(s,secret);
- const duplicate=actCourtGame(s,secret,s.turn,'fast-draft',{values:first,pass:1,checkIndex:0,cursor:0,passed:[],lap:0,matchId:s.matchId},s.stageAt+1);assert.deepEqual(duplicate.retry,[0]);assert.equal(secret.fastDraft?.[s.turn],undefined);
+ const duplicate=actCourtGame(s,secret,s.turn,'fast-draft',{values:first,pass:1,checkIndex:0,cursor:0,passed:[],lap:0,matchId:s.matchId},s.stageAt+1);assert.deepEqual(duplicate.retry,[0]);assert.deepEqual(secret.fastDraft[s.turn].values,first);assert.equal(duplicate.saved,true);
  const values=first.map((_,i)=>i===0?CLASH_BY_ID.get(s.fastIds[0]).answers[0].label:'');const receipt=actCourtGame(s,secret,s.turn,'fast-draft',{values,pass:1,checkIndex:0,cursor:0,passed:[2,3],lap:1,matchId:s.matchId},s.stageAt+2);assert.equal(receipt.checked,0);assert.equal(receipt.saved,true);assert.deepEqual(secret.fastDraft[s.turn].passed,[2,3]);assert.equal(secret.fastDraft[s.turn].lap,1);
 });
 

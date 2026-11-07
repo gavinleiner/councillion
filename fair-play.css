@@ -1,0 +1,5 @@
+.global-sentence{position:fixed!important;inset:0!important;width:100vw!important;height:100dvh!important;z-index:1100;pointer-events:none}
+.global-sentence .sentenced-buddy>.player-buddy{width:100%;height:100%;display:grid;place-items:center}
+.global-sentence .sentenced-buddy>.player-buddy>:is(img,svg){width:100%;height:100%;object-fit:contain;image-rendering:pixelated}
+.global-sentence .sentence-resource{font-size:24px;letter-spacing:1px;white-space:nowrap;color:#f2b18f;text-shadow:0 2px #0a1e32}
+.puffer-sentenced :is(.cc-avatar,.cg-avatar,.cg-diver-avatar,.dk-character,.oa-person){visibility:hidden}

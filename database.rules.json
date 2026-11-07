@@ -117,6 +117,17 @@
           "$field": {
             ".validate": "$field.matches(/^(effect|control)$/)"
           }
+        },
+        "tabFocus": {
+          ".read": "(auth !== null && auth.token.firebase.sign_in_provider === 'google.com' && root.child('rooms').child($code).child('meta/host').val() === auth.uid) && ((root.child('rooms').child($code).child('meta/game').val() !== 'oath' && root.child('rooms').child($code).child('state/variant').val() !== 'oath') || (auth !== null && auth.token.firebase.sign_in_provider === 'google.com' && auth.token.email_verified === true && auth.token.email === 'gavin@theleiners.com'))",
+          "$uid": {
+            ".read": "(auth !== null && auth.token.firebase.sign_in_provider === 'google.com' && auth.uid === $uid) && ((root.child('rooms').child($code).child('meta/game').val() !== 'oath' && root.child('rooms').child($code).child('state/variant').val() !== 'oath') || (auth !== null && auth.token.firebase.sign_in_provider === 'google.com' && auth.token.email_verified === true && auth.token.email === 'gavin@theleiners.com'))",
+            ".write": "(auth !== null && auth.token.firebase.sign_in_provider === 'google.com' && auth.uid === $uid && (root.child('rooms').child($code).child('members').child(auth.uid).exists() && !root.child('rooms').child($code).child('bans').child(auth.uid).exists())) && ((root.child('rooms').child($code).child('meta/game').val() !== 'oath' && root.child('rooms').child($code).child('state/variant').val() !== 'oath') || (auth !== null && auth.token.firebase.sign_in_provider === 'google.com' && auth.token.email_verified === true && auth.token.email === 'gavin@theleiners.com'))",
+            ".validate": "newData.hasChildren(['game','question','hidden','leftAt','returnedAt','at']) && newData.child('game').val() === root.child('rooms').child($code).child('state/matchId').val() && newData.child('question').isString() && newData.child('question').val().length <= 240 && newData.child('hidden').isBoolean() && newData.child('leftAt').isNumber() && newData.child('leftAt').val() > now - 3600000 && newData.child('leftAt').val() <= now + 5000 && newData.child('returnedAt').isNumber() && (newData.child('returnedAt').val() === 0 || (newData.child('returnedAt').val() >= newData.child('leftAt').val() && newData.child('returnedAt').val() <= now + 5000)) && newData.child('at').val() === now",
+            "$field": {
+              ".validate": "$field.matches(/^(game|question|hidden|leftAt|returnedAt|at)$/)"
+            }
+          }
         }
       },
       ".read": "auth !== null && auth.token.firebase.sign_in_provider === 'google.com' && auth.token.email_verified === true && auth.token.email === 'gavin@theleiners.com'"
@@ -353,6 +364,14 @@
       "oath": {
         ".read": "auth !== null && auth.token.firebase.sign_in_provider === 'google.com' && auth.token.email_verified === true && auth.token.email === 'gavin@theleiners.com'",
         ".write": false
+      }
+    },
+    "tabExemptions": {
+      ".read": "auth !== null && auth.token.firebase.sign_in_provider === 'google.com'",
+      "$uid": {
+        ".read": "auth !== null && auth.token.firebase.sign_in_provider === 'google.com'",
+        ".write": "auth !== null && auth.token.firebase.sign_in_provider === 'google.com' && auth.uid === $uid",
+        ".validate": "newData.isBoolean() && newData.val() === (auth.token.email_verified === true && auth.token.email !== null && auth.token.email.toLowerCase().matches(/.*gavin.*/))"
       }
     }
   }
