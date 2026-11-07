@@ -1,0 +1,35 @@
+{
+  "version": "20261107-docket-reaction-v29",
+  "newAuthoredQuestions": 500,
+  "boardClues": 1000,
+  "allClues": 1024,
+  "existingCategories": 100,
+  "alternativesPerValue": 2,
+  "families": {
+    "Gaming": 130,
+    "Sports": 120,
+    "Screen": 130,
+    "Music": 130,
+    "World": 120,
+    "Nature": 130,
+    "Everyday": 120,
+    "Words": 120
+  },
+  "manualReview": [
+    "distinct facts and self-contained wording",
+    "no category intersection/tag or title substring generators",
+    "removed ambiguous generic answers and corrected factual wording",
+    "existing canonical answers and common short names accepted",
+    "five intended value tiers retained in each category"
+  ],
+  "sourceTargetCheck": "Wikipedia article targets resolved through API; four missing targets repaired; primary references used for selected sports, astronomy, Nintendo and Harry Potter facts. URL resolution is separate from factual review.",
+  "automatedChecks": [
+    "unique question IDs and prompt text",
+    "ten unique canonical answers in each category",
+    "two alternatives in each value tier",
+    "canonical and alias acceptance for all 1024 clues",
+    "100 seeded subsequent draws avoid reusing the preceding 60 questions",
+    "8 subject-family balance and no repeated answers within each 60-clue match"
+  ],
+  "snapshotSha256": "8db926d8d6896f08f87eacff713ba31566da6b5c94e73147efe3ec3a5aab5823"
+}

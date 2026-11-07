@@ -18,8 +18,8 @@ function make(n=6){view?.dispose();if(session){session.closed=true;clearInterval
  }};
  view=new DocketStage(document.querySelector('#app'),{action:(a,p)=>session.request(a,p).catch(e=>view.error(e.message)),leave(){}});render();
 }
-function prepare(id='block-party-1',n=6){make(n);const q=DOCKET_BY_ID.get(id);Object.assign(s,{round:1,stage:'docketRead',stageAt:++now,readOpenedAt:now,deadline:now+5000,clue:{id:q.id,prompt:q.prompt,category:q.category,value:200,double:false},attempts:{},lockouts:{},locked:{}});render();}
-function due(){now=s.deadline;E.tickCourtGame(s,secret,now);render();}
+function prepare(id='block-party-1',n=6){make(n);const q=DOCKET_BY_ID.get(id);Object.assign(s,{round:1,stage:'docketRead',stageAt:++now,readOpenedAt:now,deadline:0,clue:{id:q.id,prompt:q.prompt,category:q.category,value:200,double:false},attempts:{},lockouts:{},locked:{}});secret.docket.buzzAt=now+5000;render();}
+function due(){now=s.stage==='docketRead'&&!s.clue.double?secret.docket.buzzAt:s.deadline;E.tickCourtGame(s,secret,now);render();}
 make();setInterval(()=>view.frame(),40);
 function final(){make(6);Object.assign(s,{stage:'docketFinalAnswer',round:2,stageAt:++now,deadline:now+30000,eligible:['p0','p1'],locked:{},clue:{id:'gaming-final',prompt:'This Metroid bounty hunter wears a power suit.',category:'VIDEO GAME LEGENDS'}});Object.assign(secret.docket,{finalId:'gaming-final',wagers:{p0:100,p1:100},answers:{},drafts:{}});render();}
 window.docketTest={make,prepare,final,due,render,get s(){return s;},get secret(){return secret;},get session(){return session;},get view(){return view;},get calls(){return calls;},advance(ms){now+=ms;render();},setLatency:n=>latency=n};

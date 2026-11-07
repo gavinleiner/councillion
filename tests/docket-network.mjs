@@ -9,7 +9,7 @@ const env=await initializeTestEnvironment({projectId:'demo-councillion',database
 const wait=async(fn,label,ms=20000)=>{const until=Date.now()+ms;while(Date.now()<until){if(await fn())return;await new Promise(r=>setTimeout(r,25));}throw Error('Timed out: '+label+' '+JSON.stringify(errors));};
 function client(uid){errors[uid]=[];const db=env.authenticatedContext(uid,{firebase:{sign_in_provider:'google.com'}}).database(),c={...sdk,db};const s=new CourtGameSession({mode:'docket',identity:()=>({id:uid,uid,expires:Date.now()/1000+3600}),authorize:async()=>({uid}),getCloud:async()=>c,onError:m=>errors[uid].push(m)});sessions.push(s);return s;}
 async function send(s,a,p={}){const old=s.lastAck;await s.request(a,p);await wait(()=>s.lastAck!==old,a+' ack');return s.lastResult;}
-async function expire(s){await s.enqueue(async()=>{s.state.deadline=s.now()-1;await s.broadcast();});}
+async function expire(s){await s.enqueue(async()=>{if(s.state.stage==='docketRead'&&!s.state.clue.double)s.secret.docket.buzzAt=s.now()-1;else s.state.deadline=s.now()-1;await s.broadcast();});}
 try{
  await env.clearDatabase();const crew=Array.from({length:6},(_,i)=>client('docket'+i));let h=crew[0];await h.create('Gavin','krill',false);for(const [i,s]of crew.slice(1).entries())await s.join('Counsel '+(i+1),h.code,['squid','angler','schooler'][i%3]);await wait(()=>crew.every(s=>s.connected&&s.state.players.length===6),'six occupied stands');
  const stranger=env.authenticatedContext('outsider',{firebase:{sign_in_provider:'google.com'}}).database();await assertFails(sdk.get(sdk.ref(stranger,'rooms/'+h.code+'/state')));await assertFails(sdk.get(sdk.ref(env.unauthenticatedContext().database(),'rooms/'+h.code+'/state')));
