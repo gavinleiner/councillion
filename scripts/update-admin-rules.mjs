@@ -9,7 +9,7 @@ const president=`${google} && auth.token.email_verified === true && auth.token.e
 r.rooms['.read']=owner;
 r.rooms.$code['.write']=`${google} && ((!data.exists() && newData.child('meta/host').val() === auth.uid && newData.child('meta/version').val() === 3) || data.child('meta/host').val() === auth.uid || (${owner}))`;
 const roomAvailability=COMING_SOON_GAMES.flatMap(mode=>[`newData.child('meta/game').val() !== '${mode}'`,`newData.child('state/variant').val() !== '${mode}'`]);
-r.rooms.$code['.validate']="$code.matches(/^[A-Z]{4}$/) && newData.hasChildren(['meta','members','state'])"+(roomAvailability.length?' && '+roomAvailability.join(' && '):'');
+r.rooms.$code['.validate']="$code.matches(/^[A-Z]{4}$/) && newData.hasChildren(['meta','members','state'])"+(roomAvailability.length?' && (('+roomAvailability.join(' && ')+') || (('+owner+") && newData.child('meta/isPrivate').val() === true))":'');
 const directoryAvailability=COMING_SOON_GAMES.flatMap(mode=>[`newData.child('game').val() !== '${mode}'`,`root.child('rooms').child($code).child('meta/game').val() !== '${mode}'`]);
 r.directory.$code['.write']=`${google} && (root.child('rooms').child($code).child('meta/host').val() === auth.uid || (${owner}))`+(directoryAvailability.length?' && (!newData.exists() || ('+directoryAvailability.join(' && ')+'))':'');
 r.accountHonors={$uid:{'.read':google,'.write':`auth.uid === $uid && ((${owner}) || (${vice}) || (${president}))`,'.validate':`newData.hasChildren(['kind','title']) && (((${owner}) && newData.child('kind').val() === 'owner' && newData.child('title').val().matches(/^(super-admin|the-owner|final-authority)$/)) || ((${vice}) && newData.child('kind').val() === 'vice-president' && newData.child('title').val() === 'vice-president') || ((${president}) && newData.child('kind').val() === 'president' && newData.child('title').val() === 'pres'))`,$field:{'.validate':"$field.matches(/^(kind|title)$/)"}}};
@@ -17,4 +17,21 @@ r.rankGrants={$uid:{'.read':google,'.write':owner,'.validate':"newData.hasChildr
 const read=`${google} && (root.child('rooms').child($code).child('members').child(auth.uid).exists() && !root.child('rooms').child($code).child('bans').child(auth.uid).exists() || root.child('rooms').child($code).child('meta/host').val() === auth.uid)`;
 const base=`(${owner}) && newData.hasChildren(['id','uid','target','at']) && newData.child('id').isString() && newData.child('id').val().length <= 64 && newData.child('uid').val() === auth.uid && newData.child('target').isString() && (newData.child('target').val() === 'all' || root.child('rooms').child($code).child('members').child(newData.child('target').val()).exists()) && newData.child('at').val() === now`;
 r.rooms.$code.admin={'.read':read,'.write':owner,effect:{'.validate':`${base} && newData.hasChildren(['kind','expires']) && newData.child('kind').isString() && newData.child('kind').val().matches(/^(objection|papers|bubbles|wig|wobble|giant)$/) && newData.child('expires').isNumber() && newData.child('expires').val() > now && newData.child('expires').val() <= now + 10000`,$field:{'.validate':"$field.matches(/^(id|uid|kind|target|at|expires)$/)"}},control:{'.validate':`${base} && newData.hasChildren(['action']) && newData.child('action').isString() && newData.child('action').val().matches(/^(start|kick|end|public|private)$/) && (newData.child('action').val() !== 'kick' || newData.child('target').val() !== 'all')`,$field:{'.validate':"$field.matches(/^(id|uid|action|target|at)$/)"}},$field:{'.validate':"$field.matches(/^(effect|control)$/)"}};
+// Every grant beneath a room must carry the gate: a shallow .read/.write
+// restriction alone can be bypassed by an existing member's child grant.
+const roomGate='('+COMING_SOON_GAMES.flatMap(mode=>["root.child('rooms').child($code).child('meta/game').val() !== '"+mode+"'","root.child('rooms').child($code).child('state/variant').val() !== '"+mode+"'"]).join(' && ')+') || ('+owner+')';
+const gateMarker=") && ((root.child('rooms').child($code).child('meta/game').val() !==";
+function availabilityGrants(node){
+ for(const key of Object.keys(node)){
+  if(['.read','.write'].includes(key)){
+   let rule=node[key];const i=typeof rule==='string'?rule.lastIndexOf(gateMarker):-1;
+   if(i>0&&rule.startsWith('('))rule=rule.slice(1,i);
+   node[key]=COMING_SOON_GAMES.length?`(${rule}) && (${roomGate})`:rule;
+  }else if(node[key]&&typeof node[key]==='object')availabilityGrants(node[key]);
+ }
+}
+availabilityGrants(r.rooms.$code);
+// A read of this empty marker verifies the signed owner token before a local
+// bot preview. No room, ranking, score or player data is written by the preview.
+r.ownerPreviews??={};r.ownerPreviews.oath={'.read':owner,'.write':false};
 const next=JSON.stringify(data,null,2)+'\n';if(process.argv.includes('--check')){if(await readFile(file,'utf8')!==next)throw Error('Run node scripts/update-admin-rules.mjs');}else await writeFile(file,next);

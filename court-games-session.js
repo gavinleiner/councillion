@@ -28,7 +28,7 @@ export class CourtGameSession{
  async auth(){const auth=await this.authorize();this.uid=auth.uid;requirePartyIdentity(this.identity());this.c=await this.getCloud();await waitForDatabaseConnection(this.c);this.offset=await databaseClockOffset(this.c);if(this.closed)throw Error('Connection cancelled.');}
  member(name,buddy,ready){return {name:validateDisplayName(name),buddy:['krill','schooler','squid','angler','evil'].includes(buddy)?buddy:'krill',protocol:4,joinedAt:this.now(),lastSeen:this.now(),online:true,ready,autoJoin:false};}
  async create(name,buddy='krill',isPrivate=true){
-  requireGameAvailable(this.mode);await this.auth();this.host=true;const m=this.member(name,buddy,true);
+  requireGameAvailable(this.mode,this.identity());await this.auth();this.host=true;const m=this.member(name,buddy,true);
   for(let i=0;i<5;i++){
    this.code=Array.from(crypto.getRandomValues(new Uint8Array(4)),x=>'ABCDEFGHJKLMNPQRSTUVWXYZ'[x%24]).join('');
    this.meta={host:this.uid,hostName:m.name,version:3,protocol:4,format:'classic',catalogBuild:build(this.mode),game:this.mode,mode:'court-game',createdAt:this.now(),isPrivate,seats:GAME_MODES[this.mode].seats,phase:'lobby'};
@@ -37,7 +37,7 @@ export class CourtGameSession{
   }
  }
  async join(name,code,buddy='krill'){
-  requireGameAvailable(this.mode);await this.auth();this.code=String(code).trim().toUpperCase();if(!/^[A-Z]{4}$/.test(this.code))throw Error('Enter the four-letter room code.');
+  requireGameAvailable(this.mode,this.identity());await this.auth();this.code=String(code).trim().toUpperCase();if(!/^[A-Z]{4}$/.test(this.code))throw Error('Enter the four-letter room code.');
   this.meta=(await this.c.get(this.path('meta'))).val();if(!this.meta||this.now()-this.meta.createdAt>86400000)throw Error('That room is no longer available. Host a fresh court.');
   if(this.meta.catalogBuild!==build(this.mode))throw Error('This code belongs to another game or version. Ask the host for a fresh '+GAME_MODES[this.mode].name+' invite.');
   this.host=this.meta.host===this.uid;await this.c.set(this.path('members/'+this.uid),this.member(name,buddy,this.meta.phase==='lobby'));await this.listen();
@@ -142,9 +142,9 @@ export class CourtGameSession{
   await this.c.runTransaction(this.path('requests/'+uid),current=>current?.id===r.id?null:undefined,{applyLocally:false});
  }
  async request(action,extra={}){
-  requireGameAvailable(this.mode);
+  requireGameAvailable(this.mode,this.identity());
   if(!this.connected||this.closed)throw Error('Reconnect before sending an answer.');
-  const context=this.mode==='clash'?{matchId:this.state.matchId??'',round:this.state.round,stage:this.state.stage,stageAt:this.state.stageAt,turnKey:answerTurn(this.state)?.key??'',boardId:this.state.board?.id??''}:{};
+  const context=this.mode==='clash'?{matchId:this.state.matchId??'',round:this.state.round,stage:this.state.stage,stageAt:this.state.stageAt??0,turnKey:answerTurn(this.state)?.key??'',boardId:this.state.board?.id??''}:{};
   if(action==='fast-draft'&&extra.checkIndex===undefined&&this.pending){this.queuedDraft=extra;clearTimeout(this.draftRetry);this.draftRetry=setTimeout(()=>{const next=this.queuedDraft;this.queuedDraft=null;if(next&&!this.closed&&this.state.stage==='fast'&&this.state.turn===this.uid&&this.state.fastPass===next.pass)this.request('fast-draft',next).catch(e=>this.fail(e));},150);return false;}
   if(action==='fast'||(action==='fast-draft'&&extra.checkIndex!==undefined)){this.queuedDraft=null;clearTimeout(this.draftRetry);}
   if((action==='fast'||action==='fast-draft'&&extra.checkIndex!==undefined||this.mode==='clash'&&action==='answer')&&this.pending){const until=performance.now()+3500;while(this.pending&&performance.now()<until&&!this.closed)await new Promise(r=>setTimeout(r,25));}
