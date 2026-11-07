@@ -8,11 +8,12 @@ function buzz(f){read(f);const {s,secret}=f;tickCourtGame(s,secret,s.deadline);a
 test('a host cannot leave an unready connected friend out of a new match',()=>{
  const s=createCourtGame('clash',players());s.players[4].ready=false;assert.throws(()=>startCourtGame(s,1000),/ready/i);assert.equal(s.stage,'lobby');
 });
-test('new players get an untimed briefing and the board waits for a genuine reading interval',()=>{
- const f=game(),{s,secret}=f;assert.equal(s.stage,'briefing');assert.equal(s.deadline,0);assert.equal(tickCourtGame(s,secret,999999),false);
- for(const p of s.players.slice(0,5))actCourtGame(s,secret,p.id,'briefing-ready',{},1100);assert.equal(tickCourtGame(s,secret,1200),false);actCourtGame(s,secret,'p5','briefing-ready',{},1300);tickCourtGame(s,secret,1400);assert.equal(s.stage,'intro');tickCourtGame(s,secret,s.deadline);assert.equal(s.stage,'roundRead');const at=s.stageAt;
- assert.throws(()=>actCourtGame(s,secret,'p2','read-ready',{},at+1),/representatives/);assert.throws(()=>actCourtGame(s,secret,'p0','buzz',{},at+1),/buzz/i);
- for(const uid of s.faceoffPlayers)actCourtGame(s,secret,uid,'read-ready',{},at+1);tickCourtGame(s,secret,at+4499);assert.equal(s.stage,'roundRead');assert.equal(s.strikes,0);tickCourtGame(s,secret,at+4500);assert.equal(s.stage,'faceoff');assert.equal(s.deadline-s.stageAt,CLASH_TIMING.buzz);
+test('new players get an automatic briefing and a shared three-second reveal before buzzing',()=>{
+ const {s,secret}=game();assert.equal(s.stage,'briefing');assert.equal(s.deadline-s.stageAt,CLASH_TIMING.briefing);
+ for(const p of s.players)actCourtGame(s,secret,p.id,'briefing-ready',{},1100);assert.equal(tickCourtGame(s,secret,s.deadline-1),false);tickCourtGame(s,secret,s.deadline);assert.equal(s.stage,'roundRead');const at=s.stageAt;
+ assert.equal(s.board.prompt,'');assert.equal(s.deadline-at,3000);assert.throws(()=>actCourtGame(s,secret,'p2','read-ready',{},at+1),/countdown/);
+ assert.equal(actCourtGame(s,secret,'p0','buzz',{stage:'roundRead',stageAt:at},at+1).early,true);
+ for(const uid of s.faceoffPlayers)actCourtGame(s,secret,uid,'read-ready',{},at+1);assert.equal(tickCourtGame(s,secret,at+2999),false);assert.equal(s.stage,'roundRead');assert.equal(s.strikes,0);tickCourtGame(s,secret,at+3000);assert.equal(s.stage,'faceoff');assert.equal(s.deadline-s.stageAt,CLASH_TIMING.buzz);
 });
 test('a typo suggestion is private, leaves the board and clock untouched, and must be confirmed',()=>{
  const f=game();buzz(f);const {s,secret}=f,before=structuredClone(s),at=s.stageAt+100;

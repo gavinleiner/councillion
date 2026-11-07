@@ -10,7 +10,7 @@ import {oathReceipt} from './oath-engine.js';
 export async function authorizeOathPreview({identity,authorize,getCloud}){
  const auth=await authorize(),verified=auth.identity??identity();
  if(!canAdmin(verified))throw Error('This private preview is owner-only.');
- const c=await(getCloud?.()??import('./cloud.bundle.js?v=20261106-fairplay-v26'));
+ const c=await(getCloud?.()??import('./cloud.bundle.js?v=20261106-final-saves-v28'));
  await c.get(c.ref(c.db,'ownerPreviews/oath'));
  return verified;
 }

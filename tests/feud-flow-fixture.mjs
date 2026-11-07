@@ -11,7 +11,7 @@ function render(){
  session.response.secret={matchId:s.matchId,fastDraft:secret.fastDraft?.[session.uid]};
  session.response.liveAnswer=fastLiveAnswer(s,secret,session.uid,now);
  const first=secret.fast?.[s.fastPlayers?.[0]];
- session.response.fastAudience=first&&session.uid!==s.fastPlayers?.[1]?{matchId:s.matchId,rows:s.fastIds.map((id,i)=>({prompt:CLASH_BY_ID.get(id).prompt,label:first[i].label,points:first[i].points}))}:null;
+ session.response.fastAudience=first&&session.uid!==s.fastPlayers?.[1]?{matchId:s.matchId,rows:s.fastIds.map((id,i)=>({prompt:CLASH_BY_ID.get(id).prompt,label:first[i].label,text:first[i].input,points:first[i].points}))}:null;
  view.render(s,session);
 }
 function make(n=10){view?.dispose();if(session){session.closed=true;clearInterval(session.timer);clearTimeout(session.draftRetry);clearTimeout(session.typingTimer);}now=Date.now();secret={estimates:{},fast:{}};calls=[];
