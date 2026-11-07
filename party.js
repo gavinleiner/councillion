@@ -20,7 +20,7 @@ import {matchResult,rankedWinStreak,RANK_SEASON} from './party-career.js';
 import {validateDisplayName,safeDisplayName,validateChat,containsBlockedLanguage} from './moderation.js';
 const cleanName=validateDisplayName;
 const partyCatalogBuild=()=>catalogBuild()+'-'+RANK_SEASON+'-'+ANSWER_MATCHING_VERSION+'-'+QUESTION_SELECTION_BUILD+'-'+QUESTION_QUALITY_BUILD+'-'+TOURNAMENT_BUILD+'-'+FOCUS_BUILD;
-const loadCloud=()=>import('./cloud.bundle.js?v=20261106-fairplay-v26');
+const loadCloud=()=>import('./cloud.bundle.js?v=20261106-final-saves-v28');
 const json=value=>JSON.parse(JSON.stringify(value));
 const friendly=partyConnectionError;
 export async function publicRooms(authorize,callback,onError){await authorize();const c=await loadCloud();return c.onValue(c.query(c.ref(c.db,'directory'),c.orderByChild('updatedAt'),c.limitToLast(100)),snapshot=>callback(compatiblePublicRooms(snapshot.val(),partyCatalogBuild())),e=>onError(friendly(e)));}

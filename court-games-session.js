@@ -11,7 +11,7 @@ import {requirePartyIdentity} from './party-access.js';
 import {answerTurn,safeDraft,fastLiveAnswer} from './court-games-dialogue.js';
 import {courtAppearance,courtSettings,validCourtSettings} from './court-games-settings.js';
 const clone=o=>JSON.parse(JSON.stringify(o)),values=o=>Object.values(o??{}),build=mode=>COURT_GAMES_BUILD+':'+mode;
-const loadCloud=()=>import('./cloud.bundle.js?v=20261106-fairplay-v26');
+const loadCloud=()=>import('./cloud.bundle.js?v=20261106-final-saves-v28');
 function normalizeState(state){
  state.players=values(state.players).map(p=>({...p,name:safeDisplayName(p.name)}));for(const field of ['teamScores','questionIds','history','faceoffPlayers','faceoffTried','fastIds','fastPlayers'])state[field]=values(state[field]);if(state.board)state.board.slots=values(state.board.slots);if(state.variant==='docket'){for(const k of ['categoryIds','cells','finalRows','eligible','tied','finalOrder'])state[k]=values(state[k]);state.attempts??={};state.lockouts??={};if(state.result){state.result.scores=values(state.result.scores);state.result.winners=values(state.result.winners);}}if(state.variant==='oath'){for(const k of ['choices','revealed'])state[k]=values(state[k]);for(const r of state.revealed){r.authors=values(r.authors);r.voters=values(r.voters);}state.voted??={};state.advanceReady??={};if(state.roundResult)state.roundResult.rows=values(state.roundResult.rows);if(state.result){state.result.scores=values(state.result.scores);state.result.winners=values(state.result.winners);}}state.locked??={};
  if(state.variant==='figure'&&state.roundResult)state.roundResult.rows=values(state.roundResult.rows).map(r=>({...r,guess:Number.isFinite(r.guess)?r.guess:null,error:Number.isFinite(r.error)?r.error:null}));return state;
