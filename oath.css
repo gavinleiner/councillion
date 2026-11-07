@@ -36,3 +36,5 @@ body[data-screen="oath"]{background:#082c46}body[data-screen="oath"]>:is(header,
 .oa-preview-note{color:#a9cdd0;font-size:11px;letter-spacing:1px}
 .oa-coming-message>[data-oath-signin]{margin-top:22px}
 .oa-coming-message>[data-oath-signin]+a{margin-top:12px;background:#143d4e;color:#bfd4d4;border-color:#658d99;font-size:15px;min-height:38px}
+
+.oa-filed-paper{position:absolute;z-index:30;pointer-events:none;width:22px;height:29px;border:2px solid #917d51;background:linear-gradient(#ddd2a1 0 65%,#c9be8c 65%);box-shadow:2px 2px #06273b;color:#425260;font:10px VT,monospace;display:grid;place-items:center;font-style:normal;image-rendering:pixelated}

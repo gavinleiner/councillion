@@ -27,8 +27,10 @@ export class OathPreviewSession{
  now(){return this.clock();}
  render(){if(this.closed)return;this.focus.sync();this.response={oath:oathReceipt(this.state,this.secret,this.uid)};this.onState(this.state,this);}
  async ready(){return;}
- send(uid,action,p={}){const s=this.state;return actCourtGame(s,this.secret,uid,action,{...p,matchId:s.matchId,round:s.round,stageAt:s.stageAt},this.now());}
+ send(uid,action,p={}){const s=this.state;return actCourtGame(s,this.secret,uid,action,{matchId:s.matchId,round:s.round,stageAt:s.stageAt,...p},this.now());}
+ setOathDraft(text){clearTimeout(this.draftTimer);const context={matchId:this.state.matchId,round:this.state.round,stageAt:this.state.stageAt};this.draftTimer=setTimeout(()=>this.request('oath-draft',{text,...context}).catch(e=>this.onError(e.message)),180);}
  async request(action,p={}){
+  if(action==='oath-bluff')clearTimeout(this.draftTimer);
   if(this.closed||!canAdmin(this.identity()))throw Error('Sign in with the owner account to continue the preview.');
   if(action==='start'||action==='rematch'){if(!['lobby','finish'].includes(this.state.stage))return;startCourtGame(this.state,this.now(),Math.random,this.secret);}
   else this.send(this.uid,action,p);
@@ -49,5 +51,5 @@ export class OathPreviewSession{
    if(changed)this.render();
   }catch(e){this.onError(e.message);}
  }
- async close(){this.focus.destroy();this.closed=true;this.connected=false;clearInterval(this.timer);}
+ async close(){this.focus.destroy();this.closed=true;this.connected=false;clearInterval(this.timer);clearTimeout(this.draftTimer);}
 }
