@@ -1,3 +1,4 @@
+import {readDocketHistory,rememberDocketClue} from './docket-history.js';
 import {PartyFocus} from './party-focus.js';
 import {focusExempt,courtFocusKey,courtFocusEligible} from './fair-play.js';
 import {enforceCourtFocus} from './court-focus.js';
@@ -53,7 +54,7 @@ export class CourtGameSession{
   const c=this.c;
   this.unsub.push(c.onValue(c.ref(c.db,'tabExemptions'),snap=>{this.tabExemptions=snap.val()??{};this.tabExemptionsReady=true;},e=>this.fail(e)));
   this.unsub.push(c.onValue(this.path('meta'),snap=>{if(!snap.exists()){this.fail(Error('The host closed this court.'));return;}const was=this.host;this.meta=snap.val();this.host=this.meta.host===this.uid;if(was&&!this.host){for(const off of this.hostUnsub??[])off();this.hostUnsub=[];this.hostListening=false;this.refereeReady=false;}if(this.host&&!was)this.resumeHost();this.render();},e=>this.fail(e)));
-  this.unsub.push(c.onValue(this.path('state'),snap=>{if(!snap.exists())return;this.state=normalizeState(snap.val());const turn=answerTurn(this.state)?.key;if(turn!==this.draftTurn){this.draftTurn=turn;this.clearDraft();}this.render();},e=>this.fail(e)));
+  this.unsub.push(c.onValue(this.path('state'),snap=>{if(!snap.exists())return;this.state=normalizeState(snap.val());if(this.mode==='docket'&&this.state.clue?.id){const seen=this.state.matchId+':'+this.state.clue.id;if(seen!==this.lastDocketSeen){this.lastDocketSeen=seen;rememberDocketClue(this.uid,this.state.clue.id);}}const turn=answerTurn(this.state)?.key;if(turn!==this.draftTurn){this.draftTurn=turn;this.clearDraft();}this.render();},e=>this.fail(e)));
   this.unsub.push(c.onValue(this.path('typing'),snap=>{this.drafts=snap.val()??{};if(!this.closed)this.onDrafts();},e=>this.fail(e)));
   this.unsub.push(c.onValue(this.path('members'),snap=>{this.members=snap.val()??{};if(!this.members[this.uid]){this.fail(Error('You have left this court.'));return;}if(this.host&&this.refereeReady)this.enqueue(()=>this.syncRoster());this.render();},e=>this.fail(e)));
   this.unsub.push(c.onValue(this.path('responses/'+this.uid),snap=>{this.response=snap.val()??{};const ack=this.response.ack;if(ack?.id&&ack.id!==this.lastAck){this.lastAck=ack.id;if(!this.pendingId||ack.id===this.pendingId){this.pending=false;this.pendingAction=null;this.pendingId=null;}if(ack.error)this.fail(Error(ack.error));if(ack.result?.retry)this.onError(ack.result.message);this.lastResult=ack.result??(ack.error?{error:ack.error}:null);}this.render();},e=>this.fail(e)));
@@ -132,7 +133,7 @@ export class CourtGameSession{
     if(!['nice','close','clutch','ready'].includes(r.patch.reaction))throw Error('Choose a reaction.');
     if(this.now()-(this.lastReaction?.[uid]??0)<2500)throw Error('Give the reaction a moment.');this.lastReaction??={};this.lastReaction[uid]=this.now();this.state.reaction={id:crypto.randomUUID(),uid,type:r.patch.reaction,at:this.now()};this.state.revision++;
    }else if(r.type==='start'||r.type==='rematch'){
-    if(uid!==this.meta.host)throw Error('Only the host starts the game.');if(!['lobby','finish'].includes(this.state.stage))throw Error('The match is already running.');this.secret={estimates:{},fast:{}};startCourtGame(this.state,this.now(),Math.random,this.secret);for(const id of Object.keys(this.members)){extra['responses/'+id+'/secret']=null;extra['responses/'+id+'/huddle']=null;extra['responses/'+id+'/fastAudience']=null;extra['responses/'+id+'/finalDraft']=null;}
+    if(uid!==this.meta.host)throw Error('Only the host starts the game.');if(!['lobby','finish'].includes(this.state.stage))throw Error('The match is already running.');this.secret={estimates:{},fast:{},...(this.mode==='docket'?{docketRecent:readDocketHistory(this.uid)}:{})};startCourtGame(this.state,this.now(),Math.random,this.secret);for(const id of Object.keys(this.members)){extra['responses/'+id+'/secret']=null;extra['responses/'+id+'/huddle']=null;extra['responses/'+id+'/fastAudience']=null;extra['responses/'+id+'/finalDraft']=null;}
    }else{
     if(r.patch?.matchId!==this.state.matchId||r.patch?.round!==this.state.round)throw Error('That action belongs to an earlier round.');
     result=actCourtGame(this.state,this.secret,uid,a,{...r.patch,text:r.text,timeout:false},this.now());

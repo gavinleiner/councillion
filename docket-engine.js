@@ -2,6 +2,7 @@ import {DOCKET_CATEGORIES,DOCKET_FINALS,DOCKET_TIES,DOCKET_BY_ID} from './docket
 import {resolveShowAnswer} from './game-show-answer-matching.js';
 import {containsBlockedLanguage} from './moderation.js';
 import {shuffle} from './question-selection.js';
+import {drawDocket,freshDocketChoice} from './docket-deck.js';
 
 const crew=s=>s.players.filter(p=>!p.spectator&&p.connected!==false&&p.online!==false);
 const tell=(s,type,text,now)=>{s.notice=text;s.event={id:++s.eventSerial,type,text,at:now};s.revision++;};
@@ -26,19 +27,9 @@ export function docketResponse(q,text){
  return result;
 }
 
-function deck(rng){
- // One category from each of six subject families per board; no franchise or
- // alternate-tag templates. The two boards never reuse a category.
- const families=shuffle([...new Set(DOCKET_CATEGORIES.map(c=>c.family))],rng),picked=[],answers=new Set();
- for(let board=0;board<2;board++)for(let i=0;i<6;i++){
-  const family=families[(board*6+i)%families.length],all=DOCKET_CATEGORIES.filter(c=>c.family===family&&!picked.includes(c.id)),pool=all.filter(c=>c.clues.every(q=>!answers.has(q.answer.toLowerCase()))),chosen=shuffle(pool.length?pool:all,rng)[0];
-  picked.push(chosen.id);for(const q of chosen.clues)answers.add(q.answer.toLowerCase());
- }
- return picked;
-}
 function board(s,secret,now){
  s.round++;s.cells=s.categoryIds.slice((s.round-1)*6,s.round*6).flatMap((id,col)=>{
-  const c=DOCKET_CATEGORIES.find(c=>c.id===id);return c.clues.map((q,row)=>({id:q.id,col,row,category:c.title,value:(row+1)*(s.round===1?200:400),used:false}));
+  const c=DOCKET_CATEGORIES.find(c=>c.id===id);const ids=s.questionIds.slice(((s.round-1)*6+col)*5,((s.round-1)*6+col+1)*5);return ids.map((id,row)=>({id,col,row,category:c.title,value:(row+1)*(s.round===1?200:400),used:false}));
  });
  const positions=shuffle(s.cells.filter(c=>c.row>0).map(c=>c.id),secret.docket.rng??Math.random).slice(0,s.round===1?1:2);
  secret.docket.doubles=positions;delete s.clue;delete s.verdict;s.turn=null;s.attempts={};s.lockouts={};clearReady(s);
@@ -47,14 +38,14 @@ function board(s,secret,now){
 }
 export function startDocket(s,secret,now,rng=Math.random){
  const players=crew(s).filter(p=>p.ready).slice(0,6);if(players.length<2)throw Error('At least two ready counsel are needed.');if(crew(s).some(p=>!p.ready))throw Error('Wait for everyone to ready up.');
- s.matchId=crypto.randomUUID();s.secretEpoch=s.matchId;s.players=s.players.map(p=>({...p,score:0,spectator:!players.some(q=>q.id===p.id)}));s.round=0;s.history=[];s.locked={};s.categoryIds=deck(rng);s.questionIds=[];s.selector=shuffle(players,rng)[0].id;s.attempts={};s.lockouts={};
+ s.matchId=crypto.randomUUID();s.secretEpoch=s.matchId;s.players=s.players.map(p=>({...p,score:0,spectator:!players.some(q=>q.id===p.id)}));s.round=0;s.history=[];s.locked={};const draw=drawDocket(DOCKET_CATEGORIES,secret.docketRecent??[],rng);s.categoryIds=draw.categories;s.questionIds=draw.questions;s.selector=shuffle(players,rng)[0].id;s.attempts={};s.lockouts={};
  for(const k of ['result','verdict','clue','finalRows','cells','finalCategory','finalOrder','eligible','tied'])delete s[k];
- const usedAnswers=new Set(DOCKET_CATEGORIES.filter(c=>s.categoryIds.includes(c.id)).flatMap(c=>c.clues.map(q=>q.answer.toLowerCase())));
- secret.docket={finalId:shuffle(DOCKET_FINALS.filter(q=>!usedAnswers.has(q.answer.toLowerCase())),rng)[0].id,tieIds:shuffle(DOCKET_TIES,rng).map(q=>q.id),tieIndex:0,wagers:{},answers:{},drafts:{},doubles:[]};
+ const usedAnswers=new Set(s.questionIds.map(id=>DOCKET_BY_ID.get(id).answer.toLowerCase()));
+ secret.docket={finalId:freshDocketChoice(DOCKET_FINALS.filter(q=>!usedAnswers.has(q.answer.toLowerCase())),secret.docketRecent??[],rng).id,tieIds:shuffle(DOCKET_TIES,rng).map(q=>q.id),tieIndex:0,wagers:{},answers:{},drafts:{},doubles:[]};
  clearReady(s);stage(s,'docketBriefing',now);tell(s,'briefing','Welcome to The Docket. Every counsel has a stand.',now);return true;
 }
 function selection(s,now){s.turn=null;s.attempts={};s.lockouts={};if(!crew(s).some(p=>p.id===s.selector))s.selector=crew(s)[0]?.id;stage(s,'docketBoard',now,45000);tell(s,'select',name(s,s.selector)+', choose a category and value.',now);}
-function reading(s,now){s.focusOpenedAt=now;s.attempts={};s.lockouts={};s.readOpenedAt=now;stage(s,'docketRead',now,Math.min(24000,Math.max(5000,s.clue.prompt.split(/\s+/).length*450+1500)));tell(s,'read',s.clue.prompt,now);}
+function reading(s,secret,now){s.focusOpenedAt=now;s.attempts={};s.lockouts={};s.readOpenedAt=now;const read=Math.min(24000,Math.max(3500,s.clue.prompt.split(/\s+/).length*330+900));stage(s,'docketRead',now,s.clue.double?read:0);if(!s.clue.double)secret.docket.buzzAt=now+read+700+Math.floor(Math.random()*1801);tell(s,'read',s.clue.prompt,now);}
 function buzz(s,now){s.turn=null;s.turnOpenedAt=now;s.buzzOpenedAt=now;stage(s,'docketBuzz',now,9000);tell(s,'buzz-open','Buzzers open.',now);}
 function show(s,secret,now,uid,text,correct,value){
  const q=DOCKET_BY_ID.get(s.clue.id),p=s.players.find(p=>p.id===uid);if(p)p.score+=correct?value:-value;
@@ -91,7 +82,7 @@ function finish(s,now){
 function tie(s,secret,now){
  const top=Math.max(...s.players.filter(p=>!p.spectator).map(p=>p.score));if(top<=0){finish(s,now);s.result.winners=[];s.notice='No positive final score. The court adjourns without a champion.';s.event.text=s.notice;return;}s.tied=s.players.filter(p=>!p.spectator&&p.score===top).map(p=>p.id);
  if(s.tied.length<2){finish(s,now);return;}
- const ids=secret.docket.tieIds,q=DOCKET_BY_ID.get(ids[secret.docket.tieIndex++%ids.length]);s.clue={id:q.id,prompt:q.prompt,category:q.category,value:0,tiebreak:true};reading(s,now);
+ const ids=secret.docket.tieIds,q=DOCKET_BY_ID.get(ids[secret.docket.tieIndex++%ids.length]);s.clue={id:q.id,prompt:q.prompt,category:q.category,value:0,tiebreak:true};reading(s,secret,now);
 }
 export function actDocket(s,secret,uid,action,payload,now){
  const p=crew(s).find(p=>p.id===uid);if(!p)throw Error('Only active counsel can act.');
@@ -105,11 +96,11 @@ export function actDocket(s,secret,uid,action,payload,now){
   if(s.stage!=='docketBoard'||uid!==s.selector)throw Error('The selecting counsel chooses the case.');
   const cell=s.cells.find(c=>c.id===payload.clueId&&!c.used);if(!cell)throw Error('Choose an unopened clue.');cell.used=true;
   const q=DOCKET_BY_ID.get(cell.id);s.clue={id:q.id,category:cell.category,value:cell.value,double:secret.docket.doubles.includes(cell.id)};delete s.verdict;
-  if(s.clue.double){s.turn=uid;stage(s,'docketDouble',now,45000);tell(s,'double','Sealed stakes! '+name(s,uid)+', choose your wager.',now);}else{s.clue.prompt=q.prompt;reading(s,now);}return {accepted:true};
+  if(s.clue.double){s.turn=uid;stage(s,'docketDouble',now,45000);tell(s,'double','Sealed stakes! '+name(s,uid)+', choose your wager.',now);}else{s.clue.prompt=q.prompt;reading(s,secret,now);}return {accepted:true};
  }
  if(action==='docket-wager'){
   const raw=String(payload.text).trim(),value=Number(raw.replace(/[$,]/g,''));if(!/^\$?(?:\d+|\d{1,3}(?:,\d{3})+)$/.test(raw)||!Number.isSafeInteger(value))throw Error('Enter a whole-number wager.');
-  if(s.stage==='docketDouble'&&s.turn===uid){if(value<5||value>docketWagerMax(s))throw Error('Wager from 5 to '+docketWagerMax(s)+'.');s.clue.wager=value;s.clue.prompt=DOCKET_BY_ID.get(s.clue.id).prompt;reading(s,now);return {accepted:true};}
+  if(s.stage==='docketDouble'&&s.turn===uid){if(value<5||value>docketWagerMax(s))throw Error('Wager from 5 to '+docketWagerMax(s)+'.');s.clue.wager=value;s.clue.prompt=DOCKET_BY_ID.get(s.clue.id).prompt;reading(s,secret,now);return {accepted:true};}
   if(s.stage==='docketFinalWager'&&s.eligible.includes(uid)){if(s.locked[uid])throw Error('Your wager is sealed.');if(value<0||value>p.score)throw Error('Wager from 0 to your score.');secret.docket.wagers[uid]=value;s.locked[uid]=true;s.revision++;return {accepted:true};}
   throw Error('Wait for your wagering window.');
  }
@@ -151,9 +142,10 @@ export function tickDocket(s,secret,now){
  if(s.stage==='docketFinalWager'&&s.eligible.every(id=>s.locked[id])){finalClue(s,secret,now);return true;}
  if(s.stage==='docketFinalAnswer'&&s.eligible.every(id=>s.locked[id])){revealFinal(s,secret,now);return true;}
  if(s.stage==='docketVerdict'&&now-s.stageAt>=3500&&allReady(s))s.deadline=now;
+ if(s.stage==='docketRead'&&!s.clue.double&&now>=secret.docket.buzzAt){delete secret.docket.buzzAt;buzz(s,now);return true;}
  if(!s.deadline||now<s.deadline)return false;
  if(s.stage==='docketBoard'){s.selector=crew(s).find(p=>p.id===s.selector)?.id??crew(s)[0].id;const c=s.cells.find(c=>!c.used);actDocket(s,secret,s.selector,'docket-select',{clueId:c.id,matchId:s.matchId,round:s.round,stageAt:s.stageAt},s.deadline-1);return true;}
- if(s.stage==='docketDouble'){s.clue.wager=5;s.clue.prompt=DOCKET_BY_ID.get(s.clue.id).prompt;reading(s,now);return true;}
+ if(s.stage==='docketDouble'){s.clue.wager=5;s.clue.prompt=DOCKET_BY_ID.get(s.clue.id).prompt;reading(s,secret,now);return true;}
  if(s.stage==='docketRead'){if(s.clue.double){s.turnOpenedAt=now;stage(s,'docketAnswer',now,20000);tell(s,'answer',name(s,s.turn)+', your response?',now);}else buzz(s,now);return true;}
  if(s.stage==='docketAnswer'){
   if(s.clue.tiebreak){stage(s,'docketRebound',now,2000);}else if(s.clue.double)show(s,secret,now,s.turn,'',false,s.clue.wager);else{s.players.find(p=>p.id===s.turn).score-=s.clue.value;stage(s,'docketRebound',now,2400);tell(s,'timeout','Time. Other counsel may buzz.',now);}return true;

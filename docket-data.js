@@ -1,6 +1,7 @@
 // Original clues; source links describe the fact, not a copied television script.
 // Each category is five distinct clues in increasing intended difficulty.
 import {DOCKET_EXTRA_RAW} from './docket-extra-data.js';
+import {DOCKET_EXPANSION_RAW} from './docket-expansion-data.js';
 const sourceCorrections={'Luigi':'Luigi_(character)','Fallout_(series)':'Fallout_(franchise)','Call_of_Duty:_Warzone':'Call_of_Duty:_Warzone_(2020_video_game)','Interest':'Interest_(finance)','Barry_Allen_(DC_Extended_Universe)':'Barry_Allen'};
 const W=slug=>slug.startsWith('https://')?slug:'https://en.wikipedia.org/wiki/'+(sourceCorrections[slug]??slug);
 const raw=[
@@ -37,7 +38,7 @@ const raw=[
  ["greek-to-me", "Words", "GREEK TO ME", [["This Greek god of thunder rules from Mount Olympus.", "Zeus", "https://en.wikipedia.org/wiki/Zeus", ""], ["This Greek sea god carries a trident.", "Poseidon", "https://en.wikipedia.org/wiki/Poseidon", ""], ["This snake-haired Gorgon could turn onlookers to stone.", "Medusa", "https://en.wikipedia.org/wiki/Medusa", ""], ["This Greek hero’s vulnerable heel gives its name to a common expression for a weakness.", "Achilles", "https://en.wikipedia.org/wiki/Achilles", ""], ["This son of Daedalus flew too close to the Sun, melting the wax in his wings.", "Icarus", "https://art.thewalters.org/object/54.1037/", ""]]],
  ["art-file", "Words", "ART FILE", [["This Leonardo da Vinci portrait is famous for its subject’s mysterious smile.", "Mona Lisa", "https://en.wikipedia.org/wiki/Mona_Lisa", ""], ["This Vincent van Gogh painting shows a swirling night sky above a village.", "The Starry Night", "https://en.wikipedia.org/wiki/The_Starry_Night", "Starry Night"], ["This Spanish artist painted the anti-war work Guernica.", "Pablo Picasso", "https://en.wikipedia.org/wiki/Guernica_(Picasso)", "Picasso"], ["This Norwegian artist painted The Scream.", "Edvard Munch", "https://en.wikipedia.org/wiki/Edvard_Munch", "Munch"], ["This Salvador Dalí painting features melting pocket watches.", "The Persistence of Memory", "https://en.wikipedia.org/wiki/The_Persistence_of_Memory", "Persistence of Memory"]]],
 ];
-export const DOCKET_CATEGORIES=[...raw,...DOCKET_EXTRA_RAW].map(([id,family,title,clues])=>({id,family,title,clues:clues.map(([prompt,answer,slug,aliases=''],row)=>({id:id+'-'+(row+1),category:title,family,prompt,answer,aliases:aliases.split('|').filter(Boolean),source:W(slug)}))}));
+export const DOCKET_CATEGORIES=[...raw,...DOCKET_EXTRA_RAW].map(([id,family,title,clues])=>({id,family,title,clues:[...clues.map((q,tier)=>({q,tier,id:id+'-'+(tier+1)})),...(DOCKET_EXPANSION_RAW[id]??[]).map((q,tier)=>({q,tier,id:id+'-alt-'+(tier+1)}))].map(({q:[prompt,answer,slug,aliases=''],tier,id:qid})=>({id:qid,tier,category:title,family,prompt,answer,aliases:aliases.split('|').filter(Boolean),source:W(slug)}))}));
 export const DOCKET_FINALS=[
  ['monopoly-final','BOARD GAMES','In the classic U.S. Monopoly board, this property lies between the Short Line railroad and Luxury Tax.','Park Place','Monopoly_(game)'],
  ['space-final','SPACE','The Huygens probe landed on this largest moon of Saturn, whose lakes contain liquid methane rather than water.','Titan','Titan_(moon)'],
