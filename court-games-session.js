@@ -144,7 +144,7 @@ export class CourtGameSession{
  async request(action,extra={}){
   requireGameAvailable(this.mode,this.identity());
   if(!this.connected||this.closed)throw Error('Reconnect before sending an answer.');
-  const context=this.mode==='clash'?{matchId:this.state.matchId??'',round:this.state.round,stage:this.state.stage,stageAt:this.state.stageAt,turnKey:answerTurn(this.state)?.key??'',boardId:this.state.board?.id??''}:{};
+  const context=this.mode==='clash'?{matchId:this.state.matchId??'',round:this.state.round,stage:this.state.stage,stageAt:this.state.stageAt??0,turnKey:answerTurn(this.state)?.key??'',boardId:this.state.board?.id??''}:{};
   if(action==='fast-draft'&&extra.checkIndex===undefined&&this.pending){this.queuedDraft=extra;clearTimeout(this.draftRetry);this.draftRetry=setTimeout(()=>{const next=this.queuedDraft;this.queuedDraft=null;if(next&&!this.closed&&this.state.stage==='fast'&&this.state.turn===this.uid&&this.state.fastPass===next.pass)this.request('fast-draft',next).catch(e=>this.fail(e));},150);return false;}
   if(action==='fast'||(action==='fast-draft'&&extra.checkIndex!==undefined)){this.queuedDraft=null;clearTimeout(this.draftRetry);}
   if((action==='fast'||action==='fast-draft'&&extra.checkIndex!==undefined||this.mode==='clash'&&action==='answer')&&this.pending){const until=performance.now()+3500;while(this.pending&&performance.now()<until&&!this.closed)await new Promise(r=>setTimeout(r,25));}
