@@ -1,3 +1,4 @@
+import {PufferExecution} from './party-execution.js';
 import {gameLogoMarkup} from './game-mascots.js';
 import {COMING_SOON_GAMES,isGameAvailable} from './game-availability.js';
 import {HostVoice} from './court-games-dialogue.js';
@@ -28,6 +29,7 @@ export class OathStage{
  }
  error(message){const el=this.root.querySelector('#oa-inline-error');if(el){el.hidden=!message;el.textContent=message;}}
  render(s,session){
+  this.execution??=new PufferExecution(this.root,{fixed:true,myId:()=>this.session?.uid,clock:()=>this.session?.now()??Date.now()});queueMicrotask(()=>this.execution?.render(s.tabSentences??[],session.now()));
   this.s=s;this.session=session;const me=s.players.find(p=>p.id===session.uid),own=session.response?.oath??{},spectator=!me||me.spectator,round=s.round||0;
   this.shell.dataset.stage=s.stage;this.shell.dataset.camera=s.stage==='oath-reveal'?'reveal':s.stage==='oath-vote'?'vote':'wide';
   this.root.querySelector('[data-oath-phase]').textContent=phaseTitle[s.stage]??'UNDER OATH';this.root.querySelector('[data-oath-question]').textContent=s.stage==='lobby'?'The truth needs witnesses.':s.stage==='oath-intro'?'Lies welcome. Bad acting encouraged.':s.stage==='oath-standings'?'The court has spoken.':s.stage==='finish'?(s.result?.winners?.length>1?'A shared verdict.':name(s,s.result?.winners?.[0])+' takes the court.'):s.case?.prompt??'';
@@ -54,6 +56,7 @@ export class OathStage{
    this.root.querySelector('.oa-lobby-controls').innerHTML=this.session.preview?'<span class="oa-preview-note">OWNER ONLY · FIVE BOTS · PRACTICE</span><button class="oa-primary" data-oath-start>START PRIVATE PREVIEW →</button>':`<button data-oath-invite>INVITE FRIENDS ↗</button><button data-oath-ready>${me?.ready?'✓ READY · UNREADY':'READY UP'}</button>${this.session.host?'<button class="oa-primary" data-oath-start>CALL THE COURT →</button>':'<span>HOST STARTS WHEN EVERYONE IS READY</span>'}`;
    const ready=this.root.querySelector('[data-oath-ready]');if(ready)ready.onclick=()=>this.session.ready(!this.s.players.find(p=>p.id===this.session.uid)?.ready).catch(e=>this.error(e.message));const start=this.root.querySelector('[data-oath-start]');if(start)start.onclick=()=>this.action('start');return;
   }
+  if(own.forfeited&&['oath-write','oath-shuffle','oath-vote'].includes(s.stage)){this.content.innerHTML='<div class="oa-sealed"><b>CASE FORFEITED</b><p>Tab switched. No points for this case.</p></div>';return;}
   if(s.stage==='oath-intro'){this.content.innerHTML=`<div class="oa-intro-steps"><div><b>1</b><strong>WRITE A LIE</strong><span>Something that sounds real.</span></div><div><b>2</b><strong>FIND THE TRUTH</strong><span>Do not fall for your friends.</span></div><div><b>3</b><strong>EXPOSE THEM</strong><span>+1,000 for truth. +500 per fooled vote.</span></div></div>`;return;}
   if(s.stage==='oath-read'){this.content.innerHTML='<div class="oa-read-count" data-oath-count></div>';return;}
   if(s.stage==='oath-write'){
@@ -100,7 +103,7 @@ export class OathStage{
   const evidence=this.content.querySelector('.oa-evidence');if(evidence&&s.evidence&&rows.some(r=>r.kind==='truth')){evidence.hidden=false;evidence.innerHTML=`<p>${esc(s.evidence.explanation)}</p><a href="${esc(s.evidence.source)}" target="_blank" rel="noopener">${esc(s.evidence.sourceTitle)} ↗</a>`;}
  }
  frame(){if(!this.s||!this.session)return;const remaining=Math.max(0,(this.s.deadline??0)-this.session.now()),seconds=Math.ceil(remaining/1000),clock=this.root.querySelector('[data-oath-clock]');if(clock){clock.textContent=['oath-write','oath-vote'].includes(this.s.stage)?seconds+'s':'';clock.classList.toggle('urgent',seconds<=5);}const count=this.root.querySelector('[data-oath-count]');if(count)count.textContent=seconds||'…';this.shell.style.setProperty('--remaining',this.s.stage==='oath-write'?remaining/35000:this.s.stage==='oath-vote'?remaining/20000:1);}
- dispose(){this.voice?.dispose();clearInterval(this.clock);this.observer?.disconnect();this.ambience?.dispose();}
+ dispose(){this.execution?.destroy();this.execution=null;this.voice?.dispose();clearInterval(this.clock);this.observer?.disconnect();this.ambience?.dispose();}
 }
 
 export function oathComingSoonMarkup(signedIn=false){return `<section class="oa-shell oa-coming-soon">${world()}<nav class="oa-nav"><a href="#games">◂ PUFFER GAMES</a><span>FUTURE COUNSEL</span></nav><div class="oa-coming-message">${gameLogoMarkup('oath')}<p>FUTURE COUNSEL PRESENTS</p><h1>UNDER OATH</h1><strong>COMING SOON</strong><span>This courtroom is not open yet.</span>${signedIn?'':'<button class="oa-primary" data-oath-signin>SIGN IN WITH GOOGLE</button>'}<a class="oa-primary" href="#games">BACK TO PUFFER GAMES →</a><p class="oa-error" id="oa-error" role="status" hidden></p></div></section>`;}
@@ -129,7 +132,7 @@ export class OathView{
   q('#oa-name').oninput=e=>{q('[data-preview-name]').textContent=e.target.value||'Your counsel';};
   for(const b of this.root.querySelectorAll('[data-oath-buddy]'))b.onclick=()=>{this.preferences.buddy=b.dataset.oathBuddy;q('.oa-entry-preview>div').innerHTML=buddySprite(this.preferences.buddy);this.root.querySelectorAll('[data-oath-buddy]').forEach(el=>el.setAttribute('aria-pressed',String(el===b)));this.options.savePreferences?.(this.preferences);};
  }
- async loadRooms(){if(!isGameAvailable('oath',this.options.identity())||!this.options.identity())return;try{const c=await(this.options.getCloud?.()??import('./cloud.bundle.js?v=20261024-open-v1'));if(this.disposed||this.session)return;this.offRooms=await listCourtRooms(c,'oath',rooms=>{const mount=this.root.querySelector('#oa-rooms');if(!mount)return;mount.innerHTML=rooms.length?rooms.slice(0,6).map(r=>`<button data-oath-room="${r.code}"><strong>${esc(r.hostName)}</strong><span>${r.count}/6 · ${r.phase==='lobby'?'JOIN':'WATCH'} →</span></button>`).join(''):'<p>The witness boxes are quiet. Host the first court.</p>';mount.querySelectorAll('[data-oath-room]').forEach(b=>b.onclick=()=>{this.root.querySelector('#oa-code').value=b.dataset.oathRoom;this.connect('join');});},e=>this.error(e.message));}catch(e){this.error(e.message);}}
+ async loadRooms(){if(!isGameAvailable('oath',this.options.identity())||!this.options.identity())return;try{const c=await(this.options.getCloud?.()??import('./cloud.bundle.js?v=20261106-final-saves-v28'));if(this.disposed||this.session)return;this.offRooms=await listCourtRooms(c,'oath',rooms=>{const mount=this.root.querySelector('#oa-rooms');if(!mount)return;mount.innerHTML=rooms.length?rooms.slice(0,6).map(r=>`<button data-oath-room="${r.code}"><strong>${esc(r.hostName)}</strong><span>${r.count}/6 · ${r.phase==='lobby'?'JOIN':'WATCH'} →</span></button>`).join(''):'<p>The witness boxes are quiet. Host the first court.</p>';mount.querySelectorAll('[data-oath-room]').forEach(b=>b.onclick=()=>{this.root.querySelector('#oa-code').value=b.dataset.oathRoom;this.connect('join');});},e=>this.error(e.message));}catch(e){this.error(e.message);}}
  error(message){if(this.stage)return this.stage.error(message);const el=this.root.querySelector('#oa-error');if(el){el.hidden=!message;el.textContent=message;}}
  async connect(kind){if(!isGameAvailable('oath',this.options.identity())){this.error('Under Oath is coming soon.');return;}if(!this.options.identity()){this.options.signIn();return;}
   if(COMING_SOON_GAMES.includes('oath')){

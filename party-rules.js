@@ -24,9 +24,9 @@ export function stepParty(state,now=Date.now()){
  const who=state.players[state.turn];const didPop=state.phase==='playing'&&now>=state.deadline;
  const changed=tickParty(state,now);if(didPop){state.popped={id:who.id,at:now};state.players.forEach(p=>{delete p.lastAnswer;});}return changed;
 }
-export function enforceTabFocus(state,now=Date.now()){
+export function enforceTabFocus(state,now=Date.now(),exemptions={}){
  let changed=false;
- const due=Object.entries(state.focusReports??{}).filter(([id,report])=>absenceDue(state,id,report,now));
+ const due=Object.entries(state.focusReports??{}).filter(([id,report])=>exemptions[id]!==true&&absenceDue(state,id,report,now));
  for(const [id,report]of due)changed=sentenceTabSwitch(state,id,now,report.leftAt,false)||changed;
  if(changed)finishPartyIfAlone(state,now);
  return changed;

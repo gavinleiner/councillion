@@ -1,3 +1,5 @@
+import {LocalFocus,focusExempt,courtFocusEligible,courtFocusKey} from './fair-play.js';
+import {enforceCourtFocus} from './court-focus.js';
 import {canAdmin} from './account-honors.js';
 import {createCourtGame,startCourtGame,actCourtGame,tickCourtGame} from './court-games-engine.js';
 import {OATH_BY_ID} from './oath-data.js';
@@ -8,7 +10,7 @@ import {oathReceipt} from './oath-engine.js';
 export async function authorizeOathPreview({identity,authorize,getCloud}){
  const auth=await authorize(),verified=auth.identity??identity();
  if(!canAdmin(verified))throw Error('This private preview is owner-only.');
- const c=await(getCloud?.()??import('./cloud.bundle.js?v=20261024-open-v1'));
+ const c=await(getCloud?.()??import('./cloud.bundle.js?v=20261106-final-saves-v28'));
  await c.get(c.ref(c.db,'ownerPreviews/oath'));
  return verified;
 }
@@ -20,10 +22,10 @@ export class OathPreviewSession{
   Object.assign(this,{identity,onState,onError,clock,googleId:verified.id,uid:'owner-preview',host:true,preview:true,code:'OWNER PREVIEW',connected:true,pending:false,closed:false,secret:{},phaseKey:'',phaseAt:clock()});
   if(!canAdmin(verified))throw Error('This private preview is owner-only.');
   this.state=createCourtGame('oath',[{id:this.uid,name,buddy,ready:true,online:true,connected:true},...['Nori Bot','Sage Bot','Pearl Bot','Mako Bot','Reef Bot'].map((name,i)=>({id:'preview-bot-'+i,name,buddy:['squid','schooler','angler','evil','krill'][i],ready:true,online:true,connected:true}))]);
-  this.timer=setInterval(()=>this.tick(),200);
+  this.focus=new LocalFocus({eligible:()=>!this.closed&&courtFocusEligible(this.state,this.uid)?courtFocusKey(this.state):null,exempt:()=>focusExempt(this.identity()),clock:()=>this.now(),penalize:(question,leftAt)=>{enforceCourtFocus(this.state,this.secret,{[this.uid]:{game:this.state.matchId,question,leftAt,hidden:false,returnedAt:this.now()}},this.now());this.render();}});this.timer=setInterval(()=>this.tick(),200);
  }
  now(){return this.clock();}
- render(){if(this.closed)return;this.response={oath:oathReceipt(this.state,this.secret,this.uid)};this.onState(this.state,this);}
+ render(){if(this.closed)return;this.focus.sync();this.response={oath:oathReceipt(this.state,this.secret,this.uid)};this.onState(this.state,this);}
  async ready(){return;}
  send(uid,action,p={}){const s=this.state;return actCourtGame(s,this.secret,uid,action,{...p,matchId:s.matchId,round:s.round,stageAt:s.stageAt},this.now());}
  async request(action,p={}){
@@ -47,5 +49,5 @@ export class OathPreviewSession{
    if(changed)this.render();
   }catch(e){this.onError(e.message);}
  }
- async close(){this.closed=true;this.connected=false;clearInterval(this.timer);}
+ async close(){this.focus.destroy();this.closed=true;this.connected=false;clearInterval(this.timer);}
 }

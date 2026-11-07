@@ -28,8 +28,8 @@ export function startOath(s,secret,now=Date.now(),rng=Math.random){
 }
 function nextRound(s,secret,now){
  const ref=secret.oath,q=OATH_BY_ID.get(ref.deck[s.round]);if(!q)return finishOath(s,now);
- s.round++;s.case={id:q.id,prompt:q.prompt,hint:q.hint,category:q.category};s.locked={};s.voted={};s.choices=[];s.revealed=[];s.advanceReady={};delete s.roundResult;delete s.reveal;delete s.evidence;
- ref.submissions={};ref.votes={};ref.knowers={};ref.options=[];ref.revealIndex=0;ref.verdict=[];ref.scored=false;stage(s,'oath-read',now,OATH_TIMING.read);event(s,'oath-case','Case '+s.round+'. Read the evidence.',now);
+ s.focusOpenedAt=now;s.round++;s.case={id:q.id,prompt:q.prompt,hint:q.hint,category:q.category};s.locked={};s.voted={};s.choices=[];s.revealed=[];s.advanceReady={};delete s.roundResult;delete s.reveal;delete s.evidence;
+ ref.submissions={};ref.votes={};ref.knowers={};ref.forfeits={};ref.options=[];ref.revealIndex=0;ref.verdict=[];ref.scored=false;stage(s,'oath-read',now,OATH_TIMING.read);event(s,'oath-case','Case '+s.round+'. Read the evidence.',now);
 }
 function buildOptions(s,secret,now,rng){
  const ref=secret.oath,q=fact(s),options=[{text:q.answer,kind:'truth',authors:[]}];
@@ -51,12 +51,18 @@ function scoreRound(s,secret,now){
  const ref=secret.oath;if(ref.scored)return;ref.scored=true;const multiplier=s.round===s.settings.rounds?2:1,truth=ref.options.find(o=>o.kind==='truth'),gains=Object.fromEntries(participants(s).map(p=>[p.id,0])),fooled=Object.fromEntries(participants(s).map(p=>[p.id,0]));
  for(const p of participants(s))if(ref.knowers[p.id]||ref.votes[p.id]===truth.id)gains[p.id]+=1000*multiplier;
  for(const o of ref.options.filter(o=>o.kind==='bluff')){const voters=Object.entries(ref.votes).filter(([,v])=>v===o.id).length;for(const id of o.authors){gains[id]=(gains[id]??0)+500*voters*multiplier;fooled[id]=voters;}}
+ for(const id of Object.keys(ref.forfeits??{}))gains[id]=0;
  const rows=participants(s).map(p=>({id:p.id,before:p.score,gain:gains[p.id],score:p.score+gains[p.id],fooled:fooled[p.id],correct:!!ref.knowers[p.id]||ref.votes[p.id]===truth.id}));for(const p of s.players)p.score+=gains[p.id]??0;rows.sort((a,b)=>b.score-a.score);
  s.roundResult={rows,multiplier};s.history.push({round:s.round,id:s.case.id,rows});s.advanceReady={};stage(s,'oath-standings',now,OATH_TIMING.standings);event(s,'oath-scores','The court has spoken. Here is the damage.',now);
 }
 function finishOath(s,now){const rows=participants(s).map(p=>({id:p.id,score:p.score})).sort((a,b)=>b.score-a.score),max=rows[0]?.score??0;s.result={scores:rows,winners:rows.filter(r=>r.score===max).map(r=>r.id)};s.endedAt=now;stage(s,'finish',now,0);event(s,'oath-finish','Court adjourned. The final verdict is in.',now);return true;}
 export function oathReceipt(s,secret,uid){
- const ref=secret.oath;if(!ref||!s.matchId)return null;return {matchId:s.matchId,round:s.round,text:ref.submissions[uid]?.text??'',knows:!!ref.knowers[uid],selection:ref.votes[uid]??'',ownChoices:ref.options.filter(o=>o.authors.includes(uid)).map(o=>o.id)};
+ const ref=secret.oath;if(!ref||!s.matchId)return null;return {matchId:s.matchId,round:s.round,text:ref.submissions[uid]?.text??'',knows:!!ref.knowers[uid],forfeited:!!ref.forfeits?.[uid],selection:ref.votes[uid]??'',ownChoices:ref.options.filter(o=>o.authors.includes(uid)).map(o=>o.id)};
+}
+export function sentenceOathTabSwitch(s,secret,uid){
+ const ref=secret.oath;ref.forfeits??={};ref.forfeits[uid]=true;delete ref.votes[uid];delete ref.knowers[uid];s.locked[uid]=true;s.voted[uid]=true;
+ if(s.stage==='oath-write')delete ref.submissions[uid];
+ return 'CASE FORFEITED · 0 POINTS';
 }
 export function actOath(s,secret,uid,action,payload={},now=Date.now()){
  const p=present(s).find(p=>p.id===uid);if(!p)throw Error('Only active witnesses can act.');if(payload.matchId!==s.matchId||payload.round!==s.round||payload.stageAt!==s.stageAt)throw Error('That belongs to an earlier phase.');if(s.deadline&&now>=s.deadline)throw Error('That timer has ended.');const ref=secret.oath;

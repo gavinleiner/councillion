@@ -81,7 +81,7 @@ test('both Fast Money runs start automatically and have thirty-two actual answer
 
 test('Fast Money typo correction is private, Enter confirmation saves canonical wording, and timeout cannot approve it',()=>{
  const c=court();fast(c);const {s,secret}=c;s.fastIds[0]='big-ears';const values=['Elephnat','','','',''],r=send(c,s.turn,'fast-draft',{values,checkIndex:0,pass:0,cursor:0});
- assert.equal(r.correction.label,'Elephant');assert.equal(s.stage,'fast');assert.ok(!JSON.stringify(s).includes('Elephnat'));assert.equal(secret.fastDraft?.[s.turn],undefined);
+ assert.equal(r.correction.label,'Elephant');assert.equal(s.stage,'fast');assert.ok(!JSON.stringify(s).includes('Elephnat'));assert.equal(secret.fastDraft[s.turn].values[0],'Elephnat');assert.equal(r.saved,true);
  const confirmed=send(c,s.turn,'fast-draft',{values,checkIndex:0,confirmLabel:'Elephant',pass:0,cursor:0});assert.equal(confirmed.value,'Elephant');assert.equal(secret.fastDraft[s.turn].values[0],'Elephant');
  const bypass=send(c,s.turn,'fast',{values,pass:0});assert.deepEqual(bypass.retry,[0]);assert.equal(s.stage,'fast');
  due(c);assert.equal(secret.fast[s.fastPlayers[0]][0].label,'Elephant');assert.equal(secret.fast[s.fastPlayers[0]][0].points,46);

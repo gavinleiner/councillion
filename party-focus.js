@@ -1,7 +1,7 @@
 // A visibility report belongs only to its author and current match. Keep the
 // return timestamp so a sleeping host can still adjudicate the absence later.
 export const TAB_GRACE_MS=1500;
-export const FOCUS_BUILD='puffer-bailiff-v1';
+export const FOCUS_BUILD='puffer-bailiff-v2';
 export const focusEligible=(state,id)=>['playing','burst'].includes(state?.phase)&&!!state.matchId&&state.players.some(p=>p.id===id&&p.connected&&!p.spectator&&p.hearts>0);
 export function absenceDue(state,id,report,now){
  if(!focusEligible(state,id)||report?.game!==state.matchId||!Number.isFinite(report.leftAt)||report.leftAt<(state.matchStartedAt??0)||report.leftAt>now)return false;
