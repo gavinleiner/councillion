@@ -1,6 +1,6 @@
 import {gameLogoMarkup} from './game-mascots.js';
 import {enhanceGameMascots} from './game-mascot-motion.js';
-import {COMING_SOON_GAMES,isGameAvailable} from './game-availability.js';
+import {COMING_SOON_GAMES,isGameEntryAvailable} from './game-availability.js';
 import {buddySprite} from './party-buddy-sprite.js';
 import {mountCourtAmbience} from './party-ambience.js';
 
@@ -45,7 +45,7 @@ export function mountPufferGames(root,{games=PUFFER_GAMES,identity=()=>null}={})
  }
  function select(g,{picked=false}={}){
   const el=doors.querySelector('[data-game="'+CSS.escape(g.id)+'"]');if(!el)return;
-  const available=isGameAvailable(g.id,identity()),changed=active!==g.id;active=g.id;hall.dataset.active=g.id;
+  const available=isGameEntryAvailable(g.id,identity()),changed=active!==g.id;active=g.id;hall.dataset.active=g.id;
   doors.querySelectorAll('.pg-door').forEach(a=>a.classList.toggle('pg-selected',a===el));hall.style.setProperty('--spotlight',g.color);
   root.querySelector('.pg-current-name').textContent=picked?'THE JUDGE PICKS '+g.name.toUpperCase():g.name.toUpperCase();
   current.textContent=available?g.copy:'Under Oath is coming soon. This courtroom is not open yet.';
@@ -66,11 +66,11 @@ export function mountPufferGames(root,{games=PUFFER_GAMES,identity=()=>null}={})
   const rows=games.slice(page*perPage,(page+1)*perPage),places=[[.139,.494],[.319,.567],[.501,.631],[.683,.567],[.861,.494]],order=perPage===1?[2]:perPage===3?[2,1,3]:[2,1,3,0,4];
   active=null;ambience?.focus(null);hall.removeAttribute('data-active');
   doors.innerHTML=rows.map((g,i)=>{
-   const available=isGameAvailable(g.id,identity()),upcoming=COMING_SOON_GAMES.includes(g.id),tag=available?'a':'button',attrs=available?`href="#${esc(g.id)}"`:'type="button" disabled aria-disabled="true"';
-   return `<${tag} class="pg-door ${upcoming?'pg-coming-soon':''} ${available&&upcoming?'pg-owner-preview':''}" ${attrs} data-game="${esc(g.id)}" style="--door-x:${places[order[i]][0]*100}%;--door-y:${places[order[i]][1]*100}%;--game-color:${g.color};--arrival:${i}" aria-label="${available?'Play '+esc(g.name):esc(g.name)+' — Coming Soon'}"><span class="pg-door-glow" aria-hidden="true"></span><span class="pg-door-ripples" aria-hidden="true"><i></i><i></i><i></i></span><span class="pg-door-character">${gameLogoMarkup(g.id,{decorative:true})||buddySprite(g.buddy)}</span>${upcoming?'<span class="pg-coming-ribbon" aria-hidden="true">COMING SOON</span>':''}<span class="pg-mascot-emotes" aria-hidden="true">${preview(g.id)}</span><span class="pg-door-name">${esc(g.name)}</span><span class="pg-door-tag">${upcoming?(available?'PRIVATE OWNER PREVIEW':'COMING SOON'):esc(g.tag)}</span><span class="pg-door-enter">${upcoming?(available?'PREVIEW WITH BOTS <b>→</b>':'COURT CLOSED'):esc(g.players)+' PLAYERS <b>→</b>'}</span></${tag}>`;
+   const available=isGameEntryAvailable(g.id,identity()),upcoming=COMING_SOON_GAMES.includes(g.id),tag=available?'a':'button',attrs=available?`href="#${esc(g.id)}"`:'type="button" disabled aria-disabled="true"';
+   return `<${tag} class="pg-door ${upcoming?'pg-coming-soon':''} ${available&&upcoming?'pg-owner-preview':''}" ${attrs} data-game="${esc(g.id)}" style="--door-x:${places[order[i]][0]*100}%;--door-y:${places[order[i]][1]*100}%;--game-color:${g.color};--arrival:${i}" aria-label="${available?'Play '+esc(g.name):esc(g.name)+' — Coming Soon'}"><span class="pg-door-glow" aria-hidden="true"></span><span class="pg-door-ripples" aria-hidden="true"><i></i><i></i><i></i></span><span class="pg-door-character">${gameLogoMarkup(g.id,{decorative:true})||buddySprite(g.buddy)}</span>${upcoming?'<span class="pg-coming-ribbon" aria-hidden="true">COMING SOON</span>':''}<span class="pg-mascot-emotes" aria-hidden="true">${preview(g.id)}</span><span class="pg-door-name">${esc(g.name)}</span><span class="pg-door-tag">${upcoming?(available?'YOUR PRIVATE PREVIEW':'COMING SOON'):esc(g.tag)}</span><span class="pg-door-enter">${upcoming?(available?'PREVIEW WITH BOTS <b>→</b>':'COURT CLOSED'):esc(g.players)+' PLAYERS <b>→</b>'}</span></${tag}>`;
   }).join('');enhanceGameMascots(doors,abort.signal);
   wings.innerHTML=pages>1?`<button data-wing="-1" ${page===0?'disabled':''}>← PREVIOUS COVE</button><span>${page+1} / ${pages}</span><button data-wing="1" ${page===pages-1?'disabled':''}>NEXT COVE →</button>`:'';
-  doors.querySelectorAll('.pg-door').forEach(el=>{const g=rows.find(g=>g.id===el.dataset.game);el.onpointerenter=()=>select(g);el.onfocus=()=>select(g);if(isGameAvailable(g.id,identity()))el.onclick=e=>enter(e,g);});
+  doors.querySelectorAll('.pg-door').forEach(el=>{const g=rows.find(g=>g.id===el.dataset.game);el.onpointerenter=()=>select(g);el.onfocus=()=>select(g);if(isGameEntryAvailable(g.id,identity()))el.onclick=e=>enter(e,g);});
   wings.querySelectorAll('[data-wing]').forEach(b=>b.onclick=()=>{page+=Number(b.dataset.wing);render();doors.querySelector('a')?.focus({preventScroll:true});});
  }
  hall.onkeydown=e=>{
@@ -82,7 +82,7 @@ export function mountPufferGames(root,{games=PUFFER_GAMES,identity=()=>null}={})
  hall.onpointerleave=()=>{targetX=targetY=0;schedulePan();};
  hall.onpointerdown=e=>{if(e.button||e.target.closest('a,button')||still())return;const r=world.getBoundingClientRect();ambience?.pulse((e.clientX-r.x)/r.width*100,(e.clientY-r.y)/r.height*100,'touch');};
  root.querySelector('.pg-guide').onclick=()=>{
-  if(leaving)return;const available=games.filter(g=>!COMING_SOON_GAMES.includes(g.id)&&isGameAvailable(g.id,identity()));if(!available.length)return;
+  if(leaving)return;const available=games.filter(g=>!COMING_SOON_GAMES.includes(g.id)&&isGameEntryAvailable(g.id,identity()));if(!available.length)return;
   const g=available[Math.floor(Math.random()*available.length)],next=Math.floor(games.indexOf(g)/perPage);if(next!==page){page=next;render();}
   doors.querySelector('[data-game="'+CSS.escape(g.id)+'"]')?.focus({preventScroll:true});select(g,{picked:true});
  };
