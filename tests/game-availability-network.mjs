@@ -7,6 +7,7 @@ const host=env.authenticatedContext('host',{firebase:{sign_in_provider:'google.c
 const member=env.authenticatedContext('member',{firebase:{sign_in_provider:'google.com'}}).database();
 const guest=env.authenticatedContext('joining',{firebase:{sign_in_provider:'google.com'}}).database();
 const owner=env.authenticatedContext('owner',{email:'gavin@theleiners.com',email_verified:true,firebase:{sign_in_provider:'google.com'}}).database();
+const president=env.authenticatedContext('pres',{email:'gavin.leiner@student.nhcs.net',email_verified:true,firebase:{sign_in_provider:'google.com'}}).database();
 const person=name=>({name,buddy:'krill',protocol:4,joinedAt:Date.now(),lastSeen:Date.now(),online:true,ready:true,autoJoin:false});
 const room=mode=>({meta:{host:'host',hostName:'Counsel',version:3,protocol:4,game:mode,createdAt:Date.now(),isPrivate:false,seats:6,phase:'lobby'},members:{host:person('Counsel'),member:person('Witness')},state:{variant:mode,phase:'lobby',stage:'lobby',players:[{id:'host',name:'Counsel'}],settings:{maxPlayers:6},round:0,revision:0}});
 const directory=game=>({hostName:'Counsel',count:2,seats:6,phase:'lobby',updatedAt:Date.now(),game});
@@ -26,11 +27,17 @@ try{
  await env.withSecurityRulesDisabled(async c=>{await set(ref(c.database(),'directory/OATH'),directory('oath'));});
  await assertSucceeds(set(ref(host,'directory/OATH'),null));
  await assertSucceeds(get(ref(owner,'ownerPreviews/oath')));
+ await assertSucceeds(get(ref(president,'ownerPreviews/oath')));
+ await assertFails(set(ref(president,'ownerPreviews/oath'),{enabled:true}));
  await assertFails(get(ref(member,'ownerPreviews/oath')));
- for(const claims of [{email:'gavin@theleiners.com',email_verified:false,firebase:{sign_in_provider:'google.com'}},{email:'gavin@theleiners.com',email_verified:true,firebase:{sign_in_provider:'password'}},{email:'logan.lewis2@student.nhcs.net',email_verified:true,firebase:{sign_in_provider:'google.com'}}])await assertFails(get(ref(env.authenticatedContext('spoof',claims).database(),'ownerPreviews/oath')));
+ for(const claims of [{email:'gavin@theleiners.com',email_verified:false,firebase:{sign_in_provider:'google.com'}},{email:'gavin@theleiners.com',email_verified:true,firebase:{sign_in_provider:'password'}},{email:'gavin.leiner@student.nhcs.net',email_verified:false,firebase:{sign_in_provider:'google.com'}},{email:'gavin.leiner@student.nhcs.net',email_verified:true,firebase:{sign_in_provider:'password'}},{email:'another.gavin@example.invalid',email_verified:true,firebase:{sign_in_provider:'google.com'}},{email:'logan.lewis2@student.nhcs.net',email_verified:true,firebase:{sign_in_provider:'google.com'}}])await assertFails(get(ref(env.authenticatedContext('spoof',claims).database(),'ownerPreviews/oath')));
  const privateRoom=room('oath');privateRoom.meta.host='owner';privateRoom.meta.isPrivate=true;privateRoom.members={owner:person('Gavin')};
  await assertSucceeds(set(ref(owner,'rooms/OWNR'),privateRoom));
  await assertSucceeds(get(ref(owner,'rooms/OWNR/state')));
+ await assertFails(get(ref(president,'rooms/OWNR/state')));
+ const schoolRoom=structuredClone(privateRoom);schoolRoom.meta.host='pres';schoolRoom.members={pres:person('Gavin')};
+ await assertFails(set(ref(president,'rooms/PRES'),schoolRoom));
+ await assertFails(set(ref(president,'rankGrants/pres'),{version:1,rank:'highest',at:Date.now()}));
  await assertFails(get(ref(member,'rooms/OWNR/meta')));
  await assertFails(set(ref(guest,'rooms/OWNR/members/joining'),person('Joining')));
  await assertFails(update(ref(owner,'rooms/OWNR/meta'),{isPrivate:false}));
@@ -43,5 +50,5 @@ try{
   await assertSucceeds(set(ref(host,'directory/'+code),directory(mode)));
   assert.equal((await get(ref(host,'rooms/'+code+'/state/revision'))).val(),1);
  }
- console.log('PASS: only the verified Google owner can read the preview marker or open a private Oath room; guests, members, unverified owner, wrong provider and VP denied. Non-owner reads, joins and actions denied. Oath cannot be public. Other four games still work.');
+ console.log('PASS: both exact verified Gavin Google accounts can read the local-preview marker; school account cannot write it, access Oath rooms, or grant ranks. Only owner can open a private Oath room. Unverified, wrong-provider, other Gavin and VP accounts denied. Other four games still work.');
 }finally{await env.cleanup();}
