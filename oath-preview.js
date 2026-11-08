@@ -3,6 +3,7 @@ import {enforceCourtFocus} from './court-focus.js';
 import {canPreviewOath} from './game-availability.js';
 import {createCourtGame,startCourtGame,actCourtGame,tickCourtGame} from './court-games-engine.js';
 import {OATH_BY_ID} from './oath-data.js';
+import {oathBotClue,oathBotVote,oathBotGuess} from './oath-bots.js';
 import {oathReceipt} from './oath-engine.js';
 
 // A real signed-token database read gates the preview. Editable client profile
@@ -30,7 +31,7 @@ export class OathPreviewSession{
  send(uid,action,p={}){const s=this.state;return actCourtGame(s,this.secret,uid,action,{matchId:s.matchId,round:s.round,stageAt:s.stageAt,...p},this.now());}
  setOathDraft(text){clearTimeout(this.draftTimer);const context={matchId:this.state.matchId,round:this.state.round,stageAt:this.state.stageAt};this.draftTimer=setTimeout(()=>this.request('oath-draft',{text,...context}).catch(e=>this.onError(e.message)),180);}
  async request(action,p={}){
-  if(action==='oath-bluff')clearTimeout(this.draftTimer);
+  if(['oath-bluff','oath-guess'].includes(action))clearTimeout(this.draftTimer);
   if(this.closed||!canPreviewOath(this.identity()))throw Error('Sign in with your authorized Google account to continue the preview.');
   if(action==='start'||action==='rematch'){if(!['lobby','finish'].includes(this.state.stage))return;startCourtGame(this.state,this.now(),Math.random,this.secret);}
   else this.send(this.uid,action,p);
@@ -40,13 +41,11 @@ export class OathPreviewSession{
   if(this.closed)return;
   if(!canPreviewOath(this.identity())){this.close();this.onError('Your preview sign-in expired. Sign in again to continue.');return;}
   const s=this.state,key=[s.matchId,s.round,s.stage,s.stageAt].join(':');if(key!==this.phaseKey){this.phaseKey=key;this.phaseAt=this.now();}
-  const elapsed=this.now()-this.phaseAt,q=OATH_BY_ID.get(s.case?.id);let changed=false;
+  const elapsed=this.now()-this.phaseAt,ref=this.secret.oath,q=OATH_BY_ID.get(ref?.caseId);let changed=false;
   try{
-   if(s.stage==='oath-write')for(const [i,p]of s.players.slice(1).entries())if(!s.locked[p.id]&&elapsed>2500+i*550){this.send(p.id,'oath-bluff',{text:i===4&&s.round%2===0?q.answer:q.decoys[i%q.decoys.length]});changed=true;}
-   if(s.stage==='oath-vote')for(const [i,p]of s.players.slice(1).entries())if(!s.voted[p.id]&&elapsed>2300+i*650){
-    const choices=this.secret.oath.options.filter(o=>!o.authors.includes(p.id)),truth=choices.find(o=>o.kind==='truth'),bluffs=choices.filter(o=>o.kind!=='truth'),choice=(i+s.round)%3===0?truth:bluffs[(i+s.round)%bluffs.length]??truth;
-    this.send(p.id,'oath-vote',{choice:choice.id});changed=true;
-   }
+   if(s.stage==='oath-write')for(const [i,p]of s.players.slice(1).entries())if(s.turn===p.id&&!s.locked[p.id]&&elapsed>3000+i%3*350){this.send(p.id,'oath-bluff',{text:oathBotClue(q,p.id===ref.impostor,i,s.round)});changed=true;}
+   if(s.stage==='oath-vote')for(const [i,p]of s.players.slice(1).entries())if(!s.voted[p.id]&&elapsed>5500+i*650){this.send(p.id,'oath-vote',{choice:oathBotVote(s,ref,p.id,i)});changed=true;}
+   if(s.stage==='oath-guess'&&s.turn!==this.uid&&!s.guessSealed&&elapsed>4000){this.send(s.turn,'oath-guess',{text:oathBotGuess(q,s.players.findIndex(p=>p.id===s.turn),s.round)});changed=true;}
    if(tickCourtGame(s,this.secret,this.now()))changed=true;
    if(changed)this.render();
   }catch(e){this.onError(e.message);}

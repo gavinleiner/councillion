@@ -1,30 +1,137 @@
-// Original prompts; invented decoys are always labelled as decoys at the reveal.
-// Sources are shown after voting. Never send an answer hint while writing a lie.
-const rows=[
-['nintendo','Games','Before video games, Nintendo first sold what?','A type of product','Hanafuda playing cards',['playing cards','cards','hanafuda','Japanese playing cards','Japanese cards','hanafuda cards','traditional playing cards'],['Wooden dolls','Bicycle bells','Kite kits'],'Nintendo began making Japanese hanafuda cards in Kyoto in 1889.','https://www.nintendo.co.jp/corporate/en/history/index.html','Nintendo company history'],
-['creeper','Games','Minecraft’s Creeper came from a failed attempt to model which animal?','An animal','A pig',['pig','pigs'],['A frog','A chicken','A sheep'],'Minecraft describes a mix-up in a pig model’s dimensions that became the Creeper.','https://www.minecraft.net/es-es/article/meet-creeper','Minecraft · Meet the Creeper'],
-['cube','Games','Before it was called Rubik’s Cube, what was the puzzle called?','A two-word name','Magic Cube',['the magic cube'],['Logic Box','Rainbow Block','Twist Tower'],'Ernő Rubik first called his puzzle the Magic Cube.','https://rubiks.com/history','Rubik’s history'],
-['jumpman','Games','What name did Mario use in the original Donkey Kong arcade game?','A character name','Jumpman',['jump man'],['Mr. Fixit','Hammer Jack','Brickman'],'Nintendo identifies Jumpman as Mario’s early name in Donkey Kong.','https://www.nintendo.com/en-ca/whatsnew/wahoo-see-the-platforming-history-of-super-mario-and-even-get-a-few-fun-facts/','Nintendo · Mario history'],
-['wombat','Animals','Wombat poop is famous for coming out in what shape?','A shape','Cubes',['cube','cube shaped','cube-shaped','cubic'],['Stars','Spirals','Pyramids'],'Researchers studied how a wombat’s intestine forms cube-shaped droppings.','https://www.hu.gatech.edu/Lee/cubed-poops/','Georgia Tech · Cubed wombat poop'],
-['butterfly','Animals','Butterflies can taste a leaf with which part of their body?','A body part','Their feet',['feet','foot','legs','their legs'],['Their wings','Their eyes','Their abdomen'],'Contact chemoreceptors in butterfly feet help identify suitable plants.','https://carleton.ca/biology/description/do-butterflies-really-taste-through-their-feet/','Carleton University · Butterfly feet'],
-['otter','Animals','Sea otters keep little storage pockets under which body part?','A body part','Their armpits',['armpits','armpit','underarms','arms','front legs','forelegs'],['Their cheeks','Their tails','Their ears'],'Loose folds under sea otters’ forearms hold food and tools.','https://www.aquariumofpacific.org/blogs/comments/chloe_the_sea_otter_demonstrates_otter_pockets','Aquarium of the Pacific · Otter pockets'],
-['blueblood','Animals','What metal makes an octopus’s oxygen-carrying blood blue?','A metal','Copper',[],['Silver','Cobalt','Zinc'],'Cephalopods use copper-containing hemocyanin to carry oxygen.','https://ocean.si.edu/ocean-life/invertebrates/octopuses-squids-and-relatives','Smithsonian Ocean · Cephalopods'],
-['lego','Origins','LEGO comes from Danish words meaning what?','A short phrase','Play well',['playwell','to play well'],['Little bricks','Build together','Make something'],'LEGO contracts the Danish phrase leg godt, meaning play well.','https://www.lego.com/en-us/aboutus/lego-group/the-lego-group-history','LEGO Group history'],
-['bluetooth','Origins','Bluetooth was named after someone with what job?','A role or title','A king',['king','viking king','a viking king','Danish king','a Danish king','king Harald','Harald Bluetooth','Harald','Harald Gormsson','King Harald Bluetooth','Viking','Danish monarch','monarch','Danish ruler','Viking ruler'],['A dentist','A pirate captain','A radio engineer'],'King Harald Bluetooth inspired the wireless standard’s name.','https://www.bluetooth.com/about-us/Bluetooth-origin/','Bluetooth SIG · Origin of the name'],
-['bubblewrap','Origins','Bubble Wrap’s inventors originally wanted to sell it as what?','A household product','Wallpaper',['textured wallpaper','wall paper','decorative wallpaper'],['A shower curtain','A mattress liner','A greenhouse roof'],'Sealed Air traces Bubble Wrap to an early idea for textured wallpaper.','https://jobs.sealedair.com/content/Our-History/?locale=en_US','Sealed Air · Our history'],
-['pez','Origins','The name PEZ is shortened from a German word for which flavor?','A flavor','Peppermint',['pepper mint','mint'],['Lemon','Cherry','Licorice'],'PEZ uses the first, middle and last letters of Pfefferminz.','https://us.pez.com/pages/history','PEZ · Brand history'],
-['unicorn','World','Scotland’s national animal is which mythical creature?','A creature','A unicorn',['unicorn','white unicorn'],['A dragon','A griffin','A kelpie'],'The unicorn is Scotland’s national animal and appears in royal symbolism.','https://www.scotland.org/inspiration/what-is-the-national-animal-of-scotland','Scotland.org · National animal'],
-['bigben','World','Strictly speaking, London’s Big Ben is the name of what?','A physical object','The Great Bell',['bell','great bell','a bell','the bell','clock bell','a clock bell','bell inside the tower'],['The minute hand','The tower’s lantern','The clock mechanism'],'Big Ben originally refers to the Great Bell inside the Elizabeth Tower.','https://www.parliament.uk/globalassets/documents/commons-information-office/big-ben.pdf','UK Parliament · Big Ben'],
-['londonbridge','World','The old London Bridge was bought and rebuilt in which US state?','A US state','Arizona',['AZ','the state of Arizona'],['Nevada','Florida','California'],'The bridge was moved from London to Lake Havasu City in Arizona.','https://eros.usgs.gov/media-gallery/image-of-the-week/lake-havasu-city-and-london-bridge','USGS · London Bridge'],
-['nepal','World','Which country’s national flag consists of two joined triangular pennants?','A country','Nepal',[],['Bhutan','Sri Lanka','Mongolia'],'Nepal’s flag has two triangular pennants, unlike the usual four-sided national flags.','https://wapi.gov.me/download/71900649-e428-48ce-9d71-b26bd145e2d2?version=1.0','Government flag reference · Nepal'],
-['uranus','Space','A gas in Uranus’s clouds would remind your nose of what food gone bad?','A familiar smell','Rotten eggs',['eggs','rotten egg','a rotten egg','egg','sulfur','sulphur'],['Sour milk','Old fish','Moldy cheese'],'Hydrogen sulfide in Uranus’s clouds is associated with the smell of rotten eggs.','https://science.nasa.gov/earth/10-things-tour-of-storms-across-the-solar-system/','NASA · Solar System storms'],
-['venus','Space','On Venus, one complete spin takes longer than one what?','A period of time','Year',['venus year','a venus year','one year','orbit','one orbit','trip around the sun'],['Century','Lunar cycle','Season'],'A complete Venus rotation takes about 243 Earth days; its year takes about 225. This is a full spin, not a sunrise-to-sunrise solar day.','https://science.nasa.gov/venus/venus-facts/','NASA · Venus facts'],
-['saturn','Space','Saturn has a huge weather pattern at its north pole shaped like what?','A shape','A hexagon',['hexagon','hexagonal storm','six sided shape','six-sided shape','six sided polygon','6 sided shape'],['A spiral','A pentagon','A triangle'],'Saturn’s north polar jet stream forms a distinctive six-sided pattern.','https://science.nasa.gov/missions/cassini/cassini-images-bizarre-hexagon-on-saturn/','NASA · Saturn’s hexagon'],
-['marssunset','Space','What color can the sky near the Sun turn during a Martian sunset?','A color','Blue',['bluish','blueish'],['Green','Purple','Yellow'],'Fine Martian dust allows blue light through more efficiently near the setting Sun.','https://science.nasa.gov/solar-system/planets/mars/what-does-a-sunrise-sunset-look-like-on-mars/','NASA · Martian sunsets'],
-['luxo','Culture','What is Pixar’s little hopping desk-lamp character called?','A character name','Luxo Jr.',['Luxo Junior','Luxo Jr','Luxo'],['Lumo','Sparky','Filmo'],'Luxo Jr. is the young desk lamp in Pixar’s 1986 short.','https://www.pixar.com/luxo-jr/','Pixar · Luxo Jr.'],
-['chewie','Culture','George Lucas’s dog helped inspire Chewbacca. What was the dog’s name?','A name','Indiana',['Indy'],['Alaska','Dakota','Montana'],'Lucas’s Alaskan Malamute, Indiana, helped inspire Han Solo’s loyal copilot.','https://www.starwars.com/news/20-odd-but-true-star-wars-facts-to-impress-your-friends-on-may-the-4th','StarWars.com · Behind-the-scenes facts'],
-['cole','Culture','In 2021, J. Cole played pro basketball for the Patriots in which country?','A country','Rwanda',['Republic of Rwanda','Rwandan'],['Senegal','Ghana','Kenya'],'J. Cole played for the Rwanda-based Patriots in the first Basketball Africa League season.','https://abcnews.com/Sports/rapper-cole-makes-pro-hoops-debut-africas-patriots/story?id=77724398','ABC News · J. Cole’s pro debut'],
-['pickles','Culture','The dog who found the stolen 1966 World Cup trophy had what food-related name?','A name','Pickles',['pickle'],['Biscuit','Sausage','Peanut'],'Pickles found the stolen Jules Rimet trophy in London before the 1966 World Cup.','https://inside.fifa.com/en/news/pickles-and-the-stolen-world-cup-2771152','FIFA · Pickles and the stolen World Cup']
-];
-export const OATH_QUESTIONS=rows.map(([id,category,prompt,hint,answer,aliases,decoys,explanation,source,sourceTitle])=>({id:'oath-'+id,category,prompt,hint,answer,aliases,decoys,explanation,source,sourceTitle}));
+// Familiar secret words, with a deliberately broad hint for the impostor.
+// Honest witnesses receive the word; the impostor never receives its aliases or clue bank.
+const groups={
+ Games:`Minecraft|You can change almost everything around you.|Blocks;Pickaxe;Mining;Creeper;Crafting
+Fortnite|The playable area does not stay the same size.|Storm;Bus;Building;Loot;Dropping
+Mario|A familiar hero often gets a change of clothes.|Mushroom;Plumber;Jumping;Peach;Coins
+Pokémon|Making new friends can involve a little competition.|Trading;Evolution;Badges;Trainer;Catching
+Roblox|One place can contain thousands of different experiences.|Obby;Avatar;Robux;Servers;Creator
+Among Us|Trust is a risky thing to give away.|Tasks;Vent;Meeting;Sabotage;Crew
+Tetris|Good organization makes things disappear.|Falling;Rows;Rotation;Stacking;Four
+Pac-Man|Taking a wrong turn can get you chased.|Maze;Ghosts;Cherries;Pellets;Arcade
+Sonic|This hero rarely takes the slow route.|Rings;Blue;Speed;Hedgehog;Loops
+Zelda|A big adventure often starts with someone needing help.|Hyrule;Link;Triforce;Sword;Princess
+The Sims|Ordinary life can get surprisingly chaotic.|Household;Needs;Furniture;Simlish;Neighbors
+Grand Theft Auto|Getting around a city can attract unwanted attention.|Wanted;Heist;Cars;Los Santos;Rockstar
+Call of Duty|Teamwork matters, but the next round starts quickly.|Loadout;Killstreak;Soldiers;Campaign;Zombies
+Rocket League|An ordinary sport gets a very unusual set of players.|Boost;Goal;Cars;Aerial;Arena
+Animal Crossing|Your neighbors may have very different personalities.|Island;Bells;Villagers;Fishing;Nook
+Clash of Clans|A good home needs a good defense.|Village;Raid;Walls;Builder;Troops
+Chess|Protecting one important person is the whole point.|Check;Castle;Knight;Pawn;Board
+Monopoly|A bad stop can cost you a lot.|Rent;Jail;Property;Railroad;Bank
+Uno|The smaller your collection gets, the better you are doing.|Colors;Reverse;Skip;Draw;Last card
+Minecraft Creeper|Getting too close can end badly.|Green;Hissing;Explosion;Sneaking;Mob`,
+ Food:`Pizza|People often order this for a group.|Slice;Crust;Oven;Delivery;Cheese
+Burger|This is often hard to eat neatly with one hand.|Patty;Bun;Grill;Pickles;Drive-through
+French fries|People disagree about the best thing to dip these in.|Potatoes;Salt;Crispy;Ketchup;Basket
+Sushi|Presentation is often a big part of the experience.|Rice;Roll;Seaweed;Chopsticks;Wasabi
+Tacos|Putting too much inside can cause a mess.|Tortilla;Salsa;Folded;Tuesday;Filling
+Spaghetti|Eating this neatly takes a little technique.|Twirl;Pasta;Sauce;Long;Fork
+Ice cream|Taking too long is a problem.|Cone;Scoop;Melting;Sprinkles;Frozen
+Popcorn|People associate this with sitting in the dark.|Kernel;Butter;Cinema;Popping;Bucket
+Pancakes|This often arrives in a stack.|Syrup;Breakfast;Flip;Batter;Griddle
+Waffles|Its shape helps it hold on to toppings.|Squares;Breakfast;Syrup;Iron;Crisp
+Donut|This treat often comes in a box for everyone.|Glaze;Hole;Sprinkles;Bakery;Fried
+Chocolate|A small piece can be enough for a gift.|Cocoa;Bar;Sweet;Wrapper;Melt
+Watermelon|This is easier to share after somebody brings a knife.|Seeds;Summer;Rind;Pink;Slice
+Banana|Its packaging is part of the joke.|Peel;Yellow;Bunch;Monkey;Curved
+Pineapple|Its outside is less welcoming than its inside.|Spiky;Tropical;Crown;Juice;Yellow
+Peanut butter|Some people want a smooth experience and others do not.|Jar;Spread;Crunchy;Sandwich;Sticky
+Cereal|People argue about which ingredient goes in first.|Bowl;Milk;Breakfast;Crunch;Box
+Mac and cheese|This comfort food usually has a very obvious color.|Pasta;Elbows;Cheddar;Creamy;Orange
+Birthday cake|You usually do something before anyone gets a piece.|Candles;Frosting;Party;Wish;Slices
+Chicken nuggets|People have strong feelings about the sauce.|Dipping;Crispy;Bite-sized;Chicken;Box`,
+ Everyday:`Backpack|This is useful when you need both hands free.|Straps;Books;Zipper;School;Pockets
+Headphones|Other people may not hear what you are enjoying.|Ears;Music;Cable;Noise;Volume
+Toothbrush|People generally expect you not to share this.|Bristles;Bathroom;Paste;Morning;Teeth
+Umbrella|You may regret forgetting it after you leave home.|Rain;Handle;Open;Canopy;Dry
+Alarm clock|Its job is to interrupt something pleasant.|Snooze;Morning;Ringing;Bedside;Wake
+Sunglasses|These can change how a person looks and sees.|Shade;Lenses;Sun;Frames;Eyes
+Mirror|It is very hard to surprise the person in this.|Reflection;Glass;Bathroom;Face;Looking
+Pillow|People have strong opinions about its temperature.|Bed;Soft;Sleep;Case;Fluffy
+Microwave|Waiting beside this can make time feel slower.|Reheat;Beep;Kitchen;Turntable;Leftovers
+Refrigerator|People open this even when they do not know what they want.|Cold;Kitchen;Shelves;Milk;Magnets
+Remote control|Losing this can cause an argument over a very small distance.|Buttons;Television;Sofa;Battery;Channel
+Phone charger|You usually need this most when you cannot find it.|Battery;Cable;Outlet;Power;Plug
+Scissors|This tool comes in left-handed versions.|Blades;Cut;Paper;Handles;Crafts
+Stapler|This helps separate things stay together.|Paper;Office;Metal;Squeeze;Desk
+Bicycle|Keeping your balance gets easier after you get moving.|Pedals;Wheels;Chain;Helmet;Handlebars
+Skateboard|A small change in balance can send this somewhere else.|Deck;Trucks;Wheels;Kickflip;Ramp
+Elevator|Small talk is not always comfortable in here.|Buttons;Floors;Doors;Lift;Building
+Vending machine|Sometimes your purchase gets stuck just out of reach.|Coins;Snacks;Buttons;Spiral;Change
+Washing machine|This can turn one missing item into a mystery.|Laundry;Spin;Detergent;Drum;Socks
+Fire extinguisher|You hope you will never need to use this.|Red;Safety;Pin;Spray;Emergency`,
+ Places:`Beach|People often bring home a little of this place by accident.|Sand;Waves;Towel;Shells;Sun
+Movie theater|Everyone is expected to face the same direction.|Screen;Tickets;Popcorn;Seats;Dark
+Airport|Being early is much better than being late here.|Runway;Terminal;Suitcase;Security;Boarding
+Library|The quietest room can contain the most stories.|Books;Borrow;Shelves;Reading;Librarian
+Swimming pool|There is a very specific kind of running you should not do here.|Chlorine;Lanes;Splash;Lifeguard;Deep end
+Amusement park|People choose to stand in long lines here.|Rides;Roller coaster;Tickets;Loops;Cotton candy
+Bowling alley|People wear shoes that belong to someone else here.|Pins;Lanes;Strike;Gutter;Ball
+Gym|People pay to do difficult things here.|Weights;Workout;Treadmill;Sweat;Training
+Museum|You are often allowed to look but not touch.|Exhibits;History;Artifacts;Gallery;Display
+Hospital|People are very happy when they get permission to leave.|Doctors;Nurses;Patients;Emergency;Beds
+Restaurant|You can finish something here and still be waiting for one thing.|Menu;Waiter;Bill;Table;Kitchen
+Supermarket|Coming here hungry can be expensive.|Aisles;Cart;Checkout;Groceries;Shelves
+Zoo|Visitors often look for their favorites first.|Animals;Enclosures;Keeper;Habitats;Tickets
+Aquarium|You can spend a long time looking through glass here.|Tanks;Fish;Water;Jellyfish;Sharks
+Campground|Your bedroom may be something you carried with you.|Tent;Fire;Sleeping bag;Marshmallows;Outdoors
+Stadium|A lot of people can become very loud at the same time.|Crowd;Seats;Scoreboard;Team;Field
+Courtroom|People take turns explaining very different versions of events.|Judge;Witness;Gavel;Jury;Objection
+Classroom|People sometimes hope their name will not be called here.|Teacher;Desk;Board;Lesson;Homework
+Barber shop|You can leave here with less than you arrived with.|Hair;Chair;Clippers;Mirror;Trim
+Gas station|A long trip can come to a stop without this place.|Pump;Fuel;Car;Nozzle;Price`,
+ Nature:`Penguin|This bird is better at getting around in water.|Ice;Waddle;Flippers;Colony;Black and white
+Shark|People often worry about this animal more than they need to.|Fin;Ocean;Teeth;Predator;Gills
+Octopus|This animal can solve a problem without having any bones.|Tentacles;Ink;Eight;Suction;Camouflage
+Giraffe|Reaching a snack is rarely a problem for this animal.|Neck;Spots;Tall;Leaves;Africa
+Elephant|This animal can pick things up without using its feet.|Trunk;Tusks;Ears;Herd;Huge
+Kangaroo|A passenger can travel without taking any steps.|Pouch;Jump;Australia;Joey;Tail
+Dolphin|This animal can seem unusually interested in people.|Clicks;Ocean;Pod;Leaping;Blowhole
+Sloth|A busy schedule would not suit this animal.|Slow;Tree;Claws;Hanging;Sleepy
+Chameleon|Blending in is part of this animal's reputation.|Color;Tongue;Lizard;Eyes;Branch
+Peacock|One member of this species is very hard to overlook.|Feathers;Tail;Display;Blue;Bird
+Flamingo|People sometimes copy the way this animal stands.|Pink;Leg;Bird;Water;Flock
+Bee|A tiny worker can be very important to your food.|Honey;Hive;Pollen;Buzz;Sting
+Butterfly|This animal has a very different childhood.|Wings;Caterpillar;Cocoon;Flowers;Flutter
+Cactus|This plant does not want a hug.|Spines;Desert;Succulent;Dry;Pot
+Sunflower|The name gives a clue about its appearance.|Yellow;Seeds;Tall;Petals;Garden
+Volcano|This can be quiet for a very long time before causing trouble.|Lava;Crater;Eruption;Mountain;Ash
+Rainbow|You can see this without being able to walk up to it.|Colors;Rain;Arc;Sunshine;Sky
+Snowflake|People use this as a symbol for something unique.|Ice;Winter;Crystal;Falling;Six sides
+Waterfall|Sometimes the journey down is much faster than the journey up.|River;Drop;Mist;Roar;Cliff
+Tornado|This is the wrong kind of thing to see spinning nearby.|Funnel;Wind;Storm;Twister;Cloud`,
+ Screen:`Batman|This hero's equipment is more important than superpowers.|Gotham;Cave;Cape;Bruce;Signal
+Spider-Man|This hero has a complicated relationship with getting to school.|Web;Swing;Peter;Mask;Spider
+Superman|Ordinary clothes make a surprisingly effective disguise.|Cape;Krypton;Clark;Flying;Metropolis
+Harry Potter|A school letter changed this person's whole life.|Wand;Hogwarts;Glasses;Scar;Wizard
+Darth Vader|You can recognize this character without seeing their face.|Helmet;Breathing;Force;Black;Father
+Yoda|This character makes age look rather surprising.|Green;Small;Jedi;Wisdom;Ears
+Shrek|This character would usually prefer visitors to go away.|Ogre;Swamp;Donkey;Green;Fiona
+SpongeBob|Having a normal job does not prevent a strange daily life.|Pineapple;Spatula;Square;Sponge;Patrick
+Minions|A group of very small helpers can cause very big problems.|Yellow;Goggles;Banana;Gru;Overalls
+Toy Story|Ordinary objects have a very busy life when people leave.|Woody;Buzz;Andy;Toys;Playroom
+Frozen|A family argument can have an effect on the weather.|Elsa;Snow;Anna;Olaf;Sisters
+Jurassic Park|An exciting attraction has a very serious safety problem.|Dinosaurs;Island;Amber;Raptor;Fences
+Star Wars|Family problems can have consequences for an entire galaxy.|Lightsaber;Force;Space;Jedi;Empire
+Stranger Things|Life in a small town becomes much less ordinary.|Eleven;Hawkins;Upside Down;Bikes;Demogorgon
+Scooby-Doo|A frightening problem often has an ordinary explanation.|Mystery;Van;Dog;Snacks;Mask
+The Simpsons|One family has stayed the same age for a very long time.|Springfield;Homer;Yellow;Donut;Bart
+WALL-E|Tidying up can be lonely work.|Robot;Trash;Space;Eve;Earth
+Lightning McQueen|This character wants to be known for being fast.|Race;Red;Cars;Ninety-five;Radiator Springs
+Willy Wonka|Getting into this person's workplace is a very unusual prize.|Chocolate;Factory;Golden ticket;Candy;Inventor
+The Grinch|This character is not very enthusiastic about a popular celebration.|Green;Christmas;Whoville;Heart;Max`
+};
+const aliases={
+ 'Pokémon':['Pokemon'],'The Sims':['Sims'],'Grand Theft Auto':['GTA'],
+ 'Minecraft Creeper':['Creeper'],'French fries':['Fries','French fry'],'Donut':['Doughnut'],
+ 'Mac and cheese':['Macaroni and cheese'],'Chicken nuggets':['Nuggets'],'Peanut butter':['PB'],
+ 'Refrigerator':['Fridge'],'Remote control':['Remote'],'Phone charger':['Charger'],
+ 'Washing machine':['Washer'],'Movie theater':['Cinema','Movie theatre'],'Swimming pool':['Pool'],
+ 'Amusement park':['Theme park'],'Supermarket':['Grocery store'],'Barber shop':['Barbershop'],
+ 'Gas station':['Petrol station'],'Spider-Man':['Spiderman'],'SpongeBob':['SpongeBob SquarePants'],
+ 'Minions':['Minion'],'WALL-E':['Walle','Wall E'],'The Grinch':['Grinch'],
+ 'The Simpsons':['Simpsons'],'Scooby-Doo':['Scooby Doo','Scooby'],'Lightning McQueen':['McQueen']
+};
+export const OATH_QUESTIONS=Object.entries(groups).flatMap(([category,text])=>text.split('\n').map((row,i)=>{const [answer,hint,clues]=row.split('|');return {id:'oath-'+category.toLowerCase()+'-'+(i+1),category,prompt:'One witness is bluffing. Find out who.',answer,aliases:aliases[answer]??[],hint,clues:clues.split(';')};}));
 export const OATH_BY_ID=new Map(OATH_QUESTIONS.map(q=>[q.id,q]));

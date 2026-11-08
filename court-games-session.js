@@ -11,10 +11,10 @@ import {validateDisplayName,validateChat,safeDisplayName} from './moderation.js'
 import {requirePartyIdentity} from './party-access.js';
 import {answerTurn,safeDraft,fastLiveAnswer} from './court-games-dialogue.js';
 import {courtAppearance,courtSettings,validCourtSettings} from './court-games-settings.js';
-const clone=o=>JSON.parse(JSON.stringify(o)),values=o=>Object.values(o??{}),build=mode=>COURT_GAMES_BUILD+':'+mode;
+const clone=o=>JSON.parse(JSON.stringify(o)),values=o=>Object.values(o??{}),build=mode=>(mode==='oath'?'20261108-oath-impostor-v32':COURT_GAMES_BUILD)+':'+mode;
 const loadCloud=()=>import('./cloud.bundle.js?v=20261106-final-saves-v28');
 function normalizeState(state){
- state.players=values(state.players).map(p=>({...p,name:safeDisplayName(p.name)}));for(const field of ['teamScores','questionIds','history','faceoffPlayers','faceoffTried','fastIds','fastPlayers'])state[field]=values(state[field]);if(state.board)state.board.slots=values(state.board.slots);if(state.variant==='docket'){for(const k of ['categoryIds','cells','finalRows','eligible','tied','finalOrder'])state[k]=values(state[k]);state.attempts??={};state.lockouts??={};if(state.result){state.result.scores=values(state.result.scores);state.result.winners=values(state.result.winners);}}if(state.variant==='oath'){for(const k of ['choices','revealed'])state[k]=values(state[k]);for(const r of state.revealed){r.authors=values(r.authors);r.voters=values(r.voters);}state.voted??={};state.advanceReady??={};if(state.roundResult)state.roundResult.rows=values(state.roundResult.rows);if(state.result){state.result.scores=values(state.result.scores);state.result.winners=values(state.result.winners);}}state.locked??={};
+ state.players=values(state.players).map(p=>({...p,name:safeDisplayName(p.name)}));for(const field of ['teamScores','questionIds','history','faceoffPlayers','faceoffTried','fastIds','fastPlayers'])state[field]=values(state[field]);if(state.board)state.board.slots=values(state.board.slots);if(state.variant==='docket'){for(const k of ['categoryIds','cells','finalRows','eligible','tied','finalOrder'])state[k]=values(state[k]);state.attempts??={};state.lockouts??={};if(state.result){state.result.scores=values(state.result.scores);state.result.winners=values(state.result.winners);}}if(state.variant==='oath'){for(const k of ['choices','testimonies','clueOrder'])state[k]=values(state[k]);state.voted??={};state.advanceReady??={};if(state.roundResult)state.roundResult.rows=values(state.roundResult.rows);if(state.result){state.result.scores=values(state.result.scores);state.result.winners=values(state.result.winners);}}state.locked??={};
  if(state.variant==='figure'&&state.roundResult)state.roundResult.rows=values(state.roundResult.rows).map(r=>({...r,guess:Number.isFinite(r.guess)?r.guess:null,error:Number.isFinite(r.error)?r.error:null}));return state;
 }
 
@@ -154,7 +154,7 @@ export class CourtGameSession{
  }
  async request(action,extra={}){
   requireGameAvailable(this.mode,this.identity());
-  if(action==='oath-bluff'){this.oathDraft=null;clearTimeout(this.oathDraftTimer);if(this.queuedOathSeal)return false;if(this.pending&&this.pendingAction==='oath-draft'){this.queuedOathSeal=true;this.render();try{const until=performance.now()+3500;while(this.pending&&performance.now()<until&&!this.closed)await new Promise(r=>setTimeout(r,25));if(this.pending)throw Error('Your draft is still reaching the court. Try sealing again.');this.queuedOathSeal=false;return await this.request(action,extra);}finally{this.queuedOathSeal=false;}}}
+  if(['oath-bluff','oath-guess'].includes(action)){this.oathDraft=null;clearTimeout(this.oathDraftTimer);if(this.queuedOathSeal)return false;if(this.pending&&this.pendingAction==='oath-draft'){this.queuedOathSeal=true;this.render();try{const until=performance.now()+3500;while(this.pending&&performance.now()<until&&!this.closed)await new Promise(r=>setTimeout(r,25));if(this.pending)throw Error('Your draft is still reaching the court. Try sealing again.');this.queuedOathSeal=false;return await this.request(action,extra);}finally{this.queuedOathSeal=false;}}}
   if(!this.connected||this.closed)throw Error('Reconnect before sending an answer.');
   const context=this.mode==='clash'?{matchId:this.state.matchId??'',round:this.state.round,stage:this.state.stage,stageAt:this.state.stageAt??0,turnKey:answerTurn(this.state)?.key??'',boardId:this.state.board?.id??''}:{};
   if(action==='fast-draft'&&extra.checkIndex===undefined&&this.pending){this.queuedDraft=extra;clearTimeout(this.draftRetry);this.draftRetry=setTimeout(()=>{const next=this.queuedDraft;this.queuedDraft=null;if(next&&!this.closed&&this.state.stage==='fast'&&this.state.turn===this.uid&&this.state.fastPass===next.pass)this.request('fast-draft',next).catch(e=>this.fail(e));},150);return false;}
@@ -170,11 +170,11 @@ export class CourtGameSession{
   try{await this.c.set(this.path('requests/'+this.uid),{id,type:action==='start'?(this.state.stage==='finish'?'rematch':'start'):'ready',text:String(text).slice(0,256),patch:{...context,...patch,action,matchId:context.matchId??this.state.matchId??'',round:context.round??this.state.round,...(['docket','oath'].includes(this.mode)?{stageAt:extra.stageAt??this.state.stageAt??0}:{})},at:this.now()});}catch(e){this.pending=false;this.pendingAction=null;this.pendingId=null;this.render();throw e;}
  }
  setOathDraft(text){
-  if(this.closed||this.queuedOathSeal||this.state?.stage!=='oath-write'||this.state.locked?.[this.uid])return;
+  if(this.closed||this.queuedOathSeal||!['oath-write','oath-guess'].includes(this.state?.stage)||this.state.stage==='oath-write'&&(this.state.turn!==this.uid||this.state.locked?.[this.uid])||this.state.stage==='oath-guess'&&(this.state.turn!==this.uid||this.state.guessSealed))return;
   this.oathDraft={text:String(text).slice(0,48),matchId:this.state.matchId,round:this.state.round,stageAt:this.state.stageAt};clearTimeout(this.oathDraftTimer);this.oathDraftTimer=setTimeout(()=>this.flushOathDraft(),180);
  }
  flushOathDraft(){
-  const draft=this.oathDraft;if(!draft||this.closed||this.state?.stage!=='oath-write'||this.state.stageAt!==draft.stageAt||this.state.locked?.[this.uid])return;
+  const draft=this.oathDraft;if(!draft||this.closed||!['oath-write','oath-guess'].includes(this.state?.stage)||this.state.stageAt!==draft.stageAt||this.state.stage==='oath-write'&&(this.state.turn!==this.uid||this.state.locked?.[this.uid])||this.state.stage==='oath-guess'&&(this.state.turn!==this.uid||this.state.guessSealed))return;
   if(this.pending){this.oathDraftTimer=setTimeout(()=>this.flushOathDraft(),100);return;}
   this.oathDraft=null;this.request('oath-draft',draft).catch(e=>this.fail(e));
  }

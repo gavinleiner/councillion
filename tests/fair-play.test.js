@@ -39,8 +39,8 @@ test('Docket forfeits the clue and subtracts its value without giving a second a
  const f=fixture('docket');tickCourtGame(f.s,f.secret,6000);tickCourtGame(f.s,f.secret,11000);const {s,secret}=f;const cell=s.cells.find(c=>!secret.docket.doubles.includes(c.id));actCourtGame(s,secret,s.selector,'docket-select',{clueId:cell.id,matchId:s.matchId,round:s.round,stageAt:s.stageAt},12000);const left=12100;
  assert.equal(enforceCourtFocus(s,secret,{p0:report(s,left)},left+1500),true);assert.equal(s.players[0].score,-cell.value);assert.equal(s.attempts.p0,true);assert.equal(enforceCourtFocus(s,secret,{p0:report(s,left)},left+3000),false);
 });
-test('Oath forfeits the case and its vote, including a sealed bluff',()=>{
- const f=fixture('oath');due(f);due(f);const {s,secret}=f;actCourtGame(s,secret,'p0','oath-bluff',{text:'A plausible invention',matchId:s.matchId,round:s.round,stageAt:s.stageAt},f.now+1);const left=f.now+100;
+test('Oath forfeits the active clue turn and its vote',()=>{
+ const f=fixture('oath');due(f);due(f);const {s,secret}=f;s.turn='p0';const left=f.now+100;
  assert.equal(courtFocusEligible(s,'p0'),true);assert.equal(enforceCourtFocus(s,secret,{p0:report(s,left)},left+1500),true);assert.equal(secret.oath.forfeits.p0,true);assert.equal(s.voted.p0,true);assert.equal(s.locked.p0,true);assert.equal(secret.oath.submissions.p0,undefined);
 });
 test('local visibility uses grace, return checks and exemption, and ignores blur',()=>{

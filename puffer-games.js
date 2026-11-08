@@ -10,7 +10,7 @@ export const PUFFER_GAMES=[
  {id:'clash',name:'Counsel Clash',tag:'TEAM FEUD',players:'2–10',color:'#efbf7d',buddy:'squid',steps:['TAKE YOUR BENCH','SURVEY SAYS…','STEAL THE CASE'],cue:'Counsel, survey says…',copy:'Two benches. One survey board. Three strikes and the case can be stolen.'},
  {id:'figure',name:'Final Figure',tag:'CLOSEST WINS',players:'2–8',color:'#a6cfec',buddy:'angler',steps:['MAKE YOUR GUESS','SEAL IT','CLOSEST WINS'],cue:'A precise guess. Or a very lucky one.',copy:'Everyone seals a number. The closest estimate takes the verdict.'},
  {id:'docket',name:'The Docket',tag:'CHOOSE · BUZZ · WAGER',players:'2–6',color:'#d2b7f0',buddy:'schooler',steps:['CHOOSE A CLUE','BEAT THE BUZZER','PLACE YOUR WAGER'],cue:'Your category. Your wager.',copy:'Pick a clue, beat the buzzer, and put your points on the record.'},
- {id:'oath',name:'Under Oath',tag:'BLUFF · VOTE · EXPOSE',players:'2–6',color:'#efa3a2',buddy:'evil',steps:['WRITE A LIE','FIND THE TRUTH','EXPOSE YOUR FRIENDS'],cue:'This witness needs a little more time.',copy:'Write a convincing lie. Find the truth. Expose your friends.'}
+ {id:'oath',name:'Under Oath',tag:'ONE SECRET IMPOSTOR',players:'3–6',color:'#efa3a2',buddy:'evil',steps:['CHECK YOUR ROLE','GIVE A CLUE','FIND THE IMPOSTOR'],cue:'This witness needs a little more time.',copy:'One impostor gets a private hint. Everyone else knows the word. Find the bluff.'}
 ];
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const preview=mode=>({party:'<i>♥</i><i>♥</i>',clash:'<i>×</i><i>×</i><i>×</i>',figure:'<i>180</i><i>250</i><i>?</i>',docket:'<i>200</i><i>400</i><i>600</i>',oath:'<i>…</i>'}[mode]??'');

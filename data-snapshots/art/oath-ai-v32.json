@@ -1,0 +1,17 @@
+{
+  "assets": [
+    {
+      "asset": "assets/court-games/oath-paper-ai-v32.png",
+      "tool": "built-in image_gen",
+      "transparent_background": true,
+      "prompt": "Use case: stylized-concept. Asset type: production pixel-art game UI parchment, PNG with real transparent alpha. Make ONE landscape blank court case paper, approximately 3:1 aspect ratio, front facing flat and centered, fully isolated with transparent margins. It belongs in Councillion, a charming underwater courtroom pixel-art game with teal blue stone ruins, small shrimp and squid sprites, muted warm cream paper, navy pixel outlines and a tiny dusty coral wax seal. The requested medium is deliberate clean 16-bit pixel art at roughly 320 by 112 logical pixels, with clearly stepped edges and restrained shading matching classic polished sprite games. NOT photorealistic, NOT painterly, NOT shiny 3D, NOT a futuristic panel. A slightly irregular cream paper silhouette, one folded corner, sparse chipped edge details, subtle 2-tone paper texture, tiny neat wax seal in bottom-right and a little top-left brass clip. Leave a very large CLEAN EMPTY CENTER, about 85% width and 65% height, with no writing, no letters, no lines, no emblem, so crisp real HTML text will be placed over it. No background scenery, no other objects, no fake checkerboard, no lettering, no watermark. The art must remain legible and tasteful at laptop UI size. This replaces the entire hand-drawn paper panel, so the paper itself should have finished pixel-art craft."
+    },
+    {
+      "asset": "assets/court-games/oath-envelope-ai-v32.png",
+      "tool": "built-in image_gen",
+      "transparent_background": true,
+      "prompt": "Use case: stylized-concept. Asset type: one isolated sealed court envelope sprite for an underwater courtroom pixel-art game called Councillion. Create a single small cream parchment envelope, face on, horizontal 4:3 proportion, centered with generous fully transparent alpha margins, no scenery. True deliberate 16-bit pixel art at roughly 96 by 72 logical pixels, crisp stepped silhouette and clean limited colors, navy pixel outline, muted warm cream and ochre paper shading, tiny dusty coral-red wax seal centered on the V-shaped folded flap. Match polished simple shrimp/squid game sprites: just enough crafted detail to feel finished, not over-textured. Add a subtle sea-green string tie. No text, no letters, no icons, no crest, no watermark, no photorealism, no painterly texture, no 3D lighting, no rounded mobile app badge. The whole envelope is visible, no clipping. This sprite will be scaled down and animated flying between players and a pufferfish judge."
+    }
+  ],
+  "notes": "Original transparent PNGs copied into project without image edits. All game text is rendered as real HTML. Hand-made SVG paper was removed."
+}

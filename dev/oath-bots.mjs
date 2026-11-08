@@ -3,29 +3,27 @@ import {OathStage} from '/oath-view.js';
 import {OATH_BY_ID} from '/oath-data.js';
 import {oathReceipt} from '/oath-engine.js';
 import {random} from '/question-selection.js';
+import {oathBotClue,oathBotVote,oathBotGuess} from '/oath-bots.js';
 document.body.dataset.screen='oath';document.title='Councillion · Under Oath · Full bot trial';
 const root=document.querySelector('#app');root.innerHTML='<nav id="oath-demo-bar"><strong>UNDER OATH · FULL BOT TRIAL</strong><button id="oath-demo-play">PLAY FULL GAME</button><button id="oath-demo-pause" disabled>PAUSE</button><button id="oath-demo-restart">RESTART</button><select id="oath-demo-speed" aria-label="Playback speed"><option value="1">1×</option><option value="2">2×</option><option value="8">8×</option></select><span id="oath-demo-status">Six witnesses. One complete trial. No online room.</span></nav><div id="oath-demo-root"></div>';
 const style=document.createElement('style');style.textContent='#oath-demo-bar{height:42px;display:flex;align-items:center;justify-content:center;gap:12px;padding:5px 10px;background:#08263a;color:#afced0;font:13px VT,monospace;letter-spacing:1px}#oath-demo-bar strong{font-size:14px;font-weight:400;color:#d8d2ac}#oath-demo-bar button,#oath-demo-bar select{border:1px solid #658b9a;background:#153b4c;color:#dbdec6;padding:5px 9px;font:13px VT,monospace}#oath-demo-bar span{font-size:10px;color:#7499ab}#oath-demo-root .oa-shell{height:calc(100dvh - 42px);min-height:0}#oath-demo-root .oa-bluff-form input{caret-color:#a5d7c8}@media(max-width:700px){#oath-demo-bar{gap:6px}#oath-demo-bar span{display:none}#oath-demo-bar strong{font-size:10px}}';document.head.append(style);
 let state,secret,view,clock=Date.now(),previous=performance.now(),playing=false,speed=1,phaseKey='',phaseAt=clock,phases=[],errors=[],seed=19;
 const names=['Counsel','Nori','Sage','Pearl','Mako','Reef'],kinds=['krill','squid','schooler','angler','evil','krill'];
 const session={uid:'p0',host:true,code:'BOTS',connected:true,pending:false,response:{},now:()=>clock,ready:async()=>{},close(){}};
-function render(){session.response={oath:oathReceipt(state,secret,session.uid)};if(phases.at(-1)!==state.stage)phases.push(state.stage);view.render(state,session);document.querySelectorAll('a[href="#games"]').forEach(a=>a.href='http://localhost:4173/#games');document.querySelector('#oath-demo-status').textContent=state.stage==='finish'?'COMPLETE · ALL SIX CASES · REPLAY ANYTIME':state.stage==='lobby'?'Six witnesses. One complete trial. No online room.':'CASE '+state.round+' / 6 · '+state.stage.replace('oath-','').toUpperCase();}
+function render(){session.response={oath:oathReceipt(state,secret,session.uid)};if(phases.at(-1)!==state.stage)phases.push(state.stage);view.render(state,session);document.querySelectorAll('a[href="#games"]').forEach(a=>a.href='http://localhost:4173/#games');document.querySelector('#oath-demo-status').textContent=state.stage==='finish'?'COMPLETE · ALL SIX CASES · REPLAY ANYTIME':state.stage==='lobby'?'Six witnesses. One complete trial. No online room.':state.round?'CASE '+state.round+' / 6 · '+state.stage.replace('oath-','').toUpperCase():'OPENING THE COURT';}
 function send(uid,action,p={}){const result=actCourtGame(state,secret,uid,action,{...p,matchId:state.matchId,round:state.round,stageAt:state.stageAt},clock);render();return result;}
 function reset(){view?.dispose();clock=Date.now();playing=false;phaseKey='';phases=[];errors=[];secret={};state=createCourtGame('oath',names.map((name,i)=>({id:'p'+i,name,buddy:kinds[i],ready:true,online:true,connected:true})));view=new OathStage(document.querySelector('#oath-demo-root'),{action:(a,p)=>{if(a==='start')play();else try{send('p0',a,p);}catch(e){view.error(e.message);}},leave:()=>location.href='http://localhost:4173/#oath'});document.querySelector('#oath-demo-play').textContent='PLAY FULL GAME';document.querySelector('#oath-demo-play').disabled=false;document.querySelector('#oath-demo-pause').disabled=true;document.querySelector('#oath-demo-pause').textContent='PAUSE';render();}
 function play(){if(state.stage==='finish')reset();if(state.stage==='lobby')startCourtGame(state,clock,random(seed++),secret);playing=true;document.querySelector('#oath-demo-play').disabled=true;document.querySelector('#oath-demo-play').textContent='TRIAL RUNNING';document.querySelector('#oath-demo-pause').disabled=false;document.querySelector('#oath-demo-pause').textContent='PAUSE';render();}
 function drive(){
  const key=[state.matchId,state.round,state.stage,state.stageAt].join(':');if(key!==phaseKey){phaseKey=key;phaseAt=clock;}
- const elapsed=clock-phaseAt,q=OATH_BY_ID.get(state.case?.id);
- if(state.stage==='oath-write'){
-  for(let i=0;i<6;i++){
-   const p=state.players[i];if(state.locked[p.id])continue;const text=i===5?q.answer:q.decoys[i%3],chars=Math.max(0,Math.floor((elapsed-1100-i*310)/75));
-   if(i===0){const input=document.querySelector('#oa-bluff');if(input){input.value=text.slice(0,chars);const length=document.querySelector('[data-oath-length]');if(length)length.textContent=input.value.length+' / 48';}}
-   if(elapsed>2600+i*480+text.length*75)send(p.id,'oath-bluff',{text});
-  }
+ const elapsed=clock-phaseAt,ref=secret.oath,q=OATH_BY_ID.get(ref?.caseId);
+ if(state.stage==='oath-write')for(let i=0;i<6;i++){
+  const p=state.players[i];if(state.turn!==p.id||state.locked[p.id])continue;const text=oathBotClue(q,p.id===ref.impostor,i,state.round),chars=Math.max(0,Math.floor((elapsed-1100)/95));
+  if(i===0){const input=document.querySelector('#oa-bluff');if(input){input.value=text.slice(0,chars);document.querySelector('[data-oath-length]').textContent=input.value.length+' / 48';}}
+  if(elapsed>3000+text.length*95)send(p.id,'oath-bluff',{text});
  }
- if(state.stage==='oath-vote')for(let i=0;i<6;i++){
-  const p=state.players[i];if(state.voted[p.id])continue;if(elapsed>2100+i*500){const available=secret.oath.options.filter(o=>!o.authors.includes(p.id)),chooseTruth=(i+state.round)%3===0,option=chooseTruth?available.find(o=>o.kind==='truth'):available.find(o=>o.kind==='bluff')??available[0];send(p.id,'oath-vote',{choice:option.id});}
- }
+ if(state.stage==='oath-vote')for(let i=0;i<6;i++){const p=state.players[i];if(!state.voted[p.id]&&elapsed>5500+i*550)send(p.id,'oath-vote',{choice:oathBotVote(state,ref,p.id,i)});}
+ if(state.stage==='oath-guess'&&!state.guessSealed){const i=state.players.findIndex(p=>p.id===state.turn),text=oathBotGuess(q,i,state.round);if(state.turn==='p0'){const input=document.querySelector('#oa-bluff');if(input)input.value=text.slice(0,Math.max(0,Math.floor((elapsed-1100)/95)));}if(elapsed>4500)send(state.turn,'oath-guess',{text});}
  if(tickCourtGame(state,secret,clock))render();
  if(state.stage==='finish'){playing=false;document.querySelector('#oath-demo-play').disabled=false;document.querySelector('#oath-demo-play').textContent='REPLAY FULL GAME';document.querySelector('#oath-demo-pause').disabled=true;}
 }
