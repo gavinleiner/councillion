@@ -1,6 +1,6 @@
 import {LocalFocus,focusExempt,courtFocusEligible,courtFocusKey} from './fair-play.js';
 import {enforceCourtFocus} from './court-focus.js';
-import {canAdmin} from './account-honors.js';
+import {canPreviewOath} from './game-availability.js';
 import {createCourtGame,startCourtGame,actCourtGame,tickCourtGame} from './court-games-engine.js';
 import {OATH_BY_ID} from './oath-data.js';
 import {oathReceipt} from './oath-engine.js';
@@ -9,7 +9,7 @@ import {oathReceipt} from './oath-engine.js';
 // fields, names, URL flags and local storage cannot grant this server permission.
 export async function authorizeOathPreview({identity,authorize,getCloud}){
  const auth=await authorize(),verified=auth.identity??identity();
- if(!canAdmin(verified))throw Error('This private preview is owner-only.');
+ if(!canPreviewOath(verified))throw Error('This private preview is owner-only.');
  const c=await(getCloud?.()??import('./cloud.bundle.js?v=20261106-final-saves-v28'));
  await c.get(c.ref(c.db,'ownerPreviews/oath'));
  return verified;
@@ -20,7 +20,7 @@ export async function authorizeOathPreview({identity,authorize,getCloud}){
 export class OathPreviewSession{
  constructor({identity,verified,name='Counsel',buddy='krill',onState,onError=()=>{},clock=()=>Date.now()}){
   Object.assign(this,{identity,onState,onError,clock,googleId:verified.id,uid:'owner-preview',host:true,preview:true,code:'OWNER PREVIEW',connected:true,pending:false,closed:false,secret:{},phaseKey:'',phaseAt:clock()});
-  if(!canAdmin(verified))throw Error('This private preview is owner-only.');
+  if(!canPreviewOath(verified))throw Error('This private preview is owner-only.');
   this.state=createCourtGame('oath',[{id:this.uid,name,buddy,ready:true,online:true,connected:true},...['Nori Bot','Sage Bot','Pearl Bot','Mako Bot','Reef Bot'].map((name,i)=>({id:'preview-bot-'+i,name,buddy:['squid','schooler','angler','evil','krill'][i],ready:true,online:true,connected:true}))]);
   this.focus=new LocalFocus({eligible:()=>!this.closed&&courtFocusEligible(this.state,this.uid)?courtFocusKey(this.state):null,exempt:()=>focusExempt(this.identity()),clock:()=>this.now(),penalize:(question,leftAt)=>{enforceCourtFocus(this.state,this.secret,{[this.uid]:{game:this.state.matchId,question,leftAt,hidden:false,returnedAt:this.now()}},this.now());this.render();}});this.timer=setInterval(()=>this.tick(),200);
  }
@@ -31,14 +31,14 @@ export class OathPreviewSession{
  setOathDraft(text){clearTimeout(this.draftTimer);const context={matchId:this.state.matchId,round:this.state.round,stageAt:this.state.stageAt};this.draftTimer=setTimeout(()=>this.request('oath-draft',{text,...context}).catch(e=>this.onError(e.message)),180);}
  async request(action,p={}){
   if(action==='oath-bluff')clearTimeout(this.draftTimer);
-  if(this.closed||!canAdmin(this.identity()))throw Error('Sign in with the owner account to continue the preview.');
+  if(this.closed||!canPreviewOath(this.identity()))throw Error('Sign in with your authorized Google account to continue the preview.');
   if(action==='start'||action==='rematch'){if(!['lobby','finish'].includes(this.state.stage))return;startCourtGame(this.state,this.now(),Math.random,this.secret);}
   else this.send(this.uid,action,p);
   this.render();
  }
  tick(){
   if(this.closed)return;
-  if(!canAdmin(this.identity())){this.close();this.onError('The owner sign-in expired. Sign in again to continue.');return;}
+  if(!canPreviewOath(this.identity())){this.close();this.onError('Your preview sign-in expired. Sign in again to continue.');return;}
   const s=this.state,key=[s.matchId,s.round,s.stage,s.stageAt].join(':');if(key!==this.phaseKey){this.phaseKey=key;this.phaseAt=this.now();}
   const elapsed=this.now()-this.phaseAt,q=OATH_BY_ID.get(s.case?.id);let changed=false;
   try{

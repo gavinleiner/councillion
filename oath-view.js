@@ -1,6 +1,6 @@
 import {PufferExecution} from './party-execution.js';
 import {gameLogoMarkup} from './game-mascots.js';
-import {COMING_SOON_GAMES,isGameAvailable} from './game-availability.js';
+import {COMING_SOON_GAMES,isGameEntryAvailable} from './game-availability.js';
 import {HostVoice} from './court-games-dialogue.js';
 import {CourtGameSession,listCourtRooms} from './court-games-session.js';
 import {buddySprite,BUDDIES} from './party-buddy-sprite.js';
@@ -119,7 +119,7 @@ export class OathView{
  renderEntry(){
   this.stage?.dispose();this.stage=null;this.ambience?.dispose();this.offRooms?.();this.offRooms=null;
   const identity=this.options.identity(),q=s=>this.root.querySelector(s);
-  if(!isGameAvailable('oath',identity)){
+  if(!isGameEntryAvailable('oath',identity)){
    this.root.innerHTML=oathComingSoonMarkup(!!identity);this.ambience=mountCourtAmbience(q('.oa-life'));
    const signIn=q('[data-oath-signin]');if(signIn)signIn.onclick=()=>this.options.signIn();return;
   }
@@ -139,14 +139,14 @@ export class OathView{
   q('#oa-name').oninput=e=>{q('[data-preview-name]').textContent=e.target.value||'Your counsel';};
   for(const b of this.root.querySelectorAll('[data-oath-buddy]'))b.onclick=()=>{this.preferences.buddy=b.dataset.oathBuddy;q('.oa-entry-preview>div').innerHTML=buddySprite(this.preferences.buddy);this.root.querySelectorAll('[data-oath-buddy]').forEach(el=>el.setAttribute('aria-pressed',String(el===b)));this.options.savePreferences?.(this.preferences);};
  }
- async loadRooms(){if(!isGameAvailable('oath',this.options.identity())||!this.options.identity())return;try{const c=await(this.options.getCloud?.()??import('./cloud.bundle.js?v=20261106-final-saves-v28'));if(this.disposed||this.session)return;this.offRooms=await listCourtRooms(c,'oath',rooms=>{const mount=this.root.querySelector('#oa-rooms');if(!mount)return;mount.innerHTML=rooms.length?rooms.slice(0,6).map(r=>`<button data-oath-room="${r.code}"><strong>${esc(r.hostName)}</strong><span>${r.count}/6 · ${r.phase==='lobby'?'JOIN':'WATCH'} →</span></button>`).join(''):'<p>The witness boxes are quiet. Host the first court.</p>';mount.querySelectorAll('[data-oath-room]').forEach(b=>b.onclick=()=>{this.root.querySelector('#oa-code').value=b.dataset.oathRoom;this.connect('join');});},e=>this.error(e.message));}catch(e){this.error(e.message);}}
+ async loadRooms(){if(!isGameEntryAvailable('oath',this.options.identity())||!this.options.identity())return;try{const c=await(this.options.getCloud?.()??import('./cloud.bundle.js?v=20261106-final-saves-v28'));if(this.disposed||this.session)return;this.offRooms=await listCourtRooms(c,'oath',rooms=>{const mount=this.root.querySelector('#oa-rooms');if(!mount)return;mount.innerHTML=rooms.length?rooms.slice(0,6).map(r=>`<button data-oath-room="${r.code}"><strong>${esc(r.hostName)}</strong><span>${r.count}/6 · ${r.phase==='lobby'?'JOIN':'WATCH'} →</span></button>`).join(''):'<p>The witness boxes are quiet. Host the first court.</p>';mount.querySelectorAll('[data-oath-room]').forEach(b=>b.onclick=()=>{this.root.querySelector('#oa-code').value=b.dataset.oathRoom;this.connect('join');});},e=>this.error(e.message));}catch(e){this.error(e.message);}}
  error(message){if(this.stage)return this.stage.error(message);const el=this.root.querySelector('#oa-error');if(el){el.hidden=!message;el.textContent=message;}}
- async connect(kind){if(!isGameAvailable('oath',this.options.identity())){this.error('Under Oath is coming soon.');return;}if(!this.options.identity()){this.options.signIn();return;}
+ async connect(kind){if(!isGameEntryAvailable('oath',this.options.identity())){this.error('Under Oath is coming soon.');return;}if(!this.options.identity()){this.options.signIn();return;}
   if(COMING_SOON_GAMES.includes('oath')){
    try{
     const name=validateDisplayName(this.root.querySelector('#oa-name').value||'Counsel');
     this.preferences.name=name;this.options.savePreferences?.(this.preferences);
-    this.root.querySelector('[data-oath-host]').disabled=true;this.error('Verifying your owner access…');
+    this.root.querySelector('[data-oath-host]').disabled=true;this.error('Verifying your preview access…');
     const {authorizeOathPreview,OathPreviewSession}=await import('./oath-preview.js');
     const verified=await authorizeOathPreview(this.options);if(this.disposed)return;
     this.ambience?.dispose();this.stage=new OathStage(this.root,{action:(a,p)=>this.action(a,p),leave:()=>this.leave(),sound:this.options.sound});
@@ -158,6 +158,6 @@ export class OathView{
   try{const q=s=>this.root.querySelector(s),name=validateDisplayName(q('#oa-name').value),code=q('#oa-code').value,isPrivate=!q('#oa-public').checked;this.preferences.name=name;this.preferences.publicRoom=!isPrivate;this.options.savePreferences?.(this.preferences);this.root.querySelectorAll('button').forEach(b=>b.disabled=true);this.error('Calling the clerk…');this.session=new CourtGameSession({mode:'oath',identity:this.options.identity,authorize:this.options.authorize,getCloud:this.options.getCloud,appearance:this.preferences.courtAppearance,onState:(s,session)=>{if(!s||this.disposed)return;if(!this.stage){this.offRooms?.();this.ambience?.dispose();this.stage=new OathStage(this.root,{action:(a,p)=>this.action(a,p),leave:()=>this.leave(),sound:this.options.sound});}this.stage.render(s,session);},onError:m=>this.error(m)});if(kind==='host')await this.session.create(name,this.preferences.buddy,isPrivate);else await this.session.join(name,code,this.preferences.buddy);if(!this.disposed)history.replaceState(null,'','#oath?room='+this.session.code);}catch(e){await this.session?.close();this.session=null;if(!this.disposed){this.renderEntry();this.error(e.message);}}}
  action(action,payload={}){this.error('');this.session?.request(action,payload).catch(e=>this.error(e.message));}
  async leave(){const session=this.session;this.session=null;await session?.close();if(!this.disposed){history.replaceState(null,'','#oath');this.renderEntry();}}
- identityChanged(identity=this.options.identity(),preferences){if(preferences)this.preferences={...preferences};if(this.session&&(!isGameAvailable('oath',identity)||!identity||identity.id!==this.session.googleId)){this.session.close();this.session=null;}if(!this.session)this.renderEntry();}
+ identityChanged(identity=this.options.identity(),preferences){if(preferences)this.preferences={...preferences};if(this.session&&(!isGameEntryAvailable('oath',identity)||!identity||identity.id!==this.session.googleId)){this.session.close();this.session=null;}if(!this.session)this.renderEntry();}
  destroy(){this.disposed=true;this.stage?.dispose();this.ambience?.dispose();this.offRooms?.();this.session?.close();}
 }
