@@ -1,137 +1,156 @@
-// Familiar secret words, with a deliberately broad hint for the impostor.
-// Honest witnesses receive the word; the impostor never receives its aliases or clue bank.
+// Recognizable, specific words rather than generic first guesses. Each broad
+// impostor hint deliberately fits four different words in the same category.
 const groups={
- Games:`Minecraft|You can change almost everything around you.|Blocks;Pickaxe;Mining;Creeper;Crafting
-Fortnite|The playable area does not stay the same size.|Storm;Bus;Building;Loot;Dropping
-Mario|A familiar hero often gets a change of clothes.|Mushroom;Plumber;Jumping;Peach;Coins
-Pokémon|Making new friends can involve a little competition.|Trading;Evolution;Badges;Trainer;Catching
-Roblox|One place can contain thousands of different experiences.|Obby;Avatar;Robux;Servers;Creator
-Among Us|Trust is a risky thing to give away.|Tasks;Vent;Meeting;Sabotage;Crew
-Tetris|Good organization makes things disappear.|Falling;Rows;Rotation;Stacking;Four
-Pac-Man|Taking a wrong turn can get you chased.|Maze;Ghosts;Cherries;Pellets;Arcade
-Sonic|This hero rarely takes the slow route.|Rings;Blue;Speed;Hedgehog;Loops
-Zelda|A big adventure often starts with someone needing help.|Hyrule;Link;Triforce;Sword;Princess
-The Sims|Ordinary life can get surprisingly chaotic.|Household;Needs;Furniture;Simlish;Neighbors
-Grand Theft Auto|Getting around a city can attract unwanted attention.|Wanted;Heist;Cars;Los Santos;Rockstar
-Call of Duty|Teamwork matters, but the next round starts quickly.|Loadout;Killstreak;Soldiers;Campaign;Zombies
-Rocket League|An ordinary sport gets a very unusual set of players.|Boost;Goal;Cars;Aerial;Arena
-Animal Crossing|Your neighbors may have very different personalities.|Island;Bells;Villagers;Fishing;Nook
-Clash of Clans|A good home needs a good defense.|Village;Raid;Walls;Builder;Troops
-Chess|Protecting one important person is the whole point.|Check;Castle;Knight;Pawn;Board
-Monopoly|A bad stop can cost you a lot.|Rent;Jail;Property;Railroad;Bank
-Uno|The smaller your collection gets, the better you are doing.|Colors;Reverse;Skip;Draw;Last card
-Minecraft Creeper|Getting too close can end badly.|Green;Hissing;Explosion;Sneaking;Mob`,
- Food:`Pizza|People often order this for a group.|Slice;Crust;Oven;Delivery;Cheese
-Burger|This is often hard to eat neatly with one hand.|Patty;Bun;Grill;Pickles;Drive-through
-French fries|People disagree about the best thing to dip these in.|Potatoes;Salt;Crispy;Ketchup;Basket
-Sushi|Presentation is often a big part of the experience.|Rice;Roll;Seaweed;Chopsticks;Wasabi
-Tacos|Putting too much inside can cause a mess.|Tortilla;Salsa;Folded;Tuesday;Filling
-Spaghetti|Eating this neatly takes a little technique.|Twirl;Pasta;Sauce;Long;Fork
-Ice cream|Taking too long is a problem.|Cone;Scoop;Melting;Sprinkles;Frozen
-Popcorn|People associate this with sitting in the dark.|Kernel;Butter;Cinema;Popping;Bucket
-Pancakes|This often arrives in a stack.|Syrup;Breakfast;Flip;Batter;Griddle
-Waffles|Its shape helps it hold on to toppings.|Squares;Breakfast;Syrup;Iron;Crisp
-Donut|This treat often comes in a box for everyone.|Glaze;Hole;Sprinkles;Bakery;Fried
-Chocolate|A small piece can be enough for a gift.|Cocoa;Bar;Sweet;Wrapper;Melt
-Watermelon|This is easier to share after somebody brings a knife.|Seeds;Summer;Rind;Pink;Slice
-Banana|Its packaging is part of the joke.|Peel;Yellow;Bunch;Monkey;Curved
-Pineapple|Its outside is less welcoming than its inside.|Spiky;Tropical;Crown;Juice;Yellow
-Peanut butter|Some people want a smooth experience and others do not.|Jar;Spread;Crunchy;Sandwich;Sticky
-Cereal|People argue about which ingredient goes in first.|Bowl;Milk;Breakfast;Crunch;Box
-Mac and cheese|This comfort food usually has a very obvious color.|Pasta;Elbows;Cheddar;Creamy;Orange
-Birthday cake|You usually do something before anyone gets a piece.|Candles;Frosting;Party;Wish;Slices
-Chicken nuggets|People have strong feelings about the sauce.|Dipping;Crispy;Bite-sized;Chicken;Box`,
- Everyday:`Backpack|This is useful when you need both hands free.|Straps;Books;Zipper;School;Pockets
-Headphones|Other people may not hear what you are enjoying.|Ears;Music;Cable;Noise;Volume
-Toothbrush|People generally expect you not to share this.|Bristles;Bathroom;Paste;Morning;Teeth
-Umbrella|You may regret forgetting it after you leave home.|Rain;Handle;Open;Canopy;Dry
-Alarm clock|Its job is to interrupt something pleasant.|Snooze;Morning;Ringing;Bedside;Wake
-Sunglasses|These can change how a person looks and sees.|Shade;Lenses;Sun;Frames;Eyes
-Mirror|It is very hard to surprise the person in this.|Reflection;Glass;Bathroom;Face;Looking
-Pillow|People have strong opinions about its temperature.|Bed;Soft;Sleep;Case;Fluffy
-Microwave|Waiting beside this can make time feel slower.|Reheat;Beep;Kitchen;Turntable;Leftovers
-Refrigerator|People open this even when they do not know what they want.|Cold;Kitchen;Shelves;Milk;Magnets
-Remote control|Losing this can cause an argument over a very small distance.|Buttons;Television;Sofa;Battery;Channel
-Phone charger|You usually need this most when you cannot find it.|Battery;Cable;Outlet;Power;Plug
-Scissors|This tool comes in left-handed versions.|Blades;Cut;Paper;Handles;Crafts
-Stapler|This helps separate things stay together.|Paper;Office;Metal;Squeeze;Desk
-Bicycle|Keeping your balance gets easier after you get moving.|Pedals;Wheels;Chain;Helmet;Handlebars
-Skateboard|A small change in balance can send this somewhere else.|Deck;Trucks;Wheels;Kickflip;Ramp
-Elevator|Small talk is not always comfortable in here.|Buttons;Floors;Doors;Lift;Building
-Vending machine|Sometimes your purchase gets stuck just out of reach.|Coins;Snacks;Buttons;Spiral;Change
-Washing machine|This can turn one missing item into a mystery.|Laundry;Spin;Detergent;Drum;Socks
-Fire extinguisher|You hope you will never need to use this.|Red;Safety;Pin;Spray;Emergency`,
- Places:`Beach|People often bring home a little of this place by accident.|Sand;Waves;Towel;Shells;Sun
-Movie theater|Everyone is expected to face the same direction.|Screen;Tickets;Popcorn;Seats;Dark
-Airport|Being early is much better than being late here.|Runway;Terminal;Suitcase;Security;Boarding
-Library|The quietest room can contain the most stories.|Books;Borrow;Shelves;Reading;Librarian
-Swimming pool|There is a very specific kind of running you should not do here.|Chlorine;Lanes;Splash;Lifeguard;Deep end
-Amusement park|People choose to stand in long lines here.|Rides;Roller coaster;Tickets;Loops;Cotton candy
-Bowling alley|People wear shoes that belong to someone else here.|Pins;Lanes;Strike;Gutter;Ball
-Gym|People pay to do difficult things here.|Weights;Workout;Treadmill;Sweat;Training
-Museum|You are often allowed to look but not touch.|Exhibits;History;Artifacts;Gallery;Display
-Hospital|People are very happy when they get permission to leave.|Doctors;Nurses;Patients;Emergency;Beds
-Restaurant|You can finish something here and still be waiting for one thing.|Menu;Waiter;Bill;Table;Kitchen
-Supermarket|Coming here hungry can be expensive.|Aisles;Cart;Checkout;Groceries;Shelves
-Zoo|Visitors often look for their favorites first.|Animals;Enclosures;Keeper;Habitats;Tickets
-Aquarium|You can spend a long time looking through glass here.|Tanks;Fish;Water;Jellyfish;Sharks
-Campground|Your bedroom may be something you carried with you.|Tent;Fire;Sleeping bag;Marshmallows;Outdoors
-Stadium|A lot of people can become very loud at the same time.|Crowd;Seats;Scoreboard;Team;Field
-Courtroom|People take turns explaining very different versions of events.|Judge;Witness;Gavel;Jury;Objection
-Classroom|People sometimes hope their name will not be called here.|Teacher;Desk;Board;Lesson;Homework
-Barber shop|You can leave here with less than you arrived with.|Hair;Chair;Clippers;Mirror;Trim
-Gas station|A long trip can come to a stop without this place.|Pump;Fuel;Car;Nozzle;Price`,
- Nature:`Penguin|This bird is better at getting around in water.|Ice;Waddle;Flippers;Colony;Black and white
-Shark|People often worry about this animal more than they need to.|Fin;Ocean;Teeth;Predator;Gills
-Octopus|This animal can solve a problem without having any bones.|Tentacles;Ink;Eight;Suction;Camouflage
-Giraffe|Reaching a snack is rarely a problem for this animal.|Neck;Spots;Tall;Leaves;Africa
-Elephant|This animal can pick things up without using its feet.|Trunk;Tusks;Ears;Herd;Huge
-Kangaroo|A passenger can travel without taking any steps.|Pouch;Jump;Australia;Joey;Tail
-Dolphin|This animal can seem unusually interested in people.|Clicks;Ocean;Pod;Leaping;Blowhole
-Sloth|A busy schedule would not suit this animal.|Slow;Tree;Claws;Hanging;Sleepy
-Chameleon|Blending in is part of this animal's reputation.|Color;Tongue;Lizard;Eyes;Branch
-Peacock|One member of this species is very hard to overlook.|Feathers;Tail;Display;Blue;Bird
-Flamingo|People sometimes copy the way this animal stands.|Pink;Leg;Bird;Water;Flock
-Bee|A tiny worker can be very important to your food.|Honey;Hive;Pollen;Buzz;Sting
-Butterfly|This animal has a very different childhood.|Wings;Caterpillar;Cocoon;Flowers;Flutter
-Cactus|This plant does not want a hug.|Spines;Desert;Succulent;Dry;Pot
-Sunflower|The name gives a clue about its appearance.|Yellow;Seeds;Tall;Petals;Garden
-Volcano|This can be quiet for a very long time before causing trouble.|Lava;Crater;Eruption;Mountain;Ash
-Rainbow|You can see this without being able to walk up to it.|Colors;Rain;Arc;Sunshine;Sky
-Snowflake|People use this as a symbol for something unique.|Ice;Winter;Crystal;Falling;Six sides
-Waterfall|Sometimes the journey down is much faster than the journey up.|River;Drop;Mist;Roar;Cliff
-Tornado|This is the wrong kind of thing to see spinning nearby.|Funnel;Wind;Storm;Twister;Cloud`,
- Screen:`Batman|This hero's equipment is more important than superpowers.|Gotham;Cave;Cape;Bruce;Signal
-Spider-Man|This hero has a complicated relationship with getting to school.|Web;Swing;Peter;Mask;Spider
-Superman|Ordinary clothes make a surprisingly effective disguise.|Cape;Krypton;Clark;Flying;Metropolis
-Harry Potter|A school letter changed this person's whole life.|Wand;Hogwarts;Glasses;Scar;Wizard
-Darth Vader|You can recognize this character without seeing their face.|Helmet;Breathing;Force;Black;Father
-Yoda|This character makes age look rather surprising.|Green;Small;Jedi;Wisdom;Ears
-Shrek|This character would usually prefer visitors to go away.|Ogre;Swamp;Donkey;Green;Fiona
-SpongeBob|Having a normal job does not prevent a strange daily life.|Pineapple;Spatula;Square;Sponge;Patrick
-Minions|A group of very small helpers can cause very big problems.|Yellow;Goggles;Banana;Gru;Overalls
-Toy Story|Ordinary objects have a very busy life when people leave.|Woody;Buzz;Andy;Toys;Playroom
-Frozen|A family argument can have an effect on the weather.|Elsa;Snow;Anna;Olaf;Sisters
-Jurassic Park|An exciting attraction has a very serious safety problem.|Dinosaurs;Island;Amber;Raptor;Fences
-Star Wars|Family problems can have consequences for an entire galaxy.|Lightsaber;Force;Space;Jedi;Empire
-Stranger Things|Life in a small town becomes much less ordinary.|Eleven;Hawkins;Upside Down;Bikes;Demogorgon
-Scooby-Doo|A frightening problem often has an ordinary explanation.|Mystery;Van;Dog;Snacks;Mask
-The Simpsons|One family has stayed the same age for a very long time.|Springfield;Homer;Yellow;Donut;Bart
-WALL-E|Tidying up can be lonely work.|Robot;Trash;Space;Eve;Earth
-Lightning McQueen|This character wants to be known for being fast.|Race;Red;Cars;Ninety-five;Radiator Springs
-Willy Wonka|Getting into this person's workplace is a very unusual prize.|Chocolate;Factory;Golden ticket;Candy;Inventor
-The Grinch|This character is not very enthusiastic about a popular celebration.|Green;Christmas;Whoville;Heart;Max`
+ Games:`Hotbar|Part of your setup|Slots;Keys;Quick;Items;Bottom
+Inventory|Part of your setup|Storage;Bag;Items;Space;Sorting
+Loadout|Part of your setup|Weapons;Preset;Equipment;Match;Choice
+Health bar|Part of your setup|Damage;Red;Healing;Meter;Survival
+Fall damage|Can change a match|Height;Landing;Gravity;Drop;Ouch
+Friendly fire|Can change a match|Teammate;Accident;Aim;Damage;Oops
+Lag|Can change a match|Delay;Connection;Frozen;Ping;Stutter
+Headshot|Can change a match|Accuracy;Helmet;Aim;Critical;Sniper
+Battle pass|Something to unlock|Season;Tiers;Rewards;Progress;Levels
+Skill tree|Something to unlock|Branches;Abilities;Points;Upgrade;Build
+Achievement|Something to unlock|Trophy;Challenge;Milestone;Badge;Completed
+Character skin|Something to unlock|Outfit;Cosmetic;Style;Shop;Appearance
+Loot chest|Worth looking for|Treasure;Opening;Gear;Hidden;Lucky
+Medkit|Worth looking for|Healing;Emergency;Bandage;Recovery;Supplies
+Supply drop|Worth looking for|Parachute;Crate;Landing;Gear;Sky
+Hidden level|Worth looking for|Secret;Entrance;Bonus;Explore;Surprise
+Fast travel|A way around danger|Map;Destination;Instant;Distance;Waypoint
+Double jump|A way around danger|Airborne;Platform;Twice;Height;Leap
+Respawn point|A way around danger|Return;Death;Bed;Restart;Location
+Shield potion|A way around danger|Blue;Drink;Protection;Bottle;Survival`,
+ Food:`Garlic bread|Often served warm|Butter;Crust;Italian;Toasted;Aroma
+Grilled cheese|Often served warm|Melted;Sandwich;Pan;Golden;Stretch
+Fried rice|Often served warm|Wok;Grains;Egg;Leftovers;Soy
+Quesadilla|Often served warm|Folded;Tortilla;Melted;Wedges;Pan
+Cinnamon roll|A sweet treat|Spiral;Icing;Bakery;Spice;Soft
+Fortune cookie|A sweet treat|Message;Crack;Paper;Prediction;Restaurant
+Milkshake|A sweet treat|Straw;Blender;Thick;Cold;Glass
+Gingerbread|A sweet treat|House;Spices;Decorate;Holiday;Baking
+Onion rings|Crunch is part of it|Circles;Batter;Fried;Side;Dip
+Pretzel|Crunch is part of it|Knot;Salt;Twisted;Snack;Bakery
+Nachos|Crunch is part of it|Chips;Toppings;Melted;Sharing;Jalapeño
+Mozzarella sticks|Crunch is part of it|Stretch;Breaded;Marinara;Fried;Appetizer
+Corn dog|May come with a dip|Stick;Fair;Batter;Mustard;Sausage
+Spring roll|May come with a dip|Wrapper;Vegetables;Crispy;Filling;Restaurant
+Chicken wings|May come with a dip|Sauce;Bones;Basket;Spicy;Napkins
+Breadsticks|May come with a dip|Long;Basket;Bakery;Butter;Restaurant
+Ice cream sandwich|Something in the middle|Frozen;Layers;Cookie;Wrapper;Melting
+Peanut butter cup|Something in the middle|Wrapper;Chocolate;Ridged;Sweet;Filling
+Jelly donut|Something in the middle|Bakery;Filling;Powder;Round;Sweet
+Ravioli|Something in the middle|Pasta;Pillow;Stuffed;Sauce;Square`,
+ Everyday:`Paper clip|Helps things stay together|Wire;Office;Documents;Bent;Desk
+Rubber band|Helps things stay together|Stretch;Elastic;Loop;Snap;Bundle
+Safety pin|Helps things stay together|Metal;Clasp;Point;Clothing;Fastener
+Zip tie|Helps things stay together|Plastic;Loop;Tighten;Teeth;Cable
+Keychain|Useful away from home|Ring;Pocket;Charm;Metal;Carry
+Sleeping bag|Useful away from home|Camping;Zipper;Warm;Roll;Tent
+Flashlight|Useful away from home|Beam;Battery;Dark;Switch;Camping
+Seat belt|Useful away from home|Buckle;Car;Click;Safety;Strap
+Tape measure|Often kept in a drawer|Length;Retract;Numbers;Builder;Yellow
+Bottle opener|Often kept in a drawer|Cap;Lever;Kitchen;Metal;Drink
+Lint roller|Often kept in a drawer|Sticky;Clothing;Pet hair;Handle;Peel
+Staple remover|Often kept in a drawer|Office;Teeth;Paper;Pinch;Metal
+Extension cord|Makes a small job easier|Outlet;Reach;Cable;Power;Plug
+Hand sanitizer|Makes a small job easier|Pump;Gel;Clean;Pocket;Alcohol
+Sticky note|Makes a small job easier|Reminder;Yellow;Desk;Message;Peel
+Pencil sharpener|Makes a small job easier|Point;Shavings;Blade;Classroom;Turn
+Doorbell|Can get your attention|Visitor;Button;Chime;Porch;Delivery
+Fire alarm|Can get your attention|Emergency;Loud;Drill;Building;Warning
+Traffic cone|Can get your attention|Orange;Road;Safety;Construction;Triangle
+Walkie-talkie|Can get your attention|Radio;Button;Over;Channel;Antenna`,
+ Places:`Train platform|People wait here|Tracks;Departure;Station;Edge;Timetable
+Bus stop|People wait here|Shelter;Route;Bench;Schedule;Curb
+Waiting room|People wait here|Appointment;Chairs;Magazine;Reception;Names
+Rest stop|People wait here|Highway;Break;Bathrooms;Picnic;Road trip
+Food court|Part of a bigger building|Trays;Mall;Choices;Tables;Lunch
+Locker room|Part of a bigger building|Bench;Team;Changing;Showers;Padlock
+Dressing room|Part of a bigger building|Mirror;Curtain;Clothes;Try;Size
+Parking garage|Part of a bigger building|Ramps;Cars;Levels;Ticket;Concrete
+Escape room|A visit is an activity|Puzzle;Timer;Clues;Locked;Teamwork
+Skate park|A visit is an activity|Ramps;Rails;Helmet;Tricks;Concrete
+Mini golf|A visit is an activity|Putter;Windmill;Obstacles;Scorecard;Hole
+Water park|A visit is an activity|Slides;Tubes;Splash;Queue;Swimsuit
+Drive-through|A short stop|Window;Order;Car;Speaker;Lane
+Lost and found|A short stop|Missing;Claim;Office;Box;Forgotten
+Souvenir shop|A short stop|Postcards;Magnets;Tourist;Gift;Keepsake
+Photo booth|A short stop|Curtain;Pictures;Strip;Flash;Posing
+Laundromat|Not usually in your house|Machines;Coins;Laundry;Spin;Waiting
+Boardwalk|Not usually in your house|Wooden;Beach;Strolling;Shops;Summer
+School cafeteria|Not usually in your house|Trays;Lunch;Tables;Queue;Students
+Haunted house|Not usually in your house|Scary;Dark;Screams;Actors;Halloween`,
+ Nature:`Praying mantis|Small but distinctive|Insect;Camouflage;Arms;Green;Predator
+Firefly|Small but distinctive|Glow;Night;Insect;Summer;Blink
+Hummingbird|Small but distinctive|Hover;Nectar;Wings;Flowers;Tiny
+Hermit crab|Small but distinctive|Shell;Beach;Claws;Home;Borrowed
+Tide pool|Close to the water|Shallow;Rocks;Coast;Anemone;Trapped
+Starfish|Close to the water|Arms;Ocean;Regrow;Seafloor;Five
+Seahorse|Close to the water|Tail;Snout;Upright;Ocean;Tiny
+Sea turtle|Close to the water|Shell;Flippers;Beach;Eggs;Ocean
+Coconut|Something with a covering|Palm;Shell;Tropical;White;Water
+Acorn|Something with a covering|Oak;Squirrel;Cap;Seed;Autumn
+Pine cone|Something with a covering|Scales;Tree;Seeds;Forest;Brown
+Sea urchin|Something with a covering|Spines;Ocean;Round;Rock;Careful
+Northern lights|Worth looking up for|Colors;Sky;Polar;Night;Dancing
+Shooting star|Worth looking up for|Wish;Streak;Night;Trail;Quick
+Solar eclipse|Worth looking up for|Shadow;Daytime;Moon;Glasses;Darkness
+Full moon|Worth looking up for|Round;Night;Bright;Werewolf;Sky
+Venus flytrap|Easy to notice outside|Plant;Snap;Insect;Teeth;Leaves
+Spiderweb|Easy to notice outside|Silk;Sticky;Dew;Threads;Corner
+Dandelion|Easy to notice outside|Yellow;Seeds;Wish;Lawn;Floating
+Tumbleweed|Easy to notice outside|Rolling;Desert;Dry;Wind;Western`,
+ Screen:`Dobby|Usually has company|Sock;Freedom;Elf;Hogwarts;Helpful
+Chewbacca|Usually has company|Furry;Wookiee;Growl;Copilot;Han
+Donkey|Usually has company|Talkative;Ogre;Waffles;Dragon;Swamp
+Olaf|Usually has company|Snowman;Carrot;Summer;Hugs;Frozen
+Infinity Gauntlet|More than ordinary equipment|Stones;Glove;Snap;Gold;Thanos
+Sorting Hat|More than ordinary equipment|Houses;Head;Hogwarts;Talking;Choice
+Batmobile|More than ordinary equipment|Gotham;Car;Gadgets;Black;Cave
+Lightsaber|More than ordinary equipment|Glow;Duel;Jedi;Blade;Humming
+Wolverine|A recognizable look|Claws;Healing;Yellow;Logan;Mutant
+Deadpool|A recognizable look|Red;Mask;Jokes;Healing;Swords
+Optimus Prime|A recognizable look|Truck;Robot;Leader;Autobot;Transform
+Wednesday Addams|A recognizable look|Braids;Gothic;Deadpan;Dance;School
+Hogwarts|A place with a reputation|Castle;Wizard;Houses;School;Express
+Wakanda|A place with a reputation|Vibranium;Panther;Kingdom;Africa;Hidden
+Bikini Bottom|A place with a reputation|Pineapple;Underwater;Krab;Sponge;Neighbors
+Death Star|A place with a reputation|Space;Station;Laser;Empire;Moon
+The Joker|Often causes trouble|Clown;Gotham;Purple;Laugh;Cards
+Green Goblin|Often causes trouble|Glider;Pumpkin;Mask;Osborn;Spider
+Thanos|Often causes trouble|Purple;Titan;Stones;Snap;Balance
+Team Rocket|Often causes trouble|Meowth;Jessie;James;Balloon;Trouble`
 };
 const aliases={
- 'Pokémon':['Pokemon'],'The Sims':['Sims'],'Grand Theft Auto':['GTA'],
- 'Minecraft Creeper':['Creeper'],'French fries':['Fries','French fry'],'Donut':['Doughnut'],
- 'Mac and cheese':['Macaroni and cheese'],'Chicken nuggets':['Nuggets'],'Peanut butter':['PB'],
- 'Refrigerator':['Fridge'],'Remote control':['Remote'],'Phone charger':['Charger'],
- 'Washing machine':['Washer'],'Movie theater':['Cinema','Movie theatre'],'Swimming pool':['Pool'],
- 'Amusement park':['Theme park'],'Supermarket':['Grocery store'],'Barber shop':['Barbershop'],
- 'Gas station':['Petrol station'],'Spider-Man':['Spiderman'],'SpongeBob':['SpongeBob SquarePants'],
- 'Minions':['Minion'],'WALL-E':['Walle','Wall E'],'The Grinch':['Grinch'],
- 'The Simpsons':['Simpsons'],'Scooby-Doo':['Scooby Doo','Scooby'],'Lightning McQueen':['McQueen']
+ Hotbar:['Hot bar'],Inventory:['Item inventory'],Loadout:['Weapon loadout'],
+ 'Health bar':['HP bar','Life bar'],'Fall damage':['Falling damage'],'Friendly fire':['Team damage'],
+ 'Battle pass':['Battlepass'],'Skill tree':['Talent tree'],'Character skin':['Skin','Player skin'],
+ 'Loot chest':['Treasure chest'],'Medkit':['Med kit','Medical kit'],'Supply drop':['Airdrop','Air drop'],
+ 'Hidden level':['Secret level'],'Fast travel':['Fast-travel'],'Double jump':['Double-jump'],
+ 'Respawn point':['Spawn point'],'Shield potion':['Shield pot'],
+ 'Grilled cheese':['Grilled cheese sandwich'],'Fortune cookie':['Fortune cookies'],
+ 'Onion rings':['Onion ring'],'Mozzarella sticks':['Mozzarella stick','Mozz sticks'],
+ 'Corn dog':['Corndog'],'Spring roll':['Spring rolls'],'Chicken wings':['Chicken wing'],
+ 'Breadsticks':['Bread sticks','Breadstick'],'Peanut butter cup':['Peanut butter cups'],
+ 'Jelly donut':['Jelly doughnut','Jam doughnut','Jam donut'],
+ 'Paper clip':['Paperclip'],'Rubber band':['Elastic band'],'Zip tie':['Cable tie'],
+ 'Keychain':['Key chain','Keyring','Key ring'],'Seat belt':['Seatbelt'],'Tape measure':['Measuring tape'],
+ 'Staple remover':['Destapler'],'Hand sanitizer':['Hand sanitiser'],'Sticky note':['Post-it','Post it','Postit'],
+ 'Pencil sharpener':['Sharpener'],'Walkie-talkie':['Walkie talkie','Two-way radio'],
+ 'Train platform':['Railway platform'],'Dressing room':['Fitting room'],'Parking garage':['Parking deck','Car park'],
+ 'Mini golf':['Miniature golf','Minigolf','Putt putt'],'Water park':['Waterpark'],
+ 'Drive-through':['Drive thru','Drive-thru','Drive through'],'Lost and found':['Lost property'],
+ 'Photo booth':['Photobooth'],'Laundromat':['Launderette'],'School cafeteria':['Cafeteria','School canteen'],
+ 'Praying mantis':['Mantis'],'Firefly':['Lightning bug'],'Hermit crab':['Hermit crabs'],
+ 'Tide pool':['Tidepool','Rock pool'],'Starfish':['Sea star'],'Sea turtle':['Marine turtle'],
+ 'Pine cone':['Pinecone'],'Sea urchin':['Urchin'],'Northern lights':['Aurora borealis','Aurora'],
+ 'Shooting star':['Meteor'],'Solar eclipse':['Eclipse of the sun'],'Venus flytrap':['Flytrap','Venus fly trap'],
+ 'Spiderweb':['Spider web','Cobweb'],'Chewbacca':['Chewie'],'Infinity Gauntlet':['Thanos gauntlet'],
+ 'Sorting Hat':['The Sorting Hat'],'Batmobile':['The Batmobile'],'Lightsaber':['Light saber'],
+ 'Optimus Prime':['Optimus'],'Wednesday Addams':['Wednesday'],'Hogwarts':['Hogwarts school'],
+ 'Bikini Bottom':['BikiniBottom'],'Death Star':['The Death Star'],'The Joker':['Joker'],
+ 'Green Goblin':['The Green Goblin'],'Team Rocket':['Rocket trio']
 };
 export const OATH_QUESTIONS=Object.entries(groups).flatMap(([category,text])=>text.split('\n').map((row,i)=>{const [answer,hint,clues]=row.split('|');return {id:'oath-'+category.toLowerCase()+'-'+(i+1),category,prompt:'One witness is bluffing. Find out who.',answer,aliases:aliases[answer]??[],hint,clues:clues.split(';')};}));
 export const OATH_BY_ID=new Map(OATH_QUESTIONS.map(q=>[q.id,q]));

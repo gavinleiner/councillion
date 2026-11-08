@@ -43,8 +43,8 @@ export class OathPreviewSession{
   const s=this.state,key=[s.matchId,s.round,s.stage,s.stageAt].join(':');if(key!==this.phaseKey){this.phaseKey=key;this.phaseAt=this.now();}
   const elapsed=this.now()-this.phaseAt,ref=this.secret.oath,q=OATH_BY_ID.get(ref?.caseId);let changed=false;
   try{
-   if(s.stage==='oath-write')for(const [i,p]of s.players.slice(1).entries())if(s.turn===p.id&&!s.locked[p.id]&&elapsed>3000+i%3*350){this.send(p.id,'oath-bluff',{text:oathBotClue(q,p.id===ref.impostor,i,s.round)});changed=true;}
-   if(s.stage==='oath-vote')for(const [i,p]of s.players.slice(1).entries())if(!s.voted[p.id]&&elapsed>5500+i*650){this.send(p.id,'oath-vote',{choice:oathBotVote(s,ref,p.id,i)});changed=true;}
+   if(s.stage==='oath-write')for(const [i,p]of s.players.slice(1).entries())if(s.turn===p.id&&!s.locked[p.id]&&elapsed>3000+i%3*350){this.send(p.id,'oath-bluff',{text:oathBotClue(q,p.id===ref.impostor,i,s.round,s.clueLap)});changed=true;}
+   if(s.stage==='oath-vote')for(const [i,p]of s.players.slice(1).entries())if(elapsed>5500+i*650){if(s.extendVotes?.[this.uid]&&!s.extendVotes?.[p.id]){this.send(p.id,'oath-more',{want:true});changed=true;}else if(!s.voted[p.id]&&!s.extendVotes?.[p.id]){this.send(p.id,'oath-vote',{choice:oathBotVote(s,ref,p.id,i)});changed=true;}}
    if(s.stage==='oath-guess'&&s.turn!==this.uid&&!s.guessSealed&&elapsed>4000){this.send(s.turn,'oath-guess',{text:oathBotGuess(q,s.players.findIndex(p=>p.id===s.turn),s.round)});changed=true;}
    if(tickCourtGame(s,this.secret,this.now()))changed=true;
    if(changed)this.render();
