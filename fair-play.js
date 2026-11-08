@@ -10,7 +10,7 @@ export function courtFocusKey(s){
 export function courtFocusEligible(s,id){
  const p=s?.players?.find(p=>p.id===id);if(!p||p.spectator||p.connected===false||!courtFocusKey(s))return false;
  if(s.variant==='figure')return s.stage==='estimate'&&!s.locked?.[id];
- if(s.variant==='oath')return ['oath-write','oath-shuffle','oath-vote'].includes(s.stage)&&!s.voted?.[id];
+ if(s.variant==='oath')return s.stage==='oath-guess'?s.turn===id&&!s.guessSealed:s.stage==='oath-write'?s.turn===id&&!s.locked?.[id]:s.stage==='oath-vote'&&!s.voted?.[id];
  if(s.variant==='docket'){
   if(['docketFinalRead','docketFinalAnswer'].includes(s.stage))return s.eligible?.includes(id)&&!s.locked?.[id];
   if(!['docketRead','docketBuzz','docketAnswer','docketRebound'].includes(s.stage))return false;

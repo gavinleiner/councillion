@@ -2,105 +2,97 @@ import {OATH_QUESTIONS,OATH_BY_ID} from './oath-data.js';
 import {validateChat} from './moderation.js';
 import {shuffle} from './question-selection.js';
 
-export const OATH_TIMING={intro:6000,read:3000,write:35000,shuffle:1800,vote:20000,reveal:2400,truth:4500,standings:6500};
+export const OATH_TIMING={intro:7000,read:5000,write:22000,shuffle:900,share:2800,vote:25000,accuse:3200,guess:18000,reveal:6500,standings:6500};
 export const oathKey=value=>String(value??'').normalize('NFKD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9 ]/g,'').replace(/\b(a|an|the)\b/g,' ').replace(/\s+/g,' ').trim();
-// Only recognize a typo of an already-entered truth; never suggest the answer.
-// Short guesses need an exact alias, except a simple adjacent transposition.
 function singleTypo(a,b){
  if(Math.abs(a.length-b.length)>1)return false;
  if(a.length===b.length){const diff=[...a].flatMap((ch,i)=>ch===b[i]?[]:[i]);if(diff.length===2&&diff[1]===diff[0]+1&&a[diff[0]]===b[diff[1]]&&a[diff[1]]===b[diff[0]])return Math.min(a.length,b.length)>=4;return Math.min(a.length,b.length)>=6&&diff.length===1;}
  if(Math.max(a.length,b.length)<6||Math.min(a.length,b.length)<5)return false;const [short,long]=a.length<b.length?[a,b]:[b,a];let i=0,j=0,skips=0;while(j<long.length){if(short[i]===long[j]){i++;j++;}else{j++;if(++skips>1)return false;}}return true;
 }
-export function isOathTruth(q,text){const key=oathKey(text),answers=[q.answer,...(q.aliases??[])].map(oathKey);if(answers.includes(key))return true;if(q.decoys.some(d=>oathKey(d)===key))return false;return answers.some(a=>singleTypo(key,a));}
+export function isOathTruth(q,text){const key=oathKey(text),answers=[q.answer,...(q.aliases??[])].map(oathKey);if(answers.includes(key))return true;if((q.decoys??[]).some(d=>oathKey(d)===key))return false;return answers.some(a=>singleTypo(key,a));}
+export function normalizeOathReferee(ref){if(!ref)return ref;for(const key of ['roleCounts','submissions','drafts','votes','forfeits'])ref[key]??={};for(const key of ['deck','order'])ref[key]=Object.values(ref[key]??[]);return ref;}
 const participants=s=>s.players.filter(p=>!p.spectator);
 const present=s=>participants(s).filter(p=>p.connected!==false&&p.online!==false);
-const stage=(s,name,now,ms)=>{s.stage=name;s.stageAt=now;s.deadline=ms?now+ms:0;s.phase=name==='finish'?'ended':name==='lobby'?'lobby':['oath-reveal','oath-standings'].includes(name)?'burst':'playing';s.revision++;};
+const stage=(s,name,now,ms)=>{s.stage=name;s.stageAt=now;s.deadline=ms?now+ms:0;s.phase=name==='finish'?'ended':name==='lobby'?'lobby':['oath-share','oath-accuse','oath-reveal','oath-standings'].includes(name)?'burst':'playing';s.revision++;};
 const event=(s,type,text,now,extra={})=>{s.notice=text;s.event={id:++s.eventSerial,type,text,at:now,...extra};s.revision++;};
-const fact=s=>OATH_BY_ID.get(s.case?.id);
+const fact=secret=>OATH_BY_ID.get(secret.oath?.caseId);
 export function oathDeck(rng=Math.random){
  const groups=new Map();for(const q of shuffle(OATH_QUESTIONS,rng)){if(!groups.has(q.category))groups.set(q.category,[]);groups.get(q.category).push(q.id);}
  const categories=shuffle([...groups.keys()],rng),deck=[];while([...groups.values()].some(a=>a.length))for(const c of categories){const id=groups.get(c).pop();if(id)deck.push(id);}return deck;
 }
 export function startOath(s,secret,now=Date.now(),rng=Math.random){
- const rows=s.players.filter(p=>p.connected!==false&&p.online!==false&&!p.spectator);if(rows.length<2||rows.length>6)throw Error('Under Oath needs two to six players.');if(rows.some(p=>!p.ready))throw Error('Wait for everyone to ready up.');
- s.matchId=crypto.randomUUID();s.players=s.players.map(p=>({...p,score:0,spectator:!rows.some(r=>r.id===p.id)}));s.round=0;s.history=[];s.locked={};s.voted={};s.choices=[];s.revealed=[];s.settings.rounds=6;delete s.result;delete s.roundResult;delete s.case;
- secret.oath={deck:oathDeck(rng),submissions:{},drafts:{},votes:{},options:[],knowers:{}};stage(s,'oath-intro',now,OATH_TIMING.intro);event(s,'oath-intro','Write a lie. Vote for the truth. Fool the court.',now);return true;
+ const rows=present(s);if(rows.length<3||rows.length>6)throw Error('Under Oath needs three to six witnesses.');if(rows.some(p=>!p.ready))throw Error('Wait for everyone to ready up.');
+ s.matchId=crypto.randomUUID();s.players=s.players.map(p=>({...p,score:0,spectator:!rows.some(r=>r.id===p.id)}));s.round=0;s.history=[];s.locked={};s.voted={};s.choices=[];s.testimonies=[];s.settings.rounds=6;
+ for(const key of ['result','roundResult','case','reveal','evidence','verdict','turn','guessSealed'])delete s[key];
+ secret.oath={deck:oathDeck(rng),roleCounts:{},submissions:{},drafts:{},votes:{},forfeits:{}};stage(s,'oath-intro',now,OATH_TIMING.intro);event(s,'oath-intro','One secret impostor. Everyone else knows the word.',now);return true;
 }
-function nextRound(s,secret,now){
- const ref=secret.oath,q=OATH_BY_ID.get(ref.deck[s.round]);if(!q)return finishOath(s,now);
- s.focusOpenedAt=now;s.round++;s.case={id:q.id,prompt:q.prompt,hint:q.hint,category:q.category};s.locked={};s.voted={};s.choices=[];s.revealed=[];s.advanceReady={};delete s.roundResult;delete s.reveal;delete s.evidence;
- ref.submissions={};ref.drafts={};ref.votes={};ref.knowers={};ref.forfeits={};ref.options=[];ref.revealIndex=0;ref.verdict=[];ref.scored=false;stage(s,'oath-read',now,OATH_TIMING.read);event(s,'oath-case','Case '+s.round+'. Read the evidence.',now);
+function nextRound(s,secret,now,rng){
+ const ref=normalizeOathReferee(secret.oath),q=OATH_BY_ID.get(ref.deck[s.round]);if(!q)return finishOath(s,now);
+ const rows=present(s).length?present(s):participants(s),least=Math.min(...rows.map(p=>ref.roleCounts[p.id]??0));ref.impostor=shuffle(rows.filter(p=>(ref.roleCounts[p.id]??0)===least),rng)[0].id;ref.roleCounts[ref.impostor]=(ref.roleCounts[ref.impostor]??0)+1;ref.caseId=q.id;
+ s.focusOpenedAt=now;s.round++;s.case={id:crypto.randomUUID(),category:q.category,prompt:'Give one clue. Find the witness who is bluffing.'};s.locked={};s.voted={};s.choices=[];s.testimonies=[];s.advanceReady={};
+ for(const key of ['roundResult','reveal','evidence','verdict','turn','guessSealed'])delete s[key];
+ const seats=participants(s).map(p=>p.id),first=Math.floor(rng()*seats.length);ref.order=[...seats.slice(first),...seats.slice(0,first)];s.clueOrder=[...ref.order];s.turn=ref.order[0];Object.assign(ref,{submissions:{},drafts:{},votes:{},forfeits:{},shareIndex:0,caught:false,guess:'',guessed:false,scored:false});stage(s,'oath-read',now,OATH_TIMING.read);event(s,'oath-case','Check your private brief. Keep it to yourself.',now);
 }
-function buildOptions(s,secret,now,rng){
- const ref=secret.oath;for(const [uid,text]of Object.entries(ref.drafts??{}))if(!s.locked[uid]&&!ref.forfeits?.[uid]&&participants(s).some(p=>p.id===uid)){try{sealSubmission(s,ref,uid,text);}catch{/* Invalid or empty drafts never stop the court. */}}
- const q=fact(s),options=[{text:q.answer,kind:'truth',authors:[]}];
- for(const [uid,row]of Object.entries(ref.submissions)){if(row.knows)continue;const key=oathKey(row.text),same=options.find(o=>oathKey(o.text)===key);if(same)same.authors.push(uid);else options.push({text:row.text,kind:'bluff',authors:[uid]});}
- for(const text of shuffle(q.decoys,rng)){if(options.length>=4)break;if(!options.some(o=>oathKey(o.text)===oathKey(text)))options.push({text,kind:'decoy',authors:[]});}
- ref.options=shuffle(options,rng).map(o=>({...o,text:o.text.replace(/^[a-z]/,c=>c.toUpperCase()).replace(/[.!?]+$/,''),id:crypto.randomUUID()}));stage(s,'oath-shuffle',now,OATH_TIMING.shuffle);event(s,'oath-shuffle','The testimony is sealed. The clerk is mixing the statements.',now);
+function clean(value){return String(value??'').replace(/[\u0000-\u001f\u200b-\u200f\u202a-\u202e\u2060-\u206f\ufeff]/g,'').replace(/\s+/g,' ').trim();}
+function sealClue(s,secret,uid,value){
+ const text=clean(value);if(!text||text.length>48||!/[a-z0-9]/i.test(text))throw Error('Write a clue, up to 48 characters.');
+ validateChat(text);if(uid!==secret.oath.impostor&&[fact(secret).answer,...fact(secret).aliases].some(a=>oathKey(text)===oathKey(a)))throw Error('Give a clue without naming the secret word.');
+ secret.oath.submissions[uid]={text};s.locked[uid]=true;return {accepted:true};
 }
-function openVotes(s,secret,now){for(const id of Object.keys(secret.oath.knowers))s.voted[id]=true;s.choices=secret.oath.options.map(({id,text})=>({id,text}));stage(s,'oath-vote',now,OATH_TIMING.vote);event(s,'oath-vote','One statement is true. Choose carefully.',now);}
-function reveal(s,secret,now,rng){
- const ref=secret.oath;ref.verdict=[...shuffle(ref.options.filter(o=>o.kind!=='truth'),rng),...ref.options.filter(o=>o.kind==='truth')].map(o=>({...o,voters:Object.entries(ref.votes).filter(([,v])=>v===o.id).map(([id])=>id)}));ref.revealIndex=0;s.revealed=[];stage(s,'oath-reveal',now,600);event(s,'oath-unseal','Witnesses, stand by your testimony.',now);
+function prepareShare(s,secret,now){
+ const ref=normalizeOathReferee(secret.oath),id=s.turn;if(!s.locked[id]&&!ref.forfeits[id]&&ref.drafts[id]){try{sealClue(s,secret,id,ref.drafts[id]);}catch{}}
+ delete ref.drafts[id];s.locked[id]=true;stage(s,'oath-shuffle',now,OATH_TIMING.shuffle);event(s,'oath-shuffle','Clue sealed. Filing it for the court.',now,{player:id});
 }
-function revealNext(s,secret,now){
- const ref=secret.oath,row=ref.verdict[ref.revealIndex++];if(!row){scoreRound(s,secret,now);return;}
- s.revealed.push({...row});const truth=row.kind==='truth';s.reveal={id:row.id,kind:row.kind};s.deadline=now+(truth?OATH_TIMING.truth:OATH_TIMING.reveal);s.stageAt=now;
- if(truth){const q=fact(s);s.evidence={answer:q.answer,explanation:q.explanation,source:q.source,sourceTitle:q.sourceTitle};}
- event(s,truth?'oath-truth':row.kind==='bluff'?'oath-perjury':'oath-decoy',truth?'THE TRUTH':row.kind==='bluff'?'PERJURY':'COURT DECOY',now,{choice:row.id,authors:row.authors,voters:row.voters});
+function shareCurrent(s,secret,now){const ref=secret.oath,id=s.turn;s.testimonies.push({id,text:ref.submissions[id]?.text??'No clue submitted',missing:!ref.submissions[id]});stage(s,'oath-share',now,OATH_TIMING.share);event(s,'oath-testimony',s.players.find(p=>p.id===id)?.name+' takes the stand.',now,{player:id});}
+function nextClue(s,secret,now){
+ const ref=secret.oath;ref.shareIndex++;if(ref.shareIndex>=ref.order.length){s.choices=participants(s).map(p=>({id:p.id,text:p.name}));delete s.turn;stage(s,'oath-vote',now,OATH_TIMING.vote);event(s,'oath-vote','Talk it out. Secretly vote for the impostor.',now);return;}
+ s.turn=ref.order[ref.shareIndex];s.focusOpenedAt=now;stage(s,'oath-write',now,OATH_TIMING.write);event(s,'oath-write',s.players.find(p=>p.id===s.turn)?.name+', your clue.',now);
+}
+function accuse(s,secret,now){
+ const counts=Object.fromEntries(participants(s).map(p=>[p.id,0]));for(const id of Object.values(secret.oath.votes))if(Object.hasOwn(counts,id))counts[id]++;
+ const top=Math.max(...Object.values(counts)),tied=Object.keys(counts).filter(id=>counts[id]===top),accused=top>0&&tied.length===1?tied[0]:'';
+ s.verdict={counts,accused,tied:accused?[]:tied};secret.oath.caught=accused===secret.oath.impostor;stage(s,'oath-accuse',now,OATH_TIMING.accuse);event(s,'oath-ballots','The votes are in. Unsealing the accusation.',now);
+}
+function revealCase(s,secret,now){
+ const ref=secret.oath,q=fact(secret);s.reveal={impostor:ref.impostor,word:q.answer,caught:ref.caught,guess:ref.guess,guessed:ref.guessed};stage(s,'oath-reveal',now,OATH_TIMING.reveal);event(s,ref.caught?'oath-exposed':'oath-escaped',ref.caught?ref.guessed?'The impostor recovered the word.':'The court found its impostor.':'The impostor slipped through.',now,{player:ref.impostor});
 }
 function scoreRound(s,secret,now){
- const ref=secret.oath;if(ref.scored)return;ref.scored=true;const multiplier=s.round===s.settings.rounds?2:1,truth=ref.options.find(o=>o.kind==='truth'),gains=Object.fromEntries(participants(s).map(p=>[p.id,0])),fooled=Object.fromEntries(participants(s).map(p=>[p.id,0]));
- for(const p of participants(s))if(ref.knowers[p.id]||ref.votes[p.id]===truth.id)gains[p.id]+=1000*multiplier;
- for(const o of ref.options.filter(o=>o.kind==='bluff')){const voters=Object.entries(ref.votes).filter(([,v])=>v===o.id).length;for(const id of o.authors){gains[id]=(gains[id]??0)+500*voters*multiplier;fooled[id]=voters;}}
- for(const id of Object.keys(ref.forfeits??{}))gains[id]=0;
- const rows=participants(s).map(p=>({id:p.id,before:p.score,gain:gains[p.id],score:p.score+gains[p.id],fooled:fooled[p.id],correct:!!ref.knowers[p.id]||ref.votes[p.id]===truth.id}));for(const p of s.players)p.score+=gains[p.id]??0;rows.sort((a,b)=>b.score-a.score);
- s.roundResult={rows,multiplier};s.history.push({round:s.round,id:s.case.id,rows});s.advanceReady={};stage(s,'oath-standings',now,OATH_TIMING.standings);event(s,'oath-scores','The court has spoken. Here is the damage.',now);
+ const ref=secret.oath;if(ref.scored)return;ref.scored=true;const multiplier=s.round===6?2:1;
+ const rows=participants(s).map(p=>{const impostor=p.id===ref.impostor,correct=!impostor&&ref.votes[p.id]===ref.impostor,base=impostor?(ref.caught?(ref.guessed?1500:0):2000):(correct?1000:0),gain=ref.forfeits[p.id]?0:base*multiplier;return {id:p.id,before:p.score,gain,score:p.score+gain,impostor,correct,escaped:impostor&&!ref.caught,guessed:impostor&&ref.guessed};});
+ for(const p of s.players)p.score=rows.find(r=>r.id===p.id)?.score??p.score;rows.sort((a,b)=>b.score-a.score);s.roundResult={rows,multiplier};s.history.push({round:s.round,id:ref.caseId,word:fact(secret).answer,impostor:ref.impostor,rows});stage(s,'oath-standings',now,OATH_TIMING.standings);event(s,'oath-scores','Good clues. Better instincts. Here is the record.',now);
 }
 function finishOath(s,now){const rows=participants(s).map(p=>({id:p.id,score:p.score})).sort((a,b)=>b.score-a.score),max=rows[0]?.score??0;s.result={scores:rows,winners:rows.filter(r=>r.score===max).map(r=>r.id)};s.endedAt=now;stage(s,'finish',now,0);event(s,'oath-finish','Court adjourned. The final verdict is in.',now);return true;}
 export function oathReceipt(s,secret,uid){
- const ref=secret.oath;if(!ref||!s.matchId)return null;return {matchId:s.matchId,round:s.round,text:ref.submissions[uid]?.text??'',draft:ref.drafts?.[uid]??'',knows:!!ref.knowers[uid],forfeited:!!ref.forfeits?.[uid],selection:ref.votes[uid]??'',ownChoices:ref.options.filter(o=>o.authors.includes(uid)).map(o=>o.id)};
+ const ref=normalizeOathReferee(secret.oath),q=fact(secret);if(!ref||!s.matchId||!q||!participants(s).some(p=>p.id===uid))return null;const impostor=uid===ref.impostor;
+ return {matchId:s.matchId,round:s.round,role:impostor?'impostor':'witness',word:impostor?'':q.answer,hint:impostor?q.hint:'Give a clue that fits, without saying the word.',text:ref.submissions[uid]?.text??'',draft:ref.drafts?.[uid]??'',selection:ref.votes[uid]??'',forfeited:!!ref.forfeits[uid]};
 }
 export function sentenceOathTabSwitch(s,secret,uid){
- const ref=secret.oath;ref.forfeits??={};ref.forfeits[uid]=true;delete ref.votes[uid];delete ref.knowers[uid];s.locked[uid]=true;s.voted[uid]=true;
- if(s.stage==='oath-write'){delete ref.submissions[uid];delete ref.drafts?.[uid];}
- return 'CASE FORFEITED · 0 POINTS';
-}
-function cleanDraft(value){return String(value??'').replace(/[\u0000-\u001f\u200b-\u200f\u202a-\u202e\u2060-\u206f\ufeff]/g,'').replace(/\s+/g,' ').trim();}
-function sealSubmission(s,ref,uid,value){
- const raw=cleanDraft(value);if(raw.length<1||raw.length>48||!/[a-z0-9]/i.test(raw))throw Error('Write a short answer, up to 48 characters.');
- const text=validateChat(raw),knows=isOathTruth(fact(s),text);ref.submissions[uid]={text,knows};if(knows)ref.knowers[uid]=true;s.locked[uid]=true;return {accepted:true,knows};
+ const ref=normalizeOathReferee(secret.oath);ref.forfeits??={};ref.forfeits[uid]=true;delete ref.votes[uid];s.locked[uid]=true;s.voted[uid]=true;if(s.stage==='oath-write'){delete ref.submissions[uid];delete ref.drafts[uid];}if(s.stage==='oath-guess'&&s.turn===uid)s.guessSealed=true;return 'CASE FORFEITED · 0 POINTS';
 }
 export function actOath(s,secret,uid,action,payload={},now=Date.now()){
- if(action==='oath-draft'&&(s.stage!=='oath-write'||payload.matchId!==s.matchId||payload.round!==s.round||payload.stageAt!==s.stageAt||s.locked[uid]||s.deadline&&now>=s.deadline))return {ignored:true};
- const p=present(s).find(p=>p.id===uid);if(!p)throw Error('Only active witnesses can act.');if(payload.matchId!==s.matchId||payload.round!==s.round||payload.stageAt!==s.stageAt)throw Error('That belongs to an earlier phase.');if(s.deadline&&now>=s.deadline)throw Error('That timer has ended.');const ref=secret.oath;
- if(action==='oath-draft'){
-  ref.drafts??={};delete ref.drafts[uid];const text=cleanDraft(payload.text);if(text.length>48)throw Error('Keep testimony under 48 characters.');
-  if(text)ref.drafts[uid]=validateChat(text);return {saved:true};
- }
- if(action==='oath-bluff'){
-  if(s.stage!=='oath-write')throw Error('Wait for testimony to open.');if(s.locked[uid])throw Error('Your testimony is already sealed.');
-  const result=sealSubmission(s,ref,uid,payload.text);s.revision++;event(s,'oath-sealed',p.name+' sealed testimony.',now,{player:uid});return result;
- }
- if(action==='oath-vote'){
-  if(s.stage!=='oath-vote')throw Error('Voting has not opened.');if(s.voted[uid]||ref.knowers[uid])throw Error('Your verdict is already sealed.');const choice=ref.options.find(o=>o.id===payload.choice);if(!choice)throw Error('Choose a statement from this case.');if(choice.authors.includes(uid))throw Error('You cannot vote for your own lie.');ref.votes[uid]=choice.id;s.voted[uid]=true;s.revision++;return {accepted:true};
- }
- if(action==='oath-next'){
-  if(s.stage!=='oath-standings'||now-s.stageAt<3000)throw Error('Let the verdict settle first.');s.advanceReady[uid]=true;s.revision++;return {accepted:true};
- }
+ const writing=s.stage==='oath-write'&&s.turn===uid,guessing=s.stage==='oath-guess'&&s.turn===uid;
+ if(action==='oath-draft'&&((!writing&&!guessing)||payload.matchId!==s.matchId||payload.round!==s.round||payload.stageAt!==s.stageAt||(writing&&s.locked[uid])||s.guessSealed||s.deadline&&now>=s.deadline))return {ignored:true};
+ if(!present(s).some(p=>p.id===uid))throw Error('Only active witnesses can act.');if(payload.matchId!==s.matchId||payload.round!==s.round||payload.stageAt!==s.stageAt)throw Error('That belongs to an earlier phase.');if(s.deadline&&now>=s.deadline)throw Error('That timer has ended.');const ref=normalizeOathReferee(secret.oath);if(ref.forfeits[uid])throw Error('This case was forfeited.');
+ if(action==='oath-draft'){delete ref.drafts[uid];const text=clean(payload.text);if(text.length>48)throw Error('Keep testimony under 48 characters.');if(text)ref.drafts[uid]=validateChat(text);return {saved:true};}
+ if(action==='oath-bluff'){if(!writing)throw Error('Wait for your turn to give a clue.');if(s.locked[uid])throw Error('Your clue is already sealed.');const result=sealClue(s,secret,uid,payload.text);s.revision++;event(s,'oath-sealed','A witness sealed a clue.',now,{player:uid});return result;}
+ if(action==='oath-vote'){if(s.stage!=='oath-vote')throw Error('Voting has not opened.');if(s.voted[uid])throw Error('Your vote is already sealed.');if(payload.choice===uid)throw Error('Choose another witness.');if(!participants(s).some(p=>p.id===payload.choice))throw Error('Choose a witness from this case.');ref.votes[uid]=payload.choice;s.voted[uid]=true;s.revision++;return {accepted:true};}
+ if(action==='oath-guess'){if(!guessing)throw Error('Only the accused impostor can guess.');if(s.guessSealed)throw Error('Your guess is already sealed.');const text=clean(payload.text);if(!text||text.length>48)throw Error('Enter one short guess.');ref.guess=validateChat(text);ref.guessed=isOathTruth(fact(secret),text);s.guessSealed=true;s.revision++;return {accepted:true};}
  throw Error('That action is not available.');
 }
 export function tickOath(s,secret,now=Date.now(),rng=Math.random){
- if(['lobby','finish'].includes(s.stage))return false;const ref=secret.oath;if(!ref)throw Error('The referee record is unavailable.');const active=present(s);
- if(s.stage==='oath-write'&&now-s.stageAt>=3000&&active.length&&active.every(p=>s.locked[p.id])){buildOptions(s,secret,now,rng);return true;}
- if(s.stage==='oath-vote'&&now-s.stageAt>=2500&&active.length&&active.every(p=>s.voted[p.id]||ref.knowers[p.id])){reveal(s,secret,now,rng);return true;}
- if(s.stage==='oath-standings'&&now-s.stageAt>=3000&&active.length&&active.every(p=>s.advanceReady[p.id])){s.round>=s.settings.rounds?finishOath(s,now):nextRound(s,secret,now);return true;}
+ if(['lobby','finish'].includes(s.stage))return false;const ref=normalizeOathReferee(secret.oath);if(!ref)throw Error('The referee record is unavailable.');const active=present(s);
+ if(s.stage==='oath-write'&&(s.locked[s.turn]||ref.forfeits[s.turn])&&now-s.stageAt>=900){prepareShare(s,secret,now);return true;}
+ if(s.stage==='oath-vote'&&now-s.stageAt>=5000&&active.length&&active.every(p=>s.voted[p.id])){accuse(s,secret,now);return true;}
+ if(s.stage==='oath-guess'&&s.guessSealed&&now-s.stageAt>=1800){revealCase(s,secret,now);return true;}
  if(!s.deadline||now<s.deadline)return false;
- if(s.stage==='oath-intro'){nextRound(s,secret,now);return true;}
- if(s.stage==='oath-read'){stage(s,'oath-write',now,OATH_TIMING.write);event(s,'oath-write','Make your lie believable. Short answers work best.',now);return true;}
- if(s.stage==='oath-write'){buildOptions(s,secret,now,rng);return true;}
- if(s.stage==='oath-shuffle'){openVotes(s,secret,now);return true;}
- if(s.stage==='oath-vote'){reveal(s,secret,now,rng);return true;}
- if(s.stage==='oath-reveal'){revealNext(s,secret,now);return true;}
- if(s.stage==='oath-standings'){s.round>=s.settings.rounds?finishOath(s,now):nextRound(s,secret,now);return true;}
+ if(s.stage==='oath-intro'||s.stage==='oath-standings'){s.round>=6?finishOath(s,now):nextRound(s,secret,now,rng);return true;}
+ if(s.stage==='oath-read'){stage(s,'oath-write',now,OATH_TIMING.write);event(s,'oath-write','Write one clue. Keep your private brief to yourself.',now);return true;}
+ if(s.stage==='oath-write'){prepareShare(s,secret,now);return true;}
+ if(s.stage==='oath-shuffle'){shareCurrent(s,secret,now);return true;}
+ if(s.stage==='oath-share'){nextClue(s,secret,now);return true;}
+ if(s.stage==='oath-vote'){accuse(s,secret,now);return true;}
+ if(s.stage==='oath-accuse'){if(!ref.caught||ref.forfeits[ref.impostor])revealCase(s,secret,now);else{s.turn=ref.impostor;s.guessSealed=false;ref.drafts={};stage(s,'oath-guess',now,OATH_TIMING.guess);event(s,'oath-last-word','Caught. The impostor gets one last guess at the word.',now);}return true;}
+ if(s.stage==='oath-guess'){const draft=ref.drafts[ref.impostor];if(draft&&!ref.forfeits[ref.impostor]){ref.guess=draft;ref.guessed=isOathTruth(fact(secret),draft);}revealCase(s,secret,now);return true;}
+ if(s.stage==='oath-reveal'){scoreRound(s,secret,now);return true;}
  return false;
 }

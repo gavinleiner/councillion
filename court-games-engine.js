@@ -8,7 +8,7 @@ import {CLASH_BOARDS,CLASH_BY_ID,FIGURE_QUESTIONS,FIGURE_BY_ID} from './court-ga
 import {courtSettings} from './court-games-settings.js';
 import {figureDeck} from './court-games-figure-deck.js';
 export const COURT_GAMES_BUILD='20261107-oath-preview-v30';
-export const GAME_MODES={clash:{name:'Counsel Clash',subtitle:'TEAM FEUD',seats:10},figure:{name:'Final Figure',subtitle:'CLOSEST ANSWER WINS',seats:8},docket:{name:'The Docket',subtitle:'CHOOSE. BUZZ. WAGER.',seats:6},oath:{name:'Under Oath',subtitle:'BLUFF. VOTE. EXPOSE.',seats:6}};
+export const GAME_MODES={clash:{name:'Counsel Clash',subtitle:'TEAM FEUD',seats:10},figure:{name:'Final Figure',subtitle:'CLOSEST ANSWER WINS',seats:8},docket:{name:'The Docket',subtitle:'CHOOSE. BUZZ. WAGER.',seats:6},oath:{name:'Under Oath',subtitle:'FIND THE IMPOSTOR',seats:6}};
 export const CLASH_TIMING={briefing:4000,countdown:3000,buzz:8000,faceAnswer:10000,choice:5000,control:15000,steal:15000,survey:600,handoff:900,roundBreak:2500,fastCasting:5000,fastRun:32000,fastReadMin:1800,fastReadMax:6500,fastReadWord:230,fastReadLead:450,fastRevealStart:350,fastRevealStep:1000,fastRevealScore:450,fastReview:6000};
 const live=s=>s.players.filter(p=>!p.spectator&&p.connected!==false);
 const team=(s,n)=>{const rows=live(s).filter(p=>p.team===n),online=rows.filter(p=>p.online!==false);return online.length?online:rows;};

@@ -19,19 +19,12 @@ test('private preview uses current owner entitlement and checks server permissio
  await assert.rejects(authorizeOathPreview({identity:owner,authorize:async()=>({identity:{role:'player'}}),getCloud:async()=>{throw Error('Must not read');}}),/owner-only/);
  await assert.rejects(authorizeOathPreview({identity:owner,authorize:async()=>({identity:owner()}),getCloud:async()=>({...cloud,get:async()=>{throw Error('PERMISSION_DENIED');}})}),/PERMISSION_DENIED/);
 });
-test('owner can play all six cases against bots with actual scoring and a replay',async()=>{
- let now=Date.now();const errors=[],phases=new Set();
- const session=new OathPreviewSession({identity:owner,verified:owner(),name:'Gavin',clock:()=>now,onState:s=>phases.add(s.stage),onError:e=>errors.push(e)});
- try{
-  session.render();assert.equal(session.state.players.length,6);assert.equal(session.preview,true);await session.request('start');
-  for(let i=0;i<1600&&session.state.stage!=='finish';i++){
-   const s=session.state;
-   if(s.stage==='oath-write'&&!s.locked[session.uid])await session.request('oath-bluff',{text:'A plausible invention'});
-   if(s.stage==='oath-vote'&&!s.voted[session.uid])await session.request('oath-vote',{choice:session.secret.oath.options.find(o=>o.kind==='truth').id});
-   now+=500;session.tick();
-  }
-  assert.deepEqual(errors,[]);assert.equal(session.state.stage,'finish');assert.equal(session.state.round,6);assert.ok(session.state.players.find(p=>p.id===session.uid).score>=7000);
-  for(const phase of ['lobby','oath-intro','oath-write','oath-vote','oath-reveal','oath-standings','finish'])assert.ok(phases.has(phase));
-  await session.request('start');assert.equal(session.state.stage,'oath-intro');
- }finally{await session.close();}
+test('owner can play all six impostor cases against bots and replay',async()=>{
+ let now=Date.now();const errors=[],phases=new Set(),session=new OathPreviewSession({identity:owner,verified:owner(),name:'Gavin',clock:()=>now,onState:s=>phases.add(s.stage),onError:e=>errors.push(e)});
+ try{session.render();await session.request('start');for(let i=0;i<2000&&session.state.stage!=='finish';i++){
+  const s=session.state;if(s.stage==='oath-write'&&s.turn===session.uid&&!s.locked[session.uid])await session.request('oath-bluff',{text:'A useful clue'});
+  if(s.stage==='oath-vote'&&!s.voted[session.uid])await session.request('oath-vote',{choice:s.players.find(p=>p.id!==session.uid).id});
+  if(s.stage==='oath-guess'&&s.turn===session.uid&&!s.guessSealed)await session.request('oath-guess',{text:'Something else'});
+  now+=500;session.tick();
+ }assert.deepEqual(errors,[]);assert.equal(session.state.stage,'finish');assert.equal(session.state.history.length,6);for(const phase of ['lobby','oath-intro','oath-write','oath-share','oath-vote','oath-accuse','oath-reveal','oath-standings','finish'])assert.ok(phases.has(phase));await session.request('start');assert.equal(session.state.stage,'oath-intro');}finally{await session.close();}
 });
