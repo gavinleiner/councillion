@@ -18,9 +18,9 @@ function drive(){
  const key=[state.matchId,state.round,state.stage,state.stageAt].join(':');if(key!==phaseKey){phaseKey=key;phaseAt=clock;}
  const elapsed=clock-phaseAt,ref=secret.oath,q=OATH_BY_ID.get(ref?.caseId);
  if(state.stage==='oath-write')for(let i=0;i<6;i++){
-  const p=state.players[i];if(state.turn!==p.id||state.locked[p.id])continue;const text=oathBotClue(q,p.id===ref.impostor,i,state.round,state.clueLap),chars=Math.max(0,Math.floor((elapsed-1100)/95));
+  const p=state.players[i];if(state.turn!==p.id||state.locked[p.id])continue;const text=oathBotClue(q,p.id===ref.impostor,i,state.round,state.clueLap,state.testimonies),chars=Math.max(0,Math.floor((elapsed-1100)/95));
   if(i===0){const input=document.querySelector('#oa-bluff');if(input){input.value=text.slice(0,chars);document.querySelector('[data-oath-length]').textContent=input.value.length+' / 48';}}
-  if(elapsed>3000+text.length*95)send(p.id,'oath-bluff',{text});
+  if(text&&elapsed>3000+text.length*95)send(p.id,'oath-bluff',{text});
  }
  if(state.stage==='oath-vote')for(let i=0;i<6;i++){const p=state.players[i];if(!state.voted[p.id]&&!state.extendVotes?.[p.id]&&elapsed>5500+i*550){if(state.round===1&&state.clueLap===1)send(p.id,'oath-more',{want:true});else send(p.id,'oath-vote',{choice:oathBotVote(state,ref,p.id,i)});}}
  if(state.stage==='oath-guess'&&!state.guessSealed){const i=state.players.findIndex(p=>p.id===state.turn),text=oathBotGuess(q,i,state.round);if(state.turn==='p0'){const input=document.querySelector('#oa-bluff');if(input)input.value=text.slice(0,Math.max(0,Math.floor((elapsed-1100)/95)));}if(elapsed>4500)send(state.turn,'oath-guess',{text});}
