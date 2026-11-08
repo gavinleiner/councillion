@@ -10,6 +10,15 @@ function singleTypo(a,b){
  if(Math.max(a.length,b.length)<6||Math.min(a.length,b.length)<5)return false;const [short,long]=a.length<b.length?[a,b]:[b,a];let i=0,j=0,skips=0;while(j<long.length){if(short[i]===long[j]){i++;j++;}else{j++;if(++skips>1)return false;}}return true;
 }
 export function isOathTruth(q,text){const key=oathKey(text),answers=[q.answer,...(q.aliases??[])].map(oathKey);if(answers.includes(key))return true;if((q.decoys??[]).some(d=>oathKey(d)===key))return false;return answers.some(a=>singleTypo(key,a));}
+// Compare the clue itself, not its typography. Keep genuinely different short
+// words distinct; only long, near-identical spellings use the typo comparison.
+function clueWords(value){return oathKey(String(value??'').replace(/[-–—/]/g,' ')).split(' ').filter(Boolean).map(word=>word.length>4&&word.endsWith('ies')?word.slice(0,-3)+'y':word.length>4&&/(ches|shes|sses|xes|zes)$/.test(word)?word.slice(0,-2):word.length>3&&word.endsWith('s')&&!/(ss|us|is|news)$/.test(word)?word.slice(0,-1):word);}
+export function sameOathClue(a,b){
+ const left=clueWords(a),right=clueWords(b),x=left.join(''),y=right.join('');if(!x||!y)return false;if(x===y)return true;
+ if((x.match(/\d+/g)??[]).join(':')!==(y.match(/\d+/g)??[]).join(':'))return false;
+ return left.length===right.length&&left.every((word,i)=>word===right[i]||Math.min(word.length,right[i].length)>=7&&singleTypo(word,right[i]));
+}
+export function oathClueUsed(s,text){return (s.testimonies??[]).some(row=>!row.missing&&sameOathClue(row.text,text));}
 export function normalizeOathReferee(ref){if(!ref)return ref;for(const key of ['roleCounts','submissions','drafts','votes','forfeits'])ref[key]??={};for(const key of ['deck','order'])ref[key]=Object.values(ref[key]??[]);return ref;}
 const participants=s=>s.players.filter(p=>!p.spectator);
 const present=s=>participants(s).filter(p=>p.connected!==false&&p.online!==false);
@@ -38,7 +47,7 @@ function nextRound(s,secret,now,rng){
 function clean(value){return String(value??'').replace(/[\u0000-\u001f\u200b-\u200f\u202a-\u202e\u2060-\u206f\ufeff]/g,'').replace(/\s+/g,' ').trim();}
 function sealClue(s,secret,uid,value){
  const text=clean(value);if(!text||text.length>48||!/[a-z0-9]/i.test(text))throw Error('Write a clue, up to 48 characters.');
- validateChat(text);if(uid!==secret.oath.impostor&&[fact(secret).answer,...fact(secret).aliases].some(a=>oathKey(text)===oathKey(a)))throw Error('Give a clue without naming the secret word.');
+ validateChat(text);if(oathClueUsed(s,text))throw Error('That clue was already used in this case. Choose a different clue.');if(uid!==secret.oath.impostor&&[fact(secret).answer,...fact(secret).aliases].some(a=>oathKey(text)===oathKey(a)))throw Error('Give a clue without naming the secret word.');
  secret.oath.submissions[uid]={text};s.locked[uid]=true;return {accepted:true};
 }
 function prepareShare(s,secret,now){
