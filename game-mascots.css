@@ -12,3 +12,5 @@ body.reduced .game-mascot{animation:none!important}
 /* Keep Clash's compact header clear of the fixed join desk on Chromebooks. */
 .cc-entry-heading .game-title-lockup{margin-bottom:6px}
 .cc-entry-heading>span{display:block;line-height:1}
+
+.game-mascot-testimony{animation:pg-artist-bob 4.5s ease-in-out infinite}@keyframes pg-artist-bob{0%,100%{transform:translateY(1px) rotate(-2deg)}50%{transform:translateY(-5px) rotate(2deg)}}

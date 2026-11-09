@@ -1,0 +1,7 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {saveTestimonyReplay} from '../testimony-storage.js';
+function store(limit=Infinity){let text='[]';return {getItem:()=>text,setItem:(k,v)=>{if(v.length>limit)throw Error('Quota exceeded');text=v;},value:()=>JSON.parse(text)};}
+test('replays keep the newest three files and replace the same game rather than duplicating it',()=>{const s=store();for(let i=0;i<5;i++)assert.ok(saveTestimonyReplay(s,'files',{id:String(i)}).saved);assert.deepEqual(s.value().map(f=>f.id),['4','3','2']);saveTestimonyReplay(s,'files',{id:'4',updated:true});assert.equal(s.value().length,3);assert.ok(s.value()[0].updated);});
+test('a full browser keeps the newest complete replay by evicting older replays only',()=>{const s=store(160);saveTestimonyReplay(s,'files',{id:'old',data:'x'.repeat(80)});const r=saveTestimonyReplay(s,'files',{id:'new',data:'y'.repeat(90)});assert.deepEqual(r,{saved:true,count:1});assert.equal(s.value()[0].id,'new');});
+test('a replay that cannot fit reports failure and preserves the last valid saved files',()=>{const s=store(80);saveTestimonyReplay(s,'files',{id:'old'});const before=s.value();assert.equal(saveTestimonyReplay(s,'files',{id:'too-big',data:'x'.repeat(200)}).saved,false);assert.deepEqual(s.value(),before);const blocked={getItem(){throw Error('Storage blocked');},setItem(){throw Error('Storage blocked');}};assert.equal(saveTestimonyReplay(blocked,'files',{id:'new'}).saved,false);});
