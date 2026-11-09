@@ -1,3 +1,4 @@
+import {sentenceBenchTabSwitch} from './bench-engine.js';
 import {sentenceTestimonyTabSwitch} from './testimony-engine.js';
 import {courtAbsenceDue,courtFocusKey} from './fair-play.js';
 import {sentenceClashTabSwitch} from './court-games-engine.js';
@@ -9,7 +10,8 @@ export function enforceCourtFocus(s,secret,reports,now,exemptions={}){
   if(!courtAbsenceDue(s,id,r,now,exemptions))continue;
   s.tabPenalties??={};s.tabPenalties[id]=r.question+':'+r.leftAt;
   const p=s.players.find(p=>p.id===id);let penalty;
-  if(s.variant==='testimony')penalty=sentenceTestimonyTabSwitch(s,secret,id,now);
+  if(s.variant==='bench')penalty=sentenceBenchTabSwitch(s,secret,id,now);
+  else if(s.variant==='testimony')penalty=sentenceTestimonyTabSwitch(s,secret,id,now);
   else if(s.variant==='clash')penalty=sentenceClashTabSwitch(s,secret,id,now);
   else if(s.variant==='docket')penalty=sentenceDocketTabSwitch(s,secret,id,now);
   else if(s.variant==='oath')penalty=sentenceOathTabSwitch(s,secret,id,now);

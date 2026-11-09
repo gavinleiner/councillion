@@ -22,7 +22,9 @@
     "test:oath:browser": "node tests/oath-browser.mjs",
     "test:oath:network": "firebase emulators:exec --only database --project demo-councillion \"node tests/oath-network.mjs\"",
     "dev:testimony": "node dev/testimony-bots-server.mjs",
-    "test:testimony": "node --test tests/testimony*.test.js"
+    "test:testimony": "node --test tests/testimony*.test.js",
+    "dev:bench": "node dev/bench-bots-server.mjs",
+    "test:bench": "node --test tests/bench.test.js tests/bench-identity.test.js"
   },
   "devDependencies": {
     "@firebase/rules-unit-testing": "^5.0.2",

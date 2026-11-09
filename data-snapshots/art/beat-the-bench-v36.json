@@ -1,0 +1,112 @@
+{
+  "tool": "built-in image_gen.imagegen",
+  "use": "Original Beat the Bench pixel scenes and three-pose judge strip",
+  "assets": [
+    {
+      "path": "assets/court-games/bench-hall-v36.png",
+      "role": "hall",
+      "transparent": false,
+      "prompt": "Use case: stylized-concept. Asset type: 16:9 pixel-art game hub background for Beat the Bench, an underwater courthouse trivia chase in Councillion. Input image: reference image STYLE ONLY, match its deliberate 2D pixel clusters, chunky navy outlines, painted blue stone and warm book/gold accents, modest readable shading, no realism. Create an original sunken courthouse departure hall: wide frontal stage, central monumental open archway reveals a gently curving upward staircase toward a distant pale turquoise opening, old justice-scale stone relief integrated above it. Low stone balustrades along left/right edges, quiet warm amber sconces, a few books and coral around lower corners, rippling water-light above. Spacious open middle for animated characters and title; foreground has a broad blue stone landing across full width where player characters can stand. A small clerk's invitation desk at lower right. Calm deep teal and ocean blue with small aged-gold accents. Pixel game illustration at the SAME detail as the reference, cohesive environment, warm and adventurous, not futuristic. No people, no characters, no UI, no words, no logo, no floating labels. No photorealism, no 3D render, no plastic shine or massive realistic textures. Clear architecture and crisp intentional pixel edges. This is a complete game scene, NOT a poster with UI boxes.",
+      "generatedFile": "exec-7d15176a-ad2e-40ee-b816-79a68e8a7576.png",
+      "reference": "assets/court-games/oath-court-v22.webp",
+      "size": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "bytes": 2650420,
+      "deliveryPath": "assets/court-games/bench-hall-v36.webp",
+      "deliveryBytes": 2097200,
+      "deliveryPixelsIdentical": true
+    },
+    {
+      "path": "assets/court-games/bench-chase-v36.png",
+      "role": "chase",
+      "transparent": false,
+      "prompt": "Use case: stylized-concept. Asset type: wide side-view pixel-art chase scene for Councillion, Beat the Bench. Reference image is STYLE ONLY: same intentional chunky pixel clusters, dark navy contours, blue painted stone and warm gold/coral accents; modest detail, clear 2D illustration, no realism. A long continuous underwater courthouse arcade viewed side-on, broad empty raised blue-stone promenade runs horizontally across the lower 30 percent at exactly one level for game characters to run left-to-right. Repeating thick archways and hanging old cloth pennants behind it; warm small lanterns on columns. At the far RIGHT a tall shut barred gate glows turquoise from beyond, decorated with a very small stone scales-of-justice motif. Far left is a shadowy arch where a judge could enter. Distant underwater depth seen between columns: quiet dark silhouettes and a few reef plants. Upper middle area dark calm uncluttered wall/water to support legible question text. Blue-green sea-light from above. Layered depth, atmosphere and playful tension; entire composition built as an actual coherent game environment. Empty track and empty scene: NO people, fish, characters, cars, UI, text, numbers or logos. No painted interface tiles or question board. Avoid realistic 3D, shiny gradients, sci-fi, giant intricate photorealistic textures. Crisp charming medium-detail game pixel art matching the reference.",
+      "generatedFile": "exec-bbbd0f89-e987-42f3-a6f3-2599c4f9d25c.png",
+      "reference": "assets/court-games/oath-court-v22.webp",
+      "size": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "bytes": 1958287,
+      "deliveryPath": "assets/court-games/bench-chase-v36.webp",
+      "deliveryBytes": 1482456,
+      "deliveryPixelsIdentical": true
+    },
+    {
+      "path": "assets/court-games/bench-final-v36.png",
+      "role": "final",
+      "transparent": false,
+      "prompt": "Use case: stylized-concept. Asset type: 16:9 pixel-art final-chase courtroom background for Councillion's Beat the Bench. Reference is STYLE ONLY: match this friendly 2D pixel world, deliberate chunky blue stone pixels, limited clean shading, navy contours, small warm gold details, NOT realistic. New scene: an underwater courthouse bell-tower chamber. Wide frontal view of a long low stone causeway along the lower third, tall arched windows showing deep turquoise ocean, old balanced scales carved into the top center arch, small warm hanging lamps on either side, old coral and scattered books confined to far lower corners. At far right a stone exit arch with open turquoise light beyond. The background upper center is calm and dark blue for readable quiz text. Strong layered composition and readable light with restrained subtle highlights. The chamber should feel like the last stretch of a tense but charming trivia adventure. Match the reference detail level exactly, no more realistic. Leave the causeway unobstructed for animated small characters. NO characters, people, UI, words, numbers, logos, giant board, papers or coins. No sci-fi, no cyberpunk, no 3D render, no photoreal textures. Crisp intentional pixel art.",
+      "generatedFile": "exec-f0fc7e71-eeca-4bfe-b972-47b865485fd0.png",
+      "reference": "assets/court-games/oath-court-v22.webp",
+      "size": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "bytes": 2152326,
+      "deliveryPath": "assets/court-games/bench-final-v36.webp",
+      "deliveryBytes": 1721726,
+      "deliveryPixelsIdentical": true
+    },
+    {
+      "path": "assets/court-games/bench-close-v36.png",
+      "role": "close",
+      "transparent": false,
+      "prompt": "Use case: stylized-concept. Asset type: alternate low-angle camera shot in a pixel-art underwater courthouse trivia game. Reference is the existing Beat the Bench arcade scene: same blue stone blocks, teal water, burgundy pennants, navy outlines and warm lanterns, SAME chunky medium-detail pixel-art style. Create a dramatic CLOSE SHOT of the judge's starting arch from low at floor level, looking slightly up into the shadowy arch on the LEFT; a broad stone ledge along the lower quarter is empty for an animated puffer judge sprite to be placed on top. Behind, old blue columns and a justice-scale relief, some calm navy sea-water and small lamp highlights. Lower perspective emphasizes the arch; the arcade recedes off to the right. Calm middle-right negative space for a short speech bubble. Original cohesive 2D pixel environment, gentle tension and playful adventure. No character, no person, no UI, no actual text, no logo. No realistic shading or cinematic photorealism, no sci-fi, no 3D. Every edge deliberately pixelled, simple small palette.",
+      "generatedFile": "exec-b914c816-cd47-49e6-b05b-9253f3d5e306.png",
+      "reference": "assets/court-games/bench-chase-v36.png",
+      "size": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "bytes": 1818196,
+      "deliveryPath": "assets/court-games/bench-close-v36.webp",
+      "deliveryBytes": 1373434,
+      "deliveryPixelsIdentical": true
+    },
+    {
+      "path": "assets/court-games/bench-escape-v36.png",
+      "role": "escape",
+      "transparent": false,
+      "prompt": "Use case: stylized-concept. Asset type: 16:9 victory / escape scene for the pixel-art Councillion game Beat the Bench. Reference is the existing final courtroom: keep SAME charming medium-detail blue-stone pixel clusters, dark navy contours, turquoise underwater palette, antique gold and small burgundy details. Camera is now OUTSIDE the courthouse's exit gate: open iron gates at left and right edges frame a broad bright turquoise underwater courtyard with a broad stone path receding to an arched bridge. Gentle sunbeams through water from upper right, small reef coral and old stone justice scales relief at the sides. The foreground lower third is an empty flat blue-stone platform for player characters to celebrate on. Calm uncluttered central water space for a victory title. Warm hopeful atmosphere and clear readable architecture, carefully placed chunky pixel shading, not intricate realism. NO characters, fish, people, text, numbers, logos, UI, confetti, paper or realistic effects; game will animate characters and particles separately. No sci-fi, no 3D, no photorealism. Original pixel game setting consistent with reference.",
+      "generatedFile": "exec-04b3de27-7f8b-4776-bc43-c5f718ddc3aa.png",
+      "reference": "assets/court-games/bench-final-v36.png",
+      "size": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "bytes": 2213078,
+      "deliveryPath": "assets/court-games/bench-escape-v36.webp",
+      "deliveryBytes": 1789172,
+      "deliveryPixelsIdentical": true
+    },
+    {
+      "path": "assets/game-mascots/bench-judge-v36.png",
+      "role": "judge",
+      "transparent": true,
+      "prompt": "Use case: stylized-concept. Asset type: transparent animation sprite strip for Councillion's Beat the Bench puffer judge. Reference image shows four faces of the existing puffer host, STYLE AND CHARACTER REFERENCE. Make a NEW horizontal sprite sheet with THREE equally sized cells in ONE ROW, centers at exactly 1/6, 3/6, 5/6 of width, same scale and identical baseline. Each cell has the SAME orange pufferfish judge with navy short robe, cream shirt, very small cream barrister wig, squat round spiky silhouette, cream eyes, navy pupils and chunky navy contour. This is modest-detail clean pixel art matching the reference pixels, NOT realistic and NOT more detailed. Cell 1: neutral determined sideways look to the RIGHT, tiny gavel held low. Cell 2: lunging/swimming to the RIGHT, body leaning forward, little fins back, gavel raised. Cell 3: stunned recoil to LEFT, eyes wide, robe and fins angled back, gavel tilted down; no stars, no text. Coherent silhouette across poses, three-shade orange, navy and cream palette. Each character centered within its cell with generous clear transparent margin; no pose crosses a cell boundary. Entire outside background genuinely transparent. No scenery, no floor, no platform, no shadows on a ground plane, no typography, no fake UI, no logos, no blur. Wide 3:1 strip. Three frames ONLY.",
+      "generatedFile": "exec-00cf5c92-065a-4f02-961e-a6c2228873d0.png",
+      "reference": "assets/court-games/host-talk-ai-v1.png",
+      "size": [
+        2172,
+        724
+      ],
+      "mode": "RGBA",
+      "bytes": 704360,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "deliveryPath": "assets/game-mascots/bench-judge-v36.webp",
+      "deliveryBytes": 469578,
+      "deliveryPixelsIdentical": true
+    }
+  ]
+}

@@ -1,6 +1,7 @@
 // Small-grid original mascots share Puffer's outline, wig and eye palette.
 // These identify games; player characters and customization are independent.
 export const GAME_MASCOTS=Object.freeze({
+ bench:{src:'assets/puffer.svg',name:'The chasing puffer judge'},
  testimony:{src:'assets/game-mascots/testimony-octopus-v35.png',name:'Ink the courtroom artist'},
  party:{src:'assets/puffer.svg',name:'Puffer judge'},
  clash:{src:'assets/game-mascots/clash-crab-v1.svg',name:'Clash crab'},
