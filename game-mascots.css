@@ -14,6 +14,9 @@ body.reduced .game-mascot{animation:none!important}
 .cc-entry-heading>span{display:block;line-height:1}
 
 .game-mascot-testimony{animation:pg-artist-bob 4.5s ease-in-out infinite}@keyframes pg-artist-bob{0%,100%{transform:translateY(1px) rotate(-2deg)}50%{transform:translateY(-5px) rotate(2deg)}}
-.game-mascot-bench{width:96px;height:96px;aspect-ratio:1;background:url('assets/game-mascots/bench-judge-v36.webp') 50% 0/300% 100% no-repeat;animation:game-mascot-breathe 5s ease-in-out infinite}.pg-door:hover .game-mascot-bench,.pg-door:focus-visible .game-mascot-bench{background-position:0 0}
+.game-mascot-bench{width:96px;height:96px;animation:game-mascot-breathe 5s ease-in-out infinite}
 
-.game-mascot-trial{width:90px;height:96px;background:url('assets/game-mascots/trial-judge-v38.webp') 0 50%/400% 100% no-repeat;animation:game-mascot-breathe 6s ease-in-out infinite}.pg-door:hover .game-mascot-trial,.pg-door:focus-visible .game-mascot-trial{background-position:33.3333% 50%}
+.game-mascot-trial{width:96px;height:96px;animation:game-mascot-breathe 6s ease-in-out infinite}
+.pg-trial-tail{transform-origin:50% 70%;animation:pg-trial-wisp 6s ease-in-out infinite}.pg-trial-key{transform-origin:83% 66%;transition:transform .3s}.pg-door:hover .pg-trial-key,.pg-door:focus-visible .pg-trial-key{transform:translateY(-1px) rotate(-8deg)}
+.pg-bench-gavel{transform-origin:85% 70%;transition:transform .3s}.pg-door:hover .pg-bench-gavel,.pg-door:focus-visible .pg-bench-gavel{transform:rotate(-9deg)}.pg-artist-pencil{transform-origin:20% 64%;transition:transform .3s}.pg-door:hover .pg-artist-pencil,.pg-door:focus-visible .pg-artist-pencil{transform:rotate(-7deg)}
+@keyframes pg-trial-wisp{50%{transform:translateX(1px)}}
