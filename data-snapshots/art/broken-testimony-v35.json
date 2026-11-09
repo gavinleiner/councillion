@@ -1,0 +1,36 @@
+{
+  "tool": "built-in image_gen.imagegen",
+  "use": "project-bound original studio and mascot",
+  "assets": [
+    {
+      "path": "assets/court-games/testimony-studio-v35.png",
+      "reference": "assets/court-games/oath-court-v22.webp",
+      "transparent": false,
+      "prompt": "Use case: stylized-concept. Asset type: widescreen 16:9 game background for Councillion's new Broken Testimony drawing party game. Reference image is STYLE REFERENCE ONLY: match its charming intentional pixel-art clusters, clear illustrated forms, dark outlines, resolution of texture, teal underwater palette and warm small accents. Create a DIFFERENT environment: the sunken courthouse's cozy artists' evidence studio and gallery. Front-on wide composition, gentle perspective. Low wooden gallery worktables at the lower corners with rolled drawing paper, fat colored chalks and an ink bottle; weathered stone walls with small bookshelves and decorative empty picture frames toward the side edges, coral growing subtly from cracks, golden desk lamps, teal water and soft sea-light shafts above. A tiny relief of balanced justice scales integrated into a stone lintel above. Keep the middle 65% of the frame calm and open with muted dark-teal walls and floor, unobstructed for large interactive drawing canvas and controls. Warm amber light against midnight-blue ocean. Rich but readable custom pixel game environment with deliberate pixel clusters and restrained shading. Not photorealistic, no volumetric 3D render, no sci-fi, no glossy gradients, no generic vector blocks. No characters, no actual words, no interface, no logos, no fake drawing tools UI. All frames blank. This is an original matching world asset, not a recreation of the reference composition.",
+      "size": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "bytes": 2420622,
+      "generatedFile": "exec-aca79026-a8f5-47e9-8e6a-529ebc5ae841.png"
+    },
+    {
+      "path": "assets/game-mascots/testimony-octopus-v35.png",
+      "reference": "assets/party-buddies/squid-ai-v1.png",
+      "transparent": true,
+      "prompt": "Use case: stylized-concept. Asset type: small transparent pixel-art game mascot for Broken Testimony, an underwater drawing party game in Councillion. Reference is a STYLE REFERENCE for chunky clean pixel clusters, navy outline, simple expressive cream eyes, rounded squashy sea-creature silhouette and modest shading. Create an original little teal-blue artist octopus with exactly this level of detail, about 40 by 40 logical pixels scaled up with crisp nearest-neighbor blocks. One curled tentacle holds a short yellow pencil with a pink eraser; another has a small amber ink smudge. A tiny cream artist beret, not a human wig. Cute mischievous sideways glance, asymmetrical friendly pose, compact body and short curled tentacles. Extremely legible at 64px on screen. Navy contour, teal blue body, 3 shades each color, small warm gold accents. A complete isolated character centered with margin around every tentacle. No platform, no scenery, no typography, no logos, no gradients, no realistic texture, no 3D shading, no shiny plastic, no long spindly arms. Genuine transparent background.",
+      "size": [
+        1391,
+        1131
+      ],
+      "mode": "RGBA",
+      "bytes": 827448,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "generatedFile": "exec-9d56a82a-b02b-44d1-be65-6a6ef5a2e9df.png"
+    }
+  ]
+}

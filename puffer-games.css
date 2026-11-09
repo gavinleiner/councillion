@@ -114,3 +114,6 @@ body.reduced .pg-mascot-lids{transform:scaleY(0)!important}
 .pg-coming-ribbon{position:absolute;z-index:4;left:50%;bottom:calc(100% + 23px);transform:translateX(-50%) rotate(-5deg);width:118px;padding:4px 5px;background:#12384beF;border-block:1px solid #d9c390;color:#f0db9f;font-size:12px;line-height:1;letter-spacing:1.3px;text-shadow:0 1px #062538;pointer-events:none;box-shadow:0 3px #05253855}
 .pg-owner-preview .pg-door-character{opacity:1;filter:drop-shadow(0 4px #06253844)}
 .pg-owner-preview .pg-door-tag{color:#c4dfdc}.pg-owner-preview .pg-door-enter{color:#b9d7dc}
+/* Game descriptions must not block the paged cove navigation. */
+.pg-bottom{pointer-events:none}
+.pg-wings{top:49%;left:0;right:0;bottom:auto;transform:none;justify-content:space-between;height:0;padding:0 25px;pointer-events:none;z-index:6}.pg-wings button{pointer-events:auto;width:38px;height:43px;padding:0;font-size:32px;background:#0b2d3ca8;border-color:#9bb4a688;line-height:1}.pg-wings>span{position:absolute;left:27px;top:51px;width:34px;text-align:center;font-size:9px;color:#a5b8ac}@media(max-width:620px){.pg-wings{padding:0 13px}.pg-wings button{width:32px;height:39px;font-size:28px}.pg-wings>span{left:12px;top:47px}}

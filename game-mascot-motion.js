@@ -27,7 +27,7 @@ function animateArt(text,mode){
 export function enhanceGameMascots(root,signal){
  return Promise.all([...root.querySelectorAll('.pg-door .game-mascot')].map(async img=>{
   const mode=Object.keys(GAME_MASCOTS).find(key=>img.classList.contains('game-mascot-'+key));if(!mode||img.localName!=='img')return;
-  const src=GAME_MASCOTS[mode].src;
+  const src=GAME_MASCOTS[mode].src;if(!src.endsWith('.svg'))return;
   if(!sources.has(src))sources.set(src,fetch(src).then(r=>{if(!r.ok)throw Error('Mascot unavailable.');return r.text();}).catch(e=>{sources.delete(src);throw e;}));
   try{const text=await sources.get(src);if(!signal.aborted&&img.isConnected)img.replaceWith(animateArt(text,mode));}catch{/* Keep the original logo. */}
  }));

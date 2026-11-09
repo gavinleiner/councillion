@@ -33,6 +33,16 @@ See [QUESTION-STANDARD.md](QUESTION-STANDARD.md), [the real normal-play CSV](ord
 
 Visible rarity families follow the supplied image: Krillion, Deep Cut, Rare, Schooler, and Plankton. Both supplied reference packs preserve every canonical entry and score. The normal pool contains 499 categories, with specialist catalogs available only by choice. Historical banks remain readable for saved results. Counts overlap between categories. Inventories are finite and can miss a valid answer; Daily stops on calendar exhaustion. Puffer stops on match-deck exhaustion; a rematch starts a fresh full shuffle. Scores remain editorial familiarity estimates rather than measured player choices or Krillion's private grading. See [QUESTION-AUDIT.md](QUESTION-AUDIT.md) for source coverage and limitations.
 
+## Broken Testimony
+
+`#testimony` opens the underwater sketch studio. Its three interactive easels choose Telephone (3–10 players), Caption Bluffing (3–10), or Live Guessing (2–10). Online studios use the existing Google-authenticated room transport; bot practice is local. Hosts can choose Clean or After Hours prompts, add up to 50 custom prompts, and use their custom pool alone. Private assignments, drafts, and ballots stay in each player's private receipt until the relevant reveal. As with the other games, the room host is the referee.
+
+The canvas supports pen, eraser, undo/redo, private draft saving, and fullscreen with tools, timer, and Esc to return. Deadlines bank valid drafts; everyone finishing early advances automatically. Reveals replay actual vector strokes, unfold each story, and accept reactions. Up to three finished case files are kept in the current browser, subject to available storage; players can download replay JSON and story PNGs. These files do not sync between devices. Reduced motion skips drawing replays and decorative motion.
+
+Run `npm run dev:testimony` and open `http://localhost:4185/__testimony-bots` for a complete six-player scripted demonstration of any mode, with pause, restart, and playback speed. It never creates a public room or updates ranks. `npm run test:testimony` covers mechanics, identity refreshes, and storage. Browser checks are `node tests/testimony-browser.mjs` (main app on 4173 and bot server on 4185) and `node tests/testimony-full-bots-browser.mjs`. The network test runs with the Firebase Database emulator: `firebase emulators:exec --only database --project demo-councillion "node tests/testimony-network.mjs"`.
+
+Original AI studio and mascot assets, their style references, and exact prompts are recorded in `data-snapshots/art/broken-testimony-v35.json`.
+
 ## Puffer tournaments
 
 The Tournament button hosts a five-game ranked series for two to six Google-signed-in players. The ready roster locks at the first game. Reconnects and host transfer retain the series, scores and the current match’s revealed questions. Spectators may watch; they cannot enter a series midway. Everyone in the roster must reconnect and ready up between games. The host starts each game. The next series can admit a fresh roster.

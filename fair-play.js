@@ -4,11 +4,12 @@ export {TAB_GRACE_MS};
 export const focusExempt=identity=>identity?.tabExempt===true&&identity.expires>Date.now()/1000;
 export function courtFocusKey(s){
  if(!s?.matchId)return null;
- const id=s.variant==='clash'?(s.stage.startsWith('fast')?'fast-'+s.fastPass:s.board?.id):s.variant==='figure'?s.question?.id:s.variant==='docket'?s.clue?.id:s.case?.id;
+ const id=s.variant==='testimony'?'page-'+s.stageAt:s.variant==='clash'?(s.stage.startsWith('fast')?'fast-'+s.fastPass:s.board?.id):s.variant==='figure'?s.question?.id:s.variant==='docket'?s.clue?.id:s.case?.id;
  return id?[s.matchId,s.variant,s.round,id].join(':'):null;
 }
 export function courtFocusEligible(s,id){
  const p=s?.players?.find(p=>p.id===id);if(!p||p.spectator||p.connected===false||!courtFocusKey(s))return false;
+ if(s.variant==='testimony')return s.stage==='bt-live'?(s.artist===id?!s.locked?.[id]:!s.guessed?.[id]):s.stage==='bt-vote'?!s.voted?.[id]&&s.artist!==id:['bt-prompt','bt-draw','bt-caption'].includes(s.stage)&&!s.locked?.[id]&&(s.settings.style!=='caption'||s.stage!=='bt-caption'||s.artist!==id);
  if(s.variant==='figure')return s.stage==='estimate'&&!s.locked?.[id];
  if(s.variant==='oath')return s.stage==='oath-guess'?s.turn===id&&!s.guessSealed:s.stage==='oath-write'?s.turn===id&&!s.locked?.[id]:s.stage==='oath-vote'&&!s.voted?.[id];
  if(s.variant==='docket'){
