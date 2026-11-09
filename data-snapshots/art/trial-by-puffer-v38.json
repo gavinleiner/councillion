@@ -1,0 +1,116 @@
+{
+  "generator": "image_gen built-in",
+  "reference": "Councillion original cove, courthouse and sprite assets",
+  "assets": [
+    {
+      "scene": "hall",
+      "path": "assets/court-games/trial-hall-v38.webp",
+      "source": "/Users/gavin/.codex/generated_images/01a160d5-54c6-7e42-b905-7ed9a7f03a28/exec-b008145e-fc39-449a-bfc5-12fde87972d0.png",
+      "width": 1672,
+      "height": 941,
+      "bytes": 486020,
+      "sha256": "69000d2d59a94c28014b63ad7c7c416ca316b626d18cde93eb0029e2ec153647",
+      "transparent": false
+    },
+    {
+      "scene": "court",
+      "path": "assets/court-games/trial-court-v38.webp",
+      "source": "/Users/gavin/.codex/generated_images/01a160d5-54c6-7e42-b905-7ed9a7f03a28/exec-c937c536-fdc2-431a-aba0-67f99321be29.png",
+      "width": 1672,
+      "height": 941,
+      "bytes": 454160,
+      "sha256": "26a4032e808ca8e4586271e40e69a0bdf6b0b05682a56c1f33ca9d532fbdd043",
+      "transparent": false
+    },
+    {
+      "scene": "escape",
+      "path": "assets/court-games/trial-escape-v38.webp",
+      "source": "/Users/gavin/.codex/generated_images/01a160d5-54c6-7e42-b905-7ed9a7f03a28/exec-567d6581-953b-4f45-b279-1b947d422349.png",
+      "width": 1672,
+      "height": 941,
+      "bytes": 447504,
+      "sha256": "3be001911eac45a5774a13ce8d12a64886c64f03f4c49d9ac187dda0330c178b",
+      "transparent": false
+    },
+    {
+      "scene": "win",
+      "path": "assets/court-games/trial-win-v38.webp",
+      "source": "/Users/gavin/.codex/generated_images/01a160d5-54c6-7e42-b905-7ed9a7f03a28/exec-18ed0bcb-1e26-4156-920b-a3bd2b2cab8d.png",
+      "width": 1672,
+      "height": 941,
+      "bytes": 512724,
+      "sha256": "c96cc2424b9daed444cb2b2ae9ad493bab6b8cfdc63c1df643b82c445aedc7ee",
+      "transparent": false
+    },
+    {
+      "scene": "archive",
+      "path": "assets/court-games/trial-archive-v38.webp",
+      "source": "/Users/gavin/.codex/generated_images/01a160d5-54c6-7e42-b905-7ed9a7f03a28/exec-c275febc-60e3-4e06-a0df-c11a8c6d6285.png",
+      "width": 1672,
+      "height": 941,
+      "bytes": 539102,
+      "sha256": "3cc63e8ce3d55a3862d657e113dcf88c2995ca1bb05bb589e850a5b03da01a82",
+      "transparent": false
+    },
+    {
+      "scene": "floor",
+      "path": "assets/court-games/trial-floor-v38.webp",
+      "source": "/Users/gavin/.codex/generated_images/01a160d5-54c6-7e42-b905-7ed9a7f03a28/exec-7cfa972b-3b8a-4d65-bab6-052611cdcb2a.png",
+      "width": 1672,
+      "height": 941,
+      "bytes": 456504,
+      "sha256": "e93123f0953a1d2e02f422eb728e53bf3a0f60347d23db463234a60e4a631f9e",
+      "transparent": false
+    },
+    {
+      "scene": "scales",
+      "path": "assets/court-games/trial-scales-v38.webp",
+      "source": "/Users/gavin/.codex/generated_images/01a160d5-54c6-7e42-b905-7ed9a7f03a28/exec-a2b5f6db-71b7-409e-93c7-791c140b2e1d.png",
+      "width": 1672,
+      "height": 941,
+      "bytes": 460622,
+      "sha256": "65876e1a3aa7dfd3f488dce356e45b8722d49657afc90f7be65b27e22a20ce4e",
+      "transparent": false
+    },
+    {
+      "scene": "cells",
+      "path": "assets/court-games/trial-cells-v38.webp",
+      "source": "/Users/gavin/.codex/generated_images/01a160d5-54c6-7e42-b905-7ed9a7f03a28/exec-c6ed4c6b-958d-4130-b42f-c90e35c39c00.png",
+      "width": 1672,
+      "height": 941,
+      "bytes": 485056,
+      "sha256": "88f65e8f5854d6cfc3a87991a521015432daa8e19bcff2dead62af94c38c8503",
+      "transparent": false
+    },
+    {
+      "scene": "gate",
+      "path": "assets/court-games/trial-gate-v38.webp",
+      "source": "/Users/gavin/.codex/generated_images/01a160d5-54c6-7e42-b905-7ed9a7f03a28/exec-e469c727-a60c-49eb-8b12-31fe57cca0a2.png",
+      "width": 1672,
+      "height": 941,
+      "bytes": 520898,
+      "sha256": "0451280c0dc569487db11c04c58784358cca8efb3909f2914be1662d543fa02c",
+      "transparent": false
+    },
+    {
+      "scene": "judge",
+      "path": "assets/game-mascots/trial-judge-v38.webp",
+      "source": "/Users/gavin/.codex/generated_images/01a160d5-54c6-7e42-b905-7ed9a7f03a28/exec-f65d253b-f427-42d6-bc23-41328fc23b33.png",
+      "width": 2172,
+      "height": 724,
+      "bytes": 196722,
+      "sha256": "b32de176dd671599a6adc5977446ec9f764af8edc821d543ed7fb05bf5be35e3",
+      "transparent": true
+    },
+    {
+      "scene": "props",
+      "path": "assets/game-mascots/trial-props-v38.webp",
+      "source": "/Users/gavin/.codex/generated_images/01a160d5-54c6-7e42-b905-7ed9a7f03a28/exec-a424dca9-168f-426f-a5c2-127a53d484c4.png",
+      "width": 1774,
+      "height": 887,
+      "bytes": 143524,
+      "sha256": "a6f75afdf645f184f125613df3bc2bbb6cf01302d1233c018d976fbc55e91b26",
+      "transparent": true
+    }
+  ]
+}
