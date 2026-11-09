@@ -14,18 +14,24 @@ const directory=game=>({hostName:'Counsel',count:2,seats:6,phase:'lobby',updated
 const request=()=>({id:'ready-test',type:'ready',at:Date.now()});
 try{
  await env.clearDatabase();
- await assertFails(set(ref(host,'rooms/OATH'),room('oath')));
- const disguised=room('figure');disguised.state.variant='oath';
- await assertFails(set(ref(host,'rooms/OATB'),disguised));
- await env.withSecurityRulesDisabled(async c=>{await set(ref(c.database(),'rooms/OATH'),room('oath'));});
- await assertFails(set(ref(guest,'rooms/OATH/members/joining'),person('Joining')));
- await assertFails(set(ref(member,'rooms/OATH/requests/member'),request()));
- for(const path of ['meta','state','members/member','responses/member','requests/member'])await assertFails(get(ref(member,'rooms/OATH/'+path)));
- await assertFails(update(ref(host,'rooms/OATH/state'),{revision:1,stage:'oath-intro',phase:'playing'}));
- await assertFails(set(ref(host,'directory/OATH'),directory('oath')));
- await assertFails(set(ref(host,'directory/OATH'),directory('figure')));
- await env.withSecurityRulesDisabled(async c=>{await set(ref(c.database(),'directory/OATH'),directory('oath'));});
- await assertSucceeds(set(ref(host,'directory/OATH'),null));
+ await assertSucceeds(set(ref(host,'rooms/OATH'),room('oath')));
+ await assertSucceeds(set(ref(guest,'rooms/OATH/members/joining'),person('Joining')));
+ await assertSucceeds(set(ref(member,'rooms/OATH/requests/member'),request()));
+ for(const path of ['meta','state','members/member','responses/member','requests/member'])await assertSucceeds(get(ref(member,'rooms/OATH/'+path)));
+ await assertSucceeds(update(ref(host,'rooms/OATH/state'),{revision:1,stage:'oath-intro',phase:'playing'}));
+ await assertFails(update(ref(member,'rooms/OATH/state'),{revision:2}));
+ await assertSucceeds(set(ref(host,'rooms/OATH/responses/member/oath'),{role:'witness',word:'Secret word'}));
+ await assertSucceeds(get(ref(member,'rooms/OATH/responses/member/oath')));
+ await assertFails(get(ref(guest,'rooms/OATH/responses/member/oath')));
+ await assertSucceeds(set(ref(host,'directory/OATH'),directory('oath')));
+ await assertFails(set(ref(member,'directory/OATH'),directory('oath')));
+ const outsider=env.authenticatedContext('outsider',{firebase:{sign_in_provider:'google.com'}}).database();
+ await assertFails(get(ref(outsider,'rooms/OATH/state')));
+ await assertFails(get(ref(env.unauthenticatedContext().database(),'rooms/OATH/state')));
+ const password=env.authenticatedContext('password',{firebase:{sign_in_provider:'password'}}).database();
+ await assertFails(set(ref(password,'rooms/OATH/members/password'),person('Password')));
+ const unsignedRoom=room('oath');unsignedRoom.meta.host='password';unsignedRoom.members={password:person('Password')};
+ await assertFails(set(ref(password,'rooms/PASS'),unsignedRoom));
  await assertSucceeds(get(ref(owner,'ownerPreviews/oath')));
  await assertSucceeds(get(ref(president,'ownerPreviews/oath')));
  await assertFails(set(ref(president,'ownerPreviews/oath'),{enabled:true}));
@@ -36,12 +42,12 @@ try{
  await assertSucceeds(get(ref(owner,'rooms/OWNR/state')));
  await assertFails(get(ref(president,'rooms/OWNR/state')));
  const schoolRoom=structuredClone(privateRoom);schoolRoom.meta.host='pres';schoolRoom.members={pres:person('Gavin')};
- await assertFails(set(ref(president,'rooms/PRES'),schoolRoom));
+ await assertSucceeds(set(ref(president,'rooms/PRES'),schoolRoom));
  await assertFails(set(ref(president,'rankGrants/pres'),{version:1,rank:'highest',at:Date.now()}));
- await assertFails(get(ref(member,'rooms/OWNR/meta')));
- await assertFails(set(ref(guest,'rooms/OWNR/members/joining'),person('Joining')));
- await assertFails(update(ref(owner,'rooms/OWNR/meta'),{isPrivate:false}));
- await assertFails(set(ref(owner,'directory/OWNR'),directory('oath')));
+ await assertSucceeds(get(ref(member,'rooms/OWNR/meta')));
+ await assertSucceeds(set(ref(guest,'rooms/OWNR/members/joining'),person('Joining')));
+ await assertSucceeds(update(ref(owner,'rooms/OWNR/meta'),{isPrivate:false}));
+ await assertSucceeds(set(ref(owner,'directory/OWNR'),directory('oath')));
  for(const [mode,code]of [['party','PART'],['clash','CLAS'],['figure','FIGR'],['docket','DOCK']]){
   await assertSucceeds(set(ref(host,'rooms/'+code),room(mode)));
   await assertSucceeds(set(ref(guest,'rooms/'+code+'/members/joining'),person('Joining')));
@@ -50,5 +56,5 @@ try{
   await assertSucceeds(set(ref(host,'directory/'+code),directory(mode)));
   assert.equal((await get(ref(host,'rooms/'+code+'/state/revision'))).val(),1);
  }
- console.log('PASS: both exact verified Gavin Google accounts can read the local-preview marker; school account cannot write it, access Oath rooms, or grant ranks. Only owner can open a private Oath room. Unverified, wrong-provider, other Gavin and VP accounts denied. Other four games still work.');
+ console.log('PASS: ordinary Google accounts can host, join and list Under Oath; host-only state writes, member-only reads, private role receipts and restricted preview marker remain enforced. Other games retain access.');
 }finally{await env.cleanup();}
