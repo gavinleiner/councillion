@@ -1,0 +1,44 @@
+{
+  "sources": [
+    {
+      "url": "https://www.jackboxgames.com/games/trivia-murder-party-2",
+      "role": "Publisher overview: simultaneous trivia and survival minigames."
+    },
+    {
+      "url": "https://www.jackboxgames.com/blog/early-look-trivia-murder-party-two",
+      "role": "Publisher-linked full-game reference; notes it is a pre-release version."
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=s-k6-hOW-xk",
+      "role": "28:46 full-game reference inspected through Chrome; survival sentencing and ghost/living escape presentation observed at approximately 5:45 and 11:30."
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/The_Jackbox_Party_Pack",
+      "role": "Corroboration of ghost participation and the final category race."
+    }
+  ],
+  "implementedCore": [
+    "Everyone answers the same four-choice question privately.",
+    "Wrong living players face a survival challenge; dead players remain as ghosts.",
+    "Eight original Councillion survival adaptations span memory, arithmetic, poison, trust, bidding, timing, chance and visual reflection.",
+    "Ghosts participate in trivia and selected survival interactions.",
+    "Cash-based revival/lead selection, one living escape runner, two versus three judgments, overtaking steals life, moving darkness and a perfect final seal."
+  ],
+  "adaptations": [
+    "Original Councillion characters, dialogue, art, questions and law-themed challenge names.",
+    "2\u20138 authenticated players use the existing protected room system.",
+    "Standard has a maximum of eight trivia rounds and may finish earlier; eight-trial tour is available for full bot showcases.",
+    "Survival timing and inputs are adapted for typing/clicking on laptops.",
+    "This is an original adaptation of the core loop, not every TMP2 minigame, gift item, alternate ending or controller handicap."
+  ],
+  "questionInventory": {
+    "sourceBackedMultipleChoice": 648,
+    "explicitEscapeCategorySets": 32,
+    "notes": "Trivia reuses the existing deliberately curated, source-linked Bench/Docket bank; race membership is explicit and disjoint, not inferred by fuzzy matching."
+  },
+  "art": {
+    "originalEnvironments": 9,
+    "transparentSheets": 2,
+    "manifest": "data-snapshots/art/trial-by-puffer-v38.json"
+  }
+}

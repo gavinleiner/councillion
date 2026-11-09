@@ -24,7 +24,11 @@
     "dev:testimony": "node dev/testimony-bots-server.mjs",
     "test:testimony": "node --test tests/testimony*.test.js",
     "dev:bench": "node dev/bench-bots-server.mjs",
-    "test:bench": "node --test tests/bench.test.js tests/bench-identity.test.js"
+    "test:bench": "node --test tests/bench.test.js tests/bench-identity.test.js",
+    "dev:trial": "node dev/trial-bots-server.mjs",
+    "test:trial": "node --test tests/trial.test.js",
+    "test:trial:browser": "node tests/trial-browser.mjs",
+    "test:trial:network": "firebase emulators:exec --only database --project demo-councillion \"node tests/trial-network.mjs\""
   },
   "devDependencies": {
     "@firebase/rules-unit-testing": "^5.0.2",

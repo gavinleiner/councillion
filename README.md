@@ -255,3 +255,12 @@ Release `20261023-group5000-v1` implements all 98 approved tryout prompts and ex
 ## Uniform 5,000-question draw — October 24
 
 Release `20261024-random-v1` removes subject/format weighting. Every unseen ID has equal probability in Puffer and Practice; rematches and new rooms reshuffle independently while respecting reported history. Old restored queues migrate once without disturbing a valid active question. Daily is frozen/shared with a uniform future calendar from October 25; both published days are preserved. 118 weak song constraints are replaced by 118 broader source-predicate inventories, retaining all 98 approved tryout prompts and exactly 5,000 ordinary/Puffer categories. `#sample` reflects the new actual draw. See [GROUP-POOL.md](GROUP-POOL.md) for current selection/content limits; earlier counts above describe older releases.
+
+
+### Trial by Puffer
+
+Open \`#trial\` from Puffer Games. This original Councillion adaptation uses simultaneous four-choice trivia, eight survival challenges, persistent ghost participation, and a category-based escape with life stealing and a perfect final seal. The hub and gameplay use nine original pixel environments and two transparent sprite sheets. Online rooms require Google sign-in; local practice and scripted bot showcases do not affect ranks.
+
+\`npm run dev:trial\` opens a complete six-bot tour at \`http://localhost:4187/__trial-bots\`. The top controls provide play, pause, replay and speed. Use \`#trial?demo=bots\` for the public site's bot showcase. Standard games allow an earlier finale; the tour demonstrates all eight survival trials.
+
+Validation commands: \`npm run test:trial\`, \`npm run test:trial:browser\`, and \`npm run test:trial:network\`. Mechanics research, declared adaptations and inventory notes are in \`data-snapshots/research/trial-by-puffer-v38.json\`; art provenance is in \`data-snapshots/art/trial-by-puffer-v38.json\`. Original-game reference: [Jackbox's publisher overview](https://www.jackboxgames.com/games/trivia-murder-party-2) and [publisher-linked full game](https://www.jackboxgames.com/blog/early-look-trivia-murder-party-two).
