@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" shape-rendering="crispEdges">
+  <g class="pg-trial-wisps" fill="#bde8d7">
+    <path d="M3 23h1v1H3zm3 4h1v1H6z"/>
+  </g>
+  <g class="pg-trial-tail">
+    <path fill="#08182b" d="M11 21h12v5h-3v3h-6v2H8v-3h5v-3h-2z"/>
+    <path fill="#75b8b2" d="M13 23h8v2h-3v3h-6v1h-2v-1h5v-3h-2z"/>
+    <path fill="#bde8d7" d="M13 23h6v2h-2v1h-2v-2h-2z"/>
+  </g>
+  <g class="pg-trial-body">
+    <path fill="#08182b" d="M10 6h11v2h3v2h3v3h3v4h-3v2h2v3h-4v3H8v-2H4v-3H1v-4h3v-3H2v-3h5V8h3z"/>
+    <path fill="#4f8f9b" d="M10 8h10v2h4v3h3v3h-2v3h2v2h-4v2H9v-2H5v-3H3v-1h3v-3H4v-2h5v-2h1z"/>
+    <path fill="#75b8b2" d="M9 10h13v3h3v3h-2v5H9v-1H6v-3h1v-4h2z"/>
+    <path fill="#bde8d7" d="M10 10h11v3h2v5h-3v3H9v-2H7v-4h2v-3h1z"/>
+    <path fill="#d8eee0" d="M10 10h10v2H10zm-3 5h2v2H7z"/>
+    <path fill="#75b8b2" d="M5 14h2v1H5zm1 5h2v1H6zm17-5h2v1h-2zm-1 5h2v1h-2z"/>
+    <g class="pg-trial-fin">
+      <path fill="#08182b" d="M1 16h5v5H2v-2H0v-2h1z"/>
+      <path fill="#75b8b2" d="M2 17h3v3H3v-2H1v-1z"/>
+      <path fill="#bde8d7" d="M2 17h2v1H2z"/>
+    </g>
+    <path fill="#08182b" d="M11 1h9v2h3v2h2v6h-4V8H10v3H6V6h3V3h2z"/>
+    <path fill="#f3e9d4" d="M12 2h7v2h3v2h2v4h-3V7H10v3H7V7h3V4h2z"/>
+    <path fill="#c8bfae" d="M11 4h3v2h-3zm6-1h2v2h-2zm3 3h3v1h-3zM7 8h3v2H7zm14 0h3v2h-3z"/>
+    <path fill="#fff8e7" d="M8 13h5v5H8zm10 0h5v5h-5z"/>
+    <path fill="#0b1d30" d="M11 14h2v4h-2zm7 0h2v4h-2z"/>
+    <path fill="#67529c" d="M7 11h3v1h3v1h-3v-1H7zm14 0h3v1h-3v1h-3v-1h3z"/>
+    <path class="pg-trial-smile" fill="#0b1d30" d="M11 19h2v1h5v-1h2v2h-2v1h-5v-1h-2z"/>
+    <g class="pg-trial-grin">
+      <path fill="#0b1d30" d="M11 19h9v2h-2v1h-5v-1h-2z"/>
+      <path fill="#fff8e7" d="M12 19h1v1h-1zm6 0h1v1h-1z"/>
+    </g>
+    <path fill="#08182b" d="M9 22h13v3h-4v2h-5v-2H9z"/>
+    <path fill="#3b3157" d="M10 23h11v1h-4v2h-3v-2h-4z"/>
+    <path fill="#f3e9d4" d="M12 22h3v2h-3zm4 0h3v2h-3z"/>
+    <path fill="#c39c45" d="M15 24h2v2h-2z"/>
+  </g>
+  <g class="pg-trial-key">
+    <path fill="#08182b" d="M25 16h5v2h2v4h-3v7h-5v-4h2v-3h-3v-4h2z"/>
+    <path fill="#e1b760" d="M26 17h3v2h2v2h-3v6h-3v1h3v-3h-1v-4h-3v-2h2z"/>
+    <path fill="#08182b" d="M26 19h2v1h-2z"/>
+    <path fill="#f3e9d4" d="M26 17h2v1h-2z"/>
+    <path class="pg-trial-key-glint" fill="#fff8e7" d="M29 19h1v1h-1zm-2 5h1v1h-1z"/>
+    <path fill="#08182b" d="M22 20h4v4h-4z"/>
+    <path fill="#bde8d7" d="M22 21h3v2h-3z"/>
+  </g>
+</svg>

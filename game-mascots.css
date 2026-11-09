@@ -17,6 +17,9 @@ body.reduced .game-mascot{animation:none!important}
 .game-mascot-bench{width:96px;height:96px;animation:game-mascot-breathe 5s ease-in-out infinite}
 
 .game-mascot-trial{width:96px;height:96px;animation:game-mascot-breathe 6s ease-in-out infinite}
-.pg-trial-tail{transform-origin:50% 70%;animation:pg-trial-wisp 6s ease-in-out infinite}.pg-trial-key{transform-origin:83% 66%;transition:transform .3s}.pg-door:hover .pg-trial-key,.pg-door:focus-visible .pg-trial-key{transform:translateY(-1px) rotate(-8deg)}
+.pg-trial-tail{transform-origin:50% 70%;animation:pg-trial-wisp 6.5s ease-in-out infinite}.pg-trial-body{transform-origin:48% 52%;transition:scale .4s}.pg-trial-key{transform-origin:83% 66%;transition:transform .4s}.pg-door:is(:hover,:focus-visible) .pg-trial-key{transform:translateY(-2px) rotate(-10deg)}.pg-door:is(:hover,:focus-visible) .pg-trial-body{scale:1.035}.pg-trial-fin{transform-origin:20% 55%;animation:pg-trial-fin 5.5s ease-in-out infinite}.pg-trial-wisps{animation:pg-trial-drift 5s ease-out infinite}.pg-trial-key-glint{animation:pg-trial-glint 6s steps(1,end) infinite}.pg-trial-grin{opacity:0;transition:opacity .2s}.pg-door:is(:hover,:focus-visible) .pg-trial-grin{opacity:1}.pg-door:is(:hover,:focus-visible) .pg-trial-smile{opacity:0}
 .pg-bench-gavel{transform-origin:85% 70%;transition:transform .3s}.pg-door:hover .pg-bench-gavel,.pg-door:focus-visible .pg-bench-gavel{transform:rotate(-9deg)}.pg-artist-pencil{transform-origin:20% 64%;transition:transform .3s}.pg-door:hover .pg-artist-pencil,.pg-door:focus-visible .pg-artist-pencil{transform:rotate(-7deg)}
-@keyframes pg-trial-wisp{50%{transform:translateX(1px)}}
+@keyframes pg-trial-wisp{50%{transform:translateX(-1px)}}
+@keyframes pg-trial-fin{50%{transform:rotate(-6deg) translateY(-.5px)}}
+@keyframes pg-trial-drift{0%{opacity:0;transform:translateY(2px)}25%{opacity:.65}100%{opacity:0;transform:translateY(-3px)}}
+@keyframes pg-trial-glint{0%,57%,64%,100%{opacity:0}58%,63%{opacity:1}}
