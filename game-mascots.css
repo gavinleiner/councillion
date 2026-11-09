@@ -14,3 +14,4 @@ body.reduced .game-mascot{animation:none!important}
 .cc-entry-heading>span{display:block;line-height:1}
 
 .game-mascot-testimony{animation:pg-artist-bob 4.5s ease-in-out infinite}@keyframes pg-artist-bob{0%,100%{transform:translateY(1px) rotate(-2deg)}50%{transform:translateY(-5px) rotate(2deg)}}
+.game-mascot-bench{width:96px;height:96px;aspect-ratio:1;background:url('assets/game-mascots/bench-judge-v36.webp') 50% 0/300% 100% no-repeat;animation:game-mascot-breathe 5s ease-in-out infinite}.pg-door:hover .game-mascot-bench,.pg-door:focus-visible .game-mascot-bench{background-position:0 0}

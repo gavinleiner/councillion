@@ -5,15 +5,15 @@ import {isGameAvailable,isGameEntryAvailable,canPreviewOath} from '../game-avail
 import {PRESIDENT_EMAIL,VICE_PRESIDENT_EMAIL,canAdmin} from '../account-honors.js';
 const owner=()=>({id:'owner-google-id',uid:'owner',role:'super_admin',expires:Date.now()/1000+3600});
 const president=()=>({id:'pres-google-id',uid:'pres',email:PRESIDENT_EMAIL,role:'player',honor:{kind:'president',title:'pres'},expires:Date.now()/1000+3600});
-test('Gavin school account can enter local Oath preview without admin or multiplayer-room access',async()=>{
- const identity=president();assert.equal(canAdmin(identity),false);assert.equal(canPreviewOath(identity),true);assert.equal(isGameEntryAvailable('oath',identity),true);assert.equal(isGameAvailable('oath',identity),false);
+test('Gavin school account retains local preview entitlement alongside public multiplayer access',async()=>{
+ const identity=president();assert.equal(canAdmin(identity),false);assert.equal(canPreviewOath(identity),true);assert.equal(isGameEntryAvailable('oath',identity),true);assert.equal(isGameAvailable('oath',identity),true);
  for(const invalid of [{...identity,email:VICE_PRESIDENT_EMAIL},{...identity,email:'another.gavin@example.invalid'},{...identity,honor:null},{...identity,expires:1}])assert.equal(canPreviewOath(invalid),false);
  let reads=0;const verified=await authorizeOathPreview({identity:president,authorize:async()=>({identity}),getCloud:async()=>({db:{},ref:(_,p)=>p,get:async p=>{assert.equal(p,'ownerPreviews/oath');reads++;}})});assert.equal(verified.role,'player');assert.equal(reads,1);
  const session=new OathPreviewSession({identity:president,verified:identity,onState(){}});try{await session.request('start');assert.equal(session.state.stage,'oath-intro');assert.equal(session.state.players.length,6);}finally{await session.close();}
 });
 test('private preview uses current owner entitlement and checks server permission before opening',async()=>{
  assert.equal(isGameAvailable('oath',owner()),true);
- for(const identity of [null,{email:'gavin@theleiners.com'},{...owner(),role:'player'},{...owner(),expires:1}])assert.equal(isGameAvailable('oath',identity),false);
+ for(const identity of [null,{email:'gavin@theleiners.com'},{...owner(),role:'player'},{...owner(),expires:1}]){assert.equal(isGameAvailable('oath',identity),true);assert.equal(canPreviewOath(identity),false);}
  let path,reads=0;const cloud={db:{},ref:(db,p)=>(path=p),get:async()=>{reads++;return {};}};
  const verified=await authorizeOathPreview({identity:owner,authorize:async()=>({identity:owner()}),getCloud:async()=>cloud});assert.equal(verified.role,'super_admin');assert.equal(path,'ownerPreviews/oath');assert.equal(reads,1);
  await assert.rejects(authorizeOathPreview({identity:owner,authorize:async()=>({identity:{role:'player'}}),getCloud:async()=>{throw Error('Must not read');}}),/owner-only/);

@@ -1,6 +1,6 @@
 import {canAdmin,PRESIDENT_EMAIL} from './account-honors.js';
 // The local bot preview and real multiplayer rooms have separate entitlements.
-export const COMING_SOON_GAMES=Object.freeze(['oath']);
+export const COMING_SOON_GAMES=Object.freeze([]);
 export const canPreviewOath=identity=>!!(canAdmin(identity)||(identity?.expires>Date.now()/1000&&String(identity?.email??'').toLowerCase()===PRESIDENT_EMAIL&&identity?.honor?.kind==='president'&&identity.honor.title==='pres'));
 export const isGameAvailable=(mode,identity)=>!COMING_SOON_GAMES.includes(mode)||!!canAdmin(identity);
 export const isGameEntryAvailable=(mode,identity)=>isGameAvailable(mode,identity)||(mode==='oath'&&canPreviewOath(identity));
