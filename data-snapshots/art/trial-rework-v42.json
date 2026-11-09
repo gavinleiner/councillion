@@ -1,0 +1,60 @@
+{
+  "generator": "Built-in image_gen",
+  "purpose": "New close camera shots for the whole Trial by Puffer gameplay rework",
+  "prompts": [
+    {
+      "name": "evidence",
+      "prompt": "Use case: style-transfer. This is an edit of the reference Councillion underwater courtroom environment into a new camera shot for its survival trivia game. Preserve the reference's deliberately drawn 16-bit pixel-art language, limited navy/teal/plum/cream/gold palette, crisp stepped silhouettes, submerged law-court stonework and warm small lanterns. It must read as a cohesive game background, never photorealistic, painted or 3D. Wide 16:9 game scene, approximately 480x270 logical pixel detail rendered sharply at high resolution. No characters, no lettering, no fake text, no UI, no labels, no grids of cards, no dice, no chalices painted into the center. Keep the central upper 30\u201348% of the image dark and uncluttered for question text, and the lower 82\u2013100% as visible stone floor for six player sprites. No bloom, depth-of-field or excessive clutter. Camera shot: closer view of the evidence desk in the archive. A broad low stone desk with a dark matte walnut work surface spans x15\u201385%, with its back edge at y50% and front edge at y78%. Its middle is completely empty, a generous dark workspace for interactive evidence icons. An empty central arch and receding law-library shelves behind it, small closed books and a quill ONLY on far desk edges. A few coral tufts at the sides, pale aqua light from above, discreet gold laurels carved into the desk front. The scene should feel tactile and calm before a memory challenge."
+    },
+    {
+      "name": "table",
+      "prompt": "Use case: style-transfer. This is an edit of the reference Councillion underwater courtroom environment into a new camera shot for its survival trivia game. Preserve the reference's deliberately drawn 16-bit pixel-art language, limited navy/teal/plum/cream/gold palette, crisp stepped silhouettes, submerged law-court stonework and warm small lanterns. It must read as a cohesive game background, never photorealistic, painted or 3D. Wide 16:9 game scene, approximately 480x270 logical pixel detail rendered sharply at high resolution. No characters, no lettering, no fake text, no UI, no labels, no grids of cards, no dice, no chalices painted into the center. Keep the central upper 30\u201348% of the image dark and uncluttered for question text, and the lower 82\u2013100% as visible stone floor for six player sprites. No bloom, depth-of-field or excessive clutter. Camera shot: the poison hearing table, a closer view deeper inside this same chamber. A broad dark teal courtroom stone table with subtle gold rim spans x15\u201385%, back edge y51%, front edge y77%. Leave its entire middle empty; interactive chalices will be added by game code. The courtroom's hanging balance scales are now small and high in the background, soft plum curtains framing a dark center. Tiny sealed potion jars on narrow shelves at the far left and far right only. Warm amber lanterns, quiet underwater rays, law emblems carved into the table base. Clearly a new close scene rather than the original wide shot."
+    },
+    {
+      "name": "chance",
+      "prompt": "Use case: style-transfer. This is an edit of the reference Councillion underwater courtroom environment into a new camera shot for its survival trivia game. Preserve the reference's deliberately drawn 16-bit pixel-art language, limited navy/teal/plum/cream/gold palette, crisp stepped silhouettes, submerged law-court stonework and warm small lanterns. It must read as a cohesive game background, never photorealistic, painted or 3D. Wide 16:9 game scene, approximately 480x270 logical pixel detail rendered sharply at high resolution. No characters, no lettering, no fake text, no UI, no labels, no grids of cards, no dice, no chalices painted into the center. Keep the central upper 30\u201348% of the image dark and uncluttered for question text, and the lower 82\u2013100% as visible stone floor for six player sprites. No bloom, depth-of-field or excessive clutter. Camera shot: a tense dice hearing in a small vaulted cell chamber of this courthouse. A wide low gaming table with a dark plum felt top fills x18\u201382%, back edge y50%, front edge y78%, its center completely empty for a large animated die and controls. Carved blue stone frame, restrained brass edge studs. In the background: symmetrical barred arches with gentle violet light, an old scale-of-justice relief above center, lanterns on each side. Few iron keys hanging on the far outer walls. Keep the header area and entire center clean. Dramatic but playful, crisp pixel art, no horror gore."
+    },
+    {
+      "name": "verdict",
+      "prompt": "Use case: style-transfer. This is an edit of the reference Councillion underwater courtroom environment into a new camera shot for its survival trivia game. Preserve the reference's deliberately drawn 16-bit pixel-art language, limited navy/teal/plum/cream/gold palette, crisp stepped silhouettes, submerged law-court stonework and warm small lanterns. It must read as a cohesive game background, never photorealistic, painted or 3D. Wide 16:9 game scene, approximately 480x270 logical pixel detail rendered sharply at high resolution. No characters, no lettering, no fake text, no UI, no labels, no grids of cards, no dice, no chalices painted into the center. Keep the central upper 30\u201348% of the image dark and uncluttered for question text, and the lower 82\u2013100% as visible stone floor for six player sprites. No bloom, depth-of-field or excessive clutter. Camera shot: a wide dedicated sentencing chamber. Large stepped blue stone arch, dark plum recess in its center occupying x22\u201378%, y28\u201374%, with no furniture in that central area. A sculpted gold balance emblem high above, small lanterns left and right; the two side alcoves contain closed iron gates with gentle spectral mint light drifting behind them. A broad empty sandstone floor along the bottom is the character stage. Subtle carved laurels, coral only at edges. This is an imposing theatrical verdict scene that has lots of quiet dark room in the center for results text. No judge, no throne in the text area, no poster, no words."
+    }
+  ],
+  "files": [
+    {
+      "scene": "evidence",
+      "path": "assets/court-games/trial-evidence-v42.webp",
+      "source": "/Users/gavin/.codex/generated_images/01a160d5-54c6-7e42-b905-7ed9a7f03a28/exec-017760b2-9881-4f6d-87e6-797bf9a17471.png",
+      "width": 1672,
+      "height": 941,
+      "bytes": 383372,
+      "sha256": "fceac0a6fd0f94ec6605a7c9fb07fba286febf6d6848110f0e8f39253f152942"
+    },
+    {
+      "scene": "table",
+      "path": "assets/court-games/trial-table-v42.webp",
+      "source": "/Users/gavin/.codex/generated_images/01a160d5-54c6-7e42-b905-7ed9a7f03a28/exec-cda30bbc-d65e-4c57-bfb3-3132b5c9b2a5.png",
+      "width": 1672,
+      "height": 941,
+      "bytes": 385936,
+      "sha256": "7426f3c642e9668cf96a4328d8f702b9e31f272e850a45b6f45508d58068e279"
+    },
+    {
+      "scene": "chance",
+      "path": "assets/court-games/trial-chance-v42.webp",
+      "source": "/Users/gavin/.codex/generated_images/01a160d5-54c6-7e42-b905-7ed9a7f03a28/exec-3b111d47-adee-48b5-8b73-6ff10b3b758b.png",
+      "width": 1672,
+      "height": 941,
+      "bytes": 423450,
+      "sha256": "4a6b5b3b3313f0e753a55a6e09016f8c49f8ba791b052285666616a0eeb9f5f3"
+    },
+    {
+      "scene": "verdict",
+      "path": "assets/court-games/trial-verdict-v42.webp",
+      "source": "/Users/gavin/.codex/generated_images/01a160d5-54c6-7e42-b905-7ed9a7f03a28/exec-5ef1cce7-efc5-494e-9e9a-516b95f90e35.png",
+      "width": 1672,
+      "height": 941,
+      "bytes": 425066,
+      "sha256": "1f552162d4c6c54dd7f4a89104a3722cb1db527c551261acfb8391d948bd29c4"
+    }
+  ]
+}

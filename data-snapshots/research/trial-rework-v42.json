@@ -1,0 +1,44 @@
+{
+  "scope": "Whole-game Trial by Puffer rework. Reuses the 648 curated source-linked multiple-choice questions; adds eight stable explicit escape membership sets for 40 total.",
+  "escapeSources": [
+    {
+      "id": "spongebob",
+      "source": "https://www.nick.com/info-page/xe31fl/spongebob-squarepants"
+    },
+    {
+      "id": "avengers-original",
+      "source": "https://d23.com/a-to-z/avengers-marvels-the-film/"
+    },
+    {
+      "id": "cole-songs",
+      "source": "https://music.apple.com/us/artist/j-cole/73705833"
+    },
+    {
+      "id": "winter-olympics",
+      "source": "https://support.olympics.com/hc/en-gb/articles/43002667811219-What-sports-are-in-the-Olympic-Winter-Games-Milano-Cortina-2026"
+    },
+    {
+      "id": "nintendo-hardware",
+      "source": "https://www.nintendo.com/au/about/history/"
+    },
+    {
+      "id": "hogwarts-houses",
+      "source": "https://www.harrypotter.com/features/hogwarts-house-meanings"
+    },
+    {
+      "id": "dc-heroes",
+      "source": "https://www.dc.com/characters"
+    },
+    {
+      "id": "greek-gods",
+      "source": "https://www.theacropolismuseum.gr/en/exhibits/gods-worship-and-magic"
+    }
+  ],
+  "gameplayChanges": [
+    "Poison is committed before defendants drink; other witnesses predict a victim.",
+    "Dice become server-rolled push-your-luck runs: reach eight, bank, or risk another roll; a one busts.",
+    "Memory length scales from four to six pieces.",
+    "Finale requires an explicit yes/no judgment for each visible item.",
+    "All-sealed interactive stages resolve after a short synchronized countdown."
+  ]
+}

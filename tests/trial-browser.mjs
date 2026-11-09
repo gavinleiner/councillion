@@ -1,7 +1,7 @@
 import {chromium} from 'playwright-core';
 import assert from 'node:assert/strict';
 import {mkdir,writeFile} from 'node:fs/promises';
-const work='/Users/gavin/Documents/Codex/2026-10-21/can-2/work/trial-by-puffer-v38';await mkdir(work,{recursive:true});
+const work='/Users/gavin/Documents/Codex/2026-10-21/can-2/work/trial-rework-v42';await mkdir(work,{recursive:true});
 const browser=await chromium.launch({executablePath:process.env.CHROME_PATH??'/Users/gavin/Library/Caches/ms-playwright/chromium_headless_shell-1228/chrome-headless-shell-mac-arm64/chrome-headless-shell'}),errors=[],missing=[],report={layouts:[],scenes:[]};
 try{
  const p=await browser.newPage({viewport:{width:1366,height:650}});p.on('pageerror',e=>errors.push(e.message));p.on('response',r=>{if(r.status()>=400&&r.url().startsWith('http://localhost:')&&!r.url().endsWith('/__version'))missing.push(r.url());});
