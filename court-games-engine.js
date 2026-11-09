@@ -1,3 +1,4 @@
+import {startBench,actBench,tickBench,benchSettings} from './bench-engine.js';
 import {startTestimony,actTestimony,tickTestimony,btSettings} from './testimony-engine.js';
 import {startDocket,actDocket,tickDocket} from './docket-engine.js';
 import {startOath,actOath,tickOath} from './oath-engine.js';
@@ -9,16 +10,17 @@ import {CLASH_BOARDS,CLASH_BY_ID,FIGURE_QUESTIONS,FIGURE_BY_ID} from './court-ga
 import {courtSettings} from './court-games-settings.js';
 import {figureDeck} from './court-games-figure-deck.js';
 export const COURT_GAMES_BUILD='20261107-oath-preview-v30';
-export const GAME_MODES={testimony:{name:'Broken Testimony',subtitle:'DRAW. GUESS. DERAIL.',seats:10},clash:{name:'Counsel Clash',subtitle:'TEAM FEUD',seats:10},figure:{name:'Final Figure',subtitle:'CLOSEST ANSWER WINS',seats:8},docket:{name:'The Docket',subtitle:'CHOOSE. BUZZ. WAGER.',seats:6},oath:{name:'Under Oath',subtitle:'FIND THE IMPOSTOR',seats:6}};
+export const GAME_MODES={bench:{name:'Beat the Bench',subtitle:'OUTRUN THE JUDGE',seats:6},testimony:{name:'Broken Testimony',subtitle:'DRAW. GUESS. DERAIL.',seats:10},clash:{name:'Counsel Clash',subtitle:'TEAM FEUD',seats:10},figure:{name:'Final Figure',subtitle:'CLOSEST ANSWER WINS',seats:8},docket:{name:'The Docket',subtitle:'CHOOSE. BUZZ. WAGER.',seats:6},oath:{name:'Under Oath',subtitle:'FIND THE IMPOSTOR',seats:6}};
 export const CLASH_TIMING={briefing:4000,countdown:3000,buzz:8000,faceAnswer:10000,choice:5000,control:15000,steal:15000,survey:600,handoff:900,roundBreak:2500,fastCasting:5000,fastRun:32000,fastReadMin:1800,fastReadMax:6500,fastReadWord:230,fastReadLead:450,fastRevealStart:350,fastRevealStep:1000,fastRevealScore:450,fastReview:6000};
 const live=s=>s.players.filter(p=>!p.spectator&&p.connected!==false);
 const team=(s,n)=>{const rows=live(s).filter(p=>p.team===n),online=rows.filter(p=>p.online!==false);return online.length?online:rows;};
 const actor=(s,id)=>s.players.find(p=>p.id===id&&!p.spectator&&p.connected!==false&&p.online!==false);
 const emit=(s,type,text,now,extra={})=>{s.notice=text;s.event={id:++s.eventSerial,type,text,at:now,...extra};s.revision++;};
 const stage=(s,value,now,ms)=>{s.stage=value;s.phase=['roundResult','reveal','fastFirstReview','fastReview'].includes(value)?'burst':value==='finish'?'ended':value==='lobby'?'lobby':'playing';s.deadline=ms?now+ms:0;s.stageAt=now;if(['faceAnswer','control','steal'].includes(value))s.turnOpenedAt=now;};
-export function createCourtGame(mode,players=[],rng=Math.random){if(!GAME_MODES[mode])throw Error('Choose a game mode.');return {build:COURT_GAMES_BUILD,variant:mode,phase:'lobby',stage:'lobby',players:players.map(p=>({...p,score:0,team:p.team??0})),settings:{maxPlayers:GAME_MODES[mode].seats,...(mode==='testimony'?btSettings():courtSettings(mode))},round:0,revision:0,eventSerial:0,teamScores:[0,0],deadline:0,notice:'Bring your friends. The court is assembling.',questionIds:[],locked:{},history:[]};}
+export function createCourtGame(mode,players=[],rng=Math.random){if(!GAME_MODES[mode])throw Error('Choose a game mode.');return {build:COURT_GAMES_BUILD,variant:mode,phase:'lobby',stage:'lobby',players:players.map(p=>({...p,score:0,team:p.team??0})),settings:{maxPlayers:GAME_MODES[mode].seats,...(mode==='bench'?benchSettings():mode==='testimony'?btSettings():courtSettings(mode))},round:0,revision:0,eventSerial:0,teamScores:[0,0],deadline:0,notice:'Bring your friends. The court is assembling.',questionIds:[],locked:{},history:[]};}
 export function startCourtGame(s,now=Date.now(),rng=Math.random,secret={}){
  s.tabSentences=[];s.tabPenalties={};
+ if(s.variant==='bench')return startBench(s,secret,now,rng);
  if(s.variant==='testimony')return startTestimony(s,secret,now,rng);
  if(s.variant==='oath')return startOath(s,secret,now,rng);
  if(s.variant==='docket')return startDocket(s,secret,now,rng);
@@ -95,6 +97,7 @@ function revealFigure(s,secret,now){
  s.advanceReady={};s.roundResult={answer:q.answer,unit:q.unit,...(q.scoringSpan?{scoringSpan:q.scoringSpan}:{}),explanation:q.explanation,source:q.source,sourceTitle:q.sourceTitle,leaders,rows:rows.sort((a,b)=>(a.error??Infinity)-(b.error??Infinity))};s.history.push({round:s.round,id:q.id,...s.roundResult});stage(s,'reveal',now,14000);emit(s,'reveal','Unseal the estimates. Closest counsel earns +200.',now);
 }
 export function actCourtGame(s,secret,uid,action,payload={},now=Date.now()){
+ if(s.variant==='bench')return actBench(s,secret,uid,action,payload,now);
  if(s.variant==='testimony')return actTestimony(s,secret,uid,action,payload,now);
  if(s.variant==='oath')return actOath(s,secret,uid,action,payload,now);
  if(s.variant==='docket')return actDocket(s,secret,uid,action,payload,now);
@@ -215,6 +218,7 @@ function resolveBoardAnswer(s,uid,payload,now){
  return {accepted:true,found:valid,label:valid?answer.label:null};
 }
 export function tickCourtGame(s,secret,now=Date.now(),rng=Math.random){
+ if(s.variant==='bench')return tickBench(s,secret,now,rng);
  if(s.variant==='testimony')return tickTestimony(s,secret,now,rng);
  if(s.variant==='oath')return tickOath(s,secret,now);
  if(s.variant==='docket')return tickDocket(s,secret,now);
