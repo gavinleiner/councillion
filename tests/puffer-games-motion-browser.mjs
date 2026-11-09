@@ -11,12 +11,12 @@ try{
  const ids=await p.locator('[id]').evaluateAll(nodes=>nodes.map(n=>n.id));assert.equal(new Set(ids).size,ids.length);
  await p.getByRole('link',{name:'Play Counsel Clash',exact:true}).hover();
  assert.equal(await p.locator('.pg-hall').getAttribute('data-active'),'clash');assert.match(await p.locator('.pg-current').innerText(),/Two benches/);
- assert.equal(await p.locator('.pg-crab-claw').count(),2);assert.equal(await p.locator('.pg-turtle-book').count(),1);assert.equal(await p.locator('.pg-mascot-lids').count(),4);
+ assert.equal(await p.locator('.pg-crab-claw').count(),2);assert.equal(await p.locator('.pg-turtle-book').count(),1);assert.equal(await p.locator('.pg-mascot-lids').count(),5);
  await p.mouse.move(1200,420);await p.waitForTimeout(550);const moving=await p.locator('.pg-world').evaluate(el=>getComputedStyle(el).transform);assert.notEqual(moving,'matrix(1, 0, 0, 1, 0, 0)');
  await p.getByRole('button',{name:'Let the puffer pick a game',exact:true}).click();
  assert.ok(['party','testimony','clash','figure','docket','bench','oath','trial'].includes(await p.locator('.pg-hall').getAttribute('data-active')));assert.match(await p.locator('.pg-current-name').innerText(),/THE JUDGE PICKS/);assert.ok(await p.locator('.pg-selected').evaluate(el=>el===document.activeElement));
  await p.getByRole('button',{name:'Pause hall animations',exact:true}).click();await p.waitForTimeout(100);
- if(['bench','oath','trial'].includes(await p.locator('.pg-hall').getAttribute('data-active'))){await p.getByRole('button',{name:'← PREVIOUS COVE'}).click();await p.locator('.pg-crab-claw').waitFor();}
+ if(['bench','oath','testimony'].includes(await p.locator('.pg-hall').getAttribute('data-active'))){await p.getByRole('button',{name:'← PREVIOUS COVE'}).click();await p.locator('.pg-crab-claw').first().waitFor();}
  const freeze=()=>p.evaluate(()=>({canvas:document.querySelector('.pg-life').toDataURL(),time:document.querySelector('.pg-crab-claw').getAnimations()[0]?.currentTime,pan:getComputedStyle(document.querySelector('.pg-world')).transform}));
  const frozen=await freeze();await p.waitForTimeout(250);assert.deepEqual(await freeze(),frozen);
  await p.reload();await p.getByRole('button',{name:'Resume hall animations',exact:true}).waitFor();assert.ok(await p.locator('.pg-hall').evaluate(el=>el.classList.contains('pg-paused')));assert.equal(await p.locator('.pg-door').first().evaluate(el=>getComputedStyle(el).opacity),'1');
@@ -29,7 +29,7 @@ try{
  await p.getByRole('link',{name:'Play Puffer Party',exact:true}).click();assert.ok(await p.locator('.pg-hall').evaluate(el=>el.classList.contains('pg-exiting')));await p.evaluate(()=>location.hash='#home');await p.waitForTimeout(650);assert.equal(new URL(p.url()).hash,'#home');
  await p.goto(base+'#games');await p.getByRole('link',{name:'Play Final Figure',exact:true}).click();await p.waitForURL('**/#figure');await p.locator('.ff-hub').waitFor();
  await p.goto(base+'#oath?room=ABCD');await p.locator('#oa-join').waitFor();assert.equal(await p.locator('#oa-code').inputValue(),'ABCD');assert.equal(await p.getByText('COMING SOON',{exact:true}).count(),0);
- report.interactions={inlineMascots:4,pixelArtistMascot:1,uniqueSvgIds:true,hover:true,guidePick:true,parallax:true,pauseFreezesCanvasAndSprites:true,pausePersists:true,reducedMotion:true,cancelledEntry:true,animatedNavigation:true,underOathPublic:true};
+ report.interactions={inlineMascots:5,firstCoveTrial:true,uniqueSvgIds:true,hover:true,guidePick:true,parallax:true,pauseFreezesCanvasAndSprites:true,pausePersists:true,reducedMotion:true,cancelledEntry:true,animatedNavigation:true,underOathPublic:true};
  // Warm assets, then measure steady-state motion under a slower CPU profile.
  await p.goto(base+'#games');await p.locator('.pg-door .game-mascot').nth(4).waitFor();await p.waitForTimeout(1700);
  const cdp=await p.context().newCDPSession(p);await cdp.send('Emulation.setCPUThrottlingRate',{rate:4});

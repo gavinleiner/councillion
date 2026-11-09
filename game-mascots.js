@@ -1,9 +1,9 @@
 // Small-grid original mascots share Puffer's outline, wig and eye palette.
 // These identify games; player characters and customization are independent.
 export const GAME_MASCOTS=Object.freeze({
- trial:{src:'assets/game-mascots/trial-judge-v38.webp',name:'Trial by Puffer magistrate',sprite:true},
- bench:{src:'assets/game-mascots/bench-judge-v36.webp',name:'Beat the Bench judge',sprite:true},
- testimony:{src:'assets/game-mascots/testimony-octopus-v35.png',name:'Ink the courtroom artist'},
+ trial:{src:'assets/game-mascots/trial-ghost-v40.svg',name:'Trial by Puffer ghost magistrate'},
+ bench:{src:'assets/game-mascots/bench-judge-v40.svg',name:'Beat the Bench judge'},
+ testimony:{src:'assets/game-mascots/testimony-artist-v40.svg',name:'Ink the courtroom artist'},
  party:{src:'assets/puffer.svg',name:'Puffer judge'},
  clash:{src:'assets/game-mascots/clash-crab-v1.svg',name:'Clash crab'},
  figure:{src:'assets/game-mascots/figure-nautilus-v1.svg',name:'Figure nautilus'},

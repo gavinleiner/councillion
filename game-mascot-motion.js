@@ -3,7 +3,7 @@ import {GAME_MASCOTS} from './game-mascots.js';
 // Animate the approved SVG sources. The normal image stays if enhancement fails.
 const sources=new Map();let serial=0;
 const NS='http://www.w3.org/2000/svg';
-const lids={party:['#f5da7c','M8 13h4v4H8zm9 0h4v4h-4z'],clash:['#ef7889','M11 15h4v5h-4zm7 0h4v5h-4z'],figure:['#70c9c4','M23 17h4v4h-4z'],docket:['#78bad0','M10 11h4v4h-4zm8 0h4v4h-4z'],oath:['#a18ad1','M11 14h4v5h-4zm7 0h4v5h-4z']};
+const lids={trial:['#b5ded3','M9 13h4v5H9zm9 0h4v5h-4z'],bench:['#f5da7c','M10 13h4v5h-4zm8 0h4v5h-4z'],testimony:['#39aeb0','M11 14h4v5h-4zm8 0h4v5h-4z'],party:['#f5da7c','M8 13h4v4H8zm9 0h4v4h-4z'],clash:['#ef7889','M11 15h4v5h-4zm7 0h4v5h-4z'],figure:['#70c9c4','M23 17h4v4h-4z'],docket:['#78bad0','M10 11h4v4h-4zm8 0h4v4h-4z'],oath:['#a18ad1','M11 14h4v5h-4zm7 0h4v5h-4z']};
 const node=(tag,attrs={})=>{const el=document.createElementNS(NS,tag);for(const [k,v]of Object.entries(attrs))el.setAttribute(k,v);return el;};
 function group(nodes,className){if(!nodes.length)return;const g=node('g',{class:className});nodes[0].before(g);nodes.forEach(n=>g.append(n));}
 function crabClaws(svg){
