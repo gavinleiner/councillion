@@ -7,10 +7,10 @@ export function validTrialSettings(v){if(!v||typeof v!=='object'||Array.isArray(
 function random(ref){ref.seed=(Math.imul(ref.seed,1664525)+1013904223)>>>0;return ref.seed/4294967296;}
 const shuffle=(a,ref)=>{const r=[...a];for(let i=r.length-1;i>0;i--){const j=Math.floor(random(ref)*(i+1));[r[i],r[j]]=[r[j],r[i]];}return r;};
 const integer=(ref,n)=>Math.floor(random(ref)*n);
-function phase(s,name,now,ms=0){s.stage=name;s.stageAt=now;s.deadline=ms?now+ms:0;s.phase=name==='finish'?'ended':name==='lobby'?'lobby':name.endsWith('reveal')||name==='trial-verdict'?'burst':'playing';s.locked={};s.revision++;}
+function phase(s,name,now,ms=0){s.stage=name;s.stageAt=now;s.deadline=ms?now+ms:0;s.phase=name==='finish'?'ended':name==='lobby'?'lobby':name.endsWith('reveal')||name==='trial-verdict'?'burst':'playing';s.locked={};s.settleAt=0;s.revision++;}
 function event(s,type,text,now,extra={}){s.eventSerial=(s.eventSerial??0)+1;s.notice=text;s.event={id:s.eventSerial,type,text,at:now,...extra};s.revision++;}
 function publicQuestion(q,ref){const options=trialOptions(q,()=>random(ref));ref.correct=options.find(o=>o.text===q.answer).id;return {id:q.id,prompt:q.prompt,category:q.category,subject:q.subject,options};}
-export function normalizeTrial(ref){if(!ref)return ref;for(const k of ['deck','challengeDeck','escapeDeck','pattern','poisoners','poison','math','mirrorOptions'])ref[k]=vals(ref[k]);for(const row of ref.math)row.options=vals(row.options);for(const row of ref.mirrorOptions)row.cells=vals(row.cells);ref.answers??={};ref.entries??={};for(const e of Object.values(ref.entries)){if(e.sequence)e.sequence=vals(e.sequence);if(e.dice)e.dice=vals(e.dice);}ref.forfeits??={};if(ref.escape)ref.escape.options=vals(ref.escape.options);return ref;}
+export function normalizeTrial(ref){if(!ref)return ref;for(const k of ['deck','challengeDeck','escapeDeck','pattern','poisoners','poison','math','mirrorOptions'])ref[k]=vals(ref[k]);for(const row of ref.math)row.options=vals(row.options);for(const row of ref.mirrorOptions)row.cells=vals(row.cells);ref.answers??={};ref.judgments??={};ref.entries??={};for(const e of Object.values(ref.entries)){if(e.sequence)e.sequence=vals(e.sequence);if(e.dice)e.dice=vals(e.dice);}ref.forfeits??={};if(ref.escape)ref.escape.options=vals(ref.escape.options);return ref;}
 export function normalizeTrialState(s){for(const k of ['history','questionIds','atRisk','trialRows','verdictRows','escapeRows','standings','lastDeaths'])s[k]=vals(s[k]);s.locked??={};s.stats??={};if(s.question)s.question.options=vals(s.question.options);if(s.challenge){s.challenge.pattern=vals(s.challenge.pattern);s.challenge.poisoners=vals(s.challenge.poisoners);s.challenge.mirrorPattern=vals(s.challenge.mirrorPattern);s.challenge.mirrorOptions=vals(s.challenge.mirrorOptions).map(o=>({...o,cells:vals(o.cells)}));}if(s.escape){s.escape.options=vals(s.escape.options);s.escape.positions??={};s.escape.caught??={};}if(s.result)s.result.rows=vals(s.result.rows);return s;}
 export function startTrial(s,secret,now=Date.now(),rng=Math.random){
  const crew=online(s);if(crew.length<2||crew.length>8)throw Error('Trial by Puffer needs two to eight players.');
@@ -37,36 +37,58 @@ function mathTask(ref){const a=2+integer(ref,18),b=2+integer(ref,12),op=integer(
 function grid(ref){return shuffle([0,1,2,3,4,5,6,7,8],ref).slice(0,4).sort((a,b)=>a-b);}
 const reflected=cells=>cells.map(n=>Math.floor(n/3)*3+2-n%3).sort((a,b)=>a-b);
 function beginChallenge(s,ref,now){
- let kind=ref.challengeDeck[ref.trialIndex++%ref.challengeDeck.length];if(['greed','bids'].includes(kind)&&s.atRisk.length<2)kind='mirror';
- ref.lastGame=kind;ref.entries={};ref.pattern=shuffle([0,1,2,3,4,5,6,7],ref).slice(0,5);ref.math=Array.from({length:32},()=>mathTask(ref));
- ref.poisoners=shuffle(trialPlayers(s).filter(p=>!s.atRisk.includes(p.id)&&p.online!==false&&p.connected!==false).map(p=>p.id),ref).slice(0,2);ref.poison=[integer(ref,6)];ref.mirrorPattern=grid(ref);
+ let kind=ref.challengeDeck[ref.trialIndex++%ref.challengeDeck.length];
+ ref.lastGame=kind;ref.entries={};ref.partner=null;ref.bailReserve=100+integer(ref,251);if(kind==='greed'&&s.atRisk.length===1){ref.partner=shuffle(online(s).filter(p=>!s.atRisk.includes(p.id)).map(p=>p.id),ref)[0]??'court';if(ref.partner==='court')ref.entries.court={submitted:true,choice:random(ref)<.5?'share':'steal'};}ref.pattern=shuffle([0,1,2,3,4,5,6,7],ref).slice(0,Math.min(6,4+Number(s.round>=4)+Number(s.round>=7)));ref.math=Array.from({length:32},()=>mathTask(ref));
+ ref.poisoners=shuffle(trialPlayers(s).filter(p=>!s.atRisk.includes(p.id)&&p.online!==false&&p.connected!==false).map(p=>p.id),ref).slice(0,2);ref.poison=[integer(ref,6)];ref.mirrorPattern=grid(ref);while(ref.mirrorPattern.join(',')===reflected(ref.mirrorPattern).join(','))ref.mirrorPattern=grid(ref);
  const good=reflected(ref.mirrorPattern),seen=new Set([good.join(',')]),grids=[good];while(grids.length<4){const g=grid(ref),key=g.join(',');if(!seen.has(key)){seen.add(key);grids.push(g);}}
  ref.mirrorOptions=shuffle(grids,ref).map((cells,i)=>({id:String(i),cells}));ref.mirrorCorrect=ref.mirrorOptions.find(o=>o.cells.join(',')===good.join(',')).id;
- s.challenge={kind,...TRIAL_GAMES[kind],pattern:[],poisoners:ref.poisoners,mirrorPattern:ref.mirrorPattern,mirrorOptions:ref.mirrorOptions};s.verdictRows=[];s.lastDeaths=[];
+ s.challenge={kind,...TRIAL_GAMES[kind],size:ref.pattern.length,pattern:[],poisoners:ref.poisoners,mirrorPattern:ref.mirrorPattern,mirrorOptions:ref.mirrorOptions};s.challenge.partner=ref.partner;s.challenge.soloBail=kind==='bids'&&s.atRisk.length===1;if(s.challenge.soloBail)s.challenge.instructions='The court has a hidden bail reserve between $100 and $350. Match or beat it to survive. Every bid is paid; witnesses predict whether bail is posted.';s.verdictRows=[];s.lastDeaths=[];
  phase(s,'trial-brief',now,T.brief);event(s,'challenge',TRIAL_GAMES[kind].name+'. '+TRIAL_GAMES[kind].instructions,now);
 }
 function openChallenge(s,ref,now){
- if(s.challenge.kind==='memory'){s.challenge.pattern=[...ref.pattern];phase(s,'trial-watch',now,T.watch);event(s,'watch','Look carefully. Five pieces. One order. The chain will disappear.',now);}
+ if(s.challenge.kind==='memory'){s.challenge.pattern=[...ref.pattern];phase(s,'trial-watch',now,T.watch);event(s,'watch','Look carefully. '+ref.pattern.length+' pieces. One order. The chain will disappear.',now);}
  else activateChallenge(s,ref,now);
 }
-function activateChallenge(s,ref,now){s.challenge.pattern=[];phase(s,'trial-challenge',now,s.challenge.seconds*1000);s.focusOpenedAt=now;event(s,'play',s.challenge.kind==='cups'?'Poisoners: choose secretly. Defendants: pick your chalice.':s.challenge.instructions,now);}
+function activateChallenge(s,ref,now){
+ s.challenge.pattern=[];phase(s,'trial-challenge',now,s.challenge.seconds*1000);s.focusOpenedAt=now;
+ if(s.challenge.kind==='cups')for(const id of ref.poisoners){const e=ref.entries[id]??={};e.submitted=true;s.locked[id]=true;}
+ event(s,'play',s.challenge.kind==='cups'?'The poison is locked. Defendants, choose a drink. Witnesses, place your prediction.':s.challenge.instructions,now);
+}
 function kill(s,p){if(p.alive){p.alive=false;s.lastDeaths.push(p.id);}}
 const entry=(ref,id)=>ref.entries[id]??{};
 function decideChallenge(s,ref,now){
- const kind=s.challenge.kind,risk=s.atRisk,rows=[],poison=ref.poisoners.length?[...new Set(ref.poisoners.map(id=>entry(ref,id).choice).filter(Number.isInteger))]:ref.poison;
+ const kind=s.challenge.kind,risk=s.atRisk,rows=[],poison=ref.poisoners.length?[...new Set(ref.poisoners.map(id=>entry(ref,id).poison).filter(Number.isInteger))]:ref.poison;
  const submitted= risk.filter(id=>entry(ref,id).submitted&&!ref.forfeits[id]),scores=risk.map(id=>entry(ref,id).score??0),lowest=Math.min(...scores);
  if(!poison.length)poison.push(...ref.poison);
- const allSteal=submitted.length===risk.length&&risk.every(id=>entry(ref,id).choice==='steal'),anySteal=risk.some(id=>entry(ref,id).choice==='steal');
- const bids=risk.map(id=>entry(ref,id).submitted?entry(ref,id).choice:0),lowBid=Math.min(...bids);
+ const deal=risk.length===1&&ref.partner?[...risk,ref.partner]:risk;
+ const allSteal=deal.every(id=>entry(ref,id).submitted&&entry(ref,id).choice==='steal'),anySteal=deal.some(id=>entry(ref,id).choice==='steal');
+ const bidOf=id=>Number.isInteger(entry(ref,id).choice)?entry(ref,id).choice:0,lowBid=Math.min(...risk.map(bidOf));
  for(const p of trialPlayers(s)){
   const e=entry(ref,p.id),defendant=risk.includes(p.id);let survived=false,detail='',value=e.score??null,bonus=0;
   if(kind==='memory'){survived=e.submitted&&e.sequence?.join(',')===ref.pattern.join(',');detail=e.submitted?(survived?'Chain preserved':'Wrong evidence order'):'No chain sealed';}
   if(kind==='maths'){value=e.score??0;survived=risk.length===1?value>=3:value>lowest;detail=value+' correct marks';if(risk.length>1&&scores.every(n=>n===scores[0])&&lowest>=3)survived=true;}
-  if(kind==='cups'){value=e.choice;survived=e.submitted&&Number.isInteger(e.choice)&&!poison.includes(e.choice);detail=e.submitted?'Chalice '+(e.choice+1)+(survived?' · clean':' · poisoned'):'No drink chosen';if(ref.poisoners.includes(p.id)){bonus=risk.filter(id=>entry(ref,id).choice===e.choice).length*300;detail='Poisoned chalice '+(Number.isInteger(e.choice)?e.choice+1:'—');}}
-  if(kind==='greed'){survived=e.submitted&&(!anySteal||e.choice==='steal'&&!allSteal);detail=e.submitted?String(e.choice).toUpperCase():'No plea sealed';if(!defendant&&e.submitted){const total=risk.filter(id=>entry(ref,id).choice==='steal').length;bonus=e.choice===total?500:0;detail='Predicted '+e.choice+' thieves';}}
-  if(kind==='bids'){const bid=e.submitted?e.choice:0;survived=e.submitted&&bid>lowBid;value=bid;detail=defendant?'Bid $'+bid:'Predicted lowest bid';if(defendant)p.cash=Math.max(0,p.cash-bid);else if(e.submitted&&risk.includes(e.choice)&&entry(ref,e.choice).choice===lowBid)bonus=500;}
+  if(kind==='cups'){
+   if(defendant){value=e.choice;survived=e.submitted&&Number.isInteger(e.choice)&&!poison.includes(e.choice);detail=e.submitted?'Chalice '+(e.choice+1)+(survived?' · clean':' · poisoned'):'No drink chosen';}
+   else if(ref.poisoners.includes(p.id)){const picked=e.poison;bonus=Number.isInteger(picked)?risk.filter(id=>entry(ref,id).choice===picked).length*300:0;detail=Number.isInteger(picked)?'Poisoned chalice '+(picked+1):'The court laid your trap';}
+   else {const hit=risk.filter(id=>poison.includes(entry(ref,id).choice));bonus=e.submitted&&(e.choice==='none'?hit.length===0:hit.includes(e.choice))?500:0;detail=e.submitted?(bonus?'Correct poison prediction':'Prediction missed'):'No prediction';}
+  }
+  if(kind==='greed'){
+   survived=e.submitted&&(!anySteal||e.choice==='steal'&&!allSteal);detail=e.submitted?String(e.choice).toUpperCase():'No plea sealed';
+   if(!defendant&&p.id===ref.partner){bonus=e.submitted?(!anySteal?350:e.choice==='steal'&&!allSteal?700:0):0;detail='DEAL PARTNER · '+(e.choice??'no plea');}
+   else if(!defendant&&e.submitted){const total=deal.filter(id=>entry(ref,id).choice==='steal').length;bonus=e.choice===total?500:0;detail='Predicted '+e.choice+' thieves';}
+  }
+  if(kind==='bids'){
+   const bid=bidOf(p.id);survived=e.submitted&&(s.challenge.soloBail?bid>=ref.bailReserve:bid>lowBid);value=bid;
+   detail=defendant?'Bid $'+bid+(s.challenge.soloBail?' · reserve $'+ref.bailReserve:''):'Predicted the bail outcome';
+   if(defendant)p.cash=Math.max(0,p.cash-bid);
+   else if(e.submitted){const posted=bidOf(risk[0])>=ref.bailReserve;bonus=s.challenge.soloBail?(e.choice===(posted?'yes':'no')?500:0):(risk.includes(e.choice)&&bidOf(e.choice)===lowBid?500:0);}
+  }
   if(kind==='pulse'){value=e.error??1;survived=e.attempts>0&&value<=.145;detail=e.attempts?'Best precision '+Math.round((1-value)*100)+'%':'Never stopped the needle';}
-  if(kind==='dice'){const dice=e.dice??[],target=({1:4,2:7,3:9})[dice.length]??99,total=dice.reduce((a,b)=>a+b,0);survived=e.submitted&&!dice.includes(1)&&total>=target;value=total;detail=dice.length?dice.join(' + ')+' = '+total+(dice.includes(1)?' · rolled a 1':' · needed '+target):'No dice rolled';if(survived)bonus=dice.length*150;}
+  if(kind==='dice'){
+   const dice=e.dice??[],total=dice.reduce((a,b)=>a+b,0);survived=dice.length>0&&!e.busted&&!dice.includes(1)&&total>=8;value=total;
+   detail=e.busted?'Rolled a 1 · busted':survived?'Banked '+total+' · '+dice.length+' rolls':dice.length?'Total '+total+' · needed 8':'No dice rolled';
+   if(survived)bonus=total*50;
+  }
   if(kind==='mirror'){survived=e.submitted&&e.choice===ref.mirrorCorrect;detail=e.submitted?(survived?'Exact reflection':'Decoy selected'):'No reflection selected';}
   if(ref.forfeits[p.id]){survived=false;detail='Answer forfeited after leaving the game tab';bonus=0;}
   if(defendant){if(!survived)kill(s,p);else{s.stats[p.id].survived++;bonus+=250;}}
@@ -90,7 +112,7 @@ function beginEscape(s,ref,now){
  phase(s,'trial-escape-intro',now,T.escapeIntro);event(s,'escape-intro',s.players.find(p=>p.id===soul).name+' holds the only life. Ghosts get an extra choice. Pass the living counsel to steal their life. Escape requires all three judgments at the gate.',now);
 }
 function nextEscape(s,ref,now){
- s.escape.turn++;s.round++;ref.answers={};ref.forfeits={};
+ s.escape.turn++;s.round++;ref.answers={};ref.judgments={};ref.forfeits={};
  const q=TRIAL_ESCAPE_BY_ID.get(ref.escapeDeck[(s.escape.turn-1)%ref.escapeDeck.length]),options=escapeDraw(q,()=>random(ref));
  ref.escape={id:q.id,options};s.escape.prompt=q.prompt;s.escape.options=options.map(({correct,...o})=>o);s.escape.gate=(s.escape.positions[s.escape.soul]??0)>=s.escape.goal;s.escape.questionId=q.id;s.escapeRows=[];
  phase(s,'trial-escape-question',now,T.escapeQuestion+(s.escape.gate?2000:0));s.focusOpenedAt=now;event(s,'escape-question','Select every item that belongs. Then seal. '+(s.escape.gate?'The barrier needs all THREE judgments right.':'The living counsel sees two items; ghosts see three.'),now);
@@ -117,7 +139,7 @@ function resolveEscape(s,ref,now){
 }
 export function trialReceipt(s,secret,uid){
  const ref=secret.trial;if(!ref||!s.matchId)return null;const e=entry(ref,uid),kind=s.challenge?.kind;
- const receipt={matchId:s.matchId,stageAt:s.stageAt,locked:!!s.locked?.[uid],role:s.atRisk?.includes(uid)?'defendant':ref.poisoners?.includes(uid)&&kind==='cups'?'poisoner':'gallery',submitted:!!e.submitted,choice:e.choice??null,sequence:e.sequence??[],score:e.score??0,attempts:e.attempts??0,error:e.error??null,dice:e.dice??[],answer:ref.answers?.[uid]??null};
+ const receipt={matchId:s.matchId,stageAt:s.stageAt,locked:!!s.locked?.[uid],role:s.atRisk?.includes(uid)?'defendant':kind==='greed'&&ref.partner===uid?'partner':ref.poisoners?.includes(uid)&&kind==='cups'?'poisoner':'gallery',submitted:!!e.submitted,choice:e.choice??null,sequence:e.sequence??[],score:e.score??0,attempts:e.attempts??0,error:e.error??null,lastValue:e.lastValue??null,dice:e.dice??[],busted:!!e.busted,banked:!!e.banked,rollAt:e.lastAt??0,poison:e.poison??null,judged:ref.judgments?.[uid]??null,answer:ref.answers?.[uid]??null};
  if(kind==='maths'&&s.stage==='trial-challenge'){const q=ref.math[(e.index??0)%ref.math.length];receipt.task={index:e.index??0,prompt:q.prompt,options:q.options};receipt.retryAt=e.retryAt??0;receipt.last=e.last??null;}
  return receipt;
 }
@@ -132,7 +154,13 @@ export function actTrial(s,secret,uid,action,p={},now=Date.now()){
  if(action==='trial-escape'){
   if(s.stage!=='trial-escape-question'||s.escape.caught[uid])throw Error('You cannot answer this escape question.');if(s.locked[uid])return {duplicate:true};
   const visible=uid===s.escape.soul&&!s.escape.gate?2:3;if(!Number.isInteger(p.mask)||p.mask<0||p.mask>=(1<<visible))throw Error('Choose from your visible escape answers.');
-  ref.answers[uid]=p.mask;s.locked[uid]=true;s.revision++;return {accepted:true};
+  if(p.judged!==(1<<visible)-1)throw Error('Judge every item YES or NO before sealing.');
+  ref.judgments??={};ref.judgments[uid]=p.judged;ref.answers[uid]=p.mask;s.locked[uid]=true;s.revision++;return {accepted:true};
+ }
+ if(action==='trial-poison'){
+  if(s.stage!=='trial-brief'||s.challenge?.kind!=='cups'||!ref.poisoners.includes(uid))throw Error('Only the chosen poisoners may lay a trap during the briefing.');
+  if(!Number.isInteger(p.choice)||p.choice<0||p.choice>5)throw Error('Choose one of the six chalices.');
+  const e=ref.entries[uid]??={};e.poison=p.choice;s.revision++;return {accepted:true};
  }
  if(action!=='trial-play'||s.stage!=='trial-challenge')throw Error('Wait for a survival trial.');
  const e=ref.entries[uid]??={index:0,score:0,attempts:0},kind=s.challenge.kind,defendant=s.atRisk.includes(uid);if(ref.forfeits[uid])throw Error('Your answer was forfeited. Stay on the game tab.');
@@ -145,15 +173,26 @@ export function actTrial(s,secret,uid,action,p={},now=Date.now()){
   if(e.attempts>=3)return {duplicate:true};if(now-(e.lastAt??-Infinity)<750)return {cooldown:true};
   // Use the referee's synchronized clock. No client-supplied score or needle value is trusted.
   const elapsed=(now-s.stageAt)%2600/2600,value=(1-Math.cos(elapsed*2*Math.PI))/2,error=Math.abs(.5-value);
-  e.error=Math.min(e.error??1,error);e.attempts++;e.lastAt=now;e.submitted=true;if(e.attempts>=3)s.locked[uid]=true;s.revision++;return {accepted:true,error:e.error};
+  e.error=Math.min(e.error??1,error);e.lastValue=value;e.attempts++;e.lastAt=now;e.submitted=true;if(e.attempts>=3)s.locked[uid]=true;s.revision++;return {accepted:true,error:e.error};
  }
- if(e.submitted&&!(kind==='cups'&&ref.poisoners.includes(uid)))return {duplicate:true};
- if(kind==='memory'){if(!Array.isArray(p.sequence)||p.sequence.length!==5||p.sequence.some(n=>!Number.isInteger(n)||n<0||n>7))throw Error('Seal a chain of five pieces of evidence.');e.sequence=[...p.sequence];}
+ if(kind==='dice'){
+  if(e.submitted||e.busted)return {duplicate:true};
+  if(p.move==='bank'){
+   if((e.score??0)<8)throw Error('Reach eight before banking.');e.banked=true;e.submitted=true;s.locked[uid]=true;s.revision++;return {accepted:true};
+  }
+  if(p.move!=='roll')throw Error('Choose ROLL or BANK.');
+  if(now-(e.lastAt??-Infinity)<800)return {cooldown:true};
+  if((e.dice?.length??0)>=6)return {duplicate:true};
+  const face=1+integer(ref,6);e.dice??=[];e.dice.push(face);e.score=(e.score??0)+face;e.lastAt=now;e.busted=face===1;
+  if(e.busted||e.dice.length===6){e.submitted=true;e.banked=!e.busted&&e.score>=8;s.locked[uid]=true;}
+  s.revision++;return {accepted:true,face};
+ }
+ if(e.submitted)return {duplicate:true};
+ if(kind==='memory'){if(!Array.isArray(p.sequence)||p.sequence.length!==ref.pattern.length||p.sequence.some(n=>!Number.isInteger(n)||n<0||n>7))throw Error('Seal a chain of '+ref.pattern.length+' pieces of evidence.');e.sequence=[...p.sequence];}
  else if(kind==='mirror'){if(!ref.mirrorOptions.some(o=>o.id===String(p.choice)))throw Error('Choose a reflection.');e.choice=String(p.choice);}
- else if(kind==='cups'){if(!Number.isInteger(p.choice)||p.choice<0||p.choice>5)throw Error('Choose one of the six chalices.');e.choice=p.choice;}
- else if(kind==='greed'){if(defendant&&!['share','steal'].includes(p.choice)||!defendant&&(!Number.isInteger(p.choice)||p.choice<0||p.choice>s.atRisk.length))throw Error('Choose a listed plea or prediction.');e.choice=p.choice;}
- else if(kind==='bids'){if(defendant&&(!Number.isInteger(p.choice)||p.choice<0||p.choice>Math.min(500,actor.cash))||!defendant&&!s.atRisk.includes(p.choice))throw Error('Choose a valid sealed bid or prediction.');e.choice=p.choice;}
- else if(kind==='dice'){if(!Number.isInteger(p.count)||p.count<1||p.count>3)throw Error('Choose one to three dice.');e.dice=Array.from({length:p.count},()=>1+integer(ref,6));}
+ else if(kind==='cups'){if(defendant?(!Number.isInteger(p.choice)||p.choice<0||p.choice>5):!['none',...s.atRisk].includes(p.choice))throw Error(defendant?'Choose one of the six chalices.':'Predict a defendant or nobody.');e.choice=p.choice;}
+ else if(kind==='greed'){const dealing=defendant||ref.partner===uid;if(dealing&&!['share','steal'].includes(p.choice)||!dealing&&(!Number.isInteger(p.choice)||p.choice<0||p.choice>(ref.partner?2:s.atRisk.length)))throw Error('Choose a listed plea or prediction.');e.choice=p.choice;}
+ else if(kind==='bids'){if(defendant&&(!Number.isInteger(p.choice)||p.choice<0||p.choice>Math.min(500,actor.cash))||!defendant&&(s.challenge.soloBail?!['yes','no'].includes(p.choice):!s.atRisk.includes(p.choice)))throw Error('Choose a valid sealed bid or prediction.');e.choice=p.choice;}
  else throw Error('That challenge is not open.');
  e.submitted=true;s.locked[uid]=true;s.revision++;return {accepted:true};
 }
@@ -162,9 +201,15 @@ export function sentenceTrialTabSwitch(s,secret,uid){
 }
 export function tickTrial(s,secret,now=Date.now()){
  const ref=secret.trial;if(!ref||s.stage==='finish'||s.stage==='lobby')return false;
- const everyone=(s.stage==='trial-escape-question'?online(s).filter(p=>!s.escape.caught[p.id]):online(s)).every(p=>s.locked[p.id]);
- if((s.stage==='trial-question'||s.stage==='trial-escape-question')&&everyone&&now-s.stageAt>=(s.stage==='trial-question'?Math.max(6000,Math.min(11000,s.question.prompt.split(/\s+/).length*275+600)):6000)){s.stage==='trial-question'?revealQuestion(s,ref,now):resolveEscape(s,ref,now);return true;}
- if(!s.deadline||now<s.deadline)return false;
+ const participants=s.stage==='trial-escape-question'?online(s).filter(p=>!s.escape.caught[p.id]):online(s);
+ const closeable=['trial-question','trial-escape-question'].includes(s.stage)||s.stage==='trial-challenge'&&s.challenge.kind!=='maths';
+ const everyone=participants.length>0&&participants.every(p=>s.locked[p.id]);let changed=false;
+ if(closeable&&everyone&&s.deadline>now&&!s.settleAt){
+  const read=s.stage==='trial-question'?Math.max(6000,Math.min(11000,s.question.prompt.split(/\s+/).length*275+600)):s.stage==='trial-escape-question'?5000:5500;
+  s.settleAt=Math.min(s.deadline,Math.max(s.stageAt+read,now+1400));s.revision++;changed=true;
+ }
+ if(s.settleAt&&!everyone){s.settleAt=0;s.revision++;changed=true;}
+ if(!s.deadline||now<Math.min(s.deadline,s.settleAt||Infinity))return changed;
  switch(s.stage){
  case 'trial-intro':case 'trial-transition':nextQuestion(s,ref,now);break;
  case 'trial-question':revealQuestion(s,ref,now);break;

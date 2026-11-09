@@ -29,18 +29,19 @@ export class TrialPreviewSession{
      const wrong=this.autoplay?live.slice(0,2).some(v=>v.id===p.id):(s.round+i)%4===0;
      this.send(p.id,'trial-answer',{choice:wrong?s.question.options.find(o=>o.id!==ref.correct).id:ref.correct});changed=true;
     }
+    if(s.stage==='trial-brief'&&s.challenge.kind==='cups'&&ref.poisoners.includes(p.id)&&elapsed>1600+i*150&&e.poison===undefined){this.send(p.id,'trial-poison',{choice:0});changed=true;}
     if(s.stage==='trial-challenge'){
      const kind=s.challenge.kind,defendant=riskOrder.includes(p.id),receipt=trialReceipt(s,this.secret,p.id);
      if(kind==='maths'&&(e.score??0)<6&&elapsed>2200+i*80&&this.now()-(this.lastActions[key]??0)>1500){this.send(p.id,'trial-play',{index:e.index??0,choice:ref.math[(e.index??0)%ref.math.length].correct});this.lastActions[key]=this.now();changed=true;}
      else if(kind==='pulse'&&(e.attempts??0)<3&&elapsed>1000){const wave=(1-Math.cos((elapsed%2600)/2600*2*Math.PI))/2;if(Math.abs(wave-.5)<.115&&this.now()-(this.lastActions[key]??0)>800){this.send(p.id,'trial-play',{});this.lastActions[key]=this.now();changed=true;}}
-     else if(!['maths','pulse'].includes(kind)&&!e.submitted&&elapsed>3100+i*180){
+     else if(kind==='dice'&&!e.submitted&&elapsed>1100+i*120&&this.now()-(this.lastActions[key]??0)>1000){this.send(p.id,'trial-play',{move:(e.score??0)>=8?'bank':'roll'});this.lastActions[key]=this.now();changed=true;}
+     else if(!['maths','pulse','dice'].includes(kind)&&!e.submitted&&elapsed>3100+i*180){
       let answer={};
       if(kind==='memory'){answer.sequence=[...ref.pattern];if(defendant&&p.id===riskOrder.at(-1))answer.sequence=[ref.pattern[1],ref.pattern[0],...ref.pattern.slice(2)];}
       if(kind==='mirror')answer.choice=defendant&&p.id===riskOrder.at(-1)?ref.mirrorOptions.find(o=>o.id!==ref.mirrorCorrect).id:ref.mirrorCorrect;
-      if(kind==='cups')answer.choice=receipt.role==='poisoner'?0:this.autoplay?2:Math.floor(this.botRng()*6);
-      if(kind==='greed')answer.choice=defendant?this.autoplay?'share':i%3===0?'steal':'share':0;
-      if(kind==='bids')answer.choice=defendant?Math.min(p.cash,100+i*40):riskOrder[0];
-      if(kind==='dice')answer.count=2;
+      if(kind==='cups')answer.choice=defendant?(this.autoplay?2:Math.floor(this.botRng()*6)):'none';
+      if(kind==='greed')answer.choice=(defendant||receipt.role==='partner')?this.autoplay?'share':i%3===0?'steal':'share':0;
+      if(kind==='bids')answer.choice=defendant?Math.min(p.cash,s.challenge.soloBail?300:100+i*40):s.challenge.soloBail?'yes':riskOrder[0];
       this.send(p.id,'trial-play',answer);changed=true;
      }
     }
@@ -48,7 +49,7 @@ export class TrialPreviewSession{
      const count=p.id===s.escape.soul&&!s.escape.gate?2:3;let mask=ref.escape.options.slice(0,count).reduce((n,o,j)=>n|(o.correct?1<<j:0),0);
      if(this.autoplay&&p.id===s.escape.soul&&!s.escape.gate&&s.escape.turn%3===0)mask^=1;
      else if(!this.autoplay&&this.botRng()<.17)mask^=1;
-     this.send(p.id,'trial-escape',{mask});changed=true;
+     this.send(p.id,'trial-escape',{mask,judged:(1<<count)-1});changed=true;
     }
    }
    if(tickCourtGame(s,this.secret,this.now(),this.rng))changed=true;if(changed)this.render();if(s.stage==='finish')this.playing=false;

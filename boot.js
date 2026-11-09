@@ -1,5 +1,5 @@
 // Councillion is public. Google sign-in is still enforced by Puffer and its server.
-const VERSION='20261109-trial-mascot-v41';
+const VERSION='20261109-trial-rework-v42';
 document.documentElement.removeAttribute('data-entrance');
 document.querySelector('#entrance')?.remove();
 const script=document.createElement('script');
