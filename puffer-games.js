@@ -6,7 +6,6 @@ import {mountCourtAmbience} from './party-ambience.js';
 
 // Adding a court creates another cove; it never changes existing game routes.
 export const PUFFER_GAMES=[
- {id:'chess',name:'Counsel Chess',tag:'1V1 · 2V2 TEAM CHESS',players:'2–4',color:'#e9d4a1',buddy:'krill',steps:['TAKE YOUR SEAT','MAKE YOUR MOVE','CHECKMATE'],cue:'A fair board. A sharp counsel.',copy:'Play 1v1 or 2v2 with alternating teammates. Shared team clocks, chess ranks, and a full engine review.'},
  {id:'party',name:'Puffer Party',tag:'LAST COUNSEL STANDING',players:'2–6',color:'#86ded6',buddy:'krill',steps:['NAME AN ANSWER','PASS THE PUFFER','STAY ALIVE'],cue:'Keep your counsel. And your hearts.',copy:'Find an answer before the puffer finds you. Every heart counts.'},
  {id:'trial',name:'Trial by Puffer',tag:'SURVIVE · HAUNT · ESCAPE',players:'2–8',color:'#d2b5e9',buddy:'evil',steps:['SURVIVE THE TRIALS','HAUNT YOUR FRIENDS','STEAL A LIFE & ESCAPE'],cue:'Death is not dismissal.',copy:'Trivia buys time. Wrong answers bring a survival trial. Become a ghost, steal a life, and escape the magistrate.'},
  {id:'clash',name:'Counsel Clash',tag:'TEAM FEUD',players:'2–10',color:'#efbf7d',buddy:'squid',steps:['TAKE YOUR BENCH','SURVEY SAYS…','STEAL THE CASE'],cue:'Counsel, survey says…',copy:'Two benches. One survey board. Three strikes and the case can be stolen.'},
@@ -14,7 +13,8 @@ export const PUFFER_GAMES=[
  {id:'docket',name:'The Docket',tag:'CHOOSE · BUZZ · WAGER',players:'2–6',color:'#d2b7f0',buddy:'schooler',steps:['CHOOSE A CLUE','BEAT THE BUZZER','PLACE YOUR WAGER'],cue:'Your category. Your wager.',copy:'Pick a clue, beat the buzzer, and put your points on the record.'},
  {id:'bench',name:'Beat the Bench',tag:'OUTRUN THE JUDGE',players:'2–6',color:'#e8c987',buddy:'krill',steps:['BUILD A LEAD','TAKE THE RISK','OUTRUN THE BENCH'],cue:'Think you can outrun me?',copy:'One crew against the puffer judge. Build a lead, take a risk, and turn his mistakes into your escape.'},
  {id:'testimony',name:'Broken Testimony',tag:'DRAW · GUESS · DERAIL',players:'2–10',color:'#cbb890',buddy:'squid',steps:['PICK YOUR GAME','PASS THE PICTURE','REVEAL THE EVIDENCE'],cue:'The court requests a sketch.',copy:'Drawing telephone, convincing fake captions, and live guessing. The evidence gets ridiculous.'},
- {id:'oath',name:'Under Oath',tag:'ONE SECRET IMPOSTOR',players:'3–6',color:'#efa3a2',buddy:'evil',steps:['CHECK YOUR ROLE','GIVE A CLUE','FIND THE IMPOSTOR'],cue:'This witness needs a little more time.',copy:'One impostor gets a private hint. Everyone else knows the word. Find the bluff.'}
+ {id:'oath',name:'Under Oath',tag:'ONE SECRET IMPOSTOR',players:'3–6',color:'#efa3a2',buddy:'evil',steps:['CHECK YOUR ROLE','GIVE A CLUE','FIND THE IMPOSTOR'],cue:'This witness needs a little more time.',copy:'One impostor gets a private hint. Everyone else knows the word. Find the bluff.'},
+ {id:'chess',name:'Counsel Chess',tag:'1V1 · 2V2 TEAM CHESS',players:'2–4',color:'#e9d4a1',buddy:'krill',steps:['TAKE YOUR SEAT','MAKE YOUR MOVE','CHECKMATE'],cue:'A fair board. A sharp counsel.',copy:'Play 1v1 or 2v2 with alternating teammates. Shared team clocks, chess ranks, and a full engine review.'}
 ];
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const preview=mode=>({party:'<i>♥</i><i>♥</i>',clash:'<i>×</i><i>×</i><i>×</i>',figure:'<i>180</i><i>250</i><i>?</i>',docket:'<i>200</i><i>400</i><i>600</i>',oath:'<i>…</i>'}[mode]??'');
