@@ -46,7 +46,7 @@ export class ChessView{
   this.preferences.name=validateDisplayName(this.root.querySelector('#cch-name').value);this.settings=chessSettings({...CHESS_CONTROLS[Number(this.root.querySelector('#cch-time').value)],rated:true,format:this.root.querySelector('#cch-format').value});this.options.savePreferences?.(this.preferences);const code=this.root.querySelector('#cch-code').value,isPrivate=!this.root.querySelector('#cch-public').checked;this.root.querySelectorAll('.cch-entry button').forEach(b=>b.disabled=true);this.offRooms?.();this.error('Opening the chess court…');
   this.session=new CourtGameSession({mode:'chess',identity:this.identity,authorize:this.options.authorize,getCloud:this.options.getCloud,settings:this.settings,appearance:this.preferences.courtAppearance,onState:(s,session)=>{if(s&&!this.disposed)this.render(s,session);},onError:m=>this.error(m)});
   if(kind==='host')await this.session.create(this.preferences.name,this.preferences.buddy,isPrivate);else await this.session.join(this.preferences.name,code,this.preferences.buddy);
-  if(!this.disposed){history.replaceState(null,'','#chess?room='+this.session.code);this.careers?.close();this.careers=new ChessCareerStore(this.session.c,()=>{if(this.current)this.render(this.current,this.currentSession);});}
+  if(!this.disposed){this.error('');history.replaceState(null,'','#chess?room='+this.session.code);this.careers?.close();this.careers=new ChessCareerStore(this.session.c,()=>{if(this.current)this.render(this.current,this.currentSession);});}
  }catch(e){await this.session?.close();this.session=null;if(!this.disposed){this.setup();this.error(e.message);}}}
  practice(showcase=false){this.offRooms?.();this.session?.close();this.careers?.close();this.careers=null;this.session=new ChessPreviewSession({name:this.preferences.name||'Counsel',buddy:this.preferences.buddy,settings:this.settings,level:this.level,showcase,onState:(s,session)=>this.render(s,session),onError:m=>this.error(m)});this.render(this.session.state,this.session);}
  layout(){
@@ -144,7 +144,7 @@ export class ChessView{
  identityChanged(identity,preferences){
   const changed=this.knownIdentity!==identity?.id;this.knownIdentity=identity?.id;this.preferences={...this.preferences,...preferences};
   if(changed&&this.session&&!this.session.preview){this.session.close();this.session=null;this.careers?.close();this.careers=null;this.current=null;this.hub();}
-  else if(!this.session)this.setup();
+  else if(!this.session&&this.el.dataset.stage==='setup')this.setup();
  }
  async showRecord(){
   if(!this.identity()){this.options.signIn?.();return;}
