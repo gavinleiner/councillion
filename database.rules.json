@@ -373,6 +373,37 @@
         ".write": "auth !== null && auth.token.firebase.sign_in_provider === 'google.com' && auth.uid === $uid",
         ".validate": "newData.isBoolean() && newData.val() === (auth.token.email_verified === true && auth.token.email !== null && auth.token.email.toLowerCase().matches(/.*gavin.*/))"
       }
+    },
+    "chessResults": {
+      ".read": "auth !== null && auth.token.firebase.sign_in_provider === 'google.com'",
+      ".indexOn": [
+        "at"
+      ],
+      "$game": {
+        ".write": "auth !== null && auth.token.firebase.sign_in_provider === 'google.com' && !data.exists() && newData.exists() && root.child('rooms').child(newData.child('room').val()).child('meta/host').val() === auth.uid",
+        ".validate": "newData.hasChildren(['version','room','players','whiteTeam','blackTeam','game','winner','draw','aborted','reason','at','white','black','ply','rated','minutes','increment','pgn','format']) && newData.child('version').val() === 1 && newData.child('game').val() === $game && root.child('rooms').child(newData.child('room').val()).child('meta/game').val() === 'chess' && root.child('rooms').child(newData.child('room').val()).child('state/stage').val() === 'finish' && root.child('rooms').child(newData.child('room').val()).child('state/matchId').val() === $game && newData.child('at').isNumber() && newData.child('at').val() <= now + 5000 && newData.child('at').val() > now - 86400000 && newData.child('pgn').isString() && newData.child('pgn').val().length <= 50000 && newData.child('players').hasChildren(['0','1']) && ((newData.child('format').val() === 'duel' && !newData.child('players/2').exists()) || (newData.child('format').val() === 'doubles' && newData.child('players').hasChildren(['2','3']))) && !newData.child('players/4').exists() && newData.child('game').val() === root.child('rooms').child(newData.child('room').val()).child('state/result').child('game').val() && newData.child('winner').val() === root.child('rooms').child(newData.child('room').val()).child('state/result').child('winner').val() && newData.child('draw').val() === root.child('rooms').child(newData.child('room').val()).child('state/result').child('draw').val() && newData.child('aborted').val() === root.child('rooms').child(newData.child('room').val()).child('state/result').child('aborted').val() && newData.child('reason').val() === root.child('rooms').child(newData.child('room').val()).child('state/result').child('reason').val() && newData.child('at').val() === root.child('rooms').child(newData.child('room').val()).child('state/result').child('at').val() && newData.child('white').val() === root.child('rooms').child(newData.child('room').val()).child('state/result').child('white').val() && newData.child('black').val() === root.child('rooms').child(newData.child('room').val()).child('state/result').child('black').val() && newData.child('ply').val() === root.child('rooms').child(newData.child('room').val()).child('state/result').child('ply').val() && newData.child('rated').val() === root.child('rooms').child(newData.child('room').val()).child('state/result').child('rated').val() && newData.child('minutes').val() === root.child('rooms').child(newData.child('room').val()).child('state/result').child('minutes').val() && newData.child('increment').val() === root.child('rooms').child(newData.child('room').val()).child('state/result').child('increment').val() && newData.child('pgn').val() === root.child('rooms').child(newData.child('room').val()).child('state/result').child('pgn').val() && newData.child('format').val() === root.child('rooms').child(newData.child('room').val()).child('state/result').child('format').val() && newData.child('whiteTeam/0').val() === root.child('rooms').child(newData.child('room').val()).child('state/result').child('whiteTeam/0').val() && newData.child('whiteTeam/1').val() === root.child('rooms').child(newData.child('room').val()).child('state/result').child('whiteTeam/1').val() && newData.child('blackTeam/0').val() === root.child('rooms').child(newData.child('room').val()).child('state/result').child('blackTeam/0').val() && newData.child('blackTeam/1').val() === root.child('rooms').child(newData.child('room').val()).child('state/result').child('blackTeam/1').val()",
+        "players": {
+          "$seat": {
+            ".validate": "$seat.matches(/^[0-3]$/) && newData.hasChildren(['uid','name','buddy','color']) && newData.child('uid').val() === root.child('rooms').child(newData.parent().parent().child('room').val()).child('state/players').child($seat).child('id').val() && newData.child('name').val() === root.child('rooms').child(newData.parent().parent().child('room').val()).child('state/players').child($seat).child('name').val() && newData.child('buddy').val() === root.child('rooms').child(newData.parent().parent().child('room').val()).child('state/players').child($seat).child('buddy').val() && (((newData.child('uid').val() === newData.parent().parent().child('whiteTeam/0').val() || newData.child('uid').val() === newData.parent().parent().child('whiteTeam/1').val()) && newData.child('color').val() === 'w') || ((newData.child('uid').val() === newData.parent().parent().child('blackTeam/0').val() || newData.child('uid').val() === newData.parent().parent().child('blackTeam/1').val()) && newData.child('color').val() === 'b'))",
+            "$field": {
+              ".validate": "$field.matches(/^(uid|name|buddy|color)$/)"
+            }
+          }
+        },
+        "whiteTeam": {
+          "$seat": {
+            ".validate": "$seat.matches(/^[01]$/)"
+          }
+        },
+        "blackTeam": {
+          "$seat": {
+            ".validate": "$seat.matches(/^[01]$/)"
+          }
+        },
+        "$field": {
+          ".validate": "$field.matches(/^(version|room|players|whiteTeam|blackTeam|game|winner|draw|aborted|reason|at|white|black|ply|rated|minutes|increment|pgn|format)$/)"
+        }
+      }
     }
   }
 }

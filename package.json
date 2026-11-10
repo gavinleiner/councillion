@@ -6,7 +6,7 @@
   "scripts": {
     "start": "python3 -m http.server 4173",
     "test": "node --import ./tests/question-data.mjs --test --test-concurrency=2 tests/*.test.js",
-    "build": "node scripts/audit-docket.mjs && node scripts/build-figure-library.mjs --check && node scripts/build-court-library.mjs --check && node scripts/audit-court-library.mjs && npm run check:authored && node scripts/build-reviewed-standard.mjs --check && python3 scripts/apply-reviewed-answer-repairs.py --check && node scripts/check-reviewed-standard.mjs && node scripts/update-question-review-rules.mjs --check && node scripts/update-moderation-rules.mjs --check && node scripts/update-puffer-rules.mjs --check && node scripts/update-focus-rules.mjs --check && node scripts/update-admin-rules.mjs --check && node scripts/layout-platform-art.mjs --check && node build.mjs",
+    "build": "node scripts/audit-docket.mjs && node scripts/build-figure-library.mjs --check && node scripts/build-court-library.mjs --check && node scripts/audit-court-library.mjs && npm run check:authored && node scripts/build-reviewed-standard.mjs --check && python3 scripts/apply-reviewed-answer-repairs.py --check && node scripts/check-reviewed-standard.mjs && node scripts/update-question-review-rules.mjs --check && node scripts/update-moderation-rules.mjs --check && node scripts/update-puffer-rules.mjs --check && node scripts/update-focus-rules.mjs --check && node scripts/update-admin-rules.mjs --check && node scripts/layout-platform-art.mjs --check && node scripts/update-chess-rules.mjs --check && node build.mjs",
     "watch": "node build.mjs --watch",
     "test:security": "firebase emulators:exec --only auth,database --project demo-councillion \"node tests/database-security.mjs && node tests/question-review-network.mjs && node --import ./tests/question-data.mjs tests/admin-network.mjs && node tests/rank-grants-network.mjs && node --import ./tests/question-data.mjs tests/answer-network.mjs && node --import ./tests/question-data.mjs tests/party-network.mjs && node --import ./tests/question-data.mjs tests/party-public-access-network.mjs && node --import ./tests/question-data.mjs tests/party-ranked-network.mjs && node --import ./tests/question-data.mjs tests/party-focus-network.mjs && node --import ./tests/question-data.mjs tests/tournament-network.mjs && node tests/tournament-receipts-network.mjs && node tests/solo-career-network.mjs && node tests/party-stones-network.mjs && node tests/auth-browser.mjs\"",
     "test:answers": "node tests/answer-audit.mjs",
@@ -28,17 +28,23 @@
     "dev:trial": "node dev/trial-bots-server.mjs",
     "test:trial": "node --test tests/trial.test.js",
     "test:trial:browser": "node tests/trial-browser.mjs",
-    "test:trial:network": "firebase emulators:exec --only database --project demo-councillion \"node tests/trial-network.mjs\""
+    "test:trial:network": "firebase emulators:exec --only database --project demo-councillion \"node tests/trial-network.mjs\"",
+    "dev:chess": "node dev/chess-bots-server.mjs",
+    "test:chess": "node --test tests/chess.test.js",
+    "test:chess:network": "firebase emulators:exec --only database --project demo-councillion \"node tests/chess-network.mjs\"",
+    "test:chess:browser": "node tests/chess-browser.mjs"
   },
   "devDependencies": {
     "@firebase/rules-unit-testing": "^5.0.2",
     "esbuild": "^0.25.12",
     "firebase-tools": "^15.34.1",
     "happy-dom": "^21.0.4",
-    "playwright-core": "1.64.1"
+    "playwright-core": "1.64.1",
+    "stockfish": "19.0.1"
   },
   "dependencies": {
     "@firebase/app": "0.16.2",
+    "chess.js": "^1.4.0",
     "firebase": "12.19.0"
   },
   "overrides": {

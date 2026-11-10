@@ -1,0 +1,62 @@
+{
+  "release": "20261109-counsel-chess-v43",
+  "generator": "Built-in imagegen",
+  "style": "Original 16-bit underwater legal court; six recognizable Staunton silhouettes.",
+  "prompts": [
+    {
+      "name": "ivory",
+      "prompt": "Use case: stylized-concept. Asset type: original bitmap sprite sheet for Councillion's multiplayer chess. Make six extremely readable classic Staunton chess pieces in a clean hand-drawn 16-bit pixel-art style, crisp stepped contours and restrained tiny highlights. Orthographic front view, not isometric, not realistic or 3D. Exactly 3 columns and 2 rows, each equal square cell, a landscape canvas with aspect ratio 3:2, preferably 1536 by 1024. Put one complete isolated piece at the center of each cell with matching baseline and generous transparent padding. Grid order: top row KING, QUEEN, ROOK; bottom row BISHOP, KNIGHT, PAWN. King has a simple cross crown, queen a pointed crown, rook battlements, bishop diagonal mitre slit, knight a clear horse head, pawn a round head. All bases face forward. King and queen tallest; pawn visibly shortest. Keep designs simple enough to read on a 56px board square. Subtle underwater legal-court character through tiny gold rings and carved bases, but preserve standard piece recognition. No letters, labels, chessboard, UI, drop shadow backgrounds, or objects outside the six cells. Genuinely transparent background. Piece set: warm ivory bodies, cream faces, antique gold thin trim, dark navy stepped outlines. Slightly cool teal reflected light on the shadow side. All six pieces match one coherent set."
+    },
+    {
+      "name": "obsidian",
+      "prompt": "Use case: stylized-concept. Asset type: original bitmap sprite sheet for Councillion's multiplayer chess. Make six extremely readable classic Staunton chess pieces in a clean hand-drawn 16-bit pixel-art style, crisp stepped contours and restrained tiny highlights. Orthographic front view, not isometric, not realistic or 3D. Exactly 3 columns and 2 rows, each equal square cell, a landscape canvas with aspect ratio 3:2, preferably 1536 by 1024. Put one complete isolated piece at the center of each cell with matching baseline and generous transparent padding. Grid order: top row KING, QUEEN, ROOK; bottom row BISHOP, KNIGHT, PAWN. King has a simple cross crown, queen a pointed crown, rook battlements, bishop diagonal mitre slit, knight a clear horse head, pawn a round head. All bases face forward. King and queen tallest; pawn visibly shortest. Keep designs simple enough to read on a 56px board square. Subtle underwater legal-court character through tiny gold rings and carved bases, but preserve standard piece recognition. No letters, labels, chessboard, UI, drop shadow backgrounds, or objects outside the six cells. Genuinely transparent background. Piece set: dark navy obsidian bodies, slate blue faces, pale desaturated teal edge highlights and understated antique gold thin trim. Clear medium-light outline so pieces remain readable against a dark teal chess square. All six pieces match one coherent set."
+    },
+    {
+      "name": "court",
+      "prompt": "Use case: style-transfer. Asset type: background for Counsel Chess, a Councillion pixel-art multiplayer game. Use the reference only for Councillion's cohesive 16-bit navy, teal, plum, cream and muted gold palette, crisp stepped outlines, underwater legal stonework, coral, and warm lanterns. New wide 16:9 composition, 1672x941 or similar. A quiet submerged royal counsel chamber with two empty velvet-backed seats behind a low broad stone desk, left and right side shelves of law books, carved scales of justice high at center, coral only at the far edges, distant fish visible through the side windows. The central 60 percent of the image is a dark uncluttered arch, no bright props, so a coded chessboard and readable UI can sit there. The desk is low in the image near y78\u201390 percent, with its entire top empty. Keep the room intentionally pixel-drawn at approximately 480x270 logical detail. Calm jewel tones, warm small lamp pools, readable architecture. No actual chessboard, no chess pieces painted into the scene, no characters, no text, no fake UI, no realism, no neon science-fiction machinery.",
+      "referenced_image_paths": [
+        "assets/court-games/trial-evidence-v42.webp"
+      ]
+    },
+    {
+      "name": "board",
+      "prompt": "Create a beautiful finished 16-bit pixel-art CHESS BOARD ASSET for an underwater legal-themed browser chess game, matching the navy, old ivory, restrained gold and clean pixel outlines of the attached existing piece sprites. This is the board surface, absolutely flat TOP-DOWN ORTHOGRAPHIC, perfectly square, no perspective, no objects, NO PIECES, no text, no numbers, no letters, no UI. Most important: EXACTLY EIGHT EQUAL COLUMNS AND EIGHT EQUAL ROWS, exactly 64 equal perfect squares filling the image edge to edge. Each square must occupy exactly 1/8 of width and 1/8 of height. Top-left square is LIGHT ivory, alternating deep midnight teal and warm cream stone in a traditional chess checkerboard. The squares have clean straight boundary edges, no gap between squares. Consistent light/dark contrast. The cream squares are smooth lightly weathered mother-of-pearl inlaid stone, VERY restrained tiny pixel flecks and a modest highlight, not busy. The dark squares are quiet polished navy-teal slate with subtle 16-bit texture. Very tasteful tiny gold corner inlays INSIDE each dark square, not a giant emblem. Precise coherent pixel-art with a few shades and crisp light-catching edge pixels; looks like an excellent handcrafted indie game chessboard, not realistic marble, not a blurry illustration, not a bland two-color CSS pattern. No exterior frame, NO MARGINS, NO extra border: the checkerboard fills the complete image edge-to-edge. Exactly eight equal rows and eight equal columns. Clean readable luxurious chessboard for a cohesive high-quality pixel underwater court.",
+      "referenced_image_paths": [
+        "assets/chess/ivory-v43.png (original generated sheet; production serves WebP)"
+      ]
+    }
+  ],
+  "sources": {
+    "ivory": "exec-1b38c02c-c31d-4d11-ad37-bf2aae92fa40.png",
+    "obsidian": "exec-4775fe55-9ea2-4735-8999-5cace7402643.png",
+    "court": "exec-4378553a-6db8-4b74-a4c6-7efed4a5fea6.png",
+    "board": "exec-39b4d115-981e-434b-a60f-b580079767e3.png"
+  },
+  "assets": [
+    {
+      "name": "ivory",
+      "path": "assets/chess/ivory-v43.webp",
+      "sha256": "ebd894a38d1f5e435445673a8f5856fbcd030b7269ae91493b155c6095ec6aea",
+      "bytes": 274324
+    },
+    {
+      "name": "obsidian",
+      "path": "assets/chess/obsidian-v43.webp",
+      "sha256": "a0c93925919425e6f2a0ceef88c78091e343e793ed0cb7ecb25df52f54f4b5d4",
+      "bytes": 245070
+    },
+    {
+      "name": "court",
+      "path": "assets/chess/court-v43.webp",
+      "sha256": "33383a177b7eeaf5081b863cb4b3b250458ac1cc432fc34d1824b0a4c22e302e",
+      "bytes": 300984
+    },
+    {
+      "name": "board",
+      "path": "assets/chess/board-v43.webp",
+      "sha256": "31392d8460de84146ed3a64427626a4d9b3519ade1d97d5673963d3d20359909",
+      "bytes": 164588
+    }
+  ],
+  "productionExport": "WebP quality 90\u201392, court quality 88. Original image content preserved; only format/encoding changed."
+}

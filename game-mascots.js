@@ -1,6 +1,7 @@
 // Small-grid original mascots share Puffer's outline, wig and eye palette.
 // These identify games; player characters and customization are independent.
 export const GAME_MASCOTS=Object.freeze({
+ chess:{sprite:true,name:"Counsel Chess ivory king"},
  trial:{src:'assets/game-mascots/trial-puffer-v41.svg',name:'Trial by Puffer ghost magistrate'},
  bench:{src:'assets/game-mascots/bench-judge-v40.svg',name:'Beat the Bench judge'},
  testimony:{src:'assets/game-mascots/testimony-artist-v40.svg',name:'Ink the courtroom artist'},
