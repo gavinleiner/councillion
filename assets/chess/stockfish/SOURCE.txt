@@ -1,0 +1,19 @@
+Councillion post-game review uses the unmodified Stockfish.js 19 Lite,
+single-threaded browser engine from npm stockfish@19.0.1.
+Copyright 2026 Chess.com, LLC; Nathan Rugg and Stockfish contributors.
+License: GNU GPL v3. See COPYING.txt in this directory.
+
+Corresponding source and build scripts (v19.0.1):
+  source-v19.0.1.zip (served beside this file)
+  https://github.com/nmrugg/stockfish.js/tree/v19.0.1
+  Commit: 8d9ca57043594a8fa6ae0b73fb685d9105bf51df
+  Build command: node build.js --single-threaded --lite -f
+  Build requirements and Emscripten details are in that source README/build.js.
+Lite neural network by Chris Bao (sscg13):
+  https://tests.stockfishchess.org/nns?network_name=nn-61e7af4bb97d
+  nn-61e7af4bb97d.nnue (served beside this file)
+  https://tests.stockfishchess.org/api/nn/nn-61e7af4bb97d.nnue
+
+Engine runs in its own Worker and is loaded only for a completed-game review.
+Councillion communicates with the unmodified engine through the UCI protocol.
+No Chess.com branding, artwork or proprietary review algorithm is included.

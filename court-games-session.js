@@ -1,3 +1,4 @@
+import {CHESS_BUILD,chessSettings,validChessSettings,normalizeChessState,chessResultReceipt,chessSeatCount} from './chess-engine.js';
 import {TRIAL_BUILD} from './trial-data.js';
 import {trialSettings,validTrialSettings,normalizeTrial,normalizeTrialState,trialReceipt} from './trial-engine.js';
 import {BENCH_BUILD} from './bench-data.js';
@@ -17,15 +18,15 @@ import {validateDisplayName,validateChat,safeDisplayName} from './moderation.js'
 import {requirePartyIdentity} from './party-access.js';
 import {answerTurn,safeDraft,fastLiveAnswer} from './court-games-dialogue.js';
 import {courtAppearance,courtSettings,validCourtSettings} from './court-games-settings.js';
-const clone=o=>JSON.parse(JSON.stringify(o)),values=o=>Object.values(o??{}),build=mode=>(mode==='trial'?TRIAL_BUILD:mode==='bench'?BENCH_BUILD:mode==='testimony'?TESTIMONY_BUILD:mode==='oath'?'20261108-oath-fresh-v34':COURT_GAMES_BUILD)+':'+mode;
+const clone=o=>JSON.parse(JSON.stringify(o)),values=o=>Object.values(o??{}),build=mode=>(mode==='chess'?CHESS_BUILD:mode==='trial'?TRIAL_BUILD:mode==='bench'?BENCH_BUILD:mode==='testimony'?TESTIMONY_BUILD:mode==='oath'?'20261108-oath-fresh-v34':COURT_GAMES_BUILD)+':'+mode;
 const loadCloud=()=>import('./cloud.bundle.js?v=20261106-final-saves-v28');
 function normalizeState(state){
- if(state.variant==='trial')normalizeTrialState(state);if(state.variant==='bench')normalizeBenchState(state);if(state.variant==='testimony')normalizeBTState(state);state.players=values(state.players).map(p=>({...p,name:safeDisplayName(p.name)}));for(const field of ['teamScores','questionIds','history','faceoffPlayers','faceoffTried','fastIds','fastPlayers'])state[field]=values(state[field]);if(state.board)state.board.slots=values(state.board.slots);if(state.variant==='docket'){for(const k of ['categoryIds','cells','finalRows','eligible','tied','finalOrder'])state[k]=values(state[k]);state.attempts??={};state.lockouts??={};if(state.result){state.result.scores=values(state.result.scores);state.result.winners=values(state.result.winners);}}if(state.variant==='oath'){for(const k of ['choices','testimonies','clueOrder'])state[k]=values(state[k]);state.voted??={};state.extendVotes??={};state.advanceReady??={};if(state.roundResult)state.roundResult.rows=values(state.roundResult.rows);if(state.result){state.result.scores=values(state.result.scores);state.result.winners=values(state.result.winners);}}state.locked??={};
+ if(state.variant==='chess')normalizeChessState(state);if(state.variant==='trial')normalizeTrialState(state);if(state.variant==='bench')normalizeBenchState(state);if(state.variant==='testimony')normalizeBTState(state);state.players=values(state.players).map(p=>({...p,name:safeDisplayName(p.name)}));for(const field of ['teamScores','questionIds','history','faceoffPlayers','faceoffTried','fastIds','fastPlayers'])state[field]=values(state[field]);if(state.board)state.board.slots=values(state.board.slots);if(state.variant==='docket'){for(const k of ['categoryIds','cells','finalRows','eligible','tied','finalOrder'])state[k]=values(state[k]);state.attempts??={};state.lockouts??={};if(state.result){state.result.scores=values(state.result.scores);state.result.winners=values(state.result.winners);}}if(state.variant==='oath'){for(const k of ['choices','testimonies','clueOrder'])state[k]=values(state[k]);state.voted??={};state.extendVotes??={};state.advanceReady??={};if(state.roundResult)state.roundResult.rows=values(state.roundResult.rows);if(state.result){state.result.scores=values(state.result.scores);state.result.winners=values(state.result.winners);}}state.locked??={};
  if(state.variant==='figure'&&state.roundResult)state.roundResult.rows=values(state.roundResult.rows).map(r=>({...r,guess:Number.isFinite(r.guess)?r.guess:null,error:Number.isFinite(r.error)?r.error:null}));return state;
 }
 
 export class CourtGameSession{
- constructor({mode,onState=()=>{},onDrafts=()=>{},onError=()=>{},identity=()=>null,authorize,getCloud=loadCloud,clock=()=>Date.now(),appearance={},settings={}}){this.googleId=identity()?.id??null;Object.assign(this,{mode,onState,onDrafts,onError,identity,authorize,getCloud,clock,appearance:courtAppearance(appearance),initialSettings:mode==='trial'?trialSettings(settings):mode==='bench'?benchSettings(settings):mode==='testimony'?btSettings(settings):courtSettings(mode,settings),unsub:[],members:{},drafts:{},responses:{},secret:{estimates:{},fast:{}},processed:new Set(),queue:Promise.resolve(),closed:false,offset:0});this.tabReports={};this.tabExemptions={};this.focus=new PartyFocus({clock:()=>this.now(),eligible:()=>!this.closed&&this.connected&&!focusExempt(this.identity())&&courtFocusEligible(this.state,this.uid)?JSON.stringify({game:this.state.matchId,question:courtFocusKey(this.state)}):null,report:r=>this.reportFocus(r)});this.timer=setInterval(()=>this.tick(),200);}
+ constructor({mode,onState=()=>{},onDrafts=()=>{},onError=()=>{},identity=()=>null,authorize,getCloud=loadCloud,clock=()=>Date.now(),appearance={},settings={}}){this.googleId=identity()?.id??null;Object.assign(this,{mode,onState,onDrafts,onError,identity,authorize,getCloud,clock,appearance:courtAppearance(appearance),initialSettings:mode==='chess'?chessSettings(settings):mode==='trial'?trialSettings(settings):mode==='bench'?benchSettings(settings):mode==='testimony'?btSettings(settings):courtSettings(mode,settings),unsub:[],members:{},drafts:{},responses:{},secret:{estimates:{},fast:{}},processed:new Set(),queue:Promise.resolve(),closed:false,offset:0});this.tabReports={};this.tabExemptions={};this.focus=new PartyFocus({clock:()=>this.now(),eligible:()=>!this.closed&&this.connected&&!focusExempt(this.identity())&&courtFocusEligible(this.state,this.uid)?JSON.stringify({game:this.state.matchId,question:courtFocusKey(this.state)}):null,report:r=>this.reportFocus(r)});this.timer=setInterval(()=>this.tick(),200);}
  now(){return this.clock()+this.offset;}
  path(part=''){return this.c.ref(this.c.db,'rooms/'+this.code+(part?'/'+part:''));}
  fail(e){if(!this.closed)this.onError(partyConnectionError(e));}
@@ -41,7 +42,7 @@ export class CourtGameSession{
   requireGameAvailable(this.mode,this.identity());await this.auth();this.host=true;const m=this.member(name,buddy,true);
   for(let i=0;i<5;i++){
    this.code=Array.from(crypto.getRandomValues(new Uint8Array(4)),x=>'ABCDEFGHJKLMNPQRSTUVWXYZ'[x%24]).join('');
-   this.meta={host:this.uid,hostName:m.name,version:3,protocol:4,format:'classic',catalogBuild:build(this.mode),game:this.mode,mode:'court-game',createdAt:this.now(),isPrivate,seats:GAME_MODES[this.mode].seats,phase:'lobby'};
+   this.meta={host:this.uid,hostName:m.name,version:3,protocol:4,format:'classic',catalogBuild:build(this.mode),game:this.mode,mode:'court-game',createdAt:this.now(),isPrivate,seats:this.mode==='chess'?chessSeatCount(this.initialSettings):GAME_MODES[this.mode].seats,phase:'lobby'};
    this.state=createCourtGame(this.mode,[{id:this.uid,...m,team:0,appearance:this.appearance}]);Object.assign(this.state.settings,this.initialSettings);if(this.mode==='testimony')this.state.hostId=this.uid;this.members={[this.uid]:m};
    try{await this.c.set(this.path(),{meta:this.meta,state:this.state,members:this.members});await this.listen();return this.code;}catch(e){if(i===4)throw e;}
   }
@@ -54,7 +55,7 @@ export class CourtGameSession{
   // Let the host admit the member, then reject an over-capacity waiting room
   // instead of leaving someone on a ready screen with no seat. Rejoining an
   // existing seat is always allowed; in-progress games admit spectators.
-  await new Promise(resolve=>setTimeout(resolve,500));const current=(await this.c.get(this.path('state'))).val();if(current?.stage==='lobby'&&values(current.players).length>=GAME_MODES[this.mode].seats&&!values(current.players).some(p=>p.id===this.uid)){await this.close();await this.c.remove(this.path('members/'+this.uid));throw Error('That courtroom is full. Join another room or ask a friend to host.');}
+  await new Promise(resolve=>setTimeout(resolve,500));const current=(await this.c.get(this.path('state'))).val();if(current?.stage==='lobby'&&values(current.players).length>=(this.mode==='chess'?this.meta.seats:GAME_MODES[this.mode].seats)&&!values(current.players).some(p=>p.id===this.uid)){await this.close();await this.c.remove(this.path('members/'+this.uid));throw Error('That courtroom is full. Join another room or ask a friend to host.');}
  }
  async listen(){
   const c=this.c;
@@ -89,11 +90,11 @@ export class CourtGameSession{
  async syncRoster(){
   if(!this.state||!this.host)return;const before=JSON.stringify(this.state.players),waiting=['lobby','finish'].includes(this.state.stage),players=this.state.players,mode=GAME_MODES[this.mode];
   for(const [id,m]of Object.entries(this.members)){
-   let p=players.find(p=>p.id===id);if(!p){const a=players.filter(p=>p.team===0&&!p.spectator).length,b=players.filter(p=>p.team===1&&!p.spectator).length;p={id,name:safeDisplayName(m.name),buddy:m.buddy,team:a<=b?0:1,score:0,spectator:!waiting};players.push(p);}
+   let p=players.find(p=>p.id===id);if(!p){const a=players.filter(p=>p.team===0&&!p.spectator).length,b=players.filter(p=>p.team===1&&!p.spectator).length;p={id,name:safeDisplayName(m.name),buddy:m.buddy,team:a<=b?0:1,score:0,spectator:!waiting||(this.mode==='chess'&&this.state.stage==='finish')};players.push(p);}
    Object.assign(p,{name:safeDisplayName(m.name),buddy:m.buddy,ready:!!m.ready,online:m.online!==false,connected:m.online!==false||this.now()-(m.lastSeen??0)<30000});
   }
   for(const p of players)if(!this.members[p.id]){p.connected=false;p.ready=false;}
-  if(waiting){this.state.players=players.filter(p=>this.members[p.id]&&p.connected).slice(0,mode.seats);for(const p of this.state.players)p.spectator=false;}
+  if(waiting&&!(this.mode==='chess'&&this.state.stage==='finish')){this.state.players=players.filter(p=>this.members[p.id]&&p.connected).slice(0,this.mode==='chess'?chessSeatCount(this.state.settings):mode.seats);for(const p of this.state.players)p.spectator=false;}
   if(before!==JSON.stringify(this.state.players)){this.state.revision++;await this.broadcast();}
  }
  async broadcast(extra={},publicState=true){
@@ -113,7 +114,7 @@ export class CourtGameSession{
   const directoryKey=JSON.stringify([this.meta.isPrivate,this.state.phase,this.state.players.map(p=>[p.id,p.connected,p.spectator])]);
   if(publicState&&(directoryKey!==this.directoryKey||!this.publishedAt)){this.directoryKey=directoryKey;this.publishedAt=this.now();await this.publish();}
  }
- async publish(){if(!this.host||this.closed)return;const path=this.c.ref(this.c.db,'directory/'+this.code);if(this.meta.isPrivate){await this.c.remove(path);return;}await this.c.onDisconnect(path).remove();return this.c.set(path,{protocol:4,catalogBuild:build(this.mode),mode:'court-game',game:this.mode,format:'classic',hostName:this.meta.hostName,count:this.state.players.filter(p=>p.connected&&!p.spectator).length,seats:GAME_MODES[this.mode].seats,phase:this.state.phase,updatedAt:this.c.serverTimestamp()});}
+ async publish(){if(!this.host||this.closed)return;const path=this.c.ref(this.c.db,'directory/'+this.code);if(this.meta.isPrivate){await this.c.remove(path);return;}await this.c.onDisconnect(path).remove();return this.c.set(path,{protocol:4,catalogBuild:build(this.mode),mode:'court-game',game:this.mode,format:'classic',hostName:this.meta.hostName,count:this.state.players.filter(p=>p.connected&&!p.spectator).length,seats:this.mode==='chess'?chessSeatCount(this.state.settings):GAME_MODES[this.mode].seats,phase:this.state.phase,updatedAt:this.c.serverTimestamp()});}
  async process(uid,r){
   if(!this.host||!r||this.processed.has(r.id)||!this.members[uid]?.online)return;this.processed.add(r.id);if(this.processed.size>1000)this.processed.delete(this.processed.values().next().value);
   // A hand-off may happen after an atomic state/ack write but before the old
@@ -127,10 +128,14 @@ export class CourtGameSession{
    if(a==='appearance'){
     if(!['lobby','finish'].includes(this.state.stage))throw Error('Change your counsel appearance between games.');p.appearance=courtAppearance(r.patch.appearance);this.state.revision++;
    }else if(a==='settings'){
-    if(uid!==this.meta.host)throw Error('Only the host chooses match settings.');if(this.state.stage!=='lobby'&&this.state.stage!=='finish')throw Error('Match settings lock when the game starts.');Object.assign(this.state.settings,(this.mode==='trial'?validTrialSettings(r.patch.settings):this.mode==='bench'?validBenchSettings(r.patch.settings):this.mode==='testimony'?validBTSettings(r.patch.settings):validCourtSettings(this.mode,r.patch.settings)));this.state.revision++;
+    if(uid!==this.meta.host)throw Error('Only the host chooses match settings.');if(this.state.stage!=='lobby'&&this.state.stage!=='finish')throw Error('Match settings lock when the game starts.');if(this.mode==='chess'&&r.patch.settings?.format&&r.patch.settings.format!==this.state.settings.format)throw Error('Host a new room to change between 1v1 and 2v2.');Object.assign(this.state.settings,(this.mode==='chess'?validChessSettings(r.patch.settings):this.mode==='trial'?validTrialSettings(r.patch.settings):this.mode==='bench'?validBenchSettings(r.patch.settings):this.mode==='testimony'?validBTSettings(r.patch.settings):validCourtSettings(this.mode,r.patch.settings)));if(this.mode==='chess'){this.meta.seats=chessSeatCount(this.state.settings);await this.c.update(this.path('meta'),{seats:this.meta.seats});}this.state.revision++;
+   }else if(a==='chess-swap-request'){
+    if(this.mode!=='chess'||this.state.stage!=='lobby'||this.state.settings.format!=='doubles')throw Error('Swap partners in the 2v2 waiting room.');const target=this.state.players.find(q=>q.id===r.patch.target&&!q.spectator&&q.connected!==false&&q.online!==false&&q.team!==p.team);if(!target)throw Error('Choose a connected player from the other bench.');if(this.state.chessSwap)throw Error('Finish the pending swap first.');this.state.chessSwap={from:uid,to:target.id};this.state.revision++;
+   }else if(a==='chess-swap-answer'){
+    const swap=this.state.chessSwap;if(this.mode!=='chess'||this.state.stage!=='lobby'||!swap||![swap.from,swap.to].includes(uid)||typeof r.patch.accept!=='boolean')throw Error('That partner swap is no longer available.');if(r.patch.accept){if(uid!==swap.to)throw Error('Your proposed partner must accept.');const from=this.state.players.find(q=>q.id===swap.from),to=this.state.players.find(q=>q.id===swap.to);if(!from||!to||from.team===to.team||from.connected===false||to.connected===false)throw Error('A player left the bench.');[from.team,to.team]=[to.team,from.team];}delete this.state.chessSwap;this.state.revision++;
    }else if(a==='team'){
-    if(this.mode!=='clash'||!['lobby','finish'].includes(this.state.stage))throw Error('Teams lock when the match begins.');
-    const target=Number(r.patch.team);if(![0,1].includes(target))throw Error('Choose a bench.');if(this.state.players.filter(p=>p.id!==uid&&p.team===target&&p.connected).length>=5)throw Error('That bench is full.');p.team=target;this.state.revision++;
+    if(!(this.mode==='clash'||this.mode==='chess'&&this.state.settings.format==='doubles')||!['lobby','finish'].includes(this.state.stage))throw Error('Teams lock when the match begins.');
+    const target=Number(r.patch.team);if(![0,1].includes(target))throw Error('Choose a bench.');if(this.state.players.filter(p=>p.id!==uid&&p.team===target&&p.connected).length>=(this.mode==='chess'?2:5))throw Error('That bench is full.');p.team=target;this.state.revision++;
    }else if(a==='lobby-rock'){
     if(this.mode!=='clash'||this.state.stage!=='lobby'||p.spectator)throw Error('Save the pebbles for the waiting room.');
     this.lastRock??={};if(this.now()-(this.lastRock[uid]??0)<1200)throw Error('One pebble at a time.');
@@ -145,8 +150,10 @@ export class CourtGameSession{
     if(!['nice','close','clutch','ready'].includes(r.patch.reaction))throw Error('Choose a reaction.');
     if(this.now()-(this.lastReaction?.[uid]??0)<2500)throw Error('Give the reaction a moment.');this.lastReaction??={};this.lastReaction[uid]=this.now();this.state.reaction={id:crypto.randomUUID(),uid,type:r.patch.reaction,at:this.now()};this.state.revision++;
    }else if(r.type==='start'||r.type==='rematch'){
+    if(this.mode==='chess'&&this.state.stage==='finish')throw Error('Every player must request the rematch before the next board opens.');
     if(uid!==this.meta.host)throw Error('Only the host starts the game.');if(!['lobby','finish'].includes(this.state.stage))throw Error('The match is already running.');this.secret={estimates:{},fast:{},...(this.mode==='docket'?{docketRecent:readDocketHistory(this.uid)}:{})};startCourtGame(this.state,this.now(),Math.random,this.secret);for(const id of Object.keys(this.members)){extra['responses/'+id+'/secret']=null;extra['responses/'+id+'/huddle']=null;extra['responses/'+id+'/fastAudience']=null;extra['responses/'+id+'/finalDraft']=null;}
    }else{
+    if(this.mode==='chess'&&a==='chess-rematch'&&!this.state.chess.resultSaved)throw Error('Your result is still saving. Try again in a moment.');
     if(r.patch?.matchId!==this.state.matchId||r.patch?.round!==this.state.round)throw Error('That action belongs to an earlier round.');
     result=actCourtGame(this.state,this.secret,uid,a,{...r.patch,text:r.text,timeout:false},this.now());
     if((result.accepted||result.saved)&&(this.secret.estimates[uid]||this.secret.fast[uid]||this.secret.fastDraft?.[uid]))extra['responses/'+uid+'/secret']={matchId:this.state.matchId,estimate:this.secret.estimates[uid]??null,fast:this.secret.fast[uid]??null,fastDraft:this.secret.fastDraft?.[uid]??null};
@@ -211,11 +218,17 @@ export class CourtGameSession{
   this.lastDraftAt=this.now();this.c.set(this.path('typing/'+this.uid),{text:this.draftText,at:this.c.serverTimestamp(),editedAt:this.draftEditedAt,round:this.state.round,game:this.state.matchId}).catch(()=>{});
  }
  clearDraft(){clearTimeout(this.typingTimer);this.draftText='';if(this.c&&this.uid&&this.code)this.c.remove(this.path('typing/'+this.uid)).catch(()=>{});}
+ async saveChessResult(){
+  if(this.mode!=='chess'||this.state.stage!=='finish'||this.state.chess.resultSaved)return;
+  const receipt=chessResultReceipt(this.state,this.code),path=this.c.ref(this.c.db,'chessResults/'+receipt.game);
+  const prior=(await this.c.get(path)).val();if(!prior){try{await this.c.set(path,receipt);}catch(error){if(!(await this.c.get(path)).exists())throw error;}}
+  if(this.state.matchId===receipt.game){this.state.chess.resultSaved=true;this.state.revision++;await this.broadcast();}
+ }
  async ready(value){await this.c.update(this.path('members/'+this.uid),{ready:!!value});}
  tick(){if(this.closed||!this.state||!this.connected)return;
   if(!this.host){const m=this.members[this.meta?.host];if(m?.online===false&&this.now()-(m.lastSeen??0)>30000&&!this.claiming){this.claiming=true;this.c.runTransaction(this.path('meta/host'),id=>id===this.meta.host?this.uid:undefined,{applyLocally:false}).catch(e=>{if(!permissionDenied(e))this.fail(e);}).finally(()=>this.claiming=false);}return;}
   if(!this.refereeReady){if(!this.hostListening&&(!this.refereeRetryAt||this.now()>=this.refereeRetryAt)){this.refereeRetryAt=this.now()+5000;this.resumeHost();}return;}
-  if(this.ticking)return;this.ticking=true;this.enqueue(async()=>{try{await this.syncRoster();const focus=this.applyFocus();if(tickCourtGame(this.state,this.secret,this.now())||focus){const extra={};for(const [id,rows]of Object.entries(this.secret.fast))extra['responses/'+id+'/secret']={matchId:this.state.matchId,estimate:this.secret.estimates[id]??null,fast:rows};await this.broadcast(extra);}if(!this.publishedAt||this.now()-this.publishedAt>15000){this.publishedAt=this.now();await this.publish();}}finally{this.ticking=false;}});
+  if(this.ticking)return;this.ticking=true;this.enqueue(async()=>{try{await this.syncRoster();if(this.mode==='chess'&&this.state.stage==='finish'&&!this.state.chess.resultSaved&&this.now()>(this.resultRetryAt??0)){try{await this.saveChessResult();}catch(e){this.resultRetryAt=this.now()+3000;this.fail(e);}}const focus=this.applyFocus();if(tickCourtGame(this.state,this.secret,this.now())||focus){const extra={};for(const [id,rows]of Object.entries(this.secret.fast))extra['responses/'+id+'/secret']={matchId:this.state.matchId,estimate:this.secret.estimates[id]??null,fast:rows};await this.broadcast(extra);}if(!this.publishedAt||this.now()-this.publishedAt>15000){this.publishedAt=this.now();await this.publish();}}finally{this.ticking=false;}});
  }
  async close(){
   if(this.closed)return;this.clearDraft();this.closed=true;this.focus.destroy();clearInterval(this.timer);clearInterval(this.heartbeat);clearTimeout(this.draftRetry);clearTimeout(this.finalDraftTimer);clearTimeout(this.oathDraftTimer);for(const off of this.unsub)off();this.unsub=[];

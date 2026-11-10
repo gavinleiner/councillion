@@ -6,6 +6,7 @@ import {mountCourtAmbience} from './party-ambience.js';
 
 // Adding a court creates another cove; it never changes existing game routes.
 export const PUFFER_GAMES=[
+ {id:'chess',name:'Counsel Chess',tag:'1V1 · 2V2 TEAM CHESS',players:'2–4',color:'#e9d4a1',buddy:'krill',steps:['TAKE YOUR SEAT','MAKE YOUR MOVE','CHECKMATE'],cue:'A fair board. A sharp counsel.',copy:'Play 1v1 or 2v2 with alternating teammates. Shared team clocks, chess ranks, and a full engine review.'},
  {id:'party',name:'Puffer Party',tag:'LAST COUNSEL STANDING',players:'2–6',color:'#86ded6',buddy:'krill',steps:['NAME AN ANSWER','PASS THE PUFFER','STAY ALIVE'],cue:'Keep your counsel. And your hearts.',copy:'Find an answer before the puffer finds you. Every heart counts.'},
  {id:'trial',name:'Trial by Puffer',tag:'SURVIVE · HAUNT · ESCAPE',players:'2–8',color:'#d2b5e9',buddy:'evil',steps:['SURVIVE THE TRIALS','HAUNT YOUR FRIENDS','STEAL A LIFE & ESCAPE'],cue:'Death is not dismissal.',copy:'Trivia buys time. Wrong answers bring a survival trial. Become a ghost, steal a life, and escape the magistrate.'},
  {id:'clash',name:'Counsel Clash',tag:'TEAM FEUD',players:'2–10',color:'#efbf7d',buddy:'squid',steps:['TAKE YOUR BENCH','SURVEY SAYS…','STEAL THE CASE'],cue:'Counsel, survey says…',copy:'Two benches. One survey board. Three strikes and the case can be stolen.'},

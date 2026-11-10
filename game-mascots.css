@@ -23,3 +23,5 @@ body.reduced .game-mascot{animation:none!important}
 @keyframes pg-trial-fin{50%{transform:rotate(-6deg) translateY(-.5px)}}
 @keyframes pg-trial-drift{0%{opacity:0;transform:translateY(2px)}25%{opacity:.65}100%{opacity:0;transform:translateY(-3px)}}
 @keyframes pg-trial-glint{0%,57%,64%,100%{opacity:0}58%,63%{opacity:1}}
+
+.game-mascot-chess{display:inline-block;background-image:url('assets/chess/ivory-v43.webp');background-size:300% 200%;background-position:0 0;background-repeat:no-repeat;image-rendering:pixelated;width:96px;height:96px;filter:drop-shadow(0 5px 3px #001c27aa)}
