@@ -1,6 +1,7 @@
 import {chromium} from 'playwright-core';
 import assert from 'node:assert/strict';
 import {mkdir,writeFile} from 'node:fs/promises';
+import {TRIAL_QUESTIONS} from '../trial-data.js';
 const work=process.env.TRIAL_QA_WORK??'/Users/gavin/Documents/Codex/2026-10-21/can-2/work/trial-questions-v44';
 await mkdir(work,{recursive:true});
 const browser=await chromium.launch({executablePath:process.env.CHROME_PATH??'/Users/gavin/Library/Caches/ms-playwright/chromium_headless_shell-1228/chrome-headless-shell-mac-arm64/chrome-headless-shell'});
@@ -42,7 +43,20 @@ try{
   // explanation must remain reachable there, never clipped by overflow:hidden.
   if(width>=1024){assert.ok(layout.mainScroll<=layout.mainHeight+2,JSON.stringify(layout));assert.ok(layout.source<=layout.mainBottom+1);}
   else await p.locator('.tr-answer-reveal>a').scrollIntoViewIfNeeded();
-  report.push({width,height,question,layout});await p.close();
+  let allQuestions;
+  if(width===1024){
+   allQuestions=await p.evaluate(qs=>qs.map(q=>{
+    const session=window.trDemo.session,s=session.state;
+    s.stage='trial-question';s.locked={};session.secret.trial.answers={};
+    s.question={id:q.id,prompt:q.prompt,subject:q.subject,category:q.category,options:[q.answer,...q.distractors].map((text,i)=>({id:String(i),text}))};
+    s.stageAt++;window.trDemo.view.lastKey='';session.render();
+    const main=document.querySelector('.tr-main'),r=main.getBoundingClientRect();
+    return {id:q.id,overflow:main.scrollHeight-main.clientHeight,mainBottom:r.bottom,choicesBottom:Math.max(...[...main.querySelectorAll('.tr-option')].map(b=>b.getBoundingClientRect().bottom))};
+   }),TRIAL_QUESTIONS);
+   assert.equal(allQuestions.length,128);
+   assert.deepEqual(allQuestions.filter(q=>q.overflow>2||q.choicesBottom>q.mainBottom+1),[]);
+  }
+  report.push({width,height,question,layout,...(allQuestions?{allQuestions}: {})});await p.close();
  }
  assert.deepEqual(errors,[]);
  await writeFile(work+'/question-browser.json',JSON.stringify({report,errors},null,2));

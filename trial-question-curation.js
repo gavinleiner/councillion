@@ -26,7 +26,7 @@ export const TRIAL_LEGACY_PICKS=[
  ['racing-lines-5',3,['Nelson Piquet','Emerson Fittipaldi','Felipe Massa']],
  ['racing-lines-alt-3',3,['Lewis Hamilton','Sebastian Vettel','Fernando Alonso']],
  ['big-games-alt-4',3,['Presidents Cup','Solheim Cup','Walker Cup']],
- ['rule-book-5',4,['Offside','High-sticking','Interference']],
+ ['rule-book-5',4,['Offside','High-sticking','Interference'],'An untouched hockey shot travels from behind center ice past the goal line, missing the net. What’s usually called?'],
  ['racket-legends-alt-3',3,['Andy Roddick','Stan Wawrinka','Lleyton Hewitt']],
  ['sunday-stars-alt-3',3,['Barry Sanders','Emmitt Smith','Gale Sayers']],
  // Screen: no character-name clue with three movie titles as decoys.
@@ -111,9 +111,9 @@ export const TRIAL_LEGACY_PICKS=[
 
 export function trialLegacyQuestions(questions){
  const byId=new Map(questions.map(q=>[q.id,q]));
- return TRIAL_LEGACY_PICKS.map(([id,difficulty,distractors])=>{
+ return TRIAL_LEGACY_PICKS.map(([id,difficulty,distractors,prompt])=>{
   const q=byId.get('bench-'+id);
   if(!q)throw Error('Missing curated Trial clue: '+id);
-  return {...q,difficulty,distractors};
+  return {...q,...(prompt?{prompt}:{}),difficulty,distractors};
  });
 }

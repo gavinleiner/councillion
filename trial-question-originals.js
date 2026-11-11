@@ -79,7 +79,7 @@ export const TRIAL_ORIGINAL_QUESTIONS=[
   'Cartilage',['Keratin','Chitin','Dentine'],3,
   'https://www.fisheries.noaa.gov/feature-story/12-shark-facts-may-surprise-you','Cartilage is also the flexible tissue in your nose and ears.'),
  q('moon-daytime','Nature','Why does the sky look black from the Moon even when the ground is in daylight?',
-  'Too little atmosphere to scatter sunlight',['Its dark surface absorbs all the sky’s light','Earth’s shadow always covers its sky','Its slow rotation keeps the sky out of sunlight'],3,
+  'Almost no air to scatter sunlight',['Dark rock absorbs the sky’s light','Earth’s shadow covers the whole sky','Slow rotation blocks the sunlight'],3,
   'https://science.nasa.gov/solar-system/moon/phenomena-nasa-astronauts-will-encounter-at-moons-south-pole/','Earth’s atmosphere scatters light across the sky. The Moon’s extremely thin atmosphere cannot create that blue sky.'),
 
  q('baking-powder','Everyday','Why can baking powder raise a cake batter without adding sour milk or lemon juice?',
