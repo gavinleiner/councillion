@@ -32,7 +32,11 @@
     "dev:chess": "node dev/chess-bots-server.mjs",
     "test:chess": "node --test tests/chess.test.js",
     "test:chess:network": "firebase emulators:exec --only database --project demo-councillion \"node tests/chess-network.mjs\"",
-    "test:chess:browser": "node tests/chess-browser.mjs"
+    "test:chess:browser": "node tests/chess-browser.mjs",
+    "dev:objection": "node dev/objection-bots-server.mjs",
+    "test:objection": "node --test tests/objection.test.js",
+    "test:objection:network": "firebase emulators:exec --only database --project demo-councillion \"node tests/objection-network.mjs\"",
+    "test:objection:browser": "node tests/objection-browser.mjs"
   },
   "devDependencies": {
     "@firebase/rules-unit-testing": "^5.0.2",

@@ -11,13 +11,13 @@ export const PUFFER_GAMES=[
  {id:'clash',name:'Counsel Clash',tag:'TEAM FEUD',players:'2–10',color:'#efbf7d',buddy:'squid',steps:['TAKE YOUR BENCH','SURVEY SAYS…','STEAL THE CASE'],cue:'Counsel, survey says…',copy:'Two benches. One survey board. Three strikes and the case can be stolen.'},
  {id:'figure',name:'Final Figure',tag:'CLOSEST WINS',players:'2–8',color:'#a6cfec',buddy:'angler',steps:['MAKE YOUR GUESS','SEAL IT','CLOSEST WINS'],cue:'A precise guess. Or a very lucky one.',copy:'Everyone seals a number. The closest estimate takes the verdict.'},
  {id:'docket',name:'The Docket',tag:'CHOOSE · BUZZ · WAGER',players:'2–6',color:'#d2b7f0',buddy:'schooler',steps:['CHOOSE A CLUE','BEAT THE BUZZER','PLACE YOUR WAGER'],cue:'Your category. Your wager.',copy:'Pick a clue, beat the buzzer, and put your points on the record.'},
- {id:'bench',name:'Beat the Bench',tag:'OUTRUN THE JUDGE',players:'2–6',color:'#e8c987',buddy:'krill',steps:['BUILD A LEAD','TAKE THE RISK','OUTRUN THE BENCH'],cue:'Think you can outrun me?',copy:'One crew against the puffer judge. Build a lead, take a risk, and turn his mistakes into your escape.'},
+ {id:'objection',name:'Objection!',tag:'PLAY · BLUFF · OBJECT',players:'2–6',color:'#e8c987',buddy:'krill',steps:['MATCH THE CARD','CALL YOUR LAST CARD','OBJECT TO A BLUFF'],cue:'That +4 looks suspicious.',copy:'A full table. A secret hand. Match colors, reverse the case, and call Objection before your last card.'},
  {id:'testimony',name:'Broken Testimony',tag:'DRAW · GUESS · DERAIL',players:'2–10',color:'#cbb890',buddy:'squid',steps:['PICK YOUR GAME','PASS THE PICTURE','REVEAL THE EVIDENCE'],cue:'The court requests a sketch.',copy:'Drawing telephone, convincing fake captions, and live guessing. The evidence gets ridiculous.'},
  {id:'oath',name:'Under Oath',tag:'ONE SECRET IMPOSTOR',players:'3–6',color:'#efa3a2',buddy:'evil',steps:['CHECK YOUR ROLE','GIVE A CLUE','FIND THE IMPOSTOR'],cue:'This witness needs a little more time.',copy:'One impostor gets a private hint. Everyone else knows the word. Find the bluff.'},
  {id:'chess',name:'Counsel Chess',tag:'1V1 · 2V2 TEAM CHESS',players:'2–4',color:'#e9d4a1',buddy:'krill',steps:['TAKE YOUR SEAT','MAKE YOUR MOVE','CHECKMATE'],cue:'A fair board. A sharp counsel.',copy:'Play 1v1 or 2v2 with alternating teammates. Shared team clocks, chess ranks, and a full engine review.'}
 ];
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const preview=mode=>({party:'<i>♥</i><i>♥</i>',clash:'<i>×</i><i>×</i><i>×</i>',figure:'<i>180</i><i>250</i><i>?</i>',docket:'<i>200</i><i>400</i><i>600</i>',oath:'<i>…</i>'}[mode]??'');
+const preview=mode=>({objection:'<i>+2</i><i>↶</i><i>+4</i>',party:'<i>♥</i><i>♥</i>',clash:'<i>×</i><i>×</i><i>×</i>',figure:'<i>180</i><i>250</i><i>?</i>',docket:'<i>200</i><i>400</i><i>600</i>',oath:'<i>…</i>'}[mode]??'');
 
 export function mountPufferGames(root,{games=PUFFER_GAMES,identity=()=>null}={}){
  document.body.dataset.screen='games';
