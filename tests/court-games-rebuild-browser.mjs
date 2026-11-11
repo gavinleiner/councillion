@@ -1,3 +1,4 @@
+import {returningVisitor} from './returning-visitor.mjs';
 import {chromium} from 'playwright-core';
 import assert from 'node:assert/strict';
 import {mkdir,writeFile} from 'node:fs/promises';
@@ -7,7 +8,7 @@ const browser=await chromium.launch({executablePath:process.env.CHROME_PATH||'/A
 try{
  const p=await browser.newPage({viewport:{width:1366,height:650}});p.on('pageerror',e=>errors.push(e.message));
  await p.route('**/*',r=>/^http:\/\/(localhost|127\.0\.0\.1):/.test(r.request().url())?r.continue():r.abort());
- await p.goto('http://localhost:4173/#clash');await p.locator('#cg-name').waitFor();
+ await returningVisitor(p);await p.goto('http://localhost:4173/#clash');await p.locator('#cg-name').waitFor();
  await p.evaluate(async()=>{
   const {CourtGameView}=await import('/court-games-view.js'),E=await import('/court-games-engine.js'),D=await import('/court-games-data.js');
   let now=Date.now(),s,secret,view;const calls=[];

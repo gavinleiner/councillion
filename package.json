@@ -36,7 +36,9 @@
     "dev:objection": "node dev/objection-bots-server.mjs",
     "test:objection": "node --test tests/objection.test.js",
     "test:objection:network": "firebase emulators:exec --only database --project demo-councillion \"node tests/objection-network.mjs\"",
-    "test:objection:browser": "node tests/objection-browser.mjs"
+    "test:objection:browser": "node tests/objection-browser.mjs",
+    "test:support": "node --test tests/daily-support.test.js",
+    "test:support:browser": "node tests/daily-support-browser.mjs"
   },
   "devDependencies": {
     "@firebase/rules-unit-testing": "^5.0.2",

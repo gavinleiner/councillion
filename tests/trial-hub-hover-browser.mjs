@@ -1,3 +1,4 @@
+import {returningVisitor} from './returning-visitor.mjs';
 import {chromium} from 'playwright-core';
 import assert from 'node:assert/strict';
 import {mkdir,writeFile} from 'node:fs/promises';
@@ -10,7 +11,7 @@ try{
  for(const [width,height] of [[1366,768],[1280,600],[1024,600],[390,844]]){
   const page=await browser.newPage({viewport:{width,height}});
   page.on('pageerror',error=>errors.push(error.message));
-  await page.goto('http://localhost:4173/#trial');
+  await returningVisitor(page);await page.goto('http://localhost:4173/#trial');
   const door=page.getByRole('button',{name:'Enter the Trial by Puffer courthouse'});
   await door.waitFor();await page.evaluate(()=>document.fonts.ready);
   const before=await door.boundingBox();

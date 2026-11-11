@@ -1,8 +1,9 @@
+import {returningVisitor} from './returning-visitor.mjs';
 import {chromium} from 'playwright-core';
 import assert from 'node:assert/strict';
 const browser=await chromium.launch({executablePath:process.env.CHROME_PATH||'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',headless:true}),errors=[];
 try{
- const p=await browser.newPage({viewport:{width:1280,height:720}});p.on('pageerror',e=>errors.push(e.message));await p.route('**/*',r=>/^http:\/\/(localhost|127\.0\.0\.1):/.test(r.request().url())?r.continue():r.abort());await p.goto('http://localhost:4173/#figure');await p.locator('.ff-hub').waitFor();
+ const p=await browser.newPage({viewport:{width:1280,height:720}});p.on('pageerror',e=>errors.push(e.message));await p.route('**/*',r=>/^http:\/\/(localhost|127\.0\.0\.1):/.test(r.request().url())?r.continue():r.abort());await returningVisitor(p);await p.goto('http://localhost:4173/#figure');await p.locator('.ff-hub').waitFor();
  await p.evaluate(async()=>{
   const {CourtGameView}=await import('/court-games-view.js'),E=await import('/court-games-engine.js'),D=await import('/court-games-data.js');
   const players=Array.from({length:4},(_,i)=>({id:'p'+i,name:['Nori','Pearl','Reef','Coral'][i],buddy:['krill','squid','angler','schooler'][i],ready:true,online:true,connected:true})),s=E.createCourtGame('figure',players),secret={estimates:{},fast:{}},session={uid:'p0',code:'TEST',host:true,connected:true,response:{},now:()=>window.f.now,close(){},request:async()=>{}};
