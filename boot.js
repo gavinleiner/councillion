@@ -1,6 +1,6 @@
 import {mountDailySupport} from './daily-support.js';
 // The daily support visit happens before timers, room connections or auth UI.
-const VERSION='20261111-daily-support-v48';
+const VERSION='20261111-support-reef-v49';
 document.documentElement.removeAttribute('data-entrance');
 document.querySelector('#entrance')?.remove();
 function startGame(){
