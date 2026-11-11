@@ -1,0 +1,38 @@
+{
+  "generator": "Built-in image_gen.imagegen",
+  "created": "2026-11-11",
+  "assets": [
+    {
+      "asset": "hub-v45",
+      "prompt": "Use case: stylized-concept. Asset type: wide 16:9 pixel-art videogame background, no UI. Create the NEW Objection card-parlor hub for Councillion, an underwater Future Counsel law-themed party game. Image 1 and 2 are STYLE references ONLY: match their crisp outlined stonework, blue-teal pixel clusters, restrained golden legal ornament, purple coral, warm lanterns and exact level of 16-bit game illustration detail. Do not copy the old court or chess layout. New composition: a charming submerged law-library card club, a welcoming wide central arch, shelves of case books and blank sealed envelopes on the side walls, a brass scales-of-justice crest above. A large dark emerald felt oval card table in the lower-middle is the main destination, carved dark oak trim, six simple burgundy chairs placed around it. Mostly empty center and upper-middle negative space for real interface text. Small shells, coral, little bubbles in the edges, cozy amber lamps, ocean windows. No characters, no playing cards, no writing, no lettering, no logos, no buttons, no HUD, no number markings. Distinct pixel clusters, limited coherent game palette, hard-edged outlines; NOT realistic, NOT a 3D render, NOT huge mosaic blocks, NOT oversharpened microtexture. The room must look like a place the existing shrimp characters belong in. Landscape 16:9.",
+      "original": "exec-ba62e45d-d530-492d-a2e6-d936af97477a.png",
+      "path": "assets/objection/hub-v45.webp",
+      "sha256": "07e36234b0a9d1a5e2d76eeb41d072619771cfaf312bf609e7c28c1a3985b3ea",
+      "processing": "PNG to WebP format conversion only; no content edits"
+    },
+    {
+      "asset": "table-v45",
+      "prompt": "Use case: stylized-concept. Asset type: gameplay background for Objection, a pixel-art underwater court card game. The reference is the approved Objection hub and defines the exact art style and room. Create a complementary 16:9 elevated three-quarter view looking DOWN toward a very large oval emerald/blue-green felt card table in the same submerged law-library club. The table dominates the CENTER, occupying roughly 65% of the image width and 58% of the image height, center at 50% horizontal and 52% vertical, with a broad empty unobstructed felt surface for game cards. The room's blue stone floor and warm brass trim surround it; small law-book shelves, scales of justice and warm lamps frame the corners. Six burgundy chairs outside the table, well apart, not across the empty felt. Keep top and bottom perimeter comparatively simple for player nameplates and a hand of real playable cards. Same precise hand-placed-looking pixel clusters, outlined 16-bit style and medium texture detail as the reference. No characters, no playing cards, no writing or labels, no interface, no photorealism, no 3D-render look, no immense block pixels. Deep teal/blue palette, restrained amethyst coral, warm honey lamp lights. Distinct playable composition, not a copy of the hub framing.",
+      "original": "exec-d5d4e077-0e0d-4c36-85f1-dc85d8c78bf1.png",
+      "path": "assets/objection/table-v45.webp",
+      "sha256": "96d547c969b1f2a157e2e7fad88d436d11b08118e84d68580170eeadb095f56b",
+      "processing": "PNG to WebP format conversion only; no content edits"
+    },
+    {
+      "asset": "dealer-atlas-v45",
+      "prompt": "Use case: stylized-concept. Asset type: transparent videogame sprite atlas for Objection, the Councillion underwater law-themed card game. The reference shrimp is a STYLE AND PIXEL-SCALE REFERENCE, not the species to draw. Create one ORIGINAL little golden pufferfish card dealer wearing a small cream barrister wig and a dark teal robe, with simple big cream eyes, a confident cheeky expression, a little fan of four tiny blank red/gold/green/blue cards. Match the reference's bold dark navy pixel outline, discrete 2-3 shade clusters per material, compact silhouette, flat 32-to-48-pixel effective detail, no fine texture. It must be about as simple and readable as the reference shrimp, NOT rendered realistically or over-detailed. EXACT LAYOUT: an evenly spaced 3-column by 2-row atlas, six identical square cells, one whole character in each, same scale, same centered body position and identical costume, generous clear padding in every cell. Cell 1 top-left: idle smiling with card fan. Cell 2 top-middle: identical idle with eyes closed for blink. Cell 3 top-right: presenting a single blank playing card toward viewer. Cell 4 bottom-left: happily throwing a card to the table. Cell 5 bottom-middle: raising a small golden gavel, mouth open calling an objection. Cell 6 bottom-right: cheering with fins up and cards still in one fin. All six must have complete body/fin/wig visible, no objects crossing cell boundaries. No labels, no lettering, no logos, no cell outlines. Genuinely transparent background. Output wide atlas 3:2 with six square cells.",
+      "original": "exec-885da53c-4c43-4e40-8c56-8dd9818a6bd3.png",
+      "path": "assets/objection/dealer-atlas-v45.webp",
+      "sha256": "7e8c7f30864ad5c37272109a5bcbd89706c7715528632d7f81e9ffcefe5a042a",
+      "processing": "PNG to WebP format conversion only; no content edits"
+    },
+    {
+      "asset": "card-back-v45",
+      "prompt": "Use case: stylized-concept. Asset type: one portrait playing-card BACK for Objection, an original Councillion law-themed underwater card game. This must be a flat 2D game sprite, front-on, no perspective, no desk, no shadow outside it. A rectangular midnight teal card with a thick cream-gold pixel border, clipped square corners, restrained golden symmetrical flourishes, and a central simple emblem combining a small scales of justice with a fan of four red/gold/jade/azure cards. Match the reference's bold navy pixel outlines, simple shaded clusters and 16-bit game style. Elegant, legible at 64 pixels wide. The emblem and ornament should feel drawn as one coherent card, not photoreal or an ornate AI poster. No lettering, no words, no numbers, no UNO branding, no logos or watermarks. Full card visible with a small transparent margin. Portrait 2:3 composition, genuinely transparent exterior.",
+      "original": "exec-7c5d4ffe-cf68-4722-9dc2-be08cdda7111.png",
+      "path": "assets/objection/card-back-v45.webp",
+      "sha256": "ed0359aa75daa4810e5f43a04446e6866636911366239f26dceca692b5473590",
+      "processing": "PNG to WebP format conversion only; no content edits"
+    }
+  ]
+}

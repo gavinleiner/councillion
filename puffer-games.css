@@ -117,3 +117,5 @@ body.reduced .pg-mascot-lids{transform:scaleY(0)!important}
 /* Game descriptions must not block the paged cove navigation. */
 .pg-bottom{pointer-events:none}
 .pg-wings{top:49%;left:0;right:0;bottom:auto;transform:none;justify-content:space-between;height:0;padding:0 25px;pointer-events:none;z-index:6}.pg-wings button{pointer-events:auto;width:38px;height:43px;padding:0;font-size:32px;background:#0b2d3ca8;border-color:#9bb4a688;line-height:1}.pg-wings>span{position:absolute;left:27px;top:51px;width:34px;text-align:center;font-size:9px;color:#a5b8ac}@media(max-width:620px){.pg-wings{padding:0 13px}.pg-wings button{width:32px;height:39px;font-size:28px}.pg-wings>span{left:12px;top:47px}}
+
+[data-game=objection] .pg-mascot-emotes i{font-size:16px;color:#eed6a0;background:#174a50;border:1px solid #cfb57480;padding:3px 5px}
