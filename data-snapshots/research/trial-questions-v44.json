@@ -229,7 +229,7 @@
       "id": "trial-v44-moon-daytime",
       "subject": "Nature",
       "prompt": "Why does the sky look black from the Moon even when the ground is in daylight?",
-      "answer": "Too little atmosphere to scatter sunlight",
+      "answer": "Almost no air to scatter sunlight",
       "difficulty": 3,
       "source": "https://science.nasa.gov/solar-system/moon/phenomena-nasa-astronauts-will-encounter-at-moons-south-pole/",
       "explanation": "Earth’s atmosphere scatters light across the sky. The Moon’s extremely thin atmosphere cannot create that blue sky."
