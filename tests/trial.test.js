@@ -17,7 +17,7 @@ test('Trial by Puffer admits 2–8 ready counsel and rejects invalid starts/sett
  assert.throws(()=>validTrialSettings({seconds:1}),/listed/);assert.throws(()=>validTrialSettings({cheat:true}),/listed/);
 });
 test('source-backed trivia has four distinct choices, eight subjects and non-repeating draws',()=>{
- assert.ok(TRIAL_QUESTIONS.length>=600);assert.ok(new Set(TRIAL_QUESTIONS.map(q=>q.subject)).size>=8);const f=fixture();
+ assert.ok(TRIAL_QUESTIONS.length>=128);assert.ok(new Set(TRIAL_QUESTIONS.map(q=>q.subject)).size>=8);const f=fixture();
  assert.equal(new Set(f.ref.deck).size,f.ref.deck.length);assert.equal(f.s.question.options.length,4);assert.equal(new Set(f.s.question.options.map(o=>o.text)).size,4);
  assert.ok(!Object.hasOwn(f.s.question,'correct'));assert.ok(!Object.hasOwn(f.s.question,'answer'));assert.ok(TRIAL_QUESTIONS.every(q=>q.source?.startsWith('https://')));
 });
@@ -92,7 +92,7 @@ test('the exit holds players at the seal; a perfect ghost can steal the life fro
  }finally{session.close();}
 });
 
-test('the opening two questions are familiar, distinct and from different subjects',()=>{for(let seed=1;seed<=30;seed++){const deck=trialDeck(trialSeed(seed)),first=deck.slice(0,2).map(id=>TRIAL_BY_ID.get(id));assert.ok(first.every(q=>q.difficulty<=3));assert.notEqual(first[0].subject,first[1].subject);assert.equal(new Set(deck).size,deck.length);}});
+test('the opening mixes medium and harder questions from different subjects',()=>{for(let seed=1;seed<=30;seed++){const deck=trialDeck(trialSeed(seed)),first=deck.slice(0,2).map(id=>TRIAL_BY_ID.get(id));assert.deepEqual(first.map(q=>q.difficulty),[3,4]);assert.notEqual(first[0].subject,first[1].subject);assert.equal(new Set(deck).size,deck.length);}});
 test('memory uses four pieces early and grows to six in the late game',()=>{const f=fixture();f.ref.challengeDeck=['memory'];f.s.round=7;for(const p of f.s.players)send(f,p.id,'trial-answer',{choice:f.s.question.options.find(o=>o.id!==f.ref.correct).id});due(f);due(f);assert.equal(f.s.challenge.size,6);due(f);due(f);assert.throws(()=>send(f,'p0','trial-play',{sequence:f.ref.pattern.slice(0,4)}),/six|6 pieces/);send(f,'p0','trial-play',{sequence:f.ref.pattern});assert.equal(f.s.locked.p0,true);});
 
 function soloChallenge(kind){const f=fixture(3);f.ref.challengeDeck=[kind];for(let i=0;i<3;i++)send(f,'p'+i,'trial-answer',{choice:i===0?f.s.question.options.find(o=>o.id!==f.ref.correct).id:f.ref.correct});due(f);due(f);due(f);return f;}

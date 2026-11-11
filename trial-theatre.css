@@ -71,3 +71,16 @@
  .tr-game .tr-winner{height:60px}.tr-game .tr-winner :is(img,svg){width:58px!important;height:58px!important}
  .tr-game .tr-ending h1{font-size:36px}.tr-game .tr-final-scores{gap:5px}
 }
+
+/* Short context appears only after answers are unsealed. */
+.tr-game .tr-answer-context{font-size:clamp(14px,1.3vw,18px);line-height:1.35;color:#bed3d7;max-width:720px;margin:0 auto 12px!important;text-wrap:pretty}
+.tr-game[data-stage=trial-answer-reveal] .tr-answer-seal{width:40px;height:40px;font-size:28px;margin-bottom:6px}
+.tr-game .tr-answer-reveal .tr-verdict-chips{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));max-width:800px;width:100%;margin:7px auto 9px}
+.tr-game .tr-answer-reveal .tr-verdict-chips>span{min-width:0;padding:6px 8px}
+@media(max-height:700px) and (min-width:800px){
+ .tr-game[data-stage=trial-answer-reveal] .tr-answer-seal{display:none}
+ .tr-game .tr-answer-reveal h1{font-size:32px;margin-bottom:6px}
+ .tr-game .tr-answer-context{font-size:14px;margin-bottom:7px!important}
+ .tr-game .tr-answer-personal{font-size:16px;margin-bottom:8px!important}
+}
+@media(max-width:620px){.tr-game .tr-answer-reveal .tr-verdict-chips{grid-template-columns:repeat(2,minmax(0,1fr))}}

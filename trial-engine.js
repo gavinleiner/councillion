@@ -30,7 +30,7 @@ function nextQuestion(s,ref,now){
 function revealQuestion(s,ref,now){
  const q=TRIAL_BY_ID.get(s.question.id);s.atRisk=[];s.trialRows=[];
  for(const p of trialPlayers(s)){const answer=ref.answers[p.id],right=answer===ref.correct&&!ref.forfeits[p.id];if(right){p.cash+=1000;p.score+=1000;s.stats[p.id].correct++;}else if(p.alive)s.atRisk.push(p.id);s.trialRows.push({id:p.id,choice:answer??null,correct:right,ghost:!p.alive,points:right?1000:0});}
- s.answerReveal={correct:ref.correct,text:q.answer,source:q.source};s.history.push({kind:'trivia',round:s.round,id:q.id,...s.answerReveal,rows:copy(s.trialRows)});
+ s.answerReveal={correct:ref.correct,text:q.answer,source:q.source,explanation:q.explanation??''};s.history.push({kind:'trivia',round:s.round,id:q.id,...s.answerReveal,rows:copy(s.trialRows)});
  phase(s,'trial-answer-reveal',now,T.answerReveal);event(s,'answer',s.atRisk.length?s.atRisk.length+' living counsel face the survival floor.':'Everyone living is safe. The magistrate is disappointed.',now);
 }
 function mathTask(ref){const a=2+integer(ref,18),b=2+integer(ref,12),op=integer(ref,3);const answer=op===0?a+b:op===1?a*b:a+b-b%3;const prompt=op===0?a+' + '+b:op===1?a+' × '+b:a+' + '+b+' − '+b%3;const choices=new Set([answer]);while(choices.size<4)choices.add(answer+(integer(ref,11)-5||6));const options=shuffle([...choices],ref).map((text,i)=>({id:String(i),text:String(text)}));return {prompt,options,correct:options.find(o=>Number(o.text)===answer).id};}
