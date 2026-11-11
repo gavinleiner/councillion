@@ -26,4 +26,7 @@ body.reduced .game-mascot{animation:none!important}
 
 .game-mascot-chess{display:inline-block;background-image:url('assets/chess/ivory-v43.webp');background-size:300% 200%;background-position:0 0;background-repeat:no-repeat;image-rendering:pixelated;width:96px;height:96px;filter:drop-shadow(0 5px 3px #001c27aa)}
 
-.game-mascot-objection{display:inline-block;background:url('assets/objection/dealer-atlas-v45.webp') 0 0/300% 200% no-repeat;image-rendering:pixelated;animation:ob-mascot-blink 7.8s steps(1,end) infinite}@keyframes ob-mascot-blink{0%,43%,47%,100%{background-position:0 0}44%,46%{background-position:50% 0}}@media(prefers-reduced-motion:reduce){.game-mascot-objection{animation:none}}
+.game-mascot-objection{display:inline-block;width:96px;height:96px;background:url('assets/objection/dealer-atlas-v45.webp') 0 0/300% 200% no-repeat;image-rendering:pixelated;animation:ob-mascot-blink 7.8s steps(1,end) infinite}@keyframes ob-mascot-blink{0%,43%,47%,100%{background-position:0 0}44%,46%{background-position:50% 0}}@media(prefers-reduced-motion:reduce){.game-mascot-objection{animation:none}}
+
+/* Background sprites have no intrinsic image dimensions. Fit the hub perch. */
+.pg-door-character>.game-mascot-objection{width:100%;height:100%}
