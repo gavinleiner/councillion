@@ -1,10 +1,11 @@
+import {returningVisitor} from './returning-visitor.mjs';
 import {chromium} from 'playwright-core';
 import assert from 'node:assert/strict';
 const browser=await chromium.launch({executablePath:process.env.CHROME_PATH||'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',headless:true}),errors=[];
 try{
  const p=await browser.newPage();p.on('pageerror',e=>errors.push(e.message));await p.route('**/*',r=>/^http:\/\/(localhost|127\.0\.0\.1):/.test(r.request().url())?r.continue():r.abort());
  for(const viewport of [{width:1366,height:768},{width:1280,height:720},{width:1024,height:768},{width:390,height:844}]){
-  await p.setViewportSize(viewport);await p.goto('http://localhost:4173/?opening='+viewport.width+'#figure');await p.locator('#cg-name').waitFor();
+  await p.setViewportSize(viewport);await returningVisitor(p);await p.goto('http://localhost:4173/?opening='+viewport.width+'#figure');await p.locator('#cg-name').waitFor();
   await p.evaluate(async()=>{
    const {CourtGameView}=await import('/court-games-view.js'),E=await import('/court-games-engine.js');
    const s=E.createCourtGame('figure',[0,1].map(i=>({id:'p'+i,name:'Counsel '+i,ready:true,connected:true,buddy:'krill'}))),secret={},session={uid:'p0',code:'TEST',host:true,connected:true,response:{},now:()=>Date.now(),close(){},request:async()=>{}};

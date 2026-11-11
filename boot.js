@@ -1,7 +1,9 @@
-// Councillion is public. Google sign-in is still enforced by Puffer and its server.
-const VERSION='20261111-objection-style-v47';
+import {mountDailySupport} from './daily-support.js';
+// The daily support visit happens before timers, room connections or auth UI.
+const VERSION='20261111-daily-support-v48';
 document.documentElement.removeAttribute('data-entrance');
 document.querySelector('#entrance')?.remove();
+function startGame(){
 const script=document.createElement('script');
 script.src='game.bundle.js?v='+VERSION;
 script.onerror=()=>{
@@ -10,3 +12,5 @@ script.onerror=()=>{
  document.querySelector('#retry-game-load').onclick=()=>location.reload();
 };
 document.head.append(script);
+}
+mountDailySupport({onContinue:startGame});
