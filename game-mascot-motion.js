@@ -24,8 +24,8 @@ function animateArt(text,mode){
  if(mode==='oath'){const paths=[...svg.querySelectorAll('path')],i=paths.findIndex(p=>p.getAttribute('d').startsWith('M1 12'));if(i>=0)group(paths.slice(i,i+4),'pg-oath-book');}
  const [fill,d]=lids[mode],blink=node('g',{class:'pg-mascot-lids'});blink.append(node('path',{fill,d}));(mode==='trial'?svg.querySelector('.pg-trial-body')??svg:svg).append(blink);return svg;
 }
-export function enhanceGameMascots(root,signal){
- return Promise.all([...root.querySelectorAll('.pg-door .game-mascot')].map(async img=>{
+export function enhanceGameMascots(root,signal,{selector='.pg-door .game-mascot'}={}){
+ return Promise.all([...root.querySelectorAll(selector)].map(async img=>{
   const mode=Object.keys(GAME_MASCOTS).find(key=>img.classList.contains('game-mascot-'+key));if(!mode||img.localName!=='img')return;
   const src=GAME_MASCOTS[mode].src;if(!src.endsWith('.svg'))return;
   if(!sources.has(src))sources.set(src,fetch(src).then(r=>{if(!r.ok)throw Error('Mascot unavailable.');return r.text();}).catch(e=>{sources.delete(src);throw e;}));

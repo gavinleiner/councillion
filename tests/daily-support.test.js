@@ -3,10 +3,10 @@ import assert from 'node:assert/strict';
 import {Window} from 'happy-dom';
 import {supportDay,mountDailySupport,SUPPORT_DAY_KEY,WEEKLY_CASE_URL} from '../daily-support.js';
 const date=new Date('2026-11-11T12:00:00Z');
-function fixture({day,hidden=false,blocked=false}={}){
+function fixture({day,hidden=false,blocked=false,motion=true}={}){
  const window=new Window({url:'https://gavinleiner.github.io/councillion/#daily'}),document=window.document;document.body.innerHTML='<main id="app"></main>';
  let visibility=hidden?'hidden':'visible',loads=0;Object.defineProperty(document,'visibilityState',{get:()=>visibility});
- if(day)window.localStorage.setItem(SUPPORT_DAY_KEY,day);
+ if(day)window.localStorage.setItem(SUPPORT_DAY_KEY,day);if(!motion)window.localStorage.setItem('fc:settings',JSON.stringify({motion:false}));
  if(blocked)for(const key of ['localStorage','sessionStorage'])Object.defineProperty(window,key,{get(){throw Error('Storage unavailable');}});
  const gate=mountDailySupport({window,document,now:()=>date,onContinue:()=>loads++});
  const root=document.querySelector('#daily-support');root?.addEventListener('click',e=>e.preventDefault());
@@ -26,3 +26,5 @@ test('an already-supported background page waits until it is visible before star
 test('another tab completing today removes the duplicate prompt without opening another case',async()=>{const f=fixture();try{f.window.dispatchEvent(new f.window.StorageEvent('storage',{key:SUPPORT_DAY_KEY,newValue:'2026-11-10'}));assert.equal(f.loads,0);f.window.dispatchEvent(new f.window.StorageEvent('storage',{key:SUPPORT_DAY_KEY,newValue:'2026-11-11'}));assert.equal(f.loads,1);assert.equal(f.gate.shown,false);}finally{await f.close();}});
 test('blocked browser storage never traps a visitor',async()=>{const f=fixture({blocked:true});try{f.click();await settled();f.click();assert.equal(f.loads,1);}finally{await f.close();}});
 test('disposed or repeated interaction cannot boot the game twice',async()=>{const f=fixture();try{f.click();f.gate.dispose();await settled();f.visibility('hidden');f.visibility('visible');assert.equal(f.loads,0);assert.equal(f.gate.shown,false);}finally{await f.close();}});
+
+test('saved reduced-motion preference applies before the game loads',async()=>{const f=fixture({motion:false});try{assert.equal(f.root.dataset.motion,'reduced');assert.equal(f.loads,0);}finally{await f.close();}});
