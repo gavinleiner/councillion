@@ -1,13 +1,34 @@
-import {BENCH_QUESTIONS,benchDeck,benchOptions} from './bench-data.js';
+import {BENCH_QUESTIONS,benchOptions} from './bench-data.js';
+import {trialLegacyQuestions} from './trial-question-curation.js';
+import {TRIAL_ORIGINAL_QUESTIONS} from './trial-question-originals.js';
 import {shuffle} from './question-selection.js';
-export const TRIAL_BUILD='20261109-trial-rework-v42';
-export const TRIAL_QUESTIONS=BENCH_QUESTIONS;
-export const TRIAL_BY_ID=new Map(TRIAL_QUESTIONS.map(q=>[q.id,q]));
+export const TRIAL_BUILD='20261111-trial-questions-v44';
+export const TRIAL_QUESTIONS=[...trialLegacyQuestions(BENCH_QUESTIONS),...TRIAL_ORIGINAL_QUESTIONS];
+// Old rooms keep their original IDs/referee deck until the match ends. Keep
+// lookup compatibility, but admit only the curated questions into new games.
+export const TRIAL_BY_ID=new Map([...BENCH_QUESTIONS,...TRIAL_QUESTIONS].map(q=>[q.id,q]));
 export {benchOptions as trialOptions};
 export function trialDeck(rng=Math.random){
- const deck=benchDeck(rng),warm=[];const subjects=new Set();
- for(const id of deck){const q=TRIAL_BY_ID.get(id);if(q.difficulty<=3&&!subjects.has(q.subject)){warm.push(id);subjects.add(q.subject);}if(warm.length===2)break;}
- return [...warm,...deck.filter(id=>!warm.includes(id))];
+ const groups=new Map();
+ for(const q of shuffle(TRIAL_QUESTIONS,rng)){
+  if(!groups.has(q.subject))groups.set(q.subject,[]);
+  groups.get(q.subject).push(q);
+ }
+ const deck=[];
+ // Every eight questions cover all eight subjects, in a fresh random order.
+ // Alternate approachable challenges and tougher ones, without two giveaway
+ // warm-ups or importing Jeopardy's dollar-row difficulty labels.
+ while([...groups.values()].some(g=>g.length)){
+  const subjects=shuffle([...groups.keys()],rng);
+  if(deck.length&&subjects[0]===TRIAL_BY_ID.get(deck.at(-1)).subject)
+   [subjects[0],subjects[1]]=[subjects[1],subjects[0]];
+  for(const subject of subjects){
+   const group=groups.get(subject);if(!group.length)continue;
+   const target=deck.length%2?4:3,index=group.findIndex(q=>q.difficulty===target);
+   deck.push(group.splice(index<0?0:index,1)[0].id);
+  }
+ }
+ return deck;
 }
 export const TRIAL_TIMING={intro:6500,question:20000,answerReveal:6000,brief:9500,watch:4200,challenge:16000,verdict:7200,transition:2200,escapeIntro:9500,escapeQuestion:13000,escapeRun:5600,gate:4500};
 export const TRIAL_GAMES={

@@ -1,0 +1,310 @@
+{
+  "build": "20261111-trial-questions-v44",
+  "questionCount": 128,
+  "retunedSourceLinkedQuestions": 96,
+  "newlyAuthoredQuestions": 32,
+  "subjects": {
+    "Gaming": 16,
+    "Sports": 16,
+    "Screen": 16,
+    "Music": 16,
+    "World": 16,
+    "Nature": 16,
+    "Everyday": 16,
+    "Words": 16
+  },
+  "difficultyNote": "Editorial assessment with the four choices visible; not measured player solve rates.",
+  "curation": "Exclude elementary openings and mismatched decoys. Each question has three individually chosen incorrect choices. One of each subject per shuffled eight-question block; independent fresh-match shuffle.",
+  "compatibility": "Keep all legacy question IDs resolvable for active matches; only admitted IDs enter fresh games.",
+  "sourceChecks": "New factual prompts checked against the linked reference contents; word puzzles additionally verified mechanically. Existing factual prompts retain prior source lineage.",
+  "newQuestions": [
+    {
+      "id": "trial-v44-nether-bed",
+      "subject": "Gaming",
+      "prompt": "You try to sleep in a bed in Minecraft’s Nether. What happens?",
+      "answer": "The bed explodes",
+      "difficulty": 3,
+      "source": "https://www.minecraft.net/en-us/article/nightmares-nether",
+      "explanation": "Beds explode in the Nether; they do not work there as Overworld spawn points."
+    },
+    {
+      "id": "trial-v44-majoras-clock",
+      "subject": "Gaming",
+      "prompt": "In Majora’s Mask, how long is the repeating cycle before the moon falls?",
+      "answer": "Three in-game days",
+      "difficulty": 3,
+      "source": "https://csassets.nintendo.com/noaext/image/private/t_KA_PDF/manual-3DS-the-legend-of-zelda-majoras-mask-3d-en?_a=DATC1RAAZAA0",
+      "explanation": "Link works inside a repeating three-day cycle, resetting time to keep going."
+    },
+    {
+      "id": "trial-v44-kart-coin-cap",
+      "subject": "Gaming",
+      "prompt": "In Mario Kart 8, your coin-based speed increase tops out at how many held coins?",
+      "answer": "10",
+      "difficulty": 4,
+      "source": "https://csassets.nintendo.com/noaext/image/private/t_KA_PDF/manual-WiiU-Mario_Kart_8?_a=BATCtdAA0",
+      "explanation": "Held coins increase speed up to the ten-coin cap; getting hit can knock coins away."
+    },
+    {
+      "id": "trial-v44-antigravity-bump",
+      "subject": "Gaming",
+      "prompt": "In Mario Kart 8’s antigravity sections, bumping another racer can actually give you what?",
+      "answer": "A Spin Boost",
+      "difficulty": 3,
+      "source": "https://csassets.nintendo.com/noaext/image/private/t_KA_PDF/manual-WiiU-Mario_Kart_8?_a=BATCtdAA0",
+      "explanation": "Antigravity changes collisions: contact can give you a Spin Boost instead of simply slowing you down."
+    },
+    {
+      "id": "trial-v44-nba-second-chance",
+      "subject": "Sports",
+      "prompt": "An NBA shot hits the rim and the same team gets the rebound. What does its shot clock reset to?",
+      "answer": "14 seconds",
+      "difficulty": 4,
+      "source": "https://official.nba.com/rule-no-7-24-second-clock/",
+      "explanation": "An offensive rebound after a rim-touching missed shot resets the clock to 14, not a fresh 24."
+    },
+    {
+      "id": "trial-v44-throw-in-goal",
+      "subject": "Sports",
+      "prompt": "A legal soccer throw-in goes straight into the opponents’ goal without touching anyone. What is awarded?",
+      "answer": "A goal kick",
+      "difficulty": 4,
+      "source": "https://www.theifab.com/laws/2026-27/the-throw-in/",
+      "explanation": "A throw-in cannot score directly. Into the opponents’ goal means a goal kick; into your own means a corner."
+    },
+    {
+      "id": "trial-v44-foul-pole",
+      "subject": "Sports",
+      "prompt": "A baseball fly ball hits the foul pole above the outfield fence. What is the ruling?",
+      "answer": "A home run",
+      "difficulty": 3,
+      "source": "https://www.mlb.com/glossary/rules/foul-ball",
+      "explanation": "Despite the name, the foul pole is in fair territory."
+    },
+    {
+      "id": "trial-v44-tennis-comeback",
+      "subject": "Sports",
+      "prompt": "You trail 0–40 in a standard tennis game, then win the next three points. Where are you now?",
+      "answer": "Deuce",
+      "difficulty": 3,
+      "source": "https://www.itftennis.com/en/about-us/organisation/tennis-glossary/",
+      "explanation": "Three points bring you to 40 too. At 40–40 the game is at deuce, not over."
+    },
+    {
+      "id": "trial-v44-ego-critic",
+      "subject": "Screen",
+      "prompt": "Who is the intimidating food critic whose review matters in Ratatouille?",
+      "answer": "Anton Ego",
+      "difficulty": 3,
+      "source": "https://www.pixar.com/ratatouille",
+      "explanation": "Anton Ego is the critic. Gusteau is Remy’s inspiration; Skinner runs the kitchen; Django is Remy’s father."
+    },
+    {
+      "id": "trial-v44-old-emotion",
+      "subject": "Screen",
+      "prompt": "Which of these Inside Out 2 emotions was already in Headquarters in the first film?",
+      "answer": "Disgust",
+      "difficulty": 3,
+      "source": "https://d23.com/meet-the-new-emotions-of-inside-out-2/",
+      "explanation": "Disgust belongs to the original five. Envy, Ennui and Embarrassment arrive in the sequel."
+    },
+    {
+      "id": "trial-v44-lotso-scent",
+      "subject": "Screen",
+      "prompt": "Toy Story 3’s villain Lotso is a scented teddy bear. What does he smell like?",
+      "answer": "Strawberries",
+      "difficulty": 4,
+      "source": "https://www.pixar.com/toy-story-3",
+      "explanation": "Lotso’s sweet strawberry scent makes a very misleading first impression."
+    },
+    {
+      "id": "trial-v44-kevin-reveal",
+      "subject": "Screen",
+      "prompt": "Which Pixar character turns out to be a mother despite a traditionally male name?",
+      "answer": "Kevin in Up",
+      "difficulty": 4,
+      "source": "https://www.pixar.com/upfilm",
+      "explanation": "Kevin is female. Russell’s choice of name does not change that."
+    },
+    {
+      "id": "trial-v44-cole-first-grammy",
+      "subject": "Music",
+      "prompt": "Which collaboration brought J. Cole his first Grammy win in 2020?",
+      "answer": "a lot, with 21 Savage",
+      "difficulty": 4,
+      "source": "https://www.grammy.com/news/21-savage-featuring-j-cole-wins-best-rap-song-lot-2020-grammys/",
+      "explanation": "The 2020 Best Rap Song award went to “a lot.” The other choices are also real Cole collaborations."
+    },
+    {
+      "id": "trial-v44-get-lucky-voice",
+      "subject": "Music",
+      "prompt": "Whose lead vocals do you hear on Daft Punk’s Get Lucky?",
+      "answer": "Pharrell Williams",
+      "difficulty": 3,
+      "source": "https://www.grammy.com/news/video-and-the-grammy-went-to-daft-punk-featuring-pharrell-williams/",
+      "explanation": "Pharrell supplies the lead vocal; Nile Rodgers supplies the distinctive guitar part."
+    },
+    {
+      "id": "trial-v44-whitney-songwriter",
+      "subject": "Music",
+      "prompt": "Whitney Houston made I Will Always Love You a huge hit. Who originally wrote and recorded it?",
+      "answer": "Dolly Parton",
+      "difficulty": 3,
+      "source": "https://www.dollyparton.com/news/dolly-remembers-whitney-houston",
+      "explanation": "Dolly released her own version in 1974, long before Houston’s recording for The Bodyguard."
+    },
+    {
+      "id": "trial-v44-nevermind-drums",
+      "subject": "Music",
+      "prompt": "Before fronting Foo Fighters, who played drums on Nirvana’s Nevermind?",
+      "answer": "Dave Grohl",
+      "difficulty": 3,
+      "source": "https://catalog.rockhall.com/rrhof-ais/Details/fullCatalogue/200018888",
+      "explanation": "Nevermind’s lineup includes Kurt Cobain, Krist Novoselic and drummer Dave Grohl."
+    },
+    {
+      "id": "trial-v44-alaska-meridian",
+      "subject": "World",
+      "prompt": "By longitude, which US state contains both the country’s easternmost and westernmost points?",
+      "answer": "Alaska",
+      "difficulty": 4,
+      "source": "https://www.alaska.gov/Kids/learn/aboutgeography.htm",
+      "explanation": "The Aleutian Islands cross the 180th meridian, putting parts of Alaska in both east and west longitudes."
+    },
+    {
+      "id": "trial-v44-seafloor-mountain",
+      "subject": "World",
+      "prompt": "Everest leads above sea level. Which mountain exceeds it when measured from its base on the ocean floor?",
+      "answer": "Mauna Kea",
+      "difficulty": 4,
+      "source": "https://www.usgs.gov/faqs/how-big-are-hawaiian-volcanoes",
+      "explanation": "Much of Mauna Kea is underwater. Base-to-summit height and elevation above sea level are different measurements."
+    },
+    {
+      "id": "trial-v44-canal-lift",
+      "subject": "World",
+      "prompt": "How do the Panama Canal’s locks lift a ship toward Gatun Lake?",
+      "answer": "Raise the water level around the ship",
+      "difficulty": 3,
+      "source": "https://pancanal.com/en/history-of-the-panama-canal/",
+      "explanation": "Water enters the lock chamber and the floating ship rises with it. The locks are water lifts."
+    },
+    {
+      "id": "trial-v44-oldest-landmark",
+      "subject": "World",
+      "prompt": "Which of these landmarks was built first?",
+      "answer": "The Great Pyramid of Giza",
+      "difficulty": 3,
+      "source": "https://whc.unesco.org/en/list/86/",
+      "explanation": "The Great Pyramid belongs to ancient Egypt’s Old Kingdom, thousands of years before the other three."
+    },
+    {
+      "id": "trial-v44-octopus-blood",
+      "subject": "Nature",
+      "prompt": "Octopus blood can look blue because its oxygen-carrying protein uses which metal?",
+      "answer": "Copper",
+      "difficulty": 4,
+      "source": "https://ocean.si.edu/ocean-life/invertebrates/octopuses-squids-and-relatives",
+      "explanation": "Octopuses use copper-based hemocyanin; human hemoglobin uses iron."
+    },
+    {
+      "id": "trial-v44-botanical-berry",
+      "subject": "Nature",
+      "prompt": "Botanically speaking, which of these fruits is a true berry?",
+      "answer": "Banana",
+      "difficulty": 4,
+      "source": "https://www.kew.org/plants/cavendish-banana",
+      "explanation": "Botanical categories do not follow supermarket names: a banana counts as a berry."
+    },
+    {
+      "id": "trial-v44-shark-skeleton",
+      "subject": "Nature",
+      "prompt": "Sharks have teeth, but their skeletons are built mainly from what instead of bone?",
+      "answer": "Cartilage",
+      "difficulty": 3,
+      "source": "https://www.fisheries.noaa.gov/feature-story/12-shark-facts-may-surprise-you",
+      "explanation": "Cartilage is also the flexible tissue in your nose and ears."
+    },
+    {
+      "id": "trial-v44-moon-daytime",
+      "subject": "Nature",
+      "prompt": "Why does the sky look black from the Moon even when the ground is in daylight?",
+      "answer": "Too little atmosphere to scatter sunlight",
+      "difficulty": 3,
+      "source": "https://science.nasa.gov/solar-system/moon/phenomena-nasa-astronauts-will-encounter-at-moons-south-pole/",
+      "explanation": "Earth’s atmosphere scatters light across the sky. The Moon’s extremely thin atmosphere cannot create that blue sky."
+    },
+    {
+      "id": "trial-v44-baking-powder",
+      "subject": "Everyday",
+      "prompt": "Why can baking powder raise a cake batter without adding sour milk or lemon juice?",
+      "answer": "It already includes an acid",
+      "difficulty": 3,
+      "source": "https://www.acs.org/education/whatischemistry/landmarks/bakingpowder.html",
+      "explanation": "Baking powder combines bicarbonate with an acid; moisture lets them react and release carbon dioxide."
+    },
+    {
+      "id": "trial-v44-white-chocolate",
+      "subject": "Everyday",
+      "prompt": "Which cocoa ingredient does real white chocolate contain?",
+      "answer": "Cocoa butter",
+      "difficulty": 3,
+      "source": "https://www.ecfr.gov/current/title-21/section-163.124",
+      "explanation": "White chocolate contains cocoa butter, but not the nonfat cocoa solids that give dark chocolate its color."
+    },
+    {
+      "id": "trial-v44-nutmeg-part",
+      "subject": "Everyday",
+      "prompt": "Despite its name, the nutmeg you grate into food is which part of a plant?",
+      "answer": "A seed",
+      "difficulty": 4,
+      "source": "https://www.kew.org/sites/default/files/2021-03/Family%20learning%20cards_Food_Ages%200-3_0.pdf",
+      "explanation": "Nutmeg is a seed. A familiar kitchen name can be misleading about the plant part."
+    },
+    {
+      "id": "trial-v44-milk-protein",
+      "subject": "Everyday",
+      "prompt": "Which milk component binds capsaicin, helping explain milk’s effect after spicy food?",
+      "answer": "Casein",
+      "difficulty": 4,
+      "source": "https://www.acs.org/pressroom/presspacs/2025/october/artificial-tongue-uses-milk-to-determine-heat-level-in-spicy-foods.html",
+      "explanation": "Casein is a milk protein that binds capsaicin, the compound responsible for chili-pepper heat."
+    },
+    {
+      "id": "trial-v44-atlas-burden",
+      "subject": "Words",
+      "prompt": "In Greek mythology, what is Atlas condemned to hold up?",
+      "answer": "The sky",
+      "difficulty": 4,
+      "source": "https://www.getty.edu/cona/CONAIconographyRecord.aspx?iconid=901001326",
+      "explanation": "Atlas supports the heavens. The globe image often causes people to misremember his burden."
+    },
+    {
+      "id": "trial-v44-double-triple",
+      "subject": "Words",
+      "prompt": "Which word contains THREE consecutive doubled-letter pairs?",
+      "answer": "BOOKKEEPER",
+      "difficulty": 3,
+      "source": "https://dictionary.cambridge.org/dictionary/english/bookkeeper",
+      "explanation": "B–OO–KK–EE–P–E–R: the three consecutive pairs are OO, KK and EE."
+    },
+    {
+      "id": "trial-v44-schoolmaster-anagram",
+      "subject": "Words",
+      "prompt": "Which phrase uses every letter of SCHOOLMASTER exactly once?",
+      "answer": "THE CLASSROOM",
+      "difficulty": 4,
+      "source": "https://dictionary.cambridge.org/dictionary/english/anagram",
+      "explanation": "Ignore the space: SCHOOLMASTER and THE CLASSROOM have exactly the same letters, including their counts."
+    },
+    {
+      "id": "trial-v44-scrabble-bingo",
+      "subject": "Words",
+      "prompt": "In standard English Scrabble, playing all seven of your tiles in one turn adds what bonus?",
+      "answer": "50 points",
+      "difficulty": 3,
+      "source": "https://instructions.hasbro.com/en-us/instruction/Scrabble-Game",
+      "explanation": "Using all seven tiles in one turn adds 50 points on top of the word score."
+    }
+  ]
+}
