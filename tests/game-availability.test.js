@@ -7,7 +7,7 @@ test('Under Oath is public while hosting and joining still require Google author
  let auth=0,cloud=0;
  const session=new CourtGameSession({mode:'oath',identity:()=>null,authorize:async()=>{auth++;throw Error('Sign in with Google');},getCloud:async()=>{cloud++;}});
  try{
-  assert.deepEqual(COMING_SOON_GAMES,[]);
+  assert.deepEqual(COMING_SOON_GAMES,['deep']);
   for(const identity of [null,{role:'player'},{role:'super_admin',expires:Date.now()/1000+3600}]){
    assert.equal(isGameAvailable('oath',identity),true);assert.equal(isGameEntryAvailable('oath',identity),true);
   }

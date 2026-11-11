@@ -1,0 +1,58 @@
+{
+  "generator": "Built-in image_gen.imagegen",
+  "created": "2026-11-11",
+  "reference": "assets/court-games/puffer-games-cove-v20.webp",
+  "processing": "Scene PNGs converted to WebP. Enemy background removed using built-in imagegen; no manual image-content edits. Sprites are composited and animated at runtime.",
+  "assets": [
+    {
+      "name": "hub",
+      "path": "assets/deep/hub-v50.webp",
+      "original": "exec-6d1e4c3a-7439-4d93-8a2f-2124e3658528.png",
+      "prompt": "Use case: stylized-concept. Production game background for DEEP CONTEMPT, a Councillion underwater pixel-art co-op game. The supplied image is STYLE REFERENCE ONLY: exact crisp blue/teal medium-detail pixel clusters and dark outlined shapes, small warm brass accents. 16-bit illustrated game art with readable edges, neither photorealistic nor huge mosaic blocks. NO text, lettering, UI, characters, fish, logos or gradients that look 3D. Create a beautiful 16:9 side-cutaway interior of a small old-fashioned BRASS SUBMARINE serving as a crew lobby. Five large round windows show an eerie distant sunken courthouse in cobalt water. Far-left equipment locker and hanging diving helmets, at right a thick round airlock door; center lower half has a simple wide walkable dark teal metal deck kept open for our existing pixel characters. Brass pipework, pressure gauges without writing, red emergency lamps, a big navigation table at far right, stacked law casebooks and scales. Warm cream light pools, drifting bubbles outside, dark teal corners, cozy crew headquarters meets haunted underwater court. Keep the central 55% quiet with open navy water through windows behind real HTML title/buttons; don't bake any UI. Balanced detailed edges, strong silhouettes, cohesive game environment.",
+      "sha256": "478de2cf8c24fa6a193ccac9aadcf1fb73bae92d1203f751c50b5587ed27e3a4"
+    },
+    {
+      "name": "airlock",
+      "path": "assets/deep/airlock-v50.webp",
+      "original": "exec-4f1bdff9-0544-4024-a8de-ce05a86e4ed5.png",
+      "prompt": "Use case: stylized-concept. Production game background for DEEP CONTEMPT, a Councillion underwater pixel-art co-op game. The supplied image is STYLE REFERENCE ONLY: exact crisp blue/teal medium-detail pixel clusters and dark outlined shapes, small warm brass accents. 16-bit illustrated game art with readable edges, neither photorealistic nor huge mosaic blocks. NO text, lettering, UI, characters, fish, logos or gradients that look 3D. Landscape 8:5 fixed overhead top-down game room. A flooded courthouse ARRIVAL AIRLOCK. The entire rectangular room fills the picture, no outside vignette, no text. Dark blue stone square-tiled floor, low thick perimeter walls, old brass diving hatch pad at upper-left quarter, broken columns and lanterns at corners. Empty CENTRAL 75% walkable floor. Exactly one OPEN DOORWAY centered on EACH of the four walls (north/south/east/west), leading into dark short passage; floor continues through each opening. Keep large props only in the outermost 12% of room near corners. A little gold scales mosaic in floor near top-left. Slight front face on walls like Stardew Valley interior, overhead view with readable navigation; no isometric perspective.",
+      "sha256": "742bf929e67a0ee8abae3d98851d4234c5a86f58a012f8fe84518639f1c08ac4"
+    },
+    {
+      "name": "archive",
+      "path": "assets/deep/archive-v50.webp",
+      "original": "exec-cbb29bf3-ba05-42f2-a609-d7bc1f5fa530.png",
+      "prompt": "Use case: stylized-concept. Production game background for DEEP CONTEMPT, a Councillion underwater pixel-art co-op game. The supplied image is STYLE REFERENCE ONLY: exact crisp blue/teal medium-detail pixel clusters and dark outlined shapes, small warm brass accents. 16-bit illustrated game art with readable edges, neither photorealistic nor huge mosaic blocks. NO text, lettering, UI, characters, fish, logos or gradients that look 3D. Landscape 8:5 fixed overhead top-down game room. Flooded courthouse RECORDS ARCHIVE, old bookshelves tucked into FOUR CORNERS along perimeter, blue stone square tiles, loose cream pages, tiny violet coral, brass reading lamps. Entire rectangular room fills image. Empty CENTRAL 75% of walkable dark teal floor, large furniture only outermost 12% corners. Exactly one OPEN DOORWAY centered on EACH of the four perimeter walls (north/south/east/west), no obstacles near exits. Quiet center, detailed edge props. Slight front face on walls like Stardew Valley interior, overhead viewpoint, not isometric. No writing or labels.",
+      "sha256": "555a9c04fe91f6ba4412e4d82892a50e908ef848b912e8a7592a0eba027d80a8"
+    },
+    {
+      "name": "cells",
+      "path": "assets/deep/cells-v50.webp",
+      "original": "exec-ed66d085-f121-4842-aa2b-ba76f9406ca2.png",
+      "prompt": "Use case: stylized-concept. Production overhead pixel-art room for DEEP CONTEMPT. The supplied archive room is the EXACT style and geometry reference. Landscape 8:5. Preserve the blue/teal palette, crisp outlined 16-bit pixel clusters and simple floor tile scale, same overhead viewpoint. Whole rectangular room fills image, no exterior. Four OPEN doorways centered on ALL four perimeter walls, all doorways same positions/width as reference. Center 75% must be empty walkable tiled floor. Large props only outermost 12% in corners, none across the center. NO text, letters, UI, characters, monsters, realistic rendering, 3D or oversized pixels. Make this the HOLDING CELLS, a deserted flooded court jail. Four corner cells with iron bars flush against corners, old shackles, faint violet sea plants, a few skeleton keys, tiny cold brass lamps. Teal stone tiled central floor. One dim amber wall fixture at upper-center beyond doorway. Sinister but still charming Councillion pixel art.",
+      "sha256": "6d8171d68bd1afb1bfea5fc71c2274dc3f6613f868b28a8130d37052d6aca2df"
+    },
+    {
+      "name": "vault",
+      "path": "assets/deep/vault-v50.webp",
+      "original": "exec-2f3b12fa-a89a-4f38-9790-fe43dd2d1290.png",
+      "prompt": "Use case: stylized-concept. Production overhead pixel-art room for DEEP CONTEMPT. The supplied archive room is the EXACT style and geometry reference. Landscape 8:5. Preserve the blue/teal palette, crisp outlined 16-bit pixel clusters and simple floor tile scale, same overhead viewpoint. Whole rectangular room fills image, no exterior. Four OPEN doorways centered on ALL four perimeter walls, all doorways same positions/width as reference. Center 75% must be empty walkable tiled floor. Large props only outermost 12% in corners, none across the center. NO text, letters, UI, characters, monsters, realistic rendering, 3D or oversized pixels. Make this the EVIDENCE VAULT. Four corner stacks of brass-bound evidence chests and lawbooks, ancient brass locks, teal barnacles and amber lanterns, tiny gold coins in corners. Central tiled floor has a subtle circular scales-of-justice inlay occupying just 10% area, not furniture or obstacle. Warm gold against deep teal. Empty walkable center for collectible exhibits that we add in code.",
+      "sha256": "5c539a35100d71156b76810bf1e46070be5f5cfec339fab6f2b28e6bed751f60"
+    },
+    {
+      "name": "court",
+      "path": "assets/deep/court-v50.webp",
+      "original": "exec-4f26681c-c6c5-4695-9fe6-7e210cf3cfa9.png",
+      "prompt": "Use case: stylized-concept. Production overhead pixel-art room for DEEP CONTEMPT. The supplied archive room is the EXACT style and geometry reference. Landscape 8:5. Preserve the blue/teal palette, crisp outlined 16-bit pixel clusters and simple floor tile scale, same overhead viewpoint. Whole rectangular room fills image, no exterior. Four OPEN doorways centered on ALL four perimeter walls, all doorways same positions/width as reference. Center 75% must be empty walkable tiled floor. Large props only outermost 12% in corners, none across the center. NO text, letters, UI, characters, monsters, realistic rendering, 3D or oversized pixels. Make this THE HIGH COURT. Four corners have low dark wood judge benches, abandoned brass scales and empty throne alcoves. A spectacular but flat blue-purple stone floor with a very subtle scales-of-justice mosaic in middle. Tall shadowy columns along perimeter, violet corals, small crimson lanterns. Room looks grander and more haunted than archive while retaining EXACT game viewpoint, empty playable center and centered doorways. No throne or furniture across center, no monsters.",
+      "sha256": "942bf7de639bd073a2559595330444c1854bddbd2461c19a0cb85e84c320be20"
+    },
+    {
+      "name": "enemies",
+      "path": "assets/deep/enemies-v50.png",
+      "original": "exec-488c474c-d409-4533-8833-ee0f47bb794a.png",
+      "prompt": "Use case: game-sprite-sheet. Transparent PNG production sprite sheet for Councillion DEEP CONTEMPT, matching the supplied pixel-art reference palette and medium chunky cluster scale. THREE equally sized isolated enemy characters, laid out in ONE HORIZONTAL ROW, evenly spaced in exactly three equal square cells with at least 10% transparent padding inside EACH cell. Transparent background, no shadows or ground. Left cell: THE BAILIFF, a dark navy armored lobster with small brass court wig/helmet, pale aqua eyes, two big curved claws, sturdy low silhouette. Middle cell: THE CLERK, a floating violet cuttlefish wearing a disheveled cream barrister wig and carrying an old brown lawbook, long flowing short tentacles, simple mysterious face. Right cell: THE JUDGE, a huge round pale-gold ghost puffer wearing a grand cream judge wig, small dark robe and gold medallion, stern small square eyes and clear puffer spikes. All THREE face slightly toward viewer in a readable top-down adventure sprite pose; maintain their exact similar on-screen size within their cells. Crisp dark navy pixel outlines and controlled 16-bit shading, few large clusters like the existing Councillion puffer, not photorealistic, not smooth/vector, not detailed painted monsters, no logos, text, border or labels. No weapons, no gore. Each character fully visible, NO overlap between cells, no repeated characters.",
+      "cleanupPrompt": "Edit target: supplied THREE-CHARACTER enemy sprite sheet. Preserve each exact character, shapes, positions, colors and the THREE EQUAL SQUARE CELLS layout. Remove EVERY bit of the white background and all surrounding shadows. Return a clean transparent PNG with fully transparent alpha=0 outside the three character silhouettes, including between their arms and tentacles. This is production game art that must composite on a dark blue background with no pale rectangle, no glow, no residual white haze. Keep crisp dark outlines. NO added background, no checkerboard pattern, no text. Do not change the characters or crop the sheet.",
+      "sha256": "0fd1c0204cc50f13ce09286bedb09a7509d2296bef28382aac2f35ae8da3a1b4"
+    }
+  ]
+}
